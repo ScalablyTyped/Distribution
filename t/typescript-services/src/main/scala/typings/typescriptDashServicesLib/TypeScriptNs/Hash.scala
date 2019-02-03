@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Hash () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Hash")
 @js.native
 object Hash extends js.Object {

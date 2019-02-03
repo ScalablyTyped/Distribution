@@ -48,10 +48,7 @@ object schedulingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.schedulingNs.v1alpha1Ns.PriorityClassList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PriorityClass defines mapping from a priority class name to the priority integer value. The
-      * value can be any valid integer.
-      */
+    /* static members */
     @js.native
     object PriorityClass extends js.Object {
       /**
@@ -74,9 +71,7 @@ object schedulingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.schedulingNs.v1alpha1Ns.PriorityClass = js.native
     }
     
-    /**
-      * PriorityClassList is a collection of priority classes.
-      */
+    /* static members */
     @js.native
     object PriorityClassList extends js.Object {
       /**
@@ -141,10 +136,7 @@ object schedulingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.schedulingNs.v1beta1Ns.PriorityClassList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PriorityClass defines mapping from a priority class name to the priority integer value. The
-      * value can be any valid integer.
-      */
+    /* static members */
     @js.native
     object PriorityClass extends js.Object {
       /**
@@ -167,9 +159,7 @@ object schedulingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.schedulingNs.v1beta1Ns.PriorityClass = js.native
     }
     
-    /**
-      * PriorityClassList is a collection of priority classes.
-      */
+    /* static members */
     @js.native
     object PriorityClassList extends js.Object {
       /**

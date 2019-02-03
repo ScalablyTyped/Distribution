@@ -163,6 +163,7 @@ object pinpointNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.pinpointSmsChannelMod.SmsChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object AdmChannel extends js.Object {
     /**
@@ -187,6 +188,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointAdmChannelMod.AdmChannel = js.native
   }
   
+  /* static members */
   @js.native
   object ApnsChannel extends js.Object {
     /**
@@ -211,6 +213,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointApnsChannelMod.ApnsChannel = js.native
   }
   
+  /* static members */
   @js.native
   object ApnsSandboxChannel extends js.Object {
     /**
@@ -235,6 +238,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannel = js.native
   }
   
+  /* static members */
   @js.native
   object ApnsVoipChannel extends js.Object {
     /**
@@ -259,6 +263,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannel = js.native
   }
   
+  /* static members */
   @js.native
   object ApnsVoipSandboxChannel extends js.Object {
     /**
@@ -283,6 +288,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointApnsVoipSandboxChannelMod.ApnsVoipSandboxChannel = js.native
   }
   
+  /* static members */
   @js.native
   object App extends js.Object {
     /**
@@ -307,6 +313,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointAppMod.App = js.native
   }
   
+  /* static members */
   @js.native
   object BaiduChannel extends js.Object {
     /**
@@ -331,6 +338,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannel = js.native
   }
   
+  /* static members */
   @js.native
   object EmailChannel extends js.Object {
     /**
@@ -355,6 +363,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointEmailChannelMod.EmailChannel = js.native
   }
   
+  /* static members */
   @js.native
   object EventStream extends js.Object {
     /**
@@ -379,6 +388,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointEventStreamMod.EventStream = js.native
   }
   
+  /* static members */
   @js.native
   object GcmChannel extends js.Object {
     /**
@@ -403,6 +413,7 @@ object pinpointNs extends js.Object {
     ): atPulumiAwsLib.pinpointGcmChannelMod.GcmChannel = js.native
   }
   
+  /* static members */
   @js.native
   object SmsChannel extends js.Object {
     /**

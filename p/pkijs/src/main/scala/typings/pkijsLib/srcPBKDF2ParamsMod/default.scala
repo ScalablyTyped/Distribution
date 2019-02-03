@@ -25,6 +25,7 @@ class default () extends PBKDF2Params {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PBKDF2Params", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -26,6 +26,7 @@ class Stem protected () extends js.Object {
   def setYBounds(y_top: scala.Double, y_bottom: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Stem")
 @js.native
 object Stem extends js.Object {

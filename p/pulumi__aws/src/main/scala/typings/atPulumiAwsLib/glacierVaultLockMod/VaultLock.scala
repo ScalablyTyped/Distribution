@@ -36,6 +36,7 @@ class VaultLock protected ()
   val vaultName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glacier/vaultLock", "VaultLock")
 @js.native
 object VaultLock extends js.Object {

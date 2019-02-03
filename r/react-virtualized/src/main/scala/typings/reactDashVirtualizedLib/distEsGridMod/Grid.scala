@@ -52,6 +52,7 @@ class Grid ()
   def scrollToPosition(params: reactDashVirtualizedLib.Anon_ScrollLeft): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/Grid", "Grid")
 @js.native
 object Grid extends js.Object {

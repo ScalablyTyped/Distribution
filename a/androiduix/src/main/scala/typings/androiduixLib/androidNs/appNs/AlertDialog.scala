@@ -44,6 +44,7 @@ class AlertDialog protected () extends Dialog {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.AlertDialog")
 @js.native
 object AlertDialog extends js.Object {

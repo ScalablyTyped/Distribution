@@ -13,6 +13,7 @@ class AndroidSDK ()
   def url(ostype: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries/android_sdk", "AndroidSDK")
 @js.native
 object AndroidSDK extends js.Object {

@@ -32,6 +32,7 @@ class GlobalTable protected ()
   val replicas: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_RegionName]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dynamodb/globalTable", "GlobalTable")
 @js.native
 object GlobalTable extends js.Object {

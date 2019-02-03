@@ -41,6 +41,7 @@ class ChoiceGroupBase protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ChoiceGroup/ChoiceGroup.base", "ChoiceGroupBase")
 @js.native
 object ChoiceGroupBase extends js.Object {

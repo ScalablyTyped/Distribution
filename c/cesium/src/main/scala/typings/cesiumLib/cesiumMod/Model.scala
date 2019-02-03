@@ -54,6 +54,7 @@ class Model ()
   override def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Model")
 @js.native
 object Model extends js.Object {

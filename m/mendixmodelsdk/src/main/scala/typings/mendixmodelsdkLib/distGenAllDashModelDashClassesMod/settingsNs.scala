@@ -132,9 +132,7 @@ object settingsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Settings`.
-    */
+  /* static members */
   @js.native
   object Certificate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -153,6 +151,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Certificate = js.native
   }
   
+  /* static members */
   @js.native
   object CertificateSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -171,15 +170,14 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateSettings = js.native
   }
   
+  /* static members */
   @js.native
   object CertificateType extends js.Object {
     var Authority: mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateType = js.native
     var Client: mendixmodelsdkLib.distGenSettingsMod.settingsNs.CertificateType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/configuration relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Configuration extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -198,6 +196,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConfigurationSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration = js.native
   }
   
+  /* static members */
   @js.native
   object ConfigurationSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -216,6 +215,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConfigurationSettings = js.native
   }
   
+  /* static members */
   @js.native
   object ConstantValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -234,6 +234,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ConstantValue = js.native
   }
   
+  /* static members */
   @js.native
   object CustomSetting extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -252,6 +253,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.Configuration): mendixmodelsdkLib.distGenSettingsMod.settingsNs.CustomSetting = js.native
   }
   
+  /* static members */
   @js.native
   object DatabaseType extends js.Object {
     var Db2: mendixmodelsdkLib.distGenSettingsMod.settingsNs.DatabaseType = js.native
@@ -262,6 +264,7 @@ object settingsNs extends js.Object {
     var SqlServer: mendixmodelsdkLib.distGenSettingsMod.settingsNs.DatabaseType = js.native
   }
   
+  /* static members */
   @js.native
   object FirstDayOfWeekEnum extends js.Object {
     var Default: mendixmodelsdkLib.distGenSettingsMod.settingsNs.FirstDayOfWeekEnum = js.native
@@ -274,6 +277,7 @@ object settingsNs extends js.Object {
     var Wednesday: mendixmodelsdkLib.distGenSettingsMod.settingsNs.FirstDayOfWeekEnum = js.native
   }
   
+  /* static members */
   @js.native
   object HashAlgorithmType extends js.Object {
     var BCrypt: mendixmodelsdkLib.distGenSettingsMod.settingsNs.HashAlgorithmType = js.native
@@ -282,6 +286,7 @@ object settingsNs extends js.Object {
     var SSHA256: mendixmodelsdkLib.distGenSettingsMod.settingsNs.HashAlgorithmType = js.native
   }
   
+  /* static members */
   @js.native
   object IntegrationProjectSettingsPart extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -300,11 +305,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.IntegrationProjectSettingsPart = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 6.9.0: introduced
-    */
+  /* static members */
   @js.native
   object JavaActionsSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -326,6 +327,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.JavaActionsSettings = js.native
   }
   
+  /* static members */
   @js.native
   object Language extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -344,6 +346,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.LanguageSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.Language = js.native
   }
   
+  /* static members */
   @js.native
   object LanguageSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -362,6 +365,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.LanguageSettings = js.native
   }
   
+  /* static members */
   @js.native
   object ModelerSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -380,9 +384,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ModelerSettings = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/project-settings relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ProjectSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -394,18 +396,21 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings = js.native
   }
   
+  /* static members */
   @js.native
   object ProjectSettingsPart extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSettingsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object RoundingMode extends js.Object {
     var HalfEven: mendixmodelsdkLib.distGenSettingsMod.settingsNs.RoundingMode = js.native
     var HalfUp: mendixmodelsdkLib.distGenSettingsMod.settingsNs.RoundingMode = js.native
   }
   
+  /* static members */
   @js.native
   object RuntimeSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -424,6 +429,7 @@ object settingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSettingsMod.settingsNs.ProjectSettings): mendixmodelsdkLib.distGenSettingsMod.settingsNs.RuntimeSettings = js.native
   }
   
+  /* static members */
   @js.native
   object WebUIProjectSettingsPart extends js.Object {
     var structureTypeName: java.lang.String = js.native

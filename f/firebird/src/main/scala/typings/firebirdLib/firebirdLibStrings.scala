@@ -9,6 +9,7 @@ object firebirdLibStrings {
   @js.native
   sealed trait all extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
 }
 

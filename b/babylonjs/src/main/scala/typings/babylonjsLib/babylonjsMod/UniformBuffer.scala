@@ -37,16 +37,7 @@ class UniformBuffer protected ()
   def this(engine: babylonjsLib.BABYLONNs.Engine, data: js.Array[scala.Double], dynamic: scala.Boolean) = this()
 }
 
-/**
-  * Uniform buffer objects.
-  *
-  * Handles blocks of uniform on the GPU.
-  *
-  * If WebGL 2 is not available, this class falls back on traditionnal setUniformXXX calls.
-  *
-  * For more information, please refer to :
-  * https://www.khronos.org/opengl/wiki/Uniform_Buffer_Object
-  */
+/* static members */
 @JSImport("babylonjs", "UniformBuffer")
 @js.native
 object UniformBuffer extends js.Object {

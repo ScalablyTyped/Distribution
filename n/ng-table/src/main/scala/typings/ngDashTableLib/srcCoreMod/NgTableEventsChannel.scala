@@ -12,6 +12,7 @@ class NgTableEventsChannel protected ()
   def this($rootScope: angularLib.angularMod.angularNs.IRootScopeService) = this()
 }
 
+/* static members */
 @JSImport("ng-table/src/core", "NgTableEventsChannel")
 @js.native
 object NgTableEventsChannel extends js.Object {

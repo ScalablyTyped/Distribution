@@ -43,7 +43,7 @@ abstract class Inclinometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents an inclinometer sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Inclinometer")
 @js.native
 object Inclinometer extends js.Object {

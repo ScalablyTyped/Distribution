@@ -26,13 +26,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.sourceNs.OSMOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Layer source for the OpenStreetMap tile server.
-  *
-  * @param opt_options Open Street Map options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/source/osm", JSImport.Default)
 @js.native
 object default extends js.Object {

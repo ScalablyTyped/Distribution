@@ -21,6 +21,7 @@ class ConfgurationSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "ConfgurationSet")
 @js.native
 object ConfgurationSet extends js.Object {

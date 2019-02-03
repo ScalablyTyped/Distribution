@@ -23,6 +23,7 @@ class Glyph protected () extends js.Object {
   def setYShift(y_shift: scala.Double): Glyph = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Glyph")
 @js.native
 object Glyph extends js.Object {

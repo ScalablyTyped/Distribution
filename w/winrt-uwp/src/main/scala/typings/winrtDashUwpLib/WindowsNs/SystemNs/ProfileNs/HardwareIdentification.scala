@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HardwareIdentification () extends js.Object
 
-/** Provides the ability to obtain a hardware identifier that represents the current hardware. */
+/* static members */
 @JSGlobal("Windows.System.Profile.HardwareIdentification")
 @js.native
 object HardwareIdentification extends js.Object {

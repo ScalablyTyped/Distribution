@@ -17,6 +17,7 @@ class ReflectionGroupSerializer ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/reflection-group", "ReflectionGroupSerializer")
 @js.native
 object ReflectionGroupSerializer extends js.Object {

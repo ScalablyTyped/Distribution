@@ -12,6 +12,7 @@ class ExtensionManagementApi protected () extends IExtensionManagementApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/ExtensionManagementApi", "ExtensionManagementApi")
 @js.native
 object ExtensionManagementApi extends js.Object {

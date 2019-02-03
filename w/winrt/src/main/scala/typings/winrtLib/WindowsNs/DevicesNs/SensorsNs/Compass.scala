@@ -18,6 +18,7 @@ class Compass () extends ICompass {
   override def getCurrentReading(): CompassReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Compass")
 @js.native
 object Compass extends js.Object {

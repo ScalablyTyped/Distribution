@@ -80,6 +80,7 @@ class UserPoolClient protected ()
   val writeAttributes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/userPoolClient", "UserPoolClient")
 @js.native
 object UserPoolClient extends js.Object {

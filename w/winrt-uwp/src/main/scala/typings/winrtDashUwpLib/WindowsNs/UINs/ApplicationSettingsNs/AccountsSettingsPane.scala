@@ -30,7 +30,7 @@ abstract class AccountsSettingsPane () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides methods to show the accounts pane and also to enable the app to register callbacks when the accounts flyout is about to be displayed. */
+/* static members */
 @JSGlobal("Windows.UI.ApplicationSettings.AccountsSettingsPane")
 @js.native
 object AccountsSettingsPane extends js.Object {

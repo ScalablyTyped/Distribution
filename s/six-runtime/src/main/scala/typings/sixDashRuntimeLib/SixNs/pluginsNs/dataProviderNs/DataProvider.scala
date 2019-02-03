@@ -12,6 +12,7 @@ abstract class DataProvider () extends js.Object {
   def prepare(ctx: js.Object, depsRes: js.Object): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Six.plugins.dataProvider.DataProvider")
 @js.native
 object DataProvider extends js.Object {

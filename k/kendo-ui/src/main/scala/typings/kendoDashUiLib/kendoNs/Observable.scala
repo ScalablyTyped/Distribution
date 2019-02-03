@@ -33,6 +33,7 @@ class Observable () extends Class {
   def unbind(eventName: java.lang.String, handler: js.Any): Observable = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.Observable")
 @js.native
 object Observable extends js.Object {

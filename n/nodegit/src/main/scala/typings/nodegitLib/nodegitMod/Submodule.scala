@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Submodule ()
   extends nodegitLib.submoduleMod.Submodule
 
+/* static members */
 @JSImport("nodegit", "Submodule")
 @js.native
 object Submodule extends js.Object {

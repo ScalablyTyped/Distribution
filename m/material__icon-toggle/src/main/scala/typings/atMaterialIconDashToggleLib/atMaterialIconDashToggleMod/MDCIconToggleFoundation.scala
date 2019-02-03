@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCIconToggleFoundation ()
   extends atMaterialIconDashToggleLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/icon-toggle", "MDCIconToggleFoundation")
 @js.native
 object MDCIconToggleFoundation extends js.Object {

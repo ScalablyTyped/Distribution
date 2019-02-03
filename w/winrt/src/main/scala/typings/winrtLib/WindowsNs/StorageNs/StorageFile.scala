@@ -16,6 +16,7 @@ class StorageFile ()
   override def openSequentialReadAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[winrtLib.WindowsNs.StorageNs.StreamsNs.IInputStream] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Storage.StorageFile")
 @js.native
 object StorageFile extends js.Object {

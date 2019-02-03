@@ -27,9 +27,7 @@ class NoiseProceduralTexture protected ()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene], fallbackTexture: babylonjsLib.BABYLONNs.Texture, generateMipMaps: scala.Boolean) = this()
 }
 
-/**
-  * Class used to generate noise procedural textures
-  */
+/* static members */
 @JSImport("babylonjs", "NoiseProceduralTexture")
 @js.native
 object NoiseProceduralTexture extends js.Object {

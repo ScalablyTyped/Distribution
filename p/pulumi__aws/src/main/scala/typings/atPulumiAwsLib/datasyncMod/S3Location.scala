@@ -20,6 +20,7 @@ class S3Location protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.datasyncS3LocationMod.S3LocationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync", "S3Location")
 @js.native
 object S3Location extends js.Object {

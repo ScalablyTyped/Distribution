@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Validators ()
   extends atAngularFormsLib.publicUnderscoreApiMod.Validators
 
+/* static members */
 @JSImport("@angular/forms", "Validators")
 @js.native
 object Validators extends js.Object {

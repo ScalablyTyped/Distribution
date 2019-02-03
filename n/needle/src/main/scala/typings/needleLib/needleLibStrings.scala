@@ -39,16 +39,27 @@ object needleLibStrings {
   @js.native
   sealed trait xml extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def basic: basic = "basic".asInstanceOf[basic]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def digest: digest = "digest".asInstanceOf[digest]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
 }
 

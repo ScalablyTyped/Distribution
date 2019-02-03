@@ -18,9 +18,7 @@ class EventEmitter ()
   def removeListener(event: java.lang.String, listener: js.Function): this.type = js.native
 }
 
-/**
-  * Node.js v6.x EventEmitter Class
-  */
+/* static members */
 @JSGlobal("NWJS_Helpers.EventEmitter")
 @js.native
 object EventEmitter extends js.Object {

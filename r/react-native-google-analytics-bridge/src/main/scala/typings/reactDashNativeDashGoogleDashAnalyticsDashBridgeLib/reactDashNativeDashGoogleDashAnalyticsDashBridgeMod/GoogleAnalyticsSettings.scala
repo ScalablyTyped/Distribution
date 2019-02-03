@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GoogleAnalyticsSettings ()
   extends reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distGoogleAnalyticsSettingsMod.default
 
+/* static members */
 @JSImport("react-native-google-analytics-bridge", "GoogleAnalyticsSettings")
 @js.native
 object GoogleAnalyticsSettings extends js.Object {

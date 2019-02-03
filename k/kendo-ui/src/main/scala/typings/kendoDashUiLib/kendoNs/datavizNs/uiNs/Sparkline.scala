@@ -26,6 +26,7 @@ class Sparkline protected ()
   def svg(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.Sparkline")
 @js.native
 object Sparkline extends js.Object {

@@ -37,6 +37,7 @@ class StaticIp protected ()
   val supportCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail/staticIp", "StaticIp")
 @js.native
 object StaticIp extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FormSelect ()
   extends materializeDashCssLib.MNs.FormSelect
 
+/* static members */
 @JSImport("materialize-css", "FormSelect")
 @js.native
 object FormSelect extends js.Object {

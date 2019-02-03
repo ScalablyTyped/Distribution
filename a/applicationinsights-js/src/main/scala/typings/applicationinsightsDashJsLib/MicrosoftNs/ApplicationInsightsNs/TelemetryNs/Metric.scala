@@ -31,6 +31,7 @@ class Metric protected ()
   var ver: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Metric")
 @js.native
 object Metric extends js.Object {

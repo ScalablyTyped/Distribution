@@ -68,6 +68,7 @@ class EventSourceMapping protected ()
   val uuid: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping")
 @js.native
 object EventSourceMapping extends js.Object {

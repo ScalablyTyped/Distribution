@@ -15,6 +15,7 @@ class DataBlock protected () extends js.Object {
   var numDataCodewords: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("DataBlock")
 @js.native
 object DataBlock extends js.Object {

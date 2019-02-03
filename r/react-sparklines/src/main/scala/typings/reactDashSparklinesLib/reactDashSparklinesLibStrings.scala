@@ -30,13 +30,21 @@ object reactDashSparklinesLibStrings {
   @js.native
   sealed trait min extends js.Object
   
+  @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def mean: mean = "mean".asInstanceOf[mean]
+  @scala.inline
   def median: median = "median".asInstanceOf[median]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
 }
 

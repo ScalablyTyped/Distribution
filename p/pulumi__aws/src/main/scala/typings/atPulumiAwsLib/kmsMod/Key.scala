@@ -21,6 +21,7 @@ class Key protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kmsKeyMod.KeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kms", "Key")
 @js.native
 object Key extends js.Object {

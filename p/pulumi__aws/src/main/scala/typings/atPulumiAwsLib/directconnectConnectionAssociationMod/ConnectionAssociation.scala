@@ -28,6 +28,7 @@ class ConnectionAssociation protected ()
   val lagId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/connectionAssociation", "ConnectionAssociation")
 @js.native
 object ConnectionAssociation extends js.Object {

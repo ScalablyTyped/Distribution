@@ -28,6 +28,7 @@ class Attachment protected ()
   val instance: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/attachment", "Attachment")
 @js.native
 object Attachment extends js.Object {

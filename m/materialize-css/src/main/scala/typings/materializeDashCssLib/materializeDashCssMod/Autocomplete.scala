@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Autocomplete ()
   extends materializeDashCssLib.MNs.Autocomplete
 
+/* static members */
 @JSImport("materialize-css", "Autocomplete")
 @js.native
 object Autocomplete extends js.Object {

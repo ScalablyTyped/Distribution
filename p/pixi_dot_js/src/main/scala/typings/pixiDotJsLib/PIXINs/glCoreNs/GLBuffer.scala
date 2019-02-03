@@ -31,6 +31,7 @@ class GLBuffer protected () extends js.Object {
   def upload(data: stdLib.ArrayBuffer, offset: scala.Double, dontBind: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.glCore.GLBuffer")
 @js.native
 object GLBuffer extends js.Object {

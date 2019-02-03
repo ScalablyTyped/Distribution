@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Svg ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Svg
 
+/* static members */
 @JSImport("matter-js", "Svg")
 @js.native
 object Svg extends js.Object {

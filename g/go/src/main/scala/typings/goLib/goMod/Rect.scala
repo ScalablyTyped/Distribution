@@ -38,10 +38,7 @@ class Rect ()
   def this(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double) = this()
 }
 
-/**
-  * A Rect describes a rectangular two-dimensional area as a top-left point (x and y values)
-  * and a size (width and height values).
-  */
+/* static members */
 @JSImport("go", "Rect")
 @js.native
 object Rect extends js.Object {

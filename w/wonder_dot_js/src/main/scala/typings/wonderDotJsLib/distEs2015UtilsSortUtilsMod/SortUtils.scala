@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SortUtils () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/utils/SortUtils", "SortUtils")
 @js.native
 object SortUtils extends js.Object {

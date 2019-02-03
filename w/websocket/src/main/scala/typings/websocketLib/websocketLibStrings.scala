@@ -42,17 +42,29 @@ object websocketLibStrings {
   @js.native
   sealed trait write extends js.Object
   
+  @scala.inline
   def advance: advance = "advance".asInstanceOf[advance]
+  @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def connectFailed: connectFailed = "connectFailed".asInstanceOf[connectFailed]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def frame: frame = "frame".asInstanceOf[frame]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def requestAccepted: requestAccepted = "requestAccepted".asInstanceOf[requestAccepted]
+  @scala.inline
   def requestRejected: requestRejected = "requestRejected".asInstanceOf[requestRejected]
+  @scala.inline
   def write: write = "write".asInstanceOf[write]
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("@loadable/component", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val default: atLoadableComponentLib.Anon_Lib = js.native
+  val default: atLoadableComponentLib.Anon_LoadFn with atLoadableComponentLib.Anon_Lib = js.native
   def `lazy`[T](
     loadFn: js.Function1[
       /* props */ T, 

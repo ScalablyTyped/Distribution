@@ -13,6 +13,7 @@ class Validator protected ()
   def this(name: java.lang.String, validatorFn: breezeLib.breezeNs.ValidatorFunction, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("breeze", "Validator")
 @js.native
 object Validator extends js.Object {

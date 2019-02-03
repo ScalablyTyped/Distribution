@@ -20,6 +20,7 @@ class DefaultRouteTable protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTableArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "DefaultRouteTable")
 @js.native
 object DefaultRouteTable extends js.Object {

@@ -80,6 +80,7 @@ class AccessToken protected () extends js.Object {
   def getUserId(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("react-native-fbsdk", "AccessToken")
 @js.native
 object AccessToken extends js.Object {

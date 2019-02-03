@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DomHelper () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.core.DomHelper")
 @js.native
 object DomHelper extends js.Object {

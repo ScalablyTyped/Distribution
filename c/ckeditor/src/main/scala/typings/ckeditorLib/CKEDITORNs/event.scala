@@ -93,6 +93,7 @@ class event () extends js.Object {
   def removeListener(eventName: java.lang.String, listenerFunction: js.Function1[/* eventInfo */ eventInfo, scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.event")
 @js.native
 object event extends js.Object {

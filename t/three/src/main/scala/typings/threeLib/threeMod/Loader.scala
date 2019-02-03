@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Loader ()
   extends threeLib.threeDashCoreMod.Loader
 
+/* static members */
 @JSImport("three", "Loader")
 @js.native
 object Loader extends js.Object {

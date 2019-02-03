@@ -50,6 +50,7 @@ abstract class AbstractRule protected ()
   override def isEnabled(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/language/rule/abstractRule", "AbstractRule")
 @js.native
 object AbstractRule extends js.Object {

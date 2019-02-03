@@ -19,6 +19,7 @@ class UrlMatcher protected ()
   def this(pattern: java.lang.String, paramTypes: atUirouterCoreLib.libParamsParamTypesMod.ParamTypes, paramFactory: atUirouterCoreLib.libUrlUrlMatcherFactoryMod.ParamFactory, config: atUirouterCoreLib.libUrlInterfaceMod.UrlMatcherCompileConfig) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "UrlMatcher")
 @js.native
 object UrlMatcher extends js.Object {

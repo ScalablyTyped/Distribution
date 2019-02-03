@@ -20,6 +20,7 @@ class Popup protected () extends Widget {
   def visible(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Popup")
 @js.native
 object Popup extends js.Object {

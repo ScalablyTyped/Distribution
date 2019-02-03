@@ -76,9 +76,7 @@ class SplitViewCommand () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Represents a command in the SplitView Pane.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SplitViewCommand")
 @js.native
 object SplitViewCommand extends js.Object {

@@ -14,6 +14,7 @@ class Indenter () extends js.Object {
   def increaseIndent(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Indenter")
 @js.native
 object Indenter extends js.Object {

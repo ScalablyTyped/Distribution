@@ -35,6 +35,7 @@ class RuleFailure protected () extends js.Object {
   def toJson(): IRuleFailureJson = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
 @js.native
 object RuleFailure extends js.Object {

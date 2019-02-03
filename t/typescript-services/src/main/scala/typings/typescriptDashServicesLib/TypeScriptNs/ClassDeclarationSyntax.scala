@@ -41,6 +41,7 @@ class ClassDeclarationSyntax protected () extends SyntaxNode {
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): ClassDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ClassDeclarationSyntax")
 @js.native
 object ClassDeclarationSyntax extends js.Object {

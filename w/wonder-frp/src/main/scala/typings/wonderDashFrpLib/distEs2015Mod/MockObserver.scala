@@ -12,6 +12,7 @@ class MockObserver protected ()
   def this(scheduler: wonderDashFrpLib.distEs2015TestingTestSchedulerMod.TestScheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "MockObserver")
 @js.native
 object MockObserver extends js.Object {

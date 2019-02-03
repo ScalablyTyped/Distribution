@@ -57,6 +57,7 @@ class MDCListFoundation protected ()
   def setWrapFocus(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/list/foundation", "MDCListFoundation")
 @js.native
 object MDCListFoundation extends js.Object {

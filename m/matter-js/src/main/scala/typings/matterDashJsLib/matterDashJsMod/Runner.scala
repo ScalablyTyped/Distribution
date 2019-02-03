@@ -42,6 +42,7 @@ class Runner ()
   override var isFixed: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Runner")
 @js.native
 object Runner extends js.Object {

@@ -18,9 +18,13 @@ object pgwmodalLibStrings {
   @js.native
   sealed trait reposition extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def getData: getData = "getData".asInstanceOf[getData]
+  @scala.inline
   def isOpen: isOpen = "isOpen".asInstanceOf[isOpen]
+  @scala.inline
   def reposition: reposition = "reposition".asInstanceOf[reposition]
 }
 

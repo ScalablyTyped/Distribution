@@ -120,9 +120,7 @@ class SSAO2RenderingPipeline protected () extends PostProcessRenderPipeline {
   def serialize(): js.Any = js.native
 }
 
-/**
-  * Render pipeline to produce ssao effect
-  */
+/* static members */
 @JSGlobal("BABYLON.SSAO2RenderingPipeline")
 @js.native
 object SSAO2RenderingPipeline extends js.Object {

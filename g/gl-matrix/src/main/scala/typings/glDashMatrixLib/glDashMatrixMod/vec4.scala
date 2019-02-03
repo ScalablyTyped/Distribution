@@ -12,6 +12,7 @@ class vec4 ()
   var typeVec3: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("gl-matrix", "vec4")
 @js.native
 object vec4 extends js.Object {

@@ -159,6 +159,7 @@ class Adapter () extends js.Object {
   def updateMany(mapper: jsDashDataLib.jsDashDataMod.Mapper, props: js.Array[IDict], opts: IDict): js.Any = js.native
 }
 
+/* static members */
 @JSImport("js-data-adapter", "Adapter")
 @js.native
 object Adapter extends js.Object {

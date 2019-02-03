@@ -20,6 +20,7 @@ class Distribution protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudfrontDistributionMod.DistributionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront", "Distribution")
 @js.native
 object Distribution extends js.Object {

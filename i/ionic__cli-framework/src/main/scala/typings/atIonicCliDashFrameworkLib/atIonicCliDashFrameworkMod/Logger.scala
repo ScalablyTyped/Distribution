@@ -12,6 +12,7 @@ class Logger ()
   def this(hasLevelHandlers: atIonicCliDashFrameworkLib.libLoggerMod.LoggerOptions) = this()
 }
 
+/* static members */
 @JSImport("@ionic/cli-framework", "Logger")
 @js.native
 object Logger extends js.Object {

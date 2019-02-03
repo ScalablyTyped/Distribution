@@ -27,10 +27,17 @@ trait IFactoryStatic
     * @return {*}
     */
   def build[T](name: java.lang.String): T = js.native
-  def build[T](name: java.lang.String, attributes: rosieLib.rosieLibStrings.IFactoryStatic with T): T = js.native
   def build[T](
     name: java.lang.String,
-    attributes: rosieLib.rosieLibStrings.IFactoryStatic with T,
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactoryStatic with T
+  ): T = js.native
+  def build[T](
+    name: java.lang.String,
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactoryStatic with T,
     options: js.Any
   ): T = js.native
   /**

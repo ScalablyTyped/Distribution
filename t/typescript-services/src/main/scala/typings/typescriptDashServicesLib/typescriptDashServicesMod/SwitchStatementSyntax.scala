@@ -12,6 +12,7 @@ class SwitchStatementSyntax protected ()
   def this(switchKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, switchClauses: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SwitchStatementSyntax")
 @js.native
 object SwitchStatementSyntax extends js.Object {

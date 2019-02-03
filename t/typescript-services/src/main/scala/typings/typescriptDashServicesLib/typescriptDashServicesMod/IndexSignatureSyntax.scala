@@ -12,6 +12,7 @@ class IndexSignatureSyntax protected ()
   def this(openBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parameter: typescriptDashServicesLib.TypeScriptNs.ParameterSyntax, closeBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "IndexSignatureSyntax")
 @js.native
 object IndexSignatureSyntax extends js.Object {

@@ -12,6 +12,7 @@ class ApolloLink ()
   def this(request: apolloDashLinkLib.libTypesMod.RequestHandler) = this()
 }
 
+/* static members */
 @JSImport("apollo-link", "ApolloLink")
 @js.native
 object ApolloLink extends js.Object {

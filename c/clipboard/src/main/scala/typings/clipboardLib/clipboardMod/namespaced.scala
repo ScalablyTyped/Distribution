@@ -16,6 +16,7 @@ class namespaced protected () extends ClipboardJS {
   def this(selector: stdLib.NodeListOf[stdLib.Element], options: clipboardLib.clipboardMod.ClipboardJSNs.Options) = this()
 }
 
+/* static members */
 @JSImport("clipboard", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

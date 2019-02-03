@@ -33,6 +33,7 @@ class Notifier () extends js.Object {
   def stream(): nodeLib.NodeJSNs.ReadableStream = js.native
 }
 
+/* static members */
 @JSImport("pigpio", "Notifier")
 @js.native
 object Notifier extends js.Object {

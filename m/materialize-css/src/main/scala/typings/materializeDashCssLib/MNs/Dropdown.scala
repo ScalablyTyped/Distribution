@@ -42,6 +42,7 @@ class Dropdown () extends Component[DropdownOptions] {
   def recalculateDimensions(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Dropdown")
 @js.native
 object Dropdown extends js.Object {

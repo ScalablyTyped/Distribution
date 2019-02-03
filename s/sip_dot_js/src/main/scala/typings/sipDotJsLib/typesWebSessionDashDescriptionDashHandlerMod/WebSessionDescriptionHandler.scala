@@ -145,6 +145,7 @@ class WebSessionDescriptionHandler protected ()
   ): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/Web/session-description-handler", "WebSessionDescriptionHandler")
 @js.native
 object WebSessionDescriptionHandler extends js.Object {

@@ -20,6 +20,7 @@ class Fleet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.gameliftFleetMod.FleetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift", "Fleet")
 @js.native
 object Fleet extends js.Object {

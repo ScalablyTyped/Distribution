@@ -44,9 +44,7 @@ class SpatialQuery () extends js.Object {
   def stale(stale: couchbaseLib.couchbaseMod.SpatialQueryNs.Update): SpatialQuery = js.native
 }
 
-/**
-  * Class for dynamically construction of spatial queries. This class should never be constructed directly, instead you should use SpatialQuery.from to construct this object.
-  */
+/* static members */
 @JSImport("couchbase", "SpatialQuery")
 @js.native
 object SpatialQuery extends js.Object {

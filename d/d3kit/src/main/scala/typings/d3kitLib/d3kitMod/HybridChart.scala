@@ -28,6 +28,7 @@ class HybridChart protected () extends CanvasChart {
   ] = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "HybridChart")
 @js.native
 object HybridChart extends js.Object {

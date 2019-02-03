@@ -65,6 +65,7 @@ class VsoClient protected () extends js.Object {
   def resolveUrl(relativeUrl: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("vso-node-api/VsoClient", "VsoClient")
 @js.native
 object VsoClient extends js.Object {

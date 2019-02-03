@@ -172,6 +172,7 @@ class Realm () extends js.Object {
   def writeCopyTo(path: java.lang.String, encryptionKey: stdLib.ArrayBufferView): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Realm")
 @js.native
 object Realm extends js.Object {

@@ -48,6 +48,7 @@ class TestScheduler protected ()
   def startWithTime(create: js.Function, subscribedTime: scala.Double, disposedTime: scala.Double): wonderDashFrpLib.distCommonjsTestingMockObserverMod.MockObserver = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/testing/TestScheduler", "TestScheduler")
 @js.native
 object TestScheduler extends js.Object {

@@ -32,6 +32,7 @@ class Options () extends js.Object {
   def toCapabilities(opt_capabilities: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities): seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver/safari", "Options")
 @js.native
 object Options extends js.Object {

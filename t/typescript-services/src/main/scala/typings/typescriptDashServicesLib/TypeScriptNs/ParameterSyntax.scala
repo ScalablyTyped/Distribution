@@ -32,6 +32,7 @@ class ParameterSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): ParameterSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ParameterSyntax")
 @js.native
 object ParameterSyntax extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WalletManager () extends js.Object
 
-/** Provides a static method to get an instance of the default wallet store for this app. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Wallet.WalletManager")
 @js.native
 object WalletManager extends js.Object {

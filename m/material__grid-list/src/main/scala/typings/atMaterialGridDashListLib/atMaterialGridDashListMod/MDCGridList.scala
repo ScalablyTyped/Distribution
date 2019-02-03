@@ -13,6 +13,7 @@ class MDCGridList ()
       atMaterialGridDashListLib.foundationMod.default
     ]
 
+/* static members */
 @JSImport("@material/grid-list", "MDCGridList")
 @js.native
 object MDCGridList extends js.Object {

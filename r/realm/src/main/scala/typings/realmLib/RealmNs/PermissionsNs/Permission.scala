@@ -18,6 +18,7 @@ class Permission () extends js.Object {
   var role: Role = js.native
 }
 
+/* static members */
 @JSGlobal("Realm.Permissions.Permission")
 @js.native
 object Permission extends js.Object {

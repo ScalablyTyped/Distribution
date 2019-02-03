@@ -21,10 +21,15 @@ object allureDashJsDashCommonsLibStrings {
   @js.native
   sealed trait skipped extends js.Object
   
+  @scala.inline
   def broken: broken = "broken".asInstanceOf[broken]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
 }
 

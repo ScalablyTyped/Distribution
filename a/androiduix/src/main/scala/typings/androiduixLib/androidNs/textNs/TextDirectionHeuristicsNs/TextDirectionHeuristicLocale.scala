@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextDirectionHeuristicLocale () extends TextDirectionHeuristicImpl
 
+/* static members */
 @JSGlobal("android.text.TextDirectionHeuristics.TextDirectionHeuristicLocale")
 @js.native
 object TextDirectionHeuristicLocale extends js.Object {

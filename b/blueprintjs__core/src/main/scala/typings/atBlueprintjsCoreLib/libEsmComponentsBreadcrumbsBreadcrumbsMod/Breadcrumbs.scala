@@ -15,6 +15,7 @@ class Breadcrumbs ()
   /* private */ def renderBreadcrumb(props: js.Any, isCurrent: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/breadcrumbs/breadcrumbs", "Breadcrumbs")
 @js.native
 object Breadcrumbs extends js.Object {

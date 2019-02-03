@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Bodies ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Bodies
 
+/* static members */
 @JSImport("matter-js", "Bodies")
 @js.native
 object Bodies extends js.Object {

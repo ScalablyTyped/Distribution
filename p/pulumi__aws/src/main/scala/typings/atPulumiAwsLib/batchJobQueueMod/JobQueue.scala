@@ -44,6 +44,7 @@ class JobQueue protected ()
   val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch/jobQueue", "JobQueue")
 @js.native
 object JobQueue extends js.Object {

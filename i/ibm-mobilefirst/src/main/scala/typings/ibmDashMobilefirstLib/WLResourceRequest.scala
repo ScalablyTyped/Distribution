@@ -42,6 +42,7 @@ class WLResourceRequest protected () extends js.Object {
   def setTimeout(requestTimeout: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("WLResourceRequest")
 @js.native
 object WLResourceRequest extends js.Object {

@@ -136,6 +136,7 @@ class StateObject () extends js.Object {
   def root(): StateObject = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/state/stateObject", "StateObject")
 @js.native
 object StateObject extends js.Object {

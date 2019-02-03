@@ -17,6 +17,7 @@ import scala.scalajs.js.annotation._
 class XYPlot[X, Y] ()
   extends plottableLib.buildSrcPlotsXyPlotMod.XYPlot[X, Y]
 
+/* static members */
 @JSImport("plottable", "XYPlot")
 @js.native
 object XYPlot extends js.Object {

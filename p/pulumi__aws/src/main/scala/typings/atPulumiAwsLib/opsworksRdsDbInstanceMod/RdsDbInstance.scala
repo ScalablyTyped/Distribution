@@ -36,6 +36,7 @@ class RdsDbInstance protected ()
   val stackId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance")
 @js.native
 object RdsDbInstance extends js.Object {

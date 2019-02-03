@@ -286,16 +286,7 @@ class UniformBuffer protected () extends js.Object {
   def updateVector4(name: java.lang.String, vector: Vector4): scala.Unit = js.native
 }
 
-/**
-  * Uniform buffer objects.
-  *
-  * Handles blocks of uniform on the GPU.
-  *
-  * If WebGL 2 is not available, this class falls back on traditionnal setUniformXXX calls.
-  *
-  * For more information, please refer to :
-  * https://www.khronos.org/opengl/wiki/Uniform_Buffer_Object
-  */
+/* static members */
 @JSGlobal("BABYLON.UniformBuffer")
 @js.native
 object UniformBuffer extends js.Object {

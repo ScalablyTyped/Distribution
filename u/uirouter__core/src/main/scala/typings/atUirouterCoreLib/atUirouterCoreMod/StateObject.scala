@@ -13,6 +13,7 @@ class StateObject ()
   def this(config: atUirouterCoreLib.libStateInterfaceMod.StateDeclaration) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "StateObject")
 @js.native
 object StateObject extends js.Object {

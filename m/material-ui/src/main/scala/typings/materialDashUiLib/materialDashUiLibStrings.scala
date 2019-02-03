@@ -111,40 +111,75 @@ object materialDashUiLibStrings {
   @js.native
   sealed trait `y-reverse` extends js.Object
   
+  @scala.inline
   def `24hr`: `24hr` = "24hr".asInstanceOf[`24hr`]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def ampm: ampm = "ampm".asInstanceOf[ampm]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def before: before = "before".asInstanceOf[before]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-center`: `bottom-center` = "bottom-center".asInstanceOf[`bottom-center`]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def determinate: determinate = "determinate".asInstanceOf[determinate]
+  @scala.inline
   def dialog: dialog = "dialog".asInstanceOf[dialog]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
+  @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
   def `x-reverse`: `x-reverse` = "x-reverse".asInstanceOf[`x-reverse`]
+  @scala.inline
   def y: y = "y".asInstanceOf[y]
+  @scala.inline
   def `y-reverse`: `y-reverse` = "y-reverse".asInstanceOf[`y-reverse`]
 }
 

@@ -12,6 +12,7 @@ class FilterObserver protected ()
   def this(prevObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver, predicate: js.Function1[/* value */ js.Any, scala.Boolean], source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "FilterObserver")
 @js.native
 object FilterObserver extends js.Object {

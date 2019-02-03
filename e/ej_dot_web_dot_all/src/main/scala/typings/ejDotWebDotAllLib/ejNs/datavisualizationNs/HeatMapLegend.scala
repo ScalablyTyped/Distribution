@@ -18,6 +18,7 @@ class HeatMapLegend protected ()
   var model_HeatMapLegend: ejDotWebDotAllLib.ejNs.datavisualizationNs.HeatMapLegendNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.HeatMapLegend")
 @js.native
 object HeatMapLegend extends js.Object {

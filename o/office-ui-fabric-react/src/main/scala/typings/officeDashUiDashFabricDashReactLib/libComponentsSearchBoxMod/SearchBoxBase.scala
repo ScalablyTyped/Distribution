@@ -12,6 +12,7 @@ class SearchBoxBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSearchBoxSearchBoxDotTypesMod.ISearchBoxProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SearchBox", "SearchBoxBase")
 @js.native
 object SearchBoxBase extends js.Object {

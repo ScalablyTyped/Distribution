@@ -20,6 +20,7 @@ class ClusterParameterGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsClusterParameterGroupMod.ClusterParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "ClusterParameterGroup")
 @js.native
 object ClusterParameterGroup extends js.Object {

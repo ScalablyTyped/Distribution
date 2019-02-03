@@ -46,6 +46,7 @@ class AsyncScheduler protected ()
   def flush(action: rxjsLib.internalSchedulerAsyncActionMod.AsyncAction[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/scheduler/AsyncScheduler", "AsyncScheduler")
 @js.native
 object AsyncScheduler extends js.Object {

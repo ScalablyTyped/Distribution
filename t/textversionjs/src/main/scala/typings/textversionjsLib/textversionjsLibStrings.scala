@@ -18,9 +18,13 @@ object textversionjsLibStrings {
   @js.native
   sealed trait underline extends js.Object
   
+  @scala.inline
   def hashify: hashify = "hashify".asInstanceOf[hashify]
+  @scala.inline
   def indentation: indentation = "indentation".asInstanceOf[indentation]
+  @scala.inline
   def linebreak: linebreak = "linebreak".asInstanceOf[linebreak]
+  @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
 }
 

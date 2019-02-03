@@ -12,6 +12,7 @@ class VariableStatementSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, variableDeclaration: typescriptDashServicesLib.TypeScriptNs.VariableDeclarationSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "VariableStatementSyntax")
 @js.native
 object VariableStatementSyntax extends js.Object {

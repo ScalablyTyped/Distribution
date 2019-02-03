@@ -12,6 +12,7 @@ class namespaced protected () extends EventSource {
   def this(url: java.lang.String, eventSourceInitDict: eventsourceLib.eventsourceMod.EventSourceNs.EventSourceInitDict) = this()
 }
 
+/* static members */
 @JSImport("eventsource", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

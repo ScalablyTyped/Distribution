@@ -18,6 +18,7 @@ class namespaced protected () extends Message {
   override var summary: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojmessaging", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

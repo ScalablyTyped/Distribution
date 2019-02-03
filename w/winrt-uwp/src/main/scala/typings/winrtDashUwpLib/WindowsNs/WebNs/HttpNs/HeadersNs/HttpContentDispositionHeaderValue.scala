@@ -28,7 +28,7 @@ class HttpContentDispositionHeaderValue protected () extends js.Object {
   var size: scala.Double = js.native
 }
 
-/** Represents the value of the Content-Disposition HTTP header on HTTP content in a request or a response. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentDispositionHeaderValue")
 @js.native
 object HttpContentDispositionHeaderValue extends js.Object {

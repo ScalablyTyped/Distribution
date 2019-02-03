@@ -12,7 +12,9 @@ object gapiDotClientDotCloudmonitoringLibStrings {
   @js.native
   sealed trait v2beta2 extends js.Object
   
+  @scala.inline
   def cloudmonitoring: cloudmonitoring = "cloudmonitoring".asInstanceOf[cloudmonitoring]
+  @scala.inline
   def v2beta2: v2beta2 = "v2beta2".asInstanceOf[v2beta2]
 }
 

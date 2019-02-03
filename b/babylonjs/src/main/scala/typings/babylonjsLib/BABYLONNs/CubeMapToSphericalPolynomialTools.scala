@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CubeMapToSphericalPolynomialTools () extends js.Object
 
-/**
-  * Helper class dealing with the extraction of spherical polynomial dataArray
-  * from a cube map.
-  */
+/* static members */
 @JSGlobal("BABYLON.CubeMapToSphericalPolynomialTools")
 @js.native
 object CubeMapToSphericalPolynomialTools extends js.Object {

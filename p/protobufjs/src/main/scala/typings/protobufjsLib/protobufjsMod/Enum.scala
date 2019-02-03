@@ -63,6 +63,7 @@ class Enum protected () extends ReflectionObject {
   def toJSON(toJSONOptions: IToJSONOptions): IEnum = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Enum")
 @js.native
 object Enum extends js.Object {

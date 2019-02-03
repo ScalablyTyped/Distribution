@@ -12,7 +12,9 @@ object cssbeautifyLibStrings {
   @js.native
   sealed trait `separate-line` extends js.Object
   
+  @scala.inline
   def `end-of-line`: `end-of-line` = "end-of-line".asInstanceOf[`end-of-line`]
+  @scala.inline
   def `separate-line`: `separate-line` = "separate-line".asInstanceOf[`separate-line`]
 }
 

@@ -65,6 +65,7 @@ class GuideLineLayer[D] protected ()
   def value(value: D): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/components/guideLineLayer", "GuideLineLayer")
 @js.native
 object GuideLineLayer extends js.Object {

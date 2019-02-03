@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PathUtils () extends js.Object
 
+/* static members */
 @JSImport("@uirouter/core/lib/path/pathUtils", "PathUtils")
 @js.native
 object PathUtils extends js.Object {

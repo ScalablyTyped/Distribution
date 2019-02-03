@@ -22,6 +22,7 @@ class SunburstChart protected ()
   def redraw(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.SunburstChart")
 @js.native
 object SunburstChart extends js.Object {

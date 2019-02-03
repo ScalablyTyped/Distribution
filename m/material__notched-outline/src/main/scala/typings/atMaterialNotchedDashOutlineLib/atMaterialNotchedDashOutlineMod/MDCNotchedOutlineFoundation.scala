@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCNotchedOutlineFoundation ()
   extends atMaterialNotchedDashOutlineLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/notched-outline", "MDCNotchedOutlineFoundation")
 @js.native
 object MDCNotchedOutlineFoundation extends js.Object {

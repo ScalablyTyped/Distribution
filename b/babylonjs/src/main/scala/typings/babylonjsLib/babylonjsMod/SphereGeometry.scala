@@ -56,10 +56,7 @@ class SphereGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a sphere geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#sphere
-  */
+/* static members */
 @JSImport("babylonjs", "SphereGeometry")
 @js.native
 object SphereGeometry extends js.Object {

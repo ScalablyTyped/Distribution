@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SiteServicesAddins () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Publishing.SiteServicesAddins")
 @js.native
 object SiteServicesAddins extends js.Object {

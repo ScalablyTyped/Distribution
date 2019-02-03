@@ -24,11 +24,17 @@ object graphqlDashToolsLibStrings {
   @js.native
   sealed trait subscription extends js.Object
   
+  @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]
+  @scala.inline
   def Query: Query = "Query".asInstanceOf[Query]
+  @scala.inline
   def Subscription: Subscription = "Subscription".asInstanceOf[Subscription]
+  @scala.inline
   def mutation: mutation = "mutation".asInstanceOf[mutation]
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
+  @scala.inline
   def subscription: subscription = "subscription".asInstanceOf[subscription]
 }
 

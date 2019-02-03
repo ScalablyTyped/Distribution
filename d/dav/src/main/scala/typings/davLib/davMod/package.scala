@@ -13,7 +13,9 @@ package object davMod {
   type CredentialsOptions = Partial[Credentials]
   type DAVCollectionOptions[T] = Partial[DAVCollection[T]]
   type DAVObjectOptions = Partial[DAVObject]
-  type Partial[T] = davLib.davLibStrings.Partial with T
+  type Partial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P]}
+    */ davLib.davLibStrings.Partial with T
   type RequestOptions = Partial[Request]
   type VCardOptions = Partial[VCard]
 }

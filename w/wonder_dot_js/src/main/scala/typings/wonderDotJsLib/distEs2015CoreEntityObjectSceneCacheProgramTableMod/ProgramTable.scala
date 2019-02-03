@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProgramTable () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/scene/cache/ProgramTable", "ProgramTable")
 @js.native
 object ProgramTable extends js.Object {

@@ -17,10 +17,7 @@ import scala.scalajs.js.annotation._
   */
 class Debug () extends js.Object
 
-/**
-  * Provides debugging and tracing functionality for client ECMAScript (JavaScript) code. This class is static and can be invoked directly without creating an instance of the class.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb397422(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.Debug")
 @js.native
 object Debug extends js.Object {

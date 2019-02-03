@@ -114,6 +114,7 @@ class TypeScriptCompiler () extends js.Object {
   /* private */ def writeByteOrderMarkForDocument(document: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeScriptCompiler")
 @js.native
 object TypeScriptCompiler extends js.Object {

@@ -54,6 +54,7 @@ class namespaced[R] protected () extends Bluebird[R] {
   override def value(): R = js.native
 }
 
+/* static members */
 @JSImport("bluebird-lst", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

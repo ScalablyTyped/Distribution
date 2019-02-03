@@ -33,6 +33,7 @@ class SubscriptionServer protected () extends js.Object {
   def close(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("subscriptions-transport-ws/dist/server", "SubscriptionServer")
 @js.native
 object SubscriptionServer extends js.Object {

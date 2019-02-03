@@ -20,7 +20,7 @@ class HttpTransferCodingHeaderValue protected () extends js.Object {
   var value: java.lang.String = js.native
 }
 
-/** Represents transfer coding information used in the Transfer-Encoding HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpTransferCodingHeaderValue")
 @js.native
 object HttpTransferCodingHeaderValue extends js.Object {

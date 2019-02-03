@@ -102,10 +102,7 @@ class Spot ()
   override def setTo(x: scala.Double, y: scala.Double, offx: scala.Double, offy: scala.Double): goLib.goMod.goNs.Spot = js.native
 }
 
-/**
-  * A Spot represents a relative point from(0, 0) to(1, 1) within the bounds of
-  * a rectangular area plus an absolute offset.
-  */
+/* static members */
 @JSImport("go", "Spot")
 @js.native
 object Spot extends js.Object {

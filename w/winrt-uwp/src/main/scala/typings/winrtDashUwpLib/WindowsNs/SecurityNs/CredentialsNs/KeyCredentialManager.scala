@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KeyCredentialManager () extends js.Object
 
-/** Contains methods for basic management of key credentials. */
+/* static members */
 @JSGlobal("Windows.Security.Credentials.KeyCredentialManager")
 @js.native
 object KeyCredentialManager extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TooltipBase ()
   extends officeDashUiDashFabricDashReactLib.libComponentsTooltipMod.TooltipBase
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Tooltip", "TooltipBase")
 @js.native
 object TooltipBase extends js.Object {

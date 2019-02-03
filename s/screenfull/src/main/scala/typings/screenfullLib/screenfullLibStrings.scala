@@ -12,7 +12,9 @@ object screenfullLibStrings {
   @js.native
   sealed trait error extends js.Object
   
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
 }
 

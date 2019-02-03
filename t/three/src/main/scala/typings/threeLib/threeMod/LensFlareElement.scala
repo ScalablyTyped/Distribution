@@ -15,6 +15,7 @@ class LensFlareElement protected ()
   def this(texture: threeLib.threeDashCoreMod.Texture, size: scala.Double, distance: scala.Double, color: threeLib.threeDashCoreMod.Color) = this()
 }
 
+/* static members */
 @JSImport("three", "LensFlareElement")
 @js.native
 object LensFlareElement extends js.Object {

@@ -12,6 +12,7 @@ class AnonymousStream protected ()
   def this(subscribeFunc: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "AnonymousStream")
 @js.native
 object AnonymousStream extends js.Object {

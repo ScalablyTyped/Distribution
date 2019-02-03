@@ -13,6 +13,7 @@ class Keypair protected ()
   def this(keys: stellarDashBaseLib.Anon_Ed25519Key) = this()
 }
 
+/* static members */
 @JSImport("stellar-sdk", "Keypair")
 @js.native
 object Keypair extends js.Object {

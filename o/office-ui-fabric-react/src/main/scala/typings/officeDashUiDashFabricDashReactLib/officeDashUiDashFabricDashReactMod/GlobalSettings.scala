@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GlobalSettings ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.GlobalSettings
 
+/* static members */
 @JSImport("office-ui-fabric-react", "GlobalSettings")
 @js.native
 object GlobalSettings extends js.Object {

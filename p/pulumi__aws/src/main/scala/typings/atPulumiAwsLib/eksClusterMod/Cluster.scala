@@ -53,6 +53,7 @@ class Cluster protected ()
   val vpcConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIds] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/eks/cluster", "Cluster")
 @js.native
 object Cluster extends js.Object {

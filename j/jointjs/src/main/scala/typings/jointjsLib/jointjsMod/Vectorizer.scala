@@ -116,6 +116,7 @@ class Vectorizer protected () extends js.Object {
   def translateCenterToPoint(p: jointjsLib.jointjsMod.gNs.PlainPoint): this.type = js.native
 }
 
+/* static members */
 @JSImport("jointjs", "Vectorizer")
 @js.native
 object Vectorizer extends js.Object {

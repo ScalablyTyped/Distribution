@@ -177,9 +177,7 @@ class Long () extends js.Object {
   def xor(other: adoneLib.adoneNs.mathNs.INs.Longable): Long = js.native
 }
 
-/**
-  * Represents a 64 bit two's-complement integer
-  */
+/* static members */
 @JSGlobal("adone.math.Long")
 @js.native
 object Long extends js.Object {

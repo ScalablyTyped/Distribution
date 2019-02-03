@@ -73,6 +73,7 @@ class Realtime protected () extends js.Object {
   def time(paramsOrCallback: js.Any, callback: ablyLib.ablyMod.TypesNs.timeCallback): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("ably", "Realtime")
 @js.native
 object Realtime extends js.Object {

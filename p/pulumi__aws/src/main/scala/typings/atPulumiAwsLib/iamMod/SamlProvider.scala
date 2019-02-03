@@ -20,6 +20,7 @@ class SamlProvider protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamSamlProviderMod.SamlProviderArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "SamlProvider")
 @js.native
 object SamlProvider extends js.Object {

@@ -34,6 +34,7 @@ class InterfaceDeclarationSyntax protected () extends SyntaxNode {
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): InterfaceDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.InterfaceDeclarationSyntax")
 @js.native
 object InterfaceDeclarationSyntax extends js.Object {

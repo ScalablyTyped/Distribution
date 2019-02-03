@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BezierCurve () extends js.Object
 
-/** Class used to represent a Bezier curve */
+/* static members */
 @JSGlobal("BABYLON.BezierCurve")
 @js.native
 object BezierCurve extends js.Object {

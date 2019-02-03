@@ -144,10 +144,7 @@ class Particle protected () extends js.Object {
   def updateCellIndex(): scala.Unit = js.native
 }
 
-/**
-  * A particle represents one of the element emitted by a particle system.
-  * This is mainly define by its coordinates, direction, velocity and age.
-  */
+/* static members */
 @JSGlobal("BABYLON.Particle")
 @js.native
 object Particle extends js.Object {

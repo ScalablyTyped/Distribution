@@ -47,9 +47,7 @@ object settingsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.settingsNs.v1alpha1Ns.PodPresetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * PodPreset is a policy resource that defines additional runtime requirements for a Pod.
-      */
+    /* static members */
     @js.native
     object PodPreset extends js.Object {
       /**
@@ -72,9 +70,7 @@ object settingsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.settingsNs.v1alpha1Ns.PodPreset = js.native
     }
     
-    /**
-      * PodPresetList is a list of PodPreset objects.
-      */
+    /* static members */
     @js.native
     object PodPresetList extends js.Object {
       /**

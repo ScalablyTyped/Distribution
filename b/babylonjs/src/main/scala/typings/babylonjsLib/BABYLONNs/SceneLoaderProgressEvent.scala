@@ -29,9 +29,7 @@ class SceneLoaderProgressEvent protected () extends js.Object {
   val total: scala.Double = js.native
 }
 
-/**
-  * Class used to represent data loading progression
-  */
+/* static members */
 @JSGlobal("BABYLON.SceneLoaderProgressEvent")
 @js.native
 object SceneLoaderProgressEvent extends js.Object {

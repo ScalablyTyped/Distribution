@@ -12,6 +12,7 @@ class IfStatementSyntax protected ()
   def this(ifKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, condition: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statement: typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, elseClause: typescriptDashServicesLib.TypeScriptNs.ElseClauseSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "IfStatementSyntax")
 @js.native
 object IfStatementSyntax extends js.Object {

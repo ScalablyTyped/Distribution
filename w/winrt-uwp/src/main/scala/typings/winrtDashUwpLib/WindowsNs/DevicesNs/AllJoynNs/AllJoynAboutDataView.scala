@@ -43,7 +43,7 @@ abstract class AllJoynAboutDataView () extends js.Object {
   var supportedLanguages: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.GlobalizationNs.Language] = js.native
 }
 
-/** Used to view data about another app and the device it is running on. */
+/* static members */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynAboutDataView")
 @js.native
 object AllJoynAboutDataView extends js.Object {

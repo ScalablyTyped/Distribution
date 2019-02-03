@@ -19,6 +19,7 @@ class default () extends PKIStatusInfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PKIStatusInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

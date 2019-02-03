@@ -14,6 +14,7 @@ class Guid protected () extends js.Object {
   def toString(format: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Guid")
 @js.native
 object Guid extends js.Object {

@@ -232,6 +232,7 @@ object opsworksNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.opsworksUserProfileMod.UserProfileArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Application extends js.Object {
     /**
@@ -256,6 +257,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksApplicationMod.Application = js.native
   }
   
+  /* static members */
   @js.native
   object CustomLayer extends js.Object {
     /**
@@ -280,6 +282,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksCustomLayerMod.CustomLayer = js.native
   }
   
+  /* static members */
   @js.native
   object GangliaLayer extends js.Object {
     /**
@@ -304,6 +307,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksGangliaLayerMod.GangliaLayer = js.native
   }
   
+  /* static members */
   @js.native
   object HaproxyLayer extends js.Object {
     /**
@@ -328,6 +332,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksHaproxyLayerMod.HaproxyLayer = js.native
   }
   
+  /* static members */
   @js.native
   object Instance extends js.Object {
     /**
@@ -352,6 +357,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksInstanceMod.Instance = js.native
   }
   
+  /* static members */
   @js.native
   object JavaAppLayer extends js.Object {
     /**
@@ -376,6 +382,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksJavaAppLayerMod.JavaAppLayer = js.native
   }
   
+  /* static members */
   @js.native
   object MemcachedLayer extends js.Object {
     /**
@@ -400,6 +407,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayer = js.native
   }
   
+  /* static members */
   @js.native
   object MysqlLayer extends js.Object {
     /**
@@ -424,6 +432,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksMysqlLayerMod.MysqlLayer = js.native
   }
   
+  /* static members */
   @js.native
   object NodejsAppLayer extends js.Object {
     /**
@@ -448,6 +457,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayer = js.native
   }
   
+  /* static members */
   @js.native
   object Permission extends js.Object {
     /**
@@ -472,6 +482,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksPermissionMod.Permission = js.native
   }
   
+  /* static members */
   @js.native
   object PhpAppLayer extends js.Object {
     /**
@@ -496,6 +507,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksPhpAppLayerMod.PhpAppLayer = js.native
   }
   
+  /* static members */
   @js.native
   object RailsAppLayer extends js.Object {
     /**
@@ -520,6 +532,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayer = js.native
   }
   
+  /* static members */
   @js.native
   object RdsDbInstance extends js.Object {
     /**
@@ -544,6 +557,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksRdsDbInstanceMod.RdsDbInstance = js.native
   }
   
+  /* static members */
   @js.native
   object Stack extends js.Object {
     /**
@@ -568,6 +582,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksStackMod.Stack = js.native
   }
   
+  /* static members */
   @js.native
   object StaticWebLayer extends js.Object {
     /**
@@ -592,6 +607,7 @@ object opsworksNs extends js.Object {
     ): atPulumiAwsLib.opsworksStaticWebLayerMod.StaticWebLayer = js.native
   }
   
+  /* static members */
   @js.native
   object UserProfile extends js.Object {
     /**

@@ -18,9 +18,13 @@ object nockLibStrings {
   @js.native
   sealed trait wild extends js.Object
   
+  @scala.inline
   def dryrun: dryrun = "dryrun".asInstanceOf[dryrun]
+  @scala.inline
   def lockdown: lockdown = "lockdown".asInstanceOf[lockdown]
+  @scala.inline
   def record: record = "record".asInstanceOf[record]
+  @scala.inline
   def wild: wild = "wild".asInstanceOf[wild]
 }
 

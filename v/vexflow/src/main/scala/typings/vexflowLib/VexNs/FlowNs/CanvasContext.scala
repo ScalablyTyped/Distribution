@@ -63,6 +63,7 @@ class CanvasContext protected ()
   def stroke_CanvasContext(): CanvasContext = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.CanvasContext")
 @js.native
 object CanvasContext extends js.Object {

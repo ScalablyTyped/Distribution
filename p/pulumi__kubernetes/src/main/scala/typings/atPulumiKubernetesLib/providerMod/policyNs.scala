@@ -184,10 +184,7 @@ object policyNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.policyNs.v1beta1Ns.PodSecurityPolicyList = js.native
     }
     
-    /**
-      * PodDisruptionBudget is an object to define the max disruption that can be caused to a
-      * collection of pods
-      */
+    /* static members */
     @js.native
     object PodDisruptionBudget extends js.Object {
       /**
@@ -210,9 +207,7 @@ object policyNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudget = js.native
     }
     
-    /**
-      * PodDisruptionBudgetList is a collection of PodDisruptionBudgets.
-      */
+    /* static members */
     @js.native
     object PodDisruptionBudgetList extends js.Object {
       /**
@@ -235,10 +230,7 @@ object policyNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodDisruptionBudgetList = js.native
     }
     
-    /**
-      * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
-      * will be applied to a pod and container.
-      */
+    /* static members */
     @js.native
     object PodSecurityPolicy extends js.Object {
       /**
@@ -261,9 +253,7 @@ object policyNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.policyNs.v1beta1Ns.PodSecurityPolicy = js.native
     }
     
-    /**
-      * PodSecurityPolicyList is a list of PodSecurityPolicy objects.
-      */
+    /* static members */
     @js.native
     object PodSecurityPolicyList extends js.Object {
       /**

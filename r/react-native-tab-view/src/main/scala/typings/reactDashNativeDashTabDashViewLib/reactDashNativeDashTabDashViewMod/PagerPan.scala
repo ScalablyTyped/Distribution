@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PagerPan[T /* <: Route[RouteBase] */] ()
   extends reactLib.reactMod.PureComponent[PagerPanProps[T], js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native-tab-view", "PagerPan")
 @js.native
 object PagerPan extends js.Object {

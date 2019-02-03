@@ -30,13 +30,21 @@ object gapiDotDriveLibStrings {
   @js.native
   sealed trait driveDOLLARproperty extends js.Object
   
+  @scala.inline
   def `api#channel`: `api#channel` = "api#channel".asInstanceOf[`api#channel`]
+  @scala.inline
   def `drive#file`: `drive#file` = "drive#file".asInstanceOf[`drive#file`]
+  @scala.inline
   def `drive#fileList`: `drive#fileList` = "drive#fileList".asInstanceOf[`drive#fileList`]
+  @scala.inline
   def `drive#generatedIds`: `drive#generatedIds` = "drive#generatedIds".asInstanceOf[`drive#generatedIds`]
+  @scala.inline
   def `drive#parentReference`: `drive#parentReference` = "drive#parentReference".asInstanceOf[`drive#parentReference`]
+  @scala.inline
   def `drive#permission`: `drive#permission` = "drive#permission".asInstanceOf[`drive#permission`]
+  @scala.inline
   def `drive#user`: `drive#user` = "drive#user".asInstanceOf[`drive#user`]
+  @scala.inline
   def driveDOLLARproperty: driveDOLLARproperty = "drive$property".asInstanceOf[driveDOLLARproperty]
 }
 

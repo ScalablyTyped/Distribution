@@ -12,6 +12,7 @@ class WrappedValue protected ()
   def this(value: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@angular/core/src/change_detection/change_detection", "WrappedValue")
 @js.native
 object WrappedValue extends js.Object {

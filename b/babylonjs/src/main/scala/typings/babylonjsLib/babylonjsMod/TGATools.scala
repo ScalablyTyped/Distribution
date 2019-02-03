@@ -15,11 +15,7 @@ import scala.scalajs.js.annotation._
 class TGATools ()
   extends babylonjsLib.BABYLONNs.TGATools
 
-/**
-  * Based on jsTGALoader - Javascript loader for TGA file
-  * By Vincent Thibault
-  * @see http://blog.robrowser.com/javascript-tga-loader.html
-  */
+/* static members */
 @JSImport("babylonjs", "TGATools")
 @js.native
 object TGATools extends js.Object {

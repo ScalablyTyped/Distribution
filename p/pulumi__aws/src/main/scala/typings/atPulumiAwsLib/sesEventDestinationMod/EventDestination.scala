@@ -48,6 +48,7 @@ class EventDestination protected ()
   val snsDestination: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TopicArn]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/eventDestination", "EventDestination")
 @js.native
 object EventDestination extends js.Object {

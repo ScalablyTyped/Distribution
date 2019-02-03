@@ -24,6 +24,7 @@ class Utm protected () extends js.Object {
   def toString(digits: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "Utm")
 @js.native
 object Utm extends js.Object {

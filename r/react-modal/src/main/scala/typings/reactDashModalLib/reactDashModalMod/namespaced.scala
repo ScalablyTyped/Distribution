@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends ReactModal
 
+/* static members */
 @JSImport("react-modal", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -16,6 +16,7 @@ class PlayToManager () extends IPlayToManager {
   override var onsourceselected: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Media.PlayTo.PlayToManager")
 @js.native
 object PlayToManager extends js.Object {

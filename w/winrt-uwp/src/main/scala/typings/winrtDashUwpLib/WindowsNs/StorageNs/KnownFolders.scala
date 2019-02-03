@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownFolders () extends js.Object
 
-/** Provides access to common locations that contain user content. This includes content from a user's local libraries (such as Documents, Pictures, Music, and Videos), HomeGroup, removable devices, and media server devices. */
+/* static members */
 @JSGlobal("Windows.Storage.KnownFolders")
 @js.native
 object KnownFolders extends js.Object {

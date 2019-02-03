@@ -20,6 +20,7 @@ class Trigger () extends Base {
   /* protected */ def onSuccess(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "Trigger")
 @js.native
 object Trigger extends js.Object {

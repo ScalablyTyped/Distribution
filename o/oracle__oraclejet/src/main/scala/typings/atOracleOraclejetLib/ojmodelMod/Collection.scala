@@ -225,6 +225,7 @@ class Collection () extends js.Object {
   def without(var_args: Model*): js.Array[Model] = js.native
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojmodel", "Collection")
 @js.native
 object Collection extends js.Object {

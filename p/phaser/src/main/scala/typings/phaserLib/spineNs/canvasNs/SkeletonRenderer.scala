@@ -36,6 +36,7 @@ class SkeletonRenderer protected () extends js.Object {
   /* private */ def drawTriangles(skeleton: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("spine.canvas.SkeletonRenderer")
 @js.native
 object SkeletonRenderer extends js.Object {

@@ -21,6 +21,7 @@ class FileSystem protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.efsFileSystemMod.FileSystemArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/efs", "FileSystem")
 @js.native
 object FileSystem extends js.Object {

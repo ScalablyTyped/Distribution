@@ -20,6 +20,7 @@ class MaskedTextBox protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.MaskedTextBox")
 @js.native
 object MaskedTextBox extends js.Object {

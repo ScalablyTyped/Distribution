@@ -20,6 +20,7 @@ class LogResourcePolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchLogResourcePolicyMod.LogResourcePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogResourcePolicy")
 @js.native
 object LogResourcePolicy extends js.Object {

@@ -20,6 +20,7 @@ class ThingPrincipalAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iotThingPrincipalAttachmentMod.ThingPrincipalAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot", "ThingPrincipalAttachment")
 @js.native
 object ThingPrincipalAttachment extends js.Object {

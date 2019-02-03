@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SiteImageRenditions () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Publishing.SiteImageRenditions")
 @js.native
 object SiteImageRenditions extends js.Object {

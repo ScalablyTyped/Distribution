@@ -33,7 +33,7 @@ abstract class AdcController () extends js.Object {
   def openChannel(channelNumber: scala.Double): AdcChannel = js.native
 }
 
-/** Represents an ADC controller on the system */
+/* static members */
 @JSGlobal("Windows.Devices.Adc.AdcController")
 @js.native
 object AdcController extends js.Object {

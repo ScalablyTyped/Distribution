@@ -284,13 +284,7 @@ class Vec2 () extends js.Object {
   def sub2(lhs: Vec2, rhs: Vec2): this.type = js.native
 }
 
-/**
-  * @name pc.Vec2
-  * @class A 2-dimensional vector.
-  * @description Creates a new Vec2 object
-  * @param {Number} [x] The x value. If x is an array of length 2, the array will be used to populate all components.
-  * @param {Number} [y] The y value
-  */
+/* static members */
 @JSGlobal("pc.Vec2")
 @js.native
 object Vec2 extends js.Object {

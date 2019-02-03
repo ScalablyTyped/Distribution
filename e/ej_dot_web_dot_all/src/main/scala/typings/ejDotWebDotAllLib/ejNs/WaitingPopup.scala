@@ -29,6 +29,7 @@ class WaitingPopup protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.WaitingPopup")
 @js.native
 object WaitingPopup extends js.Object {

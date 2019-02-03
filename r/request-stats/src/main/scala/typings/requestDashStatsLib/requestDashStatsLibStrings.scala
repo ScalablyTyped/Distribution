@@ -12,7 +12,9 @@ object requestDashStatsLibStrings {
   @js.native
   sealed trait request extends js.Object
   
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
 }
 

@@ -12,7 +12,9 @@ object reduxLibStrings {
   @js.native
   sealed trait ReducersMapObject extends js.Object
   
+  @scala.inline
   def DeepPartial: DeepPartial = "DeepPartial".asInstanceOf[DeepPartial]
+  @scala.inline
   def ReducersMapObject: ReducersMapObject = "ReducersMapObject".asInstanceOf[ReducersMapObject]
 }
 

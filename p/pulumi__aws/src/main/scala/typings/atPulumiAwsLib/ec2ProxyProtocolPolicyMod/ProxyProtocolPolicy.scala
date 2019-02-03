@@ -30,6 +30,7 @@ class ProxyProtocolPolicy protected ()
   val loadBalancer: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/proxyProtocolPolicy", "ProxyProtocolPolicy")
 @js.native
 object ProxyProtocolPolicy extends js.Object {

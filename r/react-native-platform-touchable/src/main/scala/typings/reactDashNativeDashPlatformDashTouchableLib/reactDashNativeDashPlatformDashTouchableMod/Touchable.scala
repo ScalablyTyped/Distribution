@@ -13,6 +13,7 @@ class Touchable ()
   def setOpacityTo(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-native-platform-touchable", "Touchable")
 @js.native
 object Touchable extends js.Object {

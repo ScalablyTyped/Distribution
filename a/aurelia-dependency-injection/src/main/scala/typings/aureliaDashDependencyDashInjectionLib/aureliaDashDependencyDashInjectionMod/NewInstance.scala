@@ -29,6 +29,7 @@ class NewInstance protected () extends js.Object {
   def get(container: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "NewInstance")
 @js.native
 object NewInstance extends js.Object {

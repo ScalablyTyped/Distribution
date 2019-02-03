@@ -1148,6 +1148,7 @@ object ec2Ns extends js.Object {
     args: atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ec2GetVpnGatewayMod.GetVpnGatewayResult] = js.native
+  /* static members */
   @js.native
   object Ami extends js.Object {
     /**
@@ -1172,6 +1173,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2AmiMod.Ami = js.native
   }
   
+  /* static members */
   @js.native
   object AmiCopy extends js.Object {
     /**
@@ -1196,6 +1198,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2AmiCopyMod.AmiCopy = js.native
   }
   
+  /* static members */
   @js.native
   object AmiFromInstance extends js.Object {
     /**
@@ -1220,6 +1223,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2AmiFromInstanceMod.AmiFromInstance = js.native
   }
   
+  /* static members */
   @js.native
   object AmiLaunchPermission extends js.Object {
     /**
@@ -1244,6 +1248,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermission = js.native
   }
   
+  /* static members */
   @js.native
   object CapacityReservation extends js.Object {
     /**
@@ -1268,6 +1273,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2CapacityReservationMod.CapacityReservation = js.native
   }
   
+  /* static members */
   @js.native
   object CustomerGateway extends js.Object {
     /**
@@ -1292,6 +1298,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2CustomerGatewayMod.CustomerGateway = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultNetworkAcl extends js.Object {
     /**
@@ -1316,6 +1323,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultNetworkAclMod.DefaultNetworkAcl = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultRouteTable extends js.Object {
     /**
@@ -1340,6 +1348,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultRouteTableMod.DefaultRouteTable = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultSecurityGroup extends js.Object {
     /**
@@ -1364,6 +1373,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultSecurityGroupMod.DefaultSecurityGroup = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultSubnet extends js.Object {
     /**
@@ -1388,6 +1398,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultSubnetMod.DefaultSubnet = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultVpc extends js.Object {
     /**
@@ -1412,6 +1423,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultVpcMod.DefaultVpc = js.native
   }
   
+  /* static members */
   @js.native
   object DefaultVpcDhcpOptions extends js.Object {
     /**
@@ -1436,6 +1448,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2DefaultVpcDhcpOptionsMod.DefaultVpcDhcpOptions = js.native
   }
   
+  /* static members */
   @js.native
   object EgressOnlyInternetGateway extends js.Object {
     /**
@@ -1460,6 +1473,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGateway = js.native
   }
   
+  /* static members */
   @js.native
   object Eip extends js.Object {
     /**
@@ -1484,6 +1498,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2EipMod.Eip = js.native
   }
   
+  /* static members */
   @js.native
   object EipAssociation extends js.Object {
     /**
@@ -1508,6 +1523,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2EipAssociationMod.EipAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object Fleet extends js.Object {
     /**
@@ -1532,6 +1548,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2FleetMod.Fleet = js.native
   }
   
+  /* static members */
   @js.native
   object FlowLog extends js.Object {
     /**
@@ -1556,6 +1573,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2FlowLogMod.FlowLog = js.native
   }
   
+  /* static members */
   @js.native
   object Instance extends js.Object {
     /**
@@ -1580,6 +1598,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2InstanceMod.Instance = js.native
   }
   
+  /* static members */
   @js.native
   object InternetGateway extends js.Object {
     /**
@@ -1604,6 +1623,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2InternetGatewayMod.InternetGateway = js.native
   }
   
+  /* static members */
   @js.native
   object KeyPair extends js.Object {
     /**
@@ -1628,6 +1648,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2KeyPairMod.KeyPair = js.native
   }
   
+  /* static members */
   @js.native
   object LaunchConfiguration extends js.Object {
     /**
@@ -1652,6 +1673,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfiguration = js.native
   }
   
+  /* static members */
   @js.native
   object LaunchTemplate extends js.Object {
     /**
@@ -1676,6 +1698,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2LaunchTemplateMod.LaunchTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object MainRouteTableAssociation extends js.Object {
     /**
@@ -1700,6 +1723,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2MainRouteTableAssociationMod.MainRouteTableAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object NatGateway extends js.Object {
     /**
@@ -1724,6 +1748,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NatGatewayMod.NatGateway = js.native
   }
   
+  /* static members */
   @js.native
   object NetworkAcl extends js.Object {
     /**
@@ -1748,6 +1773,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NetworkAclMod.NetworkAcl = js.native
   }
   
+  /* static members */
   @js.native
   object NetworkAclRule extends js.Object {
     /**
@@ -1772,6 +1798,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NetworkAclRuleMod.NetworkAclRule = js.native
   }
   
+  /* static members */
   @js.native
   object NetworkInterface extends js.Object {
     /**
@@ -1796,6 +1823,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterface = js.native
   }
   
+  /* static members */
   @js.native
   object NetworkInterfaceAttachment extends js.Object {
     /**
@@ -1820,6 +1848,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NetworkInterfaceAttachmentMod.NetworkInterfaceAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object NetworkInterfaceSecurityGroupAttachment extends js.Object {
     /**
@@ -1844,6 +1873,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2NetworkInterfaceSecurityGroupAttachmentMod.NetworkInterfaceSecurityGroupAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object PeeringConnectionOptions extends js.Object {
     /**
@@ -1868,6 +1898,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2PeeringConnectionOptionsMod.PeeringConnectionOptions = js.native
   }
   
+  /* static members */
   @js.native
   object PlacementGroup extends js.Object {
     /**
@@ -1892,6 +1923,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2PlacementGroupMod.PlacementGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ProxyProtocolPolicy extends js.Object {
     /**
@@ -1916,6 +1948,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2ProxyProtocolPolicyMod.ProxyProtocolPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object Route extends js.Object {
     /**
@@ -1940,6 +1973,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2RouteMod.Route = js.native
   }
   
+  /* static members */
   @js.native
   object RouteTable extends js.Object {
     /**
@@ -1964,6 +1998,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2RouteTableMod.RouteTable = js.native
   }
   
+  /* static members */
   @js.native
   object RouteTableAssociation extends js.Object {
     /**
@@ -1988,6 +2023,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2RouteTableAssociationMod.RouteTableAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityGroup extends js.Object {
     /**
@@ -2012,6 +2048,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SecurityGroupMod.SecurityGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityGroupRule extends js.Object {
     /**
@@ -2036,6 +2073,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SecurityGroupRuleMod.SecurityGroupRule = js.native
   }
   
+  /* static members */
   @js.native
   object SnapshotCreateVolumePermission extends js.Object {
     /**
@@ -2060,6 +2098,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermission = js.native
   }
   
+  /* static members */
   @js.native
   object SpotDatafeedSubscription extends js.Object {
     /**
@@ -2084,6 +2123,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscription = js.native
   }
   
+  /* static members */
   @js.native
   object SpotFleetRequest extends js.Object {
     /**
@@ -2108,6 +2148,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequest = js.native
   }
   
+  /* static members */
   @js.native
   object SpotInstanceRequest extends js.Object {
     /**
@@ -2132,6 +2173,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SpotInstanceRequestMod.SpotInstanceRequest = js.native
   }
   
+  /* static members */
   @js.native
   object Subnet extends js.Object {
     /**
@@ -2156,6 +2198,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2SubnetMod.Subnet = js.native
   }
   
+  /* static members */
   @js.native
   object VolumeAttachment extends js.Object {
     /**
@@ -2180,6 +2223,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VolumeAttachmentMod.VolumeAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object Vpc extends js.Object {
     /**
@@ -2204,6 +2248,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcMod.Vpc = js.native
   }
   
+  /* static members */
   @js.native
   object VpcDhcpOptions extends js.Object {
     /**
@@ -2228,6 +2273,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcDhcpOptionsMod.VpcDhcpOptions = js.native
   }
   
+  /* static members */
   @js.native
   object VpcDhcpOptionsAssociation extends js.Object {
     /**
@@ -2252,6 +2298,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcDhcpOptionsAssociationMod.VpcDhcpOptionsAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpoint extends js.Object {
     /**
@@ -2276,6 +2323,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointMod.VpcEndpoint = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpointConnectionNotification extends js.Object {
     /**
@@ -2300,6 +2348,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointConnectionNotificationMod.VpcEndpointConnectionNotification = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpointRouteTableAssociation extends js.Object {
     /**
@@ -2324,6 +2373,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpointService extends js.Object {
     /**
@@ -2348,6 +2398,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointService = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpointServiceAllowedPrinciple extends js.Object {
     /**
@@ -2372,6 +2423,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointServiceAllowedPrincipleMod.VpcEndpointServiceAllowedPrinciple = js.native
   }
   
+  /* static members */
   @js.native
   object VpcEndpointSubnetAssociation extends js.Object {
     /**
@@ -2396,6 +2448,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcEndpointSubnetAssociationMod.VpcEndpointSubnetAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object VpcIpv4CidrBlockAssociation extends js.Object {
     /**
@@ -2420,6 +2473,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object VpcPeeringConnection extends js.Object {
     /**
@@ -2444,6 +2498,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcPeeringConnectionMod.VpcPeeringConnection = js.native
   }
   
+  /* static members */
   @js.native
   object VpcPeeringConnectionAccepter extends js.Object {
     /**
@@ -2468,6 +2523,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpcPeeringConnectionAccepterMod.VpcPeeringConnectionAccepter = js.native
   }
   
+  /* static members */
   @js.native
   object VpnConnection extends js.Object {
     /**
@@ -2492,6 +2548,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpnConnectionMod.VpnConnection = js.native
   }
   
+  /* static members */
   @js.native
   object VpnConnectionRoute extends js.Object {
     /**
@@ -2516,6 +2573,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRoute = js.native
   }
   
+  /* static members */
   @js.native
   object VpnGateway extends js.Object {
     /**
@@ -2540,6 +2598,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpnGatewayMod.VpnGateway = js.native
   }
   
+  /* static members */
   @js.native
   object VpnGatewayAttachment extends js.Object {
     /**
@@ -2564,6 +2623,7 @@ object ec2Ns extends js.Object {
     ): atPulumiAwsLib.ec2VpnGatewayAttachmentMod.VpnGatewayAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object VpnGatewayRoutePropagation extends js.Object {
     /**

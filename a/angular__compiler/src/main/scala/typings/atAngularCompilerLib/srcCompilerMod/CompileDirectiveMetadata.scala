@@ -12,6 +12,7 @@ class CompileDirectiveMetadata protected ()
   def this(hasIsHostTypeIsComponentSelectorExportAsChangeDetectionInputsOutputsHostListenersHostPropertiesHostAttributesProvidersViewProvidersQueriesGuardsViewQueriesEntryComponentsTemplateComponentViewTypeRendererTypeComponentFactory: atAngularCompilerLib.Anon_ChangeDetectionComponentFactory) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/compiler", "CompileDirectiveMetadata")
 @js.native
 object CompileDirectiveMetadata extends js.Object {

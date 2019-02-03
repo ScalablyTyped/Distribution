@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class ViewportScroller ()
   extends atAngularCommonLib.publicUnderscoreApiMod.ViewportScroller
 
+/* static members */
 @JSImport("@angular/common", "ViewportScroller")
 @js.native
 object ViewportScroller extends js.Object {

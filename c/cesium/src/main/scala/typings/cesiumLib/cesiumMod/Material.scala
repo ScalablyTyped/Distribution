@@ -28,6 +28,7 @@ class Material ()
   override def isTranslucent(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Material")
 @js.native
 object Material extends js.Object {

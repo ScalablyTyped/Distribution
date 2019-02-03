@@ -101,9 +101,7 @@ object coordinationNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.coordinationNs.v1beta1Ns.LeaseList = js.native
     }
     
-    /**
-      * Lease defines a lease concept.
-      */
+    /* static members */
     @js.native
     object Lease extends js.Object {
       /**
@@ -126,9 +124,7 @@ object coordinationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coordinationNs.v1beta1Ns.Lease = js.native
     }
     
-    /**
-      * LeaseList is a list of Lease objects.
-      */
+    /* static members */
     @js.native
     object LeaseList extends js.Object {
       /**

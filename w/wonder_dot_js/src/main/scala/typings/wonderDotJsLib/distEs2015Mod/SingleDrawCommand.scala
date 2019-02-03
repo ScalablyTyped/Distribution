@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SingleDrawCommand ()
   extends wonderDotJsLib.distEs2015RendererCommandSingleDrawCommandMod.SingleDrawCommand
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "SingleDrawCommand")
 @js.native
 object SingleDrawCommand extends js.Object {

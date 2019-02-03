@@ -19,6 +19,7 @@ class Condition () extends js.Object {
   def performExplicit(left: js.Any, right: js.Any, processValue: ProcessValue): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "Condition")
 @js.native
 object Condition extends js.Object {

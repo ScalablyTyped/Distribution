@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialAnchorTransferManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.SpatialAnchorTransferManager")
 @js.native
 object SpatialAnchorTransferManager extends js.Object {

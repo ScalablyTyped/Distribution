@@ -12,7 +12,9 @@ object gapiDotClientDotDeploymentmanagerLibStrings {
   @js.native
   sealed trait v2 extends js.Object
   
+  @scala.inline
   def deploymentmanager: deploymentmanager = "deploymentmanager".asInstanceOf[deploymentmanager]
+  @scala.inline
   def v2: v2 = "v2".asInstanceOf[v2]
 }
 

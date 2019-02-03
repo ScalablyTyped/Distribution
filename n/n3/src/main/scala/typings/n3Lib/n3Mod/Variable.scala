@@ -32,6 +32,7 @@ class Variable protected ()
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSImport("n3", "Variable")
 @js.native
 object Variable extends js.Object {

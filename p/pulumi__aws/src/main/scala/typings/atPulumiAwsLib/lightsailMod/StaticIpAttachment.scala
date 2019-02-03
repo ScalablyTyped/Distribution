@@ -20,6 +20,7 @@ class StaticIpAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lightsailStaticIpAttachmentMod.StaticIpAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail", "StaticIpAttachment")
 @js.native
 object StaticIpAttachment extends js.Object {

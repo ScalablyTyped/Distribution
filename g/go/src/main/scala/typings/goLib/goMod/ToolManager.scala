@@ -17,10 +17,7 @@ import scala.scalajs.js.annotation._
 class ToolManager ()
   extends goLib.goMod.goNs.ToolManager
 
-/**
-  * This special Tool is responsible for managing all of the Diagram's
-  * mode-less tools.
-  */
+/* static members */
 @JSImport("go", "ToolManager")
 @js.native
 object ToolManager extends js.Object {

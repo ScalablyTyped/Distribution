@@ -21,10 +21,15 @@ object hopscotchLibStrings {
   @js.native
   sealed trait top extends js.Object
   
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
 }
 

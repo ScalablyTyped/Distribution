@@ -48,6 +48,7 @@ class MenuPopupHelper protected ()
   def tryShow(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.menu.MenuPopupHelper")
 @js.native
 object MenuPopupHelper extends js.Object {

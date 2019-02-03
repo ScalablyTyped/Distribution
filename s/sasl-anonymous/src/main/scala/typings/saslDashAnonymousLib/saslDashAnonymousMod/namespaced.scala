@@ -23,6 +23,7 @@ class namespaced () extends AnonymousMechanism {
   override def response(cred: saslDashAnonymousLib.saslDashAnonymousMod.AnonymousMechanismNs.Credentials): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sasl-anonymous", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

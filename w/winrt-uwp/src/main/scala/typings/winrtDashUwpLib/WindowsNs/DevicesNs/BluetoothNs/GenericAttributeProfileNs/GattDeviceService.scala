@@ -45,7 +45,7 @@ abstract class GattDeviceService () extends js.Object {
   def getIncludedServices(serviceUuid: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[GattDeviceService] = js.native
 }
 
-/** Represents a GATT Primary Service on a Bluetooth device. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDeviceService")
 @js.native
 object GattDeviceService extends js.Object {

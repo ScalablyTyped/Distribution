@@ -80,6 +80,7 @@ class Directory protected ()
   val vpcSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SubnetIds]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directoryservice/directory", "Directory")
 @js.native
 object Directory extends js.Object {

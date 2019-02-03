@@ -23,6 +23,7 @@ class HostName protected () extends IHostName {
   override def isEqual(hostName: HostName): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.HostName")
 @js.native
 object HostName extends js.Object {

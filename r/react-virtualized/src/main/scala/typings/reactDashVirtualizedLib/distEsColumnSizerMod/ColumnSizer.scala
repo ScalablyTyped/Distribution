@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ColumnSizer ()
   extends reactLib.reactMod.PureComponent[ColumnSizerProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-virtualized/dist/es/ColumnSizer", "ColumnSizer")
 @js.native
 object ColumnSizer extends js.Object {

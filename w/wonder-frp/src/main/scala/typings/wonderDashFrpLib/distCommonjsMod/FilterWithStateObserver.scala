@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FilterWithStateObserver ()
   extends wonderDashFrpLib.distCommonjsObserverFilterWithStateObserverMod.FilterWithStateObserver
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "FilterWithStateObserver")
 @js.native
 object FilterWithStateObserver extends js.Object {

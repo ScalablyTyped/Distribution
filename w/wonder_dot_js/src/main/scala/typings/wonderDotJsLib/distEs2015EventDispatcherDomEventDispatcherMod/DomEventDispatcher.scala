@@ -13,6 +13,7 @@ class DomEventDispatcher ()
   def trigger(event: wonderDotJsLib.distEs2015EventObjectEventMod.Event): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/dispatcher/DomEventDispatcher", "DomEventDispatcher")
 @js.native
 object DomEventDispatcher extends js.Object {

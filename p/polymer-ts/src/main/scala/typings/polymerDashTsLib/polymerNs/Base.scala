@@ -41,6 +41,7 @@ class Base ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("polymer.Base")
 @js.native
 object Base extends js.Object {

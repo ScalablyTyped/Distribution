@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Timepicker ()
   extends materializeDashCssLib.MNs.Timepicker
 
+/* static members */
 @JSImport("materialize-css", "Timepicker")
 @js.native
 object Timepicker extends js.Object {

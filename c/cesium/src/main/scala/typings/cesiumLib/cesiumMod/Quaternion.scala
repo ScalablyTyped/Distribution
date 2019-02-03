@@ -15,6 +15,7 @@ class Quaternion ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double, w: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Quaternion")
 @js.native
 object Quaternion extends js.Object {

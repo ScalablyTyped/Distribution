@@ -46,10 +46,7 @@ class CultureInfo protected () extends js.Object {
   var numberFormat: js.Array[java.lang.String] = js.native
 }
 
-/**
-  * Represents a culture definition that can be applied to objects that accept a culture-related setting.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb384004(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.CultureInfo")
 @js.native
 object CultureInfo extends js.Object {

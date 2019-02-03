@@ -20,6 +20,7 @@ class TopicPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.snsTopicPolicyMod.TopicPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns", "TopicPolicy")
 @js.native
 object TopicPolicy extends js.Object {

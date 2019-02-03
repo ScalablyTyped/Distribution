@@ -18,6 +18,7 @@ class DecoratorContainerSerializer ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/decorator", "DecoratorContainerSerializer")
 @js.native
 object DecoratorContainerSerializer extends js.Object {

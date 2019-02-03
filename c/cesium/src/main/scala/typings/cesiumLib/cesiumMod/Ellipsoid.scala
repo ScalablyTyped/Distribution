@@ -14,6 +14,7 @@ class Ellipsoid ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Ellipsoid")
 @js.native
 object Ellipsoid extends js.Object {

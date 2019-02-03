@@ -57,6 +57,7 @@ class Bone protected () extends Updatable {
   def worldToLocalRotation(worldRotation: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.Bone")
 @js.native
 object Bone extends js.Object {

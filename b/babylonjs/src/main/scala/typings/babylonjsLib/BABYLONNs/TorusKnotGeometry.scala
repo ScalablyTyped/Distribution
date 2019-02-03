@@ -135,10 +135,7 @@ class TorusKnotGeometry protected () extends _PrimitiveGeometry {
   var tubularSegments: scala.Double = js.native
 }
 
-/**
-  * Creates a torus knot geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#torus-knot
-  */
+/* static members */
 @JSGlobal("BABYLON.TorusKnotGeometry")
 @js.native
 object TorusKnotGeometry extends js.Object {

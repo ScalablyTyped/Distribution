@@ -80,6 +80,7 @@ object lightsailNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.lightsailStaticIpAttachmentMod.StaticIpAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Domain extends js.Object {
     /**
@@ -104,6 +105,7 @@ object lightsailNs extends js.Object {
     ): atPulumiAwsLib.lightsailDomainMod.Domain = js.native
   }
   
+  /* static members */
   @js.native
   object Instance extends js.Object {
     /**
@@ -128,6 +130,7 @@ object lightsailNs extends js.Object {
     ): atPulumiAwsLib.lightsailInstanceMod.Instance = js.native
   }
   
+  /* static members */
   @js.native
   object KeyPair extends js.Object {
     /**
@@ -152,6 +155,7 @@ object lightsailNs extends js.Object {
     ): atPulumiAwsLib.lightsailKeyPairMod.KeyPair = js.native
   }
   
+  /* static members */
   @js.native
   object StaticIp extends js.Object {
     /**
@@ -176,6 +180,7 @@ object lightsailNs extends js.Object {
     ): atPulumiAwsLib.lightsailStaticIpMod.StaticIp = js.native
   }
   
+  /* static members */
   @js.native
   object StaticIpAttachment extends js.Object {
     /**

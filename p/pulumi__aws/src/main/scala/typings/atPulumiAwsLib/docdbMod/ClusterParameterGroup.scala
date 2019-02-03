@@ -20,6 +20,7 @@ class ClusterParameterGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.docdbClusterParameterGroupMod.ClusterParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/docdb", "ClusterParameterGroup")
 @js.native
 object ClusterParameterGroup extends js.Object {

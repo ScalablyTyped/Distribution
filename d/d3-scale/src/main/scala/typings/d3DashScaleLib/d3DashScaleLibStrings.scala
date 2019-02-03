@@ -9,6 +9,7 @@ object d3DashScaleLibStrings {
   @js.native
   sealed trait `implicit` extends js.Object
   
+  @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
 }
 

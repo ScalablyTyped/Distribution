@@ -104,9 +104,7 @@ class ViewQuery () extends js.Object {
   def stale(stale: couchbaseLib.couchbaseMod.ViewQueryNs.Update): ViewQuery = js.native
 }
 
-/**
-  * Class for dynamically construction of view queries. This class should never be constructed directly, instead you should use ViewQuery.from to construct this object.
-  */
+/* static members */
 @JSImport("couchbase", "ViewQuery")
 @js.native
 object ViewQuery extends js.Object {

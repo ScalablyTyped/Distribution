@@ -21,6 +21,7 @@ class DialogV1 protected () extends js.Object {
   def updateProfile(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "DialogV1")
 @js.native
 object DialogV1 extends js.Object {

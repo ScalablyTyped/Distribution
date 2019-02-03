@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CloudFrontCustomizations ()
   extends awsDashSdkLib.libServiceMod.Service
 
+/* static members */
 @JSImport("aws-sdk/lib/services/cloudfront", "CloudFrontCustomizations")
 @js.native
 object CloudFrontCustomizations extends js.Object {

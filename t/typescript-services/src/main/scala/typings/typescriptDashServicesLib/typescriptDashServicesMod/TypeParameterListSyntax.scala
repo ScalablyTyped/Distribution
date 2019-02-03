@@ -12,6 +12,7 @@ class TypeParameterListSyntax protected ()
   def this(lessThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeParameters: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, greaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeParameterListSyntax")
 @js.native
 object TypeParameterListSyntax extends js.Object {

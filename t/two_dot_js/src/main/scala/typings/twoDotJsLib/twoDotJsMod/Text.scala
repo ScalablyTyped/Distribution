@@ -13,6 +13,7 @@ class Text protected ()
   def this(message: java.lang.String, x: scala.Double, y: scala.Double, styles: js.Any) = this()
 }
 
+/* static members */
 @JSImport("two.js", "Text")
 @js.native
 object Text extends js.Object {

@@ -83,6 +83,7 @@ class Point () extends XY {
   def toJSON(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("poly2tri", "Point")
 @js.native
 object Point extends js.Object {

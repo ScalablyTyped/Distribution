@@ -14,6 +14,7 @@ class IntervalStream protected ()
   def initWhenCreate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/IntervalStream", "IntervalStream")
 @js.native
 object IntervalStream extends js.Object {

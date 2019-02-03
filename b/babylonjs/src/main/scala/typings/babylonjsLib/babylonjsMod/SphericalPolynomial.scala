@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class SphericalPolynomial ()
   extends babylonjsLib.BABYLONNs.SphericalPolynomial
 
-/**
-  * Class representing spherical polynomial coefficients to the 3rd degree
-  */
+/* static members */
 @JSImport("babylonjs", "SphericalPolynomial")
 @js.native
 object SphericalPolynomial extends js.Object {

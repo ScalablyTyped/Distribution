@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MathPrototype () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.MathPrototype")
 @js.native
 object MathPrototype extends js.Object {

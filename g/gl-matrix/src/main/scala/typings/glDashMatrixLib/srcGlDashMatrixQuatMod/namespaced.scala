@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends glDashMatrixLib.glDashMatrixMod.quat
 
+/* static members */
 @JSImport("gl-matrix/src/gl-matrix/quat", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

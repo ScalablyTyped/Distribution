@@ -23,6 +23,7 @@ class VideoBaseTexture protected () extends BaseTexture {
   /* protected */ def _onPlayStop(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.VideoBaseTexture")
 @js.native
 object VideoBaseTexture extends js.Object {

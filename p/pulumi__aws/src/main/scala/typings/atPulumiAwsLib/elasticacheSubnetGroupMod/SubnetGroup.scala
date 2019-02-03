@@ -32,6 +32,7 @@ class SubnetGroup protected ()
   val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticache/subnetGroup", "SubnetGroup")
 @js.native
 object SubnetGroup extends js.Object {

@@ -31,6 +31,7 @@ class Version protected () extends js.Object {
   def isEqualTo(other: Version): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("mendixmodelsdk/dist/sdk/internal/version-checks", "Version")
 @js.native
 object Version extends js.Object {

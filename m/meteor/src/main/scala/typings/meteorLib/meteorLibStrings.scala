@@ -99,36 +99,67 @@ object meteorLibStrings {
   @js.native
   sealed trait waiting extends js.Object
   
+  @scala.inline
   def ArraysOrEach: ArraysOrEach = "ArraysOrEach".asInstanceOf[ArraysOrEach]
+  @scala.inline
   def ElementsOf: ElementsOf = "ElementsOf".asInstanceOf[ElementsOf]
+  @scala.inline
   def PushModifier: PushModifier = "PushModifier".asInstanceOf[PushModifier]
+  @scala.inline
   def Query: Query = "Query".asInstanceOf[Query]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def binData: binData = "binData".asInstanceOf[binData]
+  @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
+  @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
+  @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def dbPointer: dbPointer = "dbPointer".asInstanceOf[dbPointer]
+  @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def int: int = "int".asInstanceOf[int]
+  @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
+  @scala.inline
   def javascriptWithScope: javascriptWithScope = "javascriptWithScope".asInstanceOf[javascriptWithScope]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
+  @scala.inline
   def maxKey: maxKey = "maxKey".asInstanceOf[maxKey]
+  @scala.inline
   def minKey: minKey = "minKey".asInstanceOf[minKey]
+  @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def objectId: objectId = "objectId".asInstanceOf[objectId]
+  @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
+  @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
 }
 

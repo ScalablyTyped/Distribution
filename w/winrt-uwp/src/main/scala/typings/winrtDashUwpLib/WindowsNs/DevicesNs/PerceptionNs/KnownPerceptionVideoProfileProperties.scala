@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownPerceptionVideoProfileProperties () extends js.Object
 
-/** Provides static properties of a video profile. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoProfileProperties")
 @js.native
 object KnownPerceptionVideoProfileProperties extends js.Object {

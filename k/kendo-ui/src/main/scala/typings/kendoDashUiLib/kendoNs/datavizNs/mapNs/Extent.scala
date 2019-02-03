@@ -26,6 +26,7 @@ class Extent protected ()
   def toArray(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.map.Extent")
 @js.native
 object Extent extends js.Object {

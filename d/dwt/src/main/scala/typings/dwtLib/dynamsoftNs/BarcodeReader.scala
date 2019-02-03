@@ -60,6 +60,7 @@ class BarcodeReader () extends js.Object {
   def updateRuntimeSettings(setting: dwtLib.RunTimeSetting): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("dynamsoft.BarcodeReader")
 @js.native
 object BarcodeReader extends js.Object {

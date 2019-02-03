@@ -18,6 +18,7 @@ abstract class SpatialLocator () extends js.Object {
    /* unmapped type */ var tryLocateAtTimestamp: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.SpatialLocator")
 @js.native
 object SpatialLocator extends js.Object {

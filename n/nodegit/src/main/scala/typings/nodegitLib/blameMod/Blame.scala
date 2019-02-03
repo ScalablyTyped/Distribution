@@ -21,6 +21,7 @@ class Blame () extends js.Object {
   def getHunkCount(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/blame", "Blame")
 @js.native
 object Blame extends js.Object {

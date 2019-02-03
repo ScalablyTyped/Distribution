@@ -30,6 +30,7 @@ abstract class Message () extends js.Object {
   def toObject(includeInstance: scala.Boolean): js.Object = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf", "Message")
 @js.native
 object Message extends js.Object {

@@ -21,10 +21,15 @@ object bunyanDashFormatLibStrings {
   @js.native
   sealed trait simple extends js.Object
   
+  @scala.inline
   def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def long: long = "long".asInstanceOf[long]
+  @scala.inline
   def short: short = "short".asInstanceOf[short]
+  @scala.inline
   def simple: simple = "simple".asInstanceOf[simple]
 }
 

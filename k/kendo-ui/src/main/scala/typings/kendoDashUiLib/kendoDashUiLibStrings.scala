@@ -285,98 +285,191 @@ object kendoDashUiLibStrings {
   @js.native
   sealed trait kendoWindow extends js.Object
   
+  @scala.inline
   def kendoAlert: kendoAlert = "kendoAlert".asInstanceOf[kendoAlert]
+  @scala.inline
   def kendoArcGauge: kendoArcGauge = "kendoArcGauge".asInstanceOf[kendoArcGauge]
+  @scala.inline
   def kendoAutoComplete: kendoAutoComplete = "kendoAutoComplete".asInstanceOf[kendoAutoComplete]
+  @scala.inline
   def kendoBarcode: kendoBarcode = "kendoBarcode".asInstanceOf[kendoBarcode]
+  @scala.inline
   def kendoButton: kendoButton = "kendoButton".asInstanceOf[kendoButton]
+  @scala.inline
   def kendoButtonGroup: kendoButtonGroup = "kendoButtonGroup".asInstanceOf[kendoButtonGroup]
+  @scala.inline
   def kendoCalendar: kendoCalendar = "kendoCalendar".asInstanceOf[kendoCalendar]
+  @scala.inline
   def kendoChart: kendoChart = "kendoChart".asInstanceOf[kendoChart]
+  @scala.inline
   def kendoChat: kendoChat = "kendoChat".asInstanceOf[kendoChat]
+  @scala.inline
   def kendoColorPalette: kendoColorPalette = "kendoColorPalette".asInstanceOf[kendoColorPalette]
+  @scala.inline
   def kendoColorPicker: kendoColorPicker = "kendoColorPicker".asInstanceOf[kendoColorPicker]
+  @scala.inline
   def kendoComboBox: kendoComboBox = "kendoComboBox".asInstanceOf[kendoComboBox]
+  @scala.inline
   def kendoConfirm: kendoConfirm = "kendoConfirm".asInstanceOf[kendoConfirm]
+  @scala.inline
   def kendoContextMenu: kendoContextMenu = "kendoContextMenu".asInstanceOf[kendoContextMenu]
+  @scala.inline
   def kendoDateInput: kendoDateInput = "kendoDateInput".asInstanceOf[kendoDateInput]
+  @scala.inline
   def kendoDatePicker: kendoDatePicker = "kendoDatePicker".asInstanceOf[kendoDatePicker]
+  @scala.inline
   def kendoDateRangePicker: kendoDateRangePicker = "kendoDateRangePicker".asInstanceOf[kendoDateRangePicker]
+  @scala.inline
   def kendoDateTimePicker: kendoDateTimePicker = "kendoDateTimePicker".asInstanceOf[kendoDateTimePicker]
+  @scala.inline
   def kendoDiagram: kendoDiagram = "kendoDiagram".asInstanceOf[kendoDiagram]
+  @scala.inline
   def kendoDialog: kendoDialog = "kendoDialog".asInstanceOf[kendoDialog]
+  @scala.inline
   def kendoDraggable: kendoDraggable = "kendoDraggable".asInstanceOf[kendoDraggable]
+  @scala.inline
   def kendoDropDownList: kendoDropDownList = "kendoDropDownList".asInstanceOf[kendoDropDownList]
+  @scala.inline
   def kendoDropDownTree: kendoDropDownTree = "kendoDropDownTree".asInstanceOf[kendoDropDownTree]
+  @scala.inline
   def kendoDropTarget: kendoDropTarget = "kendoDropTarget".asInstanceOf[kendoDropTarget]
+  @scala.inline
   def kendoDropTargetArea: kendoDropTargetArea = "kendoDropTargetArea".asInstanceOf[kendoDropTargetArea]
+  @scala.inline
   def kendoEditor: kendoEditor = "kendoEditor".asInstanceOf[kendoEditor]
+  @scala.inline
   def kendoFilterMenu: kendoFilterMenu = "kendoFilterMenu".asInstanceOf[kendoFilterMenu]
+  @scala.inline
   def kendoFlatColorPicker: kendoFlatColorPicker = "kendoFlatColorPicker".asInstanceOf[kendoFlatColorPicker]
+  @scala.inline
   def kendoGantt: kendoGantt = "kendoGantt".asInstanceOf[kendoGantt]
+  @scala.inline
   def kendoGrid: kendoGrid = "kendoGrid".asInstanceOf[kendoGrid]
+  @scala.inline
   def kendoLinearGauge: kendoLinearGauge = "kendoLinearGauge".asInstanceOf[kendoLinearGauge]
+  @scala.inline
   def kendoListBox: kendoListBox = "kendoListBox".asInstanceOf[kendoListBox]
+  @scala.inline
   def kendoListView: kendoListView = "kendoListView".asInstanceOf[kendoListView]
+  @scala.inline
   def kendoMap: kendoMap = "kendoMap".asInstanceOf[kendoMap]
+  @scala.inline
   def kendoMaskedTextBox: kendoMaskedTextBox = "kendoMaskedTextBox".asInstanceOf[kendoMaskedTextBox]
+  @scala.inline
   def kendoMediaPlayer: kendoMediaPlayer = "kendoMediaPlayer".asInstanceOf[kendoMediaPlayer]
+  @scala.inline
   def kendoMenu: kendoMenu = "kendoMenu".asInstanceOf[kendoMenu]
+  @scala.inline
   def kendoMobileActionSheet: kendoMobileActionSheet = "kendoMobileActionSheet".asInstanceOf[kendoMobileActionSheet]
+  @scala.inline
   def kendoMobileBackButton: kendoMobileBackButton = "kendoMobileBackButton".asInstanceOf[kendoMobileBackButton]
+  @scala.inline
   def kendoMobileButton: kendoMobileButton = "kendoMobileButton".asInstanceOf[kendoMobileButton]
+  @scala.inline
   def kendoMobileButtonGroup: kendoMobileButtonGroup = "kendoMobileButtonGroup".asInstanceOf[kendoMobileButtonGroup]
+  @scala.inline
   def kendoMobileCollapsible: kendoMobileCollapsible = "kendoMobileCollapsible".asInstanceOf[kendoMobileCollapsible]
+  @scala.inline
   def kendoMobileDetailButton: kendoMobileDetailButton = "kendoMobileDetailButton".asInstanceOf[kendoMobileDetailButton]
+  @scala.inline
   def kendoMobileDrawer: kendoMobileDrawer = "kendoMobileDrawer".asInstanceOf[kendoMobileDrawer]
+  @scala.inline
   def kendoMobileLayout: kendoMobileLayout = "kendoMobileLayout".asInstanceOf[kendoMobileLayout]
+  @scala.inline
   def kendoMobileListView: kendoMobileListView = "kendoMobileListView".asInstanceOf[kendoMobileListView]
+  @scala.inline
   def kendoMobileLoader: kendoMobileLoader = "kendoMobileLoader".asInstanceOf[kendoMobileLoader]
+  @scala.inline
   def kendoMobileModalView: kendoMobileModalView = "kendoMobileModalView".asInstanceOf[kendoMobileModalView]
+  @scala.inline
   def kendoMobileNavBar: kendoMobileNavBar = "kendoMobileNavBar".asInstanceOf[kendoMobileNavBar]
+  @scala.inline
   def kendoMobilePane: kendoMobilePane = "kendoMobilePane".asInstanceOf[kendoMobilePane]
+  @scala.inline
   def kendoMobilePopOver: kendoMobilePopOver = "kendoMobilePopOver".asInstanceOf[kendoMobilePopOver]
+  @scala.inline
   def kendoMobileScrollView: kendoMobileScrollView = "kendoMobileScrollView".asInstanceOf[kendoMobileScrollView]
+  @scala.inline
   def kendoMobileScroller: kendoMobileScroller = "kendoMobileScroller".asInstanceOf[kendoMobileScroller]
+  @scala.inline
   def kendoMobileSplitView: kendoMobileSplitView = "kendoMobileSplitView".asInstanceOf[kendoMobileSplitView]
+  @scala.inline
   def kendoMobileSwitch: kendoMobileSwitch = "kendoMobileSwitch".asInstanceOf[kendoMobileSwitch]
+  @scala.inline
   def kendoMobileTabStrip: kendoMobileTabStrip = "kendoMobileTabStrip".asInstanceOf[kendoMobileTabStrip]
+  @scala.inline
   def kendoMobileView: kendoMobileView = "kendoMobileView".asInstanceOf[kendoMobileView]
+  @scala.inline
   def kendoMultiColumnComboBox: kendoMultiColumnComboBox = "kendoMultiColumnComboBox".asInstanceOf[kendoMultiColumnComboBox]
+  @scala.inline
   def kendoMultiSelect: kendoMultiSelect = "kendoMultiSelect".asInstanceOf[kendoMultiSelect]
+  @scala.inline
   def kendoMultiViewCalendar: kendoMultiViewCalendar = "kendoMultiViewCalendar".asInstanceOf[kendoMultiViewCalendar]
+  @scala.inline
   def kendoNotification: kendoNotification = "kendoNotification".asInstanceOf[kendoNotification]
+  @scala.inline
   def kendoNumericTextBox: kendoNumericTextBox = "kendoNumericTextBox".asInstanceOf[kendoNumericTextBox]
+  @scala.inline
   def kendoPager: kendoPager = "kendoPager".asInstanceOf[kendoPager]
+  @scala.inline
   def kendoPanelBar: kendoPanelBar = "kendoPanelBar".asInstanceOf[kendoPanelBar]
+  @scala.inline
   def kendoPivotConfigurator: kendoPivotConfigurator = "kendoPivotConfigurator".asInstanceOf[kendoPivotConfigurator]
+  @scala.inline
   def kendoPivotGrid: kendoPivotGrid = "kendoPivotGrid".asInstanceOf[kendoPivotGrid]
+  @scala.inline
   def kendoPopup: kendoPopup = "kendoPopup".asInstanceOf[kendoPopup]
+  @scala.inline
   def kendoProgressBar: kendoProgressBar = "kendoProgressBar".asInstanceOf[kendoProgressBar]
+  @scala.inline
   def kendoPrompt: kendoPrompt = "kendoPrompt".asInstanceOf[kendoPrompt]
+  @scala.inline
   def kendoQRCode: kendoQRCode = "kendoQRCode".asInstanceOf[kendoQRCode]
+  @scala.inline
   def kendoRadialGauge: kendoRadialGauge = "kendoRadialGauge".asInstanceOf[kendoRadialGauge]
+  @scala.inline
   def kendoRangeSlider: kendoRangeSlider = "kendoRangeSlider".asInstanceOf[kendoRangeSlider]
+  @scala.inline
   def kendoResponsivePanel: kendoResponsivePanel = "kendoResponsivePanel".asInstanceOf[kendoResponsivePanel]
+  @scala.inline
   def kendoScheduler: kendoScheduler = "kendoScheduler".asInstanceOf[kendoScheduler]
+  @scala.inline
   def kendoScrollView: kendoScrollView = "kendoScrollView".asInstanceOf[kendoScrollView]
+  @scala.inline
   def kendoSlider: kendoSlider = "kendoSlider".asInstanceOf[kendoSlider]
+  @scala.inline
   def kendoSortable: kendoSortable = "kendoSortable".asInstanceOf[kendoSortable]
+  @scala.inline
   def kendoSparkline: kendoSparkline = "kendoSparkline".asInstanceOf[kendoSparkline]
+  @scala.inline
   def kendoSplitter: kendoSplitter = "kendoSplitter".asInstanceOf[kendoSplitter]
+  @scala.inline
   def kendoSpreadsheet: kendoSpreadsheet = "kendoSpreadsheet".asInstanceOf[kendoSpreadsheet]
+  @scala.inline
   def kendoStockChart: kendoStockChart = "kendoStockChart".asInstanceOf[kendoStockChart]
+  @scala.inline
   def kendoSwitch: kendoSwitch = "kendoSwitch".asInstanceOf[kendoSwitch]
+  @scala.inline
   def kendoTabStrip: kendoTabStrip = "kendoTabStrip".asInstanceOf[kendoTabStrip]
+  @scala.inline
   def kendoTimePicker: kendoTimePicker = "kendoTimePicker".asInstanceOf[kendoTimePicker]
+  @scala.inline
   def kendoToolBar: kendoToolBar = "kendoToolBar".asInstanceOf[kendoToolBar]
+  @scala.inline
   def kendoTooltip: kendoTooltip = "kendoTooltip".asInstanceOf[kendoTooltip]
+  @scala.inline
   def kendoTouch: kendoTouch = "kendoTouch".asInstanceOf[kendoTouch]
+  @scala.inline
   def kendoTreeList: kendoTreeList = "kendoTreeList".asInstanceOf[kendoTreeList]
+  @scala.inline
   def kendoTreeMap: kendoTreeMap = "kendoTreeMap".asInstanceOf[kendoTreeMap]
+  @scala.inline
   def kendoTreeView: kendoTreeView = "kendoTreeView".asInstanceOf[kendoTreeView]
+  @scala.inline
   def kendoUpload: kendoUpload = "kendoUpload".asInstanceOf[kendoUpload]
+  @scala.inline
   def kendoValidator: kendoValidator = "kendoValidator".asInstanceOf[kendoValidator]
+  @scala.inline
   def kendoWindow: kendoWindow = "kendoWindow".asInstanceOf[kendoWindow]
 }
 

@@ -65,6 +65,7 @@ object organizationsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.organizationsPolicyAttachmentMod.PolicyAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Account extends js.Object {
     /**
@@ -89,6 +90,7 @@ object organizationsNs extends js.Object {
     ): atPulumiAwsLib.organizationsAccountMod.Account = js.native
   }
   
+  /* static members */
   @js.native
   object Organization extends js.Object {
     /**
@@ -113,6 +115,7 @@ object organizationsNs extends js.Object {
     ): atPulumiAwsLib.organizationsOrganizationMod.Organization = js.native
   }
   
+  /* static members */
   @js.native
   object Policy extends js.Object {
     /**
@@ -137,6 +140,7 @@ object organizationsNs extends js.Object {
     ): atPulumiAwsLib.organizationsPolicyMod.Policy = js.native
   }
   
+  /* static members */
   @js.native
   object PolicyAttachment extends js.Object {
     /**

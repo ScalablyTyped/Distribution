@@ -12,6 +12,7 @@ class ModalBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsModalModalDotTypesMod.IModalProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Modal", "ModalBase")
 @js.native
 object ModalBase extends js.Object {

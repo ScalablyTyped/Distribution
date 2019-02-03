@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ContactLaunchActionVerbs () extends js.Object
 
-/** Provides data when an app is launched to perform an action to a contact. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactLaunchActionVerbs")
 @js.native
 object ContactLaunchActionVerbs extends js.Object {

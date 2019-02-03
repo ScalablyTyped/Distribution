@@ -13,6 +13,7 @@ class RRule ()
   def this(options: stdLib.Partial[rruleLib.distEsmSrcTypesMod.Options], noCache: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("rrule/dist/esm/src", "RRule")
 @js.native
 object RRule extends js.Object {

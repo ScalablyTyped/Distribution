@@ -15,8 +15,11 @@ object prosemirrorDashModelLibStrings {
   @js.native
   sealed trait full extends js.Object
   
+  @scala.inline
   def Schema: Schema = "Schema".asInstanceOf[Schema]
+  @scala.inline
   def SchemaSpec: SchemaSpec = "SchemaSpec".asInstanceOf[SchemaSpec]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
 }
 

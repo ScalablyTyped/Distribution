@@ -444,6 +444,7 @@ class DateTime () extends js.Object {
   def zoneAbbreviation(dstDependent: scala.Boolean): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("timezonecomplete/dist/lib/datetime", "DateTime")
 @js.native
 object DateTime extends js.Object {

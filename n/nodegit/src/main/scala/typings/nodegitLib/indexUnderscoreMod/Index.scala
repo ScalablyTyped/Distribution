@@ -61,6 +61,7 @@ class Index () extends js.Object {
   def writeTreeTo(repo: nodegitLib.repositoryMod.Repository): js.Promise[nodegitLib.oidMod.Oid] = js.native
 }
 
+/* static members */
 @JSImport("nodegit/index_", "Index")
 @js.native
 object Index extends js.Object {

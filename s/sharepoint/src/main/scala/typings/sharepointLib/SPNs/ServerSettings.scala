@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServerSettings () extends js.Object
 
+/* static members */
 @JSGlobal("SP.ServerSettings")
 @js.native
 object ServerSettings extends js.Object {

@@ -206,14 +206,7 @@ abstract class EffectLayer protected () extends js.Object {
   def shouldRender(): scala.Boolean = js.native
 }
 
-/**
-  * The effect layer Helps adding post process effect blended with the main pass.
-  *
-  * This can be for instance use to generate glow or higlight effects on the scene.
-  *
-  * The effect layer class can not be used directly and is intented to inherited from to be
-  * customized per effects.
-  */
+/* static members */
 @JSGlobal("BABYLON.EffectLayer")
 @js.native
 object EffectLayer extends js.Object {

@@ -12,6 +12,7 @@ class RatingBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsRatingRatingDotTypesMod.IRatingProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Rating", "RatingBase")
 @js.native
 object RatingBase extends js.Object {

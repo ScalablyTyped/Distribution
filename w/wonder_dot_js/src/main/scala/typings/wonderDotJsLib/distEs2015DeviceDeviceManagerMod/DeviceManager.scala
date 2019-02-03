@@ -40,6 +40,7 @@ class DeviceManager () extends js.Object {
   def setViewport(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/device/DeviceManager", "DeviceManager")
 @js.native
 object DeviceManager extends js.Object {

@@ -22,6 +22,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends openlayersLib.openlayersMod.Observable
 
+/* static members */
 @JSImport("ol/observable", JSImport.Default)
 @js.native
 object default extends js.Object {

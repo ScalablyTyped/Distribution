@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DragDropMgr () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.dd.DragDropMgr")
 @js.native
 object DragDropMgr extends js.Object {

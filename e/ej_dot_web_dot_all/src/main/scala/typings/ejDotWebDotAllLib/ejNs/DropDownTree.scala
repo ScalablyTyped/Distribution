@@ -98,6 +98,7 @@ class DropDownTree protected () extends Widget {
   def unselectNode(element: js.Array[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.DropDownTree")
 @js.native
 object DropDownTree extends js.Object {

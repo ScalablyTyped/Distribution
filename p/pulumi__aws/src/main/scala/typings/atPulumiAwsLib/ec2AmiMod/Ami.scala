@@ -86,6 +86,7 @@ class Ami protected ()
   val virtualizationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/ami", "Ami")
 @js.native
 object Ami extends js.Object {

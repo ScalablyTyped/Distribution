@@ -12,6 +12,7 @@ class FromPromiseStream protected ()
   def this(promise: js.Any, scheduler: wonderDashFrpLib.distCommonjsCoreSchedulerMod.Scheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "FromPromiseStream")
 @js.native
 object FromPromiseStream extends js.Object {

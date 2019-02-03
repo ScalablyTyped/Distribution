@@ -29,9 +29,7 @@ object regularexpressionsNs extends js.Object {
     var regEx: java.lang.String = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object RegularExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native

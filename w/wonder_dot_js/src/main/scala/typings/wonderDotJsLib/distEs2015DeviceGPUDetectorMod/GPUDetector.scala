@@ -25,6 +25,7 @@ class GPUDetector () extends js.Object {
   def detect(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/device/GPUDetector", "GPUDetector")
 @js.native
 object GPUDetector extends js.Object {

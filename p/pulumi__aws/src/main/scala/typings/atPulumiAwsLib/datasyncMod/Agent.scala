@@ -21,6 +21,7 @@ class Agent protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.datasyncAgentMod.AgentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync", "Agent")
 @js.native
 object Agent extends js.Object {

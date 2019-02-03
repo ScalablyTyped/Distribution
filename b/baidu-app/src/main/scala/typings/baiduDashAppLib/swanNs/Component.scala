@@ -13,7 +13,9 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值
   		 */
-  var data: baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any = js.native
+  var data: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any = js.native
   /**
   		 * 节点dataset
   		 */
@@ -29,7 +31,9 @@ trait Component[D, P] extends js.Object {
   /**
   		 * 组件数据，包括内部数据和属性值（与 data 一致）
   		 */
-  var properties: baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any = js.native
+  var properties: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D & P ]: baidu-app.swan.DataValueType<D & P[key]>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any = js.native
   /**
   		 * 节点布局交叉状态API可用于监听两个或多个组件节点在布局位置上的相交状态。这一组API常常可以用于推断某些节点是否可以被用户看见、有多大比例可以被用户看见。
   		 * https://smartprogram.baidu.com/docs/develop/api/show_query/
@@ -56,10 +60,21 @@ trait Component[D, P] extends js.Object {
   		 * 返回匹配到的第一个组件实例对象
   		 */
   def selectComponent(selector: java.lang.String): Component[_, _] = js.native
-  def setData(key: baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any): scala.Unit = js.native
-  def setData(key: baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any, value: js.Any): scala.Unit = js.native
   def setData(
-    key: baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any,
+    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any
+  ): scala.Unit = js.native
+  def setData(
+    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any,
+    value: js.Any
+  ): scala.Unit = js.native
+  def setData(
+    key: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.Component with js.Any,
     value: js.Any,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native

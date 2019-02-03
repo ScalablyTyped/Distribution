@@ -19,6 +19,7 @@ object IconNs extends js.Object {
     var imagePath: js.UndefOr[java.lang.String] = js.undefined
   }
   
+  /* static members */
   @js.native
   object Default extends js.Object {
     var imagePath: js.UndefOr[java.lang.String] = js.native

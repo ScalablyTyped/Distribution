@@ -33,14 +33,23 @@ object aliDashAppLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
+  @scala.inline
   def `11`: `11` = 11.asInstanceOf[`11`]
+  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
+  @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

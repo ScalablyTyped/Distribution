@@ -15,8 +15,11 @@ object dbDotJsLibStrings {
   @js.native
   sealed trait versionchange extends js.Object
   
+  @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
 }
 

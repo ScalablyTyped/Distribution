@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Quart ()
   extends gsapLib.gsapNs.Quart
 
+/* static members */
 @JSImport("gsap", "Quart")
 @js.native
 object Quart extends js.Object {

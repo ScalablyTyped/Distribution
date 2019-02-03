@@ -20,6 +20,7 @@ class BucketObject protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3BucketObjectMod.BucketObjectArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "BucketObject")
 @js.native
 object BucketObject extends js.Object {

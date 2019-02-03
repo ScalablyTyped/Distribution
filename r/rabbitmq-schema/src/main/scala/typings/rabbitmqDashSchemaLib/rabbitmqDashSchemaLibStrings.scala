@@ -15,8 +15,11 @@ object rabbitmqDashSchemaLibStrings {
   @js.native
   sealed trait topic extends js.Object
   
+  @scala.inline
   def direct: direct = "direct".asInstanceOf[direct]
+  @scala.inline
   def fanout: fanout = "fanout".asInstanceOf[fanout]
+  @scala.inline
   def topic: topic = "topic".asInstanceOf[topic]
 }
 

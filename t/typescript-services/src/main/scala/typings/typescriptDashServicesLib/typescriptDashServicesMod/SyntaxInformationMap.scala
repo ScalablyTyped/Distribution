@@ -12,6 +12,7 @@ class SyntaxInformationMap protected ()
   def this(trackParents: scala.Boolean, trackPreviousToken: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SyntaxInformationMap")
 @js.native
 object SyntaxInformationMap extends js.Object {

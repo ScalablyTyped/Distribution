@@ -15,8 +15,11 @@ object compressionDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait gzip extends js.Object
   
+  @scala.inline
   def deflate: deflate = "deflate".asInstanceOf[deflate]
+  @scala.inline
   def deflateRaw: deflateRaw = "deflateRaw".asInstanceOf[deflateRaw]
+  @scala.inline
   def gzip: gzip = "gzip".asInstanceOf[gzip]
 }
 

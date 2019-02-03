@@ -25,6 +25,7 @@ class OAuth2Client ()
   def this(clientId: java.lang.String, clientSecret: java.lang.String, redirectUri: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("google-auth-library", "OAuth2Client")
 @js.native
 object OAuth2Client extends js.Object {

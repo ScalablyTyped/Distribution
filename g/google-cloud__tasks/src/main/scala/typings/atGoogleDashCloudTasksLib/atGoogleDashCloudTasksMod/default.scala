@@ -38,6 +38,7 @@ class default protected () extends CloudTasksClient {
   def this(config: CloudTasksConfig) = this()
 }
 
+/* static members */
 @JSImport("@google-cloud/tasks", JSImport.Default)
 @js.native
 object default extends js.Object {

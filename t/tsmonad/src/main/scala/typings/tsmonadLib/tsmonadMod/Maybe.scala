@@ -13,6 +13,7 @@ class Maybe[T] protected ()
   def this(`type`: tsmonadLib.libSrcMaybeMod.MaybeType, value: T) = this()
 }
 
+/* static members */
 @JSImport("tsmonad", "Maybe")
 @js.native
 object Maybe extends js.Object {

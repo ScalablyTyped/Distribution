@@ -74,6 +74,7 @@ class TreeView protected () extends Widget {
   def updateIndeterminate(node: kendoDashUiLib.JQuery): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.TreeView")
 @js.native
 object TreeView extends js.Object {

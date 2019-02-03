@@ -40,6 +40,7 @@ class UserGroup protected ()
   val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/userGroup", "UserGroup")
 @js.native
 object UserGroup extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProjectionManager () extends js.Object
 
-/** Defines a set of methods for managing the windows (app views) sent to secondary displays, such as projectors. */
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.ProjectionManager")
 @js.native
 object ProjectionManager extends js.Object {

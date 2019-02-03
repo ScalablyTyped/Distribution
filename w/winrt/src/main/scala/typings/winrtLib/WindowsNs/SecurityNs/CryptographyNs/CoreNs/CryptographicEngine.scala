@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CryptographicEngine () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
 @js.native
 object CryptographicEngine extends js.Object {

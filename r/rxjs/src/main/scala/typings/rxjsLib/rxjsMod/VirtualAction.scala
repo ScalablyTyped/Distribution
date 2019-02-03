@@ -21,6 +21,7 @@ class VirtualAction[T] protected ()
     ], index: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("rxjs", "VirtualAction")
 @js.native
 object VirtualAction extends js.Object {

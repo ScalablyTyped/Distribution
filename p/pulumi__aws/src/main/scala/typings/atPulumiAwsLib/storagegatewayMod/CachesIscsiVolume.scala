@@ -20,6 +20,7 @@ class CachesIscsiVolume protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayCachesIscsiVolumeMod.CachesIscsiVolumeArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "CachesIscsiVolume")
 @js.native
 object CachesIscsiVolume extends js.Object {

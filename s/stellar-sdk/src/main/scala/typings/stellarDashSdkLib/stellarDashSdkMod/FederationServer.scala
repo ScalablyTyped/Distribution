@@ -15,6 +15,7 @@ class FederationServer protected () extends js.Object {
   def resolveTransactionId(transactionId: java.lang.String): js.Promise[stellarDashSdkLib.stellarDashSdkMod.FederationServerNs.Record] = js.native
 }
 
+/* static members */
 @JSImport("stellar-sdk", "FederationServer")
 @js.native
 object FederationServer extends js.Object {

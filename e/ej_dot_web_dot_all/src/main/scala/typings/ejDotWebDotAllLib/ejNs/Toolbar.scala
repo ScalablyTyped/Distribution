@@ -83,6 +83,7 @@ class Toolbar protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Toolbar")
 @js.native
 object Toolbar extends js.Object {

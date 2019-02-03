@@ -20,9 +20,7 @@ class Path2 protected ()
   def this(x: scala.Double, y: scala.Double) = this()
 }
 
-/**
-  * Represents a 2D path made up of multiple 2D points
-  */
+/* static members */
 @JSImport("babylonjs", "Path2")
 @js.native
 object Path2 extends js.Object {

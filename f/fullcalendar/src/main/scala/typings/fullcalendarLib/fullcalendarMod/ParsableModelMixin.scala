@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ParsableModelMixin ()
   extends fullcalendarLib.srcMainMod.ParsableModelMixin
 
+/* static members */
 @JSImport("fullcalendar", "ParsableModelMixin")
 @js.native
 object ParsableModelMixin extends js.Object {

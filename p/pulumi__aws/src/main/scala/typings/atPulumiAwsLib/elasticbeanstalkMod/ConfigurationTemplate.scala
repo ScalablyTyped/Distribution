@@ -20,6 +20,7 @@ class ConfigurationTemplate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk", "ConfigurationTemplate")
 @js.native
 object ConfigurationTemplate extends js.Object {

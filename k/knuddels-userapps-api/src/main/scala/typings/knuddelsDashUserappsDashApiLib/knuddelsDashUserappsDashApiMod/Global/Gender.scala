@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Gender () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/Gender.html
-	 */
+/* static members */
 @JSGlobal("Gender")
 @js.native
 object Gender extends js.Object {

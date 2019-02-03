@@ -160,6 +160,7 @@ object ssmNs extends js.Object {
     args: atPulumiAwsLib.ssmGetParameterMod.GetParameterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ssmGetParameterMod.GetParameterResult] = js.native
+  /* static members */
   @js.native
   object Activation extends js.Object {
     /**
@@ -184,6 +185,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmActivationMod.Activation = js.native
   }
   
+  /* static members */
   @js.native
   object Association extends js.Object {
     /**
@@ -208,6 +210,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmAssociationMod.Association = js.native
   }
   
+  /* static members */
   @js.native
   object Document extends js.Object {
     /**
@@ -232,6 +235,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmDocumentMod.Document = js.native
   }
   
+  /* static members */
   @js.native
   object MaintenanceWindow extends js.Object {
     /**
@@ -256,6 +260,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmMaintenanceWindowMod.MaintenanceWindow = js.native
   }
   
+  /* static members */
   @js.native
   object MaintenanceWindowTarget extends js.Object {
     /**
@@ -280,6 +285,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmMaintenanceWindowTargetMod.MaintenanceWindowTarget = js.native
   }
   
+  /* static members */
   @js.native
   object MaintenanceWindowTask extends js.Object {
     /**
@@ -304,6 +310,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmMaintenanceWindowTaskMod.MaintenanceWindowTask = js.native
   }
   
+  /* static members */
   @js.native
   object Parameter extends js.Object {
     /**
@@ -328,6 +335,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmParameterMod.Parameter = js.native
   }
   
+  /* static members */
   @js.native
   object PatchBaseline extends js.Object {
     /**
@@ -352,6 +360,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmPatchBaselineMod.PatchBaseline = js.native
   }
   
+  /* static members */
   @js.native
   object PatchGroup extends js.Object {
     /**
@@ -376,6 +385,7 @@ object ssmNs extends js.Object {
     ): atPulumiAwsLib.ssmPatchGroupMod.PatchGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ResourceDataSync extends js.Object {
     /**

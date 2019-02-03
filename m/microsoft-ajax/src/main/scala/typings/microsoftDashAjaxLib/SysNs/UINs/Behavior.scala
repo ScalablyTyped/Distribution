@@ -33,10 +33,7 @@ class Behavior ()
   def set_name(value: java.lang.String): scala.Unit = js.native
 }
 
-/**
-  * Provides a base class for all ASP.NET AJAX client behaviors.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb311020(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.UI.Behavior")
 @js.native
 object Behavior extends js.Object {

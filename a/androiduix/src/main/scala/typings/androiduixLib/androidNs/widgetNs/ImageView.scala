@@ -68,6 +68,7 @@ class ImageView protected ()
   /* private */ def updateDrawable(d: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ImageView")
 @js.native
 object ImageView extends js.Object {

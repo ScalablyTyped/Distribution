@@ -55,6 +55,7 @@ class PropertyList[TElement] protected () extends PropertyBase[PropertyBaseDefin
   def upsert(item: TElement): scala.Boolean | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "PropertyList")
 @js.native
 object PropertyList extends js.Object {

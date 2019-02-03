@@ -12,6 +12,7 @@ class ImageBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsImageImageDotTypesMod.IImageProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Image", "ImageBase")
 @js.native
 object ImageBase extends js.Object {

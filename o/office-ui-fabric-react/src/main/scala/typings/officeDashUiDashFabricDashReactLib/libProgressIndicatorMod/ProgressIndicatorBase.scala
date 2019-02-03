@@ -12,6 +12,7 @@ class ProgressIndicatorBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsProgressIndicatorProgressIndicatorDotTypesMod.IProgressIndicatorProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/ProgressIndicator", "ProgressIndicatorBase")
 @js.native
 object ProgressIndicatorBase extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CredentialPicker () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Credentials.UI.CredentialPicker")
 @js.native
 object CredentialPicker extends js.Object {

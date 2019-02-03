@@ -16,11 +16,13 @@ object checkboxNs extends js.Object {
   class MDCCheckboxFoundation ()
     extends atMaterialCheckboxLib.atMaterialCheckboxMod.MDCCheckboxFoundation
   
+  /* static members */
   @js.native
   object MDCCheckbox extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialCheckboxLib.atMaterialCheckboxMod.MDCCheckbox = js.native
   }
   
+  /* static members */
   @js.native
   object MDCCheckboxFoundation extends js.Object {
     val cssClasses: atMaterialCheckboxLib.constantsMod.cssClasses = js.native

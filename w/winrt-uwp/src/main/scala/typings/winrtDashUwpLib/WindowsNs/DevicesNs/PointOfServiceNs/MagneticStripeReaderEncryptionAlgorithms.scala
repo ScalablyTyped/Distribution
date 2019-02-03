@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MagneticStripeReaderEncryptionAlgorithms () extends js.Object
 
-/** Contains the encryption algorithm supported by the device. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderEncryptionAlgorithms")
 @js.native
 object MagneticStripeReaderEncryptionAlgorithms extends js.Object {

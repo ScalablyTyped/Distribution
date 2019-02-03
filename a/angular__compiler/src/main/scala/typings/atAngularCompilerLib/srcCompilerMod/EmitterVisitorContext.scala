@@ -12,6 +12,7 @@ class EmitterVisitorContext protected ()
   def this(_indent: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/compiler", "EmitterVisitorContext")
 @js.native
 object EmitterVisitorContext extends js.Object {

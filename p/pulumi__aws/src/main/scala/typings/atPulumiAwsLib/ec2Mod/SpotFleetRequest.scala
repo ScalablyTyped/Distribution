@@ -20,6 +20,7 @@ class SpotFleetRequest protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2SpotFleetRequestMod.SpotFleetRequestArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "SpotFleetRequest")
 @js.native
 object SpotFleetRequest extends js.Object {

@@ -20,6 +20,7 @@ class Grant protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kmsGrantMod.GrantArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kms", "Grant")
 @js.native
 object Grant extends js.Object {

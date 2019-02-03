@@ -66,7 +66,7 @@ class Geolocator () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides access to the current geographic location. */
+/* static members */
 @JSGlobal("Windows.Devices.Geolocation.Geolocator")
 @js.native
 object Geolocator extends js.Object {

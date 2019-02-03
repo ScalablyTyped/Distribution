@@ -39,6 +39,7 @@ class DomEventListenerMap ()
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/structure/DomEventListenerMap", "DomEventListenerMap")
 @js.native
 object DomEventListenerMap extends js.Object {

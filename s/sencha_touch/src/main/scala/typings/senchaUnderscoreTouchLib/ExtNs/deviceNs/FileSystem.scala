@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileSystem () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.FileSystem")
 @js.native
 object FileSystem extends js.Object {

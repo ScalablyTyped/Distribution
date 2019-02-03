@@ -51,20 +51,35 @@ object i18nextLibStrings {
   @js.native
   sealed trait rtl extends js.Object
   
+  @scala.inline
   def added: added = "added".asInstanceOf[added]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def current: current = "current".asInstanceOf[current]
+  @scala.inline
   def currentOnly: currentOnly = "currentOnly".asInstanceOf[currentOnly]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def failedLoading: failedLoading = "failedLoading".asInstanceOf[failedLoading]
+  @scala.inline
   def fallback: fallback = "fallback".asInstanceOf[fallback]
+  @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
+  @scala.inline
   def languageChanged: languageChanged = "languageChanged".asInstanceOf[languageChanged]
+  @scala.inline
   def languageOnly: languageOnly = "languageOnly".asInstanceOf[languageOnly]
+  @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def missingKey: missingKey = "missingKey".asInstanceOf[missingKey]
+  @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
 }
 

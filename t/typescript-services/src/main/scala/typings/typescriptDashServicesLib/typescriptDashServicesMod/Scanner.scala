@@ -13,6 +13,7 @@ class Scanner protected ()
   def this(fileName: java.lang.String, text: typescriptDashServicesLib.TypeScriptNs.ISimpleText, languageVersion: typescriptDashServicesLib.TypeScriptNs.LanguageVersion, window: js.Array[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "Scanner")
 @js.native
 object Scanner extends js.Object {

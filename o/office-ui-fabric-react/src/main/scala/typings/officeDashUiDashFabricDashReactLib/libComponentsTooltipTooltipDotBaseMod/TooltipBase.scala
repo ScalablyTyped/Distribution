@@ -16,6 +16,7 @@ class TooltipBase ()
   var _onRenderContent: js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Tooltip/Tooltip.base", "TooltipBase")
 @js.native
 object TooltipBase extends js.Object {

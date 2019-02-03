@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ChatMessageManager () extends js.Object
 
-/** Provides access to message transports and the message store. Also provides a method to display the UI to compose messages. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageManager")
 @js.native
 object ChatMessageManager extends js.Object {

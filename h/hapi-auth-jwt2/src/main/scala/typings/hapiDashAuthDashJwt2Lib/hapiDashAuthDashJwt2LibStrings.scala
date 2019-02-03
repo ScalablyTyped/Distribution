@@ -9,6 +9,7 @@ object hapiDashAuthDashJwt2LibStrings {
   @js.native
   sealed trait jwt extends js.Object
   
+  @scala.inline
   def jwt: jwt = "jwt".asInstanceOf[jwt]
 }
 

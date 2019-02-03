@@ -96,35 +96,65 @@ object svgDashPathDashParserLibStrings {
   @js.native
   sealed trait z extends js.Object
   
+  @scala.inline
   def A: A = "A".asInstanceOf[A]
+  @scala.inline
   def C: C = "C".asInstanceOf[C]
+  @scala.inline
   def H: H = "H".asInstanceOf[H]
+  @scala.inline
   def L: L = "L".asInstanceOf[L]
+  @scala.inline
   def M: M = "M".asInstanceOf[M]
+  @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
+  @scala.inline
   def S: S = "S".asInstanceOf[S]
+  @scala.inline
   def T: T = "T".asInstanceOf[T]
+  @scala.inline
   def V: V = "V".asInstanceOf[V]
+  @scala.inline
   def Z: Z = "Z".asInstanceOf[Z]
+  @scala.inline
   def a: a = "a".asInstanceOf[a]
+  @scala.inline
   def c: c = "c".asInstanceOf[c]
+  @scala.inline
   def closepath: closepath = "closepath".asInstanceOf[closepath]
+  @scala.inline
   def curveto: curveto = "curveto".asInstanceOf[curveto]
+  @scala.inline
   def `elliptical arc`: `elliptical arc` = "elliptical arc".asInstanceOf[`elliptical arc`]
+  @scala.inline
   def h: h = "h".asInstanceOf[h]
+  @scala.inline
   def `horizontal lineto`: `horizontal lineto` = "horizontal lineto".asInstanceOf[`horizontal lineto`]
+  @scala.inline
   def l: l = "l".asInstanceOf[l]
+  @scala.inline
   def lineto: lineto = "lineto".asInstanceOf[lineto]
+  @scala.inline
   def m: m = "m".asInstanceOf[m]
+  @scala.inline
   def moveto: moveto = "moveto".asInstanceOf[moveto]
+  @scala.inline
   def q: q = "q".asInstanceOf[q]
+  @scala.inline
   def `quadratic curveto`: `quadratic curveto` = "quadratic curveto".asInstanceOf[`quadratic curveto`]
+  @scala.inline
   def s: s = "s".asInstanceOf[s]
+  @scala.inline
   def `smooth curveto`: `smooth curveto` = "smooth curveto".asInstanceOf[`smooth curveto`]
+  @scala.inline
   def `smooth quadratic curveto`: `smooth quadratic curveto` = "smooth quadratic curveto".asInstanceOf[`smooth quadratic curveto`]
+  @scala.inline
   def t: t = "t".asInstanceOf[t]
+  @scala.inline
   def v: v = "v".asInstanceOf[v]
+  @scala.inline
   def `vertical lineto`: `vertical lineto` = "vertical lineto".asInstanceOf[`vertical lineto`]
+  @scala.inline
   def z: z = "z".asInstanceOf[z]
 }
 

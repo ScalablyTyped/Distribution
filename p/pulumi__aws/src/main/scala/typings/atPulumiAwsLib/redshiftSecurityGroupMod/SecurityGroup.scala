@@ -32,6 +32,7 @@ class SecurityGroup protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/redshift/securityGroup", "SecurityGroup")
 @js.native
 object SecurityGroup extends js.Object {

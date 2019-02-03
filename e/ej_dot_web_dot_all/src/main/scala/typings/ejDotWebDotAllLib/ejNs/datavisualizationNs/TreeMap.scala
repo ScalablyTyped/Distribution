@@ -26,6 +26,7 @@ class TreeMap protected ()
   def refresh(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.TreeMap")
 @js.native
 object TreeMap extends js.Object {

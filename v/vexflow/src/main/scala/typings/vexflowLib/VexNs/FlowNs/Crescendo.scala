@@ -15,6 +15,7 @@ class Crescendo protected () extends Note {
   def setLine(line: scala.Double): Crescendo = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Crescendo")
 @js.native
 object Crescendo extends js.Object {

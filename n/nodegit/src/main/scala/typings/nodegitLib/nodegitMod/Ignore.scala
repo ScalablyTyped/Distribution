@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Ignore ()
   extends nodegitLib.ignoreMod.Ignore
 
+/* static members */
 @JSImport("nodegit", "Ignore")
 @js.native
 object Ignore extends js.Object {

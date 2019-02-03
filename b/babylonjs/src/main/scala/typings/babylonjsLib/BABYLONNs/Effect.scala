@@ -473,9 +473,7 @@ class Effect protected () extends js.Object {
   def setVector4(uniformName: java.lang.String, vector4: Vector4): Effect = js.native
 }
 
-/**
-  * Effect containing vertex and fragment shader that can be executed on an object.
-  */
+/* static members */
 @JSGlobal("BABYLON.Effect")
 @js.native
 object Effect extends js.Object {

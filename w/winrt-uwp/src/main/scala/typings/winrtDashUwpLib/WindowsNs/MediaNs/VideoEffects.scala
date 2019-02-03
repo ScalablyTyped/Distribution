@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class VideoEffects () extends js.Object
 
-/** Provides video-related effects. */
+/* static members */
 @JSGlobal("Windows.Media.VideoEffects")
 @js.native
 object VideoEffects extends js.Object {

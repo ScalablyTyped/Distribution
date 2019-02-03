@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FormsModule ()
   extends atAngularFormsLib.srcFormUnderscoreProvidersMod.FormsModule
 
+/* static members */
 @JSImport("@angular/forms/src/forms", "FormsModule")
 @js.native
 object FormsModule extends js.Object {

@@ -28,6 +28,7 @@ class ListenerCertificate protected ()
   val listenerArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/applicationloadbalancing/listenerCertificate", "ListenerCertificate")
 @js.native
 object ListenerCertificate extends js.Object {

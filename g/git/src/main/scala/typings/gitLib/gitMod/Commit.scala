@@ -30,6 +30,7 @@ class Commit protected () extends js.Object {
   def toPatch(callback: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("git", "Commit")
 @js.native
 object Commit extends js.Object {

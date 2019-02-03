@@ -19,6 +19,7 @@ class default () extends ExtKeyUsage {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/ExtKeyUsage", JSImport.Default)
 @js.native
 object default extends js.Object {

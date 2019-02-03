@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Archive () extends js.Object
 
+/* static members */
 @JSImport("@pulumi/pulumi/asset/archive", "Archive")
 @js.native
 object Archive extends js.Object {

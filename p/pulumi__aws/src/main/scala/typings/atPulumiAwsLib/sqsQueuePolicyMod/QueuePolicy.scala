@@ -28,6 +28,7 @@ class QueuePolicy protected ()
   val queueUrl: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sqs/queuePolicy", "QueuePolicy")
 @js.native
 object QueuePolicy extends js.Object {

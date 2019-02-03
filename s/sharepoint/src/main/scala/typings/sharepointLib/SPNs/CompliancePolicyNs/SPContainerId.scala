@@ -28,6 +28,7 @@ class SPContainerId ()
   def set_webId(value: sharepointLib.SPNs.Guid): sharepointLib.SPNs.Guid = js.native
 }
 
+/* static members */
 @JSGlobal("SP.CompliancePolicy.SPContainerId")
 @js.native
 object SPContainerId extends js.Object {

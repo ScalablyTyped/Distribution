@@ -14,6 +14,7 @@ class Class () extends js.Object {
   def findOrCreate(roleName: java.lang.String): Permission = js.native
 }
 
+/* static members */
 @JSGlobal("Realm.Permissions.Class")
 @js.native
 object Class extends js.Object {

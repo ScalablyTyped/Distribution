@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ViewSelectorMenuBuilder () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Application.UI.ViewSelectorMenuBuilder")
 @js.native
 object ViewSelectorMenuBuilder extends js.Object {

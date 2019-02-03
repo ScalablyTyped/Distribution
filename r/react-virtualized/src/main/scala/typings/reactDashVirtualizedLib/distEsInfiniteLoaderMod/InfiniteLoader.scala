@@ -13,6 +13,7 @@ class InfiniteLoader ()
   def resetLoadMoreRowsCache(autoReload: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/InfiniteLoader", "InfiniteLoader")
 @js.native
 object InfiniteLoader extends js.Object {

@@ -18,6 +18,7 @@ class LongestCommonSubsequence[T] protected () extends js.Object {
   def getSequence(): js.Array[T] = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/gridrouter", "LongestCommonSubsequence")
 @js.native
 object LongestCommonSubsequence extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Sidenav ()
   extends materializeDashCssLib.MNs.Sidenav
 
+/* static members */
 @JSImport("materialize-css", "Sidenav")
 @js.native
 object Sidenav extends js.Object {

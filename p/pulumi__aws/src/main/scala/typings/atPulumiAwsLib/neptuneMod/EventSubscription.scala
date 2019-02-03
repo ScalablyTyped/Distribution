@@ -20,6 +20,7 @@ class EventSubscription protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.neptuneEventSubscriptionMod.EventSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/neptune", "EventSubscription")
 @js.native
 object EventSubscription extends js.Object {

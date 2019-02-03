@@ -21,6 +21,7 @@ class EipAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2EipAssociationMod.EipAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "EipAssociation")
 @js.native
 object EipAssociation extends js.Object {

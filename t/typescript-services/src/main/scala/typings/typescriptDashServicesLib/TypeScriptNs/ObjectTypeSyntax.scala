@@ -21,6 +21,7 @@ class ObjectTypeSyntax protected () extends SyntaxNode {
   def withTypeMembers(typeMembers: ISeparatedSyntaxList): ObjectTypeSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ObjectTypeSyntax")
 @js.native
 object ObjectTypeSyntax extends js.Object {

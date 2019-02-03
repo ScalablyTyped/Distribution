@@ -14,6 +14,7 @@ class DropTarget protected () extends Widget {
   var options_DropTarget: DropTargetOptions = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DropTarget")
 @js.native
 object DropTarget extends js.Object {

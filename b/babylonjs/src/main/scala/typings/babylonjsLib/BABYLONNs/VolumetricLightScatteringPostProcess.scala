@@ -100,9 +100,7 @@ class VolumetricLightScatteringPostProcess protected () extends PostProcess {
   def setCustomMeshPosition(position: Vector3): scala.Unit = js.native
 }
 
-/**
-  *  Inspired by http://http.developer.nvidia.com/GPUGems3/gpugems3_ch13.html
-  */
+/* static members */
 @JSGlobal("BABYLON.VolumetricLightScatteringPostProcess")
 @js.native
 object VolumetricLightScatteringPostProcess extends js.Object {

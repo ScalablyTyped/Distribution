@@ -68,6 +68,7 @@ class MobXGlobals () extends js.Object {
     * Spy callbacks
     */
   var spyListeners: js.Array[mobxLib.Anon_Change] = js.native
+  var suppressReactionErrors: scala.Boolean = js.native
   /**
     * Currently running derivation
     */

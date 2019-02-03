@@ -20,6 +20,7 @@ class JsonMetadataClass protected () extends js.Object {
   def find(name: java.lang.String): JsonObjectProperty = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "JsonMetadataClass")
 @js.native
 object JsonMetadataClass extends js.Object {

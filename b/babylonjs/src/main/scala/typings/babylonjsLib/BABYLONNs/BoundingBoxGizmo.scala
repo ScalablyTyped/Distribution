@@ -90,9 +90,7 @@ class BoundingBoxGizmo () extends Gizmo {
   def updateBoundingBox(): scala.Unit = js.native
 }
 
-/**
-  * Bounding box gizmo
-  */
+/* static members */
 @JSGlobal("BABYLON.BoundingBoxGizmo")
 @js.native
 object BoundingBoxGizmo extends js.Object {

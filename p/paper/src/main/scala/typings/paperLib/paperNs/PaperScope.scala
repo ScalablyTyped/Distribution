@@ -64,6 +64,7 @@ class PaperScope () extends js.Object {
   def setup(canvas: stdLib.HTMLCanvasElement): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("paper.PaperScope")
 @js.native
 object PaperScope extends js.Object {

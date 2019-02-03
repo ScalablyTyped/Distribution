@@ -69,9 +69,7 @@ class BoundingSphere protected () extends js.Object {
   def scale(factor: scala.Double): BoundingSphere = js.native
 }
 
-/**
-  * Class used to store bounding sphere information
-  */
+/* static members */
 @JSGlobal("BABYLON.BoundingSphere")
 @js.native
 object BoundingSphere extends js.Object {

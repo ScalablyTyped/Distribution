@@ -125,6 +125,7 @@ class b2Vec2 () extends js.Object {
   def Subtract(v: b2Vec2): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Common.Math.b2Vec2")
 @js.native
 object b2Vec2 extends js.Object {

@@ -38,6 +38,7 @@ class Resolvable protected ()
   def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: atUirouterCoreLib.libResolveInterfaceMod.ResolvePolicy, data: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/angularjs", "Resolvable")
 @js.native
 object Resolvable extends js.Object {

@@ -115,6 +115,7 @@ class Table protected ()
   ): atPulumiAwsLib.dynamodbDynamodbMixinsMod.TableEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dynamodb/table", "Table")
 @js.native
 object Table extends js.Object {

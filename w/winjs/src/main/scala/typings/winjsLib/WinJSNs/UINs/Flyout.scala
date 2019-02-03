@@ -123,9 +123,7 @@ class Flyout () extends js.Object {
   def showAt(mouseEventObj: stdLib.MouseEvent): scala.Unit = js.native
 }
 
-/**
-  * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Flyout")
 @js.native
 object Flyout extends js.Object {

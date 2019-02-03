@@ -19,9 +19,7 @@ class GearVRController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Gear VR Controller
-  */
+/* static members */
 @JSImport("babylonjs", "GearVRController")
 @js.native
 object GearVRController extends js.Object {

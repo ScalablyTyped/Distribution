@@ -16,6 +16,7 @@ class ReportHeader ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IReportHeader) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "ReportHeader")
 @js.native
 object ReportHeader extends js.Object {

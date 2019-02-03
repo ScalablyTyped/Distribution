@@ -12,6 +12,7 @@ class TextChangeRange protected ()
   def this(span: typescriptDashServicesLib.TypeScriptNs.TextSpan, newLength: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TextChangeRange")
 @js.native
 object TextChangeRange extends js.Object {

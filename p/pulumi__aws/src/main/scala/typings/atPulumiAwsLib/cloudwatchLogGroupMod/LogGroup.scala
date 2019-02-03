@@ -89,6 +89,7 @@ class LogGroup protected ()
   ): atPulumiAwsLib.cloudwatchLogGroupMixinsMod.LogGroupEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logGroup", "LogGroup")
 @js.native
 object LogGroup extends js.Object {

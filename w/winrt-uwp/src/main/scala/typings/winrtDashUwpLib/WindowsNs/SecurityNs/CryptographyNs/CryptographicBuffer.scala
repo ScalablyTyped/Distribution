@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CryptographicBuffer () extends js.Object
 
-/** Contains static methods that implement data management functionality common to cryptographic operations. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.CryptographicBuffer")
 @js.native
 object CryptographicBuffer extends js.Object {

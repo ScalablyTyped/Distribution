@@ -15,6 +15,7 @@ class Odb () extends js.Object {
   def write(data: nodeLib.Buffer, len: scala.Double, `type`: nodegitLib.objectMod.ObjectNs.TYPE): js.Promise[nodegitLib.oidMod.Oid] = js.native
 }
 
+/* static members */
 @JSImport("nodegit/odb", "Odb")
 @js.native
 object Odb extends js.Object {

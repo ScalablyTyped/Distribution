@@ -21,6 +21,7 @@ class Detector protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.guarddutyDetectorMod.DetectorArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty", "Detector")
 @js.native
 object Detector extends js.Object {

@@ -25,6 +25,7 @@ import scala.scalajs.js.annotation._
   */
 class Helper () extends js.Object
 
+/* static members */
 @JSImport("node-mysql-wrapper", "Helper")
 @js.native
 object Helper extends js.Object {

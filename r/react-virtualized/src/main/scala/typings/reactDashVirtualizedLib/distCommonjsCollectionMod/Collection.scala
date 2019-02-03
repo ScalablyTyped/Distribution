@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Collection ()
   extends reactDashVirtualizedLib.distEsCollectionMod.Collection
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/Collection", "Collection")
 @js.native
 object Collection extends js.Object {

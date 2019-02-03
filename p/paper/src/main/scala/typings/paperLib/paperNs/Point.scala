@@ -245,6 +245,7 @@ class Point protected () extends js.Object {
   def transform(matrix: Matrix): Point = js.native
 }
 
+/* static members */
 @JSGlobal("paper.Point")
 @js.native
 object Point extends js.Object {

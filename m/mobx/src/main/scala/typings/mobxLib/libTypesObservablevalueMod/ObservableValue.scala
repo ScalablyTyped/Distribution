@@ -15,10 +15,13 @@ class ObservableValue[T] protected ()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]) = this()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String) = this()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String, notifySpy: scala.Boolean) = this()
+  def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String, notifySpy: scala.Boolean, equals: mobxLib.libUtilsComparerMod.IEqualsComparer[_]) = this()
   var dehanceValue: js.Any = js.native
   var dehancer: js.Any = js.native
   @JSName("enhancer")
   var enhancer_Original: mobxLib.libTypesModifiersMod.IEnhancer[T] = js.native
+  @JSName("equals")
+  var equals_FObservableValue: js.Any = js.native
   var hasUnreportedChange: scala.Boolean = js.native
   /* CompleteClass */
   override var interceptors: js.UndefOr[

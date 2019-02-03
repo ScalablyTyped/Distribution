@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DateExtras () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.DateExtras")
 @js.native
 object DateExtras extends js.Object {

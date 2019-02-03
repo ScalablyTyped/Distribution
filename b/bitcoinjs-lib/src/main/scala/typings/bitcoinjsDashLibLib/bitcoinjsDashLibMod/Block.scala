@@ -21,6 +21,7 @@ class Block () extends js.Object {
   def toHex(headersOnly: scala.Boolean): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("bitcoinjs-lib", "Block")
 @js.native
 object Block extends js.Object {

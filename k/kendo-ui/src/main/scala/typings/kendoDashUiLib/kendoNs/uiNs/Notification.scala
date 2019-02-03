@@ -35,6 +35,7 @@ class Notification protected () extends Widget {
   def warning(data: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Notification")
 @js.native
 object Notification extends js.Object {

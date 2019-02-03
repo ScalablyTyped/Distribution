@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ChatMessageBlocking () extends js.Object
 
-/** Provides functionality for blocking messages. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatMessageBlocking")
 @js.native
 object ChatMessageBlocking extends js.Object {

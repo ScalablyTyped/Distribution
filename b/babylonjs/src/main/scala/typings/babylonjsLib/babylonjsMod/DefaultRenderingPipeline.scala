@@ -28,10 +28,7 @@ class DefaultRenderingPipeline ()
   def this(name: java.lang.String, hdr: scala.Boolean, scene: babylonjsLib.BABYLONNs.Scene, cameras: js.Array[babylonjsLib.BABYLONNs.Camera], automaticBuild: scala.Boolean) = this()
 }
 
-/**
-  * The default rendering pipeline can be added to a scene to apply common post processing effects such as anti-aliasing or depth of field.
-  * See https://doc.babylonjs.com/how_to/using_default_rendering_pipeline
-  */
+/* static members */
 @JSImport("babylonjs", "DefaultRenderingPipeline")
 @js.native
 object DefaultRenderingPipeline extends js.Object {

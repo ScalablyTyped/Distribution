@@ -15,8 +15,11 @@ object idyllDashCompilerLibStrings {
   @js.native
   sealed trait variable extends js.Object
   
+  @scala.inline
   def expression: expression = "expression".asInstanceOf[expression]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
   def variable: variable = "variable".asInstanceOf[variable]
 }
 

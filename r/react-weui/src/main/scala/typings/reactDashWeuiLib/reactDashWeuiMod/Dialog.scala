@@ -13,6 +13,7 @@ class Dialog protected () extends js.Object {
   def renderButtons(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Dialog")
 @js.native
 object Dialog extends js.Object {

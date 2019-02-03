@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class VariableTypeTable ()
   extends wonderDotJsLib.distEs2015RendererShaderVariableVariableTypeTableMod.VariableTypeTable
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "VariableTypeTable")
 @js.native
 object VariableTypeTable extends js.Object {

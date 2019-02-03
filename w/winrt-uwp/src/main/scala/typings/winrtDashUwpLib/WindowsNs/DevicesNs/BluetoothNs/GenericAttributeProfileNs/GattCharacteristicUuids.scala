@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GattCharacteristicUuids () extends js.Object
 
-/** Represents an enumeration of the most well known Characteristic UUID values, and provides convenience methods for working with GATT characteristic UUIDs, and static properties providing characteristic UUIDs for common GATT characteristics. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristicUuids")
 @js.native
 object GattCharacteristicUuids extends js.Object {

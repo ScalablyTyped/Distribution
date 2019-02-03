@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Text ()
   extends atBlueprintjsCoreLib.libEsmComponentsTextTextMod.Text
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Text")
 @js.native
 object Text extends js.Object {

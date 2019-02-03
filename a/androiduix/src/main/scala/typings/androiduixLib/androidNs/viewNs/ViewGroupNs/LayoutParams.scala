@@ -26,6 +26,7 @@ class LayoutParams protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ViewGroup.LayoutParams")
 @js.native
 object LayoutParams extends js.Object {

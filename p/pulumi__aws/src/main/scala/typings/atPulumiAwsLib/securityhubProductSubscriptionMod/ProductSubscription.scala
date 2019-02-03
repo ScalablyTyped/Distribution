@@ -28,6 +28,7 @@ class ProductSubscription protected ()
   val productArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/securityhub/productSubscription", "ProductSubscription")
 @js.native
 object ProductSubscription extends js.Object {

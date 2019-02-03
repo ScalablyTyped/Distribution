@@ -12,6 +12,7 @@ class HermiteSpline protected ()
   def this(options: cesiumLib.Anon_InTangents) = this()
 }
 
+/* static members */
 @JSImport("cesium", "HermiteSpline")
 @js.native
 object HermiteSpline extends js.Object {

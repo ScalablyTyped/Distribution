@@ -16,6 +16,7 @@ class RadioGroup ()
   /* protected */ def validateProps(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/radioGroup", "RadioGroup")
 @js.native
 object RadioGroup extends js.Object {

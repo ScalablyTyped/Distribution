@@ -72,6 +72,7 @@ class jo protected () extends js.Object {
   def updateHashRoute(hashRoute: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("jo")
 @js.native
 object jo extends js.Object {

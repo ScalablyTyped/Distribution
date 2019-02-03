@@ -18,9 +18,13 @@ object lambdaDashLogLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

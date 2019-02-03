@@ -64,6 +64,7 @@ class NetworkAclRule protected ()
   val toPort: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule")
 @js.native
 object NetworkAclRule extends js.Object {

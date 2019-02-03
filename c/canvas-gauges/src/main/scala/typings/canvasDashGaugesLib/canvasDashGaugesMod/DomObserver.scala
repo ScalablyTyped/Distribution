@@ -12,6 +12,7 @@ class DomObserver protected ()
   def this(options: canvasDashGaugesLib.CanvasGaugesNs.GenericOptions, element: java.lang.String, `type`: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("canvas-gauges", "DomObserver")
 @js.native
 object DomObserver extends js.Object {

@@ -27,12 +27,19 @@ object objectionLibStrings {
   @js.native
   sealed trait UnallowedRelation extends js.Object
   
+  @scala.inline
   def DeepPartialGraphModel: DeepPartialGraphModel = "DeepPartialGraphModel".asInstanceOf[DeepPartialGraphModel]
+  @scala.inline
   def GraphModel: GraphModel = "GraphModel".asInstanceOf[GraphModel]
+  @scala.inline
   def InvalidGraph: InvalidGraph = "InvalidGraph".asInstanceOf[InvalidGraph]
+  @scala.inline
   def ModelValidation: ModelValidation = "ModelValidation".asInstanceOf[ModelValidation]
+  @scala.inline
   def PartialUpdate: PartialUpdate = "PartialUpdate".asInstanceOf[PartialUpdate]
+  @scala.inline
   def RelationExpression: RelationExpression = "RelationExpression".asInstanceOf[RelationExpression]
+  @scala.inline
   def UnallowedRelation: UnallowedRelation = "UnallowedRelation".asInstanceOf[UnallowedRelation]
 }
 

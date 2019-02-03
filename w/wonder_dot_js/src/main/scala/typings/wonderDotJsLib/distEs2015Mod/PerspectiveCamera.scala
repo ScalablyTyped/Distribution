@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PerspectiveCamera ()
   extends wonderDotJsLib.distEs2015ComponentCameraPerspectiveCameraMod.PerspectiveCamera
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "PerspectiveCamera")
 @js.native
 object PerspectiveCamera extends js.Object {

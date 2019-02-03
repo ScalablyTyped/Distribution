@@ -12,6 +12,7 @@ class default[T] protected ()
   def this(props: antdLib.libTableInterfaceMod.TableProps[T]) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/table", JSImport.Default)
 @js.native
 object default extends js.Object {

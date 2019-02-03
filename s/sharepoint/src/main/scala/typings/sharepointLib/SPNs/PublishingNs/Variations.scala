@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Variations ()
   extends sharepointLib.SPNs.ClientObject
 
+/* static members */
 @JSGlobal("SP.Publishing.Variations")
 @js.native
 object Variations extends js.Object {

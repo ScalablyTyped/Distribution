@@ -20,6 +20,7 @@ class Webhook protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codepipelineWebhookMod.WebhookArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codepipeline", "Webhook")
 @js.native
 object Webhook extends js.Object {

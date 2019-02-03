@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tool () extends Pointable
 
+/* static members */
 @JSImport("leapmotionts", "Tool")
 @js.native
 object Tool extends js.Object {

@@ -12,6 +12,7 @@ class Record protected ()
   def this(time: js.Any, value: js.Any, actionType: wonderDashFrpLib.distCommonjsTestingActionTypeMod.ActionType, comparer: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "Record")
 @js.native
 object Record extends js.Object {

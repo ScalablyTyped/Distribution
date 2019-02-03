@@ -15,6 +15,7 @@ class PublishingPage () extends ScheduledItem {
   ): sharepointLib.SPNs.StringResult = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Publishing.PublishingPage")
 @js.native
 object PublishingPage extends js.Object {

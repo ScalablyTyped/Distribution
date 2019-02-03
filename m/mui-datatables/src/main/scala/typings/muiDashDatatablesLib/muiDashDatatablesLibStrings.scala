@@ -39,16 +39,27 @@ object muiDashDatatablesLibStrings {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  @scala.inline
   def excluded: excluded = "excluded".asInstanceOf[excluded]
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
   def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def stacked: stacked = "stacked".asInstanceOf[stacked]
+  @scala.inline
   def textField: textField = "textField".asInstanceOf[textField]
+  @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
 }
 

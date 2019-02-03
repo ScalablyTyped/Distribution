@@ -16,6 +16,7 @@ class TypeAnnotationSyntax protected () extends SyntaxNode {
   def withType(`type`: ITypeSyntax): TypeAnnotationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeAnnotationSyntax")
 @js.native
 object TypeAnnotationSyntax extends js.Object {

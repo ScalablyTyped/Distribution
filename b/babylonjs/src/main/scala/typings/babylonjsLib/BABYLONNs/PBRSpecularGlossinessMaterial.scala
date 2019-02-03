@@ -44,12 +44,7 @@ class PBRSpecularGlossinessMaterial protected () extends PBRBaseSimpleMaterial {
   var specularGlossinessTexture: BaseTexture = js.native
 }
 
-/**
-  * The PBR material of BJS following the specular glossiness convention.
-  *
-  * This fits to the PBR convention in the GLTF definition:
-  * https://github.com/KhronosGroup/glTF/tree/2.0/extensions/Khronos/KHR_materials_pbrSpecularGlossiness
-  */
+/* static members */
 @JSGlobal("BABYLON.PBRSpecularGlossinessMaterial")
 @js.native
 object PBRSpecularGlossinessMaterial extends js.Object {

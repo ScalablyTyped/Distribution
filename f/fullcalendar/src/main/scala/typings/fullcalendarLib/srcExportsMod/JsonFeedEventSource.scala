@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class JsonFeedEventSource ()
   extends fullcalendarLib.jsonfeedeventsourceMod.default
 
+/* static members */
 @JSImport("fullcalendar/src/exports", "JsonFeedEventSource")
 @js.native
 object JsonFeedEventSource extends js.Object {

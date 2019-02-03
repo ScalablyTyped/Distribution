@@ -18,6 +18,7 @@ class Box protected () extends Shape {
   def updateConvexPolyhedronRepresentation(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.Box")
 @js.native
 object Box extends js.Object {

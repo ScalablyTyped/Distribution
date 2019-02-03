@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class PointerEventTypes ()
   extends babylonjsLib.BABYLONNs.PointerEventTypes
 
-/**
-  * Gather the list of pointer event types as constants.
-  */
+/* static members */
 @JSImport("babylonjs", "PointerEventTypes")
 @js.native
 object PointerEventTypes extends js.Object {

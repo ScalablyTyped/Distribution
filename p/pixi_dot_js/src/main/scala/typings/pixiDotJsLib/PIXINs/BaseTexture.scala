@@ -304,6 +304,7 @@ class BaseTexture ()
   def updateSourceImage(newSrc: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.BaseTexture")
 @js.native
 object BaseTexture extends js.Object {

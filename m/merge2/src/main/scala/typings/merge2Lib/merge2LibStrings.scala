@@ -9,6 +9,7 @@ object merge2LibStrings {
   @js.native
   sealed trait queueDrain extends js.Object
   
+  @scala.inline
   def queueDrain: queueDrain = "queueDrain".asInstanceOf[queueDrain]
 }
 

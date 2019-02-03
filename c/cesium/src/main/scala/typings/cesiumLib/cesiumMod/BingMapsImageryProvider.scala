@@ -74,6 +74,7 @@ class BingMapsImageryProvider protected ()
   override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
 }
 
+/* static members */
 @JSImport("cesium", "BingMapsImageryProvider")
 @js.native
 object BingMapsImageryProvider extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Integer () extends js.Object
 
+/* static members */
 @JSGlobal("java.lang.Integer")
 @js.native
 object Integer extends js.Object {

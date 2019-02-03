@@ -14,6 +14,7 @@ class RuleOperationContext protected () extends js.Object {
   def IsAny(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.RuleOperationContext")
 @js.native
 object RuleOperationContext extends js.Object {

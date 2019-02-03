@@ -21,6 +21,7 @@ class LaunchTemplate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2LaunchTemplateMod.LaunchTemplateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "LaunchTemplate")
 @js.native
 object LaunchTemplate extends js.Object {

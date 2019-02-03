@@ -13,6 +13,7 @@ abstract class DateComponent ()
   def this(_view: js.Any, _options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/src/exports", "DateComponent")
 @js.native
 object DateComponent extends js.Object {

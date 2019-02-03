@@ -49,6 +49,7 @@ class GlobalCluster protected ()
   val storageEncrypted: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds/globalCluster", "GlobalCluster")
 @js.native
 object GlobalCluster extends js.Object {

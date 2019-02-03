@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Command () extends AppBarCommand
 
-/**
-  * Represents a command to be displayed in an AppBar or ToolBar
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Command")
 @js.native
 object Command extends js.Object {

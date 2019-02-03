@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends atAntDashDesignIconsDashReactLib.libComponentsIconMod.default
 
+/* static members */
 @JSImport("@ant-design/icons-react/lib", "default")
 @js.native
 object default extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Clipboard () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard")
 @js.native
 object Clipboard extends js.Object {

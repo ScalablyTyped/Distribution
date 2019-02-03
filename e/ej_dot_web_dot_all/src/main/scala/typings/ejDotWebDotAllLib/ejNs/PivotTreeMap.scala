@@ -53,6 +53,7 @@ class PivotTreeMap protected () extends Widget {
   def setOlapReport(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotTreeMap")
 @js.native
 object PivotTreeMap extends js.Object {

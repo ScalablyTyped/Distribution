@@ -14,6 +14,7 @@ class DefaultTheme protected ()
   def getEntryPoint(project: typedocLib.distLibModelsReflectionsMod.ProjectReflection): typedocLib.distLibModelsReflectionsMod.ContainerReflection = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/themes/DefaultTheme", "DefaultTheme")
 @js.native
 object DefaultTheme extends js.Object {

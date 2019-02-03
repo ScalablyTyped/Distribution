@@ -177,6 +177,7 @@ class Cluster protected ()
   val vpcSecurityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/redshift/cluster", "Cluster")
 @js.native
 object Cluster extends js.Object {

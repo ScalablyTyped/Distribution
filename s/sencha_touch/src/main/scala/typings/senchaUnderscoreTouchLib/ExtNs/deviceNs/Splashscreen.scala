@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Splashscreen () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Splashscreen")
 @js.native
 object Splashscreen extends js.Object {

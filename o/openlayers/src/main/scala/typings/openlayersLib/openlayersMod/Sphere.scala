@@ -50,6 +50,7 @@ class Sphere protected () extends js.Object {
   def haversineDistance(c1: Coordinate, c2: Coordinate): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("openlayers", "Sphere")
 @js.native
 object Sphere extends js.Object {

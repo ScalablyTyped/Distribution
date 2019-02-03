@@ -36,6 +36,7 @@ class BucketNotification protected ()
   val topics: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixId]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucketNotification", "BucketNotification")
 @js.native
 object BucketNotification extends js.Object {

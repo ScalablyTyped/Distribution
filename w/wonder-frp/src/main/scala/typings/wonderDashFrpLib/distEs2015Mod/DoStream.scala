@@ -12,6 +12,7 @@ class DoStream protected ()
   def this(source: wonderDashFrpLib.distEs2015CoreStreamMod.Stream, onNext: js.Function, onError: js.Function, onCompleted: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "DoStream")
 @js.native
 object DoStream extends js.Object {

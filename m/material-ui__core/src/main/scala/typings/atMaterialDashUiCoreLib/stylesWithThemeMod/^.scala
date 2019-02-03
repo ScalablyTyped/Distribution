@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def default(): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithThemeMod.WithTheme, 
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithThemeMod.WithTheme]
+    atMaterialDashUiCoreLib.stylesWithThemeMod.ThemedComponentProps
   ] = js.native
 }
 

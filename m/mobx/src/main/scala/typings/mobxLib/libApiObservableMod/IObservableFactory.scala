@@ -16,10 +16,17 @@ trait IObservableFactory extends js.Object {
   def apply(value: scala.Boolean): scala.Nothing = js.native
   def apply(value: scala.Double): scala.Nothing = js.native
   def apply[T /* <: js.Object */](value: T): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
-  def apply[T /* <: js.Object */](value: T, decorators: mobxLib.mobxLibStrings.IObservableFactory with js.Any): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   def apply[T /* <: js.Object */](
     value: T,
-    decorators: mobxLib.mobxLibStrings.IObservableFactory with js.Any,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? std.Function}
+    */ mobxLib.mobxLibStrings.IObservableFactory with js.Any
+  ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
+  def apply[T /* <: js.Object */](
+    value: T,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? std.Function}
+    */ mobxLib.mobxLibStrings.IObservableFactory with js.Any,
     options: CreateObservableOptions
   ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   def apply[T](value: js.Array[T]): mobxLib.libTypesObservablearrayMod.IObservableArray[T] = js.native

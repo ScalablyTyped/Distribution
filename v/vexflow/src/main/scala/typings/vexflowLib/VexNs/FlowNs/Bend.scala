@@ -16,6 +16,7 @@ class Bend protected () extends Modifier {
   def updateWidth(): Bend = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Bend")
 @js.native
 object Bend extends js.Object {

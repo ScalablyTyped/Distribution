@@ -25,6 +25,7 @@ class ExpandingCardBase protected ()
   def componentWillUnmount_MExpandingCardBase(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/ExpandingCard.base", "ExpandingCardBase")
 @js.native
 object ExpandingCardBase extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WorkplaceSettings () extends js.Object
 
-/** Enables Windows Store apps to access select enterprise settings that are managed through group policy or other management services. */
+/* static members */
 @JSGlobal("Windows.Management.Workplace.WorkplaceSettings")
 @js.native
 object WorkplaceSettings extends js.Object {

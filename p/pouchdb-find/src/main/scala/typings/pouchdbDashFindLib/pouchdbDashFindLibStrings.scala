@@ -30,13 +30,21 @@ object pouchdbDashFindLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

@@ -18,9 +18,13 @@ object jqueryDashEasyDashLoadingLibStrings {
   @js.native
   sealed trait toggle extends js.Object
   
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
 }
 

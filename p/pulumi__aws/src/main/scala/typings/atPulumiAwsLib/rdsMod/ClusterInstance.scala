@@ -20,6 +20,7 @@ class ClusterInstance protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsClusterInstanceMod.ClusterInstanceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "ClusterInstance")
 @js.native
 object ClusterInstance extends js.Object {

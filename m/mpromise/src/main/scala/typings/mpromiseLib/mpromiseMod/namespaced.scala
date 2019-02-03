@@ -11,6 +11,7 @@ class namespaced[F, R] () extends Promise[F, R] {
   def this(fn: IResolveFunction[F, R]) = this()
 }
 
+/* static members */
 @JSImport("mpromise", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

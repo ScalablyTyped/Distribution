@@ -52,9 +52,7 @@ class ActionEvent protected () extends js.Object {
   var sourceEvent: js.UndefOr[js.Any] = js.native
 }
 
-/**
-  * ActionEvent is the event being sent when an action is triggered.
-  */
+/* static members */
 @JSGlobal("BABYLON.ActionEvent")
 @js.native
 object ActionEvent extends js.Object {

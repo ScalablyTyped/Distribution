@@ -23,6 +23,7 @@ class Color () extends js.Object {
   def setFromString(hex: java.lang.String): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.Color")
 @js.native
 object Color extends js.Object {

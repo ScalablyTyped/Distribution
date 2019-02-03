@@ -12,6 +12,7 @@ class Query () extends MQuery {
   var query: js.Array[js.Tuple2[java.lang.String, js.Object]] = js.native
 }
 
+/* static members */
 @JSImport("mongorito", "Query")
 @js.native
 object Query extends js.Object {

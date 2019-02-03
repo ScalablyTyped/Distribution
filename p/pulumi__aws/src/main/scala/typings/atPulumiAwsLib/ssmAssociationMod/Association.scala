@@ -54,6 +54,7 @@ class Association protected ()
   val targets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_KeyValues]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/association", "Association")
 @js.native
 object Association extends js.Object {

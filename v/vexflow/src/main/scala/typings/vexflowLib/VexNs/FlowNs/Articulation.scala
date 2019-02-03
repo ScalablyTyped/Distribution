@@ -11,6 +11,7 @@ class Articulation protected () extends Modifier {
   def this(`type`: java.lang.String) = this()
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Articulation")
 @js.native
 object Articulation extends js.Object {

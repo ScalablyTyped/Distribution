@@ -54,21 +54,37 @@ object jqueryDashToastmessageDashPluginLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def `middle-center`: `middle-center` = "middle-center".asInstanceOf[`middle-center`]
+  @scala.inline
   def `middle-left`: `middle-left` = "middle-left".asInstanceOf[`middle-left`]
+  @scala.inline
   def `middle-right`: `middle-right` = "middle-right".asInstanceOf[`middle-right`]
+  @scala.inline
   def notice: notice = "notice".asInstanceOf[notice]
+  @scala.inline
   def removeToast: removeToast = "removeToast".asInstanceOf[removeToast]
+  @scala.inline
   def showErrorToast: showErrorToast = "showErrorToast".asInstanceOf[showErrorToast]
+  @scala.inline
   def showNoticeToast: showNoticeToast = "showNoticeToast".asInstanceOf[showNoticeToast]
+  @scala.inline
   def showSuccessToast: showSuccessToast = "showSuccessToast".asInstanceOf[showSuccessToast]
+  @scala.inline
   def showToast: showToast = "showToast".asInstanceOf[showToast]
+  @scala.inline
   def showWarningToast: showWarningToast = "showWarningToast".asInstanceOf[showWarningToast]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def `top-center`: `top-center` = "top-center".asInstanceOf[`top-center`]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

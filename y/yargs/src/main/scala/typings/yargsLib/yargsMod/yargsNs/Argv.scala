@@ -13,8 +13,12 @@ import scala.scalajs.js.annotation._
 // Arguments<T> to simplify the inferred type signature in client code.
 @js.native
 trait Argv[T] extends js.Object {
-  var argv: yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def apply(): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  var argv: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def apply(): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
   def apply(args: js.Array[java.lang.String]): Argv[T] = js.native
   def apply(args: js.Array[java.lang.String], cwd: java.lang.String): Argv[T] = js.native
   def alias(aliases: org.scalablytyped.runtime.StringDictionary[java.lang.String | js.Array[java.lang.String]]): Argv[T] = js.native
@@ -269,13 +273,27 @@ trait Argv[T] extends js.Object {
   def option[K /* <: java.lang.String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
   def options[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */](options: O): Argv[(Omit[T, java.lang.String]) with InferredOptionTypes[O]] = js.native
   def options[K /* <: java.lang.String */, O /* <: Options */](key: K, options: O): Argv[(Omit[T, K]) with yargsLib.yargsLibStrings.Argv with js.Any] = js.native
-  def parse(): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: java.lang.String): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: java.lang.String, context: js.Object): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: java.lang.String, context: js.Object, parseCallback: ParseCallback[T]): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[java.lang.String]): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[java.lang.String], context: js.Object): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
-  def parse(arg: js.Array[java.lang.String], context: js.Object, parseCallback: ParseCallback[T]): yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: java.lang.String): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: java.lang.String, context: js.Object): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: java.lang.String, context: js.Object, parseCallback: ParseCallback[T]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: js.Array[java.lang.String]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: js.Array[java.lang.String], context: js.Object): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
+  def parse(arg: js.Array[java.lang.String], context: js.Object, parseCallback: ParseCallback[T]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof yargs.yargs.yargs.Arguments<T> ]: yargs.yargs.yargs.Arguments<T>[key]}
+    */ yargsLib.yargsLibStrings.Argv with Arguments[T] = js.native
   def pkgConf(key: java.lang.String): Argv[T] = js.native
   def pkgConf(key: java.lang.String, cwd: java.lang.String): Argv[T] = js.native
   def pkgConf(key: js.Array[java.lang.String]): Argv[T] = js.native

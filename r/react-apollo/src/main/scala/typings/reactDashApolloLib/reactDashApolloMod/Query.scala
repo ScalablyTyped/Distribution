@@ -12,6 +12,7 @@ class Query[TData, TVariables] protected ()
   def this(props: reactDashApolloLib.queryMod.QueryProps[TData, TVariables], context: reactDashApolloLib.queryMod.QueryContext) = this()
 }
 
+/* static members */
 @JSImport("react-apollo", "Query")
 @js.native
 object Query extends js.Object {

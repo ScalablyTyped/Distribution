@@ -33,14 +33,23 @@ object geojsonLibStrings {
   @js.native
   sealed trait Polygon extends js.Object
   
+  @scala.inline
   def Feature: Feature = "Feature".asInstanceOf[Feature]
+  @scala.inline
   def FeatureCollection: FeatureCollection = "FeatureCollection".asInstanceOf[FeatureCollection]
+  @scala.inline
   def GeometryCollection: GeometryCollection = "GeometryCollection".asInstanceOf[GeometryCollection]
+  @scala.inline
   def LineString: LineString = "LineString".asInstanceOf[LineString]
+  @scala.inline
   def MultiLineString: MultiLineString = "MultiLineString".asInstanceOf[MultiLineString]
+  @scala.inline
   def MultiPoint: MultiPoint = "MultiPoint".asInstanceOf[MultiPoint]
+  @scala.inline
   def MultiPolygon: MultiPolygon = "MultiPolygon".asInstanceOf[MultiPolygon]
+  @scala.inline
   def Point: Point = "Point".asInstanceOf[Point]
+  @scala.inline
   def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
 }
 

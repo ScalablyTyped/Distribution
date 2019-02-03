@@ -40,6 +40,7 @@ class StageGL protected () extends Stage {
   def updateViewport(width: scala.Double, height: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.StageGL")
 @js.native
 object StageGL extends js.Object {

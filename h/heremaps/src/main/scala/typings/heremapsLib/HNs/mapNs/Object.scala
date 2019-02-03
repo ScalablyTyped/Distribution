@@ -94,9 +94,7 @@ class Object ()
   def setZIndex(zIndex: scala.Double): Object = js.native
 }
 
-/**
-  * This class represents the abstract base class for map objects such as polylines, polygons, markers, groups etc.
-  */
+/* static members */
 @JSGlobal("H.map.Object")
 @js.native
 object Object extends js.Object {

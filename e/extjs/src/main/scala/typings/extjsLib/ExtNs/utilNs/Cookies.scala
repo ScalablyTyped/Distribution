@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cookies () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.Cookies")
 @js.native
 object Cookies extends js.Object {

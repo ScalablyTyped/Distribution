@@ -20,6 +20,7 @@ class GatewayAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "GatewayAssociation")
 @js.native
 object GatewayAssociation extends js.Object {

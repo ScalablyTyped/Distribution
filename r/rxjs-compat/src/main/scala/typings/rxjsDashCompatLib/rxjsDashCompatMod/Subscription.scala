@@ -16,6 +16,7 @@ class Subscription ()
   def this(unsubscribe: js.Function0[scala.Unit]) = this()
 }
 
+/* static members */
 @JSImport("rxjs-compat", "Subscription")
 @js.native
 object Subscription extends js.Object {

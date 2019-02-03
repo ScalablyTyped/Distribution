@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ɵBrowserDomAdapter ()
   extends atAngularPlatformDashBrowserLib.publicUnderscoreApiMod.ɵBrowserDomAdapter
 
+/* static members */
 @JSImport("@angular/platform-browser", "ɵBrowserDomAdapter")
 @js.native
 object ɵBrowserDomAdapter extends js.Object {

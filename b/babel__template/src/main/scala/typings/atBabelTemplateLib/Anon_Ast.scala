@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait DefaultTemplateBuilder extends js.Object {
+trait Anon_Ast extends js.Object {
   var ast: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof smart.ast */ js.Any
   var expression: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof expression */ js.Any
   var program: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof program */ js.Any

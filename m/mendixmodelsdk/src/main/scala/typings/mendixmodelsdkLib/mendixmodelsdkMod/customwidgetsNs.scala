@@ -97,9 +97,7 @@ object customwidgetsNs extends js.Object {
   class WidgetValueTypeEnum ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.customwidgetsNs.WidgetValueTypeEnum
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `CustomWidgets`.
-    */
+  /* static members */
   @js.native
   object CustomWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -526,6 +524,7 @@ object customwidgetsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
   }
   
+  /* static members */
   @js.native
   object CustomWidgetAttributeType extends js.Object {
     var AutoNumber: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetAttributeType = js.native
@@ -542,6 +541,7 @@ object customwidgetsNs extends js.Object {
     var String: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object CustomWidgetType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -560,6 +560,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidgetType = js.native
   }
   
+  /* static members */
   @js.native
   object IsPath extends js.Object {
     var No: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.IsPath = js.native
@@ -567,6 +568,7 @@ object customwidgetsNs extends js.Object {
     var Yes: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.IsPath = js.native
   }
   
+  /* static members */
   @js.native
   object PathType extends js.Object {
     var None: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
@@ -574,6 +576,7 @@ object customwidgetsNs extends js.Object {
     var ReferenceSet: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.PathType = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetEnumerationValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -592,6 +595,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetEnumerationValue = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetObject extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -616,6 +620,7 @@ object customwidgetsNs extends js.Object {
     def createInWidgetValueUnderObjects(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetObjectType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -640,6 +645,7 @@ object customwidgetsNs extends js.Object {
     def createInWidgetValueTypeUnderObjectType(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetProperty extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -658,6 +664,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObject): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetProperty = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetPropertyType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -676,6 +683,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetObjectType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetPropertyType = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetReturnType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -694,6 +702,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetReturnType = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetReturnTypeEnum extends js.Object {
     var Boolean: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetReturnTypeEnum = js.native
@@ -706,6 +715,7 @@ object customwidgetsNs extends js.Object {
     var Void: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetReturnTypeEnum = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetTranslation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -724,6 +734,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetTranslation = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -742,6 +753,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetProperty): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetValueType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -760,6 +772,7 @@ object customwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetPropertyType): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueType = js.native
   }
   
+  /* static members */
   @js.native
   object WidgetValueTypeEnum extends js.Object {
     var Action: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native

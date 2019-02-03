@@ -12,6 +12,7 @@ class DoStatementSyntax protected ()
   def this(doKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statement: typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, whileKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, condition: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "DoStatementSyntax")
 @js.native
 object DoStatementSyntax extends js.Object {

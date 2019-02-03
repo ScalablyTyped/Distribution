@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Registry () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.dd.Registry")
 @js.native
 object Registry extends js.Object {

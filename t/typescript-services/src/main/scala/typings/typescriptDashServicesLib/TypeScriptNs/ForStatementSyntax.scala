@@ -93,6 +93,7 @@ class ForStatementSyntax protected ()
   def withVariableDeclaration(variableDeclaration: VariableDeclarationSyntax): ForStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ForStatementSyntax")
 @js.native
 object ForStatementSyntax extends js.Object {

@@ -47,11 +47,7 @@ class ConvolutionPostProcess protected ()
   kernel: js.Array[scala.Double], options: scala.Double, camera: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Camera], samplingMode: scala.Double, engine: babylonjsLib.BABYLONNs.Engine, reusable: scala.Boolean, textureType: scala.Double) = this()
 }
 
-/**
-  * The ConvolutionPostProcess applies a 3x3 kernel to every pixel of the
-  * input texture to perform effects such as edge detection or sharpening
-  * See http://en.wikipedia.org/wiki/Kernel_(image_processing)
-  */
+/* static members */
 @JSImport("babylonjs", "ConvolutionPostProcess")
 @js.native
 object ConvolutionPostProcess extends js.Object {

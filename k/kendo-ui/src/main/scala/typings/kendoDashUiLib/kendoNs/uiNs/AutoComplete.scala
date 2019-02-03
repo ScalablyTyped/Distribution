@@ -35,6 +35,7 @@ class AutoComplete protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.AutoComplete")
 @js.native
 object AutoComplete extends js.Object {

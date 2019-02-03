@@ -22,6 +22,7 @@ class InterpolatedColorLegend protected ()
   def this(interpolatedColorScale: plottableLib.buildSrcScalesMod.InterpolatedColor) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "InterpolatedColorLegend")
 @js.native
 object InterpolatedColorLegend extends js.Object {

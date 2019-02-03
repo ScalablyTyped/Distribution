@@ -16,6 +16,7 @@ class FinallyClauseSyntax protected () extends SyntaxNode {
   def withFinallyKeyword(finallyKeyword: ISyntaxToken): FinallyClauseSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.FinallyClauseSyntax")
 @js.native
 object FinallyClauseSyntax extends js.Object {

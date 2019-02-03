@@ -12,7 +12,9 @@ object soundmanager2LibStrings {
   @js.native
   sealed trait sameDomain extends js.Object
   
+  @scala.inline
   def always: always = "always".asInstanceOf[always]
+  @scala.inline
   def sameDomain: sameDomain = "sameDomain".asInstanceOf[sameDomain]
 }
 

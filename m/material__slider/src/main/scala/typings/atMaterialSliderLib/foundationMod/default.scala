@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCSliderFoundation
 
+/* static members */
 @JSImport("@material/slider/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

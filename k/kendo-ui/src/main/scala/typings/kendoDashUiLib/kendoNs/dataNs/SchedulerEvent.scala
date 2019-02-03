@@ -32,6 +32,7 @@ class SchedulerEvent () extends Model {
   def update(eventInfo: SchedulerEventData): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.SchedulerEvent")
 @js.native
 object SchedulerEvent extends js.Object {

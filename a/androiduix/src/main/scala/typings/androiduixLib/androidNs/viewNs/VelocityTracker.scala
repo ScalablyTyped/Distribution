@@ -26,6 +26,7 @@ class VelocityTracker () extends js.Object {
   def setNextPoolable(element: VelocityTracker): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.VelocityTracker")
 @js.native
 object VelocityTracker extends js.Object {

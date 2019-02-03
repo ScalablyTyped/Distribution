@@ -47,12 +47,7 @@ class Behavior protected ()
   def isEnabled(behavior: scala.Double): scala.Boolean = js.native
 }
 
-/**
-  * Behavior class uses map events and adds behavior functionality to the map. This allows map panning and zooming via using mouse wheel
-  * @property DRAGGING {number} - Map responds to user dragging via mouse or touch
-  * @property WHEELZOOM {number} - Map zooms in or out in respond to mouse wheel events
-  * @property DBLTAPZOOM {number} - Map zooms in or out in response to double click or double tap. For double tap if more that one touches are on the screen map will zoom out.
-  */
+/* static members */
 @JSGlobal("H.mapevents.Behavior")
 @js.native
 object Behavior extends js.Object {

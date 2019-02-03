@@ -32,6 +32,7 @@ class PolylineMaterialAppearance ()
   override def isTranslucent(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "PolylineMaterialAppearance")
 @js.native
 object PolylineMaterialAppearance extends js.Object {

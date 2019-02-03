@@ -20,6 +20,7 @@ class Integration protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayIntegrationMod.IntegrationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Integration")
 @js.native
 object Integration extends js.Object {

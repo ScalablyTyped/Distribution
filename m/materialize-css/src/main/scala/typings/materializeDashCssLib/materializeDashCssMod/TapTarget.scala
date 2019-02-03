@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TapTarget ()
   extends materializeDashCssLib.MNs.TapTarget
 
+/* static members */
 @JSImport("materialize-css", "TapTarget")
 @js.native
 object TapTarget extends js.Object {

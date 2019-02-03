@@ -40,6 +40,7 @@ class ListenerRule protected ()
   val priority: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancingv2/listenerRule", "ListenerRule")
 @js.native
 object ListenerRule extends js.Object {

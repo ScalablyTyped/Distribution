@@ -15,8 +15,11 @@ object angularDashUiDashBootstrapLibStrings {
   @js.native
   sealed trait year extends js.Object
   
+  @scala.inline
   def day: day = "day".asInstanceOf[day]
+  @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
   def year: year = "year".asInstanceOf[year]
 }
 

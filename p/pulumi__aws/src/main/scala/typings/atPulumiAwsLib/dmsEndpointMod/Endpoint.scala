@@ -88,6 +88,7 @@ class Endpoint protected ()
   val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms/endpoint", "Endpoint")
 @js.native
 object Endpoint extends js.Object {

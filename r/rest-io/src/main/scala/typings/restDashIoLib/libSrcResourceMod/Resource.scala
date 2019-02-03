@@ -38,6 +38,7 @@ class Resource protected () extends js.Object {
   def update(req: expressLib.expressMod.eNs.Request, res: expressLib.expressMod.eNs.Response): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("rest-io/lib/src/resource", "Resource")
 @js.native
 object Resource extends js.Object {

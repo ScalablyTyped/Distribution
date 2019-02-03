@@ -24,9 +24,9 @@ object ^ extends js.Object {
   def fromIO[L, A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
   def fromIOEither[L, A](fa: fpDashTsLib.libIOEitherMod.IOEither[L, A]): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
   def fromLeft[L, A](l: L): fpDashTsLib.libTaskEitherMod.TaskEither[L, A] = js.native
-  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
+  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
   @JSName("fromPredicate")
-  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libTaskEitherMod.TaskEither[L, B]] = js.native
+  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libTaskEitherMod.TaskEither[L, B]] = js.native
   def getApplyMonoid[L, A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
   def getApplySemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native
   def getSemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTaskEitherMod.TaskEither[L, A]] = js.native

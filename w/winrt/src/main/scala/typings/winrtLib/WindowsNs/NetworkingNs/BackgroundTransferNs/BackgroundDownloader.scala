@@ -22,6 +22,7 @@ class BackgroundDownloader () extends IBackgroundDownloader {
   override def setRequestHeader(headerName: java.lang.String, headerValue: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
 @js.native
 object BackgroundDownloader extends js.Object {

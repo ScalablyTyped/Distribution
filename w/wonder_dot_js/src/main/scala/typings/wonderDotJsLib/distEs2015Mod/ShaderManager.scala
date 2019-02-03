@@ -12,6 +12,7 @@ class ShaderManager protected ()
   def this(material: wonderDotJsLib.distEs2015MaterialMaterialMod.Material) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ShaderManager")
 @js.native
 object ShaderManager extends js.Object {

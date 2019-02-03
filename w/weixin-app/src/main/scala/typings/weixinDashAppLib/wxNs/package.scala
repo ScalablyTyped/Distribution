@@ -55,7 +55,9 @@ package object wxNs {
   	 */
   type PropValueType[Def] = js.Any
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-  type RecordPropsDefinition[T] = weixinDashAppLib.weixinDashAppLibStrings.RecordPropsDefinition with T
+  type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: weixin-app.wx.PropValidator<T[K]>}
+    */ weixinDashAppLib.weixinDashAppLibStrings.RecordPropsDefinition with T
   type RemoveSavedFileOptions = GetSavedFileInfoOptions
   // #endregion
   // #region App里的onLaunch、onShow回调参数

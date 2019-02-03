@@ -21,10 +21,15 @@ object dvaLibStrings {
   @js.native
   sealed trait watcher extends js.Object
   
+  @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
+  @scala.inline
   def takeEvery: takeEvery = "takeEvery".asInstanceOf[takeEvery]
+  @scala.inline
   def takeLatest: takeLatest = "takeLatest".asInstanceOf[takeLatest]
+  @scala.inline
   def throttle: throttle = "throttle".asInstanceOf[throttle]
+  @scala.inline
   def watcher: watcher = "watcher".asInstanceOf[watcher]
 }
 

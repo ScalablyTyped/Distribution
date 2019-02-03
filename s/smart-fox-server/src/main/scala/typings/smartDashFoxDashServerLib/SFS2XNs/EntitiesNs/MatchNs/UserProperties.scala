@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserProperties () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Match.UserProperties")
 @js.native
 object UserProperties extends js.Object {

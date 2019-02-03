@@ -28,6 +28,7 @@ object BenchmarkNs extends js.Object {
     def this(name: java.lang.String, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
   }
   
+  /* static members */
   @js.native
   object Suite extends js.Object {
     var options: benchmarkLib.Anon_Name = js.native

@@ -20,6 +20,7 @@ class LinkAggregationGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup")
 @js.native
 object LinkAggregationGroup extends js.Object {

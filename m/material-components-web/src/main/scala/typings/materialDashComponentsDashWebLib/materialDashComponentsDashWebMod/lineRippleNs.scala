@@ -16,11 +16,13 @@ object lineRippleNs extends js.Object {
   class MDCLineRippleFoundation ()
     extends atMaterialLineDashRippleLib.atMaterialLineDashRippleMod.MDCLineRippleFoundation
   
+  /* static members */
   @js.native
   object MDCLineRipple extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialLineDashRippleLib.atMaterialLineDashRippleMod.MDCLineRipple = js.native
   }
   
+  /* static members */
   @js.native
   object MDCLineRippleFoundation extends js.Object {
     val cssClasses: atMaterialLineDashRippleLib.constantsMod.cssClasses = js.native

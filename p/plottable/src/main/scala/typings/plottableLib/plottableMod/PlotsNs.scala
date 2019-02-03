@@ -130,11 +130,13 @@ object PlotsNs extends js.Object {
     var RESET: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Area extends js.Object {
     var _Y0_KEY: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Bar extends js.Object {
     var _BAR_AREA_CLASS: js.Any = js.native
@@ -151,6 +153,7 @@ object PlotsNs extends js.Object {
     var _SINGLE_BAR_DIMENSION_RATIO: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object Pie extends js.Object {
     var _INNER_RADIUS_KEY: js.Any = js.native
@@ -159,12 +162,14 @@ object PlotsNs extends js.Object {
     /* protected */ def _isValidData(value: js.Any): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Rectangle extends js.Object {
     var _X2_KEY: js.Any = js.native
     var _Y2_KEY: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Scatter extends js.Object {
     var _LABEL_AREA_CLASS: java.lang.String = js.native
@@ -173,12 +178,14 @@ object PlotsNs extends js.Object {
     var _SYMBOL_KEY: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Segment extends js.Object {
     var _X2_KEY: js.Any = js.native
     var _Y2_KEY: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object StackedArea extends js.Object {
     /**
@@ -193,11 +200,13 @@ object PlotsNs extends js.Object {
     /* private */ def _domainKeys(datasets: js.Any, keyAccessor: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object StackedBar extends js.Object {
     var _EXTREMA_LABEL_MARGIN_FROM_BAR: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object Waterfall extends js.Object {
     var _BAR_DECLINE_CLASS: js.Any = js.native

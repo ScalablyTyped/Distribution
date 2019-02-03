@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Transport ()
   extends nodegitLib.transportMod.Transport
 
+/* static members */
 @JSImport("nodegit", "Transport")
 @js.native
 object Transport extends js.Object {

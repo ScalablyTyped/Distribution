@@ -45,6 +45,7 @@ class DOMSerializer[S /* <: Schema[_, _] */] protected () extends js.Object {
   def serializeNode(node: ProsemirrorNode[S], options: org.scalablytyped.runtime.StringDictionary[js.Any]): stdLib.Node = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-model", "DOMSerializer")
 @js.native
 object DOMSerializer extends js.Object {

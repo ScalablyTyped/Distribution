@@ -27,6 +27,7 @@ class RemoteDependencyData protected ()
   /* private */ def formatDependencyName(method: js.Any, absoluteUrl: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.RemoteDependencyData")
 @js.native
 object RemoteDependencyData extends js.Object {

@@ -12,6 +12,7 @@ class TFramedTransport () extends TTransport {
   def this(buffer: nodeLib.Buffer, callback: TTransportCallback) = this()
 }
 
+/* static members */
 @JSImport("thrift", "TFramedTransport")
 @js.native
 object TFramedTransport extends js.Object {

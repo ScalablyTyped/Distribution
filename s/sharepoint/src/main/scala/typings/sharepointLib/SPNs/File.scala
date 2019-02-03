@@ -67,7 +67,7 @@ class File () extends ClientObject {
   def undoCheckOut(): scala.Unit = js.native
 }
 
-/** Represents a file in a SharePoint Web site that can be a Web Part Page, an item in a document library, or a file in a folder. */
+/* static members */
 @JSGlobal("SP.File")
 @js.native
 object File extends js.Object {

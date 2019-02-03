@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SFSBuddyEvent () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.SFSBuddyEvent")
 @js.native
 object SFSBuddyEvent extends js.Object {

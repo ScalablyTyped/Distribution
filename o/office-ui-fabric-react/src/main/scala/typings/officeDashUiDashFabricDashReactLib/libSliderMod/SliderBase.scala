@@ -12,6 +12,7 @@ class SliderBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSliderSliderDotTypesMod.ISliderProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Slider", "SliderBase")
 @js.native
 object SliderBase extends js.Object {

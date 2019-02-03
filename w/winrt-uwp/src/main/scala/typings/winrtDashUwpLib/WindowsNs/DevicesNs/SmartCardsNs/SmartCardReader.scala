@@ -59,7 +59,7 @@ abstract class SmartCardReader () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents info about a smart card reader. */
+/* static members */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardReader")
 @js.native
 object SmartCardReader extends js.Object {

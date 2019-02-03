@@ -23,6 +23,7 @@ class EventStream protected ()
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/eventStream", "EventStream")
 @js.native
 object EventStream extends js.Object {

@@ -44,6 +44,7 @@ class ParameterGroup protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/neptune/parameterGroup", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {

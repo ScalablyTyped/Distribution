@@ -254,9 +254,7 @@ class Geometry protected () extends IGetSetVerticesData {
   def updateVerticesDataDirectly(kind: java.lang.String, data: DataArray, offset: scala.Double, useBytes: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Class used to store geometry data (vertex buffers + index buffer)
-  */
+/* static members */
 @JSGlobal("BABYLON.Geometry")
 @js.native
 object Geometry extends js.Object {

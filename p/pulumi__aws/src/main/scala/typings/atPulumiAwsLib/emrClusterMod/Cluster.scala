@@ -125,6 +125,7 @@ class Cluster protected ()
   val visibleToAllUsers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/emr/cluster", "Cluster")
 @js.native
 object Cluster extends js.Object {

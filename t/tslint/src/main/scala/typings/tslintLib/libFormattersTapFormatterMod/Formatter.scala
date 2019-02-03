@@ -12,6 +12,7 @@ class Formatter ()
   var mapToMessages: js.Any = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/formatters/tapFormatter", "Formatter")
 @js.native
 object Formatter extends js.Object {

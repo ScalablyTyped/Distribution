@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Surface () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.Surface")
 @js.native
 object Surface extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pairs ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Pairs
 
+/* static members */
 @JSImport("matter-js", "Pairs")
 @js.native
 object Pairs extends js.Object {

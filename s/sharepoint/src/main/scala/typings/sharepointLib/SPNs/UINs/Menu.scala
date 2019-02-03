@@ -44,6 +44,7 @@ class Menu () extends js.Object {
   def showIcons(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.UI.Menu")
 @js.native
 object Menu extends js.Object {

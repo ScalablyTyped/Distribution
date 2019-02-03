@@ -23,9 +23,7 @@ class Decimal128 protected ()
   def toJSON(): adoneLib.Anon_NumberDecimal = js.native
 }
 
-/**
-  * Represents BSON Decimal128 type
-  */
+/* static members */
 @JSGlobal("adone.data.bson.Decimal128")
 @js.native
 object Decimal128 extends js.Object {

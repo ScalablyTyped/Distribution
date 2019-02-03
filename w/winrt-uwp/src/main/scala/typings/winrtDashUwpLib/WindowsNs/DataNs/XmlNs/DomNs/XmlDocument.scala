@@ -229,7 +229,7 @@ class XmlDocument () extends js.Object {
   def selectSingleNodeNS(xpath: java.lang.String, namespaces: js.Any): IXmlNode = js.native
 }
 
-/** Represents the top level of the XML source. This class includes members for retrieving and creating all other XML objects. */
+/* static members */
 @JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
 @js.native
 object XmlDocument extends js.Object {

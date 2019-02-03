@@ -14,6 +14,7 @@ class Struct ()
   def toJavaScript(): org.scalablytyped.runtime.StringDictionary[JavaScriptValue] = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/struct_pb", "Struct")
 @js.native
 object Struct extends js.Object {

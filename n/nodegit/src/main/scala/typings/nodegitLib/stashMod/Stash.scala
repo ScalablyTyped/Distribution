@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Stash () extends js.Object
 
+/* static members */
 @JSImport("nodegit/stash", "Stash")
 @js.native
 object Stash extends js.Object {

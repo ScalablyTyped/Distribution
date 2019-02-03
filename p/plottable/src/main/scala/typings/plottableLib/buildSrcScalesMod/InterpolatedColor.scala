@@ -17,6 +17,7 @@ class InterpolatedColor ()
   def this(scaleType: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales", "InterpolatedColor")
 @js.native
 object InterpolatedColor extends js.Object {

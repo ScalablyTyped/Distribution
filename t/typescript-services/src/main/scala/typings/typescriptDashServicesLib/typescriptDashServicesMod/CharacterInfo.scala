@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CharacterInfo ()
   extends typescriptDashServicesLib.TypeScriptNs.CharacterInfo
 
+/* static members */
 @JSImport("typescript-services", "CharacterInfo")
 @js.native
 object CharacterInfo extends js.Object {

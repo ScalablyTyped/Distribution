@@ -24,11 +24,17 @@ object nextDashServerLibStrings {
   @js.native
   sealed trait routeChangeStart extends js.Object
   
+  @scala.inline
   def beforeHistoryChange: beforeHistoryChange = "beforeHistoryChange".asInstanceOf[beforeHistoryChange]
+  @scala.inline
   def hashChangeComplete: hashChangeComplete = "hashChangeComplete".asInstanceOf[hashChangeComplete]
+  @scala.inline
   def hashChangeStart: hashChangeStart = "hashChangeStart".asInstanceOf[hashChangeStart]
+  @scala.inline
   def routeChangeComplete: routeChangeComplete = "routeChangeComplete".asInstanceOf[routeChangeComplete]
+  @scala.inline
   def routeChangeError: routeChangeError = "routeChangeError".asInstanceOf[routeChangeError]
+  @scala.inline
   def routeChangeStart: routeChangeStart = "routeChangeStart".asInstanceOf[routeChangeStart]
 }
 

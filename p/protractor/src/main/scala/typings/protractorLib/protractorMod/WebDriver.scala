@@ -24,6 +24,7 @@ class WebDriver protected ()
   def this(session: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[seleniumDashWebdriverLib.seleniumDashWebdriverMod.Session], executor: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Executor, opt_flow: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.ControlFlow) = this()
 }
 
+/* static members */
 @JSImport("protractor", "WebDriver")
 @js.native
 object WebDriver extends js.Object {

@@ -21,6 +21,7 @@ class AnalyticsApplication protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kinesisAnalyticsApplicationMod.AnalyticsApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis", "AnalyticsApplication")
 @js.native
 object AnalyticsApplication extends js.Object {

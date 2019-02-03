@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Category ()
   extends plottableLib.buildSrcScalesCategoryScaleMod.Category
 
+/* static members */
 @JSImport("plottable/build/src/scales", "Category")
 @js.native
 object Category extends js.Object {

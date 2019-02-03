@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pushpin ()
   extends materializeDashCssLib.MNs.Pushpin
 
+/* static members */
 @JSImport("materialize-css", "Pushpin")
 @js.native
 object Pushpin extends js.Object {

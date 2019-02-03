@@ -20,6 +20,7 @@ class TableItem protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dynamodbTableItemMod.TableItemArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dynamodb", "TableItem")
 @js.native
 object TableItem extends js.Object {

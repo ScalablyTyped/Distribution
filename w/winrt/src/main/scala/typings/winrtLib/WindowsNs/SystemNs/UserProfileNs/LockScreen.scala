@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LockScreen () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.UserProfile.LockScreen")
 @js.native
 object LockScreen extends js.Object {

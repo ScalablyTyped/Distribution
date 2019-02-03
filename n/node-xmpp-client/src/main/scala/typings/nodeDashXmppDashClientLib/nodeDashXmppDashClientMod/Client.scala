@@ -15,6 +15,7 @@ class Client protected () extends js.Object {
   def send(stanza: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("node-xmpp-client", "Client")
 @js.native
 object Client extends js.Object {

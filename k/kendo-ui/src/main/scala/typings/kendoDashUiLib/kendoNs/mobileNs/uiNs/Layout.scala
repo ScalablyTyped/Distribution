@@ -15,6 +15,7 @@ class Layout protected () extends Widget {
   var wrapper: kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Layout")
 @js.native
 object Layout extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Injector ()
   extends atAngularCoreLib.srcCoreMod.Injector
 
+/* static members */
 @JSImport("@angular/core/public_api", "Injector")
 @js.native
 object Injector extends js.Object {

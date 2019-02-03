@@ -20,6 +20,7 @@ class Description () extends DescriptionDefinition {
   def update(content: DescriptionDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Description")
 @js.native
 object Description extends js.Object {

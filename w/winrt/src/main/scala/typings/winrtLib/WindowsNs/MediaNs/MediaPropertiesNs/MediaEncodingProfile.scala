@@ -16,6 +16,7 @@ class MediaEncodingProfile () extends IMediaEncodingProfile {
   override var video: VideoEncodingProperties = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
 @js.native
 object MediaEncodingProfile extends js.Object {

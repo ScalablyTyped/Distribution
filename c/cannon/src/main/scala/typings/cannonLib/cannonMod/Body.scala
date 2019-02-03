@@ -12,6 +12,7 @@ class Body ()
   def this(options: cannonLib.CANNONNs.IBodyOptions) = this()
 }
 
+/* static members */
 @JSImport("cannon", "Body")
 @js.native
 object Body extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class QueryBuilder[QM /* <: objectionLib.objectionMod.ObjectionNs.Model */, RM, RV] ()
   extends objectionLib.objectionMod.ObjectionNs.QueryBuilder[QM, RM, RV]
 
+/* static members */
 @JSImport("objection", "QueryBuilder")
 @js.native
 object QueryBuilder extends js.Object {

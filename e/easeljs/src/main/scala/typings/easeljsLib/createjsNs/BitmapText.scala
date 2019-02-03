@@ -18,6 +18,7 @@ class BitmapText () extends DisplayObject {
   var text: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.BitmapText")
 @js.native
 object BitmapText extends js.Object {

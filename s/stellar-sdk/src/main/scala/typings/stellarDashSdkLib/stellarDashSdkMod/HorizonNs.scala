@@ -75,7 +75,9 @@ object HorizonNs extends js.Object {
   }
   
   trait BaseResponse[T /* <: java.lang.String */] extends js.Object {
-    var _links: stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any
+    var _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    {[ key in T | 'self' ]: stellar-sdk.stellar-sdk.Horizon.ResponseLink}
+      */ stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any
   }
   
   trait BumpSequenceOperationResponse extends BaseOperationResponse[OperationResponseType, OperationResponseTypeI] {

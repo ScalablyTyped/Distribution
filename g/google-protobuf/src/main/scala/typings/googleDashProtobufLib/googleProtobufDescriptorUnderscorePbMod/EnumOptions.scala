@@ -25,6 +25,7 @@ class EnumOptions ()
   def setUninterpretedOptionList(value: js.Array[UninterpretedOption]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumOptions")
 @js.native
 object EnumOptions extends js.Object {

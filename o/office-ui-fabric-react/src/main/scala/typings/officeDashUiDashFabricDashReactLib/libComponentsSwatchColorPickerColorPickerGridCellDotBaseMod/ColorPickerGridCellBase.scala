@@ -31,6 +31,7 @@ class ColorPickerGridCellBase ()
   /* private */ def _isWhiteCell(inputColor: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker/ColorPickerGridCell.base", "ColorPickerGridCellBase")
 @js.native
 object ColorPickerGridCellBase extends js.Object {

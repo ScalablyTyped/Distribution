@@ -31,6 +31,7 @@ class MemberFunctionDeclarationSyntax protected () extends SyntaxNode {
   def withSemicolonToken(semicolonToken: ISyntaxToken): MemberFunctionDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.MemberFunctionDeclarationSyntax")
 @js.native
 object MemberFunctionDeclarationSyntax extends js.Object {

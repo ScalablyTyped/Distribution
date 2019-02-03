@@ -14,6 +14,7 @@ class AuthError protected () extends js.Object {
   var uri: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.AuthError")
 @js.native
 object AuthError extends js.Object {

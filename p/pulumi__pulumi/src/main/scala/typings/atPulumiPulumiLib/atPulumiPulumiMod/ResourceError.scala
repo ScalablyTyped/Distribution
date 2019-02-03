@@ -15,6 +15,7 @@ class ResourceError protected ()
   def this(message: java.lang.String, resource: js.UndefOr[scala.Nothing], hideStack: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi", "ResourceError")
 @js.native
 object ResourceError extends js.Object {

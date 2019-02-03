@@ -153,9 +153,7 @@ class Menu () extends js.Object {
   def showOnlyCommands(commands: js.Array[_], immediate: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Represents a menu flyout for displaying commands.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Menu")
 @js.native
 object Menu extends js.Object {

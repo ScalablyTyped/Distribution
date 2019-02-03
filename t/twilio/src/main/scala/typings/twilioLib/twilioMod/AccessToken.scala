@@ -31,6 +31,7 @@ class AccessToken protected ()
   override def toJwt(algorithm: java.lang.String): js.Any = js.native
 }
 
+/* static members */
 @JSImport("twilio", "AccessToken")
 @js.native
 object AccessToken extends js.Object {

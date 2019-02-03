@@ -21,6 +21,7 @@ class Model () extends ObservableObject {
   def isNew(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.Model")
 @js.native
 object Model extends js.Object {

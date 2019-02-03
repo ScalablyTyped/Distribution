@@ -30,13 +30,21 @@ object levelupLibStrings {
   @js.native
   sealed trait ready extends js.Object
   
+  @scala.inline
   def batch: batch = "batch".asInstanceOf[batch]
+  @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def closing: closing = "closing".asInstanceOf[closing]
+  @scala.inline
   def del: del = "del".asInstanceOf[del]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def opening: opening = "opening".asInstanceOf[opening]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
 }
 

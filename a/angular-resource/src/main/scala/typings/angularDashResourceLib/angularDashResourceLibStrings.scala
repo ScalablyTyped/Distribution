@@ -9,6 +9,7 @@ object angularDashResourceLibStrings {
   @js.native
   sealed trait DOLLARresource extends js.Object
   
+  @scala.inline
   def DOLLARresource: DOLLARresource = "$resource".asInstanceOf[DOLLARresource]
 }
 

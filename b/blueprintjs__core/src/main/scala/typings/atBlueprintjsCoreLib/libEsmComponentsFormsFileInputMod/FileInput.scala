@@ -12,6 +12,7 @@ class FileInput ()
   var handleInputChange: js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/fileInput", "FileInput")
 @js.native
 object FileInput extends js.Object {

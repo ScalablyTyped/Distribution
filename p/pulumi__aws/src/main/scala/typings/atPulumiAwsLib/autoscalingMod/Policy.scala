@@ -20,6 +20,7 @@ class Policy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.autoscalingPolicyMod.PolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling", "Policy")
 @js.native
 object Policy extends js.Object {

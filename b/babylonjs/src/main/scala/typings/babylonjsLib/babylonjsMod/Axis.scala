@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Axis ()
   extends babylonjsLib.BABYLONNs.Axis
 
-/** Defines the 3 main axes */
+/* static members */
 @JSImport("babylonjs", "Axis")
 @js.native
 object Axis extends js.Object {

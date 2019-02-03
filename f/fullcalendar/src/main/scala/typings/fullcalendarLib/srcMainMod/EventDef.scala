@@ -12,6 +12,7 @@ abstract class EventDef protected ()
   def this(source: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/src/main", "EventDef")
 @js.native
 object EventDef extends js.Object {

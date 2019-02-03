@@ -430,10 +430,7 @@ class Bone protected () extends Node {
   def updateMatrix(matrix: Matrix, updateDifferenceMatrix: scala.Boolean, updateLocalMatrix: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Class used to store bone information
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
-  */
+/* static members */
 @JSGlobal("BABYLON.Bone")
 @js.native
 object Bone extends js.Object {

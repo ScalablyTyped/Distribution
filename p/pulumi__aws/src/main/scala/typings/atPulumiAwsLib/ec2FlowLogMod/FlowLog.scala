@@ -52,6 +52,7 @@ class FlowLog protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/flowLog", "FlowLog")
 @js.native
 object FlowLog extends js.Object {

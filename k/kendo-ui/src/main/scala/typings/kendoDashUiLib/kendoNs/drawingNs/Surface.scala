@@ -22,6 +22,7 @@ class Surface ()
   def showTooltip(element: Element, options: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.drawing.Surface")
 @js.native
 object Surface extends js.Object {

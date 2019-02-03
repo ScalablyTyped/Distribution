@@ -20,6 +20,7 @@ class EventTarget protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchEventTargetMod.EventTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "EventTarget")
 @js.native
 object EventTarget extends js.Object {

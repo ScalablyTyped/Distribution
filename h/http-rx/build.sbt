@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "http-rx"
-version := "2.0-dt-20190113Z-ca9ec8"
+version := "2.0-dt-20190113Z-9d112f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-0334cd",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7c0763",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c301e1",
-  "org.scalablytyped" %%% "rxjs" % "6.4.0-257fd1",
-  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-3631a3",
-  "org.scalablytyped" %%% "tslib" % "1.9.3-856848")
+  "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-c97100",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-277b25",
+  "org.scalablytyped" %%% "rxjs" % "6.4.0-7a012b",
+  "org.scalablytyped" %%% "std" % "3.3-0ec965",
+  "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",
+  "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

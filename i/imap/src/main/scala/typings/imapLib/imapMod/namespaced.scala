@@ -94,6 +94,7 @@ class namespaced protected () extends Connection {
   override def setKeywords(source: js.Any, keywords: js.Any, callback: js.Function1[/* error */ nodeLib.Error, scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("imap", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

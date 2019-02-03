@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Area[X] ()
   extends plottableLib.buildSrcPlotsAreaPlotMod.Area[X]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Area")
 @js.native
 object Area extends js.Object {

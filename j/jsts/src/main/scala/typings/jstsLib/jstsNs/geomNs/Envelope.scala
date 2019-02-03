@@ -313,6 +313,7 @@ class Envelope protected () extends js.Object {
   def translate(transX: scala.Double, transY: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("jsts.geom.Envelope")
 @js.native
 object Envelope extends js.Object {

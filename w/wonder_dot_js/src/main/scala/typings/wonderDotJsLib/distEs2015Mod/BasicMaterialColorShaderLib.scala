@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicMaterialColorShaderLib ()
   extends wonderDotJsLib.distEs2015RendererShaderLibBasicBasicMaterialColorShaderLibMod.BasicMaterialColorShaderLib
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "BasicMaterialColorShaderLib")
 @js.native
 object BasicMaterialColorShaderLib extends js.Object {

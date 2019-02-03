@@ -73,7 +73,7 @@ object editorNs extends js.Object {
     val ui: EditorUI
   }
   
-  // core/editor/editor
+  /* static members */
   @js.native
   object Editor extends js.Object {
     var builtinPlugins: js.Array[atCkeditorCkeditor5DashCoreLib.atCkeditorCkeditor5DashCoreMod.Plugin[_]] = js.native

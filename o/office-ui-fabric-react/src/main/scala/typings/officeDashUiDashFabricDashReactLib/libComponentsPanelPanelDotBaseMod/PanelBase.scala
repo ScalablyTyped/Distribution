@@ -36,6 +36,7 @@ class PanelBase protected ()
   def dismiss(ev: reactLib.reactMod.ReactNs.SyntheticEvent[reactLib.HTMLElement, reactLib.Event]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Panel/Panel.base", "PanelBase")
 @js.native
 object PanelBase extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownDeviceTypes () extends js.Object
 
-/** Represents know device types. */
+/* static members */
 @JSGlobal("Windows.Devices.Custom.KnownDeviceTypes")
 @js.native
 object KnownDeviceTypes extends js.Object {

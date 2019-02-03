@@ -37,6 +37,7 @@ class namespaced protected () extends Notify {
   override def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("notifyjs", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

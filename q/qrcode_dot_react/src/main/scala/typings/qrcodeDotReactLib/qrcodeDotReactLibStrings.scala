@@ -24,11 +24,17 @@ object qrcodeDotReactLibStrings {
   @js.native
   sealed trait svg extends js.Object
   
+  @scala.inline
   def H: H = "H".asInstanceOf[H]
+  @scala.inline
   def L: L = "L".asInstanceOf[L]
+  @scala.inline
   def M: M = "M".asInstanceOf[M]
+  @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
+  @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
 }
 

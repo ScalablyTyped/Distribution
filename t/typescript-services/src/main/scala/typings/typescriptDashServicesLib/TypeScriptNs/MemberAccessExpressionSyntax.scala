@@ -72,6 +72,7 @@ class MemberAccessExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.MemberAccessExpressionSyntax")
 @js.native
 object MemberAccessExpressionSyntax extends js.Object {

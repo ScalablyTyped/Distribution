@@ -48,6 +48,7 @@ object secretsmanagerNs extends js.Object {
     args: atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.secretsmanagerGetSecretVersionMod.GetSecretVersionResult] = js.native
+  /* static members */
   @js.native
   object Secret extends js.Object {
     /**
@@ -72,6 +73,7 @@ object secretsmanagerNs extends js.Object {
     ): atPulumiAwsLib.secretsmanagerSecretMod.Secret = js.native
   }
   
+  /* static members */
   @js.native
   object SecretVersion extends js.Object {
     /**

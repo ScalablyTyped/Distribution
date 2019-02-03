@@ -18,6 +18,7 @@ class default protected () extends Swiper {
   def this(container: SelectableElement, options: SwiperOptions) = this()
 }
 
+/* static members */
 @JSImport("swiper", JSImport.Default)
 @js.native
 object default extends js.Object {

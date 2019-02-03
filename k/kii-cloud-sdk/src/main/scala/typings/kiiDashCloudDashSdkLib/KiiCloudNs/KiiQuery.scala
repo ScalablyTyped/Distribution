@@ -42,9 +42,7 @@ class KiiQuery () extends js.Object {
   def sortByDesc(field: java.lang.String): scala.Unit = js.native
 }
 
-/**
-  * Represents a KiiQuery object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiQuery")
 @js.native
 object KiiQuery extends js.Object {

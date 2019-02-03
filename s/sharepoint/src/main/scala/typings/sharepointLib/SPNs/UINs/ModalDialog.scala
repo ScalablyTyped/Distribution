@@ -13,7 +13,7 @@ class ModalDialog () extends Dialog {
   def close(dialogResult: DialogResult): scala.Unit = js.native
 }
 
-/** Represents a modal dialog */
+/* static members */
 @JSGlobal("SP.UI.ModalDialog")
 @js.native
 object ModalDialog extends js.Object {

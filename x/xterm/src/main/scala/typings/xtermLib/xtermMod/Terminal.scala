@@ -516,6 +516,7 @@ class Terminal ()
   def writeln(data: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("xterm", "Terminal")
 @js.native
 object Terminal extends js.Object {

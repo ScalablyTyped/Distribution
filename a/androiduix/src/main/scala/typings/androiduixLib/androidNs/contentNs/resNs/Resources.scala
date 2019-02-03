@@ -40,6 +40,7 @@ class Resources () extends js.Object {
   def obtainStyledAttributes(attrs: stdLib.HTMLElement, defStyleAttr: stdLib.Map[java.lang.String, java.lang.String]): TypedArray = js.native
 }
 
+/* static members */
 @JSGlobal("android.content.res.Resources")
 @js.native
 object Resources extends js.Object {

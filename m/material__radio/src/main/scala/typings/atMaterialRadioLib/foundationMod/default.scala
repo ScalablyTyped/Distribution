@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCRadioFoundation
 
+/* static members */
 @JSImport("@material/radio/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

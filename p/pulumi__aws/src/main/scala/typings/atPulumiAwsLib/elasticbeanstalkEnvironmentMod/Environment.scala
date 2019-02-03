@@ -123,6 +123,7 @@ class Environment protected ()
   val waitForReadyTimeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment")
 @js.native
 object Environment extends js.Object {

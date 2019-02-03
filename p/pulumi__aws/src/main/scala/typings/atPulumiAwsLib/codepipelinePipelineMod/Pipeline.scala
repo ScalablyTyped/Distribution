@@ -38,6 +38,7 @@ class Pipeline protected ()
   val stages: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Actions]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline")
 @js.native
 object Pipeline extends js.Object {

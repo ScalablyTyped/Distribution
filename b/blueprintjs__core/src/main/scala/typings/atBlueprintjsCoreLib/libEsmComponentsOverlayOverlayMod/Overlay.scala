@@ -31,6 +31,7 @@ class Overlay ()
   /* private */ def overlayWillOpen(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/overlay/overlay", "Overlay")
 @js.native
 object Overlay extends js.Object {

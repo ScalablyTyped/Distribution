@@ -18,6 +18,7 @@ class LanguageTranslatorV2 protected () extends js.Object {
   def translate(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "LanguageTranslatorV2")
 @js.native
 object LanguageTranslatorV2 extends js.Object {

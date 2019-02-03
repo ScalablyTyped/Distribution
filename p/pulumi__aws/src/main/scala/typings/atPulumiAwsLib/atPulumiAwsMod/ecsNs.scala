@@ -71,6 +71,7 @@ object ecsNs extends js.Object {
     args: atPulumiAwsLib.ecsGetTaskDefinitionMod.GetTaskDefinitionArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ecsGetTaskDefinitionMod.GetTaskDefinitionResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -95,6 +96,7 @@ object ecsNs extends js.Object {
     ): atPulumiAwsLib.ecsClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object Service extends js.Object {
     /**
@@ -119,6 +121,7 @@ object ecsNs extends js.Object {
     ): atPulumiAwsLib.ecsServiceMod.Service = js.native
   }
   
+  /* static members */
   @js.native
   object TaskDefinition extends js.Object {
     /**

@@ -20,6 +20,7 @@ class WaypointAdapter protected () extends js.Object {
   def scrollTop(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("WaypointAdapter")
 @js.native
 object WaypointAdapter extends js.Object {

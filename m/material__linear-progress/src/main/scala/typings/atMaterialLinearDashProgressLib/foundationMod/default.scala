@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCLinearProgressFoundation
 
+/* static members */
 @JSImport("@material/linear-progress/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

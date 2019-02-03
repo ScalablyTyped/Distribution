@@ -11,6 +11,7 @@ class namespaced protected () extends Pubnub {
   def this(config: pubnubLib.pubnubMod.PubnubNs.PubnubConfig) = this()
 }
 
+/* static members */
 @JSImport("pubnub", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

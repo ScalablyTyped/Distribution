@@ -695,13 +695,7 @@ object interactionNs extends js.Object {
     */
   def defaults(): openlayersLib.openlayersMod.Collection[Interaction] = js.native
   def defaults(opt_options: openlayersLib.openlayersMod.olxNs.interactionNs.DefaultsOptions): openlayersLib.openlayersMod.Collection[Interaction] = js.native
-  /**
-    * @classdesc
-    * Allows the user to zoom by double-clicking on the map.
-    *
-    * @param opt_options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object DoubleClickZoom extends js.Object {
     /**
@@ -714,14 +708,7 @@ object interactionNs extends js.Object {
     def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
   }
   
-  /**
-    * @classdesc
-    * Handles input of vector data by drag and drop.
-    *
-    * @fires ol.interaction.DragAndDropEvent
-    * @param opt_options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object DragAndDrop extends js.Object {
     /**
@@ -822,14 +809,7 @@ object interactionNs extends js.Object {
     
   }
   
-  /**
-    * @classdesc
-    * Interaction for drawing feature geometries.
-    *
-    * @fires ol.interaction.DrawEvent
-    * @param options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Draw extends js.Object {
     /**
@@ -921,21 +901,7 @@ object interactionNs extends js.Object {
     
   }
   
-  /**
-    * @classdesc
-    * Allows the user to pan the map using keyboard arrows.
-    * Note that, although this interaction is by default included in maps,
-    * the keys can only be used when browser focus is on the element to which
-    * the keyboard events are attached. By default, this is the map div,
-    * though you can change this with the `keyboardEventTarget` in
-    * {@link ol.Map}. `document` never loses focus but, for any other element,
-    * focus will have to be on, and returned to, this element if the keys are to
-    * function.
-    * See also {@link ol.interaction.KeyboardZoom}.
-    *
-    * @param opt_options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object KeyboardPan extends js.Object {
     /**
@@ -949,21 +915,7 @@ object interactionNs extends js.Object {
     def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
   }
   
-  /**
-    * @classdesc
-    * Allows the user to zoom the map using keyboard + and -.
-    * Note that, although this interaction is by default included in maps,
-    * the keys can only be used when browser focus is on the element to which
-    * the keyboard events are attached. By default, this is the map div,
-    * though you can change this with the `keyboardEventTarget` in
-    * {@link ol.Map}. `document` never loses focus but, for any other element,
-    * focus will have to be on, and returned to, this element if the keys are to
-    * function.
-    * See also {@link ol.interaction.KeyboardPan}.
-    *
-    * @param opt_options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object KeyboardZoom extends js.Object {
     /**
@@ -1018,13 +970,7 @@ object interactionNs extends js.Object {
     
   }
   
-  /**
-    * @classdesc
-    * Allows the user to zoom the map by scrolling the mouse wheel.
-    *
-    * @param opt_options Options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object MouseWheelZoom extends js.Object {
     /**
@@ -1037,19 +983,7 @@ object interactionNs extends js.Object {
     def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
   }
   
-  /**
-    * @classdesc
-    * Base class that calls user-defined functions on `down`, `move` and `up`
-    * events. This class also manages "drag sequences".
-    *
-    * When the `handleDownEvent` user function returns `true` a drag sequence is
-    * started. During a drag sequence the `handleDragEvent` user function is
-    * called on `move` events. The drag sequence ends when the `handleUpEvent`
-    * user function is called and returns `false`.
-    *
-    * @param opt_options Options.
-    * @api
-    */
+  /* static members */
   @js.native
   object Pointer extends js.Object {
     /**
@@ -1063,22 +997,7 @@ object interactionNs extends js.Object {
     def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
   }
   
-  /**
-    * @classdesc
-    * Interaction for selecting vector features. By default, selected features are
-    * styled differently, so this interaction can be used for visual highlighting,
-    * as well as selecting features for other actions, such as modification or
-    * output. There are three ways of controlling which features are selected:
-    * using the browser event as defined by the `condition` and optionally the
-    * `toggle`, `add`/`remove`, and `multi` options; a `layers` filter; and a
-    * further feature filter using the `filter` option.
-    *
-    * Selected features are added to an internal unmanaged layer.
-    *
-    * @param opt_options Options.
-    * @fires ol.interaction.SelectEvent
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Select extends js.Object {
     /**

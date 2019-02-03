@@ -104,7 +104,7 @@ class MediaPlaybackItem protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a media item that can be played back. This class acts as a wrapper around a MediaSource that exposes the audio tracks, video tracks, and timed metadata tracks included in the media source. */
+/* static members */
 @JSGlobal("Windows.Media.Playback.MediaPlaybackItem")
 @js.native
 object MediaPlaybackItem extends js.Object {

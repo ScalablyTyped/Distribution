@@ -31,6 +31,7 @@ class VirtualAction[T] protected ()
   /* protected */ def requestAsyncId(scheduler: VirtualTimeScheduler, id: js.Any, delay: scala.Double): js.Any = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualAction")
 @js.native
 object VirtualAction extends js.Object {

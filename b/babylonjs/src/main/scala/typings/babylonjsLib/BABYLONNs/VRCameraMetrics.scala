@@ -92,10 +92,7 @@ class VRCameraMetrics () extends js.Object {
   var vScreenSize: scala.Double = js.native
 }
 
-/**
-  * This represents all the required metrics to create a VR camera.
-  * @see http://doc.babylonjs.com/babylon101/cameras#device-orientation-camera
-  */
+/* static members */
 @JSGlobal("BABYLON.VRCameraMetrics")
 @js.native
 object VRCameraMetrics extends js.Object {

@@ -26,10 +26,7 @@ class Octree[T] protected ()
   maxDepth: scala.Double) = this()
 }
 
-/**
-  * Octrees are a really powerful data structure that can quickly select entities based on space coordinates.
-  * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-  */
+/* static members */
 @JSImport("babylonjs", "Octree")
 @js.native
 object Octree extends js.Object {

@@ -18,9 +18,13 @@ object cometdLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

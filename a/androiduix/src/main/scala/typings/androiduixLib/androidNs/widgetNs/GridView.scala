@@ -75,6 +75,7 @@ class GridView protected () extends AbsListView {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.GridView")
 @js.native
 object GridView extends js.Object {

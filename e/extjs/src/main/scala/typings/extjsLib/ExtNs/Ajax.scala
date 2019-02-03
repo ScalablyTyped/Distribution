@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Ajax () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Ajax")
 @js.native
 object Ajax extends js.Object {

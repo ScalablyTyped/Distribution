@@ -15,8 +15,11 @@ object nodeDashSsdpLibStrings {
   @js.native
   sealed trait response extends js.Object
   
+  @scala.inline
   def `advertise-alive`: `advertise-alive` = "advertise-alive".asInstanceOf[`advertise-alive`]
+  @scala.inline
   def `advertise-bye`: `advertise-bye` = "advertise-bye".asInstanceOf[`advertise-bye`]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
 }
 

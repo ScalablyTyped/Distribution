@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Axes ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Axes
 
+/* static members */
 @JSImport("matter-js", "Axes")
 @js.native
 object Axes extends js.Object {

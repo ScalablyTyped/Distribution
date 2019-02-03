@@ -16,7 +16,7 @@ abstract class RandomAccessStreamReference () extends js.Object {
   def openReadAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType] = js.native
 }
 
-/** Provides random access of data in input and output streams for a file. */
+/* static members */
 @JSGlobal("Windows.Storage.Streams.RandomAccessStreamReference")
 @js.native
 object RandomAccessStreamReference extends js.Object {

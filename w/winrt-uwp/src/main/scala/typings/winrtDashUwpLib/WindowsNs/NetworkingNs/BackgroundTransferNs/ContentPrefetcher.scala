@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ContentPrefetcher () extends js.Object
 
-/** Provides properties for specifying web resources to be prefetched. Windows will use heuristics to attempt to download the specified resources in advance of your app being launched by the user. */
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.ContentPrefetcher")
 @js.native
 object ContentPrefetcher extends js.Object {

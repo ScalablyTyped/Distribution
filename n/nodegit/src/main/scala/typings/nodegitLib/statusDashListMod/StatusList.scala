@@ -13,6 +13,7 @@ class StatusList () extends js.Object {
   def getPerfdata(): js.Promise[nodegitLib.diffDashPerfDashDataMod.DiffPerfdata] = js.native
 }
 
+/* static members */
 @JSImport("nodegit/status-list", "StatusList")
 @js.native
 object StatusList extends js.Object {

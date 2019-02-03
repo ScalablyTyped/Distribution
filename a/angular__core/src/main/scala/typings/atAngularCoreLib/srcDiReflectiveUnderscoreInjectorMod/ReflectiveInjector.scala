@@ -124,6 +124,7 @@ abstract class ReflectiveInjector ()
   def resolveAndInstantiate(provider: atAngularCoreLib.srcDiProviderMod.Provider): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/di/reflective_injector", "ReflectiveInjector")
 @js.native
 object ReflectiveInjector extends js.Object {

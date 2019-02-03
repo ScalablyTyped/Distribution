@@ -14,6 +14,7 @@ class TreeListModel () extends Model {
   def loaded(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.TreeListModel")
 @js.native
 object TreeListModel extends js.Object {

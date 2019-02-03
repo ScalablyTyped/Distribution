@@ -13,6 +13,7 @@ class Select[T] protected ()
   def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSelectMod.ISelectProps[T], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/select", "Select")
 @js.native
 object Select extends js.Object {

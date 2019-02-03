@@ -113,10 +113,7 @@ class Url protected () extends js.Object {
   def setScheme(scheme: java.lang.String): Url = js.native
 }
 
-/**
-  * This class represents a URL giving access to the individual parts that make up a URL,such as the scheme, host/domain, path, etc. Use the static parse method to populate a new URL object
-  * from a URL string. Be aware that URLs with user and password like "ftp://user:password@foo.bar/" are not supported!
-  */
+/* static members */
 @JSGlobal("H.service.Url")
 @js.native
 object Url extends js.Object {

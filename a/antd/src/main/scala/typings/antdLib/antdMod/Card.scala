@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Card ()
   extends antdLib.libCardMod.default
 
+/* static members */
 @JSImport("antd", "Card")
 @js.native
 object Card extends js.Object {

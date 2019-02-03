@@ -32,6 +32,7 @@ class CodeGeneratorResponse ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "CodeGeneratorResponse")
 @js.native
 object CodeGeneratorResponse extends js.Object {

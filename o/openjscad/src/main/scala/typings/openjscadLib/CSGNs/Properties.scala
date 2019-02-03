@@ -24,6 +24,7 @@ class Properties () extends js.Object {
   def _transform(matrix4x4: Matrix4x4): Properties = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Properties")
 @js.native
 object Properties extends js.Object {

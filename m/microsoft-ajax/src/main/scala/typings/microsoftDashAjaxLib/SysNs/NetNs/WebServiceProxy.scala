@@ -14,11 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebServiceProxy () extends js.Object
 
-/**
-  * Generated Proxy Classes
-  * Enables your application to call Web services asynchronously by using ECMAScript (JavaScript).
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb310823(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.Net.WebServiceProxy")
 @js.native
 object WebServiceProxy extends js.Object {

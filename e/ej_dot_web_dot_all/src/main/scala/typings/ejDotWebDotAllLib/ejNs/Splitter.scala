@@ -43,6 +43,7 @@ class Splitter protected () extends Widget {
   def removeItem(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Splitter")
 @js.native
 object Splitter extends js.Object {

@@ -43,9 +43,24 @@ class Server () extends js.Object {
     * "address:port"
     * @param creds Server credential object to be used for SSL. Pass an
     * insecure credentials object for an insecure port.
-    * @return The bound port number or 0 if the opreation failed.
+    * @return The bound port number or 0 if the operation failed.
     */
   def bind(port: java.lang.String, creds: ServerCredentials): scala.Double = js.native
+  /**
+    * Binds the server to the given port, with SSL disabled if creds is an
+    * insecure credentials object. Provides the result asynchronously.
+    * @param port The port that the server should bind on, in the format "address:port"
+    * @param creds Server credential object to be used for
+    *     SSL. Pass an insecure credentials object for an insecure port.
+    * @param callback Called with the result of attempting to bind a port
+    *  	- error: If non-null, indicates that binding the port failed.
+    *  	- port: The bound port number. If binding the port fails, this will be negative to match the output of bind.
+    */
+  def bindAsync(
+    port: java.lang.String,
+    creds: ServerCredentials,
+    callback: js.Function2[/* error */ nodeLib.Error | scala.Null, /* port */ scala.Double, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Forcibly shuts down the server. The server will stop receiving new calls
     * and cancel all pending calls. When it returns, the server has shut down.

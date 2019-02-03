@@ -24,6 +24,7 @@ class AllCapsTransformationMethod () extends TransformationMethod2 {
   override def setLengthChangesAllowed(allowLengthChanges: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.method.AllCapsTransformationMethod")
 @js.native
 object AllCapsTransformationMethod extends js.Object {

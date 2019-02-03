@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Assert
 
+/* static members */
 @JSImport("assertsharp", JSImport.Default)
 @js.native
 object default extends js.Object {

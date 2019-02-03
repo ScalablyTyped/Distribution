@@ -32,6 +32,7 @@ class ReceiptFilter protected ()
   val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter")
 @js.native
 object ReceiptFilter extends js.Object {

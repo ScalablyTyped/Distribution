@@ -20,6 +20,7 @@ class AccountAlias protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamAccountAliasMod.AccountAliasArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "AccountAlias")
 @js.native
 object AccountAlias extends js.Object {

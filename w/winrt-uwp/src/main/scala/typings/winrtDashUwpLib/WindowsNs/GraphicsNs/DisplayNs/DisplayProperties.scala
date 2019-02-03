@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DisplayProperties () extends js.Object
 
-/** Provides various properties that are related to the physical display. */
+/* static members */
 @JSGlobal("Windows.Graphics.Display.DisplayProperties")
 @js.native
 object DisplayProperties extends js.Object {

@@ -25,6 +25,7 @@ class ColorPalette protected () extends Widget {
   def value_Unit(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ColorPalette")
 @js.native
 object ColorPalette extends js.Object {

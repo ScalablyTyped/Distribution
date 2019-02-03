@@ -20,6 +20,7 @@ class MaintenanceWindowTarget protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmMaintenanceWindowTargetMod.MaintenanceWindowTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "MaintenanceWindowTarget")
 @js.native
 object MaintenanceWindowTarget extends js.Object {

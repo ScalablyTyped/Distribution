@@ -19,12 +19,7 @@ import scala.scalajs.js.annotation._
 class CircularLayout ()
   extends goLib.goMod.goNs.CircularLayout
 
-/**
-  * This layout positions nodes in a circular arrangement.
-  * This layout makes use of a LayoutNetwork of
-  * CircularVertexes and CircularEdges that normally
-  * correspond to the Nodes and Links of the Diagram.
-  */
+/* static members */
 @JSImport("go", "CircularLayout")
 @js.native
 object CircularLayout extends js.Object {

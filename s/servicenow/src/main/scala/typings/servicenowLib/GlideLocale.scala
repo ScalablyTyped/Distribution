@@ -12,6 +12,7 @@ class GlideLocale () extends js.Object {
   def getGroupingSeparator(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("GlideLocale")
 @js.native
 object GlideLocale extends js.Object {

@@ -28,6 +28,7 @@ class Domain protected ()
   val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail/domain", "Domain")
 @js.native
 object Domain extends js.Object {

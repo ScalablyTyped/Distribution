@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FloatingActionButton ()
   extends materializeDashCssLib.MNs.FloatingActionButton
 
+/* static members */
 @JSImport("materialize-css", "FloatingActionButton")
 @js.native
 object FloatingActionButton extends js.Object {

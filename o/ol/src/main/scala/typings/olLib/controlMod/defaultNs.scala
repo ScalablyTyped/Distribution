@@ -318,16 +318,7 @@ object defaultNs extends js.Object {
     */
   def defaults(): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.controlNs.Control] = js.native
   def defaults(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.DefaultsOptions): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.controlNs.Control] = js.native
-  /**
-    * @classdesc
-    * Control to show all the attributions associated with the layer sources
-    * in the map. This control is one of the default controls included in maps.
-    * By default it will show in the bottom right portion of the map, but this can
-    * be changed by using a css selector for `.ol-attribution`.
-    *
-    * @param opt_options Attribution options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Attribution extends js.Object {
     /**
@@ -338,17 +329,7 @@ object defaultNs extends js.Object {
     def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
   }
   
-  /**
-    * @classdesc
-    * A control to show the 2D coordinates of the mouse cursor. By default, these
-    * are in the view projection, but can be in any supported projection.
-    * By default the control is shown in the top right corner of the map, but this
-    * can be changed by using the css selector `.ol-mouse-position`.
-    *
-    * @param opt_options Mouse position
-    *     options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object MousePosition extends js.Object {
     /**
@@ -359,12 +340,7 @@ object defaultNs extends js.Object {
     def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
   }
   
-  /**
-    * Create a new control with a map acting as an overview map for an other
-    * defined map.
-    * @param opt_options OverviewMap options.
-    * @api
-    */
+  /* static members */
   @js.native
   object OverviewMap extends js.Object {
     /**
@@ -375,15 +351,7 @@ object defaultNs extends js.Object {
     def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
   }
   
-  /**
-    * @classdesc
-    * A button control to reset rotation to 0.
-    * To style this control use css selector `.ol-rotate`. A `.ol-hidden` css
-    * selector is added to the button when the rotation is 0.
-    *
-    * @param opt_options Rotate options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Rotate extends js.Object {
     /**
@@ -394,19 +362,7 @@ object defaultNs extends js.Object {
     def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
   }
   
-  /**
-    * @classdesc
-    * A control displaying rough y-axis distances, calculated for the center of the
-    * viewport. For conformal projections (e.g. EPSG:3857, the default view
-    * projection in OpenLayers), the scale is valid for all directions.
-    * No scale line will be shown when the y-axis distance of a pixel at the
-    * viewport center cannot be calculated in the view projection.
-    * By default the scale line will show in the bottom left portion of the map,
-    * but this can be changed by using the css selector `.ol-scale-line`.
-    *
-    * @param opt_options Scale line options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object ScaleLine extends js.Object {
     /**
@@ -417,17 +373,7 @@ object defaultNs extends js.Object {
     def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
   }
   
-  /**
-    * @classdesc
-    * A slider type of control for zooming.
-    *
-    * Example:
-    *
-    *     map.addControl(new ol.control.ZoomSlider());
-    *
-    * @param opt_options Zoom slider options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object ZoomSlider extends js.Object {
     /**

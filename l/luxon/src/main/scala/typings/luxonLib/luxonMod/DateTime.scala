@@ -107,6 +107,7 @@ class DateTime () extends js.Object {
   def until(other: DateTime): Interval = js.native
 }
 
+/* static members */
 @JSImport("luxon", "DateTime")
 @js.native
 object DateTime extends js.Object {

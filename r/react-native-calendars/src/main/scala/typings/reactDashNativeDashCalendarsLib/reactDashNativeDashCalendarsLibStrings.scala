@@ -39,16 +39,27 @@ object reactDashNativeDashCalendarsLibStrings {
   @js.native
   sealed trait today extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def `multi-dot`: `multi-dot` = "multi-dot".asInstanceOf[`multi-dot`]
+  @scala.inline
   def `multi-period`: `multi-period` = "multi-period".asInstanceOf[`multi-period`]
+  @scala.inline
   def period: period = "period".asInstanceOf[period]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
   def simple: simple = "simple".asInstanceOf[simple]
+  @scala.inline
   def today: today = "today".asInstanceOf[today]
 }
 

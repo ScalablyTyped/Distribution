@@ -14,6 +14,7 @@ class RefreshData () extends js.Object {
   def recycle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ProgressBar.RefreshData")
 @js.native
 object RefreshData extends js.Object {

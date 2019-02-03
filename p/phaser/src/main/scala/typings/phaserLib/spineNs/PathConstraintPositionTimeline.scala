@@ -14,6 +14,7 @@ class PathConstraintPositionTimeline protected () extends CurveTimeline {
   def setFrame(frameIndex: scala.Double, time: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.PathConstraintPositionTimeline")
 @js.native
 object PathConstraintPositionTimeline extends js.Object {

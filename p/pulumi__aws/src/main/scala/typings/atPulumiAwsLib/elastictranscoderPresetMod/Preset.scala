@@ -56,6 +56,7 @@ class Preset protected ()
   val videoWatermarks: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_HorizontalAlign]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elastictranscoder/preset", "Preset")
 @js.native
 object Preset extends js.Object {

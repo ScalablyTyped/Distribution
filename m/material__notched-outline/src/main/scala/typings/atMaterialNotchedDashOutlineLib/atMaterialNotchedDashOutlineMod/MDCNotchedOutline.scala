@@ -23,6 +23,7 @@ class MDCNotchedOutline ()
   def notch(notchWidth: scala.Double, isRtl: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/notched-outline", "MDCNotchedOutline")
 @js.native
 object MDCNotchedOutline extends js.Object {

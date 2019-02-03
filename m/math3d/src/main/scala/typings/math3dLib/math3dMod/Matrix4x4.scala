@@ -40,6 +40,7 @@ class Matrix4x4 protected () extends js.Object {
   def transpose(): Matrix4x4 = js.native
 }
 
+/* static members */
 @JSImport("math3d", "Matrix4x4")
 @js.native
 object Matrix4x4 extends js.Object {

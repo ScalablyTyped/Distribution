@@ -284,7 +284,7 @@ object TraceNs extends js.Object {
     def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   }
   
-  /** Represents a CachePolicy. */
+  /* static members */
   @js.native
   object CachePolicy extends js.Object {
     /**
@@ -394,7 +394,7 @@ object TraceNs extends js.Object {
     
   }
   
-  /** Represents a Details. */
+  /* static members */
   @js.native
   object Details extends js.Object {
     /**
@@ -472,7 +472,7 @@ object TraceNs extends js.Object {
     def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
-  /** Represents an Error. */
+  /* static members */
   @js.native
   object Error extends js.Object {
     /**
@@ -550,7 +550,7 @@ object TraceNs extends js.Object {
     def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
-  /** Represents a HTTP. */
+  /* static members */
   @js.native
   object HTTP extends js.Object {
     /**
@@ -717,7 +717,7 @@ object TraceNs extends js.Object {
           ] = js.native
     }
     
-    /** Represents a Values. */
+    /* static members */
     @js.native
     object Values extends js.Object {
       /**
@@ -797,7 +797,7 @@ object TraceNs extends js.Object {
     
   }
   
-  /** Represents a Location. */
+  /* static members */
   @js.native
   object Location extends js.Object {
     /**
@@ -875,7 +875,7 @@ object TraceNs extends js.Object {
     def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): java.lang.String | scala.Null = js.native
   }
   
-  /** Represents a Node. */
+  /* static members */
   @js.native
   object Node extends js.Object {
     /**

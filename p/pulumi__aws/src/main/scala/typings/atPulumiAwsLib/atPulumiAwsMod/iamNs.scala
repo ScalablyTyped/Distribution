@@ -681,6 +681,7 @@ object iamNs extends js.Object {
   ): js.Promise[atPulumiAwsLib.iamGetServerCertificateMod.GetServerCertificateResult] = js.native
   def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] = js.native
   def getUser(args: atPulumiAwsLib.iamGetUserMod.GetUserArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.iamGetUserMod.GetUserResult] = js.native
+  /* static members */
   @js.native
   object AccessKey extends js.Object {
     /**
@@ -705,6 +706,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamAccessKeyMod.AccessKey = js.native
   }
   
+  /* static members */
   @js.native
   object AccountAlias extends js.Object {
     /**
@@ -729,6 +731,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamAccountAliasMod.AccountAlias = js.native
   }
   
+  /* static members */
   @js.native
   object AccountPasswordPolicy extends js.Object {
     /**
@@ -753,6 +756,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object Group extends js.Object {
     /**
@@ -777,6 +781,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamGroupMod.Group = js.native
   }
   
+  /* static members */
   @js.native
   object GroupMembership extends js.Object {
     /**
@@ -801,6 +806,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native
   }
   
+  /* static members */
   @js.native
   object GroupPolicy extends js.Object {
     /**
@@ -825,6 +831,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamGroupPolicyMod.GroupPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object GroupPolicyAttachment extends js.Object {
     /**
@@ -849,6 +856,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamGroupPolicyAttachmentMod.GroupPolicyAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object InstanceProfile extends js.Object {
     /**
@@ -873,6 +881,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamInstanceProfileMod.InstanceProfile = js.native
   }
   
+  /* static members */
   @js.native
   object OpenIdConnectProvider extends js.Object {
     /**
@@ -897,6 +906,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProvider = js.native
   }
   
+  /* static members */
   @js.native
   object Policy extends js.Object {
     /**
@@ -921,6 +931,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamPolicyMod.Policy = js.native
   }
   
+  /* static members */
   @js.native
   object PolicyAttachment extends js.Object {
     /**
@@ -945,6 +956,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamPolicyAttachmentMod.PolicyAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object Role extends js.Object {
     /**
@@ -969,6 +981,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamRoleMod.Role = js.native
   }
   
+  /* static members */
   @js.native
   object RolePolicy extends js.Object {
     /**
@@ -993,6 +1006,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamRolePolicyMod.RolePolicy = js.native
   }
   
+  /* static members */
   @js.native
   object RolePolicyAttachment extends js.Object {
     /**
@@ -1017,6 +1031,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamRolePolicyAttachmentMod.RolePolicyAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object SamlProvider extends js.Object {
     /**
@@ -1041,6 +1056,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamSamlProviderMod.SamlProvider = js.native
   }
   
+  /* static members */
   @js.native
   object ServerCertificate extends js.Object {
     /**
@@ -1065,6 +1081,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamServerCertificateMod.ServerCertificate = js.native
   }
   
+  /* static members */
   @js.native
   object ServiceLinkedRole extends js.Object {
     /**
@@ -1089,6 +1106,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRole = js.native
   }
   
+  /* static members */
   @js.native
   object SshKey extends js.Object {
     /**
@@ -1113,6 +1131,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamSshKeyMod.SshKey = js.native
   }
   
+  /* static members */
   @js.native
   object User extends js.Object {
     /**
@@ -1137,6 +1156,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamUserMod.User = js.native
   }
   
+  /* static members */
   @js.native
   object UserGroupMembership extends js.Object {
     /**
@@ -1161,6 +1181,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembership = js.native
   }
   
+  /* static members */
   @js.native
   object UserLoginProfile extends js.Object {
     /**
@@ -1185,6 +1206,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamUserLoginProfileMod.UserLoginProfile = js.native
   }
   
+  /* static members */
   @js.native
   object UserPolicy extends js.Object {
     /**
@@ -1209,6 +1231,7 @@ object iamNs extends js.Object {
     ): atPulumiAwsLib.iamUserPolicyMod.UserPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object UserPolicyAttachment extends js.Object {
     /**

@@ -9,6 +9,7 @@ object activexDashAccessLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

@@ -15,8 +15,11 @@ object hapiDashAuthDashCookieLibStrings {
   @js.native
   sealed trait cookie extends js.Object
   
+  @scala.inline
   def Lax: Lax = "Lax".asInstanceOf[Lax]
+  @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
+  @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
 }
 

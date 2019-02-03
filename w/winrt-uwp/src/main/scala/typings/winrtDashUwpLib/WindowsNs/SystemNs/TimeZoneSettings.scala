@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class TimeZoneSettings () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.TimeZoneSettings")
 @js.native
 object TimeZoneSettings extends js.Object {

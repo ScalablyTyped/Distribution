@@ -34,11 +34,7 @@ class LensFlare protected ()
   position: scala.Double, color: babylonjsLib.BABYLONNs.Color3, imgUrl: java.lang.String, system: babylonjsLib.BABYLONNs.LensFlareSystem) = this()
 }
 
-/**
-  * This represents one of the lens effect in a `BABYLON.lensFlareSystem`.
-  * It controls one of the indiviual texture used in the effect.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_lens_flares
-  */
+/* static members */
 @JSImport("babylonjs", "LensFlare")
 @js.native
 object LensFlare extends js.Object {

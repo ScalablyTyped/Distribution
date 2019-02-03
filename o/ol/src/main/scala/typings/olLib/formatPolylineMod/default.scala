@@ -30,15 +30,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.formatNs.PolylineOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Feature format for reading and writing data in the Encoded
-  * Polyline Algorithm Format.
-  *
-  * @param opt_options
-  *     Optional configuration object.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/format/polyline", JSImport.Default)
 @js.native
 object default extends js.Object {

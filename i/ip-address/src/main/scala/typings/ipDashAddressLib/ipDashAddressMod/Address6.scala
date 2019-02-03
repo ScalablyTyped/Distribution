@@ -125,6 +125,7 @@ class Address6 protected () extends js.Object {
   def v4inv6(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("ip-address", "Address6")
 @js.native
 object Address6 extends js.Object {

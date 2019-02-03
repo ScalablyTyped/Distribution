@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends semanticDashUiDashReactLib.distCommonjsAddonsPortalPortalMod.default
 
+/* static members */
 @JSImport("semantic-ui-react/dist/commonjs/addons/Portal", "default")
 @js.native
 object default extends js.Object {

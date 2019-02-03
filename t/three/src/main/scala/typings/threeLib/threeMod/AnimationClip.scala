@@ -14,6 +14,7 @@ class AnimationClip ()
   def this(name: java.lang.String, duration: scala.Double, tracks: js.Array[threeLib.threeDashCoreMod.KeyframeTrack]) = this()
 }
 
+/* static members */
 @JSImport("three", "AnimationClip")
 @js.native
 object AnimationClip extends js.Object {

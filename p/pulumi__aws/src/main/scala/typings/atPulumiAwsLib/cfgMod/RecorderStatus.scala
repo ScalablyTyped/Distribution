@@ -20,6 +20,7 @@ class RecorderStatus protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cfgRecorderStatusMod.RecorderStatusArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg", "RecorderStatus")
 @js.native
 object RecorderStatus extends js.Object {

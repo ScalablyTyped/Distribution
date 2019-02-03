@@ -15,6 +15,7 @@ class MDCToolbar ()
   var fixedAdjustElement: stdLib.HTMLElement = js.native
 }
 
+/* static members */
 @JSImport("@material/toolbar", "MDCToolbar")
 @js.native
 object MDCToolbar extends js.Object {

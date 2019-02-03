@@ -27,6 +27,7 @@ class BrowserView () extends EventEmitter {
   def setBounds(bounds: Rectangle): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.BrowserView")
 @js.native
 object BrowserView extends js.Object {

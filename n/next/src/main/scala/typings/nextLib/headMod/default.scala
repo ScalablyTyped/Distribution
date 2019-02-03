@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends nextDashServerLib.headMod.default
 
+/* static members */
 @JSImport("next/head", "default")
 @js.native
 object default extends js.Object {

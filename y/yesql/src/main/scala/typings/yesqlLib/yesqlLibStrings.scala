@@ -12,7 +12,9 @@ object yesqlLibStrings {
   @js.native
   sealed trait pg extends js.Object
   
+  @scala.inline
   def mysql: mysql = "mysql".asInstanceOf[mysql]
+  @scala.inline
   def pg: pg = "pg".asInstanceOf[pg]
 }
 

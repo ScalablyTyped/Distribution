@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Area ()
   extends reactLib.reactMod.Component[AreaProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("proton-native", "Area")
 @js.native
 object Area extends js.Object {

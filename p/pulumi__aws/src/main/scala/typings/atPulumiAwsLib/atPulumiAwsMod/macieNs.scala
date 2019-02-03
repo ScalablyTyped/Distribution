@@ -36,6 +36,7 @@ object macieNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.macieS3BucketAssociationMod.S3BucketAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object MemberAccountAssociation extends js.Object {
     /**
@@ -60,6 +61,7 @@ object macieNs extends js.Object {
     ): atPulumiAwsLib.macieMemberAccountAssociationMod.MemberAccountAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object S3BucketAssociation extends js.Object {
     /**

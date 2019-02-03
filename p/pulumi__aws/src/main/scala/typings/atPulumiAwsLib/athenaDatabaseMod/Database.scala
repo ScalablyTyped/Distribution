@@ -36,6 +36,7 @@ class Database protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/athena/database", "Database")
 @js.native
 object Database extends js.Object {

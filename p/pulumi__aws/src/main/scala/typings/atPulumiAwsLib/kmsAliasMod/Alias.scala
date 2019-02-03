@@ -41,6 +41,7 @@ class Alias protected ()
   val targetKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kms/alias", "Alias")
 @js.native
 object Alias extends js.Object {

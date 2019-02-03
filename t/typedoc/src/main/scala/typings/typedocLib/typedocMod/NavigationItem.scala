@@ -16,6 +16,7 @@ class NavigationItem ()
   def this(title: java.lang.String, url: java.lang.String, parent: typedocLib.distLibOutputModelsNavigationItemMod.NavigationItem, cssClasses: java.lang.String, reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
 }
 
+/* static members */
 @JSImport("typedoc", "NavigationItem")
 @js.native
 object NavigationItem extends js.Object {

@@ -20,6 +20,7 @@ class LogSubscriptionFilter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchLogSubscriptionFilterMod.LogSubscriptionFilterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogSubscriptionFilter")
 @js.native
 object LogSubscriptionFilter extends js.Object {

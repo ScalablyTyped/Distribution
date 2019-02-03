@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MdmPolicy () extends js.Object
 
-/** MDM (Mobile Device Management) policy. */
+/* static members */
 @JSGlobal("Windows.Management.Workplace.MdmPolicy")
 @js.native
 object MdmPolicy extends js.Object {

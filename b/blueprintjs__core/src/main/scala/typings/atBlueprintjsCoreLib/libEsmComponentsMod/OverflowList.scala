@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class OverflowList[T] ()
   extends atBlueprintjsCoreLib.libEsmComponentsOverflowDashListOverflowListMod.OverflowList[T]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "OverflowList")
 @js.native
 object OverflowList extends js.Object {

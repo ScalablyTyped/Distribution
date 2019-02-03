@@ -21,10 +21,15 @@ object cqrsDashDomainLibStrings {
   @js.native
   sealed trait tingodb extends js.Object
   
+  @scala.inline
   def azuretable: azuretable = "azuretable".asInstanceOf[azuretable]
+  @scala.inline
   def inmemory: inmemory = "inmemory".asInstanceOf[inmemory]
+  @scala.inline
   def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
+  @scala.inline
   def redis: redis = "redis".asInstanceOf[redis]
+  @scala.inline
   def tingodb: tingodb = "tingodb".asInstanceOf[tingodb]
 }
 

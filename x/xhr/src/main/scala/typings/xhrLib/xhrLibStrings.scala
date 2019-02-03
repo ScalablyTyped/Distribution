@@ -42,17 +42,29 @@ object xhrLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

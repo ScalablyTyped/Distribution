@@ -18,6 +18,7 @@ class ObjectId ()
   def this(id: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("mongorito", "ObjectId")
 @js.native
 object ObjectId extends js.Object {

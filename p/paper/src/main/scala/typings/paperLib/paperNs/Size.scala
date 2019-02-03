@@ -133,6 +133,7 @@ class Size protected () extends js.Object {
   def subtract(size: scala.Double): Size = js.native
 }
 
+/* static members */
 @JSGlobal("paper.Size")
 @js.native
 object Size extends js.Object {

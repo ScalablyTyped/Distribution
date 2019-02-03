@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StorageApplicationPermissions () extends js.Object
 
-/** Provides static properties for you to get your app's most recently used list (MRU) (use StorageApplicationPermissions.MostRecentlyUsedList ) and future-access list (use StorageApplicationPermissions.FutureAccessList . */
+/* static members */
 @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
 @js.native
 object StorageApplicationPermissions extends js.Object {

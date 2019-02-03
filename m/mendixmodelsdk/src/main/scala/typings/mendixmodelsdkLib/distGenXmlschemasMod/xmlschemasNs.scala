@@ -67,15 +67,14 @@ object xmlschemasNs extends js.Object {
     var targetNamespace: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object MxSchema extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenXmlschemasMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object XmlElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -106,6 +105,7 @@ object xmlschemasNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlElement = js.native
   }
   
+  /* static members */
   @js.native
   object XmlPrimitiveType extends js.Object {
     var AnyType: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlPrimitiveType = js.native
@@ -122,9 +122,7 @@ object xmlschemasNs extends js.Object {
     var Unknown: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlPrimitiveType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/xml-schemas relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object XmlSchema extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -136,6 +134,7 @@ object xmlschemasNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlSchema = js.native
   }
   
+  /* static members */
   @js.native
   object XmlSchemaEntry extends js.Object {
     var structureTypeName: java.lang.String = js.native

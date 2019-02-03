@@ -21,6 +21,7 @@ class Portfolio protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.servicecatalogPortfolioMod.PortfolioArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicecatalog", "Portfolio")
 @js.native
 object Portfolio extends js.Object {

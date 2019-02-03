@@ -12,6 +12,7 @@ class Transport ()
   var ws: js.Any = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/Web/transport", "Transport")
 @js.native
 object Transport extends js.Object {

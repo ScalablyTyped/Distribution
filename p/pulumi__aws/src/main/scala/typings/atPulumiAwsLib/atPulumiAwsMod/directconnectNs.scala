@@ -181,6 +181,7 @@ object directconnectNs extends js.Object {
     args: atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.directconnectGetGatewayMod.GetGatewayResult] = js.native
+  /* static members */
   @js.native
   object BgpPeer extends js.Object {
     /**
@@ -205,6 +206,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectBgpPeerMod.BgpPeer = js.native
   }
   
+  /* static members */
   @js.native
   object Connection extends js.Object {
     /**
@@ -229,6 +231,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectConnectionMod.Connection = js.native
   }
   
+  /* static members */
   @js.native
   object ConnectionAssociation extends js.Object {
     /**
@@ -253,6 +256,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectConnectionAssociationMod.ConnectionAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object Gateway extends js.Object {
     /**
@@ -277,6 +281,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectGatewayMod.Gateway = js.native
   }
   
+  /* static members */
   @js.native
   object GatewayAssociation extends js.Object {
     /**
@@ -301,6 +306,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectGatewayAssociationMod.GatewayAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object HostedPrivateVirtualInterface extends js.Object {
     /**
@@ -325,6 +331,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
   }
   
+  /* static members */
   @js.native
   object HostedPrivateVirtualInterfaceAccepter extends js.Object {
     /**
@@ -349,6 +356,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectHostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
   }
   
+  /* static members */
   @js.native
   object HostedPublicVirtualInterface extends js.Object {
     /**
@@ -373,6 +381,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
   }
   
+  /* static members */
   @js.native
   object HostedPublicVirtualInterfaceAccepter extends js.Object {
     /**
@@ -397,6 +406,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
   }
   
+  /* static members */
   @js.native
   object LinkAggregationGroup extends js.Object {
     /**
@@ -421,6 +431,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectLinkAggregationGroupMod.LinkAggregationGroup = js.native
   }
   
+  /* static members */
   @js.native
   object PrivateVirtualInterface extends js.Object {
     /**
@@ -445,6 +456,7 @@ object directconnectNs extends js.Object {
     ): atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterface = js.native
   }
   
+  /* static members */
   @js.native
   object PublicVirtualInterface extends js.Object {
     /**

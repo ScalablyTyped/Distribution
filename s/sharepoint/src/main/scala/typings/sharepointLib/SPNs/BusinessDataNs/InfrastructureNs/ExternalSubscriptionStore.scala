@@ -13,6 +13,7 @@ class ExternalSubscriptionStore protected ()
   def indexStore(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.BusinessData.Infrastructure.ExternalSubscriptionStore")
 @js.native
 object ExternalSubscriptionStore extends js.Object {

@@ -13,6 +13,7 @@ object ^ extends js.Object {
   def fromError[T](errorValue: js.Any): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
   def fromPromise[T](promise: js.Promise[T]): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
   def getKey(operation: apolloDashLinkLib.libTypesMod.GraphQLRequest): java.lang.String = js.native
+  def getOperationName(doc: graphqlLib.languageAstMod.DocumentNode): java.lang.String | scala.Null = js.native
   def isTerminating(link: apolloDashLinkLib.libLinkMod.ApolloLink): scala.Boolean = js.native
   def toPromise[R](observable: zenDashObservableDashTsLib.libZenObservableMod.Observable[R]): js.Promise[R] = js.native
   def transformOperation(operation: apolloDashLinkLib.libTypesMod.GraphQLRequest): apolloDashLinkLib.libTypesMod.GraphQLRequest = js.native

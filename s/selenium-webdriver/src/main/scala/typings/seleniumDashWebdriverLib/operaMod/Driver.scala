@@ -17,6 +17,7 @@ class Driver ()
   def setFileDetector(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver/opera", "Driver")
 @js.native
 object Driver extends js.Object {

@@ -13,6 +13,7 @@ class default protected () extends Report {
   def this(errorClass: java.lang.String, errorMessage: java.lang.String, stacktrace: js.Array[_], handledState: IHandledState) = this()
 }
 
+/* static members */
 @JSImport("bugsnag-js/types/report", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Methods () extends js.Object
 
+/* static members */
 @JSImport("typesettable/build/src/utils/methods", "Methods")
 @js.native
 object Methods extends js.Object {

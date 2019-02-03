@@ -69,6 +69,7 @@ class Subnet protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/subnet", "Subnet")
 @js.native
 object Subnet extends js.Object {

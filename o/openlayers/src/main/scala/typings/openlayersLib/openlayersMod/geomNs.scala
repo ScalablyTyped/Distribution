@@ -803,14 +803,7 @@ object geomNs extends js.Object {
     def translate(deltaX: scala.Double, deltaY: scala.Double): scala.Unit = js.native
   }
   
-  /**
-    * @classdesc
-    * Polygon geometry.
-    *
-    * @param coordinates Coordinates.
-    * @param opt_layout Layout.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Polygon extends js.Object {
     /**

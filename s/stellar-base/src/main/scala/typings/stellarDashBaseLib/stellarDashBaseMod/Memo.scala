@@ -21,6 +21,7 @@ class Memo[T /* <: MemoType */] protected () extends js.Object {
   def toXDRObject(): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Memo = js.native
 }
 
+/* static members */
 @JSImport("stellar-base", "Memo")
 @js.native
 object Memo extends js.Object {

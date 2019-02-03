@@ -23,6 +23,7 @@ class SFSBuddyVariable protected () extends SFSUserVariable {
   def isOffline(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Variables.SFSBuddyVariable")
 @js.native
 object SFSBuddyVariable extends js.Object {

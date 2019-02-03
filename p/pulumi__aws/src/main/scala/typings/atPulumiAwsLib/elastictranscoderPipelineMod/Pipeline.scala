@@ -61,6 +61,7 @@ class Pipeline protected ()
   val thumbnailConfigPermissions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Accesses]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elastictranscoder/pipeline", "Pipeline")
 @js.native
 object Pipeline extends js.Object {

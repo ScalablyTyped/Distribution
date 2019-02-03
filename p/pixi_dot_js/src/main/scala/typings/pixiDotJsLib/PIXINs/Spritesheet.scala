@@ -35,6 +35,7 @@ class Spritesheet protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Spritesheet")
 @js.native
 object Spritesheet extends js.Object {

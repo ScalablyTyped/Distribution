@@ -87,9 +87,7 @@ class Size protected () extends ISize {
   def subtract(otherSize: Size): Size = js.native
 }
 
-/**
-  * Size containing widht and height
-  */
+/* static members */
 @JSGlobal("BABYLON.Size")
 @js.native
 object Size extends js.Object {

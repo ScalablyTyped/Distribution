@@ -92,9 +92,7 @@ class TimePicker () extends js.Object {
   def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Allows users to select time values.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.TimePicker")
 @js.native
 object TimePicker extends js.Object {

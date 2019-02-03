@@ -12,6 +12,7 @@ class Carousel protected ()
   def this(props: antdLib.libCarouselMod.CarouselProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Carousel")
 @js.native
 object Carousel extends js.Object {

@@ -20,6 +20,7 @@ class Connection protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueConnectionMod.ConnectionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "Connection")
 @js.native
 object Connection extends js.Object {

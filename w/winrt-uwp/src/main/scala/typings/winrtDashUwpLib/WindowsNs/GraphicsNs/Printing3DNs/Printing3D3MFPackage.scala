@@ -37,7 +37,7 @@ class Printing3D3MFPackage () extends js.Object {
   def saveModelToPackageAsync(value: Printing3DModel): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Represents a 3D Manufacturing Format (3MF) package. */
+/* static members */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3D3MFPackage")
 @js.native
 object Printing3D3MFPackage extends js.Object {

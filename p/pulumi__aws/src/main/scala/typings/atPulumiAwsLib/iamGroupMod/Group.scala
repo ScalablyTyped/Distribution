@@ -37,6 +37,7 @@ class Group protected ()
   val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/group", "Group")
 @js.native
 object Group extends js.Object {

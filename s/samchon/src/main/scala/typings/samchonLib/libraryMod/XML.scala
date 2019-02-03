@@ -13,6 +13,7 @@ class XML ()
   def this(xml: sxmlLib.libXMLMod.XML) = this()
 }
 
+/* static members */
 @JSImport("samchon/library", "XML")
 @js.native
 object XML extends js.Object {

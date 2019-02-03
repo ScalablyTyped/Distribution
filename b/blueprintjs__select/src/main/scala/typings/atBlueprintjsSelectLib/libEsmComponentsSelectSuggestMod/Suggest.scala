@@ -31,6 +31,7 @@ class Suggest[T] protected ()
   /* private */ def getInitialSelectedItem(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest")
 @js.native
 object Suggest extends js.Object {

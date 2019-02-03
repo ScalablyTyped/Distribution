@@ -16,6 +16,7 @@ abstract class Plugin[T] protected ()
   var init: js.UndefOr[js.Function0[scala.Null | js.Promise[T]]] = js.native
 }
 
+/* static members */
 @JSImport("@ckeditor/ckeditor5-core", "Plugin")
 @js.native
 object Plugin extends js.Object {

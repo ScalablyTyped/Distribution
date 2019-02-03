@@ -22,9 +22,7 @@ class Material protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, doNotAdd: scala.Boolean) = this()
 }
 
-/**
-  * Base class for the main features of a material in Babylon.js
-  */
+/* static members */
 @JSImport("babylonjs", "Material")
 @js.native
 object Material extends js.Object {

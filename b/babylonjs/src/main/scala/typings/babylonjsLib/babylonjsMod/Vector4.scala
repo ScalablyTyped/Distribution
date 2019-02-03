@@ -26,9 +26,7 @@ class Vector4 protected ()
   w: scala.Double) = this()
 }
 
-/**
-  * Vector4 class created for EulerAngle class conversion to Quaternion
-  */
+/* static members */
 @JSImport("babylonjs", "Vector4")
 @js.native
 object Vector4 extends js.Object {

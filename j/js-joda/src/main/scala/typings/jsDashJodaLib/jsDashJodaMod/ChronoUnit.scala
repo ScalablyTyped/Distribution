@@ -30,6 +30,7 @@ class ChronoUnit ()
   override def isTimeBased(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ChronoUnit")
 @js.native
 object ChronoUnit extends js.Object {

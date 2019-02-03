@@ -17,6 +17,7 @@ class FilterStream protected ()
     ], thisArg: js.Any) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "FilterStream")
 @js.native
 object FilterStream extends js.Object {

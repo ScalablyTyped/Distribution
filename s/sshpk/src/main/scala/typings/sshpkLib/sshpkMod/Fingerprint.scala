@@ -12,6 +12,7 @@ class Fingerprint protected ()
   def this(opts: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sshpk", "Fingerprint")
 @js.native
 object Fingerprint extends js.Object {

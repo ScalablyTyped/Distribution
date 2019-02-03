@@ -106,6 +106,7 @@ class Notification protected () extends EventEmitter {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.Notification")
 @js.native
 object Notification extends js.Object {

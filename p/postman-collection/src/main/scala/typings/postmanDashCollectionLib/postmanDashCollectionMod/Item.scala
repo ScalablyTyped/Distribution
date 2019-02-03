@@ -21,6 +21,7 @@ class Item () extends Property[ItemDefinition] {
   def getEvents(name: java.lang.String): js.Array[Event] = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Item")
 @js.native
 object Item extends js.Object {

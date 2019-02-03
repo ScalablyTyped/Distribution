@@ -18,6 +18,7 @@ class LightSensor () extends ILightSensor {
   override def getCurrentReading(): LightSensorReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.LightSensor")
 @js.native
 object LightSensor extends js.Object {

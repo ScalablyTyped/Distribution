@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends antdLib.libDropdownDropdownMod.default
 
+/* static members */
 @JSImport("antd/lib/dropdown", JSImport.Default)
 @js.native
 object default extends js.Object {

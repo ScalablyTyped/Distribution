@@ -355,7 +355,7 @@ object utilNs extends js.Object {
     * @returns Converted string
     */
   def ucFirst(str: java.lang.String): java.lang.String = js.native
-  /** Helper class for working with the low and high bits of a 64 bit value. */
+  /* static members */
   @js.native
   object LongBits extends js.Object {
     /** Zero bits. */

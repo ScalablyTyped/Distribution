@@ -72,16 +72,7 @@ class Email ()
   override def send(): scala.Unit = js.native
 }
 
-/**
-  * Email model.  Extends LoopBack base [Model](#model-new-model).
-  * @property {string} to Email addressee.  Required.
-  * @property {string} from Email sender address.  Required.
-  * @property {string} subject Email subject string.  Required.
-  * @property {string} text Text body of email.
-  * @property {string} html HTML body of email
-  * @class Email
-  * @inherits {Model}
-  */
+/* static members */
 @JSImport("loopback", "Email")
 @js.native
 object Email extends js.Object {

@@ -17,6 +17,7 @@ class LngLatBounds ()
   def this(sw: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.LngLatLike, ne: mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.LngLatLike) = this()
 }
 
+/* static members */
 @JSImport("mapbox-gl", "LngLatBounds")
 @js.native
 object LngLatBounds extends js.Object {

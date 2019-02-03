@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RenderUtils () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/utils/RenderUtils", "RenderUtils")
 @js.native
 object RenderUtils extends js.Object {

@@ -20,6 +20,7 @@ class Task protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.datasyncTaskMod.TaskArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync", "Task")
 @js.native
 object Task extends js.Object {

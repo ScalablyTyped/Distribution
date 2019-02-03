@@ -36,9 +36,7 @@ class NoiseProceduralTexture protected () extends ProceduralTexture {
   var persistence: scala.Double = js.native
 }
 
-/**
-  * Class used to generate noise procedural textures
-  */
+/* static members */
 @JSGlobal("BABYLON.NoiseProceduralTexture")
 @js.native
 object NoiseProceduralTexture extends js.Object {

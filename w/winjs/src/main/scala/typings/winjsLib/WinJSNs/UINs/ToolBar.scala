@@ -107,9 +107,7 @@ class ToolBar () extends js.Object {
   def showOnlyCommands(commands: js.Array[java.lang.String | ICommand]): scala.Unit = js.native
 }
 
-/**
-  * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ToolBar")
 @js.native
 object ToolBar extends js.Object {

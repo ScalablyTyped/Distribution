@@ -50,6 +50,7 @@ class SourceMapGenerator () extends js.Object {
   def toJSON(): RawSourceMap = js.native
 }
 
+/* static members */
 @JSImport("source-map", "SourceMapGenerator")
 @js.native
 object SourceMapGenerator extends js.Object {

@@ -108,10 +108,7 @@ class CylinderGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a new cylinder geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#cylinder-or-cone
-  */
+/* static members */
 @JSImport("babylonjs", "CylinderGeometry")
 @js.native
 object CylinderGeometry extends js.Object {

@@ -15,8 +15,11 @@ object binaryDashParserLibStrings {
   @js.native
   sealed trait little extends js.Object
   
+  @scala.inline
   def Next: Next = "Next".asInstanceOf[Next]
+  @scala.inline
   def big: big = "big".asInstanceOf[big]
+  @scala.inline
   def little: little = "little".asInstanceOf[little]
 }
 

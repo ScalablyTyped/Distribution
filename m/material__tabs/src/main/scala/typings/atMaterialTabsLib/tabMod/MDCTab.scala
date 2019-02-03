@@ -19,6 +19,7 @@ class MDCTab ()
   def measureSelf(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/tabs/tab", "MDCTab")
 @js.native
 object MDCTab extends js.Object {

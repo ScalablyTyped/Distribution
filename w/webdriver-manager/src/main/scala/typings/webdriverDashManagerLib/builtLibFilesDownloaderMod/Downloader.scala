@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Downloader () extends js.Object
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/files/downloader", "Downloader")
 @js.native
 object Downloader extends js.Object {

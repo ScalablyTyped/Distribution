@@ -10,8 +10,12 @@ package object RNs {
   type Arity1Fn = js.Function1[/* a */ js.Any, js.Any]
   type Arity2Fn = js.Function2[/* a */ js.Any, /* b */ js.Any, js.Any]
   // Represents all objects evolvable with Evolver E
-  type Evolvable[E /* <: Evolver */] = ramdaLib.ramdaLibStrings.Evolvable with js.Any
-  type Evolve[O /* <: Evolvable[E] */, E /* <: Evolver */] = ramdaLib.ramdaLibStrings.Evolve with O
+  type Evolvable[E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof E ]:? any}
+    */ ramdaLib.ramdaLibStrings.Evolvable with js.Any
+  type Evolve[O /* <: Evolvable[E] */, E /* <: Evolver */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof O ]: O[P] | ramda.ramda.R.EvolveValue<O[P], E[P]>}
+    */ ramdaLib.ramdaLibStrings.Evolve with js.Any
   type EvolveNestedValue[V, E /* <: Evolver */] = Evolve[V, E]
   type EvolveValue[V, E] = (EvolveNestedValue[V, E]) | stdLib.ReturnType[E]
   type ObjPred = js.Function2[/* value */ js.Any, /* key */ java.lang.String, scala.Boolean]

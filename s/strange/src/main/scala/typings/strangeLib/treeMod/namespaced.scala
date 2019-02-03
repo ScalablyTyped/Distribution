@@ -31,19 +31,7 @@ class namespaced[T /* <: stdLib.Date | scala.Double | java.lang.String */] prote
   def this(ranges: strangeLib.strangeMod.Range[T], left: RangeTree[T], right: RangeTree[T]) = this()
 }
 
-/**
-  * Create an interval tree node.
-  *
-  * For creating a binary search tree out of an array of ranges, you might want
-  * to use [`RangeTree.from`](#RangeTree.from).
-  *
-  * @example
-  * var RangeTree = require("strange/tree")
-  * var left = new RangeTree([new Range(-5, 0)])
-  * var right = new RangeTree([new Range(5, 10)])
-  * var root = new RangeTree([new Range(0, 5), new Range(0, 10)], left, right)
-  * root.search(7) // => [new Range(0, 10), new Range(5, 10)]
-  */
+/* static members */
 @JSImport("strange/tree", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

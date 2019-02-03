@@ -26,6 +26,7 @@ class Barcode protected ()
   def value(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.Barcode")
 @js.native
 object Barcode extends js.Object {

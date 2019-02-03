@@ -282,97 +282,189 @@ object weixinDashAppLibStrings {
   @js.native
   sealed trait xlsx extends js.Object
   
+  @scala.inline
   def `#000000`: `#000000` = "#000000".asInstanceOf[`#000000`]
+  @scala.inline
   def `#ffffff`: `#ffffff` = "#ffffff".asInstanceOf[`#ffffff`]
+  @scala.inline
   def `2g`: `2g` = "2g".asInstanceOf[`2g`]
+  @scala.inline
   def `3g`: `3g` = "3g".asInstanceOf[`3g`]
+  @scala.inline
   def `4g`: `4g` = "4g".asInstanceOf[`4g`]
+  @scala.inline
   def Anon_AuthSetting: Anon_AuthSetting = "Anon_AuthSetting".asInstanceOf[Anon_AuthSetting]
+  @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
+  @scala.inline
   def Component: Component = "Component".asInstanceOf[Component]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def `HMAC-SHA256`: `HMAC-SHA256` = "HMAC-SHA256".asInstanceOf[`HMAC-SHA256`]
+  @scala.inline
   def MD5: MD5 = "MD5".asInstanceOf[MD5]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def RecordPropsDefinition: RecordPropsDefinition = "RecordPropsDefinition".asInstanceOf[RecordPropsDefinition]
+  @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  @scala.inline
   def album: album = "album".asInstanceOf[album]
+  @scala.inline
   def ancestor: ancestor = "ancestor".asInstanceOf[ancestor]
+  @scala.inline
   def animationend: animationend = "animationend".asInstanceOf[animationend]
+  @scala.inline
   def animationiteration: animationiteration = "animationiteration".asInstanceOf[animationiteration]
+  @scala.inline
   def animationstart: animationstart = "animationstart".asInstanceOf[animationstart]
+  @scala.inline
   def back: back = "back".asInstanceOf[back]
+  @scala.inline
   def barCode: barCode = "barCode".asInstanceOf[barCode]
+  @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
+  @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def child: child = "child".asInstanceOf[child]
+  @scala.inline
   def compressed: compressed = "compressed".asInstanceOf[compressed]
+  @scala.inline
   def descendant: descendant = "descendant".asInstanceOf[descendant]
+  @scala.inline
   def doc: doc = "doc".asInstanceOf[doc]
+  @scala.inline
   def docx: docx = "docx".asInstanceOf[docx]
+  @scala.inline
   def ease: ease = "ease".asInstanceOf[ease]
+  @scala.inline
   def `ease-in`: `ease-in` = "ease-in".asInstanceOf[`ease-in`]
+  @scala.inline
   def `ease-in-out`: `ease-in-out` = "ease-in-out".asInstanceOf[`ease-in-out`]
+  @scala.inline
   def `ease-out`: `ease-out` = "ease-out".asInstanceOf[`ease-out`]
+  @scala.inline
   def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
+  @scala.inline
   def easeInOut: easeInOut = "easeInOut".asInstanceOf[easeInOut]
+  @scala.inline
   def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
+  @scala.inline
   def facial: facial = "facial".asInstanceOf[facial]
+  @scala.inline
   def fingerPrint: fingerPrint = "fingerPrint".asInstanceOf[fingerPrint]
+  @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
   def front: front = "front".asInstanceOf[front]
+  @scala.inline
   def gcj02: gcj02 = "gcj02".asInstanceOf[gcj02]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def longpress: longpress = "longpress".asInstanceOf[longpress]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
+  @scala.inline
   def original: original = "original".asInstanceOf[original]
+  @scala.inline
   def parent: parent = "parent".asInstanceOf[parent]
+  @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
   def ppt: ppt = "ppt".asInstanceOf[ppt]
+  @scala.inline
   def pptx: pptx = "pptx".asInstanceOf[pptx]
+  @scala.inline
   def qrCode: qrCode = "qrCode".asInstanceOf[qrCode]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def scopeDOTaddress: scopeDOTaddress = "scope.address".asInstanceOf[scopeDOTaddress]
+  @scala.inline
   def scopeDOTcamera: scopeDOTcamera = "scope.camera".asInstanceOf[scopeDOTcamera]
+  @scala.inline
   def scopeDOTinvoice: scopeDOTinvoice = "scope.invoice".asInstanceOf[scopeDOTinvoice]
+  @scala.inline
   def scopeDOTinvoiceTitle: scopeDOTinvoiceTitle = "scope.invoiceTitle".asInstanceOf[scopeDOTinvoiceTitle]
+  @scala.inline
   def scopeDOTrecord: scopeDOTrecord = "scope.record".asInstanceOf[scopeDOTrecord]
+  @scala.inline
   def scopeDOTuserInfo: scopeDOTuserInfo = "scope.userInfo".asInstanceOf[scopeDOTuserInfo]
+  @scala.inline
   def scopeDOTuserLocation: scopeDOTuserLocation = "scope.userLocation".asInstanceOf[scopeDOTuserLocation]
+  @scala.inline
   def scopeDOTwerun: scopeDOTwerun = "scope.werun".asInstanceOf[scopeDOTwerun]
+  @scala.inline
   def scopeDOTwritePhotosAlbum: scopeDOTwritePhotosAlbum = "scope.writePhotosAlbum".asInstanceOf[scopeDOTwritePhotosAlbum]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def speech: speech = "speech".asInstanceOf[speech]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def `step-end`: `step-end` = "step-end".asInstanceOf[`step-end`]
+  @scala.inline
   def `step-start`: `step-start` = "step-start".asInstanceOf[`step-start`]
+  @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
+  @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  @scala.inline
   def touchend: touchend = "touchend".asInstanceOf[touchend]
+  @scala.inline
   def touchforcechange: touchforcechange = "touchforcechange".asInstanceOf[touchforcechange]
+  @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  @scala.inline
   def transitionend: transitionend = "transitionend".asInstanceOf[transitionend]
+  @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
   def wgs84: wgs84 = "wgs84".asInstanceOf[wgs84]
+  @scala.inline
   def wifi: wifi = "wifi".asInstanceOf[wifi]
+  @scala.inline
   def xls: xls = "xls".asInstanceOf[xls]
+  @scala.inline
   def xlsx: xlsx = "xlsx".asInstanceOf[xlsx]
 }
 

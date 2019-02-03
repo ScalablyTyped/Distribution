@@ -19,9 +19,7 @@ class GearVRController protected () extends WebVRController {
   val _buttonIndexToObservableNameMap: js.Any = js.native
 }
 
-/**
-  * Gear VR Controller
-  */
+/* static members */
 @JSGlobal("BABYLON.GearVRController")
 @js.native
 object GearVRController extends js.Object {

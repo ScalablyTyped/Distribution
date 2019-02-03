@@ -12,6 +12,7 @@ class Emitter[T] ()
   def this(_options: vscodeDashJsonrpcLib.libEventsMod.EmitterOptions) = this()
 }
 
+/* static members */
 @JSImport("vscode-languageserver-protocol", "Emitter")
 @js.native
 object Emitter extends js.Object {

@@ -29,9 +29,7 @@ class AsyncLoop protected ()
   iterations: scala.Double, func: js.Function1[/* asyncLoop */ babylonjsLib.BABYLONNs.AsyncLoop, scala.Unit], successCallback: js.Function0[scala.Unit], offset: scala.Double) = this()
 }
 
-/**
-  * An implementation of a loop for asynchronous functions.
-  */
+/* static members */
 @JSImport("babylonjs", "AsyncLoop")
 @js.native
 object AsyncLoop extends js.Object {

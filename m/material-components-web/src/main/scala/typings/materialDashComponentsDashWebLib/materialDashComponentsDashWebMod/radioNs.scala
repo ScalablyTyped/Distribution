@@ -16,11 +16,13 @@ object radioNs extends js.Object {
   class MDCRadioFoundation ()
     extends atMaterialRadioLib.atMaterialRadioMod.MDCRadioFoundation
   
+  /* static members */
   @js.native
   object MDCRadio extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialRadioLib.atMaterialRadioMod.MDCRadio = js.native
   }
   
+  /* static members */
   @js.native
   object MDCRadioFoundation extends js.Object {
     val cssClasses: atMaterialRadioLib.constantsMod.cssClasses = js.native

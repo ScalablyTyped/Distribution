@@ -31,6 +31,7 @@ class ByteMatchSet protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf/byteMatchSet", "ByteMatchSet")
 @js.native
 object ByteMatchSet extends js.Object {

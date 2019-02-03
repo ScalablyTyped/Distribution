@@ -77,6 +77,7 @@ class PanelBar protected () extends Widget {
   def select_JQuery(): kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.PanelBar")
 @js.native
 object PanelBar extends js.Object {

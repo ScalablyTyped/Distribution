@@ -13,6 +13,7 @@ class ConcatStream protected ()
   var _sources: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/ConcatStream", "ConcatStream")
 @js.native
 object ConcatStream extends js.Object {

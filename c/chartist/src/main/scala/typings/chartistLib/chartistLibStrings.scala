@@ -12,7 +12,9 @@ object chartistLibStrings {
   @js.native
   sealed trait overlap extends js.Object
   
+  @scala.inline
   def accumulate: accumulate = "accumulate".asInstanceOf[accumulate]
+  @scala.inline
   def overlap: overlap = "overlap".asInstanceOf[overlap]
 }
 

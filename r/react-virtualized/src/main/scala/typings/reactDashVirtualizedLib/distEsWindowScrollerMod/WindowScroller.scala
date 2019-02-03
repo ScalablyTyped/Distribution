@@ -13,6 +13,7 @@ class WindowScroller ()
   def updatePosition(scrollElement: reactLib.HTMLElement): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/WindowScroller", "WindowScroller")
 @js.native
 object WindowScroller extends js.Object {

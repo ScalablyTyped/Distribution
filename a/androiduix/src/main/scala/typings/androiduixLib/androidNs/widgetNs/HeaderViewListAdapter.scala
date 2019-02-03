@@ -52,6 +52,7 @@ class HeaderViewListAdapter protected () extends WrapperListAdapter {
   override def unregisterDataSetObserver(observer: androiduixLib.androidNs.databaseNs.DataSetObserver): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.HeaderViewListAdapter")
 @js.native
 object HeaderViewListAdapter extends js.Object {

@@ -20,6 +20,7 @@ class UserPoolDomain protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomainArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "UserPoolDomain")
 @js.native
 object UserPoolDomain extends js.Object {

@@ -311,11 +311,7 @@ class StandardRenderingPipeline protected ()
   def serialize(): js.Any = js.native
 }
 
-/**
-  * Standard rendering pipeline
-  * Default pipeline should be used going forward but the standard pipeline will be kept for backwards compatibility.
-  * @see https://doc.babylonjs.com/how_to/using_standard_rendering_pipeline
-  */
+/* static members */
 @JSGlobal("BABYLON.StandardRenderingPipeline")
 @js.native
 object StandardRenderingPipeline extends js.Object {

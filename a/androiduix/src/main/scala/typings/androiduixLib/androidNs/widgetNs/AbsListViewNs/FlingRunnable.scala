@@ -25,6 +25,7 @@ class FlingRunnable protected ()
   def startSpringback(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.AbsListView.FlingRunnable")
 @js.native
 object FlingRunnable extends js.Object {

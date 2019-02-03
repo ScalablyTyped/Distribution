@@ -48,6 +48,7 @@ object efsNs extends js.Object {
     args: atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.efsGetMountTargetMod.GetMountTargetResult] = js.native
+  /* static members */
   @js.native
   object FileSystem extends js.Object {
     /**
@@ -72,6 +73,7 @@ object efsNs extends js.Object {
     ): atPulumiAwsLib.efsFileSystemMod.FileSystem = js.native
   }
   
+  /* static members */
   @js.native
   object MountTarget extends js.Object {
     /**

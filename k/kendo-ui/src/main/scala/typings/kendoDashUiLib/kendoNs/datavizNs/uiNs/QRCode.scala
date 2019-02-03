@@ -26,6 +26,7 @@ class QRCode protected ()
   def value(options: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.QRCode")
 @js.native
 object QRCode extends js.Object {

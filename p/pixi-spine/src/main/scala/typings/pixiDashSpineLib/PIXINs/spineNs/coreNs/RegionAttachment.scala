@@ -28,6 +28,7 @@ class RegionAttachment protected () extends Attachment {
   def updateOffset(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.RegionAttachment")
 @js.native
 object RegionAttachment extends js.Object {

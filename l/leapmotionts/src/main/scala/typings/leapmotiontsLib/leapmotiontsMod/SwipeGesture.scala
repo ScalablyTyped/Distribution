@@ -15,6 +15,7 @@ class SwipeGesture () extends Gesture {
   var startPosition: Vector3 = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "SwipeGesture")
 @js.native
 object SwipeGesture extends js.Object {

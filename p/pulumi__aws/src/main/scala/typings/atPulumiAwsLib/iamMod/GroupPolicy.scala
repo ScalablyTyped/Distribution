@@ -20,6 +20,7 @@ class GroupPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamGroupPolicyMod.GroupPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "GroupPolicy")
 @js.native
 object GroupPolicy extends js.Object {

@@ -48,19 +48,33 @@ object pickadateLibStrings {
   @js.native
   sealed trait view extends js.Object
   
+  @scala.inline
   def DOLLARnode: DOLLARnode = "$node".asInstanceOf[DOLLARnode]
+  @scala.inline
   def DOLLARroot: DOLLARroot = "$root".asInstanceOf[DOLLARroot]
+  @scala.inline
   def _hidden: _hidden = "_hidden".asInstanceOf[_hidden]
+  @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
+  @scala.inline
   def highlight: highlight = "highlight".asInstanceOf[highlight]
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def picker: picker = "picker".asInstanceOf[picker]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
   def view: view = "view".asInstanceOf[view]
 }
 

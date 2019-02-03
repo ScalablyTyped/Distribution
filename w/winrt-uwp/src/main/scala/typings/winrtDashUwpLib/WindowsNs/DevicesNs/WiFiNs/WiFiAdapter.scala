@@ -72,7 +72,7 @@ abstract class WiFiAdapter () extends js.Object {
   def scanAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Use this class to enumerate local Wi-Fi adapters, initiate Wi-Fi scans, enumerate scan results, and to connect or disconnect individual adapters. */
+/* static members */
 @JSGlobal("Windows.Devices.WiFi.WiFiAdapter")
 @js.native
 object WiFiAdapter extends js.Object {

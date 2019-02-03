@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CheckboxManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.form.CheckboxManager")
 @js.native
 object CheckboxManager extends js.Object {

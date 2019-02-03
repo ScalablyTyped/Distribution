@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StoreRequestHelper () extends js.Object
 
-/** Provides a helper method that can be used to send requests to the Windows Store for operations that do not yet have a corresponding API available in the Windows SDK. */
+/* static members */
 @JSGlobal("Windows.Services.Store.StoreRequestHelper")
 @js.native
 object StoreRequestHelper extends js.Object {

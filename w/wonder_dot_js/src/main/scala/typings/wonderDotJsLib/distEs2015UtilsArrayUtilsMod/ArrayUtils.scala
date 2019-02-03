@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayUtils () extends js.Object
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("wonder.js/dist/es2015/utils/ArrayUtils", "ArrayUtils")
+/* static members */
+@JSImport("wonder.js/dist/es2015/utils/ArrayUtils", "ArrayUtils")
 @js.native
 object ArrayUtils extends js.Object {
   def contain(arr: js.Array[_], item: js.Any): scala.Boolean = js.native

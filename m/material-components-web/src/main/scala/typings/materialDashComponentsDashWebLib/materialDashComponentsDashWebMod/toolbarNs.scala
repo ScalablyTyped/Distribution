@@ -16,11 +16,13 @@ object toolbarNs extends js.Object {
   class MDCToolbarFoundation ()
     extends atMaterialToolbarLib.atMaterialToolbarMod.MDCToolbarFoundation
   
+  /* static members */
   @js.native
   object MDCToolbar extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialToolbarLib.atMaterialToolbarMod.MDCToolbar = js.native
   }
   
+  /* static members */
   @js.native
   object MDCToolbarFoundation extends js.Object {
     val cssClasses: atMaterialToolbarLib.constantsMod.cssClasses = js.native

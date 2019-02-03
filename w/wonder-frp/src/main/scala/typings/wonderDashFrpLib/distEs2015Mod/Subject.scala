@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Subject ()
   extends wonderDashFrpLib.distEs2015SubjectSubjectMod.Subject
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "Subject")
 @js.native
 object Subject extends js.Object {

@@ -33,6 +33,7 @@ class Param protected () extends js.Object {
   def value(value: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/params/param", "Param")
 @js.native
 object Param extends js.Object {

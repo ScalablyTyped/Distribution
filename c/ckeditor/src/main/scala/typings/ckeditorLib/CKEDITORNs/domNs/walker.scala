@@ -22,6 +22,7 @@ class walker protected () extends js.Object {
   def reset(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.dom.walker")
 @js.native
 object walker extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Checkbox ()
   extends atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.Checkbox
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Checkbox")
 @js.native
 object Checkbox extends js.Object {

@@ -14,6 +14,7 @@ class ɵangular_packages_core_core_e protected ()
   def this(key: atAngularCoreLib.srcDiReflectiveUnderscoreKeyMod.ReflectiveKey, optional: scala.Boolean, visibility: atAngularCoreLib.srcDiMetadataMod.SkipSelf) = this()
 }
 
+/* static members */
 @JSImport("@angular/core", "ɵangular_packages_core_core_e")
 @js.native
 object ɵangular_packages_core_core_e extends js.Object {

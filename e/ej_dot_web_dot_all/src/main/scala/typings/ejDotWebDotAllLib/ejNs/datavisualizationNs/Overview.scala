@@ -18,6 +18,7 @@ class Overview protected ()
   var model_Overview: ejDotWebDotAllLib.ejNs.datavisualizationNs.OverviewNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Overview")
 @js.native
 object Overview extends js.Object {

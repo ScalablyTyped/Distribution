@@ -42,17 +42,29 @@ object sharpLibStrings {
   @js.native
   sealed trait outside extends js.Object
   
+  @scala.inline
   def and: and = "and".asInstanceOf[and]
+  @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
+  @scala.inline
   def cubic: cubic = "cubic".asInstanceOf[cubic]
+  @scala.inline
   def eor: eor = "eor".asInstanceOf[eor]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def inside: inside = "inside".asInstanceOf[inside]
+  @scala.inline
   def lanczos2: lanczos2 = "lanczos2".asInstanceOf[lanczos2]
+  @scala.inline
   def lanczos3: lanczos3 = "lanczos3".asInstanceOf[lanczos3]
+  @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
   def or: or = "or".asInstanceOf[or]
+  @scala.inline
   def outside: outside = "outside".asInstanceOf[outside]
 }
 

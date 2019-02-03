@@ -61,6 +61,7 @@ object ecrNs extends js.Object {
     args: atPulumiAwsLib.ecrGetRepositoryMod.GetRepositoryArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ecrGetRepositoryMod.GetRepositoryResult] = js.native
+  /* static members */
   @js.native
   object LifecyclePolicy extends js.Object {
     /**
@@ -85,6 +86,7 @@ object ecrNs extends js.Object {
     ): atPulumiAwsLib.ecrLifecyclePolicyMod.LifecyclePolicy = js.native
   }
   
+  /* static members */
   @js.native
   object Repository extends js.Object {
     /**
@@ -109,6 +111,7 @@ object ecrNs extends js.Object {
     ): atPulumiAwsLib.ecrRepositoryMod.Repository = js.native
   }
   
+  /* static members */
   @js.native
   object RepositoryPolicy extends js.Object {
     /**

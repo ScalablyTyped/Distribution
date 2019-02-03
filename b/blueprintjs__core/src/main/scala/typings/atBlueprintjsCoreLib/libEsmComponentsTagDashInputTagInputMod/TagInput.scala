@@ -41,6 +41,7 @@ class TagInput ()
   /* private */ def removeIndexFromValues(index: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput")
 @js.native
 object TagInput extends js.Object {

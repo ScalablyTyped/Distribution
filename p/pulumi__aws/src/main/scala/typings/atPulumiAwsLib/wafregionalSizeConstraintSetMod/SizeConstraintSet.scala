@@ -29,6 +29,7 @@ class SizeConstraintSet protected ()
   val sizeConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ComparisonOperator]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/sizeConstraintSet", "SizeConstraintSet")
 @js.native
 object SizeConstraintSet extends js.Object {

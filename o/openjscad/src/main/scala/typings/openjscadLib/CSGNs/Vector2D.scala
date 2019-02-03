@@ -39,6 +39,7 @@ class Vector2D protected ()
   def unit(): Vector2D = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Vector2D")
 @js.native
 object Vector2D extends js.Object {

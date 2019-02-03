@@ -36,6 +36,7 @@ class Alias protected ()
   val routingStrategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_FleetId] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift/alias", "Alias")
 @js.native
 object Alias extends js.Object {

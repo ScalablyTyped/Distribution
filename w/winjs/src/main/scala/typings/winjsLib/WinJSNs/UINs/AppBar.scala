@@ -120,11 +120,7 @@ class AppBar () extends js.Object {
   def showOnlyCommands(commands: js.Array[java.lang.String | ICommand]): scala.Unit = js.native
 }
 
-//#endregion Interfaces
-//#region Objects
-/**
-  * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.AppBar")
 @js.native
 object AppBar extends js.Object {

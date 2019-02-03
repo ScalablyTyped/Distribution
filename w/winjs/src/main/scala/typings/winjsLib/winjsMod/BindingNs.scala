@@ -173,9 +173,7 @@ object BindingNs extends js.Object {
     * @returns If the specified object is an observable proxy, the original object is returned, otherwise the same object is returned.
     **/
   def unwrap(data: js.Any): js.Any = js.native
-  /**
-    * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
-    **/
+  /* static members */
   @js.native
   object List extends js.Object {
     /**
@@ -184,9 +182,7 @@ object BindingNs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Provides a reusable declarative binding element.
-    **/
+  /* static members */
   @js.native
   object Template extends js.Object {
     /**

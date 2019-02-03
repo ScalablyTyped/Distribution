@@ -30,15 +30,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.RotateOptions) = this()
 }
 
-/**
-  * @classdesc
-  * A button control to reset rotation to 0.
-  * To style this control use css selector `.ol-rotate`. A `.ol-hidden` css
-  * selector is added to the button when the rotation is 0.
-  *
-  * @param opt_options Rotate options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/control/rotate", JSImport.Default)
 @js.native
 object default extends js.Object {

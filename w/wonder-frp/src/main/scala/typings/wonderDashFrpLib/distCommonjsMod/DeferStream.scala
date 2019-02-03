@@ -12,6 +12,7 @@ class DeferStream protected ()
   def this(buildStreamFunc: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "DeferStream")
 @js.native
 object DeferStream extends js.Object {

@@ -169,6 +169,7 @@ class BigInteger protected () extends js.Object {
   def xor(a: BigInteger): BigInteger = js.native
 }
 
+/* static members */
 @JSImport("jsbn", "BigInteger")
 @js.native
 object BigInteger extends js.Object {

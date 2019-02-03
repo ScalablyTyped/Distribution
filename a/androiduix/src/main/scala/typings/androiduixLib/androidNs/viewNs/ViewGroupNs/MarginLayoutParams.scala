@@ -24,6 +24,7 @@ class MarginLayoutParams protected () extends LayoutParams {
   def setMargins(left: scala.Double, top: scala.Double, right: scala.Double, bottom: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ViewGroup.MarginLayoutParams")
 @js.native
 object MarginLayoutParams extends js.Object {

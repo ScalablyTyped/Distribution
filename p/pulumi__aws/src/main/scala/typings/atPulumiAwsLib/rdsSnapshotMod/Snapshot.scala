@@ -94,6 +94,7 @@ class Snapshot protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds/snapshot", "Snapshot")
 @js.native
 object Snapshot extends js.Object {

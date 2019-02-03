@@ -18,9 +18,13 @@ object broDashFsLibStrings {
   @js.native
   sealed trait Text extends js.Object
   
+  @scala.inline
   def ArrayBuffer: ArrayBuffer = "ArrayBuffer".asInstanceOf[ArrayBuffer]
+  @scala.inline
   def BinaryString: BinaryString = "BinaryString".asInstanceOf[BinaryString]
+  @scala.inline
   def DataURL: DataURL = "DataURL".asInstanceOf[DataURL]
+  @scala.inline
   def Text: Text = "Text".asInstanceOf[Text]
 }
 

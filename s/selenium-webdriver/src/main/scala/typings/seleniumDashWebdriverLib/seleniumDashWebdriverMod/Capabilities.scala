@@ -86,6 +86,7 @@ class Capabilities () extends js.Object {
   def toJSON(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver", "Capabilities")
 @js.native
 object Capabilities extends js.Object {

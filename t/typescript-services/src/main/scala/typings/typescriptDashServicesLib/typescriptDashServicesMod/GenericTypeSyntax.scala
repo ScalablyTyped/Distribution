@@ -12,6 +12,7 @@ class GenericTypeSyntax protected ()
   def this(name: typescriptDashServicesLib.TypeScriptNs.INameSyntax, typeArgumentList: typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "GenericTypeSyntax")
 @js.native
 object GenericTypeSyntax extends js.Object {

@@ -21,6 +21,7 @@ class GeoMatchSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalGeoMatchSetMod.GeoMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional", "GeoMatchSet")
 @js.native
 object GeoMatchSet extends js.Object {

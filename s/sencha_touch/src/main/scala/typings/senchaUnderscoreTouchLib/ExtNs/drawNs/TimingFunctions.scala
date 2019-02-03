@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TimingFunctions () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.TimingFunctions")
 @js.native
 object TimingFunctions extends js.Object {

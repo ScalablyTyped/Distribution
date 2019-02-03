@@ -11,6 +11,7 @@ class default protected () extends RadioGroup {
   def this(props: antdLib.libRadioInterfaceMod.RadioGroupProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/radio/group", JSImport.Default)
 @js.native
 object default extends js.Object {

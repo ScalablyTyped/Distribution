@@ -101,7 +101,7 @@ class BackgroundUploader () extends js.Object {
   def setRequestHeader(headerName: java.lang.String, headerValue: java.lang.String): scala.Unit = js.native
 }
 
-/** Used to configure upload prior to the actual creation of the upload operation using CreateUpload . For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
 @js.native
 object BackgroundUploader extends js.Object {

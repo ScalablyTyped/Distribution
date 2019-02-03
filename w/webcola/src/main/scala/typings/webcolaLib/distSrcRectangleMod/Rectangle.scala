@@ -28,6 +28,7 @@ class Rectangle protected () extends js.Object {
   def width(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/rectangle", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

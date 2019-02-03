@@ -90,6 +90,7 @@ class Composite ()
   override var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Composite")
 @js.native
 object Composite extends js.Object {

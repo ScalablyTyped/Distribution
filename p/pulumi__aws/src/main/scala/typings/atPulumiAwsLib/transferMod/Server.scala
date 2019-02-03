@@ -21,6 +21,7 @@ class Server protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.transferServerMod.ServerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/transfer", "Server")
 @js.native
 object Server extends js.Object {

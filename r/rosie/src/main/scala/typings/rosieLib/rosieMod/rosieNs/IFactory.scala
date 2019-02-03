@@ -121,8 +121,17 @@ trait IFactory[T] extends js.Object {
     * @return {object}
     */
   def attributes(): T = js.native
-  def attributes(attributes: rosieLib.rosieLibStrings.IFactory with T): T = js.native
-  def attributes(attributes: rosieLib.rosieLibStrings.IFactory with T, options: js.Any): T = js.native
+  def attributes(
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T
+  ): T = js.native
+  def attributes(
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T,
+    options: js.Any
+  ): T = js.native
   /**
     * Convenience function for defining a set of attributes on this object as
     * builder functions or static values. If you need to specify dependencies,
@@ -138,7 +147,11 @@ trait IFactory[T] extends js.Object {
     * @param {object} attributes
     * @return {Factory}
     */
-  def attrs(attributes: rosieLib.rosieLibStrings.IFactory with T): IFactory[T] = js.native
+  def attrs(
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: T[K] | (opts? : any): T[K]}
+    */ rosieLib.rosieLibStrings.IFactory with js.Any
+  ): IFactory[T] = js.native
   /**
     * Builds objects by getting values for all attributes and optionally passing
     * the result to a constructor function.
@@ -148,11 +161,31 @@ trait IFactory[T] extends js.Object {
     * @return {*}
     */
   def build(): T = js.native
-  def build(attributes: rosieLib.rosieLibStrings.IFactory with T): T = js.native
-  def build(attributes: rosieLib.rosieLibStrings.IFactory with T, options: js.Any): T = js.native
+  def build(
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T
+  ): T = js.native
+  def build(
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T,
+    options: js.Any
+  ): T = js.native
   def buildList(size: scala.Double): js.Array[T] = js.native
-  def buildList(size: scala.Double, attributes: rosieLib.rosieLibStrings.IFactory with T): js.Array[T] = js.native
-  def buildList(size: scala.Double, attributes: rosieLib.rosieLibStrings.IFactory with T, options: js.Any): js.Array[T] = js.native
+  def buildList(
+    size: scala.Double,
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T
+  ): js.Array[T] = js.native
+  def buildList(
+    size: scala.Double,
+    attributes: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]:? T[k]}
+    */ rosieLib.rosieLibStrings.IFactory with T,
+    options: js.Any
+  ): js.Array[T] = js.native
   /**
     * Extends a given factory by copying over its attributes, options,
     * callbacks, and constructor. This can be useful when you want to make

@@ -44,6 +44,7 @@ class Month ()
   override def value(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Month")
 @js.native
 object Month extends js.Object {

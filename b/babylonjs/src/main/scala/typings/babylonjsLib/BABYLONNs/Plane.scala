@@ -79,9 +79,7 @@ class Plane protected () extends js.Object {
   def transform(transformation: Matrix): Plane = js.native
 }
 
-/**
-  * Represens a plane by the equation ax + by + cz + d = 0
-  */
+/* static members */
 @JSGlobal("BABYLON.Plane")
 @js.native
 object Plane extends js.Object {

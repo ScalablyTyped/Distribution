@@ -20,6 +20,7 @@ class ArrayTypeSyntax protected () extends SyntaxNode {
   def withType(`type`: ITypeSyntax): ArrayTypeSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ArrayTypeSyntax")
 @js.native
 object ArrayTypeSyntax extends js.Object {

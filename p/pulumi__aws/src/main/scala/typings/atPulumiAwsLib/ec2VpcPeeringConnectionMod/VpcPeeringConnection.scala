@@ -62,6 +62,7 @@ class VpcPeeringConnection protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcPeeringConnection", "VpcPeeringConnection")
 @js.native
 object VpcPeeringConnection extends js.Object {

@@ -16,6 +16,7 @@ class ConstraintSyntax protected () extends SyntaxNode {
   def withType(`type`: ITypeSyntax): ConstraintSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ConstraintSyntax")
 @js.native
 object ConstraintSyntax extends js.Object {

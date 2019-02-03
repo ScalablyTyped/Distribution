@@ -20,6 +20,7 @@ class Function protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lambdaFunctionMod.FunctionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda", "Function")
 @js.native
 object Function extends js.Object {

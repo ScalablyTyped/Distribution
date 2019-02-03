@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Clone () extends js.Object
 
+/* static members */
 @JSImport("nodegit/clone", "Clone")
 @js.native
 object Clone extends js.Object {

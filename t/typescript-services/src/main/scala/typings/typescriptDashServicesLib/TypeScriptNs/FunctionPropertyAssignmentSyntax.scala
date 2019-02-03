@@ -20,6 +20,7 @@ class FunctionPropertyAssignmentSyntax protected () extends SyntaxNode {
   def withPropertyName(propertyName: ISyntaxToken): FunctionPropertyAssignmentSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.FunctionPropertyAssignmentSyntax")
 @js.native
 object FunctionPropertyAssignmentSyntax extends js.Object {

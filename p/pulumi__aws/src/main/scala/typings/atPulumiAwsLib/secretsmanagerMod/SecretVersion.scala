@@ -20,6 +20,7 @@ class SecretVersion protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.secretsmanagerSecretVersionMod.SecretVersionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/secretsmanager", "SecretVersion")
 @js.native
 object SecretVersion extends js.Object {

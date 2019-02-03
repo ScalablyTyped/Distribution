@@ -24,6 +24,7 @@ class MDCList protected () extends js.Object {
   def layout(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/list", "MDCList")
 @js.native
 object MDCList extends js.Object {

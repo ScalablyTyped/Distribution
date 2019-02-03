@@ -75,6 +75,7 @@ class ArrayLiteralExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ArrayLiteralExpressionSyntax")
 @js.native
 object ArrayLiteralExpressionSyntax extends js.Object {

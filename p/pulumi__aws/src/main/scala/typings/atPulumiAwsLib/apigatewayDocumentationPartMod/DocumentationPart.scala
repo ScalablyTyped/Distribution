@@ -32,6 +32,7 @@ class DocumentationPart protected ()
   val restApiId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart")
 @js.native
 object DocumentationPart extends js.Object {

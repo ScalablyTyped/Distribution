@@ -13,6 +13,7 @@ class namespaced[T /* <: js.Object | java.lang.String */] protected () extends F
   def this(haystack: js.Array[T], keys: js.Array[java.lang.String], options: fuzzyDashSearchLib.fuzzyDashSearchMod.FuzzySearchNs.Options) = this()
 }
 
+/* static members */
 @JSImport("fuzzy-search", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

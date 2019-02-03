@@ -37,6 +37,7 @@ class ImageryLayer protected ()
   override def isDestroyed(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "ImageryLayer")
 @js.native
 object ImageryLayer extends js.Object {

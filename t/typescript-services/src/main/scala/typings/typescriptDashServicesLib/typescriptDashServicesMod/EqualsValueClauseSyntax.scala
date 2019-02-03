@@ -12,6 +12,7 @@ class EqualsValueClauseSyntax protected ()
   def this(equalsToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, value: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "EqualsValueClauseSyntax")
 @js.native
 object EqualsValueClauseSyntax extends js.Object {

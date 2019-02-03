@@ -50,12 +50,14 @@ object extrasNs extends js.Object {
     def this(renderer: pixiDotJsLib.PIXINs.WebGLRenderer) = this()
   }
   
+  /* static members */
   @js.native
   object AnimatedSprite extends js.Object {
     def fromFrames(frame: js.Array[java.lang.String]): pixiDotJsLib.PIXINs.extrasNs.AnimatedSprite = js.native
     def fromImages(images: js.Array[java.lang.String]): pixiDotJsLib.PIXINs.extrasNs.AnimatedSprite = js.native
   }
   
+  /* static members */
   @js.native
   object BitmapText extends js.Object {
     var fonts: js.Any = js.native
@@ -67,6 +69,7 @@ object extrasNs extends js.Object {
     def registerFont(xml: stdLib.XMLDocument, textures: pixiDotJsLib.PIXINs.Texture): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object TilingSprite extends js.Object {
     def from(source: java.lang.String): pixiDotJsLib.PIXINs.extrasNs.TilingSprite = js.native

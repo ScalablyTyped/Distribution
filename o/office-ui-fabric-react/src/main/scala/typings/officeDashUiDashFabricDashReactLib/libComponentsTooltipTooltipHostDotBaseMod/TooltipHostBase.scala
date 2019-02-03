@@ -37,6 +37,7 @@ class TooltipHostBase protected ()
   override def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Tooltip/TooltipHost.base", "TooltipHostBase")
 @js.native
 object TooltipHostBase extends js.Object {

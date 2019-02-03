@@ -23,6 +23,7 @@ class namespaced () extends Subsume {
   override def parse(text: java.lang.String): subsumeLib.subsumeMod.SubsumeNs.ParseResult = js.native
 }
 
+/* static members */
 @JSImport("subsume", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -45,6 +45,7 @@ class VertexArrayObject protected () extends js.Object {
   def unbind(): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.glCore.VertexArrayObject")
 @js.native
 object VertexArrayObject extends js.Object {

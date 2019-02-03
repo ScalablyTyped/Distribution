@@ -96,9 +96,7 @@ class DatePicker () extends js.Object {
   def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Allows users to pick a date value.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.DatePicker")
 @js.native
 object DatePicker extends js.Object {

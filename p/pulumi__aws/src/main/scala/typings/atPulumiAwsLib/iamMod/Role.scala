@@ -20,6 +20,7 @@ class Role protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamRoleMod.RoleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "Role")
 @js.native
 object Role extends js.Object {

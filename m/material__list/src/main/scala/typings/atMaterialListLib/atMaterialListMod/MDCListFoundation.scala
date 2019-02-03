@@ -12,6 +12,7 @@ class MDCListFoundation protected ()
   def this(adapter: atMaterialListLib.adapterMod.MDCListAdapter) = this()
 }
 
+/* static members */
 @JSImport("@material/list", "MDCListFoundation")
 @js.native
 object MDCListFoundation extends js.Object {

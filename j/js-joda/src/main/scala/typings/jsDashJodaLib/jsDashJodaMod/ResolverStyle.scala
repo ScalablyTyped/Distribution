@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ResolverStyle ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ResolverStyle
 
+/* static members */
 @JSImport("js-joda", "ResolverStyle")
 @js.native
 object ResolverStyle extends js.Object {

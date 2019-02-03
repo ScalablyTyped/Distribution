@@ -29,6 +29,7 @@ class Project protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/devicefarm/project", "Project")
 @js.native
 object Project extends js.Object {

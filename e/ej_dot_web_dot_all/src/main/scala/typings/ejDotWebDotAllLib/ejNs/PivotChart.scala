@@ -73,6 +73,7 @@ class PivotChart protected () extends Widget {
   def setPivotEngine(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotChart")
 @js.native
 object PivotChart extends js.Object {

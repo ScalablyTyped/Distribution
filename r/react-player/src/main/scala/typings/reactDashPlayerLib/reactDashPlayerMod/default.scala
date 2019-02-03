@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends ReactPlayer
 
+/* static members */
 @JSImport("react-player", JSImport.Default)
 @js.native
 object default extends js.Object {

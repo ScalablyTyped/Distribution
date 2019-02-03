@@ -17,6 +17,7 @@ class Resizable protected () extends Widget {
   var model_Resizable: ejDotWebDotAllLib.ejNs.ResizableNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Resizable")
 @js.native
 object Resizable extends js.Object {

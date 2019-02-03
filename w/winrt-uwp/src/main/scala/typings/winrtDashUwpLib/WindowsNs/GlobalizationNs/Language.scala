@@ -30,7 +30,7 @@ class Language protected () extends js.Object {
   def getExtensionSubtags(singleton: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[java.lang.String] = js.native
 }
 
-/** A class that provides information related to BCP-47 language tags such as the language name and the script. */
+/* static members */
 @JSGlobal("Windows.Globalization.Language")
 @js.native
 object Language extends js.Object {

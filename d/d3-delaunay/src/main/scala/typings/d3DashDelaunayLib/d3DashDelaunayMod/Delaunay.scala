@@ -131,6 +131,7 @@ class Delaunay[P] protected () extends js.Object {
   def voronoi(bounds: d3DashDelaunayLib.d3DashDelaunayMod.DelaunayNs.Bounds): Voronoi[P] = js.native
 }
 
+/* static members */
 @JSImport("d3-delaunay", "Delaunay")
 @js.native
 object Delaunay extends js.Object {

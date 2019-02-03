@@ -53,6 +53,7 @@ class DocumentEditor protected () extends Widget {
   def setZoomFactor(factor: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.DocumentEditor")
 @js.native
 object DocumentEditor extends js.Object {

@@ -41,6 +41,7 @@ class CustomEventListenerMap ()
   def removeChild(uid: scala.Double, eventName: wonderDotJsLib.distEs2015EventObjectEventNameHandlerMod.EEventName): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/structure/CustomEventListenerMap", "CustomEventListenerMap")
 @js.native
 object CustomEventListenerMap extends js.Object {

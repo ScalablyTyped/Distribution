@@ -21,10 +21,15 @@ object cacheableDashRequestLibStrings {
   @js.native
   sealed trait response extends js.Object
   
+  @scala.inline
   def CacheError: CacheError = "CacheError".asInstanceOf[CacheError]
+  @scala.inline
   def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
 }
 

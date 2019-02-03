@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CertificateEnrollmentManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
 @js.native
 object CertificateEnrollmentManager extends js.Object {

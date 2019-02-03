@@ -12,6 +12,7 @@ class Calendar protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsCalendarCalendarDotTypesMod.ICalendarProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Calendar", "Calendar")
 @js.native
 object Calendar extends js.Object {

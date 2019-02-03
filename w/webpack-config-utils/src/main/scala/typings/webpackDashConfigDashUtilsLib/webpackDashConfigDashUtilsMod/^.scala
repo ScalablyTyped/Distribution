@@ -15,9 +15,15 @@ object ^ extends js.Object {
       webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars | java.lang.String
     ]
   ): webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.IfUtils = js.native
-  def getIfUtils[E /* <: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars | java.lang.String */](env: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.getIfUtils with js.Any): webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.IfUtils = js.native
   def getIfUtils[E /* <: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars | java.lang.String */](
-    env: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.getIfUtils with js.Any,
+    env: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in E ]: boolean | string}
+    */ webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.getIfUtils with js.Any
+  ): webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.IfUtils = js.native
+  def getIfUtils[E /* <: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars | java.lang.String */](
+    env: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in E ]: boolean | string}
+    */ webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.getIfUtils with js.Any,
     vars: js.Array[
       webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.EnvVars | java.lang.String
     ]
@@ -26,7 +32,11 @@ object ^ extends js.Object {
   def propIf[E](a: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.Falsy, value: js.Any, alternate: E): E = js.native
   def propIfNot[E](a: js.Any, value: js.Any, alternate: E): E = js.native
   def propIfNot[I](a: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.Falsy, value: I, alternate: js.Any): I = js.native
-  def removeEmpty[T](input: webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.removeEmpty with T): webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.NonEmptyObject[T, webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.DefinedObjKeys[T]] = js.native
+  def removeEmpty[T](
+    input: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: T[P]}
+    */ webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.removeEmpty with T
+  ): webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.NonEmptyObject[T, webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsMod.DefinedObjKeys[T]] = js.native
   def removeEmpty[T](input: js.Array[js.UndefOr[T]]): js.Array[T] = js.native
 }
 

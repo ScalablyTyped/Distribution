@@ -18,9 +18,13 @@ object bootstrapDash3DashTypeaheadLibStrings {
   @js.native
   sealed trait lookup extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def getActive: getActive = "getActive".asInstanceOf[getActive]
+  @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
 }
 

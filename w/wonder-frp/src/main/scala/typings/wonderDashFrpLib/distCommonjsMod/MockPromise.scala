@@ -12,6 +12,7 @@ class MockPromise protected ()
   def this(scheduler: wonderDashFrpLib.distCommonjsTestingTestSchedulerMod.TestScheduler, messages: js.Array[wonderDashFrpLib.distCommonjsTestingRecordMod.Record]) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "MockPromise")
 @js.native
 object MockPromise extends js.Object {

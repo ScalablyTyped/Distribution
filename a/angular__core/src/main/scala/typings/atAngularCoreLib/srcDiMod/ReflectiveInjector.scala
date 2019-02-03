@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class ReflectiveInjector ()
   extends atAngularCoreLib.srcDiReflectiveUnderscoreInjectorMod.ReflectiveInjector
 
+/* static members */
 @JSImport("@angular/core/src/di", "ReflectiveInjector")
 @js.native
 object ReflectiveInjector extends js.Object {

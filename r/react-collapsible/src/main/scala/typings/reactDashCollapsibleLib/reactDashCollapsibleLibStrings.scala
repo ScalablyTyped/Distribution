@@ -27,12 +27,19 @@ object reactDashCollapsibleLibStrings {
   @js.native
   sealed trait visible extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
+  @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
 }
 

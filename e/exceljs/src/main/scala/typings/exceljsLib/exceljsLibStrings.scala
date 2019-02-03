@@ -300,103 +300,201 @@ object exceljsLibStrings {
   @js.native
   sealed trait whole extends js.Object
   
+  @scala.inline
   def `#DIV/0!`: `#DIV/0!` = "#DIV/0!".asInstanceOf[`#DIV/0!`]
+  @scala.inline
   def `#N/A`: `#N/A` = "#N/A".asInstanceOf[`#N/A`]
+  @scala.inline
   def `#NAME?`: `#NAME?` = "#NAME?".asInstanceOf[`#NAME?`]
+  @scala.inline
   def `#NULL!`: `#NULL!` = "#NULL!".asInstanceOf[`#NULL!`]
+  @scala.inline
   def `#NUM!`: `#NUM!` = "#NUM!".asInstanceOf[`#NUM!`]
+  @scala.inline
   def `#REF!`: `#REF!` = "#REF!".asInstanceOf[`#REF!`]
+  @scala.inline
   def `#VALUE!`: `#VALUE!` = "#VALUE!".asInstanceOf[`#VALUE!`]
+  @scala.inline
   def NA: NA = "NA".asInstanceOf[NA]
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
+  @scala.inline
   def angle: angle = "angle".asInstanceOf[angle]
+  @scala.inline
   def asDisplayed: asDisplayed = "asDisplayed".asInstanceOf[asDisplayed]
+  @scala.inline
   def atEnd: atEnd = "atEnd".asInstanceOf[atEnd]
+  @scala.inline
   def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def blank: blank = "blank".asInstanceOf[blank]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def centerContinuous: centerContinuous = "centerContinuous".asInstanceOf[centerContinuous]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
   def darkDown: darkDown = "darkDown".asInstanceOf[darkDown]
+  @scala.inline
   def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
+  @scala.inline
   def darkGrid: darkGrid = "darkGrid".asInstanceOf[darkGrid]
+  @scala.inline
   def darkHorizontal: darkHorizontal = "darkHorizontal".asInstanceOf[darkHorizontal]
+  @scala.inline
   def darkTrellis: darkTrellis = "darkTrellis".asInstanceOf[darkTrellis]
+  @scala.inline
   def darkUp: darkUp = "darkUp".asInstanceOf[darkUp]
+  @scala.inline
   def darkVertical: darkVertical = "darkVertical".asInstanceOf[darkVertical]
+  @scala.inline
   def dash: dash = "dash".asInstanceOf[dash]
+  @scala.inline
   def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
+  @scala.inline
   def dashDotDot: dashDotDot = "dashDotDot".asInstanceOf[dashDotDot]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
+  @scala.inline
   def displayed: displayed = "displayed".asInstanceOf[displayed]
+  @scala.inline
   def distributed: distributed = "distributed".asInstanceOf[distributed]
+  @scala.inline
   def dotted: dotted = "dotted".asInstanceOf[dotted]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def doubleAccounting: doubleAccounting = "doubleAccounting".asInstanceOf[doubleAccounting]
+  @scala.inline
   def downThenOver: downThenOver = "downThenOver".asInstanceOf[downThenOver]
+  @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def frozen: frozen = "frozen".asInstanceOf[frozen]
+  @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
+  @scala.inline
   def gradient: gradient = "gradient".asInstanceOf[gradient]
+  @scala.inline
   def gray0625: gray0625 = "gray0625".asInstanceOf[gray0625]
+  @scala.inline
   def gray125: gray125 = "gray125".asInstanceOf[gray125]
+  @scala.inline
   def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
+  @scala.inline
   def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
+  @scala.inline
   def hair: hair = "hair".asInstanceOf[hair]
+  @scala.inline
   def jpeg: jpeg = "jpeg".asInstanceOf[jpeg]
+  @scala.inline
   def justify: justify = "justify".asInstanceOf[justify]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
+  @scala.inline
   def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
+  @scala.inline
   def lightDown: lightDown = "lightDown".asInstanceOf[lightDown]
+  @scala.inline
   def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
+  @scala.inline
   def lightGrid: lightGrid = "lightGrid".asInstanceOf[lightGrid]
+  @scala.inline
   def lightHorizontal: lightHorizontal = "lightHorizontal".asInstanceOf[lightHorizontal]
+  @scala.inline
   def lightTrellis: lightTrellis = "lightTrellis".asInstanceOf[lightTrellis]
+  @scala.inline
   def lightUp: lightUp = "lightUp".asInstanceOf[lightUp]
+  @scala.inline
   def lightVertical: lightVertical = "lightVertical".asInstanceOf[lightVertical]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def major: major = "major".asInstanceOf[major]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def mediumDashDot: mediumDashDot = "mediumDashDot".asInstanceOf[mediumDashDot]
+  @scala.inline
   def mediumDashDotDot: mediumDashDotDot = "mediumDashDotDot".asInstanceOf[mediumDashDotDot]
+  @scala.inline
   def mediumDashed: mediumDashed = "mediumDashed".asInstanceOf[mediumDashed]
+  @scala.inline
   def mediumGray: mediumGray = "mediumGray".asInstanceOf[mediumGray]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def minor: minor = "minor".asInstanceOf[minor]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def notBetween: notBetween = "notBetween".asInstanceOf[notBetween]
+  @scala.inline
   def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
+  @scala.inline
   def overThenDown: overThenDown = "overThenDown".asInstanceOf[overThenDown]
+  @scala.inline
   def pageBreakPreview: pageBreakPreview = "pageBreakPreview".asInstanceOf[pageBreakPreview]
+  @scala.inline
   def pageLayout: pageLayout = "pageLayout".asInstanceOf[pageLayout]
+  @scala.inline
   def path: path = "path".asInstanceOf[path]
+  @scala.inline
   def pattern: pattern = "pattern".asInstanceOf[pattern]
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def promise: promise = "promise".asInstanceOf[promise]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
   def singleAccounting: singleAccounting = "singleAccounting".asInstanceOf[singleAccounting]
+  @scala.inline
   def slantDashDot: slantDashDot = "slantDashDot".asInstanceOf[slantDashDot]
+  @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
   def split: split = "split".asInstanceOf[split]
+  @scala.inline
   def textLength: textLength = "textLength".asInstanceOf[textLength]
+  @scala.inline
   def thick: thick = "thick".asInstanceOf[thick]
+  @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def whole: whole = "whole".asInstanceOf[whole]
 }
 

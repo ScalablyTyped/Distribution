@@ -32,7 +32,7 @@ abstract class GpioController () extends js.Object {
   def tryOpenPin(pinNumber: scala.Double, sharingMode: GpioSharingMode): winrtDashUwpLib.Anon_OpenStatus = js.native
 }
 
-/** Represents the default general-purpose I/O (GPIO) controller for the system. */
+/* static members */
 @JSGlobal("Windows.Devices.Gpio.GpioController")
 @js.native
 object GpioController extends js.Object {

@@ -25,6 +25,7 @@ class PullInstantiatedTypeReferenceSymbol protected () extends PullTypeReference
   /* private */ def populateInstantiatedMemberFromReferencedMember(referencedMember: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullInstantiatedTypeReferenceSymbol")
 @js.native
 object PullInstantiatedTypeReferenceSymbol extends js.Object {

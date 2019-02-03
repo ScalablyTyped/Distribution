@@ -58,6 +58,7 @@ class IslandManager ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("p2", "IslandManager")
 @js.native
 object IslandManager extends js.Object {

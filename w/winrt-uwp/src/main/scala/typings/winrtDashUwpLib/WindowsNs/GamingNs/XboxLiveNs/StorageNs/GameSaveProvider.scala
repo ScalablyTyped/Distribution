@@ -43,7 +43,7 @@ abstract class GameSaveProvider () extends js.Object {
   def getRemainingBytesInQuotaAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
 }
 
-/** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+/* static members */
 @JSGlobal("Windows.Gaming.XboxLive.Storage.GameSaveProvider")
 @js.native
 object GameSaveProvider extends js.Object {

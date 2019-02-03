@@ -38,6 +38,7 @@ class TagCloud protected () extends Widget {
   def removeAt(position: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.TagCloud")
 @js.native
 object TagCloud extends js.Object {

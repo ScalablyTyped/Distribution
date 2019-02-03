@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextConstants () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.Text.TextConstants")
 @js.native
 object TextConstants extends js.Object {

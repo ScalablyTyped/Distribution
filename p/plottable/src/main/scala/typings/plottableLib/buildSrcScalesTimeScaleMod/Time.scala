@@ -27,6 +27,7 @@ class Time ()
   def tickInterval(interval: java.lang.String, step: scala.Double, useUTC: scala.Boolean): js.Array[stdLib.Date] = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales/timeScale", "Time")
 @js.native
 object Time extends js.Object {

@@ -12,6 +12,7 @@ class FunctionExpressionSyntax protected ()
   def this(functionKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "FunctionExpressionSyntax")
 @js.native
 object FunctionExpressionSyntax extends js.Object {

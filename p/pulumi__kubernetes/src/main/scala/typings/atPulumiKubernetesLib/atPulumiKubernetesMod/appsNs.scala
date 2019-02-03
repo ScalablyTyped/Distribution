@@ -202,16 +202,7 @@ object appsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.appsNs.v1Ns.StatefulSetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
-      * for serializing and deserializing the objects that contain their internal state. Once a
-      * ControllerRevision has been successfully created, it can not be updated. The API Server will
-      * fail validation of all requests that attempt to mutate the Data field. ControllerRevisions
-      * may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet
-      * controllers for update and rollback, this object is beta. However, it may be subject to name
-      * and representation changes in future releases, and clients should not depend on its
-      * stability. It is primarily for internal use by controllers.
-      */
+    /* static members */
     @js.native
     object ControllerRevision extends js.Object {
       /**
@@ -234,9 +225,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.ControllerRevision = js.native
     }
     
-    /**
-      * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
-      */
+    /* static members */
     @js.native
     object ControllerRevisionList extends js.Object {
       /**
@@ -259,9 +248,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.ControllerRevisionList = js.native
     }
     
-    /**
-      * DaemonSet represents the configuration of a daemon set.
-      */
+    /* static members */
     @js.native
     object DaemonSet extends js.Object {
       /**
@@ -284,9 +271,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.DaemonSet = js.native
     }
     
-    /**
-      * DaemonSetList is a collection of daemon sets.
-      */
+    /* static members */
     @js.native
     object DaemonSetList extends js.Object {
       /**
@@ -309,9 +294,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.DaemonSetList = js.native
     }
     
-    /**
-      * Deployment enables declarative updates for Pods and ReplicaSets.
-      */
+    /* static members */
     @js.native
     object Deployment extends js.Object {
       /**
@@ -334,9 +317,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.Deployment = js.native
     }
     
-    /**
-      * DeploymentList is a list of Deployments.
-      */
+    /* static members */
     @js.native
     object DeploymentList extends js.Object {
       /**
@@ -359,9 +340,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.DeploymentList = js.native
     }
     
-    /**
-      * ReplicaSet ensures that a specified number of pod replicas are running at any given time.
-      */
+    /* static members */
     @js.native
     object ReplicaSet extends js.Object {
       /**
@@ -384,9 +363,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.ReplicaSet = js.native
     }
     
-    /**
-      * ReplicaSetList is a collection of ReplicaSets.
-      */
+    /* static members */
     @js.native
     object ReplicaSetList extends js.Object {
       /**
@@ -409,13 +386,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.ReplicaSetList = js.native
     }
     
-    /**
-      * StatefulSet represents a set of pods with consistent identities. Identities are defined as:
-      *  - Network: A single stable DNS and hostname.
-      *  - Storage: As many VolumeClaims as requested.
-      * The StatefulSet guarantees that a given network identity will always map to the same storage
-      * identity.
-      */
+    /* static members */
     @js.native
     object StatefulSet extends js.Object {
       /**
@@ -438,9 +409,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1Ns.StatefulSet = js.native
     }
     
-    /**
-      * StatefulSetList is a collection of StatefulSets.
-      */
+    /* static members */
     @js.native
     object StatefulSetList extends js.Object {
       /**
@@ -593,18 +562,7 @@ object appsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.appsNs.v1beta1Ns.StatefulSetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * DEPRECATED - This group version of ControllerRevision is deprecated by
-      * apps/v1beta2/ControllerRevision. See the release notes for more information.
-      * ControllerRevision implements an immutable snapshot of state data. Clients are responsible
-      * for serializing and deserializing the objects that contain their internal state. Once a
-      * ControllerRevision has been successfully created, it can not be updated. The API Server will
-      * fail validation of all requests that attempt to mutate the Data field. ControllerRevisions
-      * may, however, be deleted. Note that, due to its use by both the DaemonSet and StatefulSet
-      * controllers for update and rollback, this object is beta. However, it may be subject to name
-      * and representation changes in future releases, and clients should not depend on its
-      * stability. It is primarily for internal use by controllers.
-      */
+    /* static members */
     @js.native
     object ControllerRevision extends js.Object {
       /**
@@ -627,9 +585,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.ControllerRevision = js.native
     }
     
-    /**
-      * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
-      */
+    /* static members */
     @js.native
     object ControllerRevisionList extends js.Object {
       /**
@@ -652,11 +608,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.ControllerRevisionList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Deployment. See
-      * the release notes for more information. Deployment enables declarative updates for Pods and
-      * ReplicaSets.
-      */
+    /* static members */
     @js.native
     object Deployment extends js.Object {
       /**
@@ -679,9 +631,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.Deployment = js.native
     }
     
-    /**
-      * DeploymentList is a list of Deployments.
-      */
+    /* static members */
     @js.native
     object DeploymentList extends js.Object {
       /**
@@ -704,15 +654,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.DeploymentList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1beta2/StatefulSet. See
-      * the release notes for more information. StatefulSet represents a set of pods with consistent
-      * identities. Identities are defined as:
-      *  - Network: A single stable DNS and hostname.
-      *  - Storage: As many VolumeClaims as requested.
-      * The StatefulSet guarantees that a given network identity will always map to the same storage
-      * identity.
-      */
+    /* static members */
     @js.native
     object StatefulSet extends js.Object {
       /**
@@ -735,9 +677,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta1Ns.StatefulSet = js.native
     }
     
-    /**
-      * StatefulSetList is a collection of StatefulSets.
-      */
+    /* static members */
     @js.native
     object StatefulSetList extends js.Object {
       /**
@@ -965,18 +905,7 @@ object appsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.appsNs.v1beta2Ns.StatefulSetList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * DEPRECATED - This group version of ControllerRevision is deprecated by
-      * apps/v1/ControllerRevision. See the release notes for more information. ControllerRevision
-      * implements an immutable snapshot of state data. Clients are responsible for serializing and
-      * deserializing the objects that contain their internal state. Once a ControllerRevision has
-      * been successfully created, it can not be updated. The API Server will fail validation of all
-      * requests that attempt to mutate the Data field. ControllerRevisions may, however, be deleted.
-      * Note that, due to its use by both the DaemonSet and StatefulSet controllers for update and
-      * rollback, this object is beta. However, it may be subject to name and representation changes
-      * in future releases, and clients should not depend on its stability. It is primarily for
-      * internal use by controllers.
-      */
+    /* static members */
     @js.native
     object ControllerRevision extends js.Object {
       /**
@@ -999,9 +928,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.ControllerRevision = js.native
     }
     
-    /**
-      * ControllerRevisionList is a resource containing a list of ControllerRevision objects.
-      */
+    /* static members */
     @js.native
     object ControllerRevisionList extends js.Object {
       /**
@@ -1024,10 +951,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.ControllerRevisionList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1/DaemonSet. See the
-      * release notes for more information. DaemonSet represents the configuration of a daemon set.
-      */
+    /* static members */
     @js.native
     object DaemonSet extends js.Object {
       /**
@@ -1050,9 +974,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.DaemonSet = js.native
     }
     
-    /**
-      * DaemonSetList is a collection of daemon sets.
-      */
+    /* static members */
     @js.native
     object DaemonSetList extends js.Object {
       /**
@@ -1075,11 +997,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.DaemonSetList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of Deployment is deprecated by apps/v1/Deployment. See the
-      * release notes for more information. Deployment enables declarative updates for Pods and
-      * ReplicaSets.
-      */
+    /* static members */
     @js.native
     object Deployment extends js.Object {
       /**
@@ -1102,9 +1020,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.Deployment = js.native
     }
     
-    /**
-      * DeploymentList is a list of Deployments.
-      */
+    /* static members */
     @js.native
     object DeploymentList extends js.Object {
       /**
@@ -1127,11 +1043,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.DeploymentList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1/ReplicaSet. See the
-      * release notes for more information. ReplicaSet ensures that a specified number of pod
-      * replicas are running at any given time.
-      */
+    /* static members */
     @js.native
     object ReplicaSet extends js.Object {
       /**
@@ -1154,9 +1066,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.ReplicaSet = js.native
     }
     
-    /**
-      * ReplicaSetList is a collection of ReplicaSets.
-      */
+    /* static members */
     @js.native
     object ReplicaSetList extends js.Object {
       /**
@@ -1179,15 +1089,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.ReplicaSetList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of StatefulSet is deprecated by apps/v1/StatefulSet. See the
-      * release notes for more information. StatefulSet represents a set of pods with consistent
-      * identities. Identities are defined as:
-      *  - Network: A single stable DNS and hostname.
-      *  - Storage: As many VolumeClaims as requested.
-      * The StatefulSet guarantees that a given network identity will always map to the same storage
-      * identity.
-      */
+    /* static members */
     @js.native
     object StatefulSet extends js.Object {
       /**
@@ -1210,9 +1112,7 @@ object appsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.appsNs.v1beta2Ns.StatefulSet = js.native
     }
     
-    /**
-      * StatefulSetList is a collection of StatefulSets.
-      */
+    /* static members */
     @js.native
     object StatefulSetList extends js.Object {
       /**

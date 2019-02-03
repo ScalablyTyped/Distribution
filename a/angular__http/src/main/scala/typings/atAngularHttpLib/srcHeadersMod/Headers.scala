@@ -62,6 +62,7 @@ class Headers () extends js.Object {
   def values(): js.Array[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@angular/http/src/headers", "Headers")
 @js.native
 object Headers extends js.Object {

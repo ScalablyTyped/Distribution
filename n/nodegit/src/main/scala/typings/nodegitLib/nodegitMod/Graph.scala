@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Graph ()
   extends nodegitLib.graphMod.Graph
 
+/* static members */
 @JSImport("nodegit", "Graph")
 @js.native
 object Graph extends js.Object {

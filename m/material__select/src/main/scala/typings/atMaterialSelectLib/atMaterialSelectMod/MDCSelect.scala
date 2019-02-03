@@ -34,6 +34,7 @@ class MDCSelect ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/select", "MDCSelect")
 @js.native
 object MDCSelect extends js.Object {

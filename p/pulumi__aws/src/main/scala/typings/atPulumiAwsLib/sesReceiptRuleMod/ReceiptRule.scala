@@ -76,6 +76,7 @@ class ReceiptRule protected ()
   val workmailActions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_OrganizationArn]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/receiptRule", "ReceiptRule")
 @js.native
 object ReceiptRule extends js.Object {

@@ -30,6 +30,7 @@ class Event protected ()
   var ver: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Event")
 @js.native
 object Event extends js.Object {

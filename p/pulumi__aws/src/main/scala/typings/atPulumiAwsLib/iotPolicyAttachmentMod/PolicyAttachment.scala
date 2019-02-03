@@ -28,6 +28,7 @@ class PolicyAttachment protected ()
   val target: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/policyAttachment", "PolicyAttachment")
 @js.native
 object PolicyAttachment extends js.Object {

@@ -12,6 +12,7 @@ class Typesetter protected ()
   def this(context: typesettableLib.buildSrcContextsMod.ITypesetterContext[_]) = this()
 }
 
+/* static members */
 @JSImport("typesettable", "Typesetter")
 @js.native
 object Typesetter extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SpinnerBase ()
   extends officeDashUiDashFabricDashReactLib.libSpinnerMod.SpinnerBase
 
+/* static members */
 @JSImport("office-ui-fabric-react", "SpinnerBase")
 @js.native
 object SpinnerBase extends js.Object {

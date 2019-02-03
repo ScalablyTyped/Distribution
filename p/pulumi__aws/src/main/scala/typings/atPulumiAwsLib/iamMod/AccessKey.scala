@@ -20,6 +20,7 @@ class AccessKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamAccessKeyMod.AccessKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "AccessKey")
 @js.native
 object AccessKey extends js.Object {

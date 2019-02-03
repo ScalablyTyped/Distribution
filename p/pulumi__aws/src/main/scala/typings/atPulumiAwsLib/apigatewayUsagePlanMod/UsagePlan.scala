@@ -45,6 +45,7 @@ class UsagePlan protected ()
   val throttleSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_BurstLimitRateLimitNumber]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/usagePlan", "UsagePlan")
 @js.native
 object UsagePlan extends js.Object {

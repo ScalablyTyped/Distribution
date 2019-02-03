@@ -51,20 +51,35 @@ object websequencediagramsLibStrings {
   @js.native
   sealed trait vs2010 extends js.Object
   
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def earth: earth = "earth".asInstanceOf[earth]
+  @scala.inline
   def magazine: magazine = "magazine".asInstanceOf[magazine]
+  @scala.inline
   def `modern-blue`: `modern-blue` = "modern-blue".asInstanceOf[`modern-blue`]
+  @scala.inline
   def mscgen: mscgen = "mscgen".asInstanceOf[mscgen]
+  @scala.inline
   def napkin: napkin = "napkin".asInstanceOf[napkin]
+  @scala.inline
   def omegapple: omegapple = "omegapple".asInstanceOf[omegapple]
+  @scala.inline
   def patent: patent = "patent".asInstanceOf[patent]
+  @scala.inline
   def pdf: pdf = "pdf".asInstanceOf[pdf]
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
+  @scala.inline
   def qsd: qsd = "qsd".asInstanceOf[qsd]
+  @scala.inline
   def rose: rose = "rose".asInstanceOf[rose]
+  @scala.inline
   def roundgreen: roundgreen = "roundgreen".asInstanceOf[roundgreen]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
   def vs2010: vs2010 = "vs2010".asInstanceOf[vs2010]
 }
 

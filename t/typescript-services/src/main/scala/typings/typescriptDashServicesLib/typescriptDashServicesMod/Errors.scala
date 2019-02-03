@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Errors ()
   extends typescriptDashServicesLib.TypeScriptNs.Errors
 
+/* static members */
 @JSImport("typescript-services", "Errors")
 @js.native
 object Errors extends js.Object {

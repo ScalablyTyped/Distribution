@@ -17,10 +17,7 @@ class namespaced protected () extends ExtractTextPlugin {
   def this(options: java.lang.String) = this()
 }
 
-/**
-  * Use an `ExtractTextPlugin` instance and a loader returned by `extract` in concert to write files to disk instead of loading them into others.
-  * Usage example at https://github.com/webpack/extract-text-webpack-plugin#usage-example-with-css
-  */
+/* static members */
 @JSImport("extract-text-webpack-plugin", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

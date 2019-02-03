@@ -33,14 +33,23 @@ object wicgDashMediasessionLibStrings {
   @js.native
   sealed trait seekforward extends js.Object
   
+  @scala.inline
   def nexttrack: nexttrack = "nexttrack".asInstanceOf[nexttrack]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
+  @scala.inline
   def play: play = "play".asInstanceOf[play]
+  @scala.inline
   def playing: playing = "playing".asInstanceOf[playing]
+  @scala.inline
   def previoustrack: previoustrack = "previoustrack".asInstanceOf[previoustrack]
+  @scala.inline
   def seekbackward: seekbackward = "seekbackward".asInstanceOf[seekbackward]
+  @scala.inline
   def seekforward: seekforward = "seekforward".asInstanceOf[seekforward]
 }
 

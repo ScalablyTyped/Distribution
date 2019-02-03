@@ -26,6 +26,7 @@ class Director () extends js.Object {
   def stop(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/Director", "Director")
 @js.native
 object Director extends js.Object {

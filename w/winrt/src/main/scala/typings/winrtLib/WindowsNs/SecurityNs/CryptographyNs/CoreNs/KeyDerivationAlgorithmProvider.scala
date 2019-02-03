@@ -14,6 +14,7 @@ class KeyDerivationAlgorithmProvider () extends IKeyDerivationAlgorithmProvider 
   override def createKey(keyMaterial: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
 @js.native
 object KeyDerivationAlgorithmProvider extends js.Object {

@@ -12,6 +12,7 @@ class DelayedRender protected ()
   def this(props: atUifabricUtilitiesLib.libDelayedRenderMod.IDelayedRenderProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "DelayedRender")
 @js.native
 object DelayedRender extends js.Object {

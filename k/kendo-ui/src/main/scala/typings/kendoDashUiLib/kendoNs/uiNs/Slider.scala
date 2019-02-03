@@ -25,6 +25,7 @@ class Slider protected () extends Widget {
   def value(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Slider")
 @js.native
 object Slider extends js.Object {

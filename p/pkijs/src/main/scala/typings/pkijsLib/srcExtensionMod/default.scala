@@ -23,6 +23,7 @@ class default () extends Extension {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/Extension", JSImport.Default)
 @js.native
 object default extends js.Object {

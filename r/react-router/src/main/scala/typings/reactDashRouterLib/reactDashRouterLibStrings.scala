@@ -33,14 +33,23 @@ object reactDashRouterLibStrings {
   @js.native
   sealed trait matchPath extends js.Object
   
+  @scala.inline
   def Anon_History: Anon_History = "Anon_History".asInstanceOf[Anon_History]
+  @scala.inline
   def Anon_Location: Anon_Location = "Anon_Location".asInstanceOf[Anon_Location]
+  @scala.inline
   def PUSH: PUSH = "PUSH".asInstanceOf[PUSH]
+  @scala.inline
   def REPLACE: REPLACE = "REPLACE".asInstanceOf[REPLACE]
+  @scala.inline
   def RouteChildrenProps: RouteChildrenProps = "RouteChildrenProps".asInstanceOf[RouteChildrenProps]
+  @scala.inline
   def RouteComponentProps: RouteComponentProps = "RouteComponentProps".asInstanceOf[RouteComponentProps]
+  @scala.inline
   def RouterChildContext: RouterChildContext = "RouterChildContext".asInstanceOf[RouterChildContext]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
   def matchPath: matchPath = "matchPath".asInstanceOf[matchPath]
 }
 

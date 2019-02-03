@@ -17,6 +17,7 @@ class FileDescriptorSet ()
   def setFileList(value: js.Array[FileDescriptorProto]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet")
 @js.native
 object FileDescriptorSet extends js.Object {

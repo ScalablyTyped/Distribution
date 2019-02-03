@@ -17,7 +17,7 @@ abstract class I2cController () extends js.Object {
   def getDevice(settings: I2cConnectionSettings): I2cDevice = js.native
 }
 
-/** Represents the I²C controller for the system. */
+/* static members */
 @JSGlobal("Windows.Devices.I2c.I2cController")
 @js.native
 object I2cController extends js.Object {

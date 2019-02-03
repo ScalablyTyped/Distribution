@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 
 package object MeteorAstronomyNs {
   type Enum[T] = T with meteorDashAstronomyLib.Anon_GetIdentifier
-  type Fields[T] = meteorDashAstronomyLib.meteorDashAstronomyLibStrings.Fields with T
+  type Fields[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof meteor-astronomy.MeteorAstronomy.NonFunctionProperties<T> ]: meteor-astronomy.MeteorAstronomy.ModelField<T[P], T>}
+    */ meteorDashAstronomyLib.meteorDashAstronomyLibStrings.Fields with T
   type FunctionProperties[T] = stdLib.Pick[T, FunctionPropertyNames[T]]
   type FunctionPropertyNames[T] = /* import warning: ImportType.apply Failed type conversion: {[ K in keyof T ]: K}[keyof T] */ js.Any
-  type Helpers[T] = meteorDashAstronomyLib.meteorDashAstronomyLibStrings.Helpers with js.Any
+  type Helpers[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof meteor-astronomy.MeteorAstronomy.FunctionProperties<T> ]: (this : T, args : ...any): any}
+    */ meteorDashAstronomyLib.meteorDashAstronomyLibStrings.Helpers with js.Any
   type Model[T] = T with meteorDashAstronomyLib.Anon_Callback[T]
   type ModelField[Field, Doc] = (ModelFullField[Field, Doc]) | TypeOptions
   type MongoQuery[T] = meteorLib.MongoNs.Selector[T] | meteorLib.MongoNs.ObjectID | java.lang.String

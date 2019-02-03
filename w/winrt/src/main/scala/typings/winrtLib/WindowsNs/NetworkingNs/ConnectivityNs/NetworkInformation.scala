@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NetworkInformation () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
 @js.native
 object NetworkInformation extends js.Object {

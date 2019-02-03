@@ -46,6 +46,7 @@ object sqsNs extends js.Object {
   
   def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] = js.native
   def getQueue(args: atPulumiAwsLib.sqsGetQueueMod.GetQueueArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.sqsGetQueueMod.GetQueueResult] = js.native
+  /* static members */
   @js.native
   object Queue extends js.Object {
     /**
@@ -70,6 +71,7 @@ object sqsNs extends js.Object {
     ): atPulumiAwsLib.sqsSqsMixinsMod.sqsQueueMod.Queue = js.native
   }
   
+  /* static members */
   @js.native
   object QueuePolicy extends js.Object {
     /**

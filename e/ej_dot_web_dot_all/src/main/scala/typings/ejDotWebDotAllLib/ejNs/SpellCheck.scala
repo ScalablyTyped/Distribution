@@ -74,6 +74,7 @@ class SpellCheck protected () extends Widget {
   def validate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.SpellCheck")
 @js.native
 object SpellCheck extends js.Object {

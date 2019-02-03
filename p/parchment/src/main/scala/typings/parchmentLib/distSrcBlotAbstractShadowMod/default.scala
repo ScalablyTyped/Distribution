@@ -17,6 +17,7 @@ class default protected () extends ShadowBlot {
   override def length(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("parchment/dist/src/blot/abstract/shadow", JSImport.Default)
 @js.native
 object default extends js.Object {

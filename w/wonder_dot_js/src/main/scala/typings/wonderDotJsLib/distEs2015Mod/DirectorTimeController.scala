@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DirectorTimeController ()
   extends wonderDotJsLib.distEs2015UtilsTimeDirectorTimeControllerMod.DirectorTimeController
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "DirectorTimeController")
 @js.native
 object DirectorTimeController extends js.Object {

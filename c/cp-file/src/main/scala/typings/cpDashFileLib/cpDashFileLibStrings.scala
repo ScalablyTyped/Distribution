@@ -9,6 +9,7 @@ object cpDashFileLibStrings {
   @js.native
   sealed trait progress extends js.Object
   
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
 }
 

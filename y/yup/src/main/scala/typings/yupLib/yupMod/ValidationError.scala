@@ -34,6 +34,7 @@ class ValidationError protected ()
   var value: js.Any = js.native
 }
 
+/* static members */
 @JSImport("yup", "ValidationError")
 @js.native
 object ValidationError extends js.Object {

@@ -273,94 +273,183 @@ object hapiLibStrings {
   @js.native
   sealed trait utf8 extends js.Object
   
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def Lax: Lax = "Lax".asInstanceOf[Lax]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def RouteOptions: RouteOptions = "RouteOptions".asInstanceOf[RouteOptions]
+  @scala.inline
   def Strict: Strict = "Strict".asInstanceOf[Strict]
+  @scala.inline
   def `allow-from`: `allow-from` = "allow-from".asInstanceOf[`allow-from`]
+  @scala.inline
   def annotated: annotated = "annotated".asInstanceOf[annotated]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def app: app = "app".asInstanceOf[app]
+  @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def base64json: base64json = "base64json".asInstanceOf[base64json]
+  @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
+  @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
+  @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def gunzip: gunzip = "gunzip".asInstanceOf[gunzip]
+  @scala.inline
   def handler: handler = "handler".asInstanceOf[handler]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
   def http: http = "http".asInstanceOf[http]
+  @scala.inline
   def https: https = "https".asInstanceOf[https]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
+  @scala.inline
   def iron: iron = "iron".asInstanceOf[iron]
+  @scala.inline
   def latin1: latin1 = "latin1".asInstanceOf[latin1]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def `no-referrer`: `no-referrer` = "no-referrer".asInstanceOf[`no-referrer`]
+  @scala.inline
   def `no-referrer-when-downgrade`: `no-referrer-when-downgrade` = "no-referrer-when-downgrade".asInstanceOf[`no-referrer-when-downgrade`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def onCredentials: onCredentials = "onCredentials".asInstanceOf[onCredentials]
+  @scala.inline
   def onPostAuth: onPostAuth = "onPostAuth".asInstanceOf[onPostAuth]
+  @scala.inline
   def onPostHandler: onPostHandler = "onPostHandler".asInstanceOf[onPostHandler]
+  @scala.inline
   def onPostStart: onPostStart = "onPostStart".asInstanceOf[onPostStart]
+  @scala.inline
   def onPostStop: onPostStop = "onPostStop".asInstanceOf[onPostStop]
+  @scala.inline
   def onPreAuth: onPreAuth = "onPreAuth".asInstanceOf[onPreAuth]
+  @scala.inline
   def onPreHandler: onPreHandler = "onPreHandler".asInstanceOf[onPreHandler]
+  @scala.inline
   def onPreResponse: onPreResponse = "onPreResponse".asInstanceOf[onPreResponse]
+  @scala.inline
   def onPreStart: onPreStart = "onPreStart".asInstanceOf[onPreStart]
+  @scala.inline
   def onPreStop: onPreStop = "onPreStop".asInstanceOf[onPreStop]
+  @scala.inline
   def onRequest: onRequest = "onRequest".asInstanceOf[onRequest]
+  @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
   def options: options = "options".asInstanceOf[options]
+  @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
+  @scala.inline
   def `origin-when-cross-origin`: `origin-when-cross-origin` = "origin-when-cross-origin".asInstanceOf[`origin-when-cross-origin`]
+  @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def peek: peek = "peek".asInstanceOf[peek]
+  @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
+  @scala.inline
   def plugin: plugin = "plugin".asInstanceOf[plugin]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
   def public: public = "public".asInstanceOf[public]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
   def route: route = "route".asInstanceOf[route]
+  @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  @scala.inline
   def sameorigin: sameorigin = "sameorigin".asInstanceOf[sameorigin]
+  @scala.inline
   def server: server = "server".asInstanceOf[server]
+  @scala.inline
   def socket: socket = "socket".asInstanceOf[socket]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
+  @scala.inline
   def `strict-origin`: `strict-origin` = "strict-origin".asInstanceOf[`strict-origin`]
+  @scala.inline
   def `strict-origin-when-cross-origin`: `strict-origin-when-cross-origin` = "strict-origin-when-cross-origin".asInstanceOf[`strict-origin-when-cross-origin`]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
   def toolkit: toolkit = "toolkit".asInstanceOf[toolkit]
+  @scala.inline
   def `try`: `try` = "try".asInstanceOf[`try`]
+  @scala.inline
   def ucs2: ucs2 = "ucs2".asInstanceOf[ucs2]
+  @scala.inline
   def `unsafe-url`: `unsafe-url` = "unsafe-url".asInstanceOf[`unsafe-url`]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
+  @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
 

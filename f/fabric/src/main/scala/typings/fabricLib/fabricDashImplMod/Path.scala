@@ -43,6 +43,7 @@ class Path () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Path")
 @js.native
 object Path extends js.Object {

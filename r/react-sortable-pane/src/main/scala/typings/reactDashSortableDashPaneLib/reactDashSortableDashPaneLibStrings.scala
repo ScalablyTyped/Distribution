@@ -21,10 +21,15 @@ object reactDashSortableDashPaneLibStrings {
   @js.native
   sealed trait y extends js.Object
   
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
   def xy: xy = "xy".asInstanceOf[xy]
+  @scala.inline
   def y: y = "y".asInstanceOf[y]
 }
 

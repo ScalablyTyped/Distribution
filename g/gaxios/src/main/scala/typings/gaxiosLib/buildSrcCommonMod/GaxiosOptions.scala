@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait GaxiosOptions extends js.Object {
   var agent: js.UndefOr[nodeLib.httpsMod.Agent] = js.undefined
+  var baseURL: js.UndefOr[java.lang.String] = js.undefined
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined

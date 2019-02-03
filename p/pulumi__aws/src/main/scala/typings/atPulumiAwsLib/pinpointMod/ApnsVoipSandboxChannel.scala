@@ -20,6 +20,7 @@ class ApnsVoipSandboxChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointApnsVoipSandboxChannelMod.ApnsVoipSandboxChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "ApnsVoipSandboxChannel")
 @js.native
 object ApnsVoipSandboxChannel extends js.Object {

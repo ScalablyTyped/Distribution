@@ -41,6 +41,7 @@ class Repository protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecr/repository", "Repository")
 @js.native
 object Repository extends js.Object {

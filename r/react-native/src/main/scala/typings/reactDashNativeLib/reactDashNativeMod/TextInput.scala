@@ -6,9 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "TextInput")
+- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin
+- Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "TextInput")
 @js.native
-class TextInput () extends js.Object {
+class TextInput ()
+  extends reactLib.reactMod.Component[TextInputProps, js.Object, js.Any] {
   /**
     * Removes all text from the input.
     */
@@ -19,8 +21,8 @@ class TextInput () extends js.Object {
   def isFocused(): scala.Boolean = js.native
 }
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "TextInput")
+/* static members */
+@JSImport("react-native", "TextInput")
 @js.native
 object TextInput extends js.Object {
   /**

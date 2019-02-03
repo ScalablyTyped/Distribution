@@ -23,6 +23,7 @@ class PendingActions ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@ckeditor/ckeditor5-core", "PendingActions")
 @js.native
 object PendingActions extends js.Object {

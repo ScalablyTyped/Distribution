@@ -130,7 +130,7 @@ class EventEmitter () extends js.Object {
   def setMaxListeners(): this.type = js.native
 }
 
-// https://github.com/primus/eventemitter3
+/* static members */
 @JSGlobal("PIXI.utils.EventEmitter")
 @js.native
 object EventEmitter extends js.Object {

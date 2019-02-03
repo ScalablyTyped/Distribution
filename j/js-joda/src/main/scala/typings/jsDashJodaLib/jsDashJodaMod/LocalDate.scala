@@ -17,6 +17,7 @@ class LocalDate ()
   override def range(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "LocalDate")
 @js.native
 object LocalDate extends js.Object {

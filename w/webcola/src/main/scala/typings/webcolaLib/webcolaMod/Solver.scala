@@ -12,6 +12,7 @@ class Solver protected ()
   def this(vs: js.Array[webcolaLib.distSrcVpscMod.Variable], cs: js.Array[webcolaLib.distSrcVpscMod.Constraint]) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Solver")
 @js.native
 object Solver extends js.Object {

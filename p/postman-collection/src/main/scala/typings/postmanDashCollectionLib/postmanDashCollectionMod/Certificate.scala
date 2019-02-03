@@ -19,6 +19,7 @@ class Certificate protected () extends Property[CertificateDefinition] {
   def update(options: CertificateDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Certificate")
 @js.native
 object Certificate extends js.Object {

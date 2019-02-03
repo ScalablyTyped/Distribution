@@ -72,6 +72,7 @@ class EventRule protected ()
   ): atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/eventRule", "EventRule")
 @js.native
 object EventRule extends js.Object {

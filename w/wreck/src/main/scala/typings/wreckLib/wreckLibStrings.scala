@@ -18,9 +18,13 @@ object wreckLibStrings {
   @js.native
   sealed trait strict extends js.Object
   
+  @scala.inline
   def force: force = "force".asInstanceOf[force]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
 }
 

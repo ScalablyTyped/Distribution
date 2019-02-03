@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait URI2HKT[A] extends js.Object {
   var Array: fpDashTsLib.libArrayMod.Global.Array[A]
+  var FreeGroup: fpDashTsLib.libFreeGroupMod.FreeGroup[A]
   var IO: fpDashTsLib.libIOMod.IO[A]
   var Identity: fpDashTsLib.libIdentityMod.Identity[A]
   var NonEmptyArray: fpDashTsLib.libNonEmptyArrayMod.NonEmptyArray[A]

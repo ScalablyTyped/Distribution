@@ -12,7 +12,9 @@ object schwiftyLibStrings {
   @js.native
   sealed trait rollback extends js.Object
   
+  @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
+  @scala.inline
   def rollback: rollback = "rollback".asInstanceOf[rollback]
 }
 

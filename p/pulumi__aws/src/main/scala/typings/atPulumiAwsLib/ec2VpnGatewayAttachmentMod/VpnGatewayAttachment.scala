@@ -28,6 +28,7 @@ class VpnGatewayAttachment protected ()
   val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpnGatewayAttachment", "VpnGatewayAttachment")
 @js.native
 object VpnGatewayAttachment extends js.Object {

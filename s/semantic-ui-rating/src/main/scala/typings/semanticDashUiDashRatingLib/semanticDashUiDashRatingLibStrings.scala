@@ -87,32 +87,59 @@ object semanticDashUiDashRatingLibStrings {
   @js.native
   sealed trait verbose extends js.Object
   
+  @scala.inline
   def action: action = "action".asInstanceOf[action]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def className: className = "className".asInstanceOf[className]
+  @scala.inline
   def `clear rating`: `clear rating` = "clear rating".asInstanceOf[`clear rating`]
+  @scala.inline
   def clearable: clearable = "clearable".asInstanceOf[clearable]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
+  @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def fireOnInit: fireOnInit = "fireOnInit".asInstanceOf[fireOnInit]
+  @scala.inline
   def `get rating`: `get rating` = "get rating".asInstanceOf[`get rating`]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
   def initialRating: initialRating = "initialRating".asInstanceOf[initialRating]
+  @scala.inline
   def interactive: interactive = "interactive".asInstanceOf[interactive]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
+  @scala.inline
   def onRate: onRate = "onRate".asInstanceOf[onRate]
+  @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
+  @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
   def `set rating`: `set rating` = "set rating".asInstanceOf[`set rating`]
+  @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
 

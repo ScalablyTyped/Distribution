@@ -12,6 +12,7 @@ class SaveOptions ()
   def this(config: breezeLib.Anon_AllowConcurrentSaves) = this()
 }
 
+/* static members */
 @JSImport("breeze", "SaveOptions")
 @js.native
 object SaveOptions extends js.Object {

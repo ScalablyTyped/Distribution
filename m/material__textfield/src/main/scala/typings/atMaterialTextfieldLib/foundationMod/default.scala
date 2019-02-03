@@ -12,6 +12,7 @@ class default protected () extends MDCTextFieldFoundation {
   def this(adapter: atMaterialTextfieldLib.adapterMod.MDCTextFieldAdapter, foundationMap: atMaterialTextfieldLib.adapterMod.FoundationMapType) = this()
 }
 
+/* static members */
 @JSImport("@material/textfield/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

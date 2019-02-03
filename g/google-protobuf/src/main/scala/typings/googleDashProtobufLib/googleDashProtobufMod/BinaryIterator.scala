@@ -18,6 +18,7 @@ class BinaryIterator () extends js.Object {
   def next(): googleDashProtobufLib.ScalarFieldType | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf", "BinaryIterator")
 @js.native
 object BinaryIterator extends js.Object {

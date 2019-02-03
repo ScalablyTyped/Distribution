@@ -23,6 +23,7 @@ class SwirlEffect protected () extends VertexEffect {
   override def transform(position: Vector2, uv: Vector2, light: Color, dark: Color): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.SwirlEffect")
 @js.native
 object SwirlEffect extends js.Object {

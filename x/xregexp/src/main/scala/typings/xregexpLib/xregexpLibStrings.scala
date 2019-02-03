@@ -12,7 +12,9 @@ object xregexpLibStrings {
   @js.native
   sealed trait one extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def one: one = "one".asInstanceOf[one]
 }
 

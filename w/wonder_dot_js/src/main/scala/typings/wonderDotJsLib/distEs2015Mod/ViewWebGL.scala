@@ -12,6 +12,7 @@ class ViewWebGL protected ()
   def this(dom: js.Any) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ViewWebGL")
 @js.native
 object ViewWebGL extends js.Object {

@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 class View ()
   extends reactDashNativeLib.reactDashNativeMod.View
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-primitives", "View")
+/* static members */
+@JSImport("react-primitives", "View")
 @js.native
 object View extends js.Object {
   /**

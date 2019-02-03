@@ -50,6 +50,7 @@ class CanvasBuffer protected () extends js.Object {
   def resize(screenWidth: scala.Double, screenHeight: scala.Double, center: scala.Boolean): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/drawers/canvasBuffer", "CanvasBuffer")
 @js.native
 object CanvasBuffer extends js.Object {

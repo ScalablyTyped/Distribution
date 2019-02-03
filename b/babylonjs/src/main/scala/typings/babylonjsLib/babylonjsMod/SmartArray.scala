@@ -19,9 +19,7 @@ class SmartArray[T] protected ()
   def this(capacity: scala.Double) = this()
 }
 
-/**
-  * Defines an GC Friendly array where the backfield array do not shrink to prevent over allocations.
-  */
+/* static members */
 @JSImport("babylonjs", "SmartArray")
 @js.native
 object SmartArray extends js.Object {

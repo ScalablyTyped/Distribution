@@ -12,6 +12,7 @@ class ImportDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, importKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, equalsToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, moduleReference: typescriptDashServicesLib.TypeScriptNs.IModuleReferenceSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ImportDeclarationSyntax")
 @js.native
 object ImportDeclarationSyntax extends js.Object {

@@ -1392,6 +1392,7 @@ object RNFirebaseNs extends js.Object {
       def update(docRef: DocumentReference, obj: js.Object): WriteBatch = js.native
     }
     
+    /* static members */
     @js.native
     object Blob extends js.Object {
       def fromBase64String(base64: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Blob = js.native
@@ -1421,11 +1422,13 @@ object RNFirebaseNs extends js.Object {
           ]
     }
     
+    /* static members */
     @js.native
     object FieldPath extends js.Object {
       def documentId(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldPath = js.native
     }
     
+    /* static members */
     @js.native
     object FieldValue extends js.Object {
       def arrayRemove(
@@ -1438,6 +1441,7 @@ object RNFirebaseNs extends js.Object {
       def serverTimestamp(): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.FieldValue = js.native
     }
     
+    /* static members */
     @js.native
     object Path extends js.Object {
       def fromName(name: java.lang.String): reactDashNativeDashFirebaseLib.reactDashNativeDashFirebaseMod.RNFirebaseNs.firestoreNs.Path = js.native

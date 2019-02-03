@@ -81,30 +81,55 @@ object rethinkdbLibStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
   def BINARY: BINARY = "BINARY".asInstanceOf[BINARY]
+  @scala.inline
   def TIME: TIME = "TIME".asInstanceOf[TIME]
+  @scala.inline
   def WGS84: WGS84 = "WGS84".asInstanceOf[WGS84]
+  @scala.inline
   def always: always = "always".asInstanceOf[always]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def ft: ft = "ft".asInstanceOf[ft]
+  @scala.inline
   def hard: hard = "hard".asInstanceOf[hard]
+  @scala.inline
   def km: km = "km".asInstanceOf[km]
+  @scala.inline
   def m: m = "m".asInstanceOf[m]
+  @scala.inline
   def majority: majority = "majority".asInstanceOf[majority]
+  @scala.inline
   def mi: mi = "mi".asInstanceOf[mi]
+  @scala.inline
   def native: native = "native".asInstanceOf[native]
+  @scala.inline
   def nm: nm = "nm".asInstanceOf[nm]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def outdated: outdated = "outdated".asInstanceOf[outdated]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def ready_for_outdated_reads: ready_for_outdated_reads = "ready_for_outdated_reads".asInstanceOf[ready_for_outdated_reads]
+  @scala.inline
   def ready_for_reads: ready_for_reads = "ready_for_reads".asInstanceOf[ready_for_reads]
+  @scala.inline
   def ready_for_writes: ready_for_writes = "ready_for_writes".asInstanceOf[ready_for_writes]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
   def soft: soft = "soft".asInstanceOf[soft]
+  @scala.inline
   def unit_sphere: unit_sphere = "unit_sphere".asInstanceOf[unit_sphere]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
 }
 

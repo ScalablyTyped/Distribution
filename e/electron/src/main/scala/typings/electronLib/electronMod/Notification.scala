@@ -12,6 +12,7 @@ class Notification protected ()
   def this(options: electronLib.ElectronNs.NotificationConstructorOptions) = this()
 }
 
+/* static members */
 @JSImport("electron", "Notification")
 @js.native
 object Notification extends js.Object {

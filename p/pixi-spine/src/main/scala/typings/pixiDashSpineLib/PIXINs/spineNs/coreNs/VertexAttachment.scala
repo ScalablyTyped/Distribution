@@ -25,6 +25,7 @@ abstract class VertexAttachment protected () extends Attachment {
   def computeWorldVerticesOld(slot: Slot, worldVertices: ArrayLike[scala.Double]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.VertexAttachment")
 @js.native
 object VertexAttachment extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CollapsibleList ()
   extends atBlueprintjsCoreLib.libEsmComponentsCollapsibleDashListCollapsibleListMod.CollapsibleList
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "CollapsibleList")
 @js.native
 object CollapsibleList extends js.Object {

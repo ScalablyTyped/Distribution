@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserPersistenceNumbers () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/UserPersistenceNumbers.html
-	 */
+/* static members */
 @JSGlobal("UserPersistenceNumbers")
 @js.native
 object UserPersistenceNumbers extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EventEmitter ()
   extends nodeLib.eventsMod.internalNs.EventEmitter
 
+/* static members */
 @JSImport("events", "EventEmitter")
 @js.native
 object EventEmitter extends js.Object {

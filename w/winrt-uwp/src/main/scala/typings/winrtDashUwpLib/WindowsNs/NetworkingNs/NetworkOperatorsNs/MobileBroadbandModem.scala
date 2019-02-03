@@ -41,7 +41,7 @@ abstract class MobileBroadbandModem () extends js.Object {
   def resetAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Represents a mobile broadband modem. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandModem")
 @js.native
 object MobileBroadbandModem extends js.Object {

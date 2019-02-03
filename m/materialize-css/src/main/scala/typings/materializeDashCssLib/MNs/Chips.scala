@@ -38,6 +38,7 @@ class Chips () extends Component[ChipsOptions] {
   def selectChip(n: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Chips")
 @js.native
 object Chips extends js.Object {

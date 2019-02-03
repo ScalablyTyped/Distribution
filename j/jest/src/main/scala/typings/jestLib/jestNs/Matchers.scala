@@ -211,8 +211,12 @@ trait Matchers[R] extends js.Object {
     * Instead of writing the snapshot value to a .snap file, it will be written into the source code automatically.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchInlineSnapshot[T /* <: jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T]): R = js.native
-  def toMatchInlineSnapshot[T /* <: jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T], snapshot: java.lang.String): R = js.native
+  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof R ]: any}
+    */ jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T]): R = js.native
+  def toMatchInlineSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof R ]: any}
+    */ jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T], snapshot: java.lang.String): R = js.native
   def toMatchObject(expected: js.Array[_]): R = js.native
   /**
     * Used to check that a JavaScript object matches a subset of the properties of an object
@@ -228,8 +232,12 @@ trait Matchers[R] extends js.Object {
     * This ensures that a value matches the most recent snapshot with property matchers.
     * Check out [the Snapshot Testing guide](http://facebook.github.io/jest/docs/snapshot-testing.html) for more information.
     */
-  def toMatchSnapshot[T /* <: jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T]): R = js.native
-  def toMatchSnapshot[T /* <: jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T], snapshotName: java.lang.String): R = js.native
+  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof R ]: any}
+    */ jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T]): R = js.native
+  def toMatchSnapshot[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof R ]: any}
+    */ jestLib.jestLibStrings.Matchers with js.Any */](propertyMatchers: stdLib.Partial[T], snapshotName: java.lang.String): R = js.native
   /**
     * Ensure that a mock function has returned (as opposed to thrown) at least once.
     */

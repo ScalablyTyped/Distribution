@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StandardDataFormats () extends js.Object
 
-/** Contains static properties that return string values. Each string corresponds to a known format ID. Use this class to avoid errors in using string constants to specify data formats. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats")
 @js.native
 object StandardDataFormats extends js.Object {

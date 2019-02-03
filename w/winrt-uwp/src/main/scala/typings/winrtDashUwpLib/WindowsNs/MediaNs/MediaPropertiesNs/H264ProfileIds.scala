@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class H264ProfileIds () extends js.Object
 
-/** Provides properties for getting H.265 profile ids. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.H264ProfileIds")
 @js.native
 object H264ProfileIds extends js.Object {

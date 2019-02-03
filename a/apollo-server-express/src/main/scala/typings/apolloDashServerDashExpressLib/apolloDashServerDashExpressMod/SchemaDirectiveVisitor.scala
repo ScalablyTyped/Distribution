@@ -12,6 +12,7 @@ class SchemaDirectiveVisitor protected ()
   protected def this(config: graphqlDashToolsLib.Anon_Args) = this()
 }
 
+/* static members */
 @JSImport("apollo-server-express", "SchemaDirectiveVisitor")
 @js.native
 object SchemaDirectiveVisitor extends js.Object {

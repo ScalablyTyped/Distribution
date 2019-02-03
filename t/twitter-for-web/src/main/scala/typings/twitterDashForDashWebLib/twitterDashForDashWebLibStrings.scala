@@ -27,12 +27,19 @@ object twitterDashForDashWebLibStrings {
   @js.native
   sealed trait tweet extends js.Object
   
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def favorite: favorite = "favorite".asInstanceOf[favorite]
+  @scala.inline
   def follow: follow = "follow".asInstanceOf[follow]
+  @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
   def rendered: rendered = "rendered".asInstanceOf[rendered]
+  @scala.inline
   def retweet: retweet = "retweet".asInstanceOf[retweet]
+  @scala.inline
   def tweet: tweet = "tweet".asInstanceOf[tweet]
 }
 

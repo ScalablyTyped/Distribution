@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EmailAuthProvider () extends EmailAuthProvider_Instance
 
+/* static members */
 @JSImport("@firebase/auth-types", "EmailAuthProvider")
 @js.native
 object EmailAuthProvider extends js.Object {

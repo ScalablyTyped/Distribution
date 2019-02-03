@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Breadcrumb ()
   extends antdLib.libBreadcrumbMod.default
 
+/* static members */
 @JSImport("antd", "Breadcrumb")
 @js.native
 object Breadcrumb extends js.Object {

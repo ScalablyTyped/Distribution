@@ -25,7 +25,7 @@ abstract class JumpListItem () extends js.Object {
   var removedByUser: scala.Boolean = js.native
 }
 
-/** Provides functionality for creating and defining jump list items for an app's jump list. */
+/* static members */
 @JSGlobal("Windows.UI.StartScreen.JumpListItem")
 @js.native
 object JumpListItem extends js.Object {

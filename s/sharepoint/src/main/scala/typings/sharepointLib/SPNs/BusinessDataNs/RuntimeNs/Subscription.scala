@@ -14,6 +14,7 @@ class Subscription protected ()
   def get_iD(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("SP.BusinessData.Runtime.Subscription")
 @js.native
 object Subscription extends js.Object {

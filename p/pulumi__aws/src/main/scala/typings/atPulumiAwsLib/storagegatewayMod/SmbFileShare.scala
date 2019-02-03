@@ -20,6 +20,7 @@ class SmbFileShare protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShareArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "SmbFileShare")
 @js.native
 object SmbFileShare extends js.Object {

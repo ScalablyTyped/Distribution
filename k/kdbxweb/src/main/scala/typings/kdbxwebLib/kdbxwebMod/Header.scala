@@ -29,6 +29,7 @@ class Header () extends js.Object {
   def writeInnerHeader(stm: BinaryStream, ctx: Context): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Header")
 @js.native
 object Header extends js.Object {

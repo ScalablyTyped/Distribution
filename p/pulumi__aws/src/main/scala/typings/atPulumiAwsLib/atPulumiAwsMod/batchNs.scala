@@ -60,6 +60,7 @@ object batchNs extends js.Object {
     args: atPulumiAwsLib.batchGetJobQueueMod.GetJobQueueArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.batchGetJobQueueMod.GetJobQueueResult] = js.native
+  /* static members */
   @js.native
   object ComputeEnvironment extends js.Object {
     /**
@@ -84,6 +85,7 @@ object batchNs extends js.Object {
     ): atPulumiAwsLib.batchComputeEnvironmentMod.ComputeEnvironment = js.native
   }
   
+  /* static members */
   @js.native
   object JobDefinition extends js.Object {
     /**
@@ -108,6 +110,7 @@ object batchNs extends js.Object {
     ): atPulumiAwsLib.batchJobDefinitionMod.JobDefinition = js.native
   }
   
+  /* static members */
   @js.native
   object JobQueue extends js.Object {
     /**

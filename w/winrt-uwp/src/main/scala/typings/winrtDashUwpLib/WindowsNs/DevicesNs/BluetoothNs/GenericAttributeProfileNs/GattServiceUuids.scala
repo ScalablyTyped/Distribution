@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GattServiceUuids () extends js.Object
 
-/** Represents an enumeration of the most well known Service UUID values, and provides convenience methods for working with GATT service UUIDs, and static properties providing service UUIDs for common GATT services. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattServiceUuids")
 @js.native
 object GattServiceUuids extends js.Object {

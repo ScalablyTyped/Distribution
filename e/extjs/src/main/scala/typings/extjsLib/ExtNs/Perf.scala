@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Perf () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Perf")
 @js.native
 object Perf extends js.Object {

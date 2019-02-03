@@ -12,6 +12,7 @@ class EllipsoidTangentPlane protected ()
   def this(ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid, origin: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
 }
 
+/* static members */
 @JSImport("cesium", "EllipsoidTangentPlane")
 @js.native
 object EllipsoidTangentPlane extends js.Object {

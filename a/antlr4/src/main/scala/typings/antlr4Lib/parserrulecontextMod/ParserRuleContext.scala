@@ -28,6 +28,7 @@ class ParserRuleContext protected ()
   def removeLastChild(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("antlr4/ParserRuleContext", "ParserRuleContext")
 @js.native
 object ParserRuleContext extends js.Object {

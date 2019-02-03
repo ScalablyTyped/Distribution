@@ -36,6 +36,7 @@ class Channel protected ()
   val hlsIngests: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_IngestEndpoints]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mediapackage/channel", "Channel")
 @js.native
 object Channel extends js.Object {

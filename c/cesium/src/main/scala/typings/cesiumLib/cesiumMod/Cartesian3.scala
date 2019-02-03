@@ -14,6 +14,7 @@ class Cartesian3 ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Cartesian3")
 @js.native
 object Cartesian3 extends js.Object {

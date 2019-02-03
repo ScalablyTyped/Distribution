@@ -97,12 +97,14 @@ abstract class default () extends Default {
   def this(_view: js.Any, _options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/DateComponent", "Default")
 @js.native
 object Default extends js.Object {
   var guid: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/DateComponent", JSImport.Default)
 @js.native
 object default extends js.Object {

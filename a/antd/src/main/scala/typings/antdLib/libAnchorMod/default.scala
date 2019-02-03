@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends antdLib.libAnchorAnchorMod.default
 
+/* static members */
 @JSImport("antd/lib/anchor", JSImport.Default)
 @js.native
 object default extends js.Object {

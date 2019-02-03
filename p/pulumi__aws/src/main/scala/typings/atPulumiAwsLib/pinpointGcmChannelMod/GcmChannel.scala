@@ -23,6 +23,7 @@ class GcmChannel protected ()
   val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/gcmChannel", "GcmChannel")
 @js.native
 object GcmChannel extends js.Object {

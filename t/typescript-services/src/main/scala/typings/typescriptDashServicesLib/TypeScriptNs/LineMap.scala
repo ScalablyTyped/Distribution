@@ -23,6 +23,7 @@ class LineMap protected () extends js.Object {
   def toJSON(key: js.Any): typescriptDashServicesLib.Anon_Length = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.LineMap")
 @js.native
 object LineMap extends js.Object {

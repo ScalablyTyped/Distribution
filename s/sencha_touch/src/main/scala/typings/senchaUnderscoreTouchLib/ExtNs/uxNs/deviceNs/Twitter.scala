@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Twitter () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.ux.device.Twitter")
 @js.native
 object Twitter extends js.Object {

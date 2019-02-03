@@ -21,10 +21,15 @@ object datatablesDotNetLibStrings {
   @js.native
   sealed trait `type` extends js.Object
   
+  @scala.inline
   def display: display = "display".asInstanceOf[display]
+  @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
+  @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
+  @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
 }
 

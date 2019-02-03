@@ -46,6 +46,7 @@ class JsonObjectProperty protected () extends IObject {
   def setValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "JsonObjectProperty")
 @js.native
 object JsonObjectProperty extends js.Object {

@@ -12,7 +12,9 @@ object tinycopyLibStrings {
   @js.native
   sealed trait success extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
 }
 

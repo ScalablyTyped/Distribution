@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChannelTalkMode () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/ChannelTalkMode.html
-	 */
+/* static members */
 @JSGlobal("ChannelTalkMode")
 @js.native
 object ChannelTalkMode extends js.Object {

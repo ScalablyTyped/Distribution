@@ -60,13 +60,15 @@
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(_CanvasProperties))] 
 [info ] PreferTypeAlias.scala:45 Simplified to type alias [id => tabris, phase => typescript, scope => TreeScope(TsParsedFile() / TsDeclModule(tabris) / TsDeclInterface(CanvasEvents))] 
 [error] PhaseRes.scala:79 StackOverflowError [id => tabris, phase => typescript] java.lang.StackOverflowError
-	at scala.collection.AbstractTraversable.<init>(Traversable.scala:108)
-	at scala.collection.AbstractIterable.<init>(Iterable.scala:56)
-	at scala.collection.AbstractSeq.<init>(Seq.scala:45)
-	at scala.collection.immutable.List.<init>(List.scala:89)
-	at scala.collection.immutable.$colon$colon.<init>(List.scala:448)
-	at scala.collection.immutable.List.$colon$colon(List.scala:115)
-	at scala.collection.immutable.List.reverse(List.scala:401)
+	at scala.collection.TraversableOnce.addString(TraversableOnce.scala:360)
+	at scala.collection.TraversableOnce.addString$(TraversableOnce.scala:356)
+	at scala.collection.AbstractTraversable.addString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:326)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:325)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
+	at scala.collection.TraversableOnce.mkString(TraversableOnce.scala:328)
+	at scala.collection.TraversableOnce.mkString$(TraversableOnce.scala:328)
+	at scala.collection.AbstractTraversable.mkString(Traversable.scala:108)
 	at com.olvind.tso.ts.TsTreeScope.toString(TsTreeScope.scala:97)
 	at com.olvind.tso.ts.TsTreeScope.toString$(TsTreeScope.scala:96)
 	at com.olvind.tso.ts.TsTreeScope$Scoped.toString$lzycompute(TsTreeScope.scala:200)
@@ -1082,8 +1084,6 @@
 	at scala.collection.TraversableOnce.collectFirst(TraversableOnce.scala:148)
 	at scala.collection.TraversableOnce.collectFirst$(TraversableOnce.scala:135)
 	at scala.collection.AbstractTraversable.collectFirst(Traversable.scala:108)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.callableTypes(ExpandCallables.scala:85)
-	at com.olvind.tso.ts.transforms.ExpandCallables$.$anonfun$callableTypes$1(ExpandCallables.scala:76)
 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => typescript] 
 [error] PhaseRunner.scala:86 Failure, [tabris => java.lang.StackOverflowError] [id => tabris, phase => scala.js] 

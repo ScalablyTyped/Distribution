@@ -43,6 +43,7 @@ class QuestionPanelDynamicItem protected ()
   override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "QuestionPanelDynamicItem")
 @js.native
 object QuestionPanelDynamicItem extends js.Object {

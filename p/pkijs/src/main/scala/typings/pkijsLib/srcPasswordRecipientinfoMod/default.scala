@@ -25,6 +25,7 @@ class default () extends PasswordRecipientinfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PasswordRecipientinfo", JSImport.Default)
 @js.native
 object default extends js.Object {

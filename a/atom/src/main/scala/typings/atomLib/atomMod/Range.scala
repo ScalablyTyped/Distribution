@@ -96,6 +96,7 @@ class Range () extends js.Object {
   def union(other: RangeLike): Range = js.native
 }
 
+/* static members */
 @JSImport("atom", "Range")
 @js.native
 object Range extends js.Object {

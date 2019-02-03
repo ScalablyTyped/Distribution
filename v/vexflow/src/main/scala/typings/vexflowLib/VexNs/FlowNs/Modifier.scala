@@ -29,6 +29,7 @@ class Modifier () extends js.Object {
   def setYShift(y: scala.Double): Modifier = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Modifier")
 @js.native
 object Modifier extends js.Object {

@@ -13,6 +13,7 @@ abstract class Component[P, S] ()
   def this(props: P, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("preact", "Component")
 @js.native
 object Component extends js.Object {

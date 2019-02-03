@@ -60,7 +60,7 @@ abstract class Accelerometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents an accelerometer sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Accelerometer")
 @js.native
 object Accelerometer extends js.Object {

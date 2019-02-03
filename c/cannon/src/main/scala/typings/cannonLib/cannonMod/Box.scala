@@ -12,6 +12,7 @@ class Box protected ()
   def this(halfExtents: cannonLib.CANNONNs.Vec3) = this()
 }
 
+/* static members */
 @JSImport("cannon", "Box")
 @js.native
 object Box extends js.Object {

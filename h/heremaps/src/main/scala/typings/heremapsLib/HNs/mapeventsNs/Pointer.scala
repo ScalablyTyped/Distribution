@@ -32,16 +32,7 @@ class Pointer protected () extends js.Object {
   def this(viewportX: scala.Double, viewportY: scala.Double, id: scala.Double, `type`: java.lang.String, opt_button: heremapsLib.HNs.mapeventsNs.PointerNs.Button, opt_buttons: heremapsLib.HNs.mathNs.BitMask) = this()
 }
 
-/**
-  * Class representing pointer on the map surface. A pointer in platform specific definition would mean either mouse, touch, pen or any pointing device which can trigger browser events.
-  * @property viewportX {number} - X coordinate on the map's viewport
-  * @property viewportY {number} - Y coordinate on the map's viewport
-  * @property target {(H.map.Object | H.Map)} - Map object directly under the pointer. Can be null if if pointer is out of the map viewport
-  * @property id {number} - Pointer unique identifier.
-  * @property type {string} - Pointer type can be: 'mouse', 'touch' or 'pen'
-  * @property dragTarget {(H.map.Object | H.Map)} - Object which is currently dragged by the pointer
-  * @property button {H.mapevents.Pointer.Button} - Indicates which pointer device button has changed.
-  */
+/* static members */
 @JSGlobal("H.mapevents.Pointer")
 @js.native
 object Pointer extends js.Object {

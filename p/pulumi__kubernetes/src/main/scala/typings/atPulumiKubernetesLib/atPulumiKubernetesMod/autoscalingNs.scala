@@ -47,9 +47,7 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * configuration of a horizontal pod autoscaler.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -72,9 +70,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**
@@ -140,11 +136,7 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -167,9 +159,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**
@@ -235,11 +225,7 @@ object autoscalingNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -262,9 +248,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**

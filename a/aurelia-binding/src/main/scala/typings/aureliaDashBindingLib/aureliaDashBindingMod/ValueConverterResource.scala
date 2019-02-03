@@ -16,6 +16,7 @@ class ValueConverterResource protected () extends js.Object {
   def register(registry: js.Any, name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aurelia-binding", "ValueConverterResource")
 @js.native
 object ValueConverterResource extends js.Object {

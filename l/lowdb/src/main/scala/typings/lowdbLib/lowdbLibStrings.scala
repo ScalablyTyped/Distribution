@@ -9,6 +9,7 @@ object lowdbLibStrings {
   @js.native
   sealed trait `@@reference` extends js.Object
   
+  @scala.inline
   def `@@reference`: `@@reference` = "@@reference".asInstanceOf[`@@reference`]
 }
 

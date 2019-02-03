@@ -72,27 +72,49 @@ object geodesyLibStrings {
   @js.native
   sealed trait dms extends js.Object
   
+  @scala.inline
   def Airy1830: Airy1830 = "Airy1830".asInstanceOf[Airy1830]
+  @scala.inline
   def AiryModified: AiryModified = "AiryModified".asInstanceOf[AiryModified]
+  @scala.inline
   def Bessel1841: Bessel1841 = "Bessel1841".asInstanceOf[Bessel1841]
+  @scala.inline
   def Clarke1866: Clarke1866 = "Clarke1866".asInstanceOf[Clarke1866]
+  @scala.inline
   def Clarke1880IGN: Clarke1880IGN = "Clarke1880IGN".asInstanceOf[Clarke1880IGN]
+  @scala.inline
   def ED50: ED50 = "ED50".asInstanceOf[ED50]
+  @scala.inline
   def GRS80: GRS80 = "GRS80".asInstanceOf[GRS80]
+  @scala.inline
   def Intl1924: Intl1924 = "Intl1924".asInstanceOf[Intl1924]
+  @scala.inline
   def Irl1975: Irl1975 = "Irl1975".asInstanceOf[Irl1975]
+  @scala.inline
   def N: N = "N".asInstanceOf[N]
+  @scala.inline
   def NAD27: NAD27 = "NAD27".asInstanceOf[NAD27]
+  @scala.inline
   def NAD83: NAD83 = "NAD83".asInstanceOf[NAD83]
+  @scala.inline
   def NTF: NTF = "NTF".asInstanceOf[NTF]
+  @scala.inline
   def OSGB36: OSGB36 = "OSGB36".asInstanceOf[OSGB36]
+  @scala.inline
   def Potsdam: Potsdam = "Potsdam".asInstanceOf[Potsdam]
+  @scala.inline
   def S: S = "S".asInstanceOf[S]
+  @scala.inline
   def TokyoJapan: TokyoJapan = "TokyoJapan".asInstanceOf[TokyoJapan]
+  @scala.inline
   def WGS72: WGS72 = "WGS72".asInstanceOf[WGS72]
+  @scala.inline
   def WGS84: WGS84 = "WGS84".asInstanceOf[WGS84]
+  @scala.inline
   def d: d = "d".asInstanceOf[d]
+  @scala.inline
   def dm: dm = "dm".asInstanceOf[dm]
+  @scala.inline
   def dms: dms = "dms".asInstanceOf[dms]
 }
 

@@ -20,6 +20,7 @@ class PeeringConnectionOptions protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2PeeringConnectionOptionsMod.PeeringConnectionOptionsArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "PeeringConnectionOptions")
 @js.native
 object PeeringConnectionOptions extends js.Object {

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class MultiObserver[T] ()
   extends babylonjsLib.BABYLONNs.MultiObserver[T]
 
-/**
-  * Represent a list of observers registered to multiple Observables object.
-  */
+/* static members */
 @JSImport("babylonjs", "MultiObserver")
 @js.native
 object MultiObserver extends js.Object {

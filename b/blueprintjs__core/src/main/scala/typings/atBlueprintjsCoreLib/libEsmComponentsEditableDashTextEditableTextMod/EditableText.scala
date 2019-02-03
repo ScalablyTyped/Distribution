@@ -28,6 +28,7 @@ class EditableText ()
   /* private */ def updateInputDimensions(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/editable-text/editableText", "EditableText")
 @js.native
 object EditableText extends js.Object {

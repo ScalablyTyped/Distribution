@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Parallax () extends Component[ParallaxOptions]
 
+/* static members */
 @JSGlobal("M.Parallax")
 @js.native
 object Parallax extends js.Object {

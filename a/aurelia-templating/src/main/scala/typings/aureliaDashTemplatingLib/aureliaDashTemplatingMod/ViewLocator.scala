@@ -30,6 +30,7 @@ class ViewLocator () extends js.Object {
   def getViewStrategy(value: js.Any): ViewStrategy = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "ViewLocator")
 @js.native
 object ViewLocator extends js.Object {

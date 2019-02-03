@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Oid ()
   extends nodegitLib.oidMod.Oid
 
+/* static members */
 @JSImport("nodegit", "Oid")
 @js.native
 object Oid extends js.Object {

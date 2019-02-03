@@ -12,7 +12,9 @@ object aceDashDiffLibStrings {
   @js.native
   sealed trait specific extends js.Object
   
+  @scala.inline
   def broad: broad = "broad".asInstanceOf[broad]
+  @scala.inline
   def specific: specific = "specific".asInstanceOf[specific]
 }
 

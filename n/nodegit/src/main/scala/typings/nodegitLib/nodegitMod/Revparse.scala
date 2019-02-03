@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Revparse ()
   extends nodegitLib.revDashParseMod.Revparse
 
+/* static members */
 @JSImport("nodegit", "Revparse")
 @js.native
 object Revparse extends js.Object {

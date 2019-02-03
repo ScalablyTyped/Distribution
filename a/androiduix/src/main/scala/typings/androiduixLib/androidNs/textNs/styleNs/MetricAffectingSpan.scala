@@ -13,6 +13,7 @@ abstract class MetricAffectingSpan ()
   def updateMeasureState(p: androiduixLib.androidNs.textNs.TextPaint): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.style.MetricAffectingSpan")
 @js.native
 object MetricAffectingSpan extends js.Object {

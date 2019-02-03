@@ -30,6 +30,7 @@ class Asset protected () extends js.Object {
   def downloadAsync(): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("expo", "Asset")
 @js.native
 object Asset extends js.Object {

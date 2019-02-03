@@ -26,6 +26,7 @@ class IndexSignatureSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): IndexSignatureSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.IndexSignatureSyntax")
 @js.native
 object IndexSignatureSyntax extends js.Object {

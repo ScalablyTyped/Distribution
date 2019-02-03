@@ -20,6 +20,7 @@ class Build protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.gameliftBuildMod.BuildArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift", "Build")
 @js.native
 object Build extends js.Object {

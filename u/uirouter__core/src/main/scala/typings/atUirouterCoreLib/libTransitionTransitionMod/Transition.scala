@@ -510,6 +510,7 @@ class Transition protected ()
   def views(pathname: java.lang.String, state: atUirouterCoreLib.libStateStateObjectMod.StateObject): js.Array[atUirouterCoreLib.libViewInterfaceMod.ViewConfig] = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/transition/transition", "Transition")
 @js.native
 object Transition extends js.Object {

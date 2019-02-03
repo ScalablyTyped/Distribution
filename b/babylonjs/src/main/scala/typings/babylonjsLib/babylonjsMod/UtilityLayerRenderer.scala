@@ -20,9 +20,7 @@ class UtilityLayerRenderer protected ()
   originalScene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Renders a layer on top of an existing scene
-  */
+/* static members */
 @JSImport("babylonjs", "UtilityLayerRenderer")
 @js.native
 object UtilityLayerRenderer extends js.Object {

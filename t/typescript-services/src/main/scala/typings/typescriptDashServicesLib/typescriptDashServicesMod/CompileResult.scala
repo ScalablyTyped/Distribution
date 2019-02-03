@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CompileResult ()
   extends typescriptDashServicesLib.TypeScriptNs.CompileResult
 
+/* static members */
 @JSImport("typescript-services", "CompileResult")
 @js.native
 object CompileResult extends js.Object {

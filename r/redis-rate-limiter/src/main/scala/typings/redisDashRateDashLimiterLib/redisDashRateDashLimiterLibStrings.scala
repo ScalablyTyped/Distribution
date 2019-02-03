@@ -9,6 +9,7 @@ object redisDashRateDashLimiterLibStrings {
   @js.native
   sealed trait ip extends js.Object
   
+  @scala.inline
   def ip: ip = "ip".asInstanceOf[ip]
 }
 

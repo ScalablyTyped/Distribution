@@ -9,6 +9,7 @@ object jqueryDashStickyLibStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
 }
 

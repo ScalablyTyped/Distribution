@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Grid ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Grid
 
+/* static members */
 @JSImport("matter-js", "Grid")
 @js.native
 object Grid extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DocumentSet ()
   extends sharepointLib.SPNs.ClientObject
 
+/* static members */
 @JSGlobal("SP.DocumentSet.DocumentSet")
 @js.native
 object DocumentSet extends js.Object {

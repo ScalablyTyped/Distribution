@@ -21,10 +21,15 @@ object gamepadLibStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
   def attach: attach = "attach".asInstanceOf[attach]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
 }
 

@@ -28,6 +28,7 @@ class default protected () extends Attributor {
   override def value(node: stdLib.HTMLElement): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("parchment/dist/src/attributor/attributor", JSImport.Default)
 @js.native
 object default extends js.Object {

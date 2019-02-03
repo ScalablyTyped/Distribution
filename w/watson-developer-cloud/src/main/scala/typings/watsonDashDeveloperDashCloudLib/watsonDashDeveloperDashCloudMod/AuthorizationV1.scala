@@ -12,6 +12,7 @@ class AuthorizationV1 protected () extends js.Object {
   def getToken(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "AuthorizationV1")
 @js.native
 object AuthorizationV1 extends js.Object {

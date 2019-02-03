@@ -56,6 +56,7 @@ class SmoothieChart () extends js.Object {
   def updateValueRange(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("smoothie", "SmoothieChart")
 @js.native
 object SmoothieChart extends js.Object {

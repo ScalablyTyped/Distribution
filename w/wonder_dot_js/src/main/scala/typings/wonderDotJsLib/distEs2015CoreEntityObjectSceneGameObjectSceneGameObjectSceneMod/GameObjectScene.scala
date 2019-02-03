@@ -14,6 +14,7 @@ class GameObjectScene ()
   def render(renderer: wonderDotJsLib.distEs2015RendererRendererRendererMod.Renderer): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/scene/gameObjectScene/GameObjectScene", "GameObjectScene")
 @js.native
 object GameObjectScene extends js.Object {

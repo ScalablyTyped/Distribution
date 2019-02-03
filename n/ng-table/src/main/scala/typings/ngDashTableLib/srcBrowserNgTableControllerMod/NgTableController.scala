@@ -38,6 +38,7 @@ class NgTableController[TParams, TCol /* <: ngDashTableLib.srcBrowserPublicDashI
   /* private */ def subscribeToTableEvents(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/browser/ngTableController", "NgTableController")
 @js.native
 object NgTableController extends js.Object {

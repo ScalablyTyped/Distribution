@@ -15,8 +15,11 @@ object webpackDashMergeLibStrings {
   @js.native
   sealed trait replace extends js.Object
   
+  @scala.inline
   def append: append = "append".asInstanceOf[append]
+  @scala.inline
   def prepend: prepend = "prepend".asInstanceOf[prepend]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
 }
 

@@ -33,6 +33,7 @@ class AssessmentTarget protected ()
   val resourceGroupArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/inspector/assessmentTarget", "AssessmentTarget")
 @js.native
 object AssessmentTarget extends js.Object {

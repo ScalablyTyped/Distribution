@@ -15,6 +15,7 @@ class TestStream protected ()
   var scheduler_TestStream: wonderDashFrpLib.distEs2015TestingTestSchedulerMod.TestScheduler = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/testing/TestStream", "TestStream")
 @js.native
 object TestStream extends js.Object {

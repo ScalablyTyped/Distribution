@@ -18,6 +18,7 @@ class CKEditorError protected ()
   override var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@ckeditor/ckeditor5-utils", "CKEditorError")
 @js.native
 object CKEditorError extends js.Object {

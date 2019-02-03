@@ -14,6 +14,7 @@ class EditorOptions () extends js.Object {
   var TabSize: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.EditorOptions")
 @js.native
 object EditorOptions extends js.Object {

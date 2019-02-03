@@ -25,7 +25,9 @@ package object distNodesMod {
   type ProductionBodyKind = java.lang.String
   type ProseFragment = /* import warning: ImportType.apply Failed type conversion: grammarkdown.grammarkdown/dist/nodes.ProseFragmentTypes[grammarkdown.grammarkdown/dist/nodes.ProseFragmentKind] */ js.Any
   type ProseFragmentKind = java.lang.String
-  type ProseFragmentLiteralTypes = grammarkdownLib.grammarkdownLibStrings.ProseFragmentLiteralTypes with js.Any
+  type ProseFragmentLiteralTypes = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in grammarkdown.grammarkdown/dist/tokens.ProseFragmentLiteralKind ]: grammarkdown.grammarkdown/dist/nodes.ProseFragmentLiteral<P>}
+    */ grammarkdownLib.grammarkdownLibStrings.ProseFragmentLiteralTypes with js.Any
   type SourceElement = /* import warning: ImportType.apply Failed type conversion: grammarkdown.grammarkdown/dist/nodes.SourceElementTypes[grammarkdown.grammarkdown/dist/nodes.SourceElementKind] */ js.Any
   type SourceElementKind = java.lang.String
   type Trivia = /* import warning: ImportType.apply Failed type conversion: grammarkdown.grammarkdown/dist/nodes.TriviaTypes[grammarkdown.grammarkdown/dist/tokens.TriviaKind] */ js.Any

@@ -12,6 +12,7 @@ class MessageBarBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsMessageBarMessageBarDotTypesMod.IMessageBarProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "MessageBarBase")
 @js.native
 object MessageBarBase extends js.Object {

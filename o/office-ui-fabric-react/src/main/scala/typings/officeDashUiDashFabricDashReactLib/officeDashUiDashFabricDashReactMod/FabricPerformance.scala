@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FabricPerformance ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesMod.FabricPerformance
 
+/* static members */
 @JSImport("office-ui-fabric-react", "FabricPerformance")
 @js.native
 object FabricPerformance extends js.Object {

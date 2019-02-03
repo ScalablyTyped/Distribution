@@ -99,6 +99,7 @@ class SortedMap[K, V] protected () extends js.Object {
   def reverseTraversal(action: js.Function2[/* k */ K, /* v */ V, scala.Unit]): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/util/SortedMap", "SortedMap")
 @js.native
 object SortedMap extends js.Object {

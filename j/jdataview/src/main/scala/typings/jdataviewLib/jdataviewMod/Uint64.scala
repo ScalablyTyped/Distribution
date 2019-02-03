@@ -16,6 +16,7 @@ class Uint64 protected ()
   override var lo: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("jdataview", "Uint64")
 @js.native
 object Uint64 extends js.Object {

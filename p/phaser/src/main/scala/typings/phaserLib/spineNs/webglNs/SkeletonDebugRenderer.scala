@@ -43,6 +43,7 @@ class SkeletonDebugRenderer protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.webgl.SkeletonDebugRenderer")
 @js.native
 object SkeletonDebugRenderer extends js.Object {

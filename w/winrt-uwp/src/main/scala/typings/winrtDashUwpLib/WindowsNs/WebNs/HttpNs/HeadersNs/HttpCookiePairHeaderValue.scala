@@ -26,7 +26,7 @@ class HttpCookiePairHeaderValue protected () extends js.Object {
   var value: java.lang.String = js.native
 }
 
-/** Represents cookie information used in the Cookie HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpCookiePairHeaderValue")
 @js.native
 object HttpCookiePairHeaderValue extends js.Object {

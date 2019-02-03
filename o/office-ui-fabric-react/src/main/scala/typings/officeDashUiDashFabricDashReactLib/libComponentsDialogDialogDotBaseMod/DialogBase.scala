@@ -20,6 +20,7 @@ class DialogBase protected ()
   var _id: js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Dialog/Dialog.base", "DialogBase")
 @js.native
 object DialogBase extends js.Object {

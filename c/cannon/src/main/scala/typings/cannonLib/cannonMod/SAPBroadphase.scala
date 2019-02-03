@@ -12,6 +12,7 @@ class SAPBroadphase ()
   def this(world: cannonLib.CANNONNs.World) = this()
 }
 
+/* static members */
 @JSImport("cannon", "SAPBroadphase")
 @js.native
 object SAPBroadphase extends js.Object {

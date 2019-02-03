@@ -22,9 +22,7 @@ class AppBarCommand () extends ICommand {
   def this(element: stdLib.HTMLElement, options: js.Any) = this()
 }
 
-/**
-  * Represents a command to be displayed in an app bar.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.AppBarCommand")
 @js.native
 object AppBarCommand extends js.Object {

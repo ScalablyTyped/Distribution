@@ -30,6 +30,7 @@ class Platform protected () extends js.Object {
   ] = js.native
 }
 
+/* static members */
 @JSImport("app-builder-lib/out/core", "Platform")
 @js.native
 object Platform extends js.Object {

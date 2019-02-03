@@ -20,6 +20,7 @@ class ImageEncodingProperties () extends IImageEncodingProperties {
   override var width: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
 @js.native
 object ImageEncodingProperties extends js.Object {

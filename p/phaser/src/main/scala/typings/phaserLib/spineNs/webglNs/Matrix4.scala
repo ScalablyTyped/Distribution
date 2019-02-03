@@ -32,6 +32,7 @@ class Matrix4 () extends js.Object {
   def transpose(): Matrix4 = js.native
 }
 
+/* static members */
 @JSGlobal("spine.webgl.Matrix4")
 @js.native
 object Matrix4 extends js.Object {

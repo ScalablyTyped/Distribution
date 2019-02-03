@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ShaderLibUtils ()
   extends wonderDotJsLib.distEs2015UtilsShaderLibUtilsMod.ShaderLibUtils
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ShaderLibUtils")
 @js.native
 object ShaderLibUtils extends js.Object {

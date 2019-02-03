@@ -23,6 +23,7 @@ object devicefarmNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.devicefarmProjectMod.ProjectArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Project extends js.Object {
     /**

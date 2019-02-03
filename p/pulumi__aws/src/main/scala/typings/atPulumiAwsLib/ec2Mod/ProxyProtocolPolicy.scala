@@ -20,6 +20,7 @@ class ProxyProtocolPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2ProxyProtocolPolicyMod.ProxyProtocolPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "ProxyProtocolPolicy")
 @js.native
 object ProxyProtocolPolicy extends js.Object {

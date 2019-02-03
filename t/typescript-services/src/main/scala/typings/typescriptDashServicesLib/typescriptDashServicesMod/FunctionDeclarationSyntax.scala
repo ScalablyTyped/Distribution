@@ -12,6 +12,7 @@ class FunctionDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, functionKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "FunctionDeclarationSyntax")
 @js.native
 object FunctionDeclarationSyntax extends js.Object {

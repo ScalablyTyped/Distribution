@@ -31,6 +31,7 @@ class OrthographicFrustum ()
   ): cesiumLib.cesiumMod.CesiumNs.Cartesian2 = js.native
 }
 
+/* static members */
 @JSImport("cesium", "OrthographicFrustum")
 @js.native
 object OrthographicFrustum extends js.Object {

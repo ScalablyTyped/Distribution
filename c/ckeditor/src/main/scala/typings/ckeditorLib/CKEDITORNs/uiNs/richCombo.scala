@@ -11,6 +11,7 @@ class richCombo () extends js.Object {
   def render(editor: ckeditorLib.CKEDITORNs.editor, output: js.Array[java.lang.String]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.ui.richCombo")
 @js.native
 object richCombo extends js.Object {

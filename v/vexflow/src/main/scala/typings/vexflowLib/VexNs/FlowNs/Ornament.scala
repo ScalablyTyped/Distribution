@@ -14,6 +14,7 @@ class Ornament protected () extends Modifier {
   def setUpperAccidental(acc: java.lang.String): Ornament = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Ornament")
 @js.native
 object Ornament extends js.Object {

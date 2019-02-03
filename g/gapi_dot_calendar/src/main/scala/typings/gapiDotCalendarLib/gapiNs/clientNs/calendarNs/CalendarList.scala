@@ -25,6 +25,7 @@ trait CalendarList extends js.Object {
 @js.native
 class calendarList () extends js.Object
 
+/* static members */
 @JSGlobal("gapi.client.calendar.calendarList")
 @js.native
 object calendarList extends js.Object {

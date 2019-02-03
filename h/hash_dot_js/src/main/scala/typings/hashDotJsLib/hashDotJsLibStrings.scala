@@ -15,8 +15,11 @@ object hashDotJsLibStrings {
   @js.native
   sealed trait little extends js.Object
   
+  @scala.inline
   def big: big = "big".asInstanceOf[big]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
   def little: little = "little".asInstanceOf[little]
 }
 

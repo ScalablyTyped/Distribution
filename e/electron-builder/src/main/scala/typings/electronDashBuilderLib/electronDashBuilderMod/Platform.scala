@@ -12,6 +12,7 @@ class Platform protected ()
   def this(name: java.lang.String, buildConfigurationKey: java.lang.String, nodeName: nodeLib.NodeJSNs.Platform) = this()
 }
 
+/* static members */
 @JSImport("electron-builder", "Platform")
 @js.native
 object Platform extends js.Object {

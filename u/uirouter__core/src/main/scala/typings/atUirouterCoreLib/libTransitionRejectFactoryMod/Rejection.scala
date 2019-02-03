@@ -49,6 +49,7 @@ class Rejection protected () extends js.Object {
   def toPromise(): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/transition/rejectFactory", "Rejection")
 @js.native
 object Rejection extends js.Object {

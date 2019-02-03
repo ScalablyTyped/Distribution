@@ -40,6 +40,7 @@ class Model protected ()
   val schema: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/model", "Model")
 @js.native
 object Model extends js.Object {

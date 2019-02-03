@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class LockScreen () extends js.Object
 
-/** Provides properties and methods to manage the full-screen image used as the lock screen background. */
+/* static members */
 @JSGlobal("Windows.System.UserProfile.LockScreen")
 @js.native
 object LockScreen extends js.Object {

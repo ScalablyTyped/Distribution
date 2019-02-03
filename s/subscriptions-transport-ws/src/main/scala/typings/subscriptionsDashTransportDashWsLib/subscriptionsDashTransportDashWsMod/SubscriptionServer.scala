@@ -13,6 +13,7 @@ class SubscriptionServer protected ()
   def this(options: subscriptionsDashTransportDashWsLib.distServerMod.ServerOptions, socketOptionsOrServer: wsLib.wsMod.WebSocketNs.ServerOptions) = this()
 }
 
+/* static members */
 @JSImport("subscriptions-transport-ws", "SubscriptionServer")
 @js.native
 object SubscriptionServer extends js.Object {

@@ -12,6 +12,7 @@ class namespaced ()
   def this(opts: markerDashAnimateDashUnobtrusiveLib.SlidingMarkerOptions) = this()
 }
 
+/* static members */
 @JSImport("SlidingMarker", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

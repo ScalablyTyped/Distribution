@@ -19,6 +19,7 @@ class ModifierContext () extends js.Object {
   def preFormat(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.ModifierContext")
 @js.native
 object ModifierContext extends js.Object {

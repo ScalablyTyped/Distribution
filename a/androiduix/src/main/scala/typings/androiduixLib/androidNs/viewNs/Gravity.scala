@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Gravity () extends js.Object
 
+/* static members */
 @JSGlobal("android.view.Gravity")
 @js.native
 object Gravity extends js.Object {

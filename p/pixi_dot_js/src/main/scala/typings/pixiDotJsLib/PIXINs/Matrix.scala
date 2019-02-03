@@ -55,6 +55,7 @@ class Matrix protected () extends js.Object {
   def translate(x: scala.Double, y: scala.Double): Matrix = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Matrix")
 @js.native
 object Matrix extends js.Object {

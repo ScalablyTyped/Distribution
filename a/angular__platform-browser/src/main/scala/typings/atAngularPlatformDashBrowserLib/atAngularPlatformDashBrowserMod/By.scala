@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class By ()
   extends atAngularPlatformDashBrowserLib.publicUnderscoreApiMod.By
 
+/* static members */
 @JSImport("@angular/platform-browser", "By")
 @js.native
 object By extends js.Object {

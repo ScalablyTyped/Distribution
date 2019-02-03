@@ -68,6 +68,7 @@ class CatalogTable protected ()
   val viewOriginalText: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/catalogTable", "CatalogTable")
 @js.native
 object CatalogTable extends js.Object {

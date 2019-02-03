@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TreeNode[T] ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.TreeNode[T]
 
+/* static members */
 @JSImport("@blueprintjs/core", "TreeNode")
 @js.native
 object TreeNode extends js.Object {

@@ -14,6 +14,7 @@ class MenuPortal[OptionType] ()
   def getPortalPlacement(state: MenuState): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/components/Menu", "MenuPortal")
 @js.native
 object MenuPortal extends js.Object {

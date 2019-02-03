@@ -26,6 +26,7 @@ class PointerPoint () extends IPointerPoint {
   override var timestamp: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Input.PointerPoint")
 @js.native
 object PointerPoint extends js.Object {

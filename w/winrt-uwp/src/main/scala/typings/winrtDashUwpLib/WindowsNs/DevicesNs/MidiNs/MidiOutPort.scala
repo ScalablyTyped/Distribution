@@ -25,7 +25,7 @@ abstract class MidiOutPort () extends js.Object {
   def sendMessage(midiMessage: IMidiMessage): scala.Unit = js.native
 }
 
-/** Represents a port used to send MIDI messages to a MIDI device. */
+/* static members */
 @JSGlobal("Windows.Devices.Midi.MidiOutPort")
 @js.native
 object MidiOutPort extends js.Object {

@@ -18,9 +18,13 @@ object ascii2mathmlLibStrings {
   @js.native
   sealed trait rtl extends js.Object
   
+  @scala.inline
   def block: block = "block".asInstanceOf[block]
+  @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
 }
 

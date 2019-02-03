@@ -112,10 +112,7 @@ class BoneLookController protected () extends js.Object {
   def update(): scala.Unit = js.native
 }
 
-/**
-  * Class used to make a bone look toward a point in space
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons#bonelookcontroller
-  */
+/* static members */
 @JSGlobal("BABYLON.BoneLookController")
 @js.native
 object BoneLookController extends js.Object {

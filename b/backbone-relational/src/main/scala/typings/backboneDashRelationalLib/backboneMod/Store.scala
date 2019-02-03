@@ -35,6 +35,7 @@ class Store ()
   def update(model: RelationalModel): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("backbone", "Store")
 @js.native
 object Store extends js.Object {

@@ -12,7 +12,9 @@ object yeomanDashGeneratorLibStrings {
   @js.native
   sealed trait weak extends js.Object
   
+  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def weak: weak = "weak".asInstanceOf[weak]
 }
 

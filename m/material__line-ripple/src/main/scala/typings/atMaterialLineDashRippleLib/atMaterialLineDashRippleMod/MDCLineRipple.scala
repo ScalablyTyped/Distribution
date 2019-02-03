@@ -27,6 +27,7 @@ class MDCLineRipple ()
   def setRippleCenter(xCoordinate: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/line-ripple", "MDCLineRipple")
 @js.native
 object MDCLineRipple extends js.Object {

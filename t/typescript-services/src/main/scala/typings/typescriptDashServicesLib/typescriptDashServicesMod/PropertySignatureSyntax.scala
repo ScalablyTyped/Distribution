@@ -12,6 +12,7 @@ class PropertySignatureSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, questionToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PropertySignatureSyntax")
 @js.native
 object PropertySignatureSyntax extends js.Object {

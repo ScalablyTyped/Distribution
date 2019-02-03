@@ -23,7 +23,7 @@ abstract class UserProfilePersonalizationSettings () extends js.Object {
   def trySetWallpaperImageAsync(imageFile: winrtDashUwpLib.WindowsNs.StorageNs.StorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 
-/** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
+/* static members */
 @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings")
 @js.native
 object UserProfilePersonalizationSettings extends js.Object {

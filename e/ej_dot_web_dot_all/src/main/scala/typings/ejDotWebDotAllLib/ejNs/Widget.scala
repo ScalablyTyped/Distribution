@@ -14,6 +14,7 @@ class Widget protected () extends WidgetBase {
   def register(pluginName: java.lang.String, className: java.lang.String, prototype: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Widget")
 @js.native
 object Widget extends js.Object {

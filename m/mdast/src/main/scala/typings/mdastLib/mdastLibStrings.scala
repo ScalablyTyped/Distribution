@@ -105,38 +105,71 @@ object mdastLibStrings {
   @js.native
   sealed trait yaml extends js.Object
   
+  @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
+  @scala.inline
   def break: break = "break".asInstanceOf[break]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
+  @scala.inline
   def collapsed: collapsed = "collapsed".asInstanceOf[collapsed]
+  @scala.inline
   def definition: definition = "definition".asInstanceOf[definition]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def emphasis: emphasis = "emphasis".asInstanceOf[emphasis]
+  @scala.inline
   def footnote: footnote = "footnote".asInstanceOf[footnote]
+  @scala.inline
   def footnoteDefinition: footnoteDefinition = "footnoteDefinition".asInstanceOf[footnoteDefinition]
+  @scala.inline
   def footnoteReference: footnoteReference = "footnoteReference".asInstanceOf[footnoteReference]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def heading: heading = "heading".asInstanceOf[heading]
+  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def imageReference: imageReference = "imageReference".asInstanceOf[imageReference]
+  @scala.inline
   def inlineCode: inlineCode = "inlineCode".asInstanceOf[inlineCode]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def linkReference: linkReference = "linkReference".asInstanceOf[linkReference]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def listItem: listItem = "listItem".asInstanceOf[listItem]
+  @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
   def shortcut: shortcut = "shortcut".asInstanceOf[shortcut]
+  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def table: table = "table".asInstanceOf[table]
+  @scala.inline
   def tableCell: tableCell = "tableCell".asInstanceOf[tableCell]
+  @scala.inline
   def tableRow: tableRow = "tableRow".asInstanceOf[tableRow]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def thematicBreak: thematicBreak = "thematicBreak".asInstanceOf[thematicBreak]
+  @scala.inline
   def yaml: yaml = "yaml".asInstanceOf[yaml]
 }
 

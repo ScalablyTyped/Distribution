@@ -49,7 +49,7 @@ class Left[L, A] protected () extends js.Object {
   @JSName("filterOrElse")
   def filterOrElse_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
   /** Applies a function to each case in the data structure */
-  def fold[B](whenLeft: js.Function1[/* l */ L, B], whenRight: js.Function1[/* a */ A, B]): B = js.native
+  def fold[B](onLeft: js.Function1[/* l */ L, B], onRight: js.Function1[/* a */ A, B]): B = js.native
   /** Returns the value from this `Right` or the given argument if this is a `Left` */
   def getOrElse(a: A): A = js.native
   /** Returns the value from this `Right` or the result of given argument if this is a `Left` */

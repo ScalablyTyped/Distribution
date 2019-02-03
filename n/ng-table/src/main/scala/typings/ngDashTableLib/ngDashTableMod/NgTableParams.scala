@@ -15,6 +15,7 @@ class NgTableParams[T] ()
   def this(baseParameters: scala.Boolean, baseSettings: ngDashTableLib.srcCoreNgTableSettingsMod.ISettings[T]) = this()
 }
 
+/* static members */
 @JSImport("ng-table", "NgTableParams")
 @js.native
 object NgTableParams extends js.Object {

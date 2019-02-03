@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class InterpolationAlgorithm ()
   extends cesiumLib.cesiumMod.CesiumNs.InterpolationAlgorithm
 
-// tslint:disable-next-line no-unnecessary-class
+/* static members */
 @JSImport("cesium", "InterpolationAlgorithm")
 @js.native
 object InterpolationAlgorithm extends js.Object {

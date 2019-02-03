@@ -57,12 +57,7 @@ class VideoRecorder protected () extends js.Object {
   def stopRecording(): scala.Unit = js.native
 }
 
-/**
-  * This can helps recording videos from BabylonJS.
-  * This is based on the available WebRTC functionalities of the browser.
-  *
-  * @see http://doc.babylonjs.com/how_to/render_scene_on_a_video
-  */
+/* static members */
 @JSGlobal("BABYLON.VideoRecorder")
 @js.native
 object VideoRecorder extends js.Object {

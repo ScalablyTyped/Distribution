@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Monitor () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.perf.Monitor")
 @js.native
 object Monitor extends js.Object {

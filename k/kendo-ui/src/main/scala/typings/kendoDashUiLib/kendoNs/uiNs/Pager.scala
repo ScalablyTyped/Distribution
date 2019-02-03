@@ -21,6 +21,7 @@ class Pager protected () extends Widget {
   def totalPages(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Pager")
 @js.native
 object Pager extends js.Object {

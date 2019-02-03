@@ -104,7 +104,7 @@ class LayoutVertex ()
   override def deleteSourceEdge(edge: goLib.goMod.goNs.LayoutEdge): scala.Unit = js.native
 }
 
-/** A vertex represents a node in a LayoutNetwork. It holds layout-specific data for the node. */
+/* static members */
 @JSImport("go", "LayoutVertex")
 @js.native
 object LayoutVertex extends js.Object {

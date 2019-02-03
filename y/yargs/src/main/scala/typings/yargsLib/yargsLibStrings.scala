@@ -33,14 +33,23 @@ object yargsLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def Argv: Argv = "Argv".asInstanceOf[Argv]
+  @scala.inline
   def Defined: Defined = "Defined".asInstanceOf[Defined]
+  @scala.inline
   def InferredOptionTypes: InferredOptionTypes = "InferredOptionTypes".asInstanceOf[InferredOptionTypes]
+  @scala.inline
   def Omit: Omit = "Omit".asInstanceOf[Omit]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

@@ -79,7 +79,7 @@ class BackgroundDownloader () extends js.Object {
   def setRequestHeader(headerName: java.lang.String, headerValue: java.lang.String): scala.Unit = js.native
 }
 
-/** Used to configure downloads prior to the actual creation of the download operation using CreateDownload . For an overview of Background Transfer capabilities, see Transferring data in the background. Download the Background Transfer sample for examples in JavaScript, C#, and C++. */
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundDownloader")
 @js.native
 object BackgroundDownloader extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Camera () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Camera")
 @js.native
 object Camera extends js.Object {

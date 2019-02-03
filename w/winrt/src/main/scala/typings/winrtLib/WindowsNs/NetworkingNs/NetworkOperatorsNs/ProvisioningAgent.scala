@@ -14,6 +14,7 @@ class ProvisioningAgent () extends IProvisioningAgent {
   override def provisionFromXmlDocumentAsync(provisioningXmlDocument: java.lang.String): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ProvisionFromXmlDocumentResults] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
 @js.native
 object ProvisioningAgent extends js.Object {

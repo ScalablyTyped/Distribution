@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Async[OptionType] ()
   extends reactDashSelectLib.libAsyncMod.default[OptionType]
 
+/* static members */
 @JSImport("react-select", "Async")
 @js.native
 object Async extends js.Object {

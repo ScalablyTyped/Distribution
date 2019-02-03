@@ -14,6 +14,7 @@ class TakeUntilStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/TakeUntilStream", "TakeUntilStream")
 @js.native
 object TakeUntilStream extends js.Object {

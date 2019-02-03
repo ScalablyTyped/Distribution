@@ -15,6 +15,7 @@ class Note () extends js.Object {
   def message(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nodegit/note", "Note")
 @js.native
 object Note extends js.Object {

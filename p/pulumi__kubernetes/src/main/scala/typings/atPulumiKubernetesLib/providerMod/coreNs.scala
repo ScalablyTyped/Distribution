@@ -1612,10 +1612,7 @@ object coreNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ServiceList = js.native
     }
     
-    /**
-      * Binding ties one object to another; for example, a pod is bound to a node by a scheduler.
-      * Deprecated in 1.7, please use the bindings subresource of pods instead.
-      */
+    /* static members */
     @js.native
     object Binding extends js.Object {
       /**
@@ -1638,9 +1635,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Binding = js.native
     }
     
-    /**
-      * ComponentStatus (and ComponentStatusList) holds the cluster validation info.
-      */
+    /* static members */
     @js.native
     object ComponentStatus extends js.Object {
       /**
@@ -1663,9 +1658,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatus = js.native
     }
     
-    /**
-      * Status of all the conditions for the component as a list of ComponentStatus objects.
-      */
+    /* static members */
     @js.native
     object ComponentStatusList extends js.Object {
       /**
@@ -1688,9 +1681,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ComponentStatusList = js.native
     }
     
-    /**
-      * ConfigMap holds configuration data for pods to consume.
-      */
+    /* static members */
     @js.native
     object ConfigMap extends js.Object {
       /**
@@ -1713,9 +1704,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMap = js.native
     }
     
-    /**
-      * ConfigMapList is a resource containing a list of ConfigMap objects.
-      */
+    /* static members */
     @js.native
     object ConfigMapList extends js.Object {
       /**
@@ -1738,20 +1727,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ConfigMapList = js.native
     }
     
-    /**
-      * Endpoints is a collection of endpoints that implement the actual service. Example:
-      *   Name: "mysvc",
-      *   Subsets: [
-      *     {
-      *       Addresses: [{"ip": "10.10.1.1"}, {"ip": "10.10.2.2"}],
-      *       Ports: [{"name": "a", "port": 8675}, {"name": "b", "port": 309}]
-      *     },
-      *     {
-      *       Addresses: [{"ip": "10.10.3.3"}],
-      *       Ports: [{"name": "a", "port": 93}, {"name": "b", "port": 76}]
-      *     },
-      *  ]
-      */
+    /* static members */
     @js.native
     object Endpoints extends js.Object {
       /**
@@ -1774,9 +1750,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Endpoints = js.native
     }
     
-    /**
-      * EndpointsList is a list of endpoints.
-      */
+    /* static members */
     @js.native
     object EndpointsList extends js.Object {
       /**
@@ -1799,9 +1773,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EndpointsList = js.native
     }
     
-    /**
-      * Event is a report of an event somewhere in the cluster.
-      */
+    /* static members */
     @js.native
     object Event extends js.Object {
       /**
@@ -1824,9 +1796,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Event = js.native
     }
     
-    /**
-      * EventList is a list of events.
-      */
+    /* static members */
     @js.native
     object EventList extends js.Object {
       /**
@@ -1849,9 +1819,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.EventList = js.native
     }
     
-    /**
-      * LimitRange sets resource usage limits for each kind of resource in a Namespace.
-      */
+    /* static members */
     @js.native
     object LimitRange extends js.Object {
       /**
@@ -1874,9 +1842,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRange = js.native
     }
     
-    /**
-      * LimitRangeList is a list of LimitRange items.
-      */
+    /* static members */
     @js.native
     object LimitRangeList extends js.Object {
       /**
@@ -1899,9 +1865,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.LimitRangeList = js.native
     }
     
-    /**
-      * Namespace provides a scope for Names. Use of multiple namespaces is optional.
-      */
+    /* static members */
     @js.native
     object Namespace extends js.Object {
       /**
@@ -1924,9 +1888,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Namespace = js.native
     }
     
-    /**
-      * NamespaceList is a list of Namespaces.
-      */
+    /* static members */
     @js.native
     object NamespaceList extends js.Object {
       /**
@@ -1949,10 +1911,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NamespaceList = js.native
     }
     
-    /**
-      * Node is a worker node in Kubernetes. Each node will have a unique identifier in the cache
-      * (i.e. in etcd).
-      */
+    /* static members */
     @js.native
     object Node extends js.Object {
       /**
@@ -1975,9 +1934,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Node = js.native
     }
     
-    /**
-      * NodeList is the whole list of all Nodes which have been registered with master.
-      */
+    /* static members */
     @js.native
     object NodeList extends js.Object {
       /**
@@ -2000,10 +1957,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.NodeList = js.native
     }
     
-    /**
-      * PersistentVolume (PV) is a storage resource provisioned by an administrator. It is analogous
-      * to a node. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes
-      */
+    /* static members */
     @js.native
     object PersistentVolume extends js.Object {
       /**
@@ -2026,9 +1980,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolume = js.native
     }
     
-    /**
-      * PersistentVolumeClaim is a user's request for and claim to a persistent volume
-      */
+    /* static members */
     @js.native
     object PersistentVolumeClaim extends js.Object {
       /**
@@ -2051,9 +2003,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaim = js.native
     }
     
-    /**
-      * PersistentVolumeClaimList is a list of PersistentVolumeClaim items.
-      */
+    /* static members */
     @js.native
     object PersistentVolumeClaimList extends js.Object {
       /**
@@ -2076,9 +2026,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeClaimList = js.native
     }
     
-    /**
-      * PersistentVolumeList is a list of PersistentVolume items.
-      */
+    /* static members */
     @js.native
     object PersistentVolumeList extends js.Object {
       /**
@@ -2101,10 +2049,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PersistentVolumeList = js.native
     }
     
-    /**
-      * Pod is a collection of containers that can run on a host. This resource is created by clients
-      * and scheduled onto hosts.
-      */
+    /* static members */
     @js.native
     object Pod extends js.Object {
       /**
@@ -2127,9 +2072,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Pod = js.native
     }
     
-    /**
-      * PodList is a list of Pods.
-      */
+    /* static members */
     @js.native
     object PodList extends js.Object {
       /**
@@ -2152,9 +2095,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodList = js.native
     }
     
-    /**
-      * PodTemplate describes a template for creating copies of a predefined pod.
-      */
+    /* static members */
     @js.native
     object PodTemplate extends js.Object {
       /**
@@ -2177,9 +2118,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplate = js.native
     }
     
-    /**
-      * PodTemplateList is a list of PodTemplates.
-      */
+    /* static members */
     @js.native
     object PodTemplateList extends js.Object {
       /**
@@ -2202,9 +2141,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.PodTemplateList = js.native
     }
     
-    /**
-      * ReplicationController represents the configuration of a replication controller.
-      */
+    /* static members */
     @js.native
     object ReplicationController extends js.Object {
       /**
@@ -2227,9 +2164,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationController = js.native
     }
     
-    /**
-      * ReplicationControllerList is a collection of replication controllers.
-      */
+    /* static members */
     @js.native
     object ReplicationControllerList extends js.Object {
       /**
@@ -2252,9 +2187,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ReplicationControllerList = js.native
     }
     
-    /**
-      * ResourceQuota sets aggregate quota restrictions enforced per namespace
-      */
+    /* static members */
     @js.native
     object ResourceQuota extends js.Object {
       /**
@@ -2277,9 +2210,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuota = js.native
     }
     
-    /**
-      * ResourceQuotaList is a list of ResourceQuota items.
-      */
+    /* static members */
     @js.native
     object ResourceQuotaList extends js.Object {
       /**
@@ -2302,10 +2233,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ResourceQuotaList = js.native
     }
     
-    /**
-      * Secret holds secret data of a certain type. The total bytes of the values in the Data field
-      * must be less than MaxSecretSize bytes.
-      */
+    /* static members */
     @js.native
     object Secret extends js.Object {
       /**
@@ -2328,9 +2256,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Secret = js.native
     }
     
-    /**
-      * SecretList is a list of Secret.
-      */
+    /* static members */
     @js.native
     object SecretList extends js.Object {
       /**
@@ -2353,11 +2279,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.SecretList = js.native
     }
     
-    /**
-      * Service is a named abstraction of software service (for example, mysql) consisting of local
-      * port (for example 3306) that the proxy listens on, and the selector that determines which
-      * pods will answer requests sent through the proxy.
-      */
+    /* static members */
     @js.native
     object Service extends js.Object {
       /**
@@ -2380,11 +2302,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.Service = js.native
     }
     
-    /**
-      * ServiceAccount binds together: * a name, understood by users, and perhaps by peripheral
-      * systems, for an identity * a principal that can be authenticated and authorized * a set of
-      * secrets
-      */
+    /* static members */
     @js.native
     object ServiceAccount extends js.Object {
       /**
@@ -2407,9 +2325,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccount = js.native
     }
     
-    /**
-      * ServiceAccountList is a list of ServiceAccount objects
-      */
+    /* static members */
     @js.native
     object ServiceAccountList extends js.Object {
       /**
@@ -2432,9 +2348,7 @@ object coreNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.coreNs.v1Ns.ServiceAccountList = js.native
     }
     
-    /**
-      * ServiceList holds a list of services.
-      */
+    /* static members */
     @js.native
     object ServiceList extends js.Object {
       /**

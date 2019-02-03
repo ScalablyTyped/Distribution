@@ -17,6 +17,7 @@ class TouchPointEvent ()
   val movementDelta_TouchPointEvent: wonderDotJsLib.Anon_X = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/object/TouchPointEvent", "TouchPointEvent")
 @js.native
 object TouchPointEvent extends js.Object {

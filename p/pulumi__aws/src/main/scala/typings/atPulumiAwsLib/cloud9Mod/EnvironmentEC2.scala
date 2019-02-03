@@ -20,6 +20,7 @@ class EnvironmentEC2 protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloud9EnvironmentEC2Mod.EnvironmentEC2Args, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloud9", "EnvironmentEC2")
 @js.native
 object EnvironmentEC2 extends js.Object {

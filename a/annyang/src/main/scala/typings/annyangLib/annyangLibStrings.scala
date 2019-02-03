@@ -36,15 +36,25 @@ object annyangLibStrings {
   @js.native
   sealed trait start extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def errorNetwork: errorNetwork = "errorNetwork".asInstanceOf[errorNetwork]
+  @scala.inline
   def errorPermissionBlocked: errorPermissionBlocked = "errorPermissionBlocked".asInstanceOf[errorPermissionBlocked]
+  @scala.inline
   def errorPermissionDenied: errorPermissionDenied = "errorPermissionDenied".asInstanceOf[errorPermissionDenied]
+  @scala.inline
   def result: result = "result".asInstanceOf[result]
+  @scala.inline
   def resultMatch: resultMatch = "resultMatch".asInstanceOf[resultMatch]
+  @scala.inline
   def resultNoMatch: resultNoMatch = "resultNoMatch".asInstanceOf[resultNoMatch]
+  @scala.inline
   def soundstart: soundstart = "soundstart".asInstanceOf[soundstart]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
 }
 

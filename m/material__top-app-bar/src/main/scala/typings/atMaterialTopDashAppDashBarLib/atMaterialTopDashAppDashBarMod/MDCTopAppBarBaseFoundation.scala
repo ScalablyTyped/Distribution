@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTopAppBarBaseFoundation ()
   extends atMaterialTopDashAppDashBarLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/top-app-bar", "MDCTopAppBarBaseFoundation")
 @js.native
 object MDCTopAppBarBaseFoundation extends js.Object {

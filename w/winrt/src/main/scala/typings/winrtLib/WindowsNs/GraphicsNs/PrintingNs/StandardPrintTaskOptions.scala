@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StandardPrintTaskOptions () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Graphics.Printing.StandardPrintTaskOptions")
 @js.native
 object StandardPrintTaskOptions extends js.Object {

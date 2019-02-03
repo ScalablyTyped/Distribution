@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BufferDataTable ()
   extends wonderDotJsLib.distEs2015RendererBufferBufferDataTableMod.BufferDataTable
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "BufferDataTable")
 @js.native
 object BufferDataTable extends js.Object {

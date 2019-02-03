@@ -17,7 +17,7 @@ abstract class ErrorDetails () extends js.Object {
   var longDescription: java.lang.String = js.native
 }
 
-/** Provides information about an error that occurred. */
+/* static members */
 @JSGlobal("Windows.Foundation.Diagnostics.ErrorDetails")
 @js.native
 object ErrorDetails extends js.Object {

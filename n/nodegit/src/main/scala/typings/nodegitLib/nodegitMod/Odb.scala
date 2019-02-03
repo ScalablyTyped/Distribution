@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Odb ()
   extends nodegitLib.odbMod.Odb
 
+/* static members */
 @JSImport("nodegit", "Odb")
 @js.native
 object Odb extends js.Object {

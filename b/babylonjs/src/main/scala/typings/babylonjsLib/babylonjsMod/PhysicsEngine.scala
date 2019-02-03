@@ -22,10 +22,7 @@ class PhysicsEngine protected ()
   def this(gravity: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Vector3], _physicsPlugin: babylonjsLib.BABYLONNs.IPhysicsEnginePlugin) = this()
 }
 
-/**
-  * Class used to control physics engine
-  * @see http://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSImport("babylonjs", "PhysicsEngine")
 @js.native
 object PhysicsEngine extends js.Object {

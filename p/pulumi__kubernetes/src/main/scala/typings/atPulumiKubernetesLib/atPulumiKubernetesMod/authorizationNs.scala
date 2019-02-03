@@ -94,11 +94,7 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1Ns.SubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a
-      * given namespace. Having a namespace scoped resource makes it much easier to grant namespace
-      * scoped policy that includes permissions checking.
-      */
+    /* static members */
     @js.native
     object LocalSubjectAccessReview extends js.Object {
       /**
@@ -121,11 +117,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.LocalSubjectAccessReview = js.native
     }
     
-    /**
-      * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not
-      * filling in a spec.namespace means "in all namespaces".  Self is a special case, because users
-      * should always be able to check whether they can perform an action
-      */
+    /* static members */
     @js.native
     object SelfSubjectAccessReview extends js.Object {
       /**
@@ -148,16 +140,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectAccessReview = js.native
     }
     
-    /**
-      * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a
-      * namespace. The returned list of actions may be incomplete depending on the server's
-      * authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview
-      * should be used by UIs to show/hide actions, or to quickly let an end user reason about their
-      * permissions. It should NOT Be used by external systems to drive authorization decisions as
-      * this raises confused deputy, cache lifetime/revocation, and correctness concerns.
-      * SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization
-      * decisions to the API server.
-      */
+    /* static members */
     @js.native
     object SelfSubjectRulesReview extends js.Object {
       /**
@@ -180,9 +163,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1Ns.SelfSubjectRulesReview = js.native
     }
     
-    /**
-      * SubjectAccessReview checks whether or not a user or group can perform an action.
-      */
+    /* static members */
     @js.native
     object SubjectAccessReview extends js.Object {
       /**
@@ -293,11 +274,7 @@ object authorizationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authorizationNs.v1beta1Ns.SubjectAccessReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * LocalSubjectAccessReview checks whether or not a user or group can perform an action in a
-      * given namespace. Having a namespace scoped resource makes it much easier to grant namespace
-      * scoped policy that includes permissions checking.
-      */
+    /* static members */
     @js.native
     object LocalSubjectAccessReview extends js.Object {
       /**
@@ -320,11 +297,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.LocalSubjectAccessReview = js.native
     }
     
-    /**
-      * SelfSubjectAccessReview checks whether or the current user can perform an action.  Not
-      * filling in a spec.namespace means "in all namespaces".  Self is a special case, because users
-      * should always be able to check whether they can perform an action
-      */
+    /* static members */
     @js.native
     object SelfSubjectAccessReview extends js.Object {
       /**
@@ -347,16 +320,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectAccessReview = js.native
     }
     
-    /**
-      * SelfSubjectRulesReview enumerates the set of actions the current user can perform within a
-      * namespace. The returned list of actions may be incomplete depending on the server's
-      * authorization mode, and any errors experienced during the evaluation. SelfSubjectRulesReview
-      * should be used by UIs to show/hide actions, or to quickly let an end user reason about their
-      * permissions. It should NOT Be used by external systems to drive authorization decisions as
-      * this raises confused deputy, cache lifetime/revocation, and correctness concerns.
-      * SubjectAccessReview, and LocalAccessReview are the correct way to defer authorization
-      * decisions to the API server.
-      */
+    /* static members */
     @js.native
     object SelfSubjectRulesReview extends js.Object {
       /**
@@ -379,9 +343,7 @@ object authorizationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.authorizationNs.v1beta1Ns.SelfSubjectRulesReview = js.native
     }
     
-    /**
-      * SubjectAccessReview checks whether or not a user or group can perform an action.
-      */
+    /* static members */
     @js.native
     object SubjectAccessReview extends js.Object {
       /**

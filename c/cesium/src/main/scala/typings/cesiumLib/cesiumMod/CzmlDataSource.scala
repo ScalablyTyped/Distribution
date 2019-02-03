@@ -32,6 +32,7 @@ class CzmlDataSource ()
   override def update(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "CzmlDataSource")
 @js.native
 object CzmlDataSource extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Octicons ()
   extends reactDashNativeDashVectorDashIconsLib.octiconsMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Octicons")
 @js.native
 object Octicons extends js.Object {

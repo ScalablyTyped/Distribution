@@ -33,6 +33,7 @@ class Detector protected ()
   val findingPublishingFrequency: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty/detector", "Detector")
 @js.native
 object Detector extends js.Object {

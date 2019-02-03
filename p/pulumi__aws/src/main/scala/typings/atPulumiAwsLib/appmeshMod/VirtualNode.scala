@@ -20,6 +20,7 @@ class VirtualNode protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNodeArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh", "VirtualNode")
 @js.native
 object VirtualNode extends js.Object {

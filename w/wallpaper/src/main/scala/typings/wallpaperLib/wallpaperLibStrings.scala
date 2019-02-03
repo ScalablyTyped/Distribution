@@ -18,9 +18,13 @@ object wallpaperLibStrings {
   @js.native
   sealed trait stretch extends js.Object
   
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
+  @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
 }
 

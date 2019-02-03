@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AllJoynStatus () extends js.Object
 
-/** Defines a collection of properties used to convey meaning for AllJoyn status codes. For possible status values, refer to the AllJoyn standard documentation. */
+/* static members */
 @JSGlobal("Windows.Devices.AllJoyn.AllJoynStatus")
 @js.native
 object AllJoynStatus extends js.Object {

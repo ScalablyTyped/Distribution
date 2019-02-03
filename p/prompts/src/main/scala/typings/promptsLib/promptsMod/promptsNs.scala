@@ -68,7 +68,9 @@ object promptsNs extends js.Object {
   def select(args: PromptObject[java.lang.String]): scala.Unit = js.native
   def text(args: PromptObject[java.lang.String]): scala.Unit = js.native
   def toggle(args: PromptObject[java.lang.String]): scala.Unit = js.native
-  type Answers[T /* <: java.lang.String */] = promptsLib.promptsLibStrings.Answers with js.Any
+  type Answers[T /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ id in T ]: any}
+    */ promptsLib.promptsLibStrings.Answers with js.Any
   type Falsy = js.UndefOr[promptsLib.promptsLibNumbers.`false` | scala.Null]
   type PrevCaller[T /* <: java.lang.String */, R] = js.Function3[
     /* prev */ js.Any, 

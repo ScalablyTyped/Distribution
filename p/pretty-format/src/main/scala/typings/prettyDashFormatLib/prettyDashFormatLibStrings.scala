@@ -24,11 +24,17 @@ object prettyDashFormatLibStrings {
   @js.native
   sealed trait ReactTestComponent extends js.Object
   
+  @scala.inline
   def AsymmetricMatcher: AsymmetricMatcher = "AsymmetricMatcher".asInstanceOf[AsymmetricMatcher]
+  @scala.inline
   def ConvertAnsi: ConvertAnsi = "ConvertAnsi".asInstanceOf[ConvertAnsi]
+  @scala.inline
   def HTMLElement: HTMLElement = "HTMLElement".asInstanceOf[HTMLElement]
+  @scala.inline
   def Immutable: Immutable = "Immutable".asInstanceOf[Immutable]
+  @scala.inline
   def ReactElement: ReactElement = "ReactElement".asInstanceOf[ReactElement]
+  @scala.inline
   def ReactTestComponent: ReactTestComponent = "ReactTestComponent".asInstanceOf[ReactTestComponent]
 }
 

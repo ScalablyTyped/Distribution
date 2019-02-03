@@ -27,12 +27,19 @@ object atWebscopeioReactDashTextareaDashAutocompleteLibStrings {
   @js.native
   sealed trait value extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def onBlur: onBlur = "onBlur".asInstanceOf[onBlur]
+  @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
 }
 

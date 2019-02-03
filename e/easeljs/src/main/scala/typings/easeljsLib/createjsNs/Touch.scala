@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Touch () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.Touch")
 @js.native
 object Touch extends js.Object {

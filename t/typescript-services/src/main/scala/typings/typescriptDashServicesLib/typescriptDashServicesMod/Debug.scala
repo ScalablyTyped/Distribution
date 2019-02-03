@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Debug ()
   extends typescriptDashServicesLib.TypeScriptNs.Debug
 
+/* static members */
 @JSImport("typescript-services", "Debug")
 @js.native
 object Debug extends js.Object {

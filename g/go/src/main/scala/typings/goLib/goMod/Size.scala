@@ -70,10 +70,7 @@ class Size ()
   override def setTo(w: scala.Double, h: scala.Double): goLib.goMod.goNs.Size = js.native
 }
 
-/**
-  * A Size describes a width and a height in two-dimensional coordinates.
-  * The width and height must both be non-negative.
-  */
+/* static members */
 @JSImport("go", "Size")
 @js.native
 object Size extends js.Object {

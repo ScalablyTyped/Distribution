@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Browser () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Browser")
 @js.native
 object Browser extends js.Object {

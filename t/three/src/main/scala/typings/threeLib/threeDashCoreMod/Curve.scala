@@ -67,6 +67,7 @@ class Curve[T /* <: Vector */] () extends js.Object {
   def updateArcLengths(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Curve")
 @js.native
 object Curve extends js.Object {

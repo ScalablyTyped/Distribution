@@ -18,6 +18,7 @@ class Vector2 () extends js.Object {
   def set(x: scala.Double, y: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/math/Vector2", "Vector2")
 @js.native
 object Vector2 extends js.Object {

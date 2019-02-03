@@ -66,6 +66,7 @@ class ContinueStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ContinueStatementSyntax")
 @js.native
 object ContinueStatementSyntax extends js.Object {

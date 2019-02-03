@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebUIBackgroundTaskInstance () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
 @js.native
 object WebUIBackgroundTaskInstance extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Commit ()
   extends nodegitLib.commitMod.Commit
 
+/* static members */
 @JSImport("nodegit", "Commit")
 @js.native
 object Commit extends js.Object {

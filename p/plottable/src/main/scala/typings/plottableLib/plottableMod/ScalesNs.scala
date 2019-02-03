@@ -93,12 +93,14 @@ object ScalesNs extends js.Object {
     extends plottableLib.buildSrcScalesMod.Time
   
   def isTransformable(scale: js.Any): /* is plottable.plottable/build/src/scales.ITransformableScale */ scala.Boolean = js.native
+  /* static members */
   @js.native
   object Category extends js.Object {
     /* private */ def _convertToPlottableInnerPadding(d3InnerPadding: js.Any): js.Any = js.native
     /* private */ def _convertToPlottableOuterPadding(d3OuterPadding: js.Any, d3InnerPadding: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Color extends js.Object {
     var _LOOP_LIGHTEN_FACTOR: js.Any = js.native
@@ -108,6 +110,7 @@ object ScalesNs extends js.Object {
     def invalidateColorCache(): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object InterpolatedColor extends js.Object {
     var BLUES: js.Array[java.lang.String] = js.native
@@ -122,6 +125,7 @@ object ScalesNs extends js.Object {
     def intervalTickGenerator(interval: scala.Double): plottableLib.buildSrcScalesTickGeneratorsMod.ITickGenerator[scala.Double] = js.native
   }
   
+  /* static members */
   @js.native
   object Time extends js.Object {
     /**

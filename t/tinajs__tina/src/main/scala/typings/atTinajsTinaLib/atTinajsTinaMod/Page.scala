@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Page () extends Component
 
+/* static members */
 @JSImport("@tinajs/tina", "Page")
 @js.native
 object Page extends js.Object {

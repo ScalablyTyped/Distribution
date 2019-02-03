@@ -17,6 +17,7 @@ class Plugin ()
   override def install(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Plugin")
 @js.native
 object Plugin extends js.Object {

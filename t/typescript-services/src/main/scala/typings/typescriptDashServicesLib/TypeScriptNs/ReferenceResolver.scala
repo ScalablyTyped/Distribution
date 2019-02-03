@@ -24,6 +24,7 @@ class ReferenceResolver protected () extends js.Object {
   def resolveInputFiles(): ReferenceResolutionResult = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ReferenceResolver")
 @js.native
 object ReferenceResolver extends js.Object {

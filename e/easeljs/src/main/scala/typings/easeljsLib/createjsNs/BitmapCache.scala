@@ -26,6 +26,7 @@ class BitmapCache () extends js.Object {
   def update(compositeOperation: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.BitmapCache")
 @js.native
 object BitmapCache extends js.Object {

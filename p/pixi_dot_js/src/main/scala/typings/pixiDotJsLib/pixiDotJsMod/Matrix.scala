@@ -12,6 +12,7 @@ class Matrix protected ()
   def this(a: js.UndefOr[scala.Double], b: js.UndefOr[scala.Double], c: js.UndefOr[scala.Double], d: js.UndefOr[scala.Double], tx: js.UndefOr[scala.Double], ty: js.UndefOr[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "Matrix")
 @js.native
 object Matrix extends js.Object {

@@ -63,6 +63,7 @@ class Root () extends NamespaceBase {
   def resolvePath(origin: java.lang.String, target: java.lang.String): java.lang.String | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Root")
 @js.native
 object Root extends js.Object {

@@ -48,6 +48,7 @@ class Alias protected ()
   val routingConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AdditionalVersionWeights]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda/alias", "Alias")
 @js.native
 object Alias extends js.Object {

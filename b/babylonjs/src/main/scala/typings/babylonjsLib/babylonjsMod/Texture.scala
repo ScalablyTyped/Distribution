@@ -41,10 +41,7 @@ class Texture protected ()
     ], deleteBuffer: js.UndefOr[scala.Boolean], format: js.UndefOr[scala.Double]) = this()
 }
 
-/**
-  * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
-  * @see http://doc.babylonjs.com/babylon101/materials#texture
-  */
+/* static members */
 @JSImport("babylonjs", "Texture")
 @js.native
 object Texture extends js.Object {

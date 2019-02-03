@@ -58,6 +58,7 @@ class StackedBar[X, Y] ()
   def stackingOrder(stackingOrder: plottableLib.buildSrcUtilsStackingUtilsMod.IStackingOrder): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/stackedBarPlot", "StackedBar")
 @js.native
 object StackedBar extends js.Object {

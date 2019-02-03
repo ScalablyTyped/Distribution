@@ -17,6 +17,7 @@ abstract class Balance () extends js.Object {
   def getContextClass(): BalanceContextConstructor = js.native
 }
 
+/* static members */
 @JSImport("node-ral", "Balance")
 @js.native
 object Balance extends js.Object {

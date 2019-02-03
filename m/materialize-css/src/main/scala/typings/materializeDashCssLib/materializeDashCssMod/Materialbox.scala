@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Materialbox ()
   extends materializeDashCssLib.MNs.Materialbox
 
+/* static members */
 @JSImport("materialize-css", "Materialbox")
 @js.native
 object Materialbox extends js.Object {

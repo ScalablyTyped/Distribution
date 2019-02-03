@@ -26,6 +26,7 @@ class EmailChannel protected ()
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/emailChannel", "EmailChannel")
 @js.native
 object EmailChannel extends js.Object {

@@ -18,9 +18,7 @@ class GenericController protected () extends WebVRController {
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Generic Controller
-  */
+/* static members */
 @JSGlobal("BABYLON.GenericController")
 @js.native
 object GenericController extends js.Object {

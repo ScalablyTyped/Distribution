@@ -12,6 +12,7 @@ class DeleteExpressionSyntax protected ()
   def this(deleteKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "DeleteExpressionSyntax")
 @js.native
 object DeleteExpressionSyntax extends js.Object {

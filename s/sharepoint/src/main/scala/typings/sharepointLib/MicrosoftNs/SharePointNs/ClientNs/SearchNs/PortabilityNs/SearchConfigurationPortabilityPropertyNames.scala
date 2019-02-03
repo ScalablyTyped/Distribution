@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchConfigurationPortabilityPropertyNames () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames")
 @js.native
 object SearchConfigurationPortabilityPropertyNames extends js.Object {

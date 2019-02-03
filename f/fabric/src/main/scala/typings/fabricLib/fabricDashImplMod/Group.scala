@@ -76,6 +76,7 @@ class Group ()
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Group")
 @js.native
 object Group extends js.Object {

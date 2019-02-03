@@ -24,6 +24,7 @@ class MDCChip ()
   def remove(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/chips/chip", "MDCChip")
 @js.native
 object MDCChip extends js.Object {

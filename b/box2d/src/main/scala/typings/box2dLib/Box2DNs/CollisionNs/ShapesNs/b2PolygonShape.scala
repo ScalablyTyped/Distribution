@@ -83,6 +83,7 @@ class b2PolygonShape () extends b2Shape {
   def SetAsVector(vertices: js.Array[_], vertexCount: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Collision.Shapes.b2PolygonShape")
 @js.native
 object b2PolygonShape extends js.Object {

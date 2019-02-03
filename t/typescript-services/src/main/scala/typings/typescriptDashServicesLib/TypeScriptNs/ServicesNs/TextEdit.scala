@@ -14,6 +14,7 @@ class TextEdit protected () extends js.Object {
   var text: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.TextEdit")
 @js.native
 object TextEdit extends js.Object {

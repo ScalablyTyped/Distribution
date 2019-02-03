@@ -20,6 +20,7 @@ class UserPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamUserPolicyMod.UserPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "UserPolicy")
 @js.native
 object UserPolicy extends js.Object {

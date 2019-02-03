@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Dropdown ()
   extends reactDashBootstrapLib.libDropdownMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "Dropdown")
 @js.native
 object Dropdown extends js.Object {

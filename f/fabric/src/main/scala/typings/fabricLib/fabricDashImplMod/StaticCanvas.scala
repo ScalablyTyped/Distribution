@@ -346,6 +346,7 @@ class StaticCanvas protected ()
   def zoomToPoint(point: Point, value: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "StaticCanvas")
 @js.native
 object StaticCanvas extends js.Object {

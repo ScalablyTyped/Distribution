@@ -74,9 +74,7 @@ class Gamepad protected ()
   browserGamepad: js.Any, leftStickX: scala.Double, leftStickY: scala.Double, rightStickX: scala.Double, rightStickY: scala.Double) = this()
 }
 
-/**
-  * Represents a gamepad
-  */
+/* static members */
 @JSImport("babylonjs", "Gamepad")
 @js.native
 object Gamepad extends js.Object {

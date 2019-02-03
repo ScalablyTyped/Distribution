@@ -19,6 +19,7 @@ class LatLngBounds protected () extends PointBounds {
   def west(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("naver.maps.LatLngBounds")
 @js.native
 object LatLngBounds extends js.Object {

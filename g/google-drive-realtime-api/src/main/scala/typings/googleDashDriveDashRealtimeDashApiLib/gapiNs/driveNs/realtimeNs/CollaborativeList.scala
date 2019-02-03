@@ -66,6 +66,7 @@ class CollaborativeList[V] () extends CollaborativeObject {
   def set(index: scala.Double, value: V): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("gapi.drive.realtime.CollaborativeList")
 @js.native
 object CollaborativeList extends js.Object {

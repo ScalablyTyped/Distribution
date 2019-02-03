@@ -16,11 +16,13 @@ object iconToggleNs extends js.Object {
   class MDCIconToggleFoundation ()
     extends atMaterialIconDashToggleLib.atMaterialIconDashToggleMod.MDCIconToggleFoundation
   
+  /* static members */
   @js.native
   object MDCIconToggle extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialIconDashToggleLib.atMaterialIconDashToggleMod.MDCIconToggle = js.native
   }
   
+  /* static members */
   @js.native
   object MDCIconToggleFoundation extends js.Object {
     val cssClasses: atMaterialIconDashToggleLib.constantsMod.cssClasses = js.native

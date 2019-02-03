@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextMetrics () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.TextMetrics")
 @js.native
 object TextMetrics extends js.Object {

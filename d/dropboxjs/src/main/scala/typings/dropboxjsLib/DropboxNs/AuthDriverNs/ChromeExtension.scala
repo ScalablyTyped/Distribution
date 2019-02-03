@@ -11,6 +11,7 @@ class ChromeExtension () extends IAuthDriver {
   def this(options: dropboxjsLib.Anon_ReceiverPath) = this()
 }
 
+/* static members */
 @JSGlobal("Dropbox.AuthDriver.ChromeExtension")
 @js.native
 object ChromeExtension extends js.Object {

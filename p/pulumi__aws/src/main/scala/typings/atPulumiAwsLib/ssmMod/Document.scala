@@ -20,6 +20,7 @@ class Document protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmDocumentMod.DocumentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "Document")
 @js.native
 object Document extends js.Object {

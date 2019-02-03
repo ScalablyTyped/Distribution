@@ -12,6 +12,7 @@ class MDCFoundation[A] protected ()
   def this(adapter: A) = this()
 }
 
+/* static members */
 @JSImport("@material/base", "MDCFoundation")
 @js.native
 object MDCFoundation extends js.Object {

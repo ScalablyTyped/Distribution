@@ -11,6 +11,7 @@ class default protected () extends Calendar {
   def this(props: CalendarProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/calendar", JSImport.Default)
 @js.native
 object default extends js.Object {

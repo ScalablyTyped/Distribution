@@ -13,6 +13,7 @@ class ButtonHandler protected ()
   var mDialog: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.AlertController.ButtonHandler")
 @js.native
 object ButtonHandler extends js.Object {

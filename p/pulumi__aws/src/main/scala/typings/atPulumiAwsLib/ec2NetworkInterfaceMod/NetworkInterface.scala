@@ -54,6 +54,7 @@ class NetworkInterface protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/networkInterface", "NetworkInterface")
 @js.native
 object NetworkInterface extends js.Object {

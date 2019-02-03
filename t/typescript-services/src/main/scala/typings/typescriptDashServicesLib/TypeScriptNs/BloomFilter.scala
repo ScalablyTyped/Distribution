@@ -18,6 +18,7 @@ class BloomFilter protected () extends js.Object {
   def probablyContains(value: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.BloomFilter")
 @js.native
 object BloomFilter extends js.Object {

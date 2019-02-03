@@ -36,6 +36,7 @@ class AdmChannel protected ()
   val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/admChannel", "AdmChannel")
 @js.native
 object AdmChannel extends js.Object {

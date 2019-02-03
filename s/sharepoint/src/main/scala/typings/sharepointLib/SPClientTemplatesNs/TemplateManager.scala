@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TemplateManager () extends js.Object
 
+/* static members */
 @JSGlobal("SPClientTemplates.TemplateManager")
 @js.native
 object TemplateManager extends js.Object {

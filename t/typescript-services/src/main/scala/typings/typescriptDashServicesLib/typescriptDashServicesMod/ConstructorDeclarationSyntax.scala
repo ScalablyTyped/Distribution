@@ -12,6 +12,7 @@ class ConstructorDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, constructorKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ConstructorDeclarationSyntax")
 @js.native
 object ConstructorDeclarationSyntax extends js.Object {

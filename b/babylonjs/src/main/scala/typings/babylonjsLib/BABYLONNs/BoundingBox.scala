@@ -127,9 +127,7 @@ class BoundingBox protected () extends ICullable {
   def setWorldMatrix(matrix: Matrix): BoundingBox = js.native
 }
 
-/**
-  * Class used to store bounding box information
-  */
+/* static members */
 @JSGlobal("BABYLON.BoundingBox")
 @js.native
 object BoundingBox extends js.Object {

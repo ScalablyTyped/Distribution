@@ -12,6 +12,7 @@ class FromEventPatternStream protected ()
   def this(addHandler: js.Function, removeHandler: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "FromEventPatternStream")
 @js.native
 object FromEventPatternStream extends js.Object {

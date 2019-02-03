@@ -21,6 +21,7 @@ class Zone protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.route53ZoneMod.ZoneArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53", "Zone")
 @js.native
 object Zone extends js.Object {

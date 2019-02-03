@@ -372,127 +372,249 @@ object mapboxDashGlLibStrings {
   @js.native
   sealed trait zoomstart extends js.Object
   
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def Glyphs: Glyphs = "Glyphs".asInstanceOf[Glyphs]
+  @scala.inline
   def Image: Image = "Image".asInstanceOf[Image]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def Source: Source = "Source".asInstanceOf[Source]
+  @scala.inline
   def SpriteImage: SpriteImage = "SpriteImage".asInstanceOf[SpriteImage]
+  @scala.inline
   def SpriteJSON: SpriteJSON = "SpriteJSON".asInstanceOf[SpriteJSON]
+  @scala.inline
   def Style: Style = "Style".asInstanceOf[Style]
+  @scala.inline
   def Tile: Tile = "Tile".asInstanceOf[Tile]
+  @scala.inline
   def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def background: background = "background".asInstanceOf[background]
+  @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def boxzoomcancel: boxzoomcancel = "boxzoomcancel".asInstanceOf[boxzoomcancel]
+  @scala.inline
   def boxzoomend: boxzoomend = "boxzoomend".asInstanceOf[boxzoomend]
+  @scala.inline
   def boxzoomstart: boxzoomstart = "boxzoomstart".asInstanceOf[boxzoomstart]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
+  @scala.inline
   def categorical: categorical = "categorical".asInstanceOf[categorical]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def content: content = "content".asInstanceOf[content]
+  @scala.inline
   def contextmenu: contextmenu = "contextmenu".asInstanceOf[contextmenu]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def dataloading: dataloading = "dataloading".asInstanceOf[dataloading]
+  @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
   def drag: drag = "drag".asInstanceOf[drag]
+  @scala.inline
   def dragend: dragend = "dragend".asInstanceOf[dragend]
+  @scala.inline
   def dragstart: dragstart = "dragstart".asInstanceOf[dragstart]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def `fill-extrusion`: `fill-extrusion` = "fill-extrusion".asInstanceOf[`fill-extrusion`]
+  @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
   def hcl: hcl = "hcl".asInstanceOf[hcl]
+  @scala.inline
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def hillshade: hillshade = "hillshade".asInstanceOf[hillshade]
+  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def imperial: imperial = "imperial".asInstanceOf[imperial]
+  @scala.inline
   def include: include = "include".asInstanceOf[include]
+  @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
+  @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def `line-center`: `line-center` = "line-center".asInstanceOf[`line-center`]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
+  @scala.inline
   def lowercase: lowercase = "lowercase".asInstanceOf[lowercase]
+  @scala.inline
   def map: map = "map".asInstanceOf[map]
+  @scala.inline
   def mapbox: mapbox = "mapbox".asInstanceOf[mapbox]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
+  @scala.inline
   def metric: metric = "metric".asInstanceOf[metric]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  @scala.inline
   def mouseenter: mouseenter = "mouseenter".asInstanceOf[mouseenter]
+  @scala.inline
   def mouseleave: mouseleave = "mouseleave".asInstanceOf[mouseleave]
+  @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  @scala.inline
   def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  @scala.inline
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def moveend: moveend = "moveend".asInstanceOf[moveend]
+  @scala.inline
   def movestart: movestart = "movestart".asInstanceOf[movestart]
+  @scala.inline
   def nautical: nautical = "nautical".asInstanceOf[nautical]
+  @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def pitch: pitch = "pitch".asInstanceOf[pitch]
+  @scala.inline
   def pitchend: pitchend = "pitchend".asInstanceOf[pitchend]
+  @scala.inline
   def pitchstart: pitchstart = "pitchstart".asInstanceOf[pitchstart]
+  @scala.inline
   def point: point = "point".asInstanceOf[point]
+  @scala.inline
   def raster: raster = "raster".asInstanceOf[raster]
+  @scala.inline
   def `raster-dem`: `raster-dem` = "raster-dem".asInstanceOf[`raster-dem`]
+  @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
+  @scala.inline
   def render: render = "render".asInstanceOf[render]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def rotate: rotate = "rotate".asInstanceOf[rotate]
+  @scala.inline
   def rotateend: rotateend = "rotateend".asInstanceOf[rotateend]
+  @scala.inline
   def rotatestart: rotatestart = "rotatestart".asInstanceOf[rotatestart]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
+  @scala.inline
   def source: source = "source".asInstanceOf[source]
+  @scala.inline
   def sourcedata: sourcedata = "sourcedata".asInstanceOf[sourcedata]
+  @scala.inline
   def sourcedataloading: sourcedataloading = "sourcedataloading".asInstanceOf[sourcedataloading]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def style: style = "style".asInstanceOf[style]
+  @scala.inline
   def styledata: styledata = "styledata".asInstanceOf[styledata]
+  @scala.inline
   def styledataloading: styledataloading = "styledataloading".asInstanceOf[styledataloading]
+  @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def terrarium: terrarium = "terrarium".asInstanceOf[terrarium]
+  @scala.inline
   def tiledataloading: tiledataloading = "tiledataloading".asInstanceOf[tiledataloading]
+  @scala.inline
   def tms: tms = "tms".asInstanceOf[tms]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def touchcancel: touchcancel = "touchcancel".asInstanceOf[touchcancel]
+  @scala.inline
   def touchend: touchend = "touchend".asInstanceOf[touchend]
+  @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  @scala.inline
   def uppercase: uppercase = "uppercase".asInstanceOf[uppercase]
+  @scala.inline
   def vector: vector = "vector".asInstanceOf[vector]
+  @scala.inline
   def video: video = "video".asInstanceOf[video]
+  @scala.inline
   def viewport: viewport = "viewport".asInstanceOf[viewport]
+  @scala.inline
   def `viewport-y`: `viewport-y` = "viewport-y".asInstanceOf[`viewport-y`]
+  @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
+  @scala.inline
   def webglcontextlost: webglcontextlost = "webglcontextlost".asInstanceOf[webglcontextlost]
+  @scala.inline
   def webglcontextrestored: webglcontextrestored = "webglcontextrestored".asInstanceOf[webglcontextrestored]
+  @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
+  @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
   def xyz: xyz = "xyz".asInstanceOf[xyz]
+  @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
+  @scala.inline
   def zoomend: zoomend = "zoomend".asInstanceOf[zoomend]
+  @scala.inline
   def zoomstart: zoomstart = "zoomstart".asInstanceOf[zoomstart]
 }
 

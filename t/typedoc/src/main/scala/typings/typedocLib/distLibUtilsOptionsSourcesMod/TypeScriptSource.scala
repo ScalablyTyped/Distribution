@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TypeScriptSource ()
   extends typedocLib.distLibUtilsOptionsSourcesTypescriptMod.TypeScriptSource
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/sources", "TypeScriptSource")
 @js.native
 object TypeScriptSource extends js.Object {

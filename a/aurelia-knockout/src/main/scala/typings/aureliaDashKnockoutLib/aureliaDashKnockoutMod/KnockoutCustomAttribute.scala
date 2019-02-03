@@ -12,6 +12,7 @@ class KnockoutCustomAttribute protected ()
   def this(element: stdLib.Element) = this()
 }
 
+/* static members */
 @JSImport("aurelia-knockout", "KnockoutCustomAttribute")
 @js.native
 object KnockoutCustomAttribute extends js.Object {

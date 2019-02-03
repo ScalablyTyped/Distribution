@@ -15,6 +15,7 @@ class BoundEventAst protected ()
   def this(name: java.lang.String, target: scala.Null, phase: scala.Null, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/public_api", "BoundEventAst")
 @js.native
 object BoundEventAst extends js.Object {

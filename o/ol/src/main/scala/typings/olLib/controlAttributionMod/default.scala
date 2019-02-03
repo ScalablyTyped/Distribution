@@ -32,16 +32,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.AttributionOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Control to show all the attributions associated with the layer sources
-  * in the map. This control is one of the default controls included in maps.
-  * By default it will show in the bottom right portion of the map, but this can
-  * be changed by using a css selector for `.ol-attribution`.
-  *
-  * @param opt_options Attribution options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/control/attribution", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -169,6 +169,7 @@ class Session () extends EventEmitter {
   def setUserAgent(userAgent: java.lang.String, acceptLanguages: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.Session")
 @js.native
 object Session extends js.Object {

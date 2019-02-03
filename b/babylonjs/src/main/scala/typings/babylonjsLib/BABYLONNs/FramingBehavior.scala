@@ -211,10 +211,7 @@ class FramingBehavior () extends Behavior[ArcRotateCamera] {
   ): scala.Unit = js.native
 }
 
-/**
-  * The framing behavior (BABYLON.FramingBehavior) is designed to automatically position an ArcRotateCamera when its target is set to a mesh. It is also useful if you want to prevent the camera to go under a virtual horizontal plane.
-  * @see http://doc.babylonjs.com/how_to/camera_behaviors#framing-behavior
-  */
+/* static members */
 @JSGlobal("BABYLON.FramingBehavior")
 @js.native
 object FramingBehavior extends js.Object {

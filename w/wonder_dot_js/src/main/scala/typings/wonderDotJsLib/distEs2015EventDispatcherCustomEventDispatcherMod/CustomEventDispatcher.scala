@@ -51,6 +51,7 @@ class CustomEventDispatcher ()
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/dispatcher/CustomEventDispatcher", "CustomEventDispatcher")
 @js.native
 object CustomEventDispatcher extends js.Object {

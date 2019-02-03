@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Log () extends js.Object
 
+/* static members */
 @JSGlobal("android.util.Log")
 @js.native
 object Log extends js.Object {

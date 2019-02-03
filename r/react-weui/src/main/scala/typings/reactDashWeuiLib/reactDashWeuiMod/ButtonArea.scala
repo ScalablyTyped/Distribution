@@ -12,6 +12,7 @@ class ButtonArea protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "ButtonArea")
 @js.native
 object ButtonArea extends js.Object {

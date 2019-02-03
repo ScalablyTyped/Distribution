@@ -116,7 +116,7 @@ class MediaComposition () extends js.Object {
   def saveAsync(file: winrtDashUwpLib.WindowsNs.StorageNs.IStorageFile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Represents a collection of media clips and background audio tracks. */
+/* static members */
 @JSGlobal("Windows.Media.Editing.MediaComposition")
 @js.native
 object MediaComposition extends js.Object {

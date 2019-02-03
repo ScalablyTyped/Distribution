@@ -34,6 +34,7 @@ class namespaced protected () extends Rect {
   override def set(obj: terminalDashKitLib.rectMod.RectNs.Region): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("terminal-kit/Rect", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

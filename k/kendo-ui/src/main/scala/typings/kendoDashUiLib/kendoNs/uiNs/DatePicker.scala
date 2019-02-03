@@ -29,6 +29,7 @@ class DatePicker protected () extends Widget {
   def value(value: stdLib.Date): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DatePicker")
 @js.native
 object DatePicker extends js.Object {

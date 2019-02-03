@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCSelectFoundation ()
   extends atMaterialSelectLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/select", "MDCSelectFoundation")
 @js.native
 object MDCSelectFoundation extends js.Object {

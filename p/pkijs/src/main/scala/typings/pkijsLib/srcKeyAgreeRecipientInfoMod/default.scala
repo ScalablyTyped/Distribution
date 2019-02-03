@@ -27,6 +27,7 @@ class default () extends KeyAgreeRecipientInfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/KeyAgreeRecipientInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

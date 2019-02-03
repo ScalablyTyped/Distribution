@@ -44,6 +44,7 @@ class VpcEndpointConnectionNotification protected ()
   val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcEndpointConnectionNotification", "VpcEndpointConnectionNotification")
 @js.native
 object VpcEndpointConnectionNotification extends js.Object {

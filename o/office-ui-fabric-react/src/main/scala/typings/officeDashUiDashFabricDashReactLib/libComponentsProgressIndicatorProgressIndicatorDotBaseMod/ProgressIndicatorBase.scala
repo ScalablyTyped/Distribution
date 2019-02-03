@@ -16,6 +16,7 @@ class ProgressIndicatorBase protected ()
   var _onRenderProgress: js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ProgressIndicator/ProgressIndicator.base", "ProgressIndicatorBase")
 @js.native
 object ProgressIndicatorBase extends js.Object {

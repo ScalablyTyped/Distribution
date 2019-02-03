@@ -29,6 +29,7 @@ class CheckBox protected () extends Widget {
   def isChecked(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("ej.CheckBox")
 @js.native
 object CheckBox extends js.Object {

@@ -74,6 +74,7 @@ class EventGroup protected () extends js.Object {
   def raise(eventName: java.lang.String, eventArgs: js.Any, bubbleEvent: scala.Boolean): js.UndefOr[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/EventGroup", "EventGroup")
 @js.native
 object EventGroup extends js.Object {

@@ -21,6 +21,7 @@ class PatchBaseline protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmPatchBaselineMod.PatchBaselineArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "PatchBaseline")
 @js.native
 object PatchBaseline extends js.Object {

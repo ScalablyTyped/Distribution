@@ -28,6 +28,7 @@ class WorkingStorage protected ()
   val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage")
 @js.native
 object WorkingStorage extends js.Object {

@@ -12,7 +12,9 @@ object mirrorxLibStrings {
   @js.native
   sealed trait RouteComponentProps extends js.Object
   
+  @scala.inline
   def `@@router/CALL_HISTORY_METHOD`: `@@router/CALL_HISTORY_METHOD` = "@@router/CALL_HISTORY_METHOD".asInstanceOf[`@@router/CALL_HISTORY_METHOD`]
+  @scala.inline
   def RouteComponentProps: RouteComponentProps = "RouteComponentProps".asInstanceOf[RouteComponentProps]
 }
 

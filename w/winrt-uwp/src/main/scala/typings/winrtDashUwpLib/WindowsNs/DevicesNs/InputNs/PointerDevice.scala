@@ -24,7 +24,7 @@ abstract class PointerDevice () extends js.Object {
   var supportedUsages: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDeviceUsage] = js.native
 }
 
-/** Supports the ability to identify the connected pointer devices and determine their capabilities. */
+/* static members */
 @JSGlobal("Windows.Devices.Input.PointerDevice")
 @js.native
 object PointerDevice extends js.Object {

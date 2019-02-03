@@ -12,7 +12,9 @@ object typesafeDashActionsLibStrings {
   @js.native
   sealed trait StateType extends js.Object
   
+  @scala.inline
   def ActionCreatorMap: ActionCreatorMap = "ActionCreatorMap".asInstanceOf[ActionCreatorMap]
+  @scala.inline
   def StateType: StateType = "StateType".asInstanceOf[StateType]
 }
 

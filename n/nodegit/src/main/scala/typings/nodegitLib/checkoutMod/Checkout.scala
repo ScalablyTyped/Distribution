@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Checkout () extends js.Object
 
+/* static members */
 @JSImport("nodegit/checkout", "Checkout")
 @js.native
 object Checkout extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppointmentProperties () extends js.Object
 
-/** Provides strings that identify the properties of an appointment. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentProperties")
 @js.native
 object AppointmentProperties extends js.Object {

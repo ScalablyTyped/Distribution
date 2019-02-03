@@ -67,6 +67,7 @@ class Area[X] ()
   def y0(y0: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/areaPlot", "Area")
 @js.native
 object Area extends js.Object {

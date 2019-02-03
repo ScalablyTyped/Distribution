@@ -94,9 +94,7 @@ object apiregistrationNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1Ns.APIServiceList = js.native
     }
     
-    /**
-      * APIService represents a server for a particular GroupVersion. Name must be "version.group".
-      */
+    /* static members */
     @js.native
     object APIService extends js.Object {
       /**
@@ -119,9 +117,7 @@ object apiregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1Ns.APIService = js.native
     }
     
-    /**
-      * APIServiceList is a list of APIService objects.
-      */
+    /* static members */
     @js.native
     object APIServiceList extends js.Object {
       /**
@@ -236,9 +232,7 @@ object apiregistrationNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.apiregistrationNs.v1beta1Ns.APIServiceList = js.native
     }
     
-    /**
-      * APIService represents a server for a particular GroupVersion. Name must be "version.group".
-      */
+    /* static members */
     @js.native
     object APIService extends js.Object {
       /**
@@ -261,9 +255,7 @@ object apiregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.apiregistrationNs.v1beta1Ns.APIService = js.native
     }
     
-    /**
-      * APIServiceList is a list of APIService objects.
-      */
+    /* static members */
     @js.native
     object APIServiceList extends js.Object {
       /**

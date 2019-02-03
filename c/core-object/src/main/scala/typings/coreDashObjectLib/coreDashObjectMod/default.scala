@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends CoreObject
 
+/* static members */
 @JSImport("core-object", JSImport.Default)
 @js.native
 object default extends js.Object {

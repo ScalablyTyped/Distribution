@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileManager () extends js.Object
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/files/file_manager", "FileManager")
 @js.native
 object FileManager extends js.Object {

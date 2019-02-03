@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends DrawerLayout
 
+/* static members */
 @JSImport("react-native-drawer-layout", JSImport.Default)
 @js.native
 object default extends js.Object {

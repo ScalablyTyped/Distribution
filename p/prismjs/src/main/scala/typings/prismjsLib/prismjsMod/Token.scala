@@ -25,6 +25,7 @@ class Token protected () extends js.Object {
   var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("prismjs", "Token")
 @js.native
 object Token extends js.Object {

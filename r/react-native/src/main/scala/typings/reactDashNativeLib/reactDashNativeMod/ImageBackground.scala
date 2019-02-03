@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "ImageBackground")
 @js.native
-class ImageBackground () extends js.Object {
+class ImageBackground ()
+  extends reactLib.reactMod.Component[ImageBackgroundProps, js.Object, js.Any] {
   var abortPrefetch: js.UndefOr[js.Function1[/* requestId */ scala.Double, scala.Unit]] = js.native
   var queryCache: js.UndefOr[
     js.Function1[

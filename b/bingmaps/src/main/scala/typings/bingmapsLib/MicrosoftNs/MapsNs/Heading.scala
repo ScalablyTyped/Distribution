@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Heading () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.Maps.Heading")
 @js.native
 object Heading extends js.Object {

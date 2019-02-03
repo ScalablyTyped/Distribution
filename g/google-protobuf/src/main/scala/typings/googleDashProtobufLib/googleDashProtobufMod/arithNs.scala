@@ -34,11 +34,13 @@ object arithNs extends js.Object {
     def zero(): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Int64 extends js.Object {
     def fromString(str: java.lang.String): googleDashProtobufLib.googleDashProtobufMod.arithNs.Int64 = js.native
   }
   
+  /* static members */
   @js.native
   object UInt64 extends js.Object {
     def fromString(str: java.lang.String): googleDashProtobufLib.googleDashProtobufMod.arithNs.UInt64 = js.native

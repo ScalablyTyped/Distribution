@@ -201,7 +201,7 @@ object AudioNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[expoLib.expoMod.AudioNs.InterruptionModeIos with scala.Double] = js.native
   }
   
-  /** This class represents a sound corresponding to an Asset or URL. */
+  /* static members */
   @js.native
   object Sound extends js.Object {
     /**

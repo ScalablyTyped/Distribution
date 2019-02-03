@@ -15,6 +15,7 @@ class namespaced[T] protected () extends Promise[T] {
     ]) = this()
 }
 
+/* static members */
 @JSImport("tspromise", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

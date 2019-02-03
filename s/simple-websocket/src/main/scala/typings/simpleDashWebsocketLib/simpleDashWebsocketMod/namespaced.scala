@@ -12,6 +12,7 @@ class namespaced protected () extends Socket {
   def this(options: simpleDashWebsocketLib.simpleDashWebsocketMod.SocketNs.Options) = this()
 }
 
+/* static members */
 @JSImport("simple-websocket", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

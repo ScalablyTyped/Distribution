@@ -188,6 +188,7 @@ class NgTableEventsChannel protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/core/ngTableEventsChannel", "NgTableEventsChannel")
 @js.native
 object NgTableEventsChannel extends js.Object {

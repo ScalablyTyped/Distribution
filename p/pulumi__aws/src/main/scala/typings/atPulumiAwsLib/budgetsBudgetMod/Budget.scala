@@ -64,6 +64,7 @@ class Budget protected ()
   val timeUnit: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/budgets/budget", "Budget")
 @js.native
 object Budget extends js.Object {

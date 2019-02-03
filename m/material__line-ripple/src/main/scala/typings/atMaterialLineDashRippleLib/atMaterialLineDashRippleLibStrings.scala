@@ -12,7 +12,9 @@ object atMaterialLineDashRippleLibStrings {
   @js.native
   sealed trait `mdc-line-ripple--deactivating` extends js.Object
   
+  @scala.inline
   def `mdc-line-ripple--active`: `mdc-line-ripple--active` = "mdc-line-ripple--active".asInstanceOf[`mdc-line-ripple--active`]
+  @scala.inline
   def `mdc-line-ripple--deactivating`: `mdc-line-ripple--deactivating` = "mdc-line-ripple--deactivating".asInstanceOf[`mdc-line-ripple--deactivating`]
 }
 

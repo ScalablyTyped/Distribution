@@ -25,6 +25,7 @@ class MDCSlider ()
   def stepUp(amount: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/slider", "MDCSlider")
 @js.native
 object MDCSlider extends js.Object {

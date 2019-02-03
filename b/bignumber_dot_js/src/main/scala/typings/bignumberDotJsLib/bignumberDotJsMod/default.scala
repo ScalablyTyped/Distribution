@@ -101,6 +101,7 @@ class default protected () extends BigNumber {
   def this(n: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Value, base: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("bignumber.js", JSImport.Default)
 @js.native
 object default extends js.Object {

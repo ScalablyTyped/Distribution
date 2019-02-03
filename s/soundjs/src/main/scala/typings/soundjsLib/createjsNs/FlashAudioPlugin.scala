@@ -13,6 +13,7 @@ class FlashAudioPlugin () extends AbstractPlugin {
   var showOutput: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.FlashAudioPlugin")
 @js.native
 object FlashAudioPlugin extends js.Object {

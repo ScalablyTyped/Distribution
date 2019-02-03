@@ -53,9 +53,7 @@ class PeopleManager protected ()
   def stopFollowingTag(tagId: java.lang.String): scala.Unit = js.native
 }
 
-/** Provides methods for operations related to people.
-  Note: The SocialFollowingManager object is the recommended object for performing Following People and Following Content tasks.
-  However, PeopleManager provides some methods that SocialFollowingManager doesn't. */
+/* static members */
 @JSGlobal("SP.UserProfiles.PeopleManager")
 @js.native
 object PeopleManager extends js.Object {

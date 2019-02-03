@@ -28,6 +28,7 @@ class Shape () extends Item {
   def toPath(insert: scala.Boolean): Shape = js.native
 }
 
+/* static members */
 @JSGlobal("paper.Shape")
 @js.native
 object Shape extends js.Object {

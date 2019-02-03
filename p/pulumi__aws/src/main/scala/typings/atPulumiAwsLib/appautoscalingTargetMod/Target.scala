@@ -45,6 +45,7 @@ class Target protected ()
   val serviceNamespace: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appautoscaling/target", "Target")
 @js.native
 object Target extends js.Object {

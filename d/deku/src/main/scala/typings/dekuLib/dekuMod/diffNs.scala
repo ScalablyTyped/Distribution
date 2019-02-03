@@ -21,6 +21,7 @@ object diffNs extends js.Object {
   		 * Compare two virtual nodes and return an array of changes to turn the left into the right.
   		 */
   def diffNode(prevNode: dekuLib.dekuMod.dekuNs.VirtualElement, nextNode: dekuLib.dekuMod.dekuNs.VirtualElement): js.Array[_] = js.native
+  /* static members */
   @js.native
   object Actions extends js.Object {
     def `case`(pat: js.Any, action: dekuLib.dekuMod.dekuNs.diffNs.Actions): js.Any = js.native

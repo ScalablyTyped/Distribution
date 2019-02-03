@@ -13,6 +13,7 @@ class Authentication ()
   override var scheme: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("lime-js", "Authentication")
 @js.native
 object Authentication extends js.Object {

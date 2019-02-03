@@ -20,6 +20,7 @@ class QueryLog protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.route53QueryLogMod.QueryLogArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53", "QueryLog")
 @js.native
 object QueryLog extends js.Object {

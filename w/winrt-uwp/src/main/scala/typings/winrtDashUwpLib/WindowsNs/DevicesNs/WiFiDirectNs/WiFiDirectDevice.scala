@@ -39,7 +39,7 @@ abstract class WiFiDirectDevice () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Manages connections to associated Wi-Fi Direct devices. */
+/* static members */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectDevice")
 @js.native
 object WiFiDirectDevice extends js.Object {

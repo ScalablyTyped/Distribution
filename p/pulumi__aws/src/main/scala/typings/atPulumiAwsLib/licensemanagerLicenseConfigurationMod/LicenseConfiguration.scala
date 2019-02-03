@@ -48,6 +48,7 @@ class LicenseConfiguration protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/licensemanager/licenseConfiguration", "LicenseConfiguration")
 @js.native
 object LicenseConfiguration extends js.Object {

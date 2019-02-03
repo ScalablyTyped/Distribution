@@ -21,6 +21,7 @@ class Parent protected () extends js.Object {
   def get(container: Container): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "Parent")
 @js.native
 object Parent extends js.Object {

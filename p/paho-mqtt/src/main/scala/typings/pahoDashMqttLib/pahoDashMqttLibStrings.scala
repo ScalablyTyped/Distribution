@@ -9,6 +9,7 @@ object pahoDashMqttLibStrings {
   @js.native
   sealed trait Debug extends js.Object
   
+  @scala.inline
   def Debug: Debug = "Debug".asInstanceOf[Debug]
 }
 

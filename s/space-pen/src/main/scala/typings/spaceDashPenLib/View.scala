@@ -20,6 +20,7 @@ class View protected () extends js.Object {
   def wireOutlets(view: View): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("View")
 @js.native
 object View extends js.Object {

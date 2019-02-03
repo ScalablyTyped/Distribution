@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default[OptionType] ()
   extends reactDashSelectLib.libSelectMod.default[OptionType]
 
+/* static members */
 @JSImport("react-select", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -24,6 +24,7 @@ class Point protected () extends js.Object {
   def twice(): Point = js.native
 }
 
+/* static members */
 @JSImport("ecurve", "Point")
 @js.native
 object Point extends js.Object {

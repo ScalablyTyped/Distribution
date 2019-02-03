@@ -9,6 +9,7 @@ object d3DashGeoLibStrings {
   @js.native
   sealed trait Sphere extends js.Object
   
+  @scala.inline
   def Sphere: Sphere = "Sphere".asInstanceOf[Sphere]
 }
 

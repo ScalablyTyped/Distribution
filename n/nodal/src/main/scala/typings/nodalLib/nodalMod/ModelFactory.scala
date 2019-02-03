@@ -21,6 +21,7 @@ class ModelFactory protected () extends js.Object {
   def create(arrModelData: js.Array[IModelData], callback: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nodal", "ModelFactory")
 @js.native
 object ModelFactory extends js.Object {

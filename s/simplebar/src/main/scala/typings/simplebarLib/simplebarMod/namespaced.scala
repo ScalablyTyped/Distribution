@@ -18,6 +18,7 @@ class namespaced protected () extends SimpleBar {
   override def recalculate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("simplebar", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Float () extends js.Object
 
+/* static members */
 @JSGlobal("java.lang.Float")
 @js.native
 object Float extends js.Object {

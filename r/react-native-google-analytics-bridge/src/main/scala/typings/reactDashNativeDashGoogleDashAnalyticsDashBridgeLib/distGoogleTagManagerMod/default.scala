@@ -19,16 +19,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends GoogleTagManager
 
-/**
-  * Can only be used with one container. All functions returns a Promise.
-  *
-  * @name GoogleTagManager
-  * @example
-  * import { GoogleTagManager } from "react-native-google-analytics-bridge";
-  * GoogleTagManager.openContainerWithId("GT-NZT48")
-  *   .then(() => GoogleTagManager.stringForKey("pack"))
-  *   .then(str => console.log("Pack: ", str));
-  */
+/* static members */
 @JSImport("react-native-google-analytics-bridge/dist/GoogleTagManager", JSImport.Default)
 @js.native
 object default extends js.Object {

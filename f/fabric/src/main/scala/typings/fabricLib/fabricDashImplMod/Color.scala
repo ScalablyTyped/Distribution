@@ -66,6 +66,7 @@ class Color () extends js.Object {
   def toRgba(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Color")
 @js.native
 object Color extends js.Object {

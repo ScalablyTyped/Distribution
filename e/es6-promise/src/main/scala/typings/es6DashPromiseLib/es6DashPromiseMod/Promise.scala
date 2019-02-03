@@ -36,6 +36,7 @@ class Promise[R] protected () extends Thenable[R] {
   def `finally`[U](onFinally: js.Function1[/* callback */ js.Any, U | Thenable[U]]): Promise[U] = js.native
 }
 
+/* static members */
 @JSImport("es6-promise", "Promise")
 @js.native
 object Promise extends js.Object {

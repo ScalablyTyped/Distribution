@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class EmailManager () extends js.Object
 
-/** Allows an application to launch the email application with a new message displayed. Use this to allow users to send email from your application. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Email.EmailManager")
 @js.native
 object EmailManager extends js.Object {

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientType () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/ClientType.html
-	 */
+/* static members */
 @JSGlobal("ClientType")
 @js.native
 object ClientType extends js.Object {

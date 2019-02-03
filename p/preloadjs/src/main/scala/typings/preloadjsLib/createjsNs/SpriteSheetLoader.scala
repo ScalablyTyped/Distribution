@@ -11,6 +11,7 @@ class SpriteSheetLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.SpriteSheetLoader")
 @js.native
 object SpriteSheetLoader extends js.Object {

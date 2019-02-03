@@ -9,6 +9,7 @@ object i18nextDashXhrDashBackendLibStrings {
   @js.native
   sealed trait backend extends js.Object
   
+  @scala.inline
   def backend: backend = "backend".asInstanceOf[backend]
 }
 

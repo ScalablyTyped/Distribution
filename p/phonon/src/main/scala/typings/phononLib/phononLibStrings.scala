@@ -39,16 +39,27 @@ object phononLibStrings {
   @js.native
   sealed trait `title-left` extends js.Object
   
+  @scala.inline
   def JSON_MALFORMED: JSON_MALFORMED = "JSON_MALFORMED".asInstanceOf[JSON_MALFORMED]
+  @scala.inline
   def NO_INTERNET_ACCESS: NO_INTERNET_ACCESS = "NO_INTERNET_ACCESS".asInstanceOf[NO_INTERNET_ACCESS]
+  @scala.inline
   def REQUEST_CANCELED: REQUEST_CANCELED = "REQUEST_CANCELED".asInstanceOf[REQUEST_CANCELED]
+  @scala.inline
   def TIMEOUT_EXCEEDED: TIMEOUT_EXCEEDED = "TIMEOUT_EXCEEDED".asInstanceOf[TIMEOUT_EXCEEDED]
+  @scala.inline
   def XMLHTTPREQUEST_UNAVAILABLE: XMLHTTPREQUEST_UNAVAILABLE = "XMLHTTPREQUEST_UNAVAILABLE".asInstanceOf[XMLHTTPREQUEST_UNAVAILABLE]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def negative: negative = "negative".asInstanceOf[negative]
+  @scala.inline
   def positive: positive = "positive".asInstanceOf[positive]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def title: title = "title".asInstanceOf[title]
+  @scala.inline
   def `title-left`: `title-left` = "title-left".asInstanceOf[`title-left`]
 }
 

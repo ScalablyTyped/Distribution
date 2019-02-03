@@ -34,6 +34,7 @@ class ThingType protected ()
   val properties: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Description]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/thingType", "ThingType")
 @js.native
 object ThingType extends js.Object {

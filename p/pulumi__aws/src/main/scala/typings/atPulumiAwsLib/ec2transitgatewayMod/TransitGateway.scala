@@ -21,6 +21,7 @@ class TransitGateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway", "TransitGateway")
 @js.native
 object TransitGateway extends js.Object {

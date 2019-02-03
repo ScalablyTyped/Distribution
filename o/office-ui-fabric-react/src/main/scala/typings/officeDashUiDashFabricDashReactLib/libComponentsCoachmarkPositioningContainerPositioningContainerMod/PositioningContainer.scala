@@ -82,6 +82,7 @@ class PositioningContainer protected ()
   def onResize(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/PositioningContainer/PositioningContainer", "PositioningContainer")
 @js.native
 object PositioningContainer extends js.Object {

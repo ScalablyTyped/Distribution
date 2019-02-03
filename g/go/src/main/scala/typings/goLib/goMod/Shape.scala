@@ -19,12 +19,7 @@ import scala.scalajs.js.annotation._
 class Shape ()
   extends goLib.goMod.goNs.Shape
 
-/**
-  * A Shape is a GraphObject that shows a geometric figure.
-  * The Geometry determines what is drawn;
-  * the properties .fill and .stroke
-  * (and other stroke properties) determine how it is drawn.
-  */
+/* static members */
 @JSImport("go", "Shape")
 @js.native
 object Shape extends js.Object {

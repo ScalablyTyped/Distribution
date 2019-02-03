@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Responsive
 
+/* static members */
 @JSImport("semantic-ui-react/dist/commonjs/addons/Responsive/Responsive", JSImport.Default)
 @js.native
 object default extends js.Object {

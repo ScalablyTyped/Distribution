@@ -19,6 +19,7 @@ class Memo[T /* <: stellarDashBaseLib.stellarDashBaseMod.MemoType */] protected 
   def this(`type`: stellarDashBaseLib.stellarDashBaseMod.MemoTypeNs.Text, value: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("stellar-sdk", "Memo")
 @js.native
 object Memo extends js.Object {

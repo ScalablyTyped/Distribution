@@ -19,7 +19,7 @@ abstract class OcrEngine () extends js.Object {
   def recognizeAsync(bitmap: winrtDashUwpLib.WindowsNs.GraphicsNs.ImagingNs.SoftwareBitmap): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[OcrResult] = js.native
 }
 
-/** Provides optical character recognition (OCR) functionality. */
+/* static members */
 @JSGlobal("Windows.Media.Ocr.OcrEngine")
 @js.native
 object OcrEngine extends js.Object {

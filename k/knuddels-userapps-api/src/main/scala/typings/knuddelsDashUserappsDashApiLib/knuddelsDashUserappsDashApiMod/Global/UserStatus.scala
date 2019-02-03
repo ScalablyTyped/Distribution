@@ -21,9 +21,7 @@ class UserStatus () extends js.Object {
   def isAtLeast(otherUserStatus: UserStatus): scala.Boolean = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/UserStatus.html
-	 */
+/* static members */
 @JSGlobal("UserStatus")
 @js.native
 object UserStatus extends js.Object {

@@ -12,6 +12,7 @@ class CylinderGeometry protected ()
   def this(options: cesiumLib.Anon_BottomRadius) = this()
 }
 
+/* static members */
 @JSImport("cesium", "CylinderGeometry")
 @js.native
 object CylinderGeometry extends js.Object {

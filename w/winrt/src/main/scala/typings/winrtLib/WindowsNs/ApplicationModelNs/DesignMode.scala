@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DesignMode () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DesignMode")
 @js.native
 object DesignMode extends js.Object {

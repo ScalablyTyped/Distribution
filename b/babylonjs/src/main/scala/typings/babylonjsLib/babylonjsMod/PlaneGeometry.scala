@@ -43,10 +43,7 @@ class PlaneGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a plane geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#plane
-  */
+/* static members */
 @JSImport("babylonjs", "PlaneGeometry")
 @js.native
 object PlaneGeometry extends js.Object {

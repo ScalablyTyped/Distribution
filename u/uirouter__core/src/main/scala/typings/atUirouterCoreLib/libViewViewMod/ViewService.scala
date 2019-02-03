@@ -67,6 +67,7 @@ class ViewService protected () extends js.Object {
   def sync(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/view/view", "ViewService")
 @js.native
 object ViewService extends js.Object {

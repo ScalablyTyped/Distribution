@@ -15,6 +15,7 @@ class PulledChanges () extends js.Object {
   def cursor(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.PulledChanges")
 @js.native
 object PulledChanges extends js.Object {

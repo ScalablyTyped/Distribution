@@ -12,6 +12,7 @@ class EntityObjectManager protected ()
   def this(entityObject: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "EntityObjectManager")
 @js.native
 object EntityObjectManager extends js.Object {

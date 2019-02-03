@@ -82,6 +82,7 @@ class Processor protected () extends js.Object {
   def updateDownloadLink(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("OpenJsCad.Processor")
 @js.native
 object Processor extends js.Object {

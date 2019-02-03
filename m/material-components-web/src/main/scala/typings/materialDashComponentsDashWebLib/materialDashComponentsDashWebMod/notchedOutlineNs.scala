@@ -16,11 +16,13 @@ object notchedOutlineNs extends js.Object {
   class MDCNotchedOutlineFoundation ()
     extends atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineMod.MDCNotchedOutlineFoundation
   
+  /* static members */
   @js.native
   object MDCNotchedOutline extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialNotchedDashOutlineLib.atMaterialNotchedDashOutlineMod.MDCNotchedOutline = js.native
   }
   
+  /* static members */
   @js.native
   object MDCNotchedOutlineFoundation extends js.Object {
     val cssClasses: atMaterialNotchedDashOutlineLib.constantsMod.cssClasses = js.native

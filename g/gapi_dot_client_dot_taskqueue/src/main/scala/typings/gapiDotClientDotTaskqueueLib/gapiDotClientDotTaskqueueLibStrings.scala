@@ -12,7 +12,9 @@ object gapiDotClientDotTaskqueueLibStrings {
   @js.native
   sealed trait v1beta2 extends js.Object
   
+  @scala.inline
   def taskqueue: taskqueue = "taskqueue".asInstanceOf[taskqueue]
+  @scala.inline
   def v1beta2: v1beta2 = "v1beta2".asInstanceOf[v1beta2]
 }
 

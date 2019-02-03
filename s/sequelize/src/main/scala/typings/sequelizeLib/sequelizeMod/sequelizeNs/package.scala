@@ -400,7 +400,9 @@ package object sequelizeNs {
     *
     * @see Sequelize.define
     */
-  type DefineModelAttributes[T] = sequelizeLib.sequelizeLibStrings.DefineModelAttributes with js.Any
+  type DefineModelAttributes[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: string | sequelize.sequelize.sequelize.DataTypeAbstract | sequelize.sequelize.sequelize.DefineAttributeColumnOptions}
+    */ sequelizeLib.sequelizeLibStrings.DefineModelAttributes with js.Any
   /**
     * Shortcut for types used in FindOptions.attributes
     */
@@ -812,5 +814,7 @@ package object sequelizeNs {
     * We did put Object in the end, because there where query might be a JSON Blob. It cripples a bit the
     * typesafety, but there is no way to pass the tests if we just remove it.
     */
-  type WhereOptions[T] = sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any
+  type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | number | boolean | sequelize.sequelize.sequelize.WhereLogic | object | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | std.Array<string | number> | null}
+    */ sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any
 }

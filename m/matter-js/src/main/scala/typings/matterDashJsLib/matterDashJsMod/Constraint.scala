@@ -114,6 +114,7 @@ class Constraint ()
   override var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Constraint")
 @js.native
 object Constraint extends js.Object {

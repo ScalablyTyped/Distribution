@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Scroll ()
   extends reactDashFnsLib.distScrollScrollMod.Scroll
 
+/* static members */
 @JSImport("react-fns/dist/Scroll", "Scroll")
 @js.native
 object Scroll extends js.Object {

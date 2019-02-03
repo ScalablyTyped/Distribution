@@ -18,6 +18,7 @@ class TabStack protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-router-navigation-core", "TabStack")
 @js.native
 object TabStack extends js.Object {

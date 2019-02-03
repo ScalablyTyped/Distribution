@@ -20,6 +20,7 @@ class Model protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayModelMod.ModelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Model")
 @js.native
 object Model extends js.Object {

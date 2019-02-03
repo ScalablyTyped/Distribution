@@ -20,6 +20,7 @@ class Cluster protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.daxClusterMod.ClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dax", "Cluster")
 @js.native
 object Cluster extends js.Object {

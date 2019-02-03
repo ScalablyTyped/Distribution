@@ -38,6 +38,7 @@ class FrameRateMonitor ()
   override def unpause(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("cesium", "FrameRateMonitor")
 @js.native
 object FrameRateMonitor extends js.Object {

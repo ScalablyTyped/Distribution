@@ -15,8 +15,11 @@ object electronDashNotifyLibStrings {
   @js.native
   sealed trait show extends js.Object
   
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def show: show = "show".asInstanceOf[show]
 }
 

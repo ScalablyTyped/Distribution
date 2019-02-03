@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MathPrototype ()
   extends typescriptDashServicesLib.TypeScriptNs.MathPrototype
 
+/* static members */
 @JSImport("typescript-services", "MathPrototype")
 @js.native
 object MathPrototype extends js.Object {

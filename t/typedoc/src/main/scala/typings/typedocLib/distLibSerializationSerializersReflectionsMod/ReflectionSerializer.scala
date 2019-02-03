@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ReflectionSerializer ()
   extends typedocLib.distLibSerializationSerializersReflectionsAbstractMod.ReflectionSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/reflections", "ReflectionSerializer")
 @js.native
 object ReflectionSerializer extends js.Object {

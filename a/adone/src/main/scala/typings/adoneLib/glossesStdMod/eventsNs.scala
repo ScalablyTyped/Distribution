@@ -12,6 +12,7 @@ object eventsNs extends js.Object {
   class EventEmitter ()
     extends nodeLib.eventsMod.EventEmitter
   
+  /* static members */
   @js.native
   object EventEmitter extends js.Object {
     var defaultMaxListeners: scala.Double = js.native

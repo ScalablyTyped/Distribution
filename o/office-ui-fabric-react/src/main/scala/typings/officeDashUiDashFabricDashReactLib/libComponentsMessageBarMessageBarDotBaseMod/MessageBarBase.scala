@@ -28,6 +28,7 @@ class MessageBarBase protected ()
   /* private */ def _renderSingleLine(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/MessageBar/MessageBar.base", "MessageBarBase")
 @js.native
 object MessageBarBase extends js.Object {

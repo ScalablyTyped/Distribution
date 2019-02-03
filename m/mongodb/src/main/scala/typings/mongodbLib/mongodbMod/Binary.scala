@@ -17,6 +17,7 @@ class Binary protected ()
   def this(buffer: nodeLib.Buffer, subType: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("mongodb", "Binary")
 @js.native
 object Binary extends js.Object {

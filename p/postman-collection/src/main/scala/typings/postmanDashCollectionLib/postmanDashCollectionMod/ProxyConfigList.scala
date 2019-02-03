@@ -13,6 +13,7 @@ class ProxyConfigList protected () extends PropertyList[ProxyConfig] {
   def resolve(url: Url): ProxyConfig = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "ProxyConfigList")
 @js.native
 object ProxyConfigList extends js.Object {

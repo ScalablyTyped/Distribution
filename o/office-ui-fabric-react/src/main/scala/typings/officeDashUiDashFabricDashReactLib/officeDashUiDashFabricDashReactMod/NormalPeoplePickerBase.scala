@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NormalPeoplePickerBase ()
   extends officeDashUiDashFabricDashReactLib.libPickersMod.NormalPeoplePickerBase
 
+/* static members */
 @JSImport("office-ui-fabric-react", "NormalPeoplePickerBase")
 @js.native
 object NormalPeoplePickerBase extends js.Object {

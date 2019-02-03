@@ -78,6 +78,7 @@ class WhileStatementSyntax protected ()
   def withWhileKeyword(whileKeyword: ISyntaxToken): WhileStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.WhileStatementSyntax")
 @js.native
 object WhileStatementSyntax extends js.Object {

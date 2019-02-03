@@ -18,6 +18,7 @@ class Oid () extends js.Object {
   def tostrS(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nodegit/oid", "Oid")
 @js.native
 object Oid extends js.Object {

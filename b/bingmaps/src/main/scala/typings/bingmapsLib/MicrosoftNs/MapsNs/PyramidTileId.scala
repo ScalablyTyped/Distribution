@@ -33,6 +33,7 @@ class PyramidTileId protected () extends js.Object {
   var zoom: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.Maps.PyramidTileId")
 @js.native
 object PyramidTileId extends js.Object {

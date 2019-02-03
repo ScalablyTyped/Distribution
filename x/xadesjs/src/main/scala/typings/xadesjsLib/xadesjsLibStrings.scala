@@ -27,12 +27,19 @@ object xadesjsLibStrings {
   @js.native
   sealed trait xer extends js.Object
   
+  @scala.inline
   def OIDAsURI: OIDAsURI = "OIDAsURI".asInstanceOf[OIDAsURI]
+  @scala.inline
   def OIDAsURN: OIDAsURN = "OIDAsURN".asInstanceOf[OIDAsURN]
+  @scala.inline
   def ber: ber = "ber".asInstanceOf[ber]
+  @scala.inline
   def cer: cer = "cer".asInstanceOf[cer]
+  @scala.inline
   def der: der = "der".asInstanceOf[der]
+  @scala.inline
   def per: per = "per".asInstanceOf[per]
+  @scala.inline
   def xer: xer = "xer".asInstanceOf[xer]
 }
 

@@ -28,6 +28,7 @@ class CookieAccessInfo protected () extends js.Object {
   var secure: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cookiejar", "CookieAccessInfo")
 @js.native
 object CookieAccessInfo extends js.Object {

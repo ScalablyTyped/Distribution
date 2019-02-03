@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "View")
 @js.native
-class View () extends js.Object
+class View ()
+  extends reactLib.reactMod.Component[ViewProps, js.Object, js.Any]
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "View")
+/* static members */
+@JSImport("react-native", "View")
 @js.native
 object View extends js.Object {
   /**

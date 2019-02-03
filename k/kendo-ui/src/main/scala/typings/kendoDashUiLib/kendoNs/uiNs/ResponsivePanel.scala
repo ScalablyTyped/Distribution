@@ -17,6 +17,7 @@ class ResponsivePanel protected () extends Widget {
   def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ResponsivePanel")
 @js.native
 object ResponsivePanel extends js.Object {

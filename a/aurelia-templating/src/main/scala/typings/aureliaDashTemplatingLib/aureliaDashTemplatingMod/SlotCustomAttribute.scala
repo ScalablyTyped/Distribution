@@ -14,6 +14,7 @@ class SlotCustomAttribute () extends js.Object {
   def valueChanged(newValue: js.Any, oldValue: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "SlotCustomAttribute")
 @js.native
 object SlotCustomAttribute extends js.Object {

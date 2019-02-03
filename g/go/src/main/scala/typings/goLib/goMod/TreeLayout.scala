@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 class TreeLayout ()
   extends goLib.goMod.goNs.TreeLayout
 
-/**
-  * This layout positions nodes in a tree-like arrangement.
-  */
+/* static members */
 @JSImport("go", "TreeLayout")
 @js.native
 object TreeLayout extends js.Object {

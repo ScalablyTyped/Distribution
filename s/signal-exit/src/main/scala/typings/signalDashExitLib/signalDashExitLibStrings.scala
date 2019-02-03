@@ -21,10 +21,15 @@ object signalDashExitLibStrings {
   @js.native
   sealed trait SIGTERM extends js.Object
   
+  @scala.inline
   def SIGABRT: SIGABRT = "SIGABRT".asInstanceOf[SIGABRT]
+  @scala.inline
   def SIGALRM: SIGALRM = "SIGALRM".asInstanceOf[SIGALRM]
+  @scala.inline
   def SIGHUP: SIGHUP = "SIGHUP".asInstanceOf[SIGHUP]
+  @scala.inline
   def SIGINT: SIGINT = "SIGINT".asInstanceOf[SIGINT]
+  @scala.inline
   def SIGTERM: SIGTERM = "SIGTERM".asInstanceOf[SIGTERM]
 }
 

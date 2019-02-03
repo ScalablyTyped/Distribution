@@ -15,8 +15,11 @@ object smoothieLibStrings {
   @js.native
   sealed trait step extends js.Object
   
+  @scala.inline
   def bezier: bezier = "bezier".asInstanceOf[bezier]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def step: step = "step".asInstanceOf[step]
 }
 

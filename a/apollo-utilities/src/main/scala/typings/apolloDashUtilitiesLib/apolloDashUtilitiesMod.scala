@@ -16,11 +16,10 @@ object apolloDashUtilitiesMod extends js.Object {
   def assign[A, B, C](a: A, b: B, c: C): A with B with C = js.native
   def assign[A, B, C, D](a: A, b: B, c: C, d: D): A with B with C with D = js.native
   def assign[A, B, C, D, E](a: A, b: B, c: C, d: D, e: E): A with B with C with D with E = js.native
-  def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): scala.Unit = js.native
+  def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def cloneDeep[T](value: T): T = js.native
   def createFragmentMap(): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
   def createFragmentMap(fragments: js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode]): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
-  def flattenSelections(selection: graphqlLib.languageAstMod.SelectionNode): js.Array[graphqlLib.languageAstMod.SelectionNode] = js.native
   def getDefaultValues(): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
   def getDefaultValues(definition: graphqlLib.languageAstMod.OperationDefinitionNode): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native
   def getDirectiveInfoFromField(field: graphqlLib.languageAstMod.FieldNode, variables: js.Object): apolloDashUtilitiesLib.libDirectivesMod.DirectiveInfo = js.native
@@ -28,12 +27,7 @@ object apolloDashUtilitiesMod extends js.Object {
   def getDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.GetDirectiveConfig],
     doc: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
-  def getDirectivesFromDocument(
-    directives: js.Array[apolloDashUtilitiesLib.libTransformMod.GetDirectiveConfig],
-    doc: graphqlLib.languageAstMod.DocumentNode,
-    includeAllFragments: scala.Boolean
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
   def getEnv(): js.UndefOr[java.lang.String] = js.native
   def getFragmentDefinition(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.FragmentDefinitionNode = js.native
   def getFragmentDefinitions(doc: graphqlLib.languageAstMod.DocumentNode): js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode] = js.native
@@ -70,8 +64,8 @@ object apolloDashUtilitiesMod extends js.Object {
   def maybeDeepFreeze(obj: js.Any): js.Any = js.native
   def removeArgumentsFromDocument(
     config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveArgumentsConfig],
-    query: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+    doc: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeConnectionDirectiveFromDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveDirectiveConfig],
@@ -79,8 +73,8 @@ object apolloDashUtilitiesMod extends js.Object {
   ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def removeFragmentSpreadFromDocument(
     config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveFragmentSpreadConfig],
-    query: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+    doc: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
   def resultKeyNameFromField(field: graphqlLib.languageAstMod.FieldNode): java.lang.String = js.native
   def shouldInclude(selection: graphqlLib.languageAstMod.SelectionNode): scala.Boolean = js.native
   def shouldInclude(

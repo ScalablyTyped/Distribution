@@ -64,12 +64,7 @@ class RenderingGroup protected ()
     ]) = this()
 }
 
-/**
-  * This represents the object necessary to create a rendering group.
-  * This is exclusively used and created by the rendering manager.
-  * To modify the behavior, you use the available helpers in your scene or meshes.
-  * @hidden
-  */
+/* static members */
 @JSImport("babylonjs", "RenderingGroup")
 @js.native
 object RenderingGroup extends js.Object {

@@ -57,6 +57,7 @@ class Path ()
   def stroke(color: java.lang.String, width: scala.Double, opacity: scala.Double): kendoDashUiLib.kendoNs.drawingNs.Path = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.drawing.Path")
 @js.native
 object Path extends js.Object {

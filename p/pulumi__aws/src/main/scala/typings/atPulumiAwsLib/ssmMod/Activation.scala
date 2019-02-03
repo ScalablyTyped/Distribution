@@ -20,6 +20,7 @@ class Activation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmActivationMod.ActivationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "Activation")
 @js.native
 object Activation extends js.Object {

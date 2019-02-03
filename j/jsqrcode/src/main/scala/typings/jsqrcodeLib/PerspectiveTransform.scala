@@ -24,6 +24,7 @@ class PerspectiveTransform protected () extends js.Object {
   def transformPoints2(xValues: js.Array[scala.Double], yValues: js.Array[scala.Double]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PerspectiveTransform")
 @js.native
 object PerspectiveTransform extends js.Object {

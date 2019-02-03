@@ -39,16 +39,27 @@ object atUifabricStylingLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def IPartialTheme: IPartialTheme = "IPartialTheme".asInstanceOf[IPartialTheme]
+  @scala.inline
   def ITheme: ITheme = "ITheme".asInstanceOf[ITheme]
+  @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
+  @scala.inline
   def buildClassMap: buildClassMap = "buildClassMap".asInstanceOf[buildClassMap]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def neutral: neutral = "neutral".asInstanceOf[neutral]
+  @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
+  @scala.inline
   def soft: soft = "soft".asInstanceOf[soft]
+  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

@@ -27,12 +27,19 @@ object nukaDashCarouselLibStrings {
   @js.native
   sealed trait right extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def current: current = "current".asInstanceOf[current]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
 }
 

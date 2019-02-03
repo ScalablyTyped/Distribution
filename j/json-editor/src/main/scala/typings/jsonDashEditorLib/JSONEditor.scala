@@ -24,6 +24,7 @@ class JSONEditor[TValue] protected () extends js.Object {
   def watch(event: java.lang.String, fn: js.Function): JSONEditor[TValue] = js.native
 }
 
+/* static members */
 @JSGlobal("JSONEditor")
 @js.native
 object JSONEditor extends js.Object {

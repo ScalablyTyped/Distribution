@@ -14,6 +14,7 @@ class CancelToken protected () extends js.Object {
   def throwIfRequested(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("adone.net.http.client.CancelToken")
 @js.native
 object CancelToken extends js.Object {

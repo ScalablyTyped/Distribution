@@ -23,6 +23,7 @@ class Message[T /* <: js.Object */] () extends js.Object {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Message")
 @js.native
 object Message extends js.Object {

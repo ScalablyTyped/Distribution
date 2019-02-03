@@ -37,6 +37,7 @@ class CustomerGateway protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/customerGateway", "CustomerGateway")
 @js.native
 object CustomerGateway extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NavbarDivider ()
   extends reactLib.reactMod.PureComponent[INavbarDividerProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/navbar/navbarDivider", "NavbarDivider")
 @js.native
 object NavbarDivider extends js.Object {

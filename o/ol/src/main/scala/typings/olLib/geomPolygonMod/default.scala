@@ -29,14 +29,7 @@ class default protected ()
   def this(coordinates: js.Array[js.Array[openlayersLib.openlayersMod.Coordinate]], opt_layout: openlayersLib.openlayersMod.geomNs.GeometryLayout) = this()
 }
 
-/**
-  * @classdesc
-  * Polygon geometry.
-  *
-  * @param coordinates Coordinates.
-  * @param opt_layout Layout.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/geom/polygon", JSImport.Default)
 @js.native
 object default extends js.Object {

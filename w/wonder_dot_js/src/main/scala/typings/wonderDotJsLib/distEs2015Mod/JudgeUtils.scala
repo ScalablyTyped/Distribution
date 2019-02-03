@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class JudgeUtils ()
   extends wonderDotJsLib.distEs2015UtilsJudgeUtilsMod.JudgeUtils
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "JudgeUtils")
 @js.native
 object JudgeUtils extends js.Object {

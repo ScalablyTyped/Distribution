@@ -84,10 +84,7 @@ class TorusGeometry protected () extends _PrimitiveGeometry {
   var thickness: scala.Double = js.native
 }
 
-/**
-  * Creates a new torus geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#torus
-  */
+/* static members */
 @JSGlobal("BABYLON.TorusGeometry")
 @js.native
 object TorusGeometry extends js.Object {

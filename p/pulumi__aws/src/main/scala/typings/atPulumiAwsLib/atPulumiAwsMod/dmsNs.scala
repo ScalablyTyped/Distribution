@@ -78,6 +78,7 @@ object dmsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.dmsReplicationTaskMod.ReplicationTaskArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Certificate extends js.Object {
     /**
@@ -102,6 +103,7 @@ object dmsNs extends js.Object {
     ): atPulumiAwsLib.dmsCertificateMod.Certificate = js.native
   }
   
+  /* static members */
   @js.native
   object Endpoint extends js.Object {
     /**
@@ -126,6 +128,7 @@ object dmsNs extends js.Object {
     ): atPulumiAwsLib.dmsEndpointMod.Endpoint = js.native
   }
   
+  /* static members */
   @js.native
   object ReplicationInstance extends js.Object {
     /**
@@ -150,6 +153,7 @@ object dmsNs extends js.Object {
     ): atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstance = js.native
   }
   
+  /* static members */
   @js.native
   object ReplicationSubnetGroup extends js.Object {
     /**
@@ -174,6 +178,7 @@ object dmsNs extends js.Object {
     ): atPulumiAwsLib.dmsReplicationSubnetGroupMod.ReplicationSubnetGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ReplicationTask extends js.Object {
     /**

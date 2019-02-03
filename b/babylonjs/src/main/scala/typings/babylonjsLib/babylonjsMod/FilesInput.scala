@@ -32,9 +32,7 @@ class FilesInput protected ()
     ]) = this()
 }
 
-/**
-  * Class used to help managing file picking and drag'n'drop
-  */
+/* static members */
 @JSImport("babylonjs", "FilesInput")
 @js.native
 object FilesInput extends js.Object {

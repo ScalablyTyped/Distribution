@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class HtmlUtils ()
   extends typesettableLib.buildSrcContextsHtmlMod.HtmlUtils
 
+/* static members */
 @JSImport("typesettable/build/src/contexts", "HtmlUtils")
 @js.native
 object HtmlUtils extends js.Object {

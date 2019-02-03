@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Modal ()
   extends reactDashBootstrapLib.libMod.Modal
 
+/* static members */
 @JSImport("react-bootstrap", "Modal")
 @js.native
 object Modal extends js.Object {

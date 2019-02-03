@@ -11,6 +11,7 @@ class User () extends js.Object {
   var id: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Realm.Permissions.User")
 @js.native
 object User extends js.Object {

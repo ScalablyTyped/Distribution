@@ -12,6 +12,7 @@ class Subscription[TData, TVariables] protected ()
   def this(props: reactDashApolloLib.subscriptionsMod.SubscriptionProps[TData, TVariables], context: reactDashApolloLib.subscriptionsMod.SubscriptionContext) = this()
 }
 
+/* static members */
 @JSImport("react-apollo", "Subscription")
 @js.native
 object Subscription extends js.Object {

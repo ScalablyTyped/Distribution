@@ -15,6 +15,7 @@ class Euler ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double, order: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("three", "Euler")
 @js.native
 object Euler extends js.Object {

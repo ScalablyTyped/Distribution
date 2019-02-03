@@ -17,6 +17,7 @@ class StringTable protected () extends js.Object {
   /* private */ def grow(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Collections.StringTable")
 @js.native
 object StringTable extends js.Object {

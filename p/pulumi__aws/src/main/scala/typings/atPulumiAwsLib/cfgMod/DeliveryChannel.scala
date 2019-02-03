@@ -20,6 +20,7 @@ class DeliveryChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg", "DeliveryChannel")
 @js.native
 object DeliveryChannel extends js.Object {

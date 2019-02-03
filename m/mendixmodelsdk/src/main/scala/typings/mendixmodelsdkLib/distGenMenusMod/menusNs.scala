@@ -57,9 +57,7 @@ object menusNs extends js.Object {
     var model_MenuItemContainer: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/menu relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MenuDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -71,9 +69,7 @@ object menusNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenMenusMod.menusNs.MenuDocument = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/menu-item relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MenuItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -92,6 +88,7 @@ object menusNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenMenusMod.menusNs.MenuItemContainer): mendixmodelsdkLib.distGenMenusMod.menusNs.MenuItem = js.native
   }
   
+  /* static members */
   @js.native
   object MenuItemCollection extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -116,6 +113,7 @@ object menusNs extends js.Object {
     def createInNavigationProfileUnderMenuItemCollection(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenMenusMod.menusNs.MenuItemCollection = js.native
   }
   
+  /* static members */
   @js.native
   object MenuItemContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ToastNotificationManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.Notifications.ToastNotificationManager")
 @js.native
 object ToastNotificationManager extends js.Object {

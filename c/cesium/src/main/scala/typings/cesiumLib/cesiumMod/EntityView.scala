@@ -24,6 +24,7 @@ class EntityView protected ()
   override def update(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("cesium", "EntityView")
 @js.native
 object EntityView extends js.Object {

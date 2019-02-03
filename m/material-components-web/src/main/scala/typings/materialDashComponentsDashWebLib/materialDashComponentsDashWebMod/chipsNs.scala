@@ -24,11 +24,13 @@ object chipsNs extends js.Object {
   class MDCChipSetFoundation ()
     extends atMaterialChipsLib.atMaterialChipsMod.MDCChipSetFoundation
   
+  /* static members */
   @js.native
   object MDCChip extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialChipsLib.chipMod.MDCChip = js.native
   }
   
+  /* static members */
   @js.native
   object MDCChipFoundation extends js.Object {
     val cssClasses: atMaterialChipsLib.chipConstantsMod.cssClasses = js.native
@@ -36,11 +38,13 @@ object chipsNs extends js.Object {
     val strings: atMaterialChipsLib.chipConstantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCChipSet extends js.Object {
     def attachTo(root: js.Any): atMaterialChipsLib.chipDashSetMod.MDCChipSet = js.native
   }
   
+  /* static members */
   @js.native
   object MDCChipSetFoundation extends js.Object {
     val cssClasses: atMaterialChipsLib.chipDashSetConstantsMod.cssClasses = js.native

@@ -15,6 +15,7 @@ class Decimal128 protected ()
   def this(bytes: nodeLib.Buffer) = this()
 }
 
+/* static members */
 @JSImport("mongodb", "Decimal128")
 @js.native
 object Decimal128 extends js.Object {

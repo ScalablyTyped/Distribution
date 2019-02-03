@@ -28,6 +28,7 @@ class BlankNode protected () extends Node {
   def copy(formula: Formula): BlankNode = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "BlankNode")
 @js.native
 object BlankNode extends js.Object {

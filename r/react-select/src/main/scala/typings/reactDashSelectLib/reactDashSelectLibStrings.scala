@@ -105,38 +105,71 @@ object reactDashSelectLibStrings {
   @js.native
   sealed trait value extends js.Object
   
+  @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
   def `create-option`: `create-option` = "create-option".asInstanceOf[`create-option`]
+  @scala.inline
   def `deselect-option`: `deselect-option` = "deselect-option".asInstanceOf[`deselect-option`]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def exited: exited = "exited".asInstanceOf[exited]
+  @scala.inline
   def exiting: exiting = "exiting".asInstanceOf[exiting]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
+  @scala.inline
   def group: group = "group".asInstanceOf[group]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def `input-blur`: `input-blur` = "input-blur".asInstanceOf[`input-blur`]
+  @scala.inline
   def `input-change`: `input-change` = "input-change".asInstanceOf[`input-change`]
+  @scala.inline
   def last: last = "last".asInstanceOf[last]
+  @scala.inline
   def listbox: listbox = "listbox".asInstanceOf[listbox]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
   def `menu-close`: `menu-close` = "menu-close".asInstanceOf[`menu-close`]
+  @scala.inline
   def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def option: option = "option".asInstanceOf[option]
+  @scala.inline
   def pagedown: pagedown = "pagedown".asInstanceOf[pagedown]
+  @scala.inline
   def pageup: pageup = "pageup".asInstanceOf[pageup]
+  @scala.inline
   def `pop-value`: `pop-value` = "pop-value".asInstanceOf[`pop-value`]
+  @scala.inline
   def previous: previous = "previous".asInstanceOf[previous]
+  @scala.inline
   def `remove-value`: `remove-value` = "remove-value".asInstanceOf[`remove-value`]
+  @scala.inline
   def `select-option`: `select-option` = "select-option".asInstanceOf[`select-option`]
+  @scala.inline
   def `set-value`: `set-value` = "set-value".asInstanceOf[`set-value`]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
 }
 

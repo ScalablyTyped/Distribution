@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WindowSize ()
   extends reactDashFnsLib.distWindowSizeWindowSizeMod.WindowSize
 
+/* static members */
 @JSImport("react-fns/dist/WindowSize", "WindowSize")
 @js.native
 object WindowSize extends js.Object {

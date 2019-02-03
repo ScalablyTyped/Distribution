@@ -12,6 +12,7 @@ class TakeUntilObserver protected ()
   def this(prevObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "TakeUntilObserver")
 @js.native
 object TakeUntilObserver extends js.Object {

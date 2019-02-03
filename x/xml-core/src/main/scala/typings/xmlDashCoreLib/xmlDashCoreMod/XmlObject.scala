@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class XmlObject ()
   extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject
 
+/* static members */
 @JSImport("xml-core", "XmlObject")
 @js.native
 object XmlObject extends js.Object {

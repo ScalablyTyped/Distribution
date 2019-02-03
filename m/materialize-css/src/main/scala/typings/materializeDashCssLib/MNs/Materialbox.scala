@@ -38,6 +38,7 @@ class Materialbox () extends Component[MaterialboxOptions] {
   def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Materialbox")
 @js.native
 object Materialbox extends js.Object {

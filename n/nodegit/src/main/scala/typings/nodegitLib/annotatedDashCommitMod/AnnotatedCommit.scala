@@ -12,6 +12,7 @@ class AnnotatedCommit () extends js.Object {
   def id(): nodegitLib.oidMod.Oid = js.native
 }
 
+/* static members */
 @JSImport("nodegit/annotated-commit", "AnnotatedCommit")
 @js.native
 object AnnotatedCommit extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Session ()
   extends electronLib.ElectronNs.Session
 
+/* static members */
 @JSImport("electron", "Session")
 @js.native
 object Session extends js.Object {

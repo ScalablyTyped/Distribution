@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 class SixDofDragBehavior ()
   extends babylonjsLib.BABYLONNs.SixDofDragBehavior
 
-/**
-  * A behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
-  */
+/* static members */
 @JSImport("babylonjs", "SixDofDragBehavior")
 @js.native
 object SixDofDragBehavior extends js.Object {

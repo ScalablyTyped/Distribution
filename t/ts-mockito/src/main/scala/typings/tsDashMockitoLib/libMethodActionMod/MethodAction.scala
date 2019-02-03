@@ -20,6 +20,7 @@ class MethodAction protected () extends js.Object {
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("ts-mockito/lib/MethodAction", "MethodAction")
 @js.native
 object MethodAction extends js.Object {

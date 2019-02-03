@@ -14,6 +14,7 @@ class default protected () extends Quill {
   def this(container: stdLib.Element, options: QuillOptionsStatic) = this()
 }
 
+/* static members */
 @JSImport("quill", JSImport.Default)
 @js.native
 object default extends js.Object {

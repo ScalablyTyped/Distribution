@@ -48,6 +48,7 @@ class MovieClip () extends Container {
   def stop(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.MovieClip")
 @js.native
 object MovieClip extends js.Object {

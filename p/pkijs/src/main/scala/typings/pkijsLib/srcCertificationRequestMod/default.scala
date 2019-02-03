@@ -11,6 +11,7 @@ class default () extends CertificationRequest {
   def this(params: js.Any) = this()
 }
 
+/* static members */
 @JSImport("pkijs/src/CertificationRequest", JSImport.Default)
 @js.native
 object default extends js.Object {

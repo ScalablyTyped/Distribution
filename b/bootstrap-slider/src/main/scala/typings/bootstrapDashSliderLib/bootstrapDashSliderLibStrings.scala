@@ -45,18 +45,31 @@ object bootstrapDashSliderLibStrings {
   @js.native
   sealed trait top extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def logarithmic: logarithmic = "logarithmic".asInstanceOf[logarithmic]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
+  @scala.inline
   def slideDisabled: slideDisabled = "slideDisabled".asInstanceOf[slideDisabled]
+  @scala.inline
   def slideEnabled: slideEnabled = "slideEnabled".asInstanceOf[slideEnabled]
+  @scala.inline
   def slideStart: slideStart = "slideStart".asInstanceOf[slideStart]
+  @scala.inline
   def slideStop: slideStop = "slideStop".asInstanceOf[slideStop]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
 }
 

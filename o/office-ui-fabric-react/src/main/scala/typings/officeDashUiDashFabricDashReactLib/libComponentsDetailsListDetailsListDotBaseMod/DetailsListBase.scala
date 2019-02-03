@@ -111,6 +111,7 @@ class DetailsListBase protected ()
   override def forceUpdate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsList.base", "DetailsListBase")
 @js.native
 object DetailsListBase extends js.Object {

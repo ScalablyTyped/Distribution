@@ -104,6 +104,7 @@ class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
   def componentWillUnmount_MBaseComponent(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
 @js.native
 object BaseComponent extends js.Object {

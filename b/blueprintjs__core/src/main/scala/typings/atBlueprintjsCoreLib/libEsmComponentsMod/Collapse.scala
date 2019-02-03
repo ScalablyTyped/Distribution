@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Collapse ()
   extends atBlueprintjsCoreLib.libEsmComponentsCollapseCollapseMod.Collapse
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Collapse")
 @js.native
 object Collapse extends js.Object {

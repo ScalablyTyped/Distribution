@@ -9,6 +9,7 @@ object saslDashDigestDashMd5LibStrings {
   @js.native
   sealed trait `DIGEST-MD5` extends js.Object
   
+  @scala.inline
   def `DIGEST-MD5`: `DIGEST-MD5` = "DIGEST-MD5".asInstanceOf[`DIGEST-MD5`]
 }
 

@@ -19,6 +19,7 @@ class GanttTask () extends Model {
   var title: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.GanttTask")
 @js.native
 object GanttTask extends js.Object {

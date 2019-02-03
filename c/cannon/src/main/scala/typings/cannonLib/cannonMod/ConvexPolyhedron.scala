@@ -13,6 +13,7 @@ class ConvexPolyhedron ()
   def this(points: js.Array[cannonLib.CANNONNs.Vec3], faces: js.Array[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("cannon", "ConvexPolyhedron")
 @js.native
 object ConvexPolyhedron extends js.Object {

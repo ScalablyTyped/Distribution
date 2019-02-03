@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MediaEncodingSubtypes () extends js.Object
 
-/** Provides properties for getting the standard names for media subtypes. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.MediaEncodingSubtypes")
 @js.native
 object MediaEncodingSubtypes extends js.Object {

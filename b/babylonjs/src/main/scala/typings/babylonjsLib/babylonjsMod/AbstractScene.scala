@@ -15,11 +15,7 @@ import scala.scalajs.js.annotation._
 abstract class AbstractScene ()
   extends babylonjsLib.BABYLONNs.AbstractScene
 
-/**
-  * Base class of the scene acting as a container for the different elements composing a scene.
-  * This class is dynamically extended by the different components of the scene increasing
-  * flexibility and reducing coupling
-  */
+/* static members */
 @JSImport("babylonjs", "AbstractScene")
 @js.native
 object AbstractScene extends js.Object {

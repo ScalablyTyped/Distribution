@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends antdLib.libModalModalMod.default
 
+/* static members */
 @JSImport("antd/lib/modal", JSImport.Default)
 @js.native
 object default extends js.Object {

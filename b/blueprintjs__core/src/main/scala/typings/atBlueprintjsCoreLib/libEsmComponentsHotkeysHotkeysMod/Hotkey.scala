@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Hotkey ()
   extends atBlueprintjsCoreLib.libEsmComponentsHotkeysHotkeyMod.Hotkey
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "Hotkey")
 @js.native
 object Hotkey extends js.Object {

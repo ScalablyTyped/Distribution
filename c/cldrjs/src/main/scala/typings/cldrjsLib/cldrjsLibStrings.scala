@@ -12,7 +12,9 @@ object cldrjsLibStrings {
   @js.native
   sealed trait Underscore extends js.Object
   
+  @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
   def Underscore: Underscore = "_".asInstanceOf[Underscore]
 }
 

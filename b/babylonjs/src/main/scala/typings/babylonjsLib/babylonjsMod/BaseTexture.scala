@@ -24,11 +24,7 @@ class BaseTexture protected ()
   def this(scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  * Base class of all the textures in babylon.
-  * It groups all the common properties the materials, post process, lights... might need
-  * in order to make a correct use of the texture.
-  */
+/* static members */
 @JSImport("babylonjs", "BaseTexture")
 @js.native
 object BaseTexture extends js.Object {

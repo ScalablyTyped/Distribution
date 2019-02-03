@@ -11,6 +11,7 @@ class namespaced () extends SimpleMDE {
   def this(options: simplemdeLib.simplemdeMod.SimpleMDENs.Options) = this()
 }
 
+/* static members */
 @JSImport("simplemde", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

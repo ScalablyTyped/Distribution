@@ -22,6 +22,7 @@ class StackedBar[X, Y] ()
   def this(orientation: plottableLib.buildSrcPlotsBarPlotMod.BarOrientation) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots", "StackedBar")
 @js.native
 object StackedBar extends js.Object {

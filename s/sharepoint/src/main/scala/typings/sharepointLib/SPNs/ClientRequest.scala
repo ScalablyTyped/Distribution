@@ -17,6 +17,7 @@ class ClientRequest () extends js.Object {
   def set_navigateWhenServerRedirect(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.ClientRequest")
 @js.native
 object ClientRequest extends js.Object {

@@ -97,10 +97,7 @@ class Action protected () extends js.Object {
   def `then`(action: Action): Action = js.native
 }
 
-/**
-  * The action to be carried out following a trigger
-  * @see http://doc.babylonjs.com/how_to/how_to_use_actions#available-actions
-  */
+/* static members */
 @JSGlobal("BABYLON.Action")
 @js.native
 object Action extends js.Object {

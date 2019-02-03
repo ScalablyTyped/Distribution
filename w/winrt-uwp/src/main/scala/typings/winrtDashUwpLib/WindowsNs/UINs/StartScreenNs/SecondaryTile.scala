@@ -153,7 +153,7 @@ class SecondaryTile () extends js.Object {
   def updateAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 
-/** Creates, enumerates, and provides information about a secondary tile. */
+/* static members */
 @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
 @js.native
 object SecondaryTile extends js.Object {

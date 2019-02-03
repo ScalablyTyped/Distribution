@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InvitationReply () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Invitation.InvitationReply")
 @js.native
 object InvitationReply extends js.Object {

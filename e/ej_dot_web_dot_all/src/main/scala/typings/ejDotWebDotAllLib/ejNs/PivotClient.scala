@@ -61,6 +61,7 @@ class PivotClient protected () extends Widget {
   def setOlapReport(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotClient")
 @js.native
 object PivotClient extends js.Object {

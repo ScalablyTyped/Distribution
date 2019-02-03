@@ -12,7 +12,9 @@ object rpioLibStrings {
   @js.native
   sealed trait physical extends js.Object
   
+  @scala.inline
   def gpio: gpio = "gpio".asInstanceOf[gpio]
+  @scala.inline
   def physical: physical = "physical".asInstanceOf[physical]
 }
 

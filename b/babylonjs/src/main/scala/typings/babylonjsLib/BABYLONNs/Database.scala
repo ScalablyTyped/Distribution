@@ -87,10 +87,7 @@ class Database protected () extends js.Object {
   def openAsync(successCallback: js.Function0[scala.Unit], errorCallback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
-/**
-  * Class used to enable access to IndexedDB
-  * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
-  */
+/* static members */
 @JSGlobal("BABYLON.Database")
 @js.native
 object Database extends js.Object {

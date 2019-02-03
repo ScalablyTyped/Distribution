@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ResizeSensor ()
   extends atBlueprintjsCoreLib.libEsmComponentsResizeDashSensorResizeSensorMod.ResizeSensor
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "ResizeSensor")
 @js.native
 object ResizeSensor extends js.Object {

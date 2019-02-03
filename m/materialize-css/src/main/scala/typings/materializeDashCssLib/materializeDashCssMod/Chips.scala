@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Chips ()
   extends materializeDashCssLib.MNs.Chips
 
+/* static members */
 @JSImport("materialize-css", "Chips")
 @js.native
 object Chips extends js.Object {

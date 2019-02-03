@@ -13,6 +13,7 @@ class Headers ()
   def this(headers: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
+/* static members */
 @JSImport("@angular/http/src", "Headers")
 @js.native
 object Headers extends js.Object {

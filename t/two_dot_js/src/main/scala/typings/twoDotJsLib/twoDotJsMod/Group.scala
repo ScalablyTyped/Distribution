@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Group ()
   extends twoDotJsLib.twoDotJsMod.TwoNs.Group
 
+/* static members */
 @JSImport("two.js", "Group")
 @js.native
 object Group extends js.Object {

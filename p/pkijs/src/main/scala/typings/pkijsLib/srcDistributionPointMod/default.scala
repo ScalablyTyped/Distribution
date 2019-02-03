@@ -17,6 +17,7 @@ class default () extends DistributionPoint {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/DistributionPoint", JSImport.Default)
 @js.native
 object default extends js.Object {

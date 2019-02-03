@@ -13,6 +13,7 @@ class CanvasPlate () extends AbstractPlate {
   def getContext2d(): d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "CanvasPlate")
 @js.native
 object CanvasPlate extends js.Object {

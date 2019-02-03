@@ -36,6 +36,7 @@ object directoryserviceNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.directoryserviceDirectoryMod.DirectoryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ConditionalForwader extends js.Object {
     /**
@@ -60,6 +61,7 @@ object directoryserviceNs extends js.Object {
     ): atPulumiAwsLib.directoryserviceConditionalForwaderMod.ConditionalForwader = js.native
   }
   
+  /* static members */
   @js.native
   object Directory extends js.Object {
     /**

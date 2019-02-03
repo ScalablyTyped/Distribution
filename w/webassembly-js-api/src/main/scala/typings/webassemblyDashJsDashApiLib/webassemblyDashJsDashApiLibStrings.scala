@@ -9,6 +9,7 @@ object webassemblyDashJsDashApiLibStrings {
   @js.native
   sealed trait anyfunc extends js.Object
   
+  @scala.inline
   def anyfunc: anyfunc = "anyfunc".asInstanceOf[anyfunc]
 }
 

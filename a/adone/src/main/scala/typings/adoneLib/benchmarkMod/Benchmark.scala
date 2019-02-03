@@ -20,6 +20,7 @@ class Benchmark protected ()
   def this(name: java.lang.String, fn: js.Function, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
 }
 
+/* static members */
 @JSImport("adone/benchmark", "Benchmark")
 @js.native
 object Benchmark extends js.Object {

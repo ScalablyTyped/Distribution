@@ -17,6 +17,7 @@ class ConnectorList protected () extends js.Object {
   def verify(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.ConnectorList")
 @js.native
 object ConnectorList extends js.Object {

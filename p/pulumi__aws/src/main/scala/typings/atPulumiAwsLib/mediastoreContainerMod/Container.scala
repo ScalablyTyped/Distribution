@@ -33,6 +33,7 @@ class Container protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mediastore/container", "Container")
 @js.native
 object Container extends js.Object {

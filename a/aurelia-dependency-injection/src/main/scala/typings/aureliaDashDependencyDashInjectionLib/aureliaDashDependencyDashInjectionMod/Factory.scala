@@ -21,6 +21,7 @@ class Factory protected () extends js.Object {
   def get(container: Container): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "Factory")
 @js.native
 object Factory extends js.Object {

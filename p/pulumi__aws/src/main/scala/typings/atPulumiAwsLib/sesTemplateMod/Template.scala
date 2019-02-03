@@ -37,6 +37,7 @@ class Template protected ()
   val text: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/template", "Template")
 @js.native
 object Template extends js.Object {

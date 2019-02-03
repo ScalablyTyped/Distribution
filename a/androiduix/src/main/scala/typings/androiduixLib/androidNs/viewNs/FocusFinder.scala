@@ -60,6 +60,7 @@ class FocusFinder () extends js.Object {
   /* private */ def setFocusTopLeft(root: js.Any, focusedRect: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.FocusFinder")
 @js.native
 object FocusFinder extends js.Object {

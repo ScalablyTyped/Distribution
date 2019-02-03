@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataConvert () extends js.Object
 
+/* static members */
 @JSGlobal("SP.DataConvert")
 @js.native
 object DataConvert extends js.Object {

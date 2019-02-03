@@ -36,6 +36,7 @@ class MDCMenu ()
   def show(options: atMaterialMenuLib.Anon_FocusIndexNull): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/menu", "MDCMenu")
 @js.native
 object MDCMenu extends js.Object {

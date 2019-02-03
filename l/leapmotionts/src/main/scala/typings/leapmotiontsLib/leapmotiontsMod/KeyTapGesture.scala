@@ -14,6 +14,7 @@ class KeyTapGesture () extends Gesture {
   var progress: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "KeyTapGesture")
 @js.native
 object KeyTapGesture extends js.Object {

@@ -41,6 +41,7 @@ class CriteriaBuilder[T] protected () extends js.Object {
   def where(key: java.lang.String, value: js.Any): CriteriaBuilder[T] = js.native
 }
 
+/* static members */
 @JSImport("node-mysql-wrapper", "CriteriaBuilder")
 @js.native
 object CriteriaBuilder extends js.Object {

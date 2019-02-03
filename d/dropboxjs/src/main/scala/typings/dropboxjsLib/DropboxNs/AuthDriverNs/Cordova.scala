@@ -12,6 +12,7 @@ class Cordova () extends IAuthDriver {
   def url(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.AuthDriver.Cordova")
 @js.native
 object Cordova extends js.Object {

@@ -9,6 +9,7 @@ object reactDashNativeDashAuth0LibStrings {
   @js.native
   sealed trait Bearer extends js.Object
   
+  @scala.inline
   def Bearer: Bearer = "Bearer".asInstanceOf[Bearer]
 }
 

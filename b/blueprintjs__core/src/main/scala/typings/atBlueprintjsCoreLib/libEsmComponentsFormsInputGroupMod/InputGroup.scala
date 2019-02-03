@@ -25,6 +25,7 @@ class InputGroup ()
   /* private */ def updateInputWidth(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/inputGroup", "InputGroup")
 @js.native
 object InputGroup extends js.Object {

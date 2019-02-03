@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SharedStorageAccessManager () extends js.Object
 
-/** Enables an app to share a file with another app by passing a token as part of a Uri activation. The target app redeems the token to get the file shared by the source app. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.SharedStorageAccessManager")
 @js.native
 object SharedStorageAccessManager extends js.Object {

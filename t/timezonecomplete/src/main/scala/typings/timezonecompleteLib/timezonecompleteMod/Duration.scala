@@ -27,6 +27,7 @@ class Duration ()
   def this(amount: scala.Double, unit: timezonecompleteLib.distLibBasicsMod.TimeUnit) = this()
 }
 
+/* static members */
 @JSImport("timezonecomplete", "Duration")
 @js.native
 object Duration extends js.Object {

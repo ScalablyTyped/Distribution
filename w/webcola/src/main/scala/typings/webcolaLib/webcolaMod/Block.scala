@@ -12,6 +12,7 @@ class Block protected ()
   def this(v: webcolaLib.distSrcVpscMod.Variable) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Block")
 @js.native
 object Block extends js.Object {

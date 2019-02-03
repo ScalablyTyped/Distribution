@@ -97,9 +97,7 @@ object networkingNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.networkingNs.v1Ns.NetworkPolicyList = js.native
     }
     
-    /**
-      * NetworkPolicy describes what network traffic is allowed for a set of Pods
-      */
+    /* static members */
     @js.native
     object NetworkPolicy extends js.Object {
       /**
@@ -122,9 +120,7 @@ object networkingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.networkingNs.v1Ns.NetworkPolicy = js.native
     }
     
-    /**
-      * NetworkPolicyList is a list of NetworkPolicy objects.
-      */
+    /* static members */
     @js.native
     object NetworkPolicyList extends js.Object {
       /**

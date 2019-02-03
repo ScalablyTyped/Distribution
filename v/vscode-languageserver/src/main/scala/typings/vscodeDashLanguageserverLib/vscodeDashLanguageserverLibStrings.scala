@@ -15,8 +15,11 @@ object vscodeDashLanguageserverLibStrings {
   @js.native
   sealed trait plaintext extends js.Object
   
+  @scala.inline
   def features: features = "features".asInstanceOf[features]
+  @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
+  @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
 }
 

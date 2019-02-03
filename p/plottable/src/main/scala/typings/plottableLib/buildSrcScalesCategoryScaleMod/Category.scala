@@ -152,6 +152,7 @@ class Category ()
   override def zoom(magnifyAmount: scala.Double, centerValue: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales/categoryScale", "Category")
 @js.native
 object Category extends js.Object {

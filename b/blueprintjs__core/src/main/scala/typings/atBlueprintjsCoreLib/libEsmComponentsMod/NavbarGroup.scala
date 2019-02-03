@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NavbarGroup ()
   extends atBlueprintjsCoreLib.libEsmComponentsNavbarNavbarGroupMod.NavbarGroup
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "NavbarGroup")
 @js.native
 object NavbarGroup extends js.Object {

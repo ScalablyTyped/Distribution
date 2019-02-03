@@ -13,6 +13,7 @@ class ColorPalette () extends Widget {
   var value: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("photonui.ColorPalette")
 @js.native
 object ColorPalette extends js.Object {

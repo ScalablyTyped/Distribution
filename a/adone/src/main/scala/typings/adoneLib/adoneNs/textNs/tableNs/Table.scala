@@ -15,6 +15,7 @@ class Table ()
   val width: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("adone.text.table.Table")
 @js.native
 object Table extends js.Object {

@@ -16,6 +16,7 @@ abstract class PwmController () extends js.Object {
    /* unmapped type */ var setDesiredFrequency: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Pwm.PwmController")
 @js.native
 object PwmController extends js.Object {

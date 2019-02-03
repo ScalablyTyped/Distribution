@@ -10,5 +10,6 @@ trait GaxiosResponse[T] extends js.Object {
   var data: T
   var headers: Headers
   var status: scala.Double
+  var statusText: java.lang.String
 }
 

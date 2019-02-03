@@ -42,6 +42,7 @@ class SpeechToTextV1 protected () extends js.Object {
   def whenCustomizationReady(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "SpeechToTextV1")
 @js.native
 object SpeechToTextV1 extends js.Object {

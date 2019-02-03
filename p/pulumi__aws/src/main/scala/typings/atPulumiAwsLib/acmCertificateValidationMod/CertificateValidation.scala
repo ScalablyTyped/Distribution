@@ -28,6 +28,7 @@ class CertificateValidation protected ()
   val validationRecordFqdns: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation")
 @js.native
 object CertificateValidation extends js.Object {

@@ -510,6 +510,7 @@ class ProtractorBrowser protected ()
   def waitForAngularEnabled(enabled: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean]): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("protractor/built/browser", "ProtractorBrowser")
 @js.native
 object ProtractorBrowser extends js.Object {

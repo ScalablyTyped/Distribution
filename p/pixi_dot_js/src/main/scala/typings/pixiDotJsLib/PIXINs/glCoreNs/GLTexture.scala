@@ -41,6 +41,7 @@ class GLTexture protected () extends js.Object {
   def uploadData(data: stdLib.ArrayBuffer, width: scala.Double, height: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.glCore.GLTexture")
 @js.native
 object GLTexture extends js.Object {

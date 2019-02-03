@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class KeyValueModel ()
   extends loopbackLib.loopbackMod.lNs.KeyValueModel
 
-/**
-  * Data model for key-value databases.
-  * @class
-  */
+/* static members */
 @JSImport("loopback", "KeyValueModel")
 @js.native
 object KeyValueModel extends js.Object {

@@ -13,6 +13,7 @@ class Linter protected ()
   def this(options: ILinterOptions, program: typescriptLib.typescriptMod.tsNs.Program) = this()
 }
 
+/* static members */
 @JSImport("tslint/lib", "Linter")
 @js.native
 object Linter extends js.Object {

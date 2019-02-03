@@ -55,6 +55,7 @@ class UninterpretedOption ()
   def setStringValue(value: stdLib.Uint8Array): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption")
 @js.native
 object UninterpretedOption extends js.Object {

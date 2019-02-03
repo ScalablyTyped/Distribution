@@ -383,6 +383,7 @@ class TextView protected ()
   def viewportToContentVerticalOffset(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.TextView")
 @js.native
 object TextView extends js.Object {

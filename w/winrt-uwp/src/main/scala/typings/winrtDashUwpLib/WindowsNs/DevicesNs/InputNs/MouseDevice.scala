@@ -28,7 +28,7 @@ abstract class MouseDevice () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Supports the ability to identify and track connected mouse devices. */
+/* static members */
 @JSGlobal("Windows.Devices.Input.MouseDevice")
 @js.native
 object MouseDevice extends js.Object {

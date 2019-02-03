@@ -12,6 +12,7 @@ class Rectangle protected ()
   def this(x: scala.Double, X: scala.Double, y: scala.Double, Y: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

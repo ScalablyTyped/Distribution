@@ -12,6 +12,7 @@ class ManifestLoader protected () extends AbstractLoader {
   def this(loadItem: LoadItem) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.ManifestLoader")
 @js.native
 object ManifestLoader extends js.Object {

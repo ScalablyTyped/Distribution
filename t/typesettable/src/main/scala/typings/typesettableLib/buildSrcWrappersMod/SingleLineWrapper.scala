@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SingleLineWrapper ()
   extends typesettableLib.buildSrcWrappersSingleLineWrapperMod.SingleLineWrapper
 
+/* static members */
 @JSImport("typesettable/build/src/wrappers", "SingleLineWrapper")
 @js.native
 object SingleLineWrapper extends js.Object {

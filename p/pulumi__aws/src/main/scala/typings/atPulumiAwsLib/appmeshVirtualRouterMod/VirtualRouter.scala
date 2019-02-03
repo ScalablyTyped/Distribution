@@ -44,6 +44,7 @@ class VirtualRouter protected ()
   val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_ServiceNames] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh/virtualRouter", "VirtualRouter")
 @js.native
 object VirtualRouter extends js.Object {

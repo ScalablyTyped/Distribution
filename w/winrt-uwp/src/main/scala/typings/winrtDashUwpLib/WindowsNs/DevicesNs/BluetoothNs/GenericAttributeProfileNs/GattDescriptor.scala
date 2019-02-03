@@ -34,7 +34,7 @@ abstract class GattDescriptor () extends js.Object {
   def writeValueAsync(value: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
 }
 
-/** Represents a Descriptor of a GATT Characteristic. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattDescriptor")
 @js.native
 object GattDescriptor extends js.Object {

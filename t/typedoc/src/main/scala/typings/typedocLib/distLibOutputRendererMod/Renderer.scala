@@ -29,6 +29,7 @@ class Renderer ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/renderer", "Renderer")
 @js.native
 object Renderer extends js.Object {

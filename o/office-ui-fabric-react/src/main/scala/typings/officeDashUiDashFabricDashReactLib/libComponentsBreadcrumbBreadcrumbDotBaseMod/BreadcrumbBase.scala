@@ -34,6 +34,7 @@ class BreadcrumbBase protected ()
   def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Breadcrumb/Breadcrumb.base", "BreadcrumbBase")
 @js.native
 object BreadcrumbBase extends js.Object {

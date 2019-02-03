@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ValueTypes () extends js.Object
 
+/* static members */
 @JSGlobal("OData.ValueTypes")
 @js.native
 object ValueTypes extends js.Object {

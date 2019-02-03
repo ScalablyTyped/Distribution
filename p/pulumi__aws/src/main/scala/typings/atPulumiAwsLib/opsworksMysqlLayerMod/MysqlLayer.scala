@@ -93,6 +93,7 @@ class MysqlLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/mysqlLayer", "MysqlLayer")
 @js.native
 object MysqlLayer extends js.Object {

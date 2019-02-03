@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Director ()
   extends wonderDotJsLib.distEs2015CoreDirectorMod.Director
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Director")
 @js.native
 object Director extends js.Object {

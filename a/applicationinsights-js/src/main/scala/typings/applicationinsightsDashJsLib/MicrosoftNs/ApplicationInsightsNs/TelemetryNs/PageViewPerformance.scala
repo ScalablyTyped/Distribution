@@ -40,6 +40,7 @@ class PageViewPerformance protected ()
   def getIsValid(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.PageViewPerformance")
 @js.native
 object PageViewPerformance extends js.Object {

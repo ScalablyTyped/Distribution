@@ -12,6 +12,7 @@ class SingleDrawCommand ()
   var normalMatrix: wonderDotJsLib.distEs2015MathMatrix3Mod.Matrix3 = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/command/SingleDrawCommand", "SingleDrawCommand")
 @js.native
 object SingleDrawCommand extends js.Object {

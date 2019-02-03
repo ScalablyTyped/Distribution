@@ -125,13 +125,7 @@ class Type () extends js.Object {
   def resolveInheritance(): scala.Unit = js.native
 }
 
-//#endregion
-//#region ASP.NET Types
-/**
-* Provides a typing and type-reflection system for ECMAScript (JavaScript) object-oriented programming functionality.
-* Type Class
-* @see {@link http://msdn.microsoft.com/en-us/library/bb397568(v=vs.100).aspx}
-*/
+/* static members */
 @JSGlobal("Type")
 @js.native
 object Type extends js.Object {

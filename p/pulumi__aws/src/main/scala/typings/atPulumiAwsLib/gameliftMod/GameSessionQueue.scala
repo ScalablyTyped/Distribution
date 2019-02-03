@@ -21,6 +21,7 @@ class GameSessionQueue protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.gameliftGameSessionQueueMod.GameSessionQueueArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift", "GameSessionQueue")
 @js.native
 object GameSessionQueue extends js.Object {

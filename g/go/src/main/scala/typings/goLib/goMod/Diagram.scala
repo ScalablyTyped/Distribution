@@ -31,12 +31,7 @@ class Diagram ()
   def this(div: stdLib.HTMLDivElement) = this()
 }
 
-/**
-  * A Diagram is associated with an HTML DIV element. Constructing a Diagram creates
-  * an HTML Canvas element which it places inside of the given DIV element, in addition to several helper divs.
-  * GoJS will manage the contents of this DIV, and the contents should not be modified otherwise,
-  * though the given DIV may be styled (background, border, etc) and positioned as needed.
-  */
+/* static members */
 @JSImport("go", "Diagram")
 @js.native
 object Diagram extends js.Object {

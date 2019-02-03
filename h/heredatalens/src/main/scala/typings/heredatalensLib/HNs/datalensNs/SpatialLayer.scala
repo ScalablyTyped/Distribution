@@ -33,10 +33,7 @@ class SpatialLayer protected ()
   ): scala.Unit = js.native
 }
 
-/**
-  * Renders vector tiles using data-driven styles
-  * This layer binds the spatial data and user data, all provided by the Data Lens REST API. The layer renders geometry features using data-driven styles.
-  */
+/* static members */
 @JSGlobal("H.datalens.SpatialLayer")
 @js.native
 object SpatialLayer extends js.Object {

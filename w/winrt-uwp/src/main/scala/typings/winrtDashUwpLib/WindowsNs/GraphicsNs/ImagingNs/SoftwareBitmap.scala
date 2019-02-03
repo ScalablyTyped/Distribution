@@ -68,7 +68,7 @@ class SoftwareBitmap protected () extends js.Object {
   def lockBuffer(mode: BitmapBufferAccessMode): BitmapBuffer = js.native
 }
 
-/** Represents an uncompressed bitmap. */
+/* static members */
 @JSGlobal("Windows.Graphics.Imaging.SoftwareBitmap")
 @js.native
 object SoftwareBitmap extends js.Object {

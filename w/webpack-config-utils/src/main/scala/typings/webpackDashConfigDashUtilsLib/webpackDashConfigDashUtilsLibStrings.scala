@@ -36,15 +36,25 @@ object webpackDashConfigDashUtilsLibStrings {
   @js.native
   sealed trait test extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def NonEmptyObject: NonEmptyObject = "NonEmptyObject".asInstanceOf[NonEmptyObject]
+  @scala.inline
   def dev: dev = "dev".asInstanceOf[dev]
+  @scala.inline
   def development: development = "development".asInstanceOf[development]
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
   def getIfUtils: getIfUtils = "getIfUtils".asInstanceOf[getIfUtils]
+  @scala.inline
   def prod: prod = "prod".asInstanceOf[prod]
+  @scala.inline
   def production: production = "production".asInstanceOf[production]
+  @scala.inline
   def removeEmpty: removeEmpty = "removeEmpty".asInstanceOf[removeEmpty]
+  @scala.inline
   def test: test = "test".asInstanceOf[test]
 }
 

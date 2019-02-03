@@ -83,9 +83,7 @@ class CubeTexture protected () extends BaseTexture {
   def setReflectionTextureMatrix(value: Matrix): scala.Unit = js.native
 }
 
-/**
-  * Class for creating a cube texture
-  */
+/* static members */
 @JSGlobal("BABYLON.CubeTexture")
 @js.native
 object CubeTexture extends js.Object {

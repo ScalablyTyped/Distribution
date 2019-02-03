@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FindReferenceHelpers () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.FindReferenceHelpers")
 @js.native
 object FindReferenceHelpers extends js.Object {

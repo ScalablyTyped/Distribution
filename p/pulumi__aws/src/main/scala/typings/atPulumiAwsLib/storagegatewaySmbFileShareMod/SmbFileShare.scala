@@ -80,6 +80,7 @@ class SmbFileShare protected ()
   val validUserLists: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/smbFileShare", "SmbFileShare")
 @js.native
 object SmbFileShare extends js.Object {

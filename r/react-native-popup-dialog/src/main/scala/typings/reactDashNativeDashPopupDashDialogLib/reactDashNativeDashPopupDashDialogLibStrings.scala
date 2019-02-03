@@ -27,12 +27,19 @@ object reactDashNativeDashPopupDashDialogLibStrings {
   @js.native
   sealed trait top extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
 }
 

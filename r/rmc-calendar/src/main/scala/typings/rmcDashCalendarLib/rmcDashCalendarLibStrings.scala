@@ -24,11 +24,17 @@ object rmcDashCalendarLibStrings {
   @js.native
   sealed trait xl extends js.Object
   
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def one: one = "one".asInstanceOf[one]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
 }
 

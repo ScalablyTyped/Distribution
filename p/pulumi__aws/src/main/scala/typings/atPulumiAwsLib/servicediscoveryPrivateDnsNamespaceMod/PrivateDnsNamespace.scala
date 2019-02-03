@@ -40,6 +40,7 @@ class PrivateDnsNamespace protected ()
   val vpc: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery/privateDnsNamespace", "PrivateDnsNamespace")
 @js.native
 object PrivateDnsNamespace extends js.Object {

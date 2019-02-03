@@ -12,7 +12,9 @@ object gulpDashFileDashIncludeLibStrings {
   @js.native
   sealed trait `@root` extends js.Object
   
+  @scala.inline
   def `@file`: `@file` = "@file".asInstanceOf[`@file`]
+  @scala.inline
   def `@root`: `@root` = "@root".asInstanceOf[`@root`]
 }
 

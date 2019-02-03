@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class BouncingBehavior ()
   extends babylonjsLib.BABYLONNs.BouncingBehavior
 
-/**
-  * Add a bouncing effect to an ArcRotateCamera when reaching a specified minimum and maximum radius
-  * @see http://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
-  */
+/* static members */
 @JSImport("babylonjs", "BouncingBehavior")
 @js.native
 object BouncingBehavior extends js.Object {

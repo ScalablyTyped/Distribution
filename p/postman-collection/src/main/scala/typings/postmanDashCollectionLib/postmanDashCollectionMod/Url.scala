@@ -40,6 +40,7 @@ class Url protected () extends PropertyBase[UrlDefinition] {
   def update(url: UrlDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Url")
 @js.native
 object Url extends js.Object {

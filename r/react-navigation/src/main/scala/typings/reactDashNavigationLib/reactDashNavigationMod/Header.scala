@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Header ()
   extends reactLib.reactMod.Component[HeaderProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-navigation", "Header")
 @js.native
 object Header extends js.Object {

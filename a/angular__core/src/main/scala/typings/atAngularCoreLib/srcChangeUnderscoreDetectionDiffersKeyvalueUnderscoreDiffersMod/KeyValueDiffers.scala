@@ -16,6 +16,7 @@ class KeyValueDiffers protected () extends js.Object {
   def find(kv: js.Any): KeyValueDifferFactory = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/change_detection/differs/keyvalue_differs", "KeyValueDiffers")
 @js.native
 object KeyValueDiffers extends js.Object {

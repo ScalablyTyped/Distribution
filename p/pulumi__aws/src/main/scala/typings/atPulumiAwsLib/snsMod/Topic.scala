@@ -21,6 +21,7 @@ class Topic protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.snsTopicMod.TopicArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns", "Topic")
 @js.native
 object Topic extends js.Object {

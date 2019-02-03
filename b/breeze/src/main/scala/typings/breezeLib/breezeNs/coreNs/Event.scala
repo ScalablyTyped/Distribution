@@ -21,6 +21,7 @@ class Event protected () extends js.Object {
   def unsubscribe(unsubKey: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.core.Event")
 @js.native
 object Event extends js.Object {

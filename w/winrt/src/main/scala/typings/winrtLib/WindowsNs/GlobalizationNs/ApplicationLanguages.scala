@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApplicationLanguages () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Globalization.ApplicationLanguages")
 @js.native
 object ApplicationLanguages extends js.Object {

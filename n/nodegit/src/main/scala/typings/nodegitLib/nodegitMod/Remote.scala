@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Remote ()
   extends nodegitLib.remoteMod.Remote
 
+/* static members */
 @JSImport("nodegit", "Remote")
 @js.native
 object Remote extends js.Object {

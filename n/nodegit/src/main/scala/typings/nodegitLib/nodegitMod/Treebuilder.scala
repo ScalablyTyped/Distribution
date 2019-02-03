@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Treebuilder ()
   extends nodegitLib.treeDashBuilderMod.Treebuilder
 
+/* static members */
 @JSImport("nodegit", "Treebuilder")
 @js.native
 object Treebuilder extends js.Object {

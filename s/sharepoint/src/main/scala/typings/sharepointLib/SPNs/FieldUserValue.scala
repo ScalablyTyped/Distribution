@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FieldUserValue () extends FieldLookupValue
 
+/* static members */
 @JSGlobal("SP.FieldUserValue")
 @js.native
 object FieldUserValue extends js.Object {

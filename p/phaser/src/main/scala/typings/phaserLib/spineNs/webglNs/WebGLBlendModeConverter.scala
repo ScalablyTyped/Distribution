@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebGLBlendModeConverter () extends js.Object
 
+/* static members */
 @JSGlobal("spine.webgl.WebGLBlendModeConverter")
 @js.native
 object WebGLBlendModeConverter extends js.Object {

@@ -47,9 +47,7 @@ class AsyncLoop protected () extends js.Object {
   def executeNext(): scala.Unit = js.native
 }
 
-/**
-  * An implementation of a loop for asynchronous functions.
-  */
+/* static members */
 @JSGlobal("BABYLON.AsyncLoop")
 @js.native
 object AsyncLoop extends js.Object {

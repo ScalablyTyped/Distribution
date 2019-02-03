@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DownloadsFolder () extends js.Object
 
-/** Creates files and folders inside the Downloads folder. */
+/* static members */
 @JSGlobal("Windows.Storage.DownloadsFolder")
 @js.native
 object DownloadsFolder extends js.Object {

@@ -246,6 +246,7 @@ class b2World protected () extends js.Object {
   def Validate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Dynamics.b2World")
 @js.native
 object b2World extends js.Object {

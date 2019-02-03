@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Timestamp ()
   extends bsonLib.bsonMod.Timestamp
 
+/* static members */
 @JSImport("mongodb", "Timestamp")
 @js.native
 object Timestamp extends js.Object {

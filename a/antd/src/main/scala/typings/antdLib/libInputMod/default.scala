@@ -12,6 +12,7 @@ class default protected ()
   def this(props: antdLib.libInputInputMod.InputProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/input", JSImport.Default)
 @js.native
 object default extends js.Object {

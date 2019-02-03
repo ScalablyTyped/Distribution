@@ -24,11 +24,17 @@ object jqueryDashDrawerLibStrings {
   @js.native
   sealed trait toggle extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def drawerDOTclosed: drawerDOTclosed = "drawer.closed".asInstanceOf[drawerDOTclosed]
+  @scala.inline
   def drawerDOTopened: drawerDOTopened = "drawer.opened".asInstanceOf[drawerDOTopened]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
 }
 

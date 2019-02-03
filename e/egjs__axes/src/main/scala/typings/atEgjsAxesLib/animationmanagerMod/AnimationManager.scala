@@ -40,6 +40,7 @@ class AnimationManager protected () extends js.Object {
   def setTo(pos: atEgjsAxesLib.axismanagerMod.Axis, duration: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("@egjs/axes/AnimationManager", "AnimationManager")
 @js.native
 object AnimationManager extends js.Object {

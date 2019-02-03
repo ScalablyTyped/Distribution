@@ -51,6 +51,7 @@ object cloudfrontNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloudfrontPublicKeyMod.PublicKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Distribution extends js.Object {
     /**
@@ -75,6 +76,7 @@ object cloudfrontNs extends js.Object {
     ): atPulumiAwsLib.cloudfrontDistributionMod.Distribution = js.native
   }
   
+  /* static members */
   @js.native
   object OriginAccessIdentity extends js.Object {
     /**
@@ -99,6 +101,7 @@ object cloudfrontNs extends js.Object {
     ): atPulumiAwsLib.cloudfrontOriginAccessIdentityMod.OriginAccessIdentity = js.native
   }
   
+  /* static members */
   @js.native
   object PublicKey extends js.Object {
     /**

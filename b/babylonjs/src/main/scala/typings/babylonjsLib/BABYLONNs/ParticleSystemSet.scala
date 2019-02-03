@@ -46,9 +46,7 @@ class ParticleSystemSet () extends IDisposable {
   def start(emitter: AbstractMesh): scala.Unit = js.native
 }
 
-/**
-  * Represents a set of particle systems working together to create a specific effect
-  */
+/* static members */
 @JSGlobal("BABYLON.ParticleSystemSet")
 @js.native
 object ParticleSystemSet extends js.Object {

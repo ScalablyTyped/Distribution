@@ -16,6 +16,7 @@ class FunctionFactory () extends js.Object {
   def unregister(name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "FunctionFactory")
 @js.native
 object FunctionFactory extends js.Object {

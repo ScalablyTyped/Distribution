@@ -23,6 +23,7 @@ class Matrix ()
   def toString(digits: scala.Double, separator: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.geometry.Matrix")
 @js.native
 object Matrix extends js.Object {

@@ -18,9 +18,13 @@ object ternLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
+  @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

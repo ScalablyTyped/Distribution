@@ -13,6 +13,7 @@ class UUID protected ()
   def this(uuid: nodeLib.Buffer) = this()
 }
 
+/* static members */
 @JSImport("builder-util-runtime", "UUID")
 @js.native
 object UUID extends js.Object {

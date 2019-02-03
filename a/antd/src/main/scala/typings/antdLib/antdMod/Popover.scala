@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Popover ()
   extends antdLib.libPopoverMod.default
 
+/* static members */
 @JSImport("antd", "Popover")
 @js.native
 object Popover extends js.Object {

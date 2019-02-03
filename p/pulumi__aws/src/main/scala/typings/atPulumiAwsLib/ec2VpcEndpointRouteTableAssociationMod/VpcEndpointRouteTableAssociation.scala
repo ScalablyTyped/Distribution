@@ -28,6 +28,7 @@ class VpcEndpointRouteTableAssociation protected ()
   val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcEndpointRouteTableAssociation", "VpcEndpointRouteTableAssociation")
 @js.native
 object VpcEndpointRouteTableAssociation extends js.Object {

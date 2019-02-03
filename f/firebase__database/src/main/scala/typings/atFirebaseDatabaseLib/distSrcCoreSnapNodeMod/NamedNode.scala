@@ -15,6 +15,7 @@ class NamedNode protected () extends js.Object {
   var node: Node = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/snap/Node", "NamedNode")
 @js.native
 object NamedNode extends js.Object {

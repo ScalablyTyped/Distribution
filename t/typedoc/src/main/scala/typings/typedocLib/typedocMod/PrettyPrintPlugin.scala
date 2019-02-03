@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PrettyPrintPlugin ()
   extends typedocLib.distLibOutputPluginsMod.PrettyPrintPlugin
 
+/* static members */
 @JSImport("typedoc", "PrettyPrintPlugin")
 @js.native
 object PrettyPrintPlugin extends js.Object {

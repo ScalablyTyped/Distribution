@@ -20,6 +20,7 @@ class VpcEndpointService protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpcEndpointServiceMod.VpcEndpointServiceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpcEndpointService")
 @js.native
 object VpcEndpointService extends js.Object {

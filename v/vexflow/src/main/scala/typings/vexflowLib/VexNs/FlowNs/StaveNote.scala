@@ -51,6 +51,7 @@ class StaveNote protected () extends StemmableNote {
   def setStyle(style: vexflowLib.Anon_FillStyle): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.StaveNote")
 @js.native
 object StaveNote extends js.Object {

@@ -57,6 +57,7 @@ class Document protected () extends js.Object {
   ): Document = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Document")
 @js.native
 object Document extends js.Object {

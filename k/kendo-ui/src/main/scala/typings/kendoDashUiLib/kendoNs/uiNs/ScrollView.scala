@@ -23,6 +23,7 @@ class ScrollView protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.DataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ScrollView")
 @js.native
 object ScrollView extends js.Object {

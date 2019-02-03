@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCFloatingLabelFoundation ()
   extends atMaterialFloatingDashLabelLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/floating-label", "MDCFloatingLabelFoundation")
 @js.native
 object MDCFloatingLabelFoundation extends js.Object {

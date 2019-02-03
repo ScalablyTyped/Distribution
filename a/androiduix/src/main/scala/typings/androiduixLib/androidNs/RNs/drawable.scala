@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class drawable () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.drawable")
 @js.native
 object drawable extends js.Object {

@@ -38,6 +38,7 @@ class Vector3D protected ()
   def unit(): Vector3D = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Vector3D")
 @js.native
 object Vector3D extends js.Object {

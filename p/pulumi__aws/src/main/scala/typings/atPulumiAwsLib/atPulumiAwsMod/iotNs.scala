@@ -114,6 +114,7 @@ object iotNs extends js.Object {
     args: atPulumiAwsLib.iotGetEndpointMod.GetEndpointArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.iotGetEndpointMod.GetEndpointResult] = js.native
+  /* static members */
   @js.native
   object Certificate extends js.Object {
     /**
@@ -138,6 +139,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotCertificateMod.Certificate = js.native
   }
   
+  /* static members */
   @js.native
   object Policy extends js.Object {
     /**
@@ -162,6 +164,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotPolicyMod.Policy = js.native
   }
   
+  /* static members */
   @js.native
   object PolicyAttachment extends js.Object {
     /**
@@ -186,6 +189,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotPolicyAttachmentMod.PolicyAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object Thing extends js.Object {
     /**
@@ -210,6 +214,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotThingMod.Thing = js.native
   }
   
+  /* static members */
   @js.native
   object ThingPrincipalAttachment extends js.Object {
     /**
@@ -234,6 +239,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotThingPrincipalAttachmentMod.ThingPrincipalAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object ThingType extends js.Object {
     /**
@@ -258,6 +264,7 @@ object iotNs extends js.Object {
     ): atPulumiAwsLib.iotThingTypeMod.ThingType = js.native
   }
   
+  /* static members */
   @js.native
   object TopicRule extends js.Object {
     /**

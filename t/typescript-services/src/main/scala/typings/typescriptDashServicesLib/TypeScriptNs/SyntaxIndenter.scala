@@ -20,6 +20,7 @@ class SyntaxIndenter protected () extends SyntaxRewriter {
   /* private */ def indentWhitespace(trivia: js.Any, indentThisTrivia: js.Any, result: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SyntaxIndenter")
 @js.native
 object SyntaxIndenter extends js.Object {

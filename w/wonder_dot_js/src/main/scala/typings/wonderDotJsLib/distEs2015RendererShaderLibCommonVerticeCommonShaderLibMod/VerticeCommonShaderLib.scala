@@ -20,6 +20,7 @@ class VerticeCommonShaderLib ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/VerticeCommonShaderLib", "VerticeCommonShaderLib")
 @js.native
 object VerticeCommonShaderLib extends js.Object {

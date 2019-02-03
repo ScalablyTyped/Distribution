@@ -17,6 +17,7 @@ class ExpandableListPosition () extends js.Object {
   /* private */ def resetState(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ExpandableListPosition")
 @js.native
 object ExpandableListPosition extends js.Object {

@@ -30,13 +30,21 @@ object reactDashMapDashGlLibStrings {
   @js.native
   sealed trait `top-right` extends js.Object
   
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
 }
 

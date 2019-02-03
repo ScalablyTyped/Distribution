@@ -12,6 +12,7 @@ class TabBarItem protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "TabBarItem")
 @js.native
 object TabBarItem extends js.Object {

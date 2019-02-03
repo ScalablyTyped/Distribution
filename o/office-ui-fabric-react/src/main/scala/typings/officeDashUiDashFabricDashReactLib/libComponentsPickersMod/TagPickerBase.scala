@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TagPickerBase ()
   extends officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerMod.TagPickerBase
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/pickers", "TagPickerBase")
 @js.native
 object TagPickerBase extends js.Object {

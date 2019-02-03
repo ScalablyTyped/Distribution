@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends reactDashDayDashPickerLib.typesDayPickerMod.default
 
+/* static members */
 @JSImport("react-day-picker", JSImport.Default)
 @js.native
 object default extends js.Object {

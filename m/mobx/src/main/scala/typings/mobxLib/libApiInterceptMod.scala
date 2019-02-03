@@ -18,6 +18,10 @@ object libApiInterceptMod extends js.Object {
       mobxLib.libTypesObservablearrayMod.IArrayWillChange[T] | mobxLib.libTypesObservablearrayMod.IArrayWillSplice[T]
     ]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def intercept[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[mobxLib.libTypesObservablesetMod.ISetWillChange[V]]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def intercept[T](
     value: mobxLib.libTypesObservablevalueMod.IObservableValue[T],
     handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[mobxLib.libTypesObservablevalueMod.IValueWillChange[T]]

@@ -67,7 +67,7 @@ abstract class BitmapEncoder () extends js.Object {
   def setSoftwareBitmap(bitmap: SoftwareBitmap): scala.Unit = js.native
 }
 
-/** Contains methods to create, edit and save images. */
+/* static members */
 @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder")
 @js.native
 object BitmapEncoder extends js.Object {

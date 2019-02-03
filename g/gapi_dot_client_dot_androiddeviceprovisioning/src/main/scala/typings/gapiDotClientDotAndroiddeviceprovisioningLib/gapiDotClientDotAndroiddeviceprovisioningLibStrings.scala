@@ -12,7 +12,9 @@ object gapiDotClientDotAndroiddeviceprovisioningLibStrings {
   @js.native
   sealed trait v1 extends js.Object
   
+  @scala.inline
   def androiddeviceprovisioning: androiddeviceprovisioning = "androiddeviceprovisioning".asInstanceOf[androiddeviceprovisioning]
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
 }
 

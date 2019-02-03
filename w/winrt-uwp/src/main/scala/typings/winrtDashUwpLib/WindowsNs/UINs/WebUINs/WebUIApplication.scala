@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebUIApplication () extends js.Object
 
-/** Enables an app to receive notifications related to the lifetime of the app. */
+/* static members */
 @JSGlobal("Windows.UI.WebUI.WebUIApplication")
 @js.native
 object WebUIApplication extends js.Object {

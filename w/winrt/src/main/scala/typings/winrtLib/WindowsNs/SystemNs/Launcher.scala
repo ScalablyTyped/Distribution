@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Launcher () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.Launcher")
 @js.native
 object Launcher extends js.Object {

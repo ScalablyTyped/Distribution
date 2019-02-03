@@ -31,6 +31,7 @@ class Widget () extends Base {
   def unparent(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("photonui.Widget")
 @js.native
 object Widget extends js.Object {

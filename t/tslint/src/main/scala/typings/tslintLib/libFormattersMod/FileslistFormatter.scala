@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FileslistFormatter ()
   extends tslintLib.libFormattersFileslistFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "FileslistFormatter")
 @js.native
 object FileslistFormatter extends js.Object {

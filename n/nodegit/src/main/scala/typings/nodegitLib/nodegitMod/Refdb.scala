@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Refdb ()
   extends nodegitLib.refDashDbMod.Refdb
 
+/* static members */
 @JSImport("nodegit", "Refdb")
 @js.native
 object Refdb extends js.Object {

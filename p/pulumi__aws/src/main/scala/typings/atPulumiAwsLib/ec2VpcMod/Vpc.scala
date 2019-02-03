@@ -92,6 +92,7 @@ class Vpc protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpc", "Vpc")
 @js.native
 object Vpc extends js.Object {

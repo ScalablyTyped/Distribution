@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends BlockBlot
 
+/* static members */
 @JSImport("parchment/dist/src/blot/block", JSImport.Default)
 @js.native
 object default extends js.Object {

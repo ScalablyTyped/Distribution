@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ServerCredentials () extends js.Object
 
+/* static members */
 @JSImport("grpc", "ServerCredentials")
 @js.native
 object ServerCredentials extends js.Object {

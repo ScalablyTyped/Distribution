@@ -30,13 +30,21 @@ object minipassLibStrings {
   @js.native
   sealed trait resume extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def drain: drain = "drain".asInstanceOf[drain]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
+  @scala.inline
   def prefinish: prefinish = "prefinish".asInstanceOf[prefinish]
+  @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
   def resume: resume = "resume".asInstanceOf[resume]
 }
 

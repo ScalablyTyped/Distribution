@@ -164,6 +164,7 @@ class WebApi protected () extends js.Object {
   ] = js.native
 }
 
+/* static members */
 @JSImport("vso-node-api/WebApi", "WebApi")
 @js.native
 object WebApi extends js.Object {

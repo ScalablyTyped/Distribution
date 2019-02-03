@@ -86,6 +86,7 @@ class Grid protected () extends Widget {
   def unlockColumn(column: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Grid")
 @js.native
 object Grid extends js.Object {

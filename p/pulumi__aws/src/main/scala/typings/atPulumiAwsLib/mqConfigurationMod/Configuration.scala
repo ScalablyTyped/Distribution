@@ -50,6 +50,7 @@ class Configuration protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mq/configuration", "Configuration")
 @js.native
 object Configuration extends js.Object {

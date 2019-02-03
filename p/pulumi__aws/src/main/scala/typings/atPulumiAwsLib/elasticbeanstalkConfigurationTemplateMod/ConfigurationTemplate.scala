@@ -47,6 +47,7 @@ class ConfigurationTemplate protected ()
   val solutionStackName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk/configurationTemplate", "ConfigurationTemplate")
 @js.native
 object ConfigurationTemplate extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Collapse
 
+/* static members */
 @JSImport("antd/lib/collapse/Collapse", JSImport.Default)
 @js.native
 object default extends js.Object {

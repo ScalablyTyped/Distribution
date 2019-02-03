@@ -439,6 +439,7 @@ class namespaced protected () extends Victor {
   override def zero(): Victor = js.native
 }
 
+/* static members */
 @JSImport("victor", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

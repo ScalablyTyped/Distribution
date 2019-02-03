@@ -46,6 +46,7 @@ class Timestamp protected () extends js.Object {
   def toMillis(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("@firebase/firestore-types", "Timestamp")
 @js.native
 object Timestamp extends js.Object {

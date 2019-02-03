@@ -539,9 +539,7 @@ class KiiGroup () extends js.Object {
   def topicWithName(topicName: java.lang.String): KiiTopic = js.native
 }
 
-/**
-  * Represents a KiiGroup object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiGroup")
 @js.native
 object KiiGroup extends js.Object {

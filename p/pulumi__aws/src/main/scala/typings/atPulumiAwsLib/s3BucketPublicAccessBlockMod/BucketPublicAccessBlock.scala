@@ -45,6 +45,7 @@ class BucketPublicAccessBlock protected ()
   val restrictPublicBuckets: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucketPublicAccessBlock", "BucketPublicAccessBlock")
 @js.native
 object BucketPublicAccessBlock extends js.Object {

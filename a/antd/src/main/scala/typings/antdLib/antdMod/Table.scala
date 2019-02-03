@@ -12,6 +12,7 @@ class Table[T] protected ()
   def this(props: antdLib.libTableInterfaceMod.TableProps[T]) = this()
 }
 
+/* static members */
 @JSImport("antd", "Table")
 @js.native
 object Table extends js.Object {

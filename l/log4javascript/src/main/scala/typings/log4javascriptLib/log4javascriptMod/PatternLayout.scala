@@ -15,6 +15,7 @@ class PatternLayout protected () extends Layout {
   def this(pattern: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("log4javascript", "PatternLayout")
 @js.native
 object PatternLayout extends js.Object {

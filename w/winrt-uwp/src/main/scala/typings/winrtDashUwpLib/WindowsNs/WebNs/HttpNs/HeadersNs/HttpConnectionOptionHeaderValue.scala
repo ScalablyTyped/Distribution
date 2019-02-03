@@ -18,7 +18,7 @@ class HttpConnectionOptionHeaderValue protected () extends js.Object {
   var token: java.lang.String = js.native
 }
 
-/** Represents connection information used in the Connection HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpConnectionOptionHeaderValue")
 @js.native
 object HttpConnectionOptionHeaderValue extends js.Object {

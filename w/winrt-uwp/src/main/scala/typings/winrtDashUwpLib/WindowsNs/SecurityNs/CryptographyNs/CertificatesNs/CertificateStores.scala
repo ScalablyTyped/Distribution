@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CertificateStores () extends js.Object
 
-/** Represents a collection of certificate stores. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateStores")
 @js.native
 object CertificateStores extends js.Object {

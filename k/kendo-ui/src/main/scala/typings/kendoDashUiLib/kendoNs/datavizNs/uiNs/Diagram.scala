@@ -79,6 +79,7 @@ class Diagram protected ()
   def zoom(zoom: scala.Double, point: kendoDashUiLib.kendoNs.datavizNs.diagramNs.Point): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.Diagram")
 @js.native
 object Diagram extends js.Object {

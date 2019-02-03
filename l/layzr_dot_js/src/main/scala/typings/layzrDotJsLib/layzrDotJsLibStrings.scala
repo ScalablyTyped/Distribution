@@ -12,7 +12,9 @@ object layzrDotJsLibStrings {
   @js.native
   sealed trait `src:before` extends js.Object
   
+  @scala.inline
   def `src:after`: `src:after` = "src:after".asInstanceOf[`src:after`]
+  @scala.inline
   def `src:before`: `src:before` = "src:before".asInstanceOf[`src:before`]
 }
 

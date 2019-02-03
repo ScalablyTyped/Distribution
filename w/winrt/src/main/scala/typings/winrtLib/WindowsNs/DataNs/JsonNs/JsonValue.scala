@@ -24,6 +24,7 @@ class JsonValue () extends IJsonValue {
   override def stringify(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Data.Json.JsonValue")
 @js.native
 object JsonValue extends js.Object {

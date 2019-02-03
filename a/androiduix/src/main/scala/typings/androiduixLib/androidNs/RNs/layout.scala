@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class layout () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.layout")
 @js.native
 object layout extends js.Object {

@@ -21,6 +21,7 @@ class Repository protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ecrRepositoryMod.RepositoryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecr", "Repository")
 @js.native
 object Repository extends js.Object {

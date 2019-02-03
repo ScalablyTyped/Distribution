@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TransformSystem () extends js.Object
 
+/* static members */
 @JSImport("famous/core", "TransformSystem")
 @js.native
 object TransformSystem extends js.Object {

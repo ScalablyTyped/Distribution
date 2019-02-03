@@ -24,6 +24,7 @@ class Plane protected ()
   def splitPolygon(polygon: Polygon): openjscadLib.Anon_Back = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Plane")
 @js.native
 object Plane extends js.Object {

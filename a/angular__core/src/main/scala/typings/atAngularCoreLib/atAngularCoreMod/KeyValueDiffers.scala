@@ -14,6 +14,7 @@ class KeyValueDiffers protected ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("@angular/core", "KeyValueDiffers")
 @js.native
 object KeyValueDiffers extends js.Object {

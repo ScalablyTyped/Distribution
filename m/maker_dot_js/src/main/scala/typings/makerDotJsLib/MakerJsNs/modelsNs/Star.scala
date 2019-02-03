@@ -16,6 +16,7 @@ class Star protected ()
   var paths_Star: makerDotJsLib.MakerJsNs.IPathMap = js.native
 }
 
+/* static members */
 @JSGlobal("MakerJs.models.Star")
 @js.native
 object Star extends js.Object {

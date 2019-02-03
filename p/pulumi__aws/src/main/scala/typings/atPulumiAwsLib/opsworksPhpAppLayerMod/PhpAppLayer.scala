@@ -85,6 +85,7 @@ class PhpAppLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/phpAppLayer", "PhpAppLayer")
 @js.native
 object PhpAppLayer extends js.Object {

@@ -15,6 +15,7 @@ class FormattingOptions protected () extends js.Object {
   var useTabs: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("FormattingOptions")
 @js.native
 object FormattingOptions extends js.Object {

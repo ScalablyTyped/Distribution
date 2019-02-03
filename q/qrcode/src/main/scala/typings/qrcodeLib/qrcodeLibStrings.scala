@@ -57,22 +57,39 @@ object qrcodeLibStrings {
   @js.native
   sealed trait utf8 extends js.Object
   
+  @scala.inline
   def H: H = "H".asInstanceOf[H]
+  @scala.inline
   def L: L = "L".asInstanceOf[L]
+  @scala.inline
   def M: M = "M".asInstanceOf[M]
+  @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
+  @scala.inline
   def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def `image/jpeg`: `image/jpeg` = "image/jpeg".asInstanceOf[`image/jpeg`]
+  @scala.inline
   def `image/png`: `image/png` = "image/png".asInstanceOf[`image/png`]
+  @scala.inline
   def `image/webp`: `image/webp` = "image/webp".asInstanceOf[`image/webp`]
+  @scala.inline
   def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def numeric: numeric = "numeric".asInstanceOf[numeric]
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
+  @scala.inline
   def quartile: quartile = "quartile".asInstanceOf[quartile]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
   def terminal: terminal = "terminal".asInstanceOf[terminal]
+  @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
 

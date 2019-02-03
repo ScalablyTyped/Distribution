@@ -53,6 +53,7 @@ class Trace () extends ITrace {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "Trace")
 @js.native
 object Trace extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Range ()
   extends Component[js.UndefOr[scala.Nothing]]
 
+/* static members */
 @JSGlobal("M.Range")
 @js.native
 object Range extends js.Object {

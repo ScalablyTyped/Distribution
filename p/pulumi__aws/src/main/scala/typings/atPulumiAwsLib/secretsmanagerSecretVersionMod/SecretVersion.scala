@@ -44,6 +44,7 @@ class SecretVersion protected ()
   val versionStages: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/secretsmanager/secretVersion", "SecretVersion")
 @js.native
 object SecretVersion extends js.Object {

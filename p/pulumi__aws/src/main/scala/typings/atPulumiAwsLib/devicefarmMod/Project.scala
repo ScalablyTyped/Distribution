@@ -21,6 +21,7 @@ class Project protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.devicefarmProjectMod.ProjectArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/devicefarm", "Project")
 @js.native
 object Project extends js.Object {

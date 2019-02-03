@@ -12,6 +12,7 @@ class CircleGeometry protected ()
   def this(options: cesiumLib.Anon_Center) = this()
 }
 
+/* static members */
 @JSImport("cesium", "CircleGeometry")
 @js.native
 object CircleGeometry extends js.Object {

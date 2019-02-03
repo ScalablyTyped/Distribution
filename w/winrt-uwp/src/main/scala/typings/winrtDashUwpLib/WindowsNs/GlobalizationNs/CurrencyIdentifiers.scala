@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CurrencyIdentifiers () extends js.Object
 
-/** Contains the currency identifiers for the supported currencies, as static properties. */
+/* static members */
 @JSGlobal("Windows.Globalization.CurrencyIdentifiers")
 @js.native
 object CurrencyIdentifiers extends js.Object {

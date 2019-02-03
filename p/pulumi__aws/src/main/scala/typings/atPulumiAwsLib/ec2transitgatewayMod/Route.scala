@@ -20,6 +20,7 @@ class Route protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayRouteMod.RouteArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway", "Route")
 @js.native
 object Route extends js.Object {

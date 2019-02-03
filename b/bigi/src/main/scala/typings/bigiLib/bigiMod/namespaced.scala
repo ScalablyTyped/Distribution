@@ -11,6 +11,7 @@ class namespaced protected () extends bigi {
   def this(a: js.Any, b: js.Any, c: js.Any) = this()
 }
 
+/* static members */
 @JSImport("bigi", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

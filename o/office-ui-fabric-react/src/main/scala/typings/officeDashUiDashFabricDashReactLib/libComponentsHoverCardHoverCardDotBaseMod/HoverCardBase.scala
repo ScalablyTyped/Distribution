@@ -34,6 +34,7 @@ class HoverCardBase protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/HoverCard/HoverCard.base", "HoverCardBase")
 @js.native
 object HoverCardBase extends js.Object {

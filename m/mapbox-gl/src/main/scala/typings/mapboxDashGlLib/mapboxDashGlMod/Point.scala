@@ -50,6 +50,7 @@ class Point protected ()
   override def unit(): mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.Point = js.native
 }
 
+/* static members */
 @JSImport("mapbox-gl", "Point")
 @js.native
 object Point extends js.Object {

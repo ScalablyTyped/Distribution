@@ -33,6 +33,7 @@ class ProgressBar protected () extends Widget {
   def getValue(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ProgressBar")
 @js.native
 object ProgressBar extends js.Object {

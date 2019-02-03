@@ -12,6 +12,7 @@ class GoogleEarthEnterpriseTerrainProvider protected ()
   def this(options: cesiumLib.Anon_CreditEllipsoidMetadataUrl) = this()
 }
 
+/* static members */
 @JSImport("cesium", "GoogleEarthEnterpriseTerrainProvider")
 @js.native
 object GoogleEarthEnterpriseTerrainProvider extends js.Object {

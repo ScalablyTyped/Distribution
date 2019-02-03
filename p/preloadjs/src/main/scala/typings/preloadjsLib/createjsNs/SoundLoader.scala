@@ -11,6 +11,7 @@ class SoundLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object, preferXHR: scala.Boolean) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.SoundLoader")
 @js.native
 object SoundLoader extends js.Object {

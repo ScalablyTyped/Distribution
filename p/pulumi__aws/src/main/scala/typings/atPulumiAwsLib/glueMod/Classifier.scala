@@ -21,6 +21,7 @@ class Classifier protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueClassifierMod.ClassifierArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "Classifier")
 @js.native
 object Classifier extends js.Object {

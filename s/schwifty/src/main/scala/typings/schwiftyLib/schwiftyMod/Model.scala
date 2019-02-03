@@ -12,6 +12,7 @@ class Model ()
   var joiSchema: joiLib.joiMod.Schema = js.native
 }
 
+/* static members */
 @JSImport("schwifty", "Model")
 @js.native
 object Model extends js.Object {

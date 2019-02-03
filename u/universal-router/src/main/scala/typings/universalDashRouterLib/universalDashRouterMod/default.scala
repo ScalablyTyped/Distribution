@@ -14,6 +14,7 @@ class default[C /* <: Context */, R] protected () extends UniversalRouter[C, R] 
   def this(routes: Routes[C, R], options: Options[C, _]) = this()
 }
 
+/* static members */
 @JSImport("universal-router", JSImport.Default)
 @js.native
 object default extends js.Object {

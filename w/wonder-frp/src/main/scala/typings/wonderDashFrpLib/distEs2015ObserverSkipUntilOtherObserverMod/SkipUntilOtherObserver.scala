@@ -15,6 +15,7 @@ class SkipUntilOtherObserver protected ()
   var otherDisposable: wonderDashFrpLib.distEs2015DisposableIDisposableMod.IDisposable = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/SkipUntilOtherObserver", "SkipUntilOtherObserver")
 @js.native
 object SkipUntilOtherObserver extends js.Object {

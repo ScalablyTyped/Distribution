@@ -23,6 +23,7 @@ class Tabs () extends Component[TabsOptions] {
   def updateTabIndicator(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Tabs")
 @js.native
 object Tabs extends js.Object {

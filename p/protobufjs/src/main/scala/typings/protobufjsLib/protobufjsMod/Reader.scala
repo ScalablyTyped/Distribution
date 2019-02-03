@@ -109,6 +109,7 @@ class Reader protected () extends js.Object {
   def uint64(): Long = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Reader")
 @js.native
 object Reader extends js.Object {

@@ -610,6 +610,7 @@ object coreNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[atUirouterCoreLib.libParamsParamMod.DefType with scala.Double] = js.native
   }
   
+  /* static members */
   @js.native
   object Glob extends js.Object {
     /** Returns a glob from the string, or null if the string isn't Glob-like */
@@ -618,6 +619,7 @@ object coreNs extends js.Object {
     def is(text: java.lang.String): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Param extends js.Object {
     /**
@@ -670,6 +672,7 @@ object coreNs extends js.Object {
     ): atUirouterCoreLib.libParamsInterfaceMod.RawParams = js.native
   }
   
+  /* static members */
   @js.native
   object ParamTypes extends js.Object {
     /**
@@ -825,6 +828,7 @@ object coreNs extends js.Object {
     var string: atUirouterCoreLib.libParamsInterfaceMod.ParamTypeDefinition = js.native
   }
   
+  /* static members */
   @js.native
   object PathNode extends js.Object {
     /**
@@ -834,6 +838,7 @@ object coreNs extends js.Object {
     def clone(node: atUirouterCoreLib.libPathPathNodeMod.PathNode): atUirouterCoreLib.libPathPathNodeMod.PathNode = js.native
   }
   
+  /* static members */
   @js.native
   object PathUtils extends js.Object {
     /**
@@ -956,6 +961,7 @@ object coreNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[atUirouterCoreLib.libTransitionRejectFactoryMod.RejectType with scala.Double] = js.native
   }
   
+  /* static members */
   @js.native
   object Rejection extends js.Object {
     /** Returns a Rejection due to aborted transition */
@@ -994,11 +1000,13 @@ object coreNs extends js.Object {
     def superseded(detail: js.Any, options: js.Any): atUirouterCoreLib.libTransitionRejectFactoryMod.Rejection = js.native
   }
   
+  /* static members */
   @js.native
   object Resolvable extends js.Object {
     def fromData(token: js.Any, data: js.Any): atUirouterCoreLib.libResolveResolvableMod.Resolvable = js.native
   }
   
+  /* static members */
   @js.native
   object StateObject extends js.Object {
     /**
@@ -1016,18 +1024,21 @@ object coreNs extends js.Object {
     def isStateClass(stateDecl: atUirouterCoreLib.libStateInterfaceMod._StateDeclaration): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object TargetState extends js.Object {
     /** Returns true if the object has a state property that might be a state or state name */
     def isDef(obj: js.Any): /* is @uirouter/core.@uirouter/core/lib/state/interface.TargetStateDef */ scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Transition extends js.Object {
     /** @hidden */
     var diToken: atUirouterCoreLib.Anon_DiToken = js.native
   }
   
+  /* static members */
   @js.native
   object TransitionHook extends js.Object {
     /**
@@ -1136,6 +1147,7 @@ object coreNs extends js.Object {
       ] = js.native
   }
   
+  /* static members */
   @js.native
   object UrlMatcher extends js.Object {
     /** @hidden */
@@ -1161,11 +1173,13 @@ object coreNs extends js.Object {
     def queryParams(matcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher): js.Array[atUirouterCoreLib.libParamsParamMod.Param] = js.native
   }
   
+  /* static members */
   @js.native
   object UrlRuleFactory extends js.Object {
     def isUrlRule(obj: js.Any): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object ViewService extends js.Object {
     /**

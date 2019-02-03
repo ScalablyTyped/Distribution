@@ -13,6 +13,7 @@ class TakeUntilObserver protected ()
   var _prevObserver: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/TakeUntilObserver", "TakeUntilObserver")
 @js.native
 object TakeUntilObserver extends js.Object {

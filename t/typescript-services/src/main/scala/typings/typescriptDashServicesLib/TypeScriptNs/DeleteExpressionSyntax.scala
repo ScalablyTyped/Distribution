@@ -66,6 +66,7 @@ class DeleteExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.DeleteExpressionSyntax")
 @js.native
 object DeleteExpressionSyntax extends js.Object {

@@ -35,6 +35,7 @@ class Subject ()
   ): wonderDashFrpLib.distCommonjsDisposableIDisposableMod.IDisposable = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/subject/Subject", "Subject")
 @js.native
 object Subject extends js.Object {

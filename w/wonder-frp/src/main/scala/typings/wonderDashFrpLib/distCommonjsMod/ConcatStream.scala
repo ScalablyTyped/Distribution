@@ -12,6 +12,7 @@ class ConcatStream protected ()
   def this(sources: js.Array[wonderDashFrpLib.distCommonjsCoreStreamMod.Stream]) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "ConcatStream")
 @js.native
 object ConcatStream extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ColorHelper () extends js.Object
 
-/** Provides static helper methods for processing Color values. C# and Microsoft Visual Basic code should use methods of Color instead. */
+/* static members */
 @JSGlobal("Windows.UI.ColorHelper")
 @js.native
 object ColorHelper extends js.Object {

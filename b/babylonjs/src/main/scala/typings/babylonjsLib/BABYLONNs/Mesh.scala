@@ -616,9 +616,7 @@ class Mesh protected () extends AbstractMesh {
   def validateSkinning(): babylonjsLib.Anon_Report = js.native
 }
 
-/**
-  * Class used to represent renderable models
-  */
+/* static members */
 @JSGlobal("BABYLON.Mesh")
 @js.native
 object Mesh extends js.Object {

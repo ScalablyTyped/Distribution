@@ -16,6 +16,7 @@ class NavBar protected () extends Widget {
   def title(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.NavBar")
 @js.native
 object NavBar extends js.Object {

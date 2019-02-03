@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 class Matrix ()
   extends babylonjsLib.BABYLONNs.Matrix
 
-/**
-  * Class used to store matrix data (4x4)
-  */
+/* static members */
 @JSImport("babylonjs", "Matrix")
 @js.native
 object Matrix extends js.Object {

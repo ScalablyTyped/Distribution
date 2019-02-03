@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PeerFinder () extends js.Object
 
-/** Enables you to discover other instances of your app on nearby devices and create a socket connection between the peer apps by using a tap gesture or by browsing. For creating Bluetooth socket connections on Windows 8.1 and later, use Windows.Devices.Bluetooth.Rfcomm instead. */
+/* static members */
 @JSGlobal("Windows.Networking.Proximity.PeerFinder")
 @js.native
 object PeerFinder extends js.Object {

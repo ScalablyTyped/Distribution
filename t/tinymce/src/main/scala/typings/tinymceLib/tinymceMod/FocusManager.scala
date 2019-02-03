@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FocusManager () extends js.Object
 
+/* static members */
 @JSImport("tinymce", "FocusManager")
 @js.native
 object FocusManager extends js.Object {

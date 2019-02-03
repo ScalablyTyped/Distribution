@@ -27,12 +27,19 @@ object mongrationLibStrings {
   @js.native
   sealed trait skipped extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def `not-run`: `not-run` = "not-run".asInstanceOf[`not-run`]
+  @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def rollback: rollback = "rollback".asInstanceOf[rollback]
+  @scala.inline
   def `rollback-error`: `rollback-error` = "rollback-error".asInstanceOf[`rollback-error`]
+  @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
 }
 

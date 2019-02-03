@@ -62,6 +62,7 @@ class EmptyStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.EmptyStatementSyntax")
 @js.native
 object EmptyStatementSyntax extends js.Object {

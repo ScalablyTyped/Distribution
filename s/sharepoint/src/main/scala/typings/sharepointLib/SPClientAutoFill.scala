@@ -34,6 +34,7 @@ class SPClientAutoFill protected () extends js.Object {
   def UpdateAutoFillPosition(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SPClientAutoFill")
 @js.native
 object SPClientAutoFill extends js.Object {

@@ -61,6 +61,7 @@ class Policy protected ()
   val targetTrackingScalingPolicyConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_CustomizedMetricSpecification]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appautoscaling/policy", "Policy")
 @js.native
 object Policy extends js.Object {

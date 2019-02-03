@@ -417,142 +417,279 @@ object semanticDashUiDashDropdownLibStrings {
   @js.native
   sealed trait visible extends js.Object
   
+  @scala.inline
   def action: action = "action".asInstanceOf[action]
+  @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def addResult: addResult = "addResult".asInstanceOf[addResult]
+  @scala.inline
   def addition: addition = "addition".asInstanceOf[addition]
+  @scala.inline
   def allowAdditions: allowAdditions = "allowAdditions".asInstanceOf[allowAdditions]
+  @scala.inline
   def allowCategorySelection: allowCategorySelection = "allowCategorySelection".asInstanceOf[allowCategorySelection]
+  @scala.inline
   def allowReselection: allowReselection = "allowReselection".asInstanceOf[allowReselection]
+  @scala.inline
   def allowTab: allowTab = "allowTab".asInstanceOf[allowTab]
+  @scala.inline
   def alreadySetup: alreadySetup = "alreadySetup".asInstanceOf[alreadySetup]
+  @scala.inline
   def animating: animating = "animating".asInstanceOf[animating]
+  @scala.inline
   def apiSettings: apiSettings = "apiSettings".asInstanceOf[apiSettings]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def backspace: backspace = "backspace".asInstanceOf[backspace]
+  @scala.inline
   def `bind intent`: `bind intent` = "bind intent".asInstanceOf[`bind intent`]
+  @scala.inline
   def `bind mouse events`: `bind mouse events` = "bind mouse events".asInstanceOf[`bind mouse events`]
+  @scala.inline
   def `bind touch events`: `bind touch events` = "bind touch events".asInstanceOf[`bind touch events`]
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def className: className = "className".asInstanceOf[className]
+  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
   def combo: combo = "combo".asInstanceOf[combo]
+  @scala.inline
   def context: context = "context".asInstanceOf[context]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def defaultText: defaultText = "defaultText".asInstanceOf[defaultText]
+  @scala.inline
   def defaultValue: defaultValue = "defaultValue".asInstanceOf[defaultValue]
+  @scala.inline
   def delay: delay = "delay".asInstanceOf[delay]
+  @scala.inline
   def deleteKey: deleteKey = "deleteKey".asInstanceOf[deleteKey]
+  @scala.inline
   def delimiter: delimiter = "delimiter".asInstanceOf[delimiter]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def `determine intent`: `determine intent` = "determine intent".asInstanceOf[`determine intent`]
+  @scala.inline
   def `determine select action`: `determine select action` = "determine select action".asInstanceOf[`determine select action`]
+  @scala.inline
   def direction: direction = "direction".asInstanceOf[direction]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def downArrow: downArrow = "downArrow".asInstanceOf[downArrow]
+  @scala.inline
   def downward: downward = "downward".asInstanceOf[downward]
+  @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
+  @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
+  @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def escape: escape = "escape".asInstanceOf[escape]
+  @scala.inline
   def exact: exact = "exact".asInstanceOf[exact]
+  @scala.inline
   def fields: fields = "fields".asInstanceOf[fields]
+  @scala.inline
   def filterRemoteData: filterRemoteData = "filterRemoteData".asInstanceOf[filterRemoteData]
+  @scala.inline
   def filtered: filtered = "filtered".asInstanceOf[filtered]
+  @scala.inline
   def forceSelection: forceSelection = "forceSelection".asInstanceOf[forceSelection]
+  @scala.inline
   def fullTextSearch: fullTextSearch = "fullTextSearch".asInstanceOf[fullTextSearch]
+  @scala.inline
   def `get default text`: `get default text` = "get default text".asInstanceOf[`get default text`]
+  @scala.inline
   def `get item`: `get item` = "get item".asInstanceOf[`get item`]
+  @scala.inline
   def `get placeholder text`: `get placeholder text` = "get placeholder text".asInstanceOf[`get placeholder text`]
+  @scala.inline
   def `get text`: `get text` = "get text".asInstanceOf[`get text`]
+  @scala.inline
   def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  @scala.inline
   def glyphWidth: glyphWidth = "glyphWidth".asInstanceOf[glyphWidth]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
+  @scala.inline
   def `hide others`: `hide others` = "hide others".asInstanceOf[`hide others`]
+  @scala.inline
   def hideAdditions: hideAdditions = "hideAdditions".asInstanceOf[hideAdditions]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def `is animated`: `is animated` = "is animated".asInstanceOf[`is animated`]
+  @scala.inline
   def `is hidden`: `is hidden` = "is hidden".asInstanceOf[`is hidden`]
+  @scala.inline
   def `is selection`: `is selection` = "is selection".asInstanceOf[`is selection`]
+  @scala.inline
   def `is visible`: `is visible` = "is visible".asInstanceOf[`is visible`]
+  @scala.inline
   def item: item = "item".asInstanceOf[item]
+  @scala.inline
   def keepOnScreen: keepOnScreen = "keepOnScreen".asInstanceOf[keepOnScreen]
+  @scala.inline
   def keys: keys = "keys".asInstanceOf[keys]
+  @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
   def labels: labels = "labels".asInstanceOf[labels]
+  @scala.inline
   def leftArrow: leftArrow = "leftArrow".asInstanceOf[leftArrow]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
   def maxSelections: maxSelections = "maxSelections".asInstanceOf[maxSelections]
+  @scala.inline
   def menu: menu = "menu".asInstanceOf[menu]
+  @scala.inline
   def menuIcon: menuIcon = "menuIcon".asInstanceOf[menuIcon]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
+  @scala.inline
   def method: method = "method".asInstanceOf[method]
+  @scala.inline
   def minCharacters: minCharacters = "minCharacters".asInstanceOf[minCharacters]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
+  @scala.inline
   def noResults: noResults = "noResults".asInstanceOf[noResults]
+  @scala.inline
   def noTransition: noTransition = "noTransition".asInstanceOf[noTransition]
+  @scala.inline
   def nothing: nothing = "nothing".asInstanceOf[nothing]
+  @scala.inline
   def on: on = "on".asInstanceOf[on]
+  @scala.inline
   def pageDown: pageDown = "pageDown".asInstanceOf[pageDown]
+  @scala.inline
   def pageUp: pageUp = "pageUp".asInstanceOf[pageUp]
+  @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
+  @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  @scala.inline
   def placeholderText: placeholderText = "placeholderText".asInstanceOf[placeholderText]
+  @scala.inline
   def preserveHTML: preserveHTML = "preserveHTML".asInstanceOf[preserveHTML]
+  @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
+  @scala.inline
   def remoteValues: remoteValues = "remoteValues".asInstanceOf[remoteValues]
+  @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
+  @scala.inline
   def `remove active`: `remove active` = "remove active".asInstanceOf[`remove active`]
+  @scala.inline
   def `remove selected`: `remove selected` = "remove selected".asInstanceOf[`remove selected`]
+  @scala.inline
   def `remove visible`: `remove visible` = "remove visible".asInstanceOf[`remove visible`]
+  @scala.inline
   def `restore default text`: `restore default text` = "restore default text".asInstanceOf[`restore default text`]
+  @scala.inline
   def `restore default value`: `restore default value` = "restore default value".asInstanceOf[`restore default value`]
+  @scala.inline
   def `restore defaults`: `restore defaults` = "restore defaults".asInstanceOf[`restore defaults`]
+  @scala.inline
   def `restore placeholder text`: `restore placeholder text` = "restore placeholder text".asInstanceOf[`restore placeholder text`]
+  @scala.inline
   def rightArrow: rightArrow = "rightArrow".asInstanceOf[rightArrow]
+  @scala.inline
   def `save defaults`: `save defaults` = "save defaults".asInstanceOf[`save defaults`]
+  @scala.inline
   def saveRemoteData: saveRemoteData = "saveRemoteData".asInstanceOf[saveRemoteData]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def selectOnKeydown: selectOnKeydown = "selectOnKeydown".asInstanceOf[selectOnKeydown]
+  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
+  @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
   def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  @scala.inline
   def `set exactly`: `set exactly` = "set exactly".asInstanceOf[`set exactly`]
+  @scala.inline
   def `set selected`: `set selected` = "set selected".asInstanceOf[`set selected`]
+  @scala.inline
   def `set text`: `set text` = "set text".asInstanceOf[`set text`]
+  @scala.inline
   def `set value`: `set value` = "set value".asInstanceOf[`set value`]
+  @scala.inline
   def `set visible`: `set visible` = "set visible".asInstanceOf[`set visible`]
+  @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
+  @scala.inline
   def `setup menu`: `setup menu` = "setup menu".asInstanceOf[`setup menu`]
+  @scala.inline
   def show: show = "show".asInstanceOf[show]
+  @scala.inline
   def showOnFocus: showOnFocus = "showOnFocus".asInstanceOf[showOnFocus]
+  @scala.inline
   def siblingLabel: siblingLabel = "siblingLabel".asInstanceOf[siblingLabel]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def sortSelect: sortSelect = "sortSelect".asInstanceOf[sortSelect]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
   def touch: touch = "touch".asInstanceOf[touch]
+  @scala.inline
   def transition: transition = "transition".asInstanceOf[transition]
+  @scala.inline
   def `unbind intent`: `unbind intent` = "unbind intent".asInstanceOf[`unbind intent`]
+  @scala.inline
   def upArrow: upArrow = "upArrow".asInstanceOf[upArrow]
+  @scala.inline
   def upward: upward = "upward".asInstanceOf[upward]
+  @scala.inline
   def useLabels: useLabels = "useLabels".asInstanceOf[useLabels]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
   def values: values = "values".asInstanceOf[values]
+  @scala.inline
   def variation: variation = "variation".asInstanceOf[variation]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
 }
 

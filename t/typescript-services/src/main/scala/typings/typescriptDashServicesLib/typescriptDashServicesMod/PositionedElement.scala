@@ -12,6 +12,7 @@ class PositionedElement protected ()
   def this(parent: typescriptDashServicesLib.TypeScriptNs.PositionedElement, element: typescriptDashServicesLib.TypeScriptNs.ISyntaxElement, fullStart: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PositionedElement")
 @js.native
 object PositionedElement extends js.Object {

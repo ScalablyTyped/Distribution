@@ -66,10 +66,7 @@ class GroundGeometry protected () extends _PrimitiveGeometry {
   var width: scala.Double = js.native
 }
 
-/**
-  * Creates a new ground geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#ground
-  */
+/* static members */
 @JSGlobal("BABYLON.GroundGeometry")
 @js.native
 object GroundGeometry extends js.Object {

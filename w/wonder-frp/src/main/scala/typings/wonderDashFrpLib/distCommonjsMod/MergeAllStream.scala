@@ -12,6 +12,7 @@ class MergeAllStream protected ()
   def this(source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "MergeAllStream")
 @js.native
 object MergeAllStream extends js.Object {

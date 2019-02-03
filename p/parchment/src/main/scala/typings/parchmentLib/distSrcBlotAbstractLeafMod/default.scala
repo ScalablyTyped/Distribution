@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends LeafBlot
 
+/* static members */
 @JSImport("parchment/dist/src/blot/abstract/leaf", JSImport.Default)
 @js.native
 object default extends js.Object {

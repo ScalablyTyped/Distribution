@@ -45,6 +45,7 @@ class PullRefreshLoadLayout protected ()
   def startRefresh(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.widget.PullRefreshLoadLayout")
 @js.native
 object PullRefreshLoadLayout extends js.Object {

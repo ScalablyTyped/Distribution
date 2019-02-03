@@ -40,6 +40,7 @@ class RateBasedRule protected ()
   val rateLimit: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/rateBasedRule", "RateBasedRule")
 @js.native
 object RateBasedRule extends js.Object {

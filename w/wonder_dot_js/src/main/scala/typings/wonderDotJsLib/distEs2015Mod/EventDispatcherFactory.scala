@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EventDispatcherFactory ()
   extends wonderDotJsLib.distEs2015EventFactoryEventDispatcherFactoryMod.EventDispatcherFactory
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "EventDispatcherFactory")
 @js.native
 object EventDispatcherFactory extends js.Object {

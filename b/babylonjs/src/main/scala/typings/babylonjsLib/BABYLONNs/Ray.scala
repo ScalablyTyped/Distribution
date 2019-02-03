@@ -118,9 +118,7 @@ class Ray protected () extends js.Object {
   ): Ray = js.native
 }
 
-/**
-  * Class representing a ray with position and direction
-  */
+/* static members */
 @JSGlobal("BABYLON.Ray")
 @js.native
 object Ray extends js.Object {

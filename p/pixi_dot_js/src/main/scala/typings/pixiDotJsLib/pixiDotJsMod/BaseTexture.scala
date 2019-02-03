@@ -20,6 +20,7 @@ class BaseTexture ()
   def this(source: stdLib.HTMLVideoElement, scaleMode: scala.Double, resolution: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "BaseTexture")
 @js.native
 object BaseTexture extends js.Object {

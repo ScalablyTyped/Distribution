@@ -49,7 +49,9 @@ trait IBaseCardProps[TComponent, TStyles, TStyleProps]
   var styles: js.UndefOr[
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[
       TStyleProps, 
-      officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.IBaseCardProps with js.Any
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof TStyles ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyle.IStyle}
+    */ officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.IBaseCardProps with js.Any
     ]
   ] = js.undefined
   /**

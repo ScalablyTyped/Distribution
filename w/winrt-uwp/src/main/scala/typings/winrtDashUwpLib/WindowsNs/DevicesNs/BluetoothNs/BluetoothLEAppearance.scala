@@ -17,7 +17,7 @@ abstract class BluetoothLEAppearance () extends js.Object {
   var subCategory: scala.Double = js.native
 }
 
-/** Provides functionality to determine the Bluetooth Low Energy (LE) Appearance information for a device. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEAppearance")
 @js.native
 object BluetoothLEAppearance extends js.Object {

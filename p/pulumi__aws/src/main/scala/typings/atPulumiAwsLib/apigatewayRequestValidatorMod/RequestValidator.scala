@@ -36,6 +36,7 @@ class RequestValidator protected ()
   val validateRequestParameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/requestValidator", "RequestValidator")
 @js.native
 object RequestValidator extends js.Object {

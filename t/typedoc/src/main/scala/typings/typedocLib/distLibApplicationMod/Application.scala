@@ -33,6 +33,7 @@ class Application ()
   def getTypeScriptVersion(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/application", "Application")
 @js.native
 object Application extends js.Object {

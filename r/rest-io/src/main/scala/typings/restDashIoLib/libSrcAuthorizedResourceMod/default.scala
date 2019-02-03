@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends AuthorizedResource
 
+/* static members */
 @JSImport("rest-io/lib/src/authorizedResource", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -112,7 +112,7 @@ abstract class HidDevice () extends js.Object {
   def sendOutputReportAsync(outputReport: HidOutputReport): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
 }
 
-/** Represents a top-level collection and the corresponding device. */
+/* static members */
 @JSGlobal("Windows.Devices.HumanInterfaceDevice.HidDevice")
 @js.native
 object HidDevice extends js.Object {

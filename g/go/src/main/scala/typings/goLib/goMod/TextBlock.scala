@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 class TextBlock ()
   extends goLib.goMod.goNs.TextBlock
 
-/**
-  * A TextBlock is a GraphObject that displays a .text string in a given .font.
-  */
+/* static members */
 @JSImport("go", "TextBlock")
 @js.native
 object TextBlock extends js.Object {

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class SphericalHarmonics ()
   extends babylonjsLib.BABYLONNs.SphericalHarmonics
 
-/**
-  * Class representing spherical harmonics coefficients to the 3rd degree
-  */
+/* static members */
 @JSImport("babylonjs", "SphericalHarmonics")
 @js.native
 object SphericalHarmonics extends js.Object {

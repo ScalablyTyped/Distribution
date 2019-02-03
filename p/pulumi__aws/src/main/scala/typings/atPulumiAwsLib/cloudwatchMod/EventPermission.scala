@@ -20,6 +20,7 @@ class EventPermission protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermissionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "EventPermission")
 @js.native
 object EventPermission extends js.Object {

@@ -12,6 +12,7 @@ class namespaced protected () extends FalcorRouter {
   def this(routes: js.Array[falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouteDefinition], options: falcorDashRouterLib.falcorDashRouterMod.FalcorRouterNs.RouterOptions) = this()
 }
 
+/* static members */
 @JSImport("falcor-router", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

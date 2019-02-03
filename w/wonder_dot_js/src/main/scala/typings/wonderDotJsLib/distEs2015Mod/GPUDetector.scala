@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GPUDetector ()
   extends wonderDotJsLib.distEs2015DeviceGPUDetectorMod.GPUDetector
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "GPUDetector")
 @js.native
 object GPUDetector extends js.Object {

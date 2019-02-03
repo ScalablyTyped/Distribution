@@ -22,6 +22,7 @@ object cloud9Ns extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cloud9EnvironmentEC2Mod.EnvironmentEC2Args, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object EnvironmentEC2 extends js.Object {
     /**

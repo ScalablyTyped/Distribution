@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Repository ()
   extends nodegitLib.repositoryMod.Repository
 
+/* static members */
 @JSImport("nodegit", "Repository")
 @js.native
 object Repository extends js.Object {

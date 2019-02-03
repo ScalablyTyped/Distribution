@@ -166,10 +166,7 @@ class Texture protected () extends BaseTexture {
   ): scala.Unit = js.native
 }
 
-/**
-  * This represents a texture in babylon. It can be easily loaded from a network, base64 or html input.
-  * @see http://doc.babylonjs.com/babylon101/materials#texture
-  */
+/* static members */
 @JSGlobal("BABYLON.Texture")
 @js.native
 object Texture extends js.Object {

@@ -78,6 +78,7 @@ class Credentials protected () extends js.Object {
   def refreshPromise(): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/credentials", "Credentials")
 @js.native
 object Credentials extends js.Object {

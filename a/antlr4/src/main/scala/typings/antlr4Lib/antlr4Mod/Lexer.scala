@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Lexer ()
   extends antlr4Lib.lexerMod.Lexer
 
+/* static members */
 @JSImport("antlr4", "Lexer")
 @js.native
 object Lexer extends js.Object {

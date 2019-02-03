@@ -43,6 +43,7 @@ class EntityCollection protected ()
   override def suspendEvents(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("cesium", "EntityCollection")
 @js.native
 object EntityCollection extends js.Object {

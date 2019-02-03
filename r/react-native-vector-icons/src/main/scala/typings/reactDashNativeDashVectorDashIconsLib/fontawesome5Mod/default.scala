@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends FontAwesome5Icon
 
+/* static members */
 @JSImport("react-native-vector-icons/FontAwesome5", JSImport.Default)
 @js.native
 object default extends js.Object {

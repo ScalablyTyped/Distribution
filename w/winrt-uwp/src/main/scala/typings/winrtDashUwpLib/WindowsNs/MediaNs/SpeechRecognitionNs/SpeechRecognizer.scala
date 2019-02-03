@@ -104,7 +104,7 @@ class SpeechRecognizer () extends js.Object {
   def stopRecognitionAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Enables speech recognition with either a default or a custom graphical user interface (GUI). */
+/* static members */
 @JSGlobal("Windows.Media.SpeechRecognition.SpeechRecognizer")
 @js.native
 object SpeechRecognizer extends js.Object {

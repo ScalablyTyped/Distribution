@@ -12,6 +12,7 @@ class FilterWithStateObserver ()
   var _isTrigger: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/FilterWithStateObserver", "FilterWithStateObserver")
 @js.native
 object FilterWithStateObserver extends js.Object {

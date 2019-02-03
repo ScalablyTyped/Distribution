@@ -452,12 +452,7 @@ object pluginwidgetsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ActionValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -497,12 +492,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ActionValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.4.0: introduced
-    */
+  /* static members */
   @js.native
   object AttributeValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -542,12 +532,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -587,12 +572,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.BooleanValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanWidgetVariableValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -623,12 +603,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.BooleanWidgetVariableValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object CompositeValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -677,12 +652,7 @@ object pluginwidgetsNs extends js.Object {
     def createInWebDynamicImageValueUnderImages(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebDynamicImageValue): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.CompositeValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object DateTimeFormat extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -704,12 +674,7 @@ object pluginwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.DateTimeFormat = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object DecimalNumberFormat extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -731,12 +696,7 @@ object pluginwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.DecimalNumberFormat = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.17.0: introduced
-    */
+  /* static members */
   @js.native
   object DerivedUniqueIdValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -767,12 +727,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.DerivedUniqueIdValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object DynamicTextValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -803,12 +758,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.DynamicTextValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EnumValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -848,12 +798,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.EnumValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExpressionValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -893,12 +838,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ExpressionValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object ImageValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -938,12 +878,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ImageValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerNumberFormat extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -965,12 +900,7 @@ object pluginwidgetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.AttributeValue): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.IntegerNumberFormat = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerWidgetVariableValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1001,12 +931,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.IntegerWidgetVariableValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object ListValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1037,12 +962,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ListValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.14.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowObjectListValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1082,12 +1002,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.MicroflowObjectListValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object NativeClassValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1127,12 +1042,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.NativeClassValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object NestedWidgetValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1172,24 +1082,14 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.NestedWidgetValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object NumberFormat extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPluginwidgetsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object NumericValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1229,12 +1129,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.NumericValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object ObjectListSortItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1247,12 +1142,7 @@ object pluginwidgetsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ObjectListSortItem = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object OfflineObjectListValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1292,11 +1182,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.OfflineObjectListValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.0.1: introduced
-    */
+  /* static members */
   @js.native
   object PluginWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1732,11 +1618,7 @@ object pluginwidgetsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object PluginWidgetProperty extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1776,38 +1658,21 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetUnderProperties(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidget): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object PrimitiveValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPluginwidgetsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `PluginWidgets`.
-    */
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object PropertyValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPluginwidgetsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object StaticTextValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1838,12 +1703,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.StaticTextValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.18.0: introduced
-    */
+  /* static members */
   @js.native
   object StringArrayWidgetVariableValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1874,12 +1734,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.StringArrayWidgetVariableValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object StringValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1919,12 +1774,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.StringValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object StringWidgetVariableValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1955,12 +1805,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.StringWidgetVariableValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object StyleValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1991,12 +1836,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.StyleValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object TemplatedWidgetValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2036,24 +1876,14 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.TemplatedWidgetValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object TextValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPluginwidgetsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ValidationEventValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2093,12 +1923,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.ValidationEventValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object WebDynamicImageValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2129,12 +1954,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebDynamicImageValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object WebIconValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2165,12 +1985,7 @@ object pluginwidgetsNs extends js.Object {
     def createInPluginWidgetPropertyUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.PluginWidgetProperty): mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.19.0: deleted
-    * In version 7.16.0: introduced
-    */
+  /* static members */
   @js.native
   object WidgetVariableValue extends js.Object {
     var structureTypeName: java.lang.String = js.native

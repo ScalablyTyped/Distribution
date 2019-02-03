@@ -20,6 +20,7 @@ class EgressOnlyInternetGateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2EgressOnlyInternetGatewayMod.EgressOnlyInternetGatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "EgressOnlyInternetGateway")
 @js.native
 object EgressOnlyInternetGateway extends js.Object {

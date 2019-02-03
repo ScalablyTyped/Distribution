@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Ticker () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.Ticker")
 @js.native
 object Ticker extends js.Object {

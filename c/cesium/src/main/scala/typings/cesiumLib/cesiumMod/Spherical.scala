@@ -14,6 +14,7 @@ class Spherical ()
   def this(clock: scala.Double, cone: scala.Double, magnitude: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Spherical")
 @js.native
 object Spherical extends js.Object {

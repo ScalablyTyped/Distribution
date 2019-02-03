@@ -36,6 +36,7 @@ class PerInstanceColorAppearance ()
   override def isTranslucent(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "PerInstanceColorAppearance")
 @js.native
 object PerInstanceColorAppearance extends js.Object {

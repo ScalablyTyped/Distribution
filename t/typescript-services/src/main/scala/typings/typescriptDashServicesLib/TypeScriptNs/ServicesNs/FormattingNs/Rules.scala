@@ -100,6 +100,7 @@ class Rules ()
   def getRuleName(rule: Rule): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.Rules")
 @js.native
 object Rules extends js.Object {

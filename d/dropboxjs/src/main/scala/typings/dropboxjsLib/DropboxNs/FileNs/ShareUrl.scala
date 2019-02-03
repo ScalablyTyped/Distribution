@@ -15,6 +15,7 @@ class ShareUrl () extends js.Object {
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.File.ShareUrl")
 @js.native
 object ShareUrl extends js.Object {

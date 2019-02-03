@@ -87,6 +87,7 @@ class ForInStatementSyntax protected ()
   def withVariableDeclaration(variableDeclaration: VariableDeclarationSyntax): ForInStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ForInStatementSyntax")
 @js.native
 object ForInStatementSyntax extends js.Object {

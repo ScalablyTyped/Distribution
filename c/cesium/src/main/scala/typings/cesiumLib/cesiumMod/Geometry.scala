@@ -20,6 +20,7 @@ class Geometry protected ()
   override var primitiveType: cesiumLib.cesiumMod.CesiumNs.PrimitiveType = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Geometry")
 @js.native
 object Geometry extends js.Object {

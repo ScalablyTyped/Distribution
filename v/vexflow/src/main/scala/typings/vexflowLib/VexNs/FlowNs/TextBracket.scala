@@ -18,6 +18,7 @@ class TextBracket protected () extends js.Object {
   def setLine(line: scala.Double): TextBracket = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.TextBracket")
 @js.native
 object TextBracket extends js.Object {

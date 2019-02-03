@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class JudgeUtils () extends js.Object
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("wonder.js/dist/es2015/utils/JudgeUtils", "JudgeUtils")
+/* static members */
+@JSImport("wonder.js/dist/es2015/utils/JudgeUtils", "JudgeUtils")
 @js.native
 object JudgeUtils extends js.Object {
   def isClass(objInstance: js.Any, className: java.lang.String): scala.Boolean = js.native

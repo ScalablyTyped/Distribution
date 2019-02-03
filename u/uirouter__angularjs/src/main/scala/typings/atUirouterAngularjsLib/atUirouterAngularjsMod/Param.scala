@@ -12,6 +12,7 @@ class Param protected ()
   def this(id: java.lang.String, `type`: atUirouterCoreLib.libParamsParamTypeMod.ParamType, location: atUirouterCoreLib.libParamsParamMod.DefType, urlConfig: atUirouterCoreLib.libUrlMod.UrlConfig, state: atUirouterCoreLib.libStateInterfaceMod.StateDeclaration) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/angularjs", "Param")
 @js.native
 object Param extends js.Object {

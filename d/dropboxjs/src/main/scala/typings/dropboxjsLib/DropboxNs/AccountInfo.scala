@@ -21,6 +21,7 @@ class AccountInfo () extends js.Object {
   def json(): js.Object = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.AccountInfo")
 @js.native
 object AccountInfo extends js.Object {

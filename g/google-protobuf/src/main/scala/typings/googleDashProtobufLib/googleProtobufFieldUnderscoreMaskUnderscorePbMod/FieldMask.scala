@@ -16,6 +16,7 @@ class FieldMask ()
   def setPathsList(value: js.Array[java.lang.String]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/field_mask_pb", "FieldMask")
 @js.native
 object FieldMask extends js.Object {

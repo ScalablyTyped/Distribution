@@ -16,6 +16,7 @@ class Extractor protected () extends js.Object {
   def extract(rootFiles: js.Array[java.lang.String]): js.Promise[atAngularCompilerLib.srcI18nMessageUnderscoreBundleMod.MessageBundle] = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/i18n/extractor", "Extractor")
 @js.native
 object Extractor extends js.Object {

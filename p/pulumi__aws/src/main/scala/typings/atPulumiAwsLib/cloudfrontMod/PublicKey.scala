@@ -20,6 +20,7 @@ class PublicKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudfrontPublicKeyMod.PublicKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront", "PublicKey")
 @js.native
 object PublicKey extends js.Object {

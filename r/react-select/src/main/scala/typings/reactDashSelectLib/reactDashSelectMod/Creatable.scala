@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Creatable[OptionType] ()
   extends reactDashSelectLib.libCreatableMod.default[OptionType]
 
+/* static members */
 @JSImport("react-select", "Creatable")
 @js.native
 object Creatable extends js.Object {

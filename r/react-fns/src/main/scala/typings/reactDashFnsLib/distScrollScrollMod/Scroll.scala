@@ -22,6 +22,7 @@ class Scroll ()
   def handleWindowScroll(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-fns/dist/Scroll/Scroll", "Scroll")
 @js.native
 object Scroll extends js.Object {

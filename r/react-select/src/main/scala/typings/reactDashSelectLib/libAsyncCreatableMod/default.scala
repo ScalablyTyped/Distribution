@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[OptionType] () extends AsyncCreatable[OptionType]
 
+/* static members */
 @JSImport("react-select/lib/AsyncCreatable", JSImport.Default)
 @js.native
 object default extends js.Object {

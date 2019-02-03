@@ -11,6 +11,7 @@ class default protected () extends BackTop {
   def this(props: BackTopProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/back-top", JSImport.Default)
 @js.native
 object default extends js.Object {

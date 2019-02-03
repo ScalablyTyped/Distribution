@@ -26,6 +26,7 @@ class File protected () extends js.Object {
   def loadAttributes(cb: js.Any): nodeLib.streamMod.Readable = js.native
 }
 
+/* static members */
 @JSImport("megajs", "File")
 @js.native
 object File extends js.Object {

@@ -795,6 +795,7 @@ class SFTPStream ()
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("ssh2-streams", "SFTPStream")
 @js.native
 object SFTPStream extends js.Object {

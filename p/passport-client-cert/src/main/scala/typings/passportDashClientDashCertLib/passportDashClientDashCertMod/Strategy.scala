@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("passport-client-cert", "Strategy")
+@JSImport("passport-client-cert", "Strategy")
 @js.native
 class Strategy protected () extends js.Object {
   def this(verify: VerifyFunction) = this()

@@ -12,6 +12,7 @@ class View[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] ()
   def this(options: backboneLib.backboneMod.BackboneNs.ViewOptions[TModel]) = this()
 }
 
+/* static members */
 @JSImport("backbone", "View")
 @js.native
 object View extends js.Object {

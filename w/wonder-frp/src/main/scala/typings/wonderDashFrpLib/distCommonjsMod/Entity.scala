@@ -12,6 +12,7 @@ abstract class Entity protected ()
   def this(uidPre: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "Entity")
 @js.native
 object Entity extends js.Object {

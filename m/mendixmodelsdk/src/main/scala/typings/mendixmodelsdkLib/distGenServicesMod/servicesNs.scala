@@ -12,6 +12,7 @@ object servicesNs extends js.Object {
   class HttpMethod ()
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
+  /* static members */
   @js.native
   object HttpMethod extends js.Object {
     var Delete: mendixmodelsdkLib.distGenServicesMod.servicesNs.HttpMethod = js.native

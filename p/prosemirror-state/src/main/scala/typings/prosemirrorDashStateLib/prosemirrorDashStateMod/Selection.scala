@@ -113,6 +113,7 @@ class Selection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-state", "Selection")
 @js.native
 object Selection extends js.Object {

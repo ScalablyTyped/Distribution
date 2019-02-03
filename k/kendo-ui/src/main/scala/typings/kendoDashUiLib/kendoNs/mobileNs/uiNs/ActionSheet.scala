@@ -17,6 +17,7 @@ class ActionSheet protected () extends Widget {
   def open(target: kendoDashUiLib.JQuery, context: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.ActionSheet")
 @js.native
 object ActionSheet extends js.Object {

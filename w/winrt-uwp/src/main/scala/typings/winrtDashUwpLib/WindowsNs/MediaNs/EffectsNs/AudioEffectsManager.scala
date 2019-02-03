@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AudioEffectsManager () extends js.Object
 
-/** Provides functionality for creating audio capture and render effects manager objects. */
+/* static members */
 @JSGlobal("Windows.Media.Effects.AudioEffectsManager")
 @js.native
 object AudioEffectsManager extends js.Object {

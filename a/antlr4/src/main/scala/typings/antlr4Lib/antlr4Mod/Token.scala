@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Token ()
   extends antlr4Lib.tokenMod.Token
 
+/* static members */
 @JSImport("antlr4", "Token")
 @js.native
 object Token extends js.Object {

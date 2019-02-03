@@ -12,6 +12,7 @@ class SphereGeometry ()
   def this(options: cesiumLib.Anon_Radius) = this()
 }
 
+/* static members */
 @JSImport("cesium", "SphereGeometry")
 @js.native
 object SphereGeometry extends js.Object {

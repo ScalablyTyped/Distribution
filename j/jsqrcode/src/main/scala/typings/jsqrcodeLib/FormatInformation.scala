@@ -16,6 +16,7 @@ class FormatInformation () extends js.Object {
   def GetHashCode(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("FormatInformation")
 @js.native
 object FormatInformation extends js.Object {

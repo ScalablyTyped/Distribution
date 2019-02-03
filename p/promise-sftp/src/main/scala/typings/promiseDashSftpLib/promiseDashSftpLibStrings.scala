@@ -15,8 +15,11 @@ object promiseDashSftpLibStrings {
   @js.native
   sealed trait l extends js.Object
   
+  @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
   def d: d = "d".asInstanceOf[d]
+  @scala.inline
   def l: l = "l".asInstanceOf[l]
 }
 

@@ -23,6 +23,7 @@ object servicecatalogNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.servicecatalogPortfolioMod.PortfolioArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Portfolio extends js.Object {
     /**

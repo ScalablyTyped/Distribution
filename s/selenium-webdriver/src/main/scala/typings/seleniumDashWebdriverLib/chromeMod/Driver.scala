@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Driver ()
   extends seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver
 
+/* static members */
 @JSImport("selenium-webdriver/chrome", "Driver")
 @js.native
 object Driver extends js.Object {

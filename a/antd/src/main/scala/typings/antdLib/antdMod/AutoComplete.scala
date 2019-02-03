@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AutoComplete ()
   extends antdLib.libAutoDashCompleteMod.default
 
+/* static members */
 @JSImport("antd", "AutoComplete")
 @js.native
 object AutoComplete extends js.Object {

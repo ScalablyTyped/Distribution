@@ -26,6 +26,7 @@ class SmsDevice () extends ISmsDevice {
   override def sendMessageAsync(message: ISmsMessage): SendSmsMessageOperation = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sms.SmsDevice")
 @js.native
 object SmsDevice extends js.Object {

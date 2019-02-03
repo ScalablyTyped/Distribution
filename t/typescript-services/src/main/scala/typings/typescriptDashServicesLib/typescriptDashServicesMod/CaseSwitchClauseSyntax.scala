@@ -12,6 +12,7 @@ class CaseSwitchClauseSyntax protected ()
   def this(caseKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statements: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "CaseSwitchClauseSyntax")
 @js.native
 object CaseSwitchClauseSyntax extends js.Object {

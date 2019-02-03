@@ -12,6 +12,7 @@ class SwatchColorPickerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerSwatchColorPickerDotTypesMod.ISwatchColorPickerProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", "SwatchColorPickerBase")
 @js.native
 object SwatchColorPickerBase extends js.Object {

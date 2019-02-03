@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Row ()
   extends antdLib.libGridRowMod.default
 
+/* static members */
 @JSImport("antd/lib/grid", "Row")
 @js.native
 object Row extends js.Object {

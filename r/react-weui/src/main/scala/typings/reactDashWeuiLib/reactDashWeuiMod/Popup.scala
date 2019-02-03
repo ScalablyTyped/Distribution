@@ -12,6 +12,7 @@ class Popup protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Popup")
 @js.native
 object Popup extends js.Object {

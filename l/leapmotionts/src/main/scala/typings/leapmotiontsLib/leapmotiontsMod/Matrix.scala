@@ -23,6 +23,7 @@ class Matrix protected () extends js.Object {
   def transformPoint(inVector: Vector3): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Matrix")
 @js.native
 object Matrix extends js.Object {

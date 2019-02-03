@@ -147,6 +147,7 @@ class default protected () extends Default {
   def this(el: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, overrides: fullcalendarLib.srcTypesInputDashTypesMod.OptionsInput) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/Calendar", "Default")
 @js.native
 object Default extends js.Object {
@@ -155,6 +156,7 @@ object Default extends js.Object {
   var rtlDefaults: js.Any = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/Calendar", JSImport.Default)
 @js.native
 object default extends js.Object {

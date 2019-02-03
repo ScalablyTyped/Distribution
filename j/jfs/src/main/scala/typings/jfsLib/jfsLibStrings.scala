@@ -12,7 +12,9 @@ object jfsLibStrings {
   @js.native
   sealed trait single extends js.Object
   
+  @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
 }
 

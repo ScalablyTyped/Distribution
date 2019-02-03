@@ -12,6 +12,7 @@ class ConcatObserver protected ()
   def this(currentObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver, startNextStream: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "ConcatObserver")
 @js.native
 object ConcatObserver extends js.Object {

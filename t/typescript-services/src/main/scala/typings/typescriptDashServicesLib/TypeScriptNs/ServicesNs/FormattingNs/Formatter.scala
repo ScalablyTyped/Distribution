@@ -27,6 +27,7 @@ class Formatter protected () extends MultipleTokenIndenter {
   /* private */ def trimWhitespaceInLineRange(startLine: js.Any, endLine: js.Any, token: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.Formatter")
 @js.native
 object Formatter extends js.Object {

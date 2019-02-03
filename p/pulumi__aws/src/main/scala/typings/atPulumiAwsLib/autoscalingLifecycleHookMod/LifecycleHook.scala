@@ -52,6 +52,7 @@ class LifecycleHook protected ()
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/lifecycleHook", "LifecycleHook")
 @js.native
 object LifecycleHook extends js.Object {

@@ -12,6 +12,7 @@ class BaseButton protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsButtonBaseButtonMod.IBaseButtonProps, rootClassName: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Button", "BaseButton")
 @js.native
 object BaseButton extends js.Object {

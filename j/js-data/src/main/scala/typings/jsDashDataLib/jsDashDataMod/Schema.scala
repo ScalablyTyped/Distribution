@@ -22,6 +22,7 @@ class Schema protected () extends Component {
   def validate(value: js.Any, opts: js.Any): js.Array[SchemaValidationError] = js.native
 }
 
+/* static members */
 @JSImport("js-data", "Schema")
 @js.native
 object Schema extends js.Object {

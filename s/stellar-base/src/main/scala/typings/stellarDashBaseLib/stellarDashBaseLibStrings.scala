@@ -69,26 +69,47 @@ object stellarDashBaseLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def accountMerge: accountMerge = "accountMerge".asInstanceOf[accountMerge]
+  @scala.inline
   def allowTrust: allowTrust = "allowTrust".asInstanceOf[allowTrust]
+  @scala.inline
   def bumpSequence: bumpSequence = "bumpSequence".asInstanceOf[bumpSequence]
+  @scala.inline
   def changeTrust: changeTrust = "changeTrust".asInstanceOf[changeTrust]
+  @scala.inline
   def createAccount: createAccount = "createAccount".asInstanceOf[createAccount]
+  @scala.inline
   def createPassiveOffer: createPassiveOffer = "createPassiveOffer".asInstanceOf[createPassiveOffer]
+  @scala.inline
   def credit_alphanum12: credit_alphanum12 = "credit_alphanum12".asInstanceOf[credit_alphanum12]
+  @scala.inline
   def credit_alphanum4: credit_alphanum4 = "credit_alphanum4".asInstanceOf[credit_alphanum4]
+  @scala.inline
   def ed25519: ed25519 = "ed25519".asInstanceOf[ed25519]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def inflation: inflation = "inflation".asInstanceOf[inflation]
+  @scala.inline
   def manageData: manageData = "manageData".asInstanceOf[manageData]
+  @scala.inline
   def manageOffer: manageOffer = "manageOffer".asInstanceOf[manageOffer]
+  @scala.inline
   def native: native = "native".asInstanceOf[native]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def pathPayment: pathPayment = "pathPayment".asInstanceOf[pathPayment]
+  @scala.inline
   def payment: payment = "payment".asInstanceOf[payment]
+  @scala.inline
   def `return`: `return` = "return".asInstanceOf[`return`]
+  @scala.inline
   def setOptions: setOptions = "setOptions".asInstanceOf[setOptions]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

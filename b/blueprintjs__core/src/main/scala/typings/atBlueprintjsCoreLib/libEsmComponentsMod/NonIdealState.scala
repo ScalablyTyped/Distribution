@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NonIdealState ()
   extends atBlueprintjsCoreLib.libEsmComponentsNonDashIdealDashStateNonIdealStateMod.NonIdealState
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "NonIdealState")
 @js.native
 object NonIdealState extends js.Object {

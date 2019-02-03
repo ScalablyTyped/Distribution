@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class interpolator () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.interpolator")
 @js.native
 object interpolator extends js.Object {

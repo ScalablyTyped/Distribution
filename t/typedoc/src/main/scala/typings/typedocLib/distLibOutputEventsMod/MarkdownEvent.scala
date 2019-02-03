@@ -14,6 +14,7 @@ class MarkdownEvent protected ()
   var parsedText: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/events", "MarkdownEvent")
 @js.native
 object MarkdownEvent extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Click ()
   extends plottableLib.buildSrcInteractionsClickInteractionMod.Click
 
+/* static members */
 @JSImport("plottable/build/src/interactions", "Click")
 @js.native
 object Click extends js.Object {

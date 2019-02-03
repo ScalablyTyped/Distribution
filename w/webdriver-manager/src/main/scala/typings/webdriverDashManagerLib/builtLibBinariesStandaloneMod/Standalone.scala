@@ -12,6 +12,7 @@ class Standalone ()
   def this(opt_alternativeCdn: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries/standalone", "Standalone")
 @js.native
 object Standalone extends js.Object {

@@ -31,6 +31,7 @@ class Tween protected () extends AbstractTween {
   def wait(duration: scala.Double, passive: scala.Boolean): Tween = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.Tween")
 @js.native
 object Tween extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TweenJS () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.TweenJS")
 @js.native
 object TweenJS extends js.Object {

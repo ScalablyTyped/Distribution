@@ -26,6 +26,7 @@ class Stat () extends js.Object {
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.File.Stat")
 @js.native
 object Stat extends js.Object {

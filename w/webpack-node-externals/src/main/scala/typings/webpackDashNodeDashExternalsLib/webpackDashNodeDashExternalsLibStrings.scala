@@ -21,10 +21,15 @@ object webpackDashNodeDashExternalsLibStrings {
   @js.native
   sealed trait `var` extends js.Object
   
+  @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
+  @scala.inline
   def commonjs: commonjs = "commonjs".asInstanceOf[commonjs]
+  @scala.inline
   def `this`: `this` = "this".asInstanceOf[`this`]
+  @scala.inline
   def umd: umd = "umd".asInstanceOf[umd]
+  @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
 }
 

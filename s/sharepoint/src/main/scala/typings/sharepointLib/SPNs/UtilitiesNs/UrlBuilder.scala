@@ -15,6 +15,7 @@ class UrlBuilder protected () extends js.Object {
   def get_url(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Utilities.UrlBuilder")
 @js.native
 object UrlBuilder extends js.Object {

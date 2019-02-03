@@ -64,22 +64,22 @@ class TaskEither[L, A] protected () extends js.Object {
     */
   @JSName("filterOrElse")
   def filterOrElse_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): TaskEither[L, B] = js.native
-  def fold[R](whenLeft: js.Function1[/* l */ L, R], whenRight: js.Function1[/* a */ A, R]): fpDashTsLib.libTaskMod.Task[R] = js.native
+  def fold[R](onLeft: js.Function1[/* l */ L, R], onRight: js.Function1[/* a */ A, R]): fpDashTsLib.libTaskMod.Task[R] = js.native
   /**
     * Similar to {@link fold}, but the result is flattened.
     * @since 1.10.0
     */
   def foldTask[R](
-    whenLeft: js.Function1[/* l */ L, fpDashTsLib.libTaskMod.Task[R]],
-    whenRight: js.Function1[/* a */ A, fpDashTsLib.libTaskMod.Task[R]]
+    onLeft: js.Function1[/* l */ L, fpDashTsLib.libTaskMod.Task[R]],
+    onRight: js.Function1[/* a */ A, fpDashTsLib.libTaskMod.Task[R]]
   ): fpDashTsLib.libTaskMod.Task[R] = js.native
   /**
     * Similar to {@link fold}, but the result is flattened.
     * @since 1.10.0
     */
   def foldTaskEither[M, B](
-    whenLeft: js.Function1[/* l */ L, TaskEither[M, B]],
-    whenRight: js.Function1[/* a */ A, TaskEither[M, B]]
+    onLeft: js.Function1[/* l */ L, TaskEither[M, B]],
+    onRight: js.Function1[/* a */ A, TaskEither[M, B]]
   ): TaskEither[M, B] = js.native
   def map[B](f: js.Function1[/* a */ A, B]): TaskEither[L, B] = js.native
   def mapLeft[M](f: js.Function1[/* l */ L, M]): TaskEither[M, A] = js.native

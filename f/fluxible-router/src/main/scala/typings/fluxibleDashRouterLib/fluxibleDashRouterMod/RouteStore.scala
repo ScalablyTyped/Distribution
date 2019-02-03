@@ -17,6 +17,7 @@ class RouteStore ()
   def rehydrate_MRouteStore(state: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fluxible-router", "RouteStore")
 @js.native
 object RouteStore extends js.Object {

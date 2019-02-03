@@ -12,6 +12,7 @@ class RoughEase protected ()
   def this(vars: gsapLib.gsapNs.RoughEaseConfig) = this()
 }
 
+/* static members */
 @JSImport("gsap", "RoughEase")
 @js.native
 object RoughEase extends js.Object {

@@ -39,7 +39,11 @@ trait Anon_Arg1 extends js.Object {
     options: js.Array[K1]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.Anon_Arg1 with js.Any]
+    rsvpLib.rsvpMod.RSVPNs.Promise[
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in K1 ]: T}
+    */ rsvpLib.rsvpLibStrings.Anon_Arg1 with js.Any
+    ]
   ] = js.native
   def apply[T1, T2, A, K1 /* <: java.lang.String */, K2 /* <: java.lang.String */](
     nodeFunc: js.Function2[

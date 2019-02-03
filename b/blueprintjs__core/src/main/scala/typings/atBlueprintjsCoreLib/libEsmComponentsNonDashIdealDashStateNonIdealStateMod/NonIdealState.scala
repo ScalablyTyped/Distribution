@@ -12,6 +12,7 @@ class NonIdealState ()
   /* private */ def maybeRenderVisual(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/non-ideal-state/nonIdealState", "NonIdealState")
 @js.native
 object NonIdealState extends js.Object {

@@ -23,6 +23,7 @@ class ShimmerElementsGroupBase protected ()
   var _getRenderedElements: js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Shimmer/ShimmerElementsGroup/ShimmerElementsGroup.base", "ShimmerElementsGroupBase")
 @js.native
 object ShimmerElementsGroupBase extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Merge ()
   extends nodegitLib.mergeMod.Merge
 
+/* static members */
 @JSImport("nodegit", "Merge")
 @js.native
 object Merge extends js.Object {

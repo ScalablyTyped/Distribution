@@ -20,6 +20,7 @@ class LicenseConfiguration protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.licensemanagerLicenseConfigurationMod.LicenseConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/licensemanager", "LicenseConfiguration")
 @js.native
 object LicenseConfiguration extends js.Object {

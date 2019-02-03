@@ -18,6 +18,7 @@ class NativeWebView protected ()
   var mUrl: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.native.NativeWebView")
 @js.native
 object NativeWebView extends js.Object {

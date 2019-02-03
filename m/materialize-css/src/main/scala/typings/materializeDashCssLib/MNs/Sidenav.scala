@@ -26,6 +26,7 @@ class Sidenav ()
   override def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Sidenav")
 @js.native
 object Sidenav extends js.Object {

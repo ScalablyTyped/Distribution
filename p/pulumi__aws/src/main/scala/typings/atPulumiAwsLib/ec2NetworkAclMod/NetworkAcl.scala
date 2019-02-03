@@ -49,6 +49,7 @@ class NetworkAcl protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/networkAcl", "NetworkAcl")
 @js.native
 object NetworkAcl extends js.Object {

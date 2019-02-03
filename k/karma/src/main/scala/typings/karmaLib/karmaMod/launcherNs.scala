@@ -26,6 +26,7 @@ object launcherNs extends js.Object {
     def restart(id: java.lang.String): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Launcher extends js.Object {
     def generateId(): java.lang.String = js.native

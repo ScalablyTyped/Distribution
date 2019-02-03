@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Class ()
   extends fullcalendarLib.classMod.default
 
+/* static members */
 @JSImport("fullcalendar/src/exports", "Class")
 @js.native
 object Class extends js.Object {

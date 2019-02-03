@@ -12,6 +12,7 @@ class ArrayEventSource protected ()
   def this(calendar: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/src/exports", "ArrayEventSource")
 @js.native
 object ArrayEventSource extends js.Object {

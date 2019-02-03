@@ -18,6 +18,7 @@ class TitleLabel ()
   def this(text: java.lang.String, angle: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "TitleLabel")
 @js.native
 object TitleLabel extends js.Object {

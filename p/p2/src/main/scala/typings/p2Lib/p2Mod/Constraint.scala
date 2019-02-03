@@ -29,6 +29,7 @@ class Constraint protected ()
   override def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("p2", "Constraint")
 @js.native
 object Constraint extends js.Object {

@@ -13,6 +13,7 @@ class Renderer protected () extends js.Object {
   def resize(width: scala.Double, height: scala.Double): Renderer = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Renderer")
 @js.native
 object Renderer extends js.Object {

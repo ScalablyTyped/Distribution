@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Fn () extends js.Object
 
+/* static members */
 @JSImport("johnny-five", "Fn")
 @js.native
 object Fn extends js.Object {

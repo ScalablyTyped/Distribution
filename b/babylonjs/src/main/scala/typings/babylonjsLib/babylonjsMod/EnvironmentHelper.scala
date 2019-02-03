@@ -22,11 +22,7 @@ class EnvironmentHelper protected ()
   def this(options: stdLib.Partial[babylonjsLib.BABYLONNs.IEnvironmentHelperOptions], scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The Environment helper class can be used to add a fully featuread none expensive background to your scene.
-  * It includes by default a skybox and a ground relying on the BackgroundMaterial.
-  * It also helps with the default setup of your imageProcessing configuration.
-  */
+/* static members */
 @JSImport("babylonjs", "EnvironmentHelper")
 @js.native
 object EnvironmentHelper extends js.Object {

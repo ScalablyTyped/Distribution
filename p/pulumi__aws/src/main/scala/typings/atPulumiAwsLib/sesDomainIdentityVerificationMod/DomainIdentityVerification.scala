@@ -28,6 +28,7 @@ class DomainIdentityVerification protected ()
   val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/domainIdentityVerification", "DomainIdentityVerification")
 @js.native
 object DomainIdentityVerification extends js.Object {

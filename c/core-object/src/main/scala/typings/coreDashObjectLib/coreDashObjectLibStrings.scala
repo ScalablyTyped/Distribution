@@ -15,8 +15,11 @@ object coreDashObjectLibStrings {
   @js.native
   sealed trait Super extends js.Object
   
+  @scala.inline
   def ExtendOptions: ExtendOptions = "ExtendOptions".asInstanceOf[ExtendOptions]
+  @scala.inline
   def MethodNames: MethodNames = "MethodNames".asInstanceOf[MethodNames]
+  @scala.inline
   def Super: Super = "Super".asInstanceOf[Super]
 }
 

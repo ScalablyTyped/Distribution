@@ -17,6 +17,7 @@ abstract class Clock ()
   override def zone(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Clock")
 @js.native
 object Clock extends js.Object {

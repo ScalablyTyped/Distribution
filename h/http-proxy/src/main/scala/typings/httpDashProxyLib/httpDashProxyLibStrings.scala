@@ -30,13 +30,21 @@ object httpDashProxyLibStrings {
   @js.native
   sealed trait start extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def econnreset: econnreset = "econnreset".asInstanceOf[econnreset]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def proxyReq: proxyReq = "proxyReq".asInstanceOf[proxyReq]
+  @scala.inline
   def proxyReqWs: proxyReqWs = "proxyReqWs".asInstanceOf[proxyReqWs]
+  @scala.inline
   def proxyRes: proxyRes = "proxyRes".asInstanceOf[proxyRes]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
 }
 

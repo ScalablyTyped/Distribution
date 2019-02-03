@@ -14,6 +14,7 @@ class Notification[T] protected ()
   def this(kind: rxjsLib.internalNotificationMod.NotificationKind, value: T, error: js.Any) = this()
 }
 
+/* static members */
 @JSImport("rxjs", "Notification")
 @js.native
 object Notification extends js.Object {

@@ -103,6 +103,7 @@ class Time protected ()
   def tierLabelPositions(newPositions: js.Array[TierLabelPosition]): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/axes/timeAxis", "Time")
 @js.native
 object Time extends js.Object {

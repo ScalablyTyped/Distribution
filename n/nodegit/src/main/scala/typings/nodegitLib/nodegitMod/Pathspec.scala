@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pathspec ()
   extends nodegitLib.pathDashSpecMod.Pathspec
 
+/* static members */
 @JSImport("nodegit", "Pathspec")
 @js.native
 object Pathspec extends js.Object {

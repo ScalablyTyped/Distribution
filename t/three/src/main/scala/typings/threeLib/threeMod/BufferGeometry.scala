@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class BufferGeometry ()
   extends threeLib.threeDashCoreMod.BufferGeometry
 
+/* static members */
 @JSImport("three", "BufferGeometry")
 @js.native
 object BufferGeometry extends js.Object {

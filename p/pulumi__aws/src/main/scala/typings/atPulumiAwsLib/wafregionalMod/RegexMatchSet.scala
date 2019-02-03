@@ -21,6 +21,7 @@ class RegexMatchSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalRegexMatchSetMod.RegexMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional", "RegexMatchSet")
 @js.native
 object RegexMatchSet extends js.Object {

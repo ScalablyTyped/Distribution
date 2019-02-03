@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PlayReadyStatics () extends js.Object
 
-/** Provides support for returning static or constant data. */
+/* static members */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyStatics")
 @js.native
 object PlayReadyStatics extends js.Object {

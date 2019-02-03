@@ -31,6 +31,7 @@ class Mouse ()
   override var wheelDelta: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Mouse")
 @js.native
 object Mouse extends js.Object {

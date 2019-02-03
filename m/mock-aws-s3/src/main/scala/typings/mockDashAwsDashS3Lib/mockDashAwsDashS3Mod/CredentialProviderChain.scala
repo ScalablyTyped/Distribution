@@ -17,6 +17,7 @@ class CredentialProviderChain ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("mock-aws-s3", "CredentialProviderChain")
 @js.native
 object CredentialProviderChain extends js.Object {

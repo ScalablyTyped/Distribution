@@ -49,6 +49,7 @@ class Polygon protected ()
   def solidFromSlices(options: js.Any): openjscadLib.CSG = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Polygon")
 @js.native
 object Polygon extends js.Object {

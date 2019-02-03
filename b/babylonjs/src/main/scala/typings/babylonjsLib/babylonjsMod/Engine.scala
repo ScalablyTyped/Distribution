@@ -25,9 +25,7 @@ class Engine protected ()
   def this(canvasOrContext: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.HTMLCanvasElement | babylonjsLib.WebGLRenderingContext], antialias: scala.Boolean, options: babylonjsLib.BABYLONNs.EngineOptions, adaptToDeviceRatio: scala.Boolean) = this()
 }
 
-/**
-  * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
-  */
+/* static members */
 @JSImport("babylonjs", "Engine")
 @js.native
 object Engine extends js.Object {

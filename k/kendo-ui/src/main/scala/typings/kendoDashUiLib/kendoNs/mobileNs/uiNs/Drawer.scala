@@ -17,6 +17,7 @@ class Drawer protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Drawer")
 @js.native
 object Drawer extends js.Object {

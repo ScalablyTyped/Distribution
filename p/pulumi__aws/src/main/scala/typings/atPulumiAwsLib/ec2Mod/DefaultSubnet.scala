@@ -20,6 +20,7 @@ class DefaultSubnet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2DefaultSubnetMod.DefaultSubnetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "DefaultSubnet")
 @js.native
 object DefaultSubnet extends js.Object {

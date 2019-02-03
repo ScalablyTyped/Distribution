@@ -39,16 +39,27 @@ object reactDashRndLibStrings {
   @js.native
   sealed trait window extends js.Object
   
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def parent: parent = "parent".asInstanceOf[parent]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
+  @scala.inline
   def window: window = "window".asInstanceOf[window]
 }
 

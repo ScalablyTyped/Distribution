@@ -17,6 +17,7 @@ class MDCDialog ()
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/dialog", "MDCDialog")
 @js.native
 object MDCDialog extends js.Object {

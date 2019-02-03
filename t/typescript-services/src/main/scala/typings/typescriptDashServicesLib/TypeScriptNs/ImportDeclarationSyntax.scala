@@ -33,6 +33,7 @@ class ImportDeclarationSyntax protected () extends SyntaxNode {
   def withSemicolonToken(semicolonToken: ISyntaxToken): ImportDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ImportDeclarationSyntax")
 @js.native
 object ImportDeclarationSyntax extends js.Object {

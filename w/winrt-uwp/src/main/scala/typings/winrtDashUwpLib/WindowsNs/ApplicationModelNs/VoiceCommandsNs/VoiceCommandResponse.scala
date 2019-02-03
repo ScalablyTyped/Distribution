@@ -19,7 +19,7 @@ abstract class VoiceCommandResponse () extends js.Object {
   var voiceCommandContentTiles: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[VoiceCommandContentTile] = js.native
 }
 
-/** The response from a background app service for progress, confirmation, disambiguation, completion, or failure screens displayed on the Cortana canvas. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandResponse")
 @js.native
 object VoiceCommandResponse extends js.Object {

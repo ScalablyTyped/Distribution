@@ -20,6 +20,7 @@ class default () extends RRule {
   override def between(after: stdLib.Date, before: stdLib.Date, inc: scala.Boolean): js.Array[stdLib.Date] = js.native
 }
 
+/* static members */
 @JSImport("rrule/dist/esm/src/rrule", JSImport.Default)
 @js.native
 object default extends js.Object {

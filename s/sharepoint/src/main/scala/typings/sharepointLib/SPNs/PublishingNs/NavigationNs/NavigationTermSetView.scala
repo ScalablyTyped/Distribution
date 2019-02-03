@@ -25,6 +25,7 @@ class NavigationTermSetView protected ()
   def set_siteMapProviderName(value: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Publishing.Navigation.NavigationTermSetView")
 @js.native
 object NavigationTermSetView extends js.Object {

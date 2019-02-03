@@ -76,7 +76,6 @@ object ^ extends js.Object {
   val Input: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputInputMod.InputProps] = js.native
   val InputAdornment: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputadornmentInputAdornmentMod.InputAdornmentProps] = js.native
   val InputBase: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputbaseInputBaseMod.InputBaseProps] = js.native
-  val InputLabel: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.inputlabelInputLabelMod.InputLabelProps] = js.native
   val LinearProgress: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressProps] = js.native
   val Link: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.linkLinkMod.LinkProps] = js.native
   val List: reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.listListMod.ListProps] = js.native
@@ -145,11 +144,11 @@ object ^ extends js.Object {
   ] = js.native
   def withWidth(): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth, 
-    stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+    atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthProps
   ] = js.native
   def withWidth(options: atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthOptions): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth, 
-    stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+    atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthProps
   ] = js.native
 }
 

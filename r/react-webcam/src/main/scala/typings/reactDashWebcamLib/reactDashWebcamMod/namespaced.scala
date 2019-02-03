@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Webcam
 
+/* static members */
 @JSImport("react-webcam", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

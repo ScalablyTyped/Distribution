@@ -45,7 +45,7 @@ class Playlist () extends js.Object {
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Provides access to a media playlist. */
+/* static members */
 @JSGlobal("Windows.Media.Playlists.Playlist")
 @js.native
 object Playlist extends js.Object {

@@ -73,6 +73,7 @@ class Notification[T] protected () extends js.Object {
   def toObservable(): rxjsLib.internalObservableMod.Observable[T] = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/Notification", "Notification")
 @js.native
 object Notification extends js.Object {

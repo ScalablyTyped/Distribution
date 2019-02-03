@@ -16,6 +16,7 @@ abstract class Texture protected () extends js.Object {
   def setWraps(uWrap: TextureWrap, vWrap: TextureWrap): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.Texture")
 @js.native
 object Texture extends js.Object {

@@ -14,6 +14,7 @@ class default () extends Adapter {
   override def disconnect(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@pollyjs/adapter", JSImport.Default)
 @js.native
 object default extends js.Object {

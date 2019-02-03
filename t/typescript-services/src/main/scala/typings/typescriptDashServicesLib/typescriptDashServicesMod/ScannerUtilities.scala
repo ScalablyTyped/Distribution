@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ScannerUtilities ()
   extends typescriptDashServicesLib.TypeScriptNs.ScannerUtilities
 
+/* static members */
 @JSImport("typescript-services", "ScannerUtilities")
 @js.native
 object ScannerUtilities extends js.Object {

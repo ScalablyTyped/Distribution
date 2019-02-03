@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Fetch () extends js.Object
 
+/* static members */
 @JSImport("nodegit/fetch", "Fetch")
 @js.native
 object Fetch extends js.Object {

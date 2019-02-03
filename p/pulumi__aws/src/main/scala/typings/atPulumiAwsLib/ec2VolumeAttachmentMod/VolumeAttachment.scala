@@ -48,6 +48,7 @@ class VolumeAttachment protected ()
   val volumeId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/volumeAttachment", "VolumeAttachment")
 @js.native
 object VolumeAttachment extends js.Object {

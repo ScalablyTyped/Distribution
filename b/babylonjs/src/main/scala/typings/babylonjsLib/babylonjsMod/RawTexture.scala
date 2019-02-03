@@ -51,11 +51,7 @@ class RawTexture protected ()
   format: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, generateMipMaps: scala.Boolean, invertY: scala.Boolean, samplingMode: scala.Double, `type`: scala.Double) = this()
 }
 
-/**
-  * Raw texture can help creating a texture directly from an array of data.
-  * This can be super useful if you either get the data from an uncompressed source or
-  * if you wish to create your texture pixel by pixel.
-  */
+/* static members */
 @JSImport("babylonjs", "RawTexture")
 @js.native
 object RawTexture extends js.Object {

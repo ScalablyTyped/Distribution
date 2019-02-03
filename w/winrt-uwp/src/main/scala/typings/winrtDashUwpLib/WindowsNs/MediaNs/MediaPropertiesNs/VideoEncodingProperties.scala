@@ -40,7 +40,7 @@ class VideoEncodingProperties () extends js.Object {
   def setFormatUserData(value: js.Array[scala.Double]): scala.Unit = js.native
 }
 
-/** Describes the format of a video stream. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.VideoEncodingProperties")
 @js.native
 object VideoEncodingProperties extends js.Object {

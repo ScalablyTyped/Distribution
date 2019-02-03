@@ -50,6 +50,7 @@ object emrNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.emrSecurityConfigurationMod.SecurityConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -74,6 +75,7 @@ object emrNs extends js.Object {
     ): atPulumiAwsLib.emrClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object InstanceGroup extends js.Object {
     /**
@@ -98,6 +100,7 @@ object emrNs extends js.Object {
     ): atPulumiAwsLib.emrInstanceGroupMod.InstanceGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityConfiguration extends js.Object {
     /**

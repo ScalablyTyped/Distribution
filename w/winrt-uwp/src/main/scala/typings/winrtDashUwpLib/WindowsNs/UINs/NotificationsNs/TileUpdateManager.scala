@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class TileUpdateManager () extends js.Object
 
-/** Creates TileUpdater objects used to change and update Start menu tiles. This class also provides access to the XML content of the system-provided tile templates so that you can customize that content for use in updating your tiles. */
+/* static members */
 @JSGlobal("Windows.UI.Notifications.TileUpdateManager")
 @js.native
 object TileUpdateManager extends js.Object {

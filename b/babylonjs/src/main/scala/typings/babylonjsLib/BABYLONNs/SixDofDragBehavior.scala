@@ -72,9 +72,7 @@ class SixDofDragBehavior () extends Behavior[Mesh] {
   override def init(): scala.Unit = js.native
 }
 
-/**
-  * A behavior that when attached to a mesh will allow the mesh to be dragged around based on directions and origin of the pointer's ray
-  */
+/* static members */
 @JSGlobal("BABYLON.SixDofDragBehavior")
 @js.native
 object SixDofDragBehavior extends js.Object {

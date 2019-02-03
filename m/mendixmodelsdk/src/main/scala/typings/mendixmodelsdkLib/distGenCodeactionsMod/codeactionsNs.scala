@@ -462,9 +462,7 @@ object codeactionsNs extends js.Object {
     val qualifiedName: java.lang.String | scala.Null = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object BasicParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -477,9 +475,7 @@ object codeactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BasicParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -510,21 +506,21 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.BooleanType = js.native
   }
   
+  /* static members */
   @js.native
   object CodeAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object CodeActionParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ConcreteEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -564,9 +560,7 @@ object codeactionsNs extends js.Object {
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ConcreteEntityType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object DateTimeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -597,9 +591,7 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DateTimeType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object DecimalType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -630,18 +622,14 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.DecimalType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityTypeParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -654,9 +642,7 @@ object codeactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EntityTypeParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object EnumerationType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -687,9 +673,7 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.EnumerationType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object FloatType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -720,9 +704,7 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.FloatType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -753,9 +735,7 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.IntegerType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ListType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -786,9 +766,7 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowActionInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -810,18 +788,14 @@ object codeactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.MicroflowActionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ParameterizedEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -861,18 +835,14 @@ object codeactionsNs extends js.Object {
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ListType): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ParameterizedEntityType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object PrimitiveType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object StringType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -903,18 +873,14 @@ object codeactionsNs extends js.Object {
     def createInCodeActionUnderActionReturnType(container: mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.CodeAction): mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.StringType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object Type extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenCodeactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object TypeParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native

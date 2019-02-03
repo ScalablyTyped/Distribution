@@ -12,6 +12,7 @@ class Input protected ()
   def this(props: antdLib.libInputInputMod.InputProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Input")
 @js.native
 object Input extends js.Object {

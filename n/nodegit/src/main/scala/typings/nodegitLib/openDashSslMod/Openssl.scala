@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Openssl () extends js.Object
 
+/* static members */
 @JSImport("nodegit/open-ssl", "Openssl")
 @js.native
 object Openssl extends js.Object {

@@ -96,7 +96,7 @@ abstract class DisplayInformation () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Monitors and controls physical display information. The class provides events to allow clients to monitor for changes in the display. */
+/* static members */
 @JSGlobal("Windows.Graphics.Display.DisplayInformation")
 @js.native
 object DisplayInformation extends js.Object {

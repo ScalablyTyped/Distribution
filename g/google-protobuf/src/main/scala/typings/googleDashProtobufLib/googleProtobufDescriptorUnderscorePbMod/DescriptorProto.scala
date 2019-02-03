@@ -89,6 +89,7 @@ class DescriptorProto ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "DescriptorProto")
 @js.native
 object DescriptorProto extends js.Object {

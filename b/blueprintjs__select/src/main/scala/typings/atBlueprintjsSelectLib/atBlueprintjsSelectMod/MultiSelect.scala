@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MultiSelect[T] ()
   extends atBlueprintjsSelectLib.libEsmComponentsMod.MultiSelect[T]
 
+/* static members */
 @JSImport("@blueprintjs/select", "MultiSelect")
 @js.native
 object MultiSelect extends js.Object {

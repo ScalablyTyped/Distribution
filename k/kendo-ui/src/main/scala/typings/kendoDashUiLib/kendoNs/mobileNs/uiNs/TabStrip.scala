@@ -24,6 +24,7 @@ class TabStrip protected () extends Widget {
   def switchTo(url: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.TabStrip")
 @js.native
 object TabStrip extends js.Object {

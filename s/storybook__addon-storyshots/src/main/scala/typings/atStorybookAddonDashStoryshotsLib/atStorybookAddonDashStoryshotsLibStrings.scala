@@ -9,6 +9,7 @@ object atStorybookAddonDashStoryshotsLibStrings {
   @js.native
   sealed trait percent extends js.Object
   
+  @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
 }
 

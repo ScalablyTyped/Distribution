@@ -31,6 +31,7 @@ class MediaPlayer protected () extends Widget {
   def volume(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.MediaPlayer")
 @js.native
 object MediaPlayer extends js.Object {

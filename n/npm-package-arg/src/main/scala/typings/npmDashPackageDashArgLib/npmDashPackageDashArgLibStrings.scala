@@ -30,13 +30,21 @@ object npmDashPackageDashArgLibStrings {
   @js.native
   sealed trait version extends js.Object
   
+  @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
+  @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def git: git = "git".asInstanceOf[git]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def remote: remote = "remote".asInstanceOf[remote]
+  @scala.inline
   def tag: tag = "tag".asInstanceOf[tag]
+  @scala.inline
   def version: version = "version".asInstanceOf[version]
 }
 

@@ -24,11 +24,17 @@ object primereactLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

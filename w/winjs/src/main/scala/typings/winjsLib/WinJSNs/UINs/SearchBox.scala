@@ -112,9 +112,7 @@ class SearchBox () extends js.Object {
   def setLocalContentSuggestionSettings(settings: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Enables the user to perform search queries and select suggestions.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SearchBox")
 @js.native
 object SearchBox extends js.Object {

@@ -32,6 +32,7 @@ abstract class CompoundButton protected ()
   override def toggle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.CompoundButton")
 @js.native
 object CompoundButton extends js.Object {

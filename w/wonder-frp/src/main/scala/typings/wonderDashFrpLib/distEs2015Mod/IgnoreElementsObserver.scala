@@ -12,6 +12,7 @@ class IgnoreElementsObserver protected ()
   def this(currentObserver: wonderDashFrpLib.distEs2015ObserverIObserverMod.IObserver) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "IgnoreElementsObserver")
 @js.native
 object IgnoreElementsObserver extends js.Object {

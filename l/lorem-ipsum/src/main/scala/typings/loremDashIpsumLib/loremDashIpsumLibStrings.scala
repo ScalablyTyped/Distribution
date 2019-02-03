@@ -21,10 +21,15 @@ object loremDashIpsumLibStrings {
   @js.native
   sealed trait words extends js.Object
   
+  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
   def paragraphs: paragraphs = "paragraphs".asInstanceOf[paragraphs]
+  @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
+  @scala.inline
   def sentences: sentences = "sentences".asInstanceOf[sentences]
+  @scala.inline
   def words: words = "words".asInstanceOf[words]
 }
 

@@ -100,10 +100,7 @@ class Component () extends js.Object {
   def updated(): scala.Unit = js.native
 }
 
-/**
-  * Provides the base class for the Control and Behavior classes, and for any other object whose lifetime should be managed by the ASP.NET AJAX client library.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb397516(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.Component")
 @js.native
 object Component extends js.Object {

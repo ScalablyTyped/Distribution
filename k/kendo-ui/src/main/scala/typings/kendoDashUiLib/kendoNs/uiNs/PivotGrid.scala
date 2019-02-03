@@ -24,6 +24,7 @@ class PivotGrid protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.PivotDataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.PivotGrid")
 @js.native
 object PivotGrid extends js.Object {

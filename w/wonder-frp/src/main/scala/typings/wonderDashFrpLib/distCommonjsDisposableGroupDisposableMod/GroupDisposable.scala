@@ -20,6 +20,7 @@ class GroupDisposable ()
   def remove(disposable: wonderDashFrpLib.distCommonjsDisposableIDisposableMod.IDisposable): this.type = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/Disposable/GroupDisposable", "GroupDisposable")
 @js.native
 object GroupDisposable extends js.Object {

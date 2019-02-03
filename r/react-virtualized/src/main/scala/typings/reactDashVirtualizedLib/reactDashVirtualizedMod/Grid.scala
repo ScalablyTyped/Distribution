@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Grid ()
   extends reactDashVirtualizedLib.distEsGridMod.Grid
 
+/* static members */
 @JSImport("react-virtualized", "Grid")
 @js.native
 object Grid extends js.Object {

@@ -20,6 +20,7 @@ class Response () extends Body {
   var url: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("node-fetch", "Response")
 @js.native
 object Response extends js.Object {

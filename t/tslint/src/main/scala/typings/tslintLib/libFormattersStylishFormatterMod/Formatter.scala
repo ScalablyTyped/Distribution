@@ -15,6 +15,7 @@ class Formatter ()
   var pad: js.Any = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/formatters/stylishFormatter", "Formatter")
 @js.native
 object Formatter extends js.Object {

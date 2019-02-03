@@ -16,6 +16,7 @@ class CanvasChart protected () extends AbstractChart {
   def getContext2d(): d3DashShapeLib.d3DashShapeMod.Global.CanvasRenderingContext2D = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "CanvasChart")
 @js.native
 object CanvasChart extends js.Object {

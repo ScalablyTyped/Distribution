@@ -18,6 +18,7 @@ class GraceNoteGroup protected () extends Modifier {
   def setWidth_Unit(width: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.GraceNoteGroup")
 @js.native
 object GraceNoteGroup extends js.Object {

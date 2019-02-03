@@ -127,6 +127,7 @@ object glueNs extends js.Object {
     args: atPulumiAwsLib.glueGetScriptMod.GetScriptArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.glueGetScriptMod.GetScriptResult] = js.native
+  /* static members */
   @js.native
   object CatalogDatabase extends js.Object {
     /**
@@ -151,6 +152,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueCatalogDatabaseMod.CatalogDatabase = js.native
   }
   
+  /* static members */
   @js.native
   object CatalogTable extends js.Object {
     /**
@@ -175,6 +177,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueCatalogTableMod.CatalogTable = js.native
   }
   
+  /* static members */
   @js.native
   object Classifier extends js.Object {
     /**
@@ -199,6 +202,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueClassifierMod.Classifier = js.native
   }
   
+  /* static members */
   @js.native
   object Connection extends js.Object {
     /**
@@ -223,6 +227,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueConnectionMod.Connection = js.native
   }
   
+  /* static members */
   @js.native
   object Crawler extends js.Object {
     /**
@@ -247,6 +252,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueCrawlerMod.Crawler = js.native
   }
   
+  /* static members */
   @js.native
   object Job extends js.Object {
     /**
@@ -271,6 +277,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueJobMod.Job = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityConfiguration extends js.Object {
     /**
@@ -295,6 +302,7 @@ object glueNs extends js.Object {
     ): atPulumiAwsLib.glueSecurityConfigurationMod.SecurityConfiguration = js.native
   }
   
+  /* static members */
   @js.native
   object Trigger extends js.Object {
     /**

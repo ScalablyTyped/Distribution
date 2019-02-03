@@ -24,11 +24,17 @@ object quillLibStrings {
   @js.native
   sealed trait user extends js.Object
   
+  @scala.inline
   def api: api = "api".asInstanceOf[api]
+  @scala.inline
   def `editor-change`: `editor-change` = "editor-change".asInstanceOf[`editor-change`]
+  @scala.inline
   def `selection-change`: `selection-change` = "selection-change".asInstanceOf[`selection-change`]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def `text-change`: `text-change` = "text-change".asInstanceOf[`text-change`]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
 }
 

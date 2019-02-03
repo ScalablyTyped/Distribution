@@ -131,10 +131,7 @@ class PhysicsEngine protected () extends IPhysicsEngine {
   override def setTimeStep(newTimeStep: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Class used to control physics engine
-  * @see http://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSGlobal("BABYLON.PhysicsEngine")
 @js.native
 object PhysicsEngine extends js.Object {

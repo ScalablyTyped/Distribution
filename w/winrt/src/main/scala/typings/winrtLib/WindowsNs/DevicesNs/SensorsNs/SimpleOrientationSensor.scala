@@ -14,6 +14,7 @@ class SimpleOrientationSensor () extends ISimpleOrientationSensor {
   override def getCurrentOrientation(): SimpleOrientation = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensor")
 @js.native
 object SimpleOrientationSensor extends js.Object {

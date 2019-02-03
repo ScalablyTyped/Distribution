@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 abstract class Packable ()
   extends cesiumLib.cesiumMod.CesiumNs.Packable
 
-// tslint:disable-next-line no-unnecessary-class
+/* static members */
 @JSImport("cesium", "Packable")
 @js.native
 object Packable extends js.Object {

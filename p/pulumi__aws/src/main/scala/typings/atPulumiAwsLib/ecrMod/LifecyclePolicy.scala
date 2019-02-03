@@ -20,6 +20,7 @@ class LifecyclePolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ecrLifecyclePolicyMod.LifecyclePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecr", "LifecyclePolicy")
 @js.native
 object LifecyclePolicy extends js.Object {

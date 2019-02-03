@@ -14,6 +14,7 @@ class HeadingPitchRoll ()
   def this(heading: scala.Double, pitch: scala.Double, roll: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "HeadingPitchRoll")
 @js.native
 object HeadingPitchRoll extends js.Object {

@@ -231,11 +231,7 @@ abstract class Light protected () extends Node {
   def transferToEffect(effect: Effect, lightIndex: java.lang.String): Light = js.native
 }
 
-/**
-  * Base class of all the lights in Babylon. It groups all the generic information about lights.
-  * Lights are used, as you would expect, to affect how meshes are seen, in terms of both illumination and colour.
-  * All meshes allow light to pass through them unless shadow generation is activated. The default number of lights allowed is four but this can be increased.
-  */
+/* static members */
 @JSGlobal("BABYLON.Light")
 @js.native
 object Light extends js.Object {

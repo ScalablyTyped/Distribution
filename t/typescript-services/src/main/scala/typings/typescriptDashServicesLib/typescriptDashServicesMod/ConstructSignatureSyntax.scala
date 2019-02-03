@@ -12,6 +12,7 @@ class ConstructSignatureSyntax protected ()
   def this(newKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ConstructSignatureSyntax")
 @js.native
 object ConstructSignatureSyntax extends js.Object {

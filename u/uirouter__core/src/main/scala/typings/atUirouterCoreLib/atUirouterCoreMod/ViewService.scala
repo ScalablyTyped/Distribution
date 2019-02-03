@@ -13,6 +13,7 @@ class ViewService protected ()
   def this(/** @hidden */ router: atUirouterCoreLib.libRouterMod.UIRouter) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "ViewService")
 @js.native
 object ViewService extends js.Object {

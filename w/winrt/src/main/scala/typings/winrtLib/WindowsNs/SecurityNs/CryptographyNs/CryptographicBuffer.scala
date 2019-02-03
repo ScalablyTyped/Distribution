@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CryptographicBuffer () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.CryptographicBuffer")
 @js.native
 object CryptographicBuffer extends js.Object {

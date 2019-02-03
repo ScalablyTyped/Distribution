@@ -12,6 +12,7 @@ class default protected ()
   def this(props: js.Any) = this()
 }
 
+/* static members */
 @JSImport("rc-swipeout", JSImport.Default)
 @js.native
 object default extends js.Object {

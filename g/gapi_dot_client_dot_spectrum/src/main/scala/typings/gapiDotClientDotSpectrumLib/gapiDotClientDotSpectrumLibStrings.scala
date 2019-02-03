@@ -12,7 +12,9 @@ object gapiDotClientDotSpectrumLibStrings {
   @js.native
   sealed trait v1explorer extends js.Object
   
+  @scala.inline
   def spectrum: spectrum = "spectrum".asInstanceOf[spectrum]
+  @scala.inline
   def v1explorer: v1explorer = "v1explorer".asInstanceOf[v1explorer]
 }
 

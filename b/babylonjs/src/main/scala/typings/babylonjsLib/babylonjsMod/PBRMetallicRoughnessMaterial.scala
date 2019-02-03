@@ -24,12 +24,7 @@ class PBRMetallicRoughnessMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The PBR material of BJS following the metal roughness convention.
-  *
-  * This fits to the PBR convention in the GLTF definition:
-  * https://github.com/KhronosGroup/glTF/tree/2.0/specification/2.0
-  */
+/* static members */
 @JSImport("babylonjs", "PBRMetallicRoughnessMaterial")
 @js.native
 object PBRMetallicRoughnessMaterial extends js.Object {

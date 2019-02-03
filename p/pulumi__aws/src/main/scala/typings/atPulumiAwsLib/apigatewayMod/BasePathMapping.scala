@@ -20,6 +20,7 @@ class BasePathMapping protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMappingArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "BasePathMapping")
 @js.native
 object BasePathMapping extends js.Object {

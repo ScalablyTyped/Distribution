@@ -29,6 +29,7 @@ class TypeStat () extends ITypeStat {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "TypeStat")
 @js.native
 object TypeStat extends js.Object {

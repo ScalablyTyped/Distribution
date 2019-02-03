@@ -37,6 +37,7 @@ class ResourceServer protected ()
   val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/resourceServer", "ResourceServer")
 @js.native
 object ResourceServer extends js.Object {

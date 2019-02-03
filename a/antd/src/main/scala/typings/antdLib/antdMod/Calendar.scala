@@ -12,6 +12,7 @@ class Calendar protected ()
   def this(props: antdLib.libCalendarMod.CalendarProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Calendar")
 @js.native
 object Calendar extends js.Object {

@@ -12,6 +12,7 @@ class PrintManager () extends IPrintManager {
   override var onprinttaskrequested: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Graphics.Printing.PrintManager")
 @js.native
 object PrintManager extends js.Object {

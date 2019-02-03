@@ -153,6 +153,7 @@ class EventDispatcher () extends js.Object {
   def willTrigger(`type`: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.EventDispatcher")
 @js.native
 object EventDispatcher extends js.Object {

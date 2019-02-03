@@ -69,6 +69,7 @@ class TabStrip protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.DataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.TabStrip")
 @js.native
 object TabStrip extends js.Object {

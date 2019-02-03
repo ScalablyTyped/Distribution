@@ -21,6 +21,7 @@ class XssMatchSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafXssMatchSetMod.XssMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf", "XssMatchSet")
 @js.native
 object XssMatchSet extends js.Object {

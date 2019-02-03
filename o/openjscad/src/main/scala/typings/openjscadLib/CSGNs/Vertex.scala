@@ -17,6 +17,7 @@ class Vertex protected ()
   def interpolate(other: Vertex, t: scala.Double): Vertex = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Vertex")
 @js.native
 object Vertex extends js.Object {

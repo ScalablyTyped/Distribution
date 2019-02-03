@@ -18,9 +18,7 @@ class Angle protected ()
   def this(radians: scala.Double) = this()
 }
 
-/**
-  * Defines angle representation
-  */
+/* static members */
 @JSImport("babylonjs", "Angle")
 @js.native
 object Angle extends js.Object {

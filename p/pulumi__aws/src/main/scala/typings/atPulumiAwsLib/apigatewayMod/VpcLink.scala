@@ -20,6 +20,7 @@ class VpcLink protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayVpcLinkMod.VpcLinkArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "VpcLink")
 @js.native
 object VpcLink extends js.Object {

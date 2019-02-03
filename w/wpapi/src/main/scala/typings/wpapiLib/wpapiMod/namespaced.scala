@@ -21,11 +21,7 @@ class namespaced () extends WPAPI {
   def this(options: wpapiLib.wpapiMod.WPAPINs.WPAPIOptions) = this()
 }
 
-/**
-  * REST API Client for WordPress
-  *
-  * @see http://wp-api.org/node-wpapi/api-reference/wpapi/1.1.2/WPAPI.html
-  */
+/* static members */
 @JSImport("wpapi", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

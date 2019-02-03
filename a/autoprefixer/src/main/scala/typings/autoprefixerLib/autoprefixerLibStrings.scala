@@ -9,6 +9,7 @@ object autoprefixerLibStrings {
   @js.native
   sealed trait `no-2009` extends js.Object
   
+  @scala.inline
   def `no-2009`: `no-2009` = "no-2009".asInstanceOf[`no-2009`]
 }
 

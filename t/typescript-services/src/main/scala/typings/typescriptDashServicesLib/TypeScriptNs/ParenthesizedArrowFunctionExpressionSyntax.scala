@@ -80,6 +80,7 @@ class ParenthesizedArrowFunctionExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ParenthesizedArrowFunctionExpressionSyntax")
 @js.native
 object ParenthesizedArrowFunctionExpressionSyntax extends js.Object {

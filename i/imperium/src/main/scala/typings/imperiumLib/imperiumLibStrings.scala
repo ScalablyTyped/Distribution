@@ -18,9 +18,13 @@ object imperiumLibStrings {
   @js.native
   sealed trait query extends js.Object
   
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def headers: headers = "headers".asInstanceOf[headers]
+  @scala.inline
   def params: params = "params".asInstanceOf[params]
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
 }
 

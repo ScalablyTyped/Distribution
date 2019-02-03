@@ -39,6 +39,7 @@ class Euler () extends js.Object {
   def toVector3(optionalResult: Vector3): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Euler")
 @js.native
 object Euler extends js.Object {

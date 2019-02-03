@@ -53,6 +53,7 @@ object inspectorNs extends js.Object {
   
   def getRulesPackages(): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] = js.native
   def getRulesPackages(opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.inspectorGetRulesPackagesMod.GetRulesPackagesResult] = js.native
+  /* static members */
   @js.native
   object AssessmentTarget extends js.Object {
     /**
@@ -77,6 +78,7 @@ object inspectorNs extends js.Object {
     ): atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTarget = js.native
   }
   
+  /* static members */
   @js.native
   object AssessmentTemplate extends js.Object {
     /**
@@ -101,6 +103,7 @@ object inspectorNs extends js.Object {
     ): atPulumiAwsLib.inspectorAssessmentTemplateMod.AssessmentTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object ResourceGroup extends js.Object {
     /**

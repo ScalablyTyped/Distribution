@@ -12,6 +12,7 @@ class TimeoutStream protected ()
   def this(time: scala.Double, scheduler: wonderDashFrpLib.distCommonjsCoreSchedulerMod.Scheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "TimeoutStream")
 @js.native
 object TimeoutStream extends js.Object {

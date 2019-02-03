@@ -18,9 +18,13 @@ object reactDashDaterangeDashPickerLibStrings {
   @js.native
   sealed trait single extends js.Object
   
+  @scala.inline
   def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def previous: previous = "previous".asInstanceOf[previous]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
 }
 

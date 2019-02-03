@@ -23,6 +23,7 @@ class Translator protected () extends js.Object {
   def computePosition(clientX: scala.Double, clientY: scala.Double): js.Any = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/utils/transformAwareTranslator", "Translator")
 @js.native
 object Translator extends js.Object {

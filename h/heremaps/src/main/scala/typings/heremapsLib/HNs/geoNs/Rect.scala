@@ -180,9 +180,7 @@ class Rect protected () extends js.Object {
   def resizeToCenter(center: IPoint, opt_out: Rect): Rect = js.native
 }
 
-/**
-  * This class represents a rectangular geographic area. The area is defined by four geographical coordinates two (left, right) longitudes and two (top, bottom) latitudes.
-  */
+/* static members */
 @JSGlobal("H.geo.Rect")
 @js.native
 object Rect extends js.Object {

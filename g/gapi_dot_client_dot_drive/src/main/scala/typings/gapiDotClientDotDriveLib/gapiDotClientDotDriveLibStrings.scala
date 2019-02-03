@@ -12,7 +12,9 @@ object gapiDotClientDotDriveLibStrings {
   @js.native
   sealed trait v3 extends js.Object
   
+  @scala.inline
   def drive: drive = "drive".asInstanceOf[drive]
+  @scala.inline
   def v3: v3 = "v3".asInstanceOf[v3]
 }
 

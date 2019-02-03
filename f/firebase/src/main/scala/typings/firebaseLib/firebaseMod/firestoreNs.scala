@@ -1117,6 +1117,7 @@ object firestoreNs extends js.Object {
   
   val CACHE_SIZE_UNLIMITED: scala.Double = js.native
   def setLogLevel(logLevel: firebaseLib.firebaseMod.firebaseNs.firestoreNs.LogLevel): scala.Unit = js.native
+  /* static members */
   @js.native
   object Blob extends js.Object {
     /**
@@ -1130,6 +1131,7 @@ object firestoreNs extends js.Object {
     def fromUint8Array(array: stdLib.Uint8Array): firebaseLib.firebaseMod.firebaseNs.firestoreNs.Blob = js.native
   }
   
+  /* static members */
   @js.native
   object FieldPath extends js.Object {
     /**
@@ -1139,6 +1141,7 @@ object firestoreNs extends js.Object {
     def documentId(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldPath = js.native
   }
   
+  /* static members */
   @js.native
   object FieldValue extends js.Object {
     /**
@@ -1175,6 +1178,7 @@ object firestoreNs extends js.Object {
     def serverTimestamp(): firebaseLib.firebaseMod.firebaseNs.firestoreNs.FieldValue = js.native
   }
   
+  /* static members */
   @js.native
   object Timestamp extends js.Object {
     /**

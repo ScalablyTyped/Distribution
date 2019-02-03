@@ -27,12 +27,19 @@ object commonDashTagsLibStrings {
   @js.native
   sealed trait start extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
 }
 

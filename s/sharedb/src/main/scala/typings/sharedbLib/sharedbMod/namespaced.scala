@@ -11,6 +11,7 @@ class namespaced () extends sharedb {
   def this(options: sharedbLib.Anon_Db) = this()
 }
 
+/* static members */
 @JSImport("sharedb", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

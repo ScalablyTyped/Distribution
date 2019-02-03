@@ -15,6 +15,7 @@ class Prompt protected () extends Dialog {
   var result: kendoDashUiLib.JQueryPromise[_] = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Prompt")
 @js.native
 object Prompt extends js.Object {

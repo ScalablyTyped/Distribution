@@ -18,9 +18,13 @@ object amplitudeDashJsLibStrings {
   @js.native
   sealed trait WARN extends js.Object
   
+  @scala.inline
   def DISABLE: DISABLE = "DISABLE".asInstanceOf[DISABLE]
+  @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
 }
 

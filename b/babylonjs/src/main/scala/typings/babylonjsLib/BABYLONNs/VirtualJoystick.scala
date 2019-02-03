@@ -84,9 +84,7 @@ class VirtualJoystick () extends js.Object {
   def setJoystickSensibility(newJoystickSensibility: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Class used to define virtual joystick (used in touch mode)
-  */
+/* static members */
 @JSGlobal("BABYLON.VirtualJoystick")
 @js.native
 object VirtualJoystick extends js.Object {

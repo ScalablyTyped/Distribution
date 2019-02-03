@@ -13,6 +13,7 @@ class MDCComponent[A, F /* <: atMaterialBaseLib.foundationMod.default[A] */] pro
   def this(root: stdLib.Element, foundation: F, args: js.Any*) = this()
 }
 
+/* static members */
 @JSImport("@material/base", "MDCComponent")
 @js.native
 object MDCComponent extends js.Object {

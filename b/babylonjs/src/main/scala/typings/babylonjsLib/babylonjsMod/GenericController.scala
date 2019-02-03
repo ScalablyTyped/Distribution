@@ -19,9 +19,7 @@ class GenericController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Generic Controller
-  */
+/* static members */
 @JSImport("babylonjs", "GenericController")
 @js.native
 object GenericController extends js.Object {

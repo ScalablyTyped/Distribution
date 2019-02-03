@@ -21,6 +21,7 @@ class NavigationTermSet () extends NavigationTermSetItem {
   def set_isNavigationTermSet(value: scala.Boolean): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Publishing.Navigation.NavigationTermSet")
 @js.native
 object NavigationTermSet extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Property () extends js.Object
 
+/* static members */
 @JSGlobal("SP.JsGrid.Property")
 @js.native
 object Property extends js.Object {

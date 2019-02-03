@@ -13,6 +13,7 @@ class TradeoffAnalyticsV1 protected () extends js.Object {
   def events(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "TradeoffAnalyticsV1")
 @js.native
 object TradeoffAnalyticsV1 extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends InputGroup
 
+/* static members */
 @JSImport("react-bootstrap/lib/InputGroup", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

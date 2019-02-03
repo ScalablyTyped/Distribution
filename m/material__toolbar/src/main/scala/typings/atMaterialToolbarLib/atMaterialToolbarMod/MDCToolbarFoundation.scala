@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCToolbarFoundation ()
   extends atMaterialToolbarLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/toolbar", "MDCToolbarFoundation")
 @js.native
 object MDCToolbarFoundation extends js.Object {

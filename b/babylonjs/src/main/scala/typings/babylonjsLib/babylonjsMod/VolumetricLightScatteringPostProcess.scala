@@ -27,9 +27,7 @@ class VolumetricLightScatteringPostProcess protected ()
   def this(name: java.lang.String, ratio: js.Any, camera: babylonjsLib.BABYLONNs.Camera, mesh: js.UndefOr[babylonjsLib.BABYLONNs.Mesh], samples: js.UndefOr[scala.Double], samplingMode: js.UndefOr[scala.Double], engine: js.UndefOr[babylonjsLib.BABYLONNs.Engine], reusable: js.UndefOr[scala.Boolean], scene: js.UndefOr[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  *  Inspired by http://http.developer.nvidia.com/GPUGems3/gpugems3_ch13.html
-  */
+/* static members */
 @JSImport("babylonjs", "VolumetricLightScatteringPostProcess")
 @js.native
 object VolumetricLightScatteringPostProcess extends js.Object {

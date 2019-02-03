@@ -45,18 +45,31 @@ object ramdaLibStrings {
   @js.native
   sealed trait `object` extends js.Object
   
+  @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
+  @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  @scala.inline
   def Evolvable: Evolvable = "Evolvable".asInstanceOf[Evolvable]
+  @scala.inline
   def Evolve: Evolve = "Evolve".asInstanceOf[Evolve]
+  @scala.inline
   def Function: Function = "Function".asInstanceOf[Function]
+  @scala.inline
   def Null: Null = "Null".asInstanceOf[Null]
+  @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
+  @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
+  @scala.inline
   def RegExp: RegExp = "RegExp".asInstanceOf[RegExp]
+  @scala.inline
   def String: String = "String".asInstanceOf[String]
+  @scala.inline
   def Undefined: Undefined = "Undefined".asInstanceOf[Undefined]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
 }
 

@@ -26,6 +26,7 @@ class ServiceDescriptorProto ()
   def setOptions(value: ServiceOptions): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "ServiceDescriptorProto")
 @js.native
 object ServiceDescriptorProto extends js.Object {

@@ -12,6 +12,7 @@ abstract class RalModule () extends js.Object {
   def getName(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("node-ral", "RalModule")
 @js.native
 object RalModule extends js.Object {

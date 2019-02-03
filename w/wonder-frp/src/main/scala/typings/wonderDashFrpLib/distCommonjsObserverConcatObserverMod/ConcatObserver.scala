@@ -14,6 +14,7 @@ class ConcatObserver protected ()
   var currentObserver: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/observer/ConcatObserver", "ConcatObserver")
 @js.native
 object ConcatObserver extends js.Object {

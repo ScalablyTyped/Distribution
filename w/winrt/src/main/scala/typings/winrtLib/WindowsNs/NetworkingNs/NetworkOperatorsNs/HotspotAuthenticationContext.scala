@@ -33,6 +33,7 @@ class HotspotAuthenticationContext () extends IHotspotAuthenticationContext {
   override def triggerAttentionRequired(packageRelativeApplicationId: java.lang.String, applicationParameters: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
 @js.native
 object HotspotAuthenticationContext extends js.Object {

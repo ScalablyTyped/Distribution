@@ -16,6 +16,7 @@ class FieldStat ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IFieldStat) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "FieldStat")
 @js.native
 object FieldStat extends js.Object {

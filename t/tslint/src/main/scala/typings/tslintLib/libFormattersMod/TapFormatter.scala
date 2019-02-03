@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TapFormatter ()
   extends tslintLib.libFormattersTapFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "TapFormatter")
 @js.native
 object TapFormatter extends js.Object {

@@ -66,6 +66,7 @@ class VoidExpressionSyntax protected ()
   def withVoidKeyword(voidKeyword: ISyntaxToken): VoidExpressionSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.VoidExpressionSyntax")
 @js.native
 object VoidExpressionSyntax extends js.Object {

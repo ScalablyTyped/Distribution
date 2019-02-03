@@ -23,11 +23,7 @@ class namespaced[T] protected ()
   def this(options: typeaheadLib.BloodhoundNs.BloodhoundOptions[T]) = this()
 }
 
-/**
-  * Bloodhound is the typeahead.js suggestion engine. Bloodhound is robust,
-  * flexible, and offers advanced functionalities such as prefetching,
-  * intelligent caching, fast lookups, and backfilling with remote data.
-  */
+/* static members */
 @JSImport("bloodhound", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

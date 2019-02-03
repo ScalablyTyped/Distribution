@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Time ()
   extends plottableLib.buildSrcScalesTimeScaleMod.Time
 
+/* static members */
 @JSImport("plottable/build/src/scales", "Time")
 @js.native
 object Time extends js.Object {

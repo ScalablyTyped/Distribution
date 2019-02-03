@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Program ()
   extends webdriverDashManagerLib.builtLibCliProgramsMod.Program
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/cli", "Program")
 @js.native
 object Program extends js.Object {

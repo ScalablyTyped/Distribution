@@ -11,6 +11,7 @@ class default protected () extends Tooltip {
   def this(props: TooltipProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/tooltip", JSImport.Default)
 @js.native
 object default extends js.Object {

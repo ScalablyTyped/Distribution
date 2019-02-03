@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Plot ()
   extends plottableLib.buildSrcPlotsPlotMod.Plot
 
+/* static members */
 @JSImport("plottable", "Plot")
 @js.native
 object Plot extends js.Object {

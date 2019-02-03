@@ -35,6 +35,7 @@ class NgForOf[T] protected ()
   def ngForTrackBy(index: scala.Double, item: T): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@angular/common/src/directives/ng_for_of", "NgForOf")
 @js.native
 object NgForOf extends js.Object {

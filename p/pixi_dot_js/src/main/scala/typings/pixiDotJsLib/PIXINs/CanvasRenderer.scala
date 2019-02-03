@@ -98,6 +98,7 @@ class CanvasRenderer () extends SystemRenderer {
   def setBlendMode(blendMode: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.CanvasRenderer")
 @js.native
 object CanvasRenderer extends js.Object {

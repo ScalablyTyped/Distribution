@@ -86,6 +86,7 @@ class Quaternion () extends js.Object {
   def toArray(xyzw: js.Array[scala.Double], offset: scala.Double): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Quaternion")
 @js.native
 object Quaternion extends js.Object {

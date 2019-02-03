@@ -17,6 +17,7 @@ class SearchBar protected () extends js.Object {
   def submitHandle(e: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "SearchBar")
 @js.native
 object SearchBar extends js.Object {

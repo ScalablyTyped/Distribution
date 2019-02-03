@@ -19,6 +19,7 @@ class GameObject ()
   var transform_GameObject: wonderDotJsLib.distEs2015ComponentTransformThreeDTransformMod.ThreeDTransform = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/gameObject/GameObject", "GameObject")
 @js.native
 object GameObject extends js.Object {

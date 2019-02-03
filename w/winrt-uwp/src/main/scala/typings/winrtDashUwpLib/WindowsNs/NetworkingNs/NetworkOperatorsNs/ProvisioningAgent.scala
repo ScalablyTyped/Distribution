@@ -25,7 +25,7 @@ class ProvisioningAgent () extends js.Object {
   def provisionFromXmlDocumentAsync(provisioningXmlDocument: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ProvisionFromXmlDocumentResults] = js.native
 }
 
-/** Represents an agent that provisions connectivity and subscription information with a network provider. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.ProvisioningAgent")
 @js.native
 object ProvisioningAgent extends js.Object {

@@ -49,6 +49,7 @@ class Marker () extends MVCObject {
   def setZIndex(zIndex: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("google.maps.Marker")
 @js.native
 object Marker extends js.Object {

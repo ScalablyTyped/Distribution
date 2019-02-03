@@ -19,6 +19,7 @@ class MDCRadio ()
   var value: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@material/radio", "MDCRadio")
 @js.native
 object MDCRadio extends js.Object {

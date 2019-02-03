@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RadioManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.form.RadioManager")
 @js.native
 object RadioManager extends js.Object {

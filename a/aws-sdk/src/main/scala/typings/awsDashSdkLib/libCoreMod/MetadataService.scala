@@ -15,6 +15,7 @@ class MetadataService ()
   def this(options: awsDashSdkLib.libMetadataUnderscoreServiceMod.MetadataServiceOptions) = this()
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/core", "MetadataService")
 @js.native
 object MetadataService extends js.Object {

@@ -26,6 +26,7 @@ class Trigger protected ()
   val triggers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Branches]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codecommit/trigger", "Trigger")
 @js.native
 object Trigger extends js.Object {

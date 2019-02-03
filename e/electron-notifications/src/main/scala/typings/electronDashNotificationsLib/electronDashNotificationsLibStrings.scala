@@ -15,8 +15,11 @@ object electronDashNotificationsLibStrings {
   @js.native
   sealed trait swipedRight extends js.Object
   
+  @scala.inline
   def buttonClicked: buttonClicked = "buttonClicked".asInstanceOf[buttonClicked]
+  @scala.inline
   def clicked: clicked = "clicked".asInstanceOf[clicked]
+  @scala.inline
   def swipedRight: swipedRight = "swipedRight".asInstanceOf[swipedRight]
 }
 

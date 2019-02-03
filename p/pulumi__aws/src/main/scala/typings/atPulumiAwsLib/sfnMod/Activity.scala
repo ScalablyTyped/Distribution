@@ -21,6 +21,7 @@ class Activity protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sfnActivityMod.ActivityArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sfn", "Activity")
 @js.native
 object Activity extends js.Object {

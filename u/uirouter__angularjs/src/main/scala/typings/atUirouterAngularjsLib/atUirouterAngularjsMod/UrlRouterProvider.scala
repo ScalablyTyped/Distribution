@@ -13,6 +13,7 @@ class UrlRouterProvider protected ()
   def this(/** @hidden */ router: atUirouterCoreLib.atUirouterCoreMod.UIRouter) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/angularjs", "UrlRouterProvider")
 @js.native
 object UrlRouterProvider extends js.Object {

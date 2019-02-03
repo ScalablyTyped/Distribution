@@ -83,7 +83,7 @@ abstract class ContentIndexer () extends js.Object {
   def updateAsync(indexableContent: IIndexableContent): js.Any = js.native
 }
 
-/** Enables Windows Store apps to place content properties in the system index. */
+/* static members */
 @JSGlobal("Windows.Storage.Search.ContentIndexer")
 @js.native
 object ContentIndexer extends js.Object {

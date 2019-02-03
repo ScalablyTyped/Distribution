@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Empty () extends Node
 
+/* static members */
 @JSImport("rdflib", "Empty")
 @js.native
 object Empty extends js.Object {

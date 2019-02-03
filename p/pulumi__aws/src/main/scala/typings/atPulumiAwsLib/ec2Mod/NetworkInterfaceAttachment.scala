@@ -20,6 +20,7 @@ class NetworkInterfaceAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2NetworkInterfaceAttachmentMod.NetworkInterfaceAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "NetworkInterfaceAttachment")
 @js.native
 object NetworkInterfaceAttachment extends js.Object {

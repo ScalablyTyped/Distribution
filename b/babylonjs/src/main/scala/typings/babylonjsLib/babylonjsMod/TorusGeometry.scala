@@ -69,10 +69,7 @@ class TorusGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a new torus geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#torus
-  */
+/* static members */
 @JSImport("babylonjs", "TorusGeometry")
 @js.native
 object TorusGeometry extends js.Object {

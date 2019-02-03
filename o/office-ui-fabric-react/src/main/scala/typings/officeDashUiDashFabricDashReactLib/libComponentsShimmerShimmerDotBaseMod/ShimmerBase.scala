@@ -19,6 +19,7 @@ class ShimmerBase protected ()
   def componentWillReceiveProps_MShimmerBase(nextProps: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerDotTypesMod.IShimmerProps): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Shimmer/Shimmer.base", "ShimmerBase")
 @js.native
 object ShimmerBase extends js.Object {

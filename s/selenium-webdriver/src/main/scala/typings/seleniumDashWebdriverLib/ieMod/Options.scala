@@ -162,6 +162,7 @@ class Options () extends js.Object {
   def usePerProcessProxy(enable: scala.Boolean): Options = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver/ie", "Options")
 @js.native
 object Options extends js.Object {

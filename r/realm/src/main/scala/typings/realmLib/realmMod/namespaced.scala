@@ -16,6 +16,7 @@ class namespaced ()
   def this(path: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("realm", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

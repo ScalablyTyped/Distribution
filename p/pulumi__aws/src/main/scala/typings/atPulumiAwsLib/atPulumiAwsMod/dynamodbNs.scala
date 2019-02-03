@@ -62,6 +62,7 @@ object dynamodbNs extends js.Object {
     args: atPulumiAwsLib.dynamodbGetTableMod.GetTableArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.dynamodbGetTableMod.GetTableResult] = js.native
+  /* static members */
   @js.native
   object GlobalTable extends js.Object {
     /**
@@ -86,6 +87,7 @@ object dynamodbNs extends js.Object {
     ): atPulumiAwsLib.dynamodbGlobalTableMod.GlobalTable = js.native
   }
   
+  /* static members */
   @js.native
   object Table extends js.Object {
     /**
@@ -110,6 +112,7 @@ object dynamodbNs extends js.Object {
     ): atPulumiAwsLib.dynamodbDynamodbMixinsMod.dynamodbTableMod.Table = js.native
   }
   
+  /* static members */
   @js.native
   object TableItem extends js.Object {
     /**

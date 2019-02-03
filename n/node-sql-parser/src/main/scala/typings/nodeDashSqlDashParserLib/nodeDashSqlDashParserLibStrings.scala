@@ -48,19 +48,33 @@ object nodeDashSqlDashParserLibStrings {
   @js.native
   sealed trait udpate extends js.Object
   
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
+  @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
+  @scala.inline
   def DISTINCT: DISTINCT = "DISTINCT".asInstanceOf[DISTINCT]
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
+  @scala.inline
   def column_ref: column_ref = "column_ref".asInstanceOf[column_ref]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def dual: dual = "dual".asInstanceOf[dual]
+  @scala.inline
   def expr_list: expr_list = "expr_list".asInstanceOf[expr_list]
+  @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def table: table = "table".asInstanceOf[table]
+  @scala.inline
   def udpate: udpate = "udpate".asInstanceOf[udpate]
 }
 

@@ -26,6 +26,7 @@ class Type () extends IType {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "Type")
 @js.native
 object Type extends js.Object {

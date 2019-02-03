@@ -12,6 +12,7 @@ class TypeParameterSyntax protected ()
   def this(identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, constraint: typescriptDashServicesLib.TypeScriptNs.ConstraintSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeParameterSyntax")
 @js.native
 object TypeParameterSyntax extends js.Object {

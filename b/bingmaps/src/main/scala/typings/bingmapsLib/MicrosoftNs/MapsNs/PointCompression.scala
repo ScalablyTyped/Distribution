@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PointCompression () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.Maps.PointCompression")
 @js.native
 object PointCompression extends js.Object {

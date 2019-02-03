@@ -50,6 +50,7 @@ class DigitalGauge protected ()
   def setValue(itemIndex: scala.Double, value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.DigitalGauge")
 @js.native
 object DigitalGauge extends js.Object {

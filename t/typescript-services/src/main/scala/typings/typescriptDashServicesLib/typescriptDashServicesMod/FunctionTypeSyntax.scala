@@ -12,6 +12,7 @@ class FunctionTypeSyntax protected ()
   def this(typeParameterList: typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, parameterList: typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, equalsGreaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, `type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "FunctionTypeSyntax")
 @js.native
 object FunctionTypeSyntax extends js.Object {

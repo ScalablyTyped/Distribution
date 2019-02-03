@@ -25,6 +25,8 @@ package object ArangoDBNs {
   type IndexType = arangodbLib.arangodbLibStrings.hash | arangodbLib.arangodbLibStrings.skiplist | arangodbLib.arangodbLibStrings.fulltext | arangodbLib.arangodbLibStrings.geo
   type JwtAlgorithm = arangodbLib.arangodbLibStrings.HS512 | arangodbLib.arangodbLibStrings.HS384 | arangodbLib.arangodbLibStrings.HS256
   type KeyGeneratorType = arangodbLib.arangodbLibStrings.traditional | arangodbLib.arangodbLibStrings.autoincrement
-  type Patch[T] = arangodbLib.arangodbLibStrings.Patch with T
+  type Patch[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? T[K] | object}
+    */ arangodbLib.arangodbLibStrings.Patch with T
   type ViewType = arangodbLib.arangodbLibStrings.arangosearch
 }

@@ -20,6 +20,7 @@ class EventStream protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointEventStreamMod.EventStreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "EventStream")
 @js.native
 object EventStream extends js.Object {

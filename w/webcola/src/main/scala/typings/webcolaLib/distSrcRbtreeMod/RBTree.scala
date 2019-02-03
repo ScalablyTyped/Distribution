@@ -13,6 +13,7 @@ class RBTree[T] protected () extends TreeBase {
   def remove(data: js.Any): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/rbtree", "RBTree")
 @js.native
 object RBTree extends js.Object {

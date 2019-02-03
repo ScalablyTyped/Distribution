@@ -20,6 +20,7 @@ class Accelerometer () extends IAccelerometer {
   override def getCurrentReading(): AccelerometerReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Accelerometer")
 @js.native
 object Accelerometer extends js.Object {

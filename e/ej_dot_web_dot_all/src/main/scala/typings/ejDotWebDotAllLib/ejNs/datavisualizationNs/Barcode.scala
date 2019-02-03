@@ -26,6 +26,7 @@ class Barcode protected ()
   def enable(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Barcode")
 @js.native
 object Barcode extends js.Object {

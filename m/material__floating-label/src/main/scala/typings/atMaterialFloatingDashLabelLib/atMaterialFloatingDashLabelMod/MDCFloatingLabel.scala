@@ -27,6 +27,7 @@ class MDCFloatingLabel ()
   def shake(shouldShake: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/floating-label", "MDCFloatingLabel")
 @js.native
 object MDCFloatingLabel extends js.Object {

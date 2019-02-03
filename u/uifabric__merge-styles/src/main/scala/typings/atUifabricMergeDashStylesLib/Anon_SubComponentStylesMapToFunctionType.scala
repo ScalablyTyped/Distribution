@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_SubComponentStylesMapToFunctionType[TStyleSet /* <: atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[TStyleSet] */] extends js.Object {
-  var subComponentStyles: atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.Anon_SubComponentStylesMapToFunctionType with TStyleSet
+  var subComponentStyles: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof TStyleSet['subComponentStyles'] ]: @uifabric/merge-styles.@uifabric/merge-styles/lib/IStyleSet.__MapToFunctionType<TStyleSet['subComponentStyles'][P]>}
+    */ atUifabricMergeDashStylesLib.atUifabricMergeDashStylesLibStrings.Anon_SubComponentStylesMapToFunctionType with TStyleSet
 }
 

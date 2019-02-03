@@ -18,6 +18,7 @@ class GenericTypeSyntax protected () extends SyntaxNode {
   def withTypeArgumentList(typeArgumentList: TypeArgumentListSyntax): GenericTypeSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.GenericTypeSyntax")
 @js.native
 object GenericTypeSyntax extends js.Object {

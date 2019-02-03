@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Config () extends js.Object
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/config", "Config")
 @js.native
 object Config extends js.Object {

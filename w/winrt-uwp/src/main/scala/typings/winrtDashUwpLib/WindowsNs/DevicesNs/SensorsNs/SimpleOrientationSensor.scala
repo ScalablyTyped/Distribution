@@ -39,7 +39,7 @@ abstract class SimpleOrientationSensor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a simple orientation sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.SimpleOrientationSensor")
 @js.native
 object SimpleOrientationSensor extends js.Object {

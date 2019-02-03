@@ -32,6 +32,7 @@ class CallControl () extends ICallControl {
   override def indicateNewOutgoingCall(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Media.Devices.CallControl")
 @js.native
 object CallControl extends js.Object {

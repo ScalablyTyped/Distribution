@@ -16,6 +16,7 @@ class DiscoveryV1Experimental protected () extends js.Object {
   def query(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "DiscoveryV1Experimental")
 @js.native
 object DiscoveryV1Experimental extends js.Object {

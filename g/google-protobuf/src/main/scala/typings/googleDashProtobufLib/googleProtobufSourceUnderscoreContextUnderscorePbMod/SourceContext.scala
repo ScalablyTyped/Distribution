@@ -13,6 +13,7 @@ class SourceContext ()
   def setFileName(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/source_context_pb", "SourceContext")
 @js.native
 object SourceContext extends js.Object {

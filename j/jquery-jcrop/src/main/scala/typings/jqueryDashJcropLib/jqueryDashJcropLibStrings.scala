@@ -30,13 +30,21 @@ object jqueryDashJcropLibStrings {
   @js.native
   sealed trait w extends js.Object
   
+  @scala.inline
   def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def n: n = "n".asInstanceOf[n]
+  @scala.inline
   def ne: ne = "ne".asInstanceOf[ne]
+  @scala.inline
   def nw: nw = "nw".asInstanceOf[nw]
+  @scala.inline
   def s: s = "s".asInstanceOf[s]
+  @scala.inline
   def se: se = "se".asInstanceOf[se]
+  @scala.inline
   def sw: sw = "sw".asInstanceOf[sw]
+  @scala.inline
   def w: w = "w".asInstanceOf[w]
 }
 

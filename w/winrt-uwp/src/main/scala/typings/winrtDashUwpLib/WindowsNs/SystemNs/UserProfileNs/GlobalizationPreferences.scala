@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GlobalizationPreferences () extends js.Object
 
-/** A static class for holding various user globalization preferences. */
+/* static members */
 @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
 @js.native
 object GlobalizationPreferences extends js.Object {

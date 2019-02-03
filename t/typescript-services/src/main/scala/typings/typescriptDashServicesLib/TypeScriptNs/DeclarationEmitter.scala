@@ -76,6 +76,7 @@ class DeclarationEmitter protected () extends js.Object {
   /* private */ def writeDeclarationComments(declComments: js.Any, endLine: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.DeclarationEmitter")
 @js.native
 object DeclarationEmitter extends js.Object {

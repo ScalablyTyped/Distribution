@@ -63,9 +63,7 @@ class Template protected () extends js.Object {
   def renderItem[T](item: winjsLib.WinJSNs.Promise[T], recyled: stdLib.HTMLElement): winjsLib.Anon_Element = js.native
 }
 
-/**
-  * Provides a reusable declarative binding element.
-  **/
+/* static members */
 @JSGlobal("WinJS.Binding.Template")
 @js.native
 object Template extends js.Object {

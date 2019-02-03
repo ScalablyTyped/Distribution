@@ -12,6 +12,7 @@ abstract class DataMask () extends js.Object {
   def unmaskBitMatrix(bits: js.Array[scala.Double], dimension: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("DataMask")
 @js.native
 object DataMask extends js.Object {

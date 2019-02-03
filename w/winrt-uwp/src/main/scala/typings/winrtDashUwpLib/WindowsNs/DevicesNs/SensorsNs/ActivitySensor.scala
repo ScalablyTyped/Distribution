@@ -45,7 +45,7 @@ abstract class ActivitySensor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents an activity sensor that provides the activity and status of a sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.ActivitySensor")
 @js.native
 object ActivitySensor extends js.Object {

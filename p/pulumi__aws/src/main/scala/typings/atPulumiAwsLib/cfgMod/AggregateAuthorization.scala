@@ -20,6 +20,7 @@ class AggregateAuthorization protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cfgAggregateAuthorizationMod.AggregateAuthorizationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg", "AggregateAuthorization")
 @js.native
 object AggregateAuthorization extends js.Object {

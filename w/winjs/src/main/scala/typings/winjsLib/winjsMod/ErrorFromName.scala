@@ -25,11 +25,7 @@ class ErrorFromName protected ()
   def this(name: java.lang.String, message: java.lang.String) = this()
 }
 
-//#endregion Properties
-//#region Objects
-/**
-  * An error object.
-  **/
+/* static members */
 @JSImport("winjs", "ErrorFromName")
 @js.native
 object ErrorFromName extends js.Object {

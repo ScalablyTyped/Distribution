@@ -21,6 +21,7 @@ class Organization protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.organizationsOrganizationMod.OrganizationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/organizations", "Organization")
 @js.native
 object Organization extends js.Object {

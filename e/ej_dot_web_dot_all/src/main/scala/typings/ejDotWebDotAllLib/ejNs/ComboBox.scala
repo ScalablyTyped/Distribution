@@ -45,6 +45,7 @@ class ComboBox protected () extends Widget {
   def showPopup(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ComboBox")
 @js.native
 object ComboBox extends js.Object {

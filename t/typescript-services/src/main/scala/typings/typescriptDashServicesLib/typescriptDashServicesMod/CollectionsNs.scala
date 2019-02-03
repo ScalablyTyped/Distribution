@@ -27,6 +27,7 @@ object CollectionsNs extends js.Object {
   def createHashTable[TKey, TValue](capacity: scala.Double): typescriptDashServicesLib.TypeScriptNs.CollectionsNs.HashTable[TKey, TValue] = js.native
   def createHashTable[TKey, TValue](capacity: scala.Double, hash: js.Function1[/* k */ TKey, scala.Double]): typescriptDashServicesLib.TypeScriptNs.CollectionsNs.HashTable[TKey, TValue] = js.native
   def identityHashCode(value: js.Any): scala.Double = js.native
+  /* static members */
   @js.native
   object StringTable extends js.Object {
     /* private */ def textCharArrayEquals(text: js.Any, array: js.Any, start: js.Any, length: js.Any): js.Any = js.native

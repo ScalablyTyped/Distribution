@@ -57,6 +57,7 @@ class Database () extends js.Object {
   def useOnly(useTables: js.Any*): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("node-mysql-wrapper", "Database")
 @js.native
 object Database extends js.Object {

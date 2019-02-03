@@ -27,12 +27,19 @@ object blockingDashProxyLibStrings {
   @js.native
   sealed trait sessionId extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def elementId: elementId = "elementId".asInstanceOf[elementId]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def propertyName: propertyName = "propertyName".asInstanceOf[propertyName]
+  @scala.inline
   def sessionId: sessionId = "sessionId".asInstanceOf[sessionId]
 }
 

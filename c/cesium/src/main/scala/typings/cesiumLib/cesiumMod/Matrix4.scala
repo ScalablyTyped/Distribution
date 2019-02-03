@@ -12,6 +12,7 @@ class Matrix4 protected ()
   def this(column0Row0: js.UndefOr[scala.Double], column1Row0: js.UndefOr[scala.Double], column2Row0: js.UndefOr[scala.Double], column3Row0: js.UndefOr[scala.Double], column0Row1: js.UndefOr[scala.Double], column1Row1: js.UndefOr[scala.Double], column2Row1: js.UndefOr[scala.Double], column3Row1: js.UndefOr[scala.Double], column0Row2: js.UndefOr[scala.Double], column1Row2: js.UndefOr[scala.Double], column2Row2: js.UndefOr[scala.Double], column3Row2: js.UndefOr[scala.Double], column0Row3: js.UndefOr[scala.Double], column1Row3: js.UndefOr[scala.Double], column2Row3: js.UndefOr[scala.Double], column3Row3: js.UndefOr[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Matrix4")
 @js.native
 object Matrix4 extends js.Object {

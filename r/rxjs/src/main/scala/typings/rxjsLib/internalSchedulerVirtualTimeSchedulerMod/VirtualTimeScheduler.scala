@@ -38,6 +38,7 @@ class VirtualTimeScheduler ()
   def flush(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/scheduler/VirtualTimeScheduler", "VirtualTimeScheduler")
 @js.native
 object VirtualTimeScheduler extends js.Object {

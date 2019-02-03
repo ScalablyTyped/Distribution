@@ -12,6 +12,7 @@ class BuildApi protected () extends IBuildApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/BuildApi", "BuildApi")
 @js.native
 object BuildApi extends js.Object {

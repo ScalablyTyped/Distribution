@@ -15,8 +15,11 @@ object postcssDashModulesDashLocalDashByDashDefaultLibStrings {
   @js.native
   sealed trait pure extends js.Object
   
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def local: local = "local".asInstanceOf[local]
+  @scala.inline
   def pure: pure = "pure".asInstanceOf[pure]
 }
 

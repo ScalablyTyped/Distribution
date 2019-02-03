@@ -57,13 +57,7 @@ class Point protected () extends IPoint {
   def walk(bearing: scala.Double, distance: scala.Double, opt_overGreatCircle: scala.Boolean): Point = js.native
 }
 
-/**
-  * Class represents a geographical point, which is defined by the latitude, longitude and optional altitude.
-  * @property lat {H.geo.Latitude} - The latitude coordinate.
-  * @property lng {H.geo.Longitude} - The longitude coordinate.
-  * @property alt {H.geo.Altitude} - The altitude coordinate.
-  * @property ctx {H.geo.AltitudeContext} - The altitude context.
-  */
+/* static members */
 @JSGlobal("H.geo.Point")
 @js.native
 object Point extends js.Object {

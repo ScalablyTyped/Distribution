@@ -131,6 +131,7 @@ class Grammar protected () extends js.Object {
   /* protected */ def writeFileSync(file: java.lang.String, content: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("grammarkdown/dist/grammar", "Grammar")
 @js.native
 object Grammar extends js.Object {

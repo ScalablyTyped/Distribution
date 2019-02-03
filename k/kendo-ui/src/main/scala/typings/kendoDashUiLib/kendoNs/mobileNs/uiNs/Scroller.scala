@@ -26,6 +26,7 @@ class Scroller protected () extends Widget {
   def zoomOut(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Scroller")
 @js.native
 object Scroller extends js.Object {

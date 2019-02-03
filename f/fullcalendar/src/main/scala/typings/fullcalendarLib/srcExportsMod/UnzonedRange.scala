@@ -13,6 +13,7 @@ class UnzonedRange ()
   def this(startInput: js.Any, endInput: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/src/exports", "UnzonedRange")
 @js.native
 object UnzonedRange extends js.Object {

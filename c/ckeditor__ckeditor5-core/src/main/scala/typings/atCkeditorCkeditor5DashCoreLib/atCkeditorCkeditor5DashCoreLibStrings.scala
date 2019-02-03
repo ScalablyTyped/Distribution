@@ -18,9 +18,13 @@ object atCkeditorCkeditor5DashCoreLibStrings {
   @js.native
   sealed trait ready extends js.Object
   
+  @scala.inline
   def PendingActions: PendingActions = "PendingActions".asInstanceOf[PendingActions]
+  @scala.inline
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
+  @scala.inline
   def initializing: initializing = "initializing".asInstanceOf[initializing]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
 }
 

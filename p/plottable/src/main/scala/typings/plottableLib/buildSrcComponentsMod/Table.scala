@@ -26,6 +26,7 @@ class Table ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "Table")
 @js.native
 object Table extends js.Object {

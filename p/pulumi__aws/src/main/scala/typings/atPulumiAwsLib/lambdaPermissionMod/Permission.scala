@@ -65,6 +65,7 @@ class Permission protected ()
   val statementIdPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda/permission", "Permission")
 @js.native
 object Permission extends js.Object {

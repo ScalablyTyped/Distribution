@@ -14,6 +14,7 @@ class Constants protected () extends js.Object {
   val topBarHeight: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("react-native-navigation/lib/dist/adapters/Constants", "Constants")
 @js.native
 object Constants extends js.Object {

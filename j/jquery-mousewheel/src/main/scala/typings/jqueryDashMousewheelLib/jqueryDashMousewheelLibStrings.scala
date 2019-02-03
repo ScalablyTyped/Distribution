@@ -9,6 +9,7 @@ object jqueryDashMousewheelLibStrings {
   @js.native
   sealed trait mousewheel extends js.Object
   
+  @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
 }
 

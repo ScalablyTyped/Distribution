@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "SegmentedControlIOS")
 @js.native
-class SegmentedControlIOS () extends js.Object
+class SegmentedControlIOS ()
+  extends reactLib.reactMod.Component[SegmentedControlIOSProps, js.Object, js.Any]
 

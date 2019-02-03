@@ -11,6 +11,7 @@ class default protected () extends Slider {
   def this(props: SliderProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/slider", JSImport.Default)
 @js.native
 object default extends js.Object {

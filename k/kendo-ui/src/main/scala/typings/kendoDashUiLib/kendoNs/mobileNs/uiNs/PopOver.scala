@@ -17,6 +17,7 @@ class PopOver protected () extends Widget {
   def open(target: kendoDashUiLib.JQuery): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.PopOver")
 @js.native
 object PopOver extends js.Object {

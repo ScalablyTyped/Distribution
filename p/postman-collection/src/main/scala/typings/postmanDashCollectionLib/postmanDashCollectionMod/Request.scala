@@ -43,6 +43,7 @@ class Request protected () extends Property[RequestDefinition] {
   def upsertHeader(header: HeaderDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Request")
 @js.native
 object Request extends js.Object {

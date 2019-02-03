@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MKComponent[P, S] ()
   extends reactLib.reactMod.Component[P, S, js.Any]
 
+/* static members */
 @JSImport("react-native-material-kit", "MKComponent")
 @js.native
 object MKComponent extends js.Object {

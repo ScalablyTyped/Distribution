@@ -21,10 +21,15 @@ object globalDashTunnelDashNgLibStrings {
   @js.native
   sealed trait neither extends js.Object
   
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def `http:`: `http:` = "http:".asInstanceOf[`http:`]
+  @scala.inline
   def https: https = "https".asInstanceOf[https]
+  @scala.inline
   def `https:`: `https:` = "https:".asInstanceOf[`https:`]
+  @scala.inline
   def neither: neither = "neither".asInstanceOf[neither]
 }
 

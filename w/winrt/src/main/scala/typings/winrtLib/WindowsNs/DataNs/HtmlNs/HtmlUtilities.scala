@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HtmlUtilities () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Data.Html.HtmlUtilities")
 @js.native
 object HtmlUtilities extends js.Object {

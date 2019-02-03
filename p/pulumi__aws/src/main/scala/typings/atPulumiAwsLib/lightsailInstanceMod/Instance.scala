@@ -64,6 +64,7 @@ class Instance protected ()
   val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail/instance", "Instance")
 @js.native
 object Instance extends js.Object {

@@ -124,6 +124,7 @@ class Gpio protected ()
   def trigger(pulseLen: scala.Double, level: scala.Double): Gpio = js.native
 }
 
+/* static members */
 @JSImport("pigpio", "Gpio")
 @js.native
 object Gpio extends js.Object {

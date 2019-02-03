@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InteractiveSession () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession")
 @js.native
 object InteractiveSession extends js.Object {

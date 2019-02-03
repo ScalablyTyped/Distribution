@@ -20,6 +20,7 @@ class DataSource protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appsyncDataSourceMod.DataSourceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appsync", "DataSource")
 @js.native
 object DataSource extends js.Object {

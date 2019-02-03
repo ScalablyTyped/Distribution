@@ -20,6 +20,7 @@ class Pane protected () extends Widget {
   def view(): View = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Pane")
 @js.native
 object Pane extends js.Object {

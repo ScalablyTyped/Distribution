@@ -11,6 +11,7 @@ class namespaced protected () extends MIMEType {
   def this(s: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("whatwg-mimetype", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -24,6 +24,7 @@ class LngLat protected ()
   override def wrap(): mapboxDashGlLib.mapboxDashGlMod.mapboxglNs.LngLat = js.native
 }
 
+/* static members */
 @JSImport("mapbox-gl", "LngLat")
 @js.native
 object LngLat extends js.Object {

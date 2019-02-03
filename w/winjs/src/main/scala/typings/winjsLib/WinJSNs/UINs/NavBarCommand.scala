@@ -92,9 +92,7 @@ class NavBarCommand () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Represents a navigation command in a NavBarContainer.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.NavBarCommand")
 @js.native
 object NavBarCommand extends js.Object {

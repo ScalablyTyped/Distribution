@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Accelerometer () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Accelerometer")
 @js.native
 object Accelerometer extends js.Object {

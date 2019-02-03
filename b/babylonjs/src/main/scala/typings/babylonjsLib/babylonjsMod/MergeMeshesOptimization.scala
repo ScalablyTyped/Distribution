@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class MergeMeshesOptimization ()
   extends babylonjsLib.BABYLONNs.MergeMeshesOptimization
 
-/**
-  * Defines an optimization used to merge meshes with compatible materials
-  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-  */
+/* static members */
 @JSImport("babylonjs", "MergeMeshesOptimization")
 @js.native
 object MergeMeshesOptimization extends js.Object {

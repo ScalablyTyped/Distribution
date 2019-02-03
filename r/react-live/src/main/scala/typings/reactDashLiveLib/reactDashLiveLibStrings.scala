@@ -12,7 +12,9 @@ object reactDashLiveLibStrings {
   @js.native
   sealed trait scope extends js.Object
   
+  @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
 }
 

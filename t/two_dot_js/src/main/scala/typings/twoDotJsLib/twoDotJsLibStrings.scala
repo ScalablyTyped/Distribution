@@ -24,11 +24,17 @@ object twoDotJsLibStrings {
   @js.native
   sealed trait width extends js.Object
   
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def width: width = "width".asInstanceOf[width]
 }
 

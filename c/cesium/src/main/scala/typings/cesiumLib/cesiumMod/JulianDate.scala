@@ -14,6 +14,7 @@ class JulianDate ()
   def this(julianDayNumber: scala.Double, secondsOfDay: scala.Double, timeStandard: cesiumLib.cesiumMod.CesiumNs.TimeStandard) = this()
 }
 
+/* static members */
 @JSImport("cesium", "JulianDate")
 @js.native
 object JulianDate extends js.Object {

@@ -27,12 +27,19 @@ object reactDashNativeDashPhotoDashViewLibStrings {
   @js.native
   sealed trait fitXY extends js.Object
   
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def centerCrop: centerCrop = "centerCrop".asInstanceOf[centerCrop]
+  @scala.inline
   def centerInside: centerInside = "centerInside".asInstanceOf[centerInside]
+  @scala.inline
   def fitCenter: fitCenter = "fitCenter".asInstanceOf[fitCenter]
+  @scala.inline
   def fitEnd: fitEnd = "fitEnd".asInstanceOf[fitEnd]
+  @scala.inline
   def fitStart: fitStart = "fitStart".asInstanceOf[fitStart]
+  @scala.inline
   def fitXY: fitXY = "fitXY".asInstanceOf[fitXY]
 }
 

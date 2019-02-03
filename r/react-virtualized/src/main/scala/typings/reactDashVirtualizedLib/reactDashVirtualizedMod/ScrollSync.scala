@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ScrollSync ()
   extends reactDashVirtualizedLib.distEsScrollSyncMod.ScrollSync
 
+/* static members */
 @JSImport("react-virtualized", "ScrollSync")
 @js.native
 object ScrollSync extends js.Object {

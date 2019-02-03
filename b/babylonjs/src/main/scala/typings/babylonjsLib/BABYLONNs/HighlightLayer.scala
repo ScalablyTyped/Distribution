@@ -97,14 +97,7 @@ class HighlightLayer protected () extends EffectLayer {
   def serialize_MHighlightLayer(): js.Any = js.native
 }
 
-/**
-  * The highlight layer Helps adding a glow effect around a mesh.
-  *
-  * Once instantiated in a scene, simply use the pushMesh or removeMesh method to add or remove
-  * glowy meshes to your scene.
-  *
-  * !!! THIS REQUIRES AN ACTIVE STENCIL BUFFER ON THE CANVAS !!!
-  */
+/* static members */
 @JSGlobal("BABYLON.HighlightLayer")
 @js.native
 object HighlightLayer extends js.Object {

@@ -11,6 +11,7 @@ class default protected () extends Menu {
   def this(props: MenuProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/menu", JSImport.Default)
 @js.native
 object default extends js.Object {

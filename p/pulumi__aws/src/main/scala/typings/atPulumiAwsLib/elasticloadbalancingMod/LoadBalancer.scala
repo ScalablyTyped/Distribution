@@ -20,6 +20,7 @@ class LoadBalancer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingLoadBalancerMod.LoadBalancerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing", "LoadBalancer")
 @js.native
 object LoadBalancer extends js.Object {

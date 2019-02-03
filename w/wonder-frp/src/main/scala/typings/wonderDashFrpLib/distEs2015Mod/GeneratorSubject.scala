@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GeneratorSubject ()
   extends wonderDashFrpLib.distEs2015SubjectGeneratorSubjectMod.GeneratorSubject
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "GeneratorSubject")
 @js.native
 object GeneratorSubject extends js.Object {

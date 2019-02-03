@@ -41,9 +41,7 @@ class CubeTexture protected ()
     ], format: js.UndefOr[scala.Double], prefiltered: js.UndefOr[scala.Boolean], forcedExtension: js.UndefOr[js.Any], createPolynomials: js.UndefOr[scala.Boolean], lodScale: js.UndefOr[scala.Double], lodOffset: js.UndefOr[scala.Double]) = this()
 }
 
-/**
-  * Class for creating a cube texture
-  */
+/* static members */
 @JSImport("babylonjs", "CubeTexture")
 @js.native
 object CubeTexture extends js.Object {

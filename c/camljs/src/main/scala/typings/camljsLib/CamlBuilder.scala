@@ -19,6 +19,7 @@ class CamlBuilder () extends js.Object {
   def Where(): camljsLib.CamlBuilderNs.IFieldExpression = js.native
 }
 
+/* static members */
 @JSGlobal("CamlBuilder")
 @js.native
 object CamlBuilder extends js.Object {

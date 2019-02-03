@@ -9,6 +9,7 @@ object vueDashServerDashRendererLibStrings {
   @js.native
   sealed trait once extends js.Object
   
+  @scala.inline
   def once: once = "once".asInstanceOf[once]
 }
 

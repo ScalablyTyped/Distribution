@@ -54,6 +54,7 @@ class PullTypeEnclosingTypeWalker () extends js.Object {
   def walkTypeParameterConstraint(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullTypeEnclosingTypeWalker")
 @js.native
 object PullTypeEnclosingTypeWalker extends js.Object {

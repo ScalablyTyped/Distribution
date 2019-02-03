@@ -12,6 +12,7 @@ class Hashsig () extends js.Object {
   def free(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nodegit/hash-sig", "Hashsig")
 @js.native
 object Hashsig extends js.Object {

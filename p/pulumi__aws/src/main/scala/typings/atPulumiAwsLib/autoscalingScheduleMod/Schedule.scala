@@ -60,6 +60,7 @@ class Schedule protected ()
   val startTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/schedule", "Schedule")
 @js.native
 object Schedule extends js.Object {

@@ -15,8 +15,11 @@ object feedparserLibStrings {
   @js.native
   sealed trait rss extends js.Object
   
+  @scala.inline
   def atom: atom = "atom".asInstanceOf[atom]
+  @scala.inline
   def rdf: rdf = "rdf".asInstanceOf[rdf]
+  @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
 }
 

@@ -19,9 +19,7 @@ class MultiObserver[T] () extends js.Object {
   def dispose(): scala.Unit = js.native
 }
 
-/**
-  * Represent a list of observers registered to multiple Observables object.
-  */
+/* static members */
 @JSGlobal("BABYLON.MultiObserver")
 @js.native
 object MultiObserver extends js.Object {

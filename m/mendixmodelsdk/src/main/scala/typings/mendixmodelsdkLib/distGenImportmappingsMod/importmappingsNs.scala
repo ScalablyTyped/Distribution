@@ -56,9 +56,7 @@ object importmappingsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/import-mappings relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImportMapping extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -70,9 +68,7 @@ object importmappingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportMapping = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/import-mappings relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImportObjectMappingElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -97,9 +93,7 @@ object importmappingsNs extends js.Object {
     def createInObjectMappingElementUnderChildren(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectMappingElement): mendixmodelsdkLib.distGenImportmappingsMod.importmappingsNs.ImportObjectMappingElement = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/import-mappings relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImportValueMappingElement extends js.Object {
     var structureTypeName: java.lang.String = js.native

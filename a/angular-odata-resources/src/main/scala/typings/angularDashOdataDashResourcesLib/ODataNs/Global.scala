@@ -27,6 +27,7 @@ class Global protected () extends js.Object {
   var Value: org.scalablytyped.runtime.Instantiable2[/* value */ js.Any, /* type */ js.UndefOr[/* type */ java.lang.String], Value] = js.native
 }
 
+/* static members */
 @JSGlobal("OData.Global")
 @js.native
 object Global extends js.Object {

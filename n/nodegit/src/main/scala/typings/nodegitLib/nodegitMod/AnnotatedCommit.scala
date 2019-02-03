@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AnnotatedCommit ()
   extends nodegitLib.annotatedDashCommitMod.AnnotatedCommit
 
+/* static members */
 @JSImport("nodegit", "AnnotatedCommit")
 @js.native
 object AnnotatedCommit extends js.Object {

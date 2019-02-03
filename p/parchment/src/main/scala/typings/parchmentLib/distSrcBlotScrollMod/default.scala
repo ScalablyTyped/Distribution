@@ -11,6 +11,7 @@ class default protected () extends ScrollBlot {
   def this(node: stdLib.HTMLDivElement) = this()
 }
 
+/* static members */
 @JSImport("parchment/dist/src/blot/scroll", JSImport.Default)
 @js.native
 object default extends js.Object {

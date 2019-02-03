@@ -18,6 +18,7 @@ class SceneDispatcher ()
   def addChildren(children: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/scene/SceneDispatcher", "SceneDispatcher")
 @js.native
 object SceneDispatcher extends js.Object {

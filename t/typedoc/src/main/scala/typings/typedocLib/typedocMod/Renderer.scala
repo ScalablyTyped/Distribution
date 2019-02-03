@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Renderer ()
   extends typedocLib.distLibOutputRendererMod.Renderer
 
+/* static members */
 @JSImport("typedoc", "Renderer")
 @js.native
 object Renderer extends js.Object {

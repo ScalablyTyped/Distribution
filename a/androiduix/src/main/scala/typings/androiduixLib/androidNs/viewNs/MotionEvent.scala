@@ -59,6 +59,7 @@ class MotionEvent () extends js.Object {
   def split(idBits: scala.Double): MotionEvent = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.MotionEvent")
 @js.native
 object MotionEvent extends js.Object {

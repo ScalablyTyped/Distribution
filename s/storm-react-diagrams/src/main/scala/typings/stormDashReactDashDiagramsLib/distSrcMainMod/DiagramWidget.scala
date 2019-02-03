@@ -12,6 +12,7 @@ class DiagramWidget protected ()
   def this(props: stormDashReactDashDiagramsLib.distSrcWidgetsDiagramWidgetMod.DiagramProps) = this()
 }
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/main", "DiagramWidget")
 @js.native
 object DiagramWidget extends js.Object {

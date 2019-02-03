@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Key ()
   extends paperLib.paperNs.Key
 
+/* static members */
 @JSImport("paper", "Key")
 @js.native
 object Key extends js.Object {

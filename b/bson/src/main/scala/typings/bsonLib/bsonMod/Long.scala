@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Long () extends LongLike[Long]
 
+/* static members */
 @JSImport("bson", "Long")
 @js.native
 object Long extends js.Object {

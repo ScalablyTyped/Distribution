@@ -39,6 +39,7 @@ class LargeObject protected () extends js.Object {
   def writeAsync(buffer: nodeLib.Buffer): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("pg-large-object", "LargeObject")
 @js.native
 object LargeObject extends js.Object {

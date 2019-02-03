@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Promise[T] ()
   extends avoscloudDashSdkLib.avoscloudDashSdkMod.AVNs.Promise[T]
 
+/* static members */
 @JSImport("avoscloud-sdk", "Promise")
 @js.native
 object Promise extends js.Object {

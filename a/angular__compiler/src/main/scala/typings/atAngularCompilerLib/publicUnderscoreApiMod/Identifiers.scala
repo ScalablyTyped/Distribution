@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Identifiers ()
   extends atAngularCompilerLib.srcCompilerMod.Identifiers
 
+/* static members */
 @JSImport("@angular/compiler/public_api", "Identifiers")
 @js.native
 object Identifiers extends js.Object {

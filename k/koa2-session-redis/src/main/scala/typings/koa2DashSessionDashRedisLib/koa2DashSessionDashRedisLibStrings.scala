@@ -9,6 +9,7 @@ object koa2DashSessionDashRedisLibStrings {
   @js.native
   sealed trait session extends js.Object
   
+  @scala.inline
   def session: session = "session".asInstanceOf[session]
 }
 

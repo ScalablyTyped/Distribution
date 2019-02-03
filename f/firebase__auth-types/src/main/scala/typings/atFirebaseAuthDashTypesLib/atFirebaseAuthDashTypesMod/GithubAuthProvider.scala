@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GithubAuthProvider () extends GithubAuthProvider_Instance
 
+/* static members */
 @JSImport("@firebase/auth-types", "GithubAuthProvider")
 @js.native
 object GithubAuthProvider extends js.Object {

@@ -20,6 +20,7 @@ class SnapshotCopy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ebs", "SnapshotCopy")
 @js.native
 object SnapshotCopy extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebProxy () extends js.Object
 
+/* static members */
 @JSGlobal("SP.WebProxy")
 @js.native
 object WebProxy extends js.Object {

@@ -55,6 +55,7 @@ abstract class Binary () extends js.Object {
   def zipContentName(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries/binary", "Binary")
 @js.native
 object Binary extends js.Object {

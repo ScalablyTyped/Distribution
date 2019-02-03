@@ -41,6 +41,7 @@ class OneOf protected () extends ReflectionObject {
   def toJSON(toJSONOptions: IToJSONOptions): IOneOf = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "OneOf")
 @js.native
 object OneOf extends js.Object {

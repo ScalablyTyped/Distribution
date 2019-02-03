@@ -28,7 +28,7 @@ abstract class PrintManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Informs Windows that an application wishes to participate in printing. The PrintManager class is also used for programmatically initiating printing. */
+/* static members */
 @JSGlobal("Windows.Graphics.Printing.PrintManager")
 @js.native
 object PrintManager extends js.Object {

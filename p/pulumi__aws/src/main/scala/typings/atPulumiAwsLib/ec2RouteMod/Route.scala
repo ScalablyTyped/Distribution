@@ -64,6 +64,7 @@ class Route protected ()
   val vpcPeeringConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/route", "Route")
 @js.native
 object Route extends js.Object {

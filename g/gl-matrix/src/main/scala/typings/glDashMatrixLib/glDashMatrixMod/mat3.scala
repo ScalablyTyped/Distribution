@@ -12,6 +12,7 @@ class mat3 ()
   var typeMat3: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("gl-matrix", "mat3")
 @js.native
 object mat3 extends js.Object {

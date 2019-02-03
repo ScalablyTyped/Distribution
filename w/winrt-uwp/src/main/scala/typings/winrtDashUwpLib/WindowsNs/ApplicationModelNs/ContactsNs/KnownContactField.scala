@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownContactField () extends js.Object
 
-/** A static class that contains the names of contact fields for storing commonly requested information like email address and phone numbers. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
 @js.native
 object KnownContactField extends js.Object {

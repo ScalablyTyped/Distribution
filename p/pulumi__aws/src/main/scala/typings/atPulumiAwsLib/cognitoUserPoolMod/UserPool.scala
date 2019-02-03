@@ -109,6 +109,7 @@ class UserPool protected ()
   val verificationMessageTemplate: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_DefaultEmailOption] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/userPool", "UserPool")
 @js.native
 object UserPool extends js.Object {

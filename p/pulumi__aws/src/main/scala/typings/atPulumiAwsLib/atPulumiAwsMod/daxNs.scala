@@ -51,6 +51,7 @@ object daxNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.daxSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -75,6 +76,7 @@ object daxNs extends js.Object {
     ): atPulumiAwsLib.daxClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object ParameterGroup extends js.Object {
     /**
@@ -99,6 +101,7 @@ object daxNs extends js.Object {
     ): atPulumiAwsLib.daxParameterGroupMod.ParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

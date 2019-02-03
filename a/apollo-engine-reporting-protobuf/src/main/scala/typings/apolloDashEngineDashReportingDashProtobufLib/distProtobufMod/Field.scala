@@ -26,6 +26,7 @@ class Field () extends IField {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "Field")
 @js.native
 object Field extends js.Object {

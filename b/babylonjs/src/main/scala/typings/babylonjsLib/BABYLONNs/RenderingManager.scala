@@ -133,11 +133,7 @@ class RenderingManager protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/**
-  * This is the manager responsible of all the rendering for meshes sprites and particles.
-  * It is enable to manage the different groups as well as the different necessary sort functions.
-  * This should not be used directly aside of the few static configurations
-  */
+/* static members */
 @JSGlobal("BABYLON.RenderingManager")
 @js.native
 object RenderingManager extends js.Object {

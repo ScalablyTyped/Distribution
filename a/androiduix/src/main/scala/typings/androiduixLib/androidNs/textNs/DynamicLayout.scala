@@ -42,6 +42,7 @@ class DynamicLayout protected () extends Layout {
   def updateBlocks(startLine: scala.Double, endLine: scala.Double, newLineCount: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.DynamicLayout")
 @js.native
 object DynamicLayout extends js.Object {

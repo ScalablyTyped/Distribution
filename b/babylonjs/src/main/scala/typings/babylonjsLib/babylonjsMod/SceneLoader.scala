@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class SceneLoader ()
   extends babylonjsLib.BABYLONNs.SceneLoader
 
-/**
-  * Class used to load scene from various file formats using registered plugins
-  * @see http://doc.babylonjs.com/how_to/load_from_any_file_type
-  */
+/* static members */
 @JSImport("babylonjs", "SceneLoader")
 @js.native
 object SceneLoader extends js.Object {

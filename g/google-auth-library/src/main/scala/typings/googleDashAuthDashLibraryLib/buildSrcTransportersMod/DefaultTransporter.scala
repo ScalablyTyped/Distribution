@@ -31,6 +31,7 @@ class DefaultTransporter () extends js.Object {
   def request_TUnit[T](opts: gaxiosLib.buildSrcCommonMod.GaxiosOptions): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-auth-library/build/src/transporters", "DefaultTransporter")
 @js.native
 object DefaultTransporter extends js.Object {

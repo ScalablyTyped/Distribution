@@ -24,6 +24,7 @@ class FieldPath protected () extends js.Object {
   def isEqual(other: FieldPath): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@firebase/firestore-types", "FieldPath")
 @js.native
 object FieldPath extends js.Object {

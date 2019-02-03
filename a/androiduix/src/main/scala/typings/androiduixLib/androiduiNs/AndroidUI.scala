@@ -50,6 +50,7 @@ class AndroidUI protected () extends js.Object {
   def viewDetachedDependOnDebugLayout(view: androiduixLib.androidNs.viewNs.View): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.AndroidUI")
 @js.native
 object AndroidUI extends js.Object {

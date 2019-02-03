@@ -66,6 +66,7 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
   def toJSON(pluginFields: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-state", "EditorState")
 @js.native
 object EditorState extends js.Object {

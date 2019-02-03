@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AnchorButton ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.AnchorButton
 
+/* static members */
 @JSImport("@blueprintjs/core", "AnchorButton")
 @js.native
 object AnchorButton extends js.Object {

@@ -14,6 +14,7 @@ class PointerVisualizationSettings () extends IPointerVisualizationSettings {
   override var isContactFeedbackEnabled: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
 @js.native
 object PointerVisualizationSettings extends js.Object {

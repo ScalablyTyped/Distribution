@@ -21,6 +21,7 @@ class RegexPatternSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf", "RegexPatternSet")
 @js.native
 object RegexPatternSet extends js.Object {

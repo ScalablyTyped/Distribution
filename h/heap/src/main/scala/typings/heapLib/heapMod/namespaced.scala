@@ -53,6 +53,7 @@ class namespaced[T] () extends Heap[T] {
   override def updateItem(item: T): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("heap", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

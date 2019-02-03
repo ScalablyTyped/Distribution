@@ -16,6 +16,7 @@ class ContextualizedQueryLatencyStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedQueryLatencyStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "ContextualizedQueryLatencyStats")
 @js.native
 object ContextualizedQueryLatencyStats extends js.Object {

@@ -14,6 +14,7 @@ class MapObserver protected ()
   var _selector: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/observer/MapObserver", "MapObserver")
 @js.native
 object MapObserver extends js.Object {

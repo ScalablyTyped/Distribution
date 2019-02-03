@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GeometryUtils ()
   extends wonderDotJsLib.distEs2015ComponentGeometryGeometryUtilsMod.GeometryUtils
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "GeometryUtils")
 @js.native
 object GeometryUtils extends js.Object {

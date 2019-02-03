@@ -12,7 +12,9 @@ object reactDashDatepickerLibStrings {
   @js.native
   sealed trait select extends js.Object
   
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
 }
 

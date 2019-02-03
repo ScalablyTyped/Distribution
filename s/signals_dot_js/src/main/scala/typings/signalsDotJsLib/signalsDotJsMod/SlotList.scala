@@ -26,6 +26,7 @@ class SlotList protected ()
   def this(head: signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot, tail: signalsDotJsLib.libOrgOsflashSignalsSlotListMod.SlotList) = this()
 }
 
+/* static members */
 @JSImport("signals.js", "SlotList")
 @js.native
 object SlotList extends js.Object {

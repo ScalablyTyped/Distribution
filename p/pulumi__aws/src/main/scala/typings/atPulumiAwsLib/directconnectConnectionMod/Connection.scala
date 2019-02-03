@@ -44,6 +44,7 @@ class Connection protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/connection", "Connection")
 @js.native
 object Connection extends js.Object {

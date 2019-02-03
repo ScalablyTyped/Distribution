@@ -12,6 +12,7 @@ class Network protected ()
   def this(passphrase: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("stellar-sdk", "Network")
 @js.native
 object Network extends js.Object {

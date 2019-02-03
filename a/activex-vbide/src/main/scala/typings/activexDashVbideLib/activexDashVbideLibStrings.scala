@@ -27,12 +27,19 @@ object activexDashVbideLibStrings {
   @js.native
   sealed trait handled extends js.Object
   
+  @scala.inline
   def CancelDefault: CancelDefault = "CancelDefault".asInstanceOf[CancelDefault]
+  @scala.inline
   def Click: Click = "Click".asInstanceOf[Click]
+  @scala.inline
   def CommandBarControl: CommandBarControl = "CommandBarControl".asInstanceOf[CommandBarControl]
+  @scala.inline
   def ItemAdded: ItemAdded = "ItemAdded".asInstanceOf[ItemAdded]
+  @scala.inline
   def ItemRemoved: ItemRemoved = "ItemRemoved".asInstanceOf[ItemRemoved]
+  @scala.inline
   def Reference: Reference = "Reference".asInstanceOf[Reference]
+  @scala.inline
   def handled: handled = "handled".asInstanceOf[handled]
 }
 

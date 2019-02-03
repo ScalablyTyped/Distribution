@@ -12,6 +12,7 @@ class Container ()
   def this(containerOptions: inversifyLib.dtsInterfacesInterfacesMod.interfacesNs.ContainerOptions) = this()
 }
 
+/* static members */
 @JSImport("inversify/dts/inversify", "Container")
 @js.native
 object Container extends js.Object {

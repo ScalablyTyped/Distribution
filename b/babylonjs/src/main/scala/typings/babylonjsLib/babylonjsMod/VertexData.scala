@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class VertexData ()
   extends babylonjsLib.BABYLONNs.VertexData
 
-/**
-  * This class contains the various kinds of data on every vertex of a mesh used in determining its shape and appearance
-  */
+/* static members */
 @JSImport("babylonjs", "VertexData")
 @js.native
 object VertexData extends js.Object {

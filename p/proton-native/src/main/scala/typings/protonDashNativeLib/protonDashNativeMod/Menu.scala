@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Menu ()
   extends reactLib.reactMod.Component[MenuProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("proton-native", "Menu")
 @js.native
 object Menu extends js.Object {

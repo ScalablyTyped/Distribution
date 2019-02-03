@@ -319,15 +319,7 @@ class Vec4 () extends js.Object {
   def sub2(lhs: Vec4, rhs: Vec4): this.type = js.native
 }
 
-/**
-  * @name pc.Vec4
-  * @class A 4-dimensional vector.
-  * @description Creates a new Vec4 object
-  * @param {Number} [x] The x value. If x is an array of length 4, the array will be used to populate all components.
-  * @param {Number} [y] The y value
-  * @param {Number} [z] The z value
-  * @param {Number} [w] The w value
-  */
+/* static members */
 @JSGlobal("pc.Vec4")
 @js.native
 object Vec4 extends js.Object {

@@ -45,6 +45,7 @@ class GeneratorSubject ()
   def toStream(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/subject/GeneratorSubject", "GeneratorSubject")
 @js.native
 object GeneratorSubject extends js.Object {

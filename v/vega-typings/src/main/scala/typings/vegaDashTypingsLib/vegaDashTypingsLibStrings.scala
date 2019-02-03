@@ -924,310 +924,615 @@ object vegaDashTypingsLibStrings {
   @js.native
   sealed trait `zoom-out` extends js.Object
   
+  @scala.inline
   def accent: accent = "accent".asInstanceOf[accent]
+  @scala.inline
   def aggregate: aggregate = "aggregate".asInstanceOf[aggregate]
+  @scala.inline
   def albers: albers = "albers".asInstanceOf[albers]
+  @scala.inline
   def albersUsa: albersUsa = "albersUsa".asInstanceOf[albersUsa]
+  @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def `all-scroll`: `all-scroll` = "all-scroll".asInstanceOf[`all-scroll`]
+  @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]
+  @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
   def arc: arc = "arc".asInstanceOf[arc]
+  @scala.inline
   def archimedian: archimedian = "archimedian".asInstanceOf[archimedian]
+  @scala.inline
   def area: area = "area".asInstanceOf[area]
+  @scala.inline
   def argmax: argmax = "argmax".asInstanceOf[argmax]
+  @scala.inline
   def argmin: argmin = "argmin".asInstanceOf[argmin]
+  @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def average: average = "average".asInstanceOf[average]
+  @scala.inline
   def axis: axis = "axis".asInstanceOf[axis]
+  @scala.inline
   def `axis-label`: `axis-label` = "axis-label".asInstanceOf[`axis-label`]
+  @scala.inline
   def axisBand: axisBand = "axisBand".asInstanceOf[axisBand]
+  @scala.inline
   def axisBottom: axisBottom = "axisBottom".asInstanceOf[axisBottom]
+  @scala.inline
   def axisLeft: axisLeft = "axisLeft".asInstanceOf[axisLeft]
+  @scala.inline
   def axisRight: axisRight = "axisRight".asInstanceOf[axisRight]
+  @scala.inline
   def axisTop: axisTop = "axisTop".asInstanceOf[axisTop]
+  @scala.inline
   def axisX: axisX = "axisX".asInstanceOf[axisX]
+  @scala.inline
   def axisY: axisY = "axisY".asInstanceOf[axisY]
+  @scala.inline
   def azimuthalEqualArea: azimuthalEqualArea = "azimuthalEqualArea".asInstanceOf[azimuthalEqualArea]
+  @scala.inline
   def azimuthalEquidistant: azimuthalEquidistant = "azimuthalEquidistant".asInstanceOf[azimuthalEquidistant]
+  @scala.inline
   def band: band = "band".asInstanceOf[band]
+  @scala.inline
   def basis: basis = "basis".asInstanceOf[basis]
+  @scala.inline
   def `basis-closed`: `basis-closed` = "basis-closed".asInstanceOf[`basis-closed`]
+  @scala.inline
   def `basis-open`: `basis-open` = "basis-open".asInstanceOf[`basis-open`]
+  @scala.inline
   def bin: bin = "bin".asInstanceOf[bin]
+  @scala.inline
   def `bin-linear`: `bin-linear` = "bin-linear".asInstanceOf[`bin-linear`]
+  @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
+  @scala.inline
   def blues: blues = "blues".asInstanceOf[blues]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def bounds: bounds = "bounds".asInstanceOf[bounds]
+  @scala.inline
   def bundle: bundle = "bundle".asInstanceOf[bundle]
+  @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
+  @scala.inline
   def cardinal: cardinal = "cardinal".asInstanceOf[cardinal]
+  @scala.inline
   def `cardinal-closed`: `cardinal-closed` = "cardinal-closed".asInstanceOf[`cardinal-closed`]
+  @scala.inline
   def `cardinal-open`: `cardinal-open` = "cardinal-open".asInstanceOf[`cardinal-open`]
+  @scala.inline
   def category: category = "category".asInstanceOf[category]
+  @scala.inline
   def category10: category10 = "category10".asInstanceOf[category10]
+  @scala.inline
   def category20: category20 = "category20".asInstanceOf[category20]
+  @scala.inline
   def category20b: category20b = "category20b".asInstanceOf[category20b]
+  @scala.inline
   def category20c: category20c = "category20c".asInstanceOf[category20c]
+  @scala.inline
   def `catmull-rom`: `catmull-rom` = "catmull-rom".asInstanceOf[`catmull-rom`]
+  @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
   def ci0: ci0 = "ci0".asInstanceOf[ci0]
+  @scala.inline
   def ci1: ci1 = "ci1".asInstanceOf[ci1]
+  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
+  @scala.inline
   def collect: collect = "collect".asInstanceOf[collect]
+  @scala.inline
   def conicConformal: conicConformal = "conicConformal".asInstanceOf[conicConformal]
+  @scala.inline
   def conicEqualArea: conicEqualArea = "conicEqualArea".asInstanceOf[conicEqualArea]
+  @scala.inline
   def conicEquidistant: conicEquidistant = "conicEquidistant".asInstanceOf[conicEquidistant]
+  @scala.inline
   def content: content = "content".asInstanceOf[content]
+  @scala.inline
   def `context-menu`: `context-menu` = "context-menu".asInstanceOf[`context-menu`]
+  @scala.inline
   def contour: contour = "contour".asInstanceOf[contour]
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def countpattern: countpattern = "countpattern".asInstanceOf[countpattern]
+  @scala.inline
   def cross: cross = "cross".asInstanceOf[cross]
+  @scala.inline
   def crossfilter: crossfilter = "crossfilter".asInstanceOf[crossfilter]
+  @scala.inline
   def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
+  @scala.inline
   def csv: csv = "csv".asInstanceOf[csv]
+  @scala.inline
   def cubehelix: cubehelix = "cubehelix".asInstanceOf[cubehelix]
+  @scala.inline
   def `cubehelix-long`: `cubehelix-long` = "cubehelix-long".asInstanceOf[`cubehelix-long`]
+  @scala.inline
   def dark2: dark2 = "dark2".asInstanceOf[dark2]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def day: day = "day".asInstanceOf[day]
+  @scala.inline
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def density: density = "density".asInstanceOf[density]
+  @scala.inline
   def descending: descending = "descending".asInstanceOf[descending]
+  @scala.inline
   def diamond: diamond = "diamond".asInstanceOf[diamond]
+  @scala.inline
   def distinct: distinct = "distinct".asInstanceOf[distinct]
+  @scala.inline
   def diverging: diverging = "diverging".asInstanceOf[diverging]
+  @scala.inline
   def dragenter: dragenter = "dragenter".asInstanceOf[dragenter]
+  @scala.inline
   def dragleave: dragleave = "dragleave".asInstanceOf[dragleave]
+  @scala.inline
   def dragover: dragover = "dragover".asInstanceOf[dragover]
+  @scala.inline
   def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
+  @scala.inline
   def each: each = "each".asInstanceOf[each]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def enter: enter = "enter".asInstanceOf[enter]
+  @scala.inline
   def equirectangular: equirectangular = "equirectangular".asInstanceOf[equirectangular]
+  @scala.inline
   def `ew-resize`: `ew-resize` = "ew-resize".asInstanceOf[`ew-resize`]
+  @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
+  @scala.inline
   def extent: extent = "extent".asInstanceOf[extent]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
+  @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
+  @scala.inline
   def `fit-x`: `fit-x` = "fit-x".asInstanceOf[`fit-x`]
+  @scala.inline
   def `fit-y`: `fit-y` = "fit-y".asInstanceOf[`fit-y`]
+  @scala.inline
   def flatten: flatten = "flatten".asInstanceOf[flatten]
+  @scala.inline
   def flush: flush = "flush".asInstanceOf[flush]
+  @scala.inline
   def fold: fold = "fold".asInstanceOf[fold]
+  @scala.inline
   def force: force = "force".asInstanceOf[force]
+  @scala.inline
   def formula: formula = "formula".asInstanceOf[formula]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def geojson: geojson = "geojson".asInstanceOf[geojson]
+  @scala.inline
   def geopath: geopath = "geopath".asInstanceOf[geopath]
+  @scala.inline
   def geopoint: geopoint = "geopoint".asInstanceOf[geopoint]
+  @scala.inline
   def geoshape: geoshape = "geoshape".asInstanceOf[geoshape]
+  @scala.inline
   def gnomonic: gnomonic = "gnomonic".asInstanceOf[gnomonic]
+  @scala.inline
   def grab: grab = "grab".asInstanceOf[grab]
+  @scala.inline
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
+  @scala.inline
   def gradient: gradient = "gradient".asInstanceOf[gradient]
+  @scala.inline
   def graticule: graticule = "graticule".asInstanceOf[graticule]
+  @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
+  @scala.inline
   def greens: greens = "greens".asInstanceOf[greens]
+  @scala.inline
   def greys: greys = "greys".asInstanceOf[greys]
+  @scala.inline
   def group: group = "group".asInstanceOf[group]
+  @scala.inline
   def hcl: hcl = "hcl".asInstanceOf[hcl]
+  @scala.inline
   def `hcl-long`: `hcl-long` = "hcl-long".asInstanceOf[`hcl-long`]
+  @scala.inline
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def help: help = "help".asInstanceOf[help]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
+  @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
+  @scala.inline
   def `hsl-long`: `hsl-long` = "hsl-long".asInstanceOf[`hsl-long`]
+  @scala.inline
   def http: http = "http".asInstanceOf[http]
+  @scala.inline
   def https: https = "https".asInstanceOf[https]
+  @scala.inline
   def identifier: identifier = "identifier".asInstanceOf[identifier]
+  @scala.inline
   def identity: identity = "identity".asInstanceOf[identity]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def impute: impute = "impute".asInstanceOf[impute]
+  @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
   def joinaggregate: joinaggregate = "joinaggregate".asInstanceOf[joinaggregate]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def keydown: keydown = "keydown".asInstanceOf[keydown]
+  @scala.inline
   def keypress: keypress = "keypress".asInstanceOf[keypress]
+  @scala.inline
   def keyup: keyup = "keyup".asInstanceOf[keyup]
+  @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
+  @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def `legend-label`: `legend-label` = "legend-label".asInstanceOf[`legend-label`]
+  @scala.inline
   def `legend-symbol`: `legend-symbol` = "legend-symbol".asInstanceOf[`legend-symbol`]
+  @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def `linear-closed`: `linear-closed` = "linear-closed".asInstanceOf[`linear-closed`]
+  @scala.inline
   def linkpath: linkpath = "linkpath".asInstanceOf[linkpath]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def mark: mark = "mark".asInstanceOf[mark]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def mean: mean = "mean".asInstanceOf[mean]
+  @scala.inline
   def median: median = "median".asInstanceOf[median]
+  @scala.inline
   def mercator: mercator = "mercator".asInstanceOf[mercator]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def millisecond: millisecond = "millisecond".asInstanceOf[millisecond]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
   def monotone: monotone = "monotone".asInstanceOf[monotone]
+  @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
   def mousedown: mousedown = "mousedown".asInstanceOf[mousedown]
+  @scala.inline
   def mousemove: mousemove = "mousemove".asInstanceOf[mousemove]
+  @scala.inline
   def mouseout: mouseout = "mouseout".asInstanceOf[mouseout]
+  @scala.inline
   def mouseover: mouseover = "mouseover".asInstanceOf[mouseover]
+  @scala.inline
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
+  @scala.inline
   def mousewheel: mousewheel = "mousewheel".asInstanceOf[mousewheel]
+  @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def `n-resize`: `n-resize` = "n-resize".asInstanceOf[`n-resize`]
+  @scala.inline
   def natural: natural = "natural".asInstanceOf[natural]
+  @scala.inline
   def `ne-resize`: `ne-resize` = "ne-resize".asInstanceOf[`ne-resize`]
+  @scala.inline
   def nest: nest = "nest".asInstanceOf[nest]
+  @scala.inline
   def `nesw-resize`: `nesw-resize` = "nesw-resize".asInstanceOf[`nesw-resize`]
+  @scala.inline
   def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def normalize: normalize = "normalize".asInstanceOf[normalize]
+  @scala.inline
   def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
+  @scala.inline
   def `ns-resize`: `ns-resize` = "ns-resize".asInstanceOf[`ns-resize`]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def `nw-resize`: `nw-resize` = "nw-resize".asInstanceOf[`nw-resize`]
+  @scala.inline
   def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
+  @scala.inline
   def oranges: oranges = "oranges".asInstanceOf[oranges]
+  @scala.inline
   def ordinal: ordinal = "ordinal".asInstanceOf[ordinal]
+  @scala.inline
   def orientationchange: orientationchange = "orientationchange".asInstanceOf[orientationchange]
+  @scala.inline
   def orthographic: orthographic = "orthographic".asInstanceOf[orthographic]
+  @scala.inline
   def outer: outer = "outer".asInstanceOf[outer]
+  @scala.inline
   def pack: pack = "pack".asInstanceOf[pack]
+  @scala.inline
   def pad: pad = "pad".asInstanceOf[pad]
+  @scala.inline
   def padding: padding = "padding".asInstanceOf[padding]
+  @scala.inline
   def paired: paired = "paired".asInstanceOf[paired]
+  @scala.inline
   def parity: parity = "parity".asInstanceOf[parity]
+  @scala.inline
   def partition: partition = "partition".asInstanceOf[partition]
+  @scala.inline
   def pastel1: pastel1 = "pastel1".asInstanceOf[pastel1]
+  @scala.inline
   def pastel2: pastel2 = "pastel2".asInstanceOf[pastel2]
+  @scala.inline
   def path: path = "path".asInstanceOf[path]
+  @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
+  @scala.inline
   def point: point = "point".asInstanceOf[point]
+  @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
+  @scala.inline
   def pow: pow = "pow".asInstanceOf[pow]
+  @scala.inline
   def prevent: prevent = "prevent".asInstanceOf[prevent]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
   def project: project = "project".asInstanceOf[project]
+  @scala.inline
   def purples: purples = "purples".asInstanceOf[purples]
+  @scala.inline
   def q1: q1 = "q1".asInstanceOf[q1]
+  @scala.inline
   def q3: q3 = "q3".asInstanceOf[q3]
+  @scala.inline
   def quantile: quantile = "quantile".asInstanceOf[quantile]
+  @scala.inline
   def quantize: quantize = "quantize".asInstanceOf[quantize]
+  @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
+  @scala.inline
   def rainbow: rainbow = "rainbow".asInstanceOf[rainbow]
+  @scala.inline
   def ramp: ramp = "ramp".asInstanceOf[ramp]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
+  @scala.inline
   def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
+  @scala.inline
   def reds: reds = "reds".asInstanceOf[reds]
+  @scala.inline
   def release: release = "release".asInstanceOf[release]
+  @scala.inline
   def resolvefilter: resolvefilter = "resolvefilter".asInstanceOf[resolvefilter]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
   def rule: rule = "rule".asInstanceOf[rule]
+  @scala.inline
   def `s-resize`: `s-resize` = "s-resize".asInstanceOf[`s-resize`]
+  @scala.inline
   def sample: sample = "sample".asInstanceOf[sample]
+  @scala.inline
   def scope: scope = "scope".asInstanceOf[scope]
+  @scala.inline
   def `se-resize`: `se-resize` = "se-resize".asInstanceOf[`se-resize`]
+  @scala.inline
   def second: second = "second".asInstanceOf[second]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def sequence: sequence = "sequence".asInstanceOf[sequence]
+  @scala.inline
   def sequential: sequential = "sequential".asInstanceOf[sequential]
+  @scala.inline
   def set1: set1 = "set1".asInstanceOf[set1]
+  @scala.inline
   def set2: set2 = "set2".asInstanceOf[set2]
+  @scala.inline
   def set3: set3 = "set3".asInstanceOf[set3]
+  @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
+  @scala.inline
   def sinebow: sinebow = "sinebow".asInstanceOf[sinebow]
+  @scala.inline
   def sqrt: sqrt = "sqrt".asInstanceOf[sqrt]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def stack: stack = "stack".asInstanceOf[stack]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stderr: stderr = "stderr".asInstanceOf[stderr]
+  @scala.inline
   def stdev: stdev = "stdev".asInstanceOf[stdev]
+  @scala.inline
   def stdevp: stdevp = "stdevp".asInstanceOf[stdevp]
+  @scala.inline
   def step: step = "step".asInstanceOf[step]
+  @scala.inline
   def `step-after`: `step-after` = "step-after".asInstanceOf[`step-after`]
+  @scala.inline
   def `step-before`: `step-before` = "step-before".asInstanceOf[`step-before`]
+  @scala.inline
   def stereographic: stereographic = "stereographic".asInstanceOf[stereographic]
+  @scala.inline
   def stratify: stratify = "stratify".asInstanceOf[stratify]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
+  @scala.inline
   def `sw-resize`: `sw-resize` = "sw-resize".asInstanceOf[`sw-resize`]
+  @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
+  @scala.inline
   def tableau10: tableau10 = "tableau10".asInstanceOf[tableau10]
+  @scala.inline
   def tableau20: tableau20 = "tableau20".asInstanceOf[tableau20]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
+  @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def topojson: topojson = "topojson".asInstanceOf[topojson]
+  @scala.inline
   def touchend: touchend = "touchend".asInstanceOf[touchend]
+  @scala.inline
   def touchmove: touchmove = "touchmove".asInstanceOf[touchmove]
+  @scala.inline
   def touchstart: touchstart = "touchstart".asInstanceOf[touchstart]
+  @scala.inline
   def trail: trail = "trail".asInstanceOf[trail]
+  @scala.inline
   def transverseMercator: transverseMercator = "transverseMercator".asInstanceOf[transverseMercator]
+  @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
   def treelinks: treelinks = "treelinks".asInstanceOf[treelinks]
+  @scala.inline
   def treemap: treemap = "treemap".asInstanceOf[treemap]
+  @scala.inline
   def `triangle-down`: `triangle-down` = "triangle-down".asInstanceOf[`triangle-down`]
+  @scala.inline
   def `triangle-left`: `triangle-left` = "triangle-left".asInstanceOf[`triangle-left`]
+  @scala.inline
   def `triangle-right`: `triangle-right` = "triangle-right".asInstanceOf[`triangle-right`]
+  @scala.inline
   def `triangle-up`: `triangle-up` = "triangle-up".asInstanceOf[`triangle-up`]
+  @scala.inline
   def tsv: tsv = "tsv".asInstanceOf[tsv]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
+  @scala.inline
   def utc: utc = "utc".asInstanceOf[utc]
+  @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
   def values: values = "values".asInstanceOf[values]
+  @scala.inline
   def variance: variance = "variance".asInstanceOf[variance]
+  @scala.inline
   def variancep: variancep = "variancep".asInstanceOf[variancep]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def `vertical-text`: `vertical-text` = "vertical-text".asInstanceOf[`vertical-text`]
+  @scala.inline
   def view: view = "view".asInstanceOf[view]
+  @scala.inline
   def voronoi: voronoi = "voronoi".asInstanceOf[voronoi]
+  @scala.inline
   def `w-resize`: `w-resize` = "w-resize".asInstanceOf[`w-resize`]
+  @scala.inline
   def week: week = "week".asInstanceOf[week]
+  @scala.inline
   def wheel: wheel = "wheel".asInstanceOf[wheel]
+  @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
   def window: window = "window".asInstanceOf[window]
+  @scala.inline
   def wordcloud: wordcloud = "wordcloud".asInstanceOf[wordcloud]
+  @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]
+  @scala.inline
   def `zoom-in`: `zoom-in` = "zoom-in".asInstanceOf[`zoom-in`]
+  @scala.inline
   def `zoom-out`: `zoom-out` = "zoom-out".asInstanceOf[`zoom-out`]
 }
 

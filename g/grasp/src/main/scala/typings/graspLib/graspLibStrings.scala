@@ -15,8 +15,11 @@ object graspLibStrings {
   @js.native
   sealed trait squery extends js.Object
   
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
   def equery: equery = "equery".asInstanceOf[equery]
+  @scala.inline
   def squery: squery = "squery".asInstanceOf[squery]
 }
 

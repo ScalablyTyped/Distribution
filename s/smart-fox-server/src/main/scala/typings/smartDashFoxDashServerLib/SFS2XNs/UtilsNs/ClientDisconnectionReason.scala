@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientDisconnectionReason () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Utils.ClientDisconnectionReason")
 @js.native
 object ClientDisconnectionReason extends js.Object {

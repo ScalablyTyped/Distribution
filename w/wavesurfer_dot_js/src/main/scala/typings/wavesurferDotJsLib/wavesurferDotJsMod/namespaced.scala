@@ -21,6 +21,7 @@ class namespaced protected () extends WaveSurfer {
   override def unAll(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wavesurfer.js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

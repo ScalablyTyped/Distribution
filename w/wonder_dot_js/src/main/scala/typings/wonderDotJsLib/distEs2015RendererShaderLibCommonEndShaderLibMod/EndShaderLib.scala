@@ -16,6 +16,7 @@ class EndShaderLib ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/lib/common/EndShaderLib", "EndShaderLib")
 @js.native
 object EndShaderLib extends js.Object {

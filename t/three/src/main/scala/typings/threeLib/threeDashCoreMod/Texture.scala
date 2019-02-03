@@ -42,6 +42,7 @@ class Texture protected () extends EventDispatcher {
   def transformUv(uv: Vector): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Texture")
 @js.native
 object Texture extends js.Object {

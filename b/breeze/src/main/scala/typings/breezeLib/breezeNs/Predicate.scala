@@ -91,6 +91,7 @@ class Predicate () extends js.Object {
   def validate(entityType: EntityType): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.Predicate")
 @js.native
 object Predicate extends js.Object {

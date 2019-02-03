@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CameraOptionsUI () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Media.Capture.CameraOptionsUI")
 @js.native
 object CameraOptionsUI extends js.Object {

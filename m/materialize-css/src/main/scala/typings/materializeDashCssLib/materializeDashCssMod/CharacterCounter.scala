@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CharacterCounter ()
   extends materializeDashCssLib.MNs.CharacterCounter
 
+/* static members */
 @JSImport("materialize-css", "CharacterCounter")
 @js.native
 object CharacterCounter extends js.Object {

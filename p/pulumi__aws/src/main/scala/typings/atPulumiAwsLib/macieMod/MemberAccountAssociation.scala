@@ -20,6 +20,7 @@ class MemberAccountAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.macieMemberAccountAssociationMod.MemberAccountAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/macie", "MemberAccountAssociation")
 @js.native
 object MemberAccountAssociation extends js.Object {

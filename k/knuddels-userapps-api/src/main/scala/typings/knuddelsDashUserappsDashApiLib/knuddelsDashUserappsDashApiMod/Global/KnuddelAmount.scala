@@ -33,9 +33,7 @@ class KnuddelAmount protected () extends js.Object {
   def negate(): KnuddelAmount = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/KnuddelAmount.html
-	 */
+/* static members */
 @JSGlobal("KnuddelAmount")
 @js.native
 object KnuddelAmount extends js.Object {

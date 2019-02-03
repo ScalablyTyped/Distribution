@@ -24,6 +24,7 @@ class EgressOnlyInternetGateway protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/egressOnlyInternetGateway", "EgressOnlyInternetGateway")
 @js.native
 object EgressOnlyInternetGateway extends js.Object {

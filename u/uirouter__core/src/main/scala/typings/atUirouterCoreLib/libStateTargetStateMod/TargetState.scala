@@ -76,6 +76,7 @@ class TargetState protected () extends js.Object {
   def withState(state: atUirouterCoreLib.libStateInterfaceMod.StateOrName): TargetState = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/state/targetState", "TargetState")
 @js.native
 object TargetState extends js.Object {

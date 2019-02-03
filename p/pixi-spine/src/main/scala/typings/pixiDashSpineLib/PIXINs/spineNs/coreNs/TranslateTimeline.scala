@@ -14,6 +14,7 @@ class TranslateTimeline protected () extends CurveTimeline {
   def setFrame(frameIndex: scala.Double, time: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.TranslateTimeline")
 @js.native
 object TranslateTimeline extends js.Object {

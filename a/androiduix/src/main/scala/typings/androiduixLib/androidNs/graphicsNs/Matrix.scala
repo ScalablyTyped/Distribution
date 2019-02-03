@@ -97,6 +97,7 @@ class Matrix () extends js.Object {
   def toShortString(sb: androiduixLib.javaNs.langNs.StringBuilder): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.Matrix")
 @js.native
 object Matrix extends js.Object {

@@ -40,6 +40,7 @@ class MDCDismissibleDrawerFoundation protected ()
   def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/drawer/dismissible/foundation", "MDCDismissibleDrawerFoundation")
 @js.native
 object MDCDismissibleDrawerFoundation extends js.Object {

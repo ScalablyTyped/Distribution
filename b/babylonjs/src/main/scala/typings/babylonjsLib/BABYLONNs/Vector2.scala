@@ -229,9 +229,7 @@ class Vector2 () extends js.Object {
   def toArray(array: FloatArray, index: scala.Double): Vector2 = js.native
 }
 
-/**
-  * Class representing a vector containing 2 coordinates
-  */
+/* static members */
 @JSGlobal("BABYLON.Vector2")
 @js.native
 object Vector2 extends js.Object {

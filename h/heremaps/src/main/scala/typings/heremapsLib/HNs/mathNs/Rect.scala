@@ -46,9 +46,7 @@ class Rect protected () extends js.Object {
   def set(left: scala.Double, top: scala.Double, right: scala.Double, bottom: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Class defines a rectangle in 2-dimensional geometric space. It is used to represent the area in projected space.
-  */
+/* static members */
 @JSGlobal("H.math.Rect")
 @js.native
 object Rect extends js.Object {

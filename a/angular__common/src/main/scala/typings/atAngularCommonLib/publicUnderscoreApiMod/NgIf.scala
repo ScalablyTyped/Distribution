@@ -12,6 +12,7 @@ class NgIf protected ()
   def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, templateRef: atAngularCoreLib.atAngularCoreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreIfMod.NgIfContext]) = this()
 }
 
+/* static members */
 @JSImport("@angular/common/public_api", "NgIf")
 @js.native
 object NgIf extends js.Object {

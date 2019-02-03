@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SearchPane () extends ISearchPane
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Search.SearchPane")
 @js.native
 object SearchPane extends js.Object {

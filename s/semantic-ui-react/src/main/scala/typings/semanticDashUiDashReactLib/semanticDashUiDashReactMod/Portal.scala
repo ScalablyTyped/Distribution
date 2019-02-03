@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Portal ()
   extends semanticDashUiDashReactLib.distCommonjsAddonsPortalMod.default
 
+/* static members */
 @JSImport("semantic-ui-react", "Portal")
 @js.native
 object Portal extends js.Object {

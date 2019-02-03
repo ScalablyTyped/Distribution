@@ -109,6 +109,7 @@ class range protected () extends js.Object {
   def trim(ignoreStart: scala.Boolean, ignoreEnd: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.dom.range")
 @js.native
 object range extends js.Object {

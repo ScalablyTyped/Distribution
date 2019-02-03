@@ -97,6 +97,7 @@ class Queue protected ()
   ): atPulumiAwsLib.sqsSqsMixinsMod.QueueEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sqs/queue", "Queue")
 @js.native
 object Queue extends js.Object {

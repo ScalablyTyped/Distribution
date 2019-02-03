@@ -31,12 +31,7 @@ class Binding ()
   def this(targetprop: java.lang.String, sourceprop: java.lang.String, conv: js.Function2[/* a */ js.Any, /* b */ js.Any, _]) = this()
 }
 
-/**
-  * A Binding describes how to automatically set a property on a GraphObject
-  * to a value of a property of data in the model.
-  * The target property name and the data source property name are strings.
-  * All name matching is case-sensitive.
-  */
+/* static members */
 @JSImport("go", "Binding")
 @js.native
 object Binding extends js.Object {

@@ -23,6 +23,7 @@ class TouchEventHandler ()
   ): wonderDotJsLib.distEs2015EventObjectTouchEventMod.TouchEvent = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/handler/TouchEventHandler", "TouchEventHandler")
 @js.native
 object TouchEventHandler extends js.Object {

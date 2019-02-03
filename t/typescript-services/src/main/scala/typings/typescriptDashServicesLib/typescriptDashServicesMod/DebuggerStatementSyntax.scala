@@ -12,6 +12,7 @@ class DebuggerStatementSyntax protected ()
   def this(debuggerKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "DebuggerStatementSyntax")
 @js.native
 object DebuggerStatementSyntax extends js.Object {

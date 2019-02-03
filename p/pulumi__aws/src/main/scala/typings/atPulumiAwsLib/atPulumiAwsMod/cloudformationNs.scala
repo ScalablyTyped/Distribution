@@ -33,6 +33,7 @@ object cloudformationNs extends js.Object {
     args: atPulumiAwsLib.cloudformationGetStackMod.GetStackArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.cloudformationGetStackMod.GetStackResult] = js.native
+  /* static members */
   @js.native
   object Stack extends js.Object {
     /**

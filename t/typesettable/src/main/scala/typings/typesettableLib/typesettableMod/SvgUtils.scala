@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SvgUtils ()
   extends typesettableLib.buildSrcContextsMod.SvgUtils
 
+/* static members */
 @JSImport("typesettable", "SvgUtils")
 @js.native
 object SvgUtils extends js.Object {

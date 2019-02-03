@@ -13,6 +13,7 @@ class SpinnerBase ()
       js.Any
     ]
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Spinner/Spinner.base", "SpinnerBase")
 @js.native
 object SpinnerBase extends js.Object {

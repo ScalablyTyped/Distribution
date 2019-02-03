@@ -11,6 +11,7 @@ abstract class ApplicationViewTransferContext () extends js.Object {
    /* unmapped type */ var viewId: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewTransferContext")
 @js.native
 object ApplicationViewTransferContext extends js.Object {

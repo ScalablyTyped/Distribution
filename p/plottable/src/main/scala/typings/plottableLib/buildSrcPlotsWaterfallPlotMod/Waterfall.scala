@@ -42,6 +42,7 @@ class Waterfall[X, Y] ()
   def total[T](): plottableLib.buildSrcPlotsCommonsMod.IAccessorScaleBinding[T, scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/waterfallPlot", "Waterfall")
 @js.native
 object Waterfall extends js.Object {

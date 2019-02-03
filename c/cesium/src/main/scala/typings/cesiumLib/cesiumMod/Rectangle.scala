@@ -15,6 +15,7 @@ class Rectangle ()
   def this(west: scala.Double, south: scala.Double, east: scala.Double, north: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

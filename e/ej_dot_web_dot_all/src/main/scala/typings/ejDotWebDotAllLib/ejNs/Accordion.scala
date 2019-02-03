@@ -85,6 +85,7 @@ class Accordion protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Accordion")
 @js.native
 object Accordion extends js.Object {

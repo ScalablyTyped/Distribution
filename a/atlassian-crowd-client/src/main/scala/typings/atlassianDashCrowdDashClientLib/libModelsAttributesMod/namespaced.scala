@@ -11,6 +11,7 @@ class namespaced protected () extends Attributes {
   def this(attributePairs: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
+/* static members */
 @JSImport("atlassian-crowd-client/lib/models/attributes", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

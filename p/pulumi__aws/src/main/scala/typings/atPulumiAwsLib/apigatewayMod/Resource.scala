@@ -20,6 +20,7 @@ class Resource protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayResourceMod.ResourceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Resource")
 @js.native
 object Resource extends js.Object {

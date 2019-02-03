@@ -73,6 +73,7 @@ class PhotoViewAttacher protected ()
   /* private */ def updateBaseMatrix(d: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("uk.co.senab.photoview.PhotoViewAttacher")
 @js.native
 object PhotoViewAttacher extends js.Object {

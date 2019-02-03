@@ -16,6 +16,7 @@ class CustomEvent protected ()
   def getDataFromDomEvent(event: wonderDotJsLib.distEs2015EventObjectDomEventMod.DomEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/object/CustomEvent", "CustomEvent")
 @js.native
 object CustomEvent extends js.Object {

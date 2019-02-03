@@ -39,15 +39,25 @@ object webdriverioLibStrings {
   @js.native
   sealed trait y extends js.Object
   
+  @scala.inline
   def capabilities: capabilities = "capabilities".asInstanceOf[capabilities]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def longPress: longPress = "longPress".asInstanceOf[longPress]
+  @scala.inline
   def moveTo: moveTo = "moveTo".asInstanceOf[moveTo]
+  @scala.inline
   def press: press = "press".asInstanceOf[press]
+  @scala.inline
   def release: release = "release".asInstanceOf[release]
+  @scala.inline
   def tap: tap = "tap".asInstanceOf[tap]
+  @scala.inline
   def width: width = "width".asInstanceOf[width]
+  @scala.inline
   def x: x = "x".asInstanceOf[x]
+  @scala.inline
   def y: y = "y".asInstanceOf[y]
 }
 

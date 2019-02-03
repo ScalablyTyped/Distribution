@@ -20,6 +20,7 @@ class StateManager[OptionType] ()
   def onMenuOpen(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/stateManager", "StateManager")
 @js.native
 object StateManager extends js.Object {

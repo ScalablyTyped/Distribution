@@ -13,6 +13,7 @@ class MergeAllStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/MergeAllStream", "MergeAllStream")
 @js.native
 object MergeAllStream extends js.Object {

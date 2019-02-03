@@ -66,6 +66,7 @@ class BreakStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.BreakStatementSyntax")
 @js.native
 object BreakStatementSyntax extends js.Object {

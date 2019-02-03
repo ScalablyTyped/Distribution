@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ChatCapabilitiesManager () extends js.Object
 
-/** Provides functionality for getting chat capabilities. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Chat.ChatCapabilitiesManager")
 @js.native
 object ChatCapabilitiesManager extends js.Object {

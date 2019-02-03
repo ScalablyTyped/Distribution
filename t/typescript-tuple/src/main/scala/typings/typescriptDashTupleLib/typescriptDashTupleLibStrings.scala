@@ -15,8 +15,11 @@ object typescriptDashTupleLibStrings {
   @js.native
   sealed trait shorterRight extends js.Object
   
+  @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
+  @scala.inline
   def shorterLeft: shorterLeft = "shorterLeft".asInstanceOf[shorterLeft]
+  @scala.inline
   def shorterRight: shorterRight = "shorterRight".asInstanceOf[shorterRight]
 }
 

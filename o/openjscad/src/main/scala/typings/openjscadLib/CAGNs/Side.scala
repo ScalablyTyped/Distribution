@@ -21,6 +21,7 @@ class Side protected ()
   def toPolygon3D(z0: js.Any, z1: js.Any): openjscadLib.CSGNs.Polygon = js.native
 }
 
+/* static members */
 @JSGlobal("CAG.Side")
 @js.native
 object Side extends js.Object {

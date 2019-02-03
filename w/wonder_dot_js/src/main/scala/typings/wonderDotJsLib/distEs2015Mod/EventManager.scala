@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EventManager ()
   extends wonderDotJsLib.distEs2015EventEventManagerMod.EventManager
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "EventManager")
 @js.native
 object EventManager extends js.Object {

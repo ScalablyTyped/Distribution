@@ -20,6 +20,7 @@ class Trigger protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codecommitTriggerMod.TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codecommit", "Trigger")
 @js.native
 object Trigger extends js.Object {

@@ -11,6 +11,7 @@ class default protected () extends Button {
   def this(props: ButtonProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/button/button", JSImport.Default)
 @js.native
 object default extends js.Object {

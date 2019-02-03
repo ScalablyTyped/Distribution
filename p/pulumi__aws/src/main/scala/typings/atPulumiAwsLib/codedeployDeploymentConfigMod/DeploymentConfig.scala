@@ -40,6 +40,7 @@ class DeploymentConfig protected ()
   val trafficRoutingConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_TimeBasedCanary]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codedeploy/deploymentConfig", "DeploymentConfig")
 @js.native
 object DeploymentConfig extends js.Object {

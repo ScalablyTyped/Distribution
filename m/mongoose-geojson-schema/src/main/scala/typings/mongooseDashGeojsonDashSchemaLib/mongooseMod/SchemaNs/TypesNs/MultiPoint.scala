@@ -14,6 +14,7 @@ class MultiPoint protected ()
   def cast(geojson: js.Object): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("mongoose.Schema.Types.MultiPoint")
 @js.native
 object MultiPoint extends js.Object {

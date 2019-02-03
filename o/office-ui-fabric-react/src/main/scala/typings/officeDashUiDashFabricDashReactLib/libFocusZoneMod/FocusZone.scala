@@ -12,6 +12,7 @@ class FocusZone protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsFocusZoneFocusZoneDotTypesMod.IFocusZoneProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/FocusZone", "FocusZone")
 @js.native
 object FocusZone extends js.Object {

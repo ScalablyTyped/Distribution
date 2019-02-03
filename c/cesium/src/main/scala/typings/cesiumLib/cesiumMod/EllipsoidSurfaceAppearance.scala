@@ -38,6 +38,7 @@ class EllipsoidSurfaceAppearance ()
   override def isTranslucent(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "EllipsoidSurfaceAppearance")
 @js.native
 object EllipsoidSurfaceAppearance extends js.Object {

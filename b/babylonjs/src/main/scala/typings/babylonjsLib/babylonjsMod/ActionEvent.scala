@@ -41,9 +41,7 @@ class ActionEvent protected ()
   additionalData: js.Any) = this()
 }
 
-/**
-  * ActionEvent is the event being sent when an action is triggered.
-  */
+/* static members */
 @JSImport("babylonjs", "ActionEvent")
 @js.native
 object ActionEvent extends js.Object {

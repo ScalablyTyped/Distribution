@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LayoutDirection () extends js.Object
 
+/* static members */
 @JSGlobal("android.util.LayoutDirection")
 @js.native
 object LayoutDirection extends js.Object {

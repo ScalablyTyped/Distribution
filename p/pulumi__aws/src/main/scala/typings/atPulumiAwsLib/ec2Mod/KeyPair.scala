@@ -20,6 +20,7 @@ class KeyPair protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2KeyPairMod.KeyPairArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "KeyPair")
 @js.native
 object KeyPair extends js.Object {

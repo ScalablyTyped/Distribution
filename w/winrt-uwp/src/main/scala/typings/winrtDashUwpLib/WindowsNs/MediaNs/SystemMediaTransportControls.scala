@@ -152,7 +152,7 @@ abstract class SystemMediaTransportControls () extends js.Object {
   def updateTimelineProperties(timelineProperties: SystemMediaTransportControlsTimelineProperties): scala.Unit = js.native
 }
 
-/** Represents an object that enables integrate with the system media transport controls and support for media commands. */
+/* static members */
 @JSGlobal("Windows.Media.SystemMediaTransportControls")
 @js.native
 object SystemMediaTransportControls extends js.Object {

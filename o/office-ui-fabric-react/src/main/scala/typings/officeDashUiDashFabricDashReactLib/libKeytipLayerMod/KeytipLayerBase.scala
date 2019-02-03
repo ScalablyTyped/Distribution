@@ -12,6 +12,7 @@ class KeytipLayerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsKeytipLayerKeytipLayerDotTypesMod.IKeytipLayerProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/KeytipLayer", "KeytipLayerBase")
 @js.native
 object KeytipLayerBase extends js.Object {

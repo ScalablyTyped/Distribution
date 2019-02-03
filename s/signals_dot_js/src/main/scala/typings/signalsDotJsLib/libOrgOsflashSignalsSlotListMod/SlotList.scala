@@ -76,6 +76,7 @@ class SlotList protected () extends js.Object {
   def prepend(slot: signalsDotJsLib.libOrgOsflashSignalsISlotMod.ISlot): SlotList = js.native
 }
 
+/* static members */
 @JSImport("signals.js/lib/org/osflash/signals/SlotList", "SlotList")
 @js.native
 object SlotList extends js.Object {

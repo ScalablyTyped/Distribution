@@ -11,6 +11,7 @@ class DivPlate () extends AbstractPlate {
   def this(options: ChartOptions) = this()
 }
 
+/* static members */
 @JSImport("d3kit", "DivPlate")
 @js.native
 object DivPlate extends js.Object {

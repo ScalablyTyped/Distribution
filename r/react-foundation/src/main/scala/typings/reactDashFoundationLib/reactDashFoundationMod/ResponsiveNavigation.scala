@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ResponsiveNavigation ()
   extends reactDashFoundationLib.componentsResponsiveMod.ResponsiveNavigation
 
+/* static members */
 @JSImport("react-foundation", "ResponsiveNavigation")
 @js.native
 object ResponsiveNavigation extends js.Object {

@@ -66,6 +66,7 @@ class ProgressBar protected ()
   /* private */ def updateDrawableState(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ProgressBar")
 @js.native
 object ProgressBar extends js.Object {

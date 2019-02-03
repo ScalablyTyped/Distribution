@@ -51,6 +51,7 @@ class TrackEntry () extends js.Object {
   def setTimelineData(to: TrackEntry, mixingToArray: js.Array[TrackEntry], propertyIDs: IntSet): TrackEntry = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.TrackEntry")
 @js.native
 object TrackEntry extends js.Object {

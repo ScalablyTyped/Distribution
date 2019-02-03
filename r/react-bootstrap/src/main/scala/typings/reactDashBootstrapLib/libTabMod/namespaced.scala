@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Tab
 
+/* static members */
 @JSImport("react-bootstrap/lib/Tab", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

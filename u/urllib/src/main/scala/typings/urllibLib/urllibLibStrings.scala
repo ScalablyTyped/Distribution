@@ -18,9 +18,13 @@ object urllibLibStrings {
   @js.native
   sealed trait PUT extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
 }
 

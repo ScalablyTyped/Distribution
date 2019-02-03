@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCLinearProgressFoundation ()
   extends atMaterialLinearDashProgressLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/linear-progress", "MDCLinearProgressFoundation")
 @js.native
 object MDCLinearProgressFoundation extends js.Object {

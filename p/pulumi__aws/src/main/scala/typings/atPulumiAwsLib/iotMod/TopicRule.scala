@@ -20,6 +20,7 @@ class TopicRule protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iotTopicRuleMod.TopicRuleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot", "TopicRule")
 @js.native
 object TopicRule extends js.Object {

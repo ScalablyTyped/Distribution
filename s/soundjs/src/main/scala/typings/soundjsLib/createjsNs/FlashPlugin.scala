@@ -22,6 +22,7 @@ class FlashPlugin () extends js.Object {
   def setVolume(value: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.FlashPlugin")
 @js.native
 object FlashPlugin extends js.Object {

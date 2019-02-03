@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class attr () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.attr")
 @js.native
 object attr extends js.Object {

@@ -12,6 +12,7 @@ class Utility () extends js.Object {
   var lAYOUTS_LATESTVERSION_URL: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Utilities.Utility")
 @js.native
 object Utility extends js.Object {

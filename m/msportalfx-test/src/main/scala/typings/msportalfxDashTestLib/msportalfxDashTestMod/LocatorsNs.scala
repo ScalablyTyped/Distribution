@@ -45,6 +45,7 @@ object LocatorsNs extends js.Object {
     override def findElements(context: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object By extends js.Object {
     def chained(values: msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator*): msportalfxDashTestLib.msportalfxDashTestMod.MsPortalTestFxNs.LocatorsNs.Locator = js.native

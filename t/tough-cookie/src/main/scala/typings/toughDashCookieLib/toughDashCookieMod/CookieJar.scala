@@ -103,6 +103,7 @@ class CookieJar () extends js.Object {
   def toJSON(): toughDashCookieLib.toughDashCookieMod.CookieJarNs.Serialized = js.native
 }
 
+/* static members */
 @JSImport("tough-cookie", "CookieJar")
 @js.native
 object CookieJar extends js.Object {

@@ -9,6 +9,7 @@ object undertakerLibStrings {
   @js.native
   sealed trait Tasks extends js.Object
   
+  @scala.inline
   def Tasks: Tasks = "Tasks".asInstanceOf[Tasks]
 }
 

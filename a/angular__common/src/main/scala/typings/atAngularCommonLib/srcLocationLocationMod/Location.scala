@@ -73,6 +73,7 @@ class Location protected () extends js.Object {
   ): rxjsLib.internalTypesMod.SubscriptionLike = js.native
 }
 
+/* static members */
 @JSImport("@angular/common/src/location/location", "Location")
 @js.native
 object Location extends js.Object {

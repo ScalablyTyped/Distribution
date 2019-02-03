@@ -16,6 +16,7 @@ class Reflog () extends js.Object {
   def write(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/ref-log", "Reflog")
 @js.native
 object Reflog extends js.Object {

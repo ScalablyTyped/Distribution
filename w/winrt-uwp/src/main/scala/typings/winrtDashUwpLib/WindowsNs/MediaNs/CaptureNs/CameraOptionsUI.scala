@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CameraOptionsUI () extends js.Object
 
-/** Provides a method for displaying a UI, by which the UI contains options for the capture of photos, audio recordings and videos. */
+/* static members */
 @JSGlobal("Windows.Media.Capture.CameraOptionsUI")
 @js.native
 object CameraOptionsUI extends js.Object {

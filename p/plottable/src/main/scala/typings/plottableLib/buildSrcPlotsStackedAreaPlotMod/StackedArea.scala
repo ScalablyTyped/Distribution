@@ -43,6 +43,7 @@ class StackedArea[X] ()
   def yOffset(dataset: plottableLib.buildSrcCoreDatasetMod.Dataset, x: js.Any): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/stackedAreaPlot", "StackedArea")
 @js.native
 object StackedArea extends js.Object {

@@ -21,10 +21,15 @@ object reactDashPanelgroupLibStrings {
   @js.native
   sealed trait stretch extends js.Object
   
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
+  @scala.inline
   def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
+  @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
+  @scala.inline
   def row: row = "row".asInstanceOf[row]
+  @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
 }
 

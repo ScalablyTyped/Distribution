@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Filter ()
   extends nodegitLib.filterMod.Filter
 
+/* static members */
 @JSImport("nodegit", "Filter")
 @js.native
 object Filter extends js.Object {

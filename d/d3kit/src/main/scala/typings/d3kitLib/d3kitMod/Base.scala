@@ -25,6 +25,7 @@ class Base () extends js.Object {
   def width(value: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "Base")
 @js.native
 object Base extends js.Object {

@@ -13,6 +13,7 @@ class StringValue ()
   def setValue(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "StringValue")
 @js.native
 object StringValue extends js.Object {

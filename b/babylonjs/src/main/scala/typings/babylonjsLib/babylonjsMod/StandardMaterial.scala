@@ -25,11 +25,7 @@ class StandardMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * This is the default material used in Babylon. It is the best trade off between quality
-  * and performances.
-  * @see http://doc.babylonjs.com/babylon101/materials
-  */
+/* static members */
 @JSImport("babylonjs", "StandardMaterial")
 @js.native
 object StandardMaterial extends js.Object {

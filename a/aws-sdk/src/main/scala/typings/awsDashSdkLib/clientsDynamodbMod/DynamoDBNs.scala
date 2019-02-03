@@ -3415,6 +3415,7 @@ object DynamoDBNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  /* static members */
   @js.native
   object Converter extends js.Object {
     def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native

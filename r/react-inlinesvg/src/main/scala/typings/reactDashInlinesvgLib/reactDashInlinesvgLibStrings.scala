@@ -9,6 +9,7 @@ object reactDashInlinesvgLibStrings {
   @js.native
   sealed trait InlineSVGError extends js.Object
   
+  @scala.inline
   def InlineSVGError: InlineSVGError = "InlineSVGError".asInstanceOf[InlineSVGError]
 }
 

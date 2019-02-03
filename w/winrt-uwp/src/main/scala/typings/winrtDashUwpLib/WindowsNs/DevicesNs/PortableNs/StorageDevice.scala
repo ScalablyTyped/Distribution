@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StorageDevice () extends js.Object
 
-/** Provides methods for accessing the storage functionality of a portable device that supports WPD. */
+/* static members */
 @JSGlobal("Windows.Devices.Portable.StorageDevice")
 @js.native
 object StorageDevice extends js.Object {

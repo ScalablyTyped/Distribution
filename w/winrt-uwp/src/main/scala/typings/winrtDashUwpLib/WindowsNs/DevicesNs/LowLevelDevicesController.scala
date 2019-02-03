@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class LowLevelDevicesController () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Devices.LowLevelDevicesController")
 @js.native
 object LowLevelDevicesController extends js.Object {

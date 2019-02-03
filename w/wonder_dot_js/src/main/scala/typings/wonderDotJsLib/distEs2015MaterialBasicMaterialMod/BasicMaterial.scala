@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicMaterial ()
   extends wonderDotJsLib.distEs2015MaterialStandardBasicMaterialMod.StandardBasicMaterial
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/material/BasicMaterial", "BasicMaterial")
 @js.native
 object BasicMaterial extends js.Object {

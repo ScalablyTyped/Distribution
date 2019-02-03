@@ -16,6 +16,7 @@ class ErrorCorrectionLevel protected () extends js.Object {
   var ordinal_Renamed_Field: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("ErrorCorrectionLevel")
 @js.native
 object ErrorCorrectionLevel extends js.Object {

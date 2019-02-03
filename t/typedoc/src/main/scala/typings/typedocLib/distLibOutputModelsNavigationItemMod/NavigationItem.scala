@@ -27,6 +27,7 @@ class NavigationItem () extends js.Object {
   var url: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/models/NavigationItem", "NavigationItem")
 @js.native
 object NavigationItem extends js.Object {

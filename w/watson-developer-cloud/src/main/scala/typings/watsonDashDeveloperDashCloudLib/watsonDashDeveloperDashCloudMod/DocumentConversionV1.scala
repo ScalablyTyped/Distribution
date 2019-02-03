@@ -29,6 +29,7 @@ class DocumentConversionV1 protected () extends js.Object {
   def uploadDocument(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "DocumentConversionV1")
 @js.native
 object DocumentConversionV1 extends js.Object {

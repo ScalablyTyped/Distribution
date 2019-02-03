@@ -12,6 +12,7 @@ class Vector3 ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Vector3")
 @js.native
 object Vector3 extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DisplayProperties () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Graphics.Display.DisplayProperties")
 @js.native
 object DisplayProperties extends js.Object {

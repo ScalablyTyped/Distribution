@@ -42,10 +42,7 @@ class ContextItem () extends EventTarget {
   def setLabel(label: java.lang.String): ContextItem = js.native
 }
 
-/**
-  * This class represents a contextual information/action.
-  * @property SEPARATOR {H.util.ContextItem} - Separator for the context items
-  */
+/* static members */
 @JSGlobal("H.util.ContextItem")
 @js.native
 object ContextItem extends js.Object {

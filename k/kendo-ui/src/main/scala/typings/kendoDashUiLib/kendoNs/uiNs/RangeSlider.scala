@@ -20,6 +20,7 @@ class RangeSlider protected () extends Widget {
   def values(selectionStart: scala.Double, selectionEnd: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.RangeSlider")
 @js.native
 object RangeSlider extends js.Object {

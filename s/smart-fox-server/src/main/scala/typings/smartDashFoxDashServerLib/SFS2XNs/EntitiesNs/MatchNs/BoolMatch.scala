@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BoolMatch () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Match.BoolMatch")
 @js.native
 object BoolMatch extends js.Object {

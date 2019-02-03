@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class UnicodeCharacters () extends js.Object
 
-/** Provides a way for apps to get information about Unicode characters. */
+/* static members */
 @JSGlobal("Windows.Data.Text.UnicodeCharacters")
 @js.native
 object UnicodeCharacters extends js.Object {

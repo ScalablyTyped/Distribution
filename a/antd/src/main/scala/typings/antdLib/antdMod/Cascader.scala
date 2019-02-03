@@ -12,6 +12,7 @@ class Cascader protected ()
   def this(props: antdLib.libCascaderMod.CascaderProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Cascader")
 @js.native
 object Cascader extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResourceContext () extends IResourceContext
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContext")
 @js.native
 object ResourceContext extends js.Object {

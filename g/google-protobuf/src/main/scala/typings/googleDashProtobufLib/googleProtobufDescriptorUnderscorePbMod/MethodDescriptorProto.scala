@@ -36,6 +36,7 @@ class MethodDescriptorProto ()
   def setServerStreaming(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto")
 @js.native
 object MethodDescriptorProto extends js.Object {

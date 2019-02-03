@@ -42,6 +42,7 @@ object acmNs extends js.Object {
     args: atPulumiAwsLib.acmGetCertificateMod.GetCertificateArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.acmGetCertificateMod.GetCertificateResult] = js.native
+  /* static members */
   @js.native
   object Certificate extends js.Object {
     /**
@@ -66,6 +67,7 @@ object acmNs extends js.Object {
     ): atPulumiAwsLib.acmCertificateMod.Certificate = js.native
   }
   
+  /* static members */
   @js.native
   object CertificateValidation extends js.Object {
     /**

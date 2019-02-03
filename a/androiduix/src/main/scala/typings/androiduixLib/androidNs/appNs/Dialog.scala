@@ -102,6 +102,7 @@ class Dialog protected ()
   def takeKeyEvents(get: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.Dialog")
 @js.native
 object Dialog extends js.Object {

@@ -22,6 +22,7 @@ object InfrastructureNs extends js.Object {
     def this(response: shopifyDashPrimeLib.Anon_Status, body: shopifyDashPrimeLib.distInfrastructureShopifyUnderscoreErrorMod.ErrorType3) = this()
   }
   
+  /* static members */
   @js.native
   object BaseService extends js.Object {
     def buildDefaultHeaders(): shopifyDashPrimeLib.Anon_Accept = js.native

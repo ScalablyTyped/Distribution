@@ -22,6 +22,7 @@ trait FreeBusy extends js.Object {
 @js.native
 class freebusy () extends js.Object
 
+/* static members */
 @JSGlobal("gapi.client.calendar.freebusy")
 @js.native
 object freebusy extends js.Object {

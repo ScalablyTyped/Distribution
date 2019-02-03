@@ -52,6 +52,7 @@ class CellSelection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   def toJSON(): CellSelectionJSON = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-tables", "CellSelection")
 @js.native
 object CellSelection extends js.Object {

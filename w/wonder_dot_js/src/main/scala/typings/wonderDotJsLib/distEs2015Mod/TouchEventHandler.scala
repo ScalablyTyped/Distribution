@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TouchEventHandler ()
   extends wonderDotJsLib.distEs2015EventHandlerTouchEventHandlerMod.TouchEventHandler
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "TouchEventHandler")
 @js.native
 object TouchEventHandler extends js.Object {

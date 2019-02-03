@@ -25,6 +25,7 @@ class Message () extends js.Object {
   def toString(now: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("android.os.Message")
 @js.native
 object Message extends js.Object {

@@ -12,6 +12,7 @@ class TextSpan protected ()
   def this(start: scala.Double, length: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TextSpan")
 @js.native
 object TextSpan extends js.Object {

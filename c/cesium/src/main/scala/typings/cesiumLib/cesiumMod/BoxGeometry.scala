@@ -12,6 +12,7 @@ class BoxGeometry protected ()
   def this(options: cesiumLib.Anon_MaximumCorner) = this()
 }
 
+/* static members */
 @JSImport("cesium", "BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {

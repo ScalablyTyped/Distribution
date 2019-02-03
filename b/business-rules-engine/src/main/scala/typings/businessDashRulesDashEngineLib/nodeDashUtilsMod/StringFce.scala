@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StringFce ()
   extends businessDashRulesDashEngineLib.UtilsNs.StringFce
 
+/* static members */
 @JSImport("node-utils", "StringFce")
 @js.native
 object StringFce extends js.Object {

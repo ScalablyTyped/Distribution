@@ -73,7 +73,7 @@ abstract class BarcodeScanner () extends js.Object {
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer] = js.native
 }
 
-/** Represents the barcode scanner device. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.BarcodeScanner")
 @js.native
 object BarcodeScanner extends js.Object {

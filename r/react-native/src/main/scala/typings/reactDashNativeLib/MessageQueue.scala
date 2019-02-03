@@ -13,6 +13,7 @@ class MessageQueue () extends js.Object {
   def registerLazyCallableModule(name: java.lang.String, factory: js.Function0[js.Object]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("MessageQueue")
 @js.native
 object MessageQueue extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DefaultTransporter ()
   extends googleDashAuthDashLibraryLib.buildSrcTransportersMod.DefaultTransporter
 
+/* static members */
 @JSImport("google-auth-library", "DefaultTransporter")
 @js.native
 object DefaultTransporter extends js.Object {

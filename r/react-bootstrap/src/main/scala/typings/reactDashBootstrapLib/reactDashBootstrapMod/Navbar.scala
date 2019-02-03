@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Navbar ()
   extends reactDashBootstrapLib.libMod.Navbar
 
+/* static members */
 @JSImport("react-bootstrap", "Navbar")
 @js.native
 object Navbar extends js.Object {

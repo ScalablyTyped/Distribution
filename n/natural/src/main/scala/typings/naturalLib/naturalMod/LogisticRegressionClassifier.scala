@@ -17,6 +17,7 @@ class LogisticRegressionClassifier () extends js.Object {
   def train(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("natural", "LogisticRegressionClassifier")
 @js.native
 object LogisticRegressionClassifier extends js.Object {

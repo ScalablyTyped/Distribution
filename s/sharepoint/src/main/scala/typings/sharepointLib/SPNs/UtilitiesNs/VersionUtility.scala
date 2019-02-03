@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VersionUtility () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Utilities.VersionUtility")
 @js.native
 object VersionUtility extends js.Object {

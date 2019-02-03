@@ -23,6 +23,7 @@ class namespaced () extends ExternalMechanism {
   override def response(cred: saslDashExternalLib.saslDashExternalMod.ExternalMechanismNs.Credentials): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sasl-external", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

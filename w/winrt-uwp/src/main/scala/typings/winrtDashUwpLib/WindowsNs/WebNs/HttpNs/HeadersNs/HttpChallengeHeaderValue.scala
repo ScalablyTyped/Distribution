@@ -28,7 +28,7 @@ class HttpChallengeHeaderValue protected () extends js.Object {
   var token: java.lang.String = js.native
 }
 
-/** Represents authentication information used in the Proxy-Authenticate and WWW-Authenticate HTTP header values. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpChallengeHeaderValue")
 @js.native
 object HttpChallengeHeaderValue extends js.Object {

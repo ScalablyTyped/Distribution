@@ -54,6 +54,7 @@ class ScriptApplicationManager () extends js.Object {
   def remove_preLoad(handlerFunction: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Srch.ScriptApplicationManager")
 @js.native
 object ScriptApplicationManager extends js.Object {

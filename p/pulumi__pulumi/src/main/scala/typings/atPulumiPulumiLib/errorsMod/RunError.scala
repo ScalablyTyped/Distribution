@@ -12,6 +12,7 @@ class RunError protected ()
   def this(message: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi/errors", "RunError")
 @js.native
 object RunError extends js.Object {

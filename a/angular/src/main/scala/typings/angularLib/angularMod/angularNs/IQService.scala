@@ -28,7 +28,11 @@ trait IQService
     *
     * @param promises A hash of promises.
     */
-  def all[T](promises: angularLib.angularLibStrings.IQService with T): IPromise[T] = js.native
+  def all[T](
+    promises: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: angular.angular.angular.IPromise<T[K]> | T[K]}
+    */ angularLib.angularLibStrings.IQService with js.Any
+  ): IPromise[T] = js.native
   def all[TAll](promises: js.Array[TAll | IPromise[TAll]]): IPromise[js.Array[TAll]] = js.native
   def all[T1, T2](values: js.Tuple2[T1 | IPromise[T1], T2 | IPromise[T2]]): IPromise[js.Tuple2[T1, T2]] = js.native
   def all[T1, T2, T3](values: js.Tuple3[T1 | IPromise[T1], T2 | IPromise[T2], T3 | IPromise[T3]]): IPromise[js.Tuple3[T1, T2, T3]] = js.native

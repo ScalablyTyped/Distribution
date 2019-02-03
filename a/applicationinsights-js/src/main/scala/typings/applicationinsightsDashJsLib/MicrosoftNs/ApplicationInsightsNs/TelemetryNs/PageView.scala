@@ -29,6 +29,7 @@ class PageView ()
   var aiDataContract_PageView: applicationinsightsDashJsLib.Anon_Duration = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.PageView")
 @js.native
 object PageView extends js.Object {

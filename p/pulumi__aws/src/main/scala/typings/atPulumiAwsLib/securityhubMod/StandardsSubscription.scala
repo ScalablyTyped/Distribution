@@ -20,6 +20,7 @@ class StandardsSubscription protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/securityhub", "StandardsSubscription")
 @js.native
 object StandardsSubscription extends js.Object {

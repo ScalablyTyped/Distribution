@@ -15,8 +15,11 @@ object dagreLibStrings {
   @js.native
   sealed trait r extends js.Object
   
+  @scala.inline
   def c: c = "c".asInstanceOf[c]
+  @scala.inline
   def l: l = "l".asInstanceOf[l]
+  @scala.inline
   def r: r = "r".asInstanceOf[r]
 }
 

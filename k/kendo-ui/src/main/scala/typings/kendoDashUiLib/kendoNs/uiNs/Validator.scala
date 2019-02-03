@@ -20,6 +20,7 @@ class Validator protected () extends Widget {
   def validateInput(input: stdLib.Element): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Validator")
 @js.native
 object Validator extends js.Object {

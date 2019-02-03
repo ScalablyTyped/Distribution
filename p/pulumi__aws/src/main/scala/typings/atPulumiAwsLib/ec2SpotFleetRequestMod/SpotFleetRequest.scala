@@ -110,6 +110,7 @@ class SpotFleetRequest protected ()
   val waitForFulfillment: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest")
 @js.native
 object SpotFleetRequest extends js.Object {

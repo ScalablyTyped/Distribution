@@ -49,9 +49,7 @@ class ObjectId ()
   def toString(format: java.lang.String): java.lang.String = js.native
 }
 
-/**
-  * Represents BSON ObjectId type
-  */
+/* static members */
 @JSGlobal("adone.data.bson.ObjectId")
 @js.native
 object ObjectId extends js.Object {

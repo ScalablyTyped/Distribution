@@ -21,6 +21,7 @@ class InternetGateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2InternetGatewayMod.InternetGatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "InternetGateway")
 @js.native
 object InternetGateway extends js.Object {

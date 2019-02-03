@@ -26,7 +26,7 @@ abstract class HashAlgorithmProvider () extends js.Object {
   def hashData(data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
-/** Represents a cryptographic hash provider. For more information about hashes, see MACs, hashes, and signatures. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
 @js.native
 object HashAlgorithmProvider extends js.Object {

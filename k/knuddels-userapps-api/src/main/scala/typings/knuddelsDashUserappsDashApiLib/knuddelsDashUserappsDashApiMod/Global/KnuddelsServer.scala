@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KnuddelsServer () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/KnuddelsServer.html
-	 */
+/* static members */
 @JSGlobal("KnuddelsServer")
 @js.native
 object KnuddelsServer extends js.Object {

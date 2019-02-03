@@ -49,6 +49,7 @@ class Database protected ()
   def refFromURL(url: java.lang.String): atFirebaseDatabaseLib.distSrcApiReferenceMod.Reference = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/api/Database", "Database")
 @js.native
 object Database extends js.Object {

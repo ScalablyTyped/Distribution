@@ -24,6 +24,7 @@ class MemberAccountAssociation protected ()
   val memberAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/macie/memberAccountAssociation", "MemberAccountAssociation")
 @js.native
 object MemberAccountAssociation extends js.Object {

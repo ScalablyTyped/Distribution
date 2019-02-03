@@ -28,6 +28,7 @@ class ResourceDataSync protected ()
   val s3Destination: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefix] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync")
 @js.native
 object ResourceDataSync extends js.Object {

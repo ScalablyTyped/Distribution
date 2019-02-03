@@ -20,6 +20,7 @@ class BucketMetric protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3BucketMetricMod.BucketMetricArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "BucketMetric")
 @js.native
 object BucketMetric extends js.Object {

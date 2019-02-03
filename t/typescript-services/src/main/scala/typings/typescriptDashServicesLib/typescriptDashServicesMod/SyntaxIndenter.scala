@@ -12,6 +12,7 @@ class SyntaxIndenter protected ()
   def this(indentFirstToken: scala.Boolean, indentationAmount: scala.Double, options: typescriptDashServicesLib.FormattingOptions) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SyntaxIndenter")
 @js.native
 object SyntaxIndenter extends js.Object {

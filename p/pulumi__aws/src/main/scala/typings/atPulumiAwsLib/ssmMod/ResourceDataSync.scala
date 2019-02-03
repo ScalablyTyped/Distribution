@@ -20,6 +20,7 @@ class ResourceDataSync protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmResourceDataSyncMod.ResourceDataSyncArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "ResourceDataSync")
 @js.native
 object ResourceDataSync extends js.Object {

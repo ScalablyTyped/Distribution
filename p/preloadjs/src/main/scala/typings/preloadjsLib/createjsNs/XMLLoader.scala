@@ -11,6 +11,7 @@ class XMLLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.XMLLoader")
 @js.native
 object XMLLoader extends js.Object {

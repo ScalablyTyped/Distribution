@@ -14,6 +14,7 @@ class UssdSession () extends IUssdSession {
   override def sendMessageAndGetReplyAsync(message: UssdMessage): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[UssdReply] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
 @js.native
 object UssdSession extends js.Object {

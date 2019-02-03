@@ -12,6 +12,7 @@ class RandomAccessStreamReference () extends IRandomAccessStreamReference {
   override def openReadAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Storage.Streams.RandomAccessStreamReference")
 @js.native
 object RandomAccessStreamReference extends js.Object {

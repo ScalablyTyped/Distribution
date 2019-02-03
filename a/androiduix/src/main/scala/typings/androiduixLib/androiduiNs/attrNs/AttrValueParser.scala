@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AttrValueParser () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.attr.AttrValueParser")
 @js.native
 object AttrValueParser extends js.Object {

@@ -12,6 +12,7 @@ class IndexMemberDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, indexSignature: typescriptDashServicesLib.TypeScriptNs.IndexSignatureSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "IndexMemberDeclarationSyntax")
 @js.native
 object IndexMemberDeclarationSyntax extends js.Object {

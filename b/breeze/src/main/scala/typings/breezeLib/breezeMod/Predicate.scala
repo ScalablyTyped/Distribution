@@ -24,6 +24,7 @@ class Predicate ()
   def this(property: java.lang.String, filterop: java.lang.String, property2: java.lang.String, filterop2: java.lang.String, value: js.Any) = this()
 }
 
+/* static members */
 @JSImport("breeze", "Predicate")
 @js.native
 object Predicate extends js.Object {

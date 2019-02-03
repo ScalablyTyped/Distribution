@@ -109,6 +109,7 @@ class Commit () extends js.Object {
   def treeId(): nodegitLib.oidMod.Oid = js.native
 }
 
+/* static members */
 @JSImport("nodegit/commit", "Commit")
 @js.native
 object Commit extends js.Object {

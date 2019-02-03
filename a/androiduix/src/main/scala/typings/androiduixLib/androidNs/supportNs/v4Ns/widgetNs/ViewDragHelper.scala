@@ -88,6 +88,7 @@ class ViewDragHelper protected () extends js.Object {
   def tryCaptureViewForDrag(toCapture: androiduixLib.androidNs.viewNs.View, pointerId: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.support.v4.widget.ViewDragHelper")
 @js.native
 object ViewDragHelper extends js.Object {

@@ -82,6 +82,7 @@ class StaticWebLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/staticWebLayer", "StaticWebLayer")
 @js.native
 object StaticWebLayer extends js.Object {

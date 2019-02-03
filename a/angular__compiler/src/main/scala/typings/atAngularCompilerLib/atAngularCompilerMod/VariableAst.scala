@@ -12,6 +12,7 @@ class VariableAst protected ()
   def this(name: java.lang.String, value: java.lang.String, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler", "VariableAst")
 @js.native
 object VariableAst extends js.Object {

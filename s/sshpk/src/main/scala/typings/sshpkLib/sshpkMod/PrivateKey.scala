@@ -24,6 +24,7 @@ class PrivateKey protected ()
   override def toPublic(): sshpkLib.sshpkMod.SshPKNs.Key = js.native
 }
 
+/* static members */
 @JSImport("sshpk", "PrivateKey")
 @js.native
 object PrivateKey extends js.Object {

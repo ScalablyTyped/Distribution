@@ -148,6 +148,7 @@ class LaunchTemplate protected ()
   val vpcSecurityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate")
 @js.native
 object LaunchTemplate extends js.Object {

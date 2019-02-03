@@ -62,6 +62,7 @@ class Certificate protected ()
   val validationMethod: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acm/certificate", "Certificate")
 @js.native
 object Certificate extends js.Object {

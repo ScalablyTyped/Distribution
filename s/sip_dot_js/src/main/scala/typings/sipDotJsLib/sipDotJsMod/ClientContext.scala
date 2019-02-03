@@ -15,6 +15,7 @@ class ClientContext protected ()
   def this(ua: sipDotJsLib.typesUaMod.UA, method: java.lang.String, target: sipDotJsLib.typesUriMod.URI, options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sip.js", "ClientContext")
 @js.native
 object ClientContext extends js.Object {

@@ -18,6 +18,7 @@ class namespaced () extends HDNode {
   override def derive(path: java.lang.String): HDNode = js.native
 }
 
+/* static members */
 @JSImport("hdkey", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

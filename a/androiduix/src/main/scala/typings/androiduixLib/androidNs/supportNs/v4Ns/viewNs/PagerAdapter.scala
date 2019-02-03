@@ -24,6 +24,7 @@ abstract class PagerAdapter () extends js.Object {
   def unregisterDataSetObserver(observer: androiduixLib.androidNs.databaseNs.DataSetObserver): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.support.v4.view.PagerAdapter")
 @js.native
 object PagerAdapter extends js.Object {

@@ -185,6 +185,7 @@ class Bar[X, Y] ()
   /* protected */ def position(): plottableLib.buildSrcPlotsCommonsMod.ITransformableAccessorScaleBinding[_, scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/barPlot", "Bar")
 @js.native
 object Bar extends js.Object {

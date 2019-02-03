@@ -102,9 +102,7 @@ class ItemContainer () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Defines an item that can be pressed, swiped, and dragged.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ItemContainer")
 @js.native
 object ItemContainer extends js.Object {

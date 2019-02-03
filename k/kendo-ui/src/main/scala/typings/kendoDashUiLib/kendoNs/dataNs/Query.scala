@@ -26,6 +26,7 @@ class Query protected () extends js.Object {
   def toArray(): js.Array[_] = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.Query")
 @js.native
 object Query extends js.Object {

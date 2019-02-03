@@ -9,6 +9,7 @@ object astringLibStrings {
   @js.native
   sealed trait Generator extends js.Object
   
+  @scala.inline
   def Generator: Generator = "Generator".asInstanceOf[Generator]
 }
 

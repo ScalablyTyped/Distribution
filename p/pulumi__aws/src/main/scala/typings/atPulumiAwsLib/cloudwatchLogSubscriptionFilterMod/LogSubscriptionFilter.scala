@@ -44,6 +44,7 @@ class LogSubscriptionFilter protected ()
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logSubscriptionFilter", "LogSubscriptionFilter")
 @js.native
 object LogSubscriptionFilter extends js.Object {

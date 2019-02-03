@@ -14,6 +14,7 @@ class DoStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/DoStream", "DoStream")
 @js.native
 object DoStream extends js.Object {

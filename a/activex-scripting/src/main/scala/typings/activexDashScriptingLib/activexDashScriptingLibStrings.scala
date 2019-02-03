@@ -9,6 +9,7 @@ object activexDashScriptingLibStrings {
   @js.native
   sealed trait Item extends js.Object
   
+  @scala.inline
   def Item: Item = "Item".asInstanceOf[Item]
 }
 

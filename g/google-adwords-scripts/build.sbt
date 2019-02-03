@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "google-adwords-scripts"
-version := "1.0-dt-20181017Z-7e98db"
+version := "1.0-dt-20181017Z-5d538c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "google-apps-script" % "2018-10-02-dt-20190123Z-5fede2",
-  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
+  "org.scalablytyped" %%% "google-apps-script" % "2018-10-02-dt-20190123Z-9ecb80",
+  "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

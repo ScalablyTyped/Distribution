@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Segment[X, Y] ()
   extends plottableLib.buildSrcPlotsSegmentPlotMod.Segment[X, Y]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Segment")
 @js.native
 object Segment extends js.Object {

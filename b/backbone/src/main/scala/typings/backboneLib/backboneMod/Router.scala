@@ -12,6 +12,7 @@ class Router ()
   def this(options: backboneLib.backboneMod.BackboneNs.RouterOptions) = this()
 }
 
+/* static members */
 @JSImport("backbone", "Router")
 @js.native
 object Router extends js.Object {

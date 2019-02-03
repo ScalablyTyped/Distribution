@@ -17,6 +17,7 @@ class DisplayMetrics () extends js.Object {
   var ydpi: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.util.DisplayMetrics")
 @js.native
 object DisplayMetrics extends js.Object {

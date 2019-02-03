@@ -11,6 +11,7 @@ class PgLiteral protected () extends js.Object {
   def this(str: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("node-pg-migrate", "PgLiteral")
 @js.native
 object PgLiteral extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TestDataGenerator () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.Maps.TestDataGenerator")
 @js.native
 object TestDataGenerator extends js.Object {

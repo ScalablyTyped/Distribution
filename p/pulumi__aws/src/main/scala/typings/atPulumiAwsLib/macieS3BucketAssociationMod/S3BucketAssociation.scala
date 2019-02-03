@@ -36,6 +36,7 @@ class S3BucketAssociation protected ()
   val prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/macie/s3BucketAssociation", "S3BucketAssociation")
 @js.native
 object S3BucketAssociation extends js.Object {

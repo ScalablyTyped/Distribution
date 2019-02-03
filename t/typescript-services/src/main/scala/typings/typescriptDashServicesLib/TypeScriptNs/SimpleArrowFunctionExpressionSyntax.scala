@@ -80,6 +80,7 @@ class SimpleArrowFunctionExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SimpleArrowFunctionExpressionSyntax")
 @js.native
 object SimpleArrowFunctionExpressionSyntax extends js.Object {

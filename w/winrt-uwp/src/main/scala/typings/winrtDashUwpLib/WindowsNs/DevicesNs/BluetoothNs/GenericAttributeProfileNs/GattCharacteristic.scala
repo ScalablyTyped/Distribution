@@ -90,7 +90,7 @@ abstract class GattCharacteristic () extends js.Object {
   def writeValueAsync(value: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer, writeOption: GattWriteOption): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[GattCommunicationStatus] = js.native
 }
 
-/** Represents a Characteristic of a GATT service. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattCharacteristic")
 @js.native
 object GattCharacteristic extends js.Object {

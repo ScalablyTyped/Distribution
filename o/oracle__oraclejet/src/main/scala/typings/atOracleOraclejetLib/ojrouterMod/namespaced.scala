@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Router
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojrouter", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

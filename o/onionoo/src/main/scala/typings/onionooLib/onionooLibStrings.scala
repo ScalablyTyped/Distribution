@@ -63,24 +63,43 @@ object onionooLibStrings {
   @js.native
   sealed trait weights extends js.Object
   
+  @scala.inline
   def `1_month`: `1_month` = "1_month".asInstanceOf[`1_month`]
+  @scala.inline
   def `1_week`: `1_week` = "1_week".asInstanceOf[`1_week`]
+  @scala.inline
   def `1_year`: `1_year` = "1_year".asInstanceOf[`1_year`]
+  @scala.inline
   def `3_days`: `3_days` = "3_days".asInstanceOf[`3_days`]
+  @scala.inline
   def `5_years`: `5_years` = "5_years".asInstanceOf[`5_years`]
+  @scala.inline
   def `6_months`: `6_months` = "6_months".asInstanceOf[`6_months`]
+  @scala.inline
   def bandwidth: bandwidth = "bandwidth".asInstanceOf[bandwidth]
+  @scala.inline
   def bridge: bridge = "bridge".asInstanceOf[bridge]
+  @scala.inline
   def clients: clients = "clients".asInstanceOf[clients]
+  @scala.inline
   def details: details = "details".asInstanceOf[details]
+  @scala.inline
   def experimental: experimental = "experimental".asInstanceOf[experimental]
+  @scala.inline
   def `new in series`: `new in series` = "new in series".asInstanceOf[`new in series`]
+  @scala.inline
   def obsolete: obsolete = "obsolete".asInstanceOf[obsolete]
+  @scala.inline
   def recommended: recommended = "recommended".asInstanceOf[recommended]
+  @scala.inline
   def relay: relay = "relay".asInstanceOf[relay]
+  @scala.inline
   def summary: summary = "summary".asInstanceOf[summary]
+  @scala.inline
   def unrecommended: unrecommended = "unrecommended".asInstanceOf[unrecommended]
+  @scala.inline
   def uptime: uptime = "uptime".asInstanceOf[uptime]
+  @scala.inline
   def weights: weights = "weights".asInstanceOf[weights]
 }
 

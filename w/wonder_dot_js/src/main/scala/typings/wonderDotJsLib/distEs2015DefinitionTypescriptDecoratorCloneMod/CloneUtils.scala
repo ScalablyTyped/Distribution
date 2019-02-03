@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CloneUtils () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/definition/typescript/decorator/clone", "CloneUtils")
 @js.native
 object CloneUtils extends js.Object {

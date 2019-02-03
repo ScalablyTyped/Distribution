@@ -18,6 +18,7 @@ class Object () extends js.Object {
   def `type`(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/object", "Object")
 @js.native
 object Object extends js.Object {

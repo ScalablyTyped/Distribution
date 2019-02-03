@@ -126,6 +126,7 @@ object cognitoNs extends js.Object {
     args: atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.cognitoGetUserPoolsMod.GetUserPoolsResult] = js.native
+  /* static members */
   @js.native
   object IdentityPool extends js.Object {
     /**
@@ -150,6 +151,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
   }
   
+  /* static members */
   @js.native
   object IdentityPoolRoleAttachment extends js.Object {
     /**
@@ -174,6 +176,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
   }
   
+  /* static members */
   @js.native
   object IdentityProvider extends js.Object {
     /**
@@ -198,6 +201,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
   }
   
+  /* static members */
   @js.native
   object ResourceServer extends js.Object {
     /**
@@ -222,6 +226,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
   }
   
+  /* static members */
   @js.native
   object UserGroup extends js.Object {
     /**
@@ -246,6 +251,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
   }
   
+  /* static members */
   @js.native
   object UserPool extends js.Object {
     /**
@@ -270,6 +276,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
   }
   
+  /* static members */
   @js.native
   object UserPoolClient extends js.Object {
     /**
@@ -294,6 +301,7 @@ object cognitoNs extends js.Object {
     ): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
   }
   
+  /* static members */
   @js.native
   object UserPoolDomain extends js.Object {
     /**

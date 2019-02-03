@@ -28,6 +28,7 @@ class Quaternion () extends js.Object {
   def mulVector3(vector3: Vector3): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("math3d", "Quaternion")
 @js.native
 object Quaternion extends js.Object {

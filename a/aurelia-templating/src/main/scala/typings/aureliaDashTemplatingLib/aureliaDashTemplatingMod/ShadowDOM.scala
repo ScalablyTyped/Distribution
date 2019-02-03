@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShadowDOM () extends js.Object
 
+/* static members */
 @JSImport("aurelia-templating", "ShadowDOM")
 @js.native
 object ShadowDOM extends js.Object {

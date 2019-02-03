@@ -108,39 +108,73 @@ object socketclusterDashServerLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def authStateChange: authStateChange = "authStateChange".asInstanceOf[authStateChange]
+  @scala.inline
   def authenticate: authenticate = "authenticate".asInstanceOf[authenticate]
+  @scala.inline
   def authenticated: authenticated = "authenticated".asInstanceOf[authenticated]
+  @scala.inline
   def badSocketAuthToken: badSocketAuthToken = "badSocketAuthToken".asInstanceOf[badSocketAuthToken]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def closure: closure = "closure".asInstanceOf[closure]
+  @scala.inline
   def connectAbort: connectAbort = "connectAbort".asInstanceOf[connectAbort]
+  @scala.inline
   def connecting: connecting = "connecting".asInstanceOf[connecting]
+  @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
+  @scala.inline
   def connectionAbort: connectionAbort = "connectionAbort".asInstanceOf[connectionAbort]
+  @scala.inline
   def deauthenticate: deauthenticate = "deauthenticate".asInstanceOf[deauthenticate]
+  @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  @scala.inline
   def disconnection: disconnection = "disconnection".asInstanceOf[disconnection]
+  @scala.inline
   def emit: emit = "emit".asInstanceOf[emit]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def handshake: handshake = "handshake".asInstanceOf[handshake]
+  @scala.inline
   def handshakeSC: handshakeSC = "handshakeSC".asInstanceOf[handshakeSC]
+  @scala.inline
   def handshakeWS: handshakeWS = "handshakeWS".asInstanceOf[handshakeWS]
+  @scala.inline
   def http: http = "http".asInstanceOf[http]
+  @scala.inline
   def https: https = "https".asInstanceOf[https]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def publishIn: publishIn = "publishIn".asInstanceOf[publishIn]
+  @scala.inline
   def publishOut: publishOut = "publishOut".asInstanceOf[publishOut]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def rr: rr = "rr".asInstanceOf[rr]
+  @scala.inline
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
+  @scala.inline
   def subscription: subscription = "subscription".asInstanceOf[subscription]
+  @scala.inline
   def unauthenticated: unauthenticated = "unauthenticated".asInstanceOf[unauthenticated]
+  @scala.inline
   def unsubscription: unsubscription = "unsubscription".asInstanceOf[unsubscription]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DeviceManager ()
   extends wonderDotJsLib.distEs2015DeviceDeviceManagerMod.DeviceManager
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "DeviceManager")
 @js.native
 object DeviceManager extends js.Object {

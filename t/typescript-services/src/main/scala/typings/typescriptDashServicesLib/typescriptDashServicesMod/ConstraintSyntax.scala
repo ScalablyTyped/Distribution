@@ -12,6 +12,7 @@ class ConstraintSyntax protected ()
   def this(extendsKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, `type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ConstraintSyntax")
 @js.native
 object ConstraintSyntax extends js.Object {

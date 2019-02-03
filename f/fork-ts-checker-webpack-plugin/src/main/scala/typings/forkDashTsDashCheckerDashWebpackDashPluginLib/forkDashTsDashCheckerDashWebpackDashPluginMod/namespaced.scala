@@ -107,13 +107,7 @@ class namespaced () extends ForkTsCheckerWebpackPlugin {
   override def apply(compiler: webpackLib.webpackMod.Compiler): scala.Unit = js.native
 }
 
-/**
-  * ForkTsCheckerWebpackPlugin
-  * Runs typescript type checker and linter (tslint) on separate process.
-  * This speed-ups build a lot.
-  *
-  * Options description in README.md
-  */
+/* static members */
 @JSImport("fork-ts-checker-webpack-plugin", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -12,6 +12,7 @@ class ContextualMenuBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsContextualMenuContextualMenuDotTypesMod.IContextualMenuProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/ContextualMenu", "ContextualMenuBase")
 @js.native
 object ContextualMenuBase extends js.Object {

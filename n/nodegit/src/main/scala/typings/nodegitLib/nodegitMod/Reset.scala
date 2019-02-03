@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Reset ()
   extends nodegitLib.resetMod.Reset
 
+/* static members */
 @JSImport("nodegit", "Reset")
 @js.native
 object Reset extends js.Object {

@@ -39,7 +39,7 @@ abstract class CustomSensor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a custom sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Custom.CustomSensor")
 @js.native
 object CustomSensor extends js.Object {

@@ -255,6 +255,7 @@ class GoogleAuth () extends js.Object {
   /* protected */ def warnOnProblematicCredentials(client: googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-auth-library/build/src/auth/googleauth", "GoogleAuth")
 @js.native
 object GoogleAuth extends js.Object {

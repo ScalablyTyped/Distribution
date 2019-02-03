@@ -36,6 +36,7 @@ object codebuildNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.codebuildWebhookMod.WebhookArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Project extends js.Object {
     /**
@@ -60,6 +61,7 @@ object codebuildNs extends js.Object {
     ): atPulumiAwsLib.codebuildProjectMod.Project = js.native
   }
   
+  /* static members */
   @js.native
   object Webhook extends js.Object {
     /**

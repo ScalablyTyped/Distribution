@@ -65,6 +65,7 @@ class Secret protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/secretsmanager/secret", "Secret")
 @js.native
 object Secret extends js.Object {

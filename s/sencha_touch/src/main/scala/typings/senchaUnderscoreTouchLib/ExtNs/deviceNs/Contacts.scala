@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Contacts () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Contacts")
 @js.native
 object Contacts extends js.Object {

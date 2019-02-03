@@ -20,6 +20,7 @@ class MemcachedLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksMemcachedLayerMod.MemcachedLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "MemcachedLayer")
 @js.native
 object MemcachedLayer extends js.Object {

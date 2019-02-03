@@ -17,7 +17,7 @@ abstract class KeyDerivationParameters () extends js.Object {
   var kdfGenericBinary: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
-/** Represents parameters used when deriving a key. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 object KeyDerivationParameters extends js.Object {

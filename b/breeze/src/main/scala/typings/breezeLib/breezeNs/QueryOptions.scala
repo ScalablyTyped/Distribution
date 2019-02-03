@@ -19,6 +19,7 @@ class QueryOptions () extends js.Object {
   def using(config: QueryOptionsConfiguration): QueryOptions = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.QueryOptions")
 @js.native
 object QueryOptions extends js.Object {

@@ -15,6 +15,7 @@ class RenderTexture protected () extends Texture {
   def resize(width: scala.Double, height: scala.Double, doNotResizeBaseTexture: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.RenderTexture")
 @js.native
 object RenderTexture extends js.Object {

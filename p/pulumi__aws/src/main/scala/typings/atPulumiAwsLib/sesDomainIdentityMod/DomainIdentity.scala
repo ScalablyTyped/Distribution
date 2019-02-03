@@ -38,6 +38,7 @@ class DomainIdentity protected ()
   val verificationToken: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/domainIdentity", "DomainIdentity")
 @js.native
 object DomainIdentity extends js.Object {

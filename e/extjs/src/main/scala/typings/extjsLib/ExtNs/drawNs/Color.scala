@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Color () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.Color")
 @js.native
 object Color extends js.Object {

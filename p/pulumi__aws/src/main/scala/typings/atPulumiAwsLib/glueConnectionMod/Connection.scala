@@ -48,6 +48,7 @@ class Connection protected ()
   val physicalConnectionRequirements: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZoneSecurityGroupIdLists]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/connection", "Connection")
 @js.native
 object Connection extends js.Object {

@@ -169,6 +169,7 @@ class LLRBNode[K, V] protected () extends js.Object {
   /* private */ def `rotateRight_`(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/util/SortedMap", "LLRBNode")
 @js.native
 object LLRBNode extends js.Object {

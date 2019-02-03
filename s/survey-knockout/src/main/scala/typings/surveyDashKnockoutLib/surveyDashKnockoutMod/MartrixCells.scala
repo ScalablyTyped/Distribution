@@ -26,6 +26,7 @@ class MartrixCells protected () extends js.Object {
   def setJson(value: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "MartrixCells")
 @js.native
 object MartrixCells extends js.Object {

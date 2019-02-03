@@ -32,6 +32,7 @@ class ListenerPolicy protected ()
   val policyNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/listenerPolicy", "ListenerPolicy")
 @js.native
 object ListenerPolicy extends js.Object {

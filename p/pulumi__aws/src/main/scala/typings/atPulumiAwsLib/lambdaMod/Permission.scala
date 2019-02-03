@@ -20,6 +20,7 @@ class Permission protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lambdaPermissionMod.PermissionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda", "Permission")
 @js.native
 object Permission extends js.Object {

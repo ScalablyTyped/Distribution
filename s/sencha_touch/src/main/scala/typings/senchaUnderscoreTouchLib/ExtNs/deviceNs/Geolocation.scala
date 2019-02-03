@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Geolocation () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Geolocation")
 @js.native
 object Geolocation extends js.Object {

@@ -61,6 +61,7 @@ class Convex ()
   override def updateCenterOfMass(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("p2", "Convex")
 @js.native
 object Convex extends js.Object {

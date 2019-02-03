@@ -11,6 +11,7 @@ class default[TCache] protected () extends ApolloProvider[TCache] {
   def this(props: ApolloProviderProps[TCache], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("react-apollo/ApolloProvider", JSImport.Default)
 @js.native
 object default extends js.Object {

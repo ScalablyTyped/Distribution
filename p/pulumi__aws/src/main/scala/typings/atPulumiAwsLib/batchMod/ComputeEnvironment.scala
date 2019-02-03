@@ -20,6 +20,7 @@ class ComputeEnvironment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.batchComputeEnvironmentMod.ComputeEnvironmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch", "ComputeEnvironment")
 @js.native
 object ComputeEnvironment extends js.Object {

@@ -36,6 +36,7 @@ class Frame () extends js.Object {
   def translation(sinceFrame: Frame): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Frame")
 @js.native
 object Frame extends js.Object {

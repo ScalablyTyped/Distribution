@@ -90,10 +90,7 @@ class MorphTargetManager () extends js.Object {
   def synchronize(): scala.Unit = js.native
 }
 
-/**
-  * This class is used to deform meshes using morphing between different targets
-  * @see http://doc.babylonjs.com/how_to/how_to_use_morphtargets
-  */
+/* static members */
 @JSGlobal("BABYLON.MorphTargetManager")
 @js.native
 object MorphTargetManager extends js.Object {

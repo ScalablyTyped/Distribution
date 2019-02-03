@@ -50,10 +50,7 @@ class PlaneGeometry protected () extends _PrimitiveGeometry {
   var size: scala.Double = js.native
 }
 
-/**
-  * Creates a plane geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#plane
-  */
+/* static members */
 @JSGlobal("BABYLON.PlaneGeometry")
 @js.native
 object PlaneGeometry extends js.Object {

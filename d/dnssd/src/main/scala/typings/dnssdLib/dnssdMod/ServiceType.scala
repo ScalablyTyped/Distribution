@@ -15,6 +15,7 @@ class ServiceType protected () extends js.Object {
   var subtypes: js.Array[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("dnssd", "ServiceType")
 @js.native
 object ServiceType extends js.Object {

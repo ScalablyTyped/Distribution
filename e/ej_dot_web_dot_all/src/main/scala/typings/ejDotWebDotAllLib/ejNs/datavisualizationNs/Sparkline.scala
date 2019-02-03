@@ -22,6 +22,7 @@ class Sparkline protected ()
   def redraw(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Sparkline")
 @js.native
 object Sparkline extends js.Object {

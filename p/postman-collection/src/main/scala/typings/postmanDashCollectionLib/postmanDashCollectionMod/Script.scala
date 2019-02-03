@@ -21,6 +21,7 @@ class Script () extends Property[ScriptDefinition] {
   def update(options: ScriptDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Script")
 @js.native
 object Script extends js.Object {

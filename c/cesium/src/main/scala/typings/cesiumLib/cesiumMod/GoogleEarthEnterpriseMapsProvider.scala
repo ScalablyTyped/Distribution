@@ -76,6 +76,7 @@ class GoogleEarthEnterpriseMapsProvider protected ()
   override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
 }
 
+/* static members */
 @JSImport("cesium", "GoogleEarthEnterpriseMapsProvider")
 @js.native
 object GoogleEarthEnterpriseMapsProvider extends js.Object {

@@ -12,6 +12,7 @@ class LongestCommonSubsequence[T] protected ()
   def this(s: js.Array[T], t: js.Array[T]) = this()
 }
 
+/* static members */
 @JSImport("webcola", "LongestCommonSubsequence")
 @js.native
 object LongestCommonSubsequence extends js.Object {

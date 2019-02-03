@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Drag ()
   extends plottableLib.buildSrcInteractionsDragInteractionMod.Drag
 
+/* static members */
 @JSImport("plottable/build/src/interactions", "Drag")
 @js.native
 object Drag extends js.Object {

@@ -16,6 +16,7 @@ class MDCSnackbar ()
   def show(data: atMaterialSnackbarLib.foundationMod.MDCSnackbarData): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/snackbar", "MDCSnackbar")
 @js.native
 object MDCSnackbar extends js.Object {

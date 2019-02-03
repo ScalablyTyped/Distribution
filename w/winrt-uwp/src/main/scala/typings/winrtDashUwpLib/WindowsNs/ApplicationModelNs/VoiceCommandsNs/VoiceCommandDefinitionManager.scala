@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class VoiceCommandDefinitionManager () extends js.Object
 
-/** A static class that enables installing command sets from a Voice Command Definition (VCD) file, and getting installed command sets. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandDefinitionManager")
 @js.native
 object VoiceCommandDefinitionManager extends js.Object {

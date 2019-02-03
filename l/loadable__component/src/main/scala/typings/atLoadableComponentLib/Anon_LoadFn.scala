@@ -7,10 +7,18 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Anon_LoadFn extends js.Object {
-  def apply[T](loadFn: js.Function1[/* props */ js.Object, js.Promise[T]]): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
   def apply[T](
-    loadFn: js.Function1[/* props */ js.Object, js.Promise[T]],
+    loadFn: js.Function1[
+      /* props */ T, 
+      js.Promise[atLoadableComponentLib.atLoadableComponentMod.DefaultComponent[T]]
+    ]
+  ): atLoadableComponentLib.atLoadableComponentMod.LoadableComponent[T] = js.native
+  def apply[T](
+    loadFn: js.Function1[
+      /* props */ T, 
+      js.Promise[atLoadableComponentLib.atLoadableComponentMod.DefaultComponent[T]]
+    ],
     options: atLoadableComponentLib.atLoadableComponentMod.Options
-  ): atLoadableComponentLib.atLoadableComponentMod.LoadableLibrary[T] = js.native
+  ): atLoadableComponentLib.atLoadableComponentMod.LoadableComponent[T] = js.native
 }
 

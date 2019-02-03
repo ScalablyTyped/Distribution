@@ -24,11 +24,7 @@ class ErrorFromName protected () extends js.Object {
   def this(name: java.lang.String, message: java.lang.String) = this()
 }
 
-//#endregion Properties
-//#region Objects
-/**
-  * An error object.
-  **/
+/* static members */
 @JSGlobal("WinJS.ErrorFromName")
 @js.native
 object ErrorFromName extends js.Object {

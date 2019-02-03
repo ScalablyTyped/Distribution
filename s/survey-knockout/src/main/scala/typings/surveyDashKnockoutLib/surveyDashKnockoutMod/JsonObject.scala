@@ -19,6 +19,7 @@ class JsonObject () extends js.Object {
   /* protected */ def valueToObj(value: js.Any, obj: js.Any, property: JsonObjectProperty): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "JsonObject")
 @js.native
 object JsonObject extends js.Object {

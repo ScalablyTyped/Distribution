@@ -18,9 +18,13 @@ object reactDashNotifyDashToastLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

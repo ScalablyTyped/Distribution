@@ -12,6 +12,7 @@ class CoachmarkBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsCoachmarkCoachmarkDotTypesMod.ICoachmarkProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Coachmark", "CoachmarkBase")
 @js.native
 object CoachmarkBase extends js.Object {

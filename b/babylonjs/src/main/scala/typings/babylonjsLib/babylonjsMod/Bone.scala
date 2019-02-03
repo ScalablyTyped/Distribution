@@ -49,10 +49,7 @@ class Bone protected ()
   name: java.lang.String, skeleton: babylonjsLib.BABYLONNs.Skeleton, parentBone: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Bone], localMatrix: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Matrix], restPose: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Matrix], baseMatrix: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Matrix], index: babylonjsLib.BABYLONNs.Nullable[scala.Double]) = this()
 }
 
-/**
-  * Class used to store bone information
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
-  */
+/* static members */
 @JSImport("babylonjs", "Bone")
 @js.native
 object Bone extends js.Object {

@@ -20,6 +20,7 @@ class VpcPeeringConnectionAccepter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpcPeeringConnectionAccepterMod.VpcPeeringConnectionAccepterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpcPeeringConnectionAccepter")
 @js.native
 object VpcPeeringConnectionAccepter extends js.Object {

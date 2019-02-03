@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PublishingSite ()
   extends sharepointLib.SPNs.ClientObject
 
+/* static members */
 @JSGlobal("SP.Publishing.PublishingSite")
 @js.native
 object PublishingSite extends js.Object {

@@ -34,7 +34,9 @@ object ^ extends js.Object {
   val hiddenContentStyle: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val noWrap: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   val normalize: atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
-  def buildClassMap[T](styles: T): atUifabricStylingLib.atUifabricStylingLibStrings.buildClassMap with js.Any = js.native
+  def buildClassMap[T](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof T ]:? string}
+    */ atUifabricStylingLib.atUifabricStylingLibStrings.buildClassMap with js.Any = js.native
   def concatStyleSets(
     styleSets: (js.UndefOr[
       atUifabricMergeDashStylesLib.libIStyleSetMod.IStyleSet[_] | atUifabricStylingLib.atUifabricStylingLibNumbers.`false` | scala.Null

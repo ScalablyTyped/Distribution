@@ -23,7 +23,7 @@ abstract class RfcommServiceId () extends js.Object {
   def asString(): java.lang.String = js.native
 }
 
-/** Represents an RFCOMM service ID. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceId")
 @js.native
 object RfcommServiceId extends js.Object {

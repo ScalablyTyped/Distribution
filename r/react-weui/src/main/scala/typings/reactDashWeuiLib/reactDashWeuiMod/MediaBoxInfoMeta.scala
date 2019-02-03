@@ -12,6 +12,7 @@ class MediaBoxInfoMeta protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "MediaBoxInfoMeta")
 @js.native
 object MediaBoxInfoMeta extends js.Object {

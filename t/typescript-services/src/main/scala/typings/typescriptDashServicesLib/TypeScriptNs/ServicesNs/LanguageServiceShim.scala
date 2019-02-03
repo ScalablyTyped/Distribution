@@ -92,6 +92,7 @@ class LanguageServiceShim protected ()
   override def refresh(throwOnError: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.LanguageServiceShim")
 @js.native
 object LanguageServiceShim extends js.Object {

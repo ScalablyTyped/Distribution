@@ -13,6 +13,7 @@ class Path protected ()
   def this(vertices: js.Array[twoDotJsLib.twoDotJsMod.TwoNs.Vector], closed: scala.Boolean, curved: scala.Boolean, manual: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("two.js", "Path")
 @js.native
 object Path extends js.Object {

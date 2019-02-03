@@ -98,6 +98,7 @@ class TextFieldBase protected ()
   override def setSelectionStart(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/TextField/TextField.base", "TextFieldBase")
 @js.native
 object TextFieldBase extends js.Object {

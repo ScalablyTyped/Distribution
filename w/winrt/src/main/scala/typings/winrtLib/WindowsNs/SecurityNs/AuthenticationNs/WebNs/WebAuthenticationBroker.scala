@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAuthenticationBroker () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
 @js.native
 object WebAuthenticationBroker extends js.Object {

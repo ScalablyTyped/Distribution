@@ -28,6 +28,7 @@ abstract class ReplacementSpan () extends MetricAffectingSpan {
   ): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.style.ReplacementSpan")
 @js.native
 object ReplacementSpan extends js.Object {

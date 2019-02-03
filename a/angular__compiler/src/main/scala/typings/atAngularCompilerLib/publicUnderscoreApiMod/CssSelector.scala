@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CssSelector ()
   extends atAngularCompilerLib.srcCompilerMod.CssSelector
 
+/* static members */
 @JSImport("@angular/compiler/public_api", "CssSelector")
 @js.native
 object CssSelector extends js.Object {

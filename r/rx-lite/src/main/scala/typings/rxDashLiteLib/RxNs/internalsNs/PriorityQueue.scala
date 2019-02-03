@@ -21,7 +21,7 @@ class PriorityQueue[TTime] protected () extends js.Object {
   def removeAt(index: scala.Double): scala.Unit = js.native
 }
 
-// Priority Queue for Scheduling
+/* static members */
 @JSGlobal("Rx.internals.PriorityQueue")
 @js.native
 object PriorityQueue extends js.Object {

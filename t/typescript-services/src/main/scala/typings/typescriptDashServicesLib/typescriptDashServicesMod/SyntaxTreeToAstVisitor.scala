@@ -12,6 +12,7 @@ class SyntaxTreeToAstVisitor protected ()
   def this(fileName: java.lang.String, lineMap: typescriptDashServicesLib.TypeScriptNs.LineMap, compilationSettings: typescriptDashServicesLib.TypeScriptNs.ImmutableCompilationSettings) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SyntaxTreeToAstVisitor")
 @js.native
 object SyntaxTreeToAstVisitor extends js.Object {

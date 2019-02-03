@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicCameraController ()
   extends wonderDotJsLib.distEs2015ComponentCameraControllerBasicBasicCameraControllerMod.BasicCameraController
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "BasicCameraController")
 @js.native
 object BasicCameraController extends js.Object {

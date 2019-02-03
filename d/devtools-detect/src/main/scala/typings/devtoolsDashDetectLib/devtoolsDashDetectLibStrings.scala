@@ -15,8 +15,11 @@ object devtoolsDashDetectLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def devtoolschange: devtoolschange = "devtoolschange".asInstanceOf[devtoolschange]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

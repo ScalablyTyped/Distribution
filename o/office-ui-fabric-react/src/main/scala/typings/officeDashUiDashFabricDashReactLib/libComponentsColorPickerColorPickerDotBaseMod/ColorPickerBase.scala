@@ -33,6 +33,7 @@ class ColorPickerBase protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker/ColorPicker.base", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {

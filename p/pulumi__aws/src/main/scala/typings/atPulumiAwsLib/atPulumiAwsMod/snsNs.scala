@@ -89,6 +89,7 @@ object snsNs extends js.Object {
   
   def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] = js.native
   def getTopic(args: atPulumiAwsLib.snsGetTopicMod.GetTopicArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.snsGetTopicMod.GetTopicResult] = js.native
+  /* static members */
   @js.native
   object PlatformApplication extends js.Object {
     /**
@@ -113,6 +114,7 @@ object snsNs extends js.Object {
     ): atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplication = js.native
   }
   
+  /* static members */
   @js.native
   object SmsPreferences extends js.Object {
     /**
@@ -137,6 +139,7 @@ object snsNs extends js.Object {
     ): atPulumiAwsLib.snsSmsPreferencesMod.SmsPreferences = js.native
   }
   
+  /* static members */
   @js.native
   object Topic extends js.Object {
     /**
@@ -161,6 +164,7 @@ object snsNs extends js.Object {
     ): atPulumiAwsLib.snsSnsMixinsMod.snsTopicMod.Topic = js.native
   }
   
+  /* static members */
   @js.native
   object TopicPolicy extends js.Object {
     /**
@@ -185,6 +189,7 @@ object snsNs extends js.Object {
     ): atPulumiAwsLib.snsTopicPolicyMod.TopicPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object TopicSubscription extends js.Object {
     /**

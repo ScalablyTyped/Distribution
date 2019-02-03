@@ -145,9 +145,7 @@ class Gamepad protected () extends js.Object {
   def update(): scala.Unit = js.native
 }
 
-/**
-  * Represents a gamepad
-  */
+/* static members */
 @JSGlobal("BABYLON.Gamepad")
 @js.native
 object Gamepad extends js.Object {

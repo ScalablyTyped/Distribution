@@ -12,6 +12,7 @@ class SingleLineWrapper ()
   /* private */ def areSameResults(one: js.Any, two: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("typesettable/build/src/wrappers/singleLineWrapper", "SingleLineWrapper")
 @js.native
 object SingleLineWrapper extends js.Object {

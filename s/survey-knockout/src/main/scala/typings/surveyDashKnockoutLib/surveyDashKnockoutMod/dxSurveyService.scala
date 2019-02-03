@@ -74,6 +74,7 @@ class dxSurveyService () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "dxSurveyService")
 @js.native
 object dxSurveyService extends js.Object {

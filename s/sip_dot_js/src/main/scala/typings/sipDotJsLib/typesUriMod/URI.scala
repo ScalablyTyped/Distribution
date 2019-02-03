@@ -29,6 +29,7 @@ class URI protected () extends Parameters {
   def toRaw(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/uri", "URI")
 @js.native
 object URI extends js.Object {

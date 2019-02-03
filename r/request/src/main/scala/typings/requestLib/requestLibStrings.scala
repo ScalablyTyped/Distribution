@@ -36,15 +36,25 @@ object requestLibStrings {
   @js.native
   sealed trait socket extends js.Object
   
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def header: header = "header".asInstanceOf[header]
+  @scala.inline
   def pipe: pipe = "pipe".asInstanceOf[pipe]
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
   def socket: socket = "socket".asInstanceOf[socket]
 }
 

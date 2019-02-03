@@ -13,6 +13,7 @@ class Deferred () extends js.Object {
   def resolve(`val`: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("athenajs", "Deferred")
 @js.native
 object Deferred extends js.Object {

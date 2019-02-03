@@ -182,6 +182,7 @@ object compilationNs extends js.Object {
   class RuntimeTemplate ()
     extends webpackLib.webpackMod.webpackNs.compilationNs.RuntimeTemplate
   
+  /* static members */
   @js.native
   object Dependency extends js.Object {
     def compare(a: js.Any, b: js.Any): js.Any = js.native

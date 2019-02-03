@@ -107,6 +107,7 @@ object neptuneNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.neptuneSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -131,6 +132,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterInstance extends js.Object {
     /**
@@ -155,6 +157,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneClusterInstanceMod.ClusterInstance = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterParameterGroup extends js.Object {
     /**
@@ -179,6 +182,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneClusterParameterGroupMod.ClusterParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterSnapshot extends js.Object {
     /**
@@ -203,6 +207,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneClusterSnapshotMod.ClusterSnapshot = js.native
   }
   
+  /* static members */
   @js.native
   object EventSubscription extends js.Object {
     /**
@@ -227,6 +232,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneEventSubscriptionMod.EventSubscription = js.native
   }
   
+  /* static members */
   @js.native
   object ParameterGroup extends js.Object {
     /**
@@ -251,6 +257,7 @@ object neptuneNs extends js.Object {
     ): atPulumiAwsLib.neptuneParameterGroupMod.ParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

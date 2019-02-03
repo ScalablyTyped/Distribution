@@ -57,6 +57,7 @@ class AccessKey protected ()
   val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/accessKey", "AccessKey")
 @js.native
 object AccessKey extends js.Object {

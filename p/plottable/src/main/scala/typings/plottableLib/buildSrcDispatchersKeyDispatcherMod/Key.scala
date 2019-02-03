@@ -45,6 +45,7 @@ class Key ()
   def onKeyUp(callback: KeyCallback): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers/keyDispatcher", "Key")
 @js.native
 object Key extends js.Object {

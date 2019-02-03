@@ -15,8 +15,11 @@ object atAntDashDesignIconsLibStrings {
   @js.native
   sealed trait twotone extends js.Object
   
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
+  @scala.inline
   def twotone: twotone = "twotone".asInstanceOf[twotone]
 }
 

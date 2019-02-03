@@ -24,6 +24,7 @@ class GLFramebuffer protected () extends js.Object {
   def unbind(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.glCore.GLFramebuffer")
 @js.native
 object GLFramebuffer extends js.Object {

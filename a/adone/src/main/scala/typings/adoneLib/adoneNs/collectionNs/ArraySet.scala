@@ -40,11 +40,7 @@ class ArraySet[T] () extends js.Object {
   def toArray(): js.Array[T] = js.native
 }
 
-/**
-  * Respresetns a data structure which is a combination of an array and a set.
-  * Adding a new member is O(1), testing for membership is O(1),
-  * and finding the index of an element is O(1).
-  */
+/* static members */
 @JSGlobal("adone.collection.ArraySet")
 @js.native
 object ArraySet extends js.Object {

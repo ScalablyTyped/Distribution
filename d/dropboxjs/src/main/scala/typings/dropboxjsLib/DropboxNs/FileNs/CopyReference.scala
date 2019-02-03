@@ -13,6 +13,7 @@ class CopyReference () extends js.Object {
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.File.CopyReference")
 @js.native
 object CopyReference extends js.Object {

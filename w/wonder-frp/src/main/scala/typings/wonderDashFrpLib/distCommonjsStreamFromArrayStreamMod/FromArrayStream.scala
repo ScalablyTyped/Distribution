@@ -13,6 +13,7 @@ class FromArrayStream protected ()
   var _array: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/FromArrayStream", "FromArrayStream")
 @js.native
 object FromArrayStream extends js.Object {

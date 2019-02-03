@@ -35,6 +35,7 @@ class GetAccessorSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): GetAccessorSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.GetAccessorSyntax")
 @js.native
 object GetAccessorSyntax extends js.Object {

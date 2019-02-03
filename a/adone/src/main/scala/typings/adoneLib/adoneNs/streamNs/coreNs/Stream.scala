@@ -149,9 +149,7 @@ class Stream[S, T] ()
   def write(value: S): scala.Boolean = js.native
 }
 
-/**
-  * Represents a chain of transform streams
-  */
+/* static members */
 @JSGlobal("adone.stream.core.Stream")
 @js.native
 object Stream extends js.Object {

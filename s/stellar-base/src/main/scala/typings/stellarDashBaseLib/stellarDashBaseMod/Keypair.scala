@@ -21,6 +21,7 @@ class Keypair protected () extends js.Object {
   def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("stellar-base", "Keypair")
 @js.native
 object Keypair extends js.Object {

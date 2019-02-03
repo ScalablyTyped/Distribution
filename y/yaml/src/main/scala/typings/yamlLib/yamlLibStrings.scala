@@ -123,44 +123,83 @@ object yamlLibStrings {
   @js.native
   sealed trait `}` extends js.Object
   
+  @scala.inline
   def `,`: `,` = ",".asInstanceOf[`,`]
+  @scala.inline
   def `:`: `:` = ":".asInstanceOf[`:`]
+  @scala.inline
   def `?`: `?` = "?".asInstanceOf[`?`]
+  @scala.inline
   def ALIAS: ALIAS = "ALIAS".asInstanceOf[ALIAS]
+  @scala.inline
   def BIN: BIN = "BIN".asInstanceOf[BIN]
+  @scala.inline
   def BLOCK_FOLDED: BLOCK_FOLDED = "BLOCK_FOLDED".asInstanceOf[BLOCK_FOLDED]
+  @scala.inline
   def BLOCK_LITERAL: BLOCK_LITERAL = "BLOCK_LITERAL".asInstanceOf[BLOCK_LITERAL]
+  @scala.inline
   def CLIP: CLIP = "CLIP".asInstanceOf[CLIP]
+  @scala.inline
   def COMMENT: COMMENT = "COMMENT".asInstanceOf[COMMENT]
+  @scala.inline
   def DIRECTIVE: DIRECTIVE = "DIRECTIVE".asInstanceOf[DIRECTIVE]
+  @scala.inline
   def DOCUMENT: DOCUMENT = "DOCUMENT".asInstanceOf[DOCUMENT]
+  @scala.inline
   def FLOW_MAP: FLOW_MAP = "FLOW_MAP".asInstanceOf[FLOW_MAP]
+  @scala.inline
   def FLOW_SEQ: FLOW_SEQ = "FLOW_SEQ".asInstanceOf[FLOW_SEQ]
+  @scala.inline
   def HEX: HEX = "HEX".asInstanceOf[HEX]
+  @scala.inline
   def KEEP: KEEP = "KEEP".asInstanceOf[KEEP]
+  @scala.inline
   def MAP: MAP = "MAP".asInstanceOf[MAP]
+  @scala.inline
   def MAP_KEY: MAP_KEY = "MAP_KEY".asInstanceOf[MAP_KEY]
+  @scala.inline
   def MAP_VALUE: MAP_VALUE = "MAP_VALUE".asInstanceOf[MAP_VALUE]
+  @scala.inline
   def MERGE_PAIR: MERGE_PAIR = "MERGE_PAIR".asInstanceOf[MERGE_PAIR]
+  @scala.inline
   def OCT: OCT = "OCT".asInstanceOf[OCT]
+  @scala.inline
   def PAIR: PAIR = "PAIR".asInstanceOf[PAIR]
+  @scala.inline
   def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
+  @scala.inline
   def QUOTE_DOUBLE: QUOTE_DOUBLE = "QUOTE_DOUBLE".asInstanceOf[QUOTE_DOUBLE]
+  @scala.inline
   def QUOTE_SINGLE: QUOTE_SINGLE = "QUOTE_SINGLE".asInstanceOf[QUOTE_SINGLE]
+  @scala.inline
   def SEQ: SEQ = "SEQ".asInstanceOf[SEQ]
+  @scala.inline
   def SEQ_ITEM: SEQ_ITEM = "SEQ_ITEM".asInstanceOf[SEQ_ITEM]
+  @scala.inline
   def STRIP: STRIP = "STRIP".asInstanceOf[STRIP]
+  @scala.inline
   def TIME: TIME = "TIME".asInstanceOf[TIME]
+  @scala.inline
   def YAMLReferenceError: YAMLReferenceError = "YAMLReferenceError".asInstanceOf[YAMLReferenceError]
+  @scala.inline
   def YAMLSemanticError: YAMLSemanticError = "YAMLSemanticError".asInstanceOf[YAMLSemanticError]
+  @scala.inline
   def YAMLSyntaxError: YAMLSyntaxError = "YAMLSyntaxError".asInstanceOf[YAMLSyntaxError]
+  @scala.inline
   def `[`: `[` = "[".asInstanceOf[`[`]
+  @scala.inline
   def `]`: `]` = "]".asInstanceOf[`]`]
+  @scala.inline
   def core: core = "core".asInstanceOf[core]
+  @scala.inline
   def failsafe: failsafe = "failsafe".asInstanceOf[failsafe]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def `yaml-1DOT1`: `yaml-1DOT1` = "yaml-1.1".asInstanceOf[`yaml-1DOT1`]
+  @scala.inline
   def `{`: `{` = "{".asInstanceOf[`{`]
+  @scala.inline
   def `}`: `}` = "}".asInstanceOf[`}`]
 }
 

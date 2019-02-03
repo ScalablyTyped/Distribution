@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SoundEffectConstants () extends js.Object
 
+/* static members */
 @JSGlobal("android.view.SoundEffectConstants")
 @js.native
 object SoundEffectConstants extends js.Object {

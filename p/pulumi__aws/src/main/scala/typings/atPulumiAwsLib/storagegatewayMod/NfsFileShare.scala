@@ -20,6 +20,7 @@ class NfsFileShare protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShareArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "NfsFileShare")
 @js.native
 object NfsFileShare extends js.Object {

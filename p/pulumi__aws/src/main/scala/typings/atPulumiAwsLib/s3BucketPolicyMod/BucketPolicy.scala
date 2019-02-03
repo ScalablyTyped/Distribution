@@ -28,6 +28,7 @@ class BucketPolicy protected ()
   val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucketPolicy", "BucketPolicy")
 @js.native
 object BucketPolicy extends js.Object {

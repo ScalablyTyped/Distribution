@@ -73,6 +73,7 @@ class ExternalModuleReferenceSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ExternalModuleReferenceSyntax")
 @js.native
 object ExternalModuleReferenceSyntax extends js.Object {

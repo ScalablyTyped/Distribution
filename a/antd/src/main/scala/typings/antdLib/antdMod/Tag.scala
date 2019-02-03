@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tag ()
   extends antdLib.libTagMod.default
 
+/* static members */
 @JSImport("antd", "Tag")
 @js.native
 object Tag extends js.Object {

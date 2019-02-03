@@ -168,6 +168,7 @@ class Bucket protected ()
   ): atPulumiAwsLib.s3S3MixinsMod.BucketEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucket", "Bucket")
 @js.native
 object Bucket extends js.Object {

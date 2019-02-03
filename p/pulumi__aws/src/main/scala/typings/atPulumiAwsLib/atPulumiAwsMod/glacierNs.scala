@@ -37,6 +37,7 @@ object glacierNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.glacierVaultLockMod.VaultLockArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Vault extends js.Object {
     /**
@@ -61,6 +62,7 @@ object glacierNs extends js.Object {
     ): atPulumiAwsLib.glacierVaultMod.Vault = js.native
   }
   
+  /* static members */
   @js.native
   object VaultLock extends js.Object {
     /**

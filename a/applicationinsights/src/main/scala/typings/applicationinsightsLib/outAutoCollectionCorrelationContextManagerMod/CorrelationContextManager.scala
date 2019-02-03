@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CorrelationContextManager () extends js.Object
 
+/* static members */
 @JSImport("applicationinsights/out/AutoCollection/CorrelationContextManager", "CorrelationContextManager")
 @js.native
 object CorrelationContextManager extends js.Object {

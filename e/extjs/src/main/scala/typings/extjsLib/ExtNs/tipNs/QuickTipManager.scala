@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuickTipManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.tip.QuickTipManager")
 @js.native
 object QuickTipManager extends js.Object {

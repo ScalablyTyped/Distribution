@@ -916,11 +916,7 @@ class Class_Buffer () extends Class__object {
   def writeUIntLE(value: scala.Double, offset: scala.Double, noAssert: scala.Boolean): scala.Double = js.native
 }
 
-/** module Or Internal Object */
-/**
-	* @brief 二进制数据缓存对象，用于 io 读写的数据处理
-	* @detail Buffer 对象为全局基础类，在任何时候都可以直接以 new Buffer(...) 创建：,```JavaScript,var buf = new Buffer();,```
-	*/
+/* static members */
 @JSGlobal("Class_Buffer")
 @js.native
 object Class_Buffer extends js.Object {

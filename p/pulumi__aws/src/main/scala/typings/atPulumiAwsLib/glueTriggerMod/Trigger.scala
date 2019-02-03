@@ -48,6 +48,7 @@ class Trigger protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/trigger", "Trigger")
 @js.native
 object Trigger extends js.Object {

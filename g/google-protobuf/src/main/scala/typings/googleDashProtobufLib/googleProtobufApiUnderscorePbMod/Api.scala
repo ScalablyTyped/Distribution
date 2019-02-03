@@ -42,6 +42,7 @@ class Api ()
   def setVersion(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/api_pb", "Api")
 @js.native
 object Api extends js.Object {

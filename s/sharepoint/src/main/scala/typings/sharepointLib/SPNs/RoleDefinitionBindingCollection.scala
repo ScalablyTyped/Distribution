@@ -16,6 +16,7 @@ class RoleDefinitionBindingCollection protected () extends ClientObjectCollectio
   def removeAll(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.RoleDefinitionBindingCollection")
 @js.native
 object RoleDefinitionBindingCollection extends js.Object {

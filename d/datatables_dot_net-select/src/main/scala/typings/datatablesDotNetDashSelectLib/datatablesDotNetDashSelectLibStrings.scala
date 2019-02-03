@@ -21,10 +21,15 @@ object datatablesDotNetDashSelectLibStrings {
   @js.native
   sealed trait single extends js.Object
   
+  @scala.inline
   def api: api = "api".asInstanceOf[api]
+  @scala.inline
   def multi: multi = "multi".asInstanceOf[multi]
+  @scala.inline
   def `multi+shift`: `multi+shift` = "multi+shift".asInstanceOf[`multi+shift`]
+  @scala.inline
   def os: os = "os".asInstanceOf[os]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
 }
 

@@ -21,6 +21,7 @@ class InstanceProfile protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamInstanceProfileMod.InstanceProfileArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "InstanceProfile")
 @js.native
 object InstanceProfile extends js.Object {

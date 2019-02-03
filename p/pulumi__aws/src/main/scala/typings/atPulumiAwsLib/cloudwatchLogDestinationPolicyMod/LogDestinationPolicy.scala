@@ -28,6 +28,7 @@ class LogDestinationPolicy protected ()
   val destinationName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logDestinationPolicy", "LogDestinationPolicy")
 @js.native
 object LogDestinationPolicy extends js.Object {

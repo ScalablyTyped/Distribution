@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class Scalar ()
   extends babylonjsLib.BABYLONNs.Scalar
 
-/**
-  * Scalar computation library
-  */
+/* static members */
 @JSImport("babylonjs", "Scalar")
 @js.native
 object Scalar extends js.Object {

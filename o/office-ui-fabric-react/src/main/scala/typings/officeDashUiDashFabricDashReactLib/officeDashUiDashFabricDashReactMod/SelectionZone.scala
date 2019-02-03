@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class SelectionZone ()
   extends officeDashUiDashFabricDashReactLib.libDetailsListMod.SelectionZone
 
+/* static members */
 @JSImport("office-ui-fabric-react", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {

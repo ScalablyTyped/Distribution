@@ -20,6 +20,7 @@ class MethodSettings protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayMethodSettingsMod.MethodSettingsArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "MethodSettings")
 @js.native
 object MethodSettings extends js.Object {

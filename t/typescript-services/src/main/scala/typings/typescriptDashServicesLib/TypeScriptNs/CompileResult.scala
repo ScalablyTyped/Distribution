@@ -12,6 +12,7 @@ class CompileResult () extends js.Object {
   var outputFiles: js.Array[OutputFile] = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.CompileResult")
 @js.native
 object CompileResult extends js.Object {

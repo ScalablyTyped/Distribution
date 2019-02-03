@@ -19,6 +19,7 @@ class Language protected () extends ILanguage {
   override var script: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Globalization.Language")
 @js.native
 object Language extends js.Object {

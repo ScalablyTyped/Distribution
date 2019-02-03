@@ -15,6 +15,7 @@ class ReadPreference protected () extends js.Object {
   def isValid(mode: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("mongodb", "ReadPreference")
 @js.native
 object ReadPreference extends js.Object {

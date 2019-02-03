@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Component ()
   extends plottableLib.buildSrcComponentsComponentMod.Component
 
+/* static members */
 @JSImport("plottable", "Component")
 @js.native
 object Component extends js.Object {

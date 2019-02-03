@@ -9,6 +9,7 @@ object ldclientDashJsDashCommonLibStrings {
   @js.native
   sealed trait localStorage extends js.Object
   
+  @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
 }
 

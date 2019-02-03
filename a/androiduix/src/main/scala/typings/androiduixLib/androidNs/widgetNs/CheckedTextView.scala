@@ -31,6 +31,7 @@ class CheckedTextView protected ()
   /* private */ def updatePadding(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.CheckedTextView")
 @js.native
 object CheckedTextView extends js.Object {

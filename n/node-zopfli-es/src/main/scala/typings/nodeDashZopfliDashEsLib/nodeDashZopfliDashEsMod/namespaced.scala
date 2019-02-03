@@ -12,6 +12,7 @@ class namespaced () extends Zopfli {
   def this(format: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Format, options: nodeDashZopfliDashEsLib.nodeDashZopfliDashEsMod.ZopfliNs.Options) = this()
 }
 
+/* static members */
 @JSImport("node-zopfli-es", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

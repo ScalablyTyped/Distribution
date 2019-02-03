@@ -20,6 +20,7 @@ class MDCLinearProgress ()
   def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/linear-progress", "MDCLinearProgress")
 @js.native
 object MDCLinearProgress extends js.Object {

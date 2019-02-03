@@ -12,7 +12,9 @@ object gapiDotClientDotIamLibStrings {
   @js.native
   sealed trait v1 extends js.Object
   
+  @scala.inline
   def iam: iam = "iam".asInstanceOf[iam]
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
 }
 

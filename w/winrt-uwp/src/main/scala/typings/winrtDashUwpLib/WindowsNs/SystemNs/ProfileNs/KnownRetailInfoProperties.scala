@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownRetailInfoProperties () extends js.Object
 
-/** Identifies the string keys that might exist within the RetailInfo.Properties map of retail-demo relevant property values. */
+/* static members */
 @JSGlobal("Windows.System.Profile.KnownRetailInfoProperties")
 @js.native
 object KnownRetailInfoProperties extends js.Object {

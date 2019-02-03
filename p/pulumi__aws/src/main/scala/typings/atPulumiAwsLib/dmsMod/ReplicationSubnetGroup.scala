@@ -20,6 +20,7 @@ class ReplicationSubnetGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dmsReplicationSubnetGroupMod.ReplicationSubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms", "ReplicationSubnetGroup")
 @js.native
 object ReplicationSubnetGroup extends js.Object {

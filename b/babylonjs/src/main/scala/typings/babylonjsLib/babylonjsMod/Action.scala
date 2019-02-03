@@ -24,10 +24,7 @@ class Action protected ()
   triggerOptions: js.Any, condition: babylonjsLib.BABYLONNs.Condition) = this()
 }
 
-/**
-  * The action to be carried out following a trigger
-  * @see http://doc.babylonjs.com/how_to/how_to_use_actions#available-actions
-  */
+/* static members */
 @JSImport("babylonjs", "Action")
 @js.native
 object Action extends js.Object {

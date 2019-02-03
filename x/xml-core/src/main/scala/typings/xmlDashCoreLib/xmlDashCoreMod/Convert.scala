@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Convert ()
   extends xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.Convert
 
+/* static members */
 @JSImport("xml-core", "Convert")
 @js.native
 object Convert extends js.Object {

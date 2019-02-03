@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Reset () extends js.Object
 
+/* static members */
 @JSImport("nodegit/reset", "Reset")
 @js.native
 object Reset extends js.Object {

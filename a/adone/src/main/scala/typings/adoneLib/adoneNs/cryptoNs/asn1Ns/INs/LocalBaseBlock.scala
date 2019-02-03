@@ -19,6 +19,7 @@ class LocalBaseBlock () extends js.Object {
   def toJSON(): JsonLocalBaseBlock = js.native
 }
 
+/* static members */
 @JSGlobal("adone.crypto.asn1.I.LocalBaseBlock")
 @js.native
 object LocalBaseBlock extends js.Object {

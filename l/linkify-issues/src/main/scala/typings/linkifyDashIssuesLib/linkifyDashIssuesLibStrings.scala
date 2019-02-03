@@ -12,7 +12,9 @@ object linkifyDashIssuesLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def dom: dom = "dom".asInstanceOf[dom]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

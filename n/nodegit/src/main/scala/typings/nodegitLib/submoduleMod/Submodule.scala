@@ -37,6 +37,7 @@ class Submodule () extends js.Object {
   def wdId(): nodegitLib.oidMod.Oid = js.native
 }
 
+/* static members */
 @JSImport("nodegit/submodule", "Submodule")
 @js.native
 object Submodule extends js.Object {

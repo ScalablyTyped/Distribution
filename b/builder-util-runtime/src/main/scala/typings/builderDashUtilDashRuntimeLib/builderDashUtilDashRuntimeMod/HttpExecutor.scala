@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class HttpExecutor[REQUEST] ()
   extends builderDashUtilDashRuntimeLib.outHttpExecutorMod.HttpExecutor[REQUEST]
 
+/* static members */
 @JSImport("builder-util-runtime", "HttpExecutor")
 @js.native
 object HttpExecutor extends js.Object {

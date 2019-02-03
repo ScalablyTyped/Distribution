@@ -23,9 +23,9 @@ object readerTaskEitherNs extends js.Object {
   def fromIO[E, L, A](fa: fpDashTsLib.libIOMod.IO[A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def fromIOEither[E, L, A](fa: fpDashTsLib.libIOEitherMod.IOEither[L, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def fromLeft[E, L, A](l: L): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
-  def fromPredicate[E, L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A]] = js.native
+  def fromPredicate[E, L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A]] = js.native
   @JSName("fromPredicate")
-  def fromPredicate_ELABA[E, L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, B]] = js.native
+  def fromPredicate_ELABA[E, L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, B]] = js.native
   def fromReader[E, L, A](fa: fpDashTsLib.libReaderMod.Reader[E, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def fromTaskEither[E, L, A](fa: fpDashTsLib.libTaskEitherMod.TaskEither[L, A]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native
   def left[E, L, A](fa: fpDashTsLib.libTaskMod.Task[L]): fpDashTsLib.libReaderTaskEitherMod.ReaderTaskEither[E, L, A] = js.native

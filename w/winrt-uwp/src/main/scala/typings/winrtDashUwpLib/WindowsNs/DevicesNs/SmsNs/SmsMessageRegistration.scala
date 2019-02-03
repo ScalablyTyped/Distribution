@@ -34,7 +34,7 @@ abstract class SmsMessageRegistration () extends js.Object {
   def unregister(): scala.Unit = js.native
 }
 
-/** Class used to represent registered message filters. */
+/* static members */
 @JSGlobal("Windows.Devices.Sms.SmsMessageRegistration")
 @js.native
 object SmsMessageRegistration extends js.Object {

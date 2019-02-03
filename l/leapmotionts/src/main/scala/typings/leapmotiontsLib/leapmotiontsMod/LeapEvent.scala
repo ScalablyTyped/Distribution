@@ -17,6 +17,7 @@ class LeapEvent protected () extends js.Object {
   def getType(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "LeapEvent")
 @js.native
 object LeapEvent extends js.Object {

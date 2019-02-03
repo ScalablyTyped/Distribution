@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicState ()
   extends wonderDotJsLib.distEs2015RendererStateWebGLStateMod.WebGLState
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/state/BasicState", "BasicState")
 @js.native
 object BasicState extends js.Object {

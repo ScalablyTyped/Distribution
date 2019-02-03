@@ -15,6 +15,7 @@ class AnticipateOvershootInterpolator () extends Interpolator {
   override def getInterpolation(input: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.AnticipateOvershootInterpolator")
 @js.native
 object AnticipateOvershootInterpolator extends js.Object {

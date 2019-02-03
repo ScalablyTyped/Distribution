@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class IdGenerator () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.data.IdGenerator")
 @js.native
 object IdGenerator extends js.Object {

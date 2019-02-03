@@ -11,6 +11,7 @@ class default protected () extends Input {
   def this(props: InputProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/input/Input", JSImport.Default)
 @js.native
 object default extends js.Object {

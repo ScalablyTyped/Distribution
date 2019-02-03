@@ -20,6 +20,7 @@ class IdentityPool protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPoolArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "IdentityPool")
 @js.native
 object IdentityPool extends js.Object {

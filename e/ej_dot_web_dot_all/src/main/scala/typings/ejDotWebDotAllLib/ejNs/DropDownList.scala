@@ -127,6 +127,7 @@ class DropDownList protected () extends Widget {
   def unselectItemsByIndices(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.DropDownList")
 @js.native
 object DropDownList extends js.Object {

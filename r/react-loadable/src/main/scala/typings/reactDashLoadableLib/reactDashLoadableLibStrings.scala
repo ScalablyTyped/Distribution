@@ -9,6 +9,7 @@ object reactDashLoadableLibStrings {
   @js.native
   sealed trait OptionsWithMap extends js.Object
   
+  @scala.inline
   def OptionsWithMap: OptionsWithMap = "OptionsWithMap".asInstanceOf[OptionsWithMap]
 }
 

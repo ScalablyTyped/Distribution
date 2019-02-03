@@ -47,9 +47,7 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1alpha1Ns.InitializerConfigurationList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * InitializerConfiguration describes the configuration of initializers.
-      */
+    /* static members */
     @js.native
     object InitializerConfiguration extends js.Object {
       /**
@@ -72,9 +70,7 @@ object admissionregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1alpha1Ns.InitializerConfiguration = js.native
     }
     
-    /**
-      * InitializerConfigurationList is a list of InitializerConfiguration.
-      */
+    /* static members */
     @js.native
     object InitializerConfigurationList extends js.Object {
       /**
@@ -176,10 +172,7 @@ object admissionregistrationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfigurationList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * MutatingWebhookConfiguration describes the configuration of and admission webhook that accept
-      * or reject and may change the object.
-      */
+    /* static members */
     @js.native
     object MutatingWebhookConfiguration extends js.Object {
       /**
@@ -202,9 +195,7 @@ object admissionregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfiguration = js.native
     }
     
-    /**
-      * MutatingWebhookConfigurationList is a list of MutatingWebhookConfiguration.
-      */
+    /* static members */
     @js.native
     object MutatingWebhookConfigurationList extends js.Object {
       /**
@@ -227,10 +218,7 @@ object admissionregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.MutatingWebhookConfigurationList = js.native
     }
     
-    /**
-      * ValidatingWebhookConfiguration describes the configuration of and admission webhook that
-      * accept or reject and object without changing it.
-      */
+    /* static members */
     @js.native
     object ValidatingWebhookConfiguration extends js.Object {
       /**
@@ -253,9 +241,7 @@ object admissionregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.admissionregistrationNs.v1beta1Ns.ValidatingWebhookConfiguration = js.native
     }
     
-    /**
-      * ValidatingWebhookConfigurationList is a list of ValidatingWebhookConfiguration.
-      */
+    /* static members */
     @js.native
     object ValidatingWebhookConfigurationList extends js.Object {
       /**

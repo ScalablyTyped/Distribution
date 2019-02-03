@@ -12,6 +12,7 @@ abstract class DriverProvider protected ()
   def this(config: protractorLib.builtConfigMod.Config) = this()
 }
 
+/* static members */
 @JSImport("protractor/built/driverProviders", "DriverProvider")
 @js.native
 object DriverProvider extends js.Object {

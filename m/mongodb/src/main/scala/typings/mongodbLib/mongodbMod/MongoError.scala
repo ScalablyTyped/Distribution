@@ -31,6 +31,7 @@ class MongoError protected ()
   var errmsg: js.UndefOr[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("mongodb", "MongoError")
 @js.native
 object MongoError extends js.Object {

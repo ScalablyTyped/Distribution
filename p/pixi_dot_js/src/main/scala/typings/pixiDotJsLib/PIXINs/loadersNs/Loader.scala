@@ -206,8 +206,7 @@ class Loader ()
   def use(fn: js.Function): this.type = js.native
 }
 
-// As of ResourceLoader v2 we no longer require EventEmitter
-// However, for depreciation reasons, it remains.
+/* static members */
 @JSGlobal("PIXI.loaders.Loader")
 @js.native
 object Loader extends js.Object {

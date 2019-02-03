@@ -2142,17 +2142,29 @@ trait LoDashImplicitWrapper[TValue] extends LoDashWrapper[TValue] {
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], iteratee: java.lang.String): LoDashImplicitWrapper[lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any] = js.native
+  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], iteratee: java.lang.String): LoDashImplicitWrapper[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: any}
+    */ lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any
+  ] = js.native
   /**
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], iteratee: js.Object): LoDashImplicitWrapper[lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any] = js.native
+  def mapValues_TObject[T /* <: js.Object */](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], iteratee: js.Object): LoDashImplicitWrapper[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any
+  ] = js.native
   /**
     * @see _.mapValues
     */
   @JSName("mapValues")
-  def mapValues_TObjectTResult[T /* <: js.Object */, TResult](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], callback: ObjectIterator[T, TResult]): LoDashImplicitWrapper[lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any] = js.native
+  def mapValues_TObjectTResult[T /* <: js.Object */, TResult](`this`: LoDashImplicitWrapper[js.UndefOr[T | scala.Null]], callback: ObjectIterator[T, TResult]): LoDashImplicitWrapper[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: TResult}
+    */ lodashLib.lodashLibStrings.LoDashImplicitWrapper with js.Any
+  ] = js.native
   /**
     * @see _.mapValues
     * TODO: This would be better if we had a separate overload for obj: NumericDictionary that returned a NumericDictionary,

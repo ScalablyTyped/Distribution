@@ -15,8 +15,11 @@ object cordovaDashPluginDashBatteryDashStatusLibStrings {
   @js.native
   sealed trait batterystatus extends js.Object
   
+  @scala.inline
   def batterycritical: batterycritical = "batterycritical".asInstanceOf[batterycritical]
+  @scala.inline
   def batterylow: batterylow = "batterylow".asInstanceOf[batterylow]
+  @scala.inline
   def batterystatus: batterystatus = "batterystatus".asInstanceOf[batterystatus]
 }
 

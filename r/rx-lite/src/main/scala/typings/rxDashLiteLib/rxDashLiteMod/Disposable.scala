@@ -12,6 +12,7 @@ class Disposable protected ()
   def this(action: js.Function0[scala.Unit]) = this()
 }
 
+/* static members */
 @JSImport("rx-lite", "Disposable")
 @js.native
 object Disposable extends js.Object {

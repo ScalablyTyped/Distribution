@@ -21,7 +21,7 @@ class Buffer protected () extends js.Object {
   var length: scala.Double = js.native
 }
 
-/** Provides a default implementation of the IBuffer interface and its related interfaces. */
+/* static members */
 @JSGlobal("Windows.Storage.Streams.Buffer")
 @js.native
 object Buffer extends js.Object {

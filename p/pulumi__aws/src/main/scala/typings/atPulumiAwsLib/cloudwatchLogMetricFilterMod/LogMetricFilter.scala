@@ -38,6 +38,7 @@ class LogMetricFilter protected ()
   val pattern: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logMetricFilter", "LogMetricFilter")
 @js.native
 object LogMetricFilter extends js.Object {

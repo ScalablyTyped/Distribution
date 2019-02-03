@@ -66,6 +66,7 @@ class TypeOfExpressionSyntax protected ()
   def withTypeOfKeyword(typeOfKeyword: ISyntaxToken): TypeOfExpressionSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeOfExpressionSyntax")
 @js.native
 object TypeOfExpressionSyntax extends js.Object {

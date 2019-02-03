@@ -33,6 +33,7 @@ class SplitButton protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.SplitButton")
 @js.native
 object SplitButton extends js.Object {

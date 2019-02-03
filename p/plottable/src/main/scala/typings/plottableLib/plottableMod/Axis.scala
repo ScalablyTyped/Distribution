@@ -20,6 +20,7 @@ class Axis[D] protected ()
   def this(scale: plottableLib.buildSrcScalesScaleMod.Scale[D, scala.Double], orientation: plottableLib.buildSrcAxesAxisMod.AxisOrientation) = this()
 }
 
+/* static members */
 @JSImport("plottable", "Axis")
 @js.native
 object Axis extends js.Object {

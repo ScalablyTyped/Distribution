@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class RandomAccessStream () extends js.Object
 
-/** Provides random access of data in input and output streams. */
+/* static members */
 @JSGlobal("Windows.Storage.Streams.RandomAccessStream")
 @js.native
 object RandomAccessStream extends js.Object {

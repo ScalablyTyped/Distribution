@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Circ () extends Ease
 
+/* static members */
 @JSGlobal("gsap.Circ")
 @js.native
 object Circ extends js.Object {

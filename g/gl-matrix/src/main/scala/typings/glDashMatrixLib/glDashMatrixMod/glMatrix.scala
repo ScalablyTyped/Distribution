@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class glMatrix () extends js.Object
 
+/* static members */
 @JSImport("gl-matrix", "glMatrix")
 @js.native
 object glMatrix extends js.Object {

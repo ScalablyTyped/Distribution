@@ -18,9 +18,7 @@ class DaydreamController protected () extends WebVRController {
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Google Daydream controller
-  */
+/* static members */
 @JSGlobal("BABYLON.DaydreamController")
 @js.native
 object DaydreamController extends js.Object {

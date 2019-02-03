@@ -26,6 +26,7 @@ class ExportAssignmentSyntax protected () extends SyntaxNode {
   def withSemicolonToken(semicolonToken: ISyntaxToken): ExportAssignmentSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ExportAssignmentSyntax")
 @js.native
 object ExportAssignmentSyntax extends js.Object {

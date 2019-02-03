@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ClientChannelExtensions ()
   extends limeDashJsLib.limeDashJsMod.LimeNs.ClientChannelExtensions
 
+/* static members */
 @JSImport("lime-js", "ClientChannelExtensions")
 @js.native
 object ClientChannelExtensions extends js.Object {

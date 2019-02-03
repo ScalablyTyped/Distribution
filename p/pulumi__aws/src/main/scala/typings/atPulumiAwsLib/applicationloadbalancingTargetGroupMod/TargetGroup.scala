@@ -82,6 +82,7 @@ class TargetGroup protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/applicationloadbalancing/targetGroup", "TargetGroup")
 @js.native
 object TargetGroup extends js.Object {

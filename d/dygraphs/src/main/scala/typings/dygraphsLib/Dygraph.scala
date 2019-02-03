@@ -347,6 +347,7 @@ class Dygraph protected () extends js.Object {
   def yAxisRanges(): js.Array[js.Tuple2[scala.Double, scala.Double]] = js.native
 }
 
+/* static members */
 @JSGlobal("Dygraph")
 @js.native
 object Dygraph extends js.Object {

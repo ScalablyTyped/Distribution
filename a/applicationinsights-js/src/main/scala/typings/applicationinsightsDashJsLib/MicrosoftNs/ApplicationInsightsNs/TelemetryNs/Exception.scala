@@ -36,6 +36,7 @@ class Exception protected ()
   var ver: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Exception")
 @js.native
 object Exception extends js.Object {

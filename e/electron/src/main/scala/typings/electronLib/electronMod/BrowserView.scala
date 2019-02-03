@@ -13,6 +13,7 @@ class BrowserView ()
   def this(options: electronLib.ElectronNs.BrowserViewConstructorOptions) = this()
 }
 
+/* static members */
 @JSImport("electron", "BrowserView")
 @js.native
 object BrowserView extends js.Object {

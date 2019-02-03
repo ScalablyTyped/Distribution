@@ -12,6 +12,7 @@ class Tag ()
   var onRemoveClick: js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tag/tag", "Tag")
 @js.native
 object Tag extends js.Object {

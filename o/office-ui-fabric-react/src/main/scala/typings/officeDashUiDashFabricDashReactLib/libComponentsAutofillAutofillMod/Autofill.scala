@@ -106,6 +106,7 @@ class Autofill protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "Autofill")
 @js.native
 object Autofill extends js.Object {

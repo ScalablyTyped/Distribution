@@ -28,6 +28,7 @@ class SecurityConfiguration protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/securityConfiguration", "SecurityConfiguration")
 @js.native
 object SecurityConfiguration extends js.Object {

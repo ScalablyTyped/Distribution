@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SFSEvent () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.SFSEvent")
 @js.native
 object SFSEvent extends js.Object {

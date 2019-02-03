@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class UserInformation () extends js.Object
 
-/** Represents information about the user, such as name and account picture. */
+/* static members */
 @JSGlobal("Windows.System.UserProfile.UserInformation")
 @js.native
 object UserInformation extends js.Object {

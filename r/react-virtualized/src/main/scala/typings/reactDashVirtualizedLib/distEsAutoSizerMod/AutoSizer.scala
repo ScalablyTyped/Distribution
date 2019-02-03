@@ -16,6 +16,7 @@ class AutoSizer protected ()
   def componentWillUnmount_MAutoSizer(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/AutoSizer", "AutoSizer")
 @js.native
 object AutoSizer extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FocusTrapZone ()
   extends officeDashUiDashFabricDashReactLib.libComponentsFocusTrapZoneMod.FocusTrapZone
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/FocusTrapZone", "FocusTrapZone")
 @js.native
 object FocusTrapZone extends js.Object {

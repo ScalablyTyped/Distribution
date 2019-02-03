@@ -22,6 +22,7 @@ class LatLonEllipsoidal protected () extends js.Object {
   def toUtm(): Utm = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "LatLonEllipsoidal")
 @js.native
 object LatLonEllipsoidal extends js.Object {

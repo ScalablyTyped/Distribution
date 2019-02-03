@@ -39,6 +39,7 @@ class CustomEventHandler ()
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/handler/CustomEventHandler", "CustomEventHandler")
 @js.native
 object CustomEventHandler extends js.Object {

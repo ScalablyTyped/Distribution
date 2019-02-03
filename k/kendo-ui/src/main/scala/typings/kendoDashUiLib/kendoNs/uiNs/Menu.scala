@@ -36,6 +36,7 @@ class Menu protected () extends Widget {
   def remove(element: stdLib.Element): Menu = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Menu")
 @js.native
 object Menu extends js.Object {

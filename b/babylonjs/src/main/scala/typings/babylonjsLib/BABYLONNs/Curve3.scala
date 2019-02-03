@@ -41,11 +41,7 @@ class Curve3 protected () extends js.Object {
   def length(): scala.Double = js.native
 }
 
-/**
-  * A Curve3 object is a logical object, so not a mesh, to handle curves in the 3D geometric space.
-  * A Curve3 is designed from a series of successive Vector3.
-  * @see https://doc.babylonjs.com/how_to/how_to_use_curve3
-  */
+/* static members */
 @JSGlobal("BABYLON.Curve3")
 @js.native
 object Curve3 extends js.Object {

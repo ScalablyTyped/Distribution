@@ -157,6 +157,7 @@ class b2DebugDraw () extends js.Object {
   def SetXFormScale(xformScale: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Dynamics.b2DebugDraw")
 @js.native
 object b2DebugDraw extends js.Object {

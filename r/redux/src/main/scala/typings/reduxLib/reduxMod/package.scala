@@ -7,14 +7,18 @@ import scala.scalajs.js.annotation._
 
 package object reduxMod {
   type ActionCreator[A] = js.Function1[/* repeated */ js.Any, A]
-  type DeepPartial[T] = reduxLib.reduxLibStrings.DeepPartial with js.Any
+  type DeepPartial[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? object}
+    */ reduxLib.reduxLibStrings.DeepPartial with js.Any
   type Dispatch[A /* <: Action[_] */] = js.Function1[/* action */ A, A]
   type Middleware[DispatchExt, S, D /* <: Dispatch[AnyAction] */] = js.Function1[
     /* api */ MiddlewareAPI[D, S], 
     js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
   ]
   type Reducer[S, A /* <: Action[_] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
-  type ReducersMapObject[S, A /* <: Action[_] */] = reduxLib.reduxLibStrings.ReducersMapObject with S
+  type ReducersMapObject[S, A /* <: Action[_] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof S ]: redux.redux.Reducer<S[K], A>}
+    */ reduxLib.reduxLibStrings.ReducersMapObject with S
   type StoreEnhancer[Ext, StateExt] = js.Function1[
     /* next */ StoreEnhancerStoreCreator[js.Object, js.Object], 
     StoreEnhancerStoreCreator[Ext, StateExt]

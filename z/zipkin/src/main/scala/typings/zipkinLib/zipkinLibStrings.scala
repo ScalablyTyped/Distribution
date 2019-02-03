@@ -12,7 +12,9 @@ object zipkinLibStrings {
   @js.native
   sealed trait Some extends js.Object
   
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
+  @scala.inline
   def Some: Some = "Some".asInstanceOf[Some]
 }
 

@@ -21,6 +21,7 @@ class PopoutMenu protected ()
   def launchMenu(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.UI.PopoutMenu")
 @js.native
 object PopoutMenu extends js.Object {

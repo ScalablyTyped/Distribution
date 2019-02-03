@@ -13,6 +13,7 @@ class Collection[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] ()
   def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("backbone", "Collection")
 @js.native
 object Collection extends js.Object {

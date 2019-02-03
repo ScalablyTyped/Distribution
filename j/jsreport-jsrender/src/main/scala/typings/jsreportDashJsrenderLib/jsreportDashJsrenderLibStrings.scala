@@ -9,6 +9,7 @@ object jsreportDashJsrenderLibStrings {
   @js.native
   sealed trait jsrender extends js.Object
   
+  @scala.inline
   def jsrender: jsrender = "jsrender".asInstanceOf[jsrender]
 }
 

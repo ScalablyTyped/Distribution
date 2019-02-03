@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Foundation ()
   extends reactDashNativeDashVectorDashIconsLib.foundationMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Foundation")
 @js.native
 object Foundation extends js.Object {

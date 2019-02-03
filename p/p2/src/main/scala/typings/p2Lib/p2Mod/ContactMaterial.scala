@@ -35,6 +35,7 @@ class ContactMaterial protected ()
   override var surfaceVelocity: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("p2", "ContactMaterial")
 @js.native
 object ContactMaterial extends js.Object {

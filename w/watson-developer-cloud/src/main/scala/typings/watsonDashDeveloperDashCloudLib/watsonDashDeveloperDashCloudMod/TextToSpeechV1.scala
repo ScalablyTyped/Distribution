@@ -25,6 +25,7 @@ class TextToSpeechV1 protected () extends js.Object {
   def voices(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "TextToSpeechV1")
 @js.native
 object TextToSpeechV1 extends js.Object {

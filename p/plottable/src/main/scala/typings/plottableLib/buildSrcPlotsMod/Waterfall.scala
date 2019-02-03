@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Waterfall[X, Y] ()
   extends plottableLib.buildSrcPlotsWaterfallPlotMod.Waterfall[X, Y]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Waterfall")
 @js.native
 object Waterfall extends js.Object {

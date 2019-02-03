@@ -21,6 +21,7 @@ class default () extends TimeStampReq {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/TimeStampReq", JSImport.Default)
 @js.native
 object default extends js.Object {

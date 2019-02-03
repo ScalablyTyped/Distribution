@@ -12,6 +12,7 @@ class BounceInterpolator () extends Interpolator {
   override def getInterpolation(input: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.BounceInterpolator")
 @js.native
 object BounceInterpolator extends js.Object {

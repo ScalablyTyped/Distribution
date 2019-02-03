@@ -32,6 +32,7 @@ class FactoryInvoker () extends js.Object {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "FactoryInvoker")
 @js.native
 object FactoryInvoker extends js.Object {

@@ -36,6 +36,7 @@ class BaiduChannel protected ()
   val secretKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/baiduChannel", "BaiduChannel")
 @js.native
 object BaiduChannel extends js.Object {

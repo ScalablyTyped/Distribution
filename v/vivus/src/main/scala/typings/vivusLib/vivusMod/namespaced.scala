@@ -21,6 +21,7 @@ class namespaced protected () extends Vivus {
   def this(element: stdLib.HTMLElement, options: vivusLib.vivusMod.VivusNs.VivusOptions, callback: js.Function1[/* vivusInstance */ Vivus, scala.Unit]) = this()
 }
 
+/* static members */
 @JSImport("vivus", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

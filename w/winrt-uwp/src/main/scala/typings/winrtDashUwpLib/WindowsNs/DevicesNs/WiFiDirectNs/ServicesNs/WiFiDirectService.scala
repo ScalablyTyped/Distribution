@@ -57,7 +57,7 @@ abstract class WiFiDirectService () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a Wi-Fi Direct service. This class is used by code on a device that seeks to use a Wi-Fi Direct Service, to establish a Wi-Fi Direct Service session with the service provider. */
+/* static members */
 @JSGlobal("Windows.Devices.WiFiDirect.Services.WiFiDirectService")
 @js.native
 object WiFiDirectService extends js.Object {

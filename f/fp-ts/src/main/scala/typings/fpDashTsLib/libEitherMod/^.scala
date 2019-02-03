@@ -13,10 +13,10 @@ object ^ extends js.Object {
   def fromNullable[L](defaultValue: L): js.Function1[/* a */ js.UndefOr[js.Any | scala.Null], fpDashTsLib.libEitherMod.Either[L, _]] = js.native
   def fromOption[L](defaultValue: L): js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[_], fpDashTsLib.libEitherMod.Either[L, _]] = js.native
   def fromOptionL[L](defaultValue: fpDashTsLib.libFunctionMod.Lazy[L]): js.Function1[/* fa */ fpDashTsLib.libOptionMod.Option[_], fpDashTsLib.libEitherMod.Either[L, _]] = js.native
-  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, A]] = js.native
+  def fromPredicate[L, A](predicate: fpDashTsLib.libFunctionMod.Predicate[A], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, A]] = js.native
   @JSName("fromPredicate")
-  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, B]] = js.native
-  def fromRefinement[L, A, B /* <: A */](refinement: fpDashTsLib.libFunctionMod.Refinement[A, B], whenFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, B]] = js.native
+  def fromPredicate_LABA[L, A, B /* <: A */](predicate: fpDashTsLib.libFunctionMod.Refinement[A, B], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, B]] = js.native
+  def fromRefinement[L, A, B /* <: A */](refinement: fpDashTsLib.libFunctionMod.Refinement[A, B], onFalse: js.Function1[/* a */ A, L]): js.Function1[/* a */ A, fpDashTsLib.libEitherMod.Either[L, B]] = js.native
   def fromValidation[L, A](fa: fpDashTsLib.libValidationMod.Validation[L, A]): fpDashTsLib.libEitherMod.Either[L, A] = js.native
   def getApplyMonoid[L, A](M: fpDashTsLib.libMonoidMod.Monoid[A]): fpDashTsLib.libMonoidMod.Monoid[fpDashTsLib.libEitherMod.Either[L, A]] = js.native
   def getApplySemigroup[L, A](S: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libEitherMod.Either[L, A]] = js.native

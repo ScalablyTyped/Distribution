@@ -41,6 +41,7 @@ object codecommitNs extends js.Object {
     args: atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.codecommitGetRepositoryMod.GetRepositoryResult] = js.native
+  /* static members */
   @js.native
   object Repository extends js.Object {
     /**
@@ -65,6 +66,7 @@ object codecommitNs extends js.Object {
     ): atPulumiAwsLib.codecommitRepositoryMod.Repository = js.native
   }
   
+  /* static members */
   @js.native
   object Trigger extends js.Object {
     /**

@@ -17,6 +17,7 @@ class TmplAstBoundAttribute protected ()
   def this(name: java.lang.String, `type`: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.BindingType, securityContext: atAngularCompilerLib.srcCoreMod.SecurityContext, value: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, unit: scala.Null, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, i18n: atAngularCompilerLib.srcI18nI18nUnderscoreAstMod.Node) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler", "TmplAstBoundAttribute")
 @js.native
 object TmplAstBoundAttribute extends js.Object {

@@ -249,9 +249,7 @@ class Matrix () extends js.Object {
   def transposeToRef(result: Matrix): Matrix = js.native
 }
 
-/**
-  * Class used to store matrix data (4x4)
-  */
+/* static members */
 @JSGlobal("BABYLON.Matrix")
 @js.native
 object Matrix extends js.Object {

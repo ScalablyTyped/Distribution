@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class JSRequest () extends js.Object
 
-/** Provides access to url and query string parts.*/
+/* static members */
 @JSGlobal("JSRequest")
 @js.native
 object JSRequest extends js.Object {

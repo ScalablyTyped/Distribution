@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Mpeg2ProfileIds () extends js.Object
 
-/** Provides properties for getting MPEG-2 profile ids. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.Mpeg2ProfileIds")
 @js.native
 object Mpeg2ProfileIds extends js.Object {

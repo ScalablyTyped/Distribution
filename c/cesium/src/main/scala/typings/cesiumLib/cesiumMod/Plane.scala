@@ -16,6 +16,7 @@ class Plane protected ()
   override var normal: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Plane")
 @js.native
 object Plane extends js.Object {

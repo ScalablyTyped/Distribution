@@ -14,7 +14,9 @@ trait Anon_1 extends js.Object {
     */
   def create[T /* <: org.scalablytyped.runtime.StringDictionary[
     reactDashSketchappLib.reactDashSketchappMod.Style | reactDashSketchappLib.reactDashSketchappMod.TextStyle
-  ] */](t: T): reactDashSketchappLib.reactDashSketchappLibStrings.Anon_1 with js.Any = js.native
+  ] */](t: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: react-sketchapp.react-sketchapp.StyleReference}
+    */ reactDashSketchappLib.reactDashSketchappLibStrings.Anon_1 with js.Any = js.native
   def flatten(): reactDashSketchappLib.reactDashSketchappMod.Style | reactDashSketchappLib.reactDashSketchappMod.TextStyle = js.native
   /**
     * Flatten an array of style objects into one aggregated object, or look up the definition for a

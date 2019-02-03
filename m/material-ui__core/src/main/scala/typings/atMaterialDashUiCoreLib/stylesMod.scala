@@ -45,7 +45,7 @@ object stylesMod extends js.Object {
   ] = js.native
   def withTheme(): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.stylesWithThemeMod.WithTheme, 
-    stdLib.Partial[atMaterialDashUiCoreLib.stylesWithThemeMod.WithTheme]
+    atMaterialDashUiCoreLib.stylesWithThemeMod.ThemedComponentProps
   ] = js.native
 }
 

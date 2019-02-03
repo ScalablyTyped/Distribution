@@ -153,6 +153,7 @@ class TableService () extends BatchServiceClient {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "TableService")
 @js.native
 object TableService extends js.Object {

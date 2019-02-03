@@ -12,6 +12,7 @@ abstract class AbstractRule protected ()
   def this(options: tslintLib.libLanguageRuleRuleMod.IOptions) = this()
 }
 
+/* static members */
 @JSImport("tslint/lib/rules", "AbstractRule")
 @js.native
 object AbstractRule extends js.Object {

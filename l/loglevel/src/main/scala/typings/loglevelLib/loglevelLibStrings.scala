@@ -42,17 +42,29 @@ object loglevelLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
   def SILENT: SILENT = "SILENT".asInstanceOf[SILENT]
+  @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

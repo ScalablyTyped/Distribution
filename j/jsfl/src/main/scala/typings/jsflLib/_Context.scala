@@ -17,6 +17,7 @@ class _Context () extends js.Object {
   def update(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("_Context")
 @js.native
 object _Context extends js.Object {

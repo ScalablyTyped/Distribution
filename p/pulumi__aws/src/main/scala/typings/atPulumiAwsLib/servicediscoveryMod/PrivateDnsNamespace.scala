@@ -20,6 +20,7 @@ class PrivateDnsNamespace protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.servicediscoveryPrivateDnsNamespaceMod.PrivateDnsNamespaceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery", "PrivateDnsNamespace")
 @js.native
 object PrivateDnsNamespace extends js.Object {

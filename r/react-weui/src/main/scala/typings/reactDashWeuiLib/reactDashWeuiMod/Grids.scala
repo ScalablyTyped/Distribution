@@ -13,6 +13,7 @@ class Grids protected () extends js.Object {
   def renderData(data: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Grids")
 @js.native
 object Grids extends js.Object {

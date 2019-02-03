@@ -12,6 +12,7 @@ class ArrayTypeSyntax protected ()
   def this(`type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, openBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, closeBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ArrayTypeSyntax")
 @js.native
 object ArrayTypeSyntax extends js.Object {

@@ -70,6 +70,7 @@ class InvocationExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.InvocationExpressionSyntax")
 @js.native
 object InvocationExpressionSyntax extends js.Object {

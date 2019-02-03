@@ -12,6 +12,7 @@ class TypeOfExpressionSyntax protected ()
   def this(typeOfKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeOfExpressionSyntax")
 @js.native
 object TypeOfExpressionSyntax extends js.Object {

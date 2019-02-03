@@ -61,9 +61,7 @@ class BackButton () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Provides backwards navigation in the form of a button.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.BackButton")
 @js.native
 object BackButton extends js.Object {

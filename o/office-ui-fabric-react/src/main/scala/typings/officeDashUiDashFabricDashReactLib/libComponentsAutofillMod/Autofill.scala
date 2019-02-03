@@ -12,6 +12,7 @@ class Autofill protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofillProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Autofill", "Autofill")
 @js.native
 object Autofill extends js.Object {

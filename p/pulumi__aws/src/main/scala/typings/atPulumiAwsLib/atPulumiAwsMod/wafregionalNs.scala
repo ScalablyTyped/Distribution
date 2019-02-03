@@ -198,6 +198,7 @@ object wafregionalNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalXssMatchSetMod.XssMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ByteMatchSet extends js.Object {
     /**
@@ -222,6 +223,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalByteMatchSetMod.ByteMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object GeoMatchSet extends js.Object {
     /**
@@ -246,6 +248,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalGeoMatchSetMod.GeoMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object IpSet extends js.Object {
     /**
@@ -270,6 +273,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalIpSetMod.IpSet = js.native
   }
   
+  /* static members */
   @js.native
   object RateBasedRule extends js.Object {
     /**
@@ -294,6 +298,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalRateBasedRuleMod.RateBasedRule = js.native
   }
   
+  /* static members */
   @js.native
   object RegexMatchSet extends js.Object {
     /**
@@ -318,6 +323,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalRegexMatchSetMod.RegexMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object RegexPatternSet extends js.Object {
     /**
@@ -342,6 +348,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalRegexPatternSetMod.RegexPatternSet = js.native
   }
   
+  /* static members */
   @js.native
   object Rule extends js.Object {
     /**
@@ -366,6 +373,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalRuleMod.Rule = js.native
   }
   
+  /* static members */
   @js.native
   object RuleGroup extends js.Object {
     /**
@@ -390,6 +398,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalRuleGroupMod.RuleGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SizeConstraintSet extends js.Object {
     /**
@@ -414,6 +423,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalSizeConstraintSetMod.SizeConstraintSet = js.native
   }
   
+  /* static members */
   @js.native
   object SqlInjectionMatchSet extends js.Object {
     /**
@@ -438,6 +448,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object WebAcl extends js.Object {
     /**
@@ -462,6 +473,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalWebAclMod.WebAcl = js.native
   }
   
+  /* static members */
   @js.native
   object WebAclAssociation extends js.Object {
     /**
@@ -486,6 +498,7 @@ object wafregionalNs extends js.Object {
     ): atPulumiAwsLib.wafregionalWebAclAssociationMod.WebAclAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object XssMatchSet extends js.Object {
     /**

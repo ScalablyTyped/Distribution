@@ -85,6 +85,7 @@ class Dialog protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/dialogs", "Dialog")
 @js.native
 object Dialog extends js.Object {

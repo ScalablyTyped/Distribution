@@ -28,6 +28,7 @@ class VpnConnectionRoute protected ()
   val vpnConnectionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpnConnectionRoute", "VpnConnectionRoute")
 @js.native
 object VpnConnectionRoute extends js.Object {

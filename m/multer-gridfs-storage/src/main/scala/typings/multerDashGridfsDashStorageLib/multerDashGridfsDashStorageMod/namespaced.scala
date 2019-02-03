@@ -28,6 +28,7 @@ class namespaced protected () extends MulterGridfsStorage {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("multer-gridfs-storage", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

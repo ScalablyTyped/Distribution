@@ -18,6 +18,7 @@ class HeatMap protected ()
   var model_HeatMap: ejDotWebDotAllLib.ejNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.HeatMap")
 @js.native
 object HeatMap extends js.Object {

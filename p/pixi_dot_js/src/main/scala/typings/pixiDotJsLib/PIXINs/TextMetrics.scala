@@ -20,6 +20,7 @@ class TextMetrics protected () extends js.Object {
   var width: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.TextMetrics")
 @js.native
 object TextMetrics extends js.Object {

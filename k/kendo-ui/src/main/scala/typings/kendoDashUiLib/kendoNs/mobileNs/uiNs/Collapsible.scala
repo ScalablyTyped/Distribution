@@ -20,6 +20,7 @@ class Collapsible protected () extends Widget {
   def toggle(instant: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Collapsible")
 @js.native
 object Collapsible extends js.Object {

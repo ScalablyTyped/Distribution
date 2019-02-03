@@ -16,6 +16,7 @@ class Shape () extends js.Object {
   def volume(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.Shape")
 @js.native
 object Shape extends js.Object {

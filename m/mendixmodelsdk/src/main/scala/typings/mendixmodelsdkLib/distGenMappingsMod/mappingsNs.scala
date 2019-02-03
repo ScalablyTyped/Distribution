@@ -230,18 +230,14 @@ object mappingsNs extends js.Object {
     var xmlPrimitiveType: mendixmodelsdkLib.distGenXmlschemasMod.xmlschemasNs.XmlPrimitiveType = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Mappings`.
-    */
-  /**
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object Element extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ElementType extends js.Object {
     var All: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ElementType = js.native
@@ -256,21 +252,21 @@ object mappingsNs extends js.Object {
     var Wrapper: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ElementType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/mapping-documents relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MappingDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object MappingElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object MappingMicroflowCall extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -289,6 +285,7 @@ object mappingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectMappingElement): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall = js.native
   }
   
+  /* static members */
   @js.native
   object MappingMicroflowParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -307,6 +304,7 @@ object mappingsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowCall): mendixmodelsdkLib.distGenMappingsMod.mappingsNs.MappingMicroflowParameter = js.native
   }
   
+  /* static members */
   @js.native
   object ObjectHandlingBackupEnum extends js.Object {
     var Create: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectHandlingBackupEnum = js.native
@@ -314,6 +312,7 @@ object mappingsNs extends js.Object {
     var Ignore: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectHandlingBackupEnum = js.native
   }
   
+  /* static members */
   @js.native
   object ObjectHandlingEnum extends js.Object {
     var Create: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectHandlingEnum = js.native
@@ -322,12 +321,14 @@ object mappingsNs extends js.Object {
     var Parameter: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ObjectHandlingEnum = js.native
   }
   
+  /* static members */
   @js.native
   object ObjectMappingElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMappingsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ValueMappingElement extends js.Object {
     var structureTypeName: java.lang.String = js.native

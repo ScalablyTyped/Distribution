@@ -40,6 +40,7 @@ class AssessmentTemplate protected ()
   val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate")
 @js.native
 object AssessmentTemplate extends js.Object {

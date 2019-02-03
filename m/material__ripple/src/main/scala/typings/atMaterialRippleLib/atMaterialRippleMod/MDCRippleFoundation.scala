@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCRippleFoundation ()
   extends atMaterialRippleLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/ripple", "MDCRippleFoundation")
 @js.native
 object MDCRippleFoundation extends js.Object {

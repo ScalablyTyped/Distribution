@@ -69,26 +69,47 @@ object bpmnDashModdleLibStrings {
   @js.native
   sealed trait Unspecified extends js.Object
   
+  @scala.inline
   def All: All = "All".asInstanceOf[All]
+  @scala.inline
   def Backward: Backward = "Backward".asInstanceOf[Backward]
+  @scala.inline
   def Both: Both = "Both".asInstanceOf[Both]
+  @scala.inline
   def Complex: Complex = "Complex".asInstanceOf[Complex]
+  @scala.inline
   def Converging: Converging = "Converging".asInstanceOf[Converging]
+  @scala.inline
   def Diverging: Diverging = "Diverging".asInstanceOf[Diverging]
+  @scala.inline
   def Exclusive: Exclusive = "Exclusive".asInstanceOf[Exclusive]
+  @scala.inline
   def Forward: Forward = "Forward".asInstanceOf[Forward]
+  @scala.inline
   def Information: Information = "Information".asInstanceOf[Information]
+  @scala.inline
   def Mixed: Mixed = "Mixed".asInstanceOf[Mixed]
+  @scala.inline
   def MultiInstanceParallel: MultiInstanceParallel = "MultiInstanceParallel".asInstanceOf[MultiInstanceParallel]
+  @scala.inline
   def MultiInstanceSequential: MultiInstanceSequential = "MultiInstanceSequential".asInstanceOf[MultiInstanceSequential]
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
+  @scala.inline
   def One: One = "One".asInstanceOf[One]
+  @scala.inline
   def Parallel: Parallel = "Parallel".asInstanceOf[Parallel]
+  @scala.inline
   def Physical: Physical = "Physical".asInstanceOf[Physical]
+  @scala.inline
   def Private: Private = "Private".asInstanceOf[Private]
+  @scala.inline
   def Public: Public = "Public".asInstanceOf[Public]
+  @scala.inline
   def Sequential: Sequential = "Sequential".asInstanceOf[Sequential]
+  @scala.inline
   def Standard: Standard = "Standard".asInstanceOf[Standard]
+  @scala.inline
   def Unspecified: Unspecified = "Unspecified".asInstanceOf[Unspecified]
 }
 

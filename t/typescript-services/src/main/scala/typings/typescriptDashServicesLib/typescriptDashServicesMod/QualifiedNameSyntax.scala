@@ -12,6 +12,7 @@ class QualifiedNameSyntax protected ()
   def this(left: typescriptDashServicesLib.TypeScriptNs.INameSyntax, dotToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, right: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "QualifiedNameSyntax")
 @js.native
 object QualifiedNameSyntax extends js.Object {

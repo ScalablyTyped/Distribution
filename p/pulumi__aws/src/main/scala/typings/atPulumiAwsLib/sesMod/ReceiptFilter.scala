@@ -20,6 +20,7 @@ class ReceiptFilter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesReceiptFilterMod.ReceiptFilterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "ReceiptFilter")
 @js.native
 object ReceiptFilter extends js.Object {

@@ -18,6 +18,7 @@ class MDCTopAppBar ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/top-app-bar", "MDCTopAppBar")
 @js.native
 object MDCTopAppBar extends js.Object {

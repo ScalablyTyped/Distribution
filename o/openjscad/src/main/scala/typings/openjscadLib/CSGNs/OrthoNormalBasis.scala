@@ -23,6 +23,7 @@ class OrthoNormalBasis protected ()
   def to3D(vec2: Vector2D): Vector3D = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.OrthoNormalBasis")
 @js.native
 object OrthoNormalBasis extends js.Object {

@@ -12,6 +12,7 @@ class DoObserver protected ()
   def this(currentObserver: wonderDashFrpLib.distEs2015ObserverIObserverMod.IObserver, prevObserver: wonderDashFrpLib.distEs2015ObserverIObserverMod.IObserver) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "DoObserver")
 @js.native
 object DoObserver extends js.Object {

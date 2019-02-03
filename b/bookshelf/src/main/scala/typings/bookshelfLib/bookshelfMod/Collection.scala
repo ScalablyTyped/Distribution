@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Collection[T /* <: bookshelfLib.bookshelfMod.BookshelfNs.Model[_] */] ()
   extends bookshelfLib.bookshelfMod.BookshelfNs.Collection[T]
 
+/* static members */
 @JSImport("bookshelf", "Collection")
 @js.native
 object Collection extends js.Object {

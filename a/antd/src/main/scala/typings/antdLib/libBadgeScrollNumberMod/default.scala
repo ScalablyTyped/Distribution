@@ -11,6 +11,7 @@ class default protected () extends ScrollNumber {
   def this(props: ScrollNumberProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/badge/ScrollNumber", JSImport.Default)
 @js.native
 object default extends js.Object {

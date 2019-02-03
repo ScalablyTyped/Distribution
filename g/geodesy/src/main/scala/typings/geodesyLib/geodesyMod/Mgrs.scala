@@ -28,6 +28,7 @@ class Mgrs protected () extends js.Object {
   def toUtm(): Utm = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "Mgrs")
 @js.native
 object Mgrs extends js.Object {

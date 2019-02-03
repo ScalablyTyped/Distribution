@@ -14,6 +14,7 @@ class RuleFailure protected ()
   def this(sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile, start: scala.Double, end: scala.Double, failure: java.lang.String, ruleName: java.lang.String, fix: tslintLib.libLanguageRuleRuleMod.Replacement) = this()
 }
 
+/* static members */
 @JSImport("tslint/lib", "RuleFailure")
 @js.native
 object RuleFailure extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Playlist () extends IPlaylist
 
+/* static members */
 @JSGlobal("Windows.Media.Playlists.Playlist")
 @js.native
 object Playlist extends js.Object {

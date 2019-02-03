@@ -165,6 +165,7 @@ class QuantitativeScale[D] ()
   override def zoom(magnifyAmount: scala.Double, centerValue: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales/quantitativeScale", "QuantitativeScale")
 @js.native
 object QuantitativeScale extends js.Object {

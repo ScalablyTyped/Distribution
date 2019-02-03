@@ -12,6 +12,7 @@ class Mask protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Mask")
 @js.native
 object Mask extends js.Object {

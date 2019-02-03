@@ -23,6 +23,7 @@ class Optional protected () extends js.Object {
   def get(container: Container): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "Optional")
 @js.native
 object Optional extends js.Object {

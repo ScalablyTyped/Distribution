@@ -22,6 +22,7 @@ class Spinner () extends js.Object {
   def stop(clear: scala.Boolean): this.type = js.native
 }
 
+/* static members */
 @JSImport("cli-spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {

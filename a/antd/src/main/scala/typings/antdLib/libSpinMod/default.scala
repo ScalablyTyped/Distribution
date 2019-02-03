@@ -11,6 +11,7 @@ class default protected () extends Spin {
   def this(props: SpinProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/spin", JSImport.Default)
 @js.native
 object default extends js.Object {

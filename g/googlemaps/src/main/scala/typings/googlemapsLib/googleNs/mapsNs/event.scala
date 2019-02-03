@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class event () extends js.Object
 
+/* static members */
 @JSGlobal("google.maps.event")
 @js.native
 object event extends js.Object {

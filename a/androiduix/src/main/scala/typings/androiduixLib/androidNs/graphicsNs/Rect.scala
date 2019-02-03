@@ -46,6 +46,7 @@ class Rect () extends js.Object {
   def width(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.Rect")
 @js.native
 object Rect extends js.Object {

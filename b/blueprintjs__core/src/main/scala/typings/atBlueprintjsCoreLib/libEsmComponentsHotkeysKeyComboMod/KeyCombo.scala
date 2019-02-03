@@ -13,6 +13,7 @@ class KeyCombo ()
   var renderMinimalKey: js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/keyCombo", "KeyCombo")
 @js.native
 object KeyCombo extends js.Object {

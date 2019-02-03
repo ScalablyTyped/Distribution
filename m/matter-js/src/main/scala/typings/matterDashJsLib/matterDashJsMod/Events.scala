@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Events ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Events
 
+/* static members */
 @JSImport("matter-js", "Events")
 @js.native
 object Events extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MediaControl () extends js.Object
 
-/** Describes the object that applications register with, to receive media focus and transport control notifications. */
+/* static members */
 @JSGlobal("Windows.Media.MediaControl")
 @js.native
 object MediaControl extends js.Object {

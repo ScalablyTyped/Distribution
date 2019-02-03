@@ -50,6 +50,7 @@ class BgpPeer protected ()
   val virtualInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer")
 @js.native
 object BgpPeer extends js.Object {

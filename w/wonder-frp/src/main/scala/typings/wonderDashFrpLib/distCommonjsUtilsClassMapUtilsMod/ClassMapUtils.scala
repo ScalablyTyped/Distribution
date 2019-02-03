@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClassMapUtils () extends js.Object
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/utils/ClassMapUtils", "ClassMapUtils")
 @js.native
 object ClassMapUtils extends js.Object {

@@ -46,6 +46,7 @@ class Spinner protected ()
   /* private */ def setUpChild(child: js.Any, addChild: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.Spinner")
 @js.native
 object Spinner extends js.Object {

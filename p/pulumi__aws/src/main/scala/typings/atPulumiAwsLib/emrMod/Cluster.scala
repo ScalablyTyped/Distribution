@@ -20,6 +20,7 @@ class Cluster protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.emrClusterMod.ClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/emr", "Cluster")
 @js.native
 object Cluster extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebError () extends js.Object
 
-/** Provides error status resulting from a web service operation. */
+/* static members */
 @JSGlobal("Windows.Web.WebError")
 @js.native
 object WebError extends js.Object {

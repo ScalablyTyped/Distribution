@@ -89,6 +89,7 @@ class CustomLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/customLayer", "CustomLayer")
 @js.native
 object CustomLayer extends js.Object {

@@ -12,7 +12,9 @@ object sassDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait production extends js.Object
   
+  @scala.inline
   def development: development = "development".asInstanceOf[development]
+  @scala.inline
   def production: production = "production".asInstanceOf[production]
 }
 

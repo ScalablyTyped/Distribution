@@ -17,6 +17,7 @@ class SourceUnitSyntax protected () extends SyntaxNode {
   def withModuleElements(moduleElements: ISyntaxList): SourceUnitSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SourceUnitSyntax")
 @js.native
 object SourceUnitSyntax extends js.Object {

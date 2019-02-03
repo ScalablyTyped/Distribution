@@ -20,6 +20,7 @@ class Spinner ()
   /* private */ def getViewBox(strokeWidth: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/spinner/spinner", "Spinner")
 @js.native
 object Spinner extends js.Object {

@@ -32,6 +32,7 @@ class IdentityNotificationTopic protected ()
   val topicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/identityNotificationTopic", "IdentityNotificationTopic")
 @js.native
 object IdentityNotificationTopic extends js.Object {

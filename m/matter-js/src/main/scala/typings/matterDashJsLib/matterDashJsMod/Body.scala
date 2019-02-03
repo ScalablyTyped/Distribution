@@ -390,6 +390,7 @@ class Body ()
   override var vertices: js.Array[matterDashJsLib.matterDashJsMod.MatterNs.Vector] = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Body")
 @js.native
 object Body extends js.Object {

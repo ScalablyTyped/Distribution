@@ -11,6 +11,7 @@ class JSONPLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.JSONPLoader")
 @js.native
 object JSONPLoader extends js.Object {

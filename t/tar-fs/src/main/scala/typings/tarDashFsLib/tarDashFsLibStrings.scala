@@ -18,9 +18,13 @@ object tarDashFsLibStrings {
   @js.native
   sealed trait symlink extends js.Object
   
+  @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def symlink: symlink = "symlink".asInstanceOf[symlink]
 }
 

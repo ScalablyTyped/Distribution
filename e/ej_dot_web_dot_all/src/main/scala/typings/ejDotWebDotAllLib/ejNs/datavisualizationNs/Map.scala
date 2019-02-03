@@ -57,6 +57,7 @@ class Map protected ()
   def zoom(level: scala.Double, isAnimate: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Map")
 @js.native
 object Map extends js.Object {

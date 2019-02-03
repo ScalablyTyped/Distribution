@@ -16,11 +16,13 @@ object snackbarNs extends js.Object {
   class MDCSnackbarFoundation ()
     extends atMaterialSnackbarLib.atMaterialSnackbarMod.MDCSnackbarFoundation
   
+  /* static members */
   @js.native
   object MDCSnackbar extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialSnackbarLib.atMaterialSnackbarMod.MDCSnackbar = js.native
   }
   
+  /* static members */
   @js.native
   object MDCSnackbarFoundation extends js.Object {
     val cssClasses: atMaterialSnackbarLib.constantsMod.cssClasses = js.native

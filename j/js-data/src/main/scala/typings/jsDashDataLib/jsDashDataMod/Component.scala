@@ -20,6 +20,7 @@ class Component () extends js.Object {
   def on(key: java.lang.String, handler: js.Function, ctx: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("js-data", "Component")
 @js.native
 object Component extends js.Object {

@@ -20,6 +20,7 @@ class UploadBuffer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayUploadBufferMod.UploadBufferArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "UploadBuffer")
 @js.native
 object UploadBuffer extends js.Object {

@@ -32,6 +32,7 @@ class Rule protected ()
   val predicates: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DataId]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/rule", "Rule")
 @js.native
 object Rule extends js.Object {

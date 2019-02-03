@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Utils ()
   extends cannonLib.CANNONNs.Utils
 
+/* static members */
 @JSImport("cannon", "Utils")
 @js.native
 object Utils extends js.Object {

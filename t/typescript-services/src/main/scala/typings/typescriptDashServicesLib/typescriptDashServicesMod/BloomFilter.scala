@@ -12,6 +12,7 @@ class BloomFilter protected ()
   def this(expectedCount: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "BloomFilter")
 @js.native
 object BloomFilter extends js.Object {

@@ -28,6 +28,7 @@ class RecorderStatus protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg/recorderStatus", "RecorderStatus")
 @js.native
 object RecorderStatus extends js.Object {

@@ -48,6 +48,7 @@ class Descent protected () extends js.Object {
   def takeDescentStep(x: js.Array[scala.Double], d: js.Array[scala.Double], stepSize: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/descent", "Descent")
 @js.native
 object Descent extends js.Object {

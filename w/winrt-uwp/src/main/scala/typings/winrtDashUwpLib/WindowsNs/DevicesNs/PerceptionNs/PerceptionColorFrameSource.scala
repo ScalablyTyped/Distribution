@@ -160,7 +160,7 @@ abstract class PerceptionColorFrameSource () extends js.Object {
   def trySetVideoProfileAsync(controlSession: PerceptionControlSession, profile: PerceptionVideoProfile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PerceptionFrameSourcePropertyChangeResult] = js.native
 }
 
-/** A frame source that provides color frames. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.PerceptionColorFrameSource")
 @js.native
 object PerceptionColorFrameSource extends js.Object {

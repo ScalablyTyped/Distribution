@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TaxonomyNavigation () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Publishing.Navigation.TaxonomyNavigation")
 @js.native
 object TaxonomyNavigation extends js.Object {

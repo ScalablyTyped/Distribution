@@ -16,8 +16,12 @@ import scala.scalajs.js.annotation._
   ] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[TypographyProps]] = js.undefined
   var gutterBottom: js.UndefOr[scala.Boolean] = js.undefined
-  var headlineMapping: js.UndefOr[
-    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.TypographyProps with js.Any
+  var headlineMapping: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ type in @material-ui/core.@material-ui/core/Typography/Typography.Style ]: string}
+    */ atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.TypographyProps with js.Any
   ] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var noWrap: js.UndefOr[scala.Boolean] = js.undefined

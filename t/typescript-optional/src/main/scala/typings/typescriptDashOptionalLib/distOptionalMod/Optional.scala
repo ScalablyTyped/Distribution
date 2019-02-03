@@ -27,6 +27,7 @@ abstract class Optional[T] () extends js.Object {
   def toOption(): typescriptDashOptionalLib.distTypesMod.Option[T] = js.native
 }
 
+/* static members */
 @JSImport("typescript-optional/dist/optional", "Optional")
 @js.native
 object Optional extends js.Object {

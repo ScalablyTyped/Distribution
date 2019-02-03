@@ -36,6 +36,7 @@ class RouteTable protected ()
   val transitGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway/routeTable", "RouteTable")
 @js.native
 object RouteTable extends js.Object {

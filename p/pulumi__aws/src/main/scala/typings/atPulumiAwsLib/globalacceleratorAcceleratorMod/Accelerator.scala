@@ -41,6 +41,7 @@ class Accelerator protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/globalaccelerator/accelerator", "Accelerator")
 @js.native
 object Accelerator extends js.Object {

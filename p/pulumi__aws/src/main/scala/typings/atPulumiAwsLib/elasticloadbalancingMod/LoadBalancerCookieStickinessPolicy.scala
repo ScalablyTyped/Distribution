@@ -20,6 +20,7 @@ class LoadBalancerCookieStickinessPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing", "LoadBalancerCookieStickinessPolicy")
 @js.native
 object LoadBalancerCookieStickinessPolicy extends js.Object {

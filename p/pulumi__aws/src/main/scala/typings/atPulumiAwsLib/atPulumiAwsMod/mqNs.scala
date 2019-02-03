@@ -39,6 +39,7 @@ object mqNs extends js.Object {
   def getBroker(): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
   def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
   def getBroker(args: atPulumiAwsLib.mqGetBrokerMod.GetBrokerArgs, opts: atPulumiPulumiLib.invokeMod.InvokeOptions): js.Promise[atPulumiAwsLib.mqGetBrokerMod.GetBrokerResult] = js.native
+  /* static members */
   @js.native
   object Broker extends js.Object {
     /**
@@ -63,6 +64,7 @@ object mqNs extends js.Object {
     ): atPulumiAwsLib.mqBrokerMod.Broker = js.native
   }
   
+  /* static members */
   @js.native
   object Configuration extends js.Object {
     /**

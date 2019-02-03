@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class XTemplate () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.XTemplate")
 @js.native
 object XTemplate extends js.Object {

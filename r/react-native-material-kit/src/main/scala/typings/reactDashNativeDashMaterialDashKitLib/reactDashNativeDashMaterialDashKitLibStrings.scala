@@ -63,24 +63,43 @@ object reactDashNativeDashMaterialDashKitLibStrings {
   @js.native
   sealed trait tapLocation extends js.Object
   
+  @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
+  @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
+  @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
+  @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
+  @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
+  @scala.inline
   def `600`: `600` = "600".asInstanceOf[`600`]
+  @scala.inline
   def `700`: `700` = "700".asInstanceOf[`700`]
+  @scala.inline
   def `800`: `800` = "800".asInstanceOf[`800`]
+  @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
+  @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
+  @scala.inline
   def dotted: dotted = "dotted".asInstanceOf[dotted]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
+  @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
   def tapLocation: tapLocation = "tapLocation".asInstanceOf[tapLocation]
 }
 

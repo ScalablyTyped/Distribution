@@ -15,6 +15,7 @@ abstract class IsoChronology ()
   override def resolveDate(fieldValues: js.Any, resolverStyle: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "IsoChronology")
 @js.native
 object IsoChronology extends js.Object {

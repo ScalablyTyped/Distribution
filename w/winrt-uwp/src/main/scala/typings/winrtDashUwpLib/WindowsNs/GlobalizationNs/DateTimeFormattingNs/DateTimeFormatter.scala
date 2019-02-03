@@ -118,7 +118,7 @@ class DateTimeFormatter protected () extends js.Object {
   def format(value: stdLib.Date): java.lang.String = js.native
 }
 
-/** Formats dates and times. */
+/* static members */
 @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
 @js.native
 object DateTimeFormatter extends js.Object {

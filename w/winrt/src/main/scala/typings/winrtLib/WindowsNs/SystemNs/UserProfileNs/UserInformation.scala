@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserInformation () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.UserProfile.UserInformation")
 @js.native
 object UserInformation extends js.Object {

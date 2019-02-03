@@ -15,8 +15,11 @@ object coinlistLibStrings {
   @js.native
   sealed trait symbol extends js.Object
   
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
 }
 

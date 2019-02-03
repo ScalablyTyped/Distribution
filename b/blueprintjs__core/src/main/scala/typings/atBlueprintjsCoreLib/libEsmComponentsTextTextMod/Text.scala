@@ -19,6 +19,7 @@ class Text ()
   /* private */ def update(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/text/text", "Text")
 @js.native
 object Text extends js.Object {

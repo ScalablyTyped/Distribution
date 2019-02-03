@@ -73,6 +73,7 @@ class InterpolatedColorLegend protected ()
   def orientation(orientation: java.lang.String): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/components/interpolatedColorLegend", "InterpolatedColorLegend")
 @js.native
 object InterpolatedColorLegend extends js.Object {

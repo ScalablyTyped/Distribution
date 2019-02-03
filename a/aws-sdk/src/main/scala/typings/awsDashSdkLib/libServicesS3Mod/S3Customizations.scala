@@ -67,6 +67,7 @@ class S3Customizations ()
   ): awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUpload = js.native
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/services/s3", "S3Customizations")
 @js.native
 object S3Customizations extends js.Object {

@@ -27,6 +27,7 @@ object acmpcaNs extends js.Object {
     args: atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.acmpcaGetCertificateAuthorityMod.GetCertificateAuthorityResult] = js.native
+  /* static members */
   @js.native
   object CertificateAuthority extends js.Object {
     /**

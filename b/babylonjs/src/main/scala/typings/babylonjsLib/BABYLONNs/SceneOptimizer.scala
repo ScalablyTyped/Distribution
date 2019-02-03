@@ -95,10 +95,7 @@ class SceneOptimizer protected () extends IDisposable {
   def stop(): scala.Unit = js.native
 }
 
-/**
-  * Class used to run optimizations in order to reach a target frame rate
-  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-  */
+/* static members */
 @JSGlobal("BABYLON.SceneOptimizer")
 @js.native
 object SceneOptimizer extends js.Object {

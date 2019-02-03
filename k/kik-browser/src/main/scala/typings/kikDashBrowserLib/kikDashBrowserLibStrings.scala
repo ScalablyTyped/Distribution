@@ -15,8 +15,11 @@ object kikDashBrowserLibStrings {
   @js.native
   sealed trait portrait extends js.Object
   
+  @scala.inline
   def free: free = "free".asInstanceOf[free]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
 }
 

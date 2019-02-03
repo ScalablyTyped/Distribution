@@ -56,6 +56,7 @@ class VpcEndpointService protected ()
   val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcEndpointService", "VpcEndpointService")
 @js.native
 object VpcEndpointService extends js.Object {

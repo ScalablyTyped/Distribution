@@ -18,6 +18,7 @@ class PnpObject () extends IPnpObject {
   override def update(updateInfo: PnpObjectUpdate): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObject")
 @js.native
 object PnpObject extends js.Object {

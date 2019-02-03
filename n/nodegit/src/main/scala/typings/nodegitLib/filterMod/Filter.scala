@@ -15,6 +15,7 @@ class Filter () extends js.Object {
   def register(name: java.lang.String, priority: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/filter", "Filter")
 @js.native
 object Filter extends js.Object {

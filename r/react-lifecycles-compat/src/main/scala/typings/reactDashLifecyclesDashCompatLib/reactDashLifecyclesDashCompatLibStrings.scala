@@ -9,6 +9,7 @@ object reactDashLifecyclesDashCompatLibStrings {
   @js.native
   sealed trait polyfill extends js.Object
   
+  @scala.inline
   def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }
 

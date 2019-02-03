@@ -15,8 +15,11 @@ object babelDashGeneratorLibStrings {
   @js.native
   sealed trait single extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
 }
 

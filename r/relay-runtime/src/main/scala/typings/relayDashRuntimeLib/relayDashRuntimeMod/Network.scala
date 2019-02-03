@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Network () extends js.Object
 
+/* static members */
 @JSImport("relay-runtime", "Network")
 @js.native
 object Network extends js.Object {

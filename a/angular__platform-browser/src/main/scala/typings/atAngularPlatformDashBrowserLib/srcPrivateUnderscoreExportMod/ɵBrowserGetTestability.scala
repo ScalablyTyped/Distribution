@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ɵBrowserGetTestability ()
   extends atAngularPlatformDashBrowserLib.srcBrowserTestabilityMod.BrowserGetTestability
 
+/* static members */
 @JSImport("@angular/platform-browser/src/private_export", "ɵBrowserGetTestability")
 @js.native
 object ɵBrowserGetTestability extends js.Object {

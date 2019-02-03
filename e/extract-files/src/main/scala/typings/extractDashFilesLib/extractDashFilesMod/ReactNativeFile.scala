@@ -14,6 +14,7 @@ class ReactNativeFile protected () extends js.Object {
   var uri: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("extract-files", "ReactNativeFile")
 @js.native
 object ReactNativeFile extends js.Object {

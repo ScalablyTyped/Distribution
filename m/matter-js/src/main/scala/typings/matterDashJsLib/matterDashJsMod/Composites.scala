@@ -29,6 +29,7 @@ class Composites ()
   ): matterDashJsLib.matterDashJsMod.MatterNs.Composite = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Composites")
 @js.native
 object Composites extends js.Object {

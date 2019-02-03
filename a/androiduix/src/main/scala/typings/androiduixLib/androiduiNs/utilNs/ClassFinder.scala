@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClassFinder () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.util.ClassFinder")
 @js.native
 object ClassFinder extends js.Object {

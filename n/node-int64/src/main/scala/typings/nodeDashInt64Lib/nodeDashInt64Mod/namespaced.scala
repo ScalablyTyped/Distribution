@@ -17,6 +17,7 @@ class namespaced protected () extends Int64 {
   def this(hi: scala.Double, lo: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("node-int64", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

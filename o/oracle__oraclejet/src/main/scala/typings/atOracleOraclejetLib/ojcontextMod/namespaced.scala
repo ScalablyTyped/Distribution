@@ -12,6 +12,7 @@ class namespaced () extends Context {
   override def getBusyContext(): BusyContext = js.native
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojcontext", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -12,6 +12,7 @@ class WallOutlineGeometry protected ()
   def this(options: cesiumLib.Anon_EllipsoidGranularityMaximumHeights) = this()
 }
 
+/* static members */
 @JSImport("cesium", "WallOutlineGeometry")
 @js.native
 object WallOutlineGeometry extends js.Object {

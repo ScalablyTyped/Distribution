@@ -91,9 +91,7 @@ class Rating () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Rating")
 @js.native
 object Rating extends js.Object {

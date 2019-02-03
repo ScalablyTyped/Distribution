@@ -65,6 +65,7 @@ class ConvexPolyhedron () extends Shape {
   def transformAllPoints(offset: Vec3, quat: Quaternion): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.ConvexPolyhedron")
 @js.native
 object ConvexPolyhedron extends js.Object {

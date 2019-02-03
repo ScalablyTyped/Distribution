@@ -26,14 +26,7 @@ abstract class EffectLayer protected ()
   name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The effect layer Helps adding post process effect blended with the main pass.
-  *
-  * This can be for instance use to generate glow or higlight effects on the scene.
-  *
-  * The effect layer class can not be used directly and is intented to inherited from to be
-  * customized per effects.
-  */
+/* static members */
 @JSImport("babylonjs", "EffectLayer")
 @js.native
 object EffectLayer extends js.Object {

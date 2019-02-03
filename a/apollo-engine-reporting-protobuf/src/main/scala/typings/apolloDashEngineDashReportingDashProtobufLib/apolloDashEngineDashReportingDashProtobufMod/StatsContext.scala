@@ -16,6 +16,7 @@ class StatsContext ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IStatsContext) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "StatsContext")
 @js.native
 object StatsContext extends js.Object {

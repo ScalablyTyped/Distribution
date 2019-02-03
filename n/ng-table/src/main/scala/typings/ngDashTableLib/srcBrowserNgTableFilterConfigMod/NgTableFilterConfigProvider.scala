@@ -27,6 +27,7 @@ class NgTableFilterConfigProvider protected ()
   def setConfig(customConfig: ngDashTableLib.srcBrowserPublicDashInterfacesMod.IFilterConfigValues): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfigProvider")
 @js.native
 object NgTableFilterConfigProvider extends js.Object {

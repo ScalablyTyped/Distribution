@@ -32,6 +32,7 @@ class BucketMetric protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucketMetric", "BucketMetric")
 @js.native
 object BucketMetric extends js.Object {

@@ -20,6 +20,7 @@ class UserGroupMembership protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamUserGroupMembershipMod.UserGroupMembershipArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "UserGroupMembership")
 @js.native
 object UserGroupMembership extends js.Object {

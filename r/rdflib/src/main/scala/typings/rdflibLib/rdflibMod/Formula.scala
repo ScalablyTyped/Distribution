@@ -251,6 +251,7 @@ class Formula protected () extends Node {
   def whether(s: ValueType, p: ValueType, o: ValueType, g: ValueType): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Formula")
 @js.native
 object Formula extends js.Object {

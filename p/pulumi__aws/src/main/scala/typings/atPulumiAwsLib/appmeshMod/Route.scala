@@ -20,6 +20,7 @@ class Route protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appmeshRouteMod.RouteArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh", "Route")
 @js.native
 object Route extends js.Object {

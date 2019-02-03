@@ -21,10 +21,15 @@ object simpleDashCwDashNodeLibStrings {
   @js.native
   sealed trait rooms extends js.Object
   
+  @scala.inline
   def contacts: contacts = "contacts".asInstanceOf[contacts]
+  @scala.inline
   def me: me = "me".asInstanceOf[me]
+  @scala.inline
   def `my/status`: `my/status` = "my/status".asInstanceOf[`my/status`]
+  @scala.inline
   def `my/tasks`: `my/tasks` = "my/tasks".asInstanceOf[`my/tasks`]
+  @scala.inline
   def rooms: rooms = "rooms".asInstanceOf[rooms]
 }
 

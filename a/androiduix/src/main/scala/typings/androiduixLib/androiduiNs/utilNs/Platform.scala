@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Platform () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.util.Platform")
 @js.native
 object Platform extends js.Object {

@@ -30,6 +30,7 @@ class ComponentManager protected () extends js.Object {
   def removeComponent(component: wonderDotJsLib.distEs2015CoreComponentMod.Component): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/manager/ComponentManager", "ComponentManager")
 @js.native
 object ComponentManager extends js.Object {

@@ -32,6 +32,7 @@ class Message protected ()
   def touch(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("nsqjs", "Message")
 @js.native
 object Message extends js.Object {

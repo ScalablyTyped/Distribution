@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SingleLineTransformationMethod () extends ReplacementTransformationMethod
 
+/* static members */
 @JSGlobal("android.text.method.SingleLineTransformationMethod")
 @js.native
 object SingleLineTransformationMethod extends js.Object {

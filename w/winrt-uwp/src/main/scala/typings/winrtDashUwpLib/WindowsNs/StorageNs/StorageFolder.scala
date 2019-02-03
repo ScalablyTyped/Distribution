@@ -307,7 +307,7 @@ abstract class StorageFolder () extends js.Object {
   def tryGetItemAsync(name: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[IStorageItem] = js.native
 }
 
-/** Manages folders and their contents and provides information about them. */
+/* static members */
 @JSGlobal("Windows.Storage.StorageFolder")
 @js.native
 object StorageFolder extends js.Object {

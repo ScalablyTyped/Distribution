@@ -20,9 +20,7 @@ class BoundingBox protected ()
   def this(min: babylonjsLib.BABYLONNs.Vector3, max: babylonjsLib.BABYLONNs.Vector3) = this()
 }
 
-/**
-  * Class used to store bounding box information
-  */
+/* static members */
 @JSImport("babylonjs", "BoundingBox")
 @js.native
 object BoundingBox extends js.Object {

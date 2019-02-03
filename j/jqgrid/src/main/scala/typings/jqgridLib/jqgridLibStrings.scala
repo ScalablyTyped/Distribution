@@ -84,31 +84,57 @@ object jqgridLibStrings {
   @js.native
   sealed trait xmlstring extends js.Object
   
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
   def clientArray: clientArray = "clientArray".asInstanceOf[clientArray]
+  @scala.inline
   def clientSide: clientSide = "clientSide".asInstanceOf[clientSide]
+  @scala.inline
   def currency: currency = "currency".asInstanceOf[currency]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
+  @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def jsonstring: jsonstring = "jsonstring".asInstanceOf[jsonstring]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def local: local = "local".asInstanceOf[local]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def showlink: showlink = "showlink".asInstanceOf[showlink]
+  @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
+  @scala.inline
   def xmlstring: xmlstring = "xmlstring".asInstanceOf[xmlstring]
 }
 

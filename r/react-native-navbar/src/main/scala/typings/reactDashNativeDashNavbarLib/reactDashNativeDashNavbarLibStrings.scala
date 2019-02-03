@@ -33,14 +33,23 @@ object reactDashNativeDashNavbarLibStrings {
   @js.native
   sealed trait tail extends js.Object
   
+  @scala.inline
   def clip: clip = "clip".asInstanceOf[clip]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def slide: slide = "slide".asInstanceOf[slide]
+  @scala.inline
   def tail: tail = "tail".asInstanceOf[tail]
 }
 

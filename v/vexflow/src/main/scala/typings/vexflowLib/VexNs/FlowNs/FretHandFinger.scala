@@ -14,6 +14,7 @@ class FretHandFinger protected () extends Modifier {
   def setOffsetY(y: scala.Double): FretHandFinger = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.FretHandFinger")
 @js.native
 object FretHandFinger extends js.Object {

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
   /**
-    * The CSS **`align-content`** property defines how the browser distributes space between and around content items along the cross\-axis of their container, which is serving as a flexbox container.
+    * The CSS **`align-content`** property sets how the browser distributes space between and around content items along the cross-axis of a flexbox container, and the main-axis of a grid container.
     *
     * **Initial value**: `normal`
     *
@@ -34,7 +34,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var alignContent: js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]] = js.undefined
   /**
-    * The CSS **`align-items`** property sets the `align-self` value on all direct children as a group. The align\-self property sets the alignment of an item within its containing block.
+    * The CSS **`align-items`** property sets the `align-self` value on all direct children as a group. The align-self property sets the alignment of an item within its containing block. In Flexbox it controls the alignment of items on the Cross Axis, in Grid Layout it controls the alignment of items on the Block Axis within their grid area.
     *
     * **Initial value**: `normal`
     *
@@ -61,7 +61,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var alignItems: js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]] = js.undefined
   /**
-    * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross\-axis margin is set to `auto`, then `align-self` is ignored.
+    * The **`align-self`** CSS property aligns flex items of the current flex line overriding the `align-items` value. If any of the item's cross-axis margin is set to `auto`, then `align-self` is ignored. In Grid layout `align-self` aligns the item inside the grid area.
     *
     * **Initial value**: `auto`
     *
@@ -88,7 +88,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var alignSelf: js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]] = js.undefined
   /**
-    * The **`animation-delay`** CSS property specifies when an animation should start. You can begin the animation at a future point in time, immediately and from its beginning, or immediately and partway through the animation cycle.
+    * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
     *
     * **Initial value**: `0s`
     *
@@ -101,7 +101,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`animation-direction`** CSS property specifies whether an animation should play forwards, backwards, or alternating back and forth.
+    * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
     *
     * **Initial value**: `normal`
     *
@@ -114,7 +114,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationDirection: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.undefined
   /**
-    * The **`animation-duration`** CSS property specifies the length of time that an animation should take to complete one cycle.
+    * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
     *
     * **Initial value**: `0s`
     *
@@ -127,7 +127,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`animation-fill-mode`** CSS property specifies how a CSS animation should apply styles to its target before and after its execution.
+    * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
     *
     * **Initial value**: `none`
     *
@@ -140,7 +140,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationFillMode: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.undefined
   /**
-    * The **`animation-iteration-count`** CSS property specifies  the number of times an animation cycle should be played before stopping. If multiple values are specified, each time the animation is played the next value in the list is used, cycling back to the first value after the last one is used.
+    * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
     *
     * **Initial value**: `1`
     *
@@ -153,7 +153,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationIterationCount: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.undefined
   /**
-    * The **`animation-name`** CSS property specifies one or more animations that should be applied to an element. Each name indicates an `@keyframes` at\-rule that defines the property values for the animation sequence.
+    * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
     *
     * **Initial value**: `none`
     *
@@ -166,7 +166,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationName: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.undefined
   /**
-    * The **`animation-play-state`** CSS property specifies whether an **animation is running or paused**. In JavaScript, this can be queried to determine whether or not the animation is currently running. In addition, you can use JavaScript to set its value to pause or resume playback of an animation.
+    * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
     *
     * **Initial value**: `running`
     *
@@ -179,7 +179,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationPlayState: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.undefined
   /**
-    * The `**animation-timing-function**` CSS property specifies how a CSS animation should progress over the duration of each cycle.
+    * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
     *
     * **Initial value**: `ease`
     *
@@ -192,7 +192,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var animationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
   /**
-    * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform\-native styling based on the operating system's theme.
+    * The **`-moz-appearance`** CSS property is used in Gecko (Firefox) to display an element using platform-native styling based on the operating system's theme.
     *
     * **Initial value**: `auto`
     *
@@ -216,7 +216,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backdropFilter: js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]] = js.undefined
   /**
-    * The **`backface-visibility`** CSS property determines whether the back face of an element is visible when turned towards the user.
+    * The **`backface-visibility`** CSS property sets whether the back face of an element is visible when turned towards the user.
     *
     * **Initial value**: `visible`
     *
@@ -229,7 +229,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backfaceVisibility: js.UndefOr[BackfaceVisibilityProperty | js.Array[BackfaceVisibilityProperty]] = js.undefined
   /**
-    * If a `background-image` is specified, the **`background-attachment`** CSS property determines whether that image's position is fixed within the viewport, or scrolls along with its containing block.
+    * The **`background-attachment`** CSS property sets whether a background image's position is fixed within the viewport, or scrolls with its containing block.
     *
     * **Initial value**: `scroll`
     *
@@ -241,7 +241,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backgroundAttachment: js.UndefOr[BackgroundAttachmentProperty | js.Array[BackgroundAttachmentProperty]] = js.undefined
   /**
-    * The **`background-blend-mode`** CSS property determines how an element's background images should blend with each other and with the element's background color.
+    * The **`background-blend-mode`** CSS property sets how an element's background images should blend with each other and with the element's background color.
     *
     * **Initial value**: `normal`
     *
@@ -253,7 +253,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backgroundBlendMode: js.UndefOr[BackgroundBlendModeProperty | js.Array[BackgroundBlendModeProperty]] = js.undefined
   /**
-    * The **`background-clip`** CSS property specifies if an element's background, whether a `<color>` or an `<image>`, extends underneath its border.
+    * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
     *
     * **Initial value**: `border-box`
     *
@@ -289,7 +289,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backgroundImage: js.UndefOr[BackgroundImageProperty | js.Array[BackgroundImageProperty]] = js.undefined
   /**
-    * The **`background-origin`** CSS property sets the _background positioning area_, i.e., the origin position of an image specified using the `background-image` property.
+    * The **`background-origin`** CSS property sets the _background positioning area_. In other words, it sets the origin position of an image set with the `background-image` property.
     *
     * **Initial value**: `padding-box`
     *
@@ -301,7 +301,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backgroundOrigin: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
   /**
-    * The **`background-position`** CSS property sets the initial position, relative to the background position layer defined by `background-origin`, for each defined background image.
+    * The **`background-position`** CSS property sets the initial position for each background image. The position is relative to the position layer set by `background-origin`.
     *
     * **Initial value**: `0% 0%`
     *
@@ -315,7 +315,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BackgroundPositionProperty[TLength] | js.Array[BackgroundPositionProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`background-position-x`** CSS property sets the initial horizontal position, relative to the background position layer defined by `background-origin`, for each defined background image.
+    * The **`background-position-x`** CSS property sets the initial horizontal position for each background image. The position is relative to the position layer set by `background-origin`.
     *
     * **Initial value**: `left`
     *
@@ -343,7 +343,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BackgroundPositionYProperty[TLength] | js.Array[BackgroundPositionYProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`background-repeat`** CSS property defines how background images are repeated. A background image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
+    * The **`background-repeat`** CSS property sets how background images are repeated. A background image can be repeated along the horizontal and vertical axes, or not repeated at all.
     *
     * **Initial value**: `repeat`
     *
@@ -355,7 +355,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var backgroundRepeat: js.UndefOr[BackgroundRepeatProperty | js.Array[BackgroundRepeatProperty]] = js.undefined
   /**
-    * The **`background-size`** CSS property specifies the size of the element's background image. The image can be left to its natural size, stretched to a new size, or constrained to fit the available space while preserving its intrinsic proportions.
+    * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
     *
     * **Initial value**: `auto auto`
     *
@@ -382,7 +382,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var blockSize: js.UndefOr[BlockSizeProperty[TLength] | js.Array[BlockSizeProperty[TLength]]] = js.undefined
   /**
-    * The **`border-block-end-color`** CSS property defines the color of the logical block\-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-block-end-color`** CSS property defines the color of the logical block-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -406,7 +406,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBlockEndStyle: js.UndefOr[BorderBlockEndStyleProperty | js.Array[BorderBlockEndStyleProperty]] = js.undefined
   /**
-    * The **`border-block-end-width`** CSS property defines the width of the logical block\-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-block-end-width`** CSS property defines the width of the logical block-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `medium`
     *
@@ -420,7 +420,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderBlockEndWidthProperty[TLength] | js.Array[BorderBlockEndWidthProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-block-start-color`** CSS property defines the color of the logical block\-start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-block-start-color`** CSS property defines the color of the logical block-start border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -444,7 +444,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBlockStartStyle: js.UndefOr[BorderBlockStartStyleProperty | js.Array[BorderBlockStartStyleProperty]] = js.undefined
   /**
-    * The **`border-block-start-width`** CSS property defines the width of the logical block\-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-block-start-width`** CSS property defines the width of the logical block-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `medium`
     *
@@ -458,7 +458,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderBlockStartWidthProperty[TLength] | js.Array[BorderBlockStartWidthProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-bottom-color`** CSS property sets the color of an element's bottom `border`. Note that in many cases the shorthand CSS properties `border-color` or `border-bottom` are more convenient and preferable.
+    * The **`border-bottom-color`** CSS property sets the color of an element's bottom border. It can also be set with the shorthand CSS properties `border-color` or `border-bottom`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -470,7 +470,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBottomColor: js.UndefOr[BorderBottomColorProperty | js.Array[BorderBottomColorProperty]] = js.undefined
   /**
-    * The **`border-bottom-left-radius`** CSS property sets the rounding of the bottom\-left corner of the element.
+    * The **`border-bottom-left-radius`** CSS property rounds the bottom-left corner of an element.
     *
     * **Initial value**: `0`
     *
@@ -485,7 +485,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-bottom-right-radius`** CSS property sets the rounding of the bottom\-right corner of the element.
+    * The **`border-bottom-right-radius`** CSS property rounds the bottom-right corner of an element.
     *
     * **Initial value**: `0`
     *
@@ -526,7 +526,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderBottomWidthProperty[TLength] | js.Array[BorderBottomWidthProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-collapse`** CSS property specifies whether cells inside a `<table>` have shared or separate borders.
+    * The **`border-collapse`** CSS property sets whether cells inside a `<table>` have shared or separate borders.
     *
     * **Initial value**: `separate`
     *
@@ -538,7 +538,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderCollapse: js.UndefOr[BorderCollapseProperty | js.Array[BorderCollapseProperty]] = js.undefined
   /**
-    * The **`border-image-outset`** CSS property specifies the distance by which an element's border image is set out from its border box.
+    * The **`border-image-outset`** CSS property sets the distance by which an element's border image is set out from its border box.
     *
     * **Initial value**: `0`
     *
@@ -564,7 +564,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderImageRepeat: js.UndefOr[BorderImageRepeatProperty | js.Array[BorderImageRepeatProperty]] = js.undefined
   /**
-    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions are used to form the components of an element's border image.
+    * The **`border-image-slice`** CSS property divides the image specified by `border-image-source` into regions. These regions form the components of an element's border image.
     *
     * **Initial value**: `100%`
     *
@@ -576,7 +576,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderImageSlice: js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]] = js.undefined
   /**
-    * The **`border-image-source`** CSS property specifies the source image used to create an element's border image.
+    * The **`border-image-source`** CSS property sets the source image used to create an element's border image.
     *
     * **Initial value**: `none`
     *
@@ -588,7 +588,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderImageSource: js.UndefOr[BorderImageSourceProperty | js.Array[BorderImageSourceProperty]] = js.undefined
   /**
-    * The **`border-image-width`** CSS property specifies the width of an element's border image.
+    * The **`border-image-width`** CSS property sets the width of an element's border image.
     *
     * **Initial value**: `1`
     *
@@ -600,7 +600,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderImageWidth: js.UndefOr[BorderImageWidthProperty[TLength] | js.Array[BorderImageWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`border-inline-end-color`** CSS property defines the color of the logical inline\-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-inline-end-color`** CSS property defines the color of the logical inline-end border of an element, which maps to a physical border color depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-color`, `border-right-color`, `border-bottom-color`, or `border-left-color` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -625,7 +625,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderInlineEndStyle: js.UndefOr[BorderInlineEndStyleProperty | js.Array[BorderInlineEndStyleProperty]] = js.undefined
   /**
-    * The **`border-inline-end-width`** CSS property defines the width of the logical inline\-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-inline-end-width`** CSS property defines the width of the logical inline-end border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `medium`
     *
@@ -664,7 +664,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderInlineStartStyle: js.UndefOr[BorderInlineStartStyleProperty | js.Array[BorderInlineStartStyleProperty]] = js.undefined
   /**
-    * The **`border-inline-start-width`** CSS property defines the width of the logical inline\-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`border-inline-start-width`** CSS property defines the width of the logical inline-start border of an element, which maps to a physical border width depending on the element's writing mode, directionality, and text orientation. It corresponds to the `border-top-width`, `border-right-width`, `border-bottom-width`, or `border-left-width` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `medium`
     *
@@ -678,7 +678,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderInlineStartWidthProperty[TLength] | js.Array[BorderInlineStartWidthProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-left-color`** CSS property sets the color of an element's left `border`. Note that in many cases the shorthand CSS properties `border-color` or `border-left` are more convenient and preferable.
+    * The **`border-left-color`** CSS property sets the color of an element's left border. It can also be set with the shorthand CSS properties `border-color` or `border-left`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -702,7 +702,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderLeftStyle: js.UndefOr[BorderLeftStyleProperty | js.Array[BorderLeftStyleProperty]] = js.undefined
   /**
-    * The **`border-left-width`** CSS property sets the width of the left border of a box.
+    * The **`border-left-width`** CSS property sets the width of the left border of an element.
     *
     * **Initial value**: `medium`
     *
@@ -714,7 +714,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderLeftWidth: js.UndefOr[BorderLeftWidthProperty[TLength] | js.Array[BorderLeftWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`border-right-color`** CSS property sets the color of an element's right `border`. Note that in many cases the shorthand CSS properties  `border-color` or `border-right` are more convenient and preferable.
+    * The **`border-right-color`** CSS property sets the color of an element's right border. It can also be set with the shorthand CSS properties `border-color` or `border-right`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -738,7 +738,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderRightStyle: js.UndefOr[BorderRightStyleProperty | js.Array[BorderRightStyleProperty]] = js.undefined
   /**
-    * The **`border-right-width`** CSS property sets the width of the right border of a box.
+    * The **`border-right-width`** CSS property sets the width of the right border of an element.
     *
     * **Initial value**: `medium`
     *
@@ -750,7 +750,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderRightWidth: js.UndefOr[BorderRightWidthProperty[TLength] | js.Array[BorderRightWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`border-spacing`** CSS property specifies the distance between the borders of adjacent `<table>` cells. This property applies only when `border-collapse` is `separate`.
+    * The **`border-spacing`** CSS property sets the distance between the borders of adjacent `<table>` cells. This property applies only when `border-collapse` is `separate`.
     *
     * **Initial value**: `0`
     *
@@ -762,7 +762,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderSpacing: js.UndefOr[BorderSpacingProperty[TLength] | js.Array[BorderSpacingProperty[TLength]]] = js.undefined
   /**
-    * The **`border-top-color`** CSS property sets the color of an element's top `border`. Note that in many cases the shorthand CSS properties `border-color` or `border-top` are more convenient and preferable.
+    * The **`border-top-color`** CSS property sets the color of an element's top border. It can also be set with the shorthand CSS properties `border-color` or `border-top`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -774,7 +774,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderTopColor: js.UndefOr[BorderTopColorProperty | js.Array[BorderTopColorProperty]] = js.undefined
   /**
-    * The **`border-top-left-radius`** CSS property sets the rounding of the top\-left corner of the element.
+    * The **`border-top-left-radius`** CSS property rounds the top-left corner of an element.
     *
     * **Initial value**: `0`
     *
@@ -789,7 +789,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-top-right-radius`** CSS property sets the rounding of the top\-right corner of the element.
+    * The **`border-top-right-radius`** CSS property rounds the top-right corner of an element.
     *
     * **Initial value**: `0`
     *
@@ -816,7 +816,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderTopStyle: js.UndefOr[BorderTopStyleProperty | js.Array[BorderTopStyleProperty]] = js.undefined
   /**
-    * The **`border-top-width`** CSS property sets the width of the top border of a box.
+    * The **`border-top-width`** CSS property sets the width of the top border of an element.
     *
     * **Initial value**: `medium`
     *
@@ -828,7 +828,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var borderTopWidth: js.UndefOr[BorderTopWidthProperty[TLength] | js.Array[BorderTopWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`bottom`** CSS property participates in specifying the vertical position of a _positioned element_. It has no effect on non\-positioned elements.
+    * The **`bottom`** CSS property participates in specifying the vertical position of a _positioned element_. It has no effect on non-positioned elements.
     *
     * **Initial value**: `auto`
     *
@@ -852,7 +852,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var boxDecorationBreak: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.undefined
   /**
-    * The **`box-shadow`** CSS property is used to add shadow effects around an element's frame. You can specify multiple effects separated by commas if you wish to do so. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
+    * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
     *
     * **Initial value**: `none`
     *
@@ -890,13 +890,35 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var breakAfter: js.UndefOr[BreakAfterProperty | js.Array[BreakAfterProperty]] = js.undefined
   /**
-    * The **`break-before`** CSS property defines how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.
+    * The **`break-before`** CSS property sets how page, column, or region breaks should behave before a generated box. If there is no generated box, the property is ignored.
     *
     * **Initial value**: `auto`
     *
+    * ---
+    *
+    * _Supported in Multi-column Layout_
+    *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * | **50** |   No    | **10** | **12** | **10** |
+    * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in Paged Media_
+    *
+    * | Chrome | Firefox | Safari |  Edge  |   IE   |
+    * | :----: | :-----: | :----: | :----: | :----: |
+    * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in CSS Regions_
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |   No   |   No    |   No   |  No  | No  |
+    *
+    * ---
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/break-before
     */
@@ -906,9 +928,23 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * **Initial value**: `auto`
     *
+    * ---
+    *
+    * _Supported in Multi-column Layout_
+    *
     * | Chrome | Firefox | Safari |  Edge  |   IE   |
     * | :----: | :-----: | :----: | :----: | :----: |
-    * | **50** |   No    | **10** | **12** | **10** |
+    * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
+    *
+    * _Supported in Paged Media_
+    *
+    * | Chrome | Firefox | Safari |  Edge  |   IE   |
+    * | :----: | :-----: | :----: | :----: | :----: |
+    * | **50** | **65**  | **10** | **12** | **10** |
+    *
+    * ---
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/break-inside
     */
@@ -926,7 +962,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var captionSide: js.UndefOr[CaptionSideProperty | js.Array[CaptionSideProperty]] = js.undefined
   /**
-    * The **`caret-color`** CSS property sets the color of the insertion caret — the visible indicator of the point at which the next character typed by the user will be inserted — within an element such as `<input>` or one with the `contenteditable` attribute set. The caret is typically a thin vertical line that flashes to help make it more noticeable. By default, it is black, but its color can be altered with this property.
+    * The **`caret-color`** CSS property sets the color of the insertion caret, the visible marker where the next character typed will be inserted. The caret appears in elements such as `<input>` or those with the `contenteditable` attribute. The caret is typically a thin vertical line that flashes to help make it more noticeable. By default, it is black, but its color can be altered with this property.
     *
     * **Initial value**: `auto`
     *
@@ -938,7 +974,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var caretColor: js.UndefOr[CaretColorProperty | js.Array[CaretColorProperty]] = js.undefined
   /**
-    * The **`clear`** CSS property specifies whether an element can be next to floating elements that precede it or must be moved down (cleared) below them. The `clear` property applies to both floating and non\-floating elements.
+    * The **`clear`** CSS property sets whether an element must be moved below (cleared) floating elements that precede it. The `clear` property applies to floating and non-floating elements.
     *
     * **Initial value**: `none`
     *
@@ -950,7 +986,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var clear: js.UndefOr[ClearProperty | js.Array[ClearProperty]] = js.undefined
   /**
-    * The `**clip-path**` CSS property creates a clipping region that defines what part of an element should be displayed. More specifically, those portions that are inside the region are shown, while those outside are hidden.
+    * The `**clip-path**` CSS property creates a clipping region that sets what part of an element should be shown. Parts that are inside the region are shown, while those outside are hidden.
     *
     * **Initial value**: `none`
     *
@@ -963,7 +999,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var clipPath: js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]] = js.undefined
   /**
-    * The **`color`** CSS property sets the foreground color value of an element's text content and text decorations. It also sets the `currentcolor` value, which may be used as an indirect value on _other_ properties, and is the default for other color properties, such as `border-color`.
+    * The **`color`** CSS property sets the foreground color value of an element's text and text decorations, and sets the `currentcolor` value. `currentcolor` may be used as an indirect value on _other_ properties and is the default for other color properties, such as `border-color`.
     *
     * **Initial value**: Varies from one browser to another
     *
@@ -975,7 +1011,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var color: js.UndefOr[ColorProperty | js.Array[ColorProperty]] = js.undefined
   /**
-    * The **`color-adjust`** CSS property gives the web author control over what if anything the user agent may do to optimize the appearance of the element on the output device. By default, the browser is allowed to make any adjustments to the element's appearance it determines to be necessary and prudent given the type and capabilities of the output device.
+    * The **`color-adjust`** CSS property sets what, if anything, the user agent may do to optimize the appearance of the element on the output device. By default, the browser is allowed to make any adjustments to the element's appearance it determines to be necessary and prudent given the type and capabilities of the output device.
     *
     * **Initial value**: `economy`
     *
@@ -1049,7 +1085,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var columnGap: js.UndefOr[ColumnGapProperty[TLength] | js.Array[ColumnGapProperty[TLength]]] = js.undefined
   /**
-    * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi\-column layout.
+    * The **`column-rule-color`** CSS property sets the color of the rule (line) drawn between columns in a multi-column layout.
     *
     * **Initial value**: `currentcolor`
     *
@@ -1062,7 +1098,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var columnRuleColor: js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]] = js.undefined
   /**
-    * The **`column-rule-style`** CSS property sets the style of the rule (line) drawn between columns in a multi\-column layout.
+    * The **`column-rule-style`** CSS property sets the style of the line drawn between columns in a multi-column layout.
     *
     * **Initial value**: `none`
     *
@@ -1074,7 +1110,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var columnRuleStyle: js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]] = js.undefined
   /**
-    * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi\-column layout.
+    * The **`column-rule-width`** CSS property sets the width of the rule (line) drawn between columns in a multi-column layout.
     *
     * **Initial value**: `medium`
     *
@@ -1099,7 +1135,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var columnSpan: js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]] = js.undefined
   /**
-    * The **`column-width`** CSS property specifies the ideal column width in a multi\-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value.  If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
+    * The **`column-width`** CSS property specifies the ideal column width in a multi-column layout. The container will have as many columns as can fit without any of them having a width less than the `column-width` value. If the width of the container is narrower than the specified value, the single column's width will be smaller than the declared column width.
     *
     * **Initial value**: `auto`
     *
@@ -1124,7 +1160,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var contain: js.UndefOr[ContainProperty | js.Array[ContainProperty]] = js.undefined
   /**
-    * The **`content`** CSS property is used to replace an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
+    * The **`content`** CSS property replaces an element with a generated value. Objects inserted using the `content` property are _anonymous replaced elements._
     *
     * **Initial value**: `normal`
     *
@@ -1160,7 +1196,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var counterReset: js.UndefOr[CounterResetProperty | js.Array[CounterResetProperty]] = js.undefined
   /**
-    * The **`cursor`** CSS property specifies which mouse cursor to display when the mouse pointer is over an element.
+    * The **`cursor`** CSS property sets mouse cursor to display when the mouse pointer is over an element.
     *
     * **Initial value**: `auto`
     *
@@ -1184,7 +1220,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var direction: js.UndefOr[DirectionProperty | js.Array[DirectionProperty]] = js.undefined
   /**
-    * The **`display`** CSS property defines the  _display type_ of an element, which consists of the two basic qualities of how an element generates boxes. These being the **outer display type** defining how the box participates in flow layout , and the **inner display type** defining how the children of this box are laid out.
+    * The **`display`** CSS property defines the _display type_ of an element, which consists of the two basic qualities of how an element generates boxes — the **outer display type** defining how the box participates in flow layout, and the **inner display type** defining how the children of the box are laid out.
     *
     * **Initial value**: `inline`
     *
@@ -1196,7 +1232,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var display: js.UndefOr[DisplayProperty | js.Array[DisplayProperty]] = js.undefined
   /**
-    * The **`empty-cells`** CSS property specifies how the user agent should render borders and backgrounds around `<table>` cells that have no visible content.
+    * The **`empty-cells`** CSS property sets whether borders and backgrounds appear around `<table>` cells that have no visible content.
     *
     * **Initial value**: `show`
     *
@@ -1208,7 +1244,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var emptyCells: js.UndefOr[EmptyCellsProperty | js.Array[EmptyCellsProperty]] = js.undefined
   /**
-    * The **`filter`** CSS property lets you apply graphical effects like blurring or color shifting to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
+    * The **`filter`** CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders.
     *
     * **Initial value**: `none`
     *
@@ -1221,7 +1257,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var filter: js.UndefOr[FilterProperty | js.Array[FilterProperty]] = js.undefined
   /**
-    * The **`flex-basis`** CSS property specifies the initial **main size** of a flex item. This property determines the size of the content\-box unless specified otherwise using `box-sizing`.
+    * The **`flex-basis`** CSS property sets the initial main size of a flex item. It sets the size of the content box unless otherwise set with `box-sizing`.
     *
     * **Initial value**: `auto`
     *
@@ -1234,7 +1270,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var flexBasis: js.UndefOr[FlexBasisProperty[TLength] | js.Array[FlexBasisProperty[TLength]]] = js.undefined
   /**
-    * The **`flex-direction`** CSS property specifies how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
+    * The **`flex-direction`** CSS property sets how flex items are placed in the flex container defining the main axis and the direction (normal or reversed).
     *
     * **Initial value**: `row`
     *
@@ -1247,7 +1283,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var flexDirection: js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]] = js.undefined
   /**
-    * The **`flex-grow`** CSS property specifies the flex grow factor of a flex item. It specifies how much of the available space in the flex container should be assigned to that item. If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
+    * The **`flex-grow`** CSS property sets how much of the available space in the flex container should be assigned to that item (the flex grow factor). If all sibling items have the same flex grow factor, then all items will receive the same share of available space, otherwise it is distributed according to the ratio defined by the different flex grow factors.
     *
     * **Initial value**: `0`
     *
@@ -1260,7 +1296,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var flexGrow: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The **`flex-shrink`** CSS property specifies the flex shrink factor of a flex item. Flex items will shrink to fill the container according to the `flex-shrink` number, when the default size of flex items is larger than the flex container.
+    * The **`flex-shrink`** CSS property sets the flex shrink factor of a flex item. If the size of flex items is larger than the flex container, items shrink to fit according to `flex-shrink`.
     *
     * **Initial value**: `1`
     *
@@ -1273,7 +1309,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var flexShrink: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The CSS **`flex-wrap`** property specifies whether flex items are forced into a single line or can be wrapped onto multiple lines. If wrapping is allowed, this property also enables you to control the direction in which lines are stacked.
+    * The **`flex-wrap`** CSS property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
     *
     * **Initial value**: `nowrap`
     *
@@ -1286,7 +1322,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var flexWrap: js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]] = js.undefined
   /**
-    * The **`float`** CSS property specifies that an element should be placed along the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the web page, though still remaining a part of the flow (in contrast to absolute positioning).
+    * The **`float`** CSS property places an element on the left or right side of its container, allowing text and inline elements to wrap around it. The element is removed from the normal flow of the page, though still remaining a part of the flow (in contrast to absolute positioning).
     *
     * **Initial value**: `none`
     *
@@ -1310,7 +1346,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontFamily: js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]] = js.undefined
   /**
-    * The **`font-feature-settings`** CSS property gives you control over advanced typographic features in OpenType fonts.
+    * The **`font-feature-settings`** CSS property controls advanced typographic features in OpenType fonts.
     *
     * **Initial value**: `normal`
     *
@@ -1323,7 +1359,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontFeatureSettings: js.UndefOr[FontFeatureSettingsProperty | js.Array[FontFeatureSettingsProperty]] = js.undefined
   /**
-    * The **`font-kerning`** CSS property controls the usage of the kerning information stored in a font.
+    * The **`font-kerning`** CSS property sets the use of the kerning information stored in a font.
     *
     * **Initial value**: `auto`
     *
@@ -1335,7 +1371,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontKerning: js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]] = js.undefined
   /**
-    * The **`font-language-override`** CSS property controls the usage of language\-specific glyphs in a typeface.
+    * The **`font-language-override`** CSS property controls the use of language-specific glyphs in a typeface.
     *
     * **Initial value**: `normal`
     *
@@ -1348,7 +1384,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontLanguageOverride: js.UndefOr[FontLanguageOverrideProperty | js.Array[FontLanguageOverrideProperty]] = js.undefined
   /**
-    * The **`font-optical-sizing`** CSS property allows developers to control whether browsers render text with slightly differing visual representations to optimize viewing at different sizes, or not. This only works for fonts that have an optical size variation axis.
+    * The **`font-optical-sizing`** CSS property sets whether text rendering is optimized for viewing at different sizes. This only works for fonts that have an optical size variation axis.
     *
     * **Initial value**: `auto`
     *
@@ -1360,7 +1396,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontOpticalSizing: js.UndefOr[FontOpticalSizingProperty | js.Array[FontOpticalSizingProperty]] = js.undefined
   /**
-    * The **`font-size`** CSS property specifies the size of the font. Setting this property may change the size of other items, too, since it is used to compute the value of `em`, `ex`, and various other relative `<length>` units.
+    * The **`font-size`** CSS property sets the size of the font. This property is also used to compute the size of `em`, `ex`, and other relative `<length>` units.
     *
     * **Initial value**: `medium`
     *
@@ -1372,7 +1408,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontSize: js.UndefOr[FontSizeProperty[TLength] | js.Array[FontSizeProperty[TLength]]] = js.undefined
   /**
-    * The **`font-size-adjust`** CSS property specifies that the font size should be chosen based on the height of lowercase letters rather than the height of capital letters. This is useful since the legibility of fonts, especially at small sizes, is determined more by the size of lowercase letters than by the size of capital letters.
+    * The **`font-size-adjust`** CSS property sets how the font size should be chosen based on the height of lowercase rather than capital letters.
     *
     * **Initial value**: `none`
     *
@@ -1396,7 +1432,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontStretch: js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]] = js.undefined
   /**
-    * The **`font-style`** CSS property specifies whether a font should be styled with a normal, italic, or oblique face from its `font-family`.
+    * The **`font-style`** CSS property sets whether a font should be styled with a normal, italic, or oblique face from its `font-family`.
     *
     * **Initial value**: `normal`
     *
@@ -1420,7 +1456,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontSynthesis: js.UndefOr[FontSynthesisProperty | js.Array[FontSynthesisProperty]] = js.undefined
   /**
-    * The **font\-variant** CSS property is a shorthand for the longhand properties `font-variant-caps`, `font-variant-numeric`, `font-variant-alternates`, `font-variant-ligatures`, and `font-variant-east-asian`. You can also set the CSS Level 2 (Revision 1) values of `font-variant`, (that is, `normal` or `small-caps`), by using the `font` shorthand.
+    * The **font-variant** CSS property is a shorthand for the longhand properties `font-variant-caps`, `font-variant-numeric`, `font-variant-alternates`, `font-variant-ligatures`, and `font-variant-east-asian`. You can also set the CSS Level 2 (Revision 1) values of `font-variant`, (that is, `normal` or `small-caps`), by using the `font` shorthand.
     *
     * **Initial value**: `normal`
     *
@@ -1432,7 +1468,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontVariant: js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]] = js.undefined
   /**
-    * The **`font-variant-caps`** CSS property controls the usage of alternate glyphs for capital letters.
+    * The **`font-variant-caps`** CSS property controls the use of alternate glyphs for capital letters.
     *
     * **Initial value**: `normal`
     *
@@ -1444,7 +1480,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontVariantCaps: js.UndefOr[FontVariantCapsProperty | js.Array[FontVariantCapsProperty]] = js.undefined
   /**
-    * The **`font-variant-east-asian`** CSS property controls the usage of alternate glyphs for East Asian scripts, like Japanese and Chinese.
+    * The **`font-variant-east-asian`** CSS property controls the use of alternate glyphs for East Asian scripts, like Japanese and Chinese.
     *
     * **Initial value**: `normal`
     *
@@ -1481,7 +1517,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontVariantNumeric: js.UndefOr[FontVariantNumericProperty | js.Array[FontVariantNumericProperty]] = js.undefined
   /**
-    * The **`font-variant-position`** CSS property controls the usage of alternate, smaller glyphs that are positioned as superscript or subscript relative to the baseline of the font (which remains unchanged). These glyphs are likely to be used in `<sub>` and `<sup>` elements.
+    * The **`font-variant-position`** CSS property controls the use of alternate, smaller glyphs that are positioned as superscript or subscript.
     *
     * **Initial value**: `normal`
     *
@@ -1493,7 +1529,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontVariantPosition: js.UndefOr[FontVariantPositionProperty | js.Array[FontVariantPositionProperty]] = js.undefined
   /**
-    * The **`font-variation-settings`** CSS property provides low\-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
+    * The **`font-variation-settings`** CSS property provides low-level control over variable font characteristics, by specifying the four letter axis names of the characteristics you want to vary, along with their values.
     *
     * **Initial value**: `normal`
     *
@@ -1517,7 +1553,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var fontWeight: js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]] = js.undefined
   /**
-    * The **`grid-auto-columns`** CSS property specifies the size of an implicitly\-created grid column track.
+    * The **`grid-auto-columns`** CSS property specifies the size of an implicitly-created grid column track.
     *
     * **Initial value**: `auto`
     *
@@ -1530,7 +1566,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridAutoColumns: js.UndefOr[GridAutoColumnsProperty[TLength] | js.Array[GridAutoColumnsProperty[TLength]]] = js.undefined
   /**
-    * The **`grid-auto-flow`** CSS property controls how the auto\-placement algorithm works, specifying exactly how auto\-placed items get flowed into the grid.
+    * The **`grid-auto-flow`** CSS property controls how the auto-placement algorithm works, specifying exactly how auto-placed items get flowed into the grid.
     *
     * **Initial value**: `row`
     *
@@ -1542,7 +1578,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridAutoFlow: js.UndefOr[GridAutoFlowProperty | js.Array[GridAutoFlowProperty]] = js.undefined
   /**
-    * The **`grid-auto-rows`** CSS property specifies the size of an implicitly\-created grid row track.
+    * The **`grid-auto-rows`** CSS property specifies the size of an implicitly-created grid row track.
     *
     * **Initial value**: `auto`
     *
@@ -1555,7 +1591,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridAutoRows: js.UndefOr[GridAutoRowsProperty[TLength] | js.Array[GridAutoRowsProperty[TLength]]] = js.undefined
   /**
-    * The **`grid-column-end`** CSS property specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block\-end edge of its grid area.
+    * The **`grid-column-end`** CSS property specifies a grid item’s end position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the block-end edge of its grid area.
     *
     * **Initial value**: `auto`
     *
@@ -1567,7 +1603,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridColumnEnd: js.UndefOr[GridColumnEndProperty | js.Array[GridColumnEndProperty]] = js.undefined
   /**
-    * The **`grid-column-start`** CSS property specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement. This start position defines the block\-start edge of the grid area.
+    * The **`grid-column-start`** CSS property specifies a grid item’s start position within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement. This start position defines the block-start edge of the grid area.
     *
     * **Initial value**: `auto`
     *
@@ -1579,7 +1615,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridColumnStart: js.UndefOr[GridColumnStartProperty | js.Array[GridColumnStartProperty]] = js.undefined
   /**
-    * The **`grid-row-end`** CSS property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline\-end edge of its grid area.
+    * The **`grid-row-end`** CSS property specifies a grid item’s end position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-end edge of its grid area.
     *
     * **Initial value**: `auto`
     *
@@ -1591,7 +1627,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var gridRowEnd: js.UndefOr[GridRowEndProperty | js.Array[GridRowEndProperty]] = js.undefined
   /**
-    * The **`grid-row-start`** CSS property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline\-start edge of its grid area.
+    * The **`grid-row-start`** CSS property specifies a grid item’s start position within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start edge of its grid area.
     *
     * **Initial value**: `auto`
     *
@@ -1665,7 +1701,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var height: js.UndefOr[HeightProperty[TLength] | js.Array[HeightProperty[TLength]]] = js.undefined
   /**
-    * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually\-specified points within the text, or let the browser automatically insert hyphens where appropriate.
+    * The **`hyphens`** CSS property specifies how words should be hyphenated when text wraps across multiple lines. You can prevent hyphenation entirely, use hyphenation in manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
     *
     * **Initial value**: `manual`
     *
@@ -1678,7 +1714,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var hyphens: js.UndefOr[HyphensProperty | js.Array[HyphensProperty]] = js.undefined
   /**
-    * The **`image-orientation`** CSS property specifies a layout\-independent correction to the orientation of an image. It should _not_ be used for any other orientation adjustments; instead, the `transform` property should be used with the `rotate` `<transform-function>`.
+    * The **`image-orientation`** CSS property specifies a layout-independent correction to the orientation of an image. It should _not_ be used for any other orientation adjustments; instead, the `transform` property should be used with the `rotate` `<transform-function>`.
     *
     * **Initial value**: `0deg`
     *
@@ -1690,7 +1726,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var imageOrientation: js.UndefOr[ImageOrientationProperty | js.Array[ImageOrientationProperty]] = js.undefined
   /**
-    * The **`image-rendering`** CSS property indicates the algorithm to use when scaling images. When applied to an element, the property applies to the element itself, to any images supplied in its other properties, and to its descendant elements.
+    * The **`image-rendering`** CSS property sets an image scaling algorithm. The property applies to an element itself, to any images set in its other properties, and to its descendants.
     *
     * **Initial value**: `auto`
     *
@@ -1704,7 +1740,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
   /** **Initial value**: `1dppx` */
   var imageResolution: js.UndefOr[ImageResolutionProperty | js.Array[ImageResolutionProperty]] = js.undefined
   /**
-    * The `initial-letter` CSS property specifies styling for dropped, raised, and sunken initial letters.
+    * The `initial-letter` CSS property sets styling for dropped, raised, and sunken initial letters.
     *
     * **Initial value**: `normal`
     *
@@ -1728,7 +1764,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var inlineSize: js.UndefOr[InlineSizeProperty[TLength] | js.Array[InlineSizeProperty[TLength]]] = js.undefined
   /**
-    * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
     *
@@ -1740,7 +1776,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var insetBlockEnd: js.UndefOr[InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]]] = js.undefined
   /**
-    * The **`inset-block-start`** CSS property defines the logical block start offset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`inset-block-start`** CSS property defines the logical block start offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
     *
@@ -1752,7 +1788,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var insetBlockStart: js.UndefOr[InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]]] = js.undefined
   /**
-    * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
     *
@@ -1764,7 +1800,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var insetInlineEnd: js.UndefOr[InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]]] = js.undefined
   /**
-    * The **`inset-inline-start`** CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
+    * The **`inset-inline-start`** CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
     *
     * **Initial value**: `auto`
     *
@@ -1788,7 +1824,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var isolation: js.UndefOr[IsolationProperty | js.Array[IsolationProperty]] = js.undefined
   /**
-    * The CSS **`justify-content`** property defines how the browser distributes space between and around content items along the main\-axis of their container.
+    * The CSS **`justify-content`** property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.
     *
     * **Initial value**: `normal`
     *
@@ -1841,7 +1877,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var justifyItems: js.UndefOr[JustifyItemsProperty | js.Array[JustifyItemsProperty]] = js.undefined
   /**
-    * The CSS **`justify-self`** property defines the way of justifying a box inside its alignment container along the appropriate axis.
+    * The CSS **`justify-self`** property set the way a box is justified inside its alignment container along the appropriate axis.
     *
     * **Initial value**: `auto`
     *
@@ -1867,7 +1903,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var justifySelf: js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]] = js.undefined
   /**
-    * The **`left`** CSS property participates in specifying the horizontal position of a _positioned element_. It has no effect on non\-positioned elements.
+    * The **`left`** CSS property participates in specifying the horizontal position of a _positioned element_. It has no effect on non-positioned elements.
     *
     * **Initial value**: `auto`
     *
@@ -1879,7 +1915,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var left: js.UndefOr[LeftProperty[TLength] | js.Array[LeftProperty[TLength]]] = js.undefined
   /**
-    * The **`letter-spacing`** CSS property specifies the spacing behavior between text characters.
+    * The **`letter-spacing`** CSS property sets the spacing behavior between text characters.
     *
     * **Initial value**: `normal`
     *
@@ -1891,7 +1927,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var letterSpacing: js.UndefOr[LetterSpacingProperty[TLength] | js.Array[LetterSpacingProperty[TLength]]] = js.undefined
   /**
-    * The **`line-break`** CSS property is used to specify how (or if) to break lines when working with punctuation and symbols. This only affects text in Chinese, Japanese, or Korean (CJK).
+    * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
     *
     * **Initial value**: `auto`
     *
@@ -1904,7 +1940,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var lineBreak: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.undefined
   /**
-    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block\-level elements, it specifies the minimum height of line boxes within the element. On non\-replaced inline elements, it specifies the height that is used to calculate line box height.
+    * The **`line-height`** CSS property sets the amount of space used for lines, such as in text. On block-level elements, it specifies the minimum height of line boxes within the element. On non-replaced inline elements, it specifies the height that is used to calculate line box height.
     *
     * **Initial value**: `normal`
     *
@@ -1916,7 +1952,19 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var lineHeight: js.UndefOr[LineHeightProperty[TLength] | js.Array[LineHeightProperty[TLength]]] = js.undefined
   /**
-    * The **`list-style-image`** CSS property specifies an image to be used as the list item marker. It is often more convenient to use the shorthand `list-style`.
+    * The **`line-height-step`** CSS property sets the step unit for line box heights. When the property is set, line box heights are rounded up to the closest multiple of the unit.
+    *
+    * **Initial value**: `0`
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * |  n/a   |   n/a   |  n/a   | n/a  | n/a |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/line-height-step
+    */
+  var lineHeightStep: js.UndefOr[LineHeightStepProperty[TLength] | js.Array[LineHeightStepProperty[TLength]]] = js.undefined
+  /**
+    * The **`list-style-image`** CSS property sets an image to be used as the list item marker.
     *
     * **Initial value**: `none`
     *
@@ -1928,7 +1976,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var listStyleImage: js.UndefOr[ListStyleImageProperty | js.Array[ListStyleImageProperty]] = js.undefined
   /**
-    * The **`list-style-position`** CSS property specifies the position of the `::marker` relative to a list item.
+    * The **`list-style-position`** CSS property sets the position of the `::marker` relative to a list item.
     *
     * **Initial value**: `outside`
     *
@@ -1940,7 +1988,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var listStylePosition: js.UndefOr[ListStylePositionProperty | js.Array[ListStylePositionProperty]] = js.undefined
   /**
-    * The **`list-style-type`** CSS property specifies the appearance of a list item element.
+    * The **`list-style-type`** CSS property sets the marker (such as a disc, character, or custom counter style) of a list item element.
     *
     * **Initial value**: `disc`
     *
@@ -1976,7 +2024,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var marginBlockStart: js.UndefOr[MarginBlockStartProperty[TLength] | js.Array[MarginBlockStartProperty[TLength]]] = js.undefined
   /**
-    * The **`margin-bottom`** CSS property sets the margin area on the bottom of an element. A positive value will place it farther than normal from its neighbors, while a negative value will place it closer.
+    * The **`margin-bottom`** CSS property sets the margin area on the bottom of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
     *
     * **Initial value**: `0`
     *
@@ -2016,7 +2064,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     MarginInlineStartProperty[TLength] | js.Array[MarginInlineStartProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`margin-left`** CSS property sets the margin area on the left side of an element. A positive value will place it farther than normal from its neighbors, while a negative value will place it closer.
+    * The **`margin-left`** CSS property sets the margin area on the left side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
     *
     * **Initial value**: `0`
     *
@@ -2028,7 +2076,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var marginLeft: js.UndefOr[MarginLeftProperty[TLength] | js.Array[MarginLeftProperty[TLength]]] = js.undefined
   /**
-    * The **`margin-right`** CSS property sets the margin area on the right side of an element. A positive value will place it farther than normal from its neighbors, while a negative value will place it closer.
+    * The **`margin-right`** CSS property sets the margin area on the right side of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
     *
     * **Initial value**: `0`
     *
@@ -2040,7 +2088,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var marginRight: js.UndefOr[MarginRightProperty[TLength] | js.Array[MarginRightProperty[TLength]]] = js.undefined
   /**
-    * The **`margin-top`** CSS property sets the margin area on the top of an element. A positive value will place it farther than normal from its neighbors, while a negative value will place it closer.
+    * The **`margin-top`** CSS property sets the margin area on the top of an element. A positive value places it farther from its neighbors, while a negative value places it closer.
     *
     * **Initial value**: `0`
     *
@@ -2064,25 +2112,25 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskBorderOutset: js.UndefOr[MaskBorderOutsetProperty[TLength] | js.Array[MaskBorderOutsetProperty[TLength]]] = js.undefined
   /**
-    * The **`mask-border-repeat`** CSS property defines how the edge regions of a source image are adjusted to fit the dimensions of an element's mask border.
+    * The **`mask-border-repeat`** CSS property sets how the edge regions of a source image are adjusted to fit the dimensions of an element's mask border.
     *
     * **Initial value**: `stretch`
     */
   var maskBorderRepeat: js.UndefOr[MaskBorderRepeatProperty | js.Array[MaskBorderRepeatProperty]] = js.undefined
   /**
-    * The **`mask-border-slice`** CSS property divides the image specified by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
+    * The **`mask-border-slice`** CSS property divides the image set by `mask-border-source` into regions. These regions are used to form the components of an element's mask border.
     *
     * **Initial value**: `0`
     */
   var maskBorderSlice: js.UndefOr[MaskBorderSliceProperty | js.Array[MaskBorderSliceProperty]] = js.undefined
   /**
-    * The **`mask-border-source`** CSS property specifies the source image used to create an element's mask border.
+    * The **`mask-border-source`** CSS property sets the source image used to create an element's mask border.
     *
     * **Initial value**: `none`
     */
   var maskBorderSource: js.UndefOr[MaskBorderSourceProperty | js.Array[MaskBorderSourceProperty]] = js.undefined
   /**
-    * The **`mask-border-width`** CSS property specifies the width of an element's mask border.
+    * The **`mask-border-width`** CSS property sets the width of an element's mask border.
     *
     * **Initial value**: `auto`
     */
@@ -2124,7 +2172,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskImage: js.UndefOr[MaskImageProperty | js.Array[MaskImageProperty]] = js.undefined
   /**
-    * The **`mask-mode`** CSS property determines whether the mask reference defined by `mask-image` is treated as a luminance or alpha mask.
+    * The **`mask-mode`** CSS property sets whether the mask reference defined by `mask-image` is treated as a luminance or alpha mask.
     *
     * **Initial value**: `match-source`
     *
@@ -2136,7 +2184,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskMode: js.UndefOr[MaskModeProperty | js.Array[MaskModeProperty]] = js.undefined
   /**
-    * The **`mask-origin`** CSS property determines the origin of a mask.
+    * The **`mask-origin`** CSS property sets the origin of a mask.
     *
     * **Initial value**: `border-box`
     *
@@ -2148,7 +2196,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskOrigin: js.UndefOr[MaskOriginProperty | js.Array[MaskOriginProperty]] = js.undefined
   /**
-    * The **`mask-position`** CSS property sets the initial position, relative to the mask position layer defined by `mask-origin`, for each defined mask image.
+    * The **`mask-position`** CSS property sets the initial position, relative to the mask position layer set by `mask-origin`, for each defined mask image.
     *
     * **Initial value**: `center`
     *
@@ -2160,7 +2208,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskPosition: js.UndefOr[MaskPositionProperty[TLength] | js.Array[MaskPositionProperty[TLength]]] = js.undefined
   /**
-    * The **`mask-repeat`** CSS property defines how mask images are repeated. A mask image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
+    * The **`mask-repeat`** CSS property sets how mask images are repeated. A mask image can be repeated along the horizontal axis, the vertical axis, both axes, or not repeated at all.
     *
     * **Initial value**: `no-repeat`
     *
@@ -2184,7 +2232,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var maskSize: js.UndefOr[MaskSizeProperty[TLength] | js.Array[MaskSizeProperty[TLength]]] = js.undefined
   /**
-    * The **`mask-type`** CSS property determines whether the mask defined by an SVG `<mask>` element is used as a _luminance_ or an _alpha_ mask. It applies to the `<mask>` element itself.
+    * The **`mask-type`** CSS property sets whether an SVG `<mask>` element is used as a _luminance_ or an _alpha_ mask. It applies to the `<mask>` element itself.
     *
     * **Initial value**: `luminance`
     *
@@ -2294,7 +2342,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var minWidth: js.UndefOr[MinWidthProperty[TLength] | js.Array[MinWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`mix-blend-mode`** CSS property describes how an element's content should blend with the content of the element's direct parent and the element's background.
+    * The **`mix-blend-mode`** CSS property sets how an element's content should blend with the content of the element's parent and the element's background.
     *
     * **Initial value**: `normal`
     *
@@ -2305,14 +2353,47 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     * @see https://developer.mozilla.org/docs/Web/CSS/mix-blend-mode
     */
   var mixBlendMode: js.UndefOr[MixBlendModeProperty | js.Array[MixBlendModeProperty]] = js.undefined
-  /** **Initial value**: `<code>0</code>` */
-  var motionOffset: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
-  /** **Initial value**: `<code>none</code>` */
-  var motionPath: js.UndefOr[MotionPathProperty | js.Array[MotionPathProperty]] = js.undefined
-  /** **Initial value**: `<code>auto</code>` */
-  var motionRotation: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`object-fit`** CSS property specifies how the contents of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
+    * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
+    *
+    * **Initial value**: `0`
+    *
+    * |         Chrome         | Firefox | Safari | Edge | IE  |
+    * | :--------------------: | :-----: | :----: | :--: | :-: |
+    * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-distance)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
+    */
+  var motionDistance: js.UndefOr[OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]]] = js.undefined
+  /**
+    * The **`offset-path`** CSS property specifies a motion path for an element to follow and defines the element's positioning within the parent container or SVG coordinate system.
+    *
+    * **Initial value**: `none`
+    *
+    * |       Chrome       | Firefox | Safari | Edge | IE  |
+    * | :----------------: | :-----: | :----: | :--: | :-: |
+    * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-path)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
+    */
+  var motionPath: js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]] = js.undefined
+  /**
+    * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
+    *
+    * **Initial value**: `auto`
+    *
+    * |         Chrome         | Firefox | Safari | Edge | IE  |
+    * | :--------------------: | :-----: | :----: | :--: | :-: |
+    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-rotation)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
+    */
+  var motionRotation: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
+  /**
+    * The **`object-fit`** CSS property sets how the content of a replaced element, such as an `<img>` or `<video>`, should be resized to fit its container.
     *
     * **Initial value**: `fill`
     *
@@ -2336,9 +2417,63 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var objectPosition: js.UndefOr[ObjectPositionProperty[TLength] | js.Array[ObjectPositionProperty[TLength]]] = js.undefined
   /** **Initial value**: `auto` */
+  var offsetAnchor: js.UndefOr[OffsetAnchorProperty[TLength] | js.Array[OffsetAnchorProperty[TLength]]] = js.undefined
+  /**
+    * The **`offset-distance`** CSS property specifies a position along an `offset-path`.
+    *
+    * **Initial value**: `0`
+    *
+    * |         Chrome         | Firefox | Safari | Edge | IE  |
+    * | :--------------------: | :-----: | :----: | :--: | :-: |
+    * |         **55**         |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-distance)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-distance
+    */
+  var offsetDistance: js.UndefOr[OffsetDistanceProperty[TLength] | js.Array[OffsetDistanceProperty[TLength]]] = js.undefined
+  /**
+    * The **`offset-path`** CSS property specifies a motion path for an element to follow and defines the element's positioning within the parent container or SVG coordinate system.
+    *
+    * **Initial value**: `none`
+    *
+    * |       Chrome       | Firefox | Safari | Edge | IE  |
+    * | :----------------: | :-----: | :----: | :--: | :-: |
+    * |       **55**       |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-path)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-path
+    */
+  var offsetPath: js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]] = js.undefined
+  /** **Initial value**: `auto` */
   var offsetPosition: js.UndefOr[OffsetPositionProperty[TLength] | js.Array[OffsetPositionProperty[TLength]]] = js.undefined
   /**
-    * The **`opacity`** CSS property specifies the level of transparency of an element, that is, the degree to which the content behind the element is visible.
+    * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
+    *
+    * **Initial value**: `auto`
+    *
+    * |         Chrome         | Firefox | Safari | Edge | IE  |
+    * | :--------------------: | :-----: | :----: | :--: | :-: |
+    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-rotation)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
+    */
+  var offsetRotate: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
+  /**
+    * The **`offset-rotate`** CSS property defines the direction of the element while positioning along the offset path.
+    *
+    * **Initial value**: `auto`
+    *
+    * |         Chrome         | Firefox | Safari | Edge | IE  |
+    * | :--------------------: | :-----: | :----: | :--: | :-: |
+    * |         **56**         |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion-rotation)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset-rotate
+    */
+  var offsetRotation: js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]] = js.undefined
+  /**
+    * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
     *
     * **Initial value**: `1.0`
     *
@@ -2350,7 +2485,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var opacity: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The **`order`** CSS property specifies the order used to lay out a flex or grid item in its flex or grid container. Items within the same container are laid out in ascending order according to their `order` values. Elements with the same `order` value are laid out in the order in which they appear in the source code.
+    * The **`order`** CSS property sets the order to lay out an item in a flex or grid container. Items in a container are sorted by ascending `order` value and then by their source code order.
     *
     * **Initial value**: `0`
     *
@@ -2363,7 +2498,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var order: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The **`orphans`** CSS property specifies the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column. This property is normally used to control how breaks occur.
+    * The **`orphans`** CSS property sets the minimum number of lines in a block container that must be shown at the _bottom_ of a page, region, or column.
     *
     * **Initial value**: `2`
     *
@@ -2387,7 +2522,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var outlineColor: js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]] = js.undefined
   /**
-    * The **`outline-offset`** CSS property sets the amount of space between an `outline` and the edge or border of an element.
+    * The **`outline-offset`** CSS property sets the amount of space between an outline and the edge or border of an element.
     *
     * **Initial value**: `0`
     *
@@ -2411,7 +2546,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var outlineStyle: js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]] = js.undefined
   /**
-    * The **`outline-width`** CSS property sets the width (thickness) of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
+    * The **`outline-width`** CSS property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
     *
     * **Initial value**: `medium`
     *
@@ -2423,7 +2558,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var outlineWidth: js.UndefOr[OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`overflow`** CSS property specifies what to do when an element's content is too large to fit in its block formatting context. It is a shorthand for the `overflow-x` and `overflow-y` properties.
+    * The **`overflow`** CSS property sets what to do when an element's content is too big to fit in its block formatting context. It is a shorthand for `overflow-x` and `overflow-y`.
     *
     * **Initial value**: `visible`
     *
@@ -2461,20 +2596,20 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
   /** **Initial value**: `auto` */
   var overflowInline: js.UndefOr[OverflowInlineProperty | js.Array[OverflowInlineProperty]] = js.undefined
   /**
-    * The `**overflow-wrap**` CSS property specifies whether or not the browser should insert line breaks within words to prevent text from overflowing its content box.
+    * The `**overflow-wrap**` CSS property sets whether the browser should insert line breaks within words to prevent text from overflowing its content box.
     *
     * **Initial value**: `normal`
     *
-    * |       Chrome        |      Firefox      |       Safari        |       Edge       |          IE           |
-    * | :-----------------: | :---------------: | :-----------------: | :--------------: | :-------------------: |
-    * | **1** _(word-wrap)_ |      **49**       | **1** _(word-wrap)_ |      **18**      | **5.5** _(word-wrap)_ |
-    * |                     | 3.5 _(word-wrap)_ |                     | 12 _(word-wrap)_ |                       |
+    * |     Chrome      |      Firefox      |     Safari      |       Edge       |          IE           |
+    * | :-------------: | :---------------: | :-------------: | :--------------: | :-------------------: |
+    * |     **23**      |      **49**       |     **6.1**     |      **18**      | **5.5** _(word-wrap)_ |
+    * | 1 _(word-wrap)_ | 3.5 _(word-wrap)_ | 1 _(word-wrap)_ | 12 _(word-wrap)_ |                       |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/overflow-wrap
     */
   var overflowWrap: js.UndefOr[OverflowWrapProperty | js.Array[OverflowWrapProperty]] = js.undefined
   /**
-    * The **`overflow-x`** CSS property specifies whether to clip content, render a scroll bar, or display overflow content of a block\-level element, when it overflows at the left and right edges.
+    * The **`overflow-x`** CSS property sets what shows when content overflows a block-level element's left and right edges. This may be nothing, a scroll bar, or the overflow content.
     *
     * **Initial value**: `visible`
     *
@@ -2486,7 +2621,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var overflowX: js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]] = js.undefined
   /**
-    * The **`overflow-y`** CSS property specifies whether to clip content, render a scroll bar, or display overflow content of a block\-level element, when it overflows at the top and bottom edges.
+    * The **`overflow-y`** CSS property sets what shows when content overflows a block-level element's top and bottom edges. This may be nothing, a scroll bar, or the overflow content.
     *
     * **Initial value**: `visible`
     *
@@ -2498,7 +2633,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var overflowY: js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]] = js.undefined
   /**
-    * The **`overscroll-behavior`** CSS property is shorthand for the `overscroll-behavior-x` and `overscroll-behavior-y` properties, which allow you to control the browser's scroll overflow behavior — what happens when the boundary of a scrolling area is reached.
+    * The **`overscroll-behavior`** CSS property sets what a browser does when reaching the boundary of a scrolling area. It's a shorthand for `overscroll-behavior-x` and `overscroll-behavior-y`.
     *
     * **Initial value**: `auto`
     *
@@ -2510,7 +2645,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var overscrollBehavior: js.UndefOr[OverscrollBehaviorProperty | js.Array[OverscrollBehaviorProperty]] = js.undefined
   /**
-    * The **`overscroll-behavior-x`** CSS property is allows you to control the browser's scroll overflow behavior — what happens when the boundary of a scrolling area is reached — in the x axis direction.
+    * The **`overscroll-behavior-x`** CSS property sets the browser's behavior when the horizontal boundary of a scrolling area is reached.
     *
     * **Initial value**: `auto`
     *
@@ -2522,7 +2657,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var overscrollBehaviorX: js.UndefOr[OverscrollBehaviorXProperty | js.Array[OverscrollBehaviorXProperty]] = js.undefined
   /**
-    * The **`overscroll-behavior-y`** CSS property is allows you to control the browser's scroll overflow behavior — what happens when the boundary of a scrolling area is reached — in the y axis direction.
+    * The **`overscroll-behavior-y`** CSS property sets the browser's behavior when the vertical boundary of a scrolling area is reached.
     *
     * **Initial value**: `auto`
     *
@@ -2560,7 +2695,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     PaddingBlockStartProperty[TLength] | js.Array[PaddingBlockStartProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`padding-bottom`** CSS property sets the height of the padding area on the bottom of an element.
+    * The **`padding-bottom`** CSS property sets the height of the padding area on the bottom of an element.
     *
     * **Initial value**: `0`
     *
@@ -2624,7 +2759,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var paddingRight: js.UndefOr[PaddingRightProperty[TLength] | js.Array[PaddingRightProperty[TLength]]] = js.undefined
   /**
-    * The **`padding-top`** CSS property sets the height of the padding area on the top of an element.
+    * The **`padding-top`** padding area on the top of an element.
     *
     * **Initial value**: `0`
     *
@@ -2684,7 +2819,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var paintOrder: js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]] = js.undefined
   /**
-    * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D\-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D\-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
+    * The **`perspective`** CSS property determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective. Each 3D element with z>0 becomes larger; each 3D-element with z<0 becomes smaller. The strength of the effect is determined by the value of this property.
     *
     * **Initial value**: `none`
     *
@@ -2712,7 +2847,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     PerspectiveOriginProperty[TLength] | js.Array[PerspectiveOriginProperty[TLength]]
   ] = js.undefined
   /**
-    * The `**place-content**` CSS shorthand property sets both the `align-content` and `justify-content` properties.
+    * The `**place-content**` CSS property is a shorthand for `align-content` and `justify-content`. It can be used in any layout method which utilizes both of these alignment values.
     *
     * **Initial value**: `normal`
     *
@@ -2746,7 +2881,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var placeContent: js.UndefOr[PlaceContentProperty | js.Array[PlaceContentProperty]] = js.undefined
   /**
-    * The **`pointer-events`** CSS property specifies under what circumstances (if any) a particular graphic element can become the target of mouse events.
+    * The **`pointer-events`** CSS property sets under what circumstances (if any) a particular graphic element can become the target of mouse events.
     *
     * **Initial value**: `auto`
     *
@@ -2758,7 +2893,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var pointerEvents: js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]] = js.undefined
   /**
-    * The **`position`** CSS property specifies how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
+    * The **`position`** CSS property sets how an element is positioned in a document. The `top`, `right`, `bottom`, and `left` properties determine the final location of positioned elements.
     *
     * **Initial value**: `static`
     *
@@ -2770,7 +2905,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var position: js.UndefOr[PositionProperty | js.Array[PositionProperty]] = js.undefined
   /**
-    * The **`quotes`** CSS property indicates how user agents should render quotation marks.
+    * The **`quotes`** CSS property sets how quotation marks appear.
     *
     * **Initial value**: depends on user agent
     *
@@ -2782,7 +2917,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var quotes: js.UndefOr[QuotesProperty | js.Array[QuotesProperty]] = js.undefined
   /**
-    * The **`resize`** CSS property sets whether an element is resizable, and if so, in which direction(s).
+    * The **`resize`** CSS property sets whether an element is resizable, and if so, in which directions.
     *
     * **Initial value**: `none`
     *
@@ -2794,7 +2929,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var resize: js.UndefOr[ResizeProperty | js.Array[ResizeProperty]] = js.undefined
   /**
-    * The **`right`** CSS property participates in specifying the horizontal position of a _positioned element_. It has no effect on non\-positioned elements.
+    * The **`right`** CSS property participates in specifying the horizontal position of a _positioned element_. It has no effect on non-positioned elements.
     *
     * **Initial value**: `auto`
     *
@@ -2818,7 +2953,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var rotate: js.UndefOr[RotateProperty | js.Array[RotateProperty]] = js.undefined
   /**
-    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's rows.
+    * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
     *
     * **Initial value**: `normal`
     *
@@ -2883,19 +3018,19 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var scale: js.UndefOr[ScaleProperty | js.Array[ScaleProperty]] = js.undefined
   /**
-    * The **`scroll-behavior`** CSS property specifies the scrolling behavior for a scrolling box when scrolling is triggered by one of the navigation or CSSOM scrolling APIs.
+    * The **`scroll-behavior`** CSS property sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.
     *
     * **Initial value**: `auto`
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
-    * |  n/a   | **36**  |   No   |  No  | No  |
+    * | **61** | **36**  |   No   |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scroll-behavior
     */
   var scrollBehavior: js.UndefOr[ScrollBehaviorProperty | js.Array[ScrollBehaviorProperty]] = js.undefined
   /**
-    * The `scroll-margin` property is a shorthand property which sets all of the scroll-margin longhands, assigning values much like the margin property does for the margin-\* longhands.
+    * The **`scroll-margin`** property is a shorthand property which sets all of the `scroll-margin` longhands, assigning values much like the `margin` property does for the `margin-*` longhands.
     *
     * **Initial value**: `0`
     *
@@ -3197,19 +3332,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var scrollSnapAlign: js.UndefOr[ScrollSnapAlignProperty | js.Array[ScrollSnapAlignProperty]] = js.undefined
   /**
-    * The **`scroll-snap-stop`** CSS property defines whether the scroll container is allowed to "pass over" possible snap positions.
-    *
-    * **Initial value**: `normal`
-    *
-    * | Chrome | Firefox | Safari | Edge | IE  |
-    * | :----: | :-----: | :----: | :--: | :-: |
-    * | **69** |   No    |   No   |  No  | No  |
-    *
-    * @see https://developer.mozilla.org/docs/Web/CSS/scroll-snap-stop
-    */
-  var scrollSnapStop: js.UndefOr[ScrollSnapStopProperty | js.Array[ScrollSnapStopProperty]] = js.undefined
-  /**
-    * The **`scroll-snap-type`** CSS property defines how strictly snap points are enforced on the scroll container in case there is one.
+    * The **`scroll-snap-type`** CSS property sets how strictly snap points are enforced on the scroll container in case there is one.
     *
     * **Initial value**: `none`
     *
@@ -3244,9 +3367,9 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/scrollbar-width
     */
-  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty[TLength] | js.Array[ScrollbarWidthProperty[TLength]]] = js.undefined
+  var scrollbarWidth: js.UndefOr[ScrollbarWidthProperty | js.Array[ScrollbarWidthProperty]] = js.undefined
   /**
-    * The **`shape-image-threshold`** CSS property defines the alpha channel threshold used to extract the shape using an image as the value for `shape-outside`.
+    * The **`shape-image-threshold`** CSS property sets the alpha channel threshold used to extract the shape using an image as the value for `shape-outside`.
     *
     * **Initial value**: `0.0`
     *
@@ -3258,7 +3381,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var shapeImageThreshold: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The **`shape-margin`** CSS property specifies a margin for a CSS shape created using `shape-outside`.
+    * The **`shape-margin`** CSS property sets a margin for a CSS shape created using `shape-outside`.
     *
     * **Initial value**: `0`
     *
@@ -3270,13 +3393,13 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var shapeMargin: js.UndefOr[ShapeMarginProperty[TLength] | js.Array[ShapeMarginProperty[TLength]]] = js.undefined
   /**
-    * The **`shape-outside`** CSS property defines a shape—which may be non\-rectangular—around which adjacent inline content should wrap. By default, inline content wraps around its margin box; `shape-outside` provides a way to customize this wrapping, making it possible to wrap text around complex objects rather than simple boxes.
+    * The **`shape-outside`** CSS property defines a shape—which may be non-rectangular—around which adjacent inline content should wrap. By default, inline content wraps around its margin box; `shape-outside` provides a way to customize this wrapping, making it possible to wrap text around complex objects rather than simple boxes.
     *
     * **Initial value**: `none`
     *
     * | Chrome | Firefox |  Safari  | Edge | IE  |
     * | :----: | :-----: | :------: | :--: | :-: |
-    * | **37** | **62**  | **10.1** | n/a  | No  |
+    * | **37** | **62**  | **10.1** |  No  | No  |
     *
     * @see https://developer.mozilla.org/docs/Web/CSS/shape-outside
     */
@@ -3294,7 +3417,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var tabSize: js.UndefOr[TabSizeProperty[TLength] | js.Array[TabSizeProperty[TLength]]] = js.undefined
   /**
-    * The **`table-layout`** CSS property specifies the algorithm used to lay out `<table>` cells, rows, and columns.
+    * The **`table-layout`** CSS property sets the algorithm used to lay out `<table>` cells, rows, and columns.
     *
     * **Initial value**: `auto`
     *
@@ -3306,7 +3429,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var tableLayout: js.UndefOr[TableLayoutProperty | js.Array[TableLayoutProperty]] = js.undefined
   /**
-    * The **`text-align`** CSS property specifies the horizontal alignment of an inline or table\-cell box.This means it works like `vertical-align` but in the horizontal direction.
+    * The **`text-align`** CSS property sets the horizontal alignment of an inline or table-cell box. This means it works like `vertical-align` but in the horizontal direction.
     *
     * **Initial value**: `start`, or a nameless value that acts as `left` if _direction_ is `ltr`, `right` if _direction_ is `rtl` if `start` is not supported by the browser.
     *
@@ -3318,7 +3441,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textAlign: js.UndefOr[TextAlignProperty | js.Array[TextAlignProperty]] = js.undefined
   /**
-    * The **`text-align-last`** CSS property describes how the last line of a block or a line, right before a forced line break, is aligned.
+    * The **`text-align-last`** CSS property sets how the last line of a block or a line, right before a forced line break, is aligned.
     *
     * **Initial value**: `auto`
     *
@@ -3330,7 +3453,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textAlignLast: js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]] = js.undefined
   /**
-    * The **`text-combine-upright`** CSS property specifies the combination of multiple characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
+    * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
     *
     * **Initial value**: `none`
     *
@@ -3342,7 +3465,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textCombineUpright: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.undefined
   /**
-    * The **`text-decoration-color`** CSS property sets the color of the decorative additions to text that are specified by `text-decoration-line`; these include underlines and overlines, strikethroughs, and wavy lines like those typically used to indicate content is misspelled (for example). The specified color applies to all such decorative lines in the scope of the property's value.
+    * The **`text-decoration-color`** CSS property sets the color of decorations added to text by `text-decoration-line`.
     *
     * **Initial value**: `currentcolor`
     *
@@ -3354,7 +3477,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textDecorationColor: js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]] = js.undefined
   /**
-    * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element.
+    * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
     *
     * **Initial value**: `none`
     *
@@ -3366,7 +3489,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textDecorationLine: js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]] = js.undefined
   /**
-    * The **`text-decoration-skip`** CSS property specifies what parts of an element’s content any text decoration affecting the element must skip over. It controls all text decoration lines drawn by the element and also any text decoration lines drawn by its ancestors.
+    * The **`text-decoration-skip`** CSS property sets what parts of an element’s content any text decoration affecting the element must skip over. It controls all text decoration lines drawn by the element and also any text decoration lines drawn by its ancestors.
     *
     * **Initial value**: `objects`
     *
@@ -3390,7 +3513,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textDecorationSkipInk: js.UndefOr[TextDecorationSkipInkProperty | js.Array[TextDecorationSkipInkProperty]] = js.undefined
   /**
-    * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are specified; there is no way to define different styles for each of the lines defined by `text-decoration-line`.
+    * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are set with `text-decoration-line`.
     *
     * **Initial value**: `solid`
     *
@@ -3402,7 +3525,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textDecorationStyle: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
   /**
-    * The **`text-emphasis-color`** CSS property defines the color used to draw emphasis marks on text being rendered in the HTML document. This value can also be set and reset using the `text-emphasis` shorthand.
+    * The **`text-emphasis-color`** CSS property sets the color of emphasis marks. This value can also be set using the `text-emphasis` shorthand.
     *
     * **Initial value**: `currentcolor`
     *
@@ -3414,7 +3537,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textEmphasisColor: js.UndefOr[TextEmphasisColorProperty | js.Array[TextEmphasisColorProperty]] = js.undefined
   /**
-    * The **`text-emphasis-position`** CSS property describes where emphasis marks are drawn at. The effect of emphasis marks on the line height is the same as for ruby text: if there isn't enough place, the line height is increased.
+    * The **`text-emphasis-position`** CSS property sets where emphasis marks are drawn. Like ruby text, if there isn't enough room for emphasis marks, the line height is increased.
     *
     * **Initial value**: `over right`
     *
@@ -3426,7 +3549,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textEmphasisPosition: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`text-emphasis-style`** CSS property defines the type of emphasis used. It can also be set, and reset, using the `text-emphasis` shorthand.
+    * The **`text-emphasis-style`** CSS property sets the appearance of emphasis marks. It can also be set, and reset, using the `text-emphasis` shorthand.
     *
     * **Initial value**: `none`
     *
@@ -3438,7 +3561,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textEmphasisStyle: js.UndefOr[TextEmphasisStyleProperty | js.Array[TextEmphasisStyleProperty]] = js.undefined
   /**
-    * The **`text-indent`** CSS property specifies the amount of indentation (empty space) that is put before lines of text in a block. By default, this controls the indentation of only the first formatted line of the block, but the `hanging` and `each-line` keywords can be used to change this behavior.
+    * The **`text-indent`** CSS property sets the length of empty space (indentation) that is put before lines of text in a block.
     *
     * **Initial value**: `0`
     *
@@ -3450,7 +3573,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textIndent: js.UndefOr[TextIndentProperty[TLength] | js.Array[TextIndentProperty[TLength]]] = js.undefined
   /**
-    * The **`text-justify`** CSS property defines what type of justification should be applied to text when it is justified (i.e., when `text-align``: justify;` is set on it).
+    * The **`text-justify`** CSS property sets what type of justification should be applied to text when `text-align``: justify;` is set on an element.
     *
     * **Initial value**: `auto`
     *
@@ -3462,7 +3585,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textJustify: js.UndefOr[TextJustifyProperty | js.Array[TextJustifyProperty]] = js.undefined
   /**
-    * The **`text-orientation`** CSS property defines the orientation of the text characters in a line. This property only has an effect in vertical mode, that is, when `writing-mode` is not `horizontal-tb`. It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
+    * The **`text-orientation`** CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
     *
     * **Initial value**: `mixed`
     *
@@ -3474,7 +3597,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textOrientation: js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]] = js.undefined
   /**
-    * The **`text-overflow`** CSS property determines how overflowed content that is not displayed is signaled to users. It can be clipped, display an ellipsis ('`…`', `U+2026 Horizontal Ellipsis`), or display a custom string.
+    * The **`text-overflow`** CSS property sets how hidden overflow content is signaled to users. It can be clipped, display an ellipsis ('`…`'), or display a custom string.
     *
     * **Initial value**: `clip`
     *
@@ -3498,7 +3621,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textRendering: js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]] = js.undefined
   /**
-    * The **`text-shadow`** CSS property adds shadows to text. It accepts a comma\-separated list of shadows to be applied to the text and any of its `decorations`. Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.
+    * The **`text-shadow`** CSS property adds shadows to text. It accepts a comma-separated list of shadows to be applied to the text and any of its `decorations`. Each shadow is described by some combination of X and Y offsets from the element, blur radius, and color.
     *
     * **Initial value**: `none`
     *
@@ -3522,7 +3645,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textSizeAdjust: js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]] = js.undefined
   /**
-    * The **`text-transform`** CSS property specifies how to capitalize an element's text. It can be used to make text appear in all\-uppercase or all\-lowercase, or with each word capitalized.
+    * The **`text-transform`** CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. It also can help improve legibility for ruby
     *
     * **Initial value**: `none`
     *
@@ -3546,7 +3669,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var textUnderlinePosition: js.UndefOr[TextUnderlinePositionProperty | js.Array[TextUnderlinePositionProperty]] = js.undefined
   /**
-    * The **`top`** CSS property participates in specifying the vertical position of a _positioned element_. It has no effect on non\-positioned elements.
+    * The **`top`** CSS property participates in specifying the vertical position of a _positioned element_. It has no effect on non-positioned elements.
     *
     * **Initial value**: `auto`
     *
@@ -3558,7 +3681,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var top: js.UndefOr[TopProperty[TLength] | js.Array[TopProperty[TLength]]] = js.undefined
   /**
-    * The **`touch-action`** CSS property specifies whether, and in what ways, a given region can be manipulated by the user via a touchscreen (for instance, by panning or zooming features built into the browser).
+    * The **`touch-action`** CSS property sets how a region can be manipulated by a touchscreen user (for example, by zooming features built into the browser).
     *
     * **Initial value**: `auto`
     *
@@ -3571,7 +3694,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var touchAction: js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]] = js.undefined
   /**
-    * The **`transform`** CSS property lets you rotate, scale, skew, or translate a given element. This is achieved by modifying the coordinate space of the CSS visual formatting model.
+    * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
     *
     * **Initial value**: `none`
     *
@@ -3609,7 +3732,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var transformOrigin: js.UndefOr[TransformOriginProperty[TLength] | js.Array[TransformOriginProperty[TLength]]] = js.undefined
   /**
-    * The **`transform-style`** CSS property determines if the children of an element are positioned in the 3D\-space or are flattened in the plane of the element.
+    * The **`transform-style`** CSS property sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
     *
     * **Initial value**: `flat`
     *
@@ -3622,7 +3745,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var transformStyle: js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]] = js.undefined
   /**
-    * The **`transition-delay`** CSS property specifies the amount of time to wait before starting a property's transition effect when its value changes.
+    * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
     *
     * **Initial value**: `0s`
     *
@@ -3635,7 +3758,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var transitionDelay: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`transition-duration`** CSS property specifies the number of seconds or milliseconds a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
+    * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
     *
     * **Initial value**: `0s`
     *
@@ -3648,7 +3771,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var transitionDuration: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`transition-property`** CSS property specifies the CSS properties to which a transition effect should be applied.
+    * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
     *
     * **Initial value**: all
     *
@@ -3661,7 +3784,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var transitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
   /**
-    * The **`transition-timing-function`** CSS property is used to describe how the intermediate values of the CSS properties being affected by a transition effect are calculated.
+    * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
     *
     * **Initial value**: `ease`
     *
@@ -3686,7 +3809,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var translate: js.UndefOr[TranslateProperty[TLength] | js.Array[TranslateProperty[TLength]]] = js.undefined
   /**
-    * The **`unicode-bidi`** CSS property, together with the `direction` property, determines how bidirectional text in a document is handled. For example, if a block of content contains both left\-to\-right and right\-to\-left text, the user\-agent uses a complex Unicode algorithm to decide how to display the text. The `unicode-bidi` property overrides this algorithm and allows the developer to control the text embedding.
+    * The **`unicode-bidi`** CSS property, together with the `direction` property, determines how bidirectional text in a document is handled. For example, if a block of content contains both left-to-right and right-to-left text, the user-agent uses a complex Unicode algorithm to decide how to display the text. The `unicode-bidi` property overrides this algorithm and allows the developer to control the text embedding.
     *
     * **Initial value**: `normal`
     *
@@ -3711,7 +3834,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var userSelect: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.undefined
   /**
-    * The **`vertical-align`** CSS property specifies the vertical alignment of an inline or table\-cell box.
+    * The **`vertical-align`** CSS property sets vertical alignment of an inline or table-cell box.
     *
     * **Initial value**: `baseline`
     *
@@ -3723,7 +3846,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var verticalAlign: js.UndefOr[VerticalAlignProperty[TLength] | js.Array[VerticalAlignProperty[TLength]]] = js.undefined
   /**
-    * The **`visibility`** CSS property can show or hide an element without affecting the layout of a document (i.e., space is created for elements regardless of whether they are visible or not). The property can also hide rows or columns in a `<table>`.
+    * The **`visibility`** CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a `<table>`.
     *
     * **Initial value**: `visible`
     *
@@ -3735,7 +3858,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var visibility: js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]] = js.undefined
   /**
-    * The **`white-space`** CSS property determines how white space inside an element is handled.
+    * The **`white-space`** CSS property sets how white space inside an element is handled.
     *
     * **Initial value**: `normal`
     *
@@ -3747,7 +3870,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var whiteSpace: js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]] = js.undefined
   /**
-    * The **`widows`** CSS property specifies the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column. This property is normally used to control how breaks occur.
+    * The **`widows`** CSS property sets the minimum number of lines in a block container that must be shown at the _top_ of a page, region, or column.
     *
     * **Initial value**: `2`
     *
@@ -3759,7 +3882,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var widows: js.UndefOr[csstypeLib.GlobalsNumber | js.Array[csstypeLib.GlobalsNumber]] = js.undefined
   /**
-    * The **`width`** CSS property specifies the width of an element. By default, the property defines the width of the content area. If `box-sizing` is set to `border-box`, however, it instead determines the width of the border area.
+    * The **`width`** CSS property sets an element's width. By default it sets the width of the content area, but if `box-sizing` is set to `border-box`, it sets the width of the border area.
     *
     * **Initial value**: `auto`
     *
@@ -3771,7 +3894,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var width: js.UndefOr[WidthProperty[TLength] | js.Array[WidthProperty[TLength]]] = js.undefined
   /**
-    * The **`will-change`** CSS property provides a way for authors to hint browsers about the kind of changes to be expected on an element, so that the browser can set up appropriate optimizations ahead of time before the element is actually changed. These kinds of optimizations can increase the responsiveness of a page by doing potentially expensive work ahead of time before they are actually required.
+    * The **`will-change`** CSS property hints to browsers how an element is expected to change. Browsers may set up optimizations before an element is actually changed. These kinds of optimizations can increase the responsiveness of a page by doing potentially expensive work before they are actually required.
     *
     * **Initial value**: `auto`
     *
@@ -3783,7 +3906,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var willChange: js.UndefOr[WillChangeProperty | js.Array[WillChangeProperty]] = js.undefined
   /**
-    * The **`word-break`** CSS property specifies whether or not the browser should insert line breaks wherever the text would otherwise overflow its content box.
+    * The **`word-break`** CSS property sets whether line breaks appear wherever the text would otherwise overflow its content box.
     *
     * **Initial value**: `normal`
     *
@@ -3795,7 +3918,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var wordBreak: js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]] = js.undefined
   /**
-    * The **`word-spacing`** CSS property specifies the spacing behavior between tags and words.
+    * The **`word-spacing`** CSS property sets the length of space between words and between tags.
     *
     * **Initial value**: `normal`
     *
@@ -3807,7 +3930,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var wordSpacing: js.UndefOr[WordSpacingProperty[TLength] | js.Array[WordSpacingProperty[TLength]]] = js.undefined
   /**
-    * The `**overflow-wrap**` CSS property specifies whether or not the browser should insert line breaks within words to prevent text from overflowing its content box.
+    * The `**overflow-wrap**` CSS property sets whether the browser should insert line breaks within words to prevent text from overflowing its content box.
     *
     * **Initial value**: `normal`
     *
@@ -3819,7 +3942,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var wordWrap: js.UndefOr[WordWrapProperty | js.Array[WordWrapProperty]] = js.undefined
   /**
-    * The **`writing-mode`** CSS property defines whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
+    * The **`writing-mode`** CSS property sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress.
     *
     * **Initial value**: `horizontal-tb`
     *
@@ -3831,7 +3954,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var writingMode: js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]] = js.undefined
   /**
-    * The **`z-index`** CSS property specifies the z\-order of a positioned element and its descendants or flex items (children of an element with `display: flex`). When elements overlap, z\-order determines which one covers the other. An element with a larger z\-index generally covers an element with a lower one.
+    * The **`z-index`** CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
     *
     * **Initial value**: `auto`
     *
@@ -3843,7 +3966,7 @@ trait StandardLonghandPropertiesFallback[TLength] extends js.Object {
     */
   var zIndex: js.UndefOr[ZIndexProperty | js.Array[ZIndexProperty]] = js.undefined
   /**
-    * The non\-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
+    * The non-standard **`zoom`** CSS property can be used to control the magnification level of an element. `transform: scale()` should be used instead of this property, if possible. However, unlike CSS Transforms, `zoom` affects the layout size of the element.
     *
     * **Initial value**: `normal`
     *

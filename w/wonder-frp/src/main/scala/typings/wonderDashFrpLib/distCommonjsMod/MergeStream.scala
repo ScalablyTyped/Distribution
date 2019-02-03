@@ -12,6 +12,7 @@ class MergeStream protected ()
   def this(source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream, maxConcurrent: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "MergeStream")
 @js.native
 object MergeStream extends js.Object {

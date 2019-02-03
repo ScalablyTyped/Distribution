@@ -64,6 +64,7 @@ class AccountPasswordPolicy protected ()
   val requireUppercaseCharacters: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/accountPasswordPolicy", "AccountPasswordPolicy")
 @js.native
 object AccountPasswordPolicy extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ReservedBuddyVariables () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Variables.ReservedBuddyVariables")
 @js.native
 object ReservedBuddyVariables extends js.Object {

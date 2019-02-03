@@ -48,6 +48,7 @@ class Task protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync/task", "Task")
 @js.native
 object Task extends js.Object {

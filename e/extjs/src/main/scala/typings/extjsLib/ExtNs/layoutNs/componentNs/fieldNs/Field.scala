@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Field () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.layout.component.field.Field")
 @js.native
 object Field extends js.Object {

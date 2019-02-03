@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Formatter ()
   extends tslintLib.libLanguageFormatterAbstractFormatterMod.AbstractFormatter
 
+/* static members */
 @JSImport("tslint/lib/formatters/codeFrameFormatter", "Formatter")
 @js.native
 object Formatter extends js.Object {

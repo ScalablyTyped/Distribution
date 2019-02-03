@@ -51,6 +51,7 @@ class DateRangePicker protected () extends Widget {
   def setRange(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.DateRangePicker")
 @js.native
 object DateRangePicker extends js.Object {

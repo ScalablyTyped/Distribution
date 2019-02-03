@@ -103,9 +103,7 @@ object batchNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.batchNs.v1Ns.JobList = js.native
     }
     
-    /**
-      * Job represents the configuration of a single job.
-      */
+    /* static members */
     @js.native
     object Job extends js.Object {
       /**
@@ -128,9 +126,7 @@ object batchNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.Job = js.native
     }
     
-    /**
-      * JobList is a collection of jobs.
-      */
+    /* static members */
     @js.native
     object JobList extends js.Object {
       /**
@@ -250,9 +246,7 @@ object batchNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.batchNs.v1beta1Ns.CronJobList = js.native
     }
     
-    /**
-      * CronJob represents the configuration of a single cron job.
-      */
+    /* static members */
     @js.native
     object CronJob extends js.Object {
       /**
@@ -275,9 +269,7 @@ object batchNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJob = js.native
     }
     
-    /**
-      * CronJobList is a collection of cron jobs.
-      */
+    /* static members */
     @js.native
     object CronJobList extends js.Object {
       /**
@@ -397,9 +389,7 @@ object batchNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.batchNs.v2alpha1Ns.CronJobList = js.native
     }
     
-    /**
-      * CronJob represents the configuration of a single cron job.
-      */
+    /* static members */
     @js.native
     object CronJob extends js.Object {
       /**
@@ -422,9 +412,7 @@ object batchNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJob = js.native
     }
     
-    /**
-      * CronJobList is a collection of cron jobs.
-      */
+    /* static members */
     @js.native
     object CronJobList extends js.Object {
       /**

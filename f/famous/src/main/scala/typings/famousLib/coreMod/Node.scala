@@ -93,6 +93,7 @@ class Node () extends js.Object {
   def show(): Node = js.native
 }
 
+/* static members */
 @JSImport("famous/core", "Node")
 @js.native
 object Node extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ButtonGroup ()
   extends reactLib.reactMod.PureComponent[IButtonGroupProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/button/buttonGroup", "ButtonGroup")
 @js.native
 object ButtonGroup extends js.Object {

@@ -33,6 +33,7 @@ class GpioBank () extends js.Object {
   def set(bits: scala.Double): GpioBank = js.native
 }
 
+/* static members */
 @JSImport("pigpio", "GpioBank")
 @js.native
 object GpioBank extends js.Object {

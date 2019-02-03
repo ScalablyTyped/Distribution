@@ -15,8 +15,11 @@ object scDashChannelLibStrings {
   @js.native
   sealed trait unsubscribed extends js.Object
   
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def subscribed: subscribed = "subscribed".asInstanceOf[subscribed]
+  @scala.inline
   def unsubscribed: unsubscribed = "unsubscribed".asInstanceOf[unsubscribed]
 }
 

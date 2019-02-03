@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommentPlugin ()
   extends typedocLib.distLibConverterPluginsCommentPluginMod.CommentPlugin
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins", "CommentPlugin")
 @js.native
 object CommentPlugin extends js.Object {

@@ -477,9 +477,15 @@ class SObject[T] () extends js.Object {
   // TODO:use a typed pluck to turn `fields` into a subset of T's fields so that the output is slimmed down appropriately
   def select(): jsforceLib.queryMod.Query[js.Array[T]] = js.native
   def select(callback: jsforceLib.connectionMod.Callback[js.Array[T]]): jsforceLib.queryMod.Query[js.Array[T]] = js.native
-  def select(fields: jsforceLib.jsforceLibStrings.SObject with js.Any): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
   def select(
-    fields: jsforceLib.jsforceLibStrings.SObject with js.Any,
+    fields: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ jsforceLib.jsforceLibStrings.SObject with js.Any
+  ): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
+  def select(
+    fields: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: boolean}
+    */ jsforceLib.jsforceLibStrings.SObject with js.Any,
     callback: jsforceLib.connectionMod.Callback[js.Array[stdLib.Partial[T]]]
   ): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native
   def select(fields: java.lang.String): jsforceLib.queryMod.Query[js.Array[stdLib.Partial[T]]] = js.native

@@ -12,7 +12,9 @@ object gapiDotClientDotYoutubeanalyticsLibStrings {
   @js.native
   sealed trait youtubeanalytics extends js.Object
   
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
+  @scala.inline
   def youtubeanalytics: youtubeanalytics = "youtubeanalytics".asInstanceOf[youtubeanalytics]
 }
 

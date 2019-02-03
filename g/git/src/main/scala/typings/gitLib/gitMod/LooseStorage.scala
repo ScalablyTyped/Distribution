@@ -17,6 +17,7 @@ class LooseStorage protected () extends js.Object {
   def unpack_object_header_gently(buf: js.Any): js.Array[_] = js.native
 }
 
+/* static members */
 @JSImport("git", "LooseStorage")
 @js.native
 object LooseStorage extends js.Object {

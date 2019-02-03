@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TaskManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.TaskManager")
 @js.native
 object TaskManager extends js.Object {

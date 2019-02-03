@@ -9,6 +9,7 @@ object kdbxwebLibStrings {
   @js.native
   sealed trait KdbxError extends js.Object
   
+  @scala.inline
   def KdbxError: KdbxError = "KdbxError".asInstanceOf[KdbxError]
 }
 

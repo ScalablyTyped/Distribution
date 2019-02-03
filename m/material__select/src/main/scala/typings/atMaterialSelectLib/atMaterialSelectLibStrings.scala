@@ -27,12 +27,19 @@ object atMaterialSelectLibStrings {
   @js.native
   sealed trait `mdc-select--disabled` extends js.Object
   
+  @scala.inline
   def `DOTmdc-floating-label`: `DOTmdc-floating-label` = ".mdc-floating-label".asInstanceOf[`DOTmdc-floating-label`]
+  @scala.inline
   def `DOTmdc-line-ripple`: `DOTmdc-line-ripple` = ".mdc-line-ripple".asInstanceOf[`DOTmdc-line-ripple`]
+  @scala.inline
   def `DOTmdc-select__native-control`: `DOTmdc-select__native-control` = ".mdc-select__native-control".asInstanceOf[`DOTmdc-select__native-control`]
+  @scala.inline
   def `MDCSelect:change`: `MDCSelect:change` = "MDCSelect:change".asInstanceOf[`MDCSelect:change`]
+  @scala.inline
   def `mdc-select`: `mdc-select` = "mdc-select".asInstanceOf[`mdc-select`]
+  @scala.inline
   def `mdc-select--box`: `mdc-select--box` = "mdc-select--box".asInstanceOf[`mdc-select--box`]
+  @scala.inline
   def `mdc-select--disabled`: `mdc-select--disabled` = "mdc-select--disabled".asInstanceOf[`mdc-select--disabled`]
 }
 

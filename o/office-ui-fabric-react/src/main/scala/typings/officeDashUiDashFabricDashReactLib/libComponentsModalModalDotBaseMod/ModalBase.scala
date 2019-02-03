@@ -33,6 +33,7 @@ class ModalBase protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Modal/Modal.base", "ModalBase")
 @js.native
 object ModalBase extends js.Object {

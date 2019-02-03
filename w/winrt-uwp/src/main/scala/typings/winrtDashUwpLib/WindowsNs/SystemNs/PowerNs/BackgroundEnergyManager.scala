@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BackgroundEnergyManager () extends js.Object
 
-/** Provides information about your app's background energy usage. */
+/* static members */
 @JSGlobal("Windows.System.Power.BackgroundEnergyManager")
 @js.native
 object BackgroundEnergyManager extends js.Object {

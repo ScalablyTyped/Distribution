@@ -45,18 +45,31 @@ object ioredisLibStrings {
   @js.native
   sealed trait maxlen extends js.Object
   
+  @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
+  @scala.inline
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
+  @scala.inline
   def COUNT: COUNT = "COUNT".asInstanceOf[COUNT]
+  @scala.inline
   def GROUP: GROUP = "GROUP".asInstanceOf[GROUP]
+  @scala.inline
   def MATCH: MATCH = "MATCH".asInstanceOf[MATCH]
+  @scala.inline
   def MAXLEN: MAXLEN = "MAXLEN".asInstanceOf[MAXLEN]
+  @scala.inline
   def NOSAVE: NOSAVE = "NOSAVE".asInstanceOf[NOSAVE]
+  @scala.inline
   def SAVE: SAVE = "SAVE".asInstanceOf[SAVE]
+  @scala.inline
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def group: group = "group".asInstanceOf[group]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
+  @scala.inline
   def maxlen: maxlen = "maxlen".asInstanceOf[maxlen]
 }
 

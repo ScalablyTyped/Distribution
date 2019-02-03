@@ -93,6 +93,7 @@ class Broker protected ()
   val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleAccess]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mq/broker", "Broker")
 @js.native
 object Broker extends js.Object {

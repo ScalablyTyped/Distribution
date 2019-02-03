@@ -38,6 +38,7 @@ class Window protected () extends Widget {
   def unpin(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Window")
 @js.native
 object Window extends js.Object {

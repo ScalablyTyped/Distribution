@@ -80,6 +80,7 @@ class DeploymentGroup protected ()
   val triggerConfigurations: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_TriggerEvents]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup")
 @js.native
 object DeploymentGroup extends js.Object {

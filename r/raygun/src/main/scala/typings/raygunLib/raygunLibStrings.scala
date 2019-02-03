@@ -9,6 +9,7 @@ object raygunLibStrings {
   @js.native
   sealed trait `raygun-node` extends js.Object
   
+  @scala.inline
   def `raygun-node`: `raygun-node` = "raygun-node".asInstanceOf[`raygun-node`]
 }
 

@@ -38,10 +38,17 @@ trait IObservableFactories extends js.Object {
     options: CreateObservableOptions
   ): mobxLib.libInternalMod.ObservableMap[K, V] = js.native
   def `object`[T](props: T): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
-  def `object`[T](props: T, decorators: mobxLib.mobxLibStrings.IObservableFactories with js.Any): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   def `object`[T](
     props: T,
-    decorators: mobxLib.mobxLibStrings.IObservableFactories with js.Any,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? std.Function}
+    */ mobxLib.mobxLibStrings.IObservableFactories with js.Any
+  ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
+  def `object`[T](
+    props: T,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? std.Function}
+    */ mobxLib.mobxLibStrings.IObservableFactories with js.Any,
     options: CreateObservableOptions
   ): T with mobxLib.libTypesObservableobjectMod.IObservableObject = js.native
   /**
@@ -51,6 +58,12 @@ trait IObservableFactories extends js.Object {
   def ref(target: js.Object, property: java.lang.String, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
   def ref(target: js.Object, property: js.Symbol): scala.Unit = js.native
   def ref(target: js.Object, property: js.Symbol, descriptor: stdLib.PropertyDescriptor): scala.Unit = js.native
+  def set[T](): mobxLib.libInternalMod.ObservableSet[T] = js.native
+  def set[T](initialValues: mobxLib.libTypesObservablesetMod.IObservableSetInitialValues[T]): mobxLib.libInternalMod.ObservableSet[T] = js.native
+  def set[T](
+    initialValues: mobxLib.libTypesObservablesetMod.IObservableSetInitialValues[T],
+    options: CreateObservableOptions
+  ): mobxLib.libInternalMod.ObservableSet[T] = js.native
   /**
     * Decorator that creates an observable converts its value (objects, maps or arrays) into a shallow observable structure
     */

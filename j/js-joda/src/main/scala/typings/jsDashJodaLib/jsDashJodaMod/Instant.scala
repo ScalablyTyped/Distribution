@@ -17,6 +17,7 @@ class Instant ()
   override def range(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Instant")
 @js.native
 object Instant extends js.Object {

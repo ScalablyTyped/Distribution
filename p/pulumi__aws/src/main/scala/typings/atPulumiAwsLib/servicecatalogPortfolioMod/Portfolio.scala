@@ -39,6 +39,7 @@ class Portfolio protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicecatalog/portfolio", "Portfolio")
 @js.native
 object Portfolio extends js.Object {

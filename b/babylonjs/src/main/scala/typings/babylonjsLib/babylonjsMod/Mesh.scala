@@ -31,9 +31,7 @@ class Mesh protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene], parent: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Node], source: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Mesh], doNotCloneChildren: scala.Boolean, clonePhysicsImpostor: scala.Boolean) = this()
 }
 
-/**
-  * Class used to represent renderable models
-  */
+/* static members */
 @JSImport("babylonjs", "Mesh")
 @js.native
 object Mesh extends js.Object {

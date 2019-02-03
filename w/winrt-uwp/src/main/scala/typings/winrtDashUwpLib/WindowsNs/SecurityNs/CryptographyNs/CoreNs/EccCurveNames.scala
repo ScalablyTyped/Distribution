@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class EccCurveNames () extends js.Object
 
-/** Contains static properties that enable you to retrieve supported elliptic curve cryptography (ECC) algorithm names. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.EccCurveNames")
 @js.native
 object EccCurveNames extends js.Object {

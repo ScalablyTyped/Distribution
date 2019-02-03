@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MediaMarkerTypes () extends js.Object
 
-/** Provides a static list of media marker types. */
+/* static members */
 @JSGlobal("Windows.Media.MediaMarkerTypes")
 @js.native
 object MediaMarkerTypes extends js.Object {

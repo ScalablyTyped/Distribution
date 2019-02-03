@@ -18,6 +18,7 @@ class Drag () extends Force {
   def `type`(v: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("famous/physics", "Drag")
 @js.native
 object Drag extends js.Object {

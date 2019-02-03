@@ -19,6 +19,7 @@ class SlidingMarker ()
   def setPositionNotAnimated(position: googlemapsLib.googleNs.mapsNs.LatLngLiteral): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SlidingMarker")
 @js.native
 object SlidingMarker extends js.Object {

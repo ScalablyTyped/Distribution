@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PromisePolyfill () extends js.Object
 
-/**
-  * Helper class that provides a small promise polyfill
-  */
+/* static members */
 @JSGlobal("BABYLON.PromisePolyfill")
 @js.native
 object PromisePolyfill extends js.Object {

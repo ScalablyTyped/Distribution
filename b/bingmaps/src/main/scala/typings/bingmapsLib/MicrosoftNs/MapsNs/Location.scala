@@ -20,6 +20,7 @@ class Location protected () extends js.Object {
   var longitude: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.Maps.Location")
 @js.native
 object Location extends js.Object {

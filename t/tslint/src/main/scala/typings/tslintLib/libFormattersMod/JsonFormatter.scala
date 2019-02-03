@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class JsonFormatter ()
   extends tslintLib.libFormattersJsonFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "JsonFormatter")
 @js.native
 object JsonFormatter extends js.Object {

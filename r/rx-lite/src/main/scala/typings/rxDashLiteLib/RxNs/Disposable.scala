@@ -14,6 +14,7 @@ class Disposable protected ()
   override def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Rx.Disposable")
 @js.native
 object Disposable extends js.Object {

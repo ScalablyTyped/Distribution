@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BluetoothLEAdvertisementDataTypes () extends js.Object
 
-/** Some of the Bluetooth LE advertisement types defined in the Generic Access Profile (GAP) by the Bluetooth Special Interest Group (SIG). */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes")
 @js.native
 object BluetoothLEAdvertisementDataTypes extends js.Object {

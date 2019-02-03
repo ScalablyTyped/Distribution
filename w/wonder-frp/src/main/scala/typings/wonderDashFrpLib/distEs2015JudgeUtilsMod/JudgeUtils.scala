@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class JudgeUtils () extends js.Object
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped any */ @JSImport("wonder-frp/dist/es2015/JudgeUtils", "JudgeUtils")
+/* static members */
+@JSImport("wonder-frp/dist/es2015/JudgeUtils", "JudgeUtils")
 @js.native
 object JudgeUtils extends js.Object {
   def isEqual(

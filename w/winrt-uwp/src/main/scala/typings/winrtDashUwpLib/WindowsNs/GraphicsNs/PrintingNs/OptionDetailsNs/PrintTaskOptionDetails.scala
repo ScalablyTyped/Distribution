@@ -69,7 +69,7 @@ abstract class PrintTaskOptionDetails () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** A collection of events, methods and properties for advanced print tasks. */
+/* static members */
 @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
 @js.native
 object PrintTaskOptionDetails extends js.Object {

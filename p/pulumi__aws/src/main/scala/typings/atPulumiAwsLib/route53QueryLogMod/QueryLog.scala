@@ -28,6 +28,7 @@ class QueryLog protected ()
   val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/queryLog", "QueryLog")
 @js.native
 object QueryLog extends js.Object {

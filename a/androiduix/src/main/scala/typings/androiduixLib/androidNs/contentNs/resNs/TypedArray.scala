@@ -39,6 +39,7 @@ class TypedArray protected () extends js.Object {
   def recycle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.content.res.TypedArray")
 @js.native
 object TypedArray extends js.Object {

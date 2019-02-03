@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KeyAlgorithmNames () extends js.Object
 
-/** Defines several commonly used public key algorithm names. You can use this class in the KeyAlgorithmName property on the CertificateRequestProperties class. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
 @js.native
 object KeyAlgorithmNames extends js.Object {

@@ -55,6 +55,7 @@ class TopicRule protected ()
   val sqs: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_QueueUrl]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/topicRule", "TopicRule")
 @js.native
 object TopicRule extends js.Object {

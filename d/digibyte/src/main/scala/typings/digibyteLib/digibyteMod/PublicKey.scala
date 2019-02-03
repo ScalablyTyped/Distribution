@@ -13,6 +13,7 @@ class PublicKey protected () extends js.Object {
   def toDER(): nodeLib.Buffer = js.native
 }
 
+/* static members */
 @JSImport("digibyte", "PublicKey")
 @js.native
 object PublicKey extends js.Object {

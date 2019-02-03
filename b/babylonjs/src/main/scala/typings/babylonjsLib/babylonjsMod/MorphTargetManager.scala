@@ -20,10 +20,7 @@ class MorphTargetManager ()
   def this(scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  * This class is used to deform meshes using morphing between different targets
-  * @see http://doc.babylonjs.com/how_to/how_to_use_morphtargets
-  */
+/* static members */
 @JSImport("babylonjs", "MorphTargetManager")
 @js.native
 object MorphTargetManager extends js.Object {

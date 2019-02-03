@@ -16,6 +16,7 @@ class Touch protected () extends Widget {
   def cancel(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Touch")
 @js.native
 object Touch extends js.Object {

@@ -15,8 +15,11 @@ object chordsheetjsLibStrings {
   @js.native
   sealed trait verse extends js.Object
   
+  @scala.inline
   def chorus: chorus = "chorus".asInstanceOf[chorus]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def verse: verse = "verse".asInstanceOf[verse]
 }
 

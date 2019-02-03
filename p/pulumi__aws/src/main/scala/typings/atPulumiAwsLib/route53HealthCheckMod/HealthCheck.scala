@@ -97,6 +97,7 @@ class HealthCheck protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/healthCheck", "HealthCheck")
 @js.native
 object HealthCheck extends js.Object {

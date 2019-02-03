@@ -20,6 +20,7 @@ class ResourceServer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoResourceServerMod.ResourceServerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "ResourceServer")
 @js.native
 object ResourceServer extends js.Object {

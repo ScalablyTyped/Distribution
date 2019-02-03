@@ -11,6 +11,7 @@ class GanttControl () extends js.Object {
   def get_Columns(): js.Array[sharepointLib.SPNs.JsGridNs.ColumnInfo] = js.native
 }
 
+/* static members */
 @JSGlobal("SP.GanttControl")
 @js.native
 object GanttControl extends js.Object {

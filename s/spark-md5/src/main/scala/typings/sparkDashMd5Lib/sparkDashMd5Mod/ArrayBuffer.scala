@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrayBuffer ()
   extends sparkDashMd5Lib.sparkDashMd5Mod.SparkMD5Ns.ArrayBuffer
 
+/* static members */
 @JSImport("spark-md5", "ArrayBuffer")
 @js.native
 object ArrayBuffer extends js.Object {

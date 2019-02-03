@@ -36,6 +36,7 @@ class Certificate protected ()
   val certificateWallet: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms/certificate", "Certificate")
 @js.native
 object Certificate extends js.Object {

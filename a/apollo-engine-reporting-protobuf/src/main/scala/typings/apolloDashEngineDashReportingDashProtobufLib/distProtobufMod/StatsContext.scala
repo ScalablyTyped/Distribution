@@ -29,6 +29,7 @@ class StatsContext () extends IStatsContext {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "StatsContext")
 @js.native
 object StatsContext extends js.Object {

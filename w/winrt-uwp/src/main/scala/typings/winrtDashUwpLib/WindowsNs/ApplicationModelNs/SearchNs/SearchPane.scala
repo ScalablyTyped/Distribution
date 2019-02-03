@@ -122,7 +122,7 @@ abstract class SearchPane () extends js.Object {
   def trySetQueryText(query: java.lang.String): scala.Boolean = js.native
 }
 
-/** Represents and manages the search pane that opens when a user activates the Search charm. The search pane provides a consistent, touch-friendly search box and optional search suggestions. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Search.SearchPane")
 @js.native
 object SearchPane extends js.Object {

@@ -36,6 +36,7 @@ class NamedQuery protected ()
   val query: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/athena/namedQuery", "NamedQuery")
 @js.native
 object NamedQuery extends js.Object {

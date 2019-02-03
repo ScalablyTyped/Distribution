@@ -9,6 +9,7 @@ object delayLibStrings {
   @js.native
   sealed trait abort extends js.Object
   
+  @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
 }
 

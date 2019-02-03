@@ -15,6 +15,7 @@ class By protected () extends js.Object {
   def this(using: java.lang.String, value: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("selenium-webdriver", "By")
 @js.native
 object By extends js.Object {

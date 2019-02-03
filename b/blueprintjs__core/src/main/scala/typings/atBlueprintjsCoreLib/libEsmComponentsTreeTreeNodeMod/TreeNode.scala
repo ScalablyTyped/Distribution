@@ -20,6 +20,7 @@ class TreeNode[T] ()
   /* private */ def maybeRenderSecondaryLabel(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tree/treeNode", "TreeNode")
 @js.native
 object TreeNode extends js.Object {

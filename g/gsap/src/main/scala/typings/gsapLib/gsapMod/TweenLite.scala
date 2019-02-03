@@ -12,6 +12,7 @@ class TweenLite protected ()
   def this(target: js.Any, duration: scala.Double, vars: js.Any) = this()
 }
 
+/* static members */
 @JSImport("gsap", "TweenLite")
 @js.native
 object TweenLite extends js.Object {

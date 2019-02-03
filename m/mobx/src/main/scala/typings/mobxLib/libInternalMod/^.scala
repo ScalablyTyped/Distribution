@@ -104,9 +104,16 @@ object ^ extends js.Object {
   ): js.Function = js.native
   def decorate[T](
     clazz: org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, T],
-    decorators: mobxLib.mobxLibStrings.decorate with js.Any
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
+    */ mobxLib.mobxLibStrings.decorate with js.Any
   ): scala.Unit = js.native
-  def decorate[T](`object`: T, decorators: mobxLib.mobxLibStrings.decorate with js.Any): T = js.native
+  def decorate[T](
+    `object`: T,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? std.MethodDecorator | std.PropertyDecorator | std.Array<std.MethodDecorator> | std.Array<std.PropertyDecorator>}
+    */ mobxLib.mobxLibStrings.decorate with js.Any
+  ): T = js.native
   def deepEnhancer(v: js.Any, `_`: js.Any, name: js.Any): js.Any = js.native
   def deepEqual(a: js.Any, b: js.Any): scala.Boolean = js.native
   def defineBoundAction(target: js.Any, propertyName: java.lang.String, fn: js.Function): scala.Unit = js.native
@@ -115,23 +122,35 @@ object ^ extends js.Object {
   def endBatch(): scala.Unit = js.native
   def entries[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[js.Tuple2[scala.Double, T]] = js.native
   def entries[T](obj: T): js.Array[js.Tuple2[java.lang.String, _]] = js.native
+  def entries[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[js.Tuple2[T, T]] = js.native
   def entries[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[js.Tuple2[K, T]] = js.native
   def executeAction(actionName: java.lang.String, fn: js.Function): js.Any = js.native
   def executeAction(actionName: java.lang.String, fn: js.Function, scope: js.Any): js.Any = js.native
   def executeAction(actionName: java.lang.String, fn: js.Function, scope: js.Any, args: stdLib.IArguments): js.Any = js.native
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A): A with B = js.native
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B): A with B = js.native
-  def extendObservable[A /* <: js.Object */, B /* <: js.Object */](target: A, properties: B, decorators: mobxLib.mobxLibStrings.extendObservable with js.Any): A with B = js.native
   def extendObservable[A /* <: js.Object */, B /* <: js.Object */](
     target: A,
     properties: B,
-    decorators: mobxLib.mobxLibStrings.extendObservable with js.Any,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof B ]:? std.Function}
+    */ mobxLib.mobxLibStrings.extendObservable with js.Any
+  ): A with B = js.native
+  def extendObservable[A /* <: js.Object */, B /* <: js.Object */](
+    target: A,
+    properties: B,
+    decorators: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof B ]:? std.Function}
+    */ mobxLib.mobxLibStrings.extendObservable with js.Any,
     options: mobxLib.libApiObservableMod.CreateObservableOptions
   ): A with B = js.native
   def extendObservableObjectWithProperties(target: js.Any, properties: js.Any, decorators: js.Any, defaultDecorator: js.Any): scala.Unit = js.native
   def fail(message: java.lang.String): scala.Nothing = js.native
   def fail(message: scala.Boolean): scala.Nothing = js.native
-  def flow[T, U /* <: js.Array[_] */](generator: js.Function1[/* args */ U, mobxLib.libApiFlowMod.FlowIterator[_]]): js.Function1[/* args */ U, mobxLib.libApiFlowMod.CancellablePromise[T]] = js.native
+  def flow[R, Args /* <: js.Array[_] */](generator: js.Function1[/* args */ Args, stdLib.IterableIterator[R]]): js.Function1[
+    /* args */ Args, 
+    mobxLib.libApiFlowMod.CancellablePromise[mobxLib.libApiFlowMod.FlowReturnType[R]]
+  ] = js.native
   def generateComputedPropConfig(propName: js.Any): js.Any = js.native
   def generateObservablePropConfig(propName: js.Any): js.Any = js.native
   def get[T /* <: js.Object */](obj: T, key: java.lang.String): js.Any = js.native
@@ -157,6 +176,7 @@ object ^ extends js.Object {
   def getObservers(observable: mobxLib.libCoreObservableMod.IObservable): stdLib.Set[mobxLib.libCoreDerivationMod.IDerivation] = js.native
   def has[T /* <: js.Object */](obj: T, key: java.lang.String): scala.Boolean = js.native
   def has[K](obj: mobxLib.libInternalMod.ObservableMap[K, _], key: K): scala.Boolean = js.native
+  def has[T](obj: mobxLib.libInternalMod.ObservableSet[T], key: T): scala.Boolean = js.native
   def has[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double): scala.Boolean = js.native
   def hasInterceptors(interceptable: mobxLib.libTypesInterceptDashUtilsMod.IInterceptable[_]): scala.Boolean = js.native
   def hasListeners(listenable: mobxLib.libTypesListenDashUtilsMod.IListenable): scala.Boolean = js.native
@@ -171,6 +191,10 @@ object ^ extends js.Object {
     handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[
       mobxLib.libTypesObservablearrayMod.IArrayWillChange[T] | mobxLib.libTypesObservablearrayMod.IArrayWillSplice[T]
     ]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def intercept[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    handler: mobxLib.libTypesInterceptDashUtilsMod.IInterceptor[mobxLib.libTypesObservablesetMod.ISetWillChange[V]]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def intercept[T](
     value: mobxLib.libTypesObservablevalueMod.IObservableValue[T],
@@ -201,6 +225,10 @@ object ^ extends js.Object {
     observableArray: mobxLib.libTypesObservablearrayMod.IObservableArray[T],
     handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[T]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def interceptReads[V](
+    observableSet: mobxLib.libInternalMod.ObservableSet[V],
+    handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[V]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def interceptReads[T](
     value: mobxLib.libTypesObservablevalueMod.IObservableValue[T],
     handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[T]
@@ -227,11 +255,13 @@ object ^ extends js.Object {
   def isComputedValue(x: js.Any): /* is mobx.mobx/lib/core/computedvalue.ComputedValue<{}> */ scala.Boolean = js.native
   def isComputingDerivation(): scala.Boolean = js.native
   def isES6Map(thing: js.Any): scala.Boolean = js.native
+  def isES6Set(thing: js.Any): /* is std.Set<any> */ scala.Boolean = js.native
   def isObject(value: js.Any): scala.Boolean = js.native
   def isObservable(value: js.Any): scala.Boolean = js.native
   def isObservableArray(thing: js.Any): /* is mobx.mobx/lib/types/observablearray.IObservableArray<any> */ scala.Boolean = js.native
   def isObservableObject(thing: js.Any): /* is mobx.mobx/lib/types/observableobject.IObservableObject */ scala.Boolean = js.native
   def isObservableProp(value: js.Any, propName: java.lang.String): scala.Boolean = js.native
+  def isObservableSet(thing: js.Any): /* is mobx.mobx/lib/types/observableset.ObservableSet<any> */ scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native
   def isReaction(x: js.Any): /* is mobx.mobx/lib/core/reaction.Reaction */ scala.Boolean = js.native
@@ -240,6 +270,7 @@ object ^ extends js.Object {
   def keys[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[scala.Double] = js.native
   def keys[K](map: mobxLib.libInternalMod.ObservableMap[K, _]): js.Array[K] = js.native
   def keys[T /* <: js.Object */](obj: T): js.Array[java.lang.String] = js.native
+  def keys[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def makeIterable[T](iterator: stdLib.Iterator[T]): stdLib.IterableIterator[T] = js.native
   def makeNonEnumerable(`object`: js.Any, propNames: js.Array[stdLib.PropertyKey]): scala.Unit = js.native
   def namedActionDecorator(name: java.lang.String): js.Function3[
@@ -272,6 +303,15 @@ object ^ extends js.Object {
       /* change */ mobxLib.libTypesObservablearrayMod.IArrayChange[T] | mobxLib.libTypesObservablearrayMod.IArraySplice[T], 
       scala.Unit
     ],
+    fireImmediately: scala.Boolean
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def observe[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    listener: js.Function1[/* change */ mobxLib.libTypesObservablesetMod.ISetDidChange[V], scala.Unit]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def observe[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    listener: js.Function1[/* change */ mobxLib.libTypesObservablesetMod.ISetDidChange[V], scala.Unit],
     fireImmediately: scala.Boolean
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def observe[T](
@@ -335,6 +375,7 @@ object ^ extends js.Object {
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(value: mobxLib.libCoreObservableMod.IObservable, listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(value: mobxLib.libInternalMod.ObservableMap[_, _], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def onBecomeObserved(value: mobxLib.libInternalMod.ObservableSet[_], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(
     value: mobxLib.libTypesObservablearrayMod.IObservableArray[_],
     listener: mobxLib.libUtilsUtilsMod.Lambda
@@ -351,6 +392,7 @@ object ^ extends js.Object {
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(value: mobxLib.libCoreObservableMod.IObservable, listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(value: mobxLib.libInternalMod.ObservableMap[_, _], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def onBecomeUnobserved(value: mobxLib.libInternalMod.ObservableSet[_], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(
     value: mobxLib.libTypesObservablearrayMod.IObservableArray[_],
     listener: mobxLib.libUtilsUtilsMod.Lambda
@@ -392,6 +434,7 @@ object ^ extends js.Object {
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def registerListener(listenable: mobxLib.libTypesListenDashUtilsMod.IListenable, handler: js.Function): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def remove[T /* <: js.Object */](obj: T, key: java.lang.String): js.Any = js.native
+  def remove[T](obj: mobxLib.libInternalMod.ObservableSet[T], key: T): js.Any = js.native
   def remove[T](obj: mobxLib.libTypesObservablearrayMod.IObservableArray[T], index: scala.Double): js.Any = js.native
   def remove[K, V](obj: mobxLib.libInternalMod.ObservableMap[K, V], key: K): js.Any = js.native
   def removeObserver(
@@ -440,6 +483,7 @@ object ^ extends js.Object {
   def untrackedStart(): mobxLib.libCoreDerivationMod.IDerivation | scala.Null = js.native
   def values[T](ar: mobxLib.libTypesObservablearrayMod.IObservableArray[T]): js.Array[T] = js.native
   def values[T](obj: T): js.Array[_] = js.native
+  def values[T](set: mobxLib.libInternalMod.ObservableSet[T]): js.Array[T] = js.native
   def values[K, T](map: mobxLib.libInternalMod.ObservableMap[K, T]): js.Array[T] = js.native
   def when(predicate: js.Function0[scala.Boolean]): js.Promise[scala.Unit] with mobxLib.Anon_Cancel = js.native
   def when(predicate: js.Function0[scala.Boolean], effect: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libCoreReactionMod.IReactionDisposer = js.native

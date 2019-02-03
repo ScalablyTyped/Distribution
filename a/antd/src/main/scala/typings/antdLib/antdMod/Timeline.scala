@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Timeline ()
   extends antdLib.libTimelineMod.default
 
+/* static members */
 @JSImport("antd", "Timeline")
 @js.native
 object Timeline extends js.Object {

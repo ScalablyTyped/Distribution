@@ -90,13 +90,7 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1Ns.VolumeAttachmentList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * StorageClass describes the parameters for a class of storage for which PersistentVolumes can
-      * be dynamically provisioned.
-      *
-      * StorageClasses are non-namespaced; the name of the storage class according to etcd is in
-      * ObjectMeta.Name.
-      */
+    /* static members */
     @js.native
     object StorageClass extends js.Object {
       /**
@@ -119,9 +113,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClass = js.native
     }
     
-    /**
-      * StorageClassList is a collection of storage classes.
-      */
+    /* static members */
     @js.native
     object StorageClassList extends js.Object {
       /**
@@ -144,12 +136,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.StorageClassList = js.native
     }
     
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
+    /* static members */
     @js.native
     object VolumeAttachment extends js.Object {
       /**
@@ -172,9 +159,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1Ns.VolumeAttachment = js.native
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
+    /* static members */
     @js.native
     object VolumeAttachmentList extends js.Object {
       /**
@@ -241,12 +226,7 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1alpha1Ns.VolumeAttachmentList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
+    /* static members */
     @js.native
     object VolumeAttachment extends js.Object {
       /**
@@ -269,9 +249,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1alpha1Ns.VolumeAttachment = js.native
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
+    /* static members */
     @js.native
     object VolumeAttachmentList extends js.Object {
       /**
@@ -378,13 +356,7 @@ object storageNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.storageNs.v1beta1Ns.VolumeAttachmentList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * StorageClass describes the parameters for a class of storage for which PersistentVolumes can
-      * be dynamically provisioned.
-      *
-      * StorageClasses are non-namespaced; the name of the storage class according to etcd is in
-      * ObjectMeta.Name.
-      */
+    /* static members */
     @js.native
     object StorageClass extends js.Object {
       /**
@@ -407,9 +379,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClass = js.native
     }
     
-    /**
-      * StorageClassList is a collection of storage classes.
-      */
+    /* static members */
     @js.native
     object StorageClassList extends js.Object {
       /**
@@ -432,12 +402,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.StorageClassList = js.native
     }
     
-    /**
-      * VolumeAttachment captures the intent to attach or detach the specified volume to/from the
-      * specified node.
-      *
-      * VolumeAttachment objects are non-namespaced.
-      */
+    /* static members */
     @js.native
     object VolumeAttachment extends js.Object {
       /**
@@ -460,9 +425,7 @@ object storageNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.storageNs.v1beta1Ns.VolumeAttachment = js.native
     }
     
-    /**
-      * VolumeAttachmentList is a collection of VolumeAttachment objects.
-      */
+    /* static members */
     @js.native
     object VolumeAttachmentList extends js.Object {
       /**

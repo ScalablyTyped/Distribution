@@ -234,6 +234,7 @@ class Canvas protected () extends js.Object {
   /* protected */ def translateImpl(dx: scala.Double, dy: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.Canvas")
 @js.native
 object Canvas extends js.Object {

@@ -20,6 +20,7 @@ class MDCCheckbox ()
   var value: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@material/checkbox", "MDCCheckbox")
 @js.native
 object MDCCheckbox extends js.Object {

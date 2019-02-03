@@ -30,13 +30,21 @@ object atStorybookAddonDashKnobsLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def color: color = "color".asInstanceOf[color]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def radios: radios = "radios".asInstanceOf[radios]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

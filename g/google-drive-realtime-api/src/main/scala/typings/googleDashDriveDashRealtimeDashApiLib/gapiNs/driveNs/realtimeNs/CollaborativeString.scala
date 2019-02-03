@@ -29,6 +29,7 @@ class CollaborativeString () extends CollaborativeObject {
   def setText(text: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("gapi.drive.realtime.CollaborativeString")
 @js.native
 object CollaborativeString extends js.Object {

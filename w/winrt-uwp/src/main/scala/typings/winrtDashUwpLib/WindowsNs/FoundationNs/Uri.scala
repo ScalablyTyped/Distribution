@@ -68,7 +68,7 @@ class Uri protected () extends js.Object {
   def equals(pUri: Uri): scala.Boolean = js.native
 }
 
-/** Defines an object that represents a Uniform Resource Identifier (URI) value and parses it into components. The Uri object is used by many other Windows Runtime APIs that are not necessarily confined to web browser scenarios. */
+/* static members */
 @JSGlobal("Windows.Foundation.Uri")
 @js.native
 object Uri extends js.Object {

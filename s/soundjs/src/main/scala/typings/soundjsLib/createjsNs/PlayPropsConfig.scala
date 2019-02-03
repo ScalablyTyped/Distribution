@@ -19,6 +19,7 @@ class PlayPropsConfig () extends js.Object {
   def set(props: js.Any): PlayPropsConfig = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.PlayPropsConfig")
 @js.native
 object PlayPropsConfig extends js.Object {

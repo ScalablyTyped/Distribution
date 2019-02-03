@@ -22,6 +22,7 @@ object resourcegroupsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.resourcegroupsGroupMod.GroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Group extends js.Object {
     /**

@@ -12,7 +12,9 @@ object unzipLibStrings {
   @js.native
   sealed trait File extends js.Object
   
+  @scala.inline
   def Directory: Directory = "Directory".asInstanceOf[Directory]
+  @scala.inline
   def File: File = "File".asInstanceOf[File]
 }
 

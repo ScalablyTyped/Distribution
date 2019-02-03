@@ -17,6 +17,7 @@ class TextChangeRange protected () extends js.Object {
   def span(): TextSpan = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TextChangeRange")
 @js.native
 object TextChangeRange extends js.Object {

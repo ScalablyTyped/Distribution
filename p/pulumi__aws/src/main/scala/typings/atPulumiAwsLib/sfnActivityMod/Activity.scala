@@ -33,6 +33,7 @@ class Activity protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sfn/activity", "Activity")
 @js.native
 object Activity extends js.Object {

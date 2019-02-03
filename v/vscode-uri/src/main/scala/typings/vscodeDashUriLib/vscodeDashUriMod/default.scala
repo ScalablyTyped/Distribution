@@ -28,6 +28,7 @@ class default protected () extends URI {
   override var scheme: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("vscode-uri", JSImport.Default)
 @js.native
 object default extends js.Object {

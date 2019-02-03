@@ -33,6 +33,7 @@ class GLSLDataSender protected () extends js.Object {
   def sendVector4(name: java.lang.String, data: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/program/GLSLDataSender", "GLSLDataSender")
 @js.native
 object GLSLDataSender extends js.Object {

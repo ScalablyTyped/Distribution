@@ -13,6 +13,7 @@ class Model ()
   def this(attributes: js.Any, options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("backbone", "Model")
 @js.native
 object Model extends js.Object {

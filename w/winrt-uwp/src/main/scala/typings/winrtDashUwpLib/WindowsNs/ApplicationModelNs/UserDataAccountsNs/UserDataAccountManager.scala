@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class UserDataAccountManager () extends js.Object
 
-/** Provides APIs to interact with the user’s data accounts including those implemented by the operating system. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.UserDataAccounts.UserDataAccountManager")
 @js.native
 object UserDataAccountManager extends js.Object {

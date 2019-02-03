@@ -9,7 +9,9 @@ trait OptionsWithMap[Props, Exports /* <: org.scalablytyped.runtime.StringDictio
   /**
     * An object containing functions which return promises, which resolve to an object to be passed to `render` on success.
     */
-  var loader: reactDashLoadableLib.reactDashLoadableLibStrings.OptionsWithMap with Exports
+  var loader: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof Exports ]: (): std.Promise<Exports[P]>}
+    */ reactDashLoadableLib.reactDashLoadableLibStrings.OptionsWithMap with Exports
   /**
     * If you want to customize what gets rendered from your loader you can also pass `render`.
     *

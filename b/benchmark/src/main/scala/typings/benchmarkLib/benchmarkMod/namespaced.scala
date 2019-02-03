@@ -19,6 +19,7 @@ class namespaced protected () extends Benchmark {
   def this(name: java.lang.String, fn: js.Function, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
 }
 
+/* static members */
 @JSImport("benchmark", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

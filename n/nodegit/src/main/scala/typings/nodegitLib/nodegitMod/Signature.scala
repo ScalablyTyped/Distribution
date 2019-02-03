@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Signature ()
   extends nodegitLib.signatureMod.Signature
 
+/* static members */
 @JSImport("nodegit", "Signature")
 @js.native
 object Signature extends js.Object {

@@ -32,6 +32,7 @@ class ZoneAssociation protected ()
   val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/zoneAssociation", "ZoneAssociation")
 @js.native
 object ZoneAssociation extends js.Object {

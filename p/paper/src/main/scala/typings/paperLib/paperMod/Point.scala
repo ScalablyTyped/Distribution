@@ -37,6 +37,7 @@ class Point protected ()
   def this(x: scala.Double, y: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("paper", "Point")
 @js.native
 object Point extends js.Object {

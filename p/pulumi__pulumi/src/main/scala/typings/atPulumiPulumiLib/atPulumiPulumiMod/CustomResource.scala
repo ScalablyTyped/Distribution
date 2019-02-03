@@ -27,6 +27,7 @@ abstract class CustomResource protected ()
   def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi", "CustomResource")
 @js.native
 object CustomResource extends js.Object {

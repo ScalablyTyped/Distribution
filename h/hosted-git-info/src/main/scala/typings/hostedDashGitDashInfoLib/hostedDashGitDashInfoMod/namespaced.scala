@@ -42,6 +42,7 @@ class namespaced protected () extends HostedGitInfo {
   def this(host: hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.hosts, user: scala.Null, auth: scala.Null, project: scala.Null, committish: scala.Null, defaultRepresentation: java.lang.String, opts: hostedDashGitDashInfoLib.hostedDashGitDashInfoMod.HostedGitInfoNs.Options) = this()
 }
 
+/* static members */
 @JSImport("hosted-git-info", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

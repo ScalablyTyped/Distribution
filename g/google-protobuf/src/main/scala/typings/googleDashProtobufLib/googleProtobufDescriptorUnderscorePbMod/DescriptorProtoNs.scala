@@ -61,6 +61,7 @@ object DescriptorProtoNs extends js.Object {
     def setStart(value: scala.Double): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object ExtensionRange extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[
@@ -94,6 +95,7 @@ object DescriptorProtoNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object ReservedRange extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[

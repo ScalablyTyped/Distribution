@@ -67,11 +67,7 @@ class RayHelper protected () extends js.Object {
   def show(scene: Scene, color: Color3): scala.Unit = js.native
 }
 
-/**
-  * As raycast might be hard to debug, the RayHelper can help rendering the different rays
-  * in order to better appreciate the issue one might have.
-  * @see http://doc.babylonjs.com/babylon101/raycasts#debugging
-  */
+/* static members */
 @JSGlobal("BABYLON.RayHelper")
 @js.native
 object RayHelper extends js.Object {

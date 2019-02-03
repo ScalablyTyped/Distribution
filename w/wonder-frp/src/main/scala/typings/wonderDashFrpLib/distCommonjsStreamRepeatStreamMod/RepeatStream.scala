@@ -14,6 +14,7 @@ class RepeatStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/RepeatStream", "RepeatStream")
 @js.native
 object RepeatStream extends js.Object {

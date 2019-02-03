@@ -24,5 +24,9 @@ class ObserverLocator () extends js.Object {
     * Gets an observer for property changes.
     */
   def getObserver(obj: js.Any, propertyName: java.lang.String): InternalPropertyObserver = js.native
+  /**
+    * Gets an observer for set mutation.
+    */
+  def getSetObserver(set: stdLib.Set[_]): InternalCollectionObserver = js.native
 }
 

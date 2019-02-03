@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SymmetricAlgorithmNames () extends js.Object
 
-/** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the SymmetricKeyAlgorithmProvider class. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
 @js.native
 object SymmetricAlgorithmNames extends js.Object {

@@ -15,8 +15,11 @@ object timerDashMachineLibStrings {
   @js.native
   sealed trait time extends js.Object
   
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def time: time = "time".asInstanceOf[time]
 }
 

@@ -40,26 +40,31 @@ object PermissionsNs extends js.Object {
   class User ()
     extends realmLib.RealmNs.PermissionsNs.User
   
+  /* static members */
   @js.native
   object Class extends js.Object {
     var schema: realmLib.RealmNs.ObjectSchema = js.native
   }
   
+  /* static members */
   @js.native
   object Permission extends js.Object {
     var schema: realmLib.RealmNs.ObjectSchema = js.native
   }
   
+  /* static members */
   @js.native
   object Realm extends js.Object {
     var schema: realmLib.RealmNs.ObjectSchema = js.native
   }
   
+  /* static members */
   @js.native
   object Role extends js.Object {
     var schema: realmLib.RealmNs.ObjectSchema = js.native
   }
   
+  /* static members */
   @js.native
   object User extends js.Object {
     var schema: realmLib.RealmNs.ObjectSchema = js.native

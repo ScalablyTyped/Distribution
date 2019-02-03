@@ -48,7 +48,7 @@ class GeoboundingBox protected () extends js.Object {
   var spatialReferenceId: scala.Double = js.native
 }
 
-/** Represents a rectangle that defines a geographic area. */
+/* static members */
 @JSGlobal("Windows.Devices.Geolocation.GeoboundingBox")
 @js.native
 object GeoboundingBox extends js.Object {

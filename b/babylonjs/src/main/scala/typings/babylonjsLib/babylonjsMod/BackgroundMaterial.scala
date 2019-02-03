@@ -20,9 +20,7 @@ class BackgroundMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Background material used to create an efficient environement around your scene.
-  */
+/* static members */
 @JSImport("babylonjs", "BackgroundMaterial")
 @js.native
 object BackgroundMaterial extends js.Object {

@@ -12,6 +12,7 @@ class BreadcrumbBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsBreadcrumbBreadcrumbDotTypesMod.IBreadcrumbProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Breadcrumb", "BreadcrumbBase")
 @js.native
 object BreadcrumbBase extends js.Object {

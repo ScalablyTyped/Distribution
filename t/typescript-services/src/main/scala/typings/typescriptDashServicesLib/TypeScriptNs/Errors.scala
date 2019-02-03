@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Errors () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Errors")
 @js.native
 object Errors extends js.Object {

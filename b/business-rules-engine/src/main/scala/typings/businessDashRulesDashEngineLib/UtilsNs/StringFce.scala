@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringFce () extends js.Object
 
+/* static members */
 @JSGlobal("Utils.StringFce")
 @js.native
 object StringFce extends js.Object {

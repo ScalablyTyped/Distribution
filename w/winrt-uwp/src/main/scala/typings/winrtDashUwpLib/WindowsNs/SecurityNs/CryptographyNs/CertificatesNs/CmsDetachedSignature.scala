@@ -26,7 +26,7 @@ class CmsDetachedSignature protected () extends js.Object {
   def verifySignatureAsync(data: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IInputStream): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SignatureValidationResult] = js.native
 }
 
-/** Represents a detached signature for a signed CMS message. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CmsDetachedSignature")
 @js.native
 object CmsDetachedSignature extends js.Object {

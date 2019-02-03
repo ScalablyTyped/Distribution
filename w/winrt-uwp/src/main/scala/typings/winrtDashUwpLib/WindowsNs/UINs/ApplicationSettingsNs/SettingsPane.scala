@@ -28,7 +28,7 @@ abstract class SettingsPane () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** A static class that enables the app to control the Settings Charm pane. The app can add or remove commands, receive a notification when the user opens the pane, or open the pane programmatically. */
+/* static members */
 @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
 @js.native
 object SettingsPane extends js.Object {

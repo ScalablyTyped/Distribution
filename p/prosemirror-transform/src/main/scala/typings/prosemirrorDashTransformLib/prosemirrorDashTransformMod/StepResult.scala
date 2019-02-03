@@ -18,6 +18,7 @@ class StepResult[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
   var failed: js.UndefOr[java.lang.String | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-transform", "StepResult")
 @js.native
 object StepResult extends js.Object {

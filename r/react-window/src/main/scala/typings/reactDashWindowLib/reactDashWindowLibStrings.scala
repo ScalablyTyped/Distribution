@@ -30,13 +30,21 @@ object reactDashWindowLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

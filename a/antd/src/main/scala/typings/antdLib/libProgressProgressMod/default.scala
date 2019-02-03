@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Progress
 
+/* static members */
 @JSImport("antd/lib/progress/progress", JSImport.Default)
 @js.native
 object default extends js.Object {

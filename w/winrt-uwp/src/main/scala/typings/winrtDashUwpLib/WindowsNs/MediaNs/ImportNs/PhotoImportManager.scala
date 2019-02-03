@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PhotoImportManager () extends js.Object
 
-/** Provides APIs for determining if photo import is supported on the current device, finding sources from which to import photos, and getting references to any pending photo import operations. */
+/* static members */
 @JSGlobal("Windows.Media.Import.PhotoImportManager")
 @js.native
 object PhotoImportManager extends js.Object {

@@ -99,10 +99,7 @@ class MorphTarget protected () extends IAnimatable {
   def setTangents(data: Nullable[FloatArray]): scala.Unit = js.native
 }
 
-/**
-  * Defines a target to use with MorphTargetManager
-  * @see http://doc.babylonjs.com/how_to/how_to_use_morphtargets
-  */
+/* static members */
 @JSGlobal("BABYLON.MorphTarget")
 @js.native
 object MorphTarget extends js.Object {

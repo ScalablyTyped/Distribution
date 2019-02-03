@@ -41,6 +41,7 @@ class ReplicationSubnetGroup protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms/replicationSubnetGroup", "ReplicationSubnetGroup")
 @js.native
 object ReplicationSubnetGroup extends js.Object {

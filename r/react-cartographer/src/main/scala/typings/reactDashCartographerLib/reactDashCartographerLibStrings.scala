@@ -15,8 +15,11 @@ object reactDashCartographerLibStrings {
   @js.native
   sealed trait yahoo extends js.Object
   
+  @scala.inline
   def bing: bing = "bing".asInstanceOf[bing]
+  @scala.inline
   def google: google = "google".asInstanceOf[google]
+  @scala.inline
   def yahoo: yahoo = "yahoo".asInstanceOf[yahoo]
 }
 

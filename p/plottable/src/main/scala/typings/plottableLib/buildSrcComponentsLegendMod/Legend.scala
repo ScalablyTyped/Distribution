@@ -158,6 +158,7 @@ class Legend protected ()
   def symbolOpacity(symbolOpacity: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/components/legend", "Legend")
 @js.native
 object Legend extends js.Object {

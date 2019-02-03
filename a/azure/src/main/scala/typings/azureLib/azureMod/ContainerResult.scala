@@ -23,6 +23,7 @@ class ContainerResult () extends js.Object {
   def getPropertiesFromHeaders(headers: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "ContainerResult")
 @js.native
 object ContainerResult extends js.Object {

@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Key ()
   extends plottableLib.buildSrcDispatchersKeyDispatcherMod.Key
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers", "Key")
 @js.native
 object Key extends js.Object {

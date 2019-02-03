@@ -39,16 +39,27 @@ object chessDotJsLibStrings {
   @js.native
   sealed trait w extends js.Object
   
+  @scala.inline
   def b: b = "b".asInstanceOf[b]
+  @scala.inline
   def c: c = "c".asInstanceOf[c]
+  @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
+  @scala.inline
   def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def k: k = "k".asInstanceOf[k]
+  @scala.inline
   def light: light = "light".asInstanceOf[light]
+  @scala.inline
   def n: n = "n".asInstanceOf[n]
+  @scala.inline
   def p: p = "p".asInstanceOf[p]
+  @scala.inline
   def q: q = "q".asInstanceOf[q]
+  @scala.inline
   def r: r = "r".asInstanceOf[r]
+  @scala.inline
   def w: w = "w".asInstanceOf[w]
 }
 

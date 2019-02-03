@@ -28,6 +28,7 @@ class StockChart protected ()
   def svg(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.StockChart")
 @js.native
 object StockChart extends js.Object {

@@ -309,106 +309,207 @@ object validatorLibStrings {
   @js.native
   sealed trait `uk-UA` extends js.Object
   
+  @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
+  @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
+  @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
+  @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
+  @scala.inline
   def AU: AU = "AU".asInstanceOf[AU]
+  @scala.inline
   def BE: BE = "BE".asInstanceOf[BE]
+  @scala.inline
   def BG: BG = "BG".asInstanceOf[BG]
+  @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
+  @scala.inline
   def CH: CH = "CH".asInstanceOf[CH]
+  @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
+  @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
+  @scala.inline
   def DK: DK = "DK".asInstanceOf[DK]
+  @scala.inline
   def DZ: DZ = "DZ".asInstanceOf[DZ]
+  @scala.inline
   def ES: ES = "ES".asInstanceOf[ES]
+  @scala.inline
   def FI: FI = "FI".asInstanceOf[FI]
+  @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
+  @scala.inline
   def GB: GB = "GB".asInstanceOf[GB]
+  @scala.inline
   def GR: GR = "GR".asInstanceOf[GR]
+  @scala.inline
   def IL: IL = "IL".asInstanceOf[IL]
+  @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
+  @scala.inline
   def IS: IS = "IS".asInstanceOf[IS]
+  @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
+  @scala.inline
   def JP: JP = "JP".asInstanceOf[JP]
+  @scala.inline
   def KE: KE = "KE".asInstanceOf[KE]
+  @scala.inline
   def LI: LI = "LI".asInstanceOf[LI]
+  @scala.inline
   def MX: MX = "MX".asInstanceOf[MX]
+  @scala.inline
   def NL: NL = "NL".asInstanceOf[NL]
+  @scala.inline
   def NO: NO = "NO".asInstanceOf[NO]
+  @scala.inline
   def PL: PL = "PL".asInstanceOf[PL]
+  @scala.inline
   def PT: PT = "PT".asInstanceOf[PT]
+  @scala.inline
   def RO: RO = "RO".asInstanceOf[RO]
+  @scala.inline
   def RU: RU = "RU".asInstanceOf[RU]
+  @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
+  @scala.inline
   def SE: SE = "SE".asInstanceOf[SE]
+  @scala.inline
   def TW: TW = "TW".asInstanceOf[TW]
+  @scala.inline
   def US: US = "US".asInstanceOf[US]
+  @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
+  @scala.inline
   def ZM: ZM = "ZM".asInstanceOf[ZM]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
   def `ar-AE`: `ar-AE` = "ar-AE".asInstanceOf[`ar-AE`]
+  @scala.inline
   def `ar-BH`: `ar-BH` = "ar-BH".asInstanceOf[`ar-BH`]
+  @scala.inline
   def `ar-DZ`: `ar-DZ` = "ar-DZ".asInstanceOf[`ar-DZ`]
+  @scala.inline
   def `ar-EG`: `ar-EG` = "ar-EG".asInstanceOf[`ar-EG`]
+  @scala.inline
   def `ar-IQ`: `ar-IQ` = "ar-IQ".asInstanceOf[`ar-IQ`]
+  @scala.inline
   def `ar-JO`: `ar-JO` = "ar-JO".asInstanceOf[`ar-JO`]
+  @scala.inline
   def `ar-KW`: `ar-KW` = "ar-KW".asInstanceOf[`ar-KW`]
+  @scala.inline
   def `ar-LB`: `ar-LB` = "ar-LB".asInstanceOf[`ar-LB`]
+  @scala.inline
   def `ar-LY`: `ar-LY` = "ar-LY".asInstanceOf[`ar-LY`]
+  @scala.inline
   def `ar-MA`: `ar-MA` = "ar-MA".asInstanceOf[`ar-MA`]
+  @scala.inline
   def `ar-QA`: `ar-QA` = "ar-QA".asInstanceOf[`ar-QA`]
+  @scala.inline
   def `ar-QM`: `ar-QM` = "ar-QM".asInstanceOf[`ar-QM`]
+  @scala.inline
   def `ar-SA`: `ar-SA` = "ar-SA".asInstanceOf[`ar-SA`]
+  @scala.inline
   def `ar-SD`: `ar-SD` = "ar-SD".asInstanceOf[`ar-SD`]
+  @scala.inline
   def `ar-SY`: `ar-SY` = "ar-SY".asInstanceOf[`ar-SY`]
+  @scala.inline
   def `ar-TN`: `ar-TN` = "ar-TN".asInstanceOf[`ar-TN`]
+  @scala.inline
   def `ar-YE`: `ar-YE` = "ar-YE".asInstanceOf[`ar-YE`]
+  @scala.inline
   def `bg-BG`: `bg-BG` = "bg-BG".asInstanceOf[`bg-BG`]
+  @scala.inline
   def crc32: crc32 = "crc32".asInstanceOf[crc32]
+  @scala.inline
   def crc32b: crc32b = "crc32b".asInstanceOf[crc32b]
+  @scala.inline
   def `cs-CZ`: `cs-CZ` = "cs-CZ".asInstanceOf[`cs-CZ`]
+  @scala.inline
   def `da-DK`: `da-DK` = "da-DK".asInstanceOf[`da-DK`]
+  @scala.inline
   def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
+  @scala.inline
   def `el-GR`: `el-GR` = "el-GR".asInstanceOf[`el-GR`]
+  @scala.inline
   def `en-AU`: `en-AU` = "en-AU".asInstanceOf[`en-AU`]
+  @scala.inline
   def `en-GB`: `en-GB` = "en-GB".asInstanceOf[`en-GB`]
+  @scala.inline
   def `en-HK`: `en-HK` = "en-HK".asInstanceOf[`en-HK`]
+  @scala.inline
   def `en-IN`: `en-IN` = "en-IN".asInstanceOf[`en-IN`]
+  @scala.inline
   def `en-NZ`: `en-NZ` = "en-NZ".asInstanceOf[`en-NZ`]
+  @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
+  @scala.inline
   def `en-ZA`: `en-ZA` = "en-ZA".asInstanceOf[`en-ZA`]
+  @scala.inline
   def `en-ZM`: `en-ZM` = "en-ZM".asInstanceOf[`en-ZM`]
+  @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
+  @scala.inline
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
+  @scala.inline
   def `hu-HU`: `hu-HU` = "hu-HU".asInstanceOf[`hu-HU`]
+  @scala.inline
   def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
+  @scala.inline
   def md4: md4 = "md4".asInstanceOf[md4]
+  @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
   def `nb-NO`: `nb-NO` = "nb-NO".asInstanceOf[`nb-NO`]
+  @scala.inline
   def `nl-NL`: `nl-NL` = "nl-NL".asInstanceOf[`nl-NL`]
+  @scala.inline
   def `nn-NO`: `nn-NO` = "nn-NO".asInstanceOf[`nn-NO`]
+  @scala.inline
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
+  @scala.inline
   def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
+  @scala.inline
   def `pt-PT`: `pt-PT` = "pt-PT".asInstanceOf[`pt-PT`]
+  @scala.inline
   def ripemd128: ripemd128 = "ripemd128".asInstanceOf[ripemd128]
+  @scala.inline
   def ripemd160: ripemd160 = "ripemd160".asInstanceOf[ripemd160]
+  @scala.inline
   def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
+  @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  @scala.inline
   def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  @scala.inline
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  @scala.inline
   def `sk-SK`: `sk-SK` = "sk-SK".asInstanceOf[`sk-SK`]
+  @scala.inline
   def `sr-RS`: `sr-RS` = "sr-RS".asInstanceOf[`sr-RS`]
+  @scala.inline
   def `sr-RS@latin`: `sr-RS@latin` = "sr-RS@latin".asInstanceOf[`sr-RS@latin`]
+  @scala.inline
   def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
+  @scala.inline
   def tiger128: tiger128 = "tiger128".asInstanceOf[tiger128]
+  @scala.inline
   def tiger160: tiger160 = "tiger160".asInstanceOf[tiger160]
+  @scala.inline
   def tiger192: tiger192 = "tiger192".asInstanceOf[tiger192]
+  @scala.inline
   def `tr-TR`: `tr-TR` = "tr-TR".asInstanceOf[`tr-TR`]
+  @scala.inline
   def `uk-UA`: `uk-UA` = "uk-UA".asInstanceOf[`uk-UA`]
 }
 

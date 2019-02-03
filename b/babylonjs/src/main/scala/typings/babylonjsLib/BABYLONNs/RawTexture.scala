@@ -60,11 +60,7 @@ class RawTexture protected () extends Texture {
   def update(data: stdLib.ArrayBufferView): scala.Unit = js.native
 }
 
-/**
-  * Raw texture can help creating a texture directly from an array of data.
-  * This can be super useful if you either get the data from an uncompressed source or
-  * if you wish to create your texture pixel by pixel.
-  */
+/* static members */
 @JSGlobal("BABYLON.RawTexture")
 @js.native
 object RawTexture extends js.Object {

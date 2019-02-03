@@ -11,6 +11,7 @@ class JavaScriptLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object, preferXHR: scala.Boolean) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.JavaScriptLoader")
 @js.native
 object JavaScriptLoader extends js.Object {

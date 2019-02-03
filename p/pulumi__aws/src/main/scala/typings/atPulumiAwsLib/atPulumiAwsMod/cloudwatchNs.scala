@@ -217,6 +217,7 @@ object cloudwatchNs extends js.Object {
     args: atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscriptionArgs,
     opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions
   ): atPulumiAwsLib.cloudwatchEventRuleMixinsMod.EventRuleEventSubscription = js.native
+  /* static members */
   @js.native
   object Dashboard extends js.Object {
     /**
@@ -241,6 +242,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchDashboardMod.Dashboard = js.native
   }
   
+  /* static members */
   @js.native
   object EventPermission extends js.Object {
     /**
@@ -265,6 +267,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchEventPermissionMod.EventPermission = js.native
   }
   
+  /* static members */
   @js.native
   object EventRule extends js.Object {
     /**
@@ -289,6 +292,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchEventRuleMixinsMod.cloudwatchEventRuleMod.EventRule = js.native
   }
   
+  /* static members */
   @js.native
   object EventTarget extends js.Object {
     /**
@@ -313,6 +317,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchEventTargetMod.EventTarget = js.native
   }
   
+  /* static members */
   @js.native
   object LogDestination extends js.Object {
     /**
@@ -337,6 +342,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogDestinationMod.LogDestination = js.native
   }
   
+  /* static members */
   @js.native
   object LogDestinationPolicy extends js.Object {
     /**
@@ -361,6 +367,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogDestinationPolicyMod.LogDestinationPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object LogGroup extends js.Object {
     /**
@@ -385,6 +392,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogGroupMixinsMod.cloudwatchLogGroupMod.LogGroup = js.native
   }
   
+  /* static members */
   @js.native
   object LogMetricFilter extends js.Object {
     /**
@@ -409,6 +417,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogMetricFilterMod.LogMetricFilter = js.native
   }
   
+  /* static members */
   @js.native
   object LogResourcePolicy extends js.Object {
     /**
@@ -433,6 +442,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogResourcePolicyMod.LogResourcePolicy = js.native
   }
   
+  /* static members */
   @js.native
   object LogStream extends js.Object {
     /**
@@ -457,6 +467,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogStreamMod.LogStream = js.native
   }
   
+  /* static members */
   @js.native
   object LogSubscriptionFilter extends js.Object {
     /**
@@ -481,6 +492,7 @@ object cloudwatchNs extends js.Object {
     ): atPulumiAwsLib.cloudwatchLogSubscriptionFilterMod.LogSubscriptionFilter = js.native
   }
   
+  /* static members */
   @js.native
   object MetricAlarm extends js.Object {
     /**

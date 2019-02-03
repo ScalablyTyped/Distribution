@@ -13,6 +13,7 @@ class Suite ()
   def this(name: java.lang.String, options: benchmarkLib.benchmarkMod.BenchmarkNs.Options) = this()
 }
 
+/* static members */
 @JSImport("benchmark", "Suite")
 @js.native
 object Suite extends js.Object {

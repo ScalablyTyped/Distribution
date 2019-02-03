@@ -13,6 +13,7 @@ class AbstractMeasurer protected ()
   def this(ruler: typesettableLib.buildSrcMeasurersAbstractMeasurerMod.IRuler) = this()
 }
 
+/* static members */
 @JSImport("typesettable", "AbstractMeasurer")
 @js.native
 object AbstractMeasurer extends js.Object {

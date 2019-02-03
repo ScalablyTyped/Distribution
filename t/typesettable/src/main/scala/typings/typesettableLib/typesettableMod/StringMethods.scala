@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StringMethods ()
   extends typesettableLib.buildSrcUtilsMod.StringMethods
 
+/* static members */
 @JSImport("typesettable", "StringMethods")
 @js.native
 object StringMethods extends js.Object {

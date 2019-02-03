@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RangeSlider ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.RangeSlider
 
+/* static members */
 @JSImport("@blueprintjs/core", "RangeSlider")
 @js.native
 object RangeSlider extends js.Object {

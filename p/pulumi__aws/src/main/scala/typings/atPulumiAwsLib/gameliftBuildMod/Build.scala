@@ -36,6 +36,7 @@ class Build protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift/build", "Build")
 @js.native
 object Build extends js.Object {

@@ -58,6 +58,7 @@ class namespaced () extends Config {
   override var setCorrelationId: js.Any = js.native
 }
 
+/* static members */
 @JSImport("applicationinsights/out/Library/Config", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

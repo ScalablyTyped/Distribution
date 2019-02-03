@@ -26,13 +26,7 @@ class default protected ()
   def this(options: openlayersLib.openlayersMod.olxNs.sourceNs.BingMapsOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Layer source for Bing Maps tile data.
-  *
-  * @param options Bing Maps options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/source/bingmaps", JSImport.Default)
 @js.native
 object default extends js.Object {

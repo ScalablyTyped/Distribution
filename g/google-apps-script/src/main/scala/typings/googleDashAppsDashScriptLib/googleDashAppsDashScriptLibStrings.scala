@@ -21,10 +21,15 @@ object googleDashAppsDashScriptLibStrings {
   @js.native
   sealed trait put extends js.Object
   
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
 }
 

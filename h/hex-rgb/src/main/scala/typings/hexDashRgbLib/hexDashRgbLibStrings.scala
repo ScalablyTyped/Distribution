@@ -9,6 +9,7 @@ object hexDashRgbLibStrings {
   @js.native
   sealed trait array extends js.Object
   
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
 }
 

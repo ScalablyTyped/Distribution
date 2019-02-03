@@ -38,6 +38,7 @@ class Cookie () extends js.Object {
   def validate(): scala.Boolean | java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("tough-cookie", "Cookie")
 @js.native
 object Cookie extends js.Object {

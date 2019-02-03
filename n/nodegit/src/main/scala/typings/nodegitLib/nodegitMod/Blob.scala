@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Blob ()
   extends nodegitLib.blobMod.Blob
 
+/* static members */
 @JSImport("nodegit", "Blob")
 @js.native
 object Blob extends js.Object {

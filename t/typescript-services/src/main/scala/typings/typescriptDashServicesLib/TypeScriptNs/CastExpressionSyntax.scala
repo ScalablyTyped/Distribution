@@ -75,6 +75,7 @@ class CastExpressionSyntax protected ()
   def withType(`type`: ITypeSyntax): CastExpressionSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.CastExpressionSyntax")
 @js.native
 object CastExpressionSyntax extends js.Object {

@@ -21,7 +21,7 @@ abstract class PdfDocument () extends js.Object {
   def getPage(pageIndex: scala.Double): PdfPage = js.native
 }
 
-/** Represents a Portable Document Format (PDF) document. */
+/* static members */
 @JSGlobal("Windows.Data.Pdf.PdfDocument")
 @js.native
 object PdfDocument extends js.Object {

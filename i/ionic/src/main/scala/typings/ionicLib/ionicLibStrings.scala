@@ -186,65 +186,125 @@ object ionicLibStrings {
   @js.native
   sealed trait yarn extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def ERR_INVALID_PROJECT_FILE: ERR_INVALID_PROJECT_FILE = "ERR_INVALID_PROJECT_FILE".asInstanceOf[ERR_INVALID_PROJECT_FILE]
+  @scala.inline
   def ERR_INVALID_PROJECT_TYPE: ERR_INVALID_PROJECT_TYPE = "ERR_INVALID_PROJECT_TYPE".asInstanceOf[ERR_INVALID_PROJECT_TYPE]
+  @scala.inline
   def ERR_MISSING_PROJECT_TYPE: ERR_MISSING_PROJECT_TYPE = "ERR_MISSING_PROJECT_TYPE".asInstanceOf[ERR_MISSING_PROJECT_TYPE]
+  @scala.inline
   def ERR_MULTI_MISSING_CONFIG: ERR_MULTI_MISSING_CONFIG = "ERR_MULTI_MISSING_CONFIG".asInstanceOf[ERR_MULTI_MISSING_CONFIG]
+  @scala.inline
   def ERR_MULTI_MISSING_ID: ERR_MULTI_MISSING_ID = "ERR_MULTI_MISSING_ID".asInstanceOf[ERR_MULTI_MISSING_ID]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def OAuthIdentity: OAuthIdentity = "OAuthIdentity".asInstanceOf[OAuthIdentity]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PURGE: PURGE = "PURGE".asInstanceOf[PURGE]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def android: android = "android".asInstanceOf[android]
+  @scala.inline
   def angular: angular = "angular".asInstanceOf[angular]
+  @scala.inline
   def app: app = "app".asInstanceOf[app]
+  @scala.inline
   def bare: bare = "bare".asInstanceOf[bare]
+  @scala.inline
   def bitbucket_cloud: bitbucket_cloud = "bitbucket_cloud".asInstanceOf[bitbucket_cloud]
+  @scala.inline
   def bitbucket_server: bitbucket_server = "bitbucket_server".asInstanceOf[bitbucket_server]
+  @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
+  @scala.inline
   def `build:after`: `build:after` = "build:after".asInstanceOf[`build:after`]
+  @scala.inline
   def `build:before`: `build:before` = "build:before".asInstanceOf[`build:before`]
+  @scala.inline
   def canary: canary = "canary".asInstanceOf[canary]
+  @scala.inline
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
+  @scala.inline
   def compile: compile = "compile".asInstanceOf[compile]
+  @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
+  @scala.inline
   def development: development = "development".asInstanceOf[development]
+  @scala.inline
   def environment: environment = "environment".asInstanceOf[environment]
+  @scala.inline
   def github: github = "github".asInstanceOf[github]
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def guard: guard = "guard".asInstanceOf[guard]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
   def ionic: ionic = "ionic".asInstanceOf[ionic]
+  @scala.inline
   def `ionic-angular`: `ionic-angular` = "ionic-angular".asInstanceOf[`ionic-angular`]
+  @scala.inline
   def ionic1: ionic1 = "ionic1".asInstanceOf[ionic1]
+  @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def latest: latest = "latest".asInstanceOf[latest]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def multiapp: multiapp = "multiapp".asInstanceOf[multiapp]
+  @scala.inline
   def npm: npm = "npm".asInstanceOf[npm]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def production: production = "production".asInstanceOf[production]
+  @scala.inline
   def project: project = "project".asInstanceOf[project]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def reqgen: reqgen = "reqgen".asInstanceOf[reqgen]
+  @scala.inline
   def `serve:after`: `serve:after` = "serve:after".asInstanceOf[`serve:after`]
+  @scala.inline
   def `serve:before`: `serve:before` = "serve:before".asInstanceOf[`serve:before`]
+  @scala.inline
   def splash: splash = "splash".asInstanceOf[splash]
+  @scala.inline
   def `ssl-commands`: `ssl-commands` = "ssl-commands".asInstanceOf[`ssl-commands`]
+  @scala.inline
   def state: state = "state".asInstanceOf[state]
+  @scala.inline
   def system: system = "system".asInstanceOf[system]
+  @scala.inline
   def telemetry: telemetry = "telemetry".asInstanceOf[telemetry]
+  @scala.inline
   def testing: testing = "testing".asInstanceOf[testing]
+  @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
+  @scala.inline
   def windows: windows = "windows".asInstanceOf[windows]
+  @scala.inline
   def wp8: wp8 = "wp8".asInstanceOf[wp8]
+  @scala.inline
   def yarn: yarn = "yarn".asInstanceOf[yarn]
 }
 

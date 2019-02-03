@@ -786,9 +786,7 @@ class KiiObject () extends js.Object {
   def uploadBody(srcDataBlob: stdLib.Blob, callbacks: kiiDashCloudDashSdkLib.Anon_AnErrorStringFailureObj): js.Promise[KiiObject] = js.native
 }
 
-/**
-  * Represents a KiiObject object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiObject")
 @js.native
 object KiiObject extends js.Object {

@@ -46,6 +46,7 @@ class PhoneNumberUtil () extends js.Object {
   def truncateTooLongNumber(number: PhoneNumber): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("libphonenumber.PhoneNumberUtil")
 @js.native
 object PhoneNumberUtil extends js.Object {

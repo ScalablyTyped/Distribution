@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTabBar ()
   extends atMaterialTabsLib.tabDashBarMod.MDCTabBar
 
+/* static members */
 @JSImport("@material/tabs", "MDCTabBar")
 @js.native
 object MDCTabBar extends js.Object {

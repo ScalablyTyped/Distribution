@@ -11,6 +11,7 @@ class namespaced () extends StackUtils {
   def this(options: stackDashUtilsLib.stackDashUtilsMod.StackUtilsNs.Options) = this()
 }
 
+/* static members */
 @JSImport("stack-utils", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

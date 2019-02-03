@@ -247,6 +247,7 @@ class ElementFinder protected () extends WebdriverWebElement {
   def locator(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("protractor/built/element", "ElementFinder")
 @js.native
 object ElementFinder extends js.Object {

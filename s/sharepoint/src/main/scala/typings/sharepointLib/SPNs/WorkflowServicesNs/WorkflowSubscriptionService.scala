@@ -38,6 +38,7 @@ class WorkflowSubscriptionService protected ()
   def unregisterInterestInList(listId: java.lang.String, eventName: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.WorkflowServices.WorkflowSubscriptionService")
 @js.native
 object WorkflowSubscriptionService extends js.Object {

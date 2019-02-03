@@ -57,7 +57,7 @@ abstract class InputPane () extends js.Object {
   def tryShow(): scala.Boolean = js.native
 }
 
-/** Enables an app to register to receive notifications when the input pane is about to be displayed or hidden, and to determine which portion of the application's window is being obscured by the input pane. */
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.InputPane")
 @js.native
 object InputPane extends js.Object {

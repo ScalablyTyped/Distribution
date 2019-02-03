@@ -17,6 +17,7 @@ class Ray ()
   override var origin: cesiumLib.cesiumMod.CesiumNs.Cartesian3 = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Ray")
 @js.native
 object Ray extends js.Object {

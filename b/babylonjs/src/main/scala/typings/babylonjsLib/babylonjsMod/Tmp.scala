@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class Tmp ()
   extends babylonjsLib.BABYLONNs.Tmp
 
-/**
-  * @hidden
-  */
+/* static members */
 @JSImport("babylonjs", "Tmp")
 @js.native
 object Tmp extends js.Object {

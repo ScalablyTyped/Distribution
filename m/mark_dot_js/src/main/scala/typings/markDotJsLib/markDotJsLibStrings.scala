@@ -24,11 +24,17 @@ object markDotJsLibStrings {
   @js.native
   sealed trait withSpaces extends js.Object
   
+  @scala.inline
   def complementary: complementary = "complementary".asInstanceOf[complementary]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def enabled: enabled = "enabled".asInstanceOf[enabled]
+  @scala.inline
   def exactly: exactly = "exactly".asInstanceOf[exactly]
+  @scala.inline
   def partially: partially = "partially".asInstanceOf[partially]
+  @scala.inline
   def withSpaces: withSpaces = "withSpaces".asInstanceOf[withSpaces]
 }
 

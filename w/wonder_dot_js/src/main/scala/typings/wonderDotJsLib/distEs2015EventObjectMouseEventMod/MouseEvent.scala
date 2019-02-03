@@ -20,6 +20,7 @@ class MouseEvent ()
   val wheel: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/object/MouseEvent", "MouseEvent")
 @js.native
 object MouseEvent extends js.Object {

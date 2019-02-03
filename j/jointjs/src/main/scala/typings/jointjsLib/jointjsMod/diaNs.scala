@@ -770,6 +770,7 @@ object diaNs extends js.Object {
     /* protected */ def simulateRelatedView(el: stdLib.SVGElement): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Cell extends js.Object {
     def define(`type`: java.lang.String): jointjsLib.jointjsMod.diaNs.CellNs.Constructor[jointjsLib.jointjsMod.diaNs.Cell] = js.native
@@ -817,6 +818,7 @@ object diaNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object CellViewGeneric extends js.Object {
     def dispatchToolsEvent(paper: jointjsLib.jointjsMod.diaNs.Paper, eventName: java.lang.String): scala.Unit = js.native
@@ -834,6 +836,7 @@ object diaNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object Element extends js.Object {
     def define(`type`: java.lang.String): jointjsLib.jointjsMod.diaNs.CellNs.Constructor[jointjsLib.jointjsMod.diaNs.Element] = js.native
@@ -915,6 +918,7 @@ object diaNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object Link extends js.Object {
     def define(`type`: java.lang.String): jointjsLib.jointjsMod.diaNs.CellNs.Constructor[jointjsLib.jointjsMod.diaNs.Link] = js.native

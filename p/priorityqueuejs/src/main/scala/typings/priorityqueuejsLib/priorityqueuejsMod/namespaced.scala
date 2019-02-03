@@ -53,6 +53,7 @@ class namespaced[T] () extends PriorityQueue[T] {
   override def size(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("priorityqueuejs", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

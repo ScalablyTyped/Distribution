@@ -64,6 +64,7 @@ class ExpressionStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ExpressionStatementSyntax")
 @js.native
 object ExpressionStatementSyntax extends js.Object {

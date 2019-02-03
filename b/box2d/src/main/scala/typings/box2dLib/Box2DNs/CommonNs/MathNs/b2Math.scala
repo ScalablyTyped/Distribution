@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class b2Math () extends js.Object
 
+/* static members */
 @JSGlobal("Box2D.Common.Math.b2Math")
 @js.native
 object b2Math extends js.Object {

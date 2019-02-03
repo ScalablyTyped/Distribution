@@ -13,6 +13,7 @@ class Response ()
   def this(body: apolloDashEnvLib.libFetchFetchMod.BodyInit, init: apolloDashEnvLib.libFetchFetchMod.ResponseInit) = this()
 }
 
+/* static members */
 @JSImport("apollo-env/lib/fetch", "Response")
 @js.native
 object Response extends js.Object {

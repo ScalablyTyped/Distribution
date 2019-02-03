@@ -12,6 +12,7 @@ class Asset protected ()
   def this(code: java.lang.String, issuer: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("stellar-sdk", "Asset")
 @js.native
 object Asset extends js.Object {

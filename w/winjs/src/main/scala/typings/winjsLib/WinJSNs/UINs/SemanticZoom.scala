@@ -96,9 +96,7 @@ class SemanticZoom () extends js.Object {
   def zoomedOutItem(any: js.Any): js.Any = js.native
 }
 
-/**
-  * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SemanticZoom")
 @js.native
 object SemanticZoom extends js.Object {

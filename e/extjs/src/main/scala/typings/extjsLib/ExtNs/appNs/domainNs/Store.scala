@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Store () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.app.domain.Store")
 @js.native
 object Store extends js.Object {

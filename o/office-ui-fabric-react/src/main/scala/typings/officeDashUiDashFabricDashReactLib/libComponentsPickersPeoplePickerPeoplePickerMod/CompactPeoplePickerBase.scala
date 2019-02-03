@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompactPeoplePickerBase () extends BasePeoplePicker
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/pickers/PeoplePicker/PeoplePicker", "CompactPeoplePickerBase")
 @js.native
 object CompactPeoplePickerBase extends js.Object {

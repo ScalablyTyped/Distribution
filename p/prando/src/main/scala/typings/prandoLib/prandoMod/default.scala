@@ -17,6 +17,7 @@ class default () extends Prando {
   def this(seed: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("prando", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -14,6 +14,7 @@ class RecordSummary protected () extends js.Object {
   var `type`: js.UndefOr[java.lang.String | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("relay-runtime", "RecordSummary")
 @js.native
 object RecordSummary extends js.Object {

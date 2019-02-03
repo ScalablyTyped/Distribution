@@ -33,13 +33,7 @@ class ShaderMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, shaderPath: js.Any, options: stdLib.Partial[babylonjsLib.BABYLONNs.IShaderMaterialOptions]) = this()
 }
 
-/**
-  * The ShaderMaterial object has the necessary methods to pass data from your scene to the Vertex and Fragment Shaders and returns a material that can be applied to any mesh.
-  *
-  * This returned material effects how the mesh will look based on the code in the shaders.
-  *
-  * @see http://doc.babylonjs.com/how_to/shader_material
-  */
+/* static members */
 @JSImport("babylonjs", "ShaderMaterial")
 @js.native
 object ShaderMaterial extends js.Object {

@@ -18,6 +18,7 @@ class CheckboxBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsCheckboxCheckboxDotTypesMod.ICheckboxProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "CheckboxBase")
 @js.native
 object CheckboxBase extends js.Object {

@@ -20,6 +20,7 @@ class Version protected () extends js.Object {
   def getECBlocksForLevel(ecLevel: ErrorCorrectionLevel): ECBlocks = js.native
 }
 
+/* static members */
 @JSGlobal("Version")
 @js.native
 object Version extends js.Object {

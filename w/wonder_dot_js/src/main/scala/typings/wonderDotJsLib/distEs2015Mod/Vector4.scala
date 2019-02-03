@@ -12,6 +12,7 @@ class Vector4 ()
   def this(x: js.Any, y: js.Any, z: js.Any, w: js.Any) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Vector4")
 @js.native
 object Vector4 extends js.Object {

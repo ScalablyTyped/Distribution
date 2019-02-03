@@ -40,6 +40,7 @@ class DayOfWeek ()
   override def value(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "DayOfWeek")
 @js.native
 object DayOfWeek extends js.Object {

@@ -40,7 +40,7 @@ abstract class Lamp () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a lamp device. */
+/* static members */
 @JSGlobal("Windows.Devices.Lights.Lamp")
 @js.native
 object Lamp extends js.Object {

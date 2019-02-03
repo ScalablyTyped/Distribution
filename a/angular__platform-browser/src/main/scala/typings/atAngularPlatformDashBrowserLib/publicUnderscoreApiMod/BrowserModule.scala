@@ -12,6 +12,7 @@ class BrowserModule ()
   def this(parentModule: atAngularPlatformDashBrowserLib.srcBrowserMod.BrowserModule) = this()
 }
 
+/* static members */
 @JSImport("@angular/platform-browser/public_api", "BrowserModule")
 @js.native
 object BrowserModule extends js.Object {

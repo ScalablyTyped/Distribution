@@ -20,6 +20,7 @@ class Rule protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalRuleMod.RuleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional", "Rule")
 @js.native
 object Rule extends js.Object {

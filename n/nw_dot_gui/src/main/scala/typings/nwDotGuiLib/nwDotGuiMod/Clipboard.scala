@@ -15,6 +15,7 @@ class Clipboard () extends js.Object {
   def set(data: java.lang.String, `type`: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nw.gui", "Clipboard")
 @js.native
 object Clipboard extends js.Object {

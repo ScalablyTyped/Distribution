@@ -21,6 +21,7 @@ class Ami protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2AmiMod.AmiArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "Ami")
 @js.native
 object Ami extends js.Object {

@@ -28,6 +28,7 @@ class WebAclAssociation protected ()
   val webAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/webAclAssociation", "WebAclAssociation")
 @js.native
 object WebAclAssociation extends js.Object {

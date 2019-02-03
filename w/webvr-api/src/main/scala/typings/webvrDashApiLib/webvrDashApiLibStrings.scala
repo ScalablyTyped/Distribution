@@ -51,20 +51,35 @@ object webvrDashApiLibStrings {
   @js.native
   sealed trait vrdisplaypresentchange extends js.Object
   
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def mounted: mounted = "mounted".asInstanceOf[mounted]
+  @scala.inline
   def navigation: navigation = "navigation".asInstanceOf[navigation]
+  @scala.inline
   def requested: requested = "requested".asInstanceOf[requested]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
+  @scala.inline
   def vrdisplayactivate: vrdisplayactivate = "vrdisplayactivate".asInstanceOf[vrdisplayactivate]
+  @scala.inline
   def vrdisplayblur: vrdisplayblur = "vrdisplayblur".asInstanceOf[vrdisplayblur]
+  @scala.inline
   def vrdisplayconnect: vrdisplayconnect = "vrdisplayconnect".asInstanceOf[vrdisplayconnect]
+  @scala.inline
   def vrdisplaydeactivate: vrdisplaydeactivate = "vrdisplaydeactivate".asInstanceOf[vrdisplaydeactivate]
+  @scala.inline
   def vrdisplaydisconnect: vrdisplaydisconnect = "vrdisplaydisconnect".asInstanceOf[vrdisplaydisconnect]
+  @scala.inline
   def vrdisplayfocus: vrdisplayfocus = "vrdisplayfocus".asInstanceOf[vrdisplayfocus]
+  @scala.inline
   def vrdisplaypointerrestricted: vrdisplaypointerrestricted = "vrdisplaypointerrestricted".asInstanceOf[vrdisplaypointerrestricted]
+  @scala.inline
   def vrdisplaypointerunrestricted: vrdisplaypointerunrestricted = "vrdisplaypointerunrestricted".asInstanceOf[vrdisplaypointerunrestricted]
+  @scala.inline
   def vrdisplaypresentchange: vrdisplaypresentchange = "vrdisplaypresentchange".asInstanceOf[vrdisplaypresentchange]
 }
 

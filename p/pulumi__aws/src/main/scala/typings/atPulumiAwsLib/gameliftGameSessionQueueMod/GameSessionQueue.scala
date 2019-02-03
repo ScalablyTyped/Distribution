@@ -43,6 +43,7 @@ class GameSessionQueue protected ()
   val timeoutInSeconds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift/gameSessionQueue", "GameSessionQueue")
 @js.native
 object GameSessionQueue extends js.Object {

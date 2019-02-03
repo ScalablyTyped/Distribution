@@ -21,6 +21,7 @@ class Serializer ()
   def toObject(value: js.Any, obj: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializer", "Serializer")
 @js.native
 object Serializer extends js.Object {

@@ -20,6 +20,7 @@ class S3BucketAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.macieS3BucketAssociationMod.S3BucketAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/macie", "S3BucketAssociation")
 @js.native
 object S3BucketAssociation extends js.Object {

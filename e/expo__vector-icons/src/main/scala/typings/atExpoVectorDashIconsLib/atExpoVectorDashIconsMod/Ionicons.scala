@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Ionicons ()
   extends reactDashNativeDashVectorDashIconsLib.ioniconsMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Ionicons")
 @js.native
 object Ionicons extends js.Object {

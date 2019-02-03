@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GeotagHelper () extends js.Object
 
-/** Provides methods for setting and retrieving geographic metadata for a file. */
+/* static members */
 @JSGlobal("Windows.Storage.FileProperties.GeotagHelper")
 @js.native
 object GeotagHelper extends js.Object {

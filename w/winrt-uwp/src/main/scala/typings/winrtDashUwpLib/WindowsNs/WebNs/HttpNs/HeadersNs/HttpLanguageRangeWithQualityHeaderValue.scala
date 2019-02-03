@@ -26,7 +26,7 @@ class HttpLanguageRangeWithQualityHeaderValue protected () extends js.Object {
   var quality: scala.Double = js.native
 }
 
-/** Represents accept language information used in the Accept-Language HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpLanguageRangeWithQualityHeaderValue")
 @js.native
 object HttpLanguageRangeWithQualityHeaderValue extends js.Object {

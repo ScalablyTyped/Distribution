@@ -15,8 +15,11 @@ object sendLibStrings {
   @js.native
   sealed trait ignore extends js.Object
   
+  @scala.inline
   def allow: allow = "allow".asInstanceOf[allow]
+  @scala.inline
   def deny: deny = "deny".asInstanceOf[deny]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
 }
 

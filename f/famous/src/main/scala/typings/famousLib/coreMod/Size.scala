@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Size () extends js.Object
 
+/* static members */
 @JSImport("famous/core", "Size")
 @js.native
 object Size extends js.Object {

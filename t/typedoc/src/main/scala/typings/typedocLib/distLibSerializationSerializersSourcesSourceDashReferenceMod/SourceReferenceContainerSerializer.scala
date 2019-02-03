@@ -18,6 +18,7 @@ class SourceReferenceContainerSerializer ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/sources/source-reference", "SourceReferenceContainerSerializer")
 @js.native
 object SourceReferenceContainerSerializer extends js.Object {

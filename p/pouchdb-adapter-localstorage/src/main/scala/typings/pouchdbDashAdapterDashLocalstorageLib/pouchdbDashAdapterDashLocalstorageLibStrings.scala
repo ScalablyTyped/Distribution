@@ -9,6 +9,7 @@ object pouchdbDashAdapterDashLocalstorageLibStrings {
   @js.native
   sealed trait localstorage extends js.Object
   
+  @scala.inline
   def localstorage: localstorage = "localstorage".asInstanceOf[localstorage]
 }
 

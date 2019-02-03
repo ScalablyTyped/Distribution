@@ -28,6 +28,7 @@ class GroupPolicyAttachment protected ()
   val policyArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.arnMod.ARN] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment")
 @js.native
 object GroupPolicyAttachment extends js.Object {

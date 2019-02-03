@@ -23,6 +23,7 @@ class Diagnostic protected () extends Location {
   def toJSON(key: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Diagnostic")
 @js.native
 object Diagnostic extends js.Object {

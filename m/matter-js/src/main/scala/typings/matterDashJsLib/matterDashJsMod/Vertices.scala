@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Vertices ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Vertices
 
+/* static members */
 @JSImport("matter-js", "Vertices")
 @js.native
 object Vertices extends js.Object {

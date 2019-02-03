@@ -21,6 +21,7 @@ class CommentPlugin ()
   var storeModuleComment: js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins/CommentPlugin", "CommentPlugin")
 @js.native
 object CommentPlugin extends js.Object {

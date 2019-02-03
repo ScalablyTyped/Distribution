@@ -154,6 +154,7 @@ class Instance protected ()
   val virtualizationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/instance", "Instance")
 @js.native
 object Instance extends js.Object {

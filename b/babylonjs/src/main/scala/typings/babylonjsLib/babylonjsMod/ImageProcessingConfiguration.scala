@@ -15,11 +15,7 @@ import scala.scalajs.js.annotation._
 class ImageProcessingConfiguration ()
   extends babylonjsLib.BABYLONNs.ImageProcessingConfiguration
 
-/**
-  * This groups together the common properties used for image processing either in direct forward pass
-  * or through post processing effect depending on the use of the image processing pipeline in your scene
-  * or not.
-  */
+/* static members */
 @JSImport("babylonjs", "ImageProcessingConfiguration")
 @js.native
 object ImageProcessingConfiguration extends js.Object {

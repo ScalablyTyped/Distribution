@@ -29,9 +29,7 @@ class ValueCondition protected ()
   operator: scala.Double) = this()
 }
 
-/**
-  * Defines specific conditional operators as extensions of Condition
-  */
+/* static members */
 @JSImport("babylonjs", "ValueCondition")
 @js.native
 object ValueCondition extends js.Object {

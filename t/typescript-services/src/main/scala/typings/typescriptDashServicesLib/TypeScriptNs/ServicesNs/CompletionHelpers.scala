@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CompletionHelpers () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.CompletionHelpers")
 @js.native
 object CompletionHelpers extends js.Object {

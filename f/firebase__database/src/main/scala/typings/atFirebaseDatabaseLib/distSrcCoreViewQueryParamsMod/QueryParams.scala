@@ -134,6 +134,7 @@ class QueryParams () extends js.Object {
   def toRestQueryStringParameters(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/view/QueryParams", "QueryParams")
 @js.native
 object QueryParams extends js.Object {

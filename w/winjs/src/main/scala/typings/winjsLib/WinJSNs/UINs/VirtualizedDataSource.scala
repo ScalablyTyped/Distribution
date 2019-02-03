@@ -49,9 +49,7 @@ class VirtualizedDataSource[T] protected () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Serves as the base class for a custom IListDataSource.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.VirtualizedDataSource")
 @js.native
 object VirtualizedDataSource extends js.Object {

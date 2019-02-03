@@ -31,6 +31,7 @@ class Account protected ()
   val throttleSettings: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_BurstLimit] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/account", "Account")
 @js.native
 object Account extends js.Object {

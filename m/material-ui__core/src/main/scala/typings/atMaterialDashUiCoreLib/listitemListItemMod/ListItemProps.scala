@@ -13,6 +13,9 @@ import scala.scalajs.js.annotation._
     reactLib.reactMod.ReactNs.ReactType[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]]
   ] = js.undefined
   var ContainerProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement]] = js.undefined
+  var alignItems: js.UndefOr[
+    atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.`flex-start` | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.center
+  ] = js.undefined
   var button: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[ListItemProps]] = js.undefined

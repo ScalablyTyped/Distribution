@@ -19,6 +19,7 @@ class Change protected () extends js.Object {
   var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/view/Change", "Change")
 @js.native
 object Change extends js.Object {

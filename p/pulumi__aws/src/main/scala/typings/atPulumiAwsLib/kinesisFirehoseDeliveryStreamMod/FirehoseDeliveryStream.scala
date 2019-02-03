@@ -63,6 +63,7 @@ class FirehoseDeliveryStream protected ()
   val versionId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream")
 @js.native
 object FirehoseDeliveryStream extends js.Object {

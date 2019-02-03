@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Icon ()
   extends reactLib.reactMod.Component[IconProps, js.Any, js.Any]
 
+/* static members */
 @JSImport("react-native-vector-icons/Icon", "Icon")
 @js.native
 object Icon extends js.Object {

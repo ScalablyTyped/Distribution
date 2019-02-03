@@ -13,6 +13,7 @@ class Dialog ()
   /* private */ def maybeRenderHeader(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/dialog/dialog", "Dialog")
 @js.native
 object Dialog extends js.Object {

@@ -38,6 +38,7 @@ class RolePolicy protected ()
   val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/rolePolicy", "RolePolicy")
 @js.native
 object RolePolicy extends js.Object {

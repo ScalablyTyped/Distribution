@@ -27,9 +27,7 @@ class Ray protected ()
   length: scala.Double) = this()
 }
 
-/**
-  * Class representing a ray with position and direction
-  */
+/* static members */
 @JSImport("babylonjs", "Ray")
 @js.native
 object Ray extends js.Object {

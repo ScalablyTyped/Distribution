@@ -58,6 +58,7 @@ abstract class DriverProvider protected () extends js.Object {
   def updateJob(update: js.Any): qLib.qMod.QNs.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("protractor/built/driverProviders/driverProvider", "DriverProvider")
 @js.native
 object DriverProvider extends js.Object {

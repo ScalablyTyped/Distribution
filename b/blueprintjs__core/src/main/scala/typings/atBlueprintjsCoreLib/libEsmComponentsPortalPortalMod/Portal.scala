@@ -24,6 +24,7 @@ class Portal ()
   /* private */ def unstableRenderNoPortal(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/portal/portal", "Portal")
 @js.native
 object Portal extends js.Object {

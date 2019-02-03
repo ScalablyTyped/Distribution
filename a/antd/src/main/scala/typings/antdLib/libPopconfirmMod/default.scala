@@ -11,6 +11,7 @@ class default protected () extends Popconfirm {
   def this(props: PopconfirmProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/popconfirm", JSImport.Default)
 @js.native
 object default extends js.Object {

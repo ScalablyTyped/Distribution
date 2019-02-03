@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebAuthenticationBroker () extends js.Object
 
-/** Starts the authentication operation. You can call the methods of this class multiple times in a single application or across multiple applications at the same time. */
+/* static members */
 @JSGlobal("Windows.Security.Authentication.Web.WebAuthenticationBroker")
 @js.native
 object WebAuthenticationBroker extends js.Object {

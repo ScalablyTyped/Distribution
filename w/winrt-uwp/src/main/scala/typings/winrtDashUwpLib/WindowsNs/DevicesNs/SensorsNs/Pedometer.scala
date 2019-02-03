@@ -37,7 +37,7 @@ abstract class Pedometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides an interface for a pedometer to measure the number of steps taken. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Pedometer")
 @js.native
 object Pedometer extends js.Object {

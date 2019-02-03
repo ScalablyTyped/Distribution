@@ -25,6 +25,7 @@ class Dialog protected () extends Widget {
   def toFront(): Dialog = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Dialog")
 @js.native
 object Dialog extends js.Object {

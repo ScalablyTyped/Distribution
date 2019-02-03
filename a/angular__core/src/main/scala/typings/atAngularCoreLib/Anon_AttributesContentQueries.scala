@@ -82,7 +82,9 @@ trait Anon_AttributesContentQueries[T] extends js.Object {
     *    API will be simplified to be consistent with `output`.
     */
   var inputs: js.UndefOr[
-    atAngularCoreLib.atAngularCoreLibStrings.Anon_AttributesContentQueries with js.Any
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | [string, string] | undefined}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_AttributesContentQueries with js.Any
   ] = js.native
   /**
     * A map of output names.
@@ -95,7 +97,9 @@ trait Anon_AttributesContentQueries[T] extends js.Object {
     * of properties.
     */
   var outputs: js.UndefOr[
-    atAngularCoreLib.atAngularCoreLibStrings.Anon_AttributesContentQueries with js.Any
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | undefined}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_AttributesContentQueries with js.Any
   ] = js.native
   /** The selectors that will be used to match nodes to this directive. */
   var selectors: js.Array[

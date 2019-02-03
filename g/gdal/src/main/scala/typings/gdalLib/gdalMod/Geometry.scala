@@ -55,6 +55,7 @@ abstract class Geometry () extends js.Object {
   def within(geometry: Geometry): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("gdal", "Geometry")
 @js.native
 object Geometry extends js.Object {

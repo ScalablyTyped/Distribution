@@ -17,9 +17,7 @@ class namespaced protected () extends OAuth2Server {
   def this(options: oauth2DashServerLib.oauth2DashServerMod.OAuth2ServerNs.ServerOptions) = this()
 }
 
-/**
-  * Represents an OAuth2 server instance.
-  */
+/* static members */
 @JSImport("oauth2-server", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

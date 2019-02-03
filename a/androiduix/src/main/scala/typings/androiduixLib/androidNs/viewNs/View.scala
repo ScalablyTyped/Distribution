@@ -607,6 +607,7 @@ class View protected ()
   def willNotDraw(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.View")
 @js.native
 object View extends js.Object {

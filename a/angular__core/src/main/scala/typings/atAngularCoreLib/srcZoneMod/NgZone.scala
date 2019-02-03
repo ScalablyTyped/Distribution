@@ -12,6 +12,7 @@ class NgZone protected ()
   def this(hasEnableLongStackTrace: atAngularCoreLib.Anon_EnableLongStackTrace) = this()
 }
 
+/* static members */
 @JSImport("@angular/core/src/zone", "NgZone")
 @js.native
 object NgZone extends js.Object {

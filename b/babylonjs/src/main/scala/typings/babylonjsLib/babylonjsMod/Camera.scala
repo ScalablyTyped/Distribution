@@ -26,10 +26,7 @@ class Camera protected ()
   def this(name: java.lang.String, position: babylonjsLib.BABYLONNs.Vector3, scene: babylonjsLib.BABYLONNs.Scene, setActiveOnSceneIfNoneActive: scala.Boolean) = this()
 }
 
-/**
-  * This is the base class of all the camera used in the application.
-  * @see http://doc.babylonjs.com/features/cameras
-  */
+/* static members */
 @JSImport("babylonjs", "Camera")
 @js.native
 object Camera extends js.Object {

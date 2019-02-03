@@ -9,6 +9,7 @@ object defineDashLazyDashPropLibStrings {
   @js.native
   sealed trait namespaced extends js.Object
   
+  @scala.inline
   def namespaced: namespaced = "namespaced".asInstanceOf[namespaced]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Panel ()
   extends reactDashBootstrapLib.libMod.Panel
 
+/* static members */
 @JSImport("react-bootstrap", "Panel")
 @js.native
 object Panel extends js.Object {

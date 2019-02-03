@@ -12,6 +12,7 @@ class Iban protected () extends js.Object {
   def isValid(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("web3/eth/types", "Iban")
 @js.native
 object Iban extends js.Object {

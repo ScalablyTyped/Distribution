@@ -12,7 +12,9 @@ object perfectDashScrollbarLibStrings {
   @js.native
   sealed trait start extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
 }
 

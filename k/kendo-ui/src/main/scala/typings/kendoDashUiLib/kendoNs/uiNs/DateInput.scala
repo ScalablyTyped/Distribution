@@ -27,6 +27,7 @@ class DateInput protected () extends Widget {
   def value(value: stdLib.Date): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DateInput")
 @js.native
 object DateInput extends js.Object {

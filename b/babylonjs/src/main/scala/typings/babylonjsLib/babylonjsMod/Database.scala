@@ -23,10 +23,7 @@ class Database protected ()
   def this(urlToScene: java.lang.String, callbackManifestChecked: js.Function1[/* checked */ scala.Boolean, _], disableManifestCheck: scala.Boolean) = this()
 }
 
-/**
-  * Class used to enable access to IndexedDB
-  * @see @https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API
-  */
+/* static members */
 @JSImport("babylonjs", "Database")
 @js.native
 object Database extends js.Object {

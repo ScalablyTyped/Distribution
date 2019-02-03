@@ -9,6 +9,7 @@ object pouchdbDashAdapterDashLeveldbLibStrings {
   @js.native
   sealed trait leveldb extends js.Object
   
+  @scala.inline
   def leveldb: leveldb = "leveldb".asInstanceOf[leveldb]
 }
 

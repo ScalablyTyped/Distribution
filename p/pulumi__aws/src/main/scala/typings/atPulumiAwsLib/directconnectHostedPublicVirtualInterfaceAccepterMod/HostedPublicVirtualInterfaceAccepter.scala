@@ -32,6 +32,7 @@ class HostedPublicVirtualInterfaceAccepter protected ()
   val virtualInterfaceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter", "HostedPublicVirtualInterfaceAccepter")
 @js.native
 object HostedPublicVirtualInterfaceAccepter extends js.Object {

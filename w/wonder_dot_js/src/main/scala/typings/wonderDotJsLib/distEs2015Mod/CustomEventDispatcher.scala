@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CustomEventDispatcher ()
   extends wonderDotJsLib.distEs2015EventDispatcherCustomEventDispatcherMod.CustomEventDispatcher
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CustomEventDispatcher")
 @js.native
 object CustomEventDispatcher extends js.Object {

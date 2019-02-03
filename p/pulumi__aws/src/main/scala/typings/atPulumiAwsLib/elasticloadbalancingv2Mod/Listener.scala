@@ -20,6 +20,7 @@ class Listener protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingv2ListenerMod.ListenerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancingv2", "Listener")
 @js.native
 object Listener extends js.Object {

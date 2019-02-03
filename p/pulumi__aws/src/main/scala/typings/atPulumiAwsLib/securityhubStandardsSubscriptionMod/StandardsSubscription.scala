@@ -24,6 +24,7 @@ class StandardsSubscription protected ()
   val standardsArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")
 @js.native
 object StandardsSubscription extends js.Object {

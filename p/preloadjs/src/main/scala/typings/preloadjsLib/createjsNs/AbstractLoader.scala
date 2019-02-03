@@ -28,6 +28,7 @@ class AbstractLoader ()
   def setTag(tag: js.Object): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.AbstractLoader")
 @js.native
 object AbstractLoader extends js.Object {

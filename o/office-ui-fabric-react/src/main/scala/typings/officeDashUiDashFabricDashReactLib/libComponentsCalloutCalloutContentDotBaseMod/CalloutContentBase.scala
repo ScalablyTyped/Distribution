@@ -57,6 +57,7 @@ class CalloutContentBase protected ()
   def dismiss(ev: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Callout/CalloutContent.base", "CalloutContentBase")
 @js.native
 object CalloutContentBase extends js.Object {

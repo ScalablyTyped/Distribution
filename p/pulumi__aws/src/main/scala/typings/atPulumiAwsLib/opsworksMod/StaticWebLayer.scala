@@ -20,6 +20,7 @@ class StaticWebLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksStaticWebLayerMod.StaticWebLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "StaticWebLayer")
 @js.native
 object StaticWebLayer extends js.Object {

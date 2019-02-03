@@ -37,6 +37,7 @@ class PublicDnsNamespace protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery/publicDnsNamespace", "PublicDnsNamespace")
 @js.native
 object PublicDnsNamespace extends js.Object {

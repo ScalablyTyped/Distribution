@@ -39,9 +39,7 @@ object constantsNs extends js.Object {
   trait IConstant
     extends mendixmodelsdkLib.distGenProjectsMod.projectsNs.IDocument
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/constants relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Constant extends js.Object {
     var structureTypeName: java.lang.String = js.native

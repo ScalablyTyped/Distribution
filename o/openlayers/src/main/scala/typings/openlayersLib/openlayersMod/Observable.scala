@@ -86,6 +86,7 @@ class Observable ()
   def un(`type`: js.Array[java.lang.String], listener: EventsListenerFunctionType, opt_this: GlobalObject): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("openlayers", "Observable")
 @js.native
 object Observable extends js.Object {

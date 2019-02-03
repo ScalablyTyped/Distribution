@@ -19,6 +19,7 @@ class PropertySignatureSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): PropertySignatureSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PropertySignatureSyntax")
 @js.native
 object PropertySignatureSyntax extends js.Object {

@@ -13,6 +13,7 @@ class TouchBar protected ()
   def this(options: electronLib.ElectronNs.TouchBarConstructorOptions) = this()
 }
 
+/* static members */
 @JSImport("electron", "TouchBar")
 @js.native
 object TouchBar extends js.Object {

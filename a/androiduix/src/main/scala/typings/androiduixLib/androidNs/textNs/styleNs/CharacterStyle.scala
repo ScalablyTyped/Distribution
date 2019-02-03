@@ -13,6 +13,7 @@ abstract class CharacterStyle () extends js.Object {
   def updateDrawState(tp: androiduixLib.androidNs.textNs.TextPaint): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.style.CharacterStyle")
 @js.native
 object CharacterStyle extends js.Object {

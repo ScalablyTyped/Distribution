@@ -49,6 +49,7 @@ class ApiKey protected ()
   val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/apiKey", "ApiKey")
 @js.native
 object ApiKey extends js.Object {

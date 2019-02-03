@@ -20,6 +20,7 @@ class PatchGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmPatchGroupMod.PatchGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "PatchGroup")
 @js.native
 object PatchGroup extends js.Object {

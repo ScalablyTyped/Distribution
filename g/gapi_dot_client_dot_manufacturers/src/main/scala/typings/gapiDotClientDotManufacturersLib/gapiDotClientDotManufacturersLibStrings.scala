@@ -12,7 +12,9 @@ object gapiDotClientDotManufacturersLibStrings {
   @js.native
   sealed trait v1 extends js.Object
   
+  @scala.inline
   def manufacturers: manufacturers = "manufacturers".asInstanceOf[manufacturers]
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
 }
 

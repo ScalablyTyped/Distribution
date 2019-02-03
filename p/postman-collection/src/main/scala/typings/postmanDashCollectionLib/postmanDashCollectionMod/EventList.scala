@@ -13,6 +13,7 @@ class EventList protected () extends PropertyList[Event] {
   def listenersOwn(name: java.lang.String): js.Array[Event] = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "EventList")
 @js.native
 object EventList extends js.Object {

@@ -12,6 +12,7 @@ class ParenthesizedArrowFunctionExpressionSyntax protected ()
   def this(callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, equalsGreaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ParenthesizedArrowFunctionExpressionSyntax")
 @js.native
 object ParenthesizedArrowFunctionExpressionSyntax extends js.Object {

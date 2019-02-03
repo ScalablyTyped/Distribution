@@ -30,6 +30,7 @@ class namespaced protected () extends User {
   override def toCrowd(): UserObj = js.native
 }
 
+/* static members */
 @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -37,6 +37,7 @@ class MaskEdit protected () extends Widget {
   def get_UnstrippedValue(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("ej.MaskEdit")
 @js.native
 object MaskEdit extends js.Object {

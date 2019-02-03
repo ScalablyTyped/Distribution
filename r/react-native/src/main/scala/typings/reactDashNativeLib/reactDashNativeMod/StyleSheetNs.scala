@@ -40,6 +40,8 @@ object StyleSheetNs extends js.Object {
     style: reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ): reactDashNativeLib.reactDashNativeMod.ViewStyle = js.native
   def setStyleAttributePreprocessor(property: java.lang.String, process: js.Function1[/* nextProp */ js.Any, _]): scala.Unit = js.native
-  type NamedStyles[T] = reactDashNativeLib.reactDashNativeLibStrings.NamedStyles with js.Any
+  type NamedStyles[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: react-native.react-native.ViewStyle | react-native.react-native.TextStyle | react-native.react-native.ImageStyle}
+    */ reactDashNativeLib.reactDashNativeLibStrings.NamedStyles with js.Any
 }
 

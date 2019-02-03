@@ -12,6 +12,7 @@ class Document protected ()
   def this(_compiler: typescriptDashServicesLib.TypeScriptNs.TypeScriptCompiler, _semanticInfoChain: typescriptDashServicesLib.TypeScriptNs.SemanticInfoChain, fileName: java.lang.String, referencedFiles: js.Array[java.lang.String], _scriptSnapshot: typescriptDashServicesLib.TypeScriptNs.IScriptSnapshot, byteOrderMark: typescriptDashServicesLib.TypeScriptNs.ByteOrderMark, version: scala.Double, isOpen: scala.Boolean, _syntaxTree: typescriptDashServicesLib.TypeScriptNs.SyntaxTree, _topLevelDecl: typescriptDashServicesLib.TypeScriptNs.PullDecl) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "Document")
 @js.native
 object Document extends js.Object {

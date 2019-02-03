@@ -12,6 +12,7 @@ class Version protected ()
   def this(major: scala.Double, minor: scala.Double, patch: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("mendixmodelsdk/dist/sdk/internal", "Version")
 @js.native
 object Version extends js.Object {

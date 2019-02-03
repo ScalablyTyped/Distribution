@@ -16,6 +16,7 @@ class namespaced protected () extends Sortable {
   def this(element: stdLib.HTMLElement, options: sortablejsLib.sortablejsMod.SortableNs.Options) = this()
 }
 
+/* static members */
 @JSImport("sortablejs", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

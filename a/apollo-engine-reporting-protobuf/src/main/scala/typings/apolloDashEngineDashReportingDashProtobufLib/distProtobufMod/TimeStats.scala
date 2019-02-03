@@ -32,6 +32,7 @@ class TimeStats () extends ITimeStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "TimeStats")
 @js.native
 object TimeStats extends js.Object {

@@ -17,10 +17,7 @@ class MergeMeshesOptimization () extends SceneOptimization {
   def apply(scene: Scene, optimizer: SceneOptimizer, updateSelectionTree: scala.Boolean): scala.Boolean = js.native
 }
 
-/**
-  * Defines an optimization used to merge meshes with compatible materials
-  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-  */
+/* static members */
 @JSGlobal("BABYLON.MergeMeshesOptimization")
 @js.native
 object MergeMeshesOptimization extends js.Object {

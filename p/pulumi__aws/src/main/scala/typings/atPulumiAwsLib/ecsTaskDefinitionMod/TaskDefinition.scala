@@ -85,6 +85,7 @@ class TaskDefinition protected ()
   val volumes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_DockerVolumeConfiguration]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecs/taskDefinition", "TaskDefinition")
 @js.native
 object TaskDefinition extends js.Object {

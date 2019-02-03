@@ -70,6 +70,7 @@ class Remote () extends js.Object {
   def url(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nodegit/remote", "Remote")
 @js.native
 object Remote extends js.Object {

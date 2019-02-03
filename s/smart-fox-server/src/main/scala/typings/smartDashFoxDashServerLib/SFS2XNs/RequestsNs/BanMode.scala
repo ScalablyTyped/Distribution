@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BanMode () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Requests.BanMode")
 @js.native
 object BanMode extends js.Object {

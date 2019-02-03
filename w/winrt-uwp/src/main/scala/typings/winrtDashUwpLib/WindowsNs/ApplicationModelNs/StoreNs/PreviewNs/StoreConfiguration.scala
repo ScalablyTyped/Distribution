@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StoreConfiguration () extends js.Object
 
-/** Defines static methods and properties for accessing information about the device hardware and configuring information about the system, the mobile operator, and the active user account. These members are used in various Windows Store scenarios. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.StoreConfiguration")
 @js.native
 object StoreConfiguration extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Zocial ()
   extends reactDashNativeDashVectorDashIconsLib.zocialMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Zocial")
 @js.native
 object Zocial extends js.Object {

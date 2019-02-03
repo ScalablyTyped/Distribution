@@ -25,12 +25,7 @@ class VideoRecorder protected ()
   def this(engine: babylonjsLib.BABYLONNs.Engine, options: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.VideoRecorderOptions]) = this()
 }
 
-/**
-  * This can helps recording videos from BabylonJS.
-  * This is based on the available WebRTC functionalities of the browser.
-  *
-  * @see http://doc.babylonjs.com/how_to/render_scene_on_a_video
-  */
+/* static members */
 @JSImport("babylonjs", "VideoRecorder")
 @js.native
 object VideoRecorder extends js.Object {

@@ -12,6 +12,7 @@ class CommonToken protected ()
   def this(source: js.Any, `type`: js.Any, channel: js.Any, start: scala.Double, stop: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("antlr4", "CommonToken")
 @js.native
 object CommonToken extends js.Object {

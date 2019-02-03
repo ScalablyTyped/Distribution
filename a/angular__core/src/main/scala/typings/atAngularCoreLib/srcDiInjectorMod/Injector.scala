@@ -35,6 +35,7 @@ abstract class Injector () extends js.Object {
   ): T = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/di/injector", "Injector")
 @js.native
 object Injector extends js.Object {

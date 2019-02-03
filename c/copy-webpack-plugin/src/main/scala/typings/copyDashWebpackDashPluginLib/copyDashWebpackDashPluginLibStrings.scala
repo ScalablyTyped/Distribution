@@ -24,11 +24,17 @@ object copyDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def template: template = "template".asInstanceOf[template]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

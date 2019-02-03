@@ -72,6 +72,7 @@ class CertificateAuthority protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acmpca/certificateAuthority", "CertificateAuthority")
 @js.native
 object CertificateAuthority extends js.Object {

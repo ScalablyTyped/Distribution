@@ -13,6 +13,7 @@ class DatagramSocket () extends IDatagramSocket {
   def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
 @js.native
 object DatagramSocket extends js.Object {

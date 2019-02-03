@@ -12,6 +12,7 @@ class PersonalityInsightsV3 protected () extends js.Object {
   def profile(_params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "PersonalityInsightsV3")
 @js.native
 object PersonalityInsightsV3 extends js.Object {

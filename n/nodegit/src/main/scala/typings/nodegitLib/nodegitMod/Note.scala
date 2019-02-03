@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Note ()
   extends nodegitLib.noteMod.Note
 
+/* static members */
 @JSImport("nodegit", "Note")
 @js.native
 object Note extends js.Object {

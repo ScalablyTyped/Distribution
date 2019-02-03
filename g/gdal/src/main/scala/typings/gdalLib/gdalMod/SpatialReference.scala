@@ -39,6 +39,7 @@ class SpatialReference () extends js.Object {
   def validate(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("gdal", "SpatialReference")
 @js.native
 object SpatialReference extends js.Object {

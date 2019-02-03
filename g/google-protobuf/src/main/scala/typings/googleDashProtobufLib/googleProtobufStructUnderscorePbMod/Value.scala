@@ -39,6 +39,7 @@ class Value ()
   def toJavaScript(): JavaScriptValue = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/struct_pb", "Value")
 @js.native
 object Value extends js.Object {

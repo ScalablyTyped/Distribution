@@ -30,6 +30,7 @@ class ValidationPath protected () extends js.Object {
   def toErrorString(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/util/Path", "ValidationPath")
 @js.native
 object ValidationPath extends js.Object {

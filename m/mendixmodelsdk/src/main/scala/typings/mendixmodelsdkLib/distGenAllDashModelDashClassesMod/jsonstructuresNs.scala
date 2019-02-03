@@ -32,12 +32,7 @@ object jsonstructuresNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `JsonStructures`.
-    */
-  /**
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object JsonElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -68,12 +63,7 @@ object jsonstructuresNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonElement = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/json-structures relevant section in reference guide}
-    *
-    * In version 6.6.0: removed experimental
-    * In version 6.2.0: introduced
-    */
+  /* static members */
   @js.native
   object JsonStructure extends js.Object {
     var structureTypeName: java.lang.String = js.native

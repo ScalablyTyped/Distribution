@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BraceMatcher () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.BraceMatcher")
 @js.native
 object BraceMatcher extends js.Object {

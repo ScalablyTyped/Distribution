@@ -30,6 +30,7 @@ class EngineShaderSourceBuilder ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/sourceBuilder/EngineShaderSourceBuilder", "EngineShaderSourceBuilder")
 @js.native
 object EngineShaderSourceBuilder extends js.Object {

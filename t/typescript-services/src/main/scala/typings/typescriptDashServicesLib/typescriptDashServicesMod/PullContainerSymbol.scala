@@ -12,6 +12,7 @@ class PullContainerSymbol protected ()
   def this(name: java.lang.String, kind: typescriptDashServicesLib.TypeScriptNs.PullElementKind) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PullContainerSymbol")
 @js.native
 object PullContainerSymbol extends js.Object {

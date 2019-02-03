@@ -30,6 +30,7 @@ class Upload protected () extends Widget {
   def upload(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Upload")
 @js.native
 object Upload extends js.Object {

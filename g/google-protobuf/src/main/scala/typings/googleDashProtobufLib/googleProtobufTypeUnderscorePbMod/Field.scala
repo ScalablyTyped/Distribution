@@ -35,6 +35,7 @@ class Field ()
   def setTypeUrl(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/type_pb", "Field")
 @js.native
 object Field extends js.Object {

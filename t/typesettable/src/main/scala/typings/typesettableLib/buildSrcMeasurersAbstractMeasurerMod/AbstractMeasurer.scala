@@ -15,6 +15,7 @@ class AbstractMeasurer protected () extends js.Object {
   def measure(text: java.lang.String): IDimensions = js.native
 }
 
+/* static members */
 @JSImport("typesettable/build/src/measurers/abstractMeasurer", "AbstractMeasurer")
 @js.native
 object AbstractMeasurer extends js.Object {

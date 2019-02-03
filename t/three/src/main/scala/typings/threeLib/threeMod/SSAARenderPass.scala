@@ -18,6 +18,7 @@ class SSAARenderPass protected ()
   def this(scene: threeLib.threeDashCoreMod.Scene, camera: threeLib.threeDashCoreMod.Camera, clearColor: threeLib.threeDashCoreMod.Color, clearAlpha: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("three", "SSAARenderPass")
 @js.native
 object SSAARenderPass extends js.Object {

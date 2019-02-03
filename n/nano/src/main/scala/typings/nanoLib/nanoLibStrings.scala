@@ -27,12 +27,19 @@ object nanoLibStrings {
   @js.native
   sealed trait ok extends js.Object
   
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def continuous: continuous = "continuous".asInstanceOf[continuous]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def eventsource: eventsource = "eventsource".asInstanceOf[eventsource]
+  @scala.inline
   def longpoll: longpoll = "longpoll".asInstanceOf[longpoll]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def ok: ok = "ok".asInstanceOf[ok]
 }
 

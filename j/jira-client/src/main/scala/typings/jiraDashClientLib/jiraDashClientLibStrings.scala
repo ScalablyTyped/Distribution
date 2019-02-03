@@ -21,10 +21,15 @@ object jiraDashClientLibStrings {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
   def future: future = "future".asInstanceOf[future]
+  @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
 }
 

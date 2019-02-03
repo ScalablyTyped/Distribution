@@ -16,6 +16,7 @@ class ReflectiveDependency protected () extends js.Object {
   var visibility: atAngularCoreLib.srcDiMetadataMod.Self | atAngularCoreLib.srcDiMetadataMod.SkipSelf | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/di/reflective_provider", "ReflectiveDependency")
 @js.native
 object ReflectiveDependency extends js.Object {

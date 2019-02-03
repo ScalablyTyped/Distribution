@@ -16,6 +16,7 @@ class MemStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IMemStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "MemStats")
 @js.native
 object MemStats extends js.Object {

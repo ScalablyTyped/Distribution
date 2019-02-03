@@ -41,6 +41,7 @@ class S3Location protected ()
   val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync/s3Location", "S3Location")
 @js.native
 object S3Location extends js.Object {

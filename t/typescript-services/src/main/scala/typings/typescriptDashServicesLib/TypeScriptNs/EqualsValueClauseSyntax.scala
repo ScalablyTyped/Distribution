@@ -16,6 +16,7 @@ class EqualsValueClauseSyntax protected () extends SyntaxNode {
   def withValue(value: IExpressionSyntax): EqualsValueClauseSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.EqualsValueClauseSyntax")
 @js.native
 object EqualsValueClauseSyntax extends js.Object {

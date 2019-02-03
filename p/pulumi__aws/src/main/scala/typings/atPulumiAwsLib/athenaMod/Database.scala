@@ -20,6 +20,7 @@ class Database protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.athenaDatabaseMod.DatabaseArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/athena", "Database")
 @js.native
 object Database extends js.Object {

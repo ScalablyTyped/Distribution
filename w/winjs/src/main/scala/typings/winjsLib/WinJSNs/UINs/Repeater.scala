@@ -132,9 +132,7 @@ class Repeater () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Generates HTML from a set of data. Use this control to generate lists of items.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Repeater")
 @js.native
 object Repeater extends js.Object {

@@ -313,11 +313,7 @@ object expressionsNs extends js.Object {
     var variable: VariableRef = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object BinaryExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -735,6 +731,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BinaryExpression = js.native
   }
   
+  /* static members */
   @js.native
   object BinaryOperator extends js.Object {
     var And: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BinaryOperator = js.native
@@ -754,11 +751,7 @@ object expressionsNs extends js.Object {
     var Plus: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BinaryOperator = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanLiteral extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1176,11 +1169,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.BooleanLiteral = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object ConstantRefExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1598,11 +1587,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ConstantRefExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EmptyLiteral extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2020,11 +2005,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EmptyLiteral = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EnumerationValueRefExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2442,27 +2423,14 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.EnumerationValueRefExpression = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Expressions`.
-    */
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/microflow-expressions relevant section in reference guide}
-    *
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object Expression extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenExpressionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object FloatLiteral extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2880,11 +2848,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FloatLiteral = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object FunctionCallExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3302,11 +3266,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.FunctionCallExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object GlobalVariableRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3328,11 +3288,7 @@ object expressionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.VariableRefExpression): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.GlobalVariableRef = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object IfExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3750,11 +3706,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IfExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerLiteral extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4172,22 +4124,14 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.IntegerLiteral = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object LiteralExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenExpressionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object NoExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4605,11 +4549,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.NoExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object NoVariableRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4631,11 +4571,7 @@ object expressionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.VariableRefExpression): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.NoVariableRef = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object ParenthesisExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5053,11 +4989,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.ParenthesisExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object StringLiteral extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5475,11 +5407,7 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.StringLiteral = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object UnaryExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5897,17 +5825,14 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnaryExpression = js.native
   }
   
+  /* static members */
   @js.native
   object UnaryOperator extends js.Object {
     var None: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnaryOperator = js.native
     var UnaryMinus: mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnaryOperator = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object UnparsableExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6325,22 +6250,14 @@ object expressionsNs extends js.Object {
     def createInWidgetValidationUnderExpressionModel(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.WidgetValidation): mendixmodelsdkLib.distGenExpressionsMod.expressionsNs.UnparsableExpression = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object VariableRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenExpressionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object VariableRefExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native

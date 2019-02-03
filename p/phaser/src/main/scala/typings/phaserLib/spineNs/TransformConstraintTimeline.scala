@@ -21,6 +21,7 @@ class TransformConstraintTimeline protected () extends CurveTimeline {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.TransformConstraintTimeline")
 @js.native
 object TransformConstraintTimeline extends js.Object {

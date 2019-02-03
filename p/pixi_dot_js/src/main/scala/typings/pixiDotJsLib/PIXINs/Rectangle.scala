@@ -29,6 +29,7 @@ class Rectangle () extends HitArea {
   def pad(paddingX: scala.Double, paddingY: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Rectangle")
 @js.native
 object Rectangle extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Sortable () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.Sortable")
 @js.native
 object Sortable extends js.Object {

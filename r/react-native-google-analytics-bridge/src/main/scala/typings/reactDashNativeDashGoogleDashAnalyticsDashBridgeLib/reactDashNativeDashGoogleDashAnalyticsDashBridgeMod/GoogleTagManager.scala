@@ -20,16 +20,7 @@ import scala.scalajs.js.annotation._
 class GoogleTagManager ()
   extends reactDashNativeDashGoogleDashAnalyticsDashBridgeLib.distGoogleTagManagerMod.default
 
-/**
-  * Can only be used with one container. All functions returns a Promise.
-  *
-  * @name GoogleTagManager
-  * @example
-  * import { GoogleTagManager } from "react-native-google-analytics-bridge";
-  * GoogleTagManager.openContainerWithId("GT-NZT48")
-  *   .then(() => GoogleTagManager.stringForKey("pack"))
-  *   .then(str => console.log("Pack: ", str));
-  */
+/* static members */
 @JSImport("react-native-google-analytics-bridge", "GoogleTagManager")
 @js.native
 object GoogleTagManager extends js.Object {

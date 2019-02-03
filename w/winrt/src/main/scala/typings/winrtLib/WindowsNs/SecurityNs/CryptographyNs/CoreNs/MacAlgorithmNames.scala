@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MacAlgorithmNames () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmNames")
 @js.native
 object MacAlgorithmNames extends js.Object {

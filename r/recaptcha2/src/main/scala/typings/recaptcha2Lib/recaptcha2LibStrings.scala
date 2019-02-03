@@ -9,6 +9,7 @@ object recaptcha2LibStrings {
   @js.native
   sealed trait POST extends js.Object
   
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
 }
 

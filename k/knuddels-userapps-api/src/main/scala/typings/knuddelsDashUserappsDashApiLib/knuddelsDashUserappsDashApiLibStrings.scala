@@ -12,7 +12,9 @@ object knuddelsDashUserappsDashApiLibStrings {
   @js.native
   sealed trait POST extends js.Object
   
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
 }
 

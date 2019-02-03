@@ -12,6 +12,7 @@ class CoreWindowResizeManager () extends ICoreWindowResizeManager {
   override def notifyLayoutCompleted(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Core.CoreWindowResizeManager")
 @js.native
 object CoreWindowResizeManager extends js.Object {

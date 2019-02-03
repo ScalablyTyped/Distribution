@@ -138,9 +138,7 @@ class PointerDragBehavior () extends Behavior[Mesh] {
   def startDrag(pointerId: scala.Double, fromRay: Ray, startPickedPoint: Vector3): scala.Unit = js.native
 }
 
-/**
-  * A behavior that when attached to a mesh will allow the mesh to be dragged around the screen based on pointer events
-  */
+/* static members */
 @JSGlobal("BABYLON.PointerDragBehavior")
 @js.native
 object PointerDragBehavior extends js.Object {

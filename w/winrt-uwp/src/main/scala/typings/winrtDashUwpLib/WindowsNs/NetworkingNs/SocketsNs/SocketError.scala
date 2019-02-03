@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SocketError () extends js.Object
 
-/** Provides socket error status for operations on a DatagramSocket , StreamSocket , or StreamSocketListener . */
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.SocketError")
 @js.native
 object SocketError extends js.Object {

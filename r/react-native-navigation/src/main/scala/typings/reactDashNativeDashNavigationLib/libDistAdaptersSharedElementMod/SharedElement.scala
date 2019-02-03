@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SharedElement ()
   extends reactLib.reactMod.Component[SharedElementProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native-navigation/lib/dist/adapters/SharedElement", "SharedElement")
 @js.native
 object SharedElement extends js.Object {

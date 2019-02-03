@@ -32,6 +32,7 @@ class Dashboard protected ()
   val dashboardName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard")
 @js.native
 object Dashboard extends js.Object {

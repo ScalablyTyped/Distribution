@@ -9,6 +9,7 @@ object grammarkdownLibStrings {
   @js.native
   sealed trait ProseFragmentLiteralTypes extends js.Object
   
+  @scala.inline
   def ProseFragmentLiteralTypes: ProseFragmentLiteralTypes = "ProseFragmentLiteralTypes".asInstanceOf[ProseFragmentLiteralTypes]
 }
 

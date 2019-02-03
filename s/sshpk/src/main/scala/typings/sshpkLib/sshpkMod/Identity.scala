@@ -12,6 +12,7 @@ class Identity protected ()
   def this(opts: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sshpk", "Identity")
 @js.native
 object Identity extends js.Object {

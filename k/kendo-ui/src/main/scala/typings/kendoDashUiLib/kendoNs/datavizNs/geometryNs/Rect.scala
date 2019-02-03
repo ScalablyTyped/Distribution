@@ -33,6 +33,7 @@ class Rect protected ()
   def width(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.geometry.Rect")
 @js.native
 object Rect extends js.Object {

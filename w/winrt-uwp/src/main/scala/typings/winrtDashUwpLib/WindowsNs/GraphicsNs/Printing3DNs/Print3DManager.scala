@@ -28,7 +28,7 @@ abstract class Print3DManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Creates the 3D printing experience. */
+/* static members */
 @JSGlobal("Windows.Graphics.Printing3D.Print3DManager")
 @js.native
 object Print3DManager extends js.Object {

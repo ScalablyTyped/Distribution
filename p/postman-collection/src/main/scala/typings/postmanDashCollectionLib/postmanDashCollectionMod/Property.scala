@@ -30,6 +30,7 @@ class Property[TDefinition] () extends PropertyBase[TDefinition] {
   ): TDefinition = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Property")
 @js.native
 object Property extends js.Object {

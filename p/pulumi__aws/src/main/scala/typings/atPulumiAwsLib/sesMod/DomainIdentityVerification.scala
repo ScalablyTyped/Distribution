@@ -20,6 +20,7 @@ class DomainIdentityVerification protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerificationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "DomainIdentityVerification")
 @js.native
 object DomainIdentityVerification extends js.Object {

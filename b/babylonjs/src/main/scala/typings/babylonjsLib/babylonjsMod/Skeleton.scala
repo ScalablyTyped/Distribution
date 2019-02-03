@@ -24,10 +24,7 @@ class Skeleton protected ()
   id: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Class used to handle skinning animations
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
-  */
+/* static members */
 @JSImport("babylonjs", "Skeleton")
 @js.native
 object Skeleton extends js.Object {

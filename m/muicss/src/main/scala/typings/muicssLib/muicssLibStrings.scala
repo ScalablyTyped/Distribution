@@ -12,7 +12,9 @@ object muicssLibStrings {
   @js.native
   sealed trait right extends js.Object
   
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
 }
 

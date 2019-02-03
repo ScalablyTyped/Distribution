@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DynamoDBCustomizations ()
   extends awsDashSdkLib.libServiceMod.Service
 
+/* static members */
 @JSImport("aws-sdk/lib/services/dynamodb", "DynamoDBCustomizations")
 @js.native
 object DynamoDBCustomizations extends js.Object {

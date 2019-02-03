@@ -22,6 +22,7 @@ class namespaced protected () extends Group {
   override def toCrowd(): GroupObj = js.native
 }
 
+/* static members */
 @JSImport("atlassian-crowd-client/lib/models/group", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -109,9 +109,7 @@ class AutoSuggestBox () extends js.Object {
   def setLocalContentSuggestionSettings(settings: js.Any): scala.Unit = js.native
 }
 
-/**
-  * A rich input box that provides suggestions as the user types.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.AutoSuggestBox")
 @js.native
 object AutoSuggestBox extends js.Object {

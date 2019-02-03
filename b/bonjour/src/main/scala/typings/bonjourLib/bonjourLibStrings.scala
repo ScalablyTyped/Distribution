@@ -18,9 +18,13 @@ object bonjourLibStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
 }
 

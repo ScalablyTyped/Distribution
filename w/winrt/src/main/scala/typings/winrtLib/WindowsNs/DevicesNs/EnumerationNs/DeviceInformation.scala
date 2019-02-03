@@ -28,6 +28,7 @@ class DeviceInformation () extends IDeviceInformation {
   override def update(updateInfo: DeviceInformationUpdate): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
 object DeviceInformation extends js.Object {

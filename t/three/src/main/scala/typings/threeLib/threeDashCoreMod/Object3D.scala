@@ -268,6 +268,7 @@ class Object3D () extends EventDispatcher {
   def worldToLocal(vector: Vector3): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Object3D")
 @js.native
 object Object3D extends js.Object {

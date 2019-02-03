@@ -25,6 +25,7 @@ class default () extends SingleResponse {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/SingleResponse", JSImport.Default)
 @js.native
 object default extends js.Object {

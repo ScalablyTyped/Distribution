@@ -42,17 +42,29 @@ object reactDashNativeDashVideoLibStrings {
   @js.native
   sealed trait title extends js.Object
   
+  @scala.inline
   def `application/ttml+xml`: `application/ttml+xml` = "application/ttml+xml".asInstanceOf[`application/ttml+xml`]
+  @scala.inline
   def `application/x-subrip`: `application/x-subrip` = "application/x-subrip".asInstanceOf[`application/x-subrip`]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def index: index = "index".asInstanceOf[index]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def language: language = "language".asInstanceOf[language]
+  @scala.inline
   def obey: obey = "obey".asInstanceOf[obey]
+  @scala.inline
   def system: system = "system".asInstanceOf[system]
+  @scala.inline
   def `text/vtt`: `text/vtt` = "text/vtt".asInstanceOf[`text/vtt`]
+  @scala.inline
   def title: title = "title".asInstanceOf[title]
 }
 

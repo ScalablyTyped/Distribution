@@ -13,6 +13,7 @@ class SessionDescriptionHandler protected ()
   def this(logger: sipDotJsLib.typesLoggerDashFactoryMod.Logger, observer: sipDotJsLib.typesSessionDashDescriptionDashHandlerDashObserverMod.SessionDescriptionHandlerObserver, options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sip.js/types/Web", "SessionDescriptionHandler")
 @js.native
 object SessionDescriptionHandler extends js.Object {

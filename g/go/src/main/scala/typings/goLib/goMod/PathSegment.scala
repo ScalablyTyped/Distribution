@@ -93,12 +93,7 @@ class PathSegment protected ()
   override def equalsApprox(s: goLib.goMod.goNs.PathSegment): scala.Boolean = js.native
 }
 
-/**
-  * A PathSegment represents a straight line or curved segment of a path between
-  * two or more points that are part of a PathFigure.
-  * A PathSegment must not be modified once its containing PathFigure's
-  * Geometry has been assigned to a Shape.
-  */
+/* static members */
 @JSImport("go", "PathSegment")
 @js.native
 object PathSegment extends js.Object {

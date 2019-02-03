@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MagneticStripeReaderCardTypes () extends js.Object
 
-/** Contains the card type of the recently swiped card. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReaderCardTypes")
 @js.native
 object MagneticStripeReaderCardTypes extends js.Object {

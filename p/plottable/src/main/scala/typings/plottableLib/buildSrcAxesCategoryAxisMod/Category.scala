@@ -129,6 +129,7 @@ class Category protected ()
   def tickLabelShearAngle(angle: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/axes/categoryAxis", "Category")
 @js.native
 object Category extends js.Object {

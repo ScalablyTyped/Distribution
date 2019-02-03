@@ -12,6 +12,7 @@ class WhileStatementSyntax protected ()
   def this(whileKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, condition: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statement: typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "WhileStatementSyntax")
 @js.native
 object WhileStatementSyntax extends js.Object {

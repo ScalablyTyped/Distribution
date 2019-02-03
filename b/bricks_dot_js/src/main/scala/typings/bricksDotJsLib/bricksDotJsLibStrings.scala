@@ -15,8 +15,11 @@ object bricksDotJsLibStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
   def pack: pack = "pack".asInstanceOf[pack]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
 }
 

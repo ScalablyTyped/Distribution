@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PeerFinder () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Networking.Proximity.PeerFinder")
 @js.native
 object PeerFinder extends js.Object {

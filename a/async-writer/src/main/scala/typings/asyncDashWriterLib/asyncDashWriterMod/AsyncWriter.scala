@@ -15,6 +15,7 @@ class AsyncWriter ()
   def this(writer: js.Any, global: org.scalablytyped.runtime.StringDictionary[js.Any], async: scala.Boolean, buffer: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("async-writer", "AsyncWriter")
 @js.native
 object AsyncWriter extends js.Object {

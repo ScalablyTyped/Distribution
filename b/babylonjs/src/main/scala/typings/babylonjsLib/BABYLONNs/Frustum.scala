@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Frustum () extends js.Object
 
-/**
-  * Reprasents a camera frustum
-  */
+/* static members */
 @JSGlobal("BABYLON.Frustum")
 @js.native
 object Frustum extends js.Object {

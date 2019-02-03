@@ -40,6 +40,7 @@ class ThreatIntelSet protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty/threatIntelSet", "ThreatIntelSet")
 @js.native
 object ThreatIntelSet extends js.Object {

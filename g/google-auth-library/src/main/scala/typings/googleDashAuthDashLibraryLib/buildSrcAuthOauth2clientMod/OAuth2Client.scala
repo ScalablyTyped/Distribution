@@ -211,6 +211,7 @@ class OAuth2Client ()
   ): js.Promise[googleDashAuthDashLibraryLib.buildSrcAuthLoginticketMod.LoginTicket] = js.native
 }
 
+/* static members */
 @JSImport("google-auth-library/build/src/auth/oauth2client", "OAuth2Client")
 @js.native
 object OAuth2Client extends js.Object {

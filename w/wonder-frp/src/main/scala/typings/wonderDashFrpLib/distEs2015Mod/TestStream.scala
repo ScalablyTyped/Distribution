@@ -12,6 +12,7 @@ class TestStream protected ()
   def this(messages: js.Array[wonderDashFrpLib.distEs2015TestingRecordMod.Record], scheduler: wonderDashFrpLib.distEs2015TestingTestSchedulerMod.TestScheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "TestStream")
 @js.native
 object TestStream extends js.Object {

@@ -21,6 +21,7 @@ class Print protected () extends Widget {
   def print(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Print")
 @js.native
 object Print extends js.Object {

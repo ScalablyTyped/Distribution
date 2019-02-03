@@ -12,6 +12,7 @@ class Button protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Button")
 @js.native
 object Button extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class By ()
   extends atAngularPlatformDashBrowserLib.srcDomDebugByMod.By
 
+/* static members */
 @JSImport("@angular/platform-browser/src/platform-browser", "By")
 @js.native
 object By extends js.Object {

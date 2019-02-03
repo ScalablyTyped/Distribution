@@ -532,6 +532,7 @@ class CircularGauge protected ()
   def setTickWidth(scaleIndex: scala.Double, tickIndex: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.CircularGauge")
 @js.native
 object CircularGauge extends js.Object {

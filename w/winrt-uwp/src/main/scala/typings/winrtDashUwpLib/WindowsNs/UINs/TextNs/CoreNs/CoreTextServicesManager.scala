@@ -35,7 +35,7 @@ abstract class CoreTextServicesManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** The entry point to all services provided by the Windows core text APIs and the text input server. This object is associated with an application's UI thread (the thread that CoreWindow runs on). */
+/* static members */
 @JSGlobal("Windows.UI.Text.Core.CoreTextServicesManager")
 @js.native
 object CoreTextServicesManager extends js.Object {

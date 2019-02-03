@@ -15,8 +15,11 @@ object w3cDashGenericDashSensorLibStrings {
   @js.native
   sealed trait reading extends js.Object
   
+  @scala.inline
   def activate: activate = "activate".asInstanceOf[activate]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def reading: reading = "reading".asInstanceOf[reading]
 }
 

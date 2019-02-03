@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCFloatingLabelFoundation
 
+/* static members */
 @JSImport("@material/floating-label/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

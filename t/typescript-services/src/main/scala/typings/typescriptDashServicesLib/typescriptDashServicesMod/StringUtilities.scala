@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StringUtilities ()
   extends typescriptDashServicesLib.TypeScriptNs.StringUtilities
 
+/* static members */
 @JSImport("typescript-services", "StringUtilities")
 @js.native
 object StringUtilities extends js.Object {

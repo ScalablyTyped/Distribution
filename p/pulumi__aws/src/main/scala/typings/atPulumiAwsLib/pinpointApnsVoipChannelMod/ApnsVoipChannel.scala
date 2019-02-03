@@ -29,6 +29,7 @@ class ApnsVoipChannel protected ()
   val tokenKeyId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/apnsVoipChannel", "ApnsVoipChannel")
 @js.native
 object ApnsVoipChannel extends js.Object {

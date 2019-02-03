@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class calendars () extends js.Object
 
+/* static members */
 @JSGlobal("gapi.client.calendar.calendars")
 @js.native
 object calendars extends js.Object {

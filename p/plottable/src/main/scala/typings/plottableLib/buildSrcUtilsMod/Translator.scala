@@ -12,6 +12,7 @@ class Translator protected ()
   def this(_rootElement: stdLib.HTMLElement) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/utils", "Translator")
 @js.native
 object Translator extends js.Object {

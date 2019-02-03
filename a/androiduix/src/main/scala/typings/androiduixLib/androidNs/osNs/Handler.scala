@@ -40,6 +40,7 @@ class Handler () extends js.Object {
   def sendMessageDelayed(msg: Message, delayMillis: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.os.Handler")
 @js.native
 object Handler extends js.Object {

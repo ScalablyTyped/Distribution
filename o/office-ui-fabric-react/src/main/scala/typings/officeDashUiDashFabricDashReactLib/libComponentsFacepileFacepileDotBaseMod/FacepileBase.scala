@@ -39,6 +39,7 @@ class FacepileBase protected ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Facepile/Facepile.base", "FacepileBase")
 @js.native
 object FacepileBase extends js.Object {

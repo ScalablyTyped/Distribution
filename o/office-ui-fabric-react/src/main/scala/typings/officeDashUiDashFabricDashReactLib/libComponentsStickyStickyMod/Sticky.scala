@@ -57,6 +57,7 @@ class Sticky protected ()
   def syncScroll(container: reactLib.HTMLElement): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Sticky/Sticky", "Sticky")
 @js.native
 object Sticky extends js.Object {

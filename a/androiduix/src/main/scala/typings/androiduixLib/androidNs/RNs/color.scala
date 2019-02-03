@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class color () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.color")
 @js.native
 object color extends js.Object {

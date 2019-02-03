@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val SKIP: atFeathersjsFeathersLib.atFeathersjsFeathersMod.SkipSymbol = js.native
-  val version: java.lang.String = js.native
   // tslint:disable-next-line no-unnecessary-generics
-  def default[T](): atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[T] = js.native
+  val default: js.Function0[atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_]] with atFeathersjsFeathersLib.Anon_Default = js.native
+  val version: java.lang.String = js.native
 }
 

@@ -33,6 +33,7 @@ class GoogleEarthEnterpriseMetadata protected ()
   override val url: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("cesium", "GoogleEarthEnterpriseMetadata")
 @js.native
 object GoogleEarthEnterpriseMetadata extends js.Object {

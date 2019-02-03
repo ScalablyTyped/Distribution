@@ -158,6 +158,7 @@ class Distribution protected ()
   val webAclId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront/distribution", "Distribution")
 @js.native
 object Distribution extends js.Object {

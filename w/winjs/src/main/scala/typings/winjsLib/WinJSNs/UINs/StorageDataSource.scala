@@ -54,9 +54,7 @@ class StorageDataSource[T] protected () extends js.Object {
   def removeEventListener(`type`: java.lang.String, eventHandler: js.Function, useCapture: js.Any): scala.Unit = js.native
 }
 
-/**
-  * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.StorageDataSource")
 @js.native
 object StorageDataSource extends js.Object {

@@ -281,6 +281,7 @@ abstract class Session ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/session", "Session")
 @js.native
 object Session extends js.Object {

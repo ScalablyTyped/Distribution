@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PhoneCallHistoryManager () extends js.Object
 
-/** Provides APIs for the application to get access to the PhoneCallHistoryStore . */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Calls.PhoneCallHistoryManager")
 @js.native
 object PhoneCallHistoryManager extends js.Object {

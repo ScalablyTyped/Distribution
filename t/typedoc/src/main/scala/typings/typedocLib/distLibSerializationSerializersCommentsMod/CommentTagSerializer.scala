@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommentTagSerializer ()
   extends typedocLib.distLibSerializationSerializersCommentsCommentDashTagMod.CommentTagSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/comments", "CommentTagSerializer")
 @js.native
 object CommentTagSerializer extends js.Object {

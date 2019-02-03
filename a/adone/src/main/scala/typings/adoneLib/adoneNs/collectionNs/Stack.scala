@@ -34,9 +34,7 @@ class Stack[T] () extends js.Object {
   def push(x: T): this.type = js.native
 }
 
-/**
-  * Represents a stack
-  */
+/* static members */
 @JSGlobal("adone.collection.Stack")
 @js.native
 object Stack extends js.Object {

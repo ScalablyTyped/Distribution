@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class QueryUtility () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.SharePoint.Client.Search.Query.QueryUtility")
 @js.native
 object QueryUtility extends js.Object {

@@ -13,6 +13,7 @@ class DoubleValue ()
   def setValue(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "DoubleValue")
 @js.native
 object DoubleValue extends js.Object {

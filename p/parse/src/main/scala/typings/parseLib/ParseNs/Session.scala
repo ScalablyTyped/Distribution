@@ -12,6 +12,7 @@ class Session () extends Object {
   def isCurrentSessionRevocable(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Parse.Session")
 @js.native
 object Session extends js.Object {

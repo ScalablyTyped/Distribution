@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DomQuery () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.DomQuery")
 @js.native
 object DomQuery extends js.Object {

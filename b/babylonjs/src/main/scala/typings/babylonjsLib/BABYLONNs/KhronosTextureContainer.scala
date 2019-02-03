@@ -95,10 +95,7 @@ class KhronosTextureContainer protected () extends js.Object {
   def uploadLevels(texture: InternalTexture, loadMipmaps: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * for description see https://www.khronos.org/opengles/sdk/tools/KTX/
-  * for file layout see https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/
-  */
+/* static members */
 @JSGlobal("BABYLON.KhronosTextureContainer")
 @js.native
 object KhronosTextureContainer extends js.Object {

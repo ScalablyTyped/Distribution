@@ -15,8 +15,11 @@ object bashDashGlobLibStrings {
   @js.native
   sealed trait `match` extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def files: files = "files".asInstanceOf[files]
+  @scala.inline
   def `match`: `match` = "match".asInstanceOf[`match`]
 }
 

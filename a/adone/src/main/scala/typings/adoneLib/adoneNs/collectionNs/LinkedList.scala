@@ -110,9 +110,7 @@ class LinkedList[T] () extends js.Object {
   def unshiftNode(node: adoneLib.adoneNs.collectionNs.INs.LinkedListNs.Node[T]): scala.Unit = js.native
 }
 
-/**
-  * Represents a linked list
-  */
+/* static members */
 @JSGlobal("adone.collection.LinkedList")
 @js.native
 object LinkedList extends js.Object {

@@ -35,6 +35,7 @@ class DiagramWidget protected ()
   def stopFiringAction(shouldSkipEvent: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/widgets/DiagramWidget", "DiagramWidget")
 @js.native
 object DiagramWidget extends js.Object {

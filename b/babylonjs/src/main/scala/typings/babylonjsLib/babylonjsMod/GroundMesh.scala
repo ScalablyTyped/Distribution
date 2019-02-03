@@ -15,9 +15,7 @@ class GroundMesh protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Mesh representing the gorund
-  */
+/* static members */
 @JSImport("babylonjs", "GroundMesh")
 @js.native
 object GroundMesh extends js.Object {

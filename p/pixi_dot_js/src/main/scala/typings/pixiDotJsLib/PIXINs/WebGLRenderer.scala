@@ -190,6 +190,7 @@ class WebGLRenderer () extends SystemRenderer {
   def unbindTexture(texture: Texture): js.UndefOr[WebGLRenderer] = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {

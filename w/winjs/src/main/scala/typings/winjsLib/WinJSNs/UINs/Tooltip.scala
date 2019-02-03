@@ -102,9 +102,7 @@ class Tooltip () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Displays a tooltip that can contain images and formatting.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Tooltip")
 @js.native
 object Tooltip extends js.Object {

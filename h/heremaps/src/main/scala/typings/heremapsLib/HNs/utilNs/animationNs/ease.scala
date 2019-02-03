@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ease () extends js.Object
 
-/**
-  * This mamespace contains easing functions used for Animation class.
-  */
+/* static members */
 @JSGlobal("H.util.animation.ease")
 @js.native
 object ease extends js.Object {

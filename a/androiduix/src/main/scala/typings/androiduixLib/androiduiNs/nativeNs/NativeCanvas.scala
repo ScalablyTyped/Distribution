@@ -13,6 +13,7 @@ class NativeCanvas ()
   /* protected */ def createCanvasImpl(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.native.NativeCanvas")
 @js.native
 object NativeCanvas extends js.Object {

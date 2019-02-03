@@ -32,6 +32,15 @@ object libApiObserveMod extends js.Object {
     ],
     fireImmediately: scala.Boolean
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def observe[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    listener: js.Function1[/* change */ mobxLib.libTypesObservablesetMod.ISetDidChange[V], scala.Unit]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def observe[V](
+    observableMap: mobxLib.libInternalMod.ObservableSet[V],
+    listener: js.Function1[/* change */ mobxLib.libTypesObservablesetMod.ISetDidChange[V], scala.Unit],
+    fireImmediately: scala.Boolean
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def observe[T](
     value: mobxLib.libCoreComputedvalueMod.IComputedValue[T],
     listener: js.Function1[/* change */ mobxLib.libTypesObservablevalueMod.IValueDidChange[T], scala.Unit]

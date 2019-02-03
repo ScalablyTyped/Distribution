@@ -55,10 +55,7 @@ class GroundGeometry protected ()
   subdivisions: scala.Double, canBeRegenerated: scala.Boolean, mesh: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Mesh]) = this()
 }
 
-/**
-  * Creates a new ground geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#ground
-  */
+/* static members */
 @JSImport("babylonjs", "GroundGeometry")
 @js.native
 object GroundGeometry extends js.Object {

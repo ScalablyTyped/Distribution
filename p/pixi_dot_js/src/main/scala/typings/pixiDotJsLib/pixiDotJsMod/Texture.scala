@@ -17,6 +17,7 @@ class Texture protected ()
   def this(baseTexture: pixiDotJsLib.PIXINs.BaseTexture, frame: pixiDotJsLib.PIXINs.Rectangle, orig: pixiDotJsLib.PIXINs.Rectangle, trim: pixiDotJsLib.PIXINs.Rectangle, rotate: scala.Double, anchor: pixiDotJsLib.PIXINs.Point) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "Texture")
 @js.native
 object Texture extends js.Object {

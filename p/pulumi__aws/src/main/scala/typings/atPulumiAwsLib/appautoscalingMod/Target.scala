@@ -20,6 +20,7 @@ class Target protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appautoscalingTargetMod.TargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appautoscaling", "Target")
 @js.native
 object Target extends js.Object {

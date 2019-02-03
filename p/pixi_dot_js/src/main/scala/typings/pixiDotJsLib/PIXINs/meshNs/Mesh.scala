@@ -42,6 +42,7 @@ class Mesh protected ()
   def refresh(forceUpdate: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.mesh.Mesh")
 @js.native
 object Mesh extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebUIBackgroundTaskInstance () extends js.Object
 
-/** Represents an instance of a background task that has been triggered to run. */
+/* static members */
 @JSGlobal("Windows.UI.WebUI.WebUIBackgroundTaskInstance")
 @js.native
 object WebUIBackgroundTaskInstance extends js.Object {

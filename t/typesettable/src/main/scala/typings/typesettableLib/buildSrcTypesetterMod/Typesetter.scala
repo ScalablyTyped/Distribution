@@ -41,6 +41,7 @@ class Typesetter protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typesettable/build/src/typesetter", "Typesetter")
 @js.native
 object Typesetter extends js.Object {

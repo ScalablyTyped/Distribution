@@ -69,26 +69,47 @@ object detectDashBrowserLibStrings {
   @js.native
   sealed trait yandexbrowser extends js.Object
   
+  @scala.inline
   def android: android = "android".asInstanceOf[android]
+  @scala.inline
   def aol: aol = "aol".asInstanceOf[aol]
+  @scala.inline
   def bb10: bb10 = "bb10".asInstanceOf[bb10]
+  @scala.inline
   def chrome: chrome = "chrome".asInstanceOf[chrome]
+  @scala.inline
   def crios: crios = "crios".asInstanceOf[crios]
+  @scala.inline
   def edge: edge = "edge".asInstanceOf[edge]
+  @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
+  @scala.inline
   def firefox: firefox = "firefox".asInstanceOf[firefox]
+  @scala.inline
   def fxios: fxios = "fxios".asInstanceOf[fxios]
+  @scala.inline
   def ie: ie = "ie".asInstanceOf[ie]
+  @scala.inline
   def instagram: instagram = "instagram".asInstanceOf[instagram]
+  @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
+  @scala.inline
   def `ios-webview`: `ios-webview` = "ios-webview".asInstanceOf[`ios-webview`]
+  @scala.inline
   def kakaotalk: kakaotalk = "kakaotalk".asInstanceOf[kakaotalk]
+  @scala.inline
   def node: node = "node".asInstanceOf[node]
+  @scala.inline
   def opera: opera = "opera".asInstanceOf[opera]
+  @scala.inline
   def phantomjs: phantomjs = "phantomjs".asInstanceOf[phantomjs]
+  @scala.inline
   def safari: safari = "safari".asInstanceOf[safari]
+  @scala.inline
   def samsung: samsung = "samsung".asInstanceOf[samsung]
+  @scala.inline
   def vivaldi: vivaldi = "vivaldi".asInstanceOf[vivaldi]
+  @scala.inline
   def yandexbrowser: yandexbrowser = "yandexbrowser".asInstanceOf[yandexbrowser]
 }
 

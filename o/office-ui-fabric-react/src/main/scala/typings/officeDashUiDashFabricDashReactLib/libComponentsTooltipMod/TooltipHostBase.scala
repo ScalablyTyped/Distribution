@@ -12,6 +12,7 @@ class TooltipHostBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsTooltipTooltipHostDotTypesMod.ITooltipHostProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Tooltip", "TooltipHostBase")
 @js.native
 object TooltipHostBase extends js.Object {

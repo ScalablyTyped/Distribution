@@ -53,6 +53,7 @@ class DomEventBinder ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/binder/DomEventBinder", "DomEventBinder")
 @js.native
 object DomEventBinder extends js.Object {

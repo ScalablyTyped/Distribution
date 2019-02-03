@@ -12,6 +12,7 @@ class BlockSyntax protected ()
   def this(openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statements: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "BlockSyntax")
 @js.native
 object BlockSyntax extends js.Object {

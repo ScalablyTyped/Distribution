@@ -20,6 +20,7 @@ class ModelArray[T] protected () extends ItemArray[T] {
   def toObject(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("nodal", "ModelArray")
 @js.native
 object ModelArray extends js.Object {

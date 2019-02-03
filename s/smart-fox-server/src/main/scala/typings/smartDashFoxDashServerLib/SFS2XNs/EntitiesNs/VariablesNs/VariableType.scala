@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VariableType () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Variables.VariableType")
 @js.native
 object VariableType extends js.Object {

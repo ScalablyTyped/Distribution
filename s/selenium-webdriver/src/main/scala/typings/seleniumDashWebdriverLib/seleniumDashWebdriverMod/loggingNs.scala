@@ -301,11 +301,7 @@ object loggingNs extends js.Object {
     */
   def removeConsoleHandler(): scala.Unit = js.native
   def removeConsoleHandler(opt_logger: Logger): scala.Unit = js.native
-  /**
-    * Defines a message level that may be used to control logging output.
-    *
-    * @final
-    */
+  /* static members */
   @js.native
   object Level extends js.Object {
     /**

@@ -43,7 +43,7 @@ abstract class StorageLibrary () extends js.Object {
   def requestRemoveFolderAsync(folder: StorageFolder): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 
-/** Lets you add and remove folders from a library like Music or Videos and lets you get a list of folders included in the library. */
+/* static members */
 @JSGlobal("Windows.Storage.StorageLibrary")
 @js.native
 object StorageLibrary extends js.Object {

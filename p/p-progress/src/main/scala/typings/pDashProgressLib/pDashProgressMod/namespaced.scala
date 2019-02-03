@@ -29,6 +29,7 @@ class namespaced[T] protected () extends PProgress[T] {
     ]) = this()
 }
 
+/* static members */
 @JSImport("p-progress", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

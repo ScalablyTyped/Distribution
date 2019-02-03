@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Media ()
   extends reactDashBootstrapLib.libMediaMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "Media")
 @js.native
 object Media extends js.Object {

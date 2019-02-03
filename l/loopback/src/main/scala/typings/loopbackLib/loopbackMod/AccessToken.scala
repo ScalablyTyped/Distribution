@@ -56,20 +56,7 @@ class AccessToken ()
   ): scala.Unit = js.native
 }
 
-/**
-  * Token based authentication and access control
-  * **Default ACLs*
-  *  - DENY EVERYONE `*`
-  *  - ALLOW EVERYONE creat
-  * @property {string} id Generated token ID.
-  * @property {number} ttl Time to live in seconds, 2 weeks by default.
-  * @property {Date} created When the token was created.
-  * @property {any} settings Extends the `Model.settings` object.
-  * @property {number} settings.accessTokenIdLength Length of the base64-encoded string access token. Default value is 64.
-  * Increase the length for a more secure access token
-  * @class AccessToken
-  * @inherits {PersistedModel}
-  */
+/* static members */
 @JSImport("loopback", "AccessToken")
 @js.native
 object AccessToken extends js.Object {

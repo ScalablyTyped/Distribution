@@ -52,6 +52,7 @@ class NotebookInstance protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sagemaker/notebookInstance", "NotebookInstance")
 @js.native
 object NotebookInstance extends js.Object {

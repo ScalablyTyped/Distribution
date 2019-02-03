@@ -130,6 +130,7 @@ class Schedule protected () extends Widget {
   ): js.Array[_] = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Schedule")
 @js.native
 object Schedule extends js.Object {

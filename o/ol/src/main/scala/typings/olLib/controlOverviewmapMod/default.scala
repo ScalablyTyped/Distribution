@@ -24,12 +24,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.OverviewMapOptions) = this()
 }
 
-/**
-  * Create a new control with a map acting as an overview map for an other
-  * defined map.
-  * @param opt_options OverviewMap options.
-  * @api
-  */
+/* static members */
 @JSImport("ol/control/overviewmap", JSImport.Default)
 @js.native
 object default extends js.Object {

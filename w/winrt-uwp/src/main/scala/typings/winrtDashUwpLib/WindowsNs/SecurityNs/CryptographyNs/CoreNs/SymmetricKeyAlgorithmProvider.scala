@@ -21,7 +21,7 @@ abstract class SymmetricKeyAlgorithmProvider () extends js.Object {
   def createSymmetricKey(keyMaterial: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
-/** Represents a provider of symmetric key algorithms. For more information, see Cryptographic keys. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
 @js.native
 object SymmetricKeyAlgorithmProvider extends js.Object {

@@ -81,6 +81,7 @@ class FunctionExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.FunctionExpressionSyntax")
 @js.native
 object FunctionExpressionSyntax extends js.Object {

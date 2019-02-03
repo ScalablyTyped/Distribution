@@ -12,6 +12,7 @@ class PullInstantiatedTypeReferenceSymbol protected ()
   def this(referencedTypeSymbol: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol, _typeParameterArgumentMap: typescriptDashServicesLib.TypeScriptNs.TypeArgumentMap, isInstanceReferenceType: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PullInstantiatedTypeReferenceSymbol")
 @js.native
 object PullInstantiatedTypeReferenceSymbol extends js.Object {

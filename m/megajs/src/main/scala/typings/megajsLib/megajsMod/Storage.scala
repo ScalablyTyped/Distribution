@@ -10,7 +10,9 @@ import scala.scalajs.js.annotation._
 class Storage protected () extends js.Object {
   def this(options: StorageOptions) = this()
   def this(options: StorageOptions, callback: js.Any) = this()
-  var files: megajsLib.megajsLibStrings.Storage with js.Any = js.native
+  var files: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ id in string ]: megajs.megajs.MutableFile}
+    */ megajsLib.megajsLibStrings.Storage with js.Any = js.native
   var inbox: MutableFile = js.native
   var key: nodeLib.Buffer = js.native
   var mounts: js.Array[File] = js.native
@@ -38,6 +40,7 @@ class Storage protected () extends js.Object {
   def upload(options: UploadOptions, buffer: nodeLib.Buffer, cb: js.Any): nodeLib.streamMod.Writable = js.native
 }
 
+/* static members */
 @JSImport("megajs", "Storage")
 @js.native
 object Storage extends js.Object {

@@ -17,6 +17,7 @@ class GroupMetadata ()
   override def compareTo(o: GroupMetadata): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ExpandableListConnector.GroupMetadata")
 @js.native
 object GroupMetadata extends js.Object {

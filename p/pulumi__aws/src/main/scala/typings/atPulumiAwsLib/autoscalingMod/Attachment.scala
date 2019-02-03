@@ -20,6 +20,7 @@ class Attachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.autoscalingAttachmentMod.AttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling", "Attachment")
 @js.native
 object Attachment extends js.Object {

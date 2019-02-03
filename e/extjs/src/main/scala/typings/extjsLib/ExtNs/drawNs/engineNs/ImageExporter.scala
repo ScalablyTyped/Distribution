@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ImageExporter () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.engine.ImageExporter")
 @js.native
 object ImageExporter extends js.Object {

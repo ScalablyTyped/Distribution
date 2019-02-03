@@ -325,6 +325,7 @@ class ComboBox protected ()
   def focus(shouldOpenOnFocus: scala.Boolean, useFocusAsync: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox", "ComboBox")
 @js.native
 object ComboBox extends js.Object {

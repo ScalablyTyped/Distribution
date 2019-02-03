@@ -17,7 +17,11 @@ object ^ extends js.Object {
     /* component */ reactLib.reactMod.ReactNs.ComponentType[_], 
     reactLib.reactMod.ReactNs.StatelessComponent[js.Any with (stdLib.Record[K, _])]
   ] = js.native
-  def resolve[OwnProps, ResolvableProps, MoreProps](resolversMap: reactDashResolverLib.reactDashResolverLibStrings.resolve with ResolvableProps): js.Function1[
+  def resolve[OwnProps, ResolvableProps, MoreProps](
+    resolversMap: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>}
+    */ reactDashResolverLib.reactDashResolverLibStrings.resolve with ResolvableProps
+  ): js.Function1[
     /* component */ reactLib.reactMod.ReactNs.ComponentType[
       OwnProps with reactDashResolverLib.reactDashResolverLibStrings.resolve with ResolvableProps
     ], 

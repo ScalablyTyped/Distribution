@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class EasingFunction ()
   extends babylonjsLib.BABYLONNs.EasingFunction
 
-/**
-  * Base class used for every default easing function.
-  * @see http://doc.babylonjs.com/babylon101/animations#easing-functions
-  */
+/* static members */
 @JSImport("babylonjs", "EasingFunction")
 @js.native
 object EasingFunction extends js.Object {

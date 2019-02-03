@@ -64,6 +64,7 @@ class MatrixDropdownRowModelBase protected ()
   override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "MatrixDropdownRowModelBase")
 @js.native
 object MatrixDropdownRowModelBase extends js.Object {

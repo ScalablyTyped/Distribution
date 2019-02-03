@@ -11,6 +11,7 @@ class namespaced protected () extends Validator {
   def this(options: zDashSchemaLib.zDashSchemaMod.ValidatorNs.Options) = this()
 }
 
+/* static members */
 @JSImport("z-schema", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -12,6 +12,7 @@ class FromArrayStream protected ()
   def this(array: js.Array[_], scheduler: wonderDashFrpLib.distCommonjsCoreSchedulerMod.Scheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "FromArrayStream")
 @js.native
 object FromArrayStream extends js.Object {

@@ -20,6 +20,7 @@ object rippleNs extends js.Object {
   class RippleCapableSurface ()
     extends atMaterialRippleLib.atMaterialRippleMod.RippleCapableSurface
   
+  /* static members */
   @js.native
   object MDCRipple extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialRippleLib.atMaterialRippleMod.MDCRipple = js.native
@@ -27,6 +28,7 @@ object rippleNs extends js.Object {
     def createAdapter(instance: atMaterialRippleLib.atMaterialRippleMod.RippleCapableSurface): atMaterialRippleLib.adapterMod.MDCRippleAdapter = js.native
   }
   
+  /* static members */
   @js.native
   object MDCRippleFoundation extends js.Object {
     val cssClasses: atMaterialRippleLib.constantsMod.cssClasses = js.native

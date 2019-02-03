@@ -99,9 +99,7 @@ object certificatesNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.certificatesNs.v1beta1Ns.CertificateSigningRequestList = js.native
     }
     
-    /**
-      * Describes a certificate signing request
-      */
+    /* static members */
     @js.native
     object CertificateSigningRequest extends js.Object {
       /**
@@ -124,6 +122,7 @@ object certificatesNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.certificatesNs.v1beta1Ns.CertificateSigningRequest = js.native
     }
     
+    /* static members */
     @js.native
     object CertificateSigningRequestList extends js.Object {
       /**

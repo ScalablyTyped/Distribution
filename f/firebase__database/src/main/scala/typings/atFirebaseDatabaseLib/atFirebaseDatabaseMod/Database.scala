@@ -16,6 +16,7 @@ class Database protected ()
   def this(`repo_`: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo) = this()
 }
 
+/* static members */
 @JSImport("@firebase/database", "Database")
 @js.native
 object Database extends js.Object {

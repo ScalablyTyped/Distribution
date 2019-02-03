@@ -20,6 +20,7 @@ class Hsm protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudhsmv2HsmMod.HsmArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudhsmv2", "Hsm")
 @js.native
 object Hsm extends js.Object {

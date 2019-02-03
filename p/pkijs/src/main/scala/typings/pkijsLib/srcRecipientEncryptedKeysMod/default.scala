@@ -19,6 +19,7 @@ class default () extends RecipientEncryptedKeys {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/RecipientEncryptedKeys", JSImport.Default)
 @js.native
 object default extends js.Object {

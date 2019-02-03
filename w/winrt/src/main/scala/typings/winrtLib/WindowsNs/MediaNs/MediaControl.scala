@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MediaControl () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Media.MediaControl")
 @js.native
 object MediaControl extends js.Object {

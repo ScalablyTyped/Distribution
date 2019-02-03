@@ -21,10 +21,15 @@ object reactDashSplitDashPaneLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def Partial: Partial = "Partial".asInstanceOf[Partial]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def second: second = "second".asInstanceOf[second]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

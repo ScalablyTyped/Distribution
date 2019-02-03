@@ -20,6 +20,7 @@ class SimplePropertyAssignmentSyntax protected () extends SyntaxNode {
   def withPropertyName(propertyName: ISyntaxToken): SimplePropertyAssignmentSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SimplePropertyAssignmentSyntax")
 @js.native
 object SimplePropertyAssignmentSyntax extends js.Object {

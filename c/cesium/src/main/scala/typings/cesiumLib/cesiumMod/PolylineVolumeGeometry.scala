@@ -12,6 +12,7 @@ class PolylineVolumeGeometry protected ()
   def this(options: cesiumLib.Anon_CornerTypeEllipsoidGranularity) = this()
 }
 
+/* static members */
 @JSImport("cesium", "PolylineVolumeGeometry")
 @js.native
 object PolylineVolumeGeometry extends js.Object {

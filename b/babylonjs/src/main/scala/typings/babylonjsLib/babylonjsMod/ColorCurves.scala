@@ -16,12 +16,7 @@ import scala.scalajs.js.annotation._
 class ColorCurves ()
   extends babylonjsLib.BABYLONNs.ColorCurves
 
-/**
-  * The color grading curves provide additional color adjustmnent that is applied after any color grading transform (3D LUT).
-  * They allow basic adjustment of saturation and small exposure adjustments, along with color filter tinting to provide white balance adjustment or more stylistic effects.
-  * These are similar to controls found in many professional imaging or colorist software. The global controls are applied to the entire image. For advanced tuning, extra controls are provided to adjust the shadow, midtone and highlight areas of the image;
-  * corresponding to low luminance, medium luminance, and high luminance areas respectively.
-  */
+/* static members */
 @JSImport("babylonjs", "ColorCurves")
 @js.native
 object ColorCurves extends js.Object {

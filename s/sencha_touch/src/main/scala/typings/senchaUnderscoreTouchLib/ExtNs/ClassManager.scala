@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClassManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.ClassManager")
 @js.native
 object ClassManager extends js.Object {

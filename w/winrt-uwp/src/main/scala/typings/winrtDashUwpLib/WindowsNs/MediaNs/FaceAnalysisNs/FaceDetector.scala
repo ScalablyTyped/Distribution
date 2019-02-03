@@ -31,7 +31,7 @@ abstract class FaceDetector () extends js.Object {
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[_]] = js.native
 }
 
-/** Detects faces in a SoftwareBitmap . */
+/* static members */
 @JSGlobal("Windows.Media.FaceAnalysis.FaceDetector")
 @js.native
 object FaceDetector extends js.Object {

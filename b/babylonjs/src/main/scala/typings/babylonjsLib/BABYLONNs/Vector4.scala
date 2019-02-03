@@ -283,9 +283,7 @@ class Vector4 protected () extends js.Object {
   def toVector3(): Vector3 = js.native
 }
 
-/**
-  * Vector4 class created for EulerAngle class conversion to Quaternion
-  */
+/* static members */
 @JSGlobal("BABYLON.Vector4")
 @js.native
 object Vector4 extends js.Object {

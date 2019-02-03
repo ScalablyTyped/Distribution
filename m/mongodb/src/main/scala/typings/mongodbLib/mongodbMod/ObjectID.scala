@@ -31,6 +31,7 @@ class ObjectId ()
   def this(id: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("mongodb", "ObjectID")
 @js.native
 object ObjectID extends js.Object {
@@ -58,6 +59,7 @@ object ObjectID extends js.Object {
   def isValid(id: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("mongodb", "ObjectId")
 @js.native
 object ObjectId extends js.Object {

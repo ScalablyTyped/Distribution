@@ -24,6 +24,7 @@ class Decoration () extends js.Object {
   var to: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-view", "Decoration")
 @js.native
 object Decoration extends js.Object {

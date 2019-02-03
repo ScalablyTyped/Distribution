@@ -15,8 +15,11 @@ object d3DashZoomLibStrings {
   @js.native
   sealed trait zoom extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
 }
 

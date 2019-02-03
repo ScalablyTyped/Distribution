@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Bounce
 
+/* static members */
 @JSImport("bounce.js", JSImport.Default)
 @js.native
 object default extends js.Object {

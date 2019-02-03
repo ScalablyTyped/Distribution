@@ -19,6 +19,7 @@ class TouchablePreview ()
   def onTouchStart(event: reactDashNativeLib.reactDashNativeMod.GestureResponderEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-native-navigation/lib/dist/adapters/TouchablePreview", "TouchablePreview")
 @js.native
 object TouchablePreview extends js.Object {

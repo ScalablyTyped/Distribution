@@ -21,6 +21,7 @@ class Model[Fields, Additional, VirtualFields] protected () extends js.Object {
   def update(userMergeObj: stdLib.Partial[Fields with Additional]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("redux-orm", "Model")
 @js.native
 object Model extends js.Object {

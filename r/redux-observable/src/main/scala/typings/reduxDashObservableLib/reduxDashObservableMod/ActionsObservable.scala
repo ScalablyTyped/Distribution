@@ -16,6 +16,7 @@ class ActionsObservable[T /* <: reduxLib.reduxMod.Action[_] */] protected ()
   def ofType_type[R /* <: T */](key: (/* import warning: ImportType.apply Failed type conversion: R['type'] */ js.Any)*): ActionsObservable[R] = js.native
 }
 
+/* static members */
 @JSImport("redux-observable", "ActionsObservable")
 @js.native
 object ActionsObservable extends js.Object {

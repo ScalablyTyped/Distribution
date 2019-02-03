@@ -21,9 +21,7 @@ class Node protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  * Node is the basic class for all scene objects (Mesh, Light, Camera.)
-  */
+/* static members */
 @JSImport("babylonjs", "Node")
 @js.native
 object Node extends js.Object {

@@ -71,6 +71,7 @@ class AnalyticsApplication protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication")
 @js.native
 object AnalyticsApplication extends js.Object {

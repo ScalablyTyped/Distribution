@@ -16,6 +16,7 @@ class NamingConvention protected () extends js.Object {
   def setAsDefault(): NamingConvention = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.NamingConvention")
 @js.native
 object NamingConvention extends js.Object {

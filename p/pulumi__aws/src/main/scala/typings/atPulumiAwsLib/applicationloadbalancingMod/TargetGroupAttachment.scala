@@ -20,6 +20,7 @@ class TargetGroupAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.applicationloadbalancingTargetGroupAttachmentMod.TargetGroupAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/applicationloadbalancing", "TargetGroupAttachment")
 @js.native
 object TargetGroupAttachment extends js.Object {

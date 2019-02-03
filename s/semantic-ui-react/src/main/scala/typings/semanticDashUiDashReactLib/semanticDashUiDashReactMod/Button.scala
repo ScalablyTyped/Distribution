@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Button ()
   extends semanticDashUiDashReactLib.distCommonjsElementsButtonButtonMod.default
 
+/* static members */
 @JSImport("semantic-ui-react", "Button")
 @js.native
 object Button extends js.Object {

@@ -22,6 +22,7 @@ object mediapackageNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.mediapackageChannelMod.ChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Channel extends js.Object {
     /**

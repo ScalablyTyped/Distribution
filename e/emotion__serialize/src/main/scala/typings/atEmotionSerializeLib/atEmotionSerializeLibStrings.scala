@@ -15,8 +15,11 @@ object atEmotionSerializeLibStrings {
   @js.native
   sealed trait CSSPseudosForCSSObject extends js.Object
   
+  @scala.inline
   def CSSPropertiesWithMultiValues: CSSPropertiesWithMultiValues = "CSSPropertiesWithMultiValues".asInstanceOf[CSSPropertiesWithMultiValues]
+  @scala.inline
   def CSSPseudos: CSSPseudos = "CSSPseudos".asInstanceOf[CSSPseudos]
+  @scala.inline
   def CSSPseudosForCSSObject: CSSPseudosForCSSObject = "CSSPseudosForCSSObject".asInstanceOf[CSSPseudosForCSSObject]
 }
 

@@ -92,6 +92,7 @@ class FocusZone protected ()
   def componentWillUnmount_MFocusZone(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/FocusZone/FocusZone", "FocusZone")
 @js.native
 object FocusZone extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Helmet ()
   extends reactLib.reactMod.Component[HelmetProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-helmet", "Helmet")
 @js.native
 object Helmet extends js.Object {

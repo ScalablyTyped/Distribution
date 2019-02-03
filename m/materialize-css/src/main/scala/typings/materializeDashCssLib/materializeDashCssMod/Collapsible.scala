@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Collapsible ()
   extends materializeDashCssLib.MNs.Collapsible
 
+/* static members */
 @JSImport("materialize-css", "Collapsible")
 @js.native
 object Collapsible extends js.Object {

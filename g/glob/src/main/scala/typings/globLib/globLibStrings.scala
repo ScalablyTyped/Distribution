@@ -12,7 +12,9 @@ object globLibStrings {
   @js.native
   sealed trait FILE extends js.Object
   
+  @scala.inline
   def DIR: DIR = "DIR".asInstanceOf[DIR]
+  @scala.inline
   def FILE: FILE = "FILE".asInstanceOf[FILE]
 }
 

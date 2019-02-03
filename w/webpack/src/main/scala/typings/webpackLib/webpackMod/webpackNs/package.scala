@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object webpackNs {
-  type AuxiliaryCommentObject = webpackLib.webpackLibStrings.AuxiliaryCommentObject with js.Any
+  type AuxiliaryCommentObject = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in webpack.webpack.webpack.LibraryTarget ]: string}
+    */ webpackLib.webpackLibStrings.AuxiliaryCommentObject with js.Any
   /**
     * Plugins
     */

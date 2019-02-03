@@ -59,6 +59,7 @@ class filter protected () extends js.Object {
   def getAllowedEnterMode(defaultMode: scala.Double, reverse: scala.Boolean): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.filter")
 @js.native
 object filter extends js.Object {

@@ -31,6 +31,7 @@ class LayoutParams ()
   def setTitle(title: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.WindowManager.LayoutParams")
 @js.native
 object LayoutParams extends js.Object {

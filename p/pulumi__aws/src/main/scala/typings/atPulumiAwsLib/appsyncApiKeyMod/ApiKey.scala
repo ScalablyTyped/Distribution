@@ -36,6 +36,7 @@ class ApiKey protected ()
   val key: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey")
 @js.native
 object ApiKey extends js.Object {

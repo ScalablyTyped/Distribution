@@ -12,6 +12,7 @@ class Sticky protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsStickyStickyDotTypesMod.IStickyProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "Sticky")
 @js.native
 object Sticky extends js.Object {

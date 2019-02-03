@@ -11,6 +11,7 @@ class default protected () extends BaseService {
   def this(shopDomain: java.lang.String, accessToken: java.lang.String, resource: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("shopify-prime/dist/infrastructure/base_service", JSImport.Default)
 @js.native
 object default extends js.Object {

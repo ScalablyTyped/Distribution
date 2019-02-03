@@ -21,6 +21,7 @@ class ApiKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayApiKeyMod.ApiKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "ApiKey")
 @js.native
 object ApiKey extends js.Object {

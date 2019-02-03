@@ -21,6 +21,7 @@ class SizeConstraintSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf", "SizeConstraintSet")
 @js.native
 object SizeConstraintSet extends js.Object {

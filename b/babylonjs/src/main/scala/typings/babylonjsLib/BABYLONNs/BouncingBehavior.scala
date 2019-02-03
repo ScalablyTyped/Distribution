@@ -80,10 +80,7 @@ class BouncingBehavior () extends Behavior[ArcRotateCamera] {
   def stopAllAnimations(): scala.Unit = js.native
 }
 
-/**
-  * Add a bouncing effect to an ArcRotateCamera when reaching a specified minimum and maximum radius
-  * @see http://doc.babylonjs.com/how_to/camera_behaviors#bouncing-behavior
-  */
+/* static members */
 @JSGlobal("BABYLON.BouncingBehavior")
 @js.native
 object BouncingBehavior extends js.Object {

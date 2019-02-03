@@ -22,6 +22,7 @@ class Diff () extends js.Object {
   def toBuf(format: nodegitLib.diffMod.DiffNs.FORMAT): js.Promise[nodegitLib.bufMod.Buf] = js.native
 }
 
+/* static members */
 @JSImport("nodegit/diff", "Diff")
 @js.native
 object Diff extends js.Object {

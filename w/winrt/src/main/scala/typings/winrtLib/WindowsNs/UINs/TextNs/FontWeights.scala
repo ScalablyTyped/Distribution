@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FontWeights () extends IFontWeights
 
+/* static members */
 @JSGlobal("Windows.UI.Text.FontWeights")
 @js.native
 object FontWeights extends js.Object {

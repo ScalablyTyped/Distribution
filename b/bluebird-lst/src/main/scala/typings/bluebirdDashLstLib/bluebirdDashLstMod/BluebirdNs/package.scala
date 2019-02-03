@@ -19,7 +19,7 @@ package object BluebirdNs {
     * `OperationalError`s are caught in `.error` handlers.
     */
   type OperationalError = stdLib.Error
-  type ResolvableProps[T] = js.Object with bluebirdDashLstLib.bluebirdDashLstLibStrings.ResolvableProps with T
+  type ResolvableProps[T] = js.Object with bluebirdDashLstLib.bluebirdDashLstLibStrings.ResolvableProps with js.Any
   /** @deprecated Use PromiseLike<T> directly. */
   type Thenable[T] = js.Thenable[T]
   /**

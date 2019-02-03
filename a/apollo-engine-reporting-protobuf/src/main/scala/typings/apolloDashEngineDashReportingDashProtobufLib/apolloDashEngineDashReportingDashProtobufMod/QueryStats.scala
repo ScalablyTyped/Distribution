@@ -16,6 +16,7 @@ class QueryStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "QueryStats")
 @js.native
 object QueryStats extends js.Object {

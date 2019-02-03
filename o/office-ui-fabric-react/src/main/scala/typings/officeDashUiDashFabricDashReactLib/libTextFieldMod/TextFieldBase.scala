@@ -12,6 +12,7 @@ class TextFieldBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/TextField", "TextFieldBase")
 @js.native
 object TextFieldBase extends js.Object {

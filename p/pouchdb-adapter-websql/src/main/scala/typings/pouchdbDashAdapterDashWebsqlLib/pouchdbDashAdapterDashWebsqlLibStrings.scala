@@ -15,8 +15,11 @@ object pouchdbDashAdapterDashWebsqlLibStrings {
   @js.native
   sealed trait websql extends js.Object
   
+  @scala.inline
   def `UTF-16`: `UTF-16` = "UTF-16".asInstanceOf[`UTF-16`]
+  @scala.inline
   def `UTF-8`: `UTF-8` = "UTF-8".asInstanceOf[`UTF-8`]
+  @scala.inline
   def websql: websql = "websql".asInstanceOf[websql]
 }
 

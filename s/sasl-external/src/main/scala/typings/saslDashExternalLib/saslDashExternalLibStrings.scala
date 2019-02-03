@@ -9,6 +9,7 @@ object saslDashExternalLibStrings {
   @js.native
   sealed trait EXTERNAL extends js.Object
   
+  @scala.inline
   def EXTERNAL: EXTERNAL = "EXTERNAL".asInstanceOf[EXTERNAL]
 }
 

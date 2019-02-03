@@ -18,6 +18,7 @@ class AppInfo () extends js.Object {
   def icon(width: scala.Double, height: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.AppInfo")
 @js.native
 object AppInfo extends js.Object {

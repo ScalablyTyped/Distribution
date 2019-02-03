@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends VueScrollTo
 
+/* static members */
 @JSImport("vue-scrollto", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

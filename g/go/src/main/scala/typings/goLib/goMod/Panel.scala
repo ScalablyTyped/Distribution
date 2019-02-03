@@ -22,12 +22,7 @@ class Panel ()
   def this(`type`: goLib.goMod.goNs.EnumValue) = this()
 }
 
-/**
-  * A Panel is a GraphObject that holds other GraphObjects as its elements.
-  * A Panel is responsible for sizing and positioning its elements.
-  * Every Panel has a .type and establishes its own coordinate system. The .type of a Panel
-  * determines how it will size and arrange its elements.
-  */
+/* static members */
 @JSImport("go", "Panel")
 @js.native
 object Panel extends js.Object {

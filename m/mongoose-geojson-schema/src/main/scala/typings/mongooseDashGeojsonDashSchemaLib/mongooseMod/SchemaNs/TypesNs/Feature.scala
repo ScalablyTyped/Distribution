@@ -14,6 +14,7 @@ class Feature protected ()
   def cast(geojson: js.Object): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("mongoose.Schema.Types.Feature")
 @js.native
 object Feature extends js.Object {

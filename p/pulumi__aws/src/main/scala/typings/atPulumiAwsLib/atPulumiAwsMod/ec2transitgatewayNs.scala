@@ -111,6 +111,7 @@ object ec2transitgatewayNs extends js.Object {
     args: atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ec2transitgatewayGetVpcAttachmentMod.GetVpcAttachmentResult] = js.native
+  /* static members */
   @js.native
   object Route extends js.Object {
     /**
@@ -135,6 +136,7 @@ object ec2transitgatewayNs extends js.Object {
     ): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
   }
   
+  /* static members */
   @js.native
   object RouteTable extends js.Object {
     /**
@@ -159,6 +161,7 @@ object ec2transitgatewayNs extends js.Object {
     ): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
   }
   
+  /* static members */
   @js.native
   object RouteTableAssociation extends js.Object {
     /**
@@ -183,6 +186,7 @@ object ec2transitgatewayNs extends js.Object {
     ): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object RouteTablePropagation extends js.Object {
     /**
@@ -207,6 +211,7 @@ object ec2transitgatewayNs extends js.Object {
     ): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
   }
   
+  /* static members */
   @js.native
   object TransitGateway extends js.Object {
     /**
@@ -231,6 +236,7 @@ object ec2transitgatewayNs extends js.Object {
     ): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
   }
   
+  /* static members */
   @js.native
   object VpcAttachment extends js.Object {
     /**

@@ -45,18 +45,31 @@ object urlDashParseLibStrings {
   @js.native
   sealed trait username extends js.Object
   
+  @scala.inline
   def auth: auth = "auth".asInstanceOf[auth]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def host: host = "host".asInstanceOf[host]
+  @scala.inline
   def hostname: hostname = "hostname".asInstanceOf[hostname]
+  @scala.inline
   def href: href = "href".asInstanceOf[href]
+  @scala.inline
   def origin: origin = "origin".asInstanceOf[origin]
+  @scala.inline
   def password: password = "password".asInstanceOf[password]
+  @scala.inline
   def pathname: pathname = "pathname".asInstanceOf[pathname]
+  @scala.inline
   def port: port = "port".asInstanceOf[port]
+  @scala.inline
   def protocol: protocol = "protocol".asInstanceOf[protocol]
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
+  @scala.inline
   def slashes: slashes = "slashes".asInstanceOf[slashes]
+  @scala.inline
   def username: username = "username".asInstanceOf[username]
 }
 

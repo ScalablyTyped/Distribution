@@ -23,6 +23,7 @@ class Module protected () extends js.Object {
   def require(id: java.lang.String): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("NodeJS.Module")
 @js.native
 object Module extends js.Object {

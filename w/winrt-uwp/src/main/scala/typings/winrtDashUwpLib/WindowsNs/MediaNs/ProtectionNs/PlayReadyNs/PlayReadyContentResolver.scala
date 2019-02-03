@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PlayReadyContentResolver () extends js.Object
 
-/** Receives multiple service request objects that are necessary to enable the playback ability for a given content header. */
+/* static members */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyContentResolver")
 @js.native
 object PlayReadyContentResolver extends js.Object {

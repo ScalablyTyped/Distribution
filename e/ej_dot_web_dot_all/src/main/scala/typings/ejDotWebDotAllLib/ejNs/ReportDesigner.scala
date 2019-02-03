@@ -129,6 +129,7 @@ class ReportDesigner protected () extends Widget {
   def undo(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ReportDesigner")
 @js.native
 object ReportDesigner extends js.Object {

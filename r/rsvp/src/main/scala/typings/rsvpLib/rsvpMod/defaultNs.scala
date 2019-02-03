@@ -417,7 +417,11 @@ object defaultNs extends js.Object {
     options: js.Array[K1]
   ): js.Function1[
     /* arg1 */ A, 
-    rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.denodeify with js.Any]
+    rsvpLib.rsvpMod.RSVPNs.Promise[
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in K1 ]: T}
+    */ rsvpLib.rsvpLibStrings.denodeify with js.Any
+    ]
   ] = js.native
   def denodeify[T1, T2, A, K1 /* <: java.lang.String */, K2 /* <: java.lang.String */](
     nodeFunc: js.Function2[
@@ -713,10 +717,36 @@ object defaultNs extends js.Object {
     label: java.lang.String
   ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[T1 | T2 | T3 | T4 | T5 | T6 | T7 | T8 | T9 | T10]] = js.native
   // ----- hash and hashSettled ----- //
-  def hash[T](`object`: rsvpLib.rsvpLibStrings.hash with T): rsvpLib.rsvpMod.RSVPNs.Promise[T] = js.native
-  def hash[T](`object`: rsvpLib.rsvpLibStrings.hash with T, label: java.lang.String): rsvpLib.rsvpMod.RSVPNs.Promise[T] = js.native
-  def hashSettled[T](`object`: rsvpLib.rsvpLibStrings.hashSettled with T): rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.hashSettled with T] = js.native
-  def hashSettled[T](`object`: rsvpLib.rsvpLibStrings.hashSettled with T, label: java.lang.String): rsvpLib.rsvpMod.RSVPNs.Promise[rsvpLib.rsvpLibStrings.hashSettled with T] = js.native
+  def hash[T](
+    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hash with T
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[T] = js.native
+  def hash[T](
+    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hash with T,
+    label: java.lang.String
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[T] = js.native
+  def hashSettled[T](
+    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hashSettled with T
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hashSettled with T
+  ] = js.native
+  def hashSettled[T](
+    `object`: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.Arg<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hashSettled with T,
+    label: java.lang.String
+  ): rsvpLib.rsvpMod.RSVPNs.Promise[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: rsvp.rsvp.RSVP.PromiseState<T[P]>}
+    */ rsvpLib.rsvpLibStrings.hashSettled with T
+  ] = js.native
   def map[T, U](entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]], mapFn: js.Function1[/* item */ T, U]): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_1] = js.native
   def map[T, U](
     entries: js.Array[rsvpLib.rsvpMod.RSVPNs.Arg[T]],
@@ -925,6 +955,7 @@ object defaultNs extends js.Object {
     label: java.lang.String
   ): rsvpLib.rsvpMod.RSVPNs.Promise[js.Array[U] with rsvpLib.Anon_10] = js.native
   def rethrow(reason: js.Any): scala.Unit = js.native
+  /* static members */
   @js.native
   object EventTarget extends js.Object {
     /** `RSVP.EventTarget.mixin` extends an object with EventTarget methods. */
@@ -975,6 +1006,7 @@ object defaultNs extends js.Object {
     def trigger(eventName: java.lang.String, options: js.Any, label: java.lang.String): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Promise extends js.Object {
     /**

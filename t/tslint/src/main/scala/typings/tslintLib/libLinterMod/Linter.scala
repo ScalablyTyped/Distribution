@@ -34,6 +34,7 @@ class Linter protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/linter", "Linter")
 @js.native
 object Linter extends js.Object {

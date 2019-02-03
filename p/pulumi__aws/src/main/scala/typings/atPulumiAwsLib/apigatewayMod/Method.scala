@@ -20,6 +20,7 @@ class Method protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayMethodMod.MethodArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Method")
 @js.native
 object Method extends js.Object {

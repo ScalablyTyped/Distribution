@@ -23,11 +23,7 @@ abstract class Light protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Base class of all the lights in Babylon. It groups all the generic information about lights.
-  * Lights are used, as you would expect, to affect how meshes are seen, in terms of both illumination and colour.
-  * All meshes allow light to pass through them unless shadow generation is activated. The default number of lights allowed is four but this can be increased.
-  */
+/* static members */
 @JSImport("babylonjs", "Light")
 @js.native
 object Light extends js.Object {

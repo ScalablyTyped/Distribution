@@ -9,6 +9,7 @@ object saslDashPlainLibStrings {
   @js.native
   sealed trait PLAIN extends js.Object
   
+  @scala.inline
   def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownCSimFilePaths () extends js.Object
 
-/** Static class that provides well known CSIM file paths. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.KnownCSimFilePaths")
 @js.native
 object KnownCSimFilePaths extends js.Object {

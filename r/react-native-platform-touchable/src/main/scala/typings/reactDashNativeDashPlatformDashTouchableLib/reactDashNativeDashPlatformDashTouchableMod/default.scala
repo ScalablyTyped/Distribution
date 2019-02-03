@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Touchable
 
+/* static members */
 @JSImport("react-native-platform-touchable", JSImport.Default)
 @js.native
 object default extends js.Object {

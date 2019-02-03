@@ -19,6 +19,7 @@ class Promise[T, E] () extends js.Object {
   def timeout(delay: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("workerpool", "Promise")
 @js.native
 object Promise extends js.Object {

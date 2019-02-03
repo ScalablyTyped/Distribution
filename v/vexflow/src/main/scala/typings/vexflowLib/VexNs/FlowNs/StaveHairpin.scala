@@ -17,6 +17,7 @@ class StaveHairpin protected () extends js.Object {
   def setRenderOptions(options: vexflowLib.Anon_HeightLeftshiftpx): StaveHairpin = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.StaveHairpin")
 @js.native
 object StaveHairpin extends js.Object {

@@ -38,6 +38,7 @@ object ^ extends js.Object {
   def from(links: js.Array[apolloDashLinkLib.libLinkMod.ApolloLink]): apolloDashLinkLib.libLinkMod.ApolloLink = js.native
   def fromError[T](errorValue: js.Any): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
   def fromPromise[T](promise: js.Promise[T]): zenDashObservableDashTsLib.libZenObservableMod.Observable[T] = js.native
+  def getOperationName(doc: graphqlLib.languageAstMod.DocumentNode): java.lang.String | scala.Null = js.native
   def split(
     test: js.Function1[/* op */ apolloDashLinkLib.libTypesMod.Operation, scala.Boolean],
     left: apolloDashLinkLib.libLinkMod.ApolloLink

@@ -14,6 +14,7 @@ class AxisAlignedBoundingBox ()
   def this(minimum: cesiumLib.cesiumMod.CesiumNs.Cartesian3, maximum: cesiumLib.cesiumMod.CesiumNs.Cartesian3, center: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
 }
 
+/* static members */
 @JSImport("cesium", "AxisAlignedBoundingBox")
 @js.native
 object AxisAlignedBoundingBox extends js.Object {

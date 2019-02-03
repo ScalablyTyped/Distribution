@@ -14,6 +14,7 @@ class LineString protected ()
   def cast(geojson: js.Object): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("mongoose.Schema.Types.LineString")
 @js.native
 object LineString extends js.Object {

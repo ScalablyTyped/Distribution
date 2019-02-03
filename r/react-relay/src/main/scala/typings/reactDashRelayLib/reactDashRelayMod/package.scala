@@ -9,7 +9,9 @@ package object reactDashRelayMod {
   type ConcreteFragmentDefinition = js.Object
   type ConcreteOperationDefinition = js.Object
   type FragmentOrRegularProp[T] = T | js.Array[_FragmentRefs[js.Any]] | _FragmentRefs[js.Any]
-  type MappedFragmentProps[T] = reactDashRelayLib.reactDashRelayLibStrings.MappedFragmentProps with T
+  type MappedFragmentProps[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: react-relay.react-relay.FragmentOrRegularProp<T[K]>}
+    */ reactDashRelayLib.reactDashRelayLibStrings.MappedFragmentProps with T
   type RelayContainer[P] = reactLib.reactMod.ReactNs.ComponentType[MappedFragmentProps[RemoveRelayProp[P]] with ComponentRef]
   type RelayPaginationProp = RelayProp with reactDashRelayLib.Anon_Callback
   type RelayRefetchProp = RelayProp with reactDashRelayLib.Anon_CallbackError

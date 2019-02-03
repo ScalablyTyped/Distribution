@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TocPlugin ()
   extends typedocLib.distLibOutputPluginsTocPluginMod.TocPlugin
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/plugins", "TocPlugin")
 @js.native
 object TocPlugin extends js.Object {

@@ -21,6 +21,7 @@ class default () extends OriginatorInfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/OriginatorInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

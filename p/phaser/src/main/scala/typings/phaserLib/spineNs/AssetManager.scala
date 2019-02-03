@@ -70,6 +70,7 @@ class AssetManager protected () extends Disposable {
   def removeAll(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.AssetManager")
 @js.native
 object AssetManager extends js.Object {

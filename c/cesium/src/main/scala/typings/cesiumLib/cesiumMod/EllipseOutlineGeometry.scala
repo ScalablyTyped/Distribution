@@ -12,6 +12,7 @@ class EllipseOutlineGeometry protected ()
   def this(options: cesiumLib.Anon_CenterEllipsoidExtrudedHeightGranularity) = this()
 }
 
+/* static members */
 @JSImport("cesium", "EllipseOutlineGeometry")
 @js.native
 object EllipseOutlineGeometry extends js.Object {

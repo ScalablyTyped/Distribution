@@ -61,10 +61,7 @@ class Invalidations () extends js.Object {
   def update(mark: heremapsLib.HNs.mapNs.providerNs.InvalidationsNs.Mark, types: heremapsLib.HNs.mathNs.BitMask): scala.Unit = js.native
 }
 
-/**
-  * This class represents invalidation states of a renderable object. A renderer can optimize its rendering strategies based on the information in this object.
-  * @property MARK_INITIAL {H.map.provider.Invalidations.Mark} - This constant represents the initial invalidation mark an invalidations object has.
-  */
+/* static members */
 @JSGlobal("H.map.provider.Invalidations")
 @js.native
 object Invalidations extends js.Object {

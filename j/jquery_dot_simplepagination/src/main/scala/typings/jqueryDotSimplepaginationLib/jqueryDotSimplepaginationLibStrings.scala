@@ -48,19 +48,33 @@ object jqueryDotSimplepaginationLibStrings {
   @js.native
   sealed trait updateItemsOnPage extends js.Object
   
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def disable: disable = "disable".asInstanceOf[disable]
+  @scala.inline
   def drawPage: drawPage = "drawPage".asInstanceOf[drawPage]
+  @scala.inline
   def enable: enable = "enable".asInstanceOf[enable]
+  @scala.inline
   def getCurrentPage: getCurrentPage = "getCurrentPage".asInstanceOf[getCurrentPage]
+  @scala.inline
   def getItemsOnPage: getItemsOnPage = "getItemsOnPage".asInstanceOf[getItemsOnPage]
+  @scala.inline
   def getPagesCount: getPagesCount = "getPagesCount".asInstanceOf[getPagesCount]
+  @scala.inline
   def nextPage: nextPage = "nextPage".asInstanceOf[nextPage]
+  @scala.inline
   def prevPage: prevPage = "prevPage".asInstanceOf[prevPage]
+  @scala.inline
   def redraw: redraw = "redraw".asInstanceOf[redraw]
+  @scala.inline
   def selectPage: selectPage = "selectPage".asInstanceOf[selectPage]
+  @scala.inline
   def setPagesCount: setPagesCount = "setPagesCount".asInstanceOf[setPagesCount]
+  @scala.inline
   def updateItems: updateItems = "updateItems".asInstanceOf[updateItems]
+  @scala.inline
   def updateItemsOnPage: updateItemsOnPage = "updateItemsOnPage".asInstanceOf[updateItemsOnPage]
 }
 

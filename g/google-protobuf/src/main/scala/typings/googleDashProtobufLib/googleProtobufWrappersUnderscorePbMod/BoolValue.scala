@@ -13,6 +13,7 @@ class BoolValue ()
   def setValue(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BoolValue")
 @js.native
 object BoolValue extends js.Object {

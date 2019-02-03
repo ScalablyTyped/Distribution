@@ -15,6 +15,7 @@ class EntityIdentity protected ()
   def get_item(fieldName: java.lang.String): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("SP.BusinessData.Runtime.EntityIdentity")
 @js.native
 object EntityIdentity extends js.Object {

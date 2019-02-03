@@ -324,6 +324,7 @@ class SourceCode protected () extends js.Object {
   def isSpaceBetweenTokens(first: eslintLib.eslintMod.ASTNs.Token, second: eslintLib.eslintMod.ASTNs.Token): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("eslint", "SourceCode")
 @js.native
 object SourceCode extends js.Object {

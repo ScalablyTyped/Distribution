@@ -48,6 +48,7 @@ class KeyEvent () extends js.Object {
   def startTracking(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.KeyEvent")
 @js.native
 object KeyEvent extends js.Object {

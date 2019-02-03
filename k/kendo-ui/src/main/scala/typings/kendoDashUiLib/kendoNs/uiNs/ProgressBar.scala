@@ -20,6 +20,7 @@ class ProgressBar protected () extends Widget {
   def value(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ProgressBar")
 @js.native
 object ProgressBar extends js.Object {

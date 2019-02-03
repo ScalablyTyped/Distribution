@@ -31,6 +31,7 @@ class List ()
   def scrollToRow(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/List", "List")
 @js.native
 object List extends js.Object {

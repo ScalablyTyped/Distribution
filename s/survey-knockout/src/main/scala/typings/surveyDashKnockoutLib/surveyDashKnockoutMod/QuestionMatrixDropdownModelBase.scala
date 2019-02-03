@@ -102,6 +102,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def validateCell(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): SurveyError = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 object QuestionMatrixDropdownModelBase extends js.Object {

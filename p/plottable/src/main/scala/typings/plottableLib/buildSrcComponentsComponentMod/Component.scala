@@ -338,6 +338,7 @@ class Component () extends js.Object {
   def yAlignment(yAlignment: YAlignment): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/components/component", "Component")
 @js.native
 object Component extends js.Object {

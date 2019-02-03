@@ -16,6 +16,7 @@ class WebGLUniforms protected () extends js.Object {
   def setValue(gl: js.Any, value: js.Any, renderer: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "WebGLUniforms")
 @js.native
 object WebGLUniforms extends js.Object {

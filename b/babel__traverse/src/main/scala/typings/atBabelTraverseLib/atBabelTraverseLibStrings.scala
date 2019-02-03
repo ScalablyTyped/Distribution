@@ -21,10 +21,15 @@ object atBabelTraverseLibStrings {
   @js.native
   sealed trait `var` extends js.Object
   
+  @scala.inline
   def Visitor: Visitor = "Visitor".asInstanceOf[Visitor]
+  @scala.inline
   def const: const = "const".asInstanceOf[const]
+  @scala.inline
   def let: let = "let".asInstanceOf[let]
+  @scala.inline
   def module: module = "module".asInstanceOf[module]
+  @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
 }
 

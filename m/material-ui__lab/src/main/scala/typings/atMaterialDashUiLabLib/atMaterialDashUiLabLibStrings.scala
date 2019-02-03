@@ -82,6 +82,9 @@ object atMaterialDashUiLabLibStrings {
   sealed trait `left-start` extends js.Object
   
   @js.native
+  sealed trait ol extends js.Object
+  
+  @js.native
   sealed trait openIcon extends js.Object
   
   @js.native
@@ -101,6 +104,9 @@ object atMaterialDashUiLabLibStrings {
   
   @js.native
   sealed trait selected extends js.Object
+  
+  @js.native
+  sealed trait separator extends js.Object
   
   @js.native
   sealed trait thumb extends js.Object
@@ -135,48 +141,95 @@ object atMaterialDashUiLabLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def actions: actions = "actions".asInstanceOf[actions]
+  @scala.inline
   def actionsClosed: actionsClosed = "actionsClosed".asInstanceOf[actionsClosed]
+  @scala.inline
   def activated: activated = "activated".asInstanceOf[activated]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-end`: `bottom-end` = "bottom-end".asInstanceOf[`bottom-end`]
+  @scala.inline
   def `bottom-start`: `bottom-start` = "bottom-start".asInstanceOf[`bottom-start`]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
+  @scala.inline
   def buttonClosed: buttonClosed = "buttonClosed".asInstanceOf[buttonClosed]
+  @scala.inline
   def container: container = "container".asInstanceOf[container]
+  @scala.inline
   def directionDown: directionDown = "directionDown".asInstanceOf[directionDown]
+  @scala.inline
   def directionLeft: directionLeft = "directionLeft".asInstanceOf[directionLeft]
+  @scala.inline
   def directionRight: directionRight = "directionRight".asInstanceOf[directionRight]
+  @scala.inline
   def directionUp: directionUp = "directionUp".asInstanceOf[directionUp]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def fab: fab = "fab".asInstanceOf[fab]
+  @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
+  @scala.inline
   def icon: icon = "icon".asInstanceOf[icon]
+  @scala.inline
   def iconOpen: iconOpen = "iconOpen".asInstanceOf[iconOpen]
+  @scala.inline
   def iconWithOpenIconOpen: iconWithOpenIconOpen = "iconWithOpenIconOpen".asInstanceOf[iconWithOpenIconOpen]
+  @scala.inline
   def jumped: jumped = "jumped".asInstanceOf[jumped]
+  @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def `left-end`: `left-end` = "left-end".asInstanceOf[`left-end`]
+  @scala.inline
   def `left-start`: `left-start` = "left-start".asInstanceOf[`left-start`]
+  @scala.inline
+  def ol: ol = "ol".asInstanceOf[ol]
+  @scala.inline
   def openIcon: openIcon = "openIcon".asInstanceOf[openIcon]
+  @scala.inline
   def openIconOpen: openIconOpen = "openIconOpen".asInstanceOf[openIconOpen]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def `right-end`: `right-end` = "right-end".asInstanceOf[`right-end`]
+  @scala.inline
   def `right-start`: `right-start` = "right-start".asInstanceOf[`right-start`]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
   def selected: selected = "selected".asInstanceOf[selected]
+  @scala.inline
+  def separator: separator = "separator".asInstanceOf[separator]
+  @scala.inline
   def thumb: thumb = "thumb".asInstanceOf[thumb]
+  @scala.inline
   def thumbIcon: thumbIcon = "thumbIcon".asInstanceOf[thumbIcon]
+  @scala.inline
   def thumbIconWrapper: thumbIconWrapper = "thumbIconWrapper".asInstanceOf[thumbIconWrapper]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-end`: `top-end` = "top-end".asInstanceOf[`top-end`]
+  @scala.inline
   def `top-start`: `top-start` = "top-start".asInstanceOf[`top-start`]
+  @scala.inline
   def track: track = "track".asInstanceOf[track]
+  @scala.inline
   def trackAfter: trackAfter = "trackAfter".asInstanceOf[trackAfter]
+  @scala.inline
   def trackBefore: trackBefore = "trackBefore".asInstanceOf[trackBefore]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

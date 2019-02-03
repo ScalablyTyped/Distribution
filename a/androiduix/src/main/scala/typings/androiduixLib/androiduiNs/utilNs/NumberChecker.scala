@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NumberChecker () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.util.NumberChecker")
 @js.native
 object NumberChecker extends js.Object {

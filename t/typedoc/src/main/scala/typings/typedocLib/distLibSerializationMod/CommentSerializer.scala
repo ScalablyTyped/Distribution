@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommentSerializer ()
   extends typedocLib.distLibSerializationSerializersMod.CommentSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization", "CommentSerializer")
 @js.native
 object CommentSerializer extends js.Object {

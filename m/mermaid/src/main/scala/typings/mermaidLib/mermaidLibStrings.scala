@@ -18,9 +18,13 @@ object mermaidLibStrings {
   @js.native
   sealed trait netural extends js.Object
   
+  @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def forest: forest = "forest".asInstanceOf[forest]
+  @scala.inline
   def netural: netural = "netural".asInstanceOf[netural]
 }
 

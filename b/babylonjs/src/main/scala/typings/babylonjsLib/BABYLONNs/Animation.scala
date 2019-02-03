@@ -308,9 +308,7 @@ class Animation protected () extends js.Object {
   ): Vector3 = js.native
 }
 
-/**
-  * Class used to store any kind of animation
-  */
+/* static members */
 @JSGlobal("BABYLON.Animation")
 @js.native
 object Animation extends js.Object {

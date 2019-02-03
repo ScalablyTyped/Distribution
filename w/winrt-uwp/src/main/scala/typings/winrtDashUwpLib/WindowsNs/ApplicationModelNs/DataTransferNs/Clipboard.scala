@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Clipboard () extends js.Object
 
-/** Gets and sets information from the clipboard object. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.Clipboard")
 @js.native
 object Clipboard extends js.Object {

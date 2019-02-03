@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicGeometryData ()
   extends wonderDotJsLib.distEs2015ComponentGeometryDataGeometryDataMod.GeometryData
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/geometry/data/BasicGeometryData", "BasicGeometryData")
 @js.native
 object BasicGeometryData extends js.Object {

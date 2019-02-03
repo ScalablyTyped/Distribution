@@ -42,6 +42,7 @@ class Solver ()
   override def sortEquations(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("p2", "Solver")
 @js.native
 object Solver extends js.Object {

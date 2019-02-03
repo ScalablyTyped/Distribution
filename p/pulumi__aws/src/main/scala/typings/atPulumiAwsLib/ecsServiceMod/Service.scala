@@ -110,6 +110,7 @@ class Service protected ()
   val waitForSteadyState: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecs/service", "Service")
 @js.native
 object Service extends js.Object {

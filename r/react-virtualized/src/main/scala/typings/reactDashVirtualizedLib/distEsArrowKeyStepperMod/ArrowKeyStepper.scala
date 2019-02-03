@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrowKeyStepper ()
   extends reactLib.reactMod.PureComponent[ArrowKeyStepperProps, ScrollIndices, js.Any]
 
+/* static members */
 @JSImport("react-virtualized/dist/es/ArrowKeyStepper", "ArrowKeyStepper")
 @js.native
 object ArrowKeyStepper extends js.Object {

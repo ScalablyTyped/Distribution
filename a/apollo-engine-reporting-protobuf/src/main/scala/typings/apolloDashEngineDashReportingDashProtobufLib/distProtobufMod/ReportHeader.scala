@@ -44,6 +44,7 @@ class ReportHeader () extends IReportHeader {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ReportHeader")
 @js.native
 object ReportHeader extends js.Object {

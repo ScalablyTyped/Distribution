@@ -134,10 +134,7 @@ class PageRequestManager () extends js.Object {
   def remove_pageLoading(pageLoadingHandler: js.Function2[/* sender */ js.Any, /* args */ PageLoadingEventArgs, scala.Unit]): scala.Unit = js.native
 }
 
-/**
-  * Manages client partial-page updates of server UpdatePanel controls. In addition, defines properties, events, and methods that can be used to customize a Web page with client script.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb311028(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.WebForms.PageRequestManager")
 @js.native
 object PageRequestManager extends js.Object {

@@ -18,6 +18,7 @@ class Replacement protected () extends js.Object {
   def toJson(): ReplacementJson = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/language/rule/rule", "Replacement")
 @js.native
 object Replacement extends js.Object {

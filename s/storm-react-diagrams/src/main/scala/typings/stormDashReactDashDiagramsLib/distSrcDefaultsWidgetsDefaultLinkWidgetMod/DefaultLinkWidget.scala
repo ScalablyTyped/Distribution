@@ -34,6 +34,7 @@ class DefaultLinkWidget protected ()
   def isSmartRoutingApplicable(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/defaults/widgets/DefaultLinkWidget", "DefaultLinkWidget")
 @js.native
 object DefaultLinkWidget extends js.Object {

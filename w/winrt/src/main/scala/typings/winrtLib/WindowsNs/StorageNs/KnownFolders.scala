@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KnownFolders () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.KnownFolders")
 @js.native
 object KnownFolders extends js.Object {

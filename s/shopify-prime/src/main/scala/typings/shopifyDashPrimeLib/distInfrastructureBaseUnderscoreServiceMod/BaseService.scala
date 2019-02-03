@@ -78,6 +78,7 @@ class BaseService protected () extends js.Object {
   /* protected */ def joinUriPaths(paths: java.lang.String*): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("shopify-prime/dist/infrastructure/base_service", "BaseService")
 @js.native
 object BaseService extends js.Object {

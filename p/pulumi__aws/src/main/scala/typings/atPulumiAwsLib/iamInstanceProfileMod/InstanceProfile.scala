@@ -55,6 +55,7 @@ class InstanceProfile protected ()
   val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/instanceProfile", "InstanceProfile")
 @js.native
 object InstanceProfile extends js.Object {

@@ -18,6 +18,7 @@ class Inclinometer () extends IInclinometer {
   override def getCurrentReading(): InclinometerReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Inclinometer")
 @js.native
 object Inclinometer extends js.Object {

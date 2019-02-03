@@ -18,9 +18,13 @@ object gsapLibStrings {
   @js.native
   sealed trait out extends js.Object
   
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def in: in = "in".asInstanceOf[in]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def out: out = "out".asInstanceOf[out]
 }
 

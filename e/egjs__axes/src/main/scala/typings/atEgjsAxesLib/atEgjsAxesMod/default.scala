@@ -13,6 +13,7 @@ class default protected ()
   def this(axis: org.scalablytyped.runtime.StringDictionary[atEgjsAxesLib.axismanagerMod.AxisOption], options: atEgjsAxesLib.axesMod.AxesOption, startPos: atEgjsAxesLib.axismanagerMod.Axis) = this()
 }
 
+/* static members */
 @JSImport("@egjs/axes", "default")
 @js.native
 object default extends js.Object {

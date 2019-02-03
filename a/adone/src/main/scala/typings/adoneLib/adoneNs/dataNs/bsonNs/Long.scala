@@ -19,9 +19,7 @@ class Long ()
   var _bsontype_Long: adoneLib.adoneLibStrings.Long = js.native
 }
 
-/**
-  * Represents BSON Long type
-  */
+/* static members */
 @JSGlobal("adone.data.bson.Long")
 @js.native
 object Long extends js.Object {

@@ -67,6 +67,7 @@ class Tab protected () extends Widget {
   def showItem(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Tab")
 @js.native
 object Tab extends js.Object {

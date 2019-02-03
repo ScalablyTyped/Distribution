@@ -43,6 +43,7 @@ class Circle () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Circle")
 @js.native
 object Circle extends js.Object {

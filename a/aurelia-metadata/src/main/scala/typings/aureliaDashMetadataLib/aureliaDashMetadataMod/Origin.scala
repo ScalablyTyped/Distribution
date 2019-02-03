@@ -24,6 +24,7 @@ class Origin protected () extends js.Object {
   var moduleMember: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("aurelia-metadata", "Origin")
 @js.native
 object Origin extends js.Object {

@@ -20,6 +20,7 @@ class Job protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueJobMod.JobArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "Job")
 @js.native
 object Job extends js.Object {

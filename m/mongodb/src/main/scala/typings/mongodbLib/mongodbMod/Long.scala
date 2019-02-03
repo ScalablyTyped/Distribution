@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Long ()
   extends bsonLib.bsonMod.Long
 
+/* static members */
 @JSImport("mongodb", "Long")
 @js.native
 object Long extends js.Object {

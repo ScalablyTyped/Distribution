@@ -58,6 +58,7 @@ class b2AABB () extends js.Object {
   def TestOverlap(other: b2AABB): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Collision.b2AABB")
 @js.native
 object b2AABB extends js.Object {

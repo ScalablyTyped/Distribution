@@ -12,6 +12,7 @@ class TabSlide protected () extends TabTie {
   def this(notes: vexflowLib.Anon_Firstindices, direction: scala.Double) = this()
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.TabSlide")
 @js.native
 object TabSlide extends js.Object {

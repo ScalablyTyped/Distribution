@@ -14,6 +14,7 @@ class Diagnostic protected ()
   def this(fileName: java.lang.String, lineMap: typescriptDashServicesLib.TypeScriptNs.LineMap, start: scala.Double, length: scala.Double, diagnosticKey: java.lang.String, _arguments: js.Array[_], additionalLocations: js.Array[typescriptDashServicesLib.TypeScriptNs.Location]) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "Diagnostic")
 @js.native
 object Diagnostic extends js.Object {

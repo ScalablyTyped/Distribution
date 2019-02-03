@@ -33,6 +33,7 @@ class NamedNode protected () extends Node {
   def site(): NamedNode = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "NamedNode")
 @js.native
 object NamedNode extends js.Object {

@@ -389,13 +389,7 @@ abstract class PBRBaseMaterial protected () extends PushMaterial {
   def isReadyForSubMesh(mesh: AbstractMesh, subMesh: SubMesh, useInstances: scala.Boolean): scala.Boolean = js.native
 }
 
-/**
-  * The Physically based material base class of BJS.
-  *
-  * This offers the main features of a standard PBR material.
-  * For more information, please refer to the documentation :
-  * http://doc.babylonjs.com/extensions/Physically_Based_Rendering
-  */
+/* static members */
 @JSGlobal("BABYLON.PBRBaseMaterial")
 @js.native
 object PBRBaseMaterial extends js.Object {

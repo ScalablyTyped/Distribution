@@ -11,6 +11,7 @@ class BinaryLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.BinaryLoader")
 @js.native
 object BinaryLoader extends js.Object {

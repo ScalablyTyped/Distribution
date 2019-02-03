@@ -13,6 +13,7 @@ abstract class Type () extends js.Object {
   def toObject(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/models/types/abstract", "Type")
 @js.native
 object Type extends js.Object {

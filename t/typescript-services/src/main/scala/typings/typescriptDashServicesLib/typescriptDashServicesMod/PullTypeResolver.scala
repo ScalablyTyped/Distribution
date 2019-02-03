@@ -12,6 +12,7 @@ class PullTypeResolver protected ()
   def this(compilationSettings: typescriptDashServicesLib.TypeScriptNs.ImmutableCompilationSettings, semanticInfoChain: typescriptDashServicesLib.TypeScriptNs.SemanticInfoChain) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PullTypeResolver")
 @js.native
 object PullTypeResolver extends js.Object {

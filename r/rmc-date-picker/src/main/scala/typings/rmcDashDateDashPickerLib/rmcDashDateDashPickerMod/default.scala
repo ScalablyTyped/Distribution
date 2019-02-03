@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends rmcDashDateDashPickerLib.libDatePickerMod.default
 
+/* static members */
 @JSImport("rmc-date-picker", "default")
 @js.native
 object default extends js.Object {

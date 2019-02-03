@@ -16,7 +16,9 @@ package object recomposeMod {
   type HandleCreators[TOutter, THandlers] = HandleCreatorsStructure[TOutter] with (HandleCreatorsHandlers[TOutter, THandlers])
   type HandleCreatorsFactory[TOutter, THandlers] = js.Function1[/* initialProps */ TOutter, HandleCreators[TOutter, THandlers]]
   // This type is required to infer THandlers
-  type HandleCreatorsHandlers[TOutter, THandlers] = recomposeLib.recomposeLibStrings.HandleCreatorsHandlers with THandlers
+  type HandleCreatorsHandlers[TOutter, THandlers] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof THandlers ]: (props : TOutter): THandlers[P]}
+    */ recomposeLib.recomposeLibStrings.HandleCreatorsHandlers with THandlers
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ reactLib.reactMod.ReactNs.ComponentType[TInjectedProps], 
@@ -27,7 +29,9 @@ package object recomposeMod {
   type ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance] = (_ReactLifeCycleFunctionsThisArguments[TProps, TState]) with TInstance
   // withStateHandlers: https://github.com/acdlite/recompose/blob/master/docs/API.md#withstatehandlers
   type StateHandler[TState] = js.Function1[/* repeated */ js.Any, js.UndefOr[stdLib.Partial[TState]]]
-  type StateUpdaters[TOutter, TState, TUpdaters] = recomposeLib.recomposeLibStrings.StateUpdaters with TUpdaters
+  type StateUpdaters[TOutter, TState, TUpdaters] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ updaterName in keyof TUpdaters ]: (state : TState, props : TOutter): TUpdaters[updaterName]}
+    */ recomposeLib.recomposeLibStrings.StateUpdaters with TUpdaters
   // createEagerFactory: https://github.com/acdlite/recompose/blob/master/docs/API.md#createEagerFactory
   type componentFactory = js.Function2[
     /* props */ js.UndefOr[js.Object], 

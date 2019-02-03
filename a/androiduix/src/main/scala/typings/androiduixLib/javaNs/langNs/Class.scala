@@ -14,6 +14,7 @@ class Class protected () extends js.Object {
   def getSimpleName(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("java.lang.Class")
 @js.native
 object Class extends js.Object {

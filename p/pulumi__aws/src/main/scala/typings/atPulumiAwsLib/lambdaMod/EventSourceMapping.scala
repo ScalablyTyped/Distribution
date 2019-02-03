@@ -20,6 +20,7 @@ class EventSourceMapping protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lambdaEventSourceMappingMod.EventSourceMappingArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda", "EventSourceMapping")
 @js.native
 object EventSourceMapping extends js.Object {

@@ -61,6 +61,7 @@ class Toaster ()
   override def setState[K /* <: java.lang.String */](state: stdLib.Pick[IToasterState, K], callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/toast/toaster", "Toaster")
 @js.native
 object Toaster extends js.Object {

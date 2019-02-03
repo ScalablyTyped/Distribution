@@ -18,9 +18,13 @@ object datatablesDotNetDashColreorderLibStrings {
   @js.native
   sealed trait toOriginal extends js.Object
   
+  @scala.inline
   def fromCurrent: fromCurrent = "fromCurrent".asInstanceOf[fromCurrent]
+  @scala.inline
   def fromOriginal: fromOriginal = "fromOriginal".asInstanceOf[fromOriginal]
+  @scala.inline
   def toCurrent: toCurrent = "toCurrent".asInstanceOf[toCurrent]
+  @scala.inline
   def toOriginal: toOriginal = "toOriginal".asInstanceOf[toOriginal]
 }
 

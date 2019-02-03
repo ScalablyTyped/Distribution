@@ -20,6 +20,7 @@ class ConnectionStringParser protected () extends js.Object {
   def _skipWhitespaces(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "ConnectionStringParser")
 @js.native
 object ConnectionStringParser extends js.Object {

@@ -33,14 +33,23 @@ object tinyDashSliderDashReactLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
+  @scala.inline
   def carousel: carousel = "carousel".asInstanceOf[carousel]
+  @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
+  @scala.inline
   def gallery: gallery = "gallery".asInstanceOf[gallery]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def inner: inner = "inner".asInstanceOf[inner]
+  @scala.inline
   def outer: outer = "outer".asInstanceOf[outer]
+  @scala.inline
   def page: page = "page".asInstanceOf[page]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

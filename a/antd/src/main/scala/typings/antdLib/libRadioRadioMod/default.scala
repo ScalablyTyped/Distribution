@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Radio
 
+/* static members */
 @JSImport("antd/lib/radio/radio", JSImport.Default)
 @js.native
 object default extends js.Object {

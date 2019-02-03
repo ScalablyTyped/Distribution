@@ -21,6 +21,7 @@ class DefaultVpcDhcpOptions protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2DefaultVpcDhcpOptionsMod.DefaultVpcDhcpOptionsArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "DefaultVpcDhcpOptions")
 @js.native
 object DefaultVpcDhcpOptions extends js.Object {

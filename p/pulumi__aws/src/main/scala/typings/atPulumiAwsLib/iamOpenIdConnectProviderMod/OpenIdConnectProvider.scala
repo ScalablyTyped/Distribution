@@ -36,6 +36,7 @@ class OpenIdConnectProvider protected ()
   val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/openIdConnectProvider", "OpenIdConnectProvider")
 @js.native
 object OpenIdConnectProvider extends js.Object {

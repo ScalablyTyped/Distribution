@@ -15,6 +15,7 @@ class Clef protected () extends StaveModifier {
   def addModifier(stave: Stave): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Clef")
 @js.native
 object Clef extends js.Object {

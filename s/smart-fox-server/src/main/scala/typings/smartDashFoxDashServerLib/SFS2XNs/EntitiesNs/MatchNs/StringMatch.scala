@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringMatch () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Match.StringMatch")
 @js.native
 object StringMatch extends js.Object {

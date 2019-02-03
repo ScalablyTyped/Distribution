@@ -131,6 +131,7 @@ class KeytipLayerBase protected ()
   def showKeytips(ids: js.Array[java.lang.String]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipLayer.base", "KeytipLayerBase")
 @js.native
 object KeytipLayerBase extends js.Object {

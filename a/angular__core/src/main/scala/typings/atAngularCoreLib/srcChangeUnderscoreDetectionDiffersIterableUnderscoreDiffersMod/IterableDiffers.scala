@@ -16,6 +16,7 @@ class IterableDiffers protected () extends js.Object {
   def find(iterable: js.Any): IterableDifferFactory = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/change_detection/differs/iterable_differs", "IterableDiffers")
 @js.native
 object IterableDiffers extends js.Object {

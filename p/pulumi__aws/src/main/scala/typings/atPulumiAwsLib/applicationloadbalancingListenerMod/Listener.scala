@@ -48,6 +48,7 @@ class Listener protected ()
   val sslPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/applicationloadbalancing/listener", "Listener")
 @js.native
 object Listener extends js.Object {

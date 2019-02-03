@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BackgroundMediaPlayer () extends js.Object
 
-/** Provides access to the media player while it is running in the background. */
+/* static members */
 @JSGlobal("Windows.Media.Playback.BackgroundMediaPlayer")
 @js.native
 object BackgroundMediaPlayer extends js.Object {

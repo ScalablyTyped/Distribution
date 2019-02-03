@@ -53,6 +53,7 @@ class namespaced () extends XDate {
   def this(year: scala.Double, month: scala.Double, date: scala.Double, hours: scala.Double, minutes: scala.Double, seconds: scala.Double, milliseconds: scala.Double, utcmode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("xdate", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

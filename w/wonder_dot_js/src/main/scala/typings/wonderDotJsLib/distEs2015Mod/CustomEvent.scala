@@ -13,6 +13,7 @@ class CustomEvent protected ()
   def this(eventName: java.lang.String, userData: js.Any) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CustomEvent")
 @js.native
 object CustomEvent extends js.Object {

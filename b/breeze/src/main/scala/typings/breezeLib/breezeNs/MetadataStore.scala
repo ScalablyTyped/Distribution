@@ -56,6 +56,7 @@ class MetadataStore () extends js.Object {
   def trackUnmappedType(entityCtor: js.Function, interceptor: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.MetadataStore")
 @js.native
 object MetadataStore extends js.Object {

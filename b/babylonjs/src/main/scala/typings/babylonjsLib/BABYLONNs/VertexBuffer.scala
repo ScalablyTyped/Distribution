@@ -141,9 +141,7 @@ class VertexBuffer protected () extends js.Object {
   def updateDirectly(data: DataArray, offset: scala.Double, useBytes: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Specialized buffer used to store vertex data
-  */
+/* static members */
 @JSGlobal("BABYLON.VertexBuffer")
 @js.native
 object VertexBuffer extends js.Object {

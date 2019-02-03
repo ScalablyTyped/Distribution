@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CancellationToken ()
   extends prexLib.outLibCancellationMod.CancellationToken
 
+/* static members */
 @JSImport("prex", "CancellationToken")
 @js.native
 object CancellationToken extends js.Object {

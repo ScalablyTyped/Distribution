@@ -45,7 +45,7 @@ abstract class DataTransferManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Programmatically initiates an exchange of content with other apps. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
 @js.native
 object DataTransferManager extends js.Object {

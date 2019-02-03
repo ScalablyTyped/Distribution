@@ -65,6 +65,7 @@ class ActivityThread protected () extends js.Object {
   /* private */ def updateVisibility(activity: js.Any, show: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.ActivityThread")
 @js.native
 object ActivityThread extends js.Object {

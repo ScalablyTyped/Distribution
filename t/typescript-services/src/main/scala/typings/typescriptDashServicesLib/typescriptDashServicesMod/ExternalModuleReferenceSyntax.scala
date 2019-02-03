@@ -12,6 +12,7 @@ class ExternalModuleReferenceSyntax protected ()
   def this(requireKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, stringLiteral: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ExternalModuleReferenceSyntax")
 @js.native
 object ExternalModuleReferenceSyntax extends js.Object {

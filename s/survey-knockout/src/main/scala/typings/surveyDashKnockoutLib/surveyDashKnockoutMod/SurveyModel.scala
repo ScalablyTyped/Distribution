@@ -1335,6 +1335,7 @@ class SurveyModel ()
   def validateQuestion(question: IQuestion): SurveyError = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "SurveyModel")
 @js.native
 object SurveyModel extends js.Object {

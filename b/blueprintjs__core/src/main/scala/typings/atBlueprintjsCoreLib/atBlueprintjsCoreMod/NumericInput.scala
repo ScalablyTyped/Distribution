@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NumericInput ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.NumericInput
 
+/* static members */
 @JSImport("@blueprintjs/core", "NumericInput")
 @js.native
 object NumericInput extends js.Object {

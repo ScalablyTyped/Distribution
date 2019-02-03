@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ShutdownManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.ShutdownManager")
 @js.native
 object ShutdownManager extends js.Object {

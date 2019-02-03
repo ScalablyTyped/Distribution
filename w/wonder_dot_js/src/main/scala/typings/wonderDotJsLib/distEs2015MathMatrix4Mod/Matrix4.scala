@@ -115,6 +115,7 @@ class Matrix4 () extends js.Object {
   def transpose(): Matrix4 = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/math/Matrix4", "Matrix4")
 @js.native
 object Matrix4 extends js.Object {

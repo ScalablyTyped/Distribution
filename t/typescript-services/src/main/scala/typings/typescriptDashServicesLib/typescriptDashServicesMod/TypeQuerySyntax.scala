@@ -12,6 +12,7 @@ class TypeQuerySyntax protected ()
   def this(typeOfKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, name: typescriptDashServicesLib.TypeScriptNs.INameSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeQuerySyntax")
 @js.native
 object TypeQuerySyntax extends js.Object {

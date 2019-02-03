@@ -31,6 +31,7 @@ class SourceMapper protected () extends js.Object {
   /* private */ def setSourceMapOptions(document: js.Any, jsFilePath: js.Any, emitOptions: js.Any, resolvePath: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SourceMapper")
 @js.native
 object SourceMapper extends js.Object {

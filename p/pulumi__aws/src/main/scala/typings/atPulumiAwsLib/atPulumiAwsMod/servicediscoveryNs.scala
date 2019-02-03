@@ -66,6 +66,7 @@ object servicediscoveryNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.servicediscoveryServiceMod.ServiceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object HttpNamespace extends js.Object {
     /**
@@ -90,6 +91,7 @@ object servicediscoveryNs extends js.Object {
     ): atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespace = js.native
   }
   
+  /* static members */
   @js.native
   object PrivateDnsNamespace extends js.Object {
     /**
@@ -114,6 +116,7 @@ object servicediscoveryNs extends js.Object {
     ): atPulumiAwsLib.servicediscoveryPrivateDnsNamespaceMod.PrivateDnsNamespace = js.native
   }
   
+  /* static members */
   @js.native
   object PublicDnsNamespace extends js.Object {
     /**
@@ -138,6 +141,7 @@ object servicediscoveryNs extends js.Object {
     ): atPulumiAwsLib.servicediscoveryPublicDnsNamespaceMod.PublicDnsNamespace = js.native
   }
   
+  /* static members */
   @js.native
   object Service extends js.Object {
     /**

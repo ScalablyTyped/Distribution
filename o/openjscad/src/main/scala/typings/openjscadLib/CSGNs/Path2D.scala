@@ -25,6 +25,7 @@ class Path2D protected ()
   def rectangularExtrude(width: scala.Double, height: scala.Double, resolution: scala.Double): openjscadLib.CSG = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Path2D")
 @js.native
 object Path2D extends js.Object {

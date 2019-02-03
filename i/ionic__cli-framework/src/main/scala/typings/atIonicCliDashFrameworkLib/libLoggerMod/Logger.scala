@@ -63,6 +63,7 @@ class Logger () extends js.Object {
   def warn(msg: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@ionic/cli-framework/lib/logger", "Logger")
 @js.native
 object Logger extends js.Object {

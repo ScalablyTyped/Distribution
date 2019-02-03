@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ClassicAppManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Management.Deployment.Preview.ClassicAppManager")
 @js.native
 object ClassicAppManager extends js.Object {

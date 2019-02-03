@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[TEvent /* <: Event */, TResource /* <: js.Object */] () extends BigCalendar[TEvent, TResource]
 
+/* static members */
 @JSImport("react-big-calendar", JSImport.Default)
 @js.native
 object default extends js.Object {

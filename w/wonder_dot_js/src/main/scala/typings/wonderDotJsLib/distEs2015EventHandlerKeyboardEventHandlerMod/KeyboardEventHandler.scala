@@ -40,6 +40,7 @@ class KeyboardEventHandler ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/handler/KeyboardEventHandler", "KeyboardEventHandler")
 @js.native
 object KeyboardEventHandler extends js.Object {

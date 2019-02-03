@@ -29,6 +29,7 @@ class RegexPatternSet protected ()
   val regexPatternStrings: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf/regexPatternSet", "RegexPatternSet")
 @js.native
 object RegexPatternSet extends js.Object {

@@ -36,6 +36,7 @@ class Domain protected ()
   val workflowExecutionRetentionPeriodInDays: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/swf/domain", "Domain")
 @js.native
 object Domain extends js.Object {

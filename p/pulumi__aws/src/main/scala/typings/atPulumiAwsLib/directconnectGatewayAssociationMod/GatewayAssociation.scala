@@ -28,6 +28,7 @@ class GatewayAssociation protected ()
   val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/gatewayAssociation", "GatewayAssociation")
 @js.native
 object GatewayAssociation extends js.Object {

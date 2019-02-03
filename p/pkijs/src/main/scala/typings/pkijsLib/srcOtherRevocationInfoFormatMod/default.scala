@@ -21,6 +21,7 @@ class default () extends OtherRevocationInfoFormat {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/OtherRevocationInfoFormat", JSImport.Default)
 @js.native
 object default extends js.Object {

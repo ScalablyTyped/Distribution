@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class StackedArea[X] ()
   extends plottableLib.buildSrcPlotsStackedAreaPlotMod.StackedArea[X]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "StackedArea")
 @js.native
 object StackedArea extends js.Object {

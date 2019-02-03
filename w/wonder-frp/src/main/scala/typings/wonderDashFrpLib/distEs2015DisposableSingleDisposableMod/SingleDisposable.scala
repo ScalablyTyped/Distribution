@@ -19,6 +19,7 @@ class SingleDisposable protected ()
   def setDispose(disposable: wonderDashFrpLib.distEs2015DisposableIDisposableMod.IDisposable): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/Disposable/SingleDisposable", "SingleDisposable")
 @js.native
 object SingleDisposable extends js.Object {

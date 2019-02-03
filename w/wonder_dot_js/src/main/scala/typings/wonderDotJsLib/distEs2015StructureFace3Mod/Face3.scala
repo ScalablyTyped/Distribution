@@ -18,6 +18,7 @@ class Face3 protected () extends js.Object {
   def hasVertexNormal(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/structure/Face3", "Face3")
 @js.native
 object Face3 extends js.Object {

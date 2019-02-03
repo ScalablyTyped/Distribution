@@ -39,7 +39,7 @@ abstract class CustomDevice () extends js.Object {
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 
-/** Represents a custom device. */
+/* static members */
 @JSGlobal("Windows.Devices.Custom.CustomDevice")
 @js.native
 object CustomDevice extends js.Object {

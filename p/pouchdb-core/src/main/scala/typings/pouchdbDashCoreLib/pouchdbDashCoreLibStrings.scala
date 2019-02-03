@@ -51,20 +51,35 @@ object pouchdbDashCoreLibStrings {
   @js.native
   sealed trait now extends js.Object
   
+  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  @scala.inline
   def `This should be passed to PouchDBDOTplugin()`: `This should be passed to PouchDBDOTplugin()` = "This should be passed to PouchDB.plugin()".asInstanceOf[`This should be passed to PouchDBDOTplugin()`]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def all_docs: all_docs = "all_docs".asInstanceOf[all_docs]
+  @scala.inline
   def available: available = "available".asInstanceOf[available]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def compacted: compacted = "compacted".asInstanceOf[compacted]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def created: created = "created".asInstanceOf[created]
+  @scala.inline
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def main_only: main_only = "main_only".asInstanceOf[main_only]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
   def `not compacted`: `not compacted` = "not compacted".asInstanceOf[`not compacted`]
+  @scala.inline
   def now: now = "now".asInstanceOf[now]
 }
 

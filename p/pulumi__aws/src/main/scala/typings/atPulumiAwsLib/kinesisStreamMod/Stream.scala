@@ -70,6 +70,7 @@ class Stream protected ()
   ): atPulumiAwsLib.kinesisKinesisMixinsMod.StreamEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis/stream", "Stream")
 @js.native
 object Stream extends js.Object {

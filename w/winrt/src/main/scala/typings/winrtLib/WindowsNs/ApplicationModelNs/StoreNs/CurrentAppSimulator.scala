@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CurrentAppSimulator () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
 @js.native
 object CurrentAppSimulator extends js.Object {

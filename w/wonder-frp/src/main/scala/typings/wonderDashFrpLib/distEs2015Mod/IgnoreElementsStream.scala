@@ -12,6 +12,7 @@ class IgnoreElementsStream protected ()
   def this(source: wonderDashFrpLib.distEs2015CoreStreamMod.Stream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "IgnoreElementsStream")
 @js.native
 object IgnoreElementsStream extends js.Object {

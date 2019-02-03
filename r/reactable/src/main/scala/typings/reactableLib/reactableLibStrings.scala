@@ -12,7 +12,9 @@ object reactableLibStrings {
   @js.native
   sealed trait desc extends js.Object
   
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
 }
 

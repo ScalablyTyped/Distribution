@@ -20,6 +20,7 @@ class Stage protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayStageMod.StageArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Stage")
 @js.native
 object Stage extends js.Object {

@@ -36,7 +36,7 @@ abstract class RfcommDeviceService () extends js.Object {
   def getSdpRawAttributesAsync(cacheMode: winrtDashUwpLib.WindowsNs.DevicesNs.BluetoothNs.BluetoothCacheMode): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IMapView[_, _]] = js.native
 }
 
-/** Represents an instance of a service on a Bluetooth BR device. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommDeviceService")
 @js.native
 object RfcommDeviceService extends js.Object {

@@ -12,6 +12,7 @@ class BreakStatementSyntax protected ()
   def this(breakKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "BreakStatementSyntax")
 @js.native
 object BreakStatementSyntax extends js.Object {

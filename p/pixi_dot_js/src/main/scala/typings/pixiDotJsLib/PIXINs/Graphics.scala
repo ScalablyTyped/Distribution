@@ -124,6 +124,7 @@ class Graphics () extends Container {
   def updateLocalBounds(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Graphics")
 @js.native
 object Graphics extends js.Object {

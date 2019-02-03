@@ -12,6 +12,7 @@ abstract class Binary ()
   def this(opt_alternativeCdn: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries", "Binary")
 @js.native
 object Binary extends js.Object {

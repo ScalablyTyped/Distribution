@@ -48,6 +48,7 @@ class LineString ()
   def setParent(parent: yandexDashMapsLib.ymapsNs.IEventManager): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("ymaps.geometry.base.LineString")
 @js.native
 object LineString extends js.Object {

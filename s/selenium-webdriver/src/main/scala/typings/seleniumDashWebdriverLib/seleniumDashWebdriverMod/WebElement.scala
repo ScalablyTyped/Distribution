@@ -269,6 +269,7 @@ class WebElement protected () extends Serializable[IWebElementId] {
   def takeScreenshot(opt_scroll: scala.Boolean): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver", "WebElement")
 @js.native
 object WebElement extends js.Object {

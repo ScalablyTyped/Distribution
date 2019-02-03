@@ -23,6 +23,7 @@ object globalacceleratorNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.globalacceleratorAcceleratorMod.AcceleratorArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Accelerator extends js.Object {
     /**

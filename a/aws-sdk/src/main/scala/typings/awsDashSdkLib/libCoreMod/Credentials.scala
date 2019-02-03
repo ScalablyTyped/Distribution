@@ -26,6 +26,7 @@ class Credentials protected ()
   def this(accessKeyId: java.lang.String, secretAccessKey: java.lang.String, sessionToken: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/core", "Credentials")
 @js.native
 object Credentials extends js.Object {

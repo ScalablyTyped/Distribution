@@ -54,6 +54,7 @@ class EventSubscription protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds/eventSubscription", "EventSubscription")
 @js.native
 object EventSubscription extends js.Object {

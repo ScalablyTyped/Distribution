@@ -20,6 +20,7 @@ class Domain protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.swfDomainMod.DomainArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/swf", "Domain")
 @js.native
 object Domain extends js.Object {

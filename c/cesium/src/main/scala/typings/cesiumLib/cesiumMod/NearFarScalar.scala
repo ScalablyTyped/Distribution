@@ -15,6 +15,7 @@ class NearFarScalar ()
   def this(near: scala.Double, nearValue: scala.Double, far: scala.Double, farValue: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "NearFarScalar")
 @js.native
 object NearFarScalar extends js.Object {

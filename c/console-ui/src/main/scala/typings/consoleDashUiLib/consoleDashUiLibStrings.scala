@@ -18,9 +18,13 @@ object consoleDashUiLibStrings {
   @js.native
   sealed trait WARNING extends js.Object
   
+  @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
+  @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
 }
 

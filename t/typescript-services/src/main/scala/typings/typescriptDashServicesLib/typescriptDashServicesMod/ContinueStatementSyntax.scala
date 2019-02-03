@@ -12,6 +12,7 @@ class ContinueStatementSyntax protected ()
   def this(continueKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ContinueStatementSyntax")
 @js.native
 object ContinueStatementSyntax extends js.Object {

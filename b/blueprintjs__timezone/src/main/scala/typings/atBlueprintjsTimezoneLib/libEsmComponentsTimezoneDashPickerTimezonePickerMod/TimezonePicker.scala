@@ -25,6 +25,7 @@ class TimezonePicker protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezonePicker", "TimezonePicker")
 @js.native
 object TimezonePicker extends js.Object {

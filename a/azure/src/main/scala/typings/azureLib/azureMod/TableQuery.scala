@@ -19,6 +19,7 @@ class TableQuery () extends js.Object {
   def whereNextKeys(partitionKey: java.lang.String, rowKey: java.lang.String): TableQuery = js.native
 }
 
+/* static members */
 @JSImport("azure", "TableQuery")
 @js.native
 object TableQuery extends js.Object {

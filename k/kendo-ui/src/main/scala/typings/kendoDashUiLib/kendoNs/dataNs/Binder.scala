@@ -22,6 +22,7 @@ class Binder protected ()
   def refresh(attribute: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.Binder")
 @js.native
 object Binder extends js.Object {

@@ -18,9 +18,13 @@ object clipboardLibStrings {
   @js.native
   sealed trait success extends js.Object
   
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def cut: cut = "cut".asInstanceOf[cut]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
 }
 

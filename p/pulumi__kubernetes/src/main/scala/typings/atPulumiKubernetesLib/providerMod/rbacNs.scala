@@ -385,10 +385,7 @@ object rbacNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.rbacNs.v1Ns.RoleList = js.native
     }
     
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
+    /* static members */
     @js.native
     object ClusterRole extends js.Object {
       /**
@@ -411,10 +408,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRole = js.native
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
+    /* static members */
     @js.native
     object ClusterRoleBinding extends js.Object {
       /**
@@ -437,9 +431,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBinding = js.native
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
+    /* static members */
     @js.native
     object ClusterRoleBindingList extends js.Object {
       /**
@@ -462,9 +454,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleBindingList = js.native
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
+    /* static members */
     @js.native
     object ClusterRoleList extends js.Object {
       /**
@@ -487,10 +477,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.ClusterRoleList = js.native
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
+    /* static members */
     @js.native
     object Role extends js.Object {
       /**
@@ -513,12 +500,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.Role = js.native
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
+    /* static members */
     @js.native
     object RoleBinding extends js.Object {
       /**
@@ -541,9 +523,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBinding = js.native
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
+    /* static members */
     @js.native
     object RoleBindingList extends js.Object {
       /**
@@ -566,9 +546,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1Ns.RoleBindingList = js.native
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
+    /* static members */
     @js.native
     object RoleList extends js.Object {
       /**
@@ -972,10 +950,7 @@ object rbacNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.rbacNs.v1alpha1Ns.RoleList = js.native
     }
     
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
+    /* static members */
     @js.native
     object ClusterRole extends js.Object {
       /**
@@ -998,10 +973,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRole = js.native
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
+    /* static members */
     @js.native
     object ClusterRoleBinding extends js.Object {
       /**
@@ -1024,9 +996,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBinding = js.native
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
+    /* static members */
     @js.native
     object ClusterRoleBindingList extends js.Object {
       /**
@@ -1049,9 +1019,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleBindingList = js.native
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
+    /* static members */
     @js.native
     object ClusterRoleList extends js.Object {
       /**
@@ -1074,10 +1042,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.ClusterRoleList = js.native
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
+    /* static members */
     @js.native
     object Role extends js.Object {
       /**
@@ -1100,12 +1065,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.Role = js.native
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
+    /* static members */
     @js.native
     object RoleBinding extends js.Object {
       /**
@@ -1128,9 +1088,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBinding = js.native
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
+    /* static members */
     @js.native
     object RoleBindingList extends js.Object {
       /**
@@ -1153,9 +1111,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1alpha1Ns.RoleBindingList = js.native
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
+    /* static members */
     @js.native
     object RoleList extends js.Object {
       /**
@@ -1559,10 +1515,7 @@ object rbacNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.rbacNs.v1beta1Ns.RoleList = js.native
     }
     
-    /**
-      * ClusterRole is a cluster level, logical grouping of PolicyRules that can be referenced as a
-      * unit by a RoleBinding or ClusterRoleBinding.
-      */
+    /* static members */
     @js.native
     object ClusterRole extends js.Object {
       /**
@@ -1585,10 +1538,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRole = js.native
     }
     
-    /**
-      * ClusterRoleBinding references a ClusterRole, but not contain it.  It can reference a
-      * ClusterRole in the global namespace, and adds who information via Subject.
-      */
+    /* static members */
     @js.native
     object ClusterRoleBinding extends js.Object {
       /**
@@ -1611,9 +1561,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBinding = js.native
     }
     
-    /**
-      * ClusterRoleBindingList is a collection of ClusterRoleBindings
-      */
+    /* static members */
     @js.native
     object ClusterRoleBindingList extends js.Object {
       /**
@@ -1636,9 +1584,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleBindingList = js.native
     }
     
-    /**
-      * ClusterRoleList is a collection of ClusterRoles
-      */
+    /* static members */
     @js.native
     object ClusterRoleList extends js.Object {
       /**
@@ -1661,10 +1607,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.ClusterRoleList = js.native
     }
     
-    /**
-      * Role is a namespaced, logical grouping of PolicyRules that can be referenced as a unit by a
-      * RoleBinding.
-      */
+    /* static members */
     @js.native
     object Role extends js.Object {
       /**
@@ -1687,12 +1630,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.Role = js.native
     }
     
-    /**
-      * RoleBinding references a role, but does not contain it.  It can reference a Role in the same
-      * namespace or a ClusterRole in the global namespace. It adds who information via Subjects and
-      * namespace information by which namespace it exists in.  RoleBindings in a given namespace
-      * only have effect in that namespace.
-      */
+    /* static members */
     @js.native
     object RoleBinding extends js.Object {
       /**
@@ -1715,9 +1653,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBinding = js.native
     }
     
-    /**
-      * RoleBindingList is a collection of RoleBindings
-      */
+    /* static members */
     @js.native
     object RoleBindingList extends js.Object {
       /**
@@ -1740,9 +1676,7 @@ object rbacNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.rbacNs.v1beta1Ns.RoleBindingList = js.native
     }
     
-    /**
-      * RoleList is a collection of Roles
-      */
+    /* static members */
     @js.native
     object RoleList extends js.Object {
       /**

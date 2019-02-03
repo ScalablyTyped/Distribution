@@ -275,11 +275,7 @@ class BaseTexture protected () extends js.Object {
   def serialize(): js.Any = js.native
 }
 
-/**
-  * Base class of all the textures in babylon.
-  * It groups all the common properties the materials, post process, lights... might need
-  * in order to make a correct use of the texture.
-  */
+/* static members */
 @JSGlobal("BABYLON.BaseTexture")
 @js.native
 object BaseTexture extends js.Object {

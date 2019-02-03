@@ -21,6 +21,7 @@ class HttpNamespace protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.servicediscoveryHttpNamespaceMod.HttpNamespaceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery", "HttpNamespace")
 @js.native
 object HttpNamespace extends js.Object {

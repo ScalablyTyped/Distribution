@@ -21,6 +21,7 @@ class DefaultSecurityGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2DefaultSecurityGroupMod.DefaultSecurityGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "DefaultSecurityGroup")
 @js.native
 object DefaultSecurityGroup extends js.Object {

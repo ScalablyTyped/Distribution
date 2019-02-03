@@ -14,6 +14,7 @@ class ElementFactory () extends js.Object {
   def registerElement(elementType: java.lang.String, elementCreator: js.Function1[/* name */ java.lang.String, IElement]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "ElementFactory")
 @js.native
 object ElementFactory extends js.Object {

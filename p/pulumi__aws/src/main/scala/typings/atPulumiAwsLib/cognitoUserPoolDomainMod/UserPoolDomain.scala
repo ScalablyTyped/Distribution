@@ -48,6 +48,7 @@ class UserPoolDomain protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/userPoolDomain", "UserPoolDomain")
 @js.native
 object UserPoolDomain extends js.Object {

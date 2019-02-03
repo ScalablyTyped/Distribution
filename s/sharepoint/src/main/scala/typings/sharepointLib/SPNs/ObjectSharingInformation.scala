@@ -21,6 +21,7 @@ class ObjectSharingInformation () extends ClientObject {
   def get_pendingAccessRequestsLink(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.ObjectSharingInformation")
 @js.native
 object ObjectSharingInformation extends js.Object {

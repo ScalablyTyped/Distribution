@@ -12,6 +12,7 @@ class ComboBox protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsComboBoxComboBoxDotTypesMod.IComboBoxProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ComboBox", "ComboBox")
 @js.native
 object ComboBox extends js.Object {

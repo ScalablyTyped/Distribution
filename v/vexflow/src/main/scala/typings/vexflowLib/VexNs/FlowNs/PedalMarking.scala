@@ -20,6 +20,7 @@ class PedalMarking protected () extends js.Object {
   def setStyle(style: vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles): PedalMarking = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.PedalMarking")
 @js.native
 object PedalMarking extends js.Object {

@@ -34,6 +34,7 @@ class Point protected ()
   def translateWith(vector: Point): Point = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.geometry.Point")
 @js.native
 object Point extends js.Object {

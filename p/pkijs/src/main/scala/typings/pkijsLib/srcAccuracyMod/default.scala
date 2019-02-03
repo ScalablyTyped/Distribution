@@ -16,6 +16,7 @@ class default () extends Accuracy {
   override var seconds: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/Accuracy", JSImport.Default)
 @js.native
 object default extends js.Object {

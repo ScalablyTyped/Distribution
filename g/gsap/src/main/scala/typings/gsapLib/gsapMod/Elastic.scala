@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Elastic ()
   extends gsapLib.gsapNs.Elastic
 
+/* static members */
 @JSImport("gsap", "Elastic")
 @js.native
 object Elastic extends js.Object {

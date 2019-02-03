@@ -66,6 +66,7 @@ class ThrowStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ThrowStatementSyntax")
 @js.native
 object ThrowStatementSyntax extends js.Object {

@@ -153,54 +153,103 @@ object realmLibStrings {
   @js.native
   sealed trait write extends js.Object
   
+  @scala.inline
   def ADD_PROPERTIES: ADD_PROPERTIES = "ADD_PROPERTIES".asInstanceOf[ADD_PROPERTIES]
+  @scala.inline
   def ADD_TYPE: ADD_TYPE = "ADD_TYPE".asInstanceOf[ADD_TYPE]
+  @scala.inline
   def CHANGE_IDENTITY: CHANGE_IDENTITY = "CHANGE_IDENTITY".asInstanceOf[CHANGE_IDENTITY]
+  @scala.inline
   def CLEAR: CLEAR = "CLEAR".asInstanceOf[CLEAR]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  @scala.inline
   def LIST_CLEAR: LIST_CLEAR = "LIST_CLEAR".asInstanceOf[LIST_CLEAR]
+  @scala.inline
   def LIST_ERASE: LIST_ERASE = "LIST_ERASE".asInstanceOf[LIST_ERASE]
+  @scala.inline
   def LIST_INSERT: LIST_INSERT = "LIST_INSERT".asInstanceOf[LIST_INSERT]
+  @scala.inline
   def LIST_SET: LIST_SET = "LIST_SET".asInstanceOf[LIST_SET]
+  @scala.inline
   def SET: SET = "SET".asInstanceOf[SET]
+  @scala.inline
   def SWAP_IDENTITY: SWAP_IDENTITY = "SWAP_IDENTITY".asInstanceOf[SWAP_IDENTITY]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def admin: admin = "admin".asInstanceOf[admin]
+  @scala.inline
   def adminToken: adminToken = "adminToken".asInstanceOf[adminToken]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def available: available = "available".asInstanceOf[available]
+  @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def currentUser: currentUser = "currentUser".asInstanceOf[currentUser]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def detail: detail = "detail".asInstanceOf[detail]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def download: download = "download".asInstanceOf[download]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
+  @scala.inline
   def float: float = "float".asInstanceOf[float]
+  @scala.inline
   def forCurrentlyOutstandingWork: forCurrentlyOutstandingWork = "forCurrentlyOutstandingWork".asInstanceOf[forCurrentlyOutstandingWork]
+  @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def int: int = "int".asInstanceOf[int]
+  @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
+  @scala.inline
   def linkingObjects: linkingObjects = "linkingObjects".asInstanceOf[linkingObjects]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def otherUser: otherUser = "otherUser".asInstanceOf[otherUser]
+  @scala.inline
   def read: read = "read".asInstanceOf[read]
+  @scala.inline
   def reportIndefinitely: reportIndefinitely = "reportIndefinitely".asInstanceOf[reportIndefinitely]
+  @scala.inline
   def schema: schema = "schema".asInstanceOf[schema]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
+  @scala.inline
   def upload: upload = "upload".asInstanceOf[upload]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def write: write = "write".asInstanceOf[write]
 }
 

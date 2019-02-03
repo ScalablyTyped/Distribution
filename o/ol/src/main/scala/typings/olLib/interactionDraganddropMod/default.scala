@@ -28,14 +28,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.interactionNs.DragAndDropOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Handles input of vector data by drag and drop.
-  *
-  * @fires ol.interaction.DragAndDropEvent
-  * @param opt_options Options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/interaction/draganddrop", JSImport.Default)
 @js.native
 object default extends js.Object {

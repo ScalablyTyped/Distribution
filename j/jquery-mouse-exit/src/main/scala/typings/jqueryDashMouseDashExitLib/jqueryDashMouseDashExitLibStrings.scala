@@ -9,6 +9,7 @@ object jqueryDashMouseDashExitLibStrings {
   @js.native
   sealed trait mouseExit extends js.Object
   
+  @scala.inline
   def mouseExit: mouseExit = "mouseExit".asInstanceOf[mouseExit]
 }
 

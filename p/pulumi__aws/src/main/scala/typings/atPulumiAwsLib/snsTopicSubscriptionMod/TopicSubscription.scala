@@ -56,6 +56,7 @@ class TopicSubscription protected ()
   val topic: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.snsTopicMod.Topic] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns/topicSubscription", "TopicSubscription")
 @js.native
 object TopicSubscription extends js.Object {

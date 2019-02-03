@@ -108,6 +108,7 @@ class MetricAlarm protected ()
   val unit: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm")
 @js.native
 object MetricAlarm extends js.Object {

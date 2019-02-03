@@ -55,6 +55,7 @@ class Deployment protected ()
   val variables: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/deployment", "Deployment")
 @js.native
 object Deployment extends js.Object {

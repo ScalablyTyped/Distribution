@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Sound ()
   extends createjsDashLibLib.createjsNs.EventDispatcher
 
+/* static members */
 @JSGlobal("createjs.Sound")
 @js.native
 object Sound extends js.Object {

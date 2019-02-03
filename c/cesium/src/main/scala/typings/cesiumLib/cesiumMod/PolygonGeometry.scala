@@ -12,6 +12,7 @@ class PolygonGeometry protected ()
   def this(options: cesiumLib.Anon_EllipsoidExtrudedHeight) = this()
 }
 
+/* static members */
 @JSImport("cesium", "PolygonGeometry")
 @js.native
 object PolygonGeometry extends js.Object {

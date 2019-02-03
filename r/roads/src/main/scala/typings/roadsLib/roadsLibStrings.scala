@@ -9,6 +9,7 @@ object roadsLibStrings {
   @js.native
   sealed trait Option extends js.Object
   
+  @scala.inline
   def Option: Option = "Option".asInstanceOf[Option]
 }
 

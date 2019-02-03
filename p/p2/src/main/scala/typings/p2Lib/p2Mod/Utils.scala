@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Utils ()
   extends p2Lib.p2Mod.p2Ns.Utils
 
+/* static members */
 @JSImport("p2", "Utils")
 @js.native
 object Utils extends js.Object {

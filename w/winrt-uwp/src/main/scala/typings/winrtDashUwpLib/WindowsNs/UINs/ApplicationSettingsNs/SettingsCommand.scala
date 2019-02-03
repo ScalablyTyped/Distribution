@@ -27,7 +27,7 @@ class SettingsCommand protected () extends js.Object {
   def invoked(command: winrtDashUwpLib.WindowsNs.UINs.PopupsNs.IUICommand): scala.Unit = js.native
 }
 
-/** Creates a settings command object that represents a settings entry. This settings command can be appended to the ApplicationCommands vector. */
+/* static members */
 @JSGlobal("Windows.UI.ApplicationSettings.SettingsCommand")
 @js.native
 object SettingsCommand extends js.Object {

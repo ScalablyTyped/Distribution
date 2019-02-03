@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Settable () extends js.Object
 
+/* static members */
 @JSImport("js-data", "Settable")
 @js.native
 object Settable extends js.Object {

@@ -12,6 +12,7 @@ class ConditionalExpressionSyntax protected ()
   def this(condition: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, questionToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, whenTrue: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, whenFalse: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ConditionalExpressionSyntax")
 @js.native
 object ConditionalExpressionSyntax extends js.Object {

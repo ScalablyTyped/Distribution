@@ -46,6 +46,7 @@ class Program ()
   def use(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/program/Program", "Program")
 @js.native
 object Program extends js.Object {

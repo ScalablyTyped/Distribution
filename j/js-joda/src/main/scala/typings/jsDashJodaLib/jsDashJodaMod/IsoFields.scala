@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class IsoFields ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.IsoFields
 
+/* static members */
 @JSImport("js-joda", "IsoFields")
 @js.native
 object IsoFields extends js.Object {

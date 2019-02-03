@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GitFileOperations () extends js.Object
 
+/* static members */
 @JSImport("git", "GitFileOperations")
 @js.native
 object GitFileOperations extends js.Object {

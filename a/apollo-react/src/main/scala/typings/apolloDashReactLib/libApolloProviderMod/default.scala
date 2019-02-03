@@ -11,6 +11,7 @@ class default protected () extends ApolloProvider {
   def this(props: js.Any, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("apollo-react/lib/ApolloProvider", JSImport.Default)
 @js.native
 object default extends js.Object {

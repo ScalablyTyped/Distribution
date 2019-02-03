@@ -20,6 +20,7 @@ class Gateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayGatewayMod.GatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "Gateway")
 @js.native
 object Gateway extends js.Object {

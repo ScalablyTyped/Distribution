@@ -45,18 +45,31 @@ object nativeDashToastLibStrings {
   @js.native
   sealed trait west extends js.Object
   
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def east: east = "east".asInstanceOf[east]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def north: north = "north".asInstanceOf[north]
+  @scala.inline
   def `north-east`: `north-east` = "north-east".asInstanceOf[`north-east`]
+  @scala.inline
   def `north-west`: `north-west` = "north-west".asInstanceOf[`north-west`]
+  @scala.inline
   def south: south = "south".asInstanceOf[south]
+  @scala.inline
   def `south-east`: `south-east` = "south-east".asInstanceOf[`south-east`]
+  @scala.inline
   def `south-west`: `south-west` = "south-west".asInstanceOf[`south-west`]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
   def west: west = "west".asInstanceOf[west]
 }
 

@@ -12,6 +12,7 @@ class Certificate protected ()
   def this(opts: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sshpk", "Certificate")
 @js.native
 object Certificate extends js.Object {

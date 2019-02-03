@@ -48,6 +48,7 @@ abstract class AsyncIterator[T] ()
   def transform[T2](options: SimpleTransformIteratorOptions[T, T2]): SimpleTransformIterator[T, T2] = js.native
 }
 
+/* static members */
 @JSImport("asynciterator", "AsyncIterator")
 @js.native
 object AsyncIterator extends js.Object {

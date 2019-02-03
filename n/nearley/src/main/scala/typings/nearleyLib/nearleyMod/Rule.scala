@@ -17,6 +17,7 @@ class Rule protected () extends js.Object {
   def toString(withCursorAt: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nearley", "Rule")
 @js.native
 object Rule extends js.Object {

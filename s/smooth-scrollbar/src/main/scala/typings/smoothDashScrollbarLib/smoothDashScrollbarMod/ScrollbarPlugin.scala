@@ -13,6 +13,7 @@ class ScrollbarPlugin protected ()
   def this(scrollbar: smoothDashScrollbarLib.scrollbarMod.Scrollbar, options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("smooth-scrollbar", "ScrollbarPlugin")
 @js.native
 object ScrollbarPlugin extends js.Object {

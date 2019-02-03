@@ -30,6 +30,7 @@ class Animation () extends js.Object {
   def end(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("CanvasGauges.Animation")
 @js.native
 object Animation extends js.Object {

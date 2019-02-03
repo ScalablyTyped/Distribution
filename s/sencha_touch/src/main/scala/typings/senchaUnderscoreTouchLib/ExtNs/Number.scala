@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Number () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Number")
 @js.native
 object Number extends js.Object {

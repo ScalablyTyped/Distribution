@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PersistedKeyProvider () extends js.Object
 
-/** Retrieves a persisted key from a Certificate object. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.PersistedKeyProvider")
 @js.native
 object PersistedKeyProvider extends js.Object {

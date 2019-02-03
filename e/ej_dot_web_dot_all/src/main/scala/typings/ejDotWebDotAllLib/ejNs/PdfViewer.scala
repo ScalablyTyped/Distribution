@@ -174,6 +174,7 @@ class PdfViewer protected () extends Widget {
   def zoomTo(zoomValue: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PdfViewer")
 @js.native
 object PdfViewer extends js.Object {

@@ -21,10 +21,15 @@ object imapLibStrings {
   @js.native
   sealed trait message extends js.Object
   
+  @scala.inline
   def attributes: attributes = "attributes".asInstanceOf[attributes]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
 }
 

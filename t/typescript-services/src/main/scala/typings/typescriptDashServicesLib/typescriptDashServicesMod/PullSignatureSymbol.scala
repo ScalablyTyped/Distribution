@@ -13,6 +13,7 @@ class PullSignatureSymbol protected ()
   def this(kind: typescriptDashServicesLib.TypeScriptNs.PullElementKind, _isDefinition: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PullSignatureSymbol")
 @js.native
 object PullSignatureSymbol extends js.Object {

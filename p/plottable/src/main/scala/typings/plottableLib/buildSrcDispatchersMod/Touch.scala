@@ -17,6 +17,7 @@ class Touch protected ()
   def this(component: plottableLib.buildSrcComponentsComponentMod.Component) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers", "Touch")
 @js.native
 object Touch extends js.Object {

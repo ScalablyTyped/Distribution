@@ -18,6 +18,7 @@ class LensFlareElement protected () extends js.Object {
   var texture: threeLib.threeDashCoreMod.Texture = js.native
 }
 
+/* static members */
 @JSImport("three/three-lensflare", "LensFlareElement")
 @js.native
 object LensFlareElement extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BackgroundTransferError () extends js.Object
 
-/** Used to provide errors encountered during a transfer operation. */
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
 @js.native
 object BackgroundTransferError extends js.Object {

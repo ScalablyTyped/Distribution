@@ -12,7 +12,9 @@ object gapiDotClientDotSqladminLibStrings {
   @js.native
   sealed trait v1beta4 extends js.Object
   
+  @scala.inline
   def sqladmin: sqladmin = "sqladmin".asInstanceOf[sqladmin]
+  @scala.inline
   def v1beta4: v1beta4 = "v1beta4".asInstanceOf[v1beta4]
 }
 

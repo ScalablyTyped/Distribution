@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CachedFileManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.CachedFileManager")
 @js.native
 object CachedFileManager extends js.Object {

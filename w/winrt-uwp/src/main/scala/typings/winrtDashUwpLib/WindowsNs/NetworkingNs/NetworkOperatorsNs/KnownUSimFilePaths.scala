@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownUSimFilePaths () extends js.Object
 
-/** Static class that provides known USIM file paths. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.KnownUSimFilePaths")
 @js.native
 object KnownUSimFilePaths extends js.Object {

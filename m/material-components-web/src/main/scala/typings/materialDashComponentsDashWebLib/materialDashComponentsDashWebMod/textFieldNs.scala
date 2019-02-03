@@ -35,11 +35,13 @@ object textFieldNs extends js.Object {
   class MDCTextFieldIconFoundation ()
     extends atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextFieldIconFoundation
   
+  /* static members */
   @js.native
   object MDCTextField extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTextfieldLib.atMaterialTextfieldMod.MDCTextField = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTextFieldFoundation extends js.Object {
     val cssClasses: atMaterialTextfieldLib.constantsMod.cssClasses = js.native
@@ -48,11 +50,13 @@ object textFieldNs extends js.Object {
     val strings: atMaterialTextfieldLib.constantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTextFieldHelperText extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTextfieldLib.helperDashTextMod.MDCTextFieldHelperText = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTextFieldHelperTextFoundation extends js.Object {
     val cssClasses: atMaterialTextfieldLib.helperDashTextConstantsMod.cssClasses = js.native
@@ -60,11 +64,13 @@ object textFieldNs extends js.Object {
     val strings: atMaterialTextfieldLib.helperDashTextConstantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTextFieldIcon extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTextfieldLib.iconMod.MDCTextFieldIcon = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTextFieldIconFoundation extends js.Object {
     val defaultAdapter: atMaterialTextfieldLib.iconAdapterMod.MDCTextFieldIconAdapter = js.native

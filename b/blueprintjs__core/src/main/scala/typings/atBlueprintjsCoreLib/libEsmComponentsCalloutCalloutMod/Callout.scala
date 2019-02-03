@@ -14,6 +14,7 @@ class Callout ()
   /* private */ def getIconName(icon: js.Any, intent: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/callout/callout", "Callout")
 @js.native
 object Callout extends js.Object {

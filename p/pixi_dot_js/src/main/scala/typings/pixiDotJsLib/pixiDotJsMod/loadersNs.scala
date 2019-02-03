@@ -27,8 +27,7 @@ object loadersNs extends js.Object {
   }
   
   val shared: pixiDotJsLib.PIXINs.loadersNs.Loader = js.native
-  // As of ResourceLoader v2 we no longer require EventEmitter
-  // However, for depreciation reasons, it remains.
+  /* static members */
   @js.native
   object Loader extends js.Object {
     // below this line is the original non-pixi loader
@@ -40,6 +39,7 @@ object loadersNs extends js.Object {
     def addPixiMiddleware(fn: js.Function): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Resource extends js.Object {
     var EMPTY_GIF: java.lang.String = js.native

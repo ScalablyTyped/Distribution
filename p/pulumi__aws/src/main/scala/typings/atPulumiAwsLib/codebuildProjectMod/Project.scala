@@ -84,6 +84,7 @@ class Project protected ()
   val vpcConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIds]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codebuild/project", "Project")
 @js.native
 object Project extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[TDescriptor /* <: Descriptor */] () extends Transport[TDescriptor]
 
+/* static members */
 @JSImport("@ledgerhq/hw-transport", JSImport.Default)
 @js.native
 object default extends js.Object {

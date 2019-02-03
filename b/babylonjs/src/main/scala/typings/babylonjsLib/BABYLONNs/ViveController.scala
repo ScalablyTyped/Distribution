@@ -30,9 +30,7 @@ class ViveController protected () extends WebVRController {
   val onRightButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
 }
 
-/**
-  * Vive Controller
-  */
+/* static members */
 @JSGlobal("BABYLON.ViveController")
 @js.native
 object ViveController extends js.Object {

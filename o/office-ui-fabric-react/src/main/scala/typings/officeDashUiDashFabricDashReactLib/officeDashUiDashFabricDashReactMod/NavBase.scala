@@ -12,6 +12,7 @@ class NavBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsNavNavDotTypesMod.INavProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "NavBase")
 @js.native
 object NavBase extends js.Object {

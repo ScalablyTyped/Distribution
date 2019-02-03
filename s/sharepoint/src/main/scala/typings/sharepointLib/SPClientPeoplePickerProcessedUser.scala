@@ -39,6 +39,7 @@ class SPClientPeoplePickerProcessedUser () extends js.Object {
   def UpdateUserMaxWidth(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SPClientPeoplePickerProcessedUser")
 @js.native
 object SPClientPeoplePickerProcessedUser extends js.Object {

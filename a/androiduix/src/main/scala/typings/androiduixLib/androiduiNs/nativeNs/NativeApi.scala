@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NativeApi () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.native.NativeApi")
 @js.native
 object NativeApi extends js.Object {

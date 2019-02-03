@@ -29,6 +29,7 @@ class InterpolatedColor ()
   /* private */ def _resetScale(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales/interpolatedColorScale", "InterpolatedColor")
 @js.native
 object InterpolatedColor extends js.Object {

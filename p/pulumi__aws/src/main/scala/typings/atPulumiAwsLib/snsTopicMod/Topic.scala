@@ -113,6 +113,7 @@ class Topic protected ()
   ): atPulumiAwsLib.snsSnsMixinsMod.TopicEventSubscription = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns/topic", "Topic")
 @js.native
 object Topic extends js.Object {

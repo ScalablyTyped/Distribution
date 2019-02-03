@@ -12,7 +12,9 @@ object d3DashDsvLibStrings {
   @js.native
   sealed trait DSVRowString extends js.Object
   
+  @scala.inline
   def DSVRaw: DSVRaw = "DSVRaw".asInstanceOf[DSVRaw]
+  @scala.inline
   def DSVRowString: DSVRowString = "DSVRowString".asInstanceOf[DSVRowString]
 }
 

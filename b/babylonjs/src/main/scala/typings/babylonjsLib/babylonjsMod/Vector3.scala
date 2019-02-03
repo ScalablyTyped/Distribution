@@ -44,12 +44,7 @@ class Vector3 ()
   z: scala.Double) = this()
 }
 
-/**
-  * Classed used to store (x,y,z) vector representation
-  * A Vector3 is the main object used in 3D geometry
-  * It can represent etiher the coordinates of a point the space, either a direction
-  * Reminder: Babylon.js uses a left handed forward facing system
-  */
+/* static members */
 @JSImport("babylonjs", "Vector3")
 @js.native
 object Vector3 extends js.Object {

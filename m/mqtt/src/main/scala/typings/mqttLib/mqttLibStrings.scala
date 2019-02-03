@@ -42,17 +42,29 @@ object mqttLibStrings {
   @js.native
   sealed trait wxs extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def message: message = "message".asInstanceOf[message]
+  @scala.inline
   def mqtt: mqtt = "mqtt".asInstanceOf[mqtt]
+  @scala.inline
   def mqtts: mqtts = "mqtts".asInstanceOf[mqtts]
+  @scala.inline
   def packetreceive: packetreceive = "packetreceive".asInstanceOf[packetreceive]
+  @scala.inline
   def packetsend: packetsend = "packetsend".asInstanceOf[packetsend]
+  @scala.inline
   def ssl: ssl = "ssl".asInstanceOf[ssl]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
   def ws: ws = "ws".asInstanceOf[ws]
+  @scala.inline
   def wss: wss = "wss".asInstanceOf[wss]
+  @scala.inline
   def wx: wx = "wx".asInstanceOf[wx]
+  @scala.inline
   def wxs: wxs = "wxs".asInstanceOf[wxs]
 }
 

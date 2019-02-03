@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TouchPointEvent ()
   extends wonderDotJsLib.distEs2015EventObjectTouchPointEventMod.TouchPointEvent
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "TouchPointEvent")
 @js.native
 object TouchPointEvent extends js.Object {

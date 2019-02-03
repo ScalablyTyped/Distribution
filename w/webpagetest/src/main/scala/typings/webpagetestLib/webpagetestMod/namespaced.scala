@@ -16,6 +16,7 @@ class namespaced () extends WebPageTest {
   def this(server: java.lang.String, key: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webpagetest", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

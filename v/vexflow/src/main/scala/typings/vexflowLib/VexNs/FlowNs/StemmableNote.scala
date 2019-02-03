@@ -28,6 +28,7 @@ class StemmableNote protected () extends Note {
   def setStemLength(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.StemmableNote")
 @js.native
 object StemmableNote extends js.Object {

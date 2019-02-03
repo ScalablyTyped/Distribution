@@ -35,6 +35,7 @@ class JSDOM () extends js.Object {
   def serialize(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("jsdom", "JSDOM")
 @js.native
 object JSDOM extends js.Object {

@@ -16,6 +16,7 @@ class QueryLatencyStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IQueryLatencyStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "QueryLatencyStats")
 @js.native
 object QueryLatencyStats extends js.Object {

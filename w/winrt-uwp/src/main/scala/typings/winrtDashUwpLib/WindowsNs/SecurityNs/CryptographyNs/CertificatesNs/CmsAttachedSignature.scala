@@ -27,7 +27,7 @@ class CmsAttachedSignature protected () extends js.Object {
   def verifySignature(): SignatureValidationResult = js.native
 }
 
-/** Represents a signature attached to a signed CMS message. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CmsAttachedSignature")
 @js.native
 object CmsAttachedSignature extends js.Object {

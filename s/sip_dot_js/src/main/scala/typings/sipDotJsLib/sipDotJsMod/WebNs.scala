@@ -37,17 +37,20 @@ object WebNs extends js.Object {
     val stripVideo: sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandlerModifier = js.native
   }
   
+  /* static members */
   @js.native
   object SessionDescriptionHandler extends js.Object {
     def defaultFactory(session: sipDotJsLib.typesSessionMod.InviteClientContext, options: js.Any): sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler = js.native
     def defaultFactory(session: sipDotJsLib.typesSessionMod.InviteServerContext, options: js.Any): sipDotJsLib.typesSessionDashDescriptionDashHandlerMod.SessionDescriptionHandler = js.native
   }
   
+  /* static members */
   @js.native
   object Simple extends js.Object {
     val C: sipDotJsLib.typesWebSimpleMod.SimpleStatus = js.native
   }
   
+  /* static members */
   @js.native
   object Transport extends js.Object {
     val C: sipDotJsLib.typesWebTransportMod.TransportStatus = js.native

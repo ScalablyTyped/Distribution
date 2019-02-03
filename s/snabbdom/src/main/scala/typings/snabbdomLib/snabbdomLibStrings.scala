@@ -9,6 +9,7 @@ object snabbdomLibStrings {
   @js.native
   sealed trait On extends js.Object
   
+  @scala.inline
   def On: On = "On".asInstanceOf[On]
 }
 

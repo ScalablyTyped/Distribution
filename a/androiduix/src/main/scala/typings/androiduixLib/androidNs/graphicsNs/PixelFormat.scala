@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PixelFormat () extends js.Object
 
+/* static members */
 @JSGlobal("android.graphics.PixelFormat")
 @js.native
 object PixelFormat extends js.Object {

@@ -25,6 +25,7 @@ class ArcGauge protected ()
   def value(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.ArcGauge")
 @js.native
 object ArcGauge extends js.Object {

@@ -28,6 +28,7 @@ class UserPolicyAttachment protected ()
   val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamUserMod.User] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/userPolicyAttachment", "UserPolicyAttachment")
 @js.native
 object UserPolicyAttachment extends js.Object {

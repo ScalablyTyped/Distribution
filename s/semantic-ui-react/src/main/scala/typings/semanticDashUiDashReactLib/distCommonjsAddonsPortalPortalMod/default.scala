@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Portal
 
+/* static members */
 @JSImport("semantic-ui-react/dist/commonjs/addons/Portal/Portal", JSImport.Default)
 @js.native
 object default extends js.Object {

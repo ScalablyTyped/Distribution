@@ -96,6 +96,7 @@ class Integration protected ()
   val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/integration", "Integration")
 @js.native
 object Integration extends js.Object {

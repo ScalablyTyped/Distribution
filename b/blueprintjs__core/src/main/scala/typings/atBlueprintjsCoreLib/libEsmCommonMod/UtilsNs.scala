@@ -61,14 +61,30 @@ object UtilsNs extends js.Object {
     arg4: D
   ): js.UndefOr[R] = js.native
   def safeInvoke[A, B, C, D, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, R](obj: T, key: K): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, R](obj: js.UndefOr[scala.Nothing], key: K): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-  def safeInvokeMember[T /* <: atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, C, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, R](obj: T, key: K): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, R](obj: js.UndefOr[scala.Nothing], key: K): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A, b : B): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A, b : B): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A, b : B, c : C): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
+  def safeInvokeMember[T /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in K ]:? (a : A, b : B, c : C): R}
+    */ atBlueprintjsCoreLib.atBlueprintjsCoreLibStrings.safeInvokeMember with js.Any */, K /* <: java.lang.String */, A, B, C, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
   def safeInvokeOrValue[R](): R = js.native
   def safeInvokeOrValue[R](funcOrValue: R): R = js.native
   def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = js.native

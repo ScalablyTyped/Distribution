@@ -13,6 +13,7 @@ class Descent protected ()
   def this(x: js.Array[js.Array[scala.Double]], D: js.Array[js.Array[scala.Double]], G: js.Array[js.Array[scala.Double]]) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Descent")
 @js.native
 object Descent extends js.Object {

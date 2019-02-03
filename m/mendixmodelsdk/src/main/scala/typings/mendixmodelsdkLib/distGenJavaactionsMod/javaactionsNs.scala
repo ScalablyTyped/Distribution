@@ -630,10 +630,7 @@ object javaactionsNs extends js.Object {
     val qualifiedName: java.lang.String | scala.Null = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.7.0: introduced
-    */
+  /* static members */
   @js.native
   object BasicParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -655,10 +652,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BasicParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -698,10 +692,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.BooleanType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ConcreteEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -750,10 +741,7 @@ object javaactionsNs extends js.Object {
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ConcreteEntityType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object DateTimeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -793,10 +781,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DateTimeType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object DecimalType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -836,20 +821,14 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.DecimalType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.7.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityTypeParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -871,10 +850,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.EntityTypeParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object EnumerationType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -914,9 +890,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.EnumerationType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ExportMappingJavaActionParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -929,10 +903,7 @@ object javaactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ExportMappingJavaActionParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 7.2.0: introduced
-    */
+  /* static members */
   @js.native
   object ExportMappingParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -954,10 +925,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ExportMappingParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object FloatType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -997,9 +965,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.FloatType = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object ImportMappingJavaActionParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1012,10 +978,7 @@ object javaactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ImportMappingJavaActionParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 7.2.0: introduced
-    */
+  /* static members */
   @js.native
   object ImportMappingParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1037,10 +1000,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ImportMappingParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1080,9 +1040,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.IntegerType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/java-actions relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object JavaAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1094,6 +1052,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction = js.native
   }
   
+  /* static members */
   @js.native
   object JavaActionParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1124,10 +1083,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderParameters(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ListType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1167,11 +1123,7 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.10.0: removed experimental
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowActionInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1193,9 +1145,7 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowActionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowJavaActionParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1208,10 +1158,7 @@ object javaactionsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowJavaActionParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.9.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1233,20 +1180,14 @@ object javaactionsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaActionParameter): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.MicroflowParameterType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.7.0: introduced
-    */
+  /* static members */
   @js.native
   object ParameterType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ParameterizedEntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1295,20 +1236,14 @@ object javaactionsNs extends js.Object {
     def createInListTypeUnderParameter(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ListType): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.ParameterizedEntityType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object PrimitiveType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object StringType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1348,20 +1283,14 @@ object javaactionsNs extends js.Object {
     def createInJavaActionUnderJavaReturnType(container: mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.JavaAction): mendixmodelsdkLib.distGenJavaactionsMod.javaactionsNs.StringType = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object Type extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenJavaactionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.21.0: deleted
-    * In version 6.6.0: introduced
-    */
+  /* static members */
   @js.native
   object TypeParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native

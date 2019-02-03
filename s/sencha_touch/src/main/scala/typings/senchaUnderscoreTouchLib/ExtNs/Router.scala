@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Router () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Router")
 @js.native
 object Router extends js.Object {

@@ -20,6 +20,7 @@ class GlobalCluster protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsGlobalClusterMod.GlobalClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "GlobalCluster")
 @js.native
 object GlobalCluster extends js.Object {

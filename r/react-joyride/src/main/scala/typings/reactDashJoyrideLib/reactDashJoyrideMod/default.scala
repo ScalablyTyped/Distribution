@@ -11,6 +11,7 @@ class default protected () extends Joyride {
   def this(props: Props) = this()
 }
 
+/* static members */
 @JSImport("react-joyride", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -366,11 +366,7 @@ class StandardMaterial protected () extends PushMaterial {
   def isReadyForSubMesh(mesh: AbstractMesh, subMesh: SubMesh, useInstances: scala.Boolean): scala.Boolean = js.native
 }
 
-/**
-  * This is the default material used in Babylon. It is the best trade off between quality
-  * and performances.
-  * @see http://doc.babylonjs.com/babylon101/materials
-  */
+/* static members */
 @JSGlobal("BABYLON.StandardMaterial")
 @js.native
 object StandardMaterial extends js.Object {

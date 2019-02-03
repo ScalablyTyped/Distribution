@@ -37,6 +37,7 @@ class LatLonVectors protected () extends js.Object {
   def toVector(): Vector3d = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "LatLonVectors")
 @js.native
 object LatLonVectors extends js.Object {

@@ -20,6 +20,7 @@ class Endpoint protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dmsEndpointMod.EndpointArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms", "Endpoint")
 @js.native
 object Endpoint extends js.Object {

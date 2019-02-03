@@ -19,6 +19,7 @@ class namespaced protected () extends Session {
   override def toCrowd(): SessionObj = js.native
 }
 
+/* static members */
 @JSImport("atlassian-crowd-client/lib/models/session", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

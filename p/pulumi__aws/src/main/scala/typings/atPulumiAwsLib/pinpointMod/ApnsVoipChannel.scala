@@ -20,6 +20,7 @@ class ApnsVoipChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointApnsVoipChannelMod.ApnsVoipChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "ApnsVoipChannel")
 @js.native
 object ApnsVoipChannel extends js.Object {

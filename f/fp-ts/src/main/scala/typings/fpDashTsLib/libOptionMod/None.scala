@@ -73,9 +73,9 @@ class None[A] protected () extends js.Object {
     * assert.strictEqual(some(1).fold('none', a => `some: ${a}`), 'some: 1')
     * assert.strictEqual(none.fold('none', a => `some: ${a}`), 'none')
     */
-  def fold[B](b: B, whenSome: js.Function1[/* a */ A, B]): B = js.native
+  def fold[B](b: B, onSome: js.Function1[/* a */ A, B]): B = js.native
   /** Lazy version of {@link fold} */
-  def foldL[B](whenNone: js.Function0[B], whenSome: js.Function1[/* a */ A, B]): B = js.native
+  def foldL[B](onNone: js.Function0[B], onSome: js.Function1[/* a */ A, B]): B = js.native
   /**
     * Returns the value from this `Some` or the given argument if this is a `None`
     *
@@ -162,6 +162,7 @@ class None[A] protected () extends js.Object {
   def toUndefined(): js.UndefOr[A] = js.native
 }
 
+/* static members */
 @JSImport("fp-ts/lib/Option", "None")
 @js.native
 object None extends js.Object {

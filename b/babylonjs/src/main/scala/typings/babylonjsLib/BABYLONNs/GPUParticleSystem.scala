@@ -519,11 +519,7 @@ class GPUParticleSystem protected ()
   def stop(): scala.Unit = js.native
 }
 
-/**
-  * This represents a GPU particle system in Babylon
-  * This is the fastest particle system in Babylon as it uses the GPU to update the individual particle data
-  * @see https://www.babylonjs-playground.com/#PU4WYI#4
-  */
+/* static members */
 @JSGlobal("BABYLON.GPUParticleSystem")
 @js.native
 object GPUParticleSystem extends js.Object {

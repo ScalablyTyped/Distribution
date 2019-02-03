@@ -27,12 +27,19 @@ object htmlDashWebpackDashPluginLibStrings {
   @js.native
   sealed trait none extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def body: body = "body".asInstanceOf[body]
+  @scala.inline
   def dependency: dependency = "dependency".asInstanceOf[dependency]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
   def manual: manual = "manual".asInstanceOf[manual]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
 }
 

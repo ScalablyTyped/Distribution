@@ -40,6 +40,7 @@ class Polyline protected () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Polyline")
 @js.native
 object Polyline extends js.Object {

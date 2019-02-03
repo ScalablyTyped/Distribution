@@ -18,6 +18,7 @@ class FilterObserver protected ()
   /* protected */ def predicate(value: js.Any, index: scala.Double, source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/observer/FilterObserver", "FilterObserver")
 @js.native
 object FilterObserver extends js.Object {

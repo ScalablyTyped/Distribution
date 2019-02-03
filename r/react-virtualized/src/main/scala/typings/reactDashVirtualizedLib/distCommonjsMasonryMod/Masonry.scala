@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Masonry ()
   extends reactDashVirtualizedLib.distEsMasonryMod.Masonry
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/Masonry", "Masonry")
 @js.native
 object Masonry extends js.Object {

@@ -24,11 +24,17 @@ object localizejsDashLibraryLibStrings {
   @js.native
   sealed trait updatedDictionary extends js.Object
   
+  @scala.inline
   def initialize: initialize = "initialize".asInstanceOf[initialize]
+  @scala.inline
   def pluralize: pluralize = "pluralize".asInstanceOf[pluralize]
+  @scala.inline
   def setLanguage: setLanguage = "setLanguage".asInstanceOf[setLanguage]
+  @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
+  @scala.inline
   def untranslatePage: untranslatePage = "untranslatePage".asInstanceOf[untranslatePage]
+  @scala.inline
   def updatedDictionary: updatedDictionary = "updatedDictionary".asInstanceOf[updatedDictionary]
 }
 

@@ -20,6 +20,7 @@ class VirtualRouter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh", "VirtualRouter")
 @js.native
 object VirtualRouter extends js.Object {

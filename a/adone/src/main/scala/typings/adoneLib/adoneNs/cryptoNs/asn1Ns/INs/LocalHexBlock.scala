@@ -32,6 +32,7 @@ class LocalHexBlock protected () extends js.Object {
   def toJSON(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("adone.crypto.asn1.I.LocalHexBlock")
 @js.native
 object LocalHexBlock extends js.Object {

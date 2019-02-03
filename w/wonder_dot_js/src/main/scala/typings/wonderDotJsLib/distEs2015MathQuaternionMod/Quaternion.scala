@@ -32,6 +32,7 @@ class Quaternion () extends js.Object {
   def sub(quat: Quaternion): this.type = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/math/Quaternion", "Quaternion")
 @js.native
 object Quaternion extends js.Object {

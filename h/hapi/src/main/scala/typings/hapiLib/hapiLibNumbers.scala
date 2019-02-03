@@ -18,9 +18,13 @@ object hapiLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `200`: `200` = 200.asInstanceOf[`200`]
+  @scala.inline
   def `204`: `204` = 204.asInstanceOf[`204`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

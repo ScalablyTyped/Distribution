@@ -28,6 +28,7 @@ class DateRangePicker protected () extends Widget {
   def setOptions(options: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DateRangePicker")
 @js.native
 object DateRangePicker extends js.Object {

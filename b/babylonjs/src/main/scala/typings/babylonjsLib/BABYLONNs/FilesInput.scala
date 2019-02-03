@@ -74,9 +74,7 @@ class FilesInput protected () extends js.Object {
   def reload(): scala.Unit = js.native
 }
 
-/**
-  * Class used to help managing file picking and drag'n'drop
-  */
+/* static members */
 @JSGlobal("BABYLON.FilesInput")
 @js.native
 object FilesInput extends js.Object {

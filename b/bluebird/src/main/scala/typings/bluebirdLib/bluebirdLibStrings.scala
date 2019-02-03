@@ -9,6 +9,7 @@ object bluebirdLibStrings {
   @js.native
   sealed trait ResolvableProps extends js.Object
   
+  @scala.inline
   def ResolvableProps: ResolvableProps = "ResolvableProps".asInstanceOf[ResolvableProps]
 }
 

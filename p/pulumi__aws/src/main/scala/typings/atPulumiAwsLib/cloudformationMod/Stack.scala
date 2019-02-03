@@ -21,6 +21,7 @@ class Stack protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudformationStackMod.StackArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudformation", "Stack")
 @js.native
 object Stack extends js.Object {

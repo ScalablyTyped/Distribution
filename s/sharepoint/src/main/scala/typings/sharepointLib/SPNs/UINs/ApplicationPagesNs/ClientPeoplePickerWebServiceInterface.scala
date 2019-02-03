@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientPeoplePickerWebServiceInterface () extends js.Object
 
+/* static members */
 @JSGlobal("SP.UI.ApplicationPages.ClientPeoplePickerWebServiceInterface")
 @js.native
 object ClientPeoplePickerWebServiceInterface extends js.Object {

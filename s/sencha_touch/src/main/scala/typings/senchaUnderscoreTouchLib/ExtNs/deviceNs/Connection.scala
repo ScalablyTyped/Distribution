@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Connection () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Connection")
 @js.native
 object Connection extends js.Object {

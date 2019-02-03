@@ -29,9 +29,7 @@ object metaNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.Status, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Status is a return value for calls that don't return other objects.
-      */
+    /* static members */
     @js.native
     object Status extends js.Object {
       /**

@@ -45,6 +45,7 @@ class Thing protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/thing", "Thing")
 @js.native
 object Thing extends js.Object {

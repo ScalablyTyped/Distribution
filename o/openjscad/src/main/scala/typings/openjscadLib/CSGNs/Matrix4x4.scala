@@ -20,6 +20,7 @@ class Matrix4x4 () extends js.Object {
   def rightMultiply1x3Vector(v: Vector3D): Vector3D = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Matrix4x4")
 @js.native
 object Matrix4x4 extends js.Object {

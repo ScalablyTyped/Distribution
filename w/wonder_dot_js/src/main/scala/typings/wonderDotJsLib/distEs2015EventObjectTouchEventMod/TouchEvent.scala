@@ -19,6 +19,7 @@ class TouchEvent ()
   val touchData: wonderDotJsLib.distEs2015EventInterfaceIEventDataMod.ITouchData = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/object/TouchEvent", "TouchEvent")
 @js.native
 object TouchEvent extends js.Object {

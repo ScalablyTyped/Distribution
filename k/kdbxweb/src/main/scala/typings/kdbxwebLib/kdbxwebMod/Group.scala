@@ -35,6 +35,7 @@ class Group () extends js.Object {
   def write(parentNode: stdLib.Node, ctx: Context): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Group")
 @js.native
 object Group extends js.Object {

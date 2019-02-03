@@ -22,6 +22,7 @@ class Pointable () extends js.Object {
   def isValid(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Pointable")
 @js.native
 object Pointable extends js.Object {

@@ -16,6 +16,7 @@ class GridCell[T, P /* <: officeDashUiDashFabricDashReactLib.libUtilitiesGridGri
   var _onMouseMove: js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/utilities/grid/GridCell", "GridCell")
 @js.native
 object GridCell extends js.Object {

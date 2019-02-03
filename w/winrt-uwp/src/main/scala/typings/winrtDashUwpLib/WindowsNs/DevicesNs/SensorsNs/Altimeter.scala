@@ -39,7 +39,7 @@ abstract class Altimeter () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides an interface for an altimetric sensor to measure the relative altitude. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Altimeter")
 @js.native
 object Altimeter extends js.Object {

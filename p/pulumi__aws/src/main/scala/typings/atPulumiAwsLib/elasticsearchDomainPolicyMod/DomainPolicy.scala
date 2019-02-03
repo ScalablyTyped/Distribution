@@ -28,6 +28,7 @@ class DomainPolicy protected ()
   val domainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticsearch/domainPolicy", "DomainPolicy")
 @js.native
 object DomainPolicy extends js.Object {

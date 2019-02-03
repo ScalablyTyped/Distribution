@@ -12,6 +12,7 @@ class RuleOperation () extends js.Object {
   var Context: RuleOperationContext = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.RuleOperation")
 @js.native
 object RuleOperation extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MemoryManager () extends js.Object
 
-/** Provides access to information on an app's memory usage. */
+/* static members */
 @JSGlobal("Windows.System.MemoryManager")
 @js.native
 object MemoryManager extends js.Object {

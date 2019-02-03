@@ -12,6 +12,7 @@ class Tooltip protected ()
   def this(props: antdLib.libTooltipMod.TooltipProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Tooltip")
 @js.native
 object Tooltip extends js.Object {

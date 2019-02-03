@@ -23,6 +23,7 @@ class namespaced () extends PlainMechanism {
   override def response(cred: saslDashPlainLib.saslDashPlainMod.PlainMechanismNs.Credentials): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sasl-plain", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

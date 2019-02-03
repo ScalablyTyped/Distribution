@@ -11,6 +11,7 @@ class default[TData, TVariables] protected () extends Query[TData, TVariables] {
   def this(props: QueryProps[TData, TVariables], context: QueryContext) = this()
 }
 
+/* static members */
 @JSImport("react-apollo/Query", JSImport.Default)
 @js.native
 object default extends js.Object {

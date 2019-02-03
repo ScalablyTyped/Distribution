@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ComponentInitOrderTable ()
   extends wonderDotJsLib.distEs2015ComponentDataComponentInitOrderTableMod.ComponentInitOrderTable
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ComponentInitOrderTable")
 @js.native
 object ComponentInitOrderTable extends js.Object {

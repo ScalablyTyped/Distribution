@@ -75,6 +75,7 @@ class RelayObservable[T] protected () extends Subscribable[T] {
   def toPromise(): js.Promise[js.UndefOr[T | scala.Null]] = js.native
 }
 
+/* static members */
 @JSImport("relay-runtime", "RelayObservable")
 @js.native
 object RelayObservable extends js.Object {

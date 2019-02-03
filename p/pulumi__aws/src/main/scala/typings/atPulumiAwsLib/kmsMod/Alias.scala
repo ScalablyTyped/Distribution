@@ -20,6 +20,7 @@ class Alias protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kmsAliasMod.AliasArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kms", "Alias")
 @js.native
 object Alias extends js.Object {

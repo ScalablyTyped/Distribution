@@ -67,6 +67,7 @@ class BindingScope protected ()
   def viewSnapshotStatements(): js.Array[atAngularCompilerLib.srcOutputOutputUnderscoreAstMod.Statement] = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/render3/view/template", "BindingScope")
 @js.native
 object BindingScope extends js.Object {

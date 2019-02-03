@@ -25,6 +25,7 @@ class ConfgurationSet protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/confgurationSet", "ConfgurationSet")
 @js.native
 object ConfgurationSet extends js.Object {

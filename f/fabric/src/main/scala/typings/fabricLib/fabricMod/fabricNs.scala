@@ -347,6 +347,7 @@ object fabricNs extends js.Object {
   def parseStyleAttribute(element: stdLib.SVGElement): js.Any = js.native
   def parseTransformAttribute(attributeValue: java.lang.String): js.Array[scala.Double] = js.native
   def warn(values: js.Any*): scala.Unit = js.native
+  /* static members */
   @js.native
   object ActiveSelection extends js.Object {
     /**
@@ -361,6 +362,7 @@ object fabricNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Canvas extends js.Object {
     var EMPTY_JSON: java.lang.String = js.native
@@ -385,6 +387,7 @@ object fabricNs extends js.Object {
     def toJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Circle extends js.Object {
     /**
@@ -404,6 +407,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Circle = js.native
   }
   
+  /* static members */
   @js.native
   object Color extends js.Object {
     /**
@@ -452,6 +456,7 @@ object fabricNs extends js.Object {
     def sourceFromRgb(color: java.lang.String): js.Array[scala.Double] = js.native
   }
   
+  /* static members */
   @js.native
   object Ellipse extends js.Object {
     /**
@@ -472,6 +477,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Ellipse = js.native
   }
   
+  /* static members */
   @js.native
   object Group extends js.Object {
     /**
@@ -482,6 +488,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object IText extends js.Object {
     /**
@@ -491,6 +498,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.IText = js.native
   }
   
+  /* static members */
   @js.native
   object Image extends js.Object {
     /**
@@ -531,6 +539,7 @@ object fabricNs extends js.Object {
     ): fabricLib.fabricDashImplMod.Image = js.native
   }
   
+  /* static members */
   @js.native
   object Intersection extends js.Object {
     /**
@@ -563,6 +572,7 @@ object fabricNs extends js.Object {
     def intersectPolygonRectangle(points: js.Array[fabricLib.fabricDashImplMod.Point], r1: scala.Double, r2: scala.Double): fabricLib.fabricDashImplMod.Intersection = js.native
   }
   
+  /* static members */
   @js.native
   object Line extends js.Object {
     var ATTRIBUTE_NAMES: js.Array[java.lang.String] = js.native
@@ -580,6 +590,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Line = js.native
   }
   
+  /* static members */
   @js.native
   object Path extends js.Object {
     /**
@@ -601,6 +612,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any, callback: js.Function1[/* path */ this.type, _]): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object PathGroup extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.PathGroup = js.native
@@ -612,6 +624,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any, callback: js.Function1[/* group */ this.type, _]): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Polygon extends js.Object {
     /**
@@ -632,6 +645,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Polygon = js.native
   }
   
+  /* static members */
   @js.native
   object Polyline extends js.Object {
     /**
@@ -652,6 +666,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Polyline = js.native
   }
   
+  /* static members */
   @js.native
   object Rect extends js.Object {
     /**
@@ -672,11 +687,13 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Rect = js.native
   }
   
+  /* static members */
   @js.native
   object Shadow extends js.Object {
     var reOffsetsAndBlur: stdLib.RegExp = js.native
   }
   
+  /* static members */
   @js.native
   object StaticCanvas extends js.Object {
     var EMPTY_JSON: java.lang.String = js.native
@@ -701,6 +718,7 @@ object fabricNs extends js.Object {
     def toJSON(propertiesToInclude: js.Array[java.lang.String]): java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Text extends js.Object {
     /**
@@ -725,6 +743,7 @@ object fabricNs extends js.Object {
     def fromObject(`object`: js.Any): fabricLib.fabricDashImplMod.Text = js.native
   }
   
+  /* static members */
   @js.native
   object Triangle extends js.Object {
     /**

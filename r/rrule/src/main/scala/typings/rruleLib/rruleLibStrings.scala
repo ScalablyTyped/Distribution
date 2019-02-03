@@ -96,35 +96,65 @@ object rruleLibStrings {
   @js.native
   sealed trait wkst extends js.Object
   
+  @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
+  @scala.inline
   def MO: MO = "MO".asInstanceOf[MO]
+  @scala.inline
   def SA: SA = "SA".asInstanceOf[SA]
+  @scala.inline
   def SU: SU = "SU".asInstanceOf[SU]
+  @scala.inline
   def TH: TH = "TH".asInstanceOf[TH]
+  @scala.inline
   def TU: TU = "TU".asInstanceOf[TU]
+  @scala.inline
   def WE: WE = "WE".asInstanceOf[WE]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def before: before = "before".asInstanceOf[before]
+  @scala.inline
   def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def byeaster: byeaster = "byeaster".asInstanceOf[byeaster]
+  @scala.inline
   def byhour: byhour = "byhour".asInstanceOf[byhour]
+  @scala.inline
   def byminute: byminute = "byminute".asInstanceOf[byminute]
+  @scala.inline
   def bymonth: bymonth = "bymonth".asInstanceOf[bymonth]
+  @scala.inline
   def bymonthday: bymonthday = "bymonthday".asInstanceOf[bymonthday]
+  @scala.inline
   def bynmonthday: bynmonthday = "bynmonthday".asInstanceOf[bynmonthday]
+  @scala.inline
   def bynweekday: bynweekday = "bynweekday".asInstanceOf[bynweekday]
+  @scala.inline
   def bysecond: bysecond = "bysecond".asInstanceOf[bysecond]
+  @scala.inline
   def bysetpos: bysetpos = "bysetpos".asInstanceOf[bysetpos]
+  @scala.inline
   def byweekday: byweekday = "byweekday".asInstanceOf[byweekday]
+  @scala.inline
   def byweekno: byweekno = "byweekno".asInstanceOf[byweekno]
+  @scala.inline
   def byyearday: byyearday = "byyearday".asInstanceOf[byyearday]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def dtstart: dtstart = "dtstart".asInstanceOf[dtstart]
+  @scala.inline
   def freq: freq = "freq".asInstanceOf[freq]
+  @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
+  @scala.inline
   def tzid: tzid = "tzid".asInstanceOf[tzid]
+  @scala.inline
   def until: until = "until".asInstanceOf[until]
+  @scala.inline
   def wkst: wkst = "wkst".asInstanceOf[wkst]
 }
 

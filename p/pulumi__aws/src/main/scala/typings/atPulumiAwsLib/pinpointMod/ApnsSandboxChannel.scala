@@ -20,6 +20,7 @@ class ApnsSandboxChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointApnsSandboxChannelMod.ApnsSandboxChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "ApnsSandboxChannel")
 @js.native
 object ApnsSandboxChannel extends js.Object {

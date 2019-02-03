@@ -79,6 +79,7 @@ class IfStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.IfStatementSyntax")
 @js.native
 object IfStatementSyntax extends js.Object {

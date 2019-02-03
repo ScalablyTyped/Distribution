@@ -18,9 +18,13 @@ object deepDashDiffLibStrings {
   @js.native
   sealed trait N extends js.Object
   
+  @scala.inline
   def A: A = "A".asInstanceOf[A]
+  @scala.inline
   def D: D = "D".asInstanceOf[D]
+  @scala.inline
   def E: E = "E".asInstanceOf[E]
+  @scala.inline
   def N: N = "N".asInstanceOf[N]
 }
 

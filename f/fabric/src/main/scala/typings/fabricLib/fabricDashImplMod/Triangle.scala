@@ -22,6 +22,7 @@ class Triangle () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Triangle")
 @js.native
 object Triangle extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MeasureSpec () extends js.Object
 
+/* static members */
 @JSGlobal("android.view.View.MeasureSpec")
 @js.native
 object MeasureSpec extends js.Object {

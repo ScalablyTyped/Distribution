@@ -160,6 +160,7 @@ class Server protected ()
   def unref(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("ssh2", "Server")
 @js.native
 object Server extends js.Object {

@@ -18,6 +18,7 @@ class Creatable[OptionType] ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/Creatable", "Creatable")
 @js.native
 object Creatable extends js.Object {

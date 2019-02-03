@@ -13,6 +13,7 @@ class Select protected () extends js.Object {
   def renderData(data: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Select")
 @js.native
 object Select extends js.Object {

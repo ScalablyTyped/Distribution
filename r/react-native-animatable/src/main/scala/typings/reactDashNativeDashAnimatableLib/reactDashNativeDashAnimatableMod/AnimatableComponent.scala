@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {[ P in keyof {[ k in react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>} ]:? {[ k in react-native-animatable.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}[P]} */ @js.native
+- Dropped {[ P in keyof {[ k in std.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>} ]:? {[ k in std.Animation ]: (duration? : number): std.Promise<{  finished  :boolean}>}[P]} */ @js.native
 trait AnimatableComponent[P /* <: js.Object */, S /* <: js.Object */]
   extends reactLib.reactMod.ReactNs.ClassicComponentClass[AnimatableProperties[S] with P]
      with reactDashNativeLib.reactDashNativeMod.NativeMethodsMixinStatic {

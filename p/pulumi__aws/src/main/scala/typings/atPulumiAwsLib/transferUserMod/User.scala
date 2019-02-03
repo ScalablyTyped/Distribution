@@ -48,6 +48,7 @@ class User protected ()
   val userName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/transfer/user", "User")
 @js.native
 object User extends js.Object {

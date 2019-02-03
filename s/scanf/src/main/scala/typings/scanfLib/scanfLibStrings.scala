@@ -24,11 +24,17 @@ object scanfLibStrings {
   @js.native
   sealed trait `%x` extends js.Object
   
+  @scala.inline
   def `%S`: `%S` = "%S".asInstanceOf[`%S`]
+  @scala.inline
   def `%d`: `%d` = "%d".asInstanceOf[`%d`]
+  @scala.inline
   def `%f`: `%f` = "%f".asInstanceOf[`%f`]
+  @scala.inline
   def `%o`: `%o` = "%o".asInstanceOf[`%o`]
+  @scala.inline
   def `%s`: `%s` = "%s".asInstanceOf[`%s`]
+  @scala.inline
   def `%x`: `%x` = "%x".asInstanceOf[`%x`]
 }
 

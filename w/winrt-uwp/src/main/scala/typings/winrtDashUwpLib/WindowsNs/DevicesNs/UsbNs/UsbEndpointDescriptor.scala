@@ -25,7 +25,7 @@ abstract class UsbEndpointDescriptor () extends js.Object {
   var endpointType: UsbEndpointType = js.native
 }
 
-/** Derives information from the USB endpoint descriptor of the endpoint, such as type, direction, and endpoint number. This object also gets the specific endpoint descriptors based on the type of endpoint. For an explanation of an endpoint descriptor, see Section 9.6.5 in the Universal Serial Bus Specification: */
+/* static members */
 @JSGlobal("Windows.Devices.Usb.UsbEndpointDescriptor")
 @js.native
 object UsbEndpointDescriptor extends js.Object {

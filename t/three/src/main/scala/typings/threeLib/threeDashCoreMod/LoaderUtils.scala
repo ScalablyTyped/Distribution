@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LoaderUtils () extends js.Object
 
+/* static members */
 @JSImport("three/three-core", "LoaderUtils")
 @js.native
 object LoaderUtils extends js.Object {

@@ -12,6 +12,7 @@ class CorridorOutlineGeometry protected ()
   def this(options: cesiumLib.Anon_CornerTypeEllipsoid) = this()
 }
 
+/* static members */
 @JSImport("cesium", "CorridorOutlineGeometry")
 @js.native
 object CorridorOutlineGeometry extends js.Object {

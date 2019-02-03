@@ -54,6 +54,7 @@ class Storage ()
   def this(options: atGoogleDashCloudStorageLib.buildSrcStorageMod.StorageOptions) = this()
 }
 
+/* static members */
 @JSImport("@google-cloud/storage", "Storage")
 @js.native
 object Storage extends js.Object {

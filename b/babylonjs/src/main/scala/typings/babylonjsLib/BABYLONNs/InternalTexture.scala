@@ -200,10 +200,7 @@ class InternalTexture protected () extends IInternalTextureTracker {
   def updateSize(width: int, height: int, depth: int): scala.Unit = js.native
 }
 
-/**
-  * Class used to store data associated with WebGL texture data for the engine
-  * This class should not be used directly
-  */
+/* static members */
 @JSGlobal("BABYLON.InternalTexture")
 @js.native
 object InternalTexture extends js.Object {

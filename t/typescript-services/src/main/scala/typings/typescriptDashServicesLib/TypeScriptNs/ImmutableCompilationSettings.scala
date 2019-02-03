@@ -50,6 +50,7 @@ class ImmutableCompilationSettings protected () extends js.Object {
   def watch(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ImmutableCompilationSettings")
 @js.native
 object ImmutableCompilationSettings extends js.Object {

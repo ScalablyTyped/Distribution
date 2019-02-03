@@ -12,6 +12,7 @@ class Transport () extends js.Object {
   def smartCertificateCheck(cert: nodegitLib.certMod.Cert, valid: scala.Double, hostName: java.lang.String): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/transport", "Transport")
 @js.native
 object Transport extends js.Object {

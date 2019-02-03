@@ -11,6 +11,7 @@ class default () extends TimeStampResp {
   def this(params: js.Any) = this()
 }
 
+/* static members */
 @JSImport("pkijs/src/TimeStampResp", JSImport.Default)
 @js.native
 object default extends js.Object {

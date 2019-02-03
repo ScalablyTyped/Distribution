@@ -35,6 +35,7 @@ class CssSelector () extends js.Object {
   def setElement(element: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/selector", "CssSelector")
 @js.native
 object CssSelector extends js.Object {

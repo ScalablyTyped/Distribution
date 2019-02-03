@@ -21,6 +21,7 @@ class PageRequest () extends js.Object {
   def set_url(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.PageRequest")
 @js.native
 object PageRequest extends js.Object {

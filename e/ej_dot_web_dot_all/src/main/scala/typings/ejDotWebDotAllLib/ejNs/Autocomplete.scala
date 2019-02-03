@@ -63,6 +63,7 @@ class Autocomplete protected () extends Widget {
   def selectValueByText(Text: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Autocomplete")
 @js.native
 object Autocomplete extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ForegroundEnergyManager () extends js.Object
 
-/** Provides information about your app's foreground energy usage. */
+/* static members */
 @JSGlobal("Windows.System.Power.ForegroundEnergyManager")
 @js.native
 object ForegroundEnergyManager extends js.Object {

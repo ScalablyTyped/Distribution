@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FloatingPeoplePicker ()
   extends officeDashUiDashFabricDashReactLib.libFloatingPickerMod.FloatingPeoplePicker
 
+/* static members */
 @JSImport("office-ui-fabric-react", "FloatingPeoplePicker")
 @js.native
 object FloatingPeoplePicker extends js.Object {

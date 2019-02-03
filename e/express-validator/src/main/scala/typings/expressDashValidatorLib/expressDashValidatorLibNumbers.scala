@@ -21,10 +21,15 @@ object expressDashValidatorLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
+  @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
+  @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
+  @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

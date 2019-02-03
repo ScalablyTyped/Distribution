@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class UserDataAccountSystemAccessManager () extends js.Object
 
-/** Provides the ability to display the system UI for managing sync relationships. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.UserDataAccounts.SystemAccess.UserDataAccountSystemAccessManager")
 @js.native
 object UserDataAccountSystemAccessManager extends js.Object {

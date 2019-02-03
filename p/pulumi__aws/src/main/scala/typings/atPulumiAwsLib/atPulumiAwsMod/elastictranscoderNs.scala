@@ -36,6 +36,7 @@ object elastictranscoderNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.elastictranscoderPresetMod.PresetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Pipeline extends js.Object {
     /**
@@ -60,6 +61,7 @@ object elastictranscoderNs extends js.Object {
     ): atPulumiAwsLib.elastictranscoderPipelineMod.Pipeline = js.native
   }
   
+  /* static members */
   @js.native
   object Preset extends js.Object {
     /**

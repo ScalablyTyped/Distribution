@@ -38,6 +38,7 @@ class EmitterVisitorContext protected () extends js.Object {
   def toSourceMapGenerator(genFilePath: java.lang.String, startsAtLine: scala.Double): atAngularCompilerLib.srcOutputSourceUnderscoreMapMod.SourceMapGenerator = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/output/abstract_emitter", "EmitterVisitorContext")
 @js.native
 object EmitterVisitorContext extends js.Object {

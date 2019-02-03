@@ -27,6 +27,7 @@ class Writer[S, T] protected ()
   override def unit[U](t: U): tsmonadLib.libSrcMonadMod.Monad[U] = js.native
 }
 
+/* static members */
 @JSImport("tsmonad/lib/src/writer", "Writer")
 @js.native
 object Writer extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Communicator () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Communicator")
 @js.native
 object Communicator extends js.Object {

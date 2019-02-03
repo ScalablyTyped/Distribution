@@ -51,6 +51,7 @@ class QuestionRatingModel protected () extends Question {
   def rateValuesChangedCallback(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "QuestionRatingModel")
 @js.native
 object QuestionRatingModel extends js.Object {

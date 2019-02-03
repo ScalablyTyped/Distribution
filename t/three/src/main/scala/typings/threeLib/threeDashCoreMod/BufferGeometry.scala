@@ -102,6 +102,7 @@ class BufferGeometry () extends EventDispatcher {
   def updateFromObject(`object`: Object3D): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "BufferGeometry")
 @js.native
 object BufferGeometry extends js.Object {

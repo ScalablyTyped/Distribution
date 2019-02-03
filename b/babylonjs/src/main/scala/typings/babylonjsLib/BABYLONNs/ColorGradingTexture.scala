@@ -42,14 +42,7 @@ class ColorGradingTexture protected () extends BaseTexture {
   var url: java.lang.String = js.native
 }
 
-/**
-  * This represents a color grading texture. This acts as a lookup table LUT, useful during post process
-  * It can help converting any input color in a desired output one. This can then be used to create effects
-  * from sepia, black and white to sixties or futuristic rendering...
-  *
-  * The only supported format is currently 3dl.
-  * More information on LUT: https://en.wikipedia.org/wiki/3D_lookup_table
-  */
+/* static members */
 @JSGlobal("BABYLON.ColorGradingTexture")
 @js.native
 object ColorGradingTexture extends js.Object {

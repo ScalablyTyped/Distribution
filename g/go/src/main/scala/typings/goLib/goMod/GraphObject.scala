@@ -16,9 +16,7 @@ import scala.scalajs.js.annotation._
 abstract class GraphObject ()
   extends goLib.goMod.goNs.GraphObject
 
-/**
-  * This is the abstract base class for all graphical objects.
-  */
+/* static members */
 @JSImport("go", "GraphObject")
 @js.native
 object GraphObject extends js.Object {

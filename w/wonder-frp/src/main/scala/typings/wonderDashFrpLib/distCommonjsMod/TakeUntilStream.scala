@@ -12,6 +12,7 @@ class TakeUntilStream protected ()
   def this(source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream, otherStream: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "TakeUntilStream")
 @js.native
 object TakeUntilStream extends js.Object {

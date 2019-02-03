@@ -15,8 +15,11 @@ object angularDashQDashExtrasLibStrings {
   @js.native
   sealed trait rejected extends js.Object
   
+  @scala.inline
   def IQService: IQService = "IQService".asInstanceOf[IQService]
+  @scala.inline
   def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
 }
 

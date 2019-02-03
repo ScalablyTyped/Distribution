@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class KeepAwake ()
   extends reactLib.reactMod.Component[js.Object, js.Object, js.Any]
 
+/* static members */
 @JSImport("expo", "KeepAwake")
 @js.native
 object KeepAwake extends js.Object {

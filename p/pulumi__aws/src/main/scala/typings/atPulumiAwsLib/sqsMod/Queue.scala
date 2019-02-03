@@ -21,6 +21,7 @@ class Queue protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sqsQueueMod.QueueArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sqs", "Queue")
 @js.native
 object Queue extends js.Object {

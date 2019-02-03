@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CryptoConfig ()
   extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.CryptoConfig
 
+/* static members */
 @JSImport("xmldsigjs", "CryptoConfig")
 @js.native
 object CryptoConfig extends js.Object {

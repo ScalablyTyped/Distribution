@@ -20,6 +20,7 @@ class Account protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.organizationsAccountMod.AccountArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/organizations", "Account")
 @js.native
 object Account extends js.Object {

@@ -21,7 +21,9 @@ package object grpcMod {
   type MetadataListener = js.Function2[/* metadata */ Metadata, /* next */ js.Function, scala.Unit]
   type MetadataRequester = js.Function3[/* metadata */ Metadata, /* listener */ Listener, /* next */ js.Function, scala.Unit]
   type MetadataValue = java.lang.String | nodeLib.Buffer
-  type ServiceDefinition[ImplementationType] = grpcLib.grpcLibStrings.ServiceDefinition with js.Any
+  type ServiceDefinition[ImplementationType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {readonly [ I in keyof ImplementationType ]: grpc.grpc.MethodDefinition<any, any>}
+    */ grpcLib.grpcLibStrings.ServiceDefinition with js.Any
   type StatusListener = js.Function2[/* status */ StatusObject, /* next */ js.Function, scala.Unit]
   /**
     * A deserialization function

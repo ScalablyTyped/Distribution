@@ -21,6 +21,7 @@ class Lazy protected () extends js.Object {
   def get(container: Container): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "Lazy")
 @js.native
 object Lazy extends js.Object {

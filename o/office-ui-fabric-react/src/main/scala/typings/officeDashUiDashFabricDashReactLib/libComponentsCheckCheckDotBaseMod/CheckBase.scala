@@ -16,6 +16,7 @@ class CheckBase ()
   def shouldComponentUpdate_MCheckBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotTypesMod.ICheckProps): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Check/Check.base", "CheckBase")
 @js.native
 object CheckBase extends js.Object {

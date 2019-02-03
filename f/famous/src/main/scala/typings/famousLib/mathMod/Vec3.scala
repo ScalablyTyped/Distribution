@@ -39,6 +39,7 @@ class Vec3 () extends js.Object {
   def toArray(): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("famous/math", "Vec3")
 @js.native
 object Vec3 extends js.Object {

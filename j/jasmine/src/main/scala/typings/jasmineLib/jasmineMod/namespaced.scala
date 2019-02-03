@@ -11,6 +11,7 @@ class namespaced protected () extends jasmine {
   def this(options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("jasmine", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

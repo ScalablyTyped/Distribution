@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Attr ()
   extends nodegitLib.attrMod.Attr
 
+/* static members */
 @JSImport("nodegit", "Attr")
 @js.native
 object Attr extends js.Object {

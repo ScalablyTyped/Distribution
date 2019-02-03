@@ -15,6 +15,7 @@ class Frame protected () extends js.Object {
   var command: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("stompjs", "Frame")
 @js.native
 object Frame extends js.Object {

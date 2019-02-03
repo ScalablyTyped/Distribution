@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class TerrainProvider ()
   extends cesiumLib.cesiumMod.CesiumNs.TerrainProvider
 
+/* static members */
 @JSImport("cesium", "TerrainProvider")
 @js.native
 object TerrainProvider extends js.Object {

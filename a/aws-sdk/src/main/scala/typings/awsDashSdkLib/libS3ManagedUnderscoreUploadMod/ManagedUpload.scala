@@ -47,6 +47,7 @@ class ManagedUpload protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/s3/managed_upload", "ManagedUpload")
 @js.native
 object ManagedUpload extends js.Object {

@@ -15,6 +15,7 @@ class Tab protected () extends js.Object {
   def renderBar(`type`: js.Any, children: js.Any, cls: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Tab")
 @js.native
 object Tab extends js.Object {

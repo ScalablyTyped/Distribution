@@ -84,6 +84,7 @@ class Stylesheet () extends js.Object {
   def setConfig(config: IStyleSheetConfig): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@uifabric/merge-styles/lib/Stylesheet", "Stylesheet")
 @js.native
 object Stylesheet extends js.Object {

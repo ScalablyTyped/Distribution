@@ -31,6 +31,7 @@ class ZoneOffset ()
   override def totalSeconds(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ZoneOffset")
 @js.native
 object ZoneOffset extends js.Object {

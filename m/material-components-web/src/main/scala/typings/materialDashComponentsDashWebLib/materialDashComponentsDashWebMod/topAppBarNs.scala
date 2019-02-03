@@ -28,11 +28,13 @@ object topAppBarNs extends js.Object {
   class MDCTopAppBarFoundation ()
     extends atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBarFoundation
   
+  /* static members */
   @js.native
   object MDCTopAppBar extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTopDashAppDashBarLib.atMaterialTopDashAppDashBarMod.MDCTopAppBar = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTopAppBarBaseFoundation extends js.Object {
     val cssClasses: atMaterialTopDashAppDashBarLib.constantsMod.cssClasses = js.native

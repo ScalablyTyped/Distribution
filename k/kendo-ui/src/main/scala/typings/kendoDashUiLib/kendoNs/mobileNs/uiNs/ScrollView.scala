@@ -24,6 +24,7 @@ class ScrollView protected () extends Widget {
   def value(dataItem: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.ScrollView")
 @js.native
 object ScrollView extends js.Object {

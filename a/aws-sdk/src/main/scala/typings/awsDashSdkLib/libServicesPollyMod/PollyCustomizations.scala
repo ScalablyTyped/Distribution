@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PollyCustomizations ()
   extends awsDashSdkLib.libServiceMod.Service
 
+/* static members */
 @JSImport("aws-sdk/lib/services/polly", "PollyCustomizations")
 @js.native
 object PollyCustomizations extends js.Object {

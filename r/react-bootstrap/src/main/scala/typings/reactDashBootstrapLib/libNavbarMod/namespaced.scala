@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Navbar
 
+/* static members */
 @JSImport("react-bootstrap/lib/Navbar", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

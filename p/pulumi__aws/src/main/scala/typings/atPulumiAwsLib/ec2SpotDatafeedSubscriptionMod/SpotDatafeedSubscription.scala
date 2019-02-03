@@ -28,6 +28,7 @@ class SpotDatafeedSubscription protected ()
   val prefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/spotDatafeedSubscription", "SpotDatafeedSubscription")
 @js.native
 object SpotDatafeedSubscription extends js.Object {

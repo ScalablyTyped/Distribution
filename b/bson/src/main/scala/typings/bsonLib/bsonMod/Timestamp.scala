@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Timestamp () extends LongLike[Timestamp]
 
+/* static members */
 @JSImport("bson", "Timestamp")
 @js.native
 object Timestamp extends js.Object {

@@ -406,6 +406,7 @@ class TextBuffer () extends js.Object {
   def undo(options: HistoryTraversalOptions): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("atom", "TextBuffer")
 @js.native
 object TextBuffer extends js.Object {

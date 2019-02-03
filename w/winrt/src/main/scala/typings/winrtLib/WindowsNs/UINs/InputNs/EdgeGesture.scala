@@ -16,6 +16,7 @@ class EdgeGesture () extends IEdgeGesture {
   override var onstarting: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Input.EdgeGesture")
 @js.native
 object EdgeGesture extends js.Object {

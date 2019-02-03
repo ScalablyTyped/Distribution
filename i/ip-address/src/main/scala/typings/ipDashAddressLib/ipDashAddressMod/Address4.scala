@@ -70,6 +70,7 @@ class Address4 protected () extends js.Object {
   def toV6Group(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("ip-address", "Address4")
 @js.native
 object Address4 extends js.Object {

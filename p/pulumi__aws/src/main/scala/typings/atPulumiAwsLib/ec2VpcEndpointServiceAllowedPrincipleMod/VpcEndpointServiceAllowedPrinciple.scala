@@ -28,6 +28,7 @@ class VpcEndpointServiceAllowedPrinciple protected ()
   val vpcEndpointServiceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple")
 @js.native
 object VpcEndpointServiceAllowedPrinciple extends js.Object {

@@ -24,6 +24,7 @@ class ResourceManager () extends IResourceManager {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
 @js.native
 object ResourceManager extends js.Object {

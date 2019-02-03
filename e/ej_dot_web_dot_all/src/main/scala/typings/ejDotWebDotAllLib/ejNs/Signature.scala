@@ -54,6 +54,7 @@ class Signature protected () extends Widget {
   def undo(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Signature")
 @js.native
 object Signature extends js.Object {

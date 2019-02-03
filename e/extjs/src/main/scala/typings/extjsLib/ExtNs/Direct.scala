@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Direct () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Direct")
 @js.native
 object Direct extends js.Object {

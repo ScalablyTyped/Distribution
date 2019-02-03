@@ -37,6 +37,7 @@ class Filter[U /* <: js.Object */] () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Filter")
 @js.native
 object Filter extends js.Object {

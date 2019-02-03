@@ -11,6 +11,7 @@ class FamousEngine () extends js.Object {
   def createScene(): Scene = js.native
 }
 
+/* static members */
 @JSImport("famous/core", "FamousEngine")
 @js.native
 object FamousEngine extends js.Object {

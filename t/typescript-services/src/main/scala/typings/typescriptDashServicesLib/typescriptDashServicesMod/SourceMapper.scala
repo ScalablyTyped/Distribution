@@ -12,6 +12,7 @@ class SourceMapper protected ()
   def this(jsFile: typescriptDashServicesLib.TypeScriptNs.TextWriter, sourceMapOut: typescriptDashServicesLib.TypeScriptNs.TextWriter, document: typescriptDashServicesLib.TypeScriptNs.Document, jsFilePath: java.lang.String, emitOptions: typescriptDashServicesLib.TypeScriptNs.EmitOptions, resolvePath: js.Function1[/* path */ java.lang.String, java.lang.String]) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SourceMapper")
 @js.native
 object SourceMapper extends js.Object {

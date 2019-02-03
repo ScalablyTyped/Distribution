@@ -28,9 +28,7 @@ class Angle protected () extends js.Object {
   def radians(): scala.Double = js.native
 }
 
-/**
-  * Defines angle representation
-  */
+/* static members */
 @JSGlobal("BABYLON.Angle")
 @js.native
 object Angle extends js.Object {

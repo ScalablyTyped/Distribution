@@ -16,6 +16,7 @@ class InputPane () extends IInputPane {
   override var onshowing: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.InputPane")
 @js.native
 object InputPane extends js.Object {

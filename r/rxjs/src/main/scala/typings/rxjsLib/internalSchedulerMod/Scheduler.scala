@@ -30,6 +30,7 @@ class Scheduler protected ()
   var SchedulerAction: js.Any = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/Scheduler", "Scheduler")
 @js.native
 object Scheduler extends js.Object {

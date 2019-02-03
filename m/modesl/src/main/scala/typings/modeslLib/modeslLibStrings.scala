@@ -15,8 +15,11 @@ object modeslLibStrings {
   @js.native
   sealed trait xml extends js.Object
   
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
+  @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
 }
 

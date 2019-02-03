@@ -52,6 +52,7 @@ class Uri protected ()
   override def equals(pUri: Uri): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Foundation.Uri")
 @js.native
 object Uri extends js.Object {

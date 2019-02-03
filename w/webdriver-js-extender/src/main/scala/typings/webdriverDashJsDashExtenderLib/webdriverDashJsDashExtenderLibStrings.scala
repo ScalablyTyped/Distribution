@@ -30,13 +30,21 @@ object webdriverDashJsDashExtenderLibStrings {
   @js.native
   sealed trait tapOutside extends js.Object
   
+  @scala.inline
   def LANDSCAPE: LANDSCAPE = "LANDSCAPE".asInstanceOf[LANDSCAPE]
+  @scala.inline
   def PORTRAIT: PORTRAIT = "PORTRAIT".asInstanceOf[PORTRAIT]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def press: press = "press".asInstanceOf[press]
+  @scala.inline
   def pressKey: pressKey = "pressKey".asInstanceOf[pressKey]
+  @scala.inline
   def swipeDown: swipeDown = "swipeDown".asInstanceOf[swipeDown]
+  @scala.inline
   def tapOut: tapOut = "tapOut".asInstanceOf[tapOut]
+  @scala.inline
   def tapOutside: tapOutside = "tapOutside".asInstanceOf[tapOutside]
 }
 

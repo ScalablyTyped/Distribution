@@ -21,10 +21,15 @@ object mongodbLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
+  @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

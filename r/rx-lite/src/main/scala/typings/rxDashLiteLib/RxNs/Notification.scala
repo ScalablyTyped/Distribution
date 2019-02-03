@@ -29,7 +29,7 @@ class Notification[T] () extends js.Object {
   def toObservable(scheduler: IScheduler): Observable[T] = js.native
 }
 
-// Notifications
+/* static members */
 @JSGlobal("Rx.Notification")
 @js.native
 object Notification extends js.Object {

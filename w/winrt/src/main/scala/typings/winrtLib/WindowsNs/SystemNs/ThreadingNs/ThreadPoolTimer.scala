@@ -16,6 +16,7 @@ class ThreadPoolTimer () extends IThreadPoolTimer {
   override def cancel(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.System.Threading.ThreadPoolTimer")
 @js.native
 object ThreadPoolTimer extends js.Object {

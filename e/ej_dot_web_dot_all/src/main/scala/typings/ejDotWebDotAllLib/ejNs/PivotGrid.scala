@@ -85,6 +85,7 @@ class PivotGrid protected () extends Widget {
   def setOlapReport(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotGrid")
 @js.native
 object PivotGrid extends js.Object {

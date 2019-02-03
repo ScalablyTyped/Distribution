@@ -19,6 +19,7 @@ class Duration ()
   override def units(): js.Array[jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalUnit] = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Duration")
 @js.native
 object Duration extends js.Object {

@@ -9,6 +9,7 @@ object papaparseLibStrings {
   @js.native
   sealed trait greedy extends js.Object
   
+  @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
 }
 

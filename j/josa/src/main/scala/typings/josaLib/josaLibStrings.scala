@@ -36,15 +36,25 @@ object josaLibStrings {
   @js.native
   sealed trait BACKSLASHuC774 extends js.Object
   
+  @scala.inline
   def BACKSLASHuAC00: BACKSLASHuAC00 = "\uAC00".asInstanceOf[BACKSLASHuAC00]
+  @scala.inline
   def BACKSLASHuACFC: BACKSLASHuACFC = "\uACFC".asInstanceOf[BACKSLASHuACFC]
+  @scala.inline
   def BACKSLASHuB294: BACKSLASHuB294 = "\uB294".asInstanceOf[BACKSLASHuB294]
+  @scala.inline
   def BACKSLASHuB85C: BACKSLASHuB85C = "\uB85C".asInstanceOf[BACKSLASHuB85C]
+  @scala.inline
   def BACKSLASHuB97C: BACKSLASHuB97C = "\uB97C".asInstanceOf[BACKSLASHuB97C]
+  @scala.inline
   def BACKSLASHuC640: BACKSLASHuC640 = "\uC640".asInstanceOf[BACKSLASHuC640]
+  @scala.inline
   def BACKSLASHuC73CBACKSLASHuB85C: BACKSLASHuC73CBACKSLASHuB85C = "\uC73C\uB85C".asInstanceOf[BACKSLASHuC73CBACKSLASHuB85C]
+  @scala.inline
   def BACKSLASHuC740: BACKSLASHuC740 = "\uC740".asInstanceOf[BACKSLASHuC740]
+  @scala.inline
   def BACKSLASHuC744: BACKSLASHuC744 = "\uC744".asInstanceOf[BACKSLASHuC744]
+  @scala.inline
   def BACKSLASHuC774: BACKSLASHuC774 = "\uC774".asInstanceOf[BACKSLASHuC774]
 }
 

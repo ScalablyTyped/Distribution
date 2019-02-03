@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Validations () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.data.Validations")
 @js.native
 object Validations extends js.Object {

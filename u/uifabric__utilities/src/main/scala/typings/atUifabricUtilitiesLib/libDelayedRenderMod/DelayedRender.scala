@@ -17,6 +17,7 @@ class DelayedRender protected ()
   def componentWillUnmount_MDelayedRender(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/DelayedRender", "DelayedRender")
 @js.native
 object DelayedRender extends js.Object {

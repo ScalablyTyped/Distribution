@@ -42,6 +42,7 @@ abstract class ViewportScroller () extends js.Object {
   def setOffset(offset: js.Tuple2[scala.Double, scala.Double]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@angular/common/src/viewport_scroller", "ViewportScroller")
 @js.native
 object ViewportScroller extends js.Object {

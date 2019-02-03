@@ -84,31 +84,57 @@ object loopbackLibStrings {
   @js.native
   sealed trait put extends js.Object
   
+  @scala.inline
   def ALARM: ALARM = "ALARM".asInstanceOf[ALARM]
+  @scala.inline
   def ALLOW: ALLOW = "ALLOW".asInstanceOf[ALLOW]
+  @scala.inline
   def AUDIT: AUDIT = "AUDIT".asInstanceOf[AUDIT]
+  @scala.inline
   def Aplication: Aplication = "Aplication".asInstanceOf[Aplication]
+  @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
+  @scala.inline
   def Boolean: Boolean = "Boolean".asInstanceOf[Boolean]
+  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
+  @scala.inline
   def DENY: DENY = "DENY".asInstanceOf[DENY]
+  @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
+  @scala.inline
   def EXECUTE: EXECUTE = "EXECUTE".asInstanceOf[EXECUTE]
+  @scala.inline
   def GeoPoint: GeoPoint = "GeoPoint".asInstanceOf[GeoPoint]
+  @scala.inline
   def Number: Number = "Number".asInstanceOf[Number]
+  @scala.inline
   def Object: Object = "Object".asInstanceOf[Object]
+  @scala.inline
   def READ: READ = "READ".asInstanceOf[READ]
+  @scala.inline
   def Role: Role = "Role".asInstanceOf[Role]
+  @scala.inline
   def String: String = "String".asInstanceOf[String]
+  @scala.inline
   def User: User = "User".asInstanceOf[User]
+  @scala.inline
   def WRITE: WRITE = "WRITE".asInstanceOf[WRITE]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def del: del = "del".asInstanceOf[del]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
+  @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
 }
 

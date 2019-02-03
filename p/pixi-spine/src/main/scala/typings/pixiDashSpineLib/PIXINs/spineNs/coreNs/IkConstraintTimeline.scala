@@ -14,6 +14,7 @@ class IkConstraintTimeline protected () extends CurveTimeline {
   def setFrame(frameIndex: scala.Double, time: scala.Double, mix: scala.Double, bendDirection: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.IkConstraintTimeline")
 @js.native
 object IkConstraintTimeline extends js.Object {

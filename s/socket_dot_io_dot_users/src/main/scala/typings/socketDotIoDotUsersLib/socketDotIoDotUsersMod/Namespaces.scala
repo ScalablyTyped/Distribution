@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Namespaces () extends js.Object
 
+/* static members */
 @JSImport("socket.io.users", "Namespaces")
 @js.native
 object Namespaces extends js.Object {

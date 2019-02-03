@@ -24,6 +24,7 @@ class Transformation () extends js.Object {
   def toShortString(sb: androiduixLib.javaNs.langNs.StringBuilder): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.Transformation")
 @js.native
 object Transformation extends js.Object {

@@ -14,6 +14,7 @@ class PathConstraintMixTimeline protected () extends CurveTimeline {
   def setFrame(frameIndex: scala.Double, time: scala.Double, rotateMix: scala.Double, translateMix: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.PathConstraintMixTimeline")
 @js.native
 object PathConstraintMixTimeline extends js.Object {

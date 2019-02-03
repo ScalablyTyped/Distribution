@@ -29,7 +29,7 @@ class XmlWriter () extends js.Object {
   def writeString(value: java.lang.String): scala.Unit = js.native
 }
 
-/** Defines a writer that provides a set of methods to append text in XML format. Use the static SP.XmlWriter.create(sb) Method to create an SP.XmlWriter object with the Sys.StringBuilder object you pass in. */
+/* static members */
 @JSGlobal("SP.XmlWriter")
 @js.native
 object XmlWriter extends js.Object {

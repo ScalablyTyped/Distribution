@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ResResources () extends js.Object
 
+/* static members */
 @JSGlobal("SP.ResResources")
 @js.native
 object ResResources extends js.Object {

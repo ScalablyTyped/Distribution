@@ -103,7 +103,7 @@ abstract class CallControl () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents the properties, commands and events for handling calls on a telephony related device. */
+/* static members */
 @JSGlobal("Windows.Media.Devices.CallControl")
 @js.native
 object CallControl extends js.Object {

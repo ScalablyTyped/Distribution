@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StackedAreaChart[T] ()
   extends reactLib.reactMod.PureComponent[StackedAreaChartProps[T], js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native-svg-charts", "StackedAreaChart")
 @js.native
 object StackedAreaChart extends js.Object {

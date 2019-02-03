@@ -123,6 +123,7 @@ class Fragment[S /* <: Schema[_, _] */] () extends js.Object {
   def toJSON(): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-model", "Fragment")
 @js.native
 object Fragment extends js.Object {

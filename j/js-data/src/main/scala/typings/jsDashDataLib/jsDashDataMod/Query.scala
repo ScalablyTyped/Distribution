@@ -33,6 +33,7 @@ class Query () extends Component {
   def skip(num: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("js-data", "Query")
 @js.native
 object Query extends js.Object {

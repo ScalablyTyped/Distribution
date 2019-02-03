@@ -56,6 +56,7 @@ class Volume protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ebs/volume", "Volume")
 @js.native
 object Volume extends js.Object {

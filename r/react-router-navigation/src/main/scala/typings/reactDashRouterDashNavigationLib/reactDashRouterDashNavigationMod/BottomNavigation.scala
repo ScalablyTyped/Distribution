@@ -15,6 +15,7 @@ class BottomNavigation ()
   def renderSceneView(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactNode = js.native
 }
 
+/* static members */
 @JSImport("react-router-navigation", "BottomNavigation")
 @js.native
 object BottomNavigation extends js.Object {

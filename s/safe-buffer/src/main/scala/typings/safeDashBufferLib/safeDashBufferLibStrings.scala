@@ -9,6 +9,7 @@ object safeDashBufferLibStrings {
   @js.native
   sealed trait Buffer extends js.Object
   
+  @scala.inline
   def Buffer: Buffer = "Buffer".asInstanceOf[Buffer]
 }
 

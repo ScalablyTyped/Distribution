@@ -373,10 +373,7 @@ class Camera protected () extends Node {
   def update(): scala.Unit = js.native
 }
 
-/**
-  * This is the base class of all the camera used in the application.
-  * @see http://doc.babylonjs.com/features/cameras
-  */
+/* static members */
 @JSGlobal("BABYLON.Camera")
 @js.native
 object Camera extends js.Object {

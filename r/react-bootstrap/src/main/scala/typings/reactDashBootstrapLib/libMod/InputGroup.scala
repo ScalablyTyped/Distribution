@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class InputGroup ()
   extends reactDashBootstrapLib.libInputGroupMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "InputGroup")
 @js.native
 object InputGroup extends js.Object {

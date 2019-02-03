@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class Tags ()
   extends babylonjsLib.BABYLONNs.Tags
 
-/**
-  * Class used to store custom tags
-  */
+/* static members */
 @JSImport("babylonjs", "Tags")
 @js.native
 object Tags extends js.Object {

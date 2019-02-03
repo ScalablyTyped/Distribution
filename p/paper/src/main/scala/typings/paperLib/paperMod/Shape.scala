@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Shape ()
   extends paperLib.paperNs.Shape
 
+/* static members */
 @JSImport("paper", "Shape")
 @js.native
 object Shape extends js.Object {

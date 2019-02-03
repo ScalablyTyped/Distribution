@@ -13,6 +13,7 @@ class Overlay ()
   def this(props: atBlueprintjsCoreLib.libEsmComponentsOverlayOverlayMod.IOverlayProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/core", "Overlay")
 @js.native
 object Overlay extends js.Object {

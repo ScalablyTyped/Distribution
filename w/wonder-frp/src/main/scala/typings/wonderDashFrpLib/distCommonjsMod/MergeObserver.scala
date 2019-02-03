@@ -12,6 +12,7 @@ class MergeObserver protected ()
   def this(currentObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver, maxConcurrent: scala.Double, groupDisposable: wonderDashFrpLib.distCommonjsDisposableGroupDisposableMod.GroupDisposable) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "MergeObserver")
 @js.native
 object MergeObserver extends js.Object {

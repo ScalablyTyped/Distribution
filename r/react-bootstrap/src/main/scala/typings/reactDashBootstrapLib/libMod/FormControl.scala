@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FormControl ()
   extends reactDashBootstrapLib.libFormControlMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "FormControl")
 @js.native
 object FormControl extends js.Object {

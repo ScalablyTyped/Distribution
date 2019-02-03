@@ -13,6 +13,7 @@ class QueryList[T] protected ()
   def this(props: atBlueprintjsSelectLib.libEsmComponentsQueryDashListQueryListMod.IQueryListProps[T], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/select", "QueryList")
 @js.native
 object QueryList extends js.Object {

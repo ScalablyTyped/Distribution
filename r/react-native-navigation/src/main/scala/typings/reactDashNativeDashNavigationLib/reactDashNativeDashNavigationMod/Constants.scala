@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Constants protected ()
   extends reactDashNativeDashNavigationLib.libDistAdaptersConstantsMod.Constants
 
+/* static members */
 @JSImport("react-native-navigation", "Constants")
 @js.native
 object Constants extends js.Object {

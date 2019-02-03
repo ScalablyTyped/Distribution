@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Utils () extends js.Object
 
+/* static members */
 @JSGlobal("spine.Utils")
 @js.native
 object Utils extends js.Object {

@@ -45,18 +45,31 @@ object rollupLibStrings {
   @js.native
   sealed trait umd extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def cjs: cjs = "cjs".asInstanceOf[cjs]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def es: es = "es".asInstanceOf[es]
+  @scala.inline
   def esm: esm = "esm".asInstanceOf[esm]
+  @scala.inline
   def iife: iife = "iife".asInstanceOf[iife]
+  @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
+  @scala.inline
   def named: named = "named".asInstanceOf[named]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def system: system = "system".asInstanceOf[system]
+  @scala.inline
   def umd: umd = "umd".asInstanceOf[umd]
 }
 

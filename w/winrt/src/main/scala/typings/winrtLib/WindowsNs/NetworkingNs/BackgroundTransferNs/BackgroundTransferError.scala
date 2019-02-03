@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BackgroundTransferError () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferError")
 @js.native
 object BackgroundTransferError extends js.Object {

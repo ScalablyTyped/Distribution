@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced[T] () extends OrderedMap[T]
 
+/* static members */
 @JSImport("orderedmap", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

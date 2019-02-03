@@ -12,6 +12,7 @@ class LabeledStatementSyntax protected ()
   def this(identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statement: typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "LabeledStatementSyntax")
 @js.native
 object LabeledStatementSyntax extends js.Object {

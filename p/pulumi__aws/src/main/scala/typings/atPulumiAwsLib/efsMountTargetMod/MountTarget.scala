@@ -50,6 +50,7 @@ class MountTarget protected ()
   val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/efs/mountTarget", "MountTarget")
 @js.native
 object MountTarget extends js.Object {

@@ -14,6 +14,7 @@ class ClientContext () extends ClientRuntimeContext {
   def get_web(): Web = js.native
 }
 
+/* static members */
 @JSGlobal("SP.ClientContext")
 @js.native
 object ClientContext extends js.Object {

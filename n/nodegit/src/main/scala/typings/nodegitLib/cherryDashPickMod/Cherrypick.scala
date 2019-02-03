@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cherrypick () extends js.Object
 
+/* static members */
 @JSImport("nodegit/cherry-pick", "Cherrypick")
 @js.native
 object Cherrypick extends js.Object {

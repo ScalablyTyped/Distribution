@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends KeepAwake
 
+/* static members */
 @JSImport("react-native-keep-awake", JSImport.Default)
 @js.native
 object default extends js.Object {

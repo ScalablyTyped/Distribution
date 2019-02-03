@@ -18,6 +18,7 @@ class namespaced protected () extends IntlMessageFormat {
   override def resolvedOptions(): intlDashMessageformatLib.Anon_Locale = js.native
 }
 
+/* static members */
 @JSImport("intl-messageformat", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

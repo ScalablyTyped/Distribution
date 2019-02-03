@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParseJSONUtil () extends js.Object
 
+/* static members */
 @JSGlobal("SP.ParseJSONUtil")
 @js.native
 object ParseJSONUtil extends js.Object {

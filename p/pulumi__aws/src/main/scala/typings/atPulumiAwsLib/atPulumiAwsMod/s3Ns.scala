@@ -144,6 +144,7 @@ object s3Ns extends js.Object {
     args: atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.s3GetBucketObjectMod.GetBucketObjectResult] = js.native
+  /* static members */
   @js.native
   object AccountPublicAccessBlock extends js.Object {
     /**
@@ -168,6 +169,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3AccountPublicAccessBlockMod.AccountPublicAccessBlock = js.native
   }
   
+  /* static members */
   @js.native
   object Bucket extends js.Object {
     /**
@@ -192,6 +194,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3S3MixinsMod.s3BucketMod.Bucket = js.native
   }
   
+  /* static members */
   @js.native
   object BucketMetric extends js.Object {
     /**
@@ -216,6 +219,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3BucketMetricMod.BucketMetric = js.native
   }
   
+  /* static members */
   @js.native
   object BucketNotification extends js.Object {
     /**
@@ -240,6 +244,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3BucketNotificationMod.BucketNotification = js.native
   }
   
+  /* static members */
   @js.native
   object BucketObject extends js.Object {
     /**
@@ -264,6 +269,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3BucketObjectMod.BucketObject = js.native
   }
   
+  /* static members */
   @js.native
   object BucketPolicy extends js.Object {
     /**
@@ -288,6 +294,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3BucketPolicyMod.BucketPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object BucketPublicAccessBlock extends js.Object {
     /**
@@ -312,6 +319,7 @@ object s3Ns extends js.Object {
     ): atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlock = js.native
   }
   
+  /* static members */
   @js.native
   object Inventory extends js.Object {
     /**

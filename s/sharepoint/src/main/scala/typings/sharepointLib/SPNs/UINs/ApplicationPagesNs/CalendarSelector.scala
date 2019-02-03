@@ -21,6 +21,7 @@ class CalendarSelector ()
   def revertTo(scopeKey: java.lang.String, ent: ResolveEntity): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.UI.ApplicationPages.CalendarSelector")
 @js.native
 object CalendarSelector extends js.Object {

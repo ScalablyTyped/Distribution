@@ -27,12 +27,19 @@ object tableLibStrings {
   @js.native
   sealed trait void extends js.Object
   
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def honeywell: honeywell = "honeywell".asInstanceOf[honeywell]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def norc: norc = "norc".asInstanceOf[norc]
+  @scala.inline
   def ramac: ramac = "ramac".asInstanceOf[ramac]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def void: void = "void".asInstanceOf[void]
 }
 

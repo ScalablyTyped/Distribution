@@ -27,12 +27,19 @@ object umzugLibStrings {
   @js.native
   sealed trait sequelize extends js.Object
   
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def migrated: migrated = "migrated".asInstanceOf[migrated]
+  @scala.inline
   def migrating: migrating = "migrating".asInstanceOf[migrating]
+  @scala.inline
   def mongodb: mongodb = "mongodb".asInstanceOf[mongodb]
+  @scala.inline
   def reverted: reverted = "reverted".asInstanceOf[reverted]
+  @scala.inline
   def reverting: reverting = "reverting".asInstanceOf[reverting]
+  @scala.inline
   def sequelize: sequelize = "sequelize".asInstanceOf[sequelize]
 }
 

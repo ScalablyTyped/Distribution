@@ -87,6 +87,7 @@ class Scanner protected () extends ISlidingWindowSource {
   /* private */ def tryScanRegularExpressionToken(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Scanner")
 @js.native
 object Scanner extends js.Object {

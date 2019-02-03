@@ -19,6 +19,7 @@ class default protected ()
   def this(container: stdLib.HTMLElement, data: js.Function0[dygraphsLib.dygraphsNs.Data], options: dygraphsLib.dygraphsNs.Options) = this()
 }
 
+/* static members */
 @JSImport("dygraphs", JSImport.Default)
 @js.native
 object default extends js.Object {

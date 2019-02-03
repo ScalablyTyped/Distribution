@@ -207,71 +207,137 @@ object p5LibStrings {
   @js.native
   sealed trait webgl extends js.Object
   
+  @scala.inline
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  @scala.inline
   def arrow: arrow = "arrow".asInstanceOf[arrow]
+  @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def axes: axes = "axes".asInstanceOf[axes]
+  @scala.inline
   def bevel: bevel = "bevel".asInstanceOf[bevel]
+  @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def bolditalic: bolditalic = "bolditalic".asInstanceOf[bolditalic]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def chord: chord = "chord".asInstanceOf[chord]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def `color-burn`: `color-burn` = "color-burn".asInstanceOf[`color-burn`]
+  @scala.inline
   def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
+  @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
+  @scala.inline
   def corner: corner = "corner".asInstanceOf[corner]
+  @scala.inline
   def corners: corners = "corners".asInstanceOf[corners]
+  @scala.inline
   def cross: cross = "cross".asInstanceOf[cross]
+  @scala.inline
   def darkest: darkest = "darkest".asInstanceOf[darkest]
+  @scala.inline
   def degrees: degrees = "degrees".asInstanceOf[degrees]
+  @scala.inline
   def difference: difference = "difference".asInstanceOf[difference]
+  @scala.inline
   def dilate: dilate = "dilate".asInstanceOf[dilate]
+  @scala.inline
   def erode: erode = "erode".asInstanceOf[erode]
+  @scala.inline
   def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
+  @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
+  @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
+  @scala.inline
   def hand: hand = "hand".asInstanceOf[hand]
+  @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
+  @scala.inline
   def hsb: hsb = "hsb".asInstanceOf[hsb]
+  @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def invert: invert = "invert".asInstanceOf[invert]
+  @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def lighten: lighten = "lighten".asInstanceOf[lighten]
+  @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
+  @scala.inline
   def miter: miter = "miter".asInstanceOf[miter]
+  @scala.inline
   def move: move = "move".asInstanceOf[move]
+  @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def opaque: opaque = "opaque".asInstanceOf[opaque]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
+  @scala.inline
   def p2d: p2d = "p2d".asInstanceOf[p2d]
+  @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def posterize: posterize = "posterize".asInstanceOf[posterize]
+  @scala.inline
   def quad_strip: quad_strip = "quad_strip".asInstanceOf[quad_strip]
+  @scala.inline
   def quads: quads = "quads".asInstanceOf[quads]
+  @scala.inline
   def radians: radians = "radians".asInstanceOf[radians]
+  @scala.inline
   def radius: radius = "radius".asInstanceOf[radius]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
+  @scala.inline
   def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
+  @scala.inline
   def `source-over`: `source-over` = "source-over".asInstanceOf[`source-over`]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def threshold: threshold = "threshold".asInstanceOf[threshold]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def video: video = "video".asInstanceOf[video]
+  @scala.inline
   def webgl: webgl = "webgl".asInstanceOf[webgl]
 }
 

@@ -12,6 +12,7 @@ class BackTop protected ()
   def this(props: antdLib.libBackDashTopMod.BackTopProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "BackTop")
 @js.native
 object BackTop extends js.Object {

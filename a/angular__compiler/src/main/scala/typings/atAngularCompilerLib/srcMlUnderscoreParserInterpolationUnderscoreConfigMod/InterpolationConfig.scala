@@ -13,6 +13,7 @@ class InterpolationConfig protected () extends js.Object {
   var start: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/ml_parser/interpolation_config", "InterpolationConfig")
 @js.native
 object InterpolationConfig extends js.Object {

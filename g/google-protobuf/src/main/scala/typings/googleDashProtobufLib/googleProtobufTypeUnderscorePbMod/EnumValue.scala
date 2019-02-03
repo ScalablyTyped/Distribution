@@ -21,6 +21,7 @@ class EnumValue ()
   def setOptionsList(value: js.Array[Option]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/type_pb", "EnumValue")
 @js.native
 object EnumValue extends js.Object {

@@ -53,6 +53,7 @@ class Server protected ()
   val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/transfer/server", "Server")
 @js.native
 object Server extends js.Object {

@@ -73,6 +73,7 @@ class ReportViewer protected () extends Widget {
   def refresh(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ReportViewer")
 @js.native
 object ReportViewer extends js.Object {

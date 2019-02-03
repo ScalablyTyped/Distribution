@@ -20,6 +20,7 @@ class VpnConnectionRoute protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpnConnectionRouteMod.VpnConnectionRouteArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpnConnectionRoute")
 @js.native
 object VpnConnectionRoute extends js.Object {

@@ -36,6 +36,7 @@ class VueRouter () extends js.Object {
   def resolve(to: RawLocation, current: Route, append: scala.Boolean): vueDashRouterLib.Anon_Href = js.native
 }
 
+/* static members */
 @JSImport("vue-router/types/router", "VueRouter")
 @js.native
 object VueRouter extends js.Object {

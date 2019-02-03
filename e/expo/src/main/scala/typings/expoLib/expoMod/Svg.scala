@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Svg ()
   extends reactLib.reactMod.Component[expoLib.Anon_HeightPreserveAspectRatio, js.Object, js.Any]
 
+/* static members */
 @JSImport("expo", "Svg")
 @js.native
 object Svg extends js.Object {

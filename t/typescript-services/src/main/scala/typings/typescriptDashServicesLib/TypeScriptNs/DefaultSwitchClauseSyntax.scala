@@ -68,6 +68,7 @@ class DefaultSwitchClauseSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.DefaultSwitchClauseSyntax")
 @js.native
 object DefaultSwitchClauseSyntax extends js.Object {

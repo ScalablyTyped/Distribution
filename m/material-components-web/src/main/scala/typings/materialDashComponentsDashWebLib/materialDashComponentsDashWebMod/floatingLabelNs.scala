@@ -16,11 +16,13 @@ object floatingLabelNs extends js.Object {
   class MDCFloatingLabelFoundation ()
     extends atMaterialFloatingDashLabelLib.atMaterialFloatingDashLabelMod.MDCFloatingLabelFoundation
   
+  /* static members */
   @js.native
   object MDCFloatingLabel extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialFloatingDashLabelLib.atMaterialFloatingDashLabelMod.MDCFloatingLabel = js.native
   }
   
+  /* static members */
   @js.native
   object MDCFloatingLabelFoundation extends js.Object {
     val cssClasses: atMaterialFloatingDashLabelLib.constantsMod.cssClasses = js.native

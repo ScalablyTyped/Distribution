@@ -73,10 +73,7 @@ class Octree[T] protected () extends js.Object {
   def update(worldMin: Vector3, worldMax: Vector3, entries: js.Array[T]): scala.Unit = js.native
 }
 
-/**
-  * Octrees are a really powerful data structure that can quickly select entities based on space coordinates.
-  * @see https://doc.babylonjs.com/how_to/optimizing_your_scene_with_octrees
-  */
+/* static members */
 @JSGlobal("BABYLON.Octree")
 @js.native
 object Octree extends js.Object {

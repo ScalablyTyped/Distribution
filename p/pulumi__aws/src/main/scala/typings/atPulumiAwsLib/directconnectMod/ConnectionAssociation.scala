@@ -20,6 +20,7 @@ class ConnectionAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectConnectionAssociationMod.ConnectionAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation")
 @js.native
 object ConnectionAssociation extends js.Object {

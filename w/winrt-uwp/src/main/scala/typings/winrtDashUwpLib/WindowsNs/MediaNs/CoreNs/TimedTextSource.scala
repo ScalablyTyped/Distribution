@@ -30,7 +30,7 @@ abstract class TimedTextSource () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a source of timed text data. */
+/* static members */
 @JSGlobal("Windows.Media.Core.TimedTextSource")
 @js.native
 object TimedTextSource extends js.Object {

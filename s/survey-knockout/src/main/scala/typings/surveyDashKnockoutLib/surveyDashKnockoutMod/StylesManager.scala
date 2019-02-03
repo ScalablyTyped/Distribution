@@ -11,6 +11,7 @@ class StylesManager () extends js.Object {
   def initializeStyles(sheet: stdLib.CSSStyleSheet): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "StylesManager")
 @js.native
 object StylesManager extends js.Object {

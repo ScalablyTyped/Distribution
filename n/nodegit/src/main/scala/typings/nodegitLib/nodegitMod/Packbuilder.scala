@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Packbuilder ()
   extends nodegitLib.packDashBuilderMod.Packbuilder
 
+/* static members */
 @JSImport("nodegit", "Packbuilder")
 @js.native
 object Packbuilder extends js.Object {

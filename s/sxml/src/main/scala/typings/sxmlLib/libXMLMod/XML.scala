@@ -65,6 +65,7 @@ class XML ()
   def toString(tab: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sxml/lib/XML", "XML")
 @js.native
 object XML extends js.Object {

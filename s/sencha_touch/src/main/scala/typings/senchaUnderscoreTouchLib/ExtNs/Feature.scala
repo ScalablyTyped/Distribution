@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Feature () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Feature")
 @js.native
 object Feature extends js.Object {

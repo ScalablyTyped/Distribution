@@ -38,6 +38,7 @@ class JsonArray ()
   override def stringify(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Data.Json.JsonArray")
 @js.native
 object JsonArray extends js.Object {

@@ -12,6 +12,7 @@ class OverflowSetBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsOverflowSetOverflowSetDotTypesMod.IOverflowSetProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "OverflowSetBase")
 @js.native
 object OverflowSetBase extends js.Object {

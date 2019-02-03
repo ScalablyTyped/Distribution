@@ -58,6 +58,7 @@ class HorizontalScrollView protected () extends FrameLayout {
   def smoothScrollTo(x: scala.Double, y: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.HorizontalScrollView")
 @js.native
 object HorizontalScrollView extends js.Object {

@@ -33,6 +33,7 @@ class SkeletonRenderer protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.webgl.SkeletonRenderer")
 @js.native
 object SkeletonRenderer extends js.Object {

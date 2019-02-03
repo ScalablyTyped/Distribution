@@ -61,6 +61,7 @@ class KeyPair protected ()
   val publicKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail/keyPair", "KeyPair")
 @js.native
 object KeyPair extends js.Object {

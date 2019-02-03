@@ -36,15 +36,25 @@ object motorDashHatLibStrings {
   @js.native
   sealed trait single extends js.Object
   
+  @scala.inline
   def M1: M1 = "M1".asInstanceOf[M1]
+  @scala.inline
   def M2: M2 = "M2".asInstanceOf[M2]
+  @scala.inline
   def M3: M3 = "M3".asInstanceOf[M3]
+  @scala.inline
   def M4: M4 = "M4".asInstanceOf[M4]
+  @scala.inline
   def back: back = "back".asInstanceOf[back]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def fwd: fwd = "fwd".asInstanceOf[fwd]
+  @scala.inline
   def interleaved: interleaved = "interleaved".asInstanceOf[interleaved]
+  @scala.inline
   def microstep: microstep = "microstep".asInstanceOf[microstep]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
 }
 

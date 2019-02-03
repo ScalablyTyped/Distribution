@@ -74,6 +74,7 @@ class SecurityGroup protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/securityGroup", "SecurityGroup")
 @js.native
 object SecurityGroup extends js.Object {

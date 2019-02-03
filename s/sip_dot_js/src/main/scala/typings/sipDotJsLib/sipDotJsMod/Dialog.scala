@@ -35,6 +35,7 @@ class Dialog protected ()
   def this(owner: sipDotJsLib.typesSubscriptionMod.Subscription, message: sipDotJsLib.typesSipDashMessageMod.IncomingResponse, `type`: sipDotJsLib.sipDotJsLibStrings.UAS, state: sipDotJsLib.typesEnumsMod.DialogStatus) = this()
 }
 
+/* static members */
 @JSImport("sip.js", "Dialog")
 @js.native
 object Dialog extends js.Object {

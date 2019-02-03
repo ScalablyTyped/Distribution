@@ -28,6 +28,7 @@ class ResourceGroup protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/inspector/resourceGroup", "ResourceGroup")
 @js.native
 object ResourceGroup extends js.Object {

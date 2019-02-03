@@ -13,7 +13,9 @@ trait SchemaSpec[N /* <: java.lang.String */, M /* <: java.lang.String */] exten
     * rules](#model.MarkSpec.parseDOM) are tried.
     */
   var marks: js.UndefOr[
-    (prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] | scala.Null
+    (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ name in M ]: prosemirror-model.prosemirror-model.MarkSpec}
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[MarkSpec] | scala.Null
   ] = js.undefined
   /**
     * The node types in this schema. Maps names to
@@ -23,7 +25,9 @@ trait SchemaSpec[N /* <: java.lang.String */, M /* <: java.lang.String */] exten
     * precedence by default, and which nodes come first in a given
     * [group](#model.NodeSpec.group).
     */
-  var nodes: (prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[NodeSpec]
+  var nodes: (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ name in N ]: prosemirror-model.prosemirror-model.NodeSpec}
+    */ prosemirrorDashModelLib.prosemirrorDashModelLibStrings.SchemaSpec with js.Any) | orderedmapLib.orderedmapMod.namespaced[NodeSpec]
   /**
     * The name of the default top-level node for the schema. Defaults
     * to `"doc"`.

@@ -12,6 +12,7 @@ class CatchClauseSyntax protected ()
   def this(catchKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "CatchClauseSyntax")
 @js.native
 object CatchClauseSyntax extends js.Object {

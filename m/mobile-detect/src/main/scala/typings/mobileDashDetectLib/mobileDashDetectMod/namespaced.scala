@@ -12,6 +12,7 @@ class namespaced protected () extends MobileDetect {
   def this(userAgent: java.lang.String, maxPhoneWidth: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("mobile-detect", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

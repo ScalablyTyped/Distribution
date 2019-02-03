@@ -57,22 +57,39 @@ object threeLibStrings {
   @js.native
   sealed trait mediump extends js.Object
   
+  @scala.inline
   def Audio: Audio = "Audio".asInstanceOf[Audio]
+  @scala.inline
   def AudioListener: AudioListener = "AudioListener".asInstanceOf[AudioListener]
+  @scala.inline
   def Bone: Bone = "Bone".asInstanceOf[Bone]
+  @scala.inline
   def CubeCamera: CubeCamera = "CubeCamera".asInstanceOf[CubeCamera]
+  @scala.inline
   def Group: Group = "Group".asInstanceOf[Group]
+  @scala.inline
   def LOD: LOD = "LOD".asInstanceOf[LOD]
+  @scala.inline
   def LensFlare: LensFlare = "LensFlare".asInstanceOf[LensFlare]
+  @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
+  @scala.inline
   def OrthographicCamera: OrthographicCamera = "OrthographicCamera".asInstanceOf[OrthographicCamera]
+  @scala.inline
   def PerspectiveCamera: PerspectiveCamera = "PerspectiveCamera".asInstanceOf[PerspectiveCamera]
+  @scala.inline
   def Points: Points = "Points".asInstanceOf[Points]
+  @scala.inline
   def Scene: Scene = "Scene".asInstanceOf[Scene]
+  @scala.inline
   def Sprite: Sprite = "Sprite".asInstanceOf[Sprite]
+  @scala.inline
   def StereoCamera: StereoCamera = "StereoCamera".asInstanceOf[StereoCamera]
+  @scala.inline
   def highp: highp = "highp".asInstanceOf[highp]
+  @scala.inline
   def lowp: lowp = "lowp".asInstanceOf[lowp]
+  @scala.inline
   def mediump: mediump = "mediump".asInstanceOf[mediump]
 }
 

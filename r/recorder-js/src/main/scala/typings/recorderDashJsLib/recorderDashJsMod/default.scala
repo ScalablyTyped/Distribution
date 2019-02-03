@@ -18,6 +18,7 @@ class default protected () extends Recorder {
   override def stop(): js.Promise[recorderDashJsLib.recorderDashJsMod.RecorderNs.RecorderResult] = js.native
 }
 
+/* static members */
 @JSImport("recorder-js", JSImport.Default)
 @js.native
 object default extends js.Object {

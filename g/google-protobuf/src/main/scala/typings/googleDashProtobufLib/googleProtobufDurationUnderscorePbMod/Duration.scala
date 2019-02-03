@@ -15,6 +15,7 @@ class Duration ()
   def setSeconds(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/duration_pb", "Duration")
 @js.native
 object Duration extends js.Object {

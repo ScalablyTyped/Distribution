@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Capture () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Capture")
 @js.native
 object Capture extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCFormFieldFoundation ()
   extends atMaterialFormDashFieldLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/form-field", "MDCFormFieldFoundation")
 @js.native
 object MDCFormFieldFoundation extends js.Object {

@@ -33,6 +33,7 @@ class FilterStream protected ()
   def predicate(value: js.Any, index: scala.Double, source: wonderDashFrpLib.distEs2015CoreStreamMod.Stream): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/FilterStream", "FilterStream")
 @js.native
 object FilterStream extends js.Object {

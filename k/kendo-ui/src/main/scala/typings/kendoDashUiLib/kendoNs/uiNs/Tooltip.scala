@@ -20,6 +20,7 @@ class Tooltip protected () extends Widget {
   def target(): kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Tooltip")
 @js.native
 object Tooltip extends js.Object {

@@ -14,6 +14,7 @@ class DoObserver protected ()
   var _prevObserver: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/observer/DoObserver", "DoObserver")
 @js.native
 object DoObserver extends js.Object {

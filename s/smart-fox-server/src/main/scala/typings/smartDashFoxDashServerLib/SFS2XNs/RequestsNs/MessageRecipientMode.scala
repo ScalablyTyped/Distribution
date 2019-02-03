@@ -20,6 +20,7 @@ class MessageRecipientMode protected () extends js.Object {
   var target: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("SFS2X.Requests.MessageRecipientMode")
 @js.native
 object MessageRecipientMode extends js.Object {

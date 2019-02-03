@@ -772,9 +772,7 @@ class AbstractMesh protected ()
   def updateIndices(indices: IndicesArray): AbstractMesh = js.native
 }
 
-/**
-  * Class used to store all common mesh properties
-  */
+/* static members */
 @JSGlobal("BABYLON.AbstractMesh")
 @js.native
 object AbstractMesh extends js.Object {

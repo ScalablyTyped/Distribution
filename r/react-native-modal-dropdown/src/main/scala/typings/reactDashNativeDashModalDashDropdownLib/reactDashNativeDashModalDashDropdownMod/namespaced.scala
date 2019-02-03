@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends reactDashNativeDashModalDashDropdownLib.reactDashNativeDashModalDashDropdownMod.RNModalDropdownNs.ModalDropdown
 
+/* static members */
 @JSImport("react-native-modal-dropdown", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

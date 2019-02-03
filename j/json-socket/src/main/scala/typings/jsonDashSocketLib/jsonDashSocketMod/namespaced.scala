@@ -11,6 +11,7 @@ class namespaced protected () extends JsonSocket {
   def this(socket: nodeLib.netMod.Socket) = this()
 }
 
+/* static members */
 @JSImport("json-socket", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

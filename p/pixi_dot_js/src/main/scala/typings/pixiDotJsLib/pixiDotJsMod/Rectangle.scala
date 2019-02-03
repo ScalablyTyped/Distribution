@@ -15,6 +15,7 @@ class Rectangle ()
   def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

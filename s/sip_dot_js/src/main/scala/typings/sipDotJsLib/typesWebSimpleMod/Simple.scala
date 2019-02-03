@@ -34,6 +34,7 @@ class Simple protected ()
   def unmute(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/Web/simple", "Simple")
 @js.native
 object Simple extends js.Object {

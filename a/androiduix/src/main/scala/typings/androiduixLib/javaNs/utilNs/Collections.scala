@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Collections () extends js.Object
 
+/* static members */
 @JSGlobal("java.util.Collections")
 @js.native
 object Collections extends js.Object {

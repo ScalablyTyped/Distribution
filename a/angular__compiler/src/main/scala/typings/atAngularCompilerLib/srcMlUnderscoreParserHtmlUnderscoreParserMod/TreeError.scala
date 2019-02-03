@@ -13,6 +13,7 @@ class TreeError protected ()
   def this(elementName: scala.Null, span: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan, msg: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/ml_parser/html_parser", "TreeError")
 @js.native
 object TreeError extends js.Object {

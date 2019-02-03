@@ -18,6 +18,7 @@ class MDCTabBarScroller ()
   def layout(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/tabs/tab-bar-scroller", "MDCTabBarScroller")
 @js.native
 object MDCTabBarScroller extends js.Object {

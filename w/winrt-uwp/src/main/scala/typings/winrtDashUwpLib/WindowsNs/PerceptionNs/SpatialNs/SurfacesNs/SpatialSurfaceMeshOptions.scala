@@ -14,6 +14,7 @@ abstract class SpatialSurfaceMeshOptions () extends js.Object {
    /* unmapped type */ var vertexPositionFormat: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceMeshOptions")
 @js.native
 object SpatialSurfaceMeshOptions extends js.Object {

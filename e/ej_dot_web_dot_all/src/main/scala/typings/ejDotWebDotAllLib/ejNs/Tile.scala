@@ -23,6 +23,7 @@ class Tile protected () extends Widget {
   def updateTemplate(id: java.lang.String, index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Tile")
 @js.native
 object Tile extends js.Object {

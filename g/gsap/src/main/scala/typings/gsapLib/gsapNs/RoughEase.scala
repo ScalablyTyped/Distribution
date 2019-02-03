@@ -13,6 +13,7 @@ class RoughEase protected () extends Ease {
   def config(steps: scala.Double): RoughEase = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.RoughEase")
 @js.native
 object RoughEase extends js.Object {

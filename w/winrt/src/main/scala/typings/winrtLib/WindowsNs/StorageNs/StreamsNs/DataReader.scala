@@ -16,6 +16,7 @@ class DataReader protected ()
   def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Storage.Streams.DataReader")
 @js.native
 object DataReader extends js.Object {

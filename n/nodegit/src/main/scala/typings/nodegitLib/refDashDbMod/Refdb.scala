@@ -12,6 +12,7 @@ class Refdb () extends js.Object {
   def free(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nodegit/ref-db", "Refdb")
 @js.native
 object Refdb extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Badge ()
   extends antdLib.libBadgeMod.default
 
+/* static members */
 @JSImport("antd", "Badge")
 @js.native
 object Badge extends js.Object {

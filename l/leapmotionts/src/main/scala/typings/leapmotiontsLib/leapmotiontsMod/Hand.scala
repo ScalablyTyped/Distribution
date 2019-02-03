@@ -35,6 +35,7 @@ class Hand () extends js.Object {
   def translation(sinceFrame: Frame): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Hand")
 @js.native
 object Hand extends js.Object {

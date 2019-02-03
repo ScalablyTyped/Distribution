@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class vec2 ()
   extends p2Lib.p2Mod.p2Ns.vec2
 
+/* static members */
 @JSImport("p2", "vec2")
 @js.native
 object vec2 extends js.Object {

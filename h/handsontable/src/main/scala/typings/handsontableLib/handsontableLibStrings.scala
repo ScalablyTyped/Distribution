@@ -210,73 +210,141 @@ object handsontableLibStrings {
   @js.native
   sealed trait trimRows extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def autoColumnSize: autoColumnSize = "autoColumnSize".asInstanceOf[autoColumnSize]
+  @scala.inline
   def autoRowSize: autoRowSize = "autoRowSize".asInstanceOf[autoRowSize]
+  @scala.inline
   def autofill: autofill = "autofill".asInstanceOf[autofill]
+  @scala.inline
   def begins_with: begins_with = "begins_with".asInstanceOf[begins_with]
+  @scala.inline
   def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def bindRowsWithHeaders: bindRowsWithHeaders = "bindRowsWithHeaders".asInstanceOf[bindRowsWithHeaders]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left-corner`: `bottom-left-corner` = "bottom-left-corner".asInstanceOf[`bottom-left-corner`]
+  @scala.inline
   def by_value: by_value = "by_value".asInstanceOf[by_value]
+  @scala.inline
   def collapsibleColumns: collapsibleColumns = "collapsibleColumns".asInstanceOf[collapsibleColumns]
+  @scala.inline
   def columnSorting: columnSorting = "columnSorting".asInstanceOf[columnSorting]
+  @scala.inline
   def columnSummary: columnSummary = "columnSummary".asInstanceOf[columnSummary]
+  @scala.inline
   def comments: comments = "comments".asInstanceOf[comments]
+  @scala.inline
   def conjunction: conjunction = "conjunction".asInstanceOf[conjunction]
+  @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
+  @scala.inline
   def contextMenu: contextMenu = "contextMenu".asInstanceOf[contextMenu]
+  @scala.inline
   def copyPaste: copyPaste = "copyPaste".asInstanceOf[copyPaste]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def disjunction: disjunction = "disjunction".asInstanceOf[disjunction]
+  @scala.inline
   def dragToScroll: dragToScroll = "dragToScroll".asInstanceOf[dragToScroll]
+  @scala.inline
   def dropdownMenu: dropdownMenu = "dropdownMenu".asInstanceOf[dropdownMenu]
+  @scala.inline
   def empty: empty = "empty".asInstanceOf[empty]
+  @scala.inline
   def ends_with: ends_with = "ends_with".asInstanceOf[ends_with]
+  @scala.inline
   def eq: eq = "eq".asInstanceOf[eq]
+  @scala.inline
   def exportFile: exportFile = "exportFile".asInstanceOf[exportFile]
+  @scala.inline
   def filters: filters = "filters".asInstanceOf[filters]
+  @scala.inline
   def formulas: formulas = "formulas".asInstanceOf[formulas]
+  @scala.inline
   def ganttChart: ganttChart = "ganttChart".asInstanceOf[ganttChart]
+  @scala.inline
   def gt: gt = "gt".asInstanceOf[gt]
+  @scala.inline
   def gte: gte = "gte".asInstanceOf[gte]
+  @scala.inline
   def headerTooltips: headerTooltips = "headerTooltips".asInstanceOf[headerTooltips]
+  @scala.inline
   def hiddenColumns: hiddenColumns = "hiddenColumns".asInstanceOf[hiddenColumns]
+  @scala.inline
   def hiddenRows: hiddenRows = "hiddenRows".asInstanceOf[hiddenRows]
+  @scala.inline
   def insert_col: insert_col = "insert_col".asInstanceOf[insert_col]
+  @scala.inline
   def insert_row: insert_row = "insert_row".asInstanceOf[insert_row]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def lt: lt = "lt".asInstanceOf[lt]
+  @scala.inline
   def lte: lte = "lte".asInstanceOf[lte]
+  @scala.inline
   def manualColumnFreeze: manualColumnFreeze = "manualColumnFreeze".asInstanceOf[manualColumnFreeze]
+  @scala.inline
   def manualColumnMove: manualColumnMove = "manualColumnMove".asInstanceOf[manualColumnMove]
+  @scala.inline
   def manualColumnResize: manualColumnResize = "manualColumnResize".asInstanceOf[manualColumnResize]
+  @scala.inline
   def manualRowMove: manualRowMove = "manualRowMove".asInstanceOf[manualRowMove]
+  @scala.inline
   def manualRowResize: manualRowResize = "manualRowResize".asInstanceOf[manualRowResize]
+  @scala.inline
   def mergeCells: mergeCells = "mergeCells".asInstanceOf[mergeCells]
+  @scala.inline
   def multiColumnSorting: multiColumnSorting = "multiColumnSorting".asInstanceOf[multiColumnSorting]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
+  @scala.inline
   def multipleSelectionHandles: multipleSelectionHandles = "multipleSelectionHandles".asInstanceOf[multipleSelectionHandles]
+  @scala.inline
   def neq: neq = "neq".asInstanceOf[neq]
+  @scala.inline
   def nestedHeaders: nestedHeaders = "nestedHeaders".asInstanceOf[nestedHeaders]
+  @scala.inline
   def nestedRows: nestedRows = "nestedRows".asInstanceOf[nestedRows]
+  @scala.inline
   def not_between: not_between = "not_between".asInstanceOf[not_between]
+  @scala.inline
   def not_contains: not_contains = "not_contains".asInstanceOf[not_contains]
+  @scala.inline
   def not_empty: not_empty = "not_empty".asInstanceOf[not_empty]
+  @scala.inline
   def observeChanges: observeChanges = "observeChanges".asInstanceOf[observeChanges]
+  @scala.inline
   def overwrite: overwrite = "overwrite".asInstanceOf[overwrite]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def remove_col: remove_col = "remove_col".asInstanceOf[remove_col]
+  @scala.inline
   def remove_row: remove_row = "remove_row".asInstanceOf[remove_row]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def shift_down: shift_down = "shift_down".asInstanceOf[shift_down]
+  @scala.inline
   def shift_right: shift_right = "shift_right".asInstanceOf[shift_right]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left-corner`: `top-left-corner` = "top-left-corner".asInstanceOf[`top-left-corner`]
+  @scala.inline
   def touchScroll: touchScroll = "touchScroll".asInstanceOf[touchScroll]
+  @scala.inline
   def trimRows: trimRows = "trimRows".asInstanceOf[trimRows]
 }
 

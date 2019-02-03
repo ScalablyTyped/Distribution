@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebAuthenticationCoreManager () extends js.Object
 
-/** Contains core methods for obtaining tokens from web account providers. */
+/* static members */
 @JSGlobal("Windows.Security.Authentication.Web.Core.WebAuthenticationCoreManager")
 @js.native
 object WebAuthenticationCoreManager extends js.Object {

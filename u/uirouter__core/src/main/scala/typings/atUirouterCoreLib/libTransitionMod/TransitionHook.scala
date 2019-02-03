@@ -12,6 +12,7 @@ class TransitionHook protected ()
   def this(transition: atUirouterCoreLib.libTransitionTransitionMod.Transition, stateContext: atUirouterCoreLib.libStateInterfaceMod.StateDeclaration, registeredHook: atUirouterCoreLib.libTransitionHookRegistryMod.RegisteredHook, options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionHookOptions) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/transition", "TransitionHook")
 @js.native
 object TransitionHook extends js.Object {

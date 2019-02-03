@@ -24,11 +24,7 @@ class RayHelper protected ()
   def this(ray: babylonjsLib.BABYLONNs.Ray) = this()
 }
 
-/**
-  * As raycast might be hard to debug, the RayHelper can help rendering the different rays
-  * in order to better appreciate the issue one might have.
-  * @see http://doc.babylonjs.com/babylon101/raycasts#debugging
-  */
+/* static members */
 @JSImport("babylonjs", "RayHelper")
 @js.native
 object RayHelper extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Toolkit ()
   extends stormDashReactDashDiagramsLib.distSrcToolkitMod.Toolkit
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/main", "Toolkit")
 @js.native
 object Toolkit extends js.Object {

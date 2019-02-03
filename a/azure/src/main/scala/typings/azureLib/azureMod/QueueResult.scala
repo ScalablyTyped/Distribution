@@ -16,6 +16,7 @@ class QueueResult () extends js.Object {
   def getPropertiesFromHeaders(headers: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "QueueResult")
 @js.native
 object QueueResult extends js.Object {

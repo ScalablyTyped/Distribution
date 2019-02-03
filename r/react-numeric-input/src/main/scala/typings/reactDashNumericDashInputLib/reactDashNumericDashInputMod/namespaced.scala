@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends NumericInput
 
+/* static members */
 @JSImport("react-numeric-input", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

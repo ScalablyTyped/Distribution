@@ -235,6 +235,7 @@ object errorsNs extends js.Object {
     override val message: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object StripeError extends js.Object {
     def populate(`type`: stripeLib.stripeMod.StripeNs.errorsNs.RawType): stripeLib.stripeMod.StripeNs.errorsNs.StripeError = js.native

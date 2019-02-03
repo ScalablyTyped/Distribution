@@ -12,6 +12,7 @@ class Menu protected ()
   def this(props: antdLib.libMenuMod.MenuProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Menu")
 @js.native
 object Menu extends js.Object {

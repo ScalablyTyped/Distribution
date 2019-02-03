@@ -60,6 +60,7 @@ class Fleet protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/fleet", "Fleet")
 @js.native
 object Fleet extends js.Object {

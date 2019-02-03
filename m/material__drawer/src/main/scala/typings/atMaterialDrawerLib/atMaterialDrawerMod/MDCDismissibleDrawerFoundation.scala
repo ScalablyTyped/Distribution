@@ -12,6 +12,7 @@ class MDCDismissibleDrawerFoundation protected ()
   def this(adapter: atMaterialDrawerLib.adapterMod.MDCDrawerAdapter) = this()
 }
 
+/* static members */
 @JSImport("@material/drawer", "MDCDismissibleDrawerFoundation")
 @js.native
 object MDCDismissibleDrawerFoundation extends js.Object {

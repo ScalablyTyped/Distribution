@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class InputNumber ()
   extends antdLib.libInputDashNumberMod.default
 
+/* static members */
 @JSImport("antd", "InputNumber")
 @js.native
 object InputNumber extends js.Object {

@@ -95,9 +95,7 @@ class ListLayout () extends js.Object {
   def uninitialize(): scala.Unit = js.native
 }
 
-/**
-  * Represents a layout for the ListView in which items are arranged in a vertical list.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ListLayout")
 @js.native
 object ListLayout extends js.Object {

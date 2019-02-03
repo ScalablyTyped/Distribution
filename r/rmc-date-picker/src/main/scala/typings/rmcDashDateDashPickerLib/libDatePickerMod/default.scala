@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends DatePicker
 
+/* static members */
 @JSImport("rmc-date-picker/lib/DatePicker", JSImport.Default)
 @js.native
 object default extends js.Object {

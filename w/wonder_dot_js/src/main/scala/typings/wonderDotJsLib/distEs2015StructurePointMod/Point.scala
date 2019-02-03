@@ -14,6 +14,7 @@ class Point () extends js.Object {
   var y: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/structure/Point", "Point")
 @js.native
 object Point extends js.Object {

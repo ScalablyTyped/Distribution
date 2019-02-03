@@ -29,6 +29,7 @@ class ElementBuffer ()
   ): this.type = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/buffer/ElementBuffer", "ElementBuffer")
 @js.native
 object ElementBuffer extends js.Object {

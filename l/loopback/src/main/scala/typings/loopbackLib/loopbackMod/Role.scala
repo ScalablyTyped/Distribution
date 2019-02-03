@@ -48,12 +48,7 @@ class Role ()
   ): scala.Unit = js.native
 }
 
-/**
-  * The Role model
-  * @class Role
-  * @inherits {PersistedModel}
-  * @header Role objec
-  */
+/* static members */
 @JSImport("loopback", "Role")
 @js.native
 object Role extends js.Object {

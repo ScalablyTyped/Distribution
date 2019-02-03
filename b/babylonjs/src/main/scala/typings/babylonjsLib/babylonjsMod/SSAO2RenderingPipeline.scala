@@ -23,9 +23,7 @@ class SSAO2RenderingPipeline protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, ratio: js.Any, cameras: js.Array[babylonjsLib.BABYLONNs.Camera]) = this()
 }
 
-/**
-  * Render pipeline to produce ssao effect
-  */
+/* static members */
 @JSImport("babylonjs", "SSAO2RenderingPipeline")
 @js.native
 object SSAO2RenderingPipeline extends js.Object {

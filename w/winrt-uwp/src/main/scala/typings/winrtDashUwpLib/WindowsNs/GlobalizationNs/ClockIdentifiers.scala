@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ClockIdentifiers () extends js.Object
 
-/** Contains the clock identifiers for the supported clocks, as static properties. */
+/* static members */
 @JSGlobal("Windows.Globalization.ClockIdentifiers")
 @js.native
 object ClockIdentifiers extends js.Object {

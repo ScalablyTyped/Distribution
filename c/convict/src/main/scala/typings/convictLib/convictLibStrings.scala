@@ -54,21 +54,37 @@ object convictLibStrings {
   @js.native
   sealed trait windows_named_pipe extends js.Object
   
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def InternalSchema: InternalSchema = "InternalSchema".asInstanceOf[InternalSchema]
+  @scala.inline
   def Overwrite: Overwrite = "Overwrite".asInstanceOf[Overwrite]
+  @scala.inline
   def Schema: Schema = "Schema".asInstanceOf[Schema]
+  @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
+  @scala.inline
   def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def int: int = "int".asInstanceOf[int]
+  @scala.inline
   def ipaddress: ipaddress = "ipaddress".asInstanceOf[ipaddress]
+  @scala.inline
   def nat: nat = "nat".asInstanceOf[nat]
+  @scala.inline
   def port: port = "port".asInstanceOf[port]
+  @scala.inline
   def port_or_windows_named_pipe: port_or_windows_named_pipe = "port_or_windows_named_pipe".asInstanceOf[port_or_windows_named_pipe]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
+  @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def windows_named_pipe: windows_named_pipe = "windows_named_pipe".asInstanceOf[windows_named_pipe]
 }
 

@@ -12,6 +12,7 @@ class ColorPickerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsColorPickerColorPickerDotTypesMod.IColorPickerProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ColorPicker", "ColorPickerBase")
 @js.native
 object ColorPickerBase extends js.Object {

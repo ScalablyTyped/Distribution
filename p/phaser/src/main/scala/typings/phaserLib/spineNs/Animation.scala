@@ -25,6 +25,7 @@ class Animation protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.Animation")
 @js.native
 object Animation extends js.Object {

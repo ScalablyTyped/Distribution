@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TemporalAdjusters ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalAdjusters
 
+/* static members */
 @JSImport("js-joda", "TemporalAdjusters")
 @js.native
 object TemporalAdjusters extends js.Object {

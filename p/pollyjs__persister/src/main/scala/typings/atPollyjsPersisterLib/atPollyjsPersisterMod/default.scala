@@ -12,6 +12,7 @@ class default () extends Persister {
   override def persist(): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("@pollyjs/persister", JSImport.Default)
 @js.native
 object default extends js.Object {

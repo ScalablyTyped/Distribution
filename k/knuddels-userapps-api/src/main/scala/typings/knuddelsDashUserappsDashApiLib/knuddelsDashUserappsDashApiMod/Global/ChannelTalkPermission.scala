@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChannelTalkPermission () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/ChannelTalkPermission.html
-	 */
+/* static members */
 @JSGlobal("ChannelTalkPermission")
 @js.native
 object ChannelTalkPermission extends js.Object {

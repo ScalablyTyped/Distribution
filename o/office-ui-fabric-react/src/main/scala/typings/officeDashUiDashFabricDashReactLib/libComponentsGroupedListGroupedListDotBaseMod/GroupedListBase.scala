@@ -41,6 +41,7 @@ class GroupedListBase protected ()
   override def forceUpdate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList.base", "GroupedListBase")
 @js.native
 object GroupedListBase extends js.Object {

@@ -9,6 +9,7 @@ object pouchdbDashAdapterDashFruitdownLibStrings {
   @js.native
   sealed trait fruitdown extends js.Object
   
+  @scala.inline
   def fruitdown: fruitdown = "fruitdown".asInstanceOf[fruitdown]
 }
 

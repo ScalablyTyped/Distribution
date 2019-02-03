@@ -30,10 +30,7 @@ class Stage[T /* <: js.Function */] protected ()
   def registerStep(index: scala.Double, component: ISceneComponent, action: T): scala.Unit = js.native
 }
 
-/**
-  * Repressentation of a stage in the scene (Basically a list of ordered steps)
-  * @hidden
-  */
+/* static members */
 @JSGlobal("BABYLON.Stage")
 @js.native
 object Stage extends js.Object {

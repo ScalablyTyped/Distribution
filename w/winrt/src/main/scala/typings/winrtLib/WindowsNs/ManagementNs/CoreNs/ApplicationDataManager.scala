@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApplicationDataManager () extends IApplicationDataManager
 
+/* static members */
 @JSGlobal("Windows.Management.Core.ApplicationDataManager")
 @js.native
 object ApplicationDataManager extends js.Object {

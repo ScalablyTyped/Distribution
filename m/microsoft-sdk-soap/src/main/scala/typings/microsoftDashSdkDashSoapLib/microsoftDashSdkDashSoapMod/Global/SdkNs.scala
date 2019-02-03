@@ -2928,6 +2928,7 @@ object SdkNs extends js.Object {
     type SecurityType = microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Append | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Inheritance | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.None | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.ParentChild | microsoftDashSdkDashSoapLib.microsoftDashSdkDashSoapLibStrings.Pointer
   }
   
+  /* static members */
   @js.native
   object Q extends js.Object {
     /**

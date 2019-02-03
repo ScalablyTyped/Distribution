@@ -42,17 +42,29 @@ object atFrctlFractalLibStrings {
   @js.native
   sealed trait version extends js.Object
   
+  @scala.inline
   def favicon: favicon = "favicon".asInstanceOf[favicon]
+  @scala.inline
   def format: format = "format".asInstanceOf[format]
+  @scala.inline
   def lang: lang = "lang".asInstanceOf[lang]
+  @scala.inline
   def nav: nav = "nav".asInstanceOf[nav]
+  @scala.inline
   def panels: panels = "panels".asInstanceOf[panels]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
   def scripts: scripts = "scripts".asInstanceOf[scripts]
+  @scala.inline
   def skin: skin = "skin".asInstanceOf[skin]
+  @scala.inline
   def static: static = "static".asInstanceOf[static]
+  @scala.inline
   def staticDOTmount: staticDOTmount = "static.mount".asInstanceOf[staticDOTmount]
+  @scala.inline
   def styles: styles = "styles".asInstanceOf[styles]
+  @scala.inline
   def version: version = "version".asInstanceOf[version]
 }
 

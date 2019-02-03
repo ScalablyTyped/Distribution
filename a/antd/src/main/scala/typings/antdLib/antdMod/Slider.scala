@@ -12,6 +12,7 @@ class Slider protected ()
   def this(props: antdLib.libSliderMod.SliderProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Slider")
 @js.native
 object Slider extends js.Object {

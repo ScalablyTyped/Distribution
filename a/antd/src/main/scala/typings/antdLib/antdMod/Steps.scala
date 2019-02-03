@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Steps ()
   extends antdLib.libStepsMod.default
 
+/* static members */
 @JSImport("antd", "Steps")
 @js.native
 object Steps extends js.Object {

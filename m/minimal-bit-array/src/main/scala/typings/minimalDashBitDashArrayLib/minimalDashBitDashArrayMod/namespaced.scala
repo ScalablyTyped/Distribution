@@ -21,6 +21,7 @@ class namespaced protected () extends BitArray {
   override def toJSON(): minimalDashBitDashArrayLib.minimalDashBitDashArrayMod.BitArrayNs.BitArrayJSON = js.native
 }
 
+/* static members */
 @JSImport("minimal-bit-array", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Polygon () extends js.Object
 
-/**
-  * Polygon
-  * @see https://doc.babylonjs.com/how_to/parametric_shapes#non-regular-polygon
-  */
+/* static members */
 @JSGlobal("BABYLON.Polygon")
 @js.native
 object Polygon extends js.Object {

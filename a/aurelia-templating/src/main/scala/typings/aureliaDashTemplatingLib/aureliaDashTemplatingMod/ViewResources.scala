@@ -123,6 +123,7 @@ class ViewResources () extends js.Object {
   def relativeToView(path: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "ViewResources")
 @js.native
 object ViewResources extends js.Object {

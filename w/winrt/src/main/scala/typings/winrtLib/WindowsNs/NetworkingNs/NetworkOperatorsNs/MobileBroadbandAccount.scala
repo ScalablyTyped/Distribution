@@ -20,6 +20,7 @@ class MobileBroadbandAccount () extends IMobileBroadbandAccount {
   override var serviceProviderName: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
 @js.native
 object MobileBroadbandAccount extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MenuItem ()
   extends atBlueprintjsCoreLib.libEsmComponentsMenuMenuItemMod.MenuItem
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "MenuItem")
 @js.native
 object MenuItem extends js.Object {

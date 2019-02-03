@@ -18,6 +18,7 @@ class FloatingActionButton ()
   override def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.FloatingActionButton")
 @js.native
 object FloatingActionButton extends js.Object {

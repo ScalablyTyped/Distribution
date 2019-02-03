@@ -33,14 +33,23 @@ object juiDashGridLibStrings {
   @js.native
   sealed trait sum extends js.Object
   
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def fold: fold = "fold".asInstanceOf[fold]
+  @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
   def show: show = "show".asInstanceOf[show]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
 }
 

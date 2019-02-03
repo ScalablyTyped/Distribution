@@ -27,6 +27,7 @@ class Command protected () extends ICommand {
   override def execute(): angularLib.angularMod.angularNs.IPromise[_] = js.native
 }
 
+/* static members */
 @JSGlobal("ngCommand.Command")
 @js.native
 object Command extends js.Object {

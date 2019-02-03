@@ -8,6 +8,21 @@ import scala.scalajs.js.annotation._
 @js.native
 trait InternalCollectionObserver extends js.Object {
   /**
+    * This will flush the change records of this observer and call any subscribers if applicable.
+    */
+  def flushChangeRecords(): scala.Unit = js.native
+  /**
+    * Get a length observer for this collection.
+    */
+  def getLengthObserver(): js.Any = js.native
+  /**
+    * Reset the observer to the passed collection and call any subscribers with changes between the current collection and the reset collection.
+    * @param oldCollection 
+    */
+  def reset(oldCollection: js.Array[_]): scala.Unit = js.native
+  def reset(oldCollection: stdLib.Map[_, _]): scala.Unit = js.native
+  def reset(oldCollection: stdLib.Set[_]): scala.Unit = js.native
+  /**
     * Subscribe to collection mutation events with a callback function.
     */
   def subscribe(callback: js.Function1[/* changeRecords */ js.Any, scala.Unit]): scala.Unit = js.native

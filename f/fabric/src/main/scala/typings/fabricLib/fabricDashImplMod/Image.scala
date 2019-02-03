@@ -99,6 +99,7 @@ class Image protected () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Image")
 @js.native
 object Image extends js.Object {

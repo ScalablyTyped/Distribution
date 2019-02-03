@@ -17,6 +17,7 @@ class ResourceError protected ()
   var resource: js.UndefOr[atPulumiPulumiLib.resourceMod.Resource] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi/errors", "ResourceError")
 @js.native
 object ResourceError extends js.Object {

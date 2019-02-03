@@ -33,14 +33,23 @@ object bootstrapDashGrowlDashIfightcrimeLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

@@ -12,6 +12,7 @@ class MethodSignatureSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, questionToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "MethodSignatureSyntax")
 @js.native
 object MethodSignatureSyntax extends js.Object {

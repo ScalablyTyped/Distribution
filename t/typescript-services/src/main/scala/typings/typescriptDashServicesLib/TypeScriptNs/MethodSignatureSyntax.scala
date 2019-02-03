@@ -19,6 +19,7 @@ class MethodSignatureSyntax protected () extends SyntaxNode {
   def withQuestionToken(questionToken: ISyntaxToken): MethodSignatureSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.MethodSignatureSyntax")
 @js.native
 object MethodSignatureSyntax extends js.Object {

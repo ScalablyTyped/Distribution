@@ -20,6 +20,7 @@ class VaultLock protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glacierVaultLockMod.VaultLockArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glacier", "VaultLock")
 @js.native
 object VaultLock extends js.Object {

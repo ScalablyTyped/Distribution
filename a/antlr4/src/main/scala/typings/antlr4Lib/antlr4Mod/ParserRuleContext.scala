@@ -12,6 +12,7 @@ class ParserRuleContext protected ()
   def this(parent: js.Any, invokingState: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("antlr4", "ParserRuleContext")
 @js.native
 object ParserRuleContext extends js.Object {

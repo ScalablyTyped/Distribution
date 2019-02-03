@@ -81,6 +81,7 @@ class DrawerLayout protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.support.v4.widget.DrawerLayout")
 @js.native
 object DrawerLayout extends js.Object {

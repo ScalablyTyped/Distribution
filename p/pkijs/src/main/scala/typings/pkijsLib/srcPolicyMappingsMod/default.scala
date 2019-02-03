@@ -19,6 +19,7 @@ class default () extends PolicyMappings {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PolicyMappings", JSImport.Default)
 @js.native
 object default extends js.Object {

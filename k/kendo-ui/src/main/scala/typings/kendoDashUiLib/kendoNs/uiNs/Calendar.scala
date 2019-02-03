@@ -32,6 +32,7 @@ class Calendar protected () extends Widget {
   def view(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Calendar")
 @js.native
 object Calendar extends js.Object {

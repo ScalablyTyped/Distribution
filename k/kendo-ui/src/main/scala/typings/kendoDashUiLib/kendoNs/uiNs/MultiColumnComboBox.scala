@@ -40,6 +40,7 @@ class MultiColumnComboBox protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.MultiColumnComboBox")
 @js.native
 object MultiColumnComboBox extends js.Object {

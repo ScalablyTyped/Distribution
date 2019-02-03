@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TwitterAuthProvider () extends TwitterAuthProvider_Instance
 
+/* static members */
 @JSImport("@firebase/auth-types", "TwitterAuthProvider")
 @js.native
 object TwitterAuthProvider extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Fetch ()
   extends nodegitLib.fetchMod.Fetch
 
+/* static members */
 @JSImport("nodegit", "Fetch")
 @js.native
 object Fetch extends js.Object {

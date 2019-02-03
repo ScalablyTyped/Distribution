@@ -48,7 +48,7 @@ abstract class PhotoImportSource () extends js.Object {
   def createImportSession(): PhotoImportSession = js.native
 }
 
-/** Represents the source device for a photo import session. */
+/* static members */
 @JSGlobal("Windows.Media.Import.PhotoImportSource")
 @js.native
 object PhotoImportSource extends js.Object {

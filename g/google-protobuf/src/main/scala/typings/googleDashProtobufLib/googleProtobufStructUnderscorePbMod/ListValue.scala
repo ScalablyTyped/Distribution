@@ -18,6 +18,7 @@ class ListValue ()
   def toJavaScript(): js.Array[JavaScriptValue] = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/struct_pb", "ListValue")
 @js.native
 object ListValue extends js.Object {

@@ -12,6 +12,7 @@ class ComponentManager protected ()
   def this(entityObject: wonderDotJsLib.distEs2015CoreEntityObjectEntityObjectMod.EntityObject) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ComponentManager")
 @js.native
 object ComponentManager extends js.Object {

@@ -19,6 +19,7 @@ class Repository protected () extends js.Object {
   def getGitHubURL(fileName: java.lang.String): js.UndefOr[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins/GitHubPlugin", "Repository")
 @js.native
 object Repository extends js.Object {

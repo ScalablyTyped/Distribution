@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BackgroundExecutionManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundExecutionManager")
 @js.native
 object BackgroundExecutionManager extends js.Object {

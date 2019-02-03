@@ -15,8 +15,11 @@ object atStorybookAddonDashViewportLibStrings {
   @js.native
   sealed trait tablet extends js.Object
   
+  @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
+  @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
+  @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
 }
 

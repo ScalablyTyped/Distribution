@@ -123,6 +123,7 @@ class ViewRootImpl () extends ViewParent {
   /* private */ def unscheduleTraversals(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ViewRootImpl")
 @js.native
 object ViewRootImpl extends js.Object {

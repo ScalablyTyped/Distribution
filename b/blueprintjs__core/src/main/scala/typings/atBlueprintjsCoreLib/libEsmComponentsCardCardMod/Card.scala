@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Card ()
   extends reactLib.reactMod.PureComponent[ICardProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/card/card", "Card")
 @js.native
 object Card extends js.Object {

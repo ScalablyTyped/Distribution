@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Dropdown ()
   extends materializeDashCssLib.MNs.Dropdown
 
+/* static members */
 @JSImport("materialize-css", "Dropdown")
 @js.native
 object Dropdown extends js.Object {

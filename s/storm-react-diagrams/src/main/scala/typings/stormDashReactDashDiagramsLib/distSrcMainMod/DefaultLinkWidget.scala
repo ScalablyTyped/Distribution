@@ -12,6 +12,7 @@ class DefaultLinkWidget protected ()
   def this(props: stormDashReactDashDiagramsLib.distSrcDefaultsWidgetsDefaultLinkWidgetMod.DefaultLinkProps) = this()
 }
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/main", "DefaultLinkWidget")
 @js.native
 object DefaultLinkWidget extends js.Object {

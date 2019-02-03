@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AnalyticsUsageEntry ()
   extends sharepointLib.SPNs.ClientObject
 
+/* static members */
 @JSGlobal("SP.Analytics.AnalyticsUsageEntry")
 @js.native
 object AnalyticsUsageEntry extends js.Object {

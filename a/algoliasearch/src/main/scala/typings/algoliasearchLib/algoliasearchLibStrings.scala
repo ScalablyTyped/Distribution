@@ -138,49 +138,93 @@ object algoliasearchLibStrings {
   @js.native
   sealed trait word extends js.Object
   
+  @scala.inline
   def IndexSettings: IndexSettings = "IndexSettings".asInstanceOf[IndexSettings]
+  @scala.inline
   def addObject: addObject = "addObject".asInstanceOf[addObject]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
+  @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
+  @scala.inline
   def attributesToHighlight: attributesToHighlight = "attributesToHighlight".asInstanceOf[attributesToHighlight]
+  @scala.inline
   def attributesToSnippet: attributesToSnippet = "attributesToSnippet".asInstanceOf[attributesToSnippet]
+  @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
+  @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def deleteObject: deleteObject = "deleteObject".asInstanceOf[deleteObject]
+  @scala.inline
   def distinct: distinct = "distinct".asInstanceOf[distinct]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def endsWith: endsWith = "endsWith".asInstanceOf[endsWith]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def facets: facets = "facets".asInstanceOf[facets]
+  @scala.inline
   def firstWords: firstWords = "firstWords".asInstanceOf[firstWords]
+  @scala.inline
   def getRankingInfo: getRankingInfo = "getRankingInfo".asInstanceOf[getRankingInfo]
+  @scala.inline
   def ignorePlurals: ignorePlurals = "ignorePlurals".asInstanceOf[ignorePlurals]
+  @scala.inline
   def is: is = "is".asInstanceOf[is]
+  @scala.inline
   def lastWords: lastWords = "lastWords".asInstanceOf[lastWords]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
   def multiWordsSynonym: multiWordsSynonym = "multiWordsSynonym".asInstanceOf[multiWordsSynonym]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def notPublished: notPublished = "notPublished".asInstanceOf[notPublished]
+  @scala.inline
   def oneWaySynonym: oneWaySynonym = "oneWaySynonym".asInstanceOf[oneWaySynonym]
+  @scala.inline
   def partialUpdateObject: partialUpdateObject = "partialUpdateObject".asInstanceOf[partialUpdateObject]
+  @scala.inline
   def partialUpdateObjectNoCreate: partialUpdateObjectNoCreate = "partialUpdateObjectNoCreate".asInstanceOf[partialUpdateObjectNoCreate]
+  @scala.inline
   def prefixAll: prefixAll = "prefixAll".asInstanceOf[prefixAll]
+  @scala.inline
   def prefixLast: prefixLast = "prefixLast".asInstanceOf[prefixLast]
+  @scala.inline
   def prefixNone: prefixNone = "prefixNone".asInstanceOf[prefixNone]
+  @scala.inline
   def published: published = "published".asInstanceOf[published]
+  @scala.inline
   def result: result = "result".asInstanceOf[result]
+  @scala.inline
   def rules: rules = "rules".asInstanceOf[rules]
+  @scala.inline
   def settings: settings = "settings".asInstanceOf[settings]
+  @scala.inline
   def singleWordSynonym: singleWordSynonym = "singleWordSynonym".asInstanceOf[singleWordSynonym]
+  @scala.inline
   def startsWith: startsWith = "startsWith".asInstanceOf[startsWith]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
   def synonym: synonym = "synonym".asInstanceOf[synonym]
+  @scala.inline
   def synonyms: synonyms = "synonyms".asInstanceOf[synonyms]
+  @scala.inline
   def typoTolerance: typoTolerance = "typoTolerance".asInstanceOf[typoTolerance]
+  @scala.inline
   def updateObject: updateObject = "updateObject".asInstanceOf[updateObject]
+  @scala.inline
   def word: word = "word".asInstanceOf[word]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Methods ()
   extends typesettableLib.buildSrcUtilsMod.Methods
 
+/* static members */
 @JSImport("typesettable", "Methods")
 @js.native
 object Methods extends js.Object {

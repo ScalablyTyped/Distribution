@@ -13,6 +13,7 @@ class IgnoreElementsObserver protected ()
   var _currentObserver: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/IgnoreElementsObserver", "IgnoreElementsObserver")
 @js.native
 object IgnoreElementsObserver extends js.Object {

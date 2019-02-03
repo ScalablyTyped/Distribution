@@ -49,7 +49,7 @@ abstract class Package () extends js.Object {
   def launch(parameters: java.lang.String): scala.Unit = js.native
 }
 
-/** Provides information about a package. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Package")
 @js.native
 object Package extends js.Object {

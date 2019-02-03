@@ -13,7 +13,9 @@ import scala.scalajs.js.annotation._
 trait Schema[T]
   extends nodeLib.eventsMod.EventEmitter {
   /** Object of currently defined methods on this schema. */
-  var methods: mongooseLib.mongooseLibStrings.Schema with T = js.native
+  var methods: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ F in keyof T ]: T[F]}
+    */ mongooseLib.mongooseLibStrings.Schema with T = js.native
   /** The original object passed to the schema constructor */
   var obj: js.Any = js.native
   /** Object of currently defined query helpers on this schema. */
@@ -49,7 +51,11 @@ trait Schema[T]
     * instance methods to schema virtuals, statics, and methods.
     */
   def loadClass(model: js.Function): this.type = js.native
-  def method(methodObj: mongooseLib.mongooseLibStrings.Schema with T): this.type = js.native
+  def method(
+    methodObj: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ F in keyof T ]: T[F]}
+    */ mongooseLib.mongooseLibStrings.Schema with T
+  ): this.type = js.native
   /**
     * Adds an instance method to documents constructed from Models compiled from this schema.
     * If a hash of name/fn pairs is passed as the only argument, each name/fn pair will be added as methods.

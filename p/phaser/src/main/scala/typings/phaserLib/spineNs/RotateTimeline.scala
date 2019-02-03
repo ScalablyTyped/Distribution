@@ -14,6 +14,7 @@ class RotateTimeline protected () extends CurveTimeline {
   def setFrame(frameIndex: scala.Double, time: scala.Double, degrees: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.RotateTimeline")
 @js.native
 object RotateTimeline extends js.Object {

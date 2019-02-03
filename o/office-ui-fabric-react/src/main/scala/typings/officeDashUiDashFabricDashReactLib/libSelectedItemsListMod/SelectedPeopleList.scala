@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SelectedPeopleList ()
   extends officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListMod.SelectedPeopleList
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/SelectedItemsList", "SelectedPeopleList")
 @js.native
 object SelectedPeopleList extends js.Object {

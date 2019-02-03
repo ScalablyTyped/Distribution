@@ -9,6 +9,7 @@ object jsonDashSchemaDashRefDashParserLibStrings {
   @js.native
   sealed trait ignore extends js.Object
   
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
 }
 

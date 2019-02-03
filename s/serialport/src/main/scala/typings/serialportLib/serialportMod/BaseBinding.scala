@@ -13,7 +13,7 @@ class BaseBinding protected ()
   def this(options: js.Any) = this()
 }
 
-// Binding Type Def
+/* static members */
 @JSImport("serialport", "BaseBinding")
 @js.native
 object BaseBinding extends js.Object {

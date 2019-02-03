@@ -32,6 +32,7 @@ class SmsTextMessage () extends ISmsTextMessage {
   override def toBinaryMessages(format: SmsDataFormat): winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsBinaryMessage] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sms.SmsTextMessage")
 @js.native
 object SmsTextMessage extends js.Object {

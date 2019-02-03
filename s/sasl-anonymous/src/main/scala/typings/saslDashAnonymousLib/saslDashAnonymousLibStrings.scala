@@ -9,6 +9,7 @@ object saslDashAnonymousLibStrings {
   @js.native
   sealed trait ANONYMOUS extends js.Object
   
+  @scala.inline
   def ANONYMOUS: ANONYMOUS = "ANONYMOUS".asInstanceOf[ANONYMOUS]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class KeyboardEvent ()
   extends wonderDotJsLib.distEs2015EventObjectKeyboardEventMod.KeyboardEvent
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "KeyboardEvent")
 @js.native
 object KeyboardEvent extends js.Object {

@@ -20,6 +20,7 @@ class IdentityPoolRoleAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "IdentityPoolRoleAttachment")
 @js.native
 object IdentityPoolRoleAttachment extends js.Object {

@@ -15,6 +15,7 @@ class Shared protected () extends js.Object {
   def getTag(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Polygon.Shared")
 @js.native
 object Shared extends js.Object {

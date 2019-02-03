@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Scatter[X, Y] ()
   extends plottableLib.buildSrcPlotsScatterPlotMod.Scatter[X, Y]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Scatter")
 @js.native
 object Scatter extends js.Object {

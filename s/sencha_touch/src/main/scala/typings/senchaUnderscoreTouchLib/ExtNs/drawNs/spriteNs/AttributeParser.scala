@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AttributeParser () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.sprite.AttributeParser")
 @js.native
 object AttributeParser extends js.Object {

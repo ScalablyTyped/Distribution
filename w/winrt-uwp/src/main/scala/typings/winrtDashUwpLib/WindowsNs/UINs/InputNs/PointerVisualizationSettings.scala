@@ -15,7 +15,7 @@ abstract class PointerVisualizationSettings () extends js.Object {
   var isContactFeedbackEnabled: scala.Boolean = js.native
 }
 
-/** Provides access to the visual feedback settings for pointer input. */
+/* static members */
 @JSGlobal("Windows.UI.Input.PointerVisualizationSettings")
 @js.native
 object PointerVisualizationSettings extends js.Object {

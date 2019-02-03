@@ -141,6 +141,7 @@ class ListView protected () extends Widget {
   def unCheckItem(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ListView")
 @js.native
 object ListView extends js.Object {

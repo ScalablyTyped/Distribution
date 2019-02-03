@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PowerManager () extends js.Object
 
-/** Provides access to information about a device's battery and power supply status. */
+/* static members */
 @JSGlobal("Windows.System.Power.PowerManager")
 @js.native
 object PowerManager extends js.Object {

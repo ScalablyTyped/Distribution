@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class HtmlFormatHelper () extends js.Object
 
-/** Responsible for formatting HTML content that you want to share or add to the Clipboard. Also allows you to get HTML fragments from the content. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.HtmlFormatHelper")
 @js.native
 object HtmlFormatHelper extends js.Object {

@@ -11,6 +11,7 @@ class namespaced () extends Context {
   def this(packageJsonPath: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("applicationinsights/out/Library/Context", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

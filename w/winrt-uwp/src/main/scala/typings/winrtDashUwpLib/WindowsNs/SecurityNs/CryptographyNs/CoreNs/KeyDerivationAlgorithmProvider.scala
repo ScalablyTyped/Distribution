@@ -19,7 +19,7 @@ abstract class KeyDerivationAlgorithmProvider () extends js.Object {
   def createKey(keyMaterial: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
-/** Represents a key derivation algorithm provider. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmProvider")
 @js.native
 object KeyDerivationAlgorithmProvider extends js.Object {

@@ -22,7 +22,7 @@ class namespaced protected () extends Tether {
   override def setOptions(options: tetherLib.tetherMod.TetherNs.ITetherOptions): scala.Unit = js.native
 }
 
-// global Tether constructor
+/* static members */
 @JSImport("tether", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

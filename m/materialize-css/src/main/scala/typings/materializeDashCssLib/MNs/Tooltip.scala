@@ -22,6 +22,7 @@ class Tooltip ()
   override def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Tooltip")
 @js.native
 object Tooltip extends js.Object {

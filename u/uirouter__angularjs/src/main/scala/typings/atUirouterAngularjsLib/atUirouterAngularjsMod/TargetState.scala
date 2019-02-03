@@ -28,6 +28,7 @@ class TargetState protected ()
   def this(_stateRegistry: atUirouterCoreLib.libStateStateRegistryMod.StateRegistry, _identifier: atUirouterCoreLib.libStateInterfaceMod.StateOrName, _params: atUirouterCoreLib.libParamsInterfaceMod.RawParams, _options: atUirouterCoreLib.libTransitionInterfaceMod.TransitionOptions) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/angularjs", "TargetState")
 @js.native
 object TargetState extends js.Object {

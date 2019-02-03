@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class TzDatabase protected ()
   extends timezonecompleteLib.distLibTzDashDatabaseMod.TzDatabase
 
+/* static members */
 @JSImport("timezonecomplete", "TzDatabase")
 @js.native
 object TzDatabase extends js.Object {

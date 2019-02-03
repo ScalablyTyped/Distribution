@@ -12,6 +12,7 @@ class PullTypeReferenceSymbol protected ()
   def this(referencedTypeSymbol: typescriptDashServicesLib.TypeScriptNs.PullTypeSymbol) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "PullTypeReferenceSymbol")
 @js.native
 object PullTypeReferenceSymbol extends js.Object {

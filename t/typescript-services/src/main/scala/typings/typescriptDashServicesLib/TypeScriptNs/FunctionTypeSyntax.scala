@@ -27,6 +27,7 @@ class FunctionTypeSyntax protected () extends SyntaxNode {
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): FunctionTypeSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.FunctionTypeSyntax")
 @js.native
 object FunctionTypeSyntax extends js.Object {

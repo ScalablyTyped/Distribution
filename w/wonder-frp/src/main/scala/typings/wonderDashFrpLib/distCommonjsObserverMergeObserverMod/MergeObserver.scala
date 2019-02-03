@@ -20,6 +20,7 @@ class MergeObserver protected ()
   def handleSubscribe(innerSource: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/observer/MergeObserver", "MergeObserver")
 @js.native
 object MergeObserver extends js.Object {

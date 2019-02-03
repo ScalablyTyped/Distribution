@@ -20,6 +20,7 @@ class ServerCertificate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamServerCertificateMod.ServerCertificateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "ServerCertificate")
 @js.native
 object ServerCertificate extends js.Object {

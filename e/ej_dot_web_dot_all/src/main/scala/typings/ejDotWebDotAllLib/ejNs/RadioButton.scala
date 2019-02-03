@@ -25,6 +25,7 @@ class RadioButton protected () extends Widget {
   def enable(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.RadioButton")
 @js.native
 object RadioButton extends js.Object {

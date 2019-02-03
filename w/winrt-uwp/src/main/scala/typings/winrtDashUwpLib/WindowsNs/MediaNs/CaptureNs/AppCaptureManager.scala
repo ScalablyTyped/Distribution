@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppCaptureManager () extends js.Object
 
-/** Provides access to app capture settings. */
+/* static members */
 @JSGlobal("Windows.Media.Capture.AppCaptureManager")
 @js.native
 object AppCaptureManager extends js.Object {

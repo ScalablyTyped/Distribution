@@ -270,6 +270,7 @@ class IText protected () extends Text {
   def shiftLineStyles(lineIndex: scala.Double, offset: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "IText")
 @js.native
 object IText extends js.Object {

@@ -18,6 +18,7 @@ class ExtrudeGeometry protected () extends Geometry {
   def addShapeList(shapes: js.Array[Shape], options: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "ExtrudeGeometry")
 @js.native
 object ExtrudeGeometry extends js.Object {

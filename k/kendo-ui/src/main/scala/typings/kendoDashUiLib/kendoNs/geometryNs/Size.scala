@@ -19,6 +19,7 @@ class Size ()
   def setWidth(value: scala.Double): Size = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.geometry.Size")
 @js.native
 object Size extends js.Object {

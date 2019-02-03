@@ -33,6 +33,7 @@ class Pin protected () extends js.Object {
   def write(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("johnny-five", "Pin")
 @js.native
 object Pin extends js.Object {

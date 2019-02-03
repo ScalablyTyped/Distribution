@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Functions () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.Functions")
 @js.native
 object Functions extends js.Object {

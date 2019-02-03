@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MousePointEvent ()
   extends wonderDotJsLib.distEs2015EventObjectMousePointEventMod.MousePointEvent
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "MousePointEvent")
 @js.native
 object MousePointEvent extends js.Object {

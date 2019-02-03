@@ -21,6 +21,7 @@ class ProjectPolicy protected ()
   def set_emailSubject(value: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.InformationPolicy.ProjectPolicy")
 @js.native
 object ProjectPolicy extends js.Object {

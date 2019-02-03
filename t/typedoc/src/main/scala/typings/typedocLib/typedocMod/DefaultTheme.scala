@@ -12,6 +12,7 @@ class DefaultTheme protected ()
   def this(renderer: typedocLib.distLibOutputRendererMod.Renderer, basePath: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("typedoc", "DefaultTheme")
 @js.native
 object DefaultTheme extends js.Object {

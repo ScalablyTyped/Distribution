@@ -424,9 +424,7 @@ object UtilitiesNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UtilitiesNs.Key with java.lang.String] = js.native
   }
   
-  /**
-    * Represents the result of a query selector, and provides various operations that perform actions over the elements of the collection.
-    **/
+  /* static members */
   @js.native
   object QueryCollection extends js.Object {
     //#endregion Methods

@@ -12,7 +12,9 @@ object rcDashTreeLibStrings {
   @js.native
   sealed trait select extends js.Object
   
+  @scala.inline
   def check: check = "check".asInstanceOf[check]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
 }
 

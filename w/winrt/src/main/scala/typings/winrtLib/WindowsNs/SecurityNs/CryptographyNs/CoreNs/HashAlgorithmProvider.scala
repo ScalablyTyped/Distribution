@@ -18,6 +18,7 @@ class HashAlgorithmProvider () extends IHashAlgorithmProvider {
   override def hashData(data: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.HashAlgorithmProvider")
 @js.native
 object HashAlgorithmProvider extends js.Object {

@@ -69,6 +69,7 @@ class EventTarget protected ()
   val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/eventTarget", "EventTarget")
 @js.native
 object EventTarget extends js.Object {

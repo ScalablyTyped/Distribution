@@ -20,6 +20,7 @@ class LayerVersion protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lambdaLayerVersionMod.LayerVersionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda", "LayerVersion")
 @js.native
 object LayerVersion extends js.Object {

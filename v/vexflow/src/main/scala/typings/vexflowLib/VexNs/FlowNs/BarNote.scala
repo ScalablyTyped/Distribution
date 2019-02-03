@@ -14,6 +14,7 @@ class BarNote () extends Note {
   def setType(`type`: vexflowLib.VexNs.FlowNs.BarlineNs.`type`): BarNote = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.BarNote")
 @js.native
 object BarNote extends js.Object {

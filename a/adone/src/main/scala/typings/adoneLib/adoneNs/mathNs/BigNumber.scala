@@ -220,9 +220,7 @@ class BigNumber protected () extends js.Object {
   def xor(n: scala.Double): BigNumber = js.native
 }
 
-/**
-  * Represents a number of arbitrary precision
-  */
+/* static members */
 @JSGlobal("adone.math.BigNumber")
 @js.native
 object BigNumber extends js.Object {

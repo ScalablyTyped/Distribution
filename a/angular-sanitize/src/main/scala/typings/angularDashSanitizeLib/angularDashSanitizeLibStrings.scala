@@ -9,6 +9,7 @@ object angularDashSanitizeLibStrings {
   @js.native
   sealed trait linky extends js.Object
   
+  @scala.inline
   def linky: linky = "linky".asInstanceOf[linky]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MultiValueRemove[OptionType] ()
   extends reactLib.reactMod.Component[MultiValueRemoveProps[OptionType], js.Object, js.Any]
 
+/* static members */
 @JSImport("react-select/lib/components/MultiValue", "MultiValueRemove")
 @js.native
 object MultiValueRemove extends js.Object {

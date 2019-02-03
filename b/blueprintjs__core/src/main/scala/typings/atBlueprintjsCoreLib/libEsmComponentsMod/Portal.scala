@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Portal ()
   extends atBlueprintjsCoreLib.libEsmComponentsPortalPortalMod.Portal
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Portal")
 @js.native
 object Portal extends js.Object {

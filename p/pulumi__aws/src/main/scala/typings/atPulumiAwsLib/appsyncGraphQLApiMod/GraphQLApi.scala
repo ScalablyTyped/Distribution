@@ -48,6 +48,7 @@ class GraphQLApi protected ()
   val userPoolConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AppIdClientRegex]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi")
 @js.native
 object GraphQLApi extends js.Object {

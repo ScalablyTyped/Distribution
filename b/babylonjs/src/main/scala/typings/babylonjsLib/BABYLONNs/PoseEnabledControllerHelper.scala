@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PoseEnabledControllerHelper () extends js.Object
 
-/**
-  * Defines the PoseEnabledControllerHelper object that is used initialize a gamepad as the controller type it is specified as (eg. windows mixed reality controller)
-  */
+/* static members */
 @JSGlobal("BABYLON.PoseEnabledControllerHelper")
 @js.native
 object PoseEnabledControllerHelper extends js.Object {

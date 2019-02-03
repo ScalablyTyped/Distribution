@@ -67,10 +67,7 @@ class SphereGeometry protected () extends _PrimitiveGeometry {
   var side: scala.Double = js.native
 }
 
-/**
-  * Creates a sphere geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#sphere
-  */
+/* static members */
 @JSGlobal("BABYLON.SphereGeometry")
 @js.native
 object SphereGeometry extends js.Object {

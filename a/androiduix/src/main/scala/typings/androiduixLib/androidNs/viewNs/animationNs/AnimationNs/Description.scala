@@ -12,6 +12,7 @@ class Description () extends js.Object {
   var value: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.Animation.Description")
 @js.native
 object Description extends js.Object {

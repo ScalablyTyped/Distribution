@@ -21,6 +21,7 @@ class Account protected ()
   def this(name: java.lang.String, args: AccountArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/securityhub/account", "Account")
 @js.native
 object Account extends js.Object {

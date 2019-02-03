@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GlobalSettings () extends js.Object
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/GlobalSettings", "GlobalSettings")
 @js.native
 object GlobalSettings extends js.Object {

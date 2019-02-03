@@ -9,6 +9,7 @@ object hexoDashUtilLibStrings {
   @js.native
   sealed trait Empty extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
 }
 

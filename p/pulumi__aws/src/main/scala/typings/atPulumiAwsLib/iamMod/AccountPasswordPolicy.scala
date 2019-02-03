@@ -21,6 +21,7 @@ class AccountPasswordPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamAccountPasswordPolicyMod.AccountPasswordPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "AccountPasswordPolicy")
 @js.native
 object AccountPasswordPolicy extends js.Object {

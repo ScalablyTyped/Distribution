@@ -37,6 +37,7 @@ class SecurityConfiguration protected ()
   val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/emr/securityConfiguration", "SecurityConfiguration")
 @js.native
 object SecurityConfiguration extends js.Object {

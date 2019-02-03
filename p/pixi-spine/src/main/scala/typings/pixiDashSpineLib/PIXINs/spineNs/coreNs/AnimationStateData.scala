@@ -18,6 +18,7 @@ class AnimationStateData protected () extends js.Object {
   def setMixWith(from: Animation, to: Animation, duration: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.AnimationStateData")
 @js.native
 object AnimationStateData extends js.Object {

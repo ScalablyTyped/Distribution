@@ -13,6 +13,7 @@ class TimeoutStream protected ()
   var _time: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/TimeoutStream", "TimeoutStream")
 @js.native
 object TimeoutStream extends js.Object {

@@ -21,6 +21,7 @@ class NoteHead protected () extends Note {
   def setY(y: scala.Double): NoteHead = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.NoteHead")
 @js.native
 object NoteHead extends js.Object {

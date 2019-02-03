@@ -213,9 +213,7 @@ class Color4 () extends js.Object {
   def toLinearSpaceToRef(convertedColor: Color4): Color4 = js.native
 }
 
-/**
-  * Class used to hold a RBGA color
-  */
+/* static members */
 @JSGlobal("BABYLON.Color4")
 @js.native
 object Color4 extends js.Object {

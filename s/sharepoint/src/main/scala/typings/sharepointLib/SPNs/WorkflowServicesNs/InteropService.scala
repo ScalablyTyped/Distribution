@@ -23,7 +23,7 @@ class InteropService protected ()
   ): sharepointLib.SPNs.GuidResult = js.native
 }
 
-// TODO: comments, types
+/* static members */
 @JSGlobal("SP.WorkflowServices.InteropService")
 @js.native
 object InteropService extends js.Object {

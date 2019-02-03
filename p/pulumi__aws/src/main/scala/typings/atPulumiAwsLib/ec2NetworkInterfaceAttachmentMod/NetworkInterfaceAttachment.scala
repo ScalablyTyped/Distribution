@@ -40,6 +40,7 @@ class NetworkInterfaceAttachment protected ()
   val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/networkInterfaceAttachment", "NetworkInterfaceAttachment")
 @js.native
 object NetworkInterfaceAttachment extends js.Object {

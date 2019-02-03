@@ -111,6 +111,7 @@ object storagegatewayNs extends js.Object {
     args: atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.storagegatewayGetLocalDiskMod.GetLocalDiskResult] = js.native
+  /* static members */
   @js.native
   object Cache extends js.Object {
     /**
@@ -135,6 +136,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewayCacheMod.Cache = js.native
   }
   
+  /* static members */
   @js.native
   object CachesIscsiVolume extends js.Object {
     /**
@@ -159,6 +161,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewayCachesIscsiVolumeMod.CachesIscsiVolume = js.native
   }
   
+  /* static members */
   @js.native
   object Gateway extends js.Object {
     /**
@@ -183,6 +186,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewayGatewayMod.Gateway = js.native
   }
   
+  /* static members */
   @js.native
   object NfsFileShare extends js.Object {
     /**
@@ -207,6 +211,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewayNfsFileShareMod.NfsFileShare = js.native
   }
   
+  /* static members */
   @js.native
   object SmbFileShare extends js.Object {
     /**
@@ -231,6 +236,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewaySmbFileShareMod.SmbFileShare = js.native
   }
   
+  /* static members */
   @js.native
   object UploadBuffer extends js.Object {
     /**
@@ -255,6 +261,7 @@ object storagegatewayNs extends js.Object {
     ): atPulumiAwsLib.storagegatewayUploadBufferMod.UploadBuffer = js.native
   }
   
+  /* static members */
   @js.native
   object WorkingStorage extends js.Object {
     /**

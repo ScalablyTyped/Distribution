@@ -115,6 +115,7 @@ class ViewEngine protected () extends js.Object {
   ): js.Promise[ViewFactory] = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "ViewEngine")
 @js.native
 object ViewEngine extends js.Object {

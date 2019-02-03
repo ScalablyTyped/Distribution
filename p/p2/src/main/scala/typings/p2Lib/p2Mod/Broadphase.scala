@@ -26,6 +26,7 @@ class Broadphase protected ()
   override def setWorld(world: p2Lib.p2Mod.p2Ns.World): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("p2", "Broadphase")
 @js.native
 object Broadphase extends js.Object {

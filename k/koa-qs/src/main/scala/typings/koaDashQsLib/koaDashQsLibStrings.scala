@@ -15,8 +15,11 @@ object koaDashQsLibStrings {
   @js.native
   sealed trait strict extends js.Object
   
+  @scala.inline
   def extended: extended = "extended".asInstanceOf[extended]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
 }
 

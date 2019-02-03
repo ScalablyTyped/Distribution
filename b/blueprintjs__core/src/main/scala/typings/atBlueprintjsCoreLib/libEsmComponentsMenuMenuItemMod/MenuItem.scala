@@ -19,6 +19,7 @@ class MenuItem ()
   /* private */ def maybeRenderPopover(target: js.Any, children: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menuItem", "MenuItem")
 @js.native
 object MenuItem extends js.Object {

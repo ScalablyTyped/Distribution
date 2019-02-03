@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ClassMapUtils ()
   extends wonderDashFrpLib.distEs2015UtilsClassMapUtilsMod.ClassMapUtils
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "ClassMapUtils")
 @js.native
 object ClassMapUtils extends js.Object {

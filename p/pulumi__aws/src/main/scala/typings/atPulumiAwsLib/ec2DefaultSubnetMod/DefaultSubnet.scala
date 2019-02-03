@@ -51,6 +51,7 @@ class DefaultSubnet protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/defaultSubnet", "DefaultSubnet")
 @js.native
 object DefaultSubnet extends js.Object {

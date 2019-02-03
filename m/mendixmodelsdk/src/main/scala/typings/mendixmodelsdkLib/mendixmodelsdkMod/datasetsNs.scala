@@ -103,9 +103,7 @@ object datasetsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-sets relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataSet extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -117,6 +115,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetAccess extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -135,6 +134,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetAccess = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -153,6 +153,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.JavaDataSetSource): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetColumn = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetConstraintAccess extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -171,6 +172,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameterAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetConstraintAccess = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetDateTimeConstraint extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -189,6 +191,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetDateTimeConstraint = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetModuleRoleAccess extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -207,6 +210,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetModuleRoleAccess = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetNumericConstraint extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -225,6 +229,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetNumericConstraint = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetObjectConstraint extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -243,6 +248,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetObjectConstraint = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -261,6 +267,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameter = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetParameterAccess extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -279,18 +286,21 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetModuleRoleAccess): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSetParameterAccess = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetParameterConstraint extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DataSetSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatasetsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DateTimeIntervalLength extends js.Object {
     var Day: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DateTimeIntervalLength = js.native
@@ -301,6 +311,7 @@ object datasetsNs extends js.Object {
     var Year: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DateTimeIntervalLength = js.native
   }
   
+  /* static members */
   @js.native
   object DateTimeIntervalModifier extends js.Object {
     var Always: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DateTimeIntervalModifier = js.native
@@ -311,6 +322,7 @@ object datasetsNs extends js.Object {
     var This: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DateTimeIntervalModifier = js.native
   }
   
+  /* static members */
   @js.native
   object JavaDataSetSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -329,6 +341,7 @@ object datasetsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.DataSet): mendixmodelsdkLib.distGenDatasetsMod.datasetsNs.JavaDataSetSource = js.native
   }
   
+  /* static members */
   @js.native
   object OqlDataSetSource extends js.Object {
     var structureTypeName: java.lang.String = js.native

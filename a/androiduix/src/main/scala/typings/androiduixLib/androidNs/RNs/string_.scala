@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class `string_` () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.string_")
 @js.native
 object `string_` extends js.Object {

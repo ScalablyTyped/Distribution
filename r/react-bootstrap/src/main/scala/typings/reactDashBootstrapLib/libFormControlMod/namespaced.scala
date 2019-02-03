@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends FormControl
 
+/* static members */
 @JSImport("react-bootstrap/lib/FormControl", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

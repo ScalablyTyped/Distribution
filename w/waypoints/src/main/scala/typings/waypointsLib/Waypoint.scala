@@ -25,6 +25,7 @@ class Waypoint protected () extends js.Object {
   def previous(): Waypoint | java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Waypoint")
 @js.native
 object Waypoint extends js.Object {

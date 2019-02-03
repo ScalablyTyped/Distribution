@@ -11,6 +11,7 @@ class namespaced () extends Two {
   def this(params: twoDotJsLib.twoDotJsMod.TwoNs.ConstructorParams) = this()
 }
 
+/* static members */
 @JSImport("two.js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

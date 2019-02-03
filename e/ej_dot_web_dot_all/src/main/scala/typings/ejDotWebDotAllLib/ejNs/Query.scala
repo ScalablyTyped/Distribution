@@ -53,6 +53,7 @@ class Query () extends js.Object {
   def where(predicate: Predicate): Query = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Query")
 @js.native
 object Query extends js.Object {

@@ -15,8 +15,11 @@ object mitmLibStrings {
   @js.native
   sealed trait request extends js.Object
   
+  @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
 }
 

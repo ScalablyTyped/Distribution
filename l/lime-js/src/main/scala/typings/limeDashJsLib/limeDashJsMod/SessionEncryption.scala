@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SessionEncryption ()
   extends limeDashJsLib.limeDashJsMod.LimeNs.SessionEncryption
 
+/* static members */
 @JSImport("lime-js", "SessionEncryption")
 @js.native
 object SessionEncryption extends js.Object {

@@ -23,7 +23,7 @@ object googleNs extends js.Object {
       def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.googleNs.protobufNs.ITimestamp) = this()
     }
     
-    /** Represents a Timestamp. */
+    /* static members */
     @js.native
     object Timestamp extends js.Object {
       /**

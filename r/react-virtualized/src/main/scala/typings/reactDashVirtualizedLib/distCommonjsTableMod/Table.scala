@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Table ()
   extends reactDashVirtualizedLib.distEsTableMod.Table
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/Table", "Table")
 @js.native
 object Table extends js.Object {

@@ -26,6 +26,7 @@ class Table ()
   def scrollToRow(index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/Table", "Table")
 @js.native
 object Table extends js.Object {

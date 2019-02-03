@@ -33,6 +33,7 @@ class default () extends KeyTransRecipientInfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/KeyTransRecipientInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

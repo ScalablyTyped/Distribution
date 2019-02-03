@@ -23,6 +23,7 @@ class ContextualizedTypeStats () extends IContextualizedTypeStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ContextualizedTypeStats")
 @js.native
 object ContextualizedTypeStats extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Revwalk ()
   extends nodegitLib.revDashWalkMod.Revwalk
 
+/* static members */
 @JSImport("nodegit", "Revwalk")
 @js.native
 object Revwalk extends js.Object {

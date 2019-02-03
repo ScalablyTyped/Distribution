@@ -18,6 +18,7 @@ class Store protected () extends Destroyable {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Knockback.Store")
 @js.native
 object Store extends js.Object {

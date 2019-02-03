@@ -21,6 +21,7 @@ class default () extends OtherKeyAttribute {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/OtherKeyAttribute", JSImport.Default)
 @js.native
 object default extends js.Object {

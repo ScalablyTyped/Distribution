@@ -12,7 +12,9 @@ object angularDashLocalDashStorageLibStrings {
   @js.native
   sealed trait sessionStorage extends js.Object
   
+  @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  @scala.inline
   def sessionStorage: sessionStorage = "sessionStorage".asInstanceOf[sessionStorage]
 }
 

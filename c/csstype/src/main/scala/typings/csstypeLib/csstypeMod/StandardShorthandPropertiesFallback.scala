@@ -19,7 +19,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var all: js.UndefOr[Globals | js.Array[Globals]] = js.undefined
   /**
-    * The **`animation`** CSS property is a shorthand property for the various animation properties: `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
+    * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
     *
     * | Chrome | Firefox |   Safari    |  Edge  |   IE   |
     * | :----: | :-----: | :---------: | :----: | :----: |
@@ -30,7 +30,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var animation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
   /**
-    * The **`background`** CSS property is a short way to declare all background style options at once, including color, image, origin and size, repeat method, and other features.
+    * The **`background`** shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -40,7 +40,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var background: js.UndefOr[BackgroundProperty[TLength] | js.Array[BackgroundProperty[TLength]]] = js.undefined
   /**
-    * The **`border`** CSS property is a shorthand for setting all individual border property values in a single declaration: `border-width`, `border-style`, and `border-color`.
+    * The **`border`** CSS property sets an element's border. It's a shorthand for `border-width`, `border-style`, and `border-color`.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -50,7 +50,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var border: js.UndefOr[BorderProperty[TLength] | js.Array[BorderProperty[TLength]]] = js.undefined
   /**
-    * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block\-end border property values in a single place in the style sheet.
+    * The **`border-block-end`** CSS property is a shorthand property for setting the individual logical block-end border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -60,7 +60,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBlockEnd: js.UndefOr[BorderBlockEndProperty[TLength] | js.Array[BorderBlockEndProperty[TLength]]] = js.undefined
   /**
-    * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block\-start border property values in a single place in the style sheet.
+    * The **`border-block-start`** CSS property is a shorthand property for setting the individual logical block-start border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -70,7 +70,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBlockStart: js.UndefOr[BorderBlockStartProperty[TLength] | js.Array[BorderBlockStartProperty[TLength]]] = js.undefined
   /**
-    * The **`border-bottom`** CSS property is a shorthand that sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`. These properties describe an element's bottom `border`.
+    * The **`border-bottom`** CSS property is a shorthand that sets the values of `border-bottom-width`, `border-bottom-style` and `border-bottom-color`. These properties set an element's bottom border.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -80,7 +80,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderBottom: js.UndefOr[BorderBottomProperty[TLength] | js.Array[BorderBottomProperty[TLength]]] = js.undefined
   /**
-    * The **`border-color`** CSS property is a shorthand property for setting the colors on all four sides of an element's border.
+    * The **`border-color`** shorthand CSS property sets the color of all sides of an element's border.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -90,7 +90,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderColor: js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]] = js.undefined
   /**
-    * The **`border-image`** CSS property lets you draw an image in place of an element's `border-style`.
+    * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
     *
     * | Chrome  |  Firefox  | Safari  |  Edge  |   IE   |
     * | :-----: | :-------: | :-----: | :----: | :----: |
@@ -101,7 +101,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
   /**
-    * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline\-end border property values in a single place in the style sheet.
+    * The **`border-inline-end`** CSS property is a shorthand property for setting the individual logical inline-end border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -111,7 +111,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderInlineEnd: js.UndefOr[BorderInlineEndProperty[TLength] | js.Array[BorderInlineEndProperty[TLength]]] = js.undefined
   /**
-    * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline\-start border property values in a single place in the style sheet.
+    * The **`border-inline-start`** CSS property is a shorthand property for setting the individual logical inline-start border property values in a single place in the style sheet.
     *
     * | Chrome | Firefox | Safari | Edge | IE  |
     * | :----: | :-----: | :----: | :--: | :-: |
@@ -123,7 +123,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     BorderInlineStartProperty[TLength] | js.Array[BorderInlineStartProperty[TLength]]
   ] = js.undefined
   /**
-    * The **`border-left`** CSS property is a shorthand that sets the values of `border-left-width`, `border-left-style`, and `border-left-color`. These properties describe an element's left `border`.
+    * The **`border-left`** CSS property is a shorthand that sets the values of `border-left-width`, `border-left-style` and `border-left-color`. These properties set an element's left border.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -133,7 +133,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderLeft: js.UndefOr[BorderLeftProperty[TLength] | js.Array[BorderLeftProperty[TLength]]] = js.undefined
   /**
-    * The **`border-radius`** CSS property lets you round the corners of an element's outer border edge. You can specify a single radius to make circular corners, or two radii to make elliptical corners.
+    * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
     *
     * | Chrome  | Firefox | Safari  |  Edge  |  IE   |
     * | :-----: | :-----: | :-----: | :----: | :---: |
@@ -144,7 +144,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
   /**
-    * The **`border-right`** CSS property is a shorthand that sets the values of `border-right-width`, `border-right-style`, and `border-right-color`. These properties describe an element's right `border`.
+    * The **`border-right`** CSS property is a shorthand that sets the values of `border-right-width`, `border-right-style` and `border-right-color`. These properties set an element's right border.
     *
     * | Chrome | Firefox | Safari |  Edge  |   IE    |
     * | :----: | :-----: | :----: | :----: | :-----: |
@@ -164,7 +164,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderStyle: js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]] = js.undefined
   /**
-    * The **`border-top`** CSS property is a shorthand that sets the values of `border-top-width`, `border-top-style`, and `border-top-color`. These properties describe an element's top `border`.
+    * The **`border-top`** CSS property is a shorthand that sets the values of `border-top-width`, `border-top-style` and `border-top-color`. These properties set an element's top border.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -174,7 +174,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderTop: js.UndefOr[BorderTopProperty[TLength] | js.Array[BorderTopProperty[TLength]]] = js.undefined
   /**
-    * The **`border-width`** CSS property is a shorthand property for setting the widths on all four sides of an element's border.
+    * The **`border-width`** shorthand CSS property sets the widths of all four sides of an element's border.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -184,7 +184,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var borderWidth: js.UndefOr[BorderWidthProperty[TLength] | js.Array[BorderWidthProperty[TLength]]] = js.undefined
   /**
-    * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi\-column layout.
+    * The **`column-rule`** CSS property sets the width, style, and color of the rule (line) drawn between columns in a multi-column layout.
     *
     * | Chrome |  Firefox  |   Safari    |     Edge     |   IE   |
     * | :----: | :-------: | :---------: | :----------: | :----: |
@@ -206,7 +206,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var columns: js.UndefOr[ColumnsProperty[TLength] | js.Array[ColumnsProperty[TLength]]] = js.undefined
   /**
-    * The **`flex`** CSS property specifies how a flex item will grow or shrink so as to fit the space available in its flex container. This is a shorthand property that sets `flex-grow`, `flex-shrink`, and `flex-basis`.
+    * The **`flex`** CSS property sets how a flex item will grow or shrink to fit the space available in its flex container. It is a shorthand for `flex-grow`, `flex-shrink`, and `flex-basis`.
     *
     * |  Chrome  | Firefox |  Safari   |  Edge  |    IE    |
     * | :------: | :-----: | :-------: | :----: | :------: |
@@ -217,7 +217,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var flex: js.UndefOr[FlexProperty[TLength] | js.Array[FlexProperty[TLength]]] = js.undefined
   /**
-    * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` individual properties.
+    * The **`flex-flow`** CSS property is a shorthand property for `flex-direction` and `flex-wrap` properties.
     *
     * |  Chrome  | Firefox |  Safari   |  Edge  |   IE   |
     * | :------: | :-----: | :-------: | :----: | :----: |
@@ -228,7 +228,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var flexFlow: js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]] = js.undefined
   /**
-    * The **`font`** CSS property is either a shorthand property for setting `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`; or a way to set the element's font to a system font, using specific keywords.
+    * The **`font`** CSS property is a shorthand for `font-style`, `font-variant`, `font-weight`, `font-size`, `line-height`, and `font-family`. Alternatively, it sets an element's font to a system font.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -238,7 +238,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var font: js.UndefOr[FontProperty | js.Array[FontProperty]] = js.undefined
   /**
-    * The **`gap`** CSS property specifies the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
+    * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
     *
     * ---
     *
@@ -291,7 +291,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var gridArea: js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]] = js.undefined
   /**
-    * The **`grid-column`** CSS property is a shorthand property for `grid-column-start` and `grid-column-end` specifying a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline\-start and inline\-end edge of its grid area.
+    * The **`grid-column`** CSS property is a shorthand property for `grid-column-start` and `grid-column-end` specifying a grid item's size and location within the grid column by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
     *
     * | Chrome | Firefox |  Safari  |  Edge  | IE  |
     * | :----: | :-----: | :------: | :----: | :-: |
@@ -301,7 +301,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var gridColumn: js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]] = js.undefined
   /**
-    * The **`grid-row`** CSS property is a shorthand property for `grid-row-start` and `grid-row-end` specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline\-start and inline\-end edge of its grid area.
+    * The **`grid-row`** CSS property is a shorthand property for `grid-row-start` and `grid-row-end` specifying a grid item’s size and location within the grid row by contributing a line, a span, or nothing (automatic) to its grid placement, thereby specifying the inline-start and inline-end edge of its grid area.
     *
     * | Chrome | Firefox |  Safari  |  Edge  | IE  |
     * | :----: | :-----: | :------: | :----: | :-: |
@@ -323,7 +323,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   /** **Initial value**: `none` */
   var lineClamp: js.UndefOr[LineClampProperty | js.Array[LineClampProperty]] = js.undefined
   /**
-    * The **`list-style`** CSS property is a shorthand for setting the individual values that define how a list is displayed: `list-style-type`, `list-style-image`, and `list-style-position`.
+    * The **`list-style`** CSS property is a shorthand to set list style properties `list-style-type`, `list-style-image`, and `list-style-position`.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -333,7 +333,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var listStyle: js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]] = js.undefined
   /**
-    * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for setting all individual margins at once: `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
+    * The **`margin`** CSS property sets the margin area on all four sides of an element. It is a shorthand for `margin-top`, `margin-right`, `margin-bottom`, and `margin-left`.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -343,7 +343,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var margin: js.UndefOr[MarginProperty[TLength] | js.Array[MarginProperty[TLength]]] = js.undefined
   /**
-    * The **`mask`** CSS property alters the visibility of an element by either partially or fully hiding it. This is accomplished by either masking or clipping the image at specific points.
+    * The **`mask`** CSS property hides an element (partially or fully) by masking or clipping the image at specific points.
     *
     * | Chrome | Firefox | Safari |  Edge  | IE  |
     * | :----: | :-----: | :----: | :----: | :-: |
@@ -354,9 +354,30 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
   var mask: js.UndefOr[MaskProperty[TLength] | js.Array[MaskProperty[TLength]]] = js.undefined
   /** The **`mask-border`** CSS property lets you create a mask along the edge of an element's border. */
   var maskBorder: js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]] = js.undefined
-  var motion: js.UndefOr[csstypeLib.GlobalsString | js.Array[csstypeLib.GlobalsString]] = js.undefined
   /**
-    * The **`outline`** CSS property is a shorthand for setting various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
+    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
+    *
+    * |    Chrome     | Firefox | Safari | Edge | IE  |
+    * | :-----------: | :-----: | :----: | :--: | :-: |
+    * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset
+    */
+  var motion: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
+  /**
+    * The **`offset`** CSS property is a shorthand property for animating an element along a defined path.
+    *
+    * |    Chrome     | Firefox | Safari | Edge | IE  |
+    * | :-----------: | :-----: | :----: | :--: | :-: |
+    * |    **55**     |   n/a   |  n/a   | n/a  | n/a |
+    * | 46 _(motion)_ |         |        |      |     |
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/offset
+    */
+  var offset: js.UndefOr[OffsetProperty[TLength] | js.Array[OffsetProperty[TLength]]] = js.undefined
+  /**
+    * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
     *
     * | Chrome | Firefox | Safari  |  Edge  |  IE   |
     * | :----: | :-----: | :-----: | :----: | :---: |
@@ -366,7 +387,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var outline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
   /**
-    * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for setting all individual paddings at once: `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
+    * The **`padding`** CSS property sets the padding area on all four sides of an element. It is a shorthand for `padding-top`, `padding-right`, `padding-bottom`, and `padding-left`.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -376,7 +397,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var padding: js.UndefOr[PaddingProperty[TLength] | js.Array[PaddingProperty[TLength]]] = js.undefined
   /**
-    * The CSS **`place-items`** shorthand property sets both the `align-items` and `justify-items` properties. The first value is the `align-items` property value, the second the `justify-items` one. If the second value is not present, the first value is also used for it.
+    * The CSS **`place-items`** shorthand property sets the `align-items` and `justify-items` properties, respectively. If the second value is not set, the first value is also used for it.
     *
     * ---
     *
@@ -400,7 +421,31 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var placeItems: js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]] = js.undefined
   /**
-    * The **`text-decoration`** CSS property specifies the appearance of decorative lines used on text. It is a shorthand for setting one or more individual text\-decoration values in a single declaration, which include `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`.
+    * The **`place-self`** CSS property is a shorthand property sets both the `align-self` and `justify-self` properties. The first value is the `align-self` property value, the second the `justify-self` one. If the second value is not present, the first value is also used for it.
+    *
+    * ---
+    *
+    * _Supported in Flex Layout_
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **59** | **45**  |   No   | n/a  | n/a |
+    *
+    * ---
+    *
+    * _Supported in Grid Layout_
+    *
+    * | Chrome | Firefox | Safari | Edge | IE  |
+    * | :----: | :-----: | :----: | :--: | :-: |
+    * | **59** | **45**  |   No   | n/a  | n/a |
+    *
+    * ---
+    *
+    * @see https://developer.mozilla.org/docs/Web/CSS/place-self
+    */
+  var placeSelf: js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]] = js.undefined
+  /**
+    * The **`text-decoration`** CSS property sets the appearance of decorative lines on text. It is a shorthand for `text-decoration-line`, `text-decoration-color`, and `text-decoration-style`.
     *
     * | Chrome | Firefox | Safari |  Edge  |  IE   |
     * | :----: | :-----: | :----: | :----: | :---: |
@@ -410,7 +455,7 @@ trait StandardShorthandPropertiesFallback[TLength] extends js.Object {
     */
   var textDecoration: js.UndefOr[TextDecorationProperty | js.Array[TextDecorationProperty]] = js.undefined
   /**
-    * The **`text-emphasis`** CSS property is a shorthand property for setting `text-emphasis-style` and `text-emphasis-color` in one declaration. This property will apply the specified emphasis mark to each character of the element's text, except separator characters, like spaces,  and control characters.
+    * The **`text-emphasis`** CSS property applies emphasis marks to text (except spaces and control characters). It is a shorthand for `text-emphasis-style` and `text-emphasis-color`.
     *
     * |    Chrome    | Firefox |    Safari     | Edge | IE  |
     * | :----------: | :-----: | :-----------: | :--: | :-: |

@@ -15,6 +15,7 @@ class TypedocReader ()
   def onDiscover(event: typedocLib.distLibUtilsOptionsOptionsMod.DiscoverEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/readers/typedoc", "TypedocReader")
 @js.native
 object TypedocReader extends js.Object {

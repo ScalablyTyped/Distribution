@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Modal
 
+/* static members */
 @JSImport("styled-react-modal", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -9,6 +9,7 @@ object atPulumiPulumiLibStrings {
   @js.native
   sealed trait UnwrappedObject extends js.Object
   
+  @scala.inline
   def UnwrappedObject: UnwrappedObject = "UnwrappedObject".asInstanceOf[UnwrappedObject]
 }
 

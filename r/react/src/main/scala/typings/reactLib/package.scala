@@ -78,7 +78,7 @@ package object reactLib {
   // Try to resolve ill-defined props like for JS users: props can be any, or sometimes objects with properties of type any
   // If props is type any, use propTypes definitions, otherwise for each `any` property of props, use the propTypes type
   // If declared props have indexed properties, ignore inferred props entirely as keyof gets widened
-  type MergePropTypes[P, T] = (reactLib.reactLibStrings.MergePropTypes with P with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])) | T
+  type MergePropTypes[P, T] = (reactLib.reactLibStrings.MergePropTypes with js.Any with (stdLib.Pick[T, stdLib.Exclude[java.lang.String, java.lang.String]])) | T
   type MouseEvent = Event
   type NativeAnimationEvent = AnimationEvent
   type NativeClipboardEvent = ClipboardEvent

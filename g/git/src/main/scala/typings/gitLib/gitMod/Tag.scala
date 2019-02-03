@@ -13,6 +13,7 @@ class Tag protected () extends js.Object {
   var name: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Tag")
 @js.native
 object Tag extends js.Object {

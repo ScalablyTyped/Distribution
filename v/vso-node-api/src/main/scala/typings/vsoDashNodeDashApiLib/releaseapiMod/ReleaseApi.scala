@@ -12,6 +12,7 @@ class ReleaseApi protected () extends IReleaseApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/ReleaseApi", "ReleaseApi")
 @js.native
 object ReleaseApi extends js.Object {

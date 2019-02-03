@@ -58,6 +58,7 @@ class Node () extends js.Object {
   def toNT(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Node")
 @js.native
 object Node extends js.Object {

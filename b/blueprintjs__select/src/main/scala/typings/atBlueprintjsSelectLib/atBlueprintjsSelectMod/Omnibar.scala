@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Omnibar[T] ()
   extends atBlueprintjsSelectLib.libEsmComponentsMod.Omnibar[T]
 
+/* static members */
 @JSImport("@blueprintjs/select", "Omnibar")
 @js.native
 object Omnibar extends js.Object {

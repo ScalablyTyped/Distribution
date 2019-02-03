@@ -12,6 +12,7 @@ class Spin protected ()
   def this(props: antdLib.libSpinMod.SpinProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Spin")
 @js.native
 object Spin extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MessageLocalization ()
   extends businessDashRulesDashEngineLib.businessDashRulesDashEngineMod.MessageLocalization
 
+/* static members */
 @JSImport("node-validation", "MessageLocalization")
 @js.native
 object MessageLocalization extends js.Object {

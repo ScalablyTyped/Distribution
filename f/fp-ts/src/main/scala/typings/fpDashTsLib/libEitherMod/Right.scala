@@ -26,7 +26,7 @@ class Right[L, A] protected () extends js.Object {
   def filterOrElseL_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: js.Function1[/* a */ A, L]): Either[L, B] = js.native
   @JSName("filterOrElse")
   def filterOrElse_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B], zero: L): Either[L, B] = js.native
-  def fold[B](whenLeft: js.Function1[/* l */ L, B], whenRight: js.Function1[/* a */ A, B]): B = js.native
+  def fold[B](onLeft: js.Function1[/* l */ L, B], onRight: js.Function1[/* a */ A, B]): B = js.native
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function1[/* l */ L, A]): A = js.native
   def inspect(): java.lang.String = js.native

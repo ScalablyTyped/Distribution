@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Gravatar
 
-/**
-  * React component for rendering a gravatar profile image. Adjusts automatically to HiDPI displays.
-  */
+/* static members */
 @JSImport("react-gravatar", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

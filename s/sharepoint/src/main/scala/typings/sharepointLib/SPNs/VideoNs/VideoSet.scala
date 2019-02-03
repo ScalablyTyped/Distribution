@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class VideoSet ()
   extends sharepointLib.SPNs.DocumentSetNs.DocumentSet
 
+/* static members */
 @JSGlobal("SP.Video.VideoSet")
 @js.native
 object VideoSet extends js.Object {

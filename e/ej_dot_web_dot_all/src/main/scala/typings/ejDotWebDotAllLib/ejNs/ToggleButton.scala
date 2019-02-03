@@ -25,6 +25,7 @@ class ToggleButton protected () extends Widget {
   def enable(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ToggleButton")
 @js.native
 object ToggleButton extends js.Object {

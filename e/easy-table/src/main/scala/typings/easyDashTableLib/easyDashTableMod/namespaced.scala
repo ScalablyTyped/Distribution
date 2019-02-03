@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends EasyTable
 
+/* static members */
 @JSImport("easy-table", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

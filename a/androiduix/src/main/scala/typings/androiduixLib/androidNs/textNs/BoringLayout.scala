@@ -70,6 +70,7 @@ class BoringLayout protected ()
   ): BoringLayout = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.BoringLayout")
 @js.native
 object BoringLayout extends js.Object {

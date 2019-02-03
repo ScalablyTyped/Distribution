@@ -27,12 +27,19 @@ object reactDashNativeDashMaterialDashUiLibStrings {
   @js.native
   sealed trait words extends js.Object
   
+  @scala.inline
   def characters: characters = "characters".asInstanceOf[characters]
+  @scala.inline
   def dynamic: dynamic = "dynamic".asInstanceOf[dynamic]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def sentences: sentences = "sentences".asInstanceOf[sentences]
+  @scala.inline
   def speedDial: speedDial = "speedDial".asInstanceOf[speedDial]
+  @scala.inline
   def toolbar: toolbar = "toolbar".asInstanceOf[toolbar]
+  @scala.inline
   def words: words = "words".asInstanceOf[words]
 }
 

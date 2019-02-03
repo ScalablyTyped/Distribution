@@ -98,6 +98,7 @@ abstract class Animation () extends js.Object {
   def willChangeTransformationMatrix(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.Animation")
 @js.native
 object Animation extends js.Object {

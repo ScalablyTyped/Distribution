@@ -22,6 +22,7 @@ class Any ()
   def unpack[T /* <: googleDashProtobufLib.googleDashProtobufMod.Message */](deserialize: js.Function1[/* packed */ stdLib.Uint8Array, T], name: java.lang.String): T | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/any_pb", "Any")
 @js.native
 object Any extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FabricPerformance () extends js.Object
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/FabricPerformance", "FabricPerformance")
 @js.native
 object FabricPerformance extends js.Object {

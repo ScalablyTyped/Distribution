@@ -22,6 +22,7 @@ object budgetsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.budgetsBudgetMod.BudgetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Budget extends js.Object {
     /**

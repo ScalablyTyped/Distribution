@@ -25,6 +25,7 @@ class Blob protected () extends js.Object {
   def toUint8Array(): stdLib.Uint8Array = js.native
 }
 
+/* static members */
 @JSImport("@firebase/firestore-types", "Blob")
 @js.native
 object Blob extends js.Object {

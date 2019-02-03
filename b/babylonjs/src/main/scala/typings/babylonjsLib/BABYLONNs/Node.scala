@@ -308,9 +308,7 @@ class Node protected () extends IBehaviorAware[Node] {
   def updateCache(force: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Node is the basic class for all scene objects (Mesh, Light, Camera.)
-  */
+/* static members */
 @JSGlobal("BABYLON.Node")
 @js.native
 object Node extends js.Object {

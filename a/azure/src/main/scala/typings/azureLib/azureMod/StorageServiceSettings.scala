@@ -17,6 +17,7 @@ class StorageServiceSettings protected () extends js.Object {
   var _usePathStyleUri: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("azure", "StorageServiceSettings")
 @js.native
 object StorageServiceSettings extends js.Object {

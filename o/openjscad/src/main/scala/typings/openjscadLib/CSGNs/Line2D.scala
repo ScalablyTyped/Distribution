@@ -21,6 +21,7 @@ class Line2D protected ()
   def xAtY(y: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Line2D")
 @js.native
 object Line2D extends js.Object {

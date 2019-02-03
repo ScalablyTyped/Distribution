@@ -20,6 +20,7 @@ class UserProfile protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksUserProfileMod.UserProfileArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "UserProfile")
 @js.native
 object UserProfile extends js.Object {

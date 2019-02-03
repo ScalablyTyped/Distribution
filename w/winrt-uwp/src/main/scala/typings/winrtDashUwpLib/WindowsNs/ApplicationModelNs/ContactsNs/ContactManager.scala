@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ContactManager () extends js.Object
 
-/** Represents a service that source apps can call to access contact data. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Contacts.ContactManager")
 @js.native
 object ContactManager extends js.Object {

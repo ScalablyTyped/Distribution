@@ -15,8 +15,11 @@ object eslintDashPluginDashPrettierLibStrings {
   @js.native
   sealed trait replace extends js.Object
   
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
 }
 

@@ -37,6 +37,7 @@ class Loader () extends js.Object {
   def onLoadStart(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Loader")
 @js.native
 object Loader extends js.Object {

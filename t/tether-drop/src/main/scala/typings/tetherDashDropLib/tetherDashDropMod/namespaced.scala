@@ -12,7 +12,7 @@ class namespaced protected () extends Drop {
   def this(options: tetherDashDropLib.tetherDashDropMod.DropNs.IDropOptions) = this()
 }
 
-// global Drop constructor
+/* static members */
 @JSImport("tether-drop", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

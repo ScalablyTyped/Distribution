@@ -12,6 +12,7 @@ class TreeSelect protected ()
   def this(props: antdLib.libTreeDashSelectInterfaceMod.TreeSelectProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "TreeSelect")
 @js.native
 object TreeSelect extends js.Object {

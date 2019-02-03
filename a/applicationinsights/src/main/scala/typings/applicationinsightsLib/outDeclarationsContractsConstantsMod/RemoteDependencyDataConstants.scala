@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RemoteDependencyDataConstants () extends js.Object
 
+/* static members */
 @JSImport("applicationinsights/out/Declarations/Contracts/Constants", "RemoteDependencyDataConstants")
 @js.native
 object RemoteDependencyDataConstants extends js.Object {

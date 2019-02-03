@@ -112,6 +112,7 @@ class QuestionMatrixDynamicModel protected () extends QuestionMatrixDropdownMode
   def removeRowUI(value: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "QuestionMatrixDynamicModel")
 @js.native
 object QuestionMatrixDynamicModel extends js.Object {

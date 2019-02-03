@@ -21,6 +21,7 @@ class TargetGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingv2TargetGroupMod.TargetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancingv2", "TargetGroup")
 @js.native
 object TargetGroup extends js.Object {

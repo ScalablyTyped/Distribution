@@ -18,9 +18,13 @@ object arangodbLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
   def `3`: `3` = 3.asInstanceOf[`3`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

@@ -83,6 +83,7 @@ class SwitchStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SwitchStatementSyntax")
 @js.native
 object SwitchStatementSyntax extends js.Object {

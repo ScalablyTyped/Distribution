@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Viewport () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Viewport")
 @js.native
 object Viewport extends js.Object {

@@ -20,6 +20,7 @@ class EventDestination protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesEventDestinationMod.EventDestinationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "EventDestination")
 @js.native
 object EventDestination extends js.Object {

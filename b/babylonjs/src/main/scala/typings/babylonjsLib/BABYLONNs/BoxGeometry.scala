@@ -50,10 +50,7 @@ class BoxGeometry protected () extends _PrimitiveGeometry {
   var size: scala.Double = js.native
 }
 
-/**
-  * Creates a box geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#box
-  */
+/* static members */
 @JSGlobal("BABYLON.BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {

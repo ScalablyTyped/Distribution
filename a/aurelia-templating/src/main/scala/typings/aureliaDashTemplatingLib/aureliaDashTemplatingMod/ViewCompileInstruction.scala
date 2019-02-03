@@ -20,6 +20,7 @@ class ViewCompileInstruction () extends js.Object {
   var targetShadowDOM: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "ViewCompileInstruction")
 @js.native
 object ViewCompileInstruction extends js.Object {

@@ -104,6 +104,7 @@ class AskmethatRating protected () extends js.Object {
   /* protected */ def setOrUnsetActive(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("askmethat-rating", "AskmethatRating")
 @js.native
 object AskmethatRating extends js.Object {

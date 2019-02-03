@@ -24,6 +24,7 @@ class CastContext () extends js.Object {
   def setOptions(options: CastOptions): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("cast.framework.CastContext")
 @js.native
 object CastContext extends js.Object {

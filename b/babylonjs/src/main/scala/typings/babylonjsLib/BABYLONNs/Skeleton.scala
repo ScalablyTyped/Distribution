@@ -197,10 +197,7 @@ class Skeleton protected () extends IAnimatable {
   def toString(fullDetails: scala.Boolean): java.lang.String = js.native
 }
 
-/**
-  * Class used to handle skinning animations
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons
-  */
+/* static members */
 @JSGlobal("BABYLON.Skeleton")
 @js.native
 object Skeleton extends js.Object {

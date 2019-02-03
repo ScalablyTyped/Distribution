@@ -1159,6 +1159,7 @@ class BigNumber protected () extends js.Object {
   def toString(base: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("bignumber.js", "BigNumber")
 @js.native
 object BigNumber extends js.Object {

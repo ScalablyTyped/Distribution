@@ -35,7 +35,7 @@ abstract class User () extends js.Object {
   def getPropertyAsync(value: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[_] = js.native
 }
 
-/** Represents a user. */
+/* static members */
 @JSGlobal("Windows.System.User")
 @js.native
 object User extends js.Object {

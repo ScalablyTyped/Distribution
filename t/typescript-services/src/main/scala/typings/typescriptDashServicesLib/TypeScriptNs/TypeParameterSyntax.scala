@@ -16,6 +16,7 @@ class TypeParameterSyntax protected () extends SyntaxNode {
   def withIdentifier(identifier: ISyntaxToken): TypeParameterSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeParameterSyntax")
 @js.native
 object TypeParameterSyntax extends js.Object {

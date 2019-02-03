@@ -27,12 +27,19 @@ object routeDashNodeLibStrings {
   @js.native
   sealed trait url extends js.Object
   
+  @scala.inline
   def always: always = "always".asInstanceOf[always]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def loose: loose = "loose".asInstanceOf[loose]
+  @scala.inline
   def never: never = "never".asInstanceOf[never]
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
+  @scala.inline
   def url: url = "url".asInstanceOf[url]
 }
 

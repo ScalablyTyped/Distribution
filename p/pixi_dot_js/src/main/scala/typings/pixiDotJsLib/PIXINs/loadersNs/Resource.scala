@@ -85,6 +85,7 @@ class Resource protected () extends js.Object {
   def load(cb: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.loaders.Resource")
 @js.native
 object Resource extends js.Object {

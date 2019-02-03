@@ -62,6 +62,7 @@ class Splitter protected () extends Widget {
   def toggle(pane: stdLib.Element, expand: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Splitter")
 @js.native
 object Splitter extends js.Object {

@@ -18,11 +18,7 @@ import scala.scalajs.js.annotation._
   */
 class JavaScriptSerializer () extends js.Object
 
-/**
-  * Serializes JavaScript types into JSON-formatted data and deserializes JSON-formatted data into JavaScript types
-  * The JavaScriptSerializer class contains only static methods.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb310857(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.Serialization.JavaScriptSerializer")
 @js.native
 object JavaScriptSerializer extends js.Object {

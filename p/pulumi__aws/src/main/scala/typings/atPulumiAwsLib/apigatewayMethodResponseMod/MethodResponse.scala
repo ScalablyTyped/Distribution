@@ -50,6 +50,7 @@ class MethodResponse protected ()
   val statusCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/methodResponse", "MethodResponse")
 @js.native
 object MethodResponse extends js.Object {

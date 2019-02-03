@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tabs ()
   extends materializeDashCssLib.MNs.Tabs
 
+/* static members */
 @JSImport("materialize-css", "Tabs")
 @js.native
 object Tabs extends js.Object {

@@ -35,6 +35,7 @@ class BitmapText protected ()
   /* protected */ def validate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.extras.BitmapText")
 @js.native
 object BitmapText extends js.Object {

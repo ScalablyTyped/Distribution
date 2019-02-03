@@ -80,6 +80,7 @@ class GroupButton protected () extends Widget {
   def showItem(element: ejDotWebDotAllLib.JQuery): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.GroupButton")
 @js.native
 object GroupButton extends js.Object {

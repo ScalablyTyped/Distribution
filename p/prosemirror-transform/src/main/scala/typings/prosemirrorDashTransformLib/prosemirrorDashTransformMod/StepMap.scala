@@ -34,6 +34,7 @@ class StepMap protected () extends Mappable {
   def invert(): StepMap = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-transform", "StepMap")
 @js.native
 object StepMap extends js.Object {

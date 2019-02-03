@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tmp () extends js.Object
 
-/**
-  * @hidden
-  */
+/* static members */
 @JSGlobal("BABYLON.Tmp")
 @js.native
 object Tmp extends js.Object {

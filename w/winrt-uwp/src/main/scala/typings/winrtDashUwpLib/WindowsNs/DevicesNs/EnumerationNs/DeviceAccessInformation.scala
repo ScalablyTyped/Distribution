@@ -32,7 +32,7 @@ abstract class DeviceAccessInformation () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Contains the information about access to a device. */
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceAccessInformation")
 @js.native
 object DeviceAccessInformation extends js.Object {

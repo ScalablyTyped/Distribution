@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppServiceCatalog () extends js.Object
 
-/** Enumerates the available app service providers on the device. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.AppService.AppServiceCatalog")
 @js.native
 object AppServiceCatalog extends js.Object {

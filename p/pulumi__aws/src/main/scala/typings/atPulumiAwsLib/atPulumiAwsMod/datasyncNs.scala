@@ -79,6 +79,7 @@ object datasyncNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.datasyncTaskMod.TaskArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Agent extends js.Object {
     /**
@@ -103,6 +104,7 @@ object datasyncNs extends js.Object {
     ): atPulumiAwsLib.datasyncAgentMod.Agent = js.native
   }
   
+  /* static members */
   @js.native
   object EfsLocation extends js.Object {
     /**
@@ -127,6 +129,7 @@ object datasyncNs extends js.Object {
     ): atPulumiAwsLib.datasyncEfsLocationMod.EfsLocation = js.native
   }
   
+  /* static members */
   @js.native
   object NfsLocation extends js.Object {
     /**
@@ -151,6 +154,7 @@ object datasyncNs extends js.Object {
     ): atPulumiAwsLib.datasyncNfsLocationMod.NfsLocation = js.native
   }
   
+  /* static members */
   @js.native
   object S3Location extends js.Object {
     /**
@@ -175,6 +179,7 @@ object datasyncNs extends js.Object {
     ): atPulumiAwsLib.datasyncS3LocationMod.S3Location = js.native
   }
   
+  /* static members */
   @js.native
   object Task extends js.Object {
     /**

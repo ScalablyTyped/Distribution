@@ -24,6 +24,7 @@ class ListView protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.DataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.ListView")
 @js.native
 object ListView extends js.Object {

@@ -37,6 +37,7 @@ class TableItem protected ()
   val tableName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dynamodb/tableItem", "TableItem")
 @js.native
 object TableItem extends js.Object {

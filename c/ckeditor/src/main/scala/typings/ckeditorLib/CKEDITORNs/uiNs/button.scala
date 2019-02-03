@@ -15,6 +15,7 @@ class button protected () extends js.Object {
   def toFeature(editor: ckeditorLib.CKEDITORNs.editor): ckeditorLib.CKEDITORNs.feature = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.ui.button")
 @js.native
 object button extends js.Object {

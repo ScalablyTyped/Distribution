@@ -56,6 +56,7 @@ class ViewCache protected () extends js.Object {
   ): ViewCache = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/view/ViewCache", "ViewCache")
 @js.native
 object ViewCache extends js.Object {

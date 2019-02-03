@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Callout ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Callout
 
+/* static members */
 @JSImport("@blueprintjs/core", "Callout")
 @js.native
 object Callout extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class JapanesePhoneticAnalyzer () extends js.Object
 
-/** Reads a Japanese string that is a combination of Kanji characters and Hiragana characters, and returns a collection of proper readings from the string with word breaks. */
+/* static members */
 @JSGlobal("Windows.Globalization.JapanesePhoneticAnalyzer")
 @js.native
 object JapanesePhoneticAnalyzer extends js.Object {

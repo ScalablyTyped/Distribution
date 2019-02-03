@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KnuddelPotState () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/KnuddelPotState.html
-	 */
+/* static members */
 @JSGlobal("KnuddelPotState")
 @js.native
 object KnuddelPotState extends js.Object {

@@ -12,6 +12,7 @@ class WallGeometry protected ()
   def this(options: cesiumLib.Anon_EllipsoidGranularity) = this()
 }
 
+/* static members */
 @JSImport("cesium", "WallGeometry")
 @js.native
 object WallGeometry extends js.Object {

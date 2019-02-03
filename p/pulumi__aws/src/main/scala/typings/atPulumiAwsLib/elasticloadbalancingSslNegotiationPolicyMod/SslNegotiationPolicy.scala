@@ -39,6 +39,7 @@ class SslNegotiationPolicy protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/sslNegotiationPolicy", "SslNegotiationPolicy")
 @js.native
 object SslNegotiationPolicy extends js.Object {

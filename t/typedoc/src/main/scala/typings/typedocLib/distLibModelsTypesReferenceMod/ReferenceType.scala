@@ -18,6 +18,7 @@ class ReferenceType protected ()
   def equals(`type`: ReferenceType): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/models/types/reference", "ReferenceType")
 @js.native
 object ReferenceType extends js.Object {

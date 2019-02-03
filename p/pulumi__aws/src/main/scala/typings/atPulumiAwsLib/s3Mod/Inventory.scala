@@ -20,6 +20,7 @@ class Inventory protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3InventoryMod.InventoryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "Inventory")
 @js.native
 object Inventory extends js.Object {

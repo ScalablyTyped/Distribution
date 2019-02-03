@@ -36,6 +36,7 @@ class LifecyclePolicy protected ()
   val state: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dlm/lifecyclePolicy", "LifecyclePolicy")
 @js.native
 object LifecyclePolicy extends js.Object {

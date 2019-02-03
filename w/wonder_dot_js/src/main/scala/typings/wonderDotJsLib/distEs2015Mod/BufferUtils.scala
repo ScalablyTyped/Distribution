@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BufferUtils ()
   extends wonderDotJsLib.distEs2015UtilsBufferUtilsMod.BufferUtils
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "BufferUtils")
 @js.native
 object BufferUtils extends js.Object {

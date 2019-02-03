@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CoreApplication () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Core.CoreApplication")
 @js.native
 object CoreApplication extends js.Object {

@@ -31,6 +31,7 @@ class GetScriptLexicalStructureWalker protected ()
   /* private */ def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.GetScriptLexicalStructureWalker")
 @js.native
 object GetScriptLexicalStructureWalker extends js.Object {

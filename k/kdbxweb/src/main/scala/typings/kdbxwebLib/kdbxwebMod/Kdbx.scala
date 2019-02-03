@@ -40,6 +40,7 @@ class Kdbx () extends js.Object {
   def upgrade(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Kdbx")
 @js.native
 object Kdbx extends js.Object {

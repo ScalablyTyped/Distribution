@@ -13,6 +13,7 @@ class InnerSubscription protected ()
   def this(subject: wonderDashFrpLib.distEs2015SubjectSubjectMod.Subject, observer: wonderDashFrpLib.distEs2015CoreObserverMod.Observer) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "InnerSubscription")
 @js.native
 object InnerSubscription extends js.Object {

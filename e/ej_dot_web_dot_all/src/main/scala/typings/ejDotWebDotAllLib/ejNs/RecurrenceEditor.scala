@@ -33,6 +33,7 @@ class RecurrenceEditor protected () extends Widget {
   def recurrenceRuleSplit(recurrenceRule: java.lang.String, exDate: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("ej.RecurrenceEditor")
 @js.native
 object RecurrenceEditor extends js.Object {

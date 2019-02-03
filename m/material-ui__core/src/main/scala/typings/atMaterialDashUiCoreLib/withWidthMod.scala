@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object withWidthMod extends js.Object {
   def default(): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth, 
-    stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+    atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthProps
   ] = js.native
   def default(options: atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthOptions): atMaterialDashUiCoreLib.atMaterialDashUiCoreMod.PropInjector[
     atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth, 
-    stdLib.Partial[atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidth]
+    atMaterialDashUiCoreLib.withWidthWithWidthMod.WithWidthProps
   ] = js.native
   def isWidthDown(
     breakpoint: atMaterialDashUiCoreLib.stylesCreateBreakpointsMod.Breakpoint,

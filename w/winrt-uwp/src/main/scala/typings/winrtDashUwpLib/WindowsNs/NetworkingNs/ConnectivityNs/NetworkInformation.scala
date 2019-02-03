@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class NetworkInformation () extends js.Object
 
-/** Provides access to network connection information for the local machine. */
+/* static members */
 @JSGlobal("Windows.Networking.Connectivity.NetworkInformation")
 @js.native
 object NetworkInformation extends js.Object {

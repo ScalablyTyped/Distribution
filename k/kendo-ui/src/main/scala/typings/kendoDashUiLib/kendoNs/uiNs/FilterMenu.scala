@@ -17,6 +17,7 @@ class FilterMenu protected () extends Widget {
   def clear(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.FilterMenu")
 @js.native
 object FilterMenu extends js.Object {

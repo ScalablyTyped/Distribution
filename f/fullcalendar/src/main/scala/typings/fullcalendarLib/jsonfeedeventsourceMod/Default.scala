@@ -23,6 +23,7 @@ class Default ()
 @js.native
 class default () extends Default
 
+/* static members */
 @JSImport("fullcalendar/JsonFeedEventSource", "Default")
 @js.native
 object Default extends js.Object {
@@ -30,6 +31,7 @@ object Default extends js.Object {
   def parse(rawInput: js.Any, calendar: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/JsonFeedEventSource", JSImport.Default)
 @js.native
 object default extends js.Object {

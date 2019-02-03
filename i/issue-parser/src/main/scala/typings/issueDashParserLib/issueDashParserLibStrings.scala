@@ -18,9 +18,13 @@ object issueDashParserLibStrings {
   @js.native
   sealed trait waffle extends js.Object
   
+  @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  @scala.inline
   def github: github = "github".asInstanceOf[github]
+  @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
+  @scala.inline
   def waffle: waffle = "waffle".asInstanceOf[waffle]
 }
 

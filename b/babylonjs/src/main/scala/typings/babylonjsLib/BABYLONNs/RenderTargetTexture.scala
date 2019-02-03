@@ -293,11 +293,7 @@ class RenderTargetTexture protected () extends Texture {
   /* protected */ def unbindFrameBuffer(engine: Engine, faceIndex: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * This Helps creating a texture that will be created from a camera in your scene.
-  * It is basically a dynamic texture that could be used to create special effects for instance.
-  * Actually, It is the base of lot of effects in the framework like post process, shadows, effect layers and rendering pipelines...
-  */
+/* static members */
 @JSGlobal("BABYLON.RenderTargetTexture")
 @js.native
 object RenderTargetTexture extends js.Object {

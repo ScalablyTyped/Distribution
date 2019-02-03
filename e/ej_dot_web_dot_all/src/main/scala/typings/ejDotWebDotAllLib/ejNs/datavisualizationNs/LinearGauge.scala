@@ -530,6 +530,7 @@ class LinearGauge protected ()
   def setTickYDistanceFromScale(scaleIndex: scala.Double, tickIndex: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.LinearGauge")
 @js.native
 object LinearGauge extends js.Object {

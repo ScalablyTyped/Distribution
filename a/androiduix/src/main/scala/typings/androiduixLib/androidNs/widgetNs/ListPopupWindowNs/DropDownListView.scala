@@ -19,6 +19,7 @@ class DropDownListView protected ()
   /* private */ def setPressedItem(child: js.Any, position: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ListPopupWindow.DropDownListView")
 @js.native
 object DropDownListView extends js.Object {

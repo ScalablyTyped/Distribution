@@ -12,6 +12,7 @@ class IEDriver ()
   def this(opt_alternativeCdn: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries/iedriver", "IEDriver")
 @js.native
 object IEDriver extends js.Object {

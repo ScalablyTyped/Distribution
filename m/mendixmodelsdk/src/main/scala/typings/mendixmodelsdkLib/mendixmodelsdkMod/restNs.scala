@@ -126,13 +126,7 @@ object restNs extends js.Object {
   class RestOperationParameterType ()
     extends mendixmodelsdkLib.distGenAllDashModelDashClassesMod.restNs.RestOperationParameterType
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/consumed-odata-services relevant section in reference guide}
-    *
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.18.0: introduced
-    */
+  /* static members */
   @js.native
   object ConsumedODataService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -144,11 +138,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/cors-settings relevant section in reference guide}
-    *
-    * In version 7.18.0: introduced
-    */
+  /* static members */
   @js.native
   object CorsConfiguration extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -170,11 +160,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestService): mendixmodelsdkLib.distGenRestMod.restNs.CorsConfiguration = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.18.0: introduced
-    */
+  /* static members */
   @js.native
   object ODataEntity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -196,11 +182,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.ConsumedODataService): mendixmodelsdkLib.distGenRestMod.restNs.ODataEntity = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.22.0: introduced
-    */
+  /* static members */
   @js.native
   object ODataNavigationProperty extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -222,9 +204,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.ODataEntity): mendixmodelsdkLib.distGenRestMod.restNs.ODataNavigationProperty = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-odata-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PublishedODataService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -236,9 +216,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenRestMod.restNs.PublishedODataService = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-odata-resource relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PublishedRestResource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -257,12 +235,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.PublishedODataService): mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestResource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-rest-services relevant section in reference guide}
-    *
-    * In version 7.11.0: removed experimental
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object PublishedRestService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -274,12 +247,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestService = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-rest-operation relevant section in reference guide}
-    *
-    * In version 7.11.0: removed experimental
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object PublishedRestServiceOperation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -301,12 +269,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestServiceResource): mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestServiceOperation = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-rest-resource relevant section in reference guide}
-    *
-    * In version 7.11.0: removed experimental
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object PublishedRestServiceResource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -328,6 +291,7 @@ object restNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestService): mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestServiceResource = js.native
   }
   
+  /* static members */
   @js.native
   object RestAuthenticationType extends js.Object {
     var Basic: mendixmodelsdkLib.distGenRestMod.restNs.RestAuthenticationType = js.native
@@ -336,10 +300,7 @@ object restNs extends js.Object {
     var Session: mendixmodelsdkLib.distGenRestMod.restNs.RestAuthenticationType = js.native
   }
   
-  /**
-    * In version 7.11.0: removed experimental
-    * In version 7.8.0: introduced
-    */
+  /* static members */
   @js.native
   object RestOperationParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -370,6 +331,7 @@ object restNs extends js.Object {
     def createInPublishedRestServiceUnderParameters(container: mendixmodelsdkLib.distGenRestMod.restNs.PublishedRestService): mendixmodelsdkLib.distGenRestMod.restNs.RestOperationParameter = js.native
   }
   
+  /* static members */
   @js.native
   object RestOperationParameterType extends js.Object {
     var Body: mendixmodelsdkLib.distGenRestMod.restNs.RestOperationParameterType = js.native

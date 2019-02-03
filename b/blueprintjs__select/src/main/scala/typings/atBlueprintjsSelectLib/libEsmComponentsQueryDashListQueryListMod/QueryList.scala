@@ -64,6 +64,7 @@ class QueryList[T] protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/select/lib/esm/components/query-list/queryList", "QueryList")
 @js.native
 object QueryList extends js.Object {

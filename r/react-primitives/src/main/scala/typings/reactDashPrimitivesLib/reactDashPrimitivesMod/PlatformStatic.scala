@@ -9,6 +9,10 @@ trait PlatformStatic extends js.Object {
   var OS: PlatformOSType
   var Version: scala.Double | java.lang.String
   @JSName("select")
-  def select_default[T](specifics: reactDashPrimitivesLib.reactDashPrimitivesLibStrings.PlatformStatic with js.Any): T
+  def select_default[T](
+    specifics: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ platform in react-primitives.react-primitives.PlatformOSType | 'default' ]:? T}
+    */ reactDashPrimitivesLib.reactDashPrimitivesLibStrings.PlatformStatic with js.Any
+  ): T
 }
 

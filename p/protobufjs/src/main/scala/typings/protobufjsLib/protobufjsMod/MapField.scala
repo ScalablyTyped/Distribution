@@ -26,6 +26,7 @@ class MapField protected () extends FieldBase {
   var resolvedKeyType: ReflectionObject | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "MapField")
 @js.native
 object MapField extends js.Object {

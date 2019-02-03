@@ -34,6 +34,7 @@ class EnumDeclarationSyntax protected () extends SyntaxNode {
   def withOpenBraceToken(openBraceToken: ISyntaxToken): EnumDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.EnumDeclarationSyntax")
 @js.native
 object EnumDeclarationSyntax extends js.Object {

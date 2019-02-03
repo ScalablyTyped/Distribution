@@ -16,6 +16,7 @@ class InetAddress protected ()
   override def toInt(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("zipkin", "InetAddress")
 @js.native
 object InetAddress extends js.Object {

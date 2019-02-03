@@ -12,7 +12,9 @@ object markoLibStrings {
   @js.native
   sealed trait vdom extends js.Object
   
+  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
   def vdom: vdom = "vdom".asInstanceOf[vdom]
 }
 

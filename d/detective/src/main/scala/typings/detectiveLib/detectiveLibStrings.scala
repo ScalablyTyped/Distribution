@@ -15,8 +15,11 @@ object detectiveLibStrings {
   @js.native
   sealed trait script extends js.Object
   
+  @scala.inline
   def module: module = "module".asInstanceOf[module]
+  @scala.inline
   def never: never = "never".asInstanceOf[never]
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
 }
 

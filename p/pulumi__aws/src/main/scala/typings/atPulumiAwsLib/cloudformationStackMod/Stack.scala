@@ -82,6 +82,7 @@ class Stack protected ()
   val timeoutInMinutes: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudformation/stack", "Stack")
 @js.native
 object Stack extends js.Object {

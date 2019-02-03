@@ -29,6 +29,7 @@ class CancellationToken () extends js.Object {
   def throwIfCancellationRequested(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("prex/out/lib/cancellation", "CancellationToken")
 @js.native
 object CancellationToken extends js.Object {

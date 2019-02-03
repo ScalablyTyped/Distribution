@@ -76,6 +76,7 @@ class LinearLayout protected ()
   def setWeightSum(weightSum: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.LinearLayout")
 @js.native
 object LinearLayout extends js.Object {

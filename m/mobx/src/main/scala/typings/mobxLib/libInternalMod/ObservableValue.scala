@@ -12,5 +12,6 @@ class ObservableValue[T] protected ()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T]) = this()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String) = this()
   def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String, notifySpy: scala.Boolean) = this()
+  def this(value: T, enhancer: mobxLib.libTypesModifiersMod.IEnhancer[T], name: java.lang.String, notifySpy: scala.Boolean, equals: mobxLib.libUtilsComparerMod.IEqualsComparer[_]) = this()
 }
 

@@ -31,6 +31,7 @@ class PerspectiveFrustum ()
   ): cesiumLib.cesiumMod.CesiumNs.Cartesian2 = js.native
 }
 
+/* static members */
 @JSImport("cesium", "PerspectiveFrustum")
 @js.native
 object PerspectiveFrustum extends js.Object {

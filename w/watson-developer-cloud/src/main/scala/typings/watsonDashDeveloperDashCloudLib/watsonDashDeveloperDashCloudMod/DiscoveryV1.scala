@@ -32,6 +32,7 @@ class DiscoveryV1 protected () extends js.Object {
   def updateJsonDocument(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "DiscoveryV1")
 @js.native
 object DiscoveryV1 extends js.Object {

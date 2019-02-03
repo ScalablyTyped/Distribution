@@ -53,6 +53,7 @@ object cryptoNs extends js.Object {
     def getRandomBuffer(size: scala.Double): nodeLib.Buffer = js.native
   }
   
+  /* static members */
   @js.native
   object Signature extends js.Object {
     def fromDER(sig: nodeLib.Buffer): digibyteLib.digibyteMod.cryptoNs.Signature = js.native

@@ -11,6 +11,7 @@ class namespaced () extends Roll {
   def this(seed: js.Function0[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("roll", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

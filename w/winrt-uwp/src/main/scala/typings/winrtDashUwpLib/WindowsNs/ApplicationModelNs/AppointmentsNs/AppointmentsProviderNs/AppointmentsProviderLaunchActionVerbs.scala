@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppointmentsProviderLaunchActionVerbs () extends js.Object
 
-/** Represents the object associated with retrieving the operation of the appointments provider. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentsProvider.AppointmentsProviderLaunchActionVerbs")
 @js.native
 object AppointmentsProviderLaunchActionVerbs extends js.Object {

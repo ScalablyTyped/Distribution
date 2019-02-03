@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Config ()
   extends nodegitLib.configMod.Config
 
+/* static members */
 @JSImport("nodegit", "Config")
 @js.native
 object Config extends js.Object {

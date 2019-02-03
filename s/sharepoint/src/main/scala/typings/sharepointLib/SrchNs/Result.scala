@@ -73,6 +73,7 @@ class Result protected () extends DisplayControl {
   def viewDuplicates(docId: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Srch.Result")
 @js.native
 object Result extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PosPrinterCharacterSetIds () extends js.Object
 
-/** Represents the set of identifiers for the character sets that a point-of-service printer can use. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinterCharacterSetIds")
 @js.native
 object PosPrinterCharacterSetIds extends js.Object {

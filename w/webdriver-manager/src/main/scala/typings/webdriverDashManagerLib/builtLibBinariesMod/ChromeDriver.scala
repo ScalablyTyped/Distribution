@@ -12,6 +12,7 @@ class ChromeDriver ()
   def this(opt_alternativeCdn: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries", "ChromeDriver")
 @js.native
 object ChromeDriver extends js.Object {

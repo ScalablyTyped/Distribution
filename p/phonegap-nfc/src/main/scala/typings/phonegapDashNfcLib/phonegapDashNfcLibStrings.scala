@@ -9,6 +9,7 @@ object phonegapDashNfcLibStrings {
   @js.native
   sealed trait deviceready extends js.Object
   
+  @scala.inline
   def deviceready: deviceready = "deviceready".asInstanceOf[deviceready]
 }
 

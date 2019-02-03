@@ -15,6 +15,7 @@ class Unit protected () extends js.Object {
   def toSatoshis(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("bitcore-lib", "Unit")
 @js.native
 object Unit extends js.Object {

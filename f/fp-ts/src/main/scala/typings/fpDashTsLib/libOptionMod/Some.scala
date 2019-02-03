@@ -23,8 +23,8 @@ class Some[A] protected () extends js.Object {
   def filter(p: fpDashTsLib.libFunctionMod.Predicate[A]): Option[A] = js.native
   @JSName("filter")
   def filter_BA[B /* <: A */](p: fpDashTsLib.libFunctionMod.Refinement[A, B]): Option[B] = js.native
-  def fold[B](b: B, whenSome: js.Function1[/* a */ A, B]): B = js.native
-  def foldL[B](whenNone: js.Function0[B], whenSome: js.Function1[/* a */ A, B]): B = js.native
+  def fold[B](b: B, onSome: js.Function1[/* a */ A, B]): B = js.native
+  def foldL[B](onNone: js.Function0[B], onSome: js.Function1[/* a */ A, B]): B = js.native
   def getOrElse(a: A): A = js.native
   def getOrElseL(f: js.Function0[A]): A = js.native
   def inspect(): java.lang.String = js.native

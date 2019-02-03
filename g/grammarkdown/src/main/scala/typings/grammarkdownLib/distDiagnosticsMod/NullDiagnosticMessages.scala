@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class NullDiagnosticMessages () extends DiagnosticMessages
 
+/* static members */
 @JSImport("grammarkdown/dist/diagnostics", "NullDiagnosticMessages")
 @js.native
 object NullDiagnosticMessages extends js.Object {

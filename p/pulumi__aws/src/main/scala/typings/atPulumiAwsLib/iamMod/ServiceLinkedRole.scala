@@ -20,6 +20,7 @@ class ServiceLinkedRole protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamServiceLinkedRoleMod.ServiceLinkedRoleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "ServiceLinkedRole")
 @js.native
 object ServiceLinkedRole extends js.Object {

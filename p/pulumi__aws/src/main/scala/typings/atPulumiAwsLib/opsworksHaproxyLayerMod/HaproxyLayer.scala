@@ -109,6 +109,7 @@ class HaproxyLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/haproxyLayer", "HaproxyLayer")
 @js.native
 object HaproxyLayer extends js.Object {

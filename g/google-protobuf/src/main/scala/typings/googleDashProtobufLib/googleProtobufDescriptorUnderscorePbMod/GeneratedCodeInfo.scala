@@ -28,6 +28,7 @@ class GeneratedCodeInfo ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "GeneratedCodeInfo")
 @js.native
 object GeneratedCodeInfo extends js.Object {

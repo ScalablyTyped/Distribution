@@ -310,7 +310,9 @@ object ^ extends js.Object {
   def assertNever(x: scala.Nothing): scala.Nothing = js.native
   def assign(target: js.Any, args: js.Any*): js.Any = js.native
   def autobind[T /* <: js.Function */](target: js.Any, key: java.lang.String, descriptor: stdLib.TypedPropertyDescriptor[T]): atUifabricUtilitiesLib.Anon_Configurable[T] | scala.Unit = js.native
-  def buildClassMap[T](styles: T): officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.buildClassMap with js.Any = js.native
+  def buildClassMap[T](styles: T): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof T ]:? string}
+    */ officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.buildClassMap with js.Any = js.native
   def buildColumns(
     items: js.Array[_],
     canResizeColumns: js.UndefOr[scala.Boolean],
@@ -888,6 +890,7 @@ object ^ extends js.Object {
   ): scala.Double = js.native
   def getDocument(): js.UndefOr[reactLib.Document] = js.native
   def getDocument(rootElement: reactLib.HTMLElement): js.UndefOr[reactLib.Document] = js.native
+  def getElementIndexPath(fromElement: reactLib.HTMLElement, toElement: reactLib.HTMLElement): js.Array[scala.Double] = js.native
   def getFadedOverflowStyle(theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   def getFadedOverflowStyle(theme: atUifabricStylingLib.libInterfacesIThemeMod.ITheme, color: java.lang.String): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
   def getFadedOverflowStyle(
@@ -1016,6 +1019,7 @@ object ^ extends js.Object {
     outlineColor: js.UndefOr[java.lang.String],
     isFocusedOnly: js.UndefOr[scala.Boolean]
   ): atUifabricMergeDashStylesLib.libIStyleMod.IRawStyle = js.native
+  def getFocusableByIndexPath(parent: reactLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[reactLib.HTMLElement] = js.native
   def getFullColorString(color: officeDashUiDashFabricDashReactLib.libUtilitiesColorColorsMod.IColor): java.lang.String = js.native
   def getGlobalClassNames[T](
     classNames: atUifabricStylingLib.libStylesGetGlobalClassNamesMod.GlobalClassNames[T],

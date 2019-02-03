@@ -39,6 +39,7 @@ class Maybe[T] protected ()
   def valueOrThrow(error: stdLib.Error): T = js.native
 }
 
+/* static members */
 @JSImport("tsmonad/lib/src/maybe", "Maybe")
 @js.native
 object Maybe extends js.Object {

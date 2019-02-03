@@ -12,6 +12,7 @@ class GuideLineLayer[D] protected ()
   def this(orientation: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "GuideLineLayer")
 @js.native
 object GuideLineLayer extends js.Object {

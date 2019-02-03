@@ -21,6 +21,7 @@ class QualifiedNameSyntax protected () extends SyntaxNode {
   def withRight(right: ISyntaxToken): QualifiedNameSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.QualifiedNameSyntax")
 @js.native
 object QualifiedNameSyntax extends js.Object {

@@ -12,7 +12,9 @@ object detectDashIndentLibStrings {
   @js.native
   sealed trait tab extends js.Object
   
+  @scala.inline
   def space: space = "space".asInstanceOf[space]
+  @scala.inline
   def tab: tab = "tab".asInstanceOf[tab]
 }
 

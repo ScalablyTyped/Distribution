@@ -35,6 +35,7 @@ class Emitter () extends js.Object {
   def setMaxListeners(n: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("adone.event.Emitter")
 @js.native
 object Emitter extends js.Object {

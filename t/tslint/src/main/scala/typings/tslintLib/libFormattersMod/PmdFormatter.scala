@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PmdFormatter ()
   extends tslintLib.libFormattersPmdFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "PmdFormatter")
 @js.native
 object PmdFormatter extends js.Object {

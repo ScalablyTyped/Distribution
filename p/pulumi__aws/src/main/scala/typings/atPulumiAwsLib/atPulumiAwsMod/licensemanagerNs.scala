@@ -36,6 +36,7 @@ object licensemanagerNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.licensemanagerLicenseConfigurationMod.LicenseConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Association extends js.Object {
     /**
@@ -60,6 +61,7 @@ object licensemanagerNs extends js.Object {
     ): atPulumiAwsLib.licensemanagerAssociationMod.Association = js.native
   }
   
+  /* static members */
   @js.native
   object LicenseConfiguration extends js.Object {
     /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Validators () extends js.Object
 
+/* static members */
 @JSImport("@angular/forms/src/validators", "Validators")
 @js.native
 object Validators extends js.Object {

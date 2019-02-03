@@ -226,6 +226,7 @@ class NgTableParams[T] () extends js.Object {
   def url(asString: scala.Boolean): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/core/ngTableParams", "NgTableParams")
 @js.native
 object NgTableParams extends js.Object {

@@ -21,6 +21,7 @@ class Mesh protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appmeshMeshMod.MeshArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh", "Mesh")
 @js.native
 object Mesh extends js.Object {

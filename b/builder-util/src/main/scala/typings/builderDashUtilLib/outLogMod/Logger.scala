@@ -38,6 +38,7 @@ class Logger protected () extends js.Object {
   def warn(messageOrFields: scala.Null, message: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("builder-util/out/log", "Logger")
 @js.native
 object Logger extends js.Object {

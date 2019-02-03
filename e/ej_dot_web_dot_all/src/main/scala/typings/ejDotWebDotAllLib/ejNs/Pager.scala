@@ -42,6 +42,7 @@ class Pager protected () extends Widget {
   def refreshPager(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Pager")
 @js.native
 object Pager extends js.Object {

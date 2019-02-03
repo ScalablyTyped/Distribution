@@ -12,7 +12,9 @@ object atApollographqlGraphqlDashPlaygroundDashHtmlLibStrings {
   @js.native
   sealed trait light extends js.Object
   
+  @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
+  @scala.inline
   def light: light = "light".asInstanceOf[light]
 }
 

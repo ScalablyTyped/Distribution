@@ -20,6 +20,7 @@ class OneofDescriptorProto ()
   def setOptions(value: OneofOptions): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "OneofDescriptorProto")
 @js.native
 object OneofDescriptorProto extends js.Object {

@@ -20,6 +20,7 @@ class Color ()
   def this(scaleType: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales", "Color")
 @js.native
 object Color extends js.Object {

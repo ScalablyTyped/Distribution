@@ -72,9 +72,7 @@ class Effect protected ()
     ], indexParameters: js.UndefOr[js.Any]) = this()
 }
 
-/**
-  * Effect containing vertex and fragment shader that can be executed on an object.
-  */
+/* static members */
 @JSImport("babylonjs", "Effect")
 @js.native
 object Effect extends js.Object {

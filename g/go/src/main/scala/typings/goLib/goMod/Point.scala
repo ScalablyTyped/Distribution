@@ -192,9 +192,7 @@ class Point ()
   override def subtract(p: goLib.goMod.goNs.Point): goLib.goMod.goNs.Point = js.native
 }
 
-/**
-  * A Point represents an x- and y-coordinate pair in two-dimensional space.
-  */
+/* static members */
 @JSImport("go", "Point")
 @js.native
 object Point extends js.Object {

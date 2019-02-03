@@ -88,6 +88,7 @@ class ReplicationInstance protected ()
   val vpcSecurityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms/replicationInstance", "ReplicationInstance")
 @js.native
 object ReplicationInstance extends js.Object {

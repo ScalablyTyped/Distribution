@@ -15,8 +15,7 @@ class SQLError () extends js.Object {
   var message: DOMString = js.native
 }
 
-/** 4.6 Errors and exceptions - asynchronous database API error
-  */
+/* static members */
 @JSGlobal("SQLError")
 @js.native
 object SQLError extends js.Object {

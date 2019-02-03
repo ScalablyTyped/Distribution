@@ -43,10 +43,7 @@ class PhysicsImpostor protected ()
   `type`: scala.Double, _options: babylonjsLib.BABYLONNs.PhysicsImpostorParameters, _scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Represents a physics imposter
-  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSImport("babylonjs", "PhysicsImpostor")
 @js.native
 object PhysicsImpostor extends js.Object {

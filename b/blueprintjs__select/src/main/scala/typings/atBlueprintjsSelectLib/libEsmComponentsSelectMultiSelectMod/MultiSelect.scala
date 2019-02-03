@@ -23,6 +23,7 @@ class MultiSelect[T] ()
   var state_MultiSelect: IMultiSelectState = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect")
 @js.native
 object MultiSelect extends js.Object {

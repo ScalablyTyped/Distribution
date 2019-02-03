@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HapticFeedbackConstants () extends js.Object
 
+/* static members */
 @JSGlobal("android.view.HapticFeedbackConstants")
 @js.native
 object HapticFeedbackConstants extends js.Object {

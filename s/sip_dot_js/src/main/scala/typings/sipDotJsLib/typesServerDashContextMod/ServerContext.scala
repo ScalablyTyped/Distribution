@@ -38,6 +38,7 @@ class ServerContext protected ()
   def reply(options: js.Any): this.type = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/server-context", "ServerContext")
 @js.native
 object ServerContext extends js.Object {

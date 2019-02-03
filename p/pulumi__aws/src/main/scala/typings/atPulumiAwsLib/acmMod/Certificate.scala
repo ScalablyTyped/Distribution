@@ -21,6 +21,7 @@ class Certificate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.acmCertificateMod.CertificateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acm", "Certificate")
 @js.native
 object Certificate extends js.Object {

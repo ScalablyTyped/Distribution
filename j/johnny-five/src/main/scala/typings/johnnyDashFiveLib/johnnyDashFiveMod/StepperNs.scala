@@ -11,6 +11,7 @@ object StepperNs extends js.Object {
   @js.native
   class TYPE () extends js.Object
   
+  /* static members */
   @js.native
   object TYPE extends js.Object {
     var DRIVER: scala.Double = js.native

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TypedocReader ()
   extends typedocLib.distLibUtilsOptionsReadersTypedocMod.TypedocReader
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/readers", "TypedocReader")
 @js.native
 object TypedocReader extends js.Object {

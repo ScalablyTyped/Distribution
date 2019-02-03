@@ -20,6 +20,7 @@ class ClusterSnapshot protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.neptuneClusterSnapshotMod.ClusterSnapshotArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/neptune", "ClusterSnapshot")
 @js.native
 object ClusterSnapshot extends js.Object {

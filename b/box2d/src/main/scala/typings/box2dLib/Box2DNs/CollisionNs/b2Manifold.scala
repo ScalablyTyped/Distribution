@@ -47,6 +47,7 @@ class b2Manifold () extends js.Object {
   def Set(m: b2Manifold): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Collision.b2Manifold")
 @js.native
 object b2Manifold extends js.Object {

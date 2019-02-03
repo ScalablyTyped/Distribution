@@ -20,6 +20,7 @@ class CustomLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksCustomLayerMod.CustomLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "CustomLayer")
 @js.native
 object CustomLayer extends js.Object {

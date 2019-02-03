@@ -34,17 +34,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.ZoomSliderOptions) = this()
 }
 
-/**
-  * @classdesc
-  * A slider type of control for zooming.
-  *
-  * Example:
-  *
-  *     map.addControl(new ol.control.ZoomSlider());
-  *
-  * @param opt_options Zoom slider options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/control/zoomslider", JSImport.Default)
 @js.native
 object default extends js.Object {

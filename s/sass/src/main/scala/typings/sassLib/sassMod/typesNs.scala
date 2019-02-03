@@ -75,6 +75,7 @@ object typesNs extends js.Object {
   }
   
   val Null: Null = js.native
+  /* static members */
   @js.native
   object Boolean extends js.Object {
     val FALSE: sassLib.sassMod.typesNs.Boolean[sassLib.sassLibNumbers.`false`] = js.native

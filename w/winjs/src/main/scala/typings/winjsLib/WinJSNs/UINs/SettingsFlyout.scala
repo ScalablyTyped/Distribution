@@ -103,9 +103,7 @@ class SettingsFlyout () extends js.Object {
   def show(): scala.Unit = js.native
 }
 
-/**
-  * Provides users with fast, in-context access to settings that affect the current Windows Store app.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SettingsFlyout")
 @js.native
 object SettingsFlyout extends js.Object {

@@ -27,6 +27,7 @@ object eksNs extends js.Object {
     args: atPulumiAwsLib.eksGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyStorageProviderNames () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
 @js.native
 object KeyStorageProviderNames extends js.Object {

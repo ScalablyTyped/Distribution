@@ -12,6 +12,7 @@ class TimelineLite ()
   def this(vars: js.Object) = this()
 }
 
+/* static members */
 @JSImport("gsap", "TimelineLite")
 @js.native
 object TimelineLite extends js.Object {

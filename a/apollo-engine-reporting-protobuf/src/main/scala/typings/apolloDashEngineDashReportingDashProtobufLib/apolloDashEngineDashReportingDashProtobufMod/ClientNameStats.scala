@@ -16,6 +16,7 @@ class ClientNameStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IClientNameStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "ClientNameStats")
 @js.native
 object ClientNameStats extends js.Object {

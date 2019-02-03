@@ -18,6 +18,7 @@ class OrientationSensor () extends IOrientationSensor {
   override def getCurrentReading(): OrientationSensorReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.OrientationSensor")
 @js.native
 object OrientationSensor extends js.Object {

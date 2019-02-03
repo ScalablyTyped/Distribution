@@ -23,6 +23,7 @@ class MeshRenderer ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/renderer/MeshRenderer", "MeshRenderer")
 @js.native
 object MeshRenderer extends js.Object {

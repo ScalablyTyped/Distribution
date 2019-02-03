@@ -19,9 +19,7 @@ class PointerDragBehavior ()
   def this(options: babylonjsLib.Anon_DragAxis) = this()
 }
 
-/**
-  * A behavior that when attached to a mesh will allow the mesh to be dragged around the screen based on pointer events
-  */
+/* static members */
 @JSImport("babylonjs", "PointerDragBehavior")
 @js.native
 object PointerDragBehavior extends js.Object {

@@ -36,6 +36,7 @@ class Tag protected () extends js.Object {
   def isRenderable(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("chordsheetjs", "Tag")
 @js.native
 object Tag extends js.Object {

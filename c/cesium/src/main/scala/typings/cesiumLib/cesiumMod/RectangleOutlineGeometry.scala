@@ -12,6 +12,7 @@ class RectangleOutlineGeometry protected ()
   def this(options: cesiumLib.Anon_EllipsoidExtrudedHeightGranularityHeightRectangleRotation) = this()
 }
 
+/* static members */
 @JSImport("cesium", "RectangleOutlineGeometry")
 @js.native
 object RectangleOutlineGeometry extends js.Object {

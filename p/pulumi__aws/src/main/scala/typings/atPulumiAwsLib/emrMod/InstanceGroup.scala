@@ -20,6 +20,7 @@ class InstanceGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.emrInstanceGroupMod.InstanceGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/emr", "InstanceGroup")
 @js.native
 object InstanceGroup extends js.Object {

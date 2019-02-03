@@ -14,6 +14,7 @@ class namespaced () extends Hls {
   def this(config: stdLib.Partial[hlsDotJsLib.hlsDotJsMod.HlsNs.Config]) = this()
 }
 
+/* static members */
 @JSImport("hls.js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

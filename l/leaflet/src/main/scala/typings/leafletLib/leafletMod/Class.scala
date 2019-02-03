@@ -9,13 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Class () extends js.Object
 
+/* static members */
 @JSImport("leaflet", "Class")
 @js.native
 object Class extends js.Object {
-  def addInitHook(initHookFn: js.Function0[scala.Unit]): js.Any = js.native
-  def addInitHook(methodName: java.lang.String, args: js.Any*): js.Any = js.native
-  def extend(props: js.Any): leafletLib.Anon_Args = js.native
-  def include(props: js.Any): js.Any = js.native
-  def mergeOptions(props: js.Any): js.Any = js.native
+  def addInitHook(initHookFn: js.Function0[scala.Unit]): js.Any with leafletLib.Anon_AddInitHook = js.native
+  def addInitHook(methodName: java.lang.String, args: js.Any*): js.Any with leafletLib.Anon_AddInitHook = js.native
+  def extend(props: js.Any): leafletLib.Anon_Args with leafletLib.Anon_AddInitHook = js.native
+  def include(props: js.Any): js.Any with leafletLib.Anon_AddInitHook = js.native
+  def mergeOptions(props: js.Any): js.Any with leafletLib.Anon_AddInitHook = js.native
 }
 

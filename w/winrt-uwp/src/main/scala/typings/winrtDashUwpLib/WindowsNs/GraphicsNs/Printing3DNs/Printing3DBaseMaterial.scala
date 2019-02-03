@@ -16,7 +16,7 @@ class Printing3DBaseMaterial () extends js.Object {
   var name: java.lang.String = js.native
 }
 
-/** Represents the base material used for manufacturing certain objects in the 3D model. */
+/* static members */
 @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterial")
 @js.native
 object Printing3DBaseMaterial extends js.Object {

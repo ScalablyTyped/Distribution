@@ -246,6 +246,7 @@ class Duration () extends js.Object {
   def years(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("timezonecomplete/dist/lib/duration", "Duration")
 @js.native
 object Duration extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RoomProperties () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Match.RoomProperties")
 @js.native
 object RoomProperties extends js.Object {

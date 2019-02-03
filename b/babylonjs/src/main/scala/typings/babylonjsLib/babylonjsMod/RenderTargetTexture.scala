@@ -35,11 +35,7 @@ class RenderTargetTexture protected ()
   def this(name: java.lang.String, size: scala.Double, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene], generateMipMaps: js.UndefOr[scala.Boolean], doNotChangeAspectRatio: js.UndefOr[scala.Boolean], `type`: js.UndefOr[scala.Double], isCube: js.UndefOr[scala.Boolean], samplingMode: js.UndefOr[scala.Double], generateDepthBuffer: js.UndefOr[scala.Boolean], generateStencilBuffer: js.UndefOr[scala.Boolean], isMulti: js.UndefOr[scala.Boolean], format: js.UndefOr[scala.Double]) = this()
 }
 
-/**
-  * This Helps creating a texture that will be created from a camera in your scene.
-  * It is basically a dynamic texture that could be used to create special effects for instance.
-  * Actually, It is the base of lot of effects in the framework like post process, shadows, effect layers and rendering pipelines...
-  */
+/* static members */
 @JSImport("babylonjs", "RenderTargetTexture")
 @js.native
 object RenderTargetTexture extends js.Object {

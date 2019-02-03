@@ -48,9 +48,7 @@ class Animation protected ()
   enableBlending: scala.Boolean) = this()
 }
 
-/**
-  * Class used to store any kind of animation
-  */
+/* static members */
 @JSImport("babylonjs", "Animation")
 @js.native
 object Animation extends js.Object {

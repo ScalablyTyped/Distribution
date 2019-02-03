@@ -12,6 +12,7 @@ class RouterModule protected ()
   def this(guard: js.Any, router: atAngularRouterLib.srcRouterMod.Router) = this()
 }
 
+/* static members */
 @JSImport("@angular/router/src", "RouterModule")
 @js.native
 object RouterModule extends js.Object {

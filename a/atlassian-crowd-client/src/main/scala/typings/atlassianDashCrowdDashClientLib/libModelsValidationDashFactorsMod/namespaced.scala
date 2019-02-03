@@ -15,6 +15,7 @@ class namespaced protected () extends ValidationFactors {
   override def toCrowd(): ValidationFactorsObj = js.native
 }
 
+/* static members */
 @JSImport("atlassian-crowd-client/lib/models/validation-factors", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

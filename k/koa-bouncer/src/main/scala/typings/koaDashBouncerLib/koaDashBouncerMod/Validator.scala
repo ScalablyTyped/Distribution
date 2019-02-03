@@ -12,6 +12,7 @@ class Validator protected ()
   def this(props: koaDashBouncerLib.Anon_Ctx) = this()
 }
 
+/* static members */
 @JSImport("koa-bouncer", "Validator")
 @js.native
 object Validator extends js.Object {

@@ -45,18 +45,31 @@ object electronDashPackagerLibStrings {
   @js.native
   sealed trait x64 extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def arm64: arm64 = "arm64".asInstanceOf[arm64]
+  @scala.inline
   def armv7l: armv7l = "armv7l".asInstanceOf[armv7l]
+  @scala.inline
   def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
+  @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
+  @scala.inline
   def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
+  @scala.inline
   def ia32: ia32 = "ia32".asInstanceOf[ia32]
+  @scala.inline
   def linux: linux = "linux".asInstanceOf[linux]
+  @scala.inline
   def mas: mas = "mas".asInstanceOf[mas]
+  @scala.inline
   def mips64el: mips64el = "mips64el".asInstanceOf[mips64el]
+  @scala.inline
   def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
+  @scala.inline
   def win32: win32 = "win32".asInstanceOf[win32]
+  @scala.inline
   def x64: x64 = "x64".asInstanceOf[x64]
 }
 

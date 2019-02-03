@@ -12,6 +12,7 @@ class ClassDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, classKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeParameterList: typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, heritageClauses: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, classElements: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ClassDeclarationSyntax")
 @js.native
 object ClassDeclarationSyntax extends js.Object {

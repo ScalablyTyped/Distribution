@@ -21,10 +21,15 @@ object browserifyLibStrings {
   @js.native
   sealed trait transform extends js.Object
   
+  @scala.inline
   def PACKAGE: PACKAGE = "package".asInstanceOf[PACKAGE]
+  @scala.inline
   def bundle: bundle = "bundle".asInstanceOf[bundle]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def transform: transform = "transform".asInstanceOf[transform]
 }
 

@@ -37,6 +37,7 @@ class Reader protected ()
   def unpause(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("nsqjs", "Reader")
 @js.native
 object Reader extends js.Object {

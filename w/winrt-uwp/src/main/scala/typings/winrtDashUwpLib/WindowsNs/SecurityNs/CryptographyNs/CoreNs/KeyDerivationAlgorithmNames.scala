@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KeyDerivationAlgorithmNames () extends js.Object
 
-/** Contains static properties that enable you to retrieve algorithm names that can be used in the OpenAlgorithm method of the KeyDerivationAlgorithmProvider class. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationAlgorithmNames")
 @js.native
 object KeyDerivationAlgorithmNames extends js.Object {

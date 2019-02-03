@@ -12,6 +12,7 @@ class LocalQueryComparisonOptions protected () extends js.Object {
   def setAsDefault(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.LocalQueryComparisonOptions")
 @js.native
 object LocalQueryComparisonOptions extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Loader () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Loader")
 @js.native
 object Loader extends js.Object {

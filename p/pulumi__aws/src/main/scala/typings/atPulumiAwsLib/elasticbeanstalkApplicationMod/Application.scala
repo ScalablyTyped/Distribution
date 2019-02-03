@@ -30,6 +30,7 @@ class Application protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk/application", "Application")
 @js.native
 object Application extends js.Object {

@@ -12,6 +12,7 @@ class MetadataStore ()
   def this(config: breezeLib.breezeNs.MetadataStoreOptions) = this()
 }
 
+/* static members */
 @JSImport("breeze", "MetadataStore")
 @js.native
 object MetadataStore extends js.Object {

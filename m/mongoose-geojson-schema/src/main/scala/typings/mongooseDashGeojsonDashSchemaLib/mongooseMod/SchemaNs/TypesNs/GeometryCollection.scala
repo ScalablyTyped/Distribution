@@ -14,6 +14,7 @@ class GeometryCollection protected ()
   def cast(geojson: js.Object): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("mongoose.Schema.Types.GeometryCollection")
 @js.native
 object GeometryCollection extends js.Object {

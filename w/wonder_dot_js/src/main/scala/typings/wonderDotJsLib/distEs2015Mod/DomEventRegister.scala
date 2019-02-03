@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DomEventRegister ()
   extends wonderDotJsLib.distEs2015EventBinderDomEventRegisterMod.DomEventRegister
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "DomEventRegister")
 @js.native
 object DomEventRegister extends js.Object {

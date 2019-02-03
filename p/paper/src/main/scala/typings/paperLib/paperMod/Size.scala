@@ -37,6 +37,7 @@ class Size protected ()
   def this(width: scala.Double, height: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("paper", "Size")
 @js.native
 object Size extends js.Object {

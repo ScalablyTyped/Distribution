@@ -12,7 +12,9 @@ object portscannerLibStrings {
   @js.native
   sealed trait open extends js.Object
   
+  @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
 }
 

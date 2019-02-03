@@ -13,6 +13,7 @@ class Int32Value ()
   def setValue(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int32Value")
 @js.native
 object Int32Value extends js.Object {

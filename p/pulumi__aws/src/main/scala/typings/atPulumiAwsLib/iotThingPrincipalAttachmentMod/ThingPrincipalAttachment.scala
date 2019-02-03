@@ -28,6 +28,7 @@ class ThingPrincipalAttachment protected ()
   val thing: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/thingPrincipalAttachment", "ThingPrincipalAttachment")
 @js.native
 object ThingPrincipalAttachment extends js.Object {

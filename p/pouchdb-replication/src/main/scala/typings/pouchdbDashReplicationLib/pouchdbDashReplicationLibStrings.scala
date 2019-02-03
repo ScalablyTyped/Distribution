@@ -36,15 +36,25 @@ object pouchdbDashReplicationLibStrings {
   @js.native
   sealed trait target extends js.Object
   
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
+  @scala.inline
   def pull: pull = "pull".asInstanceOf[pull]
+  @scala.inline
   def push: push = "push".asInstanceOf[push]
+  @scala.inline
   def source: source = "source".asInstanceOf[source]
+  @scala.inline
   def target: target = "target".asInstanceOf[target]
 }
 

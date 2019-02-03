@@ -149,6 +149,7 @@ class RTE protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.RTE")
 @js.native
 object RTE extends js.Object {

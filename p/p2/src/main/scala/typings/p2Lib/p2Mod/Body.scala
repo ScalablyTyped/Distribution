@@ -20,6 +20,7 @@ class Body ()
   override def on(`type`: java.lang.String, listener: js.Function, context: js.Any): p2Lib.p2Mod.p2Ns.EventEmitter = js.native
 }
 
+/* static members */
 @JSImport("p2", "Body")
 @js.native
 object Body extends js.Object {

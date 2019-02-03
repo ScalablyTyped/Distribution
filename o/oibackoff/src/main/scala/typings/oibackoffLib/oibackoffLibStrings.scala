@@ -15,8 +15,11 @@ object oibackoffLibStrings {
   @js.native
   sealed trait incremental extends js.Object
   
+  @scala.inline
   def exponential: exponential = "exponential".asInstanceOf[exponential]
+  @scala.inline
   def fibonacci: fibonacci = "fibonacci".asInstanceOf[fibonacci]
+  @scala.inline
   def incremental: incremental = "incremental".asInstanceOf[incremental]
 }
 

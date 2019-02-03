@@ -68,6 +68,7 @@ class PlatformApplication protected ()
   val successFeedbackSampleRate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns/platformApplication", "PlatformApplication")
 @js.native
 object PlatformApplication extends js.Object {

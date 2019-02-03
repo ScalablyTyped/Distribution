@@ -18,10 +18,7 @@ import scala.scalajs.js.annotation._
 class GridLayout ()
   extends goLib.goMod.goNs.GridLayout
 
-/**
-  * This simple layout places all of the Parts in a grid-like arrangement, ordered, spaced apart,
-  * and wrapping as needed.  It ignores any Links connecting the Nodes being laid out.
-  */
+/* static members */
 @JSImport("go", "GridLayout")
 @js.native
 object GridLayout extends js.Object {

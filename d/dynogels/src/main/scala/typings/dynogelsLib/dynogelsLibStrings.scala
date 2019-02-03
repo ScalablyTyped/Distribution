@@ -15,8 +15,11 @@ object dynogelsLibStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
   def create: create = "create".asInstanceOf[create]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
 }
 

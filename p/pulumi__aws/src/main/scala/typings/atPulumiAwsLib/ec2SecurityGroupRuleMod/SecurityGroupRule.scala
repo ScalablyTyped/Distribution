@@ -68,6 +68,7 @@ class SecurityGroupRule protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/securityGroupRule", "SecurityGroupRule")
 @js.native
 object SecurityGroupRule extends js.Object {

@@ -36,6 +36,7 @@ object eddsaNs extends js.Object {
     def toHex(): java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object KeyPair extends js.Object {
     def fromPublic(eddsa: ellipticLib.ellipticMod.eddsa, pub: ellipticLib.ellipticMod.eddsaNs.Bytes): ellipticLib.ellipticMod.eddsaNs.KeyPair = js.native

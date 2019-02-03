@@ -20,6 +20,7 @@ class RTreeBounds protected () extends js.Object {
   def contains(xy: plottableLib.buildSrcCoreInterfacesMod.Point): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/utils/rTree", "RTreeBounds")
 @js.native
 object RTreeBounds extends js.Object {

@@ -50,6 +50,7 @@ class DecorationSet[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   def remove(decorations: js.Array[Decoration]): DecorationSet[S] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-view", "DecorationSet")
 @js.native
 object DecorationSet extends js.Object {

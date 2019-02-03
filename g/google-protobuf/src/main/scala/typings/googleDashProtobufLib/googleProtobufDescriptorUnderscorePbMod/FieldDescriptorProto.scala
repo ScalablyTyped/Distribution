@@ -52,6 +52,7 @@ class FieldDescriptorProto ()
   def setTypeName(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldDescriptorProto")
 @js.native
 object FieldDescriptorProto extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Sticky
 
-/** A performant and comprehensive React sticky component. */
+/* static members */
 @JSImport("react-stickynode", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -18,9 +18,13 @@ object emscriptenLibStrings {
   @js.native
   sealed trait WORKER extends js.Object
   
+  @scala.inline
   def NODE: NODE = "NODE".asInstanceOf[NODE]
+  @scala.inline
   def SHELL: SHELL = "SHELL".asInstanceOf[SHELL]
+  @scala.inline
   def WEB: WEB = "WEB".asInstanceOf[WEB]
+  @scala.inline
   def WORKER: WORKER = "WORKER".asInstanceOf[WORKER]
 }
 

@@ -16,6 +16,7 @@ class Signature protected ()
   override def toString(format: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sshpk", "Signature")
 @js.native
 object Signature extends js.Object {

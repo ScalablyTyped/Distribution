@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ServiceDevice () extends js.Object
 
-/** Provides methods for identifying a device service for a portable device that supports WPD (Windows Portable Devices) for device enumeration. */
+/* static members */
 @JSGlobal("Windows.Devices.Portable.ServiceDevice")
 @js.native
 object ServiceDevice extends js.Object {

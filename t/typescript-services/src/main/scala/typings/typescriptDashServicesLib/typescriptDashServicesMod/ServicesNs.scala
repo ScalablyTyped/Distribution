@@ -229,6 +229,7 @@ object ServicesNs extends js.Object {
     actionDescription: java.lang.String,
     action: js.Function0[_]
   ): js.Any = js.native
+  /* static members */
   @js.native
   object BraceMatcher extends js.Object {
     def getMatchSpans(syntaxTree: typescriptDashServicesLib.TypeScriptNs.SyntaxTree, position: scala.Double): js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan] = js.native
@@ -244,6 +245,7 @@ object ServicesNs extends js.Object {
     def getBreakpointLocation(syntaxTree: typescriptDashServicesLib.TypeScriptNs.SyntaxTree, askedPos: scala.Double): typescriptDashServicesLib.TypeScriptNs.ServicesNs.SpanInfo = js.native
   }
   
+  /* static members */
   @js.native
   object CompletionHelpers extends js.Object {
     def filterContextualMembersList(
@@ -262,6 +264,7 @@ object ServicesNs extends js.Object {
     /* private */ def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object DiagnosticCategory extends js.Object {
     var error: java.lang.String = js.native
@@ -270,6 +273,7 @@ object ServicesNs extends js.Object {
     var warning: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object EditorOptions extends js.Object {
     def clone(objectToClone: typescriptDashServicesLib.TypeScriptNs.ServicesNs.EditorOptions): typescriptDashServicesLib.TypeScriptNs.ServicesNs.EditorOptions = js.native
@@ -287,6 +291,7 @@ object ServicesNs extends js.Object {
       ] = js.native
   }
   
+  /* static members */
   @js.native
   object FindReferenceHelpers extends js.Object {
     /* private */ def checkSymbolsForDeclarationEquality(firstSymbol: js.Any, secondSymbol: js.Any): js.Any = js.native
@@ -297,6 +302,7 @@ object ServicesNs extends js.Object {
     /* private */ def declarationsAreSameOrParents(firstDecl: js.Any, secondDecl: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object FormatCodeOptions extends js.Object {
     def clone(objectToClone: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormatCodeOptions): typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormatCodeOptions = js.native
@@ -426,6 +432,7 @@ object ServicesNs extends js.Object {
       def this(kind: typescriptDashServicesLib.TypeScriptNs.SyntaxKind, start: scala.Double, length: scala.Double) = this()
     }
     
+    /* static members */
     @js.native
     object Formatter extends js.Object {
       def getEdits(
@@ -465,6 +472,7 @@ object ServicesNs extends js.Object {
           ] = js.native
     }
     
+    /* static members */
     @js.native
     object RuleDescriptor extends js.Object {
       def create1(
@@ -495,6 +503,7 @@ object ServicesNs extends js.Object {
           ] = js.native
     }
     
+    /* static members */
     @js.native
     object RuleOperation extends js.Object {
       def create1(action: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleAction): typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleOperation = js.native
@@ -504,11 +513,13 @@ object ServicesNs extends js.Object {
       ): typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleOperation = js.native
     }
     
+    /* static members */
     @js.native
     object RuleOperationContext extends js.Object {
       var Any: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RuleOperationContext = js.native
     }
     
+    /* static members */
     @js.native
     object Rules extends js.Object {
       def IsAfterCodeBlockContext(context: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.FormattingContext): scala.Boolean = js.native
@@ -543,6 +554,7 @@ object ServicesNs extends js.Object {
       def NodeIsTypeScriptDeclWithBlockContext(node: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.IndentationNodeContext): scala.Boolean = js.native
     }
     
+    /* static members */
     @js.native
     object RulesMap extends js.Object {
       def create(rules: js.Array[typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.Rule]): typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesMap = js.native
@@ -593,6 +605,7 @@ object ServicesNs extends js.Object {
         def this(tks: js.Array[typescriptDashServicesLib.TypeScriptNs.SyntaxKind]) = this()
       }
       
+      /* static members */
       @js.native
       object TokenRange extends js.Object {
         var Any: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.SharedNs.TokenRange = js.native
@@ -626,6 +639,7 @@ object ServicesNs extends js.Object {
       
     }
     
+    /* static members */
     @js.native
     object SingleTokenIndenter extends js.Object {
       def getIndentationAmount(
@@ -642,6 +656,7 @@ object ServicesNs extends js.Object {
     type RulesPosition = typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.RulesPosition
   }
   
+  /* static members */
   @js.native
   object GetScriptLexicalStructureWalker extends js.Object {
     def getListsOfAllScriptLexicalStructure(
@@ -651,6 +666,7 @@ object ServicesNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Indenter extends js.Object {
     /* private */ def belongsToBracket(sourceText: js.Any, token: js.Any, position: js.Any): js.Any = js.native
@@ -665,6 +681,7 @@ object ServicesNs extends js.Object {
     /* private */ def isInContainerNode(parent: js.Any, element: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object KeywordCompletions extends js.Object {
     var keywordCompletions: js.Any = js.native
@@ -672,12 +689,14 @@ object ServicesNs extends js.Object {
     def getKeywordCompltions(): js.Array[typescriptDashServicesLib.TypeScriptNs.ServicesNs.ResolvedCompletionEntry] = js.native
   }
   
+  /* static members */
   @js.native
   object LanguageServiceShim extends js.Object {
     /* private */ def realizeDiagnostic(diagnostic: js.Any): js.Any = js.native
     /* private */ def realizeDiagnosticCategory(category: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object MatchKind extends js.Object {
     var exact: java.lang.String = js.native
@@ -686,12 +705,14 @@ object ServicesNs extends js.Object {
     var subString: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object OutliningElementsCollector extends js.Object {
     var MaximumDepth: js.Any = js.native
     def collectElements(node: typescriptDashServicesLib.TypeScriptNs.SourceUnitSyntax): js.Array[typescriptDashServicesLib.TypeScriptNs.TextSpan] = js.native
   }
   
+  /* static members */
   @js.native
   object ScriptElementKind extends js.Object {
     var callSignatureElement: java.lang.String = js.native
@@ -718,6 +739,7 @@ object ServicesNs extends js.Object {
     var variableElement: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object ScriptElementKindModifier extends js.Object {
     var ambientModifier: java.lang.String = js.native
@@ -728,6 +750,7 @@ object ServicesNs extends js.Object {
     var staticModifier: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object SignatureInfoHelpers extends js.Object {
     def getActualSignatureInfoFromCallExpression(
@@ -756,6 +779,7 @@ object ServicesNs extends js.Object {
     /* private */ def moveBackUpTillMatchingTokenKind(token: js.Any, tokenKind: js.Any, matchingTokenKind: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object TextEdit extends js.Object {
     def createDelete(minChar: scala.Double, limChar: scala.Double): typescriptDashServicesLib.TypeScriptNs.ServicesNs.TextEdit = js.native

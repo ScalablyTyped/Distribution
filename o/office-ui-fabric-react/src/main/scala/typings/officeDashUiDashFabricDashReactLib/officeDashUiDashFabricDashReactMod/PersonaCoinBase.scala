@@ -13,6 +13,7 @@ class PersonaCoinBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaCoinProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "PersonaCoinBase")
 @js.native
 object PersonaCoinBase extends js.Object {

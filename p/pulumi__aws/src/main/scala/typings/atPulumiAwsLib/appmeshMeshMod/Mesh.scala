@@ -37,6 +37,7 @@ class Mesh protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh/mesh", "Mesh")
 @js.native
 object Mesh extends js.Object {

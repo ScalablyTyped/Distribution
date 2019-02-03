@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Cred ()
   extends nodegitLib.credMod.Cred
 
+/* static members */
 @JSImport("nodegit", "Cred")
 @js.native
 object Cred extends js.Object {

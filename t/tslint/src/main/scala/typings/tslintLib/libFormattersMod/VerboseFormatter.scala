@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class VerboseFormatter ()
   extends tslintLib.libFormattersVerboseFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "VerboseFormatter")
 @js.native
 object VerboseFormatter extends js.Object {

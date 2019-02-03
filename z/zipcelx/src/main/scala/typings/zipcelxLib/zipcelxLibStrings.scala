@@ -12,7 +12,9 @@ object zipcelxLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

@@ -14,6 +14,7 @@ class Dot () extends Modifier {
   def setNote_Unit(note: Note): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Dot")
 @js.native
 object Dot extends js.Object {

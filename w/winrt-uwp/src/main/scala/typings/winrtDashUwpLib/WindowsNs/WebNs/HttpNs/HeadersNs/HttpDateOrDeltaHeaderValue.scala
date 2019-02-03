@@ -15,7 +15,7 @@ abstract class HttpDateOrDeltaHeaderValue () extends js.Object {
   var delta: scala.Double = js.native
 }
 
-/** Represents the value of the Retry-After HTTP header on an HTTP response. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpDateOrDeltaHeaderValue")
 @js.native
 object HttpDateOrDeltaHeaderValue extends js.Object {

@@ -86,9 +86,7 @@ class MenuCommand () extends js.Object {
   def removeEventListener(`type`: java.lang.String, listener: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Represents a command to be displayed in a Menu object.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.MenuCommand")
 @js.native
 object MenuCommand extends js.Object {

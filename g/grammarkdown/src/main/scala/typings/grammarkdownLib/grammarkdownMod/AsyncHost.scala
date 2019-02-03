@@ -12,6 +12,7 @@ class AsyncHost ()
   def this(hasReadFileWriteFileBaseOptions: grammarkdownLib.distHostMod.AsyncHostOptions) = this()
 }
 
+/* static members */
 @JSImport("grammarkdown", "AsyncHost")
 @js.native
 object AsyncHost extends js.Object {

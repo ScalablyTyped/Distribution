@@ -18,6 +18,7 @@ class Legend protected ()
   def this(colorScale: plottableLib.buildSrcScalesMod.Color) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "Legend")
 @js.native
 object Legend extends js.Object {

@@ -29,6 +29,7 @@ class QuerySet[Fields, Additional, VirtualFields] protected () extends js.Object
   def update(mergeObj: stdLib.Partial[Fields with Additional]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("redux-orm", "QuerySet")
 @js.native
 object QuerySet extends js.Object {

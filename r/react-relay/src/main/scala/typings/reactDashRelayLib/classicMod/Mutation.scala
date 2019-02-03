@@ -12,6 +12,7 @@ class Mutation[T, S] protected () extends js.Object {
   var props: T = js.native
 }
 
+/* static members */
 @JSImport("react-relay/classic", "Mutation")
 @js.native
 object Mutation extends js.Object {

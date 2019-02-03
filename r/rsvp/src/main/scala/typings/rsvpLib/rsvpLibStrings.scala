@@ -42,17 +42,29 @@ object rsvpLibStrings {
   @js.native
   sealed trait rejected extends js.Object
   
+  @scala.inline
   def Anon_Arg1: Anon_Arg1 = "Anon_Arg1".asInstanceOf[Anon_Arg1]
+  @scala.inline
   def Anon_Label: Anon_Label = "Anon_Label".asInstanceOf[Anon_Label]
+  @scala.inline
   def Anon_LabelObject: Anon_LabelObject = "Anon_LabelObject".asInstanceOf[Anon_LabelObject]
+  @scala.inline
   def Promise: Promise = "Promise".asInstanceOf[Promise]
+  @scala.inline
   def chained: chained = "chained".asInstanceOf[chained]
+  @scala.inline
   def created: created = "created".asInstanceOf[created]
+  @scala.inline
   def denodeify: denodeify = "denodeify".asInstanceOf[denodeify]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def fulfilled: fulfilled = "fulfilled".asInstanceOf[fulfilled]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def hashSettled: hashSettled = "hashSettled".asInstanceOf[hashSettled]
+  @scala.inline
   def rejected: rejected = "rejected".asInstanceOf[rejected]
 }
 

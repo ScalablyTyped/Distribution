@@ -11,6 +11,7 @@ class default protected () extends Decimal {
   def this(n: decimalDotJsLib.decimalDotJsMod.DecimalNs.Value) = this()
 }
 
+/* static members */
 @JSImport("decimal.js", JSImport.Default)
 @js.native
 object default extends js.Object {

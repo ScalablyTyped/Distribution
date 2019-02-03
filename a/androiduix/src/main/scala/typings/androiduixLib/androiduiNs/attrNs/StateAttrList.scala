@@ -20,6 +20,7 @@ class StateAttrList protected () extends js.Object {
   def removeAttrAllState(attrName: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.attr.StateAttrList")
 @js.native
 object StateAttrList extends js.Object {

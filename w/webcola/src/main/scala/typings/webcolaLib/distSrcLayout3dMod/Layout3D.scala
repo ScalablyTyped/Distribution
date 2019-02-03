@@ -23,6 +23,7 @@ class Layout3D protected () extends js.Object {
   def tick(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/layout3d", "Layout3D")
 @js.native
 object Layout3D extends js.Object {

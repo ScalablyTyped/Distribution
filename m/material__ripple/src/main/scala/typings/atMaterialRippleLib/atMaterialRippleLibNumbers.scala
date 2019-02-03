@@ -21,10 +21,15 @@ object atMaterialRippleLibNumbers {
   @js.native
   sealed trait `300` extends js.Object
   
+  @scala.inline
   def `0DOT6`: `0DOT6` = 0.6.asInstanceOf[`0DOT6`]
+  @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
+  @scala.inline
   def `150`: `150` = 150.asInstanceOf[`150`]
+  @scala.inline
   def `225`: `225` = 225.asInstanceOf[`225`]
+  @scala.inline
   def `300`: `300` = 300.asInstanceOf[`300`]
 }
 

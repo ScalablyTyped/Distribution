@@ -15,6 +15,7 @@ class SelectedPeopleList () extends BasePeopleSelectedItemsList {
   def replaceItem(itemToReplace: IExtendedPersonaProps, itemsToReplaceWith: js.Array[IExtendedPersonaProps]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SelectedItemsList/SelectedPeopleList/SelectedPeopleList", "SelectedPeopleList")
 @js.native
 object SelectedPeopleList extends js.Object {

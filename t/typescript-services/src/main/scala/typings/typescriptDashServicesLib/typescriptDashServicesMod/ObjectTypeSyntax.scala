@@ -12,6 +12,7 @@ class ObjectTypeSyntax protected ()
   def this(openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeMembers: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ObjectTypeSyntax")
 @js.native
 object ObjectTypeSyntax extends js.Object {

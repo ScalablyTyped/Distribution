@@ -26,13 +26,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.interactionNs.MouseWheelZoomOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Allows the user to zoom the map by scrolling the mouse wheel.
-  *
-  * @param opt_options Options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/interaction/mousewheelzoom", JSImport.Default)
 @js.native
 object default extends js.Object {

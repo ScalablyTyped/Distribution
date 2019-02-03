@@ -64,6 +64,7 @@ class ThreeDTransform ()
   def translateLocal(x: scala.Double, y: scala.Double, z: scala.Double): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/transform/ThreeDTransform", "ThreeDTransform")
 @js.native
 object ThreeDTransform extends js.Object {

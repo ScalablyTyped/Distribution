@@ -19,6 +19,7 @@ class RequestBody protected () extends PropertyBase[RequestBodyDefinition] {
   def update(options: RequestBodyDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "RequestBody")
 @js.native
 object RequestBody extends js.Object {

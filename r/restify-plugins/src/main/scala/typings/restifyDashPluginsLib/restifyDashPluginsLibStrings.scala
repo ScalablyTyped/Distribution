@@ -12,7 +12,9 @@ object restifyDashPluginsLibStrings {
   @js.native
   sealed trait close extends js.Object
   
+  @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
 }
 

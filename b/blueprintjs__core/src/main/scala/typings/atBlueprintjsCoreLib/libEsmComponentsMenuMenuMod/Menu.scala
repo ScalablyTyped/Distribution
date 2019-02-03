@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Menu ()
   extends reactLib.reactMod.Component[IMenuProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menu", "Menu")
 @js.native
 object Menu extends js.Object {

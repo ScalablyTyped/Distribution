@@ -25,6 +25,7 @@ class PullContainerSymbol protected () extends PullTypeSymbol {
   def setInstanceSymbol(symbol: PullSymbol): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullContainerSymbol")
 @js.native
 object PullContainerSymbol extends js.Object {

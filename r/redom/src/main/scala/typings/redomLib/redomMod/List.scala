@@ -19,6 +19,7 @@ class List protected () extends RedomComponent {
   def update_MList(data: js.Array[_], context: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("redom", "List")
 @js.native
 object List extends js.Object {

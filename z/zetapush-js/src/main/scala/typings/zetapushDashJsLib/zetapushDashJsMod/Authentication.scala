@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Authentication () extends js.Object
 
+/* static members */
 @JSImport("zetapush-js", "Authentication")
 @js.native
 object Authentication extends js.Object {

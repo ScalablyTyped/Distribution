@@ -35,6 +35,7 @@ class MultiSelect protected () extends Widget {
   def value(value: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.MultiSelect")
 @js.native
 object MultiSelect extends js.Object {

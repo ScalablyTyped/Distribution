@@ -19,6 +19,7 @@ class Header protected () extends Property[HeaderDefinition] {
   def update(options: HeaderDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Header")
 @js.native
 object Header extends js.Object {

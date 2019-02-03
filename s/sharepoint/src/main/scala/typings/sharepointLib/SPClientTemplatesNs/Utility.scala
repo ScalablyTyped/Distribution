@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Utility () extends js.Object
 
+/* static members */
 @JSGlobal("SPClientTemplates.Utility")
 @js.native
 object Utility extends js.Object {

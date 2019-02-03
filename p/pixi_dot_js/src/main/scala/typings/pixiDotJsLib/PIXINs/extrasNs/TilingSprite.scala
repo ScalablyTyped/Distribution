@@ -22,6 +22,7 @@ class TilingSprite protected ()
   def multiplyUvs(uvs: stdLib.Float32Array, out: stdLib.Float32Array): stdLib.Float32Array = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.extras.TilingSprite")
 @js.native
 object TilingSprite extends js.Object {

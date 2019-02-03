@@ -20,6 +20,7 @@ class DistanceDisplayCondition protected ()
   override def equals(other: cesiumLib.cesiumMod.CesiumNs.DistanceDisplayCondition): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "DistanceDisplayCondition")
 @js.native
 object DistanceDisplayCondition extends js.Object {

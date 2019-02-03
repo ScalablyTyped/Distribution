@@ -20,6 +20,7 @@ class ZoneAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.route53ZoneAssociationMod.ZoneAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53", "ZoneAssociation")
 @js.native
 object ZoneAssociation extends js.Object {

@@ -28,6 +28,7 @@ class TweenMax protected () extends TweenLite {
   def yoyo_Boolean(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.TweenMax")
 @js.native
 object TweenMax extends js.Object {

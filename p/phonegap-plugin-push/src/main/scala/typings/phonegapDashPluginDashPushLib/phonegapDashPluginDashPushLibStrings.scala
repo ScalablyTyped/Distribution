@@ -15,8 +15,11 @@ object phonegapDashPluginDashPushLibStrings {
   @js.native
   sealed trait registration extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
+  @scala.inline
   def registration: registration = "registration".asInstanceOf[registration]
 }
 

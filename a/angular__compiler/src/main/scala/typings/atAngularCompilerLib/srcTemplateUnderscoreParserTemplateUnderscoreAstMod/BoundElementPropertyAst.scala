@@ -28,6 +28,7 @@ class BoundElementPropertyAst protected () extends TemplateAst {
   override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundElementPropertyAst")
 @js.native
 object BoundElementPropertyAst extends js.Object {

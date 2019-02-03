@@ -88,12 +88,7 @@ class RowColumnDefinition ()
   override def computeEffectiveSpacingTop(): scala.Double = js.native
 }
 
-/**
-  * The RowColumnDefinition class describes constraints on a row or a column
-  * in a Panel of type Panel.Table.
-  * It also provides information about the actual layout after the
-  * Table Panel has been arranged.
-  */
+/* static members */
 @JSImport("go", "RowColumnDefinition")
 @js.native
 object RowColumnDefinition extends js.Object {

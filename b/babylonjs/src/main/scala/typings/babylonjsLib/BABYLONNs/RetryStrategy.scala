@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RetryStrategy () extends js.Object
 
-/**
-  * Class used to define a retry strategy when error happens while loading assets
-  */
+/* static members */
 @JSGlobal("BABYLON.RetryStrategy")
 @js.native
 object RetryStrategy extends js.Object {

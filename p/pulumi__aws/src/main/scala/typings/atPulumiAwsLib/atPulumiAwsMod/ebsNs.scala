@@ -68,6 +68,7 @@ object ebsNs extends js.Object {
     args: atPulumiAwsLib.ebsGetVolumeMod.GetVolumeArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.ebsGetVolumeMod.GetVolumeResult] = js.native
+  /* static members */
   @js.native
   object Snapshot extends js.Object {
     /**
@@ -92,6 +93,7 @@ object ebsNs extends js.Object {
     ): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
   }
   
+  /* static members */
   @js.native
   object SnapshotCopy extends js.Object {
     /**
@@ -116,6 +118,7 @@ object ebsNs extends js.Object {
     ): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
   }
   
+  /* static members */
   @js.native
   object Volume extends js.Object {
     /**

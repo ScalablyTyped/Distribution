@@ -32,6 +32,7 @@ class NamedNode protected ()
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSImport("n3", "NamedNode")
 @js.native
 object NamedNode extends js.Object {

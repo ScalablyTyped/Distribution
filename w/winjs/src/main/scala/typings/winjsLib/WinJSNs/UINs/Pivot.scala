@@ -107,9 +107,7 @@ class Pivot () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * A tab control that displays multiple items.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Pivot")
 @js.native
 object Pivot extends js.Object {

@@ -20,6 +20,7 @@ class LogDestinationPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchLogDestinationPolicyMod.LogDestinationPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogDestinationPolicy")
 @js.native
 object LogDestinationPolicy extends js.Object {

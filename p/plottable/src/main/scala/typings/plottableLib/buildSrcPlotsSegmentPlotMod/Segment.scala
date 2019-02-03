@@ -48,6 +48,7 @@ class Segment[X, Y] ()
   def y2(y2: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/segmentPlot", "Segment")
 @js.native
 object Segment extends js.Object {

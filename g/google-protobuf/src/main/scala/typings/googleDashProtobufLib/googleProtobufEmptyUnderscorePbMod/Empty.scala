@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Empty ()
   extends googleDashProtobufLib.googleDashProtobufMod.Message
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/empty_pb", "Empty")
 @js.native
 object Empty extends js.Object {

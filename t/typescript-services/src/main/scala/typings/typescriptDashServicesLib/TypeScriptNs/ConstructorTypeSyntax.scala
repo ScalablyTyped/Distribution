@@ -30,6 +30,7 @@ class ConstructorTypeSyntax protected () extends SyntaxNode {
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): ConstructorTypeSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ConstructorTypeSyntax")
 @js.native
 object ConstructorTypeSyntax extends js.Object {

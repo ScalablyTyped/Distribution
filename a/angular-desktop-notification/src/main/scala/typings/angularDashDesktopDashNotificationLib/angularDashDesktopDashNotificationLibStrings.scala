@@ -15,8 +15,11 @@ object angularDashDesktopDashNotificationLibStrings {
   @js.native
   sealed trait granted extends js.Object
   
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
+  @scala.inline
   def granted: granted = "granted".asInstanceOf[granted]
 }
 

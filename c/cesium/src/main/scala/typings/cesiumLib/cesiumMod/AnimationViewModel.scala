@@ -12,6 +12,7 @@ class AnimationViewModel protected ()
   def this(clockViewModel: cesiumLib.cesiumMod.CesiumNs.ClockViewModel) = this()
 }
 
+/* static members */
 @JSImport("cesium", "AnimationViewModel")
 @js.native
 object AnimationViewModel extends js.Object {

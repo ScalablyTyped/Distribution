@@ -36,6 +36,7 @@ class SubnetGroup protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dax/subnetGroup", "SubnetGroup")
 @js.native
 object SubnetGroup extends js.Object {

@@ -174,61 +174,117 @@ object activexDashMshtmlLibStrings {
   @js.native
   sealed trait url extends js.Object
   
+  @scala.inline
   def description: description = "description".asInstanceOf[description]
+  @scala.inline
   def eventData: eventData = "eventData".asInstanceOf[eventData]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def onactivate: onactivate = "onactivate".asInstanceOf[onactivate]
+  @scala.inline
   def onafterprint: onafterprint = "onafterprint".asInstanceOf[onafterprint]
+  @scala.inline
   def onafterupdate: onafterupdate = "onafterupdate".asInstanceOf[onafterupdate]
+  @scala.inline
   def onbeforeactivate: onbeforeactivate = "onbeforeactivate".asInstanceOf[onbeforeactivate]
+  @scala.inline
   def onbeforedeactivate: onbeforedeactivate = "onbeforedeactivate".asInstanceOf[onbeforedeactivate]
+  @scala.inline
   def onbeforeeditfocus: onbeforeeditfocus = "onbeforeeditfocus".asInstanceOf[onbeforeeditfocus]
+  @scala.inline
   def onbeforeprint: onbeforeprint = "onbeforeprint".asInstanceOf[onbeforeprint]
+  @scala.inline
   def onbeforeunload: onbeforeunload = "onbeforeunload".asInstanceOf[onbeforeunload]
+  @scala.inline
   def onbeforeupdate: onbeforeupdate = "onbeforeupdate".asInstanceOf[onbeforeupdate]
+  @scala.inline
   def onblur: onblur = "onblur".asInstanceOf[onblur]
+  @scala.inline
   def oncellchange: oncellchange = "oncellchange".asInstanceOf[oncellchange]
+  @scala.inline
   def onclick: onclick = "onclick".asInstanceOf[onclick]
+  @scala.inline
   def oncontextmenu: oncontextmenu = "oncontextmenu".asInstanceOf[oncontextmenu]
+  @scala.inline
   def oncontrolselect: oncontrolselect = "oncontrolselect".asInstanceOf[oncontrolselect]
+  @scala.inline
   def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
+  @scala.inline
   def ondatasetchanged: ondatasetchanged = "ondatasetchanged".asInstanceOf[ondatasetchanged]
+  @scala.inline
   def ondatasetcomplete: ondatasetcomplete = "ondatasetcomplete".asInstanceOf[ondatasetcomplete]
+  @scala.inline
   def ondblclick: ondblclick = "ondblclick".asInstanceOf[ondblclick]
+  @scala.inline
   def ondeactivate: ondeactivate = "ondeactivate".asInstanceOf[ondeactivate]
+  @scala.inline
   def ondragstart: ondragstart = "ondragstart".asInstanceOf[ondragstart]
+  @scala.inline
   def onerror: onerror = "onerror".asInstanceOf[onerror]
+  @scala.inline
   def onerrorupdate: onerrorupdate = "onerrorupdate".asInstanceOf[onerrorupdate]
+  @scala.inline
   def onfocus: onfocus = "onfocus".asInstanceOf[onfocus]
+  @scala.inline
   def onfocusin: onfocusin = "onfocusin".asInstanceOf[onfocusin]
+  @scala.inline
   def onfocusout: onfocusout = "onfocusout".asInstanceOf[onfocusout]
+  @scala.inline
   def onhelp: onhelp = "onhelp".asInstanceOf[onhelp]
+  @scala.inline
   def onkeydown: onkeydown = "onkeydown".asInstanceOf[onkeydown]
+  @scala.inline
   def onkeypress: onkeypress = "onkeypress".asInstanceOf[onkeypress]
+  @scala.inline
   def onkeyup: onkeyup = "onkeyup".asInstanceOf[onkeyup]
+  @scala.inline
   def onload: onload = "onload".asInstanceOf[onload]
+  @scala.inline
   def onmousedown: onmousedown = "onmousedown".asInstanceOf[onmousedown]
+  @scala.inline
   def onmousemove: onmousemove = "onmousemove".asInstanceOf[onmousemove]
+  @scala.inline
   def onmouseout: onmouseout = "onmouseout".asInstanceOf[onmouseout]
+  @scala.inline
   def onmouseover: onmouseover = "onmouseover".asInstanceOf[onmouseover]
+  @scala.inline
   def onmouseup: onmouseup = "onmouseup".asInstanceOf[onmouseup]
+  @scala.inline
   def onmousewheel: onmousewheel = "onmousewheel".asInstanceOf[onmousewheel]
+  @scala.inline
   def onpropertychange: onpropertychange = "onpropertychange".asInstanceOf[onpropertychange]
+  @scala.inline
   def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
+  @scala.inline
   def onresize: onresize = "onresize".asInstanceOf[onresize]
+  @scala.inline
   def onrowenter: onrowenter = "onrowenter".asInstanceOf[onrowenter]
+  @scala.inline
   def onrowexit: onrowexit = "onrowexit".asInstanceOf[onrowexit]
+  @scala.inline
   def onrowsdelete: onrowsdelete = "onrowsdelete".asInstanceOf[onrowsdelete]
+  @scala.inline
   def onrowsinserted: onrowsinserted = "onrowsinserted".asInstanceOf[onrowsinserted]
+  @scala.inline
   def onscriptletevent: onscriptletevent = "onscriptletevent".asInstanceOf[onscriptletevent]
+  @scala.inline
   def onscroll: onscroll = "onscroll".asInstanceOf[onscroll]
+  @scala.inline
   def onselectionchange: onselectionchange = "onselectionchange".asInstanceOf[onselectionchange]
+  @scala.inline
   def onselectstart: onselectstart = "onselectstart".asInstanceOf[onselectstart]
+  @scala.inline
   def onstop: onstop = "onstop".asInstanceOf[onstop]
+  @scala.inline
   def ontimeout: ontimeout = "ontimeout".asInstanceOf[ontimeout]
+  @scala.inline
   def onunload: onunload = "onunload".asInstanceOf[onunload]
+  @scala.inline
   def pEvtObj: pEvtObj = "pEvtObj".asInstanceOf[pEvtObj]
+  @scala.inline
   def url: url = "url".asInstanceOf[url]
 }
 

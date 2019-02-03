@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EnclosingTypeWalkerState ()
   extends typescriptDashServicesLib.TypeScriptNs.EnclosingTypeWalkerState
 
+/* static members */
 @JSImport("typescript-services", "EnclosingTypeWalkerState")
 @js.native
 object EnclosingTypeWalkerState extends js.Object {

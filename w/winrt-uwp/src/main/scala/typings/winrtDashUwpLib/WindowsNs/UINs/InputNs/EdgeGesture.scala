@@ -58,7 +58,7 @@ abstract class EdgeGesture () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides access to the events that notify an app of triggers to its edge-based UI. */
+/* static members */
 @JSGlobal("Windows.UI.Input.EdgeGesture")
 @js.native
 object EdgeGesture extends js.Object {

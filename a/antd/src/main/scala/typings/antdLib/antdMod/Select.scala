@@ -12,6 +12,7 @@ class Select[T] protected ()
   def this(props: antdLib.libSelectMod.SelectProps[T]) = this()
 }
 
+/* static members */
 @JSImport("antd", "Select")
 @js.native
 object Select extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Customizations () extends js.Object
 
+/* static members */
 @JSImport("@uifabric/utilities/lib/Customizations", "Customizations")
 @js.native
 object Customizations extends js.Object {

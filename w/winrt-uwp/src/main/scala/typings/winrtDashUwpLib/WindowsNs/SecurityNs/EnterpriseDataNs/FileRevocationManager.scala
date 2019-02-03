@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class FileRevocationManager () extends js.Object
 
-/** Provides access to Selective Wipe operations. */
+/* static members */
 @JSGlobal("Windows.Security.EnterpriseData.FileRevocationManager")
 @js.native
 object FileRevocationManager extends js.Object {

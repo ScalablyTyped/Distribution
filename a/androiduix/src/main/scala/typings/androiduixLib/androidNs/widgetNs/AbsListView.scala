@@ -216,6 +216,7 @@ abstract class AbsListView protected ()
   /* private */ def useDefaultSelector(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.AbsListView")
 @js.native
 object AbsListView extends js.Object {

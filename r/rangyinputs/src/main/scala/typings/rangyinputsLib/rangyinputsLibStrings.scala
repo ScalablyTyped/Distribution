@@ -15,8 +15,11 @@ object rangyinputsLibStrings {
   @js.native
   sealed trait select extends js.Object
   
+  @scala.inline
   def collapseToEnd: collapseToEnd = "collapseToEnd".asInstanceOf[collapseToEnd]
+  @scala.inline
   def collapseToStart: collapseToStart = "collapseToStart".asInstanceOf[collapseToStart]
+  @scala.inline
   def select: select = "select".asInstanceOf[select]
 }
 

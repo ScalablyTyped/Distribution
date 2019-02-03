@@ -20,6 +20,7 @@ class ListenerCertificate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingv2ListenerCertificateMod.ListenerCertificateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancingv2", "ListenerCertificate")
 @js.native
 object ListenerCertificate extends js.Object {

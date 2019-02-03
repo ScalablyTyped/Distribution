@@ -21,6 +21,7 @@ class Accelerator protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.globalacceleratorAcceleratorMod.AcceleratorArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/globalaccelerator", "Accelerator")
 @js.native
 object Accelerator extends js.Object {

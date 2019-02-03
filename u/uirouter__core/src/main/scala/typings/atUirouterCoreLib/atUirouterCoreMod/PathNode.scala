@@ -15,6 +15,7 @@ class PathNode protected ()
   def this(state: atUirouterCoreLib.libStateStateObjectMod.StateObject) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "PathNode")
 @js.native
 object PathNode extends js.Object {

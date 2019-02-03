@@ -12,6 +12,7 @@ class DetailsListBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDetailsListDetailsListDotTypesMod.IDetailsListProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "DetailsListBase")
 @js.native
 object DetailsListBase extends js.Object {

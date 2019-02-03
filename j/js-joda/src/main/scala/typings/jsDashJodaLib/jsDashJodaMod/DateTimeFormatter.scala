@@ -33,6 +33,7 @@ class DateTimeFormatter ()
   override def withResolverStyle(resolverStyle: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ResolverStyle): jsDashJodaLib.jsDashJodaMod.JSJodaNs.DateTimeFormatter = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "DateTimeFormatter")
 @js.native
 object DateTimeFormatter extends js.Object {

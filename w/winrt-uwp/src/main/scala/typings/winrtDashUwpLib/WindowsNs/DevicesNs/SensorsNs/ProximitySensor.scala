@@ -46,7 +46,7 @@ abstract class ProximitySensor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides an interface for a proximity sensor to determine whether or not an object is detected. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.ProximitySensor")
 @js.native
 object ProximitySensor extends js.Object {

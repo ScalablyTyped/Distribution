@@ -29,6 +29,7 @@ class Scheduler () extends js.Object {
   ): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/core/Scheduler", "Scheduler")
 @js.native
 object Scheduler extends js.Object {

@@ -25,6 +25,7 @@ class Subscriber[T] ()
   def this(destinationOrNext: rxjsLib.internalTypesMod.PartialObserver[_], error: js.Function1[/* e */ js.UndefOr[js.Any], scala.Unit], complete: js.Function0[scala.Unit]) = this()
 }
 
+/* static members */
 @JSImport("rxjs", "Subscriber")
 @js.native
 object Subscriber extends js.Object {

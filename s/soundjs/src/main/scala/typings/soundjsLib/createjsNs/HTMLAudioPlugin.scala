@@ -13,6 +13,7 @@ class HTMLAudioPlugin () extends AbstractPlugin {
   var enableIOS: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.HTMLAudioPlugin")
 @js.native
 object HTMLAudioPlugin extends js.Object {

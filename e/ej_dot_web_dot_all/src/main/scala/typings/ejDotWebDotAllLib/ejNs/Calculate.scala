@@ -57,6 +57,7 @@ class Calculate protected () extends js.Object {
   def computedValue(Formula: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Calculate")
 @js.native
 object Calculate extends js.Object {

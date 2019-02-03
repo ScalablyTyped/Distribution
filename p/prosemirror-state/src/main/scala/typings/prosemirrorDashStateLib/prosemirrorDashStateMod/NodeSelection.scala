@@ -19,6 +19,7 @@ class NodeSelection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   var node: prosemirrorDashModelLib.prosemirrorDashModelMod.Node[S] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-state", "NodeSelection")
 @js.native
 object NodeSelection extends js.Object {

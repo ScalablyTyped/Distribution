@@ -27,12 +27,19 @@ object rcDashProgressLibStrings {
   @js.native
   sealed trait top extends js.Object
   
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def butt: butt = "butt".asInstanceOf[butt]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def round: round = "round".asInstanceOf[round]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
 }
 

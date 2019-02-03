@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WindowScroller ()
   extends reactDashVirtualizedLib.distEsWindowScrollerMod.WindowScroller
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/WindowScroller", "WindowScroller")
 @js.native
 object WindowScroller extends js.Object {

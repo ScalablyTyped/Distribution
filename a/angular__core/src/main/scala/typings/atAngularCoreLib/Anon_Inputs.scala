@@ -49,7 +49,13 @@ trait Anon_Inputs[T] extends js.Object {
     *    this reason `NgOnChanges` will be deprecated and removed in future version and this
     *    API will be simplified to be consistent with `outputs`.
     */
-  var inputs: js.UndefOr[atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any] = js.undefined
+  var inputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | [string, string]}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string | [string, string]}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any
+  ] = js.undefined
   /**
     * A map of output names.
     *
@@ -60,6 +66,12 @@ trait Anon_Inputs[T] extends js.Object {
     * This allows the render to re-construct the minified and non-minified names
     * of properties.
     */
-  var outputs: js.UndefOr[atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any] = js.undefined
+  var outputs: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? string}
+    */ atAngularCoreLib.atAngularCoreLibStrings.Anon_Inputs with js.Any
+  ] = js.undefined
 }
 

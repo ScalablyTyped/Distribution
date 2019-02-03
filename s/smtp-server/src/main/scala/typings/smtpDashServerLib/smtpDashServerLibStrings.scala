@@ -21,10 +21,15 @@ object smtpDashServerLibStrings {
   @js.native
   sealed trait error extends js.Object
   
+  @scala.inline
   def LOGIN: LOGIN = "LOGIN".asInstanceOf[LOGIN]
+  @scala.inline
   def PLAIN: PLAIN = "PLAIN".asInstanceOf[PLAIN]
+  @scala.inline
   def XOAUTH2: XOAUTH2 = "XOAUTH2".asInstanceOf[XOAUTH2]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
 }
 

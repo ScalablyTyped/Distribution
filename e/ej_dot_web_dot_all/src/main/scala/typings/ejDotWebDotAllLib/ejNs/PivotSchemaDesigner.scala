@@ -25,6 +25,7 @@ class PivotSchemaDesigner protected () extends Widget {
   def refreshControl(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotSchemaDesigner")
 @js.native
 object PivotSchemaDesigner extends js.Object {

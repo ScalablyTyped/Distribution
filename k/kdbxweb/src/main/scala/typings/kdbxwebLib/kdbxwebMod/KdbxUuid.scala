@@ -16,6 +16,7 @@ class KdbxUuid protected () extends js.Object {
   def toBytes(): js.UndefOr[stdLib.Uint8Array] = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "KdbxUuid")
 @js.native
 object KdbxUuid extends js.Object {

@@ -112,6 +112,7 @@ object applicationloadbalancingNs extends js.Object {
     args: atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.applicationloadbalancingGetTargetGroupMod.GetTargetGroupResult] = js.native
+  /* static members */
   @js.native
   object Listener extends js.Object {
     /**
@@ -136,6 +137,7 @@ object applicationloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.applicationloadbalancingListenerMod.Listener = js.native
   }
   
+  /* static members */
   @js.native
   object ListenerCertificate extends js.Object {
     /**
@@ -160,6 +162,7 @@ object applicationloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.applicationloadbalancingListenerCertificateMod.ListenerCertificate = js.native
   }
   
+  /* static members */
   @js.native
   object ListenerRule extends js.Object {
     /**
@@ -184,6 +187,7 @@ object applicationloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.applicationloadbalancingListenerRuleMod.ListenerRule = js.native
   }
   
+  /* static members */
   @js.native
   object LoadBalancer extends js.Object {
     /**
@@ -208,6 +212,7 @@ object applicationloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.applicationloadbalancingLoadBalancerMod.LoadBalancer = js.native
   }
   
+  /* static members */
   @js.native
   object TargetGroup extends js.Object {
     /**
@@ -232,6 +237,7 @@ object applicationloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.applicationloadbalancingTargetGroupMod.TargetGroup = js.native
   }
   
+  /* static members */
   @js.native
   object TargetGroupAttachment extends js.Object {
     /**

@@ -9,6 +9,7 @@ object deepDashFreezeLibStrings {
   @js.native
   sealed trait DeepReadonly extends js.Object
   
+  @scala.inline
   def DeepReadonly: DeepReadonly = "DeepReadonly".asInstanceOf[DeepReadonly]
 }
 

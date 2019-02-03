@@ -15,8 +15,11 @@ object uuidDash1345LibStrings {
   @js.native
   sealed trait `object` extends js.Object
   
+  @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
+  @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
 }
 

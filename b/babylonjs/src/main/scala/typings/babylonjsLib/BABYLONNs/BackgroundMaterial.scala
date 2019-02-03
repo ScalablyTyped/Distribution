@@ -262,9 +262,7 @@ class BackgroundMaterial protected () extends PushMaterial {
   def isReadyForSubMesh(mesh: AbstractMesh, subMesh: SubMesh, useInstances: scala.Boolean): scala.Boolean = js.native
 }
 
-/**
-  * Background material used to create an efficient environement around your scene.
-  */
+/* static members */
 @JSGlobal("BABYLON.BackgroundMaterial")
 @js.native
 object BackgroundMaterial extends js.Object {

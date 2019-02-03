@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ThemeProvider ()
   extends reactDashThemeableDashTsLib.buildDashEs5ThemeDashProviderMod.ThemeProvider
 
+/* static members */
 @JSImport("react-themeable-ts", "ThemeProvider")
 @js.native
 object ThemeProvider extends js.Object {

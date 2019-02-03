@@ -12,6 +12,7 @@ class RBTree[T] protected ()
   def this(comparator: js.Function2[/* a */ T, /* b */ T, scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("webcola", "RBTree")
 @js.native
 object RBTree extends js.Object {

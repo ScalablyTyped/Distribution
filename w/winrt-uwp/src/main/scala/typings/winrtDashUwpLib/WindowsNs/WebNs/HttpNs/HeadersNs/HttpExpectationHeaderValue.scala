@@ -28,7 +28,7 @@ class HttpExpectationHeaderValue protected () extends js.Object {
   var value: java.lang.String = js.native
 }
 
-/** Represents a token for a particular server behavior required by the client that is used in the Expect HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpExpectationHeaderValue")
 @js.native
 object HttpExpectationHeaderValue extends js.Object {

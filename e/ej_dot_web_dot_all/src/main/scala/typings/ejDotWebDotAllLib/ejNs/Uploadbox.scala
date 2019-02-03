@@ -33,6 +33,7 @@ class Uploadbox protected () extends Widget {
   def upload(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Uploadbox")
 @js.native
 object Uploadbox extends js.Object {

@@ -25,6 +25,7 @@ class SvgContext protected ()
   def setAddTitleElement(addTitleElement: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typesettable/build/src/contexts/svg", "SvgContext")
 @js.native
 object SvgContext extends js.Object {

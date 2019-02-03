@@ -15,8 +15,11 @@ object propDashTypesLibStrings {
   @js.native
   sealed trait objectOf extends js.Object
   
+  @scala.inline
   def InferPropsInner: InferPropsInner = "InferPropsInner".asInstanceOf[InferPropsInner]
+  @scala.inline
   def ValidationMap: ValidationMap = "ValidationMap".asInstanceOf[ValidationMap]
+  @scala.inline
   def objectOf: objectOf = "objectOf".asInstanceOf[objectOf]
 }
 

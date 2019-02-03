@@ -46,6 +46,7 @@ class Datepicker ()
   def setInputValue(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Datepicker")
 @js.native
 object Datepicker extends js.Object {

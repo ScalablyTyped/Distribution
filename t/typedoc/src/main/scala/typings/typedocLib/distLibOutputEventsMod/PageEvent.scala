@@ -21,6 +21,7 @@ class PageEvent ()
   var url: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/events", "PageEvent")
 @js.native
 object PageEvent extends js.Object {

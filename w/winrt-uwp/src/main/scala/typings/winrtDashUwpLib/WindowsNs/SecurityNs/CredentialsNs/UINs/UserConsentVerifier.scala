@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class UserConsentVerifier () extends js.Object
 
-/** Checks for availability of a biometric (fingerprint) verifier device and performs a biometric verification. */
+/* static members */
 @JSGlobal("Windows.Security.Credentials.UI.UserConsentVerifier")
 @js.native
 object UserConsentVerifier extends js.Object {

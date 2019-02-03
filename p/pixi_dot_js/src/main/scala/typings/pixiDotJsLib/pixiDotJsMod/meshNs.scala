@@ -57,6 +57,7 @@ object meshNs extends js.Object {
     def this(texture: pixiDotJsLib.PIXINs.Texture, points: js.Array[pixiDotJsLib.PIXINs.Point]) = this()
   }
   
+  /* static members */
   @js.native
   object Mesh extends js.Object {
     var DRAW_MODES: pixiDotJsLib.Anon_TRIANGLEMESH = js.native

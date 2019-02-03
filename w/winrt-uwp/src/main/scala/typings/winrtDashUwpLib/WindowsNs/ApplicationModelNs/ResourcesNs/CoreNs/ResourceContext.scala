@@ -28,7 +28,7 @@ class ResourceContext () extends js.Object {
   def reset(qualifierNames: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IIterable[java.lang.String]): scala.Unit = js.native
 }
 
-/** Encapsulates all of the factors ( ResourceQualifier s) that might affect resource selection. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceContext")
 @js.native
 object ResourceContext extends js.Object {

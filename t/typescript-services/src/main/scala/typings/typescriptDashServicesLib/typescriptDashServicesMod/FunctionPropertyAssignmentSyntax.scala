@@ -12,6 +12,7 @@ class FunctionPropertyAssignmentSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "FunctionPropertyAssignmentSyntax")
 @js.native
 object FunctionPropertyAssignmentSyntax extends js.Object {

@@ -154,6 +154,7 @@ class Pie ()
   def startAngle(angle: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/piePlot", "Pie")
 @js.native
 object Pie extends js.Object {

@@ -35,6 +35,7 @@ class Formatter () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Formatter")
 @js.native
 object Formatter extends js.Object {

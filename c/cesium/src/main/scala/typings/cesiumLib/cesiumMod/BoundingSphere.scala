@@ -13,6 +13,7 @@ class BoundingSphere ()
   def this(center: cesiumLib.cesiumMod.CesiumNs.Cartesian3, radius: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "BoundingSphere")
 @js.native
 object BoundingSphere extends js.Object {

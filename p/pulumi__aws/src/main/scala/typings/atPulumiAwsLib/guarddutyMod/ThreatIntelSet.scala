@@ -20,6 +20,7 @@ class ThreatIntelSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty", "ThreatIntelSet")
 @js.native
 object ThreatIntelSet extends js.Object {

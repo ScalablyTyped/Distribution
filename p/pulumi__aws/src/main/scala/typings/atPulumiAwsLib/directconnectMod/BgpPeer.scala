@@ -20,6 +20,7 @@ class BgpPeer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectBgpPeerMod.BgpPeerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "BgpPeer")
 @js.native
 object BgpPeer extends js.Object {

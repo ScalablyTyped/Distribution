@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScrollSpy () extends Component[ScrollSpyOptions]
 
+/* static members */
 @JSGlobal("M.ScrollSpy")
 @js.native
 object ScrollSpy extends js.Object {

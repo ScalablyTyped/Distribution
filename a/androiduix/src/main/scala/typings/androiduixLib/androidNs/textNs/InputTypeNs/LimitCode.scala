@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LimitCode () extends js.Object
 
+/* static members */
 @JSGlobal("android.text.InputType.LimitCode")
 @js.native
 object LimitCode extends js.Object {

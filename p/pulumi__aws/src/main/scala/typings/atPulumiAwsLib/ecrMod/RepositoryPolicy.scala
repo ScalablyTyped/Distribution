@@ -20,6 +20,7 @@ class RepositoryPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ecrRepositoryPolicyMod.RepositoryPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecr", "RepositoryPolicy")
 @js.native
 object RepositoryPolicy extends js.Object {

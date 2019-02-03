@@ -464,12 +464,14 @@ object documenttemplatesNs extends js.Object {
     var name: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object AttributeWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object BorderStyle extends js.Object {
     var Dashed: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.BorderStyle = js.native
@@ -478,6 +480,7 @@ object documenttemplatesNs extends js.Object {
     var Solid: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.BorderStyle = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -496,9 +499,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TableRow): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.ConditionSettings = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-grid-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -523,9 +524,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataGrid = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/columns-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridCell extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -550,9 +549,7 @@ object documenttemplatesNs extends js.Object {
     def createInDataGridColumnUnderOddRowsCell(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataGridColumn): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataGridCell = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/columns-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -571,9 +568,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataGrid): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataGridColumn = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataView extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -598,6 +593,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataView = js.native
   }
   
+  /* static members */
   @js.native
   object DataViewContents extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -616,9 +612,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataView): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DataViewContents = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/document-templates relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DocumentTemplate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -630,21 +624,21 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object DocumentTemplateParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DropZone extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/dynamic-image-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DynamicImageViewer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -669,9 +663,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DynamicImageViewer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/dynamic-label-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DynamicLabel extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -696,12 +688,14 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DynamicLabel = js.native
   }
   
+  /* static members */
   @js.native
   object EntityWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object FontFamily extends js.Object {
     var Arial: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.FontFamily = js.native
@@ -711,9 +705,7 @@ object documenttemplatesNs extends js.Object {
     var Times: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.FontFamily = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/footer-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Footer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -732,15 +724,14 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplate): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Footer = js.native
   }
   
+  /* static members */
   @js.native
   object Grid extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDocumenttemplatesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/sort-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridSortBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -759,6 +750,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Grid): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.GridSortBar = js.native
   }
   
+  /* static members */
   @js.native
   object GridSortItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -777,9 +769,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.GridSortBar): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.GridSortItem = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/header-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Header extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -798,9 +788,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DocumentTemplate): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Header = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/line-break-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object LineBreak extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -825,9 +813,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.LineBreak = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/page-break-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PageBreak extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -852,9 +838,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.PageBreak = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/static-image-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object StaticImageViewer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -879,9 +863,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.StaticImageViewer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/static-label-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object StaticLabel extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -906,9 +888,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.StaticLabel = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/style relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Style extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -975,9 +955,7 @@ object documenttemplatesNs extends js.Object {
     def createInTitleUnderStyle(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Title): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Style = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/table-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Table extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1002,9 +980,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Table = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/cell-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TableCell extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1023,9 +999,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TableRow): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TableCell = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/row-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TableRow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1044,9 +1018,7 @@ object documenttemplatesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Table): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TableRow = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/template-grid-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TemplateGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1071,6 +1043,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TemplateGrid = js.native
   }
   
+  /* static members */
   @js.native
   object TemplateGridContents extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1095,6 +1068,7 @@ object documenttemplatesNs extends js.Object {
     def createInTemplateGridUnderOddRowsContents(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TemplateGrid): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TemplateGridContents = js.native
   }
   
+  /* static members */
   @js.native
   object TextAlign extends js.Object {
     var Center: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TextAlign = js.native
@@ -1102,9 +1076,7 @@ object documenttemplatesNs extends js.Object {
     var Right: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.TextAlign = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/title-(document-template) relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Title extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1129,9 +1101,7 @@ object documenttemplatesNs extends js.Object {
     def createInDropZoneUnderWidget(container: mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.DropZone): mendixmodelsdkLib.distGenDocumenttemplatesMod.documenttemplatesNs.Title = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `DocumentTemplates`.
-    */
+  /* static members */
   @js.native
   object Widget extends js.Object {
     var structureTypeName: java.lang.String = js.native

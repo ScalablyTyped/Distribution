@@ -14,6 +14,7 @@ class GanttDependency () extends Model {
   var `type`: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.GanttDependency")
 @js.native
 object GanttDependency extends js.Object {

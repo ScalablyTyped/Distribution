@@ -29,6 +29,7 @@ class VirtualTimeScheduler ()
     ], maxFrames: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("rxjs-compat", "VirtualTimeScheduler")
 @js.native
 object VirtualTimeScheduler extends js.Object {

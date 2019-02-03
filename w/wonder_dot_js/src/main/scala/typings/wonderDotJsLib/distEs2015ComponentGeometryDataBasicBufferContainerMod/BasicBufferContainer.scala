@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BasicBufferContainer ()
   extends wonderDotJsLib.distEs2015ComponentGeometryDataCommonBufferContainerMod.CommonBufferContainer
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/geometry/data/BasicBufferContainer", "BasicBufferContainer")
 @js.native
 object BasicBufferContainer extends js.Object {

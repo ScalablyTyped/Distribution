@@ -33,6 +33,7 @@ class fragment () extends js.Object {
   def writeHtml(writer: basicWriter, filter: filter): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.htmlParser.fragment")
 @js.native
 object fragment extends js.Object {

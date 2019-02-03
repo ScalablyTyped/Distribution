@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ApplicationDataManager () extends js.Object
 
-/** Enables you to access and manage the app data store for a package family. */
+/* static members */
 @JSGlobal("Windows.Management.Core.ApplicationDataManager")
 @js.native
 object ApplicationDataManager extends js.Object {

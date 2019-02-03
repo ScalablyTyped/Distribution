@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends ReactSVG
 
+/* static members */
 @JSImport("react-svg", JSImport.Default)
 @js.native
 object default extends js.Object {

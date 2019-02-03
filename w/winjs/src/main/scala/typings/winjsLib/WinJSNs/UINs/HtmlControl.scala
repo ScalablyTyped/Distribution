@@ -22,9 +22,7 @@ class HtmlControl () extends js.Object {
   def this(element: stdLib.HTMLElement, options: js.Any) = this()
 }
 
-/**
-  * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.HtmlControl")
 @js.native
 object HtmlControl extends js.Object {

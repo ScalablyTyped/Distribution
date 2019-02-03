@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class JsonP () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.data.JsonP")
 @js.native
 object JsonP extends js.Object {

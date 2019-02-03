@@ -30,13 +30,21 @@ object reactDashNativeDashSensorDashManagerLibStrings {
   @js.native
   sealed trait Thermometer extends js.Object
   
+  @scala.inline
   def Accelerometer: Accelerometer = "Accelerometer".asInstanceOf[Accelerometer]
+  @scala.inline
   def Gyroscope: Gyroscope = "Gyroscope".asInstanceOf[Gyroscope]
+  @scala.inline
   def LightSensor: LightSensor = "LightSensor".asInstanceOf[LightSensor]
+  @scala.inline
   def Magnetometer: Magnetometer = "Magnetometer".asInstanceOf[Magnetometer]
+  @scala.inline
   def Orientation: Orientation = "Orientation".asInstanceOf[Orientation]
+  @scala.inline
   def Proximity: Proximity = "Proximity".asInstanceOf[Proximity]
+  @scala.inline
   def StepCounter: StepCounter = "StepCounter".asInstanceOf[StepCounter]
+  @scala.inline
   def Thermometer: Thermometer = "Thermometer".asInstanceOf[Thermometer]
 }
 

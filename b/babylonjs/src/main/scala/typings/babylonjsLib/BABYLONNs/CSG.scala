@@ -103,9 +103,7 @@ class CSG () extends js.Object {
   def unionInPlace(csg: CSG): scala.Unit = js.native
 }
 
-/**
-  * Class for building Constructive Solid Geometry
-  */
+/* static members */
 @JSGlobal("BABYLON.CSG")
 @js.native
 object CSG extends js.Object {

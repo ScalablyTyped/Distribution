@@ -41,9 +41,7 @@ class Color3 ()
   b: scala.Double) = this()
 }
 
-/**
-  * Class used to hold a RBG color
-  */
+/* static members */
 @JSImport("babylonjs", "Color3")
 @js.native
 object Color3 extends js.Object {

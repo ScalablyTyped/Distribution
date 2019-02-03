@@ -15,6 +15,7 @@ class NgTableFilterConfig protected ()
   config: ngDashTableLib.srcBrowserPublicDashInterfacesMod.IFilterConfigValues) = this()
 }
 
+/* static members */
 @JSImport("ng-table", "NgTableFilterConfig")
 @js.native
 object NgTableFilterConfig extends js.Object {

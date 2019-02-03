@@ -34,6 +34,7 @@ abstract class AbstractModel protected () extends IAbstractModel {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("mendixmodelsdk/dist/sdk/internal/abstract-model", "AbstractModel")
 @js.native
 object AbstractModel extends js.Object {

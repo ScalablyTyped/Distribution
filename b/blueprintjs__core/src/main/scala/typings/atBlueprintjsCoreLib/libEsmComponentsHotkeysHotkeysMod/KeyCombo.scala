@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class KeyCombo ()
   extends atBlueprintjsCoreLib.libEsmComponentsHotkeysKeyComboMod.KeyCombo
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/hotkeys/hotkeys", "KeyCombo")
 @js.native
 object KeyCombo extends js.Object {

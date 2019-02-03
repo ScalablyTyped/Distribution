@@ -17,6 +17,7 @@ class NinePatchDrawable () extends NetDrawable {
   /* private */ def initNinePatchBorderInfo(image: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.image.NinePatchDrawable")
 @js.native
 object NinePatchDrawable extends js.Object {

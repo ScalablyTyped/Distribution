@@ -103,6 +103,7 @@ class ChildrenNode protected ()
   /* private */ def `resolveIndex_`(indexDefinition: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/snap/ChildrenNode", "ChildrenNode")
 @js.native
 object ChildrenNode extends js.Object {

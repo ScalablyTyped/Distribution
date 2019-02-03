@@ -69,6 +69,7 @@ class AuthenticationContext protected () extends js.Object {
   def acquireTokenSilentAsync(resourceUrl: java.lang.String, clientId: java.lang.String, userId: java.lang.String): PromiseAuthenticationResult = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ADAL.AuthenticationContext")
 @js.native
 object AuthenticationContext extends js.Object {

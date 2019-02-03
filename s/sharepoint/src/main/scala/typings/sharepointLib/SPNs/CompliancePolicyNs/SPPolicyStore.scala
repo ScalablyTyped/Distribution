@@ -33,6 +33,7 @@ class SPPolicyStore protected ()
   def updatePolicyRule(policyRule: SPPolicyRule): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.CompliancePolicy.SPPolicyStore")
 @js.native
 object SPPolicyStore extends js.Object {

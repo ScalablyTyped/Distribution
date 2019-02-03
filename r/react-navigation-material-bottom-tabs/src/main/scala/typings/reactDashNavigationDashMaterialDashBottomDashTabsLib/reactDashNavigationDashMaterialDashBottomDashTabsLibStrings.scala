@@ -12,7 +12,9 @@ object reactDashNavigationDashMaterialDashBottomDashTabsLibStrings {
   @js.native
   sealed trait none extends js.Object
   
+  @scala.inline
   def initialRoute: initialRoute = "initialRoute".asInstanceOf[initialRoute]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
 }
 

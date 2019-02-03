@@ -12,6 +12,7 @@ class TestScheduler protected ()
   def this(isReset: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "TestScheduler")
 @js.native
 object TestScheduler extends js.Object {

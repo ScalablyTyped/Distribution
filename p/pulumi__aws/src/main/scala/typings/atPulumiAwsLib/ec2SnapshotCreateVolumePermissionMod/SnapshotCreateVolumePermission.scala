@@ -28,6 +28,7 @@ class SnapshotCreateVolumePermission protected ()
   val snapshotId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission")
 @js.native
 object SnapshotCreateVolumePermission extends js.Object {

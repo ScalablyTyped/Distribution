@@ -12,6 +12,7 @@ class ReturnStatementSyntax protected ()
   def this(returnKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ReturnStatementSyntax")
 @js.native
 object ReturnStatementSyntax extends js.Object {

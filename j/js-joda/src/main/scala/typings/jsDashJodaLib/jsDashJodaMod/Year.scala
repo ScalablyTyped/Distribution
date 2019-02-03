@@ -17,6 +17,7 @@ class Year ()
   override def range(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Year")
 @js.native
 object Year extends js.Object {

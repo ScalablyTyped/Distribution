@@ -14,6 +14,7 @@ class Merge protected () extends js.Object {
   var text: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Merge")
 @js.native
 object Merge extends js.Object {

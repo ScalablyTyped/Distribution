@@ -33,6 +33,7 @@ class Marquee protected ()
   def tick(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.TextView.Marquee")
 @js.native
 object Marquee extends js.Object {

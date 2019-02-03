@@ -39,6 +39,7 @@ class DOMParser[S /* <: Schema[_, _] */] protected () extends js.Object {
   def parseSlice(dom: stdLib.Node, options: ParseOptions[S]): Slice[S] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-model", "DOMParser")
 @js.native
 object DOMParser extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class spherical () extends js.Object
 
+/* static members */
 @JSGlobal("google.maps.geometry.spherical")
 @js.native
 object spherical extends js.Object {

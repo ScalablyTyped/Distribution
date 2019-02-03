@@ -24,6 +24,7 @@ class ButtonGroup protected () extends Widget {
   def select(li: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ButtonGroup")
 @js.native
 object ButtonGroup extends js.Object {

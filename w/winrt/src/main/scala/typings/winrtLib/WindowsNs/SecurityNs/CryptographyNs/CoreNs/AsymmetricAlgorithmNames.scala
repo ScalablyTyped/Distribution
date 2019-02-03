@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AsymmetricAlgorithmNames () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricAlgorithmNames")
 @js.native
 object AsymmetricAlgorithmNames extends js.Object {

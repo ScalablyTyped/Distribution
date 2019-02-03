@@ -55,6 +55,7 @@ class RTreeNode[T] protected () extends js.Object {
   def unionAreaDifference(bounds: RTreeBounds): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/utils/rTree", "RTreeNode")
 @js.native
 object RTreeNode extends js.Object {

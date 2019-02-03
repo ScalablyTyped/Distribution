@@ -101,6 +101,7 @@ class Engine ()
   override var world: matterDashJsLib.matterDashJsMod.MatterNs.World = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Engine")
 @js.native
 object Engine extends js.Object {

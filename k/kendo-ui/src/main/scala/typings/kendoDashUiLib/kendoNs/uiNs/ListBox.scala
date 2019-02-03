@@ -40,6 +40,7 @@ class ListBox protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.DataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ListBox")
 @js.native
 object ListBox extends js.Object {

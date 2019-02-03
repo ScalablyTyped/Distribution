@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "ActivityIndicator")
 @js.native
-class ActivityIndicator () extends js.Object
+class ActivityIndicator ()
+  extends reactLib.reactMod.Component[ActivityIndicatorProps, js.Object, js.Any]
 

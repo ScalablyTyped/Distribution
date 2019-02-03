@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Helpers () extends js.Object
 
+/* static members */
 @JSImport("survey-knockout", "Helpers")
 @js.native
 object Helpers extends js.Object {

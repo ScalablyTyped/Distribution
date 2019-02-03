@@ -17,6 +17,7 @@ class default[A] protected () extends MDCFoundation[A] {
   override def init(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/base/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -225,7 +225,7 @@ abstract class StorageFile () extends js.Object {
   def renameAsync(desiredName: java.lang.String, option: NameCollisionOption): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Represents a file. Provides information about the file and its content, and ways to manipulate them. */
+/* static members */
 @JSGlobal("Windows.Storage.StorageFile")
 @js.native
 object StorageFile extends js.Object {

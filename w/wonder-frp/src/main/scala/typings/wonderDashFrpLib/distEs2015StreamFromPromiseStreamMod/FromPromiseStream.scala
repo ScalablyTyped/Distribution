@@ -13,6 +13,7 @@ class FromPromiseStream protected ()
   var _promise: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/FromPromiseStream", "FromPromiseStream")
 @js.native
 object FromPromiseStream extends js.Object {

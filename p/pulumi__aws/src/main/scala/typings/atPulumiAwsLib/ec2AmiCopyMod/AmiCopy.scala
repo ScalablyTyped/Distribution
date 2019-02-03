@@ -100,6 +100,7 @@ class AmiCopy protected ()
   val virtualizationType: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/amiCopy", "AmiCopy")
 @js.native
 object AmiCopy extends js.Object {

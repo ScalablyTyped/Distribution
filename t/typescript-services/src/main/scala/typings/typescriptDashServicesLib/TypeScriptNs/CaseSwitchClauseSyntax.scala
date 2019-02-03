@@ -75,6 +75,7 @@ class CaseSwitchClauseSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.CaseSwitchClauseSyntax")
 @js.native
 object CaseSwitchClauseSyntax extends js.Object {

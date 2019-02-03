@@ -21,6 +21,7 @@ class Secret protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.secretsmanagerSecretMod.SecretArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/secretsmanager", "Secret")
 @js.native
 object Secret extends js.Object {

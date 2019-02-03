@@ -12,6 +12,7 @@ class Formatter ()
   var escapeXml: js.Any = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/formatters/junitFormatter", "Formatter")
 @js.native
 object Formatter extends js.Object {

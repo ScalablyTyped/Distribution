@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PerceptionTimestampHelper () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Perception.PerceptionTimestampHelper")
 @js.native
 object PerceptionTimestampHelper extends js.Object {

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DDSTools () extends js.Object
 
-/**
-  * Class used to provide DDS decompression tools
-  */
+/* static members */
 @JSGlobal("BABYLON.DDSTools")
 @js.native
 object DDSTools extends js.Object {

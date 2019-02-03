@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PrintExtensionContext () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Devices.Printers.Extensions.PrintExtensionContext")
 @js.native
 object PrintExtensionContext extends js.Object {

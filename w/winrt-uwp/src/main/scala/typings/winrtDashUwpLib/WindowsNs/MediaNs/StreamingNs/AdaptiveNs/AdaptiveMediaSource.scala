@@ -121,7 +121,7 @@ abstract class AdaptiveMediaSource () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents the source of adaptive streaming content. */
+/* static members */
 @JSGlobal("Windows.Media.Streaming.Adaptive.AdaptiveMediaSource")
 @js.native
 object AdaptiveMediaSource extends js.Object {

@@ -12,6 +12,7 @@ class ObjectCreationExpressionSyntax protected ()
   def this(newKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IMemberExpressionSyntax, argumentList: typescriptDashServicesLib.TypeScriptNs.ArgumentListSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ObjectCreationExpressionSyntax")
 @js.native
 object ObjectCreationExpressionSyntax extends js.Object {

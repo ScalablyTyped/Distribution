@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class CollisionCoordinatorWorker ()
   extends babylonjsLib.BABYLONNs.CollisionCoordinatorWorker
 
-/** @hidden */
+/* static members */
 @JSImport("babylonjs", "CollisionCoordinatorWorker")
 @js.native
 object CollisionCoordinatorWorker extends js.Object {

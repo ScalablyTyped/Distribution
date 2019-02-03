@@ -22,6 +22,7 @@ class Modal ()
   override def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Modal")
 @js.native
 object Modal extends js.Object {

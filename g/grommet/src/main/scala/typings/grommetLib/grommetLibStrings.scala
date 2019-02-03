@@ -372,127 +372,249 @@ object grommetLibStrings {
   @js.native
   sealed trait zoomOut extends js.Object
   
+  @scala.inline
   def `0`: `0` = "0".asInstanceOf[`0`]
+  @scala.inline
   def `1`: `1` = "1".asInstanceOf[`1`]
+  @scala.inline
   def `1/2`: `1/2` = "1/2".asInstanceOf[`1/2`]
+  @scala.inline
   def `1/3`: `1/3` = "1/3".asInstanceOf[`1/3`]
+  @scala.inline
   def `1/4`: `1/4` = "1/4".asInstanceOf[`1/4`]
+  @scala.inline
   def `12`: `12` = "12".asInstanceOf[`12`]
+  @scala.inline
   def `2`: `2` = "2".asInstanceOf[`2`]
+  @scala.inline
   def `2/3`: `2/3` = "2/3".asInstanceOf[`2/3`]
+  @scala.inline
   def `2/4`: `2/4` = "2/4".asInstanceOf[`2/4`]
+  @scala.inline
   def `24`: `24` = "24".asInstanceOf[`24`]
+  @scala.inline
   def `3`: `3` = "3".asInstanceOf[`3`]
+  @scala.inline
   def `3/4`: `3/4` = "3/4".asInstanceOf[`3/4`]
+  @scala.inline
   def `4`: `4` = "4".asInstanceOf[`4`]
+  @scala.inline
   def `5`: `5` = "5".asInstanceOf[`5`]
+  @scala.inline
   def `6`: `6` = "6".asInstanceOf[`6`]
+  @scala.inline
   def Africa: Africa = "Africa".asInstanceOf[Africa]
+  @scala.inline
   def Asia: Asia = "Asia".asInstanceOf[Asia]
+  @scala.inline
   def Australia: Australia = "Australia".asInstanceOf[Australia]
+  @scala.inline
   def Europe: Europe = "Europe".asInstanceOf[Europe]
+  @scala.inline
   def `North America`: `North America` = "North America".asInstanceOf[`North America`]
+  @scala.inline
   def `South America`: `South America` = "South America".asInstanceOf[`South America`]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def analog: analog = "analog".asInstanceOf[analog]
+  @scala.inline
   def area: area = "area".asInstanceOf[area]
+  @scala.inline
   def around: around = "around".asInstanceOf[around]
+  @scala.inline
   def assertive: assertive = "assertive".asInstanceOf[assertive]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def avg: avg = "avg".asInstanceOf[avg]
+  @scala.inline
   def background: background = "background".asInstanceOf[background]
+  @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
+  @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
+  @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
+  @scala.inline
   def below: below = "below".asInstanceOf[below]
+  @scala.inline
   def between: between = "between".asInstanceOf[between]
+  @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def button: button = "button".asInstanceOf[button]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def circle: circle = "circle".asInstanceOf[circle]
+  @scala.inline
   def col: col = "col".asInstanceOf[col]
+  @scala.inline
   def column: column = "column".asInstanceOf[column]
+  @scala.inline
   def component: component = "component".asInstanceOf[component]
+  @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
   def cover: cover = "cover".asInstanceOf[cover]
+  @scala.inline
   def curved: curved = "curved".asInstanceOf[curved]
+  @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
+  @scala.inline
   def digital: digital = "digital".asInstanceOf[digital]
+  @scala.inline
   def direct: direct = "direct".asInstanceOf[direct]
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
   def dotted: dotted = "dotted".asInstanceOf[dotted]
+  @scala.inline
   def double: double = "double".asInstanceOf[double]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
+  @scala.inline
   def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
+  @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
+  @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def groove: groove = "groove".asInstanceOf[groove]
+  @scala.inline
   def grow: grow = "grow".asInstanceOf[grow]
+  @scala.inline
   def hair: hair = "hair".asInstanceOf[hair]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def hours: hours = "hours".asInstanceOf[hours]
+  @scala.inline
   def inset: inset = "inset".asInstanceOf[inset]
+  @scala.inline
   def jiggle: jiggle = "jiggle".asInstanceOf[jiggle]
+  @scala.inline
   def large: large = "large".asInstanceOf[large]
+  @scala.inline
   def last: last = "last".asInstanceOf[last]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def outset: outset = "outset".asInstanceOf[outset]
+  @scala.inline
   def over: over = "over".asInstanceOf[over]
+  @scala.inline
   def polite: polite = "polite".asInstanceOf[polite]
+  @scala.inline
   def pulse: pulse = "pulse".asInstanceOf[pulse]
+  @scala.inline
   def push: push = "push".asInstanceOf[push]
+  @scala.inline
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def ridge: ridge = "ridge".asInstanceOf[ridge]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def row: row = "row".asInstanceOf[row]
+  @scala.inline
   def `row-responsive`: `row-responsive` = "row-responsive".asInstanceOf[`row-responsive`]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def seconds: seconds = "seconds".asInstanceOf[seconds]
+  @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
+  @scala.inline
   def slideDown: slideDown = "slideDown".asInstanceOf[slideDown]
+  @scala.inline
   def slideLeft: slideLeft = "slideLeft".asInstanceOf[slideLeft]
+  @scala.inline
   def slideRight: slideRight = "slideRight".asInstanceOf[slideRight]
+  @scala.inline
   def slideUp: slideUp = "slideUp".asInstanceOf[slideUp]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
+  @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
+  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
+  @scala.inline
   def weak: weak = "weak".asInstanceOf[weak]
+  @scala.inline
   def window: window = "window".asInstanceOf[window]
+  @scala.inline
   def xlarge: xlarge = "xlarge".asInstanceOf[xlarge]
+  @scala.inline
   def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]
+  @scala.inline
   def xxlarge: xxlarge = "xxlarge".asInstanceOf[xxlarge]
+  @scala.inline
   def xxsmall: xxsmall = "xxsmall".asInstanceOf[xxsmall]
+  @scala.inline
   def zoomIn: zoomIn = "zoomIn".asInstanceOf[zoomIn]
+  @scala.inline
   def zoomOut: zoomOut = "zoomOut".asInstanceOf[zoomOut]
 }
 

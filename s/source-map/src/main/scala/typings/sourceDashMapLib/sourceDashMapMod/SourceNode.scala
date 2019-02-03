@@ -34,6 +34,7 @@ class SourceNode () extends js.Object {
   def walkSourceContents(fn: js.Function2[/* file */ java.lang.String, /* content */ java.lang.String, scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("source-map", "SourceNode")
 @js.native
 object SourceNode extends js.Object {

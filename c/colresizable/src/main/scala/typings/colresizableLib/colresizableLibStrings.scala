@@ -15,8 +15,11 @@ object colresizableLibStrings {
   @js.native
   sealed trait overflow extends js.Object
   
+  @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
+  @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
+  @scala.inline
   def overflow: overflow = "overflow".asInstanceOf[overflow]
 }
 

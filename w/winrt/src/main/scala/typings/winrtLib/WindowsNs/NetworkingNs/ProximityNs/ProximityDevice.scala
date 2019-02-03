@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ProximityDevice () extends IProximityDevice
 
+/* static members */
 @JSGlobal("Windows.Networking.Proximity.ProximityDevice")
 @js.native
 object ProximityDevice extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MultiGrid ()
   extends reactDashVirtualizedLib.distEsMultiGridMod.MultiGrid
 
+/* static members */
 @JSImport("react-virtualized", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {

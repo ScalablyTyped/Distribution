@@ -12,6 +12,7 @@ class PolylineGeometry protected ()
   def this(options: cesiumLib.Anon_Colors) = this()
 }
 
+/* static members */
 @JSImport("cesium", "PolylineGeometry")
 @js.native
 object PolylineGeometry extends js.Object {

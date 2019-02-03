@@ -31,10 +31,7 @@ class SceneOptimizerOptions ()
   trackerDuration: scala.Double) = this()
 }
 
-/**
-  * Defines a list of options used by SceneOptimizer
-  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-  */
+/* static members */
 @JSImport("babylonjs", "SceneOptimizerOptions")
 @js.native
 object SceneOptimizerOptions extends js.Object {

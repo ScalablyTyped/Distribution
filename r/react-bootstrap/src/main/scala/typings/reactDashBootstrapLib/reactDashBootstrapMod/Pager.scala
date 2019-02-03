@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pager ()
   extends reactDashBootstrapLib.libMod.Pager
 
+/* static members */
 @JSImport("react-bootstrap", "Pager")
 @js.native
 object Pager extends js.Object {

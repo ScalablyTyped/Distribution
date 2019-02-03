@@ -20,6 +20,7 @@ class ReceiptRuleSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "ReceiptRuleSet")
 @js.native
 object ReceiptRuleSet extends js.Object {

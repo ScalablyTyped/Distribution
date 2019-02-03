@@ -64,6 +64,7 @@ class CapacityReservation protected ()
   val tenancy: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.ec2TenancyMod.Tenancy]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/capacityReservation", "CapacityReservation")
 @js.native
 object CapacityReservation extends js.Object {

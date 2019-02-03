@@ -27,6 +27,7 @@ class RatingBase protected ()
   def componentWillReceiveProps_MRatingBase(nextProps: officeDashUiDashFabricDashReactLib.libComponentsRatingRatingDotTypesMod.IRatingProps): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Rating/Rating.base", "RatingBase")
 @js.native
 object RatingBase extends js.Object {

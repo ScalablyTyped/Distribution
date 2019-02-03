@@ -42,6 +42,7 @@ class SkeletonClipping () extends js.Object {
   def isClipping(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.SkeletonClipping")
 @js.native
 object SkeletonClipping extends js.Object {

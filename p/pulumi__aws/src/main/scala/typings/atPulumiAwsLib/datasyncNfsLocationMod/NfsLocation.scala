@@ -41,6 +41,7 @@ class NfsLocation protected ()
   val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync/nfsLocation", "NfsLocation")
 @js.native
 object NfsLocation extends js.Object {

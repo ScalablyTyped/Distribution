@@ -39,6 +39,7 @@ class TaxonomySession ()
   def updateCache(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Taxonomy.TaxonomySession")
 @js.native
 object TaxonomySession extends js.Object {

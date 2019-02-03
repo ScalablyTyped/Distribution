@@ -13,7 +13,9 @@ package object asyncMod {
     scala.Unit
   ]
   type AsyncAutoTaskFunctionWithoutDependencies[R1, E] = js.Function1[/* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], scala.Unit]
-  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = i2cDashBusLib.i2cDashBusLibStrings.AsyncAutoTasks with R
+  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof R ]: i2c-bus.i2c-bus/async.AsyncAutoTask<R[K], R, E>}
+    */ i2cDashBusLib.i2cDashBusLibStrings.AsyncAutoTasks with R
   type AsyncBooleanIterator[T, E] = js.Function2[/* item */ T, /* callback */ AsyncBooleanResultCallback[E], scala.Unit]
   type AsyncBooleanResultCallback[E] = js.Function2[
     /* err */ js.UndefOr[E | scala.Null], 

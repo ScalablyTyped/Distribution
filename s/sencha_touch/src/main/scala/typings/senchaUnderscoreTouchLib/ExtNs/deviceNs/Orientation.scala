@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Orientation () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Orientation")
 @js.native
 object Orientation extends js.Object {

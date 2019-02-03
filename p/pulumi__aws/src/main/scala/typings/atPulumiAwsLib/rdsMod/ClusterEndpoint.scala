@@ -20,6 +20,7 @@ class ClusterEndpoint protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpointArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "ClusterEndpoint")
 @js.native
 object ClusterEndpoint extends js.Object {

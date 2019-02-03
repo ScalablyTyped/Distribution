@@ -13,6 +13,7 @@ class TouchBar protected () extends EventEmitter {
   var escapeItem: TouchBarButton | TouchBarColorPicker | TouchBarGroup | TouchBarLabel | TouchBarPopover | TouchBarScrubber | TouchBarSegmentedControl | TouchBarSlider | TouchBarSpacer | scala.Null = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.TouchBar")
 @js.native
 object TouchBar extends js.Object {

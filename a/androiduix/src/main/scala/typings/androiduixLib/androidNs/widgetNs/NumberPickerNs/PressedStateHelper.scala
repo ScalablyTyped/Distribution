@@ -22,6 +22,7 @@ class PressedStateHelper protected ()
   override def run(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.NumberPicker.PressedStateHelper")
 @js.native
 object PressedStateHelper extends js.Object {

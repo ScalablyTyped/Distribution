@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KnuddelTransferDisplayType () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/KnuddelTransferDisplayType.html
-	 */
+/* static members */
 @JSGlobal("KnuddelTransferDisplayType")
 @js.native
 object KnuddelTransferDisplayType extends js.Object {

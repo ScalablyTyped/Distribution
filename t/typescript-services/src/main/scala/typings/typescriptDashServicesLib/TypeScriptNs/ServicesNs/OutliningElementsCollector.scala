@@ -14,6 +14,7 @@ class OutliningElementsCollector ()
   /* private */ def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.OutliningElementsCollector")
 @js.native
 object OutliningElementsCollector extends js.Object {

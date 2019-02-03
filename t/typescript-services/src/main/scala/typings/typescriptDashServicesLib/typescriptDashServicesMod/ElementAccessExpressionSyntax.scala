@@ -12,6 +12,7 @@ class ElementAccessExpressionSyntax protected ()
   def this(expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, openBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, argumentExpression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ElementAccessExpressionSyntax")
 @js.native
 object ElementAccessExpressionSyntax extends js.Object {

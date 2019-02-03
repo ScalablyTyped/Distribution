@@ -15,8 +15,11 @@ object aphroditeLibStrings {
   @js.native
   sealed trait transition extends js.Object
   
+  @scala.inline
   def animationName: animationName = "animationName".asInstanceOf[animationName]
+  @scala.inline
   def fontFamily: fontFamily = "fontFamily".asInstanceOf[fontFamily]
+  @scala.inline
   def transition: transition = "transition".asInstanceOf[transition]
 }
 

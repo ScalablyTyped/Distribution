@@ -22,6 +22,7 @@ object RulesNs extends js.Object {
   abstract class TypedRule ()
     extends tslintLib.libRulesMod.TypedRule
   
+  /* static members */
   @js.native
   object AbstractRule extends js.Object {
     var metadata: tslintLib.libLanguageRuleRuleMod.IRuleMetadata = js.native

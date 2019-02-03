@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DomEventListenerMap ()
   extends wonderDotJsLib.distEs2015EventStructureDomEventListenerMapMod.DomEventListenerMap
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "DomEventListenerMap")
 @js.native
 object DomEventListenerMap extends js.Object {

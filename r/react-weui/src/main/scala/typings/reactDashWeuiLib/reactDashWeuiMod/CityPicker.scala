@@ -15,6 +15,7 @@ class CityPicker protected () extends js.Object {
   def updateGroup(item: js.Any, i: js.Any, groupIndex: js.Any, selected: js.Any, picker: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "CityPicker")
 @js.native
 object CityPicker extends js.Object {

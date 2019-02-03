@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ToplistDisplayType () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/ToplistDisplayType.html
-	 */
+/* static members */
 @JSGlobal("ToplistDisplayType")
 @js.native
 object ToplistDisplayType extends js.Object {

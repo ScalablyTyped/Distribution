@@ -94,6 +94,7 @@ class NgZone protected () extends js.Object {
   ): T = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/zone/ng_zone", "NgZone")
 @js.native
 object NgZone extends js.Object {

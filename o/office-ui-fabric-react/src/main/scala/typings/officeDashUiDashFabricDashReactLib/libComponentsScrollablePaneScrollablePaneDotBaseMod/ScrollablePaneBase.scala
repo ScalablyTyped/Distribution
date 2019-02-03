@@ -67,6 +67,7 @@ class ScrollablePaneBase protected ()
   def updateStickyRefHeights(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane/ScrollablePane.base", "ScrollablePaneBase")
 @js.native
 object ScrollablePaneBase extends js.Object {

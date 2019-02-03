@@ -15,6 +15,7 @@ class ActionSheet protected () extends js.Object {
   def renderMenuItem(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "ActionSheet")
 @js.native
 object ActionSheet extends js.Object {

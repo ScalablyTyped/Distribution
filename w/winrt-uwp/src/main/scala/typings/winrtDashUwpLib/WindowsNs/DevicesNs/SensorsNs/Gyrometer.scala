@@ -41,7 +41,7 @@ abstract class Gyrometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a gyrometer sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Gyrometer")
 @js.native
 object Gyrometer extends js.Object {

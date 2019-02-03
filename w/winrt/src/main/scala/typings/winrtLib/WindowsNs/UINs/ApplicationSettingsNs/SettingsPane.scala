@@ -12,6 +12,7 @@ class SettingsPane () extends ISettingsPane {
   override var oncommandsrequested: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane")
 @js.native
 object SettingsPane extends js.Object {

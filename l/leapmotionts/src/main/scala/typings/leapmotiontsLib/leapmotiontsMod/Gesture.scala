@@ -20,6 +20,7 @@ class Gesture () extends js.Object {
   def isValid(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Gesture")
 @js.native
 object Gesture extends js.Object {

@@ -22,7 +22,7 @@ class ImageEncodingProperties () extends js.Object {
   var width: scala.Double = js.native
 }
 
-/** Describes the format of an image stream. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.ImageEncodingProperties")
 @js.native
 object ImageEncodingProperties extends js.Object {

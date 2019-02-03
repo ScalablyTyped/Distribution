@@ -132,6 +132,7 @@ object SyncNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.ConnectionState with java.lang.String] = js.native
   }
   
+  /* static members */
   @js.native
   object Credentials extends js.Object {
     def adminToken(token: java.lang.String): realmLib.RealmNs.SyncNs.AdminCredentials = js.native
@@ -164,10 +165,7 @@ object SyncNs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[realmLib.RealmNs.SyncNs.SubscriptionState with java.lang.String] = js.native
   }
   
-  /**
-    * User
-    * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-    */
+  /* static members */
   @js.native
   object User extends js.Object {
     val all: org.scalablytyped.runtime.StringDictionary[realmLib.RealmNs.SyncNs.User] = js.native

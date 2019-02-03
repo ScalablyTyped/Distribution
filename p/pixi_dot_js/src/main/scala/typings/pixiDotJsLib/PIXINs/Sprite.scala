@@ -36,7 +36,7 @@ class Sprite () extends Container {
   /* protected */ def onAnchorUpdate(): scala.Unit = js.native
 }
 
-// sprites
+/* static members */
 @JSGlobal("PIXI.Sprite")
 @js.native
 object Sprite extends js.Object {

@@ -16,6 +16,7 @@ class Submodule protected () extends js.Object {
   var repo: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Submodule")
 @js.native
 object Submodule extends js.Object {

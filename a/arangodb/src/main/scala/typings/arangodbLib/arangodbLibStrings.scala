@@ -156,55 +156,105 @@ object arangodbLibStrings {
   @js.native
   sealed trait traditional extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Document: Document = "Document".asInstanceOf[Document]
+  @scala.inline
   def DocumentData: DocumentData = "DocumentData".asInstanceOf[DocumentData]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def `HMAC-SHA1`: `HMAC-SHA1` = "HMAC-SHA1".asInstanceOf[`HMAC-SHA1`]
+  @scala.inline
   def HS256: HS256 = "HS256".asInstanceOf[HS256]
+  @scala.inline
   def HS384: HS384 = "HS384".asInstanceOf[HS384]
+  @scala.inline
   def HS512: HS512 = "HS512".asInstanceOf[HS512]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  @scala.inline
   def PLAINTEXT: PLAINTEXT = "PLAINTEXT".asInstanceOf[PLAINTEXT]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def Patch: Patch = "Patch".asInstanceOf[Patch]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def `application/json`: `application/json` = "application/json".asInstanceOf[`application/json`]
+  @scala.inline
   def arangosearch: arangosearch = "arangosearch".asInstanceOf[arangosearch]
+  @scala.inline
   def autoincrement: autoincrement = "autoincrement".asInstanceOf[autoincrement]
+  @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def bytes: bytes = "bytes".asInstanceOf[bytes]
+  @scala.inline
   def bytes_accum: bytes_accum = "bytes_accum".asInstanceOf[bytes_accum]
+  @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def fulltext: fulltext = "fulltext".asInstanceOf[fulltext]
+  @scala.inline
   def geo: geo = "geo".asInstanceOf[geo]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def header: header = "header".asInstanceOf[header]
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def inbound: inbound = "inbound".asInstanceOf[inbound]
+  @scala.inline
   def int: int = "int".asInstanceOf[int]
+  @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
   def mmfiles: mmfiles = "mmfiles".asInstanceOf[mmfiles]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def outbound: outbound = "outbound".asInstanceOf[outbound]
+  @scala.inline
   def password: password = "password".asInstanceOf[password]
+  @scala.inline
   def rocksdb: rocksdb = "rocksdb".asInstanceOf[rocksdb]
+  @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  @scala.inline
   def sha224: sha224 = "sha224".asInstanceOf[sha224]
+  @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  @scala.inline
   def sha384: sha384 = "sha384".asInstanceOf[sha384]
+  @scala.inline
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  @scala.inline
   def skiplist: skiplist = "skiplist".asInstanceOf[skiplist]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def traditional: traditional = "traditional".asInstanceOf[traditional]
 }
 

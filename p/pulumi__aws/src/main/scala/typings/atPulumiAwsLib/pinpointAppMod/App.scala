@@ -45,6 +45,7 @@ class App protected ()
   val quietTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_End]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/app", "App")
 @js.native
 object App extends js.Object {

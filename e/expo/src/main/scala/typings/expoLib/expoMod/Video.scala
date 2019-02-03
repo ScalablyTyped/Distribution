@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Video ()
   extends reactLib.reactMod.Component[VideoProps, VideoState, js.Any]
 
+/* static members */
 @JSImport("expo", "Video")
 @js.native
 object Video extends js.Object {

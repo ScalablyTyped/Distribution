@@ -40,6 +40,7 @@ object optionNs extends js.Object {
   def isSome[A](fa: fpDashTsLib.libOptionMod.Option[A]): /* is fp-ts.fp-ts/lib/Option.Some<A> */ scala.Boolean = js.native
   def some[A](a: A): fpDashTsLib.libOptionMod.Option[A] = js.native
   def tryCatch[A](f: fpDashTsLib.libFunctionMod.Lazy[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  /* static members */
   @js.native
   object None extends js.Object {
     var value: fpDashTsLib.libOptionMod.Option[scala.Nothing] = js.native

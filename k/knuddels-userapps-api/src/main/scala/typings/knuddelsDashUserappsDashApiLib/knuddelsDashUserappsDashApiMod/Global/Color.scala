@@ -37,9 +37,7 @@ class Color () extends js.Object {
   def toKCode(): java.lang.String = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/Color.html
-	 */
+/* static members */
 @JSGlobal("Color")
 @js.native
 object Color extends js.Object {

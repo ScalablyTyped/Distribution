@@ -1250,11 +1250,7 @@ object UINs extends js.Object {
     def updateBadge(incoming: js.Any, offset: js.Any): winjsLib.WinJSNs.Promise[_] = js.native
   }
   
-  //#endregion Interfaces
-  //#region Objects
-  /**
-    * Displays ICommands in overlayed application pane that opens and closes at the top or bottom of the main view.
-    **/
+  /* static members */
   @js.native
   object AppBar extends js.Object {
     /**
@@ -1271,9 +1267,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a command to be displayed in an app bar.
-    **/
+  /* static members */
   @js.native
   object AppBarCommand extends js.Object {
     /**
@@ -1489,9 +1483,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.AppBarIcon with java.lang.String] = js.native
   }
   
-  /**
-    * A rich input box that provides suggestions as the user types.
-    **/
+  /* static members */
   @js.native
   object AutoSuggestBox extends js.Object {
     /**
@@ -1506,9 +1498,7 @@ object UINs extends js.Object {
     def createResultSuggestionImage(url: java.lang.String): js.Any = js.native
   }
   
-  /**
-    * Provides backwards navigation in the form of a button.
-    **/
+  /* static members */
   @js.native
   object BackButton extends js.Object {
     /**
@@ -1517,9 +1507,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a layout for the ListView in which items are arranged in a grid and items can span multiple grid cells.
-    **/
+  /* static members */
   @js.native
   object CellSpanningLayout extends js.Object {
     /**
@@ -1528,9 +1516,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a command to be displayed in an AppBar or ToolBar
-    **/
+  /* static members */
   @js.native
   object Command extends js.Object {
     /**
@@ -1539,9 +1525,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays a modal dialog which can display arbitrary HTML content.
-    **/
+  /* static members */
   @js.native
   object ContentDialog extends js.Object {
     /**
@@ -1599,9 +1583,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.DataSourceStatus with java.lang.String] = js.native
   }
   
-  /**
-    * Allows users to pick a date value.
-    **/
+  /* static members */
   @js.native
   object DatePicker extends js.Object {
     /**
@@ -1640,9 +1622,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.FetchError with java.lang.String] = js.native
   }
   
-  /**
-    * Displays a collection, such as a set of photos, one item at a time.
-    **/
+  /* static members */
   @js.native
   object FlipView extends js.Object {
     /**
@@ -1667,9 +1647,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays lightweight UI that is either information, or requires user interaction. Unlike a dialog, a Flyout can be light dismissed by clicking or tapping off of it.
-    **/
+  /* static members */
   @js.native
   object Flyout extends js.Object {
     /**
@@ -1717,9 +1695,7 @@ object UINs extends js.Object {
     def renderCopy(href: stdLib.HTMLElement, target: stdLib.HTMLElement): winjsLib.WinJSNs.Promise[stdLib.HTMLElement] = js.native
   }
   
-  /**
-    * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
-    **/
+  /* static members */
   @js.native
   object GridLayout extends js.Object {
     /**
@@ -1750,9 +1726,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.HeaderPosition with java.lang.String] = js.native
   }
   
-  /**
-    * Enables you to include an HTML page dynamically. As part of the constructor, you must include an option indicating the URI of the page.
-    **/
+  /* static members */
   @js.native
   object HtmlControl extends js.Object {
     //#endregion Constructors
@@ -1763,9 +1737,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
-    **/
+  /* static members */
   @js.native
   object Hub extends js.Object {
     /**
@@ -1782,9 +1754,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Defines a section of a Hub.
-    **/
+  /* static members */
   @js.native
   object HubSection extends js.Object {
     /**
@@ -1797,9 +1767,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Defines an item that can be pressed, swiped, and dragged.
-    **/
+  /* static members */
   @js.native
   object ItemContainer extends js.Object {
     /**
@@ -1808,9 +1776,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * This object supports the WinJS infrastructure and is not intended to be used directly from your code.
-    **/
+  /* static members */
   @js.native
   object Layout extends js.Object {
     /**
@@ -1819,9 +1785,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a layout for the ListView in which items are arranged in a vertical list.
-    **/
+  /* static members */
   @js.native
   object ListLayout extends js.Object {
     /**
@@ -1830,9 +1794,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays data items in a customizable list or grid.
-    **/
+  /* static members */
   @js.native
   object ListView extends js.Object {
     /**
@@ -1856,9 +1818,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.ListViewAnimationType with java.lang.String] = js.native
   }
   
-  /**
-    * Represents a menu flyout for displaying commands.
-    **/
+  /* static members */
   @js.native
   object Menu extends js.Object {
     /**
@@ -1867,9 +1827,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a command to be displayed in a Menu object.
-    **/
+  /* static members */
   @js.native
   object MenuCommand extends js.Object {
     /**
@@ -1878,9 +1836,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
-    **/
+  /* static members */
   @js.native
   object NavBar extends js.Object {
     /**
@@ -1893,9 +1849,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a navigation command in a NavBarContainer.
-    **/
+  /* static members */
   @js.native
   object NavBarCommand extends js.Object {
     /**
@@ -1904,9 +1858,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Contains a group of NavBarCommand objects in a NavBar.
-    **/
+  /* static members */
   @js.native
   object NavBarContainer extends js.Object {
     /**
@@ -2006,9 +1958,7 @@ object UINs extends js.Object {
     ): winjsLib.WinJSNs.Promise[_] = js.native
   }
   
-  /**
-    * A tab control that displays multiple items.
-    **/
+  /* static members */
   @js.native
   object Pivot extends js.Object {
     /**
@@ -2017,9 +1967,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * An item within a Pivot control.
-    **/
+  /* static members */
   @js.native
   object PivotItem extends js.Object {
     /**
@@ -2032,9 +1980,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Lets the user rate something by clicking an icon that represents a rating. The Rating control can display three types of ratings: an average rating, a tentative rating, and the user's rating.
-    **/
+  /* static members */
   @js.native
   object Rating extends js.Object {
     /**
@@ -2043,9 +1989,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Generates HTML from a set of data. Use this control to generate lists of items.
-    **/
+  /* static members */
   @js.native
   object Repeater extends js.Object {
     /**
@@ -2058,9 +2002,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Enables the user to perform search queries and select suggestions.
-    **/
+  /* static members */
   @js.native
   object SearchBox extends js.Object {
     /**
@@ -2083,9 +2025,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SelectionMode with java.lang.String] = js.native
   }
   
-  /**
-    * Enables the user to zoom between two different views supplied by two child controls. One child control supplies the zoomed-out view and the other provides the zoomed-in view.
-    **/
+  /* static members */
   @js.native
   object SemanticZoom extends js.Object {
     /**
@@ -2094,9 +2034,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Provides users with fast, in-context access to settings that affect the current Windows Store app.
-    **/
+  /* static members */
   @js.native
   object SettingsFlyout extends js.Object {
     /**
@@ -2120,9 +2058,7 @@ object UINs extends js.Object {
     def showSettings(id: java.lang.String, path: js.Any): scala.Unit = js.native
   }
   
-  /**
-    * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
-    **/
+  /* static members */
   @js.native
   object SplitView extends js.Object {
     /**
@@ -2143,9 +2079,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Represents a command in the SplitView Pane.
-    **/
+  /* static members */
   @js.native
   object SplitViewCommand extends js.Object {
     /**
@@ -2154,9 +2088,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays a button which is used for opening and closing a SplitView's pane.
-    **/
+  /* static members */
   @js.native
   object SplitViewPaneToggle extends js.Object {
     /**
@@ -2165,9 +2097,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * A type of IListDataSource that provides read-access to an object that implements the IStorageQueryResultBase interface. A StorageDataSource enables you to query and bind to items in the data source.
-    **/
+  /* static members */
   @js.native
   object StorageDataSource extends js.Object {
     //#endregion Methods
@@ -2188,9 +2118,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.SwipeBehavior with java.lang.String] = js.native
   }
   
-  /**
-    * Prevents a DOM sub-tree from receiving tab navigations and focus.
-    **/
+  /* static members */
   @js.native
   object TabContainer extends js.Object {
     /**
@@ -2212,9 +2140,7 @@ object UINs extends js.Object {
     def apply(value: java.lang.String): js.UndefOr[winjsLib.WinJSNs.UINs.TapBehavior with java.lang.String] = js.native
   }
   
-  /**
-    * Allows users to select time values.
-    **/
+  /* static members */
   @js.native
   object TimePicker extends js.Object {
     /**
@@ -2228,9 +2154,7 @@ object UINs extends js.Object {
     def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = js.native
   }
   
-  /**
-    * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
-    **/
+  /* static members */
   @js.native
   object ToggleSwitch extends js.Object {
     /**
@@ -2239,9 +2163,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays ICommands within the flow of the app. Use the ToolBar around other statically positioned app content.
-    **/
+  /* static members */
   @js.native
   object ToolBar extends js.Object {
     /**
@@ -2254,9 +2176,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Displays a tooltip that can contain images and formatting.
-    **/
+  /* static members */
   @js.native
   object Tooltip extends js.Object {
     /**
@@ -2285,9 +2205,7 @@ object UINs extends js.Object {
     def detach(element: stdLib.HTMLElement): scala.Unit = js.native
   }
   
-  /**
-    * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
-    **/
+  /* static members */
   @js.native
   object ViewBox extends js.Object {
     /**
@@ -2296,9 +2214,7 @@ object UINs extends js.Object {
     var supportedForProcessing: scala.Boolean = js.native
   }
   
-  /**
-    * Serves as the base class for a custom IListDataSource.
-    **/
+  /* static members */
   @js.native
   object VirtualizedDataSource extends js.Object {
     //#endregion Methods

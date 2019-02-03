@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GameObject ()
   extends wonderDotJsLib.distEs2015CoreEntityObjectGameObjectGameObjectMod.GameObject
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "GameObject")
 @js.native
 object GameObject extends js.Object {

@@ -20,6 +20,7 @@ class Chat protected () extends Widget {
   def renderSuggestedActions(suggestedActions: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Chat")
 @js.native
 object Chat extends js.Object {

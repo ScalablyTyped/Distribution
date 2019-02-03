@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MemberName ()
   extends typescriptDashServicesLib.TypeScriptNs.MemberName
 
+/* static members */
 @JSImport("typescript-services", "MemberName")
 @js.native
 object MemberName extends js.Object {

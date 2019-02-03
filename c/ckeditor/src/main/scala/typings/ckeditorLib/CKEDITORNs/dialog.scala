@@ -43,6 +43,7 @@ class dialog protected () extends js.Object {
   def updateStyle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.dialog")
 @js.native
 object dialog extends js.Object {

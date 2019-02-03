@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class DDSTools ()
   extends babylonjsLib.BABYLONNs.DDSTools
 
-/**
-  * Class used to provide DDS decompression tools
-  */
+/* static members */
 @JSImport("babylonjs", "DDSTools")
 @js.native
 object DDSTools extends js.Object {

@@ -17,6 +17,7 @@ class namespaced protected () extends zipkin_javascript_opentracing {
   override def startSpan(name: js.Any, args: js.Any*): js.Any = js.native
 }
 
+/* static members */
 @JSImport("zipkin-javascript-opentracing", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -42,6 +42,7 @@ class Map protected ()
   def zoom(level: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.Map")
 @js.native
 object Map extends js.Object {

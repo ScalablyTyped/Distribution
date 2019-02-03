@@ -40,6 +40,7 @@ class IPSet protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty/iPSet", "IPSet")
 @js.native
 object IPSet extends js.Object {

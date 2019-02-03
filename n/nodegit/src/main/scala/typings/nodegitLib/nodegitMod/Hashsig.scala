@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Hashsig ()
   extends nodegitLib.hashDashSigMod.Hashsig
 
+/* static members */
 @JSImport("nodegit", "Hashsig")
 @js.native
 object Hashsig extends js.Object {

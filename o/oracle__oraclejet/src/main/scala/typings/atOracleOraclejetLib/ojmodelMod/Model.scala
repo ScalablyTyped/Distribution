@@ -139,6 +139,7 @@ class Model () extends js.Object {
   def values(): js.Array[js.Object] = js.native
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojmodel", "Model")
 @js.native
 object Model extends js.Object {

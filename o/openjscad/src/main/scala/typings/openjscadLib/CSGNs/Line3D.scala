@@ -19,6 +19,7 @@ class Line3D protected ()
   def reverse(): Line3D = js.native
 }
 
+/* static members */
 @JSGlobal("CSG.Line3D")
 @js.native
 object Line3D extends js.Object {

@@ -95,10 +95,7 @@ class Margin ()
   override def setTo(t: scala.Double, r: scala.Double, b: scala.Double, l: scala.Double): goLib.goMod.goNs.Margin = js.native
 }
 
-/**
-  * A Margin represents a band of space outside or inside a rectangular area,
-  * with possibly different values on each of the four sides.
-  */
+/* static members */
 @JSImport("go", "Margin")
 @js.native
 object Margin extends js.Object {

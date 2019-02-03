@@ -20,6 +20,7 @@ class ReplicationGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticacheReplicationGroupMod.ReplicationGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticache", "ReplicationGroup")
 @js.native
 object ReplicationGroup extends js.Object {

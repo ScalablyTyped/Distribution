@@ -16,6 +16,7 @@ class PositionMetadata () extends js.Object {
   /* private */ def resetState(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ExpandableListConnector.PositionMetadata")
 @js.native
 object PositionMetadata extends js.Object {

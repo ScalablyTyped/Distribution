@@ -14,6 +14,7 @@ class SmartCanvas protected ()
   def this(element: stdLib.HTMLCanvasElement, width: scala.Double, height: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("canvas-gauges", "SmartCanvas")
 @js.native
 object SmartCanvas extends js.Object {

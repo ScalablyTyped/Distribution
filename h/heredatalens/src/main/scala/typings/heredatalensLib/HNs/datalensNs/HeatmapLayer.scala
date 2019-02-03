@@ -26,12 +26,7 @@ class HeatmapLayer protected () extends RasterLayer {
   def getOptionsPerZoom(zoom: scala.Double): heredatalensLib.HNs.datalensNs.HeatmapLayerNs.Options = js.native
 }
 
-/**
-  * Provides functionality of value-based heat map with density alpha mask.
-  * Layer support different types of blending, including weighted average. Also it allows to apply alpha mask calculated by density.
-  * In most cases, the layer consumes data grouped by 1x1 pixels buckets. For proper averaging it requires aggregated value and count (number of rows in bucket) for each bucket.
-  * Blending of buckets is implemented via kernel density estimation (KDE) with a Gaussian kernel.
-  */
+/* static members */
 @JSGlobal("H.datalens.HeatmapLayer")
 @js.native
 object HeatmapLayer extends js.Object {

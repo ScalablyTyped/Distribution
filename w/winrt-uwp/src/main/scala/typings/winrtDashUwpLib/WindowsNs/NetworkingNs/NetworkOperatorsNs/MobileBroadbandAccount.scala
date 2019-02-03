@@ -26,7 +26,7 @@ abstract class MobileBroadbandAccount () extends js.Object {
   def getConnectionProfiles(): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[winrtDashUwpLib.WindowsNs.NetworkingNs.ConnectivityNs.ConnectionProfile] = js.native
 }
 
-/** Represents a mobile broadband account and related information about the network provider for the account. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.MobileBroadbandAccount")
 @js.native
 object MobileBroadbandAccount extends js.Object {

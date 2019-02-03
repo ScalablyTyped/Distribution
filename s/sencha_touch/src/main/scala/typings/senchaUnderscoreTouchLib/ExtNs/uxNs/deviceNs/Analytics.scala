@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Analytics () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.ux.device.Analytics")
 @js.native
 object Analytics extends js.Object {

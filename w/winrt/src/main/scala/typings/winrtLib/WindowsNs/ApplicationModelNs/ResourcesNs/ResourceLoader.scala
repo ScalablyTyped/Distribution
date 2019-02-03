@@ -13,6 +13,7 @@ class ResourceLoader () extends IResourceLoader {
   override def getString(resource: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
 @js.native
 object ResourceLoader extends js.Object {

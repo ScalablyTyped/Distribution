@@ -15,6 +15,7 @@ abstract class AppCapture () extends js.Object {
    /* unmapped type */ var removeEventListener: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Media.Capture.AppCapture")
 @js.native
 object AppCapture extends js.Object {

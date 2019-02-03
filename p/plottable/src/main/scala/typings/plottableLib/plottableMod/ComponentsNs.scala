@@ -179,17 +179,20 @@ object ComponentsNs extends js.Object {
   class YDragBoxLayer ()
     extends plottableLib.buildSrcComponentsMod.YDragBoxLayer
   
+  /* static members */
   @js.native
   object AxisLabel extends js.Object {
     var AXIS_LABEL_CLASS: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object GuideLineLayer extends js.Object {
     var ORIENTATION_HORIZONTAL: java.lang.String = js.native
     var ORIENTATION_VERTICAL: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object InterpolatedColorLegend extends js.Object {
     /**
@@ -200,6 +203,7 @@ object ComponentsNs extends js.Object {
     /* private */ def _ensureOrientation(orientation: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Legend extends js.Object {
     /**
@@ -226,6 +230,7 @@ object ComponentsNs extends js.Object {
       ] = js.native
   }
   
+  /* static members */
   @js.native
   object Table extends js.Object {
     /* private */ def _calcComponentWeights(setWeights: js.Any, componentGroups: js.Any, fixityAccessor: js.Any): js.Any = js.native
@@ -233,6 +238,7 @@ object ComponentsNs extends js.Object {
     /* private */ def _fixedSpace(componentGroup: js.Any, fixityAccessor: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object TitleLabel extends js.Object {
     var TITLE_LABEL_CLASS: java.lang.String = js.native

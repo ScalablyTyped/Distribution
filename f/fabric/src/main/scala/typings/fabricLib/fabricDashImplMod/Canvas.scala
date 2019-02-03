@@ -197,6 +197,7 @@ class Canvas protected () extends StaticCanvas {
   def setCursor(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Canvas")
 @js.native
 object Canvas extends js.Object {

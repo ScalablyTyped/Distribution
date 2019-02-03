@@ -39,7 +39,7 @@ abstract class Barometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides an interface for a barometric sensor to measure atmospheric pressure. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Barometer")
 @js.native
 object Barometer extends js.Object {

@@ -33,14 +33,23 @@ object nouisliderLibStrings {
   @js.native
   sealed trait vertical extends js.Object
   
+  @scala.inline
   def count: count = "count".asInstanceOf[count]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def ltr: ltr = "ltr".asInstanceOf[ltr]
+  @scala.inline
   def positions: positions = "positions".asInstanceOf[positions]
+  @scala.inline
   def range: range = "range".asInstanceOf[range]
+  @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
+  @scala.inline
   def steps: steps = "steps".asInstanceOf[steps]
+  @scala.inline
   def values: values = "values".asInstanceOf[values]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }
 

@@ -35,7 +35,7 @@ abstract class Battery () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides information about a battery controller that is currently connected to the device. For more info, see Get battery information. */
+/* static members */
 @JSGlobal("Windows.Devices.Power.Battery")
 @js.native
 object Battery extends js.Object {

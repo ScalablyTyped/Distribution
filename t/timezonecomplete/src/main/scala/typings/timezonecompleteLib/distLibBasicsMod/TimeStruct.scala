@@ -49,6 +49,7 @@ class TimeStruct protected () extends js.Object {
   def yearDay(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("timezonecomplete/dist/lib/basics", "TimeStruct")
 @js.native
 object TimeStruct extends js.Object {

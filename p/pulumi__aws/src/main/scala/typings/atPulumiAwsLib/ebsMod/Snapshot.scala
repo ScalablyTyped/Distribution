@@ -20,6 +20,7 @@ class Snapshot protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ebsSnapshotMod.SnapshotArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ebs", "Snapshot")
 @js.native
 object Snapshot extends js.Object {

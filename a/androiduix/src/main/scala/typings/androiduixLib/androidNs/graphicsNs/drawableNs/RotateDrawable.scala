@@ -24,6 +24,7 @@ class RotateDrawable ()
   override def unscheduleDrawable(who: Drawable, what: androiduixLib.javaNs.langNs.Runnable): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.drawable.RotateDrawable")
 @js.native
 object RotateDrawable extends js.Object {

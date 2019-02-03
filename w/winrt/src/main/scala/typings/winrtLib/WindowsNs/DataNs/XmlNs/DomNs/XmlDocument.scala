@@ -100,6 +100,7 @@ class XmlDocument ()
   override def selectSingleNodeNS(xpath: java.lang.String, namespaces: js.Any): IXmlNode = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Data.Xml.Dom.XmlDocument")
 @js.native
 object XmlDocument extends js.Object {

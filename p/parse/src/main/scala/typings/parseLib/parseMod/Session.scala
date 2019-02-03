@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Session ()
   extends parseLib.nodeMod.Session
 
+/* static members */
 @JSImport("parse", "Session")
 @js.native
 object Session extends js.Object {

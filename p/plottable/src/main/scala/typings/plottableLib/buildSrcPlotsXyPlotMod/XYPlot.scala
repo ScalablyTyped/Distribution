@@ -139,6 +139,7 @@ class XYPlot[X, Y] ()
   def y(y: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/xyPlot", "XYPlot")
 @js.native
 object XYPlot extends js.Object {

@@ -13,6 +13,7 @@ class SingleTokenIndenter protected () extends IndentationTrackingWalker {
   var indentationPosition: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.SingleTokenIndenter")
 @js.native
 object SingleTokenIndenter extends js.Object {

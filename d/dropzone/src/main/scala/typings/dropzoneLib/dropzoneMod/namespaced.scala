@@ -14,6 +14,7 @@ class namespaced protected () extends Dropzone {
   def this(container: java.lang.String, options: dropzoneLib.dropzoneMod.DropzoneNs.DropzoneOptions) = this()
 }
 
+/* static members */
 @JSImport("dropzone", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

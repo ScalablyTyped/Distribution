@@ -41,6 +41,7 @@ class DefaultRouteTable protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/defaultRouteTable", "DefaultRouteTable")
 @js.native
 object DefaultRouteTable extends js.Object {

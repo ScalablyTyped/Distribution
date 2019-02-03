@@ -33,6 +33,7 @@ class ArrayBuffer ()
   ): this.type = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/buffer/ArrayBuffer", "ArrayBuffer")
 @js.native
 object ArrayBuffer extends js.Object {

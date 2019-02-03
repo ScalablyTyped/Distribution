@@ -19,6 +19,7 @@ class HtmlDataPagerAdapter ()
   /* private */ def removeElementRefAndRestoreToAdapter(childElement: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.widget.HtmlDataPagerAdapter")
 @js.native
 object HtmlDataPagerAdapter extends js.Object {

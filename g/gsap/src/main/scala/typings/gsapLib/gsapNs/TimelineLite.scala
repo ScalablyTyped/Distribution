@@ -211,6 +211,7 @@ class TimelineLite () extends SimpleTimeline {
   def usesFrames(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.TimelineLite")
 @js.native
 object TimelineLite extends js.Object {

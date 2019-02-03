@@ -12,6 +12,7 @@ class Transfer protected ()
   def this(props: antdLib.libTransferMod.TransferProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Transfer")
 @js.native
 object Transfer extends js.Object {

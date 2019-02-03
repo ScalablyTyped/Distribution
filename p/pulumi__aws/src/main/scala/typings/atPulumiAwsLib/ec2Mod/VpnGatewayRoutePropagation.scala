@@ -20,6 +20,7 @@ class VpnGatewayRoutePropagation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpnGatewayRoutePropagationMod.VpnGatewayRoutePropagationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpnGatewayRoutePropagation")
 @js.native
 object VpnGatewayRoutePropagation extends js.Object {

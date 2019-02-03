@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTabBarScrollerFoundation ()
   extends atMaterialTabsLib.tabDashBarDashScrollerFoundationMod.default
 
+/* static members */
 @JSImport("@material/tabs/tab-bar-scroller", "MDCTabBarScrollerFoundation")
 @js.native
 object MDCTabBarScrollerFoundation extends js.Object {

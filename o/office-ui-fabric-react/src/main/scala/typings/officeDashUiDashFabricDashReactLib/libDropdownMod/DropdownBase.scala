@@ -12,6 +12,7 @@ class DropdownBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDropdownDropdownDotTypesMod.IDropdownProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Dropdown", "DropdownBase")
 @js.native
 object DropdownBase extends js.Object {

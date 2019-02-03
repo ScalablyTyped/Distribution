@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Slider ()
   extends materializeDashCssLib.MNs.Slider
 
+/* static members */
 @JSImport("materialize-css", "Slider")
 @js.native
 object Slider extends js.Object {

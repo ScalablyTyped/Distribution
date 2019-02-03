@@ -23,6 +23,7 @@ class VariableAst protected () extends TemplateAst {
   override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/template_parser/template_ast", "VariableAst")
 @js.native
 object VariableAst extends js.Object {

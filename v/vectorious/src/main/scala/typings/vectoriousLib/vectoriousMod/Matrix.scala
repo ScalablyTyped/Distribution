@@ -175,6 +175,7 @@ class Matrix protected () extends js.Object {
   def transpose(): Matrix = js.native
 }
 
+/* static members */
 @JSImport("vectorious", "Matrix")
 @js.native
 object Matrix extends js.Object {

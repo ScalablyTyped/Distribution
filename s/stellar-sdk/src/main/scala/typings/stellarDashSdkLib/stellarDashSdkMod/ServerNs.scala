@@ -65,9 +65,13 @@ object ServerNs extends js.Object {
   class AccountResponse protected () extends AccountRecord {
     def this(response: AccountRecord) = this()
     /* CompleteClass */
-    override var _links: stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any = js.native
+    override var _links: /* import warning: ImportType.apply c Unsupported type mapping: 
+    {[ key in T | 'self' ]: stellar-sdk.stellar-sdk.Horizon.ResponseLink}
+      */ stellarDashSdkLib.stellarDashSdkLibStrings.BaseResponse with js.Any = js.native
     @JSName("_links")
-    var _links_AccountResponse: stellarDashSdkLib.stellarDashSdkLibStrings.AccountResponse with js.Any = js.native
+    var _links_AccountResponse: /* import warning: ImportType.apply c Unsupported type mapping: 
+    {[ key in 'self' ]: stellar-sdk.stellar-sdk.Horizon.ResponseLink}
+      */ stellarDashSdkLib.stellarDashSdkLibStrings.AccountResponse with js.Any = js.native
     var inflation_destination: js.UndefOr[js.Any] = js.native
     @JSName("signers")
     var signers_AccountResponse: js.Array[stellarDashSdkLib.stellarDashSdkMod.HorizonNs.AccountSigner] = js.native

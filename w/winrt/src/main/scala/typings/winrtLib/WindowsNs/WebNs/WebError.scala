@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebError () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Web.WebError")
 @js.native
 object WebError extends js.Object {

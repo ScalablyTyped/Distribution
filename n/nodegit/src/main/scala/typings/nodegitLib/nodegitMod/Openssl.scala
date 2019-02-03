@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Openssl ()
   extends nodegitLib.openDashSslMod.Openssl
 
+/* static members */
 @JSImport("nodegit", "Openssl")
 @js.native
 object Openssl extends js.Object {

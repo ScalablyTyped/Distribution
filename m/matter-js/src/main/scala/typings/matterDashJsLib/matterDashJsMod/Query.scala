@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Query ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Query
 
+/* static members */
 @JSImport("matter-js", "Query")
 @js.native
 object Query extends js.Object {

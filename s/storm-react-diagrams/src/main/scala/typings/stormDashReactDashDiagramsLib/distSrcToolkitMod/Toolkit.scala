@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Toolkit () extends js.Object
 
+/* static members */
 @JSImport("storm-react-diagrams/dist/src/Toolkit", "Toolkit")
 @js.native
 object Toolkit extends js.Object {

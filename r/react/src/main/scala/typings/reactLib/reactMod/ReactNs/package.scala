@@ -184,6 +184,8 @@ package object ReactNs {
   // React.PropTypes
   // ----------------------------------------------------------------------
   type Validator[T] = propDashTypesLib.propDashTypesMod.Validator[T]
-  type WeakValidationMap[T] = reactLib.reactLibStrings.WeakValidationMap with T
+  type WeakValidationMap[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]:? react.react.React.Validator<T[K]> | react.react.React.Validator<T[K] | null | undefined>}
+    */ reactLib.reactLibStrings.WeakValidationMap with js.Any
   type WheelEventHandler[T] = EventHandler[WheelEvent[T]]
 }

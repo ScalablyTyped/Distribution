@@ -43,7 +43,7 @@ abstract class NetworkOperatorTetheringManager () extends js.Object {
   def stopTetheringAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[NetworkOperatorTetheringOperationResult] = js.native
 }
 
-/** This interface exposes the methods and properties used to control and configure tethering capabilities for a specific network account. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.NetworkOperatorTetheringManager")
 @js.native
 object NetworkOperatorTetheringManager extends js.Object {

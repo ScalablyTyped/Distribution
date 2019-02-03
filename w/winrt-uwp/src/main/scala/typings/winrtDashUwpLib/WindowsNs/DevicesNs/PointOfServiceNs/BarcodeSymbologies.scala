@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BarcodeSymbologies () extends js.Object
 
-/** Contains the barcode symbology. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.BarcodeSymbologies")
 @js.native
 object BarcodeSymbologies extends js.Object {

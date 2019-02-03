@@ -94,11 +94,7 @@ class Bloodhound[T] protected () extends js.Object {
   def ttAdapter(): js.Any = js.native
 }
 
-/**
-  * Bloodhound is the typeahead.js suggestion engine. Bloodhound is robust,
-  * flexible, and offers advanced functionalities such as prefetching,
-  * intelligent caching, fast lookups, and backfilling with remote data.
-  */
+/* static members */
 @JSGlobal("Bloodhound")
 @js.native
 object Bloodhound extends js.Object {

@@ -9,6 +9,7 @@ object parse5DashParserDashStreamLibStrings {
   @js.native
   sealed trait script extends js.Object
   
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
 }
 

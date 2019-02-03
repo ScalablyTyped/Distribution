@@ -18,6 +18,7 @@ class Int64 protected ()
   def this(hi: scala.Double, lo: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("thrift", "Int64")
 @js.native
 object Int64 extends js.Object {

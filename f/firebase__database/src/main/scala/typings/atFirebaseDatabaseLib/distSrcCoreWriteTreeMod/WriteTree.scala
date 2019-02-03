@@ -242,6 +242,7 @@ class WriteTree () extends js.Object {
   def shadowingWrite(path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path): atFirebaseDatabaseLib.distSrcCoreSnapNodeMod.Node | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/WriteTree", "WriteTree")
 @js.native
 object WriteTree extends js.Object {

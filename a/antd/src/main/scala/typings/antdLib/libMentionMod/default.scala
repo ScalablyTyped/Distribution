@@ -11,6 +11,7 @@ class default protected () extends Mention {
   def this(props: MentionProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/mention", JSImport.Default)
 @js.native
 object default extends js.Object {

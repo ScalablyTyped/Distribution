@@ -16,6 +16,7 @@ class namespaced protected () extends Long {
   def this(low: scala.Double, high: scala.Double, unsigned: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("long", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

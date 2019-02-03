@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Switch
 
+/* static members */
 @JSImport("antd/lib/switch", JSImport.Default)
 @js.native
 object default extends js.Object {

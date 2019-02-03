@@ -30,13 +30,21 @@ object markdownDashItLibStrings {
   @js.native
   sealed trait zero extends js.Object
   
+  @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
+  @scala.inline
   def commonmark: commonmark = "commonmark".asInstanceOf[commonmark]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  @scala.inline
   def reference: reference = "reference".asInstanceOf[reference]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
   def zero: zero = "zero".asInstanceOf[zero]
 }
 

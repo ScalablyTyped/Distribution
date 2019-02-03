@@ -78,10 +78,7 @@ class BoneIKController protected () extends js.Object {
   def update(): scala.Unit = js.native
 }
 
-/**
-  * Class used to apply inverse kinematics to bones
-  * @see http://doc.babylonjs.com/how_to/how_to_use_bones_and_skeletons#boneikcontroller
-  */
+/* static members */
 @JSGlobal("BABYLON.BoneIKController")
 @js.native
 object BoneIKController extends js.Object {

@@ -29,6 +29,7 @@ class Model () extends Query {
   def unset(keys: js.Array[java.lang.String]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("mongorito", "Model")
 @js.native
 object Model extends js.Object {

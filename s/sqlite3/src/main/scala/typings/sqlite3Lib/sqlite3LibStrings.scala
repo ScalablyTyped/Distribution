@@ -24,11 +24,17 @@ object sqlite3LibStrings {
   @js.native
   sealed trait trace extends js.Object
   
+  @scala.inline
   def busyTimeout: busyTimeout = "busyTimeout".asInstanceOf[busyTimeout]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def profile: profile = "profile".asInstanceOf[profile]
+  @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
 }
 

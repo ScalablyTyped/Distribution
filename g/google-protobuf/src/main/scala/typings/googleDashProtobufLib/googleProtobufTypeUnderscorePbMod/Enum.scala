@@ -34,6 +34,7 @@ class Enum ()
   def setSyntax(value: Syntax): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/type_pb", "Enum")
 @js.native
 object Enum extends js.Object {

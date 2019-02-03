@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class SerializationHelper ()
   extends babylonjsLib.BABYLONNs.SerializationHelper
 
-/**
-  * Class used to help serialization objects
-  */
+/* static members */
 @JSImport("babylonjs", "SerializationHelper")
 @js.native
 object SerializationHelper extends js.Object {

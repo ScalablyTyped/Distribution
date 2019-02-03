@@ -8,6 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("@feathersjs/express", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  val default: (js.Function1[
+    /* app */ atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[_], 
+    atFeathersjsExpressLib.atFeathersjsExpressMod.Application[_]
+  ]) with atFeathersjsExpressLib.Anon_App = js.native
   /**
     * This is a built-in middleware function in Express. It parses incoming requests with JSON payloads and is based on body-parser.
     * @since 4.16.0
@@ -28,7 +32,6 @@ object ^ extends js.Object {
   var urlencoded: expressLib.Anon_OptionsNextHandleFunction = js.native
   def Router(): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
   def Router(options: expressLib.expressMod.eNs.RouterOptions): expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Router = js.native
-  def default[T](app: atFeathersjsFeathersLib.atFeathersjsFeathersMod.Application[T]): atFeathersjsExpressLib.atFeathersjsExpressMod.Application[T] = js.native
   def errorHandler(): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
   def errorHandler(options: atFeathersjsExpressLib.Anon_Html): expressLib.expressMod.eNs.ErrorRequestHandler = js.native
   def notFound(): expressLib.expressMod.eNs.RequestHandler = js.native

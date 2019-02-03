@@ -131,6 +131,7 @@ class UrlRuleFactory protected () extends js.Object {
   def fromUrlMatcher(urlMatcher: atUirouterCoreLib.libUrlUrlMatcherMod.UrlMatcher, handler: java.lang.String): atUirouterCoreLib.libUrlInterfaceMod.MatcherUrlRule = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/url/urlRule", "UrlRuleFactory")
 @js.native
 object UrlRuleFactory extends js.Object {

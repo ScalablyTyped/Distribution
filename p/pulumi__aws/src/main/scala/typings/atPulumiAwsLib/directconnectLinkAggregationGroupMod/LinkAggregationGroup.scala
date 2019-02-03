@@ -48,6 +48,7 @@ class LinkAggregationGroup protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/linkAggregationGroup", "LinkAggregationGroup")
 @js.native
 object LinkAggregationGroup extends js.Object {

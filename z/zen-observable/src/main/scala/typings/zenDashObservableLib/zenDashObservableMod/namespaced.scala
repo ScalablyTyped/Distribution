@@ -11,6 +11,7 @@ class namespaced[T] protected () extends Observable[T] {
   def this(subscriber: zenDashObservableLib.zenDashObservableMod.Global.ZenObservableNs.Subscriber[T]) = this()
 }
 
+/* static members */
 @JSImport("zen-observable", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

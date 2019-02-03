@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Customizations ()
   extends atUifabricUtilitiesLib.atUifabricUtilitiesMod.Customizations
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Utilities", "Customizations")
 @js.native
 object Customizations extends js.Object {

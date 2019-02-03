@@ -11,6 +11,7 @@ abstract class ComponentFactoryResolver () extends js.Object {
   def resolveComponentFactory[T](component: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentFactory[T] = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/linker/component_factory_resolver", "ComponentFactoryResolver")
 @js.native
 object ComponentFactoryResolver extends js.Object {

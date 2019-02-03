@@ -19,6 +19,7 @@ class Animation ()
   def this(rule: java.lang.String, duration: scala.Double, draw: canvasDashGaugesLib.CanvasGaugesNs.DrawEventCallback, end: canvasDashGaugesLib.CanvasGaugesNs.EndEventCallback) = this()
 }
 
+/* static members */
 @JSImport("canvas-gauges", "Animation")
 @js.native
 object Animation extends js.Object {

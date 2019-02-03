@@ -22,6 +22,7 @@ class CLIEngine protected () extends js.Object {
   def resolveFileGlobPatterns(patterns: js.Array[java.lang.String]): js.Array[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("eslint", "CLIEngine")
 @js.native
 object CLIEngine extends js.Object {

@@ -116,6 +116,7 @@ class Drag ()
   def onDragStart(callback: DragCallback): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/interactions/dragInteraction", "Drag")
 @js.native
 object Drag extends js.Object {

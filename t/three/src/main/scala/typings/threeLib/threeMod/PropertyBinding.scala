@@ -13,6 +13,7 @@ class PropertyBinding protected ()
   def this(rootNode: js.Any, path: java.lang.String, parsedPath: js.Any) = this()
 }
 
+/* static members */
 @JSImport("three", "PropertyBinding")
 @js.native
 object PropertyBinding extends js.Object {

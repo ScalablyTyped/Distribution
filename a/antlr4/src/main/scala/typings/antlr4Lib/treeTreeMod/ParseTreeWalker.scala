@@ -13,6 +13,7 @@ class ParseTreeWalker () extends js.Object {
   def walk(listener: ParseTreeListener, rule: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("antlr4/tree/Tree", "ParseTreeWalker")
 @js.native
 object ParseTreeWalker extends js.Object {

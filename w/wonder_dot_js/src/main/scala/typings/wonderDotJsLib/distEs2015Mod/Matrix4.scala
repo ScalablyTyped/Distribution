@@ -12,6 +12,7 @@ class Matrix4 ()
   def this(mat: stdLib.Float32Array) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Matrix4")
 @js.native
 object Matrix4 extends js.Object {

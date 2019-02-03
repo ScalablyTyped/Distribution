@@ -12,6 +12,7 @@ class Meta () extends js.Object {
   def write(parentNode: stdLib.Node, ctx: Context): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Meta")
 @js.native
 object Meta extends js.Object {

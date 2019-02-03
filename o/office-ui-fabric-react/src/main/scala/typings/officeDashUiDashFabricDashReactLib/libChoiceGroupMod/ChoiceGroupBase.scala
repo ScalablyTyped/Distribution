@@ -12,6 +12,7 @@ class ChoiceGroupBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupDotTypesMod.IChoiceGroupProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/ChoiceGroup", "ChoiceGroupBase")
 @js.native
 object ChoiceGroupBase extends js.Object {

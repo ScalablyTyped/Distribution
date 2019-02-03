@@ -26,6 +26,7 @@ class SourceCodeInfo ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo")
 @js.native
 object SourceCodeInfo extends js.Object {

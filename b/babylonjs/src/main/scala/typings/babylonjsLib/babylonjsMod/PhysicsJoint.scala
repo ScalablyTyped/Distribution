@@ -28,11 +28,7 @@ class PhysicsJoint protected ()
   jointData: babylonjsLib.BABYLONNs.PhysicsJointData) = this()
 }
 
-/**
-  * This is a holder class for the physics joint created by the physics plugin
-  * It holds a set of functions to control the underlying joint
-  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSImport("babylonjs", "PhysicsJoint")
 @js.native
 object PhysicsJoint extends js.Object {

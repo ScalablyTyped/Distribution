@@ -19,9 +19,7 @@ class Timestamp ()
   var _bsontype_Timestamp: adoneLib.adoneLibStrings.Timestamp = js.native
 }
 
-/**
-  * This type is for INTERNAL use in MongoDB only and should not be used in applications
-  */
+/* static members */
 @JSGlobal("adone.data.bson.Timestamp")
 @js.native
 object Timestamp extends js.Object {

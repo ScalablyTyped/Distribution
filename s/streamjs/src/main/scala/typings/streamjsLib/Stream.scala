@@ -96,6 +96,7 @@ class Stream[T] () extends js.Object {
   def toMap(path: java.lang.String, mergeFunction: streamjsLib.StreamNs.Accumulator[T]): streamjsLib.StreamNs.Map[T] = js.native
 }
 
+/* static members */
 @JSGlobal("Stream")
 @js.native
 object Stream extends js.Object {

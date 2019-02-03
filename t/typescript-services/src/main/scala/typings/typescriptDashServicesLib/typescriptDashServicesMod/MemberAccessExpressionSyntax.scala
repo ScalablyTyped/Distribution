@@ -12,6 +12,7 @@ class MemberAccessExpressionSyntax protected ()
   def this(expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, dotToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, name: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "MemberAccessExpressionSyntax")
 @js.native
 object MemberAccessExpressionSyntax extends js.Object {

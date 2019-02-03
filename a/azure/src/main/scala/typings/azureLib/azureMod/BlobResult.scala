@@ -49,6 +49,7 @@ class BlobResult () extends js.Object {
   def getPropertiesFromHeaders(headers: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "BlobResult")
 @js.native
 object BlobResult extends js.Object {

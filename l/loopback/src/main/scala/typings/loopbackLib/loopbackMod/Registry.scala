@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class Registry ()
   extends loopbackLib.loopbackMod.lNs.Registry
 
-/**
-  * Define and reference `Models` and `anys`
-  * @clas
-  */
+/* static members */
 @JSImport("loopback", "Registry")
 @js.native
 object Registry extends js.Object {

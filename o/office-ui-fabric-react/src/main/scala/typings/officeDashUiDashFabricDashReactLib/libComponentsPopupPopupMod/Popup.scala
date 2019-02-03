@@ -31,6 +31,7 @@ class Popup protected ()
   def componentWillUnmount_MPopup(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Popup/Popup", "Popup")
 @js.native
 object Popup extends js.Object {

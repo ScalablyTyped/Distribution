@@ -34,6 +34,7 @@ class TransitionHook protected () extends js.Object {
   def logError(err: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/transition/transitionHook", "TransitionHook")
 @js.native
 object TransitionHook extends js.Object {

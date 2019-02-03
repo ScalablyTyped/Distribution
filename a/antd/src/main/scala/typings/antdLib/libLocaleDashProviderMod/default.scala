@@ -11,6 +11,7 @@ class default protected () extends LocaleProvider {
   def this(props: LocaleProviderProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/locale-provider", JSImport.Default)
 @js.native
 object default extends js.Object {

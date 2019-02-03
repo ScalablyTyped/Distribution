@@ -381,6 +381,7 @@ class Repository () extends js.Object {
   def workdir(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nodegit/repository", "Repository")
 @js.native
 object Repository extends js.Object {

@@ -36,15 +36,25 @@ object wampyLibStrings {
   @js.native
   sealed trait wildcard extends js.Object
   
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def kill: kill = "kill".asInstanceOf[kill]
+  @scala.inline
   def killnowait: killnowait = "killnowait".asInstanceOf[killnowait]
+  @scala.inline
   def last: last = "last".asInstanceOf[last]
+  @scala.inline
   def prefix: prefix = "prefix".asInstanceOf[prefix]
+  @scala.inline
   def random: random = "random".asInstanceOf[random]
+  @scala.inline
   def roundrobin: roundrobin = "roundrobin".asInstanceOf[roundrobin]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
   def skip: skip = "skip".asInstanceOf[skip]
+  @scala.inline
   def wildcard: wildcard = "wildcard".asInstanceOf[wildcard]
 }
 

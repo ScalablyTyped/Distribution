@@ -16,6 +16,7 @@ class KnockoutCustomAttribute protected () extends js.Object {
   def unbind(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aurelia-knockout/dist/commonjs/knockout-custom-attribute", "KnockoutCustomAttribute")
 @js.native
 object KnockoutCustomAttribute extends js.Object {

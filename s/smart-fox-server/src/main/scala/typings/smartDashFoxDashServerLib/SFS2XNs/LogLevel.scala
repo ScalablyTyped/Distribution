@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LogLevel () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.LogLevel")
 @js.native
 object LogLevel extends js.Object {

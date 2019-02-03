@@ -24,6 +24,7 @@ class namespaced () extends DigestMd5Mechanism {
   override def response(cred: saslDashDigestDashMd5Lib.saslDashDigestDashMd5Mod.DigestMd5MechanismNs.Credentials): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sasl-digest-md5", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

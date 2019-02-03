@@ -23,6 +23,7 @@ class Checkbox ()
   /* private */ def updateIndeterminate(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/controls", "Checkbox")
 @js.native
 object Checkbox extends js.Object {

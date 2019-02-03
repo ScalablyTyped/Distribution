@@ -20,6 +20,7 @@ class HostedPublicVirtualInterfaceAccepter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectHostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter")
 @js.native
 object HostedPublicVirtualInterfaceAccepter extends js.Object {

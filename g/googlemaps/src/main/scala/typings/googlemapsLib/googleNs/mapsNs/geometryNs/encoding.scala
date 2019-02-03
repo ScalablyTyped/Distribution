@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class encoding () extends js.Object
 
+/* static members */
 @JSGlobal("google.maps.geometry.encoding")
 @js.native
 object encoding extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends EmbedBlot
 
+/* static members */
 @JSImport("parchment/dist/src/blot/embed", JSImport.Default)
 @js.native
 object default extends js.Object {

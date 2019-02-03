@@ -19,6 +19,7 @@ class Swiper protected ()
   def this(container: swiperLib.swiperMod.SelectableElement, options: swiperLib.swiperMod.SwiperOptions) = this()
 }
 
+/* static members */
 @JSImport("swiper/dist/js/swiper.esm", "Swiper")
 @js.native
 object Swiper extends js.Object {

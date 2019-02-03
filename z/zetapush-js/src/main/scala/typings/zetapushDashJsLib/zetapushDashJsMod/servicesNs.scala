@@ -38,6 +38,7 @@ object servicesNs extends js.Object {
     ): js.Promise[_] = js.native
   }
   
+  /* static members */
   @js.native
   object Macro extends js.Object {
     var DEFAULT_DEPLOYMENT_ID: java.lang.String = js.native

@@ -30,6 +30,7 @@ class Vec2 () extends js.Object {
   def toArray(): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("famous/math", "Vec2")
 @js.native
 object Vec2 extends js.Object {

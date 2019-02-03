@@ -45,6 +45,7 @@ class namespaced () extends SandboxedModule {
   override var sourceTransformers: js.Object = js.native
 }
 
+/* static members */
 @JSImport("sandboxed-module", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

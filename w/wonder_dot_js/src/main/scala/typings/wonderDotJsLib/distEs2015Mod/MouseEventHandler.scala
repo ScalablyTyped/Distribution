@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MouseEventHandler ()
   extends wonderDotJsLib.distEs2015EventHandlerMouseEventHandlerMod.MouseEventHandler
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "MouseEventHandler")
 @js.native
 object MouseEventHandler extends js.Object {

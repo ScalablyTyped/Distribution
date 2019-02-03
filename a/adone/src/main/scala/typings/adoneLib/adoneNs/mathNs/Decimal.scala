@@ -776,9 +776,7 @@ class Decimal protected () extends js.Object {
   def truncated(): Decimal = js.native
 }
 
-/**
-  * An arbitrary precision decimal number
-  */
+/* static members */
 @JSGlobal("adone.math.Decimal")
 @js.native
 object Decimal extends js.Object {

@@ -12,6 +12,7 @@ class Replacement protected ()
   def this(start: scala.Double, length: scala.Double, text: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("tslint/lib", "Replacement")
 @js.native
 object Replacement extends js.Object {

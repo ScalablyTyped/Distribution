@@ -72,6 +72,7 @@ class FileDescriptorProto ()
   def setWeakDependencyList(value: js.Array[scala.Double]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorProto")
 @js.native
 object FileDescriptorProto extends js.Object {

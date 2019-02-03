@@ -21,9 +21,7 @@ class KiiGeoPoint () extends js.Object {
   def getLongitude(): scala.Double = js.native
 }
 
-/**
-  * Represents Geo Point.
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiGeoPoint")
 @js.native
 object KiiGeoPoint extends js.Object {

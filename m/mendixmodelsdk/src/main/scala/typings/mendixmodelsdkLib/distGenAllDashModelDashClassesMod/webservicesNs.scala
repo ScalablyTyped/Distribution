@@ -164,6 +164,7 @@ object webservicesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /* static members */
   @js.native
   object AppServiceState extends js.Object {
     var Consumable: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.AppServiceState = js.native
@@ -171,6 +172,7 @@ object webservicesNs extends js.Object {
     var Draft: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.AppServiceState = js.native
   }
   
+  /* static members */
   @js.native
   object DataAssociation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -189,6 +191,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object DataAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -207,6 +210,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataAttribute = js.native
   }
   
+  /* static members */
   @js.native
   object DataEntity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -237,21 +241,21 @@ object webservicesNs extends js.Object {
     def createInPublishedResourceUnderDataEntity(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedResource): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntity = js.native
   }
   
+  /* static members */
   @js.native
   object DataEntityBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `WebServices`.
-    */
+  /* static members */
   @js.native
   object DataMember extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object HeaderAuthentication extends js.Object {
     var Custom: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.HeaderAuthentication = js.native
@@ -259,9 +263,7 @@ object webservicesNs extends js.Object {
     var UsernamePassword: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.HeaderAuthentication = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/consumed-web-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImportedWebService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -273,6 +275,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ImportedWebService = js.native
   }
   
+  /* static members */
   @js.native
   object OperationInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -291,6 +294,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ServiceInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo = js.native
   }
   
+  /* static members */
   @js.native
   object PartEncoding extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -315,9 +319,7 @@ object webservicesNs extends js.Object {
     def createInOperationInfoUnderRequestHeaderPartEncoding(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PartEncoding = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-app-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PublishedAppService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -329,6 +331,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedAppService = js.native
   }
   
+  /* static members */
   @js.native
   object PublishedOperation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -347,6 +350,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation = js.native
   }
   
+  /* static members */
   @js.native
   object PublishedParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -365,21 +369,21 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedOperation): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter = js.native
   }
   
+  /* static members */
   @js.native
   object PublishedResource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object PublishedServiceBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenWebservicesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PublishedWebService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -391,6 +395,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedWebService = js.native
   }
   
+  /* static members */
   @js.native
   object RpcMessagePartElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -409,6 +414,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcMessagePartElement = js.native
   }
   
+  /* static members */
   @js.native
   object RpcOperationElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -439,6 +445,7 @@ object webservicesNs extends js.Object {
     def createInOperationInfoUnderResponseBodyRpcElement(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.OperationInfo): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.RpcOperationElement = js.native
   }
   
+  /* static members */
   @js.native
   object ServiceInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -457,15 +464,14 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.ServiceInfo = js.native
   }
   
+  /* static members */
   @js.native
   object SoapVersion extends js.Object {
     var Soap11: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.SoapVersion = js.native
     var Soap12: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.SoapVersion = js.native
   }
   
-  /**
-    * In version 6.7.0: introduced
-    */
+  /* static members */
   @js.native
   object SystemIdDataAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -487,9 +493,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.DataEntityBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.SystemIdDataAttribute = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/published-web-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object VersionedService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -508,6 +512,7 @@ object webservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedServiceBase): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService = js.native
   }
   
+  /* static members */
   @js.native
   object WsdlDescription extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -532,6 +537,7 @@ object webservicesNs extends js.Object {
     def createInMsdUnderWsdlDescription(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.WsdlDescription = js.native
   }
   
+  /* static members */
   @js.native
   object WsdlEntry extends js.Object {
     var structureTypeName: java.lang.String = js.native

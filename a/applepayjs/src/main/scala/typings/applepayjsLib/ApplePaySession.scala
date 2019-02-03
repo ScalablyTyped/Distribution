@@ -109,6 +109,7 @@ class ApplePaySession protected ()
   def onvalidatemerchant(event: applepayjsLib.ApplePayJSNs.ApplePayValidateMerchantEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ApplePaySession")
 @js.native
 object ApplePaySession extends js.Object {

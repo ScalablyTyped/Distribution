@@ -32,7 +32,7 @@ class HostName protected () extends js.Object {
   def isEqual(hostName: HostName): scala.Boolean = js.native
 }
 
-/** Provides data for a hostname or an IP address. */
+/* static members */
 @JSGlobal("Windows.Networking.HostName")
 @js.native
 object HostName extends js.Object {

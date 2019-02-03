@@ -73,7 +73,7 @@ abstract class VoiceCommandServiceConnection () extends js.Object {
   def requestDisambiguationAsync(response: VoiceCommandResponse): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[VoiceCommandDisambiguationResult] = js.native
 }
 
-/** The background app service connection to Cortana. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.VoiceCommands.VoiceCommandServiceConnection")
 @js.native
 object VoiceCommandServiceConnection extends js.Object {

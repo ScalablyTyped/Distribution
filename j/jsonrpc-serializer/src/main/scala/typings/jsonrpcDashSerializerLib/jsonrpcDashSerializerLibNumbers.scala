@@ -21,10 +21,15 @@ object jsonrpcDashSerializerLibNumbers {
   @js.native
   sealed trait `-32700` extends js.Object
   
+  @scala.inline
   def `-32600`: `-32600` = -32600.asInstanceOf[`-32600`]
+  @scala.inline
   def `-32601`: `-32601` = -32601.asInstanceOf[`-32601`]
+  @scala.inline
   def `-32602`: `-32602` = -32602.asInstanceOf[`-32602`]
+  @scala.inline
   def `-32603`: `-32603` = -32603.asInstanceOf[`-32603`]
+  @scala.inline
   def `-32700`: `-32700` = -32700.asInstanceOf[`-32700`]
 }
 

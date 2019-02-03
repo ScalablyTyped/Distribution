@@ -26,9 +26,7 @@ class Geometry protected ()
   def this(id: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, vertexData: babylonjsLib.BABYLONNs.VertexData, updatable: scala.Boolean, mesh: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Mesh]) = this()
 }
 
-/**
-  * Class used to store geometry data (vertex buffers + index buffer)
-  */
+/* static members */
 @JSImport("babylonjs", "Geometry")
 @js.native
 object Geometry extends js.Object {

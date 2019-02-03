@@ -44,7 +44,7 @@ class FileOpenPicker () extends js.Object {
   def pickSingleFileAsync(pickerOperationId: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StorageFile] = js.native
 }
 
-/** Represents a UI element that lets the user choose and open files. */
+/* static members */
 @JSGlobal("Windows.Storage.Pickers.FileOpenPicker")
 @js.native
 object FileOpenPicker extends js.Object {

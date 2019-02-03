@@ -12,6 +12,7 @@ class TypeArgumentListSyntax protected ()
   def this(lessThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeArguments: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, greaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeArgumentListSyntax")
 @js.native
 object TypeArgumentListSyntax extends js.Object {

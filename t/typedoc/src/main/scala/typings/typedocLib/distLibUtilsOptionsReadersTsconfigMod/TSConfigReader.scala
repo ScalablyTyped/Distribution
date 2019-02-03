@@ -14,6 +14,7 @@ class TSConfigReader ()
   def onDiscover(event: typedocLib.distLibUtilsOptionsOptionsMod.DiscoverEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/readers/tsconfig", "TSConfigReader")
 @js.native
 object TSConfigReader extends js.Object {

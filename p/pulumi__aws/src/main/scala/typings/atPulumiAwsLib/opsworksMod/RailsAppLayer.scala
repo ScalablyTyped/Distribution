@@ -20,6 +20,7 @@ class RailsAppLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksRailsAppLayerMod.RailsAppLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "RailsAppLayer")
 @js.native
 object RailsAppLayer extends js.Object {

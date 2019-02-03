@@ -12,6 +12,7 @@ class TweenMax protected ()
   def this(target: js.Object, duration: scala.Double, vars: js.Object) = this()
 }
 
+/* static members */
 @JSImport("gsap", "TweenMax")
 @js.native
 object TweenMax extends js.Object {

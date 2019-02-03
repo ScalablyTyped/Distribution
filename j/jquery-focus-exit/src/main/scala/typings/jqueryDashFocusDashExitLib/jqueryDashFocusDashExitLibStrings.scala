@@ -12,7 +12,9 @@ object jqueryDashFocusDashExitLibStrings {
   @js.native
   sealed trait focusin extends js.Object
   
+  @scala.inline
   def focusExit: focusExit = "focusExit".asInstanceOf[focusExit]
+  @scala.inline
   def focusin: focusin = "focusin".asInstanceOf[focusin]
 }
 

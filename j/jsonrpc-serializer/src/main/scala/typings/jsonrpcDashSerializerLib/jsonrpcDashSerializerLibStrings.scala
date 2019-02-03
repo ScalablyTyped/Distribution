@@ -33,14 +33,23 @@ object jsonrpcDashSerializerLibStrings {
   @js.native
   sealed trait success extends js.Object
   
+  @scala.inline
   def InvalidParamsError: InvalidParamsError = "InvalidParamsError".asInstanceOf[InvalidParamsError]
+  @scala.inline
   def InvalidRequestError: InvalidRequestError = "InvalidRequestError".asInstanceOf[InvalidRequestError]
+  @scala.inline
   def JsonRpcError: JsonRpcError = "JsonRpcError".asInstanceOf[JsonRpcError]
+  @scala.inline
   def MethodNotFoundError: MethodNotFoundError = "MethodNotFoundError".asInstanceOf[MethodNotFoundError]
+  @scala.inline
   def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def notification: notification = "notification".asInstanceOf[notification]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
 }
 

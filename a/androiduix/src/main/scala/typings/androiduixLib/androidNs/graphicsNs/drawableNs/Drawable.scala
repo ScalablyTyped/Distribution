@@ -55,6 +55,7 @@ abstract class Drawable () extends js.Object {
   def unscheduleSelf(what: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.drawable.Drawable")
 @js.native
 object Drawable extends js.Object {

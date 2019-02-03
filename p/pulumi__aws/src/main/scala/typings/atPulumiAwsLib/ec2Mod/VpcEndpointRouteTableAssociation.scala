@@ -20,6 +20,7 @@ class VpcEndpointRouteTableAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpcEndpointRouteTableAssociationMod.VpcEndpointRouteTableAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpcEndpointRouteTableAssociation")
 @js.native
 object VpcEndpointRouteTableAssociation extends js.Object {

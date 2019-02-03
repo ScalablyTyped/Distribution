@@ -12,6 +12,7 @@ class PrettyPrintPlugin ()
   def onRendererEndPage(event: typedocLib.distLibOutputEventsMod.PageEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/plugins/PrettyPrintPlugin", "PrettyPrintPlugin")
 @js.native
 object PrettyPrintPlugin extends js.Object {

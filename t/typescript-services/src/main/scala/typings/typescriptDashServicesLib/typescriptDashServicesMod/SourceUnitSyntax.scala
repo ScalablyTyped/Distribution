@@ -12,6 +12,7 @@ class SourceUnitSyntax protected ()
   def this(moduleElements: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, endOfFileToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SourceUnitSyntax")
 @js.native
 object SourceUnitSyntax extends js.Object {

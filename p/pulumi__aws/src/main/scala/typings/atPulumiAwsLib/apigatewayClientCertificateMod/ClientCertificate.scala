@@ -37,6 +37,7 @@ class ClientCertificate protected ()
   val pemEncodedCertificate: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/clientCertificate", "ClientCertificate")
 @js.native
 object ClientCertificate extends js.Object {

@@ -27,6 +27,7 @@ class PrintTaskOptionDetails ()
   override def getPageDescription(jobPageNumber: scala.Double): winrtLib.WindowsNs.GraphicsNs.PrintingNs.PrintPageDescription = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Graphics.Printing.OptionDetails.PrintTaskOptionDetails")
 @js.native
 object PrintTaskOptionDetails extends js.Object {

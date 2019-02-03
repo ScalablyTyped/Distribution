@@ -54,7 +54,9 @@ package object swanNs {
   type Prop[T] = js.Function0[T] | baiduDashAppLib.Anon_Args[T]
   type PropValidator[T] = PropOptions[T] | Prop[T] | js.Array[Prop[T]]
   type PropsDefinition[T] = ArrayPropsDefinition[T] | RecordPropsDefinition[T]
-  type RecordPropsDefinition[T] = baiduDashAppLib.baiduDashAppLibStrings.RecordPropsDefinition with T
+  type RecordPropsDefinition[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: baidu-app.swan.PropValidator<T[K]>}
+    */ baiduDashAppLib.baiduDashAppLibStrings.RecordPropsDefinition with T
   // 开放接口-----设置
   type Scope = baiduDashAppLib.baiduDashAppLibStrings.scopeDOTuserInfo | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTuserLocation | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTaddress | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTinvoiceTitle | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTwerun | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTrecord | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTwritePhotosAlbum
   type ScrollEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.scroll, js.Object]

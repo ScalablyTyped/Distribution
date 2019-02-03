@@ -61,7 +61,7 @@ abstract class HotspotAuthenticationContext () extends js.Object {
   def triggerAttentionRequired(packageRelativeApplicationId: java.lang.String, applicationParameters: java.lang.String): scala.Unit = js.native
 }
 
-/** Provides the authentication context that contains details of the current authentication attempt and provides methods to perform the authentication. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.HotspotAuthenticationContext")
 @js.native
 object HotspotAuthenticationContext extends js.Object {

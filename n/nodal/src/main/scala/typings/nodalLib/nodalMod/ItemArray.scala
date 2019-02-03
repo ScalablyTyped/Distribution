@@ -14,6 +14,7 @@ class ItemArray[T] ()
   def toObject(arrInterface: js.Array[java.lang.String]): js.Object = js.native
 }
 
+/* static members */
 @JSImport("nodal", "ItemArray")
 @js.native
 object ItemArray extends js.Object {

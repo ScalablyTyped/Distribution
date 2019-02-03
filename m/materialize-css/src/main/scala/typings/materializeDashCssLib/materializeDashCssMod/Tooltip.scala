@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tooltip ()
   extends materializeDashCssLib.MNs.Tooltip
 
+/* static members */
 @JSImport("materialize-css", "Tooltip")
 @js.native
 object Tooltip extends js.Object {

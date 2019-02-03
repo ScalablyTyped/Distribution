@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Entypo ()
   extends reactDashNativeDashVectorDashIconsLib.entypoMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Entypo")
 @js.native
 object Entypo extends js.Object {

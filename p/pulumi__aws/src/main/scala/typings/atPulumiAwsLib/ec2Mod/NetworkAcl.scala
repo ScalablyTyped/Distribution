@@ -20,6 +20,7 @@ class NetworkAcl protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2NetworkAclMod.NetworkAclArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "NetworkAcl")
 @js.native
 object NetworkAcl extends js.Object {

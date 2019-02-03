@@ -33,6 +33,7 @@ class Notification protected ()
   val topicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/notification", "Notification")
 @js.native
 object Notification extends js.Object {

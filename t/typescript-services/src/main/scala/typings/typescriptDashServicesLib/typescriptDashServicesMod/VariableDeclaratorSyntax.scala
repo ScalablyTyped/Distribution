@@ -12,6 +12,7 @@ class VariableDeclaratorSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, equalsValueClause: typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "VariableDeclaratorSyntax")
 @js.native
 object VariableDeclaratorSyntax extends js.Object {

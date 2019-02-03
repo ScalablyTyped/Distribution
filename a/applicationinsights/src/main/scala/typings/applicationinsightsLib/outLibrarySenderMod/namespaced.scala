@@ -13,6 +13,7 @@ class namespaced protected () extends Sender {
   def this(config: applicationinsightsLib.outLibraryConfigMod.namespaced, onSuccess: js.Function1[/* response */ java.lang.String, scala.Unit], onError: js.Function1[/* error */ nodeLib.Error, scala.Unit]) = this()
 }
 
+/* static members */
 @JSImport("applicationinsights/out/Library/Sender", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

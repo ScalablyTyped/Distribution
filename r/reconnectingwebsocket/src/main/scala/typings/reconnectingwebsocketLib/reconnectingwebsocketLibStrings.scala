@@ -12,7 +12,9 @@ object reconnectingwebsocketLibStrings {
   @js.native
   sealed trait blob extends js.Object
   
+  @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
 }
 

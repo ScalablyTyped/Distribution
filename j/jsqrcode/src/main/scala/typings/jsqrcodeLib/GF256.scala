@@ -22,6 +22,7 @@ class GF256 protected () extends js.Object {
   def multiply(a: scala.Double, b: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("GF256")
 @js.native
 object GF256 extends js.Object {

@@ -20,6 +20,7 @@ class WorkingStorage protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayWorkingStorageMod.WorkingStorageArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "WorkingStorage")
 @js.native
 object WorkingStorage extends js.Object {

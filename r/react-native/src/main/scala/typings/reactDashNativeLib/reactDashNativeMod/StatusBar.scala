@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StatusBar ()
   extends reactLib.reactMod.Component[StatusBarProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native", "StatusBar")
 @js.native
 object StatusBar extends js.Object {

@@ -123,9 +123,7 @@ class PoseEnabledController protected ()
   override def updateFromDevice(poseData: DevicePose): scala.Unit = js.native
 }
 
-/**
-  * Defines the PoseEnabledController object that contains state of a vr capable controller
-  */
+/* static members */
 @JSGlobal("BABYLON.PoseEnabledController")
 @js.native
 object PoseEnabledController extends js.Object {

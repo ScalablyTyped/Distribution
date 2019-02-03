@@ -46,9 +46,7 @@ class HubSection () extends js.Object {
   def dispose(): scala.Unit = js.native
 }
 
-/**
-  * Defines a section of a Hub.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.HubSection")
 @js.native
 object HubSection extends js.Object {

@@ -17,6 +17,7 @@ class Rect protected ()
   def this(xmin: scala.Double, xmax: scala.Double, ymin: scala.Double, ymax: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("terminal-kit", "Rect")
 @js.native
 object Rect extends js.Object {

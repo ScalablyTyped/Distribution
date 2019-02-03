@@ -146,6 +146,7 @@ class Container () extends js.Object {
   def unregister(key: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "Container")
 @js.native
 object Container extends js.Object {

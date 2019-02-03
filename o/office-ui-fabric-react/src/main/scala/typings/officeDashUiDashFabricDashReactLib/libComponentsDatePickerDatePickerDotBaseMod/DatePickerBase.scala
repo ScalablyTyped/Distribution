@@ -57,6 +57,7 @@ class DatePickerBase protected ()
   override def reset(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/DatePicker/DatePicker.base", "DatePickerBase")
 @js.native
 object DatePickerBase extends js.Object {

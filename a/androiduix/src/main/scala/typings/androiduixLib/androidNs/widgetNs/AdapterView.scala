@@ -73,6 +73,7 @@ abstract class AdapterView[T /* <: Adapter */] ()
   /* private */ def updateEmptyStatus(empty: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.AdapterView")
 @js.native
 object AdapterView extends js.Object {

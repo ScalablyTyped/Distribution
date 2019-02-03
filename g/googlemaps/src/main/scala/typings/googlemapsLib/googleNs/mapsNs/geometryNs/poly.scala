@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class poly () extends js.Object
 
+/* static members */
 @JSGlobal("google.maps.geometry.poly")
 @js.native
 object poly extends js.Object {

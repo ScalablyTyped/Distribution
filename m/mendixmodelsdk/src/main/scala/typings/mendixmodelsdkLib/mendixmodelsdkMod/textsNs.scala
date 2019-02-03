@@ -41,9 +41,7 @@ object textsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Texts`.
-    */
+  /* static members */
   @js.native
   object SystemText extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -62,9 +60,7 @@ object textsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenTextsMod.textsNs.SystemTextCollection): mendixmodelsdkLib.distGenTextsMod.textsNs.SystemText = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/system-texts relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SystemTextCollection extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -76,9 +72,7 @@ object textsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenTextsMod.textsNs.SystemTextCollection = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/translatable-texts relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Text extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -439,6 +433,7 @@ object textsNs extends js.Object {
     def createInWidgetValueUnderTranslatableValue(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenTextsMod.textsNs.Text = js.native
   }
   
+  /* static members */
   @js.native
   object Translation extends js.Object {
     var structureTypeName: java.lang.String = js.native

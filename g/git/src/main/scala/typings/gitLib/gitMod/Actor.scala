@@ -13,6 +13,7 @@ class Actor protected () extends js.Object {
   var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("git", "Actor")
 @js.native
 object Actor extends js.Object {

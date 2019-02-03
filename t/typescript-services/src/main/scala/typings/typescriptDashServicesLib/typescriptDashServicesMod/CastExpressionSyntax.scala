@@ -12,6 +12,7 @@ class CastExpressionSyntax protected ()
   def this(lessThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, `type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, greaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "CastExpressionSyntax")
 @js.native
 object CastExpressionSyntax extends js.Object {

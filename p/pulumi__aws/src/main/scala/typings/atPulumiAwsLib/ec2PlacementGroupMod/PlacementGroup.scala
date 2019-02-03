@@ -28,6 +28,7 @@ class PlacementGroup protected ()
   val strategy: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/placementGroup", "PlacementGroup")
 @js.native
 object PlacementGroup extends js.Object {

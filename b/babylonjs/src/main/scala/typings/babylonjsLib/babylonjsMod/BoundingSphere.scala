@@ -20,9 +20,7 @@ class BoundingSphere protected ()
   def this(min: babylonjsLib.BABYLONNs.Vector3, max: babylonjsLib.BABYLONNs.Vector3) = this()
 }
 
-/**
-  * Class used to store bounding sphere information
-  */
+/* static members */
 @JSImport("babylonjs", "BoundingSphere")
 @js.native
 object BoundingSphere extends js.Object {

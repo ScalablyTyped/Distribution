@@ -88,6 +88,7 @@ class MaskedTextField protected ()
   def setValue(newValue: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/TextField/MaskedTextField/MaskedTextField", "MaskedTextField")
 @js.native
 object MaskedTextField extends js.Object {

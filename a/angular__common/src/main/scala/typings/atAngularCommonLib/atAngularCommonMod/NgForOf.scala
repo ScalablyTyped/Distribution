@@ -12,6 +12,7 @@ class NgForOf[T] protected ()
   def this(_viewContainer: atAngularCoreLib.atAngularCoreMod.ViewContainerRef, _template: atAngularCoreLib.atAngularCoreMod.TemplateRef[atAngularCommonLib.srcDirectivesNgUnderscoreForUnderscoreOfMod.NgForOfContext[T]], _differs: atAngularCoreLib.atAngularCoreMod.IterableDiffers) = this()
 }
 
+/* static members */
 @JSImport("@angular/common", "NgForOf")
 @js.native
 object NgForOf extends js.Object {

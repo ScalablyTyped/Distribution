@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownUserProperties () extends js.Object
 
-/** Contains basic information about a user. */
+/* static members */
 @JSGlobal("Windows.System.KnownUserProperties")
 @js.native
 object KnownUserProperties extends js.Object {

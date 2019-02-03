@@ -15,8 +15,11 @@ object reactDashFacebookDashLoginLibStrings {
   @js.native
   sealed trait small extends js.Object
   
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def metro: metro = "metro".asInstanceOf[metro]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
 }
 

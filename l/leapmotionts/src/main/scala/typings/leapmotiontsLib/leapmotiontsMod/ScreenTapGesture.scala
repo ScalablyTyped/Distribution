@@ -14,6 +14,7 @@ class ScreenTapGesture () extends Gesture {
   var progress: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "ScreenTapGesture")
 @js.native
 object ScreenTapGesture extends js.Object {

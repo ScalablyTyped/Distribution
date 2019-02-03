@@ -12,6 +12,7 @@ class ExpressionStatementSyntax protected ()
   def this(expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ExpressionStatementSyntax")
 @js.native
 object ExpressionStatementSyntax extends js.Object {

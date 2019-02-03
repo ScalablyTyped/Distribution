@@ -9,6 +9,7 @@ object d3DashQuadtreeLibNumbers {
   @js.native
   sealed trait `4` extends js.Object
   
+  @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
 }
 

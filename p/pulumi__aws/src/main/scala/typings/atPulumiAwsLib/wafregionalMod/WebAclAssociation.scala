@@ -20,6 +20,7 @@ class WebAclAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalWebAclAssociationMod.WebAclAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional", "WebAclAssociation")
 @js.native
 object WebAclAssociation extends js.Object {

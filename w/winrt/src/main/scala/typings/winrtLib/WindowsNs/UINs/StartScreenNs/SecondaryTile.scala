@@ -13,6 +13,7 @@ class SecondaryTile () extends ISecondaryTile {
   def this(tileId: java.lang.String, shortName: java.lang.String, displayName: java.lang.String, args: java.lang.String, tileOptions: TileOptions, logoReference: winrtLib.WindowsNs.FoundationNs.Uri, wideLogoReference: winrtLib.WindowsNs.FoundationNs.Uri) = this()
 }
 
+/* static members */
 @JSGlobal("Windows.UI.StartScreen.SecondaryTile")
 @js.native
 object SecondaryTile extends js.Object {

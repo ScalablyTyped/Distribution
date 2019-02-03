@@ -28,6 +28,7 @@ class default () extends UUIDClass {
   override def equals(uuid: UUIDClass): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("uuidjs", JSImport.Default)
 @js.native
 object default extends js.Object {

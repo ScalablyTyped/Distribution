@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PhoneNumberUtil ()
   extends googleDashLibphonenumberLib.libphonenumberNs.PhoneNumberUtil
 
+/* static members */
 @JSImport("google-libphonenumber", "PhoneNumberUtil")
 @js.native
 object PhoneNumberUtil extends js.Object {

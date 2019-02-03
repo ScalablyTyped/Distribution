@@ -12,6 +12,7 @@ class InterpolationConfig protected ()
   def this(start: java.lang.String, end: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/compiler", "InterpolationConfig")
 @js.native
 object InterpolationConfig extends js.Object {

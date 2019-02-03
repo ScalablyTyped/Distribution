@@ -18,9 +18,13 @@ object radix64LibStrings {
   @js.native
   sealed trait base64URLNaturalSort extends js.Object
   
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def base64URL: base64URL = "base64URL".asInstanceOf[base64URL]
+  @scala.inline
   def base64URLASCIISort: base64URLASCIISort = "base64URLASCIISort".asInstanceOf[base64URLASCIISort]
+  @scala.inline
   def base64URLNaturalSort: base64URLNaturalSort = "base64URLNaturalSort".asInstanceOf[base64URLNaturalSort]
 }
 

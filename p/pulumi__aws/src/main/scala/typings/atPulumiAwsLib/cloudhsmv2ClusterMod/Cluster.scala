@@ -61,6 +61,7 @@ class Cluster protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudhsmv2/cluster", "Cluster")
 @js.native
 object Cluster extends js.Object {

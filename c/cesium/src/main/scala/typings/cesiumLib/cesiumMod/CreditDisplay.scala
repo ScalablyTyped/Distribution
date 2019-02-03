@@ -32,6 +32,7 @@ class CreditDisplay protected ()
   override def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("cesium", "CreditDisplay")
 @js.native
 object CreditDisplay extends js.Object {

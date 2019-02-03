@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Quint () extends Ease
 
+/* static members */
 @JSGlobal("gsap.Quint")
 @js.native
 object Quint extends js.Object {

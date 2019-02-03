@@ -22,6 +22,7 @@ object dlmNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.dlmLifecyclePolicyMod.LifecyclePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object LifecyclePolicy extends js.Object {
     /**

@@ -28,14 +28,7 @@ class default protected ()
   def this(options: openlayersLib.openlayersMod.olxNs.interactionNs.DrawOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Interaction for drawing feature geometries.
-  *
-  * @fires ol.interaction.DrawEvent
-  * @param options Options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/interaction/draw", JSImport.Default)
 @js.native
 object default extends js.Object {

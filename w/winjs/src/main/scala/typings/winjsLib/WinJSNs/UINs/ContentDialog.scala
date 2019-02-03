@@ -107,9 +107,7 @@ class ContentDialog () extends js.Object {
   def show(): winjsLib.WinJSNs.Promise[ContentDialogHideInfo] = js.native
 }
 
-/**
-  * Displays a modal dialog which can display arbitrary HTML content.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ContentDialog")
 @js.native
 object ContentDialog extends js.Object {

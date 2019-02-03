@@ -16,6 +16,7 @@ class namespaced protected () extends Awesomplete {
   def this(input: stdLib.HTMLElement, o: awesompleteLib.awesompleteMod.AwesompleteNs.Options) = this()
 }
 
+/* static members */
 @JSImport("awesomplete", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

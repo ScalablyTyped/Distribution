@@ -12,6 +12,7 @@ abstract class AbstractFormatter ()
   /* protected */ def sortFailures(failures: js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure]): js.Array[tslintLib.libLanguageRuleRuleMod.RuleFailure] = js.native
 }
 
+/* static members */
 @JSImport("tslint/lib/language/formatter/abstractFormatter", "AbstractFormatter")
 @js.native
 object AbstractFormatter extends js.Object {

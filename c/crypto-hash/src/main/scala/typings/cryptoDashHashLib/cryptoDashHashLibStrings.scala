@@ -12,7 +12,9 @@ object cryptoDashHashLibStrings {
   @js.native
   sealed trait hex extends js.Object
   
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
 }
 

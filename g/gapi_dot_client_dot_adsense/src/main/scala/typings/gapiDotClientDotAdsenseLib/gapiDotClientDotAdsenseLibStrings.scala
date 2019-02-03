@@ -12,7 +12,9 @@ object gapiDotClientDotAdsenseLibStrings {
   @js.native
   sealed trait v1DOT4 extends js.Object
   
+  @scala.inline
   def adsense: adsense = "adsense".asInstanceOf[adsense]
+  @scala.inline
   def v1DOT4: v1DOT4 = "v1.4".asInstanceOf[v1DOT4]
 }
 

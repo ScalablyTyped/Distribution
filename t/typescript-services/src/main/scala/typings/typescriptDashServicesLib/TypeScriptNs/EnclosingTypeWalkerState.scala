@@ -12,6 +12,7 @@ class EnclosingTypeWalkerState () extends js.Object {
   var _hasSetEnclosingType: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.EnclosingTypeWalkerState")
 @js.native
 object EnclosingTypeWalkerState extends js.Object {

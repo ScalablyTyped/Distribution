@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MenuDivider ()
   extends reactLib.reactMod.Component[IMenuDividerProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/menu/menuDivider", "MenuDivider")
 @js.native
 object MenuDivider extends js.Object {

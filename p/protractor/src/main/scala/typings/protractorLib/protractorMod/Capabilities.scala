@@ -19,6 +19,7 @@ class Capabilities ()
   def this(opt_other: seleniumDashWebdriverLib.seleniumDashWebdriverMod.Capabilities) = this()
 }
 
+/* static members */
 @JSImport("protractor", "Capabilities")
 @js.native
 object Capabilities extends js.Object {

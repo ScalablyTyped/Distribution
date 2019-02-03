@@ -12,7 +12,9 @@ object fuzzaldrinDashPlusLibStrings {
   @js.native
   sealed trait BACKSLASHBACKSLASH extends js.Object
   
+  @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
   def BACKSLASHBACKSLASH: BACKSLASHBACKSLASH = "\\".asInstanceOf[BACKSLASHBACKSLASH]
 }
 

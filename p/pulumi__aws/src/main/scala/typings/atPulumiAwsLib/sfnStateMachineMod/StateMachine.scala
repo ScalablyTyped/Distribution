@@ -44,6 +44,7 @@ class StateMachine protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sfn/stateMachine", "StateMachine")
 @js.native
 object StateMachine extends js.Object {

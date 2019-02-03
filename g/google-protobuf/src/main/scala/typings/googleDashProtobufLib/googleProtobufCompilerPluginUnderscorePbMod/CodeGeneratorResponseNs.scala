@@ -32,6 +32,7 @@ object CodeGeneratorResponseNs extends js.Object {
     def setName(value: java.lang.String): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object File extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[

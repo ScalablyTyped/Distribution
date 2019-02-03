@@ -12,6 +12,7 @@ class WebGLUniforms protected ()
   def this(gl: js.Any, program: threeLib.threeDashCoreMod.WebGLProgram, renderer: threeLib.threeDashCoreMod.WebGLRenderer) = this()
 }
 
+/* static members */
 @JSImport("three", "WebGLUniforms")
 @js.native
 object WebGLUniforms extends js.Object {

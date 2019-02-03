@@ -44,6 +44,7 @@ class MongoClient protected ()
   def withSession(options: SessionOptions, operation: js.Function1[/* session */ ClientSession, js.Promise[_]]): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("mongodb", "MongoClient")
 @js.native
 object MongoClient extends js.Object {

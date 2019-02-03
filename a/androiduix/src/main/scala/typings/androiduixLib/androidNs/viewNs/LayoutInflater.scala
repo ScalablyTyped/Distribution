@@ -19,6 +19,7 @@ class LayoutInflater protected () extends js.Object {
   def inflate(layout: stdLib.HTMLElement, viewParent: ViewGroup, attachToRoot: scala.Boolean): View = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.LayoutInflater")
 @js.native
 object LayoutInflater extends js.Object {

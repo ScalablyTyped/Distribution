@@ -215,6 +215,7 @@ class ContextualMenuBase protected ()
   def dismiss(ev: js.Any, dismissAll: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ContextualMenu/ContextualMenu.base", "ContextualMenuBase")
 @js.native
 object ContextualMenuBase extends js.Object {

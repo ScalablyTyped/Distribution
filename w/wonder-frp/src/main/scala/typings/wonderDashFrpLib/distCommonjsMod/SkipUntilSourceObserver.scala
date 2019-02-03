@@ -12,6 +12,7 @@ class SkipUntilSourceObserver protected ()
   def this(prevObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver, skipUntilStream: wonderDashFrpLib.distCommonjsStreamSkipUntilStreamMod.SkipUntilStream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "SkipUntilSourceObserver")
 @js.native
 object SkipUntilSourceObserver extends js.Object {

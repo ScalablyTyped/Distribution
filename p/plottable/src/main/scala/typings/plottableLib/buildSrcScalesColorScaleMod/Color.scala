@@ -23,6 +23,7 @@ class Color ()
   var _tracker: js.Any = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/scales/colorScale", "Color")
 @js.native
 object Color extends js.Object {

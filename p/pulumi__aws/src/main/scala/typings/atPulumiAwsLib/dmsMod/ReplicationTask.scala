@@ -20,6 +20,7 @@ class ReplicationTask protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dmsReplicationTaskMod.ReplicationTaskArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms", "ReplicationTask")
 @js.native
 object ReplicationTask extends js.Object {

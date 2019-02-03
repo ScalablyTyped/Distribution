@@ -241,6 +241,7 @@ class PathItem () extends Item {
   def unite(path: PathItem, options: paperLib.Anon_Insert): PathItem = js.native
 }
 
+/* static members */
 @JSGlobal("paper.PathItem")
 @js.native
 object PathItem extends js.Object {

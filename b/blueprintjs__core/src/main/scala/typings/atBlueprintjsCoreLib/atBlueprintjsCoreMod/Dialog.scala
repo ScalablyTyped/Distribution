@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Dialog ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Dialog
 
+/* static members */
 @JSImport("@blueprintjs/core", "Dialog")
 @js.native
 object Dialog extends js.Object {

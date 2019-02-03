@@ -29,6 +29,7 @@ class SyntaxInformationMap protected () extends SyntaxWalker {
   def tokenInformation(token: ISyntaxToken): ITokenInformation = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SyntaxInformationMap")
 @js.native
 object SyntaxInformationMap extends js.Object {

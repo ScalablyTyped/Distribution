@@ -28,7 +28,7 @@ class HttpCredentialsHeaderValue protected () extends js.Object {
   var token: java.lang.String = js.native
 }
 
-/** Represents the value of the Authorization or Proxy-Authorization HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpCredentialsHeaderValue")
 @js.native
 object HttpCredentialsHeaderValue extends js.Object {

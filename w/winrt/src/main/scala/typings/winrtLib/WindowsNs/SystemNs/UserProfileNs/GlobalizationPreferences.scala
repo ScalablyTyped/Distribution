@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class GlobalizationPreferences () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences")
 @js.native
 object GlobalizationPreferences extends js.Object {

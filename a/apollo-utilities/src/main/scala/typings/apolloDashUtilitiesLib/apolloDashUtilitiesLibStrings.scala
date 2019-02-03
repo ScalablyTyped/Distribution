@@ -12,7 +12,9 @@ object apolloDashUtilitiesLibStrings {
   @js.native
   sealed trait json extends js.Object
   
+  @scala.inline
   def id: id = "id".asInstanceOf[id]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
 }
 

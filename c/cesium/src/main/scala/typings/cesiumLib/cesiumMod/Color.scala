@@ -15,6 +15,7 @@ class Color ()
   def this(red: scala.Double, green: scala.Double, blue: scala.Double, alpha: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Color")
 @js.native
 object Color extends js.Object {

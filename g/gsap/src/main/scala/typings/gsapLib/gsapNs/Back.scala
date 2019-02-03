@@ -11,6 +11,7 @@ class Back () extends Ease {
   def config(overshoot: scala.Double): Elastic = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.Back")
 @js.native
 object Back extends js.Object {

@@ -22,6 +22,7 @@ class ProxyConfig () extends Property[ProxyConfigDefinition] {
   def updateProtocols(protocols: js.Array[java.lang.String]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "ProxyConfig")
 @js.native
 object ProxyConfig extends js.Object {

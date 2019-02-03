@@ -74,6 +74,7 @@ class BrowserDomAdapter ()
   def `type`(node: stdLib.HTMLInputElement): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@angular/platform-browser/src/browser/browser_adapter", "BrowserDomAdapter")
 @js.native
 object BrowserDomAdapter extends js.Object {

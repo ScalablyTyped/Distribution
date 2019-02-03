@@ -12,6 +12,7 @@ class default protected ()
   def this(props: antdLib.libButtonButtonMod.ButtonProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/button", JSImport.Default)
 @js.native
 object default extends js.Object {

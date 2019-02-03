@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends fsDashFinderLib.fsDashFinderMod.FsFinderNs.Finder
 
+/* static members */
 @JSImport("fs-finder", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -12,6 +12,7 @@ class JavaObject () extends js.Object {
   def equals(o: js.Any): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("java.lang.JavaObject")
 @js.native
 object JavaObject extends js.Object {

@@ -11,6 +11,7 @@ class Oauth () extends js.Object {
   def checkAuthStateParam(stateParam: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Util.Oauth")
 @js.native
 object Oauth extends js.Object {

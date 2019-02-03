@@ -69,6 +69,7 @@ class Path protected () extends js.Object {
   def toUrlEncodedString(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/util/Path", "Path")
 @js.native
 object Path extends js.Object {

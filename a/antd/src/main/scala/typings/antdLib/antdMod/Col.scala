@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Col ()
   extends antdLib.libColMod.default
 
+/* static members */
 @JSImport("antd", "Col")
 @js.native
 object Col extends js.Object {

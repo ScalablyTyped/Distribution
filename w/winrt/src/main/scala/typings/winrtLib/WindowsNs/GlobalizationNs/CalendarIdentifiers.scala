@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CalendarIdentifiers () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Globalization.CalendarIdentifiers")
 @js.native
 object CalendarIdentifiers extends js.Object {

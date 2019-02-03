@@ -11,8 +11,8 @@ import scala.scalajs.js.annotation._
 class Image ()
   extends reactDashNativeLib.reactDashNativeMod.Image
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-primitives", "Image")
+/* static members */
+@JSImport("react-primitives", "Image")
 @js.native
 object Image extends js.Object {
   var abortPrefetch: js.UndefOr[js.Function1[/* requestId */ scala.Double, scala.Unit]] = js.native

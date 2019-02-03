@@ -67,6 +67,7 @@ class ExpandableListView protected () extends ListView {
   def setSelectedGroup(groupPosition: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ExpandableListView")
 @js.native
 object ExpandableListView extends js.Object {

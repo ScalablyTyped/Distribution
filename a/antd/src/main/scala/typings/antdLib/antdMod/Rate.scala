@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Rate ()
   extends antdLib.libRateMod.default
 
+/* static members */
 @JSImport("antd", "Rate")
 @js.native
 object Rate extends js.Object {

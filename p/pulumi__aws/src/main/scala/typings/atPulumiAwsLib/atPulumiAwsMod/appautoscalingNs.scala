@@ -50,6 +50,7 @@ object appautoscalingNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.appautoscalingTargetMod.TargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Policy extends js.Object {
     /**
@@ -74,6 +75,7 @@ object appautoscalingNs extends js.Object {
     ): atPulumiAwsLib.appautoscalingPolicyMod.Policy = js.native
   }
   
+  /* static members */
   @js.native
   object ScheduledAction extends js.Object {
     /**
@@ -98,6 +100,7 @@ object appautoscalingNs extends js.Object {
     ): atPulumiAwsLib.appautoscalingScheduledActionMod.ScheduledAction = js.native
   }
   
+  /* static members */
   @js.native
   object Target extends js.Object {
     /**

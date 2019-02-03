@@ -16,6 +16,7 @@ class PathErrorStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IPathErrorStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "PathErrorStats")
 @js.native
 object PathErrorStats extends js.Object {

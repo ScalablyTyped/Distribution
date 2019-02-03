@@ -25,12 +25,7 @@ class RasterLayer ()
   def redraw(): scala.Unit = js.native
 }
 
-/**
-  * Provides pixel-wise rendering of data.
-  * Layer used when you need to visualize more than 10k points. The layer requires source data to be located in pixel coordinates.
-  * The rendering is implemented by drawing directly on a canvas.  The layer is often used together with a Data Lens query which groups rows by pixels.
-  * This reduces the amount of data delivered to the client.
-  */
+/* static members */
 @JSGlobal("H.datalens.RasterLayer")
 @js.native
 object RasterLayer extends js.Object {

@@ -12,6 +12,7 @@ abstract class SpatialPointerPose () extends js.Object {
    /* unmapped type */ var timestamp: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Input.Spatial.SpatialPointerPose")
 @js.native
 object SpatialPointerPose extends js.Object {

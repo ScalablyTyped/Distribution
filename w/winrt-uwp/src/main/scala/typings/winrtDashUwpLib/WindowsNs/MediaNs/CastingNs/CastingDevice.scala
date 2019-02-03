@@ -27,7 +27,7 @@ abstract class CastingDevice () extends js.Object {
   def getSupportedCastingPlaybackTypesAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[CastingPlaybackTypes] = js.native
 }
 
-/** Represents a physical device that is capable of supporting casting connections and rendering media content sent to it. */
+/* static members */
 @JSGlobal("Windows.Media.Casting.CastingDevice")
 @js.native
 object CastingDevice extends js.Object {

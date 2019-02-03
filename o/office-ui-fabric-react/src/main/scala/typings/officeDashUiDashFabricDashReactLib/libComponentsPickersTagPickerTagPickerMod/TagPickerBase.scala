@@ -13,6 +13,7 @@ class TagPickerBase ()
       officeDashUiDashFabricDashReactLib.libComponentsPickersTagPickerTagPickerDotTypesMod.ITagPickerProps
     ]
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/pickers/TagPicker/TagPicker", "TagPickerBase")
 @js.native
 object TagPickerBase extends js.Object {

@@ -42,9 +42,7 @@ class OculusTouchController protected () extends WebVRController {
   val onYButtonStateChangedObservable: Observable[ExtendedGamepadButton] = js.native
 }
 
-/**
-  * Oculus Touch Controller
-  */
+/* static members */
 @JSGlobal("BABYLON.OculusTouchController")
 @js.native
 object OculusTouchController extends js.Object {

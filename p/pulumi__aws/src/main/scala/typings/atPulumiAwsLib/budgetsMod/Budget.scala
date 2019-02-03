@@ -20,6 +20,7 @@ class Budget protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.budgetsBudgetMod.BudgetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/budgets", "Budget")
 @js.native
 object Budget extends js.Object {

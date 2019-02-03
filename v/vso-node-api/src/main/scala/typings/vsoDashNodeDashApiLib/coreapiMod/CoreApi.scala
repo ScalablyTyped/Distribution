@@ -12,6 +12,7 @@ class CoreApi protected () extends ICoreApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/CoreApi", "CoreApi")
 @js.native
 object CoreApi extends js.Object {

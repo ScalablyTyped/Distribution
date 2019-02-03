@@ -20,6 +20,7 @@ class PrivateVirtualInterface protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directconnectPrivateVirtualInterfaceMod.PrivateVirtualInterfaceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface")
 @js.native
 object PrivateVirtualInterface extends js.Object {

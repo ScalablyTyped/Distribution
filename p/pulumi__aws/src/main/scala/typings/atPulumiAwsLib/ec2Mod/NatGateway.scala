@@ -20,6 +20,7 @@ class NatGateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2NatGatewayMod.NatGatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "NatGateway")
 @js.native
 object NatGateway extends js.Object {

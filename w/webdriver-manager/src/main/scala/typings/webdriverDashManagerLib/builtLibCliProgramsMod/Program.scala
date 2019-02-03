@@ -114,6 +114,7 @@ class Program () extends js.Object {
   def run(json: stdLib.JSON): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/cli/programs", "Program")
 @js.native
 object Program extends js.Object {

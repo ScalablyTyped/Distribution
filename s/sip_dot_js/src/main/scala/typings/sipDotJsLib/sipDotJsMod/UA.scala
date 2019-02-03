@@ -12,6 +12,7 @@ class UA protected ()
   def this(options: sipDotJsLib.typesUaMod.UANs.Options) = this()
 }
 
+/* static members */
 @JSImport("sip.js", "UA")
 @js.native
 object UA extends js.Object {

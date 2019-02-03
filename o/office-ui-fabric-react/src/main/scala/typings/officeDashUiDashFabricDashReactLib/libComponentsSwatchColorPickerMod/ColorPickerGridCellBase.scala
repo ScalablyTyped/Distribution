@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ColorPickerGridCellBase ()
   extends officeDashUiDashFabricDashReactLib.libComponentsSwatchColorPickerColorPickerGridCellDotBaseMod.ColorPickerGridCellBase
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", "ColorPickerGridCellBase")
 @js.native
 object ColorPickerGridCellBase extends js.Object {

@@ -48,19 +48,33 @@ object jqueryDotNicescrollLibStrings {
   @js.native
   sealed trait visible extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def cursor: cursor = "cursor".asInstanceOf[cursor]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def inherit: inherit = "inherit".asInstanceOf[inherit]
+  @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
+  @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def unset: unset = "unset".asInstanceOf[unset]
+  @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
 }
 

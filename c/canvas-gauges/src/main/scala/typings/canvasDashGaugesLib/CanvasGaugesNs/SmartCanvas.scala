@@ -30,6 +30,7 @@ class SmartCanvas protected () extends js.Object {
   def redraw(): SmartCanvas = js.native
 }
 
+/* static members */
 @JSGlobal("CanvasGauges.SmartCanvas")
 @js.native
 object SmartCanvas extends js.Object {

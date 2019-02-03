@@ -20,6 +20,7 @@ class Trail protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudtrailTrailMod.TrailArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudtrail", "Trail")
 @js.native
 object Trail extends js.Object {

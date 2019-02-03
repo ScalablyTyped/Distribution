@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ShadowPool () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.ShadowPool")
 @js.native
 object ShadowPool extends js.Object {

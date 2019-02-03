@@ -41,6 +41,7 @@ class DatePicker protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.DatePicker")
 @js.native
 object DatePicker extends js.Object {

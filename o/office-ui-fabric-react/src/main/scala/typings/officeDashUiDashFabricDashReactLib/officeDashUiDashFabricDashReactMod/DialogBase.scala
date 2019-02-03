@@ -12,6 +12,7 @@ class DialogBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDialogDialogDotTypesMod.IDialogProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "DialogBase")
 @js.native
 object DialogBase extends js.Object {

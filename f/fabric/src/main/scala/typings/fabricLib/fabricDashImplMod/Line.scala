@@ -44,6 +44,7 @@ class Line () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Line")
 @js.native
 object Line extends js.Object {

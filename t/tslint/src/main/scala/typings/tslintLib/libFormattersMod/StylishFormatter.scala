@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StylishFormatter ()
   extends tslintLib.libFormattersStylishFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "StylishFormatter")
 @js.native
 object StylishFormatter extends js.Object {

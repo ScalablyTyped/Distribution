@@ -36,6 +36,7 @@ class SamlProvider protected ()
   val validUntil: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/samlProvider", "SamlProvider")
 @js.native
 object SamlProvider extends js.Object {

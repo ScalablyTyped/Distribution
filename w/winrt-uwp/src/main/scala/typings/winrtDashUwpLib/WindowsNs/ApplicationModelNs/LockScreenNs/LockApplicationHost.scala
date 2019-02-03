@@ -30,7 +30,7 @@ abstract class LockApplicationHost () extends js.Object {
   def requestUnlock(): scala.Unit = js.native
 }
 
-/** Allows the lock screen app to request that the device unlocks, and allows the app to register to be notified when the device begins to unlock. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.LockScreen.LockApplicationHost")
 @js.native
 object LockApplicationHost extends js.Object {

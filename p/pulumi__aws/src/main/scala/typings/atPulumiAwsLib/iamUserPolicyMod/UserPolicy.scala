@@ -36,6 +36,7 @@ class UserPolicy protected ()
   val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/userPolicy", "UserPolicy")
 @js.native
 object UserPolicy extends js.Object {

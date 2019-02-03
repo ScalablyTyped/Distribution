@@ -16,6 +16,7 @@ class DialogContentBase protected ()
   /* private */ def _groupChildren(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Dialog/DialogContent.base", "DialogContentBase")
 @js.native
 object DialogContentBase extends js.Object {

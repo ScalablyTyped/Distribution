@@ -13,6 +13,7 @@ class NativeSurface ()
   var surfaceId: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.native.NativeSurface")
 @js.native
 object NativeSurface extends js.Object {

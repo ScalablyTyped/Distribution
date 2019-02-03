@@ -6,9 +6,11 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ListView")
+- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin
+- Dropped new (args : ...any): react-native.react-native.TimerMixin */ @JSImport("react-native", "ListView")
 @js.native
-class ListView () extends js.Object {
+class ListView ()
+  extends reactLib.reactMod.Component[ListViewProps, js.Object, js.Any] {
   /**
     * Exports some data, e.g. for perf investigations or analytics.
     */
@@ -31,8 +33,8 @@ class ListView () extends js.Object {
   def scrollTo(y: scala.Double, x: scala.Double, animated: scala.Boolean): scala.Unit = js.native
 }
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ListView")
+/* static members */
+@JSImport("react-native", "ListView")
 @js.native
 object ListView extends js.Object {
   var DataSource: reactDashNativeLib.reactDashNativeMod.ListViewDataSource = js.native

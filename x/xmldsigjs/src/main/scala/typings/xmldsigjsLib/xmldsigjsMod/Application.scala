@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Application ()
   extends xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.Application
 
+/* static members */
 @JSImport("xmldsigjs", "Application")
 @js.native
 object Application extends js.Object {

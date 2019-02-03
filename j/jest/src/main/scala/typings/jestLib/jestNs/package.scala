@@ -52,7 +52,7 @@ package object jestNs {
     *  const myApi: jest.Mocked<Api> = new Api() as any;
     *  myApi.myApiMethod.mockImplementation(() => "test");
     */
-  type Mocked[T] = jestLib.jestLibStrings.Mocked with T
+  type Mocked[T] = jestLib.jestLibStrings.Mocked with js.Any with T
   type ModuleMap = js.Any
   type ModuleMocker = js.Any
   // Config

@@ -39,6 +39,7 @@ class SelectorMatcher[T] () extends js.Object {
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/selector", "SelectorMatcher")
 @js.native
 object SelectorMatcher extends js.Object {

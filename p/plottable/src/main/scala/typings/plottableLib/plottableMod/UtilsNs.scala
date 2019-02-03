@@ -226,6 +226,7 @@ object UtilsNs extends js.Object {
       def apply(value: scala.Double): js.UndefOr[plottableLib.buildSrcUtilsRTreeMod.QueryPredicateResult with scala.Double] = js.native
     }
     
+    /* static members */
     @js.native
     object RTreeBounds extends js.Object {
       /**
@@ -321,6 +322,7 @@ object UtilsNs extends js.Object {
       def xywh(x: scala.Double, y: scala.Double, w: scala.Double, h: scala.Double): plottableLib.buildSrcUtilsRTreeMod.RTreeBounds = js.native
     }
     
+    /* static members */
     @js.native
     object RTreeNode extends js.Object {
       def valueNode[T](bounds: plottableLib.buildSrcUtilsRTreeMod.RTreeBounds, value: T): plottableLib.buildSrcUtilsRTreeMod.RTreeNode[T] = js.native
@@ -353,6 +355,7 @@ object UtilsNs extends js.Object {
     def stackedExtents[D](stackingResult: plottableLib.buildSrcUtilsStackingUtilsMod.GenericStackingResult[D]): plottableLib.Anon_MaximumExtents[D] = js.native
   }
   
+  /* static members */
   @js.native
   object Translator extends js.Object {
     /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InputType () extends js.Object
 
+/* static members */
 @JSGlobal("android.text.InputType")
 @js.native
 object InputType extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class FileProtectionManager () extends js.Object
 
-/** Provides access to operations that manage files that are protected to an enterprise identity. */
+/* static members */
 @JSGlobal("Windows.Security.EnterpriseData.FileProtectionManager")
 @js.native
 object FileProtectionManager extends js.Object {

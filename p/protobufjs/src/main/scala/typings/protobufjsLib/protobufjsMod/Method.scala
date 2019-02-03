@@ -66,6 +66,7 @@ class Method protected () extends ReflectionObject {
   def toJSON(toJSONOptions: IToJSONOptions): IMethod = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Method")
 @js.native
 object Method extends js.Object {

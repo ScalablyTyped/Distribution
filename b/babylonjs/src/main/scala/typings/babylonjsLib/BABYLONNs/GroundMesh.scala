@@ -89,9 +89,7 @@ class GroundMesh protected () extends Mesh {
   def updateCoordinateHeights(): GroundMesh = js.native
 }
 
-/**
-  * Mesh representing the gorund
-  */
+/* static members */
 @JSGlobal("BABYLON.GroundMesh")
 @js.native
 object GroundMesh extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Object3D ()
   extends threeLib.threeDashCoreMod.Object3D
 
+/* static members */
 @JSImport("three", "Object3D")
 @js.native
 object Object3D extends js.Object {

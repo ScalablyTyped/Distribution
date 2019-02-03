@@ -20,9 +20,7 @@ class Session () extends js.Object {
   def close(): js.Promise[scala.Unit] = js.native
 }
 
-/**
-  * Provides connection session for a remote workbook.
-  */
+/* static members */
 @JSGlobal("Excel.Session")
 @js.native
 object Session extends js.Object {

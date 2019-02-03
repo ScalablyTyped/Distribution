@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Easing ()
   extends plottableLib.buildSrcAnimatorsEasingAnimatorMod.Easing
 
+/* static members */
 @JSImport("plottable/build/src/animators", "Easing")
 @js.native
 object Easing extends js.Object {

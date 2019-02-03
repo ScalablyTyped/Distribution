@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends CoinHive
 
+/* static members */
 @JSImport("react-coinhive", JSImport.Default)
 @js.native
 object default extends js.Object {

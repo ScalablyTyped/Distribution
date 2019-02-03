@@ -12,6 +12,7 @@ class namespaced protected () extends EventSource {
   def this(url: java.lang.String, eventSourceInitDict: eventsourceLib.libEventsourceDashPolyfillMod.EventSourceNs.EventSourceInitDict) = this()
 }
 
+/* static members */
 @JSImport("eventsource/lib/eventsource-polyfill", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

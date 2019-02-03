@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AutoComplete ()
   extends materialDashUiLib.underscoreUnderscoreMaterialUINs.AutoComplete
 
+/* static members */
 @JSImport("material-ui", "AutoComplete")
 @js.native
 object AutoComplete extends js.Object {

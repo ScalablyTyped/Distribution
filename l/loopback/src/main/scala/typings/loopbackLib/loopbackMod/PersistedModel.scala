@@ -53,17 +53,7 @@ class PersistedModel ()
   ): scala.Unit = js.native
 }
 
-/**
-  * Extends Model with basic query and CRUD support
-  * **Change Event*
-  * Listen for model changes using the `change` event
-  * ```js
-  * MyPersistedModel.on('changed', function(obj)
-  *    console.log(obj) // => the changed model
-  * });
-  * ```
-  * @class PersistedModel
-  */
+/* static members */
 @JSImport("loopback", "PersistedModel")
 @js.native
 object PersistedModel extends js.Object {

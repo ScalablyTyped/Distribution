@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ReflectionGroupSerializer ()
   extends typedocLib.distLibSerializationSerializersReflectionDashGroupMod.ReflectionGroupSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers", "ReflectionGroupSerializer")
 @js.native
 object ReflectionGroupSerializer extends js.Object {

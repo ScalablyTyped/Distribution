@@ -143,6 +143,7 @@ class Decimal protected () extends js.Object {
   def truncated(): Decimal = js.native
 }
 
+/* static members */
 @JSImport("decimal.js", "Decimal")
 @js.native
 object Decimal extends js.Object {

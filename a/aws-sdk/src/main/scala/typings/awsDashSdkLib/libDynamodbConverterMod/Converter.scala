@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Converter () extends js.Object
 
+/* static members */
 @JSImport("aws-sdk/lib/dynamodb/converter", "Converter")
 @js.native
 object Converter extends js.Object {

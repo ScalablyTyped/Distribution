@@ -97,6 +97,7 @@ class AlertController protected () extends js.Object {
   /* private */ def setupView(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.AlertController")
 @js.native
 object AlertController extends js.Object {

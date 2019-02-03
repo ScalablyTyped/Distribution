@@ -38,6 +38,7 @@ class GroupPolicy protected ()
   val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/groupPolicy", "GroupPolicy")
 @js.native
 object GroupPolicy extends js.Object {

@@ -26,7 +26,7 @@ class CamlQuery () extends ClientValueObject {
   def set_viewXml(value: java.lang.String): scala.Unit = js.native
 }
 
-/** Specifies a Collaborative Application Markup Language (CAML) query on a list. */
+/* static members */
 @JSGlobal("SP.CamlQuery")
 @js.native
 object CamlQuery extends js.Object {

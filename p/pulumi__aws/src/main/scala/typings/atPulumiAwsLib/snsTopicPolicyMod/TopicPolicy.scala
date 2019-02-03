@@ -28,6 +28,7 @@ class TopicPolicy protected ()
   val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy")
 @js.native
 object TopicPolicy extends js.Object {

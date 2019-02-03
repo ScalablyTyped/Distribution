@@ -18,9 +18,13 @@ object polyfillDashServiceLibStrings {
   @js.native
   sealed trait polyfill extends js.Object
   
+  @scala.inline
   def always: always = "always".asInstanceOf[always]
+  @scala.inline
   def gated: gated = "gated".asInstanceOf[gated]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def polyfill: polyfill = "polyfill".asInstanceOf[polyfill]
 }
 

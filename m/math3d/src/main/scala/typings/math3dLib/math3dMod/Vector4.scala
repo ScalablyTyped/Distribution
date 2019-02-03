@@ -28,6 +28,7 @@ class Vector4 () extends js.Object {
   def sub(vector4: Vector4): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("math3d", "Vector4")
 @js.native
 object Vector4 extends js.Object {

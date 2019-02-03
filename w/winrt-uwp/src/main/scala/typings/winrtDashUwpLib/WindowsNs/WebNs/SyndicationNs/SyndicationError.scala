@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SyndicationError () extends js.Object
 
-/** Represents an error encountered during a Syndication operation. */
+/* static members */
 @JSGlobal("Windows.Web.Syndication.SyndicationError")
 @js.native
 object SyndicationError extends js.Object {

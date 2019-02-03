@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   var step: js.UndefOr[scala.Double] = js.undefined
   var thumb: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var value: js.UndefOr[scala.Double] = js.undefined
+  var valueReducer: js.UndefOr[ValueReducer] = js.undefined
   var vertical: js.UndefOr[scala.Boolean] = js.undefined
 }
 

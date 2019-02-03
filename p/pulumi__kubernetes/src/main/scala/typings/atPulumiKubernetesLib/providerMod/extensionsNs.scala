@@ -570,10 +570,7 @@ object extensionsNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.extensionsNs.v1beta1Ns.ReplicaSetList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of DaemonSet is deprecated by apps/v1beta2/DaemonSet. See the
-      * release notes for more information. DaemonSet represents the configuration of a daemon set.
-      */
+    /* static members */
     @js.native
     object DaemonSet extends js.Object {
       /**
@@ -596,9 +593,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DaemonSet = js.native
     }
     
-    /**
-      * DaemonSetList is a collection of daemon sets.
-      */
+    /* static members */
     @js.native
     object DaemonSetList extends js.Object {
       /**
@@ -621,11 +616,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DaemonSetList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of Deployment is deprecated by apps/v1beta2/Deployment. See
-      * the release notes for more information. Deployment enables declarative updates for Pods and
-      * ReplicaSets.
-      */
+    /* static members */
     @js.native
     object Deployment extends js.Object {
       /**
@@ -648,9 +639,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.Deployment = js.native
     }
     
-    /**
-      * DeploymentList is a list of Deployments.
-      */
+    /* static members */
     @js.native
     object DeploymentList extends js.Object {
       /**
@@ -673,11 +662,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.DeploymentList = js.native
     }
     
-    /**
-      * Ingress is a collection of rules that allow inbound connections to reach the endpoints
-      * defined by a backend. An Ingress can be configured to give services externally-reachable
-      * urls, load balance traffic, terminate SSL, offer name based virtual hosting etc.
-      */
+    /* static members */
     @js.native
     object Ingress extends js.Object {
       /**
@@ -700,9 +685,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.Ingress = js.native
     }
     
-    /**
-      * IngressList is a collection of Ingress.
-      */
+    /* static members */
     @js.native
     object IngressList extends js.Object {
       /**
@@ -725,11 +708,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.IngressList = js.native
     }
     
-    /**
-      * DEPRECATED 1.9 - This group version of NetworkPolicy is deprecated by
-      * networking/v1/NetworkPolicy. NetworkPolicy describes what network traffic is allowed for a
-      * set of Pods
-      */
+    /* static members */
     @js.native
     object NetworkPolicy extends js.Object {
       /**
@@ -752,10 +731,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.NetworkPolicy = js.native
     }
     
-    /**
-      * DEPRECATED 1.9 - This group version of NetworkPolicyList is deprecated by
-      * networking/v1/NetworkPolicyList. Network Policy List is a list of NetworkPolicy objects.
-      */
+    /* static members */
     @js.native
     object NetworkPolicyList extends js.Object {
       /**
@@ -778,11 +754,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.NetworkPolicyList = js.native
     }
     
-    /**
-      * PodSecurityPolicy governs the ability to make requests that affect the Security Context that
-      * will be applied to a pod and container. Deprecated: use PodSecurityPolicy from policy API
-      * Group instead.
-      */
+    /* static members */
     @js.native
     object PodSecurityPolicy extends js.Object {
       /**
@@ -805,10 +777,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.PodSecurityPolicy = js.native
     }
     
-    /**
-      * PodSecurityPolicyList is a list of PodSecurityPolicy objects. Deprecated: use
-      * PodSecurityPolicyList from policy API Group instead.
-      */
+    /* static members */
     @js.native
     object PodSecurityPolicyList extends js.Object {
       /**
@@ -831,11 +800,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.PodSecurityPolicyList = js.native
     }
     
-    /**
-      * DEPRECATED - This group version of ReplicaSet is deprecated by apps/v1beta2/ReplicaSet. See
-      * the release notes for more information. ReplicaSet ensures that a specified number of pod
-      * replicas are running at any given time.
-      */
+    /* static members */
     @js.native
     object ReplicaSet extends js.Object {
       /**
@@ -858,9 +823,7 @@ object extensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.extensionsNs.v1beta1Ns.ReplicaSet = js.native
     }
     
-    /**
-      * ReplicaSetList is a collection of ReplicaSets.
-      */
+    /* static members */
     @js.native
     object ReplicaSetList extends js.Object {
       /**

@@ -14,9 +14,7 @@ class Module protected () extends js.Object {
   def this(bufferSource: BufferSource) = this()
 }
 
-/**
-  * WebAssembly.Module
-  */
+/* static members */
 @JSGlobal("WebAssembly.Module")
 @js.native
 object Module extends js.Object {

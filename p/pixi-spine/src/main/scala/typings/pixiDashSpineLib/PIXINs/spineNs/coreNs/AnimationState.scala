@@ -76,6 +76,7 @@ class AnimationState protected () extends js.Object {
   def updateMixingFrom(to: TrackEntry, delta: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.AnimationState")
 @js.native
 object AnimationState extends js.Object {

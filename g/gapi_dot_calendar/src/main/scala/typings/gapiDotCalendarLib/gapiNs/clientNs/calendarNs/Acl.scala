@@ -17,6 +17,7 @@ trait Acl extends js.Object {
 @js.native
 class acl () extends js.Object
 
+/* static members */
 @JSGlobal("gapi.client.calendar.acl")
 @js.native
 object acl extends js.Object {

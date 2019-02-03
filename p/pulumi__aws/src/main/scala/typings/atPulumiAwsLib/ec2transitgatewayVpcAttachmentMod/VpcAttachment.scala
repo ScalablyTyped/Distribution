@@ -56,6 +56,7 @@ class VpcAttachment protected ()
   val vpcOwnerId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway/vpcAttachment", "VpcAttachment")
 @js.native
 object VpcAttachment extends js.Object {

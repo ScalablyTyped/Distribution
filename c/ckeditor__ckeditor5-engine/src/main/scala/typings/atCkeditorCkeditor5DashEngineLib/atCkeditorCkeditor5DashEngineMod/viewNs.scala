@@ -337,7 +337,7 @@ object viewNs extends js.Object {
   def isBlockFiller(domNode: /*TODO globals.*/ Node, blockFiller: js.Function): scala.Boolean = js.native
   def isInlineFiller(domText: /*TODO globals.*/ Text): scala.Boolean = js.native
   def startsWithFiller(domNode: /*TODO globals.*/ Text): scala.Boolean = js.native
-  // engine/view/attributeelement
+  /* static members */
   @js.native
   object AttributeElement extends js.Object {
     var DEFAULT_PRIORITY: scala.Double = js.native

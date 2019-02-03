@@ -15,6 +15,7 @@ class namespaced () extends Server {
   def this(options: httpDashProxyLib.httpDashProxyMod.ServerNs.ServerOptions) = this()
 }
 
+/* static members */
 @JSImport("http-proxy", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

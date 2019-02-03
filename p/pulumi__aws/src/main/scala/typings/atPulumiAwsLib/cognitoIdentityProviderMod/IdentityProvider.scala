@@ -44,6 +44,7 @@ class IdentityProvider protected ()
   val userPoolId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/identityProvider", "IdentityProvider")
 @js.native
 object IdentityProvider extends js.Object {

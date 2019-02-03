@@ -86,11 +86,7 @@ class Point protected () extends IPoint {
   def sub(other: IPoint): Point = js.native
 }
 
-/**
-  * Class represents a 2-dimensional point, defined by x and y coordinates.
-  * @property x {number} - The point's coordinate on X-axis.
-  * @property y {number} - The point's coordinate on Y-axis.
-  */
+/* static members */
 @JSGlobal("H.math.Point")
 @js.native
 object Point extends js.Object {

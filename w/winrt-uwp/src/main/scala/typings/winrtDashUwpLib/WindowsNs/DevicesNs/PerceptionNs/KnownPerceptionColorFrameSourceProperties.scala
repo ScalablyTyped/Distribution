@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownPerceptionColorFrameSourceProperties () extends js.Object
 
-/** Provides static properties of color frame sources. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionColorFrameSourceProperties")
 @js.native
 object KnownPerceptionColorFrameSourceProperties extends js.Object {

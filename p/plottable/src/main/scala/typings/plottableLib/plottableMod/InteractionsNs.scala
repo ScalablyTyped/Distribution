@@ -40,16 +40,19 @@ object InteractionsNs extends js.Object {
     extends plottableLib.buildSrcInteractionsMod.Pointer
   
   def zoomOut(value: scala.Double, zoom: scala.Double, center: scala.Double): scala.Double = js.native
+  /* static members */
   @js.native
   object Click extends js.Object {
     /* private */ def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Drag extends js.Object {
     var _DEFAULT_MOUSE_FILTER: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object PanZoom extends js.Object {
     /**

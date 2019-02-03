@@ -41,6 +41,7 @@ class LayerBase protected ()
   def componentWillUpdate_MLayerBase(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Layer/Layer.base", "LayerBase")
 @js.native
 object LayerBase extends js.Object {

@@ -37,6 +37,7 @@ class ModuleDeclarationSyntax protected () extends SyntaxNode {
   def withStringLiteral(stringLiteral: ISyntaxToken): ModuleDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ModuleDeclarationSyntax")
 @js.native
 object ModuleDeclarationSyntax extends js.Object {

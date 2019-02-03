@@ -12,6 +12,7 @@ class quat ()
   var typeQuat: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("gl-matrix", "quat")
 @js.native
 object quat extends js.Object {

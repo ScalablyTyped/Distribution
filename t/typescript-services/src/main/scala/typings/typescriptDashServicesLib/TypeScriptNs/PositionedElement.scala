@@ -33,6 +33,7 @@ class PositionedElement protected () extends js.Object {
   def start(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PositionedElement")
 @js.native
 object PositionedElement extends js.Object {

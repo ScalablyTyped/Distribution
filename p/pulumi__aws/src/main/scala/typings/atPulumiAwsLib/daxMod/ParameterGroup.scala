@@ -21,6 +21,7 @@ class ParameterGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.daxParameterGroupMod.ParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dax", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {

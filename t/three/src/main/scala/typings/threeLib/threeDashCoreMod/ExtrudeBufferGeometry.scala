@@ -18,6 +18,7 @@ class ExtrudeBufferGeometry protected () extends BufferGeometry {
   def addShapeList(shapes: js.Array[Shape], options: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "ExtrudeBufferGeometry")
 @js.native
 object ExtrudeBufferGeometry extends js.Object {

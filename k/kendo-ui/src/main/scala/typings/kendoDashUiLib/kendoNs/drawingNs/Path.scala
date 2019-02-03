@@ -56,6 +56,7 @@ class Path () extends Element {
   def stroke(color: java.lang.String, width: scala.Double, opacity: scala.Double): Path = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.drawing.Path")
 @js.native
 object Path extends js.Object {

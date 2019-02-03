@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Long ()
   extends mongodbLib.mongodbMod.Long
 
+/* static members */
 @JSImport("mongorito", "Long")
 @js.native
 object Long extends js.Object {

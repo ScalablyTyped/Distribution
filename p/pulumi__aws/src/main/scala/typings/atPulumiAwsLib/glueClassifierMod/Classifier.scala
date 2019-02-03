@@ -37,6 +37,7 @@ class Classifier protected ()
   val xmlClassifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_ClassificationRowTag]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/classifier", "Classifier")
 @js.native
 object Classifier extends js.Object {

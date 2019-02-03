@@ -12,6 +12,7 @@ class ExportAssignmentSyntax protected ()
   def this(exportKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, equalsToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ExportAssignmentSyntax")
 @js.native
 object ExportAssignmentSyntax extends js.Object {

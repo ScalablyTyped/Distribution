@@ -42,6 +42,7 @@ class Vector3 () extends js.Object {
   def toVector4(): wonderDotJsLib.distEs2015MathVector4Mod.Vector4 = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/math/Vector3", "Vector3")
 @js.native
 object Vector3 extends js.Object {

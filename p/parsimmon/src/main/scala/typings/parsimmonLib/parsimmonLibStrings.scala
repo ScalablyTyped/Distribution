@@ -21,10 +21,15 @@ object parsimmonLibStrings {
   @js.native
   sealed trait seqObj extends js.Object
   
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def TypedLanguage: TypedLanguage = "TypedLanguage".asInstanceOf[TypedLanguage]
+  @scala.inline
   def TypedRule: TypedRule = "TypedRule".asInstanceOf[TypedRule]
+  @scala.inline
   def bitSeqObj: bitSeqObj = "bitSeqObj".asInstanceOf[bitSeqObj]
+  @scala.inline
   def seqObj: seqObj = "seqObj".asInstanceOf[seqObj]
 }
 

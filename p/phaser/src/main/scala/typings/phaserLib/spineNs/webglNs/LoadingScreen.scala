@@ -22,6 +22,7 @@ class LoadingScreen protected () extends js.Object {
   def draw(complete: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.webgl.LoadingScreen")
 @js.native
 object LoadingScreen extends js.Object {

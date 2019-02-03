@@ -22,6 +22,7 @@ class BackgroundUploader () extends IBackgroundUploader {
   override def setRequestHeader(headerName: java.lang.String, headerValue: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundUploader")
 @js.native
 object BackgroundUploader extends js.Object {

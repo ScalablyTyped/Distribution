@@ -21,6 +21,7 @@ object NeuronNs extends js.Object {
   }
   
   var connection: synapticLib.Anon_From = js.native
+  /* static members */
   @js.native
   object Connection extends js.Object {
     def uid(): scala.Double = js.native

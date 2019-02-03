@@ -16,6 +16,7 @@ class SurveyTimer () extends js.Object {
   def stop(func: js.Function0[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "SurveyTimer")
 @js.native
 object SurveyTimer extends js.Object {

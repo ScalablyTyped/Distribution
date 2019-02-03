@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CertificateEnrollmentManager () extends js.Object
 
-/** Represents a certificate enrollment manager. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateEnrollmentManager")
 @js.native
 object CertificateEnrollmentManager extends js.Object {

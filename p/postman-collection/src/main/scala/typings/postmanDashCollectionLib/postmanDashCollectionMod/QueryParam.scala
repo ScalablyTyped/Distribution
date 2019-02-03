@@ -18,6 +18,7 @@ class QueryParam protected () extends Property[QueryParamDefinition] {
   def update(param: postmanDashCollectionLib.Anon_KeyValueString): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "QueryParam")
 @js.native
 object QueryParam extends js.Object {

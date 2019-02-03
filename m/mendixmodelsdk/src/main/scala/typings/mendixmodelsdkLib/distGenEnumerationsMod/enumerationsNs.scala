@@ -74,9 +74,7 @@ object enumerationsNs extends js.Object {
     val name: java.lang.String = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Enumerations`.
-    */
+  /* static members */
   @js.native
   object Condition extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -101,9 +99,7 @@ object enumerationsNs extends js.Object {
     def createInConditionalSettingsUnderConditions(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ConditionalSettings): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Condition = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/enumerations relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Enumeration extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -115,9 +111,7 @@ object enumerationsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenEnumerationsMod.enumerationsNs.Enumeration = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/enumeration-values relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object EnumerationValue extends js.Object {
     var structureTypeName: java.lang.String = js.native

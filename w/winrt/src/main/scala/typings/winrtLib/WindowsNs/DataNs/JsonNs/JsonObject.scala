@@ -58,6 +58,7 @@ class JsonObject ()
   override def stringify(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Data.Json.JsonObject")
 @js.native
 object JsonObject extends js.Object {

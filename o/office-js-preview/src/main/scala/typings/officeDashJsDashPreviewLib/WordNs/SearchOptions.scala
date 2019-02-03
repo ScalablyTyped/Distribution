@@ -109,12 +109,7 @@ class SearchOptions ()
   def toJSON(): officeDashJsDashPreviewLib.WordNs.InterfacesNs.SearchOptionsData = js.native
 }
 
-/**
-  *
-  * Specifies the options to be included in a search operation.
-  *
-  * [Api set: WordApi 1.1]
-  */
+/* static members */
 @JSGlobal("Word.SearchOptions")
 @js.native
 object SearchOptions extends js.Object {

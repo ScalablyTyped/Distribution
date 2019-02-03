@@ -45,18 +45,31 @@ object twitLibStrings {
   @js.native
   sealed trait user extends js.Object
   
+  @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
+  @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
+  @scala.inline
   def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def popular: popular = "popular".asInstanceOf[popular]
+  @scala.inline
   def recent: recent = "recent".asInstanceOf[recent]
+  @scala.inline
   def site: site = "site".asInstanceOf[site]
+  @scala.inline
   def `statuses/filter`: `statuses/filter` = "statuses/filter".asInstanceOf[`statuses/filter`]
+  @scala.inline
   def `statuses/firehose`: `statuses/firehose` = "statuses/firehose".asInstanceOf[`statuses/firehose`]
+  @scala.inline
   def `statuses/sample`: `statuses/sample` = "statuses/sample".asInstanceOf[`statuses/sample`]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
 }
 

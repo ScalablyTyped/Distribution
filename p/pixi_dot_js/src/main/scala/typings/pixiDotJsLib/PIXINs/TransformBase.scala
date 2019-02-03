@@ -17,6 +17,7 @@ class TransformBase () extends js.Object {
   def updateWorldTransform(parentTransform: TransformBase): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.TransformBase")
 @js.native
 object TransformBase extends js.Object {

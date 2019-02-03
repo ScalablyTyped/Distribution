@@ -12,7 +12,9 @@ object gapiDotClientDotServiceuserLibStrings {
   @js.native
   sealed trait v1 extends js.Object
   
+  @scala.inline
   def serviceuser: serviceuser = "serviceuser".asInstanceOf[serviceuser]
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
 }
 

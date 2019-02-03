@@ -17,6 +17,7 @@ class Icon ()
   /* private */ def renderSvgPaths(pathsSize: js.Any, iconName: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/icon/icon", "Icon")
 @js.native
 object Icon extends js.Object {

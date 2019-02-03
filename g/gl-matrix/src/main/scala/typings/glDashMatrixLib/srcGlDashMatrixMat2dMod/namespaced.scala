@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends glDashMatrixLib.glDashMatrixMod.mat2d
 
+/* static members */
 @JSImport("gl-matrix/src/gl-matrix/mat2d", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

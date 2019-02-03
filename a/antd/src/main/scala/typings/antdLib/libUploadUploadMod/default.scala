@@ -11,6 +11,7 @@ class default protected () extends Upload {
   def this(props: antdLib.libUploadInterfaceMod.UploadProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/upload/Upload", JSImport.Default)
 @js.native
 object default extends js.Object {

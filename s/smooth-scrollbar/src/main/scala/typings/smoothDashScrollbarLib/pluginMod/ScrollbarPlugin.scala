@@ -32,6 +32,7 @@ class ScrollbarPlugin protected ()
   override def transformDelta(delta: smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d, fromEvent: js.Any): smoothDashScrollbarLib.interfacesDataDash2dMod.Data2d = js.native
 }
 
+/* static members */
 @JSImport("smooth-scrollbar/plugin", "ScrollbarPlugin")
 @js.native
 object ScrollbarPlugin extends js.Object {

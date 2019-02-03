@@ -14,6 +14,7 @@ class ComponentEvent protected ()
   var owner: ComponentHost = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent")
 @js.native
 object ComponentEvent extends js.Object {

@@ -35,6 +35,7 @@ class ChronoField ()
   override def rangeUnit(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ChronoField")
 @js.native
 object ChronoField extends js.Object {

@@ -78,7 +78,7 @@ abstract class ApplicationData () extends js.Object {
   def signalDataChanged(): scala.Unit = js.native
 }
 
-/** Provides access to the application data store. Application data consists of files and settings that are either local, roaming, or temporary. */
+/* static members */
 @JSGlobal("Windows.Storage.ApplicationData")
 @js.native
 object ApplicationData extends js.Object {

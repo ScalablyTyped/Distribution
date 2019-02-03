@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tab ()
   extends reactDashBootstrapLib.libMod.Tab
 
+/* static members */
 @JSImport("react-bootstrap", "Tab")
 @js.native
 object Tab extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Rebase ()
   extends nodegitLib.rebaseMod.Rebase
 
+/* static members */
 @JSImport("nodegit", "Rebase")
 @js.native
 object Rebase extends js.Object {

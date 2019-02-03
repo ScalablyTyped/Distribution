@@ -24,11 +24,17 @@ object n3LibStrings {
   @js.native
   sealed trait Variable extends js.Object
   
+  @scala.inline
   def BlankNode: BlankNode = "BlankNode".asInstanceOf[BlankNode]
+  @scala.inline
   def DefaultGraph: DefaultGraph = "DefaultGraph".asInstanceOf[DefaultGraph]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def Literal: Literal = "Literal".asInstanceOf[Literal]
+  @scala.inline
   def NamedNode: NamedNode = "NamedNode".asInstanceOf[NamedNode]
+  @scala.inline
   def Variable: Variable = "Variable".asInstanceOf[Variable]
 }
 

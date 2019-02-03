@@ -69,9 +69,7 @@ class SmartArray[T] protected () extends ISmartArrayLike[T] {
   def sort(compareFn: js.Function2[/* a */ T, /* b */ T, scala.Double]): scala.Unit = js.native
 }
 
-/**
-  * Defines an GC Friendly array where the backfield array do not shrink to prevent over allocations.
-  */
+/* static members */
 @JSGlobal("BABYLON.SmartArray")
 @js.native
 object SmartArray extends js.Object {

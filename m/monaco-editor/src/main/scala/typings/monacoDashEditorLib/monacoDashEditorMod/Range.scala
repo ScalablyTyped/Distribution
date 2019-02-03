@@ -73,6 +73,7 @@ class Range protected () extends js.Object {
   def setStartPosition(startLineNumber: scala.Double, startColumn: scala.Double): Range = js.native
 }
 
+/* static members */
 @JSImport("monaco-editor", "Range")
 @js.native
 object Range extends js.Object {

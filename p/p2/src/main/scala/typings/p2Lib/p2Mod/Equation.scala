@@ -70,6 +70,7 @@ class Equation protected ()
   ): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("p2", "Equation")
 @js.native
 object Equation extends js.Object {

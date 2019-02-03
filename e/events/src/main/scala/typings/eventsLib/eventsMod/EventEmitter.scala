@@ -38,6 +38,7 @@ class EventEmitter () extends js.Object {
   def setMaxListeners(n: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("events", "EventEmitter")
 @js.native
 object EventEmitter extends js.Object {

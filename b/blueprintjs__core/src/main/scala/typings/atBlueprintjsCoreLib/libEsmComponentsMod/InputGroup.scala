@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class InputGroup ()
   extends atBlueprintjsCoreLib.libEsmComponentsFormsInputGroupMod.InputGroup
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "InputGroup")
 @js.native
 object InputGroup extends js.Object {

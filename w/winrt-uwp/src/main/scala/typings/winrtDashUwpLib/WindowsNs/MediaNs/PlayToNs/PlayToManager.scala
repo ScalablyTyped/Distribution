@@ -45,7 +45,7 @@ abstract class PlayToManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides access to Play To capabilities. */
+/* static members */
 @JSGlobal("Windows.Media.PlayTo.PlayToManager")
 @js.native
 object PlayToManager extends js.Object {

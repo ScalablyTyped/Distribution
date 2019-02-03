@@ -31,6 +31,7 @@ class Credit protected ()
   override def hasLink(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Credit")
 @js.native
 object Credit extends js.Object {

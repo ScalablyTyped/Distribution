@@ -20,6 +20,7 @@ class RolePolicyAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamRolePolicyAttachmentMod.RolePolicyAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "RolePolicyAttachment")
 @js.native
 object RolePolicyAttachment extends js.Object {

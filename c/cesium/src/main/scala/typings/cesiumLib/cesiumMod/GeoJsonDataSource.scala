@@ -32,6 +32,7 @@ class GeoJsonDataSource ()
   override def update(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "GeoJsonDataSource")
 @js.native
 object GeoJsonDataSource extends js.Object {

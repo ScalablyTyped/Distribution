@@ -65,6 +65,7 @@ object guarddutyNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.guarddutyThreatIntelSetMod.ThreatIntelSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Detector extends js.Object {
     /**
@@ -89,6 +90,7 @@ object guarddutyNs extends js.Object {
     ): atPulumiAwsLib.guarddutyDetectorMod.Detector = js.native
   }
   
+  /* static members */
   @js.native
   object IPSet extends js.Object {
     /**
@@ -113,6 +115,7 @@ object guarddutyNs extends js.Object {
     ): atPulumiAwsLib.guarddutyIPSetMod.IPSet = js.native
   }
   
+  /* static members */
   @js.native
   object Member extends js.Object {
     /**
@@ -137,6 +140,7 @@ object guarddutyNs extends js.Object {
     ): atPulumiAwsLib.guarddutyMemberMod.Member = js.native
   }
   
+  /* static members */
   @js.native
   object ThreatIntelSet extends js.Object {
     /**

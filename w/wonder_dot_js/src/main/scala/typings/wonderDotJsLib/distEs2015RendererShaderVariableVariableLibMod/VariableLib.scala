@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VariableLib () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableLib", "VariableLib")
 @js.native
 object VariableLib extends js.Object {

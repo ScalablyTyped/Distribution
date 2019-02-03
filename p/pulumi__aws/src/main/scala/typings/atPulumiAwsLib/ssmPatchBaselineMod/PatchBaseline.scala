@@ -53,6 +53,7 @@ class PatchBaseline protected ()
   val rejectedPatches: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/patchBaseline", "PatchBaseline")
 @js.native
 object PatchBaseline extends js.Object {

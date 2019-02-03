@@ -38,6 +38,7 @@ class Polygon protected () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Polygon")
 @js.native
 object Polygon extends js.Object {

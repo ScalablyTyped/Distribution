@@ -13,6 +13,7 @@ class WrappedValue protected () extends js.Object {
   var wrapped: js.Any = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/change_detection/change_detection_util", "WrappedValue")
 @js.native
 object WrappedValue extends js.Object {

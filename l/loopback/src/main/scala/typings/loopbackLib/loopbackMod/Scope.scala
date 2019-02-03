@@ -17,13 +17,7 @@ import scala.scalajs.js.annotation._
 class Scope ()
   extends loopbackLib.loopbackMod.lNs.Scope
 
-/**
-  * Resource owner grants/delegates permissions to client application
-  * For a protected resource, does the client application have the authorization
-  * from the resource owner (user or system)
-  * Scope has many resource access entrie
-  * @class scope
-  */
+/* static members */
 @JSImport("loopback", "Scope")
 @js.native
 object Scope extends js.Object {

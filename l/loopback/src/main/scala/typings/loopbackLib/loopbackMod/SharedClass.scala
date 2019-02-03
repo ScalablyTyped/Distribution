@@ -97,17 +97,7 @@ class SharedClass protected ()
   override def resolve(resolver: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
-/**
-  * SharedClass
-  * Create a new SharedClass with the given options.
-  * **NOTE** TODO : exported from another module type definition called strong-remoting
-  *
-  * @param {string} name The SharedClass name
-  * @param {() => void} constructor The constructor the SharedClass represents
-  * @param {any} options Additional options.
-  * @property {() => void } ctor The constructor
-  * @property {any} http The HTTP settings
-  */
+/* static members */
 @JSImport("loopback", "SharedClass")
 @js.native
 object SharedClass extends js.Object {

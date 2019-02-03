@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SerializationHelper () extends js.Object
 
-/**
-  * Class used to help serialization objects
-  */
+/* static members */
 @JSGlobal("BABYLON.SerializationHelper")
 @js.native
 object SerializationHelper extends js.Object {

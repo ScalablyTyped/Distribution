@@ -14,6 +14,7 @@ class Head protected () extends js.Object {
   var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("git", "Head")
 @js.native
 object Head extends js.Object {

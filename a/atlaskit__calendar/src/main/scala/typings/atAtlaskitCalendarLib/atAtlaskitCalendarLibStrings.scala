@@ -24,11 +24,17 @@ object atAtlaskitCalendarLibStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def next: next = "next".asInstanceOf[next]
+  @scala.inline
   def prev: prev = "prev".asInstanceOf[prev]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
 }
 

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object braintreeNs {
-  type HostedFieldsFieldDataFields = braintreeDashWebLib.braintreeDashWebLibStrings.HostedFieldsFieldDataFields with js.Any
+  type HostedFieldsFieldDataFields = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in braintree-web.braintree-web.braintree.HostedFieldsHostedFieldsFieldName ]: braintree-web.braintree-web.braintree.HostedFieldsHostedFieldsFieldData}
+    */ braintreeDashWebLib.braintreeDashWebLibStrings.HostedFieldsFieldDataFields with js.Any
   /**
     * @description The event payload sent from {@link HostedFields#on|on} or {@link HostedFields#getState|getState}.
     * @property {HostedFields~hostedFieldsCard[]} cards

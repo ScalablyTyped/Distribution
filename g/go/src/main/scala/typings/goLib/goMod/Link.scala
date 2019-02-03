@@ -19,12 +19,7 @@ import scala.scalajs.js.annotation._
 class Link ()
   extends goLib.goMod.goNs.Link
 
-/**
-  * A Link is a Part that connects Nodes.
-  * The link relationship is directional, going from Link.fromNode to Link.toNode.
-  * A link can connect to a specific port element in a node, as named by the Link.fromPortId
-  * and Link.toPortId properties.
-  */
+/* static members */
 @JSImport("go", "Link")
 @js.native
 object Link extends js.Object {

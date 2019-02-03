@@ -54,6 +54,7 @@ abstract class HttpExecutor[REQUEST] () extends js.Object {
   ): js.Promise[java.lang.String | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("builder-util-runtime/out/httpExecutor", "HttpExecutor")
 @js.native
 object HttpExecutor extends js.Object {

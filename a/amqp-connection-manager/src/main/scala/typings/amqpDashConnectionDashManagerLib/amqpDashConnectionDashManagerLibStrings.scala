@@ -18,9 +18,13 @@ object amqpDashConnectionDashManagerLibStrings {
   @js.native
   sealed trait error extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def connect: connect = "connect".asInstanceOf[connect]
+  @scala.inline
   def disconnect: disconnect = "disconnect".asInstanceOf[disconnect]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
 }
 

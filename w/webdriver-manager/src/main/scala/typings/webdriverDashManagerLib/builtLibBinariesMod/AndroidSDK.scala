@@ -12,6 +12,7 @@ class AndroidSDK ()
   def this(alternateCDN: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries", "AndroidSDK")
 @js.native
 object AndroidSDK extends js.Object {

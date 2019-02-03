@@ -12,7 +12,9 @@ object libxsltLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

@@ -32,6 +32,7 @@ class Field protected () extends FieldBase {
   val packed: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Field")
 @js.native
 object Field extends js.Object {

@@ -18,6 +18,7 @@ class Bar[X, Y] ()
   def this(orientation: plottableLib.buildSrcPlotsBarPlotMod.BarOrientation) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Bar")
 @js.native
 object Bar extends js.Object {

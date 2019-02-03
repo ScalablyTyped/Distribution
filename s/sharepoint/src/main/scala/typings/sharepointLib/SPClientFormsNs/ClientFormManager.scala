@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ClientFormManager () extends js.Object
 
+/* static members */
 @JSGlobal("SPClientForms.ClientFormManager")
 @js.native
 object ClientFormManager extends js.Object {

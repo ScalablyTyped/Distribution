@@ -31,6 +31,7 @@ object S3Ns extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  /* static members */
   @js.native
   object ManagedUpload extends js.Object {
     /**
@@ -62,6 +63,7 @@ object S3Ns extends js.Object {
       extends awsDashSdkLib.clientsS3Mod.S3Ns.PresignedPost
     
     val TypesNs: this.type = js.native
+    /* static members */
     @js.native
     object ManagedUpload extends js.Object {
       /**

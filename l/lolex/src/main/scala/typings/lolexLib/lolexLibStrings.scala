@@ -33,14 +33,23 @@ object lolexLibStrings {
   @js.native
   sealed trait setTimeout extends js.Object
   
+  @scala.inline
   def Date: Date = "Date".asInstanceOf[Date]
+  @scala.inline
   def clearImmediate: clearImmediate = "clearImmediate".asInstanceOf[clearImmediate]
+  @scala.inline
   def clearInterval: clearInterval = "clearInterval".asInstanceOf[clearInterval]
+  @scala.inline
   def clearTimeout: clearTimeout = "clearTimeout".asInstanceOf[clearTimeout]
+  @scala.inline
   def hrtime: hrtime = "hrtime".asInstanceOf[hrtime]
+  @scala.inline
   def nextTick: nextTick = "nextTick".asInstanceOf[nextTick]
+  @scala.inline
   def setImmediate: setImmediate = "setImmediate".asInstanceOf[setImmediate]
+  @scala.inline
   def setInterval: setInterval = "setInterval".asInstanceOf[setInterval]
+  @scala.inline
   def setTimeout: setTimeout = "setTimeout".asInstanceOf[setTimeout]
 }
 

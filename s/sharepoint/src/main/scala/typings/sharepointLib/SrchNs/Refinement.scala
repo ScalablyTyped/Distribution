@@ -45,6 +45,7 @@ class Refinement protected () extends DisplayControl {
   def updateRefinersJSON(refinersJSON: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Srch.Refinement")
 @js.native
 object Refinement extends js.Object {

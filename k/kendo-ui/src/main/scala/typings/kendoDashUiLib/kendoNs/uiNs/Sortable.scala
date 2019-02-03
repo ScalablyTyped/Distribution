@@ -17,6 +17,7 @@ class Sortable protected () extends Widget {
   def items(): kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Sortable")
 @js.native
 object Sortable extends js.Object {

@@ -11,6 +11,7 @@ abstract class CurrentAppOrchestration () extends js.Object {
    /* unmapped type */ var startSingleAppMode: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Management.Orchestration.CurrentAppOrchestration")
 @js.native
 object CurrentAppOrchestration extends js.Object {

@@ -26,6 +26,7 @@ class ServiceClient protected ()
   def withFilter(newFilter: Filter): ServiceClient = js.native
 }
 
+/* static members */
 @JSImport("azure", "ServiceClient")
 @js.native
 object ServiceClient extends js.Object {

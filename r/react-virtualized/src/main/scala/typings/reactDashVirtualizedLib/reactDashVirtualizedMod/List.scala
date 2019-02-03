@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class List ()
   extends reactDashVirtualizedLib.distEsListMod.List
 
+/* static members */
 @JSImport("react-virtualized", "List")
 @js.native
 object List extends js.Object {

@@ -36,6 +36,7 @@ class ParameterGroup protected ()
   val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Name]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/redshift/parameterGroup", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {

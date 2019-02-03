@@ -9,6 +9,7 @@ object sinonLibStrings {
   @js.native
   sealed trait SinonStubbedInstance extends js.Object
   
+  @scala.inline
   def SinonStubbedInstance: SinonStubbedInstance = "SinonStubbedInstance".asInstanceOf[SinonStubbedInstance]
 }
 

@@ -18,7 +18,9 @@ object PermissionsNs extends js.Object {
   
   trait PermissionResponse extends js.Object {
     var expires: PermissionExpires
-    var permissions: expoLib.expoLibStrings.PermissionResponse with js.Any
+    var permissions: /* import warning: ImportType.apply c Unsupported type mapping: 
+    {[ key in expo.expo.Permissions.PermissionType ]: expo.expo.Permissions.SinglePermissionResponse}
+      */ expoLib.expoLibStrings.PermissionResponse with js.Any
     var status: PermissionStatus
   }
   

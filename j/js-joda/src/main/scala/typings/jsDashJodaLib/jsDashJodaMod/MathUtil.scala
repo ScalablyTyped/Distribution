@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MathUtil ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.MathUtil
 
+/* static members */
 @JSImport("js-joda", "MathUtil")
 @js.native
 object MathUtil extends js.Object {

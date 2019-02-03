@@ -19,6 +19,7 @@ class Blob protected () extends js.Object {
   var size: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Blob")
 @js.native
 object Blob extends js.Object {

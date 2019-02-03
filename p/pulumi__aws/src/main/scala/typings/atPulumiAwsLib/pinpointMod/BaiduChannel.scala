@@ -20,6 +20,7 @@ class BaiduChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointBaiduChannelMod.BaiduChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "BaiduChannel")
 @js.native
 object BaiduChannel extends js.Object {

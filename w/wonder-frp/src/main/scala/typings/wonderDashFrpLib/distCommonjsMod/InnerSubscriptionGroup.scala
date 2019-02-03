@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class InnerSubscriptionGroup ()
   extends wonderDashFrpLib.distCommonjsDisposableInnerSubscriptionGroupMod.InnerSubscriptionGroup
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "InnerSubscriptionGroup")
 @js.native
 object InnerSubscriptionGroup extends js.Object {

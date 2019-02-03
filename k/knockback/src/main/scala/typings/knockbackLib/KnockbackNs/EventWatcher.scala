@@ -14,6 +14,7 @@ class EventWatcher () extends Destroyable {
   def releaseCallbacks(obj: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Knockback.EventWatcher")
 @js.native
 object EventWatcher extends js.Object {

@@ -101,6 +101,7 @@ class Texture protected ()
   def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.Texture")
 @js.native
 object Texture extends js.Object {

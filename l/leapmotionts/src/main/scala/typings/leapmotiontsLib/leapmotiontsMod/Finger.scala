@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Finger () extends Pointable
 
+/* static members */
 @JSImport("leapmotionts", "Finger")
 @js.native
 object Finger extends js.Object {

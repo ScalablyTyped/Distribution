@@ -11,6 +11,7 @@ class default protected () extends Cascader {
   def this(props: CascaderProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/cascader", JSImport.Default)
 @js.native
 object default extends js.Object {

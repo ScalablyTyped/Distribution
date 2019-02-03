@@ -13,6 +13,7 @@ class ScreenBufferHD protected ()
   def this(options: terminalDashKitLib.screenbufferMod.ScreenBufferNs.Options) = this()
 }
 
+/* static members */
 @JSImport("terminal-kit", "ScreenBufferHD")
 @js.native
 object ScreenBufferHD extends js.Object {

@@ -12,6 +12,7 @@ class SyncHost ()
   def this(hasReadFileSyncWriteFileSyncBaseOptions: grammarkdownLib.distHostMod.SyncHostOptions) = this()
 }
 
+/* static members */
 @JSImport("grammarkdown", "SyncHost")
 @js.native
 object SyncHost extends js.Object {

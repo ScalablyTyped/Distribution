@@ -41,6 +41,7 @@ class Color protected () extends js.Object {
   def toRgba(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.Maps.Color")
 @js.native
 object Color extends js.Object {

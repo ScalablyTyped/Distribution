@@ -20,6 +20,7 @@ class LifecycleHook protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHookArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling", "LifecycleHook")
 @js.native
 object LifecycleHook extends js.Object {

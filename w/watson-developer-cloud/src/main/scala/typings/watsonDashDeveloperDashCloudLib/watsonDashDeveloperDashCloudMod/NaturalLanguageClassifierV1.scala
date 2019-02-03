@@ -16,6 +16,7 @@ class NaturalLanguageClassifierV1 protected () extends js.Object {
   def status(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "NaturalLanguageClassifierV1")
 @js.native
 object NaturalLanguageClassifierV1 extends js.Object {

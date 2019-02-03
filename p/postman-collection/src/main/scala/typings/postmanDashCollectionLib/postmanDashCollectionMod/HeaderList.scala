@@ -12,6 +12,7 @@ class HeaderList protected () extends PropertyList[Header] {
   def contentSize(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "HeaderList")
 @js.native
 object HeaderList extends js.Object {

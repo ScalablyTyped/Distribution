@@ -21,10 +21,15 @@ object restifyLibStrings {
   @js.native
   sealed trait routed extends js.Object
   
+  @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
+  @scala.inline
   def after: after = "after".asInstanceOf[after]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
+  @scala.inline
   def routed: routed = "routed".asInstanceOf[routed]
 }
 

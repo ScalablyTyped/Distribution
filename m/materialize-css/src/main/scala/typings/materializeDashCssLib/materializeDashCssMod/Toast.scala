@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Toast ()
   extends materializeDashCssLib.MNs.Toast
 
+/* static members */
 @JSImport("materialize-css", "Toast")
 @js.native
 object Toast extends js.Object {

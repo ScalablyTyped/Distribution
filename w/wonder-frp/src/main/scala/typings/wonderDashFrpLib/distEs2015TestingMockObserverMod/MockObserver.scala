@@ -15,6 +15,7 @@ class MockObserver protected ()
   var messages: js.Array[wonderDashFrpLib.distEs2015TestingRecordMod.Record] = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/testing/MockObserver", "MockObserver")
 @js.native
 object MockObserver extends js.Object {

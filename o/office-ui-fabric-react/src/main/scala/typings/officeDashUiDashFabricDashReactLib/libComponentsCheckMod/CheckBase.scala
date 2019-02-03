@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CheckBase ()
   extends officeDashUiDashFabricDashReactLib.libComponentsCheckCheckDotBaseMod.CheckBase
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Check", "CheckBase")
 @js.native
 object CheckBase extends js.Object {

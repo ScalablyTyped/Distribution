@@ -15,8 +15,11 @@ object reactDashNativeDashSvgDashChartsLibStrings {
   @js.native
   sealed trait VERTICAL extends js.Object
   
+  @scala.inline
   def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]
+  @scala.inline
   def HORIZONTAL: HORIZONTAL = "HORIZONTAL".asInstanceOf[HORIZONTAL]
+  @scala.inline
   def VERTICAL: VERTICAL = "VERTICAL".asInstanceOf[VERTICAL]
 }
 

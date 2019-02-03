@@ -20,6 +20,7 @@ class Cache protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.storagegatewayCacheMod.CacheArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway", "Cache")
 @js.native
 object Cache extends js.Object {

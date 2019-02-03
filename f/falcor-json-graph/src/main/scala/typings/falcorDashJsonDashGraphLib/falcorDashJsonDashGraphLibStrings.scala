@@ -15,8 +15,11 @@ object falcorDashJsonDashGraphLibStrings {
   @js.native
   sealed trait reference extends js.Object
   
+  @scala.inline
   def atom: atom = "atom".asInstanceOf[atom]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def reference: reference = "reference".asInstanceOf[reference]
 }
 

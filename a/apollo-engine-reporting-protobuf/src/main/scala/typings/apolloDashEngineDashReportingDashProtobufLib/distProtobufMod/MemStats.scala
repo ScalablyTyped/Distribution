@@ -59,6 +59,7 @@ class MemStats () extends IMemStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "MemStats")
 @js.native
 object MemStats extends js.Object {

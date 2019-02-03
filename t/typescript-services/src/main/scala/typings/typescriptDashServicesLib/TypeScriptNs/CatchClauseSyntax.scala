@@ -31,6 +31,7 @@ class CatchClauseSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): CatchClauseSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.CatchClauseSyntax")
 @js.native
 object CatchClauseSyntax extends js.Object {

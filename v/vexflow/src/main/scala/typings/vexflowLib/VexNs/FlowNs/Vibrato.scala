@@ -12,6 +12,7 @@ class Vibrato () extends Modifier {
   def setVibratoWidth(width: scala.Double): Vibrato = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Vibrato")
 @js.native
 object Vibrato extends js.Object {

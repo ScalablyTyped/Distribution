@@ -30,6 +30,7 @@ class SymbolPalette protected ()
   def removePaletteItem(paletteName: java.lang.String, node: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.SymbolPalette")
 @js.native
 object SymbolPalette extends js.Object {

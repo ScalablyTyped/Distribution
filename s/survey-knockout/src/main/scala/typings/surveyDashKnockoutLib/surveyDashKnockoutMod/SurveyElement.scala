@@ -61,6 +61,7 @@ class SurveyElement protected ()
   def updateCustomWidgets(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "SurveyElement")
 @js.native
 object SurveyElement extends js.Object {

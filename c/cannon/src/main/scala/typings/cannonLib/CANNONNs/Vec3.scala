@@ -50,6 +50,7 @@ class Vec3 () extends js.Object {
   def vsub(v: Vec3, target: Vec3): Vec3 = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.Vec3")
 @js.native
 object Vec3 extends js.Object {

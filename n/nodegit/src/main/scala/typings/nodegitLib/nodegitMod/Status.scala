@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Status ()
   extends nodegitLib.statusMod.Status
 
+/* static members */
 @JSImport("nodegit", "Status")
 @js.native
 object Status extends js.Object {

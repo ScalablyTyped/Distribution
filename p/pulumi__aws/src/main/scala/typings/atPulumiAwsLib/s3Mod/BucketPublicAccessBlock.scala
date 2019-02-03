@@ -20,6 +20,7 @@ class BucketPublicAccessBlock protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3BucketPublicAccessBlockMod.BucketPublicAccessBlockArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "BucketPublicAccessBlock")
 @js.native
 object BucketPublicAccessBlock extends js.Object {

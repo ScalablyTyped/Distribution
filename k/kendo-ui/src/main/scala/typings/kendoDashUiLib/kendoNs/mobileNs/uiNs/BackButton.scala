@@ -15,6 +15,7 @@ class BackButton protected () extends Widget {
   var wrapper: kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.BackButton")
 @js.native
 object BackButton extends js.Object {

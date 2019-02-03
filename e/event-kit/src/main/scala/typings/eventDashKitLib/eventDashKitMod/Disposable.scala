@@ -17,6 +17,7 @@ class Disposable () extends DisposableLike {
   override def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("event-kit", "Disposable")
 @js.native
 object Disposable extends js.Object {

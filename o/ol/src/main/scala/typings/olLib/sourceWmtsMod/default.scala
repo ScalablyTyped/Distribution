@@ -26,13 +26,7 @@ class default protected ()
   def this(options: openlayersLib.openlayersMod.olxNs.sourceNs.WMTSOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Layer source for tile data from WMTS servers.
-  *
-  * @param options WMTS options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/source/wmts", JSImport.Default)
 @js.native
 object default extends js.Object {

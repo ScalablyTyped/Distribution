@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ApplicationLanguages () extends js.Object
 
-/** Specifies the language-related preferences that the app can use and maintain. */
+/* static members */
 @JSGlobal("Windows.Globalization.ApplicationLanguages")
 @js.native
 object ApplicationLanguages extends js.Object {

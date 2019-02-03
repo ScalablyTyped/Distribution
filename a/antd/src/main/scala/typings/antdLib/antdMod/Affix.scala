@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Affix ()
   extends antdLib.libAffixMod.default
 
+/* static members */
 @JSImport("antd", "Affix")
 @js.native
 object Affix extends js.Object {

@@ -18,9 +18,13 @@ object activedirectory2LibNumbers {
   @js.native
   sealed trait `false` extends js.Object
   
+  @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
   def `10`: `10` = 10.asInstanceOf[`10`]
+  @scala.inline
   def `1000`: `1000` = 1000.asInstanceOf[`1000`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
 }
 

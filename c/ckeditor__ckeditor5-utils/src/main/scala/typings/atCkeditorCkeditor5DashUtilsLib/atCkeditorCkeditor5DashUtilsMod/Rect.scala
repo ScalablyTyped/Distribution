@@ -31,6 +31,7 @@ class Rect protected () extends js.Object {
   def moveTo(x: scala.Double, y: scala.Double): Rect = js.native
 }
 
+/* static members */
 @JSImport("@ckeditor/ckeditor5-utils", "Rect")
 @js.native
 object Rect extends js.Object {

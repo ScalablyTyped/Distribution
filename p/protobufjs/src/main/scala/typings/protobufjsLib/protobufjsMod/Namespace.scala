@@ -17,6 +17,7 @@ class Namespace protected () extends NamespaceBase {
   def this(name: java.lang.String, options: org.scalablytyped.runtime.StringDictionary[js.Any]) = this()
 }
 
+/* static members */
 @JSImport("protobufjs", "Namespace")
 @js.native
 object Namespace extends js.Object {

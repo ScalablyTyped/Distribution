@@ -18,9 +18,13 @@ object moduleDashDepsLibStrings {
   @js.native
   sealed trait transform extends js.Object
   
+  @scala.inline
   def PACKAGE: PACKAGE = "package".asInstanceOf[PACKAGE]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
   def transform: transform = "transform".asInstanceOf[transform]
 }
 

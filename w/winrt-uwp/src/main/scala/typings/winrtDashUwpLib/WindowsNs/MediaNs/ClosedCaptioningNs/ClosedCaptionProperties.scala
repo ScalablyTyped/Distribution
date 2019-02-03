@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ClosedCaptionProperties () extends js.Object
 
-/** Exposes properties for retrieving the closed caption formatting settings that the user can set through the system's closed captioning settings page. */
+/* static members */
 @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionProperties")
 @js.native
 object ClosedCaptionProperties extends js.Object {

@@ -15,6 +15,7 @@ class Confirm protected () extends Dialog {
   var result: kendoDashUiLib.JQueryPromise[_] = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Confirm")
 @js.native
 object Confirm extends js.Object {

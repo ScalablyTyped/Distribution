@@ -44,10 +44,7 @@ class XmlTag protected () extends js.Object {
   def getOpeningTag(selfClose: scala.Boolean): java.lang.String = js.native
 }
 
-/**
-  * Class for an XML tag.
-  * @private
-  */
+/* static members */
 @JSGlobal("MakerJs.exporter.XmlTag")
 @js.native
 object XmlTag extends js.Object {

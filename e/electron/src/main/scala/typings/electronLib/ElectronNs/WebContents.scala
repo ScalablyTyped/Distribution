@@ -1789,6 +1789,7 @@ class WebContents () extends EventEmitter {
   def unselect(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.WebContents")
 @js.native
 object WebContents extends js.Object {

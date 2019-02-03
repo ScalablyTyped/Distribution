@@ -21,6 +21,7 @@ class MemberVariableDeclarationSyntax protected () extends SyntaxNode {
   def withVariableDeclarator(variableDeclarator: VariableDeclaratorSyntax): MemberVariableDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.MemberVariableDeclarationSyntax")
 @js.native
 object MemberVariableDeclarationSyntax extends js.Object {

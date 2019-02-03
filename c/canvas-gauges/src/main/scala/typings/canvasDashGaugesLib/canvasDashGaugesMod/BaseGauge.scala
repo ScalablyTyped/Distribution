@@ -12,6 +12,7 @@ abstract class BaseGauge protected ()
   def this(options: canvasDashGaugesLib.CanvasGaugesNs.GenericOptions) = this()
 }
 
+/* static members */
 @JSImport("canvas-gauges", "BaseGauge")
 @js.native
 object BaseGauge extends js.Object {

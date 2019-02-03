@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Parallax ()
   extends materializeDashCssLib.MNs.Parallax
 
+/* static members */
 @JSImport("materialize-css", "Parallax")
 @js.native
 object Parallax extends js.Object {

@@ -854,7 +854,9 @@ package object underscoreNs {
   ]
   type LodashMapValues2x1[T, TResult] = js.Function1[
     /* obj */ js.UndefOr[T | scala.Null], 
-    lodashLib.lodashLibStrings.LodashMapValues2x1 with js.Any
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: TResult}
+    */ lodashLib.lodashLibStrings.LodashMapValues2x1 with js.Any
   ]
   type LodashMapValues5x1[T, TKey /* <: java.lang.String */] = js.Function1[
     /* obj */ js.UndefOr[

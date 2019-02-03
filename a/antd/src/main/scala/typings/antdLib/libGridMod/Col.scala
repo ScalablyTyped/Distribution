@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Col ()
   extends antdLib.libGridColMod.default
 
+/* static members */
 @JSImport("antd/lib/grid", "Col")
 @js.native
 object Col extends js.Object {

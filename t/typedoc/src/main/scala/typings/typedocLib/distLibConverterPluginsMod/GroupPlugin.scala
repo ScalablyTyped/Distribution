@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GroupPlugin ()
   extends typedocLib.distLibConverterPluginsGroupPluginMod.GroupPlugin
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins", "GroupPlugin")
 @js.native
 object GroupPlugin extends js.Object {

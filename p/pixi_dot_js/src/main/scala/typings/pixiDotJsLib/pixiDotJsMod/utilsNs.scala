@@ -62,7 +62,7 @@ object utilsNs extends js.Object {
   def sign(n: scala.Double): scala.Double = js.native
   def skipHello(): scala.Unit = js.native
   def uid(): scala.Double = js.native
-  // https://github.com/primus/eventemitter3
+  /* static members */
   @js.native
   object EventEmitter extends js.Object {
     var EventEmitter: pixiDotJsLib.Anon_Prefixed = js.native

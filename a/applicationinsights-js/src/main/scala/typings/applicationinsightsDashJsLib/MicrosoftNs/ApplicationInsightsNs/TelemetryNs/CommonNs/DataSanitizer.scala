@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DataSanitizer () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Common.DataSanitizer")
 @js.native
 object DataSanitizer extends js.Object {

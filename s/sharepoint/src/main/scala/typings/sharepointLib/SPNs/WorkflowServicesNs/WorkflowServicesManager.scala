@@ -23,7 +23,7 @@ class WorkflowServicesManager protected ()
   def get_scopePath(): java.lang.String = js.native
 }
 
-/** Describes the workflow host configuration states and provides service objects that interact with the workflow */
+/* static members */
 @JSGlobal("SP.WorkflowServices.WorkflowServicesManager")
 @js.native
 object WorkflowServicesManager extends js.Object {

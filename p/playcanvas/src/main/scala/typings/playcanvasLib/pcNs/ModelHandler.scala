@@ -41,12 +41,7 @@ class ModelHandler protected () extends js.Object {
   def open(url: java.lang.String, data: js.Any): js.Any = js.native
 }
 
-/**
-  * @name pc.ModelHandler
-  * @class Resource Handler for creating pc.Model resources
-  * @description {@link pc.ResourceHandler} use to load 3D model resources
-  * @param {pc.GraphicsDevice} device The graphics device that will be rendering
-  */
+/* static members */
 @JSGlobal("pc.ModelHandler")
 @js.native
 object ModelHandler extends js.Object {

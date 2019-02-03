@@ -21,6 +21,7 @@ class ItemGroup[TItem] () extends Property[ItemGroupDefinition] {
   def oneDeep(idOrName: java.lang.String): TItem = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "ItemGroup")
 @js.native
 object ItemGroup extends js.Object {

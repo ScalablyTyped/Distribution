@@ -17,6 +17,7 @@ class QuestionFactory () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "QuestionFactory")
 @js.native
 object QuestionFactory extends js.Object {

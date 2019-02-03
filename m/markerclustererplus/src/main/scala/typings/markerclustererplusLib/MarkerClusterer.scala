@@ -379,6 +379,7 @@ class MarkerClusterer protected ()
   def `setupStyles_`(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("MarkerClusterer")
 @js.native
 object MarkerClusterer extends js.Object {

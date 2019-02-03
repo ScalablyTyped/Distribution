@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TagInput ()
   extends atBlueprintjsCoreLib.libEsmComponentsTagDashInputTagInputMod.TagInput
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "TagInput")
 @js.native
 object TagInput extends js.Object {

@@ -17,6 +17,7 @@ class Draggable protected () extends Widget {
   var model_Draggable: ejDotWebDotAllLib.ejNs.DraggableNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Draggable")
 @js.native
 object Draggable extends js.Object {

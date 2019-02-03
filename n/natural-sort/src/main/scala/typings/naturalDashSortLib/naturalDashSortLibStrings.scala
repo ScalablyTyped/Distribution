@@ -9,6 +9,7 @@ object naturalDashSortLibStrings {
   @js.native
   sealed trait desc extends js.Object
   
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
 }
 

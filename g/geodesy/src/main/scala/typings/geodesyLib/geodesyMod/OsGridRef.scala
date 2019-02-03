@@ -14,6 +14,7 @@ class OsGridRef protected () extends js.Object {
   def toString(digits: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "OsGridRef")
 @js.native
 object OsGridRef extends js.Object {

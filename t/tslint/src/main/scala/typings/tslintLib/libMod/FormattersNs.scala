@@ -48,51 +48,61 @@ object FormattersNs extends js.Object {
   class VerboseFormatter ()
     extends tslintLib.libFormattersMod.VerboseFormatter
   
+  /* static members */
   @js.native
   object AbstractFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object CodeFrameFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object FileslistFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object JUnitFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object JsonFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object PmdFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object ProseFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object StylishFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object TapFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object VerboseFormatter extends js.Object {
     var metadata: tslintLib.libLanguageFormatterFormatterMod.IFormatterMetadata = js.native

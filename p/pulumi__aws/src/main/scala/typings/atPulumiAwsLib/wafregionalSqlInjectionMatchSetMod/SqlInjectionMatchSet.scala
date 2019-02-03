@@ -29,6 +29,7 @@ class SqlInjectionMatchSet protected ()
   val sqlInjectionMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/sqlInjectionMatchSet", "SqlInjectionMatchSet")
 @js.native
 object SqlInjectionMatchSet extends js.Object {

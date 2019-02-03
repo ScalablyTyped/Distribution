@@ -62,6 +62,7 @@ class Zone protected ()
   val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/zone", "Zone")
 @js.native
 object Zone extends js.Object {

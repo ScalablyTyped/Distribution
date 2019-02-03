@@ -17,6 +17,7 @@ class Decimal128 protected () extends js.Object {
   def toJSON(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("bson", "Decimal128")
 @js.native
 object Decimal128 extends js.Object {

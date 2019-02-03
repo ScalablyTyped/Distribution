@@ -12,6 +12,7 @@ class FirstStrong () extends TextDirectionAlgorithm {
   override def checkRtl(cs: java.lang.String, start: scala.Double, count: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.TextDirectionHeuristics.FirstStrong")
 @js.native
 object FirstStrong extends js.Object {

@@ -53,6 +53,7 @@ class Scroller protected () extends Widget {
   def scrollY(pixel: scala.Double, disableAnimation: scala.Boolean, animationSpeed: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Scroller")
 @js.native
 object Scroller extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Dropdown ()
   extends reactDashOverlaysLib.libDropdownMod.namespaced
 
+/* static members */
 @JSImport("react-overlays/lib", "Dropdown")
 @js.native
 object Dropdown extends js.Object {

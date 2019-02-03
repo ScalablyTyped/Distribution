@@ -16,6 +16,7 @@ class EnumElementSyntax protected () extends SyntaxNode {
   def withPropertyName(propertyName: ISyntaxToken): EnumElementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.EnumElementSyntax")
 @js.native
 object EnumElementSyntax extends js.Object {

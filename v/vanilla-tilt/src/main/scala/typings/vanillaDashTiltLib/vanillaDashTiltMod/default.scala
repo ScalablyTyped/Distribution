@@ -42,6 +42,7 @@ class default protected () extends VanillaTilt {
   override def reset(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("vanilla-tilt", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PerceptionFrameProviderManagerService () extends js.Object
 
-/** Static methods for managing IPerceptionFrameProvider registration and unregistration, PerceptionFaceAuthenticationGroup registration and unregistration, PerceptionControlGroup registration and unregistration, PerceptionCorrelationGroup registration and unregistration, IPerceptionFrameProvider availablity, and publishing a new PerceptionFrame for an IPerceptionFrameProvider. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.Provider.PerceptionFrameProviderManagerService")
 @js.native
 object PerceptionFrameProviderManagerService extends js.Object {

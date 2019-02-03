@@ -19,6 +19,7 @@ class TypeArgumentListSyntax protected () extends SyntaxNode {
   def withTypeArguments(typeArguments: ISeparatedSyntaxList): TypeArgumentListSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeArgumentListSyntax")
 @js.native
 object TypeArgumentListSyntax extends js.Object {

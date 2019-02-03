@@ -44,6 +44,7 @@ class AxisManager protected () extends js.Object {
   def set(pos: Axis): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@egjs/axes/AxisManager", "AxisManager")
 @js.native
 object AxisManager extends js.Object {

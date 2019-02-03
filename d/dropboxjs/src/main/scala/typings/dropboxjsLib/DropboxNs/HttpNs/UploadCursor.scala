@@ -16,6 +16,7 @@ class UploadCursor protected () extends js.Object {
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.UploadCursor")
 @js.native
 object UploadCursor extends js.Object {

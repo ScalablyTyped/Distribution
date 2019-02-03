@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Subject[T] ()
   extends rxjsLib.internalSubjectMod.Subject[T]
 
+/* static members */
 @JSImport("rxjs", "Subject")
 @js.native
 object Subject extends js.Object {

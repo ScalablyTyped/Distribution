@@ -13,6 +13,7 @@ abstract class Entity protected () extends js.Object {
   var uid: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/core/Entity", "Entity")
 @js.native
 object Entity extends js.Object {

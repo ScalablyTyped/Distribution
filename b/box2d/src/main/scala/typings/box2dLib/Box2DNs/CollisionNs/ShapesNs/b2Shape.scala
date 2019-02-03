@@ -70,6 +70,7 @@ class b2Shape () extends js.Object {
   def TestPoint(xf: box2dLib.Box2DNs.CommonNs.MathNs.b2Transform, p: box2dLib.Box2DNs.CommonNs.MathNs.b2Vec2): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Collision.Shapes.b2Shape")
 @js.native
 object b2Shape extends js.Object {

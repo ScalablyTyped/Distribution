@@ -16,6 +16,7 @@ class Grammar protected ()
   def this(rootNames: stdLib.Iterable[java.lang.String], options: grammarkdownLib.distOptionsMod.CompilerOptions, host: grammarkdownLib.distHostMod.SyncHost) = this()
 }
 
+/* static members */
 @JSImport("grammarkdown", "Grammar")
 @js.native
 object Grammar extends js.Object {

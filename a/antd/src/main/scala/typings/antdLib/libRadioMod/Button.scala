@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Button ()
   extends antdLib.libRadioRadioButtonMod.default
 
+/* static members */
 @JSImport("antd/lib/radio", "Button")
 @js.native
 object Button extends js.Object {

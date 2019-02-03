@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class QuantitativeScale[D] ()
   extends plottableLib.buildSrcScalesQuantitativeScaleMod.QuantitativeScale[D]
 
+/* static members */
 @JSImport("plottable", "QuantitativeScale")
 @js.native
 object QuantitativeScale extends js.Object {

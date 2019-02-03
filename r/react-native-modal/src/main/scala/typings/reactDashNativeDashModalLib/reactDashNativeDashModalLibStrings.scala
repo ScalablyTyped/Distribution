@@ -45,18 +45,31 @@ object reactDashNativeDashModalLibStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
+  @scala.inline
   def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def `landscape-left`: `landscape-left` = "landscape-left".asInstanceOf[`landscape-left`]
+  @scala.inline
   def `landscape-right`: `landscape-right` = "landscape-right".asInstanceOf[`landscape-right`]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def overFullScreen: overFullScreen = "overFullScreen".asInstanceOf[overFullScreen]
+  @scala.inline
   def pageSheet: pageSheet = "pageSheet".asInstanceOf[pageSheet]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def `portrait-upside-down`: `portrait-upside-down` = "portrait-upside-down".asInstanceOf[`portrait-upside-down`]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
 }
 

@@ -72,10 +72,7 @@ class MongoosePromise[T] ()
   def resolve(): this.type = js.native
 }
 
-/*
-  * mpromise definitions.
-  * Callback signatures are from the mPromise type definitions.
-  */
+/* static members */
 @JSImport("mongoose", "MongoosePromise")
 @js.native
 object MongoosePromise extends js.Object {

@@ -28,7 +28,7 @@ class SpeechSynthesizer () extends js.Object {
   def synthesizeTextToStreamAsync(text: java.lang.String): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SpeechSynthesisStream] = js.native
 }
 
-/** Provides access to the functionality of an installed speech synthesis engine (voice). */
+/* static members */
 @JSGlobal("Windows.Media.SpeechSynthesis.SpeechSynthesizer")
 @js.native
 object SpeechSynthesizer extends js.Object {

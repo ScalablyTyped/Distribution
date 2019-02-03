@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Validator ()
   extends decorumLib.decorumMod.decorumNs.Validator
 
+/* static members */
 @JSImport("decorum", "Validator")
 @js.native
 object Validator extends js.Object {

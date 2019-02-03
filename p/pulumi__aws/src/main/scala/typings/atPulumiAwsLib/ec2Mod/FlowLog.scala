@@ -20,6 +20,7 @@ class FlowLog protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2FlowLogMod.FlowLogArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "FlowLog")
 @js.native
 object FlowLog extends js.Object {

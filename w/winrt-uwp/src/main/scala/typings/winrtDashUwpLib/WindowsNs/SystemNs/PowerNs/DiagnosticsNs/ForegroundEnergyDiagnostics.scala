@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ForegroundEnergyDiagnostics () extends js.Object
 
-/** Provides debugging APIs for calculating your app's foreground energy usage in real time. We recommend using these APIs only for debugging. */
+/* static members */
 @JSGlobal("Windows.System.Power.Diagnostics.ForegroundEnergyDiagnostics")
 @js.native
 object ForegroundEnergyDiagnostics extends js.Object {

@@ -224,15 +224,14 @@ object projectsNs extends js.Object {
     var model_ProjectDocument: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
   
+  /* static members */
   @js.native
   object Document extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://world.mendix.com/display/howto50/Add+documents+to+a+module relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Folder extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -244,15 +243,14 @@ object projectsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Folder = js.native
   }
   
+  /* static members */
   @js.native
   object FolderBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/modules relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Module extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -264,12 +262,14 @@ object projectsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.Module = js.native
   }
   
+  /* static members */
   @js.native
   object ModuleDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object OneTimeConversionMarker extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -288,15 +288,14 @@ object projectsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion): mendixmodelsdkLib.distGenProjectsMod.projectsNs.OneTimeConversionMarker = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Project extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenProjectsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ProjectConversion extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -308,9 +307,7 @@ object projectsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenProjectsMod.projectsNs.ProjectConversion = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/project relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ProjectDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native

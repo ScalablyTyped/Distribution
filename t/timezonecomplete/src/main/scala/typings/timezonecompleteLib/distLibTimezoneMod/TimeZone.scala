@@ -193,6 +193,7 @@ class TimeZone protected () extends js.Object {
   ): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("timezonecomplete/dist/lib/timezone", "TimeZone")
 @js.native
 object TimeZone extends js.Object {

@@ -167,6 +167,7 @@ class Activity protected ()
   def takeKeyEvents(_get: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.app.Activity")
 @js.native
 object Activity extends js.Object {

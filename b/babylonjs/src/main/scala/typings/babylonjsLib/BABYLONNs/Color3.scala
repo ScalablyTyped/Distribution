@@ -220,9 +220,7 @@ class Color3 () extends js.Object {
   def toLuminance(): scala.Double = js.native
 }
 
-/**
-  * Class used to hold a RBG color
-  */
+/* static members */
 @JSGlobal("BABYLON.Color3")
 @js.native
 object Color3 extends js.Object {

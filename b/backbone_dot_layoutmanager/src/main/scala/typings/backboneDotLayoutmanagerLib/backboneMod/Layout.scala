@@ -38,6 +38,7 @@ class Layout[TModel /* <: backboneLib.backboneMod.Model */] ()
   def `then`(fn: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("backbone.Layout")
 @js.native
 object Layout extends js.Object {

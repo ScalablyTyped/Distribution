@@ -13,7 +13,7 @@ abstract class Print3DDevice () extends js.Object {
   var printSchema: PrintSchema = js.native
 }
 
-/** Represents a 3D printer. */
+/* static members */
 @JSGlobal("Windows.Devices.Printers.Print3DDevice")
 @js.native
 object Print3DDevice extends js.Object {

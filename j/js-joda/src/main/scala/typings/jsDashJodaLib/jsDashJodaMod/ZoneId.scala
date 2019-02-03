@@ -17,6 +17,7 @@ class ZoneId ()
   override def rules(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneRules = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ZoneId")
 @js.native
 object ZoneId extends js.Object {

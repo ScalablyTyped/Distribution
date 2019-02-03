@@ -23,6 +23,7 @@ class Model ()
   def findModuleByQualifiedName(qname: java.lang.String): mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("mendixmodelsdk/dist/mendix-model", "Model")
 @js.native
 object Model extends js.Object {

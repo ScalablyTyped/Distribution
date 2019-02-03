@@ -34,7 +34,7 @@ abstract class FirstSignInSettings () extends js.Object {
   def split(): winrtDashUwpLib.Anon_FirstSecond = js.native
 }
 
-/** Represents a collection of settings that a user can opt-in to during the first run experience. */
+/* static members */
 @JSGlobal("Windows.System.UserProfile.FirstSignInSettings")
 @js.native
 object FirstSignInSettings extends js.Object {

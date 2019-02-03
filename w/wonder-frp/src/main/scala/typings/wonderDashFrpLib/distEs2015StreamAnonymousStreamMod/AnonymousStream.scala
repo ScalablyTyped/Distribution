@@ -23,6 +23,7 @@ class AnonymousStream protected ()
   ): wonderDashFrpLib.distEs2015DisposableIDisposableMod.IDisposable = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/AnonymousStream", "AnonymousStream")
 @js.native
 object AnonymousStream extends js.Object {

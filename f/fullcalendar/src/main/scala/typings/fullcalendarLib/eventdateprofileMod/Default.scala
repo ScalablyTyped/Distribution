@@ -23,6 +23,7 @@ class default protected () extends Default {
   def this(start: js.Any, end: js.Any, calendar: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/EventDateProfile", "Default")
 @js.native
 object Default extends js.Object {
@@ -30,6 +31,7 @@ object Default extends js.Object {
   def parse(rawProps: js.Any, source: js.Any): fullcalendarLib.fullcalendarLibNumbers.`false` | fullcalendarLib.eventdateprofileMod.Default = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/EventDateProfile", JSImport.Default)
 @js.native
 object default extends js.Object {

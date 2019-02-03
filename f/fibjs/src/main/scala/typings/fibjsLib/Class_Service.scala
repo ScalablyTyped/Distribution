@@ -69,6 +69,7 @@ class Class_Service protected () extends Class_EventEmitter {
   def run(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Class_Service")
 @js.native
 object Class_Service extends js.Object {

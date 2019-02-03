@@ -20,6 +20,7 @@ class CustomerGateway protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2CustomerGatewayMod.CustomerGatewayArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "CustomerGateway")
 @js.native
 object CustomerGateway extends js.Object {

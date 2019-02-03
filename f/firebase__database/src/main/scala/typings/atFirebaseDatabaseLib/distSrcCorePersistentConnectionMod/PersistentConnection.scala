@@ -166,6 +166,7 @@ class PersistentConnection protected ()
   def tryAuth(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/PersistentConnection", "PersistentConnection")
 @js.native
 object PersistentConnection extends js.Object {

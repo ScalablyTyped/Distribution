@@ -201,18 +201,14 @@ object securityNs extends js.Object {
     val qualifiedName: java.lang.String | scala.Null = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Security`.
-    */
+  /* static members */
   @js.native
   object AccessRuleContainerBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenSecurityMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/demo-users relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DemoUser extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -231,6 +227,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSecurityMod.securityNs.ProjectSecurity): mendixmodelsdkLib.distGenSecurityMod.securityNs.DemoUser = js.native
   }
   
+  /* static members */
   @js.native
   object FileDocumentAccessRuleContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -249,6 +246,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSecurityMod.securityNs.ProjectSecurity): mendixmodelsdkLib.distGenSecurityMod.securityNs.FileDocumentAccessRuleContainer = js.native
   }
   
+  /* static members */
   @js.native
   object ImageAccessRuleContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -267,9 +265,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSecurityMod.securityNs.ProjectSecurity): mendixmodelsdkLib.distGenSecurityMod.securityNs.ImageAccessRuleContainer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/module-role relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ModuleRole extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -288,9 +284,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSecurityMod.securityNs.ModuleSecurity): mendixmodelsdkLib.distGenSecurityMod.securityNs.ModuleRole = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/module-security relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ModuleSecurity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -302,9 +296,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule): mendixmodelsdkLib.distGenSecurityMod.securityNs.ModuleSecurity = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/password-policy relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PasswordPolicySettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -323,9 +315,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenSecurityMod.securityNs.ProjectSecurity): mendixmodelsdkLib.distGenSecurityMod.securityNs.PasswordPolicySettings = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/project-security relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ProjectSecurity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -337,6 +327,7 @@ object securityNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenSecurityMod.securityNs.ProjectSecurity = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityLevel extends js.Object {
     var CheckEverything: mendixmodelsdkLib.distGenSecurityMod.securityNs.SecurityLevel = js.native
@@ -344,9 +335,7 @@ object securityNs extends js.Object {
     var CheckNothing: mendixmodelsdkLib.distGenSecurityMod.securityNs.SecurityLevel = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/user-role relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object UserRole extends js.Object {
     var structureTypeName: java.lang.String = js.native

@@ -69,6 +69,7 @@ class Role protected ()
   val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/role", "Role")
 @js.native
 object Role extends js.Object {

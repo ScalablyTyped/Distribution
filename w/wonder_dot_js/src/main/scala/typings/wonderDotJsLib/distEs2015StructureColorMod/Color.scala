@@ -20,6 +20,7 @@ class Color () extends js.Object {
   def toVector4(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/structure/Color", "Color")
 @js.native
 object Color extends js.Object {

@@ -12,6 +12,7 @@ class Stylesheet ()
   def this(config: atUifabricMergeDashStylesLib.libStylesheetMod.IStyleSheetConfig) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "Stylesheet")
 @js.native
 object Stylesheet extends js.Object {

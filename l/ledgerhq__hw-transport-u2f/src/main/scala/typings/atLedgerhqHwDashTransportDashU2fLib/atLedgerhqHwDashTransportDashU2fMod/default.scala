@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends TransportU2F
 
+/* static members */
 @JSImport("@ledgerhq/hw-transport-u2f", JSImport.Default)
 @js.native
 object default extends js.Object {

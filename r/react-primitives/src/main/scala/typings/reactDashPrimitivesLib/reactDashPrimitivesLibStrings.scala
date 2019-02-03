@@ -21,10 +21,15 @@ object reactDashPrimitivesLibStrings {
   @js.native
   sealed trait vr extends js.Object
   
+  @scala.inline
   def PlatformStatic: PlatformStatic = "PlatformStatic".asInstanceOf[PlatformStatic]
+  @scala.inline
   def disk: disk = "disk".asInstanceOf[disk]
+  @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
+  @scala.inline
   def sketch: sketch = "sketch".asInstanceOf[sketch]
+  @scala.inline
   def vr: vr = "vr".asInstanceOf[vr]
 }
 

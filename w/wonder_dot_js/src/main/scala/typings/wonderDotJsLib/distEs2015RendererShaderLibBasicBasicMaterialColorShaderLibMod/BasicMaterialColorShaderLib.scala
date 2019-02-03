@@ -20,6 +20,7 @@ class BasicMaterialColorShaderLib ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/lib/basic/BasicMaterialColorShaderLib", "BasicMaterialColorShaderLib")
 @js.native
 object BasicMaterialColorShaderLib extends js.Object {

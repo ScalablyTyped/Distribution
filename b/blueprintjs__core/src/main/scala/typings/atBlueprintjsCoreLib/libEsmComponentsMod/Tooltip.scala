@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tooltip ()
   extends atBlueprintjsCoreLib.libEsmComponentsTooltipTooltipMod.Tooltip
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Tooltip")
 @js.native
 object Tooltip extends js.Object {

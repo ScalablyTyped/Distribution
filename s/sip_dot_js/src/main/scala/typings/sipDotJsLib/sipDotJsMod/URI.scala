@@ -17,6 +17,7 @@ class URI protected ()
   def this(scheme: java.lang.String, user: java.lang.String, host: java.lang.String, port: scala.Double, parameters: js.Any, headers: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sip.js", "URI")
 @js.native
 object URI extends js.Object {

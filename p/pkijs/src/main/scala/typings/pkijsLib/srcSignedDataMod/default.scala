@@ -11,6 +11,7 @@ class default () extends SignedData {
   def this(params: js.Any) = this()
 }
 
+/* static members */
 @JSImport("pkijs/src/SignedData", JSImport.Default)
 @js.native
 object default extends js.Object {

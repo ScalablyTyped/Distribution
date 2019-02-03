@@ -55,6 +55,7 @@ class ObjectId () extends ObjectID {
   def this(id: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("bson", "ObjectID")
 @js.native
 object ObjectID extends js.Object {
@@ -82,6 +83,7 @@ object ObjectID extends js.Object {
   def isValid(id: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("bson", "ObjectId")
 @js.native
 object ObjectId extends js.Object {

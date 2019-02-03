@@ -16,6 +16,7 @@ abstract class SpatialSurfaceObserver () extends js.Object {
    /* unmapped type */ var setBoundingVolumes: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.Surfaces.SpatialSurfaceObserver")
 @js.native
 object SpatialSurfaceObserver extends js.Object {

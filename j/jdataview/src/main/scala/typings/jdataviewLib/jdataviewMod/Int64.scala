@@ -15,6 +15,7 @@ class Int64 ()
   override var lo: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("jdataview", "Int64")
 @js.native
 object Int64 extends js.Object {

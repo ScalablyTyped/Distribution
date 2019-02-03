@@ -28,6 +28,7 @@ abstract class SchemaVisitor () extends js.Object {
   def visitUnion(union: graphqlLib.graphqlMod.GraphQLUnionType): graphqlLib.graphqlMod.GraphQLUnionType | scala.Unit | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("graphql-tools/dist/schemaVisitor", "SchemaVisitor")
 @js.native
 object SchemaVisitor extends js.Object {

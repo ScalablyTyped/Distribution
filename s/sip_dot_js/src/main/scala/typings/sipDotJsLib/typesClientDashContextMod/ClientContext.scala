@@ -28,6 +28,7 @@ class ClientContext protected ()
   def send(): this.type = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/client-context", "ClientContext")
 @js.native
 object ClientContext extends js.Object {

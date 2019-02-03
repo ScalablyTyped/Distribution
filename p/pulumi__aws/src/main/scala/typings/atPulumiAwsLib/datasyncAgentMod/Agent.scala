@@ -41,6 +41,7 @@ class Agent protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync/agent", "Agent")
 @js.native
 object Agent extends js.Object {

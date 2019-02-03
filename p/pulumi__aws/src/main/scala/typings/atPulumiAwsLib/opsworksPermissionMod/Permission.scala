@@ -40,6 +40,7 @@ class Permission protected ()
   val userArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/permission", "Permission")
 @js.native
 object Permission extends js.Object {

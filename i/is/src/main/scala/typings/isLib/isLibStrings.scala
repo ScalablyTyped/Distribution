@@ -51,20 +51,35 @@ object isLibStrings {
   @js.native
   sealed trait usZipCode extends js.Object
   
+  @scala.inline
   def affirmative: affirmative = "affirmative".asInstanceOf[affirmative]
+  @scala.inline
   def alphaNumeric: alphaNumeric = "alphaNumeric".asInstanceOf[alphaNumeric]
+  @scala.inline
   def caPostalCode: caPostalCode = "caPostalCode".asInstanceOf[caPostalCode]
+  @scala.inline
   def creditCard: creditCard = "creditCard".asInstanceOf[creditCard]
+  @scala.inline
   def dateString: dateString = "dateString".asInstanceOf[dateString]
+  @scala.inline
   def email: email = "email".asInstanceOf[email]
+  @scala.inline
   def eppPhone: eppPhone = "eppPhone".asInstanceOf[eppPhone]
+  @scala.inline
   def hexColor: hexColor = "hexColor".asInstanceOf[hexColor]
+  @scala.inline
   def hexadecimal: hexadecimal = "hexadecimal".asInstanceOf[hexadecimal]
+  @scala.inline
   def ip: ip = "ip".asInstanceOf[ip]
+  @scala.inline
   def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
+  @scala.inline
   def nanpPhone: nanpPhone = "nanpPhone".asInstanceOf[nanpPhone]
+  @scala.inline
   def timeString: timeString = "timeString".asInstanceOf[timeString]
+  @scala.inline
   def url: url = "url".asInstanceOf[url]
+  @scala.inline
   def usZipCode: usZipCode = "usZipCode".asInstanceOf[usZipCode]
 }
 

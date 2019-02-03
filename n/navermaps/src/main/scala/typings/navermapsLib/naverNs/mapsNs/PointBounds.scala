@@ -24,6 +24,7 @@ class PointBounds protected () extends js.Object {
   def union(bounds: Bounds | PointBoundsLiteral): PointBounds = js.native
 }
 
+/* static members */
 @JSGlobal("naver.maps.PointBounds")
 @js.native
 object PointBounds extends js.Object {

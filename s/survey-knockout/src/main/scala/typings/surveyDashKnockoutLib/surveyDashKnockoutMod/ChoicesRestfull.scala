@@ -34,6 +34,7 @@ class ChoicesRestfull () extends Base {
   /* protected */ def useChangedItemsResults(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "ChoicesRestfull")
 @js.native
 object ChoicesRestfull extends js.Object {

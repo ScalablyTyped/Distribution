@@ -12,6 +12,7 @@ class ElseClauseSyntax protected ()
   def this(elseKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statement: typescriptDashServicesLib.TypeScriptNs.IStatementSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ElseClauseSyntax")
 @js.native
 object ElseClauseSyntax extends js.Object {

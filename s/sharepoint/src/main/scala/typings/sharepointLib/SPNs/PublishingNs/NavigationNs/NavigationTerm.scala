@@ -41,6 +41,7 @@ class NavigationTerm () extends NavigationTermSetItem {
   def set_simpleLinkUrl(value: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Publishing.Navigation.NavigationTerm")
 @js.native
 object NavigationTerm extends js.Object {

@@ -89,8 +89,16 @@ trait CheckType extends js.Object {
   // Will gladly accept help or ideas. Now using any for returned object
   def map[T /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
     arr: T,
-    predicates: stdLib.Partial[checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any]
-  ): stdLib.Partial[checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any] = js.native
+    predicates: stdLib.Partial[
+      /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]: (args : ...any): boolean}
+    */ checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any
+    ]
+  ): stdLib.Partial[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ k in keyof T ]: any}
+    */ checkDashTypesLib.checkDashTypesLibStrings.CheckType with js.Any
+  ] = js.native
   def `match`(a: java.lang.String, b: stdLib.RegExp): scala.Boolean = js.native
   def maybe[T](`val`: T): scala.Boolean | T = js.native
   def negative(num: scala.Double): scala.Boolean = js.native

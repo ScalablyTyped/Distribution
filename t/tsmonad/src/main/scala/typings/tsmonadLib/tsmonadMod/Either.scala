@@ -14,6 +14,7 @@ class Either[L, R] protected ()
   def this(`type`: tsmonadLib.libSrcEitherMod.EitherType, l: L, r: R) = this()
 }
 
+/* static members */
 @JSImport("tsmonad", "Either")
 @js.native
 object Either extends js.Object {

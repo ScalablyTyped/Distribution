@@ -19,7 +19,7 @@ abstract class UssdSession () extends js.Object {
   def sendMessageAndGetReplyAsync(message: UssdMessage): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[UssdReply] = js.native
 }
 
-/** Represents a session of the USSD network protocol. */
+/* static members */
 @JSGlobal("Windows.Networking.NetworkOperators.UssdSession")
 @js.native
 object UssdSession extends js.Object {

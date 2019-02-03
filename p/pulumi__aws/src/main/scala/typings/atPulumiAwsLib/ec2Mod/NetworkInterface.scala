@@ -20,6 +20,7 @@ class NetworkInterface protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2NetworkInterfaceMod.NetworkInterfaceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "NetworkInterface")
 @js.native
 object NetworkInterface extends js.Object {

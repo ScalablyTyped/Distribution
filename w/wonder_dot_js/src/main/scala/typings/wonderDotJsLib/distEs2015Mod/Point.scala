@@ -13,6 +13,7 @@ class Point ()
   def this(x: scala.Double, y: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Point")
 @js.native
 object Point extends js.Object {

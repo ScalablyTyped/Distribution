@@ -34,6 +34,7 @@ abstract class AbsSeekBar protected () extends ProgressBar {
   /* private */ def updateThumbPos(w: js.Any, h: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.AbsSeekBar")
 @js.native
 object AbsSeekBar extends js.Object {

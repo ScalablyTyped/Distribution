@@ -12,6 +12,7 @@ class FinallyClauseSyntax protected ()
   def this(finallyKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "FinallyClauseSyntax")
 @js.native
 object FinallyClauseSyntax extends js.Object {

@@ -15,8 +15,11 @@ object radiumLibStrings {
   @js.native
   sealed trait `:hover` extends js.Object
   
+  @scala.inline
   def `:active`: `:active` = ":active".asInstanceOf[`:active`]
+  @scala.inline
   def `:focus`: `:focus` = ":focus".asInstanceOf[`:focus`]
+  @scala.inline
   def `:hover`: `:hover` = ":hover".asInstanceOf[`:hover`]
 }
 

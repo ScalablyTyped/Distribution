@@ -16,6 +16,7 @@ class TabStops protected () extends js.Object {
   def reset(increment: scala.Double, spans: js.Array[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.Layout.TabStops")
 @js.native
 object TabStops extends js.Object {

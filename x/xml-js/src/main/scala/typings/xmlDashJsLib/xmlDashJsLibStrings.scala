@@ -15,8 +15,11 @@ object xmlDashJsLibStrings {
   @js.native
   sealed trait yes extends js.Object
   
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def `utf-8`: `utf-8` = "utf-8".asInstanceOf[`utf-8`]
+  @scala.inline
   def yes: yes = "yes".asInstanceOf[yes]
 }
 

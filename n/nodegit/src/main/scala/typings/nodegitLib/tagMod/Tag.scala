@@ -21,6 +21,7 @@ class Tag () extends js.Object {
   def targetType(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/tag", "Tag")
 @js.native
 object Tag extends js.Object {

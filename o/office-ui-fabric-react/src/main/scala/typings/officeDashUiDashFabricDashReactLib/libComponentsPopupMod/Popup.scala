@@ -12,6 +12,7 @@ class Popup protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsPopupPopupDotTypesMod.IPopupProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Popup", "Popup")
 @js.native
 object Popup extends js.Object {

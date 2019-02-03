@@ -28,6 +28,7 @@ class UploadBuffer protected ()
   val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/uploadBuffer", "UploadBuffer")
 @js.native
 object UploadBuffer extends js.Object {

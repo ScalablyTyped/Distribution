@@ -155,6 +155,7 @@ class UrlRouterProvider protected () extends js.Object {
   def when(what: stdLib.RegExp, handler: java.lang.String): this.type = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/angularjs/lib/urlRouterProvider", "UrlRouterProvider")
 @js.native
 object UrlRouterProvider extends js.Object {

@@ -40,6 +40,7 @@ class DeliveryChannel protected ()
   val snsTopicArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg/deliveryChannel", "DeliveryChannel")
 @js.native
 object DeliveryChannel extends js.Object {

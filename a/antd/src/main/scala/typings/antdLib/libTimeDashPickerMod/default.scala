@@ -11,6 +11,7 @@ class default protected () extends TimePicker {
   def this(props: TimePickerProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/time-picker", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -81,6 +81,7 @@ object elasticbeanstalkNs extends js.Object {
     args: atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.elasticbeanstalkGetSolutionStackMod.GetSolutionStackResult] = js.native
+  /* static members */
   @js.native
   object Application extends js.Object {
     /**
@@ -105,6 +106,7 @@ object elasticbeanstalkNs extends js.Object {
     ): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
   }
   
+  /* static members */
   @js.native
   object ApplicationVersion extends js.Object {
     /**
@@ -129,6 +131,7 @@ object elasticbeanstalkNs extends js.Object {
     ): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
   }
   
+  /* static members */
   @js.native
   object ConfigurationTemplate extends js.Object {
     /**
@@ -153,6 +156,7 @@ object elasticbeanstalkNs extends js.Object {
     ): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object Environment extends js.Object {
     /**

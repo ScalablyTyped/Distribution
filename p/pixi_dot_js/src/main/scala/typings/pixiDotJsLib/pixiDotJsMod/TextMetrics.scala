@@ -12,6 +12,7 @@ class TextMetrics protected ()
   def this(text: java.lang.String, style: pixiDotJsLib.PIXINs.TextStyle, width: scala.Double, height: scala.Double, lines: js.Array[scala.Double], lineWidths: js.Array[scala.Double], lineHeight: scala.Double, maxLineWidth: scala.Double, fontProperties: js.Any) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "TextMetrics")
 @js.native
 object TextMetrics extends js.Object {

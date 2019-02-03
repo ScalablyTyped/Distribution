@@ -138,6 +138,7 @@ class Table ()
   def rowWeight(index: scala.Double, weight: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/components/table", "Table")
 @js.native
 object Table extends js.Object {

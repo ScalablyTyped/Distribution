@@ -18,6 +18,7 @@ class Option ()
   def setValue(value: googleDashProtobufLib.googleProtobufAnyUnderscorePbMod.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/type_pb", "Option")
 @js.native
 object Option extends js.Object {

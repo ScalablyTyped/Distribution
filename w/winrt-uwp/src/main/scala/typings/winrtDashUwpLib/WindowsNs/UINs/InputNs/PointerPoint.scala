@@ -27,7 +27,7 @@ abstract class PointerPoint () extends js.Object {
   var timestamp: scala.Double = js.native
 }
 
-/** Provides basic properties for the input pointer associated with a single mouse, pen/stylus, or touch contact. */
+/* static members */
 @JSGlobal("Windows.UI.Input.PointerPoint")
 @js.native
 object PointerPoint extends js.Object {

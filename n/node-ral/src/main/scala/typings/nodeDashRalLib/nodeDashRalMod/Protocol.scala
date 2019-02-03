@@ -14,6 +14,7 @@ abstract class Protocol () extends RalModule {
   def talk(config: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("node-ral", "Protocol")
 @js.native
 object Protocol extends js.Object {

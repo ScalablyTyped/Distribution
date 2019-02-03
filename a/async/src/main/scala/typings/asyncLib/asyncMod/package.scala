@@ -13,7 +13,9 @@ package object asyncMod {
     scala.Unit
   ]
   type AsyncAutoTaskFunctionWithoutDependencies[R1, E] = js.Function1[/* cb */ (AsyncResultCallback[R1, E]) | ErrorCallback[E], scala.Unit]
-  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = asyncLib.asyncLibStrings.AsyncAutoTasks with R
+  type AsyncAutoTasks[R /* <: Dictionary[_] */, E] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof R ]: async.async.AsyncAutoTask<R[K], R, E>}
+    */ asyncLib.asyncLibStrings.AsyncAutoTasks with R
   type AsyncBooleanIterator[T, E] = js.Function2[/* item */ T, /* callback */ AsyncBooleanResultCallback[E], scala.Unit]
   type AsyncBooleanResultCallback[E] = js.Function2[
     /* err */ js.UndefOr[E | scala.Null], 

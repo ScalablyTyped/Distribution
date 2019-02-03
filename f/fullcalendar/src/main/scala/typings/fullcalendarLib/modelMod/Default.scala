@@ -39,12 +39,14 @@ class Default ()
 @js.native
 class default () extends Default
 
+/* static members */
 @JSImport("fullcalendar/Model", "Default")
 @js.native
 object Default extends js.Object {
   def watch(name: js.Any, args: js.Any*): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/Model", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -15,6 +15,7 @@ class SkipUntilStream protected ()
   var isOpen: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/SkipUntilStream", "SkipUntilStream")
 @js.native
 object SkipUntilStream extends js.Object {

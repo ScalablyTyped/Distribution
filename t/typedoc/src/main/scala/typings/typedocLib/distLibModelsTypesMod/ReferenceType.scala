@@ -13,6 +13,7 @@ class ReferenceType protected ()
   def this(name: java.lang.String, symbolID: scala.Double, reflection: typedocLib.distLibModelsReflectionsAbstractMod.Reflection) = this()
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/models/types", "ReferenceType")
 @js.native
 object ReferenceType extends js.Object {

@@ -19,6 +19,7 @@ class Intersection () extends js.Object {
   def appendPoints(points: js.Array[Point]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Intersection")
 @js.native
 object Intersection extends js.Object {

@@ -12,6 +12,7 @@ class Component () extends js.Object {
   def setData(data: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@tinajs/tina", "Component")
 @js.native
 object Component extends js.Object {

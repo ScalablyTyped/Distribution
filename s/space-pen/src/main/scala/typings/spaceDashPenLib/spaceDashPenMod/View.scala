@@ -23,7 +23,7 @@ class View protected () extends js.Object {
   def wireOutlets(view: View): scala.Unit = js.native
 }
 
-// copy & paste start
+/* static members */
 @JSImport("space-pen", "View")
 @js.native
 object View extends js.Object {

@@ -11,6 +11,7 @@ class default protected () extends Transfer {
   def this(props: TransferProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/transfer", JSImport.Default)
 @js.native
 object default extends js.Object {

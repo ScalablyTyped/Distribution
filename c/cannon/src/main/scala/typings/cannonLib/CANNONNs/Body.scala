@@ -76,6 +76,7 @@ class Body () extends EventTarget {
   def wakeUp(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.Body")
 @js.native
 object Body extends js.Object {

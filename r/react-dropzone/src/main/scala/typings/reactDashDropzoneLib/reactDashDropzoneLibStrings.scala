@@ -33,14 +33,23 @@ object reactDashDropzoneLibStrings {
   @js.native
   sealed trait style extends js.Object
   
+  @scala.inline
   def className: className = "className".asInstanceOf[className]
+  @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def onClick: onClick = "onClick".asInstanceOf[onClick]
+  @scala.inline
   def onDragEnter: onDragEnter = "onDragEnter".asInstanceOf[onDragEnter]
+  @scala.inline
   def onDragLeave: onDragLeave = "onDragLeave".asInstanceOf[onDragLeave]
+  @scala.inline
   def onDragOver: onDragOver = "onDragOver".asInstanceOf[onDragOver]
+  @scala.inline
   def onDragStart: onDragStart = "onDragStart".asInstanceOf[onDragStart]
+  @scala.inline
   def style: style = "style".asInstanceOf[style]
 }
 

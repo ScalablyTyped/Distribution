@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends StringReplacePlugin
 
+/* static members */
 @JSImport("string-replace-webpack-plugin", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

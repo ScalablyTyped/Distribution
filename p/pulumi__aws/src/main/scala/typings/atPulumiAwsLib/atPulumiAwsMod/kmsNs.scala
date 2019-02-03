@@ -70,6 +70,7 @@ object kmsNs extends js.Object {
     args: atPulumiAwsLib.kmsGetSecretsMod.GetSecretsArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.kmsGetSecretsMod.GetSecretsResult] = js.native
+  /* static members */
   @js.native
   object Alias extends js.Object {
     /**
@@ -94,6 +95,7 @@ object kmsNs extends js.Object {
     ): atPulumiAwsLib.kmsAliasMod.Alias = js.native
   }
   
+  /* static members */
   @js.native
   object Grant extends js.Object {
     /**
@@ -118,6 +120,7 @@ object kmsNs extends js.Object {
     ): atPulumiAwsLib.kmsGrantMod.Grant = js.native
   }
   
+  /* static members */
   @js.native
   object Key extends js.Object {
     /**

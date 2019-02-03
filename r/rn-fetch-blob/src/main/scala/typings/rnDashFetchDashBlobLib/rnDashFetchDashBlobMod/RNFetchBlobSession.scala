@@ -16,6 +16,7 @@ class RNFetchBlobSession protected () extends js.Object {
   def remove(path: java.lang.String): RNFetchBlobSession = js.native
 }
 
+/* static members */
 @JSImport("rn-fetch-blob", "RNFetchBlobSession")
 @js.native
 object RNFetchBlobSession extends js.Object {

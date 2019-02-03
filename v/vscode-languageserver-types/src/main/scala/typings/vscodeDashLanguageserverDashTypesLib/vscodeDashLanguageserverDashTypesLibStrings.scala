@@ -21,10 +21,15 @@ object vscodeDashLanguageserverDashTypesLibStrings {
   @js.native
   sealed trait rename extends js.Object
   
+  @scala.inline
   def create: create = "create".asInstanceOf[create]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
+  @scala.inline
   def plaintext: plaintext = "plaintext".asInstanceOf[plaintext]
+  @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
 }
 

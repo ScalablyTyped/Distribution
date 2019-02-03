@@ -21,10 +21,7 @@ class InternalTexture protected ()
   def this(engine: babylonjsLib.BABYLONNs.Engine, dataSource: scala.Double) = this()
 }
 
-/**
-  * Class used to store data associated with WebGL texture data for the engine
-  * This class should not be used directly
-  */
+/* static members */
 @JSImport("babylonjs", "InternalTexture")
 @js.native
 object InternalTexture extends js.Object {

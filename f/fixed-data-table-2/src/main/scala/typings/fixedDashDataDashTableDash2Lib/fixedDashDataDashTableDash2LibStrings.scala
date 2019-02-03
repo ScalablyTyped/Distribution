@@ -21,10 +21,15 @@ object fixedDashDataDashTableDash2LibStrings {
   @js.native
   sealed trait right extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
 }
 

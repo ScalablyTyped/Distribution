@@ -34,6 +34,7 @@ class Repository protected () extends js.Object {
   def rev_list(sha: js.Any, options: js.Any, callback: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("git", "Repository")
 @js.native
 object Repository extends js.Object {

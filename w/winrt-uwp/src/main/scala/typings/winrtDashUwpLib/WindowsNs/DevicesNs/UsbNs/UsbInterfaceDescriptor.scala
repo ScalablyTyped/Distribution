@@ -21,7 +21,7 @@ abstract class UsbInterfaceDescriptor () extends js.Object {
   var subclassCode: scala.Double = js.native
 }
 
-/** Describes a USB alternate setting (of an interface) in an interface descriptor. For an explanation of an interface descriptor, see Section 9.6.5 in the Universal Serial Bus Specification: */
+/* static members */
 @JSGlobal("Windows.Devices.Usb.UsbInterfaceDescriptor")
 @js.native
 object UsbInterfaceDescriptor extends js.Object {

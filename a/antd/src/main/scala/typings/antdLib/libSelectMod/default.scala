@@ -11,6 +11,7 @@ class default[T] protected () extends Select[T] {
   def this(props: SelectProps[T]) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/select", JSImport.Default)
 @js.native
 object default extends js.Object {

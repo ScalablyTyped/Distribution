@@ -18,6 +18,7 @@ class LengthValidator ()
   def validate(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojvalidation-base", "LengthValidator")
 @js.native
 object LengthValidator extends js.Object {

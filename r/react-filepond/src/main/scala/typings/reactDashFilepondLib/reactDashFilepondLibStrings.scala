@@ -27,12 +27,19 @@ object reactDashFilepondLibStrings {
   @js.native
   sealed trait local extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
+  @scala.inline
   def limbo: limbo = "limbo".asInstanceOf[limbo]
+  @scala.inline
   def local: local = "local".asInstanceOf[local]
 }
 

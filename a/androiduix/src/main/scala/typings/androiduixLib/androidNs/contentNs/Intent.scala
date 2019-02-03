@@ -40,6 +40,7 @@ class Intent () extends js.Object {
   def setFlags(flags: scala.Double): Intent = js.native
 }
 
+/* static members */
 @JSGlobal("android.content.Intent")
 @js.native
 object Intent extends js.Object {

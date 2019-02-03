@@ -30,10 +30,7 @@ object authenticationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authenticationNs.v1Ns.TokenReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may
-      * be cached by the webhook token authenticator plugin in the kube-apiserver.
-      */
+    /* static members */
     @js.native
     object TokenReview extends js.Object {
       /**
@@ -80,10 +77,7 @@ object authenticationNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.authenticationNs.v1beta1Ns.TokenReview, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * TokenReview attempts to authenticate a token to a known user. Note: TokenReview requests may
-      * be cached by the webhook token authenticator plugin in the kube-apiserver.
-      */
+    /* static members */
     @js.native
     object TokenReview extends js.Object {
       /**

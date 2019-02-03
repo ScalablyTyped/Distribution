@@ -58,6 +58,7 @@ class Eip protected ()
   val vpc: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/eip", "Eip")
 @js.native
 object Eip extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Sine () extends Ease
 
+/* static members */
 @JSGlobal("gsap.Sine")
 @js.native
 object Sine extends js.Object {

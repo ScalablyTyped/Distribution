@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FocusMgr () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.FocusMgr")
 @js.native
 object FocusMgr extends js.Object {

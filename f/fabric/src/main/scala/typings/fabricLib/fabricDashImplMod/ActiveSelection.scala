@@ -31,6 +31,7 @@ class ActiveSelection ()
   def toGroup(): Group = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "ActiveSelection")
 @js.native
 object ActiveSelection extends js.Object {

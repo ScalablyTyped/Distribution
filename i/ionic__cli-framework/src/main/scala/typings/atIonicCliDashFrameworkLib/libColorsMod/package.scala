@@ -7,5 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object libColorsMod {
   type ColorFunction = js.Function1[/* repeated */ java.lang.String, java.lang.String]
-  type LoggerColors = atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.LoggerColors with js.Any
+  type LoggerColors = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ L in @ionic/cli-framework.@ionic/cli-framework/lib/logger.LoggerLevel ]: @ionic/cli-framework.@ionic/cli-framework/lib/colors.ColorFunction}
+    */ atIonicCliDashFrameworkLib.atIonicCliDashFrameworkLibStrings.LoggerColors with js.Any
 }

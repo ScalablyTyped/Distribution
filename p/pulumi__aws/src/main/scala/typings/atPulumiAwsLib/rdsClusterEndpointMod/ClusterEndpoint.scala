@@ -48,6 +48,7 @@ class ClusterEndpoint protected ()
   val staticMembers: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint")
 @js.native
 object ClusterEndpoint extends js.Object {

@@ -63,11 +63,7 @@ object nativepagesNs extends js.Object {
     val layoutQualifiedName: java.lang.String = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object NativeLayout extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -79,11 +75,7 @@ object nativepagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayout = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.21.0: introduced
-    */
+  /* static members */
   @js.native
   object NativePage extends js.Object {
     var structureTypeName: java.lang.String = js.native

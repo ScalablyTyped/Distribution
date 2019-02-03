@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AntDesign ()
   extends reactDashNativeDashVectorDashIconsLib.iconMod.Icon
 
+/* static members */
 @JSImport("@expo/vector-icons", "AntDesign")
 @js.native
 object AntDesign extends js.Object {

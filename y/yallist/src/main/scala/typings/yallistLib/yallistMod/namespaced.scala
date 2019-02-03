@@ -15,6 +15,7 @@ class namespaced[T] () extends Yallist[T] {
   override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
 }
 
+/* static members */
 @JSImport("yallist", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

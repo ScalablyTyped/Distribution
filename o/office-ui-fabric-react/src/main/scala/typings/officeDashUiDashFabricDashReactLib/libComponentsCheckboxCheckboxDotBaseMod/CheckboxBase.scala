@@ -39,6 +39,7 @@ class CheckboxBase protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Checkbox/Checkbox.base", "CheckboxBase")
 @js.native
 object CheckboxBase extends js.Object {

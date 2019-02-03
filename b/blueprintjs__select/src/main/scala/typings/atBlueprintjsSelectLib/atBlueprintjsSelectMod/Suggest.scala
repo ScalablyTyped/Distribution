@@ -13,6 +13,7 @@ class Suggest[T] protected ()
   def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[T], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/select", "Suggest")
 @js.native
 object Suggest extends js.Object {

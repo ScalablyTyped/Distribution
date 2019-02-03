@@ -25,6 +25,7 @@ class LoadItem () extends js.Object {
   def set(props: js.Object): LoadItem = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.LoadItem")
 @js.native
 object LoadItem extends js.Object {

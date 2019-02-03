@@ -16,6 +16,7 @@ class SymmetricKeyAlgorithmProvider () extends ISymmetricKeyAlgorithmProvider {
   override def createSymmetricKey(keyMaterial: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.SymmetricKeyAlgorithmProvider")
 @js.native
 object SymmetricKeyAlgorithmProvider extends js.Object {

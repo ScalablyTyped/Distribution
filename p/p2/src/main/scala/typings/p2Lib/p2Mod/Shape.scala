@@ -42,6 +42,7 @@ class Shape ()
   override def updateBoundingRadius(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("p2", "Shape")
 @js.native
 object Shape extends js.Object {

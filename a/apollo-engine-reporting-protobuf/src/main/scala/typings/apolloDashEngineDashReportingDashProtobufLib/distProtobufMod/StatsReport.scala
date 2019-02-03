@@ -32,6 +32,7 @@ class StatsReport () extends IStatsReport {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "StatsReport")
 @js.native
 object StatsReport extends js.Object {

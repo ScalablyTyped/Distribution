@@ -20,6 +20,7 @@ class AmiLaunchPermission protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2AmiLaunchPermissionMod.AmiLaunchPermissionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "AmiLaunchPermission")
 @js.native
 object AmiLaunchPermission extends js.Object {

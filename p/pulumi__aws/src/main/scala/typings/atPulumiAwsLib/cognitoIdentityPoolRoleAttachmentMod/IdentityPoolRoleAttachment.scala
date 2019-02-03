@@ -32,6 +32,7 @@ class IdentityPoolRoleAttachment protected ()
   val roles: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Authenticated] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/identityPoolRoleAttachment", "IdentityPoolRoleAttachment")
 @js.native
 object IdentityPoolRoleAttachment extends js.Object {

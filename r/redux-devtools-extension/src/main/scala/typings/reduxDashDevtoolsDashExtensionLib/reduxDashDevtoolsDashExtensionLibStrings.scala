@@ -9,6 +9,7 @@ object reduxDashDevtoolsDashExtensionLibStrings {
   @js.native
   sealed trait custom extends js.Object
   
+  @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
 }
 

@@ -18,6 +18,7 @@ class Tree protected () extends js.Object {
   def find(file: java.lang.String): js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Tree")
 @js.native
 object Tree extends js.Object {

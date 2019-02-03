@@ -107,6 +107,7 @@ class Layout () extends js.Object {
   /* private */ def updateNodePositions(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/layout", "Layout")
 @js.native
 object Layout extends js.Object {

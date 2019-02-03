@@ -75,6 +75,7 @@ object ecNs extends js.Object {
     var s: ellipticLib.ellipticMod.BNInput
   }
   
+  /* static members */
   @js.native
   object KeyPair extends js.Object {
     def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native

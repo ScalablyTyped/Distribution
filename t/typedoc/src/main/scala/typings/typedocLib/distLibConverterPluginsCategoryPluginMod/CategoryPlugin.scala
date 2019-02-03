@@ -13,6 +13,7 @@ class CategoryPlugin ()
   var onResolve: js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins/CategoryPlugin", "CategoryPlugin")
 @js.native
 object CategoryPlugin extends js.Object {

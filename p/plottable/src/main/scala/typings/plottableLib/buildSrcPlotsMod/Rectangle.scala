@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
 class Rectangle[X, Y] ()
   extends plottableLib.buildSrcPlotsRectanglePlotMod.Rectangle[X, Y]
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

@@ -39,10 +39,7 @@ class EasingFunction () extends IEasingFunction {
   def setEasingMode(easingMode: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Base class used for every default easing function.
-  * @see http://doc.babylonjs.com/babylon101/animations#easing-functions
-  */
+/* static members */
 @JSGlobal("BABYLON.EasingFunction")
 @js.native
 object EasingFunction extends js.Object {

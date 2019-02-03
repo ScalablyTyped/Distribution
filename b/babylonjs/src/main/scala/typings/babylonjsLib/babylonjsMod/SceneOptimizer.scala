@@ -26,10 +26,7 @@ class SceneOptimizer protected ()
   def this(scene: babylonjsLib.BABYLONNs.Scene, options: babylonjsLib.BABYLONNs.SceneOptimizerOptions, autoGeneratePriorities: scala.Boolean, improvementMode: scala.Boolean) = this()
 }
 
-/**
-  * Class used to run optimizations in order to reach a target frame rate
-  * @description More details at http://doc.babylonjs.com/how_to/how_to_use_sceneoptimizer
-  */
+/* static members */
 @JSImport("babylonjs", "SceneOptimizer")
 @js.native
 object SceneOptimizer extends js.Object {

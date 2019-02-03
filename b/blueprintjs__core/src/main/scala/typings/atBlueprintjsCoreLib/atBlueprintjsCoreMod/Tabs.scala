@@ -12,6 +12,7 @@ class Tabs ()
   def this(props: atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/core", "Tabs")
 @js.native
 object Tabs extends js.Object {

@@ -85,6 +85,7 @@ class SwatchColorPickerBase protected ()
   def componentWillUnmount_MSwatchColorPickerBase(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker/SwatchColorPicker.base", "SwatchColorPickerBase")
 @js.native
 object SwatchColorPickerBase extends js.Object {

@@ -72,6 +72,7 @@ class CachesIscsiVolume protected ()
   val volumeSizeInBytes: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/cachesIscsiVolume", "CachesIscsiVolume")
 @js.native
 object CachesIscsiVolume extends js.Object {

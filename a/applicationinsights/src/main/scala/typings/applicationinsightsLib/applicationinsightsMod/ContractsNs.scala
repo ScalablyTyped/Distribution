@@ -143,6 +143,7 @@ object ContractsNs extends js.Object {
     type DataPointType = applicationinsightsLib.outDeclarationsContractsGeneratedDataPointTypeMod.DataPointType
   }
   
+  /* static members */
   @js.native
   object RemoteDependencyDataConstants extends js.Object {
     var TYPE_AI: java.lang.String = js.native

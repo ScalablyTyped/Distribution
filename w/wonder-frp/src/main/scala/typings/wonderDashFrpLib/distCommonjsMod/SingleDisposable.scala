@@ -13,6 +13,7 @@ class SingleDisposable protected ()
   def this(dispose: wonderDashFrpLib.distCommonjsDisposableIDisposableMod.IDisposable) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "SingleDisposable")
 @js.native
 object SingleDisposable extends js.Object {

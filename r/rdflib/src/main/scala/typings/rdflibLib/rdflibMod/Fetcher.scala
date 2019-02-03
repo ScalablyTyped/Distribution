@@ -17,6 +17,7 @@ class Fetcher protected () extends js.Object {
   var timeouts: js.Any = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Fetcher")
 @js.native
 object Fetcher extends js.Object {

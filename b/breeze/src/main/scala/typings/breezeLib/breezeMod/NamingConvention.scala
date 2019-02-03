@@ -12,6 +12,7 @@ class NamingConvention protected ()
   def this(config: breezeLib.breezeNs.NamingConventionOptions) = this()
 }
 
+/* static members */
 @JSImport("breeze", "NamingConvention")
 @js.native
 object NamingConvention extends js.Object {

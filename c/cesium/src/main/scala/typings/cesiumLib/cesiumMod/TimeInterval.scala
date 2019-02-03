@@ -12,6 +12,7 @@ class TimeInterval ()
   def this(options: cesiumLib.Anon_Data) = this()
 }
 
+/* static members */
 @JSImport("cesium", "TimeInterval")
 @js.native
 object TimeInterval extends js.Object {

@@ -13,6 +13,7 @@ class Configuration[Link] protected ()
   def this(n: scala.Double, edges: js.Array[Link], linkAccessor: webcolaLib.distSrcPowergraphMod.LinkTypeAccessor[Link], rootGroup: js.Array[_]) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Configuration")
 @js.native
 object Configuration extends js.Object {

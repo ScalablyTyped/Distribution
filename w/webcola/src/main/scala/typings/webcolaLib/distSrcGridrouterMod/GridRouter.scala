@@ -39,6 +39,7 @@ class GridRouter[Node] protected () extends js.Object {
   def siblingObstacles(a: js.Any, b: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/gridrouter", "GridRouter")
 @js.native
 object GridRouter extends js.Object {

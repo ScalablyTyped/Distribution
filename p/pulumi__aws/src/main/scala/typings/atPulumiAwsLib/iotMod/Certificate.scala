@@ -20,6 +20,7 @@ class Certificate protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iotCertificateMod.CertificateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot", "Certificate")
 @js.native
 object Certificate extends js.Object {

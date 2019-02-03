@@ -12,7 +12,9 @@ object emojioneLibStrings {
   @js.native
   sealed trait svg extends js.Object
   
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
+  @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
 }
 

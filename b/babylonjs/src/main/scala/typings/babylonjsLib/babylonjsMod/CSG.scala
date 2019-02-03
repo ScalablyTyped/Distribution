@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class CSG ()
   extends babylonjsLib.BABYLONNs.CSG
 
-/**
-  * Class for building Constructive Solid Geometry
-  */
+/* static members */
 @JSImport("babylonjs", "CSG")
 @js.native
 object CSG extends js.Object {

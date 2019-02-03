@@ -21,6 +21,7 @@ class AbstractPlate protected () extends Base {
   ] = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "AbstractPlate")
 @js.native
 object AbstractPlate extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Checkout ()
   extends nodegitLib.checkoutMod.Checkout
 
+/* static members */
 @JSImport("nodegit", "Checkout")
 @js.native
 object Checkout extends js.Object {

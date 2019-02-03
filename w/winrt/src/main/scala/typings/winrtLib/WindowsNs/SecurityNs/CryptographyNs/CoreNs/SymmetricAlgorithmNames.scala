@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SymmetricAlgorithmNames () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.SymmetricAlgorithmNames")
 @js.native
 object SymmetricAlgorithmNames extends js.Object {

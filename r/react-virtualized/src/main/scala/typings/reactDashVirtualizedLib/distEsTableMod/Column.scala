@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Column ()
   extends reactLib.reactMod.Component[ColumnProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-virtualized/dist/es/Table", "Column")
 @js.native
 object Column extends js.Object {

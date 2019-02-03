@@ -93,6 +93,7 @@ object cfgNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.cfgRuleMod.RuleArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object AggregateAuthorization extends js.Object {
     /**
@@ -117,6 +118,7 @@ object cfgNs extends js.Object {
     ): atPulumiAwsLib.cfgAggregateAuthorizationMod.AggregateAuthorization = js.native
   }
   
+  /* static members */
   @js.native
   object ConfigurationAggregator extends js.Object {
     /**
@@ -141,6 +143,7 @@ object cfgNs extends js.Object {
     ): atPulumiAwsLib.cfgConfigurationAggregatorMod.ConfigurationAggregator = js.native
   }
   
+  /* static members */
   @js.native
   object DeliveryChannel extends js.Object {
     /**
@@ -165,6 +168,7 @@ object cfgNs extends js.Object {
     ): atPulumiAwsLib.cfgDeliveryChannelMod.DeliveryChannel = js.native
   }
   
+  /* static members */
   @js.native
   object Recorder extends js.Object {
     /**
@@ -189,6 +193,7 @@ object cfgNs extends js.Object {
     ): atPulumiAwsLib.cfgRecorderMod.Recorder = js.native
   }
   
+  /* static members */
   @js.native
   object RecorderStatus extends js.Object {
     /**
@@ -213,6 +218,7 @@ object cfgNs extends js.Object {
     ): atPulumiAwsLib.cfgRecorderStatusMod.RecorderStatus = js.native
   }
   
+  /* static members */
   @js.native
   object Rule extends js.Object {
     /**

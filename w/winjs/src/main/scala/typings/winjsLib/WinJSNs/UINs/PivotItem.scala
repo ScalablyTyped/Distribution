@@ -42,9 +42,7 @@ class PivotItem () extends js.Object {
   def dispose(): scala.Unit = js.native
 }
 
-/**
-  * An item within a Pivot control.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.PivotItem")
 @js.native
 object PivotItem extends js.Object {

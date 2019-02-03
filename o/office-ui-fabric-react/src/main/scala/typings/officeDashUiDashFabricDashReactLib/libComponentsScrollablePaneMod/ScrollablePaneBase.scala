@@ -12,6 +12,7 @@ class ScrollablePaneBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsScrollablePaneScrollablePaneDotTypesMod.IScrollablePaneProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ScrollablePane", "ScrollablePaneBase")
 @js.native
 object ScrollablePaneBase extends js.Object {

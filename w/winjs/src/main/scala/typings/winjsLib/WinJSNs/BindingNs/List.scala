@@ -80,9 +80,7 @@ class List[T] () extends ListBaseWithMutators[T] {
   def splice(start: scala.Double, howMany: scala.Double, item: T*): js.Array[T] = js.native
 }
 
-/**
-  * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
-  **/
+/* static members */
 @JSGlobal("WinJS.Binding.List")
 @js.native
 object List extends js.Object {

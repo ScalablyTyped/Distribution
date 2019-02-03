@@ -493,16 +493,19 @@ object gNs extends js.Object {
   def toDeg(rad: scala.Double): scala.Double = js.native
   def toRad(deg: scala.Double): scala.Double = js.native
   def toRad(deg: scala.Double, over360: scala.Boolean): scala.Double = js.native
+  /* static members */
   @js.native
   object Curve extends js.Object {
     def throughPoints(points: js.Array[jointjsLib.jointjsMod.gNs.PlainPoint]): js.Array[jointjsLib.jointjsMod.gNs.Curve] = js.native
   }
   
+  /* static members */
   @js.native
   object Ellipse extends js.Object {
     def fromRect(rect: jointjsLib.jointjsMod.gNs.PlainRect): jointjsLib.jointjsMod.gNs.Ellipse = js.native
   }
   
+  /* static members */
   @js.native
   object Path extends js.Object {
     var segmentTypes: jointjsLib.jointjsMod.gNs.SegmentTypes = js.native
@@ -511,6 +514,7 @@ object gNs extends js.Object {
     def parse(pathData: java.lang.String): jointjsLib.jointjsMod.gNs.Path = js.native
   }
   
+  /* static members */
   @js.native
   object Point extends js.Object {
     def fromPolar(distance: scala.Double, angle: scala.Double): jointjsLib.jointjsMod.gNs.Point = js.native
@@ -519,11 +523,13 @@ object gNs extends js.Object {
     def random(x1: scala.Double, x2: scala.Double, y1: scala.Double, y2: scala.Double): jointjsLib.jointjsMod.gNs.Point = js.native
   }
   
+  /* static members */
   @js.native
   object Polyline extends js.Object {
     def parse(svgString: java.lang.String): jointjsLib.jointjsMod.gNs.Polyline = js.native
   }
   
+  /* static members */
   @js.native
   object Rect extends js.Object {
     def fromEllipse(e: jointjsLib.jointjsMod.gNs.Ellipse): jointjsLib.jointjsMod.gNs.Rect = js.native

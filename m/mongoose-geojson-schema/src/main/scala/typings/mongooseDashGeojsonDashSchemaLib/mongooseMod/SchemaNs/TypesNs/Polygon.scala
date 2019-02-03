@@ -14,6 +14,7 @@ class Polygon protected ()
   def cast(geojson: js.Object): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("mongoose.Schema.Types.Polygon")
 @js.native
 object Polygon extends js.Object {

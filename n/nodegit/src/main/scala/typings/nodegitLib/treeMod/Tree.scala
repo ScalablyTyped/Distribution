@@ -66,6 +66,7 @@ class Tree () extends js.Object {
   def walk(blobsOnly: scala.Boolean): nodeLib.NodeJSNs.EventEmitter = js.native
 }
 
+/* static members */
 @JSImport("nodegit/tree", "Tree")
 @js.native
 object Tree extends js.Object {

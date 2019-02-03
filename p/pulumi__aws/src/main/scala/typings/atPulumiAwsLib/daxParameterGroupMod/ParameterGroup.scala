@@ -33,6 +33,7 @@ class ParameterGroup protected ()
   val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_Name]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dax/parameterGroup", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {

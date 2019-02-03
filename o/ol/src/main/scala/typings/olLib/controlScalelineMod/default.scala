@@ -38,19 +38,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.ScaleLineOptions) = this()
 }
 
-/**
-  * @classdesc
-  * A control displaying rough y-axis distances, calculated for the center of the
-  * viewport. For conformal projections (e.g. EPSG:3857, the default view
-  * projection in OpenLayers), the scale is valid for all directions.
-  * No scale line will be shown when the y-axis distance of a pixel at the
-  * viewport center cannot be calculated in the view projection.
-  * By default the scale line will show in the bottom left portion of the map,
-  * but this can be changed by using the css selector `.ol-scale-line`.
-  *
-  * @param opt_options Scale line options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/control/scaleline", JSImport.Default)
 @js.native
 object default extends js.Object {

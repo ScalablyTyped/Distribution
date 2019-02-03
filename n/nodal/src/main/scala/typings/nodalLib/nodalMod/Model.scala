@@ -286,6 +286,7 @@ class Model protected () extends js.Object {
   def update(fields: IAnyObject, callback: js.Function): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nodal", "Model")
 @js.native
 object Model extends js.Object {

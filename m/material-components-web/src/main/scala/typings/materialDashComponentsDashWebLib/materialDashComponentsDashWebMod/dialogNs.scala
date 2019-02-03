@@ -16,11 +16,13 @@ object dialogNs extends js.Object {
   class MDCDialogFoundation ()
     extends atMaterialDialogLib.atMaterialDialogMod.MDCDialogFoundation
   
+  /* static members */
   @js.native
   object MDCDialog extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialDialogLib.atMaterialDialogMod.MDCDialog = js.native
   }
   
+  /* static members */
   @js.native
   object MDCDialogFoundation extends js.Object {
     val cssClasses: atMaterialDialogLib.constantsMod.cssClasses = js.native

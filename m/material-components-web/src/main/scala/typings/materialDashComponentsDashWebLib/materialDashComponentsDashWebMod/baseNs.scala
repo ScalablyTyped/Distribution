@@ -21,11 +21,13 @@ object baseNs extends js.Object {
     def this(adapter: A) = this()
   }
   
+  /* static members */
   @js.native
   object MDCComponent extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialBaseLib.componentMod.MDCComponent[_, atMaterialBaseLib.foundationMod.default[_]] = js.native
   }
   
+  /* static members */
   @js.native
   object MDCFoundation extends js.Object {
     val cssClasses: atMaterialBaseLib.foundationMod.MDCStrings = js.native

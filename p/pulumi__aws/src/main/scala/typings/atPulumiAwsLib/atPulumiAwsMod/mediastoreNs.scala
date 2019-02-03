@@ -37,6 +37,7 @@ object mediastoreNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.mediastoreContainerPolicyMod.ContainerPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Container extends js.Object {
     /**
@@ -61,6 +62,7 @@ object mediastoreNs extends js.Object {
     ): atPulumiAwsLib.mediastoreContainerMod.Container = js.native
   }
   
+  /* static members */
   @js.native
   object ContainerPolicy extends js.Object {
     /**

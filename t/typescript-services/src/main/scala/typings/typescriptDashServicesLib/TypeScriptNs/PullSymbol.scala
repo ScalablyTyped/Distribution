@@ -153,6 +153,7 @@ class PullSymbol protected () extends js.Object {
   def toString(scopeSymbol: PullSymbol, useConstraintInName: scala.Boolean): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullSymbol")
 @js.native
 object PullSymbol extends js.Object {

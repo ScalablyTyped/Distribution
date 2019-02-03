@@ -12,6 +12,7 @@ class IntervalRequestStream protected ()
   def this(scheduler: wonderDashFrpLib.distEs2015CoreSchedulerMod.Scheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "IntervalRequestStream")
 @js.native
 object IntervalRequestStream extends js.Object {

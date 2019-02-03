@@ -21,6 +21,7 @@ class PivotPager protected () extends Widget {
   def initPagerProperties(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotPager")
 @js.native
 object PivotPager extends js.Object {

@@ -48,9 +48,7 @@ class Binary protected ()
   def write(string: nodeLib.Buffer, offset: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Represents a BSON Binary type
-  */
+/* static members */
 @JSGlobal("adone.data.bson.Binary")
 @js.native
 object Binary extends js.Object {

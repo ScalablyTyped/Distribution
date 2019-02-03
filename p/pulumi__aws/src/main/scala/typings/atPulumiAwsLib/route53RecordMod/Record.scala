@@ -81,6 +81,7 @@ class Record protected ()
   val zoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/record", "Record")
 @js.native
 object Record extends js.Object {

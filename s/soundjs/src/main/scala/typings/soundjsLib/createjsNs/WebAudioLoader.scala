@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebAudioLoader () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.WebAudioLoader")
 @js.native
 object WebAudioLoader extends js.Object {

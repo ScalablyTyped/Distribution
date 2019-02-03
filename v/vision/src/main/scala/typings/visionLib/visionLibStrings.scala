@@ -12,7 +12,9 @@ object visionLibStrings {
   @js.native
   sealed trait sync extends js.Object
   
+  @scala.inline
   def async: async = "async".asInstanceOf[async]
+  @scala.inline
   def sync: sync = "sync".asInstanceOf[sync]
 }
 

@@ -18,6 +18,7 @@ class StorageFolder ()
   override def tryGetItemAsync(name: java.lang.String): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[IStorageItem] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Storage.StorageFolder")
 @js.native
 object StorageFolder extends js.Object {

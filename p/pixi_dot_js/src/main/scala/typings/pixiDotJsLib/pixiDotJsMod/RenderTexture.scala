@@ -13,6 +13,7 @@ class RenderTexture protected ()
   def this(baseRenderTexture: pixiDotJsLib.PIXINs.BaseRenderTexture, frame: pixiDotJsLib.PIXINs.Rectangle) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "RenderTexture")
 @js.native
 object RenderTexture extends js.Object {

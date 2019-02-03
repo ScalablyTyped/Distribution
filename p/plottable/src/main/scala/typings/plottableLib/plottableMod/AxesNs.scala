@@ -60,6 +60,7 @@ object AxesNs extends js.Object {
   val TierLabelPosition: plottableLib.Anon_Between = js.native
   val TimeAxisOrientation: plottableLib.Anon_BottomTop = js.native
   val TimeInterval: plottableLib.Anon_Day = js.native
+  /* static members */
   @js.native
   object Category extends js.Object {
     /**
@@ -68,6 +69,7 @@ object AxesNs extends js.Object {
     var _MINIMUM_WIDTH_PER_LABEL_PX: js.Any = js.native
   }
   
+  /* static members */
   @js.native
   object Time extends js.Object {
     /**

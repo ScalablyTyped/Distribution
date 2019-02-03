@@ -13,6 +13,7 @@ class PublishingWeb ()
   def get_web(): sharepointLib.SPNs.Web = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Publishing.PublishingWeb")
 @js.native
 object PublishingWeb extends js.Object {

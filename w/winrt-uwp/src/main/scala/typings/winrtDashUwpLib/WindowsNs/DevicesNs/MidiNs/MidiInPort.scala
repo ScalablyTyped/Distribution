@@ -32,7 +32,7 @@ abstract class MidiInPort () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a port used to receive MIDI messages from a MIDI device. */
+/* static members */
 @JSGlobal("Windows.Devices.Midi.MidiInPort")
 @js.native
 object MidiInPort extends js.Object {

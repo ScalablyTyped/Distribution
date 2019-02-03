@@ -17,6 +17,7 @@ class SplitView protected () extends Widget {
   def expandPanes(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.SplitView")
 @js.native
 object SplitView extends js.Object {

@@ -17,6 +17,7 @@ class CommitStats protected () extends js.Object {
   var total: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "CommitStats")
 @js.native
 object CommitStats extends js.Object {

@@ -12,6 +12,7 @@ class EnumElementSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, equalsValueClause: typescriptDashServicesLib.TypeScriptNs.EqualsValueClauseSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "EnumElementSyntax")
 @js.native
 object EnumElementSyntax extends js.Object {

@@ -35,6 +35,7 @@ class CommandBarBase ()
   override def remeasure(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/CommandBar/CommandBar.base", "CommandBarBase")
 @js.native
 object CommandBarBase extends js.Object {

@@ -70,7 +70,7 @@ class CollisionCoordinatorWorker () extends ICollisionCoordinator {
   def onMeshUpdated(transformNode: TransformNode): scala.Unit = js.native
 }
 
-/** @hidden */
+/* static members */
 @JSGlobal("BABYLON.CollisionCoordinatorWorker")
 @js.native
 object CollisionCoordinatorWorker extends js.Object {

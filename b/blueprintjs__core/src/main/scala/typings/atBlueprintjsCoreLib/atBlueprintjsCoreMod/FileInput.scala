@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FileInput ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.FileInput
 
+/* static members */
 @JSImport("@blueprintjs/core", "FileInput")
 @js.native
 object FileInput extends js.Object {

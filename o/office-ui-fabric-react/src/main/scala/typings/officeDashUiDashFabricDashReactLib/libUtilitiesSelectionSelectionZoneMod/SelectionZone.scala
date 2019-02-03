@@ -69,6 +69,7 @@ class SelectionZone ()
   def ignoreNextFocus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/utilities/selection/SelectionZone", "SelectionZone")
 @js.native
 object SelectionZone extends js.Object {

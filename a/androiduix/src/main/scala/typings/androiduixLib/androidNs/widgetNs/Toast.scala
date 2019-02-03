@@ -28,6 +28,7 @@ class Toast protected () extends js.Object {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.Toast")
 @js.native
 object Toast extends js.Object {

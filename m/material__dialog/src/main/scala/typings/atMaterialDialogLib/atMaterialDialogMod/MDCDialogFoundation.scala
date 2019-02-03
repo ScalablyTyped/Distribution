@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCDialogFoundation ()
   extends atMaterialDialogLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/dialog", "MDCDialogFoundation")
 @js.native
 object MDCDialogFoundation extends js.Object {

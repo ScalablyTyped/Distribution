@@ -24,9 +24,7 @@ class Vector2 ()
   y: scala.Double) = this()
 }
 
-/**
-  * Class representing a vector containing 2 coordinates
-  */
+/* static members */
 @JSImport("babylonjs", "Vector2")
 @js.native
 object Vector2 extends js.Object {

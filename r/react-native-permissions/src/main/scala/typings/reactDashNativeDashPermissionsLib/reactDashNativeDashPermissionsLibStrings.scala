@@ -18,9 +18,13 @@ object reactDashNativeDashPermissionsLibStrings {
   @js.native
   sealed trait undetermined extends js.Object
   
+  @scala.inline
   def authorized: authorized = "authorized".asInstanceOf[authorized]
+  @scala.inline
   def denied: denied = "denied".asInstanceOf[denied]
+  @scala.inline
   def restricted: restricted = "restricted".asInstanceOf[restricted]
+  @scala.inline
   def undetermined: undetermined = "undetermined".asInstanceOf[undetermined]
 }
 

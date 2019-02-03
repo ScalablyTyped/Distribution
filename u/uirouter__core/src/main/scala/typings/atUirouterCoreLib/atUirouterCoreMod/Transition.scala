@@ -24,6 +24,7 @@ class Transition protected ()
   def this(fromPath: js.Array[atUirouterCoreLib.libPathPathNodeMod.PathNode], targetState: atUirouterCoreLib.libStateTargetStateMod.TargetState, router: atUirouterCoreLib.libRouterMod.UIRouter) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "Transition")
 @js.native
 object Transition extends js.Object {

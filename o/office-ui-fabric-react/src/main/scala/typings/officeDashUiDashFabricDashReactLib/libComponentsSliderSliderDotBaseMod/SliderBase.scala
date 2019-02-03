@@ -36,6 +36,7 @@ class SliderBase protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Slider/Slider.base", "SliderBase")
 @js.native
 object SliderBase extends js.Object {

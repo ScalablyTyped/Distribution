@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Bounds ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Bounds
 
+/* static members */
 @JSImport("matter-js", "Bounds")
 @js.native
 object Bounds extends js.Object {

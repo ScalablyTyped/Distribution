@@ -43,6 +43,7 @@ class SelectQueryRules () extends js.Object {
   def toRawObject(): nodeDashMysqlDashWrapperLib.RawRules = js.native
 }
 
+/* static members */
 @JSImport("node-mysql-wrapper", "SelectQueryRules")
 @js.native
 object SelectQueryRules extends js.Object {

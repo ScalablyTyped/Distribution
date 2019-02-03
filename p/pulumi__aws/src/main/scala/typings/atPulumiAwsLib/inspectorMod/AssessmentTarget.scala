@@ -21,6 +21,7 @@ class AssessmentTarget protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.inspectorAssessmentTargetMod.AssessmentTargetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/inspector", "AssessmentTarget")
 @js.native
 object AssessmentTarget extends js.Object {

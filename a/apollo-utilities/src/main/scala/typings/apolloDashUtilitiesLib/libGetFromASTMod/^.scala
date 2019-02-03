@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-utilities/lib/getFromAST", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): scala.Unit = js.native
+  def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def createFragmentMap(): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
   def createFragmentMap(fragments: js.Array[graphqlLib.languageAstMod.FragmentDefinitionNode]): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
   def getDefaultValues(): org.scalablytyped.runtime.StringDictionary[apolloDashUtilitiesLib.libStoreUtilsMod.JsonValue] = js.native

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ApplicationViewSwitcher () extends js.Object
 
-/** Represents the app view switching behaviors for an app. */
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationViewSwitcher")
 @js.native
 object ApplicationViewSwitcher extends js.Object {

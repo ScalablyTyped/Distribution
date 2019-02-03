@@ -39,6 +39,7 @@ class Revwalk () extends js.Object {
   def walk(oid: nodegitLib.oidMod.Oid, callback: js.Function): nodegitLib.commitMod.Commit = js.native
 }
 
+/* static members */
 @JSImport("nodegit/rev-walk", "Revwalk")
 @js.native
 object Revwalk extends js.Object {

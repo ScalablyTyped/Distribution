@@ -13,6 +13,7 @@ class State protected () extends js.Object {
   var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("node-zookeeper-client", "State")
 @js.native
 object State extends js.Object {

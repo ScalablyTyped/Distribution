@@ -20,6 +20,7 @@ class Volume protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ebsVolumeMod.VolumeArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ebs", "Volume")
 @js.native
 object Volume extends js.Object {

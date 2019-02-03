@@ -41,6 +41,7 @@ object TransactionNs extends js.Object {
     def toObject(): this.type = js.native
   }
   
+  /* static members */
   @js.native
   object UnspentOutput extends js.Object {
     def fromObject(o: js.Object): bitcoreDashLibLib.bitcoreDashLibMod.TransactionNs.UnspentOutput = js.native

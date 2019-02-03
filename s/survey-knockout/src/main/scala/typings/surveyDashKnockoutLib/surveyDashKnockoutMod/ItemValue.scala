@@ -30,6 +30,7 @@ class ItemValue protected ()
   def setLocText(locText: LocalizableString): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "ItemValue")
 @js.native
 object ItemValue extends js.Object {

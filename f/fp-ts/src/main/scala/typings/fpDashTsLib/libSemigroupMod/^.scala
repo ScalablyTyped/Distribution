@@ -25,6 +25,10 @@ object ^ extends js.Object {
   def getMeetSemigroup[A](O: fpDashTsLib.libOrdMod.Ord[A]): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getObjectSemigroup[A /* <: js.Object */](): fpDashTsLib.libSemigroupMod.Semigroup[A] = js.native
   def getProductSemigroup[A, B](SA: fpDashTsLib.libSemigroupMod.Semigroup[A], SB: fpDashTsLib.libSemigroupMod.Semigroup[B]): fpDashTsLib.libSemigroupMod.Semigroup[js.Tuple2[A, B]] = js.native
-  def getRecordSemigroup[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](semigroups: fpDashTsLib.fpDashTsLibStrings.getRecordSemigroup with O): fpDashTsLib.libSemigroupMod.Semigroup[O] = js.native
+  def getRecordSemigroup[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
+    semigroups: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof O ]: fp-ts.fp-ts/lib/Semigroup.Semigroup<O[K]>}
+    */ fpDashTsLib.fpDashTsLibStrings.getRecordSemigroup with O
+  ): fpDashTsLib.libSemigroupMod.Semigroup[O] = js.native
 }
 

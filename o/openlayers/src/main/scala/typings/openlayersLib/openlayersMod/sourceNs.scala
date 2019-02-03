@@ -1403,13 +1403,7 @@ object sourceNs extends js.Object {
     def this(opt_options: openlayersLib.openlayersMod.olxNs.sourceNs.ZoomifyOptions) = this()
   }
   
-  /**
-    * @classdesc
-    * Layer source for Bing Maps tile data.
-    *
-    * @param options Bing Maps options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object BingMaps extends js.Object {
     /**
@@ -1421,13 +1415,7 @@ object sourceNs extends js.Object {
     var TOS_ATTRIBUTION: openlayersLib.openlayersMod.Attribution = js.native
   }
   
-  /**
-    * @classdesc
-    * Layer source for the OpenStreetMap tile server.
-    *
-    * @param opt_options Open Street Map options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object OSM extends js.Object {
     /**
@@ -1439,13 +1427,7 @@ object sourceNs extends js.Object {
     var ATTRIBUTION: openlayersLib.openlayersMod.Attribution = js.native
   }
   
-  /**
-    * @classdesc
-    * Layer source for tile data from WMTS servers.
-    *
-    * @param options WMTS options.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object WMTS extends js.Object {
     /**

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Converter ()
   extends awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.Converter
 
+/* static members */
 @JSImport("aws-sdk/clients/dynamodb", "Converter")
 @js.native
 object Converter extends js.Object {

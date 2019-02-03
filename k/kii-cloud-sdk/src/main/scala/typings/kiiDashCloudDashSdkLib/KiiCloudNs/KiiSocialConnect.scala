@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiSocialConnect () extends js.Object
 
-/**
-  * Represents a KiiSocialConnect object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiSocialConnect")
 @js.native
 object KiiSocialConnect extends js.Object {

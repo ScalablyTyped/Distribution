@@ -31,9 +31,7 @@ class VertexBuffer protected ()
   def this(engine: js.Any, data: babylonjsLib.BABYLONNs.DataArray, kind: java.lang.String, updatable: scala.Boolean, postponeInternalCreation: js.UndefOr[scala.Boolean], stride: js.UndefOr[scala.Double], instanced: js.UndefOr[scala.Boolean], offset: js.UndefOr[scala.Double], size: js.UndefOr[scala.Double], `type`: js.UndefOr[scala.Double], normalized: js.UndefOr[scala.Boolean], useBytes: js.UndefOr[scala.Boolean]) = this()
 }
 
-/**
-  * Specialized buffer used to store vertex data
-  */
+/* static members */
 @JSImport("babylonjs", "VertexBuffer")
 @js.native
 object VertexBuffer extends js.Object {

@@ -124,7 +124,7 @@ class DataReader protected () extends js.Object {
   def readUInt64(): scala.Double = js.native
 }
 
-/** Reads data from an input stream. */
+/* static members */
 @JSGlobal("Windows.Storage.Streams.DataReader")
 @js.native
 object DataReader extends js.Object {

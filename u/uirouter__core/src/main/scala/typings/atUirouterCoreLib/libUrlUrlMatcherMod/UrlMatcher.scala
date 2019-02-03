@@ -118,6 +118,7 @@ class UrlMatcher protected () extends js.Object {
   def validates(params: atUirouterCoreLib.libParamsInterfaceMod.RawParams): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/url/urlMatcher", "UrlMatcher")
 @js.native
 object UrlMatcher extends js.Object {

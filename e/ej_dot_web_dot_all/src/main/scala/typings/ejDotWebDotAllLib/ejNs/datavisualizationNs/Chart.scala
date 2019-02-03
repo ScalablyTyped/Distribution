@@ -40,6 +40,7 @@ class Chart protected ()
   def redraw(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Chart")
 @js.native
 object Chart extends js.Object {

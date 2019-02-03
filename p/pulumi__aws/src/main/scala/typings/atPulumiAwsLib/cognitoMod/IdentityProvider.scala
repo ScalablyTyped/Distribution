@@ -20,6 +20,7 @@ class IdentityProvider protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProviderArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "IdentityProvider")
 @js.native
 object IdentityProvider extends js.Object {

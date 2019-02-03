@@ -16,6 +16,7 @@ class Field ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IField) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "Field")
 @js.native
 object Field extends js.Object {

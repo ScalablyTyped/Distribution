@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class PanoramaToCubeMapTools ()
   extends babylonjsLib.BABYLONNs.PanoramaToCubeMapTools
 
-/**
-  * Helper class usefull to convert panorama picture to their cubemap representation in 6 faces.
-  */
+/* static members */
 @JSImport("babylonjs", "PanoramaToCubeMapTools")
 @js.native
 object PanoramaToCubeMapTools extends js.Object {

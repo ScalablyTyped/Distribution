@@ -21,10 +21,15 @@ object multipartyLibStrings {
   @js.native
   sealed trait progress extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def field: field = "field".asInstanceOf[field]
+  @scala.inline
   def part: part = "part".asInstanceOf[part]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
 }
 

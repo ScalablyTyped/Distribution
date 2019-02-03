@@ -16,6 +16,7 @@ class Logger protected ()
   def this(id: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/cli", "Logger")
 @js.native
 object Logger extends js.Object {

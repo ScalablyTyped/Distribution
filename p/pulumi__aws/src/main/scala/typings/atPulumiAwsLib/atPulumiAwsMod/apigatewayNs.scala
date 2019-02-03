@@ -355,6 +355,7 @@ object apigatewayNs extends js.Object {
     args: atPulumiAwsLib.apigatewayGetVpcLinkMod.GetVpcLinkArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.apigatewayGetVpcLinkMod.GetVpcLinkResult] = js.native
+  /* static members */
   @js.native
   object Account extends js.Object {
     /**
@@ -379,6 +380,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayAccountMod.Account = js.native
   }
   
+  /* static members */
   @js.native
   object ApiKey extends js.Object {
     /**
@@ -403,6 +405,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayApiKeyMod.ApiKey = js.native
   }
   
+  /* static members */
   @js.native
   object Authorizer extends js.Object {
     /**
@@ -427,6 +430,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayAuthorizerMod.Authorizer = js.native
   }
   
+  /* static members */
   @js.native
   object BasePathMapping extends js.Object {
     /**
@@ -451,6 +455,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayBasePathMappingMod.BasePathMapping = js.native
   }
   
+  /* static members */
   @js.native
   object ClientCertificate extends js.Object {
     /**
@@ -475,6 +480,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayClientCertificateMod.ClientCertificate = js.native
   }
   
+  /* static members */
   @js.native
   object Deployment extends js.Object {
     /**
@@ -499,6 +505,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayDeploymentMod.Deployment = js.native
   }
   
+  /* static members */
   @js.native
   object DocumentationPart extends js.Object {
     /**
@@ -523,6 +530,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPart = js.native
   }
   
+  /* static members */
   @js.native
   object DocumentationVersion extends js.Object {
     /**
@@ -547,6 +555,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayDocumentationVersionMod.DocumentationVersion = js.native
   }
   
+  /* static members */
   @js.native
   object DomainName extends js.Object {
     /**
@@ -571,6 +580,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayDomainNameMod.DomainName = js.native
   }
   
+  /* static members */
   @js.native
   object Integration extends js.Object {
     /**
@@ -595,6 +605,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayIntegrationMod.Integration = js.native
   }
   
+  /* static members */
   @js.native
   object IntegrationResponse extends js.Object {
     /**
@@ -619,6 +630,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayIntegrationResponseMod.IntegrationResponse = js.native
   }
   
+  /* static members */
   @js.native
   object Method extends js.Object {
     /**
@@ -643,6 +655,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayMethodMod.Method = js.native
   }
   
+  /* static members */
   @js.native
   object MethodResponse extends js.Object {
     /**
@@ -667,6 +680,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayMethodResponseMod.MethodResponse = js.native
   }
   
+  /* static members */
   @js.native
   object MethodSettings extends js.Object {
     /**
@@ -691,6 +705,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayMethodSettingsMod.MethodSettings = js.native
   }
   
+  /* static members */
   @js.native
   object Model extends js.Object {
     /**
@@ -715,6 +730,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayModelMod.Model = js.native
   }
   
+  /* static members */
   @js.native
   object RequestValidator extends js.Object {
     /**
@@ -739,6 +755,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayRequestValidatorMod.RequestValidator = js.native
   }
   
+  /* static members */
   @js.native
   object Resource extends js.Object {
     /**
@@ -763,6 +780,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayResourceMod.Resource = js.native
   }
   
+  /* static members */
   @js.native
   object Response extends js.Object {
     /**
@@ -787,6 +805,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayResponseMod.Response = js.native
   }
   
+  /* static members */
   @js.native
   object RestApi extends js.Object {
     /**
@@ -811,6 +830,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayRestApiMod.RestApi = js.native
   }
   
+  /* static members */
   @js.native
   object Stage extends js.Object {
     /**
@@ -835,6 +855,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayStageMod.Stage = js.native
   }
   
+  /* static members */
   @js.native
   object UsagePlan extends js.Object {
     /**
@@ -859,6 +880,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlan = js.native
   }
   
+  /* static members */
   @js.native
   object UsagePlanKey extends js.Object {
     /**
@@ -883,6 +905,7 @@ object apigatewayNs extends js.Object {
     ): atPulumiAwsLib.apigatewayUsagePlanKeyMod.UsagePlanKey = js.native
   }
   
+  /* static members */
   @js.native
   object VpcLink extends js.Object {
     /**

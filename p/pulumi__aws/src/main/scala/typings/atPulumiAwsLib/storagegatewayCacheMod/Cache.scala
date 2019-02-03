@@ -28,6 +28,7 @@ class Cache protected ()
   val gatewayArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/cache", "Cache")
 @js.native
 object Cache extends js.Object {

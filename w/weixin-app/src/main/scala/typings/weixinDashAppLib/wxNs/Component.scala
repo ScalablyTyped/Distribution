@@ -67,9 +67,15 @@ trait Component[D, P, B /* <: js.Array[(Behavior[js.Object, js.Object, js.Object
   		 * @param data object 以 key，value 的形式表示将 this.data 中的 key 对应的值改变成 value
   		 * @param [callback] callback 是一个回调函数，在这次setData对界面渲染完毕后调用
   		 */
-  def setData(data: weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any): scala.Unit = js.native
   def setData(
-    data: weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any,
+    data: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any
+  ): scala.Unit = js.native
+  def setData(
+    data: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof D ]:? string | number | boolean | symbol | object | null | std.Array<any>}
+    */ weixinDashAppLib.weixinDashAppLibStrings.Component with js.Any,
     callback: js.Function0[scala.Unit]
   ): scala.Unit = js.native
   /**

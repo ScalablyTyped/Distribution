@@ -61,6 +61,7 @@ class Gateway protected ()
   val tapeDriveType: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/gateway", "Gateway")
 @js.native
 object Gateway extends js.Object {

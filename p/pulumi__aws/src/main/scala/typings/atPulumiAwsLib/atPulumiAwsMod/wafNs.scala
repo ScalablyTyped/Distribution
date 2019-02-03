@@ -184,6 +184,7 @@ object wafNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.wafXssMatchSetMod.XssMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ByteMatchSet extends js.Object {
     /**
@@ -208,6 +209,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafByteMatchSetMod.ByteMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object GeoMatchSet extends js.Object {
     /**
@@ -232,6 +234,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafGeoMatchSetMod.GeoMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object IpSet extends js.Object {
     /**
@@ -256,6 +259,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafIpSetMod.IpSet = js.native
   }
   
+  /* static members */
   @js.native
   object RateBasedRule extends js.Object {
     /**
@@ -280,6 +284,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafRateBasedRuleMod.RateBasedRule = js.native
   }
   
+  /* static members */
   @js.native
   object RegexMatchSet extends js.Object {
     /**
@@ -304,6 +309,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafRegexMatchSetMod.RegexMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object RegexPatternSet extends js.Object {
     /**
@@ -328,6 +334,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafRegexPatternSetMod.RegexPatternSet = js.native
   }
   
+  /* static members */
   @js.native
   object Rule extends js.Object {
     /**
@@ -352,6 +359,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafRuleMod.Rule = js.native
   }
   
+  /* static members */
   @js.native
   object RuleGroup extends js.Object {
     /**
@@ -376,6 +384,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafRuleGroupMod.RuleGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SizeConstraintSet extends js.Object {
     /**
@@ -400,6 +409,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafSizeConstraintSetMod.SizeConstraintSet = js.native
   }
   
+  /* static members */
   @js.native
   object SqlInjectionMatchSet extends js.Object {
     /**
@@ -424,6 +434,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafSqlInjectionMatchSetMod.SqlInjectionMatchSet = js.native
   }
   
+  /* static members */
   @js.native
   object WebAcl extends js.Object {
     /**
@@ -448,6 +459,7 @@ object wafNs extends js.Object {
     ): atPulumiAwsLib.wafWebAclMod.WebAcl = js.native
   }
   
+  /* static members */
   @js.native
   object XssMatchSet extends js.Object {
     /**

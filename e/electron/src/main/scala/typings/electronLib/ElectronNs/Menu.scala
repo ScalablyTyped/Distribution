@@ -77,6 +77,7 @@ class Menu () extends js.Object {
   ): this.type = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.Menu")
 @js.native
 object Menu extends js.Object {

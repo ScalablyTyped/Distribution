@@ -156,7 +156,7 @@ abstract class StoreContext () extends js.Object {
   def requestPurchaseAsync(storeId: java.lang.String, storePurchaseProperties: StorePurchaseProperties): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[StorePurchaseResult] = js.native
 }
 
-/** Provides members you can use to access and manage Windows Store-related data for the current app. For example, you can use members of this class to get Windows Store listing and license info for the current app, purchase the current app or products that are offered by the app, or download and install package updates for the app. */
+/* static members */
 @JSGlobal("Windows.Services.Store.StoreContext")
 @js.native
 object StoreContext extends js.Object {

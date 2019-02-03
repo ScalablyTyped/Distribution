@@ -73,7 +73,7 @@ abstract class Gamepad () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a game controller. */
+/* static members */
 @JSGlobal("Windows.Gaming.Input.Gamepad")
 @js.native
 object Gamepad extends js.Object {

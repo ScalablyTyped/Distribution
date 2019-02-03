@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StateSet () extends js.Object
 
+/* static members */
 @JSGlobal("android.util.StateSet")
 @js.native
 object StateSet extends js.Object {

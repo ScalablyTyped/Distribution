@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AutoDetachObserver ()
   extends wonderDashFrpLib.distEs2015CoreObserverMod.Observer
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/AutoDetachObserver", "AutoDetachObserver")
 @js.native
 object AutoDetachObserver extends js.Object {

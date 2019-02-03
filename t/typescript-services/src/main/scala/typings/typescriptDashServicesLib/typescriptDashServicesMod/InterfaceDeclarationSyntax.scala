@@ -12,6 +12,7 @@ class InterfaceDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, interfaceKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeParameterList: typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, heritageClauses: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, body: typescriptDashServicesLib.TypeScriptNs.ObjectTypeSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "InterfaceDeclarationSyntax")
 @js.native
 object InterfaceDeclarationSyntax extends js.Object {

@@ -21,6 +21,7 @@ class NgIf protected () extends js.Object {
   var ngIfThen: atAngularCoreLib.atAngularCoreMod.TemplateRef[NgIfContext] | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("@angular/common/src/directives/ng_if", "NgIf")
 @js.native
 object NgIf extends js.Object {

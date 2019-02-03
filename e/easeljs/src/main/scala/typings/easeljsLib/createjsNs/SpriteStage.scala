@@ -20,6 +20,7 @@ class SpriteStage protected () extends Stage {
   def updateViewport(width: scala.Double, height: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.SpriteStage")
 @js.native
 object SpriteStage extends js.Object {

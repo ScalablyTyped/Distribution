@@ -15,9 +15,7 @@ class N1qlQuery () extends js.Object {
   var __nominal: scala.Unit = js.native
 }
 
-/**
-  * Class for dynamically construction of N1QL queries. This class should never be constructed directly, instead you should use the N1qlQuery.fromString static method to instantiate a N1qlStringQuery.
-  */
+/* static members */
 @JSImport("couchbase", "N1qlQuery")
 @js.native
 object N1qlQuery extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RandomAccessStream () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.Streams.RandomAccessStream")
 @js.native
 object RandomAccessStream extends js.Object {

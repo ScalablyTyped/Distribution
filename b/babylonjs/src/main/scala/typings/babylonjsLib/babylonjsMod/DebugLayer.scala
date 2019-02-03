@@ -24,11 +24,7 @@ class DebugLayer protected ()
   def this(scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The debug layer (aka Inspector) is the go to tool in order to better understand
-  * what is happening in your scene
-  * @see http://doc.babylonjs.com/features/playground_debuglayer
-  */
+/* static members */
 @JSImport("babylonjs", "DebugLayer")
 @js.native
 object DebugLayer extends js.Object {

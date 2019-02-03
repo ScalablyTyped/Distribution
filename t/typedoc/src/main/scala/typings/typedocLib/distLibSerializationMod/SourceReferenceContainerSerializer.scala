@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SourceReferenceContainerSerializer ()
   extends typedocLib.distLibSerializationSerializersMod.SourceReferenceContainerSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization", "SourceReferenceContainerSerializer")
 @js.native
 object SourceReferenceContainerSerializer extends js.Object {

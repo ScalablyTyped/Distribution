@@ -12,6 +12,7 @@ class Extractor protected ()
   def this(host: atAngularCompilerLib.srcI18nExtractorMod.ExtractorHost, staticSymbolResolver: atAngularCompilerLib.srcAotStaticUnderscoreSymbolUnderscoreResolverMod.StaticSymbolResolver, messageBundle: atAngularCompilerLib.srcI18nMessageUnderscoreBundleMod.MessageBundle, metadataResolver: atAngularCompilerLib.srcMetadataUnderscoreResolverMod.CompileMetadataResolver) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/compiler", "Extractor")
 @js.native
 object Extractor extends js.Object {

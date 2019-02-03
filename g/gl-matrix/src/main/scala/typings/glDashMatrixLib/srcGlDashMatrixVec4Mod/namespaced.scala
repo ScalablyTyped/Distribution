@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class namespaced ()
   extends glDashMatrixLib.glDashMatrixMod.vec4
 
+/* static members */
 @JSImport("gl-matrix/src/gl-matrix/vec4", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

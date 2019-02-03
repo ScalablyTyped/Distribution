@@ -12,7 +12,9 @@ object cookieLibStrings {
   @js.native
   sealed trait strict extends js.Object
   
+  @scala.inline
   def lax: lax = "lax".asInstanceOf[lax]
+  @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
 }
 

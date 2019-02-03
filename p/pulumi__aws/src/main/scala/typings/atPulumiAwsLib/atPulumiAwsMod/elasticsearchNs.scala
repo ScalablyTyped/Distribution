@@ -37,6 +37,7 @@ object elasticsearchNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.elasticsearchDomainPolicyMod.DomainPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Domain extends js.Object {
     /**
@@ -61,6 +62,7 @@ object elasticsearchNs extends js.Object {
     ): atPulumiAwsLib.elasticsearchDomainMod.Domain = js.native
   }
   
+  /* static members */
   @js.native
   object DomainPolicy extends js.Object {
     /**

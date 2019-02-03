@@ -12,6 +12,7 @@ class CorridorGeometry protected ()
   def this(options: cesiumLib.Anon_CornerType) = this()
 }
 
+/* static members */
 @JSImport("cesium", "CorridorGeometry")
 @js.native
 object CorridorGeometry extends js.Object {

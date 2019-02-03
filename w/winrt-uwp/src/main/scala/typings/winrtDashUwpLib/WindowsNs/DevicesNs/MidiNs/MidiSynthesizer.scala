@@ -29,7 +29,7 @@ abstract class MidiSynthesizer () extends js.Object {
   def sendMessage(midiMessage: IMidiMessage): scala.Unit = js.native
 }
 
-/** Represents the Microsoft GS wavetable software synthesizer, included in Windows. This synthesizer provides a Roland GS sound set, which includes and extends the General MIDI sound set. */
+/* static members */
 @JSGlobal("Windows.Devices.Midi.MidiSynthesizer")
 @js.native
 object MidiSynthesizer extends js.Object {

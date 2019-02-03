@@ -12,6 +12,7 @@ class GeckoDriver ()
   def this(opt_alternativeCdn: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries/gecko_driver", "GeckoDriver")
 @js.native
 object GeckoDriver extends js.Object {

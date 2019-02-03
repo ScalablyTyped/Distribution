@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PluginManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.PluginManager")
 @js.native
 object PluginManager extends js.Object {

@@ -18,6 +18,7 @@ class SvgPlate () extends AbstractPlate {
   ] = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "SvgPlate")
 @js.native
 object SvgPlate extends js.Object {

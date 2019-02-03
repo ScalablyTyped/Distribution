@@ -18,6 +18,7 @@ class WebElement protected ()
   def this(driver: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, id: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String]) = this()
 }
 
+/* static members */
 @JSImport("protractor", "WebElement")
 @js.native
 object WebElement extends js.Object {

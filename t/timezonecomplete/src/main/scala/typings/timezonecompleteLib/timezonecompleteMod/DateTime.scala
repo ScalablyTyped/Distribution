@@ -88,6 +88,7 @@ class DateTime ()
   def this(year: scala.Double, month: scala.Double, day: scala.Double, hour: scala.Double, minute: scala.Double, second: scala.Double, millisecond: scala.Double, timeZone: timezonecompleteLib.distLibTimezoneMod.TimeZone) = this()
 }
 
+/* static members */
 @JSImport("timezonecomplete", "DateTime")
 @js.native
 object DateTime extends js.Object {

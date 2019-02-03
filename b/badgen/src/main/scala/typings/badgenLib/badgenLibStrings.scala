@@ -42,17 +42,29 @@ object badgenLibStrings {
   @js.native
   sealed trait yellow extends js.Object
   
+  @scala.inline
   def black: black = "black".asInstanceOf[black]
+  @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
+  @scala.inline
   def cyan: cyan = "cyan".asInstanceOf[cyan]
+  @scala.inline
   def flat: flat = "flat".asInstanceOf[flat]
+  @scala.inline
   def gray: gray = "gray".asInstanceOf[gray]
+  @scala.inline
   def green: green = "green".asInstanceOf[green]
+  @scala.inline
   def grey: grey = "grey".asInstanceOf[grey]
+  @scala.inline
   def orange: orange = "orange".asInstanceOf[orange]
+  @scala.inline
   def pink: pink = "pink".asInstanceOf[pink]
+  @scala.inline
   def purple: purple = "purple".asInstanceOf[purple]
+  @scala.inline
   def red: red = "red".asInstanceOf[red]
+  @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
 }
 

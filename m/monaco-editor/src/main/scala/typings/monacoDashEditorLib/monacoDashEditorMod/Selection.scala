@@ -39,6 +39,7 @@ class Selection protected () extends Range {
   def getPosition(): Position = js.native
 }
 
+/* static members */
 @JSImport("monaco-editor", "Selection")
 @js.native
 object Selection extends js.Object {

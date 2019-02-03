@@ -15,6 +15,7 @@ abstract class SpatialAnchor () extends js.Object {
    /* unmapped type */ var removeEventListener: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.SpatialAnchor")
 @js.native
 object SpatialAnchor extends js.Object {

@@ -12,6 +12,7 @@ class namespaced protected () extends WebpackDevServer {
   def this(webpack: webpackLib.webpackMod.MultiCompiler, config: webpackDashDevDashServerLib.webpackDashDevDashServerMod.WebpackDevServerNs.Configuration) = this()
 }
 
+/* static members */
 @JSImport("webpack-dev-server", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

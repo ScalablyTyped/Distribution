@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AppointmentManager () extends js.Object
 
-/** Provides APIs to interact with the user’s Appointments provider app (for example, the Calendar app). Call static methods to display provider-specific UI so that the user can perform tasks. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Appointments.AppointmentManager")
 @js.native
 object AppointmentManager extends js.Object {

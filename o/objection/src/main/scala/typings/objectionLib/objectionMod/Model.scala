@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Model ()
   extends objectionLib.objectionMod.ObjectionNs.Model
 
+/* static members */
 @JSImport("objection", "Model")
 @js.native
 object Model extends js.Object {

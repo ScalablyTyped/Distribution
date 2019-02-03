@@ -15,8 +15,11 @@ object globDashStreamLibStrings {
   @js.native
   sealed trait path extends js.Object
   
+  @scala.inline
   def base: base = "base".asInstanceOf[base]
+  @scala.inline
   def cwd: cwd = "cwd".asInstanceOf[cwd]
+  @scala.inline
   def path: path = "path".asInstanceOf[path]
 }
 

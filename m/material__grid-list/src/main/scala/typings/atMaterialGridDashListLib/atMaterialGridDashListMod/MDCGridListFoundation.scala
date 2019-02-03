@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCGridListFoundation ()
   extends atMaterialGridDashListLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/grid-list", "MDCGridListFoundation")
 @js.native
 object MDCGridListFoundation extends js.Object {

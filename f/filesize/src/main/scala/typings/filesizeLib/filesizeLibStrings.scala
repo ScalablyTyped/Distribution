@@ -24,11 +24,17 @@ object filesizeLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def exponent: exponent = "exponent".asInstanceOf[exponent]
+  @scala.inline
   def iec: iec = "iec".asInstanceOf[iec]
+  @scala.inline
   def jedec: jedec = "jedec".asInstanceOf[jedec]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

@@ -11,7 +11,11 @@ package object ObjectionNs {
   type BluebirdMapper[T, Result] = js.Function2[/* item */ T, /* index */ scala.Double, Result]
   type ColumnRef = java.lang.String | Raw | Reference | (QueryBuilder[js.Any, js.Array[js.Any], js.Array[js.Any]])
   type DeepPartialGraph[T] = T | DeepPartialGraphModel[T] | (DeepPartialGraphArray[/* import warning: ImportType.apply Failed type conversion: T[number] */ js.Any])
-  type DeepPartialGraphModel[T] = (GraphModel[objectionLib.objectionLibStrings.DeepPartialGraphModel with T]) | stdLib.Partial[T]
+  type DeepPartialGraphModel[T] = (GraphModel[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in objection.objection.Objection.NonFunctionPropertyNames<T> ]:? objection.objection.Objection.DeepPartialGraph<T[P]>}
+    */ objectionLib.objectionLibStrings.DeepPartialGraphModel with T
+  ]) | stdLib.Partial[T]
   type Distinct[QM /* <: Model */, RM, RV] = ColumnNamesMethod[QM, RM, RV]
   /**
     * @see http://vincit.github.io/objection.js/#fieldexpression
@@ -47,7 +51,9 @@ package object ObjectionNs {
     /* direction */ js.UndefOr[java.lang.String], 
     QueryBuilder[QM, RM, RV]
   ]
-  type PartialUpdate[QM /* <: Model */] = objectionLib.objectionLibStrings.PartialUpdate with QM
+  type PartialUpdate[QM /* <: Model */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof QM ]:? QM[P] | objection.objection.Objection.Raw | objection.objection.Objection.Reference | objection.objection.Objection.QueryBuilder<any, std.Array<any>, std.Array<any>>}
+    */ objectionLib.objectionLibStrings.PartialUpdate with QM
   type Plugin = js.Function1[/* modelClass */ objectionLib.Anon_Args, objectionLib.Anon_Args]
   type QueryBuilderYieldingOne[QM /* <: Model */] = QueryBuilder[QM, QM, QM]
   type QueryBuilderYieldingOneOrNone[QM /* <: Model */] = QueryBuilder[QM, QM, js.UndefOr[QM]]

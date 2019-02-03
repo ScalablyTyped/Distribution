@@ -14,6 +14,7 @@ class Node () extends js.Object {
   def release(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.RelativeLayout.DependencyGraph.Node")
 @js.native
 object Node extends js.Object {

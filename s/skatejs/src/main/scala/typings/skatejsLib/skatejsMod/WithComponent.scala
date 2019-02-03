@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WithComponent[P, S, C] ()
   extends skatejsLib.typesMod.WithComponent[P, S, C]
 
+/* static members */
 @JSImport("skatejs", "WithComponent")
 @js.native
 object WithComponent extends js.Object {

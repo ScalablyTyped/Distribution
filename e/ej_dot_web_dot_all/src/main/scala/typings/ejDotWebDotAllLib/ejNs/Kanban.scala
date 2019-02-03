@@ -100,6 +100,7 @@ class Kanban protected () extends Widget {
   def updateCard(key: java.lang.String, data: js.Array[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Kanban")
 @js.native
 object Kanban extends js.Object {

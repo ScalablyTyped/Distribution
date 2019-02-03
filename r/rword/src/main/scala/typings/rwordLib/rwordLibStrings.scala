@@ -15,8 +15,11 @@ object rwordLibStrings {
   @js.native
   sealed trait none extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def first: first = "first".asInstanceOf[first]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
 }
 

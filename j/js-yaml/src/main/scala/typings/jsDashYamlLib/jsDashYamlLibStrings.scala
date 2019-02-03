@@ -15,8 +15,11 @@ object jsDashYamlLibStrings {
   @js.native
   sealed trait sequence extends js.Object
   
+  @scala.inline
   def mapping: mapping = "mapping".asInstanceOf[mapping]
+  @scala.inline
   def scalar: scalar = "scalar".asInstanceOf[scalar]
+  @scala.inline
   def sequence: sequence = "sequence".asInstanceOf[sequence]
 }
 

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ULS () extends js.Object
 
-/** Provides a Unified Logging Service (ULS) that monitors log messages. */
+/* static members */
 @JSGlobal("SP.ULS")
 @js.native
 object ULS extends js.Object {

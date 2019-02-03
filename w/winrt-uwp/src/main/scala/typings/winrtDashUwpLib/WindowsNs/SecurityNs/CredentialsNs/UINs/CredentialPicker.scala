@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CredentialPicker () extends js.Object
 
-/** Creates an asynchronous object that displays a dialog box of credentials to the user and collects the user's response. */
+/* static members */
 @JSGlobal("Windows.Security.Credentials.UI.CredentialPicker")
 @js.native
 object CredentialPicker extends js.Object {

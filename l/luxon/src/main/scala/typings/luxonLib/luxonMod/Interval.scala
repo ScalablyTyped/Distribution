@@ -48,6 +48,7 @@ class Interval () extends js.Object {
   def union(other: Interval): Interval = js.native
 }
 
+/* static members */
 @JSImport("luxon", "Interval")
 @js.native
 object Interval extends js.Object {

@@ -22,6 +22,7 @@ class Logger () extends js.Object {
   def warning(message: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("azure", "Logger")
 @js.native
 object Logger extends js.Object {

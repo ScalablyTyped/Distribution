@@ -43,6 +43,7 @@ class GestureDetector protected () extends js.Object {
   def setOnDoubleTapListener(onDoubleTapListener: androiduixLib.androidNs.viewNs.GestureDetectorNs.OnDoubleTapListener): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.GestureDetector")
 @js.native
 object GestureDetector extends js.Object {

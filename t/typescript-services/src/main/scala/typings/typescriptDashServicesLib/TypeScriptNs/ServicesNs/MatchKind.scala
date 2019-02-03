@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MatchKind () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.MatchKind")
 @js.native
 object MatchKind extends js.Object {

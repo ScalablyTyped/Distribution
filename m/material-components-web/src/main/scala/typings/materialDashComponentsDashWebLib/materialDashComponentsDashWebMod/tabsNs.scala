@@ -32,16 +32,19 @@ object tabsNs extends js.Object {
   class MDCTabFoundation ()
     extends atMaterialTabsLib.atMaterialTabsMod.MDCTabFoundation
   
+  /* static members */
   @js.native
   object MDCTab extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTabsLib.tabMod.MDCTab = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTabBar extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTabsLib.tabDashBarMod.MDCTabBar = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTabBarFoundation extends js.Object {
     val cssClasses: atMaterialTabsLib.tabDashBarConstantsMod.cssClasses = js.native
@@ -49,11 +52,13 @@ object tabsNs extends js.Object {
     val strings: atMaterialTabsLib.tabDashBarConstantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTabBarScroller extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialTabsLib.tabDashBarDashScrollerMod.MDCTabBarScroller = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTabBarScrollerFoundation extends js.Object {
     val cssClasses: atMaterialTabsLib.tabDashBarDashScrollerConstantsMod.cssClasses = js.native
@@ -61,6 +66,7 @@ object tabsNs extends js.Object {
     val strings: atMaterialTabsLib.tabDashBarDashScrollerConstantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCTabFoundation extends js.Object {
     val cssClasses: atMaterialTabsLib.tabConstantsMod.cssClasses = js.native

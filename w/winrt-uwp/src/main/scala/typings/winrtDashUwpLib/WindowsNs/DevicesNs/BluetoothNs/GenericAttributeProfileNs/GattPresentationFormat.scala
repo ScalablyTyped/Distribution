@@ -21,7 +21,7 @@ abstract class GattPresentationFormat () extends js.Object {
   var unit: scala.Double = js.native
 }
 
-/** Represents the value of a single Presentation Format GATT Descriptor. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormat")
 @js.native
 object GattPresentationFormat extends js.Object {

@@ -64,44 +64,7 @@ class DracoCompression () extends IDisposable {
   override def dispose(): scala.Unit = js.native
 }
 
-/**
-  * Draco compression (https://google.github.io/draco/)
-  *
-  * This class wraps the Draco module.
-  *
-  * **Encoder**
-  *
-  * The encoder is not currently implemented.
-  *
-  * **Decoder**
-  *
-  * By default, the configuration points to a copy of the Draco decoder files for glTF from the babylon.js preview cdn https://preview.babylonjs.com/draco_wasm_wrapper_gltf.js.
-  *
-  * To update the configuration, use the following code:
-  * ```javascript
-  *     BABYLON.DracoCompression.Configuration = {
-  *         decoder: {
-  *             wasmUrl: "<url to the WebAssembly library>",
-  *             wasmBinaryUrl: "<url to the WebAssembly binary>",
-  *             fallbackUrl: "<url to the fallback JavaScript library>",
-  *         }
-  *     };
-  * ```
-  *
-  * Draco has two versions, one for WebAssembly and one for JavaScript. The decoder configuration can be set to only support Webssembly or only support the JavaScript version.
-  * Decoding will automatically fallback to the JavaScript version if WebAssembly version is not configured or if WebAssembly is not supported by the browser.
-  * Use `BABYLON.DracoCompression.DecoderAvailable` to determine if the decoder is available for the current session.
-  *
-  * To decode Draco compressed data, create a DracoCompression object and call decodeMeshAsync:
-  * ```javascript
-  *     var dracoCompression = new BABYLON.DracoCompression();
-  *     var vertexData = await dracoCompression.decodeMeshAsync(data, {
-  *         [BABYLON.VertexBuffer.PositionKind]: 0
-  *     });
-  * ```
-  *
-  * @see https://www.babylonjs-playground.com/#N3EK4B#0
-  */
+/* static members */
 @JSGlobal("BABYLON.DracoCompression")
 @js.native
 object DracoCompression extends js.Object {

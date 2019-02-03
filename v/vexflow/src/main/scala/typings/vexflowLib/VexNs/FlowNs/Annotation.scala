@@ -15,6 +15,7 @@ class Annotation protected () extends Modifier {
   def setVerticalJustification(just: vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify): Annotation = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Annotation")
 @js.native
 object Annotation extends js.Object {

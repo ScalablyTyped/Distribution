@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pagination ()
   extends semanticDashUiDashReactLib.distCommonjsAddonsPaginationMod.default
 
+/* static members */
 @JSImport("semantic-ui-react", "Pagination")
 @js.native
 object Pagination extends js.Object {

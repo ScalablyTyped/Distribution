@@ -35,6 +35,7 @@ class CollaborativeMap[V] () extends CollaborativeObject {
   def values(): js.Array[V] = js.native
 }
 
+/* static members */
 @JSGlobal("gapi.drive.realtime.CollaborativeMap")
 @js.native
 object CollaborativeMap extends js.Object {

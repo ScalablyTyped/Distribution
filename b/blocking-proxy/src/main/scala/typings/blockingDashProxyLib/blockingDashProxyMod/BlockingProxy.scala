@@ -13,6 +13,7 @@ class BlockingProxy protected ()
   def this(seleniumAddress: java.lang.String, highlightDelay: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("blocking-proxy", "BlockingProxy")
 @js.native
 object BlockingProxy extends js.Object {

@@ -17,7 +17,7 @@ abstract class SpiController () extends js.Object {
   def getDevice(settings: SpiConnectionSettings): SpiDevice = js.native
 }
 
-/** Represents the SPI controller on the system. */
+/* static members */
 @JSGlobal("Windows.Devices.Spi.SpiController")
 @js.native
 object SpiController extends js.Object {

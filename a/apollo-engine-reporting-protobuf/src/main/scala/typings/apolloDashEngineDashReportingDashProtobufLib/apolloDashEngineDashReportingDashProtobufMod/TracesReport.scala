@@ -16,6 +16,7 @@ class TracesReport ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ITracesReport) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "TracesReport")
 @js.native
 object TracesReport extends js.Object {

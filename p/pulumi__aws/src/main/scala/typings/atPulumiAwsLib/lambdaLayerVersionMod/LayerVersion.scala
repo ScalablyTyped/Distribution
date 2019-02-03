@@ -76,6 +76,7 @@ class LayerVersion protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion")
 @js.native
 object LayerVersion extends js.Object {

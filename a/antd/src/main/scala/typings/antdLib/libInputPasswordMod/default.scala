@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Password
 
+/* static members */
 @JSImport("antd/lib/input/Password", JSImport.Default)
 @js.native
 object default extends js.Object {

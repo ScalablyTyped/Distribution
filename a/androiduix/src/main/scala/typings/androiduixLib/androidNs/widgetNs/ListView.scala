@@ -139,6 +139,7 @@ class ListView protected () extends AbsListView {
   /* private */ def showingTopFadingEdge(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ListView")
 @js.native
 object ListView extends js.Object {

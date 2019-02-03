@@ -56,6 +56,7 @@ class Rotator protected () extends Widget {
   def updateTemplateById(index: scala.Double, id: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Rotator")
 @js.native
 object Rotator extends js.Object {

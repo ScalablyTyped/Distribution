@@ -12,6 +12,7 @@ class VoidExpressionSyntax protected ()
   def this(voidKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IUnaryExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "VoidExpressionSyntax")
 @js.native
 object VoidExpressionSyntax extends js.Object {

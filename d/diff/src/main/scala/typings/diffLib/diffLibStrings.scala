@@ -12,7 +12,9 @@ object diffLibStrings {
   @js.native
   sealed trait `-` extends js.Object
   
+  @scala.inline
   def ` `: ` ` = " ".asInstanceOf[` `]
+  @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]
 }
 

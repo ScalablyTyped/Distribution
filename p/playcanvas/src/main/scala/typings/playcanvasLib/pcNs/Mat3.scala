@@ -94,20 +94,7 @@ class Mat3 protected () extends js.Object {
   def transpose(): this.type = js.native
 }
 
-/**
-  * @name pc.Mat3
-  * @class A 3x3 matrix.
-  * @description Creates a new Mat3 object
-  * @param {Number} [v0] The value in row 0, column 0. If v0 is an array of length 9, the array will be used to populate all components.
-  * @param {Number} [v1] The value in row 1, column 0.
-  * @param {Number} [v2] The value in row 2, column 0.
-  * @param {Number} [v3] The value in row 0, column 1.
-  * @param {Number} [v4] The value in row 1, column 1.
-  * @param {Number} [v5] The value in row 2, column 1.
-  * @param {Number} [v6] The value in row 0, column 2.
-  * @param {Number} [v7] The value in row 1, column 2.
-  * @param {Number} [v8] The value in row 2, column 2.
-  */
+/* static members */
 @JSGlobal("pc.Mat3")
 @js.native
 object Mat3 extends js.Object {

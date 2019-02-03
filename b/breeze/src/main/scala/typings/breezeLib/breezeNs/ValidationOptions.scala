@@ -17,6 +17,7 @@ class ValidationOptions () extends js.Object {
   def using(config: ValidationOptionsConfiguration): ValidationOptions = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.ValidationOptions")
 @js.native
 object ValidationOptions extends js.Object {

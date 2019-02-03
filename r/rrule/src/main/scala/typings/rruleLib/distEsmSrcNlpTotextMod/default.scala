@@ -13,6 +13,7 @@ class default protected () extends ToText {
   def this(rrule: rruleLib.distEsmSrcMod.default, gettext: GetText, language: rruleLib.distEsmSrcNlpI18nMod.Language) = this()
 }
 
+/* static members */
 @JSImport("rrule/dist/esm/src/nlp/totext", JSImport.Default)
 @js.native
 object default extends js.Object {

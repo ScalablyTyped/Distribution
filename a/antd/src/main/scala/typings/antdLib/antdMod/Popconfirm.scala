@@ -12,6 +12,7 @@ class Popconfirm protected ()
   def this(props: antdLib.libPopconfirmMod.PopconfirmProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Popconfirm")
 @js.native
 object Popconfirm extends js.Object {

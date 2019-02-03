@@ -33,6 +33,7 @@ class LatLonSpherical protected () extends js.Object {
   def toString(format: java.lang.String, dp: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("geodesy", "LatLonSpherical")
 @js.native
 object LatLonSpherical extends js.Object {

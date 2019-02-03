@@ -38,6 +38,7 @@ class ViewConfiguration () extends js.Object {
   def getScaledWindowTouchSlop(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ViewConfiguration")
 @js.native
 object ViewConfiguration extends js.Object {

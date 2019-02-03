@@ -176,6 +176,7 @@ class PopupWindow protected ()
   /* private */ def updateAboveAnchor(aboveAnchor: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.PopupWindow")
 @js.native
 object PopupWindow extends js.Object {

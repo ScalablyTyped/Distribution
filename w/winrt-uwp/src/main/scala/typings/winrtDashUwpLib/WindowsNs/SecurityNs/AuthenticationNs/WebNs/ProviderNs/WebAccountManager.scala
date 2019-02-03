@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebAccountManager () extends js.Object
 
-/** Provides methods for managing web accounts. */
+/* static members */
 @JSGlobal("Windows.Security.Authentication.Web.Provider.WebAccountManager")
 @js.native
 object WebAccountManager extends js.Object {

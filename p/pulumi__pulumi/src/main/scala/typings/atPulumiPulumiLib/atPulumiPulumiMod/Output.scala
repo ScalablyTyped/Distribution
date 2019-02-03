@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Output[T] ()
   extends atPulumiPulumiLib.resourceMod.Output[T]
 
+/* static members */
 @JSImport("@pulumi/pulumi", "Output")
 @js.native
 object Output extends js.Object {

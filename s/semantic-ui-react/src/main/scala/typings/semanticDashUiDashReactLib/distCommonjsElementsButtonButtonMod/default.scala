@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Button
 
+/* static members */
 @JSImport("semantic-ui-react/dist/commonjs/elements/Button/Button", JSImport.Default)
 @js.native
 object default extends js.Object {

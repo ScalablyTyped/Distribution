@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CalloutManager () extends js.Object
 
+/* static members */
 @JSGlobal("CalloutManager")
 @js.native
 object CalloutManager extends js.Object {

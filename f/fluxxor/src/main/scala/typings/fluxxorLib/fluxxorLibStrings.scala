@@ -9,6 +9,7 @@ object fluxxorLibStrings {
   @js.native
   sealed trait input extends js.Object
   
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
 }
 

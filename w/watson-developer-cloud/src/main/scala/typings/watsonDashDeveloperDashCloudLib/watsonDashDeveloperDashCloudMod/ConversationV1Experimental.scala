@@ -12,6 +12,7 @@ class ConversationV1Experimental protected () extends js.Object {
   def message(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "ConversationV1Experimental")
 @js.native
 object ConversationV1Experimental extends js.Object {

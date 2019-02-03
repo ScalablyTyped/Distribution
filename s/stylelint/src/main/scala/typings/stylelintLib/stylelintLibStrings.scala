@@ -30,13 +30,21 @@ object stylelintLibStrings {
   @js.native
   sealed trait verbose extends js.Object
   
+  @scala.inline
   def compact: compact = "compact".asInstanceOf[compact]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def less: less = "less".asInstanceOf[less]
+  @scala.inline
   def sass: sass = "sass".asInstanceOf[sass]
+  @scala.inline
   def scss: scss = "scss".asInstanceOf[scss]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def sugarss: sugarss = "sugarss".asInstanceOf[sugarss]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
 

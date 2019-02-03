@@ -21,6 +21,7 @@ class OriginAccessIdentity protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudfrontOriginAccessIdentityMod.OriginAccessIdentityArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront", "OriginAccessIdentity")
 @js.native
 object OriginAccessIdentity extends js.Object {

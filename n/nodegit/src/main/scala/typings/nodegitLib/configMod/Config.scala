@@ -16,6 +16,7 @@ class Config () extends js.Object {
   def snapshot(): js.Promise[Config] = js.native
 }
 
+/* static members */
 @JSImport("nodegit/config", "Config")
 @js.native
 object Config extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class ComponentFactoryResolver ()
   extends atAngularCoreLib.srcCoreMod.ComponentFactoryResolver
 
+/* static members */
 @JSImport("@angular/core/public_api", "ComponentFactoryResolver")
 @js.native
 object ComponentFactoryResolver extends js.Object {

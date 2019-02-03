@@ -12,6 +12,7 @@ class SimplePropertyAssignmentSyntax protected ()
   def this(propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SimplePropertyAssignmentSyntax")
 @js.native
 object SimplePropertyAssignmentSyntax extends js.Object {

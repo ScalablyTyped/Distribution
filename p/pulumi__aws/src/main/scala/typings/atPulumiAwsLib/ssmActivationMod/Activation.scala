@@ -52,6 +52,7 @@ class Activation protected ()
   val registrationLimit: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/activation", "Activation")
 @js.native
 object Activation extends js.Object {

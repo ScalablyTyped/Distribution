@@ -27,12 +27,19 @@ object jqueryDashCountdownLibStrings {
   @js.native
   sealed trait updateDOTcountdown extends js.Object
   
+  @scala.inline
   def finishDOTcountdown: finishDOTcountdown = "finish.countdown".asInstanceOf[finishDOTcountdown]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def resume: resume = "resume".asInstanceOf[resume]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def stopDOTcountdown: stopDOTcountdown = "stop.countdown".asInstanceOf[stopDOTcountdown]
+  @scala.inline
   def updateDOTcountdown: updateDOTcountdown = "update.countdown".asInstanceOf[updateDOTcountdown]
 }
 

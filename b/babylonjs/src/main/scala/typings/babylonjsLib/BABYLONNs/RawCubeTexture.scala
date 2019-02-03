@@ -80,9 +80,7 @@ class RawCubeTexture protected () extends CubeTexture {
   ): js.Promise[scala.Unit] = js.native
 }
 
-/**
-  * Raw cube texture where the raw buffers are passed in
-  */
+/* static members */
 @JSGlobal("BABYLON.RawCubeTexture")
 @js.native
 object RawCubeTexture extends js.Object {

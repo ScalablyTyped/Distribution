@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Grid[T] ()
   extends reactLib.reactMod.Component[GridProps[T], js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native-svg-charts", "Grid")
 @js.native
 object Grid extends js.Object {

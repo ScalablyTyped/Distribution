@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class SceneSerializer ()
   extends babylonjsLib.BABYLONNs.SceneSerializer
 
-/**
-  * Class used to serialize a scene into a string
-  */
+/* static members */
 @JSImport("babylonjs", "SceneSerializer")
 @js.native
 object SceneSerializer extends js.Object {

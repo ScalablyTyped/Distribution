@@ -57,22 +57,39 @@ object resumablejsLibStrings {
   @js.native
   sealed trait uploadStart extends js.Object
   
+  @scala.inline
   def beforeCancel: beforeCancel = "beforeCancel".asInstanceOf[beforeCancel]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
+  @scala.inline
   def catchAll: catchAll = "catchAll".asInstanceOf[catchAll]
+  @scala.inline
   def chunkingComplete: chunkingComplete = "chunkingComplete".asInstanceOf[chunkingComplete]
+  @scala.inline
   def chunkingProgress: chunkingProgress = "chunkingProgress".asInstanceOf[chunkingProgress]
+  @scala.inline
   def chunkingStart: chunkingStart = "chunkingStart".asInstanceOf[chunkingStart]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def fileAdded: fileAdded = "fileAdded".asInstanceOf[fileAdded]
+  @scala.inline
   def fileError: fileError = "fileError".asInstanceOf[fileError]
+  @scala.inline
   def fileProgress: fileProgress = "fileProgress".asInstanceOf[fileProgress]
+  @scala.inline
   def fileRetry: fileRetry = "fileRetry".asInstanceOf[fileRetry]
+  @scala.inline
   def fileSuccess: fileSuccess = "fileSuccess".asInstanceOf[fileSuccess]
+  @scala.inline
   def filesAdded: filesAdded = "filesAdded".asInstanceOf[filesAdded]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
   def uploadStart: uploadStart = "uploadStart".asInstanceOf[uploadStart]
 }
 

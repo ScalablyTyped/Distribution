@@ -12,7 +12,9 @@ object gapiDotClientDotOsloginLibStrings {
   @js.native
   sealed trait v1alpha extends js.Object
   
+  @scala.inline
   def oslogin: oslogin = "oslogin".asInstanceOf[oslogin]
+  @scala.inline
   def v1alpha: v1alpha = "v1alpha".asInstanceOf[v1alpha]
 }
 

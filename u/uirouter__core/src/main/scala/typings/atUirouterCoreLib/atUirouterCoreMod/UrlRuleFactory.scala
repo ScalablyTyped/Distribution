@@ -12,6 +12,7 @@ class UrlRuleFactory protected ()
   def this(router: atUirouterCoreLib.libRouterMod.UIRouter) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "UrlRuleFactory")
 @js.native
 object UrlRuleFactory extends js.Object {

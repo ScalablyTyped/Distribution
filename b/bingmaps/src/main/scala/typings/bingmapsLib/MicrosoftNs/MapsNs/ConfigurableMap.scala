@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ConfigurableMap () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.Maps.ConfigurableMap")
 @js.native
 object ConfigurableMap extends js.Object {

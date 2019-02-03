@@ -76,6 +76,7 @@ class ConditionalExpressionSyntax protected ()
   def withWhenTrue(whenTrue: IExpressionSyntax): ConditionalExpressionSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ConditionalExpressionSyntax")
 @js.native
 object ConditionalExpressionSyntax extends js.Object {

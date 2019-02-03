@@ -33,6 +33,7 @@ class BezierCurve protected ()
   var type_BezierCurve: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("MakerJs.models.BezierCurve")
 @js.native
 object BezierCurve extends js.Object {

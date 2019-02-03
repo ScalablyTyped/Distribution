@@ -190,6 +190,7 @@ object fractalNs extends js.Object {
         def variants(): this.type = js.native
       }
       
+      /* static members */
       @js.native
       object Component extends js.Object {
         def create(
@@ -312,6 +313,7 @@ object fractalNs extends js.Object {
         def toc(page: atFrctlFractalLib.atFrctlFractalMod.fractalNs.apiNs.filesNs.File, maxDepth: scala.Double): js.Promise[java.lang.String] = js.native
       }
       
+      /* static members */
       @js.native
       object Doc extends js.Object {
         def create(
@@ -441,6 +443,7 @@ object fractalNs extends js.Object {
         def getCollatedContentSync(): java.lang.String = js.native
       }
       
+      /* static members */
       @js.native
       object Variant extends js.Object {
         def create(

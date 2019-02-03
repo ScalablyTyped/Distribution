@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CalendarIdentifiers () extends js.Object
 
-/** Contains the calendar identifiers for the supported calendars, as static properties. */
+/* static members */
 @JSGlobal("Windows.Globalization.CalendarIdentifiers")
 @js.native
 object CalendarIdentifiers extends js.Object {

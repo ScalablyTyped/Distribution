@@ -12,7 +12,9 @@ object jqueryDotNotifyLibStrings {
   @js.native
   sealed trait below extends js.Object
   
+  @scala.inline
   def above: above = "above".asInstanceOf[above]
+  @scala.inline
   def below: below = "below".asInstanceOf[below]
 }
 

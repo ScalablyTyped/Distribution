@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ZoneRules ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneRules
 
+/* static members */
 @JSImport("js-joda", "ZoneRules")
 @js.native
 object ZoneRules extends js.Object {

@@ -23,6 +23,7 @@ class FullTracesReport () extends IFullTracesReport {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "FullTracesReport")
 @js.native
 object FullTracesReport extends js.Object {

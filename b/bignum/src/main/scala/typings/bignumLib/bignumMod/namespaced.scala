@@ -16,6 +16,7 @@ class namespaced protected () extends BigNum {
   def this(n: java.lang.String, base: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("bignum", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

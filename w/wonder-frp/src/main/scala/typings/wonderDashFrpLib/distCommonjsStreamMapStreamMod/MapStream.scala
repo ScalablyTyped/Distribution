@@ -14,6 +14,7 @@ class MapStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/MapStream", "MapStream")
 @js.native
 object MapStream extends js.Object {

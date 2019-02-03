@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class ProfileService ()
   extends org.scalablytyped.runtime.Instantiable0[ProfileService]
 
-/**
-  * Provides the client proxy class for the profile service.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb383800(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.Services.ProfileService")
 @js.native
 object ProfileService extends js.Object {

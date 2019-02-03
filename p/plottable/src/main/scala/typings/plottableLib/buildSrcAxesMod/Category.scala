@@ -22,6 +22,7 @@ class Category protected ()
   def this(scale: plottableLib.buildSrcScalesMod.Category, orientation: plottableLib.buildSrcAxesAxisMod.AxisOrientation) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/axes", "Category")
 @js.native
 object Category extends js.Object {

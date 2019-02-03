@@ -30,6 +30,7 @@ class KeyframeTrack protected () extends js.Object {
   def validate(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "KeyframeTrack")
 @js.native
 object KeyframeTrack extends js.Object {

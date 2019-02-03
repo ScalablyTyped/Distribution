@@ -79,6 +79,7 @@ class LocationRect protected () extends js.Object {
   def splitByInternationalDateLine(): js.Array[LocationRect] = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.Maps.LocationRect")
 @js.native
 object LocationRect extends js.Object {

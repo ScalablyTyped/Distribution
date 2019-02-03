@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tabs ()
   extends antdLib.libTabsMod.default
 
+/* static members */
 @JSImport("antd", "Tabs")
 @js.native
 object Tabs extends js.Object {

@@ -79,6 +79,7 @@ class FirebaseAuth protected () extends js.Object {
   def verifyPasswordResetCode(code: java.lang.String): js.Promise[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@firebase/auth-types", "FirebaseAuth")
 @js.native
 object FirebaseAuth extends js.Object {

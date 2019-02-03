@@ -48,6 +48,7 @@ class Uri () extends UriComponents {
   def `with`(change: monacoDashEditorLib.Anon_Authority): Uri = js.native
 }
 
+/* static members */
 @JSImport("monaco-editor", "Uri")
 @js.native
 object Uri extends js.Object {

@@ -20,6 +20,7 @@ class JavaAppLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksJavaAppLayerMod.JavaAppLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "JavaAppLayer")
 @js.native
 object JavaAppLayer extends js.Object {

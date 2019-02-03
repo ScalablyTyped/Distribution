@@ -13,7 +13,7 @@ class Sprite ()
   def this(texture: pixiDotJsLib.PIXINs.Texture) = this()
 }
 
-// sprites
+/* static members */
 @JSImport("pixi.js", "Sprite")
 @js.native
 object Sprite extends js.Object {

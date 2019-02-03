@@ -35,31 +35,37 @@ object xdrNs extends js.Object {
     def toXDR_Buffer(base: java.lang.String): nodeLib.Buffer = js.native
   }
   
+  /* static members */
   @js.native
   object Asset extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Asset = js.native
   }
   
+  /* static members */
   @js.native
   object DecoratedSignature extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.DecoratedSignature = js.native
   }
   
+  /* static members */
   @js.native
   object Memo extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Memo = js.native
   }
   
+  /* static members */
   @js.native
   object TransactionEnvelope extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.TransactionEnvelope = js.native
   }
   
+  /* static members */
   @js.native
   object TransactionResult extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.TransactionResult = js.native
   }
   
+  /* static members */
   @js.native
   object XDRStruct extends js.Object {
     def fromXDR(xdr: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.XDRStruct = js.native

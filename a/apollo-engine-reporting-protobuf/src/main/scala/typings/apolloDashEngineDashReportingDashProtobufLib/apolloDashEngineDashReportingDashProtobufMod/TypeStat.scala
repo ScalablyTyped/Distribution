@@ -16,6 +16,7 @@ class TypeStat ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ITypeStat) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "TypeStat")
 @js.native
 object TypeStat extends js.Object {

@@ -26,6 +26,7 @@ class Scanner protected () extends js.Object {
   var pos: js.Any = js.native
   var proseStartToken: js.Any = js.native
   var resetHasPrecedingNonWhitspaceTrivia: js.Any = js.native
+  var scanCharacter: js.Any = js.native
   var scanCharacterEntity: js.Any = js.native
   var scanEscapeSequence: js.Any = js.native
   var scanHexDigits: js.Any = js.native

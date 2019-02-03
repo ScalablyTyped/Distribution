@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class VTypes () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.form.VTypes")
 @js.native
 object VTypes extends js.Object {

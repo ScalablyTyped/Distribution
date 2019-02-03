@@ -21,6 +21,7 @@ class ColorTimeline protected () extends CurveTimeline {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.ColorTimeline")
 @js.native
 object ColorTimeline extends js.Object {

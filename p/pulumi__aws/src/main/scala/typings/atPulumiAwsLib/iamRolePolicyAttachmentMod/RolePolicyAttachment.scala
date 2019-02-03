@@ -28,6 +28,7 @@ class RolePolicyAttachment protected ()
   val role: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.iamRoleMod.Role] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment")
 @js.native
 object RolePolicyAttachment extends js.Object {

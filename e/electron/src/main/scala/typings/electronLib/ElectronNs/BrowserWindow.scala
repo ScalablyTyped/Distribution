@@ -1012,6 +1012,7 @@ class BrowserWindow () extends EventEmitter {
   def unmaximize(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Electron.BrowserWindow")
 @js.native
 object BrowserWindow extends js.Object {

@@ -11,6 +11,7 @@ class Factory () extends js.Object {
   def newSpannable(source: java.lang.String): androiduixLib.androidNs.textNs.Spannable = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.Spannable.Factory")
 @js.native
 object Factory extends js.Object {

@@ -36,6 +36,7 @@ object docdbNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.docdbSubnetGroupMod.SubnetGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ClusterParameterGroup extends js.Object {
     /**
@@ -60,6 +61,7 @@ object docdbNs extends js.Object {
     ): atPulumiAwsLib.docdbClusterParameterGroupMod.ClusterParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

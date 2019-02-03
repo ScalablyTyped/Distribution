@@ -49,9 +49,7 @@ class ValueCondition protected () extends Condition {
   var value: js.Any = js.native
 }
 
-/**
-  * Defines specific conditional operators as extensions of Condition
-  */
+/* static members */
 @JSGlobal("BABYLON.ValueCondition")
 @js.native
 object ValueCondition extends js.Object {

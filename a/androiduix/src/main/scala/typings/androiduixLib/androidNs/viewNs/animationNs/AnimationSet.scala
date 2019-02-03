@@ -23,6 +23,7 @@ class AnimationSet () extends Animation {
   /* private */ def setFlag(mask: js.Any, value: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.animation.AnimationSet")
 @js.native
 object AnimationSet extends js.Object {

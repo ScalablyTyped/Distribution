@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Colors () extends IColors
 
+/* static members */
 @JSGlobal("Windows.UI.Colors")
 @js.native
 object Colors extends js.Object {

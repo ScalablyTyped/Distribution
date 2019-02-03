@@ -20,8 +20,7 @@ class Component[P, S, SS] protected ()
   def this(props: P, context: js.Any) = this()
 }
 
-// Base component for plain JS classes
-// tslint:disable-next-line:no-empty-interface
+/* static members */
 @JSImport("react", "Component")
 @js.native
 object Component extends js.Object {

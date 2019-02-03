@@ -80,6 +80,7 @@ class Stage protected ()
   val xrayTracingEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/stage", "Stage")
 @js.native
 object Stage extends js.Object {

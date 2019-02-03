@@ -8,7 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-config", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def matchRoutes[Params /* <: reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.matchRoutes with js.Any */](
+  def matchRoutes[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.matchRoutes with js.Any */](
     routes: js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.RouteConfig],
     pathname: java.lang.String
   ): js.Array[reactDashRouterDashConfigLib.reactDashRouterDashConfigMod.MatchedRoute[Params]] = js.native

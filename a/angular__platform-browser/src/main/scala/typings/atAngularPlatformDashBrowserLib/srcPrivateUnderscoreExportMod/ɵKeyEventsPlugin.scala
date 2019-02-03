@@ -16,6 +16,7 @@ class ɵKeyEventsPlugin protected ()
   def this(doc: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@angular/platform-browser/src/private_export", "ɵKeyEventsPlugin")
 @js.native
 object ɵKeyEventsPlugin extends js.Object {

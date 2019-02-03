@@ -87,32 +87,59 @@ object joiLibStrings {
   @js.native
   sealed trait uuidv5 extends js.Object
   
+  @scala.inline
   def NFC: NFC = "NFC".asInstanceOf[NFC]
+  @scala.inline
   def NFD: NFD = "NFD".asInstanceOf[NFD]
+  @scala.inline
   def NFKC: NFKC = "NFKC".asInstanceOf[NFKC]
+  @scala.inline
   def NFKD: NFKD = "NFKD".asInstanceOf[NFKD]
+  @scala.inline
   def Rules: Rules = "Rules".asInstanceOf[Rules]
+  @scala.inline
   def alternatives: alternatives = "alternatives".asInstanceOf[alternatives]
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def binary: binary = "binary".asInstanceOf[binary]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
+  @scala.inline
   def function: function = "function".asInstanceOf[function]
+  @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
+  @scala.inline
   def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
+  @scala.inline
   def now: now = "now".asInstanceOf[now]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
+  @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def unix: unix = "unix".asInstanceOf[unix]
+  @scala.inline
   def uuidv1: uuidv1 = "uuidv1".asInstanceOf[uuidv1]
+  @scala.inline
   def uuidv2: uuidv2 = "uuidv2".asInstanceOf[uuidv2]
+  @scala.inline
   def uuidv3: uuidv3 = "uuidv3".asInstanceOf[uuidv3]
+  @scala.inline
   def uuidv4: uuidv4 = "uuidv4".asInstanceOf[uuidv4]
+  @scala.inline
   def uuidv5: uuidv5 = "uuidv5".asInstanceOf[uuidv5]
 }
 

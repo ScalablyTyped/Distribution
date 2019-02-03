@@ -51,6 +51,7 @@ object securityhubNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.securityhubStandardsSubscriptionMod.StandardsSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Account extends js.Object {
     /**
@@ -75,6 +76,7 @@ object securityhubNs extends js.Object {
     ): atPulumiAwsLib.securityhubAccountMod.Account = js.native
   }
   
+  /* static members */
   @js.native
   object ProductSubscription extends js.Object {
     /**
@@ -99,6 +101,7 @@ object securityhubNs extends js.Object {
     ): atPulumiAwsLib.securityhubProductSubscriptionMod.ProductSubscription = js.native
   }
   
+  /* static members */
   @js.native
   object StandardsSubscription extends js.Object {
     /**

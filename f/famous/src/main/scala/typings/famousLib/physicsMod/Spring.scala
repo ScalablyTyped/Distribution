@@ -25,6 +25,7 @@ class Spring () extends Force {
   def `type`(dist: js.Any, rMax: js.Any): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("famous/physics", "Spring")
 @js.native
 object Spring extends js.Object {

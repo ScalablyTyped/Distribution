@@ -23,10 +23,7 @@ class LoadFileError protected ()
   request: stdLib.XMLHttpRequest) = this()
 }
 
-/**
-  * @ignore
-  * Application error to support additional information when loading a file
-  */
+/* static members */
 @JSImport("babylonjs", "LoadFileError")
 @js.native
 object LoadFileError extends js.Object {

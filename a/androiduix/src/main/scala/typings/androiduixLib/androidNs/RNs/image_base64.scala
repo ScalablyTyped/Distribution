@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class image_base64 () extends js.Object
 
+/* static members */
 @JSGlobal("android.R.image_base64")
 @js.native
 object image_base64 extends js.Object {

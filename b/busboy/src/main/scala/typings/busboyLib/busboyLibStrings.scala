@@ -24,11 +24,17 @@ object busboyLibStrings {
   @js.native
   sealed trait partsLimit extends js.Object
   
+  @scala.inline
   def field: field = "field".asInstanceOf[field]
+  @scala.inline
   def fieldsLimit: fieldsLimit = "fieldsLimit".asInstanceOf[fieldsLimit]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def filesLimit: filesLimit = "filesLimit".asInstanceOf[filesLimit]
+  @scala.inline
   def finish: finish = "finish".asInstanceOf[finish]
+  @scala.inline
   def partsLimit: partsLimit = "partsLimit".asInstanceOf[partsLimit]
 }
 

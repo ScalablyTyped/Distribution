@@ -23,6 +23,7 @@ class AsyncHost () extends HostBase {
   ): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("grammarkdown/dist/host", "AsyncHost")
 @js.native
 object AsyncHost extends js.Object {

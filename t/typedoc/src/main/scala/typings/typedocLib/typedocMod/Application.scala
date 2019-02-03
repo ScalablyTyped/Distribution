@@ -12,6 +12,7 @@ class Application ()
   def this(options: js.Object) = this()
 }
 
+/* static members */
 @JSImport("typedoc", "Application")
 @js.native
 object Application extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StringUtilities () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.StringUtilities")
 @js.native
 object StringUtilities extends js.Object {

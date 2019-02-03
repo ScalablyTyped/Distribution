@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrowKeyStepper ()
   extends reactDashVirtualizedLib.distEsArrowKeyStepperMod.ArrowKeyStepper
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/ArrowKeyStepper", "ArrowKeyStepper")
 @js.native
 object ArrowKeyStepper extends js.Object {

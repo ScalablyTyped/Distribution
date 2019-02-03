@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AnalyticsInfo () extends js.Object
 
-/** Provides information about the device for profiling purposes. */
+/* static members */
 @JSGlobal("Windows.System.Profile.AnalyticsInfo")
 @js.native
 object AnalyticsInfo extends js.Object {

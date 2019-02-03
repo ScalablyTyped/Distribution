@@ -17,6 +17,7 @@ class IndexReference[V] () extends CollaborativeObject {
   def referencedObject(): V = js.native
 }
 
+/* static members */
 @JSGlobal("gapi.drive.realtime.IndexReference")
 @js.native
 object IndexReference extends js.Object {

@@ -12,7 +12,9 @@ package object SinonNs {
     *
     * @template TType Object type being stubbed.
     */
-  type SinonStubbedInstance[TType] = sinonLib.sinonLibStrings.SinonStubbedInstance with TType
+  type SinonStubbedInstance[TType] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof TType ]: sinon.sinon.Sinon.SinonStubbedMember<TType[P]>}
+    */ sinonLib.sinonLibStrings.SinonStubbedInstance with TType
   /**
     * Replaces a type with a Sinon stub if it's a function.
     */

@@ -33,9 +33,7 @@ class DiceConfigurationFactory () extends js.Object {
   def setUseOpenThrow(shouldUseOpenThrow: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/DiceConfigurationFactory.html
-	 */
+/* static members */
 @JSGlobal("DiceConfigurationFactory")
 @js.native
 object DiceConfigurationFactory extends js.Object {

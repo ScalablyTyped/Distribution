@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FileManager ()
   extends webdriverDashManagerLib.builtLibFilesFileUnderscoreManagerMod.FileManager
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/files", "FileManager")
 @js.native
 object FileManager extends js.Object {

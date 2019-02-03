@@ -25,6 +25,7 @@ class Promise[T] protected () extends js.Object {
   ): Promise[TResult1 | TResult2] = js.native
 }
 
+/* static members */
 @JSImport("monaco-editor", "Promise")
 @js.native
 object Promise extends js.Object {

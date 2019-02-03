@@ -48,6 +48,7 @@ class UserLoginProfile protected ()
   val user: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/userLoginProfile", "UserLoginProfile")
 @js.native
 object UserLoginProfile extends js.Object {

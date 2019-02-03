@@ -54,6 +54,7 @@ class JobDefinition protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch/jobDefinition", "JobDefinition")
 @js.native
 object JobDefinition extends js.Object {

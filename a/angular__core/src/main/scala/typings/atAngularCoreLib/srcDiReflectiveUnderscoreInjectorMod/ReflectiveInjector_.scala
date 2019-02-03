@@ -25,6 +25,7 @@ class `ReflectiveInjector_` protected () extends ReflectiveInjector {
   def getProviderAtIndex(index: scala.Double): atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/di/reflective_injector", "ReflectiveInjector_")
 @js.native
 object `ReflectiveInjector_` extends js.Object {

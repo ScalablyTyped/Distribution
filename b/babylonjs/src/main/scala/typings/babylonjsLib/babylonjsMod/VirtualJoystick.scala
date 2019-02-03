@@ -19,9 +19,7 @@ class VirtualJoystick ()
   def this(leftJoystick: scala.Boolean) = this()
 }
 
-/**
-  * Class used to define virtual joystick (used in touch mode)
-  */
+/* static members */
 @JSImport("babylonjs", "VirtualJoystick")
 @js.native
 object VirtualJoystick extends js.Object {

@@ -121,6 +121,7 @@ class Type protected () extends NamespaceBase {
   def verify(message: org.scalablytyped.runtime.StringDictionary[js.Any]): scala.Null | java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Type")
 @js.native
 object Type extends js.Object {

@@ -17,6 +17,10 @@ object ^ extends js.Object {
     observableArray: mobxLib.libTypesObservablearrayMod.IObservableArray[T],
     handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[T]
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def interceptReads[V](
+    observableSet: mobxLib.libInternalMod.ObservableSet[V],
+    handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[V]
+  ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def interceptReads[T](
     value: mobxLib.libTypesObservablevalueMod.IObservableValue[T],
     handler: mobxLib.libApiInterceptDashReadMod.ReadInterceptor[T]

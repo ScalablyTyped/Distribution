@@ -20,6 +20,7 @@ class PlatformApplication protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.snsPlatformApplicationMod.PlatformApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns", "PlatformApplication")
 @js.native
 object PlatformApplication extends js.Object {

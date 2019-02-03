@@ -11,6 +11,7 @@ class default protected () extends Calendar {
   def this(props: rmcDashCalendarLib.libCalendarPropsMod.PropsType) = this()
 }
 
+/* static members */
 @JSImport("rmc-calendar/lib/Calendar", JSImport.Default)
 @js.native
 object default extends js.Object {

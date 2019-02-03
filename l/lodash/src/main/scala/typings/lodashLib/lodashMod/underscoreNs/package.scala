@@ -38,7 +38,9 @@ package object underscoreNs {
   type Comparator2[T1, T2] = js.Function2[/* a */ T1, /* b */ T2, scala.Boolean]
   type CondPair[T, R] = js.Tuple2[js.Function1[/* val */ T, scala.Boolean], js.Function1[/* val */ T, R]]
   // conforms
-  type ConformsPredicateObject[T] = lodashLib.lodashLibStrings.ConformsPredicateObject with T
+  type ConformsPredicateObject[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? (val : T[P]): boolean}
+    */ lodashLib.lodashLibStrings.ConformsPredicateObject with T
   type DictionaryIteratee[T] = ObjectIteratee[Dictionary[T]]
   type DictionaryIterator[T, TResult] = ObjectIterator[Dictionary[T], TResult]
   type DictionaryIteratorTypeGuard[T, S /* <: T */] = ObjectIteratorTypeGuard[Dictionary[T], S]
@@ -161,7 +163,9 @@ package object underscoreNs {
     T, 
     /* import warning: ImportType.apply Failed type conversion: {[ P in keyof T ]: P} & {[ P in K ]: never} & {[x: string] : never}[keyof T] */ js.Any
   ]
-  type PartialDeep[T] = lodashLib.lodashLibStrings.PartialDeep with T
+  type PartialDeep[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? lodash.lodash._.PartialDeep<T[P]>}
+    */ lodashLib.lodashLibStrings.PartialDeep with T
   type PartialObject[T] = lodashLib.GlobalPartial[T]
   type PropertyName = java.lang.String | scala.Double | js.Symbol
   type PropertyPath = Many[PropertyName]

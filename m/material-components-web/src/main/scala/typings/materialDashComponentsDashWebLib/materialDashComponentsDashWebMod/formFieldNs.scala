@@ -16,11 +16,13 @@ object formFieldNs extends js.Object {
   class MDCFormFieldFoundation ()
     extends atMaterialFormDashFieldLib.atMaterialFormDashFieldMod.MDCFormFieldFoundation
   
+  /* static members */
   @js.native
   object MDCFormField extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialFormDashFieldLib.atMaterialFormDashFieldMod.MDCFormField = js.native
   }
   
+  /* static members */
   @js.native
   object MDCFormFieldFoundation extends js.Object {
     val cssClasses: atMaterialFormDashFieldLib.constantsMod.cssClasses = js.native

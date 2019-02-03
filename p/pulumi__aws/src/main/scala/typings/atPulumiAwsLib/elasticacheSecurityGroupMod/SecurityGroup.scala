@@ -33,6 +33,7 @@ class SecurityGroup protected ()
   val securityGroupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup")
 @js.native
 object SecurityGroup extends js.Object {

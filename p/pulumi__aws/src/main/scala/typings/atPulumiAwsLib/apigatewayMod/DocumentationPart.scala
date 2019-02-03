@@ -20,6 +20,7 @@ class DocumentationPart protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayDocumentationPartMod.DocumentationPartArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "DocumentationPart")
 @js.native
 object DocumentationPart extends js.Object {

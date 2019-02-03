@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ThreadPool () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.Threading.ThreadPool")
 @js.native
 object ThreadPool extends js.Object {

@@ -20,6 +20,7 @@ class LaunchConfiguration protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "LaunchConfiguration")
 @js.native
 object LaunchConfiguration extends js.Object {

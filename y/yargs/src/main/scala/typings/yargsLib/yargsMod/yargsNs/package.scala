@@ -18,10 +18,14 @@ package object yargsNs {
   /** Remove undefined as a possible value for keys K in T */
   type Defined[T, K /* <: java.lang.String */] = (Omit[T, K]) with yargsLib.yargsLibStrings.Defined with T
   type InferredOptionType[O /* <: Options | PositionalOptions */] = js.UndefOr[RequiredOptionType[O] | scala.Double]
-  type InferredOptionTypes[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */] = yargsLib.yargsLibStrings.InferredOptionTypes with O
+  type InferredOptionTypes[O /* <: org.scalablytyped.runtime.StringDictionary[Options] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in keyof O ]: yargs.yargs.yargs.InferredOptionType<O[key]>}
+    */ yargsLib.yargsLibStrings.InferredOptionTypes with O
   type MiddlewareFunction[T] = js.Function1[/* args */ Arguments[T], scala.Unit]
   /** Remove keys K in T */
-  type Omit[T, K] = yargsLib.yargsLibStrings.Omit with T
+  type Omit[T, K] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in std.Exclude<keyof T, K> ]: T[key]}
+    */ yargsLib.yargsLibStrings.Omit with T
   type ParseCallback[T] = js.Function3[
     /* err */ js.UndefOr[stdLib.Error], 
     /* argv */ Arguments[T], 

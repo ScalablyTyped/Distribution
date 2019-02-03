@@ -16,6 +16,7 @@ class CanvasRenderer ()
   def this(screenWidth: scala.Double, screenHeight: scala.Double, options: pixiDotJsLib.PIXINs.RendererOptions) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "CanvasRenderer")
 @js.native
 object CanvasRenderer extends js.Object {

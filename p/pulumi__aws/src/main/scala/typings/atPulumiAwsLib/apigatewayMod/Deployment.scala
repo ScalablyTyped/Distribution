@@ -20,6 +20,7 @@ class Deployment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayDeploymentMod.DeploymentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "Deployment")
 @js.native
 object Deployment extends js.Object {

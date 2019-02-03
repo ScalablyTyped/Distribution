@@ -127,6 +127,7 @@ abstract class Layout protected () extends js.Object {
   def shouldClampCursor(line: scala.Double): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.Layout")
 @js.native
 object Layout extends js.Object {

@@ -25,6 +25,7 @@ class Writer protected ()
   def publish(topic: java.lang.String, msgs: js.Any, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): js.Any = js.native
 }
 
+/* static members */
 @JSImport("nsqjs", "Writer")
 @js.native
 object Writer extends js.Object {

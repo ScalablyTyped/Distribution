@@ -40,10 +40,7 @@ class FresnelParameters () extends js.Object {
   def serialize(): js.Any = js.native
 }
 
-/**
-  * This represents all the required information to add a fresnel effect on a material:
-  * @see http://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
-  */
+/* static members */
 @JSGlobal("BABYLON.FresnelParameters")
 @js.native
 object FresnelParameters extends js.Object {

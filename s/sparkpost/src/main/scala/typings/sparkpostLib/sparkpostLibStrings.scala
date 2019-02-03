@@ -69,26 +69,47 @@ object sparkpostLibStrings {
   @js.native
   sealed trait valid extends js.Object
   
+  @scala.inline
   def `Bounce Rule`: `Bounce Rule` = "Bounce Rule".asInstanceOf[`Bounce Rule`]
+  @scala.inline
   def Canceled: Canceled = "Canceled".asInstanceOf[Canceled]
+  @scala.inline
   def Compliance: Compliance = "Compliance".asInstanceOf[Compliance]
+  @scala.inline
   def Generating: Generating = "Generating".asInstanceOf[Generating]
+  @scala.inline
   def `List Unsubscribe`: `List Unsubscribe` = "List Unsubscribe".asInstanceOf[`List Unsubscribe`]
+  @scala.inline
   def `Manually Added`: `Manually Added` = "Manually Added".asInstanceOf[`Manually Added`]
+  @scala.inline
   def `Spam Complaint`: `Spam Complaint` = "Spam Complaint".asInstanceOf[`Spam Complaint`]
+  @scala.inline
   def SparkPostError: SparkPostError = "SparkPostError".asInstanceOf[SparkPostError]
+  @scala.inline
   def Success: Success = "Success".asInstanceOf[Success]
+  @scala.inline
   def `Unsubscribe Link`: `Unsubscribe Link` = "Unsubscribe Link".asInstanceOf[`Unsubscribe Link`]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def blocked: blocked = "blocked".asInstanceOf[blocked]
+  @scala.inline
   def invalid: invalid = "invalid".asInstanceOf[invalid]
+  @scala.inline
   def non_transactional: non_transactional = "non_transactional".asInstanceOf[non_transactional]
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def submitted: submitted = "submitted".asInstanceOf[submitted]
+  @scala.inline
   def suspended: suspended = "suspended".asInstanceOf[suspended]
+  @scala.inline
   def terminated: terminated = "terminated".asInstanceOf[terminated]
+  @scala.inline
   def transactional: transactional = "transactional".asInstanceOf[transactional]
+  @scala.inline
   def unverified: unverified = "unverified".asInstanceOf[unverified]
+  @scala.inline
   def valid: valid = "valid".asInstanceOf[valid]
 }
 

@@ -16,6 +16,7 @@ class namespaced protected () extends WebSocket {
   def this(address: java.lang.String, protocols: js.Array[java.lang.String], options: uwsLib.uwsMod.WebSocketNs.IClientOptions) = this()
 }
 
+/* static members */
 @JSImport("uws", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

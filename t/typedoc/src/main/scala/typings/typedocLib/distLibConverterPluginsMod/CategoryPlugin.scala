@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CategoryPlugin ()
   extends typedocLib.distLibConverterPluginsCategoryPluginMod.CategoryPlugin
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins", "CategoryPlugin")
 @js.native
 object CategoryPlugin extends js.Object {

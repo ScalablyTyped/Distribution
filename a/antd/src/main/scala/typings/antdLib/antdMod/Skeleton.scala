@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Skeleton ()
   extends antdLib.libSkeletonMod.default
 
+/* static members */
 @JSImport("antd", "Skeleton")
 @js.native
 object Skeleton extends js.Object {

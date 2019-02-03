@@ -43,10 +43,7 @@ class BoxGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a box geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#box
-  */
+/* static members */
 @JSImport("babylonjs", "BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {

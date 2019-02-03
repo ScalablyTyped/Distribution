@@ -53,6 +53,7 @@ class IdentityPool protected ()
   val supportedLoginProviders: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito/identityPool", "IdentityPool")
 @js.native
 object IdentityPool extends js.Object {

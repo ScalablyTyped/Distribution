@@ -48,6 +48,7 @@ class Output[T] () extends js.Object {
   def get(): T = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi/resource", "Output")
 @js.native
 object Output extends js.Object {

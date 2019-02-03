@@ -59,23 +59,7 @@ class Change ()
   ): scala.Unit = js.native
 }
 
-/**
-  * Change list entry.
-  *
-  * @property {string} id Hash of the modelName and ID.
-  * @property {string} rev The current model revision.
-  * @property {string} prev The previous model revision.
-  * @property {number} checkpoint The current checkpoint at time of the change.
-  * @property {string} modelName Model name.
-  * @property {string} modelId Model ID.
-  * @property {any} settings Extends the `Model.settings` object.
-  * @property {string} settings.hashAlgorithm Algorithm used to create cryptographic hash, used as argument
-  * to [crypto.createHash](nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm).  Default is sha1.
-  * @property {boolean} settings.ignoreErrors By default, when changes are rectified, an error will throw an exception.
-  * However, if this setting is true, then errors will not throw exceptions.
-  * @class Change
-  * @inherits {PersistedModel}
-  */
+/* static members */
 @JSImport("loopback", "Change")
 @js.native
 object Change extends js.Object {

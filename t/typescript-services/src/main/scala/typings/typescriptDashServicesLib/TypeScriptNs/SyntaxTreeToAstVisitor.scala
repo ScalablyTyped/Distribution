@@ -214,6 +214,7 @@ class SyntaxTreeToAstVisitor protected () extends ISyntaxVisitor {
   override def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SyntaxTreeToAstVisitor")
 @js.native
 object SyntaxTreeToAstVisitor extends js.Object {

@@ -205,11 +205,7 @@ class Quaternion () extends js.Object {
   def toRotationMatrix(result: Matrix): Quaternion = js.native
 }
 
-/**
-  * Class used to store quaternion data
-  * @see https://en.wikipedia.org/wiki/Quaternion
-  * @see http://doc.babylonjs.com/features/position,_rotation,_scaling
-  */
+/* static members */
 @JSGlobal("BABYLON.Quaternion")
 @js.native
 object Quaternion extends js.Object {

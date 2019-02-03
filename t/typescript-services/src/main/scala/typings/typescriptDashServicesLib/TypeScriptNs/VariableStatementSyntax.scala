@@ -71,6 +71,7 @@ class VariableStatementSyntax protected ()
   def withVariableDeclaration(variableDeclaration: VariableDeclarationSyntax): VariableStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.VariableStatementSyntax")
 @js.native
 object VariableStatementSyntax extends js.Object {

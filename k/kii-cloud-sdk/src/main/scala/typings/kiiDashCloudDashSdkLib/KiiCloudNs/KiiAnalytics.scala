@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiAnalytics () extends js.Object
 
-/**
-  * The main SDK class
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiAnalytics")
 @js.native
 object KiiAnalytics extends js.Object {

@@ -21,6 +21,7 @@ class LogGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchLogGroupMod.LogGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogGroup")
 @js.native
 object LogGroup extends js.Object {

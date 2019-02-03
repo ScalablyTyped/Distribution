@@ -37,11 +37,7 @@ class Quaternion ()
   w: scala.Double) = this()
 }
 
-/**
-  * Class used to store quaternion data
-  * @see https://en.wikipedia.org/wiki/Quaternion
-  * @see http://doc.babylonjs.com/features/position,_rotation,_scaling
-  */
+/* static members */
 @JSImport("babylonjs", "Quaternion")
 @js.native
 object Quaternion extends js.Object {

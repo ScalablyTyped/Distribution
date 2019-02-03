@@ -23,6 +23,7 @@ object imagesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
   
+  /* static members */
   @js.native
   object Image extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -41,9 +42,7 @@ object imagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenImagesMod.imagesNs.ImageCollection): mendixmodelsdkLib.distGenImagesMod.imagesNs.Image = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/images relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImageCollection extends js.Object {
     var structureTypeName: java.lang.String = js.native

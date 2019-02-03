@@ -21,6 +21,7 @@ class AccountPublicAccessBlock protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3AccountPublicAccessBlockMod.AccountPublicAccessBlockArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "AccountPublicAccessBlock")
 @js.native
 object AccountPublicAccessBlock extends js.Object {

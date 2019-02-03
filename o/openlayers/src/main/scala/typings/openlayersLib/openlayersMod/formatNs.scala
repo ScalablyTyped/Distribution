@@ -1475,15 +1475,7 @@ object formatNs extends js.Object {
     */
   class XMLFeature () extends Feature
   
-  /**
-    * @classdesc
-    * Feature format for reading and writing data in the Encoded
-    * Polyline Algorithm Format.
-    *
-    * @param opt_options
-    *     Optional configuration object.
-    * @api stable
-    */
+  /* static members */
   @js.native
   object Polyline extends js.Object {
     /**

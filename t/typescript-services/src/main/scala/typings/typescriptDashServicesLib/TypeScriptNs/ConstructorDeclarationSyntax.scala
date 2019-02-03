@@ -30,6 +30,7 @@ class ConstructorDeclarationSyntax protected () extends SyntaxNode {
   def withSemicolonToken(semicolonToken: ISyntaxToken): ConstructorDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ConstructorDeclarationSyntax")
 @js.native
 object ConstructorDeclarationSyntax extends js.Object {

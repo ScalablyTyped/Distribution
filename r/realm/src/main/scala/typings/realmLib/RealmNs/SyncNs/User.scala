@@ -37,10 +37,7 @@ class User () extends js.Object {
   def serialize(): SerializedUser | SerializedTokenUser = js.native
 }
 
-/**
-  * User
-  * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Sync.User.html }
-  */
+/* static members */
 @JSGlobal("Realm.Sync.User")
 @js.native
 object User extends js.Object {

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ChannelJoinPermission () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/ChannelJoinPermission.html
-	 */
+/* static members */
 @JSGlobal("ChannelJoinPermission")
 @js.native
 object ChannelJoinPermission extends js.Object {

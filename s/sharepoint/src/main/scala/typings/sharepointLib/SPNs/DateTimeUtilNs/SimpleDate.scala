@@ -19,6 +19,7 @@ class SimpleDate protected () extends js.Object {
   def set_year(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.DateTimeUtil.SimpleDate")
 @js.native
 object SimpleDate extends js.Object {

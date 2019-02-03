@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[OptionType] () extends MultiValue[OptionType]
 
+/* static members */
 @JSImport("react-select/lib/components/MultiValue", JSImport.Default)
 @js.native
 object default extends js.Object {

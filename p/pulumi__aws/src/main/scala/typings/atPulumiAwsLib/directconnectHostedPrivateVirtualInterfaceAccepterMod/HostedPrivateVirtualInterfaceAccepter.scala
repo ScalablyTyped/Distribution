@@ -40,6 +40,7 @@ class HostedPrivateVirtualInterfaceAccepter protected ()
   val vpnGatewayId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter", "HostedPrivateVirtualInterfaceAccepter")
 @js.native
 object HostedPrivateVirtualInterfaceAccepter extends js.Object {

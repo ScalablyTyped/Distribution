@@ -18,6 +18,7 @@ class MockPromise protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/testing/MockPromise", "MockPromise")
 @js.native
 object MockPromise extends js.Object {

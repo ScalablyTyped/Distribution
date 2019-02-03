@@ -11,6 +11,7 @@ class default[TData, TVariables] protected () extends Subscription[TData, TVaria
   def this(props: SubscriptionProps[TData, TVariables], context: SubscriptionContext) = this()
 }
 
+/* static members */
 @JSImport("react-apollo/Subscriptions", JSImport.Default)
 @js.native
 object default extends js.Object {

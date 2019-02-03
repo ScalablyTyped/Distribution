@@ -9,6 +9,7 @@ object pDashTimeoutLibStrings {
   @js.native
   sealed trait TimeoutError extends js.Object
   
+  @scala.inline
   def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
 }
 

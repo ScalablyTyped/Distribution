@@ -76,6 +76,7 @@ class namespaced protected () extends CachePolicy {
   override def toObject(): httpDashCacheDashSemanticsLib.httpDashCacheDashSemanticsMod.CachePolicyNs.CachePolicyObject = js.native
 }
 
+/* static members */
 @JSImport("http-cache-semantics", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

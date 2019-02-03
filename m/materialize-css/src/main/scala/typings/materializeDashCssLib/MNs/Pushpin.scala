@@ -14,6 +14,7 @@ class Pushpin () extends Component[PushpinOptions] {
   var originalOffset: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("M.Pushpin")
 @js.native
 object Pushpin extends js.Object {

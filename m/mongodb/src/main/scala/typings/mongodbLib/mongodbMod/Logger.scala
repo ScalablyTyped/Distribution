@@ -44,6 +44,7 @@ class Logger protected () extends js.Object {
   def warn(message: java.lang.String, state: LoggerState): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("mongodb", "Logger")
 @js.native
 object Logger extends js.Object {

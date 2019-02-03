@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ThemeGenerator ()
   extends officeDashUiDashFabricDashReactLib.libComponentsThemeGeneratorThemeGeneratorMod.ThemeGenerator
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ThemeGenerator", "ThemeGenerator")
 @js.native
 object ThemeGenerator extends js.Object {

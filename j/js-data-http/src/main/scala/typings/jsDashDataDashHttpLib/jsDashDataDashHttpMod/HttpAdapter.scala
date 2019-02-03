@@ -111,6 +111,7 @@ class HttpAdapter ()
   def updateMany(mapper: js.Any, records: js.Any, opts: js.Any): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("js-data-http", "HttpAdapter")
 @js.native
 object HttpAdapter extends js.Object {

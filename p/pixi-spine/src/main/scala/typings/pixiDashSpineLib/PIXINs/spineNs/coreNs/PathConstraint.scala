@@ -65,6 +65,7 @@ class PathConstraint protected () extends Constraint {
   override def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.PathConstraint")
 @js.native
 object PathConstraint extends js.Object {

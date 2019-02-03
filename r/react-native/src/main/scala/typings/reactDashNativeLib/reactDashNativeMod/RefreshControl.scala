@@ -8,10 +8,11 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "RefreshControl")
 @js.native
-class RefreshControl () extends js.Object
+class RefreshControl ()
+  extends reactLib.reactMod.Component[RefreshControlProps, js.Object, js.Any]
 
-/* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "RefreshControl")
+/* static members */
+@JSImport("react-native", "RefreshControl")
 @js.native
 object RefreshControl extends js.Object {
   var SIZE: js.Object = js.native

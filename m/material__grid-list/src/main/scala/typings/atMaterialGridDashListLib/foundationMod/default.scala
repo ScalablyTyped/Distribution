@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCGridListFoundation
 
+/* static members */
 @JSImport("@material/grid-list/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

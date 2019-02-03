@@ -25,7 +25,7 @@ abstract class ProcessDiagnosticInfo () extends js.Object {
   var processStartTime: stdLib.Date = js.native
 }
 
-/** Provides diagnostic information about a process, such as CPU usage, disk usage, memory usage and so on. */
+/* static members */
 @JSGlobal("Windows.System.Diagnostics.ProcessDiagnosticInfo")
 @js.native
 object ProcessDiagnosticInfo extends js.Object {

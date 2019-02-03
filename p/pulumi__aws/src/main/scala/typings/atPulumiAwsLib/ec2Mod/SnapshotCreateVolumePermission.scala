@@ -20,6 +20,7 @@ class SnapshotCreateVolumePermission protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2SnapshotCreateVolumePermissionMod.SnapshotCreateVolumePermissionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "SnapshotCreateVolumePermission")
 @js.native
 object SnapshotCreateVolumePermission extends js.Object {

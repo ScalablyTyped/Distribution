@@ -27,6 +27,7 @@ class Version ()
   def setSuffix(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/compiler/plugin_pb", "Version")
 @js.native
 object Version extends js.Object {

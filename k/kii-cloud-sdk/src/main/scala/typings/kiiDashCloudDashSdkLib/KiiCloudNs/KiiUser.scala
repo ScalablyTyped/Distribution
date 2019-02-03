@@ -1074,9 +1074,7 @@ class KiiUser () extends js.Object {
   ): js.Promise[KiiUser] = js.native
 }
 
-/**
-  * Represents a KiiUser object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiUser")
 @js.native
 object KiiUser extends js.Object {

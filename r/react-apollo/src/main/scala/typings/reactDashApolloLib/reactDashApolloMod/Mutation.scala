@@ -12,6 +12,7 @@ class Mutation[TData, TVariables] protected ()
   def this(props: reactDashApolloLib.mutationMod.MutationProps[TData, TVariables], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("react-apollo", "Mutation")
 @js.native
 object Mutation extends js.Object {

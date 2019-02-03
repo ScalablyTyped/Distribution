@@ -21,10 +21,15 @@ object browserDashHarnessLibStrings {
   @js.native
   sealed trait windowDOTonerror extends js.Object
   
+  @scala.inline
   def consoleDOTerror: consoleDOTerror = "console.error".asInstanceOf[consoleDOTerror]
+  @scala.inline
   def consoleDOTlog: consoleDOTlog = "console.log".asInstanceOf[consoleDOTlog]
+  @scala.inline
   def consoleDOTwarn: consoleDOTwarn = "console.warn".asInstanceOf[consoleDOTwarn]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def windowDOTonerror: windowDOTonerror = "window.onerror".asInstanceOf[windowDOTonerror]
 }
 

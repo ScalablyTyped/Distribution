@@ -28,10 +28,7 @@ class KhronosTextureContainer protected ()
   arrayBuffer: js.Any, facesExpected: scala.Double, threeDExpected: scala.Boolean, textureArrayExpected: scala.Boolean) = this()
 }
 
-/**
-  * for description see https://www.khronos.org/opengles/sdk/tools/KTX/
-  * for file layout see https://www.khronos.org/opengles/sdk/tools/KTX/file_format_spec/
-  */
+/* static members */
 @JSImport("babylonjs", "KhronosTextureContainer")
 @js.native
 object KhronosTextureContainer extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BadgeUpdateManager () extends js.Object
 
-/** Creates BadgeUpdater objects that you use to manipulate a tile's badge overlay. This class also provides access to the XML content of the system-provided badge templates so that you can customize that content for use in updating your badges. */
+/* static members */
 @JSGlobal("Windows.UI.Notifications.BadgeUpdateManager")
 @js.native
 object BadgeUpdateManager extends js.Object {

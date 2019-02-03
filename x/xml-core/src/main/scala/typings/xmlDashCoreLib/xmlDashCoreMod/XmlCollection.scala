@@ -39,6 +39,7 @@ class XmlCollection[I /* <: xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.XmlObject */
   override def Sort(cb: js.Function2[I, I, scala.Double]): xmlDashCoreLib.xmlDashCoreMod.XmlCoreNs.ICollection[I] = js.native
 }
 
+/* static members */
 @JSImport("xml-core", "XmlCollection")
 @js.native
 object XmlCollection extends js.Object {

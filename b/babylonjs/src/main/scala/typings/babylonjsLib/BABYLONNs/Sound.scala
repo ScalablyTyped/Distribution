@@ -266,11 +266,7 @@ class Sound protected () extends js.Object {
   def updateOptions(options: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Defines a sound that can be played in the application.
-  * The sound can either be an ambient track or a simple sound played in reaction to a user action.
-  * @see http://doc.babylonjs.com/how_to/playing_sounds_and_music
-  */
+/* static members */
 @JSGlobal("BABYLON.Sound")
 @js.native
 object Sound extends js.Object {

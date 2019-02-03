@@ -2,7 +2,7 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **6262** Javascript libraries,
+This is the home of Scala.js typings for **6263** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -11,13 +11,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               184149      7210845       692781      2202250      4315814
+ Scala               184204      7264409       692947      2203812      4367650
  Markdown              5922        60188         1147            0        59041
  JSON                     5           29            0            0           29
  Makefile                 2           25            6            0           19
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               190079      7271093       693934      2202250      4374909
+ Total               190134      7324657       694100      2203812      4426745
 --------------------------------------------------------------------------------
 
 ```
@@ -83,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201902030534")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201902031150")
 ```
 
 ### `build.sbt`
@@ -695,11 +695,13 @@ As you might imagine, converting these to Scala is not straightforward.
 For static cases we can evaluate them and generate interfaces (though it's not implemented yet!),
 but for generic cases (say `Partial<T>`) there isn't much we can do for now.
 
-Just to get things working, we mostly ignore the effects of the type mappings in Scala for now.
+Just to get things working, we mostly ignore the effects of the type mappings in Scala for now,
+ and keep the transformation in a comment:
+
 ```scala
-type Partial[T] = stdLib.stdLibStrings.Partial with T
-type Pick[T, K /* <: java.lang.String */] = stdLib.stdLibStrings.Pick with T
-type Record[K /* <: java.lang.String */, T] = stdLib.stdLibStrings.Record with js.Any
+type Partial[T] = /* import warning: ImportType.apply c Unsupported type mapping:
+  {[ P in keyof T ]:? T[P]}
+  */ stdLib.stdLibStrings.Partial with T
 ```
 This is again not necessarily awesome, but it works.
 

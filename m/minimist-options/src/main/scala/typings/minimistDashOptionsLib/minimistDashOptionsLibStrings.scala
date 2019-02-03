@@ -15,8 +15,11 @@ object minimistDashOptionsLibStrings {
   @js.native
   sealed trait string extends js.Object
   
+  @scala.inline
   def Options: Options = "Options".asInstanceOf[Options]
+  @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
 }
 

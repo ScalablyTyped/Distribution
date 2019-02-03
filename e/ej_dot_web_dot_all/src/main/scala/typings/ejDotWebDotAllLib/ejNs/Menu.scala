@@ -98,6 +98,7 @@ class Menu protected () extends Widget {
   def showItems(itemID: js.Array[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Menu")
 @js.native
 object Menu extends js.Object {

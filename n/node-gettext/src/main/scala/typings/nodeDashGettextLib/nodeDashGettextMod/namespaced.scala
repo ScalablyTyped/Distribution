@@ -61,6 +61,7 @@ class namespaced () extends GetText {
   override def warn(message: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("node-gettext", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

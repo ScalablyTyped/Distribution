@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Picker ()
   extends reactLib.reactMod.Component[PickerProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("proton-native", "Picker")
 @js.native
 object Picker extends js.Object {

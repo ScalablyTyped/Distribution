@@ -40,6 +40,7 @@ class Response protected ()
   val statusCode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/response", "Response")
 @js.native
 object Response extends js.Object {

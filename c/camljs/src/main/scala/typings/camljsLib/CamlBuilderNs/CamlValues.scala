@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CamlValues () extends js.Object
 
+/* static members */
 @JSGlobal("CamlBuilder.CamlValues")
 @js.native
 object CamlValues extends js.Object {

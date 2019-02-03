@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LogicOperator () extends js.Object
 
+/* static members */
 @JSGlobal("SFS2X.Entities.Match.LogicOperator")
 @js.native
 object LogicOperator extends js.Object {

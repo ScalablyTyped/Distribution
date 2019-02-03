@@ -16,6 +16,7 @@ class ProtectedValue protected () extends js.Object {
   def setSalt(newSalt: stdLib.ArrayBuffer): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "ProtectedValue")
 @js.native
 object ProtectedValue extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Push () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Push")
 @js.native
 object Push extends js.Object {

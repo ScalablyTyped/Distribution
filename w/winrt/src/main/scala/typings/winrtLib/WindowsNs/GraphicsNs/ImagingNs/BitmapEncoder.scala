@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BitmapEncoder () extends IBitmapEncoder
 
+/* static members */
 @JSGlobal("Windows.Graphics.Imaging.BitmapEncoder")
 @js.native
 object BitmapEncoder extends js.Object {

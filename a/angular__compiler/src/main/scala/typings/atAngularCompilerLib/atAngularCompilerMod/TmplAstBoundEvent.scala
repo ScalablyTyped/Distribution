@@ -15,6 +15,7 @@ class TmplAstBoundEvent protected ()
   def this(name: java.lang.String, `type`: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.ParsedEventType, handler: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, target: scala.Null, phase: scala.Null, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler", "TmplAstBoundEvent")
 @js.native
 object TmplAstBoundEvent extends js.Object {

@@ -73,6 +73,7 @@ class TryStatementSyntax protected ()
   def withTryKeyword(tryKeyword: ISyntaxToken): TryStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TryStatementSyntax")
 @js.native
 object TryStatementSyntax extends js.Object {

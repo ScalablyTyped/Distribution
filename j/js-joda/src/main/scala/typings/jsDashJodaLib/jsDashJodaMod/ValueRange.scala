@@ -33,6 +33,7 @@ class ValueRange ()
   override def smallestMaximum(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ValueRange")
 @js.native
 object ValueRange extends js.Object {

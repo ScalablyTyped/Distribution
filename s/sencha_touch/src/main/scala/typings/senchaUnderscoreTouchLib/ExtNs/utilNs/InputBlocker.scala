@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class InputBlocker () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.InputBlocker")
 @js.native
 object InputBlocker extends js.Object {

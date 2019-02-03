@@ -20,6 +20,7 @@ class ReplicationInstance protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dmsReplicationInstanceMod.ReplicationInstanceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms", "ReplicationInstance")
 @js.native
 object ReplicationInstance extends js.Object {

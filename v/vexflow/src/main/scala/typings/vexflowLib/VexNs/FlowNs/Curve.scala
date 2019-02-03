@@ -17,6 +17,7 @@ class Curve protected () extends js.Object {
   def setNotes(from: Note, to: Note): Curve = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Curve")
 @js.native
 object Curve extends js.Object {

@@ -41,6 +41,7 @@ class EfsLocation protected ()
   val uri: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation")
 @js.native
 object EfsLocation extends js.Object {

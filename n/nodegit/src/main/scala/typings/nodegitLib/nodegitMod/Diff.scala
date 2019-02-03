@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Diff ()
   extends nodegitLib.diffMod.Diff
 
+/* static members */
 @JSImport("nodegit", "Diff")
 @js.native
 object Diff extends js.Object {

@@ -23,6 +23,7 @@ class Enum protected () extends IEnum {
   def resolveSymbols(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.core.Enum")
 @js.native
 object Enum extends js.Object {

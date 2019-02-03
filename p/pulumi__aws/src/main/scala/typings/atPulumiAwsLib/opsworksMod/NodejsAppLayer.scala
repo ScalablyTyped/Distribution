@@ -20,6 +20,7 @@ class NodejsAppLayer protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksNodejsAppLayerMod.NodejsAppLayerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "NodejsAppLayer")
 @js.native
 object NodejsAppLayer extends js.Object {

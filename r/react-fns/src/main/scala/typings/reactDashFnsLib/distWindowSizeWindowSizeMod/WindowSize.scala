@@ -22,6 +22,7 @@ class WindowSize ()
   def handleWindowSize(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-fns/dist/WindowSize/WindowSize", "WindowSize")
 @js.native
 object WindowSize extends js.Object {

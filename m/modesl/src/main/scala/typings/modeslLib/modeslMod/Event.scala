@@ -22,6 +22,7 @@ class Event protected () extends js.Object {
   def setPriority(priority: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("modesl", "Event")
 @js.native
 object Event extends js.Object {

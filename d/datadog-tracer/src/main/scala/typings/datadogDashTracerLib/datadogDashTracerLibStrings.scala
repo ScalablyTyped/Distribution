@@ -9,6 +9,7 @@ object datadogDashTracerLibStrings {
   @js.native
   sealed trait error extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
 }
 

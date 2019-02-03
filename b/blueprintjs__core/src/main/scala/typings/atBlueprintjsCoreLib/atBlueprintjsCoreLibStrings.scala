@@ -102,37 +102,69 @@ object atBlueprintjsCoreLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def `auto-end`: `auto-end` = "auto-end".asInstanceOf[`auto-end`]
+  @scala.inline
   def `auto-start`: `auto-start` = "auto-start".asInstanceOf[`auto-start`]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
+  @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
   def `click-target`: `click-target` = "click-target".asInstanceOf[`click-target`]
+  @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def hover: hover = "hover".asInstanceOf[hover]
+  @scala.inline
   def `hover-target`: `hover-target` = "hover-target".asInstanceOf[`hover-target`]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def `left-bottom`: `left-bottom` = "left-bottom".asInstanceOf[`left-bottom`]
+  @scala.inline
   def `left-top`: `left-top` = "left-top".asInstanceOf[`left-top`]
+  @scala.inline
   def lock: lock = "lock".asInstanceOf[lock]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
+  @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
+  @scala.inline
   def push: push = "push".asInstanceOf[push]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def `right-bottom`: `right-bottom` = "right-bottom".asInstanceOf[`right-bottom`]
+  @scala.inline
   def `right-top`: `right-top` = "right-top".asInstanceOf[`right-top`]
+  @scala.inline
   def safeInvokeMember: safeInvokeMember = "safeInvokeMember".asInstanceOf[safeInvokeMember]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
+  @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

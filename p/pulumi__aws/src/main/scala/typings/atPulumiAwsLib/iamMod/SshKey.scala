@@ -20,6 +20,7 @@ class SshKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamSshKeyMod.SshKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "SshKey")
 @js.native
 object SshKey extends js.Object {

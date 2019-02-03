@@ -12,6 +12,10 @@ trait ServiceError
     */
   var code: js.UndefOr[status] = js.undefined
   /**
+    * Original status details string
+    */
+  var details: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Trailing metadata sent with the status, if applicable
     */
   var metadata: js.UndefOr[Metadata] = js.undefined

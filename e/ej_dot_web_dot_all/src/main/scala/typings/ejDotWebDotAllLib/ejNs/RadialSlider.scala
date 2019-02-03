@@ -25,6 +25,7 @@ class RadialSlider protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.RadialSlider")
 @js.native
 object RadialSlider extends js.Object {

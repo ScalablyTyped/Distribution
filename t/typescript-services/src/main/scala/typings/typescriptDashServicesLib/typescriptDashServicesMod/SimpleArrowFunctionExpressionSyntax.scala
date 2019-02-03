@@ -12,6 +12,7 @@ class SimpleArrowFunctionExpressionSyntax protected ()
   def this(identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, equalsGreaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SimpleArrowFunctionExpressionSyntax")
 @js.native
 object SimpleArrowFunctionExpressionSyntax extends js.Object {

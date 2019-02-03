@@ -31,6 +31,7 @@ class Tree[T] ()
   /* private */ def renderNodes(treeNodes: js.Any, currentPath: js.Any, className: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tree/tree", "Tree")
 @js.native
 object Tree extends js.Object {

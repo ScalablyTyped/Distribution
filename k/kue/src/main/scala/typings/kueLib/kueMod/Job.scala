@@ -75,6 +75,7 @@ class Job protected ()
   def update(fn: js.Function): Job = js.native
 }
 
+/* static members */
 @JSImport("kue", "Job")
 @js.native
 object Job extends js.Object {

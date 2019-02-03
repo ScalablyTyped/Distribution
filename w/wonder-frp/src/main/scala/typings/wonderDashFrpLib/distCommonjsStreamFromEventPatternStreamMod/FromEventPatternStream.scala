@@ -14,6 +14,7 @@ class FromEventPatternStream protected ()
   var _removeHandler: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/stream/FromEventPatternStream", "FromEventPatternStream")
 @js.native
 object FromEventPatternStream extends js.Object {

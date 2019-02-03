@@ -12,7 +12,9 @@ object apostropheLibStrings {
   @js.native
   sealed trait user extends js.Object
   
+  @scala.inline
   def AposConstructor: AposConstructor = "AposConstructor".asInstanceOf[AposConstructor]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
 }
 

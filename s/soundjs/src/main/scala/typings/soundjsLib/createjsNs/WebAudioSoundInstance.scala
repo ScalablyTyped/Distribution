@@ -14,6 +14,7 @@ class WebAudioSoundInstance protected () extends AbstractSoundInstance {
   var sourceNode: stdLib.AudioNode = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.WebAudioSoundInstance")
 @js.native
 object WebAudioSoundInstance extends js.Object {

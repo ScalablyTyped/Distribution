@@ -17,6 +17,7 @@ class Captcha protected () extends Widget {
   var model_Captcha: ejDotWebDotAllLib.ejNs.CaptchaNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Captcha")
 @js.native
 object Captcha extends js.Object {

@@ -12,6 +12,7 @@ class Writer[S, T] protected ()
   def this(story: js.Array[S], value: T) = this()
 }
 
+/* static members */
 @JSImport("tsmonad", "Writer")
 @js.native
 object Writer extends js.Object {

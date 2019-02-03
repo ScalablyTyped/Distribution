@@ -12,7 +12,9 @@ object atVueComponentDashCompilerDashUtilsLibStrings {
   @js.native
   sealed trait space extends js.Object
   
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
+  @scala.inline
   def space: space = "space".asInstanceOf[space]
 }
 

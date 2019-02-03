@@ -18,9 +18,13 @@ object fnvDashLiteLibStrings {
   @js.native
   sealed trait hex extends js.Object
   
+  @scala.inline
   def base36: base36 = "base36".asInstanceOf[base36]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def base64Url: base64Url = "base64Url".asInstanceOf[base64Url]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
 }
 

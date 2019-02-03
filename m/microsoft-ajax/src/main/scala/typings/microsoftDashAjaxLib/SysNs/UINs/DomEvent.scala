@@ -113,10 +113,7 @@ class DomEvent protected () extends js.Object {
   def stopPropagation(): scala.Unit = js.native
 }
 
-/**
-  * Provides cross-browser access to DOM event properties and helper APIs that are used to attach handlers to DOM element events.
-  * @see {@link http://msdn.microsoft.com/en-us/library/bb310935(v=vs.100).aspx}
-  */
+/* static members */
 @JSGlobal("Sys.UI.DomEvent")
 @js.native
 object DomEvent extends js.Object {

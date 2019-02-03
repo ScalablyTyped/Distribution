@@ -22,9 +22,7 @@ class SubEmitter protected ()
   particleSystem: babylonjsLib.BABYLONNs.ParticleSystem) = this()
 }
 
-/**
-  * Sub emitter class used to emit particles from an existing particle
-  */
+/* static members */
 @JSImport("babylonjs", "SubEmitter")
 @js.native
 object SubEmitter extends js.Object {

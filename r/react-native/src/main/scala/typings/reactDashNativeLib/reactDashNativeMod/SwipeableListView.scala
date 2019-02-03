@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SwipeableListView ()
   extends reactLib.reactMod.Component[SwipeableListViewProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native", "SwipeableListView")
 @js.native
 object SwipeableListView extends js.Object {

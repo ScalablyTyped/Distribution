@@ -18,9 +18,13 @@ object eachLibStrings {
   @js.native
   sealed trait item extends js.Object
   
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def item: item = "item".asInstanceOf[item]
 }
 

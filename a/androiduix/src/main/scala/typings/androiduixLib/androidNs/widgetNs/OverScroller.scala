@@ -85,6 +85,7 @@ class OverScroller () extends js.Object {
   def timePassed(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.OverScroller")
 @js.native
 object OverScroller extends js.Object {

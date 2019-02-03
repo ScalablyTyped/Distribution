@@ -39,6 +39,7 @@ class Type ()
   def setSyntax(value: Syntax): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/type_pb", "Type")
 @js.native
 object Type extends js.Object {

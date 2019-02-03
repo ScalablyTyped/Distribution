@@ -12,6 +12,7 @@ class ArrayLiteralExpressionSyntax protected ()
   def this(openBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expressions: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, closeBracketToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ArrayLiteralExpressionSyntax")
 @js.native
 object ArrayLiteralExpressionSyntax extends js.Object {

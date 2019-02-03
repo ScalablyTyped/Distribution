@@ -26,6 +26,7 @@ class GestureDetector () extends js.Object {
   def setOnGestureListener(listener: androiduixLib.ukNs.coNs.senabNs.photoviewNs.GestureDetectorNs.OnGestureListener): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("uk.co.senab.photoview.GestureDetector")
 @js.native
 object GestureDetector extends js.Object {

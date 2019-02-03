@@ -12,7 +12,9 @@ object rosieLibStrings {
   @js.native
   sealed trait IFactoryStatic extends js.Object
   
+  @scala.inline
   def IFactory: IFactory = "IFactory".asInstanceOf[IFactory]
+  @scala.inline
   def IFactoryStatic: IFactoryStatic = "IFactoryStatic".asInstanceOf[IFactoryStatic]
 }
 

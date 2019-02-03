@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends AutoComplete
 
+/* static members */
 @JSImport("material-ui/AutoComplete", JSImport.Default)
 @js.native
 object default extends js.Object {

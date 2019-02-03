@@ -66,6 +66,7 @@ class ReturnStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ReturnStatementSyntax")
 @js.native
 object ReturnStatementSyntax extends js.Object {

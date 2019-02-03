@@ -384,6 +384,7 @@ class Plot ()
   def selections(datasets: js.Array[plottableLib.buildSrcCoreDatasetMod.Dataset]): plottableLib.buildSrcCoreInterfacesMod.SimpleSelection[_] = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/plot", "Plot")
 @js.native
 object Plot extends js.Object {

@@ -12,7 +12,9 @@ object parseDashMockdbLibStrings {
   @js.native
   sealed trait beforeSave extends js.Object
   
+  @scala.inline
   def beforeDelete: beforeDelete = "beforeDelete".asInstanceOf[beforeDelete]
+  @scala.inline
   def beforeSave: beforeSave = "beforeSave".asInstanceOf[beforeSave]
 }
 

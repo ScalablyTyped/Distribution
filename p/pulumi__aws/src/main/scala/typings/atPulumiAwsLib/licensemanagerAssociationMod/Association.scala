@@ -28,6 +28,7 @@ class Association protected ()
   val resourceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/licensemanager/association", "Association")
 @js.native
 object Association extends js.Object {

@@ -21,11 +21,7 @@ class Model ()
   def this(nodedataarray: js.Array[js.Object]) = this()
 }
 
-/*
-  * Models hold the essential data of a diagram, describing the basic entities and their properties and relationships
-  * without specifying the appearance and behavior of the Nodes and Links and Groups that represent them visually.
-  * Models tend to hold only relatively simple data, making them easy to persist by serialization as JSON or XML formatted text.
-  */
+/* static members */
 @JSImport("go", "Model")
 @js.native
 object Model extends js.Object {

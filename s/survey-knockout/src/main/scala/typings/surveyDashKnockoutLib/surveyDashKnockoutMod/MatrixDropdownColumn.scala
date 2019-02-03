@@ -55,6 +55,7 @@ class MatrixDropdownColumn protected ()
   /* protected */ def updateTemplateQuestion(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "MatrixDropdownColumn")
 @js.native
 object MatrixDropdownColumn extends js.Object {

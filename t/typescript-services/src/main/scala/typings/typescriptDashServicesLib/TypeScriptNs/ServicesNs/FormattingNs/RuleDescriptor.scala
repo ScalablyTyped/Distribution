@@ -13,6 +13,7 @@ class RuleDescriptor protected () extends js.Object {
   var RightTokenRange: typescriptDashServicesLib.TypeScriptNs.ServicesNs.FormattingNs.SharedNs.TokenRange = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.RuleDescriptor")
 @js.native
 object RuleDescriptor extends js.Object {

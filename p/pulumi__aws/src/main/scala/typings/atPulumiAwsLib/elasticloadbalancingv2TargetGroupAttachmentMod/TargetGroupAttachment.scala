@@ -36,6 +36,7 @@ class TargetGroupAttachment protected ()
   val targetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancingv2/targetGroupAttachment", "TargetGroupAttachment")
 @js.native
 object TargetGroupAttachment extends js.Object {

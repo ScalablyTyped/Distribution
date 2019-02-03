@@ -26,6 +26,7 @@ class SmsChannel protected ()
   val transactionalMessagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint/smsChannel", "SmsChannel")
 @js.native
 object SmsChannel extends js.Object {

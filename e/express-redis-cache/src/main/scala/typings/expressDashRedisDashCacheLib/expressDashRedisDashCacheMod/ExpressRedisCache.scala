@@ -12,6 +12,7 @@ class ExpressRedisCache ()
   def this(options: expressDashRedisDashCacheLib.expressDashRedisDashCacheMod.expressRedisCacheNs.Options) = this()
 }
 
+/* static members */
 @JSImport("express-redis-cache", "ExpressRedisCache")
 @js.native
 object ExpressRedisCache extends js.Object {

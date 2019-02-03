@@ -12,6 +12,7 @@ class Query protected ()
   def this(repo: atFirebaseDatabaseLib.distSrcCoreRepoMod.Repo, path: atFirebaseDatabaseLib.distSrcCoreUtilPathMod.Path, `queryParams_`: atFirebaseDatabaseLib.distSrcCoreViewQueryParamsMod.QueryParams, `orderByCalled_`: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("@firebase/database", "Query")
 @js.native
 object Query extends js.Object {

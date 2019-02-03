@@ -211,6 +211,7 @@ class Gantt protected () extends Widget {
   def updateTaskId(currentId: scala.Double, newId: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Gantt")
 @js.native
 object Gantt extends js.Object {

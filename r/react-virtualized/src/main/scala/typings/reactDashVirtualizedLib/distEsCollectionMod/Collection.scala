@@ -27,6 +27,7 @@ class Collection ()
   def recomputeCellSizesAndPositions(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/Collection", "Collection")
 @js.native
 object Collection extends js.Object {

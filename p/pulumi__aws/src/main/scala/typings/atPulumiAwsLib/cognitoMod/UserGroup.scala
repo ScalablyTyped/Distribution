@@ -20,6 +20,7 @@ class UserGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cognitoUserGroupMod.UserGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cognito", "UserGroup")
 @js.native
 object UserGroup extends js.Object {

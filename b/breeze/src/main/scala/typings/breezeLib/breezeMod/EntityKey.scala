@@ -13,6 +13,7 @@ class EntityKey protected ()
   def this(entityType: breezeLib.breezeNs.EntityType, keyValues: js.Array[_]) = this()
 }
 
+/* static members */
 @JSImport("breeze", "EntityKey")
 @js.native
 object EntityKey extends js.Object {

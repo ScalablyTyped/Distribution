@@ -124,6 +124,7 @@ class EntityManager () extends js.Object {
   def setProperties(config: EntityManagerProperties): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.EntityManager")
 @js.native
 object EntityManager extends js.Object {

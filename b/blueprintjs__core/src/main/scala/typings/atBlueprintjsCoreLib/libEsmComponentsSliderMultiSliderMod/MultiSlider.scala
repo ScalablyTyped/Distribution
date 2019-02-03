@@ -44,6 +44,7 @@ class MultiSlider ()
   /* private */ def updateTickSize(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider")
 @js.native
 object MultiSlider extends js.Object {

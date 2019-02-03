@@ -9,14 +9,28 @@ import scala.scalajs.js.annotation._
 @js.native
 object ProjNs extends js.Object {
   @js.native
-  class CRS protected ()
-    extends leafletLib.leafletMod.CRS {
+  class CRS protected () extends js.Object {
     def this(projection: proj4Lib.proj4Mod.proj4Ns.InterfaceProjection) = this()
     def this(code: java.lang.String, proj4def: java.lang.String) = this()
     def this(projection: proj4Lib.proj4Mod.proj4Ns.InterfaceProjection, options: ProjCRSOptions) = this()
     def this(code: java.lang.String, proj4def: java.lang.String, options: ProjCRSOptions) = this()
+    var code: js.UndefOr[java.lang.String] = js.native
+    var infinite: scala.Boolean = js.native
     var projection: leafletLib.leafletMod.Projection = js.native
     var transformation: leafletLib.leafletMod.Transformation = js.native
+    var wrapLat: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.native
+    var wrapLng: js.UndefOr[js.Tuple2[scala.Double, scala.Double]] = js.native
+    def distance(latlng1: leafletLib.leafletMod.LatLngExpression, latlng2: leafletLib.leafletMod.LatLngExpression): scala.Double = js.native
+    def getProjectedBounds(zoom: scala.Double): leafletLib.leafletMod.Bounds = js.native
+    def latLngToPoint(latlng: leafletLib.leafletMod.LatLngExpression, zoom: scala.Double): leafletLib.leafletMod.Point = js.native
+    def pointToLatLng(point: leafletLib.leafletMod.PointExpression, zoom: scala.Double): leafletLib.leafletMod.LatLng = js.native
+    def project(latlng: leafletLib.leafletMod.LatLng): leafletLib.leafletMod.Point = js.native
+    def project(latlng: leafletLib.leafletMod.LatLngLiteral): leafletLib.leafletMod.Point = js.native
+    def scale(zoom: scala.Double): scala.Double = js.native
+    def unproject(point: leafletLib.leafletMod.PointExpression): leafletLib.leafletMod.LatLng = js.native
+    def wrapLatLng(latlng: leafletLib.leafletMod.LatLng): leafletLib.leafletMod.LatLng = js.native
+    def wrapLatLng(latlng: leafletLib.leafletMod.LatLngLiteral): leafletLib.leafletMod.LatLng = js.native
+    def zoom(scale: scala.Double): scala.Double = js.native
   }
   
   @js.native

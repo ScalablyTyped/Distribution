@@ -118,6 +118,7 @@ class ClusterInstance protected ()
   val writer: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/neptune/clusterInstance", "ClusterInstance")
 @js.native
 object ClusterInstance extends js.Object {

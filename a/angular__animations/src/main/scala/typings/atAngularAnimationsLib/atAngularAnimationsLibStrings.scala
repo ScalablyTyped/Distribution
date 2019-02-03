@@ -9,6 +9,7 @@ object atAngularAnimationsLibStrings {
   @js.native
   sealed trait `*` extends js.Object
   
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
 }
 

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SQLite () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.SQLite")
 @js.native
 object SQLite extends js.Object {

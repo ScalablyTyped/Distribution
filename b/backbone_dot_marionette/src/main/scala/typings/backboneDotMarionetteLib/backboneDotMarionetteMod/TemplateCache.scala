@@ -114,6 +114,7 @@ class TemplateCache () extends DomMixin {
   def setInnerContent_MTemplateCache(el: js.Any, html: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("backbone.marionette", "TemplateCache")
 @js.native
 object TemplateCache extends js.Object {

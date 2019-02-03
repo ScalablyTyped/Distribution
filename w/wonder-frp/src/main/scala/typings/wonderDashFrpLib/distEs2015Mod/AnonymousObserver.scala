@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AnonymousObserver ()
   extends wonderDashFrpLib.distEs2015ObserverAnonymousObserverMod.AnonymousObserver
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "AnonymousObserver")
 @js.native
 object AnonymousObserver extends js.Object {

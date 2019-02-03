@@ -31,6 +31,7 @@ class PropertyBase[TDefinition] () extends PropertyBaseDefinition {
   def toJSON(): TDefinition = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "PropertyBase")
 @js.native
 object PropertyBase extends js.Object {

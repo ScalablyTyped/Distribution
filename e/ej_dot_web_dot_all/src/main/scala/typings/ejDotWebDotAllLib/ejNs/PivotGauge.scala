@@ -53,6 +53,7 @@ class PivotGauge protected () extends Widget {
   def setOlapReport(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.PivotGauge")
 @js.native
 object PivotGauge extends js.Object {

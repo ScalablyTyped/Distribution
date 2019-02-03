@@ -11,6 +11,7 @@ class Elastic () extends Ease {
   def config(amplitude: scala.Double, period: scala.Double): Elastic = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.Elastic")
 @js.native
 object Elastic extends js.Object {

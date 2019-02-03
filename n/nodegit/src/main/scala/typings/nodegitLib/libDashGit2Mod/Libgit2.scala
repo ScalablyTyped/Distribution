@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Libgit2 () extends js.Object
 
+/* static members */
 @JSImport("nodegit/lib-git2", "Libgit2")
 @js.native
 object Libgit2 extends js.Object {

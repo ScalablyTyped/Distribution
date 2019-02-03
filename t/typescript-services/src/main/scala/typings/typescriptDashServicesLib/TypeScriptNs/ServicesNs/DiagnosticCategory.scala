@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DiagnosticCategory () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.DiagnosticCategory")
 @js.native
 object DiagnosticCategory extends js.Object {

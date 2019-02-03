@@ -89,6 +89,7 @@ object ^ extends js.Object {
   ): scala.Double = js.native
   def getDocument(): js.UndefOr[reactLib.Document] = js.native
   def getDocument(rootElement: reactLib.HTMLElement): js.UndefOr[reactLib.Document] = js.native
+  def getElementIndexPath(fromElement: reactLib.HTMLElement, toElement: reactLib.HTMLElement): js.Array[scala.Double] = js.native
   def getFirstFocusable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
   def getFirstFocusable(
     rootElement: reactLib.HTMLElement,
@@ -101,6 +102,7 @@ object ^ extends js.Object {
     currentElement: reactLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): reactLib.HTMLElement | scala.Null = js.native
+  def getFocusableByIndexPath(parent: reactLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[reactLib.HTMLElement] = js.native
   def getId(): java.lang.String = js.native
   def getId(prefix: java.lang.String): java.lang.String = js.native
   def getInitials(displayName: java.lang.String, isRtl: scala.Boolean): java.lang.String = js.native

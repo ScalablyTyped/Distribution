@@ -57,6 +57,7 @@ object nodeFetchNs extends js.Object {
     url: nodeDashFetchLib.nodeDashFetchMod.Request,
     init: nodeDashFetchLib.nodeDashFetchMod.RequestInit
   ): js.Promise[nodeDashFetchLib.nodeDashFetchMod.Response] = js.native
+  /* static members */
   @js.native
   object Response extends js.Object {
     def error(): nodeDashFetchLib.nodeDashFetchMod.Response = js.native

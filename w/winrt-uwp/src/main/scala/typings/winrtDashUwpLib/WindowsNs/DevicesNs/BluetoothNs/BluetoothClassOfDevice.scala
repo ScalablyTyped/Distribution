@@ -19,7 +19,7 @@ abstract class BluetoothClassOfDevice () extends js.Object {
   var serviceCapabilities: BluetoothServiceCapabilities = js.native
 }
 
-/** Provides functionality to determine the Bluetooth Class Of Device (Bluetooth COD) information for a device. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothClassOfDevice")
 @js.native
 object BluetoothClassOfDevice extends js.Object {

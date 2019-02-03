@@ -32,6 +32,7 @@ class Autocomplete () extends Component[AutocompleteOptions] {
   def updateData(data: AutocompleteData): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Autocomplete")
 @js.native
 object Autocomplete extends js.Object {

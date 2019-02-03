@@ -44,7 +44,9 @@ package object reactDashReduxMod {
   type MapStateToPropsParam[TStateProps, TOwnProps, State] = js.UndefOr[
     (MapStateToPropsFactory[TStateProps, TOwnProps, State]) | (MapStateToProps[TStateProps, TOwnProps, State]) | scala.Null
   ]
-  type Matching[InjectedProps, DecorationTargetProps] = reactDashReduxLib.reactDashReduxLibStrings.Matching with DecorationTargetProps
+  type Matching[InjectedProps, DecorationTargetProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
+    */ reactDashReduxLib.reactDashReduxLibStrings.Matching with js.Any
   type MergeProps[TStateProps, TDispatchProps, TOwnProps, TMergedProps] = js.Function3[
     /* stateProps */ TStateProps, 
     /* dispatchProps */ TDispatchProps, 
@@ -52,12 +54,16 @@ package object reactDashReduxMod {
     TMergedProps
   ]
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
-  type ResolveThunks[TDispatchProps] = TDispatchProps | (reactDashReduxLib.reactDashReduxLibStrings.ResolveThunks with TDispatchProps)
+  type ResolveThunks[TDispatchProps] = TDispatchProps | (/* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ C in keyof TDispatchProps ]: react-redux.react-redux.HandleThunkActionCreator<TDispatchProps[C]>}
+    */ reactDashReduxLib.reactDashReduxLibStrings.ResolveThunks with TDispatchProps)
   type Selector[S, TProps, TOwnProps] = (js.Function2[/* state */ S, /* ownProps */ TOwnProps, TProps]) | (js.Function1[/* state */ S, TProps])
   type SelectorFactory[S, TProps, TOwnProps, TFactoryOptions] = js.Function2[
     /* dispatch */ reduxLib.reduxMod.Dispatch[reduxLib.reduxMod.Action[js.Any]], 
     /* factoryOptions */ TFactoryOptions, 
     Selector[S, TProps, TOwnProps]
   ]
-  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-redux.react-redux.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
+  type Shared[InjectedProps, DecorationTargetProps /* <: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias react-redux.react-redux.Shared<InjectedProps, DecorationTargetProps> */ js.Object */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in std.Extract<keyof InjectedProps, keyof DecorationTargetProps> ]:? DecorationTargetProps[P]}
+    */ reactDashReduxLib.reactDashReduxLibStrings.Shared with DecorationTargetProps
 }

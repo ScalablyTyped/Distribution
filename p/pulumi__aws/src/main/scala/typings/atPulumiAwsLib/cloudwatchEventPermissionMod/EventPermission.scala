@@ -36,6 +36,7 @@ class EventPermission protected ()
   val statementId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/eventPermission", "EventPermission")
 @js.native
 object EventPermission extends js.Object {

@@ -42,7 +42,7 @@ abstract class DeviceInformation () extends js.Object {
   def update(updateInfo: DeviceInformationUpdate): scala.Unit = js.native
 }
 
-/** Represents a device. This class allows access to well-known device properties as well as additional properties specified during device enumeration. */
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformation")
 @js.native
 object DeviceInformation extends js.Object {

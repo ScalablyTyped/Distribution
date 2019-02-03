@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FuncEventSource ()
   extends fullcalendarLib.srcExportsMod.FuncEventSource
 
+/* static members */
 @JSImport("fullcalendar/src/main", "FuncEventSource")
 @js.native
 object FuncEventSource extends js.Object {

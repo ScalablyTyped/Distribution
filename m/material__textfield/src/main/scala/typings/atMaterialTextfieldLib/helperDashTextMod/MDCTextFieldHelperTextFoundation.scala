@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTextFieldHelperTextFoundation ()
   extends atMaterialTextfieldLib.helperDashTextFoundationMod.default
 
+/* static members */
 @JSImport("@material/textfield/helper-text", "MDCTextFieldHelperTextFoundation")
 @js.native
 object MDCTextFieldHelperTextFoundation extends js.Object {

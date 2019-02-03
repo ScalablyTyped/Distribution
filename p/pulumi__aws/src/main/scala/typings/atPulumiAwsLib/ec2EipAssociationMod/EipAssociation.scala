@@ -54,6 +54,7 @@ class EipAssociation protected ()
   val publicIp: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/eipAssociation", "EipAssociation")
 @js.native
 object EipAssociation extends js.Object {

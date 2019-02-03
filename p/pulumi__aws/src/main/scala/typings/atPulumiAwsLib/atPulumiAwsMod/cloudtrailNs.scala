@@ -28,6 +28,7 @@ object cloudtrailNs extends js.Object {
     args: atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.cloudtrailGetServiceAccountMod.GetServiceAccountResult] = js.native
+  /* static members */
   @js.native
   object Trail extends js.Object {
     /**

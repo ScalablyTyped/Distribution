@@ -15,6 +15,7 @@ import scala.scalajs.js.annotation._
 class Mouse protected ()
   extends plottableLib.buildSrcDispatchersMouseDispatcherMod.Mouse
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers", "Mouse")
 @js.native
 object Mouse extends js.Object {

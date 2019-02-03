@@ -43,6 +43,7 @@ class CAG ()
   def union(cag: CAG): CAG = js.native
 }
 
+/* static members */
 @JSGlobal("CAG")
 @js.native
 object CAG extends js.Object {

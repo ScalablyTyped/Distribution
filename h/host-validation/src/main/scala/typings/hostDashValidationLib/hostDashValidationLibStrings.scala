@@ -12,7 +12,9 @@ object hostDashValidationLibStrings {
   @js.native
   sealed trait either extends js.Object
   
+  @scala.inline
   def both: both = "both".asInstanceOf[both]
+  @scala.inline
   def either: either = "either".asInstanceOf[either]
 }
 

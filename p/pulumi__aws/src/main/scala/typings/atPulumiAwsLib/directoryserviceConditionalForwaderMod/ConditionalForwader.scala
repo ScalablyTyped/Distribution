@@ -32,6 +32,7 @@ class ConditionalForwader protected ()
   val remoteDomainName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader")
 @js.native
 object ConditionalForwader extends js.Object {

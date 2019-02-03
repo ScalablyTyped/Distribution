@@ -60,23 +60,41 @@ object socketclusterLibStrings {
   @js.native
   sealed trait yellow extends js.Object
   
+  @scala.inline
   def brokerExit: brokerExit = "brokerExit".asInstanceOf[brokerExit]
+  @scala.inline
   def brokerStart: brokerStart = "brokerStart".asInstanceOf[brokerStart]
+  @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def exit: exit = "exit".asInstanceOf[exit]
+  @scala.inline
   def fail: fail = "fail".asInstanceOf[fail]
+  @scala.inline
   def green: green = "green".asInstanceOf[green]
+  @scala.inline
   def masterMessage: masterMessage = "masterMessage".asInstanceOf[masterMessage]
+  @scala.inline
   def ready: ready = "ready".asInstanceOf[ready]
+  @scala.inline
   def red: red = "red".asInstanceOf[red]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
   def workerClusterExit: workerClusterExit = "workerClusterExit".asInstanceOf[workerClusterExit]
+  @scala.inline
   def workerClusterReady: workerClusterReady = "workerClusterReady".asInstanceOf[workerClusterReady]
+  @scala.inline
   def workerClusterStart: workerClusterStart = "workerClusterStart".asInstanceOf[workerClusterStart]
+  @scala.inline
   def workerExit: workerExit = "workerExit".asInstanceOf[workerExit]
+  @scala.inline
   def workerStart: workerStart = "workerStart".asInstanceOf[workerStart]
+  @scala.inline
   def yellow: yellow = "yellow".asInstanceOf[yellow]
 }
 

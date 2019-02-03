@@ -12,7 +12,9 @@ object gapiDotClientDotOauth2LibStrings {
   @js.native
   sealed trait v2 extends js.Object
   
+  @scala.inline
   def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
+  @scala.inline
   def v2: v2 = "v2".asInstanceOf[v2]
 }
 

@@ -14,6 +14,7 @@ class KeyDerivationParameters () extends IKeyDerivationParameters {
   override var kdfGenericBinary: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.KeyDerivationParameters")
 @js.native
 object KeyDerivationParameters extends js.Object {

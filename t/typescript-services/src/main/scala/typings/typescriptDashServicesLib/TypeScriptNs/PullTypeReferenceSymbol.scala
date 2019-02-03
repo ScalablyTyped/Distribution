@@ -20,6 +20,7 @@ class PullTypeReferenceSymbol protected () extends PullTypeSymbol {
   def invalidate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullTypeReferenceSymbol")
 @js.native
 object PullTypeReferenceSymbol extends js.Object {

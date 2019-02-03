@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends RedisRateLimiter
 
+/* static members */
 @JSImport("redis-rate-limiter", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -15,8 +15,11 @@ object sockjsLibStrings {
   @js.native
   sealed trait data extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
 }
 

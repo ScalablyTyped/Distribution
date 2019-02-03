@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PreloadJS () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.PreloadJS")
 @js.native
 object PreloadJS extends js.Object {

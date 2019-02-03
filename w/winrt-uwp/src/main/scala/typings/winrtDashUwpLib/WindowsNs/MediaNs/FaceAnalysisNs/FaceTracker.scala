@@ -21,7 +21,7 @@ abstract class FaceTracker () extends js.Object {
   def processNextFrameAsync(videoFrame: winrtDashUwpLib.WindowsNs.MediaNs.VideoFrame): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[_]] = js.native
 }
 
-/** Detects faces in VideoFrame objects and tracks faces across subsequent video frames. */
+/* static members */
 @JSGlobal("Windows.Media.FaceAnalysis.FaceTracker")
 @js.native
 object FaceTracker extends js.Object {

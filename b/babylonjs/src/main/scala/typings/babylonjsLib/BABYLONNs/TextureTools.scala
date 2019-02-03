@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextureTools () extends js.Object
 
-/**
-  * Class used to host texture specific utilities
-  */
+/* static members */
 @JSGlobal("BABYLON.TextureTools")
 @js.native
 object TextureTools extends js.Object {

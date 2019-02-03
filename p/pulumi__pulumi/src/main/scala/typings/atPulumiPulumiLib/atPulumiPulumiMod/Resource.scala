@@ -26,6 +26,7 @@ abstract class Resource protected ()
   def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi", "Resource")
 @js.native
 object Resource extends js.Object {

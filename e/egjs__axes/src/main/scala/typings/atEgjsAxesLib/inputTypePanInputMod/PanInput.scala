@@ -42,6 +42,7 @@ class PanInput protected ()
   /* private */ def onPanmove(event: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@egjs/axes/inputType/PanInput", "PanInput")
 @js.native
 object PanInput extends js.Object {

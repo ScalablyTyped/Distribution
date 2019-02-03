@@ -20,6 +20,7 @@ class RouteTableAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2RouteTableAssociationMod.RouteTableAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "RouteTableAssociation")
 @js.native
 object RouteTableAssociation extends js.Object {

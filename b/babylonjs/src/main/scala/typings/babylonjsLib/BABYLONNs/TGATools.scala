@@ -14,11 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TGATools () extends js.Object
 
-/**
-  * Based on jsTGALoader - Javascript loader for TGA file
-  * By Vincent Thibault
-  * @see http://blog.robrowser.com/javascript-tga-loader.html
-  */
+/* static members */
 @JSGlobal("BABYLON.TGATools")
 @js.native
 object TGATools extends js.Object {

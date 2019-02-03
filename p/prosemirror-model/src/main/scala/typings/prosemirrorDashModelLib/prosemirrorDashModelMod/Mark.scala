@@ -44,6 +44,7 @@ class Mark[S /* <: Schema[_, _] */] () extends js.Object {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-model", "Mark")
 @js.native
 object Mark extends js.Object {

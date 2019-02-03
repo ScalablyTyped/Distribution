@@ -43,6 +43,7 @@ class client () extends js.Object {
   def unsubscribe(config: unsubscribeConfig): client = js.native
 }
 
+/* static members */
 @JSGlobal("fm.websync.client")
 @js.native
 object client extends js.Object {

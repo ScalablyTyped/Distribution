@@ -17,6 +17,7 @@ class namespaced protected () extends Memcached {
   def this(location: memcachedLib.memcachedMod.MemcachedNs.Location, options: memcachedLib.memcachedMod.MemcachedNs.options) = this()
 }
 
+/* static members */
 @JSImport("memcached", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

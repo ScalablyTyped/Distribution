@@ -12,6 +12,7 @@ class Location protected ()
   def this(fileName: java.lang.String, lineMap: typescriptDashServicesLib.TypeScriptNs.LineMap, start: scala.Double, length: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "Location")
 @js.native
 object Location extends js.Object {

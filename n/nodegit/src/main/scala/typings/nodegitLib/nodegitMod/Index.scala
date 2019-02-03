@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Index ()
   extends nodegitLib.indexUnderscoreMod.Index
 
+/* static members */
 @JSImport("nodegit", "Index")
 @js.native
 object Index extends js.Object {

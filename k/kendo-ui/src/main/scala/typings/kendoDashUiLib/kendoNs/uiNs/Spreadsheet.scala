@@ -39,6 +39,7 @@ class Spreadsheet protected () extends Widget {
   def undefineName(name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Spreadsheet")
 @js.native
 object Spreadsheet extends js.Object {

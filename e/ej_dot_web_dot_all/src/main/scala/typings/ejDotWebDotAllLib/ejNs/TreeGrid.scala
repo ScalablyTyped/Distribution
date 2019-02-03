@@ -245,6 +245,7 @@ class TreeGrid protected () extends Widget {
   def updateResponsiveMinWidth(width: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.TreeGrid")
 @js.native
 object TreeGrid extends js.Object {

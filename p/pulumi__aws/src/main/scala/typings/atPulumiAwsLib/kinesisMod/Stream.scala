@@ -20,6 +20,7 @@ class Stream protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kinesisStreamMod.StreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis", "Stream")
 @js.native
 object Stream extends js.Object {

@@ -20,6 +20,7 @@ class RolePolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamRolePolicyMod.RolePolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "RolePolicy")
 @js.native
 object RolePolicy extends js.Object {

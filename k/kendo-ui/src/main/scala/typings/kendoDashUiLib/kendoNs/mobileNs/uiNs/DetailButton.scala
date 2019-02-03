@@ -15,6 +15,7 @@ class DetailButton protected () extends Widget {
   var wrapper: kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.DetailButton")
 @js.native
 object DetailButton extends js.Object {

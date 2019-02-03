@@ -472,9 +472,7 @@ class Material protected () extends IAnimatable {
   def unfreeze(): scala.Unit = js.native
 }
 
-/**
-  * Base class for the main features of a material in Babylon.js
-  */
+/* static members */
 @JSGlobal("BABYLON.Material")
 @js.native
 object Material extends js.Object {

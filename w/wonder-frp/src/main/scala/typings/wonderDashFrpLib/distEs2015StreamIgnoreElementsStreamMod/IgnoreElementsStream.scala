@@ -13,6 +13,7 @@ class IgnoreElementsStream protected ()
   var _source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/IgnoreElementsStream", "IgnoreElementsStream")
 @js.native
 object IgnoreElementsStream extends js.Object {

@@ -12,7 +12,9 @@ object gulpDashTypescriptLibStrings {
   @js.native
   sealed trait dts extends js.Object
   
+  @scala.inline
   def JS: JS = "js".asInstanceOf[JS]
+  @scala.inline
   def dts: dts = "dts".asInstanceOf[dts]
 }
 

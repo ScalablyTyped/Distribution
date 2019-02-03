@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "ViewPagerAndroid")
 @js.native
-class ViewPagerAndroid () extends js.Object {
+class ViewPagerAndroid ()
+  extends reactLib.reactMod.Component[ViewPagerAndroidProps, js.Object, js.Any] {
   /**
     * A helper function to scroll to a specific page in the ViewPager.
     * The transition between pages will be animated.

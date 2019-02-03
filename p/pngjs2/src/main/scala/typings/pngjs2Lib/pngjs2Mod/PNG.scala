@@ -52,6 +52,7 @@ class PNG ()
   ): PNG = js.native
 }
 
+/* static members */
 @JSImport("pngjs2", "PNG")
 @js.native
 object PNG extends js.Object {

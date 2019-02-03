@@ -171,14 +171,7 @@ object tilegridNs extends js.Object {
     */
   def createXYZ(): TileGrid = js.native
   def createXYZ(opt_options: openlayersLib.openlayersMod.olxNs.tilegridNs.XYZOptions): TileGrid = js.native
-  /**
-    * @classdesc
-    * Set the grid pattern for sources accessing WMTS tiled-image servers.
-    *
-    * @param options WMTS options.
-    * @struct
-    * @api
-    */
+  /* static members */
   @js.native
   object WMTS extends js.Object {
     /**

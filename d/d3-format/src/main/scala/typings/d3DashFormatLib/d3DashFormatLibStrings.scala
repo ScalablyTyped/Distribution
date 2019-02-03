@@ -81,30 +81,55 @@ object d3DashFormatLibStrings {
   @js.native
   sealed trait x extends js.Object
   
+  @scala.inline
   def ` `: ` ` = " ".asInstanceOf[` `]
+  @scala.inline
   def `#`: `#` = "#".asInstanceOf[`#`]
+  @scala.inline
   def `%`: `%` = "%".asInstanceOf[`%`]
+  @scala.inline
   def `(`: `(` = "(".asInstanceOf[`(`]
+  @scala.inline
   def `+`: `+` = "+".asInstanceOf[`+`]
+  @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
+  @scala.inline
   def `=`: `=` = "=".asInstanceOf[`=`]
+  @scala.inline
   def `>`: `>` = ">".asInstanceOf[`>`]
+  @scala.inline
   def DOLLAR: DOLLAR = "$".asInstanceOf[DOLLAR]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def X: X = "X".asInstanceOf[X]
+  @scala.inline
   def `^`: `^` = "^".asInstanceOf[`^`]
+  @scala.inline
   def b: b = "b".asInstanceOf[b]
+  @scala.inline
   def c: c = "c".asInstanceOf[c]
+  @scala.inline
   def d: d = "d".asInstanceOf[d]
+  @scala.inline
   def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def f: f = "f".asInstanceOf[f]
+  @scala.inline
   def g: g = "g".asInstanceOf[g]
+  @scala.inline
   def n: n = "n".asInstanceOf[n]
+  @scala.inline
   def o: o = "o".asInstanceOf[o]
+  @scala.inline
   def p: p = "p".asInstanceOf[p]
+  @scala.inline
   def r: r = "r".asInstanceOf[r]
+  @scala.inline
   def s: s = "s".asInstanceOf[s]
+  @scala.inline
   def x: x = "x".asInstanceOf[x]
 }
 

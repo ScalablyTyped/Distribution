@@ -39,6 +39,7 @@ class AppCookieStickinessPolicy protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy", "AppCookieStickinessPolicy")
 @js.native
 object AppCookieStickinessPolicy extends js.Object {

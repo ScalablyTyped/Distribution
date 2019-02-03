@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends reactDashNativeDashVectorDashIconsLib.fontawesome5Mod.default
 
+/* static members */
 @JSImport("react-native-vector-icons/FontAwesome5Pro", JSImport.Default)
 @js.native
 object default extends js.Object {

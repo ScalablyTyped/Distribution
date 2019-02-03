@@ -20,6 +20,7 @@ class Directory protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directoryserviceDirectoryMod.DirectoryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directoryservice", "Directory")
 @js.native
 object Directory extends js.Object {

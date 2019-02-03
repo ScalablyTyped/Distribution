@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PropNames () extends js.Object
 
+/* static members */
 @JSGlobal("Srch.U.PropNames")
 @js.native
 object PropNames extends js.Object {

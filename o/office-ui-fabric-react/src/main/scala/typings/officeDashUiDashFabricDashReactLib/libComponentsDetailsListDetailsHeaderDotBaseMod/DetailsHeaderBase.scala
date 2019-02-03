@@ -102,6 +102,7 @@ class DetailsHeaderBase protected ()
   override def focus(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsHeader.base", "DetailsHeaderBase")
 @js.native
 object DetailsHeaderBase extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WindowManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.WindowManager")
 @js.native
 object WindowManager extends js.Object {

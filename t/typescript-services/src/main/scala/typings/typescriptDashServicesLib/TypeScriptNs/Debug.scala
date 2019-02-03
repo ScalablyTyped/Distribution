@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Debug () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Debug")
 @js.native
 object Debug extends js.Object {

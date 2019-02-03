@@ -34,6 +34,7 @@ class TickContext () extends js.Object {
   def shouldIgnoreTicks(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.TickContext")
 @js.native
 object TickContext extends js.Object {

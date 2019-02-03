@@ -22,9 +22,7 @@ class Plane protected ()
   def this(a: scala.Double, b: scala.Double, c: scala.Double, d: scala.Double) = this()
 }
 
-/**
-  * Represens a plane by the equation ax + by + cz + d = 0
-  */
+/* static members */
 @JSImport("babylonjs", "Plane")
 @js.native
 object Plane extends js.Object {

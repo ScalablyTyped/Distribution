@@ -12,6 +12,7 @@ class InvocationExpressionSyntax protected ()
   def this(expression: typescriptDashServicesLib.TypeScriptNs.IMemberExpressionSyntax, argumentList: typescriptDashServicesLib.TypeScriptNs.ArgumentListSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "InvocationExpressionSyntax")
 @js.native
 object InvocationExpressionSyntax extends js.Object {

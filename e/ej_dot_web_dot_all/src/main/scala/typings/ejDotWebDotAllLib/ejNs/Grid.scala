@@ -595,6 +595,7 @@ class Grid protected () extends Widget {
   def windowonresize(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Grid")
 @js.native
 object Grid extends js.Object {

@@ -104,9 +104,7 @@ class SplitView () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Displays a SplitView which renders a collapsable pane next to arbitrary HTML content.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SplitView")
 @js.native
 object SplitView extends js.Object {

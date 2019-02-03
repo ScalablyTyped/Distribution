@@ -314,6 +314,7 @@ class b2Body () extends js.Object {
   def Split(callback: js.Function1[/* fixture */ b2Fixture, scala.Boolean]): b2Body = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Dynamics.b2Body")
 @js.native
 object b2Body extends js.Object {

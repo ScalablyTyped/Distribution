@@ -26,7 +26,7 @@ class HttpNameValueHeaderValue protected () extends js.Object {
   var value: java.lang.String = js.native
 }
 
-/** Represents name and value information used in a number of HTTP headers. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpNameValueHeaderValue")
 @js.native
 object HttpNameValueHeaderValue extends js.Object {

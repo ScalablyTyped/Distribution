@@ -37,6 +37,7 @@ object DispatchersNs extends js.Object {
     def this(component: plottableLib.buildSrcComponentsComponentMod.Component) = this()
   }
   
+  /* static members */
   @js.native
   object Key extends js.Object {
     var _DISPATCHER_KEY: js.Any = js.native
@@ -51,6 +52,7 @@ object DispatchersNs extends js.Object {
     def getDispatcher(): plottableLib.buildSrcDispatchersMod.Key = js.native
   }
   
+  /* static members */
   @js.native
   object Mouse extends js.Object {
     var _DBLCLICK_EVENT_NAME: js.Any = js.native
@@ -71,6 +73,7 @@ object DispatchersNs extends js.Object {
     def getDispatcher(component: plottableLib.buildSrcComponentsComponentMod.Component): plottableLib.buildSrcDispatchersMod.Mouse = js.native
   }
   
+  /* static members */
   @js.native
   object Touch extends js.Object {
     var _DISPATCHER_KEY: js.Any = js.native

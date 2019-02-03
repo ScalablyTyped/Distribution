@@ -13,6 +13,7 @@ class Tooltip ()
   def reposition(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tooltip/tooltip", "Tooltip")
 @js.native
 object Tooltip extends js.Object {

@@ -79,9 +79,7 @@ class KiiUserBuilder () extends js.Object {
   def setUsername(username: java.lang.String): KiiUserBuilder = js.native
 }
 
-/**
-  * Represents a KiiUser builder
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiUserBuilder")
 @js.native
 object KiiUserBuilder extends js.Object {

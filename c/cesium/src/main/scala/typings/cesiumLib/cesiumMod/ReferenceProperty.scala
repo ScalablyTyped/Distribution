@@ -12,6 +12,7 @@ class ReferenceProperty protected ()
   def this(targetCollection: cesiumLib.cesiumMod.CesiumNs.EntityCollection, targetId: java.lang.String, targetPropertyNames: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("cesium", "ReferenceProperty")
 @js.native
 object ReferenceProperty extends js.Object {

@@ -58,6 +58,7 @@ class ApolloLink () extends js.Object {
   ): ApolloLink = js.native
 }
 
+/* static members */
 @JSImport("apollo-link/lib/link", "ApolloLink")
 @js.native
 object ApolloLink extends js.Object {

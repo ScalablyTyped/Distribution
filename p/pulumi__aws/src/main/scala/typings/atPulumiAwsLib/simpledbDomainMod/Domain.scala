@@ -25,6 +25,7 @@ class Domain protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/simpledb/domain", "Domain")
 @js.native
 object Domain extends js.Object {

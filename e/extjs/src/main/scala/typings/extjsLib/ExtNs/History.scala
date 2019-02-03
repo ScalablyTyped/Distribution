@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class History () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.History")
 @js.native
 object History extends js.Object {

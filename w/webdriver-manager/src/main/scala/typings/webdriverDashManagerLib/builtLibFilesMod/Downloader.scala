@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Downloader ()
   extends webdriverDashManagerLib.builtLibFilesDownloaderMod.Downloader
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/files", "Downloader")
 @js.native
 object Downloader extends js.Object {

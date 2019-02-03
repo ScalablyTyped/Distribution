@@ -19,6 +19,7 @@ class BrowserGetTestability ()
   ): atAngularCoreLib.srcTestabilityTestabilityMod.Testability | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("@angular/platform-browser/src/browser/testability", "BrowserGetTestability")
 @js.native
 object BrowserGetTestability extends js.Object {

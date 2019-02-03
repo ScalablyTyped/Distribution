@@ -69,9 +69,7 @@ class AppContent () extends js.Object {
   def setAllowJFXBrowser(allowJFXBrowser: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/AppContent.html
-	 */
+/* static members */
 @JSGlobal("AppContent")
 @js.native
 object AppContent extends js.Object {

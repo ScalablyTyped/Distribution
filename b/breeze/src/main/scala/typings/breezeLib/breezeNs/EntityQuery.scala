@@ -75,6 +75,7 @@ class EntityQuery () extends js.Object {
   def withParameters(params: js.Object): EntityQuery = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.EntityQuery")
 @js.native
 object EntityQuery extends js.Object {

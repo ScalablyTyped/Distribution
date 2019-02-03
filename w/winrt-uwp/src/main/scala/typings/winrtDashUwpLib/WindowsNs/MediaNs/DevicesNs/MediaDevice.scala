@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class MediaDevice () extends js.Object
 
-/** Provides methods used to select devices for capturing and rendering audio, and for capturing video. */
+/* static members */
 @JSGlobal("Windows.Media.Devices.MediaDevice")
 @js.native
 object MediaDevice extends js.Object {

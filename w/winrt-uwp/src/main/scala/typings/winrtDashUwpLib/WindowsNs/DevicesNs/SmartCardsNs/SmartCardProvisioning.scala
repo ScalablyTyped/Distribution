@@ -40,7 +40,7 @@ abstract class SmartCardProvisioning () extends js.Object {
   def requestPinResetAsync(handler: SmartCardPinResetHandler): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Boolean] = js.native
 }
 
-/** Represents info about, and operations for, configuring smart cards. */
+/* static members */
 @JSGlobal("Windows.Devices.SmartCards.SmartCardProvisioning")
 @js.native
 object SmartCardProvisioning extends js.Object {

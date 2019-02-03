@@ -22,6 +22,7 @@ class Polygon ()
   override def getType(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("ymaps.geometry.Polygon")
 @js.native
 object Polygon extends js.Object {

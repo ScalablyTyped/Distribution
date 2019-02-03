@@ -18,6 +18,7 @@ class StringNumber protected () extends Modifier {
   def setStringNumber(number: scala.Double): StringNumber = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.StringNumber")
 @js.native
 object StringNumber extends js.Object {

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "RecyclerViewBackedScrollView")
 @js.native
-class RecyclerViewBackedScrollView () extends js.Object {
+class RecyclerViewBackedScrollView ()
+  extends reactLib.reactMod.Component[RecyclerViewBackedScrollViewProps, js.Object, js.Any] {
   /**
     * Returns a reference to the underlying scroll responder, which supports
     * operations like `scrollTo`. All ScrollView-like components should

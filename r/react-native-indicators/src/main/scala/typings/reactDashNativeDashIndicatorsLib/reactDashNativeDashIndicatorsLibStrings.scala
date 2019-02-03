@@ -12,7 +12,9 @@ object reactDashNativeDashIndicatorsLibStrings {
   @js.native
   sealed trait outline extends js.Object
   
+  @scala.inline
   def fill: fill = "fill".asInstanceOf[fill]
+  @scala.inline
   def outline: outline = "outline".asInstanceOf[outline]
 }
 

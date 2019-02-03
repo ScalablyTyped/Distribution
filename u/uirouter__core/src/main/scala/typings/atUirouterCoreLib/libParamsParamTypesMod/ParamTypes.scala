@@ -35,6 +35,7 @@ class ParamTypes () extends js.Object {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/params/paramTypes", "ParamTypes")
 @js.native
 object ParamTypes extends js.Object {

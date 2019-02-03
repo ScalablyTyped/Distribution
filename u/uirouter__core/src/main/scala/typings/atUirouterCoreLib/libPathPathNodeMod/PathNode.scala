@@ -48,6 +48,7 @@ class PathNode protected () extends js.Object {
   def parameter(name: java.lang.String): atUirouterCoreLib.libParamsParamMod.Param = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/path/pathNode", "PathNode")
 @js.native
 object PathNode extends js.Object {

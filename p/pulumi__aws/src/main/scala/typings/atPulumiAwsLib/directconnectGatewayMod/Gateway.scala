@@ -28,6 +28,7 @@ class Gateway protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/gateway", "Gateway")
 @js.native
 object Gateway extends js.Object {

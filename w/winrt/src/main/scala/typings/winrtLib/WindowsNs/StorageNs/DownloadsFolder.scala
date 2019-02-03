@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DownloadsFolder () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.DownloadsFolder")
 @js.native
 object DownloadsFolder extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCChipFoundation ()
   extends atMaterialChipsLib.chipFoundationMod.default
 
+/* static members */
 @JSImport("@material/chips/chip", "MDCChipFoundation")
 @js.native
 object MDCChipFoundation extends js.Object {

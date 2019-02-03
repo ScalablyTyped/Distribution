@@ -114,41 +114,77 @@ object semanticDashUiDashAccordionLibStrings {
   @js.native
   sealed trait verbose extends js.Object
   
+  @scala.inline
   def accordion: accordion = "accordion".asInstanceOf[accordion]
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def animateChildren: animateChildren = "animateChildren".asInstanceOf[animateChildren]
+  @scala.inline
   def animating: animating = "animating".asInstanceOf[animating]
+  @scala.inline
   def className: className = "className".asInstanceOf[className]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def `close others`: `close others` = "close others".asInstanceOf[`close others`]
+  @scala.inline
   def closeNested: closeNested = "closeNested".asInstanceOf[closeNested]
+  @scala.inline
   def collapsible: collapsible = "collapsible".asInstanceOf[collapsible]
+  @scala.inline
   def content: content = "content".asInstanceOf[content]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def duration: duration = "duration".asInstanceOf[duration]
+  @scala.inline
   def easing: easing = "easing".asInstanceOf[easing]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def exclusive: exclusive = "exclusive".asInstanceOf[exclusive]
+  @scala.inline
   def method: method = "method".asInstanceOf[method]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
+  @scala.inline
   def observeChanges: observeChanges = "observeChanges".asInstanceOf[observeChanges]
+  @scala.inline
   def on: on = "on".asInstanceOf[on]
+  @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def onClose: onClose = "onClose".asInstanceOf[onClose]
+  @scala.inline
   def onClosing: onClosing = "onClosing".asInstanceOf[onClosing]
+  @scala.inline
   def onOpen: onOpen = "onOpen".asInstanceOf[onOpen]
+  @scala.inline
   def onOpening: onOpening = "onOpening".asInstanceOf[onOpening]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
+  @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
+  @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def title: title = "title".asInstanceOf[title]
+  @scala.inline
   def toggle: toggle = "toggle".asInstanceOf[toggle]
+  @scala.inline
   def trigger: trigger = "trigger".asInstanceOf[trigger]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
 

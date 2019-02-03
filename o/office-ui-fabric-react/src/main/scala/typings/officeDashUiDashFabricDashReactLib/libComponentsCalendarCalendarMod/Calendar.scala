@@ -39,6 +39,7 @@ class Calendar protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Calendar/Calendar", "Calendar")
 @js.native
 object Calendar extends js.Object {

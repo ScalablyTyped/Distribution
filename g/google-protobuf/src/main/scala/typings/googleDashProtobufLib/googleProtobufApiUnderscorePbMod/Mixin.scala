@@ -15,6 +15,7 @@ class Mixin ()
   def setRoot(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin")
 @js.native
 object Mixin extends js.Object {

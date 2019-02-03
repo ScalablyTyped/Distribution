@@ -16,6 +16,7 @@ class Shadow protected () extends js.Object {
   var offsetY: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.Shadow")
 @js.native
 object Shadow extends js.Object {

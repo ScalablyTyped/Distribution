@@ -118,7 +118,11 @@ object ^ extends js.Object {
   	 * and put into an object based on the name supplied. If there's no name for the bits,
   	 * it will be parsed but discarded from the returned value.
   	 */
-  def bitSeqObj[Key /* <: java.lang.String */](namedAlignments: js.Array[(js.Tuple2[Key, scala.Double]) | scala.Double]): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.bitSeqObj with js.Any] = js.native
+  def bitSeqObj[Key /* <: java.lang.String */](namedAlignments: js.Array[(js.Tuple2[Key, scala.Double]) | scala.Double]): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in Key ]: number}
+    */ parsimmonLib.parsimmonLibStrings.bitSeqObj with js.Any
+  ] = js.native
   /**
   	 * Returns a parser that yields a byte (as a number) that matches the given input;
   	 * similar to Parsimmon.digit and Parsimmon.letter.
@@ -391,7 +395,11 @@ object ^ extends js.Object {
       Key, 
       parsimmonLib.parsimmonMod.ParsimmonNs.Parser[/* import warning: ImportType.apply Failed type conversion: T[Key] */ js.Any]
     ]) | parsimmonLib.parsimmonMod.ParsimmonNs.Parser[_])*
-  ): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[parsimmonLib.parsimmonLibStrings.seqObj with T] = js.native
+  ): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in Key ]: T[K]}
+    */ parsimmonLib.parsimmonLibStrings.seqObj with T
+  ] = js.native
   @JSName("seq")
   def seq_T[T](parsers: parsimmonLib.parsimmonMod.ParsimmonNs.Parser[T]*): parsimmonLib.parsimmonMod.ParsimmonNs.Parser[js.Array[T]] = js.native
   /**

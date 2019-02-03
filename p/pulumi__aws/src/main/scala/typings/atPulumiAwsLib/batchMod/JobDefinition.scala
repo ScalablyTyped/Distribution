@@ -20,6 +20,7 @@ class JobDefinition protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.batchJobDefinitionMod.JobDefinitionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch", "JobDefinition")
 @js.native
 object JobDefinition extends js.Object {

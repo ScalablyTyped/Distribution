@@ -25,6 +25,7 @@ class Default ()
 @js.native
 class default () extends Default
 
+/* static members */
 @JSImport("fullcalendar/ParsableModelMixin", "Default")
 @js.native
 object Default extends js.Object {
@@ -32,6 +33,7 @@ object Default extends js.Object {
   def defineStandardProps(propDefs: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/ParsableModelMixin", JSImport.Default)
 @js.native
 object default extends js.Object {

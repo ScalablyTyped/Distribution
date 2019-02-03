@@ -24,6 +24,7 @@ class EnumValueDescriptorProto ()
   def setOptions(value: EnumValueOptions): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "EnumValueDescriptorProto")
 @js.native
 object EnumValueDescriptorProto extends js.Object {

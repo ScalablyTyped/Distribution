@@ -21,6 +21,7 @@ class keystore () extends js.Object {
   def serialize(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("eth-lightwallet", "keystore")
 @js.native
 object keystore extends js.Object {

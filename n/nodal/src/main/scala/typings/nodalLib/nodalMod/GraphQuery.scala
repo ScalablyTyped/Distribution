@@ -29,6 +29,7 @@ class GraphQuery protected () extends js.Object {
   def query(callback: js.Function): this.type = js.native
 }
 
+/* static members */
 @JSImport("nodal", "GraphQuery")
 @js.native
 object GraphQuery extends js.Object {

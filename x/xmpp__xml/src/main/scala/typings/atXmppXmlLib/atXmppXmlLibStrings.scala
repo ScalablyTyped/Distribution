@@ -9,6 +9,7 @@ object atXmppXmlLibStrings {
   @js.native
   sealed trait XMLError extends js.Object
   
+  @scala.inline
   def XMLError: XMLError = "XMLError".asInstanceOf[XMLError]
 }
 

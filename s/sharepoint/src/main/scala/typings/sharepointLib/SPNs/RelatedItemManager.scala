@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RelatedItemManager () extends ClientObject
 
+/* static members */
 @JSGlobal("SP.RelatedItemManager")
 @js.native
 object RelatedItemManager extends js.Object {

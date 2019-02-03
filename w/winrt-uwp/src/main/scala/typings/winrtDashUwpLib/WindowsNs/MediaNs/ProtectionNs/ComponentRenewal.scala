@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ComponentRenewal () extends js.Object
 
-/** Enables applications to initiate renewal of components which need updating in order to play protected media content. */
+/* static members */
 @JSGlobal("Windows.Media.Protection.ComponentRenewal")
 @js.native
 object ComponentRenewal extends js.Object {

@@ -52,7 +52,7 @@ abstract class SmsDevice2 () extends js.Object {
   def sendMessageAndGetResultAsync(message: ISmsMessageBase): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[SmsSendMessageResult] = js.native
 }
 
-/** Extends the SmsDevice class, and supports the operation of a mobile broadband SMS device. */
+/* static members */
 @JSGlobal("Windows.Devices.Sms.SmsDevice2")
 @js.native
 object SmsDevice2 extends js.Object {

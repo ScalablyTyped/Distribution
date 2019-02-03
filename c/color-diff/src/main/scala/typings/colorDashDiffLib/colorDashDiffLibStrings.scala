@@ -12,7 +12,9 @@ object colorDashDiffLibStrings {
   @js.native
   sealed trait furthest extends js.Object
   
+  @scala.inline
   def closest: closest = "closest".asInstanceOf[closest]
+  @scala.inline
   def furthest: furthest = "furthest".asInstanceOf[furthest]
 }
 

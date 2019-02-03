@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DataProtectionManager () extends js.Object
 
-/** Provides access to operations that manage buffers and streams that are protected to an enterprise identity. */
+/* static members */
 @JSGlobal("Windows.Security.EnterpriseData.DataProtectionManager")
 @js.native
 object DataProtectionManager extends js.Object {

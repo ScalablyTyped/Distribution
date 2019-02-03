@@ -12,6 +12,7 @@ class ElementFinder protected ()
   def this(`browser_`: protractorLib.builtBrowserMod.ProtractorBrowser, elementArrayFinder: protractorLib.builtElementMod.ElementArrayFinder) = this()
 }
 
+/* static members */
 @JSImport("protractor", "ElementFinder")
 @js.native
 object ElementFinder extends js.Object {

@@ -16,6 +16,7 @@ class Polygon protected ()
   var paths_Polygon: makerDotJsLib.MakerJsNs.IPathMap = js.native
 }
 
+/* static members */
 @JSGlobal("MakerJs.models.Polygon")
 @js.native
 object Polygon extends js.Object {

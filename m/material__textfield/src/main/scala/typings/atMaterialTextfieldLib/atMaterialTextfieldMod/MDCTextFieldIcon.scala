@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTextFieldIcon ()
   extends atMaterialTextfieldLib.iconMod.MDCTextFieldIcon
 
+/* static members */
 @JSImport("@material/textfield", "MDCTextFieldIcon")
 @js.native
 object MDCTextFieldIcon extends js.Object {

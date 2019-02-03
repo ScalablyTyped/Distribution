@@ -40,6 +40,7 @@ class namespaced protected () extends BN {
   def this(number: scala.Double, base: scala.Double, endian: bnDotJsLib.Endianness) = this()
 }
 
+/* static members */
 @JSImport("bn.js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

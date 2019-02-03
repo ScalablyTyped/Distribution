@@ -43,6 +43,7 @@ class FrameLayout protected ()
   def setMeasureAllChildren(measureAll: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.FrameLayout")
 @js.native
 object FrameLayout extends js.Object {

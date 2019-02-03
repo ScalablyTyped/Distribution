@@ -15,8 +15,11 @@ object proxyDashAddrLibStrings {
   @js.native
   sealed trait uniquelocal extends js.Object
   
+  @scala.inline
   def linklocal: linklocal = "linklocal".asInstanceOf[linklocal]
+  @scala.inline
   def loopback: loopback = "loopback".asInstanceOf[loopback]
+  @scala.inline
   def uniquelocal: uniquelocal = "uniquelocal".asInstanceOf[uniquelocal]
 }
 

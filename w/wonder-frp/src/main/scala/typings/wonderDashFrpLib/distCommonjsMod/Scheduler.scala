@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Scheduler ()
   extends wonderDashFrpLib.distCommonjsCoreSchedulerMod.Scheduler
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "Scheduler")
 @js.native
 object Scheduler extends js.Object {

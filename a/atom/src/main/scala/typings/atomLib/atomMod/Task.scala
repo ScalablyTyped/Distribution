@@ -44,6 +44,7 @@ class Task protected () extends js.Object {
   def terminate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("atom", "Task")
 @js.native
 object Task extends js.Object {

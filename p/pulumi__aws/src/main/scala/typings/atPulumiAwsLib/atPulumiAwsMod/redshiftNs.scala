@@ -103,6 +103,7 @@ object redshiftNs extends js.Object {
     args: atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.redshiftGetServiceAccountMod.GetServiceAccountResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -127,6 +128,7 @@ object redshiftNs extends js.Object {
     ): atPulumiAwsLib.redshiftClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object EventSubscription extends js.Object {
     /**
@@ -151,6 +153,7 @@ object redshiftNs extends js.Object {
     ): atPulumiAwsLib.redshiftEventSubscriptionMod.EventSubscription = js.native
   }
   
+  /* static members */
   @js.native
   object ParameterGroup extends js.Object {
     /**
@@ -175,6 +178,7 @@ object redshiftNs extends js.Object {
     ): atPulumiAwsLib.redshiftParameterGroupMod.ParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityGroup extends js.Object {
     /**
@@ -199,6 +203,7 @@ object redshiftNs extends js.Object {
     ): atPulumiAwsLib.redshiftSecurityGroupMod.SecurityGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SnapshotCopyGrant extends js.Object {
     /**
@@ -223,6 +228,7 @@ object redshiftNs extends js.Object {
     ): atPulumiAwsLib.redshiftSnapshotCopyGrantMod.SnapshotCopyGrant = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

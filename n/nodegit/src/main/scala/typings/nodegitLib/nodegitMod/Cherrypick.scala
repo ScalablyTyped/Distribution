@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Cherrypick ()
   extends nodegitLib.cherryDashPickMod.Cherrypick
 
+/* static members */
 @JSImport("nodegit", "Cherrypick")
 @js.native
 object Cherrypick extends js.Object {

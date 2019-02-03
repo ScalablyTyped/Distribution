@@ -11,6 +11,7 @@ class Schema protected () extends SchemaDefinition {
   def this(definition: SchemaDefinition) = this()
 }
 
+/* static members */
 @JSImport("js-yaml", "Schema")
 @js.native
 object Schema extends js.Object {

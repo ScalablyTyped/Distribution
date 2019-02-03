@@ -27,12 +27,19 @@ object remarkableLibStrings {
   @js.native
   sealed trait root extends js.Object
   
+  @scala.inline
   def BACKSLASHn: BACKSLASHn = "\n".asInstanceOf[BACKSLASHn]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def commonmark: commonmark = "commonmark".asInstanceOf[commonmark]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def remarkable: remarkable = "remarkable".asInstanceOf[remarkable]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
 }
 

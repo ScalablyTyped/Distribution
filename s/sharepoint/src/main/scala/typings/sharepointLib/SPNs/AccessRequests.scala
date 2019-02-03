@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AccessRequests () extends js.Object
 
+/* static members */
 @JSGlobal("SP.AccessRequests")
 @js.native
 object AccessRequests extends js.Object {

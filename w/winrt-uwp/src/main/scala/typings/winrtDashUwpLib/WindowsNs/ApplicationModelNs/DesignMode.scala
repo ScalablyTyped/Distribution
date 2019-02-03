@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class DesignMode () extends js.Object
 
-/** Enables you to detect whether your app is in design mode in a visual designer. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DesignMode")
 @js.native
 object DesignMode extends js.Object {

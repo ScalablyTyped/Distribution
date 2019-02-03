@@ -38,9 +38,7 @@ class TabContainer protected () extends js.Object {
   def dispose(): scala.Unit = js.native
 }
 
-/**
-  * Prevents a DOM sub-tree from receiving tab navigations and focus.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.TabContainer")
 @js.native
 object TabContainer extends js.Object {

@@ -33,6 +33,7 @@ class NavigationDrawer protected () extends Widget {
   def toggle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.NavigationDrawer")
 @js.native
 object NavigationDrawer extends js.Object {

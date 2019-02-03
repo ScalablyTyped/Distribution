@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FileIO () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.FileIO")
 @js.native
 object FileIO extends js.Object {

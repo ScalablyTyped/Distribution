@@ -27,6 +27,7 @@ class ResizeSensor ()
   /* private */ def observeElement(force: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/resize-sensor/resizeSensor", "ResizeSensor")
 @js.native
 object ResizeSensor extends js.Object {

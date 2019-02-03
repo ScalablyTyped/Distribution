@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class NumeralSystemIdentifiers () extends js.Object
 
-/** Contains the numeral system identifiers for the supported numeral systems, as static properties. */
+/* static members */
 @JSGlobal("Windows.Globalization.NumeralSystemIdentifiers")
 @js.native
 object NumeralSystemIdentifiers extends js.Object {

@@ -16,6 +16,7 @@ class InvalidateInfo () extends js.Object {
   def recycle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.View.AttachInfo.InvalidateInfo")
 @js.native
 object InvalidateInfo extends js.Object {

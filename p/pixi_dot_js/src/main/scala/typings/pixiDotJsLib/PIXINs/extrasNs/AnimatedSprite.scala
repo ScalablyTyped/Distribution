@@ -31,6 +31,7 @@ class AnimatedSprite protected ()
   /* protected */ def update(deltaTime: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.extras.AnimatedSprite")
 @js.native
 object AnimatedSprite extends js.Object {

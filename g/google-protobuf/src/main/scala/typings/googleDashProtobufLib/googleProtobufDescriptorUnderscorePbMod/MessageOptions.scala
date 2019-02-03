@@ -33,6 +33,7 @@ class MessageOptions ()
   def setUninterpretedOptionList(value: js.Array[UninterpretedOption]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MessageOptions")
 @js.native
 object MessageOptions extends js.Object {

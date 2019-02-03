@@ -18,9 +18,13 @@ object reactDashTableLibStrings {
   @js.native
   sealed trait radio extends js.Object
   
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
 }
 

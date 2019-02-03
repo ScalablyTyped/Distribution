@@ -21,6 +21,7 @@ class default () extends PolicyQualifierInfo {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PolicyQualifierInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

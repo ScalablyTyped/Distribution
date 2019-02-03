@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Solver () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.Solver")
 @js.native
 object Solver extends js.Object {

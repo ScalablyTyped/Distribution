@@ -20,6 +20,7 @@ class VpcEndpointSubnetAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpcEndpointSubnetAssociationMod.VpcEndpointSubnetAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpcEndpointSubnetAssociation")
 @js.native
 object VpcEndpointSubnetAssociation extends js.Object {

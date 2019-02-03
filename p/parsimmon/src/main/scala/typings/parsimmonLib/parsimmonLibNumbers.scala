@@ -15,8 +15,11 @@ object parsimmonLibNumbers {
   @js.native
   sealed trait `true` extends js.Object
   
+  @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = true.asInstanceOf[`true`]
 }
 

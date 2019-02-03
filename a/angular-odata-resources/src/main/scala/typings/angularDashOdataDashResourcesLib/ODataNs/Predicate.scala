@@ -13,6 +13,7 @@ class Predicate protected () extends BinaryOperation {
   def this(propertyOrValueOrPredicate: js.Any, valueOrOperator: js.Any, value: js.Any) = this()
 }
 
+/* static members */
 @JSGlobal("OData.Predicate")
 @js.native
 object Predicate extends js.Object {

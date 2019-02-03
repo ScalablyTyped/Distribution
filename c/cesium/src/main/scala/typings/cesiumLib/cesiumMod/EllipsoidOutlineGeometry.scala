@@ -12,6 +12,7 @@ class EllipsoidOutlineGeometry ()
   def this(options: cesiumLib.Anon_RadiiSlicePartitions) = this()
 }
 
+/* static members */
 @JSImport("cesium", "EllipsoidOutlineGeometry")
 @js.native
 object EllipsoidOutlineGeometry extends js.Object {

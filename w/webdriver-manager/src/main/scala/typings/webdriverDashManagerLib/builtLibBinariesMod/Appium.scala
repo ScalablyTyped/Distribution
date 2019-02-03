@@ -12,6 +12,7 @@ class Appium ()
   def this(alternateCDN: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/binaries", "Appium")
 @js.native
 object Appium extends js.Object {

@@ -32,6 +32,7 @@ class SnapshotCopyGrant protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/redshift/snapshotCopyGrant", "SnapshotCopyGrant")
 @js.native
 object SnapshotCopyGrant extends js.Object {

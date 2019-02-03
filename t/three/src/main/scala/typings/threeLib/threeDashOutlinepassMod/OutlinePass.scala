@@ -44,6 +44,7 @@ class OutlinePass protected ()
   def updateTextureMatrix(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-outlinepass", "OutlinePass")
 @js.native
 object OutlinePass extends js.Object {

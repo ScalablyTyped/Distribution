@@ -20,6 +20,7 @@ class Instance protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsInstanceMod.InstanceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "Instance")
 @js.native
 object Instance extends js.Object {

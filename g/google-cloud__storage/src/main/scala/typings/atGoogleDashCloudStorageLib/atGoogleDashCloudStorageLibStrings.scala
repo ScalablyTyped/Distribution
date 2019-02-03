@@ -42,17 +42,29 @@ object atGoogleDashCloudStorageLibStrings {
   @js.native
   sealed trait write extends js.Object
   
+  @scala.inline
   def authenticatedRead: authenticatedRead = "authenticatedRead".asInstanceOf[authenticatedRead]
+  @scala.inline
   def bucketOwnerFullControl: bucketOwnerFullControl = "bucketOwnerFullControl".asInstanceOf[bucketOwnerFullControl]
+  @scala.inline
   def bucketOwnerRead: bucketOwnerRead = "bucketOwnerRead".asInstanceOf[bucketOwnerRead]
+  @scala.inline
   def crc32c: crc32c = "crc32c".asInstanceOf[crc32c]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
   def projectPrivate: projectPrivate = "projectPrivate".asInstanceOf[projectPrivate]
+  @scala.inline
   def publicRead: publicRead = "publicRead".asInstanceOf[publicRead]
+  @scala.inline
   def read: read = "read".asInstanceOf[read]
+  @scala.inline
   def resumable: resumable = "resumable".asInstanceOf[resumable]
+  @scala.inline
   def write: write = "write".asInstanceOf[write]
 }
 

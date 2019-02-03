@@ -101,6 +101,7 @@ class Mouse protected ()
   def onWheel(callback: MouseCallback): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers/mouseDispatcher", "Mouse")
 @js.native
 object Mouse extends js.Object {

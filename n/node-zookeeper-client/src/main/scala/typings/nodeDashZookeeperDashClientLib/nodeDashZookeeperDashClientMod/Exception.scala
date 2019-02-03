@@ -20,6 +20,7 @@ class Exception protected () extends js.Object {
   def getPath(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("node-zookeeper-client", "Exception")
 @js.native
 object Exception extends js.Object {

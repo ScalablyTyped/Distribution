@@ -58,7 +58,7 @@ abstract class BackgroundTaskRegistration () extends js.Object {
   def unregister(cancelTask: scala.Boolean): scala.Unit = js.native
 }
 
-/** Represents a background task that has been registered with the system. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
 @js.native
 object BackgroundTaskRegistration extends js.Object {

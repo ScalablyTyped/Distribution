@@ -76,7 +76,13 @@ trait RouteOptions extends js.Object {
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsext)
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#request-lifecycle)
     */
-  var ext: js.UndefOr[hapiLib.hapiLibStrings.RouteOptions with js.Any] = js.undefined
+  var ext: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in hapi.hapi.RouteRequestExtType ]:? hapi.hapi.RouteExtObject | std.Array<hapi.hapi.RouteExtObject>}
+    */ hapiLib.hapiLibStrings.RouteOptions with js.Any
+  ] = js.undefined
   /**
     * Default value: { relativeTo: '.' }.
     * Defines the behavior for accessing files:

@@ -75,28 +75,51 @@ object botvsLibStrings {
   @js.native
   sealed trait usd extends js.Object
   
+  @scala.inline
   def Close: Close = "Close".asInstanceOf[Close]
+  @scala.inline
   def High: High = "High".asInstanceOf[High]
+  @scala.inline
   def Low: Low = "Low".asInstanceOf[Low]
+  @scala.inline
   def Open: Open = "Open".asInstanceOf[Open]
+  @scala.inline
   def Time: Time = "Time".asInstanceOf[Time]
+  @scala.inline
   def Volume: Volume = "Volume".asInstanceOf[Volume]
+  @scala.inline
   def api: api = "api".asInstanceOf[api]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def buy: buy = "buy".asInstanceOf[buy]
+  @scala.inline
   def closebuy: closebuy = "closebuy".asInstanceOf[closebuy]
+  @scala.inline
   def closebuy_today: closebuy_today = "closebuy_today".asInstanceOf[closebuy_today]
+  @scala.inline
   def closesell: closesell = "closesell".asInstanceOf[closesell]
+  @scala.inline
   def closesell_today: closesell_today = "closesell_today".asInstanceOf[closesell_today]
+  @scala.inline
   def cny: cny = "cny".asInstanceOf[cny]
+  @scala.inline
   def currency: currency = "currency".asInstanceOf[currency]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def sell: sell = "sell".asInstanceOf[sell]
+  @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  @scala.inline
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
+  @scala.inline
   def usd: usd = "usd".asInstanceOf[usd]
 }
 

@@ -374,6 +374,7 @@ class Diagram protected ()
   def zoomTo(Zoom: ejDotWebDotAllLib.ejNs.datavisualizationNs.DiagramNs.Zoom): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.Diagram")
 @js.native
 object Diagram extends js.Object {

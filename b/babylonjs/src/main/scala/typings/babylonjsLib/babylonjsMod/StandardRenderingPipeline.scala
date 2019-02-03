@@ -28,11 +28,7 @@ class StandardRenderingPipeline protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, ratio: scala.Double, originalPostProcess: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.PostProcess], cameras: js.Array[babylonjsLib.BABYLONNs.Camera]) = this()
 }
 
-/**
-  * Standard rendering pipeline
-  * Default pipeline should be used going forward but the standard pipeline will be kept for backwards compatibility.
-  * @see https://doc.babylonjs.com/how_to/using_standard_rendering_pipeline
-  */
+/* static members */
 @JSImport("babylonjs", "StandardRenderingPipeline")
 @js.native
 object StandardRenderingPipeline extends js.Object {

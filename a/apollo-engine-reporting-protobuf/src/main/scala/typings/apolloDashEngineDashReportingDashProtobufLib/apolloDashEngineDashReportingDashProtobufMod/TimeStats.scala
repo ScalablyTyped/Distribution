@@ -16,6 +16,7 @@ class TimeStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.ITimeStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "TimeStats")
 @js.native
 object TimeStats extends js.Object {

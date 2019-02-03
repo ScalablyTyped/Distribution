@@ -21,10 +21,15 @@ object tressLibStrings {
   @js.native
   sealed trait waiting extends js.Object
   
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def finished: finished = "finished".asInstanceOf[finished]
+  @scala.inline
   def missing: missing = "missing".asInstanceOf[missing]
+  @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
 }
 

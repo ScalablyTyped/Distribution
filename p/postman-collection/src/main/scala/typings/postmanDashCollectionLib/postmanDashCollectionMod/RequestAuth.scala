@@ -27,6 +27,7 @@ class RequestAuth protected () extends Property[RequestAuthDefinition] {
   def use(`type`: java.lang.String, options: VariableList): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "RequestAuth")
 @js.native
 object RequestAuth extends js.Object {

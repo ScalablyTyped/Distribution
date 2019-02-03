@@ -62,11 +62,13 @@ object coreNs extends js.Object {
   def toJSONSafe(obj: js.Any, replacer: js.Function2[/* prop */ java.lang.String, /* val */ js.Any, _]): js.Any = js.native
   def toJSONSafeReplacer(prop: java.lang.String, `val`: js.Any): js.Any = js.native
   def using(obj: js.Object, property: java.lang.String, tempValue: js.Any, fn: js.Function0[_]): js.Any = js.native
+  /* static members */
   @js.native
   object Enum extends js.Object {
     def isSymbol(`object`: js.Any): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Event extends js.Object {
     def enable(eventName: java.lang.String, target: js.Any): scala.Unit = js.native

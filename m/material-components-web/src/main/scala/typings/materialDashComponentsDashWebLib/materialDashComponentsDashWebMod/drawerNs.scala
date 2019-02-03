@@ -24,6 +24,7 @@ object drawerNs extends js.Object {
   class MDCModalDrawerFoundation ()
     extends atMaterialDrawerLib.atMaterialDrawerMod.MDCModalDrawerFoundation
   
+  /* static members */
   @js.native
   object MDCDismissibleDrawerFoundation extends js.Object {
     val cssClasses: atMaterialDrawerLib.constantsMod.cssClasses = js.native
@@ -31,6 +32,7 @@ object drawerNs extends js.Object {
     val strings: atMaterialDrawerLib.constantsMod.strings = js.native
   }
   
+  /* static members */
   @js.native
   object MDCDrawer extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialDrawerLib.atMaterialDrawerMod.MDCDrawer = js.native

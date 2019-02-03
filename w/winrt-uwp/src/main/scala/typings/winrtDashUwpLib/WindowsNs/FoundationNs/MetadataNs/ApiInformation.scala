@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ApiInformation () extends js.Object
 
-/** Enables you to detect whether a specified member, type, or API contract is present so that you can safely make API calls across a variety of devices. */
+/* static members */
 @JSGlobal("Windows.Foundation.Metadata.ApiInformation")
 @js.native
 object ApiInformation extends js.Object {

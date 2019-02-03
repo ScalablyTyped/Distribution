@@ -40,7 +40,7 @@ abstract class MediaClip () extends js.Object {
   def getVideoEncodingProperties(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.VideoEncodingProperties = js.native
 }
 
-/** Represents a single media object. */
+/* static members */
 @JSGlobal("Windows.Media.Editing.MediaClip")
 @js.native
 object MediaClip extends js.Object {

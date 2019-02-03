@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class InfiniteLoader ()
   extends reactDashVirtualizedLib.distEsInfiniteLoaderMod.InfiniteLoader
 
+/* static members */
 @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader")
 @js.native
 object InfiniteLoader extends js.Object {

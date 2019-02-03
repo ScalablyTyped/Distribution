@@ -12,6 +12,7 @@ class IntervalStream protected ()
   def this(interval: scala.Double, scheduler: wonderDashFrpLib.distCommonjsCoreSchedulerMod.Scheduler) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "IntervalStream")
 @js.native
 object IntervalStream extends js.Object {

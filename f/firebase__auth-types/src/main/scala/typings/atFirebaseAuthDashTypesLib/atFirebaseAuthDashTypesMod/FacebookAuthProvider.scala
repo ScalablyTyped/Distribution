@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FacebookAuthProvider () extends FacebookAuthProvider_Instance
 
+/* static members */
 @JSImport("@firebase/auth-types", "FacebookAuthProvider")
 @js.native
 object FacebookAuthProvider extends js.Object {

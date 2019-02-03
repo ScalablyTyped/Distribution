@@ -20,6 +20,7 @@ class OpenIdConnectProvider protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamOpenIdConnectProviderMod.OpenIdConnectProviderArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "OpenIdConnectProvider")
 @js.native
 object OpenIdConnectProvider extends js.Object {

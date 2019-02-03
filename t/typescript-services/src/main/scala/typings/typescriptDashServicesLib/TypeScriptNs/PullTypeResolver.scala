@@ -1023,6 +1023,7 @@ class PullTypeResolver protected () extends js.Object {
   def widenType(`type`: PullTypeSymbol, ast: AST, context: PullTypeResolutionContext): PullTypeSymbol = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullTypeResolver")
 @js.native
 object PullTypeResolver extends js.Object {

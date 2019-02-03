@@ -49,6 +49,7 @@ class NumericInput ()
   /* private */ def updateDelta(direction: js.Any, e: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/numericInput", "NumericInput")
 @js.native
 object NumericInput extends js.Object {

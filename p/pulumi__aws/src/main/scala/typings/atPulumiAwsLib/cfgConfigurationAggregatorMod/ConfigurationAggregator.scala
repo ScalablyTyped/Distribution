@@ -37,6 +37,7 @@ class ConfigurationAggregator protected ()
   val organizationAggregationSource: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AllRegions]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg/configurationAggregator", "ConfigurationAggregator")
 @js.native
 object ConfigurationAggregator extends js.Object {

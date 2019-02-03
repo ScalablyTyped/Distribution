@@ -14,6 +14,7 @@ class BrowserBase protected () extends js.Object {
   def onAuthStepChange(client: dropboxjsLib.DropboxNs.Client, callback: js.Function0[scala.Unit]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.AuthDriver.BrowserBase")
 @js.native
 object BrowserBase extends js.Object {

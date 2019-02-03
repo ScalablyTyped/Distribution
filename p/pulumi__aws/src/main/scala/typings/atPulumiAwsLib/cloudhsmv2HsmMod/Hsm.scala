@@ -48,6 +48,7 @@ class Hsm protected ()
   val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudhsmv2/hsm", "Hsm")
 @js.native
 object Hsm extends js.Object {

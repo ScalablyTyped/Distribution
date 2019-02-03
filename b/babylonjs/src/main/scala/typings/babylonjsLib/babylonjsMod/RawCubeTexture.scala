@@ -27,9 +27,7 @@ class RawCubeTexture protected ()
   def this(scene: babylonjsLib.BABYLONNs.Scene, data: babylonjsLib.BABYLONNs.Nullable[js.Array[stdLib.ArrayBufferView]], size: scala.Double, format: js.UndefOr[scala.Double], `type`: js.UndefOr[scala.Double], generateMipMaps: js.UndefOr[scala.Boolean], invertY: js.UndefOr[scala.Boolean], samplingMode: js.UndefOr[scala.Double], compression: js.UndefOr[babylonjsLib.BABYLONNs.Nullable[java.lang.String]]) = this()
 }
 
-/**
-  * Raw cube texture where the raw buffers are passed in
-  */
+/* static members */
 @JSImport("babylonjs", "RawCubeTexture")
 @js.native
 object RawCubeTexture extends js.Object {

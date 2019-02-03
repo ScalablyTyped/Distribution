@@ -15,6 +15,7 @@ class Signature () extends js.Object {
   def when(): nodegitLib.timeMod.Time = js.native
 }
 
+/* static members */
 @JSImport("nodegit/signature", "Signature")
 @js.native
 object Signature extends js.Object {

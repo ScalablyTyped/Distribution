@@ -15,6 +15,7 @@ class EntityKey protected () extends js.Object {
   def equals(entityKey: EntityKey): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.EntityKey")
 @js.native
 object EntityKey extends js.Object {

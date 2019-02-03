@@ -178,6 +178,7 @@ object sesNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.sesTemplateMod.TemplateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ActiveReceiptRuleSet extends js.Object {
     /**
@@ -202,6 +203,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesActiveReceiptRuleSetMod.ActiveReceiptRuleSet = js.native
   }
   
+  /* static members */
   @js.native
   object ConfgurationSet extends js.Object {
     /**
@@ -226,6 +228,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesConfgurationSetMod.ConfgurationSet = js.native
   }
   
+  /* static members */
   @js.native
   object DomainDkim extends js.Object {
     /**
@@ -250,6 +253,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesDomainDkimMod.DomainDkim = js.native
   }
   
+  /* static members */
   @js.native
   object DomainIdentity extends js.Object {
     /**
@@ -274,6 +278,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesDomainIdentityMod.DomainIdentity = js.native
   }
   
+  /* static members */
   @js.native
   object DomainIdentityVerification extends js.Object {
     /**
@@ -298,6 +303,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesDomainIdentityVerificationMod.DomainIdentityVerification = js.native
   }
   
+  /* static members */
   @js.native
   object EventDestination extends js.Object {
     /**
@@ -322,6 +328,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesEventDestinationMod.EventDestination = js.native
   }
   
+  /* static members */
   @js.native
   object IdentityNotificationTopic extends js.Object {
     /**
@@ -346,6 +353,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopic = js.native
   }
   
+  /* static members */
   @js.native
   object MailFrom extends js.Object {
     /**
@@ -370,6 +378,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesMailFromMod.MailFrom = js.native
   }
   
+  /* static members */
   @js.native
   object ReceiptFilter extends js.Object {
     /**
@@ -394,6 +403,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesReceiptFilterMod.ReceiptFilter = js.native
   }
   
+  /* static members */
   @js.native
   object ReceiptRule extends js.Object {
     /**
@@ -418,6 +428,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesReceiptRuleMod.ReceiptRule = js.native
   }
   
+  /* static members */
   @js.native
   object ReceiptRuleSet extends js.Object {
     /**
@@ -442,6 +453,7 @@ object sesNs extends js.Object {
     ): atPulumiAwsLib.sesReceiptRuleSetMod.ReceiptRuleSet = js.native
   }
   
+  /* static members */
   @js.native
   object Template extends js.Object {
     /**

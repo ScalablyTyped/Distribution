@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends StyleAttributor
 
+/* static members */
 @JSImport("parchment/dist/src/attributor/style", JSImport.Default)
 @js.native
 object default extends js.Object {

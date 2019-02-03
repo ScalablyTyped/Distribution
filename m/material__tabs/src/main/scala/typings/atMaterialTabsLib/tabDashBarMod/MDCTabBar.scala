@@ -20,6 +20,7 @@ class MDCTabBar ()
   def layout(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/tabs/tab-bar", "MDCTabBar")
 @js.native
 object MDCTabBar extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TaskQueue () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.TaskQueue")
 @js.native
 object TaskQueue extends js.Object {

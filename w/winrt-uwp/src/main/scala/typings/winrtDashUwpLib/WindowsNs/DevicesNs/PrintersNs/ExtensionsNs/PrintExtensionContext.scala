@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PrintExtensionContext () extends js.Object
 
-/** Provides the context for the printer extension object. */
+/* static members */
 @JSGlobal("Windows.Devices.Printers.Extensions.PrintExtensionContext")
 @js.native
 object PrintExtensionContext extends js.Object {

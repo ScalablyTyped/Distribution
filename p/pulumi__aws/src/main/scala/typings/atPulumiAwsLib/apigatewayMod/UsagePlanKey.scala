@@ -20,6 +20,7 @@ class UsagePlanKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayUsagePlanKeyMod.UsagePlanKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "UsagePlanKey")
 @js.native
 object UsagePlanKey extends js.Object {

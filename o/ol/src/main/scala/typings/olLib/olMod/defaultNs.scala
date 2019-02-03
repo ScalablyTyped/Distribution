@@ -617,6 +617,7 @@ object defaultNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object Observable extends js.Object {
     def unByKey(key: js.Array[openlayersLib.openlayersMod.EventsKey]): scala.Unit = js.native
@@ -629,6 +630,7 @@ object defaultNs extends js.Object {
     def unByKey(key: openlayersLib.openlayersMod.EventsKey): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Sphere extends js.Object {
     /**
@@ -1011,16 +1013,7 @@ object defaultNs extends js.Object {
       */
     def defaults(): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.controlNs.Control] = js.native
     def defaults(opt_options: openlayersLib.openlayersMod.olxNs.controlNs.DefaultsOptions): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.controlNs.Control] = js.native
-    /**
-      * @classdesc
-      * Control to show all the attributions associated with the layer sources
-      * in the map. This control is one of the default controls included in maps.
-      * By default it will show in the bottom right portion of the map, but this can
-      * be changed by using a css selector for `.ol-attribution`.
-      *
-      * @param opt_options Attribution options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Attribution extends js.Object {
       /**
@@ -1031,17 +1024,7 @@ object defaultNs extends js.Object {
       def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
     }
     
-    /**
-      * @classdesc
-      * A control to show the 2D coordinates of the mouse cursor. By default, these
-      * are in the view projection, but can be in any supported projection.
-      * By default the control is shown in the top right corner of the map, but this
-      * can be changed by using the css selector `.ol-mouse-position`.
-      *
-      * @param opt_options Mouse position
-      *     options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object MousePosition extends js.Object {
       /**
@@ -1052,12 +1035,7 @@ object defaultNs extends js.Object {
       def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
     }
     
-    /**
-      * Create a new control with a map acting as an overview map for an other
-      * defined map.
-      * @param opt_options OverviewMap options.
-      * @api
-      */
+    /* static members */
     @js.native
     object OverviewMap extends js.Object {
       /**
@@ -1068,15 +1046,7 @@ object defaultNs extends js.Object {
       def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
     }
     
-    /**
-      * @classdesc
-      * A button control to reset rotation to 0.
-      * To style this control use css selector `.ol-rotate`. A `.ol-hidden` css
-      * selector is added to the button when the rotation is 0.
-      *
-      * @param opt_options Rotate options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Rotate extends js.Object {
       /**
@@ -1087,19 +1057,7 @@ object defaultNs extends js.Object {
       def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
     }
     
-    /**
-      * @classdesc
-      * A control displaying rough y-axis distances, calculated for the center of the
-      * viewport. For conformal projections (e.g. EPSG:3857, the default view
-      * projection in OpenLayers), the scale is valid for all directions.
-      * No scale line will be shown when the y-axis distance of a pixel at the
-      * viewport center cannot be calculated in the view projection.
-      * By default the scale line will show in the bottom left portion of the map,
-      * but this can be changed by using the css selector `.ol-scale-line`.
-      *
-      * @param opt_options Scale line options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object ScaleLine extends js.Object {
       /**
@@ -1110,17 +1068,7 @@ object defaultNs extends js.Object {
       def render(mapEvent: openlayersLib.openlayersMod.MapEvent): scala.Unit = js.native
     }
     
-    /**
-      * @classdesc
-      * A slider type of control for zooming.
-      *
-      * Example:
-      *
-      *     map.addControl(new ol.control.ZoomSlider());
-      *
-      * @param opt_options Zoom slider options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object ZoomSlider extends js.Object {
       /**
@@ -2232,15 +2180,7 @@ object defaultNs extends js.Object {
     class XMLFeature ()
       extends openlayersLib.openlayersMod.formatNs.XMLFeature
     
-    /**
-      * @classdesc
-      * Feature format for reading and writing data in the Encoded
-      * Polyline Algorithm Format.
-      *
-      * @param opt_options
-      *     Optional configuration object.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Polyline extends js.Object {
       /**
@@ -3291,14 +3231,7 @@ object defaultNs extends js.Object {
     class SimpleGeometry ()
       extends openlayersLib.openlayersMod.geomNs.SimpleGeometry
     
-    /**
-      * @classdesc
-      * Polygon geometry.
-      *
-      * @param coordinates Coordinates.
-      * @param opt_layout Layout.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Polygon extends js.Object {
       /**
@@ -3985,13 +3918,7 @@ object defaultNs extends js.Object {
       */
     def defaults(): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.interactionNs.Interaction] = js.native
     def defaults(opt_options: openlayersLib.openlayersMod.olxNs.interactionNs.DefaultsOptions): openlayersLib.openlayersMod.Collection[openlayersLib.openlayersMod.interactionNs.Interaction] = js.native
-    /**
-      * @classdesc
-      * Allows the user to zoom by double-clicking on the map.
-      *
-      * @param opt_options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object DoubleClickZoom extends js.Object {
       /**
@@ -4004,14 +3931,7 @@ object defaultNs extends js.Object {
       def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
     }
     
-    /**
-      * @classdesc
-      * Handles input of vector data by drag and drop.
-      *
-      * @fires ol.interaction.DragAndDropEvent
-      * @param opt_options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object DragAndDrop extends js.Object {
       /**
@@ -4086,14 +4006,7 @@ object defaultNs extends js.Object {
       
     }
     
-    /**
-      * @classdesc
-      * Interaction for drawing feature geometries.
-      *
-      * @fires ol.interaction.DrawEvent
-      * @param options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Draw extends js.Object {
       /**
@@ -4175,21 +4088,7 @@ object defaultNs extends js.Object {
       
     }
     
-    /**
-      * @classdesc
-      * Allows the user to pan the map using keyboard arrows.
-      * Note that, although this interaction is by default included in maps,
-      * the keys can only be used when browser focus is on the element to which
-      * the keyboard events are attached. By default, this is the map div,
-      * though you can change this with the `keyboardEventTarget` in
-      * {@link ol.Map}. `document` never loses focus but, for any other element,
-      * focus will have to be on, and returned to, this element if the keys are to
-      * function.
-      * See also {@link ol.interaction.KeyboardZoom}.
-      *
-      * @param opt_options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object KeyboardPan extends js.Object {
       /**
@@ -4203,21 +4102,7 @@ object defaultNs extends js.Object {
       def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
     }
     
-    /**
-      * @classdesc
-      * Allows the user to zoom the map using keyboard + and -.
-      * Note that, although this interaction is by default included in maps,
-      * the keys can only be used when browser focus is on the element to which
-      * the keyboard events are attached. By default, this is the map div,
-      * though you can change this with the `keyboardEventTarget` in
-      * {@link ol.Map}. `document` never loses focus but, for any other element,
-      * focus will have to be on, and returned to, this element if the keys are to
-      * function.
-      * See also {@link ol.interaction.KeyboardPan}.
-      *
-      * @param opt_options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object KeyboardZoom extends js.Object {
       /**
@@ -4262,13 +4147,7 @@ object defaultNs extends js.Object {
       
     }
     
-    /**
-      * @classdesc
-      * Allows the user to zoom the map by scrolling the mouse wheel.
-      *
-      * @param opt_options Options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object MouseWheelZoom extends js.Object {
       /**
@@ -4281,19 +4160,7 @@ object defaultNs extends js.Object {
       def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
     }
     
-    /**
-      * @classdesc
-      * Base class that calls user-defined functions on `down`, `move` and `up`
-      * events. This class also manages "drag sequences".
-      *
-      * When the `handleDownEvent` user function returns `true` a drag sequence is
-      * started. During a drag sequence the `handleDragEvent` user function is
-      * called on `move` events. The drag sequence ends when the `handleUpEvent`
-      * user function is called and returns `false`.
-      *
-      * @param opt_options Options.
-      * @api
-      */
+    /* static members */
     @js.native
     object Pointer extends js.Object {
       /**
@@ -4307,22 +4174,7 @@ object defaultNs extends js.Object {
       def handleEvent(mapBrowserEvent: openlayersLib.openlayersMod.MapBrowserEvent): scala.Boolean = js.native
     }
     
-    /**
-      * @classdesc
-      * Interaction for selecting vector features. By default, selected features are
-      * styled differently, so this interaction can be used for visual highlighting,
-      * as well as selecting features for other actions, such as modification or
-      * output. There are three ways of controlling which features are selected:
-      * using the browser event as defined by the `condition` and optionally the
-      * `toggle`, `add`/`remove`, and `multi` options; a `layers` filter; and a
-      * further feature filter using the `filter` option.
-      *
-      * Selected features are added to an internal unmanaged layer.
-      *
-      * @param opt_options Options.
-      * @fires ol.interaction.SelectEvent
-      * @api stable
-      */
+    /* static members */
     @js.native
     object Select extends js.Object {
       /**
@@ -5849,13 +5701,7 @@ object defaultNs extends js.Object {
       def this(opt_options: openlayersLib.openlayersMod.olxNs.sourceNs.ZoomifyOptions) = this()
     }
     
-    /**
-      * @classdesc
-      * Layer source for Bing Maps tile data.
-      *
-      * @param options Bing Maps options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object BingMaps extends js.Object {
       /**
@@ -5867,13 +5713,7 @@ object defaultNs extends js.Object {
       var TOS_ATTRIBUTION: openlayersLib.openlayersMod.Attribution = js.native
     }
     
-    /**
-      * @classdesc
-      * Layer source for the OpenStreetMap tile server.
-      *
-      * @param opt_options Open Street Map options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object OSM extends js.Object {
       /**
@@ -5885,13 +5725,7 @@ object defaultNs extends js.Object {
       var ATTRIBUTION: openlayersLib.openlayersMod.Attribution = js.native
     }
     
-    /**
-      * @classdesc
-      * Layer source for tile data from WMTS servers.
-      *
-      * @param options WMTS options.
-      * @api stable
-      */
+    /* static members */
     @js.native
     object WMTS extends js.Object {
       /**
@@ -6206,14 +6040,7 @@ object defaultNs extends js.Object {
       */
     def createXYZ(): openlayersLib.openlayersMod.tilegridNs.TileGrid = js.native
     def createXYZ(opt_options: openlayersLib.openlayersMod.olxNs.tilegridNs.XYZOptions): openlayersLib.openlayersMod.tilegridNs.TileGrid = js.native
-    /**
-      * @classdesc
-      * Set the grid pattern for sources accessing WMTS tiled-image servers.
-      *
-      * @param options WMTS options.
-      * @struct
-      * @api
-      */
+    /* static members */
     @js.native
     object WMTS extends js.Object {
       /**

@@ -13,6 +13,7 @@ class default protected () extends TransportNodeHid {
   def this(device: nodeDashHidLib.nodeDashHidMod.HID, ledgerTransport: scala.Boolean, timeout: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("@ledgerhq/hw-transport-node-hid", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -13,6 +13,7 @@ import scala.scalajs.js.annotation._
 class Pie ()
   extends plottableLib.buildSrcPlotsPiePlotMod.Pie
 
+/* static members */
 @JSImport("plottable/build/src/plots", "Pie")
 @js.native
 object Pie extends js.Object {

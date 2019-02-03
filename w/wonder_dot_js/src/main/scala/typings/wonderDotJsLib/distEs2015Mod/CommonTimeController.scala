@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommonTimeController ()
   extends wonderDotJsLib.distEs2015UtilsTimeCommonTimeControllerMod.CommonTimeController
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CommonTimeController")
 @js.native
 object CommonTimeController extends js.Object {

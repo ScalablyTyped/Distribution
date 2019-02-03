@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class History ()
   extends backboneLib.backboneMod.BackboneNs.History
 
+/* static members */
 @JSImport("backbone", "History")
 @js.native
 object History extends js.Object {

@@ -19,9 +19,7 @@ class WindowsMotionController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Defines the WindowsMotionController object that the state of the windows motion controller
-  */
+/* static members */
 @JSImport("babylonjs", "WindowsMotionController")
 @js.native
 object WindowsMotionController extends js.Object {

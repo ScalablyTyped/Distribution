@@ -70,6 +70,7 @@ object glCoreNs extends js.Object {
     attribs: js.Array[pixiDotJsLib.PIXINs.glCoreNs.Attrib],
     state: pixiDotJsLib.PIXINs.WebGLState
   ): js.UndefOr[stdLib.WebGLRenderingContext] = js.native
+  /* static members */
   @js.native
   object GLBuffer extends js.Object {
     def create(gl: stdLib.WebGLRenderingContext, `type`: scala.Double, data: js.Any, drawType: scala.Double): pixiDotJsLib.PIXINs.glCoreNs.GLBuffer = js.native
@@ -93,6 +94,7 @@ object glCoreNs extends js.Object {
     def createVertexBuffer(gl: stdLib.WebGLRenderingContext, data: stdLib.ArrayBuffer, drawType: scala.Double): pixiDotJsLib.PIXINs.glCoreNs.GLBuffer = js.native
   }
   
+  /* static members */
   @js.native
   object GLFramebuffer extends js.Object {
     def createFloat32(gl: stdLib.WebGLRenderingContext, width: scala.Double, height: scala.Double, data: js.Any): pixiDotJsLib.PIXINs.glCoreNs.GLFramebuffer = js.native
@@ -123,6 +125,7 @@ object glCoreNs extends js.Object {
     ): pixiDotJsLib.PIXINs.glCoreNs.GLFramebuffer = js.native
   }
   
+  /* static members */
   @js.native
   object GLTexture extends js.Object {
     def fromData(
@@ -145,6 +148,7 @@ object glCoreNs extends js.Object {
     def fromSource(gl: stdLib.WebGLRenderingContext, source: stdLib.ImageData, premultipleAlpha: scala.Boolean): pixiDotJsLib.PIXINs.glCoreNs.GLTexture = js.native
   }
   
+  /* static members */
   @js.native
   object VertexArrayObject extends js.Object {
     var FORCE_NATIVE: scala.Boolean = js.native

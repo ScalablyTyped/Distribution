@@ -40,6 +40,7 @@ class ComboBox protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ComboBox")
 @js.native
 object ComboBox extends js.Object {

@@ -18,6 +18,7 @@ class Tile protected () extends js.Object {
   var width: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("athenajs", "Tile")
 @js.native
 object Tile extends js.Object {

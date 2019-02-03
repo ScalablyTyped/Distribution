@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BoxGeometry ()
   extends wonderDotJsLib.distEs2015ComponentGeometryBoxGeometryMod.BoxGeometry
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {

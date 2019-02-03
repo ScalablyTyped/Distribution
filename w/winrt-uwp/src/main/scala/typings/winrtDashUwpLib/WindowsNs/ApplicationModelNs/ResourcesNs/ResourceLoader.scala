@@ -29,7 +29,7 @@ class ResourceLoader () extends js.Object {
   def getStringForUri(uri: winrtDashUwpLib.WindowsNs.FoundationNs.Uri): java.lang.String = js.native
 }
 
-/** Provides simplified access to app resources such as app UI strings. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.ResourceLoader")
 @js.native
 object ResourceLoader extends js.Object {

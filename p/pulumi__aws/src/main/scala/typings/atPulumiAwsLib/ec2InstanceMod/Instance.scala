@@ -200,6 +200,7 @@ class Instance protected ()
   val vpcSecurityGroupIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/instance", "Instance")
 @js.native
 object Instance extends js.Object {

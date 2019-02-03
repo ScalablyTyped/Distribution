@@ -9,6 +9,7 @@ object jsonDashRpcDashWsLibStrings {
   @js.native
   sealed trait `2DOT0` extends js.Object
   
+  @scala.inline
   def `2DOT0`: `2DOT0` = "2.0".asInstanceOf[`2DOT0`]
 }
 

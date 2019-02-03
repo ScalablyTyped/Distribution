@@ -13,10 +13,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SceneComponentConstants () extends js.Object
 
-/**
-  * Groups all the scene component constants in one place to ease maintenance.
-  * @hidden
-  */
+/* static members */
 @JSGlobal("BABYLON.SceneComponentConstants")
 @js.native
 object SceneComponentConstants extends js.Object {

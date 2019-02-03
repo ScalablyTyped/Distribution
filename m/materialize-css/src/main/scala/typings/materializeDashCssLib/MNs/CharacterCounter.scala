@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CharacterCounter ()
   extends Component[js.UndefOr[scala.Nothing]]
 
+/* static members */
 @JSGlobal("M.CharacterCounter")
 @js.native
 object CharacterCounter extends js.Object {

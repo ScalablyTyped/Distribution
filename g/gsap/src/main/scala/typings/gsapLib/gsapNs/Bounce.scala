@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Bounce () extends Ease
 
+/* static members */
 @JSGlobal("gsap.Bounce")
 @js.native
 object Bounce extends js.Object {

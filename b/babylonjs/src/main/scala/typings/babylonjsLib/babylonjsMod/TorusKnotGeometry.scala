@@ -108,10 +108,7 @@ class TorusKnotGeometry protected ()
   side: scala.Double) = this()
 }
 
-/**
-  * Creates a torus knot geometry
-  * @description see http://doc.babylonjs.com/how_to/set_shapes#torus-knot
-  */
+/* static members */
 @JSImport("babylonjs", "TorusKnotGeometry")
 @js.native
 object TorusKnotGeometry extends js.Object {

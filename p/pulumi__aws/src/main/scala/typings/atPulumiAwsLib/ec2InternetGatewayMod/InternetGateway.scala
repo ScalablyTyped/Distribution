@@ -33,6 +33,7 @@ class InternetGateway protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/internetGateway", "InternetGateway")
 @js.native
 object InternetGateway extends js.Object {

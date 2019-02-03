@@ -21,6 +21,7 @@ class Async[OptionType] ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/Async", "Async")
 @js.native
 object Async extends js.Object {

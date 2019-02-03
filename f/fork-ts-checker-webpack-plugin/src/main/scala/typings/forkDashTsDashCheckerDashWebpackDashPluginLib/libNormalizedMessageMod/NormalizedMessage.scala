@@ -24,6 +24,7 @@ class NormalizedMessage protected () extends js.Object {
   def toJSON(): NormalizedMessageJson = js.native
 }
 
+/* static members */
 @JSImport("fork-ts-checker-webpack-plugin/lib/NormalizedMessage", "NormalizedMessage")
 @js.native
 object NormalizedMessage extends js.Object {

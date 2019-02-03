@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Breadcrumbs ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Breadcrumbs
 
+/* static members */
 @JSImport("@blueprintjs/core", "Breadcrumbs")
 @js.native
 object Breadcrumbs extends js.Object {

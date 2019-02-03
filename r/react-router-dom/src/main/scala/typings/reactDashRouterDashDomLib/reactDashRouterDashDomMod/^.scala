@@ -13,14 +13,22 @@ object ^ extends js.Object {
     pattern: java.lang.String,
     params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
   ): java.lang.String = js.native
-  def matchPath[Params /* <: reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: java.lang.String): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
-  def matchPath[Params /* <: reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: java.lang.String): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](
     pathname: java.lang.String,
     props: java.lang.String,
     parent: reactDashRouterLib.reactDashRouterMod.`match`[Params]
   ): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
-  def matchPath[Params /* <: reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: reactDashRouterLib.reactDashRouterMod.RouteProps): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
-  def matchPath[Params /* <: reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](pathname: java.lang.String, props: reactDashRouterLib.reactDashRouterMod.RouteProps): reactDashRouterLib.reactDashRouterMod.`match`[Params] | scala.Null = js.native
+  def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof Params ]:? string}
+    */ reactDashRouterDashDomLib.reactDashRouterDashDomLibStrings.matchPath with js.Any */](
     pathname: java.lang.String,
     props: reactDashRouterLib.reactDashRouterMod.RouteProps,
     parent: reactDashRouterLib.reactDashRouterMod.`match`[Params]

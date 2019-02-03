@@ -15,6 +15,7 @@ class ManagedUpload protected ()
   def this(options: awsDashSdkLib.libS3ManagedUnderscoreUploadMod.ManagedUploadNs.ManagedUploadOptions) = this()
 }
 
+/* static members */
 @JSImport("aws-sdk/clients/s3", "ManagedUpload")
 @js.native
 object ManagedUpload extends js.Object {

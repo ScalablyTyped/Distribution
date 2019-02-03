@@ -16,6 +16,7 @@ class MacAlgorithmProvider () extends IMacAlgorithmProvider {
   override def createKey(keyMaterial: winrtLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
 @js.native
 object MacAlgorithmProvider extends js.Object {

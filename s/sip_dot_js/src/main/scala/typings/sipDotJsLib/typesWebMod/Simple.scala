@@ -12,6 +12,7 @@ class Simple protected ()
   def this(options: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sip.js/types/Web", "Simple")
 @js.native
 object Simple extends js.Object {

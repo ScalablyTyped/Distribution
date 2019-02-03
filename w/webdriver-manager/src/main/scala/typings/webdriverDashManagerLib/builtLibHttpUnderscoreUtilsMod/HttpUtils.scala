@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HttpUtils () extends js.Object
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/http_utils", "HttpUtils")
 @js.native
 object HttpUtils extends js.Object {

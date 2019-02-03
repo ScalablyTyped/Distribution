@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCSnackbarFoundation ()
   extends atMaterialSnackbarLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/snackbar", "MDCSnackbarFoundation")
 @js.native
 object MDCSnackbarFoundation extends js.Object {

@@ -62,9 +62,7 @@ class SplitViewPaneToggle () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Displays a button which is used for opening and closing a SplitView's pane.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.SplitViewPaneToggle")
 @js.native
 object SplitViewPaneToggle extends js.Object {

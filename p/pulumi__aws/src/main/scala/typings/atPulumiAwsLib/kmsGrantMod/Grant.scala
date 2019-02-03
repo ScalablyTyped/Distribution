@@ -56,6 +56,7 @@ class Grant protected ()
   val retiringPrincipal: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kms/grant", "Grant")
 @js.native
 object Grant extends js.Object {

@@ -18,6 +18,7 @@ class CommentTagSerializer ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/comments/comment-tag", "CommentTagSerializer")
 @js.native
 object CommentTagSerializer extends js.Object {

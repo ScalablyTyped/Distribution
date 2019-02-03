@@ -46,6 +46,7 @@ class InstanceGroup protected ()
   val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/emr/instanceGroup", "InstanceGroup")
 @js.native
 object InstanceGroup extends js.Object {

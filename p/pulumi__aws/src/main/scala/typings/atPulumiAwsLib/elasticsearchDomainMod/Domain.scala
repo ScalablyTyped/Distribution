@@ -91,6 +91,7 @@ class Domain protected ()
   val vpcOptions: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_AvailabilityZones]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticsearch/domain", "Domain")
 @js.native
 object Domain extends js.Object {

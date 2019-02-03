@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Datepicker ()
   extends materializeDashCssLib.MNs.Datepicker
 
+/* static members */
 @JSImport("materialize-css", "Datepicker")
 @js.native
 object Datepicker extends js.Object {

@@ -16,6 +16,7 @@ class UUID protected () extends js.Object {
   def inspect(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("builder-util-runtime/out/uuid", "UUID")
 @js.native
 object UUID extends js.Object {

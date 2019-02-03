@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NotificationEvent ()
   extends limeDashJsLib.limeDashJsMod.LimeNs.NotificationEvent
 
+/* static members */
 @JSImport("lime-js", "NotificationEvent")
 @js.native
 object NotificationEvent extends js.Object {

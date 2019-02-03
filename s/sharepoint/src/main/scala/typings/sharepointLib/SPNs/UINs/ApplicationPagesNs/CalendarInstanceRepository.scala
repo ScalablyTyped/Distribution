@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CalendarInstanceRepository () extends js.Object
 
+/* static members */
 @JSGlobal("SP.UI.ApplicationPages.CalendarInstanceRepository")
 @js.native
 object CalendarInstanceRepository extends js.Object {

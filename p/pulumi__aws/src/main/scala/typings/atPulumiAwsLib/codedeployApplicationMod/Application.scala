@@ -30,6 +30,7 @@ class Application protected ()
   val uniqueId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codedeploy/application", "Application")
 @js.native
 object Application extends js.Object {

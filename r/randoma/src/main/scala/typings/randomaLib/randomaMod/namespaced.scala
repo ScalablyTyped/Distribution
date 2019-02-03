@@ -11,6 +11,7 @@ class namespaced protected () extends Randoma {
   def this(options: randomaLib.randomaMod.RandomaNs.Options) = this()
 }
 
+/* static members */
 @JSImport("randoma", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

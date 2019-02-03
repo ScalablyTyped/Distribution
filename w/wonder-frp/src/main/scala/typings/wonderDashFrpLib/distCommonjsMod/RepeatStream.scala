@@ -12,6 +12,7 @@ class RepeatStream protected ()
   def this(source: wonderDashFrpLib.distCommonjsCoreStreamMod.Stream, count: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "RepeatStream")
 @js.native
 object RepeatStream extends js.Object {

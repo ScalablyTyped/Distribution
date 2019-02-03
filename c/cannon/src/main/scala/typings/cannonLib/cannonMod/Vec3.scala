@@ -14,6 +14,7 @@ class Vec3 ()
   def this(x: scala.Double, y: scala.Double, z: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cannon", "Vec3")
 @js.native
 object Vec3 extends js.Object {

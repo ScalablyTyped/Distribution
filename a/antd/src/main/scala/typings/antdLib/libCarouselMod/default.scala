@@ -11,6 +11,7 @@ class default protected () extends Carousel {
   def this(props: CarouselProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/carousel", JSImport.Default)
 @js.native
 object default extends js.Object {

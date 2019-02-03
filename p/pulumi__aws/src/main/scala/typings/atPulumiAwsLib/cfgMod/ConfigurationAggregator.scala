@@ -21,6 +21,7 @@ class ConfigurationAggregator protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cfgConfigurationAggregatorMod.ConfigurationAggregatorArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg", "ConfigurationAggregator")
 @js.native
 object ConfigurationAggregator extends js.Object {

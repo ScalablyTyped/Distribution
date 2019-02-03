@@ -110,6 +110,7 @@ class NumberPicker protected () extends LinearLayout {
   /* private */ def validateInputTextView(v: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.NumberPicker")
 @js.native
 object NumberPicker extends js.Object {

@@ -54,7 +54,7 @@ abstract class GeofenceMonitor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Contains the information about the monitored Geofence objects. */
+/* static members */
 @JSGlobal("Windows.Devices.Geolocation.Geofencing.GeofenceMonitor")
 @js.native
 object GeofenceMonitor extends js.Object {

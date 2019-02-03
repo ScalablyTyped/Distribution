@@ -15,6 +15,7 @@ class SchemaDirectiveVisitor protected () extends SchemaVisitor {
   var visitedType: VisitableSchemaType = js.native
 }
 
+/* static members */
 @JSImport("graphql-tools/dist/schemaVisitor", "SchemaDirectiveVisitor")
 @js.native
 object SchemaDirectiveVisitor extends js.Object {

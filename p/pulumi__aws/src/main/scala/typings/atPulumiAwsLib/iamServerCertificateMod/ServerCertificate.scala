@@ -56,6 +56,7 @@ class ServerCertificate protected ()
   val privateKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/serverCertificate", "ServerCertificate")
 @js.native
 object ServerCertificate extends js.Object {

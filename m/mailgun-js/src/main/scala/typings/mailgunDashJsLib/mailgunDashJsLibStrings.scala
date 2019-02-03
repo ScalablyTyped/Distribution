@@ -15,8 +15,11 @@ object mailgunDashJsLibStrings {
   @js.native
   sealed trait unknown extends js.Object
   
+  @scala.inline
   def `false`: `false` = "false".asInstanceOf[`false`]
+  @scala.inline
   def `true`: `true` = "true".asInstanceOf[`true`]
+  @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
 

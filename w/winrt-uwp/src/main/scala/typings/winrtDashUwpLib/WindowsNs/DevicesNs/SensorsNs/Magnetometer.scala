@@ -41,7 +41,7 @@ abstract class Magnetometer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a magnetic sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Magnetometer")
 @js.native
 object Magnetometer extends js.Object {

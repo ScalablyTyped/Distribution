@@ -20,6 +20,7 @@ class Group protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.autoscalingGroupMod.GroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling", "Group")
 @js.native
 object Group extends js.Object {

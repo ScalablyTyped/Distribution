@@ -17,6 +17,7 @@ class LocalTime ()
   override def range(field: jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalField): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ValueRange = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "LocalTime")
 @js.native
 object LocalTime extends js.Object {

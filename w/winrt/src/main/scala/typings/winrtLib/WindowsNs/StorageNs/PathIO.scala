@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PathIO () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.PathIO")
 @js.native
 object PathIO extends js.Object {

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyboardEventTypes () extends js.Object
 
-/**
-  * Gather the list of keyboard event types as constants.
-  */
+/* static members */
 @JSGlobal("BABYLON.KeyboardEventTypes")
 @js.native
 object KeyboardEventTypes extends js.Object {

@@ -12,6 +12,7 @@ class Role () extends js.Object {
   var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Realm.Permissions.Role")
 @js.native
 object Role extends js.Object {

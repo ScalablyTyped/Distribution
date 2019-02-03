@@ -31,6 +31,7 @@ abstract class Resource protected () extends js.Object {
   def getProvider(moduleMember: java.lang.String): js.UndefOr[ProviderResource] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi/resource", "Resource")
 @js.native
 object Resource extends js.Object {

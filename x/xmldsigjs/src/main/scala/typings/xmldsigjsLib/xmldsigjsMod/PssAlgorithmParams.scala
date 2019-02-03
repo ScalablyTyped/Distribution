@@ -12,6 +12,7 @@ class PssAlgorithmParams ()
   def this(algorithm: xmldsigjsLib.xmldsigjsMod.XmlDSigJsNs.RsaPSSSignParams) = this()
 }
 
+/* static members */
 @JSImport("xmldsigjs", "PssAlgorithmParams")
 @js.native
 object PssAlgorithmParams extends js.Object {

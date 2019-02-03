@@ -25,13 +25,7 @@ abstract class PBRBaseMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The Physically based material base class of BJS.
-  *
-  * This offers the main features of a standard PBR material.
-  * For more information, please refer to the documentation :
-  * http://doc.babylonjs.com/extensions/Physically_Based_Rendering
-  */
+/* static members */
 @JSImport("babylonjs", "PBRBaseMaterial")
 @js.native
 object PBRBaseMaterial extends js.Object {

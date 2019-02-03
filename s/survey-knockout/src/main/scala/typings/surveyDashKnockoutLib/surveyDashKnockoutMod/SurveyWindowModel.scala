@@ -68,6 +68,7 @@ class SurveyWindowModel protected () extends Base {
   def showingChangedCallback(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "SurveyWindowModel")
 @js.native
 object SurveyWindowModel extends js.Object {

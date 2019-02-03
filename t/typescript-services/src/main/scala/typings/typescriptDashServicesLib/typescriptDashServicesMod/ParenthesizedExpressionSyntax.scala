@@ -12,6 +12,7 @@ class ParenthesizedExpressionSyntax protected ()
   def this(openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ParenthesizedExpressionSyntax")
 @js.native
 object ParenthesizedExpressionSyntax extends js.Object {

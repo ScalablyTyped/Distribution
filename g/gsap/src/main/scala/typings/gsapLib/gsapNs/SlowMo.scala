@@ -11,6 +11,7 @@ class SlowMo () extends Ease {
   def config(linearRatio: scala.Double, power: scala.Double, yoyoMode: scala.Boolean): SlowMo = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.SlowMo")
 @js.native
 object SlowMo extends js.Object {

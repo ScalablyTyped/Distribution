@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MessageLocalization () extends js.Object
 
+/* static members */
 @JSImport("business-rules-engine", "MessageLocalization")
 @js.native
 object MessageLocalization extends js.Object {

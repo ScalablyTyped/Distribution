@@ -12,6 +12,7 @@ class SphereOutlineGeometry ()
   def this(options: cesiumLib.Anon_RadiusSlicePartitions) = this()
 }
 
+/* static members */
 @JSImport("cesium", "SphereOutlineGeometry")
 @js.native
 object SphereOutlineGeometry extends js.Object {

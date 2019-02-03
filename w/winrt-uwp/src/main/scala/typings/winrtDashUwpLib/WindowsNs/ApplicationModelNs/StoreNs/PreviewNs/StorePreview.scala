@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StorePreview () extends js.Object
 
-/** Defines static methods for retrieving the in-app product SKUs available for the current app and requesting the purchase of an in-app product SKU for the app. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Store.Preview.StorePreview")
 @js.native
 object StorePreview extends js.Object {

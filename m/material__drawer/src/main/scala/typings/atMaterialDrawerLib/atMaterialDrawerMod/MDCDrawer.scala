@@ -23,6 +23,7 @@ class MDCDrawer protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/drawer", "MDCDrawer")
 @js.native
 object MDCDrawer extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class BoxOutlineGeometry ()
   extends cesiumLib.cesiumMod.CesiumNs.BoxOutlineGeometry
 
+/* static members */
 @JSImport("cesium", "BoxOutlineGeometry")
 @js.native
 object BoxOutlineGeometry extends js.Object {

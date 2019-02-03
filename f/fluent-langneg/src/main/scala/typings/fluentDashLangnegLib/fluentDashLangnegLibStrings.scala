@@ -15,8 +15,11 @@ object fluentDashLangnegLibStrings {
   @js.native
   sealed trait matching extends js.Object
   
+  @scala.inline
   def filtering: filtering = "filtering".asInstanceOf[filtering]
+  @scala.inline
   def lookup: lookup = "lookup".asInstanceOf[lookup]
+  @scala.inline
   def matching: matching = "matching".asInstanceOf[matching]
 }
 

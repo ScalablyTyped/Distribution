@@ -22,15 +22,7 @@ class User ()
   override def toJSON(): js.Any = js.native
 }
 
-/**
-  * @class
-  *
-  * <p>A AV.User object is a local representation of a user persisted to the
-  * AV cloud. This class is a subclass of a AV.Object, and retains the
-  * same functionality of a AV.Object, but also extends it with various
-  * user specific methods, like authentication, signing up, and validation of
-  * uniqueness.</p>
-  */
+/* static members */
 @JSImport("avoscloud-sdk", "User")
 @js.native
 object User extends js.Object {

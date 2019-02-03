@@ -120,43 +120,81 @@ object istanbulDashLibDashInstrumentLibStrings {
   @js.native
   sealed trait `~` extends js.Object
   
+  @scala.inline
   def `!`: `!` = "!".asInstanceOf[`!`]
+  @scala.inline
   def `!=`: `!=` = "!=".asInstanceOf[`!=`]
+  @scala.inline
   def `!==`: `!==` = "!==".asInstanceOf[`!==`]
+  @scala.inline
   def `%`: `%` = "%".asInstanceOf[`%`]
+  @scala.inline
   def `&`: `&` = "&".asInstanceOf[`&`]
+  @scala.inline
   def `&&`: `&&` = "&&".asInstanceOf[`&&`]
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def `**`: `**` = "**".asInstanceOf[`**`]
+  @scala.inline
   def `+`: `+` = "+".asInstanceOf[`+`]
+  @scala.inline
   def `++`: `++` = "++".asInstanceOf[`++`]
+  @scala.inline
   def `-`: `-` = "-".asInstanceOf[`-`]
+  @scala.inline
   def `--`: `--` = "--".asInstanceOf[`--`]
+  @scala.inline
   def `/`: `/` = "/".asInstanceOf[`/`]
+  @scala.inline
   def `<`: `<` = "<".asInstanceOf[`<`]
+  @scala.inline
   def `<<`: `<<` = "<<".asInstanceOf[`<<`]
+  @scala.inline
   def `<=`: `<=` = "<=".asInstanceOf[`<=`]
+  @scala.inline
   def `==`: `==` = "==".asInstanceOf[`==`]
+  @scala.inline
   def `===`: `===` = "===".asInstanceOf[`===`]
+  @scala.inline
   def `>`: `>` = ">".asInstanceOf[`>`]
+  @scala.inline
   def `>=`: `>=` = ">=".asInstanceOf[`>=`]
+  @scala.inline
   def `>>`: `>>` = ">>".asInstanceOf[`>>`]
+  @scala.inline
   def `>>>`: `>>>` = ">>>".asInstanceOf[`>>>`]
+  @scala.inline
   def `^`: `^` = "^".asInstanceOf[`^`]
+  @scala.inline
   def const: const = "const".asInstanceOf[const]
+  @scala.inline
   def constructor: constructor = "constructor".asInstanceOf[constructor]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def in: in = "in".asInstanceOf[in]
+  @scala.inline
   def instanceof: instanceof = "instanceof".asInstanceOf[instanceof]
+  @scala.inline
   def let: let = "let".asInstanceOf[let]
+  @scala.inline
   def method: method = "method".asInstanceOf[method]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
+  @scala.inline
   def typeof: typeof = "typeof".asInstanceOf[typeof]
+  @scala.inline
   def `var`: `var` = "var".asInstanceOf[`var`]
+  @scala.inline
   def void: void = "void".asInstanceOf[void]
+  @scala.inline
   def `|`: `|` = "|".asInstanceOf[`|`]
+  @scala.inline
   def `||`: `||` = "||".asInstanceOf[`||`]
+  @scala.inline
   def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

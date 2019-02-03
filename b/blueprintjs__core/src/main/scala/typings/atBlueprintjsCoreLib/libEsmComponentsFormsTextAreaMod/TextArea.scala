@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TextArea ()
   extends reactLib.reactMod.PureComponent[ITextAreaProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/forms/textArea", "TextArea")
 @js.native
 object TextArea extends js.Object {

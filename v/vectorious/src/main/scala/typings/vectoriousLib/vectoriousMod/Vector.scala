@@ -132,6 +132,7 @@ class Vector protected () extends js.Object {
   def toArray(): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("vectorious", "Vector")
 @js.native
 object Vector extends js.Object {

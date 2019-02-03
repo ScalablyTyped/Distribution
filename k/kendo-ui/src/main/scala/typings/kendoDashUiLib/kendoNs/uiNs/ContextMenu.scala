@@ -38,6 +38,7 @@ class ContextMenu protected () extends Widget {
   def remove(element: stdLib.Element): ContextMenu = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ContextMenu")
 @js.native
 object ContextMenu extends js.Object {

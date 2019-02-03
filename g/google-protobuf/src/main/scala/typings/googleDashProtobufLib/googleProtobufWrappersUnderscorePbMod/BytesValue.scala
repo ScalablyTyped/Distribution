@@ -16,6 +16,7 @@ class BytesValue ()
   def setValue(value: stdLib.Uint8Array): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "BytesValue")
 @js.native
 object BytesValue extends js.Object {

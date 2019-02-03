@@ -37,6 +37,7 @@ object sfnNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.sfnStateMachineMod.StateMachineArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Activity extends js.Object {
     /**
@@ -61,6 +62,7 @@ object sfnNs extends js.Object {
     ): atPulumiAwsLib.sfnActivityMod.Activity = js.native
   }
   
+  /* static members */
   @js.native
   object StateMachine extends js.Object {
     /**

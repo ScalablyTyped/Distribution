@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SignatureInfoHelpers () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.SignatureInfoHelpers")
 @js.native
 object SignatureInfoHelpers extends js.Object {

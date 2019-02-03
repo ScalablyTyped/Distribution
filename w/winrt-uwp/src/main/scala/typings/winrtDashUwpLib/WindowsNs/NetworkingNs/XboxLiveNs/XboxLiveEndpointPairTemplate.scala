@@ -83,7 +83,7 @@ abstract class XboxLiveEndpointPairTemplate () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+/* static members */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveEndpointPairTemplate")
 @js.native
 object XboxLiveEndpointPairTemplate extends js.Object {

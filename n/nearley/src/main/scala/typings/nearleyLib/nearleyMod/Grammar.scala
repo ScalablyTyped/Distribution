@@ -15,6 +15,7 @@ class Grammar protected () extends js.Object {
   var start: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("nearley", "Grammar")
 @js.native
 object Grammar extends js.Object {

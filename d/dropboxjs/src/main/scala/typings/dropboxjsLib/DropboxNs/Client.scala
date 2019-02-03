@@ -326,6 +326,7 @@ class Client protected () extends js.Object {
   ): stdLib.XMLHttpRequest = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Client")
 @js.native
 object Client extends js.Object {

@@ -11,6 +11,7 @@ class default protected () extends Form {
   def this(props: FormProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/form/Form", JSImport.Default)
 @js.native
 object default extends js.Object {

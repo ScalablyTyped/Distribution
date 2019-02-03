@@ -23,7 +23,7 @@ abstract class DialDevice () extends js.Object {
   def getDialApp(appName: java.lang.String): DialApp = js.native
 }
 
-/** Represents the remote device capable of running DIAL apps. */
+/* static members */
 @JSGlobal("Windows.Media.DialProtocol.DialDevice")
 @js.native
 object DialDevice extends js.Object {

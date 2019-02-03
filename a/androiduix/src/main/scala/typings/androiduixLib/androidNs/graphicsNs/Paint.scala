@@ -101,6 +101,7 @@ class Paint () extends js.Object {
   def setTextSize(textSize: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.Paint")
 @js.native
 object Paint extends js.Object {

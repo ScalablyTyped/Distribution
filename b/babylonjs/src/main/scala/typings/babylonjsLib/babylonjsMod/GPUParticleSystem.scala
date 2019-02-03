@@ -26,11 +26,7 @@ class GPUParticleSystem protected ()
   def this(name: java.lang.String, options: stdLib.Partial[babylonjsLib.Anon_Capacity], scene: babylonjsLib.BABYLONNs.Scene, isAnimationSheetEnabled: scala.Boolean) = this()
 }
 
-/**
-  * This represents a GPU particle system in Babylon
-  * This is the fastest particle system in Babylon as it uses the GPU to update the individual particle data
-  * @see https://www.babylonjs-playground.com/#PU4WYI#4
-  */
+/* static members */
 @JSImport("babylonjs", "GPUParticleSystem")
 @js.native
 object GPUParticleSystem extends js.Object {

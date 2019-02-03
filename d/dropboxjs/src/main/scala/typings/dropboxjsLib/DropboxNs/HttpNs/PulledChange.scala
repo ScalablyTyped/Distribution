@@ -13,6 +13,7 @@ class PulledChange () extends js.Object {
   var wasRemoved: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.PulledChange")
 @js.native
 object PulledChange extends js.Object {

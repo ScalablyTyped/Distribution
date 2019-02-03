@@ -12,6 +12,7 @@ class DatePickerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsDatePickerDatePickerDotTypesMod.IDatePickerProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/DatePicker", "DatePickerBase")
 @js.native
 object DatePickerBase extends js.Object {

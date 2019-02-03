@@ -25,6 +25,7 @@ class GeographicRegion () extends IGeographicRegion {
   override var nativeName: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Globalization.GeographicRegion")
 @js.native
 object GeographicRegion extends js.Object {

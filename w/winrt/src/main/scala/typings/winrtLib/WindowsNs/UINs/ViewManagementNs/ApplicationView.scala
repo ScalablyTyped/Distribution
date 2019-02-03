@@ -46,6 +46,7 @@ class ApplicationView () extends js.Object {
   var titleBar: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ApplicationViewTitleBar */ js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
 @js.native
 object ApplicationView extends js.Object {

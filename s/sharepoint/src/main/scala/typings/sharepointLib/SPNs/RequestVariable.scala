@@ -14,6 +14,7 @@ class RequestVariable protected () extends ClientObject {
   def set(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.RequestVariable")
 @js.native
 object RequestVariable extends js.Object {

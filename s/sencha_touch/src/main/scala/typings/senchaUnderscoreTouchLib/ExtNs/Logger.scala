@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Logger () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Logger")
 @js.native
 object Logger extends js.Object {

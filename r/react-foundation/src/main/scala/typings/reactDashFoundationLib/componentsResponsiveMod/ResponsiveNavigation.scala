@@ -27,6 +27,7 @@ class ResponsiveNavigation ()
   def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-foundation/components/responsive", "ResponsiveNavigation")
 @js.native
 object ResponsiveNavigation extends js.Object {

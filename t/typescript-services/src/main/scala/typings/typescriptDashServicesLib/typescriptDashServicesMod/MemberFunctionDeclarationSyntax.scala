@@ -12,6 +12,7 @@ class MemberFunctionDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, callSignature: typescriptDashServicesLib.TypeScriptNs.CallSignatureSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "MemberFunctionDeclarationSyntax")
 @js.native
 object MemberFunctionDeclarationSyntax extends js.Object {

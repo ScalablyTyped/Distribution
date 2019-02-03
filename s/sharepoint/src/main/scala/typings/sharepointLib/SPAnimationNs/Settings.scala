@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Settings () extends js.Object
 
+/* static members */
 @JSGlobal("SPAnimation.Settings")
 @js.native
 object Settings extends js.Object {

@@ -12,6 +12,7 @@ class ReferenceResolver protected ()
   def this(inputFileNames: js.Array[java.lang.String], host: typescriptDashServicesLib.TypeScriptNs.IReferenceResolverHost, useCaseSensitiveFileResolution: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ReferenceResolver")
 @js.native
 object ReferenceResolver extends js.Object {

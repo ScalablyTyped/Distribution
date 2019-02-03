@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Popover ()
   extends atBlueprintjsCoreLib.libEsmComponentsPopoverPopoverMod.Popover
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Popover")
 @js.native
 object Popover extends js.Object {

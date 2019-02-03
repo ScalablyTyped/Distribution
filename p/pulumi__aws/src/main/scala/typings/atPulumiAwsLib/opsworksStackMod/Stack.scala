@@ -117,6 +117,7 @@ class Stack protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/stack", "Stack")
 @js.native
 object Stack extends js.Object {

@@ -32,6 +32,7 @@ class LoadBalancerBackendServerPolicy protected ()
   val policyNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing/loadBalancerBackendServerPolicy", "LoadBalancerBackendServerPolicy")
 @js.native
 object LoadBalancerBackendServerPolicy extends js.Object {

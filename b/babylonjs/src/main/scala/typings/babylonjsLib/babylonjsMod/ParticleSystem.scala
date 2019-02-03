@@ -31,12 +31,7 @@ class ParticleSystem protected ()
   def this(name: java.lang.String, capacity: scala.Double, scene: babylonjsLib.BABYLONNs.Scene, customEffect: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Effect], isAnimationSheetEnabled: scala.Boolean, epsilon: scala.Double) = this()
 }
 
-/**
-  * This represents a particle system in Babylon.
-  * Particles are often small sprites used to simulate hard-to-reproduce phenomena like fire, smoke, water, or abstract visual effects like magic glitter and faery dust.
-  * Particles can take different shapes while emitted like box, sphere, cone or you can write your custom function.
-  * @example https://doc.babylonjs.com/babylon101/particles
-  */
+/* static members */
 @JSImport("babylonjs", "ParticleSystem")
 @js.native
 object ParticleSystem extends js.Object {

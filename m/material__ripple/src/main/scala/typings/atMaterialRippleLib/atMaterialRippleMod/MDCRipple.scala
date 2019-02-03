@@ -18,6 +18,7 @@ class MDCRipple ()
   def layout(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/ripple", "MDCRipple")
 @js.native
 object MDCRipple extends js.Object {

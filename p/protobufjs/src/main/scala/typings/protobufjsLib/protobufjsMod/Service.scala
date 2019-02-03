@@ -32,6 +32,7 @@ class Service protected () extends NamespaceBase {
   def create(rpcImpl: protobufjsLib.RPCImpl, requestDelimited: scala.Boolean, responseDelimited: scala.Boolean): protobufjsLib.protobufjsMod.rpcNs.Service = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Service")
 @js.native
 object Service extends js.Object {

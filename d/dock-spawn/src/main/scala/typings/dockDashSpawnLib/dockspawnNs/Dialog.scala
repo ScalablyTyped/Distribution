@@ -16,6 +16,7 @@ class Dialog protected () extends js.Object {
   def setTitleIcon(iconName: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("dockspawn.Dialog")
 @js.native
 object Dialog extends js.Object {

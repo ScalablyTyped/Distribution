@@ -39,16 +39,27 @@ object systemjsLibStrings {
   @js.native
   sealed trait typescript extends js.Object
   
+  @scala.inline
   def amd: amd = "amd".asInstanceOf[amd]
+  @scala.inline
   def babel: babel = "babel".asInstanceOf[babel]
+  @scala.inline
   def cjs: cjs = "cjs".asInstanceOf[cjs]
+  @scala.inline
   def esm: esm = "esm".asInstanceOf[esm]
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def `plugin-babel`: `plugin-babel` = "plugin-babel".asInstanceOf[`plugin-babel`]
+  @scala.inline
   def `plugin-traceur`: `plugin-traceur` = "plugin-traceur".asInstanceOf[`plugin-traceur`]
+  @scala.inline
   def `plugin-typescript`: `plugin-typescript` = "plugin-typescript".asInstanceOf[`plugin-typescript`]
+  @scala.inline
   def register: register = "register".asInstanceOf[register]
+  @scala.inline
   def traceur: traceur = "traceur".asInstanceOf[traceur]
+  @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
 }
 

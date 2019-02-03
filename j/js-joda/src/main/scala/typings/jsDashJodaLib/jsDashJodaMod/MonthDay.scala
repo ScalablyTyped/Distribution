@@ -49,6 +49,7 @@ class MonthDay ()
   override def withMonth(month: scala.Double): jsDashJodaLib.jsDashJodaMod.JSJodaNs.MonthDay = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "MonthDay")
 @js.native
 object MonthDay extends js.Object {

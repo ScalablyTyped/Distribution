@@ -69,6 +69,7 @@ class TransitGateway protected ()
   val vpnEcmpSupport: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway/transitGateway", "TransitGateway")
 @js.native
 object TransitGateway extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TileUpdateManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.Notifications.TileUpdateManager")
 @js.native
 object TileUpdateManager extends js.Object {

@@ -20,6 +20,7 @@ class Parameter protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ssmParameterMod.ParameterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm", "Parameter")
 @js.native
 object Parameter extends js.Object {

@@ -29,6 +29,7 @@ class default () extends TSTInfo {
   override def verify(params: VerifyParams): js.Thenable[scala.Boolean] = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/TSTInfo", JSImport.Default)
 @js.native
 object default extends js.Object {

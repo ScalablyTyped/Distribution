@@ -15,6 +15,7 @@ class Glob protected () extends js.Object {
   def matches(name: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/common/glob", "Glob")
 @js.native
 object Glob extends js.Object {

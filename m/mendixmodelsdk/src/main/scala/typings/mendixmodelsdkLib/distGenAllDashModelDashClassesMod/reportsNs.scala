@@ -141,6 +141,7 @@ object reportsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /* static members */
   @js.native
   object AggregateFunctionEnum extends js.Object {
     var Average: mendixmodelsdkLib.distGenReportsMod.reportsNs.AggregateFunctionEnum = js.native
@@ -150,6 +151,7 @@ object reportsNs extends js.Object {
     var Sum: mendixmodelsdkLib.distGenReportsMod.reportsNs.AggregateFunctionEnum = js.native
   }
   
+  /* static members */
   @js.native
   object AspectRatio extends js.Object {
     var FourToThree: mendixmodelsdkLib.distGenReportsMod.reportsNs.AspectRatio = js.native
@@ -161,9 +163,7 @@ object reportsNs extends js.Object {
     var TwoToThree: mendixmodelsdkLib.distGenReportsMod.reportsNs.AspectRatio = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-grid relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object BasicReport extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -590,6 +590,7 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
   }
   
+  /* static members */
   @js.native
   object BasicReportAggregate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -608,6 +609,7 @@ object reportsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportAggregate = js.native
   }
   
+  /* static members */
   @js.native
   object BasicReportColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -626,6 +628,7 @@ object reportsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReportColumn = js.native
   }
   
+  /* static members */
   @js.native
   object ChartType extends js.Object {
     var Area: mendixmodelsdkLib.distGenReportsMod.reportsNs.ChartType = js.native
@@ -635,6 +638,7 @@ object reportsNs extends js.Object {
     var VerticalBars3D: mendixmodelsdkLib.distGenReportsMod.reportsNs.ChartType = js.native
   }
   
+  /* static members */
   @js.native
   object ColumnFormat extends js.Object {
     var Default: mendixmodelsdkLib.distGenReportsMod.reportsNs.ColumnFormat = js.native
@@ -642,6 +646,7 @@ object reportsNs extends js.Object {
     var WeekdayName: mendixmodelsdkLib.distGenReportsMod.reportsNs.ColumnFormat = js.native
   }
   
+  /* static members */
   @js.native
   object DateRangeFieldEnum extends js.Object {
     var Month: mendixmodelsdkLib.distGenReportsMod.reportsNs.DateRangeFieldEnum = js.native
@@ -651,9 +656,7 @@ object reportsNs extends js.Object {
     var Year: mendixmodelsdkLib.distGenReportsMod.reportsNs.DateRangeFieldEnum = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1080,9 +1083,7 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-chart relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportChart extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1509,6 +1510,7 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
   }
   
+  /* static members */
   @js.native
   object ReportChartSeries extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1527,9 +1529,7 @@ object reportsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChartSeries = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/date-range-field relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportDateRangeField extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1548,9 +1548,7 @@ object reportsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeField = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-date-parameter relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportDateRangeSelector extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1977,9 +1975,7 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-parameter relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportDropDown extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2406,11 +2402,7 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-pane relevant section in reference guide}
-    *
-    * In version 6.10.0: deleted
-    */
+  /* static members */
   @js.native
   object ReportPane extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2621,24 +2613,21 @@ object reportsNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportPane = js.native
   }
   
+  /* static members */
   @js.native
   object ReportParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenReportsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Reports`.
-    */
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/report-widgets relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReportWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenReportsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ReportZoomInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2657,6 +2646,7 @@ object reportsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportZoomInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ReportZoomMapping extends js.Object {
     var structureTypeName: java.lang.String = js.native

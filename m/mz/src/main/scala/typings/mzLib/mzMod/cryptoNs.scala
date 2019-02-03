@@ -1608,6 +1608,7 @@ object cryptoNs extends js.Object {
   def timingSafeEqual(a: stdLib.DataView, b: nodeLib.Buffer): scala.Boolean = js.native
   def timingSafeEqual(a: stdLib.DataView, b: nodeLib.NodeJSNs.TypedArray): scala.Boolean = js.native
   def timingSafeEqual(a: stdLib.DataView, b: stdLib.DataView): scala.Boolean = js.native
+  /* static members */
   @js.native
   object ECDH extends js.Object {
     def convertKey(

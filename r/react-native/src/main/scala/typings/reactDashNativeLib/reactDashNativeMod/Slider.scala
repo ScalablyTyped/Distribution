@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "Slider")
 @js.native
-class Slider () extends js.Object
+class Slider ()
+  extends reactLib.reactMod.Component[SliderProps, js.Object, js.Any]
 

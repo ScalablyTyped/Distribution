@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MultiSlider ()
   extends atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.MultiSlider
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "MultiSlider")
 @js.native
 object MultiSlider extends js.Object {

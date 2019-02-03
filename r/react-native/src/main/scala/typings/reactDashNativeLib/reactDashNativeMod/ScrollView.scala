@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.ScrollResponderMixin */ @JSImport("react-native", "ScrollView")
 @js.native
-class ScrollView () extends js.Object {
+class ScrollView ()
+  extends reactLib.reactMod.Component[ScrollViewProps, js.Object, js.Any] {
   // Deprecated, do not use.
   var scrollWithoutAnimationTo: js.UndefOr[js.Function2[/* y */ scala.Double, /* x */ scala.Double, scala.Unit]] = js.native
   // Undocumented

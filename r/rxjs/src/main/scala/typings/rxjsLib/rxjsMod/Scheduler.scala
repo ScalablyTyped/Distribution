@@ -29,6 +29,7 @@ class Scheduler protected ()
     ], now: js.Function0[scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("rxjs", "Scheduler")
 @js.native
 object Scheduler extends js.Object {

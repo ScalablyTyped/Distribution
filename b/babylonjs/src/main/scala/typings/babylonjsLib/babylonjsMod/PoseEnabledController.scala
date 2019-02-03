@@ -19,9 +19,7 @@ class PoseEnabledController protected ()
   def this(browserGamepad: js.Any) = this()
 }
 
-/**
-  * Defines the PoseEnabledController object that contains state of a vr capable controller
-  */
+/* static members */
 @JSImport("babylonjs", "PoseEnabledController")
 @js.native
 object PoseEnabledController extends js.Object {

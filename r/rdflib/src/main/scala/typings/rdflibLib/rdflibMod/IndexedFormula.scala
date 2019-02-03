@@ -152,6 +152,7 @@ class IndexedFormula protected () extends Formula {
   def uris(term: NamedNode): js.Array[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "IndexedFormula")
 @js.native
 object IndexedFormula extends js.Object {

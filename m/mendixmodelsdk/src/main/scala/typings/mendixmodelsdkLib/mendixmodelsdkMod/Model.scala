@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Model ()
   extends mendixmodelsdkLib.distMendixDashModelMod.Model
 
+/* static members */
 @JSImport("mendixmodelsdk", "Model")
 @js.native
 object Model extends js.Object {

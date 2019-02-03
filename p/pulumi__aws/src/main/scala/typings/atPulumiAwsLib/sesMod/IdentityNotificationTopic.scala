@@ -20,6 +20,7 @@ class IdentityNotificationTopic protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesIdentityNotificationTopicMod.IdentityNotificationTopicArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "IdentityNotificationTopic")
 @js.native
 object IdentityNotificationTopic extends js.Object {

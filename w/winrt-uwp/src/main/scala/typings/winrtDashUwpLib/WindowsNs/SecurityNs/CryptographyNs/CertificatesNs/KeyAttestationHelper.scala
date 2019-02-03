@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KeyAttestationHelper () extends js.Object
 
-/** Provides access to key attestation methods. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAttestationHelper")
 @js.native
 object KeyAttestationHelper extends js.Object {

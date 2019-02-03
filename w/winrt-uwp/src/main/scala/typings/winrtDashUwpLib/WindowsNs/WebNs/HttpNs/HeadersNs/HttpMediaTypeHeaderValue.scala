@@ -22,7 +22,7 @@ class HttpMediaTypeHeaderValue protected () extends js.Object {
   var parameters: winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVector[HttpNameValueHeaderValue] = js.native
 }
 
-/** Represents the value of the Content-Type HTTP header on the HTTP content in a request or a response. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeHeaderValue")
 @js.native
 object HttpMediaTypeHeaderValue extends js.Object {

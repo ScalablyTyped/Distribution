@@ -12,7 +12,9 @@ object reactDashPlotlyDotJsLibStrings {
   @js.native
   sealed trait upper extends js.Object
   
+  @scala.inline
   def lower: lower = "lower".asInstanceOf[lower]
+  @scala.inline
   def upper: upper = "upper".asInstanceOf[upper]
 }
 

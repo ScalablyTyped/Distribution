@@ -13,6 +13,7 @@ class RangeInfo () extends js.Object {
   var start: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.RangeInfo")
 @js.native
 object RangeInfo extends js.Object {

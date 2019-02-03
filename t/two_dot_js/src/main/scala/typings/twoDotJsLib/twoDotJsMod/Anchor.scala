@@ -65,6 +65,7 @@ class Anchor protected ()
   override def subSelf(v: twoDotJsLib.twoDotJsMod.TwoNs.Vector): this.type = js.native
 }
 
+/* static members */
 @JSImport("two.js", "Anchor")
 @js.native
 object Anchor extends js.Object {

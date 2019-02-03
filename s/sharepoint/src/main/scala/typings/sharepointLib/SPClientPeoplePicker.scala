@@ -157,6 +157,7 @@ class SPClientPeoplePicker () extends js.Object {
   def ValidateCurrentState(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SPClientPeoplePicker")
 @js.native
 object SPClientPeoplePicker extends js.Object {

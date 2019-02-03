@@ -189,9 +189,7 @@ class QueryCollection[T] ()
   def toggleClass(name: java.lang.String): QueryCollection[T] = js.native
 }
 
-/**
-  * Represents the result of a query selector, and provides various operations that perform actions over the elements of the collection.
-  **/
+/* static members */
 @JSGlobal("WinJS.Utilities.QueryCollection")
 @js.native
 object QueryCollection extends js.Object {

@@ -21,6 +21,7 @@ class ByteMatchSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafregionalByteMatchSetMod.ByteMatchSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional", "ByteMatchSet")
 @js.native
 object ByteMatchSet extends js.Object {

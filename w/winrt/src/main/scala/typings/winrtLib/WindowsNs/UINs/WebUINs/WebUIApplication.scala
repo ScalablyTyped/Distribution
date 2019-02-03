@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class WebUIApplication () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.WebUI.WebUIApplication")
 @js.native
 object WebUIApplication extends js.Object {

@@ -12,6 +12,7 @@ abstract class AbstractModel protected ()
   def this(_client: mendixmodelsdkLib.distSdkInternalModelDashServerDashClientMod.IModelServerClient, _errorHandler: mendixmodelsdkLib.distCommonMod.commonNs.IErrorCallback) = this()
 }
 
+/* static members */
 @JSImport("mendixmodelsdk", "AbstractModel")
 @js.native
 object AbstractModel extends js.Object {

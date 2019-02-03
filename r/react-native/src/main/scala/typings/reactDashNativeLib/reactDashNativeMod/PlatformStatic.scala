@@ -12,6 +12,10 @@ trait PlatformStatic extends js.Object {
     * @see https://facebook.github.io/react-native/docs/platform-specific-code.html#content
     */
   @JSName("select")
-  def select_default[T](specifics: reactDashNativeLib.reactDashNativeLibStrings.PlatformStatic with js.Any): T
+  def select_default[T](
+    specifics: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ platform in react-native.react-native.PlatformOSType | 'default' ]:? T}
+    */ reactDashNativeLib.reactDashNativeLibStrings.PlatformStatic with js.Any
+  ): T
 }
 

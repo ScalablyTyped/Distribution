@@ -92,6 +92,7 @@ class SpinButton protected ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton", "SpinButton")
 @js.native
 object SpinButton extends js.Object {

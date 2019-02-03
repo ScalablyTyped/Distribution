@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Configuration () extends js.Object
 
+/* static members */
 @JSImport("applicationinsights", "Configuration")
 @js.native
 object Configuration extends js.Object {

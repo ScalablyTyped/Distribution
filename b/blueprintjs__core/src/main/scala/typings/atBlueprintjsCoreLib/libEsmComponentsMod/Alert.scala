@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Alert ()
   extends atBlueprintjsCoreLib.libEsmComponentsAlertAlertMod.Alert
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Alert")
 @js.native
 object Alert extends js.Object {

@@ -12,7 +12,9 @@ object elementtreeLibStrings {
   @js.native
   sealed trait xml extends js.Object
   
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def xml: xml = "xml".asInstanceOf[xml]
 }
 

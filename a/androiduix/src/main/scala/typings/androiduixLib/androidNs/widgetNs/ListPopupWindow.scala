@@ -95,6 +95,7 @@ class ListPopupWindow protected () extends js.Object {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.ListPopupWindow")
 @js.native
 object ListPopupWindow extends js.Object {

@@ -19,6 +19,7 @@ class ViewEngineHooksResource () extends js.Object {
   def register(registry: js.Any, name: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "ViewEngineHooksResource")
 @js.native
 object ViewEngineHooksResource extends js.Object {

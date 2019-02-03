@@ -12,6 +12,7 @@ class ApolloProvider[TCache] protected ()
   def this(props: reactDashApolloLib.apolloproviderMod.ApolloProviderProps[TCache], context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("react-apollo", "ApolloProvider")
 @js.native
 object ApolloProvider extends js.Object {

@@ -21,6 +21,7 @@ class ObservableObject () extends js.Object {
   def toJSON(excludeProperties: java.lang.String*): js.Any = js.native
 }
 
+/* static members */
 @JSImport("node-mysql-wrapper", "ObservableObject")
 @js.native
 object ObservableObject extends js.Object {

@@ -45,18 +45,31 @@ object fseventsLibStrings {
   @js.native
   sealed trait unknown extends js.Object
   
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def created: created = "created".asInstanceOf[created]
+  @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
+  @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def fsevent: fsevent = "fsevent".asInstanceOf[fsevent]
+  @scala.inline
   def modified: modified = "modified".asInstanceOf[modified]
+  @scala.inline
   def moved: moved = "moved".asInstanceOf[moved]
+  @scala.inline
   def `moved-in`: `moved-in` = "moved-in".asInstanceOf[`moved-in`]
+  @scala.inline
   def `moved-out`: `moved-out` = "moved-out".asInstanceOf[`moved-out`]
+  @scala.inline
   def `root-changed`: `root-changed` = "root-changed".asInstanceOf[`root-changed`]
+  @scala.inline
   def symlink: symlink = "symlink".asInstanceOf[symlink]
+  @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
 }
 

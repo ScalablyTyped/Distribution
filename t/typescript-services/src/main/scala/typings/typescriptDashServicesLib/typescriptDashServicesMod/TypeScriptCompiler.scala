@@ -13,6 +13,7 @@ class TypeScriptCompiler ()
   def this(logger: typescriptDashServicesLib.TypeScriptNs.ILogger, _settings: typescriptDashServicesLib.TypeScriptNs.ImmutableCompilationSettings) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeScriptCompiler")
 @js.native
 object TypeScriptCompiler extends js.Object {

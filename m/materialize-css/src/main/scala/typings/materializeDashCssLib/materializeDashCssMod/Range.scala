@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Range ()
   extends materializeDashCssLib.MNs.Range
 
+/* static members */
 @JSImport("materialize-css", "Range")
 @js.native
 object Range extends js.Object {

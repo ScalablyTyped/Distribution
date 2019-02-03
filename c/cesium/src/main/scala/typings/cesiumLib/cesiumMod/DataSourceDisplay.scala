@@ -24,6 +24,7 @@ class DataSourceDisplay protected ()
   override def update(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "DataSourceDisplay")
 @js.native
 object DataSourceDisplay extends js.Object {

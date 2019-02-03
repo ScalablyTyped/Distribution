@@ -16,6 +16,7 @@ class ElseClauseSyntax protected () extends SyntaxNode {
   def withStatement(statement: IStatementSyntax): ElseClauseSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ElseClauseSyntax")
 @js.native
 object ElseClauseSyntax extends js.Object {

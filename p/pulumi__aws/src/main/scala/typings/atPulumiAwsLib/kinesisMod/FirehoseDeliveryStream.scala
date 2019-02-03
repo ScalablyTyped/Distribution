@@ -20,6 +20,7 @@ class FirehoseDeliveryStream protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.kinesisFirehoseDeliveryStreamMod.FirehoseDeliveryStreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/kinesis", "FirehoseDeliveryStream")
 @js.native
 object FirehoseDeliveryStream extends js.Object {

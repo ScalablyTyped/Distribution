@@ -9,6 +9,7 @@ object i2cDashBusLibStrings {
   @js.native
   sealed trait AsyncAutoTasks extends js.Object
   
+  @scala.inline
   def AsyncAutoTasks: AsyncAutoTasks = "AsyncAutoTasks".asInstanceOf[AsyncAutoTasks]
 }
 

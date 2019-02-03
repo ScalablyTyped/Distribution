@@ -13,6 +13,7 @@ class MediaBoxInfo protected () extends js.Object {
   def renderData(metas: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "MediaBoxInfo")
 @js.native
 object MediaBoxInfo extends js.Object {

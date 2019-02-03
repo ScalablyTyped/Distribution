@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GameList () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Gaming.Preview.GamesEnumeration.GameList")
 @js.native
 object GameList extends js.Object {

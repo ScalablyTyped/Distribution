@@ -21,6 +21,7 @@ class Solver protected () extends js.Object {
   def solve(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/vpsc", "Solver")
 @js.native
 object Solver extends js.Object {

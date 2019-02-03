@@ -92,6 +92,7 @@ class Trail protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudtrail/trail", "Trail")
 @js.native
 object Trail extends js.Object {

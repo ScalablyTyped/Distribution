@@ -14,11 +14,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EnvironmentTextureTools () extends js.Object
 
-/**
-  * Sets of helpers addressing the serialization and deserialization of environment texture
-  * stored in a BabylonJS env file.
-  * Those files are usually stored as .env files.
-  */
+/* static members */
 @JSGlobal("BABYLON.EnvironmentTextureTools")
 @js.native
 object EnvironmentTextureTools extends js.Object {

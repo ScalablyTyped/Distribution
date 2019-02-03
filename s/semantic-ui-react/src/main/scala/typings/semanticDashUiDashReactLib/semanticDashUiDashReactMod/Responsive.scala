@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Responsive ()
   extends semanticDashUiDashReactLib.distCommonjsAddonsResponsiveMod.default
 
+/* static members */
 @JSImport("semantic-ui-react", "Responsive")
 @js.native
 object Responsive extends js.Object {

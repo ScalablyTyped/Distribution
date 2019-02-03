@@ -37,6 +37,7 @@ class AbstractChart protected () extends Base {
   def stopFitWatcher(): this.type = js.native
 }
 
+/* static members */
 @JSImport("d3kit", "AbstractChart")
 @js.native
 object AbstractChart extends js.Object {

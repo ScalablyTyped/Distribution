@@ -14,6 +14,7 @@ class Triangle ()
   def this(a: threeLib.threeDashCoreMod.Vector3, b: threeLib.threeDashCoreMod.Vector3, c: threeLib.threeDashCoreMod.Vector3) = this()
 }
 
+/* static members */
 @JSImport("three", "Triangle")
 @js.native
 object Triangle extends js.Object {

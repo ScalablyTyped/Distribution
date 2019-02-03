@@ -13,6 +13,7 @@ class BoundElementPropertyAst protected ()
   def this(name: java.lang.String, `type`: atAngularCompilerLib.srcTemplateUnderscoreParserTemplateUnderscoreAstMod.PropertyBindingType, securityContext: atAngularCompilerLib.srcCoreMod.SecurityContext, value: atAngularCompilerLib.srcExpressionUnderscoreParserAstMod.AST, unit: scala.Null, sourceSpan: atAngularCompilerLib.srcParseUnderscoreUtilMod.ParseSourceSpan) = this()
 }
 
+/* static members */
 @JSImport("@angular/compiler/public_api", "BoundElementPropertyAst")
 @js.native
 object BoundElementPropertyAst extends js.Object {

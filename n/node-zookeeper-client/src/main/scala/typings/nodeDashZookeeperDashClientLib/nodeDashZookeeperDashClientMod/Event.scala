@@ -17,6 +17,7 @@ class Event protected () extends js.Object {
   def getType(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("node-zookeeper-client", "Event")
 @js.native
 object Event extends js.Object {

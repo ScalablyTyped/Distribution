@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Search
 
+/* static members */
 @JSImport("antd/lib/input/Search", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -13,6 +13,7 @@ class Int64Value ()
   def setValue(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "Int64Value")
 @js.native
 object Int64Value extends js.Object {

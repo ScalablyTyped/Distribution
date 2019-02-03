@@ -42,6 +42,7 @@ class Gantt protected () extends Widget {
   def view_Unit(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Gantt")
 @js.native
 object Gantt extends js.Object {

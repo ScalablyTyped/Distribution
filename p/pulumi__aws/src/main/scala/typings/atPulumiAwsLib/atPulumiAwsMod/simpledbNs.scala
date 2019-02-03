@@ -23,6 +23,7 @@ object simpledbNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.simpledbDomainMod.DomainArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Domain extends js.Object {
     /**

@@ -35,6 +35,7 @@ class VisualRecognitionV3 protected () extends js.Object {
   def setImageMetadata(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "VisualRecognitionV3")
 @js.native
 object VisualRecognitionV3 extends js.Object {

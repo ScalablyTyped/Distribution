@@ -196,9 +196,7 @@ class BitSet protected () extends js.Object {
   def xor(value: scala.Double): BitSet = js.native
 }
 
-/**
-  * Represents a set of bits
-  */
+/* static members */
 @JSGlobal("adone.math.BitSet")
 @js.native
 object BitSet extends js.Object {

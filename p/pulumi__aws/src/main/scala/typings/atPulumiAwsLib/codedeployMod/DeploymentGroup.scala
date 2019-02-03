@@ -20,6 +20,7 @@ class DeploymentGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codedeployDeploymentGroupMod.DeploymentGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codedeploy", "DeploymentGroup")
 @js.native
 object DeploymentGroup extends js.Object {

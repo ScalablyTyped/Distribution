@@ -36,6 +36,7 @@ class MethodSettings protected ()
   val stageName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/methodSettings", "MethodSettings")
 @js.native
 object MethodSettings extends js.Object {

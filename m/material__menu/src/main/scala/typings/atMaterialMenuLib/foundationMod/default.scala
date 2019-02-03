@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCMenuFoundation
 
+/* static members */
 @JSImport("@material/menu/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

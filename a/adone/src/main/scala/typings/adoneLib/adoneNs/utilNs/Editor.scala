@@ -14,6 +14,7 @@ class Editor () extends js.Object {
   def spawn(): js.Promise[nodeLib.childUnderscoreProcessMod.ChildProcess] = js.native
 }
 
+/* static members */
 @JSGlobal("adone.util.Editor")
 @js.native
 object Editor extends js.Object {

@@ -21,6 +21,7 @@ class ThingType protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iotThingTypeMod.ThingTypeArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot", "ThingType")
 @js.native
 object ThingType extends js.Object {

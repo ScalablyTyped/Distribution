@@ -11,6 +11,7 @@ class default () extends BasicOCSPResponse {
   def this(params: js.Any) = this()
 }
 
+/* static members */
 @JSImport("pkijs/src/BasicOCSPResponse", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PushNotificationChannelManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannelManager")
 @js.native
 object PushNotificationChannelManager extends js.Object {

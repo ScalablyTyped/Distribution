@@ -47,6 +47,7 @@ class Scheduler protected () extends Widget {
   def view_Unit(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Scheduler")
 @js.native
 object Scheduler extends js.Object {

@@ -112,12 +112,7 @@ object messagedefinitionsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `MessageDefinitions`.
-    */
-  /**
-    * In version 7.10.0: introduced
-    */
+  /* static members */
   @js.native
   object AssociationElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -148,9 +143,7 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.AssociationElement = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object AttributeElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -181,9 +174,7 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.AttributeElement = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityElement extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -214,9 +205,7 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.EntityElement = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityMessageDefinition extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -240,9 +229,7 @@ object messagedefinitionsNs extends js.Object {
     ): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.EntityMessageDefinition = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExposedAssociation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -273,9 +260,7 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.ExposedAssociation = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExposedAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -306,9 +291,7 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.ExposedAttribute = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExposedEntity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -350,38 +333,28 @@ object messagedefinitionsNs extends js.Object {
     def createInJsonStructureUnderElements(container: mendixmodelsdkLib.distGenJsonstructuresMod.jsonstructuresNs.JsonStructure): mendixmodelsdkLib.distGenMessagedefinitionsMod.messagedefinitionsNs.ExposedEntity = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExposedEntityBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object ExposedMember extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object MessageDefinition extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenMessagedefinitionsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/message-definitions relevant section in reference guide}
-    *
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object MessageDefinitionCollection extends js.Object {
     var structureTypeName: java.lang.String = js.native

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ErrorCodes () extends js.Object
 
+/* static members */
 @JSGlobal("OfficeExtension.ErrorCodes")
 @js.native
 object ErrorCodes extends js.Object {

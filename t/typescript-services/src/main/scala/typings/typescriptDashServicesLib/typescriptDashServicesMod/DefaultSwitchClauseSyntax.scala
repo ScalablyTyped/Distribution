@@ -12,6 +12,7 @@ class DefaultSwitchClauseSyntax protected ()
   def this(defaultKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, statements: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "DefaultSwitchClauseSyntax")
 @js.native
 object DefaultSwitchClauseSyntax extends js.Object {

@@ -21,6 +21,7 @@ class Eip protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2EipMod.EipArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "Eip")
 @js.native
 object Eip extends js.Object {

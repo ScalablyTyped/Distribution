@@ -99,14 +99,7 @@ class ChangedEvent ()
   override def undo(): scala.Unit = js.native
 }
 
-/**
-  * A ChangedEvent represents a change to an object, typically a GraphObject,
-  * but also for model data, a Model, or a Diagram.
-  * The most common case is for remembering the name of a property
-  * and the before-and-after values for that property.
-  * You can listen for changed events on the model using Model.addChangedListener
-  * and on the Diagram using Diagram.addChangedListener.
-  */
+/* static members */
 @JSImport("go", "ChangedEvent")
 @js.native
 object ChangedEvent extends js.Object {

@@ -44,6 +44,7 @@ class VirtualNode protected ()
   val spec: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Backends] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh/virtualNode", "VirtualNode")
 @js.native
 object VirtualNode extends js.Object {

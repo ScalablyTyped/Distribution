@@ -38,6 +38,7 @@ class OverflowSetBase protected ()
   def componentWillUpdate_MOverflowSetBase(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/OverflowSet/OverflowSet.base", "OverflowSetBase")
 @js.native
 object OverflowSetBase extends js.Object {

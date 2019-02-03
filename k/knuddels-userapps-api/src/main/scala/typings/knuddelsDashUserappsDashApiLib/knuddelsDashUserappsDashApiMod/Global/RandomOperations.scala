@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RandomOperations () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/RandomOperations.html
-	 */
+/* static members */
 @JSGlobal("RandomOperations")
 @js.native
 object RandomOperations extends js.Object {

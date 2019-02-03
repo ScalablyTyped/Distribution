@@ -23,6 +23,7 @@ class BoundEvent protected () extends Node {
   override def visit[Result](visitor: Visitor[Result]): Result = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
 @js.native
 object BoundEvent extends js.Object {

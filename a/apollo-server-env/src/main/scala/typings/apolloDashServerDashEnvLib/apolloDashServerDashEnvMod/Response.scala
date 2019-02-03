@@ -13,6 +13,7 @@ class Response ()
   def this(body: apolloDashServerDashEnvLib.distFetchMod.BodyInit, init: apolloDashServerDashEnvLib.distFetchMod.ResponseInit) = this()
 }
 
+/* static members */
 @JSImport("apollo-server-env", "Response")
 @js.native
 object Response extends js.Object {

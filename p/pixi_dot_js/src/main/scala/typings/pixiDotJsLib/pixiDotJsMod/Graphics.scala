@@ -12,6 +12,7 @@ class Graphics ()
   def this(nativeLines: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "Graphics")
 @js.native
 object Graphics extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Blame ()
   extends nodegitLib.blameMod.Blame
 
+/* static members */
 @JSImport("nodegit", "Blame")
 @js.native
 object Blame extends js.Object {

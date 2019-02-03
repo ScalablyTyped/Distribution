@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class Frustum ()
   extends babylonjsLib.BABYLONNs.Frustum
 
-/**
-  * Reprasents a camera frustum
-  */
+/* static members */
 @JSImport("babylonjs", "Frustum")
 @js.native
 object Frustum extends js.Object {

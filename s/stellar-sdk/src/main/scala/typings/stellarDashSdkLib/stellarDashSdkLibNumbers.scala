@@ -15,8 +15,11 @@ object stellarDashSdkLibNumbers {
   @js.native
   sealed trait `4` extends js.Object
   
+  @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
   def `2`: `2` = 2.asInstanceOf[`2`]
+  @scala.inline
   def `4`: `4` = 4.asInstanceOf[`4`]
 }
 

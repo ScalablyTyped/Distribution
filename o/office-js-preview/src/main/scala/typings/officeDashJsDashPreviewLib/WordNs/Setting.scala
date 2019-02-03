@@ -92,13 +92,7 @@ class Setting ()
   def untrack(): Setting = js.native
 }
 
-/**
-  *
-  * Represents a setting of the add-in.
-  *
-  * [Api set: WordApi BETA (PREVIEW ONLY)]
-  * @beta
-  */
+/* static members */
 @JSGlobal("Word.Setting")
 @js.native
 object Setting extends js.Object {

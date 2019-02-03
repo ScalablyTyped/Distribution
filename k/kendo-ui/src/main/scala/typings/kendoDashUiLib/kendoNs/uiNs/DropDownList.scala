@@ -41,6 +41,7 @@ class DropDownList protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DropDownList")
 @js.native
 object DropDownList extends js.Object {

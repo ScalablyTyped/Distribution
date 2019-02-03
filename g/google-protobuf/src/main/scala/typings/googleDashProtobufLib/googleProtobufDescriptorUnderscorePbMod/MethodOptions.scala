@@ -27,6 +27,7 @@ class MethodOptions ()
   def setUninterpretedOptionList(value: js.Array[UninterpretedOption]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions")
 @js.native
 object MethodOptions extends js.Object {

@@ -11,6 +11,7 @@ class namespaced () extends Datastore {
   def this(options: InitOptions) = this()
 }
 
+/* static members */
 @JSImport("@google-cloud/datastore", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

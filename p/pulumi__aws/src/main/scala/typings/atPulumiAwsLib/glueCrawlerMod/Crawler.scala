@@ -72,6 +72,7 @@ class Crawler protected ()
   val tablePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/crawler", "Crawler")
 @js.native
 object Crawler extends js.Object {

@@ -71,6 +71,7 @@ class CustomEventBinder ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/binder/CustomEventBinder", "CustomEventBinder")
 @js.native
 object CustomEventBinder extends js.Object {

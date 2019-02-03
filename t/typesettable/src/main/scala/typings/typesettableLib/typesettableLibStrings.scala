@@ -33,14 +33,23 @@ object typesettableLibStrings {
   @js.native
   sealed trait top extends js.Object
   
+  @scala.inline
   def Writer: Writer = "Writer".asInstanceOf[Writer]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
 }
 

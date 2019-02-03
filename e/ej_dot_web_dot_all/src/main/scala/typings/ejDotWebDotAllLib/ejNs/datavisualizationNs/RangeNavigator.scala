@@ -22,6 +22,7 @@ class RangeNavigator protected ()
   def _destroy(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.RangeNavigator")
 @js.native
 object RangeNavigator extends js.Object {

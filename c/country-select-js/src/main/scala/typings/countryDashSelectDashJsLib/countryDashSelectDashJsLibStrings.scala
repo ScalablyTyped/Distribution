@@ -12,7 +12,9 @@ object countryDashSelectDashJsLibStrings {
   @js.native
   sealed trait getSelectedCountryData extends js.Object
   
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def getSelectedCountryData: getSelectedCountryData = "getSelectedCountryData".asInstanceOf[getSelectedCountryData]
 }
 

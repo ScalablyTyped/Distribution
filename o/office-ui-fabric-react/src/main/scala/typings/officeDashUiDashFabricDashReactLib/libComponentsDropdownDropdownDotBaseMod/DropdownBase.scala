@@ -113,6 +113,7 @@ class DropdownBase protected ()
   def setSelectedIndex(event: reactLib.reactMod.ReactNs.FormEvent[reactLib.HTMLDivElement], index: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Dropdown/Dropdown.base", "DropdownBase")
 @js.native
 object DropdownBase extends js.Object {

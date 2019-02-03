@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Trace () extends js.Object
 
+/* static members */
 @JSGlobal("android.os.Trace")
 @js.native
 object Trace extends js.Object {

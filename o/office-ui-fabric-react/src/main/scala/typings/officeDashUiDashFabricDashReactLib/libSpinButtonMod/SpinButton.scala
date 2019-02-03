@@ -12,6 +12,7 @@ class SpinButton protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSpinButtonSpinButtonDotTypesMod.ISpinButtonProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/SpinButton", "SpinButton")
 @js.native
 object SpinButton extends js.Object {

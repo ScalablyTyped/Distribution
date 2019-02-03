@@ -20,6 +20,7 @@ class namespaced protected () extends Flickity {
   def this(selector: stdLib.Element, options: FlickityOptions) = this()
 }
 
+/* static members */
 @JSImport("flickity", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

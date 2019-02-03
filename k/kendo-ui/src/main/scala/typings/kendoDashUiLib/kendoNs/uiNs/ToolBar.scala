@@ -33,6 +33,7 @@ class ToolBar protected () extends Widget {
   def toggle(command: stdLib.Element, state: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.ToolBar")
 @js.native
 object ToolBar extends js.Object {

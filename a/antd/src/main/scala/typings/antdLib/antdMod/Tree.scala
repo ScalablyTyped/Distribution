@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tree ()
   extends antdLib.libTreeMod.default
 
+/* static members */
 @JSImport("antd", "Tree")
 @js.native
 object Tree extends js.Object {

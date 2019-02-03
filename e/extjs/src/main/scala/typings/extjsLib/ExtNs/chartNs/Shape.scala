@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Shape () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.chart.Shape")
 @js.native
 object Shape extends js.Object {

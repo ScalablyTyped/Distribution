@@ -33,6 +33,7 @@ class CompileDirectiveMetadata protected () extends js.Object {
   def toSummary(): CompileDirectiveSummary = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/compile_metadata", "CompileDirectiveMetadata")
 @js.native
 object CompileDirectiveMetadata extends js.Object {

@@ -21,11 +21,7 @@ class ActionManager protected ()
   def this(scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * Action Manager manages all events to be triggered on a given mesh or the global scene.
-  * A single scene can have many Action Managers to handle predefined actions on specific meshes.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_actions
-  */
+/* static members */
 @JSImport("babylonjs", "ActionManager")
 @js.native
 object ActionManager extends js.Object {

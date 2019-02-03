@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SelectBase[OptionType] ()
   extends reactDashSelectLib.libSelectMod.default[OptionType]
 
+/* static members */
 @JSImport("react-select", "SelectBase")
 @js.native
 object SelectBase extends js.Object {

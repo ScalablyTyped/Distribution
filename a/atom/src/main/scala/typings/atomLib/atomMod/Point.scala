@@ -65,6 +65,7 @@ class Point () extends js.Object {
   def traverse(other: PointCompatible): Point = js.native
 }
 
+/* static members */
 @JSImport("atom", "Point")
 @js.native
 object Point extends js.Object {

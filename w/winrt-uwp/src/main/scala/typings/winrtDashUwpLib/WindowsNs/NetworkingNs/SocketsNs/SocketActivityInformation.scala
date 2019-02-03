@@ -25,7 +25,7 @@ abstract class SocketActivityInformation () extends js.Object {
   var taskId: java.lang.String = js.native
 }
 
-/** Provides information on the transferred socket from the Socket Broker. */
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.SocketActivityInformation")
 @js.native
 object SocketActivityInformation extends js.Object {

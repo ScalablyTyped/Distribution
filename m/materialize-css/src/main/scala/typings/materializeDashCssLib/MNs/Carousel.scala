@@ -40,6 +40,7 @@ class Carousel () extends Component[CarouselOptions] {
   def set(n: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Carousel")
 @js.native
 object Carousel extends js.Object {

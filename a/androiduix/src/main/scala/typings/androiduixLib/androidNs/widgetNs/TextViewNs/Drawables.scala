@@ -49,6 +49,7 @@ class Drawables () extends js.Object {
   /* private */ def updateDrawablesLayoutDirection(layoutDirection: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.TextView.Drawables")
 @js.native
 object Drawables extends js.Object {

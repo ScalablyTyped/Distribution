@@ -15,8 +15,11 @@ object apolloDashServerDashExpressLibStrings {
   @js.native
   sealed trait Subscription extends js.Object
   
+  @scala.inline
   def Mutation: Mutation = "Mutation".asInstanceOf[Mutation]
+  @scala.inline
   def Query: Query = "Query".asInstanceOf[Query]
+  @scala.inline
   def Subscription: Subscription = "Subscription".asInstanceOf[Subscription]
 }
 

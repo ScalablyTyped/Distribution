@@ -20,6 +20,7 @@ class GlobalTable protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.dynamodbGlobalTableMod.GlobalTableArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dynamodb", "GlobalTable")
 @js.native
 object GlobalTable extends js.Object {

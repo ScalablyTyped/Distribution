@@ -19,9 +19,7 @@ class ViveController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Vive Controller
-  */
+/* static members */
 @JSImport("babylonjs", "ViveController")
 @js.native
 object ViveController extends js.Object {

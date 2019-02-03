@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Vector ()
   extends p5Lib.p5Mod.p5Ns.Vector
 
+/* static members */
 @JSImport("p5", "Vector")
 @js.native
 object Vector extends js.Object {

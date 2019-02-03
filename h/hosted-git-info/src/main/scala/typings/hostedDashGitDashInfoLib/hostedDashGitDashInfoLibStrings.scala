@@ -18,9 +18,13 @@ object hostedDashGitDashInfoLibStrings {
   @js.native
   sealed trait gitlab extends js.Object
   
+  @scala.inline
   def bitbucket: bitbucket = "bitbucket".asInstanceOf[bitbucket]
+  @scala.inline
   def gist: gist = "gist".asInstanceOf[gist]
+  @scala.inline
   def github: github = "github".asInstanceOf[github]
+  @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
 }
 

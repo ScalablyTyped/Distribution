@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Base64VLQFormat () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Base64VLQFormat")
 @js.native
 object Base64VLQFormat extends js.Object {

@@ -34,6 +34,7 @@ class Fraction protected () extends js.Object {
   def value(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Fraction")
 @js.native
 object Fraction extends js.Object {

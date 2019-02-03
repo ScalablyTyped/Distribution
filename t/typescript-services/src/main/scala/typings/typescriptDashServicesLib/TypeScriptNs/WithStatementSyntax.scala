@@ -76,6 +76,7 @@ class WithStatementSyntax protected ()
   def withWithKeyword(withKeyword: ISyntaxToken): WithStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.WithStatementSyntax")
 @js.native
 object WithStatementSyntax extends js.Object {

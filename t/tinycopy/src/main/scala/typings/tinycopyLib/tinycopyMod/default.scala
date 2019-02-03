@@ -13,6 +13,7 @@ class default protected () extends TinyCopy {
   def this(trigger: stdLib.Element, target: stdLib.NodeListOf[stdLib.Element]) = this()
 }
 
+/* static members */
 @JSImport("tinycopy", JSImport.Default)
 @js.native
 object default extends js.Object {

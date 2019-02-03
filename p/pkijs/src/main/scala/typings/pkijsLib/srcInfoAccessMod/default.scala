@@ -19,6 +19,7 @@ class default () extends InfoAccess {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/InfoAccess", JSImport.Default)
 @js.native
 object default extends js.Object {

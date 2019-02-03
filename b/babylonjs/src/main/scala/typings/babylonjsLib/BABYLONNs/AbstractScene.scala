@@ -153,11 +153,7 @@ abstract class AbstractScene () extends js.Object {
   def removeLensFlareSystem(toRemove: LensFlareSystem): scala.Double = js.native
 }
 
-/**
-  * Base class of the scene acting as a container for the different elements composing a scene.
-  * This class is dynamically extended by the different components of the scene increasing
-  * flexibility and reducing coupling
-  */
+/* static members */
 @JSGlobal("BABYLON.AbstractScene")
 @js.native
 object AbstractScene extends js.Object {

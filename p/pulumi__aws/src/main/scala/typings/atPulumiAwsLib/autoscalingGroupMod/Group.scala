@@ -167,6 +167,7 @@ class Group protected ()
   val waitForElbCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/group", "Group")
 @js.native
 object Group extends js.Object {

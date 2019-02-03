@@ -18,6 +18,7 @@ class FormatCodeOptions () extends EditorOptions {
   var PlaceOpenBraceOnNewLineForFunctions: scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.FormatCodeOptions")
 @js.native
 object FormatCodeOptions extends js.Object {

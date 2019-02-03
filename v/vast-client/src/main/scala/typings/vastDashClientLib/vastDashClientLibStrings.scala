@@ -18,9 +18,13 @@ object vastDashClientLibStrings {
   @js.native
   sealed trait system extends js.Object
   
+  @scala.inline
   def ERRORCODE: ERRORCODE = "ERRORCODE".asInstanceOf[ERRORCODE]
+  @scala.inline
   def ERRORMESSAGE: ERRORMESSAGE = "ERRORMESSAGE".asInstanceOf[ERRORMESSAGE]
+  @scala.inline
   def extensions: extensions = "extensions".asInstanceOf[extensions]
+  @scala.inline
   def system: system = "system".asInstanceOf[system]
 }
 

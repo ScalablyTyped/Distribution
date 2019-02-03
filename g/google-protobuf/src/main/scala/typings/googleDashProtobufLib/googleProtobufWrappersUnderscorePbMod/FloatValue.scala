@@ -13,6 +13,7 @@ class FloatValue ()
   def setValue(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/wrappers_pb", "FloatValue")
 @js.native
 object FloatValue extends js.Object {

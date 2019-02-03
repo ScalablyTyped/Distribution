@@ -85,7 +85,9 @@ package object protobufjsLib {
     stdLib.Uint8Array
   ]
   /** Properties type. */
-  type Properties[T] = protobufjsLib.protobufjsLibStrings.Properties with T
+  type Properties[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]:? T[P]}
+    */ protobufjsLib.protobufjsLibStrings.Properties with T
   /**
     * RPC implementation passed to {@link Service#create} performing a service request on network level, i.e. by utilizing http requests or websockets.
     * @param method Reflected or static method being called

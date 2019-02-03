@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CubicBezier () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.fx.CubicBezier")
 @js.native
 object CubicBezier extends js.Object {

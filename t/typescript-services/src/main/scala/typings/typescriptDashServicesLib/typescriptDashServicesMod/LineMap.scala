@@ -12,6 +12,7 @@ class LineMap protected ()
   def this(_computeLineStarts: js.Function0[js.Array[scala.Double]], length: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "LineMap")
 @js.native
 object LineMap extends js.Object {

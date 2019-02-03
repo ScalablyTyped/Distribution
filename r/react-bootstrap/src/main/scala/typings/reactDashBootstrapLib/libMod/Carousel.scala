@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Carousel ()
   extends reactDashBootstrapLib.libCarouselMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "Carousel")
 @js.native
 object Carousel extends js.Object {

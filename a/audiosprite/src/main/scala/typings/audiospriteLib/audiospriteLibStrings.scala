@@ -30,13 +30,21 @@ object audiospriteLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def createjs: createjs = "createjs".asInstanceOf[createjs]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def howler: howler = "howler".asInstanceOf[howler]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def jukebox: jukebox = "jukebox".asInstanceOf[jukebox]
+  @scala.inline
   def notice: notice = "notice".asInstanceOf[notice]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

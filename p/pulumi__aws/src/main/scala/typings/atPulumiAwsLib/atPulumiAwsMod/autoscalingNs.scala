@@ -111,6 +111,7 @@ object autoscalingNs extends js.Object {
     args: atPulumiAwsLib.autoscalingGetGroupMod.GetGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.autoscalingGetGroupMod.GetGroupResult] = js.native
+  /* static members */
   @js.native
   object Attachment extends js.Object {
     /**
@@ -135,6 +136,7 @@ object autoscalingNs extends js.Object {
     ): atPulumiAwsLib.autoscalingAttachmentMod.Attachment = js.native
   }
   
+  /* static members */
   @js.native
   object Group extends js.Object {
     /**
@@ -159,6 +161,7 @@ object autoscalingNs extends js.Object {
     ): atPulumiAwsLib.autoscalingGroupMod.Group = js.native
   }
   
+  /* static members */
   @js.native
   object LifecycleHook extends js.Object {
     /**
@@ -183,6 +186,7 @@ object autoscalingNs extends js.Object {
     ): atPulumiAwsLib.autoscalingLifecycleHookMod.LifecycleHook = js.native
   }
   
+  /* static members */
   @js.native
   object Notification extends js.Object {
     /**
@@ -207,6 +211,7 @@ object autoscalingNs extends js.Object {
     ): atPulumiAwsLib.autoscalingNotificationMod.Notification = js.native
   }
   
+  /* static members */
   @js.native
   object Policy extends js.Object {
     /**
@@ -231,6 +236,7 @@ object autoscalingNs extends js.Object {
     ): atPulumiAwsLib.autoscalingPolicyMod.Policy = js.native
   }
   
+  /* static members */
   @js.native
   object Schedule extends js.Object {
     /**

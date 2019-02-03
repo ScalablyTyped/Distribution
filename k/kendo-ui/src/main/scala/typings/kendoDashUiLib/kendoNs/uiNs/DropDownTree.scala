@@ -33,6 +33,7 @@ class DropDownTree protected () extends Widget {
   def value(value: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.DropDownTree")
 @js.native
 object DropDownTree extends js.Object {

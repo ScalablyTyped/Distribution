@@ -30,6 +30,7 @@ class Map[K, V] protected () extends js.Object {
   ): js.Array[js.Tuple2[K, VO]] = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf", "Map")
 @js.native
 object Map extends js.Object {

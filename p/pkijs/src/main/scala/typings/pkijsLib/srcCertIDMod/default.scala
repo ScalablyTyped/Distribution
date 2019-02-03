@@ -40,6 +40,7 @@ class default () extends CertID {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/CertID", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CoreTextServicesConstants () extends js.Object
 
-/** Provides constant values for use with the Windows core text APIs and the text input server. */
+/* static members */
 @JSGlobal("Windows.UI.Text.Core.CoreTextServicesConstants")
 @js.native
 object CoreTextServicesConstants extends js.Object {

@@ -21,6 +21,7 @@ class TextSelection[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Sche
   var $cursor: js.UndefOr[prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S] | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-state", "TextSelection")
 @js.native
 object TextSelection extends js.Object {

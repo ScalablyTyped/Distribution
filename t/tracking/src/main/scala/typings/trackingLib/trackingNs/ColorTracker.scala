@@ -48,10 +48,7 @@ class ColorTracker () extends Tracker {
   def setMinGroupSize(minGroupSize: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * ColorTracker utility to track colored blobs in a frame using color
-  * difference evaluation.
-  */
+/* static members */
 @JSGlobal("tracking.ColorTracker")
 @js.native
 object ColorTracker extends js.Object {

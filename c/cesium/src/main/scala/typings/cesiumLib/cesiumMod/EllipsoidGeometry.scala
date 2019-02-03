@@ -12,6 +12,7 @@ class EllipsoidGeometry ()
   def this(options: cesiumLib.Anon_Radii) = this()
 }
 
+/* static members */
 @JSImport("cesium", "EllipsoidGeometry")
 @js.native
 object EllipsoidGeometry extends js.Object {

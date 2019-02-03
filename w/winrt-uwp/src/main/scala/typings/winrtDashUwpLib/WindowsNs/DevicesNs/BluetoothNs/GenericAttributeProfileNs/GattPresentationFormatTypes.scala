@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class GattPresentationFormatTypes () extends js.Object
 
-/** Represents the different well-known values that the GattPresentationFormat.FormatType property can take. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.GenericAttributeProfile.GattPresentationFormatTypes")
 @js.native
 object GattPresentationFormatTypes extends js.Object {

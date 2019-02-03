@@ -61,6 +61,7 @@ class Subscriber[T] ()
   def next(value: T): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/Subscriber", "Subscriber")
 @js.native
 object Subscriber extends js.Object {

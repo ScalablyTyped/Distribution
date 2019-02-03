@@ -32,6 +32,7 @@ class RuleGroup protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/ruleGroup", "RuleGroup")
 @js.native
 object RuleGroup extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Transform ()
   extends cannonLib.CANNONNs.Transform
 
+/* static members */
 @JSImport("cannon", "Transform")
 @js.native
 object Transform extends js.Object {

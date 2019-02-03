@@ -53,6 +53,7 @@ class RelativeLayout protected ()
   /* private */ def sortChildren(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.RelativeLayout")
 @js.native
 object RelativeLayout extends js.Object {

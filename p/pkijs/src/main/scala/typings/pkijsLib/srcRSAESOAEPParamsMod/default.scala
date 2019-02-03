@@ -23,6 +23,7 @@ class default () extends RSAESOAEPParams {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/RSAESOAEPParams", JSImport.Default)
 @js.native
 object default extends js.Object {

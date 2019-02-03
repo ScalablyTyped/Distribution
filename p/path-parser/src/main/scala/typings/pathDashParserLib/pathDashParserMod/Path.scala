@@ -33,6 +33,7 @@ class Path protected () extends js.Object {
   /* private */ def urlTest(path: js.Any, source: js.Any, hasCaseSensitive: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("path-parser", "Path")
 @js.native
 object Path extends js.Object {

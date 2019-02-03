@@ -65,6 +65,7 @@ object appmeshNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.appmeshVirtualRouterMod.VirtualRouterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Mesh extends js.Object {
     /**
@@ -89,6 +90,7 @@ object appmeshNs extends js.Object {
     ): atPulumiAwsLib.appmeshMeshMod.Mesh = js.native
   }
   
+  /* static members */
   @js.native
   object Route extends js.Object {
     /**
@@ -113,6 +115,7 @@ object appmeshNs extends js.Object {
     ): atPulumiAwsLib.appmeshRouteMod.Route = js.native
   }
   
+  /* static members */
   @js.native
   object VirtualNode extends js.Object {
     /**
@@ -137,6 +140,7 @@ object appmeshNs extends js.Object {
     ): atPulumiAwsLib.appmeshVirtualNodeMod.VirtualNode = js.native
   }
   
+  /* static members */
   @js.native
   object VirtualRouter extends js.Object {
     /**

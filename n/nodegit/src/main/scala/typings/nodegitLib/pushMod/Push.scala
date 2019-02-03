@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Push () extends js.Object
 
+/* static members */
 @JSImport("nodegit/push", "Push")
 @js.native
 object Push extends js.Object {

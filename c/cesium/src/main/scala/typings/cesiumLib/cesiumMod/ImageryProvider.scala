@@ -65,6 +65,7 @@ abstract class ImageryProvider ()
   override def requestImage(x: scala.Double, y: scala.Double, level: scala.Double): js.Promise[stdLib.HTMLImageElement | stdLib.HTMLCanvasElement] = js.native
 }
 
+/* static members */
 @JSImport("cesium", "ImageryProvider")
 @js.native
 object ImageryProvider extends js.Object {

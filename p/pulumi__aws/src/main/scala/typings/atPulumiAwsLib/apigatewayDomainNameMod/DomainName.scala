@@ -87,6 +87,7 @@ class DomainName protected ()
   val regionalZoneId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/domainName", "DomainName")
 @js.native
 object DomainName extends js.Object {

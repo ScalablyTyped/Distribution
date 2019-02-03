@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommonShader ()
   extends wonderDotJsLib.distEs2015RendererShaderShaderCommonShaderMod.CommonShader
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CommonShader")
 @js.native
 object CommonShader extends js.Object {

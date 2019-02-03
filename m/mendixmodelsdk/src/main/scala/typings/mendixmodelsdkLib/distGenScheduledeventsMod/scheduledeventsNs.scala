@@ -43,6 +43,7 @@ object scheduledeventsNs extends js.Object {
   class TimeZoneEnum ()
     extends mendixmodelsdkLib.distSdkInternalMod.AbstractEnum
   
+  /* static members */
   @js.native
   object IntervalType extends js.Object {
     var Day: mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IntervalType = js.native
@@ -54,9 +55,7 @@ object scheduledeventsNs extends js.Object {
     var Year: mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.IntervalType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/scheduled-events relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ScheduledEvent extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -68,6 +67,7 @@ object scheduledeventsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.ScheduledEvent = js.native
   }
   
+  /* static members */
   @js.native
   object TimeZoneEnum extends js.Object {
     var Server: mendixmodelsdkLib.distGenScheduledeventsMod.scheduledeventsNs.TimeZoneEnum = js.native

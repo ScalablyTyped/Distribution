@@ -2914,9 +2914,7 @@ object pagesNs extends js.Object {
     var model_WidgetValidation: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/action-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ActionButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3343,12 +3341,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ActionButton = js.native
   }
   
+  /* static members */
   @js.native
   object ActionItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object AggregateFunction extends js.Object {
     var Average: mendixmodelsdkLib.distGenPagesMod.pagesNs.AggregateFunction = js.native
@@ -3359,6 +3359,7 @@ object pagesNs extends js.Object {
     var Sum: mendixmodelsdkLib.distGenPagesMod.pagesNs.AggregateFunction = js.native
   }
   
+  /* static members */
   @js.native
   object AlignmentEnum extends js.Object {
     var Center: mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum = js.native
@@ -3366,6 +3367,7 @@ object pagesNs extends js.Object {
     var Right: mendixmodelsdkLib.distGenPagesMod.pagesNs.AlignmentEnum = js.native
   }
   
+  /* static members */
   @js.native
   object AssociationSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3384,29 +3386,28 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.AssociationSource = js.native
   }
   
+  /* static members */
   @js.native
   object AssociationWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object AttributeWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object AttributeWidgetWithPlaceholder extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/close-page-button relevant section in reference guide}
-    *
-    * In version 7.0.2: deleted
-    */
+  /* static members */
   @js.native
   object BackButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3617,11 +3618,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.BackButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/building-block relevant section in reference guide}
-    *
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object BuildingBlock extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3633,15 +3630,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenPagesMod.pagesNs.BuildingBlock = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/button-widgets relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Button extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ButtonStyle extends js.Object {
     var Danger: mendixmodelsdkLib.distGenPagesMod.pagesNs.ButtonStyle = js.native
@@ -3653,10 +3649,7 @@ object pagesNs extends js.Object {
     var Warning: mendixmodelsdkLib.distGenPagesMod.pagesNs.ButtonStyle = js.native
   }
   
-  /**
-    * In version 7.12.0: removed experimental
-    * In version 7.8.0: introduced
-    */
+  /* static members */
   @js.native
   object CallNanoflowClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -3795,11 +3788,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.CallNanoflowClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/cancel-button relevant section in reference guide}
-    *
-    * In version 7.0.2: deleted
-    */
+  /* static members */
   @js.native
   object CancelButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4010,9 +3999,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelButton = js.native
   }
   
-  /**
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object CancelChangesClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4151,9 +4138,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.CancelChangesClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/check-box relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object CheckBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4580,18 +4565,21 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.CheckBox = js.native
   }
   
+  /* static members */
   @js.native
   object ClickTypeType extends js.Object {
     var Double: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClickTypeType = js.native
     var Single: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClickTypeType = js.native
   }
   
+  /* static members */
   @js.native
   object ClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ClientTemplate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4646,6 +4634,7 @@ object pagesNs extends js.Object {
     def createInInputWidgetUnderLabelTemplate(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.InputWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object ClientTemplateParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4664,9 +4653,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplate): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplateParameter = js.native
   }
   
-  /**
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object ClosePageClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4805,15 +4792,14 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.ClosePageClientAction = js.native
   }
   
+  /* static members */
   @js.native
   object ColumnGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/comparison-search-field relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ComparisonSearchField extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4832,6 +4818,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.ComparisonSearchField = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionalEditabilitySettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4850,12 +4837,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ConditionallyEditableWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ConditionalEditabilitySettings = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionalSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionalVisibilitySettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4904,18 +4893,21 @@ object pagesNs extends js.Object {
     def createInTableRowUnderConditionalVisibilitySettings(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableRow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ConditionalVisibilitySettings = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionallyEditableWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ConditionallyVisibleWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ConfirmationInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -4952,33 +4944,35 @@ object pagesNs extends js.Object {
     def createInMicroflowSettingsUnderConfirmationInfo(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowSettings): mendixmodelsdkLib.distGenPagesMod.pagesNs.ConfirmationInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ContainerWidth extends js.Object {
     var FixedWidth: mendixmodelsdkLib.distGenPagesMod.pagesNs.ContainerWidth = js.native
     var FullWidth: mendixmodelsdkLib.distGenPagesMod.pagesNs.ContainerWidth = js.native
   }
   
+  /* static members */
   @js.native
   object ControlBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ControlBarButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ControlBarItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.17.0: introduced
-    */
+  /* static members */
   @js.native
   object CreateObjectClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5117,9 +5111,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.CreateObjectClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-grid relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5546,9 +5538,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGrid = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/add-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridAddButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5567,9 +5557,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGridAddButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/export-to-csv-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridExportToCSVButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5588,9 +5576,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGridExportToCSVButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/export-to-excel-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridExportToExcelButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5609,9 +5595,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGridExportToExcelButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/remove-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataGridRemoveButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -5630,18 +5614,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataGridRemoveButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-sources relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DataView extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6068,11 +6048,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-action-button relevant section in reference guide}
-    *
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewActionButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6094,11 +6070,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewActionButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-cancel-button relevant section in reference guide}
-    *
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewCancelButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6120,11 +6092,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewCancelButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-close-button relevant section in reference guide}
-    *
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewCloseButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6146,11 +6114,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewCloseButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-control-bar relevant section in reference guide}
-    *
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewControlBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6172,26 +6136,21 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataView): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewControlBar = js.native
   }
   
-  /**
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewControlBarButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DataViewReadOnlyStyle extends js.Object {
     var Control: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewReadOnlyStyle = js.native
     var Text: mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewReadOnlyStyle = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-view-save-button relevant section in reference guide}
-    *
-    * In version 6.7.0: deleted
-    */
+  /* static members */
   @js.native
   object DataViewSaveButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6213,6 +6172,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewSaveButton = js.native
   }
   
+  /* static members */
   @js.native
   object DataViewSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6231,6 +6191,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.DataViewSource = js.native
   }
   
+  /* static members */
   @js.native
   object DatabaseConstraint extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6267,6 +6228,7 @@ object pagesNs extends js.Object {
     def createInSelectorDatabaseSourceUnderDatabaseConstraints(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectorDatabaseSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatabaseConstraint = js.native
   }
   
+  /* static members */
   @js.native
   object DatabaseConstraintOperator extends js.Object {
     var Contains: mendixmodelsdkLib.distGenPagesMod.pagesNs.DatabaseConstraintOperator = js.native
@@ -6279,12 +6241,14 @@ object pagesNs extends js.Object {
     var NotEquals: mendixmodelsdkLib.distGenPagesMod.pagesNs.DatabaseConstraintOperator = js.native
   }
   
+  /* static members */
   @js.native
   object DatabaseSourceBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DateFormat extends js.Object {
     var Custom: mendixmodelsdkLib.distGenPagesMod.pagesNs.DateFormat = js.native
@@ -6293,9 +6257,7 @@ object pagesNs extends js.Object {
     var Time: mendixmodelsdkLib.distGenPagesMod.pagesNs.DateFormat = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/date-picker relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DatePicker extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6722,9 +6684,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DatePicker = js.native
   }
   
-  /**
-    * In version 7.17.0: introduced
-    */
+  /* static members */
   @js.native
   object DeleteClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -6863,9 +6823,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.DeleteClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/container relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DivContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -7292,9 +7250,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DivContainer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/drop-down-widget relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DropDown extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -7721,9 +7677,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDown = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/drop-down-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DropDownButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -8150,6 +8104,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton = js.native
   }
   
+  /* static members */
   @js.native
   object DropDownButtonItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -8168,9 +8123,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButton): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownButtonItem = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/drop-down-search-field relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DropDownSearchField extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -8189,9 +8142,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.DropDownSearchField = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/image-viewer relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DynamicImageViewer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -8618,9 +8569,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/text relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DynamicText extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9047,6 +8996,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicText = js.native
   }
   
+  /* static members */
   @js.native
   object EditableEnum extends js.Object {
     var Always: mendixmodelsdkLib.distGenPagesMod.pagesNs.EditableEnum = js.native
@@ -9054,27 +9004,28 @@ object pagesNs extends js.Object {
     var Never: mendixmodelsdkLib.distGenPagesMod.pagesNs.EditableEnum = js.native
   }
   
+  /* static members */
   @js.native
   object EntityPathSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object EntityWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object EnumFormat extends js.Object {
     var Image: mendixmodelsdkLib.distGenPagesMod.pagesNs.EnumFormat = js.native
     var Text: mendixmodelsdkLib.distGenPagesMod.pagesNs.EnumFormat = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/file-manager relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object FileManager extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9501,6 +9452,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManager = js.native
   }
   
+  /* static members */
   @js.native
   object FileManagerType extends js.Object {
     var Both: mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManagerType = js.native
@@ -9508,15 +9460,14 @@ object pagesNs extends js.Object {
     var Upload: mendixmodelsdkLib.distGenPagesMod.pagesNs.FileManagerType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/pages relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object FormBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object FormLocation extends js.Object {
     var Content: mendixmodelsdkLib.distGenPagesMod.pagesNs.FormLocation = js.native
@@ -9524,6 +9475,7 @@ object pagesNs extends js.Object {
     var Popup: mendixmodelsdkLib.distGenPagesMod.pagesNs.FormLocation = js.native
   }
   
+  /* static members */
   @js.native
   object FormValidations extends js.Object {
     var All: mendixmodelsdkLib.distGenPagesMod.pagesNs.FormValidations = js.native
@@ -9531,6 +9483,7 @@ object pagesNs extends js.Object {
     var Widget: mendixmodelsdkLib.distGenPagesMod.pagesNs.FormValidations = js.native
   }
   
+  /* static members */
   @js.native
   object FormattingInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9588,6 +9541,7 @@ object pagesNs extends js.Object {
     def createInTextBoxUnderFormattingInfo(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox): mendixmodelsdkLib.distGenPagesMod.pagesNs.FormattingInfo = js.native
   }
   
+  /* static members */
   @js.native
   object GlyphIcon extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9627,15 +9581,14 @@ object pagesNs extends js.Object {
     def createInWebIconValueUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.GlyphIcon = js.native
   }
   
+  /* static members */
   @js.native
   object Grid extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/grid-action-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridActionButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9654,15 +9607,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridActionButton = js.native
   }
   
+  /* static members */
   @js.native
   object GridBaseSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/columns relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9681,9 +9633,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ColumnGrid): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridColumn = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/control-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridControlBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9702,12 +9652,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Grid): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridControlBar = js.native
   }
   
+  /* static members */
   @js.native
   object GridControlBarButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object GridDatabaseSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9726,9 +9678,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridDatabaseSource = js.native
   }
   
-  /**
-    * In version 7.17.0: deleted
-    */
+  /* static members */
   @js.native
   object GridDeleteButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9750,9 +9700,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridDeleteButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/deselect-all-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridDeselectAllButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9771,11 +9719,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridDeselectAllButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/edit-button relevant section in reference guide}
-    *
-    * In version 7.17.0: deleted
-    */
+  /* static members */
   @js.native
   object GridEditButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9797,9 +9741,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridEditButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/grid-new-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridNewButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9818,9 +9760,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridNewButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/search-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridSearchButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9857,9 +9797,7 @@ object pagesNs extends js.Object {
     def createInGridControlBarUnderSearchButton(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSearchButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/select-all-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridSelectAllButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9878,6 +9816,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSelectAllButton = js.native
   }
   
+  /* static members */
   @js.native
   object GridSelectionMode extends js.Object {
     var Multi: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSelectionMode = js.native
@@ -9887,9 +9826,7 @@ object pagesNs extends js.Object {
     var SingleAndMaintain: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSelectionMode = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/sort-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GridSortBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9929,6 +9866,7 @@ object pagesNs extends js.Object {
     def createInSortableEntityPathSourceUnderSortBar(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SortableEntityPathSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSortBar = js.native
   }
   
+  /* static members */
   @js.native
   object GridSortItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9947,6 +9885,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSortBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridSortItem = js.native
   }
   
+  /* static members */
   @js.native
   object GridXPathSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -9965,9 +9904,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.GridXPathSource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/group-box relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object GroupBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -10394,6 +10331,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBox = js.native
   }
   
+  /* static members */
   @js.native
   object GroupBoxCollapsible extends js.Object {
     var No: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBoxCollapsible = js.native
@@ -10401,9 +10339,7 @@ object pagesNs extends js.Object {
     var YesInitiallyExpanded: mendixmodelsdkLib.distGenPagesMod.pagesNs.GroupBoxCollapsible = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/header relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Header extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -10830,9 +10766,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Header = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/horizontal-split-pane relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object HorizontalSplitPane extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -11259,15 +11193,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.HorizontalSplitPane = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/image-property relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Icon extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object ImageIcon extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -11307,6 +11240,7 @@ object pagesNs extends js.Object {
     def createInWebIconValueUnderValue(container: mendixmodelsdkLib.distGenPluginwidgetsMod.pluginwidgetsNs.WebIconValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageIcon = js.native
   }
   
+  /* static members */
   @js.native
   object ImageSizeUnit extends js.Object {
     var Auto: mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageSizeUnit = js.native
@@ -11314,9 +11248,7 @@ object pagesNs extends js.Object {
     var Pixels: mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageSizeUnit = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/image-uploader relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ImageUploader extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -11743,6 +11675,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageUploader = js.native
   }
   
+  /* static members */
   @js.native
   object ImageViewerSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -11761,9 +11694,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ImageViewerSource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/input-reference-set-selector relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object InputReferenceSetSelector extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -12190,15 +12121,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.InputReferenceSetSelector = js.native
   }
   
+  /* static members */
   @js.native
   object InputWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/label relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Label extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -12625,9 +12555,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Label = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/layout relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Layout extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -12639,9 +12567,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenPagesMod.pagesNs.Layout = js.native
   }
   
-  /**
-    * In version 7.17.0: added public
-    */
+  /* static members */
   @js.native
   object LayoutCall extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -12675,6 +12601,7 @@ object pagesNs extends js.Object {
     def createInPageUnderLayoutCall(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Page): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutCallArgument extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -12693,9 +12620,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCall): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutCallArgument = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/layout-grid relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object LayoutGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13122,6 +13047,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutGridColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13140,6 +13066,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridRow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridColumn = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutGridRow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13158,18 +13085,21 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGrid): mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutGridRow = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutModeType extends js.Object {
     var Headline: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutModeType = js.native
     var Sidebar: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutModeType = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object LayoutType extends js.Object {
     var Legacy: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutType = js.native
@@ -13180,11 +13110,7 @@ object pagesNs extends js.Object {
     var Tablet: mendixmodelsdkLib.distGenPagesMod.pagesNs.LayoutType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/link-button relevant section in reference guide}
-    *
-    * In version 7.3.0: deleted
-    */
+  /* static members */
   @js.native
   object LinkButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13404,6 +13330,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LinkButton = js.native
   }
   
+  /* static members */
   @js.native
   object LinkType extends js.Object {
     var Call: mendixmodelsdkLib.distGenPagesMod.pagesNs.LinkType = js.native
@@ -13412,9 +13339,7 @@ object pagesNs extends js.Object {
     var Web: mendixmodelsdkLib.distGenPagesMod.pagesNs.LinkType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/list-view relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ListView extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13841,6 +13766,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView = js.native
   }
   
+  /* static members */
   @js.native
   object ListViewDatabaseSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13859,6 +13785,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewDatabaseSource = js.native
   }
   
+  /* static members */
   @js.native
   object ListViewSearch extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13883,6 +13810,7 @@ object pagesNs extends js.Object {
     def createInListViewXPathSourceUnderSearch(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewXPathSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewSearch = js.native
   }
   
+  /* static members */
   @js.native
   object ListViewTemplate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13901,6 +13829,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ListView): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object ListViewXPathSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13919,6 +13848,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListViewXPathSource = js.native
   }
   
+  /* static members */
   @js.native
   object ListenTargetSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -13937,17 +13867,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ListenTargetSource = js.native
   }
   
+  /* static members */
   @js.native
   object ListenTargetWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/sign-in-button relevant section in reference guide}
-    *
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object LoginButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -14356,11 +14283,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginButton = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/login-id-text-box relevant section in reference guide}
-    *
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object LoginIdTextBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -14769,20 +14692,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LoginIdTextBox = js.native
   }
   
-  /**
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object LoginTextBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/sign-out-button relevant section in reference guide}
-    *
-    * In version 7.1.0: deleted
-    */
+  /* static members */
   @js.native
   object LogoutButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -14993,12 +14910,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.LogoutButton = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.15.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object MasterDetail extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15209,12 +15121,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetail = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.15.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object MasterDetailDetailRegion extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15236,12 +15143,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetail): mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailDetailRegion = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.15.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object MasterDetailMasterRegion extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15263,27 +15165,21 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetail): mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailMasterRegion = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.15.0: deleted
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object MasterDetailRegion extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object MemberWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/menu-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MenuBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15710,6 +15606,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuBar = js.native
   }
   
+  /* static members */
   @js.native
   object MenuDocumentSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15728,21 +15625,21 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuDocumentSource = js.native
   }
   
+  /* static members */
   @js.native
   object MenuSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/menu-widgets relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MenuWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object MicroflowClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15872,9 +15769,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowClientAction = js.native
   }
   
-  /**
-    * In version 7.19.0: introduced
-    */
+  /* static members */
   @js.native
   object MicroflowParameterMapping extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15896,9 +15791,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowSettings): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowParameterMapping = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/starting-microflows relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object MicroflowSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -15983,6 +15876,7 @@ object pagesNs extends js.Object {
     def createInSelectorMicroflowSourceUnderDataSourceMicroflowSettings(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectorMicroflowSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowSettings = js.native
   }
   
+  /* static members */
   @js.native
   object MicroflowSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16001,6 +15895,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.MicroflowSource = js.native
   }
   
+  /* static members */
   @js.native
   object MobileFooterType extends js.Object {
     var Custom: mendixmodelsdkLib.distGenPagesMod.pagesNs.MobileFooterType = js.native
@@ -16008,9 +15903,7 @@ object pagesNs extends js.Object {
     var None: mendixmodelsdkLib.distGenPagesMod.pagesNs.MobileFooterType = js.native
   }
   
-  /**
-    * In version 7.19.0: introduced
-    */
+  /* static members */
   @js.native
   object NanoflowParameterMapping extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16041,9 +15934,7 @@ object pagesNs extends js.Object {
     def createInNanoflowSourceUnderParameterMappings(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NanoflowSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.NanoflowParameterMapping = js.native
   }
   
-  /**
-    * In version 7.12.0: introduced
-    */
+  /* static members */
   @js.native
   object NanoflowSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16065,9 +15956,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.NanoflowSource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/navigation-list relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object NavigationList extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16494,6 +16383,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList = js.native
   }
   
+  /* static members */
   @js.native
   object NavigationListItem extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16512,6 +16402,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationList): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationListItem = js.native
   }
   
+  /* static members */
   @js.native
   object NavigationSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16530,9 +16421,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MenuWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationSource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/navigation-tree relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object NavigationTree extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -16959,9 +16848,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.NavigationTree = js.native
   }
   
-  /**
-    * In version 7.17.0: deleted
-    */
+  /* static members */
   @js.native
   object NewButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17370,6 +17257,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.NewButton = js.native
   }
   
+  /* static members */
   @js.native
   object NewButtonEditLocation extends js.Object {
     var Form: mendixmodelsdkLib.distGenPagesMod.pagesNs.NewButtonEditLocation = js.native
@@ -17377,6 +17265,7 @@ object pagesNs extends js.Object {
     var InlineAtTop: mendixmodelsdkLib.distGenPagesMod.pagesNs.NewButtonEditLocation = js.native
   }
   
+  /* static members */
   @js.native
   object NoClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17506,9 +17395,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.NoClientAction = js.native
   }
   
-  /**
-    * In version 7.22.0: deleted
-    */
+  /* static members */
   @js.native
   object OfflineSchema extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17521,9 +17408,7 @@ object pagesNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.OfflineSchema = js.native
   }
   
-  /**
-    * In version 7.22.0: deleted
-    */
+  /* static members */
   @js.native
   object OfflineSchemaFetchInstruction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17536,18 +17421,14 @@ object pagesNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.OfflineSchemaFetchInstruction = js.native
   }
   
-  /**
-    * In version 7.18.0: deleted
-    */
+  /* static members */
   @js.native
   object OnClickBehavior extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.18.0: deleted
-    */
+  /* static members */
   @js.native
   object OnClickEnlarge extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17569,9 +17450,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer): mendixmodelsdkLib.distGenPagesMod.pagesNs.OnClickEnlarge = js.native
   }
   
-  /**
-    * In version 7.18.0: deleted
-    */
+  /* static members */
   @js.native
   object OnClickMicroflow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17593,9 +17472,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer): mendixmodelsdkLib.distGenPagesMod.pagesNs.OnClickMicroflow = js.native
   }
   
-  /**
-    * In version 7.18.0: deleted
-    */
+  /* static members */
   @js.native
   object OnClickNothing extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17617,9 +17494,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.DynamicImageViewer): mendixmodelsdkLib.distGenPagesMod.pagesNs.OnClickNothing = js.native
   }
   
-  /**
-    * In version 7.3.0: introduced
-    */
+  /* static members */
   @js.native
   object OpenLinkClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17758,9 +17633,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/page relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Page extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17772,6 +17645,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenPagesMod.pagesNs.Page = js.native
   }
   
+  /* static members */
   @js.native
   object PageClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17901,6 +17775,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageClientAction = js.native
   }
   
+  /* static members */
   @js.native
   object PageForSpecialization extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -17931,9 +17806,7 @@ object pagesNs extends js.Object {
     def createInPageClientActionUnderPagesForSpecializations(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.PageClientAction): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageForSpecialization = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/opening-pages relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object PageSettings extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -18024,11 +17897,7 @@ object pagesNs extends js.Object {
     def createInShowPageActionUnderPageSettings(container: mendixmodelsdkLib.distGenMicroflowsMod.microflowsNs.ShowPageAction): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageSettings = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/page-template relevant section in reference guide}
-    *
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object PageTemplate extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -18040,6 +17909,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenPagesMod.pagesNs.PageTemplate = js.native
   }
   
+  /* static members */
   @js.native
   object PageTemplateType extends js.Object {
     var Edit: mendixmodelsdkLib.distGenPagesMod.pagesNs.PageTemplateType = js.native
@@ -18047,11 +17917,7 @@ object pagesNs extends js.Object {
     var Standard: mendixmodelsdkLib.distGenPagesMod.pagesNs.PageTemplateType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/password-text-box relevant section in reference guide}
-    *
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object PasswordTextBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -18460,9 +18326,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.PasswordTextBox = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/placeholder relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Placeholder extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -18889,6 +18753,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Placeholder = js.native
   }
   
+  /* static members */
   @js.native
   object ProgressBarType extends js.Object {
     var Blocking: mendixmodelsdkLib.distGenPagesMod.pagesNs.ProgressBarType = js.native
@@ -18896,9 +18761,7 @@ object pagesNs extends js.Object {
     var None: mendixmodelsdkLib.distGenPagesMod.pagesNs.ProgressBarType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/radio-buttons relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object RadioButtonGroup extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -19325,9 +19188,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.RadioButtonGroup = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/range-search-field relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object RangeSearchField extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -19346,6 +19207,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.RangeSearchField = js.native
   }
   
+  /* static members */
   @js.native
   object ReadOnlyStyle extends js.Object {
     var Control: mendixmodelsdkLib.distGenPagesMod.pagesNs.ReadOnlyStyle = js.native
@@ -19353,9 +19215,7 @@ object pagesNs extends js.Object {
     var Text: mendixmodelsdkLib.distGenPagesMod.pagesNs.ReadOnlyStyle = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/reference-selector relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReferenceSelector extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -19782,15 +19642,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelector = js.native
   }
   
+  /* static members */
   @js.native
   object ReferenceSelectorRenderModeType extends js.Object {
     var DropDown: mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelectorRenderModeType = js.native
     var Form: mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSelectorRenderModeType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/reference-set-selector relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ReferenceSetSelector extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20217,6 +20076,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSelector = js.native
   }
   
+  /* static members */
   @js.native
   object ReferenceSetSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20235,15 +20095,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.EntityWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.ReferenceSetSource = js.native
   }
   
+  /* static members */
   @js.native
   object RenderType extends js.Object {
     var Button: mendixmodelsdkLib.distGenPagesMod.pagesNs.RenderType = js.native
     var Link: mendixmodelsdkLib.distGenPagesMod.pagesNs.RenderType = js.native
   }
   
-  /**
-    * In version 7.12.0: introduced
-    */
+  /* static members */
   @js.native
   object RetrievalQuery extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20256,9 +20115,7 @@ object pagesNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.RetrievalQuery = js.native
   }
   
-  /**
-    * In version 6.2.0: introduced
-    */
+  /* static members */
   @js.native
   object RetrievalSchema extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20271,11 +20128,7 @@ object pagesNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenPagesMod.pagesNs.RetrievalSchema = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/save-button relevant section in reference guide}
-    *
-    * In version 7.0.2: deleted
-    */
+  /* static members */
   @js.native
   object SaveButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20486,9 +20339,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveButton = js.native
   }
   
-  /**
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object SaveChangesClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -20627,15 +20478,14 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.SaveChangesClientAction = js.native
   }
   
+  /* static members */
   @js.native
   object ScrollBehavior extends js.Object {
     var FullWidget: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollBehavior = js.native
     var PerRegion: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollBehavior = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/scroll-container relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ScrollContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21062,6 +20912,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer = js.native
   }
   
+  /* static members */
   @js.native
   object ScrollContainerRegion extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21104,9 +20955,7 @@ object pagesNs extends js.Object {
     def createInScrollContainerUnderTop(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainer): mendixmodelsdkLib.distGenPagesMod.pagesNs.ScrollContainerRegion = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/search-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SearchBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21131,6 +20980,7 @@ object pagesNs extends js.Object {
     def createInGridDatabaseSourceUnderSearchBar(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.GridDatabaseSource): mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchBar = js.native
   }
   
+  /* static members */
   @js.native
   object SearchBarTypeEnum extends js.Object {
     var AlwaysOpen: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchBarTypeEnum = js.native
@@ -21139,12 +20989,14 @@ object pagesNs extends js.Object {
     var None: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchBarTypeEnum = js.native
   }
   
+  /* static members */
   @js.native
   object SearchField extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object SearchFieldOperator extends js.Object {
     var Contains: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchFieldOperator = js.native
@@ -21157,6 +21009,7 @@ object pagesNs extends js.Object {
     var StartsWith: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchFieldOperator = js.native
   }
   
+  /* static members */
   @js.native
   object SearchFieldType extends js.Object {
     var Hidden: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchFieldType = js.native
@@ -21164,9 +21017,7 @@ object pagesNs extends js.Object {
     var ReadOnly: mendixmodelsdkLib.distGenPagesMod.pagesNs.SearchFieldType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/select-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SelectButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21185,15 +21036,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.ControlBar): mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectButton = js.native
   }
   
+  /* static members */
   @js.native
   object SelectionType extends js.Object {
     var SelectAll: mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectionType = js.native
     var SelectPage: mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectionType = js.native
   }
   
-  /**
-    * In version 6.1.0: introduced
-    */
+  /* static members */
   @js.native
   object SelectorDatabaseSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21215,6 +21065,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AssociationWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectorDatabaseSource = js.native
   }
   
+  /* static members */
   @js.native
   object SelectorMicroflowSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21233,12 +21084,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AssociationWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectorMicroflowSource = js.native
   }
   
+  /* static members */
   @js.native
   object SelectorSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object SelectorXPathSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21257,9 +21110,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.AssociationWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SelectorXPathSource = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/sidebar-toggle-button relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SidebarToggleButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21686,6 +21537,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleButton = js.native
   }
   
+  /* static members */
   @js.native
   object SidebarToggleMode extends js.Object {
     var PushContentAside: mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleMode = js.native
@@ -21693,15 +21545,14 @@ object pagesNs extends js.Object {
     var SlideOverContent: mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleMode = js.native
   }
   
+  /* static members */
   @js.native
   object SidebarToggleRegion extends js.Object {
     var Left: mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleRegion = js.native
     var Right: mendixmodelsdkLib.distGenPagesMod.pagesNs.SidebarToggleRegion = js.native
   }
   
-  /**
-    * In version 7.1.0: introduced
-    */
+  /* static members */
   @js.native
   object SignOutClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -21840,9 +21691,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.SignOutClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/simple-menu-bar relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SimpleMenuBar extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -22269,18 +22118,21 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBar = js.native
   }
   
+  /* static members */
   @js.native
   object SimpleMenuBarOrientation extends js.Object {
     var Horizontal: mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBarOrientation = js.native
     var Vertical: mendixmodelsdkLib.distGenPagesMod.pagesNs.SimpleMenuBarOrientation = js.native
   }
   
+  /* static members */
   @js.native
   object SingleSearchField extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object SizeMode extends js.Object {
     var Auto: mendixmodelsdkLib.distGenPagesMod.pagesNs.SizeMode = js.native
@@ -22288,9 +22140,7 @@ object pagesNs extends js.Object {
     var Pixels: mendixmodelsdkLib.distGenPagesMod.pagesNs.SizeMode = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/snippet relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Snippet extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -22302,6 +22152,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenPagesMod.pagesNs.Snippet = js.native
   }
   
+  /* static members */
   @js.native
   object SnippetCall extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -22320,9 +22171,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCall = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/snippet-call relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object SnippetCallWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -22749,27 +22598,28 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SnippetCallWidget = js.native
   }
   
+  /* static members */
   @js.native
   object SortDirection extends js.Object {
     var Ascending: mendixmodelsdkLib.distGenPagesMod.pagesNs.SortDirection = js.native
     var Descending: mendixmodelsdkLib.distGenPagesMod.pagesNs.SortDirection = js.native
   }
   
+  /* static members */
   @js.native
   object SortableEntityPathSource extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object SplitPane extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/image relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object StaticImageViewer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -23196,6 +23046,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticImageViewer = js.native
   }
   
+  /* static members */
   @js.native
   object StaticOrDynamicString extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -23226,9 +23077,7 @@ object pagesNs extends js.Object {
     def createInOpenLinkClientActionUnderAddress(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.OpenLinkClientAction): mendixmodelsdkLib.distGenPagesMod.pagesNs.StaticOrDynamicString = js.native
   }
   
-  /**
-    * In version 7.0.2: deleted
-    */
+  /* static members */
   @js.native
   object SyncButton extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -23439,9 +23288,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncButton = js.native
   }
   
-  /**
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object SyncClientAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -23580,9 +23427,7 @@ object pagesNs extends js.Object {
     def createInWidgetValueUnderAction(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenPagesMod.pagesNs.SyncClientAction = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/tab-container relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TabContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24009,9 +23854,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/tab-page relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TabPage extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24030,9 +23873,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TabContainer): mendixmodelsdkLib.distGenPagesMod.pagesNs.TabPage = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/table relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Table extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24459,6 +24300,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Table = js.native
   }
   
+  /* static members */
   @js.native
   object TableCell extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24477,6 +24319,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Table): mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCell = js.native
   }
   
+  /* static members */
   @js.native
   object TableCellRenderModeType extends js.Object {
     var Default: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCellRenderModeType = js.native
@@ -24484,6 +24327,7 @@ object pagesNs extends js.Object {
     var Title: mendixmodelsdkLib.distGenPagesMod.pagesNs.TableCellRenderModeType = js.native
   }
   
+  /* static members */
   @js.native
   object TableColumn extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24502,6 +24346,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Table): mendixmodelsdkLib.distGenPagesMod.pagesNs.TableColumn = js.native
   }
   
+  /* static members */
   @js.native
   object TableRow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24520,18 +24365,14 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.Table): mendixmodelsdkLib.distGenPagesMod.pagesNs.TableRow = js.native
   }
   
-  /**
-    * In version 7.7.0: introduced
-    */
+  /* static members */
   @js.native
   object TemplateFormBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/template-grid relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TemplateGrid extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24958,6 +24799,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid = js.native
   }
   
+  /* static members */
   @js.native
   object TemplateGridContents extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -24976,9 +24818,7 @@ object pagesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGrid): mendixmodelsdkLib.distGenPagesMod.pagesNs.TemplateGridContents = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/text-area relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TextArea extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -25405,9 +25245,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextArea = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/text-box relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object TextBox extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -25834,6 +25672,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.TextBox = js.native
   }
   
+  /* static members */
   @js.native
   object TextRenderMode extends js.Object {
     var H1: mendixmodelsdkLib.distGenPagesMod.pagesNs.TextRenderMode = js.native
@@ -25846,15 +25685,14 @@ object pagesNs extends js.Object {
     var Text: mendixmodelsdkLib.distGenPagesMod.pagesNs.TextRenderMode = js.native
   }
   
+  /* static members */
   @js.native
   object TextWidget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/page-title relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Title extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -26281,6 +26119,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.Title = js.native
   }
   
+  /* static members */
   @js.native
   object ToggleMode extends js.Object {
     var None: mendixmodelsdkLib.distGenPagesMod.pagesNs.ToggleMode = js.native
@@ -26290,17 +26129,14 @@ object pagesNs extends js.Object {
     var SlideOverContent: mendixmodelsdkLib.distGenPagesMod.pagesNs.ToggleMode = js.native
   }
   
+  /* static members */
   @js.native
   object UnitEnum extends js.Object {
     var Pixels: mendixmodelsdkLib.distGenPagesMod.pagesNs.UnitEnum = js.native
     var Weight: mendixmodelsdkLib.distGenPagesMod.pagesNs.UnitEnum = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/validation-message relevant section in reference guide}
-    *
-    * In version 7.0.2: introduced
-    */
+  /* static members */
   @js.native
   object ValidationMessage extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -26709,9 +26545,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.ValidationMessage = js.native
   }
   
-  /**
-    * In version 7.15.0: deleted
-    */
+  /* static members */
   @js.native
   object VerticalFlow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -26940,9 +26774,7 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/vertical-split-pane relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object VerticalSplitPane extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -27369,21 +27201,14 @@ object pagesNs extends js.Object {
     def createInVerticalFlowUnderWidgets(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalFlow): mendixmodelsdkLib.distGenPagesMod.pagesNs.VerticalSplitPane = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Pages`.
-    */
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/pages relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Widget extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenPagesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.6.0: introduced
-    */
+  /* static members */
   @js.native
   object WidgetValidation extends js.Object {
     var structureTypeName: java.lang.String = js.native

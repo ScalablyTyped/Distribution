@@ -34,6 +34,7 @@ class FormSelect () extends Component[FormSelectOptions] {
   def getSelectedValues(): js.Array[java.lang.String] = js.native
 }
 
+/* static members */
 @JSGlobal("M.FormSelect")
 @js.native
 object FormSelect extends js.Object {

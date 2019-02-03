@@ -19,6 +19,7 @@ class Blob () extends js.Object {
   def rawsize(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/blob", "Blob")
 @js.native
 object Blob extends js.Object {

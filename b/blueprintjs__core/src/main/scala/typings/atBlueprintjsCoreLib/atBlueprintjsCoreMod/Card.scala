@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Card ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Card
 
+/* static members */
 @JSImport("@blueprintjs/core", "Card")
 @js.native
 object Card extends js.Object {

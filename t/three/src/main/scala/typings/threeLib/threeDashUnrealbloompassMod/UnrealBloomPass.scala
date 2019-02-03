@@ -40,6 +40,7 @@ class UnrealBloomPass ()
   def getSeparableBlurMaterial(): threeLib.threeDashCoreMod.ShaderMaterial = js.native
 }
 
+/* static members */
 @JSImport("three/three-unrealbloompass", "UnrealBloomPass")
 @js.native
 object UnrealBloomPass extends js.Object {

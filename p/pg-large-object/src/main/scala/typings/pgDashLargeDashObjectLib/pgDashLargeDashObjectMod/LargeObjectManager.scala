@@ -48,6 +48,7 @@ class LargeObjectManager protected () extends js.Object {
   def unlinkAsync(oid: scala.Double): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("pg-large-object", "LargeObjectManager")
 @js.native
 object LargeObjectManager extends js.Object {

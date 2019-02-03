@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Feather ()
   extends reactDashNativeDashVectorDashIconsLib.featherMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "Feather")
 @js.native
 object Feather extends js.Object {

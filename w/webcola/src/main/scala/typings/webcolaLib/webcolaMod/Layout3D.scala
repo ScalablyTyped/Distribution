@@ -13,6 +13,7 @@ class Layout3D protected ()
   def this(nodes: js.Array[webcolaLib.distSrcLayout3dMod.Node3D], links: js.Array[webcolaLib.distSrcLayout3dMod.Link3D], idealLinkLength: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("webcola", "Layout3D")
 @js.native
 object Layout3D extends js.Object {

@@ -27,12 +27,19 @@ object reactDashSlickLibStrings {
   @js.native
   sealed trait up extends js.Object
   
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def ondemand: ondemand = "ondemand".asInstanceOf[ondemand]
+  @scala.inline
   def progressive: progressive = "progressive".asInstanceOf[progressive]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def unslick: unslick = "unslick".asInstanceOf[unslick]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
 }
 

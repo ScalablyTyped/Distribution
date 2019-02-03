@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HDRTools () extends js.Object
 
-/**
-  * This groups tools to convert HDR texture to native colors array.
-  */
+/* static members */
 @JSGlobal("BABYLON.HDRTools")
 @js.native
 object HDRTools extends js.Object {

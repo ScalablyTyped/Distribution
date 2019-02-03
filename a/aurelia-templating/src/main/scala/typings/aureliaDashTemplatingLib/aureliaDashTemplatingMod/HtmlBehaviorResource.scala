@@ -115,6 +115,7 @@ class HtmlBehaviorResource () extends js.Object {
   def register(registry: ViewResources, name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "HtmlBehaviorResource")
 @js.native
 object HtmlBehaviorResource extends js.Object {

@@ -61,6 +61,7 @@ class ClientControl protected ()
   def updateDisplayControlWithNewMessages(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Srch.ClientControl")
 @js.native
 object ClientControl extends js.Object {

@@ -29,6 +29,7 @@ class XssMatchSet protected ()
   val xssMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchTextTransformation]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/xssMatchSet", "XssMatchSet")
 @js.native
 object XssMatchSet extends js.Object {

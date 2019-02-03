@@ -18,6 +18,7 @@ class Slider protected () extends js.Object {
   def updateValue(args: js.Any*): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Slider")
 @js.native
 object Slider extends js.Object {

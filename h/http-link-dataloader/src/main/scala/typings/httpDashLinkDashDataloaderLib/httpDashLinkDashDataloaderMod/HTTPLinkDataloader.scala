@@ -12,6 +12,7 @@ class HTTPLinkDataloader protected ()
   def this(options: httpDashLinkDashDataloaderLib.distSrcTypesMod.HttpOptions) = this()
 }
 
+/* static members */
 @JSImport("http-link-dataloader", "HTTPLinkDataloader")
 @js.native
 object HTTPLinkDataloader extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TabBarIOS ()
   extends reactLib.reactMod.Component[TabBarIOSProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("react-native", "TabBarIOS")
 @js.native
 object TabBarIOS extends js.Object {

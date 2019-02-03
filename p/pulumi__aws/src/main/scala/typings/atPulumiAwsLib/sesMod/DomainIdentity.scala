@@ -20,6 +20,7 @@ class DomainIdentity protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesDomainIdentityMod.DomainIdentityArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "DomainIdentity")
 @js.native
 object DomainIdentity extends js.Object {

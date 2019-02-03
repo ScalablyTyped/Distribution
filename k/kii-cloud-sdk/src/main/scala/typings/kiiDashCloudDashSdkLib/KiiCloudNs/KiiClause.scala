@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KiiClause () extends js.Object
 
-/**
-  * Represents a KiiClause expression object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiClause")
 @js.native
 object KiiClause extends js.Object {

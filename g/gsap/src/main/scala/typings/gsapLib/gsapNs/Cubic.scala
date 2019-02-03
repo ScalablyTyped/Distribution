@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Cubic () extends Ease
 
+/* static members */
 @JSGlobal("gsap.Cubic")
 @js.native
 object Cubic extends js.Object {

@@ -13,6 +13,7 @@ class Network protected () extends js.Object {
   def networkPassphrase(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("stellar-base", "Network")
 @js.native
 object Network extends js.Object {

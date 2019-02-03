@@ -20,6 +20,7 @@ class CSSNumericValue () extends CSSStyleValue {
   def `type`(): CSSNumericType = js.native
 }
 
+/* static members */
 @JSGlobal("CSSNumericValue")
 @js.native
 object CSSNumericValue extends js.Object {

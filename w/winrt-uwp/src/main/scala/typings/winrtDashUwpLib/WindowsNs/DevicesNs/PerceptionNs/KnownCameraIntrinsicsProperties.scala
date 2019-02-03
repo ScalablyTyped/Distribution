@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownCameraIntrinsicsProperties () extends js.Object
 
-/** Provides static methods for retrieving intrinsic properties of a camera. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.KnownCameraIntrinsicsProperties")
 @js.native
 object KnownCameraIntrinsicsProperties extends js.Object {

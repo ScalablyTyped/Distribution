@@ -16,6 +16,7 @@ class ContextualizedTypeStats ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IContextualizedTypeStats) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "ContextualizedTypeStats")
 @js.native
 object ContextualizedTypeStats extends js.Object {

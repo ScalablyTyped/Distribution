@@ -18,6 +18,7 @@ class PivotConfigurator protected () extends Widget {
   def setDataSource(dataSource: kendoDashUiLib.kendoNs.dataNs.PivotDataSource): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.PivotConfigurator")
 @js.native
 object PivotConfigurator extends js.Object {

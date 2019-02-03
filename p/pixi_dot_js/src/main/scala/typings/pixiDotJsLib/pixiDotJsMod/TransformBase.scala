@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TransformBase ()
   extends pixiDotJsLib.PIXINs.TransformBase
 
+/* static members */
 @JSImport("pixi.js", "TransformBase")
 @js.native
 object TransformBase extends js.Object {

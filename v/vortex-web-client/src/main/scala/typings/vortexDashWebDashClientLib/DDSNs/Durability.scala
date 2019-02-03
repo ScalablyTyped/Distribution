@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Durability () extends Policy
 
+/* static members */
 @JSGlobal("DDS.Durability")
 @js.native
 object Durability extends js.Object {

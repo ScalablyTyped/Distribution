@@ -34,6 +34,7 @@ class NgTableFilterConfig protected () extends js.Object {
   def getUrlForAlias(aliasName: java.lang.String, filterKey: java.lang.String): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/browser/ngTableFilterConfig", "NgTableFilterConfig")
 @js.native
 object NgTableFilterConfig extends js.Object {

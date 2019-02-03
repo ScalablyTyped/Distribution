@@ -21,13 +21,7 @@ class ScriptHandler protected () extends js.Object {
   def patch(asset: Asset, assets: AssetRegistry): scala.Unit = js.native
 }
 
-/**
-  * @name pc.ScriptHandler
-  * @class ResourceHandler for loading JavaScript files dynamically
-  * Two types of JavaScript files can be loaded, PlayCanvas scripts which contain calls to {@link pc.createScript},
-  * or regular JavaScript files, such as third-party libraries.
-  * @param {pc.Application} app The running {pc.Application}
-  */
+/* static members */
 @JSGlobal("pc.ScriptHandler")
 @js.native
 object ScriptHandler extends js.Object {

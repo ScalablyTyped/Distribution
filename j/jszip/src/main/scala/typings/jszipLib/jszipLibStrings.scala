@@ -51,20 +51,35 @@ object jszipLibStrings {
   @js.native
   sealed trait uint8array extends js.Object
   
+  @scala.inline
   def DEFLATE: DEFLATE = "DEFLATE".asInstanceOf[DEFLATE]
+  @scala.inline
   def DOS: DOS = "DOS".asInstanceOf[DOS]
+  @scala.inline
   def STORE: STORE = "STORE".asInstanceOf[STORE]
+  @scala.inline
   def UNIX: UNIX = "UNIX".asInstanceOf[UNIX]
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def arraybuffer: arraybuffer = "arraybuffer".asInstanceOf[arraybuffer]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def binarystring: binarystring = "binarystring".asInstanceOf[binarystring]
+  @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
+  @scala.inline
   def nodebuffer: nodebuffer = "nodebuffer".asInstanceOf[nodebuffer]
+  @scala.inline
   def nodestream: nodestream = "nodestream".asInstanceOf[nodestream]
+  @scala.inline
   def stream: stream = "stream".asInstanceOf[stream]
+  @scala.inline
   def string: string = "string".asInstanceOf[string]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def uint8array: uint8array = "uint8array".asInstanceOf[uint8array]
 }
 

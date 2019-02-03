@@ -85,9 +85,7 @@ class WindowsMotionController protected () extends WebVRController {
   ): scala.Unit = js.native
 }
 
-/**
-  * Defines the WindowsMotionController object that the state of the windows motion controller
-  */
+/* static members */
 @JSGlobal("BABYLON.WindowsMotionController")
 @js.native
 object WindowsMotionController extends js.Object {

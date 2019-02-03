@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends NextGenEvents
 
+/* static members */
 @JSImport("nextgen-events", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

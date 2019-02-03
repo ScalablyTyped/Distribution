@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Reflog ()
   extends nodegitLib.refDashLogMod.Reflog
 
+/* static members */
 @JSImport("nodegit", "Reflog")
 @js.native
 object Reflog extends js.Object {

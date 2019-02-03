@@ -12,7 +12,9 @@ object cordovaDashPluginDashNetworkDashInformationLibStrings {
   @js.native
   sealed trait online extends js.Object
   
+  @scala.inline
   def offline: offline = "offline".asInstanceOf[offline]
+  @scala.inline
   def online: online = "online".asInstanceOf[online]
 }
 

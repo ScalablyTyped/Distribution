@@ -27,12 +27,19 @@ object yogDashLogLibStrings {
   @js.native
   sealed trait WARNING extends js.Object
   
+  @scala.inline
   def ACCESS: ACCESS = "ACCESS".asInstanceOf[ACCESS]
+  @scala.inline
   def ACCESS_ERROR: ACCESS_ERROR = "ACCESS_ERROR".asInstanceOf[ACCESS_ERROR]
+  @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  @scala.inline
   def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
+  @scala.inline
   def NOTICE: NOTICE = "NOTICE".asInstanceOf[NOTICE]
+  @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  @scala.inline
   def WARNING: WARNING = "WARNING".asInstanceOf[WARNING]
 }
 

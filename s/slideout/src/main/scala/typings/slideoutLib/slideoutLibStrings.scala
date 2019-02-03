@@ -33,14 +33,23 @@ object slideoutLibStrings {
   @js.native
   sealed trait translatestart extends js.Object
   
+  @scala.inline
   def beforeclose: beforeclose = "beforeclose".asInstanceOf[beforeclose]
+  @scala.inline
   def beforeopen: beforeopen = "beforeopen".asInstanceOf[beforeopen]
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
+  @scala.inline
   def translateend: translateend = "translateend".asInstanceOf[translateend]
+  @scala.inline
   def translatestart: translatestart = "translatestart".asInstanceOf[translatestart]
 }
 

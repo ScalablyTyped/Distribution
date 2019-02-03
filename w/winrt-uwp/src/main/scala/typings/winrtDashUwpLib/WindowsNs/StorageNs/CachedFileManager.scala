@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CachedFileManager () extends js.Object
 
-/** Lets apps manage real-time updates to files. */
+/* static members */
 @JSGlobal("Windows.Storage.CachedFileManager")
 @js.native
 object CachedFileManager extends js.Object {

@@ -75,9 +75,7 @@ object metaNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.Status = js.native
     }
     
-    /**
-      * Status is a return value for calls that don't return other objects.
-      */
+    /* static members */
     @js.native
     object Status extends js.Object {
       /**

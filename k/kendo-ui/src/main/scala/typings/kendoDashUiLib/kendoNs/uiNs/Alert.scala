@@ -14,6 +14,7 @@ class Alert protected () extends Dialog {
   var options_Alert: AlertOptions = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Alert")
 @js.native
 object Alert extends js.Object {

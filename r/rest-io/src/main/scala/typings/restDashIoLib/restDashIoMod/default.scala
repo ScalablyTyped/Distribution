@@ -12,6 +12,7 @@ class default protected () extends RestIO {
   def this(app: expressLib.expressMod.eNs.Application, config: IRestIOConfig) = this()
 }
 
+/* static members */
 @JSImport("rest-io", JSImport.Default)
 @js.native
 object default extends js.Object {

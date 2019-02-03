@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Launcher () extends js.Object
 
-/** Starts the default app associated with the specified file or URI. */
+/* static members */
 @JSGlobal("Windows.System.Launcher")
 @js.native
 object Launcher extends js.Object {

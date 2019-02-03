@@ -20,6 +20,7 @@ class ApplicationVersion protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticbeanstalk", "ApplicationVersion")
 @js.native
 object ApplicationVersion extends js.Object {

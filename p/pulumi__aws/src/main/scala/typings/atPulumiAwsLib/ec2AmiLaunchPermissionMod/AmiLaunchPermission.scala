@@ -28,6 +28,7 @@ class AmiLaunchPermission protected ()
   val imageId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/amiLaunchPermission", "AmiLaunchPermission")
 @js.native
 object AmiLaunchPermission extends js.Object {

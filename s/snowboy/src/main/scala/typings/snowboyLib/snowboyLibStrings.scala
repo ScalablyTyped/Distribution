@@ -18,9 +18,13 @@ object snowboyLibStrings {
   @js.native
   sealed trait sound extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def hotword: hotword = "hotword".asInstanceOf[hotword]
+  @scala.inline
   def silence: silence = "silence".asInstanceOf[silence]
+  @scala.inline
   def sound: sound = "sound".asInstanceOf[sound]
 }
 

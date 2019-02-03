@@ -19,6 +19,7 @@ abstract class RecyclingPagerAdapter ()
   def getViewTypeCount(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("com.jakewharton.salvage.RecyclingPagerAdapter")
 @js.native
 object RecyclingPagerAdapter extends js.Object {

@@ -17,6 +17,7 @@ class RendererEvent protected ()
   def createPageEvent(mapping: typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping): PageEvent = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/events", "RendererEvent")
 @js.native
 object RendererEvent extends js.Object {

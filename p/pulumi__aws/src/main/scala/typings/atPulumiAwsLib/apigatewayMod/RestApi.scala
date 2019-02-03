@@ -21,6 +21,7 @@ class RestApi protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayRestApiMod.RestApiArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "RestApi")
 @js.native
 object RestApi extends js.Object {

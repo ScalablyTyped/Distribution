@@ -12,6 +12,7 @@ class NgTableFilterConfigProvider protected ()
   def this($injector: angularLib.angularMod.angularNs.autoNs.IInjectorService) = this()
 }
 
+/* static members */
 @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider")
 @js.native
 object NgTableFilterConfigProvider extends js.Object {

@@ -20,6 +20,7 @@ class Configuration protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.mqConfigurationMod.ConfigurationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mq", "Configuration")
 @js.native
 object Configuration extends js.Object {

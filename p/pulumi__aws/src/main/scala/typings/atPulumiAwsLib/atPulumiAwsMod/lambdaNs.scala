@@ -120,6 +120,7 @@ object lambdaNs extends js.Object {
     args: atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.lambdaGetInvocationMod.GetInvocationResult] = js.native
+  /* static members */
   @js.native
   object Alias extends js.Object {
     /**
@@ -144,6 +145,7 @@ object lambdaNs extends js.Object {
     ): atPulumiAwsLib.lambdaAliasMod.Alias = js.native
   }
   
+  /* static members */
   @js.native
   object EventSourceMapping extends js.Object {
     /**
@@ -168,6 +170,7 @@ object lambdaNs extends js.Object {
     ): atPulumiAwsLib.lambdaEventSourceMappingMod.EventSourceMapping = js.native
   }
   
+  /* static members */
   @js.native
   object Function extends js.Object {
     /**
@@ -192,6 +195,7 @@ object lambdaNs extends js.Object {
     ): atPulumiAwsLib.lambdaLambdaMixinsMod.lambdaFunctionMod.Function = js.native
   }
   
+  /* static members */
   @js.native
   object LayerVersion extends js.Object {
     /**
@@ -216,6 +220,7 @@ object lambdaNs extends js.Object {
     ): atPulumiAwsLib.lambdaLayerVersionMod.LayerVersion = js.native
   }
   
+  /* static members */
   @js.native
   object Permission extends js.Object {
     /**

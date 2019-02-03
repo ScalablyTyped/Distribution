@@ -24,6 +24,7 @@ class Controller () extends EventDispatcher {
   def setListener(listener: Listener): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Controller")
 @js.native
 object Controller extends js.Object {

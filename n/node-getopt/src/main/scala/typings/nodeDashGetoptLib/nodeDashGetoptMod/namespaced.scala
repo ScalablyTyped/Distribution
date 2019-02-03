@@ -22,6 +22,7 @@ class namespaced protected () extends Getopt {
   def this(options: js.Array[_]) = this()
 }
 
+/* static members */
 @JSImport("node-getopt", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

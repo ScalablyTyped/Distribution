@@ -12,6 +12,7 @@ class Glob protected ()
   def this(text: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core", "Glob")
 @js.native
 object Glob extends js.Object {

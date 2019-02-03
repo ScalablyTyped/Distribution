@@ -12,6 +12,7 @@ class WebMercatorProjection ()
   def this(ellipsoid: cesiumLib.cesiumMod.CesiumNs.Ellipsoid) = this()
 }
 
+/* static members */
 @JSImport("cesium", "WebMercatorProjection")
 @js.native
 object WebMercatorProjection extends js.Object {

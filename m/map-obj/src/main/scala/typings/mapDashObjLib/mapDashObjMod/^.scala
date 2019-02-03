@@ -13,12 +13,16 @@ object ^ extends js.Object {
     mapper: mapDashObjLib.mapDashObjMod.mapObjNs.Mapper[O, T, _],
     options: mapDashObjLib.mapDashObjMod.mapObjNs.DeepOptions
   ): js.Object = js.native
-  def apply[O /* <: js.Object */, T /* <: java.lang.String */, U](source: O, mapper: mapDashObjLib.mapDashObjMod.mapObjNs.Mapper[O, T, U]): mapDashObjLib.mapDashObjLibStrings.namespaced with js.Any = js.native
+  def apply[O /* <: js.Object */, T /* <: java.lang.String */, U](source: O, mapper: mapDashObjLib.mapDashObjMod.mapObjNs.Mapper[O, T, U]): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in T ]: U}
+    */ mapDashObjLib.mapDashObjLibStrings.namespaced with js.Any = js.native
   def apply[O /* <: js.Object */, T /* <: java.lang.String */, U](
     source: O,
     mapper: mapDashObjLib.mapDashObjMod.mapObjNs.Mapper[O, T, U],
     options: mapDashObjLib.mapDashObjMod.mapObjNs.Options
-  ): mapDashObjLib.mapDashObjLibStrings.namespaced with js.Any = js.native
+  ): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in T ]: U}
+    */ mapDashObjLib.mapDashObjLibStrings.namespaced with js.Any = js.native
   def apply[O /* <: js.Object */, O2 /* <: js.Object */, T /* <: java.lang.String */, U](
     source: O,
     mapper: mapDashObjLib.mapDashObjMod.mapObjNs.Mapper[O, T, U],

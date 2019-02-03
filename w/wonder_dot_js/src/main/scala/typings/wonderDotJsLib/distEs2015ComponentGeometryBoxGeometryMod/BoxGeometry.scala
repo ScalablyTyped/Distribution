@@ -17,6 +17,7 @@ class BoxGeometry ()
   var widthSegments: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/geometry/BoxGeometry", "BoxGeometry")
 @js.native
 object BoxGeometry extends js.Object {

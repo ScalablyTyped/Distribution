@@ -19,9 +19,7 @@ class OculusTouchController protected ()
   def this(vrGamepad: js.Any) = this()
 }
 
-/**
-  * Oculus Touch Controller
-  */
+/* static members */
 @JSImport("babylonjs", "OculusTouchController")
 @js.native
 object OculusTouchController extends js.Object {

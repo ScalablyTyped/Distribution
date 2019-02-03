@@ -54,21 +54,37 @@ object reactDashNativeDashKeychainLibStrings {
   @js.native
   sealed trait UserPresence extends js.Object
   
+  @scala.inline
   def AccessibleAfterFirstUnlock: AccessibleAfterFirstUnlock = "AccessibleAfterFirstUnlock".asInstanceOf[AccessibleAfterFirstUnlock]
+  @scala.inline
   def AccessibleAfterFirstUnlockThisDeviceOnly: AccessibleAfterFirstUnlockThisDeviceOnly = "AccessibleAfterFirstUnlockThisDeviceOnly".asInstanceOf[AccessibleAfterFirstUnlockThisDeviceOnly]
+  @scala.inline
   def AccessibleAlways: AccessibleAlways = "AccessibleAlways".asInstanceOf[AccessibleAlways]
+  @scala.inline
   def AccessibleAlwaysThisDeviceOnly: AccessibleAlwaysThisDeviceOnly = "AccessibleAlwaysThisDeviceOnly".asInstanceOf[AccessibleAlwaysThisDeviceOnly]
+  @scala.inline
   def AccessibleWhenPasscodeSetThisDeviceOnly: AccessibleWhenPasscodeSetThisDeviceOnly = "AccessibleWhenPasscodeSetThisDeviceOnly".asInstanceOf[AccessibleWhenPasscodeSetThisDeviceOnly]
+  @scala.inline
   def AccessibleWhenUnlocked: AccessibleWhenUnlocked = "AccessibleWhenUnlocked".asInstanceOf[AccessibleWhenUnlocked]
+  @scala.inline
   def AccessibleWhenUnlockedThisDeviceOnly: AccessibleWhenUnlockedThisDeviceOnly = "AccessibleWhenUnlockedThisDeviceOnly".asInstanceOf[AccessibleWhenUnlockedThisDeviceOnly]
+  @scala.inline
   def ApplicationPassword: ApplicationPassword = "ApplicationPassword".asInstanceOf[ApplicationPassword]
+  @scala.inline
   def Authentication: Authentication = "Authentication".asInstanceOf[Authentication]
+  @scala.inline
   def AuthenticationWithBiometrics: AuthenticationWithBiometrics = "AuthenticationWithBiometrics".asInstanceOf[AuthenticationWithBiometrics]
+  @scala.inline
   def BiometryAny: BiometryAny = "BiometryAny".asInstanceOf[BiometryAny]
+  @scala.inline
   def BiometryAnyOrDevicePasscode: BiometryAnyOrDevicePasscode = "BiometryAnyOrDevicePasscode".asInstanceOf[BiometryAnyOrDevicePasscode]
+  @scala.inline
   def BiometryCurrentSet: BiometryCurrentSet = "BiometryCurrentSet".asInstanceOf[BiometryCurrentSet]
+  @scala.inline
   def BiometryCurrentSetOrDevicePasscode: BiometryCurrentSetOrDevicePasscode = "BiometryCurrentSetOrDevicePasscode".asInstanceOf[BiometryCurrentSetOrDevicePasscode]
+  @scala.inline
   def DevicePasscode: DevicePasscode = "DevicePasscode".asInstanceOf[DevicePasscode]
+  @scala.inline
   def UserPresence: UserPresence = "UserPresence".asInstanceOf[UserPresence]
 }
 

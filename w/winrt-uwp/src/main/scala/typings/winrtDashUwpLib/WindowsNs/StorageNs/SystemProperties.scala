@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SystemProperties () extends js.Object
 
-/** Provides string values for indexing names of common Windows file properties such as System.Title , and also references helper objects that provide indexing names for properties of specific file types (for example video files). */
+/* static members */
 @JSGlobal("Windows.Storage.SystemProperties")
 @js.native
 object SystemProperties extends js.Object {

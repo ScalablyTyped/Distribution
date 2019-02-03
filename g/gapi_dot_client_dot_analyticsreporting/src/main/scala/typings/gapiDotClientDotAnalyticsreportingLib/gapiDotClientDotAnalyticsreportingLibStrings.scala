@@ -12,7 +12,9 @@ object gapiDotClientDotAnalyticsreportingLibStrings {
   @js.native
   sealed trait v4 extends js.Object
   
+  @scala.inline
   def analyticsreporting: analyticsreporting = "analyticsreporting".asInstanceOf[analyticsreporting]
+  @scala.inline
   def v4: v4 = "v4".asInstanceOf[v4]
 }
 

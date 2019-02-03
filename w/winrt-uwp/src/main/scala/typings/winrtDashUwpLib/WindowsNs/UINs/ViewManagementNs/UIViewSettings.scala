@@ -13,7 +13,7 @@ abstract class UIViewSettings () extends js.Object {
   var userInteractionMode: UserInteractionMode = js.native
 }
 
-/** Represents UI states and behaviors associated with the device mode (Tablet or Desktop) and input device type. */
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.UIViewSettings")
 @js.native
 object UIViewSettings extends js.Object {

@@ -67,6 +67,7 @@ class BlockSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.BlockSyntax")
 @js.native
 object BlockSyntax extends js.Object {

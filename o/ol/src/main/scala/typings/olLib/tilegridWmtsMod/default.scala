@@ -28,14 +28,7 @@ class default protected ()
   def this(options: openlayersLib.openlayersMod.olxNs.tilegridNs.WMTSOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Set the grid pattern for sources accessing WMTS tiled-image servers.
-  *
-  * @param options WMTS options.
-  * @struct
-  * @api
-  */
+/* static members */
 @JSImport("ol/tilegrid/wmts", JSImport.Default)
 @js.native
 object default extends js.Object {

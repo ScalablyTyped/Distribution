@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Transport ()
   extends sipDotJsLib.typesWebTransportMod.Transport
 
+/* static members */
 @JSImport("sip.js/types/Web", "Transport")
 @js.native
 object Transport extends js.Object {

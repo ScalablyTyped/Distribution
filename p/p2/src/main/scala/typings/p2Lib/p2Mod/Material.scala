@@ -14,6 +14,7 @@ class Material protected ()
   override var id: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("p2", "Material")
 @js.native
 object Material extends js.Object {

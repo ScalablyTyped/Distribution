@@ -12,6 +12,7 @@ class EnumDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, enumKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, identifier: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, enumElements: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "EnumDeclarationSyntax")
 @js.native
 object EnumDeclarationSyntax extends js.Object {

@@ -18,7 +18,7 @@ class MediaEncodingProfile () extends js.Object {
   var video: VideoEncodingProperties = js.native
 }
 
-/** Describes the encoding profile for an audio or video file. The encoding profile includes descriptions of the audio and video encoding formats, and a description of the media container. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.MediaEncodingProfile")
 @js.native
 object MediaEncodingProfile extends js.Object {

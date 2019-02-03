@@ -50,6 +50,7 @@ class FrisbySpec protected () extends js.Object {
   def use(fn: js.Function1[/* repeated */ js.Any, scala.Unit]): FrisbySpec = js.native
 }
 
+/* static members */
 @JSImport("frisby", "FrisbySpec")
 @js.native
 object FrisbySpec extends js.Object {

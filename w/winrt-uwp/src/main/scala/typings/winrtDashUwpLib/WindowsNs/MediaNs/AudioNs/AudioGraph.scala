@@ -168,7 +168,7 @@ abstract class AudioGraph () extends js.Object {
   def stop(): scala.Unit = js.native
 }
 
-/** Represents an audio graph of connected input, output, and submix nodes that manipulate and route audio. */
+/* static members */
 @JSGlobal("Windows.Media.Audio.AudioGraph")
 @js.native
 object AudioGraph extends js.Object {

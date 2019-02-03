@@ -15,8 +15,11 @@ object meteorDashUniverseDashI18nLibStrings {
   @js.native
   sealed trait nativeNames extends js.Object
   
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def nativeNames: nativeNames = "nativeNames".asInstanceOf[nativeNames]
 }
 

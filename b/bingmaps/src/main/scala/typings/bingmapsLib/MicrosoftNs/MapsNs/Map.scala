@@ -167,6 +167,7 @@ class Map protected () extends js.Object {
   def tryPixelToLocation(point: js.Array[Point], reference: js.Any): Location | js.Array[Location] = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.Maps.Map")
 @js.native
 object Map extends js.Object {

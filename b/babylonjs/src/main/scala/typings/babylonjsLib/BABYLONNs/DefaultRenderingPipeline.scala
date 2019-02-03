@@ -204,10 +204,7 @@ class DefaultRenderingPipeline ()
   def serialize(): js.Any = js.native
 }
 
-/**
-  * The default rendering pipeline can be added to a scene to apply common post processing effects such as anti-aliasing or depth of field.
-  * See https://doc.babylonjs.com/how_to/using_default_rendering_pipeline
-  */
+/* static members */
 @JSGlobal("BABYLON.DefaultRenderingPipeline")
 @js.native
 object DefaultRenderingPipeline extends js.Object {

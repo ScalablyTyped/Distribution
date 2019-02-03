@@ -30,7 +30,7 @@ abstract class SystemNavigationManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides a way for an app to respond to system provided back-navigation events. */
+/* static members */
 @JSGlobal("Windows.UI.Core.SystemNavigationManager")
 @js.native
 object SystemNavigationManager extends js.Object {

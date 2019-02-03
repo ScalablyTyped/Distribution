@@ -110,6 +110,7 @@ class Network () extends js.Object {
   def worker(memory: js.Any, set: js.Any, options: js.Any): stdLib.Worker = js.native
 }
 
+/* static members */
 @JSImport("synaptic", "Network")
 @js.native
 object Network extends js.Object {

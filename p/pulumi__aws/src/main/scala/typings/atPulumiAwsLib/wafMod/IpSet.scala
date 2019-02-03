@@ -21,6 +21,7 @@ class IpSet protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafIpSetMod.IpSetArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf", "IpSet")
 @js.native
 object IpSet extends js.Object {

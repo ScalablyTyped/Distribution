@@ -20,6 +20,7 @@ class ConditionalForwader protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.directoryserviceConditionalForwaderMod.ConditionalForwaderArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directoryservice", "ConditionalForwader")
 @js.native
 object ConditionalForwader extends js.Object {

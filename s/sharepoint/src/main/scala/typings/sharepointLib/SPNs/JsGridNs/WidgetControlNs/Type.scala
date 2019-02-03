@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Type () extends js.Object
 
+/* static members */
 @JSGlobal("SP.JsGrid.WidgetControl.Type")
 @js.native
 object Type extends js.Object {

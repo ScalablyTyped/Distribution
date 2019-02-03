@@ -29,6 +29,7 @@ class LocalBaseBlock ()
   override def toJSON(): asn1jsLib.asn1jsMod.Asn1jsNs.JsonLocalBaseBlock = js.native
 }
 
+/* static members */
 @JSImport("asn1js", "LocalBaseBlock")
 @js.native
 object LocalBaseBlock extends js.Object {

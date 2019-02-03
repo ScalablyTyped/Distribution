@@ -16,11 +16,13 @@ object menuNs extends js.Object {
   class MDCMenuFoundation ()
     extends atMaterialMenuLib.atMaterialMenuMod.MDCMenuFoundation
   
+  /* static members */
   @js.native
   object MDCMenu extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialMenuLib.atMaterialMenuMod.MDCMenu = js.native
   }
   
+  /* static members */
   @js.native
   object MDCMenuFoundation extends js.Object {
     val Corner: atMaterialMenuLib.constantsMod.Corner = js.native

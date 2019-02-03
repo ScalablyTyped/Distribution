@@ -14,6 +14,7 @@ class Rejection protected ()
   def this(`type`: scala.Double, message: java.lang.String, detail: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/transition", "Rejection")
 @js.native
 object Rejection extends js.Object {

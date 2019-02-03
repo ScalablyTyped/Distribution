@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Media () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Media")
 @js.native
 object Media extends js.Object {

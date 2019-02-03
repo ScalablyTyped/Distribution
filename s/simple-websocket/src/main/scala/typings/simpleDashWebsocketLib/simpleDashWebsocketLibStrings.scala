@@ -18,9 +18,13 @@ object simpleDashWebsocketLibStrings {
   @js.native
   sealed trait listening extends js.Object
   
+  @scala.inline
   def connection: connection = "connection".asInstanceOf[connection]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def headers: headers = "headers".asInstanceOf[headers]
+  @scala.inline
   def listening: listening = "listening".asInstanceOf[listening]
 }
 

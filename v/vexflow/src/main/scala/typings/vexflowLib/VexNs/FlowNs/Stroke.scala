@@ -12,6 +12,7 @@ class Stroke protected () extends Modifier {
   def addEndNote(note: Note): Stroke = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Stroke")
 @js.native
 object Stroke extends js.Object {

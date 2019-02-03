@@ -13,7 +13,7 @@ class ProfileLoader ()
   def getUserProfile(): UserProfile = js.native
 }
 
-/** Provides an alternate entry point to user profiles rather than calling methods directly. */
+/* static members */
 @JSGlobal("SP.UserProfiles.ProfileLoader")
 @js.native
 object ProfileLoader extends js.Object {

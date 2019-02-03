@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Sleeping ()
   extends matterDashJsLib.matterDashJsMod.MatterNs.Sleeping
 
+/* static members */
 @JSImport("matter-js", "Sleeping")
 @js.native
 object Sleeping extends js.Object {

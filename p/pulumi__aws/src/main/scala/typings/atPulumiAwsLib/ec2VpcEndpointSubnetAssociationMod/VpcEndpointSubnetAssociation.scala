@@ -28,6 +28,7 @@ class VpcEndpointSubnetAssociation protected ()
   val vpcEndpointId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcEndpointSubnetAssociation", "VpcEndpointSubnetAssociation")
 @js.native
 object VpcEndpointSubnetAssociation extends js.Object {

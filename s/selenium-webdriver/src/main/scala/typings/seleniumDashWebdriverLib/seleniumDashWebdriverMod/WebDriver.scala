@@ -476,6 +476,7 @@ class WebDriver protected () extends js.Object {
   def wait[T](condition: Condition[T], opt_timeout: scala.Double, opt_message: java.lang.String): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
 }
 
+/* static members */
 @JSImport("selenium-webdriver", "WebDriver")
 @js.native
 object WebDriver extends js.Object {

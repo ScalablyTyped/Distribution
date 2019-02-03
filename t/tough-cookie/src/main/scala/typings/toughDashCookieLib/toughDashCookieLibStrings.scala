@@ -12,7 +12,9 @@ object toughDashCookieLibStrings {
   @js.native
   sealed trait Infinity extends js.Object
   
+  @scala.inline
   def `-Infinity`: `-Infinity` = "-Infinity".asInstanceOf[`-Infinity`]
+  @scala.inline
   def Infinity: Infinity = "Infinity".asInstanceOf[Infinity]
 }
 

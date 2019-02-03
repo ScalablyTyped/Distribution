@@ -26,6 +26,7 @@ class Surface protected () extends js.Object {
   def unlockCanvasAndPost(canvas: androiduixLib.androidNs.graphicsNs.Canvas): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.Surface")
 @js.native
 object Surface extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Converter ()
   extends typedocLib.distLibConverterConverterMod.Converter
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter", "Converter")
 @js.native
 object Converter extends js.Object {

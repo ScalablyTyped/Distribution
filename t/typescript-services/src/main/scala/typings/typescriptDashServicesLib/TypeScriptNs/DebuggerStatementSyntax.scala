@@ -64,6 +64,7 @@ class DebuggerStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.DebuggerStatementSyntax")
 @js.native
 object DebuggerStatementSyntax extends js.Object {

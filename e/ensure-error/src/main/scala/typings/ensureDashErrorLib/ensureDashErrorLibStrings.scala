@@ -9,6 +9,7 @@ object ensureDashErrorLibStrings {
   @js.native
   sealed trait NonError extends js.Object
   
+  @scala.inline
   def NonError: NonError = "NonError".asInstanceOf[NonError]
 }
 

@@ -20,6 +20,7 @@ class Collapsible () extends Component[CollapsibleOptions] {
   def open(n: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Collapsible")
 @js.native
 object Collapsible extends js.Object {

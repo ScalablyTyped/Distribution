@@ -30,13 +30,21 @@ object mailparserLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def attachment: attachment = "attachment".asInstanceOf[attachment]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def headers: headers = "headers".asInstanceOf[headers]
+  @scala.inline
   def high: high = "high".asInstanceOf[high]
+  @scala.inline
   def low: low = "low".asInstanceOf[low]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

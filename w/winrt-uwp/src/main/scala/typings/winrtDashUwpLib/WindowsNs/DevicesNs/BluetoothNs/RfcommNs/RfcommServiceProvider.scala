@@ -31,7 +31,7 @@ abstract class RfcommServiceProvider () extends js.Object {
   def stopAdvertising(): scala.Unit = js.native
 }
 
-/** Represents an instance of a local RFCOMM service. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.Rfcomm.RfcommServiceProvider")
 @js.native
 object RfcommServiceProvider extends js.Object {

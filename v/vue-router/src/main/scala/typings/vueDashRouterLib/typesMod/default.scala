@@ -12,6 +12,7 @@ class default ()
   def this(options: vueDashRouterLib.typesRouterMod.RouterOptions) = this()
 }
 
+/* static members */
 @JSImport("vue-router/types", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -21,6 +21,7 @@ class User protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.iamUserMod.UserArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam", "User")
 @js.native
 object User extends js.Object {

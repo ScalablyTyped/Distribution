@@ -12,6 +12,7 @@ class ThemeProvider ()
   def getChildContext(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("react-themeable-ts/build-es5/theme-provider", "ThemeProvider")
 @js.native
 object ThemeProvider extends js.Object {

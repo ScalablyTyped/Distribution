@@ -127,6 +127,7 @@ class Function protected ()
   val vpcConfig: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_SecurityGroupIdsSubnetIdsVpcIdArray]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lambda/function", "Function")
 @js.native
 object Function extends js.Object {

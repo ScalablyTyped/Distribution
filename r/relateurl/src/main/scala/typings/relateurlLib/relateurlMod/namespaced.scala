@@ -12,6 +12,7 @@ class namespaced protected () extends RelateUrl {
   def this(from: java.lang.String, options: relateurlLib.relateurlMod.RelateUrlNs.Options) = this()
 }
 
+/* static members */
 @JSImport("relateurl", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

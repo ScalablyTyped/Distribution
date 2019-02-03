@@ -13,6 +13,7 @@ class EntityManager ()
   def this(config: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("breeze", "EntityManager")
 @js.native
 object EntityManager extends js.Object {

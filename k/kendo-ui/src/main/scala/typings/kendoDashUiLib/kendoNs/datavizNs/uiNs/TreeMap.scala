@@ -17,6 +17,7 @@ class TreeMap protected ()
   var wrapper: kendoDashUiLib.JQuery = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.TreeMap")
 @js.native
 object TreeMap extends js.Object {

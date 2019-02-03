@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends rmcDashFeedbackLib.libTouchFeedbackMod.default
 
+/* static members */
 @JSImport("rmc-feedback", "default")
 @js.native
 object default extends js.Object {

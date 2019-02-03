@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SocketError () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.SocketError")
 @js.native
 object SocketError extends js.Object {

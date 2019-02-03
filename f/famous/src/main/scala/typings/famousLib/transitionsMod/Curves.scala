@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Curves () extends js.Object
 
+/* static members */
 @JSImport("famous/transitions", "Curves")
 @js.native
 object Curves extends js.Object {

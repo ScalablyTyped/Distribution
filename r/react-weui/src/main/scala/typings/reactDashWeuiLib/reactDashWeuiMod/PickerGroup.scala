@@ -19,6 +19,7 @@ class PickerGroup protected () extends js.Object {
   def updateSelected(args: js.Any*): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "PickerGroup")
 @js.native
 object PickerGroup extends js.Object {

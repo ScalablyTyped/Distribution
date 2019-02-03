@@ -65,6 +65,7 @@ class Period ()
   override def years(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "Period")
 @js.native
 object Period extends js.Object {

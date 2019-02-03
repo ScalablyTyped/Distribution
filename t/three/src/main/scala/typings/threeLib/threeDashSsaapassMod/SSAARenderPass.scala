@@ -30,6 +30,7 @@ class SSAARenderPass protected ()
   def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-ssaapass", "SSAARenderPass")
 @js.native
 object SSAARenderPass extends js.Object {

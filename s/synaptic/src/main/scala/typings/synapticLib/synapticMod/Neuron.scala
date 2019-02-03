@@ -75,6 +75,7 @@ class Neuron () extends js.Object {
   def squash(x: scala.Double, derivate: scala.Boolean): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("synaptic", "Neuron")
 @js.native
 object Neuron extends js.Object {

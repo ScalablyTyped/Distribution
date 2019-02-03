@@ -35,6 +35,7 @@ class DrawableContainer ()
   override def unscheduleDrawable(who: Drawable, what: androiduixLib.javaNs.langNs.Runnable): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.drawable.DrawableContainer")
 @js.native
 object DrawableContainer extends js.Object {

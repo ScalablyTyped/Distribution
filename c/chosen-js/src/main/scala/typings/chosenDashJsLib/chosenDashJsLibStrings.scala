@@ -39,16 +39,27 @@ object chosenDashJsLibStrings {
   @js.native
   sealed trait destroy extends js.Object
   
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def `chosen:activate`: `chosen:activate` = "chosen:activate".asInstanceOf[`chosen:activate`]
+  @scala.inline
   def `chosen:close`: `chosen:close` = "chosen:close".asInstanceOf[`chosen:close`]
+  @scala.inline
   def `chosen:hiding_dropdown`: `chosen:hiding_dropdown` = "chosen:hiding_dropdown".asInstanceOf[`chosen:hiding_dropdown`]
+  @scala.inline
   def `chosen:maxselected`: `chosen:maxselected` = "chosen:maxselected".asInstanceOf[`chosen:maxselected`]
+  @scala.inline
   def `chosen:no_results`: `chosen:no_results` = "chosen:no_results".asInstanceOf[`chosen:no_results`]
+  @scala.inline
   def `chosen:open`: `chosen:open` = "chosen:open".asInstanceOf[`chosen:open`]
+  @scala.inline
   def `chosen:ready`: `chosen:ready` = "chosen:ready".asInstanceOf[`chosen:ready`]
+  @scala.inline
   def `chosen:showing_dropdown`: `chosen:showing_dropdown` = "chosen:showing_dropdown".asInstanceOf[`chosen:showing_dropdown`]
+  @scala.inline
   def `chosen:updated`: `chosen:updated` = "chosen:updated".asInstanceOf[`chosen:updated`]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
 }
 

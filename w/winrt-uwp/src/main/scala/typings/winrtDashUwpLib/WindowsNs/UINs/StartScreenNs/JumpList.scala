@@ -20,7 +20,7 @@ abstract class JumpList () extends js.Object {
   def saveAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Provides functionality for selecting the type of system-managed jump list that is used by an app, adding custom task entry points to an app's jump list, and adding custom groups to an app's jump list. A jump list consists of an optional system-provided list of items, as well as optional app-provided items. Not all device families support jump lists. */
+/* static members */
 @JSGlobal("Windows.UI.StartScreen.JumpList")
 @js.native
 object JumpList extends js.Object {

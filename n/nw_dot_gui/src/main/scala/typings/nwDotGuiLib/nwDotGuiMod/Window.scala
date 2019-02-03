@@ -62,6 +62,7 @@ class Window () extends EventEmitter {
   def unmaximize(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("nw.gui", "Window")
 @js.native
 object Window extends js.Object {

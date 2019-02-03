@@ -18,9 +18,13 @@ object stormDashReactDashDiagramsLibStrings {
   @js.native
   sealed trait port extends js.Object
   
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def node: node = "node".asInstanceOf[node]
+  @scala.inline
   def point: point = "point".asInstanceOf[point]
+  @scala.inline
   def port: port = "port".asInstanceOf[port]
 }
 

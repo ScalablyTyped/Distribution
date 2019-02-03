@@ -65,6 +65,7 @@ class Fleet protected ()
   val runtimeConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_GameSessionActivationTimeoutSeconds]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/gamelift/fleet", "Fleet")
 @js.native
 object Fleet extends js.Object {

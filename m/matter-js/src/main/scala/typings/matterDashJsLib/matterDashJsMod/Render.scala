@@ -72,6 +72,7 @@ class Render ()
   override var textures: js.Any = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Render")
 @js.native
 object Render extends js.Object {

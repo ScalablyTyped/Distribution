@@ -20,6 +20,7 @@ class StateMachine protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sfnStateMachineMod.StateMachineArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sfn", "StateMachine")
 @js.native
 object StateMachine extends js.Object {

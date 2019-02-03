@@ -15,6 +15,7 @@ class ExtrudeBufferGeometry protected ()
   def this(shapes: threeLib.threeDashCoreMod.Shape, options: threeLib.threeDashCoreMod.ExtrudeGeometryOptions) = this()
 }
 
+/* static members */
 @JSImport("three", "ExtrudeBufferGeometry")
 @js.native
 object ExtrudeBufferGeometry extends js.Object {

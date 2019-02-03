@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScriptElementKind () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.ScriptElementKind")
 @js.native
 object ScriptElementKind extends js.Object {

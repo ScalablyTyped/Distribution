@@ -57,6 +57,7 @@ class ComputeEnvironment protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment")
 @js.native
 object ComputeEnvironment extends js.Object {

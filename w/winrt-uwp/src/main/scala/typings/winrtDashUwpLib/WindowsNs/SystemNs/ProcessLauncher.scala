@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ProcessLauncher () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.ProcessLauncher")
 @js.native
 object ProcessLauncher extends js.Object {

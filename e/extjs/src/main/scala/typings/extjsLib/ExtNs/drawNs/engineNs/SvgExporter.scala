@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SvgExporter () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.draw.engine.SvgExporter")
 @js.native
 object SvgExporter extends js.Object {

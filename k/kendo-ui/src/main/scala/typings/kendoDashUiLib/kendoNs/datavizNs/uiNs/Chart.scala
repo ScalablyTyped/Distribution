@@ -43,6 +43,7 @@ class Chart protected ()
   def toggleHighlight(show: scala.Boolean, options: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.Chart")
 @js.native
 object Chart extends js.Object {

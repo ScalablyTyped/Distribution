@@ -12,7 +12,9 @@ object gapiDotClientDotScriptLibStrings {
   @js.native
   sealed trait v1 extends js.Object
   
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
 }
 

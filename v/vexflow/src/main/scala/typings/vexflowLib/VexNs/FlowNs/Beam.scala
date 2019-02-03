@@ -26,6 +26,7 @@ class Beam protected () extends js.Object {
   def setContext(context: vexflowLib.VexNs.IRenderContext): Beam = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Beam")
 @js.native
 object Beam extends js.Object {

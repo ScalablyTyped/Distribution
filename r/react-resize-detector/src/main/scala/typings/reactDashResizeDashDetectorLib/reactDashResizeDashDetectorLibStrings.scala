@@ -12,7 +12,9 @@ object reactDashResizeDashDetectorLibStrings {
   @js.native
   sealed trait throttle extends js.Object
   
+  @scala.inline
   def debounce: debounce = "debounce".asInstanceOf[debounce]
+  @scala.inline
   def throttle: throttle = "throttle".asInstanceOf[throttle]
 }
 

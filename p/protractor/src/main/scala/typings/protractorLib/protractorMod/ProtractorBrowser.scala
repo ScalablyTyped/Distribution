@@ -19,6 +19,7 @@ class ProtractorBrowser protected ()
   def this(webdriverInstance: seleniumDashWebdriverLib.seleniumDashWebdriverMod.WebDriver, opt_baseUrl: java.lang.String, opt_rootElement: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[java.lang.String], opt_untrackOutstandingTimeouts: scala.Boolean, opt_blockingProxyUrl: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("protractor", "ProtractorBrowser")
 @js.native
 object ProtractorBrowser extends js.Object {

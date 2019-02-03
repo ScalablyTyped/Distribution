@@ -16,6 +16,7 @@ class Button protected () extends Widget {
   def enable(toggle: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Button")
 @js.native
 object Button extends js.Object {

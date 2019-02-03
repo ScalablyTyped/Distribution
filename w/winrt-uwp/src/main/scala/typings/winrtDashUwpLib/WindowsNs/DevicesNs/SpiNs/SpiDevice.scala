@@ -39,7 +39,7 @@ abstract class SpiDevice () extends js.Object {
   def write(buffer: js.Array[scala.Double]): scala.Unit = js.native
 }
 
-/** Represents a device connected through the SPI bus. */
+/* static members */
 @JSGlobal("Windows.Devices.Spi.SpiDevice")
 @js.native
 object SpiDevice extends js.Object {

@@ -15,6 +15,7 @@ class Parser () extends js.Object {
   def parse(expression: java.lang.String): Expression = js.native
 }
 
+/* static members */
 @JSImport("expr-eval", "Parser")
 @js.native
 object Parser extends js.Object {

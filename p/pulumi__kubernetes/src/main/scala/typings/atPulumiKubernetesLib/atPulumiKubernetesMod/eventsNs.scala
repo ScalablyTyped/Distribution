@@ -48,10 +48,7 @@ object eventsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.eventsNs.v1beta1Ns.EventList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * Event is a report of an event somewhere in the cluster. It generally denotes some state
-      * change in the system.
-      */
+    /* static members */
     @js.native
     object Event extends js.Object {
       /**
@@ -74,9 +71,7 @@ object eventsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
     }
     
-    /**
-      * EventList is a list of Event objects.
-      */
+    /* static members */
     @js.native
     object EventList extends js.Object {
       /**

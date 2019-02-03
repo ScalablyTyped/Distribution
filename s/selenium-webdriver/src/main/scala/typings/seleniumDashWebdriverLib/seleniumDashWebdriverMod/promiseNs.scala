@@ -632,35 +632,7 @@ object promiseNs extends js.Object {
     opt_callback: js.Function1[/* value */ T, _],
     opt_errback: js.Function1[/* error */ js.Any, _]
   ): Promise[_] = js.native
-  /**
-    * Handles the execution of scheduled tasks, each of which may be an
-    * asynchronous operation. The control flow will ensure tasks are executed in
-    * the ordered scheduled, starting each task only once those before it have
-    * completed.
-    *
-    * Each task scheduled within this flow may return a
-    * {@link promise.Promise} to indicate it is an asynchronous
-    * operation. The ControlFlow will wait for such promises to be resolved before
-    * marking the task as completed.
-    *
-    * Tasks and each callback registered on a {@link promise.Promise}
-    * will be run in their own ControlFlow frame.  Any tasks scheduled within a
-    * frame will take priority over previously scheduled tasks. Furthermore, if any
-    * of the tasks in the frame fail, the remainder of the tasks in that frame will
-    * be discarded and the failure will be propagated to the user through the
-    * callback/task's promised result.
-    *
-    * Each time a ControlFlow empties its task queue, it will fire an
-    * {@link promise.ControlFlow.EventType.IDLE IDLE} event. Conversely,
-    * whenever the flow terminates due to an unhandled error, it will remove all
-    * remaining tasks in its queue and fire an
-    * {@link promise.ControlFlow.EventType.UNCAUGHT_EXCEPTION
-    * UNCAUGHT_EXCEPTION} event. If there are no listeners registered with the
-    * flow, the error will be rethrown to the global error handler.
-    *
-    * @extends {EventEmitter}
-    * @final
-    */
+  /* static members */
   @js.native
   object ControlFlow extends js.Object {
     /**
@@ -670,35 +642,14 @@ object promiseNs extends js.Object {
     var EventType: seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.IEventType = js.native
   }
   
-  /**
-    * Represents a value that will be resolved at some point in the future. This
-    * class represents the protected 'producer' half of a Promise - each Deferred
-    * has a {@code promise} property that may be returned to consumers for
-    * registering callbacks, reserving the ability to resolve the deferred to the
-    * producer.
-    *
-    * <p>If this Deferred is rejected and there are no listeners registered before
-    * the next turn of the event loop, the rejection will be passed to the
-    * {@link promise.ControlFlow} as an unhandled failure.
-    *
-    */
+  /* static members */
   @js.native
   object Deferred extends js.Object {
     // endregion
     var `State_`: seleniumDashWebdriverLib.Anon_BLOCKED = js.native
   }
   
-  /**
-    * Represents the eventual value of a completed operation. Each promise may be
-    * in one of three states: pending, fulfilled, or rejected. Each promise starts
-    * in the pending state and may make a single transition to either a
-    * fulfilled or rejected state, at which point the promise is considered
-    * resolved.
-    *
-    * @implements {promise.Thenable<T>}
-    * @template T
-    * @see http://promises-aplus.github.io/promises-spec/
-    */
+  /* static members */
   @js.native
   object Promise extends js.Object {
     /**
@@ -720,13 +671,7 @@ object promiseNs extends js.Object {
     def resolve[T](opt_value: T): seleniumDashWebdriverLib.seleniumDashWebdriverMod.promiseNs.Promise[T] = js.native
   }
   
-  /**
-    * Thenable is a promise-like object with a {@code then} method which may be
-    * used to schedule callbacks on a promised value.
-    *
-    * @interface
-    * @template T
-    */
+  /* static members */
   @js.native
   object Thenable extends js.Object {
     /**

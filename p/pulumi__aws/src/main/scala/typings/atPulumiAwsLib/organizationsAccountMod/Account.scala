@@ -43,6 +43,7 @@ class Account protected ()
   val status: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/organizations/account", "Account")
 @js.native
 object Account extends js.Object {

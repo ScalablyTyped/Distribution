@@ -39,6 +39,7 @@ class namespaced protected () extends Filter {
   override def toObject(): bloomDashFilterLib.bloomDashFilterMod.FilterNs.FilterOptions = js.native
 }
 
+/* static members */
 @JSImport("bloom-filter", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

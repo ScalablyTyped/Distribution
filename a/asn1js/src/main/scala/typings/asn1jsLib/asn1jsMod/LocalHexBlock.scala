@@ -12,6 +12,7 @@ class LocalHexBlock protected ()
   def this(params: js.Any) = this()
 }
 
+/* static members */
 @JSImport("asn1js", "LocalHexBlock")
 @js.native
 object LocalHexBlock extends js.Object {

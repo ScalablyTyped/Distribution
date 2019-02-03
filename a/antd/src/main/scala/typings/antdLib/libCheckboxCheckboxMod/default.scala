@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Checkbox
 
+/* static members */
 @JSImport("antd/lib/checkbox/Checkbox", JSImport.Default)
 @js.native
 object default extends js.Object {

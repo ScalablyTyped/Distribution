@@ -33,14 +33,23 @@ object ravenDashJsLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def critical: critical = "critical".asInstanceOf[critical]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def http: http = "http".asInstanceOf[http]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def navigation: navigation = "navigation".asInstanceOf[navigation]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

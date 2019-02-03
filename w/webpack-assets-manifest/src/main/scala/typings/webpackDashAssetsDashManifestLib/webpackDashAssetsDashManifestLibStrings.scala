@@ -9,6 +9,7 @@ object webpackDashAssetsDashManifestLibStrings {
   @js.native
   sealed trait customize extends js.Object
   
+  @scala.inline
   def customize: customize = "customize".asInstanceOf[customize]
 }
 

@@ -185,6 +185,7 @@ object authNs extends js.Object {
     var Persistence: firebaseLib.Anon_LOCAL = js.native
   }
   
+  /* static members */
   @js.native
   object EmailAuthProvider extends js.Object {
     var EMAIL_LINK_SIGN_IN_METHOD: java.lang.String = js.native
@@ -194,6 +195,7 @@ object authNs extends js.Object {
     def credentialWithLink(email: java.lang.String, emailLink: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
   
+  /* static members */
   @js.native
   object FacebookAuthProvider extends js.Object {
     var FACEBOOK_SIGN_IN_METHOD: java.lang.String = js.native
@@ -201,6 +203,7 @@ object authNs extends js.Object {
     def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
   
+  /* static members */
   @js.native
   object GithubAuthProvider extends js.Object {
     var GITHUB_SIGN_IN_METHOD: java.lang.String = js.native
@@ -208,6 +211,7 @@ object authNs extends js.Object {
     def credential(token: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
   
+  /* static members */
   @js.native
   object GoogleAuthProvider extends js.Object {
     var GOOGLE_SIGN_IN_METHOD: java.lang.String = js.native
@@ -218,6 +222,7 @@ object authNs extends js.Object {
     def credential(idToken: scala.Null, accessToken: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
   
+  /* static members */
   @js.native
   object PhoneAuthProvider extends js.Object {
     var PHONE_SIGN_IN_METHOD: java.lang.String = js.native
@@ -225,6 +230,7 @@ object authNs extends js.Object {
     def credential(verificationId: java.lang.String, verificationCode: java.lang.String): firebaseLib.firebaseMod.firebaseNs.authNs.AuthCredential = js.native
   }
   
+  /* static members */
   @js.native
   object TwitterAuthProvider extends js.Object {
     var PROVIDER_ID: java.lang.String = js.native

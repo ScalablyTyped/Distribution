@@ -32,12 +32,14 @@ class default () extends Default {
   def this(startInput: js.Any, endInput: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/UnzonedRange", "Default")
 @js.native
 object Default extends js.Object {
   def invertRanges(ranges: js.Any, constraintRange: js.Any): js.Array[_] = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/UnzonedRange", JSImport.Default)
 @js.native
 object default extends js.Object {

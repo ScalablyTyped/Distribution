@@ -23,6 +23,7 @@ class TimeStruct protected ()
   def this(unixMillis: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("timezonecomplete", "TimeStruct")
 @js.native
 object TimeStruct extends js.Object {

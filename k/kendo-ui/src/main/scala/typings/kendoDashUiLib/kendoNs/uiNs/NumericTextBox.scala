@@ -30,6 +30,7 @@ class NumericTextBox protected () extends Widget {
   def value(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.NumericTextBox")
 @js.native
 object NumericTextBox extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tag ()
   extends nodegitLib.tagMod.Tag
 
+/* static members */
 @JSImport("nodegit", "Tag")
 @js.native
 object Tag extends js.Object {

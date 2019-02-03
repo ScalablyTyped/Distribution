@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScriptUtility () extends js.Object
 
+/* static members */
 @JSGlobal("SP.ScriptUtility")
 @js.native
 object ScriptUtility extends js.Object {

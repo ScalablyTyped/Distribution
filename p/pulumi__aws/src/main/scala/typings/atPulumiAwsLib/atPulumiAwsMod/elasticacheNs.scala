@@ -89,6 +89,7 @@ object elasticacheNs extends js.Object {
     args: atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.elasticacheGetReplicationGroupMod.GetReplicationGroupResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -113,6 +114,7 @@ object elasticacheNs extends js.Object {
     ): atPulumiAwsLib.elasticacheClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object ParameterGroup extends js.Object {
     /**
@@ -137,6 +139,7 @@ object elasticacheNs extends js.Object {
     ): atPulumiAwsLib.elasticacheParameterGroupMod.ParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ReplicationGroup extends js.Object {
     /**
@@ -161,6 +164,7 @@ object elasticacheNs extends js.Object {
     ): atPulumiAwsLib.elasticacheReplicationGroupMod.ReplicationGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityGroup extends js.Object {
     /**
@@ -185,6 +189,7 @@ object elasticacheNs extends js.Object {
     ): atPulumiAwsLib.elasticacheSecurityGroupMod.SecurityGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

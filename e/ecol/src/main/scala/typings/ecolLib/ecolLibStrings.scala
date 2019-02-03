@@ -15,8 +15,11 @@ object ecolLibStrings {
   @js.native
   sealed trait refresh extends js.Object
   
+  @scala.inline
   def erase: erase = "erase".asInstanceOf[erase]
+  @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
+  @scala.inline
   def refresh: refresh = "refresh".asInstanceOf[refresh]
 }
 

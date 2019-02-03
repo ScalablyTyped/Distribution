@@ -45,9 +45,7 @@ class SubEmitter protected () extends js.Object {
   def serialize(): js.Any = js.native
 }
 
-/**
-  * Sub emitter class used to emit particles from an existing particle
-  */
+/* static members */
 @JSGlobal("BABYLON.SubEmitter")
 @js.native
 object SubEmitter extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StorageApplicationPermissions () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Storage.AccessCache.StorageApplicationPermissions")
 @js.native
 object StorageApplicationPermissions extends js.Object {

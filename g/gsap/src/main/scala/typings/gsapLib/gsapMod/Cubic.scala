@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Cubic ()
   extends gsapLib.gsapNs.Cubic
 
+/* static members */
 @JSImport("gsap", "Cubic")
 @js.native
 object Cubic extends js.Object {

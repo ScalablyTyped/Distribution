@@ -160,7 +160,7 @@ abstract class PerceptionDepthFrameSource () extends js.Object {
   def trySetVideoProfileAsync(controlSession: PerceptionControlSession, profile: PerceptionVideoProfile): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[PerceptionFrameSourcePropertyChangeResult] = js.native
 }
 
-/** A frame source that provides depth frames. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.PerceptionDepthFrameSource")
 @js.native
 object PerceptionDepthFrameSource extends js.Object {

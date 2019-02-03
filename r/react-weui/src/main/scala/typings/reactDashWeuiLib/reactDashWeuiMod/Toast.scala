@@ -12,6 +12,7 @@ class Toast protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Toast")
 @js.native
 object Toast extends js.Object {

@@ -15,8 +15,11 @@ object queryDashStringLibStrings {
   @js.native
   sealed trait none extends js.Object
   
+  @scala.inline
   def bracket: bracket = "bracket".asInstanceOf[bracket]
+  @scala.inline
   def index: index = "index".asInstanceOf[index]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
 }
 

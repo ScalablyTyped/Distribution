@@ -58,11 +58,7 @@ class LensFlare protected () extends js.Object {
   def dispose(): scala.Unit = js.native
 }
 
-/**
-  * This represents one of the lens effect in a `BABYLON.lensFlareSystem`.
-  * It controls one of the indiviual texture used in the effect.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_lens_flares
-  */
+/* static members */
 @JSGlobal("BABYLON.LensFlare")
 @js.native
 object LensFlare extends js.Object {

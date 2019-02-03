@@ -51,6 +51,7 @@ class DateTimeFormatter protected () extends IDateTimeFormatter {
   override def format(value: stdLib.Date): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
 @js.native
 object DateTimeFormatter extends js.Object {

@@ -24,11 +24,17 @@ object knockoutLibStrings {
   @js.native
   sealed trait retained extends js.Object
   
+  @scala.inline
   def added: added = "added".asInstanceOf[added]
+  @scala.inline
   def arrayChange: arrayChange = "arrayChange".asInstanceOf[arrayChange]
+  @scala.inline
   def beforeChange: beforeChange = "beforeChange".asInstanceOf[beforeChange]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
+  @scala.inline
   def retained: retained = "retained".asInstanceOf[retained]
 }
 

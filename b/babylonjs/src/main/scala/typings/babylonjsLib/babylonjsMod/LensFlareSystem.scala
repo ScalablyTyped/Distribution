@@ -29,11 +29,7 @@ class LensFlareSystem protected ()
   name: java.lang.String, emitter: js.Any, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * This represents a Lens Flare System or the shiny effect created by the light reflection on the  camera lenses.
-  * It is usually composed of several `BABYLON.lensFlare`.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_lens_flares
-  */
+/* static members */
 @JSImport("babylonjs", "LensFlareSystem")
 @js.native
 object LensFlareSystem extends js.Object {

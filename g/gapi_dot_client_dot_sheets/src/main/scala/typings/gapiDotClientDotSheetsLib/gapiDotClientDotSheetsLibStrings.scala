@@ -12,7 +12,9 @@ object gapiDotClientDotSheetsLibStrings {
   @js.native
   sealed trait v4 extends js.Object
   
+  @scala.inline
   def sheets: sheets = "sheets".asInstanceOf[sheets]
+  @scala.inline
   def v4: v4 = "v4".asInstanceOf[v4]
 }
 

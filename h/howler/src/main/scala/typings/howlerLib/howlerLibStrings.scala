@@ -63,24 +63,43 @@ object howlerLibStrings {
   @js.native
   sealed trait volume extends js.Object
   
+  @scala.inline
   def HRTF: HRTF = "HRTF".asInstanceOf[HRTF]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def equalpower: equalpower = "equalpower".asInstanceOf[equalpower]
+  @scala.inline
   def fade: fade = "fade".asInstanceOf[fade]
+  @scala.inline
   def inverse: inverse = "inverse".asInstanceOf[inverse]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def load: load = "load".asInstanceOf[load]
+  @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
   def loaderror: loaderror = "loaderror".asInstanceOf[loaderror]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def mute: mute = "mute".asInstanceOf[mute]
+  @scala.inline
   def pause: pause = "pause".asInstanceOf[pause]
+  @scala.inline
   def play: play = "play".asInstanceOf[play]
+  @scala.inline
   def playerror: playerror = "playerror".asInstanceOf[playerror]
+  @scala.inline
   def rate: rate = "rate".asInstanceOf[rate]
+  @scala.inline
   def seek: seek = "seek".asInstanceOf[seek]
+  @scala.inline
   def stop: stop = "stop".asInstanceOf[stop]
+  @scala.inline
   def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
+  @scala.inline
   def volume: volume = "volume".asInstanceOf[volume]
 }
 

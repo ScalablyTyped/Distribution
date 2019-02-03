@@ -22,6 +22,7 @@ class BitmapDecoder ()
   override def getPreviewAsync(): winrtLib.WindowsNs.FoundationNs.IAsyncOperation[ImageStream] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
 @js.native
 object BitmapDecoder extends js.Object {

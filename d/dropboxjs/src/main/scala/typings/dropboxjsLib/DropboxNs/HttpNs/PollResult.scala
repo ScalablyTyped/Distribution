@@ -12,6 +12,7 @@ class PollResult () extends js.Object {
   var retryAfter: scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Http.PollResult")
 @js.native
 object PollResult extends js.Object {

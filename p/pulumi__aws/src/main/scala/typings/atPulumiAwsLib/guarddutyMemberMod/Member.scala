@@ -48,6 +48,7 @@ class Member protected ()
   val relationshipStatus: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/guardduty/member", "Member")
 @js.native
 object Member extends js.Object {

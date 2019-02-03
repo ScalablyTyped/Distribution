@@ -77,12 +77,7 @@ class HDRCubeTexture protected () extends BaseTexture {
   def setReflectionTextureMatrix(value: Matrix): scala.Unit = js.native
 }
 
-/**
-  * This represents a texture coming from an HDR input.
-  *
-  * The only supported format is currently panorama picture stored in RGBE format.
-  * Example of such files can be found on HDRLib: http://hdrlib.com/
-  */
+/* static members */
 @JSGlobal("BABYLON.HDRCubeTexture")
 @js.native
 object HDRCubeTexture extends js.Object {

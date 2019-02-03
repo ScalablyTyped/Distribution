@@ -15,6 +15,7 @@ class MDCFormField ()
   var input: atMaterialSelectionDashControlLib.atMaterialSelectionDashControlMod.MDCSelectionControl = js.native
 }
 
+/* static members */
 @JSImport("@material/form-field", "MDCFormField")
 @js.native
 object MDCFormField extends js.Object {

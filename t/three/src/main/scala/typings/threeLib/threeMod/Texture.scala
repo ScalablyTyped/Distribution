@@ -12,6 +12,7 @@ class Texture protected ()
   def this(image: js.UndefOr[stdLib.HTMLCanvasElement | stdLib.HTMLImageElement | stdLib.HTMLVideoElement], mapping: js.UndefOr[threeLib.threeDashCoreMod.Mapping], wrapS: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], wrapT: js.UndefOr[threeLib.threeDashCoreMod.Wrapping], magFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], minFilter: js.UndefOr[threeLib.threeDashCoreMod.TextureFilter], format: js.UndefOr[threeLib.threeDashCoreMod.PixelFormat], `type`: js.UndefOr[threeLib.threeDashCoreMod.TextureDataType], anisotropy: js.UndefOr[scala.Double], encoding: js.UndefOr[threeLib.threeDashCoreMod.TextureEncoding]) = this()
 }
 
+/* static members */
 @JSImport("three", "Texture")
 @js.native
 object Texture extends js.Object {

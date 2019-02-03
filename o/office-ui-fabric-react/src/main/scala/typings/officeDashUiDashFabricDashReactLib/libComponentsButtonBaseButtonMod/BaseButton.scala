@@ -63,6 +63,7 @@ class BaseButton protected ()
   def componentDidUpdate_MBaseButton(prevProps: IBaseButtonProps, prevState: IBaseButtonState): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Button/BaseButton", "BaseButton")
 @js.native
 object BaseButton extends js.Object {

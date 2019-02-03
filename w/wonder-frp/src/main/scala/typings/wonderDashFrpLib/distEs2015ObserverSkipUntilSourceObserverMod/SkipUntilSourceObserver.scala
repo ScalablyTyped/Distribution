@@ -14,6 +14,7 @@ class SkipUntilSourceObserver protected ()
   var _skipUntilStream: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/SkipUntilSourceObserver", "SkipUntilSourceObserver")
 @js.native
 object SkipUntilSourceObserver extends js.Object {

@@ -59,6 +59,7 @@ class SnapshotCopy protected ()
   val volumeSize: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy")
 @js.native
 object SnapshotCopy extends js.Object {

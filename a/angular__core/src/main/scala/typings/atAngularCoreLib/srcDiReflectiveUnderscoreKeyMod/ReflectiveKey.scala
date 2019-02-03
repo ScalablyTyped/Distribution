@@ -17,6 +17,7 @@ class ReflectiveKey protected () extends js.Object {
   var token: js.Object = js.native
 }
 
+/* static members */
 @JSImport("@angular/core/src/di/reflective_key", "ReflectiveKey")
 @js.native
 object ReflectiveKey extends js.Object {

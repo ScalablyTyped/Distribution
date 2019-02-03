@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Types () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.data.Types")
 @js.native
 object Types extends js.Object {

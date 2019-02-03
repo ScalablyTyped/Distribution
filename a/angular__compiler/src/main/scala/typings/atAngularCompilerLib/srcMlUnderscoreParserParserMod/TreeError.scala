@@ -14,6 +14,7 @@ class TreeError protected ()
   var elementName: java.lang.String | scala.Null = js.native
 }
 
+/* static members */
 @JSImport("@angular/compiler/src/ml_parser/parser", "TreeError")
 @js.native
 object TreeError extends js.Object {

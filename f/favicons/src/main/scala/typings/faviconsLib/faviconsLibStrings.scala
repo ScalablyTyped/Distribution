@@ -30,13 +30,21 @@ object faviconsLibStrings {
   @js.native
   sealed trait standalone extends js.Object
   
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def browser: browser = "browser".asInstanceOf[browser]
+  @scala.inline
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
+  @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
+  @scala.inline
   def `minimal-ui`: `minimal-ui` = "minimal-ui".asInstanceOf[`minimal-ui`]
+  @scala.inline
   def natural: natural = "natural".asInstanceOf[natural]
+  @scala.inline
   def portrait: portrait = "portrait".asInstanceOf[portrait]
+  @scala.inline
   def standalone: standalone = "standalone".asInstanceOf[standalone]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Avatar ()
   extends antdLib.libAvatarMod.default
 
+/* static members */
 @JSImport("antd", "Avatar")
 @js.native
 object Avatar extends js.Object {

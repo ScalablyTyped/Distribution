@@ -13,6 +13,7 @@ class EventGroup protected ()
   def this(parent: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@uifabric/utilities", "EventGroup")
 @js.native
 object EventGroup extends js.Object {

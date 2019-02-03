@@ -348,6 +348,7 @@ class TreeView protected () extends Widget {
   def updateText(target: js.Any, newText: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.TreeView")
 @js.native
 object TreeView extends js.Object {

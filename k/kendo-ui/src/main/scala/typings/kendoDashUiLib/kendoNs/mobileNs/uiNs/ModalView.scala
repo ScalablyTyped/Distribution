@@ -18,6 +18,7 @@ class ModalView protected () extends Widget {
   def open(target: kendoDashUiLib.JQuery): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.ModalView")
 @js.native
 object ModalView extends js.Object {

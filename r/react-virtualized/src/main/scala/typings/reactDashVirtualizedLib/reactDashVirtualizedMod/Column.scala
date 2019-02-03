@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Column ()
   extends reactDashVirtualizedLib.distEsTableMod.Column
 
+/* static members */
 @JSImport("react-virtualized", "Column")
 @js.native
 object Column extends js.Object {

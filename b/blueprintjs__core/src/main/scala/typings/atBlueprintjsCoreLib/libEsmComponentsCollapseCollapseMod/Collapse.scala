@@ -23,6 +23,7 @@ class Collapse ()
   /* private */ def onDelayedStateChange(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/collapse/collapse", "Collapse")
 @js.native
 object Collapse extends js.Object {

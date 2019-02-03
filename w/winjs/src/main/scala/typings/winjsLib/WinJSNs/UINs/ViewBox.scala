@@ -61,9 +61,7 @@ class ViewBox () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Scales a single child element to fill the available space without resizing it. This control reacts to changes in the size of the container as well as changes in size of the child element. For example, a media query may result in a change in aspect ratio.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ViewBox")
 @js.native
 object ViewBox extends js.Object {

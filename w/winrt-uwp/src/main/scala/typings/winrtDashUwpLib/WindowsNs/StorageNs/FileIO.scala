@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class FileIO () extends js.Object
 
-/** Provides helper methods for reading and writing files that are represented by objects of type IStorageFile . */
+/* static members */
 @JSGlobal("Windows.Storage.FileIO")
 @js.native
 object FileIO extends js.Object {

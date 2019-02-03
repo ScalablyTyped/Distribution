@@ -96,6 +96,7 @@ object libraryNs extends js.Object {
   class XMLList ()
     extends samchonLib.libraryMod.XMLList
   
+  /* static members */
   @js.native
   object StringUtil extends js.Object {
     /**
@@ -269,6 +270,7 @@ object libraryNs extends js.Object {
     def stringify[T](obj: T): java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object XML extends js.Object {
     /**

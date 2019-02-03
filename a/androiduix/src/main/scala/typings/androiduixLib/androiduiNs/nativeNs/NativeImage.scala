@@ -17,6 +17,7 @@ class NativeImage ()
   var topBorder: js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.native.NativeImage")
 @js.native
 object NativeImage extends js.Object {

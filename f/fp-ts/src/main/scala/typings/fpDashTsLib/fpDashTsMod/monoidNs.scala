@@ -24,6 +24,10 @@ object monoidNs extends js.Object {
   def getJoinMonoid[A](B: fpDashTsLib.libBoundedMod.Bounded[A]): fpDashTsLib.libMonoidMod.Monoid[A] = js.native
   def getMeetMonoid[A](B: fpDashTsLib.libBoundedMod.Bounded[A]): fpDashTsLib.libMonoidMod.Monoid[A] = js.native
   def getProductMonoid[A, B](MA: fpDashTsLib.libMonoidMod.Monoid[A], MB: fpDashTsLib.libMonoidMod.Monoid[B]): fpDashTsLib.libMonoidMod.Monoid[js.Tuple2[A, B]] = js.native
-  def getRecordMonoid[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](monoids: fpDashTsLib.fpDashTsLibStrings.getRecordMonoid with O): fpDashTsLib.libMonoidMod.Monoid[O] = js.native
+  def getRecordMonoid[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
+    monoids: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof O ]: fp-ts.fp-ts/lib/Monoid.Monoid<O[K]>}
+    */ fpDashTsLib.fpDashTsLibStrings.getRecordMonoid with O
+  ): fpDashTsLib.libMonoidMod.Monoid[O] = js.native
 }
 

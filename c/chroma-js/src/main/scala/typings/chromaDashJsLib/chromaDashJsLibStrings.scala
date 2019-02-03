@@ -96,35 +96,65 @@ object chromaDashJsLibStrings {
   @js.native
   sealed trait temperature extends js.Object
   
+  @scala.inline
   def alpha: alpha = "alpha".asInstanceOf[alpha]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def brighten: brighten = "brighten".asInstanceOf[brighten]
+  @scala.inline
   def burn: burn = "burn".asInstanceOf[burn]
+  @scala.inline
   def cmyk: cmyk = "cmyk".asInstanceOf[cmyk]
+  @scala.inline
   def darken: darken = "darken".asInstanceOf[darken]
+  @scala.inline
   def desaturate: desaturate = "desaturate".asInstanceOf[desaturate]
+  @scala.inline
   def dodge: dodge = "dodge".asInstanceOf[dodge]
+  @scala.inline
   def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def gl: gl = "gl".asInstanceOf[gl]
+  @scala.inline
   def hcl: hcl = "hcl".asInstanceOf[hcl]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
   def hsi: hsi = "hsi".asInstanceOf[hsi]
+  @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
+  @scala.inline
   def hsv: hsv = "hsv".asInstanceOf[hsv]
+  @scala.inline
   def k: k = "k".asInstanceOf[k]
+  @scala.inline
   def l: l = "l".asInstanceOf[l]
+  @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
+  @scala.inline
   def lch: lch = "lch".asInstanceOf[lch]
+  @scala.inline
   def lighten: lighten = "lighten".asInstanceOf[lighten]
+  @scala.inline
   def luminance: luminance = "luminance".asInstanceOf[luminance]
+  @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
+  @scala.inline
   def q: q = "q".asInstanceOf[q]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
   def rgba: rgba = "rgba".asInstanceOf[rgba]
+  @scala.inline
   def saturate: saturate = "saturate".asInstanceOf[saturate]
+  @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
+  @scala.inline
   def temperature: temperature = "temperature".asInstanceOf[temperature]
 }
 

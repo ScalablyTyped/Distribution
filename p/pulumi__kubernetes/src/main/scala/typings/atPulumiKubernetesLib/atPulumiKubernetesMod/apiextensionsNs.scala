@@ -28,12 +28,7 @@ object apiextensionsNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiKubernetesLib.providerMod.apiextensionsNs.CustomResourceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
-  /**
-    * CustomResource represents an instance of a CustomResourceDefinition (CRD). For example, the
-    * CoreOS Prometheus operator exposes a CRD `monitoring.coreos.com/ServiceMonitor`; to
-    * instantiate this as a Pulumi resource, one could call `new CustomResource`, passing the
-    * `ServiceMonitor` resource definition as an argument.
-    */
+  /* static members */
   @js.native
   object CustomResource extends js.Object {
     /**
@@ -92,10 +87,7 @@ object apiextensionsNs extends js.Object {
       def this(name: java.lang.String, args: atPulumiKubernetesLib.typesInputMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
     }
     
-    /**
-      * CustomResourceDefinition represents a resource that should be exposed on the API server.  Its
-      * name MUST be in the format <.spec.name>.<.spec.group>.
-      */
+    /* static members */
     @js.native
     object CustomResourceDefinition extends js.Object {
       /**
@@ -118,9 +110,7 @@ object apiextensionsNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
     }
     
-    /**
-      * CustomResourceDefinitionList is a list of CustomResourceDefinition objects.
-      */
+    /* static members */
     @js.native
     object CustomResourceDefinitionList extends js.Object {
       /**

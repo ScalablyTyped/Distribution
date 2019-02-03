@@ -24,6 +24,7 @@ class VertexFormat ()
   override var tangent: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "VertexFormat")
 @js.native
 object VertexFormat extends js.Object {

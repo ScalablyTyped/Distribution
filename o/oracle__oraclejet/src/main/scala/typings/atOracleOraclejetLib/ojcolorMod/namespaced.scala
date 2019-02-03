@@ -14,6 +14,7 @@ class namespaced protected () extends Color {
   def this(color: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("@oracle/oraclejet/ojcolor", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

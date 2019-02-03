@@ -19,6 +19,7 @@ class Triangulator () extends js.Object {
   def triangulate(verticesArray: ArrayLike[scala.Double]): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.Triangulator")
 @js.native
 object Triangulator extends js.Object {

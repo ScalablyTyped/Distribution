@@ -28,6 +28,7 @@ class RouteTableAssociation protected ()
   val subnetId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/routeTableAssociation", "RouteTableAssociation")
 @js.native
 object RouteTableAssociation extends js.Object {

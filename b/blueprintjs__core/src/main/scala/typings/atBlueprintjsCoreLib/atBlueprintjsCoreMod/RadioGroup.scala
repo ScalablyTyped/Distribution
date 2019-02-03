@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RadioGroup ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.RadioGroup
 
+/* static members */
 @JSImport("@blueprintjs/core", "RadioGroup")
 @js.native
 object RadioGroup extends js.Object {

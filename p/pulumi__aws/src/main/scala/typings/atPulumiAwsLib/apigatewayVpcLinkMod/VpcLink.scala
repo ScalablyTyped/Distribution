@@ -32,6 +32,7 @@ class VpcLink protected ()
   val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/vpcLink", "VpcLink")
 @js.native
 object VpcLink extends js.Object {

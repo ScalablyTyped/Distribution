@@ -25,6 +25,7 @@ class NgTableColumn[TCol /* <: ngDashTableLib.srcBrowserPublicDashInterfacesMod.
   /* private */ def createGetterSetter(initialValue: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/browser/ngTableColumn", "NgTableColumn")
 @js.native
 object NgTableColumn extends js.Object {

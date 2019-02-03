@@ -20,6 +20,7 @@ class Form ()
   def getDefaultState(): FormState = js.native
 }
 
+/* static members */
 @JSImport("react-form", "Form")
 @js.native
 object Form extends js.Object {

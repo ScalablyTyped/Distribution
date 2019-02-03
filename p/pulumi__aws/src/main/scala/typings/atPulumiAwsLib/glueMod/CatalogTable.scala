@@ -20,6 +20,7 @@ class CatalogTable protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueCatalogTableMod.CatalogTableArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "CatalogTable")
 @js.native
 object CatalogTable extends js.Object {

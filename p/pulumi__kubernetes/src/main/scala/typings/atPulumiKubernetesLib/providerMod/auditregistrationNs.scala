@@ -97,9 +97,7 @@ object auditregistrationNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.auditregistrationNs.v1alpha1Ns.AuditSinkList = js.native
     }
     
-    /**
-      * AuditSink represents a cluster level audit sink
-      */
+    /* static members */
     @js.native
     object AuditSink extends js.Object {
       /**
@@ -122,9 +120,7 @@ object auditregistrationNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.auditregistrationNs.v1alpha1Ns.AuditSink = js.native
     }
     
-    /**
-      * AuditSinkList is a list of AuditSink items.
-      */
+    /* static members */
     @js.native
     object AuditSinkList extends js.Object {
       /**

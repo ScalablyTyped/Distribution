@@ -41,6 +41,7 @@ class TimePicker protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.TimePicker")
 @js.native
 object TimePicker extends js.Object {

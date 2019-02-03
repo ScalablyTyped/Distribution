@@ -17,6 +17,7 @@ class View protected () extends Widget {
   def enable(enable: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.View")
 @js.native
 object View extends js.Object {

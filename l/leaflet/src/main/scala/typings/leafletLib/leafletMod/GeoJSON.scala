@@ -23,6 +23,7 @@ class GeoJSON[P] () extends FeatureGroup[P] {
   def setStyle(style: StyleFunction[P]): this.type = js.native
 }
 
+/* static members */
 @JSImport("leaflet", "GeoJSON")
 @js.native
 object GeoJSON extends js.Object {

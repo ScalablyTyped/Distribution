@@ -12,7 +12,9 @@ object bingmapsLibStrings {
   @js.native
   sealed trait pixel extends js.Object
   
+  @scala.inline
   def meters: meters = "meters".asInstanceOf[meters]
+  @scala.inline
   def pixel: pixel = "pixel".asInstanceOf[pixel]
 }
 

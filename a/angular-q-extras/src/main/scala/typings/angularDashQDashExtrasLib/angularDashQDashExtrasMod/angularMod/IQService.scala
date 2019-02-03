@@ -8,7 +8,15 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line interface-name
 @js.native
 trait IQService extends js.Object {
-  def allSettled[T](promises: angularDashQDashExtrasLib.angularDashQDashExtrasLibStrings.IQService with T): angularLib.angularMod.angularNs.IPromise[angularDashQDashExtrasLib.angularDashQDashExtrasLibStrings.IQService with T] = js.native
+  def allSettled[T](
+    promises: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: T[K] | angular.angular.angular.IPromise<T[K]>}
+    */ angularDashQDashExtrasLib.angularDashQDashExtrasLibStrings.IQService with js.Any
+  ): angularLib.angularMod.angularNs.IPromise[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof T ]: angular-q-extras.angular-q-extras.angular.PromiseValue<T[K]>}
+    */ angularDashQDashExtrasLib.angularDashQDashExtrasLibStrings.IQService with T
+  ] = js.native
   // tslint:enable:max-line-length
   def allSettled[TAll](promises: js.Array[TAll | angularLib.angularMod.angularNs.IPromise[TAll]]): angularLib.angularMod.angularNs.IPromise[js.Array[PromiseValue[TAll]]] = js.native
   def allSettled[T1, T2](

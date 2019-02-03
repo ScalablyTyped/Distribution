@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SceneDispatcher ()
   extends wonderDotJsLib.distEs2015CoreEntityObjectSceneSceneDispatcherMod.SceneDispatcher
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "SceneDispatcher")
 @js.native
 object SceneDispatcher extends js.Object {

@@ -17,6 +17,7 @@ class CredentialProviderChain ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/core", "CredentialProviderChain")
 @js.native
 object CredentialProviderChain extends js.Object {

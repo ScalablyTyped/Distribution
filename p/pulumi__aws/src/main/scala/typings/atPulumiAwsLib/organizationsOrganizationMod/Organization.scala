@@ -45,6 +45,7 @@ class Organization protected ()
   val masterAccountId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/organizations/organization", "Organization")
 @js.native
 object Organization extends js.Object {

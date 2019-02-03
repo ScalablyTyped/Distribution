@@ -12,6 +12,7 @@ class Panel protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Panel")
 @js.native
 object Panel extends js.Object {

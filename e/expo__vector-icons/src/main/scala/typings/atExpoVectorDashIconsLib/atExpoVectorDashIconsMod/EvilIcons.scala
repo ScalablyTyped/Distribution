@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EvilIcons ()
   extends reactDashNativeDashVectorDashIconsLib.eviliconsMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "EvilIcons")
 @js.native
 object EvilIcons extends js.Object {

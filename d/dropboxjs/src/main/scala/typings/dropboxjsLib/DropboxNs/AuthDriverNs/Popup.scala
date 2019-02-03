@@ -12,6 +12,7 @@ class Popup () extends IAuthDriver {
   def url(): java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.AuthDriver.Popup")
 @js.native
 object Popup extends js.Object {

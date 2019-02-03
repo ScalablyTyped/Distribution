@@ -32,6 +32,7 @@ class AggregateAuthorization protected ()
   val region: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg/aggregateAuthorization", "AggregateAuthorization")
 @js.native
 object AggregateAuthorization extends js.Object {

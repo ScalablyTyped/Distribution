@@ -274,6 +274,7 @@ class ListBox protected () extends Widget {
   def unselectItemsByIndices(indices: js.Array[scala.Double]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ListBox")
 @js.native
 object ListBox extends js.Object {

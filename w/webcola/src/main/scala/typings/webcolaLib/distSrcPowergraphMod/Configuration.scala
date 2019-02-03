@@ -25,6 +25,7 @@ class Configuration[Link] protected () extends js.Object {
   /* private */ def rootMerges(k: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/powergraph", "Configuration")
 @js.native
 object Configuration extends js.Object {

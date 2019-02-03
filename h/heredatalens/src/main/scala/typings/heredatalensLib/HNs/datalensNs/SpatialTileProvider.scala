@@ -32,11 +32,7 @@ class SpatialTileProvider protected ()
   def setQueryParams(queryParams: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Specifies how to access layer data (shapes, geometries) using the Data Lens REST API.
-  * This provider defines the interface for accessing shape layers via the Data Lens REST API. The input data is provided as vector tiles in the MapBox format (Protobuf).
-  * Data is loaded by tiles.
-  */
+/* static members */
 @JSGlobal("H.datalens.SpatialTileProvider")
 @js.native
 object SpatialTileProvider extends js.Object {

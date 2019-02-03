@@ -12,6 +12,7 @@ class Face3 protected ()
   def this(aIndex: scala.Double, bIndex: scala.Double, cIndex: scala.Double, faceNormal: wonderDotJsLib.distEs2015MathVector3Mod.Vector3, vertexNormals: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Collection<Vector3> */ js.Any) = this()
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Face3")
 @js.native
 object Face3 extends js.Object {

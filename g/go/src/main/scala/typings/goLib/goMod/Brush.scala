@@ -69,15 +69,7 @@ class Brush ()
   override def copy(): goLib.goMod.goNs.Brush = js.native
 }
 
-/**
-  * A Brush holds color information and describes how to draw the inside
-  * of a Shape or the stroke of a shape or a TextBlock or the
-  * background of any GraphObject.
-  * A Brush must not be modified once it has been assigned to a GraphObject,
-  * such as the Shape.fill or TextBlock.stroke
-  * or GraphObject.background.
-  * However, a Brush may be shared by multiple GraphObjects.
-  */
+/* static members */
 @JSImport("go", "Brush")
 @js.native
 object Brush extends js.Object {

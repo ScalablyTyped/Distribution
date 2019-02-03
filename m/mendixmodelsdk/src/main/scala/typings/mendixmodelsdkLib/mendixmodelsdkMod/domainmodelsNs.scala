@@ -415,12 +415,7 @@ object domainmodelsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `DomainModels`.
-    */
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/access-rules relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object AccessRule extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -445,15 +440,14 @@ object domainmodelsNs extends js.Object {
     def createInEntityUnderAccessRules(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AccessRule = js.native
   }
   
+  /* static members */
   @js.native
   object ActionMoment extends js.Object {
     var After: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ActionMoment = js.native
     var Before: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ActionMoment = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/annotations relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Annotation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -472,9 +466,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DomainModel): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Annotation = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/associations relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Association extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -493,15 +485,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DomainModel): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Association = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/associations relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object AssociationBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object AssociationDeleteBehavior extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -520,15 +511,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationBase): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationDeleteBehavior = js.native
   }
   
+  /* static members */
   @js.native
   object AssociationOwner extends js.Object {
     var Both: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationOwner = js.native
     var Default: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationOwner = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object AssociationRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -541,15 +531,14 @@ object domainmodelsNs extends js.Object {
     def create(model: mendixmodelsdkLib.distGenBaseDashModelMod.IModel): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationRef = js.native
   }
   
+  /* static members */
   @js.native
   object AssociationType extends js.Object {
     var Reference: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationType = js.native
     var ReferenceSet: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AssociationType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/attributes relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Attribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -568,9 +557,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object AttributeRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -745,12 +732,14 @@ object domainmodelsNs extends js.Object {
     def createInWidgetValueUnderAttributeRef(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AttributeRef = js.native
   }
   
+  /* static members */
   @js.native
   object AttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object AutoNumberAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -769,6 +758,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AutoNumberAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object BinaryAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -787,6 +777,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.BinaryAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object BooleanAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -805,9 +796,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.BooleanAttributeType = js.native
   }
   
-  /**
-    * In version 6.6.0: added public
-    */
+  /* static members */
   @js.native
   object CalculatedValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -826,6 +815,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.CalculatedValue = js.native
   }
   
+  /* static members */
   @js.native
   object CrossAssociation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -844,9 +834,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DomainModel): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.CrossAssociation = js.native
   }
   
-  /**
-    * In version 6.0.0: deprecated
-    */
+  /* static members */
   @js.native
   object CurrencyAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -865,6 +853,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.CurrencyAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object DateTimeAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -883,6 +872,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DateTimeAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object DecimalAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -901,12 +891,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DecimalAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object DecimalAttributeTypeBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object DeletingBehavior extends js.Object {
     var DeleteMeAndReferences: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DeletingBehavior = js.native
@@ -914,9 +906,7 @@ object domainmodelsNs extends js.Object {
     var DeleteMeIfNoReferences: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DeletingBehavior = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object DirectEntityRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -992,9 +982,7 @@ object domainmodelsNs extends js.Object {
     def createInWidgetValueUnderEntityRef(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DirectEntityRef = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/domain-model relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object DomainModel extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1006,9 +994,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IModule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DomainModel = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/entities relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Entity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1027,18 +1013,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.DomainModel): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityRefStep extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1060,6 +1042,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IndirectEntityRef): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EntityRefStep = js.native
   }
   
+  /* static members */
   @js.native
   object EnumerationAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1078,6 +1061,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EnumerationAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object EqualsToRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1096,9 +1080,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EqualsToRuleInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/event-handlers relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object EventHandler extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1117,6 +1099,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EventHandler = js.native
   }
   
+  /* static members */
   @js.native
   object EventType extends js.Object {
     var Commit: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EventType = js.native
@@ -1125,9 +1108,7 @@ object domainmodelsNs extends js.Object {
     var RollBack: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.EventType = js.native
   }
   
-  /**
-    * In version 6.0.0: deprecated
-    */
+  /* static members */
   @js.native
   object FloatAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1146,12 +1127,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.FloatAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object FloatAttributeTypeBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object Generalization extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1170,12 +1153,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Generalization = js.native
   }
   
+  /* static members */
   @js.native
   object GeneralizationBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object HashedStringAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1194,9 +1179,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.HashedStringAttributeType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/indexes relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object Index extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1215,6 +1198,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Index = js.native
   }
   
+  /* static members */
   @js.native
   object IndexedAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1233,6 +1217,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Index): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IndexedAttribute = js.native
   }
   
+  /* static members */
   @js.native
   object IndexedAttributeType extends js.Object {
     var ChangedDate: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IndexedAttributeType = js.native
@@ -1240,9 +1225,7 @@ object domainmodelsNs extends js.Object {
     var Normal: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IndexedAttributeType = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object IndirectEntityRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1327,6 +1310,7 @@ object domainmodelsNs extends js.Object {
     def createInWidgetValueUnderEntityRef(container: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValue): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IndirectEntityRef = js.native
   }
   
+  /* static members */
   @js.native
   object IntegerAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1345,12 +1329,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.IntegerAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object IntegerAttributeTypeBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object LongAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1369,6 +1355,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.LongAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object MaxLengthRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1387,6 +1374,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.MaxLengthRuleInfo = js.native
   }
   
+  /* static members */
   @js.native
   object MemberAccess extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1405,6 +1393,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.AccessRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.MemberAccess = js.native
   }
   
+  /* static members */
   @js.native
   object MemberAccessRights extends js.Object {
     var None: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.MemberAccessRights = js.native
@@ -1412,15 +1401,14 @@ object domainmodelsNs extends js.Object {
     var ReadWrite: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.MemberAccessRights = js.native
   }
   
-  /**
-    * In version 7.11.0: introduced
-    */
+  /* static members */
   @js.native
   object MemberRef extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object NoGeneralization extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1439,12 +1427,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.NoGeneralization = js.native
   }
   
+  /* static members */
   @js.native
   object NumericAttributeTypeBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
+  /* static members */
   @js.native
   object RangeRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1463,6 +1453,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.RangeRuleInfo = js.native
   }
   
+  /* static members */
   @js.native
   object RangeType extends js.Object {
     var Between: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.RangeType = js.native
@@ -1470,6 +1461,7 @@ object domainmodelsNs extends js.Object {
     var SmallerThanOrEqualTo: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.RangeType = js.native
   }
   
+  /* static members */
   @js.native
   object RegExRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1488,6 +1480,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.RegExRuleInfo = js.native
   }
   
+  /* static members */
   @js.native
   object RequiredRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1506,15 +1499,14 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.RequiredRuleInfo = js.native
   }
   
+  /* static members */
   @js.native
   object RuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDomainmodelsMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 6.6.0: added public
-    */
+  /* static members */
   @js.native
   object StoredValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1533,6 +1525,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.StoredValue = js.native
   }
   
+  /* static members */
   @js.native
   object StringAttributeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1551,6 +1544,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Attribute): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.StringAttributeType = js.native
   }
   
+  /* static members */
   @js.native
   object UniqueRuleInfo extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1569,9 +1563,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.UniqueRuleInfo = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/validation-rules relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ValidationRule extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1590,9 +1582,7 @@ object domainmodelsNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.Entity): mendixmodelsdkLib.distGenDomainmodelsMod.domainmodelsNs.ValidationRule = js.native
   }
   
-  /**
-    * In version 6.6.0: added public
-    */
+  /* static members */
   @js.native
   object ValueType extends js.Object {
     var structureTypeName: java.lang.String = js.native

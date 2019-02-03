@@ -44,7 +44,7 @@ abstract class MediaStreamSample () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a media sample used by the MediaStreamSource . */
+/* static members */
 @JSGlobal("Windows.Media.Core.MediaStreamSample")
 @js.native
 object MediaStreamSample extends js.Object {

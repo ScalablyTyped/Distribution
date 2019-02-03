@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Icon ()
   extends semanticDashUiDashReactLib.distCommonjsElementsIconMod.default
 
+/* static members */
 @JSImport("semantic-ui-react", "Icon")
 @js.native
 object Icon extends js.Object {

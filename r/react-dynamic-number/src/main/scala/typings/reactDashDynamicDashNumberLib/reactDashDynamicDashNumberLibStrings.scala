@@ -30,13 +30,21 @@ object reactDashDynamicDashNumberLibStrings {
   @js.native
   sealed trait value extends js.Object
   
+  @scala.inline
   def ` `: ` ` = " ".asInstanceOf[` `]
+  @scala.inline
   def `,`: `,` = ",".asInstanceOf[`,`]
+  @scala.inline
   def DOT: DOT = ".".asInstanceOf[DOT]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def placeholder: placeholder = "placeholder".asInstanceOf[placeholder]
+  @scala.inline
   def ref: ref = "ref".asInstanceOf[ref]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
 }
 

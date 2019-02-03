@@ -61,6 +61,7 @@ abstract class SearchQuery () extends js.Object {
   def timeout(timeout: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("couchbase", "SearchQuery")
 @js.native
 object SearchQuery extends js.Object {

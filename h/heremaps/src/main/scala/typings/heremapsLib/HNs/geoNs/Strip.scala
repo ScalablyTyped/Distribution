@@ -133,9 +133,7 @@ class Strip () extends js.Object {
   def spliceLatLngAlts(index: scala.Double, opt_nRemove: scala.Double, opt_latLngAlts: js.Array[scala.Double]): js.Array[scala.Double] = js.native
 }
 
-/**
-  * A strip is a flat list of latitude, longitude, altitude tuples in a fixed order.
-  */
+/* static members */
 @JSGlobal("H.geo.Strip")
 @js.native
 object Strip extends js.Object {

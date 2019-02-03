@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_ActiveElementCallback extends js.Object {
   @JSName("activeElement")
   var activeElement_Original: js.Function1[/* doc */ js.UndefOr[stdLib.Document], stdLib.Element] = js.native
-  var default: Anon_ActiveElement = js.native
+  var default: (/* import warning: ImportType.apply Failed type conversion: typeof events */ js.Any) with Anon_ActiveElement = js.native
   @JSName("ownerDocument")
   var ownerDocument_Original: js.Function1[/* node */ js.UndefOr[stdLib.Node | scala.Null], stdLib.Document] = js.native
   @JSName("ownerWindow")

@@ -84,31 +84,57 @@ object gotLibStrings {
   @js.native
   sealed trait uploadProgress extends js.Object
   
+  @scala.inline
   def CancelError: CancelError = "CancelError".asInstanceOf[CancelError]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
+  @scala.inline
   def HTTPError: HTTPError = "HTTPError".asInstanceOf[HTTPError]
+  @scala.inline
   def MaxRedirectsError: MaxRedirectsError = "MaxRedirectsError".asInstanceOf[MaxRedirectsError]
+  @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def ParseError: ParseError = "ParseError".asInstanceOf[ParseError]
+  @scala.inline
   def ReadError: ReadError = "ReadError".asInstanceOf[ReadError]
+  @scala.inline
   def RequestError: RequestError = "RequestError".asInstanceOf[RequestError]
+  @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  @scala.inline
   def TimeoutError: TimeoutError = "TimeoutError".asInstanceOf[TimeoutError]
+  @scala.inline
   def UnsupportedProtocolError: UnsupportedProtocolError = "UnsupportedProtocolError".asInstanceOf[UnsupportedProtocolError]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def downloadProgress: downloadProgress = "downloadProgress".asInstanceOf[downloadProgress]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def head: head = "head".asInstanceOf[head]
+  @scala.inline
   def patch: patch = "patch".asInstanceOf[patch]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
+  @scala.inline
   def request: request = "request".asInstanceOf[request]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
+  @scala.inline
   def uploadProgress: uploadProgress = "uploadProgress".asInstanceOf[uploadProgress]
 }
 

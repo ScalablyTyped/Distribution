@@ -15,8 +15,11 @@ object reactDashStickyDashBoxLibStrings {
   @js.native
   sealed trait stickyTop extends js.Object
   
+  @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
+  @scala.inline
   def stickyBottom: stickyBottom = "stickyBottom".asInstanceOf[stickyBottom]
+  @scala.inline
   def stickyTop: stickyTop = "stickyTop".asInstanceOf[stickyTop]
 }
 

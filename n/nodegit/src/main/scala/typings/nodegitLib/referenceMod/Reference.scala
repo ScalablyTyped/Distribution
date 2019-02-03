@@ -33,6 +33,7 @@ class Reference () extends js.Object {
   def `type`(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/reference", "Reference")
 @js.native
 object Reference extends js.Object {

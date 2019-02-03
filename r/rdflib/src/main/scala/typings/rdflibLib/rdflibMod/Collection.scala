@@ -45,6 +45,7 @@ class Collection protected () extends Node {
   def unshift(element: Node): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Collection")
 @js.native
 object Collection extends js.Object {

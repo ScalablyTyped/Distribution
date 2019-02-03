@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Reference ()
   extends nodegitLib.referenceMod.Reference
 
+/* static members */
 @JSImport("nodegit", "Reference")
 @js.native
 object Reference extends js.Object {

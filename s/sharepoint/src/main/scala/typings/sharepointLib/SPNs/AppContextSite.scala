@@ -13,6 +13,7 @@ class AppContextSite protected () extends ClientObject {
   def get_web(): Web = js.native
 }
 
+/* static members */
 @JSGlobal("SP.AppContextSite")
 @js.native
 object AppContextSite extends js.Object {

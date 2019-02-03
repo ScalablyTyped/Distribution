@@ -16,6 +16,7 @@ class PrecisionModel () extends js.Object {
   def this(modelType: scala.Double) = this()
 }
 
+/* static members */
 @JSGlobal("jsts.geom.PrecisionModel")
 @js.native
 object PrecisionModel extends js.Object {

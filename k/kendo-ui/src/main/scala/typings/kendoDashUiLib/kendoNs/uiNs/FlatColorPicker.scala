@@ -26,6 +26,7 @@ class FlatColorPicker protected () extends Widget {
   def value_Unit(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.FlatColorPicker")
 @js.native
 object FlatColorPicker extends js.Object {

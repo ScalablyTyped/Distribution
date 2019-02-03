@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HardwareIdentification () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.Profile.HardwareIdentification")
 @js.native
 object HardwareIdentification extends js.Object {

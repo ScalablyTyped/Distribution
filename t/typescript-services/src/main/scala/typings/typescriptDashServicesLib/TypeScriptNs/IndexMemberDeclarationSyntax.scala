@@ -20,6 +20,7 @@ class IndexMemberDeclarationSyntax protected () extends SyntaxNode {
   def withSemicolonToken(semicolonToken: ISyntaxToken): IndexMemberDeclarationSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.IndexMemberDeclarationSyntax")
 @js.native
 object IndexMemberDeclarationSyntax extends js.Object {

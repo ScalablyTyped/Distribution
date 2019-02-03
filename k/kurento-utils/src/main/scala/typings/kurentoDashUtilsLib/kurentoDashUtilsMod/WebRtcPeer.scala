@@ -87,6 +87,7 @@ class WebRtcPeer protected ()
   def showLocalVideo(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kurento-utils", "WebRtcPeer")
 @js.native
 object WebRtcPeer extends js.Object {

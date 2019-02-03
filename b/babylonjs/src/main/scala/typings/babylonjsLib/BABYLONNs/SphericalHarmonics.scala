@@ -83,9 +83,7 @@ class SphericalHarmonics () extends js.Object {
   def scale(scale: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Class representing spherical harmonics coefficients to the 3rd degree
-  */
+/* static members */
 @JSGlobal("BABYLON.SphericalHarmonics")
 @js.native
 object SphericalHarmonics extends js.Object {

@@ -28,6 +28,7 @@ class default () extends AlgorithmIdentifier {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/AlgorithmIdentifier", JSImport.Default)
 @js.native
 object default extends js.Object {

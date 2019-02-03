@@ -13,6 +13,7 @@ class Menu[OptionType] ()
   def getState(): MenuProps[OptionType] with MenuState = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/components/Menu", "Menu")
 @js.native
 object Menu extends js.Object {

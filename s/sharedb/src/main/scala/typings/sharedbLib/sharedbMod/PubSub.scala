@@ -12,6 +12,7 @@ abstract class PubSub protected ()
   protected def this(options: PubSubOptions) = this()
 }
 
+/* static members */
 @JSImport("sharedb", "PubSub")
 @js.native
 object PubSub extends js.Object {

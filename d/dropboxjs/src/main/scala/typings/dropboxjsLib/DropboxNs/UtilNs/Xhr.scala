@@ -68,6 +68,7 @@ class Xhr protected () extends js.Object {
   def signWithOauth(oauth: Oauth, cacheFriendly: scala.Boolean): Xhr = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.Util.Xhr")
 @js.native
 object Xhr extends js.Object {

@@ -21,10 +21,15 @@ object parse5DashHtmlparser2DashTreeDashAdapterLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def `!doctype`: `!doctype` = "!doctype".asInstanceOf[`!doctype`]
+  @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
+  @scala.inline
   def directive: directive = "directive".asInstanceOf[directive]
+  @scala.inline
   def root: root = "root".asInstanceOf[root]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

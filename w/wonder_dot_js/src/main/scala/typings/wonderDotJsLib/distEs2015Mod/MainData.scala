@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MainData ()
   extends wonderDotJsLib.distEs2015CoreDataMainDataMod.MainData
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "MainData")
 @js.native
 object MainData extends js.Object {

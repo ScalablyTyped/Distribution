@@ -19,6 +19,7 @@ class Credentials protected () extends js.Object {
   def setPassword(password: ProtectedValue): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Credentials")
 @js.native
 object Credentials extends js.Object {

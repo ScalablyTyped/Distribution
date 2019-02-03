@@ -29,6 +29,7 @@ class Select[T] protected ()
   /* private */ def maybeRenderClearButton(query: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select")
 @js.native
 object Select extends js.Object {

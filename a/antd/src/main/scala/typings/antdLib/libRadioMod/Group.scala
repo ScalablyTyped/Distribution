@@ -12,6 +12,7 @@ class Group protected ()
   def this(props: antdLib.libRadioInterfaceMod.RadioGroupProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/radio", "Group")
 @js.native
 object Group extends js.Object {

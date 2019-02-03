@@ -67,6 +67,7 @@ class RestApi protected ()
   val rootResourceId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/restApi", "RestApi")
 @js.native
 object RestApi extends js.Object {

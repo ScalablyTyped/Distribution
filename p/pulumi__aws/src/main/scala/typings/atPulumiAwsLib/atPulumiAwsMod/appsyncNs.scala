@@ -50,6 +50,7 @@ object appsyncNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.appsyncGraphQLApiMod.GraphQLApiArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object ApiKey extends js.Object {
     /**
@@ -74,6 +75,7 @@ object appsyncNs extends js.Object {
     ): atPulumiAwsLib.appsyncApiKeyMod.ApiKey = js.native
   }
   
+  /* static members */
   @js.native
   object DataSource extends js.Object {
     /**
@@ -98,6 +100,7 @@ object appsyncNs extends js.Object {
     ): atPulumiAwsLib.appsyncDataSourceMod.DataSource = js.native
   }
   
+  /* static members */
   @js.native
   object GraphQLApi extends js.Object {
     /**

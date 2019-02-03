@@ -15,6 +15,7 @@ class Gpio protected ()
   def this(gpio: scala.Double, direction: onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Direction, edge: onoffLib.onoffMod.underscoreUnderscoreONOFFNs.Edge, options: onoffLib.onoffMod.underscoreUnderscoreONOFFNs.GpioOptions) = this()
 }
 
+/* static members */
 @JSImport("onoff", "Gpio")
 @js.native
 object Gpio extends js.Object {

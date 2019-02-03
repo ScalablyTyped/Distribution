@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ComponentQuery () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.ComponentQuery")
 @js.native
 object ComponentQuery extends js.Object {

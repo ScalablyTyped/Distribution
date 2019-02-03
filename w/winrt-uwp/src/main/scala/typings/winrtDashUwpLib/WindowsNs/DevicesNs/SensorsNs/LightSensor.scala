@@ -39,7 +39,7 @@ abstract class LightSensor () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents an ambient-light sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.LightSensor")
 @js.native
 object LightSensor extends js.Object {

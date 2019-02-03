@@ -18,9 +18,13 @@ object apolloDashServerDashPluginDashBaseLibStrings {
   @js.native
   sealed trait response extends js.Object
   
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
   def operation: operation = "operation".asInstanceOf[operation]
+  @scala.inline
   def operationName: operationName = "operationName".asInstanceOf[operationName]
+  @scala.inline
   def response: response = "response".asInstanceOf[response]
 }
 

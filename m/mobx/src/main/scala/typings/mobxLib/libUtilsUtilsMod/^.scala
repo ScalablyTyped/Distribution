@@ -36,6 +36,7 @@ object ^ extends js.Object {
   def invariant(check: mobxLib.mobxLibNumbers.`true`, message: scala.Boolean): scala.Unit = js.native
   def isArrayLike(x: js.Any): scala.Boolean = js.native
   def isES6Map(thing: js.Any): scala.Boolean = js.native
+  def isES6Set(thing: js.Any): /* is std.Set<any> */ scala.Boolean = js.native
   def isObject(value: js.Any): scala.Boolean = js.native
   def isPlainObject(value: js.Any): scala.Boolean = js.native
   def isPropertyConfigurable(`object`: js.Any, prop: stdLib.PropertyKey): scala.Boolean = js.native

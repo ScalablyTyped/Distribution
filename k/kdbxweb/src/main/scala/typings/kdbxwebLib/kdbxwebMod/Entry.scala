@@ -27,6 +27,7 @@ class Entry () extends js.Object {
   def write(parentNode: stdLib.Node, ctx: Context): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "Entry")
 @js.native
 object Entry extends js.Object {

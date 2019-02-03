@@ -20,6 +20,7 @@ class Association protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.licensemanagerAssociationMod.AssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/licensemanager", "Association")
 @js.native
 object Association extends js.Object {

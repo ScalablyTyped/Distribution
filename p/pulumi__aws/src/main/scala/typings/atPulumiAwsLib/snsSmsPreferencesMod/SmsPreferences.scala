@@ -45,6 +45,7 @@ class SmsPreferences protected ()
   val usageReportS3Bucket: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns/smsPreferences", "SmsPreferences")
 @js.native
 object SmsPreferences extends js.Object {

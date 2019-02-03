@@ -72,6 +72,7 @@ class ObjectCreationExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ObjectCreationExpressionSyntax")
 @js.native
 object ObjectCreationExpressionSyntax extends js.Object {

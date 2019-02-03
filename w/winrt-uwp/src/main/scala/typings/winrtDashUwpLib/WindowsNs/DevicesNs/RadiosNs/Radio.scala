@@ -40,7 +40,7 @@ abstract class Radio () extends js.Object {
   def setStateAsync(value: RadioState): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[RadioAccessStatus] = js.native
 }
 
-/** Represents a radio device on the system. */
+/* static members */
 @JSGlobal("Windows.Devices.Radios.Radio")
 @js.native
 object Radio extends js.Object {

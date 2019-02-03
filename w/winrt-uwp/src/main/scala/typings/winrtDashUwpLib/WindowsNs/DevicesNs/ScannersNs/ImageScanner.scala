@@ -53,7 +53,7 @@ abstract class ImageScanner () extends js.Object {
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ImageScannerPreviewResult] = js.native
 }
 
-/** Represents the properties of images to scan. */
+/* static members */
 @JSGlobal("Windows.Devices.Scanners.ImageScanner")
 @js.native
 object ImageScanner extends js.Object {

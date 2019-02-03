@@ -15,6 +15,7 @@ class CommonShader ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/shader/shader/CommonShader", "CommonShader")
 @js.native
 object CommonShader extends js.Object {

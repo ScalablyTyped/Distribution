@@ -13,6 +13,7 @@ class default ()
   def this(options: stdLib.Partial[rruleLib.distEsmSrcTypesMod.Options], noCache: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("rrule/dist/esm/src", JSImport.Default)
 @js.native
 object default extends js.Object {

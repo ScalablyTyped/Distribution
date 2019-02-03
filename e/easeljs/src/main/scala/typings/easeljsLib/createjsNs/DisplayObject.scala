@@ -86,6 +86,7 @@ class DisplayObject ()
   def updateContext(ctx: stdLib.CanvasRenderingContext2D): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.DisplayObject")
 @js.native
 object DisplayObject extends js.Object {

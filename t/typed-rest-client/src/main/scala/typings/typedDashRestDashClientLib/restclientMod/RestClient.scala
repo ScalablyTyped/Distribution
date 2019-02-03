@@ -86,6 +86,7 @@ class RestClient protected () extends js.Object {
   ): js.Promise[IRestResponse[T]] = js.native
 }
 
+/* static members */
 @JSImport("typed-rest-client/RestClient", "RestClient")
 @js.native
 object RestClient extends js.Object {

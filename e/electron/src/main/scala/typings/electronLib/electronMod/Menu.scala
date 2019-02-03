@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Menu ()
   extends electronLib.ElectronNs.Menu
 
+/* static members */
 @JSImport("electron", "Menu")
 @js.native
 object Menu extends js.Object {

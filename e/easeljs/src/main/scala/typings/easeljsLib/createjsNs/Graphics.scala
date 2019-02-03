@@ -304,6 +304,7 @@ class Graphics () extends js.Object {
   def unstore(): Graphics = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.Graphics")
 @js.native
 object Graphics extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PlayReadyLicenseManagement () extends js.Object
 
-/** Performs license management operations. */
+/* static members */
 @JSGlobal("Windows.Media.Protection.PlayReady.PlayReadyLicenseManagement")
 @js.native
 object PlayReadyLicenseManagement extends js.Object {

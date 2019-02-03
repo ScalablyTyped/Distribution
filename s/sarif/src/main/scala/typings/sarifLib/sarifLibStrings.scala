@@ -93,34 +93,63 @@ object sarifLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def `2DOT0DOT0-csdDOT2DOTbetaDOT2018-10-10`: `2DOT0DOT0-csdDOT2DOTbetaDOT2018-10-10` = "2.0.0-csd.2.beta.2018-10-10".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2018-10-10`]
+  @scala.inline
   def absent: absent = "absent".asInstanceOf[absent]
+  @scala.inline
   def addedFile: addedFile = "addedFile".asInstanceOf[addedFile]
+  @scala.inline
   def analysisTarget: analysisTarget = "analysisTarget".asInstanceOf[analysisTarget]
+  @scala.inline
   def attachment: attachment = "attachment".asInstanceOf[attachment]
+  @scala.inline
   def deletedFile: deletedFile = "deletedFile".asInstanceOf[deletedFile]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def essential: essential = "essential".asInstanceOf[essential]
+  @scala.inline
   def existing: existing = "existing".asInstanceOf[existing]
+  @scala.inline
   def important: important = "important".asInstanceOf[important]
+  @scala.inline
   def modifiedFile: modifiedFile = "modifiedFile".asInstanceOf[modifiedFile]
+  @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
+  @scala.inline
   def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
+  @scala.inline
   def note: note = "note".asInstanceOf[note]
+  @scala.inline
   def open: open = "open".asInstanceOf[open]
+  @scala.inline
   def pass: pass = "pass".asInstanceOf[pass]
+  @scala.inline
   def renamedFile: renamedFile = "renamedFile".asInstanceOf[renamedFile]
+  @scala.inline
   def responseFile: responseFile = "responseFile".asInstanceOf[responseFile]
+  @scala.inline
   def resultFile: resultFile = "resultFile".asInstanceOf[resultFile]
+  @scala.inline
   def standardStream: standardStream = "standardStream".asInstanceOf[standardStream]
+  @scala.inline
   def suppressedExternally: suppressedExternally = "suppressedExternally".asInstanceOf[suppressedExternally]
+  @scala.inline
   def suppressedInSource: suppressedInSource = "suppressedInSource".asInstanceOf[suppressedInSource]
+  @scala.inline
   def traceFile: traceFile = "traceFile".asInstanceOf[traceFile]
+  @scala.inline
   def uncontrolledFile: uncontrolledFile = "uncontrolledFile".asInstanceOf[uncontrolledFile]
+  @scala.inline
   def unicodeCodePoints: unicodeCodePoints = "unicodeCodePoints".asInstanceOf[unicodeCodePoints]
+  @scala.inline
   def unimportant: unimportant = "unimportant".asInstanceOf[unimportant]
+  @scala.inline
   def unmodifiedFile: unmodifiedFile = "unmodifiedFile".asInstanceOf[unmodifiedFile]
+  @scala.inline
   def utf16CodeUnits: utf16CodeUnits = "utf16CodeUnits".asInstanceOf[utf16CodeUnits]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

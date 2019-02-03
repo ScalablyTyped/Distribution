@@ -66,7 +66,7 @@ class FollowedContent protected ()
   def updateData(url: java.lang.String, data: FollowedItemData): scala.Unit = js.native
 }
 
-/** Provides access to followed content items. */
+/* static members */
 @JSGlobal("SP.UserProfiles.FollowedContent")
 @js.native
 object FollowedContent extends js.Object {

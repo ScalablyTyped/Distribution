@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ScrollSpy ()
   extends materializeDashCssLib.MNs.ScrollSpy
 
+/* static members */
 @JSImport("materialize-css", "ScrollSpy")
 @js.native
 object ScrollSpy extends js.Object {

@@ -55,6 +55,7 @@ class Shader protected ()
   def unbind(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.webgl.Shader")
 @js.native
 object Shader extends js.Object {

@@ -19,6 +19,7 @@ class default () extends CertificateSet {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/CertificateSet", JSImport.Default)
 @js.native
 object default extends js.Object {

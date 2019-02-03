@@ -13,6 +13,7 @@ class TextArea protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "TextArea")
 @js.native
 object TextArea extends js.Object {

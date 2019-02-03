@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SpatialBoundingVolume () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Perception.Spatial.SpatialBoundingVolume")
 @js.native
 object SpatialBoundingVolume extends js.Object {

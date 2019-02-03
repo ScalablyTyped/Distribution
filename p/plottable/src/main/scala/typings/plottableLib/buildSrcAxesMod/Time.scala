@@ -24,6 +24,7 @@ class Time protected ()
   def this(scale: plottableLib.buildSrcScalesMod.Time, orientation: plottableLib.buildSrcAxesTimeAxisMod.TimeAxisOrientation, useUTC: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/axes", "Time")
 @js.native
 object Time extends js.Object {

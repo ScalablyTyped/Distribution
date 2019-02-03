@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CSSStyleValue () extends js.Object
 
+/* static members */
 @JSGlobal("CSSStyleValue")
 @js.native
 object CSSStyleValue extends js.Object {

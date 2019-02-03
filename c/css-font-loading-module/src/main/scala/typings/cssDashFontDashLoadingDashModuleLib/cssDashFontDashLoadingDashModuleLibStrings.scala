@@ -18,9 +18,13 @@ object cssDashFontDashLoadingDashModuleLibStrings {
   @js.native
   sealed trait unloaded extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
+  @scala.inline
   def unloaded: unloaded = "unloaded".asInstanceOf[unloaded]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Program ()
   extends wonderDotJsLib.distEs2015RendererProgramProgramMod.Program
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Program")
 @js.native
 object Program extends js.Object {

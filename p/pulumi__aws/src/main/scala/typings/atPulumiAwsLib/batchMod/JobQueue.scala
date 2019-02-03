@@ -20,6 +20,7 @@ class JobQueue protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.batchJobQueueMod.JobQueueArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/batch", "JobQueue")
 @js.native
 object JobQueue extends js.Object {

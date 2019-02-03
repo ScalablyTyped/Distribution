@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Color ()
   extends wonderDotJsLib.distEs2015StructureColorMod.Color
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "Color")
 @js.native
 object Color extends js.Object {

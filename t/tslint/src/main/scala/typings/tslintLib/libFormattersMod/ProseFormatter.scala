@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ProseFormatter ()
   extends tslintLib.libFormattersProseFormatterMod.Formatter
 
+/* static members */
 @JSImport("tslint/lib/formatters", "ProseFormatter")
 @js.native
 object ProseFormatter extends js.Object {

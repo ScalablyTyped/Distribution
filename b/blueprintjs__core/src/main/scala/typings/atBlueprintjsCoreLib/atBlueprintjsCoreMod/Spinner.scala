@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Spinner ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Spinner
 
+/* static members */
 @JSImport("@blueprintjs/core", "Spinner")
 @js.native
 object Spinner extends js.Object {

@@ -28,6 +28,7 @@ class ContainerPolicy protected ()
   val policy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mediastore/containerPolicy", "ContainerPolicy")
 @js.native
 object ContainerPolicy extends js.Object {

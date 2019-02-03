@@ -32,6 +32,7 @@ class DocumentationVersion protected ()
   val version: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/documentationVersion", "DocumentationVersion")
 @js.native
 object DocumentationVersion extends js.Object {

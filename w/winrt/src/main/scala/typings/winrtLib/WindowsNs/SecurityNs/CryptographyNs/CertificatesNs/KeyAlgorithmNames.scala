@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeyAlgorithmNames () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames")
 @js.native
 object KeyAlgorithmNames extends js.Object {

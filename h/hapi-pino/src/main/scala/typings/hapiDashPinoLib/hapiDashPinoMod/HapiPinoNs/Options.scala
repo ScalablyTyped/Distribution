@@ -10,7 +10,13 @@ trait Options extends js.Object {
   var ignorePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var instance: js.UndefOr[pinoLib.pinoMod.PNs.Logger] = js.undefined
   var level: js.UndefOr[LogLevels] = js.undefined
-  var levelTags: js.UndefOr[hapiDashPinoLib.hapiDashPinoLibStrings.Options with js.Any] = js.undefined
+  var levelTags: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in hapi-pino.hapi-pino.HapiPino.LogLevels ]: string}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in hapi-pino.hapi-pino.HapiPino.LogLevels ]: string}
+    */ hapiDashPinoLib.hapiDashPinoLibStrings.Options with js.Any
+  ] = js.undefined
   var logEvents: js.UndefOr[
     js.Array[java.lang.String] | hapiDashPinoLib.hapiDashPinoLibNumbers.`false` | scala.Null
   ] = js.undefined

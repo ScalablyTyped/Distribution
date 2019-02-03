@@ -13,6 +13,7 @@ class DeferStream protected ()
   var _buildStreamFunc: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/DeferStream", "DeferStream")
 @js.native
 object DeferStream extends js.Object {

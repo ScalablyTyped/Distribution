@@ -11,6 +11,7 @@ class default protected () extends Path {
   def this(path: js.Any) = this()
 }
 
+/* static members */
 @JSImport("path-parser", JSImport.Default)
 @js.native
 object default extends js.Object {

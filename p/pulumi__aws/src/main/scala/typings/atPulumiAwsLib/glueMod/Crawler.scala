@@ -20,6 +20,7 @@ class Crawler protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueCrawlerMod.CrawlerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "Crawler")
 @js.native
 object Crawler extends js.Object {

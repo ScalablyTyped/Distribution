@@ -23,6 +23,7 @@ class ColorGeometryInstanceAttribute ()
   override var value: stdLib.Uint8Array = js.native
 }
 
+/* static members */
 @JSImport("cesium", "ColorGeometryInstanceAttribute")
 @js.native
 object ColorGeometryInstanceAttribute extends js.Object {

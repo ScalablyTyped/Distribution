@@ -15,8 +15,11 @@ object kurentoDashUtilsLibStrings {
   @js.native
   sealed trait sendRecv extends js.Object
   
+  @scala.inline
   def recv: recv = "recv".asInstanceOf[recv]
+  @scala.inline
   def send: send = "send".asInstanceOf[send]
+  @scala.inline
   def sendRecv: sendRecv = "sendRecv".asInstanceOf[sendRecv]
 }
 

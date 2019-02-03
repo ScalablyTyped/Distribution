@@ -16,6 +16,7 @@ class Omnibar[T] ()
   var renderQueryList: js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/select/lib/esm/components/omnibar/omnibar", "Omnibar")
 @js.native
 object Omnibar extends js.Object {

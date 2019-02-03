@@ -36,6 +36,7 @@ object codepipelineNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.codepipelineWebhookMod.WebhookArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Pipeline extends js.Object {
     /**
@@ -60,6 +61,7 @@ object codepipelineNs extends js.Object {
     ): atPulumiAwsLib.codepipelinePipelineMod.Pipeline = js.native
   }
   
+  /* static members */
   @js.native
   object Webhook extends js.Object {
     /**

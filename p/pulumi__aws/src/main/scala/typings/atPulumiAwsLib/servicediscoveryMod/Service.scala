@@ -20,6 +20,7 @@ class Service protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.servicediscoveryServiceMod.ServiceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery", "Service")
 @js.native
 object Service extends js.Object {

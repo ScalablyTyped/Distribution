@@ -15,8 +15,11 @@ object reactDashCssDashModulesLibStrings {
   @js.native
   sealed trait `throw` extends js.Object
   
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
 }
 

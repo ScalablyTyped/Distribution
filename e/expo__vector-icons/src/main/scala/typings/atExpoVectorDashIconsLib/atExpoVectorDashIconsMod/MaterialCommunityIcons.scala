@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MaterialCommunityIcons ()
   extends reactDashNativeDashVectorDashIconsLib.materialcommunityiconsMod.default
 
+/* static members */
 @JSImport("@expo/vector-icons", "MaterialCommunityIcons")
 @js.native
 object MaterialCommunityIcons extends js.Object {

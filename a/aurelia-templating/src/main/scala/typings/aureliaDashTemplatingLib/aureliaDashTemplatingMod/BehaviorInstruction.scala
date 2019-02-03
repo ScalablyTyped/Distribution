@@ -24,6 +24,7 @@ class BehaviorInstruction () extends js.Object {
   var viewModel: js.Object = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "BehaviorInstruction")
 @js.native
 object BehaviorInstruction extends js.Object {

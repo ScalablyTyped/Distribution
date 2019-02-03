@@ -33,6 +33,7 @@ class ViewWebGL protected () extends IView {
   override def initCanvas(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/structure/View", "ViewWebGL")
 @js.native
 object ViewWebGL extends js.Object {

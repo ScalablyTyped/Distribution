@@ -31,6 +31,7 @@ class DelegationSet protected ()
   val referenceName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/route53/delegationSet", "DelegationSet")
 @js.native
 object DelegationSet extends js.Object {

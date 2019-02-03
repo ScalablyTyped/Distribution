@@ -22,6 +22,7 @@ class PointerDevice () extends IPointerDevice {
   override var supportedUsages: winrtLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[PointerDeviceUsage] = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Input.PointerDevice")
 @js.native
 object PointerDevice extends js.Object {

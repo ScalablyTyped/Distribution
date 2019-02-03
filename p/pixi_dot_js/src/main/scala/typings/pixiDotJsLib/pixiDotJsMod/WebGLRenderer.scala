@@ -16,6 +16,7 @@ class WebGLRenderer ()
   def this(screenWidth: scala.Double, screenHeight: scala.Double, options: pixiDotJsLib.PIXINs.WebGLRendererOptions) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {

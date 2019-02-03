@@ -17,6 +17,7 @@ class Picker protected () extends js.Object {
   def renderGroups(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Picker")
 @js.native
 object Picker extends js.Object {

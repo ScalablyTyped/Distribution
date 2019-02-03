@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CustomPropertiesCollection () extends js.Object
 
+/* static members */
 @JSImport("survey-knockout", "CustomPropertiesCollection")
 @js.native
 object CustomPropertiesCollection extends js.Object {

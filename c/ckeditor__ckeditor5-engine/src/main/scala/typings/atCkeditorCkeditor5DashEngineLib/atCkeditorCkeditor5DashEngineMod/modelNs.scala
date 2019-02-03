@@ -403,19 +403,19 @@ object modelNs extends js.Object {
   class Writer () extends js.Object
   
   def getItems(options: js.Object): stdLib.Iterable[Item] = js.native
-  // engine/model/documentfragment
+  /* static members */
   @js.native
   object DocumentFragment extends js.Object {
     def fromJSON(json: js.Object): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.DocumentFragment = js.native
   }
   
-  // engine/model/element
+  /* static members */
   @js.native
   object Element extends js.Object {
     def fromJSON(json: js.Object): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Element = js.native
   }
   
-  // engine/model/position
+  /* static members */
   @js.native
   object Position extends js.Object {
     def createAfter(item: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Item): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position = js.native
@@ -475,7 +475,7 @@ object modelNs extends js.Object {
     ): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Position = js.native
   }
   
-  // engine/model/text
+  /* static members */
   @js.native
   object Text extends js.Object {
     def fromJSON(json: js.Object): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Text = js.native

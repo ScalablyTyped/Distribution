@@ -18,6 +18,7 @@ class NgTableSettings protected () extends js.Object {
   /* private */ def optimizeFilterDelay[T](settings: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("ng-table/src/core/ngTableSettings", "NgTableSettings")
 @js.native
 object NgTableSettings extends js.Object {

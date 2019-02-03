@@ -69,6 +69,7 @@ class Rest protected () extends js.Object {
   def time(paramsOrCallback: js.Any, callback: ablyLib.ablyMod.TypesNs.timeCallback): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("ably", "Rest")
 @js.native
 object Rest extends js.Object {

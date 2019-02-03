@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tab ()
   extends atBlueprintjsCoreLib.libEsmComponentsTabsTabMod.Tab
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Tab")
 @js.native
 object Tab extends js.Object {

@@ -12,6 +12,7 @@ class namespaced protected () extends Snekfetch {
   def this(method: snekfetchLib.snekfetchMod.SnekfetchNs.methods, url: java.lang.String, opts: snekfetchLib.snekfetchMod.SnekfetchNs.SnekfetchOptions) = this()
 }
 
+/* static members */
 @JSImport("snekfetch", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

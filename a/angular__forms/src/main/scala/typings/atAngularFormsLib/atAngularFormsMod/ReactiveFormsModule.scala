@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ReactiveFormsModule ()
   extends atAngularFormsLib.publicUnderscoreApiMod.ReactiveFormsModule
 
+/* static members */
 @JSImport("@angular/forms", "ReactiveFormsModule")
 @js.native
 object ReactiveFormsModule extends js.Object {

@@ -1,11 +1,11 @@
 package typings
-package vueDashClassDashComponentLib.libDeclarationsMod
+package vueDashClassDashComponentLib
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait VueClass[V]
+trait Anon_Args[V]
   extends org.scalablytyped.runtime.Instantiable1[/* args (repeated) */ js.Any, V with vueLib.typesVueMod.Vue]
 

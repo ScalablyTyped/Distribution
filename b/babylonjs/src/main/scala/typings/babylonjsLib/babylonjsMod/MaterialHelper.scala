@@ -18,14 +18,7 @@ import scala.scalajs.js.annotation._
 class MaterialHelper ()
   extends babylonjsLib.BABYLONNs.MaterialHelper
 
-/**
-  * "Static Class" containing the most commonly used helper while dealing with material for
-  * rendering purpose.
-  *
-  * It contains the basic tools to help defining defines, binding uniform for the common part of the materials.
-  *
-  * This works by convention in BabylonJS but is meant to be use only with shader following the in place naming rules and conventions.
-  */
+/* static members */
 @JSImport("babylonjs", "MaterialHelper")
 @js.native
 object MaterialHelper extends js.Object {

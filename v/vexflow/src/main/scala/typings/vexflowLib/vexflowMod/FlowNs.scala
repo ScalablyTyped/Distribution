@@ -451,6 +451,7 @@ object FlowNs extends js.Object {
   ): scala.Unit = js.native
   def tabToGlyph(fret: java.lang.String): vexflowLib.Anon_Code = js.native
   def textWidth(text: java.lang.String): scala.Double = js.native
+  /* static members */
   @js.native
   object Accidental extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -465,6 +466,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Annotation extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -499,6 +501,7 @@ object FlowNs extends js.Object {
     type VerticalJustify = vexflowLib.VexNs.FlowNs.AnnotationNs.VerticalJustify
   }
   
+  /* static members */
   @js.native
   object Articulation extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -511,6 +514,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object BarNote extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -535,6 +539,7 @@ object FlowNs extends js.Object {
     type `type` = vexflowLib.VexNs.FlowNs.BarlineNs.`type`
   }
   
+  /* static members */
   @js.native
   object Beam extends js.Object {
     def applyAndGetBeams(
@@ -547,6 +552,7 @@ object FlowNs extends js.Object {
     def getDefaultBeamGroups(time_sig: java.lang.String): js.Array[vexflowLib.VexNs.FlowNs.Fraction] = js.native
   }
   
+  /* static members */
   @js.native
   object Bend extends js.Object {
     var DOWN: scala.Double = js.native
@@ -560,27 +566,32 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object BoundingBox extends js.Object {
     def copy(that: vexflowLib.VexNs.FlowNs.BoundingBox): vexflowLib.VexNs.FlowNs.BoundingBox = js.native
   }
   
+  /* static members */
   @js.native
   object CanvasContext extends js.Object {
     var HEIGHT: scala.Double = js.native
     var WIDTH: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object Clef extends js.Object {
     var DEBUG: scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Crescendo extends js.Object {
     var DEBUG: scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Curve extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -600,6 +611,7 @@ object FlowNs extends js.Object {
     type Position = vexflowLib.VexNs.FlowNs.CurveNs.Position
   }
   
+  /* static members */
   @js.native
   object Dot extends js.Object {
     def format(dots: scala.Double, state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
@@ -611,6 +623,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Formatter extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -673,6 +686,7 @@ object FlowNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Fraction extends js.Object {
     def GCD(a: scala.Double, b: scala.Double): scala.Double = js.native
@@ -680,6 +694,7 @@ object FlowNs extends js.Object {
     def LCMM(a: scala.Double, b: scala.Double): scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object FretHandFinger extends js.Object {
     def format(nums: js.Array[vexflowLib.VexNs.FlowNs.FretHandFinger], state: vexflowLib.Anon_Leftshift): scala.Unit = js.native
@@ -691,6 +706,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Glyph extends js.Object {
     def loadMetrics(font: vexflowLib.VexNs.IFont, code: java.lang.String, cache: scala.Boolean): vexflowLib.Anon_HaOutline = js.native
@@ -703,6 +719,7 @@ object FlowNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object GraceNoteGroup extends js.Object {
      //inconsistent name: 'show_slur' is called 'config', suggesting object (is boolean)
@@ -719,11 +736,13 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Modifier extends js.Object {
     var DEBUG: scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object ModifierContext extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -777,6 +796,7 @@ object FlowNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object NoteHead extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -788,6 +808,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Ornament extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -800,6 +821,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object PedalMarking extends js.Object {
      //inconsistent name: 'notes' is called 'type', suggesting string (is Note[])
@@ -828,6 +850,7 @@ object FlowNs extends js.Object {
     type Styles = vexflowLib.VexNs.FlowNs.PedalMarkingNs.Styles
   }
   
+  /* static members */
   @js.native
   object Renderer extends js.Object {
     var USE_CANVAS_PROXY: scala.Boolean = js.native
@@ -974,6 +997,7 @@ object FlowNs extends js.Object {
     type `type` = vexflowLib.VexNs.FlowNs.StaveConnectorNs.`type`
   }
   
+  /* static members */
   @js.native
   object StaveHairpin extends js.Object {
     def FormatByTicksAndDraw(
@@ -1050,6 +1074,7 @@ object FlowNs extends js.Object {
     type Position = vexflowLib.VexNs.FlowNs.StaveModifierNs.Position
   }
   
+  /* static members */
   @js.native
   object StaveNote extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -1066,6 +1091,7 @@ object FlowNs extends js.Object {
     val STEM_UP: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object Stem extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -1078,11 +1104,13 @@ object FlowNs extends js.Object {
     val UP: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object StemmableNote extends js.Object {
     var DEBUG: scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object StringNumber extends js.Object {
     def format(nums: js.Array[vexflowLib.VexNs.FlowNs.StringNumber], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
@@ -1094,6 +1122,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
   }
   
+  /* static members */
   @js.native
   object Stroke extends js.Object {
     def format(strokes: js.Array[vexflowLib.VexNs.FlowNs.Stroke], state: vexflowLib.Anon_Leftshift): scala.Boolean = js.native
@@ -1118,6 +1147,7 @@ object FlowNs extends js.Object {
     type Type = vexflowLib.VexNs.FlowNs.StrokeNs.Type
   }
   
+  /* static members */
   @js.native
   object TabSlide extends js.Object {
     def createSlideDown(notes: vexflowLib.Anon_Firstindices): vexflowLib.VexNs.FlowNs.TabSlide = js.native
@@ -1131,6 +1161,7 @@ object FlowNs extends js.Object {
     val SLIDE_UP: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object TextBracket extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -1150,6 +1181,7 @@ object FlowNs extends js.Object {
     type Positions = vexflowLib.VexNs.FlowNs.TextBracketNs.Positions
   }
   
+  /* static members */
   @js.native
   object TextDynamics extends js.Object {
     var DEBUG: scala.Boolean = js.native
@@ -1174,6 +1206,7 @@ object FlowNs extends js.Object {
     type Justification = vexflowLib.VexNs.FlowNs.TextNoteNs.Justification
   }
   
+  /* static members */
   @js.native
   object TickContext extends js.Object {
     def getNextContext(tContext: vexflowLib.VexNs.FlowNs.TickContext): vexflowLib.VexNs.FlowNs.TickContext = js.native
@@ -1204,6 +1237,7 @@ object FlowNs extends js.Object {
     val LOCATION_TOP: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object Vibrato extends js.Object {
     def format(

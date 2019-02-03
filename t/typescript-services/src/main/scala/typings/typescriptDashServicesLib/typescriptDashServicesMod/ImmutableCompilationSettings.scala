@@ -12,6 +12,7 @@ class ImmutableCompilationSettings protected ()
   def this(propagateEnumConstants: scala.Boolean, removeComments: scala.Boolean, watch: scala.Boolean, noResolve: scala.Boolean, allowAutomaticSemicolonInsertion: scala.Boolean, noImplicitAny: scala.Boolean, noLib: scala.Boolean, codeGenTarget: typescriptDashServicesLib.TypeScriptNs.LanguageVersion, moduleGenTarget: typescriptDashServicesLib.TypeScriptNs.ModuleGenTarget, outFileOption: java.lang.String, outDirOption: java.lang.String, mapSourceFiles: scala.Boolean, mapRoot: java.lang.String, sourceRoot: java.lang.String, generateDeclarationFiles: scala.Boolean, useCaseSensitiveFileResolution: scala.Boolean, gatherDiagnostics: scala.Boolean, codepage: scala.Double, createFileLog: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ImmutableCompilationSettings")
 @js.native
 object ImmutableCompilationSettings extends js.Object {

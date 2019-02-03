@@ -26,13 +26,7 @@ class default ()
   def this(opt_options: openlayersLib.openlayersMod.olxNs.interactionNs.DoubleClickZoomOptions) = this()
 }
 
-/**
-  * @classdesc
-  * Allows the user to zoom by double-clicking on the map.
-  *
-  * @param opt_options Options.
-  * @api stable
-  */
+/* static members */
 @JSImport("ol/interaction/doubleclickzoom", JSImport.Default)
 @js.native
 object default extends js.Object {

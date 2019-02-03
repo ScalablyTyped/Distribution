@@ -13,6 +13,7 @@ object libFocusMod extends js.Object {
   def focusAsync(element: atUifabricUtilitiesLib.Anon_Focus): scala.Unit = js.native
   def focusAsync(element: reactLib.HTMLElement): scala.Unit = js.native
   def focusFirstChild(rootElement: reactLib.HTMLElement): scala.Boolean = js.native
+  def getElementIndexPath(fromElement: reactLib.HTMLElement, toElement: reactLib.HTMLElement): js.Array[scala.Double] = js.native
   def getFirstFocusable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
   def getFirstFocusable(
     rootElement: reactLib.HTMLElement,
@@ -25,6 +26,7 @@ object libFocusMod extends js.Object {
     currentElement: reactLib.HTMLElement,
     includeElementsInFocusZones: scala.Boolean
   ): reactLib.HTMLElement | scala.Null = js.native
+  def getFocusableByIndexPath(parent: reactLib.HTMLElement, path: js.Array[scala.Double]): js.UndefOr[reactLib.HTMLElement] = js.native
   def getLastFocusable(rootElement: reactLib.HTMLElement, currentElement: reactLib.HTMLElement): reactLib.HTMLElement | scala.Null = js.native
   def getLastFocusable(
     rootElement: reactLib.HTMLElement,

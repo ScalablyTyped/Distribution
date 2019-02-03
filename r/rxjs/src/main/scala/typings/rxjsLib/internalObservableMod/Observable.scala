@@ -127,6 +127,7 @@ class Observable[T] ()
   def toPromise[T](`this`: Observable[T], PromiseCtor: stdLib.PromiseConstructorLike): js.Promise[T] = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/Observable", "Observable")
 @js.native
 object Observable extends js.Object {

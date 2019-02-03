@@ -2471,9 +2471,7 @@ class Engine protected () extends js.Object {
   def wipeCaches(bruteForce: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * The engine class is responsible for interfacing with all lower-level APIs such as WebGL and Audio
-  */
+/* static members */
 @JSGlobal("BABYLON.Engine")
 @js.native
 object Engine extends js.Object {

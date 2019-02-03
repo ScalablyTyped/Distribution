@@ -36,6 +36,7 @@ class Rect () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "Rect")
 @js.native
 object Rect extends js.Object {

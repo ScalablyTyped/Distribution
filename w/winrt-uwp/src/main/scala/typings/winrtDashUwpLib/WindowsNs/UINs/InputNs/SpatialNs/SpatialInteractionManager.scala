@@ -19,6 +19,7 @@ abstract class SpatialInteractionManager () extends js.Object {
    /* unmapped type */ var removeEventListener: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Input.Spatial.SpatialInteractionManager")
 @js.native
 object SpatialInteractionManager extends js.Object {

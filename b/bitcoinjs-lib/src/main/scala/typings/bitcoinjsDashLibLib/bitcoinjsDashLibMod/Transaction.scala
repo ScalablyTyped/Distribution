@@ -40,6 +40,7 @@ class Transaction () extends js.Object {
   def weight(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("bitcoinjs-lib", "Transaction")
 @js.native
 object Transaction extends js.Object {

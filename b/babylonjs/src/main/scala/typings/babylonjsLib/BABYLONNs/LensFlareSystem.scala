@@ -111,11 +111,7 @@ class LensFlareSystem protected () extends js.Object {
   def setEmitter(newEmitter: js.Any): scala.Unit = js.native
 }
 
-/**
-  * This represents a Lens Flare System or the shiny effect created by the light reflection on the  camera lenses.
-  * It is usually composed of several `BABYLON.lensFlare`.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_lens_flares
-  */
+/* static members */
 @JSGlobal("BABYLON.LensFlareSystem")
 @js.native
 object LensFlareSystem extends js.Object {

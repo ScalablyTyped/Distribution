@@ -25,6 +25,7 @@ class Button protected () extends Widget {
   def enable(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Button")
 @js.native
 object Button extends js.Object {

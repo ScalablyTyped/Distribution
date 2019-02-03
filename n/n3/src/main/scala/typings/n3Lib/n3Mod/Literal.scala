@@ -48,6 +48,7 @@ class Literal protected ()
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSImport("n3", "Literal")
 @js.native
 object Literal extends js.Object {

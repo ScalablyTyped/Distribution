@@ -21,10 +21,15 @@ object cwiseDashCompilerLibStrings {
   @js.native
   sealed trait shape extends js.Object
   
+  @scala.inline
   def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def index: index = "index".asInstanceOf[index]
+  @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
+  @scala.inline
   def scalar: scalar = "scalar".asInstanceOf[scalar]
+  @scala.inline
   def shape: shape = "shape".asInstanceOf[shape]
 }
 

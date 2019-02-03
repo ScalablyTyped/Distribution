@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Progress ()
   extends antdLib.libProgressMod.default
 
+/* static members */
 @JSImport("antd", "Progress")
 @js.native
 object Progress extends js.Object {

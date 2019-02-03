@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCTabFoundation ()
   extends atMaterialTabsLib.tabFoundationMod.default
 
+/* static members */
 @JSImport("@material/tabs/tab", "MDCTabFoundation")
 @js.native
 object MDCTabFoundation extends js.Object {

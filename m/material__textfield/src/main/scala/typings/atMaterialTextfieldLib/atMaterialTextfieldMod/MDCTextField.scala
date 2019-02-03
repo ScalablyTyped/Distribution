@@ -70,6 +70,7 @@ class MDCTextField ()
   def layout(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/textfield", "MDCTextField")
 @js.native
 object MDCTextField extends js.Object {

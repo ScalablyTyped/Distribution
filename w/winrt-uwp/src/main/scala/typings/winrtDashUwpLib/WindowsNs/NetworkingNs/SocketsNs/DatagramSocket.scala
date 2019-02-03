@@ -133,7 +133,7 @@ class DatagramSocket () extends js.Object {
   def transferOwnership(socketId: java.lang.String, data: SocketActivityContext, keepAliveTime: scala.Double): scala.Unit = js.native
 }
 
-/** Supports network communication using a UDP datagram socket. */
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.DatagramSocket")
 @js.native
 object DatagramSocket extends js.Object {

@@ -124,6 +124,7 @@ class TextLine () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.TextLine")
 @js.native
 object TextLine extends js.Object {

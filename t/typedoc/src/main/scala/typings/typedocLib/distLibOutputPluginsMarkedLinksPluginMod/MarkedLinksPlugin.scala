@@ -20,6 +20,7 @@ class MarkedLinksPlugin ()
   def onParseMarkdown(event: typedocLib.distLibOutputEventsMod.MarkdownEvent): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/plugins/MarkedLinksPlugin", "MarkedLinksPlugin")
 @js.native
 object MarkedLinksPlugin extends js.Object {

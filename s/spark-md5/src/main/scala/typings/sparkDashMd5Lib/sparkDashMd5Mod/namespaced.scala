@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends SparkMD5
 
+/* static members */
 @JSImport("spark-md5", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

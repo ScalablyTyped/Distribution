@@ -29,6 +29,7 @@ class Method ()
   def setSyntax(value: googleDashProtobufLib.googleProtobufTypeUnderscorePbMod.Syntax): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/api_pb", "Method")
 @js.native
 object Method extends js.Object {

@@ -18,6 +18,7 @@ class Response () extends Body {
   val url: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("apollo-env/lib/fetch/fetch", "Response")
 @js.native
 object Response extends js.Object {

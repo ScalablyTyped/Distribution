@@ -15,6 +15,7 @@ class BoundingRectangle ()
   def this(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "BoundingRectangle")
 @js.native
 object BoundingRectangle extends js.Object {

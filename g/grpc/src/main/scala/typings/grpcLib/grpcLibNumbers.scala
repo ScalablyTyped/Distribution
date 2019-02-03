@@ -12,7 +12,9 @@ object grpcLibNumbers {
   @js.native
   sealed trait `6` extends js.Object
   
+  @scala.inline
   def `5`: `5` = 5.asInstanceOf[`5`]
+  @scala.inline
   def `6`: `6` = 6.asInstanceOf[`6`]
 }
 

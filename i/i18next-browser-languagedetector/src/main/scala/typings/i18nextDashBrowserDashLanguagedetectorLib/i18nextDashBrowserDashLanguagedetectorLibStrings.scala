@@ -21,10 +21,15 @@ object i18nextDashBrowserDashLanguagedetectorLibStrings {
   @js.native
   sealed trait querystring extends js.Object
   
+  @scala.inline
   def cookie: cookie = "cookie".asInstanceOf[cookie]
+  @scala.inline
   def htmlTag: htmlTag = "htmlTag".asInstanceOf[htmlTag]
+  @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  @scala.inline
   def navigator: navigator = "navigator".asInstanceOf[navigator]
+  @scala.inline
   def querystring: querystring = "querystring".asInstanceOf[querystring]
 }
 

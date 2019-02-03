@@ -45,6 +45,7 @@ class Route protected ()
   val virtualRouterName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appmesh/route", "Route")
 @js.native
 object Route extends js.Object {

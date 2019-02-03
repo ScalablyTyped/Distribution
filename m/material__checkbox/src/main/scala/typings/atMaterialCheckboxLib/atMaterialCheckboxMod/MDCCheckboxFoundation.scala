@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MDCCheckboxFoundation ()
   extends atMaterialCheckboxLib.foundationMod.default
 
+/* static members */
 @JSImport("@material/checkbox", "MDCCheckboxFoundation")
 @js.native
 object MDCCheckboxFoundation extends js.Object {

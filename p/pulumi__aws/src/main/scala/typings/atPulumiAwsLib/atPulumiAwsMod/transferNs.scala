@@ -51,6 +51,7 @@ object transferNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.transferUserMod.UserArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Server extends js.Object {
     /**
@@ -75,6 +76,7 @@ object transferNs extends js.Object {
     ): atPulumiAwsLib.transferServerMod.Server = js.native
   }
   
+  /* static members */
   @js.native
   object SshKey extends js.Object {
     /**
@@ -99,6 +101,7 @@ object transferNs extends js.Object {
     ): atPulumiAwsLib.transferSshKeyMod.SshKey = js.native
   }
   
+  /* static members */
   @js.native
   object User extends js.Object {
     /**

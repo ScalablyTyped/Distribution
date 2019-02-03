@@ -41,6 +41,7 @@ object cloudhsmv2Ns extends js.Object {
     args: atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.cloudhsmv2GetClusterMod.GetClusterResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -65,6 +66,7 @@ object cloudhsmv2Ns extends js.Object {
     ): atPulumiAwsLib.cloudhsmv2ClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object Hsm extends js.Object {
     /**

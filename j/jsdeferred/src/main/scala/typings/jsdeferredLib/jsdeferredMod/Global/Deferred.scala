@@ -20,6 +20,7 @@ class Deferred () extends js.Object {
   def wait(n: scala.Double): Deferred = js.native
 }
 
+/* static members */
 @JSGlobal("Deferred")
 @js.native
 object Deferred extends js.Object {

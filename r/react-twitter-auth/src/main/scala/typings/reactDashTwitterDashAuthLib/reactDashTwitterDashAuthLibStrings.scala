@@ -15,8 +15,11 @@ object reactDashTwitterDashAuthLibStrings {
   @js.native
   sealed trait `same-origin` extends js.Object
   
+  @scala.inline
   def include: include = "include".asInstanceOf[include]
+  @scala.inline
   def omit: omit = "omit".asInstanceOf[omit]
+  @scala.inline
   def `same-origin`: `same-origin` = "same-origin".asInstanceOf[`same-origin`]
 }
 

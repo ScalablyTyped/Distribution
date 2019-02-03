@@ -13,7 +13,7 @@ abstract class ProtectionPolicyManager () extends js.Object {
   var identity: java.lang.String = js.native
 }
 
-/** Manages enterprise-protection policy on protected content. */
+/* static members */
 @JSGlobal("Windows.Security.EnterpriseData.ProtectionPolicyManager")
 @js.native
 object ProtectionPolicyManager extends js.Object {

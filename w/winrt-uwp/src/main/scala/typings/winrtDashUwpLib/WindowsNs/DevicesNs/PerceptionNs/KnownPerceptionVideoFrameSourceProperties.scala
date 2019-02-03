@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownPerceptionVideoFrameSourceProperties () extends js.Object
 
-/** Provides static properties of video frame sources. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.KnownPerceptionVideoFrameSourceProperties")
 @js.native
 object KnownPerceptionVideoFrameSourceProperties extends js.Object {

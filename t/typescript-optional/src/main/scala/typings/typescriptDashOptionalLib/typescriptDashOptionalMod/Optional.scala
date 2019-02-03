@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Optional[T] ()
   extends typescriptDashOptionalLib.distOptionalMod.Optional[T]
 
+/* static members */
 @JSImport("typescript-optional", "Optional")
 @js.native
 object Optional extends js.Object {

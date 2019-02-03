@@ -11,6 +11,8 @@ object ^ extends js.Object {
   val URI: /* These */ java.lang.String = js.native
   val these: fpDashTsLib.libFunctorMod.Functor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libBifunctorMod.Bifunctor2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v2[fpDashTsLib.libTheseMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v2[fpDashTsLib.libTheseMod.URI] = js.native
   def both[L, A](l: L, a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def fromEither[L, A](fa: fpDashTsLib.libEitherMod.Either[L, A]): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def fromOptions[L, A](fl: fpDashTsLib.libOptionMod.Option[L], fa: fpDashTsLib.libOptionMod.Option[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libTheseMod.These[L, A]] = js.native
   def fromThese[L, A](defaultThis: L, defaultThat: A): js.Function1[/* fa */ fpDashTsLib.libTheseMod.These[L, A], js.Tuple2[L, A]] = js.native
   def getMonad[L](S: fpDashTsLib.libSemigroupMod.Semigroup[L]): fpDashTsLib.libMonadMod.Monad2C[fpDashTsLib.fpDashTsLibStrings.These, L] = js.native
   def getSemigroup[L, A](SL: fpDashTsLib.libSemigroupMod.Semigroup[L], SA: fpDashTsLib.libSemigroupMod.Semigroup[A]): fpDashTsLib.libSemigroupMod.Semigroup[fpDashTsLib.libTheseMod.These[L, A]] = js.native
@@ -19,8 +21,12 @@ object ^ extends js.Object {
   def isThat[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is fp-ts.fp-ts/lib/These.That<L, A> */ scala.Boolean = js.native
   def isThis[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): /* is fp-ts.fp-ts/lib/These.This<L, A> */ scala.Boolean = js.native
   def that[L, A](a: A): fpDashTsLib.libTheseMod.These[L, A] = js.native
+  def thatOrBoth[L, A](defaultThat: A, ml: fpDashTsLib.libOptionMod.Option[L]): fpDashTsLib.libTheseMod.These[L, A] = js.native
   def theseLeft[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[L] = js.native
   def theseRight[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def theseThat[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[A] = js.native
+  def theseThis[L, A](fa: fpDashTsLib.libTheseMod.These[L, A]): fpDashTsLib.libOptionMod.Option[L] = js.native
+  def thisOrBoth[L, A](defaultThis: L, ma: fpDashTsLib.libOptionMod.Option[A]): fpDashTsLib.libTheseMod.These[L, A] = js.native
   def `this_`[L, A](l: L): fpDashTsLib.libTheseMod.These[L, A] = js.native
 }
 

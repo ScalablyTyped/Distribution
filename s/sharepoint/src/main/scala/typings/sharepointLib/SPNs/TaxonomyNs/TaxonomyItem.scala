@@ -18,6 +18,7 @@ class TaxonomyItem ()
   def set_name(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.Taxonomy.TaxonomyItem")
 @js.native
 object TaxonomyItem extends js.Object {

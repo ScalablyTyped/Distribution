@@ -16,11 +16,13 @@ object selectNs extends js.Object {
   class MDCSelectFoundation ()
     extends atMaterialSelectLib.atMaterialSelectMod.MDCSelectFoundation
   
+  /* static members */
   @js.native
   object MDCSelect extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialSelectLib.atMaterialSelectMod.MDCSelect = js.native
   }
   
+  /* static members */
   @js.native
   object MDCSelectFoundation extends js.Object {
     val cssClasses: atMaterialSelectLib.constantsMod.cssClasses = js.native

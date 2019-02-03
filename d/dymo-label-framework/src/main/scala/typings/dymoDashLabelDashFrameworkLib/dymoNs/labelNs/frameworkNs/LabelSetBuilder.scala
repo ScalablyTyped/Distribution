@@ -24,12 +24,7 @@ class LabelSetBuilder () extends js.Object {
   def getRecords(): js.Array[ILabelSetRecord] = js.native
 }
 
-/**
-	 * LabelSetBuilder is used to create a LabelSet to print multiple labels in one print job.
-	 * LabelSet is a collection of records. Each record contains multiple pairs; each pair consists
-	 * of the object name and the object text data/content. The data of each record are applied to all
-	 * corresponend objects and for each record one label is printed.
-	 */
+/* static members */
 @JSGlobal("dymo.label.framework.LabelSetBuilder")
 @js.native
 object LabelSetBuilder extends js.Object {

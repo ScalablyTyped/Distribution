@@ -18,9 +18,13 @@ object jasmineLibStrings {
   @js.native
   sealed trait set extends js.Object
   
+  @scala.inline
   def SpyObj: SpyObj = "SpyObj".asInstanceOf[SpyObj]
+  @scala.inline
   def SpyObjMethodNames: SpyObjMethodNames = "SpyObjMethodNames".asInstanceOf[SpyObjMethodNames]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
 }
 

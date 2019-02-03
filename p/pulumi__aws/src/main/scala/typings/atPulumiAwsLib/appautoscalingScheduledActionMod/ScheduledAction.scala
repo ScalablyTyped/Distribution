@@ -56,6 +56,7 @@ class ScheduledAction protected ()
   val startTime: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appautoscaling/scheduledAction", "ScheduledAction")
 @js.native
 object ScheduledAction extends js.Object {

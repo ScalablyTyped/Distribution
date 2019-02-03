@@ -61,7 +61,7 @@ abstract class MediaSource () extends js.Object {
   def reset(): scala.Unit = js.native
 }
 
-/** Represents a media source. Provides a common way to reference media from different sources and exposes a common model for accessing media data regardless of the underlying media format. */
+/* static members */
 @JSGlobal("Windows.Media.Core.MediaSource")
 @js.native
 object MediaSource extends js.Object {

@@ -13,6 +13,7 @@ class JavaScriptSerializer protected () extends js.Object {
   var source: js.Any = js.native
 }
 
+/* static members */
 @JSImport("mendixmodelsdk/dist/sdk/extras/as-model-sdk-code-serializer", "JavaScriptSerializer")
 @js.native
 object JavaScriptSerializer extends js.Object {

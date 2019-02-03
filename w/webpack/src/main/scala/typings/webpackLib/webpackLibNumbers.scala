@@ -24,11 +24,17 @@ object webpackLibNumbers {
   @js.native
   sealed trait `false` extends js.Object
   
+  @scala.inline
   def `-1`: `-1` = -1.asInstanceOf[`-1`]
+  @scala.inline
   def `0`: `0` = 0.asInstanceOf[`0`]
+  @scala.inline
   def `1`: `1` = 1.asInstanceOf[`1`]
+  @scala.inline
   def `30000`: `30000` = 30000.asInstanceOf[`30000`]
+  @scala.inline
   def `50000`: `50000` = 50000.asInstanceOf[`50000`]
+  @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
 }
 

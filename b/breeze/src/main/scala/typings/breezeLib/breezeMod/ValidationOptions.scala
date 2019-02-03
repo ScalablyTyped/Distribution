@@ -12,6 +12,7 @@ class ValidationOptions ()
   def this(config: breezeLib.breezeNs.ValidationOptionsConfiguration) = this()
 }
 
+/* static members */
 @JSImport("breeze", "ValidationOptions")
 @js.native
 object ValidationOptions extends js.Object {

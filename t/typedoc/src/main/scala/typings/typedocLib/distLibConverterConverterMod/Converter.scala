@@ -57,6 +57,7 @@ class Converter ()
   def getDefaultLib(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/converter", "Converter")
 @js.native
 object Converter extends js.Object {

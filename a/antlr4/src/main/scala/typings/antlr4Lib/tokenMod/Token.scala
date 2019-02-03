@@ -21,6 +21,7 @@ class Token () extends js.Object {
   def getTokenSource(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("antlr4/Token", "Token")
 @js.native
 object Token extends js.Object {

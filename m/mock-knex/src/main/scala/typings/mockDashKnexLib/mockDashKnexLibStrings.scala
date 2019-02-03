@@ -9,6 +9,7 @@ object mockDashKnexLibStrings {
   @js.native
   sealed trait query extends js.Object
   
+  @scala.inline
   def query: query = "query".asInstanceOf[query]
 }
 

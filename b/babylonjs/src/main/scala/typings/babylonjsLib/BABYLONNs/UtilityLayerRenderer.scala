@@ -59,9 +59,7 @@ class UtilityLayerRenderer protected () extends IDisposable {
   def render(): scala.Unit = js.native
 }
 
-/**
-  * Renders a layer on top of an existing scene
-  */
+/* static members */
 @JSGlobal("BABYLON.UtilityLayerRenderer")
 @js.native
 object UtilityLayerRenderer extends js.Object {

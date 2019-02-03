@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ProgressBar ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.ProgressBar
 
+/* static members */
 @JSImport("@blueprintjs/core", "ProgressBar")
 @js.native
 object ProgressBar extends js.Object {

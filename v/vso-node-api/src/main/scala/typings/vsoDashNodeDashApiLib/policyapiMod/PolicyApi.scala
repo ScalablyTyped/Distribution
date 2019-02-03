@@ -12,6 +12,7 @@ class PolicyApi protected () extends IPolicyApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/PolicyApi", "PolicyApi")
 @js.native
 object PolicyApi extends js.Object {

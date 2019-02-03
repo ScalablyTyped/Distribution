@@ -12,6 +12,7 @@ class SkipUntilStream protected ()
   def this(source: wonderDashFrpLib.distEs2015CoreStreamMod.Stream, otherStream: wonderDashFrpLib.distEs2015CoreStreamMod.Stream) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "SkipUntilStream")
 @js.native
 object SkipUntilStream extends js.Object {

@@ -18,6 +18,7 @@ class TypeQuerySyntax protected () extends SyntaxNode {
   def withTypeOfKeyword(typeOfKeyword: ISyntaxToken): TypeQuerySyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeQuerySyntax")
 @js.native
 object TypeQuerySyntax extends js.Object {

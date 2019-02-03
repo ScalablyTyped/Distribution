@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class RadioButtons ()
   extends reactLib.reactMod.Component[RadioButtonsProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("proton-native", "RadioButtons")
 @js.native
 object RadioButtons extends js.Object {

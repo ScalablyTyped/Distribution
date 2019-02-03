@@ -12,6 +12,7 @@ class TypeAnnotationSyntax protected ()
   def this(colonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, `type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TypeAnnotationSyntax")
 @js.native
 object TypeAnnotationSyntax extends js.Object {

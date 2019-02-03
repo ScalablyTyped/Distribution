@@ -16,6 +16,7 @@ class Type ()
   def this(properties: apolloDashEngineDashReportingDashProtobufLib.distProtobufMod.IType) = this()
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf", "Type")
 @js.native
 object Type extends js.Object {

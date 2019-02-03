@@ -23,6 +23,7 @@ class BoundingBox protected () extends js.Object {
   def setY(y: scala.Double): BoundingBox = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.BoundingBox")
 @js.native
 object BoundingBox extends js.Object {

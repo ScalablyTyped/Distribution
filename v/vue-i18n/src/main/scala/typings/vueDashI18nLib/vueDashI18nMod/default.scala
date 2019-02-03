@@ -11,6 +11,7 @@ class default () extends VueI18n {
   def this(options: vueDashI18nLib.vueDashI18nMod.VueI18nNs.I18nOptions) = this()
 }
 
+/* static members */
 @JSImport("vue-i18n", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Recaptcha
 
+/* static members */
 @JSImport("react-recaptcha", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

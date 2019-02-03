@@ -45,18 +45,31 @@ object nodeDashSqlDash2LibStrings {
   @js.native
   sealed trait sqlite extends js.Object
   
+  @scala.inline
   def Columns: Columns = "Columns".asInstanceOf[Columns]
+  @scala.inline
   def Queryable: Queryable = "Queryable".asInstanceOf[Queryable]
+  @scala.inline
   def TableDefinition: TableDefinition = "TableDefinition".asInstanceOf[TableDefinition]
+  @scala.inline
   def cascade: cascade = "cascade".asInstanceOf[cascade]
+  @scala.inline
   def mssql: mssql = "mssql".asInstanceOf[mssql]
+  @scala.inline
   def mysql: mysql = "mysql".asInstanceOf[mysql]
+  @scala.inline
   def `no action`: `no action` = "no action".asInstanceOf[`no action`]
+  @scala.inline
   def oracle: oracle = "oracle".asInstanceOf[oracle]
+  @scala.inline
   def postgres: postgres = "postgres".asInstanceOf[postgres]
+  @scala.inline
   def restrict: restrict = "restrict".asInstanceOf[restrict]
+  @scala.inline
   def `set default`: `set default` = "set default".asInstanceOf[`set default`]
+  @scala.inline
   def `set null`: `set null` = "set null".asInstanceOf[`set null`]
+  @scala.inline
   def sqlite: sqlite = "sqlite".asInstanceOf[sqlite]
 }
 

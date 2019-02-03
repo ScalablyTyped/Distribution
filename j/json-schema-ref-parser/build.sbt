@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "json-schema-ref-parser"
-version := "3.3.1-444233"
+version := "3.3.1-499132"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-0e2c03",
-  "org.scalablytyped" %%% "es6-promise" % "4.2.5-634c38",
-  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-6e1cbe",
-  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190201Z-e0972a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
-  "org.scalablytyped" %%% "ono" % "4.0.11-d76143",
-  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "z-schema" % "v3.16.0-dt-20180214Z-49163f")
+  "org.scalablytyped" %%% "debug" % "0.0-unknown-dt-20181004Z-18ad8e",
+  "org.scalablytyped" %%% "es6-promise" % "4.2.5-e10913",
+  "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-9bda5b",
+  "org.scalablytyped" %%% "json-schema" % "7.0-dt-20190201Z-5b2cd9",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
+  "org.scalablytyped" %%% "ono" % "4.0.11-d623b0",
+  "org.scalablytyped" %%% "std" % "3.3-0ec965",
+  "org.scalablytyped" %%% "z-schema" % "v3.16.0-dt-20180214Z-fc87f0")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

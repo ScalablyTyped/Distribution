@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class StringUtil ()
   extends samchonLib.libraryUtilsStringUtilMod.StringUtil
 
+/* static members */
 @JSImport("samchon/library", "StringUtil")
 @js.native
 object StringUtil extends js.Object {

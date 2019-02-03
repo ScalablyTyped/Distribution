@@ -17,6 +17,7 @@ class PerspectiveCamera ()
   def zoomOut(speed: scala.Double, max: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/component/camera/PerspectiveCamera", "PerspectiveCamera")
 @js.native
 object PerspectiveCamera extends js.Object {

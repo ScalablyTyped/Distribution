@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends FNV
 
+/* static members */
 @JSImport("fnv-lite", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

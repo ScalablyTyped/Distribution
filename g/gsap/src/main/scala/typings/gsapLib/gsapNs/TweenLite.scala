@@ -13,6 +13,7 @@ class TweenLite protected () extends Animation {
   val target: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("gsap.TweenLite")
 @js.native
 object TweenLite extends js.Object {

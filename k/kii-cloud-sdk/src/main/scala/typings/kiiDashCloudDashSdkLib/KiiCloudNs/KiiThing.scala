@@ -594,9 +594,7 @@ class KiiThing () extends js.Object {
   def update(callbacks: kiiDashCloudDashSdkLib.Anon_ErrorFailureSuccess): js.Promise[KiiThing] = js.native
 }
 
-/**
-  * Represents a Thing object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiThing")
 @js.native
 object KiiThing extends js.Object {

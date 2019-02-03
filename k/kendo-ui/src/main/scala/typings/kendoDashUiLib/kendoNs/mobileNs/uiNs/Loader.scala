@@ -17,6 +17,7 @@ class Loader protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.mobile.ui.Loader")
 @js.native
 object Loader extends js.Object {

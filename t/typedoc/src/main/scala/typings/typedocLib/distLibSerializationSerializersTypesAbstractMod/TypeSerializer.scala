@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TypeSerializer ()
   extends typedocLib.distLibSerializationComponentsMod.TypeSerializerComponent[typedocLib.distLibModelsMod.Type]
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers/types/abstract", "TypeSerializer")
 @js.native
 object TypeSerializer extends js.Object {

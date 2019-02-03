@@ -12,6 +12,7 @@ class LocaleProvider protected ()
   def this(props: antdLib.libLocaleDashProviderMod.LocaleProviderProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "LocaleProvider")
 @js.native
 object LocaleProvider extends js.Object {

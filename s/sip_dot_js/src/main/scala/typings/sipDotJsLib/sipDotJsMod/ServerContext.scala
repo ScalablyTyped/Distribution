@@ -12,6 +12,7 @@ class ServerContext protected ()
   def this(ua: sipDotJsLib.typesUaMod.UA, request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest) = this()
 }
 
+/* static members */
 @JSImport("sip.js", "ServerContext")
 @js.native
 object ServerContext extends js.Object {

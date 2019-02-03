@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class WebGLRenderer ()
   extends wonderDotJsLib.distEs2015RendererRendererWebGLRendererMod.WebGLRenderer
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {

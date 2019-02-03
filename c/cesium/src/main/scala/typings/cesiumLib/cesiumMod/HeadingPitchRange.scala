@@ -20,6 +20,7 @@ class HeadingPitchRange ()
   override var range: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("cesium", "HeadingPitchRange")
 @js.native
 object HeadingPitchRange extends js.Object {

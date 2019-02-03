@@ -28,6 +28,7 @@ class Polly protected () extends js.Object {
   def stop(): js.Promise[scala.Unit] = js.native
 }
 
+/* static members */
 @JSImport("@pollyjs/core", "Polly")
 @js.native
 object Polly extends js.Object {

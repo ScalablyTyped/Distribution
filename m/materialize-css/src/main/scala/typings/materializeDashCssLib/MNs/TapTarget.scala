@@ -22,6 +22,7 @@ class TapTarget () extends Component[TapTargetOptions] {
   def open(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.TapTarget")
 @js.native
 object TapTarget extends js.Object {

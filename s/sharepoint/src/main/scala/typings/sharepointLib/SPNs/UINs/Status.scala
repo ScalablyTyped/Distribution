@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Status () extends js.Object
 
+/* static members */
 @JSGlobal("SP.UI.Status")
 @js.native
 object Status extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class SmbiosInformation () extends js.Object
 
-/** Enables access to properties from the SMBIOS for the system. */
+/* static members */
 @JSGlobal("Windows.System.Profile.SystemManufacturers.SmbiosInformation")
 @js.native
 object SmbiosInformation extends js.Object {

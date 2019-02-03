@@ -50,6 +50,7 @@ class Queue protected ()
   def workTime(fn: js.Function): Queue = js.native
 }
 
+/* static members */
 @JSImport("kue", "Queue")
 @js.native
 object Queue extends js.Object {

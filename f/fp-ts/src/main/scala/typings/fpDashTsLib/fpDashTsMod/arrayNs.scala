@@ -214,6 +214,7 @@ object arrayNs extends js.Object {
   def unsafeDeleteAt[A](i: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def unsafeInsertAt[A](i: scala.Double, a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def unsafeUpdateAt[A](i: scala.Double, a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  def unzip[A, B](as: fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[A, B]]): js.Tuple2[fpDashTsLib.libArrayMod.Global.Array[A], fpDashTsLib.libArrayMod.Global.Array[B]] = js.native
   def updateAt[A](i: scala.Double, a: A, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[fpDashTsLib.libArrayMod.Global.Array[A]] = js.native
   def zip[A, B](fa: fpDashTsLib.libArrayMod.Global.Array[A], fb: fpDashTsLib.libArrayMod.Global.Array[B]): fpDashTsLib.libArrayMod.Global.Array[js.Tuple2[A, B]] = js.native
   def zipWith[A, B, C](

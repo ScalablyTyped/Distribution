@@ -51,6 +51,7 @@ object codedeployNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.codedeployDeploymentGroupMod.DeploymentGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Application extends js.Object {
     /**
@@ -75,6 +76,7 @@ object codedeployNs extends js.Object {
     ): atPulumiAwsLib.codedeployApplicationMod.Application = js.native
   }
   
+  /* static members */
   @js.native
   object DeploymentConfig extends js.Object {
     /**
@@ -99,6 +101,7 @@ object codedeployNs extends js.Object {
     ): atPulumiAwsLib.codedeployDeploymentConfigMod.DeploymentConfig = js.native
   }
   
+  /* static members */
   @js.native
   object DeploymentGroup extends js.Object {
     /**

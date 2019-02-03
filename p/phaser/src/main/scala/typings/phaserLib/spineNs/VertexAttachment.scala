@@ -24,6 +24,7 @@ abstract class VertexAttachment protected () extends Attachment {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.VertexAttachment")
 @js.native
 object VertexAttachment extends js.Object {

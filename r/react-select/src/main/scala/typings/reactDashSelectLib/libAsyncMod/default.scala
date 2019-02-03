@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default[OptionType] () extends Async[OptionType]
 
+/* static members */
 @JSImport("react-select/lib/Async", JSImport.Default)
 @js.native
 object default extends js.Object {

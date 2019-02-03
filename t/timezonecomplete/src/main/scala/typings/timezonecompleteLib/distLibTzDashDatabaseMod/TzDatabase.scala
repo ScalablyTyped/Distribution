@@ -272,6 +272,7 @@ class TzDatabase protected () extends js.Object {
   def zoneNames(): js.Array[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase")
 @js.native
 object TzDatabase extends js.Object {

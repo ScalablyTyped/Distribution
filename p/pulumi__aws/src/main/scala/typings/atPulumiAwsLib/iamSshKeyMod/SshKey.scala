@@ -44,6 +44,7 @@ class SshKey protected ()
   val username: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/sshKey", "SshKey")
 @js.native
 object SshKey extends js.Object {

@@ -57,7 +57,7 @@ abstract class PosPrinter () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a point-of-service printer. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.PosPrinter")
 @js.native
 object PosPrinter extends js.Object {

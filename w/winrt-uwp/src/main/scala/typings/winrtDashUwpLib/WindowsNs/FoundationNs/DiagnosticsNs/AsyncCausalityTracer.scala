@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class AsyncCausalityTracer () extends js.Object
 
-/** Enables tracing control flow across asynchronous operations. */
+/* static members */
 @JSGlobal("Windows.Foundation.Diagnostics.AsyncCausalityTracer")
 @js.native
 object AsyncCausalityTracer extends js.Object {

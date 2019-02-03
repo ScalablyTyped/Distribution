@@ -30,6 +30,7 @@ class Widget protected ()
   def setOptions(options: js.Object): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Widget")
 @js.native
 object Widget extends js.Object {

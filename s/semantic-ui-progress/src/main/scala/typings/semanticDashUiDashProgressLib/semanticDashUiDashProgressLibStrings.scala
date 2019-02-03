@@ -210,73 +210,141 @@ object semanticDashUiDashProgressLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def autoSuccess: autoSuccess = "autoSuccess".asInstanceOf[autoSuccess]
+  @scala.inline
   def bar: bar = "bar".asInstanceOf[bar]
+  @scala.inline
   def className: className = "className".asInstanceOf[className]
+  @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
+  @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
+  @scala.inline
   def decrement: decrement = "decrement".asInstanceOf[decrement]
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def `get normalized value`: `get normalized value` = "get normalized value".asInstanceOf[`get normalized value`]
+  @scala.inline
   def `get percent`: `get percent` = "get percent".asInstanceOf[`get percent`]
+  @scala.inline
   def `get text`: `get text` = "get text".asInstanceOf[`get text`]
+  @scala.inline
   def `get total`: `get total` = "get total".asInstanceOf[`get total`]
+  @scala.inline
   def `get value`: `get value` = "get value".asInstanceOf[`get value`]
+  @scala.inline
   def increment: increment = "increment".asInstanceOf[increment]
+  @scala.inline
   def `is active`: `is active` = "is active".asInstanceOf[`is active`]
+  @scala.inline
   def `is complete`: `is complete` = "is complete".asInstanceOf[`is complete`]
+  @scala.inline
   def `is error`: `is error` = "is error".asInstanceOf[`is error`]
+  @scala.inline
   def `is success`: `is success` = "is success".asInstanceOf[`is success`]
+  @scala.inline
   def `is warning`: `is warning` = "is warning".asInstanceOf[`is warning`]
+  @scala.inline
   def label: label = "label".asInstanceOf[label]
+  @scala.inline
   def limitValues: limitValues = "limitValues".asInstanceOf[limitValues]
+  @scala.inline
   def max: max = "max".asInstanceOf[max]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
+  @scala.inline
   def method: method = "method".asInstanceOf[method]
+  @scala.inline
   def min: min = "min".asInstanceOf[min]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def namespace: namespace = "namespace".asInstanceOf[namespace]
+  @scala.inline
   def nonNumeric: nonNumeric = "nonNumeric".asInstanceOf[nonNumeric]
+  @scala.inline
   def onActive: onActive = "onActive".asInstanceOf[onActive]
+  @scala.inline
   def onChange: onChange = "onChange".asInstanceOf[onChange]
+  @scala.inline
   def onError: onError = "onError".asInstanceOf[onError]
+  @scala.inline
   def onSuccess: onSuccess = "onSuccess".asInstanceOf[onSuccess]
+  @scala.inline
   def onWarning: onWarning = "onWarning".asInstanceOf[onWarning]
+  @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
+  @scala.inline
   def performance: performance = "performance".asInstanceOf[performance]
+  @scala.inline
   def precision: precision = "precision".asInstanceOf[precision]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
   def random: random = "random".asInstanceOf[random]
+  @scala.inline
   def ratio: ratio = "ratio".asInstanceOf[ratio]
+  @scala.inline
   def regExp: regExp = "regExp".asInstanceOf[regExp]
+  @scala.inline
   def `remove active`: `remove active` = "remove active".asInstanceOf[`remove active`]
+  @scala.inline
   def `remove error`: `remove error` = "remove error".asInstanceOf[`remove error`]
+  @scala.inline
   def `remove success`: `remove success` = "remove success".asInstanceOf[`remove success`]
+  @scala.inline
   def `remove warning`: `remove warning` = "remove warning".asInstanceOf[`remove warning`]
+  @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
+  @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
+  @scala.inline
   def `set active`: `set active` = "set active".asInstanceOf[`set active`]
+  @scala.inline
   def `set bar label`: `set bar label` = "set bar label".asInstanceOf[`set bar label`]
+  @scala.inline
   def `set duration`: `set duration` = "set duration".asInstanceOf[`set duration`]
+  @scala.inline
   def `set error`: `set error` = "set error".asInstanceOf[`set error`]
+  @scala.inline
   def `set label`: `set label` = "set label".asInstanceOf[`set label`]
+  @scala.inline
   def `set percent`: `set percent` = "set percent".asInstanceOf[`set percent`]
+  @scala.inline
   def `set progress`: `set progress` = "set progress".asInstanceOf[`set progress`]
+  @scala.inline
   def `set success`: `set success` = "set success".asInstanceOf[`set success`]
+  @scala.inline
   def `set total`: `set total` = "set total".asInstanceOf[`set total`]
+  @scala.inline
   def `set warning`: `set warning` = "set warning".asInstanceOf[`set warning`]
+  @scala.inline
   def setting: setting = "setting".asInstanceOf[setting]
+  @scala.inline
   def showActivity: showActivity = "showActivity".asInstanceOf[showActivity]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def success: success = "success".asInstanceOf[success]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def total: total = "total".asInstanceOf[total]
+  @scala.inline
   def `update progress`: `update progress` = "update progress".asInstanceOf[`update progress`]
+  @scala.inline
   def value: value = "value".asInstanceOf[value]
+  @scala.inline
   def variable: variable = "variable".asInstanceOf[variable]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

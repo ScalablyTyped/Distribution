@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MainData () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/data/MainData", "MainData")
 @js.native
 object MainData extends js.Object {

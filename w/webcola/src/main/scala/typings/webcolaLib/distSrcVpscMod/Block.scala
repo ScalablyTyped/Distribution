@@ -29,6 +29,7 @@ class Block protected () extends js.Object {
   def updateWeightedPosition(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("webcola/dist/src/vpsc", "Block")
 @js.native
 object Block extends js.Object {

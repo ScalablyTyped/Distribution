@@ -12,7 +12,9 @@ object atIonicUtilsDashFsLibStrings {
   @js.native
   sealed trait data extends js.Object
   
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
 }
 

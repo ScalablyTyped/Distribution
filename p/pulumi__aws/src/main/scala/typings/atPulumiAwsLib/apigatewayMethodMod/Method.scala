@@ -74,6 +74,7 @@ class Method protected ()
   val restApi: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.apigatewayRestApiMod.RestApi] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/method", "Method")
 @js.native
 object Method extends js.Object {

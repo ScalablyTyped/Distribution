@@ -11,6 +11,7 @@ class namespaced () extends Timer {
   def this(started: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("timer-machine", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

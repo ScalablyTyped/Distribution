@@ -59,6 +59,7 @@ class Click ()
   def onDoubleClick(callback: ClickCallback): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/interactions/clickInteraction", "Click")
 @js.native
 object Click extends js.Object {

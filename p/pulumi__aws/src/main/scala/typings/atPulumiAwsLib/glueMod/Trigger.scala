@@ -20,6 +20,7 @@ class Trigger protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.glueTriggerMod.TriggerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue", "Trigger")
 @js.native
 object Trigger extends js.Object {

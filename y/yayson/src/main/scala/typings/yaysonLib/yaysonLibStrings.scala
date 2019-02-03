@@ -12,7 +12,9 @@ object yaysonLibStrings {
   @js.native
   sealed trait sequelize extends js.Object
   
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def sequelize: sequelize = "sequelize".asInstanceOf[sequelize]
 }
 

@@ -366,7 +366,7 @@ class MediaCapture () extends js.Object {
   def stopRecordAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** Provides functionality for capturing photos, audio, and videos from a capture device, such as a webcam. */
+/* static members */
 @JSGlobal("Windows.Media.Capture.MediaCapture")
 @js.native
 object MediaCapture extends js.Object {

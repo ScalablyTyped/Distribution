@@ -12,6 +12,7 @@ class WebGLRenderer ()
   def setClearColor(color: wonderDotJsLib.distEs2015StructureColorMod.Color): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/renderer/WebGLRenderer", "WebGLRenderer")
 @js.native
 object WebGLRenderer extends js.Object {

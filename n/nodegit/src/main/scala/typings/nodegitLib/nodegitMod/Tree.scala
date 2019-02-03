@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tree ()
   extends nodegitLib.treeMod.Tree
 
+/* static members */
 @JSImport("nodegit", "Tree")
 @js.native
 object Tree extends js.Object {

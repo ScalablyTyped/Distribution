@@ -25,6 +25,7 @@ class namespaced () extends uuid {
   override def toURN(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("uuid-js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

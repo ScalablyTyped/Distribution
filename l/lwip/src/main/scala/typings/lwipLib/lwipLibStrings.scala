@@ -15,8 +15,11 @@ object lwipLibStrings {
   @js.native
   sealed trait png extends js.Object
   
+  @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
+  @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
+  @scala.inline
   def png: png = "png".asInstanceOf[png]
 }
 

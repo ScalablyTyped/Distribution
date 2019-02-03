@@ -137,6 +137,7 @@ object elasticloadbalancingNs extends js.Object {
     args: atPulumiAwsLib.elasticloadbalancingGetServiceAccountMod.GetServiceAccountArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.elasticloadbalancingGetServiceAccountMod.GetServiceAccountResult] = js.native
+  /* static members */
   @js.native
   object AppCookieStickinessPolicy extends js.Object {
     /**
@@ -161,6 +162,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingAppCookieStickinessPolicyMod.AppCookieStickinessPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object Attachment extends js.Object {
     /**
@@ -185,6 +187,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingAttachmentMod.Attachment = js.native
   }
   
+  /* static members */
   @js.native
   object ListenerPolicy extends js.Object {
     /**
@@ -209,6 +212,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingListenerPolicyMod.ListenerPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object LoadBalancer extends js.Object {
     /**
@@ -233,6 +237,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerMod.LoadBalancer = js.native
   }
   
+  /* static members */
   @js.native
   object LoadBalancerBackendServerPolicy extends js.Object {
     /**
@@ -257,6 +262,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerBackendServerPolicyMod.LoadBalancerBackendServerPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object LoadBalancerCookieStickinessPolicy extends js.Object {
     /**
@@ -281,6 +287,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerCookieStickinessPolicyMod.LoadBalancerCookieStickinessPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object LoadBalancerPolicy extends js.Object {
     /**
@@ -305,6 +312,7 @@ object elasticloadbalancingNs extends js.Object {
     ): atPulumiAwsLib.elasticloadbalancingLoadBalancerPolicyMod.LoadBalancerPolicy = js.native
   }
   
+  /* static members */
   @js.native
   object SslNegotiationPolicy extends js.Object {
     /**

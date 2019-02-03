@@ -19,6 +19,7 @@ abstract class BaseGauge protected () extends js.Object {
   def update(options: GenericOptions): BaseGauge = js.native
 }
 
+/* static members */
 @JSGlobal("CanvasGauges.BaseGauge")
 @js.native
 object BaseGauge extends js.Object {

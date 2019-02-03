@@ -87,7 +87,9 @@ object ^ extends js.Object {
     *  });
     * ```
     */
-  def multi[S /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String | getenvLib.ParseWithFallback | getenvLib.ParseWithEachType] */](spec: S): getenvLib.getenvLibStrings.multi with getenvLib.getenvMod.ParseMappings = js.native
+  def multi[S /* <: org.scalablytyped.runtime.StringDictionary[java.lang.String | getenvLib.ParseWithFallback | getenvLib.ParseWithEachType] */](spec: S): /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof S ]: string | getenv.getenv.ParseMappings[S[P][2]]}
+    */ getenvLib.getenvLibStrings.multi with js.Any = js.native
   /**
     * Return as string.
     */

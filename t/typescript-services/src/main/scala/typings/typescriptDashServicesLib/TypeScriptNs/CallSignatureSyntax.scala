@@ -23,6 +23,7 @@ class CallSignatureSyntax protected () extends SyntaxNode {
   def withTypeParameterList(typeParameterList: TypeParameterListSyntax): CallSignatureSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.CallSignatureSyntax")
 @js.native
 object CallSignatureSyntax extends js.Object {

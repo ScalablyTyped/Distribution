@@ -16,6 +16,7 @@ import scala.scalajs.js.annotation._
 class TimeZone protected ()
   extends timezonecompleteLib.distLibTimezoneMod.TimeZone
 
+/* static members */
 @JSImport("timezonecomplete", "TimeZone")
 @js.native
 object TimeZone extends js.Object {

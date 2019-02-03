@@ -22,6 +22,7 @@ class Toast ()
   /* private */ def triggerDismiss(didTimeoutExpire: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/toast/toast", "Toast")
 @js.native
 object Toast extends js.Object {

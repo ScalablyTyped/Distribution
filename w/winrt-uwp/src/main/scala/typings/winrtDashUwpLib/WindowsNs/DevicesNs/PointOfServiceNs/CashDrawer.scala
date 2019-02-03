@@ -57,7 +57,7 @@ abstract class CashDrawer () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** A cash drawer device in a retail scenario. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.CashDrawer")
 @js.native
 object CashDrawer extends js.Object {

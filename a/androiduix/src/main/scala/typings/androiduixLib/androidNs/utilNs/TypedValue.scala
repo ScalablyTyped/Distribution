@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TypedValue () extends js.Object
 
+/* static members */
 @JSGlobal("android.util.TypedValue")
 @js.native
 object TypedValue extends js.Object {

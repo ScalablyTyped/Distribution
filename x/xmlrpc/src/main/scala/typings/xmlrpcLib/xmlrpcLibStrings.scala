@@ -9,6 +9,7 @@ object xmlrpcLibStrings {
   @js.native
   sealed trait NotFound extends js.Object
   
+  @scala.inline
   def NotFound: NotFound = "NotFound".asInstanceOf[NotFound]
 }
 

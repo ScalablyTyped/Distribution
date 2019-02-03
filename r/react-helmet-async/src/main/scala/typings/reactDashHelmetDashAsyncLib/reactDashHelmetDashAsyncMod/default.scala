@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends reactDashHelmetLib.reactDashHelmetMod.default
 
+/* static members */
 @JSImport("react-helmet-async", JSImport.Default)
 @js.native
 object default extends js.Object {

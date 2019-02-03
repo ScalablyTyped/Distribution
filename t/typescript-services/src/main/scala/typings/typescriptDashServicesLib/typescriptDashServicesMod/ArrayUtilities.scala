@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrayUtilities ()
   extends typescriptDashServicesLib.TypeScriptNs.ArrayUtilities
 
+/* static members */
 @JSImport("typescript-services", "ArrayUtilities")
 @js.native
 object ArrayUtilities extends js.Object {

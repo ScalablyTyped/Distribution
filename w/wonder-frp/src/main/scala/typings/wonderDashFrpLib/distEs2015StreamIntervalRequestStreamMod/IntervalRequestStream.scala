@@ -13,6 +13,7 @@ class IntervalRequestStream protected ()
   var _isEnd: js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/stream/IntervalRequestStream", "IntervalRequestStream")
 @js.native
 object IntervalRequestStream extends js.Object {

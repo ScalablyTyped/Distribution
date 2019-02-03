@@ -13,6 +13,7 @@ class TimezonePicker protected ()
   def this(props: atBlueprintjsTimezoneLib.libEsmComponentsTimezoneDashPickerTimezonePickerMod.ITimezonePickerProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/timezone", "TimezonePicker")
 @js.native
 object TimezonePicker extends js.Object {

@@ -31,6 +31,7 @@ abstract class Event () extends js.Object {
   def stopPropagation(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ApplePayJS.Event")
 @js.native
 object Event extends js.Object {

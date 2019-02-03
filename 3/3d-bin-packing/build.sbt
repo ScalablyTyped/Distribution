@@ -1,19 +1,19 @@
 organization := "org.scalablytyped"
 name := "3d-bin-packing"
-version := "1.1.3-f186e9"
+version := "1.1.3-80bf75"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ecol" % "1.0.4-b6ae72",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
-  "org.scalablytyped" %%% "samchon" % "2.1.4-b65a2c",
-  "org.scalablytyped" %%% "std" % "3.3.1-6e0314",
-  "org.scalablytyped" %%% "sxml" % "1.0.3-9efb79",
-  "org.scalablytyped" %%% "tstl" % "2.1.1-a262b6",
-  "org.scalablytyped" %%% "url-variables" % "1.0.2-1bc44f",
-  "org.scalablytyped" %%% "websocket" % "0.0-unknown-dt-20180823Z-97afde")
+  "org.scalablytyped" %%% "ecol" % "1.0.4-bfb0d5",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
+  "org.scalablytyped" %%% "samchon" % "2.1.4-04042a",
+  "org.scalablytyped" %%% "std" % "3.3-0ec965",
+  "org.scalablytyped" %%% "sxml" % "1.0.3-f70d8f",
+  "org.scalablytyped" %%% "tstl" % "2.1.1-333b86",
+  "org.scalablytyped" %%% "url-variables" % "1.0.2-957e16",
+  "org.scalablytyped" %%% "websocket" % "0.0-unknown-dt-20180823Z-4a2883")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

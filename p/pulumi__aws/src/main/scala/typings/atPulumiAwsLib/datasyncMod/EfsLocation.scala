@@ -20,6 +20,7 @@ class EfsLocation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.datasyncEfsLocationMod.EfsLocationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/datasync", "EfsLocation")
 @js.native
 object EfsLocation extends js.Object {

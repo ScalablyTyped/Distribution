@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Session ()
   extends sipDotJsLib.typesSessionMod.Session
 
+/* static members */
 @JSImport("sip.js", "Session")
 @js.native
 object Session extends js.Object {

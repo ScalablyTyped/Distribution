@@ -289,9 +289,7 @@ class ListView[T] () extends js.Object {
   def resetItem(item: T, element: stdLib.HTMLElement): scala.Unit = js.native
 }
 
-/**
-  * Displays data items in a customizable list or grid.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ListView")
 @js.native
 object ListView extends js.Object {

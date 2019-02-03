@@ -20,6 +20,7 @@ class TaskDefinition protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinitionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ecs", "TaskDefinition")
 @js.native
 object TaskDefinition extends js.Object {

@@ -14,6 +14,7 @@ class Size protected () extends js.Object {
   def fromJS(expose: js.Function2[/* width */ scala.Double, /* height */ scala.Double, _]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("yoga-layout", "Size")
 @js.native
 object Size extends js.Object {

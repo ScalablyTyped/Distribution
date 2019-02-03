@@ -24,6 +24,7 @@ class PropertyBinding protected () extends js.Object {
   def unbind(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "PropertyBinding")
 @js.native
 object PropertyBinding extends js.Object {

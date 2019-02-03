@@ -29,6 +29,7 @@ class CustomWidgetCollection () extends js.Object {
   def setActivatedBy(widgetName: java.lang.String, activatedBy: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "CustomWidgetCollection")
 @js.native
 object CustomWidgetCollection extends js.Object {

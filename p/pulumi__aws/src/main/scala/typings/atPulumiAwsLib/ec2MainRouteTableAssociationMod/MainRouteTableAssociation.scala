@@ -33,6 +33,7 @@ class MainRouteTableAssociation protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/mainRouteTableAssociation", "MainRouteTableAssociation")
 @js.native
 object MainRouteTableAssociation extends js.Object {

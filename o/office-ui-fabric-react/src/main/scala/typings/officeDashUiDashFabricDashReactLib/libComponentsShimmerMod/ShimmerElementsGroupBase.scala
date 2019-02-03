@@ -12,6 +12,7 @@ class ShimmerElementsGroupBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsShimmerShimmerElementsGroupShimmerElementsGroupDotTypesMod.IShimmerElementsGroupProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Shimmer", "ShimmerElementsGroupBase")
 @js.native
 object ShimmerElementsGroupBase extends js.Object {

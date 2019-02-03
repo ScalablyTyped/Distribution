@@ -17,9 +17,7 @@ object regularexpressionsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase) = this()
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/regular-expressions relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object RegularExpression extends js.Object {
     var structureTypeName: java.lang.String = js.native

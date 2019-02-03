@@ -417,6 +417,7 @@ class Client protected () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("memjs", "Client")
 @js.native
 object Client extends js.Object {

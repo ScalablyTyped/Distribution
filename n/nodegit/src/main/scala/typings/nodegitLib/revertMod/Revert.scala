@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Revert () extends js.Object
 
+/* static members */
 @JSImport("nodegit/revert", "Revert")
 @js.native
 object Revert extends js.Object {

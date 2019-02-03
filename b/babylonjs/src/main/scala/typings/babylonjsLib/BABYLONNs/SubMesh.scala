@@ -178,9 +178,7 @@ class SubMesh protected ()
   def updateBoundingInfo(world: Matrix): SubMesh = js.native
 }
 
-/**
-  * Defines a subdivision inside a mesh
-  */
+/* static members */
 @JSGlobal("BABYLON.SubMesh")
 @js.native
 object SubMesh extends js.Object {

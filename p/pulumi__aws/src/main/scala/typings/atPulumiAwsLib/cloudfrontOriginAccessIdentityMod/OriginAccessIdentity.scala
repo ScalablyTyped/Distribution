@@ -52,6 +52,7 @@ class OriginAccessIdentity protected ()
   val s3CanonicalUserId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront/originAccessIdentity", "OriginAccessIdentity")
 @js.native
 object OriginAccessIdentity extends js.Object {

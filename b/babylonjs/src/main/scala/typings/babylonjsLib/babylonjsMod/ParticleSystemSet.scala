@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class ParticleSystemSet ()
   extends babylonjsLib.BABYLONNs.ParticleSystemSet
 
-/**
-  * Represents a set of particle systems working together to create a specific effect
-  */
+/* static members */
 @JSImport("babylonjs", "ParticleSystemSet")
 @js.native
 object ParticleSystemSet extends js.Object {

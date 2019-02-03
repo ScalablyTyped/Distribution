@@ -20,6 +20,7 @@ class MailFrom protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesMailFromMod.MailFromArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "MailFrom")
 @js.native
 object MailFrom extends js.Object {

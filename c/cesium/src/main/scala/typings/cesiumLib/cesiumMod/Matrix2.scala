@@ -15,6 +15,7 @@ class Matrix2 ()
   def this(column0Row0: scala.Double, column1Row0: scala.Double, column0Row1: scala.Double, column1Row1: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Matrix2")
 @js.native
 object Matrix2 extends js.Object {

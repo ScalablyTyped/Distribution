@@ -21,6 +21,7 @@ class AnimationClip () extends js.Object {
   def trim(): AnimationClip = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "AnimationClip")
 @js.native
 object AnimationClip extends js.Object {

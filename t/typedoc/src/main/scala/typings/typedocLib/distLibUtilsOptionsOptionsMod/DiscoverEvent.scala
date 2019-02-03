@@ -18,6 +18,7 @@ class DiscoverEvent protected ()
   def addInputFile(fileName: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/options", "DiscoverEvent")
 @js.native
 object DiscoverEvent extends js.Object {

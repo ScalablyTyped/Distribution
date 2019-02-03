@@ -12,6 +12,7 @@ class namespaced protected () extends Money {
   def this(amount: scala.Double, currency: jsDashMoneyLib.libCurrencyMod.CurrenciesNs.Currency) = this()
 }
 
+/* static members */
 @JSImport("js-money", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class LeapUtil () extends js.Object
 
+/* static members */
 @JSImport("leapmotionts", "LeapUtil")
 @js.native
 object LeapUtil extends js.Object {

@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class MongoBinary ()
   extends mongodbDashMemoryDashServerLib.mongodbDashMemoryDashServerMod.underscoreMongoBinaryNs.MongoBinary
 
-// disable error for a class with all static functions,
-// so the TypeScript declaration would map the implementation with flow types for easier support.
-// tslint:disable-next-line:no-unnecessary-class
+/* static members */
 @JSImport("mongodb-memory-server", "MongoBinary")
 @js.native
 object MongoBinary extends js.Object {

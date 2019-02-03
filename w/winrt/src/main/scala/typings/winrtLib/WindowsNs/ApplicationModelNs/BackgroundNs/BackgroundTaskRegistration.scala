@@ -20,6 +20,7 @@ class BackgroundTaskRegistration () extends IBackgroundTaskRegistration {
   override def unregister(cancelTask: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Background.BackgroundTaskRegistration")
 @js.native
 object BackgroundTaskRegistration extends js.Object {

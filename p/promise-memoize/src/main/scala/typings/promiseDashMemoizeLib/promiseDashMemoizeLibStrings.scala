@@ -12,7 +12,9 @@ object promiseDashMemoizeLibStrings {
   @js.native
   sealed trait simple extends js.Object
   
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def simple: simple = "simple".asInstanceOf[simple]
 }
 

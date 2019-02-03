@@ -76,11 +76,7 @@ class VideoTexture protected () extends Texture {
   def updateTexture(isVisible: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * If you want to display a video in your scene, this is the special texture for that.
-  * This special texture works similar to other textures, with the exception of a few parameters.
-  * @see https://doc.babylonjs.com/how_to/video_texture
-  */
+/* static members */
 @JSGlobal("BABYLON.VideoTexture")
 @js.native
 object VideoTexture extends js.Object {

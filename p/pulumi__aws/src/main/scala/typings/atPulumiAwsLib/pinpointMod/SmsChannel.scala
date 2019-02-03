@@ -20,6 +20,7 @@ class SmsChannel protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointSmsChannelMod.SmsChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "SmsChannel")
 @js.native
 object SmsChannel extends js.Object {

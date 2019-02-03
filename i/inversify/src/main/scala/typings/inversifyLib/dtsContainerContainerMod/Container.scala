@@ -62,6 +62,7 @@ class Container ()
   ): js.Array[T] = js.native
 }
 
+/* static members */
 @JSImport("inversify/dts/container/container", "Container")
 @js.native
 object Container extends js.Object {

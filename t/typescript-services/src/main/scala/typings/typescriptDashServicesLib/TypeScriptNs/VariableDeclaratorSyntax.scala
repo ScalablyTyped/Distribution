@@ -22,6 +22,7 @@ class VariableDeclaratorSyntax protected () extends SyntaxNode {
   def withTypeAnnotation(typeAnnotation: TypeAnnotationSyntax): VariableDeclaratorSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.VariableDeclaratorSyntax")
 @js.native
 object VariableDeclaratorSyntax extends js.Object {

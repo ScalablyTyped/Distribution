@@ -59,9 +59,7 @@ class SphericalPolynomial () extends js.Object {
   def scale(scale: scala.Double): scala.Unit = js.native
 }
 
-/**
-  * Class representing spherical polynomial coefficients to the 3rd degree
-  */
+/* static members */
 @JSGlobal("BABYLON.SphericalPolynomial")
 @js.native
 object SphericalPolynomial extends js.Object {

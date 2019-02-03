@@ -12,7 +12,9 @@ object gapiDotClientDotIdentitytoolkitLibStrings {
   @js.native
   sealed trait v3 extends js.Object
   
+  @scala.inline
   def identitytoolkit: identitytoolkit = "identitytoolkit".asInstanceOf[identitytoolkit]
+  @scala.inline
   def v3: v3 = "v3".asInstanceOf[v3]
 }
 

@@ -16,6 +16,7 @@ class Pathspec () extends js.Object {
   def matchesPath(flags: scala.Double, path: java.lang.String): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/path-spec", "Pathspec")
 @js.native
 object Pathspec extends js.Object {

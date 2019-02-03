@@ -34,6 +34,7 @@ class BulletGraph protected ()
   def setFeatureMeasureBarValue(index: scala.Double, measure: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.datavisualization.BulletGraph")
 @js.native
 object BulletGraph extends js.Object {

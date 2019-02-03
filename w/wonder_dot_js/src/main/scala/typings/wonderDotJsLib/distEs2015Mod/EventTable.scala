@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class EventTable ()
   extends wonderDotJsLib.distEs2015EventObjectEventTableMod.EventTable
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "EventTable")
 @js.native
 object EventTable extends js.Object {

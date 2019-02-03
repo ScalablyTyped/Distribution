@@ -19,6 +19,7 @@ class namespaced () extends VError {
   override def cause(): js.UndefOr[stdLib.Error] = js.native
 }
 
+/* static members */
 @JSImport("verror", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

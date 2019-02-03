@@ -316,6 +316,7 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   ): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager")
 @js.native
 object PlatformPackager extends js.Object {

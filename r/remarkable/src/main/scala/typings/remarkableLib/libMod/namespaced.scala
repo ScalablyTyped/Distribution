@@ -24,6 +24,7 @@ class namespaced () extends Remarkable {
   def this(preset: remarkableLib.remarkableLibStrings.remarkable, options: remarkableLib.libMod.RemarkableNs.Options) = this()
 }
 
+/* static members */
 @JSImport("remarkable/lib", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

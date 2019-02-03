@@ -41,6 +41,7 @@ class default () extends OCSPResponse {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/OCSPResponse", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -29,6 +29,7 @@ class MetadataService () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aws-sdk/lib/metadata_service", "MetadataService")
 @js.native
 object MetadataService extends js.Object {

@@ -15,6 +15,7 @@ class CircleGesture () extends Gesture {
   var radius: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "CircleGesture")
 @js.native
 object CircleGesture extends js.Object {

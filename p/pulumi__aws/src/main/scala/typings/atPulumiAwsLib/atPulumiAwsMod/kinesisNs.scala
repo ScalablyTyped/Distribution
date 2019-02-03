@@ -63,6 +63,7 @@ object kinesisNs extends js.Object {
     args: atPulumiAwsLib.kinesisGetStreamMod.GetStreamArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.kinesisGetStreamMod.GetStreamResult] = js.native
+  /* static members */
   @js.native
   object AnalyticsApplication extends js.Object {
     /**
@@ -87,6 +88,7 @@ object kinesisNs extends js.Object {
     ): atPulumiAwsLib.kinesisAnalyticsApplicationMod.AnalyticsApplication = js.native
   }
   
+  /* static members */
   @js.native
   object FirehoseDeliveryStream extends js.Object {
     /**
@@ -111,6 +113,7 @@ object kinesisNs extends js.Object {
     ): atPulumiAwsLib.kinesisFirehoseDeliveryStreamMod.FirehoseDeliveryStream = js.native
   }
   
+  /* static members */
   @js.native
   object Stream extends js.Object {
     /**

@@ -54,21 +54,37 @@ object cliDashBoxLibStrings {
   @js.native
   sealed trait w extends js.Object
   
+  @scala.inline
   def b: b = "b".asInstanceOf[b]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def center: center = "center".asInstanceOf[center]
+  @scala.inline
   def e: e = "e".asInstanceOf[e]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def n: n = "n".asInstanceOf[n]
+  @scala.inline
   def ne: ne = "ne".asInstanceOf[ne]
+  @scala.inline
   def nw: nw = "nw".asInstanceOf[nw]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def s: s = "s".asInstanceOf[s]
+  @scala.inline
   def se: se = "se".asInstanceOf[se]
+  @scala.inline
   def stringify: stringify = "stringify".asInstanceOf[stringify]
+  @scala.inline
   def sw: sw = "sw".asInstanceOf[sw]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def w: w = "w".asInstanceOf[w]
 }
 

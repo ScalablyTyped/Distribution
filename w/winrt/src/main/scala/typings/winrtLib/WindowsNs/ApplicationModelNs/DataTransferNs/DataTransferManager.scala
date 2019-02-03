@@ -14,6 +14,7 @@ class DataTransferManager () extends IDataTransferManager {
   override var ontargetapplicationchosen: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.DataTransferManager")
 @js.native
 object DataTransferManager extends js.Object {

@@ -12,7 +12,9 @@ object reactDashVerticalDashTimelineDashComponentLibStrings {
   @js.native
   sealed trait `2-columns` extends js.Object
   
+  @scala.inline
   def `1-column`: `1-column` = "1-column".asInstanceOf[`1-column`]
+  @scala.inline
   def `2-columns`: `2-columns` = "2-columns".asInstanceOf[`2-columns`]
 }
 

@@ -12,6 +12,7 @@ class CertificateList protected () extends PropertyList[Certificate] {
   def resolveOne(url: java.lang.String): CertificateDefinition = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "CertificateList")
 @js.native
 object CertificateList extends js.Object {

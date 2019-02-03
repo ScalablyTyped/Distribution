@@ -140,6 +140,7 @@ class ViewPager protected ()
   /* private */ def sortChildDrawingOrder(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("android.support.v4.view.ViewPager")
 @js.native
 object ViewPager extends js.Object {

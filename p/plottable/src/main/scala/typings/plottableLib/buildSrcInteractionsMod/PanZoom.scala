@@ -21,6 +21,7 @@ class PanZoom ()
   def this(xScale: plottableLib.buildSrcScalesScaleMod.TransformableScale[_, scala.Double], yScale: plottableLib.buildSrcScalesScaleMod.TransformableScale[_, scala.Double]) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/interactions", "PanZoom")
 @js.native
 object PanZoom extends js.Object {

@@ -12,6 +12,7 @@ class Resource ()
   def this(options: cesiumLib.Anon_HeadersProxy) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Resource")
 @js.native
 object Resource extends js.Object {

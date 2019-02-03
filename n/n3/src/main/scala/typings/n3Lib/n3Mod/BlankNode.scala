@@ -35,6 +35,7 @@ class BlankNode protected ()
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSImport("n3", "BlankNode")
 @js.native
 object BlankNode extends js.Object {

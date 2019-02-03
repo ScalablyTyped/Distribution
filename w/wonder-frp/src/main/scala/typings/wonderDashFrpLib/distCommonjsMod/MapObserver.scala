@@ -12,6 +12,7 @@ class MapObserver protected ()
   def this(currentObserver: wonderDashFrpLib.distCommonjsObserverIObserverMod.IObserver, selector: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "MapObserver")
 @js.native
 object MapObserver extends js.Object {

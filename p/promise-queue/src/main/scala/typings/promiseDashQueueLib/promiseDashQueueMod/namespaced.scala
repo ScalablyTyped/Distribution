@@ -42,6 +42,7 @@ class namespaced () extends PromiseQueue {
   override def getQueueLength(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("promise-queue", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

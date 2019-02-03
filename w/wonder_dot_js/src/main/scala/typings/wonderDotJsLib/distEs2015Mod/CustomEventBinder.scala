@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CustomEventBinder ()
   extends wonderDotJsLib.distEs2015EventBinderCustomEventBinderMod.CustomEventBinder
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CustomEventBinder")
 @js.native
 object CustomEventBinder extends js.Object {

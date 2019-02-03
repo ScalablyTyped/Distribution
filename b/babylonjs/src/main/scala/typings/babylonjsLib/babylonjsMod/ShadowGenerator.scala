@@ -27,11 +27,7 @@ class ShadowGenerator protected ()
   def this(mapSize: scala.Double, light: babylonjsLib.BABYLONNs.IShadowLight, useFullFloatFirst: scala.Boolean) = this()
 }
 
-/**
-  * Default implementation IShadowGenerator.
-  * This is the main object responsible of generating shadows in the framework.
-  * Documentation: https://doc.babylonjs.com/babylon101/shadows
-  */
+/* static members */
 @JSImport("babylonjs", "ShadowGenerator")
 @js.native
 object ShadowGenerator extends js.Object {

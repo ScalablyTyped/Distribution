@@ -29,6 +29,7 @@ class JSONEditor protected () extends js.Object {
   def setName(name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("JSONEditor")
 @js.native
 object JSONEditor extends js.Object {

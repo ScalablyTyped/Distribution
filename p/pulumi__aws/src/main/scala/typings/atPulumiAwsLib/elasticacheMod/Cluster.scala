@@ -21,6 +21,7 @@ class Cluster protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticacheClusterMod.ClusterArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticache", "Cluster")
 @js.native
 object Cluster extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KnownPerceptionFrameKind () extends js.Object
 
-/** A string used to identify the type classification of a frame. */
+/* static members */
 @JSGlobal("Windows.Devices.Perception.Provider.KnownPerceptionFrameKind")
 @js.native
 object KnownPerceptionFrameKind extends js.Object {

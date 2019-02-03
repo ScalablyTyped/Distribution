@@ -33,6 +33,7 @@ class DomainDkim protected ()
   val domain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/domainDkim", "DomainDkim")
 @js.native
 object DomainDkim extends js.Object {

@@ -33,6 +33,7 @@ class MeasuredText () extends js.Object {
   def setPos(pos: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.MeasuredText")
 @js.native
 object MeasuredText extends js.Object {

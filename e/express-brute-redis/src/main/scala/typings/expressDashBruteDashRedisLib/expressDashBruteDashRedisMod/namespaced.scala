@@ -18,9 +18,7 @@ class namespaced () extends express_brute_redis {
   def this(options: redisLib.redisMod.ClientOpts, args: js.Any*) = this()
 }
 
-/**
-  * @summary Redis store for Express Brute
-  */
+/* static members */
 @JSImport("express-brute-redis", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

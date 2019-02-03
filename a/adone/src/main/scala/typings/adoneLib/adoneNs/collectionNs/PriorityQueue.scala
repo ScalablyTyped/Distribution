@@ -46,9 +46,7 @@ class PriorityQueue[T] () extends js.Object {
   def toArray(): js.Array[T] = js.native
 }
 
-/**
-  * Represents a priority queue
-  */
+/* static members */
 @JSGlobal("adone.collection.PriorityQueue")
 @js.native
 object PriorityQueue extends js.Object {

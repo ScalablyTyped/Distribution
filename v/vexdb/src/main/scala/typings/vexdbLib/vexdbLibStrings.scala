@@ -36,15 +36,25 @@ object vexdbLibStrings {
   @js.native
   sealed trait teams extends js.Object
   
+  @scala.inline
   def awards: awards = "awards".asInstanceOf[awards]
+  @scala.inline
   def events: events = "events".asInstanceOf[events]
+  @scala.inline
   def fetch: fetch = "fetch".asInstanceOf[fetch]
+  @scala.inline
   def item: item = "item".asInstanceOf[item]
+  @scala.inline
   def matches: matches = "matches".asInstanceOf[matches]
+  @scala.inline
   def prefetch: prefetch = "prefetch".asInstanceOf[prefetch]
+  @scala.inline
   def rankings: rankings = "rankings".asInstanceOf[rankings]
+  @scala.inline
   def season_rankings: season_rankings = "season_rankings".asInstanceOf[season_rankings]
+  @scala.inline
   def skills: skills = "skills".asInstanceOf[skills]
+  @scala.inline
   def teams: teams = "teams".asInstanceOf[teams]
 }
 

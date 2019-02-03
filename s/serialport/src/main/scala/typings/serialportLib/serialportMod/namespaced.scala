@@ -14,6 +14,7 @@ class namespaced protected () extends SerialPort {
   def this(path: java.lang.String, options: serialportLib.serialportMod.SerialPortNs.OpenOptions, callback: serialportLib.serialportMod.SerialPortNs.ErrorCallback) = this()
 }
 
+/* static members */
 @JSImport("serialport", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

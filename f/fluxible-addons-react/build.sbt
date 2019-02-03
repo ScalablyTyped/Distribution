@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "fluxible-addons-react"
-version := "0.2-dt-20181009Z-346908"
+version := "0.2-dt-20181009Z-4d4cf8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "csstype" % "2.5.8-ae54dc",
-  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-581481",
-  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20181009Z-58fe40",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-8da1df",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-d610b9",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-1f77c5",
-  "org.scalablytyped" %%% "std" % "3.3.1-6e0314")
+  "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
+  "org.scalablytyped" %%% "dispatchr" % "1.2-dt-20180425Z-b5bab5",
+  "org.scalablytyped" %%% "fluxible" % "1.4-dt-20181009Z-feee1e",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-f7085e",
+  "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

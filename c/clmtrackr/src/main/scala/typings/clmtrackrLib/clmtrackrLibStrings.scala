@@ -24,11 +24,17 @@ object clmtrackrLibStrings {
   @js.native
   sealed trait sobel extends js.Object
   
+  @scala.inline
   def blend: blend = "blend".asInstanceOf[blend]
+  @scala.inline
   def cycle: cycle = "cycle".asInstanceOf[cycle]
+  @scala.inline
   def lbp: lbp = "lbp".asInstanceOf[lbp]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def single: single = "single".asInstanceOf[single]
+  @scala.inline
   def sobel: sobel = "sobel".asInstanceOf[sobel]
 }
 

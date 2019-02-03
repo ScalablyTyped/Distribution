@@ -25,10 +25,7 @@ class LoadFileError protected ()
   var request: js.UndefOr[stdLib.XMLHttpRequest] = js.native
 }
 
-/**
-  * @ignore
-  * Application error to support additional information when loading a file
-  */
+/* static members */
 @JSGlobal("BABYLON.LoadFileError")
 @js.native
 object LoadFileError extends js.Object {

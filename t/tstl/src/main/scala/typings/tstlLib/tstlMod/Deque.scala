@@ -83,6 +83,7 @@ class deque[T] ()
   def this(size: scala.Double, `val`: T) = this()
 }
 
+/* static members */
 @JSImport("tstl", "Deque")
 @js.native
 object Deque extends js.Object {
@@ -100,6 +101,7 @@ object Deque extends js.Object {
   val ROW_SIZE: js.Any = js.native
 }
 
+/* static members */
 @JSImport("tstl", "deque")
 @js.native
 object deque extends js.Object {

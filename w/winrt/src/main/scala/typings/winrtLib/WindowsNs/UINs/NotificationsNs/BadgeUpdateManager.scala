@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BadgeUpdateManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.Notifications.BadgeUpdateManager")
 @js.native
 object BadgeUpdateManager extends js.Object {

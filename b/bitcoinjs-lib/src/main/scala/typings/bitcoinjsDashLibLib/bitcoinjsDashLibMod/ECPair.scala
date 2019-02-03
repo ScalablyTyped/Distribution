@@ -17,6 +17,7 @@ class ECPair () extends js.Object {
   def verify(hash: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("bitcoinjs-lib", "ECPair")
 @js.native
 object ECPair extends js.Object {

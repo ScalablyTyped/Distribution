@@ -9,6 +9,7 @@ object skatejsLibStrings {
   @js.native
   sealed trait ComponentProps extends js.Object
   
+  @scala.inline
   def ComponentProps: ComponentProps = "ComponentProps".asInstanceOf[ComponentProps]
 }
 

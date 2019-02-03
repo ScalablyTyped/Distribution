@@ -12,6 +12,7 @@ class ReactNativeFile protected ()
   def this(options: extractDashFilesLib.extractDashFilesMod.ReactNativeFileOptions) = this()
 }
 
+/* static members */
 @JSImport("apollo-upload-client", "ReactNativeFile")
 @js.native
 object ReactNativeFile extends js.Object {

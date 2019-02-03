@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Compass () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.device.Compass")
 @js.native
 object Compass extends js.Object {

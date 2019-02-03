@@ -55,6 +55,7 @@ class FileExplorer protected () extends Widget {
   def removeToolbarItem(item: stdLib.HTMLElement): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.FileExplorer")
 @js.native
 object FileExplorer extends js.Object {

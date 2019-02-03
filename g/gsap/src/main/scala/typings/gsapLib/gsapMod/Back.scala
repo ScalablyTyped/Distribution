@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Back ()
   extends gsapLib.gsapNs.Back
 
+/* static members */
 @JSImport("gsap", "Back")
 @js.native
 object Back extends js.Object {

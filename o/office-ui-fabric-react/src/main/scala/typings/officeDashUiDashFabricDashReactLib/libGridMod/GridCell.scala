@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class GridCell[T, P /* <: officeDashUiDashFabricDashReactLib.libUtilitiesGridGridCellDotTypesMod.IGridCellProps[T] */] ()
   extends officeDashUiDashFabricDashReactLib.libUtilitiesGridMod.GridCell[T, P]
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Grid", "GridCell")
 @js.native
 object GridCell extends js.Object {

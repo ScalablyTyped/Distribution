@@ -450,153 +450,301 @@ object atPulumiAwsLibStrings {
   @js.native
   sealed trait `us-west-2` extends js.Object
   
+  @scala.inline
   def `*`: `*` = "*".asInstanceOf[`*`]
+  @scala.inline
   def `1Minute`: `1Minute` = "1Minute".asInstanceOf[`1Minute`]
+  @scala.inline
   def `2008-10-17`: `2008-10-17` = "2008-10-17".asInstanceOf[`2008-10-17`]
+  @scala.inline
   def `2012-10-17`: `2012-10-17` = "2012-10-17".asInstanceOf[`2012-10-17`]
+  @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
+  @scala.inline
   def ANY: ANY = "ANY".asInstanceOf[ANY]
+  @scala.inline
   def AT_TIMESTAMP: AT_TIMESTAMP = "AT_TIMESTAMP".asInstanceOf[AT_TIMESTAMP]
+  @scala.inline
   def AUDIT_CONTROL: AUDIT_CONTROL = "AUDIT_CONTROL".asInstanceOf[AUDIT_CONTROL]
+  @scala.inline
   def AUDIT_WRITE: AUDIT_WRITE = "AUDIT_WRITE".asInstanceOf[AUDIT_WRITE]
+  @scala.inline
   def Allow: Allow = "Allow".asInstanceOf[Allow]
+  @scala.inline
   def BLOCK_SUSPEND: BLOCK_SUSPEND = "BLOCK_SUSPEND".asInstanceOf[BLOCK_SUSPEND]
+  @scala.inline
   def CHOWN: CHOWN = "CHOWN".asInstanceOf[CHOWN]
+  @scala.inline
   def CompleteMultipartUpload: CompleteMultipartUpload = "CompleteMultipartUpload".asInstanceOf[CompleteMultipartUpload]
+  @scala.inline
   def Copy: Copy = "Copy".asInstanceOf[Copy]
+  @scala.inline
   def DAC_OVERRIDE: DAC_OVERRIDE = "DAC_OVERRIDE".asInstanceOf[DAC_OVERRIDE]
+  @scala.inline
   def DAC_READ_SEARCH: DAC_READ_SEARCH = "DAC_READ_SEARCH".asInstanceOf[DAC_READ_SEARCH]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Delete: Delete = "Delete".asInstanceOf[Delete]
+  @scala.inline
   def DeleteMarkerCreated: DeleteMarkerCreated = "DeleteMarkerCreated".asInstanceOf[DeleteMarkerCreated]
+  @scala.inline
   def Deny: Deny = "Deny".asInstanceOf[Deny]
+  @scala.inline
   def FOWNER: FOWNER = "FOWNER".asInstanceOf[FOWNER]
+  @scala.inline
   def FSETID: FSETID = "FSETID".asInstanceOf[FSETID]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def GroupDesiredCapacity: GroupDesiredCapacity = "GroupDesiredCapacity".asInstanceOf[GroupDesiredCapacity]
+  @scala.inline
   def GroupInServiceInstances: GroupInServiceInstances = "GroupInServiceInstances".asInstanceOf[GroupInServiceInstances]
+  @scala.inline
   def GroupMaxSize: GroupMaxSize = "GroupMaxSize".asInstanceOf[GroupMaxSize]
+  @scala.inline
   def GroupMinSize: GroupMinSize = "GroupMinSize".asInstanceOf[GroupMinSize]
+  @scala.inline
   def GroupPendingInstances: GroupPendingInstances = "GroupPendingInstances".asInstanceOf[GroupPendingInstances]
+  @scala.inline
   def GroupStandbyInstances: GroupStandbyInstances = "GroupStandbyInstances".asInstanceOf[GroupStandbyInstances]
+  @scala.inline
   def GroupTerminatingInstances: GroupTerminatingInstances = "GroupTerminatingInstances".asInstanceOf[GroupTerminatingInstances]
+  @scala.inline
   def GroupTotalInstances: GroupTotalInstances = "GroupTotalInstances".asInstanceOf[GroupTotalInstances]
+  @scala.inline
   def INSERT: INSERT = "INSERT".asInstanceOf[INSERT]
+  @scala.inline
   def IPC_LOCK: IPC_LOCK = "IPC_LOCK".asInstanceOf[IPC_LOCK]
+  @scala.inline
   def IPC_OWNER: IPC_OWNER = "IPC_OWNER".asInstanceOf[IPC_OWNER]
+  @scala.inline
   def KILL: KILL = "KILL".asInstanceOf[KILL]
+  @scala.inline
   def LATEST: LATEST = "LATEST".asInstanceOf[LATEST]
+  @scala.inline
   def LEASE: LEASE = "LEASE".asInstanceOf[LEASE]
+  @scala.inline
   def LINUX_IMMUTABLE: LINUX_IMMUTABLE = "LINUX_IMMUTABLE".asInstanceOf[LINUX_IMMUTABLE]
+  @scala.inline
   def `Linux/UNIX`: `Linux/UNIX` = "Linux/UNIX".asInstanceOf[`Linux/UNIX`]
+  @scala.inline
   def MAC_ADMIN: MAC_ADMIN = "MAC_ADMIN".asInstanceOf[MAC_ADMIN]
+  @scala.inline
   def MAC_OVERRIDE: MAC_OVERRIDE = "MAC_OVERRIDE".asInstanceOf[MAC_OVERRIDE]
+  @scala.inline
   def MKNOD: MKNOD = "MKNOD".asInstanceOf[MKNOD]
+  @scala.inline
   def MODIFY: MODIFY = "MODIFY".asInstanceOf[MODIFY]
+  @scala.inline
   def NET_ADMIN: NET_ADMIN = "NET_ADMIN".asInstanceOf[NET_ADMIN]
+  @scala.inline
   def NET_BIND_SERVICE: NET_BIND_SERVICE = "NET_BIND_SERVICE".asInstanceOf[NET_BIND_SERVICE]
+  @scala.inline
   def NET_BROADCAST: NET_BROADCAST = "NET_BROADCAST".asInstanceOf[NET_BROADCAST]
+  @scala.inline
   def NET_RAW: NET_RAW = "NET_RAW".asInstanceOf[NET_RAW]
+  @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def Post: Post = "Post".asInstanceOf[Post]
+  @scala.inline
   def Put: Put = "Put".asInstanceOf[Put]
+  @scala.inline
   def REMOVE: REMOVE = "REMOVE".asInstanceOf[REMOVE]
+  @scala.inline
   def `Red Hat Enterprise Linux`: `Red Hat Enterprise Linux` = "Red Hat Enterprise Linux".asInstanceOf[`Red Hat Enterprise Linux`]
+  @scala.inline
   def SETFCAP: SETFCAP = "SETFCAP".asInstanceOf[SETFCAP]
+  @scala.inline
   def SETGID: SETGID = "SETGID".asInstanceOf[SETGID]
+  @scala.inline
   def SETPCAP: SETPCAP = "SETPCAP".asInstanceOf[SETPCAP]
+  @scala.inline
   def SETUID: SETUID = "SETUID".asInstanceOf[SETUID]
+  @scala.inline
   def `SUSE Linux`: `SUSE Linux` = "SUSE Linux".asInstanceOf[`SUSE Linux`]
+  @scala.inline
   def SYSLOG: SYSLOG = "SYSLOG".asInstanceOf[SYSLOG]
+  @scala.inline
   def SYS_ADMIN: SYS_ADMIN = "SYS_ADMIN".asInstanceOf[SYS_ADMIN]
+  @scala.inline
   def SYS_BOOT: SYS_BOOT = "SYS_BOOT".asInstanceOf[SYS_BOOT]
+  @scala.inline
   def SYS_CHROOT: SYS_CHROOT = "SYS_CHROOT".asInstanceOf[SYS_CHROOT]
+  @scala.inline
   def SYS_MODULE: SYS_MODULE = "SYS_MODULE".asInstanceOf[SYS_MODULE]
+  @scala.inline
   def SYS_NICE: SYS_NICE = "SYS_NICE".asInstanceOf[SYS_NICE]
+  @scala.inline
   def SYS_PACCT: SYS_PACCT = "SYS_PACCT".asInstanceOf[SYS_PACCT]
+  @scala.inline
   def SYS_PTRACE: SYS_PTRACE = "SYS_PTRACE".asInstanceOf[SYS_PTRACE]
+  @scala.inline
   def SYS_RAWIO: SYS_RAWIO = "SYS_RAWIO".asInstanceOf[SYS_RAWIO]
+  @scala.inline
   def SYS_RESOURCE: SYS_RESOURCE = "SYS_RESOURCE".asInstanceOf[SYS_RESOURCE]
+  @scala.inline
   def SYS_TIME: SYS_TIME = "SYS_TIME".asInstanceOf[SYS_TIME]
+  @scala.inline
   def SYS_TTY_CONFIG: SYS_TTY_CONFIG = "SYS_TTY_CONFIG".asInstanceOf[SYS_TTY_CONFIG]
+  @scala.inline
   def TRIM_HORIZON: TRIM_HORIZON = "TRIM_HORIZON".asInstanceOf[TRIM_HORIZON]
+  @scala.inline
   def WAKE_ALARM: WAKE_ALARM = "WAKE_ALARM".asInstanceOf[WAKE_ALARM]
+  @scala.inline
   def Windows: Windows = "Windows".asInstanceOf[Windows]
+  @scala.inline
   def `Windows with SQL Server`: `Windows with SQL Server` = "Windows with SQL Server".asInstanceOf[`Windows with SQL Server`]
+  @scala.inline
   def `Windows with SQL Server Enterprise`: `Windows with SQL Server Enterprise` = "Windows with SQL Server Enterprise".asInstanceOf[`Windows with SQL Server Enterprise`]
+  @scala.inline
   def `Windows with SQL Server Standard`: `Windows with SQL Server Standard` = "Windows with SQL Server Standard".asInstanceOf[`Windows with SQL Server Standard`]
+  @scala.inline
   def `Windows with SQL Server Web`: `Windows with SQL Server Web` = "Windows with SQL Server Web".asInstanceOf[`Windows with SQL Server Web`]
+  @scala.inline
   def `ap-northeast-1`: `ap-northeast-1` = "ap-northeast-1".asInstanceOf[`ap-northeast-1`]
+  @scala.inline
   def `ap-northeast-2`: `ap-northeast-2` = "ap-northeast-2".asInstanceOf[`ap-northeast-2`]
+  @scala.inline
   def `ap-south-1`: `ap-south-1` = "ap-south-1".asInstanceOf[`ap-south-1`]
+  @scala.inline
   def `ap-southeast-1`: `ap-southeast-1` = "ap-southeast-1".asInstanceOf[`ap-southeast-1`]
+  @scala.inline
   def `ap-southeast-2`: `ap-southeast-2` = "ap-southeast-2".asInstanceOf[`ap-southeast-2`]
+  @scala.inline
   def `authenticated-read`: `authenticated-read` = "authenticated-read".asInstanceOf[`authenticated-read`]
+  @scala.inline
   def `autoscaling:EC2_INSTANCE_LAUNCH`: `autoscaling:EC2_INSTANCE_LAUNCH` = "autoscaling:EC2_INSTANCE_LAUNCH".asInstanceOf[`autoscaling:EC2_INSTANCE_LAUNCH`]
+  @scala.inline
   def `autoscaling:EC2_INSTANCE_LAUNCH_ERROR`: `autoscaling:EC2_INSTANCE_LAUNCH_ERROR` = "autoscaling:EC2_INSTANCE_LAUNCH_ERROR".asInstanceOf[`autoscaling:EC2_INSTANCE_LAUNCH_ERROR`]
+  @scala.inline
   def `autoscaling:EC2_INSTANCE_TERMINATE`: `autoscaling:EC2_INSTANCE_TERMINATE` = "autoscaling:EC2_INSTANCE_TERMINATE".asInstanceOf[`autoscaling:EC2_INSTANCE_TERMINATE`]
+  @scala.inline
   def `autoscaling:EC2_INSTANCE_TERMINATE_ERROR`: `autoscaling:EC2_INSTANCE_TERMINATE_ERROR` = "autoscaling:EC2_INSTANCE_TERMINATE_ERROR".asInstanceOf[`autoscaling:EC2_INSTANCE_TERMINATE_ERROR`]
+  @scala.inline
   def `autoscaling:TEST_NOTIFICATION`: `autoscaling:TEST_NOTIFICATION` = "autoscaling:TEST_NOTIFICATION".asInstanceOf[`autoscaling:TEST_NOTIFICATION`]
+  @scala.inline
   def `aws-exec-read`: `aws-exec-read` = "aws-exec-read".asInstanceOf[`aws-exec-read`]
+  @scala.inline
   def `aws:kinesis`: `aws:kinesis` = "aws:kinesis".asInstanceOf[`aws:kinesis`]
+  @scala.inline
   def `aws:kinesis:record`: `aws:kinesis:record` = "aws:kinesis:record".asInstanceOf[`aws:kinesis:record`]
+  @scala.inline
   def awslogs: awslogs = "awslogs".asInstanceOf[awslogs]
+  @scala.inline
   def `bucket-owner-full-control`: `bucket-owner-full-control` = "bucket-owner-full-control".asInstanceOf[`bucket-owner-full-control`]
+  @scala.inline
   def `bucket-owner-read`: `bucket-owner-read` = "bucket-owner-read".asInstanceOf[`bucket-owner-read`]
+  @scala.inline
   def `ca-central-1`: `ca-central-1` = "ca-central-1".asInstanceOf[`ca-central-1`]
+  @scala.inline
   def cluster: cluster = "cluster".asInstanceOf[cluster]
+  @scala.inline
   def core: core = "core".asInstanceOf[core]
+  @scala.inline
   def cpu: cpu = "cpu".asInstanceOf[cpu]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def dotnetcore1DOT0: dotnetcore1DOT0 = "dotnetcore1.0".asInstanceOf[dotnetcore1DOT0]
+  @scala.inline
   def dotnetcore2DOT0: dotnetcore2DOT0 = "dotnetcore2.0".asInstanceOf[dotnetcore2DOT0]
+  @scala.inline
   def dotnetcore2DOT1: dotnetcore2DOT1 = "dotnetcore2.1".asInstanceOf[dotnetcore2DOT1]
+  @scala.inline
   def `eu-central-1`: `eu-central-1` = "eu-central-1".asInstanceOf[`eu-central-1`]
+  @scala.inline
   def `eu-west-1`: `eu-west-1` = "eu-west-1".asInstanceOf[`eu-west-1`]
+  @scala.inline
   def `eu-west-2`: `eu-west-2` = "eu-west-2".asInstanceOf[`eu-west-2`]
+  @scala.inline
   def `eu-west-3`: `eu-west-3` = "eu-west-3".asInstanceOf[`eu-west-3`]
+  @scala.inline
   def fluentd: fluentd = "fluentd".asInstanceOf[fluentd]
+  @scala.inline
   def fsize: fsize = "fsize".asInstanceOf[fsize]
+  @scala.inline
   def gelf: gelf = "gelf".asInstanceOf[gelf]
+  @scala.inline
   def go1DOTx: go1DOTx = "go1.x".asInstanceOf[go1DOTx]
+  @scala.inline
   def java8: java8 = "java8".asInstanceOf[java8]
+  @scala.inline
   def journald: journald = "journald".asInstanceOf[journald]
+  @scala.inline
   def `json-file`: `json-file` = "json-file".asInstanceOf[`json-file`]
+  @scala.inline
   def locks: locks = "locks".asInstanceOf[locks]
+  @scala.inline
   def `log-delivery-write`: `log-delivery-write` = "log-delivery-write".asInstanceOf[`log-delivery-write`]
+  @scala.inline
   def memlock: memlock = "memlock".asInstanceOf[memlock]
+  @scala.inline
   def msgqueue: msgqueue = "msgqueue".asInstanceOf[msgqueue]
+  @scala.inline
   def nice: nice = "nice".asInstanceOf[nice]
+  @scala.inline
   def nodejs: nodejs = "nodejs".asInstanceOf[nodejs]
+  @scala.inline
   def nodejs4DOT3: nodejs4DOT3 = "nodejs4.3".asInstanceOf[nodejs4DOT3]
+  @scala.inline
   def `nodejs4DOT3-edge`: `nodejs4DOT3-edge` = "nodejs4.3-edge".asInstanceOf[`nodejs4DOT3-edge`]
+  @scala.inline
   def nodejs6DOT10: nodejs6DOT10 = "nodejs6.10".asInstanceOf[nodejs6DOT10]
+  @scala.inline
   def nodejs8DOT10: nodejs8DOT10 = "nodejs8.10".asInstanceOf[nodejs8DOT10]
+  @scala.inline
   def nofile: nofile = "nofile".asInstanceOf[nofile]
+  @scala.inline
   def nproc: nproc = "nproc".asInstanceOf[nproc]
+  @scala.inline
   def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
   def `public-read`: `public-read` = "public-read".asInstanceOf[`public-read`]
+  @scala.inline
   def `public-read-write`: `public-read-write` = "public-read-write".asInstanceOf[`public-read-write`]
+  @scala.inline
   def python2DOT7: python2DOT7 = "python2.7".asInstanceOf[python2DOT7]
+  @scala.inline
   def python3DOT6: python3DOT6 = "python3.6".asInstanceOf[python3DOT6]
+  @scala.inline
   def rss: rss = "rss".asInstanceOf[rss]
+  @scala.inline
   def rtprio: rtprio = "rtprio".asInstanceOf[rtprio]
+  @scala.inline
   def rttime: rttime = "rttime".asInstanceOf[rttime]
+  @scala.inline
   def `sa-east-1`: `sa-east-1` = "sa-east-1".asInstanceOf[`sa-east-1`]
+  @scala.inline
   def sigpending: sigpending = "sigpending".asInstanceOf[sigpending]
+  @scala.inline
   def splunk: splunk = "splunk".asInstanceOf[splunk]
+  @scala.inline
   def spread: spread = "spread".asInstanceOf[spread]
+  @scala.inline
   def stack: stack = "stack".asInstanceOf[stack]
+  @scala.inline
   def syslog: syslog = "syslog".asInstanceOf[syslog]
+  @scala.inline
   def tcp: tcp = "tcp".asInstanceOf[tcp]
+  @scala.inline
   def udp: udp = "udp".asInstanceOf[udp]
+  @scala.inline
   def `us-east-1`: `us-east-1` = "us-east-1".asInstanceOf[`us-east-1`]
+  @scala.inline
   def `us-east-2`: `us-east-2` = "us-east-2".asInstanceOf[`us-east-2`]
+  @scala.inline
   def `us-west-1`: `us-west-1` = "us-west-1".asInstanceOf[`us-west-1`]
+  @scala.inline
   def `us-west-2`: `us-west-2` = "us-west-2".asInstanceOf[`us-west-2`]
 }
 

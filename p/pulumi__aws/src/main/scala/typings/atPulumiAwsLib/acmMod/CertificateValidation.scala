@@ -20,6 +20,7 @@ class CertificateValidation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.acmCertificateValidationMod.CertificateValidationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acm", "CertificateValidation")
 @js.native
 object CertificateValidation extends js.Object {

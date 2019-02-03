@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EventObject () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.EventObject")
 @js.native
 object EventObject extends js.Object {

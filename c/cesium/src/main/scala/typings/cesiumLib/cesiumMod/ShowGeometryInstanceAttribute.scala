@@ -20,6 +20,7 @@ class ShowGeometryInstanceAttribute ()
   override var value: stdLib.Uint8Array = js.native
 }
 
+/* static members */
 @JSImport("cesium", "ShowGeometryInstanceAttribute")
 @js.native
 object ShowGeometryInstanceAttribute extends js.Object {

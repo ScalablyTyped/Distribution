@@ -94,6 +94,7 @@ class World ()
   override var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "World")
 @js.native
 object World extends js.Object {

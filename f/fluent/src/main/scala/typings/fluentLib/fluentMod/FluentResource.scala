@@ -13,6 +13,7 @@ class FluentResource ()
       /* import warning: DefaultedTParams.enterTsTypeRef $anonfun#applyOrElse newTParams $anonfun next no default parameter for V */ js.Any
     ]
 
+/* static members */
 @JSImport("fluent", "FluentResource")
 @js.native
 object FluentResource extends js.Object {

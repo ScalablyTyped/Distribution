@@ -15,8 +15,11 @@ object gulpDashWatchLibStrings {
   @js.native
   sealed trait unlink extends js.Object
   
+  @scala.inline
   def add: add = "add".asInstanceOf[add]
+  @scala.inline
   def change: change = "change".asInstanceOf[change]
+  @scala.inline
   def unlink: unlink = "unlink".asInstanceOf[unlink]
 }
 

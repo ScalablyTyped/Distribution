@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MenuMgr () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.menu.MenuMgr")
 @js.native
 object MenuMgr extends js.Object {

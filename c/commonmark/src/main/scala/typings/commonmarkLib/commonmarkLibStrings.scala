@@ -78,29 +78,53 @@ object commonmarkLibStrings {
   @js.native
   sealed trait thematic_break extends js.Object
   
+  @scala.inline
   def `)`: `)` = ")".asInstanceOf[`)`]
+  @scala.inline
   def DOT: DOT = ".".asInstanceOf[DOT]
+  @scala.inline
   def block_quote: block_quote = "block_quote".asInstanceOf[block_quote]
+  @scala.inline
   def bullet: bullet = "bullet".asInstanceOf[bullet]
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
+  @scala.inline
   def code_block: code_block = "code_block".asInstanceOf[code_block]
+  @scala.inline
   def custom_block: custom_block = "custom_block".asInstanceOf[custom_block]
+  @scala.inline
   def custom_inline: custom_inline = "custom_inline".asInstanceOf[custom_inline]
+  @scala.inline
   def document: document = "document".asInstanceOf[document]
+  @scala.inline
   def emph: emph = "emph".asInstanceOf[emph]
+  @scala.inline
   def heading: heading = "heading".asInstanceOf[heading]
+  @scala.inline
   def html_block: html_block = "html_block".asInstanceOf[html_block]
+  @scala.inline
   def html_inline: html_inline = "html_inline".asInstanceOf[html_inline]
+  @scala.inline
   def image: image = "image".asInstanceOf[image]
+  @scala.inline
   def item: item = "item".asInstanceOf[item]
+  @scala.inline
   def linebreak: linebreak = "linebreak".asInstanceOf[linebreak]
+  @scala.inline
   def link: link = "link".asInstanceOf[link]
+  @scala.inline
   def list: list = "list".asInstanceOf[list]
+  @scala.inline
   def ordered: ordered = "ordered".asInstanceOf[ordered]
+  @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
+  @scala.inline
   def softbreak: softbreak = "softbreak".asInstanceOf[softbreak]
+  @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def thematic_break: thematic_break = "thematic_break".asInstanceOf[thematic_break]
 }
 

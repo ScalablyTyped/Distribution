@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Bounce ()
   extends gsapLib.gsapNs.Bounce
 
+/* static members */
 @JSImport("gsap", "Bounce")
 @js.native
 object Bounce extends js.Object {

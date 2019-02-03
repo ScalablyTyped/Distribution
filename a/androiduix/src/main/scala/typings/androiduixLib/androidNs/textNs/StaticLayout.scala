@@ -83,6 +83,7 @@ class StaticLayout protected () extends Layout {
   def prepare(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.text.StaticLayout")
 @js.native
 object StaticLayout extends js.Object {

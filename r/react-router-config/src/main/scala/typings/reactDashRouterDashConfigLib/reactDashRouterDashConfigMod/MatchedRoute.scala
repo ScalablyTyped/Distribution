@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait MatchedRoute[Params /* <: reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.MatchedRoute with js.Any */] extends js.Object {
+trait MatchedRoute[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+{[ K in keyof Params ]:? string}
+  */ reactDashRouterDashConfigLib.reactDashRouterDashConfigLibStrings.MatchedRoute with js.Any */] extends js.Object {
   var `match`: reactDashRouterLib.reactDashRouterMod.`match`[Params]
   var route: RouteConfig
 }

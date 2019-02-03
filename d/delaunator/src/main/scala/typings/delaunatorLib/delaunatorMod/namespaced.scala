@@ -33,6 +33,7 @@ class namespaced[P] protected () extends Delaunator[P] {
   override var triangles: stdLib.Uint32Array = js.native
 }
 
+/* static members */
 @JSImport("delaunator", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class InteractiveSession () extends js.Object
 
-/** Provides Remote Desktop information about the current session. */
+/* static members */
 @JSGlobal("Windows.System.RemoteDesktop.InteractiveSession")
 @js.native
 object InteractiveSession extends js.Object {

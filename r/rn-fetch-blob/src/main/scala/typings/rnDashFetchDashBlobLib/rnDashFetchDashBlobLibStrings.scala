@@ -60,23 +60,41 @@ object rnDashFetchDashBlobLibStrings {
   @js.native
   sealed trait utf8 extends js.Object
   
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
+  @scala.inline
   def Empty: Empty = "".asInstanceOf[Empty]
+  @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
+  @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
+  @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
+  @scala.inline
   def ascii: ascii = "ascii".asInstanceOf[ascii]
+  @scala.inline
   def base64: base64 = "base64".asInstanceOf[base64]
+  @scala.inline
   def blob: blob = "blob".asInstanceOf[blob]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def directory: directory = "directory".asInstanceOf[directory]
+  @scala.inline
   def file: file = "file".asInstanceOf[file]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def path: path = "path".asInstanceOf[path]
+  @scala.inline
   def post: post = "post".asInstanceOf[post]
+  @scala.inline
   def put: put = "put".asInstanceOf[put]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }
 

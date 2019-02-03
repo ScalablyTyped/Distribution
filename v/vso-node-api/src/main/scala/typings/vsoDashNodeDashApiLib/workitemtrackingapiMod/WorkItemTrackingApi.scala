@@ -12,6 +12,7 @@ class WorkItemTrackingApi protected () extends IWorkItemTrackingApi {
   def this(baseUrl: java.lang.String, handlers: js.Array[vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestHandler], options: vsoDashNodeDashApiLib.interfacesCommonVsoBaseInterfacesMod.IRequestOptions) = this()
 }
 
+/* static members */
 @JSImport("vso-node-api/WorkItemTrackingApi", "WorkItemTrackingApi")
 @js.native
 object WorkItemTrackingApi extends js.Object {

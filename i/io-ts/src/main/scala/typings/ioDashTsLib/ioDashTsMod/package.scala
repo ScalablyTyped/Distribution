@@ -15,7 +15,9 @@ package object ioDashTsMod {
     js.Any
   ]
   type BooleanC = BooleanType
-  type Compact[A] = ioDashTsLib.ioDashTsLibStrings.Compact with A
+  type Compact[A] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof A ]: A[K]}
+    */ ioDashTsLib.ioDashTsLibStrings.Compact with A
   type Context = js.Array[ContextEntry]
   type Decode[I, A] = js.Function1[/* i */ I, Validation[A]]
   type Encode[A, O] = js.Function1[/* a */ A, O]
@@ -42,41 +44,65 @@ package object ioDashTsMod {
   type NumberC = NumberType
   type ObjectC = ObjectType
   type OutputOf[C /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: C['_O'] */ js.Any
-  type OutputOfDictionary[D /* <: Any */, C /* <: Any */] = ioDashTsLib.ioDashTsLibStrings.OutputOfDictionary with js.Any
-  type OutputOfPartialProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.OutputOfPartialProps with P
-  type OutputOfProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.OutputOfProps with P
+  type OutputOfDictionary[D /* <: Any */, C /* <: Any */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>}
+    */ ioDashTsLib.ioDashTsLibStrings.OutputOfDictionary with js.Any
+  type OutputOfPartialProps[P /* <: AnyProps */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]:? io-ts.io-ts.OutputOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.OutputOfPartialProps with P
+  type OutputOfProps[P /* <: AnyProps */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.OutputOfProps with P
   type PartialC[P /* <: Props */] = PartialType[
     P, 
-    ioDashTsLib.ioDashTsLibStrings.PartialC with P, 
-    ioDashTsLib.ioDashTsLibStrings.PartialC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]:? io-ts.io-ts.TypeOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.PartialC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]:? io-ts.io-ts.OutputOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.PartialC with P, 
     js.Any
   ]
   type PropsOf[T /* <: ioDashTsLib.Anon_Props */] = /* import warning: ImportType.apply Failed type conversion: T['props'] */ js.Any
   type ReadonlyArrayC[C /* <: Mixed */] = ReadonlyArrayType[C, js.Array[TypeOf[C]], js.Array[OutputOf[C]], js.Any]
   type ReadonlyC[C /* <: Mixed */] = ReadonlyType[
     C, 
-    ioDashTsLib.ioDashTsLibStrings.ReadonlyC with TypeOf[C], 
-    ioDashTsLib.ioDashTsLibStrings.ReadonlyC with OutputOf[C], 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {readonly [ K in keyof io-ts.io-ts.TypeOf<C> ]: io-ts.io-ts.TypeOf<C>[K]}
+    */ ioDashTsLib.ioDashTsLibStrings.ReadonlyC with TypeOf[C], 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {readonly [ K in keyof io-ts.io-ts.OutputOf<C> ]: io-ts.io-ts.OutputOf<C>[K]}
+    */ ioDashTsLib.ioDashTsLibStrings.ReadonlyC with OutputOf[C], 
     js.Any
   ]
   type RecordC[D /* <: Mixed */, C /* <: Mixed */] = DictionaryType[
     D, 
     C, 
-    ioDashTsLib.ioDashTsLibStrings.RecordC with js.Any, 
-    ioDashTsLib.ioDashTsLibStrings.RecordC with js.Any, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in io-ts.io-ts.TypeOf<D> ]: io-ts.io-ts.TypeOf<C>}
+    */ ioDashTsLib.ioDashTsLibStrings.RecordC with js.Any, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in io-ts.io-ts.OutputOf<D> ]: io-ts.io-ts.OutputOf<C>}
+    */ ioDashTsLib.ioDashTsLibStrings.RecordC with js.Any, 
     js.Any
   ]
   type RefinementC[C /* <: Any */] = RefinementType[C, TypeOf[C], OutputOf[C], InputOf[C]]
   type StrictC[P /* <: Props */] = StrictType[
     P, 
-    ioDashTsLib.ioDashTsLibStrings.StrictC with P, 
-    ioDashTsLib.ioDashTsLibStrings.StrictC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.StrictC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.StrictC with P, 
     js.Any
   ]
   type StringC = StringType
   type Tagged[Tag /* <: java.lang.String */, A, O] = (InterfaceType[TaggedProps[Tag], A, O, js.Any]) | (StrictType[TaggedProps[Tag], A, O, js.Any]) | (TaggedRefinement[Tag, A, O]) | (TaggedUnion[Tag, A, O]) | (TaggedIntersection[Tag, A, O]) | (TaggedExact[Tag, A, O]) | (RecursiveType[js.Any, A, O, js.Any])
   type TaggedIntersectionArgument[Tag /* <: java.lang.String */] = (js.Array[Tagged[Tag, js.Any, js.Any]]) | (js.Tuple2[Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple2[Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple3[Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple3[Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple3[Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple4[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple4[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple4[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple4[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]]) | (js.Tuple5[Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed, Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any], Mixed]) | (js.Tuple5[Mixed, Mixed, Mixed, Mixed, Tagged[Tag, js.Any, js.Any]])
-  type TaggedProps[Tag /* <: java.lang.String */] = ioDashTsLib.ioDashTsLibStrings.TaggedProps with js.Any
+  type TaggedProps[Tag /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in Tag ]: io-ts.io-ts.LiteralType<any>}
+    */ ioDashTsLib.ioDashTsLibStrings.TaggedProps with js.Any
   type TaggedUnionC[Tag /* <: java.lang.String */, CS /* <: js.Array[Tagged[Tag, _, _]] */] = TaggedUnionType[
     Tag, 
     CS, 
@@ -132,14 +158,24 @@ package object ioDashTsMod {
   ]
   type TypeC[P /* <: Props */] = InterfaceType[
     P, 
-    ioDashTsLib.ioDashTsLibStrings.TypeC with P, 
-    ioDashTsLib.ioDashTsLibStrings.TypeC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.TypeC with P, 
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.OutputOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.TypeC with P, 
     js.Any
   ]
   type TypeOf[C /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: C['_A'] */ js.Any
-  type TypeOfDictionary[D /* <: Any */, C /* <: Any */] = ioDashTsLib.ioDashTsLibStrings.TypeOfDictionary with js.Any
-  type TypeOfPartialProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.TypeOfPartialProps with P
-  type TypeOfProps[P /* <: AnyProps */] = ioDashTsLib.ioDashTsLibStrings.TypeOfProps with P
+  type TypeOfDictionary[D /* <: Any */, C /* <: Any */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in io-ts.io-ts.TypeOf<D> ]: io-ts.io-ts.TypeOf<C>}
+    */ ioDashTsLib.ioDashTsLibStrings.TypeOfDictionary with js.Any
+  type TypeOfPartialProps[P /* <: AnyProps */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]:? io-ts.io-ts.TypeOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.TypeOfPartialProps with P
+  type TypeOfProps[P /* <: AnyProps */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof P ]: io-ts.io-ts.TypeOf<P[K]>}
+    */ ioDashTsLib.ioDashTsLibStrings.TypeOfProps with P
   type UndefinedC = UndefinedType
   type UnionC[CS /* <: js.Array[Mixed] */] = UnionType[
     CS, 

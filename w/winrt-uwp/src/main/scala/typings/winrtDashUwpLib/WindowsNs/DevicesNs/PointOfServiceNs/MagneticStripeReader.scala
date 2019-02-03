@@ -62,7 +62,7 @@ abstract class MagneticStripeReader () extends js.Object {
   ): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer] = js.native
 }
 
-/** Represents the magnetic stripe reader device. */
+/* static members */
 @JSGlobal("Windows.Devices.PointOfService.MagneticStripeReader")
 @js.native
 object MagneticStripeReader extends js.Object {

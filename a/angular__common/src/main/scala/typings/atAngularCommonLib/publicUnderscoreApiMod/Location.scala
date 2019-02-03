@@ -12,6 +12,7 @@ class Location protected ()
   def this(platformStrategy: atAngularCommonLib.srcLocationLocationUnderscoreStrategyMod.LocationStrategy) = this()
 }
 
+/* static members */
 @JSImport("@angular/common/public_api", "Location")
 @js.native
 object Location extends js.Object {

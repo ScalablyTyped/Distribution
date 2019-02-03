@@ -13,6 +13,7 @@ class TypeScriptSource ()
   var declarations: js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/utils/options/sources/typescript", "TypeScriptSource")
 @js.native
 object TypeScriptSource extends js.Object {

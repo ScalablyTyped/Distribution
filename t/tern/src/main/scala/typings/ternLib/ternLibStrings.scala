@@ -45,18 +45,31 @@ object ternLibStrings {
   @js.native
   sealed trait `type` extends js.Object
   
+  @scala.inline
   def completions: completions = "completions".asInstanceOf[completions]
+  @scala.inline
   def definition: definition = "definition".asInstanceOf[definition]
+  @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
+  @scala.inline
   def documentation: documentation = "documentation".asInstanceOf[documentation]
+  @scala.inline
   def files: files = "files".asInstanceOf[files]
+  @scala.inline
   def full: full = "full".asInstanceOf[full]
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def local: local = "local".asInstanceOf[local]
+  @scala.inline
   def part: part = "part".asInstanceOf[part]
+  @scala.inline
   def properties: properties = "properties".asInstanceOf[properties]
+  @scala.inline
   def refs: refs = "refs".asInstanceOf[refs]
+  @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
+  @scala.inline
   def `type`: `type` = "type".asInstanceOf[`type`]
 }
 

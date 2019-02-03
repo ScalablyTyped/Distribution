@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Divider ()
   extends atBlueprintjsCoreLib.libEsmComponentsDividerDividerMod.Divider
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Divider")
 @js.native
 object Divider extends js.Object {

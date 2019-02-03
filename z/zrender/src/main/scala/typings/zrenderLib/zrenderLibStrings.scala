@@ -9,6 +9,7 @@ object zrenderLibStrings {
   @js.native
   sealed trait linear extends js.Object
   
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
 }
 

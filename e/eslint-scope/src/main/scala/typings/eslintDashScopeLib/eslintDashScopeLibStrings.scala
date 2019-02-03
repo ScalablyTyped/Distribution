@@ -42,17 +42,29 @@ object eslintDashScopeLibStrings {
   @js.native
   sealed trait `with` extends js.Object
   
+  @scala.inline
   def TDZ: TDZ = "TDZ".asInstanceOf[TDZ]
+  @scala.inline
   def block: block = "block".asInstanceOf[block]
+  @scala.inline
   def `catch`: `catch` = "catch".asInstanceOf[`catch`]
+  @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
+  @scala.inline
   def `for`: `for` = "for".asInstanceOf[`for`]
+  @scala.inline
   def function: function = "function".asInstanceOf[function]
+  @scala.inline
   def `function-expression-name`: `function-expression-name` = "function-expression-name".asInstanceOf[`function-expression-name`]
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
+  @scala.inline
   def module: module = "module".asInstanceOf[module]
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
+  @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
+  @scala.inline
   def `with`: `with` = "with".asInstanceOf[`with`]
 }
 

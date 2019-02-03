@@ -33,14 +33,23 @@ object apolloDashClientLibStrings {
   @js.native
   sealed trait standby extends js.Object
   
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def `cache-and-network`: `cache-and-network` = "cache-and-network".asInstanceOf[`cache-and-network`]
+  @scala.inline
   def `cache-first`: `cache-first` = "cache-first".asInstanceOf[`cache-first`]
+  @scala.inline
   def `cache-only`: `cache-only` = "cache-only".asInstanceOf[`cache-only`]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def `network-only`: `network-only` = "network-only".asInstanceOf[`network-only`]
+  @scala.inline
   def `no-cache`: `no-cache` = "no-cache".asInstanceOf[`no-cache`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def standby: standby = "standby".asInstanceOf[standby]
 }
 

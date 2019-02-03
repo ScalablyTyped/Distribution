@@ -30,7 +30,7 @@ class HttpMediaTypeWithQualityHeaderValue protected () extends js.Object {
   var quality: scala.Double = js.native
 }
 
-/** Represents accept information used in the Accept HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpMediaTypeWithQualityHeaderValue")
 @js.native
 object HttpMediaTypeWithQualityHeaderValue extends js.Object {

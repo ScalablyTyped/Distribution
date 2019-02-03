@@ -44,6 +44,7 @@ class PublicKey protected ()
   val namePrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudfront/publicKey", "PublicKey")
 @js.native
 object PublicKey extends js.Object {

@@ -21,6 +21,7 @@ class Diff protected () extends js.Object {
   var repo: js.Any = js.native
 }
 
+/* static members */
 @JSImport("git", "Diff")
 @js.native
 object Diff extends js.Object {

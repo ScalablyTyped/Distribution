@@ -19,6 +19,7 @@ class TypeParameterListSyntax protected () extends SyntaxNode {
   def withTypeParameters(typeParameters: ISeparatedSyntaxList): TypeParameterListSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TypeParameterListSyntax")
 @js.native
 object TypeParameterListSyntax extends js.Object {

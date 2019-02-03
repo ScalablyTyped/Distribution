@@ -201,6 +201,7 @@ abstract class Tapable () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("tapable", "Tapable")
 @js.native
 object Tapable extends js.Object {

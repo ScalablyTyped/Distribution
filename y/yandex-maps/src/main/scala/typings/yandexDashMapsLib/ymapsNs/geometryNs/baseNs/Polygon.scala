@@ -35,6 +35,7 @@ class Polygon ()
   def unfreeze(): yandexDashMapsLib.ymapsNs.IFreezable = js.native
 }
 
+/* static members */
 @JSGlobal("ymaps.geometry.base.Polygon")
 @js.native
 object Polygon extends js.Object {

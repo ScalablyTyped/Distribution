@@ -25,6 +25,7 @@ class AsyncCreatable[OptionType] ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-select/lib/AsyncCreatable", "AsyncCreatable")
 @js.native
 object AsyncCreatable extends js.Object {

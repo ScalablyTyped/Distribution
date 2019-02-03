@@ -17,6 +17,7 @@ class default () extends PolicyConstraints {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/PolicyConstraints", JSImport.Default)
 @js.native
 object default extends js.Object {

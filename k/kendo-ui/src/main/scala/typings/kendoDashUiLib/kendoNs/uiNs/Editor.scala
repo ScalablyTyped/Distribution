@@ -33,6 +33,7 @@ class Editor protected () extends Widget {
   def value(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Editor")
 @js.native
 object Editor extends js.Object {

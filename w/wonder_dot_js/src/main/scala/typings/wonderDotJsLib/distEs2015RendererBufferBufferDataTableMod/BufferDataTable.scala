@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BufferDataTable () extends js.Object
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/renderer/buffer/BufferDataTable", "BufferDataTable")
 @js.native
 object BufferDataTable extends js.Object {

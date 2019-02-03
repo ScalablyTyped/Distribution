@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Branch () extends js.Object
 
+/* static members */
 @JSImport("nodegit/branch", "Branch")
 @js.native
 object Branch extends js.Object {

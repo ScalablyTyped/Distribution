@@ -24,6 +24,7 @@ class Variable () extends Property[VariableDefinition] {
   def valueType(typeName: java.lang.String, _noCast: scala.Boolean): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Variable")
 @js.native
 object Variable extends js.Object {

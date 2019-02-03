@@ -76,6 +76,7 @@ class Spine protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.Spine")
 @js.native
 object Spine extends js.Object {

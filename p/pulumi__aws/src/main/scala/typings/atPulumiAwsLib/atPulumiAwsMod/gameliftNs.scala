@@ -65,6 +65,7 @@ object gameliftNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.gameliftGameSessionQueueMod.GameSessionQueueArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Alias extends js.Object {
     /**
@@ -89,6 +90,7 @@ object gameliftNs extends js.Object {
     ): atPulumiAwsLib.gameliftAliasMod.Alias = js.native
   }
   
+  /* static members */
   @js.native
   object Build extends js.Object {
     /**
@@ -113,6 +115,7 @@ object gameliftNs extends js.Object {
     ): atPulumiAwsLib.gameliftBuildMod.Build = js.native
   }
   
+  /* static members */
   @js.native
   object Fleet extends js.Object {
     /**
@@ -137,6 +140,7 @@ object gameliftNs extends js.Object {
     ): atPulumiAwsLib.gameliftFleetMod.Fleet = js.native
   }
   
+  /* static members */
   @js.native
   object GameSessionQueue extends js.Object {
     /**

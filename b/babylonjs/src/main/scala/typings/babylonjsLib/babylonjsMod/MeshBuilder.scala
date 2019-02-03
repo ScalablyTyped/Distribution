@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class MeshBuilder ()
   extends babylonjsLib.BABYLONNs.MeshBuilder
 
-/**
-  * Class containing static functions to help procedurally build meshes
-  */
+/* static members */
 @JSImport("babylonjs", "MeshBuilder")
 @js.native
 object MeshBuilder extends js.Object {

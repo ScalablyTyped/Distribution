@@ -28,6 +28,7 @@ class LogResourcePolicy protected ()
   val policyName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logResourcePolicy", "LogResourcePolicy")
 @js.native
 object LogResourcePolicy extends js.Object {

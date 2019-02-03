@@ -38,7 +38,7 @@ class SmsTextMessage () extends js.Object {
   def toBinaryMessages(format: SmsDataFormat): winrtDashUwpLib.WindowsNs.FoundationNs.CollectionsNs.IVectorView[ISmsBinaryMessage] = js.native
 }
 
-/** Manages a decoded SMS text message, providing direct access to the plain text body of the message, as well as key header properties, such as time stamp. */
+/* static members */
 @JSGlobal("Windows.Devices.Sms.SmsTextMessage")
 @js.native
 object SmsTextMessage extends js.Object {

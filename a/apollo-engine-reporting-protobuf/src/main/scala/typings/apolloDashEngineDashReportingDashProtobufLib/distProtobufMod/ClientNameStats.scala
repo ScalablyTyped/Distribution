@@ -47,6 +47,7 @@ class ClientNameStats () extends IClientNameStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "ClientNameStats")
 @js.native
 object ClientNameStats extends js.Object {

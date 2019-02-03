@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NullDiagnosticMessages ()
   extends grammarkdownLib.distDiagnosticsMod.NullDiagnosticMessages
 
+/* static members */
 @JSImport("grammarkdown", "NullDiagnosticMessages")
 @js.native
 object NullDiagnosticMessages extends js.Object {

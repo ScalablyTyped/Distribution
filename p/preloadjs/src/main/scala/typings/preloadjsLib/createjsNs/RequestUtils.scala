@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class RequestUtils () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.RequestUtils")
 @js.native
 object RequestUtils extends js.Object {

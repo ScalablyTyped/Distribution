@@ -21,6 +21,7 @@ class SmsPreferences protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.snsSmsPreferencesMod.SmsPreferencesArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/sns", "SmsPreferences")
 @js.native
 object SmsPreferences extends js.Object {

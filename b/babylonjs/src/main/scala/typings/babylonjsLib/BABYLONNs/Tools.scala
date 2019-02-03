@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Tools () extends js.Object
 
-/**
-  * Class containing a set of static utilities functions
-  */
+/* static members */
 @JSGlobal("BABYLON.Tools")
 @js.native
 object Tools extends js.Object {

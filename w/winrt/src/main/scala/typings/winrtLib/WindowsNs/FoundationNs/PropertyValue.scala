@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PropertyValue () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Foundation.PropertyValue")
 @js.native
 object PropertyValue extends js.Object {

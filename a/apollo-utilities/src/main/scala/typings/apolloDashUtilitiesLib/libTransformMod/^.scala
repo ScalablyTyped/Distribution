@@ -12,16 +12,11 @@ object ^ extends js.Object {
   def getDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.GetDirectiveConfig],
     doc: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
-  def getDirectivesFromDocument(
-    directives: js.Array[apolloDashUtilitiesLib.libTransformMod.GetDirectiveConfig],
-    doc: graphqlLib.languageAstMod.DocumentNode,
-    includeAllFragments: scala.Boolean
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeArgumentsFromDocument(
     config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveArgumentsConfig],
-    query: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+    doc: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeConnectionDirectiveFromDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveDirectiveConfig],
@@ -29,7 +24,7 @@ object ^ extends js.Object {
   ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def removeFragmentSpreadFromDocument(
     config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveFragmentSpreadConfig],
-    query: graphqlLib.languageAstMod.DocumentNode
-  ): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
+    doc: graphqlLib.languageAstMod.DocumentNode
+  ): graphqlLib.languageAstMod.DocumentNode = js.native
 }
 

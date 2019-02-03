@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PathIO () extends js.Object
 
-/** Provides helper methods for reading and writing a file using the absolute path or URI of the file. */
+/* static members */
 @JSGlobal("Windows.Storage.PathIO")
 @js.native
 object PathIO extends js.Object {

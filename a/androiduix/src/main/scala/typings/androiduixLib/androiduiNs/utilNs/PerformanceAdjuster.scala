@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PerformanceAdjuster () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.util.PerformanceAdjuster")
 @js.native
 object PerformanceAdjuster extends js.Object {

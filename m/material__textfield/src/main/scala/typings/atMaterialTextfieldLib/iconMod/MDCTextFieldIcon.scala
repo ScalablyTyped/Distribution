@@ -15,6 +15,7 @@ class MDCTextFieldIcon ()
   val foundation: atMaterialTextfieldLib.iconFoundationMod.default = js.native
 }
 
+/* static members */
 @JSImport("@material/textfield/icon", "MDCTextFieldIcon")
 @js.native
 object MDCTextFieldIcon extends js.Object {

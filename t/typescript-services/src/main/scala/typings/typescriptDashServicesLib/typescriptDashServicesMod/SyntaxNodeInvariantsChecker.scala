@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SyntaxNodeInvariantsChecker ()
   extends typescriptDashServicesLib.TypeScriptNs.SyntaxNodeInvariantsChecker
 
+/* static members */
 @JSImport("typescript-services", "SyntaxNodeInvariantsChecker")
 @js.native
 object SyntaxNodeInvariantsChecker extends js.Object {

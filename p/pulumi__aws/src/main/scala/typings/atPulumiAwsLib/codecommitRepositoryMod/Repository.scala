@@ -48,6 +48,7 @@ class Repository protected ()
   val repositoryName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codecommit/repository", "Repository")
 @js.native
 object Repository extends js.Object {

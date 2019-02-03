@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ParticleHelper () extends js.Object
 
-/**
-  * This class is made for on one-liner static method to help creating particle system set.
-  */
+/* static members */
 @JSGlobal("BABYLON.ParticleHelper")
 @js.native
 object ParticleHelper extends js.Object {

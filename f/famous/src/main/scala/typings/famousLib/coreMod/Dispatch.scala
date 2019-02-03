@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Dispatch () extends js.Object
 
+/* static members */
 @JSImport("famous/core", "Dispatch")
 @js.native
 object Dispatch extends js.Object {

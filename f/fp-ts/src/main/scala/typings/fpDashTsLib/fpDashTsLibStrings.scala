@@ -25,6 +25,9 @@ object fpDashTsLibStrings {
   sealed trait Free extends js.Object
   
   @js.native
+  sealed trait FreeGroup extends js.Object
+  
+  @js.native
   sealed trait IO extends js.Object
   
   @js.native
@@ -120,43 +123,83 @@ object fpDashTsLibStrings {
   @js.native
   sealed trait getRecordSetoid extends js.Object
   
+  @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
+  @scala.inline
   def Both: Both = "Both".asInstanceOf[Both]
+  @scala.inline
   def Const: Const = "Const".asInstanceOf[Const]
+  @scala.inline
   def Either: Either = "Either".asInstanceOf[Either]
+  @scala.inline
   def Failure: Failure = "Failure".asInstanceOf[Failure]
+  @scala.inline
   def Free: Free = "Free".asInstanceOf[Free]
+  @scala.inline
+  def FreeGroup: FreeGroup = "FreeGroup".asInstanceOf[FreeGroup]
+  @scala.inline
   def IO: IO = "IO".asInstanceOf[IO]
+  @scala.inline
   def IOEither: IOEither = "IOEither".asInstanceOf[IOEither]
+  @scala.inline
   def Identity: Identity = "Identity".asInstanceOf[Identity]
+  @scala.inline
   def Impure: Impure = "Impure".asInstanceOf[Impure]
+  @scala.inline
   def IxIO: IxIO = "IxIO".asInstanceOf[IxIO]
+  @scala.inline
   def Left: Left = "Left".asInstanceOf[Left]
+  @scala.inline
   def NonEmptyArray: NonEmptyArray = "NonEmptyArray".asInstanceOf[NonEmptyArray]
+  @scala.inline
   def None: None = "None".asInstanceOf[None]
+  @scala.inline
   def Option: Option = "Option".asInstanceOf[Option]
+  @scala.inline
   def Pair: Pair = "Pair".asInstanceOf[Pair]
+  @scala.inline
   def Pure: Pure = "Pure".asInstanceOf[Pure]
+  @scala.inline
   def Reader: Reader = "Reader".asInstanceOf[Reader]
+  @scala.inline
   def ReaderTaskEither: ReaderTaskEither = "ReaderTaskEither".asInstanceOf[ReaderTaskEither]
+  @scala.inline
   def Right: Right = "Right".asInstanceOf[Right]
+  @scala.inline
   def Some: Some = "Some".asInstanceOf[Some]
+  @scala.inline
   def State: State = "State".asInstanceOf[State]
+  @scala.inline
   def Store: Store = "Store".asInstanceOf[Store]
+  @scala.inline
   def StrMap: StrMap = "StrMap".asInstanceOf[StrMap]
+  @scala.inline
   def Success: Success = "Success".asInstanceOf[Success]
+  @scala.inline
   def Task: Task = "Task".asInstanceOf[Task]
+  @scala.inline
   def TaskEither: TaskEither = "TaskEither".asInstanceOf[TaskEither]
+  @scala.inline
   def That: That = "That".asInstanceOf[That]
+  @scala.inline
   def These: These = "These".asInstanceOf[These]
+  @scala.inline
   def This: This = "This".asInstanceOf[This]
+  @scala.inline
   def Tree: Tree = "Tree".asInstanceOf[Tree]
+  @scala.inline
   def Tuple: Tuple = "Tuple".asInstanceOf[Tuple]
+  @scala.inline
   def Validation: Validation = "Validation".asInstanceOf[Validation]
+  @scala.inline
   def Writer: Writer = "Writer".asInstanceOf[Writer]
+  @scala.inline
   def Zipper: Zipper = "Zipper".asInstanceOf[Zipper]
+  @scala.inline
   def getRecordMonoid: getRecordMonoid = "getRecordMonoid".asInstanceOf[getRecordMonoid]
+  @scala.inline
   def getRecordSemigroup: getRecordSemigroup = "getRecordSemigroup".asInstanceOf[getRecordSemigroup]
+  @scala.inline
   def getRecordSetoid: getRecordSetoid = "getRecordSetoid".asInstanceOf[getRecordSetoid]
 }
 

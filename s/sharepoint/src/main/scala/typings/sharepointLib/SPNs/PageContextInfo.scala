@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PageContextInfo () extends js.Object
 
+/* static members */
 @JSGlobal("SP.PageContextInfo")
 @js.native
 object PageContextInfo extends js.Object {

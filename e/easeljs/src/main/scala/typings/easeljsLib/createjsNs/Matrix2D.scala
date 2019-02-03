@@ -119,6 +119,7 @@ class Matrix2D protected () extends js.Object {
   def translate(x: scala.Double, y: scala.Double): Matrix2D = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.Matrix2D")
 @js.native
 object Matrix2D extends js.Object {

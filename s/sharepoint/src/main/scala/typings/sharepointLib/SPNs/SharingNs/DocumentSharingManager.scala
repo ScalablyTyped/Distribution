@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class DocumentSharingManager () extends js.Object
 
+/* static members */
 @JSGlobal("SP.Sharing.DocumentSharingManager")
 @js.native
 object DocumentSharingManager extends js.Object {

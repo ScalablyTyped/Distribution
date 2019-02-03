@@ -114,6 +114,7 @@ class element protected () extends node {
   def unselectable(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CKEDITOR.dom.element")
 @js.native
 object element extends js.Object {

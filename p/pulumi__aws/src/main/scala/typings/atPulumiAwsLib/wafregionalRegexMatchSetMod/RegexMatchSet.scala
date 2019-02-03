@@ -30,6 +30,7 @@ class RegexMatchSet protected ()
   val regexMatchTuples: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetId]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/regexMatchSet", "RegexMatchSet")
 @js.native
 object RegexMatchSet extends js.Object {

@@ -24,6 +24,7 @@ class namespaced () extends ScramSha1Mechanism {
   override def response(cred: saslDashScramDashShaDash1Lib.saslDashScramDashShaDash1Mod.ScramSha1MechanismNs.Credentials): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("sasl-scram-sha-1", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

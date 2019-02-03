@@ -12,6 +12,7 @@ class AlchemyDataNewsV1 protected () extends js.Object {
   def getNews(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "AlchemyDataNewsV1")
 @js.native
 object AlchemyDataNewsV1 extends js.Object {

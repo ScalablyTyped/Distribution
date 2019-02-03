@@ -15,6 +15,7 @@ class default protected () extends Complex {
   def this(real: scala.Double, im: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("complex", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -21,10 +21,15 @@ object jsoneditorLibStrings {
   @js.native
   sealed trait view extends js.Object
   
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
+  @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
+  @scala.inline
   def tree: tree = "tree".asInstanceOf[tree]
+  @scala.inline
   def view: view = "view".asInstanceOf[view]
 }
 

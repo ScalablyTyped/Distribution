@@ -16,6 +16,7 @@ class Uploader protected () extends js.Object {
   def renderFiles(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "Uploader")
 @js.native
 object Uploader extends js.Object {

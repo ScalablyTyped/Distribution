@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Indenter () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.Indenter")
 @js.native
 object Indenter extends js.Object {

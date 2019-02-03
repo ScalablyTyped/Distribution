@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextDirectionHeuristics () extends js.Object
 
+/* static members */
 @JSGlobal("android.text.TextDirectionHeuristics")
 @js.native
 object TextDirectionHeuristics extends js.Object {

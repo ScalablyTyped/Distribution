@@ -12,7 +12,9 @@ object mobxDashReactLibStrings {
   @js.native
   sealed trait render extends js.Object
   
+  @scala.inline
   def destroy: destroy = "destroy".asInstanceOf[destroy]
+  @scala.inline
   def render: render = "render".asInstanceOf[render]
 }
 

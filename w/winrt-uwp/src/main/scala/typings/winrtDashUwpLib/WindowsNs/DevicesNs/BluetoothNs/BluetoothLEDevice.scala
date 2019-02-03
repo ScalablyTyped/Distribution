@@ -84,7 +84,7 @@ abstract class BluetoothLEDevice () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a Bluetooth LE device. */
+/* static members */
 @JSGlobal("Windows.Devices.Bluetooth.BluetoothLEDevice")
 @js.native
 object BluetoothLEDevice extends js.Object {

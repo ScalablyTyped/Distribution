@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Layout ()
   extends webcolaLib.distSrcLayoutMod.Layout
 
+/* static members */
 @JSImport("webcola", "Layout")
 @js.native
 object Layout extends js.Object {

@@ -36,6 +36,7 @@ class MaintenanceWindowTarget protected ()
   val windowId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/maintenanceWindowTarget", "MaintenanceWindowTarget")
 @js.native
 object MaintenanceWindowTarget extends js.Object {

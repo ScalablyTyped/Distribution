@@ -36,12 +36,7 @@ class ObjectLayer protected ()
   def updateObjectStyle(any: heremapsLib.HNs.mapNs.Object, state: heredatalensLib.HNs.datalensNs.ObjectLayerNs.StyleState): scala.Unit = js.native
 }
 
-/**
-  * Presents data as points or spatial map objects with data-driven styles and client-side clustering.
-  * Applicable for drawing interactive map objects like markers, polygons, circles and other instances of map.Object. Source of data can be either tiled or not tiled.
-  * Styles for objects can be parametrized with data rows and zoom level. Allows to create data-driven icons for markers like donuts or bars.
-  * Also enables clustering and data domains for visualizing up to 100k points or more.
-  */
+/* static members */
 @JSGlobal("H.datalens.ObjectLayer")
 @js.native
 object ObjectLayer extends js.Object {

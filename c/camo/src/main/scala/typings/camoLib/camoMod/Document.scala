@@ -83,6 +83,7 @@ class Document[Schema /* <: DocumentSchema */] ()
   def toJSON(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("camo", "Document")
 @js.native
 object Document extends js.Object {

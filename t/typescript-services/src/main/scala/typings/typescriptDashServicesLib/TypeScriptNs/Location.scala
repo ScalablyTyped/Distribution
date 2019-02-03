@@ -21,6 +21,7 @@ class Location protected () extends js.Object {
   def start(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Location")
 @js.native
 object Location extends js.Object {

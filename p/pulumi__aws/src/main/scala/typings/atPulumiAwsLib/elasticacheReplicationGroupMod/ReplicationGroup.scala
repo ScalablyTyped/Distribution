@@ -147,6 +147,7 @@ class ReplicationGroup protected ()
   val transitEncryptionEnabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticache/replicationGroup", "ReplicationGroup")
 @js.native
 object ReplicationGroup extends js.Object {

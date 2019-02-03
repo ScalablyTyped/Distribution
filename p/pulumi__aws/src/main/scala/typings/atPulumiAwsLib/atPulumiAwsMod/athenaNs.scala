@@ -36,6 +36,7 @@ object athenaNs extends js.Object {
     def this(name: java.lang.String, args: atPulumiAwsLib.athenaNamedQueryMod.NamedQueryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Database extends js.Object {
     /**
@@ -60,6 +61,7 @@ object athenaNs extends js.Object {
     ): atPulumiAwsLib.athenaDatabaseMod.Database = js.native
   }
   
+  /* static members */
   @js.native
   object NamedQuery extends js.Object {
     /**

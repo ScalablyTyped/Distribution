@@ -20,6 +20,7 @@ class ApiKey protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.appsyncApiKeyMod.ApiKeyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appsync", "ApiKey")
 @js.native
 object ApiKey extends js.Object {

@@ -43,6 +43,7 @@ class Tooltip protected () extends Widget {
   def show(effect: java.lang.String, func: js.Function0[scala.Unit], target: ejDotWebDotAllLib.JQuery): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Tooltip")
 @js.native
 object Tooltip extends js.Object {

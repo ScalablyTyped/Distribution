@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Camera ()
   extends reactLib.reactMod.Component[CameraProps, js.Object, js.Any]
 
+/* static members */
 @JSImport("expo", "Camera")
 @js.native
 object Camera extends js.Object {

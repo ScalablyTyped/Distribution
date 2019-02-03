@@ -9,6 +9,7 @@ object googleDashAuthDashLibraryLibStrings {
   @js.native
   sealed trait tokens extends js.Object
   
+  @scala.inline
   def tokens: tokens = "tokens".asInstanceOf[tokens]
 }
 

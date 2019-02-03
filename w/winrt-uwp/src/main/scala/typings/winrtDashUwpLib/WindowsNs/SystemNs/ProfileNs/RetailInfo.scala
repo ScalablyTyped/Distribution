@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class RetailInfo () extends js.Object
 
-/** A utility class that supports one method, IsDemoModeEnabled , and one property, Properties . Call IsDemoModeEnabled to determine whether the device where the app is running has specifically enabled its retail demo mode. */
+/* static members */
 @JSGlobal("Windows.System.Profile.RetailInfo")
 @js.native
 object RetailInfo extends js.Object {

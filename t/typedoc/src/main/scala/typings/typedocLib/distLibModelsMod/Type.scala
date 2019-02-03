@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 abstract class Type ()
   extends typedocLib.distLibModelsTypesMod.Type
 
+/* static members */
 @JSImport("typedoc/dist/lib/models", "Type")
 @js.native
 object Type extends js.Object {

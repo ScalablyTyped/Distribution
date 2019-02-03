@@ -132,6 +132,7 @@ class List protected ()
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/List/List", "List")
 @js.native
 object List extends js.Object {

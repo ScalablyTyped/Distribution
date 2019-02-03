@@ -115,9 +115,7 @@ class Hub () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Creates a hub navigation pattern consisting of sections that can be navigated to. Each section is defined by a HubSection object.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.Hub")
 @js.native
 object Hub extends js.Object {

@@ -63,6 +63,7 @@ class CSG ()
   def unionSub(csg: CSG, retesselate: scala.Boolean, canonicalize: scala.Boolean): CSG = js.native
 }
 
+/* static members */
 @JSGlobal("CSG")
 @js.native
 object CSG extends js.Object {

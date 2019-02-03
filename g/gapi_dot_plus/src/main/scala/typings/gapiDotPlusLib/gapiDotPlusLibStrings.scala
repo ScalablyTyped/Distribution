@@ -12,7 +12,9 @@ object gapiDotPlusLibStrings {
   @js.native
   sealed trait `plus#person` extends js.Object
   
+  @scala.inline
   def `plus#peopleFeed`: `plus#peopleFeed` = "plus#peopleFeed".asInstanceOf[`plus#peopleFeed`]
+  @scala.inline
   def `plus#person`: `plus#person` = "plus#person".asInstanceOf[`plus#person`]
 }
 

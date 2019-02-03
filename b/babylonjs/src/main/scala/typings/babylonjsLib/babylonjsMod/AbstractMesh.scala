@@ -21,9 +21,7 @@ class AbstractMesh protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  * Class used to store all common mesh properties
-  */
+/* static members */
 @JSImport("babylonjs", "AbstractMesh")
 @js.native
 object AbstractMesh extends js.Object {

@@ -18,6 +18,7 @@ class IPv4 protected ()
   override def toNormalizedString(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("ipaddr.js", "IPv4")
 @js.native
 object IPv4 extends js.Object {

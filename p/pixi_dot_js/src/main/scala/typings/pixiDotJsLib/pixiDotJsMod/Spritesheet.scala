@@ -13,6 +13,7 @@ class Spritesheet protected ()
   def this(baseTexture: pixiDotJsLib.PIXINs.BaseTexture, data: js.Any, resolutionFilename: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "Spritesheet")
 @js.native
 object Spritesheet extends js.Object {

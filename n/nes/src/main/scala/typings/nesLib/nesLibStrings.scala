@@ -21,10 +21,15 @@ object nesLibStrings {
   @js.native
   sealed trait user extends js.Object
   
+  @scala.inline
   def any: any = "any".asInstanceOf[any]
+  @scala.inline
   def app: app = "app".asInstanceOf[app]
+  @scala.inline
   def optional: optional = "optional".asInstanceOf[optional]
+  @scala.inline
   def required: required = "required".asInstanceOf[required]
+  @scala.inline
   def user: user = "user".asInstanceOf[user]
 }
 

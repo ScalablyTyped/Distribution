@@ -66,6 +66,7 @@ class DataSource ()
   def view(): ObservableArray = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.data.DataSource")
 @js.native
 object DataSource extends js.Object {

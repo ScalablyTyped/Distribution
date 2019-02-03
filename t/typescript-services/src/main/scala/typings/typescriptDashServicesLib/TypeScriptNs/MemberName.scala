@@ -15,6 +15,7 @@ class MemberName () extends js.Object {
   def isString(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.MemberName")
 @js.native
 object MemberName extends js.Object {

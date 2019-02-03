@@ -12,6 +12,7 @@ class LayerBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsLayerLayerDotTypesMod.ILayerProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Layer", "LayerBase")
 @js.native
 object LayerBase extends js.Object {

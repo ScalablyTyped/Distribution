@@ -21,6 +21,7 @@ class KeyPair protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.lightsailKeyPairMod.KeyPairArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail", "KeyPair")
 @js.native
 object KeyPair extends js.Object {

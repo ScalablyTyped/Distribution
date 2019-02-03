@@ -36,6 +36,7 @@ class Group protected ()
   val resourceQuery: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Query] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/resourcegroups/group", "Group")
 @js.native
 object Group extends js.Object {

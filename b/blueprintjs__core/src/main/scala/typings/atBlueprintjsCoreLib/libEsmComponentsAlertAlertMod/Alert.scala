@@ -15,6 +15,7 @@ class Alert ()
   /* private */ def internalHandleCallbacks(confirmed: js.Any, evt: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/alert/alert", "Alert")
 @js.native
 object Alert extends js.Object {

@@ -11,6 +11,7 @@ class namespaced () extends CircuitBreaker {
   def this(options: circuitDashBreakerDashJsLib.circuitDashBreakerDashJsMod.CircuitBreakerNs.Options) = this()
 }
 
+/* static members */
 @JSImport("circuit-breaker-js", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

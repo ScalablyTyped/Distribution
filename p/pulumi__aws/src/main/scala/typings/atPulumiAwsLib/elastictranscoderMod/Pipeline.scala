@@ -20,6 +20,7 @@ class Pipeline protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elastictranscoderPipelineMod.PipelineArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elastictranscoder", "Pipeline")
 @js.native
 object Pipeline extends js.Object {

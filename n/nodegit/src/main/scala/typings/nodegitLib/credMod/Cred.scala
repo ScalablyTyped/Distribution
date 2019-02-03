@@ -12,6 +12,7 @@ class Cred () extends js.Object {
   def hasUsername(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/cred", "Cred")
 @js.native
 object Cred extends js.Object {

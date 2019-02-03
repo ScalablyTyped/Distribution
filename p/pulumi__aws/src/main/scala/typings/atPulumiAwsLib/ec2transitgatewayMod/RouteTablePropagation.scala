@@ -20,6 +20,7 @@ class RouteTablePropagation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway", "RouteTablePropagation")
 @js.native
 object RouteTablePropagation extends js.Object {

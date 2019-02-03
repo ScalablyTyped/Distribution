@@ -52,6 +52,7 @@ class Inventory protected ()
   val schedule: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Frequency] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/inventory", "Inventory")
 @js.native
 object Inventory extends js.Object {

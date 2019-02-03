@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCTextFieldHelperTextFoundation
 
+/* static members */
 @JSImport("@material/textfield/helper-text/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -35,6 +35,7 @@ class QueryStats () extends IQueryStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "QueryStats")
 @js.native
 object QueryStats extends js.Object {

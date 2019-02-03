@@ -29,6 +29,7 @@ class GeoMatchSet protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/geoMatchSet", "GeoMatchSet")
 @js.native
 object GeoMatchSet extends js.Object {

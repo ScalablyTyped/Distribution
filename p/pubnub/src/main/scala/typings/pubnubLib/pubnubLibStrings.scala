@@ -18,9 +18,13 @@ object pubnubLibStrings {
   @js.native
   sealed trait timeout extends js.Object
   
+  @scala.inline
   def join: join = "join".asInstanceOf[join]
+  @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
+  @scala.inline
   def `state-change`: `state-change` = "state-change".asInstanceOf[`state-change`]
+  @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
 }
 

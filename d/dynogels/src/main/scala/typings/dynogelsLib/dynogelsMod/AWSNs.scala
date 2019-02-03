@@ -2725,6 +2725,7 @@ object AWSNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object CredentialProviderChain extends js.Object {
     var defaultProviders: js.Array[
@@ -2732,6 +2733,7 @@ object AWSNs extends js.Object {
       ] = js.native
   }
   
+  /* static members */
   @js.native
   object Credentials extends js.Object {
     var expiryWindow: scala.Double = js.native
@@ -2973,6 +2975,7 @@ object AWSNs extends js.Object {
     }
     
     val TypesNs: this.type = js.native
+    /* static members */
     @js.native
     object Converter extends js.Object {
       def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
@@ -3011,6 +3014,7 @@ object AWSNs extends js.Object {
       }
       
       val TypesNs: this.type = js.native
+      /* static members */
       @js.native
       object Converter extends js.Object {
         def input(data: js.Any): awsDashSdkLib.clientsDynamodbMod.DynamoDBNs.AttributeValue = js.native
@@ -4291,6 +4295,7 @@ object AWSNs extends js.Object {
     
   }
   
+  /* static members */
   @js.native
   object MetadataService extends js.Object {
     /**
@@ -4907,6 +4912,7 @@ object AWSNs extends js.Object {
     }
     
     val TypesNs: this.type = js.native
+    /* static members */
     @js.native
     object ManagedUpload extends js.Object {
       /**
@@ -4938,6 +4944,7 @@ object AWSNs extends js.Object {
         extends awsDashSdkLib.awsDashSdkMod.S3Ns.S3Ns.PresignedPost
       
       val TypesNs: this.type = js.native
+      /* static members */
       @js.native
       object ManagedUpload extends js.Object {
         /**

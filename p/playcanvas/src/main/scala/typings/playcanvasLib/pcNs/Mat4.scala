@@ -530,27 +530,7 @@ class Mat4 () extends js.Object {
   def transpose(): this.type = js.native
 }
 
-/**
-  * @name pc.Mat4
-  * @class A 4x4 matrix.
-  * @description Creates a new Mat4 object
-  * @param {Number} [v0] The value in row 0, column 0. If v0 is an array of length 16, the array will be used to populate all components.
-  * @param {Number} [v1] The value in row 1, column 0.
-  * @param {Number} [v2] The value in row 2, column 0.
-  * @param {Number} [v3] The value in row 3, column 0.
-  * @param {Number} [v4] The value in row 0, column 1.
-  * @param {Number} [v5] The value in row 1, column 1.
-  * @param {Number} [v6] The value in row 2, column 1.
-  * @param {Number} [v7] The value in row 3, column 1.
-  * @param {Number} [v8] The value in row 0, column 2.
-  * @param {Number} [v9] The value in row 1, column 2.
-  * @param {Number} [v10] The value in row 2, column 2.
-  * @param {Number} [v11] The value in row 3, column 2.
-  * @param {Number} [v12] The value in row 0, column 3.
-  * @param {Number} [v13] The value in row 1, column 3.
-  * @param {Number} [v14] The value in row 2, column 3.
-  * @param {Number} [v15] The value in row 3, column 3.
-  */
+/* static members */
 @JSGlobal("pc.Mat4")
 @js.native
 object Mat4 extends js.Object {

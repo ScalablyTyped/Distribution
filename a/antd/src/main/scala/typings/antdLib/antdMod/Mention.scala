@@ -12,6 +12,7 @@ class Mention protected ()
   def this(props: antdLib.libMentionMod.MentionProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "Mention")
 @js.native
 object Mention extends js.Object {

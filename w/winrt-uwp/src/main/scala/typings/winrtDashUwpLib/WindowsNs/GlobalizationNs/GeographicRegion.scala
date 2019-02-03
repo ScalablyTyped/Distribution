@@ -31,7 +31,7 @@ class GeographicRegion () extends js.Object {
   var nativeName: java.lang.String = js.native
 }
 
-/** Describes a region. This is usually a country, but may be a macroregion. */
+/* static members */
 @JSGlobal("Windows.Globalization.GeographicRegion")
 @js.native
 object GeographicRegion extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CurrentAppSimulator () extends js.Object
 
-/** Defines methods and properties used to instantiate an object that you can use to get simulated license info during testing. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Store.CurrentAppSimulator")
 @js.native
 object CurrentAppSimulator extends js.Object {

@@ -142,6 +142,7 @@ class UA protected ()
   def unregister(options: js.Any): this.type = js.native
 }
 
+/* static members */
 @JSImport("sip.js/types/ua", "UA")
 @js.native
 object UA extends js.Object {

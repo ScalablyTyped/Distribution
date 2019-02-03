@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Radio ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Radio
 
+/* static members */
 @JSImport("@blueprintjs/core", "Radio")
 @js.native
 object Radio extends js.Object {

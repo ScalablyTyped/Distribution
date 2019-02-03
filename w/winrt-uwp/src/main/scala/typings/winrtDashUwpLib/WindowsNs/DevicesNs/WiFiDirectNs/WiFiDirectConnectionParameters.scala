@@ -18,7 +18,7 @@ class WiFiDirectConnectionParameters () extends js.Object {
   var preferredPairingProcedure: WiFiDirectPairingProcedure = js.native
 }
 
-/** Used by an app to specify the connection parameters for a Wi-Fi Direct connect/pairing operation. */
+/* static members */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectConnectionParameters")
 @js.native
 object WiFiDirectConnectionParameters extends js.Object {

@@ -16,11 +16,13 @@ object linearProgressNs extends js.Object {
   class MDCLinearProgressFoundation ()
     extends atMaterialLinearDashProgressLib.atMaterialLinearDashProgressMod.MDCLinearProgressFoundation
   
+  /* static members */
   @js.native
   object MDCLinearProgress extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialLinearDashProgressLib.atMaterialLinearDashProgressMod.MDCLinearProgress = js.native
   }
   
+  /* static members */
   @js.native
   object MDCLinearProgressFoundation extends js.Object {
     val cssClasses: atMaterialLinearDashProgressLib.constantsMod.cssClasses = js.native

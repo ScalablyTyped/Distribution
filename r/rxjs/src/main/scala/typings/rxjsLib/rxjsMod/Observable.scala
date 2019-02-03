@@ -23,6 +23,7 @@ class Observable[T] ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("rxjs", "Observable")
 @js.native
 object Observable extends js.Object {

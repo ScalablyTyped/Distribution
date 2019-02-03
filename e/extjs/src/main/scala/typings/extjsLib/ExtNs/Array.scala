@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Array () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.Array")
 @js.native
 object Array extends js.Object {

@@ -24,6 +24,7 @@ class ReceiptRuleSet protected ()
   val ruleSetName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet")
 @js.native
 object ReceiptRuleSet extends js.Object {

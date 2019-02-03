@@ -34,6 +34,7 @@ class Timepicker () extends Component[TimepickerOptions] {
   def showView_minutes(view: materializeDashCssLib.materializeDashCssLibStrings.minutes): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Timepicker")
 @js.native
 object Timepicker extends js.Object {

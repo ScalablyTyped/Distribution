@@ -24,6 +24,7 @@ class ClipDrawable ()
   override def unscheduleDrawable(who: Drawable, what: androiduixLib.javaNs.langNs.Runnable): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.graphics.drawable.ClipDrawable")
 @js.native
 object ClipDrawable extends js.Object {

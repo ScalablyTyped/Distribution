@@ -20,6 +20,7 @@ class VpnGatewayAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpnGatewayAttachmentMod.VpnGatewayAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpnGatewayAttachment")
 @js.native
 object VpnGatewayAttachment extends js.Object {

@@ -109,6 +109,7 @@ class RailsAppLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/railsAppLayer", "RailsAppLayer")
 @js.native
 object RailsAppLayer extends js.Object {

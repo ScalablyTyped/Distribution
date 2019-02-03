@@ -12,6 +12,7 @@ abstract class PlatformPackager[DC /* <: /* import warning: QualifyReferences.re
   protected def this(info: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Packager */ js.Any, platform: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Platform */ js.Any) = this()
 }
 
+/* static members */
 @JSImport("app-builder-lib", "PlatformPackager")
 @js.native
 object PlatformPackager extends js.Object {

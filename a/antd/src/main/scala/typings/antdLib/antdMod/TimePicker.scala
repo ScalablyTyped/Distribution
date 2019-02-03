@@ -12,6 +12,7 @@ class TimePicker protected ()
   def this(props: antdLib.libTimeDashPickerMod.TimePickerProps) = this()
 }
 
+/* static members */
 @JSImport("antd", "TimePicker")
 @js.native
 object TimePicker extends js.Object {

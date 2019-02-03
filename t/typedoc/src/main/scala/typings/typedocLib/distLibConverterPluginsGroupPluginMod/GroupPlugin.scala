@@ -13,6 +13,7 @@ class GroupPlugin ()
   var onResolve: js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/converter/plugins/GroupPlugin", "GroupPlugin")
 @js.native
 object GroupPlugin extends js.Object {

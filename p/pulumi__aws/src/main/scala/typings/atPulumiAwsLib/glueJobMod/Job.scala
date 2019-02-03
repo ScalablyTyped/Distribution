@@ -64,6 +64,7 @@ class Job protected ()
   val timeout: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/job", "Job")
 @js.native
 object Job extends js.Object {

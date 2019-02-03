@@ -215,6 +215,7 @@ class Axis[D] protected ()
   def tickLabelPadding(padding: scala.Double): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/axes/axis", "Axis")
 @js.native
 object Axis extends js.Object {

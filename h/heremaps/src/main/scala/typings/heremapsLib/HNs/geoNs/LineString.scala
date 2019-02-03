@@ -144,6 +144,7 @@ class LineString () extends js.Object {
   def spliceLatLngAlts(index: scala.Double, opt_nRemove: scala.Double, opt_latLngAlts: js.Array[scala.Double]): js.Array[scala.Double] = js.native
 }
 
+/* static members */
 @JSGlobal("H.geo.LineString")
 @js.native
 object LineString extends js.Object {

@@ -17,6 +17,7 @@ class RulesMap () extends js.Object {
   def Initialize(rules: js.Array[Rule]): js.Array[RulesBucket] = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.RulesMap")
 @js.native
 object RulesMap extends js.Object {

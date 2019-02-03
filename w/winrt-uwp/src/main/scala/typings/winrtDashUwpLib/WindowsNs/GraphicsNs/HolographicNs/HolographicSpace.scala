@@ -17,6 +17,7 @@ abstract class HolographicSpace () extends js.Object {
    /* unmapped type */ var setDirect3D11Device: js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Graphics.Holographic.HolographicSpace")
 @js.native
 object HolographicSpace extends js.Object {

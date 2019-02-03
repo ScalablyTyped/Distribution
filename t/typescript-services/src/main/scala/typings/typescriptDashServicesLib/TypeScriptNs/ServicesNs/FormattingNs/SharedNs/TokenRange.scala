@@ -14,6 +14,7 @@ class TokenRange protected () extends js.Object {
   def GetTokens(): js.Array[typescriptDashServicesLib.TypeScriptNs.SyntaxKind] = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.Services.Formatting.Shared.TokenRange")
 @js.native
 object TokenRange extends js.Object {

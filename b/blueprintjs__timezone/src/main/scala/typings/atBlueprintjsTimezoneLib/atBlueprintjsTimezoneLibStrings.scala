@@ -18,9 +18,13 @@ object atBlueprintjsTimezoneLibStrings {
   @js.native
   sealed trait offset extends js.Object
   
+  @scala.inline
   def abbreviation: abbreviation = "abbreviation".asInstanceOf[abbreviation]
+  @scala.inline
   def composite: composite = "composite".asInstanceOf[composite]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def offset: offset = "offset".asInstanceOf[offset]
 }
 

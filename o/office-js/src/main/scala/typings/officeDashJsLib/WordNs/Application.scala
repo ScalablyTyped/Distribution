@@ -31,12 +31,7 @@ class Application ()
   def toJSON(): org.scalablytyped.runtime.StringDictionary[java.lang.String] = js.native
 }
 
-/**
-  *
-  * Represents the application object.
-  *
-  * [Api set: WordApi 1.3]
-  */
+/* static members */
 @JSGlobal("Word.Application")
 @js.native
 object Application extends js.Object {

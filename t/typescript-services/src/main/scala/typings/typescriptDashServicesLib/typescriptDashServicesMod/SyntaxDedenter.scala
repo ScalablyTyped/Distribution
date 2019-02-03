@@ -12,6 +12,7 @@ class SyntaxDedenter protected ()
   def this(dedentFirstToken: scala.Boolean, dedentationAmount: scala.Double, minimumIndent: scala.Double, options: typescriptDashServicesLib.FormattingOptions) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "SyntaxDedenter")
 @js.native
 object SyntaxDedenter extends js.Object {

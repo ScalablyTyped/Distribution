@@ -188,6 +188,7 @@ class Buffer protected () extends js.Object {
   def writeUIntLE(value: scala.Double, offset: scala.Double, byteLength: scala.Double, noAssert: scala.Boolean): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("safe-buffer", "Buffer")
 @js.native
 object Buffer extends js.Object {

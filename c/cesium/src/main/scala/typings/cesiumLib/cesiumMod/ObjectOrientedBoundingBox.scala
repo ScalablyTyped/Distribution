@@ -14,6 +14,7 @@ class ObjectOrientedBoundingBox ()
   def this(rotation: cesiumLib.cesiumMod.CesiumNs.Matrix3, translation: cesiumLib.cesiumMod.CesiumNs.Cartesian3, scale: cesiumLib.cesiumMod.CesiumNs.Cartesian3) = this()
 }
 
+/* static members */
 @JSImport("cesium", "ObjectOrientedBoundingBox")
 @js.native
 object ObjectOrientedBoundingBox extends js.Object {

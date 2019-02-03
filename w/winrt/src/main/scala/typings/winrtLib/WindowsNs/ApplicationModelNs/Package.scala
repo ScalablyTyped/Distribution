@@ -32,6 +32,7 @@ class Package () extends IPackage {
   override var publisherDisplayName: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Package")
 @js.native
 object Package extends js.Object {

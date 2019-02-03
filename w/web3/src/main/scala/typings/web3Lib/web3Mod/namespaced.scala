@@ -35,6 +35,7 @@ class namespaced () extends Web3 {
   override def setProvider(provider: web3Lib.providersMod.Provider): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("web3", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

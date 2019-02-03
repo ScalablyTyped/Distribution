@@ -85,6 +85,7 @@ object navigationNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
+  /* static members */
   @js.native
   object DeviceType extends js.Object {
     var Desktop: mendixmodelsdkLib.distGenNavigationMod.navigationNs.DeviceType = js.native
@@ -92,6 +93,7 @@ object navigationNs extends js.Object {
     var Tablet: mendixmodelsdkLib.distGenNavigationMod.navigationNs.DeviceType = js.native
   }
   
+  /* static members */
   @js.native
   object HomePage extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -110,18 +112,14 @@ object navigationNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.HomePage = js.native
   }
   
-  /**
-    * Interfaces and instance classes for types from the Mendix sub meta model `Navigation`.
-    */
+  /* static members */
   @js.native
   object HomePageBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.22.0: introduced
-    */
+  /* static members */
   @js.native
   object NativeNavigationProfile extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -143,9 +141,7 @@ object navigationNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NativeNavigationProfile = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/navigation relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object NavigationDocument extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -157,9 +153,7 @@ object navigationNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IProject): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument = js.native
   }
   
-  /**
-    * In version 7.2.0: added public
-    */
+  /* static members */
   @js.native
   object NavigationProfile extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -262,17 +256,14 @@ object navigationNs extends js.Object {
     def createInNavigationDocumentUnderTabletProfile(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationDocument): mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile = js.native
   }
   
+  /* static members */
   @js.native
   object NavigationProfileBase extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenNavigationMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
-    *
-    * In version 7.22.0: introduced
-    */
+  /* static members */
   @js.native
   object OfflineEntityConfig extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -294,6 +285,7 @@ object navigationNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenNavigationMod.navigationNs.NavigationProfile): mendixmodelsdkLib.distGenNavigationMod.navigationNs.OfflineEntityConfig = js.native
   }
   
+  /* static members */
   @js.native
   object ProfileKind extends js.Object {
     var Hybrid: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
@@ -308,6 +300,7 @@ object navigationNs extends js.Object {
     var Tablet: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileKind = js.native
   }
   
+  /* static members */
   @js.native
   object ProfileType extends js.Object {
     var Desktop: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileType = js.native
@@ -320,6 +313,7 @@ object navigationNs extends js.Object {
     var Tablet: mendixmodelsdkLib.distGenNavigationMod.navigationNs.ProfileType = js.native
   }
   
+  /* static members */
   @js.native
   object RoleBasedHomePage extends js.Object {
     var structureTypeName: java.lang.String = js.native

@@ -227,6 +227,7 @@ class Query protected () extends js.Object {
   /* private */ def `validateNoPreviousOrderByCall_`(fnName: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/api/Query", "Query")
 @js.native
 object Query extends js.Object {

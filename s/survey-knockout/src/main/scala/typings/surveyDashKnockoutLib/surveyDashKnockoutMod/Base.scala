@@ -99,6 +99,7 @@ class Base () extends js.Object {
   def unRegisterFunctionOnPropertyValueChanged(name: java.lang.String, key: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "Base")
 @js.native
 object Base extends js.Object {

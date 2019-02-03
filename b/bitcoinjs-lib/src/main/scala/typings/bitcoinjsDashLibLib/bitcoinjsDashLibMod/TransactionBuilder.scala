@@ -51,6 +51,7 @@ class TransactionBuilder () extends js.Object {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("bitcoinjs-lib", "TransactionBuilder")
 @js.native
 object TransactionBuilder extends js.Object {

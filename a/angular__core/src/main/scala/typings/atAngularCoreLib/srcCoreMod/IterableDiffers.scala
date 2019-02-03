@@ -14,6 +14,7 @@ class IterableDiffers protected ()
     ]) = this()
 }
 
+/* static members */
 @JSImport("@angular/core/src/core", "IterableDiffers")
 @js.native
 object IterableDiffers extends js.Object {

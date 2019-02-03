@@ -26,6 +26,7 @@ class LinearGauge protected ()
   def value(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.LinearGauge")
 @js.native
 object LinearGauge extends js.Object {

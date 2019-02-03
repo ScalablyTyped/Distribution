@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UserType () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/UserType.html
-	 */
+/* static members */
 @JSGlobal("UserType")
 @js.native
 object UserType extends js.Object {

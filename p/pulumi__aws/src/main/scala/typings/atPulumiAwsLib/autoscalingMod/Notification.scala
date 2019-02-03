@@ -20,6 +20,7 @@ class Notification protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.autoscalingNotificationMod.NotificationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling", "Notification")
 @js.native
 object Notification extends js.Object {

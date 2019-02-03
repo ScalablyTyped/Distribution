@@ -46,7 +46,9 @@ package object definitionsMod {
     CommandMetadataOption
   ]
   type NpmClient = ionicLib.ionicLibStrings.yarn | ionicLib.ionicLibStrings.npm
-  type OAuthIdentity = ionicLib.ionicLibStrings.OAuthIdentity with js.Any
+  type OAuthIdentity = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ A in ionic.ionic/definitions.AssociationType ]:? ionic.ionic/definitions.OAuthIdentityDetails}
+    */ ionicLib.ionicLibStrings.OAuthIdentity with js.Any
   type PaginateArgs[T /* <: Response[js.Array[js.Object]] */] = stdLib.Pick[
     PaginatorDeps[T, PaginatorState], 
     ionicLib.ionicLibStrings.reqgen | ionicLib.ionicLibStrings.guard | ionicLib.ionicLibStrings.state | ionicLib.ionicLibStrings.max

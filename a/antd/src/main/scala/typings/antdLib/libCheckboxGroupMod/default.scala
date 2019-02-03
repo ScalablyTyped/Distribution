@@ -11,6 +11,7 @@ class default protected () extends CheckboxGroup {
   def this(props: CheckboxGroupProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/checkbox/Group", JSImport.Default)
 @js.native
 object default extends js.Object {

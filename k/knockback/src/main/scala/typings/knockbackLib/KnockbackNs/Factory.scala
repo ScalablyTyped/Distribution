@@ -16,6 +16,7 @@ class Factory protected () extends js.Object {
   def hasPathMappings(factories: js.Any, owner_path: java.lang.String): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("Knockback.Factory")
 @js.native
 object Factory extends js.Object {

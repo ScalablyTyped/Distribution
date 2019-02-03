@@ -43,6 +43,7 @@ class Rating protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Rating")
 @js.native
 object Rating extends js.Object {

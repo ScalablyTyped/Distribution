@@ -13,6 +13,7 @@ class Credentials () extends js.Object {
   val userInfo: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSGlobal("Realm.Sync.Credentials")
 @js.native
 object Credentials extends js.Object {

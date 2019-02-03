@@ -18,7 +18,7 @@ class HttpContentCodingHeaderValue protected () extends js.Object {
   var contentCoding: java.lang.String = js.native
 }
 
-/** Represents content encoding information used in the Content-Encoding HTTP header on HTTP content in a request or a response. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentCodingHeaderValue")
 @js.native
 object HttpContentCodingHeaderValue extends js.Object {

@@ -14,7 +14,7 @@ class SQLException () extends js.Object {
   var message: DOMString = js.native
 }
 
-// synchronous database API error
+/* static members */
 @JSGlobal("SQLException")
 @js.native
 object SQLException extends js.Object {

@@ -47,6 +47,7 @@ class Slice[S /* <: Schema[_, _] */] protected () extends js.Object {
   def toJSON(): js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any] | scala.Null] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-model", "Slice")
 @js.native
 object Slice extends js.Object {

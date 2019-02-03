@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CharacterInfo () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.CharacterInfo")
 @js.native
 object CharacterInfo extends js.Object {

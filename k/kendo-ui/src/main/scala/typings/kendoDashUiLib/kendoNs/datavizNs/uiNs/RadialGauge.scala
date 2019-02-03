@@ -27,6 +27,7 @@ class RadialGauge protected ()
   def value(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.ui.RadialGauge")
 @js.native
 object RadialGauge extends js.Object {

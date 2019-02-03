@@ -51,6 +51,7 @@ class Position protected () extends js.Object {
   def `with`(newLineNumber: scala.Double, newColumn: scala.Double): Position = js.native
 }
 
+/* static members */
 @JSImport("monaco-editor", "Position")
 @js.native
 object Position extends js.Object {

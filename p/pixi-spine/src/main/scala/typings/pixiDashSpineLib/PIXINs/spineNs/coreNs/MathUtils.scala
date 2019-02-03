@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MathUtils () extends js.Object
 
+/* static members */
 @JSGlobal("PIXI.spine.core.MathUtils")
 @js.native
 object MathUtils extends js.Object {

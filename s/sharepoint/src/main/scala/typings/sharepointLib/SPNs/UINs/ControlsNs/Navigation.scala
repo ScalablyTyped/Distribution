@@ -34,6 +34,7 @@ class Navigation protected () extends js.Object {
   def set_settingsLinks(value: js.Array[ISettingsLink]): js.Array[ISettingsLink] = js.native
 }
 
+/* static members */
 @JSGlobal("SP.UI.Controls.Navigation")
 @js.native
 object Navigation extends js.Object {

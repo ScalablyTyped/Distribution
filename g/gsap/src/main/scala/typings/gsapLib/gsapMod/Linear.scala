@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Linear ()
   extends gsapLib.gsapNs.Linear
 
+/* static members */
 @JSImport("gsap", "Linear")
 @js.native
 object Linear extends js.Object {

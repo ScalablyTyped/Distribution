@@ -56,6 +56,7 @@ class Parameter protected ()
   val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/parameter", "Parameter")
 @js.native
 object Parameter extends js.Object {

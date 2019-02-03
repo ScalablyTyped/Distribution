@@ -57,22 +57,39 @@ object tslintLibStrings {
   @js.native
   sealed trait warning extends js.Object
   
+  @scala.inline
   def NoInfer: NoInfer = "NoInfer".asInstanceOf[NoInfer]
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def functionality: functionality = "functionality".asInstanceOf[functionality]
+  @scala.inline
   def human: human = "human".asInstanceOf[human]
+  @scala.inline
   def machine: machine = "machine".asInstanceOf[machine]
+  @scala.inline
   def maintainability: maintainability = "maintainability".asInstanceOf[maintainability]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
   def style: style = "style".asInstanceOf[style]
+  @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
+  @scala.inline
   def utf16be: utf16be = "utf16be".asInstanceOf[utf16be]
+  @scala.inline
   def utf16le: utf16le = "utf16le".asInstanceOf[utf16le]
+  @scala.inline
   def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @scala.inline
   def `utf8-bom`: `utf8-bom` = "utf8-bom".asInstanceOf[`utf8-bom`]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }
 

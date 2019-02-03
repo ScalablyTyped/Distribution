@@ -27,7 +27,7 @@ abstract class MacAlgorithmProvider () extends js.Object {
   def createKey(keyMaterial: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): CryptographicKey = js.native
 }
 
-/** Represents a message authentication code (MAC). A MAC uses symmetric key cryptography to prevent message tampering. For more information, see MACs, hashes, and signatures. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.MacAlgorithmProvider")
 @js.native
 object MacAlgorithmProvider extends js.Object {

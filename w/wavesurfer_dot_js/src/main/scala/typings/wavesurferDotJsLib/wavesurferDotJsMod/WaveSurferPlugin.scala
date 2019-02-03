@@ -16,6 +16,7 @@ class WaveSurferPlugin protected ()
   override def init(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wavesurfer.js", "WaveSurferPlugin")
 @js.native
 object WaveSurferPlugin extends js.Object {

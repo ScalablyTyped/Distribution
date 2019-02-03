@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class JsonError () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Data.Json.JsonError")
 @js.native
 object JsonError extends js.Object {

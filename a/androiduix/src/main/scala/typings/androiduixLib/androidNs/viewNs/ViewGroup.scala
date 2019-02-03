@@ -196,6 +196,7 @@ abstract class ViewGroup protected ()
   def suppressLayout(suppress: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ViewGroup")
 @js.native
 object ViewGroup extends js.Object {

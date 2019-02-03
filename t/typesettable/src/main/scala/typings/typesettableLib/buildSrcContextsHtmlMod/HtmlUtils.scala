@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class HtmlUtils () extends js.Object
 
+/* static members */
 @JSImport("typesettable/build/src/contexts/html", "HtmlUtils")
 @js.native
 object HtmlUtils extends js.Object {

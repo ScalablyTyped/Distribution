@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Config ()
   extends parseLib.ParseNs.Config
 
+/* static members */
 @JSImport("parse/node", "Config")
 @js.native
 object Config extends js.Object {

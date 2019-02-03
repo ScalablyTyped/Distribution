@@ -82,6 +82,7 @@ class b2Mat22 () extends js.Object {
   def Solve(out: b2Vec2, bX: scala.Double, bY: scala.Double): b2Vec2 = js.native
 }
 
+/* static members */
 @JSGlobal("Box2D.Common.Math.b2Mat22")
 @js.native
 object b2Mat22 extends js.Object {

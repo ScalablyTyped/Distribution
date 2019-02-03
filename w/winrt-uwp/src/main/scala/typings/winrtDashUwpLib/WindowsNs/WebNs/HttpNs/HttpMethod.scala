@@ -18,7 +18,7 @@ class HttpMethod protected () extends js.Object {
   var method: java.lang.String = js.native
 }
 
-/** Retrieves standard HTTP methods such as GET and POST and creates new HTTP methods. */
+/* static members */
 @JSGlobal("Windows.Web.Http.HttpMethod")
 @js.native
 object HttpMethod extends js.Object {

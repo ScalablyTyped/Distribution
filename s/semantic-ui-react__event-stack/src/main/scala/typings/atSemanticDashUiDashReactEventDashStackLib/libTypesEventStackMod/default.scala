@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends EventStack
 
+/* static members */
 @JSImport("@semantic-ui-react/event-stack/lib/types/EventStack", JSImport.Default)
 @js.native
 object default extends js.Object {

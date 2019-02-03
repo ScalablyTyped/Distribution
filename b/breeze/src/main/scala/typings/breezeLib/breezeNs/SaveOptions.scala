@@ -17,6 +17,7 @@ class SaveOptions () extends js.Object {
   def using(config: SaveOptionsConfiguration): SaveOptions = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.SaveOptions")
 @js.native
 object SaveOptions extends js.Object {

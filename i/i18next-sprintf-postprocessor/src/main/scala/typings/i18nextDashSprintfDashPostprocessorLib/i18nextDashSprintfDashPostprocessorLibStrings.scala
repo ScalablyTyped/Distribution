@@ -9,6 +9,7 @@ object i18nextDashSprintfDashPostprocessorLibStrings {
   @js.native
   sealed trait sprintf extends js.Object
   
+  @scala.inline
   def sprintf: sprintf = "sprintf".asInstanceOf[sprintf]
 }
 

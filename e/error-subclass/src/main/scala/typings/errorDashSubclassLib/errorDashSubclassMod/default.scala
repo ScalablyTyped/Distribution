@@ -14,6 +14,7 @@ class default () extends ErrorSubclass {
   override var name: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("error-subclass", JSImport.Default)
 @js.native
 object default extends js.Object {

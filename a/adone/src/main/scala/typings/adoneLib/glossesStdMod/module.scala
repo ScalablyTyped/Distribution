@@ -13,6 +13,7 @@ class module protected ()
   def this(id: java.lang.String, parent: nodeLib.NodeJSNs.Module) = this()
 }
 
+/* static members */
 @JSImport("adone/glosses/std", "module")
 @js.native
 object module extends js.Object {

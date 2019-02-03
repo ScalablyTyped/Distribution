@@ -34,6 +34,7 @@ class Certificate protected ()
   val csr: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iot/certificate", "Certificate")
 @js.native
 object Certificate extends js.Object {

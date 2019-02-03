@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Expo ()
   extends gsapLib.gsapNs.Expo
 
+/* static members */
 @JSImport("gsap", "Expo")
 @js.native
 object Expo extends js.Object {

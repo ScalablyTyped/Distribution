@@ -24,6 +24,7 @@ class Occluder protected ()
   override def isPointVisible(occludee: cesiumLib.cesiumMod.CesiumNs.Cartesian3): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "Occluder")
 @js.native
 object Occluder extends js.Object {

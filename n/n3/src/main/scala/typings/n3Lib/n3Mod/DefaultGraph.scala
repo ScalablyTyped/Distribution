@@ -33,6 +33,7 @@ class DefaultGraph ()
   def toJSON(): js.Object = js.native
 }
 
+/* static members */
 @JSImport("n3", "DefaultGraph")
 @js.native
 object DefaultGraph extends js.Object {

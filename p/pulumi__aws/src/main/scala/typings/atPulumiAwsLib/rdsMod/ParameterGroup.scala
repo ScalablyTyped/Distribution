@@ -20,6 +20,7 @@ class ParameterGroup protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.rdsParameterGroupMod.ParameterGroupArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/rds", "ParameterGroup")
 @js.native
 object ParameterGroup extends js.Object {

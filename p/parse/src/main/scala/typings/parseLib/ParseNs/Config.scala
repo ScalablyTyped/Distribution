@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Config () extends Object
 
+/* static members */
 @JSGlobal("Parse.Config")
 @js.native
 object Config extends js.Object {

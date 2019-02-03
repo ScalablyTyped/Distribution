@@ -41,6 +41,7 @@ class CatalogDatabase protected ()
   val parameters: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/glue/catalogDatabase", "CatalogDatabase")
 @js.native
 object CatalogDatabase extends js.Object {

@@ -21,6 +21,7 @@ class PagingControl protected () extends js.Object {
   def setButtonState(buttonId: scala.Double, state: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.UI.PagingControl")
 @js.native
 object PagingControl extends js.Object {

@@ -64,6 +64,7 @@ class PublicVirtualInterface protected ()
   val vlan: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/directconnect/publicVirtualInterface", "PublicVirtualInterface")
 @js.native
 object PublicVirtualInterface extends js.Object {

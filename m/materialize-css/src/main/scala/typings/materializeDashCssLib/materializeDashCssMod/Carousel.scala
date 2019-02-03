@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Carousel ()
   extends materializeDashCssLib.MNs.Carousel
 
+/* static members */
 @JSImport("materialize-css", "Carousel")
 @js.native
 object Carousel extends js.Object {

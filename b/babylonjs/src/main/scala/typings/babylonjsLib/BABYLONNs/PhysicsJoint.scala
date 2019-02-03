@@ -54,11 +54,7 @@ class PhysicsJoint protected () extends js.Object {
   def executeNativeFunction(func: js.Function2[/* world */ js.Any, /* physicsJoint */ js.Any, scala.Unit]): scala.Unit = js.native
 }
 
-/**
-  * This is a holder class for the physics joint created by the physics plugin
-  * It holds a set of functions to control the underlying joint
-  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSGlobal("BABYLON.PhysicsJoint")
 @js.native
 object PhysicsJoint extends js.Object {

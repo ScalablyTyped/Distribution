@@ -15,8 +15,11 @@ object pngjsLibStrings {
   @js.native
   sealed trait parsed extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def metadata: metadata = "metadata".asInstanceOf[metadata]
+  @scala.inline
   def parsed: parsed = "parsed".asInstanceOf[parsed]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Slider ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Slider
 
+/* static members */
 @JSImport("@blueprintjs/core", "Slider")
 @js.native
 object Slider extends js.Object {

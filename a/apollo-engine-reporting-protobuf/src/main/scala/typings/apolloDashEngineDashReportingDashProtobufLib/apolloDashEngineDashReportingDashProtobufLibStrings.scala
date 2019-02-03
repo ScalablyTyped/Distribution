@@ -12,7 +12,9 @@ object apolloDashEngineDashReportingDashProtobufLibStrings {
   @js.native
   sealed trait index extends js.Object
   
+  @scala.inline
   def fieldName: fieldName = "fieldName".asInstanceOf[fieldName]
+  @scala.inline
   def index: index = "index".asInstanceOf[index]
 }
 

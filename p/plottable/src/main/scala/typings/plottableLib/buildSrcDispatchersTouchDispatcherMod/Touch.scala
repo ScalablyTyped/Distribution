@@ -81,6 +81,7 @@ class Touch protected ()
   def onTouchStart(callback: TouchCallback): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/dispatchers/touchDispatcher", "Touch")
 @js.native
 object Touch extends js.Object {

@@ -49,6 +49,7 @@ class VpcDhcpOptions protected ()
   val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/vpcDhcpOptions", "VpcDhcpOptions")
 @js.native
 object VpcDhcpOptions extends js.Object {

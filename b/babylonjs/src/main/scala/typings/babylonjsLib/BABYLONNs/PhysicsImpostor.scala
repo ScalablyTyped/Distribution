@@ -377,10 +377,7 @@ class PhysicsImpostor protected () extends js.Object {
   def wakeUp(): PhysicsImpostor = js.native
 }
 
-/**
-  * Represents a physics imposter
-  * @see https://doc.babylonjs.com/how_to/using_the_physics_engine
-  */
+/* static members */
 @JSGlobal("BABYLON.PhysicsImpostor")
 @js.native
 object PhysicsImpostor extends js.Object {

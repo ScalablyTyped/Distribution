@@ -21,6 +21,7 @@ class Application protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codedeployApplicationMod.ApplicationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codedeploy", "Application")
 @js.native
 object Application extends js.Object {

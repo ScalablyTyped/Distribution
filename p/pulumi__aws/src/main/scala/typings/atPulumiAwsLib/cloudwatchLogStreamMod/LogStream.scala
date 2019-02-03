@@ -32,6 +32,7 @@ class LogStream protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logStream", "LogStream")
 @js.native
 object LogStream extends js.Object {

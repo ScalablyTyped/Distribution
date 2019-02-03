@@ -60,6 +60,7 @@ class DataSource protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/appsync/dataSource", "DataSource")
 @js.native
 object DataSource extends js.Object {

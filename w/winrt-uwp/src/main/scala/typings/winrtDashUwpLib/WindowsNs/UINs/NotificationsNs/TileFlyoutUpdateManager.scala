@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class TileFlyoutUpdateManager () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.UI.Notifications.TileFlyoutUpdateManager")
 @js.native
 object TileFlyoutUpdateManager extends js.Object {

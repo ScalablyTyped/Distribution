@@ -33,6 +33,7 @@ object UninterpretedOptionNs extends js.Object {
     def setNamePart(value: java.lang.String): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object NamePart extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[

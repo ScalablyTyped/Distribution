@@ -60,6 +60,7 @@ class ReplicationTask protected ()
   val targetEndpointArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/dms/replicationTask", "ReplicationTask")
 @js.native
 object ReplicationTask extends js.Object {

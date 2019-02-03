@@ -45,7 +45,7 @@ abstract class ResourceManager () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Provides access to application resource maps and more advanced resource functionality. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Resources.Core.ResourceManager")
 @js.native
 object ResourceManager extends js.Object {

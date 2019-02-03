@@ -15,6 +15,7 @@ class UnrealBloomPass ()
   def this(resolution: threeLib.threeDashCoreMod.Vector2, strength: scala.Double, radius: scala.Double, threshold: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("three", "UnrealBloomPass")
 @js.native
 object UnrealBloomPass extends js.Object {

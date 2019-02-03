@@ -70,9 +70,7 @@ class Path2 protected () extends js.Object {
   def length(): scala.Double = js.native
 }
 
-/**
-  * Represents a 2D path made up of multiple 2D points
-  */
+/* static members */
 @JSGlobal("BABYLON.Path2")
 @js.native
 object Path2 extends js.Object {

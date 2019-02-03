@@ -45,6 +45,7 @@ class FocusTrapZone ()
   override def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/FocusTrapZone/FocusTrapZone", "FocusTrapZone")
 @js.native
 object FocusTrapZone extends js.Object {

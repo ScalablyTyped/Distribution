@@ -22,12 +22,7 @@ class Node ()
   def this(`type`: goLib.goMod.goNs.EnumValue) = this()
 }
 
-/**
-  * A Node is a Part that may connect to other nodes with Links,
-  * or that may be a member of a Group.
-  * Group inherits from Node,
-  * enabling nodes to logically contain other nodes and links.
-  */
+/* static members */
 @JSImport("go", "Node")
 @js.native
 object Node extends js.Object {

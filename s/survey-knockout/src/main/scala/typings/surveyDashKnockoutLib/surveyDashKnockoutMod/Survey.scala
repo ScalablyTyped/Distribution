@@ -44,6 +44,7 @@ class Survey () extends SurveyModel {
   def render(element: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "Survey")
 @js.native
 object Survey extends js.Object {

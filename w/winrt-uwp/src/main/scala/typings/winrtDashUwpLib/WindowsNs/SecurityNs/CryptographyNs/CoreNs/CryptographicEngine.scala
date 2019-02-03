@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CryptographicEngine () extends js.Object
 
-/** Encrypts, decrypts, and signs content, and verifies digital signatures. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.CryptographicEngine")
 @js.native
 object CryptographicEngine extends js.Object {

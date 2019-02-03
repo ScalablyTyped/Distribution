@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Axis () extends js.Object
 
-/** Defines the 3 main axes */
+/* static members */
 @JSGlobal("BABYLON.Axis")
 @js.native
 object Axis extends js.Object {

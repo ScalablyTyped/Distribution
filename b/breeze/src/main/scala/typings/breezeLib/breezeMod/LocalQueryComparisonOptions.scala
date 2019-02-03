@@ -12,6 +12,7 @@ class LocalQueryComparisonOptions protected ()
   def this(config: breezeLib.Anon_IsCaseSensitive) = this()
 }
 
+/* static members */
 @JSImport("breeze", "LocalQueryComparisonOptions")
 @js.native
 object LocalQueryComparisonOptions extends js.Object {

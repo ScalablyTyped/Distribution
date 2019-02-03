@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayCreator () extends js.Object
 
+/* static members */
 @JSGlobal("androidui.util.ArrayCreator")
 @js.native
 object ArrayCreator extends js.Object {

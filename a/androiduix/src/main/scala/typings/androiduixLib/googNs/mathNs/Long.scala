@@ -43,6 +43,7 @@ class Long protected () extends js.Object {
   def xor(other: Long): Long = js.native
 }
 
+/* static members */
 @JSGlobal("goog.math.Long")
 @js.native
 object Long extends js.Object {

@@ -107,9 +107,7 @@ object autoscalingNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v1Ns.HorizontalPodAutoscalerList = js.native
     }
     
-    /**
-      * configuration of a horizontal pod autoscaler.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -132,9 +130,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v1Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**
@@ -262,11 +258,7 @@ object autoscalingNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscalerList = js.native
     }
     
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -289,9 +281,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta1Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * HorizontalPodAutoscaler is a list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**
@@ -419,11 +409,7 @@ object autoscalingNs extends js.Object {
       def getInputs(): atPulumiKubernetesLib.typesInputMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscalerList = js.native
     }
     
-    /**
-      * HorizontalPodAutoscaler is the configuration for a horizontal pod autoscaler, which
-      * automatically manages the replica count of any resource implementing the scale subresource
-      * based on the metrics specified.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscaler extends js.Object {
       /**
@@ -446,9 +432,7 @@ object autoscalingNs extends js.Object {
       ): atPulumiKubernetesLib.providerMod.autoscalingNs.v2beta2Ns.HorizontalPodAutoscaler = js.native
     }
     
-    /**
-      * HorizontalPodAutoscalerList is a list of horizontal pod autoscaler objects.
-      */
+    /* static members */
     @js.native
     object HorizontalPodAutoscalerList extends js.Object {
       /**

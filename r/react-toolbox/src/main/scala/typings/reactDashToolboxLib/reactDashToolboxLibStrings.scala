@@ -222,77 +222,149 @@ object reactDashToolboxLibStrings {
   @js.native
   sealed trait `zh-tw` extends js.Object
   
+  @scala.inline
   def `24hr`: `24hr` = "24hr".asInstanceOf[`24hr`]
+  @scala.inline
   def above: above = "above".asInstanceOf[above]
+  @scala.inline
   def accept: accept = "accept".asInstanceOf[accept]
+  @scala.inline
   def af: af = "af".asInstanceOf[af]
+  @scala.inline
   def ampm: ampm = "ampm".asInstanceOf[ampm]
+  @scala.inline
   def anywhere: anywhere = "anywhere".asInstanceOf[anywhere]
+  @scala.inline
   def ar: ar = "ar".asInstanceOf[ar]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
+  @scala.inline
   def be: be = "be".asInstanceOf[be]
+  @scala.inline
   def below: below = "below".asInstanceOf[below]
+  @scala.inline
   def bg: bg = "bg".asInstanceOf[bg]
+  @scala.inline
   def bn: bn = "bn".asInstanceOf[bn]
+  @scala.inline
   def bo: bo = "bo".asInstanceOf[bo]
+  @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
+  @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
+  @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
+  @scala.inline
   def br: br = "br".asInstanceOf[br]
+  @scala.inline
   def bs: bs = "bs".asInstanceOf[bs]
+  @scala.inline
   def ca: ca = "ca".asInstanceOf[ca]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
+  @scala.inline
   def circular: circular = "circular".asInstanceOf[circular]
+  @scala.inline
   def de: de = "de".asInstanceOf[de]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
+  @scala.inline
   def determinate: determinate = "determinate".asInstanceOf[determinate]
+  @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
+  @scala.inline
   def display: display = "display".asInstanceOf[display]
+  @scala.inline
   def down: down = "down".asInstanceOf[down]
+  @scala.inline
   def en: en = "en".asInstanceOf[en]
+  @scala.inline
   def es: es = "es".asInstanceOf[es]
+  @scala.inline
   def eu: eu = "eu".asInstanceOf[eu]
+  @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
+  @scala.inline
   def gl: gl = "gl".asInstanceOf[gl]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def indeterminate: indeterminate = "indeterminate".asInstanceOf[indeterminate]
+  @scala.inline
   def it: it = "it".asInstanceOf[it]
+  @scala.inline
   def large: large = "large".asInstanceOf[large]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
+  @scala.inline
   def lgTablet: lgTablet = "lgTablet".asInstanceOf[lgTablet]
+  @scala.inline
   def linear: linear = "linear".asInstanceOf[linear]
+  @scala.inline
   def md: md = "md".asInstanceOf[md]
+  @scala.inline
   def no: no = "no".asInstanceOf[no]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
+  @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
+  @scala.inline
   def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def ru: ru = "ru".asInstanceOf[ru]
+  @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
+  @scala.inline
   def smTablet: smTablet = "smTablet".asInstanceOf[smTablet]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
+  @scala.inline
   def square: square = "square".asInstanceOf[square]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
   def static: static = "static".asInstanceOf[static]
+  @scala.inline
   def td: td = "td".asInstanceOf[td]
+  @scala.inline
   def th: th = "th".asInstanceOf[th]
+  @scala.inline
   def top: top = "top".asInstanceOf[top]
+  @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
+  @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
+  @scala.inline
   def ua: ua = "ua".asInstanceOf[ua]
+  @scala.inline
   def unmounted: unmounted = "unmounted".asInstanceOf[unmounted]
+  @scala.inline
   def up: up = "up".asInstanceOf[up]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
+  @scala.inline
   def wide: wide = "wide".asInstanceOf[wide]
+  @scala.inline
   def word: word = "word".asInstanceOf[word]
+  @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
+  @scala.inline
   def xxl: xxl = "xxl".asInstanceOf[xxl]
+  @scala.inline
   def xxxl: xxxl = "xxxl".asInstanceOf[xxxl]
+  @scala.inline
   def `zh-cn`: `zh-cn` = "zh-cn".asInstanceOf[`zh-cn`]
+  @scala.inline
   def `zh-hk`: `zh-hk` = "zh-hk".asInstanceOf[`zh-hk`]
+  @scala.inline
   def `zh-tw`: `zh-tw` = "zh-tw".asInstanceOf[`zh-tw`]
 }
 

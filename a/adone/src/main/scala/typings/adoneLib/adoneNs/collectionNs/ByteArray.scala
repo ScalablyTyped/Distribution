@@ -758,9 +758,7 @@ class ByteArray () extends js.Object {
   def writeVarint64ZigZag(value: scala.Double, offset: scala.Double): scala.Double = js.native
 }
 
-/**
-  * Represents an array of bytes, enhanced Node.js Buffer
-  */
+/* static members */
 @JSGlobal("adone.collection.ByteArray")
 @js.native
 object ByteArray extends js.Object {

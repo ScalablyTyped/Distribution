@@ -12,6 +12,7 @@ class DeclarationEmitter protected ()
   def this(emittingFileName: java.lang.String, document: typescriptDashServicesLib.TypeScriptNs.Document, compiler: typescriptDashServicesLib.TypeScriptNs.TypeScriptCompiler, emitOptions: typescriptDashServicesLib.TypeScriptNs.EmitOptions, semanticInfoChain: typescriptDashServicesLib.TypeScriptNs.SemanticInfoChain) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "DeclarationEmitter")
 @js.native
 object DeclarationEmitter extends js.Object {

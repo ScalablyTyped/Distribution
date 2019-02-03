@@ -34,6 +34,7 @@ class LocalizableString protected () extends js.Object {
   def strChanged(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("survey-knockout", "LocalizableString")
 @js.native
 object LocalizableString extends js.Object {

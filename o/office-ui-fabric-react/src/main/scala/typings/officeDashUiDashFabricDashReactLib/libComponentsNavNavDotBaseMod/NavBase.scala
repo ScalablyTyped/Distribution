@@ -38,6 +38,7 @@ class NavBase protected ()
   def componentWillReceiveProps_MNavBase(newProps: officeDashUiDashFabricDashReactLib.libComponentsNavNavDotTypesMod.INavProps): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Nav/Nav.base", "NavBase")
 @js.native
 object NavBase extends js.Object {

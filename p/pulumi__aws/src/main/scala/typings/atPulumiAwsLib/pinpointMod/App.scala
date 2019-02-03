@@ -21,6 +21,7 @@ class App protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.pinpointAppMod.AppArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/pinpoint", "App")
 @js.native
 object App extends js.Object {

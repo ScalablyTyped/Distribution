@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Merge () extends js.Object
 
+/* static members */
 @JSImport("nodegit/merge", "Merge")
 @js.native
 object Merge extends js.Object {

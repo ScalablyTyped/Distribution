@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends GoogleAnalyticsSettings
 
+/* static members */
 @JSImport("react-native-google-analytics-bridge/dist/GoogleAnalyticsSettings", JSImport.Default)
 @js.native
 object default extends js.Object {

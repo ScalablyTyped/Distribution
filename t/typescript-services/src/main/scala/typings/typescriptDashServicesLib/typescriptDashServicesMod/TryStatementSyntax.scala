@@ -12,6 +12,7 @@ class TryStatementSyntax protected ()
   def this(tryKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, catchClause: typescriptDashServicesLib.TypeScriptNs.CatchClauseSyntax, finallyClause: typescriptDashServicesLib.TypeScriptNs.FinallyClauseSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "TryStatementSyntax")
 @js.native
 object TryStatementSyntax extends js.Object {

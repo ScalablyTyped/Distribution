@@ -16,6 +16,7 @@ class Transform () extends js.Object {
   def vectorToWorldFrame(localVector: Vec3, result: Vec3): Vec3 = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.Transform")
 @js.native
 object Transform extends js.Object {

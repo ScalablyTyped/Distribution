@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ScrollManager () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.dd.ScrollManager")
 @js.native
 object ScrollManager extends js.Object {

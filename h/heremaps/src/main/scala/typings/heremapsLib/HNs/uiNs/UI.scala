@@ -78,9 +78,7 @@ class UI protected ()
   def toggleUnitSystem(): scala.Unit = js.native
 }
 
-/**
-  * This class encapsulates map UI functionality.
-  */
+/* static members */
 @JSGlobal("H.ui.UI")
 @js.native
 object UI extends js.Object {

@@ -37,7 +37,7 @@ class HttpContentRangeHeaderValue protected () extends js.Object {
   var unit: java.lang.String = js.native
 }
 
-/** Represents the value of the Content-Range HTTP header on HTTP content in a request or a response. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentRangeHeaderValue")
 @js.native
 object HttpContentRangeHeaderValue extends js.Object {

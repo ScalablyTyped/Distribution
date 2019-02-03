@@ -21,6 +21,7 @@ class UsagePlan protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.apigatewayUsagePlanMod.UsagePlanArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway", "UsagePlan")
 @js.native
 object UsagePlan extends js.Object {

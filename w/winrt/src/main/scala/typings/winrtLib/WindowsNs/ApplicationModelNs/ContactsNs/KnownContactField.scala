@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KnownContactField () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
 @js.native
 object KnownContactField extends js.Object {

@@ -28,6 +28,7 @@ class PatchGroup protected ()
   val patchGroup: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/patchGroup", "PatchGroup")
 @js.native
 object PatchGroup extends js.Object {

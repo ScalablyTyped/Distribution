@@ -12,6 +12,7 @@ class NavBarItem protected () extends js.Object {
   def render(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("react-weui", "NavBarItem")
 @js.native
 object NavBarItem extends js.Object {

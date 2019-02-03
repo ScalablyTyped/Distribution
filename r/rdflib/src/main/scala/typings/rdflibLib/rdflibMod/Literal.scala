@@ -33,6 +33,7 @@ class Literal protected () extends Node {
   def copy(): Literal = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Literal")
 @js.native
 object Literal extends js.Object {

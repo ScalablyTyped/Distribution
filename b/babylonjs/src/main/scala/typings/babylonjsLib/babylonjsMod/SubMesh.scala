@@ -43,9 +43,7 @@ class SubMesh protected ()
   indexCount: scala.Double, mesh: babylonjsLib.BABYLONNs.AbstractMesh, renderingMesh: babylonjsLib.BABYLONNs.Mesh, createBoundingBox: scala.Boolean) = this()
 }
 
-/**
-  * Defines a subdivision inside a mesh
-  */
+/* static members */
 @JSImport("babylonjs", "SubMesh")
 @js.native
 object SubMesh extends js.Object {

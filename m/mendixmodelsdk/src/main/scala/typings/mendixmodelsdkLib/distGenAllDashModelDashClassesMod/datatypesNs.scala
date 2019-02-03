@@ -145,9 +145,7 @@ object datatypesNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object BinaryType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -306,9 +304,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.BinaryType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object BooleanType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -467,20 +463,14 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.BooleanType = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/data-types relevant section in reference guide}
-    *
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object DataType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatatypesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object DateTimeType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -639,9 +629,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DateTimeType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object DecimalType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -800,9 +788,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.DecimalType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EmptyType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -961,18 +947,14 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.EmptyType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EntityType extends js.Object {
     var structureTypeName: java.lang.String = js.native
     var versionInfo: mendixmodelsdkLib.distGenDatatypesMod.StructureVersionInfo = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object EnumerationType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1131,9 +1113,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.EnumerationType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object FloatType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1292,9 +1272,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.FloatType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object IntegerType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1453,9 +1431,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.IntegerType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object ListType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1614,9 +1590,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.ListType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object ObjectType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1775,9 +1749,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.ObjectType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object StringType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -1936,9 +1908,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.StringType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object UnknownType extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -2097,9 +2067,7 @@ object datatypesNs extends js.Object {
     def createInValueMappingElementUnderType(container: mendixmodelsdkLib.distGenMappingsMod.mappingsNs.ValueMappingElement): mendixmodelsdkLib.distGenDatatypesMod.datatypesNs.UnknownType = js.native
   }
   
-  /**
-    * In version 7.9.0: introduced
-    */
+  /* static members */
   @js.native
   object VoidType extends js.Object {
     var structureTypeName: java.lang.String = js.native

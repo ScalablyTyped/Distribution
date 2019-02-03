@@ -45,9 +45,7 @@ class RandomAccessFile protected ()
   def write(buf: nodeLib.Buffer, offset: scala.Double): js.Promise[scala.Double] = js.native
 }
 
-/**
-  * Represents a file that supports random access
-  */
+/* static members */
 @JSGlobal("adone.fs.RandomAccessFile")
 @js.native
 object RandomAccessFile extends js.Object {

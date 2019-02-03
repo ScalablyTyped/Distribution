@@ -21,6 +21,7 @@ class SyntaxDedenter protected () extends SyntaxRewriter {
   /* private */ def isAborted(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SyntaxDedenter")
 @js.native
 object SyntaxDedenter extends js.Object {

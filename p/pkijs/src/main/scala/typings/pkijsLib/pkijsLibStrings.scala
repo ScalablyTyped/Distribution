@@ -18,9 +18,13 @@ object pkijsLibStrings {
   @js.native
   sealed trait spki extends js.Object
   
+  @scala.inline
   def jwk: jwk = "jwk".asInstanceOf[jwk]
+  @scala.inline
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
+  @scala.inline
   def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def spki: spki = "spki".asInstanceOf[spki]
 }
 

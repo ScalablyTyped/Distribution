@@ -21,6 +21,7 @@ class Location protected ()
   def wrap(): Location = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.dataviz.map.Location")
 @js.native
 object Location extends js.Object {

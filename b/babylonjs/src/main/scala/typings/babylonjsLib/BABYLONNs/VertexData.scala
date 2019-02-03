@@ -140,9 +140,7 @@ class VertexData () extends js.Object {
   def updateMesh(mesh: Mesh, updateExtends: scala.Boolean, makeItUnique: scala.Boolean): VertexData = js.native
 }
 
-/**
-  * This class contains the various kinds of data on every vertex of a mesh used in determining its shape and appearance
-  */
+/* static members */
 @JSGlobal("BABYLON.VertexData")
 @js.native
 object VertexData extends js.Object {

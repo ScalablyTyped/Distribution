@@ -48,19 +48,33 @@ object jjuLibStrings {
   @js.native
   sealed trait whitespace extends js.Object
   
+  @scala.inline
   def `'`: `'` = "'".asInstanceOf[`'`]
+  @scala.inline
   def BACKSLASH: BACKSLASH = "\"".asInstanceOf[BACKSLASH]
+  @scala.inline
   def cjson: cjson = "cjson".asInstanceOf[cjson]
+  @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
+  @scala.inline
   def ignore: ignore = "ignore".asInstanceOf[ignore]
+  @scala.inline
   def json: json = "json".asInstanceOf[json]
+  @scala.inline
   def json5: json5 = "json5".asInstanceOf[json5]
+  @scala.inline
   def key: key = "key".asInstanceOf[key]
+  @scala.inline
   def literal: literal = "literal".asInstanceOf[literal]
+  @scala.inline
   def newline: newline = "newline".asInstanceOf[newline]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
+  @scala.inline
   def separator: separator = "separator".asInstanceOf[separator]
+  @scala.inline
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
+  @scala.inline
   def whitespace: whitespace = "whitespace".asInstanceOf[whitespace]
 }
 

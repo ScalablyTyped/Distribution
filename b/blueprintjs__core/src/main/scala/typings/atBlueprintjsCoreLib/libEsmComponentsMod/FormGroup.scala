@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class FormGroup ()
   extends atBlueprintjsCoreLib.libEsmComponentsFormsFormGroupMod.FormGroup
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "FormGroup")
 @js.native
 object FormGroup extends js.Object {

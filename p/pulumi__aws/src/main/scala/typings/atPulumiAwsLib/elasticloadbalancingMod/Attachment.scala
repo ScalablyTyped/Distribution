@@ -20,6 +20,7 @@ class Attachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingAttachmentMod.AttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing", "Attachment")
 @js.native
 object Attachment extends js.Object {

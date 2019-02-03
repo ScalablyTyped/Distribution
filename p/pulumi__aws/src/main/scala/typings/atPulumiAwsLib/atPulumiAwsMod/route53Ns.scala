@@ -105,6 +105,7 @@ object route53Ns extends js.Object {
     args: atPulumiAwsLib.route53GetZoneMod.GetZoneArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.route53GetZoneMod.GetZoneResult] = js.native
+  /* static members */
   @js.native
   object DelegationSet extends js.Object {
     /**
@@ -129,6 +130,7 @@ object route53Ns extends js.Object {
     ): atPulumiAwsLib.route53DelegationSetMod.DelegationSet = js.native
   }
   
+  /* static members */
   @js.native
   object HealthCheck extends js.Object {
     /**
@@ -153,6 +155,7 @@ object route53Ns extends js.Object {
     ): atPulumiAwsLib.route53HealthCheckMod.HealthCheck = js.native
   }
   
+  /* static members */
   @js.native
   object QueryLog extends js.Object {
     /**
@@ -177,6 +180,7 @@ object route53Ns extends js.Object {
     ): atPulumiAwsLib.route53QueryLogMod.QueryLog = js.native
   }
   
+  /* static members */
   @js.native
   object Record extends js.Object {
     /**
@@ -201,6 +205,7 @@ object route53Ns extends js.Object {
     ): atPulumiAwsLib.route53RecordMod.Record = js.native
   }
   
+  /* static members */
   @js.native
   object Zone extends js.Object {
     /**
@@ -225,6 +230,7 @@ object route53Ns extends js.Object {
     ): atPulumiAwsLib.route53ZoneMod.Zone = js.native
   }
   
+  /* static members */
   @js.native
   object ZoneAssociation extends js.Object {
     /**

@@ -153,6 +153,7 @@ class Ribbon protected () extends Widget {
   def updateGroup(tabIndex: scala.Double, groupId: java.lang.String, contentGroup: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Ribbon")
 @js.native
 object Ribbon extends js.Object {

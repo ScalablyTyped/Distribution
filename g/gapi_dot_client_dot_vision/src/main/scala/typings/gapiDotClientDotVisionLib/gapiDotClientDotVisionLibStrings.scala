@@ -12,7 +12,9 @@ object gapiDotClientDotVisionLibStrings {
   @js.native
   sealed trait vision extends js.Object
   
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
+  @scala.inline
   def vision: vision = "vision".asInstanceOf[vision]
 }
 

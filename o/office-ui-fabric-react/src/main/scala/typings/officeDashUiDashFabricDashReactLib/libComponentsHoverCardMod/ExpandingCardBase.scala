@@ -12,6 +12,7 @@ class ExpandingCardBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardExpandingCardDotTypesMod.IExpandingCardProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/HoverCard", "ExpandingCardBase")
 @js.native
 object ExpandingCardBase extends js.Object {

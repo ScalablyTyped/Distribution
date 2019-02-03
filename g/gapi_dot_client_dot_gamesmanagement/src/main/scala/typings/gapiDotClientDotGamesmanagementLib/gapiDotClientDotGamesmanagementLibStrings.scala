@@ -12,7 +12,9 @@ object gapiDotClientDotGamesmanagementLibStrings {
   @js.native
   sealed trait v1management extends js.Object
   
+  @scala.inline
   def gamesmanagement: gamesmanagement = "gamesmanagement".asInstanceOf[gamesmanagement]
+  @scala.inline
   def v1management: v1management = "v1management".asInstanceOf[v1management]
 }
 

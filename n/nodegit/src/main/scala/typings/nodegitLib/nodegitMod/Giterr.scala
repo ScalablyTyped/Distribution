@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Giterr ()
   extends nodegitLib.gitDashErrMod.Giterr
 
+/* static members */
 @JSImport("nodegit", "Giterr")
 @js.native
 object Giterr extends js.Object {

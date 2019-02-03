@@ -42,17 +42,29 @@ object randomcolorLibStrings {
   @js.native
   sealed trait rgba extends js.Object
   
+  @scala.inline
   def bright: bright = "bright".asInstanceOf[bright]
+  @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
+  @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
+  @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
+  @scala.inline
   def hslArray: hslArray = "hslArray".asInstanceOf[hslArray]
+  @scala.inline
   def hsla: hsla = "hsla".asInstanceOf[hsla]
+  @scala.inline
   def hsvArray: hsvArray = "hsvArray".asInstanceOf[hsvArray]
+  @scala.inline
   def light: light = "light".asInstanceOf[light]
+  @scala.inline
   def random: random = "random".asInstanceOf[random]
+  @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
+  @scala.inline
   def rgbArray: rgbArray = "rgbArray".asInstanceOf[rgbArray]
+  @scala.inline
   def rgba: rgba = "rgba".asInstanceOf[rgba]
 }
 

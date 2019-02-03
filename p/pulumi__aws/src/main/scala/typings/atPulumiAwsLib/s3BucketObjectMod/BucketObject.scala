@@ -98,6 +98,7 @@ class BucketObject protected ()
   val websiteRedirect: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3/bucketObject", "BucketObject")
 @js.native
 object BucketObject extends js.Object {

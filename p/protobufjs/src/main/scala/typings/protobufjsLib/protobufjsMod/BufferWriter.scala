@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 /** Constructs a new buffer writer instance. */
 class BufferWriter () extends Writer
 
+/* static members */
 @JSImport("protobufjs", "BufferWriter")
 @js.native
 object BufferWriter extends js.Object {

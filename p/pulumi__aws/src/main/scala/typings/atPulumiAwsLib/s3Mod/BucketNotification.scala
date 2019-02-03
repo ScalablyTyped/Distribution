@@ -20,6 +20,7 @@ class BucketNotification protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.s3BucketNotificationMod.BucketNotificationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/s3", "BucketNotification")
 @js.native
 object BucketNotification extends js.Object {

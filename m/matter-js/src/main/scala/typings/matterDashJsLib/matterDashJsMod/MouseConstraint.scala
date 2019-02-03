@@ -56,6 +56,7 @@ class MouseConstraint ()
   override var `type`: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "MouseConstraint")
 @js.native
 object MouseConstraint extends js.Object {

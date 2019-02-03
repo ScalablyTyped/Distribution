@@ -57,6 +57,7 @@ class ScaleGestureDetector protected () extends js.Object {
   def setQuickScaleEnabled(scales: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.ScaleGestureDetector")
 @js.native
 object ScaleGestureDetector extends js.Object {

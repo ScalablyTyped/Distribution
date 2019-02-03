@@ -12,6 +12,7 @@ class ObjectLiteralExpressionSyntax protected ()
   def this(openBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, propertyAssignments: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, closeBraceToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ObjectLiteralExpressionSyntax")
 @js.native
 object ObjectLiteralExpressionSyntax extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ControlManager () extends js.Object
 
+/* static members */
 @JSGlobal("SP.UI.Controls.ControlManager")
 @js.native
 object ControlManager extends js.Object {

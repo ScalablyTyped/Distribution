@@ -9,6 +9,7 @@ object pouchdbDashAdapterDashHttpLibStrings {
   @js.native
   sealed trait http extends js.Object
   
+  @scala.inline
   def http: http = "http".asInstanceOf[http]
 }
 

@@ -16,6 +16,7 @@ class namespaced () extends ByteBuffer {
   def this(capacity: scala.Double, littleEndian: scala.Boolean, noAssert: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("bytebuffer", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

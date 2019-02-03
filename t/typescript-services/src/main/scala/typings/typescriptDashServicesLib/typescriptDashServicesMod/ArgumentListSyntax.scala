@@ -12,6 +12,7 @@ class ArgumentListSyntax protected ()
   def this(typeArgumentList: typescriptDashServicesLib.TypeScriptNs.TypeArgumentListSyntax, openParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, _arguments: typescriptDashServicesLib.TypeScriptNs.ISeparatedSyntaxList, closeParenToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ArgumentListSyntax")
 @js.native
 object ArgumentListSyntax extends js.Object {

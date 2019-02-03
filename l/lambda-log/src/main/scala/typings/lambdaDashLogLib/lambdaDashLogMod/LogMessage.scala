@@ -19,6 +19,7 @@ class LogMessage protected () extends js.Object {
   def toJSON(format: scala.Double): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("lambda-log", "LogMessage")
 @js.native
 object LogMessage extends js.Object {

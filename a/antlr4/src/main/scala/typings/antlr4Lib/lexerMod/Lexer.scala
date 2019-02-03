@@ -33,6 +33,7 @@ class Lexer ()
   def skip(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("antlr4/Lexer", "Lexer")
 @js.native
 object Lexer extends js.Object {

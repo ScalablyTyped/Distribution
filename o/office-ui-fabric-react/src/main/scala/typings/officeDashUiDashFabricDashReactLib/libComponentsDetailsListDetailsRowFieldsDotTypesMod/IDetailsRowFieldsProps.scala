@@ -48,7 +48,9 @@ trait IDetailsRowFieldsProps
   /**
     * Required prop to be passed in from the parent DetailsRow a map of classNames and its mergestyle-created classNames
     */
-  var rowClassNames: officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.IDetailsRowFieldsProps with js.Any
+  var rowClassNames: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ className in 'root' | 'cell' | 'cellUnpadded' | 'cellPadded' | 'checkCell' | 'isRowHeader' | 'isMultiline' | 'fields' | 'cellMeasurer' | 'checkCover' | 'shimmer' | 'shimmerIconPlaceholder' | 'shimmerLeftBorder' | 'shimmerBottomBorder' | 'check' ]: string}
+    */ officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.IDetailsRowFieldsProps with js.Any
   /**
     * Whether to show shimmer
     */

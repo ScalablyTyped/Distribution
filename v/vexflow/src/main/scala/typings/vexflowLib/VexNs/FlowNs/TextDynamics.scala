@@ -13,6 +13,7 @@ class TextDynamics protected () extends Note {
   def setLine(line: scala.Double): TextDynamics = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.TextDynamics")
 @js.native
 object TextDynamics extends js.Object {

@@ -58,6 +58,7 @@ class EmailValidator ()
   override def validatesEmptyValue(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("decorum", "EmailValidator")
 @js.native
 object EmailValidator extends js.Object {

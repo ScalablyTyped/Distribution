@@ -27,6 +27,7 @@ class OverflowList[T] ()
   def shouldComponentUpdate_MOverflowList(_nextProps: IOverflowListProps[T], nextState: IOverflowListState[T]): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/overflow-list/overflowList", "OverflowList")
 @js.native
 object OverflowList extends js.Object {

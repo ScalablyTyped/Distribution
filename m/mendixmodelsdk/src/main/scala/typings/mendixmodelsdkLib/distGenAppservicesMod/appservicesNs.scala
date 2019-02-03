@@ -317,6 +317,7 @@ object appservicesNs extends js.Object {
     var version: scala.Double = js.native
   }
   
+  /* static members */
   @js.native
   object AppServiceAction extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -335,6 +336,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction = js.native
   }
   
+  /* static members */
   @js.native
   object AppServiceActionParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -353,6 +355,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceAction): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceActionParameter = js.native
   }
   
+  /* static members */
   @js.native
   object AppServiceLocationEnum extends js.Object {
     var Constant: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceLocationEnum = js.native
@@ -360,9 +363,7 @@ object appservicesNs extends js.Object {
     var Parameter: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.AppServiceLocationEnum = js.native
   }
   
-  /**
-    * See: {@link https://docs.mendix.com/refguide7/consumed-app-services relevant section in reference guide}
-    */
+  /* static members */
   @js.native
   object ConsumedAppService extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -374,6 +375,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenProjectsMod.projectsNs.IFolderBase): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService = js.native
   }
   
+  /* static members */
   @js.native
   object Msd extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -392,6 +394,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.ConsumedAppService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd = js.native
   }
   
+  /* static members */
   @js.native
   object MsdAssociation extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -416,6 +419,7 @@ object appservicesNs extends js.Object {
     def createInMsdDomainModelUnderAssociations(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAssociation = js.native
   }
   
+  /* static members */
   @js.native
   object MsdAttribute extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -440,6 +444,7 @@ object appservicesNs extends js.Object {
     def createInMsdEntityUnderAttributes(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEntity): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdAttribute = js.native
   }
   
+  /* static members */
   @js.native
   object MsdDomainModel extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -458,6 +463,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel = js.native
   }
   
+  /* static members */
   @js.native
   object MsdEntity extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -476,6 +482,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdDomainModel): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEntity = js.native
   }
   
+  /* static members */
   @js.native
   object MsdEnumeration extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -494,6 +501,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumeration = js.native
   }
   
+  /* static members */
   @js.native
   object MsdEnumerationContainer extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -518,6 +526,7 @@ object appservicesNs extends js.Object {
     def createInVersionedServiceUnderEnumerationsByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.VersionedService): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationContainer = js.native
   }
   
+  /* static members */
   @js.native
   object MsdEnumerationValue extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -536,6 +545,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumeration): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationValue = js.native
   }
   
+  /* static members */
   @js.native
   object MsdMetadata extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -554,6 +564,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.Msd): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMetadata = js.native
   }
   
+  /* static members */
   @js.native
   object MsdMicroflow extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -572,6 +583,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMetadata): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflow = js.native
   }
   
+  /* static members */
   @js.native
   object MsdMicroflowParameter extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -596,6 +608,7 @@ object appservicesNs extends js.Object {
     def createInPublishedParameterUnderParameterByContract(container: mendixmodelsdkLib.distGenWebservicesMod.webservicesNs.PublishedParameter): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdMicroflowParameter = js.native
   }
   
+  /* static members */
   @js.native
   object MsdText extends js.Object {
     var structureTypeName: java.lang.String = js.native
@@ -614,6 +627,7 @@ object appservicesNs extends js.Object {
     def createIn(container: mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdEnumerationValue): mendixmodelsdkLib.distGenAppservicesMod.appservicesNs.MsdText = js.native
   }
   
+  /* static members */
   @js.native
   object MsdVersion extends js.Object {
     var structureTypeName: java.lang.String = js.native

@@ -12,6 +12,7 @@ class Calendar protected ()
   def this(el: fullcalendarLib.srcTypesJqueryDashHooksMod.Global.JQuery, overrides: fullcalendarLib.srcTypesInputDashTypesMod.OptionsInput) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar", "Calendar")
 @js.native
 object Calendar extends js.Object {

@@ -19,6 +19,7 @@ class WorkflowConfiguration ()
   override def toJSON(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("twilio", "WorkflowConfiguration")
 @js.native
 object WorkflowConfiguration extends js.Object {

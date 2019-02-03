@@ -98,7 +98,7 @@ abstract class ApplicationView () extends js.Object {
   def tryResizeView(value: winrtDashUwpLib.WindowsNs.FoundationNs.Size): scala.Boolean = js.native
 }
 
-/** Represents the active application view and associated states and behaviors. */
+/* static members */
 @JSGlobal("Windows.UI.ViewManagement.ApplicationView")
 @js.native
 object ApplicationView extends js.Object {

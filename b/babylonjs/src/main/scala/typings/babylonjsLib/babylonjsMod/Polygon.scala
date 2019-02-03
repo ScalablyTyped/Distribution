@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class Polygon ()
   extends babylonjsLib.BABYLONNs.Polygon
 
-/**
-  * Polygon
-  * @see https://doc.babylonjs.com/how_to/parametric_shapes#non-regular-polygon
-  */
+/* static members */
 @JSImport("babylonjs", "Polygon")
 @js.native
 object Polygon extends js.Object {

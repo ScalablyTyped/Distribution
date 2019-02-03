@@ -15,6 +15,7 @@ class SAPBroadphase () extends BroadPhase {
   def autoDetectAxis(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("CANNON.SAPBroadphase")
 @js.native
 object SAPBroadphase extends js.Object {

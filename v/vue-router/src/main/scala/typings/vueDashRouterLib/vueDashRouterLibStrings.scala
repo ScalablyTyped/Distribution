@@ -15,8 +15,11 @@ object vueDashRouterLibStrings {
   @js.native
   sealed trait history extends js.Object
   
+  @scala.inline
   def `abstract`: `abstract` = "abstract".asInstanceOf[`abstract`]
+  @scala.inline
   def hash: hash = "hash".asInstanceOf[hash]
+  @scala.inline
   def history: history = "history".asInstanceOf[history]
 }
 

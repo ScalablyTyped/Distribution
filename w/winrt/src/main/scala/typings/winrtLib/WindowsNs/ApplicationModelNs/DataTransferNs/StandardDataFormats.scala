@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StandardDataFormats () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.ApplicationModel.DataTransfer.StandardDataFormats")
 @js.native
 object StandardDataFormats extends js.Object {

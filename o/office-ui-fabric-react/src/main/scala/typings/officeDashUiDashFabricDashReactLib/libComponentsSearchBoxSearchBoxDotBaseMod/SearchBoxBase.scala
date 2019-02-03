@@ -38,6 +38,7 @@ class SearchBoxBase protected ()
   def hasFocus(): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/SearchBox/SearchBox.base", "SearchBoxBase")
 @js.native
 object SearchBoxBase extends js.Object {

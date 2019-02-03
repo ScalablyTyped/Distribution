@@ -12,6 +12,8 @@ package object resourceMod {
   type URN = java.lang.String
   type Unwrap[T] = UnwrapSimple[T] | UnwrapSimple[js.Any]
   type UnwrapSimple[T] = UnwrappedObject[T] | UnwrappedArray[js.Any] | T
-  type UnwrappedObject[T] = atPulumiPulumiLib.atPulumiPulumiLibStrings.UnwrappedObject with T
+  type UnwrappedObject[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in keyof T ]: @pulumi/pulumi.@pulumi/pulumi/resource.Unwrap<T[P]>}
+    */ atPulumiPulumiLib.atPulumiPulumiLibStrings.UnwrappedObject with T
   type primitive = js.UndefOr[js.Function | java.lang.String | scala.Double | scala.Boolean | scala.Null]
 }

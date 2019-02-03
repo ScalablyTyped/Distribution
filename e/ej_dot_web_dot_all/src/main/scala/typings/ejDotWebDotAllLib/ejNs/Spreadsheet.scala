@@ -604,6 +604,7 @@ class Spreadsheet protected () extends Widget {
   def wrapText(range: js.Array[_]): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Spreadsheet")
 @js.native
 object Spreadsheet extends js.Object {

@@ -29,6 +29,7 @@ class Bus ()
   def redraw(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("gl-react", "Bus")
 @js.native
 object Bus extends js.Object {

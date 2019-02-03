@@ -14,10 +14,7 @@ import scala.scalajs.js.annotation._
 class FresnelParameters ()
   extends babylonjsLib.BABYLONNs.FresnelParameters
 
-/**
-  * This represents all the required information to add a fresnel effect on a material:
-  * @see http://doc.babylonjs.com/how_to/how_to_use_fresnelparameters
-  */
+/* static members */
 @JSImport("babylonjs", "FresnelParameters")
 @js.native
 object FresnelParameters extends js.Object {

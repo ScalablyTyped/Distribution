@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class RetryStrategy ()
   extends babylonjsLib.BABYLONNs.RetryStrategy
 
-/**
-  * Class used to define a retry strategy when error happens while loading assets
-  */
+/* static members */
 @JSImport("babylonjs", "RetryStrategy")
 @js.native
 object RetryStrategy extends js.Object {

@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class CurrentApp () extends js.Object
 
-/** Defines methods and properties you can use to get license and listing info about the current app and perform in-app product purchases. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Store.CurrentApp")
 @js.native
 object CurrentApp extends js.Object {

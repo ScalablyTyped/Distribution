@@ -312,6 +312,7 @@ class PanZoom ()
   ): plottableLib.Anon_CenterValue = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/interactions/panZoomInteraction", "PanZoom")
 @js.native
 object PanZoom extends js.Object {

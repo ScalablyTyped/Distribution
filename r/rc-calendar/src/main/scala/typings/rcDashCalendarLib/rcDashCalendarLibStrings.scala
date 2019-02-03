@@ -21,10 +21,15 @@ object rcDashCalendarLibStrings {
   @js.native
   sealed trait year extends js.Object
   
+  @scala.inline
   def date: date = "date".asInstanceOf[date]
+  @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
+  @scala.inline
   def month: month = "month".asInstanceOf[month]
+  @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
   def year: year = "year".asInstanceOf[year]
 }
 

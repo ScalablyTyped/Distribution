@@ -20,10 +20,7 @@ class Scene protected ()
   def this(engine: babylonjsLib.BABYLONNs.Engine) = this()
 }
 
-/**
-  * Represents a scene to be rendered by the engine.
-  * @see http://doc.babylonjs.com/features/scene
-  */
+/* static members */
 @JSImport("babylonjs", "Scene")
 @js.native
 object Scene extends js.Object {

@@ -20,6 +20,7 @@ class MultiGrid ()
   def recomputeGridSize(params: reactDashVirtualizedLib.Anon_ColumnIndexRowIndex): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/MultiGrid", "MultiGrid")
 @js.native
 object MultiGrid extends js.Object {

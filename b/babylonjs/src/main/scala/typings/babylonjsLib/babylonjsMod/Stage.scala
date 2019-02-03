@@ -18,10 +18,7 @@ import scala.scalajs.js.annotation._
 class Stage[T /* <: js.Function */] protected ()
   extends babylonjsLib.BABYLONNs.Stage[T]
 
-/**
-  * Repressentation of a stage in the scene (Basically a list of ordered steps)
-  * @hidden
-  */
+/* static members */
 @JSImport("babylonjs", "Stage")
 @js.native
 object Stage extends js.Object {

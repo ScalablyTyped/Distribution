@@ -22,6 +22,7 @@ class Validator protected () extends js.Object {
   def validate(value: js.Any, context: js.Any): ValidationError = js.native
 }
 
+/* static members */
 @JSGlobal("breeze.Validator")
 @js.native
 object Validator extends js.Object {

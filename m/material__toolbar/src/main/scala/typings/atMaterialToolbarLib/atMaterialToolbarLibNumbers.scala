@@ -21,10 +21,15 @@ object atMaterialToolbarLibNumbers {
   @js.native
   sealed trait `64` extends js.Object
   
+  @scala.inline
   def `1DOT25`: `1DOT25` = 1.25.asInstanceOf[`1DOT25`]
+  @scala.inline
   def `2DOT125`: `2DOT125` = 2.125.asInstanceOf[`2DOT125`]
+  @scala.inline
   def `56`: `56` = 56.asInstanceOf[`56`]
+  @scala.inline
   def `600`: `600` = 600.asInstanceOf[`600`]
+  @scala.inline
   def `64`: `64` = 64.asInstanceOf[`64`]
 }
 

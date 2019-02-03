@@ -138,7 +138,13 @@ trait SwiperOptions extends js.Object {
   /**
     * Register event handlers.
     */
-  var on: js.UndefOr[swiperLib.swiperLibStrings.SwiperOptions with js.Any] = js.undefined
+  var on: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
+    */ js.UndefOr[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ key in swiper.swiper.SwiperEvent ]:? (): void}
+    */ swiperLib.swiperLibStrings.SwiperOptions with js.Any
+  ] = js.undefined
   var pagination: js.UndefOr[PaginationOptions] = js.undefined
   var parallax: js.UndefOr[scala.Boolean] = js.undefined
   /**

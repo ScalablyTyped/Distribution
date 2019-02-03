@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ScrollSync ()
   extends reactLib.reactMod.PureComponent[ScrollSyncProps, ScrollSyncState, js.Any]
 
+/* static members */
 @JSImport("react-virtualized/dist/es/ScrollSync", "ScrollSync")
 @js.native
 object ScrollSync extends js.Object {

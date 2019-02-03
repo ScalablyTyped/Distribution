@@ -22,7 +22,7 @@ abstract class PnpObject () extends js.Object {
   def update(updateInfo: PnpObjectUpdate): scala.Unit = js.native
 }
 
-/** Represents a PnP object. This class allows access to well-known properties of a PnP object as well as a property store of additional properties that are specified to be retrieved from the the PnP object. */
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.Pnp.PnpObject")
 @js.native
 object PnpObject extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class PasswordTransformationMethod () extends SingleLineTransformationMethod
 
+/* static members */
 @JSGlobal("android.text.method.PasswordTransformationMethod")
 @js.native
 object PasswordTransformationMethod extends js.Object {

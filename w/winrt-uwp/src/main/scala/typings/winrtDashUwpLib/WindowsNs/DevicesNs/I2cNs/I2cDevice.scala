@@ -52,7 +52,7 @@ abstract class I2cDevice () extends js.Object {
   def writeReadPartial(writeBuffer: js.Array[scala.Double], readBuffer: js.Array[scala.Double]): I2cTransferResult = js.native
 }
 
-/** Represents a communications channel to a device on an inter-integrated circuit (I²C) bus. */
+/* static members */
 @JSGlobal("Windows.Devices.I2c.I2cDevice")
 @js.native
 object I2cDevice extends js.Object {

@@ -51,6 +51,7 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
   def sync(method: java.lang.String, model: backboneLib.backboneMod.Collection[TModel], options: js.Any): jqueryLib.JQueryXHR = js.native
 }
 
+/* static members */
 @JSGlobal("backbone.PageableCollection")
 @js.native
 object PageableCollection extends js.Object {

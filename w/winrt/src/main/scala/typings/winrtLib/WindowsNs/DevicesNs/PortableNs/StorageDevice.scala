@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class StorageDevice () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Devices.Portable.StorageDevice")
 @js.native
 object StorageDevice extends js.Object {

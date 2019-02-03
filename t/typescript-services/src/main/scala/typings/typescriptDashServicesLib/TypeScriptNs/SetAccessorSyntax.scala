@@ -32,6 +32,7 @@ class SetAccessorSyntax protected () extends SyntaxNode {
   def withSetKeyword(setKeyword: ISyntaxToken): SetAccessorSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.SetAccessorSyntax")
 @js.native
 object SetAccessorSyntax extends js.Object {

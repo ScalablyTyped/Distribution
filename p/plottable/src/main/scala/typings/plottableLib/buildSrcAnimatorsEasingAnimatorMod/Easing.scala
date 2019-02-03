@@ -123,6 +123,7 @@ class Easing ()
   override def totalTime(numberOfIterations: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/animators/easingAnimator", "Easing")
 @js.native
 object Easing extends js.Object {

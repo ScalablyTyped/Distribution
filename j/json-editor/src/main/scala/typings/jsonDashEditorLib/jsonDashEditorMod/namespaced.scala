@@ -12,6 +12,7 @@ class namespaced[TValue] protected ()
   def this(element: stdLib.HTMLElement, options: jsonDashEditorLib.JSONEditorOptions[TValue]) = this()
 }
 
+/* static members */
 @JSImport("json-editor", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

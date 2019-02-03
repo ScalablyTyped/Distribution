@@ -113,76 +113,7 @@ class Model protected ()
   ): scala.Unit = js.native
 }
 
-/**
-  * The base class for **all models**
-  * **Inheriting from `Model`*
-  * ```js
-  * var properties = {...};
-  * var options = {...};
-  * var MyModel = loopback.Model.extend('MyModel', properties, options);
-  * ``
-  * **Options*
-  *  - `trackChanges` - If true, changes to the model will be tracked. **Required
-  * for replication.*
-  * **Events*
-  * #### Event: `changed
-  * Emitted after a model has been successfully created, saved, or updated.
-  * Argument: `inst`, model instance, objec
-  * ```js
-  * MyModel.on('changed', function(inst) {
-  *   console.log('model with id %s has been changed', inst.id);
-  *   // => model with id 1 has been changed
-  * });
-  * ``
-  *
-  * #### Event: `deleted
-  * Emitted after an individual model has been deleted.
-  * Argument: `id`, model ID (number)
-  * ```js
-  * MyModel.on('deleted', function(id) {
-  *   console.log('model with id %s has been deleted', id);
-  *   // => model with id 1 has been deleted
-  * });
-  * ``
-  * #### Event: `deletedAll
-  *
-  * Emitted after an individual model has been deleted.
-  * Argument: `where` (optional), where filter, JSON object
-  * ```js
-  * MyModel.on('deletedAll', function(where) {
-  *   if (where) {
-  *     console.log('all models where ', where, ' have been deleted');
-  *     // => all models where
-  *     // => {price: {gt: 100}}
-  *     // => have been deleted
-  *   }
-  * });
-  * ``
-  *
-  * #### Event: `attached
-  * Emitted after a `Model` has been attached to an `app`
-  * #### Event: `dataSourceAttached
-  * Emitted after a `Model` has been attached to a `DataSource`
-  * #### Event: se
-  * Emitted when model property is set.
-  * Argument: `inst`, model instance, objec
-  * ```js
-  * MyModel.on('set', function(inst) {
-  *   console.log('model with id %s has been changed', inst.id);
-  *   // => model with id 1 has been changed
-  * });
-  * ``
-  *
-  * @param {any} data
-  * @property {string} Model.modelName The name of the model. Static property.
-  * @property {DataSource} Model.dataSource Data source to which the model is connected, if any. Static property.
-  * @property {any} Model.sharedMethod The `strong-remoting` [SharedClass](apidocs.strongloop.com/strong-remoting/#sharedclass) that contains remoting (and http) metadata. Static property.
-  * @property {any} settings Contains additional model settings.
-  * @property {string} settings.http.path Base URL of the model HTTP route.
-  * @property [{string}] settings.acls Array of ACLs for the model.
-  * @class
-  * @constructor
-  */
+/* static members */
 @JSImport("loopback", "Model")
 @js.native
 object Model extends js.Object {

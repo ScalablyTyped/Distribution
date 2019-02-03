@@ -30,6 +30,7 @@ class Slider () extends Component[SliderOptions] {
   def start(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Slider")
 @js.native
 object Slider extends js.Object {

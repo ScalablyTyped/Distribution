@@ -66,6 +66,7 @@ class FileSystem protected ()
   val throughputMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/efs/fileSystem", "FileSystem")
 @js.native
 object FileSystem extends js.Object {

@@ -20,6 +20,7 @@ class Cookie ()
   def update(options: CookieDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Cookie")
 @js.native
 object Cookie extends js.Object {

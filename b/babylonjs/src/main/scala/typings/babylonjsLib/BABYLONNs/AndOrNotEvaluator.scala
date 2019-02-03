@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AndOrNotEvaluator () extends js.Object
 
-/**
-  * Class used to evalaute queries containing `and` and `or` operators
-  */
+/* static members */
 @JSGlobal("BABYLON.AndOrNotEvaluator")
 @js.native
 object AndOrNotEvaluator extends js.Object {

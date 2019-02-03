@@ -20,6 +20,7 @@ class VpcIpv4CidrBlockAssociation protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2VpcIpv4CidrBlockAssociationMod.VpcIpv4CidrBlockAssociationArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "VpcIpv4CidrBlockAssociation")
 @js.native
 object VpcIpv4CidrBlockAssociation extends js.Object {

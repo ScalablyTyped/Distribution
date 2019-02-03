@@ -17,6 +17,7 @@ abstract class SerializerComponent[T] ()
   def toObject(item: T, obj: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent")
 @js.native
 object SerializerComponent extends js.Object {

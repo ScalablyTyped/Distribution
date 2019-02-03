@@ -26,6 +26,7 @@ class PersonaCoinBase protected ()
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Persona/PersonaCoin/PersonaCoin.base", "PersonaCoinBase")
 @js.native
 object PersonaCoinBase extends js.Object {

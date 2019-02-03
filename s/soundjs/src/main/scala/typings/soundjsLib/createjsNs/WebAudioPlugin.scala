@@ -13,6 +13,7 @@ class WebAudioPlugin () extends AbstractPlugin {
   var gainNode: stdLib.GainNode = js.native
 }
 
+/* static members */
 @JSGlobal("createjs.WebAudioPlugin")
 @js.native
 object WebAudioPlugin extends js.Object {

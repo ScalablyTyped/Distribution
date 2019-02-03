@@ -11,6 +11,7 @@ import scala.scalajs.js.annotation._
 class ParamTypes ()
   extends atUirouterCoreLib.libParamsMod.ParamTypes
 
+/* static members */
 @JSImport("@uirouter/core", "ParamTypes")
 @js.native
 object ParamTypes extends js.Object {

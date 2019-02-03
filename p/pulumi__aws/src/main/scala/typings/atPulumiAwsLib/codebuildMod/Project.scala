@@ -20,6 +20,7 @@ class Project protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codebuildProjectMod.ProjectArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codebuild", "Project")
 @js.native
 object Project extends js.Object {

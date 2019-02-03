@@ -36,6 +36,7 @@ class LogDestination protected ()
   val targetArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch/logDestination", "LogDestination")
 @js.native
 object LogDestination extends js.Object {

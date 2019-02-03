@@ -21,6 +21,7 @@ class default () extends BasicConstraints {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/BasicConstraints", JSImport.Default)
 @js.native
 object default extends js.Object {

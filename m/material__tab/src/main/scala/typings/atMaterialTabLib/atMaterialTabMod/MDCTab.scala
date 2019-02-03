@@ -12,6 +12,7 @@ class MDCTab ()
   var active: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@material/tab", "MDCTab")
 @js.native
 object MDCTab extends js.Object {

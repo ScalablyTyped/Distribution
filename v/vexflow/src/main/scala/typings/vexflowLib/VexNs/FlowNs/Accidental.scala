@@ -13,6 +13,7 @@ class Accidental protected () extends Modifier {
   def setNote(note: StaveNote): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Vex.Flow.Accidental")
 @js.native
 object Accidental extends js.Object {

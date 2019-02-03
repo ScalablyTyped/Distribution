@@ -17,6 +17,7 @@ class Droppable protected () extends Widget {
   var model_Droppable: ejDotWebDotAllLib.ejNs.DroppableNs.Model = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Droppable")
 @js.native
 object Droppable extends js.Object {

@@ -12,7 +12,9 @@ object domDashInputeventLibStrings {
   @js.native
   sealed trait input extends js.Object
   
+  @scala.inline
   def beforeinput: beforeinput = "beforeinput".asInstanceOf[beforeinput]
+  @scala.inline
   def input: input = "input".asInstanceOf[input]
 }
 

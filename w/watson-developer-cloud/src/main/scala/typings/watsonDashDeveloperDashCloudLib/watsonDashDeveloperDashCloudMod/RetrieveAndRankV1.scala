@@ -31,6 +31,7 @@ class RetrieveAndRankV1 protected () extends js.Object {
   def uploadConfig(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "RetrieveAndRankV1")
 @js.native
 object RetrieveAndRankV1 extends js.Object {

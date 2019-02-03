@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class BackgroundEnergyDiagnostics () extends js.Object
 
-/** Provides debugging APIs for calculating your app's background energy usage in real time. We recommend using these APIs only for debugging. */
+/* static members */
 @JSGlobal("Windows.System.Power.Diagnostics.BackgroundEnergyDiagnostics")
 @js.native
 object BackgroundEnergyDiagnostics extends js.Object {

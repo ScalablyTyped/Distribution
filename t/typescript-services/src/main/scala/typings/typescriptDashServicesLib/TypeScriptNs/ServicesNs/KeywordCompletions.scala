@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class KeywordCompletions () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Services.KeywordCompletions")
 @js.native
 object KeywordCompletions extends js.Object {

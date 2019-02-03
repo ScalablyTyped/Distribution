@@ -61,6 +61,7 @@ class IndexMap protected () extends js.Object {
   ): IndexMap = js.native
 }
 
+/* static members */
 @JSImport("@firebase/database/dist/src/core/snap/IndexMap", "IndexMap")
 @js.native
 object IndexMap extends js.Object {

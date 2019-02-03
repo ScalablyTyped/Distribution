@@ -49,6 +49,7 @@ class Logger protected () extends js.Object {
   def warn(msgs: js.Any*): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("webdriver-manager/built/lib/cli/logger", "Logger")
 @js.native
 object Logger extends js.Object {

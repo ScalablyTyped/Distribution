@@ -15,6 +15,7 @@ class ApiError protected () extends js.Object {
   var url: java.lang.String = js.native
 }
 
+/* static members */
 @JSGlobal("Dropbox.ApiError")
 @js.native
 object ApiError extends js.Object {

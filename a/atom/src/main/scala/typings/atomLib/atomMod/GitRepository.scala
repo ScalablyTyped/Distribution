@@ -119,6 +119,7 @@ class GitRepository protected () extends js.Object {
   def relativize(): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("atom", "GitRepository")
 @js.native
 object GitRepository extends js.Object {

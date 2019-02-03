@@ -9,6 +9,7 @@ object angularDashUiDashRouterLibStrings {
   @js.native
   sealed trait uiDOTrouter extends js.Object
   
+  @scala.inline
   def uiDOTrouter: uiDOTrouter = "ui.router".asInstanceOf[uiDOTrouter]
 }
 

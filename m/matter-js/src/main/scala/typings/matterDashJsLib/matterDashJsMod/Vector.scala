@@ -15,6 +15,7 @@ class Vector ()
   override var y: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("matter-js", "Vector")
 @js.native
 object Vector extends js.Object {

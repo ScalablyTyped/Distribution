@@ -9,6 +9,7 @@ object checkDashTypesLibStrings {
   @js.native
   sealed trait CheckType extends js.Object
   
+  @scala.inline
   def CheckType: CheckType = "CheckType".asInstanceOf[CheckType]
 }
 

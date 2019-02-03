@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class WebSocketError () extends js.Object
 
-/** Provides socket error status on a MessageWebSocket or StreamWebSocket object. */
+/* static members */
 @JSGlobal("Windows.Networking.Sockets.WebSocketError")
 @js.native
 object WebSocketError extends js.Object {

@@ -12,6 +12,7 @@ class HoverCardBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/HoverCard", "HoverCardBase")
 @js.native
 object HoverCardBase extends js.Object {

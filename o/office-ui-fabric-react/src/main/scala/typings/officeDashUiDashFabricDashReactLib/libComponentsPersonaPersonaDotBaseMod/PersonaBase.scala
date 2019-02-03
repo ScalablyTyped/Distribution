@@ -33,6 +33,7 @@ class PersonaBase protected ()
   /* private */ def _renderElement(classNames: js.Any, renderFunction: js.Any, defaultRenderFunction: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Persona/Persona.base", "PersonaBase")
 @js.native
 object PersonaBase extends js.Object {

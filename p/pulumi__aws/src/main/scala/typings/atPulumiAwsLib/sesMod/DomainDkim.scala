@@ -20,6 +20,7 @@ class DomainDkim protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesDomainDkimMod.DomainDkimArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "DomainDkim")
 @js.native
 object DomainDkim extends js.Object {

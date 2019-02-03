@@ -20,6 +20,7 @@ class ProductSubscription protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.securityhubProductSubscriptionMod.ProductSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/securityhub", "ProductSubscription")
 @js.native
 object ProductSubscription extends js.Object {

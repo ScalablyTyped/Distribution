@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Unicode () extends js.Object
 
+/* static members */
 @JSGlobal("TypeScript.Unicode")
 @js.native
 object Unicode extends js.Object {

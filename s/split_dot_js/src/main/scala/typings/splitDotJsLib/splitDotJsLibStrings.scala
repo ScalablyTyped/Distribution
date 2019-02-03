@@ -27,12 +27,19 @@ object splitDotJsLibStrings {
   @js.native
   sealed trait width extends js.Object
   
+  @scala.inline
   def Partial: Partial = "Partial".asInstanceOf[Partial]
+  @scala.inline
   def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
+  @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
+  @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
+  @scala.inline
   def width: width = "width".asInstanceOf[width]
 }
 

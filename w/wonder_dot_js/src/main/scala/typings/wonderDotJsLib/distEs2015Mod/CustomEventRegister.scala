@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CustomEventRegister ()
   extends wonderDotJsLib.distEs2015EventBinderCustomEventRegisterMod.CustomEventRegister
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "CustomEventRegister")
 @js.native
 object CustomEventRegister extends js.Object {

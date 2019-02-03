@@ -21,6 +21,7 @@ class Container protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.mediastoreContainerMod.ContainerArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/mediastore", "Container")
 @js.native
 object Container extends js.Object {

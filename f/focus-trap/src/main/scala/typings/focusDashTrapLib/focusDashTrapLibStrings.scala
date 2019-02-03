@@ -9,6 +9,7 @@ object focusDashTrapLibStrings {
   @js.native
   sealed trait onActivate extends js.Object
   
+  @scala.inline
   def onActivate: onActivate = "onActivate".asInstanceOf[onActivate]
 }
 

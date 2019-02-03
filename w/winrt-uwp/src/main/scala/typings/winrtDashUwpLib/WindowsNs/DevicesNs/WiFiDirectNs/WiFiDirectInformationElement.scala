@@ -18,7 +18,7 @@ class WiFiDirectInformationElement () extends js.Object {
   var value: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer = js.native
 }
 
-/** Represents information elements in a Wi-Fi Direct packet. */
+/* static members */
 @JSGlobal("Windows.Devices.WiFiDirect.WiFiDirectInformationElement")
 @js.native
 object WiFiDirectInformationElement extends js.Object {

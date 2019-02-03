@@ -41,6 +41,7 @@ class FieldOptions ()
   def setWeak(value: scala.Boolean): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FieldOptions")
 @js.native
 object FieldOptions extends js.Object {

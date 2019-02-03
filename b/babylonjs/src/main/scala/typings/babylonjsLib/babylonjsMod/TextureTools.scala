@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class TextureTools ()
   extends babylonjsLib.BABYLONNs.TextureTools
 
-/**
-  * Class used to host texture specific utilities
-  */
+/* static members */
 @JSImport("babylonjs", "TextureTools")
 @js.native
 object TextureTools extends js.Object {

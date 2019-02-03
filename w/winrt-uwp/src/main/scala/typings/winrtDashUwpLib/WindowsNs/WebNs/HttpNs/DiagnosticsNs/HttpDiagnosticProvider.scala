@@ -68,7 +68,7 @@ abstract class HttpDiagnosticProvider () extends js.Object {
   def stop(): scala.Unit = js.native
 }
 
-/** Provides a simple diagnostic facility for tracing and profiling web traffic in applications built on Microsoft’s HTTP stacks. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Diagnostics.HttpDiagnosticProvider")
 @js.native
 object HttpDiagnosticProvider extends js.Object {

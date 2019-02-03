@@ -246,7 +246,7 @@ object flatbuffersNs extends js.Object {
   val float64: stdLib.Float64Array = js.native
   val int32: stdLib.Int32Array = js.native
   val isLittleEndian: scala.Boolean = js.native
-  ////////////////////////////////////////////////////////////////////////////////
+  /* static members */
   @js.native
   object Builder extends js.Object {
     /**
@@ -260,7 +260,7 @@ object flatbuffersNs extends js.Object {
     def growByteBuffer(bb: flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.ByteBuffer): flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.ByteBuffer = js.native
   }
   
-  ////////////////////////////////////////////////////////////////////////////////
+  /* static members */
   @js.native
   object ByteBuffer extends js.Object {
     def allocate(byte_size: scala.Double): flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.ByteBuffer = js.native
@@ -284,7 +284,7 @@ object flatbuffersNs extends js.Object {
       ] = js.native
   }
   
-  ////////////////////////////////////////////////////////////////////////////////
+  /* static members */
   @js.native
   object Long extends js.Object {
     var ZERO: flatbuffersLib.flatbuffersMod.Global.flatbuffersNs.Long = js.native

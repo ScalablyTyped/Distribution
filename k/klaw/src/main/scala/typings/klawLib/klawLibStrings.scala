@@ -27,12 +27,19 @@ object klawLibStrings {
   @js.native
   sealed trait shift extends js.Object
   
+  @scala.inline
   def close: close = "close".asInstanceOf[close]
+  @scala.inline
   def data: data = "data".asInstanceOf[data]
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def pop: pop = "pop".asInstanceOf[pop]
+  @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
+  @scala.inline
   def shift: shift = "shift".asInstanceOf[shift]
 }
 

@@ -17,6 +17,7 @@ class FieldValue protected () extends js.Object {
   def isEqual(other: FieldValue): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("@firebase/firestore-types", "FieldValue")
 @js.native
 object FieldValue extends js.Object {

@@ -113,9 +113,7 @@ class GridLayout () extends js.Object {
   def uninitialize(): scala.Unit = js.native
 }
 
-/**
-  * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.GridLayout")
 @js.native
 object GridLayout extends js.Object {

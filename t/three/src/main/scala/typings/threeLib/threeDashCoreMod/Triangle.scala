@@ -27,6 +27,7 @@ class Triangle () extends js.Object {
   def setFromPointsAndIndices(points: js.Array[Vector3], i0: scala.Double, i1: scala.Double, i2: scala.Double): Triangle = js.native
 }
 
+/* static members */
 @JSImport("three/three-core", "Triangle")
 @js.native
 object Triangle extends js.Object {

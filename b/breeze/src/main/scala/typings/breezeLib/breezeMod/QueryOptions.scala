@@ -12,6 +12,7 @@ class QueryOptions ()
   def this(config: breezeLib.breezeNs.QueryOptionsConfiguration) = this()
 }
 
+/* static members */
 @JSImport("breeze", "QueryOptions")
 @js.native
 object QueryOptions extends js.Object {

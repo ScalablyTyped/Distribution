@@ -70,6 +70,7 @@ class TreeList protected () extends Widget {
   def unlockColumn(column: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.TreeList")
 @js.native
 object TreeList extends js.Object {

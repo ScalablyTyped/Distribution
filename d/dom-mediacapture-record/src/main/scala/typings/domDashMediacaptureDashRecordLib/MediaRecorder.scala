@@ -38,6 +38,7 @@ class MediaRecorder protected ()
   def stop(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("MediaRecorder")
 @js.native
 object MediaRecorder extends js.Object {

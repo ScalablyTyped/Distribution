@@ -80,6 +80,7 @@ class NfsFileShare protected ()
   val squash: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/storagegateway/nfsFileShare", "NfsFileShare")
 @js.native
 object NfsFileShare extends js.Object {

@@ -12,6 +12,7 @@ class MemberVariableDeclarationSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, variableDeclarator: typescriptDashServicesLib.TypeScriptNs.VariableDeclaratorSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "MemberVariableDeclarationSyntax")
 @js.native
 object MemberVariableDeclarationSyntax extends js.Object {

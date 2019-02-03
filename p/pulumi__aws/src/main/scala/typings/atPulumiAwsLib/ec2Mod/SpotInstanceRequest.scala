@@ -20,6 +20,7 @@ class SpotInstanceRequest protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2SpotInstanceRequestMod.SpotInstanceRequestArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "SpotInstanceRequest")
 @js.native
 object SpotInstanceRequest extends js.Object {

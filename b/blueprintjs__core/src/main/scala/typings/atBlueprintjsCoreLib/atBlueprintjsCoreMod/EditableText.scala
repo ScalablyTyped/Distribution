@@ -13,6 +13,7 @@ class EditableText ()
   def this(props: atBlueprintjsCoreLib.libEsmComponentsEditableDashTextEditableTextMod.IEditableTextProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("@blueprintjs/core", "EditableText")
 @js.native
 object EditableText extends js.Object {

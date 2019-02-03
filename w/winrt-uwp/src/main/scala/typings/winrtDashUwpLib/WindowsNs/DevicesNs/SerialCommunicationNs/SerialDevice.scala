@@ -83,7 +83,7 @@ abstract class SerialDevice () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a serial port. The object provides methods and properties that an app can use to find the port (in the system). */
+/* static members */
 @JSGlobal("Windows.Devices.SerialCommunication.SerialDevice")
 @js.native
 object SerialDevice extends js.Object {

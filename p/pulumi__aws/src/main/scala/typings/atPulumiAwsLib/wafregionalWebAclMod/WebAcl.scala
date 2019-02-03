@@ -36,6 +36,7 @@ class WebAcl protected ()
   val rules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/wafregional/webAcl", "WebAcl")
 @js.native
 object WebAcl extends js.Object {

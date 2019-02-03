@@ -12,6 +12,7 @@ class JavaScriptSerializer protected ()
   def this(_unit: mendixmodelsdkLib.distSdkInternalUnitsMod.IAbstractUnit) = this()
 }
 
+/* static members */
 @JSImport("mendixmodelsdk", "JavaScriptSerializer")
 @js.native
 object JavaScriptSerializer extends js.Object {

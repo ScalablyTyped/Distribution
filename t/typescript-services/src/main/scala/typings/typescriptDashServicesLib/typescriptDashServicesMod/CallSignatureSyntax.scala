@@ -12,6 +12,7 @@ class CallSignatureSyntax protected ()
   def this(typeParameterList: typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, parameterList: typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "CallSignatureSyntax")
 @js.native
 object CallSignatureSyntax extends js.Object {

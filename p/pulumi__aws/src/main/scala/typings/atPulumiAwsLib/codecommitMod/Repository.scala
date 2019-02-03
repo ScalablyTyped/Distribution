@@ -20,6 +20,7 @@ class Repository protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.codecommitRepositoryMod.RepositoryArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codecommit", "Repository")
 @js.native
 object Repository extends js.Object {

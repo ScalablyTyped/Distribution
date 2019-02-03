@@ -19,7 +19,7 @@ abstract class UsbConfigurationDescriptor () extends js.Object {
   var selfPowered: scala.Boolean = js.native
 }
 
-/** Derives information from the first 9 bytes of a USB configuration descriptor. The information includes the power capabilities of the device when the configuration is active and the number of interfaces included in that configuration. For an explanation of a configuration descriptor, Section 9.6.3 Universal Serial Bus Specification. For information about descriptor fields, see: */
+/* static members */
 @JSGlobal("Windows.Devices.Usb.UsbConfigurationDescriptor")
 @js.native
 object UsbConfigurationDescriptor extends js.Object {

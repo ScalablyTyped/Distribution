@@ -33,6 +33,7 @@ class Response protected () extends Property[ResponseDefinition] {
   def update(options: ResponseDefinition): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Response")
 @js.native
 object Response extends js.Object {

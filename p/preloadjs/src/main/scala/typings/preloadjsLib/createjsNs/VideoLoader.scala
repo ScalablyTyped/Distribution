@@ -11,6 +11,7 @@ class VideoLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object, preferXHR: scala.Boolean) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.VideoLoader")
 @js.native
 object VideoLoader extends js.Object {

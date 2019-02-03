@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UtilHelpers () extends js.Object
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.UtilHelpers")
 @js.native
 object UtilHelpers extends js.Object {

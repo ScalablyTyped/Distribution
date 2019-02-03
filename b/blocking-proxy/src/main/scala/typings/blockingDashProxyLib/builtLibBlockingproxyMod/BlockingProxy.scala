@@ -35,6 +35,7 @@ class BlockingProxy protected () extends js.Object {
   def setWaitParams(rootEl: js.Any): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("blocking-proxy/built/lib/blockingproxy", "BlockingProxy")
 @js.native
 object BlockingProxy extends js.Object {

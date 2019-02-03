@@ -9,6 +9,7 @@ object parseDashGitDashConfigLibStrings {
   @js.native
   sealed trait global extends js.Object
   
+  @scala.inline
   def global: global = "global".asInstanceOf[global]
 }
 

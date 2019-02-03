@@ -25,13 +25,7 @@ class Geometry ()
   def this(`type`: goLib.goMod.goNs.EnumValue) = this()
 }
 
-/**
-  * The Geometry class is used to define the "shape" of a Shape.
-  * A Geometry can be simple straight lines, rectangles, or ellipses.
-  * A Geometry can also be an arbitrarily complex path, consisting of a list of PathFigures.
-  * A Geometry must not be modified once it has been used by a Shape.
-  * However, a Geometry may be shared by multiple Shapes.
-  */
+/* static members */
 @JSImport("go", "Geometry")
 @js.native
 object Geometry extends js.Object {

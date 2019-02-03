@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class EaselJS () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.EaselJS")
 @js.native
 object EaselJS extends js.Object {

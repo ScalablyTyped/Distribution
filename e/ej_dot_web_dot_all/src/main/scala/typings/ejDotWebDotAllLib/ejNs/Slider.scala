@@ -33,6 +33,7 @@ class Slider protected () extends Widget {
   def setValue(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Slider")
 @js.native
 object Slider extends js.Object {

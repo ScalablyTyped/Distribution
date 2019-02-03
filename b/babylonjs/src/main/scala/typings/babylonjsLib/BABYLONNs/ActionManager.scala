@@ -93,11 +93,7 @@ class ActionManager protected () extends js.Object {
   def unregisterAction(action: Action): scala.Boolean = js.native
 }
 
-/**
-  * Action Manager manages all events to be triggered on a given mesh or the global scene.
-  * A single scene can have many Action Managers to handle predefined actions on specific meshes.
-  * @see http://doc.babylonjs.com/how_to/how_to_use_actions
-  */
+/* static members */
 @JSGlobal("BABYLON.ActionManager")
 @js.native
 object ActionManager extends js.Object {

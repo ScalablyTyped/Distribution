@@ -23,6 +23,7 @@ class Rebase () extends js.Object {
   def operationEntrycount(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/rebase", "Rebase")
 @js.native
 object Rebase extends js.Object {

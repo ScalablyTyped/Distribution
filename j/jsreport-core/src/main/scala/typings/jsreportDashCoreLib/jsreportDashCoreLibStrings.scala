@@ -21,10 +21,15 @@ object jsreportDashCoreLibStrings {
   @js.native
   sealed trait none extends js.Object
   
+  @scala.inline
   def `dedicated-process`: `dedicated-process` = "dedicated-process".asInstanceOf[`dedicated-process`]
+  @scala.inline
   def html: html = "html".asInstanceOf[html]
+  @scala.inline
   def `http-server`: `http-server` = "http-server".asInstanceOf[`http-server`]
+  @scala.inline
   def `in-process`: `in-process` = "in-process".asInstanceOf[`in-process`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
 }
 

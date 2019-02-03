@@ -26,6 +26,7 @@ class Trace protected ()
   var aiDataContract_Trace: applicationinsightsDashJsLib.Anon_MeasurementsMessage = js.native
 }
 
+/* static members */
 @JSGlobal("Microsoft.ApplicationInsights.Telemetry.Trace")
 @js.native
 object Trace extends js.Object {

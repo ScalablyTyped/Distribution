@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Quad ()
   extends gsapLib.gsapNs.Quad
 
+/* static members */
 @JSImport("gsap", "Quad")
 @js.native
 object Quad extends js.Object {

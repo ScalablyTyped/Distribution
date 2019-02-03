@@ -26,7 +26,7 @@ class HttpProductInfoHeaderValue protected () extends js.Object {
   var product: HttpProductHeaderValue = js.native
 }
 
-/** Represents product information used in the User-Agent HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpProductInfoHeaderValue")
 @js.native
 object HttpProductInfoHeaderValue extends js.Object {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class EasingFunction ()
   extends cesiumLib.cesiumMod.CesiumNs.EasingFunction
 
-// tslint:disable-next-line no-unnecessary-class
+/* static members */
 @JSImport("cesium", "EasingFunction")
 @js.native
 object EasingFunction extends js.Object {

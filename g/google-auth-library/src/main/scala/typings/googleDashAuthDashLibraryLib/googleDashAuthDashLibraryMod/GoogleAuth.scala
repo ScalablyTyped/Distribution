@@ -12,6 +12,7 @@ class GoogleAuth ()
   def this(opts: googleDashAuthDashLibraryLib.buildSrcAuthGoogleauthMod.GoogleAuthOptions) = this()
 }
 
+/* static members */
 @JSImport("google-auth-library", "GoogleAuth")
 @js.native
 object GoogleAuth extends js.Object {

@@ -20,6 +20,7 @@ class RdsDbInstance protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.opsworksRdsDbInstanceMod.RdsDbInstanceArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks", "RdsDbInstance")
 @js.native
 object RdsDbInstance extends js.Object {

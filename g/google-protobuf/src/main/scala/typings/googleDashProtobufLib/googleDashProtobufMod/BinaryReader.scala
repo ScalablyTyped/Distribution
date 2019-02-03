@@ -97,6 +97,7 @@ class BinaryReader () extends js.Object {
   def unskipHeader(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf", "BinaryReader")
 @js.native
 object BinaryReader extends js.Object {

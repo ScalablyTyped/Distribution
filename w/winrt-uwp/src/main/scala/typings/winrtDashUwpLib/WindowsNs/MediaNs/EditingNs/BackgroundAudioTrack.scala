@@ -32,7 +32,7 @@ abstract class BackgroundAudioTrack () extends js.Object {
   def getAudioEncodingProperties(): winrtDashUwpLib.WindowsNs.MediaNs.MediaPropertiesNs.AudioEncodingProperties = js.native
 }
 
-/** Represents a single audio track for accompanying a video clip. */
+/* static members */
 @JSGlobal("Windows.Media.Editing.BackgroundAudioTrack")
 @js.native
 object BackgroundAudioTrack extends js.Object {

@@ -162,9 +162,7 @@ class AnimationGroup protected () extends IDisposable {
   def toString(fullDetails: scala.Boolean): java.lang.String = js.native
 }
 
-/**
-  * Use this class to create coordinated animations on multiple targets
-  */
+/* static members */
 @JSGlobal("BABYLON.AnimationGroup")
 @js.native
 object AnimationGroup extends js.Object {

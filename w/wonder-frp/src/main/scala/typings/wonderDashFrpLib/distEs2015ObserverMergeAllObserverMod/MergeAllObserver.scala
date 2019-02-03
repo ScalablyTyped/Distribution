@@ -15,6 +15,7 @@ class MergeAllObserver protected ()
   var done: scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/observer/MergeAllObserver", "MergeAllObserver")
 @js.native
 object MergeAllObserver extends js.Object {

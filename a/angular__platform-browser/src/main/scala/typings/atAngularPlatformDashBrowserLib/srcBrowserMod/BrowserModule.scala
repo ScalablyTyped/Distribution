@@ -11,6 +11,7 @@ class BrowserModule () extends js.Object {
   def this(parentModule: BrowserModule) = this()
 }
 
+/* static members */
 @JSImport("@angular/platform-browser/src/browser", "BrowserModule")
 @js.native
 object BrowserModule extends js.Object {

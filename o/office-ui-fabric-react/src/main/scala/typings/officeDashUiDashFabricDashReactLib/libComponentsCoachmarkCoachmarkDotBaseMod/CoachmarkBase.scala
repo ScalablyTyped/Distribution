@@ -69,6 +69,7 @@ class CoachmarkBase protected ()
   ): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/Coachmark/Coachmark.base", "CoachmarkBase")
 @js.native
 object CoachmarkBase extends js.Object {

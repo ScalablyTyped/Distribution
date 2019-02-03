@@ -37,6 +37,7 @@ abstract class CurveTimeline protected () extends Timeline {
   def setStepped(frameIndex: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("spine.CurveTimeline")
 @js.native
 object CurveTimeline extends js.Object {

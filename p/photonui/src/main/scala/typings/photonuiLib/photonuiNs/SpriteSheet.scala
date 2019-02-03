@@ -18,6 +18,7 @@ class SpriteSheet () extends Base {
   def removeIcon(iconName: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("photonui.SpriteSheet")
 @js.native
 object SpriteSheet extends js.Object {

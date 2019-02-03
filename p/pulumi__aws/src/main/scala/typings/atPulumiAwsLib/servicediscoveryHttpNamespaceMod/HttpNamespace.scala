@@ -33,6 +33,7 @@ class HttpNamespace protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery/httpNamespace", "HttpNamespace")
 @js.native
 object HttpNamespace extends js.Object {

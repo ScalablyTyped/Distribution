@@ -32,6 +32,7 @@ class KmlDataSource ()
   override def update(time: cesiumLib.cesiumMod.CesiumNs.JulianDate): scala.Boolean = js.native
 }
 
+/* static members */
 @JSImport("cesium", "KmlDataSource")
 @js.native
 object KmlDataSource extends js.Object {

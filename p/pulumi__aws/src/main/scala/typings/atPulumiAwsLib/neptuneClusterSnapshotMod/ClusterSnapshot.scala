@@ -74,6 +74,7 @@ class ClusterSnapshot protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/neptune/clusterSnapshot", "ClusterSnapshot")
 @js.native
 object ClusterSnapshot extends js.Object {

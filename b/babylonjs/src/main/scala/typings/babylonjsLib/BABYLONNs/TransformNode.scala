@@ -353,10 +353,7 @@ class TransformNode protected () extends Node {
   def updatePoseMatrix(matrix: Matrix): TransformNode = js.native
 }
 
-/**
-  * A TransformNode is an object that is not rendered but can be used as a center of transformation. This can decrease memory usage and increase rendering speed compared to using an empty mesh as a parent and is less complicated than using a pivot matrix.
-  * @see https://doc.babylonjs.com/how_to/transformnode
-  */
+/* static members */
 @JSGlobal("BABYLON.TransformNode")
 @js.native
 object TransformNode extends js.Object {

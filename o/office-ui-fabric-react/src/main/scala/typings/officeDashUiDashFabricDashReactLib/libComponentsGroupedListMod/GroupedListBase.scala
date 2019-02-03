@@ -12,6 +12,7 @@ class GroupedListBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsGroupedListGroupedListDotTypesMod.IGroupedListProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/GroupedList", "GroupedListBase")
 @js.native
 object GroupedListBase extends js.Object {

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class NavbarHeading ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.NavbarHeading
 
+/* static members */
 @JSImport("@blueprintjs/core", "NavbarHeading")
 @js.native
 object NavbarHeading extends js.Object {

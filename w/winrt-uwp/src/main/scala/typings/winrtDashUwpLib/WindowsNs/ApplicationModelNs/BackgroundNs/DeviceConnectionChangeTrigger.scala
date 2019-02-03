@@ -17,7 +17,7 @@ abstract class DeviceConnectionChangeTrigger () extends js.Object {
   var maintainConnection: scala.Boolean = js.native
 }
 
-/** Represents a trigger that launches a background task when the connection status of a device changes. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger")
 @js.native
 object DeviceConnectionChangeTrigger extends js.Object {

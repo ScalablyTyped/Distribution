@@ -14,6 +14,7 @@ class SvgContext protected ()
   def this(element: stdLib.SVGElement, className: java.lang.String, addTitleElement: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typesettable", "SvgContext")
 @js.native
 object SvgContext extends js.Object {

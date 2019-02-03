@@ -15,8 +15,11 @@ object reactDashRouterDashConfigLibStrings {
   @js.native
   sealed trait matchRoutes extends js.Object
   
+  @scala.inline
   def MatchedRoute: MatchedRoute = "MatchedRoute".asInstanceOf[MatchedRoute]
+  @scala.inline
   def RouteConfigComponentProps: RouteConfigComponentProps = "RouteConfigComponentProps".asInstanceOf[RouteConfigComponentProps]
+  @scala.inline
   def matchRoutes: matchRoutes = "matchRoutes".asInstanceOf[matchRoutes]
 }
 

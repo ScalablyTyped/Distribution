@@ -12,6 +12,7 @@ class MaskedTextField protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/TextField", "MaskedTextField")
 @js.native
 object MaskedTextField extends js.Object {

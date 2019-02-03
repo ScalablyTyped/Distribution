@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ComponentRenewal () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.Media.Protection.ComponentRenewal")
 @js.native
 object ComponentRenewal extends js.Object {

@@ -13,6 +13,7 @@ class namespaced protected () extends jBinary {
   def this(data: jdataviewLib.jdataviewMod.namespaced, typeSet: js.Object) = this()
 }
 
+/* static members */
 @JSImport("jbinary", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

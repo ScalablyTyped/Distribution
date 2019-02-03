@@ -12,6 +12,7 @@ class GetAccessorSyntax protected ()
   def this(modifiers: typescriptDashServicesLib.TypeScriptNs.ISyntaxList, getKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, propertyName: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parameterList: typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, typeAnnotation: typescriptDashServicesLib.TypeScriptNs.TypeAnnotationSyntax, block: typescriptDashServicesLib.TypeScriptNs.BlockSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "GetAccessorSyntax")
 @js.native
 object GetAccessorSyntax extends js.Object {

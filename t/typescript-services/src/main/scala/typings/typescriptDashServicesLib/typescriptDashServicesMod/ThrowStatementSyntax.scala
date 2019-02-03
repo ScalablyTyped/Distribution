@@ -12,6 +12,7 @@ class ThrowStatementSyntax protected ()
   def this(throwKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, expression: typescriptDashServicesLib.TypeScriptNs.IExpressionSyntax, semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ThrowStatementSyntax")
 @js.native
 object ThrowStatementSyntax extends js.Object {

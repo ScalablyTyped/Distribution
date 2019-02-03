@@ -20,6 +20,7 @@ class Packbuilder () extends js.Object {
   def written(): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("nodegit/pack-builder", "Packbuilder")
 @js.native
 object Packbuilder extends js.Object {

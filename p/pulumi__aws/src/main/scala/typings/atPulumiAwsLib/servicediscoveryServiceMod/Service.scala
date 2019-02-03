@@ -44,6 +44,7 @@ class Service protected ()
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/servicediscovery/service", "Service")
 @js.native
 object Service extends js.Object {

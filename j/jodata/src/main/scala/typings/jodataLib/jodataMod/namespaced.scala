@@ -12,6 +12,7 @@ class namespaced protected ()
   def this(baseUri: java.lang.String) = this()
 }
 
+/* static members */
 @JSImport("jodata", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

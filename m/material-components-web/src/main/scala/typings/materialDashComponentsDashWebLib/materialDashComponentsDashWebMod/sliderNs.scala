@@ -16,11 +16,13 @@ object sliderNs extends js.Object {
   class MDCSliderFoundation ()
     extends atMaterialSliderLib.atMaterialSliderMod.MDCSliderFoundation
   
+  /* static members */
   @js.native
   object MDCSlider extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialSliderLib.atMaterialSliderMod.MDCSlider = js.native
   }
   
+  /* static members */
   @js.native
   object MDCSliderFoundation extends js.Object {
     val cssClasses: atMaterialSliderLib.constantsMod.cssClasses = js.native

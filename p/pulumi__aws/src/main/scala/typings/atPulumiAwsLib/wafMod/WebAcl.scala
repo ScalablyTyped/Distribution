@@ -20,6 +20,7 @@ class WebAcl protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.wafWebAclMod.WebAclArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/waf", "WebAcl")
 @js.native
 object WebAcl extends js.Object {

@@ -219,6 +219,7 @@ object rdsNs extends js.Object {
     args: atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.rdsGetSnapshotMod.GetSnapshotResult] = js.native
+  /* static members */
   @js.native
   object Cluster extends js.Object {
     /**
@@ -243,6 +244,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsClusterMod.Cluster = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterEndpoint extends js.Object {
     /**
@@ -267,6 +269,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsClusterEndpointMod.ClusterEndpoint = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterInstance extends js.Object {
     /**
@@ -291,6 +294,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsClusterInstanceMod.ClusterInstance = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterParameterGroup extends js.Object {
     /**
@@ -315,6 +319,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsClusterParameterGroupMod.ClusterParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ClusterSnapshot extends js.Object {
     /**
@@ -339,6 +344,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsClusterSnapshotMod.ClusterSnapshot = js.native
   }
   
+  /* static members */
   @js.native
   object EventSubscription extends js.Object {
     /**
@@ -363,6 +369,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsEventSubscriptionMod.EventSubscription = js.native
   }
   
+  /* static members */
   @js.native
   object GlobalCluster extends js.Object {
     /**
@@ -387,6 +394,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsGlobalClusterMod.GlobalCluster = js.native
   }
   
+  /* static members */
   @js.native
   object Instance extends js.Object {
     /**
@@ -411,6 +419,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsInstanceMod.Instance = js.native
   }
   
+  /* static members */
   @js.native
   object OptionGroup extends js.Object {
     /**
@@ -435,6 +444,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsOptionGroupMod.OptionGroup = js.native
   }
   
+  /* static members */
   @js.native
   object ParameterGroup extends js.Object {
     /**
@@ -459,6 +469,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsParameterGroupMod.ParameterGroup = js.native
   }
   
+  /* static members */
   @js.native
   object SecurityGroup extends js.Object {
     /**
@@ -483,6 +494,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsSecurityGroupMod.SecurityGroup = js.native
   }
   
+  /* static members */
   @js.native
   object Snapshot extends js.Object {
     /**
@@ -507,6 +519,7 @@ object rdsNs extends js.Object {
     ): atPulumiAwsLib.rdsSnapshotMod.Snapshot = js.native
   }
   
+  /* static members */
   @js.native
   object SubnetGroup extends js.Object {
     /**

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class FormsModule () extends js.Object
 
+/* static members */
 @JSImport("@angular/forms/src/form_providers", "FormsModule")
 @js.native
 object FormsModule extends js.Object {

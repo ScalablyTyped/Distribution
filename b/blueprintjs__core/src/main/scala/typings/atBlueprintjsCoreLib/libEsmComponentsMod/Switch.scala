@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Switch ()
   extends atBlueprintjsCoreLib.libEsmComponentsFormsControlsMod.Switch
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Switch")
 @js.native
 object Switch extends js.Object {

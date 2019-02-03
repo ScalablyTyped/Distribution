@@ -40,6 +40,7 @@ class Tabs ()
   /* private */ def moveSelectionIndicator(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabs", "Tabs")
 @js.native
 object Tabs extends js.Object {

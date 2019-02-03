@@ -34,6 +34,7 @@ class ECDH () extends js.Object {
   def setPrivateKey(private_key: stdLib.DataView): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("crypto", "ECDH")
 @js.native
 object ECDH extends js.Object {

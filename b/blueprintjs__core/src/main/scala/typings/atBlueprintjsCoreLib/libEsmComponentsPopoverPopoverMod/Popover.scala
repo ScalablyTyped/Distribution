@@ -62,6 +62,7 @@ class Popover ()
   /* private */ def updateDarkParent(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/popover/popover", "Popover")
 @js.native
 object Popover extends js.Object {

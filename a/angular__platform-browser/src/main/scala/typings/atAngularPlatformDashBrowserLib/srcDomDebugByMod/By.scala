@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class By () extends js.Object
 
+/* static members */
 @JSImport("@angular/platform-browser/src/dom/debug/by", "By")
 @js.native
 object By extends js.Object {

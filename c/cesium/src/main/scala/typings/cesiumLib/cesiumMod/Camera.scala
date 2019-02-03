@@ -12,6 +12,7 @@ class Camera protected ()
   def this(scene: cesiumLib.cesiumMod.CesiumNs.Scene) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Camera")
 @js.native
 object Camera extends js.Object {

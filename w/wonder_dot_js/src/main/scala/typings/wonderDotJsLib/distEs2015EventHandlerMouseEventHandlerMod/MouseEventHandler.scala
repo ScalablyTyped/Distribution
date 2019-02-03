@@ -23,6 +23,7 @@ class MouseEventHandler ()
   ): wonderDotJsLib.distEs2015EventObjectMouseEventMod.MouseEvent = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/handler/MouseEventHandler", "MouseEventHandler")
 @js.native
 object MouseEventHandler extends js.Object {

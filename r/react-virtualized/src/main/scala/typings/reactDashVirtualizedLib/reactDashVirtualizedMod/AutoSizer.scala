@@ -12,6 +12,7 @@ class AutoSizer protected ()
   def this(props: reactDashVirtualizedLib.distEsAutoSizerMod.AutoSizerProps) = this()
 }
 
+/* static members */
 @JSImport("react-virtualized", "AutoSizer")
 @js.native
 object AutoSizer extends js.Object {

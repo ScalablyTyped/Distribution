@@ -127,6 +127,7 @@ object geomNs extends js.Object {
     def this(modelType: scala.Double) = this()
   }
   
+  /* static members */
   @js.native
   object Envelope extends js.Object {
     /**
@@ -170,6 +171,7 @@ object geomNs extends js.Object {
     ): scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object PrecisionModel extends js.Object {
     var FIXED: java.lang.String = js.native

@@ -15,8 +15,11 @@ object xdomainLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def timeout: timeout = "timeout".asInstanceOf[timeout]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

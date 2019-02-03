@@ -35,6 +35,7 @@ class Vector3 protected () extends js.Object {
   def plusAssign(other: Vector3): Vector3 = js.native
 }
 
+/* static members */
 @JSImport("leapmotionts", "Vector3")
 @js.native
 object Vector3 extends js.Object {

@@ -44,6 +44,7 @@ class DomEventRegister ()
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/binder/DomEventRegister", "DomEventRegister")
 @js.native
 object DomEventRegister extends js.Object {

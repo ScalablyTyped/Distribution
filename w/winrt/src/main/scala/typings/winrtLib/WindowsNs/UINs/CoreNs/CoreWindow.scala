@@ -74,6 +74,7 @@ class CoreWindow () extends ICoreWindow {
   override def setPointerCapture(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.UI.Core.CoreWindow")
 @js.native
 object CoreWindow extends js.Object {

@@ -331,16 +331,7 @@ class Vec3 () extends js.Object {
   def sub2(lhs: Vec3, rhs: Vec3): this.type = js.native
 }
 
-/**
-  * @name pc.Vec3
-  * @class A 3-dimensional vector.
-  * @description Creates a new Vec3 object
-  * @param {Number} [x] The x value. If x is an array of length 3, the array will be used to populate all components.
-  * @param {Number} [y] The y value
-  * @param {Number} [z] The z value
-  * @example
-  * var v = new pc.Vec3(1,2,3);
-  */
+/* static members */
 @JSGlobal("pc.Vec3")
 @js.native
 object Vec3 extends js.Object {

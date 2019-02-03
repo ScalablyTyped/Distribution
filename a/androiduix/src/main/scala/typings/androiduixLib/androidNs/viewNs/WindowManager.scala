@@ -17,6 +17,7 @@ class WindowManager protected () extends js.Object {
   def updateWindowLayout(window: Window, params: androiduixLib.androidNs.viewNs.ViewGroupNs.LayoutParams): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.view.WindowManager")
 @js.native
 object WindowManager extends js.Object {

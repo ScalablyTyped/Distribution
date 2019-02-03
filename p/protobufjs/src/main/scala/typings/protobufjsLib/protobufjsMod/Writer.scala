@@ -146,6 +146,7 @@ class Writer () extends js.Object {
   def uint64(value: scala.Double): Writer = js.native
 }
 
+/* static members */
 @JSImport("protobufjs", "Writer")
 @js.native
 object Writer extends js.Object {

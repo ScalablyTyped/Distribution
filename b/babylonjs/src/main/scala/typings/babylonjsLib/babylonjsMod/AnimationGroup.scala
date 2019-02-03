@@ -25,9 +25,7 @@ class AnimationGroup protected ()
   name: java.lang.String, scene: babylonjsLib.BABYLONNs.Nullable[babylonjsLib.BABYLONNs.Scene]) = this()
 }
 
-/**
-  * Use this class to create coordinated animations on multiple targets
-  */
+/* static members */
 @JSImport("babylonjs", "AnimationGroup")
 @js.native
 object AnimationGroup extends js.Object {

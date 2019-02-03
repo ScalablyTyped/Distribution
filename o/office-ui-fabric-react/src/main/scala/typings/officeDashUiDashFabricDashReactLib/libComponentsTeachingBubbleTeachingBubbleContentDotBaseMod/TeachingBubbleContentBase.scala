@@ -22,6 +22,7 @@ class TeachingBubbleContentBase protected ()
   def focus(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/TeachingBubble/TeachingBubbleContent.base", "TeachingBubbleContentBase")
 @js.native
 object TeachingBubbleContentBase extends js.Object {

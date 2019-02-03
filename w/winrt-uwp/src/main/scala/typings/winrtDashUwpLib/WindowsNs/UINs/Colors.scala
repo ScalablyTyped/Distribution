@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class Colors () extends js.Object
 
-/** Implements a set of predefined colors. See Color for usage information. */
+/* static members */
 @JSGlobal("Windows.UI.Colors")
 @js.native
 object Colors extends js.Object {

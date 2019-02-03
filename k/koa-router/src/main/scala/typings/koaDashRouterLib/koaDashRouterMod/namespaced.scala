@@ -14,6 +14,7 @@ class namespaced[StateT, CustomT] () extends Router[StateT, CustomT] {
   def this(opt: koaDashRouterLib.koaDashRouterMod.RouterNs.IRouterOptions) = this()
 }
 
+/* static members */
 @JSImport("koa-router", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

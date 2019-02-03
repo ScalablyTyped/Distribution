@@ -12,7 +12,9 @@ object tailLibStrings {
   @js.native
   sealed trait line extends js.Object
   
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def line: line = "line".asInstanceOf[line]
 }
 

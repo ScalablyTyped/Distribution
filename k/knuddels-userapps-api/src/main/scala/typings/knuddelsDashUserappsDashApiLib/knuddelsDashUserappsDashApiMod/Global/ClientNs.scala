@@ -87,6 +87,7 @@ object ClientNs extends js.Object {
     def setTitle(newTitle: java.lang.String): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Color extends js.Object {
     /**

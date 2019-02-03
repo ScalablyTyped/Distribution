@@ -33,10 +33,13 @@ trait ICollectionObserverSplice[T, K] extends js.Object {
     */
   var removed: js.Array[T]
   /**
-    * The type of change that has taken place. Valid options are "add", "delete", and "update".
-    * "update" is invalid for Set.
+    * The type of change that has taken place. Valid options are "add", "delete", "update", and  "clear".
+    * 
+    * *Note:* "update" is invalid for Set.
+    * 
+    * *Note:* "clear" is only valid for Map and Set.
     */
-  var `type`: aureliaDashBindingLib.aureliaDashBindingLibStrings.add | aureliaDashBindingLib.aureliaDashBindingLibStrings.delete | aureliaDashBindingLib.aureliaDashBindingLibStrings.update
+  var `type`: aureliaDashBindingLib.aureliaDashBindingLibStrings.add | aureliaDashBindingLib.aureliaDashBindingLibStrings.delete | aureliaDashBindingLib.aureliaDashBindingLibStrings.update | aureliaDashBindingLib.aureliaDashBindingLibStrings.clear
   /**
     * The Set value that was either added or removed.
     */

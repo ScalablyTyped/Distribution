@@ -139,9 +139,7 @@ class NavBar () extends js.Object {
   def showOnlyCommands(commands: js.Array[_], immediate: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * Displays NavBarCommands in an overlayed navigation pane that opens and closes at the top or bottom of the main view.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.NavBar")
 @js.native
 object NavBar extends js.Object {

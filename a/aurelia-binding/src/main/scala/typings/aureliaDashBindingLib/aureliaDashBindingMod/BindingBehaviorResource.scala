@@ -16,6 +16,7 @@ class BindingBehaviorResource protected () extends js.Object {
   def register(registry: js.Any, name: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("aurelia-binding", "BindingBehaviorResource")
 @js.native
 object BindingBehaviorResource extends js.Object {

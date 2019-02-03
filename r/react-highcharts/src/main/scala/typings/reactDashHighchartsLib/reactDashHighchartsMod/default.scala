@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends ReactHighcharts
 
-/**
-  * React interface for highcharts.
-  */
+/* static members */
 @JSImport("react-highcharts", JSImport.Default)
 @js.native
 object default extends js.Object {

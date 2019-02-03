@@ -14,6 +14,7 @@ class SignalNotifier () extends ISignalNotifier {
   override def terminate(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.System.Threading.Core.SignalNotifier")
 @js.native
 object SignalNotifier extends js.Object {

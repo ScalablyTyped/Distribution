@@ -31,6 +31,7 @@ class Users ()
   def update(user: User): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("socket.io.users", "Users")
 @js.native
 object Users extends js.Object {

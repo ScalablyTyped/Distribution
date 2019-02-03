@@ -56,6 +56,7 @@ class MaintenanceWindow protected ()
   val startDate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ssm/maintenanceWindow", "MaintenanceWindow")
 @js.native
 object MaintenanceWindow extends js.Object {

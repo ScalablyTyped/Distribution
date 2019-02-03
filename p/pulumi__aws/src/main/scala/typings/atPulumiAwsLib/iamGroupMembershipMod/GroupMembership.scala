@@ -32,6 +32,7 @@ class GroupMembership protected ()
   val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/groupMembership", "GroupMembership")
 @js.native
 object GroupMembership extends js.Object {

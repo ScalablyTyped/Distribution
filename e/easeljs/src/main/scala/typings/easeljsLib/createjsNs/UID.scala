@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class UID () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.UID")
 @js.native
 object UID extends js.Object {

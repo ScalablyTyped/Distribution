@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class PathItem ()
   extends paperLib.paperNs.PathItem
 
+/* static members */
 @JSImport("paper", "PathItem")
 @js.native
 object PathItem extends js.Object {

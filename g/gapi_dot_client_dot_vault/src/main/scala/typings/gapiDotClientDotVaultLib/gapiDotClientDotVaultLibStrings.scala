@@ -12,7 +12,9 @@ object gapiDotClientDotVaultLibStrings {
   @js.native
   sealed trait vault extends js.Object
   
+  @scala.inline
   def v1: v1 = "v1".asInstanceOf[v1]
+  @scala.inline
   def vault: vault = "vault".asInstanceOf[vault]
 }
 

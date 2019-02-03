@@ -60,6 +60,7 @@ class BinaryDecoder () extends js.Object {
   def unskipVarint(value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf", "BinaryDecoder")
 @js.native
 object BinaryDecoder extends js.Object {

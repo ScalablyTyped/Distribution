@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ThemeGenerator () extends js.Object
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/components/ThemeGenerator/ThemeGenerator", "ThemeGenerator")
 @js.native
 object ThemeGenerator extends js.Object {

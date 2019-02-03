@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Tag ()
   extends atBlueprintjsCoreLib.libEsmComponentsTagTagMod.Tag
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Tag")
 @js.native
 object Tag extends js.Object {

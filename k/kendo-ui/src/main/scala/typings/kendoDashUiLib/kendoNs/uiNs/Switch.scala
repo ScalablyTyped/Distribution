@@ -20,6 +20,7 @@ class Switch protected () extends Widget {
   def toggle(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.Switch")
 @js.native
 object Switch extends js.Object {

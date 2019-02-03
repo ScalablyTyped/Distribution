@@ -17,6 +17,7 @@ class InnerSubscription protected ()
   override def dispose(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/Disposable/InnerSubscription", "InnerSubscription")
 @js.native
 object InnerSubscription extends js.Object {

@@ -15,8 +15,11 @@ object cliDashTruncateLibStrings {
   @js.native
   sealed trait start extends js.Object
   
+  @scala.inline
   def end: end = "end".asInstanceOf[end]
+  @scala.inline
   def middle: middle = "middle".asInstanceOf[middle]
+  @scala.inline
   def start: start = "start".asInstanceOf[start]
 }
 

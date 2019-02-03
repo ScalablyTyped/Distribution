@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ArrayUtils ()
   extends wonderDotJsLib.distEs2015UtilsArrayUtilsMod.ArrayUtils
 
+/* static members */
 @JSImport("wonder.js/dist/es2015", "ArrayUtils")
 @js.native
 object ArrayUtils extends js.Object {

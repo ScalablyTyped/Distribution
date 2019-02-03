@@ -83,6 +83,7 @@ object MapNs extends js.Object {
     def this(width: scala.Double, height: scala.Double, options: rotDashJsLib.rotDashJsMod.UniformOptions) = this()
   }
   
+  /* static members */
   @js.native
   object Feature extends js.Object {
     def createRandomAt(x: scala.Double, y: scala.Double, dx: scala.Double, dy: scala.Double): rotDashJsLib.rotDashJsMod.MapNs.Feature = js.native
@@ -132,6 +133,7 @@ object MapNs extends js.Object {
       ): scala.Boolean = js.native
     }
     
+    /* static members */
     @js.native
     object Corridor extends js.Object {
       def createRandomAt(x: scala.Double, y: scala.Double, dx: scala.Double, dy: scala.Double): rotDashJsLib.rotDashJsMod.MapNs.FeatureNs.Corridor = js.native
@@ -144,6 +146,7 @@ object MapNs extends js.Object {
       ): rotDashJsLib.rotDashJsMod.MapNs.FeatureNs.Corridor = js.native
     }
     
+    /* static members */
     @js.native
     object Room extends js.Object {
       def createRandom(availWidth: scala.Double, availHeight: scala.Double): rotDashJsLib.rotDashJsMod.MapNs.FeatureNs.Room = js.native

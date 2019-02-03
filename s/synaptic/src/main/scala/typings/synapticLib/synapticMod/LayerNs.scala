@@ -37,9 +37,7 @@ object LayerNs extends js.Object {
   sealed trait gateType extends js.Object
   
   var connection: synapticLib.Anon_Uid = js.native
-  /**
-    * Represents a connection from one layer to another, and keeps track of its weight and gain.
-    */
+  /* static members */
   @js.native
   object LayerConnection extends js.Object {
     def uid(): scala.Double = js.native

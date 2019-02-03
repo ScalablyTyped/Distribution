@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends atSemanticDashUiDashReactEventDashStackLib.libTypesEventStackMod.default
 
+/* static members */
 @JSImport("@semantic-ui-react/event-stack", "default")
 @js.native
 object default extends js.Object {

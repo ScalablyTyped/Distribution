@@ -26,7 +26,7 @@ class HttpContentCodingWithQualityHeaderValue protected () extends js.Object {
   var quality: scala.Double = js.native
 }
 
-/** Represents accept encoding information used in the Accept-Encoding HTTP header on an HTTP request. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpContentCodingWithQualityHeaderValue")
 @js.native
 object HttpContentCodingWithQualityHeaderValue extends js.Object {

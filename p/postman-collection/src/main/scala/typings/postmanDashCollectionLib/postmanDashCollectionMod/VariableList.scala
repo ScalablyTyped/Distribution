@@ -25,6 +25,7 @@ class VariableList protected () extends PropertyList[Variable] {
   def syncToObject(obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition]): org.scalablytyped.runtime.StringDictionary[VariableDefinition] = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "VariableList")
 @js.native
 object VariableList extends js.Object {

@@ -23,6 +23,7 @@ class SyncHost () extends HostBase {
   ): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("grammarkdown/dist/host", "SyncHost")
 @js.native
 object SyncHost extends js.Object {

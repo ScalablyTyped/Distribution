@@ -36,6 +36,7 @@ class BasePathMapping protected ()
   val stageName: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/basePathMapping", "BasePathMapping")
 @js.native
 object BasePathMapping extends js.Object {

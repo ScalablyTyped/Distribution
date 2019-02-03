@@ -51,6 +51,7 @@ class DefaultSecurityGroup protected ()
   val vpcId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/defaultSecurityGroup", "DefaultSecurityGroup")
 @js.native
 object DefaultSecurityGroup extends js.Object {

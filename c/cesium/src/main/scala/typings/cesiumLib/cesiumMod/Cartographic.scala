@@ -14,6 +14,7 @@ class Cartographic ()
   def this(longitude: scala.Double, latitude: scala.Double, height: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("cesium", "Cartographic")
 @js.native
 object Cartographic extends js.Object {

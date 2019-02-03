@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class StorageLibraryContentChangedTrigger () extends js.Object
 
-/** Creates a trigger that will fire when a file is changed in a specified library. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Background.StorageLibraryContentChangedTrigger")
 @js.native
 object StorageLibraryContentChangedTrigger extends js.Object {

@@ -50,6 +50,7 @@ abstract class default protected () extends Default {
   def this(source: js.Any) = this()
 }
 
+/* static members */
 @JSImport("fullcalendar/EventDef", "Default")
 @js.native
 object Default extends js.Object {
@@ -61,6 +62,7 @@ object Default extends js.Object {
   def parse(rawInput: js.Any, source: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("fullcalendar/EventDef", JSImport.Default)
 @js.native
 object default extends js.Object {

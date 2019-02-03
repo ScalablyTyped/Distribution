@@ -12,7 +12,9 @@ object easyDashXapiDashSupertestLibStrings {
   @js.native
   sealed trait error extends js.Object
   
+  @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
 }
 

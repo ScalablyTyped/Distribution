@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Operator () extends js.Object
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs/global/Operator", "Operator")
 @js.native
 object Operator extends js.Object {

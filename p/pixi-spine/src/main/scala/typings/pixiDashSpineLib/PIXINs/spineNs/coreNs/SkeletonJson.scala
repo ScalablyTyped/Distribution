@@ -27,6 +27,7 @@ class SkeletonJson protected () extends js.Object {
   def readVertices(map: js.Any, attachment: VertexAttachment, verticesLength: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.SkeletonJson")
 @js.native
 object SkeletonJson extends js.Object {

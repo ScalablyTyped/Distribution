@@ -54,6 +54,7 @@ class ConversationV1 protected () extends js.Object {
   def workspaceStatus(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "ConversationV1")
 @js.native
 object ConversationV1 extends js.Object {

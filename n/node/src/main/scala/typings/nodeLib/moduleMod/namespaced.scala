@@ -13,6 +13,7 @@ class namespaced protected ()
   def this(id: java.lang.String, parent: nodeLib.NodeJSNs.Module) = this()
 }
 
+/* static members */
 @JSImport("module", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

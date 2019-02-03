@@ -38,6 +38,7 @@ class VariableScope protected () extends Property[VariableScopeDefinition] {
   def variables(): org.scalablytyped.runtime.StringDictionary[VariableDefinition] = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "VariableScope")
 @js.native
 object VariableScope extends js.Object {

@@ -28,6 +28,7 @@ class NetworkInterfaceSecurityGroupAttachment protected ()
   val securityGroupId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/networkInterfaceSecurityGroupAttachment", "NetworkInterfaceSecurityGroupAttachment")
 @js.native
 object NetworkInterfaceSecurityGroupAttachment extends js.Object {

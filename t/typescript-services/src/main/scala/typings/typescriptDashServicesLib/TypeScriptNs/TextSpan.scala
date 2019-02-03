@@ -25,6 +25,7 @@ class TextSpan protected () extends js.Object {
   def start(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.TextSpan")
 @js.native
 object TextSpan extends js.Object {

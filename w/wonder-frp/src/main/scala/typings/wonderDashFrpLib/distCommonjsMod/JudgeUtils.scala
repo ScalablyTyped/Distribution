@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class JudgeUtils ()
   extends wonderDashFrpLib.distCommonjsJudgeUtilsMod.JudgeUtils
 
+/* static members */
 @JSImport("wonder-frp/dist/commonjs", "JudgeUtils")
 @js.native
 object JudgeUtils extends js.Object {

@@ -47,6 +47,7 @@ class QueryLatencyStats () extends IQueryLatencyStats {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "QueryLatencyStats")
 @js.native
 object QueryLatencyStats extends js.Object {

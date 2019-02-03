@@ -26,7 +26,7 @@ class HttpProductHeaderValue protected () extends js.Object {
   var version: java.lang.String = js.native
 }
 
-/** Represents product information used by the HttpProductHeaderValue and HttpProductInfoHeaderValueCollection classes in the User-Agent HTTP header. */
+/* static members */
 @JSGlobal("Windows.Web.Http.Headers.HttpProductHeaderValue")
 @js.native
 object HttpProductHeaderValue extends js.Object {

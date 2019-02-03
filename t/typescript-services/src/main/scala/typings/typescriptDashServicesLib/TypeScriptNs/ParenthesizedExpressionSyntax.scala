@@ -74,6 +74,7 @@ class ParenthesizedExpressionSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ParenthesizedExpressionSyntax")
 @js.native
 object ParenthesizedExpressionSyntax extends js.Object {

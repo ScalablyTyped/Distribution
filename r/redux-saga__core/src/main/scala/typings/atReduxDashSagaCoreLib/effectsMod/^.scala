@@ -21,7 +21,9 @@ object ^ extends js.Object {
   @JSName("apply")
   def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](ctx: Ctx, fn: Fn, args: stdLib.Parameters[Fn]): atReduxDashSagaCoreLib.effectsMod.CallEffect = js.native
   @JSName("apply")
-  def `apply_Ctx<intersection>NameString`[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.apply with js.Any */, Name /* <: java.lang.String */](
+  def `apply_Ctx<intersection>NameString`[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.apply with js.Any */, Name /* <: java.lang.String */](
     ctx: Ctx,
     fnName: Name,
     args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
@@ -30,7 +32,9 @@ object ^ extends js.Object {
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.CallEffect = js.native
-  def call[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.call with js.Any */, Name /* <: java.lang.String */](
+  def call[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.call with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: atReduxDashSagaCoreLib.Anon_Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.CallEffect = js.native
@@ -43,7 +47,9 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.CallEffect = js.native
   @JSName("call")
-  def `call_Ctx<intersection>NameString`[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.call with js.Any */, Name /* <: java.lang.String */](
+  def `call_Ctx<intersection>NameString`[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.call with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.CallEffect = js.native
@@ -56,7 +62,9 @@ object ^ extends js.Object {
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.CpsFunctionParameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.CpsEffect = js.native
-  def cps[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.cps with js.Any */, Name /* <: java.lang.String */](
+  def cps[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): void}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.cps with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: atReduxDashSagaCoreLib.Anon_ContextFnCtx[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.CpsFunctionParameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.CpsEffect = js.native
@@ -69,7 +77,9 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.CpsFunctionParameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.CpsEffect = js.native
   @JSName("cps")
-  def `cps_Ctx<intersection>NameString`[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.cps with js.Any */, Name /* <: java.lang.String */](
+  def `cps_Ctx<intersection>NameString`[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): void}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.cps with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.CpsFunctionParameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.CpsEffect = js.native
@@ -102,7 +112,9 @@ object ^ extends js.Object {
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
-  def fork[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.fork with js.Any */, Name /* <: java.lang.String */](
+  def fork[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.fork with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: atReduxDashSagaCoreLib.Anon_Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
@@ -115,7 +127,9 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   @JSName("fork")
-  def `fork_Ctx<intersection>NameString`[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.fork with js.Any */, Name /* <: java.lang.String */](
+  def `fork_Ctx<intersection>NameString`[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.fork with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
@@ -147,7 +161,9 @@ object ^ extends js.Object {
     fn: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
-  def spawn[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.spawn with js.Any */, Name /* <: java.lang.String */](
+  def spawn[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.spawn with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: atReduxDashSagaCoreLib.Anon_Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
@@ -160,7 +176,9 @@ object ^ extends js.Object {
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: stdLib.Parameters[Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   @JSName("spawn")
-  def `spawn_Ctx<intersection>NameString`[Ctx /* <: atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.spawn with js.Any */, Name /* <: java.lang.String */](
+  def `spawn_Ctx<intersection>NameString`[Ctx /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ P in Name ]: (this : Ctx, args : ...any): any}
+    */ atReduxDashSagaCoreLib.atReduxDashSagaCoreLibStrings.spawn with js.Any */, Name /* <: java.lang.String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native

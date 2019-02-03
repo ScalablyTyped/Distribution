@@ -12,6 +12,7 @@ class Key protected ()
   def this(opts: js.Any) = this()
 }
 
+/* static members */
 @JSImport("sshpk", "Key")
 @js.native
 object Key extends js.Object {

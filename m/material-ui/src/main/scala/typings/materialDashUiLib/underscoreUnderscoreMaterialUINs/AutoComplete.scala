@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class AutoComplete ()
   extends reactLib.reactMod.Component[AutoCompleteProps[js.Any], js.Object, js.Any]
 
+/* static members */
 @JSGlobal("__MaterialUI.AutoComplete")
 @js.native
 object AutoComplete extends js.Object {

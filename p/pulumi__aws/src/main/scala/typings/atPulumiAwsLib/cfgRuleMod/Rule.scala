@@ -54,6 +54,7 @@ class Rule protected ()
   val source: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_Owner] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cfg/rule", "Rule")
 @js.native
 object Rule extends js.Object {

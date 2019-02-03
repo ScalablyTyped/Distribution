@@ -21,6 +21,7 @@ class default () extends OtherCertificateFormat {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/OtherCertificateFormat", JSImport.Default)
 @js.native
 object default extends js.Object {

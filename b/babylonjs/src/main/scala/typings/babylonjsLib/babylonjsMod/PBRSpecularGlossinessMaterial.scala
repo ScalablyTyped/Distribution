@@ -24,12 +24,7 @@ class PBRSpecularGlossinessMaterial protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene) = this()
 }
 
-/**
-  * The PBR material of BJS following the specular glossiness convention.
-  *
-  * This fits to the PBR convention in the GLTF definition:
-  * https://github.com/KhronosGroup/glTF/tree/2.0/extensions/Khronos/KHR_materials_pbrSpecularGlossiness
-  */
+/* static members */
 @JSImport("babylonjs", "PBRSpecularGlossinessMaterial")
 @js.native
 object PBRSpecularGlossinessMaterial extends js.Object {

@@ -36,6 +36,7 @@ class Either[L, R] protected ()
   override def unit[U](t: U): tsmonadLib.libSrcMonadMod.Monad[U] = js.native
 }
 
+/* static members */
 @JSImport("tsmonad/lib/src/either", "Either")
 @js.native
 object Either extends js.Object {

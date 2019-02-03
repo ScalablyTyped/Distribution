@@ -9,6 +9,7 @@ object reduxDashOrmLibStrings {
   @js.native
   sealed trait SessionWithModels extends js.Object
   
+  @scala.inline
   def SessionWithModels: SessionWithModels = "SessionWithModels".asInstanceOf[SessionWithModels]
 }
 

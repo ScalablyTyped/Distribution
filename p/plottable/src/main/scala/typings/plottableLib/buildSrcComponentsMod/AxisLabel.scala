@@ -18,6 +18,7 @@ class AxisLabel ()
   def this(text: java.lang.String, angle: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("plottable/build/src/components", "AxisLabel")
 @js.native
 object AxisLabel extends js.Object {

@@ -89,6 +89,7 @@ class RadialMenu protected () extends Widget {
   def updateBadgeValue(index: scala.Double, value: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.RadialMenu")
 @js.native
 object RadialMenu extends js.Object {

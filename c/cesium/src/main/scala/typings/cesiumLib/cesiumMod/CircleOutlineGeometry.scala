@@ -12,6 +12,7 @@ class CircleOutlineGeometry protected ()
   def this(options: cesiumLib.Anon_CenterEllipsoid) = this()
 }
 
+/* static members */
 @JSImport("cesium", "CircleOutlineGeometry")
 @js.native
 object CircleOutlineGeometry extends js.Object {

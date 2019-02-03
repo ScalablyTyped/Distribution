@@ -42,6 +42,7 @@ object SourceCodeInfoNs extends js.Object {
     def setTrailingComments(value: java.lang.String): scala.Unit = js.native
   }
   
+  /* static members */
   @js.native
   object Location extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[

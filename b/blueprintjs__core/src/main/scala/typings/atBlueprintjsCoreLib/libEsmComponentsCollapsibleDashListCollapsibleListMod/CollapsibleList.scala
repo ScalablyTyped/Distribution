@@ -12,6 +12,7 @@ class CollapsibleList ()
   /* private */ def partitionChildren(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components/collapsible-list/collapsibleList", "CollapsibleList")
 @js.native
 object CollapsibleList extends js.Object {

@@ -20,6 +20,7 @@ class PolicyAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.organizationsPolicyAttachmentMod.PolicyAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/organizations", "PolicyAttachment")
 @js.native
 object PolicyAttachment extends js.Object {

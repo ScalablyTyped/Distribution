@@ -100,7 +100,7 @@ abstract class BitmapDecoder () extends js.Object {
   def getThumbnailAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[ImageStream] = js.native
 }
 
-/** Provides read access to bitmap container data as well as data from the first frame. */
+/* static members */
 @JSGlobal("Windows.Graphics.Imaging.BitmapDecoder")
 @js.native
 object BitmapDecoder extends js.Object {

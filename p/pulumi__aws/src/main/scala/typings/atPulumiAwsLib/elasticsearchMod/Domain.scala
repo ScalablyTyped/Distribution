@@ -21,6 +21,7 @@ class Domain protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticsearchDomainMod.DomainArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticsearch", "Domain")
 @js.native
 object Domain extends js.Object {

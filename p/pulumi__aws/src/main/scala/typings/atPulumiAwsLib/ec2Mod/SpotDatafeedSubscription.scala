@@ -20,6 +20,7 @@ class SpotDatafeedSubscription protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2SpotDatafeedSubscriptionMod.SpotDatafeedSubscriptionArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2", "SpotDatafeedSubscription")
 @js.native
 object SpotDatafeedSubscription extends js.Object {

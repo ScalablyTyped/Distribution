@@ -31,6 +31,7 @@ abstract class CustomResource protected () extends Resource {
   val id: Output[ID] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/pulumi/resource", "CustomResource")
 @js.native
 object CustomResource extends js.Object {

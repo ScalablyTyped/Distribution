@@ -58,7 +58,7 @@ class XboxLiveQualityOfServiceMeasurement () extends js.Object {
   def measureAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncAction = js.native
 }
 
-/** This API is not available to all apps. Unless your developer account is specially provisioned by Microsoft, calls to these APIs will fail at runtime. */
+/* static members */
 @JSGlobal("Windows.Networking.XboxLive.XboxLiveQualityOfServiceMeasurement")
 @js.native
 object XboxLiveQualityOfServiceMeasurement extends js.Object {

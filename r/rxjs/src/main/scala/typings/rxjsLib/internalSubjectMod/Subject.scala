@@ -31,6 +31,7 @@ class Subject[T] ()
   override def unsubscribe(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("rxjs/internal/Subject", "Subject")
 @js.native
 object Subject extends js.Object {

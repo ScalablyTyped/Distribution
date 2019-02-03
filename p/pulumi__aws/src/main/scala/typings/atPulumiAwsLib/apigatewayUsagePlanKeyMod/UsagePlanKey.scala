@@ -40,6 +40,7 @@ class UsagePlanKey protected ()
   val value: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/apigateway/usagePlanKey", "UsagePlanKey")
 @js.native
 object UsagePlanKey extends js.Object {

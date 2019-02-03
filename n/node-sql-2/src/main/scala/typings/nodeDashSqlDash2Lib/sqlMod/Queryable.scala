@@ -13,7 +13,11 @@ trait Queryable[T] extends Executable {
   def select[N1 /* <: java.lang.String */, T1, N2 /* <: java.lang.String */, T2](n1: Column[N1, T1], n2: Column[N2, T2]): Query[nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.Queryable with js.Any] = js.native
   def select[N1 /* <: java.lang.String */, T1, N2 /* <: java.lang.String */, T2, N3 /* <: java.lang.String */, T3](n1: Column[N1, T1], n2: Column[N2, T2], n3: Column[N3, T3]): Query[nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.Queryable with js.Any] = js.native
   @JSName("select")
-  def select_N1StringT1[N1 /* <: java.lang.String */, T1](n1: Column[N1, T1]): Query[nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.Queryable with js.Any] = js.native
+  def select_N1StringT1[N1 /* <: java.lang.String */, T1](n1: Column[N1, T1]): Query[
+    /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ N in N1 ]: T1}
+    */ nodeDashSqlDash2Lib.nodeDashSqlDash2LibStrings.Queryable with js.Any
+  ] = js.native
   def where(nodes: js.Any*): Query[T] = js.native
 }
 

@@ -15,8 +15,11 @@ object listrLibStrings {
   @js.native
   sealed trait verbose extends js.Object
   
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
 }
 

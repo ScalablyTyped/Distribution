@@ -5969,6 +5969,7 @@ object EvernoteNs extends js.Object {
     def apply(value: scala.Double): js.UndefOr[evernoteLib.evernoteMod.EvernoteNs.BusinessUserRole with scala.Double] = js.native
   }
   
+  /* static members */
   @js.native
   object Client extends js.Object {
     def `new`(config: evernoteLib.evernoteMod.EvernoteNs.ClientConfig): evernoteLib.evernoteMod.EvernoteNs.Client = js.native

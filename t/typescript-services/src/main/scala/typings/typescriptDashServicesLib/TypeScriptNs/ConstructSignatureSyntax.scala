@@ -17,6 +17,7 @@ class ConstructSignatureSyntax protected () extends SyntaxNode {
   def withNewKeyword(newKeyword: ISyntaxToken): ConstructSignatureSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.ConstructSignatureSyntax")
 @js.native
 object ConstructSignatureSyntax extends js.Object {

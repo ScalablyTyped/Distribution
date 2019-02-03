@@ -34,6 +34,7 @@ class Emitter[T] () extends js.Object {
   def fire(event: T): js.Any = js.native
 }
 
+/* static members */
 @JSImport("vscode-jsonrpc/lib/events", "Emitter")
 @js.native
 object Emitter extends js.Object {

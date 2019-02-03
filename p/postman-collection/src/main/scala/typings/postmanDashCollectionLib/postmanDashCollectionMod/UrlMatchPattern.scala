@@ -25,6 +25,7 @@ class UrlMatchPattern protected () extends js.Object {
   def update(options: postmanDashCollectionLib.Anon_Pattern): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "UrlMatchPattern")
 @js.native
 object UrlMatchPattern extends js.Object {

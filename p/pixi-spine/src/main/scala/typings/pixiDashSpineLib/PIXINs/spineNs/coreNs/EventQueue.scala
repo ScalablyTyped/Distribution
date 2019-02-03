@@ -23,6 +23,7 @@ class EventQueue protected () extends js.Object {
   def start(entry: TrackEntry): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("PIXI.spine.core.EventQueue")
 @js.native
 object EventQueue extends js.Object {

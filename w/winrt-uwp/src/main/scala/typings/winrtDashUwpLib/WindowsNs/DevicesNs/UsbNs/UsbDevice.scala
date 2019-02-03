@@ -45,7 +45,7 @@ abstract class UsbDevice () extends js.Object {
   def sendControlOutTransferAsync(setupPacket: UsbSetupPacket, buffer: winrtDashUwpLib.WindowsNs.StorageNs.StreamsNs.IBuffer): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[scala.Double] = js.native
 }
 
-/** Represents a USB device. The object provides methods and properties that an app can use to find the device (in the system) with which the app wants to communicate, and sends IN and OUT control transfers to the device. */
+/* static members */
 @JSGlobal("Windows.Devices.Usb.UsbDevice")
 @js.native
 object UsbDevice extends js.Object {

@@ -14,6 +14,7 @@ class VideoBaseTexture protected ()
   def this(source: stdLib.HTMLVideoElement, scaleMode: scala.Double, autoPlay: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("pixi.js", "VideoBaseTexture")
 @js.native
 object VideoBaseTexture extends js.Object {

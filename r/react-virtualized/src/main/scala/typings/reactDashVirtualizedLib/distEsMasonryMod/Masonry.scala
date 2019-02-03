@@ -15,6 +15,7 @@ class Masonry ()
   def recomputeCellPositions(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("react-virtualized/dist/es/Masonry", "Masonry")
 @js.native
 object Masonry extends js.Object {

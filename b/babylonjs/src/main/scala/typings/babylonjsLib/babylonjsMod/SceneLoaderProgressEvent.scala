@@ -24,9 +24,7 @@ class SceneLoaderProgressEvent protected ()
   total: scala.Double) = this()
 }
 
-/**
-  * Class used to represent data loading progression
-  */
+/* static members */
 @JSImport("babylonjs", "SceneLoaderProgressEvent")
 @js.native
 object SceneLoaderProgressEvent extends js.Object {

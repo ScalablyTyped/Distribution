@@ -17,6 +17,7 @@ class BayesClassifier () extends js.Object {
   def train(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("natural", "BayesClassifier")
 @js.native
 object BayesClassifier extends js.Object {

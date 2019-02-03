@@ -20,6 +20,7 @@ class LogStream protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchLogStreamMod.LogStreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "LogStream")
 @js.native
 object LogStream extends js.Object {

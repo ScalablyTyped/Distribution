@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PushNotificationChannelManager () extends js.Object
 
-/** Creates objects that you use to retrieve push notification channels from the Windows Push Notification Services (WNS). These channels are bound to an app or secondary tile . */
+/* static members */
 @JSGlobal("Windows.Networking.PushNotifications.PushNotificationChannelManager")
 @js.native
 object PushNotificationChannelManager extends js.Object {

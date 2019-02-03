@@ -11,6 +11,7 @@ class TextLoader protected () extends AbstractLoader {
   def this(loadItem: js.Object) = this()
 }
 
+/* static members */
 @JSGlobal("createjs.TextLoader")
 @js.native
 object TextLoader extends js.Object {

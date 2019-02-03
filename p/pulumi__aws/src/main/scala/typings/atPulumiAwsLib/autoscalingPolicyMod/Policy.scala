@@ -72,6 +72,7 @@ class Policy protected ()
   ] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/policy", "Policy")
 @js.native
 object Policy extends js.Object {

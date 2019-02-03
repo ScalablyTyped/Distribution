@@ -36,6 +36,7 @@ object GeneratedCodeInfoNs extends js.Object {
       ]
   }
   
+  /* static members */
   @js.native
   object Annotation extends js.Object {
     var extensions: org.scalablytyped.runtime.NumberDictionary[

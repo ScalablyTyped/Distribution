@@ -26,6 +26,7 @@ class default protected () extends Popper {
   override def update(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("popper.js", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -57,21 +57,37 @@ object bullLibStrings {
   @js.native
   sealed trait waiting extends js.Object
   
+  @scala.inline
   def active: active = "active".asInstanceOf[active]
+  @scala.inline
   def bclient: bclient = "bclient".asInstanceOf[bclient]
+  @scala.inline
   def cleaned: cleaned = "cleaned".asInstanceOf[cleaned]
+  @scala.inline
   def client: client = "client".asInstanceOf[client]
+  @scala.inline
   def completed: completed = "completed".asInstanceOf[completed]
+  @scala.inline
   def delayed: delayed = "delayed".asInstanceOf[delayed]
+  @scala.inline
   def drained: drained = "drained".asInstanceOf[drained]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def paused: paused = "paused".asInstanceOf[paused]
+  @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
+  @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
+  @scala.inline
   def resumed: resumed = "resumed".asInstanceOf[resumed]
+  @scala.inline
   def stalled: stalled = "stalled".asInstanceOf[stalled]
+  @scala.inline
   def subscriber: subscriber = "subscriber".asInstanceOf[subscriber]
+  @scala.inline
   def waiting: waiting = "waiting".asInstanceOf[waiting]
 }
 

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Toaster ()
   extends atBlueprintjsCoreLib.libEsmComponentsMod.Toaster
 
+/* static members */
 @JSImport("@blueprintjs/core", "Toaster")
 @js.native
 object Toaster extends js.Object {

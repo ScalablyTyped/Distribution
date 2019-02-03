@@ -28,6 +28,7 @@ class StaticIpAttachment protected ()
   val staticIpName: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/lightsail/staticIpAttachment", "StaticIpAttachment")
 @js.native
 object StaticIpAttachment extends js.Object {

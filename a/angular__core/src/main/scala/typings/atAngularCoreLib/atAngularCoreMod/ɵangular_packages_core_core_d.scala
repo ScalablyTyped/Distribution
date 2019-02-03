@@ -16,6 +16,7 @@ class ɵangular_packages_core_core_d protected ()
   def this(_providers: js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider], _parent: atAngularCoreLib.srcDiInjectorMod.Injector) = this()
 }
 
+/* static members */
 @JSImport("@angular/core", "ɵangular_packages_core_core_d")
 @js.native
 object ɵangular_packages_core_core_d extends js.Object {

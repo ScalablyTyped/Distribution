@@ -24,6 +24,7 @@ class TableMap () extends js.Object {
   def rectBetween(a: scala.Double, b: scala.Double): Rect = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-tables", "TableMap")
 @js.native
 object TableMap extends js.Object {

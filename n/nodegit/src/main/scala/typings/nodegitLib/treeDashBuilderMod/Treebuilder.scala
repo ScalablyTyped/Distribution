@@ -17,6 +17,7 @@ class Treebuilder () extends js.Object {
   def write(): nodegitLib.oidMod.Oid = js.native
 }
 
+/* static members */
 @JSImport("nodegit/tree-builder", "Treebuilder")
 @js.native
 object Treebuilder extends js.Object {

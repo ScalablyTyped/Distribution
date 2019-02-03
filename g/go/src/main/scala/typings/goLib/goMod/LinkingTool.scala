@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation._
 class LinkingTool ()
   extends goLib.goMod.goNs.LinkingTool
 
-/**
-  */
+/* static members */
 @JSImport("go", "LinkingTool")
 @js.native
 object LinkingTool extends js.Object {

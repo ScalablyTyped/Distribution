@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends MDCTopAppBarBaseFoundation
 
+/* static members */
 @JSImport("@material/top-app-bar/foundation", JSImport.Default)
 @js.native
 object default extends js.Object {

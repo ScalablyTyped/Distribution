@@ -41,7 +41,7 @@ abstract class Compass () extends js.Object {
   ): scala.Unit = js.native
 }
 
-/** Represents a compass sensor. */
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Compass")
 @js.native
 object Compass extends js.Object {

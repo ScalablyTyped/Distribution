@@ -18,9 +18,13 @@ object bookshelfLibStrings {
   @js.native
   sealed trait desc extends js.Object
   
+  @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
+  @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
+  @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
+  @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
 }
 

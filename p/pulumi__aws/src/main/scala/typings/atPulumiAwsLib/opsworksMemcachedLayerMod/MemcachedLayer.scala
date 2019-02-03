@@ -89,6 +89,7 @@ class MemcachedLayer protected ()
   val useEbsOptimizedInstances: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/opsworks/memcachedLayer", "MemcachedLayer")
 @js.native
 object MemcachedLayer extends js.Object {

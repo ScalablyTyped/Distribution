@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Modal ()
   extends reactDashOverlaysLib.libModalMod.namespaced
 
+/* static members */
 @JSImport("react-overlays", "Modal")
 @js.native
 object Modal extends js.Object {

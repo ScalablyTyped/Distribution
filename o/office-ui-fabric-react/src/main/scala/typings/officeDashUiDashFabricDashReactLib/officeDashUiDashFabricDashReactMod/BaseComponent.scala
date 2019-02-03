@@ -18,6 +18,7 @@ class BaseComponent[TProps /* <: atUifabricUtilitiesLib.libBaseComponentMod.IBas
   def this(props: TProps, context: js.Any) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "BaseComponent")
 @js.native
 object BaseComponent extends js.Object {

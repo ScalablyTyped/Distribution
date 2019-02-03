@@ -17,5 +17,6 @@ trait Config[V /* <: HTTPVersion */] extends js.Object {
   ] = js.undefined
   var ignoreTrailingSlash: js.UndefOr[scala.Boolean] = js.undefined
   var maxParamLength: js.UndefOr[scala.Double] = js.undefined
+  var versioning: js.UndefOr[findDashMyDashWayLib.Anon_Ctx[V]] = js.undefined
 }
 

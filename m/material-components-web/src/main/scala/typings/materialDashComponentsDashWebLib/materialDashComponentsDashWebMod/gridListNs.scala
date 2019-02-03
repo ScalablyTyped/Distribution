@@ -16,11 +16,13 @@ object gridListNs extends js.Object {
   class MDCGridListFoundation ()
     extends atMaterialGridDashListLib.atMaterialGridDashListMod.MDCGridListFoundation
   
+  /* static members */
   @js.native
   object MDCGridList extends js.Object {
     def attachTo(root: stdLib.Element): atMaterialGridDashListLib.atMaterialGridDashListMod.MDCGridList = js.native
   }
   
+  /* static members */
   @js.native
   object MDCGridListFoundation extends js.Object {
     val defaultAdapter: atMaterialGridDashListLib.adapterMod.MDCGridListAdapter = js.native

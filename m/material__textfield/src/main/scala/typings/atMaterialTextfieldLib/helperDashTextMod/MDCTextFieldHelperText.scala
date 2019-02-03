@@ -15,6 +15,7 @@ class MDCTextFieldHelperText ()
   val foundation: atMaterialTextfieldLib.helperDashTextFoundationMod.default = js.native
 }
 
+/* static members */
 @JSImport("@material/textfield/helper-text", "MDCTextFieldHelperText")
 @js.native
 object MDCTextFieldHelperText extends js.Object {

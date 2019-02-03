@@ -29,6 +29,7 @@ class Editor protected () extends Widget {
   def getValue(): scala.Double = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Editor")
 @js.native
 object Editor extends js.Object {

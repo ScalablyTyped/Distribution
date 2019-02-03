@@ -9,6 +9,7 @@ object atEmberUtilsLibStrings {
   @js.native
   sealed trait undefined extends js.Object
   
+  @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
 }
 

@@ -21,6 +21,7 @@ class Template protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.sesTemplateMod.TemplateArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses", "Template")
 @js.native
 object Template extends js.Object {

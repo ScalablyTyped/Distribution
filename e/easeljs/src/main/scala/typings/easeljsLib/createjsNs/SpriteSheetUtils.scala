@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class SpriteSheetUtils () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.SpriteSheetUtils")
 @js.native
 object SpriteSheetUtils extends js.Object {

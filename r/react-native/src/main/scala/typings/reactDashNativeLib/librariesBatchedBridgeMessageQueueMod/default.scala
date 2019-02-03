@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class default ()
   extends reactDashNativeLib.MessageQueue
 
+/* static members */
 @JSImport("react-native/Libraries/BatchedBridge/MessageQueue", JSImport.Default)
 @js.native
 object default extends js.Object {

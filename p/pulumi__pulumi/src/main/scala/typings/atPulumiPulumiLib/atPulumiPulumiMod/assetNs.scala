@@ -58,6 +58,7 @@ object assetNs extends js.Object {
     def this(text: js.Promise[java.lang.String]) = this()
   }
   
+  /* static members */
   @js.native
   object Archive extends js.Object {
     /**
@@ -67,6 +68,7 @@ object assetNs extends js.Object {
     def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ scala.Boolean = js.native
   }
   
+  /* static members */
   @js.native
   object Asset extends js.Object {
     /**

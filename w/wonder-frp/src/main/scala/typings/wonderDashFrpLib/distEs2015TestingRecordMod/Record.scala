@@ -19,6 +19,7 @@ class Record protected () extends js.Object {
   def equals(other: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015/testing/Record", "Record")
 @js.native
 object Record extends js.Object {

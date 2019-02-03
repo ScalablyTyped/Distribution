@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class default () extends Timeout
 
+/* static members */
 @JSImport("await-timeout", JSImport.Default)
 @js.native
 object default extends js.Object {

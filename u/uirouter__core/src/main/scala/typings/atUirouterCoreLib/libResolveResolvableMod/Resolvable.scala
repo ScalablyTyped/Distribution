@@ -90,6 +90,7 @@ class Resolvable protected ()
   ): js.Promise[_] = js.native
 }
 
+/* static members */
 @JSImport("@uirouter/core/lib/resolve/resolvable", "Resolvable")
 @js.native
 object Resolvable extends js.Object {

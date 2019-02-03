@@ -290,11 +290,7 @@ class ShadowGenerator protected () extends IShadowGenerator {
   def setTransparencyShadow(transparent: scala.Boolean): ShadowGenerator = js.native
 }
 
-/**
-  * Default implementation IShadowGenerator.
-  * This is the main object responsible of generating shadows in the framework.
-  * Documentation: https://doc.babylonjs.com/babylon101/shadows
-  */
+/* static members */
 @JSGlobal("BABYLON.ShadowGenerator")
 @js.native
 object ShadowGenerator extends js.Object {

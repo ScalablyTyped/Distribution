@@ -12,6 +12,7 @@ class MapStream protected ()
   def this(source: wonderDashFrpLib.distEs2015CoreStreamMod.Stream, selector: js.Function) = this()
 }
 
+/* static members */
 @JSImport("wonder-frp/dist/es2015", "MapStream")
 @js.native
 object MapStream extends js.Object {

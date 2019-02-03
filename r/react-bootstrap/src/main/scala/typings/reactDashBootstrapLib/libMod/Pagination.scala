@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Pagination ()
   extends reactDashBootstrapLib.libPaginationMod.namespaced
 
+/* static members */
 @JSImport("react-bootstrap/lib", "Pagination")
 @js.native
 object Pagination extends js.Object {

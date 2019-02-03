@@ -136,6 +136,7 @@ class Storage ()
   def getServiceAccount(options: GetServiceAccountOptions, callback: GetServiceAccountCallback): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@google-cloud/storage/build/src/storage", "Storage")
 @js.native
 object Storage extends js.Object {

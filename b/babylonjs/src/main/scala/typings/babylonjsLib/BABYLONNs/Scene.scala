@@ -2342,10 +2342,7 @@ class Scene protected () extends AbstractScene {
   def whenReadyAsync(): js.Promise[scala.Unit] = js.native
 }
 
-/**
-  * Represents a scene to be rendered by the engine.
-  * @see http://doc.babylonjs.com/features/scene
-  */
+/* static members */
 @JSGlobal("BABYLON.Scene")
 @js.native
 object Scene extends js.Object {

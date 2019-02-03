@@ -18,9 +18,13 @@ object xmldocLibStrings {
   @js.native
   sealed trait text extends js.Object
   
+  @scala.inline
   def cdata: cdata = "cdata".asInstanceOf[cdata]
+  @scala.inline
   def comment: comment = "comment".asInstanceOf[comment]
+  @scala.inline
   def element: element = "element".asInstanceOf[element]
+  @scala.inline
   def text: text = "text".asInstanceOf[text]
 }
 

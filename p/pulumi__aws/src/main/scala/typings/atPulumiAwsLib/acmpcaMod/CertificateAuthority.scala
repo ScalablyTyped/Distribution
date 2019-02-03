@@ -20,6 +20,7 @@ class CertificateAuthority protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.acmpcaCertificateAuthorityMod.CertificateAuthorityArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/acmpca", "CertificateAuthority")
 @js.native
 object CertificateAuthority extends js.Object {

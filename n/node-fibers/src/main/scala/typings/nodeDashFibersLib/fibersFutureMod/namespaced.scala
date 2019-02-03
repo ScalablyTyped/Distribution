@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class namespaced () extends Future
 
+/* static members */
 @JSImport("fibers/future", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

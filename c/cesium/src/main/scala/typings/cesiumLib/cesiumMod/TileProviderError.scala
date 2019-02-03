@@ -39,6 +39,7 @@ class TileProviderError protected ()
   override var y: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("cesium", "TileProviderError")
 @js.native
 object TileProviderError extends js.Object {

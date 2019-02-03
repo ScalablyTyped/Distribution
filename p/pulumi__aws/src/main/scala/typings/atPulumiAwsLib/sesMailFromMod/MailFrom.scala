@@ -32,6 +32,7 @@ class MailFrom protected ()
   val mailFromDomain: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom")
 @js.native
 object MailFrom extends js.Object {

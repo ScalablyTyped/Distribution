@@ -27,6 +27,7 @@ class default protected ()
   def this(radius: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("ol/sphere", JSImport.Default)
 @js.native
 object default extends js.Object {

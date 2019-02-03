@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class CanvasManager () extends js.Object
 
+/* static members */
 @JSImport("obelisk.js", "CanvasManager")
 @js.native
 object CanvasManager extends js.Object {

@@ -24,6 +24,7 @@ class AccountAlias protected ()
   val accountAlias: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/iam/accountAlias", "AccountAlias")
 @js.native
 object AccountAlias extends js.Object {

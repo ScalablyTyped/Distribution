@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class KeyStorageProviderNames () extends js.Object
 
-/** Defines several commonly used key storage provider names. You can use this class in the KeyStorageProviderName property on the CertificateRequestProperties class. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames")
 @js.native
 object KeyStorageProviderNames extends js.Object {

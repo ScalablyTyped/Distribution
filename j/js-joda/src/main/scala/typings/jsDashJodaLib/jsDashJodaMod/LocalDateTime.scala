@@ -25,6 +25,7 @@ class LocalDateTime ()
   override def toInstant(offset: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneOffset): jsDashJodaLib.jsDashJodaMod.JSJodaNs.Instant = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "LocalDateTime")
 @js.native
 object LocalDateTime extends js.Object {

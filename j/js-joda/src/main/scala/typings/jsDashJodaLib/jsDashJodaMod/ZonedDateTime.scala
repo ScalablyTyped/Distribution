@@ -35,6 +35,7 @@ class ZonedDateTime ()
   override def toInstant(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.Instant = js.native
 }
 
+/* static members */
 @JSImport("js-joda", "ZonedDateTime")
 @js.native
 object ZonedDateTime extends js.Object {

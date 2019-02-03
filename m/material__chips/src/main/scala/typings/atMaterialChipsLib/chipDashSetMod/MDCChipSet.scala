@@ -23,6 +23,7 @@ class MDCChipSet ()
   def initialize(chipFactory: js.Function1[/* el */ stdLib.Element, atMaterialChipsLib.chipMod.MDCChip]): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/chips/chip-set", "MDCChipSet")
 @js.native
 object MDCChipSet extends js.Object {

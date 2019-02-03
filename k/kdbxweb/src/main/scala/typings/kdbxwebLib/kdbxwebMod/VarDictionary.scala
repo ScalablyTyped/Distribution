@@ -15,6 +15,7 @@ class VarDictionary () extends js.Object {
   def write(stm: BinaryStream): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("kdbxweb", "VarDictionary")
 @js.native
 object VarDictionary extends js.Object {

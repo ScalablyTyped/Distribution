@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class TemporalQueries ()
   extends jsDashJodaLib.jsDashJodaMod.JSJodaNs.TemporalQueries
 
+/* static members */
 @JSImport("js-joda", "TemporalQueries")
 @js.native
 object TemporalQueries extends js.Object {

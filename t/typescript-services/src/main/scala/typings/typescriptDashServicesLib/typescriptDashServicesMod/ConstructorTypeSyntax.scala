@@ -12,6 +12,7 @@ class ConstructorTypeSyntax protected ()
   def this(newKeyword: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, typeParameterList: typescriptDashServicesLib.TypeScriptNs.TypeParameterListSyntax, parameterList: typescriptDashServicesLib.TypeScriptNs.ParameterListSyntax, equalsGreaterThanToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, `type`: typescriptDashServicesLib.TypeScriptNs.ITypeSyntax, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "ConstructorTypeSyntax")
 @js.native
 object ConstructorTypeSyntax extends js.Object {

@@ -32,6 +32,7 @@ class Attachment protected ()
   val elb: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/autoscaling/attachment", "Attachment")
 @js.native
 object Attachment extends js.Object {

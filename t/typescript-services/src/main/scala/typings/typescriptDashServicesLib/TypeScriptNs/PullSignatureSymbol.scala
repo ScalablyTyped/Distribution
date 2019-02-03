@@ -88,6 +88,7 @@ class PullSignatureSymbol protected ()
   def wrapsSomeTypeParameter(typeParameterArgumentMap: TypeArgumentMap): scala.Boolean = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.PullSignatureSymbol")
 @js.native
 object PullSignatureSymbol extends js.Object {

@@ -14,6 +14,7 @@ object libApiBecomeDashObservedMod extends js.Object {
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(value: mobxLib.libCoreObservableMod.IObservable, listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(value: mobxLib.libInternalMod.ObservableMap[_, _], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def onBecomeObserved(value: mobxLib.libInternalMod.ObservableSet[_], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeObserved(
     value: mobxLib.libTypesObservablearrayMod.IObservableArray[_],
     listener: mobxLib.libUtilsUtilsMod.Lambda
@@ -30,6 +31,7 @@ object libApiBecomeDashObservedMod extends js.Object {
   ): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(value: mobxLib.libCoreObservableMod.IObservable, listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(value: mobxLib.libInternalMod.ObservableMap[_, _], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
+  def onBecomeUnobserved(value: mobxLib.libInternalMod.ObservableSet[_], listener: mobxLib.libUtilsUtilsMod.Lambda): mobxLib.libUtilsUtilsMod.Lambda = js.native
   def onBecomeUnobserved(
     value: mobxLib.libTypesObservablearrayMod.IObservableArray[_],
     listener: mobxLib.libUtilsUtilsMod.Lambda

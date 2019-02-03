@@ -22,6 +22,7 @@ class Toast () extends ComponentBase[ToastOptions] {
   def dismiss(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("M.Toast")
 @js.native
 object Toast extends js.Object {

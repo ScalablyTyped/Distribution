@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Point () extends js.Object
 
+/* static members */
 @JSGlobal("Ext.util.Point")
 @js.native
 object Point extends js.Object {

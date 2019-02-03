@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Modal ()
   extends materializeDashCssLib.MNs.Modal
 
+/* static members */
 @JSImport("materialize-css", "Modal")
 @js.native
 object Modal extends js.Object {

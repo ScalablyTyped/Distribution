@@ -36,7 +36,7 @@ class AudioEncodingProperties () extends js.Object {
   def setFormatUserData(value: js.Array[scala.Double]): scala.Unit = js.native
 }
 
-/** Describes the format of an audio stream. */
+/* static members */
 @JSGlobal("Windows.Media.MediaProperties.AudioEncodingProperties")
 @js.native
 object AudioEncodingProperties extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class BasicAnimator () extends js.Object
 
+/* static members */
 @JSGlobal("SPAnimationUtility.BasicAnimator")
 @js.native
 object BasicAnimator extends js.Object {

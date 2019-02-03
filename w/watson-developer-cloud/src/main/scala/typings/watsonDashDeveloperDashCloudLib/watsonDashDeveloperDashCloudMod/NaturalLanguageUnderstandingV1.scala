@@ -15,6 +15,7 @@ class NaturalLanguageUnderstandingV1 protected () extends js.Object {
   def listModels(params: js.Any, callback: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("watson-developer-cloud", "NaturalLanguageUnderstandingV1")
 @js.native
 object NaturalLanguageUnderstandingV1 extends js.Object {

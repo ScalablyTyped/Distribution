@@ -14,6 +14,7 @@ class EntityQuery ()
   def this(tree: js.Object) = this()
 }
 
+/* static members */
 @JSImport("breeze", "EntityQuery")
 @js.native
 object EntityQuery extends js.Object {

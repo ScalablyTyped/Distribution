@@ -18,6 +18,7 @@ class Gyrometer () extends IGyrometer {
   override def getCurrentReading(): GyrometerReading = js.native
 }
 
+/* static members */
 @JSGlobal("Windows.Devices.Sensors.Gyrometer")
 @js.native
 object Gyrometer extends js.Object {

@@ -48,6 +48,7 @@ class Step[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] 
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("prosemirror-transform", "Step")
 @js.native
 object Step extends js.Object {

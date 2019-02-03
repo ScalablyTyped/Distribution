@@ -57,6 +57,7 @@ class EntityObjectManager protected () extends js.Object {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/core/entityObject/manager/EntityObjectManager", "EntityObjectManager")
 @js.native
 object EntityObjectManager extends js.Object {

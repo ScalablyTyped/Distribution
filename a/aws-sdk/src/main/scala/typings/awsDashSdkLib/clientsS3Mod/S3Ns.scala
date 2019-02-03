@@ -5579,6 +5579,7 @@ object S3Ns extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  /* static members */
   @js.native
   object ManagedUpload extends js.Object {
     /**

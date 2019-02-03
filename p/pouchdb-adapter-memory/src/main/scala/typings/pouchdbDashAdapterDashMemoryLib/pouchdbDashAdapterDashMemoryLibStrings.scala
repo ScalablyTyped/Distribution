@@ -9,6 +9,7 @@ object pouchdbDashAdapterDashMemoryLibStrings {
   @js.native
   sealed trait memory extends js.Object
   
+  @scala.inline
   def memory: memory = "memory".asInstanceOf[memory]
 }
 

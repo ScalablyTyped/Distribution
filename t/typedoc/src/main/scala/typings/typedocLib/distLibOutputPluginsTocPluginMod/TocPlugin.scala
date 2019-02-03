@@ -12,6 +12,7 @@ class TocPlugin ()
   var onRendererBeginPage: js.Any = js.native
 }
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/plugins/TocPlugin", "TocPlugin")
 @js.native
 object TocPlugin extends js.Object {

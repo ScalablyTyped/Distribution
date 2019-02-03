@@ -19,6 +19,7 @@ class Asset protected () extends js.Object {
   def toXDRObject(): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Asset = js.native
 }
 
+/* static members */
 @JSImport("stellar-base", "Asset")
 @js.native
 object Asset extends js.Object {

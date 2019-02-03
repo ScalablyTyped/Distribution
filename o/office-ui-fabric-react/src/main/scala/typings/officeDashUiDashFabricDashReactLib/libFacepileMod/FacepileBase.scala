@@ -12,6 +12,7 @@ class FacepileBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsFacepileFacepileDotTypesMod.IFacepileProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react/lib/Facepile", "FacepileBase")
 @js.native
 object FacepileBase extends js.Object {

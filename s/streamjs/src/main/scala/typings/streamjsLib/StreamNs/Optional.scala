@@ -19,6 +19,7 @@ class Optional[T] () extends js.Object {
   def orElseThrow(error: js.Any): T = js.native
 }
 
+/* static members */
 @JSGlobal("Stream.Optional")
 @js.native
 object Optional extends js.Object {

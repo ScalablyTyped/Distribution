@@ -27,14 +27,7 @@ class GlowLayer protected ()
   def this(name: java.lang.String, scene: babylonjsLib.BABYLONNs.Scene, options: stdLib.Partial[babylonjsLib.BABYLONNs.IGlowLayerOptions]) = this()
 }
 
-/**
-  * The glow layer Helps adding a glow effect around the emissive parts of a mesh.
-  *
-  * Once instantiated in a scene, simply use the pushMesh or removeMesh method to add or remove
-  * glowy meshes to your scene.
-  *
-  * Documentation: https://doc.babylonjs.com/how_to/glow_layer
-  */
+/* static members */
 @JSImport("babylonjs", "GlowLayer")
 @js.native
 object GlowLayer extends js.Object {

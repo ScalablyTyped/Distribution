@@ -18,6 +18,7 @@ class MethodStubSetter[T, ResolveType, RejectType] protected () extends js.Objec
   def thenThrow(rest: stdLib.Error*): this.type = js.native
 }
 
+/* static members */
 @JSImport("ts-mockito/lib/MethodStubSetter", "MethodStubSetter")
 @js.native
 object MethodStubSetter extends js.Object {

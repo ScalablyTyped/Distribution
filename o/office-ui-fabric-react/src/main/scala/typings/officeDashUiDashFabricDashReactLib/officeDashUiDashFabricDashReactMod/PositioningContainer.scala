@@ -11,6 +11,7 @@ class PositioningContainer protected () extends js.Object {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsCoachmarkPositioningContainerPositioningContainerDotTypesMod.IPositioningContainerProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "PositioningContainer")
 @js.native
 object PositioningContainer extends js.Object {

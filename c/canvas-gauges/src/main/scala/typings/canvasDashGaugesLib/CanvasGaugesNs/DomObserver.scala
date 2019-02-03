@@ -23,6 +23,7 @@ class DomObserver protected () extends js.Object {
   def traverse(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("CanvasGauges.DomObserver")
 @js.native
 object DomObserver extends js.Object {

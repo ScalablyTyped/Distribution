@@ -11,6 +11,7 @@ class default protected () extends ContainerBlot {
   def this(domNode: stdLib.Node) = this()
 }
 
+/* static members */
 @JSImport("parchment/dist/src/blot/abstract/container", JSImport.Default)
 @js.native
 object default extends js.Object {

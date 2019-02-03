@@ -75,6 +75,7 @@ class Dialog protected () extends Widget {
   def unpin(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("ej.Dialog")
 @js.native
 object Dialog extends js.Object {

@@ -11,5 +11,7 @@ package object webpackDashConfigDashUtilsMod {
   type Falsy = js.UndefOr[
     webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibNumbers.`false` | webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.Empty | webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.`false` | scala.Null | webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibNumbers.`0`
   ]
-  type NonEmptyObject[T, P /* <: DefinedObjKeys[T] */] = webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.NonEmptyObject with T
+  type NonEmptyObject[T, P /* <: DefinedObjKeys[T] */] = /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ PP in P ]: T[PP]}
+    */ webpackDashConfigDashUtilsLib.webpackDashConfigDashUtilsLibStrings.NonEmptyObject with T
 }

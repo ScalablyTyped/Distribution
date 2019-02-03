@@ -63,7 +63,7 @@ abstract class AsymmetricKeyAlgorithmProvider () extends js.Object {
   ): CryptographicKey = js.native
 }
 
-/** Represents a provider of asymmetric (public) key algorithms. For more information, see Cryptographic keys. */
+/* static members */
 @JSGlobal("Windows.Security.Cryptography.Core.AsymmetricKeyAlgorithmProvider")
 @js.native
 object AsymmetricKeyAlgorithmProvider extends js.Object {

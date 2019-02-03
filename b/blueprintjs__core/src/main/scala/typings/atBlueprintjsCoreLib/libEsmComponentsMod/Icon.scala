@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Icon ()
   extends atBlueprintjsCoreLib.libEsmComponentsIconIconMod.Icon
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "Icon")
 @js.native
 object Icon extends js.Object {

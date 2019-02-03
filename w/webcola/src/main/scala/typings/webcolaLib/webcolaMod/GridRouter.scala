@@ -13,6 +13,7 @@ class GridRouter[Node] protected ()
   def this(originalnodes: js.Array[Node], accessor: webcolaLib.distSrcGridrouterMod.NodeAccessor[Node], groupPadding: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("webcola", "GridRouter")
 @js.native
 object GridRouter extends js.Object {

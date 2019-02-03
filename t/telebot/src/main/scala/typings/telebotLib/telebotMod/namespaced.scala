@@ -12,6 +12,7 @@ class namespaced protected () extends telebot {
   def this(config: telebotLib.telebotMod.telebotNs.config) = this()
 }
 
+/* static members */
 @JSImport("telebot", JSImport.Namespace)
 @js.native
 object namespaced extends js.Object {

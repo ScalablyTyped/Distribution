@@ -132,6 +132,7 @@ class Quill protected () extends EventEmitter {
   ): js.Any = js.native
 }
 
+/* static members */
 @JSImport("quill", "Quill")
 @js.native
 object Quill extends js.Object {

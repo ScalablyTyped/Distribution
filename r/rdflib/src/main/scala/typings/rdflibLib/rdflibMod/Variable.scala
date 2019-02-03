@@ -23,6 +23,7 @@ class Variable protected () extends Node {
   var uri: java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("rdflib", "Variable")
 @js.native
 object Variable extends js.Object {

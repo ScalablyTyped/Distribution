@@ -21,9 +21,7 @@ class BoundingBoxGizmo ()
   def this(color: babylonjsLib.BABYLONNs.Color3, gizmoLayer: babylonjsLib.BABYLONNs.UtilityLayerRenderer) = this()
 }
 
-/**
-  * Bounding box gizmo
-  */
+/* static members */
 @JSImport("babylonjs", "BoundingBoxGizmo")
 @js.native
 object BoundingBoxGizmo extends js.Object {

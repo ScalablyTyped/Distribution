@@ -168,9 +168,7 @@ class Directory protected () extends js.Object {
   def unlink(options: adoneLib.Anon_Delay): js.Promise[scala.Unit] = js.native
 }
 
-/**
-  * Represents a directory
-  */
+/* static members */
 @JSGlobal("adone.fs.Directory")
 @js.native
 object Directory extends js.Object {

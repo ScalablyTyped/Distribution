@@ -9,6 +9,7 @@ object angularDashGridsterLibStrings {
   @js.native
   sealed trait gridster extends js.Object
   
+  @scala.inline
   def gridster: gridster = "gridster".asInstanceOf[gridster]
 }
 

@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped new (args : ...any): react-native.react-native.NativeMethodsMixin */ @JSImport("react-native", "DrawerLayoutAndroid")
 @js.native
-class DrawerLayoutAndroid () extends js.Object {
+class DrawerLayoutAndroid ()
+  extends reactLib.reactMod.Component[DrawerLayoutAndroidProps, js.Object, js.Any] {
   /**
     * drawer's positions.
     */

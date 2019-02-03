@@ -12,7 +12,9 @@ object gapiDotClientDotVideointelligenceLibStrings {
   @js.native
   sealed trait videointelligence extends js.Object
   
+  @scala.inline
   def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  @scala.inline
   def videointelligence: videointelligence = "videointelligence".asInstanceOf[videointelligence]
 }
 

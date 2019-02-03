@@ -57,22 +57,39 @@ object jestLibStrings {
   @js.native
   sealed trait warn extends js.Object
   
+  @scala.inline
   def Matchers: Matchers = "Matchers".asInstanceOf[Matchers]
+  @scala.inline
   def Mocked: Mocked = "Mocked".asInstanceOf[Mocked]
+  @scala.inline
   def all: all = "all".asInstanceOf[all]
+  @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
+  @scala.inline
   def fake: fake = "fake".asInstanceOf[fake]
+  @scala.inline
   def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
+  @scala.inline
   def log: log = "log".asInstanceOf[log]
+  @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
+  @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
+  @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
+  @scala.inline
   def real: real = "real".asInstanceOf[real]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
+  @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
+  @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }
 

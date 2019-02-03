@@ -12,6 +12,7 @@ class TeachingBubbleBase protected ()
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsTeachingBubbleTeachingBubbleDotTypesMod.ITeachingBubbleProps) = this()
 }
 
+/* static members */
 @JSImport("office-ui-fabric-react", "TeachingBubbleBase")
 @js.native
 object TeachingBubbleBase extends js.Object {

@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class AppViewMode () extends js.Object
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/AppViewMode.html
-	 */
+/* static members */
 @JSGlobal("AppViewMode")
 @js.native
 object AppViewMode extends js.Object {

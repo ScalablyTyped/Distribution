@@ -35,6 +35,7 @@ class MultiViewCalendar protected () extends Widget {
   def view(): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("kendo.ui.MultiViewCalendar")
 @js.native
 object MultiViewCalendar extends js.Object {

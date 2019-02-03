@@ -42,7 +42,7 @@ abstract class DeviceInformationPairing () extends js.Object {
   def unpairAsync(): winrtDashUwpLib.WindowsNs.FoundationNs.IPromiseWithIAsyncOperation[DeviceUnpairingResult] = js.native
 }
 
-/** Contains information and enables pairing for a device. */
+/* static members */
 @JSGlobal("Windows.Devices.Enumeration.DeviceInformationPairing")
 @js.native
 object DeviceInformationPairing extends js.Object {

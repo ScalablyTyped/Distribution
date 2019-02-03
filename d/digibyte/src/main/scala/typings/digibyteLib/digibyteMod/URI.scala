@@ -14,6 +14,7 @@ class URI protected () extends js.Object {
   def toObject(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("digibyte", "URI")
 @js.native
 object URI extends js.Object {

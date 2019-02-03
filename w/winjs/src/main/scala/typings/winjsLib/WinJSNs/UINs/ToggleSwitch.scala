@@ -84,9 +84,7 @@ class ToggleSwitch () extends js.Object {
   def removeEventListener(eventName: java.lang.String, eventCallback: js.Function, useCapture: scala.Boolean): scala.Unit = js.native
 }
 
-/**
-  * A control that lets the user switch an option between two states: on (checked is set to true) and off (checked is set to false).
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.ToggleSwitch")
 @js.native
 object ToggleSwitch extends js.Object {

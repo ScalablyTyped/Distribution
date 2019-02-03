@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class SlowMo ()
   extends gsapLib.gsapNs.SlowMo
 
+/* static members */
 @JSImport("gsap", "SlowMo")
 @js.native
 object SlowMo extends js.Object {

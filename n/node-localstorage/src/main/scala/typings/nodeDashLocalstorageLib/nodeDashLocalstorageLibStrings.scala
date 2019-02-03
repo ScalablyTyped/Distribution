@@ -9,6 +9,7 @@ object nodeDashLocalstorageLibStrings {
   @js.native
   sealed trait storage extends js.Object
   
+  @scala.inline
   def storage: storage = "storage".asInstanceOf[storage]
 }
 

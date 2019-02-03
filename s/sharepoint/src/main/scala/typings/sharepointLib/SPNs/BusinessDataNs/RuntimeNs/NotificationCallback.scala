@@ -17,6 +17,7 @@ class NotificationCallback protected ()
   def set_notificationForwarderType(value: java.lang.String): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("SP.BusinessData.Runtime.NotificationCallback")
 @js.native
 object NotificationCallback extends js.Object {

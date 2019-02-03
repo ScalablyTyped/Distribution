@@ -12,7 +12,9 @@ object tweezerDotJsLibStrings {
   @js.native
   sealed trait tick extends js.Object
   
+  @scala.inline
   def done: done = "done".asInstanceOf[done]
+  @scala.inline
   def tick: tick = "tick".asInstanceOf[tick]
 }
 

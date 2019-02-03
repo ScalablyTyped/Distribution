@@ -20,6 +20,7 @@ class MetricAlarm protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.cloudwatchMetricAlarmMod.MetricAlarmArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloudwatch", "MetricAlarm")
 @js.native
 object MetricAlarm extends js.Object {

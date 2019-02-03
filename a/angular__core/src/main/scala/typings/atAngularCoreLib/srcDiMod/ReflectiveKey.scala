@@ -15,6 +15,7 @@ class ReflectiveKey protected ()
   def this(token: js.Object, id: scala.Double) = this()
 }
 
+/* static members */
 @JSImport("@angular/core/src/di", "ReflectiveKey")
 @js.native
 object ReflectiveKey extends js.Object {

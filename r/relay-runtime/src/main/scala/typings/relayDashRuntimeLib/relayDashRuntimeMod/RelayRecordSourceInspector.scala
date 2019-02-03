@@ -32,6 +32,7 @@ class RelayRecordSourceInspector protected () extends js.Object {
   def getRoot(): RecordInspector = js.native
 }
 
+/* static members */
 @JSImport("relay-runtime", "RelayRecordSourceInspector")
 @js.native
 object RelayRecordSourceInspector extends js.Object {

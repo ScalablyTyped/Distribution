@@ -18,6 +18,7 @@ class HtmlDataListAdapter ()
   /* private */ def removeElementRefAndRestoreToAdapter(childElement: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSGlobal("androidui.widget.HtmlDataListAdapter")
 @js.native
 object HtmlDataListAdapter extends js.Object {

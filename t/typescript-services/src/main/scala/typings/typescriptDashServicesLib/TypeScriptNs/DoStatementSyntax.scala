@@ -84,6 +84,7 @@ class DoStatementSyntax protected ()
   def withWhileKeyword(whileKeyword: ISyntaxToken): DoStatementSyntax = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.DoStatementSyntax")
 @js.native
 object DoStatementSyntax extends js.Object {

@@ -30,6 +30,7 @@ class PositionScroller protected ()
   def stop(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("android.widget.AbsListView.PositionScroller")
 @js.native
 object PositionScroller extends js.Object {

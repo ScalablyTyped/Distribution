@@ -1236,6 +1236,7 @@ object languagesNs extends js.Object {
       ] = js.native
   }
   
+  /* static members */
   @js.native
   object FoldingRangeKind extends js.Object {
     /**

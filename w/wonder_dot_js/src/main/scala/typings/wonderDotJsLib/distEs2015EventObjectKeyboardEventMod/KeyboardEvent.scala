@@ -20,6 +20,7 @@ class KeyboardEvent ()
   val shiftKey: scala.Double = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/event/object/KeyboardEvent", "KeyboardEvent")
 @js.native
 object KeyboardEvent extends js.Object {

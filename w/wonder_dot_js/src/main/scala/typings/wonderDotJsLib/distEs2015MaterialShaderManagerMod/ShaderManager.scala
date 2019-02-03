@@ -16,6 +16,7 @@ class ShaderManager protected () extends js.Object {
   def update(quadCmd: wonderDotJsLib.distEs2015RendererCommandQuadCommandMod.QuadCommand): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/material/ShaderManager", "ShaderManager")
 @js.native
 object ShaderManager extends js.Object {

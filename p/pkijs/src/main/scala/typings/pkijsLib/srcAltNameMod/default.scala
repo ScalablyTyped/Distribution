@@ -19,6 +19,7 @@ class default () extends AltName {
   override def toSchema(): js.Any = js.native
 }
 
+/* static members */
 @JSImport("pkijs/src/AltName", JSImport.Default)
 @js.native
 object default extends js.Object {

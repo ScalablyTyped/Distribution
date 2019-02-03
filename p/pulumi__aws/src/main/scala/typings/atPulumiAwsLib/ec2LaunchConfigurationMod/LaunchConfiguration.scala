@@ -104,6 +104,7 @@ class LaunchConfiguration protected ()
   val vpcClassicLinkSecurityGroups: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2/launchConfiguration", "LaunchConfiguration")
 @js.native
 object LaunchConfiguration extends js.Object {

@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
 class Notification[T] ()
   extends rxLib.rxMod.Notification[T]
 
-// Notifications
+/* static members */
 @JSImport("rx-dom", "Notification")
 @js.native
 object Notification extends js.Object {

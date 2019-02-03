@@ -20,6 +20,7 @@ class SslNegotiationPolicy protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.elasticloadbalancingSslNegotiationPolicyMod.SslNegotiationPolicyArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/elasticloadbalancing", "SslNegotiationPolicy")
 @js.native
 object SslNegotiationPolicy extends js.Object {

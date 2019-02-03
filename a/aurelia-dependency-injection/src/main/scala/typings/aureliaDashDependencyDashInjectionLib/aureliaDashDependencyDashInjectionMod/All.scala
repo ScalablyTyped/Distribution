@@ -21,6 +21,7 @@ class All protected () extends js.Object {
   def get(container: Container): js.Array[_] = js.native
 }
 
+/* static members */
 @JSImport("aurelia-dependency-injection", "All")
 @js.native
 object All extends js.Object {

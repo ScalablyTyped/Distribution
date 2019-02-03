@@ -13,6 +13,7 @@ class default protected () extends ReconnectingWebSocket {
   def this(url: java.lang.String, protocols: js.Array[java.lang.String], options: Options) = this()
 }
 
+/* static members */
 @JSImport("reconnectingwebsocket", JSImport.Default)
 @js.native
 object default extends js.Object {

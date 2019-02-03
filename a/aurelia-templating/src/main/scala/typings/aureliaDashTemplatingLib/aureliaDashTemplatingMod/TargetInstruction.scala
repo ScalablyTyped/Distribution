@@ -31,6 +31,7 @@ class TargetInstruction () extends js.Object {
   var viewFactory: ViewFactory = js.native
 }
 
+/* static members */
 @JSImport("aurelia-templating", "TargetInstruction")
 @js.native
 object TargetInstruction extends js.Object {

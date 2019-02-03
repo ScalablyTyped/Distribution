@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class MarkedLinksPlugin ()
   extends typedocLib.distLibOutputPluginsMarkedLinksPluginMod.MarkedLinksPlugin
 
+/* static members */
 @JSImport("typedoc/dist/lib/output/plugins", "MarkedLinksPlugin")
 @js.native
 object MarkedLinksPlugin extends js.Object {

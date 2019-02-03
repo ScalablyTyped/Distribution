@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Circ ()
   extends gsapLib.gsapNs.Circ
 
+/* static members */
 @JSImport("gsap", "Circ")
 @js.native
 object Circ extends js.Object {

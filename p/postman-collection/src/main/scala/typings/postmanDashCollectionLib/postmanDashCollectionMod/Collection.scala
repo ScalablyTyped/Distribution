@@ -23,6 +23,7 @@ class Collection () extends ItemGroup[Request] {
   def syncVariablesTo(obj: org.scalablytyped.runtime.StringDictionary[VariableDefinition]): org.scalablytyped.runtime.StringDictionary[VariableDefinition] = js.native
 }
 
+/* static members */
 @JSImport("postman-collection", "Collection")
 @js.native
 object Collection extends js.Object {

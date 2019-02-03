@@ -66,6 +66,7 @@ class LabeledStatementSyntax protected ()
   override def withTrailingTrivia(trailingTrivia: ISyntaxTriviaList): ISyntaxNodeOrToken = js.native
 }
 
+/* static members */
 @JSGlobal("TypeScript.LabeledStatementSyntax")
 @js.native
 object LabeledStatementSyntax extends js.Object {

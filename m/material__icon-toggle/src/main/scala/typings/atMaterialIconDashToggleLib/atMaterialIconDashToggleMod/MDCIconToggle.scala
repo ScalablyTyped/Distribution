@@ -18,6 +18,7 @@ class MDCIconToggle ()
   def refreshToggleData(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("@material/icon-toggle", "MDCIconToggle")
 @js.native
 object MDCIconToggle extends js.Object {

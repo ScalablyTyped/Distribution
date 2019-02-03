@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class RcsManager () extends js.Object
 
-/** Provides access to APIs for handling Rich Communication Services (RCS) messages. */
+/* static members */
 @JSGlobal("Windows.ApplicationModel.Chat.RcsManager")
 @js.native
 object RcsManager extends js.Object {

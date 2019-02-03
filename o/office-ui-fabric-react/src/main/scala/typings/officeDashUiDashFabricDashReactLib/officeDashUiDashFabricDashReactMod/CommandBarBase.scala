@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class CommandBarBase ()
   extends officeDashUiDashFabricDashReactLib.libCommandBarMod.CommandBarBase
 
+/* static members */
 @JSImport("office-ui-fabric-react", "CommandBarBase")
 @js.native
 object CommandBarBase extends js.Object {

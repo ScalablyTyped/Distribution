@@ -44,6 +44,7 @@ class Duration () extends js.Object {
   def toObject(options: luxonLib.Anon_IncludeConfig): DurationObject = js.native
 }
 
+/* static members */
 @JSImport("luxon", "Duration")
 @js.native
 object Duration extends js.Object {

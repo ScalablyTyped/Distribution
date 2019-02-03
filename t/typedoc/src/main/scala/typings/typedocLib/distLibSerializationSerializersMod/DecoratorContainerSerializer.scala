@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class DecoratorContainerSerializer ()
   extends typedocLib.distLibSerializationSerializersDecoratorMod.DecoratorContainerSerializer
 
+/* static members */
 @JSImport("typedoc/dist/lib/serialization/serializers", "DecoratorContainerSerializer")
 @js.native
 object DecoratorContainerSerializer extends js.Object {

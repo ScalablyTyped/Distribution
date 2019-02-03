@@ -11,6 +11,7 @@ class default protected () extends Sider {
   def this(props: SiderProps) = this()
 }
 
+/* static members */
 @JSImport("antd/lib/layout/Sider", JSImport.Default)
 @js.native
 object default extends js.Object {

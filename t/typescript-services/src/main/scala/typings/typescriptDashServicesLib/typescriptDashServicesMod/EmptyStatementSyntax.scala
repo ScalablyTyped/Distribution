@@ -12,6 +12,7 @@ class EmptyStatementSyntax protected ()
   def this(semicolonToken: typescriptDashServicesLib.TypeScriptNs.ISyntaxToken, parsedInStrictMode: scala.Boolean) = this()
 }
 
+/* static members */
 @JSImport("typescript-services", "EmptyStatementSyntax")
 @js.native
 object EmptyStatementSyntax extends js.Object {

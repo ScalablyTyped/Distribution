@@ -48,6 +48,7 @@ class Webhook protected ()
   val url: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/codepipeline/webhook", "Webhook")
 @js.native
 object Webhook extends js.Object {

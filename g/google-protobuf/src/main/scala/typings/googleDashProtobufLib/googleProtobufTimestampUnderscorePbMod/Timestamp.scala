@@ -17,6 +17,7 @@ class Timestamp ()
   def toDate(): stdLib.Date = js.native
 }
 
+/* static members */
 @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp")
 @js.native
 object Timestamp extends js.Object {

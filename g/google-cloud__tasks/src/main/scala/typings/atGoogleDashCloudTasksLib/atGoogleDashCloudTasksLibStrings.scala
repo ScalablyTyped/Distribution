@@ -27,12 +27,19 @@ object atGoogleDashCloudTasksLibStrings {
   @js.native
   sealed trait retryConfig extends js.Object
   
+  @scala.inline
   def CreateNamedRequest: CreateNamedRequest = "CreateNamedRequest".asInstanceOf[CreateNamedRequest]
+  @scala.inline
   def UpdateNamedRequest: UpdateNamedRequest = "UpdateNamedRequest".asInstanceOf[UpdateNamedRequest]
+  @scala.inline
   def appEngineHttpQueue: appEngineHttpQueue = "appEngineHttpQueue".asInstanceOf[appEngineHttpQueue]
+  @scala.inline
   def name: name = "name".asInstanceOf[name]
+  @scala.inline
   def queue: queue = "queue".asInstanceOf[queue]
+  @scala.inline
   def rateLimits: rateLimits = "rateLimits".asInstanceOf[rateLimits]
+  @scala.inline
   def retryConfig: retryConfig = "retryConfig".asInstanceOf[retryConfig]
 }
 

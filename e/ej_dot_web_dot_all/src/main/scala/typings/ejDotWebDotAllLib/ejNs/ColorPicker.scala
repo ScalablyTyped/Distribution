@@ -61,6 +61,7 @@ class ColorPicker protected () extends Widget {
   def show(): scala.Unit = js.native
 }
 
+/* static members */
 @JSGlobal("ej.ColorPicker")
 @js.native
 object ColorPicker extends js.Object {

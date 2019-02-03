@@ -48,11 +48,7 @@ class ConvolutionPostProcess protected () extends PostProcess {
   var kernel: js.Array[scala.Double] = js.native
 }
 
-/**
-  * The ConvolutionPostProcess applies a 3x3 kernel to every pixel of the
-  * input texture to perform effects such as edge detection or sharpening
-  * See http://en.wikipedia.org/wiki/Kernel_(image_processing)
-  */
+/* static members */
 @JSGlobal("BABYLON.ConvolutionPostProcess")
 @js.native
 object ConvolutionPostProcess extends js.Object {

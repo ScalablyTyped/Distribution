@@ -114,7 +114,7 @@ abstract class ProximityDevice () extends js.Object {
   def subscribeForMessage(messageType: java.lang.String, messageReceivedHandler: MessageReceivedHandler): scala.Double = js.native
 }
 
-/** Enables you to publish messages to proximate devices or subscribe to messages from proximate devices. */
+/* static members */
 @JSGlobal("Windows.Networking.Proximity.ProximityDevice")
 @js.native
 object ProximityDevice extends js.Object {

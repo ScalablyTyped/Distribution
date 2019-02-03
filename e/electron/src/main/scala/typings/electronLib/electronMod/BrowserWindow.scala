@@ -12,6 +12,7 @@ class BrowserWindow ()
   def this(options: electronLib.ElectronNs.BrowserWindowConstructorOptions) = this()
 }
 
+/* static members */
 @JSImport("electron", "BrowserWindow")
 @js.native
 object BrowserWindow extends js.Object {

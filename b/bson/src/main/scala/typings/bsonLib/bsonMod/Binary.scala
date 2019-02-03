@@ -32,6 +32,7 @@ class Binary protected () extends js.Object {
   def write(buffer: nodeLib.Buffer, offset: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("bson", "Binary")
 @js.native
 object Binary extends js.Object {

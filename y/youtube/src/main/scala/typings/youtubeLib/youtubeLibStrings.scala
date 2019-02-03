@@ -60,23 +60,41 @@ object youtubeLibStrings {
   @js.native
   sealed trait white extends js.Object
   
+  @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
   def hd1080: hd1080 = "hd1080".asInstanceOf[hd1080]
+  @scala.inline
   def hd720: hd720 = "hd720".asInstanceOf[hd720]
+  @scala.inline
   def highres: highres = "highres".asInstanceOf[highres]
+  @scala.inline
   def large: large = "large".asInstanceOf[large]
+  @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
+  @scala.inline
   def onApiChange: onApiChange = "onApiChange".asInstanceOf[onApiChange]
+  @scala.inline
   def onError: onError = "onError".asInstanceOf[onError]
+  @scala.inline
   def onPlaybackQualityChange: onPlaybackQualityChange = "onPlaybackQualityChange".asInstanceOf[onPlaybackQualityChange]
+  @scala.inline
   def onPlaybackRateChange: onPlaybackRateChange = "onPlaybackRateChange".asInstanceOf[onPlaybackRateChange]
+  @scala.inline
   def onReady: onReady = "onReady".asInstanceOf[onReady]
+  @scala.inline
   def onStateChange: onStateChange = "onStateChange".asInstanceOf[onStateChange]
+  @scala.inline
   def player: player = "player".asInstanceOf[player]
+  @scala.inline
   def red: red = "red".asInstanceOf[red]
+  @scala.inline
   def search: search = "search".asInstanceOf[search]
+  @scala.inline
   def small: small = "small".asInstanceOf[small]
+  @scala.inline
   def user_uploads: user_uploads = "user_uploads".asInstanceOf[user_uploads]
+  @scala.inline
   def white: white = "white".asInstanceOf[white]
 }
 

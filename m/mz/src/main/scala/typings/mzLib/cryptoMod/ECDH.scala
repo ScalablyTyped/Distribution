@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ECDH ()
   extends nodeLib.cryptoMod.ECDH
 
+/* static members */
 @JSImport("mz/crypto", "ECDH")
 @js.native
 object ECDH extends js.Object {

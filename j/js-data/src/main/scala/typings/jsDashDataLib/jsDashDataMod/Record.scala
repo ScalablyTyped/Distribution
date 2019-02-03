@@ -49,6 +49,7 @@ class Record () extends Component {
   def validate(opts: js.Any): js.Any = js.native
 }
 
+/* static members */
 @JSImport("js-data", "Record")
 @js.native
 object Record extends js.Object {

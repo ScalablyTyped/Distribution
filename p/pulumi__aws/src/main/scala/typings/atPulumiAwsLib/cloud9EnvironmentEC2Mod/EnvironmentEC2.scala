@@ -52,6 +52,7 @@ class EnvironmentEC2 protected ()
   val `type`: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 
+/* static members */
 @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2")
 @js.native
 object EnvironmentEC2 extends js.Object {

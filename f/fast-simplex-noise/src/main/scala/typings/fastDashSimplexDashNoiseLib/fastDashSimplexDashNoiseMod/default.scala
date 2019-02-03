@@ -57,6 +57,7 @@ class default () extends FastSimplexNoise {
   override def spherical3D(circumference: scala.Double, x: scala.Double, y: scala.Double, z: scala.Double): scala.Double = js.native
 }
 
+/* static members */
 @JSImport("fast-simplex-noise", JSImport.Default)
 @js.native
 object default extends js.Object {

@@ -20,6 +20,7 @@ class VpcAttachment protected ()
   def this(name: java.lang.String, args: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
+/* static members */
 @JSImport("@pulumi/aws/ec2transitgateway", "VpcAttachment")
 @js.native
 object VpcAttachment extends js.Object {

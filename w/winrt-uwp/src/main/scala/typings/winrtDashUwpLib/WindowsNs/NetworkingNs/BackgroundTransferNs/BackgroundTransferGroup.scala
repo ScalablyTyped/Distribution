@@ -15,7 +15,7 @@ abstract class BackgroundTransferGroup () extends js.Object {
   var transferBehavior: BackgroundTransferBehavior = js.native
 }
 
-/** A named group used to associate multiple download or upload operations. This class makes it easy for your app to create these groups and to complete downloads and uploads simultaneously, in serial, or based on priority. */
+/* static members */
 @JSGlobal("Windows.Networking.BackgroundTransfer.BackgroundTransferGroup")
 @js.native
 object BackgroundTransferGroup extends js.Object {

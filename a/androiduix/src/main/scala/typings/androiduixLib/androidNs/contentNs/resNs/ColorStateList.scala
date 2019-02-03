@@ -18,6 +18,7 @@ class ColorStateList protected () extends js.Object {
   def withAlpha(alpha: scala.Double): ColorStateList = js.native
 }
 
+/* static members */
 @JSGlobal("android.content.res.ColorStateList")
 @js.native
 object ColorStateList extends js.Object {

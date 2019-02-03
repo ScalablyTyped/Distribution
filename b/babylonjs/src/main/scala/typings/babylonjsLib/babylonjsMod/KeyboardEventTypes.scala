@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation._
 class KeyboardEventTypes ()
   extends babylonjsLib.BABYLONNs.KeyboardEventTypes
 
-/**
-  * Gather the list of keyboard event types as constants.
-  */
+/* static members */
 @JSImport("babylonjs", "KeyboardEventTypes")
 @js.native
 object KeyboardEventTypes extends js.Object {

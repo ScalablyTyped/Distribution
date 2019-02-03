@@ -123,9 +123,7 @@ class FlipView[T] () extends js.Object {
   def setCustomAnimations(animations: js.Any): scala.Unit = js.native
 }
 
-/**
-  * Displays a collection, such as a set of photos, one item at a time.
-  **/
+/* static members */
 @JSGlobal("WinJS.UI.FlipView")
 @js.native
 object FlipView extends js.Object {

@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Proxy () extends js.Object
 
+/* static members */
 @JSImport("nodegit/proxy", "Proxy")
 @js.native
 object Proxy extends js.Object {

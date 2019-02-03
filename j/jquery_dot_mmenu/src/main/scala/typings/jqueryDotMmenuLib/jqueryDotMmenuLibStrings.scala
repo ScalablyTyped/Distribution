@@ -30,13 +30,21 @@ object jqueryDotMmenuLibStrings {
   @js.native
   sealed trait update extends js.Object
   
+  @scala.inline
   def closeAllPanels: closeAllPanels = "closeAllPanels".asInstanceOf[closeAllPanels]
+  @scala.inline
   def closePanel: closePanel = "closePanel".asInstanceOf[closePanel]
+  @scala.inline
   def getInstance: getInstance = "getInstance".asInstanceOf[getInstance]
+  @scala.inline
   def init: init = "init".asInstanceOf[init]
+  @scala.inline
   def mmenu: mmenu = "mmenu".asInstanceOf[mmenu]
+  @scala.inline
   def openPanel: openPanel = "openPanel".asInstanceOf[openPanel]
+  @scala.inline
   def setSelected: setSelected = "setSelected".asInstanceOf[setSelected]
+  @scala.inline
   def update: update = "update".asInstanceOf[update]
 }
 

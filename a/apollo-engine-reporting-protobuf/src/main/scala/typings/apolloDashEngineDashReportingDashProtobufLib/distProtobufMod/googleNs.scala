@@ -41,7 +41,7 @@ object googleNs extends js.Object {
       def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
     }
     
-    /** Represents a Timestamp. */
+    /* static members */
     @js.native
     object Timestamp extends js.Object {
       /**

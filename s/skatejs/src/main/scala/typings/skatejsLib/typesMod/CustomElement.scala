@@ -40,6 +40,7 @@ class CustomElement ()
   def disconnectedCallback(): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("skatejs/types", "CustomElement")
 @js.native
 object CustomElement extends js.Object {

@@ -103,6 +103,7 @@ class Rectangle[X, Y] ()
   def y2(y2: scala.Double, postScale: plottableLib.buildSrcCoreInterfacesMod.IRangeProjector[scala.Double]): this.type = js.native
 }
 
+/* static members */
 @JSImport("plottable/build/src/plots/rectanglePlot", "Rectangle")
 @js.native
 object Rectangle extends js.Object {

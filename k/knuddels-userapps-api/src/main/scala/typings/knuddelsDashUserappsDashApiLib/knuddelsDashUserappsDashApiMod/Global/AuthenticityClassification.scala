@@ -18,9 +18,7 @@ class AuthenticityClassification () extends js.Object {
   def getDisplayText(): java.lang.String = js.native
 }
 
-/**
-	 * @see https://developer.knuddels.de/docs/classes/AuthenticityClassification.html
-	 */
+/* static members */
 @JSGlobal("AuthenticityClassification")
 @js.native
 object AuthenticityClassification extends js.Object {

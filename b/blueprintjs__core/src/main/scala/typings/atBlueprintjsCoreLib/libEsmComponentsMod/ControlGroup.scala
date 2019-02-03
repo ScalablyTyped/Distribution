@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class ControlGroup ()
   extends atBlueprintjsCoreLib.libEsmComponentsFormsControlGroupMod.ControlGroup
 
+/* static members */
 @JSImport("@blueprintjs/core/lib/esm/components", "ControlGroup")
 @js.native
 object ControlGroup extends js.Object {

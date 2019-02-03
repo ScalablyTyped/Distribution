@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class MotionGuidePlugin () extends js.Object
 
+/* static members */
 @JSGlobal("createjs.MotionGuidePlugin")
 @js.native
 object MotionGuidePlugin extends js.Object {

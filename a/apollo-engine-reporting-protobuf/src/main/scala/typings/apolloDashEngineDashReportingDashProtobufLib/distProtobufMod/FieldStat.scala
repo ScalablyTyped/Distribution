@@ -38,6 +38,7 @@ class FieldStat () extends IFieldStat {
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
+/* static members */
 @JSImport("apollo-engine-reporting-protobuf/dist/protobuf", "FieldStat")
 @js.native
 object FieldStat extends js.Object {

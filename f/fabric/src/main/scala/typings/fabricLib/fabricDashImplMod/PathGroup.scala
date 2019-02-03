@@ -35,6 +35,7 @@ class PathGroup protected () extends Object {
   def toSVG(reviver: js.Function): java.lang.String = js.native
 }
 
+/* static members */
 @JSImport("fabric/fabric-impl", "PathGroup")
 @js.native
 object PathGroup extends js.Object {

@@ -61,9 +61,7 @@ class KiiACLEntry () extends js.Object {
   def setSubject(subject: KiiACLSubject): scala.Unit = js.native
 }
 
-/**
-  * Represents a KiiACLEntry object
-  */
+/* static members */
 @JSGlobal("KiiCloud.KiiACLEntry")
 @js.native
 object KiiACLEntry extends js.Object {

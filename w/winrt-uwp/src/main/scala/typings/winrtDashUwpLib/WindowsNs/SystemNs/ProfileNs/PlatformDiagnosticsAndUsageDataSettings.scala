@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class PlatformDiagnosticsAndUsageDataSettings () extends js.Object
 
+/* static members */
 @JSGlobal("Windows.System.Profile.PlatformDiagnosticsAndUsageDataSettings")
 @js.native
 object PlatformDiagnosticsAndUsageDataSettings extends js.Object {

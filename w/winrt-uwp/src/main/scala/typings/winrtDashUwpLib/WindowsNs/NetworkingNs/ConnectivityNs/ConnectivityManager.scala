@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 @js.native
 abstract class ConnectivityManager () extends js.Object
 
-/** Methods defined by the ConnectivityManager class enable enforcement of traffic routing on a specific network adapter for the specified destination suffix. Once a policy is set using AddHttpRoutePolicy , traffic that matches the policy will either be routed or dropped. */
+/* static members */
 @JSGlobal("Windows.Networking.Connectivity.ConnectivityManager")
 @js.native
 object ConnectivityManager extends js.Object {

@@ -16,6 +16,7 @@ class DirectorTimeController ()
   def tick(time: scala.Double): scala.Unit = js.native
 }
 
+/* static members */
 @JSImport("wonder.js/dist/es2015/utils/time/DirectorTimeController", "DirectorTimeController")
 @js.native
 object DirectorTimeController extends js.Object {
