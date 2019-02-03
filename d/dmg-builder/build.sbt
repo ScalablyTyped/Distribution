@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "dmg-builder"
-version := "6.5.4-5184d8"
+version := "6.5.4-e5d9a0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "7zip-bin" % "4.1.0-3f59da",
-  "org.scalablytyped" %%% "ajv" % "6.7.0-9e8624",
+  "org.scalablytyped" %%% "ajv" % "6.8.1-9e8624",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-21090e",
   "org.scalablytyped" %%% "app-builder-bin" % "2.6.3-838f48",
-  "org.scalablytyped" %%% "app-builder-lib" % "20.38.5-b3f181",
+  "org.scalablytyped" %%% "app-builder-lib" % "20.38.5-2b8bfe",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-ef7d03",
   "org.scalablytyped" %%% "bluebird-lst" % "1.0.6-053f79",
   "org.scalablytyped" %%% "builder-util" % "9.6.2-9114ea",
@@ -43,7 +43,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "normalize-package-data" % "2.4-dt-20180214Z-de7b50",
   "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-ba2dd2",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-82f2e3",
-  "org.scalablytyped" %%% "read-config-file" % "3.2.1-b75463",
+  "org.scalablytyped" %%% "read-config-file" % "3.2.1-41d6be",
   "org.scalablytyped" %%% "sanitize-filename" % "v1.1.1-dt-20180214Z-bc1cab",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-fdcda0",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-45dbbd",

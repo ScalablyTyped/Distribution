@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait OnHeadersReceivedResponse extends js.Object {
-  var cancel: scala.Boolean
+  var cancel: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * When provided, the server is assumed to have responded with these headers.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cross-fetch"
-version := "3.0.0-eae525"
+version := "3.0.1-eae525"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

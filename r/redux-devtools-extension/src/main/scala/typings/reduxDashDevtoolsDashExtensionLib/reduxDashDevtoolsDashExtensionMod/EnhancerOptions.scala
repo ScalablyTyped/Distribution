@@ -119,5 +119,16 @@ trait EnhancerOptions extends js.Object {
     * function which takes `state` object and index as arguments, and should return `state` object back.
     */
   var stateSanitizer: js.UndefOr[js.Function2[/* state */ js.Any, /* index */ scala.Double, _]] = js.undefined
+  /**
+    * Set to true or a stacktrace-returning function to record call stack traces for dispatched actions.
+    * Defaults to false.
+    */
+  var trace: js.UndefOr[
+    scala.Boolean | (js.Function1[/* action */ reduxLib.reduxMod.Action[_], java.lang.String])
+  ] = js.undefined
+  /**
+    * The maximum number of stack trace entries to record per action. Defaults to 10.
+    */
+  var traceLimit: js.UndefOr[scala.Double] = js.undefined
 }
 

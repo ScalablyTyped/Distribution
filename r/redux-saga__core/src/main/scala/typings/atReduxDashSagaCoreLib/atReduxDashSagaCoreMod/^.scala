@@ -21,11 +21,6 @@ object ^ extends js.Object {
     subscribe: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.Subscribe[T],
     buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T]
   ): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.EventChannel[T] = js.native
-  def eventChannel[T](
-    subscribe: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.Subscribe[T],
-    buffer: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Buffer[T],
-    matcher: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Predicate[T]
-  ): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.EventChannel[T] = js.native
   def multicastChannel[T](): atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.MulticastChannel[T] = js.native
   def runSaga[Action, State, S /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Saga[js.Array[_]] */](
     options: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.RunSagaOptions[Action, State],

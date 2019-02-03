@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "spotify-web-api-js"
-version := "1.1.1-43481c"
+version := "1.2.0-2b7804"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -151,14 +151,17 @@ trait SpotifyWebApiJs extends js.Object {
     * See [Create a Playlist](https://developer.spotify.com/web-api/create-playlist/) on
     * the Spotify Developer site for more information about the endpoint.
     *
+    * @param {string} userId The id of the user. If you know the Spotify URI it is easy
+    * to find the id (e.g. spotify:user:<here_is_the_id>)
     * @param {Object} options A JSON object with options that can be passed
     * @param {function(Object,Object)} callback An optional callback that receives 2 parameters. The first
     * one is the error object (null if no error), and the second is the value if the request succeeded.
     * @return {Object} Null if a callback is provided, a `Promise` object otherwise
     */
-  def createPlaylist(): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
-  def createPlaylist(options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
+  def createPlaylist(userId: java.lang.String): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
+  def createPlaylist(userId: java.lang.String, options: js.Object): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
   def createPlaylist(
+    userId: java.lang.String,
     options: js.Object,
     callback: ResultsCallback[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse]
   ): js.Promise[spotifyDashWebDashApiDashJsLib.SpotifyApiNs.CreatePlaylistResponse] = js.native
@@ -877,9 +880,9 @@ trait SpotifyWebApiJs extends js.Object {
     */
   def play(): js.Promise[scala.Unit] = js.native
   def play(callback: VoidResultsCallback): scala.Unit = js.native
-  def play(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject): js.Promise[scala.Unit] = js.native
+  def play(options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlayParameterObject): js.Promise[scala.Unit] = js.native
   def play(
-    options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.DeviceSpecificParameterObject,
+    options: spotifyDashWebDashApiDashJsLib.SpotifyApiNs.PlayParameterObject,
     callback: VoidResultsCallback
   ): scala.Unit = js.native
   /**

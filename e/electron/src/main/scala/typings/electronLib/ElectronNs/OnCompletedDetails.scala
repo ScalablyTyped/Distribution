@@ -9,6 +9,7 @@ trait OnCompletedDetails extends js.Object {
   var fromCache: scala.Boolean
   var id: scala.Double
   var method: java.lang.String
+  var referrer: java.lang.String
   var resourceType: java.lang.String
   var responseHeaders: ResponseHeaders
   var statusCode: scala.Double
