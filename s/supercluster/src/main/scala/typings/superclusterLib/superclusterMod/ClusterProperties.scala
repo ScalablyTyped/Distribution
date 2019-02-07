@@ -5,12 +5,22 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ClusterProperties
-  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
-  var cluster: js.UndefOr[scala.Boolean] = js.undefined
-  var cluster_id: js.UndefOr[scala.Double] = js.undefined
-  var point_count: js.UndefOr[scala.Double] = js.undefined
-  var point_count_abbreviated: js.UndefOr[scala.Double] = js.undefined
-  var sum: js.UndefOr[scala.Double] = js.undefined
+trait ClusterProperties extends js.Object {
+  /**
+    * Always `true` to indicate that the Feature is a Cluster and not
+    * an individual point.
+    */
+  var cluster: superclusterLib.superclusterLibNumbers.`true`
+  /** Cluster ID */
+  var cluster_id: scala.Double
+  /** Number of points in the cluster. */
+  var point_count: scala.Double
+  /**
+    * Abbreviated number of points in the cluster as string if the number
+    * is 1000 or greater (e.g. `1.3k` if the number is 1298).
+    *
+    * For less than 1000 points it is the same value as `point_count`.
+    */
+  var point_count_abbreviated: java.lang.String | scala.Double
 }
 

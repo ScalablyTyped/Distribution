@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soap"
-version := "0.25.0-89b649"
+version := "0.25.0-f5d35e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,12 +15,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "finalhandler" % "0.0-unknown-dt-20180924Z-4d14d9",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-c97100",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-45605c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-277b25",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-316df6",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-cb5d09",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-4c4e34",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "strip-bom" % "3.0-dt-20180214Z-8c4225",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",

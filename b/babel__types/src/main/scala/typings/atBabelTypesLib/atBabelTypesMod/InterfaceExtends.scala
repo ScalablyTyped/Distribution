@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait InterfaceExtends extends BaseNode {
-  var id: Identifier
+  var id: Identifier | QualifiedTypeIdentifier
   var typeParameters: TypeParameterInstantiation | scala.Null
   @JSName("type")
   var type_InterfaceExtends: atBabelTypesLib.atBabelTypesLibStrings.InterfaceExtends

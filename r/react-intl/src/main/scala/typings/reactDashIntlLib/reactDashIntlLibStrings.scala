@@ -7,6 +7,9 @@ import scala.scalajs.js.annotation._
 
 object reactDashIntlLibStrings {
   @js.native
+  sealed trait Messages extends js.Object
+  
+  @js.native
   sealed trait `best-fit` extends js.Object
   
   @js.native
@@ -57,6 +60,8 @@ object reactDashIntlLibStrings {
   @js.native
   sealed trait zero extends js.Object
   
+  @scala.inline
+  def Messages: Messages = "Messages".asInstanceOf[Messages]
   @scala.inline
   def `best-fit`: `best-fit` = "best-fit".asInstanceOf[`best-fit`]
   @scala.inline

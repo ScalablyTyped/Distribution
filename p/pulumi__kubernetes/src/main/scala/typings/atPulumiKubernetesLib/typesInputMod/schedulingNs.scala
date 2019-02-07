@@ -81,7 +81,7 @@ object schedulingNs extends js.Object {
       /**
         * items is the list of PriorityClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PriorityClass]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PriorityClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -177,7 +177,7 @@ object schedulingNs extends js.Object {
       /**
         * items is the list of PriorityClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PriorityClass]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PriorityClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In

@@ -11,7 +11,9 @@ trait IGroupDividerProps extends js.Object {
   /** Boolean value to indicate if the component should render in compact mode. Set to false by default */
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[js.Object]] = js.undefined
-  /** Props for expand/collapse button */
+  /** Props for expand/collapse button
+    * @deprecated Use {@link IGroupHeaderProps.expandButtonProps} instead.
+    */
   var expandButtonProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement]] = js.undefined
   /** Text to display for the group footer. */
   var footerText: js.UndefOr[java.lang.String] = js.undefined

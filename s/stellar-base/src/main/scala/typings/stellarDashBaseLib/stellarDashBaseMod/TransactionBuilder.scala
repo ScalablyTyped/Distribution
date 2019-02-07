@@ -13,5 +13,6 @@ class TransactionBuilder protected () extends js.Object {
   def addMemo(memo: Memo[MemoType]): this.type = js.native
   def addOperation(operation: Operation): this.type = js.native
   def build(): Transaction[Memo[MemoType], js.Array[Operation]] = js.native
+  def setTimeout(timeoutInSeconds: scala.Double): this.type = js.native
 }
 

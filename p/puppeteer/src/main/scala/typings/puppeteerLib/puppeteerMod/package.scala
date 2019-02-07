@@ -11,6 +11,7 @@ package object puppeteerMod {
   type DialogType = puppeteerLib.puppeteerLibStrings.alert | puppeteerLib.puppeteerLibStrings.beforeunload | puppeteerLib.puppeteerLibStrings.confirm | puppeteerLib.puppeteerLibStrings.prompt
   type ErrorCode = puppeteerLib.puppeteerLibStrings.aborted | puppeteerLib.puppeteerLibStrings.accessdenied | puppeteerLib.puppeteerLibStrings.addressunreachable | puppeteerLib.puppeteerLibStrings.blockedbyclient | puppeteerLib.puppeteerLibStrings.blockedbyresponse | puppeteerLib.puppeteerLibStrings.connectionaborted | puppeteerLib.puppeteerLibStrings.connectionclosed | puppeteerLib.puppeteerLibStrings.connectionfailed | puppeteerLib.puppeteerLibStrings.connectionrefused | puppeteerLib.puppeteerLibStrings.connectionreset | puppeteerLib.puppeteerLibStrings.internetdisconnected | puppeteerLib.puppeteerLibStrings.namenotresolved | puppeteerLib.puppeteerLibStrings.timedout | puppeteerLib.puppeteerLibStrings.failed
   type EvaluateFn = java.lang.String | (js.Function1[/* repeated */ js.Any, js.Any])
+  type EvaluateFnReturnType[T /* <: EvaluateFn */] = js.Any
   type Headers = stdLib.Record[java.lang.String, java.lang.String]
   type HttpMethod = puppeteerLib.puppeteerLibStrings.GET | puppeteerLib.puppeteerLibStrings.POST | puppeteerLib.puppeteerLibStrings.PATCH | puppeteerLib.puppeteerLibStrings.PUT | puppeteerLib.puppeteerLibStrings.DELETE | puppeteerLib.puppeteerLibStrings.OPTIONS
   type LayoutDimension = java.lang.String | scala.Double

@@ -170,7 +170,7 @@ object EC2Ns extends js.Object {
   
   trait AdvertiseByoipCidrRequest extends js.Object {
     /**
-      * The IPv4 address range, in CIDR notation.
+      * The IPv4 address range, in CIDR notation. This must be the exact range that you provisioned. You can't advertise only a portion of the provisioned range.
       */
     var Cidr: String
     /**
@@ -811,7 +811,7 @@ object EC2Ns extends js.Object {
       */
     var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
     /**
-      * [EC2-Classic] The AWS account ID for the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. Creates rules that grant full ICMP, UDP, and TCP access. To create a rule with a specific IP protocol and port range, use a set of IP permissions instead.
+      * [nondefault VPC] The AWS account ID for the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. Creates rules that grant full ICMP, UDP, and TCP access. To create a rule with a specific IP protocol and port range, use a set of IP permissions instead.
       */
     var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
     /**
@@ -3022,11 +3022,11 @@ object EC2Ns extends js.Object {
       */
     var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
-      * The size of the volume, in GiBs. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.
+      * The size of the volume, in GiBs. Constraints: 1-16,384 for gp2, 4-16,384 for io1, 500-16,384 for st1, 500-16,384 for sc1, and 1-1,024 for standard. If you specify a snapshot, the volume size must be equal to or larger than the snapshot size. Default: If you're creating the volume from a snapshot and don't specify a volume size, the default is the snapshot size.  At least one of Size or SnapshotId are required. 
       */
     var Size: js.UndefOr[Integer] = js.undefined
     /**
-      * The snapshot from which to create the volume.
+      * The snapshot from which to create the volume.  At least one of Size or SnapshotId are required. 
       */
     var SnapshotId: js.UndefOr[String] = js.undefined
     /**
@@ -4061,7 +4061,7 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
-      * [EC2-Classic] One or more Elastic IP addresses. Default: Describes all your Elastic IP addresses.
+      * One or more Elastic IP addresses. Default: Describes all your Elastic IP addresses.
       */
     var PublicIps: js.UndefOr[PublicIpStringList] = js.undefined
   }
@@ -6355,7 +6355,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    association.transit-gateway-route-table-id - The ID of the route table for the transit gateway.    association.state - The state of the association (associating | associated | disassociating).    resource-id - The ID of the resource.    resource-owner - The ID of the AWS account that owns the resource.    resource-type - The resource type (vpc | vpn).    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-owner - The ID of the AWS account that owns the transit gateway.  
+      * One or more filters. The possible values are:    association.state - The state of the association (associating | associated | disassociating).    association.transit-gateway-route-table-id - The ID of the route table for the transit gateway.    resource-id - The ID of the resource.    resource-owner-id - The ID of the AWS account that owns the resource.    resource-type - The resource type (vpc | vpn).    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    transit-gateway-owner-id - The ID of the AWS account that owns the transit gateway.  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6389,7 +6389,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    default-association-route-table - Indicates whether this is the default association route table for the transit gateway (true | false).    default-propagation-route-table - Indicates whether this is the default propagation route table for the transit gateway (true | false).    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-id - The ID of the transit gateway.    transit-gateway-route-table-id - The ID of the transit gateway route table.  
+      * One or more filters. The possible values are:    default-association-route-table - Indicates whether this is the default association route table for the transit gateway (true | false).    default-propagation-route-table - Indicates whether this is the default propagation route table for the transit gateway (true | false).    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    transit-gateway-id - The ID of the transit gateway.    transit-gateway-route-table-id - The ID of the transit gateway route table.  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6423,7 +6423,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    vpc-id - The ID of the VPC.  
+      * One or more filters. The possible values are:    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-id - The ID of the transit gateway.    vpc-id - The ID of the VPC.  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6457,7 +6457,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    owner-id - The ID of the AWS account that owns the transit gateway.    options.propagation-default-route-table-id - The ID of the default propagation route table.    options.amazon-side-asn - The private ASN for the Amazon side of a BGP session.    options.association-default-route-table-id - The ID of the default association route table.    options.auto-accept-shared-attachments - Indicates whether there is automatic acceptance of attachment requests (enable | disable).    options.default-route-table-association - Indicates whether resource attachments are automatically associated with the default association route table (enable | disable).    options.default-route-table-propagation - Indicates whether resource attachments automatically propagate routes to the default propagation route table (enable | disable).    options.dns-support - Indicates whether DNS support is enabled (enable | disable).    options.vpn-ecmp-support - Indicates whether Equal Cost Multipath Protocol support is enabled (enable | disable).    state - The state of the attachment (pendingAcceptance | pending | available | modifying | deleting | deleted | failed | rejected).    transit-gateway-id - The ID of the transit gateway.    transit-gateway-state - The state of the transit gateway (pending | available | deleting | deleted).  
+      * One or more filters. The possible values are:    options.propagation-default-route-table-id - The ID of the default propagation route table.    options.amazon-side-asn - The private ASN for the Amazon side of a BGP session.    options.association-default-route-table-id - The ID of the default association route table.    options.auto-accept-shared-attachments - Indicates whether there is automatic acceptance of attachment requests (enable | disable).    options.default-route-table-association - Indicates whether resource attachments are automatically associated with the default association route table (enable | disable).    options.default-route-table-propagation - Indicates whether resource attachments automatically propagate routes to the default propagation route table (enable | disable).    options.dns-support - Indicates whether DNS support is enabled (enable | disable).    options.vpn-ecmp-support - Indicates whether Equal Cost Multipath Protocol support is enabled (enable | disable).    owner-id - The ID of the AWS account that owns the transit gateway.    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    transit-gateway-id - The ID of the transit gateway.  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -6909,12 +6909,24 @@ object EC2Ns extends js.Object {
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
+      * The maximum number of results to return for this request. The request returns a token that you can specify in a subsequent call to get the next set of results.
+      */
+    var MaxResults: js.UndefOr[DescribeVpcPeeringConnectionsMaxResults] = js.undefined
+    /**
+      * The token to request the next page of results. (You received this token from a prior call.)
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
+    /**
       * One or more VPC peering connection IDs. Default: Describes all your VPC peering connections.
       */
     var VpcPeeringConnectionIds: js.UndefOr[ValueStringList] = js.undefined
   }
   
   trait DescribeVpcPeeringConnectionsResult extends js.Object {
+    /**
+      * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
+      */
+    var NextToken: js.UndefOr[String] = js.undefined
     /**
       * Information about the VPC peering connections.
       */
@@ -7763,7 +7775,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).    transit-gateway-route-vpn-connection-id - The ID of the VPN connection.  
+      * One or more filters. The possible values are:    attachment.transit-gateway-attachment-id- The id of the transit gateway attachment.    attachment.resource-id - The resource id of the transit gateway attachment.    route-search.exact-match - The exact match of the specified filter.    route-search.longest-prefix-match - The longest prefix that matches the route.    route-search.subnet-of-match - The routes with a subnet that match the specified CIDR filter.    route-search.supernet-of-match - The routes with a CIDR that encompass the CIDR filter. For example, if you have 10.0.1.0/29 and 10.0.1.0/31 routes in your route table and you specify supernet-of-match as 10.0.1.0/30, then the result returns 10.0.1.0/29.    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    transit-gateway-route-destination-cidr-block - The CIDR range.    type - The type of roue (active | blackhole).  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -12959,7 +12971,7 @@ object EC2Ns extends js.Object {
       */
     var BlockDeviceMappings: js.UndefOr[LaunchTemplateBlockDeviceMappingRequestList] = js.undefined
     /**
-      * The Capacity Reservation targeting option.
+      * The Capacity Reservation targeting option. If you do not specify this parameter, the instance's Capacity Reservation preference defaults to open, which enables it to run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).
       */
     var CapacityReservationSpecification: js.UndefOr[LaunchTemplateCapacityReservationSpecificationRequest] = js.undefined
     /**
@@ -13340,7 +13352,7 @@ object EC2Ns extends js.Object {
       */
     var AvailabilityZone: js.UndefOr[String] = js.undefined
     /**
-      * The number of modified Reserved Instances.
+      * The number of modified Reserved Instances.  This is a required field for a request. 
       */
     var InstanceCount: js.UndefOr[Integer] = js.undefined
     /**
@@ -13972,7 +13984,7 @@ object EC2Ns extends js.Object {
       */
     var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingRequestList] = js.undefined
     /**
-      * Information about the Capacity Reservation targeting option.
+      * Information about the Capacity Reservation targeting option. If you do not specify this parameter, the instance's Capacity Reservation preference defaults to open, which enables it to run in any open Capacity Reservation that has matching attributes (instance type, platform, Availability Zone).
       */
     var CapacityReservationSpecification: js.UndefOr[CapacityReservationSpecification] = js.undefined
     /**
@@ -14531,7 +14543,7 @@ object EC2Ns extends js.Object {
       */
     var DryRun: js.UndefOr[Boolean] = js.undefined
     /**
-      * One or more filters. The possible values are:    transit-gateway-route-destination-cidr-block - The CIDR range.    transit-gateway-route-state - The state of the route (active | blackhole).    transit-gateway-route-transit-gateway-attachment-id - The ID of the attachment.    transit-gateway-route-type - The route type (static | propagated).  
+      * One or more filters. The possible values are:    attachment.transit-gateway-attachment-id- The id of the transit gateway attachment.    attachment.resource-id - The resource id of the transit gateway attachment.    attachment.resource-type - The attachment resource type (vpc | vpn).    route-search.exact-match - The exact match of the specified filter.    route-search.longest-prefix-match - The longest prefix that matches the route.    route-search.subnet-of-match - The routes with a subnet that match the specified CIDR filter.    route-search.supernet-of-match - The routes with a CIDR that encompass the CIDR filter. For example, if you have 10.0.1.0/29 and 10.0.1.0/31 routes in your route table and you specify supernet-of-match as 10.0.1.0/30, then the result returns 10.0.1.0/29.    state - The state of the attachment (available | deleted | deleting | failed | modifying | pendingAcceptance | pending | rollingBack | rejected | rejecting).    type - The type of roue (active | blackhole).  
       */
     var Filters: FilterList
     /**
@@ -16633,7 +16645,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[VolumeAttachment, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def attachVpnGateway(): awsDashSdkLib.libRequestMod.Request[AttachVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def attachVpnGateway(
@@ -16644,7 +16656,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def attachVpnGateway(params: AttachVpnGatewayRequest): awsDashSdkLib.libRequestMod.Request[AttachVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def attachVpnGateway(
@@ -17053,7 +17065,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateClientVpnRouteResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
+      * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
       */
     def createCustomerGateway(): awsDashSdkLib.libRequestMod.Request[CreateCustomerGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCustomerGateway(
@@ -17064,7 +17076,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateCustomerGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
+      * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
       */
     def createCustomerGateway(params: CreateCustomerGatewayRequest): awsDashSdkLib.libRequestMod.Request[CreateCustomerGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createCustomerGateway(
@@ -17871,7 +17883,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVpcPeeringConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnConnection(): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnConnection(
@@ -17882,7 +17894,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnConnection(params: CreateVpnConnectionRequest): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnConnection(
@@ -17894,14 +17906,14 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVpnConnectionResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnConnectionRoute(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnConnectionRoute(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnConnectionRoute(params: CreateVpnConnectionRouteRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnConnectionRoute(
@@ -17909,7 +17921,7 @@ object EC2Ns extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnGateway(): awsDashSdkLib.libRequestMod.Request[CreateVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnGateway(
@@ -17920,7 +17932,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def createVpnGateway(params: CreateVpnGatewayRequest): awsDashSdkLib.libRequestMod.Request[CreateVpnGatewayResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createVpnGateway(
@@ -19006,7 +19018,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeConversionTasksResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your VPN customer gateways. For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your VPN customer gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeCustomerGateways(): awsDashSdkLib.libRequestMod.Request[DescribeCustomerGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeCustomerGateways(
@@ -19017,7 +19029,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeCustomerGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your VPN customer gateways. For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your VPN customer gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeCustomerGateways(params: DescribeCustomerGatewaysRequest): awsDashSdkLib.libRequestMod.Request[DescribeCustomerGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeCustomerGateways(
@@ -20827,7 +20839,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpcsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your VPN connections. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your VPN connections. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeVpnConnections(): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeVpnConnections(
@@ -20838,7 +20850,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your VPN connections. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your VPN connections. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeVpnConnections(params: DescribeVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeVpnConnections(
@@ -20850,7 +20862,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpnConnectionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your virtual private gateways. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your virtual private gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeVpnGateways(): awsDashSdkLib.libRequestMod.Request[DescribeVpnGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeVpnGateways(
@@ -20861,7 +20873,7 @@ object EC2Ns extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeVpnGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describes one or more of your virtual private gateways. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+      * Describes one or more of your virtual private gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
       */
     def describeVpnGateways(params: DescribeVpnGatewaysRequest): awsDashSdkLib.libRequestMod.Request[DescribeVpnGatewaysResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeVpnGateways(
@@ -24990,7 +25002,7 @@ object EC2Ns extends js.Object {
   
   trait VpnConnection extends js.Object {
     /**
-      * The category of the VPN connection. A value of VPN indicates an AWS VPN connection. A value of VPN-Classic indicates an AWS Classic VPN connection. For more information, see AWS Managed VPN Categories in the Amazon Virtual Private Cloud User Guide.
+      * The category of the VPN connection. A value of VPN indicates an AWS VPN connection. A value of VPN-Classic indicates an AWS Classic VPN connection.
       */
     var Category: js.UndefOr[String] = js.undefined
     /**
@@ -25174,7 +25186,7 @@ object EC2Ns extends js.Object {
   type CancelSpotInstanceRequestState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.closed | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.completed | java.lang.String
   type CancelledSpotInstanceRequestList = js.Array[CancelledSpotInstanceRequest]
   type CapacityReservationIdSet = js.Array[String]
-  type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | java.lang.String
+  type CapacityReservationInstancePlatform = awsDashSdkLib.awsDashSdkLibStrings.`Linux/UNIX` | (awsDashSdkLib.awsDashSdkLibStrings.`Red Hat Enterprise Linux`) | (awsDashSdkLib.awsDashSdkLibStrings.`SUSE Linux`) | awsDashSdkLib.awsDashSdkLibStrings.Windows | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Enterprise`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Windows with SQL Server Web`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Standard`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Web`) | (awsDashSdkLib.awsDashSdkLibStrings.`Linux with SQL Server Enterprise`) | java.lang.String
   type CapacityReservationPreference = awsDashSdkLib.awsDashSdkLibStrings.open | awsDashSdkLib.awsDashSdkLibStrings.none | java.lang.String
   type CapacityReservationSet = js.Array[CapacityReservation]
   type CapacityReservationState = awsDashSdkLib.awsDashSdkLibStrings.active | awsDashSdkLib.awsDashSdkLibStrings.expired | awsDashSdkLib.awsDashSdkLibStrings.cancelled | awsDashSdkLib.awsDashSdkLibStrings.pending | awsDashSdkLib.awsDashSdkLibStrings.failed | java.lang.String
@@ -25220,6 +25232,7 @@ object EC2Ns extends js.Object {
   type DescribeConversionTaskList = js.Array[ConversionTask]
   type DescribeFleetsErrorSet = js.Array[DescribeFleetError]
   type DescribeFleetsInstancesSet = js.Array[DescribeFleetsInstances]
+  type DescribeVpcPeeringConnectionsMaxResults = scala.Double
   type DeviceType = awsDashSdkLib.awsDashSdkLibStrings.ebs | awsDashSdkLib.awsDashSdkLibStrings.`instance-store` | java.lang.String
   type DhcpConfigurationList = js.Array[DhcpConfiguration]
   type DhcpConfigurationValueList = js.Array[AttributeValue]

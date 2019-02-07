@@ -58,7 +58,6 @@ trait VictoryScatterProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

@@ -1,23 +1,22 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.3.3-1f2c1b"
+version := "2.3.3-d3f074"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache-control" % "0.4.1-47d34a",
   "org.scalablytyped" %%% "apollo-datasource" % "0.2.2-f9a699",
-  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.1-09620c",
+  "org.scalablytyped" %%% "apollo-engine-reporting" % "0.2.1-103326",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-ddcd97",
-  "org.scalablytyped" %%% "apollo-env" % "0.3.1-0871b2",
+  "org.scalablytyped" %%% "apollo-env" % "0.3.2-0871b2",
   "org.scalablytyped" %%% "apollo-link" % "1.2.8-11755c",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.2.2-6a1d2d",
   "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-015948",
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-32a1ef",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.2.3-9bdf3f",
   "org.scalablytyped" %%% "apollo-utilities" % "1.1.2-380657",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.1-773d8e",
+  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.2-2450dc",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-f2b579",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-028562",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-b1f74a",
@@ -26,7 +25,6 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "eventemitter3" % "3.1.0-72b90f",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-beaee2",
-  "org.scalablytyped" %%% "graphql-extensions" % "0.4.2-465a02",
   "org.scalablytyped" %%% "graphql-subscriptions" % "1.0.0-5f4046",
   "org.scalablytyped" %%% "graphql-tag" % "2.10.1-0e2c1c",
   "org.scalablytyped" %%% "graphql-tools" % "4.0.4-be6a61",

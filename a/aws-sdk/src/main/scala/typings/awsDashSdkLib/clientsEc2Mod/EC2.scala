@@ -721,7 +721,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def attachVpnGateway(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AttachVpnGatewayResult, 
@@ -738,7 +738,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Attaches a virtual private gateway to a VPC. You can attach one virtual private gateway to one VPC at a time. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def attachVpnGateway(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.AttachVpnGatewayRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.AttachVpnGatewayResult, 
@@ -1341,7 +1341,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
+    * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
     */
   def createCustomerGateway(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCustomerGatewayResult, 
@@ -1358,7 +1358,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
+    * Provides information to AWS about your VPN customer gateway device. The customer gateway is the appliance at your end of the VPN connection. (The device on the AWS side of the VPN connection is the virtual private gateway.) You must provide the Internet-routable IP address of the customer gateway's external interface. The IP address must be static and may be behind a device performing network address translation (NAT). For devices that use Border Gateway Protocol (BGP), you can also provide the device's BGP Autonomous System Number (ASN). You can use an existing ASN assigned to your network. If you don't have an ASN already, you can use a private ASN (in the 64512 - 65534 range).  Amazon EC2 supports all 2-byte ASN numbers in the range of 1 - 65534, with the exception of 7224, which is reserved in the us-east-1 region, and 9059, which is reserved in the eu-west-1 region.  For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.  You cannot create more than one customer gateway with the same VPN type, IP address, and BGP ASN parameter values. If you run an identical request more than one time, the first request creates the customer gateway, and subsequent requests return information about the existing customer gateway. The subsequent requests do not create new customer gateway resources. 
     */
   def createCustomerGateway(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCustomerGatewayRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateCustomerGatewayResult, 
@@ -2575,7 +2575,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnConnectionResult, 
@@ -2592,7 +2592,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a VPN connection between an existing virtual private gateway and a VPN customer gateway. The only supported connection type is ipsec.1. The response includes information that you need to give to your network administrator to configure your customer gateway.  We strongly recommend that you use HTTPS when calling this operation because the response contains sensitive cryptographic information for configuring your customer gateway.  If you decide to shut down your VPN connection for any reason and later create a new VPN connection, you must reconfigure your customer gateway with the new information returned from this call. This is an idempotent operation. If you perform the operation more than once, Amazon EC2 doesn't return an error. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnection(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnConnectionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnConnectionResult, 
@@ -2610,14 +2610,14 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnectionRoute(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnectionRoute(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a static route associated with a VPN connection between an existing virtual private gateway and a VPN customer gateway. The static route allows traffic to be routed from the virtual private gateway to the VPN customer gateway. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnConnectionRoute(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnConnectionRouteRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def createVpnConnectionRoute(
@@ -2625,7 +2625,7 @@ trait EC2
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnGateway(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnGatewayResult, 
@@ -2642,7 +2642,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def createVpnGateway(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnGatewayRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.CreateVpnGatewayResult, 
@@ -4130,7 +4130,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your VPN customer gateways. For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your VPN customer gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeCustomerGateways(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCustomerGatewaysResult, 
@@ -4147,7 +4147,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your VPN customer gateways. For more information about VPN customer gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your VPN customer gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeCustomerGateways(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCustomerGatewaysRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeCustomerGatewaysResult, 
@@ -6895,7 +6895,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your VPN connections. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your VPN connections. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeVpnConnections(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnConnectionsResult, 
@@ -6912,7 +6912,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your VPN connections. For more information about VPN connections, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your VPN connections. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeVpnConnections(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnConnectionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnConnectionsResult, 
@@ -6930,7 +6930,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your virtual private gateways. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your virtual private gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeVpnGateways(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnGatewaysResult, 
@@ -6947,7 +6947,7 @@ trait EC2
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describes one or more of your virtual private gateways. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.
+    * Describes one or more of your virtual private gateways. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.
     */
   def describeVpnGateways(params: awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnGatewaysRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEc2Mod.EC2Ns.DescribeVpnGatewaysResult, 

@@ -4633,6 +4633,9 @@ object awsDashSdkLibStrings {
   sealed trait GOVERNANCE extends js.Object
   
   @js.native
+  sealed trait GPU extends js.Object
+  
+  @js.native
   sealed trait GRAPHICS extends js.Object
   
   @js.native
@@ -6212,6 +6215,15 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait Linux extends js.Object
+  
+  @js.native
+  sealed trait `Linux with SQL Server Enterprise` extends js.Object
+  
+  @js.native
+  sealed trait `Linux with SQL Server Standard` extends js.Object
+  
+  @js.native
+  sealed trait `Linux with SQL Server Web` extends js.Object
   
   @js.native
   sealed trait `Linux/UNIX` extends js.Object
@@ -17617,6 +17629,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def GOVERNANCE: GOVERNANCE = "GOVERNANCE".asInstanceOf[GOVERNANCE]
   @scala.inline
+  def GPU: GPU = "GPU".asInstanceOf[GPU]
+  @scala.inline
   def GRAPHICS: GRAPHICS = "GRAPHICS".asInstanceOf[GRAPHICS]
   @scala.inline
   def GRAPHICSPRO: GRAPHICSPRO = "GRAPHICSPRO".asInstanceOf[GRAPHICSPRO]
@@ -18670,6 +18684,12 @@ object awsDashSdkLibStrings {
   def Line: Line = "Line".asInstanceOf[Line]
   @scala.inline
   def Linux: Linux = "Linux".asInstanceOf[Linux]
+  @scala.inline
+  def `Linux with SQL Server Enterprise`: `Linux with SQL Server Enterprise` = "Linux with SQL Server Enterprise".asInstanceOf[`Linux with SQL Server Enterprise`]
+  @scala.inline
+  def `Linux with SQL Server Standard`: `Linux with SQL Server Standard` = "Linux with SQL Server Standard".asInstanceOf[`Linux with SQL Server Standard`]
+  @scala.inline
+  def `Linux with SQL Server Web`: `Linux with SQL Server Web` = "Linux with SQL Server Web".asInstanceOf[`Linux with SQL Server Web`]
   @scala.inline
   def `Linux/UNIX`: `Linux/UNIX` = "Linux/UNIX".asInstanceOf[`Linux/UNIX`]
   @scala.inline

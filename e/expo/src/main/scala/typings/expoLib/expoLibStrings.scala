@@ -490,9 +490,6 @@ object expoLibStrings {
   sealed trait fast extends js.Object
   
   @js.native
-  sealed trait file extends js.Object
-  
-  @js.native
   sealed trait fine extends js.Object
   
   @js.native
@@ -515,9 +512,6 @@ object expoLibStrings {
   
   @js.native
   sealed trait hebrew extends js.Object
-  
-  @js.native
-  sealed trait high extends js.Object
   
   @js.native
   sealed trait hour extends js.Object
@@ -601,25 +595,16 @@ object expoLibStrings {
   sealed trait location extends js.Object
   
   @js.native
-  sealed trait low extends js.Object
-  
-  @js.native
   sealed trait lpcm extends js.Object
   
   @js.native
   sealed trait maidenName extends js.Object
   
   @js.native
-  sealed trait max extends js.Object
-  
-  @js.native
   sealed trait mediumRectangle extends js.Object
   
   @js.native
   sealed trait middleName extends js.Object
-  
-  @js.native
-  sealed trait min extends js.Object
   
   @js.native
   sealed trait minute extends js.Object
@@ -700,6 +685,9 @@ object expoLibStrings {
   sealed trait public extends js.Object
   
   @js.native
+  sealed trait raw extends js.Object
+  
+  @js.native
   sealed trait rawImage extends js.Object
   
   @js.native
@@ -778,6 +766,9 @@ object expoLibStrings {
   sealed trait systemBrightness extends js.Object
   
   @js.native
+  sealed trait tmpfile extends js.Object
+  
+  @js.native
   sealed trait twvq extends js.Object
   
   @js.native
@@ -805,6 +796,9 @@ object expoLibStrings {
   sealed trait userFacingNotifications extends js.Object
   
   @js.native
+  sealed trait utf8 extends js.Object
+  
+  @js.native
   sealed trait verbose extends js.Object
   
   @js.native
@@ -830,6 +824,9 @@ object expoLibStrings {
   
   @js.native
   sealed trait year extends js.Object
+  
+  @js.native
+  sealed trait `zip-base64` extends js.Object
   
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
@@ -1154,8 +1151,6 @@ object expoLibStrings {
   @scala.inline
   def fast: fast = "fast".asInstanceOf[fast]
   @scala.inline
-  def file: file = "file".asInstanceOf[file]
-  @scala.inline
   def fine: fine = "fine".asInstanceOf[fine]
   @scala.inline
   def firstName: firstName = "firstName".asInstanceOf[firstName]
@@ -1171,8 +1166,6 @@ object expoLibStrings {
   def guest: guest = "guest".asInstanceOf[guest]
   @scala.inline
   def hebrew: hebrew = "hebrew".asInstanceOf[hebrew]
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   @scala.inline
@@ -1228,19 +1221,13 @@ object expoLibStrings {
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   @scala.inline
-  def low: low = "low".asInstanceOf[low]
-  @scala.inline
   def lpcm: lpcm = "lpcm".asInstanceOf[lpcm]
   @scala.inline
   def maidenName: maidenName = "maidenName".asInstanceOf[maidenName]
   @scala.inline
-  def max: max = "max".asInstanceOf[max]
-  @scala.inline
   def mediumRectangle: mediumRectangle = "mediumRectangle".asInstanceOf[mediumRectangle]
   @scala.inline
   def middleName: middleName = "middleName".asInstanceOf[middleName]
-  @scala.inline
-  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   @scala.inline
@@ -1294,6 +1281,8 @@ object expoLibStrings {
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
+  def raw: raw = "raw".asInstanceOf[raw]
+  @scala.inline
   def rawImage: rawImage = "rawImage".asInstanceOf[rawImage]
   @scala.inline
   def received: received = "received".asInstanceOf[received]
@@ -1346,6 +1335,8 @@ object expoLibStrings {
   @scala.inline
   def systemBrightness: systemBrightness = "systemBrightness".asInstanceOf[systemBrightness]
   @scala.inline
+  def tmpfile: tmpfile = "tmpfile".asInstanceOf[tmpfile]
+  @scala.inline
   def twvq: twvq = "twvq".asInstanceOf[twvq]
   @scala.inline
   def ulaw: ulaw = "ulaw".asInstanceOf[ulaw]
@@ -1364,6 +1355,8 @@ object expoLibStrings {
   @scala.inline
   def userFacingNotifications: userFacingNotifications = "userFacingNotifications".asInstanceOf[userFacingNotifications]
   @scala.inline
+  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
   @scala.inline
   def video: video = "video".asInstanceOf[video]
@@ -1381,5 +1374,7 @@ object expoLibStrings {
   def white: white = "white".asInstanceOf[white]
   @scala.inline
   def year: year = "year".asInstanceOf[year]
+  @scala.inline
+  def `zip-base64`: `zip-base64` = "zip-base64".asInstanceOf[`zip-base64`]
 }
 

@@ -11,6 +11,10 @@ trait MatchImageSnapshotOptions extends js.Object {
     */
   var customDiffConfig: js.UndefOr[PixelmatchOptions] = js.undefined
   /**
+    * A custom absolute path of a directory to keep this diff in
+    */
+  var customDiffDir: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * A custom name to give this snapshot. If not provided, one is computed automatically.
     */
   var customSnapshotIdentifier: js.UndefOr[java.lang.String] = js.undefined
@@ -19,6 +23,12 @@ trait MatchImageSnapshotOptions extends js.Object {
     * Absolute path of a directory to keep the snapshot in.
     */
   var customSnapshotsDir: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * Changes diff image layout direction, default is horizontal.
+    */
+  var diffDirection: js.UndefOr[
+    jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.horizontal | jestDashImageDashSnapshotLib.jestDashImageDashSnapshotLibStrings.vertical
+  ] = js.undefined
   /**
     * Sets the threshold that would trigger a test failure based on the failureThresholdType selected. This is different
     * to the customDiffConfig.threshold above - the customDiffConfig.threshold is the per pixel failure threshold, whereas
@@ -38,5 +48,9 @@ trait MatchImageSnapshotOptions extends js.Object {
     * Defaults to false.
     */
   var noColors: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Updates a snapshot even if it passed the threshold against the existing one, defaults to false.
+    */
+  var updatePassedSnapshot: js.UndefOr[scala.Boolean] = js.undefined
 }
 

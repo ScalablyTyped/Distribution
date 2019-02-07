@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriverio"
-version := "5.4.13-ab7664"
+version := "5.4.15-1ca16b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "serialize-error" % "2.1-dt-20180607Z-007aa4",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",
-  "org.scalablytyped" %%% "webdriver" % "5.4.13-a80c1b")
+  "org.scalablytyped" %%% "webdriver" % "5.4.15-4a25eb")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

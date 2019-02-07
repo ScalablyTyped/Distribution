@@ -38,6 +38,7 @@ trait MDCTextFieldFoundation
     * animation will animate out from the user's click location.
     */
   def setTransformOrigin(evt: stdLib.Event): scala.Unit = js.native
+  def setUseNativeValidation(useNativeValidation: scala.Boolean): scala.Unit = js.native
   def setValid(isValid: scala.Boolean): scala.Unit = js.native
   def setValue(value: java.lang.String): scala.Unit = js.native
 }

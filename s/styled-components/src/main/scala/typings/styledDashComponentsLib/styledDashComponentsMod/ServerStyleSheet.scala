@@ -13,5 +13,6 @@ class ServerStyleSheet () extends js.Object {
   def getStyleElement(): js.Array[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.native
   def getStyleTags(): java.lang.String = js.native
   def interleaveWithNodeStream(readableStream: nodeLib.NodeJSNs.ReadableStream): nodeLib.NodeJSNs.ReadableStream = js.native
+  def seal(): scala.Unit = js.native
 }
 

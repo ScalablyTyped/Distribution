@@ -80,6 +80,7 @@ trait ComponentOptions[V /* <: vueLib.typesVueMod.Vue */, Data, Methods, Compute
       vueLib.typesVnodeMod.VNode
     ]
   ] = js.undefined
+  var serverPrefetch: js.UndefOr[js.ThisFunction0[/* this */ V, js.Promise[scala.Unit]]] = js.undefined
   var staticRenderFns: js.UndefOr[
     js.Array[
       js.Function1[/* createElement */ vueLib.typesVueMod.CreateElement, vueLib.typesVnodeMod.VNode]

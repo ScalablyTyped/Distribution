@@ -45,7 +45,6 @@ trait VictoryAreaProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

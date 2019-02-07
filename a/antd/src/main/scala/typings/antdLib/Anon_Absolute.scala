@@ -772,9 +772,8 @@ trait Anon_Absolute extends js.Object {
   var mixBlendMode: js.UndefOr[
     antdLib.antdLibStrings.normal | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.color | antdLib.antdLibStrings.`color-burn` | antdLib.antdLibStrings.`color-dodge` | antdLib.antdLibStrings.darken | antdLib.antdLibStrings.difference | antdLib.antdLibStrings.exclusion | antdLib.antdLibStrings.`hard-light` | antdLib.antdLibStrings.hue | antdLib.antdLibStrings.lighten | antdLib.antdLibStrings.luminosity | antdLib.antdLibStrings.multiply | antdLib.antdLibStrings.overlay | antdLib.antdLibStrings.saturation | antdLib.antdLibStrings.screen | antdLib.antdLibStrings.`soft-light`
   ] = js.undefined
-  var motion: js.UndefOr[java.lang.String] = js.undefined
+  var motion: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var motionDistance: js.UndefOr[java.lang.String | scala.Double] = js.undefined
-  var motionOffset: js.UndefOr[java.lang.String] = js.undefined
   var motionPath: js.UndefOr[java.lang.String] = js.undefined
   var motionRotation: js.UndefOr[java.lang.String] = js.undefined
   var msAccelerator: js.UndefOr[
@@ -976,6 +975,7 @@ trait Anon_Absolute extends js.Object {
   var perspectiveOrigin: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var placeContent: js.UndefOr[java.lang.String] = js.undefined
   var placeItems: js.UndefOr[java.lang.String] = js.undefined
+  var placeSelf: js.UndefOr[java.lang.String] = js.undefined
   var pointerEvents: js.UndefOr[
     antdLib.antdLibStrings.all | antdLib.antdLibStrings.auto | antdLib.antdLibStrings.none | antdLib.antdLibStrings.inherit | antdLib.antdLibStrings.visible | antdLib.antdLibStrings.`-moz-initial` | antdLib.antdLibStrings.initial | antdLib.antdLibStrings.revert | antdLib.antdLibStrings.unset | antdLib.antdLibStrings.fill | antdLib.antdLibStrings.stroke | antdLib.antdLibStrings.painted | antdLib.antdLibStrings.visibleFill | antdLib.antdLibStrings.visiblePainted | antdLib.antdLibStrings.visibleStroke
   ] = js.undefined

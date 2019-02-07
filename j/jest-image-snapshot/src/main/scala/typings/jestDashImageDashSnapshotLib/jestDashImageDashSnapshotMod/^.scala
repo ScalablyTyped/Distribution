@@ -10,5 +10,6 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def configureToMatchImageSnapshot(options: jestDashImageDashSnapshotLib.jestDashImageDashSnapshotMod.MatchImageSnapshotOptions): js.Function0[jestDashImageDashSnapshotLib.Anon_Message] = js.native
   def toMatchImageSnapshot(): jestDashImageDashSnapshotLib.Anon_Message = js.native
+  def toMatchImageSnapshot(options: jestDashImageDashSnapshotLib.jestDashImageDashSnapshotMod.MatchImageSnapshotOptions): jestDashImageDashSnapshotLib.Anon_Message = js.native
 }
 

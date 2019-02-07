@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-dom/test-utils", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def act(callback: js.Function0[js.UndefOr[scala.Unit]]): reactDashDomLib.testDashUtilsMod.DebugPromiseLike | js.Object = js.native
   def createRenderer(): reactDashDomLib.testDashUtilsMod.ShallowRenderer = js.native
   def findAllInRenderedTree(
     root: reactLib.reactMod.Component[_, js.Object, _],
@@ -34,8 +35,8 @@ object ^ extends js.Object {
   ): /* is react.react.React.CElement<P, T> */ scala.Boolean = js.native
   @JSName("isElementOfType")
   def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.DOMElement<P, T> */ scala.Boolean = js.native
-  def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass): reactDashDomLib.Anon_ClassName = js.native
-  def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass, mockTagName: java.lang.String): reactDashDomLib.Anon_ClassName = js.native
+  def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass): reactDashDomLib.Anon_Act = js.native
+  def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass, mockTagName: java.lang.String): reactDashDomLib.Anon_Act = js.native
   def renderIntoDocument(element: reactLib.reactMod.ReactNs.SFCElement[_]): scala.Unit = js.native
   def renderIntoDocument[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[_, T]): T = js.native
   def renderIntoDocument[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, js.Object, _]) | reactLib.Element | scala.Unit = js.native

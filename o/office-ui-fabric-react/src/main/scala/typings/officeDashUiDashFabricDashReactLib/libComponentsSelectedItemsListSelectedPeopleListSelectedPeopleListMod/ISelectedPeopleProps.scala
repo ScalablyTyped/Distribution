@@ -17,11 +17,10 @@ trait ISelectedPeopleProps
   var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, java.lang.String]] = js.undefined
   var onExpandGroup: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, scala.Unit]] = js.undefined
   var onRenderFloatingPicker: js.UndefOr[
-    js.Function1[
-      /* props */ officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[
+    reactLib.reactMod.ReactNs.ComponentType[
+      officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[
         officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
-      ], 
-      reactLib.reactMod.Global.JSXNs.Element
+      ]
     ]
   ] = js.undefined
   var removeMenuItemText: js.UndefOr[java.lang.String] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "app-builder-lib"
-version := "20.38.5-91fd4e"
+version := "20.38.5-6b9b17"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "dotenv-expand" % "4.2.0-bd88ec",
   "org.scalablytyped" %%% "ejs" % "2.6-dt-20181126Z-945834",
   "org.scalablytyped" %%% "electron-osx-sign" % "0.4.11-b67636",
-  "org.scalablytyped" %%% "electron-publish" % "20.38.5-0a869b",
+  "org.scalablytyped" %%% "electron-publish" % "20.38.5-196f32",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2cff45",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
@@ -34,7 +34,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-9bda5b",
   "org.scalablytyped" %%% "json5" % "0.0-unknown-dt-20180813Z-788dbc",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-128daa",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-45605c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-029f0e",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-9fc7e9",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",

@@ -15,8 +15,6 @@ object AudioNs extends js.Object {
     var interruptionModeAndroid: InterruptionModeAndroid
     /** Enum selecting how your experience’s audio should interact with the audio from other apps on iOS. */
     var interruptionModeIOS: InterruptionModeIos
-    /** Boolean selecting if audio should go to earpiece (only on Android). */
-    var playThroughEarpieceAndroid: scala.Boolean
     /** Boolean selecting if your experience’s audio should play in silent mode on iOS. This value defaults to `false`. */
     var playsInSilentModeIOS: scala.Boolean
     /** Boolean selecting if your experience’s audio should automatically be lowered in volume ("duck") if audio from another app interrupts your experience. This value defaults to true. If false, audio from other apps will pause your audio. */
@@ -211,7 +209,7 @@ object AudioNs extends js.Object {
       * - `sound`: The newly created and loaded Sound object.
       * - `status`: The PlaybackStatus of the Sound object. See the AV documentation for further information.
       */
-    def create(
+    def createAsync(
       /**
       * The source of the sound. The following forms are supported:
       *
@@ -221,7 +219,7 @@ object AudioNs extends js.Object {
       */
     source: expoLib.expoMod.PlaybackSource
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    def create(
+    def createAsync(
       /**
       * The source of the sound. The following forms are supported:
       *
@@ -233,7 +231,7 @@ object AudioNs extends js.Object {
       /** The initial intended PlaybackStatusToSet of the sound, whose values will override the default initial playback status. This value defaults to `{}` if no parameter is passed. */
     initialStatus: expoLib.expoMod.PlaybackStatusToSet
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    def create(
+    def createAsync(
       /**
       * The source of the sound. The following forms are supported:
       *
@@ -247,7 +245,7 @@ object AudioNs extends js.Object {
       /** A function taking a single parameter PlaybackStatus. This value defaults to `null` if no parameter is passed. */
     onPlaybackStatusUpdate: js.Function1[/* status */ expoLib.expoMod.PlaybackStatus, scala.Unit]
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    def create(
+    def createAsync(
       /**
       * The source of the sound. The following forms are supported:
       *
@@ -263,7 +261,7 @@ object AudioNs extends js.Object {
       /** If set to true, the system will attempt to download the resource to the device before loading. This value defaults to `true`. Note that at the moment, this will only work for `source`s of the form `require('path/to/file')` or `Asset` objects. */
     downloadFirst: scala.Boolean
     ): js.Promise[expoLib.Anon_Sound] = js.native
-    def create(
+    def createAsync(
       /**
       * The source of the sound. The following forms are supported:
       *

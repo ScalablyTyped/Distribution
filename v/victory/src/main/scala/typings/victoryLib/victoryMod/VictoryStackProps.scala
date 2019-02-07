@@ -87,7 +87,6 @@ trait VictoryStackProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

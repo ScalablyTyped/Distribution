@@ -8,17 +8,18 @@ import scala.scalajs.js.annotation._
 @JSImport("stellar-base", "Keypair")
 @js.native
 class Keypair protected () extends js.Object {
-  def this(keys: stellarDashBaseLib.Anon_Ed25519) = this()
-  def this(keys: stellarDashBaseLib.Anon_Ed25519Key) = this()
+  def this(keys: stellarDashBaseLib.Anon_PublicKey) = this()
+  def this(keys: stellarDashBaseLib.Anon_PublicKeyType) = this()
+  val `type`: KeypairType = js.native
   def canSign(): scala.Boolean = js.native
   def publicKey(): java.lang.String = js.native
   def rawPublicKey(): nodeLib.Buffer = js.native
   def rawSecretKey(): nodeLib.Buffer = js.native
   def secret(): java.lang.String = js.native
-  def sign(data: nodeLib.Buffer): nodeLib.Buffer = js.native
+  def sign(data: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature = js.native
   def signDecorated(data: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.DecoratedSignature = js.native
   def signatureHint(): stellarDashBaseLib.stellarDashBaseMod.xdrNs.SignatureHint = js.native
-  def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer): scala.Boolean = js.native
+  def verify(data: nodeLib.Buffer, signature: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature): scala.Boolean = js.native
 }
 
 /* static members */

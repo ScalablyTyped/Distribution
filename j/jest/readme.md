@@ -1,5 +1,5 @@
 ```
-// Type definitions for Jest 23.3
+// Type definitions for Jest 24.0
 // Project: http://facebook.github.io/jest/
 // Definitions by: Asana <https://asana.com>
 //                 Ivo Stratev <https://github.com/NoHomey>
@@ -18,6 +18,7 @@
 //                 Martin Hochel <https://github.com/hotell>
 //                 Sebastian Sebald <https://github.com/sebald>
 //                 Andy <https://github.com/andys8>
+//                 Antoine Brault <https://github.com/antoinebrault>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.0
 ```

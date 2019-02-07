@@ -1,0 +1,19 @@
+package typings
+package connectDashHistoryDashApiDashFallbackDashExclusionsLib.connectDashHistoryDashApiDashFallbackDashExclusionsMod.historyApiFallbackNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Options extends js.Object {
+  var disableDotRule: js.UndefOr[
+    connectDashHistoryDashApiDashFallbackDashExclusionsLib.connectDashHistoryDashApiDashFallbackDashExclusionsLibNumbers.`true`
+  ] = js.undefined
+  var exclusions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var htmlAcceptHeaders: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var index: js.UndefOr[java.lang.String] = js.undefined
+  var logger: js.UndefOr[connectDashHistoryDashApiDashFallbackDashExclusionsLib.Anon_Message] = js.undefined
+  var rewrites: js.UndefOr[js.Array[Rewrite]] = js.undefined
+  var verbose: js.UndefOr[scala.Boolean] = js.undefined
+}
+

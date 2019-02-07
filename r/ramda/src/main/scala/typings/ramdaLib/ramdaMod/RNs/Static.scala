@@ -1168,6 +1168,13 @@ trait Static extends js.Object {
   def modulo(`__`: Placeholder, b: scala.Double): js.Function1[/* a */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   def modulo(a: scala.Double, b: scala.Double): scala.Double = js.native
+  def move(from: scala.Double): ramdaLib.Anon_List = js.native
+  def move(from: scala.Double, to: scala.Double): js.Function1[/* list */ js.Array[_], js.Array[_]] = js.native
+  /**
+    * Moves an item, at index `from`, to index `to`, in a `list` of elements.
+    * A new list will be created containing the new elements order.
+    */
+  def move[T](from: scala.Double, to: scala.Double, list: js.Array[T]): js.Array[T] = js.native
   def multiply(a: scala.Double): js.Function1[/* b */ scala.Double, scala.Double] = js.native
   /**
     * Multiplies two numbers. Equivalent to a * b but curried.
@@ -1993,7 +2000,7 @@ trait Static extends js.Object {
     */
   def set[T, U](lens: Lens, a: U, obj: T): T = js.native
   def slice(a: scala.Double): ramdaLib.Anon_B = js.native
-  def slice(a: scala.Double, b: scala.Double): ramdaLib.Anon_List = js.native
+  def slice(a: scala.Double, b: scala.Double): ramdaLib.Anon_ListArray = js.native
   /**
     * Returns the elements from `xs` starting at `a` and ending at `b - 1`.
     */
@@ -2024,13 +2031,13 @@ trait Static extends js.Object {
   def split(sep: java.lang.String, str: java.lang.String): js.Array[java.lang.String] = js.native
   def split(sep: stdLib.RegExp): js.Function1[/* str */ java.lang.String, js.Array[java.lang.String]] = js.native
   def split(sep: stdLib.RegExp, str: java.lang.String): js.Array[java.lang.String] = js.native
-  def splitAt(index: scala.Double): ramdaLib.Anon_ListArray = js.native
+  def splitAt(index: scala.Double): ramdaLib.Anon_ListArrayReadonlyArray = js.native
   def splitAt(index: scala.Double, list: java.lang.String): js.Tuple2[java.lang.String, java.lang.String] = js.native
   /**
     * Splits a given list or string at a given index.
     */
   def splitAt[T](index: scala.Double, list: js.Array[T]): js.Tuple2[js.Array[T], js.Array[T]] = js.native
-  def splitEvery(a: scala.Double): ramdaLib.Anon_ListArrayReadonlyArray = js.native
+  def splitEvery(a: scala.Double): ramdaLib.Anon_ListArrayReadonlyArrayString = js.native
   def splitEvery(a: scala.Double, list: java.lang.String): js.Array[java.lang.String] = js.native
   /**
     * Splits a collection into slices of the specified length.

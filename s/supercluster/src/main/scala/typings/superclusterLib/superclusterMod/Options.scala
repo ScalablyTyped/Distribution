@@ -5,51 +5,56 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options extends js.Object {
+trait Options[P, C] extends js.Object {
   /**
     * (Tiles) Tile extent. Radius is calculated relative to this value.
+    *
+    * @default 512
     */
   var extent: js.UndefOr[scala.Double] = js.undefined
   /**
-    * initial properties of a cluster (before running the reducer)
-    *
-    * @example
-    * function () { return {sum: 0}; }
-    */
-  var initial: js.UndefOr[js.Function0[_]] = js.undefined
-  /**
     * Whether timing info should be logged.
+    *
+    * @default false
     */
   var log: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * properties to use for individual points when running the reducer
+    * A function that returns cluster properties corresponding to a single point.
     *
     * @example
-    * function (props) { return {sum: props.my_value}; }
+    * (props) => ({sum: props.myValue})
     */
-  var map: js.UndefOr[js.Function1[/* props */ js.Any, _]] = js.undefined
+  var map: js.UndefOr[js.Function1[/* props */ P, C]] = js.undefined
   /**
     * Maximum zoom level at which clusters are generated.
+    *
+    * @default 16
     */
   var maxZoom: js.UndefOr[scala.Double] = js.undefined
   /**
     * Minimum zoom level at which clusters are generated.
+    *
+    * @default 0
     */
   var minZoom: js.UndefOr[scala.Double] = js.undefined
   /**
     * Size of the KD-tree leaf node. Affects performance.
+    *
+    * @default 64
     */
   var nodeSize: js.UndefOr[scala.Double] = js.undefined
   /**
     * Cluster radius, in pixels.
+    *
+    * @default 40
     */
   var radius: js.UndefOr[scala.Double] = js.undefined
   /**
-    * a reduce function for calculating custom cluster properties
+    * A reduce function that merges properties of two clusters into one.
     *
     * @example
-    * function (accumulated, props) { accumulated.sum += props.sum; }
+    * (accumulated, props) => { accumulated.sum += props.sum; }
     */
-  var reduce: js.UndefOr[js.Function2[/* accumulated */ js.Any, /* props */ js.Any, scala.Unit]] = js.undefined
+  var reduce: js.UndefOr[js.Function2[/* accumulated */ C, /* props */ stdLib.Readonly[C], scala.Unit]] = js.undefined
 }
 

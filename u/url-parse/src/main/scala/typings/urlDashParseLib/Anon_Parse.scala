@@ -9,6 +9,8 @@ import scala.scalajs.js.annotation._
 trait Anon_Parse extends js.Object {
   @JSName("parse")
   var parse_Original: urlDashParseLib.urlDashParseMod.URLParseNs.QueryParser = js.native
+  @JSName("stringify")
+  var stringify_Original: urlDashParseLib.urlDashParseMod.URLParseNs.StringifyQuery = js.native
   def parse(query: java.lang.String): js.Object = js.native
   def stringify(query: js.Object): java.lang.String = js.native
 }

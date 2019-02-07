@@ -75,7 +75,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ControllerRevision]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -177,7 +177,7 @@ object appsNs extends js.Object {
       /**
         * A list of daemon sets.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -243,7 +243,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a DaemonSet's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSetCondition]]]
+          ] = js.undefined
       /**
         * The number of nodes that are running at least 1 daemon pod and are supposed to run the
         * daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
@@ -383,7 +385,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Deployment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -465,7 +467,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a deployment's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DeploymentCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+          ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
@@ -593,7 +597,7 @@ object appsNs extends js.Object {
         * List of ReplicaSets. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -656,7 +660,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a replica set's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSetCondition]]]
+          ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replicaset.
@@ -815,7 +821,7 @@ object appsNs extends js.Object {
       var apiVersion: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -888,7 +894,11 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -905,7 +915,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+          ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.
@@ -1041,7 +1053,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ControllerRevision]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1145,7 +1157,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Deployment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1270,7 +1282,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a deployment's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DeploymentCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+          ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
@@ -1518,7 +1532,7 @@ object appsNs extends js.Object {
       var apiVersion: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1593,7 +1607,11 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -1610,7 +1628,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+          ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.
@@ -1744,7 +1764,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ControllerRevision]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1847,7 +1867,7 @@ object appsNs extends js.Object {
       /**
         * A list of daemon sets.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1913,7 +1933,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a DaemonSet's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSetCondition]]]
+          ] = js.undefined
       /**
         * The number of nodes that are running at least 1 daemon pod and are supposed to run the
         * daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
@@ -2055,7 +2077,7 @@ object appsNs extends js.Object {
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Deployment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2137,7 +2159,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a deployment's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DeploymentCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+          ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
@@ -2267,7 +2291,7 @@ object appsNs extends js.Object {
         * List of ReplicaSets. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2330,7 +2354,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a replica set's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSetCondition]]]
+          ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replicaset.
@@ -2567,7 +2593,7 @@ object appsNs extends js.Object {
       var apiVersion: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2640,7 +2666,11 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -2657,7 +2687,9 @@ object appsNs extends js.Object {
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[StatefulSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+          ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.

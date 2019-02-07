@@ -11,7 +11,7 @@ object ^ extends js.Object {
   val intlShape: reactDashIntlLib.ReactIntlNs.IntlShape = js.native
   def addLocaleData(data: js.Array[reactDashIntlLib.ReactIntlNs.Locale]): scala.Unit = js.native
   def addLocaleData(data: reactDashIntlLib.ReactIntlNs.Locale): scala.Unit = js.native
-  def defineMessages[T /* <: reactDashIntlLib.ReactIntlNs.Messages */](messages: T): T = js.native
+  def defineMessages[Names /* <: java.lang.String */](messages: reactDashIntlLib.ReactIntlNs.Messages[Names]): reactDashIntlLib.ReactIntlNs.Messages[Names] = js.native
   def injectIntl[P](
     component: reactLib.reactMod.ReactNs.ComponentType[P with reactDashIntlLib.ReactIntlNs.InjectedIntlProps]
   ): (reactLib.reactMod.ReactNs.ComponentClass[

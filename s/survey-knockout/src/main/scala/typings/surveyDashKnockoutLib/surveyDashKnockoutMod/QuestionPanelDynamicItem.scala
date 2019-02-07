@@ -13,7 +13,6 @@ class QuestionPanelDynamicItem protected ()
      with ITextProcessor {
   def this(data: IQuestionPanelDynamicData, panel: PanelModel) = this()
   val panel: PanelModel = js.native
-  def clearCachedValue(): scala.Unit = js.native
   /* CompleteClass */
   override def geSurveyData(): ISurveyData = js.native
   /* CompleteClass */
@@ -35,7 +34,6 @@ class QuestionPanelDynamicItem protected ()
   def processTextEx(text: java.lang.String, returnDisplayValue: scala.Boolean): js.Any = js.native
   /* CompleteClass */
   override def processTextEx(text: java.lang.String, returnDisplayValue: scala.Boolean, doEncoding: scala.Boolean): js.Any = js.native
-  def setCachedValue(values: js.Any): scala.Unit = js.native
   /* CompleteClass */
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
   def setSurveyImpl(): scala.Unit = js.native

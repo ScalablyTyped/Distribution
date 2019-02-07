@@ -132,6 +132,9 @@ object ioDashTsLibStrings {
   @js.native
   sealed trait VoidType extends js.Object
   
+  @js.native
+  sealed trait brand extends js.Object
+  
   @scala.inline
   def AnyArrayType: AnyArrayType = "AnyArrayType".asInstanceOf[AnyArrayType]
   @scala.inline
@@ -216,5 +219,7 @@ object ioDashTsLibStrings {
   def UnknownType: UnknownType = "UnknownType".asInstanceOf[UnknownType]
   @scala.inline
   def VoidType: VoidType = "VoidType".asInstanceOf[VoidType]
+  @scala.inline
+  def brand: brand = "brand".asInstanceOf[brand]
 }
 

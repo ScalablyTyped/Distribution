@@ -20,10 +20,9 @@ class MatrixDropdownRowModelBase protected ()
   val rowIndex: scala.Double = js.native
   val rowName: js.Any = js.native
   var value: js.Any = js.native
-  /* protected */ def buildCells(): scala.Unit = js.native
-  def clearIncorrectValues(): scala.Unit = js.native
+  /* protected */ def buildCells(value: js.Any): scala.Unit = js.native
+  def clearIncorrectValues(`val`: js.Any): scala.Unit = js.native
   /* protected */ def createCell(column: MatrixDropdownColumn): MatrixDropdownCell = js.native
-  def deleteDataValueCore(valuesHash: js.Any, key: java.lang.String): scala.Unit = js.native
   /* CompleteClass */
   override def geSurveyData(): ISurveyData = js.native
   /* CompleteClass */
@@ -59,7 +58,6 @@ class MatrixDropdownRowModelBase protected ()
   def runCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /* CompleteClass */
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
-  def setDataValueCore(valuesHash: js.Any, key: java.lang.String, value: js.Any): scala.Unit = js.native
   /* CompleteClass */
   override def setValue(name: java.lang.String, newValue: js.Any): js.Any = js.native
 }

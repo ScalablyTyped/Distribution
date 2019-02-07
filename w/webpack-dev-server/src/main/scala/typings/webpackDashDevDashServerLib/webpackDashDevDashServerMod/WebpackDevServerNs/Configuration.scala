@@ -118,5 +118,7 @@ trait Configuration extends js.Object {
   var watchContentBase: js.UndefOr[scala.Boolean] = js.undefined
   /** Control options related to watching the files. */
   var watchOptions: js.UndefOr[webpackLib.webpackMod.webpackNs.WatchOptions] = js.undefined
+  /** Tells devServer to write generated assets to the disk. */
+  var writeToDisk: js.UndefOr[scala.Boolean | (js.Function1[/* filePath */ java.lang.String, scala.Boolean])] = js.undefined
 }
 

@@ -23,7 +23,9 @@ trait IsotopeOptions extends js.Object {
     * If set to a string, that value is used as a selector.
     * If filter is set to a function, that function checks each item and returns true or false if the item should be shown or hidden.
     */
-  var filter: js.UndefOr[java.lang.String | js.Function0[scala.Boolean]] = js.undefined
+  var filter: js.UndefOr[
+    java.lang.String | (js.Function1[/* itemElement */ stdLib.HTMLElement, scala.Boolean])
+  ] = js.undefined
   /**
     * Items are arranged into rows. Rows progress vertically. Similar to what you would expect from a layout that uses CSS floats. fitRows works well for items that have the same height.
     */

@@ -87,7 +87,6 @@ trait VictoryGroupProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

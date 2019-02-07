@@ -80,10 +80,14 @@ object ecNs extends js.Object {
   object KeyPair extends js.Object {
     def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: ellipticLib.ellipticMod.ecNs.KeyPair, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+    def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+    def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: java.lang.String, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: nodeLib.Buffer): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPrivate(ec: ellipticLib.ellipticMod.ec, priv: nodeLib.Buffer, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: ellipticLib.ellipticMod.ecNs.KeyPair, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+    def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+    def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: java.lang.String, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: nodeLib.Buffer): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
     def fromPublic(ec: ellipticLib.ellipticMod.ec, pub: nodeLib.Buffer, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   }

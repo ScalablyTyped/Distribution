@@ -11,6 +11,8 @@ trait IGroupHeaderProps
     * GroupedList id for aria-controls
     */
   var groupedListId: js.UndefOr[java.lang.String] = js.undefined
+  /** Native props for the GroupHeader select all button */
+  var selectAllButtonProps: js.UndefOr[reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLButtonElement]] = js.undefined
   /**
     * Style function to be passed in to override the themed or default styles
     */

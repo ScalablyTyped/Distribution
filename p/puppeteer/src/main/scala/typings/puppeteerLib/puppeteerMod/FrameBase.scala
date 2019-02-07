@@ -47,7 +47,7 @@ trait FrameBase extends Evalable {
     * @param fn Function to be evaluated in browser context
     * @param args Arguments to pass to `fn`
     */
-  def evaluate(fn: EvaluateFn, args: SerializableOrJSHandle*): js.Promise[_] = js.native
+  def evaluate[F /* <: EvaluateFn */](fn: F, args: SerializableOrJSHandle*): js.Promise[EvaluateFnReturnType[F]] = js.native
   /**
     * Evaluates a function in the page context.
     * If the function, passed to the page.evaluateHandle, returns a Promise, then page.evaluateHandle
@@ -122,23 +122,16 @@ trait FrameBase extends Evalable {
     * Shortcut for waitForSelector and waitForXPath
     */
   def waitFor(selector: java.lang.String, options: WaitForSelectorOptionsHidden): js.Promise[ElementHandle[stdLib.Element] | scala.Null] = js.native
-  def waitFor(selector: java.lang.String, options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
   /**
     * Shortcut for waitForFunction.
     */
-  def waitFor(selector: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def waitFor(
-    selector: js.Function1[/* repeated */ js.Any, _],
-    options: WaitForSelectorOptions,
-    args: SerializableOrJSHandle*
-  ): js.Promise[_] = js.native
+  def waitFor(selector: EvaluateFn): js.Promise[JSHandle] = js.native
+  def waitFor(selector: EvaluateFn, options: WaitForSelectorOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
   /**
     * Allows waiting for various conditions.
     */
-  def waitForFunction(fn: java.lang.String): js.Promise[_] = js.native
-  def waitForFunction(fn: java.lang.String, options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
-  def waitForFunction(fn: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-  def waitForFunction(fn: js.Function1[/* repeated */ js.Any, _], options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[_] = js.native
+  def waitForFunction(fn: EvaluateFn): js.Promise[JSHandle] = js.native
+  def waitForFunction(fn: EvaluateFn, options: PageFnOptions, args: SerializableOrJSHandle*): js.Promise[JSHandle] = js.native
   /**
     * Wait for the page navigation occur.
     * @param options The navigation parameters.

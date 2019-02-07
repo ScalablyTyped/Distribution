@@ -15,6 +15,10 @@ trait IPatternOptions extends js.Object {
   	 */
   var offsetY: scala.Double
   /**
+    * Transform matrix to change the pattern, imported from svgs
+    */
+  var patternTransform: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  /**
   	 * Repeat property of a pattern (one of repeat, repeat-x, repeat-y or no-repeat)
   	 */
   var repeat: java.lang.String

@@ -25,7 +25,7 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get "prefetch" and "preload" links as a string of `<link>` tags
   	 */
-  def getLinkTags(): js.Array[java.lang.String] = js.native
+  def getLinkTags(): java.lang.String = js.native
   /**
   	 * Get scripts as an array of React `<script>` elements.
   	 */
@@ -33,7 +33,7 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get scripts as a string of `<script>` tags
   	 */
-  def getScriptTags(): js.Array[java.lang.String] = js.native
+  def getScriptTags(): java.lang.String = js.native
   /**
   	 * Get style links as an array of React `<link>` elements
   	 */
@@ -41,7 +41,7 @@ class ChunkExtractor protected () extends js.Object {
   /**
   	 * Get style links as a string of `<link>` tags
   	 */
-  def getStyleTags(): js.Array[java.lang.String] = js.native
+  def getStyleTags(): java.lang.String = js.native
   /**
   	 * Require the entrypoint of your application as a commonjs module.
   	 */

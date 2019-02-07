@@ -11,5 +11,6 @@ trait BundleRendererOptions extends RendererOptions {
   var runInNewContext: js.UndefOr[
     scala.Boolean | vueDashServerDashRendererLib.vueDashServerDashRendererLibStrings.once
   ] = js.undefined
+  var serializer: js.UndefOr[js.Function1[/* state */ js.Object, java.lang.String]] = js.undefined
 }
 

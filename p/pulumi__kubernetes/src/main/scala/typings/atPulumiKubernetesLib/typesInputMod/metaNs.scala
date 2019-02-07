@@ -47,11 +47,13 @@ object metaNs extends js.Object {
         * client reaches the server using an internal IP. Server looks at X-Forwarded-For header or
         * X-Real-Ip header or request.RemoteAddr (in that order) to get the client IP.
         */
-      var serverAddressByClientCIDRs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ServerAddressByClientCIDR]]] = js.undefined
+      var serverAddressByClientCIDRs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServerAddressByClientCIDR]]]
+          ] = js.undefined
       /**
         * versions are the versions supported in this group.
         */
-      var versions: atPulumiPulumiLib.resourceMod.Input[js.Array[GroupVersionForDiscovery]]
+      var versions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[GroupVersionForDiscovery]]]
     }
     
     /**
@@ -68,7 +70,7 @@ object metaNs extends js.Object {
       /**
         * groups is a list of APIGroup.
         */
-      var groups: atPulumiPulumiLib.resourceMod.Input[js.Array[APIGroup]]
+      var groups: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIGroup]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -85,7 +87,9 @@ object metaNs extends js.Object {
       /**
         * categories is a list of the grouped resources this resource belongs to (e.g. 'all')
         */
-      var categories: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var categories: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * group is the preferred group of the resource.  Empty implies the group of the containing
         * resource list. For subresources, this may have a different value, for example: Scale".
@@ -106,7 +110,9 @@ object metaNs extends js.Object {
       /**
         * shortNames is a list of suggested short names of the resource.
         */
-      var shortNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var shortNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * singularName is the singular name of the resource.  This allows clients to handle plural
         * and singular opaquely. The singularName is more correct for reporting status on a single
@@ -117,7 +123,7 @@ object metaNs extends js.Object {
         * verbs is a list of supported kube verbs (this includes get, list, watch, create, update,
         * patch, delete, deletecollection, and proxy)
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * version is the preferred version of the resource.  Empty implies the version of the
         * containing resource list For subresources, this may have a different value, for example: v1
@@ -152,7 +158,7 @@ object metaNs extends js.Object {
       /**
         * resources contains the name of the resources and if they are namespaced.
         */
-      var resources: atPulumiPulumiLib.resourceMod.Input[js.Array[APIResource]]
+      var resources: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIResource]]]
     }
     
     /**
@@ -183,11 +189,11 @@ object metaNs extends js.Object {
         * client reaches the server using an internal IP. Server looks at X-Forwarded-For header or
         * X-Real-Ip header or request.RemoteAddr (in that order) to get the client IP.
         */
-      var serverAddressByClientCIDRs: atPulumiPulumiLib.resourceMod.Input[js.Array[ServerAddressByClientCIDR]]
+      var serverAddressByClientCIDRs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServerAddressByClientCIDR]]]
       /**
         * versions are the api versions that are available.
         */
-      var versions: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var versions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -206,7 +212,9 @@ object metaNs extends js.Object {
         * unrecognized dryRun directive will result in an error response and no further processing of
         * the request. Valid values are: - All: all dry run stages will be processed
         */
-      var dryRun: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var dryRun: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * The duration in seconds before the object should be deleted. Value must be non-negative
         * integer. The value zero indicates delete immediately. If this value is nil, the default
@@ -280,7 +288,7 @@ object metaNs extends js.Object {
         * initializers struct will be set to nil and the object is considered as initialized and
         * visible to all clients.
         */
-      var pending: atPulumiPulumiLib.resourceMod.Input[js.Array[Initializer]]
+      var pending: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Initializer]]]
       /**
         * If result is set with the Failure field, the object will be persisted to storage and then
         * deleted, ensuring that other clients can observe the deletion.
@@ -297,7 +305,9 @@ object metaNs extends js.Object {
       /**
         * matchExpressions is a list of label selector requirements. The requirements are ANDed.
         */
-      var matchExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[LabelSelectorRequirement]]] = js.undefined
+      var matchExpressions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LabelSelectorRequirement]]]
+          ] = js.undefined
       /**
         * matchLabels is a map of {key,value} pairs. A single {key,value} in the matchLabels map is
         * equivalent to an element of matchExpressions, whose key field is "key", the operator is
@@ -329,7 +339,9 @@ object metaNs extends js.Object {
         * be non-empty. If the operator is Exists or DoesNotExist, the values array must be empty.
         * This array is replaced during a strategic merge patch.
         */
-      var values: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var values: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -422,7 +434,9 @@ object metaNs extends js.Object {
         * for the responsible component that will remove the entry from the list. If the
         * deletionTimestamp of the object is non-nil, entries in this list can only be removed.
         */
-      var finalizers: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var finalizers: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF
         * the Name field has not been provided. If this field is used, the name returned to the
@@ -490,7 +504,9 @@ object metaNs extends js.Object {
         * in this list will point to this controller, with the controller field set to true. There
         * cannot be more than one managing controller.
         */
-      var ownerReferences: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[OwnerReference]]] = js.undefined
+      var ownerReferences: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[OwnerReference]]]
+          ] = js.undefined
       /**
         * An opaque value that represents the internal version of this object that can be used by
         * clients to determine when objects have changed. May be used for optimistic concurrency,
@@ -673,7 +689,9 @@ object metaNs extends js.Object {
         * The Causes array includes more details associated with the StatusReason failure. Not all
         * StatusReasons may provide detailed causes.
         */
-      var causes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[StatusCause]]] = js.undefined
+      var causes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatusCause]]]
+          ] = js.undefined
       /**
         * The group attribute of the resource associated with the status StatusReason.
         */

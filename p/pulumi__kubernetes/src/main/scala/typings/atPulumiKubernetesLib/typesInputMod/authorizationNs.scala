@@ -72,12 +72,14 @@ object authorizationNs extends js.Object {
         * NonResourceURLs is a set of partial urls that a user should have access to.  *s are
         * allowed, but only as the full, final step in the path.  "*" means all.
         */
-      var nonResourceURLs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nonResourceURLs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch,
         * head, options.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -130,24 +132,30 @@ object authorizationNs extends js.Object {
         * are specified, any action requested against one of the enumerated resources in any API
         * group will be allowed.  "*" means all.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.  "*" means all.
         */
-      var resourceNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resourceNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  "*" means all in the specified
         * apiGroups.
         *  "*&#8205;/foo" represents the subresource 'foo' for all resources in the specified
         * apiGroups.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update,
         * delete, proxy.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -299,7 +307,9 @@ object authorizationNs extends js.Object {
       /**
         * Groups is the groups you're testing for.
         */
-      var groups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var groups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
@@ -369,12 +379,12 @@ object authorizationNs extends js.Object {
         * NonResourceRules is the list of actions the subject is allowed to perform on non-resources.
         * The list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[NonResourceRule]]
+      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NonResourceRule]]]
       /**
         * ResourceRules is the list of actions the subject is allowed to perform on resources. The
         * list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[ResourceRule]]
+      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceRule]]]
     }
     
     def isLocalSubjectAccessReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authorization.v1.LocalSubjectAccessReview */ scala.Boolean = js.native
@@ -449,12 +459,14 @@ object authorizationNs extends js.Object {
         * NonResourceURLs is a set of partial urls that a user should have access to.  *s are
         * allowed, but only as the full, final step in the path.  "*" means all.
         */
-      var nonResourceURLs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nonResourceURLs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch,
         * head, options.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -507,24 +519,30 @@ object authorizationNs extends js.Object {
         * are specified, any action requested against one of the enumerated resources in any API
         * group will be allowed.  "*" means all.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.  "*" means all.
         */
-      var resourceNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resourceNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  "*" means all in the specified
         * apiGroups.
         *  "*&#8205;/foo" represents the subresource 'foo' for all resources in the specified
         * apiGroups.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update,
         * delete, proxy.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -682,7 +700,9 @@ object authorizationNs extends js.Object {
       /**
         * Groups is the groups you're testing for.
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var group: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
@@ -752,12 +772,12 @@ object authorizationNs extends js.Object {
         * NonResourceRules is the list of actions the subject is allowed to perform on non-resources.
         * The list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[NonResourceRule]]
+      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NonResourceRule]]]
       /**
         * ResourceRules is the list of actions the subject is allowed to perform on resources. The
         * list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[ResourceRule]]
+      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceRule]]]
     }
     
     def isLocalSubjectAccessReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authorization.v1beta1.LocalSubjectAccessReview */ scala.Boolean = js.native

@@ -34,23 +34,25 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
+  def add(key: java.lang.String, value: java.lang.String, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def add(
     key: java.lang.String,
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def add(key: java.lang.String, value: nodeLib.Buffer, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def add(
     key: java.lang.String,
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -66,21 +68,23 @@ class Client protected () extends js.Object {
     * @param value
     * @param callback
     */
+  def append(key: java.lang.String, value: java.lang.String): js.Promise[scala.Boolean] = js.native
   def append(
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def append(key: java.lang.String, value: nodeLib.Buffer): js.Promise[scala.Boolean] = js.native
   def append(
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -108,14 +112,15 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
+  def decrement(key: java.lang.String, amount: scala.Double, options: memjsLib.Anon_ExpiresInitial): js.Promise[memjsLib.Anon_Success] = js.native
   def decrement(
     key: java.lang.String,
     amount: scala.Double,
     options: memjsLib.Anon_ExpiresInitial,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
-      /* value */ js.UndefOr[scala.Double], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
+      /* value */ js.UndefOr[scala.Double | scala.Null], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -131,11 +136,12 @@ class Client protected () extends js.Object {
     * @param key
     * @param callback
     */
+  def delete(key: java.lang.String): js.Promise[scala.Boolean] = js.native
   def delete(
     key: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -151,10 +157,11 @@ class Client protected () extends js.Object {
     * `true` (if the operation was successful), or an error.
     * @param callback
     */
+  def flush(): js.Promise[stdLib.Record[java.lang.String, scala.Boolean]] = js.native
   def flush(
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* results */ js.UndefOr[stdLib.Record[java.lang.String, scala.Boolean]], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* results */ stdLib.Record[java.lang.String, scala.Boolean], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -172,12 +179,13 @@ class Client protected () extends js.Object {
     * @param key
     * @param callback
     */
+  def get(key: java.lang.String): js.Promise[memjsLib.Anon_Flags] = js.native
   def get(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* value */ js.UndefOr[nodeLib.Buffer], 
-      /* flags */ js.UndefOr[nodeLib.Buffer], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* value */ nodeLib.Buffer | scala.Null, 
+      /* flags */ nodeLib.Buffer | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -199,14 +207,15 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
+  def increment(key: java.lang.String, amount: scala.Double, options: memjsLib.Anon_ExpiresInitial): js.Promise[memjsLib.Anon_Success] = js.native
   def increment(
     key: java.lang.String,
     amount: scala.Double,
     options: memjsLib.Anon_ExpiresInitial,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
-      /* value */ js.UndefOr[scala.Double], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
+      /* value */ js.UndefOr[scala.Double | scala.Null], 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -225,11 +234,18 @@ class Client protected () extends js.Object {
     * @param callback
     * @param retries
     */
+  def perform(key: java.lang.String, request: nodeLib.Buffer, seq: scala.Double): scala.Unit = js.native
   def perform(
     key: java.lang.String,
     request: nodeLib.Buffer,
     seq: scala.Double,
-    callback: js.Function0[scala.Unit],
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
+  def perform(
+    key: java.lang.String,
+    request: nodeLib.Buffer,
+    seq: scala.Double,
+    callback: js.Function2[/* err */ nodeLib.Error | scala.Null, /* repeated */ js.Any, scala.Unit],
     retries: scala.Double
   ): scala.Unit = js.native
   /**
@@ -244,21 +260,23 @@ class Client protected () extends js.Object {
     * @param value
     * @param callback
     */
+  def prepend(key: java.lang.String, value: java.lang.String): js.Promise[scala.Boolean] = js.native
   def prepend(
     key: java.lang.String,
     value: java.lang.String,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def prepend(key: java.lang.String, value: nodeLib.Buffer): js.Promise[scala.Boolean] = js.native
   def prepend(
     key: java.lang.String,
     value: nodeLib.Buffer,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -289,23 +307,25 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
+  def replace(key: java.lang.String, value: java.lang.String, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def replace(
     key: java.lang.String,
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def replace(key: java.lang.String, value: nodeLib.Buffer, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def replace(
     key: java.lang.String,
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -323,10 +343,12 @@ class Client protected () extends js.Object {
     * _server_ is the `"hostname:port"` of the server.
     * @param callback
     */
+  def resetStats(): scala.Unit = js.native
   def resetStats(
-    callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* server */ js.UndefOr[java.lang.String], 
+    callback: js.Function3[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* server */ java.lang.String, 
+      /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -352,23 +374,46 @@ class Client protected () extends js.Object {
     * @param options
     * @param callback
     */
+  def set(key: java.lang.String, value: java.lang.String, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def set(
     key: java.lang.String,
     value: java.lang.String,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
+  def set(key: java.lang.String, value: nodeLib.Buffer, options: memjsLib.Anon_Expires): js.Promise[scala.Boolean] = js.native
   def set(
     key: java.lang.String,
     value: nodeLib.Buffer,
     options: memjsLib.Anon_Expires,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
+  /**
+    * STATS
+    *
+    * Fetches memcache stats from each connected server. The callback is invoked
+    * **ONCE PER SERVER** and has the signature:
+    *
+    *     callback(err, server, stats)
+    *
+    * _server_ is the `"hostname:port"` of the server, and _stats_ is a
+    * dictionary mapping the stat name to the value of the statistic as a string.
+    * @param callback
+    */
+  def stats(): scala.Unit = js.native
+  def stats(
+    callback: js.Function3[
+      /* err */ nodeLib.Error | scala.Null, 
+      /* server */ java.lang.String, 
+      /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -385,12 +430,13 @@ class Client protected () extends js.Object {
     * @param key
     * @param callback
     */
+  def statsWithKey(key: java.lang.String): scala.Unit = js.native
   def statsWithKey(
     key: java.lang.String,
     callback: js.Function3[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* server */ js.UndefOr[java.lang.String], 
-      /* stats */ js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* server */ java.lang.String, 
+      /* stats */ (stdLib.Record[java.lang.String, java.lang.String]) | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -406,12 +452,13 @@ class Client protected () extends js.Object {
     * @param expires
     * @param callback
     */
+  def touch(key: java.lang.String, expires: scala.Double): js.Promise[scala.Boolean] = js.native
   def touch(
     key: java.lang.String,
     expires: scala.Double,
     callback: js.Function2[
-      /* err */ js.UndefOr[nodeLib.Error | scala.Null], 
-      /* success */ js.UndefOr[scala.Boolean], 
+      /* err */ nodeLib.Error | scala.Null, 
+      /* success */ scala.Boolean | scala.Null, 
       scala.Unit
     ]
   ): scala.Unit = js.native

@@ -27,6 +27,7 @@
 //                 Drew Wyatt <https://github.com/drewwyatt>
 //                 John Ottenlips <https://github.com/jottenlips>
 //                 Nitesh Phadatare <https://github.com/minitesh>
+//                 Krantisinh Deshmukh <https://github.com/krantisinh>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

@@ -23,6 +23,7 @@ trait DomApi extends js.Object {
   def appendChild(node: stdLib.Node): stdLib.Node = js.native
   def getDestinationInsertionPoints(): js.Array[stdLib.Node] = js.native
   def getDistributedNodes(): js.Array[stdLib.Node] = js.native
+  def getEffectiveChildNodes(): js.Array[stdLib.Node] = js.native
   def getOwnerRoot(): stdLib.Node = js.native
   def insertBefore(node: stdLib.Node): stdLib.Node = js.native
   def insertBefore(node: stdLib.Node, refNode: stdLib.Node): stdLib.Node = js.native

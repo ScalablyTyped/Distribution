@@ -8,10 +8,6 @@ import scala.scalajs.js.annotation._
 package object WebdriverIONs {
   type ActionTypes = webdriverioLib.webdriverioLibStrings.press | webdriverioLib.webdriverioLibStrings.longPress | webdriverioLib.webdriverioLibStrings.tap | webdriverioLib.webdriverioLibStrings.moveTo | webdriverioLib.webdriverioLibStrings.wait | webdriverioLib.webdriverioLibStrings.release
   type Call = js.Function1[/* callback */ js.Function, js.Any]
-  type Config = Options with (Omit[
-    webdriverLib.WebDriverNs.Options, 
-    webdriverioLib.webdriverioLibStrings.capabilities
-  ]) with Hooks
   type Execute = js.Function2[
     /* script */ java.lang.String | (js.Function1[/* repeated */ js.Any, js.Any]), 
     /* repeated */ js.Any, 

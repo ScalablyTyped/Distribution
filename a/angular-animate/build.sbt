@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "angular-animate"
-version := "1.5-dt-20180514Z-2b9281"
+version := "1.5-dt-20180514Z-c4d6df"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "angular" % "1.6-dt-20181217Z-d33dcd",
+  "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-f970f0",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

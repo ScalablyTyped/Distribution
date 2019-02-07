@@ -102,6 +102,7 @@ object ^ extends js.Object {
   val ɵangular_packages_core_core_t: scala.Boolean = js.native
   val ɵdefaultIterableDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
   val ɵdefaultKeyValueDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
+  val ɵdefaultStyleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn = js.native
   var ɵglobal: nodeLib.NodeJSNs.Global = js.native
   val ɵivyEnabled: /* false */ scala.Boolean = js.native
   def asNativeElements(debugEls: js.Array[atAngularCoreLib.srcDebugDebugUnderscoreNodeMod.DebugElement]): js.Any = js.native
@@ -1616,6 +1617,7 @@ object ^ extends js.Object {
   def ɵrestoreView(viewToRestore: atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState): scala.Unit = js.native
   def ɵsanitizeHtml(unsafeHtml: js.Any): java.lang.String = js.native
   def ɵsanitizeResourceUrl(unsafeResourceUrl: js.Any): java.lang.String = js.native
+  def ɵsanitizeScript(unsafeScript: js.Any): java.lang.String = js.native
   def ɵsanitizeStyle(unsafeStyle: js.Any): java.lang.String = js.native
   def ɵsanitizeUrl(unsafeUrl: js.Any): java.lang.String = js.native
   def ɵsetClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_]): scala.Unit = js.native

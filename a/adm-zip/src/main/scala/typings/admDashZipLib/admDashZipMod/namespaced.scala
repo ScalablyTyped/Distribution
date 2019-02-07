@@ -8,13 +8,10 @@ import scala.scalajs.js.annotation._
 @JSImport("adm-zip", JSImport.Namespace)
 @js.native
 /**
-  * Create a new, empty archive.
+  * @param fileNameOrRawData If provided, reads an existing archive. Otherwise creates a new, empty archive.
   */
 class namespaced () extends AdmZip {
-  /**
-    * Read an existing archive.
-    */
-  def this(fileName: java.lang.String) = this()
-  def this(rawData: nodeLib.Buffer) = this()
+  def this(fileNameOrRawData: java.lang.String) = this()
+  def this(fileNameOrRawData: nodeLib.Buffer) = this()
 }
 

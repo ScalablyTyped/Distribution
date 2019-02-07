@@ -42,6 +42,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
     * @see columnLayout
     */
   val isColumnLayoutHorizontal: scala.Boolean = js.native
+  var isRowChanging: scala.Boolean = js.native
   val isRowsDynamic: scala.Boolean = js.native
   val locOptionsCaption: LocalizableString = js.native
   /**
@@ -56,7 +57,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def addColumn(name: java.lang.String, title: java.lang.String): MatrixDropdownColumn = js.native
   def columnLayoutChangedCallback(): scala.Unit = js.native
   def columnsChangedCallback(): scala.Unit = js.native
-  /* protected */ def createNewValue(curValue: js.Any): js.Any = js.native
+  /* protected */ def createNewValue(): js.Any = js.native
   def createQuestion(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def createQuestionCore(row: MatrixDropdownRowModelBase, column: MatrixDropdownColumn): Question = js.native
   /* protected */ def deleteRowValue(newValue: js.Any, row: MatrixDropdownRowModelBase): js.Any = js.native

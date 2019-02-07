@@ -21,6 +21,8 @@ trait StrictPopupProps
   ] = js.undefined
   /** Existing element the pop-up should be bound to. */
   var context: js.UndefOr[js.Object] = js.undefined
+  /** A disabled popup only renders its trigger. */
+  var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** A flowing Popup has no maximum width and continues to flow to fit its content. */
   var flowing: js.UndefOr[scala.Boolean] = js.undefined
   /** Header displayed above the content in bold. */

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "cal-heatmap"
-version := "v3.5.4-dt-20180214Z-f271e1"
+version := "v3.5.4-dt-20180214Z-99d3af"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "d3" % "5.7-dt-20190103Z-05f8c6",
+  "org.scalablytyped" %%% "d3" % "5.7-dt-20190103Z-48041d",
   "org.scalablytyped" %%% "d3-array" % "1.2-dt-20190131Z-0fb92b",
   "org.scalablytyped" %%% "d3-axis" % "1.0-dt-20180917Z-aa6db9",
   "org.scalablytyped" %%% "d3-brush" % "1.0-dt-20181117Z-ec23d7",
@@ -19,7 +19,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "d3-dsv" % "1.0-dt-20181228Z-fcf0a2",
   "org.scalablytyped" %%% "d3-ease" % "1.0-dt-20180214Z-54d6e4",
   "org.scalablytyped" %%% "d3-fetch" % "1.1-dt-20181228Z-1356af",
-  "org.scalablytyped" %%% "d3-force" % "1.1-dt-20180514Z-afc195",
+  "org.scalablytyped" %%% "d3-force" % "1.2-dt-20190131Z-3228b7",
   "org.scalablytyped" %%% "d3-format" % "1.3-dt-20180510Z-70c38c",
   "org.scalablytyped" %%% "d3-geo" % "1.11-dt-20190103Z-589595",
   "org.scalablytyped" %%% "d3-hierarchy" % "1.1-dt-20181208Z-5b6447",

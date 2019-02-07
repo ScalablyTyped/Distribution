@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nuka-carousel"
-version := "4.4.7-9db5ba"
+version := "4.4.7-3098dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,10 +14,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "exenv" % "1.2-dt-20180321Z-860c93",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-f7085e",
-  "org.scalablytyped" %%% "react-dom" % "16.0-dt-20181127Z-830073",
-  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-fdc198",
-  "org.scalablytyped" %%% "react-move" % "2.9.1-faa203",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190206Z-33b48d",
+  "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-9b947d",
+  "org.scalablytyped" %%% "react-move" % "2.9.1-f14b1e",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

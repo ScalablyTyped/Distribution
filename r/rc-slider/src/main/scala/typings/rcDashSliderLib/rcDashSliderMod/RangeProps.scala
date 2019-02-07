@@ -42,6 +42,11 @@ trait RangeProps extends CommonApiProps {
     */
   var pushable: js.UndefOr[scala.Boolean | scala.Double] = js.undefined
   /**
+    * Set the tabIndex of each handle.
+    * @default [0,0]
+    */
+  var tabIndex: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  /**
     * Set current positions of handles.
     */
   var value: js.UndefOr[js.Array[scala.Double]] = js.undefined

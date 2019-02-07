@@ -34,4 +34,5 @@ package object reactDashBootstrapDashTypeaheadMod {
   type TypeaheadLabelKey[T /* <: TypeaheadModel */] = StringPropertyNames[T] | (js.Function1[/* option */ T, java.lang.String])
   type TypeaheadMenuPropsPick = reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.labelKey | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.newSelectionPrefix | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.options | reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadLibStrings.renderMenuItemChildren
   type TypeaheadModel = java.lang.String | js.Object
+  type TypeaheadResult[T /* <: TypeaheadModel */] = T with reactDashBootstrapDashTypeaheadLib.Anon_CustomOption
 }

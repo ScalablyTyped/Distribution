@@ -16,10 +16,10 @@ trait Input
   def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handleReset(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native
   def renderClearIcon(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
-  def renderComponent(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderInput(prefixCls: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderLabeledIcon(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactElement[_]): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def renderLabeledInput(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactElement[_]): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def renderComponent(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderInput(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderLabeledIcon(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderLabeledInput(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactElement[_]): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderSuffix(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def saveInput(node: reactLib.HTMLInputElement): scala.Unit = js.native
   def select(): scala.Unit = js.native

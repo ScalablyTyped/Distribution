@@ -17,8 +17,13 @@ object ^ extends js.Object {
   val MemoNone: /* none */ java.lang.String = js.native
   val MemoReturn: /* return */ java.lang.String = js.native
   val MemoText: /* text */ java.lang.String = js.native
+  val TimeoutInfinite: /* 0 */ scala.Double = js.native
   def hash(data: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def sign(data: nodeLib.Buffer, rawSecret: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def verify(data: nodeLib.Buffer, signature: nodeLib.Buffer, rawPublicKey: nodeLib.Buffer): scala.Boolean = js.native
+  def sign(data: nodeLib.Buffer, rawSecret: nodeLib.Buffer): stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature = js.native
+  def verify(
+    data: nodeLib.Buffer,
+    signature: stellarDashBaseLib.stellarDashBaseMod.xdrNs.Signature,
+    rawPublicKey: nodeLib.Buffer
+  ): scala.Boolean = js.native
 }
 

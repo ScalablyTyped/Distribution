@@ -86,7 +86,7 @@ object apiregistrationNs extends js.Object {
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[APIService]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIService]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -164,7 +164,9 @@ object apiregistrationNs extends js.Object {
       /**
         * Current service state of apiService.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[APIServiceCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIServiceCondition]]]
+          ] = js.undefined
     }
     
     /**
@@ -263,7 +265,7 @@ object apiregistrationNs extends js.Object {
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[APIService]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIService]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -341,7 +343,9 @@ object apiregistrationNs extends js.Object {
       /**
         * Current service state of apiService.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[APIServiceCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIServiceCondition]]]
+          ] = js.undefined
     }
     
     /**

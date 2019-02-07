@@ -10,7 +10,7 @@ trait Params extends js.Object {
   var count: js.UndefOr[scala.Double] = js.undefined
   var cursor: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var exclude_replies: js.UndefOr[scala.Boolean] = js.undefined
-  var follow: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
+  var follow: js.UndefOr[scala.Boolean | java.lang.String | js.Array[java.lang.String]] = js.undefined
   var geocode: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined
   var include_email: js.UndefOr[scala.Boolean] = js.undefined

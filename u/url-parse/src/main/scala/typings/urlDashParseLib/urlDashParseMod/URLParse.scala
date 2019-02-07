@@ -56,5 +56,6 @@ trait URLParse extends js.Object {
     value: scala.Double,
     fn: urlDashParseLib.urlDashParseMod.URLParseNs.QueryParser
   ): URLParse = js.native
+  def toString(stringify: urlDashParseLib.urlDashParseMod.URLParseNs.StringifyQuery): java.lang.String = js.native
 }
 

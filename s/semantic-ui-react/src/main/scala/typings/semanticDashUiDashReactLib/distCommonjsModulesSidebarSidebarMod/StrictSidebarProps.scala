@@ -22,8 +22,6 @@ trait StrictSidebarProps extends js.Object {
   var direction: js.UndefOr[
     semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.top | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.bottom | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left
   ] = js.undefined
-  /** Duration of sidebar animation. */
-  var duration: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
     * Called after a sidebar has finished animating out.
     *

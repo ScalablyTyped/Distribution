@@ -16,7 +16,7 @@ class BaseFloatingPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
     officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerSuggestionsSuggestionsControlMod.SuggestionsControl[T]
   ] = js.native
   var _onValidateInput: js.Any = js.native
-  var currentPromise: js.Thenable[_] = js.native
+  var currentPromise: js.Thenable[js.Array[T]] = js.native
   val currentSelectedSuggestionIndex: scala.Double = js.native
   var root: reactLib.reactMod.ReactNs.RefObject[reactLib.HTMLDivElement] = js.native
   var selection: stdLib.Selection = js.native

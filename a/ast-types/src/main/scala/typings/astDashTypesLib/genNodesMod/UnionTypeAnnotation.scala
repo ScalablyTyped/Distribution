@@ -1,0 +1,13 @@
+package typings
+package astDashTypesLib.genNodesMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof ast-types.ast-types/gen/nodes.FlowType, 'type'> ]: ast-types.ast-types/gen/nodes.FlowType[P]} */ trait UnionTypeAnnotation extends js.Object {
+  var `type`: astDashTypesLib.astDashTypesLibStrings.UnionTypeAnnotation
+  var types: js.Array[astDashTypesLib.genKindsMod.FlowTypeKind]
+}
+

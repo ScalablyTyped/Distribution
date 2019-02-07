@@ -59,7 +59,9 @@ object authenticationNs extends js.Object {
         * for at least one of the audiences in this list. If no audiences are provided, the audience
         * will default to the audience of the Kubernetes apiserver.
         */
-      var audiences: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var audiences: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Token is the opaque bearer token.
         */
@@ -79,7 +81,9 @@ object authenticationNs extends js.Object {
         * aware. If a TokenReview returns an empty status.audience field where status.authenticated
         * is "true", the token is valid against the audience of the Kubernetes API server.
         */
-      var audiences: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var audiences: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
@@ -105,7 +109,9 @@ object authenticationNs extends js.Object {
       /**
         * The names of groups this user is a part of.
         */
-      var groups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var groups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * A unique value that identifies this user across time. If this user is deleted and another
         * user by the same name is added, they will have different UIDs.
@@ -171,7 +177,9 @@ object authenticationNs extends js.Object {
         * for at least one of the audiences in this list. If no audiences are provided, the audience
         * will default to the audience of the Kubernetes apiserver.
         */
-      var audiences: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var audiences: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Token is the opaque bearer token.
         */
@@ -191,7 +199,9 @@ object authenticationNs extends js.Object {
         * aware. If a TokenReview returns an empty status.audience field where status.authenticated
         * is "true", the token is valid against the audience of the Kubernetes API server.
         */
-      var audiences: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var audiences: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
@@ -217,7 +227,9 @@ object authenticationNs extends js.Object {
       /**
         * The names of groups this user is a part of.
         */
-      var groups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var groups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * A unique value that identifies this user across time. If this user is deleted and another
         * user by the same name is added, they will have different UIDs.

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class Keypair protected ()
   extends stellarDashBaseLib.stellarDashBaseMod.Keypair {
-  def this(keys: stellarDashBaseLib.Anon_Ed25519) = this()
-  def this(keys: stellarDashBaseLib.Anon_Ed25519Key) = this()
+  def this(keys: stellarDashBaseLib.Anon_PublicKey) = this()
+  def this(keys: stellarDashBaseLib.Anon_PublicKeyType) = this()
 }
 
 /* static members */

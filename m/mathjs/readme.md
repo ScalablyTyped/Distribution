@@ -1,5 +1,5 @@
 ```
-// Type definitions for mathjs 4.4
+// Type definitions for mathjs 5.0
 // Project: http://mathjs.org/
 // Definitions by: Ilya Shestakov <https://github.com/siavol>,
 //                  Andy Patterson <https://github.com/andnp>,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-japgolly-contrib"
-version := "201901111255-78fe29"
+version := "201901111255-43c62e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-f7085e",
-  "org.scalablytyped" %%% "react-contrib" % "201901111255-6423e7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
+  "org.scalablytyped" %%% "react-contrib" % "201901111255-1286f0",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

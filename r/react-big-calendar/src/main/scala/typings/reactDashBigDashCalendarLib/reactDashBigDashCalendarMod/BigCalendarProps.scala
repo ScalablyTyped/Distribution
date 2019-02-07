@@ -47,6 +47,7 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
   var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ stdLib.Date, /* view */ View, /* action */ Navigate, scala.Unit]
   ] = js.undefined
+  var onRangeChange: js.UndefOr[js.Function1[/* range */ reactDashBigDashCalendarLib.Anon_EndStart, scala.Unit]] = js.undefined
   var onSelectEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 

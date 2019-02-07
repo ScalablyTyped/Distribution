@@ -12,7 +12,10 @@ trait IPromise[T] extends js.Object {
     */
   def `catch`[TResult](): IPromise[T | TResult] = js.native
   def `catch`[TResult](
-    onRejected: js.Function1[/* reason */ js.Any, IPromise[scala.Nothing] | IPromise[TResult] | TResult]
+    onRejected: js.Function1[
+      /* reason */ js.Any, 
+      IPromise[scala.Nothing] | IPromise[TResult] | TResult | js.Thenable[scala.Nothing] | js.Thenable[TResult]
+    ]
   ): IPromise[T | TResult] = js.native
   /**
     * Allows you to observe either the fulfillment or rejection of a promise, but to do so without modifying the final value. This is useful to release resources or do some clean-up that needs to be done whether the promise was rejected or resolved. See the full specification for more information.
@@ -35,29 +38,53 @@ trait IPromise[T] extends js.Object {
     */
   def `then`[TResult1, TResult2](): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: js.Function1[/* value */ T, IPromise[scala.Nothing] | IPromise[TResult1] | TResult1]
+    successCallback: js.Function1[
+      /* value */ T, 
+      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+    ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: js.Function1[/* value */ T, IPromise[scala.Nothing] | IPromise[TResult1] | TResult1],
-    errorCallback: js.Function1[/* reason */ js.Any, IPromise[scala.Nothing] | IPromise[TResult2] | TResult2]
+    successCallback: js.Function1[
+      /* value */ T, 
+      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+    ],
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+    ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: js.Function1[/* value */ T, IPromise[scala.Nothing] | IPromise[TResult1] | TResult1],
-    errorCallback: js.Function1[/* reason */ js.Any, IPromise[scala.Nothing] | IPromise[TResult2] | TResult2],
+    successCallback: js.Function1[
+      /* value */ T, 
+      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+    ],
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+    ],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
-    successCallback: js.Function1[/* value */ T, IPromise[scala.Nothing] | IPromise[TResult1] | TResult1],
+    successCallback: js.Function1[
+      /* value */ T, 
+      IPromise[scala.Nothing] | IPromise[TResult1] | TResult1 | js.Thenable[scala.Nothing] | js.Thenable[TResult1]
+    ],
     errorCallback: scala.Null,
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: scala.Null,
-    errorCallback: js.Function1[/* reason */ js.Any, IPromise[scala.Nothing] | IPromise[TResult2] | TResult2]
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+    ]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](
     successCallback: scala.Null,
-    errorCallback: js.Function1[/* reason */ js.Any, IPromise[scala.Nothing] | IPromise[TResult2] | TResult2],
+    errorCallback: js.Function1[
+      /* reason */ js.Any, 
+      IPromise[scala.Nothing] | IPromise[TResult2] | TResult2 | js.Thenable[scala.Nothing] | js.Thenable[TResult2]
+    ],
     notifyCallback: js.Function1[/* state */ js.Any, _]
   ): IPromise[TResult1 | TResult2] = js.native
   def `then`[TResult1, TResult2](

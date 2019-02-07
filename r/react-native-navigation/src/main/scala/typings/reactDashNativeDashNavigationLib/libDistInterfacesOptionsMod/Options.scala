@@ -112,6 +112,10 @@ trait Options extends js.Object {
     */
   var sideMenu: js.UndefOr[OptionsSideMenu] = js.undefined
   /**
+    * Configure the splitView controller
+    */
+  var splitView: js.UndefOr[OptionsSplitView] = js.undefined
+  /**
     * Configure the status bar
     */
   var statusBar: js.UndefOr[OptionsStatusBar] = js.undefined

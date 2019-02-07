@@ -43,7 +43,7 @@ object antdLibStrings {
   sealed trait `-webkit-sticky` extends js.Object
   
   @js.native
-  sealed trait `3DOT13DOT0` extends js.Object
+  sealed trait `3DOT13DOT2` extends js.Object
   
   @js.native
   sealed trait AM extends js.Object
@@ -293,6 +293,9 @@ object antdLibStrings {
   
   @js.native
   sealed trait dashed extends js.Object
+  
+  @js.native
+  sealed trait date extends js.Object
   
   @js.native
   sealed trait default extends js.Object
@@ -961,6 +964,9 @@ object antdLibStrings {
   sealed trait thin extends js.Object
   
   @js.native
+  sealed trait time extends js.Object
+  
+  @js.native
   sealed trait `titling-caps` extends js.Object
   
   @js.native
@@ -1105,7 +1111,7 @@ object antdLibStrings {
   @scala.inline
   def `-webkit-sticky`: `-webkit-sticky` = "-webkit-sticky".asInstanceOf[`-webkit-sticky`]
   @scala.inline
-  def `3DOT13DOT0`: `3DOT13DOT0` = "3.13.0".asInstanceOf[`3DOT13DOT0`]
+  def `3DOT13DOT2`: `3DOT13DOT2` = "3.13.2".asInstanceOf[`3DOT13DOT2`]
   @scala.inline
   def AM: AM = "AM".asInstanceOf[AM]
   @scala.inline
@@ -1270,6 +1276,8 @@ object antdLibStrings {
   def dashboard: dashboard = "dashboard".asInstanceOf[dashboard]
   @scala.inline
   def dashed: dashed = "dashed".asInstanceOf[dashed]
+  @scala.inline
+  def date: date = "date".asInstanceOf[date]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   @scala.inline
@@ -1714,6 +1722,8 @@ object antdLibStrings {
   def `text-before-edge`: `text-before-edge` = "text-before-edge".asInstanceOf[`text-before-edge`]
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
+  @scala.inline
+  def time: time = "time".asInstanceOf[time]
   @scala.inline
   def `titling-caps`: `titling-caps` = "titling-caps".asInstanceOf[`titling-caps`]
   @scala.inline

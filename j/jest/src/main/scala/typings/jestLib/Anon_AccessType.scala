@@ -63,13 +63,11 @@ trait Anon_AccessType extends js.Object {
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
-  def fn[T](): jestLib.jestNs.Mock[T] = js.native
-  def fn[T](implementation: js.Function1[/* repeated */ js.Any, _]): jestLib.jestNs.Mock[T] = js.native
+  def fn(): jestLib.jestNs.Mock[_, _] = js.native
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
-  @JSName("fn")
-  def fn_TObject[T /* <: js.Object */](implementation: js.Function1[/* repeated */ js.Any, T]): jestLib.jestNs.Mock[T] = js.native
+  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): jestLib.jestNs.Mock[T, Y] = js.native
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */
@@ -77,7 +75,7 @@ trait Anon_AccessType extends js.Object {
   /**
     * Returns whether the given function is a mock function.
     */
-  def isMockFunction(fn: js.Any): /* is jest.jest.Mock<any> */ scala.Boolean = js.native
+  def isMockFunction(fn: js.Any): /* is jest.jest.Mock<any, any> */ scala.Boolean = js.native
   /**
     * Mocks a module with an auto-mocked version when it is being required.
     */
@@ -151,6 +149,10 @@ trait Anon_AccessType extends js.Object {
     * Note: The default timeout interval is 5 seconds if this method is not called.
     */
   def setTimeout(timeout: scala.Double): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
+  def spyOn[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M): jestLib.jestNs.SpyInstance[
+    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any], 
+    ArgsType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+  ] = js.native
   /**
     * Creates a mock function similar to jest.fn but also tracks calls to `object[methodName]`
     *
@@ -172,11 +174,16 @@ trait Anon_AccessType extends js.Object {
     *   spy.mockRestore();
     * });
     */
-  def spyOn[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M): jestLib.jestNs.SpyInstance[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any] = js.native
   @JSName("spyOn")
-  def spyOn_get[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): jestLib.jestNs.SpyInstance[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any] = js.native
+  def spyOn_get[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): jestLib.jestNs.SpyInstance[
+    /* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any, 
+    js.Array[js.Any]
+  ] = js.native
   @JSName("spyOn")
-  def spyOn_set[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): jestLib.jestNs.SpyInstance[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any] = js.native
+  def spyOn_set[T /* <: js.Object */, M /* <: java.lang.String */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): jestLib.jestNs.SpyInstance[
+    scala.Unit, 
+    js.Array[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+  ] = js.native
   /**
     * Indicates that the module system should never return a mocked version of
     * the specified module from require() (e.g. that it should always return the real module).

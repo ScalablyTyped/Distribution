@@ -10,6 +10,14 @@ trait VictoryBarProps
      with VictoryCommonProps
      with VictoryDatableProps {
   /**
+    * The alignment prop specifies how bars should be aligned relative to their data points.
+    * This prop may be given as “start”, “middle” or “end”. When this prop is not specified,
+    * bars will have “middle” alignment relative to their data points.
+    */
+  var alignment: js.UndefOr[
+    victoryLib.victoryLibStrings.start | victoryLib.victoryLibStrings.middle | victoryLib.victoryLibStrings.end
+  ] = js.undefined
+  /**
     * The barRatio prop specifies an approximate ratio between bar widths and spaces between bars.
     * When width is not specified via the barWidth prop or in bar styles, the barRatio prop will
     * be used to calculate a default width for each bar given the total number of bars in the data series
@@ -29,7 +37,7 @@ trait VictoryBarProps
     * If this prop is given as a single number, the radius will only be applied to the top of each bar.
     * When this prop is given as a function, it will be evaluated with the arguments datum, and active.
     */
-  var cornerRadius: js.UndefOr[NumberOrCallback] = js.undefined
+  var cornerRadius: js.UndefOr[NumberOrCallback | victoryLib.Anon_Bottom] = js.undefined
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
@@ -74,7 +82,6 @@ trait VictoryBarProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

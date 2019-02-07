@@ -19,6 +19,8 @@ trait IQuestion
   def isEmpty(): scala.Boolean
   def onSurveyValueChanged(newValue: js.Any): js.Any
   def supportGoNextPageAutomatic(): scala.Boolean
+  def updateCommentFromSurvey(newValue: js.Any): js.Any
+  def updateValueFromSurvey(newValue: js.Any): js.Any
   def updateValueWithDefaults(): js.Any
 }
 

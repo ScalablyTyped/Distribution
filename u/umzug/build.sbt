@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "umzug"
-version := "v2.2.0-dt-20180731Z-194c3d"
+version := "v2.2.0-dt-20180731Z-477351"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
   "org.scalablytyped" %%% "mongodb" % "v3.1-dt-20190110Z-c008a8",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
-  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190116Z-c29e1b",
+  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190201Z-f96043",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "validator" % "v10.9.0-dt-20181214Z-93e6e9")
 publishArtifact in packageDoc := false

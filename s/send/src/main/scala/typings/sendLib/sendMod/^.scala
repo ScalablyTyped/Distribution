@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("send", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var mime: sendLib.Anon_Defaulttype = js.native
+  var mime: sendLib.Anon_Define = js.native
   /**
     * Create a new SendStream for the given path to send to a res.
     * The req is the Node.js HTTP request and the path is a urlencoded path to send (urlencoded, not the actual file-system path).

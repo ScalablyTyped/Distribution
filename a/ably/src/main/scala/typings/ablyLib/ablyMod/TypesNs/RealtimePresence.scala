@@ -18,18 +18,17 @@ trait RealtimePresence extends js.Object {
   def enterClient(clientId: java.lang.String, data: errorCallback, callback: errorCallback): scala.Unit = js.native
   def enterClient(clientId: java.lang.String, data: js.Any): scala.Unit = js.native
   def enterClient(clientId: java.lang.String, data: js.Any, callback: errorCallback): scala.Unit = js.native
-  def get(Params: RealtimePresenceParams): scala.Unit = js.native
-  def get(Params: RealtimePresenceParams, callback: realtimePresenceGetCallback): scala.Unit = js.native
-  def get(Params: realtimePresenceGetCallback): scala.Unit = js.native
-  def get(Params: realtimePresenceGetCallback, callback: realtimePresenceGetCallback): scala.Unit = js.native
-  def history(ParamsOrCallback: RealtimePresenceHistoryParams): scala.Unit = js.native
+  def get(): scala.Unit = js.native
+  def get(paramsOrCallback: RealtimePresenceParams): scala.Unit = js.native
+  def get(paramsOrCallback: RealtimePresenceParams, callback: realtimePresenceGetCallback): scala.Unit = js.native
+  def get(paramsOrCallback: realtimePresenceGetCallback): scala.Unit = js.native
+  def get(paramsOrCallback: realtimePresenceGetCallback, callback: realtimePresenceGetCallback): scala.Unit = js.native
+  def history(): scala.Unit = js.native
+  def history(paramsOrCallback: RealtimeHistoryParams): scala.Unit = js.native
+  def history(paramsOrCallback: RealtimeHistoryParams, callback: paginatedResultCallback[PresenceMessage]): scala.Unit = js.native
+  def history(paramsOrCallback: paginatedResultCallback[PresenceMessage]): scala.Unit = js.native
   def history(
-    ParamsOrCallback: RealtimePresenceHistoryParams,
-    callback: paginatedResultCallback[PresenceMessage]
-  ): scala.Unit = js.native
-  def history(ParamsOrCallback: paginatedResultCallback[PresenceMessage]): scala.Unit = js.native
-  def history(
-    ParamsOrCallback: paginatedResultCallback[PresenceMessage],
+    paramsOrCallback: paginatedResultCallback[PresenceMessage],
     callback: paginatedResultCallback[PresenceMessage]
   ): scala.Unit = js.native
   def leave(): scala.Unit = js.native
@@ -42,12 +41,27 @@ trait RealtimePresence extends js.Object {
   def leaveClient(clientId: java.lang.String, data: errorCallback, callback: errorCallback): scala.Unit = js.native
   def leaveClient(clientId: java.lang.String, data: js.Any): scala.Unit = js.native
   def leaveClient(clientId: java.lang.String, data: js.Any, callback: errorCallback): scala.Unit = js.native
-  def subscribe(presenceOrCallback: PresenceAction): scala.Unit = js.native
-  def subscribe(presenceOrCallback: PresenceAction, listener: messageCallback[PresenceMessage]): scala.Unit = js.native
-  def subscribe(presenceOrCallback: messageCallback[PresenceMessage]): scala.Unit = js.native
-  def subscribe(presenceOrCallback: messageCallback[PresenceMessage], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
-  def subscribe(presenceOrCallback: js.Array[PresenceAction]): scala.Unit = js.native
-  def subscribe(presenceOrCallback: js.Array[PresenceAction], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(presenceOrListener: PresenceAction): scala.Unit = js.native
+  def subscribe(presenceOrListener: PresenceAction, listener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(
+    presenceOrListener: PresenceAction,
+    listener: messageCallback[PresenceMessage],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
+  def subscribe(presenceOrListener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(presenceOrListener: messageCallback[PresenceMessage], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(
+    presenceOrListener: messageCallback[PresenceMessage],
+    listener: messageCallback[PresenceMessage],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
+  def subscribe(presenceOrListener: js.Array[PresenceAction]): scala.Unit = js.native
+  def subscribe(presenceOrListener: js.Array[PresenceAction], listener: messageCallback[PresenceMessage]): scala.Unit = js.native
+  def subscribe(
+    presenceOrListener: js.Array[PresenceAction],
+    listener: messageCallback[PresenceMessage],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
   def unsubscribe(): scala.Unit = js.native
   def unsubscribe(presence: PresenceAction): scala.Unit = js.native
   def unsubscribe(presence: PresenceAction, listener: messageCallback[PresenceMessage]): scala.Unit = js.native

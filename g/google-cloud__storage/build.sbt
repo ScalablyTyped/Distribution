@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__storage"
-version := "2.4.1-994786"
+version := "2.4.2-67e50a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,21 +17,21 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ent" % "2.2.0-dt-20180214Z-ccb1c0",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20180214Z-a9baf4",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-c97100",
-  "org.scalablytyped" %%% "gaxios" % "1.2.8-5762ce",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-329e61",
-  "org.scalablytyped" %%% "gcs-resumable-upload" % "0.14.1-c960b4",
-  "org.scalablytyped" %%% "google-auth-library" % "3.0.1-db4e29",
-  "org.scalablytyped" %%% "google-cloud__common" % "0.30.2-dbc9bf",
+  "org.scalablytyped" %%% "gaxios" % "1.4.0-55959c",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-121f9f",
+  "org.scalablytyped" %%% "gcs-resumable-upload" % "0.14.1-f27fdb",
+  "org.scalablytyped" %%% "google-auth-library" % "3.0.1-3946a5",
+  "org.scalablytyped" %%% "google-cloud__common" % "0.31.0-92cd79",
   "org.scalablytyped" %%% "google-cloud__paginator" % "0.1.2-835ae1",
   "org.scalablytyped" %%% "google-cloud__projectify" % "0.3.2-1fa8db",
   "org.scalablytyped" %%% "google-cloud__promisify" % "0.3.1-86aab6",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-778a8e",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-2a5c3d",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-21b2d0",
   "org.scalablytyped" %%% "is" % "0.0-unknown-dt-20181106Z-2af66c",
   "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-bc33f4",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-d714a0",
   "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-ac2bc3",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-45605c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "mime-types" % "2.1-dt-20180214Z-90c444",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190130Z-d2c791",

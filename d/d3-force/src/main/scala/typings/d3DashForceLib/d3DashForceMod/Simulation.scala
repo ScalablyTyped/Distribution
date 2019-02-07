@@ -199,13 +199,17 @@ trait Simulation[NodeDatum /* <: SimulationNodeDatum */, LinkDatum /* <: js.Unde
     */
   def stop(): this.type = js.native
   /**
-    * Increments the current alpha by (alphaTarget - alpha) × alphaDecay; then invokes each registered force, passing the new alpha;
+    * Manually steps the simulation by the specified number of *iterations*, and returns the simulation. If *iterations* is not specified, it defaults to 1 (single step).
+    *
+    * For each iteration, it increments the current alpha by (alphaTarget - alpha) × alphaDecay; then invokes each registered force, passing the new alpha;
     * then decrements each node’s velocity by velocity × velocityDecay; lastly increments each node’s position by velocity.
+    *
     * This method does not dispatch events; events are only dispatched by the internal timer when the simulation is started automatically upon
     * creation or by calling simulation.restart. The natural number of ticks when the simulation is started is
     * ⌈log(alphaMin) / log(1 - alphaDecay)⌉; by default, this is 300.
     */
   def tick(): scala.Unit = js.native
+  def tick(iterations: scala.Double): scala.Unit = js.native
   /**
     * Return the current target alpha value, which defaults to 0.4.
     */

@@ -42,6 +42,15 @@ trait Pubnub extends js.Object {
     ]
   ): scala.Unit = js.native
   def getUUID(): java.lang.String = js.native
+  def grant(params: pubnubLib.pubnubMod.PubnubNs.GrantParameters): js.Promise[js.Object] = js.native
+  def grant(
+    params: pubnubLib.pubnubMod.PubnubNs.GrantParameters,
+    callback: js.Function2[
+      /* status */ pubnubLib.pubnubMod.PubnubNs.GrantStatus, 
+      /* response */ js.Object, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def hereNow(params: pubnubLib.pubnubMod.PubnubNs.HereNowParameters): js.Promise[pubnubLib.pubnubMod.PubnubNs.HereNowResponse] = js.native
   def hereNow(
     params: pubnubLib.pubnubMod.PubnubNs.HereNowParameters,

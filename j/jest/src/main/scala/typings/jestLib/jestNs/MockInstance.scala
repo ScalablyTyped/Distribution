@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait MockInstance[T] extends js.Object {
+trait MockInstance[T, Y /* <: js.Array[_] */] extends js.Object {
   /** Provides access to the mock's metadata */
-  var mock: MockContext[T] = js.native
+  var mock: MockContext[T, Y] = js.native
   /** Returns the mock name string set by calling `mockFn.mockName(value)`. */
   def getMockName(): java.lang.String = js.native
   /**
@@ -28,8 +28,8 @@ trait MockInstance[T] extends js.Object {
     *
     * Note: `jest.fn(implementation)` is a shorthand for `jest.fn().mockImplementation(implementation)`.
     */
-  def mockImplementation(): Mock[T] = js.native
-  def mockImplementation(fn: js.Function1[/* repeated */ js.Any, _]): Mock[T] = js.native
+  def mockImplementation(): Mock[T, Y] = js.native
+  def mockImplementation(fn: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
   /**
     * Accepts a function that will be used as an implementation of the mock for one call to the mocked function.
     * Can be chained so that multiple function calls produce different results.
@@ -45,9 +45,9 @@ trait MockInstance[T] extends js.Object {
     *
     * myMockFn((err, val) => console.log(val)); // false
     */
-  def mockImplementationOnce(fn: js.Function1[/* repeated */ js.Any, _]): Mock[T] = js.native
+  def mockImplementationOnce(fn: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
   /** Sets the name of the mock`. */
-  def mockName(name: java.lang.String): Mock[T] = js.native
+  def mockName(name: java.lang.String): Mock[T, Y] = js.native
   /**
     * Simple sugar function for: `jest.fn().mockImplementation(() => Promise.reject(value));`
     *
@@ -59,7 +59,7 @@ trait MockInstance[T] extends js.Object {
     *   await asyncMock(); // throws "Async error"
     * });
     */
-  def mockRejectedValue(value: js.Any): Mock[T] = js.native
+  def mockRejectedValue(value: js.Any): Mock[js.Promise[T], Y] = js.native
   /**
     * Simple sugar function for: `jest.fn().mockImplementationOnce(() => Promise.reject(value));`
     *
@@ -76,7 +76,7 @@ trait MockInstance[T] extends js.Object {
     * });
     *
     */
-  def mockRejectedValueOnce(value: js.Any): Mock[T] = js.native
+  def mockRejectedValueOnce(value: js.Any): Mock[js.Promise[T], Y] = js.native
   /**
     * Resets all information stored in the mock, including any initial implementation and mock name given.
     *
@@ -90,7 +90,8 @@ trait MockInstance[T] extends js.Object {
   /**
     * Simple sugar function for: `jest.fn().mockImplementation(() => Promise.resolve(value));`
     */
-  def mockResolvedValue(value: js.Any): Mock[T] = js.native
+  def mockResolvedValue(value: T): Mock[js.Promise[T], Y] = js.native
+  def mockResolvedValue(value: js.Thenable[T]): Mock[js.Promise[T], Y] = js.native
   /**
     * Simple sugar function for: `jest.fn().mockImplementationOnce(() => Promise.resolve(value));`
     *
@@ -110,7 +111,8 @@ trait MockInstance[T] extends js.Object {
     * });
     *
     */
-  def mockResolvedValueOnce(value: js.Any): Mock[T] = js.native
+  def mockResolvedValueOnce(value: T): Mock[js.Promise[T], Y] = js.native
+  def mockResolvedValueOnce(value: js.Thenable[T]): Mock[js.Promise[T], Y] = js.native
   /**
     * Does everything that `mockFn.mockReset()` does, and also restores the original (non-mocked) implementation.
     *
@@ -132,7 +134,7 @@ trait MockInstance[T] extends js.Object {
     *     return this;
     *   });
     */
-  def mockReturnThis(): Mock[T] = js.native
+  def mockReturnThis(): Mock[T, Y] = js.native
   /**
     * Accepts a value that will be returned whenever the mock function is called.
     *
@@ -144,7 +146,7 @@ trait MockInstance[T] extends js.Object {
     * mock.mockReturnValue(43);
     * mock(); // 43
     */
-  def mockReturnValue(value: js.Any): Mock[T] = js.native
+  def mockReturnValue(value: T): Mock[T, Y] = js.native
   /**
     * Accepts a value that will be returned for one call to the mock function. Can be chained so that
     * successive calls to the mock function return different values. When there are no more
@@ -161,6 +163,6 @@ trait MockInstance[T] extends js.Object {
     * console.log(myMockFn(), myMockFn(), myMockFn(), myMockFn());
     *
     */
-  def mockReturnValueOnce(value: js.Any): Mock[T] = js.native
+  def mockReturnValueOnce(value: T): Mock[T, Y] = js.native
 }
 

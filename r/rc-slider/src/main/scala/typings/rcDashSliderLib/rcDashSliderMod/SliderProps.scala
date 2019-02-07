@@ -24,6 +24,11 @@ trait SliderProps extends CommonApiProps {
     */
   var onChange: js.UndefOr[js.Function1[/* value */ scala.Double, scala.Unit]] = js.undefined
   /**
+    * Set the tabIndex of the slider handle.
+    * @default 0
+    */
+  var tabIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Set current value of slider.
     */
   var value: js.UndefOr[scala.Double] = js.undefined

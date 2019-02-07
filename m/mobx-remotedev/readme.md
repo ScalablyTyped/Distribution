@@ -1,5 +1,6 @@
 ```
 /**
- * Wrapper/Decorator for Mobx stores
+ * Decorator for Mobx stores
  */
+
 ```

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fluxible-addons-react"
-version := "0.2-dt-20181009Z-4d4cf8"
+version := "0.2-dt-20181009Z-081b9e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fluxible" % "1.4-dt-20181009Z-feee1e",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-f7085e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

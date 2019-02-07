@@ -253,11 +253,15 @@ object coreNs extends js.Object {
       /**
         * Added capabilities
         */
-      var add: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var add: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Removed capabilities
         */
-      var drop: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var drop: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -269,7 +273,7 @@ object coreNs extends js.Object {
         * Required: Monitors is a collection of Ceph monitors More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
         */
@@ -306,7 +310,7 @@ object coreNs extends js.Object {
         * Required: Monitors is a collection of Ceph monitors More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
         */
@@ -441,7 +445,9 @@ object coreNs extends js.Object {
       /**
         * List of component conditions observed
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ComponentCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ComponentCondition]]]
+          ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -476,7 +482,7 @@ object coreNs extends js.Object {
       /**
         * List of ComponentStatus objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ComponentStatus]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ComponentStatus]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -597,7 +603,7 @@ object coreNs extends js.Object {
       /**
         * Items is the list of ConfigMaps.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ConfigMap]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ConfigMap]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -663,7 +669,9 @@ object coreNs extends js.Object {
         * volume setup will error unless it is marked optional. Paths must be relative and may not
         * contain the '..' path or start with '..'.
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[KeyToPath]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+          ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
@@ -699,7 +707,9 @@ object coreNs extends js.Object {
         * volume setup will error unless it is marked optional. Paths must be relative and may not
         * contain the '..' path or start with '..'.
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[KeyToPath]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+          ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
@@ -724,7 +734,9 @@ object coreNs extends js.Object {
         * updated. More info:
         * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
         */
-      var args: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var args: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if
         * this is not provided. Variable references $(VAR_NAME) are expanded using the container's
@@ -734,11 +746,15 @@ object coreNs extends js.Object {
         * not. Cannot be updated. More info:
         * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
         */
-      var command: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var command: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * List of environment variables to set in the container. Cannot be updated.
         */
-      var env: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EnvVar]]] = js.undefined
+      var env: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EnvVar]]]
+          ] = js.undefined
       /**
         * List of sources to populate environment variables in the container. The keys defined within
         * a source must be a C_IDENTIFIER. All invalid keys will be reported as an event when the
@@ -746,7 +762,9 @@ object coreNs extends js.Object {
         * last source will take precedence. Values defined by an Env with a duplicate key will take
         * precedence. Cannot be updated.
         */
-      var envFrom: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EnvFromSource]]] = js.undefined
+      var envFrom: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EnvFromSource]]]
+          ] = js.undefined
       /**
         * Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images This
         * field is optional to allow higher level config management to default or override container
@@ -782,7 +800,9 @@ object coreNs extends js.Object {
         * Any port which is listening on the default "0.0.0.0" address inside a container will be
         * accessible from the network. Cannot be updated.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ContainerPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerPort]]]
+          ] = js.undefined
       /**
         * Periodic probe of container service readiness. Container will be removed from service
         * endpoints if the probe fails. Cannot be updated. More info:
@@ -841,11 +861,15 @@ object coreNs extends js.Object {
         * volumeDevices is the list of block devices to be used by the container. This is a beta
         * feature.
         */
-      var volumeDevices: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeDevice]]] = js.undefined
+      var volumeDevices: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeDevice]]]
+          ] = js.undefined
       /**
         * Pod volumes to mount into the container's filesystem. Cannot be updated.
         */
-      var volumeMounts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeMount]]] = js.undefined
+      var volumeMounts: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeMount]]]
+          ] = js.undefined
       /**
         * Container's working directory. If not specified, the container runtime's default will be
         * used, which might be configured in the container image. Cannot be updated.
@@ -861,7 +885,7 @@ object coreNs extends js.Object {
         * Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7",
         * "dockerhub.io/google_containers/hyperkube:v1.0.7"]
         */
-      var names: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var names: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * The size of the image in bytes.
         */
@@ -1036,7 +1060,9 @@ object coreNs extends js.Object {
       /**
         * Items is a list of DownwardAPIVolume file
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DownwardAPIVolumeFile]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DownwardAPIVolumeFile]]]
+          ] = js.undefined
     }
     
     /**
@@ -1082,7 +1108,9 @@ object coreNs extends js.Object {
       /**
         * Items is a list of downward API volume file
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DownwardAPIVolumeFile]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DownwardAPIVolumeFile]]]
+          ] = js.undefined
     }
     
     /**
@@ -1166,17 +1194,23 @@ object coreNs extends js.Object {
         * IP addresses which offer the related ports that are marked as ready. These endpoints should
         * be considered safe for load balancers and clients to utilize.
         */
-      var addresses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointAddress]]] = js.undefined
+      var addresses: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointAddress]]]
+          ] = js.undefined
       /**
         * IP addresses which offer the related ports but are not currently marked as ready because
         * they have not yet finished starting, have recently failed a readiness check, or have
         * recently failed a liveness check.
         */
-      var notReadyAddresses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointAddress]]] = js.undefined
+      var notReadyAddresses: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointAddress]]]
+          ] = js.undefined
       /**
         * Port numbers available on the related IP addresses.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointPort]]]
+          ] = js.undefined
     }
     
     /**
@@ -1227,7 +1261,9 @@ object coreNs extends js.Object {
         * will appear in both Addresses and NotReadyAddresses in the same subset. Sets of addresses
         * and ports that comprise a service.
         */
-      var subsets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[EndpointSubset]]] = js.undefined
+      var subsets: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointSubset]]]
+          ] = js.undefined
     }
     
     /**
@@ -1246,7 +1282,7 @@ object coreNs extends js.Object {
       /**
         * List of endpoints.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Endpoints]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Endpoints]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1432,7 +1468,7 @@ object coreNs extends js.Object {
       /**
         * List of events
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Event]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Event]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1495,7 +1531,9 @@ object coreNs extends js.Object {
         * shell, you need to explicitly call out to that shell. Exit status of 0 is treated as
         * live/healthy and non-zero is unhealthy.
         */
-      var command: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var command: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -1520,12 +1558,16 @@ object coreNs extends js.Object {
       /**
         * Optional: FC target worldwide names (WWNs)
         */
-      var targetWWNs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var targetWWNs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Optional: FC volume world wide identifiers (wwids) Either wwids or combination of
         * targetWWNs and lun must be set, but not both simultaneously.
         */
-      var wwids: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var wwids: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -1738,7 +1780,9 @@ object coreNs extends js.Object {
       /**
         * Custom headers to set in the request. HTTP allows repeated headers.
         */
-      var httpHeaders: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[HTTPHeader]]] = js.undefined
+      var httpHeaders: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HTTPHeader]]]
+          ] = js.undefined
       /**
         * Path to access on the HTTP server.
         */
@@ -1794,7 +1838,9 @@ object coreNs extends js.Object {
       /**
         * Hostnames for the above IP address.
         */
-      var hostnames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var hostnames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * IP address of the host file entry.
         */
@@ -1860,7 +1906,9 @@ object coreNs extends js.Object {
         * iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other
         * than default (typically TCP ports 860 and 3260).
         */
-      var portals: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var portals: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
         */
@@ -1918,7 +1966,9 @@ object coreNs extends js.Object {
         * iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other
         * than default (typically TCP ports 860 and 3260).
         */
-      var portals: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var portals: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
         */
@@ -2065,7 +2115,7 @@ object coreNs extends js.Object {
         * Items is a list of LimitRange objects. More info:
         * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[LimitRange]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LimitRange]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2091,7 +2141,7 @@ object coreNs extends js.Object {
       /**
         * Limits is the list of LimitRangeItem objects that are enforced.
         */
-      var limits: atPulumiPulumiLib.resourceMod.Input[js.Array[LimitRangeItem]]
+      var limits: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LimitRangeItem]]]
     }
     
     /**
@@ -2119,7 +2169,9 @@ object coreNs extends js.Object {
         * Ingress is a list containing ingress points for the load-balancer. Traffic intended for the
         * service should be sent to these ingress points.
         */
-      var ingress: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[LoadBalancerIngress]]] = js.undefined
+      var ingress: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LoadBalancerIngress]]]
+          ] = js.undefined
     }
     
     /**
@@ -2231,7 +2283,7 @@ object coreNs extends js.Object {
         * Items is the list of Namespace objects in the list. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Namespace]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Namespace]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2258,7 +2310,9 @@ object coreNs extends js.Object {
         * Finalizers is an opaque list of values that must be empty to permanently remove object from
         * storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
         */
-      var finalizers: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var finalizers: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -2341,7 +2395,9 @@ object coreNs extends js.Object {
         * the elements of this field and adding "weight" to the sum if the node matches the
         * corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
         */
-      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PreferredSchedulingTerm]]] = js.undefined
+      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PreferredSchedulingTerm]]]
+          ] = js.undefined
       /**
         * If the affinity requirements specified by this field are not met at scheduling time, the
         * pod will not be scheduled onto the node. If the affinity requirements specified by this
@@ -2468,7 +2524,7 @@ object coreNs extends js.Object {
       /**
         * List of nodes
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Node]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Node]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2496,7 +2552,7 @@ object coreNs extends js.Object {
       /**
         * Required. A list of node selector terms. The terms are ORed.
         */
-      var nodeSelectorTerms: atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorTerm]]
+      var nodeSelectorTerms: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorTerm]]]
     }
     
     /**
@@ -2519,7 +2575,9 @@ object coreNs extends js.Object {
         * the operator is Gt or Lt, the values array must have a single element, which will be
         * interpreted as an integer. This array is replaced during a strategic merge patch.
         */
-      var values: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var values: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -2530,11 +2588,15 @@ object coreNs extends js.Object {
       /**
         * A list of node selector requirements by node's labels.
         */
-      var matchExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorRequirement]]] = js.undefined
+      var matchExpressions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorRequirement]]]
+          ] = js.undefined
       /**
         * A list of node selector requirements by node's fields.
         */
-      var matchFields: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeSelectorRequirement]]] = js.undefined
+      var matchFields: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorRequirement]]]
+          ] = js.undefined
     }
     
     /**
@@ -2563,7 +2625,9 @@ object coreNs extends js.Object {
       /**
         * If specified, the node's taints.
         */
-      var taints: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Taint]]] = js.undefined
+      var taints: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Taint]]]
+          ] = js.undefined
       /**
         * Unschedulable controls node schedulability of new pods. By default, node is schedulable.
         * More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
@@ -2579,7 +2643,9 @@ object coreNs extends js.Object {
         * List of addresses reachable to the node. Queried from cloud provider, if available. More
         * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses
         */
-      var addresses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeAddress]]] = js.undefined
+      var addresses: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeAddress]]]
+          ] = js.undefined
       /**
         * Allocatable represents the resources of a node that are available for scheduling. Defaults
         * to Capacity.
@@ -2594,7 +2660,9 @@ object coreNs extends js.Object {
         * Conditions is an array of current observed node conditions. More info:
         * https://kubernetes.io/docs/concepts/nodes/node/#condition
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NodeCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeCondition]]]
+          ] = js.undefined
       /**
         * Status of the config assigned to the node via the dynamic Kubelet config feature.
         */
@@ -2606,7 +2674,9 @@ object coreNs extends js.Object {
       /**
         * List of container images on this node
         */
-      var images: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ContainerImage]]] = js.undefined
+      var images: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerImage]]]
+          ] = js.undefined
       /**
         * Set of ids/uuids to uniquely identify the node. More info:
         * https://kubernetes.io/docs/concepts/nodes/node/#info
@@ -2621,11 +2691,15 @@ object coreNs extends js.Object {
       /**
         * List of volumes that are attached to the node.
         */
-      var volumesAttached: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AttachedVolume]]] = js.undefined
+      var volumesAttached: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AttachedVolume]]]
+          ] = js.undefined
       /**
         * List of attachable volumes in use (mounted) by the node.
         */
-      var volumesInUse: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var volumesInUse: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -2867,7 +2941,7 @@ object coreNs extends js.Object {
         * A list of persistent volume claims. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PersistentVolumeClaim]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaim]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2895,7 +2969,9 @@ object coreNs extends js.Object {
         * AccessModes contains the desired access modes the volume should have. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
         */
-      var accessModes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var accessModes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * This field requires the VolumeSnapshotDataSource alpha feature gate to be enabled and
         * currently VolumeSnapshot is the only supported data source. If the provisioner can support
@@ -2940,7 +3016,9 @@ object coreNs extends js.Object {
         * AccessModes contains the actual access modes the volume backing the PVC has. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
         */
-      var accessModes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var accessModes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Represents the actual resources of the underlying volume.
         */
@@ -2949,7 +3027,9 @@ object coreNs extends js.Object {
         * Current Condition of persistent volume claim. If underlying persistent volume is being
         * resized then the Condition will be set to 'ResizeStarted'.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PersistentVolumeClaimCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaimCondition]]]
+          ] = js.undefined
       /**
         * Phase represents the current phase of PersistentVolumeClaim.
         */
@@ -2992,7 +3072,7 @@ object coreNs extends js.Object {
         * List of persistent volumes. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PersistentVolume]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolume]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3019,7 +3099,9 @@ object coreNs extends js.Object {
         * AccessModes contains all ways the volume can be mounted. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
         */
-      var accessModes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var accessModes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host
         * machine and then exposed to the pod. More info:
@@ -3107,7 +3189,9 @@ object coreNs extends js.Object {
         * is invalid. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
         */
-      var mountOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var mountOptions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NFS represents an NFS mount on the host. Provisioned by an admin. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#nfs
@@ -3263,7 +3347,9 @@ object coreNs extends js.Object {
         * matches the corresponding podAffinityTerm; the node(s) with the highest sum are the most
         * preferred.
         */
-      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[WeightedPodAffinityTerm]]] = js.undefined
+      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[WeightedPodAffinityTerm]]]
+          ] = js.undefined
       /**
         * If the affinity requirements specified by this field are not met at scheduling time, the
         * pod will not be scheduled onto the node. If the affinity requirements specified by this
@@ -3272,7 +3358,9 @@ object coreNs extends js.Object {
         * multiple elements, the lists of nodes corresponding to each podAffinityTerm are
         * intersected, i.e. all terms must be satisfied.
         */
-      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodAffinityTerm]]] = js.undefined
+      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodAffinityTerm]]]
+          ] = js.undefined
     }
     
     /**
@@ -3292,7 +3380,9 @@ object coreNs extends js.Object {
         * namespaces specifies which namespaces the labelSelector applies to (matches against); null
         * or empty list means "this pod's namespace"
         */
-      var namespaces: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var namespaces: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods
         * matching the labelSelector in the specified namespaces, where co-located is defined as
@@ -3316,7 +3406,9 @@ object coreNs extends js.Object {
         * pods which matches the corresponding podAffinityTerm; the node(s) with the highest sum are
         * the most preferred.
         */
-      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[WeightedPodAffinityTerm]]] = js.undefined
+      var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[WeightedPodAffinityTerm]]]
+          ] = js.undefined
       /**
         * If the anti-affinity requirements specified by this field are not met at scheduling time,
         * the pod will not be scheduled onto the node. If the anti-affinity requirements specified by
@@ -3325,7 +3417,9 @@ object coreNs extends js.Object {
         * there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are
         * intersected, i.e. all terms must be satisfied.
         */
-      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodAffinityTerm]]] = js.undefined
+      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodAffinityTerm]]]
+          ] = js.undefined
     }
     
     /**
@@ -3369,18 +3463,24 @@ object coreNs extends js.Object {
         * A list of DNS name server IP addresses. This will be appended to the base nameservers
         * generated from DNSPolicy. Duplicated nameservers will be removed.
         */
-      var nameservers: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nameservers: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * A list of DNS resolver options. This will be merged with the base options generated from
         * DNSPolicy. Duplicated entries will be removed. Resolution options given in Options will
         * override those that appear in the base DNSPolicy.
         */
-      var options: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodDNSConfigOption]]] = js.undefined
+      var options: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodDNSConfigOption]]]
+          ] = js.undefined
       /**
         * A list of DNS search domains for host-name lookup. This will be appended to the base search
         * paths generated from DNSPolicy. Duplicated search paths will be removed.
         */
-      var searches: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var searches: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -3410,7 +3510,7 @@ object coreNs extends js.Object {
       /**
         * List of pods. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Pod]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Pod]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3487,12 +3587,16 @@ object coreNs extends js.Object {
         * A list of groups applied to the first process run in each container, in addition to the
         * container's primary GID.  If unspecified, no groups will be added to any container.
         */
-      var supplementalGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[scala.Double]]] = js.undefined
+      var supplementalGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[scala.Double]]]
+          ] = js.undefined
       /**
         * Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls
         * (by the container runtime) might fail to launch.
         */
-      var sysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Sysctl]]] = js.undefined
+      var sysctls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Sysctl]]]
+          ] = js.undefined
     }
     
     /**
@@ -3518,7 +3622,7 @@ object coreNs extends js.Object {
         * List of containers belonging to the pod. Containers cannot currently be added or removed.
         * There must be at least one container in a Pod. Cannot be updated.
         */
-      var containers: atPulumiPulumiLib.resourceMod.Input[js.Array[Container]]
+      var containers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Container]]]
       /**
         * Specifies the DNS parameters of a pod. Parameters specified here will be merged to the
         * generated DNS configuration based on DNSPolicy.
@@ -3541,7 +3645,9 @@ object coreNs extends js.Object {
         * HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts
         * file if specified. This is only valid for non-hostNetwork pods.
         */
-      var hostAliases: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[HostAlias]]] = js.undefined
+      var hostAliases: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HostAlias]]]
+          ] = js.undefined
       /**
         * Use the host's ipc namespace. Optional: Default to false.
         */
@@ -3567,7 +3673,9 @@ object coreNs extends js.Object {
         * docker, only DockerConfig type secrets are honored. More info:
         * https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
         */
-      var imagePullSecrets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[LocalObjectReference]]] = js.undefined
+      var imagePullSecrets: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]]]
+          ] = js.undefined
       /**
         * List of initialization containers belonging to the pod. Init containers are executed in
         * order prior to containers being started. If any init container fails, the pod is considered
@@ -3580,7 +3688,9 @@ object coreNs extends js.Object {
         * containers cannot currently be added or removed. Cannot be updated. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
         */
-      var initContainers: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Container]]] = js.undefined
+      var initContainers: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Container]]]
+          ] = js.undefined
       /**
         * NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the
         * scheduler simply schedules this pod onto that node, assuming that it fits resource
@@ -3618,7 +3728,9 @@ object coreNs extends js.Object {
         * status equal to "True" More info:
         * https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md
         */
-      var readinessGates: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodReadinessGate]]] = js.undefined
+      var readinessGates: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodReadinessGate]]]
+          ] = js.undefined
       /**
         * Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default
         * to Always. More info:
@@ -3681,12 +3793,16 @@ object coreNs extends js.Object {
       /**
         * If specified, the pod's tolerations.
         */
-      var tolerations: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Toleration]]] = js.undefined
+      var tolerations: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Toleration]]]
+          ] = js.undefined
       /**
         * List of volumes that can be mounted by containers belonging to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes
         */
-      var volumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Volume]]] = js.undefined
+      var volumes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Volume]]]
+          ] = js.undefined
     }
     
     /**
@@ -3698,13 +3814,17 @@ object coreNs extends js.Object {
         * Current service state of pod. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[PodCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodCondition]]]
+          ] = js.undefined
       /**
         * The list has one entry per container in the manifest. Each entry is currently the output of
         * `docker inspect`. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-and-container-status
         */
-      var containerStatuses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ContainerStatus]]] = js.undefined
+      var containerStatuses: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerStatus]]]
+          ] = js.undefined
       /**
         * IP address of the host to which the pod is assigned. Empty if not yet scheduled.
         */
@@ -3715,7 +3835,9 @@ object coreNs extends js.Object {
         * set. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-and-container-status
         */
-      var initContainerStatuses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ContainerStatus]]] = js.undefined
+      var initContainerStatuses: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerStatus]]]
+          ] = js.undefined
       /**
         * A human readable message indicating details about why the pod is in this condition.
         */
@@ -3824,7 +3946,7 @@ object coreNs extends js.Object {
       /**
         * List of pod templates
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodTemplate]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodTemplate]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3955,7 +4077,7 @@ object coreNs extends js.Object {
       /**
         * list of volume projections
         */
-      var sources: atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeProjection]]
+      var sources: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeProjection]]]
     }
     
     /**
@@ -4014,7 +4136,7 @@ object coreNs extends js.Object {
         * A collection of Ceph monitors. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * The rados pool name. Default is rbd. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
@@ -4064,7 +4186,7 @@ object coreNs extends js.Object {
         * A collection of Ceph monitors. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
       /**
         * The rados pool name. Default is rbd. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
@@ -4175,7 +4297,7 @@ object coreNs extends js.Object {
         * List of replication controllers. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicationController]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicationController]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4242,7 +4364,9 @@ object coreNs extends js.Object {
       /**
         * Represents the latest available observations of a replication controller's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicationControllerCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicationControllerCondition]]]
+          ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replication controller.
@@ -4340,7 +4464,7 @@ object coreNs extends js.Object {
         * Items is a list of ResourceQuota objects. More info:
         * https://kubernetes.io/docs/concepts/policy/resource-quotas/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ResourceQuota]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceQuota]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4379,7 +4503,9 @@ object coreNs extends js.Object {
         * A collection of filters that must match each object tracked by a quota. If not specified,
         * the quota matches all objects.
         */
-      var scopes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var scopes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -4547,7 +4673,9 @@ object coreNs extends js.Object {
       /**
         * A list of scope selector requirements by scope of the resources.
         */
-      var matchExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ScopedResourceSelectorRequirement]]] = js.undefined
+      var matchExpressions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ScopedResourceSelectorRequirement]]]
+          ] = js.undefined
     }
     
     /**
@@ -4569,7 +4697,9 @@ object coreNs extends js.Object {
         * non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This
         * array is replaced during a strategic merge patch.
         */
-      var values: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var values: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -4679,7 +4809,7 @@ object coreNs extends js.Object {
         * Items is a list of secret objects. More info:
         * https://kubernetes.io/docs/concepts/configuration/secret
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Secret]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Secret]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4714,7 +4844,9 @@ object coreNs extends js.Object {
         * setup will error unless it is marked optional. Paths must be relative and may not contain
         * the '..' path or start with '..'.
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[KeyToPath]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+          ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
@@ -4764,7 +4896,9 @@ object coreNs extends js.Object {
         * setup will error unless it is marked optional. Paths must be relative and may not contain
         * the '..' path or start with '..'.
         */
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[KeyToPath]]] = js.undefined
+      var items: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+          ] = js.undefined
       /**
         * Specify whether the Secret or it's keys must be defined
         */
@@ -4909,7 +5043,9 @@ object coreNs extends js.Object {
         * only accessed by the kubelet. More info:
         * https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
         */
-      var imagePullSecrets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[LocalObjectReference]]] = js.undefined
+      var imagePullSecrets: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]]]
+          ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4930,7 +5066,9 @@ object coreNs extends js.Object {
         * Secrets is the list of secrets allowed to be used by pods running using this
         * ServiceAccount. More info: https://kubernetes.io/docs/concepts/configuration/secret
         */
-      var secrets: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ObjectReference]]] = js.undefined
+      var secrets: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ObjectReference]]]
+          ] = js.undefined
     }
     
     /**
@@ -4950,7 +5088,7 @@ object coreNs extends js.Object {
         * List of ServiceAccounts. More info:
         * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ServiceAccount]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServiceAccount]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -5011,7 +5149,7 @@ object coreNs extends js.Object {
       /**
         * List of services
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Service]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Service]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -5087,7 +5225,9 @@ object coreNs extends js.Object {
         * responsible for ensuring that traffic arrives at a node with this IP.  A common example is
         * external load-balancers that are not part of the Kubernetes system.
         */
-      var externalIPs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var externalIPs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * externalName is the external reference that kubedns or equivalent will return as a CNAME
         * record for this service. No proxying will be involved. Must be a valid RFC-1123 hostname
@@ -5122,12 +5262,16 @@ object coreNs extends js.Object {
         * will be ignored if the cloud-provider does not support the feature." More info:
         * https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/
         */
-      var loadBalancerSourceRanges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var loadBalancerSourceRanges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * The list of ports that are exposed by this service. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ServicePort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServicePort]]]
+          ] = js.undefined
       /**
         * publishNotReadyAddresses, when set to true, indicates that DNS implementations must publish
         * the notReadyAddresses of subsets for the Endpoints associated with the Service. The default
@@ -5364,7 +5508,7 @@ object coreNs extends js.Object {
         * An array of string values. One value must match the label to be selected. Each entry in
         * Values is ORed.
         */
-      var values: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var values: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -5376,7 +5520,9 @@ object coreNs extends js.Object {
       /**
         * A list of topology selector requirements by labels.
         */
-      var matchLabelExpressions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[TopologySelectorLabelRequirement]]] = js.undefined
+      var matchLabelExpressions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[TopologySelectorLabelRequirement]]]
+          ] = js.undefined
     }
     
     /**

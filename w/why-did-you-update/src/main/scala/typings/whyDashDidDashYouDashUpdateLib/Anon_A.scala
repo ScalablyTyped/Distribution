@@ -353,10 +353,11 @@ trait Anon_A extends js.Object {
     */
   // I'm not sure if I keep this 2-ary or if I make it (2,3)-ary; it's currently (2,3)-ary.
   // The Flow types do have an overload for 3-ary invocation with undefined initializer.
-  // NOTE: the documentation or any alphas aren't updated, this is current for master.
-  // NOTE 2: without the ReducerState indirection, TypeScript would reduce S to be the most common
+  // NOTE: without the ReducerState indirection, TypeScript would reduce S to be the most common
   // supertype between the reducer's return type and the initialState (or the initializer's return type),
   // which would prevent autocompletion from ever working.
+  // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
+  // in older versions, or a regression in newer versions of the typescript completion service.
   def useReducer[R /* <: reactLib.reactMod.ReactNs.Reducer[_, _] */](reducer: R, initialState: reactLib.reactMod.ReactNs.ReducerState[R]): js.Tuple2[
     reactLib.reactMod.ReactNs.ReducerState[R], 
     reactLib.reactMod.ReactNs.Dispatch[reactLib.reactMod.ReactNs.ReducerAction[R]]

@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AffixProps extends js.Object {
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   /** 距离窗口底部达到指定偏移量后触发 */
   var offsetBottom: js.UndefOr[scala.Double] = js.undefined

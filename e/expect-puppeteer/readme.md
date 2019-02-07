@@ -4,5 +4,5 @@
 // Definitions by: Josh Goldberg <https://github.com/JoshuaKGoldberg>
 //                 Tanguy Krotoff <https://github.com/tkrotoff>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 ```

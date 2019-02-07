@@ -9,6 +9,18 @@ import scala.scalajs.js.annotation._
 @js.native
 object FacebookAdsNs extends js.Object {
   @js.native
+  class AdIconView ()
+    extends reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+  
+  @js.native
+  class AdMediaView ()
+    extends reactLib.reactMod.Component[js.Object, js.Object, js.Any]
+  
+  @js.native
+  class AdTriggerView[P] ()
+    extends reactLib.reactMod.Component[AdTriggerViewProps[P], js.Object, js.Any]
+  
+  @js.native
   class BannerView ()
     extends reactLib.reactMod.Component[BannerViewProps, js.Object, js.Any]
   
@@ -19,6 +31,47 @@ object FacebookAdsNs extends js.Object {
     def onPress(): scala.Unit
   }
   
+  trait NativeAd extends js.Object {
+    /**
+      * The word "ad", translated into the viewer's language
+      */
+    var adTranslation: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The name of the Facebook Page or mobile app that represents the business running the ad
+      */
+    var advertiserName: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The body text, truncated to 90 characters, that contains the text the advertiser entered when
+      * they created their ad to tell people what the ad promotes
+      */
+    var bodyText: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The call-to-action phrase of the ad, such as, "Install Now"
+      */
+    var callToActionText: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The headline the advertiser entered when they created their ad. This is usually the ad's main
+      * title.
+      */
+    var headline: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The link description which is additional information that the advertiser may have entered
+      */
+    var linkDescription: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The word "promoted", translated into the viewer's language
+      */
+    var promotedTranslation: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The ad's social context, such as, "Over half a million users"
+      */
+    var socialContext: js.UndefOr[java.lang.String] = js.undefined
+    /**
+      * The word "sponsored", translated into the viewer's language
+      */
+    var sponsoredTranslation: js.UndefOr[java.lang.String] = js.undefined
+  }
+  
   @js.native
   class NativeAdsManager protected () extends js.Object {
     def this(placementId: java.lang.String) = this()
@@ -27,7 +80,7 @@ object FacebookAdsNs extends js.Object {
     def setMediaCachePolicy(cachePolicy: MediaCachePolicy): scala.Unit = js.native
   }
   
-  def withNativeAd(component: reactLib.reactMod.Component[expoLib.Anon_CallToActionText, js.Object, _]): reactLib.reactMod.Component[expoLib.Anon_AdsManager, expoLib.Anon_Ad, _] = js.native
+  def withNativeAd[P](component: reactLib.reactMod.Component[P with expoLib.Anon_NativeAd, js.Object, _]): reactLib.reactMod.Component[expoLib.Anon_Ad with P, expoLib.Anon_AdCanRequestAds, _] = js.native
   /**
     * Ad Settings
     */
@@ -53,6 +106,7 @@ object FacebookAdsNs extends js.Object {
     def showAd(placementId: java.lang.String): js.Promise[scala.Boolean] = js.native
   }
   
+  type AdTriggerViewProps[P] = expoLib.Anon_Props[P] with P
   /**
     * Banner View
     */

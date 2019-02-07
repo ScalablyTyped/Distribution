@@ -82,7 +82,6 @@ trait VictoryAxisProps extends VictoryCommonProps {
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[
@@ -143,12 +142,17 @@ trait VictoryAxisProps extends VictoryCommonProps {
     victoryLib.victoryLibStrings.top | victoryLib.victoryLibStrings.bottom | victoryLib.victoryLibStrings.left | victoryLib.victoryLibStrings.right
   ] = js.undefined
   /**
-    * The style prop specifies styles for your VictoryAxis. Any valid inline style properties
-    * will be applied. Height, width, and padding should be specified via the height,
-    * width, and padding props, as they are used to calculate the alignment of
-    * components within chart.
-    * @example {axis: {stroke: "#756f6a"}, grid: {stroke: "grey"}, ticks: {stroke: "grey"},
-    * tickLabels: {fontSize: 10, padding: 5}, axisLabel: {fontSize: 16, padding: 20}}
+    * The style prop defines the style of the component. The style prop should be given as an object
+    * with styles defined for parent, axis, axisLabel, grid, ticks, and tickLabels. Any valid svg
+    * styles are supported, but width, height, and padding should be specified via props as they
+    * determine relative layout for components in VictoryChart. Functional styles may be defined for
+    * grid, tick, and tickLabel style properties, and they will be evaluated with each tick.
+    *
+    * note: When a component is rendered as a child of another Victory component, or within a custom
+    * <svg> element with standalone={false} parent styles will be applied to the enclosing <g> tag.
+    * Many styles that can be applied to a parent <svg> will not be expressed when applied to a <g>.
+    *
+    * note: custom angle and verticalAnchor properties may be included in labels styles.
     */
   var style: js.UndefOr[victoryLib.Anon_AxisAxisLabel] = js.undefined
   /**

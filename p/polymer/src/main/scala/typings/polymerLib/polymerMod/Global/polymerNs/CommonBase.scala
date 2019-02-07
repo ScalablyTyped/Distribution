@@ -108,6 +108,8 @@ trait CommonBase extends js.Object {
   ] = js.undefined
   var getContentChildNodes: js.UndefOr[js.Function1[/* selector */ java.lang.String, js.Array[stdLib.Node]]] = js.undefined
   var getContentChildren: js.UndefOr[js.Function1[/* selector */ java.lang.String, js.Array[stdLib.HTMLElement]]] = js.undefined
+  var getEffectiveChildNodes: js.UndefOr[js.Function0[js.Array[stdLib.Node]]] = js.undefined
+  var getEffectiveChildren: js.UndefOr[js.Function0[js.Array[stdLib.Node]]] = js.undefined
   var getNativePrototype: js.UndefOr[js.Function1[/* tag */ java.lang.String, js.Object]] = js.undefined
   var getPropertyInfo: js.UndefOr[js.Function1[/* property */ java.lang.String, js.Object]] = js.undefined
   /* polymer-micro */

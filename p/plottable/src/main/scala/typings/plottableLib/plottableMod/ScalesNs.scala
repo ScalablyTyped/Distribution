@@ -51,6 +51,15 @@ object ScalesNs extends js.Object {
   
   @js.native
   /**
+    * @constructor
+    */
+  class Log ()
+    extends plottableLib.buildSrcScalesMod.Log {
+    def this(base: scala.Double) = this()
+  }
+  
+  @js.native
+  /**
     * A ModifiedLog Scale acts as a regular log scale for large numbers.
     * As it approaches 0, it gradually becomes linear.
     * Consequently, a ModifiedLog Scale can process 0 and negative numbers.

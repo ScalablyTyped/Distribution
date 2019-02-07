@@ -68,6 +68,11 @@ trait It extends js.Object {
   @JSName("skip")
   var skip_Original: It = js.native
   /**
+    * Sketch out which tests to write in the future.
+    */
+  @JSName("todo")
+  var todo_Original: It = js.native
+  /**
     * Creates a test closure.
     *
     * @param name The name of your test
@@ -202,5 +207,18 @@ trait It extends js.Object {
   def skip(name: java.lang.String): scala.Unit = js.native
   def skip(name: java.lang.String, fn: ProvidesCallback): scala.Unit = js.native
   def skip(name: java.lang.String, fn: ProvidesCallback, timeout: scala.Double): scala.Unit = js.native
+  /**
+    * Creates a test closure.
+    *
+    * @param name The name of your test
+    * @param fn The function for your test
+    * @param timeout The timeout for an async function test
+    */
+  /**
+    * Sketch out which tests to write in the future.
+    */
+  def todo(name: java.lang.String): scala.Unit = js.native
+  def todo(name: java.lang.String, fn: ProvidesCallback): scala.Unit = js.native
+  def todo(name: java.lang.String, fn: ProvidesCallback, timeout: scala.Double): scala.Unit = js.native
 }
 

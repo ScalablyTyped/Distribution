@@ -1,5 +1,5 @@
 ```
-// Type definitions for expo 31.0
+// Type definitions for expo 32.0
 // Project: https://github.com/expo/expo-sdk
 // Definitions by: Konstantin Kai <https://github.com/KonstantinKai>
 //                 Martynas Kadiša <https://github.com/martynaskadisa>
@@ -16,6 +16,7 @@
 //                 Pavel Ihm <https://github.com/ihmpavel>
 //                 Bartosz Dotryw <https://github.com/burtek>
 //                 Jason Killian <https://github.com/jkillian>
+//                 Satyajit Sahoo <https://github.com/satya164>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

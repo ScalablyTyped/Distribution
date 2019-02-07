@@ -3,5 +3,5 @@
 // Project: https://github.com/igor-dv/jest-specific-snapshot#readme
 // Definitions by: Janeene Beeforth <https://github.com/dawnmist>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.0
 ```

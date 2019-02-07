@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("serve-static", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  var mime: serveDashStaticLib.Anon_Defaulttype = js.native
+  var mime: serveDashStaticLib.Anon_Define = js.native
   /**
     * Create a new middleware function to serve files from within a given root directory.
     * The file to serve will be determined by combining req.url with the provided root directory.

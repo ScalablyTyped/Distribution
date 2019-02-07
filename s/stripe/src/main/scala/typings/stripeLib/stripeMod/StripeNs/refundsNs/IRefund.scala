@@ -13,7 +13,7 @@ trait IRefund extends js.Object {
   /**
     * Balance transaction that describes the impact of this reversal on your account balance.
     */
-  var balance_transaction: java.lang.String
+  var balance_transaction: java.lang.String | stripeLib.stripeMod.StripeNs.balanceNs.IBalanceTransaction
   /**
     * ID of the charge that was refunded. [Expandable]
     */

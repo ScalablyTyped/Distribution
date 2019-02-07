@@ -853,6 +853,11 @@ object ^ extends js.Object {
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def genericTypeAnnotation(id: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
+  def genericTypeAnnotation(
+    id: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.GenericTypeAnnotation = js.native
   def identifier(name: java.lang.String): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
   def identifier(name: java.lang.String, decorators: js.Array[atBabelTypesLib.atBabelTypesMod.Decorator]): atBabelTypesLib.atBabelTypesMod.Identifier = js.native
   def identifier(
@@ -991,6 +996,11 @@ object ^ extends js.Object {
   def interfaceExtends(id: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
   def interfaceExtends(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
+  ): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def interfaceExtends(id: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
+  def interfaceExtends(
+    id: atBabelTypesLib.atBabelTypesMod.QualifiedTypeIdentifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation
   ): atBabelTypesLib.atBabelTypesMod.InterfaceExtends = js.native
   def interfaceTypeAnnotation(

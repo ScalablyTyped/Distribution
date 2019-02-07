@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Tile extends js.Object {
-  var features: TileFeatures
+trait Tile[C, P] extends js.Object {
+  var features: js.Array[TileFeature[C, P]]
 }
 

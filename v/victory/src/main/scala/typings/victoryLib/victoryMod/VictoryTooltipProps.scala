@@ -47,7 +47,8 @@ trait VictoryTooltipProps extends js.Object {
   var events: js.UndefOr[js.Object] = js.undefined
   /**
     * The flyoutComponent prop takes a component instance which will be used to create the flyout path for each tooltip.
-    * The new element created from the passed flyoutComponent will be supplied with the following properties: x, y, dx, dy, index, datum, cornerRadius, pointerLength, pointerWidth, width, height, orientation, style, and events.
+    * The new element created from the passed flyoutComponent will be supplied with the following properties: x, y, dx, dy,
+    * index, datum, cornerRadius, pointerLength, pointerWidth, width, height, orientation, style, and events.
     * Any of these props may be overridden by passing in props to the supplied component, or modified or ignored within the custom component itself.
     * If flyoutComponent is omitted, a default Flyout component will be created with props described above.
     * Examples: flyoutComponent={<Flyout x={50} y={50}/>}, flyoutComponent={<MyCustomFlyout/>}
@@ -57,7 +58,7 @@ trait VictoryTooltipProps extends js.Object {
   /**
     * The style prop applies SVG style properties to the rendered flyout container. These props will be passed to the flyoutComponent.
     */
-  var flyoutStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
+  var flyoutStyle: js.UndefOr[VictoryStyleObject] = js.undefined
   /**
     * The groupComponent prop takes a component instance which will be used to create group elements for use within container elements. This prop defaults to a <g> tag.
     * @default groupComponent={<g/>}
@@ -70,7 +71,8 @@ trait VictoryTooltipProps extends js.Object {
   var height: js.UndefOr[NumberOrCallback] = js.undefined
   /**
     * The horizontal prop determines whether to plot the flyouts to the left / right of the (x, y) coordinate rather than top / bottom.
-    * This is useful when an orientation prop is not provided, and data will determine the default orientation. i.e. negative values result in a left orientation and positive values will result in a right orientation by default.
+    * This is useful when an orientation prop is not provided, and data will determine the default orientation. i.e.
+    * negative values result in a left orientation and positive values will result in a right orientation by default.
     */
   var horizontal: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -97,11 +99,13 @@ trait VictoryTooltipProps extends js.Object {
     */
   var pointerLength: js.UndefOr[NumberOrCallback] = js.undefined
   /**
-    * The pointerWidth prop determines the width of the base of the triangular pointer extending from the flyout. This prop may be given as a positive number or a function of datum.
+    * The pointerWidth prop determines the width of the base of the triangular pointer extending from
+    * the flyout. This prop may be given as a positive number or a function of datum.
     */
   var pointerWidth: js.UndefOr[NumberOrCallback] = js.undefined
   /**
-    * When renderInPortal is true, rendered tooltips will be wrapped in VictoryPortal and rendered within the Portal element within VictoryContainer. Note: This prop should not be set to true when using a custom container element.
+    * When renderInPortal is true, rendered tooltips will be wrapped in VictoryPortal and rendered within the Portal element
+    * within VictoryContainer. Note: This prop should not be set to true when using a custom container element.
     */
   var renderInPortal: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -119,7 +123,8 @@ trait VictoryTooltipProps extends js.Object {
     */
   var theme: js.UndefOr[VictoryThemeDefinition] = js.undefined
   /**
-    * The width prop defines the width of the tooltip flyout. This prop may be given as a positive number or a function of datum. If this prop is not set, width will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
+    * The width prop defines the width of the tooltip flyout. This prop may be given as a positive number or a function of datum.
+    * If this prop is not set, width will be determined based on an approximate text size calculated from the text and style props provided to VictoryTooltip.
     */
   var width: js.UndefOr[NumberOrCallback] = js.undefined
   /**

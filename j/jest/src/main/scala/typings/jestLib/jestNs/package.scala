@@ -62,7 +62,7 @@ package object jestNs {
   type Runtime = js.Any
   type Script = js.Any
   type SnapshotUpdateState = jestLib.jestLibStrings.all | jestLib.jestLibStrings.`new` | jestLib.jestLibStrings.none
-  type SpyInstance[T] = MockInstance[T]
+  type SpyInstance[T, Y /* <: js.Array[_] */] = MockInstance[T, Y]
   type Status = jestLib.jestLibStrings.passed | jestLib.jestLibStrings.failed | jestLib.jestLibStrings.skipped | jestLib.jestLibStrings.pending
   type TestFramework = js.Function5[
     /* globalConfig */ GlobalConfig, 

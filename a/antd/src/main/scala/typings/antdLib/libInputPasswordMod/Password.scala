@@ -10,7 +10,7 @@ trait Password
   extends reactLib.reactMod.Component[PasswordProps, PasswordState, js.Any] {
   @JSName("state")
   var state_Password: PasswordState = js.native
-  def getIcon(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def getIcon(): reactLib.reactMod.ReactNs.FunctionComponentElement[_] = js.native
   def onChange(): scala.Unit = js.native
 }
 

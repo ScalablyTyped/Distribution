@@ -28,7 +28,9 @@ object admissionregistrationNs extends js.Object {
         * cares about an operation if it matches _any_ Rule. Rule.Resources must not include
         * subresources.
         */
-      var rules: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Rule]]] = js.undefined
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Rule]]]
+          ] = js.undefined
     }
     
     /**
@@ -52,7 +54,9 @@ object admissionregistrationNs extends js.Object {
         * InitializerConfigurations by the name of the InitializerConfigurations; the order of the
         * initializers from the same InitializerConfiguration is preserved.
         */
-      var initializers: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Initializer]]] = js.undefined
+      var initializers: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Initializer]]]
+          ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -89,7 +93,7 @@ object admissionregistrationNs extends js.Object {
       /**
         * List of InitializerConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[InitializerConfiguration]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[InitializerConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -117,12 +121,16 @@ object admissionregistrationNs extends js.Object {
         * APIGroups is the API groups the resources belong to. '*' is all groups. If '*' is present,
         * the length of the slice must be one. Required.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is
         * present, the length of the slice must be one. Required.
         */
-      var apiVersions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiVersions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.
         *
@@ -135,7 +143,9 @@ object admissionregistrationNs extends js.Object {
         *
         * Depending on the enclosing object, subresources might not be allowed. Required.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     def isInitializerConfiguration(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1alpha1.InitializerConfiguration */ scala.Boolean = js.native
@@ -180,7 +190,9 @@ object admissionregistrationNs extends js.Object {
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
-      var webhooks: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Webhook]]] = js.undefined
+      var webhooks: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Webhook]]]
+          ] = js.undefined
     }
     
     /**
@@ -201,7 +213,7 @@ object admissionregistrationNs extends js.Object {
       /**
         * List of MutatingWebhookConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[MutatingWebhookConfiguration]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MutatingWebhookConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -231,17 +243,23 @@ object admissionregistrationNs extends js.Object {
         * APIGroups is the API groups the resources belong to. '*' is all groups. If '*' is present,
         * the length of the slice must be one. Required.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is
         * present, the length of the slice must be one. Required.
         */
-      var apiVersions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiVersions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Operations is the operations the admission hook cares about - CREATE, UPDATE, or * for all
         * operations. If '*' is present, the length of the slice must be one. Required.
         */
-      var operations: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var operations: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.
         *
@@ -254,7 +272,9 @@ object admissionregistrationNs extends js.Object {
         *
         * Depending on the enclosing object, subresources might not be allowed. Required.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -312,7 +332,9 @@ object admissionregistrationNs extends js.Object {
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
-      var webhooks: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Webhook]]] = js.undefined
+      var webhooks: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Webhook]]]
+          ] = js.undefined
     }
     
     /**
@@ -333,7 +355,7 @@ object admissionregistrationNs extends js.Object {
       /**
         * List of ValidatingWebhookConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ValidatingWebhookConfiguration]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ValidatingWebhookConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -424,7 +446,9 @@ object admissionregistrationNs extends js.Object {
         * ValidatingAdmissionWebhooks and MutatingAdmissionWebhooks are never called on admission
         * requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
         */
-      var rules: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[RuleWithOperations]]] = js.undefined
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[RuleWithOperations]]]
+          ] = js.undefined
       /**
         * SideEffects states whether this webhookk has side effects. Acceptable values are: Unknown,
         * None, Some, NoneOnDryRun Webhooks with side effects MUST implement a reconciliation system,

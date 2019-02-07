@@ -30,7 +30,11 @@ object storageNs extends js.Object {
         * enable the VolumeScheduling feature.
         */
       var allowedTopologies: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
+              ]
+            ]
           ] = js.undefined
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
@@ -62,7 +66,9 @@ object storageNs extends js.Object {
         * mountOptions, e.g. ["ro", "soft"]. Not validated - mount of the PVs will simply fail if one
         * is invalid.
         */
-      var mountOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var mountOptions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Parameters holds the parameters for the provisioner that should create volumes of this
         * storage class.
@@ -105,7 +111,7 @@ object storageNs extends js.Object {
       /**
         * Items is the list of StorageClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[StorageClass]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StorageClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -184,7 +190,7 @@ object storageNs extends js.Object {
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeAttachment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -349,7 +355,7 @@ object storageNs extends js.Object {
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeAttachment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -471,7 +477,11 @@ object storageNs extends js.Object {
         * enable the VolumeScheduling feature.
         */
       var allowedTopologies: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
+              ]
+            ]
           ] = js.undefined
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
@@ -503,7 +513,9 @@ object storageNs extends js.Object {
         * mountOptions, e.g. ["ro", "soft"]. Not validated - mount of the PVs will simply fail if one
         * is invalid.
         */
-      var mountOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var mountOptions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Parameters holds the parameters for the provisioner that should create volumes of this
         * storage class.
@@ -546,7 +558,7 @@ object storageNs extends js.Object {
       /**
         * Items is the list of StorageClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[StorageClass]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StorageClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -625,7 +637,7 @@ object storageNs extends js.Object {
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[VolumeAttachment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In

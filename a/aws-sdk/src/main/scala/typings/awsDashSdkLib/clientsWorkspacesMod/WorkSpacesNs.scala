@@ -553,7 +553,7 @@ object WorkSpacesNs extends js.Object {
     /**
       * Information about the Amazon WorkSpaces client.
       */
-    var ClientProperties: js.UndefOr[ClientProperties] = js.undefined
+    var ClientProperties: ClientProperties
     /**
       * The resource identifiers, in the form of directory IDs.
       */

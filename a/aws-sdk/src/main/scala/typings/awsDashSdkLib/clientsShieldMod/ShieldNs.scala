@@ -138,7 +138,7 @@ object ShieldNs extends js.Object {
       */
     var Name: ProtectionName
     /**
-      * The ARN (Amazon Resource Name) of the resource to be protected. The ARN should be in one of the following formats:   For an Application Load Balancer: arn:aws:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id     For an Elastic Load Balancer (Classic Load Balancer): arn:aws:elasticloadbalancing:region:account-id:loadbalancer/load-balancer-name     For AWS CloudFront distribution: arn:aws:cloudfront::account-id:distribution/distribution-id     For Amazon Route 53: arn:aws:route53:::hostedzone/hosted-zone-id     For an Elastic IP address: arn:aws:ec2:region:account-id:eip-allocation/allocation-id    
+      * The ARN (Amazon Resource Name) of the resource to be protected. The ARN should be in one of the following formats:   For an Application Load Balancer: arn:aws:elasticloadbalancing:region:account-id:loadbalancer/app/load-balancer-name/load-balancer-id     For an Elastic Load Balancer (Classic Load Balancer): arn:aws:elasticloadbalancing:region:account-id:loadbalancer/load-balancer-name     For an AWS CloudFront distribution: arn:aws:cloudfront::account-id:distribution/distribution-id     For an AWS Global Accelerator accelerator: arn:aws:globalaccelerator::account-id:accelerator/accelerator-id     For Amazon Route 53: arn:aws:route53:::hostedzone/hosted-zone-id     For an Elastic IP address: arn:aws:ec2:region:account-id:eip-allocation/allocation-id    
       */
     var ResourceArn: ResourceArn
   }
@@ -205,9 +205,13 @@ object ShieldNs extends js.Object {
   
   trait DescribeProtectionRequest extends js.Object {
     /**
-      * The unique identifier (ID) for the Protection object that is described.
+      * The unique identifier (ID) for the Protection object that is described. When submitting the DescribeProtection request you must provide either the ResourceArn or the ProtectionID, but not both.
       */
-    var ProtectionId: ProtectionId
+    var ProtectionId: js.UndefOr[ProtectionId] = js.undefined
+    /**
+      * The ARN (Amazon Resource Name) of the AWS resource for the Protection object that is described. When submitting the DescribeProtection request you must provide either the ResourceArn or the ProtectionID, but not both.
+      */
+    var ResourceArn: js.UndefOr[ResourceArn] = js.undefined
   }
   
   trait DescribeProtectionResponse extends js.Object {
@@ -487,7 +491,7 @@ object ShieldNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AssociateDRTRoleResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Enables AWS Shield Advanced for a specific AWS resource. The resource can be an Amazon CloudFront distribution, Elastic Load Balancing load balancer, Elastic IP Address, or an Amazon Route 53 hosted zone. You can add protection to only a single resource with each CreateProtection request. If you want to add protection to multiple resources at once, use the AWS WAF console. For more information see Getting Started with AWS Shield Advanced and Add AWS Shield Advanced Protection to more AWS Resources.
+      * Enables AWS Shield Advanced for a specific AWS resource. The resource can be an Amazon CloudFront distribution, Elastic Load Balancing load balancer, AWS Global Accelerator accelerator, Elastic IP Address, or an Amazon Route 53 hosted zone. You can add protection to only a single resource with each CreateProtection request. If you want to add protection to multiple resources at once, use the AWS WAF console. For more information see Getting Started with AWS Shield Advanced and Add AWS Shield Advanced Protection to more AWS Resources.
       */
     def createProtection(): awsDashSdkLib.libRequestMod.Request[CreateProtectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createProtection(
@@ -498,7 +502,7 @@ object ShieldNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateProtectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Enables AWS Shield Advanced for a specific AWS resource. The resource can be an Amazon CloudFront distribution, Elastic Load Balancing load balancer, Elastic IP Address, or an Amazon Route 53 hosted zone. You can add protection to only a single resource with each CreateProtection request. If you want to add protection to multiple resources at once, use the AWS WAF console. For more information see Getting Started with AWS Shield Advanced and Add AWS Shield Advanced Protection to more AWS Resources.
+      * Enables AWS Shield Advanced for a specific AWS resource. The resource can be an Amazon CloudFront distribution, Elastic Load Balancing load balancer, AWS Global Accelerator accelerator, Elastic IP Address, or an Amazon Route 53 hosted zone. You can add protection to only a single resource with each CreateProtection request. If you want to add protection to multiple resources at once, use the AWS WAF console. For more information see Getting Started with AWS Shield Advanced and Add AWS Shield Advanced Protection to more AWS Resources.
       */
     def createProtection(params: CreateProtectionRequest): awsDashSdkLib.libRequestMod.Request[CreateProtectionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createProtection(

@@ -21,7 +21,11 @@ object rbacNs extends js.Object {
         * added
         */
       var clusterRoleSelectors: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -65,7 +69,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -107,7 +111,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -128,7 +134,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -164,7 +170,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRole]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRole]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -192,7 +198,9 @@ object rbacNs extends js.Object {
         * are specified, any action requested against one of the enumerated resources in any API
         * group will be allowed.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NonResourceURLs is a set of partial urls that a user should have access to.  *s are
         * allowed, but only as the full, final step in the path Since non-resource URLs are not
@@ -200,22 +208,28 @@ object rbacNs extends js.Object {
         * ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets")
         * or non-resource URL paths (such as "/api"),  but not both.
         */
-      var nonResourceURLs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nonResourceURLs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.
         */
-      var resourceNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resourceNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  ResourceAll represents all
         * resources.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions
         * contained in this rule.  VerbAll represents all kinds.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -252,7 +266,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -296,7 +310,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -317,7 +333,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of RoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[RoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[RoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -353,7 +369,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of Roles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Role]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Role]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -440,7 +456,11 @@ object rbacNs extends js.Object {
         * added
         */
       var clusterRoleSelectors: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -484,7 +504,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -526,7 +546,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -547,7 +569,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -583,7 +605,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRole]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRole]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -611,7 +633,9 @@ object rbacNs extends js.Object {
         * are specified, any action requested against one of the enumerated resources in any API
         * group will be allowed.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NonResourceURLs is a set of partial urls that a user should have access to.  *s are
         * allowed, but only as the full, final step in the path This name is intentionally different
@@ -620,22 +644,28 @@ object rbacNs extends js.Object {
         * ClusterRoles referenced from a ClusterRoleBinding. Rules can either apply to API resources
         * (such as "pods" or "secrets") or non-resource URL paths (such as "/api"),  but not both.
         */
-      var nonResourceURLs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nonResourceURLs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.
         */
-      var resourceNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resourceNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  ResourceAll represents all
         * resources.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions
         * contained in this rule.  VerbAll represents all kinds.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -672,7 +702,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -716,7 +746,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -737,7 +769,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of RoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[RoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[RoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -773,7 +805,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of Roles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Role]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Role]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -862,7 +894,11 @@ object rbacNs extends js.Object {
         * added
         */
       var clusterRoleSelectors: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+              ]
+            ]
           ] = js.undefined
     }
     
@@ -906,7 +942,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this ClusterRole
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -948,7 +984,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -969,7 +1007,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1005,7 +1043,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of ClusterRoles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ClusterRole]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ClusterRole]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1033,7 +1071,9 @@ object rbacNs extends js.Object {
         * are specified, any action requested against one of the enumerated resources in any API
         * group will be allowed.
         */
-      var apiGroups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var apiGroups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * NonResourceURLs is a set of partial urls that a user should have access to.  *s are
         * allowed, but only as the full, final step in the path Since non-resource URLs are not
@@ -1041,23 +1081,29 @@ object rbacNs extends js.Object {
         * ClusterRoleBinding. Rules can either apply to API resources (such as "pods" or "secrets")
         * or non-resource URL paths (such as "/api"),  but not both.
         */
-      var nonResourceURLs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var nonResourceURLs: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.
         */
-      var resourceNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resourceNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  '*' represents all resources in the
         * specified apiGroups. '*&#8205;/foo' represents the subresource 'foo' for all resources in
         * the specified apiGroups.
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var resources: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Verbs is a list of Verbs that apply to ALL the ResourceKinds and AttributeRestrictions
         * contained in this rule.  VerbAll represents all kinds.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -1094,7 +1140,7 @@ object rbacNs extends js.Object {
       /**
         * Rules holds all the PolicyRules for this Role
         */
-      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[PolicyRule]]
+      var rules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PolicyRule]]]
     }
     
     /**
@@ -1138,7 +1184,9 @@ object rbacNs extends js.Object {
       /**
         * Subjects holds references to the objects the role applies to.
         */
-      var subjects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[Subject]]] = js.undefined
+      var subjects: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Subject]]]
+          ] = js.undefined
     }
     
     /**
@@ -1159,7 +1207,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of RoleBindings
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[RoleBinding]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[RoleBinding]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1195,7 +1243,7 @@ object rbacNs extends js.Object {
       /**
         * Items is a list of Roles
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Role]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Role]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In

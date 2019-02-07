@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "v0.16.7-9f02de"
+version := "v0.16.7-e3a958"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-b54dd4",
-  "org.scalablytyped" %%% "aws-sdk" % "2.395.0-2e2b42",
+  "org.scalablytyped" %%% "aws-sdk" % "2.398.0-8a02e6",
   "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-aca834",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-64d288",
   "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-a792d3",
@@ -20,7 +20,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20180723Z-153059",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-02eb4a",
   "org.scalablytyped" %%% "make-error" % "1.3.5-95be7b",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-45605c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-9fc7e9",
   "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-86391a",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",

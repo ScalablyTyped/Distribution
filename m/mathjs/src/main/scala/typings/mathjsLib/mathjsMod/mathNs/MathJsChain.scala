@@ -487,19 +487,6 @@ trait MathJsChain extends js.Object {
     */
   def expm1(): MathJsChain = js.native
   /**
-    * Create a 2-dimensional identity matrix with size m x n or n x n. The
-    * matrix has ones on the diagonal and zeros elsewhere.
-    * @param format The Matrix storage format
-    */
-  def eye(): MathJsChain = js.native
-  def eye(format: java.lang.String): MathJsChain = js.native
-  /**
-    * @param n The y dimension for the matrix
-    * @param format The Matrix storage format
-    */
-  def eye(n: scala.Double): MathJsChain = js.native
-  def eye(n: scala.Double, format: java.lang.String): MathJsChain = js.native
-  /**
     * Compute the factorial of a value Factorial only supports an integer
     * value as argument. For matrices, the function is evaluated element
     * wise.
@@ -600,6 +587,19 @@ trait MathJsChain extends js.Object {
     * matrix.
     */
   def hypot(): MathJsChain = js.native
+  /**
+    * Create a 2-dimensional identity matrix with size m x n or n x n. The
+    * matrix has ones on the diagonal and zeros elsewhere.
+    * @param format The Matrix storage format
+    */
+  def identity(): MathJsChain = js.native
+  def identity(format: java.lang.String): MathJsChain = js.native
+  /**
+    * @param n The y dimension for the matrix
+    * @param format The Matrix storage format
+    */
+  def identity(n: scala.Double): MathJsChain = js.native
+  def identity(n: scala.Double, format: java.lang.String): MathJsChain = js.native
   /**
     * Get the imaginary part of a complex number. For a complex number a +
     * bi, the function returns b. For matrices, the function is evaluated

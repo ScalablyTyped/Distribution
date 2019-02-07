@@ -790,6 +790,13 @@ package object sequelizeNs {
     bluebirdLib.bluebirdMod.namespaced[scala.Unit]
   ]
   type OperatorsAliases = stdLib.Partial[sequelizeLib.Anon_Adjacent]
+  /**
+    * A hash of attributes to describe your search. See above for examples.
+    *
+    * We did put Object in the end, because there where query might be a JSON Blob. It cripples a bit the
+    * typesafety, but there is no way to pass the tests if we just remove it.
+    */
+  type Primitives = java.lang.String | scala.Double | scala.Boolean | nodeLib.Buffer
   type TransactionIsolationLevel = TransactionIsolationLevelReadUncommitted | TransactionIsolationLevelReadCommitted | TransactionIsolationLevelRepeatableRead | TransactionIsolationLevelSerializable
   type TransactionIsolationLevelReadCommitted = sequelizeLib.sequelizeLibStrings.`READ COMMITTED`
   type TransactionIsolationLevelReadUncommitted = sequelizeLib.sequelizeLibStrings.`READ UNCOMMITTED`
@@ -808,13 +815,7 @@ package object sequelizeNs {
     * Logic of where statement
     */
   type WhereLogic = stdLib.Partial[sequelizeLib.`Anon_`]
-  /**
-    * A hash of attributes to describe your search. See above for examples.
-    *
-    * We did put Object in the end, because there where query might be a JSON Blob. It cripples a bit the
-    * typesafety, but there is no way to pass the tests if we just remove it.
-    */
   type WhereOptions[T] = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ P in keyof T ]:? string | number | boolean | sequelize.sequelize.sequelize.WhereLogic | object | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | std.Array<string | number> | null}
+  {[ P in keyof T ]:? sequelize.sequelize.sequelize.Primitives | std.Array<sequelize.sequelize.sequelize.Primitives> | sequelize.sequelize.sequelize.WhereLogic | null | sequelize.sequelize.sequelize.col | sequelize.sequelize.sequelize.and | sequelize.sequelize.sequelize.or | sequelize.sequelize.sequelize.WhereGeometryOptions | sequelize.sequelize.sequelize.WhereNested | null}
     */ sequelizeLib.sequelizeLibStrings.WhereOptions with js.Any
 }

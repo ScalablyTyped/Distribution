@@ -128,7 +128,7 @@ object extensionsNs extends js.Object {
       /**
         * A list of daemon sets.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -201,7 +201,9 @@ object extensionsNs extends js.Object {
       /**
         * Represents the latest available observations of a DaemonSet's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DaemonSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSetCondition]]]
+          ] = js.undefined
       /**
         * The number of nodes that are running at least 1 daemon pod and are supposed to run the
         * daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
@@ -340,7 +342,7 @@ object extensionsNs extends js.Object {
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Deployment]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -467,7 +469,9 @@ object extensionsNs extends js.Object {
       /**
         * Represents the latest available observations of a deployment's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[DeploymentCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+          ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
@@ -518,7 +522,9 @@ object extensionsNs extends js.Object {
         * ranges are the allowed ranges of fs groups.  If you would like to force a single fs group
         * then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
         */
@@ -554,7 +560,7 @@ object extensionsNs extends js.Object {
       /**
         * A collection of paths that map requests to backends.
         */
-      var paths: atPulumiPulumiLib.resourceMod.Input[js.Array[HTTPIngressPath]]
+      var paths: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HTTPIngressPath]]]
     }
     
     /**
@@ -603,7 +609,9 @@ object extensionsNs extends js.Object {
         * Except is a slice of CIDRs that should not be included within an IP Block Valid examples
         * are "192.168.1.1/24" Except values will be rejected if they are outside the CIDR range
         */
-      var except: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var except: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -679,7 +687,7 @@ object extensionsNs extends js.Object {
       /**
         * Items is the list of Ingress.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Ingress]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Ingress]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -734,14 +742,18 @@ object extensionsNs extends js.Object {
         * A list of host rules used to configure the Ingress. If unspecified, or no rule matches, all
         * traffic is sent to the default backend.
         */
-      var rules: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IngressRule]]] = js.undefined
+      var rules: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IngressRule]]]
+          ] = js.undefined
       /**
         * TLS configuration. Currently the Ingress only supports a single TLS port, 443. If multiple
         * members of this list specify different hosts, they will be multiplexed on the same port
         * according to the hostname specified through the SNI TLS extension, if the ingress
         * controller fulfilling the ingress supports SNI.
         */
-      var tls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IngressTLS]]] = js.undefined
+      var tls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IngressTLS]]]
+          ] = js.undefined
     }
     
     /**
@@ -765,7 +777,9 @@ object extensionsNs extends js.Object {
         * match the name/s used in the tlsSecret. Defaults to the wildcard host setting for the
         * loadbalancer controller fulfilling this Ingress, if left unspecified.
         */
-      var hosts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var hosts: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * SecretName is the name of the secret used to terminate SSL traffic on 443. Field is left
         * optional to allow SSL routing based on SNI hostname alone. If the SNI host in a listener
@@ -825,7 +839,9 @@ object extensionsNs extends js.Object {
         * restricted by port). If this field is present and contains at least one item, then this
         * rule allows traffic only if the traffic matches at least one port in the list.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+          ] = js.undefined
       /**
         * List of destinations for outgoing traffic of pods selected for this rule. Items in this
         * list are combined using a logical OR operation. If this field is empty or missing, this
@@ -833,7 +849,9 @@ object extensionsNs extends js.Object {
         * present and contains at least one item, this rule allows traffic only if the traffic
         * matches at least one item in the to list.
         */
-      var to: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPeer]]] = js.undefined
+      var to: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+          ] = js.undefined
     }
     
     /**
@@ -849,7 +867,9 @@ object extensionsNs extends js.Object {
         * and contains at least on item, this rule allows traffic only if the traffic matches at
         * least one item in the from list.
         */
-      var from: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPeer]]] = js.undefined
+      var from: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+          ] = js.undefined
       /**
         * List of ports which should be made accessible on the pods selected for this rule. Each item
         * in this list is combined using a logical OR. If this field is empty or missing, this rule
@@ -857,7 +877,9 @@ object extensionsNs extends js.Object {
         * at least one item, then this rule allows traffic only if the traffic matches at least one
         * port in the list.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+          ] = js.undefined
     }
     
     /**
@@ -877,7 +899,7 @@ object extensionsNs extends js.Object {
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicy]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicy]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -961,7 +983,9 @@ object extensionsNs extends js.Object {
         * NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it
         * selects are isolated by default). This field is beta-level in 1.8
         */
-      var egress: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyEgressRule]]] = js.undefined
+      var egress: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyEgressRule]]]
+          ] = js.undefined
       /**
         * List of ingress rules to be applied to the selected pods. Traffic is allowed to a pod if
         * there are no NetworkPolicies selecting the pod OR if the traffic source is the pod's local
@@ -970,7 +994,9 @@ object extensionsNs extends js.Object {
         * does not allow any traffic (and serves solely to ensure that the pods it selects are
         * isolated by default).
         */
-      var ingress: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyIngressRule]]] = js.undefined
+      var ingress: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyIngressRule]]]
+          ] = js.undefined
       /**
         * Selects the pods to which this NetworkPolicy object applies.  The array of ingress rules is
         * applied to any pods selected by this field. Multiple network policies can select the same
@@ -990,7 +1016,9 @@ object extensionsNs extends js.Object {
         * policy would not include an Egress section and would otherwise default to just [ "Ingress"
         * ]). This field is beta-level in 1.8
         */
-      var policyTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var policyTypes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -1047,7 +1075,7 @@ object extensionsNs extends js.Object {
       /**
         * items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodSecurityPolicy]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodSecurityPolicy]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1081,24 +1109,32 @@ object extensionsNs extends js.Object {
         * container. Capabilities in this field may be added at the pod author's discretion. You must
         * not list a capability in both allowedCapabilities and requiredDropCapabilities.
         */
-      var allowedCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all
         * Flexvolumes may be used.  This parameter is effective only when the usage of the
         * Flexvolumes is allowed in the "volumes" field.
         */
-      var allowedFlexVolumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedFlexVolume]]] = js.undefined
+      var allowedFlexVolumes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AllowedFlexVolume]]]
+          ] = js.undefined
       /**
         * allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths
         * may be used.
         */
-      var allowedHostPaths: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedHostPath]]] = js.undefined
+      var allowedHostPaths: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AllowedHostPath]]]
+          ] = js.undefined
       /**
         * AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that
         * only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to
         * be enabled.
         */
-      var allowedProcMountTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedProcMountTypes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each
         * entry is either a plain sysctl name or ends in "*" in which case it is considered as a
@@ -1108,14 +1144,18 @@ object extensionsNs extends js.Object {
         * Examples: e.g. "foo/ *" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar",
         * "foo.baz", etc.
         */
-      var allowedUnsafeSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedUnsafeSysctls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * defaultAddCapabilities is the default set of capabilities that will be added to the
         * container unless the pod spec specifically drops the capability.  You may not list a
         * capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added
         * here are implicitly allowed, and need not be included in the allowedCapabilities list.
         */
-      var defaultAddCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var defaultAddCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain
         * more privileges than its parent process.
@@ -1129,7 +1169,9 @@ object extensionsNs extends js.Object {
         * Examples: e.g. "foo/ *" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar",
         * "foo.baz", etc.
         */
-      var forbiddenSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var forbiddenSysctls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * fsGroup is the strategy that will dictate what fs group is used by the SecurityContext.
         */
@@ -1149,7 +1191,9 @@ object extensionsNs extends js.Object {
       /**
         * hostPorts determines which host port ranges are allowed to be exposed.
         */
-      var hostPorts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[HostPortRange]]] = js.undefined
+      var hostPorts: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HostPortRange]]]
+          ] = js.undefined
       /**
         * privileged determines if a pod can request to be run as privileged.
         */
@@ -1165,7 +1209,9 @@ object extensionsNs extends js.Object {
         * requiredDropCapabilities are the capabilities that will be dropped from the container.
         * These are required to be dropped and cannot be added.
         */
-      var requiredDropCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var requiredDropCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * RunAsGroup is the strategy that will dictate the allowable RunAsGroup values that may be
         * set. If this field is omitted, the pod's RunAsGroup can take any value. This field requires
@@ -1189,7 +1235,9 @@ object extensionsNs extends js.Object {
         * volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be
         * used. To allow all volumes you may use '*'.
         */
-      var volumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var volumes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -1280,7 +1328,7 @@ object extensionsNs extends js.Object {
         * List of ReplicaSets. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSet]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1345,7 +1393,9 @@ object extensionsNs extends js.Object {
       /**
         * Represents the latest available observations of a replica set's current state.
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[ReplicaSetCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSetCondition]]]
+          ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replicaset.
@@ -1432,7 +1482,9 @@ object extensionsNs extends js.Object {
         * ranges are the allowed ranges of gids that may be used. If you would like to force a single
         * gid then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
         */
@@ -1448,7 +1500,9 @@ object extensionsNs extends js.Object {
         * ranges are the allowed ranges of uids that may be used. If you would like to force a single
         * uid then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate the allowable RunAsUser values that may be set.
         */
@@ -1559,7 +1613,9 @@ object extensionsNs extends js.Object {
         * supplemental group then supply a single range with the same start and end. Required for
         * MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate what supplemental groups is used in the
         * SecurityContext.

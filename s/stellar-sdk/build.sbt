@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stellar-sdk"
-version := "0.11-dt-20190110Z-0b9148"
+version := "0.11-dt-20190110Z-c3ffe1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "stellar-base" % "0.10-dt-20190110Z-baf02f")
+  "org.scalablytyped" %%% "stellar-base" % "0.10-dt-20190205Z-bf2636")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

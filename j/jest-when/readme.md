@@ -3,5 +3,5 @@
 // Project: https://github.com/timkindberg/jest-when#readme
 // Definitions by: Alden Taylor <https://github.com/aldentaylor>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.0
 ```

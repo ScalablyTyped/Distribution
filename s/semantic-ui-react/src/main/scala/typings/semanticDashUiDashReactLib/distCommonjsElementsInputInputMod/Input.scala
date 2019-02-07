@@ -9,5 +9,6 @@ import scala.scalajs.js.annotation._
 trait Input
   extends reactLib.reactMod.Component[InputProps, js.Object, js.Any] {
   def focus(): scala.Unit = js.native
+  def select(): scala.Unit = js.native
 }
 

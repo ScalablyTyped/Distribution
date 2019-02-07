@@ -79,7 +79,7 @@ object certificatesNs extends js.Object {
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[CertificateSigningRequest]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequest]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -107,7 +107,9 @@ object certificatesNs extends js.Object {
       /**
         * Group information about the requesting user. See user.Info interface for details.
         */
-      var groups: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var groups: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Base64-encoded PKCS#10 CSR data
         */
@@ -121,7 +123,9 @@ object certificatesNs extends js.Object {
         * https://tools.ietf.org/html/rfc5280#section-4.2.1.3
         *      https://tools.ietf.org/html/rfc5280#section-4.2.1.12
         */
-      var usages: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var usages: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Information about the requesting user. See user.Info interface for details.
         */
@@ -137,7 +141,9 @@ object certificatesNs extends js.Object {
         * Conditions applied to the request, such as approval or denial.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[CertificateSigningRequestCondition]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequestCondition]]
+            ]
           ] = js.undefined
     }
     

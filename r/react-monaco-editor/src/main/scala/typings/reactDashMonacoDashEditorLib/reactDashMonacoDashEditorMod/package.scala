@@ -28,7 +28,6 @@ package object reactDashMonacoDashEditorMod {
   ]
   type EditorWillMount = js.Function1[
     /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof monacoEditor */ /* monaco */ js.Any, 
-    scala.Unit
+    scala.Unit | (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify monacoEditor.editor.IEditorConstructionOptions */ js.Any)
   ]
-  type MonacoEditor = reactLib.reactMod.Component[MonacoEditorProps, js.Object, js.Any]
 }

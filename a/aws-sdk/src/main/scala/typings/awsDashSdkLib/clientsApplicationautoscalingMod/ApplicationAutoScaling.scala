@@ -85,7 +85,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget.
+    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
     */
   def deregisterScalableTarget(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.DeregisterScalableTargetResponse, 
@@ -102,7 +102,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget.
+    * Deregisters a scalable target. Deregistering a scalable target deletes the scaling policies that are associated with it. To create a scalable target or update an existing one, see RegisterScalableTarget. 
     */
   def deregisterScalableTarget(
     params: awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.DeregisterScalableTargetRequest
@@ -270,7 +270,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you register the scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+    * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
     */
   def putScalingPolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.PutScalingPolicyResponse, 
@@ -287,7 +287,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you register the scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+    * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
     */
   def putScalingPolicy(
     params: awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.PutScalingPolicyRequest
@@ -307,7 +307,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you register the scalable target using RegisterScalableTarget. To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+    * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
     */
   def putScheduledAction(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.PutScheduledActionResponse, 
@@ -324,7 +324,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you register the scalable target using RegisterScalableTarget. To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+    * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
     */
   def putScheduledAction(
     params: awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.PutScheduledActionRequest
@@ -344,7 +344,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out or scale in. After you have registered a scalable target, you can use this operation to update the minimum and maximum values for its scalable dimension. After you register a scalable target, you can create and apply scaling policies using PutScalingPolicy. You can view the scaling policies for a service namespace using DescribeScalableTargets. If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale in and scale out. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
     */
   def registerScalableTarget(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.RegisterScalableTargetResponse, 
@@ -361,7 +361,7 @@ trait ApplicationAutoScaling
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out or scale in. After you have registered a scalable target, you can use this operation to update the minimum and maximum values for its scalable dimension. After you register a scalable target, you can create and apply scaling policies using PutScalingPolicy. You can view the scaling policies for a service namespace using DescribeScalableTargets. If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+    * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale in and scale out. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
     */
   def registerScalableTarget(
     params: awsDashSdkLib.clientsApplicationautoscalingMod.ApplicationAutoScalingNs.RegisterScalableTargetRequest

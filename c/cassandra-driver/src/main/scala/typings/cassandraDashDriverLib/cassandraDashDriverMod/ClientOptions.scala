@@ -11,7 +11,9 @@ trait ClientOptions extends js.Object {
   var encoding: js.UndefOr[cassandraDashDriverLib.Anon_Args] = js.undefined
   var isMetadataSyncEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var keyspace: js.UndefOr[java.lang.String] = js.undefined
+  var localDataCenter: js.UndefOr[java.lang.String] = js.undefined
   var maxPrepared: js.UndefOr[scala.Double] = js.undefined
+  var metrics: js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.metricsNs.ClientMetrics] = js.undefined
   var policies: js.UndefOr[cassandraDashDriverLib.Anon_AddressResolution] = js.undefined
   var pooling: js.UndefOr[cassandraDashDriverLib.Anon_CoreConnectionsPerHost] = js.undefined
   var prepareOnAllHosts: js.UndefOr[scala.Boolean] = js.undefined
@@ -29,6 +31,7 @@ trait ClientOptions extends js.Object {
   var queryOptions: js.UndefOr[QueryOptions] = js.undefined
   var rePrepareOnUp: js.UndefOr[scala.Boolean] = js.undefined
   var refreshSchemaDelay: js.UndefOr[scala.Double] = js.undefined
+  var requestTracker: js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.trackerNs.RequestTracker] = js.undefined
   var socketOptions: js.UndefOr[cassandraDashDriverLib.Anon_CoalescingThreshold] = js.undefined
   var sslOptions: js.UndefOr[nodeLib.tlsMod.ConnectionOptions] = js.undefined
 }

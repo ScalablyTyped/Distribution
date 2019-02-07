@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object webdriverioLibStrings {
   @js.native
-  sealed trait capabilities extends js.Object
-  
-  @js.native
   sealed trait height extends js.Object
   
   @js.native
@@ -39,8 +36,6 @@ object webdriverioLibStrings {
   @js.native
   sealed trait y extends js.Object
   
-  @scala.inline
-  def capabilities: capabilities = "capabilities".asInstanceOf[capabilities]
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline

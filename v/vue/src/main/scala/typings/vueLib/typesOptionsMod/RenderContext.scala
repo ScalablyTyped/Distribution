@@ -12,6 +12,7 @@ trait RenderContext[Props] extends js.Object {
   var listeners: org.scalablytyped.runtime.StringDictionary[js.Function | js.Array[js.Function]]
   var parent: vueLib.typesVueMod.Vue
   var props: Props
+  var scopedSlots: org.scalablytyped.runtime.StringDictionary[vueLib.typesVnodeMod.ScopedSlot]
   def slots(): js.Any
 }
 

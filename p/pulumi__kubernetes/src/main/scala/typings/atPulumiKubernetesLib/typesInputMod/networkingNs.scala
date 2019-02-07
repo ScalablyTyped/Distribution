@@ -25,7 +25,9 @@ object networkingNs extends js.Object {
         * Except is a slice of CIDRs that should not be included within an IP Block Valid examples
         * are "192.168.1.1/24" Except values will be rejected if they are outside the CIDR range
         */
-      var except: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var except: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -75,7 +77,9 @@ object networkingNs extends js.Object {
         * restricted by port). If this field is present and contains at least one item, then this
         * rule allows traffic only if the traffic matches at least one port in the list.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+          ] = js.undefined
       /**
         * List of destinations for outgoing traffic of pods selected for this rule. Items in this
         * list are combined using a logical OR operation. If this field is empty or missing, this
@@ -83,7 +87,9 @@ object networkingNs extends js.Object {
         * present and contains at least one item, this rule allows traffic only if the traffic
         * matches at least one item in the to list.
         */
-      var to: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPeer]]] = js.undefined
+      var to: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+          ] = js.undefined
     }
     
     /**
@@ -98,7 +104,9 @@ object networkingNs extends js.Object {
         * and contains at least on item, this rule allows traffic only if the traffic matches at
         * least one item in the from list.
         */
-      var from: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPeer]]] = js.undefined
+      var from: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+          ] = js.undefined
       /**
         * List of ports which should be made accessible on the pods selected for this rule. Each item
         * in this list is combined using a logical OR. If this field is empty or missing, this rule
@@ -106,7 +114,9 @@ object networkingNs extends js.Object {
         * at least one item, then this rule allows traffic only if the traffic matches at least one
         * port in the list.
         */
-      var ports: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyPort]]] = js.undefined
+      var ports: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+          ] = js.undefined
     }
     
     /**
@@ -125,7 +135,7 @@ object networkingNs extends js.Object {
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicy]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicy]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -206,7 +216,9 @@ object networkingNs extends js.Object {
         * NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it
         * selects are isolated by default). This field is beta-level in 1.8
         */
-      var egress: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyEgressRule]]] = js.undefined
+      var egress: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyEgressRule]]]
+          ] = js.undefined
       /**
         * List of ingress rules to be applied to the selected pods. Traffic is allowed to a pod if
         * there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the
@@ -215,7 +227,9 @@ object networkingNs extends js.Object {
         * the pod. If this field is empty then this NetworkPolicy does not allow any traffic (and
         * serves solely to ensure that the pods it selects are isolated by default)
         */
-      var ingress: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[NetworkPolicyIngressRule]]] = js.undefined
+      var ingress: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyIngressRule]]]
+          ] = js.undefined
       /**
         * Selects the pods to which this NetworkPolicy object applies. The array of ingress rules is
         * applied to any pods selected by this field. Multiple network policies can select the same
@@ -235,7 +249,9 @@ object networkingNs extends js.Object {
         * policy would not include an Egress section and would otherwise default to just [ "Ingress"
         * ]). This field is beta-level in 1.8
         */
-      var policyTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var policyTypes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     def isNetworkPolicy(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.networking.v1.NetworkPolicy */ scala.Boolean = js.native

@@ -226,13 +226,13 @@ class Plot ()
   def attr(attr: java.lang.String, attrValue: java.lang.String): this.type = js.native
   def attr(
     attr: java.lang.String,
-    attrValue: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Double | java.lang.String]
+    attrValue: plottableLib.buildSrcCoreInterfacesMod.IAccessor[scala.Boolean | scala.Double | java.lang.String]
   ): this.type = js.native
   /**
     * Sets a particular attribute to a constant value or the result of an Accessor.
     *
     * @param {string} attr
-    * @param {number|string|Accessor<number>|Accessor<string>} attrValue
+    * @param {number|string|Accessor<number>|Accessor<string>|Accessor<boolean>} attrValue
     * @returns {Plot} The calling Plot.
     */
   def attr(attr: java.lang.String, attrValue: scala.Double): this.type = js.native

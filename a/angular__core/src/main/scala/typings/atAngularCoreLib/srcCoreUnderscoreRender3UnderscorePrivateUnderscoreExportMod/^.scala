@@ -49,6 +49,7 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
+  val ɵdefaultStyleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn = js.native
   def `ɵCompiler_compileModuleAndAllComponentsAsync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T]] = js.native
   def `ɵCompiler_compileModuleAndAllComponentsSync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): atAngularCoreLib.srcLinkerCompilerMod.ModuleWithComponentFactories[T] = js.native
   def `ɵCompiler_compileModuleAsync__POST_R3__`[T](moduleType: atAngularCoreLib.srcTypeMod.Type[T]): js.Promise[
@@ -957,6 +958,7 @@ object ^ extends js.Object {
   def ɵrestoreView(viewToRestore: atAngularCoreLib.srcRender3InterfacesViewMod.OpaqueViewState): scala.Unit = js.native
   def ɵsanitizeHtml(unsafeHtml: js.Any): java.lang.String = js.native
   def ɵsanitizeResourceUrl(unsafeResourceUrl: js.Any): java.lang.String = js.native
+  def ɵsanitizeScript(unsafeScript: js.Any): java.lang.String = js.native
   def ɵsanitizeStyle(unsafeStyle: js.Any): java.lang.String = js.native
   def ɵsanitizeUrl(unsafeUrl: js.Any): java.lang.String = js.native
   def ɵsetClassMetadata(`type`: atAngularCoreLib.srcTypeMod.Type[_]): scala.Unit = js.native

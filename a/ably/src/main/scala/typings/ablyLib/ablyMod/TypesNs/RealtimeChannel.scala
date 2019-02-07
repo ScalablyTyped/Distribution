@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelEvent, ChannelState] {
+trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelStateChange, ChannelEvent, ChannelState] {
   var errorReason: ErrorInfo = js.native
   var name: java.lang.String = js.native
   var presence: RealtimePresence = js.native
@@ -16,8 +16,8 @@ trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelEvent, C
   def detach(): scala.Unit = js.native
   def detach(callback: standardCallback): scala.Unit = js.native
   def history(): scala.Unit = js.native
-  def history(paramsOrCallback: RealtimePresenceHistoryParams): scala.Unit = js.native
-  def history(paramsOrCallback: RealtimePresenceHistoryParams, callback: paginatedResultCallback[Message]): scala.Unit = js.native
+  def history(paramsOrCallback: RealtimeHistoryParams): scala.Unit = js.native
+  def history(paramsOrCallback: RealtimeHistoryParams, callback: paginatedResultCallback[Message]): scala.Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message]): scala.Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message], callback: paginatedResultCallback[Message]): scala.Unit = js.native
   def publish(messagesOrName: js.Any): scala.Unit = js.native
@@ -29,10 +29,25 @@ trait RealtimeChannel extends EventEmitter[channelEventCallback, ChannelEvent, C
   def setOptions(options: js.Any, callback: errorCallback): scala.Unit = js.native
   def subscribe(eventOrCallback: messageCallback[Message]): scala.Unit = js.native
   def subscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): scala.Unit = js.native
+  def subscribe(
+    eventOrCallback: messageCallback[Message],
+    listener: messageCallback[Message],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
   def subscribe(eventOrCallback: java.lang.String): scala.Unit = js.native
   def subscribe(eventOrCallback: java.lang.String, listener: messageCallback[Message]): scala.Unit = js.native
+  def subscribe(
+    eventOrCallback: java.lang.String,
+    listener: messageCallback[Message],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
   def subscribe(eventOrCallback: js.Array[java.lang.String]): scala.Unit = js.native
   def subscribe(eventOrCallback: js.Array[java.lang.String], listener: messageCallback[Message]): scala.Unit = js.native
+  def subscribe(
+    eventOrCallback: js.Array[java.lang.String],
+    listener: messageCallback[Message],
+    callbackWhenAttached: standardCallback
+  ): scala.Unit = js.native
   def unsubscribe(): scala.Unit = js.native
   def unsubscribe(eventOrCallback: messageCallback[Message]): scala.Unit = js.native
   def unsubscribe(eventOrCallback: messageCallback[Message], listener: messageCallback[Message]): scala.Unit = js.native

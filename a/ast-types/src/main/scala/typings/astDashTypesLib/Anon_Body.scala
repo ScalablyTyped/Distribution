@@ -1,0 +1,15 @@
+package typings
+package astDashTypesLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Body extends js.Object {
+  var body: js.Array[astDashTypesLib.genKindsMod.StatementKind]
+  var comments: js.UndefOr[js.Array[astDashTypesLib.genKindsMod.CommentKind] | scala.Null] = js.undefined
+  var directives: js.UndefOr[js.Array[astDashTypesLib.genKindsMod.DirectiveKind]] = js.undefined
+  var interpreter: js.UndefOr[astDashTypesLib.genKindsMod.InterpreterDirectiveKind | scala.Null] = js.undefined
+  var loc: js.UndefOr[astDashTypesLib.genKindsMod.SourceLocationKind | scala.Null] = js.undefined
+}
+

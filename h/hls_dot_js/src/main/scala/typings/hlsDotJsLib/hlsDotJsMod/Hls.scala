@@ -29,6 +29,11 @@ trait Hls extends js.Object {
     */
   var autoStartLoad: scala.Boolean = js.native
   /**
+    * (default: NaN)
+    * Return current download bandwidth in bits/s if available
+    */
+  var bandwidthEstimate: scala.Double = js.native
+  /**
     *  hls.js config
     */
   var config: hlsDotJsLib.hlsDotJsMod.HlsNs.Config = js.native

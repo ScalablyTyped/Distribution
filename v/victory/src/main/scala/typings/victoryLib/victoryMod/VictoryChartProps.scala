@@ -67,7 +67,6 @@ trait VictoryChartProps extends VictoryCommonProps {
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[js.Array[EventPropTypeInterface[java.lang.String, StringOrNumberOrCallback]]] = js.undefined
   /**

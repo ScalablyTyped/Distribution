@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "adm-zip"
-version := "v0.4.4-dt-20180214Z-cca2fe"
+version := "0.4-dt-20190202Z-6aab6e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

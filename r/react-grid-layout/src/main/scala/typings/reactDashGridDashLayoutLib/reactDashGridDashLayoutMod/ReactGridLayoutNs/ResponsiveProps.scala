@@ -31,7 +31,9 @@ trait ResponsiveProps extends CoreProps {
   /**
     * Callback so you can save the layout.
     */
-  var onLayoutChange: js.UndefOr[js.Function2[/* currentLayout */ Layout, /* allLayouts */ Layouts, scala.Unit]] = js.undefined
+  var onLayoutChange: js.UndefOr[
+    js.Function2[/* currentLayout */ js.Array[Layout], /* allLayouts */ Layouts, scala.Unit]
+  ] = js.undefined
   /**
     * Callback when the width changes, so you can modify the layout as needed.
     */

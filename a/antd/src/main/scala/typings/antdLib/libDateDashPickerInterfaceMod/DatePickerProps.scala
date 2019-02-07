@@ -14,7 +14,10 @@ trait DatePickerProps
       antdLib.Anon_DisabledHours
     ]
   ] = js.undefined
-  var onOk: js.UndefOr[js.Function1[/* selectedTime */ RangePickerValue, scala.Unit]] = js.undefined
+  var mode: js.UndefOr[
+    antdLib.antdLibStrings.time | antdLib.antdLibStrings.date | antdLib.antdLibStrings.month | antdLib.antdLibStrings.year
+  ] = js.undefined
+  var onOk: js.UndefOr[js.Function1[/* selectedTime */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var showTime: js.UndefOr[antdLib.libTimeDashPickerMod.TimePickerProps | scala.Boolean] = js.undefined
   var showToday: js.UndefOr[scala.Boolean] = js.undefined

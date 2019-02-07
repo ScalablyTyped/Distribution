@@ -150,7 +150,7 @@ object apiextensionsNs extends js.Object {
       /**
         * Items individual CustomResourceDefinitions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceDefinition]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinition]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -172,7 +172,9 @@ object apiextensionsNs extends js.Object {
       /**
         * Categories is a list of grouped resources custom resources belong to (e.g. 'all')
         */
-      var categories: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var categories: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Kind is the serialized kind of the resource.  It is normally CamelCase and singular.
         */
@@ -189,7 +191,9 @@ object apiextensionsNs extends js.Object {
       /**
         * ShortNames are short names for the resource.  It must be all lowercase.
         */
-      var shortNames: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var shortNames: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * Singular is the singular name of the resource.  It must be all lowercase  Defaults to
         * lowercased <kind>
@@ -206,7 +210,9 @@ object apiextensionsNs extends js.Object {
         * Defaults to a created-at column. Optional, the global columns for all versions. Top-level
         * and per-version columns are mutually exclusive.
         */
-      var additionalPrinterColumns: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceColumnDefinition]]] = js.undefined
+      var additionalPrinterColumns: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceColumnDefinition]]]
+          ] = js.undefined
       /**
         * `conversion` defines conversion settings for the CRD.
         */
@@ -255,7 +261,9 @@ object apiextensionsNs extends js.Object {
         * example sorted list of versions: v10, v2, v1, v11beta2, v10beta3, v3beta1, v12alpha1,
         * v11alpha2, foo1, foo10.
         */
-      var versions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceDefinitionVersion]]] = js.undefined
+      var versions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionVersion]]]
+          ] = js.undefined
     }
     
     /**
@@ -270,7 +278,7 @@ object apiextensionsNs extends js.Object {
       /**
         * Conditions indicate state for particular aspects of a CustomResourceDefinition
         */
-      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceDefinitionCondition]]
+      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionCondition]]]
       /**
         * StoredVersions are all versions of CustomResources that were ever persisted. Tracking these
         * versions allows a migration path for stored versions in etcd. The field is mutable so the
@@ -278,7 +286,7 @@ object apiextensionsNs extends js.Object {
         * objects are left in the storage), and then remove the rest of the versions from this list.
         * None of the versions in this list can be removed from the spec.Versions field.
         */
-      var storedVersions: atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]
+      var storedVersions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
     }
     
     /**
@@ -295,7 +303,9 @@ object apiextensionsNs extends js.Object {
         * per-version additionalPrinterColumns, the top-level additionalPrinterColumns field must be
         * explicitly set to null
         */
-      var additionalPrinterColumns: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[CustomResourceColumnDefinition]]] = js.undefined
+      var additionalPrinterColumns: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceColumnDefinition]]]
+          ] = js.undefined
       /**
         * Name is the version name, e.g. “v1”, “v2beta1”, etc.
         */
@@ -397,13 +407,19 @@ object apiextensionsNs extends js.Object {
       var $schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       var additionalItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
       var additionalProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
-      var allOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]] = js.undefined
-      var anyOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]] = js.undefined
+      var allOf: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+          ] = js.undefined
+      var anyOf: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+          ] = js.undefined
       var default: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
       var definitions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       var dependencies: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var enum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[_]]] = js.undefined
+      var enum: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[_]]]
+          ] = js.undefined
       var example: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
       var exclusiveMaximum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
       var exclusiveMinimum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
@@ -421,11 +437,15 @@ object apiextensionsNs extends js.Object {
       var minimum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       var multipleOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
       var not: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]] = js.undefined
-      var oneOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JSONSchemaProps]]] = js.undefined
+      var oneOf: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+          ] = js.undefined
       var pattern: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       var patternProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
       var properties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
-      var required: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var required: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       var title: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
       var uniqueItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined

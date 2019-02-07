@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "elliptic"
-version := "6.4-dt-20190116Z-8ab486"
+version := "6.4-dt-20190203Z-ecc07f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

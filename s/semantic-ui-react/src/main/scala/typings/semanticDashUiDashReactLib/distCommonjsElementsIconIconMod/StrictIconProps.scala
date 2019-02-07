@@ -21,7 +21,7 @@ trait StrictIconProps extends js.Object {
   /** Color of the icon. */
   var color: js.UndefOr[semanticDashUiDashReactLib.distCommonjsGenericMod.SemanticCOLORS] = js.undefined
   /** Icons can display a smaller corner icon. */
-  var corner: js.UndefOr[scala.Boolean] = js.undefined
+  var corner: js.UndefOr[scala.Boolean | IconCorner] = js.undefined
   /** Show that the icon is inactive. */
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Fitted, without space to left or right of Icon. */

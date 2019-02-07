@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "memjs"
-version := "1.2-dt-20180802Z-64b2fd"
+version := "1.2-dt-20190202Z-5993c1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

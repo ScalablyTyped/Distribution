@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "jest-image-snapshot"
-version := "2.4-dt-20180406Z-324c26"
+version := "2.8-dt-20190204Z-dd5225"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jest" % "23.3-dt-20190115Z-107508",
+  "org.scalablytyped" %%% "jest" % "24.0-dt-20190204Z-ebc466",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

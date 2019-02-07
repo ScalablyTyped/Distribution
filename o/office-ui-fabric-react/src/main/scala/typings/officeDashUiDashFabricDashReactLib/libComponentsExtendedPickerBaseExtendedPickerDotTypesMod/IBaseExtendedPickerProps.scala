@@ -91,6 +91,18 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
     */
   var onPaste: js.UndefOr[js.Function1[/* pastedText */ java.lang.String, js.Array[T]]] = js.undefined
   /**
+    * Function that specifies how the floating picker will appear.
+    */
+  var onRenderFloatingPicker: reactLib.reactMod.ReactNs.ComponentType[
+    officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T]
+  ]
+  /**
+    * Function that specifies how the floating picker will appear.
+    */
+  var onRenderSelectedItems: reactLib.reactMod.ReactNs.ComponentType[
+    officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T]
+  ]
+  /**
     * If using as a controlled component use selectedItems here instead of the SelectedItemsList
     */
   var selectedItems: js.UndefOr[js.Array[T]] = js.undefined
@@ -102,17 +114,5 @@ trait IBaseExtendedPickerProps[T] extends js.Object {
     * If using as a controlled component use suggestionItems here instead of FloatingPicker
     */
   var suggestionItems: js.UndefOr[js.Array[T]] = js.undefined
-  /**
-    * Function that specifies how the floating picker will appear.
-    */
-  def onRenderFloatingPicker(
-    props: officeDashUiDashFabricDashReactLib.libComponentsFloatingPickerBaseFloatingPickerDotTypesMod.IBaseFloatingPickerProps[T]
-  ): reactLib.reactMod.Global.JSXNs.Element
-  /**
-    * Function that specifies how the floating picker will appear.
-    */
-  def onRenderSelectedItems(
-    props: officeDashUiDashFabricDashReactLib.libComponentsSelectedItemsListBaseSelectedItemsListDotTypesMod.IBaseSelectedItemsListProps[T]
-  ): reactLib.reactMod.Global.JSXNs.Element
 }
 

@@ -9,6 +9,7 @@ trait QueryOptions extends js.Object {
   var autoPage: js.UndefOr[scala.Boolean] = js.undefined
   var captureStackTrace: js.UndefOr[scala.Boolean] = js.undefined
   var consistency: js.UndefOr[scala.Double] = js.undefined
+  var counter: js.UndefOr[scala.Boolean] = js.undefined
   var customPayload: js.UndefOr[js.Any] = js.undefined
   var executionProfile: js.UndefOr[java.lang.String | ExecutionProfile] = js.undefined
   var fetchSize: js.UndefOr[scala.Double] = js.undefined
@@ -21,7 +22,6 @@ trait QueryOptions extends js.Object {
   var prepare: js.UndefOr[scala.Boolean] = js.undefined
   var readTimeout: js.UndefOr[scala.Double] = js.undefined
   var retry: js.UndefOr[cassandraDashDriverLib.cassandraDashDriverMod.policiesNs.retryNs.RetryPolicy] = js.undefined
-  var retryOnTimeout: js.UndefOr[scala.Boolean] = js.undefined
   var routingIndexes: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var routingKey: js.UndefOr[nodeLib.Buffer | js.Array[nodeLib.Buffer]] = js.undefined
   var routingNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined

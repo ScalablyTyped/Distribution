@@ -10,7 +10,7 @@ trait ModalProps extends js.Object {
   var bodyStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var cancelButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   /** 取消按钮文字*/
-  var cancelText: js.UndefOr[java.lang.String] = js.undefined
+  var cancelText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** 垂直居中 */
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
@@ -34,7 +34,7 @@ trait ModalProps extends js.Object {
   var maskTransitionName: js.UndefOr[java.lang.String] = js.undefined
   var okButtonProps: js.UndefOr[antdLib.libButtonButtonMod.NativeButtonProps] = js.undefined
   /** 确认按钮文字*/
-  var okText: js.UndefOr[java.lang.String] = js.undefined
+  var okText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /** 确认按钮类型*/
   var okType: js.UndefOr[antdLib.libButtonButtonMod.ButtonType] = js.undefined
   /** 点击模态框右上角叉、取消按钮、Props.maskClosable 值为 true 时的遮罩层或键盘按下 Esc 时的回调*/

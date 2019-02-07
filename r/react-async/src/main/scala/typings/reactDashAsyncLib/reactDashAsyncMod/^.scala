@@ -10,14 +10,9 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   def default[T](): reactDashAsyncLib.reactDashAsyncMod.Async[T] = js.native
   def default[T](defaultProps: reactDashAsyncLib.reactDashAsyncMod.AsyncProps[T]): reactDashAsyncLib.reactDashAsyncMod.Async[T] = js.native
-  def useAsync[T](
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AsyncOptions<T> */ js.Any
-  ): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
-  def useAsync[T](
-    opts: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify AsyncOptions<T> */ js.Any,
-    init: T
-  ): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
   def useAsync[T](opts: reactDashAsyncLib.PromiseFn[T]): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
   def useAsync[T](opts: reactDashAsyncLib.PromiseFn[T], init: T): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
+  def useAsync[T](opts: reactDashAsyncLib.reactDashAsyncMod.AsyncOptions[T]): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
+  def useAsync[T](opts: reactDashAsyncLib.reactDashAsyncMod.AsyncOptions[T], init: T): reactDashAsyncLib.reactDashAsyncMod.AsyncState[T] = js.native
 }
 

@@ -10,9 +10,9 @@ import scala.scalajs.js.annotation._
 class namespaced protected () extends List {
   def this(element: java.lang.String) = this()
   def this(element: stdLib.HTMLElement) = this()
-  def this(element: java.lang.String, options: ListOptions) = this()
-  def this(element: stdLib.HTMLElement, options: ListOptions) = this()
-  def this(element: java.lang.String, options: ListOptions, values: js.Array[js.Object]) = this()
-  def this(element: stdLib.HTMLElement, options: ListOptions, values: js.Array[js.Object]) = this()
+  def this(element: java.lang.String, options: listDotJsLib.listDotJsMod.ListNs.ListOptions) = this()
+  def this(element: stdLib.HTMLElement, options: listDotJsLib.listDotJsMod.ListNs.ListOptions) = this()
+  def this(element: java.lang.String, options: listDotJsLib.listDotJsMod.ListNs.ListOptions, values: js.Array[js.Object]) = this()
+  def this(element: stdLib.HTMLElement, options: listDotJsLib.listDotJsMod.ListNs.ListOptions, values: js.Array[js.Object]) = this()
 }
 

@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TabProps extends js.Object {
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<react.HTMLLIElement>, 'className' | 'tabIndex'> ]: react.react.HTMLProps<react.HTMLLIElement>[P]} */ trait TabProps extends js.Object {
   var className: js.UndefOr[
     java.lang.String | js.Array[java.lang.String] | org.scalablytyped.runtime.StringDictionary[scala.Boolean]
   ] = js.undefined

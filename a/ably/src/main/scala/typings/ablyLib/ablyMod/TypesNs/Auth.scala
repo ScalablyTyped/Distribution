@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// Classes
 @js.native
 trait Auth extends js.Object {
   var clientId: java.lang.String = js.native

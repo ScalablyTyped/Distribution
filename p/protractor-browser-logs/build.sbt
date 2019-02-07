@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "protractor-browser-logs"
-version := "1.0-dt-20180214Z-6649d6"
+version := "1.0-dt-20180214Z-e7ec90"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180214Z-cca2fe",
+  "org.scalablytyped" %%% "adm-zip" % "0.4-dt-20190202Z-6aab6e",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-94ad9b",
   "org.scalablytyped" %%% "blocking-proxy" % "1.0.1-d17f25",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
@@ -23,7 +23,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-9fc7e9",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "optimist" % "0.0-unknown-dt-20180214Z-cf2d12",
-  "org.scalablytyped" %%% "protractor" % "5.4.2-0114cc",
+  "org.scalablytyped" %%% "protractor" % "5.4.2-d3bdd9",
   "org.scalablytyped" %%% "q" % "1.5-dt-20181124Z-306676",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-277b25",
   "org.scalablytyped" %%% "rimraf" % "2.0-dt-20180214Z-e16824",
@@ -34,7 +34,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-20da60",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",
   "org.scalablytyped" %%% "webdriver-js-extender" % "2.1.0-a6d37f",
-  "org.scalablytyped" %%% "webdriver-manager" % "12.1.1-ddeb10",
+  "org.scalablytyped" %%% "webdriver-manager" % "12.1.1-ee4369",
   "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-724be8")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

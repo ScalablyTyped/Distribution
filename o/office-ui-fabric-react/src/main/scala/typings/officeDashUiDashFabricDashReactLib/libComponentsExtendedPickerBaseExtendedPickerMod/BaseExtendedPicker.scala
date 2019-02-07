@@ -65,7 +65,7 @@ class BaseExtendedPicker[T, P /* <: officeDashUiDashFabricDashReactLib.libCompon
     ]
   ): scala.Unit = js.native
   /* protected */ def onSelectionChange(): scala.Unit = js.native
+  /* protected */ def renderFloatingPicker(): reactLib.reactMod.Global.JSXNs.Element = js.native
   /* protected */ def renderSelectedItemsList(): reactLib.reactMod.Global.JSXNs.Element = js.native
-  /* protected */ def renderSuggestions(): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

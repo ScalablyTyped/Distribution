@@ -14,7 +14,7 @@ package object tabsNs {
   type TabDetachedEvent = chromeLib.chromeNs.eventsNs.Event[
     js.Function2[/* tabId */ scala.Double, /* detachInfo */ TabDetachInfo, scala.Unit]
   ]
-  type TabHighlightedEvent = chromeLib.chromeNs.eventsNs.Event[js.Function1[/* highlightInfo */ HighlightInfo, scala.Unit]]
+  type TabHighlightedEvent = chromeLib.chromeNs.eventsNs.Event[js.Function1[/* highlightInfo */ TabHighlightInfo, scala.Unit]]
   type TabMovedEvent = chromeLib.chromeNs.eventsNs.Event[js.Function2[/* tabId */ scala.Double, /* moveInfo */ TabMoveInfo, scala.Unit]]
   type TabRemovedEvent = chromeLib.chromeNs.eventsNs.Event[
     js.Function2[/* tabId */ scala.Double, /* removeInfo */ TabRemoveInfo, scala.Unit]

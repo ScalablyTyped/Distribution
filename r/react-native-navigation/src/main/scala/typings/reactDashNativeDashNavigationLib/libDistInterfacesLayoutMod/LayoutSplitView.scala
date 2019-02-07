@@ -22,6 +22,6 @@ trait LayoutSplitView extends js.Object {
   /**
     * Configure split view
     */
-  var options: js.UndefOr[reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.OptionsSplitView] = js.undefined
+  var options: js.UndefOr[reactDashNativeDashNavigationLib.libDistInterfacesOptionsMod.Options] = js.undefined
 }
 

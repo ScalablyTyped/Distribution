@@ -490,6 +490,15 @@ object reactDashNativeLibStrings {
   sealed trait dropdown extends js.Object
   
   @js.native
+  sealed trait easeIn extends js.Object
+  
+  @js.native
+  sealed trait easeInEaseOut extends js.Object
+  
+  @js.native
+  sealed trait easeOut extends js.Object
+  
+  @js.native
   sealed trait `email-address` extends js.Object
   
   @js.native
@@ -643,6 +652,27 @@ object reactDashNativeLibStrings {
   sealed trait key extends js.Object
   
   @js.native
+  sealed trait keyboard extends js.Object
+  
+  @js.native
+  sealed trait keyboardDidChangeFrame extends js.Object
+  
+  @js.native
+  sealed trait keyboardDidHide extends js.Object
+  
+  @js.native
+  sealed trait keyboardDidShow extends js.Object
+  
+  @js.native
+  sealed trait keyboardWillChangeFrame extends js.Object
+  
+  @js.native
+  sealed trait keyboardWillHide extends js.Object
+  
+  @js.native
+  sealed trait keyboardWillShow extends js.Object
+  
+  @js.native
   sealed trait keyboardkey extends js.Object
   
   @js.native
@@ -671,6 +701,9 @@ object reactDashNativeLibStrings {
   
   @js.native
   sealed trait `line-through` extends js.Object
+  
+  @js.native
+  sealed trait linear extends js.Object
   
   @js.native
   sealed trait link extends js.Object
@@ -1427,6 +1460,12 @@ object reactDashNativeLibStrings {
   @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   @scala.inline
+  def easeIn: easeIn = "easeIn".asInstanceOf[easeIn]
+  @scala.inline
+  def easeInEaseOut: easeInEaseOut = "easeInEaseOut".asInstanceOf[easeInEaseOut]
+  @scala.inline
+  def easeOut: easeOut = "easeOut".asInstanceOf[easeOut]
+  @scala.inline
   def `email-address`: `email-address` = "email-address".asInstanceOf[`email-address`]
   @scala.inline
   def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
@@ -1529,6 +1568,20 @@ object reactDashNativeLibStrings {
   @scala.inline
   def key: key = "key".asInstanceOf[key]
   @scala.inline
+  def keyboard: keyboard = "keyboard".asInstanceOf[keyboard]
+  @scala.inline
+  def keyboardDidChangeFrame: keyboardDidChangeFrame = "keyboardDidChangeFrame".asInstanceOf[keyboardDidChangeFrame]
+  @scala.inline
+  def keyboardDidHide: keyboardDidHide = "keyboardDidHide".asInstanceOf[keyboardDidHide]
+  @scala.inline
+  def keyboardDidShow: keyboardDidShow = "keyboardDidShow".asInstanceOf[keyboardDidShow]
+  @scala.inline
+  def keyboardWillChangeFrame: keyboardWillChangeFrame = "keyboardWillChangeFrame".asInstanceOf[keyboardWillChangeFrame]
+  @scala.inline
+  def keyboardWillHide: keyboardWillHide = "keyboardWillHide".asInstanceOf[keyboardWillHide]
+  @scala.inline
+  def keyboardWillShow: keyboardWillShow = "keyboardWillShow".asInstanceOf[keyboardWillShow]
+  @scala.inline
   def keyboardkey: keyboardkey = "keyboardkey".asInstanceOf[keyboardkey]
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
@@ -1548,6 +1601,8 @@ object reactDashNativeLibStrings {
   def `light-content`: `light-content` = "light-content".asInstanceOf[`light-content`]
   @scala.inline
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
+  @scala.inline
+  def linear: linear = "linear".asInstanceOf[linear]
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   @scala.inline

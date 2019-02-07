@@ -11,7 +11,8 @@ trait Route extends js.Object {
   def apply(element: stdLib.Element, defaultRoute: java.lang.String, routes: RouteDefs): scala.Unit = js.native
   /** Returns the last fully resolved routing path, without the prefix. */
   def get(): java.lang.String = js.native
-  /** This method is meant to be used in conjunction with an <a> Vnode's oncreate hook. */
+  def link(options: RouteOptions): js.Function1[/* vnode */ Vnode[_, _], js.Function1[/* e */ js.UndefOr[stdLib.Event], _]] = js.native
+  /** This method is meant to be used in conjunction with an <a> Vnode's oncreate/onupdate hooks. */
   def link(vnode: Vnode[_, _]): js.Function1[/* e */ js.UndefOr[stdLib.Event], _] = js.native
   /** Gets all route parameters. */
   def param(): js.Any = js.native

@@ -987,7 +987,6 @@ class SurveyModel ()
   /* protected */ def doNextPage(): scala.Unit = js.native
   /* protected */ def doOnPageAdded(page: PageModel): scala.Unit = js.native
   /* protected */ def doServerValidation(): scala.Boolean = js.native
-  /* protected */ def doSurveyValueChanged(question: IQuestion, newValue: js.Any): scala.Unit = js.native
   /* protected */ def doTimer(): scala.Unit = js.native
   def downloadFile(
     name: java.lang.String,
@@ -1308,6 +1307,7 @@ class SurveyModel ()
   def updateQuestionCssClasses(question: IQuestion, cssClasses: js.Any): scala.Unit = js.native
   @JSName("updateQuestionCssClasses")
   def updateQuestionCssClasses_Any(question: IQuestion, cssClasses: js.Any): js.Any = js.native
+  /* protected */ def updateQuestionValue(valueName: java.lang.String, newValue: js.Any): scala.Unit = js.native
   /**
     * Upload the file into server
     * @param name question name

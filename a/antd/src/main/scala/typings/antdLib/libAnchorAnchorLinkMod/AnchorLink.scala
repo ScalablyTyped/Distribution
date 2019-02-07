@@ -12,8 +12,8 @@ trait AnchorLink
   var context_AnchorLink: antdLib.Anon_AntAnchor_1011846465 = js.native
   @JSName("componentDidMount")
   def componentDidMount_MAnchorLink(): scala.Unit = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MAnchorLink(nextProps: AnchorLinkProps): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MAnchorLink(hasHref: AnchorLinkProps): scala.Unit = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MAnchorLink(): scala.Unit = js.native
   def handleClick(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native

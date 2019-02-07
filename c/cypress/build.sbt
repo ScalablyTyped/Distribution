@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cypress"
-version := "3.1.5-8965a9"
+version := "3.1.5-8287d5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -37,7 +37,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mocha" % "5.2-dt-20180806Z-1708d5",
   "org.scalablytyped" %%% "moment" % "2.24.0-22f1d2",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
-  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190109Z-de773c",
+  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190206Z-fc958a",
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-277b25",
   "org.scalablytyped" %%% "sinon" % "7.0-dt-20190125Z-0d79b7",
   "org.scalablytyped" %%% "sinon-chai" % "3.2.0-dt-20181212Z-42fb8d",

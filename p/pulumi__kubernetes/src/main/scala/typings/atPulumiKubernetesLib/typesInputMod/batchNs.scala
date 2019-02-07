@@ -98,7 +98,7 @@ object batchNs extends js.Object {
       /**
         * items is the list of Jobs.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Job]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Job]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -200,7 +200,9 @@ object batchNs extends js.Object {
         * The latest available observations of an object's current state. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/jobs-run-to-completion/
         */
-      var conditions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[JobCondition]]] = js.undefined
+      var conditions: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JobCondition]]]
+          ] = js.undefined
       /**
         * The number of pods which reached phase Failed.
         */
@@ -281,7 +283,7 @@ object batchNs extends js.Object {
       /**
         * items is the list of CronJobs.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[CronJob]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CronJob]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -349,7 +351,11 @@ object batchNs extends js.Object {
         * A list of pointers to currently running jobs.
         */
       var active: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
+              ]
+            ]
           ] = js.undefined
       /**
         * Information when was the last time the job was successfully scheduled.
@@ -441,7 +447,7 @@ object batchNs extends js.Object {
       /**
         * items is the list of CronJobs.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[CronJob]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CronJob]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -509,7 +515,11 @@ object batchNs extends js.Object {
         * A list of pointers to currently running jobs.
         */
       var active: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
+              ]
+            ]
           ] = js.undefined
       /**
         * Information when was the last time the job was successfully scheduled.

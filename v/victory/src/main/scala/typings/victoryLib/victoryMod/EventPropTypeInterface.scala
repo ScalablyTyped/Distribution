@@ -18,9 +18,6 @@ trait EventPropTypeInterface[TTarget, TEventKey] extends js.Object {
   var eventHandlers: org.scalablytyped.runtime.StringDictionary[
     (victoryLib.Anon_Event[TTarget, TEventKey]) | (victoryLib.Anon_EventAny[TTarget, TEventKey])
   ]
-  /**
-    *
-    */
   var eventKey: js.UndefOr[TEventKey] = js.undefined
   /**
     * Targets may be any valid style namespace for a given component

@@ -104,5 +104,23 @@ object ^ extends js.Object {
   def tooltip(): leafletLib.leafletMod.Tooltip = js.native
   def tooltip(options: leafletLib.leafletMod.TooltipOptions): leafletLib.leafletMod.Tooltip = js.native
   def tooltip(options: leafletLib.leafletMod.TooltipOptions, source: leafletLib.leafletMod.Layer): leafletLib.leafletMod.Tooltip = js.native
+  def videoOverlay(video: java.lang.String, bounds: leafletLib.leafletMod.LatLngBoundsExpression): leafletLib.leafletMod.VideoOverlay = js.native
+  def videoOverlay(
+    video: java.lang.String,
+    bounds: leafletLib.leafletMod.LatLngBoundsExpression,
+    options: leafletLib.leafletMod.VideoOverlayOptions
+  ): leafletLib.leafletMod.VideoOverlay = js.native
+  def videoOverlay(video: js.Array[java.lang.String], bounds: leafletLib.leafletMod.LatLngBoundsExpression): leafletLib.leafletMod.VideoOverlay = js.native
+  def videoOverlay(
+    video: js.Array[java.lang.String],
+    bounds: leafletLib.leafletMod.LatLngBoundsExpression,
+    options: leafletLib.leafletMod.VideoOverlayOptions
+  ): leafletLib.leafletMod.VideoOverlay = js.native
+  def videoOverlay(video: stdLib.HTMLVideoElement, bounds: leafletLib.leafletMod.LatLngBoundsExpression): leafletLib.leafletMod.VideoOverlay = js.native
+  def videoOverlay(
+    video: stdLib.HTMLVideoElement,
+    bounds: leafletLib.leafletMod.LatLngBoundsExpression,
+    options: leafletLib.leafletMod.VideoOverlayOptions
+  ): leafletLib.leafletMod.VideoOverlay = js.native
 }
 

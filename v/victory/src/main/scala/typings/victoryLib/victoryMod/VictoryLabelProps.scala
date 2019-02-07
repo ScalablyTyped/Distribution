@@ -45,6 +45,16 @@ trait VictoryLabelProps extends js.Object {
     */
   var events: js.UndefOr[reactLib.reactMod.ReactNs.DOMAttributes[_]] = js.undefined
   /**
+    * The labelPlacement prop is used to specify the placement of labels relative to the data point they represent.
+    * This prop may be given as “vertical”, “parallel” or “perpendicular”. This props is particularly useful in polar
+    * charts, where it may be desireable to position a label either parallel or perpendicular to its corresponding angle.
+    * When this prop is not set, perpendicular label placement will be used for polar charts, and vertical label
+    * placement will be used for cartesian charts.
+    */
+  var labelPlacement: js.UndefOr[
+    victoryLib.victoryLibStrings.parallel | victoryLib.victoryLibStrings.perpendicular | victoryLib.victoryLibStrings.vertical
+  ] = js.undefined
+  /**
     * The lineHeight prop defines how much space a single line of text should take up.
     * Note that SVG has no notion of line-height, so the positioning may differ slightly from what you would expect with CSS,
     * but the result is similar: a roughly equal amount of extra space is distributed above and below the line of text.
@@ -54,14 +64,30 @@ trait VictoryLabelProps extends js.Object {
     */
   var lineHeight: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   /**
+    * Victory components will pass an origin prop is to define the center point in svg coordinates for polar charts.
+    * **This prop should not be set manually.**
+    */
+  var origin: js.UndefOr[victoryLib.Anon_X] = js.undefined
+  /**
+    * Victory components can pass a boolean polar prop to specify whether a label is part of a polar chart.
+    * **This prop should not be set manually.**
+    */
+  var polar: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The renderInPortal prop specifies whether VictoryLabel should render text in place or within a VictoryPortal.
+    * Setting renderInPortal to true is equivalent to wrapping VictoryLabel in a VictoryPortal. This prop is false by default.
+    */
+  var renderInPortal: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * The style prop applies CSS properties to the rendered `<text>` element.
     */
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /**
-    * All Victory components will pass a text prop to their label component.
-    * This defines the content of the label when child nodes are absent. It will be ignored if children are provided.
+    * The text prop defines the text VictoryLabel will render. The text prop may be given as a string, number, a function of datum,
+    * or an array of any of these. Strings may include newline characters, which VictoryLabel will split into separate
+    * <tspan/> elements. When text is given as an array, separate <tspan/> elements will be created for each element in the array.
     */
-  var text: js.UndefOr[StringOrNumberOrCallback] = js.undefined
+  var text: js.UndefOr[js.Array[java.lang.String] | StringOrNumberOrCallback] = js.undefined
   /**
     * The textAnchor prop defines how the text is horizontally positioned relative to the given `x` and `y` coordinates.
     */

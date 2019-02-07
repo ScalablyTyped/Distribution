@@ -14,6 +14,7 @@ class Realtime protected () extends js.Object {
   var channels: ablyLib.ablyMod.TypesNs.Channels[ablyLib.ablyMod.TypesNs.RealtimeChannel] = js.native
   var clientId: java.lang.String = js.native
   var connection: ablyLib.ablyMod.TypesNs.Connection = js.native
+  var push: ablyLib.ablyMod.TypesNs.Push = js.native
   def close(): scala.Unit = js.native
   def connect(): scala.Unit = js.native
   def request(method: java.lang.String, path: java.lang.String): scala.Unit = js.native
@@ -64,21 +65,17 @@ class Realtime protected () extends js.Object {
     callback: ablyLib.ablyMod.TypesNs.paginatedResultCallback[ablyLib.ablyMod.TypesNs.Stats]
   ): scala.Unit = js.native
   def time(): scala.Unit = js.native
-  def time(paramsOrCallback: ablyLib.ablyMod.TypesNs.timeCallback): scala.Unit = js.native
-  def time(
-    paramsOrCallback: ablyLib.ablyMod.TypesNs.timeCallback,
-    callback: ablyLib.ablyMod.TypesNs.timeCallback
-  ): scala.Unit = js.native
-  def time(paramsOrCallback: js.Any): scala.Unit = js.native
-  def time(paramsOrCallback: js.Any, callback: ablyLib.ablyMod.TypesNs.timeCallback): scala.Unit = js.native
+  def time(callback: ablyLib.ablyMod.TypesNs.timeCallback): scala.Unit = js.native
 }
 
 /* static members */
 @JSImport("ably", "Realtime")
 @js.native
 object Realtime extends js.Object {
+  var Callbacks: ablyLib.Anon_CallbacksCrypto = js.native
   var Crypto: ablyLib.ablyMod.TypesNs.Crypto = js.native
   var Message: ablyLib.ablyMod.TypesNs.MessageStatic = js.native
   var PresenceMessage: ablyLib.ablyMod.TypesNs.PresenceMessageStatic = js.native
+  var Promise: org.scalablytyped.runtime.Instantiable0[ablyLib.ablyMod.TypesNs.RealtimePromise] = js.native
 }
 

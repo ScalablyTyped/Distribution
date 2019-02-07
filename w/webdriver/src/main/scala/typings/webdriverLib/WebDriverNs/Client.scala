@@ -18,6 +18,7 @@ trait Client[T] extends js.Object {
   var isIOS: scala.Boolean = js.native
   var isMobile: scala.Boolean = js.native
   var isW3C: scala.Boolean = js.native
+  var sessionId: java.lang.String = js.native
   def acceptAlert(): js.UndefOr[scala.Nothing] = js.native
   def activateIME(engine: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def addCookie(cookie: js.Object): js.UndefOr[scala.Nothing] = js.native

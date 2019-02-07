@@ -33,33 +33,35 @@ object policiesNs extends js.Object {
   @JSName("loadBalancing")
   @js.native
   object loadBalancingNs extends js.Object {
+    @js.native
     trait DCAwareRoundRobinPolicy extends LoadBalancingPolicy {
-      var localHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
-      var remoteHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
+      var localHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host] = js.native
+      var remoteHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host] = js.native
     }
     
     @js.native
     trait DCAwareRoundRobinPolicyStatic
       extends org.scalablytyped.runtime.Instantiable0[DCAwareRoundRobinPolicy]
          with org.scalablytyped.runtime.Instantiable1[/* localDc */ java.lang.String, DCAwareRoundRobinPolicy]
-         with org.scalablytyped.runtime.Instantiable2[
-              /* localDc */ java.lang.String, 
-              /* usedHostsPerRemoteDc */ scala.Double, 
-              DCAwareRoundRobinPolicy
-            ]
     
+    @js.native
     trait LoadBalancingPolicy extends js.Object {
-      def getDistance(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance
+      def getDistance(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance = js.native
       def init(
         client: cassandraDashDriverLib.cassandraDashDriverMod.Client,
         hosts: cassandraDashDriverLib.cassandraDashDriverMod.HostMap,
         callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
-      ): scala.Unit
+      ): scala.Unit = js.native
       def newQueryPlan(
         keyspace: java.lang.String,
-        queryOptions: js.Any,
+        queryOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptions,
         callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
-      ): scala.Unit
+      ): scala.Unit = js.native
+      def newQueryPlan(
+        keyspace: java.lang.String,
+        queryOptions: scala.Null,
+        callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      ): scala.Unit = js.native
     }
     
     @js.native

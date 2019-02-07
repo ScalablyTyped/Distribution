@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_XY extends js.Object {
-  var x: victoryLib.victoryMod.DomainTuple
-  var y: js.UndefOr[victoryLib.victoryMod.DomainTuple] = js.undefined
+  var x: js.UndefOr[victoryLib.victoryMod.DomainTuple] = js.undefined
+  var y: victoryLib.victoryMod.DomainTuple
 }
 

@@ -15,6 +15,8 @@ package object ioDashTsMod {
     js.Any
   ]
   type BooleanC = BooleanType
+  type BrandC[C /* <: Any */, B] = RefinementType[C, Branded[TypeOf[C], B], OutputOf[C], InputOf[C]]
+  type Branded[A, B] = A with Brand[B]
   type Compact[A] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof A ]: A[K]}
     */ ioDashTsLib.ioDashTsLibStrings.Compact with A
@@ -29,6 +31,7 @@ package object ioDashTsMod {
   type Index = fpDashTsLib.libArrayMod.Global.Array[ioDashTsLib.IndexItem]
   type IndexRecord = stdLib.Record[java.lang.String, Index]
   type InputOf[C /* <: Any */] = /* import warning: ImportType.apply Failed type conversion: C['_I'] */ js.Any
+  type Int = Branded[scala.Double, IntBrand]
   type IntersectionC[CS /* <: js.Array[Mixed] */] = IntersectionType[
     CS, 
     js.Any | (TypeOf[/* import warning: ImportType.apply Failed type conversion: CS['0'] */ js.Any]), 
@@ -103,7 +106,7 @@ package object ioDashTsMod {
   type TaggedProps[Tag /* <: java.lang.String */] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in Tag ]: io-ts.io-ts.LiteralType<any>}
     */ ioDashTsLib.ioDashTsLibStrings.TaggedProps with js.Any
-  type TaggedUnionC[Tag /* <: java.lang.String */, CS /* <: js.Array[Tagged[Tag, _, _]] */] = TaggedUnionType[
+  type TaggedUnionC[Tag /* <: java.lang.String */, CS /* <: js.Array[Mixed] */] = TaggedUnionType[
     Tag, 
     CS, 
     TypeOf[/* import warning: ImportType.apply Failed type conversion: CS[number] */ js.Any], 

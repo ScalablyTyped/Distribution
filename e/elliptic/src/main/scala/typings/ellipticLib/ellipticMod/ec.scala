@@ -65,10 +65,14 @@ class ec protected () extends js.Object {
   ): scala.Double = js.native
   def keyFromPrivate(priv: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPrivate(priv: ellipticLib.ellipticMod.ecNs.KeyPair, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPrivate(priv: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPrivate(priv: java.lang.String, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPrivate(priv: nodeLib.Buffer): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPrivate(priv: nodeLib.Buffer, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: ellipticLib.ellipticMod.ecNs.KeyPair, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPublic(pub: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPublic(pub: java.lang.String, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: nodeLib.Buffer): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: nodeLib.Buffer, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyPair(options: ellipticLib.ellipticMod.ecNs.KeyPairOptions): ellipticLib.ellipticMod.ecNs.KeyPair = js.native

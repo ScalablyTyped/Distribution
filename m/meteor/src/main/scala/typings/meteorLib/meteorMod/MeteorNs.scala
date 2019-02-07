@@ -109,9 +109,18 @@ object MeteorNs extends js.Object {
     var verified: scala.Boolean
   }
   
+  trait absoluteUrlOptions extends js.Object {
+    var replaceLocalhost: js.UndefOr[scala.Boolean] = js.undefined
+    var rootUrl: js.UndefOr[java.lang.String] = js.undefined
+    var secure: js.UndefOr[scala.Boolean] = js.undefined
+  }
+  
   /** User **/
   /** Error **/
   var Error: ErrorStatic = js.native
+  /** Method **/
+  /** Url **/
+  var absoluteUrl: meteorLib.Anon_DefaultOptions = js.native
   /** Global props **/
   var isClient: scala.Boolean = js.native
   var isCordova: scala.Boolean = js.native
@@ -124,11 +133,6 @@ object MeteorNs extends js.Object {
   var settings: Settings = js.native
   var users: meteorLib.MongoNs.Collection[User] = js.native
   def _debug(args: js.Any*): scala.Unit = js.native
-  /** Method **/
-  /** Url **/
-  def absoluteUrl(): java.lang.String = js.native
-  def absoluteUrl(path: java.lang.String): java.lang.String = js.native
-  def absoluteUrl(path: java.lang.String, options: meteorLib.Anon_ReplaceLocalhost): java.lang.String = js.native
   @JSName("apply")
   def apply(name: java.lang.String, args: js.Array[meteorLib.EJSONable]): js.Any = js.native
   @JSName("apply")

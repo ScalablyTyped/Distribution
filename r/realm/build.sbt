@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "realm"
-version := "2.23.0-0b9de0"
+version := "2.23.0-37b264"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -21,7 +21,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-277b25",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",
-  "org.scalablytyped" %%% "url-parse" % "1.4-dt-20190104Z-63a3ed")
+  "org.scalablytyped" %%% "url-parse" % "1.4-dt-20190205Z-6320a9")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

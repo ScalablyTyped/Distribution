@@ -45,7 +45,6 @@ trait VictoryLineProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

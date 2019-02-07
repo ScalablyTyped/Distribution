@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Connection extends EventEmitter[connectionEventCallback, ConnectionEvent, ConnectionState] {
+trait Connection extends EventEmitter[connectionEventCallback, ConnectionStateChange, ConnectionEvent, ConnectionState] {
   var errorReason: ErrorInfo = js.native
   var id: java.lang.String = js.native
   var key: java.lang.String = js.native

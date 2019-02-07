@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-jss"
-version := "8.6-dt-20190128Z-dfbea8"
+version := "8.6-dt-20190128Z-64b5b3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,10 +10,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-69abe5",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20181017Z-e944bb",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190201Z-f7085e",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-31ba1a",
-  "org.scalablytyped" %%% "theming" % "1.3-dt-20181130Z-763a51")
+  "org.scalablytyped" %%% "theming" % "1.3-dt-20181130Z-8cf80e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

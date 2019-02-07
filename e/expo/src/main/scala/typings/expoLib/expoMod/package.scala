@@ -12,10 +12,10 @@ package object expoMod {
   type AdMobRewardedEmptyEvent = expoLib.expoLibStrings.rewardedVideoDidLoad | expoLib.expoLibStrings.rewardedVideoDidOpen | expoLib.expoLibStrings.rewardedVideoDidStart | expoLib.expoLibStrings.rewardedVideoDidClose | expoLib.expoLibStrings.rewardedVideoWillLeaveApplication
   type AdMobRewardedEvent = AdMobRewardedEmptyEvent | expoLib.expoLibStrings.rewardedVideoDidRewardUser | expoLib.expoLibStrings.rewardedVideoDidFailToLoad
   type Axis = scala.Double
-  type BarCodeScannedCallback = js.Function1[/* params */ expoLib.Anon_Data, scala.Unit]
+  type BarCodeScannedCallback = js.Function1[/* result */ expoLib.Anon_Data, scala.Unit]
   type Md5 = java.lang.String
   type Orientation = expoLib.expoLibStrings.portrait | expoLib.expoLibStrings.landscape
-  type PlaybackSource = RequireSource | expoLib.Anon_Header | Asset
+  type PlaybackSource = RequireSource | expoLib.Anon_Uri | Asset
   type PlaybackStatus = expoLib.Anon_AndroidImplementation | expoLib.Anon_AndroidImplementationDidJustFinish
   type RequireSource = reactDashNativeLib.reactDashNativeMod.ImageRequireSource
   type ResizeModeContain = expoLib.expoLibStrings.contain

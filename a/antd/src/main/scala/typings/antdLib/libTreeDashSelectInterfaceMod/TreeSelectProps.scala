@@ -43,6 +43,7 @@ trait TreeSelectProps
   var treeDefaultExpandAll: js.UndefOr[scala.Boolean] = js.undefined
   var treeDefaultExpandedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var treeExpandedKeys: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var treeIcon: js.UndefOr[scala.Boolean] = js.undefined
   var treeNodeFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var treeNodeLabelProp: js.UndefOr[java.lang.String] = js.undefined
   var value: js.UndefOr[java.lang.String | scala.Double | js.Array[_]] = js.undefined

@@ -62,7 +62,7 @@ object auditregistrationNs extends js.Object {
       /**
         * List of audit configurations.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[AuditSink]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AuditSink]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -103,7 +103,9 @@ object auditregistrationNs extends js.Object {
       /**
         * Stages is a list of stages for which events are created.
         */
-      var stages: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var stages: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**

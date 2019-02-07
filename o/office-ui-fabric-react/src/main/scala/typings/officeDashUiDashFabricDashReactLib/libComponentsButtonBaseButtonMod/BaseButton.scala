@@ -46,6 +46,7 @@ class BaseButton protected ()
   var _splitButtonContainer: js.Any = js.native
   /* private */ def _handleTouchAndPointerEvent(): js.Any = js.native
   /* private */ def _hasText(): js.Any = js.native
+  /* private */ def _isMenuExpanded(): js.Any = js.native
   /**
     * Returns if the user hits a valid keyboard key to open the menu
     * @param ev - the keyboard event

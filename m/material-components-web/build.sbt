@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-components-web"
-version := "0.43-dt-20190119Z-a16bf1"
+version := "0.43-dt-20190119Z-810020"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "material__slider" % "0.35-dt-20180511Z-cc7da4",
   "org.scalablytyped" %%% "material__snackbar" % "0.35-dt-20180511Z-61a2ef",
   "org.scalablytyped" %%% "material__tabs" % "0.35-dt-20180511Z-7117aa",
-  "org.scalablytyped" %%% "material__textfield" % "0.35-dt-20180511Z-7950e7",
+  "org.scalablytyped" %%% "material__textfield" % "0.35-dt-20190131Z-1621f5",
   "org.scalablytyped" %%% "material__toolbar" % "0.35-dt-20180511Z-4af5cb",
   "org.scalablytyped" %%% "material__top-app-bar" % "0.35-dt-20180511Z-55d285",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")

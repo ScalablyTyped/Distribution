@@ -21,6 +21,13 @@ class MDCTextField ()
   var pattern: java.lang.String = js.native
   var required: scala.Boolean = js.native
   var step: java.lang.String = js.native
+  /**
+    * Ideally we would use a 'writeonly' modifier here since this is a setter,
+    * but such a thing does not exist.
+    * https://github.com/Microsoft/TypeScript/issues/4839
+    * https://github.com/Microsoft/TypeScript/issues/21759
+    */
+  var useNativeValidation: scala.Boolean = js.native
   var valid: scala.Boolean = js.native
   var value: java.lang.String = js.native
   /**

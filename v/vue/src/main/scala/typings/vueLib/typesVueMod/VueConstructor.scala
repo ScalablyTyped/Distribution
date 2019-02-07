@@ -23,6 +23,7 @@ org.scalablytyped.runtime.Instantiable0[
       CombinedVueInstance[V, js.Object, js.Object, js.Object, stdLib.Record[java.lang.String, js.Any]]
     ] {
   var config: VueConfiguration = js.native
+  var version: java.lang.String = js.native
   def compile(template: java.lang.String): vueLib.Anon_CreateElement = js.native
   def component(id: java.lang.String): VueConstructor[Vue] = js.native
   def component(
@@ -118,6 +119,7 @@ org.scalablytyped.runtime.Instantiable0[
   def nextTick(): js.Promise[scala.Unit] = js.native
   def nextTick(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def nextTick(callback: js.Function0[scala.Unit], context: js.Array[_]): scala.Unit = js.native
+  def observable[T](obj: T): T = js.native
   def set[T](array: js.Array[T], key: scala.Double, value: T): T = js.native
   def set[T](`object`: js.Object, key: java.lang.String, value: T): T = js.native
   def set[T](`object`: js.Object, key: scala.Double, value: T): T = js.native

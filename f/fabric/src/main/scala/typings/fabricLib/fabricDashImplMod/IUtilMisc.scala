@@ -29,6 +29,10 @@ trait IUtilMisc extends js.Object {
   	 */
   def createImage(): stdLib.HTMLImageElement = js.native
   /**
+    * Creates a transform matrix with the specified scale and skew
+    */
+  def customTransformMatrix(scaleX: scala.Double, scaleY: scala.Double, skewX: scala.Double): js.Array[scala.Double] = js.native
+  /**
   	 * Transforms degrees to radians.
   	 * @param degrees value in degrees
   	 */

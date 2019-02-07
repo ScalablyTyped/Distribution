@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__textfield"
-version := "0.35-dt-20180511Z-7950e7"
+version := "0.35-dt-20190131Z-1621f5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

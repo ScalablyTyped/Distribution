@@ -110,7 +110,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* Callback for custom menu rendering. */
   var renderMenu: js.UndefOr[
     js.Function2[
-      /* results */ js.Array[T], 
+      /* results */ js.Array[TypeaheadResult[T]], 
       /* menuProps */ js.Any, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
@@ -118,7 +118,7 @@ trait TypeaheadProps[T /* <: TypeaheadModel */] extends js.Object {
   /* Provides a hook for customized rendering of menu item contents. */
   var renderMenuItemChildren: js.UndefOr[
     js.Function3[
-      /* option */ T, 
+      /* option */ TypeaheadResult[T], 
       /* props */ TypeaheadMenuProps[T], 
       /* index */ scala.Double, 
       reactLib.reactMod.ReactNs.ReactNode

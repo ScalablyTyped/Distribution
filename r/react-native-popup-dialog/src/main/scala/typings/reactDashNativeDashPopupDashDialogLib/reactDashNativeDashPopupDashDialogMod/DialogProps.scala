@@ -6,11 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DialogProps extends js.Object {
-  var actionContainerStyle: js.UndefOr[
-    reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
-  ] = js.undefined
-  var actions: js.UndefOr[js.Array[_]] = js.undefined
-  var actionsBordered: js.UndefOr[scala.Boolean] = js.undefined
   var animationDuration: js.UndefOr[scala.Double] = js.undefined
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
@@ -20,6 +15,7 @@ trait DialogProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined
   var dialogTitle: js.UndefOr[js.Any] = js.undefined
+  var footer: js.UndefOr[js.Any] = js.undefined
   var hasOverlay: js.UndefOr[scala.Boolean] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var onDismiss: js.UndefOr[js.Function0[scala.Unit]] = js.undefined

@@ -43,6 +43,16 @@ object FileSystemNs extends js.Object {
     var url: java.lang.String
   }
   
+  trait ReadingOptions extends js.Object {
+    var encoding: js.UndefOr[EncodingType] = js.undefined
+    var length: js.UndefOr[scala.Double] = js.undefined
+    var position: js.UndefOr[scala.Double] = js.undefined
+  }
+  
+  trait WritingOptions extends js.Object {
+    var encoding: js.UndefOr[EncodingType] = js.undefined
+  }
+  
   val cacheDirectory: java.lang.String = js.native
   val documentDirectory: java.lang.String = js.native
   def copyAsync(options: expoLib.Anon_From): js.Promise[scala.Unit] = js.native
@@ -79,9 +89,12 @@ object FileSystemNs extends js.Object {
   def makeDirectoryAsync(dirUri: java.lang.String, options: expoLib.Anon_Intermediates): js.Promise[scala.Unit] = js.native
   def moveAsync(options: expoLib.Anon_From): js.Promise[scala.Unit] = js.native
   def readAsStringAsync(fileUri: java.lang.String): js.Promise[java.lang.String] = js.native
+  def readAsStringAsync(fileUri: java.lang.String, options: ReadingOptions): js.Promise[java.lang.String] = js.native
   def readDirectoryAsync(dirUri: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String): js.Promise[scala.Unit] = js.native
+  def writeAsStringAsync(fileUri: java.lang.String, contents: java.lang.String, options: WritingOptions): js.Promise[scala.Unit] = js.native
   type DownloadProgressCallback = js.Function1[/* data */ DownloadProgressData, scala.Unit]
+  type EncodingType = expoLib.expoLibStrings.utf8 | expoLib.expoLibStrings.base64
   type FileInfo = expoLib.Anon_Exists | expoLib.Anon_ExistsFalse
 }
 

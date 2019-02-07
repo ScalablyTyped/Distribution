@@ -124,9 +124,17 @@ object ECSNs extends js.Object {
       */
     var containerArn: js.UndefOr[String] = js.undefined
     /**
+      * The number of CPU units set for the container. The value will be 0 if no value was specified in the container definition when the task definition was registered.
+      */
+    var cpu: js.UndefOr[String] = js.undefined
+    /**
       * The exit code returned from the container.
       */
     var exitCode: js.UndefOr[BoxedInteger] = js.undefined
+    /**
+      * The IDs of each GPU assigned to the container.
+      */
+    var gpuIds: js.UndefOr[GpuIds] = js.undefined
     /**
       * The health status of the container. If health checks are not configured for this container in its task definition, then it reports the health status as UNKNOWN.
       */
@@ -135,6 +143,14 @@ object ECSNs extends js.Object {
       * The last known status of the container.
       */
     var lastStatus: js.UndefOr[String] = js.undefined
+    /**
+      * The hard limit (in MiB) of memory set for the container.
+      */
+    var memory: js.UndefOr[String] = js.undefined
+    /**
+      * The soft limit (in MiB) of memory set for the container.
+      */
+    var memoryReservation: js.UndefOr[String] = js.undefined
     /**
       * The name of the container.
       */
@@ -267,6 +283,10 @@ object ECSNs extends js.Object {
       */
     var repositoryCredentials: js.UndefOr[RepositoryCredentials] = js.undefined
     /**
+      * The type and amount of a resource to assign to a container. The only supported resource is a GPU.
+      */
+    var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
+    /**
       * The secrets to pass to the container.
       */
     var secrets: js.UndefOr[SecretList] = js.undefined
@@ -380,6 +400,10 @@ object ECSNs extends js.Object {
       * The name of the container that receives the override. This parameter is required if any override is specified.
       */
     var name: js.UndefOr[String] = js.undefined
+    /**
+      * The type and amount of a resource to assign to a container, instead of the default value from the task definition. The only supported resource is a GPU.
+      */
+    var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
   }
   
   trait ContainerStateChange extends js.Object {
@@ -477,7 +501,7 @@ object ECSNs extends js.Object {
       */
     var platformVersion: js.UndefOr[String] = js.undefined
     /**
-      * Specifies whether to propagate the tags from the task definition or the service to the tasks. If no value is specified, the tags are not propagated. Tags can only be propagated to the tasks within the service during service creation. To add tags to a task after service creation, use the TagResource API action.
+      * Specifies whether to propagate the tags from the task definition or the service to the tasks in the service. If no value is specified, the tags are not propagated. Tags can only be propagated to the tasks within the service during service creation. To add tags to a task after service creation, use the TagResource API action.
       */
     var propagateTags: js.UndefOr[PropagateTags] = js.undefined
     /**
@@ -1373,6 +1397,17 @@ object ECSNs extends js.Object {
     var `type`: js.UndefOr[PlacementStrategyType] = js.undefined
   }
   
+  trait PlatformDevice extends js.Object {
+    /**
+      * The ID for the GPU(s) on the container instance. The available GPU IDs can also be obtained on the container instance in the /var/lib/ecs/gpu/nvidia_gpu_info.json file.
+      */
+    var id: String
+    /**
+      * The type of device that is available on the container instance. The only supported value is GPU.
+      */
+    var `type`: PlatformDeviceType
+  }
+  
   trait PortMapping extends js.Object {
     /**
       * The port number on the container that is bound to the user-specified or automatically assigned host port. If you are using containers in a task with the awsvpc or host network mode, exposed ports should be specified using containerPort. If you are using containers in a task with the bridge network mode and you specify a container port and not a host port, your container automatically receives a host port in the ephemeral port range. For more information, see hostPort. Port mappings that are automatically assigned in this way do not count toward the 100 reserved ports limit of a container instance.
@@ -1449,6 +1484,10 @@ object ECSNs extends js.Object {
       * The instance identity document signature for the EC2 instance to register. This signature can be found by running the following command from the instance: curl http://169.254.169.254/latest/dynamic/instance-identity/signature/ 
       */
     var instanceIdentityDocumentSignature: js.UndefOr[String] = js.undefined
+    /**
+      * The devices that are available on the container instance. The only supported device type is a GPU.
+      */
+    var platformDevices: js.UndefOr[PlatformDevices] = js.undefined
     /**
       * The metadata that you apply to the container instance to help you categorize and organize them. Each tag consists of a key and an optional value, both of which you define. Tag keys can have a maximum character length of 128 characters, and tag values can have a maximum length of 256 characters.
       */
@@ -1570,6 +1609,17 @@ object ECSNs extends js.Object {
     var `type`: js.UndefOr[String] = js.undefined
   }
   
+  trait ResourceRequirement extends js.Object {
+    /**
+      * The type of resource a container desires. The only supported value is GPU.
+      */
+    var `type`: ResourceType
+    /**
+      * The number of GPUs to assign to a container.
+      */
+    var value: String
+  }
+  
   trait RunTaskRequest extends js.Object {
     /**
       * The short name or full Amazon Resource Name (ARN) of the cluster on which to run your task. If you do not specify a cluster, the default cluster is assumed.
@@ -1612,7 +1662,7 @@ object ECSNs extends js.Object {
       */
     var platformVersion: js.UndefOr[String] = js.undefined
     /**
-      * Specifies whether to propagate the tags from the task definition or the service to the task. If no value is specified, the tags are not propagated.
+      * Specifies whether to propagate the tags from the task definition to the task. If no value is specified, the tags are not propagated. Tags can only be propagated to the task during task creation. To add tags to a task after task creation, use the TagResource API action.  An error will be received if you specify the SERVICE option when running a task. 
       */
     var propagateTags: js.UndefOr[PropagateTags] = js.undefined
     /**
@@ -3501,6 +3551,7 @@ object ECSNs extends js.Object {
   type Double = scala.Double
   type EnvironmentVariables = js.Array[KeyValuePair]
   type Failures = js.Array[Failure]
+  type GpuIds = js.Array[String]
   type HealthStatus = awsDashSdkLib.awsDashSdkLibStrings.HEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNHEALTHY | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
   type HostEntryList = js.Array[HostEntry]
   type Integer = scala.Double
@@ -3518,9 +3569,13 @@ object ECSNs extends js.Object {
   type PlacementConstraints = js.Array[PlacementConstraint]
   type PlacementStrategies = js.Array[PlacementStrategy]
   type PlacementStrategyType = awsDashSdkLib.awsDashSdkLibStrings.random | awsDashSdkLib.awsDashSdkLibStrings.spread | awsDashSdkLib.awsDashSdkLibStrings.binpack | java.lang.String
+  type PlatformDeviceType = awsDashSdkLib.awsDashSdkLibStrings.GPU | java.lang.String
+  type PlatformDevices = js.Array[PlatformDevice]
   type PortMappingList = js.Array[PortMapping]
   type PropagateTags = awsDashSdkLib.awsDashSdkLibStrings.TASK_DEFINITION | awsDashSdkLib.awsDashSdkLibStrings.SERVICE | java.lang.String
   type RequiresAttributes = js.Array[Attribute]
+  type ResourceRequirements = js.Array[ResourceRequirement]
+  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.GPU | java.lang.String
   type Resources = js.Array[Resource]
   type ScaleUnit = awsDashSdkLib.awsDashSdkLibStrings.PERCENT | java.lang.String
   type SchedulingStrategy = awsDashSdkLib.awsDashSdkLibStrings.REPLICA | awsDashSdkLib.awsDashSdkLibStrings.DAEMON | java.lang.String

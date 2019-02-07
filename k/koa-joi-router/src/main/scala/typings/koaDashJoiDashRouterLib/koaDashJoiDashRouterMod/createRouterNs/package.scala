@@ -11,12 +11,11 @@ package object createRouterNs {
     /* next */ js.Function0[js.Promise[js.Any]], 
     js.Any
   ]
-  type Handler = PartialHandler | FullHandler | NestedHandler
+  type Handler = FullHandler | NestedHandler
   type Method = js.Function3[
     /* path */ java.lang.String | stdLib.RegExp, 
     /* handlerOrConfig */ Handler | js.Object, 
     /* repeated */ Handler, 
     Router
   ]
-  type PartialHandler = js.Function1[/* ctx */ koaLib.koaMod.ApplicationNs.Context, js.Any]
 }

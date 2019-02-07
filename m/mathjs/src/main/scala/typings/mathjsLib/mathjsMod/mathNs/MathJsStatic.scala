@@ -908,29 +908,6 @@ trait MathJsStatic extends js.Object {
     * @returns Exponent of x
     */
   def expm1(x: scala.Double): scala.Double = js.native
-  /**
-    * @param m The x dimension for the matrix
-    * @param n The y dimension for the matrix
-    * @param format The Matrix storage format
-    * @returns A matrix with ones on the diagonal
-    */
-  def eye(m: scala.Double, n: scala.Double): Matrix | MathArray | scala.Double = js.native
-  def eye(m: scala.Double, n: scala.Double, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  def eye(size: js.Array[scala.Double]): Matrix | MathArray | scala.Double = js.native
-  def eye(size: js.Array[scala.Double], format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  def eye(size: MathArray): Matrix | MathArray | scala.Double = js.native
-  def eye(size: MathArray, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  def eye(size: Matrix): Matrix | MathArray | scala.Double = js.native
-  def eye(size: Matrix, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
-  /**
-    * Create a 2-dimensional identity matrix with size m x n or n x n. The
-    * matrix has ones on the diagonal and zeros elsewhere.
-    * @param size The size for the matrix
-    * @param format The Matrix storage format
-    * @returns A matrix with ones on the diagonal
-    */
-  def eye(size: scala.Double): Matrix | MathArray | scala.Double = js.native
-  def eye(size: scala.Double, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
   def factorial(n: BigNumber): scala.Double | BigNumber | MathArray | Matrix = js.native
   def factorial(n: MathArray): scala.Double | BigNumber | MathArray | Matrix = js.native
   def factorial(n: Matrix): scala.Double | BigNumber | MathArray | Matrix = js.native
@@ -1137,6 +1114,29 @@ trait MathJsStatic extends js.Object {
     */
   @JSName("hypot")
   def hypot_Double(args: scala.Double*): scala.Double = js.native
+  /**
+    * @param m The x dimension for the matrix
+    * @param n The y dimension for the matrix
+    * @param format The Matrix storage format
+    * @returns A matrix with ones on the diagonal
+    */
+  def identity(m: scala.Double, n: scala.Double): Matrix | MathArray | scala.Double = js.native
+  def identity(m: scala.Double, n: scala.Double, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
+  def identity(size: js.Array[scala.Double]): Matrix | MathArray | scala.Double = js.native
+  def identity(size: js.Array[scala.Double], format: java.lang.String): Matrix | MathArray | scala.Double = js.native
+  def identity(size: MathArray): Matrix | MathArray | scala.Double = js.native
+  def identity(size: MathArray, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
+  def identity(size: Matrix): Matrix | MathArray | scala.Double = js.native
+  def identity(size: Matrix, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
+  /**
+    * Create a 2-dimensional identity matrix with size m x n or n x n. The
+    * matrix has ones on the diagonal and zeros elsewhere.
+    * @param size The size for the matrix
+    * @param format The Matrix storage format
+    * @returns A matrix with ones on the diagonal
+    */
+  def identity(size: scala.Double): Matrix | MathArray | scala.Double = js.native
+  def identity(size: scala.Double, format: java.lang.String): Matrix | MathArray | scala.Double = js.native
   def im(x: BigNumber): scala.Double | BigNumber | MathArray | Matrix = js.native
   def im(x: Complex): scala.Double | BigNumber | MathArray | Matrix = js.native
   def im(x: MathArray): scala.Double | BigNumber | MathArray | Matrix = js.native

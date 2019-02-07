@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "electron-publish"
-version := "20.38.5-0a869b"
+version := "20.38.5-196f32"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "is-ci" % "1.1-dt-20180416Z-2ab72d",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-9bda5b",
   "org.scalablytyped" %%% "lazy-val" % "1.0.3-128daa",
-  "org.scalablytyped" %%% "mime" % "2.0-dt-20180214Z-45605c",
+  "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-316df6",
   "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20180523Z-c6e9be",

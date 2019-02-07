@@ -23,6 +23,7 @@ class Base () extends js.Object {
   /* protected */ def createNewArray(name: java.lang.String, onPush: js.Any): js.Array[_] = js.native
   /* protected */ def createNewArray(name: java.lang.String, onPush: js.Any, onRemove: js.Any): js.Array[_] = js.native
   def endLoadingFromJson(): scala.Unit = js.native
+  def geValueFromHash(): js.Any = js.native
   def getLocalizableString(name: java.lang.String): LocalizableString = js.native
   def getLocalizableStringText(name: java.lang.String): java.lang.String = js.native
   def getLocalizableStringText(name: java.lang.String, defaultStr: java.lang.String): java.lang.String = js.native

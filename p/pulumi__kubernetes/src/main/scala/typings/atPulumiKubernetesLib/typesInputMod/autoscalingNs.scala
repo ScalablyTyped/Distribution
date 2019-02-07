@@ -87,7 +87,7 @@ object autoscalingNs extends js.Object {
       /**
         * list of horizontal pod autoscaler objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[HorizontalPodAutoscaler]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HorizontalPodAutoscaler]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -390,7 +390,7 @@ object autoscalingNs extends js.Object {
       /**
         * items is the list of horizontal pod autoscaler objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[HorizontalPodAutoscaler]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HorizontalPodAutoscaler]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -426,7 +426,9 @@ object autoscalingNs extends js.Object {
         * and vice-versa.  See the individual metric source types for more information about how each
         * type of metric must respond.
         */
-      var metrics: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[MetricSpec]]] = js.undefined
+      var metrics: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MetricSpec]]]
+          ] = js.undefined
       /**
         * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale
         * down. It defaults to 1 pod.
@@ -447,11 +449,13 @@ object autoscalingNs extends js.Object {
         * conditions is the set of conditions required for this autoscaler to scale its target, and
         * indicates whether or not those conditions are met.
         */
-      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[HorizontalPodAutoscalerCondition]]
+      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HorizontalPodAutoscalerCondition]]]
       /**
         * currentMetrics is the last read state of the metrics used by this autoscaler.
         */
-      var currentMetrics: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[MetricStatus]]] = js.undefined
+      var currentMetrics: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MetricStatus]]]
+          ] = js.undefined
       /**
         * currentReplicas is current number of replicas of pods managed by this autoscaler, as last
         * seen by the autoscaler.
@@ -859,7 +863,7 @@ object autoscalingNs extends js.Object {
       /**
         * items is the list of horizontal pod autoscaler objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[HorizontalPodAutoscaler]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HorizontalPodAutoscaler]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -896,7 +900,9 @@ object autoscalingNs extends js.Object {
         * type of metric must respond. If not set, the default metric will be set to 80% average CPU
         * utilization.
         */
-      var metrics: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[MetricSpec]]] = js.undefined
+      var metrics: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MetricSpec]]]
+          ] = js.undefined
       /**
         * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale
         * down. It defaults to 1 pod.
@@ -917,11 +923,13 @@ object autoscalingNs extends js.Object {
         * conditions is the set of conditions required for this autoscaler to scale its target, and
         * indicates whether or not those conditions are met.
         */
-      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[HorizontalPodAutoscalerCondition]]
+      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HorizontalPodAutoscalerCondition]]]
       /**
         * currentMetrics is the last read state of the metrics used by this autoscaler.
         */
-      var currentMetrics: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[MetricStatus]]] = js.undefined
+      var currentMetrics: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MetricStatus]]]
+          ] = js.undefined
       /**
         * currentReplicas is current number of replicas of pods managed by this autoscaler, as last
         * seen by the autoscaler.

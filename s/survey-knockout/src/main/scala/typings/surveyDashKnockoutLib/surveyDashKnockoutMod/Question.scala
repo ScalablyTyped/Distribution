@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -233,6 +233,7 @@ class Question protected ()
   @JSName("clearValue")
   def clearValue_Any(): js.Any = js.native
   def commentChangedCallback(): scala.Unit = js.native
+  def createValueCopy(): js.Any = js.native
   /* protected */ def fireCallback(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   /**
     * Move the focus to the input of this question.
@@ -301,6 +302,7 @@ class Question protected ()
   def hasErrors(fireCallback: scala.Boolean): scala.Boolean = js.native
   /* protected */ def hasOtherChanged(): scala.Unit = js.native
   /* protected */ def hasRequiredError(): scala.Boolean = js.native
+  /* protected */ def initDataFromSurvey(): scala.Unit = js.native
   def isAnswerCorrect(): scala.Boolean = js.native
   /* protected */ def isDefaultValueEmpty(): scala.Boolean = js.native
   /**
@@ -336,14 +338,19 @@ class Question protected ()
   /* protected */ def setNewComment(newValue: java.lang.String): scala.Unit = js.native
   /* protected */ def setNewValue(newValue: js.Any): scala.Unit = js.native
   /* protected */ def setNewValueInData(newValue: js.Any): scala.Unit = js.native
+  /* protected */ def setQuestionValue(newValue: js.Any): scala.Unit = js.native
   /* protected */ def setValueCore(newValue: js.Any): scala.Unit = js.native
   def supportComment(): scala.Boolean = js.native
   def supportGoNextPageAutomatic(): scala.Boolean = js.native
   def supportOther(): scala.Boolean = js.native
   def surveyLoadCallback(): scala.Unit = js.native
+  def updateCommentFromSurvey(newValue: js.Any): js.Any = js.native
   /* protected */ def updateCssClasses(res: js.Any, surveyCss: js.Any): scala.Unit = js.native
   def updateCustomWidget(): scala.Unit = js.native
   /* protected */ def updateDisplayValue(): js.Any = js.native
+  def updateValueFromSurvey(newValue: js.Any): scala.Unit = js.native
+  @JSName("updateValueFromSurvey")
+  def updateValueFromSurvey_Any(newValue: js.Any): js.Any = js.native
   def updateValueWithDefaults(): scala.Unit = js.native
   @JSName("updateValueWithDefaults")
   def updateValueWithDefaults_Any(): js.Any = js.native

@@ -66,7 +66,7 @@ object coordinationNs extends js.Object {
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[Lease]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Lease]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In

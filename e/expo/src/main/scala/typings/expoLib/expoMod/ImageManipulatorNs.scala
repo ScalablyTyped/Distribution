@@ -41,8 +41,6 @@ object ImageManipulatorNs extends js.Object {
     var format: js.UndefOr[expoLib.expoLibStrings.jpeg | expoLib.expoLibStrings.png] = js.undefined
   }
   
-  def manipulate(uri: java.lang.String, actions: js.Array[Action]): js.Promise[ImageResult] = js.native
-  def manipulate(uri: java.lang.String, actions: js.Array[Action], saveOptions: SaveOptions): js.Promise[ImageResult] = js.native
   def manipulateAsync(uri: java.lang.String, actions: js.Array[Action]): js.Promise[ImageResult] = js.native
   def manipulateAsync(uri: java.lang.String, actions: js.Array[Action], saveOptions: SaveOptions): js.Promise[ImageResult] = js.native
   type Action = Resize | Rotate | Flip | Crop

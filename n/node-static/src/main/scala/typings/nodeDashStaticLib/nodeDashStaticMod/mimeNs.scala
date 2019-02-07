@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("node-static", "mime")
 @js.native
 object mimeNs extends js.Object {
-  val default_type: java.lang.String = js.native
   def define(mimes: mimeLib.mimeMod.TypeMap): scala.Unit = js.native
   def define(mimes: mimeLib.mimeMod.TypeMap, force: scala.Boolean): scala.Unit = js.native
   def getExtension(mime: java.lang.String): java.lang.String | scala.Null = js.native

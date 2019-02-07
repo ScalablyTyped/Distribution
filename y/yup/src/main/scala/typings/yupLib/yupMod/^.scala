@@ -21,6 +21,7 @@ object ^ extends js.Object {
     name: java.lang.String,
     method: js.ThisFunction1[/* this */ T, /* repeated */ js.Any, T]
   ): scala.Unit = js.native
+  def isSchema(obj: js.Any): /* is yup.yup.Schema<any> */ scala.Boolean = js.native
   def `lazy`[T](fn: js.Function1[/* value */ T, yupLib.yupMod.Schema[T]]): yupLib.yupMod.Lazy = js.native
   def reach[T](schema: yupLib.yupMod.Schema[T], path: java.lang.String): yupLib.yupMod.Schema[T] = js.native
   def reach[T](schema: yupLib.yupMod.Schema[T], path: java.lang.String, value: js.Any): yupLib.yupMod.Schema[T] = js.native

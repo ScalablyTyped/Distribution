@@ -52,11 +52,9 @@ package object ReactNs {
   // and it's not even released so probably better to not define it.
   type Dispatch[A] = js.Function1[/* value */ A, scala.Unit]
   type DragEventHandler[T] = EventHandler[DragEvent[T]]
-  // NOTE: Currently, in alpha.0, the effect callbacks are actually allowed to return anything,
-  // but functions are treated specially. The next version published with hooks will warn if you actually
-  // return anything besides `void` or a callback. Async effects need to call an async function inside
-  // them.
-  type EffectCallback = js.Function0[scala.Unit | js.Function0[scala.Unit]]
+  // NOTE: callbacks are _only_ allowed to return either void, or a destructor.
+  // The destructor is itself only allowed to return void.
+  type EffectCallback = js.Function0[scala.Unit | js.Function0[js.UndefOr[scala.Unit]]]
   //
   // Event Handler Types
   // ----------------------------------------------------------------------

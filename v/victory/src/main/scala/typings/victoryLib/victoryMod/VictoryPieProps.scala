@@ -90,7 +90,6 @@ trait VictoryPieProps
     *     }
     *   }
     * ]}
-    *}}
     */
   var events: js.UndefOr[
     js.Array[

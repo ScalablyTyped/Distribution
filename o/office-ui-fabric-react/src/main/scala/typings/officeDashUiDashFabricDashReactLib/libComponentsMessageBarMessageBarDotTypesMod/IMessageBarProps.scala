@@ -13,6 +13,7 @@ trait IMessageBarProps
   var actions: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
   /**
     * A description of the message bar for the benefit of screen readers.
+    * @deprecated Use native prop `aria-label` instead.
     */
   var ariaLabel: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object victoryLibStrings {
   @js.native
+  sealed trait Anon_AxisAxisLabel extends js.Object
+  
+  @js.native
+  sealed trait VictoryStyleObject extends js.Object
+  
+  @js.native
   sealed trait all extends js.Object
   
   @js.native
@@ -196,7 +202,13 @@ object victoryLibStrings {
   sealed trait none extends js.Object
   
   @js.native
+  sealed trait parallel extends js.Object
+  
+  @js.native
   sealed trait parent extends js.Object
+  
+  @js.native
+  sealed trait perpendicular extends js.Object
   
   @js.native
   sealed trait plus extends js.Object
@@ -300,6 +312,10 @@ object victoryLibStrings {
   @js.native
   sealed trait y extends js.Object
   
+  @scala.inline
+  def Anon_AxisAxisLabel: Anon_AxisAxisLabel = "Anon_AxisAxisLabel".asInstanceOf[Anon_AxisAxisLabel]
+  @scala.inline
+  def VictoryStyleObject: VictoryStyleObject = "VictoryStyleObject".asInstanceOf[VictoryStyleObject]
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   @scala.inline
@@ -427,7 +443,11 @@ object victoryLibStrings {
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
+  def parallel: parallel = "parallel".asInstanceOf[parallel]
+  @scala.inline
   def parent: parent = "parent".asInstanceOf[parent]
+  @scala.inline
+  def perpendicular: perpendicular = "perpendicular".asInstanceOf[perpendicular]
   @scala.inline
   def plus: plus = "plus".asInstanceOf[plus]
   @scala.inline

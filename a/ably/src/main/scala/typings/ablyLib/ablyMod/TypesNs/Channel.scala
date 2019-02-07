@@ -10,8 +10,8 @@ trait Channel extends js.Object {
   var name: java.lang.String = js.native
   var presence: Presence = js.native
   def history(): scala.Unit = js.native
-  def history(paramsOrCallback: RestPresenceHistoryParams): scala.Unit = js.native
-  def history(paramsOrCallback: RestPresenceHistoryParams, callback: paginatedResultCallback[Message]): scala.Unit = js.native
+  def history(paramsOrCallback: RestHistoryParams): scala.Unit = js.native
+  def history(paramsOrCallback: RestHistoryParams, callback: paginatedResultCallback[Message]): scala.Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message]): scala.Unit = js.native
   def history(paramsOrCallback: paginatedResultCallback[Message], callback: paginatedResultCallback[Message]): scala.Unit = js.native
   def publish(messagesOrName: js.Any): scala.Unit = js.native

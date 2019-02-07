@@ -83,7 +83,9 @@ object policyNs extends js.Object {
         * ranges are the allowed ranges of fs groups.  If you would like to force a single fs group
         * then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
         */
@@ -168,7 +170,7 @@ object policyNs extends js.Object {
       var apiVersion: js.UndefOr[
             atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`policy/v1beta1`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodDisruptionBudget]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodDisruptionBudget]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -302,7 +304,7 @@ object policyNs extends js.Object {
       /**
         * items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodSecurityPolicy]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodSecurityPolicy]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -335,24 +337,32 @@ object policyNs extends js.Object {
         * container. Capabilities in this field may be added at the pod author's discretion. You must
         * not list a capability in both allowedCapabilities and requiredDropCapabilities.
         */
-      var allowedCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * allowedFlexVolumes is a whitelist of allowed Flexvolumes.  Empty or nil indicates that all
         * Flexvolumes may be used.  This parameter is effective only when the usage of the
         * Flexvolumes is allowed in the "volumes" field.
         */
-      var allowedFlexVolumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedFlexVolume]]] = js.undefined
+      var allowedFlexVolumes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AllowedFlexVolume]]]
+          ] = js.undefined
       /**
         * allowedHostPaths is a white list of allowed host paths. Empty indicates that all host paths
         * may be used.
         */
-      var allowedHostPaths: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[AllowedHostPath]]] = js.undefined
+      var allowedHostPaths: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AllowedHostPath]]]
+          ] = js.undefined
       /**
         * AllowedProcMountTypes is a whitelist of allowed ProcMountTypes. Empty or nil indicates that
         * only the DefaultProcMountType may be used. This requires the ProcMountType feature flag to
         * be enabled.
         */
-      var allowedProcMountTypes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedProcMountTypes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * allowedUnsafeSysctls is a list of explicitly allowed unsafe sysctls, defaults to none. Each
         * entry is either a plain sysctl name or ends in "*" in which case it is considered as a
@@ -362,14 +372,18 @@ object policyNs extends js.Object {
         * Examples: e.g. "foo/ *" allows "foo/bar", "foo/baz", etc. e.g. "foo.*" allows "foo.bar",
         * "foo.baz", etc.
         */
-      var allowedUnsafeSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var allowedUnsafeSysctls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * defaultAddCapabilities is the default set of capabilities that will be added to the
         * container unless the pod spec specifically drops the capability.  You may not list a
         * capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added
         * here are implicitly allowed, and need not be included in the allowedCapabilities list.
         */
-      var defaultAddCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var defaultAddCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * defaultAllowPrivilegeEscalation controls the default setting for whether a process can gain
         * more privileges than its parent process.
@@ -383,7 +397,9 @@ object policyNs extends js.Object {
         * Examples: e.g. "foo/ *" forbids "foo/bar", "foo/baz", etc. e.g. "foo.*" forbids "foo.bar",
         * "foo.baz", etc.
         */
-      var forbiddenSysctls: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var forbiddenSysctls: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * fsGroup is the strategy that will dictate what fs group is used by the SecurityContext.
         */
@@ -403,7 +419,9 @@ object policyNs extends js.Object {
       /**
         * hostPorts determines which host port ranges are allowed to be exposed.
         */
-      var hostPorts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[HostPortRange]]] = js.undefined
+      var hostPorts: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HostPortRange]]]
+          ] = js.undefined
       /**
         * privileged determines if a pod can request to be run as privileged.
         */
@@ -419,7 +437,9 @@ object policyNs extends js.Object {
         * requiredDropCapabilities are the capabilities that will be dropped from the container.
         * These are required to be dropped and cannot be added.
         */
-      var requiredDropCapabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var requiredDropCapabilities: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
       /**
         * RunAsGroup is the strategy that will dictate the allowable RunAsGroup values that may be
         * set. If this field is omitted, the pod's RunAsGroup can take any value. This field requires
@@ -443,7 +463,9 @@ object policyNs extends js.Object {
         * volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be
         * used. To allow all volumes you may use '*'.
         */
-      var volumes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[java.lang.String]]] = js.undefined
+      var volumes: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+          ] = js.undefined
     }
     
     /**
@@ -455,7 +477,9 @@ object policyNs extends js.Object {
         * ranges are the allowed ranges of gids that may be used. If you would like to force a single
         * gid then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate the allowable RunAsGroup values that may be set.
         */
@@ -471,7 +495,9 @@ object policyNs extends js.Object {
         * ranges are the allowed ranges of uids that may be used. If you would like to force a single
         * uid then supply a single range with the same start and end. Required for MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate the allowable RunAsUser values that may be set.
         */
@@ -505,7 +531,9 @@ object policyNs extends js.Object {
         * supplemental group then supply a single range with the same start and end. Required for
         * MustRunAs.
         */
-      var ranges: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Array[IDRange]]] = js.undefined
+      var ranges: js.UndefOr[
+            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[IDRange]]]
+          ] = js.undefined
       /**
         * rule is the strategy that will dictate what supplemental groups is used in the
         * SecurityContext.

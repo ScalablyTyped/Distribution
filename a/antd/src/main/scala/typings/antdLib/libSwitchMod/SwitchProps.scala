@@ -13,7 +13,8 @@ trait SwitchProps extends js.Object {
   var defaultChecked: js.UndefOr[scala.Boolean] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var loading: js.UndefOr[scala.Boolean] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* checked */ scala.Boolean, _]] = js.undefined
+  var onChange: js.UndefOr[js.Function2[/* checked */ scala.Boolean, /* event */ reactLib.MouseEvent, _]] = js.undefined
+  var onClick: js.UndefOr[js.Function2[/* checked */ scala.Boolean, /* event */ reactLib.MouseEvent, _]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined
   var size: js.UndefOr[antdLib.antdLibStrings.small | antdLib.antdLibStrings.default] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

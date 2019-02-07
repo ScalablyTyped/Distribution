@@ -27,6 +27,7 @@ trait ModalDropdownProps extends js.Object {
     js.Function3[/* option */ js.Any, /* index */ scala.Double, /* isSelected */ scala.Boolean, _]
   ] = js.undefined
   var renderSeparator: js.UndefOr[js.Function0[_]] = js.undefined
+  var scrollEnabled: js.UndefOr[scala.Boolean] = js.undefined
   var showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var textStyle: js.UndefOr[js.Any] = js.undefined

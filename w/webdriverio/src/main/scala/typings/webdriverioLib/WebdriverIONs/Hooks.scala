@@ -35,18 +35,8 @@ trait Hooks extends js.Object {
     ]
   ] = js.undefined
   var afterStep: js.UndefOr[js.Function1[/* stepResult */ js.Any, scala.Unit]] = js.undefined
-  var afterSuite: js.UndefOr[
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Suite */ /* suite */ js.Any, 
-      scala.Unit
-    ]
-  ] = js.undefined
-  var afterTest: js.UndefOr[
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ /* test */ js.Any, 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var afterSuite: js.UndefOr[js.Function1[/* suite */ Suite, scala.Unit]] = js.undefined
+  var afterTest: js.UndefOr[js.Function1[/* test */ Test, scala.Unit]] = js.undefined
   var before: js.UndefOr[
     js.Function2[
       /* capabilities */ webdriverLib.WebDriverNs.DesiredCapabilities, 
@@ -70,18 +60,8 @@ trait Hooks extends js.Object {
     ]
   ] = js.undefined
   var beforeStep: js.UndefOr[js.Function1[/* step */ java.lang.String, scala.Unit]] = js.undefined
-  var beforeSuite: js.UndefOr[
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Suite */ /* suite */ js.Any, 
-      scala.Unit
-    ]
-  ] = js.undefined
-  var beforeTest: js.UndefOr[
-    js.Function1[
-      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Test */ /* test */ js.Any, 
-      scala.Unit
-    ]
-  ] = js.undefined
+  var beforeSuite: js.UndefOr[js.Function1[/* suite */ Suite, scala.Unit]] = js.undefined
+  var beforeTest: js.UndefOr[js.Function1[/* test */ Test, scala.Unit]] = js.undefined
   var onComplete: js.UndefOr[js.Function1[/* exitCode */ scala.Double, scala.Unit]] = js.undefined
   var onPrepare: js.UndefOr[
     js.Function2[

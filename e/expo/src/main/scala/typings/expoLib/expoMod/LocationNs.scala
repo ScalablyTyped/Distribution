@@ -34,14 +34,20 @@ object LocationNs extends js.Object {
   }
   
   trait LocationOptions extends js.Object {
+    var accuracy: scala.Double
     var distanceInterval: js.UndefOr[scala.Double] = js.undefined
-    var enableHighAccuracy: js.UndefOr[scala.Boolean] = js.undefined
     var timeInterval: js.UndefOr[scala.Double] = js.undefined
+    var timeout: js.UndefOr[scala.Double] = js.undefined
   }
   
   trait LocationProps extends js.Object {
     var latitude: scala.Double
     var longitude: scala.Double
+  }
+  
+  trait LocationTaskOptions extends js.Object {
+    var accuracy: js.UndefOr[scala.Double] = js.undefined
+    var showsBackgroundLocationIndicator: js.UndefOr[scala.Boolean] = js.undefined
   }
   
   trait ProviderStatus extends js.Object {
@@ -51,12 +57,29 @@ object LocationNs extends js.Object {
     var passiveAvailable: js.UndefOr[scala.Boolean] = js.undefined
   }
   
-  def geocodeAsync(address: java.lang.String): js.Promise[js.Array[Coords]] = js.native
+  trait Region extends js.Object {
+    var identifier: js.UndefOr[java.lang.String] = js.undefined
+    var latitude: scala.Double
+    var longitude: scala.Double
+    var notifyOnEnter: js.UndefOr[scala.Boolean] = js.undefined
+    var notifyOnExit: js.UndefOr[scala.Boolean] = js.undefined
+    var radius: scala.Double
+  }
+  
+  def geocodeAsync(address: java.lang.String): js.Promise[Coords] = js.native
   def getCurrentPositionAsync(options: LocationOptions): js.Promise[LocationData] = js.native
   def getHeadingAsync(): js.Promise[HeadingStatus] = js.native
   def getProviderStatusAsync(): js.Promise[ProviderStatus] = js.native
+  def hasServicesEnabledAsync(): js.Promise[scala.Boolean] = js.native
+  def hasStartedGeofencingAsync(taskName: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def hasStartedLocationUpdatesAsync(taskName: java.lang.String): js.Promise[scala.Boolean] = js.native
+  def requestPermissionsAsync(): js.Promise[scala.Unit] = js.native
   def reverseGeocodeAsync(location: LocationProps): js.Promise[js.Array[GeocodeData]] = js.native
   def setApiKey(key: java.lang.String): scala.Unit = js.native
+  def startGeofencingAsync(taskName: java.lang.String, regions: js.Array[Region]): js.Promise[scala.Unit] = js.native
+  def startgeocodUpdatesAsync(taskName: java.lang.String, options: LocationTaskOptions): js.Promise[scala.Unit] = js.native
+  def stopGeofencingAsync(taskName: java.lang.String): js.Promise[scala.Unit] = js.native
+  def stopLocationUpdatesAsync(taskName: java.lang.String): js.Promise[scala.Unit] = js.native
   def watchHeadingAsync(callback: js.Function1[/* status */ HeadingStatus, scala.Unit]): fbemitterLib.fbemitterMod.EventSubscription = js.native
   def watchPositionAsync(options: LocationOptions, callback: LocationCallback): fbemitterLib.fbemitterMod.EventSubscription = js.native
   type LocationCallback = js.Function1[/* data */ LocationData, scala.Unit]

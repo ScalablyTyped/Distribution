@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "webdriver-manager"
-version := "12.1.1-ddeb10"
+version := "12.1.1-ee4369"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "adm-zip" % "v0.4.4-dt-20180214Z-cca2fe",
+  "org.scalablytyped" %%% "adm-zip" % "0.4-dt-20190202Z-6aab6e",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-94ad9b",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
   "org.scalablytyped" %%% "chalk" % "2.4.2-4d2e54",

@@ -6,14 +6,17 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /**
-  * The ZipEntry is more than a structure representing the entry inside the
+  * The `IZipEntry` is more than a structure representing the entry inside the
   * zip file. Beside the normal attributes and headers a entry can have, the
   * class contains a reference to the part of the file where the compressed
   * data resides and decompresses it when requested. It also compresses the
   * data and creates the headers required to write in the zip file.
   */
+// disable warning about the I-prefix in interface name to prevent breaking stuff for users without a major bump
+// tslint:disable-next-line:interface-name
 @js.native
 trait IZipEntry extends js.Object {
+  var attr: scala.Double = js.native
   /**
     * Entry comment.
     */
@@ -33,9 +36,9 @@ trait IZipEntry extends js.Object {
   /**
     * Read-Only property that indicates the type of the entry.
     */
-  var isDirectory: scala.Boolean = js.native
-  var name: java.lang.String = js.native
-  var rawEntryName: nodeLib.Buffer = js.native
+  val isDirectory: scala.Boolean = js.native
+  val name: java.lang.String = js.native
+  val rawEntryName: nodeLib.Buffer = js.native
   /**
     * Retrieve the compressed data for this entry. Note that this may trigger
     * compression if any properties were modified.
@@ -63,9 +66,6 @@ trait IZipEntry extends js.Object {
     * Set the (uncompressed) data to be associated with this entry.
     */
   def setData(value: java.lang.String): scala.Unit = js.native
-  /**
-    * Set the (uncompressed) data to be associated with this entry.
-    */
   def setData(value: nodeLib.Buffer): scala.Unit = js.native
 }
 

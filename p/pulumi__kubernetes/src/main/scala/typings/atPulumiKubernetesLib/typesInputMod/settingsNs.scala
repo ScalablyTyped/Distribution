@@ -59,7 +59,7 @@ object settingsNs extends js.Object {
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[PodPreset]]
+      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodPreset]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -86,13 +86,21 @@ object settingsNs extends js.Object {
         * Env defines the collection of EnvVar to inject into containers.
         */
       var env: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EnvVar]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EnvVar]
+              ]
+            ]
           ] = js.undefined
       /**
         * EnvFrom defines the collection of EnvFromSource to inject into containers.
         */
       var envFrom: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EnvFromSource]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EnvFromSource]
+              ]
+            ]
           ] = js.undefined
       /**
         * Selector is a label query over a set of resources, in this case pods. Required.
@@ -104,13 +112,21 @@ object settingsNs extends js.Object {
         * VolumeMounts defines the collection of VolumeMount to inject into containers.
         */
       var volumeMounts: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.VolumeMount]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.VolumeMount]
+              ]
+            ]
           ] = js.undefined
       /**
         * Volumes defines the collection of Volume to inject into the pod.
         */
       var volumes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Volume]]
+            atPulumiPulumiLib.resourceMod.Input[
+              js.Array[
+                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.Volume]
+              ]
+            ]
           ] = js.undefined
     }
     
