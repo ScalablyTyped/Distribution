@@ -151,6 +151,21 @@ trait MediaLive
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Create tags for a resource
+    */
+  def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTags(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Create tags for a resource
+    */
+  def createTags(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def createTags(
+    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.CreateTagsRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
     * Starts deletion of channel. The associated outputs are also deleted.
     */
   def deleteChannel(): awsDashSdkLib.libRequestMod.Request[
@@ -290,6 +305,21 @@ trait MediaLive
     awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteReservationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+    * Removes tags for a resource
+    */
+  def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTags(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags for a resource
+    */
+  def deleteTags(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def deleteTags(
+    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.DeleteTagsRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
     * Gets details about a channel
     */
@@ -673,6 +703,41 @@ trait MediaLive
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListReservationsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Produces list of tags that have been created for a resource
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Produces list of tags that have been created for a resource
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMedialiveMod.MediaLiveNs.ListTagsForResourceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

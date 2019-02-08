@@ -28,7 +28,7 @@ trait Settings extends js.Object {
   /**
     * Adds an event handler for the settingsChanged event.
     *
-    * Important: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
+    * **Important**: Your add-in's code can register a handler for the settingsChanged event when the add-in is running with any Excel client, but 
     * the event will fire only when the add-in is loaded with a spreadsheet that is opened in Excel Online, and more than one user is editing the 
     * spreadsheet (co-authoring). Therefore, effectively the settingsChanged event is supported only in Excel Online in co-authoring scenarios.
     *
@@ -185,7 +185,7 @@ trait Settings extends js.Object {
   /**
     * Removes the specified setting.
     *
-    * Important: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of 
+    * **Important**: Be aware that the Settings.remove method affects only the in-memory copy of the settings property bag. To persist the removal of 
     * the specified setting in the document, at some point after calling the Settings.remove method and before the add-in is closed, you must 
     * call the Settings.saveAsync method.
     *
@@ -265,7 +265,7 @@ trait Settings extends js.Object {
     * set and get methods to work with the in-memory copy of the settings property bag. When you want to persist the settings so that they are 
     * available the next time the add-in is used, use the saveAsync method.
     *
-    * Note: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
+    * **Note**: The saveAsync method persists the in-memory settings property bag into the document file. However, the changes to the document file 
     * itself are saved only when the user (or AutoRecover setting) saves the document to the file system. The refreshAsync method is only useful 
     * in coauthoring scenarios when other instances of the same add-in might change the settings and those changes should be made available to 
     * all instances.
@@ -323,7 +323,7 @@ trait Settings extends js.Object {
   /**
     * Sets or creates the specified setting.
     *
-    * Important: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. 
+    * **Important**: Be aware that the Settings.set method affects only the in-memory copy of the settings property bag. 
     * To make sure that additions or changes to settings will be available to your add-in the next time the document is opened, at some point 
     * after calling the Settings.set method and before the add-in is closed, you must call the Settings.saveAsync method to persist settings in 
     * the document.

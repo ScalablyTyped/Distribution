@@ -11,7 +11,7 @@ class Omnibar[T] ()
   extends reactLib.reactMod.PureComponent[IOmnibarProps[T], js.Object, js.Any] {
   var TypedQueryList: js.Any = js.native
   var handleOverlayClose: js.Any = js.native
-  var queryList: js.UndefOr[js.Any] = js.native
+  var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
 }

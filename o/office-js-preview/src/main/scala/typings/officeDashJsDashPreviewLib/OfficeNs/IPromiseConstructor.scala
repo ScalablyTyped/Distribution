@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-// Note: this is a copy of the PromiseConstructor object from
+// **Note**: this is a copy of the PromiseConstructor object from
 //     https://github.com/Microsoft/TypeScript/blob/master/lib/lib.es2015.promise.d.ts
 // It is necessary so that even with targeting "ES5" and not specifying any libs,
 //     developers will still get IntelliSense for "Office.Promise" just as they would with a regular Promise.

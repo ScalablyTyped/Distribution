@@ -2,6 +2,7 @@
 // Type definitions for W3C (WebAppSec) Credential Management API Level 1, 0.3
 // Project: https://github.com/w3c/webappsec-credential-management
 // Definitions by: Iain McGinniss <https://github.com/iainmcgin>
+//                 Joao Peixoto <https://github.com/Hartimer>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.7
 // Spec: https://www.w3.org/TR/2017/WD-credential-management-1-20170804

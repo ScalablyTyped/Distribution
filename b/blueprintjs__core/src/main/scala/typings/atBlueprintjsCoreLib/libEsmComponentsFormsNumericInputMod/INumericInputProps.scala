@@ -79,6 +79,11 @@ trait INumericInputProps
   /** The placeholder text in the absence of any value. */
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Element to render on right side of input.
+    * For best results, use a minimal button, tag, or small spinner.
+    */
+  var rightElement: js.UndefOr[reactLib.reactMod.Global.JSXNs.Element] = js.undefined
+  /**
     * Whether the entire text field should be selected on focus.
     * @default false
     */

@@ -36,6 +36,10 @@ trait OptionsTopBarButton extends js.Object {
     */
   var icon: js.UndefOr[reactDashNativeLib.reactDashNativeMod.ImageRequireSource] = js.undefined
   /**
+    * Set the button icon insets
+    */
+  var iconInsets: js.UndefOr[IconInsets] = js.undefined
+  /**
     * Button id for reference press event
     */
   var id: java.lang.String

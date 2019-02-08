@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphql-tools"
-version := "4.0.4-be6a61"
+version := "4.0.4-1bf6d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,10 +12,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
   "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-beaee2",
   "org.scalablytyped" %%% "iterall" % "1.2.2-cf22a7",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-9f73ab",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-7c0b14",
+  "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-7cf9f2",
   "org.scalablytyped" %%% "zen-observable" % "0.8-dt-20180618Z-6cdd80",
   "org.scalablytyped" %%% "zen-observable-ts" % "0.8.15-0ed4ab")
 publishArtifact in packageDoc := false

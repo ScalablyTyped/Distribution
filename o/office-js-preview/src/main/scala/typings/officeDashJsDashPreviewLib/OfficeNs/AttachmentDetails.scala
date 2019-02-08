@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /**
   * Represents an attachment on an item from the server. Read mode only.
   *
-  * An array of AttachmentDetail objects is returned as the attachments property of an Appointment or Message object.
+  * An array of **AttachmentDetails** objects is returned as the attachments property of an appointment or message item.
   *
   * [Api set: Mailbox 1.0]
   *

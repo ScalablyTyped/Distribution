@@ -13,7 +13,8 @@ trait IAllFilters extends js.Object {
   var BlendColor: fabricLib.Anon_FromObject
   var BlendImage: fabricLib.Anon_FromObjectObject
   var Brightness: fabricLib.Anon_FromObjectObjectOptions
-  var Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix
+  var ColorMatrix: fabricLib.Anon_FromObjectObjectOptionsAnonMatrix
+  var Convolute: fabricLib.Anon_FromObjectObjectOptionsAnonMatrixOpaque
   var GradientTransparency: fabricLib.Anon_FromObjectObjectOptionsAnonThreshold
   var Grayscale: fabricLib.Anon_FromObjectObjectOptionsAny
   var Invert: fabricLib.Anon_FromObjectObjectOptionsAnyIInvertFilter

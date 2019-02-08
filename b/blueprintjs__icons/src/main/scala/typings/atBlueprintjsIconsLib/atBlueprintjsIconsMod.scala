@@ -228,6 +228,10 @@ object atBlueprintjsIconsMod extends js.Object {
     val IMAGE_ROTATE_RIGHT: /* \\uE73B */ java.lang.String = js.native
     val IMPORT: /* \\uE632 */ java.lang.String = js.native
     val INBOX: /* \\uE629 */ java.lang.String = js.native
+    val INBOX_FILTERED: /* \\uE7D1 */ java.lang.String = js.native
+    val INBOX_GEO: /* \\uE7D2 */ java.lang.String = js.native
+    val INBOX_SEARCH: /* \\uE7D3 */ java.lang.String = js.native
+    val INBOX_UPDATE: /* \\uE7D4 */ java.lang.String = js.native
     val INFO_SIGN: /* \\u2139 */ java.lang.String = js.native
     val INNER_JOIN: /* \\uE7A3 */ java.lang.String = js.native
     val INSERT: /* \\uE66C */ java.lang.String = js.native
@@ -691,6 +695,10 @@ object atBlueprintjsIconsMod extends js.Object {
     val IMAGE_ROTATE_RIGHT: /* image-rotate-right */ java.lang.String = js.native
     val IMPORT: /* import */ java.lang.String = js.native
     val INBOX: /* inbox */ java.lang.String = js.native
+    val INBOX_FILTERED: /* inbox-filtered */ java.lang.String = js.native
+    val INBOX_GEO: /* inbox-geo */ java.lang.String = js.native
+    val INBOX_SEARCH: /* inbox-search */ java.lang.String = js.native
+    val INBOX_UPDATE: /* inbox-update */ java.lang.String = js.native
     val INFO_SIGN: /* info-sign */ java.lang.String = js.native
     val INNER_JOIN: /* inner-join */ java.lang.String = js.native
     val INSERT: /* insert */ java.lang.String = js.native

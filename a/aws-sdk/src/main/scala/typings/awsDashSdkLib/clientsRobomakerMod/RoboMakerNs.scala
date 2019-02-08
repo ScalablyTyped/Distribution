@@ -59,6 +59,10 @@ object RoboMakerNs extends js.Object {
       * The Amazon Resource Name (ARN) of the fleet to deploy.
       */
     var fleet: Arn
+    /**
+      * A map that contains tag keys and tag values that are attached to the deployment job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateDeploymentJobResponse extends js.Object {
@@ -79,7 +83,7 @@ object RoboMakerNs extends js.Object {
       */
     var deploymentConfig: js.UndefOr[DeploymentConfig] = js.undefined
     /**
-      * The failure code of the deployment job if it failed.
+      * The failure code of the simulation job if it failed:  BadPermissionError  AWS Greengrass requires a service-level role permission to access other services. The role must include the  AWSGreengrassResourceAccessRolePolicy managed policy.   ExtractingBundleFailure  The robot application could not be extracted from the bundle.  FailureThresholdBreached  The percentage of robots that could not be updated exceeded the percentage set for the deployment.  GreengrassDeploymentFailed  The robot application could not be deployed to the robot.  GreengrassGroupVersionDoesNotExist  The AWS Greengrass group or version associated with a robot is missing.  InternalServerError  An internal error has occurred. Retry your request, but if the problem persists, contact us with details.  MissingRobotApplicationArchitecture  The robot application does not have a source that matches the architecture of the robot.  MissingRobotDeploymentResource  One or more of the resources specified for the robot application are missing. For example, does the robot application have the correct launch package and launch file?  PostLaunchFileFailure  The post-launch script failed.  PreLaunchFileFailure  The pre-launch script failed.  ResourceNotFound  One or more deployment resources are missing. For example, do robot application source bundles still exist?   RobotDeploymentNoResponse  There is no response from the robot. It might not be powered on or connected to the internet.  
       */
     var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.undefined
     /**
@@ -94,6 +98,10 @@ object RoboMakerNs extends js.Object {
       * The status of the deployment job.
       */
     var status: js.UndefOr[DeploymentStatus] = js.undefined
+    /**
+      * The list of all tags added to the deployment job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateFleetRequest extends js.Object {
@@ -101,6 +109,10 @@ object RoboMakerNs extends js.Object {
       * The name of the fleet.
       */
     var name: Name
+    /**
+      * A map that contains tag keys and tag values that are attached to the fleet.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateFleetResponse extends js.Object {
@@ -116,6 +128,10 @@ object RoboMakerNs extends js.Object {
       * The name of the fleet.
       */
     var name: js.UndefOr[Name] = js.undefined
+    /**
+      * The list of all tags added to the fleet.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateRobotApplicationRequest extends js.Object {
@@ -131,6 +147,10 @@ object RoboMakerNs extends js.Object {
       * The sources of the robot application.
       */
     var sources: SourceConfigs
+    /**
+      * A map that contains tag keys and tag values that are attached to the robot application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateRobotApplicationResponse extends js.Object {
@@ -158,6 +178,10 @@ object RoboMakerNs extends js.Object {
       * The sources of the robot application.
       */
     var sources: js.UndefOr[Sources] = js.undefined
+    /**
+      * The list of all tags added to the robot application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * The version of the robot application.
       */
@@ -219,6 +243,10 @@ object RoboMakerNs extends js.Object {
       * The name for the robot.
       */
     var name: Name
+    /**
+      * A map that contains tag keys and tag values that are attached to the robot.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateRobotResponse extends js.Object {
@@ -242,6 +270,10 @@ object RoboMakerNs extends js.Object {
       * The name of the robot.
       */
     var name: js.UndefOr[Name] = js.undefined
+    /**
+      * The list of all tags added to the robot.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateSimulationApplicationRequest extends js.Object {
@@ -265,6 +297,10 @@ object RoboMakerNs extends js.Object {
       * The sources of the simulation application.
       */
     var sources: SourceConfigs
+    /**
+      * A map that contains tag keys and tag values that are attached to the simulation application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait CreateSimulationApplicationResponse extends js.Object {
@@ -300,6 +336,10 @@ object RoboMakerNs extends js.Object {
       * The sources of the simulation application.
       */
     var sources: js.UndefOr[Sources] = js.undefined
+    /**
+      * The list of all tags added to the simulation application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * The version of the simulation application.
       */
@@ -366,7 +406,7 @@ object RoboMakerNs extends js.Object {
       */
     var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
     /**
-      * The IAM role that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. See how to specify AWS security credentials for your application. 
+      * The IAM role name that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. 
       */
     var iamRole: IamRole
     /**
@@ -385,6 +425,10 @@ object RoboMakerNs extends js.Object {
       * The simulation application to use in the simulation job.
       */
     var simulationApplications: js.UndefOr[SimulationApplicationConfigs] = js.undefined
+    /**
+      * A map that contains tag keys and tag values that are attached to the simulation job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * If your simulation job accesses resources in a VPC, you provide this parameter identifying the list of security group IDs and subnet IDs. These must belong to the same VPC. You must provide at least one security group and one subnet ID. 
       */
@@ -405,7 +449,7 @@ object RoboMakerNs extends js.Object {
       */
     var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
     /**
-      * The failure code of the simulation job if it failed.
+      * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  
       */
     var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
     /**
@@ -440,6 +484,10 @@ object RoboMakerNs extends js.Object {
       * The status of the simulation job.
       */
     var status: js.UndefOr[SimulationJobStatus] = js.undefined
+    /**
+      * The list of all tags added to the simulation job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * Information about the vpc configuration.
       */
@@ -492,15 +540,15 @@ object RoboMakerNs extends js.Object {
   
   trait DeploymentApplicationConfig extends js.Object {
     /**
-      * The application.
+      * The Amazon Resource Name (ARN) of the robot application.
       */
     var application: Arn
     /**
       * The version of the application.
       */
-    var applicationVersion: Version
+    var applicationVersion: DeploymentVersion
     /**
-      * The launch configuration, usually roslaunch.
+      * The launch configuration.
       */
     var launchConfig: DeploymentLaunchConfig
   }
@@ -553,11 +601,11 @@ object RoboMakerNs extends js.Object {
   
   trait DeploymentLaunchConfig extends js.Object {
     /**
-      * An array of key/value pairs specifying environment variables for the deployment application.
+      * An array of key/value pairs specifying environment variables for the robot application
       */
     var environmentVariables: js.UndefOr[EnvironmentVariableMap] = js.undefined
     /**
-      * The deployment launch file.
+      * The launch file name.
       */
     var launchFile: GenericString
     /**
@@ -565,11 +613,11 @@ object RoboMakerNs extends js.Object {
       */
     var packageName: GenericString
     /**
-      * The deployment post-launch file. This file will be executed after the deployment launch file.
+      * The deployment post-launch file. This file will be executed after the launch file.
       */
     var postLaunchFile: js.UndefOr[GenericString] = js.undefined
     /**
-      * The deployment pre-launch file. This file will be executed prior to the deployment launch file.
+      * The deployment pre-launch file. This file will be executed prior to the launch file.
       */
     var preLaunchFile: js.UndefOr[GenericString] = js.undefined
   }
@@ -640,6 +688,10 @@ object RoboMakerNs extends js.Object {
       * The status of the deployment job.
       */
     var status: js.UndefOr[DeploymentStatus] = js.undefined
+    /**
+      * The list of all tags added to the specified deployment job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait DescribeFleetRequest extends js.Object {
@@ -678,6 +730,10 @@ object RoboMakerNs extends js.Object {
       * A list of robots.
       */
     var robots: js.UndefOr[Robots] = js.undefined
+    /**
+      * The list of all tags added to the specified fleet.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait DescribeRobotApplicationRequest extends js.Object {
@@ -716,6 +772,10 @@ object RoboMakerNs extends js.Object {
       * The sources of the robot application.
       */
     var sources: js.UndefOr[Sources] = js.undefined
+    /**
+      * The list of all tags added to the specified robot application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * The version of the robot application.
       */
@@ -766,6 +826,10 @@ object RoboMakerNs extends js.Object {
       * The status of the fleet.
       */
     var status: js.UndefOr[RobotStatus] = js.undefined
+    /**
+      * The list of all tags added to the specified robot.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait DescribeSimulationApplicationRequest extends js.Object {
@@ -813,6 +877,10 @@ object RoboMakerNs extends js.Object {
       */
     var sources: js.UndefOr[Sources] = js.undefined
     /**
+      * The list of all tags added to the specified simulation application.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
+    /**
       * The version of the simulation application.
       */
     var version: js.UndefOr[Version] = js.undefined
@@ -839,9 +907,13 @@ object RoboMakerNs extends js.Object {
       */
     var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
     /**
-      * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error  RobotApplicationCrash  Robot application exited abnormally (segfault, etc.)  SimulationApplicationCrash   Simulation application exited abnormally (segfault, etc.)  BadPermissionsRobotApplication  Robot application bundle could not be downloaded  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource  SubnetIpLimitExceeded  Subnet IP limit exceeded  ENILimitExceeded  ENI limit exceeded  BadPermissionsUserCredentials  Unable to use the Role provided  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, etc.)  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, etc.)  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation  
+      * The failure code of the simulation job if it failed:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  
       */
     var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
+    /**
+      * Details about why the simulation job failed. For more information about troubleshooting, see Troubleshooting.
+      */
+    var failureReason: js.UndefOr[GenericString] = js.undefined
     /**
       * The IAM role that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf.
       */
@@ -878,6 +950,10 @@ object RoboMakerNs extends js.Object {
       * The status of the simulation job.
       */
     var status: js.UndefOr[SimulationJobStatus] = js.undefined
+    /**
+      * The list of all tags added to the specified simulation job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * The VPC configuration.
       */
@@ -931,7 +1007,7 @@ object RoboMakerNs extends js.Object {
       */
     var environmentVariables: js.UndefOr[EnvironmentVariableMap] = js.undefined
     /**
-      * The launch file.
+      * The launch file name.
       */
     var launchFile: GenericString
     /**
@@ -1102,6 +1178,20 @@ object RoboMakerNs extends js.Object {
       * A list of simulation job summaries that meet the criteria of the request.
       */
     var simulationJobSummaries: SimulationJobSummaries
+  }
+  
+  trait ListTagsForResourceRequest extends js.Object {
+    /**
+      * The AWS RoboMaker Amazon Resource Name (ARN) with tags to be listed.
+      */
+    var resourceArn: Arn
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    /**
+      * The list of all tags added to the specified resource.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
   }
   
   trait OutputLocation extends js.Object {
@@ -1335,6 +1425,10 @@ object RoboMakerNs extends js.Object {
       */
     var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
     /**
+      * The reason why the simulation job failed.
+      */
+    var failureReason: js.UndefOr[GenericString] = js.undefined
+    /**
       * The IAM role that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. See how to specify AWS security credentials for your application. 
       */
     var iamRole: js.UndefOr[IamRole] = js.undefined
@@ -1370,6 +1464,10 @@ object RoboMakerNs extends js.Object {
       * Status of the simulation job.
       */
     var status: js.UndefOr[SimulationJobStatus] = js.undefined
+    /**
+      * A map that contains tag keys and tag values that are attached to the simulation job.
+      */
+    var tags: js.UndefOr[TagMap] = js.undefined
     /**
       * VPC configuration information.
       */
@@ -1477,7 +1575,7 @@ object RoboMakerNs extends js.Object {
       */
     var deploymentConfig: js.UndefOr[DeploymentConfig] = js.undefined
     /**
-      * The failure code if the job fails.
+      * The failure code if the job fails:  InternalServiceError  Internal service error.  RobotApplicationCrash  Robot application exited abnormally.  SimulationApplicationCrash   Simulation application exited abnormally.  BadPermissionsRobotApplication  Robot application bundle could not be downloaded.  BadPermissionsSimulationApplication  Simulation application bundle could not be downloaded.  BadPermissionsS3Output  Unable to publish outputs to customer-provided S3 bucket.  BadPermissionsCloudwatchLogs  Unable to publish logs to customer-provided CloudWatch Logs resource.  SubnetIpLimitExceeded  Subnet IP limit exceeded.  ENILimitExceeded  ENI limit exceeded.  BadPermissionsUserCredentials  Unable to use the Role provided.  InvalidBundleRobotApplication  Robot bundle cannot be extracted (invalid format, bundling error, or other issue).  InvalidBundleSimulationApplication  Simulation bundle cannot be extracted (invalid format, bundling error, or other issue).  RobotApplicationVersionMismatchedEtag  Etag for RobotApplication does not match value during version creation.  SimulationApplicationVersionMismatchedEtag  Etag for SimulationApplication does not match value during version creation.  
       */
     var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.undefined
     /**
@@ -1493,6 +1591,22 @@ object RoboMakerNs extends js.Object {
       */
     var status: js.UndefOr[DeploymentStatus] = js.undefined
   }
+  
+  trait TagMap
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
+  
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the AWS RoboMaker resource you are tagging.
+      */
+    var resourceArn: Arn
+    /**
+      * A map that contains tag keys and tag values that are attached to the resource.
+      */
+    var tags: TagMap
+  }
+  
+  trait TagResourceResponse extends js.Object
   
   @js.native
   trait Types
@@ -1546,7 +1660,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CancelSimulationJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a deployment job.
+      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
       */
     def createDeploymentJob(): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentJob(
@@ -1557,7 +1671,7 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a deployment job.
+      * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
       */
     def createDeploymentJob(params: CreateDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[CreateDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createDeploymentJob(
@@ -2121,6 +2235,29 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListSimulationJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Lists all tags on a AWS RoboMaker resource.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists all tags on a AWS RoboMaker resource.
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Registers a robot with a fleet.
       */
     def registerRobot(): awsDashSdkLib.libRequestMod.Request[RegisterRobotResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2190,6 +2327,52 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SyncDeploymentJobResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Adds or edits tags for a AWS RoboMaker resource. Each tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty strings.  For information about the rules that apply to tag keys and tag values, see User-Defined Tag Restrictions in the AWS Billing and Cost Management User Guide. 
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds or edits tags for a AWS RoboMaker resource. Each tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty strings.  For information about the rules that apply to tag keys and tag values, see User-Defined Tag Restrictions in the AWS Billing and Cost Management User Guide. 
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the specified tags from the specified AWS RoboMaker resource. To remove a tag, specify the tag key. To change the tag value of an existing tag key, use  TagResource . 
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes the specified tags from the specified AWS RoboMaker resource. To remove a tag, specify the tag key. To change the tag value of an existing tag key, use  TagResource . 
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates a robot application.
       */
     def updateRobotApplication(): awsDashSdkLib.libRequestMod.Request[UpdateRobotApplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -2236,6 +2419,19 @@ object RoboMakerNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateSimulationApplicationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
+  
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The Amazon Resource Name (ARN) of the AWS RoboMaker resource you are removing tags.
+      */
+    var resourceArn: Arn
+    /**
+      * A map that contains tag keys and tag values that will be unattached from the resource.
+      */
+    var tagKeys: TagKeyList
+  }
+  
+  trait UntagResourceResponse extends js.Object
   
   trait UpdateRobotApplicationRequest extends js.Object {
     /**
@@ -2399,6 +2595,7 @@ object RoboMakerNs extends js.Object {
   type DeploymentJobErrorCode = awsDashSdkLib.awsDashSdkLibStrings.ResourceNotFound | awsDashSdkLib.awsDashSdkLibStrings.FailureThresholdBreached | awsDashSdkLib.awsDashSdkLibStrings.RobotDeploymentNoResponse | awsDashSdkLib.awsDashSdkLibStrings.GreengrassDeploymentFailed | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotArchitecture | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotApplicationArchitecture | awsDashSdkLib.awsDashSdkLibStrings.MissingRobotDeploymentResource | awsDashSdkLib.awsDashSdkLibStrings.GreengrassGroupVersionDoesNotExist | awsDashSdkLib.awsDashSdkLibStrings.ExtractingBundleFailure | awsDashSdkLib.awsDashSdkLibStrings.PreLaunchFileFailure | awsDashSdkLib.awsDashSdkLibStrings.PostLaunchFileFailure | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionError | awsDashSdkLib.awsDashSdkLibStrings.InternalServerError | java.lang.String
   type DeploymentJobs = js.Array[DeploymentJob]
   type DeploymentStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Preparing | awsDashSdkLib.awsDashSdkLibStrings.InProgress | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.Succeeded | java.lang.String
+  type DeploymentVersion = java.lang.String
   type EnvironmentVariableKey = java.lang.String
   type EnvironmentVariableValue = java.lang.String
   type FailureBehavior = awsDashSdkLib.awsDashSdkLibStrings.Fail | awsDashSdkLib.awsDashSdkLibStrings.Continue | java.lang.String
@@ -2432,7 +2629,7 @@ object RoboMakerNs extends js.Object {
   type SimulationApplicationConfigs = js.Array[SimulationApplicationConfig]
   type SimulationApplicationNames = js.Array[Name]
   type SimulationApplicationSummaries = js.Array[SimulationApplicationSummary]
-  type SimulationJobErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InternalServiceError | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsS3Output | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsCloudwatchLogs | awsDashSdkLib.awsDashSdkLibStrings.SubnetIpLimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.ENILimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsUserCredentials | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationVersionMismatchedEtag | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationVersionMismatchedEtag | java.lang.String
+  type SimulationJobErrorCode = awsDashSdkLib.awsDashSdkLibStrings.InternalServiceError | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationCrash | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsS3Output | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsCloudwatchLogs | awsDashSdkLib.awsDashSdkLibStrings.SubnetIpLimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.ENILimitExceeded | awsDashSdkLib.awsDashSdkLibStrings.BadPermissionsUserCredentials | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.InvalidBundleSimulationApplication | awsDashSdkLib.awsDashSdkLibStrings.RobotApplicationVersionMismatchedEtag | awsDashSdkLib.awsDashSdkLibStrings.SimulationApplicationVersionMismatchedEtag | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionS3Output | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionRobotApplication | awsDashSdkLib.awsDashSdkLibStrings.WrongRegionSimulationApplication | java.lang.String
   type SimulationJobStatus = awsDashSdkLib.awsDashSdkLibStrings.Pending | awsDashSdkLib.awsDashSdkLibStrings.Preparing | awsDashSdkLib.awsDashSdkLibStrings.Running | awsDashSdkLib.awsDashSdkLibStrings.Restarting | awsDashSdkLib.awsDashSdkLibStrings.Completed | awsDashSdkLib.awsDashSdkLibStrings.Failed | awsDashSdkLib.awsDashSdkLibStrings.RunningFailed | awsDashSdkLib.awsDashSdkLibStrings.Terminating | awsDashSdkLib.awsDashSdkLibStrings.Terminated | awsDashSdkLib.awsDashSdkLibStrings.Canceled | java.lang.String
   type SimulationJobSummaries = js.Array[SimulationJobSummary]
   type SimulationJobs = js.Array[SimulationJob]
@@ -2442,6 +2639,9 @@ object RoboMakerNs extends js.Object {
   type SourceConfigs = js.Array[SourceConfig]
   type Sources = js.Array[Source]
   type Subnets = js.Array[GenericString]
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagValue = java.lang.String
   type Version = java.lang.String
   type VersionQualifier = java.lang.String
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2018-06-29` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String

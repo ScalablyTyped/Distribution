@@ -1581,7 +1581,7 @@ object RNFirebaseNs extends js.Object {
         * @param name The name of the https callable function.
         * @return The `HttpsCallable` instance.
         */
-      def httpsCallable(name: java.lang.String): HttpsCallable
+      def httpsCallable[Params, Result](name: java.lang.String): HttpsCallable[Params, Result]
       /**
         * Changes this instance to point to a Cloud Functions emulator running
         * locally.
@@ -1607,8 +1607,8 @@ object RNFirebaseNs extends js.Object {
     /**
       * An HttpsCallableResult wraps a single result from a function call.
       */
-    trait HttpsCallableResult extends js.Object {
-      val data: js.Any
+    trait HttpsCallableResult[R] extends js.Object {
+      val data: R
     }
     
     trait HttpsError
@@ -1671,7 +1671,7 @@ object RNFirebaseNs extends js.Object {
       * An HttpsCallable is a reference to a "callable" http trigger in
       * Google Cloud Functions.
       */
-    type HttpsCallable = js.Function1[/* data */ js.UndefOr[js.Any], js.Promise[HttpsCallableResult]]
+    type HttpsCallable[Params, Result] = (js.Function1[/* data */ Params, js.Promise[HttpsCallableResult[Result]]]) | js.Function0[js.Promise[HttpsCallableResult[Result]]]
   }
   
   @JSName("iid")

@@ -38,7 +38,7 @@ trait MeetingSuggestion extends js.Object {
   /**
     * Gets a string that was identified as a meeting suggestion.
     */
-  var meetingstring: java.lang.String
+  var meetingString: java.lang.String
   /**
     * Gets the date and time that a suggested meeting is to begin.
     */

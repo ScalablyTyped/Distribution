@@ -84,9 +84,11 @@ object ^ extends js.Object {
   def logout(callback: js.Function): scala.Unit = js.native
   def logoutOtherClients(): scala.Unit = js.native
   def logoutOtherClients(callback: js.Function): scala.Unit = js.native
-  /** Error **/
-  /** Method **/
-  def methods(methods: js.Object): scala.Unit = js.native
+  def methods(
+    methods: org.scalablytyped.runtime.StringDictionary[
+      js.ThisFunction1[/* this */ meteorLib.MeteorNs.MethodThisType, /* repeated */ js.Any, _]
+    ]
+  ): scala.Unit = js.native
   def onConnection(callback: js.Function): scala.Unit = js.native
   /** Connection **/
   def publish(name: java.lang.String, func: js.Function): scala.Unit = js.native

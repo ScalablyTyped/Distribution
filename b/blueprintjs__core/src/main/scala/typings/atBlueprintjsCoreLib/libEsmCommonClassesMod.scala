@@ -38,6 +38,7 @@ object libEsmCommonClassesMod extends js.Object {
   val CONTROL: java.lang.String = js.native
   val CONTROL_GROUP: java.lang.String = js.native
   val CONTROL_INDICATOR: java.lang.String = js.native
+  val CONTROL_INDICATOR_CHILD: java.lang.String = js.native
   val DARK: java.lang.String = js.native
   val DIALOG: java.lang.String = js.native
   val DIALOG_BODY: java.lang.String = js.native
@@ -48,6 +49,10 @@ object libEsmCommonClassesMod extends js.Object {
   val DIALOG_HEADER: java.lang.String = js.native
   val DISABLED: java.lang.String = js.native
   val DIVIDER: java.lang.String = js.native
+  val DRAWER: java.lang.String = js.native
+  val DRAWER_BODY: java.lang.String = js.native
+  val DRAWER_FOOTER: java.lang.String = js.native
+  val DRAWER_HEADER: java.lang.String = js.native
   val EDITABLE_TEXT: java.lang.String = js.native
   val EDITABLE_TEXT_CONTENT: java.lang.String = js.native
   val EDITABLE_TEXT_EDITING: java.lang.String = js.native
@@ -120,6 +125,7 @@ object libEsmCommonClassesMod extends js.Object {
   val OVERFLOW_LIST_SPACER: java.lang.String = js.native
   val OVERLAY: java.lang.String = js.native
   val OVERLAY_BACKDROP: java.lang.String = js.native
+  val OVERLAY_CONTAINER: java.lang.String = js.native
   val OVERLAY_CONTENT: java.lang.String = js.native
   val OVERLAY_INLINE: java.lang.String = js.native
   val OVERLAY_OPEN: java.lang.String = js.native
@@ -163,6 +169,7 @@ object libEsmCommonClassesMod extends js.Object {
   val SPINNER_TRACK: java.lang.String = js.native
   val START: java.lang.String = js.native
   val SWITCH: java.lang.String = js.native
+  val SWITCH_INNER_TEXT: java.lang.String = js.native
   val TAB: java.lang.String = js.native
   val TABS: java.lang.String = js.native
   val TAB_INDICATOR: java.lang.String = js.native

@@ -1,8 +1,4 @@
 ```
-/**
- * Async Hooks module: https://nodejs.org/api/async_hooks.html
- */
-// This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
 // Type definitions for Node.js 10.12
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
@@ -39,18 +35,20 @@
 //                 Samuel Ainsworth <https://github.com/samuela>
 //                 Kyle Uehlein <https://github.com/kuehlein>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// NOTE: These definitions support NodeJS and TypeScript 3.1.
+// NOTE: TypeScript version-specific augmentations can be found in the following paths:
+//          - ~/base.d.ts         - Shared definitions common to all TypeScript versions
+//          - ~/index.d.ts        - Definitions specific to TypeScript 2.1
+//          - ~/ts3.1/index.d.ts  - Definitions specific to TypeScript 3.1
+// NOTE: Augmentations for TypeScript 3.1 and later should use individual files for overrides
+//       within the respective ~/ts3.1 (or later) folder. However, this is disallowed for versions
+//       prior to TypeScript 3.1, so the older definitions will be found here.
+// Base definitions for all NodeJS modules that are not specific to any version of TypeScript:
 /**
  * Async Hooks module: https://nodejs.org/api/async_hooks.html
  */
+// base definnitions for all NodeJS modules that are not specific to any version of TypeScript
 // This needs to be global to avoid TS2403 in case lib.dom.d.ts is present in the same build
-// tslint:disable-next-line:dt-header
-// Type definitions for inspector
-// These definitions are auto-generated.
-// Please see https://github.com/DefinitelyTyped/DefinitelyTyped/pull/19330
-// for more information.
-/**
- * The inspector module provides an API for interacting with the V8 inspector.
- */
 // tslint:disable-next-line:dt-header
 // Type definitions for inspector
 // These definitions are auto-generated.

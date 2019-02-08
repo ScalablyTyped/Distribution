@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/select/lib/esm/components", "Select")
 @js.native
-class Select[T] protected ()
-  extends atBlueprintjsSelectLib.libEsmComponentsSelectSelectMod.Select[T] {
-  def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSelectMod.ISelectProps[T]) = this()
-  def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSelectMod.ISelectProps[T], context: js.Any) = this()
-}
+class Select[T] ()
+  extends atBlueprintjsSelectLib.libEsmComponentsSelectSelectMod.Select[T]
 
 /* static members */
 @JSImport("@blueprintjs/select/lib/esm/components", "Select")

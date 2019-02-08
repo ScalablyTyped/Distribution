@@ -10,11 +10,13 @@ import scala.scalajs.js.annotation._
 class ApolloServerBase protected () extends js.Object {
   def this(config: apolloDashServerDashCoreLib.distTypesMod.Config) = this()
   var context: js.UndefOr[js.Any] = js.native
+  var documentStore: js.UndefOr[js.Any] = js.native
   var engineReportingAgent: js.UndefOr[js.Any] = js.native
   var engineServiceId: js.UndefOr[js.Any] = js.native
   var ensurePluginInstantiation: js.Any = js.native
   var extensions: js.Any = js.native
   var graphqlPath: java.lang.String = js.native
+  var initializeDocumentStore: js.Any = js.native
   var playgroundOptions: js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native
@@ -28,9 +30,7 @@ class ApolloServerBase protected () extends js.Object {
   var subscriptionServerOptions: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.SubscriptionServerOptions] = js.native
   var subscriptionsPath: js.UndefOr[java.lang.String] = js.native
   var uploadsConfig: js.UndefOr[apolloDashServerDashCoreLib.distTypesMod.FileUploadOptions] = js.native
-  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): js.Promise[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify imported_graphql-extensions.GraphQLResponse */ _
-  ] = js.native
+  def executeOperation(request: apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLRequest): js.Promise[apolloDashServerDashCoreLib.distRequestPipelineAPIMod.GraphQLResponse] = js.native
   /* protected */ def graphQLServerOptions(): js.Promise[
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.GraphQLServerOptions[stdLib.Record[java.lang.String, _], _]
   ] = js.native

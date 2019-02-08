@@ -79,6 +79,16 @@ object MeteorNs extends js.Object {
     var requestPermissions: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   }
   
+  /** Error **/
+  /** Method **/
+  trait MethodThisType extends js.Object {
+    var connection: Connection | scala.Null
+    var isSimulation: scala.Boolean
+    var userId: java.lang.String | scala.Null
+    def setUserId(userId: java.lang.String): scala.Unit
+    def unblock(): scala.Unit
+  }
+  
   /** Global props **/
   /** Settings **/
   trait Settings
@@ -95,7 +105,7 @@ object MeteorNs extends js.Object {
   
   trait User extends js.Object {
     var _id: js.UndefOr[java.lang.String] = js.undefined
-    var createdAt: js.UndefOr[scala.Double] = js.undefined
+    var createdAt: js.UndefOr[stdLib.Date] = js.undefined
     var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
     var profile: js.UndefOr[js.Any] = js.undefined
     var services: js.UndefOr[js.Any] = js.undefined
@@ -189,9 +199,9 @@ object MeteorNs extends js.Object {
   def logout(callback: js.Function): scala.Unit = js.native
   def logoutOtherClients(): scala.Unit = js.native
   def logoutOtherClients(callback: js.Function): scala.Unit = js.native
-  /** Error **/
-  /** Method **/
-  def methods(methods: js.Object): scala.Unit = js.native
+  def methods(
+    methods: org.scalablytyped.runtime.StringDictionary[js.ThisFunction1[/* this */ MethodThisType, /* repeated */ js.Any, _]]
+  ): scala.Unit = js.native
   def onConnection(callback: js.Function): scala.Unit = js.native
   /** Connection **/
   def publish(name: java.lang.String, func: js.Function): scala.Unit = js.native

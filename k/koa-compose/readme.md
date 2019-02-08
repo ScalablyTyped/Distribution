@@ -3,4 +3,5 @@
 // Project: https://github.com/koajs/compose
 // Definitions by: jKey Lu <https://github.com/jkeylu>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.3
 ```

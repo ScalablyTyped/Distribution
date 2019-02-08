@@ -52,6 +52,9 @@ object typescriptLibStrings {
   sealed trait `action::valueInspected` extends js.Object
   
   @js.native
+  sealed trait auto extends js.Object
+  
+  @js.native
   sealed trait camelCase extends js.Object
   
   @js.native
@@ -150,6 +153,8 @@ object typescriptLibStrings {
   def `action::set`: `action::set` = "action::set".asInstanceOf[`action::set`]
   @scala.inline
   def `action::valueInspected`: `action::valueInspected` = "action::valueInspected".asInstanceOf[`action::valueInspected`]
+  @scala.inline
+  def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def camelCase: camelCase = "camelCase".asInstanceOf[camelCase]
   @scala.inline

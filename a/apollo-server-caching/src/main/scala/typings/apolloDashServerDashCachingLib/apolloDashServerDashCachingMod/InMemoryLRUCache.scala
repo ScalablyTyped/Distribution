@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class InMemoryLRUCache[V] ()
   extends apolloDashServerDashCachingLib.distInMemoryLRUCacheMod.InMemoryLRUCache[V] {
-  def this(hasMaxSize: apolloDashServerDashCachingLib.Anon_MaxSize) = this()
+  def this(hasMaxSizeSizeCalculatorOnDispose: apolloDashServerDashCachingLib.Anon_Key[V]) = this()
 }
 

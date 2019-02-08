@@ -540,6 +540,10 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait ChannelEgressEndpoint extends js.Object {
@@ -631,6 +635,10 @@ object MediaLiveNs extends js.Object {
       * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel.
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait CreateChannelResponse extends js.Object {
@@ -671,6 +679,10 @@ object MediaLiveNs extends js.Object {
     Only specify sources for PULL type Inputs. Leave Destinations empty.
       */
     var Sources: js.UndefOr[__listOfInputSourceRequest] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
   
@@ -680,6 +692,10 @@ object MediaLiveNs extends js.Object {
   
   trait CreateInputSecurityGroupRequest extends js.Object {
     /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * List of IPv4 CIDR addresses to whitelist
       */
     var WhitelistRules: js.UndefOr[__listOfInputWhitelistRuleCidr] = js.undefined
@@ -687,6 +703,11 @@ object MediaLiveNs extends js.Object {
   
   trait CreateInputSecurityGroupResponse extends js.Object {
     var SecurityGroup: js.UndefOr[InputSecurityGroup] = js.undefined
+  }
+  
+  trait CreateTagsRequest extends js.Object {
+    var ResourceArn: __string
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DeleteChannelRequest extends js.Object {
@@ -738,6 +759,10 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DeleteInputRequest extends js.Object {
@@ -836,6 +861,14 @@ object MediaLiveNs extends js.Object {
     var UsagePrice: js.UndefOr[__double] = js.undefined
   }
   
+  trait DeleteTagsRequest extends js.Object {
+    var ResourceArn: __string
+    /**
+      * An array of tag keys to delete
+      */
+    var TagKeys: __listOf__string
+  }
+  
   trait DescribeChannelRequest extends js.Object {
     /**
       * channel ID
@@ -885,6 +918,10 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait DescribeInputRequest extends js.Object {
@@ -932,6 +969,10 @@ object MediaLiveNs extends js.Object {
       */
     var Sources: js.UndefOr[__listOfInputSource] = js.undefined
     var State: js.UndefOr[InputState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
   
@@ -959,6 +1000,10 @@ object MediaLiveNs extends js.Object {
       * The current state of the Input Security Group.
       */
     var State: js.UndefOr[InputSecurityGroupState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Whitelist rules and their sync status
       */
@@ -1957,6 +2002,10 @@ object MediaLiveNs extends js.Object {
       */
     var Sources: js.UndefOr[__listOfInputSource] = js.undefined
     var State: js.UndefOr[InputState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     var Type: js.UndefOr[InputType] = js.undefined
   }
   
@@ -2066,6 +2115,10 @@ object MediaLiveNs extends js.Object {
       * The current state of the Input Security Group.
       */
     var State: js.UndefOr[InputSecurityGroupState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Whitelist rules and their sync status
       */
@@ -2309,6 +2362,14 @@ object MediaLiveNs extends js.Object {
       * List of reservations
       */
     var Reservations: js.UndefOr[__listOfReservation] = js.undefined
+  }
+  
+  trait ListTagsForResourceRequest extends js.Object {
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait M2tsSettings extends js.Object {
@@ -3308,6 +3369,10 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait StaticImageActivateScheduleActionSettings extends js.Object {
@@ -3424,7 +3489,14 @@ object MediaLiveNs extends js.Object {
       */
     var RoleArn: js.UndefOr[__string] = js.undefined
     var State: js.UndefOr[ChannelState] = js.undefined
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
+  
+  trait Tags
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[__string]
   
   trait TeletextDestinationSettings extends js.Object
   
@@ -3554,6 +3626,21 @@ object MediaLiveNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateInputSecurityGroupResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Create tags for a resource
+      */
+    def createTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createTags(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Create tags for a resource
+      */
+    def createTags(params: CreateTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createTags(
+      params: CreateTagsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Starts deletion of channel. The associated outputs are also deleted.
       */
     def deleteChannel(): awsDashSdkLib.libRequestMod.Request[DeleteChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3645,6 +3732,21 @@ object MediaLiveNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteReservationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes tags for a resource
+      */
+    def deleteTags(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteTags(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes tags for a resource
+      */
+    def deleteTags(params: DeleteTagsRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteTags(
+      params: DeleteTagsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Gets details about a channel
       */
@@ -3898,6 +4000,29 @@ object MediaLiveNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListReservationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Produces list of tags that have been created for a resource
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Produces list of tags that have been created for a resource
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Purchase an offering and create a reservation.
       */
@@ -4153,6 +4278,10 @@ object MediaLiveNs extends js.Object {
       * The id of the Input Security Group to update.
       */
     var InputSecurityGroupId: __string
+    /**
+      * A collection of key-value pairs.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * List of IPv4 CIDR addresses to whitelist
       */

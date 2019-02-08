@@ -8,11 +8,38 @@ import scala.scalajs.js.annotation._
 /**
   * The appointment attendee mode of {@link Office.Item | Office.context.mailbox.item}.
   * 
-  * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-  * You should treat this as a mode of 'Office.context.mailbox.item'. Refer to the Object Model pages for more information.
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait AppointmentRead extends ItemRead {
+  /**
+    * Gets the date and time that an item was created.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
+    */
+  var dateTimeCreated: stdLib.Date = js.native
+  /**
+    * Gets the date and time that an item was last modified.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
+    *
+    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    */
+  var dateTimeModified: stdLib.Date = js.native
   /**
     * Gets the date and time that the appointment is to end.
     *
@@ -96,6 +123,26 @@ trait AppointmentRead extends ItemRead {
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
     */
   var organizer: EmailAddressDetails = js.native
+  /**
+    * Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request.
+    * 
+    * The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance 
+    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
+    * 
+    * **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+    * 
+    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
+    * appointment and NOT a part of a series.
+    * 
+    * [Api set: Mailbox 1.7]
+    * 
+    * @remarks
+    * 
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    * 
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Attendee</td></tr></table>
+    */
+  var recurrence: Recurrence = js.native
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item.
     *

@@ -32,6 +32,7 @@ trait AceEditorProps extends js.Object {
     js.Function2[/* value */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
   var onCopy: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
+  var onCursorChange: js.UndefOr[js.Function1[/* selection */ Selection, scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[js.Function1[/* event */ js.Any, scala.Unit]] = js.undefined
   var onInput: js.UndefOr[
     js.Function2[/* value */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit]
@@ -39,7 +40,7 @@ trait AceEditorProps extends js.Object {
   var onLoad: js.UndefOr[js.Function1[/* editor */ EditorProps, scala.Unit]] = js.undefined
   var onPaste: js.UndefOr[js.Function1[/* value */ java.lang.String, scala.Unit]] = js.undefined
   var onScroll: js.UndefOr[js.Function1[/* editor */ EditorProps, scala.Unit]] = js.undefined
-  var onSelection: js.UndefOr[
+  var onSelectionChange: js.UndefOr[
     js.Function2[/* selectedText */ java.lang.String, /* event */ js.UndefOr[js.Any], scala.Unit]
   ] = js.undefined
   var onValidate: js.UndefOr[js.Function1[/* annotations */ js.Array[Annotation], scala.Unit]] = js.undefined

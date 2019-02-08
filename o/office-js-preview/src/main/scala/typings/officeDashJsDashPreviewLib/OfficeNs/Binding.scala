@@ -191,7 +191,7 @@ trait Binding extends js.Object {
     *   </tr>
     *   <tr>
     *     <td>An {@link Office.TableData} object, and the shape of the table matches the bound table.</td>
-    *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. Note: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
+    *     <td>The specified set of rows and/or headers are written, if no other data in surrounding cells will be overwritten. **Note**: If you specify formulas in the TableData object you pass for the *data* parameter, you might not get the results you expect due to the "calculated columns" feature of Excel, which automatically duplicates formulas within a column. To work around this when you want to write *data* that contains formulas to a bound table, try specifying the data as an array of arrays (instead of a TableData object), and specify the *coercionType* as Microsoft.Office.Matrix or "matrix".</td>
     *   </tr>
     * </table>
     * 

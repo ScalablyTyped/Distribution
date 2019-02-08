@@ -8,7 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("util", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val inspect: nodeLib.Anon_Color = js.native
   def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit
@@ -163,6 +162,12 @@ object ^ extends js.Object {
   def format(format: js.Any, param: js.Any*): java.lang.String = js.native
   def formatWithOptions(inspectOptions: nodeLib.utilMod.InspectOptions, format: java.lang.String, param: js.Any*): java.lang.String = js.native
   def inherits(constructor: js.Any, superConstructor: js.Any): scala.Unit = js.native
+  def inspect(`object`: js.Any): java.lang.String = js.native
+  def inspect(`object`: js.Any, options: nodeLib.utilMod.InspectOptions): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double, color: scala.Boolean): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Null, color: scala.Boolean): java.lang.String = js.native
   /** @deprecated since v4.0.0 - use `Array.isArray()` instead. */
   def isArray(`object`: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'boolean'` instead. */

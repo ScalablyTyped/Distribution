@@ -9,5 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def apply[T](middleware: js.Array[koaDashComposeLib.koaDashComposeMod.composeNs.Middleware[T]]): koaDashComposeLib.koaDashComposeMod.composeNs.ComposedMiddleware[T] = js.native
+  def apply[T, U, V, W](
+    middleware: js.Tuple2[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Koa.Middleware<T, U> */ _, 
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Koa.Middleware<V, W> */ _
+    ]
+  ): js.Any = js.native
 }
 

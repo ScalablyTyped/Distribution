@@ -31,32 +31,6 @@ trait Item extends js.Object {
     */
   var body: Body = js.native
   /**
-    * Gets the date and time that an item was created. Read mode only.
-    *
-    * [Api set: Mailbox 1.0]
-    *
-    * @remarks
-    *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
-    */
-  var dateTimeCreated: stdLib.Date = js.native
-  /**
-    * Gets the date and time that an item was last modified. Read mode only.
-    *
-    * [Api set: Mailbox 1.0]
-    *
-    * @remarks
-    *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
-    *
-    * Note: This member is not supported in Outlook for iOS or Outlook for Android.
-    */
-  var dateTimeModified: stdLib.Date = js.native
-  /**
     * Gets the type of item that an instance represents.
     *
     * The itemType property returns one of the ItemType enumeration values, indicating whether the item object instance is a message or 
@@ -84,34 +58,12 @@ trait Item extends js.Object {
     */
   var notificationMessages: NotificationMessages = js.native
   /**
-    * Gets or sets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. 
-    * Read and compose modes for appointment items. Read mode for meeting request items.
-    * 
-    * The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance 
-    * in a series. `null` is returned for single appointments and meeting requests of single appointments. 
-    * `undefined` is returned for messages that are not meeting requests.
-    * 
-    * Note: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
-    * 
-    * Note: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment 
-    * and NOT a part of a series.
-    * 
-    * [Api set: Mailbox 1.7]
-    * 
-    * @remarks
-    * 
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    * 
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
-    */
-  var recurrence: Recurrence = js.native
-  /**
     * Gets the id of the series that an instance belongs to.
     * 
     * In OWA and Outlook, the seriesId returns the Exchange Web Services (EWS) ID of the parent (series) item that this item belongs to. 
     * However, in iOS and Android, the seriesId returns the REST ID of the parent item.
     * 
-    * Note: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. 
+    * **Note**: The identifier returned by the seriesId property is the same as the Exchange Web Services item identifier. 
     * The seriesId property is not identical to the Outlook IDs used by the Outlook REST API. 
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api | Use the Outlook REST APIs from an Outlook add-in}.
@@ -168,7 +120,7 @@ trait Item extends js.Object {
     callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
-    * Gets an attachment from a message or appointment and returns it as an `AttachmentContent` object.
+    * Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
     * 
     * The `getAttachmentContentAsync` method gets the attachment with the specified identifier from the item. As a best practice, you should use 
     * the identifier to retrieve an attachment in the same session that the attachmentIds were retrieved with the `getAttachmentsAsync` or 
@@ -205,7 +157,7 @@ trait Item extends js.Object {
   /**
     * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
     * 
-    * Note: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
+    * **Note**: This method is only supported by Outlook 2016 for Windows (Click-to-Run versions greater than 16.0.8413.1000) and Outlook on the web 
     * for Office 365.
     * 
     * [Api set: Mailbox Preview]

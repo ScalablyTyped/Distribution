@@ -15,6 +15,7 @@ class Element protected () extends Node {
     */
   def addChild(child: Element): this.type = js.native
   def addNextSibling(siblingNode: Node): Node = js.native
+  def addPrevSibling(siblingNode: Node): Node = js.native
   def attr(attrObject: StringMap): this.type = js.native
   def attr(name: java.lang.String): Attribute | scala.Null = js.native
   def attrs(): js.Array[Attribute] = js.native

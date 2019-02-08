@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/select/lib/esm/components/select/suggest", "Suggest")
 @js.native
-class Suggest[T] protected ()
+class Suggest[T] ()
   extends reactLib.reactMod.PureComponent[ISuggestProps[T], ISuggestState[T], js.Any] {
-  def this(props: ISuggestProps[T]) = this()
-  def this(props: ISuggestProps[T], context: js.Any) = this()
   var TypedQueryList: js.Any = js.native
   var getTargetKeyDownHandler: js.Any = js.native
   var getTargetKeyUpHandler: js.Any = js.native
@@ -24,6 +22,8 @@ class Suggest[T] protected ()
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   var selectText: js.Any = js.native
+  @JSName("state")
+  var state_Suggest: ISuggestState[T] = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSuggest(_prevProps: ISuggestProps[T], prevState: ISuggestState[T]): scala.Unit = js.native
   @JSName("componentWillReceiveProps")

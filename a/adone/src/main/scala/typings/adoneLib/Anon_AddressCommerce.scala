@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Anon_AddressCommerce extends js.Object {
   val INs: js.Any
   val addressNs: Anon_City
-  val commerceNs: Anon_Color
+  val commerceNs: Anon_ColorDec
   val companyNs: Anon_Bs
   val databaseNs: Anon_Collation
   val dateNs: Anon_Between

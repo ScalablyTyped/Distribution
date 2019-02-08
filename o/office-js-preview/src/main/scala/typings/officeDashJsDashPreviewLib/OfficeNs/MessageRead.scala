@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /**
   * The message read mode of {@link Office.Item | Office.context.mailbox.item}.
   * 
-  * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-  * You should treat this as a mode of Office.context.mailbox.item. Refer to the Object Model pages for more information.
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsDashPreviewLib.OfficeNs.ItemRead because var conflicts: body, dateTimeCreated, dateTimeModified, itemType, notificationMessages, recurrence, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
+- officeDashJsDashPreviewLib.OfficeNs.ItemRead because var conflicts: body, itemType, notificationMessages, seriesId. Inlined attachments, itemClass, itemId, normalizedSubject, subject, displayReplyAllForm, displayReplyAllForm, displayReplyForm, displayReplyForm, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getEntities, getEntitiesByType, getFilteredEntitiesByName, getRegExMatches, getRegExMatchesByName, getSelectedEntities, getSelectedRegExMatches */ @js.native
 trait MessageRead extends Message {
   /**
     * Gets the item's attachments as an array.
@@ -25,7 +26,7 @@ trait MessageRead extends Message {
     *
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
     * 
-    * Note: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
+    * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
     * For more information, see 
     * {@link https://support.office.com/article/Blocked-attachments-in-Outlook-434752E1-02D3-4E90-9124-8B81E49A8519 | Blocked attachments in Outlook}.
     *
@@ -48,12 +49,38 @@ trait MessageRead extends Message {
     */
   var cc: js.Array[EmailAddressDetails] = js.native
   /**
+    * Gets the date and time that an item was created.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    */
+  var dateTimeCreated: stdLib.Date = js.native
+  /**
+    * Gets the date and time that an item was last modified.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    *
+    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
+    */
+  var dateTimeModified: stdLib.Date = js.native
+  /**
     * Gets the email address of the sender of a message.
     *
     * The from and sender properties represent the same person unless the message is sent by a delegate. 
     * In that case, the from property represents the delegator, and the sender property represents the delegate.
     *
-    * Note: The recipientType property of the EmailAddressDetails object in the from property is undefined.
+    * **Note**: The recipientType property of the EmailAddressDetails object in the from property is undefined.
     * 
     * The from property returns an EmailAddressDetails object.
     * 
@@ -138,7 +165,7 @@ trait MessageRead extends Message {
     * If an item identifier is required, the saveAsync method can be used to save the item to the store, which will return the item identifier 
     * in the asyncResult.value parameter in the callback function.
     *
-    * Note: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
+    * **Note**: The identifier returned by the itemId property is the same as the Exchange Web Services item identifier. 
     * The itemId property is not identical to the Outlook Entry ID or the ID used by the Outlook REST API. 
     * Before making REST API calls using this value, it should be converted using Office.context.mailbox.convertToRestId. 
     * For more details, see {@link https://docs.microsoft.com/outlook/add-ins/use-rest-api#get-the-item-id | Use the Outlook REST APIs from an Outlook add-in}.
@@ -169,12 +196,34 @@ trait MessageRead extends Message {
     */
   var normalizedSubject: java.lang.String = js.native
   /**
+    * Gets the recurrence pattern of an appointment. Gets the recurrence pattern of a meeting request. 
+    * Read and compose modes for appointment items. Read mode for meeting request items.
+    * 
+    * The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance 
+    * in a series. `null` is returned for single appointments and meeting requests of single appointments. 
+    * `undefined` is returned for messages that are not meeting requests.
+    * 
+    * **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+    * 
+    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single appointment 
+    * and NOT a part of a series.
+    * 
+    * [Api set: Mailbox 1.7]
+    * 
+    * @remarks
+    * 
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    * 
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Read</td></tr></table>
+    */
+  var recurrence: Recurrence = js.native
+  /**
     * Gets the email address of the sender of an email message.
     *
     * The from and sender properties represent the same person unless the message is sent by a delegate. 
     * In that case, the from property represents the delegator, and the sender property represents the delegate.
     *
-    * Note: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
+    * **Note**: The recipientType property of the EmailAddressDetails object in the sender property is undefined.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -229,7 +278,7 @@ trait MessageRead extends Message {
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -254,7 +303,7 @@ trait MessageRead extends Message {
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -280,7 +329,7 @@ trait MessageRead extends Message {
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -305,7 +354,7 @@ trait MessageRead extends Message {
     * attach them to the reply form. If any attachments fail to be added, an error is shown in the form UI. 
     * If this isn't possible, then no error message is thrown.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -324,7 +373,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in the selected item's body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -337,7 +386,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in the selected item's body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -351,7 +400,7 @@ trait MessageRead extends Message {
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -417,7 +466,7 @@ trait MessageRead extends Message {
   /**
     * Gets an array of all the entities of the specified entity type found in the selected item's body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     * 
@@ -486,7 +535,7 @@ trait MessageRead extends Message {
     * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
     * in the manifest XML file with the specified FilterName element value.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -508,7 +557,7 @@ trait MessageRead extends Message {
     * The getFilteredEntitiesByName method returns the entities that match the regular expression defined in the ItemHasKnownEntity rule element 
     * in the manifest XML file with the specified FilterName element value.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -539,7 +588,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -567,7 +616,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -593,7 +642,7 @@ trait MessageRead extends Message {
     * and should not attempt to return the entire body of the item. 
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -618,7 +667,7 @@ trait MessageRead extends Message {
     * and should not attempt to return the entire body of the item. 
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -637,7 +686,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -652,7 +701,7 @@ trait MessageRead extends Message {
   /**
     * Gets the entities found in a highlighted match a user has selected. Highlighted matches apply to contextual add-ins.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -679,7 +728,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.6]
     *
@@ -706,7 +755,7 @@ trait MessageRead extends Message {
     * Using a regular expression such as .* to obtain the entire body of an item does not always return the expected results. 
     * Instead, use the Body.getAsync method to retrieve the entire body.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.6]
     *

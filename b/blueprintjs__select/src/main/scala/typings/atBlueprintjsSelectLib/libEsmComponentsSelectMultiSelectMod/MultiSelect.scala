@@ -15,8 +15,8 @@ class MultiSelect[T] ()
   var handlePopoverInteraction: js.Any = js.native
   var handlePopoverOpened: js.Any = js.native
   var handleQueryChange: js.Any = js.native
-  var input: js.UndefOr[js.Any] = js.native
-  var queryList: js.UndefOr[js.Any] = js.native
+  var input: js.Any = js.native
+  var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   @JSName("state")

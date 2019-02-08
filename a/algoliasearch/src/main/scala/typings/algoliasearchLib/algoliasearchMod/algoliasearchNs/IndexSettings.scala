@@ -225,7 +225,7 @@ trait IndexSettings extends js.Object {
     * a list of language ISO codes (as a comma-separated string) for which stop words should be enable
     * https://github.com/algolia/algoliasearch-client-js#removestopwords
     */
-  var removeStopWords: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var removeStopWords: js.UndefOr[scala.Boolean | js.Array[java.lang.String]] = js.undefined
   /**
     * This option is used to select a strategy in order to avoid having an empty result page
     * default: 'none'

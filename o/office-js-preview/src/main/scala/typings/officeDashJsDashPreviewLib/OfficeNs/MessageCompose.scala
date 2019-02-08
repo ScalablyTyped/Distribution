@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 /**
   * The message compose mode of {@link Office.Item | Office.context.mailbox.item}.
   * 
-  * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-  * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, dateTimeCreated, dateTimeModified, itemType, notificationMessages, recurrence, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -427,7 +428,7 @@ trait MessageCompose extends Message {
     *
     * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
     *
-    * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
+    * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
     * discard, or cancel even if no changes have occurred since the item was last saved.
     *
     * [Api set: Mailbox 1.3]
@@ -446,7 +447,7 @@ trait MessageCompose extends Message {
     *
     * In the Outlook desktop client, if the message is an inline reply, the close method has no effect.
     *
-    * Note: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
+    * **Note**: In Outlook on the web, if the item is an appointment and it has previously been saved using saveAsync, the user is prompted to save, 
     * discard, or cancel even if no changes have occurred since the item was last saved.
     *
     * [Api set: Mailbox 1.3]
@@ -731,11 +732,11 @@ trait MessageCompose extends Message {
     * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
     * Saving an existing appointment will send an update to added or removed attendees.
     *
-    * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
+    * **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
     *
-    * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
+    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
     * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
     *
@@ -775,11 +776,11 @@ trait MessageCompose extends Message {
     * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
     * Saving an existing appointment will send an update to added or removed attendees.
     *
-    * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
+    * **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
     *
-    * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
+    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
     * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
     *
@@ -821,11 +822,11 @@ trait MessageCompose extends Message {
     * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
     * Saving an existing appointment will send an update to added or removed attendees.
     *
-    * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
+    * **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
     *
-    * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
+    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
     * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
     *
@@ -855,11 +856,11 @@ trait MessageCompose extends Message {
     * appointment on the user's calendar. For new appointments that have not been saved before, no invitation will be sent. 
     * Saving an existing appointment will send an update to added or removed attendees.
     *
-    * Note: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
+    * **Note**: If your add-in calls saveAsync on an item in compose mode in order to get an itemId to use with EWS or the REST API, be aware that 
     * when Outlook is in cached mode, it may take some time before the item is actually synced to the server. 
     * Until the item is synced, using the itemId will return an error.
     *
-    * Note: The following clients have different behavior for saveAsync on appointments in compose mode:
+    * **Note**: The following clients have different behavior for saveAsync on appointments in compose mode:
     *
     * - Mac Outlook does not support saveAsync on a meeting in compose mode. Calling saveAsync on a meeting in Mac Outlook will return an error.
     *

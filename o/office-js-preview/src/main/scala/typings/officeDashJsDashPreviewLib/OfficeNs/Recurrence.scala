@@ -143,7 +143,7 @@ trait Recurrence extends js.Object {
   /**
     * Sets the recurrence pattern of an appointment series.
     * 
-    * Note: setAsync should only be available for series items and not instance items.
+    * **Note**: setAsync should only be available for series items and not instance items.
     * 
     * [Api set: Mailbox 1.7]
     * 

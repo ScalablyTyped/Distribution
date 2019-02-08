@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__firestore"
-version := "1.0.2-c561e9"
+version := "1.0.2-3a2909"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,13 +11,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.1-11a2c6",
   "org.scalablytyped" %%% "firebase__logger" % "0.1.5-1275ac",
   "org.scalablytyped" %%% "firebase__util" % "0.2.6-051cad",
-  "org.scalablytyped" %%% "grpc" % "1.18.0-587031",
+  "org.scalablytyped" %%% "grpc" % "1.18.0-0d5891",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
   "org.scalablytyped" %%% "lodash_dot_camelcase" % "4.3-dt-20180723Z-ab1fa3",
   "org.scalablytyped" %%% "lodash_dot_clone" % "4.5-dt-20180723Z-153059",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-02eb4a",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190129Z-7cfc00",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-4186d9",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-9f73ab",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-8a323c",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-e26d13",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-6367f2",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-8a9473",

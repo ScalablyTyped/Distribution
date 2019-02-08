@@ -11326,6 +11326,15 @@ object awsDashSdkLibStrings {
   sealed trait WriteProvisionedThroughputExceeded extends js.Object
   
   @js.native
+  sealed trait WrongRegionRobotApplication extends js.Object
+  
+  @js.native
+  sealed trait WrongRegionS3Output extends js.Object
+  
+  @js.native
+  sealed trait WrongRegionSimulationApplication extends js.Object
+  
+  @js.native
   sealed trait X86_64 extends js.Object
   
   @js.native
@@ -22090,6 +22099,12 @@ object awsDashSdkLibStrings {
   def WriteOnly: WriteOnly = "WriteOnly".asInstanceOf[WriteOnly]
   @scala.inline
   def WriteProvisionedThroughputExceeded: WriteProvisionedThroughputExceeded = "WriteProvisionedThroughputExceeded".asInstanceOf[WriteProvisionedThroughputExceeded]
+  @scala.inline
+  def WrongRegionRobotApplication: WrongRegionRobotApplication = "WrongRegionRobotApplication".asInstanceOf[WrongRegionRobotApplication]
+  @scala.inline
+  def WrongRegionS3Output: WrongRegionS3Output = "WrongRegionS3Output".asInstanceOf[WrongRegionS3Output]
+  @scala.inline
+  def WrongRegionSimulationApplication: WrongRegionSimulationApplication = "WrongRegionSimulationApplication".asInstanceOf[WrongRegionSimulationApplication]
   @scala.inline
   def X86_64: X86_64 = "X86_64".asInstanceOf[X86_64]
   @scala.inline

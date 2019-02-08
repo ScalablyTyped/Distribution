@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Message extends js.Object {
-  var message: java.lang.String
-  var path: java.lang.String
+  var message: js.UndefOr[java.lang.String] = js.undefined
+  var path: js.UndefOr[java.lang.String] = js.undefined
 }
 

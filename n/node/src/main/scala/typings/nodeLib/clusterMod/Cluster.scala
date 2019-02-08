@@ -14,9 +14,7 @@ trait Cluster
   // TODO: cluster.schedulingPolicy
   var settings: ClusterSettings = js.native
   var worker: js.UndefOr[Worker] = js.native
-  var workers: /* import warning: ImportType.apply Failed type conversion: {[index: string] : node.cluster.Worker | undefined, [index: string] : node.cluster.Worker | undefined} */ js.UndefOr[
-    /* import warning: ImportType.apply Failed type conversion: {[index: string] : node.cluster.Worker | undefined, [index: string] : node.cluster.Worker | undefined} */ js.Any
-  ] = js.native
+  var workers: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.UndefOr[Worker]]] = js.native
   @JSName("addListener")
   def addListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function1[/* worker */ Worker, scala.Unit]): this.type = js.native
   @JSName("addListener")

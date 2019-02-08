@@ -11,12 +11,10 @@ trait Platform extends js.Object {
   var manufacturer: js.UndefOr[java.lang.String] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var os: js.UndefOr[Anon_Architecture] = js.undefined
-  var parse: js.UndefOr[js.Function1[/* ua */ java.lang.String, this.type]] = js.undefined
   var prerelease: js.UndefOr[java.lang.String] = js.undefined
   var product: js.UndefOr[java.lang.String] = js.undefined
-  @JSName("toString")
-  var toString_FPlatform: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   var ua: js.UndefOr[java.lang.String] = js.undefined
   var version: js.UndefOr[java.lang.String] = js.undefined
+  def parse(ua: java.lang.String): Platform
 }
 

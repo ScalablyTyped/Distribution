@@ -71,7 +71,7 @@ trait Mailbox extends js.Object {
     *
     * The ewsUrl value can be used by a remote service to make EWS calls to the user's mailbox. For example, you can create a remote service to {@link https://docs.microsoft.com/outlook/add-ins/get-attachments-of-an-outlook-item | get attachments from the selected item}.
     *
-    * Note: This member is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This member is not supported in Outlook for iOS or Outlook for Android.
     */
   var ewsUrl: java.lang.String = js.native
   /**
@@ -143,7 +143,7 @@ trait Mailbox extends js.Object {
     * Item IDs retrieved via a REST API (such as the Outlook Mail API or the Microsoft Graph) use a different format than the format used by 
     * Exchange Web Services (EWS). The convertToEwsId method converts a REST-formatted ID into the proper format for EWS.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.3]
     *
@@ -184,7 +184,7 @@ trait Mailbox extends js.Object {
   /**
     * Converts an item ID formatted for EWS into REST format.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.3]
     *
@@ -235,7 +235,7 @@ trait Mailbox extends js.Object {
     * If the specified item identifier does not identify an existing appointment, a blank pane opens on the client computer or device, and 
     * no error message will be returned.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -261,7 +261,7 @@ trait Mailbox extends js.Object {
     * Do not use the displayMessageForm with an itemId that represents an appointment. Use the displayAppointmentForm method to display 
     * an existing appointment, and displayNewAppointmentForm to display a form to create a new appointment.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -290,7 +290,7 @@ trait Mailbox extends js.Object {
     *
     * If any of the parameters exceed the specified size limits, or if an unknown parameter name is specified, an exception is thrown.
     *
-    * Note: This method is not supported in Outlook for iOS or Outlook for Android.
+    * **Note**: This method is not supported in Outlook for iOS or Outlook for Android.
     *
     * [Api set: Mailbox 1.0]
     *
@@ -404,7 +404,7 @@ trait Mailbox extends js.Object {
     *
     * The add-in should use the ewsUrl property to determine the correct URL to use when making EWS calls.
     *
-    * Note: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
+    * **Note**: It is recommended that add-ins use the REST APIs instead of Exchange Web Services whenever possible.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -476,13 +476,13 @@ trait Mailbox extends js.Object {
     * The XML result of the EWS call is provided as a string in the asyncResult.value property. 
     * If the result exceeds 1 MB in size, an error message is returned instead.
     *
-    * Note: This method is not supported in the following scenarios:
+    * **Note**: This method is not supported in the following scenarios:
     * 
     * - In Outlook for iOS or Outlook for Android.
     * 
     * - When the add-in is loaded in a Gmail mailbox.
     *
-    * Note: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the 
+    * **Note**: The server administrator must set OAuthAuthentication to true on the Client Access Server EWS directory to enable the 
     * makeEwsRequestAsync method to make EWS requests.
     *
     * *Version differences*

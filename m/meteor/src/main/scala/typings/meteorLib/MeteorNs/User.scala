@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait User extends js.Object {
   var _id: js.UndefOr[java.lang.String] = js.undefined
-  var createdAt: js.UndefOr[scala.Double] = js.undefined
+  var createdAt: js.UndefOr[stdLib.Date] = js.undefined
   var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
   var profile: js.UndefOr[js.Any] = js.undefined
   var services: js.UndefOr[js.Any] = js.undefined

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tsutils"
-version := "2.29.0-7e3e86"
+version := "2.29.0-e258d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "typescript" % "3.3.1-9debc0")
+  "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

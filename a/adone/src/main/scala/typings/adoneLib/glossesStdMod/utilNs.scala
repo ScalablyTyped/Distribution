@@ -19,7 +19,6 @@ object utilNs extends js.Object {
   class TextEncoder ()
     extends nodeLib.utilMod.TextEncoder
   
-  val inspect: nodeLib.Anon_Color = js.native
   def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[
     /* callback */ js.Function1[/* err */ nodeLib.NodeJSNs.ErrnoException, scala.Unit], 
     scala.Unit
@@ -174,6 +173,12 @@ object utilNs extends js.Object {
   def format(format: js.Any, param: js.Any*): java.lang.String = js.native
   def formatWithOptions(inspectOptions: nodeLib.utilMod.InspectOptions, format: java.lang.String, param: js.Any*): java.lang.String = js.native
   def inherits(constructor: js.Any, superConstructor: js.Any): scala.Unit = js.native
+  def inspect(`object`: js.Any): java.lang.String = js.native
+  def inspect(`object`: js.Any, options: nodeLib.utilMod.InspectOptions): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Double, color: scala.Boolean): java.lang.String = js.native
+  def inspect(`object`: js.Any, showHidden: scala.Boolean, depth: scala.Null, color: scala.Boolean): java.lang.String = js.native
   /** @deprecated since v4.0.0 - use `Array.isArray()` instead. */
   def isArray(`object`: js.Any): /* is std.Array<any> */ scala.Boolean = js.native
   /** @deprecated since v4.0.0 - use `typeof value === 'boolean'` instead. */
@@ -335,6 +340,21 @@ object utilNs extends js.Object {
   ): js.Function0[js.Promise[TResult]] = js.native
   /** @deprecated since v0.11.3 - use `console.log()` instead. */
   def puts(param: js.Any*): scala.Unit = js.native
+  @JSName("inspect")
+  @js.native
+  object inspectNs extends js.Object {
+    val custom: js.Symbol = js.native
+    var defaultOptions: nodeLib.utilMod.InspectOptions = js.native
+    @js.native
+    object colors
+      extends /* color */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[js.Tuple2[scala.Double, scala.Double]]]
+    
+    @js.native
+    object styles
+      extends /* style */ org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String]]
+    
+  }
+  
   @JSName("promisify")
   @js.native
   object promisifyNs extends js.Object {

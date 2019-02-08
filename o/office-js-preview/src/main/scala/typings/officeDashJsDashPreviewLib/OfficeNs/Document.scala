@@ -308,7 +308,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Get the maximum index of the collection of resources in the current project.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -340,7 +340,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Get the maximum index of the collection of tasks in the current project.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
@@ -403,7 +403,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Get the GUID of the resource that has the specified index in the resource collection.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param resourceIndex The index of the resource in the collection of resources for the project.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -700,7 +700,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Get the GUID of the task that has the specified index in the task collection.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param taskIndex The index of the task in the collection of tasks for the project.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.
@@ -905,7 +905,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Set resource field for specified resource Id.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param resourceId Either a string or value of the Resource Id.
     * @param fieldId Resource Fields.
@@ -1022,7 +1022,7 @@ trait Document extends js.Object {
     * <table>
     * <tr><td>Word</td><td>If there is no selection and the insertion point is at a valid location, the specified `data` is inserted at the insertion point</td><td>If `data` is a string, the specified text is inserted.</td></tr>
     * <tr><td></td><td></td><td>If `data` is an array of arrays ("matrix") or a TableData object, a new Word table is inserted.</td></tr>
-    * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (Important: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
+    * <tr><td></td><td></td><td>If `data` is HTML, the specified HTML is inserted. (**Important**: If any of the HTML you insert is invalid, Word won't raise an error. Word will insert as much of the HTML as it can and omits any invalid data).</td></tr>
     * <tr><td></td><td></td><td>If `data` is Office Open XML, the specified XML is inserted.</td></tr>
     * <tr><td></td><td></td><td>If `data` is a base64 encoded image stream, the specified image is inserted.</td></tr></td></tr>
     * <tr><td></td><td>If there is a selection</td><td>It will be replaced with the specified `data` following the same rules as above.</td></tr>
@@ -1155,7 +1155,7 @@ trait Document extends js.Object {
   /**
     * Project documents only. Set task field for specified task Id.
     * 
-    * Important: This API works only in Project 2016 on Windows desktop.
+    * **Important**: This API works only in Project 2016 on Windows desktop.
     * 
     * @param taskId Either a string or value of the Task Id.
     * @param fieldId Task Fields.

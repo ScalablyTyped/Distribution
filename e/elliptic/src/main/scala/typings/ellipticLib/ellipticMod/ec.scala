@@ -69,6 +69,8 @@ class ec protected () extends js.Object {
   def keyFromPrivate(priv: java.lang.String, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPrivate(priv: nodeLib.Buffer): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPrivate(priv: nodeLib.Buffer, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPublic(pub: ellipticLib.Anon_X): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
+  def keyFromPublic(pub: ellipticLib.Anon_X, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: ellipticLib.ellipticMod.ecNs.KeyPair): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: ellipticLib.ellipticMod.ecNs.KeyPair, enc: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native
   def keyFromPublic(pub: java.lang.String): ellipticLib.ellipticMod.ecNs.KeyPair = js.native

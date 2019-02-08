@@ -11,6 +11,6 @@ import scala.scalajs.js.annotation._
 trait AuthenticatorAssertionResponse extends AuthenticatorResponse {
   val authenticatorData: stdLib.ArrayBuffer
   val signature: stdLib.ArrayBuffer
-  val userHandle: stdLib.ArrayBuffer
+  val userHandle: stdLib.ArrayBuffer | scala.Null
 }
 

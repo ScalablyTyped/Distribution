@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-compose"
-version := "3.2-dt-20180214Z-83795e"
+version := "3.2-dt-20190131Z-4bd8b6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

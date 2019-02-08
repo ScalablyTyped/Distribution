@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation._
 trait Anon_Arg1 extends js.Object {
   var TextDecoder: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.utilNs.TextDecoder] = js.native
   var TextEncoder: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.utilNs.TextEncoder] = js.native
-  @JSName("inspect")
-  val inspect_Original: nodeLib.Anon_Color = js.native
+  val inspectNs: Anon_Color = js.native
   val promisifyNs: Anon_Custom = js.native
   val typesNs: Anon_IsAnyArrayBuffer = js.native
   def callbackify(fn: js.Function0[js.Promise[scala.Unit]]): js.Function1[

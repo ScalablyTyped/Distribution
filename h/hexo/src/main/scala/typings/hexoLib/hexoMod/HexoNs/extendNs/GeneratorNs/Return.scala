@@ -1,0 +1,19 @@
+package typings
+package hexoLib.hexoMod.HexoNs.extendNs.GeneratorNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Return extends js.Object {
+  var data: js.Any
+  /**
+    * Layout. Specify the layouts for rendering. The value can be a string or an array. If it’s ignored then the route will return data directly.
+    */
+  var layout: java.lang.String | js.Array[java.lang.String]
+  /**
+    * Path not including the prefixing `/` .
+    */
+  var path: java.lang.String
+}
+

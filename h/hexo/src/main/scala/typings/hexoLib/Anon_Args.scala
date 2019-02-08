@@ -1,0 +1,17 @@
+package typings
+package hexoLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Args extends js.Object {
+  val args: minimistLib.minimistMod.minimistNs.ParsedArgs
+  val debug: scala.Boolean
+  val env: java.lang.String
+  val init: scala.Boolean
+  val safe: scala.Boolean
+  val silent: scala.Boolean
+  val version: java.lang.String
+}
+

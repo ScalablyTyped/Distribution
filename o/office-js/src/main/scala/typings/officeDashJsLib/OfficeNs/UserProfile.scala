@@ -19,7 +19,7 @@ trait UserProfile extends js.Object {
   /**
     * Gets the account type of the user associated with the mailbox. 
     *
-    * Note: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
+    * **Note**: This member is currently only supported in Outlook 2016 for Mac, build 16.9.1212 and greater.
     *
     * [Api set: Mailbox 1.6]
     *

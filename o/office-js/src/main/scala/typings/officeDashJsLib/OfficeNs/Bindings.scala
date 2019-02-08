@@ -43,7 +43,7 @@ trait Bindings extends js.Object {
     * By default, adding a table in Excel assigns the name "Table1" for the first table you add, "Table2" for the second table you add, and so on. 
     * To assign a meaningful name for a table in the Excel UI, use the Table Name property on the Table Tools | Design tab of the ribbon.
     *
-    *     Note: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
+    *     **Note**: In Excel, when specifying a table as a named item, you must fully qualify the name to include the worksheet name in the name of 
     * the table in this format: "Sheet1!Table1"
     *
     * For Word, the itemName parameter refers to the Title property of a Rich Text content control. (You can't bind to content controls other 
@@ -53,7 +53,7 @@ trait Bindings extends js.Object {
     * control from the Controls group on the Developer tab of the ribbon, use the Properties command in the Controls group to display the Content 
     * Control Properties dialog box. Then set the Title property of the content control to the name you want to reference from your code.
     *
-    *     Note: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
+    *     **Note**: In Word, if there are multiple Rich Text content controls with the same Title property value (name), and you try to bind to one 
     * these content controls with this method (by specifying its name as the itemName parameter), the operation will fail.
     *
     * **Support details**

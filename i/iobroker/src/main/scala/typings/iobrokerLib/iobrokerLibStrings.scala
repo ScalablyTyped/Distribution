@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 object iobrokerLibStrings {
   @js.native
+  sealed trait _id extends js.Object
+  
+  @js.native
+  sealed trait acl extends js.Object
+  
+  @js.native
   sealed trait adapter extends js.Object
   
   @js.native
@@ -144,6 +150,10 @@ object iobrokerLibStrings {
   @js.native
   sealed trait write extends js.Object
   
+  @scala.inline
+  def _id: _id = "_id".asInstanceOf[_id]
+  @scala.inline
+  def acl: acl = "acl".asInstanceOf[acl]
   @scala.inline
   def adapter: adapter = "adapter".asInstanceOf[adapter]
   @scala.inline

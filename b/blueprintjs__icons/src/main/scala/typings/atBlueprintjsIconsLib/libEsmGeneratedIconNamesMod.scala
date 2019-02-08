@@ -223,6 +223,10 @@ object libEsmGeneratedIconNamesMod extends js.Object {
   val IMAGE_ROTATE_RIGHT: /* image-rotate-right */ java.lang.String = js.native
   val IMPORT: /* import */ java.lang.String = js.native
   val INBOX: /* inbox */ java.lang.String = js.native
+  val INBOX_FILTERED: /* inbox-filtered */ java.lang.String = js.native
+  val INBOX_GEO: /* inbox-geo */ java.lang.String = js.native
+  val INBOX_SEARCH: /* inbox-search */ java.lang.String = js.native
+  val INBOX_UPDATE: /* inbox-update */ java.lang.String = js.native
   val INFO_SIGN: /* info-sign */ java.lang.String = js.native
   val INNER_JOIN: /* inner-join */ java.lang.String = js.native
   val INSERT: /* insert */ java.lang.String = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-firebase"
-version := "5.2.1-8c68a2"
+version := "5.2.2-363455"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

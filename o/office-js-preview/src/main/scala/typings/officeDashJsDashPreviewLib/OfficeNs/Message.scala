@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * A subclass of {@link Office.Item} for messages.
   * 
-  * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-  * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait Message extends Item {

@@ -14,14 +14,14 @@ object ^ extends js.Object {
   def memoryUsage(): scala.Double = js.native
   def nodeCount(): scala.Double = js.native
   def parseHtml(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtml(source: java.lang.String, options: libxmljsLib.libxmljsMod.StringMap): libxmljsLib.libxmljsMod.Document = js.native
+  def parseHtml(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
   def parseHtmlFragment(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlFragment(source: java.lang.String, options: libxmljsLib.libxmljsMod.StringMap): libxmljsLib.libxmljsMod.Document = js.native
+  def parseHtmlFragment(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
   def parseHtmlString(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseHtmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.StringMap): libxmljsLib.libxmljsMod.Document = js.native
+  def parseHtmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
   def parseXml(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXml(source: java.lang.String, options: libxmljsLib.libxmljsMod.StringMap): libxmljsLib.libxmljsMod.Document = js.native
+  def parseXml(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
   def parseXmlString(source: java.lang.String): libxmljsLib.libxmljsMod.Document = js.native
-  def parseXmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.StringMap): libxmljsLib.libxmljsMod.Document = js.native
+  def parseXmlString(source: java.lang.String, options: libxmljsLib.libxmljsMod.ParserOptions): libxmljsLib.libxmljsMod.Document = js.native
 }
 

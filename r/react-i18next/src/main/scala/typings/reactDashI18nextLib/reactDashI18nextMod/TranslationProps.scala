@@ -10,7 +10,7 @@ trait TranslationProps extends js.Object {
   var ns: js.UndefOr[Namespace] = js.undefined
   def children(
     t: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify i18next.TFunction */ js.Any,
-    options: reactDashI18nextLib.Anon_I18n
+    options: reactDashI18nextLib.Anon_I18nLng
   ): reactLib.reactMod.ReactNs.ReactNode
 }
 

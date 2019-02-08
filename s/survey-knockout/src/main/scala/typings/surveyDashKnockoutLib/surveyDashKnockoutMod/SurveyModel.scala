@@ -982,8 +982,15 @@ class SurveyModel ()
     */
   def deleteCookie(): scala.Unit = js.native
   def deleteDataValueCore(valuesHash: js.Any, key: java.lang.String): scala.Unit = js.native
-  /* CompleteClass */
-  override def doComplete(): js.Any = js.native
+  /**
+    * Call it to complete the survey. It writes cookie if cookieName property is not empty, set the survey into 'completed' state, fire onComplete event and sendResult into [dxsurvey.com](http://www.dxsurvey.com) service if surveyPostId property is not empty. It doesn't perform any validation, unlike completeLastPage function.
+    * @see cookieName
+    * @see state
+    * @see onComplete
+    * @see surveyPostId
+    * @see completeLastPage
+    */
+  def doComplete(): scala.Unit = js.native
   /* protected */ def doNextPage(): scala.Unit = js.native
   /* protected */ def doOnPageAdded(page: PageModel): scala.Unit = js.native
   /* protected */ def doServerValidation(): scala.Boolean = js.native
@@ -1253,7 +1260,8 @@ class SurveyModel ()
   def sendResult(postId: java.lang.String, clientId: java.lang.String, isPartialCompleted: scala.Boolean): scala.Unit = js.native
   /* CompleteClass */
   override def setComment(name: java.lang.String, newValue: java.lang.String): js.Any = js.native
-  /* protected */ def setCompleted(): scala.Unit = js.native
+  /* CompleteClass */
+  override def setCompleted(): js.Any = js.native
   /* protected */ def setCompletedState(value: java.lang.String, text: java.lang.String): scala.Unit = js.native
   /**
     * Set the cookie with cookieName in the browser. It is done automatically on survey complete if cookieName is not empty.

@@ -81,7 +81,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a deployment job.
+    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
     */
   def createDeploymentJob(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobResponse, 
@@ -98,7 +98,7 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a deployment job.
+    * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version. 
     */
   def createDeploymentJob(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.CreateDeploymentJobResponse, 
@@ -956,6 +956,41 @@ trait RoboMaker
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Lists all tags on a AWS RoboMaker resource.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists all tags on a AWS RoboMaker resource.
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Registers a robot with a fleet.
     */
   def registerRobot(): awsDashSdkLib.libRequestMod.Request[
@@ -1058,6 +1093,76 @@ trait RoboMaker
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.SyncDeploymentJobResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds or edits tags for a AWS RoboMaker resource. Each tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty strings.  For information about the rules that apply to tag keys and tag values, see User-Defined Tag Restrictions in the AWS Billing and Cost Management User Guide. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds or edits tags for a AWS RoboMaker resource. Each tag consists of a tag key and a tag value. Tag keys and tag values are both required, but tag values can be empty strings.  For information about the rules that apply to tag keys and tag values, see User-Defined Tag Restrictions in the AWS Billing and Cost Management User Guide. 
+    */
+  def tagResource(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes the specified tags from the specified AWS RoboMaker resource. To remove a tag, specify the tag key. To change the tag value of an existing tag key, use  TagResource . 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes the specified tags from the specified AWS RoboMaker resource. To remove a tag, specify the tag key. To change the tag value of an existing tag key, use  TagResource . 
+    */
+  def untagResource(params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsRobomakerMod.RoboMakerNs.UntagResourceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 /**
   * The appointment organizer mode of {@link Office.Item | Office.context.mailbox.item}.
   * 
-  * Important: This is an internal Outlook object, not directly exposed through existing interfaces. 
-  * You should treat this as a mode of `Office.context.mailbox.item`. Refer to the Object Model pages for more information.
+  * **Important**: This is an internal Outlook object, not directly exposed through existing interfaces. 
+  * You should treat this as a mode of Office.context.mailbox.item. Refer to the
+  * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 @js.native
 trait AppointmentCompose extends ItemCompose {
@@ -94,6 +95,26 @@ trait AppointmentCompose extends ItemCompose {
     * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
     */
   var organizer: Organizer = js.native
+  /**
+    * Gets or sets the recurrence pattern of an appointment.
+    * 
+    * The recurrence property returns a recurrence object for recurring appointments or meetings requests if an item is a series or an instance 
+    * in a series. `null` is returned for single appointments and meeting requests of single appointments.
+    * 
+    * **Note**: Meeting requests have an itemClass value of IPM.Schedule.Meeting.Request.
+    * 
+    * **Note**: If the recurrence object is null, this indicates that the object is a single appointment or a meeting request of a single 
+    * appointment and NOT a part of a series.
+    * 
+    * [Api set: Mailbox 1.7]
+    * 
+    * @remarks
+    * 
+    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    * 
+    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr></table>
+    */
+  var recurrence: Recurrence = js.native
   /**
     * Provides access to the required attendees of an event. The type of object and level of access depends on the mode of the current item. 
     * The requiredAttendees property returns an {@link Office.Recipients} object that provides methods to get or update the required attendees 

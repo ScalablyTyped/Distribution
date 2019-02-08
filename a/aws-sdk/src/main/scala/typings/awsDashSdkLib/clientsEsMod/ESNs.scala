@@ -358,6 +358,10 @@ object ESNs extends js.Object {
       */
     var InstanceType: js.UndefOr[ESPartitionInstanceType] = js.undefined
     /**
+      * Specifies the zone awareness configuration for a domain when zone awareness is enabled.
+      */
+    var ZoneAwarenessConfig: js.UndefOr[ZoneAwarenessConfig] = js.undefined
+    /**
       * A boolean value to indicate whether zone awareness is enabled. See About Zone Awareness for more information.
       */
     var ZoneAwarenessEnabled: js.UndefOr[Boolean] = js.undefined
@@ -1670,6 +1674,13 @@ object ESNs extends js.Object {
       * Specifies the subnets for VPC endpoint.
       */
     var SubnetIds: js.UndefOr[StringList] = js.undefined
+  }
+  
+  trait ZoneAwarenessConfig extends js.Object {
+    /**
+      * An integer value to indicate the number of availability zones for a domain when zone awareness is enabled. This should be equal to number of subnets if VPC endpoints is enabled
+      */
+    var AvailabilityZoneCount: js.UndefOr[IntegerClass] = js.undefined
   }
   
   val TypesNs: this.type = js.native

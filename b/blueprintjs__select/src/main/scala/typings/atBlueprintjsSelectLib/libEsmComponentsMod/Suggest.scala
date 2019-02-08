@@ -7,11 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/select/lib/esm/components", "Suggest")
 @js.native
-class Suggest[T] protected ()
-  extends atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.Suggest[T] {
-  def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[T]) = this()
-  def this(props: atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.ISuggestProps[T], context: js.Any) = this()
-}
+class Suggest[T] ()
+  extends atBlueprintjsSelectLib.libEsmComponentsSelectSuggestMod.Suggest[T]
 
 /* static members */
 @JSImport("@blueprintjs/select/lib/esm/components", "Suggest")

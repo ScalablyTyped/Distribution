@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("@blueprintjs/select/lib/esm/components/select/select", "Select")
 @js.native
-class Select[T] protected ()
+class Select[T] ()
   extends reactLib.reactMod.PureComponent[ISelectProps[T], ISelectState, js.Any] {
-  def this(props: ISelectProps[T]) = this()
-  def this(props: ISelectProps[T], context: js.Any) = this()
   var TypedQueryList: js.Any = js.native
   var handleItemSelect: js.Any = js.native
   var handlePopoverClosing: js.Any = js.native
@@ -18,12 +16,14 @@ class Select[T] protected ()
   var handlePopoverOpened: js.Any = js.native
   var handlePopoverOpening: js.Any = js.native
   var handleTargetKeyDown: js.Any = js.native
-  var input: js.UndefOr[js.Any] = js.native
-  var list: js.UndefOr[js.Any] = js.native
+  var input: js.Any = js.native
   var previousFocusedElement: js.Any = js.native
+  var queryList: js.Any = js.native
   var refHandlers: js.Any = js.native
   var renderQueryList: js.Any = js.native
   var resetQuery: js.Any = js.native
+  @JSName("state")
+  var state_Select: ISelectState = js.native
   @JSName("componentDidUpdate")
   def componentDidUpdate_MSelect(_prevProps: ISelectProps[T], prevState: ISelectState): scala.Unit = js.native
   /* private */ def maybeRenderClearButton(query: js.Any): js.Any = js.native

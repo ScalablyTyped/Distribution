@@ -6,15 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
-  var cacheControl: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.UndefOr[
-    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CacheControlExtensionOptions */ js.Any
+  var cacheControl: js.UndefOr[
+    apolloDashCacheDashControlLib.apolloDashCacheDashControlMod.CacheControlExtensionOptions
   ] = js.undefined
   var dataSources: js.UndefOr[js.Function0[DataSources[TContext]]] = js.undefined
+  var documentStore: js.UndefOr[
+    apolloDashServerDashCachingLib.apolloDashServerDashCachingMod.InMemoryLRUCache[graphqlLib.languageAstMod.DocumentNode]
+  ] = js.undefined
   var extensions: js.UndefOr[
     apolloDashEnvLib.libPolyfillsArrayMod.Global.Array[
-      js.Function0[
-        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify GraphQLExtension */ _
-      ]
+      js.Function0[graphqlDashExtensionsLib.graphqlDashExtensionsMod.GraphQLExtension[_]]
     ]
   ] = js.undefined
   var fieldResolver: js.UndefOr[

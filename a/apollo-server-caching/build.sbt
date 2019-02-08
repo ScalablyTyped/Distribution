@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-caching"
-version := "0.2.2-6a1d2d"
+version := "0.3.0-37b029"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

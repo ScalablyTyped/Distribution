@@ -1786,7 +1786,7 @@ object ioBrokerNs extends js.Object {
     var _id: java.lang.String
     var acl: js.UndefOr[ObjectACL] = js.undefined
      // specified in the derived interfaces
-    var common: ObjectCommon
+    var common: StateCommon | ChannelCommon | DeviceCommon | OtherCommon
     var enums: js.UndefOr[stdLib.Record[java.lang.String, java.lang.String]] = js.undefined
     var native: stdLib.Record[java.lang.String, _]
     var `type`: java.lang.String
@@ -1802,6 +1802,8 @@ object ioBrokerNs extends js.Object {
   }
   
   trait ChannelCommon extends ObjectCommon {
+    // Only states can have common.custom
+    var custom: js.UndefOr[scala.Nothing] = js.undefined
     /** description of this channel */
     var desc: js.UndefOr[java.lang.String] = js.undefined
   }
@@ -1864,7 +1866,14 @@ object ioBrokerNs extends js.Object {
     var writeFile64: ObjectOrStatePermission
   }
   
+  trait DeviceCommon extends ObjectCommon {
+    // Only states can have common.custom
+    var custom: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  
   trait DeviceObject extends BaseObject {
+    @JSName("common")
+    var common_DeviceObject: DeviceCommon
     @JSName("type")
     var type_DeviceObject: iobrokerLib.iobrokerLibStrings.device
   }
@@ -2426,6 +2435,13 @@ object ioBrokerNs extends js.Object {
     ): scala.Unit = js.native
   }
   
+  trait OtherCommon
+    extends ObjectCommon
+       with /* propName */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+    // Only states can have common.custom
+    var custom: js.UndefOr[scala.Nothing] = js.undefined
+  }
+  
   trait OtherObject extends BaseObject {
     @JSName("common")
     var common_OtherObject: OtherCommon
@@ -2447,7 +2463,7 @@ object ioBrokerNs extends js.Object {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in keyof std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'> ]:? std.Pick<iobroker.iobroker.Global.ioBroker.DeviceObject, '_id' | 'native' | 'enums' | 'type' | 'acl'>[P]} */ trait PartialDeviceObject extends js.Object {
-    var common: js.UndefOr[stdLib.Partial[ObjectCommon]] = js.undefined
+    var common: js.UndefOr[stdLib.Partial[DeviceCommon]] = js.undefined
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -2504,13 +2520,6 @@ object ioBrokerNs extends js.Object {
     var path: java.lang.String
   }
   
-  // In set[Foreign]Object[NotExists] methods, the ID and acl of the object is optional
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof iobroker.iobroker.Global.ioBroker.Object, '_id' | 'acl'> ]: iobroker.iobroker.Global.ioBroker.Object[P]} */ trait SettableObject extends js.Object {
-    var _id: js.UndefOr[java.lang.String] = js.undefined
-    var acl: js.UndefOr[StateACL | ObjectACL] = js.undefined
-  }
-  
   trait State extends js.Object {
     /** Direction flag: false for desired value and true for actual value. Default: false. */
     var ack: scala.Boolean
@@ -2537,6 +2546,8 @@ object ioBrokerNs extends js.Object {
   }
   
   trait StateCommon extends ObjectCommon {
+    /** Custom settings for this state */
+    var custom: js.UndefOr[stdLib.Record[java.lang.String, _]] = js.undefined
     /** the default value */
     var `def`: js.UndefOr[js.Any] = js.undefined
     /** description of this state */
@@ -2965,7 +2976,6 @@ object ioBrokerNs extends js.Object {
   type Object = StateObject | ChannelObject | DeviceObject | OtherObject
   type ObjectChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[Object | scala.Null], scala.Unit]
   type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device
-  type OtherCommon = ObjectCommon with org.scalablytyped.runtime.StringDictionary[js.Any]
   type PartialObject = PartialStateObject | PartialChannelObject | PartialDeviceObject | PartialOtherObject
   type ReadDirCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
@@ -3004,6 +3014,15 @@ object ioBrokerNs extends js.Object {
     /* notChanged */ scala.Boolean, 
     scala.Unit
   ]
+  // In set[Foreign]Object[NotExists] methods, the ID and acl of the object is optional
+  type SettableObject = SettableObjectWorker[Object]
+  type SettableObjectWorker[T /* <: Object */] = (stdLib.Pick[
+    T, 
+    stdLib.Exclude[
+      java.lang.String, 
+      iobrokerLib.iobrokerLibStrings._id | iobrokerLib.iobrokerLibStrings.acl
+    ]
+  ]) with iobrokerLib.Anon_Acl[T]
   type StateChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[State | scala.Null], scala.Unit]
   type UnloadHandler = js.Function1[/* callback */ EmptyCallback, scala.Unit]
   type UserGroup = js.Any

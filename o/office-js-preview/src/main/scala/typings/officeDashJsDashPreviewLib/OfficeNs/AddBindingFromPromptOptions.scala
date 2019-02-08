@@ -25,7 +25,7 @@ trait AddBindingFromPromptOptions extends js.Object {
   /**
     * Specifies a table of sample data displayed in the prompt UI as an example of the kinds of fields (columns) that can be bound by your add-in. 
     * The headers provided in the TableData object specify the labels used in the field selection UI. 
-    * Note: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
+    * **Note**: This parameter is used only in add-ins for Access. It is ignored if provided when calling the method in an add-in for Excel.
     */
   var sampleData: js.UndefOr[TableData] = js.undefined
 }
