@@ -9,10 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val DropButton: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsDropButtonMod.DropButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
-    ])
+    grommetLib.componentsDropButtonMod.DropButtonProps with grommetLib.componentsButtonMod.ButtonProps
   ] = js.native
 }
 

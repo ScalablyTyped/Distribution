@@ -14,7 +14,7 @@ class Island ()
   /* CompleteClass */
   override var equations: js.Array[p2Lib.p2Mod.p2Ns.Equation] = js.native
   /* CompleteClass */
-  override def getBodies(result: js.Any): js.Array[p2Lib.p2Mod.p2Ns.Body] = js.native
+  override def getBodies(result: js.Array[_]): js.Array[p2Lib.p2Mod.p2Ns.Body] = js.native
   /* CompleteClass */
   override def reset(): scala.Unit = js.native
   /* CompleteClass */

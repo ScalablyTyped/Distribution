@@ -63,11 +63,11 @@ object ECSNs extends js.Object {
       */
     var assignPublicIp: js.UndefOr[AssignPublicIp] = js.undefined
     /**
-      * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used. There is a limit of five security groups able to be specified per AwsVpcConfiguration.  All specified security groups must be from the same VPC. 
+      * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used. There is a limit of 5 security groups that can be specified per AwsVpcConfiguration.  All specified security groups must be from the same VPC. 
       */
     var securityGroups: js.UndefOr[StringList] = js.undefined
     /**
-      * The subnets associated with the task or service. There is a limit of 16 subnets able to be specified per AwsVpcConfiguration.  All specified subnets must be from the same VPC. 
+      * The subnets associated with the task or service. There is a limit of 16 subnets that can be specified per AwsVpcConfiguration.  All specified subnets must be from the same VPC. 
       */
     var subnets: StringList
   }
@@ -175,7 +175,7 @@ object ECSNs extends js.Object {
   
   trait ContainerDefinition extends js.Object {
     /**
-      * The command that is passed to the container. This parameter maps to Cmd in the Create a container section of the Docker Remote API and the COMMAND parameter to docker run. For more information, see https://docs.docker.com/engine/reference/builder/#cmd.
+      * The command that is passed to the container. This parameter maps to Cmd in the Create a container section of the Docker Remote API and the COMMAND parameter to docker run. For more information, see https://docs.docker.com/engine/reference/builder/#cmd. If there are multiple arguments, each argument should be a separated string in the array.
       */
     var command: js.UndefOr[StringList] = js.undefined
     /**
@@ -287,7 +287,7 @@ object ECSNs extends js.Object {
       */
     var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
     /**
-      * The secrets to pass to the container.
+      * The secrets to pass to the container. For more information, see Specifying Sensitive Data in the Amazon Elastic Container Service Developer Guide.
       */
     var secrets: js.UndefOr[SecretList] = js.undefined
     /**
@@ -1414,7 +1414,7 @@ object ECSNs extends js.Object {
       */
     var containerPort: js.UndefOr[BoxedInteger] = js.undefined
     /**
-      * The port number on the container instance to reserve for your container. If you are using containers in a task with the awsvpc or host network mode, the hostPort can either be left blank or set to the same value as the containerPort. If you are using containers in a task with the bridge network mode, you can specify a non-reserved host port for your container port mapping, or you can omit the hostPort (or set it to 0) while specifying a containerPort and your container automatically receives a port in the ephemeral port range for your container instance operating system and Docker version. The default ephemeral port range for Docker version 1.6.0 and later is listed on the instance under /proc/sys/net/ipv4/ip_local_port_range. If this kernel parameter is unavailable, the default ephemeral port range from 49153 through 65535 is used. Do not attempt to specify a host port in the ephemeral port range as these are reserved for automatic assignment. In general, ports below 32768 are outside of the ephemeral port range.  The default ephemeral port range from 49153 through 65535 is always used for Docker versions before 1.6.0.  The default reserved ports are 22 for SSH, the Docker ports 2375 and 2376, and the Amazon ECS container agent ports 51678 and 51679. Any host port that was previously specified in a running task is also reserved while the task is running (after a task stops, the host port is released). The current reserved ports are displayed in the remainingResources of DescribeContainerInstances output. A container instance may have up to 100 reserved ports at a time, including the default reserved ports. Aautomatically assigned ports do not count toward the 100 reserved ports limit.
+      * The port number on the container instance to reserve for your container. If you are using containers in a task with the awsvpc or host network mode, the hostPort can either be left blank or set to the same value as the containerPort. If you are using containers in a task with the bridge network mode, you can specify a non-reserved host port for your container port mapping, or you can omit the hostPort (or set it to 0) while specifying a containerPort and your container automatically receives a port in the ephemeral port range for your container instance operating system and Docker version. The default ephemeral port range for Docker version 1.6.0 and later is listed on the instance under /proc/sys/net/ipv4/ip_local_port_range. If this kernel parameter is unavailable, the default ephemeral port range from 49153 through 65535 is used. Do not attempt to specify a host port in the ephemeral port range as these are reserved for automatic assignment. In general, ports below 32768 are outside of the ephemeral port range.  The default ephemeral port range from 49153 through 65535 is always used for Docker versions before 1.6.0.  The default reserved ports are 22 for SSH, the Docker ports 2375 and 2376, and the Amazon ECS container agent ports 51678-51680. Any host port that was previously specified in a running task is also reserved while the task is running (after a task stops, the host port is released). The current reserved ports are displayed in the remainingResources of DescribeContainerInstances output. A container instance can have up to 100 reserved ports at a time, including the default reserved ports. Automatically assigned ports don't count toward the 100 reserved ports limit.
       */
     var hostPort: js.UndefOr[BoxedInteger] = js.undefined
     /**
@@ -1423,13 +1423,28 @@ object ECSNs extends js.Object {
     var protocol: js.UndefOr[TransportProtocol] = js.undefined
   }
   
+  trait PutAccountSettingDefaultRequest extends js.Object {
+    /**
+      * The resource type to enable the new format for. If serviceLongArnFormat is specified, the ARN for your Amazon ECS services is affected. If taskLongArnFormat is specified, the ARN and resource ID for your Amazon ECS tasks are affected. If containerInstanceLongArnFormat is specified, the ARN and resource ID for your Amazon ECS container instances are affected.
+      */
+    var name: SettingName
+    /**
+      * The account setting value for the specified principal ARN. Accepted values are enabled and disabled.
+      */
+    var value: String
+  }
+  
+  trait PutAccountSettingDefaultResponse extends js.Object {
+    var setting: js.UndefOr[Setting] = js.undefined
+  }
+  
   trait PutAccountSettingRequest extends js.Object {
     /**
       * The resource name for which to enable the new format. If serviceLongArnFormat is specified, the ARN for your Amazon ECS services is affected. If taskLongArnFormat is specified, the ARN and resource ID for your Amazon ECS tasks is affected. If containerInstanceLongArnFormat is specified, the ARN and resource ID for your Amazon ECS container instances is affected.
       */
     var name: SettingName
     /**
-      * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If you specify the root user, it modifies the ARN and resource ID format for all IAM users, IAM roles, and the root user of the account unless an IAM user or role explicitly overrides these settings for themselves. If this field is omitted, the setting are changed only for the authenticated user.
+      * The ARN of the principal, which can be an IAM user, IAM role, or the root user. If you specify the root user, it modifies the ARN and resource ID format for all IAM users, IAM roles, and the root user of the account unless an IAM user or role explicitly overrides these settings for themselves. If this field is omitted, the settings are changed only for the authenticated user.
       */
     var principalArn: js.UndefOr[String] = js.undefined
     /**
@@ -1611,11 +1626,11 @@ object ECSNs extends js.Object {
   
   trait ResourceRequirement extends js.Object {
     /**
-      * The type of resource a container desires. The only supported value is GPU.
+      * The type of resource to assign to a container. The only supported value is GPU.
       */
     var `type`: ResourceType
     /**
-      * The number of GPUs to assign to a container.
+      * The number of physical GPUs the Amazon ECS container agent will reserve for the container. The number of GPUs reserved for all containers in a task should not exceed the number of available GPUs on the container instance the task is launched on.
       */
     var value: String
   }
@@ -1707,7 +1722,7 @@ object ECSNs extends js.Object {
       */
     var name: String
     /**
-      * The secret to expose to the container. Supported values are either the full ARN or the name of the parameter in the AWS Systems Manager Parameter Store. 
+      * The secret to expose to the container. If your task is using the EC2 launch type, then supported values are either the full ARN of the AWS Secrets Manager secret or the full ARN of the parameter in the AWS Systems Manager Parameter Store. If your task is using the Fargate launch type, then the only supported value is the full ARN of the parameter in the AWS Systems Manager Parameter Store.  If the AWS Systems Manager Parameter Store parameter exists in the same Region as the task you are launching, then you can use either the full ARN or name of the parameter. If the parameter exists in a different Region, then the full ARN must be specified. 
       */
     var valueFrom: String
   }
@@ -2915,7 +2930,7 @@ object ECSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListTasksResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are enabled for new resources that are created. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+      * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
       */
     def putAccountSetting(): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putAccountSetting(
@@ -2926,7 +2941,7 @@ object ECSNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are enabled for new resources that are created. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+      * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
       */
     def putAccountSetting(params: PutAccountSettingRequest): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putAccountSetting(
@@ -2937,6 +2952,29 @@ object ECSNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+      */
+    def putAccountSettingDefault(): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putAccountSettingDefault(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutAccountSettingDefaultResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+      */
+    def putAccountSettingDefault(params: PutAccountSettingDefaultRequest): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def putAccountSettingDefault(
+      params: PutAccountSettingDefaultRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ PutAccountSettingDefaultResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[PutAccountSettingDefaultResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Create or update an attribute on an Amazon ECS resource. If the attribute does not exist, it is created. If the attribute exists, its value is replaced with the specified value. To delete an attribute, use DeleteAttributes. For more information, see Attributes in the Amazon Elastic Container Service Developer Guide.
       */

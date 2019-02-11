@@ -131,21 +131,6 @@ trait ScrollViewPropsIOS extends js.Object {
     */
   var scrollsToTop: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * When snapToInterval is set, snapToAlignment will define the relationship of the the snapping to the scroll view.
-    *      - start (the default) will align the snap at the left (horizontal) or top (vertical)
-    *      - center will align the snap in the center
-    *      - end will align the snap at the right (horizontal) or bottom (vertical)
-    */
-  var snapToAlignment: js.UndefOr[
-    reactDashNativeLib.reactDashNativeLibStrings.start | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.end
-  ] = js.undefined
-  /**
-    * When set, causes the scroll view to stop at multiples of the value of snapToInterval.
-    * This can be used for paginating through children that have lengths smaller than the scroll view.
-    * Used in combination with snapToAlignment.
-    */
-  var snapToInterval: js.UndefOr[scala.Double] = js.undefined
-  /**
     * An array of child indices determining which children get docked to the
     * top of the screen when scrolling. For example passing
     * `stickyHeaderIndices={[0]}` will cause the first child to be fixed to the

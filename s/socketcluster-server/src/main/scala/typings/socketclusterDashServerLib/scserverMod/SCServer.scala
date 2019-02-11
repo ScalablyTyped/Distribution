@@ -16,11 +16,11 @@ trait SCServer
   val MIDDLEWARE_PUBLISH_OUT: socketclusterDashServerLib.socketclusterDashServerLibStrings.publishOut = js.native
   val MIDDLEWARE_SUBSCRIBE: socketclusterDashServerLib.socketclusterDashServerLibStrings.subscribe = js.native
   var auth: scDashAuthLib.scDashAuthMod.SCAuthEngine = js.native
-  var brokerEngine: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify Client */ js.Any = js.native
+  var brokerEngine: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.Client = js.native
   var clients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
   var clientsCount: scala.Double = js.native
   var codec: socketclusterDashServerLib.scserverMod.SCServerNs.SCCodecEngine = js.native
-  var exchange: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify SCExchange */ js.Any = js.native
+  var exchange: scDashBrokerDashClusterLib.scDashBrokerDashClusterMod.SCExchange = js.native
   var options: socketclusterDashServerLib.scserverMod.SCServerNs.SCServerOptions = js.native
   var pendingClients: org.scalablytyped.runtime.StringDictionary[socketclusterDashServerLib.scserversocketMod.namespaced] = js.native
   var pendingClientsCount: scala.Double = js.native

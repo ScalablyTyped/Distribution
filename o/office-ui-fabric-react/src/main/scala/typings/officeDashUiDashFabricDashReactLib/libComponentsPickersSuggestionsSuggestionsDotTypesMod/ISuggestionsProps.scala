@@ -75,6 +75,8 @@ trait ISuggestionsProps[T]
   ] = js.native
   /**
     * Function to fire when one of the optional remove buttons on a suggestion is clicked.
+    *
+    * TODO (adjective-object) remove IPersonaprops before the next major version bump
     */
   var onSuggestionRemove: js.UndefOr[
     js.Function3[
@@ -82,7 +84,7 @@ trait ISuggestionsProps[T]
         reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.NativeMouseEvent]
       ], 
       /* item */ js.UndefOr[
-        officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
+        T | officeDashUiDashFabricDashReactLib.libComponentsPersonaPersonaDotTypesMod.IPersonaProps
       ], 
       /* index */ js.UndefOr[scala.Double], 
       scala.Unit

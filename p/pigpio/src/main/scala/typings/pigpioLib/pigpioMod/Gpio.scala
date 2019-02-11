@@ -27,9 +27,9 @@ class Gpio protected ()
   def digitalRead(): scala.Double = js.native
   /**
     * Sets the GPIO level to 0 or 1. If PWM or servo pulses are active on the GPIO they are switched off.
-    * @param levle     0 or 1
+    * @param level     0 or 1
     */
-  def digitalWrite(levle: scala.Double): Gpio = js.native
+  def digitalWrite(level: scala.Double): Gpio = js.native
   /**
     * Disables aterts for the GPIO. Returns this.
     */

@@ -23,6 +23,7 @@ class GoogleAuth () extends js.Object {
     * @private
     */
   var checkIsGCE: js.UndefOr[js.Any] = js.native
+  var clientOptions: js.UndefOr[js.Any] = js.native
   var createError: js.Any = js.native
   var fromStreamAsync: js.Any = js.native
   var getApplicationDefaultAsync: js.Any = js.native
@@ -139,6 +140,7 @@ class GoogleAuth () extends js.Object {
   /**
     * Create a credentials instance using the given input options.
     * @param json The input object.
+    * @param options The JWT or UserRefresh options for the client
     * @returns JWT or UserRefresh Client with data
     */
   def fromJSON(json: googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.JWTInput): googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWT | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClient = js.native

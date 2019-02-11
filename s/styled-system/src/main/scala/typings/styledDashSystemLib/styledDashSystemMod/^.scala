@@ -60,6 +60,7 @@ object ^ extends js.Object {
   def height(args: js.Any*): js.Any = js.native
   def is(n: js.Any): scala.Boolean = js.native
   def justifyContent(args: js.Any*): js.Any = js.native
+  def justifyItems(args: js.Any*): js.Any = js.native
   def justifySelf(args: js.Any*): js.Any = js.native
   def left(args: js.Any*): js.Any = js.native
   def letterSpacing(args: js.Any*): js.Any = js.native

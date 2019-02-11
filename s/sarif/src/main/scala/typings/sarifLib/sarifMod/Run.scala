@@ -11,10 +11,6 @@ trait Run extends js.Object {
     */
   var aggregateIds: js.UndefOr[js.Array[RunAutomationDetails]] = js.undefined
   /**
-    * The hardware architecture for which the run was targeted.
-    */
-  var architecture: js.UndefOr[java.lang.String] = js.undefined
-  /**
     * The 'instanceGuid' property of a previous SARIF 'run' that comprises the baseline that was used to compute
     * result 'baselineState' properties for the run.
     */
@@ -33,9 +29,18 @@ trait Run extends js.Object {
     */
   var defaultFileEncoding: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * A dictionary, each of whose keys is a URI and each of whose values is a file object.
+    * Specifies the default source language for any file object that refers to a text file that contains source
+    * code.
     */
-  var files: js.UndefOr[org.scalablytyped.runtime.StringDictionary[File]] = js.undefined
+  var defaultSourceLanguage: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * References to external property files that should be inlined with the content of a root log file.
+    */
+  var externalPropertyFiles: js.UndefOr[ExternalPropertyFiles] = js.undefined
+  /**
+    * An array of file objects relevant to the run.
+    */
+  var files: js.UndefOr[js.Array[File]] = js.undefined
   /**
     * A dictionary, each of whose keys is the id of a graph and each of whose values is a 'graph' object with that
     * id.
@@ -50,9 +55,14 @@ trait Run extends js.Object {
     */
   var invocations: js.UndefOr[js.Array[Invocation]] = js.undefined
   /**
-    * A dictionary, each of whose keys specifies a logical location such as a namespace, type or function.
+    * An array of logical locations such as namespaces, types or functions.
     */
-  var logicalLocations: js.UndefOr[org.scalablytyped.runtime.StringDictionary[LogicalLocation]] = js.undefined
+  var logicalLocations: js.UndefOr[js.Array[LogicalLocation]] = js.undefined
+  /**
+    * An ordered list of character sequences that were treated as line breaks when computing region information
+    * for the run.
+    */
+  var newlineSequences: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * The file location specified by each uriBaseId symbol on the machine where the tool originally ran.
     */

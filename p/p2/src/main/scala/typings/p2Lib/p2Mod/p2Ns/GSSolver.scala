@@ -5,11 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait GSSolver extends Solver {
-  var frictionIterations: scala.Double
-  var iterations: scala.Double
-  var tolerance: scala.Double
-  var useZeroRHS: scala.Boolean
-  var usedIterations: scala.Double
+  var frictionIterations: scala.Double = js.native
+  var iterations: scala.Double = js.native
+  var tolerance: scala.Double = js.native
+  var usedIterations: scala.Double = js.native
 }
 

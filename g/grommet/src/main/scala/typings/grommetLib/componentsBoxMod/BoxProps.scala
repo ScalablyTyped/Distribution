@@ -49,7 +49,7 @@ trait BoxProps extends js.Object {
     grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
   var justify: js.UndefOr[
-    grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.end
+    grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.around | grommetLib.grommetLibStrings.evenly | grommetLib.grommetLibStrings.end
   ] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String

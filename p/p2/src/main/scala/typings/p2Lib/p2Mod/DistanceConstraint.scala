@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class DistanceConstraint protected ()
   extends p2Lib.p2Mod.p2Ns.DistanceConstraint {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_Distance) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.p2Mod.p2Ns.DistanceConstraintOptions) = this()
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
@@ -22,9 +22,9 @@ class DistanceConstraint protected ()
   /* CompleteClass */
   override var equeations: js.Array[p2Lib.p2Mod.p2Ns.Equation] = js.native
   /* CompleteClass */
-  override var localAnchorA: js.Array[scala.Double] = js.native
+  override var localAnchorA: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
-  override var localAnchorB: js.Array[scala.Double] = js.native
+  override var localAnchorB: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var lowerLimit: scala.Double = js.native
   /* CompleteClass */
@@ -42,7 +42,7 @@ class DistanceConstraint protected ()
   /* CompleteClass */
   override def getMaxForce(): scala.Double = js.native
   /* CompleteClass */
-  override def setMaxForce(f: scala.Double): scala.Unit = js.native
+  override def setMaxForce(maxForce: scala.Double): scala.Unit = js.native
   /* CompleteClass */
   override def setRelaxation(relaxation: scala.Double): scala.Unit = js.native
   /* CompleteClass */

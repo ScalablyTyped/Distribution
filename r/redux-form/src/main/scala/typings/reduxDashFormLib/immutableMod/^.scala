@@ -43,5 +43,8 @@ object ^ extends js.Object {
     reduxDashFormLib.libReduxFormMod.ConfigProps[FormData, P, ErrorType], 
     ErrorType
   ] = js.native
+  def startSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def stopSubmit(form: java.lang.String): reduxDashFormLib.libActionsMod.FormAction = js.native
+  def stopSubmit(form: java.lang.String, errors: reduxDashFormLib.reduxDashFormMod.FormErrors[stdLib.FormData, _]): reduxDashFormLib.libActionsMod.FormAction = js.native
 }
 

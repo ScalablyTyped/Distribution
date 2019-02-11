@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait AvatarEditorProps extends js.Object {
   var border: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var borderRadius: js.UndefOr[scala.Double] = js.undefined
+  var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[js.Array[scala.Double]] = js.undefined
   var crossOrigin: js.UndefOr[java.lang.String] = js.undefined
   var disableDrop: js.UndefOr[scala.Boolean] = js.undefined

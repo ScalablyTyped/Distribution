@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Box extends Shape {
-  var height: scala.Double
-  var width: scala.Double
+  var height: scala.Double = js.native
+  var width: scala.Double = js.native
 }
 

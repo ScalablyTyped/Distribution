@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class RevoluteConstraint protected ()
   extends p2Lib.p2Mod.p2Ns.RevoluteConstraint {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_LocalPivotA) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.p2Mod.p2Ns.RevoluteConstraintOptions) = this()
   /* CompleteClass */
   override var angle: scala.Double = js.native
   /* CompleteClass */
@@ -26,23 +26,17 @@ class RevoluteConstraint protected ()
   /* CompleteClass */
   override var lowerLimitEnabled: scala.Boolean = js.native
   /* CompleteClass */
-  override var lowerLimitEquation: p2Lib.p2Mod.p2Ns.ContactEquation = js.native
-  /* CompleteClass */
   override var motorEnabled: scala.Boolean = js.native
   /* CompleteClass */
-  override var motorEquation: p2Lib.p2Mod.p2Ns.RotationalVelocityEquation = js.native
+  override var motorMaxForce: scala.Double = js.native
   /* CompleteClass */
-  override var pivotA: js.Array[scala.Double] = js.native
-  /* CompleteClass */
-  override var pivotB: js.Array[scala.Double] = js.native
+  override var motorSpeed: scala.Double = js.native
   /* CompleteClass */
   override var `type`: scala.Double = js.native
   /* CompleteClass */
   override var upperLimit: scala.Double = js.native
   /* CompleteClass */
   override var upperLimitEnabled: scala.Boolean = js.native
-  /* CompleteClass */
-  override var upperLimitEquation: p2Lib.p2Mod.p2Ns.ContactEquation = js.native
   /* CompleteClass */
   override def disableMotor(): scala.Unit = js.native
   /* CompleteClass */

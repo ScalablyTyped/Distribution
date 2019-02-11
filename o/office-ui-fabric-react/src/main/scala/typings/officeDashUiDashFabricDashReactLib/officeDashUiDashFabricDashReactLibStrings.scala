@@ -82,6 +82,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait `data-no-vertical-wrap` extends js.Object
   
   @js.native
+  sealed trait decrementButtonIcon extends js.Object
+  
+  @js.native
   sealed trait disableAnimation extends js.Object
   
   @js.native
@@ -112,6 +115,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait iconClass extends js.Object
   
   @js.native
+  sealed trait incrementButtonIcon extends js.Object
+  
+  @js.native
   sealed trait inputClassName extends js.Object
   
   @js.native
@@ -121,7 +127,19 @@ object officeDashUiDashFabricDashReactLibStrings {
   sealed trait isWide extends js.Object
   
   @js.native
+  sealed trait label extends js.Object
+  
+  @js.native
+  sealed trait labelPosition extends js.Object
+  
+  @js.native
   sealed trait left extends js.Object
+  
+  @js.native
+  sealed trait max extends js.Object
+  
+  @js.native
+  sealed trait min extends js.Object
   
   @js.native
   sealed trait multiline extends js.Object
@@ -167,6 +185,9 @@ object officeDashUiDashFabricDashReactLibStrings {
   
   @js.native
   sealed trait start extends js.Object
+  
+  @js.native
+  sealed trait step extends js.Object
   
   @js.native
   sealed trait suggestionsClassName extends js.Object
@@ -237,6 +258,8 @@ object officeDashUiDashFabricDashReactLibStrings {
   @scala.inline
   def `data-no-vertical-wrap`: `data-no-vertical-wrap` = "data-no-vertical-wrap".asInstanceOf[`data-no-vertical-wrap`]
   @scala.inline
+  def decrementButtonIcon: decrementButtonIcon = "decrementButtonIcon".asInstanceOf[decrementButtonIcon]
+  @scala.inline
   def disableAnimation: disableAnimation = "disableAnimation".asInstanceOf[disableAnimation]
   @scala.inline
   def disabled: disabled = "disabled".asInstanceOf[disabled]
@@ -257,13 +280,23 @@ object officeDashUiDashFabricDashReactLibStrings {
   @scala.inline
   def iconClass: iconClass = "iconClass".asInstanceOf[iconClass]
   @scala.inline
+  def incrementButtonIcon: incrementButtonIcon = "incrementButtonIcon".asInstanceOf[incrementButtonIcon]
+  @scala.inline
   def inputClassName: inputClassName = "inputClassName".asInstanceOf[inputClassName]
   @scala.inline
   def isHeader: isHeader = "isHeader".asInstanceOf[isHeader]
   @scala.inline
   def isWide: isWide = "isWide".asInstanceOf[isWide]
   @scala.inline
+  def label: label = "label".asInstanceOf[label]
+  @scala.inline
+  def labelPosition: labelPosition = "labelPosition".asInstanceOf[labelPosition]
+  @scala.inline
   def left: left = "left".asInstanceOf[left]
+  @scala.inline
+  def max: max = "max".asInstanceOf[max]
+  @scala.inline
+  def min: min = "min".asInstanceOf[min]
   @scala.inline
   def multiline: multiline = "multiline".asInstanceOf[multiline]
   @scala.inline
@@ -294,6 +327,8 @@ object officeDashUiDashFabricDashReactLibStrings {
   def square: square = "square".asInstanceOf[square]
   @scala.inline
   def start: start = "start".asInstanceOf[start]
+  @scala.inline
+  def step: step = "step".asInstanceOf[step]
   @scala.inline
   def suggestionsClassName: suggestionsClassName = "suggestionsClassName".asInstanceOf[suggestionsClassName]
   @scala.inline

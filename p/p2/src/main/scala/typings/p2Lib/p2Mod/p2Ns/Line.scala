@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Line extends Shape {
-  var length: scala.Double
+  var length: scala.Double = js.native
 }
 

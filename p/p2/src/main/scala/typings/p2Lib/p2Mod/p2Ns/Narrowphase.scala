@@ -5,27 +5,24 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Narrowphase extends js.Object {
-  var contactEquations: js.Array[ContactEquation]
-  var contactSkinSize: scala.Double
-  var enableEquations: scala.Boolean
-  var enableFriction: scala.Boolean
-  var enableFrictionReduction: scala.Boolean
-  var frictionCoefficient: scala.Double
-  var frictionEquations: js.Array[FrictionEquation]
-  var frictionRelaxation: scala.Double
-  var frictionStiffness: scala.Double
-  var relaxation: scala.Double
-  var restitution: scala.Double
-  var resuableContactEquations: js.Array[_]
-  var reusableFrictionEquations: js.Array[_]
-  var reuseObjects: scala.Boolean
-  var slipForce: scala.Double
-  var stiffness: scala.Double
-  var surfaceVelocity: scala.Double
-  def collidedLastStep(bodyA: Body, bodyB: Body): scala.Boolean
-  def createContactEquation(bodyA: Body, bodyB: Body, shapeA: Shape, shapeB: Shape): ContactEquation
-  def createFrictionFromContact(c: ContactEquation): FrictionEquation
-  def reset(): scala.Unit
+  var collidingBodiesLastStep: TupleDictionary = js.native
+  var contactEquationPool: ContactEquationPool = js.native
+  var contactEquations: js.Array[ContactEquation] = js.native
+  var currentContactMaterial: ContactMaterial = js.native
+  var enableFriction: scala.Boolean = js.native
+  var enableFrictionReduction: scala.Boolean = js.native
+  var enabledEquations: scala.Boolean = js.native
+  var frictionEquationPool: FrictionEquationPool = js.native
+  var frictionEquations: js.Array[FrictionEquation] = js.native
+  var slipForce: scala.Double = js.native
+  def bodiesOverlap(bodyA: Body, bodyB: Body): scala.Boolean = js.native
+  def bodiesOverlap(bodyA: Body, bodyB: Body, checkCollisionMasks: scala.Boolean): scala.Boolean = js.native
+  def collidedLastStep(bodyA: Body, bodyB: Body): scala.Boolean = js.native
+  def createContactEquation(bodyA: Body, bodyB: Body, shapeA: Shape, shapeB: Shape): ContactEquation = js.native
+  def createFrictionEquation(bodyA: Body, bodyB: Body, shapeA: Shape, shapeB: Shape): FrictionEquation = js.native
+  def createFrictionFromContact(c: ContactEquation): FrictionEquation = js.native
+  def reset(): scala.Unit = js.native
 }
 

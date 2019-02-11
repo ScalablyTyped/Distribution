@@ -7,6 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait GoogleAuthOptions extends js.Object {
   /**
+    * Options object passed to the constructor of the client
+    */
+  var clientOptions: js.UndefOr[
+    googleDashAuthDashLibraryLib.buildSrcAuthJwtclientMod.JWTOptions | googleDashAuthDashLibraryLib.buildSrcAuthOauth2clientMod.OAuth2ClientOptions | googleDashAuthDashLibraryLib.buildSrcAuthRefreshclientMod.UserRefreshClientOptions
+  ] = js.undefined
+  /**
     * Object containing client_email and private_key properties
     */
   var credentials: js.UndefOr[googleDashAuthDashLibraryLib.buildSrcAuthCredentialsMod.CredentialBody] = js.undefined

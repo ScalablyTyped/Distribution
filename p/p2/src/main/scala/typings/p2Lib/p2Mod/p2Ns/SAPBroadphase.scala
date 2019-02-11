@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait SAPBroadphase extends Broadphase {
-  var axisIndex: scala.Double
-  var axisList: js.Array[Body]
+  var axisIndex: scala.Double = js.native
+  var axisList: js.Array[Body] = js.native
 }
 

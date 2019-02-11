@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PushPromise extends Push {
-  @JSName("admin")
-  var admin_PushPromise: PushAdminPromise
+trait PushPromise extends js.Object {
+  var admin: PushAdminPromise
 }
 

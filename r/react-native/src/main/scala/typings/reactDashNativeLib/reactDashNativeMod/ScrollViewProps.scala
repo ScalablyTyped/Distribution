@@ -106,5 +106,40 @@ trait ScrollViewProps
     * When true, shows a vertical scroll indicator.
     */
   var showsVerticalScrollIndicator: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When `snapToInterval` is set, `snapToAlignment` will define the relationship of the the snapping to the scroll view.
+    *      - `start` (the default) will align the snap at the left (horizontal) or top (vertical)
+    *      - `center` will align the snap in the center
+    *      - `end` will align the snap at the right (horizontal) or bottom (vertical)
+    */
+  var snapToAlignment: js.UndefOr[
+    reactDashNativeLib.reactDashNativeLibStrings.start | reactDashNativeLib.reactDashNativeLibStrings.center | reactDashNativeLib.reactDashNativeLibStrings.end
+  ] = js.undefined
+  /**
+    * Use in conjuction with `snapToOffsets`. By default, the end of the list counts as a snap
+    * offset. Set `snapToEnd` to false to disable this behavior and allow the list to scroll freely
+    * between its end and the last `snapToOffsets` offset. The default value is true.
+    */
+  var snapToEnd: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * When set, causes the scroll view to stop at multiples of the value of `snapToInterval`.
+    * This can be used for paginating through children that have lengths smaller than the scroll view.
+    * Used in combination with `snapToAlignment` and `decelerationRate="fast"`. Overrides less
+    * configurable `pagingEnabled` prop.
+    */
+  var snapToInterval: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * When set, causes the scroll view to stop at the defined offsets. This can be used for
+    * paginating through variously sized children that have lengths smaller than the scroll view.
+    * Typically used in combination with `decelerationRate="fast"`. Overrides less configurable
+    * `pagingEnabled` and `snapToInterval` props.
+    */
+  var snapToOffsets: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  /**
+    * Use in conjuction with `snapToOffsets`. By default, the beginning of the list counts as a
+    * snap offset. Set `snapToStart` to false to disable this behavior and allow the list to scroll
+    * freely between its start and the first `snapToOffsets` offset. The default value is true.
+    */
+  var snapToStart: js.UndefOr[scala.Boolean] = js.undefined
 }
 

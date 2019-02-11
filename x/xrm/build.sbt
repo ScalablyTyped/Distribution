@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "xrm"
-version := "9.0-dt-20181220Z-4abbcc"
+version := "9.0-dt-20190207Z-846ee9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

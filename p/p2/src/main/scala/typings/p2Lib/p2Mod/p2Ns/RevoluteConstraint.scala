@@ -9,14 +9,11 @@ trait RevoluteConstraint extends Constraint {
   var angle: scala.Double
   var lowerLimit: scala.Double
   var lowerLimitEnabled: scala.Boolean
-  var lowerLimitEquation: ContactEquation
   var motorEnabled: scala.Boolean
-  var motorEquation: RotationalVelocityEquation
-  var pivotA: js.Array[scala.Double]
-  var pivotB: js.Array[scala.Double]
+  var motorMaxForce: scala.Double
+  var motorSpeed: scala.Double
   var upperLimit: scala.Double
   var upperLimitEnabled: scala.Boolean
-  var upperLimitEquation: ContactEquation
   def disableMotor(): scala.Unit
   def enableMotor(): scala.Unit
   def getMotorSpeed(): scala.Double

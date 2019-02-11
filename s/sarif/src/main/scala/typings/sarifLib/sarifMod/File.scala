@@ -41,9 +41,9 @@ trait File extends js.Object {
     */
   var offset: js.UndefOr[scala.Double] = js.undefined
   /**
-    * Identifies the key of the immediate parent of the file, if this file is nested.
+    * Identifies the index of the immediate parent of the file, if this file is nested.
     */
-  var parentKey: js.UndefOr[java.lang.String] = js.undefined
+  var parentIndex: js.UndefOr[scala.Double] = js.undefined
   /**
     * Key/value pairs that provide additional information about the file.
     */
@@ -52,5 +52,9 @@ trait File extends js.Object {
     * The role or roles played by the file in the analysis.
     */
   var roles: js.UndefOr[js.Array[sarifLib.sarifMod.FileNs.roles]] = js.undefined
+  /**
+    * Specifies the source language for any file object that refers to a text file that contains source code.
+    */
+  var sourceLanguage: js.UndefOr[java.lang.String] = js.undefined
 }
 

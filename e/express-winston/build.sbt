@@ -1,30 +1,30 @@
 organization := "org.scalablytyped"
 name := "express-winston"
-version := "3.0-dt-20180831Z-914330"
+version := "3.0-dt-20190211Z-f55b1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "async" % "2.4-dt-20190117Z-ca81e9",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-cbd349",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-fc559d",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-593054",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-12a485",
-  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-d75fef",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-82bef3",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-e6a834",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-714bd6",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-4af3eb",
+  "org.scalablytyped" %%% "is-stream" % "1.1-dt-20180214Z-20cd36",
   "org.scalablytyped" %%% "logform" % "1.2-dt-20180214Z-640fda",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-9f73ab",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-3468e4",
   "org.scalablytyped" %%% "one-time" % "0.0-dt-20181231Z-d1795e",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20181231Z-ad4db2",
-  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-3914b1",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-ed7327",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20181231Z-be1ed3",
+  "org.scalablytyped" %%% "safe-buffer" % "5.1.2-47c9ab",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-6911a2",
   "org.scalablytyped" %%% "stack-trace" % "0.0-unknown-dt-20180214Z-2f7239",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "triple-beam" % "1.3-dt-20180828Z-becbe4",
-  "org.scalablytyped" %%% "winston" % "3.2.1-1b5e93",
-  "org.scalablytyped" %%% "winston-transport" % "4.3.0-27b45f")
+  "org.scalablytyped" %%% "winston" % "3.2.1-b81b64",
+  "org.scalablytyped" %%% "winston-transport" % "4.3.0-0ad14c")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

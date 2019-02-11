@@ -15,6 +15,10 @@ trait Attachment extends js.Object {
     */
   var fileLocation: FileLocation
   /**
+    * Key/value pairs that provide additional information about the attachment.
+    */
+  var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
     * An array of rectangles specifying areas of interest within the image.
     */
   var rectangles: js.UndefOr[js.Array[Rectangle]] = js.undefined

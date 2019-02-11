@@ -17,6 +17,10 @@ trait Location extends js.Object {
     */
   var fullyQualifiedLogicalName: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The index within the logical locations array of the logical location associated with the result.
+    */
+  var logicalLocationIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
     * A message relevant to the location.
     */
   var message: js.UndefOr[Message] = js.undefined

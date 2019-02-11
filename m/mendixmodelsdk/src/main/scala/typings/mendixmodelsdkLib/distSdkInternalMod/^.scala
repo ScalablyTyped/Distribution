@@ -25,6 +25,7 @@ object ^ extends js.Object {
     versionString: java.lang.String,
     model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.IAbstractModel
   ): scala.Boolean = js.native
+  def isNamedElement(element: mendixmodelsdkLib.distSdkInternalStructuresMod.IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/local-by-name-reference.INamedElement */ scala.Boolean = js.native
   def parseAsNormalizedVersion(versionString: java.lang.String): mendixmodelsdkLib.distSdkInternalVersionDashChecksMod.Version = js.native
   def sendListChangeDeltas[T, P](
     property: (mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], mendixmodelsdkLib.distSdkInternalInstancesMod.IList[P]]) with mendixmodelsdkLib.Anon_ToRawChangeValue[P],

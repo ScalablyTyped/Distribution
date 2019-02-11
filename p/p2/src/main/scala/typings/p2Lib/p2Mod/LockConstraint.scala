@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class LockConstraint protected ()
   extends p2Lib.p2Mod.p2Ns.LockConstraint {
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_LocalAngleB) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.p2Mod.p2Ns.LockConstraintOptions) = this()
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */

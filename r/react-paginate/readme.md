@@ -8,6 +8,7 @@
 //                 Yasunori Ohoka <https://github.com/yasupeke>
 //                 Shingo Sato <https://github.com/sugarshin>
 //                 SPWizard01 <https://github.com/SPWizard01>
+//                 Kevin Rambaud <https://github.com/kevinrambaud>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

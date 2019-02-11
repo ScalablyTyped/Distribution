@@ -9,7 +9,7 @@ trait ContactMaterial extends js.Object {
   var contactSkinSize: scala.Double
   var friction: scala.Double
   var frictionRelaxation: scala.Double
-  var frictionStiffness: scala.Double
+  var frictionStuffness: scala.Double
   var id: scala.Double
   var materialA: Material
   var materialB: Material

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {[ P in keyof any ]:? any[P]} */ trait TransProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactNode
+  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var components: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined
   var defaults: js.UndefOr[java.lang.String] = js.undefined

@@ -6,9 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Equation extends js.Object {
-  var G: js.Array[scala.Double]
-  var a: scala.Double
-  var b: scala.Double
+  var G: js.Tuple2[scala.Double, scala.Double]
   var bodyA: Body
   var bodyB: Body
   var enabled: scala.Boolean
@@ -17,7 +15,6 @@ trait Equation extends js.Object {
   var minForce: scala.Double
   var multiplier: scala.Double
   var needsUpdate: scala.Boolean
-  var offset: scala.Double
   var relativeVelocity: scala.Double
   var relaxation: scala.Double
   var stiffness: scala.Double
@@ -31,11 +28,12 @@ trait Equation extends js.Object {
   def computeGq(): scala.Double
   def computeInvC(eps: scala.Double): scala.Double
   def gmult(
-    G: js.Array[scala.Double],
-    vi: js.Array[scala.Double],
-    wi: js.Array[scala.Double],
-    vj: js.Array[scala.Double],
-    wj: js.Array[scala.Double]
+    G: js.Tuple2[scala.Double, scala.Double],
+    vi: js.Tuple2[scala.Double, scala.Double],
+    wi: js.Tuple2[scala.Double, scala.Double],
+    vj: js.Tuple2[scala.Double, scala.Double],
+    wj: js.Tuple2[scala.Double, scala.Double]
   ): scala.Double
+  def update(): scala.Unit
 }
 

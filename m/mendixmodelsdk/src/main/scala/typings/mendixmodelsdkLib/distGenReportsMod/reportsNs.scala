@@ -477,6 +477,15 @@ object reportsNs extends js.Object {
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
     /**
       * Creates and returns a new BasicReport instance in the SDK and on the server.
+      * The new BasicReport will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.BasicReport = js.native
+    /**
+      * Creates and returns a new BasicReport instance in the SDK and on the server.
       * The new BasicReport will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
@@ -970,6 +979,15 @@ object reportsNs extends js.Object {
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
     /**
       * Creates and returns a new ReportButton instance in the SDK and on the server.
+      * The new ReportButton will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportButton = js.native
+    /**
+      * Creates and returns a new ReportButton instance in the SDK and on the server.
       * The new ReportButton will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
@@ -1395,6 +1413,15 @@ object reportsNs extends js.Object {
       *  7.1.0 to 7.14.0
       */
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
+    /**
+      * Creates and returns a new ReportChart instance in the SDK and on the server.
+      * The new ReportChart will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportChart = js.native
     /**
       * Creates and returns a new ReportChart instance in the SDK and on the server.
       * The new ReportChart will be automatically stored in the 'headerWidget' property
@@ -1862,6 +1889,15 @@ object reportsNs extends js.Object {
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
     /**
       * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
+      * The new ReportDateRangeSelector will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDateRangeSelector = js.native
+    /**
+      * Creates and returns a new ReportDateRangeSelector instance in the SDK and on the server.
       * The new ReportDateRangeSelector will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
@@ -2287,6 +2323,15 @@ object reportsNs extends js.Object {
       *  7.1.0 to 7.14.0
       */
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
+    /**
+      * Creates and returns a new ReportDropDown instance in the SDK and on the server.
+      * The new ReportDropDown will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenReportsMod.reportsNs.ReportDropDown = js.native
     /**
       * Creates and returns a new ReportDropDown instance in the SDK and on the server.
       * The new ReportDropDown will be automatically stored in the 'headerWidget' property

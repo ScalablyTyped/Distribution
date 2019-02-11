@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rebass"
-version := "3.0-dt-20190128Z-60f1ee"
+version := "3.0-dt-20190201Z-9b2825"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

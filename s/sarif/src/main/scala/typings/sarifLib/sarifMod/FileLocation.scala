@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait FileLocation extends js.Object {
   /**
+    * The index within the run files array of the file object associated with the file location.
+    */
+  var fileIndex: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Key/value pairs that provide additional information about the file location.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined

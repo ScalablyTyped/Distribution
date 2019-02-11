@@ -9,9 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val TextInput: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsTextInputMod.TextInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
-      reactLib.HTMLInputElement
+    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.componentsTextInputMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+        reactLib.HTMLInputElement
+      ], 
+      grommetLib.grommetLibStrings.onSelect
     ])
   ] = js.native
 }

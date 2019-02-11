@@ -16,10 +16,6 @@ trait ISpinButtonState extends js.Object {
     */
   var keyboardSpinDirection: KeyboardSpinDirection
   /**
-    * The calculated precision for the value.
-    */
-  var precision: scala.Double
-  /**
     * the value of the spin button
     */
   var value: java.lang.String

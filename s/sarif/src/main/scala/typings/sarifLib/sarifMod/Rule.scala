@@ -11,6 +11,11 @@ trait Rule extends js.Object {
     */
   var configuration: js.UndefOr[RuleConfiguration] = js.undefined
   /**
+    * An array of stable, opaque identifiers by which this rule was known in some previous version of the analysis
+    * tool.
+    */
+  var deprecatedIds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
     * A description of the rule. Should, as far as possible, provide details sufficient to enable resolution of any
     * problem indicated by the result.
     */

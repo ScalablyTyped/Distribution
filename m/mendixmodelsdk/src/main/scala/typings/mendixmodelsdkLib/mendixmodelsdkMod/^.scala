@@ -14,6 +14,7 @@ object ^ extends js.Object {
     model: mendixmodelsdkLib.distSdkInternalAbstractDashModelMod.AbstractModel,
     json: mendixmodelsdkLib.distSdkInternalTransportDashInterfacesMod.IAbstractElementJson
   ): mendixmodelsdkLib.distSdkInternalElementsMod.Element = js.native
+  def isNamedElement(element: mendixmodelsdkLib.distSdkInternalStructuresMod.IStructure): /* is mendixmodelsdk.mendixmodelsdk/dist/sdk/internal/properties/local-by-name-reference.INamedElement */ scala.Boolean = js.native
   def sendListChangeDeltas[T, P](
     property: (mendixmodelsdkLib.distSdkInternalPropertiesAbstractDashPropertyMod.AbstractProperty[js.Array[T], mendixmodelsdkLib.distSdkInternalInstancesMod.IList[P]]) with mendixmodelsdkLib.Anon_ToRawChangeValue[P],
     change: mobxLib.libTypesObservablearrayMod.IArrayWillChange[P]

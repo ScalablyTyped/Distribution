@@ -5,10 +5,12 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Heightfield extends Shape {
-  var data: js.Array[scala.Double]
-  var elementWidth: scala.Double
-  var maxValue: scala.Double
-  var minValue: scala.Double
+  var elementWidth: scala.Double = js.native
+  var heights: js.Array[scala.Double] = js.native
+  var maxValue: scala.Double = js.native
+  var minValue: scala.Double = js.native
+  def updateMaxMinValues(): scala.Unit = js.native
 }
 

@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait AngleLockEquation extends Equation {
-  def setMaxTorque(torque: scala.Double): scala.Double
+  var angle: scala.Double
+  var ratio: scala.Double
+  def setMaxTorque(torque: scala.Double): scala.Unit
   def setRatio(ratio: scala.Double): scala.Double
 }
 

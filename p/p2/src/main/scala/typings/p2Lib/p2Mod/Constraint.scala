@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Constraint protected ()
   extends p2Lib.p2Mod.p2Ns.Constraint {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.Anon_CollideConnected) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, `type`: scala.Double, options: p2Lib.p2Mod.p2Ns.ConstraintOptions) = this()
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */

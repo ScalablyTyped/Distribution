@@ -164,6 +164,13 @@ trait IDatePickerProps
     atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunction[IDatePickerStyleProps, IDatePickerStyles]
   ] = js.undefined
   /**
+    * Pass textField props to textField component.
+    * Prop name is "textField" for compatiblity with upcoming slots work.
+    */
+  var textField: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsTextFieldTextFieldDotTypesMod.ITextFieldProps
+  ] = js.undefined
+  /**
     * Theme provided by High-Order Component.
     */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined

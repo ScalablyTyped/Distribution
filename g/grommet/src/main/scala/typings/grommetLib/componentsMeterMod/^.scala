@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Meter", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Meter: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsMeterMod.MeterProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]
-  ] = js.native
+  val Meter: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsMeterMod.MeterProps] = js.native
 }
 

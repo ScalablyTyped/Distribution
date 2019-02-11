@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait DistanceConstraint extends Constraint {
   var distance: scala.Double
-  var localAnchorA: js.Array[scala.Double]
-  var localAnchorB: js.Array[scala.Double]
+  var localAnchorA: js.Tuple2[scala.Double, scala.Double]
+  var localAnchorB: js.Tuple2[scala.Double, scala.Double]
   var lowerLimit: scala.Double
   var lowerLimitEnabled: scala.Boolean
   var maxForce: scala.Double
@@ -16,6 +16,6 @@ trait DistanceConstraint extends Constraint {
   var upperLimit: scala.Double
   var upperLimitEnabled: scala.Boolean
   def getMaxForce(): scala.Double
-  def setMaxForce(f: scala.Double): scala.Unit
+  def setMaxForce(maxForce: scala.Double): scala.Unit
 }
 

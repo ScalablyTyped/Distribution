@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "grommet"
-version := "2.3.1-0428a1"
+version := "2.4.0-f2f94c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,16 +8,17 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "css" % "0.0-unknown-dt-20180214Z-16b3ff",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
+  "org.scalablytyped" %%% "grommet-icons" % "4.2.0-f1122d",
   "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-8c061a",
   "org.scalablytyped" %%% "mobile-detect" % "1.4.3-cb821d",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-9f73ab",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-3468e4",
   "org.scalablytyped" %%% "polished" % "2.3.3-738e40",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190206Z-6fba4f",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190206Z-1163ea",
   "org.scalablytyped" %%% "recompose" % "0.30-dt-20190120Z-e6b87d",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190131Z-2e0df0")
+  "org.scalablytyped" %%% "styled-components" % "4.1-dt-20190131Z-d6b431")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

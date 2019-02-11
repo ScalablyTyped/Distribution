@@ -1,5 +1,5 @@
 ```
-// Type definitions for react-highlight-words 0.12
+// Type definitions for react-highlight-words 0.16
 // Project: https://github.com/bvaughn/react-highlight-words#readme
 // Definitions by: Mohamed Hegazy <https://github.com/mhegazy>
 //                 Diogo Corrêa <https://github.com/diogodca>

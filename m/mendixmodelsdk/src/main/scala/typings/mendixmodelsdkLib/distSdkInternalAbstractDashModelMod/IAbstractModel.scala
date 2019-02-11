@@ -241,7 +241,7 @@ trait IAbstractModel extends js.Object {
     * This call immediately returns after successfully initiating the deployment job, and it's progress
     * can be tracked using `getAppUpdateStates.
     *
-    * A start update packs the mpk and sends it to the the cloud environment to update the application,
+    * A start update packs the mpk and sends it to the cloud environment to update the application,
     * a new application will be provisioned if needed.
     *
     * The update job will always converge to a stable state (one of "started" | "failed" | "consistencyerrors").

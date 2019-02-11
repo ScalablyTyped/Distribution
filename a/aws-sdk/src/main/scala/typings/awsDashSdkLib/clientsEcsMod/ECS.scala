@@ -816,7 +816,7 @@ trait ECS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are enabled for new resources that are created. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
     */
   def putAccountSetting(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingResponse, 
@@ -833,7 +833,7 @@ trait ECS
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modifies the ARN and resource ID format of a resource for a specified IAM user, IAM role, or the root user for an account. You can specify whether the new ARN and resource ID format are enabled for new resources that are created. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    * Modifies the ARN and resource ID format of a resource type for a specified IAM user, IAM role, or the root user for an account. If the account setting for the root user is changed, it sets the default setting for all of the IAM users and roles for which no individual account setting has been set. The opt-in and opt-out account setting can be set for each Amazon ECS resource separately. The ARN and resource ID format of a resource will be defined by the opt-in status of the IAM user or role that created the resource. Enabling this setting is required to use new Amazon ECS features such as resource tagging. For more information, see Amazon Resource Names (ARNs) and IDs in the Amazon Elastic Container Service Developer Guide.
     */
   def putAccountSetting(params: awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingResponse, 
@@ -848,6 +848,41 @@ trait ECS
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    */
+  def putAccountSettingDefault(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def putAccountSettingDefault(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Modifies the ARN and resource ID format of a resource type for all IAM users on an account for which no individual account setting has been set. Enabling this setting is required to use new Amazon ECS features such as resource tagging.
+    */
+  def putAccountSettingDefault(params: awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def putAccountSettingDefault(
+    params: awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsEcsMod.ECSNs.PutAccountSettingDefaultResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

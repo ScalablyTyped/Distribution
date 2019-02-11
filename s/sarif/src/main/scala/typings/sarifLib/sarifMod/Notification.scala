@@ -31,10 +31,13 @@ trait Notification extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * The stable, unique identifier of the rule (if any) to which this notification is relevant. This member can be
-    * used to retrieve rule metadata from the rules dictionary, if it exists.
+    * The stable, unique identifier of the rule, if any, to which this notification is relevant.
     */
   var ruleId: js.UndefOr[java.lang.String] = js.undefined
+  /**
+    * The index within the run resources array of the rule object, if any, associated with this notification.
+    */
+  var ruleIndex: js.UndefOr[scala.Double] = js.undefined
   /**
     * The thread identifier of the code that generated the notification.
     */

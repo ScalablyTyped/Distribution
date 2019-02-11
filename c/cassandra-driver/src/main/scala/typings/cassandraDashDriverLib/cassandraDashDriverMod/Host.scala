@@ -10,7 +10,7 @@ trait Host
   extends nodeLib.eventsMod.EventEmitter {
   var address: java.lang.String = js.native
   var cassandraVersion: java.lang.String = js.native
-  var dataCenter: java.lang.String = js.native
+  var datacenter: java.lang.String = js.native
   var rack: java.lang.String = js.native
   var tokens: js.Array[java.lang.String] = js.native
   def canBeConsideredAsUp(): scala.Boolean = js.native

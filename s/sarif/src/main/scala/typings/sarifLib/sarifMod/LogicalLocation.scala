@@ -16,9 +16,9 @@ trait LogicalLocation extends js.Object {
     */
   var fullyQualifiedName: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The type of construct this logicalLocationComponent refers to. Should be one of 'function', 'member',
-    * 'module', 'namespace', 'package', 'parameter', 'resource', 'returnType', 'type', or 'variable', if any of
-    * those accurately describe the construct.
+    * The type of construct this logical location component refers to. Should be one of 'function', 'member',
+    * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', or 'variable', if any of those
+    * accurately describe the construct.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -27,10 +27,10 @@ trait LogicalLocation extends js.Object {
     */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Identifies the key of the immediate parent of the construct in which the result was detected. For example,
+    * Identifies the index of the immediate parent of the construct in which the result was detected. For example,
     * this property might point to a logical location that represents the namespace that holds a type.
     */
-  var parentKey: js.UndefOr[java.lang.String] = js.undefined
+  var parentIndex: js.UndefOr[scala.Double] = js.undefined
   /**
     * Key/value pairs that provide additional information about the logical location.
     */

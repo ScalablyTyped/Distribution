@@ -18,5 +18,6 @@ trait Options extends js.Object {
   var priorityRange: js.UndefOr[scala.Double] = js.undefined
   var softIdleTimeoutMillis: js.UndefOr[scala.Double] = js.undefined
   var testOnBorrow: js.UndefOr[scala.Boolean] = js.undefined
+  var testOnReturn: js.UndefOr[scala.Boolean] = js.undefined
 }
 

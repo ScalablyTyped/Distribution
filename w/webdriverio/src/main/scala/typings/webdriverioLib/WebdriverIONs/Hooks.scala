@@ -62,7 +62,15 @@ trait Hooks extends js.Object {
   var beforeStep: js.UndefOr[js.Function1[/* step */ java.lang.String, scala.Unit]] = js.undefined
   var beforeSuite: js.UndefOr[js.Function1[/* suite */ Suite, scala.Unit]] = js.undefined
   var beforeTest: js.UndefOr[js.Function1[/* test */ Test, scala.Unit]] = js.undefined
-  var onComplete: js.UndefOr[js.Function1[/* exitCode */ scala.Double, scala.Unit]] = js.undefined
+  var onComplete: js.UndefOr[
+    js.Function4[
+      /* exitCode */ scala.Double, 
+      /* config */ Config, 
+      /* capabilities */ webdriverLib.WebDriverNs.DesiredCapabilities, 
+      /* results */ Results, 
+      scala.Unit
+    ]
+  ] = js.undefined
   var onPrepare: js.UndefOr[
     js.Function2[
       /* config */ Config, 

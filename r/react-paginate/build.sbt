@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-paginate"
-version := "6.2-dt-20190125Z-1acab6"
+version := "6.2-dt-20190201Z-1acab6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

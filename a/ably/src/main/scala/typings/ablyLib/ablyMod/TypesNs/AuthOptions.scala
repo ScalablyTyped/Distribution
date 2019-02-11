@@ -29,6 +29,11 @@ trait AuthOptions extends js.Object {
   		 * A URL that the library may use to obtain a token string (in plain text format), or a signed TokenRequest or TokenDetails (in JSON format).
   		 **/
   var authUrl: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  		 * Optional clientId that can be used to specify the identity for this client. In most cases
+  		 * it is preferable to instead specift a clientId in the token issued to this client.
+  		 */
+  var clientId: js.UndefOr[java.lang.String] = js.undefined
   var key: js.UndefOr[java.lang.String] = js.undefined
   var queryTime: js.UndefOr[scala.Boolean] = js.undefined
   var token: js.UndefOr[TokenDetails | java.lang.String] = js.undefined

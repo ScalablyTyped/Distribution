@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-document-picker"
-version := "2.0-dt-20180214Z-1f2cce"
+version := "2.0-dt-20190208Z-16b44e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

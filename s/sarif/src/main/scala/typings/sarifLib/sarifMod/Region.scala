@@ -43,6 +43,10 @@ trait Region extends js.Object {
     */
   var snippet: js.UndefOr[FileContent] = js.undefined
   /**
+    * Specifies the source language, if any, of the portion of the file specified by the region object.
+    */
+  var sourceLanguage: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The column number of the first character in the region.
     */
   var startColumn: js.UndefOr[scala.Double] = js.undefined

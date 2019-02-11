@@ -28,11 +28,11 @@ trait IPivotItemProps
     */
   var headerText: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * An optional item count that gets displayed just after the linkText(itemCount)
+    * Defines an optional item count displayed in parentheses just after the `linkText`.
     *
-    * Example: completed(4)
+    * Examples: completed (4), Unread (99+)
     */
-  var itemCount: js.UndefOr[scala.Double] = js.undefined
+  var itemCount: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   /**
     * An optional icon to show next to the pivot link.
     */

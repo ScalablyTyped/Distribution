@@ -22,6 +22,7 @@ trait SelectProps extends js.Object {
   var emptySearchMessage: js.UndefOr[java.lang.String] = js.undefined
   var focusIndicator: js.UndefOr[scala.Boolean] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
   var labelKey: js.UndefOr[java.lang.String | (js.Function1[/* repeated */ js.Any, _])] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String

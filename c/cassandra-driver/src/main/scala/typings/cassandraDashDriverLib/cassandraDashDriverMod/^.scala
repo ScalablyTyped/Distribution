@@ -11,7 +11,8 @@ object ^ extends js.Object {
   var Client: cassandraDashDriverLib.cassandraDashDriverMod.ClientStatic = js.native
   var Encoder: cassandraDashDriverLib.cassandraDashDriverMod.EncoderStatic = js.native
   var ExecutionOptions: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionOptionsStatic = js.native
-  var Host: cassandraDashDriverLib.cassandraDashDriverMod.HostStatic = js.native
-  var HostMap: cassandraDashDriverLib.cassandraDashDriverMod.HostMapStatic = js.native
+  var ExecutionProfile: cassandraDashDriverLib.cassandraDashDriverMod.ExecutionProfileStatic = js.native
+  val version: java.lang.String = js.native
+  def defaultOptions(): cassandraDashDriverLib.cassandraDashDriverMod.ClientOptions = js.native
 }
 

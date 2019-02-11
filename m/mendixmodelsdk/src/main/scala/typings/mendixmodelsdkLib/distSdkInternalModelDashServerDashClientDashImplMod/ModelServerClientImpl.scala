@@ -15,8 +15,9 @@ class ModelServerClientImpl protected ()
   var config: js.Any = js.native
   var createDownloadHandler: js.Any = js.native
   var editLockId: js.Any = js.native
+  var getCreateWorkingCopyData: js.Any = js.native
+  var getCreateWorkingCopyFromTeamServerData: js.Any = js.native
   var getHeadersForModificationRequest: js.Any = js.native
-  var getWorkingCopyData: js.Any = js.native
   var handleRawDeploymentResult: js.Any = js.native
   var loadUnitByIdBatched: js.Any = js.native
   var parseAppUpdateStatus: js.Any = js.native

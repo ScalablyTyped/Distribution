@@ -18,6 +18,7 @@ abstract class AbstractProperty[T, P] protected () extends js.Object {
     */
   def this(declaredOn: mendixmodelsdkLib.distSdkInternalStructuresMod.IStructureClass, parent: mendixmodelsdkLib.distSdkInternalStructuresMod.Structure, name: java.lang.String, initialValue: T, moreArgs: js.Any*) = this()
   var declaredOn: mendixmodelsdkLib.distSdkInternalStructuresMod.IStructureClass = js.native
+  var disposer: js.UndefOr[js.Function0[scala.Unit]] = js.native
   val isAvailable: scala.Boolean = js.native
   val isPublic: scala.Boolean = js.native
   val isRequired: scala.Boolean = js.native
@@ -36,7 +37,6 @@ abstract class AbstractProperty[T, P] protected () extends js.Object {
     ]
   ): scala.Unit = js.native
   def dispose(): scala.Unit = js.native
-  def disposer(): js.UndefOr[scala.Unit] = js.native
   def get(): T = js.native
   def reportAvailabilityIssues(): scala.Unit = js.native
   def updateWithRawValue(value: js.Any): scala.Unit = js.native

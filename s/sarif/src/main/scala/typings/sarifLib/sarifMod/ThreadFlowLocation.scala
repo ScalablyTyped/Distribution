@@ -32,7 +32,7 @@ trait ThreadFlowLocation extends js.Object {
     */
   var module: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * An integer representing a containment hierarchy within the thread flow
+    * An integer representing a containment hierarchy within the thread flow.
     */
   var nestingLevel: js.UndefOr[scala.Double] = js.undefined
   /**

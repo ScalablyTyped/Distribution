@@ -9,10 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class Index () extends js.Object {
   def add(sourceEntry: nodegitLib.indexDashEntryMod.IndexEntry): scala.Double = js.native
+  def addAll(): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: java.lang.String): js.Promise[scala.Double] = js.native
   def addAll(pathspec: java.lang.String, flags: scala.Double): js.Promise[scala.Double] = js.native
   def addAll(pathspec: java.lang.String, flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: js.Array[java.lang.String]): js.Promise[scala.Double] = js.native
   def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double): js.Promise[scala.Double] = js.native
   def addAll(pathspec: js.Array[java.lang.String], flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
+  def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray): js.Promise[scala.Double] = js.native
   def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double): js.Promise[scala.Double] = js.native
   def addAll(pathspec: nodegitLib.strDashArrayMod.Strarray, flags: scala.Double, callback: js.Function): js.Promise[scala.Double] = js.native
   def addByPath(path: java.lang.String): js.Promise[scala.Double] = js.native

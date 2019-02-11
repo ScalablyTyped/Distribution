@@ -32,7 +32,7 @@ trait ISpinButtonProps extends js.Object {
   /**
     * Gets the component ref.
     */
-  var componentRef: js.UndefOr[js.Function1[/* component */ js.UndefOr[ISpinButton | scala.Null], scala.Unit]] = js.undefined
+  var componentRef: js.UndefOr[atUifabricUtilitiesLib.libCreateRefMod.IRefObject[ISpinButton]] = js.undefined
   /**
     * Accessibile label text for the decrement button for the benefit of the screen reader.
     */

@@ -17,6 +17,9 @@ trait MenuProps extends js.Object {
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var icon: js.UndefOr[scala.Boolean | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var items: js.Array[js.Object]
+  var justifyContent: js.UndefOr[
+    grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.end | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.around | grommetLib.grommetLibStrings.stretch
+  ] = js.undefined
   var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String

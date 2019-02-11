@@ -38,6 +38,7 @@ trait SessionDescriptionHandler extends js.Object {
     * @param {Object} [options] Options object to be used by sendDtmf
     * @returns {boolean} true if DTMF send is successful, false otherwise
     */
+  def sendDtmf(tones: java.lang.String): scala.Boolean = js.native
   def sendDtmf(tones: java.lang.String, options: js.Any): scala.Boolean = js.native
   /**
     * Set the remote description to the underlying media implementation

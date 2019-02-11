@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class Spring protected ()
   extends p2Lib.p2Mod.p2Ns.Spring {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_Damping) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.p2Mod.p2Ns.SpringOptions) = this()
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */

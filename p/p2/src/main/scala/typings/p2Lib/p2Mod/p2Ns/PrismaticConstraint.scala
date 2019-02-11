@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait PrismaticConstraint extends Constraint {
-  var localAnchorA: js.Array[scala.Double]
-  var localAnchorB: js.Array[scala.Double]
-  var localAxisA: js.Array[scala.Double]
+  var localAnchorA: js.Tuple2[scala.Double, scala.Double]
+  var localAnchorB: js.Tuple2[scala.Double, scala.Double]
+  var localAxisA: js.Tuple2[scala.Double, scala.Double]
   var lowerLimit: scala.Double
   var lowerLimitEnabled: scala.Boolean
   var lowerLimitEquation: ContactEquation

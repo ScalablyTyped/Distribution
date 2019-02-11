@@ -19,7 +19,7 @@ package object libClientMod {
     /* error */ vscodeDashLanguageserverDashProtocolLib.vscodeDashLanguageserverDashProtocolMod.ResponseError[vscodeDashLanguageserverDashProtocolLib.libProtocolMod.InitializeError] | nodeLib.Error | js.Any, 
     scala.Boolean
   ]
-  type Middleware = _Middleware with vscodeDashLanguageclientLib.libTypeDefinitionMod.TypeDefinitionMiddleware with vscodeDashLanguageclientLib.libImplementationMod.ImplementationMiddleware with vscodeDashLanguageclientLib.libColorProviderMod.ColorProviderMiddleware with vscodeDashLanguageclientLib.libFoldingRangeMod.FoldingRangeProviderMiddleware with vscodeDashLanguageclientLib.libDeclarationMod.DeclarationMiddleware
+  type Middleware = _Middleware with vscodeDashLanguageclientLib.libTypeDefinitionMod.TypeDefinitionMiddleware with vscodeDashLanguageclientLib.libImplementationMod.ImplementationMiddleware with vscodeDashLanguageclientLib.libColorProviderMod.ColorProviderMiddleware with vscodeDashLanguageclientLib.libFoldingRangeMod.FoldingRangeProviderMiddleware with vscodeDashLanguageclientLib.libDeclarationMod.DeclarationMiddleware with vscodeDashLanguageclientLib.libSelectionRangeDotProposedMod.SelectionRangeProviderMiddleware
   type NextSignature[P, R] = js.ThisFunction2[/* this */ scala.Unit, /* data */ P, /* next */ js.Function1[/* data */ P, R], R]
   type PrepareRenameSignature = js.Function3[
     /* document */ vscodeDashLanguageserverDashTypesLib.vscodeDashLanguageserverDashTypesMod.TextDocument, 
@@ -135,6 +135,7 @@ package object libClientMod {
     /* token */ vscodeDashJsonrpcLib.libCancellationMod.CancellationToken, 
     /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify ProviderResult<VDocumentLink> */ js.Any
   ]
+  type SelectionRangeKind = vscodeDashLanguageserverDashProtocolLib.libProtocolDotSelectionRangeMod.SelectionRangeKind
   type Trace = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.Trace
   type TraceFormat = vscodeDashJsonrpcLib.vscodeDashJsonrpcMod.TraceFormat
   type WorkspaceMiddleware = _WorkspaceMiddleware with vscodeDashLanguageclientLib.libConfigurationMod.ConfigurationWorkspaceMiddleware with vscodeDashLanguageclientLib.libWorkspaceFoldersMod.WorkspaceFolderWorkspaceMiddleware

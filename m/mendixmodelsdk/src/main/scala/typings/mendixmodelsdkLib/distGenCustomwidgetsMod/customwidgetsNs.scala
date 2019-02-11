@@ -34,6 +34,10 @@ object customwidgetsNs extends js.Object {
       * In version 7.0.0: introduced
       */
     var experimentalApi: scala.Boolean = js.native
+    /**
+      * In version 7.23.0: introduced
+      */
+    var labeled: scala.Boolean = js.native
     @JSName("model")
     var model_CustomWidgetType: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     var name: java.lang.String = js.native
@@ -73,6 +77,10 @@ object customwidgetsNs extends js.Object {
     def this(model: mendixmodelsdkLib.distSdkInternalMod.AbstractModel, structureTypeName: java.lang.String, id: java.lang.String, isPartial: scala.Boolean, unit: mendixmodelsdkLib.distSdkInternalMod.ModelUnit, container: mendixmodelsdkLib.distSdkInternalMod.AbstractElement) = this()
     val containerAsCustomWidget: CustomWidget = js.native
     val containerAsWidgetValue: WidgetValue = js.native
+    /**
+      * In version 7.23.0: introduced
+      */
+    var labelTemplate: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplate | scala.Null = js.native
     @JSName("model")
     var model_WidgetObject: mendixmodelsdkLib.distGenBaseDashModelMod.IModel = js.native
     val properties: mendixmodelsdkLib.distSdkInternalInstancesMod.IList[WidgetProperty] = js.native
@@ -199,6 +207,10 @@ object customwidgetsNs extends js.Object {
     var page: mendixmodelsdkLib.distGenPagesMod.pagesNs.IPage | scala.Null = js.native
     val pageQualifiedName: java.lang.String | scala.Null = js.native
     var primitiveValue: java.lang.String = js.native
+    /**
+      * In version 7.23.0: introduced
+      */
+    var textTemplate: mendixmodelsdkLib.distGenPagesMod.pagesNs.ClientTemplate | scala.Null = js.native
     var translatableValue: mendixmodelsdkLib.distGenTextsMod.textsNs.Text | scala.Null = js.native
     var `type`: WidgetValueType = js.native
     /**
@@ -471,6 +483,15 @@ object customwidgetsNs extends js.Object {
       *  7.1.0 to 7.14.0
       */
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
       * Creates and returns a new CustomWidget instance in the SDK and on the server.
       * The new CustomWidget will be automatically stored in the 'headerWidget' property
@@ -926,6 +947,7 @@ object customwidgetsNs extends js.Object {
     var Nanoflow: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Object: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var String: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var TextTemplate: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TranslatableString: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
   }
   

@@ -4,5 +4,6 @@
 // Definitions by: Torsten Werner <https://github.com/torstenwerner>
 //                 Niklas Lindgren <https://github.com/nikcorg>
 //                 Vinay Bedre <https://github.com/vinaybedre>
+//                 Antonio Román <https://github.com/kyranet>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

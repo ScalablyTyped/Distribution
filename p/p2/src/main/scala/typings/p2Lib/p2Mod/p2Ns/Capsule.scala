@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Capsule extends Shape {
-  var length: scala.Double
-  var radius: scala.Double
+  var length: scala.Double = js.native
+  var radius: scala.Double = js.native
 }
 

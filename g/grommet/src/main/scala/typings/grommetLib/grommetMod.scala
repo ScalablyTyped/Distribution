@@ -51,9 +51,7 @@ object grommetMod extends js.Object {
       reactLib.HTMLDivElement
     ])
   ] = js.native
-  val Chart: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsChartMod.ChartProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]
-  ] = js.native
+  val Chart: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsChartMod.ChartProps] = js.native
   val CheckBox: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsCheckBoxMod.CheckBoxProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
@@ -94,10 +92,7 @@ object grommetMod extends js.Object {
     ])
   ] = js.native
   val DropButton: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsDropButtonMod.DropButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
-      reactLib.HTMLButtonElement
-    ])
+    grommetLib.componentsDropButtonMod.DropButtonProps with grommetLib.componentsButtonMod.ButtonProps
   ] = js.native
   val Form: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsFormMod.FormProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
@@ -149,15 +144,19 @@ object grommetMod extends js.Object {
       reactLib.HTMLDivElement
     ])
   ] = js.native
+  val MaskedInput: reactLib.reactMod.ReactNs.ComponentType[
+    grommetLib.componentsMaskedInputMod.MaskedInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+      reactLib.HTMLInputElement
+    ])
+  ] = js.native
   val Menu: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsMenuMod.MenuProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.ButtonHTMLAttributes[reactLib.HTMLButtonElement], 
       reactLib.HTMLButtonElement
     ])
   ] = js.native
-  val Meter: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsMeterMod.MeterProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]
-  ] = js.native
+  val Meter: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsMeterMod.MeterProps] = js.native
   val Paragraph: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsParagraphMod.ParagraphProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLParagraphElement], 
@@ -168,6 +167,12 @@ object grommetMod extends js.Object {
     grommetLib.componentsRadioButtonMod.RadioButtonProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
       reactLib.HTMLInputElement
+    ])
+  ] = js.native
+  val RadioButtonGroup: reactLib.reactMod.ReactNs.ComponentType[
+    grommetLib.componentsRadioButtonGroupMod.RadioButtonGroupProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
+      reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
+      reactLib.HTMLDivElement
     ])
   ] = js.native
   val RangeInput: reactLib.reactMod.ReactNs.ComponentType[
@@ -195,12 +200,7 @@ object grommetMod extends js.Object {
       reactLib.HTMLButtonElement
     ])
   ] = js.native
-  val Select: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsSelectMod.SelectProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.SelectHTMLAttributes[reactLib.HTMLSelectElement], 
-      reactLib.HTMLSelectElement
-    ])
-  ] = js.native
+  val Select: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSelectMod.SelectProps] = js.native
   val SkipLink: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSkipLinkMod.SkipLinkProps] = js.native
   val SkipLinkTarget: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSkipLinkTargetMod.SkipLinkTargetProps] = js.native
   val SkipLinks: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsSkipLinksMod.SkipLinksProps] = js.native
@@ -271,12 +271,15 @@ object grommetMod extends js.Object {
     ])
   ] = js.native
   val TextInput: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsTextInputMod.TextInputProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
-      reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
-      reactLib.HTMLInputElement
+    grommetLib.componentsTextInputMod.TextInputProps with (grommetLib.componentsTextInputMod.Omit[
+      reactLib.reactMod.ReactNs.DetailedHTMLProps[
+        reactLib.reactMod.ReactNs.InputHTMLAttributes[reactLib.HTMLInputElement], 
+        reactLib.HTMLInputElement
+      ], 
+      grommetLib.grommetLibStrings.onSelect
     ])
   ] = js.native
-  val ThemeContext: grommetLib.contextsThemeContextMod.ThemeContext = js.native
+  val ThemeContext: grommetLib.contextsThemeContextMod.ThemeContextI = js.native
   val Video: reactLib.reactMod.ReactNs.ComponentType[
     grommetLib.componentsVideoMod.VideoProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.VideoHTMLAttributes[reactLib.HTMLVideoElement], 

@@ -10,13 +10,11 @@ import scala.scalajs.js.annotation._
 class AngleLockEquation protected ()
   extends p2Lib.p2Mod.p2Ns.AngleLockEquation {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_AngleRatio) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.p2Mod.p2Ns.AngleLockEquationOptions) = this()
   /* CompleteClass */
-  override var G: js.Array[scala.Double] = js.native
+  override var G: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
-  override var a: scala.Double = js.native
-  /* CompleteClass */
-  override var b: scala.Double = js.native
+  override var angle: scala.Double = js.native
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
@@ -34,7 +32,7 @@ class AngleLockEquation protected ()
   /* CompleteClass */
   override var needsUpdate: scala.Boolean = js.native
   /* CompleteClass */
-  override var offset: scala.Double = js.native
+  override var ratio: scala.Double = js.native
   /* CompleteClass */
   override var relativeVelocity: scala.Double = js.native
   /* CompleteClass */
@@ -61,15 +59,17 @@ class AngleLockEquation protected ()
   override def computeInvC(eps: scala.Double): scala.Double = js.native
   /* CompleteClass */
   override def gmult(
-    G: js.Array[scala.Double],
-    vi: js.Array[scala.Double],
-    wi: js.Array[scala.Double],
-    vj: js.Array[scala.Double],
-    wj: js.Array[scala.Double]
+    G: js.Tuple2[scala.Double, scala.Double],
+    vi: js.Tuple2[scala.Double, scala.Double],
+    wi: js.Tuple2[scala.Double, scala.Double],
+    vj: js.Tuple2[scala.Double, scala.Double],
+    wj: js.Tuple2[scala.Double, scala.Double]
   ): scala.Double = js.native
   /* CompleteClass */
-  override def setMaxTorque(torque: scala.Double): scala.Double = js.native
+  override def setMaxTorque(torque: scala.Double): scala.Unit = js.native
   /* CompleteClass */
   override def setRatio(ratio: scala.Double): scala.Double = js.native
+  /* CompleteClass */
+  override def update(): scala.Unit = js.native
 }
 

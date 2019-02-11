@@ -335,6 +335,15 @@ object customwidgetsNs extends js.Object {
     def createInMasterDetailRegionUnderWidget(container: mendixmodelsdkLib.distGenPagesMod.pagesNs.MasterDetailRegion): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
     /**
       * Creates and returns a new CustomWidget instance in the SDK and on the server.
+      * The new CustomWidget will be automatically stored in the 'widgets' property
+      * of the parent nativepages.NativeLayoutCallArgument element passed as argument.
+      *
+      * Warning! Can only be used on models with the following Mendix meta model versions:
+      *  7.23.0 and higher
+      */
+    def createInNativeLayoutCallArgumentUnderWidgets(container: mendixmodelsdkLib.distGenNativepagesMod.nativepagesNs.NativeLayoutCallArgument): mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.CustomWidget = js.native
+    /**
+      * Creates and returns a new CustomWidget instance in the SDK and on the server.
       * The new CustomWidget will be automatically stored in the 'headerWidget' property
       * of the parent nativepages.NativeLayout element passed as argument.
       *
@@ -788,6 +797,7 @@ object customwidgetsNs extends js.Object {
     var Nanoflow: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var Object: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var String: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
+    var TextTemplate: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
     var TranslatableString: mendixmodelsdkLib.distGenCustomwidgetsMod.customwidgetsNs.WidgetValueTypeEnum = js.native
   }
   

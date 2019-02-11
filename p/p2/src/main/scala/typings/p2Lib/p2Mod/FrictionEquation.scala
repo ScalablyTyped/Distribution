@@ -11,19 +11,17 @@ class FrictionEquation protected ()
   extends p2Lib.p2Mod.p2Ns.FrictionEquation {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, slipForce: scala.Double) = this()
   /* CompleteClass */
-  override var G: js.Array[scala.Double] = js.native
-  /* CompleteClass */
-  override var a: scala.Double = js.native
-  /* CompleteClass */
-  override var b: scala.Double = js.native
+  override var G: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
   override var bodyB: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
-  override var contactPointA: js.Array[scala.Double] = js.native
+  override var contactEquations: js.Array[p2Lib.p2Mod.p2Ns.ContactEquation] = js.native
   /* CompleteClass */
-  override var contactPointB: js.Array[scala.Double] = js.native
+  override var contactPointA: js.Tuple2[scala.Double, scala.Double] = js.native
+  /* CompleteClass */
+  override var contactPointB: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var enabled: scala.Boolean = js.native
   /* CompleteClass */
@@ -39,8 +37,6 @@ class FrictionEquation protected ()
   /* CompleteClass */
   override var needsUpdate: scala.Boolean = js.native
   /* CompleteClass */
-  override var offset: scala.Double = js.native
-  /* CompleteClass */
   override var relativeVelocity: scala.Double = js.native
   /* CompleteClass */
   override var relaxation: scala.Double = js.native
@@ -51,7 +47,7 @@ class FrictionEquation protected ()
   /* CompleteClass */
   override var stiffness: scala.Double = js.native
   /* CompleteClass */
-  override var t: js.Array[scala.Double] = js.native
+  override var t: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var timeStep: scala.Double = js.native
   /* CompleteClass */
@@ -74,13 +70,15 @@ class FrictionEquation protected ()
   override def getSlipForce(): scala.Double = js.native
   /* CompleteClass */
   override def gmult(
-    G: js.Array[scala.Double],
-    vi: js.Array[scala.Double],
-    wi: js.Array[scala.Double],
-    vj: js.Array[scala.Double],
-    wj: js.Array[scala.Double]
+    G: js.Tuple2[scala.Double, scala.Double],
+    vi: js.Tuple2[scala.Double, scala.Double],
+    wi: js.Tuple2[scala.Double, scala.Double],
+    vj: js.Tuple2[scala.Double, scala.Double],
+    wj: js.Tuple2[scala.Double, scala.Double]
   ): scala.Double = js.native
   /* CompleteClass */
-  override def setSlipForce(slipForce: scala.Double): scala.Double = js.native
+  override def setSlipForce(slipForce: scala.Double): scala.Unit = js.native
+  /* CompleteClass */
+  override def update(): scala.Unit = js.native
 }
 

@@ -12,6 +12,8 @@ object javascriptactionsNs extends js.Object {
     * Interfaces and instance classes for types from the Mendix sub meta model `JavaScriptActions`.
     */
   /**
+    * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
+    *
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.21.0: introduced
@@ -30,6 +32,8 @@ object javascriptactionsNs extends js.Object {
     extends mendixmodelsdkLib.distGenCodeactionsMod.codeactionsNs.ICodeActionParameter
   
   /**
+    * See: {@link https://docs.mendix.com/refguide7/javascript-actions relevant section in reference guide}
+    *
     * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
     *
     * In version 7.21.0: introduced

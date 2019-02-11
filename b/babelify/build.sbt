@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "babelify"
-version := "v7.3.0-dt-20180611Z-8c0e77"
+version := "v7.3.0-dt-20180611Z-d767c6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "babel-traverse" % "6.25-dt-20180611Z-157ca0",
   "org.scalablytyped" %%% "babel-types" % "7.0-dt-20180613Z-619284",
   "org.scalablytyped" %%% "babylon" % "6.16-dt-20181029Z-8c0e04",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-9f73ab",
+  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-3468e4",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

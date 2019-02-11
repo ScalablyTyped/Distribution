@@ -5,7 +5,7 @@
 /**
  * Convenience to be able to export everything at once.
  */
-/** Highest supported Metamodel version: 7.22.0 */
+/** Highest supported Metamodel version: 7.23.0 */
 /*
 The MIT License (MIT)
 
@@ -49,5 +49,5 @@ THE SOFTWARE.
 /**
  * The `utils` module contains various utility interfaces and functions.
  */
-/** Current SDK version: 4.18.0 */
+/** Current SDK version: 4.19.0 */
 ```

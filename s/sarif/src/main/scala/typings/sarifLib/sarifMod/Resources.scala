@@ -11,9 +11,12 @@ trait Resources extends js.Object {
     */
   var messageStrings: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
   /**
-    * A dictionary, each of whose keys is a string and each of whose values is a 'rule' object, that describe all
-    * rules associated with an analysis tool or a specific run of an analysis tool.
+    * Key/value pairs that provide additional information about the resources.
     */
-  var rules: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Rule]] = js.undefined
+  var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
+    * An array of rule objects relevant to the run.
+    */
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
 }
 

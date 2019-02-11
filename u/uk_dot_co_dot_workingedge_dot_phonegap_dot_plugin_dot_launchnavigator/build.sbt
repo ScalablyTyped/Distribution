@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "uk_dot_co_dot_workingedge_dot_phonegap_dot_plugin_dot_launchnavigator"
-version := "5.0.2-fded48"
+version := "5.0.4-fded48"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

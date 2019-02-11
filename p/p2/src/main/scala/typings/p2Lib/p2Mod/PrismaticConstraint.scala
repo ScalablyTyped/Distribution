@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 class PrismaticConstraint protected ()
   extends p2Lib.p2Mod.p2Ns.PrismaticConstraint {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
-  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.Anon_DisableRotationalLock) = this()
+  def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body, options: p2Lib.p2Mod.p2Ns.PrismaticConstraintOptions) = this()
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
@@ -20,11 +20,11 @@ class PrismaticConstraint protected ()
   /* CompleteClass */
   override var equeations: js.Array[p2Lib.p2Mod.p2Ns.Equation] = js.native
   /* CompleteClass */
-  override var localAnchorA: js.Array[scala.Double] = js.native
+  override var localAnchorA: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
-  override var localAnchorB: js.Array[scala.Double] = js.native
+  override var localAnchorB: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
-  override var localAxisA: js.Array[scala.Double] = js.native
+  override var localAxisA: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var lowerLimit: scala.Double = js.native
   /* CompleteClass */

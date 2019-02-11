@@ -20,7 +20,7 @@ trait Exception extends js.Object {
     */
   var message: js.UndefOr[Message] = js.undefined
   /**
-    * Key/value pairs that provide additional information about the exception
+    * Key/value pairs that provide additional information about the exception.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**

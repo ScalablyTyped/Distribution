@@ -14,6 +14,9 @@ trait ChartLineOptions extends js.Object {
   var borderJoinStyle: js.UndefOr[java.lang.String] = js.undefined
   var borderWidth: js.UndefOr[scala.Double] = js.undefined
   var capBezierPoints: js.UndefOr[scala.Boolean] = js.undefined
+  var cubicInterpolationMode: js.UndefOr[
+    chartDotJsLib.chartDotJsLibStrings.default | chartDotJsLib.chartDotJsLibStrings.monotone
+  ] = js.undefined
   var fill: js.UndefOr[
     chartDotJsLib.chartDotJsLibStrings.zero | chartDotJsLib.chartDotJsLibStrings.top | chartDotJsLib.chartDotJsLibStrings.bottom | scala.Boolean
   ] = js.undefined

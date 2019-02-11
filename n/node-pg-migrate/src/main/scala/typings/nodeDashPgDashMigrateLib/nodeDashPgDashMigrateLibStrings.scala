@@ -22,6 +22,15 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait CASCADED extends js.Object
   
   @js.native
+  sealed trait COMMENTS extends js.Object
+  
+  @js.native
+  sealed trait CONSTRAINTS extends js.Object
+  
+  @js.native
+  sealed trait DEFAULTS extends js.Object
+  
+  @js.native
   sealed trait DELETE extends js.Object
   
   @js.native
@@ -37,10 +46,16 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait FULL extends js.Object
   
   @js.native
+  sealed trait IDENTITY extends js.Object
+  
+  @js.native
   sealed trait IMMUTABLE extends js.Object
   
   @js.native
   sealed trait IN extends js.Object
+  
+  @js.native
+  sealed trait INDEXES extends js.Object
   
   @js.native
   sealed trait INOUT extends js.Object
@@ -94,6 +109,12 @@ object nodeDashPgDashMigrateLibStrings {
   sealed trait STATEMENT extends js.Object
   
   @js.native
+  sealed trait STATISTICS extends js.Object
+  
+  @js.native
+  sealed trait STORAGE extends js.Object
+  
+  @js.native
   sealed trait UNSAFE extends js.Object
   
   @js.native
@@ -143,6 +164,12 @@ object nodeDashPgDashMigrateLibStrings {
   @scala.inline
   def CASCADED: CASCADED = "CASCADED".asInstanceOf[CASCADED]
   @scala.inline
+  def COMMENTS: COMMENTS = "COMMENTS".asInstanceOf[COMMENTS]
+  @scala.inline
+  def CONSTRAINTS: CONSTRAINTS = "CONSTRAINTS".asInstanceOf[CONSTRAINTS]
+  @scala.inline
+  def DEFAULTS: DEFAULTS = "DEFAULTS".asInstanceOf[DEFAULTS]
+  @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   @scala.inline
   def DISABLE: DISABLE = "DISABLE".asInstanceOf[DISABLE]
@@ -153,9 +180,13 @@ object nodeDashPgDashMigrateLibStrings {
   @scala.inline
   def FULL: FULL = "FULL".asInstanceOf[FULL]
   @scala.inline
+  def IDENTITY: IDENTITY = "IDENTITY".asInstanceOf[IDENTITY]
+  @scala.inline
   def IMMUTABLE: IMMUTABLE = "IMMUTABLE".asInstanceOf[IMMUTABLE]
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
+  @scala.inline
+  def INDEXES: INDEXES = "INDEXES".asInstanceOf[INDEXES]
   @scala.inline
   def INOUT: INOUT = "INOUT".asInstanceOf[INOUT]
   @scala.inline
@@ -190,6 +221,10 @@ object nodeDashPgDashMigrateLibStrings {
   def STABLE: STABLE = "STABLE".asInstanceOf[STABLE]
   @scala.inline
   def STATEMENT: STATEMENT = "STATEMENT".asInstanceOf[STATEMENT]
+  @scala.inline
+  def STATISTICS: STATISTICS = "STATISTICS".asInstanceOf[STATISTICS]
+  @scala.inline
+  def STORAGE: STORAGE = "STORAGE".asInstanceOf[STORAGE]
   @scala.inline
   def UNSAFE: UNSAFE = "UNSAFE".asInstanceOf[UNSAFE]
   @scala.inline

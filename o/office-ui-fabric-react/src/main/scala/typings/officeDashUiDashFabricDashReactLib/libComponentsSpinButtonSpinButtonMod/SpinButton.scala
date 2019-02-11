@@ -14,6 +14,7 @@ class SpinButton protected ()
     ]
      with officeDashUiDashFabricDashReactLib.libComponentsSpinButtonSpinButtonDotTypesMod.ISpinButton {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsSpinButtonSpinButtonDotTypesMod.ISpinButtonProps) = this()
+  var _calculatePrecision: js.Any = js.native
   var _currentStepFunctionHandle: js.Any = js.native
   /**
     * Increment function to use if one is not passed in
@@ -57,6 +58,7 @@ class SpinButton protected ()
     */
   var _onInputChange: js.Any = js.native
   var _onValidate: js.Any = js.native
+  var _precision: js.Any = js.native
   var _spinningByMouse: js.Any = js.native
   var _stepDelay: js.Any = js.native
   /**
@@ -96,6 +98,6 @@ class SpinButton protected ()
 @JSImport("office-ui-fabric-react/lib/components/SpinButton/SpinButton", "SpinButton")
 @js.native
 object SpinButton extends js.Object {
-  var defaultProps: officeDashUiDashFabricDashReactLib.libComponentsSpinButtonSpinButtonDotTypesMod.ISpinButtonProps = js.native
+  var defaultProps: officeDashUiDashFabricDashReactLib.libComponentsSpinButtonSpinButtonMod.DefaultProps = js.native
 }
 

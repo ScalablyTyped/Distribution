@@ -18,6 +18,9 @@ trait StackProps extends js.Object {
   var guidingChild: js.UndefOr[
     scala.Double | grommetLib.grommetLibStrings.first | grommetLib.grommetLibStrings.last
   ] = js.undefined
+  var interactiveChild: js.UndefOr[
+    scala.Double | grommetLib.grommetLibStrings.first | grommetLib.grommetLibStrings.last
+  ] = js.undefined
   var margin: js.UndefOr[
     grommetLib.grommetLibStrings.none | grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.Anon_Bottom | java.lang.String
   ] = js.undefined

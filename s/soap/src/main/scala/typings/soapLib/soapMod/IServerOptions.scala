@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait IServerOptions
   extends IWsdlBaseOptions
      with /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
+  var enableChunkedEncoding: js.UndefOr[scala.Boolean] = js.undefined
   var oneWay: js.UndefOr[IOneWayOptions] = js.undefined
   var path: java.lang.String
   var services: IServices

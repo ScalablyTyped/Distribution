@@ -13,6 +13,7 @@ package object nodeDashPgDashMigrateMod {
   type DropIndexOptions = DropIndexOptionsEn with DropOptions
   type DropOptions = IfExistsOption with CascadeOption
   type FunctionParam = java.lang.String | FunctionParamType
+  type Like = nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.COMMENTS | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.CONSTRAINTS | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.DEFAULTS | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.IDENTITY | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.INDEXES | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.STATISTICS | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.STORAGE | nodeDashPgDashMigrateLib.nodeDashPgDashMigrateLibStrings.ALL
   type Name = java.lang.String | nodeDashPgDashMigrateLib.Anon_Name
   type SequenceOptionsAlter = SequenceOptionsAlterEn with SequenceOptions
   type SequenceOptionsCreate = SequenceOptionsCreateEn with SequenceOptions

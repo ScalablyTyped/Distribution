@@ -11,11 +11,7 @@ class RotationalVelocityEquation protected ()
   extends p2Lib.p2Mod.p2Ns.RotationalVelocityEquation {
   def this(bodyA: p2Lib.p2Mod.p2Ns.Body, bodyB: p2Lib.p2Mod.p2Ns.Body) = this()
   /* CompleteClass */
-  override var G: js.Array[scala.Double] = js.native
-  /* CompleteClass */
-  override var a: scala.Double = js.native
-  /* CompleteClass */
-  override var b: scala.Double = js.native
+  override var G: js.Tuple2[scala.Double, scala.Double] = js.native
   /* CompleteClass */
   override var bodyA: p2Lib.p2Mod.p2Ns.Body = js.native
   /* CompleteClass */
@@ -32,8 +28,6 @@ class RotationalVelocityEquation protected ()
   override var multiplier: scala.Double = js.native
   /* CompleteClass */
   override var needsUpdate: scala.Boolean = js.native
-  /* CompleteClass */
-  override var offset: scala.Double = js.native
   /* CompleteClass */
   override var relativeVelocity: scala.Double = js.native
   /* CompleteClass */
@@ -60,11 +54,13 @@ class RotationalVelocityEquation protected ()
   override def computeInvC(eps: scala.Double): scala.Double = js.native
   /* CompleteClass */
   override def gmult(
-    G: js.Array[scala.Double],
-    vi: js.Array[scala.Double],
-    wi: js.Array[scala.Double],
-    vj: js.Array[scala.Double],
-    wj: js.Array[scala.Double]
+    G: js.Tuple2[scala.Double, scala.Double],
+    vi: js.Tuple2[scala.Double, scala.Double],
+    wi: js.Tuple2[scala.Double, scala.Double],
+    vj: js.Tuple2[scala.Double, scala.Double],
+    wj: js.Tuple2[scala.Double, scala.Double]
   ): scala.Double = js.native
+  /* CompleteClass */
+  override def update(): scala.Unit = js.native
 }
 

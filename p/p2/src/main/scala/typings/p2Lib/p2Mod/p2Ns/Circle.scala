@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@js.native
 trait Circle extends Shape {
-  var radius: scala.Double
+  var radius: scala.Double = js.native
 }
 

@@ -19,19 +19,11 @@ object metadataNs extends js.Object {
     var stateType: java.lang.String
   }
   
-  @js.native
-  trait AggregateStatic
-    extends org.scalablytyped.runtime.Instantiable0[Aggregate]
-  
   trait ClientState extends js.Object {
     def getConnectedHosts(): js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host]
     def getInFlightQueries(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): scala.Double
     def getOpenConnections(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): scala.Double
   }
-  
-  @js.native
-  trait ClientStateStatic
-    extends org.scalablytyped.runtime.Instantiable0[ClientState]
   
   trait ColumnInfo extends js.Object {
     var name: java.lang.String
@@ -80,27 +72,7 @@ object metadataNs extends js.Object {
   }
   
   @js.native
-  trait IndexStatic
-    extends org.scalablytyped.runtime.Instantiable4[
-          /* name */ java.lang.String, 
-          /* target */ java.lang.String, 
-          (/* kind */ IndexType) | (/* kind */ java.lang.String), 
-          /* options */ js.Object, 
-          Index
-        ] {
-    def fromColumnRows(
-      columnRows: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Row],
-      columnsByName: org.scalablytyped.runtime.StringDictionary[ColumnInfo]
-    ): js.Array[Index] = js.native
-    def fromRows(indexRows: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Row]): js.Array[Index] = js.native
-  }
-  
-  @js.native
   sealed trait IndexType extends js.Object
-  
-  @js.native
-  trait MaterializedViewStatic
-    extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, MaterializedView]
   
   @js.native
   trait Metadata extends js.Object {
@@ -108,49 +80,90 @@ object metadataNs extends js.Object {
     def getAggregate(
       keyspaceName: java.lang.String,
       name: java.lang.String,
+      signature: js.Array[cassandraDashDriverLib.Anon_CodeInfo | java.lang.String]
+    ): js.Promise[Aggregate] = js.native
+    def getAggregate(
+      keyspaceName: java.lang.String,
+      name: java.lang.String,
       signature: js.Array[cassandraDashDriverLib.Anon_CodeInfo | java.lang.String],
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      callback: MetadataCallback[Aggregate]
     ): scala.Unit = js.native
+    def getAggregates(keyspaceName: java.lang.String, name: java.lang.String): js.Promise[js.Array[Aggregate]] = js.native
     def getAggregates(
       keyspaceName: java.lang.String,
       name: java.lang.String,
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      callback: MetadataCallback[js.Array[Aggregate]]
     ): scala.Unit = js.native
     def getFunction(
       keyspaceName: java.lang.String,
       name: java.lang.String,
+      signature: js.Array[cassandraDashDriverLib.Anon_CodeInfo | java.lang.String]
+    ): js.Promise[SchemaFunction] = js.native
+    def getFunction(
+      keyspaceName: java.lang.String,
+      name: java.lang.String,
       signature: js.Array[cassandraDashDriverLib.Anon_CodeInfo | java.lang.String],
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      callback: MetadataCallback[SchemaFunction]
     ): scala.Unit = js.native
+    def getFunctions(keyspaceName: java.lang.String, name: java.lang.String): js.Promise[js.Array[SchemaFunction]] = js.native
     def getFunctions(
       keyspaceName: java.lang.String,
       name: java.lang.String,
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      callback: MetadataCallback[js.Array[SchemaFunction]]
     ): scala.Unit = js.native
     def getMaterializedView(
       keyspaceName: java.lang.String,
       name: java.lang.String,
       callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
-    ): scala.Unit = js.native
-    def getReplicas(keyspaceName: java.lang.String, tokenBuffer: nodeLib.Buffer): js.Array[_] = js.native
-    def getTable(
+    ): js.Promise[MaterializedView] = js.native
+    def getMaterializedView(
       keyspaceName: java.lang.String,
       name: java.lang.String,
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+      callback: MetadataCallback[MaterializedView]
+    ): scala.Unit = js.native
+    def getReplicas(keyspaceName: java.lang.String, token: cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token): js.Array[_] = js.native
+    def getReplicas(
+      keyspaceName: java.lang.String,
+      token: cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange
+    ): js.Array[_] = js.native
+    def getReplicas(keyspaceName: java.lang.String, token: nodeLib.Buffer): js.Array[_] = js.native
+    def getTable(keyspaceName: java.lang.String, name: java.lang.String): js.Promise[TableMetadata] = js.native
+     // TODO
+    def getTable(keyspaceName: java.lang.String, name: java.lang.String, callback: MetadataCallback[TableMetadata]): scala.Unit = js.native
+    def getTokenRanges(): nodeLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] = js.native
+    def getTokenRangesForHost(keyspaceName: java.lang.String, host: cassandraDashDriverLib.cassandraDashDriverMod.Host): nodeLib.Set[cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange] | scala.Null = js.native
+    def getTrace(traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid): js.Promise[QueryTrace] = js.native
+    def getTrace(
+      traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid,
+      callback: MetadataCallback[QueryTrace]
     ): scala.Unit = js.native
     def getTrace(
       traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid,
+      consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
       callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
+    ): js.Promise[QueryTrace] = js.native
+    def getTrace(
+      traceId: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.Uuid,
+      consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
+      callback: MetadataCallback[QueryTrace]
     ): scala.Unit = js.native
-    def getUdt(
-      keyspaceName: java.lang.String,
-      name: java.lang.String,
-      callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback
-    ): scala.Unit = js.native
-    def refreshKeyspace(name: java.lang.String): scala.Unit = js.native
+     // TODO
+    def getUdt(keyspaceName: java.lang.String, name: java.lang.String): js.Promise[_] = js.native
+    def getUdt(keyspaceName: java.lang.String, name: java.lang.String, callback: MetadataCallback[_]): scala.Unit = js.native
+    def newToken(components: java.lang.String): cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token = js.native
+     // TODO
+    def newToken(components: js.Array[nodeLib.Buffer]): cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token = js.native
+    def newToken(components: nodeLib.Buffer): cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token = js.native
+    def newTokenRange(
+      start: cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token,
+      end: cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.Token
+    ): cassandraDashDriverLib.cassandraDashDriverMod.tokenNs.TokenRange = js.native
+    def refreshKeyspace(name: java.lang.String): js.Promise[scala.Unit] = js.native
     def refreshKeyspace(name: java.lang.String, callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback): scala.Unit = js.native
-    def refreshKeyspaces(): scala.Unit = js.native
+    def refreshKeyspaces(): js.Promise[scala.Unit] = js.native
     def refreshKeyspaces(callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback): scala.Unit = js.native
+    def refreshKeyspaces(waitReconnect: scala.Boolean): js.Promise[scala.Unit] = js.native
+    def refreshKeyspaces(waitReconnect: scala.Boolean, callback: cassandraDashDriverLib.cassandraDashDriverMod.Callback): scala.Unit = js.native
   }
   
   @js.native
@@ -160,6 +173,16 @@ object metadataNs extends js.Object {
           /* controlConnection */ js.Any, 
           Metadata
         ]
+  
+  trait QueryTrace extends js.Object {
+    var clientAddress: js.Any
+    var coordinator: js.Any
+    var duration: js.Any
+    var events: js.Array[cassandraDashDriverLib.Anon_Activity]
+    var parameters: js.Any
+    var requestType: js.Any
+    var startedAt: js.Any
+  }
   
   trait SchemaFunction extends js.Object {
     var argumentNames: js.Array[java.lang.String]
@@ -173,10 +196,6 @@ object metadataNs extends js.Object {
     var signature: js.Array[java.lang.String]
   }
   
-  @js.native
-  trait SchemaFunctionStatic
-    extends org.scalablytyped.runtime.Instantiable0[SchemaFunction]
-  
   trait TableMetadata extends DataCollection {
     var cdc: js.UndefOr[scala.Boolean] = js.undefined
     var indexInterval: js.UndefOr[scala.Double] = js.undefined
@@ -187,16 +206,7 @@ object metadataNs extends js.Object {
     var virtual: scala.Boolean
   }
   
-  @js.native
-  trait TableMetadataStatic
-    extends org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, TableMetadata]
-  
-  var Aggregate: AggregateStatic = js.native
-  var Index: IndexStatic = js.native
-  var MaterializedView: MaterializedViewStatic = js.native
   var Metadata: MetadataStatic = js.native
-  var SchemaFunction: SchemaFunctionStatic = js.native
-  var TableMetadata: TableMetadataStatic = js.native
   @js.native
   object IndexType extends js.Object {
     @js.native
@@ -221,6 +231,7 @@ object metadataNs extends js.Object {
   }
   
   type MaterializedView = DataCollection
+  type MetadataCallback[T] = js.Function2[/* err */ js.Any, /* retVal */ T, scala.Unit]
   type caching = cassandraDashDriverLib.cassandraDashDriverLibStrings.all | cassandraDashDriverLib.cassandraDashDriverLibStrings.keys_only | cassandraDashDriverLib.cassandraDashDriverLibStrings.rows_only | cassandraDashDriverLib.cassandraDashDriverLibStrings.none
 }
 

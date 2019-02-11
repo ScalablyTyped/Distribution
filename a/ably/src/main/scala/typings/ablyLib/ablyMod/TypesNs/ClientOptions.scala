@@ -11,11 +11,6 @@ trait ClientOptions extends AuthOptions {
   		 * When true will automatically connect to Ably when library is instanced. This is true by default
   		 */
   var autoConnect: js.UndefOr[scala.Boolean] = js.undefined
-  /**
-  		 * Optional clientId that can be used to specify the identity for this client. In most cases
-  		 * it is preferable to instead specift a clientId in the token issued to this client.
-  		 */
-  var clientId: js.UndefOr[java.lang.String] = js.undefined
   var defaultTokenParams: js.UndefOr[TokenParams] = js.undefined
   /**
   		 * When true, messages published on channels by this client will be echoed back to this client.

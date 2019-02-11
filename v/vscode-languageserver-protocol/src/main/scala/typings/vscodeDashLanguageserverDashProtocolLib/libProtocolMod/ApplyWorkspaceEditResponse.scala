@@ -16,5 +16,11 @@ trait ApplyWorkspaceEditResponse extends js.Object {
     * if the client signals a `failureHandlingStrategy` in its client capabilities.
     */
   var failedChange: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * An optional textual description for why the edit was not applied.
+    * This may be used by the server for diagnostic logging or to provide
+    * a suitable error for a request that triggered the edit.
+    */
+  var failureReason: js.UndefOr[java.lang.String] = js.undefined
 }
 

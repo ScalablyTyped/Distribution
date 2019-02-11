@@ -18,7 +18,7 @@ class ContactMaterial protected ()
   /* CompleteClass */
   override var frictionRelaxation: scala.Double = js.native
   /* CompleteClass */
-  override var frictionStiffness: scala.Double = js.native
+  override var frictionStuffness: scala.Double = js.native
   /* CompleteClass */
   override var id: scala.Double = js.native
   /* CompleteClass */

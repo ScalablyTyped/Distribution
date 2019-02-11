@@ -13,7 +13,7 @@ trait GraphTraversal extends js.Object {
   /**
     * The sequences of edges traversed by this graph traversal.
     */
-  var edgeTraversals: js.Array[EdgeTraversal]
+  var edgeTraversals: js.UndefOr[js.Array[EdgeTraversal]] = js.undefined
   /**
     * A string that uniquely identifies that graph being traversed.
     */

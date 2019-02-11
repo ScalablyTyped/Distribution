@@ -99,6 +99,10 @@ trait Job[T] extends js.Object {
     */
   def takeLock(): js.Promise[scala.Double | bullLib.bullLibNumbers.`false`] = js.native
   /**
+    * Get job properties as Json Object
+    */
+  def toJSON(): bullLib.Anon_AttemptsMade[T] = js.native
+  /**
     * Update a specific job's data. Promise resolves when the job has been updated.
     */
   def update(data: js.Any): js.Promise[scala.Unit] = js.native

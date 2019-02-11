@@ -16,6 +16,11 @@ trait VersionControlDetails extends js.Object {
     */
   var branch: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * The location in the local file system to which the root of the repository was mapped at the time of the
+    * analysis.
+    */
+  var mappedTo: js.UndefOr[FileLocation] = js.undefined
+  /**
     * Key/value pairs that provide additional information about the version control details.
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined

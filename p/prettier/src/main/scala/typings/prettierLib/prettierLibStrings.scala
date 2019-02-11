@@ -31,6 +31,12 @@ object prettierLibStrings {
   sealed trait avoid extends js.Object
   
   @js.native
+  sealed trait babel extends js.Object
+  
+  @js.native
+  sealed trait `babel-flow` extends js.Object
+  
+  @js.native
   sealed trait babylon extends js.Object
   
   @js.native
@@ -163,6 +169,10 @@ object prettierLibStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   @scala.inline
   def avoid: avoid = "avoid".asInstanceOf[avoid]
+  @scala.inline
+  def babel: babel = "babel".asInstanceOf[babel]
+  @scala.inline
+  def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
   @scala.inline
   def babylon: babylon = "babylon".asInstanceOf[babylon]
   @scala.inline

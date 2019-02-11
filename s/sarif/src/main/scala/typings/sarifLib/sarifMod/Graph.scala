@@ -13,7 +13,7 @@ trait Graph extends js.Object {
   /**
     * An array of edge objects representing the edges of the graph.
     */
-  var edges: js.Array[Edge]
+  var edges: js.UndefOr[js.Array[Edge]] = js.undefined
   /**
     * A string that uniquely identifies the graph within a run.graphs or result.graphs array.
     */
@@ -21,7 +21,7 @@ trait Graph extends js.Object {
   /**
     * An array of node objects representing the nodes of the graph.
     */
-  var nodes: js.Array[Node]
+  var nodes: js.UndefOr[js.Array[Node]] = js.undefined
   /**
     * Key/value pairs that provide additional information about the graph.
     */

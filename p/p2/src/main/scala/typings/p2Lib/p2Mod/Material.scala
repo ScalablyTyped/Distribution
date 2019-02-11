@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p2", "Material")
 @js.native
-class Material protected ()
+class Material ()
   extends p2Lib.p2Mod.p2Ns.Material {
   def this(id: scala.Double) = this()
   /* CompleteClass */

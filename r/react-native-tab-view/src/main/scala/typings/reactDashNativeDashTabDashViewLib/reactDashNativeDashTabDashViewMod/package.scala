@@ -15,7 +15,7 @@ package object reactDashNativeDashTabDashViewMod {
   type Route[T /* <: RouteBase */] = T
   type RouteBase = Key with reactDashNativeDashTabDashViewLib.Anon_TestID
   type SubscriptionName = reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.reset | reactDashNativeDashTabDashViewLib.reactDashNativeDashTabDashViewLibStrings.position
-  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_GetLabelText[T]
+  type TabBarProps[T /* <: RouteBase */] = SceneRendererProps[T] with reactDashNativeDashTabDashViewLib.Anon_Bounces[T]
   type TabViewProps[T /* <: RouteBase */] = PagerProps with reactDashNativeDashTabDashViewLib.Anon_Bottom[T]
   type TransitionConfigurator = js.Function2[
     /* currentTransitionProps */ TransitionProps, 

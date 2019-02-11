@@ -4,6 +4,7 @@
 // Definitions by: Kalle Ott <https://github.com/kaoDev>
 //                 Kyle Roach <https://github.com/iRoachie>
 //                 Tim Wang <https://github.com/timwangdev>
+//                 Gerardo Pacheco <https://github.com/geriux>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

@@ -20,16 +20,8 @@ package object expressDashWinstonMod {
   ]
   type ErrorLoggerOptions = ErrorLoggerOptionsWithTransports | ErrorLoggerOptionsWithWinstonInstance
   type LoggerOptions = LoggerOptionsWithTransports | LoggerOptionsWithWinstonInstance
-  type RequestFilter = js.Function2[
-    /* req */ expressLib.expressMod.eNs.Request, 
-    /* propName */ java.lang.String, 
-    scala.Boolean
-  ]
-  type ResponseFilter = js.Function2[
-    /* res */ expressLib.expressMod.eNs.Response, 
-    /* propName */ java.lang.String, 
-    scala.Boolean
-  ]
+  type RequestFilter = js.Function2[/* req */ FilterRequest, /* propName */ java.lang.String, js.Any]
+  type ResponseFilter = js.Function2[/* res */ FilterResponse, /* propName */ java.lang.String, js.Any]
   type RouteFilter = js.Function2[
     /* req */ expressLib.expressMod.eNs.Request, 
     /* res */ expressLib.expressMod.eNs.Response, 

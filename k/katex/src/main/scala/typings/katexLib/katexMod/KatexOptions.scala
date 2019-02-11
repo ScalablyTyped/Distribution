@@ -8,28 +8,28 @@ import scala.scalajs.js.annotation._
 trait KatexOptions extends js.Object {
   /**
     * Allowed protocols in `\href`
-    * 
+    *
     * Use `_relative` to allow relative urls
-    * 
+    *
     * Use `*` to allow all protocols
     */
   var allowedProtocols: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * If `true`, `\color` will work like LaTeX's `\textcolor`
     * and takes 2 arguments
-    * 
+    *
     * If `false`, `\color` will work like LaTeX's `\color`
     * and takes 1 argument
-    * 
+    *
     * In both cases, `\textcolor` works as in LaTeX
-    * 
+    *
     * @default false
     */
   var colorIsTextColor: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * If `true`, math will be rendered in display mode 
+    * If `true`, math will be rendered in display mode
     * (math in display style and center math on page)
-    * 
+    *
     * If `false`, math will be rendered in inline mode
     * @default false
     */
@@ -40,43 +40,43 @@ trait KatexOptions extends js.Object {
   var errorColor: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A collection of custom macros.
-    * 
+    *
     * See `src/macros.js` for its usage
     */
   var macros: js.UndefOr[js.Any] = js.undefined
   /**
     * Limit the number of macro expansions to specified number
-    * 
+    *
     * If set to `Infinity`, marco expander will try to fully expand
     * as in LaTex
-    * 
+    *
     * @default 1000
     */
   var maxExpand: js.UndefOr[scala.Double] = js.undefined
   /**
     * All user-specified sizes will be caped to `maxSize` ems
-    * 
+    *
     * If set to Infinity, users can make elements and space
     * arbitrarily large
-    * 
+    *
     * @default Infinity
     */
   var maxSize: js.UndefOr[scala.Double] = js.undefined
   /**
     * If `false` or `"ignore"`, allow features that make
     * writing in LaTex convenient but not supported by LaTex
-    * 
+    *
     * If `true` or `"error"`, throw an error for such transgressions
-    * 
+    *
     * If `"warn"`, warn about behavior via `console.warn`
-    * 
+    *
     * @default "warn"
     */
   var strict: js.UndefOr[scala.Boolean | java.lang.String | js.Function] = js.undefined
   /**
-    * If `true`, KaTeX will throw a `ParseError` when 
+    * If `true`, KaTeX will throw a `ParseError` when
     * it encounters an unsupported command or invalid LaTex
-    * 
+    *
     * If `false`, KaTeX will render unsupported commands as
     * text, and render invalid LaTeX as its source code with
     * hover text giving the error, in color given by errorColor

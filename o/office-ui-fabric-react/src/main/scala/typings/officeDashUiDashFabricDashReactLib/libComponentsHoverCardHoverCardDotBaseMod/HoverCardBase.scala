@@ -13,6 +13,13 @@ class HoverCardBase protected ()
       IHoverCardState
     ] {
   def this(props: officeDashUiDashFabricDashReactLib.libComponentsHoverCardHoverCardDotTypesMod.IHoverCardProps) = this()
+  /**
+    * Hide HoverCard
+    * How we dismiss the card depends on where the callback is coming from.
+    * This is provided by the `isNativeEvent` argument.
+    *  true: Event is coming from event listeners set up in componentDidMount.
+    *  false: Event is coming from the `onLeave` prop from the HoverCard component.
+    */
   var _cardDismiss: js.Any = js.native
   var _cardOpen: js.Any = js.native
   var _classNames: js.Any = js.native

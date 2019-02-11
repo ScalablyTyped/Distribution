@@ -34,19 +34,16 @@ object policiesNs extends js.Object {
   @js.native
   object loadBalancingNs extends js.Object {
     @js.native
-    trait DCAwareRoundRobinPolicy extends LoadBalancingPolicy {
+    class DCAwareRoundRobinPolicy () extends LoadBalancingPolicy {
+      def this(localDc: java.lang.String) = this()
+      var localDc: java.lang.String = js.native
       var localHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host] = js.native
-      var remoteHostsArray: js.Array[cassandraDashDriverLib.cassandraDashDriverMod.Host] = js.native
     }
     
     @js.native
-    trait DCAwareRoundRobinPolicyStatic
-      extends org.scalablytyped.runtime.Instantiable0[DCAwareRoundRobinPolicy]
-         with org.scalablytyped.runtime.Instantiable1[/* localDc */ java.lang.String, DCAwareRoundRobinPolicy]
-    
-    @js.native
-    trait LoadBalancingPolicy extends js.Object {
+    class LoadBalancingPolicy () extends js.Object {
       def getDistance(host: cassandraDashDriverLib.cassandraDashDriverMod.Host): cassandraDashDriverLib.cassandraDashDriverMod.typesNs.distance = js.native
+      def getOptions(): stdLib.Map[java.lang.String, _] = js.native
       def init(
         client: cassandraDashDriverLib.cassandraDashDriverMod.Client,
         hosts: cassandraDashDriverLib.cassandraDashDriverMod.HostMap,
@@ -65,28 +62,18 @@ object policiesNs extends js.Object {
     }
     
     @js.native
-    trait RoundRobinPolicyStatic
-      extends org.scalablytyped.runtime.Instantiable0[RoundRobinPolicy]
+    class RoundRobinPolicy () extends LoadBalancingPolicy
     
     @js.native
-    trait TokenAwarePolicyStatic
-      extends org.scalablytyped.runtime.Instantiable1[/* childPolicy */ LoadBalancingPolicy, TokenAwarePolicy]
+    class TokenAwarePolicy protected () extends LoadBalancingPolicy {
+      def this(childPolicy: LoadBalancingPolicy) = this()
+    }
     
     @js.native
-    trait WhiteListPolicyStatic
-      extends org.scalablytyped.runtime.Instantiable2[
-              /* childPolicy */ LoadBalancingPolicy, 
-              /* whiteList */ js.Array[java.lang.String], 
-              WhiteListPolicy
-            ]
+    class WhiteListPolicy protected () extends LoadBalancingPolicy {
+      def this(childPolicy: LoadBalancingPolicy, whiteList: js.Array[java.lang.String]) = this()
+    }
     
-    var DCAwareRoundRobinPolicy: DCAwareRoundRobinPolicyStatic = js.native
-    var RoundRobinPolicy: RoundRobinPolicyStatic = js.native
-    var TokenAwarePolicy: TokenAwarePolicyStatic = js.native
-    var WhiteListPolicy: WhiteListPolicyStatic = js.native
-    type RoundRobinPolicy = LoadBalancingPolicy
-    type TokenAwarePolicy = LoadBalancingPolicy
-    type WhiteListPolicy = LoadBalancingPolicy
   }
   
   @JSName("reconnection")

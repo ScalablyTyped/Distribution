@@ -10,6 +10,6 @@ import scala.scalajs.js.annotation._
 object bufferMod extends js.Object {
   val Buffer: nodeLib.Anon_Alloc = js.native
   val INSPECT_MAX_BYTES: scala.Double = js.native
-  val SlowBuffer: nodeLib.Anon_Array = js.native
+  val SlowBuffer: nodeLib.Anon_Size = js.native
 }
 

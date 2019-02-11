@@ -12,6 +12,10 @@ trait Log extends js.Object {
   @JSName("$schema")
   var $schema: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Key/value pairs that provide additional information about the log file.
+    */
+  var properties: js.UndefOr[PropertyBag] = js.undefined
+  /**
     * The set of runs contained in this log file.
     */
   var runs: js.Array[Run]

@@ -169,6 +169,9 @@ object grommetLibStrings {
   sealed trait end extends js.Object
   
   @js.native
+  sealed trait evenly extends js.Object
+  
+  @js.native
   sealed trait fadeIn extends js.Object
   
   @js.native
@@ -254,6 +257,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait off extends js.Object
+  
+  @js.native
+  sealed trait onSelect extends js.Object
   
   @js.native
   sealed trait outset extends js.Object
@@ -481,6 +487,8 @@ object grommetLibStrings {
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   @scala.inline
+  def evenly: evenly = "evenly".asInstanceOf[evenly]
+  @scala.inline
   def fadeIn: fadeIn = "fadeIn".asInstanceOf[fadeIn]
   @scala.inline
   def fadeOut: fadeOut = "fadeOut".asInstanceOf[fadeOut]
@@ -538,6 +546,8 @@ object grommetLibStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def off: off = "off".asInstanceOf[off]
+  @scala.inline
+  def onSelect: onSelect = "onSelect".asInstanceOf[onSelect]
   @scala.inline
   def outset: outset = "outset".asInstanceOf[outset]
   @scala.inline

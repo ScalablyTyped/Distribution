@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Tool extends js.Object {
   /**
+    * The binary version of the tool's primary executable file expressed as four non-negative integers separated
+    * by a period (for operating systems that express file versions in this way).
+    */
+  var dottedQuadFileVersion: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * The absolute URI from which the tool can be downloaded.
     */
   var downloadUri: js.UndefOr[java.lang.String] = js.undefined
-  /**
-    * The binary version of the tool's primary executable file (for operating systems such as Windows that provide
-    * that information).
-    */
-  var fileVersion: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The name of the tool along with its version and any other useful identifying information, such as its locale.
     */

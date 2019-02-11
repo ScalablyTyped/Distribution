@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-highlight-words"
-version := "0.12-dt-20181002Z-8cd09d"
+version := "0.16-dt-20190129Z-db44d1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -16,5 +16,9 @@ trait PublishDiagnosticsParams extends js.Object {
     * The URI for which diagnostic information is reported.
     */
   var uri: java.lang.String
+  /**
+    * Optional the version number of the document the diagnostics are published for.
+    */
+  var version: js.UndefOr[scala.Double] = js.undefined
 }
 

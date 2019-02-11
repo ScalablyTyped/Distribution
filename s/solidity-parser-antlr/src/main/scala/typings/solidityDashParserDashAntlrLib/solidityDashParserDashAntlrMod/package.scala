@@ -64,7 +64,6 @@ package object solidityDashParserDashAntlrMod {
   type ReturnParameters = BaseASTNode
   type ReturnStatement = BaseASTNode
   type SimpleStatement = BaseASTNode
-  type SourceUnit = BaseASTNode
   type StateMutability = BaseASTNode
   type Statement = BaseASTNode
   type StorageLocation = BaseASTNode

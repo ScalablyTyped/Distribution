@@ -6,7 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait IWorkingCopy extends js.Object {
+  var changed: scala.Boolean
   var id: java.lang.String
+  var isCollaboration: scala.Boolean
   /**
     * OpenIDs of all users that are granted access.
     */

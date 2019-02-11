@@ -9,7 +9,7 @@ trait HighlighterProps extends js.Object {
   /** The class name to be applied to an active match. Use along with activeIndex */
   var activeClassName: js.UndefOr[java.lang.String] = js.undefined
   /** Specify the match index that should be actively highlighted. Use along with activeClassName */
-  var activeIndex: js.UndefOr[java.lang.String] = js.undefined
+  var activeIndex: js.UndefOr[scala.Double] = js.undefined
   /** The inline style to be applied to an active match. Use along with activeIndex */
   var activeStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   /** Escape characters in searchWords which are meaningful in regular expressions */
@@ -32,7 +32,7 @@ trait HighlighterProps extends js.Object {
     * Type of tag to wrap around highlighted matches; defaults to mark but can also be a React element
     * (class or functional)
     */
-  var highlightTag: js.UndefOr[java.lang.String] = js.undefined
+  var highlightTag: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
   /**
     * Process each search word and text to highlight before comparing (eg remove accents); signature
     * (text: string): string

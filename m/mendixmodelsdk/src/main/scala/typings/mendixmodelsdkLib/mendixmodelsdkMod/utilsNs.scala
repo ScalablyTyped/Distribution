@@ -17,8 +17,6 @@ object utilsNs extends js.Object {
   /**
     * Flattens an array of arrays of items of type `T`, returning a single array
     * that consists of the concatenation of the original arrays.
-    * This is especially useful for arrays of arrays of observables since the `lodash`
-    * doesn't handle these correctly.
     */
   def flatten[T](array: js.Array[js.Array[T]]): js.Array[T] = js.native
   def isBrowser(): scala.Boolean = js.native

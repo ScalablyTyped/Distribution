@@ -103,9 +103,6 @@ object mendixmodelsdkLibStrings {
   sealed trait attached extends js.Object
   
   @js.native
-  sealed trait avatarUrl extends js.Object
-  
-  @js.native
   sealed trait bidi extends js.Object
   
   @js.native
@@ -122,9 +119,6 @@ object mendixmodelsdkLibStrings {
   
   @js.native
   sealed trait deleted extends js.Object
-  
-  @js.native
-  sealed trait description extends js.Object
   
   @js.native
   sealed trait detached extends js.Object
@@ -151,19 +145,10 @@ object mendixmodelsdkLibStrings {
   sealed trait json extends js.Object
   
   @js.native
-  sealed trait longLived extends js.Object
-  
-  @js.native
-  sealed trait name extends js.Object
-  
-  @js.native
   sealed trait `new` extends js.Object
   
   @js.native
   sealed trait post extends js.Object
-  
-  @js.native
-  sealed trait projectId extends js.Object
   
   @js.native
   sealed trait provisioning extends js.Object
@@ -175,31 +160,19 @@ object mendixmodelsdkLibStrings {
   sealed trait resuming extends js.Object
   
   @js.native
-  sealed trait setAsDefault extends js.Object
-  
-  @js.native
   sealed trait started extends js.Object
   
   @js.native
   sealed trait success extends js.Object
   
   @js.native
-  sealed trait teamServerBaseBranch extends js.Object
-  
-  @js.native
-  sealed trait teamServerBaseRevision extends js.Object
-  
-  @js.native
-  sealed trait template extends js.Object
+  sealed trait switch extends js.Object
   
   @js.native
   sealed trait update extends js.Object
   
   @js.native
   sealed trait updating extends js.Object
-  
-  @js.native
-  sealed trait workingCopyId extends js.Object
   
   @js.native
   sealed trait zip extends js.Object
@@ -269,8 +242,6 @@ object mendixmodelsdkLibStrings {
   @scala.inline
   def attached: attached = "attached".asInstanceOf[attached]
   @scala.inline
-  def avatarUrl: avatarUrl = "avatarUrl".asInstanceOf[avatarUrl]
-  @scala.inline
   def bidi: bidi = "bidi".asInstanceOf[bidi]
   @scala.inline
   def commit: commit = "commit".asInstanceOf[commit]
@@ -282,8 +253,6 @@ object mendixmodelsdkLibStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
   @scala.inline
   def detached: detached = "detached".asInstanceOf[detached]
   @scala.inline
@@ -301,15 +270,9 @@ object mendixmodelsdkLibStrings {
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   @scala.inline
-  def longLived: longLived = "longLived".asInstanceOf[longLived]
-  @scala.inline
-  def name: name = "name".asInstanceOf[name]
-  @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
   @scala.inline
   def post: post = "post".asInstanceOf[post]
-  @scala.inline
-  def projectId: projectId = "projectId".asInstanceOf[projectId]
   @scala.inline
   def provisioning: provisioning = "provisioning".asInstanceOf[provisioning]
   @scala.inline
@@ -317,23 +280,15 @@ object mendixmodelsdkLibStrings {
   @scala.inline
   def resuming: resuming = "resuming".asInstanceOf[resuming]
   @scala.inline
-  def setAsDefault: setAsDefault = "setAsDefault".asInstanceOf[setAsDefault]
-  @scala.inline
   def started: started = "started".asInstanceOf[started]
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   @scala.inline
-  def teamServerBaseBranch: teamServerBaseBranch = "teamServerBaseBranch".asInstanceOf[teamServerBaseBranch]
-  @scala.inline
-  def teamServerBaseRevision: teamServerBaseRevision = "teamServerBaseRevision".asInstanceOf[teamServerBaseRevision]
-  @scala.inline
-  def template: template = "template".asInstanceOf[template]
+  def switch: switch = "switch".asInstanceOf[switch]
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   @scala.inline
   def updating: updating = "updating".asInstanceOf[updating]
-  @scala.inline
-  def workingCopyId: workingCopyId = "workingCopyId".asInstanceOf[workingCopyId]
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }
