@@ -33,7 +33,7 @@ trait ListenerState extends js.Object {
     */
   val protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
-    * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS`.
+    * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS` or `TLS`.
     */
   val sslPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }

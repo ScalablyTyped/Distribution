@@ -18,8 +18,17 @@ class GcmChannel protected ()
     */
   def this(name: java.lang.String, args: GcmChannelArgs) = this()
   def this(name: java.lang.String, args: GcmChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  /**
+    * Platform credential API key from Google.
+    */
   val apiKey: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * The application ID.
+    */
   val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Whether the channel is enabled or disabled. Defaults to `true`.
+    */
   val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
 }
 

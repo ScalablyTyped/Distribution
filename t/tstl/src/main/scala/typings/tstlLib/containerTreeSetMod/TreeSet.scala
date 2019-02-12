@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerITreeSetMod.ITreeSet because var conflicts: `data_`, iterator. Inlined value_comp */ @JSImport("tstl/container/TreeSet", "TreeSet")
+- tstlLib.baseContainerITreeSetMod.ITreeSet because var conflicts: `data_`, iterator. Inlined  */ @JSImport("tstl/container/TreeSet", "TreeSet")
 @js.native
 /**
   * Default Constructor.
@@ -72,11 +72,6 @@ class TreeSet[Key] ()
   def upper_bound(key: Key): tstlLib.containerTreeSetMod.TreeSetNs.Iterator[Key] = js.native
   /**
     * @inheritDoc
-    */
-  /**
-    * Get value comparison function.
-    *
-    * @return The value comparison function.
     */
   def value_comp(): js.Function2[/* x */ Key, /* y */ Key, scala.Boolean] = js.native
 }

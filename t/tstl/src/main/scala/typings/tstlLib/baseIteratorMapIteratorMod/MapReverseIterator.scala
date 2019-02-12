@@ -12,7 +12,8 @@ class MapReverseIterator[Key, T, Unique /* <: scala.Boolean */, Source /* <: tst
       tstlLib.utilityEntryMod.Entry[Key, T], 
       Source, 
       MapIterator[Key, T, Unique, Source], 
-      MapReverseIterator[Key, T, Unique, Source]
+      MapReverseIterator[Key, T, Unique, Source], 
+      tstlLib.utilityIPairMod.IPair[Key, T]
     ] {
   /**
     * Initializer Constructor.

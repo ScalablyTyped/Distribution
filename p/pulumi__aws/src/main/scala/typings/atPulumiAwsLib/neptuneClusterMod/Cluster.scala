@@ -40,7 +40,7 @@ class Cluster protected ()
     */
   val clusterIdentifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.
     */
   val clusterIdentifierPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**

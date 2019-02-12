@@ -7,6 +7,10 @@ import scala.scalajs.js.annotation._
 
 trait CarouselSlideRenderControlProps extends js.Object {
   /**
+    * When displaying more than one slide, sets which position to anchor the current slide to.
+    */
+  var cellAlign: CarouselCellAlignProp
+  /**
     * Space between slides, as an integer, but reflected as px
     */
   var cellSpacing: scala.Double

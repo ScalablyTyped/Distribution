@@ -6,12 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IContainer[T, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */]
-  extends tstlLib.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer[T, IteratorT, ReverseIteratorT]
+trait IContainer[T /* <: Elem */, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem]
+  extends tstlLib.baseDisposableIBidirectionalContainerMod.IBidirectionalContainer[
+      tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem], 
+      ReverseIteratorT
+    ]
      with stdLib.Iterable[T]
      with tstlLib.baseDisposableIPartialContainersMod._IEmpty
      with tstlLib.baseDisposableIPartialContainersMod._ISize
-     with tstlLib.baseDisposableIPartialContainersMod._IPush[T] {
+     with tstlLib.baseDisposableIPartialContainersMod._IPush[Elem] {
   /**
     * @inheritDoc
     */
@@ -23,7 +26,7 @@ trait IContainer[T, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseItera
     * @param first Input iteartor of the first position.
     * @param last Input iterator of the last position.
     */
-  def assign[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
+  def assign[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Elem, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
   /**
     * @inheritDoc
     */
@@ -43,13 +46,6 @@ trait IContainer[T, SourceT /* <: IContainer[T, SourceT, IteratorT, ReverseItera
     * @return Iterator following the *pos*, strained by the erasing.
     */
   def erase(pos: IteratorT): IteratorT = js.native
-  /**
-    * Insert a single element.
-    *
-    * @param pos Position to insert.
-    * @param val Value to insert.
-    */
-  def insert(pos: IteratorT, `val`: T): IteratorT = js.native
   /**
     * Swap elements.
     *

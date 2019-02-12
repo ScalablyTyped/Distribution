@@ -32,6 +32,8 @@ class Interface protected ()
   protected def this(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream, completer: Completer) = this()
   protected def this(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream, completer: AsyncCompleter, terminal: scala.Boolean) = this()
   protected def this(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream, completer: Completer, terminal: scala.Boolean) = this()
+  @JSName(org.scalablytyped.runtime.Symbol.asyncIterator)
+  var asyncIterator: js.Function0[nodeLib.AsyncIterableIterator[java.lang.String]] = js.native
   val terminal: scala.Boolean = js.native
   @JSName("addListener")
   def addListener_SIGCONT(event: nodeLib.nodeLibStrings.SIGCONT, listener: js.Function0[scala.Unit]): this.type = js.native

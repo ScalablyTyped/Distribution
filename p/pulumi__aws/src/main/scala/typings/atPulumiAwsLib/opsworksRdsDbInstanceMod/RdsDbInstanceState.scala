@@ -19,7 +19,7 @@ trait RdsDbInstanceState extends js.Object {
     */
   val rdsDbInstanceArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
-    * The stack to register a db inatance for. Changing this will force a new resource.
+    * The stack to register a db instance for. Changing this will force a new resource.
     */
   val stackId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
 }

@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ILinearContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */]
-  extends tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT]
+trait ILinearContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, T] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, T] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */]
+  extends tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, T]
      with tstlLib.baseDisposableIPartialContainersMod._IPushBack[T] {
   /**
     * Fill Assigner.
@@ -38,6 +38,14 @@ trait ILinearContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.ICont
     */
   def insert(pos: IteratorT, n: scala.Double, `val`: T): IteratorT = js.native
   /**
+    * Insert a single element.
+    *
+    * @param pos Position to insert.
+    * @param val Value to insert.
+    * @return An iterator to the newly inserted element.
+    */
+  def insert(pos: IteratorT, `val`: T): IteratorT = js.native
+  /**
     * Insert range elements.
     *
     * @param pos Position to insert.
@@ -45,7 +53,7 @@ trait ILinearContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.ICont
     * @param last Input iteartor of the last position.
     * @return An iterator to the first of the newly inserted elements.
     */
-  def insert[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](pos: IteratorT, first: InputIterator, last: InputIterator): IteratorT = js.native
+  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](pos: IteratorT, first: InputIterator, last: InputIterator): IteratorT = js.native
   /**
     * Erase the last element.
     */

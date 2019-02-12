@@ -33,8 +33,14 @@ trait Process extends EventEmitter {
   var send: js.UndefOr[
     js.Function2[/* message */ js.Any, /* sendHandle */ js.UndefOr[js.Any], scala.Unit]
   ] = js.native
+  /**
+    * Can also be a tty.WriteStream, not typed due to limitation.s
+    */
   var stderr: WriteStream = js.native
   var stdin: ReadStream = js.native
+  /**
+    * Can also be a tty.WriteStream, not typed due to limitation.s
+    */
   var stdout: WriteStream = js.native
   var title: java.lang.String = js.native
   var version: java.lang.String = js.native
@@ -267,6 +273,9 @@ trait Process extends EventEmitter {
   def setgroups(groups: js.Array[java.lang.String | scala.Double]): scala.Unit = js.native
   def setuid(id: java.lang.String): scala.Unit = js.native
   def setuid(id: scala.Double): scala.Unit = js.native
+  /**
+    * Can only be set if not in worker thread.
+    */
   def umask(): scala.Double = js.native
   def umask(mask: scala.Double): scala.Double = js.native
   def uptime(): scala.Double = js.native

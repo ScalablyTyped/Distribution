@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerITreeMapMod.ITreeMap because var conflicts: `data_`, iterator. Inlined value_comp */ @JSImport("tstl/container/TreeMap", "TreeMap")
+- tstlLib.baseContainerITreeMapMod.ITreeMap because var conflicts: `data_`, iterator. Inlined  */ @JSImport("tstl/container/TreeMap", "TreeMap")
 @js.native
 /**
   * Default Constructor.
@@ -84,11 +84,6 @@ class TreeMap[Key, T] ()
   def upper_bound(key: Key): tstlLib.containerTreeMapMod.TreeMapNs.Iterator[Key, T] = js.native
   /**
     * @inheritDoc
-    */
-  /**
-    * Get value comparison function.
-    *
-    * @return The value comparison function.
     */
   def value_comp(): js.Function2[
     /* x */ tstlLib.utilityIPairMod.IPair[Key, T], 

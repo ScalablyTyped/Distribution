@@ -95,7 +95,7 @@ class LaunchTemplate protected ()
     */
   val latestVersion: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
   /**
-    * A list of license specifications to associate with. See License Specifications below for more details.
+    * A list of license specifications to associate with. See License Specification below for more details.
     */
   val licenseSpecifications: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_LicenseConfigurationArn]]] = js.native
   /**
@@ -131,7 +131,7 @@ class LaunchTemplate protected ()
     */
   val securityGroupNames: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
-    * The tags to apply to the resources during launch. See Tags below for more details.
+    * The tags to apply to the resources during launch. See Tag Specifications below for more details.
     */
   val tagSpecifications: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_KeyResourceTypeTags]]] = js.native
   /**

@@ -24,6 +24,7 @@ trait GetBrokerResult extends js.Object {
   val publiclyAccessible: scala.Boolean
   val securityGroups: js.Array[java.lang.String]
   val subnetIds: js.Array[java.lang.String]
+  val tags: org.scalablytyped.runtime.StringDictionary[js.Any]
   val users: js.Array[atPulumiAwsLib.Anon_ConsoleAccessGroupsUsername]
 }
 

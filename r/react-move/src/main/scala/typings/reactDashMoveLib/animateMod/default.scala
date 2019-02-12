@@ -7,5 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("react-move/Animate", JSImport.Default)
 @js.native
-class default () extends Animate
+class default () extends IAnimate
 

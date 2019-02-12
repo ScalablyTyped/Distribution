@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/base/container/SetContainer", "SetContainer")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer because var conflicts: iterator. Inlined find, has, count, erase, erase, erase */ @JSImport("tstl/base/container/SetContainer", "SetContainer")
 @js.native
 /**
   * Default Constructor.
@@ -15,13 +16,13 @@ abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: Set
       Key, 
       Source, 
       tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source], 
-      tstlLib.baseIteratorSetIteratorMod.SetReverseIterator[Key, Unique, Source]
-    ]
-     with tstlLib.baseContainerUnderscoreIAssociativeContainerMod._IAssociativeContainer[Key, tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source]] {
+      tstlLib.baseIteratorSetIteratorMod.SetReverseIterator[Key, Unique, Source], 
+      Key
+    ] {
   /**
     * @hidden
     */
-  var `data_`: js.Any = js.native
+  var `data_`: tstlLib.baseContainerUnderscoreSetElementListMod._SetElementList[Key, Unique, Source] = js.native
   /**
     * @hidden
     */
@@ -59,41 +60,50 @@ abstract class SetContainer[Key, Unique /* <: scala.Boolean */, Source /* <: Set
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_range[U /* <: Key */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](begin: InputIterator, end: InputIterator): scala.Unit = js.native
+  /* protected */ def _Insert_by_range[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, InputIterator]] */](begin: InputIterator, end: InputIterator): scala.Unit = js.native
+  /**
+    * @inheritDoc
+    */
   /**
     * Count elements with a specified key.
     *
     * @param key Key to search for.
     * @return Number of elements with the specified key.
     */
-  /* CompleteClass */
-  override def count(key: Key): scala.Double = js.native
+  def count(key: Key): scala.Double = js.native
+  /**
+    * @inheritDoc
+    */
   /**
     * Erase elements with a specified key.
     *
     * @param key Key to search for.
     * @return Number of erased elements.
     */
-  /* CompleteClass */
-  override def erase(key: Key): scala.Double = js.native
+  def erase(key: Key): scala.Double = js.native
+  /**
+    * @inheritDoc
+    */
   /**
     * Get iterator to element.
     *
     * @param key Key to search for.
     * @return An iterator to the element, if the specified key is found, otherwise `this.end()`.
     */
-  /* CompleteClass */
-  override def find(key: Key): tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source] = js.native
+  def find(key: Key): tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source] = js.native
+  /**
+    * @inheritDoc
+    */
   /**
     * Test whether a key exists.
     *
     * @param key Key to search for.
     * @return Whether the specified key exists.
     */
-  /* CompleteClass */
-  override def has(key: Key): scala.Boolean = js.native
+  def has(key: Key): scala.Boolean = js.native
+  def insert(hint: tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source], key: Key): tstlLib.baseIteratorSetIteratorMod.SetIterator[Key, Unique, Source] = js.native
   def insert(key: Key): tstlLib.baseContainerSetContainerMod.SetContainerNs.InsertRet[Key, Unique, Source] = js.native
-  def insert[U /* <: Key */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
+  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[Key, InputIterator]] */](first: InputIterator, last: InputIterator): scala.Unit = js.native
   /**
     * @inheritDoc
     */

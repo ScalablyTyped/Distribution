@@ -19,15 +19,7 @@ trait Decipher
     input_encoding: HexBase64BinaryEncoding,
     output_encoding: Utf8AsciiBinaryEncoding
   ): java.lang.String = js.native
-  def update(data: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def update(data: nodeLib.Buffer, input_encoding: js.Any, output_encoding: Utf8AsciiBinaryEncoding): java.lang.String = js.native
-  def update(data: nodeLib.NodeJSNs.TypedArray): nodeLib.Buffer = js.native
-  def update(
-    data: nodeLib.NodeJSNs.TypedArray,
-    input_encoding: js.Any,
-    output_encoding: Utf8AsciiBinaryEncoding
-  ): java.lang.String = js.native
-  def update(data: stdLib.DataView): nodeLib.Buffer = js.native
-  def update(data: stdLib.DataView, input_encoding: js.Any, output_encoding: Utf8AsciiBinaryEncoding): java.lang.String = js.native
+  def update(data: Binary): nodeLib.Buffer = js.native
+  def update(data: Binary, input_encoding: js.Any, output_encoding: Utf8AsciiBinaryEncoding): java.lang.String = js.native
 }
 

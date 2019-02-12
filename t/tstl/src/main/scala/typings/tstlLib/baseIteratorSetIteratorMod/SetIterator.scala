@@ -8,7 +8,13 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/iterator/SetIterator", "SetIterator")
 @js.native
 class SetIterator[Key, Unique /* <: scala.Boolean */, Source /* <: tstlLib.baseContainerSetContainerMod.SetContainer[Key, Unique, Source] */] protected ()
-  extends tstlLib.baseIteratorListIteratorMod.ListIterator[Key, Source, SetIterator[Key, Unique, Source], SetReverseIterator[Key, Unique, Source]] {
+  extends tstlLib.baseIteratorListIteratorMod.ListIterator[
+      Key, 
+      Source, 
+      SetIterator[Key, Unique, Source], 
+      SetReverseIterator[Key, Unique, Source], 
+      Key
+    ] {
   /**
     * @hidden
     */

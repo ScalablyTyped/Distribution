@@ -6,6 +6,10 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SocketOptions extends js.Object {
+  /**
+    * @default false
+    */
+  var ipv6Only: js.UndefOr[scala.Boolean] = js.undefined
   var lookup: js.UndefOr[
     js.Function3[
       /* hostname */ java.lang.String, 

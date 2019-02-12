@@ -15,7 +15,7 @@ object ListNs extends js.Object {
     */
   @js.native
   class Iterator[T] protected ()
-    extends tstlLib.baseIteratorListIteratorMod.ListIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T]] {
+    extends tstlLib.baseIteratorListIteratorMod.ListIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T], T] {
     /**
       * @hidden
       */
@@ -33,7 +33,7 @@ object ListNs extends js.Object {
     */
   @js.native
   class ReverseIterator[T] protected ()
-    extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T]] {
+    extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, tstlLib.containerListMod.List[T], Iterator[T], ReverseIterator[T], T] {
     def this(base: Iterator[T]) = this()
   }
   

@@ -5,8 +5,14 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait IBidirectionalContainer[T, IteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReversableIterator[T, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReverseIterator[T, IteratorT, ReverseIteratorT] */]
-  extends tstlLib.baseDisposableIForwardContainerMod.IForwardContainer[T, IteratorT] {
+trait IBidirectionalContainer[IteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReversableIterator[
+tstlLib.functionalIPointerMod.IPointerNs.ValueType[IteratorT], 
+IteratorT, 
+ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.iteratorIReverseIteratorMod.IReverseIterator[
+tstlLib.functionalIPointerMod.IPointerNs.ValueType[IteratorT], 
+IteratorT, 
+ReverseIteratorT] */]
+  extends tstlLib.baseDisposableIForwardContainerMod.IForwardContainer[IteratorT] {
   /**
     * Reverse iterator to the first element in reverse.
     *

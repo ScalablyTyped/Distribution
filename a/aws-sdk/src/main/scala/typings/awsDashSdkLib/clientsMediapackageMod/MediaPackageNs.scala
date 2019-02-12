@@ -198,6 +198,10 @@ object MediaPackageNs extends js.Object {
   trait DashPackage extends js.Object {
     var Encryption: js.UndefOr[DashEncryption] = js.undefined
     /**
+      * Determines the position of some tags in the Media Presentation Description (MPD).  When set to FULL, elements like SegmentTemplate and ContentProtection are included in each Representation.  When set to COMPACT, duplicate elements are combined and presented at the AdaptationSet level.
+      */
+    var ManifestLayout: js.UndefOr[ManifestLayout] = js.undefined
+    /**
       * Time window (in seconds) contained in each manifest.
       */
     var ManifestWindowSeconds: js.UndefOr[__integer] = js.undefined
@@ -225,6 +229,10 @@ object MediaPackageNs extends js.Object {
     rounded to the nearest multiple of the source segment duration.
       */
     var SegmentDurationSeconds: js.UndefOr[__integer] = js.undefined
+    /**
+      * Determines the type of SegmentTimeline included in the Media Presentation Description (MPD).  When set to NUMBER_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Number$ media URLs.  When set to TIME_WITH_TIMELINE, a full timeline is presented in each SegmentTemplate, with $Time$ media URLs.
+      */
+    var SegmentTemplateFormat: js.UndefOr[SegmentTemplateFormat] = js.undefined
     var StreamSelection: js.UndefOr[StreamSelection] = js.undefined
     /**
       * Duration (in seconds) to delay live content before presentation.
@@ -1110,9 +1118,11 @@ object MediaPackageNs extends js.Object {
   type AdMarkers = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.SCTE35_ENHANCED | awsDashSdkLib.awsDashSdkLibStrings.PASSTHROUGH | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type EncryptionMethod = awsDashSdkLib.awsDashSdkLibStrings.AES_128 | awsDashSdkLib.awsDashSdkLibStrings.SAMPLE_AES | java.lang.String
+  type ManifestLayout = awsDashSdkLib.awsDashSdkLibStrings.FULL | awsDashSdkLib.awsDashSdkLibStrings.COMPACT | java.lang.String
   type MaxResults = scala.Double
   type PlaylistType = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.EVENT | awsDashSdkLib.awsDashSdkLibStrings.VOD | java.lang.String
   type Profile = awsDashSdkLib.awsDashSdkLibStrings.NONE | awsDashSdkLib.awsDashSdkLibStrings.HBBTV_1_5 | java.lang.String
+  type SegmentTemplateFormat = awsDashSdkLib.awsDashSdkLibStrings.NUMBER_WITH_TIMELINE | awsDashSdkLib.awsDashSdkLibStrings.TIME_WITH_TIMELINE | java.lang.String
   type StreamOrder = awsDashSdkLib.awsDashSdkLibStrings.ORIGINAL | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_BITRATE_ASCENDING | awsDashSdkLib.awsDashSdkLibStrings.VIDEO_BITRATE_DESCENDING | java.lang.String
   type __PeriodTriggersElement = awsDashSdkLib.awsDashSdkLibStrings.ADS | java.lang.String
   type __boolean = scala.Boolean

@@ -143,7 +143,7 @@ trait InstanceState extends js.Object {
   val identifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique
-    * identifier beginning with the specified prefix. Conflicts with `identifer`.
+    * identifier beginning with the specified prefix. Conflicts with `identifier`.
     */
   val identifierPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**

@@ -7,8 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/iterator/InsertIterator", "InsertIterator")
 @js.native
-class InsertIterator[T, Container /* <: tstlLib.baseDisposableIPartialContainersMod._IInsert[T, Iterator] */, Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator] */] protected ()
-  extends tstlLib.baseIteratorUnderscoreInsertIteratorMod._InsertIterator[T, InsertIterator[T, Container, Iterator]] {
+class InsertIterator[Container /* <: tstlLib.baseDisposableIPartialContainersMod._IInsert[Iterator] */, Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator] */] protected ()
+  extends tstlLib.baseIteratorUnderscoreInsertIteratorMod._InsertIterator[
+      tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], 
+      InsertIterator[Container, Iterator]
+    ] {
   /**
     * Initializer Constructor.
     *

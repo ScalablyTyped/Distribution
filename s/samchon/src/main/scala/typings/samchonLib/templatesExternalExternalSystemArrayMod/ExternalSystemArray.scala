@@ -22,8 +22,15 @@ abstract class ExternalSystemArray[System /* <: samchonLib.templatesExternalExte
     *
     * @return Iterator to the first element.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
-  override def begin(): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]] = js.native
+  override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[
+    System, 
+    tstlLib.containerDequeMod.Deque[System], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    System
+  ] = js.native
   /**
     * Test whether container is empty.
     */
@@ -35,8 +42,15 @@ abstract class ExternalSystemArray[System /* <: samchonLib.templatesExternalExte
     *
     * @return Iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
-  override def end(): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]] = js.native
+  override def end(): tstlLib.baseIteratorIteratorMod.Iterator[
+    System, 
+    tstlLib.containerDequeMod.Deque[System], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[System, tstlLib.containerDequeMod.Deque[System]], 
+    System
+  ] = js.native
   /**
     * Get a role.
     *

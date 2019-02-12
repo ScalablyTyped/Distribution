@@ -742,7 +742,6 @@ object ^ extends js.Object {
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: java.lang.String): scala.Double = js.native
   def openSync(path: nodeLib.fsMod.PathLike, flags: scala.Double, mode: scala.Double): scala.Double = js.native
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](fd: scala.Double, buffer: TBuffer, offset: scala.Double, length: scala.Double): scala.Unit = js.native
   /**
     * Asynchronously reads data from the file referenced by the supplied file descriptor.
     * @param fd A file descriptor.
@@ -751,13 +750,6 @@ object ^ extends js.Object {
     * @param length The number of bytes to read.
     * @param position The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.
     */
-  def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
-    fd: scala.Double,
-    buffer: TBuffer,
-    offset: scala.Double,
-    length: scala.Double,
-    position: scala.Double
-  ): scala.Unit = js.native
   def read[TBuffer /* <: nodeLib.fsMod.BinaryData */](
     fd: scala.Double,
     buffer: TBuffer,

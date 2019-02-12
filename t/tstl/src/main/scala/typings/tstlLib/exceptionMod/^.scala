@@ -26,7 +26,7 @@ object ^ extends js.Object {
     tstlLib.exceptionSystemErrorMod.SystemError
   ] = js.native
   var underflow_error: org.scalablytyped.runtime.Instantiable1[/* message */ java.lang.String, tstlLib.exceptionRuntimeErrorMod.UnderflowError] = js.native
-  def get_terminate(): js.Function0[scala.Unit] = js.native
+  def get_terminate(): js.UndefOr[js.Function0[scala.Unit]] = js.native
   def set_terminate(func: js.Function0[scala.Unit]): scala.Unit = js.native
   def terminate(): scala.Unit = js.native
 }

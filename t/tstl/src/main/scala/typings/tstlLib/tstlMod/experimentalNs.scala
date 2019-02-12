@@ -67,17 +67,42 @@ object experimentalNs extends js.Object {
     /* size */ scala.Double, 
     tstlLib.experimentalThreadTimedSemaphoreMod.TimedSemaphore
   ] = js.native
-  def erase[T, Container /* <: stdLib.Pick[
-    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[T, Container], 
+  def erase[Container /* <: stdLib.Pick[
+    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[
+      tstlLib.baseDisposableIListAlgorithmMod.underscoreIListAlgorithmNs.ValueType[Container], 
+      Container
+    ], 
     tstlLib.tstlLibStrings.remove_if
-  ] */](contaier: Container, `val`: T): scala.Unit = js.native
+  ] */](
+    contaier: Container,
+    `val`: tstlLib.baseDisposableIListAlgorithmMod.underscoreIListAlgorithmNs.ValueType[Container]
+  ): scala.Unit = js.native
   @JSName("erase")
-  def erase_TContainerIContainerIteratorReadonly[T, Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[T, Iterator] */, Iterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator]] */](container: Container, `val`: T): scala.Unit = js.native
-  def erase_if[T, Container /* <: stdLib.Pick[
-    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[T, Container], 
+  def erase_ContainerIContainerIteratorReadonly[Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
+    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]
+  ] */](container: Container, `val`: tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator]): scala.Unit = js.native
+  def erase_if[Container /* <: stdLib.Pick[
+    tstlLib.baseDisposableIListAlgorithmMod._IListAlgorithm[
+      tstlLib.baseDisposableIListAlgorithmMod.underscoreIListAlgorithmNs.ValueType[Container], 
+      Container
+    ], 
     tstlLib.tstlLibStrings.remove_if
-  ] */](contaier: Container, predicator: js.Function1[/* val */ T, scala.Boolean]): scala.Unit = js.native
+  ] */](
+    contaier: Container,
+    predicator: js.Function1[
+      /* val */ tstlLib.baseDisposableIListAlgorithmMod.underscoreIListAlgorithmNs.ValueType[Container], 
+      scala.Boolean
+    ]
+  ): scala.Unit = js.native
   @JSName("erase_if")
-  def erase_if_TContainerIContainerIteratorReadonly[T, Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[T, Iterator] */, Iterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator]] */](container: Container, predicator: js.Function1[/* val */ T, scala.Boolean]): scala.Unit = js.native
+  def erase_if_ContainerIContainerIteratorReadonly[Container /* <: tstlLib.experimentalAlgorithmMod.IContainer[Iterator] */, Iterator /* <: stdLib.Readonly[
+    tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]
+  ] */](
+    container: Container,
+    predicator: js.Function1[
+      /* val */ tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], 
+      scala.Boolean
+    ]
+  ): scala.Unit = js.native
 }
 

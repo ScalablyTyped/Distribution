@@ -84,6 +84,12 @@ trait BrokerState extends js.Object {
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: js.UndefOr[
+    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.undefined
+  /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
   val users: js.UndefOr[

@@ -78,7 +78,7 @@ trait GroupState extends js.Object {
     atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.ec2LaunchConfigurationMod.LaunchConfiguration]
   ] = js.undefined
   /**
-    * Nested argument with Launch template specification to use to launch instances. Defined below.
+    * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
     */
   val launchTemplate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IdName]] = js.undefined
   /**

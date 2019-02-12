@@ -45,23 +45,24 @@ abstract class User protected ()
     *
     * @return Iterator to the first element.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def begin(): tstlLib.baseIteratorMapIteratorMod.MapIterator[
-    scala.Double, 
-    samchonLib.templatesServiceClientMod.Client, 
-    tstlLib.tstlLibNumbers.`true`, 
-    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+  override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[
+    tstlLib.utilityEntryMod.Entry[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.baseIteratorMapIteratorMod.MapIterator[
+      scala.Double, 
+      samchonLib.templatesServiceClientMod.Client, 
+      tstlLib.tstlLibNumbers.`true`, 
+      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+    ], 
+    tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
+      scala.Double, 
+      samchonLib.templatesServiceClientMod.Client, 
+      tstlLib.tstlLibNumbers.`true`, 
+      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+    ], 
+    tstlLib.utilityIPairMod.IPair[scala.Double, samchonLib.templatesServiceClientMod.Client]
   ] = js.native
-  /**
-    * Count elements with a specified key.
-    *
-    * @param key Key to search for.
-    * @return Number of elements with the specified key.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def count(key: scala.Double): scala.Double = js.native
   /**
     * Factory method creating a {@link Client} object.
     *
@@ -108,36 +109,23 @@ abstract class User protected ()
     *
     * @return Iterator to the end.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def end(): tstlLib.baseIteratorMapIteratorMod.MapIterator[
-    scala.Double, 
-    samchonLib.templatesServiceClientMod.Client, 
-    tstlLib.tstlLibNumbers.`true`, 
-    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
-  ] = js.native
-  /**
-    * Erase elements with a specified key.
-    *
-    * @param key Key to search for.
-    * @return Number of erased elements.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def erase(key: scala.Double): scala.Double = js.native
-  /**
-    * Get iterator to element.
-    *
-    * @param key Key to search for.
-    * @return An iterator to the element, if the specified key is found, otherwise `this.end()`.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def find(key: scala.Double): tstlLib.baseIteratorMapIteratorMod.MapIterator[
-    scala.Double, 
-    samchonLib.templatesServiceClientMod.Client, 
-    tstlLib.tstlLibNumbers.`true`, 
-    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+  override def end(): tstlLib.baseIteratorIteratorMod.Iterator[
+    tstlLib.utilityEntryMod.Entry[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client], 
+    tstlLib.baseIteratorMapIteratorMod.MapIterator[
+      scala.Double, 
+      samchonLib.templatesServiceClientMod.Client, 
+      tstlLib.tstlLibNumbers.`true`, 
+      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+    ], 
+    tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
+      scala.Double, 
+      samchonLib.templatesServiceClientMod.Client, 
+      tstlLib.tstlLibNumbers.`true`, 
+      tstlLib.containerHashMapMod.HashMap[scala.Double, samchonLib.templatesServiceClientMod.Client]
+    ], 
+    tstlLib.utilityIPairMod.IPair[scala.Double, samchonLib.templatesServiceClientMod.Client]
   ] = js.native
   /**
     * Get account id.
@@ -158,15 +146,6 @@ abstract class User protected ()
     */
   def getServer(): samchonLib.templatesServiceServerMod.Server = js.native
   /**
-    * Test whether a key exists.
-    *
-    * @param key Key to search for.
-    * @return Whether the specified key exists.
-    */
-  /* CompleteClass */
-  /* InferMemberOverrides */
-  override def has(key: scala.Double): scala.Boolean = js.native
-  /**
     * Log-out.
     *
     * This {@link logout logout()} method configures {@link getAccountID account id} to empty string and
@@ -185,12 +164,13 @@ abstract class User protected ()
     */
   /* CompleteClass */
   /* InferMemberOverrides */
-  override def push(items: (tstlLib.utilityEntryMod.Entry[scala.Double, samchonLib.templatesServiceClientMod.Client])*): scala.Double = js.native
+  override def push(items: (tstlLib.utilityIPairMod.IPair[scala.Double, samchonLib.templatesServiceClientMod.Client])*): scala.Double = js.native
   /**
     * Reverse iterator to the first element in reverse.
     *
     * @return Reverse iterator to the first.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rbegin(): tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
     scala.Double, 
@@ -203,6 +183,7 @@ abstract class User protected ()
     *
     * @return Reverse iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rend(): tstlLib.baseIteratorMapIteratorMod.MapReverseIterator[
     scala.Double, 

@@ -18,11 +18,29 @@ class EmailChannel protected ()
     */
   def this(name: java.lang.String, args: EmailChannelArgs) = this()
   def this(name: java.lang.String, args: EmailChannelArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  /**
+    * The application ID.
+    */
   val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Whether the channel is enabled or disabled. Defaults to `true`.
+    */
   val enabled: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
+  /**
+    * The email address used to send emails from.
+    */
   val fromAddress: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * The ARN of an identity verified with SES.
+    */
   val identity: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * Messages per second that can be sent.
+    */
   val messagesPerSecond: atPulumiPulumiLib.atPulumiPulumiMod.Output[scala.Double] = js.native
+  /**
+    * The ARN of an IAM Role used to submit events to Mobile Analytics' event ingestion service.
+    */
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 

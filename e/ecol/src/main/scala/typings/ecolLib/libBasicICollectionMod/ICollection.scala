@@ -6,17 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait ICollection[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT] */]
-  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT]
+trait ICollection[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */]
+  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T]
      with ecolLib.libBasicIEventDispatcherMod.IEventDispatcher[T, SourceT, IteratorT, ReverseT] {
   /**
     * Iterator to the first element.
     *
     * @return Iterator to the first element.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def begin(): IteratorT = js.native
+  override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
   /**
     * Test whether container is empty.
     */
@@ -28,16 +27,14 @@ trait ICollection[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T
     *
     * @return Iterator to the end.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def end(): IteratorT = js.native
+  override def end(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
   /**
     * Insert items at the end.
     *
     * @param items Items to insert.
     * @return Number of elements in the container after insertion.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def push(items: T*): scala.Double = js.native
   /**
@@ -45,6 +42,7 @@ trait ICollection[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T
     *
     * @return Reverse iterator to the first.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rbegin(): ReverseT = js.native
   def refresh(): scala.Unit = js.native
@@ -55,12 +53,12 @@ trait ICollection[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T
     *
     * @return Reverse iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rend(): ReverseT = js.native
   /**
     * Number of elements in the container.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def size(): scala.Double = js.native
 }

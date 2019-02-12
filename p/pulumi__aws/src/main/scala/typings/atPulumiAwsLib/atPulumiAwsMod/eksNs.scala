@@ -27,6 +27,11 @@ object eksNs extends js.Object {
     args: atPulumiAwsLib.eksGetClusterMod.GetClusterArgs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[atPulumiAwsLib.eksGetClusterMod.GetClusterResult] = js.native
+  def getClusterAuth(args: atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthArgs): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] = js.native
+  def getClusterAuth(
+    args: atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.eksGetClusterAuthMod.GetClusterAuthResult] = js.native
   /* static members */
   @js.native
   object Cluster extends js.Object {

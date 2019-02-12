@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait WorkerOptions extends js.Object {
   var eval: js.UndefOr[scala.Boolean] = js.undefined
+  var execArgv: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var stderr: js.UndefOr[scala.Boolean] = js.undefined
   var stdin: js.UndefOr[scala.Boolean] = js.undefined
   var stdout: js.UndefOr[scala.Boolean] = js.undefined

@@ -30,5 +30,6 @@ trait ConnectionOptions extends SecureContextOptions {
   var session: js.UndefOr[nodeLib.Buffer] = js.undefined
    // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
   var socket: js.UndefOr[nodeLib.netMod.Socket] = js.undefined
+  var timeout: js.UndefOr[scala.Double] = js.undefined
 }
 

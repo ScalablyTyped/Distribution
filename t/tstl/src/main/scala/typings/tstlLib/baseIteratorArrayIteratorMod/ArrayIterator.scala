@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ArrayIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source] */] protected ()
   extends tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator[T, ArrayIterator[T, Source]]
-     with tstlLib.baseIteratorIteratorMod.Iterator[T, Source, ArrayIterator[T, Source], ArrayReverseIterator[T, Source]] {
+     with tstlLib.baseIteratorIteratorMod.Iterator[T, Source, ArrayIterator[T, Source], ArrayReverseIterator[T, Source], T] {
   /**
     * Initializer Constructor.
     *

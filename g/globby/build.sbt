@@ -1,23 +1,23 @@
 organization := "org.scalablytyped"
 name := "globby"
-version := "8.0-dt-20180614Z-fd9b9a"
+version := "8.0-dt-20180614Z-625bb7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "braces" % "2.3-dt-20180214Z-24af50",
-  "org.scalablytyped" %%% "fast-glob" % "2.2.6-6854cf",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-c73b68",
+  "org.scalablytyped" %%% "fast-glob" % "2.2.6-82e59f",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-b78482",
   "org.scalablytyped" %%% "glob-parent" % "3.1-dt-20180214Z-1492b0",
   "org.scalablytyped" %%% "glob-to-regexp" % "0.4-dt-20180607Z-23da3e",
   "org.scalablytyped" %%% "is-glob" % "4.0-dt-20180214Z-3bbaea",
-  "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-17c0c9",
+  "org.scalablytyped" %%% "merge2" % "1.1-dt-20180214Z-b56fac",
   "org.scalablytyped" %%% "micromatch" % "3.1-dt-20180214Z-ab6d89",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-029f0e",
-  "org.scalablytyped" %%% "mrmlnc__readdir-enhanced" % "2.2.1-2431ac",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-3468e4",
-  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "1.1.3-cfb4d4",
+  "org.scalablytyped" %%% "mrmlnc__readdir-enhanced" % "2.2.1-18bc84",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
+  "org.scalablytyped" %%% "nodelib__fs_dot_stat" % "1.1.3-bd2c85",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

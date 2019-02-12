@@ -24,7 +24,7 @@ class Server ()
   def addListener_error(event: nodeLib.nodeLibStrings.error, listener: js.Function1[/* err */ nodeLib.Error, scala.Unit]): this.type = js.native
   @JSName("addListener")
   def addListener_listening(event: nodeLib.nodeLibStrings.listening, listener: js.Function0[scala.Unit]): this.type = js.native
-  def address(): AddressInfo | java.lang.String = js.native
+  def address(): AddressInfo | java.lang.String | scala.Null = js.native
   def close(): this.type = js.native
   def close(callback: js.Function): this.type = js.native
   @JSName("emit")

@@ -13,7 +13,7 @@ object collectionsNs extends js.Object {
     extends samchonLib.samchonMod.collectionsNs.ArrayCollection[T]
   
   @js.native
-  class CollectionEvent[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT] */] protected ()
+  class CollectionEvent[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] protected ()
     extends samchonLib.samchonMod.collectionsNs.CollectionEvent[T, SourceT, IteratorT, ReverseT] {
     def this(`type`: java.lang.String, first: IteratorT, last: IteratorT) = this()
   }
@@ -23,7 +23,7 @@ object collectionsNs extends js.Object {
     extends samchonLib.samchonMod.collectionsNs.DequeCollection[T]
   
   @js.native
-  class EventDispatcher[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT] */] ()
+  class EventDispatcher[T, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */] ()
     extends samchonLib.samchonMod.collectionsNs.EventDispatcher[T, SourceT, IteratorT, ReverseT]
   
   @js.native
@@ -75,19 +75,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -106,19 +109,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -137,19 +143,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -168,19 +177,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -199,19 +211,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -230,19 +245,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -261,19 +279,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -292,19 +313,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -323,19 +347,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -354,19 +381,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native
@@ -385,19 +415,22 @@ object collectionsNs extends js.Object {
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorIteratorMod.Iterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ], 
           tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
             /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
           ]
         ]
       ] = js.native

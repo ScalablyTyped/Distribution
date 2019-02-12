@@ -18,7 +18,7 @@ class Socket ()
   @JSName("addListener")
   def addListener_message(
     event: nodeLib.nodeLibStrings.message,
-    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.netMod.AddressInfo, scala.Unit]
+    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
   ): this.type = js.native
   def addMembership(multicastAddress: java.lang.String): scala.Unit = js.native
   def addMembership(multicastAddress: java.lang.String, multicastInterface: java.lang.String): scala.Unit = js.native
@@ -42,7 +42,7 @@ class Socket ()
   @JSName("emit")
   def emit_listening(event: nodeLib.nodeLibStrings.listening): scala.Boolean = js.native
   @JSName("emit")
-  def emit_message(event: nodeLib.nodeLibStrings.message, msg: nodeLib.Buffer, rinfo: nodeLib.netMod.AddressInfo): scala.Boolean = js.native
+  def emit_message(event: nodeLib.nodeLibStrings.message, msg: nodeLib.Buffer, rinfo: RemoteInfo): scala.Boolean = js.native
   def getRecvBufferSize(): scala.Double = js.native
   def getSendBufferSize(): scala.Double = js.native
   @JSName("on")
@@ -54,7 +54,7 @@ class Socket ()
   @JSName("on")
   def on_message(
     event: nodeLib.nodeLibStrings.message,
-    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.netMod.AddressInfo, scala.Unit]
+    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
   ): this.type = js.native
   @JSName("once")
   def once_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -65,7 +65,7 @@ class Socket ()
   @JSName("once")
   def once_message(
     event: nodeLib.nodeLibStrings.message,
-    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.netMod.AddressInfo, scala.Unit]
+    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
   ): this.type = js.native
   @JSName("prependListener")
   def prependListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -76,7 +76,7 @@ class Socket ()
   @JSName("prependListener")
   def prependListener_message(
     event: nodeLib.nodeLibStrings.message,
-    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.netMod.AddressInfo, scala.Unit]
+    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
   ): this.type = js.native
   @JSName("prependOnceListener")
   def prependOnceListener_close(event: nodeLib.nodeLibStrings.close, listener: js.Function0[scala.Unit]): this.type = js.native
@@ -87,7 +87,7 @@ class Socket ()
   @JSName("prependOnceListener")
   def prependOnceListener_message(
     event: nodeLib.nodeLibStrings.message,
-    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ nodeLib.netMod.AddressInfo, scala.Unit]
+    listener: js.Function2[/* msg */ nodeLib.Buffer, /* rinfo */ RemoteInfo, scala.Unit]
   ): this.type = js.native
   def ref(): this.type = js.native
   def send(msg: java.lang.String, offset: scala.Double, length: scala.Double, port: scala.Double): scala.Unit = js.native

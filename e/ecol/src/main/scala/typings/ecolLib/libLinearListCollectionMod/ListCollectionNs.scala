@@ -18,19 +18,22 @@ object ListCollectionNs extends js.Object {
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
       ], 
       tstlLib.baseIteratorIteratorMod.Iterator[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
       ], 
       tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam SourceT */ js.Any, 
         /* import warning: RewrittenClass.unapply cls $anonfun was tparam IteratorT */ js.Any, 
-        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam ReverseT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ js.Any
       ]
     ]
   ] = js.native

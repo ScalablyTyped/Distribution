@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 - tstlLib.iteratorIRandomAccessIteratorMod.IRandomAccessIterator because var conflicts: value. Inlined index, advance */ @JSImport("tstl/base/iterator/ArrayIterator", "ArrayReverseIterator")
 @js.native
 class ArrayReverseIterator[T, Source /* <: tstlLib.baseContainerArrayContainerMod.ArrayContainer[T, Source] */] protected ()
-  extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, ArrayIterator[T, Source], ArrayReverseIterator[T, Source]] {
+  extends tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, ArrayIterator[T, Source], ArrayReverseIterator[T, Source], T] {
   /**
     * Initializer Constructor.
     *

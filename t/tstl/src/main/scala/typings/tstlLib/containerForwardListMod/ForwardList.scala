@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   */
 class ForwardList[T] ()
   extends tstlLib.baseContainerIDequeContainerMod._IDeque[T]
-     with tstlLib.baseDisposableIForwardContainerMod.IForwardContainer[T, tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]]
+     with tstlLib.baseDisposableIForwardContainerMod.IForwardContainer[tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]]
      with tstlLib.baseDisposableIPartialContainersMod._IClear
      with tstlLib.baseDisposableIPartialContainersMod._IEmpty
      with tstlLib.baseDisposableIPartialContainersMod._ISize
@@ -196,7 +196,7 @@ class ForwardList[T] ()
     * @param pos Position to insert after.
     * @param from Target container to transfer.
     */
-  def splice_after[U /* <: T */](pos: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T], from: ForwardList[U]): scala.Unit = js.native
+  def splice_after(pos: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T], from: ForwardList[T]): scala.Unit = js.native
   /**
     * Transfer a single element.
     *
@@ -204,10 +204,10 @@ class ForwardList[T] ()
     * @param from Target container to transfer.
     * @param before Previous position of the single element to transfer.
     */
-  def splice_after[U /* <: T */](
+  def splice_after(
     pos: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T],
-    from: ForwardList[U],
-    before: tstlLib.containerForwardListMod.ForwardListNs.Iterator[U]
+    from: ForwardList[T],
+    before: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]
   ): scala.Unit = js.native
   /**
     * Transfer range elements.
@@ -217,11 +217,11 @@ class ForwardList[T] ()
     * @param first Range of previous of the first position to transfer.
     * @param last Rangee of the last position to transfer.
     */
-  def splice_after[U /* <: T */](
+  def splice_after(
     pos: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T],
-    from: ForwardList[U],
-    first_before: tstlLib.containerForwardListMod.ForwardListNs.Iterator[U],
-    last: tstlLib.containerForwardListMod.ForwardListNs.Iterator[U]
+    from: ForwardList[T],
+    first_before: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T],
+    last: tstlLib.containerForwardListMod.ForwardListNs.Iterator[T]
   ): scala.Unit = js.native
   /**
     * Native function for `JSON.stringify()`.

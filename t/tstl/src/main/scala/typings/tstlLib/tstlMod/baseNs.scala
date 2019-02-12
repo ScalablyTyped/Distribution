@@ -36,8 +36,8 @@ object baseNs extends js.Object {
   }
   
   @js.native
-  abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] ()
-    extends tstlLib.baseMod.Container[T, SourceT, IteratorT, ReverseIteratorT]
+  abstract class Container[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
+    extends tstlLib.baseMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem]
   
   @js.native
   class ForOfAdaptor[T, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */] protected ()
@@ -55,7 +55,7 @@ object baseNs extends js.Object {
   /**
     * Default Constructor.
     */
-  abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorListIteratorMod.ListIterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] protected ()
+  abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, T] */, IteratorT /* <: tstlLib.baseIteratorListIteratorMod.ListIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */] protected ()
     extends tstlLib.baseMod.ListContainer[T, SourceT, IteratorT, ReverseIteratorT]
   
   @js.native
@@ -94,8 +94,8 @@ object baseNs extends js.Object {
     extends tstlLib.baseMod.MultiSet[Key, Source]
   
   @js.native
-  abstract class ReverseIterator[T, Source /* <: tstlLib.baseContainerIContainerMod.IContainer[T, Source, Base, This] */, Base /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, Source, Base, This] */, This /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, Base, This] */] protected ()
-    extends tstlLib.baseMod.ReverseIterator[T, Source, Base, This] {
+  abstract class ReverseIterator[T /* <: Elem */, Source /* <: tstlLib.baseContainerIContainerMod.IContainer[T, Source, Base, This, Elem] */, Base /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, Source, Base, This, Elem] */, This /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, Source, Base, This, Elem] */, Elem] protected ()
+    extends tstlLib.baseMod.ReverseIterator[T, Source, Base, This, Elem] {
     /**
       * Initializer Constructor.
       *

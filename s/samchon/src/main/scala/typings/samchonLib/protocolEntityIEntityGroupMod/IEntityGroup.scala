@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, SourceT /* <: tstlLib.tstlMod.baseNs.Container[T, SourceT, IteratorT, ReverseT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT] */, ReverseT /* <: tstlLib.tstlMod.baseNs.ReverseIterator[T, SourceT, IteratorT, ReverseT] */]
-  extends tstlLib.tstlMod.baseNs.Container[T, SourceT, IteratorT, ReverseT]
+trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, SourceT /* <: tstlLib.tstlMod.baseNs.Container[T, SourceT, IteratorT, ReverseT, T] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] */, ReverseT /* <: tstlLib.tstlMod.baseNs.ReverseIterator[T, SourceT, IteratorT, ReverseT, T] */]
+  extends tstlLib.tstlMod.baseNs.Container[T, SourceT, IteratorT, ReverseT, T]
      with samchonLib.protocolEntityIEntityMod.IEntity {
   /**
     * A tag name of children objects.
@@ -18,9 +18,8 @@ trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, Sourc
     *
     * @return Iterator to the first element.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def begin(): IteratorT = js.native
+  override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
   /**
     * Count elements with a specific key.
     *
@@ -52,9 +51,8 @@ trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, Sourc
     *
     * @return Iterator to the end.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
-  override def end(): IteratorT = js.native
+  override def end(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseT, T] = js.native
   /**
     * Get an element
     *
@@ -99,7 +97,6 @@ trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, Sourc
     * @param items Items to insert.
     * @return Number of elements in the container after insertion.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def push(items: T*): scala.Double = js.native
   /**
@@ -107,6 +104,7 @@ trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, Sourc
     *
     * @return Reverse iterator to the first.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rbegin(): ReverseT = js.native
   /**
@@ -114,12 +112,12 @@ trait IEntityGroup[T /* <: samchonLib.protocolEntityIEntityMod.IEntity */, Sourc
     *
     * @return Reverse iterator to the end.
     */
+  /* CompleteClass */
   /* InferMemberOverrides */
   override def rend(): ReverseT = js.native
   /**
     * Number of elements in the container.
     */
-  /* CompleteClass */
   /* InferMemberOverrides */
   override def size(): scala.Double = js.native
 }

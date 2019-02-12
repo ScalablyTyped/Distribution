@@ -197,7 +197,7 @@ object AppStreamNs extends js.Object {
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 57600.
+      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 360000.
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -229,7 +229,7 @@ object AppStreamNs extends js.Object {
       */
     var InstanceType: String
     /**
-      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
+      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 360000.
       */
     var MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -237,7 +237,7 @@ object AppStreamNs extends js.Object {
       */
     var Name: Name
     /**
-      * The tags to associate with the fleet. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      * The tags to associate with the fleet. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. For more information, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -291,7 +291,7 @@ object AppStreamNs extends js.Object {
       */
     var Name: Name
     /**
-      * The tags to associate with the image builder. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      * The tags to associate with the image builder. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -359,7 +359,7 @@ object AppStreamNs extends js.Object {
       */
     var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
     /**
-      * The tags to associate with the stack. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
+      * The tags to associate with the stack. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string. For more information about tags, see Tagging Your Resources in the Amazon AppStream 2.0 Developer Guide.
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
@@ -663,7 +663,7 @@ object AppStreamNs extends js.Object {
   
   trait DescribeSessionsRequest extends js.Object {
     /**
-      * The authentication method. Specify API for a user authenticated using a streaming URL or SAML for a SAML federated user. The default is to authenticate users using a streaming URL.
+      * The authentication method. Specify API for a user authenticated using a streaming URL, SAML for a SAML 2.0-federated user, or USERPOOL for a user in the AppStream 2.0 user pool. The default is to authenticate users using a streaming URL.
       */
     var AuthenticationType: js.UndefOr[AuthenticationType] = js.undefined
     /**
@@ -877,7 +877,7 @@ object AppStreamNs extends js.Object {
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 57600.
+      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 360000. By default, this value is 900 seconds (15 minutes).
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -913,7 +913,7 @@ object AppStreamNs extends js.Object {
       */
     var InstanceType: String
     /**
-      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
+      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 360000.
       */
     var MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -1200,9 +1200,13 @@ object AppStreamNs extends js.Object {
   
   trait Session extends js.Object {
     /**
-      * The authentication method. The user is authenticated using a streaming URL (API) or SAML federation (SAML).
+      * The authentication method. The user is authenticated using a streaming URL (API), SAML 2.0 federation (SAML), or the AppStream 2.0 user pool (USERPOOL). The default is to authenticate users using a streaming URL. 
       */
     var AuthenticationType: js.UndefOr[AuthenticationType] = js.undefined
+    /**
+      * Specifies whether a user is connected to the streaming session. 
+      */
+    var ConnectionState: js.UndefOr[SessionConnectionState] = js.undefined
     /**
       * The name of the fleet for the streaming session.
       */
@@ -1212,6 +1216,10 @@ object AppStreamNs extends js.Object {
       */
     var Id: String
     /**
+      * The time when the streaming session is set to expire. This time is based on the MaxUserDurationinSeconds value, which determines the maximum length of time that a streaming session can run. A streaming session might end earlier than the time specified in SessionMaxExpirationTime, when the DisconnectTimeOutInSeconds elapses or the user chooses to end his or her session. If the DisconnectTimeOutInSeconds elapses, or the user chooses to end his or her session, the streaming instance is terminated and the streaming session ends.
+      */
+    var MaxExpirationTime: js.UndefOr[Timestamp] = js.undefined
+    /**
       * The network details for the streaming session.
       */
     var NetworkAccessConfiguration: js.UndefOr[NetworkAccessConfiguration] = js.undefined
@@ -1219,6 +1227,10 @@ object AppStreamNs extends js.Object {
       * The name of the stack for the streaming session.
       */
     var StackName: String
+    /**
+      * The time when a streaming instance is dedicated for the user. 
+      */
+    var StartTime: js.UndefOr[Timestamp] = js.undefined
     /**
       * The current state of the streaming session.
       */
@@ -1369,7 +1381,7 @@ object AppStreamNs extends js.Object {
       */
     var ResourceArn: Arn
     /**
-      * The tags to associate. A tag is a key-value pair (the value is optional). For example, Environment=Test, or, if you do not specify a value, Environment=.  If you do not specify a value, we set the value to an empty string.
+      * The tags to associate. A tag is a key-value pair, and the value is optional. For example, Environment=Test. If you do not specify a value, Environment=.  If you do not specify a value, the value is set to an empty string.
       */
     var Tags: Tags
   }
@@ -1914,7 +1926,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeImagesResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+      * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
       */
     def describeSessions(): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSessions(
@@ -1925,7 +1937,7 @@ object AppStreamNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+      * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
       */
     def describeSessions(params: DescribeSessionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeSessionsResult, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeSessions(
@@ -2507,7 +2519,7 @@ object AppStreamNs extends js.Object {
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 57600.
+      * The time after disconnection when a session is considered to have ended, in seconds. If a user who was disconnected reconnects within this time interval, the user is connected to their previous session. Specify a value between 60 and 360000. By default, the value is 900 seconds (15 minutes).
       */
     var DisconnectTimeoutInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -2535,7 +2547,7 @@ object AppStreamNs extends js.Object {
       */
     var InstanceType: js.UndefOr[String] = js.undefined
     /**
-      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 57600.
+      * The maximum time that a streaming session can run, in seconds. Specify a value between 600 and 360000. By default, the value is 900 seconds (15 minutes).
       */
     var MaxUserDurationInSeconds: js.UndefOr[Integer] = js.undefined
     /**
@@ -2763,6 +2775,7 @@ object AppStreamNs extends js.Object {
   type ResourceErrors = js.Array[ResourceError]
   type ResourceIdentifier = java.lang.String
   type SecurityGroupIdList = js.Array[String]
+  type SessionConnectionState = awsDashSdkLib.awsDashSdkLibStrings.CONNECTED | awsDashSdkLib.awsDashSdkLibStrings.NOT_CONNECTED | java.lang.String
   type SessionList = js.Array[Session]
   type SessionState = awsDashSdkLib.awsDashSdkLibStrings.ACTIVE | awsDashSdkLib.awsDashSdkLibStrings.PENDING | awsDashSdkLib.awsDashSdkLibStrings.EXPIRED | java.lang.String
   type SettingsGroup = java.lang.String

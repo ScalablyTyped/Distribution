@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait _IInsert[T, Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator] */] extends js.Object {
-  def insert(it: Iterator, value: T): Iterator
+trait _IInsert[Iterator /* <: tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator] */] extends js.Object {
+  def insert(it: Iterator, value: tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator]): Iterator
 }
 

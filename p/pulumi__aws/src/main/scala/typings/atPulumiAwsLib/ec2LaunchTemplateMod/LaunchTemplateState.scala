@@ -96,7 +96,7 @@ trait LaunchTemplateState extends js.Object {
     */
   val latestVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
   /**
-    * A list of license specifications to associate with. See License Specifications below for more details.
+    * A list of license specifications to associate with. See License Specification below for more details.
     */
   val licenseSpecifications: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[
@@ -146,7 +146,7 @@ trait LaunchTemplateState extends js.Object {
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
-    * The tags to apply to the resources during launch. See Tags below for more details.
+    * The tags to apply to the resources during launch. See Tag Specifications below for more details.
     */
   val tagSpecifications: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[

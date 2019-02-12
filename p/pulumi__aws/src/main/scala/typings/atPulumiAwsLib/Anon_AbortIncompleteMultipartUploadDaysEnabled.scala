@@ -8,15 +8,9 @@ import scala.scalajs.js.annotation._
 trait Anon_AbortIncompleteMultipartUploadDaysEnabled extends js.Object {
   var abortIncompleteMultipartUploadDays: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
   var enabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
-  var expirations: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_DateDaysExpiredObjectDeleteMarker]]
-    ]
-  ] = js.undefined
+  var expiration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Anon_DateDaysExpiredObjectDeleteMarker]] = js.undefined
   var id: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  var noncurrentVersionExpirations: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_DaysInput]]]
-  ] = js.undefined
+  var noncurrentVersionExpiration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Anon_DaysInput]] = js.undefined
   var noncurrentVersionTransitions: js.UndefOr[
     atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_DaysStorageClassInput]]]
   ] = js.undefined

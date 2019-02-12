@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
 - Dropped {readonly [ P in keyof tstl.tstl/iterator/IReverseIterator.IReverseIterator<tstl.tstl/iterator/IReverseIterator.IReverseIterator<T, Base, This>, Base, This> ]: tstl.tstl/iterator/IReverseIterator.IReverseIterator<tstl.tstl/iterator/IReverseIterator.IReverseIterator<T, Base, This>, Base, This>[P]} */ @JSImport("tstl/base/iterator/ReverseIterator", "ReverseIterator")
 @js.native
-abstract class ReverseIterator[T, Source /* <: tstlLib.baseContainerIContainerMod.IContainer[T, Source, Base, This] */, Base /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, Source, Base, This] */, This /* <: ReverseIterator[T, Source, Base, This] */] protected () extends js.Object {
+abstract class ReverseIterator[T /* <: Elem */, Source /* <: tstlLib.baseContainerIContainerMod.IContainer[T, Source, Base, This, Elem] */, Base /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, Source, Base, This, Elem] */, This /* <: ReverseIterator[T, Source, Base, This, Elem] */, Elem] protected () extends js.Object {
   /**
     * Initializer Constructor.
     *

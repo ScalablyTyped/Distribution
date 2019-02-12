@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("tstl/container/List", "List")
+/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
+- tstlLib.baseContainerIDequeContainerMod.IDequeContainer because var conflicts: iterator. Inlined  */ @JSImport("tstl/container/List", "List")
 @js.native
 /**
   * Default Constructor.
@@ -61,6 +62,29 @@ class List[T] ()
     */
   var `ptr_`: js.Any = js.native
   /**
+    * @inheritDoc
+    */
+  def back(): T = js.native
+  /**
+    * @inheritDoc
+    */
+  def back(`val`: T): scala.Unit = js.native
+  /**
+    * @inheritDoc
+    */
+  def front(): T = js.native
+  /**
+    * @inheritDoc
+    */
+  def front(`val`: T): scala.Unit = js.native
+  /**
+    * Transfer elements.
+    *
+    * @param pos Position to insert.
+    * @param from Target container to transfer.
+    */
+  def splice(pos: tstlLib.containerListMod.ListNs.Iterator[T], from: List[T]): scala.Unit = js.native
+  /**
     * Transfer range elements.
     *
     * @param pos Position to insert.
@@ -75,23 +99,16 @@ class List[T] ()
     last: tstlLib.containerListMod.ListNs.Iterator[T]
   ): scala.Unit = js.native
   /**
-    * Transfer elements.
-    *
-    * @param pos Position to insert.
-    * @param from Target container to transfer.
-    */
-  def splice[U /* <: T */](pos: tstlLib.containerListMod.ListNs.Iterator[T], from: List[U]): scala.Unit = js.native
-  /**
     * Transfer a single element.
     *
     * @param pos Position to insert.
     * @param from Target container to transfer.
     * @param it Position of the single element to transfer.
     */
-  def splice[U /* <: T */](
+  def splice(
     pos: tstlLib.containerListMod.ListNs.Iterator[T],
-    from: List[U],
-    it: tstlLib.containerListMod.ListNs.Iterator[U]
+    from: List[T],
+    it: tstlLib.containerListMod.ListNs.Iterator[T]
   ): scala.Unit = js.native
   /**
     * Swap elements.

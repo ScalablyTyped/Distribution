@@ -31,7 +31,7 @@ class RdsDbInstance protected ()
     */
   val rdsDbInstanceArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
-    * The stack to register a db inatance for. Changing this will force a new resource.
+    * The stack to register a db instance for. Changing this will force a new resource.
     */
   val stackId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }

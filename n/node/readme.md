@@ -1,5 +1,5 @@
 ```
-// Type definitions for Node.js 10.12
+// Type definitions for Node.js 11.9
 // Project: http://nodejs.org/
 // Definitions by: Microsoft TypeScript <https://github.com/Microsoft>
 //                 DefinitelyTyped <https://github.com/DefinitelyTyped>
@@ -7,6 +7,7 @@
 //                 Alexander T. <https://github.com/a-tarasyuk>
 //                 Alvis HT Tang <https://github.com/alvis>
 //                 Andrew Makarov <https://github.com/r3nya>
+//                 Benjamin Toueg <https://github.com/btoueg>
 //                 Bruno Scheufler <https://github.com/brunoscheufler>
 //                 Chigozirim C. <https://github.com/smac89>
 //                 Christian Vaagland Tellnes <https://github.com/tellnes>

@@ -505,6 +505,15 @@ object nodeLibStrings {
   sealed trait SchemaDOTgetDomains extends js.Object
   
   @js.native
+  sealed trait TLSv1 extends js.Object
+  
+  @js.native
+  sealed trait TLSv1DOT1 extends js.Object
+  
+  @js.native
+  sealed trait TLSv1DOT2 extends js.Object
+  
+  @js.native
   sealed trait TXT extends js.Object
   
   @js.native
@@ -625,6 +634,9 @@ object nodeLibStrings {
   sealed trait freebsd extends js.Object
   
   @js.native
+  sealed trait get extends js.Object
+  
+  @js.native
   sealed trait goaway extends js.Object
   
   @js.native
@@ -709,6 +721,12 @@ object nodeLibStrings {
   sealed trait pkcs8 extends js.Object
   
   @js.native
+  sealed trait `private` extends js.Object
+  
+  @js.native
+  sealed trait public extends js.Object
+  
+  @js.native
   sealed trait push extends js.Object
   
   @js.native
@@ -733,6 +751,9 @@ object nodeLibStrings {
   sealed trait reset extends js.Object
   
   @js.native
+  sealed trait resize extends js.Object
+  
+  @js.native
   sealed trait resolve extends js.Object
   
   @js.native
@@ -751,6 +772,9 @@ object nodeLibStrings {
   sealed trait sec1 extends js.Object
   
   @js.native
+  sealed trait secret extends js.Object
+  
+  @js.native
   sealed trait secureConnect extends js.Object
   
   @js.native
@@ -758,6 +782,9 @@ object nodeLibStrings {
   
   @js.native
   sealed trait sessionError extends js.Object
+  
+  @js.native
+  sealed trait set extends js.Object
   
   @js.native
   sealed trait setup extends js.Object
@@ -1155,6 +1182,12 @@ object nodeLibStrings {
   @scala.inline
   def SchemaDOTgetDomains: SchemaDOTgetDomains = "Schema.getDomains".asInstanceOf[SchemaDOTgetDomains]
   @scala.inline
+  def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
+  @scala.inline
+  def TLSv1DOT1: TLSv1DOT1 = "TLSv1.1".asInstanceOf[TLSv1DOT1]
+  @scala.inline
+  def TLSv1DOT2: TLSv1DOT2 = "TLSv1.2".asInstanceOf[TLSv1DOT2]
+  @scala.inline
   def TXT: TXT = "TXT".asInstanceOf[TXT]
   @scala.inline
   def aborted: aborted = "aborted".asInstanceOf[aborted]
@@ -1235,6 +1268,8 @@ object nodeLibStrings {
   @scala.inline
   def freebsd: freebsd = "freebsd".asInstanceOf[freebsd]
   @scala.inline
+  def get: get = "get".asInstanceOf[get]
+  @scala.inline
   def goaway: goaway = "goaway".asInstanceOf[goaway]
   @scala.inline
   def headers: headers = "headers".asInstanceOf[headers]
@@ -1291,6 +1326,10 @@ object nodeLibStrings {
   @scala.inline
   def pkcs8: pkcs8 = "pkcs8".asInstanceOf[pkcs8]
   @scala.inline
+  def `private`: `private` = "private".asInstanceOf[`private`]
+  @scala.inline
+  def public: public = "public".asInstanceOf[public]
+  @scala.inline
   def push: push = "push".asInstanceOf[push]
   @scala.inline
   def readable: readable = "readable".asInstanceOf[readable]
@@ -1307,6 +1346,8 @@ object nodeLibStrings {
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   @scala.inline
+  def resize: resize = "resize".asInstanceOf[resize]
+  @scala.inline
   def resolve: resolve = "resolve".asInstanceOf[resolve]
   @scala.inline
   def response: response = "response".asInstanceOf[response]
@@ -1319,11 +1360,15 @@ object nodeLibStrings {
   @scala.inline
   def sec1: sec1 = "sec1".asInstanceOf[sec1]
   @scala.inline
+  def secret: secret = "secret".asInstanceOf[secret]
+  @scala.inline
   def secureConnect: secureConnect = "secureConnect".asInstanceOf[secureConnect]
   @scala.inline
   def secureConnection: secureConnection = "secureConnection".asInstanceOf[secureConnection]
   @scala.inline
   def sessionError: sessionError = "sessionError".asInstanceOf[sessionError]
+  @scala.inline
+  def set: set = "set".asInstanceOf[set]
   @scala.inline
   def setup: setup = "setup".asInstanceOf[setup]
   @scala.inline

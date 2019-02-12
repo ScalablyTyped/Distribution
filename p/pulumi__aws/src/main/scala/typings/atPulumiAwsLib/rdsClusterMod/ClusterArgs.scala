@@ -32,7 +32,7 @@ trait ClusterArgs extends js.Object {
     */
   val clusterIdentifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**
-    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifer`.
+    * Creates a unique cluster identifier beginning with the specified prefix. Conflicts with `cluster_identifier`.
     */
   val clusterIdentifierPrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
   /**

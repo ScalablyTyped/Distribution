@@ -153,7 +153,7 @@ class Instance protected ()
   val identifier: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
     * Creates a unique
-    * identifier beginning with the specified prefix. Conflicts with `identifer`.
+    * identifier beginning with the specified prefix. Conflicts with `identifier`.
     */
   val identifierPrefix: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**

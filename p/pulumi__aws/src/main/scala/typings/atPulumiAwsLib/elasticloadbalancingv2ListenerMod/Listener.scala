@@ -43,7 +43,7 @@ class Listener protected ()
     */
   val protocol: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS`.
+    * The name of the SSL Policy for the listener. Required if `protocol` is `HTTPS` or `TLS`.
     */
   val sslPolicy: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }

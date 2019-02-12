@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/base", "Container")
 @js.native
-abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] ()
-  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT]
+abstract class Container[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
+  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, Elem]
 

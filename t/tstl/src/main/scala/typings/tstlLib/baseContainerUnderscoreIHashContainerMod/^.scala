@@ -8,6 +8,15 @@ import scala.scalajs.js.annotation._
 @JSImport("tstl/base/container/_IHashContainer", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def _Construct[Key](Source: js.Any, Bucket: js.Any, args: js.Any*): scala.Unit = js.native
+  def _Construct[Key, T /* <: Elem */, SourceT /* <: tstlLib.baseContainerUnderscoreIHashContainerMod._IHashContainer[Key, T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem](
+    source: SourceT,
+    Source: tstlLib.baseContainerUnderscoreIHashContainerMod._Factory[SourceT, js.Array[_]],
+    bucketFactory: js.Function2[
+      /* hashFunction */ js.Function1[/* key */ Key, scala.Double], 
+      /* predicator */ js.Function2[/* x */ Key, /* y */ Key, scala.Boolean], 
+      scala.Unit
+    ],
+    args: js.Any*
+  ): scala.Unit = js.native
 }
 

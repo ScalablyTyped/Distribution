@@ -15,5 +15,6 @@ trait GetBrokerArgs extends js.Object {
     */
   val brokerName: js.UndefOr[java.lang.String] = js.undefined
   val logs: js.UndefOr[atPulumiAwsLib.Anon_Audit] = js.undefined
+  val tags: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Any]] = js.undefined
 }
 

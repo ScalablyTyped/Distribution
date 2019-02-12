@@ -14,12 +14,8 @@ class ECDH () extends js.Object {
     input_encoding: HexBase64Latin1Encoding,
     output_encoding: HexBase64Latin1Encoding
   ): java.lang.String = js.native
-  def computeSecret(other_public_key: nodeLib.Buffer): nodeLib.Buffer = js.native
-  def computeSecret(other_public_key: nodeLib.Buffer, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
-  def computeSecret(other_public_key: nodeLib.NodeJSNs.TypedArray): nodeLib.Buffer = js.native
-  def computeSecret(other_public_key: nodeLib.NodeJSNs.TypedArray, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
-  def computeSecret(other_public_key: stdLib.DataView): nodeLib.Buffer = js.native
-  def computeSecret(other_public_key: stdLib.DataView, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
+  def computeSecret(other_public_key: Binary): nodeLib.Buffer = js.native
+  def computeSecret(other_public_key: Binary, output_encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def generateKeys(): nodeLib.Buffer = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def generateKeys(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): java.lang.String = js.native
@@ -29,36 +25,102 @@ class ECDH () extends js.Object {
   def getPublicKey(encoding: HexBase64Latin1Encoding): java.lang.String = js.native
   def getPublicKey(encoding: HexBase64Latin1Encoding, format: ECDHKeyFormat): java.lang.String = js.native
   def setPrivateKey(private_key: java.lang.String, encoding: HexBase64Latin1Encoding): scala.Unit = js.native
-  def setPrivateKey(private_key: nodeLib.Buffer): scala.Unit = js.native
-  def setPrivateKey(private_key: nodeLib.NodeJSNs.TypedArray): scala.Unit = js.native
-  def setPrivateKey(private_key: stdLib.DataView): scala.Unit = js.native
+  def setPrivateKey(private_key: Binary): scala.Unit = js.native
 }
 
 /* static members */
 @JSImport("crypto", "ECDH")
 @js.native
 object ECDH extends js.Object {
+  def convertKey(key: nodeLib.cryptoMod.BinaryLike, curve: java.lang.String): nodeLib.Buffer | java.lang.String = js.native
   def convertKey(
-    key: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView,
-    curve: java.lang.String
-  ): nodeLib.Buffer | java.lang.String = js.native
-  def convertKey(
-    key: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView,
+    key: nodeLib.cryptoMod.BinaryLike,
     curve: java.lang.String,
     inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding
   ): nodeLib.Buffer | java.lang.String = js.native
   def convertKey(
-    key: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView,
+    key: nodeLib.cryptoMod.BinaryLike,
     curve: java.lang.String,
     inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
-    outputEncoding: nodeLib.nodeLibStrings.latin1 | nodeLib.nodeLibStrings.hex | nodeLib.nodeLibStrings.base64
+    outputEncoding: nodeLib.nodeLibStrings.base64,
+    format: nodeLib.nodeLibStrings.compressed
   ): nodeLib.Buffer | java.lang.String = js.native
   def convertKey(
-    key: java.lang.String | nodeLib.Buffer | nodeLib.NodeJSNs.TypedArray | stdLib.DataView,
+    key: nodeLib.cryptoMod.BinaryLike,
     curve: java.lang.String,
     inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
-    outputEncoding: nodeLib.nodeLibStrings.latin1 | nodeLib.nodeLibStrings.hex | nodeLib.nodeLibStrings.base64,
-    format: nodeLib.nodeLibStrings.uncompressed | nodeLib.nodeLibStrings.compressed | nodeLib.nodeLibStrings.hybrid
+    outputEncoding: nodeLib.nodeLibStrings.base64,
+    format: nodeLib.nodeLibStrings.hybrid
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.base64,
+    format: nodeLib.nodeLibStrings.uncompressed
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.hex,
+    format: nodeLib.nodeLibStrings.compressed
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.hex,
+    format: nodeLib.nodeLibStrings.hybrid
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.hex,
+    format: nodeLib.nodeLibStrings.uncompressed
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.latin1,
+    format: nodeLib.nodeLibStrings.compressed
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.latin1,
+    format: nodeLib.nodeLibStrings.hybrid
+  ): nodeLib.Buffer | java.lang.String = js.native
+  def convertKey(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.latin1,
+    format: nodeLib.nodeLibStrings.uncompressed
+  ): nodeLib.Buffer | java.lang.String = js.native
+  @JSName("convertKey")
+  def convertKey_base64(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.base64
+  ): nodeLib.Buffer | java.lang.String = js.native
+  @JSName("convertKey")
+  def convertKey_hex(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.hex
+  ): nodeLib.Buffer | java.lang.String = js.native
+  @JSName("convertKey")
+  def convertKey_latin1(
+    key: nodeLib.cryptoMod.BinaryLike,
+    curve: java.lang.String,
+    inputEncoding: nodeLib.cryptoMod.HexBase64Latin1Encoding,
+    outputEncoding: nodeLib.nodeLibStrings.latin1
   ): nodeLib.Buffer | java.lang.String = js.native
 }
 

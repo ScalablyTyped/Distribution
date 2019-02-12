@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("tstl/base/container/Container", "Container")
 @js.native
-abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] ()
-  extends tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] {
+abstract class Container[T /* <: Elem */, SourceT /* <: Container[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] ()
+  extends tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] {
   /* CompleteClass */
   @JSName(org.scalablytyped.runtime.Symbol.iterator)
   override var iterator: js.Function0[stdLib.Iterator[T]] = js.native
@@ -18,7 +18,7 @@ abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.ICo
     * @return Iterator to the first element.
     */
   /* CompleteClass */
-  override def begin(): IteratorT = js.native
+  override def begin(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] = js.native
   /**
     * Test whether container is empty.
     */
@@ -30,7 +30,7 @@ abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.ICo
     * @return Iterator to the end.
     */
   /* CompleteClass */
-  override def end(): IteratorT = js.native
+  override def end(): tstlLib.baseIteratorIteratorMod.Iterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] = js.native
   /**
     * Insert items at the end.
     *
@@ -38,7 +38,7 @@ abstract class Container[T, SourceT /* <: tstlLib.baseContainerIContainerMod.ICo
     * @return Number of elements in the container after insertion.
     */
   /* CompleteClass */
-  override def push(items: T*): scala.Double = js.native
+  override def push(items: Elem*): scala.Double = js.native
   /**
     * Reverse iterator to the first element in reverse.
     *

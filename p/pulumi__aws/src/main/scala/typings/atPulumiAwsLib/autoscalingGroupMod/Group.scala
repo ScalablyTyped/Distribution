@@ -76,7 +76,7 @@ class Group protected ()
     */
   val launchConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * Nested argument with Launch template specification to use to launch instances. Defined below.
+    * Nested argument containing launch template settings along with the overrides to specify multiple instance types. Defined below.
     */
   val launchTemplate: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_Id]] = js.native
   /**

@@ -87,7 +87,7 @@ trait IClientOpts extends js.Object {
     * Should SSL be used? Can either be true or crypto credentials.
     * @default false
     */
-  var secure: js.UndefOr[scala.Boolean | nodeLib.cryptoMod.Credentials] = js.undefined
+  var secure: js.UndefOr[scala.Boolean | nodeLib.tlsMod.SecureContext] = js.undefined
   /**
     * Should we accept self-signed certificates?
     * @default false

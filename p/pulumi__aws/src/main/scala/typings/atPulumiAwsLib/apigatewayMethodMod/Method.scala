@@ -47,11 +47,8 @@ class Method protected ()
   /**
     * A map of request query string parameters and headers that should be passed to the integration.
     * For example:
-    * ```hcl
-    * request_parameters = {
-    * "method.request.header.X-Some-Header"         = true
-    * "method.request.querystring.some-query-param" = true
-    * }
+    * ```typescript
+    * import * as pulumi from "@pulumi/pulumi";
     * ```
     * would define that the header `X-Some-Header` and the query string `some-query-param` must be provided on the request, or
     */

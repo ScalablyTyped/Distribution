@@ -5,14 +5,13 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-/* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- tstlLib.baseContainerIDequeContainerMod.IDequeContainer because var conflicts: iterator. Inlined  */ @JSImport("tstl/base/container/ListContainer", "ListContainer")
+@JSImport("tstl/base/container/ListContainer", "ListContainer")
 @js.native
 /**
   * Default Constructor.
   */
-abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: tstlLib.baseIteratorListIteratorMod.ListIterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] protected ()
-  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT] {
+abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, T] */, IteratorT /* <: tstlLib.baseIteratorListIteratorMod.ListIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, T] */] protected ()
+  extends tstlLib.baseContainerContainerMod.Container[T, SourceT, IteratorT, ReverseIteratorT, T] {
   /**
     * @hidden
     */
@@ -20,11 +19,11 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @hidden
     */
-  var `begin_`: js.Any = js.native
+  var `begin_`: IteratorT = js.native
   /**
     * @hidden
     */
-  var `end_`: js.Any = js.native
+  var `end_`: IteratorT = js.native
   /**
     * @hidden
     */
@@ -32,6 +31,7 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @hidden
     */
+  /* protected */ def _Create_iterator(prev: IteratorT, next: IteratorT): IteratorT = js.native
   /* protected */ def _Create_iterator(prev: IteratorT, next: IteratorT, `val`: T): IteratorT = js.native
   /**
     * @hidden
@@ -40,7 +40,7 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_range[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
+  /* protected */ def _Insert_by_range[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
   /**
     * @inheritDoc
     */
@@ -48,27 +48,15 @@ abstract class ListContainer[T, SourceT /* <: tstlLib.baseContainerIContainerMod
   /**
     * @inheritDoc
     */
-  def back(): T = js.native
-  /**
-    * @inheritDoc
-    */
-  def back(`val`: T): scala.Unit = js.native
-  /**
-    * @inheritDoc
-    */
-  def front(): T = js.native
-  /**
-    * @inheritDoc
-    */
-  def front(`val`: T): scala.Unit = js.native
-  /**
-    * @inheritDoc
-    */
   def insert(position: IteratorT, size: scala.Double, `val`: T): IteratorT = js.native
   /**
     * @inheritDoc
     */
-  def insert[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
+  def insert(position: IteratorT, `val`: T): IteratorT = js.native
+  /**
+    * @inheritDoc
+    */
+  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](position: IteratorT, begin: InputIterator, end: InputIterator): IteratorT = js.native
   /**
     * @inheritDoc
     */

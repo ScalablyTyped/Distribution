@@ -22,6 +22,11 @@ trait Anon_Agent extends js.Object {
     adoneLib.glossesStdMod.httpNs.ServerResponse
   ] = js.native
   var globalAgent: nodeLib.httpMod.Agent = js.native
+  /**
+    * Read-only property specifying the maximum allowed size of HTTP headers in bytes.
+    * Defaults to 8KB. Configurable using the [`--max-http-header-size`][] CLI option.
+    */
+  val maxHeaderSize: scala.Double = js.native
   def createClient(): js.Any = js.native
   def createClient(port: scala.Double): js.Any = js.native
   def createClient(port: scala.Double, host: java.lang.String): js.Any = js.native

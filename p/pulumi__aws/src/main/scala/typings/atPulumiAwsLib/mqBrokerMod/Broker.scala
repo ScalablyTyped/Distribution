@@ -88,6 +88,10 @@ class Broker protected ()
     */
   val subnetIds: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[java.lang.String]] = js.native
   /**
+    * A mapping of tags to assign to the resource.
+    */
+  val tags: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[org.scalablytyped.runtime.StringDictionary[_]]] = js.native
+  /**
     * The list of all ActiveMQ usernames for the specified broker. See below.
     */
   val users: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.Array[atPulumiAwsLib.Anon_ConsoleAccess]] = js.native

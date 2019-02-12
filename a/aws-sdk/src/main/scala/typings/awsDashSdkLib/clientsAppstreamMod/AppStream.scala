@@ -816,7 +816,7 @@ trait AppStream
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+    * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
     */
   def describeSessions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DescribeSessionsResult, 
@@ -833,7 +833,7 @@ trait AppStream
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves a list that describes the streaming sessions for a specified stack and fleet. If a UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
+    * Retrieves a list that describes the active streaming sessions for a specified stack and fleet. If a value for UserId is provided for the stack and fleet, only streaming sessions for that user are described. If an authentication type is not provided, the default is to authenticate users using a streaming URL.
     */
   def describeSessions(params: awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DescribeSessionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAppstreamMod.AppStreamNs.DescribeSessionsResult, 

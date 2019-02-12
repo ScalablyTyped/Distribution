@@ -60,7 +60,7 @@ class HashSet[Key] ()
   /**
     * @hidden
     */
-  var `buckets_`: js.Any = js.native
+  var `buckets_`: tstlLib.baseHashUnderscoreSetHashBucketsMod._SetHashBuckets[Key, tstlLib.tstlLibNumbers.`true`, HashSet[Key]] = js.native
   /**
     * @inheritDoc
     */

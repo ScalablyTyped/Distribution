@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 /**
   * @hidden
   */
-trait IContainer[T, Iterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, Iterator]] */] extends js.Object {
+trait IContainer[Iterator /* <: stdLib.Readonly[
+tstlLib.iteratorIForwardIteratorMod.IForwardIterator[tstlLib.functionalIPointerMod.IPointerNs.ValueType[Iterator], Iterator]] */] extends js.Object {
   def begin(): Iterator
   def end(): Iterator
   def erase(first: Iterator, last: Iterator): Iterator

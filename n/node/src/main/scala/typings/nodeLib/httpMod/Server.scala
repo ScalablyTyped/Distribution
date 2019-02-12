@@ -10,6 +10,11 @@ import scala.scalajs.js.annotation._
 class Server ()
   extends nodeLib.netMod.Server {
   def this(requestListener: js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, scala.Unit]) = this()
+  /**
+    * Limit the amount of time the parser will wait to receive the complete HTTP headers.
+    * @default 40000
+    */
+  var headersTimeout: scala.Double = js.native
   var keepAliveTimeout: scala.Double = js.native
   var maxHeadersCount: scala.Double = js.native
   var timeout: scala.Double = js.native

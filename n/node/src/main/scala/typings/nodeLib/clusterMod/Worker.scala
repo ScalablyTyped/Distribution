@@ -12,7 +12,6 @@ class Worker ()
   var exitedAfterDisconnect: scala.Boolean = js.native
   var id: scala.Double = js.native
   var process: nodeLib.childUnderscoreProcessMod.ChildProcess = js.native
-  var suicide: scala.Boolean = js.native
   @JSName("addListener")
   def addListener_disconnect(event: nodeLib.nodeLibStrings.disconnect, listener: js.Function0[scala.Unit]): this.type = js.native
   @JSName("addListener")

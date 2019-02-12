@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "express-myconnection"
-version := "v1.0.4-dt-20180214Z-8b7020"
+version := "v1.0.4-dt-20180214Z-002308"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-82bef3",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-e6a834",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-714bd6",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-4af3eb",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-322647",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-fba25e",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-aabd2b",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-f1d2dc",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
-  "org.scalablytyped" %%% "mysql" % "2.15-dt-20181219Z-dd0e0d",
-  "org.scalablytyped" %%% "node" % "10.12-dt-20190206Z-3468e4",
+  "org.scalablytyped" %%% "mysql" % "2.15-dt-20181219Z-d305ba",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-6911a2",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-308d11",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

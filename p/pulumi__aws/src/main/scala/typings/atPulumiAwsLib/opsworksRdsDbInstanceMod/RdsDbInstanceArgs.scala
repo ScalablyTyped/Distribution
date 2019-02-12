@@ -19,7 +19,7 @@ trait RdsDbInstanceArgs extends js.Object {
     */
   val rdsDbInstanceArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
   /**
-    * The stack to register a db inatance for. Changing this will force a new resource.
+    * The stack to register a db instance for. Changing this will force a new resource.
     */
   val stackId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
 }

@@ -82,6 +82,8 @@ trait Global extends js.Object {
   @JSName("parseInt")
   var parseInt_Original: nodeLib.Anon_Radix = js.native
   var process: Process = js.native
+  @JSName("queueMicrotask")
+  var queueMicrotask_Original: js.Function1[/* callback */ js.Function0[scala.Unit], scala.Unit] = js.native
   var root: Global = js.native
   var undefined: js.UndefOr[scala.Nothing] = js.native
   var v8debug: js.UndefOr[js.Any] = js.native
@@ -133,6 +135,7 @@ trait Global extends js.Object {
   def parseFloat(string: java.lang.String): scala.Double = js.native
   def parseInt(s: java.lang.String): scala.Double = js.native
   def parseInt(s: java.lang.String, radix: scala.Double): scala.Double = js.native
+  def queueMicrotask(callback: js.Function0[scala.Unit]): scala.Unit = js.native
   def setImmediate(callback: js.Function1[/* repeated */ js.Any, scala.Unit], args: js.Any*): Immediate = js.native
   def setInterval(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timeout = js.native
   def setTimeout(callback: js.Function1[/* repeated */ js.Any, scala.Unit], ms: scala.Double, args: js.Any*): Timeout = js.native

@@ -6,9 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT>, SourceT, IteratorT, ReverseIteratorT> ]: tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT>, SourceT, IteratorT, ReverseIteratorT>[P]} */ @JSImport("tstl/base/iterator/ListIterator", "ListIterator")
+- Dropped {readonly [ P in keyof tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>, SourceT, IteratorT, ReverseIteratorT, Elem> ]: tstl.tstl/base/iterator/Iterator.Iterator<tstl.tstl/base/iterator/Iterator.Iterator<T, SourceT, IteratorT, ReverseIteratorT, Elem>, SourceT, IteratorT, ReverseIteratorT, Elem>[P]} */ @JSImport("tstl/base/iterator/ListIterator", "ListIterator")
 @js.native
-abstract class ListIterator[T, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT] */, IteratorT /* <: ListIterator[T, SourceT, IteratorT, ReverseIteratorT] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT] */] protected () extends js.Object {
+abstract class ListIterator[T /* <: Elem */, SourceT /* <: tstlLib.baseContainerIContainerMod.IContainer[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, IteratorT /* <: ListIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, ReverseIteratorT /* <: tstlLib.baseIteratorReverseIteratorMod.ReverseIterator[T, SourceT, IteratorT, ReverseIteratorT, Elem] */, Elem] protected () extends js.Object {
   /**
     * @hidden
     */
@@ -28,7 +28,7 @@ abstract class ListIterator[T, SourceT /* <: tstlLib.baseContainerIContainerMod.
   /**
     * @hidden
     */
-  var `value_`: js.Any = js.native
+  var `value_`: T = js.native
   /**
     * @inheritDoc
     */

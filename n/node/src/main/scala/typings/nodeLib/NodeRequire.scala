@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @js.native
 trait NodeRequire extends NodeRequireFunction {
   var cache: js.Any = js.native
+  /**
+    * @deprecated
+    */
   var extensions: NodeExtensions = js.native
   var main: js.UndefOr[NodeModule] = js.native
   @JSName("resolve")

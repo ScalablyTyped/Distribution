@@ -18,8 +18,17 @@ class EventStream protected ()
     */
   def this(name: java.lang.String, args: EventStreamArgs) = this()
   def this(name: java.lang.String, args: EventStreamArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  /**
+    * The application ID.
+    */
   val applicationId: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * The Amazon Resource Name (ARN) of the Amazon Kinesis stream or Firehose delivery stream to which you want to publish events.
+    */
   val destinationStreamArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
+    * The IAM role that authorizes Amazon Pinpoint to publish events to the stream in your account.
+    */
   val roleArn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
 }
 

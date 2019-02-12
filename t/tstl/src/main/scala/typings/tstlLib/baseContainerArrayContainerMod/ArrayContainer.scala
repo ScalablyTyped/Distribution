@@ -13,7 +13,8 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
       T, 
       SourceT, 
       tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], 
-      tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT]
+      tstlLib.baseIteratorArrayIteratorMod.ArrayReverseIterator[T, SourceT], 
+      T
     ] {
   /**
     * @hidden
@@ -25,7 +26,7 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
   /**
     * @hidden
     */
-  /* protected */ def _Insert_by_range[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](
+  /* protected */ def _Insert_by_range[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](
     pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
     first: InputIterator,
     last: InputIterator
@@ -94,6 +95,17 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     * @inheritDoc
     */
   /**
+    * Insert a single element.
+    *
+    * @param pos Position to insert.
+    * @param val Value to insert.
+    * @return An iterator to the newly inserted element.
+    */
+  def insert(pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT], `val`: T): tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT] = js.native
+  /**
+    * @inheritDoc
+    */
+  /**
     * Insert range elements.
     *
     * @param pos Position to insert.
@@ -101,7 +113,7 @@ abstract class ArrayContainer[T, SourceT /* <: ArrayContainer[T, SourceT] */] ()
     * @param last Input iteartor of the last position.
     * @return An iterator to the first of the newly inserted elements.
     */
-  def insert[U /* <: T */, InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[U, InputIterator]] */](
+  def insert[InputIterator /* <: stdLib.Readonly[tstlLib.iteratorIForwardIteratorMod.IForwardIterator[T, InputIterator]] */](
     pos: tstlLib.baseIteratorArrayIteratorMod.ArrayIterator[T, SourceT],
     first: InputIterator,
     last: InputIterator

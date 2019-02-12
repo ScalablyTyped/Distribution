@@ -676,6 +676,9 @@ object awsDashSdkLibStrings {
   sealed trait ACTIVITY_TYPE_DOES_NOT_EXIST extends js.Object
   
   @js.native
+  sealed trait ACTOR_ACCOUNT_ID extends js.Object
+  
+  @js.native
   sealed trait ACTUAL extends js.Object
   
   @js.native
@@ -1693,6 +1696,9 @@ object awsDashSdkLibStrings {
   sealed trait BASELINE extends js.Object
   
   @js.native
+  sealed trait BASE_REF extends js.Object
+  
+  @js.native
   sealed trait BASIC_AUTH extends js.Object
   
   @js.native
@@ -2261,6 +2267,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait COMMON extends js.Object
+  
+  @js.native
+  sealed trait COMPACT extends js.Object
   
   @js.native
   sealed trait COMPANY extends js.Object
@@ -4189,6 +4198,9 @@ object awsDashSdkLibStrings {
   sealed trait FILE_GROUP_SETTINGS extends js.Object
   
   @js.native
+  sealed trait FILE_PATH extends js.Object
+  
+  @js.native
   sealed trait FILE_UPLOAD extends js.Object
   
   @js.native
@@ -4862,6 +4874,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait HEADER extends js.Object
+  
+  @js.native
+  sealed trait HEAD_REF extends js.Object
   
   @js.native
   sealed trait HEALTHY extends js.Object
@@ -6883,6 +6898,9 @@ object awsDashSdkLibStrings {
   sealed trait NOT_CHECKED extends js.Object
   
   @js.native
+  sealed trait NOT_CONNECTED extends js.Object
+  
+  @js.native
   sealed trait NOT_CONTAINS extends js.Object
   
   @js.native
@@ -7004,6 +7022,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait NUMBER_COMPARISON extends js.Object
+  
+  @js.native
+  sealed trait NUMBER_WITH_TIMELINE extends js.Object
   
   @js.native
   sealed trait N_TO_N extends js.Object
@@ -10205,6 +10226,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait TIME_STAMPING extends js.Object
+  
+  @js.native
+  sealed trait TIME_WITH_TIMELINE extends js.Object
   
   @js.native
   sealed trait TITLE extends js.Object
@@ -15000,6 +15024,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ACTIVITY_TYPE_DOES_NOT_EXIST: ACTIVITY_TYPE_DOES_NOT_EXIST = "ACTIVITY_TYPE_DOES_NOT_EXIST".asInstanceOf[ACTIVITY_TYPE_DOES_NOT_EXIST]
   @scala.inline
+  def ACTOR_ACCOUNT_ID: ACTOR_ACCOUNT_ID = "ACTOR_ACCOUNT_ID".asInstanceOf[ACTOR_ACCOUNT_ID]
+  @scala.inline
   def ACTUAL: ACTUAL = "ACTUAL".asInstanceOf[ACTUAL]
   @scala.inline
   def ACUITY: ACUITY = "ACUITY".asInstanceOf[ACUITY]
@@ -15678,6 +15704,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def BASELINE: BASELINE = "BASELINE".asInstanceOf[BASELINE]
   @scala.inline
+  def BASE_REF: BASE_REF = "BASE_REF".asInstanceOf[BASE_REF]
+  @scala.inline
   def BASIC_AUTH: BASIC_AUTH = "BASIC_AUTH".asInstanceOf[BASIC_AUTH]
   @scala.inline
   def BEFORE: BEFORE = "BEFORE".asInstanceOf[BEFORE]
@@ -16057,6 +16085,8 @@ object awsDashSdkLibStrings {
   def COMMERCIAL_ITEM: COMMERCIAL_ITEM = "COMMERCIAL_ITEM".asInstanceOf[COMMERCIAL_ITEM]
   @scala.inline
   def COMMON: COMMON = "COMMON".asInstanceOf[COMMON]
+  @scala.inline
+  def COMPACT: COMPACT = "COMPACT".asInstanceOf[COMPACT]
   @scala.inline
   def COMPANY: COMPANY = "COMPANY".asInstanceOf[COMPANY]
   @scala.inline
@@ -17342,6 +17372,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FILE_GROUP_SETTINGS: FILE_GROUP_SETTINGS = "FILE_GROUP_SETTINGS".asInstanceOf[FILE_GROUP_SETTINGS]
   @scala.inline
+  def FILE_PATH: FILE_PATH = "FILE_PATH".asInstanceOf[FILE_PATH]
+  @scala.inline
   def FILE_UPLOAD: FILE_UPLOAD = "FILE_UPLOAD".asInstanceOf[FILE_UPLOAD]
   @scala.inline
   def FILM_LIGHT: FILM_LIGHT = "FILM_LIGHT".asInstanceOf[FILM_LIGHT]
@@ -17791,6 +17823,8 @@ object awsDashSdkLibStrings {
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   @scala.inline
   def HEADER: HEADER = "HEADER".asInstanceOf[HEADER]
+  @scala.inline
+  def HEAD_REF: HEAD_REF = "HEAD_REF".asInstanceOf[HEAD_REF]
   @scala.inline
   def HEALTHY: HEALTHY = "HEALTHY".asInstanceOf[HEALTHY]
   @scala.inline
@@ -19138,6 +19172,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def NOT_CHECKED: NOT_CHECKED = "NOT_CHECKED".asInstanceOf[NOT_CHECKED]
   @scala.inline
+  def NOT_CONNECTED: NOT_CONNECTED = "NOT_CONNECTED".asInstanceOf[NOT_CONNECTED]
+  @scala.inline
   def NOT_CONTAINS: NOT_CONTAINS = "NOT_CONTAINS".asInstanceOf[NOT_CONTAINS]
   @scala.inline
   def NOT_DEFAULT: NOT_DEFAULT = "NOT_DEFAULT".asInstanceOf[NOT_DEFAULT]
@@ -19219,6 +19255,8 @@ object awsDashSdkLibStrings {
   def NUMBER: NUMBER = "NUMBER".asInstanceOf[NUMBER]
   @scala.inline
   def NUMBER_COMPARISON: NUMBER_COMPARISON = "NUMBER_COMPARISON".asInstanceOf[NUMBER_COMPARISON]
+  @scala.inline
+  def NUMBER_WITH_TIMELINE: NUMBER_WITH_TIMELINE = "NUMBER_WITH_TIMELINE".asInstanceOf[NUMBER_WITH_TIMELINE]
   @scala.inline
   def N_TO_N: N_TO_N = "N_TO_N".asInstanceOf[N_TO_N]
   @scala.inline
@@ -21353,6 +21391,8 @@ object awsDashSdkLibStrings {
   def TIMESTAMP: TIMESTAMP = "TIMESTAMP".asInstanceOf[TIMESTAMP]
   @scala.inline
   def TIME_STAMPING: TIME_STAMPING = "TIME_STAMPING".asInstanceOf[TIME_STAMPING]
+  @scala.inline
+  def TIME_WITH_TIMELINE: TIME_WITH_TIMELINE = "TIME_WITH_TIMELINE".asInstanceOf[TIME_WITH_TIMELINE]
   @scala.inline
   def TITLE: TITLE = "TITLE".asInstanceOf[TITLE]
   @scala.inline
