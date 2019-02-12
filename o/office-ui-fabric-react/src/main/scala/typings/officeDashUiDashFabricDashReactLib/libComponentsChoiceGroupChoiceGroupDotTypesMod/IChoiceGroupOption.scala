@@ -60,6 +60,15 @@ trait IChoiceGroupOption
     */
   var selectedImageSrc: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Call to provide customized styling that will layer on top of the variant rules.
+    */
+  var styles: js.UndefOr[
+    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[
+      officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionStyleProps, 
+      officeDashUiDashFabricDashReactLib.libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDotTypesMod.IChoiceGroupOptionStyles
+    ]
+  ] = js.undefined
+  /**
     * The text string for the option.
     */
   var text: java.lang.String

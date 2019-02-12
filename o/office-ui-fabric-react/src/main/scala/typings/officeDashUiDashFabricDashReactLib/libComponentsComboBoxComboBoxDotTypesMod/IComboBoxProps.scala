@@ -21,6 +21,12 @@ trait IComboBoxProps
     officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.on | officeDashUiDashFabricDashReactLib.officeDashUiDashFabricDashReactLibStrings.off
   ] = js.undefined
   /**
+    * The AutofillProps to be passed into the Autofill component inside combobox
+    */
+  var autofill: js.UndefOr[
+    officeDashUiDashFabricDashReactLib.libComponentsAutofillAutofillDotTypesMod.IAutofillProps
+  ] = js.undefined
+  /**
     * The IconProps to use for the button aspect of the combobox
     */
   var buttonIconProps: js.UndefOr[officeDashUiDashFabricDashReactLib.libComponentsIconIconDotTypesMod.IIconProps] = js.undefined

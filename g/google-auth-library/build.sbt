@@ -1,17 +1,19 @@
 organization := "org.scalablytyped"
 name := "google-auth-library"
-version := "3.1.0-3e606b"
+version := "3.1.0-3fea33"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "abort-controller" % "2.0.2-59625b",
   "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-2d42fd",
+  "org.scalablytyped" %%% "event-target-shim" % "5.0.0-188cac",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20180214Z-a9baf4",
-  "org.scalablytyped" %%% "gaxios" % "1.5.1-a3f73a",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-1d3bf0",
+  "org.scalablytyped" %%% "gaxios" % "1.6.0-4b258d",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-b93ed4",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-30360e",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-6aa686",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-59637e",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-7b590d",
   "org.scalablytyped" %%% "lru-cache" % "4.1-dt-20180530Z-ac2bc3",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",

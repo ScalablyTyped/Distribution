@@ -52,12 +52,6 @@ trait IChoiceGroupOptionProps
     */
   var required: js.UndefOr[scala.Boolean] = js.undefined
   /**
-    * Call to provide customized styling that will layer on top of the variant rules.
-    */
-  var styles: js.UndefOr[
-    atUifabricMergeDashStylesLib.libIStyleFunctionMod.IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles]
-  ] = js.undefined
-  /**
     * Theme (provided through customization.)
     */
   var theme: js.UndefOr[atUifabricStylingLib.libInterfacesIThemeMod.ITheme] = js.undefined

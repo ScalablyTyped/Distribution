@@ -37,6 +37,7 @@ trait GaxiosOptions extends js.Object {
   ] = js.undefined
   var retry: js.UndefOr[scala.Boolean] = js.undefined
   var retryConfig: js.UndefOr[RetryConfig] = js.undefined
+  var signal: js.UndefOr[stdLib.AbortSignal] = js.undefined
   var size: js.UndefOr[scala.Double] = js.undefined
   var timeout: js.UndefOr[scala.Double] = js.undefined
   var url: js.UndefOr[java.lang.String] = js.undefined
