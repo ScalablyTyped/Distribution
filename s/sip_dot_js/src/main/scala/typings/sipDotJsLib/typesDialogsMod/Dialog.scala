@@ -50,6 +50,8 @@ class Dialog protected () extends js.Object {
   def createRequest(method: java.lang.String, extraHeaders: js.Array[java.lang.String], body: java.lang.String): sipDotJsLib.typesSipDashMessageMod.OutgoingRequest = js.native
   def createRequest(method: java.lang.String, extraHeaders: js.UndefOr[scala.Nothing], body: java.lang.String): sipDotJsLib.typesSipDashMessageMod.OutgoingRequest = js.native
   def receiveRequest(request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest): scala.Unit = js.native
+  def sendRequest(applicant: sipDotJsLib.typesSessionDtmfMod.DTMF, method: java.lang.String): sipDotJsLib.typesSipDashMessageMod.OutgoingRequest = js.native
+  def sendRequest(applicant: sipDotJsLib.typesSessionDtmfMod.DTMF, method: java.lang.String, options: js.Any): sipDotJsLib.typesSipDashMessageMod.OutgoingRequest = js.native
   def sendRequest(applicant: sipDotJsLib.typesSessionMod.InviteClientContext, method: java.lang.String): sipDotJsLib.typesSipDashMessageMod.OutgoingRequest = js.native
   def sendRequest(
     applicant: sipDotJsLib.typesSessionMod.InviteClientContext,

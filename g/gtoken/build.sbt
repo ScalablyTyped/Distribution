@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gtoken"
-version := "2.3.2-59637e"
+version := "2.3.2-2da2fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "abort-controller" % "2.0.2-59625b",
   "org.scalablytyped" %%% "event-target-shim" % "5.0.0-188cac",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20180214Z-a9baf4",
-  "org.scalablytyped" %%% "gaxios" % "1.6.0-4b258d",
+  "org.scalablytyped" %%% "gaxios" % "1.7.0-4b258d",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-30360e",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-7b590d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",

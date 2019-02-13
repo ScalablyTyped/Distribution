@@ -10,6 +10,7 @@ trait LDClient
   extends ldclientDashJsDashCommonLib.ldclientDashJsDashCommonMod.LDClientBase {
   /**
     * Allows you to wait until the client has received goals data from LaunchDarkly.
+    *
     * This is only relevant if you are using A/B testing features like click events and
     * pageview events; until the client has received the configuration for these (which
     * happens immediately after the initial request for feature flags), click events and
@@ -18,9 +19,10 @@ trait LDClient
     *
     * The returned Promise will be resolved once the client has received goals data. If
     * you prefer to use event handlers rather than Promises, you can listen on the client
-    * for a "goalsReady" event instead.
+    * for a `"goalsReady"` event instead.
     * 
-    * @returns a Promise containing the initialization state of the client
+    * @returns
+    *   A Promise containing the initialization state of the client.
     */
   def waitUntilGoalsReady(): js.Promise[scala.Unit] = js.native
 }

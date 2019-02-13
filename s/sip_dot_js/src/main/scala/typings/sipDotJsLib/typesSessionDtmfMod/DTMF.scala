@@ -18,6 +18,10 @@ class DTMF protected ()
   var interToneGap: scala.Double = js.native
   var tone: java.lang.String = js.native
   def init_incoming(request: sipDotJsLib.typesSipDashMessageMod.IncomingRequest): scala.Unit = js.native
+  def onDialogError(response: sipDotJsLib.typesSipDashMessageMod.IncomingResponse): scala.Unit = js.native
+  def onRequestTimeout(): scala.Unit = js.native
+  def onTransportError(): scala.Unit = js.native
+  def receiveResponse(response: sipDotJsLib.typesSipDashMessageMod.IncomingResponse): scala.Unit = js.native
   def send(): scala.Unit = js.native
   def send(options: js.Any): scala.Unit = js.native
 }

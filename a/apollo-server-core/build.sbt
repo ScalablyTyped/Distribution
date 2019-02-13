@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "apollo-server-core"
-version := "2.4.0-698128"
+version := "2.4.0-4f2edf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-datasource" % "0.3.0-3a4151",
   "org.scalablytyped" %%% "apollo-engine-reporting" % "1.0.0-e8d713",
   "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-02e022",
-  "org.scalablytyped" %%% "apollo-env" % "0.3.2-408365",
+  "org.scalablytyped" %%% "apollo-env" % "0.3.3-408365",
   "org.scalablytyped" %%% "apollo-graphql" % "0.1.0-95a8f6",
   "org.scalablytyped" %%% "apollo-link" % "1.2.8-11755c",
   "org.scalablytyped" %%% "apollo-server-caching" % "0.3.0-37b029",
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "apollo-server-errors" % "2.2.0-32a1ef",
   "org.scalablytyped" %%% "apollo-server-plugin-base" % "0.3.0-9bdf3f",
   "org.scalablytyped" %%% "apollo-utilities" % "1.1.2-380657",
-  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.2-827883",
+  "org.scalablytyped" %%% "apollographql__apollo-tools" % "0.3.3-f79199",
   "org.scalablytyped" %%% "apollographql__graphql-playground-html" % "1.6.6-f2b579",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-028562",
   "org.scalablytyped" %%% "backo2" % "1.0-dt-20180601Z-b1f74a",
