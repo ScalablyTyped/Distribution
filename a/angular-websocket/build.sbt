@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-websocket"
-version := "2.0-dt-20180214Z-bfa692"
+version := "2.0-dt-20190212Z-bfa692"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

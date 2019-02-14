@@ -61,11 +61,11 @@ class QueryManager[TStore] protected () extends js.Object {
   def generateQueryId(): java.lang.String = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.Anon_Data = js.native
+  ): apolloDashClientLib.Anon_Data[T] = js.native
   def getCurrentQueryResult[T](
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables],
     optimistic: scala.Boolean
-  ): apolloDashClientLib.Anon_Data = js.native
+  ): apolloDashClientLib.Anon_Data[T] = js.native
   def getQueryWithPreviousResult[T](
     queryIdOrObservable: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
   ): apolloDashClientLib.Anon_Document = js.native

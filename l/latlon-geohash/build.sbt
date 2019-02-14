@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "latlon-geohash"
-version := "1.1-dt-20180214Z-ad4b58"
+version := "1.1-dt-20190212Z-ad4b58"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

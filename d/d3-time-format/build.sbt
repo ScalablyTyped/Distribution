@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-time-format"
-version := "2.1-dt-20180214Z-1854d4"
+version := "2.1-dt-20190212Z-1854d4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

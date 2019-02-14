@@ -30,6 +30,7 @@ class ObservableQuery[TData, TVariables] protected ()
   def fetchMore[K /* <: java.lang.String */](
     fetchMoreOptions: (apolloDashClientLib.coreWatchQueryOptionsMod.FetchMoreQueryOptions[TVariables, K]) with (FetchMoreOptions[TData, TVariables])
   ): js.Promise[apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]] = js.native
+  def getCurrentResult(): ApolloCurrentQueryResult[TData] = js.native
   def getLastError(): apolloDashClientLib.errorsApolloErrorMod.ApolloError = js.native
   def getLastResult(): apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData] = js.native
   def isDifferentFromLastResult(newResult: apolloDashClientLib.coreTypesMod.ApolloQueryResult[TData]): scala.Boolean = js.native

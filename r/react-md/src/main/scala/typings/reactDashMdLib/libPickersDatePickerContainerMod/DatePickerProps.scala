@@ -18,7 +18,7 @@ trait DatePickerProps
     js.Function2[
       /* date */ stdLib.Date, 
       /* day */ scala.Double, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   var defaultCalendarDate: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
@@ -38,7 +38,7 @@ trait DatePickerProps
   var initialCalendarDate: js.UndefOr[java.lang.String | stdLib.Date] = js.undefined
   var maxDate: js.UndefOr[stdLib.Date] = js.undefined
   var minDate: js.UndefOr[stdLib.Date] = js.undefined
-  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -58,7 +58,7 @@ trait DatePickerProps
   var onNextMonth: js.UndefOr[js.Function1[/* firstDayInMonth */ stdLib.Date, scala.Unit]] = js.undefined
   var onPreviousMonth: js.UndefOr[js.Function1[/* firstDayInMonth */ stdLib.Date, scala.Unit]] = js.undefined
   var onYearSelected: js.UndefOr[js.Function1[/* firstDayInYear */ stdLib.Date, scala.Unit]] = js.undefined
-  var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */

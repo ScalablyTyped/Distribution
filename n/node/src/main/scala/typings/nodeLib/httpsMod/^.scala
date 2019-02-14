@@ -10,14 +10,7 @@ import scala.scalajs.js.annotation._
 object ^ extends js.Object {
   var globalAgent: nodeLib.httpsMod.Agent = js.native
   def createServer(options: nodeLib.httpsMod.ServerOptions): nodeLib.httpsMod.Server = js.native
-  def createServer(
-    options: nodeLib.httpsMod.ServerOptions,
-    requestListener: js.Function2[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ]
-  ): nodeLib.httpsMod.Server = js.native
+  def createServer(options: nodeLib.httpsMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpsMod.Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

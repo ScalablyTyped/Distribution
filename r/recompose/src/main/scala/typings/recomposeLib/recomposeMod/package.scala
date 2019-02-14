@@ -36,7 +36,7 @@ package object recomposeMod {
   type componentFactory = js.Function2[
     /* props */ js.UndefOr[js.Object], 
     /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any]
+    reactLib.reactMod.ReactNs.ReactElement
   ]
   type mapper[TInner, TOutter] = js.Function1[/* input */ TInner, TOutter]
   type predicate[T] = mapper[T, scala.Boolean]

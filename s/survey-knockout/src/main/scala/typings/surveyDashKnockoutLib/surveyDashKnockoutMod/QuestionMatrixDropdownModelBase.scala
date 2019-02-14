@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because var conflicts: columns. Inlined onRowChanged, getRowIndex, validateCell, createQuestion, getLocale, getMarkdownHtml, getProcessedText, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IMatrixDropdownData because var conflicts: columns. Inlined onRowChanged, onRowChanging, getRowIndex, validateCell, createQuestion, getLocale, getMarkdownHtml, getProcessedText, getSurvey */ @JSImport("survey-knockout", "QuestionMatrixDropdownModelBase")
 @js.native
 class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseModel[MatrixDropdownRowModelBase, MatrixDropdownColumn] {
   def this(name: java.lang.String) = this()
@@ -92,6 +92,7 @@ class QuestionMatrixDropdownModelBase protected () extends QuestionMatrixBaseMod
   def onColumnPropertiesChanged(column: MatrixDropdownColumn): scala.Unit = js.native
   /* protected */ def onMatrixRowCreated(row: MatrixDropdownRowModelBase): scala.Unit = js.native
   def onRowChanged(row: MatrixDropdownRowModelBase, columnName: java.lang.String, newRowValue: js.Any): scala.Unit = js.native
+  def onRowChanging(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): js.Any = js.native
   /* protected */ def runCellsCondition(values: HashTable[_], properties: HashTable[_]): scala.Unit = js.native
   /**
     * Set the row value.

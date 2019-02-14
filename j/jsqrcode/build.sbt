@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsqrcode"
-version := "1.0-dt-20180214Z-95812c"
+version := "1.0-dt-20190212Z-95812c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

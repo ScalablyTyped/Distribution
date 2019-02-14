@@ -19,7 +19,7 @@ trait Anon_AggregationCursor extends js.Object {
   var Cursor: org.scalablytyped.runtime.Instantiable0[mongodbLib.mongodbMod.Cursor[js.Object]] = js.native
   var DBRef: org.scalablytyped.runtime.Instantiable2[
     /* namespace */ java.lang.String, 
-    /* oid */ bsonLib.bsonMod.ObjectID, 
+    /* oid */ bsonLib.bsonMod.ObjectId, 
     mongodbLib.mongodbMod.DBRef
   ] = js.native
   var Db: org.scalablytyped.runtime.Instantiable2[

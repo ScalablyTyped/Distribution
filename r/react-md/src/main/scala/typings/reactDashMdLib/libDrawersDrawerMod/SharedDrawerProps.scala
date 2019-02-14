@@ -16,7 +16,7 @@ trait SharedDrawerProps
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var lastChild: js.UndefOr[scala.Boolean] = js.undefined
   var navClassName: js.UndefOr[java.lang.String] = js.undefined
-  var navItems: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement[_] | NavItem]] = js.undefined
+  var navItems: js.UndefOr[js.Array[reactLib.reactMod.ReactNs.ReactElement | NavItem]] = js.undefined
   var navItemsId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var navStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var onMediaTypeChange: js.UndefOr[

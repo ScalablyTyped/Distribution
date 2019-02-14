@@ -21,5 +21,7 @@ class ImageOverlay protected () extends Layer {
   def setBounds(bounds: LatLngBounds): this.type = js.native
   def setOpacity(opacity: scala.Double): this.type = js.native
   def setUrl(url: java.lang.String): this.type = js.native
+  /** Changes the zIndex of the image overlay */
+  def setZIndex(value: scala.Double): this.type = js.native
 }
 

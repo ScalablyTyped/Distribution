@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 trait VirtualizedListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[ItemT] {
   @JSName("renderItem")
   var renderItem_Original: ListRenderItem[ItemT] = js.native
-  def renderItem(info: ListRenderItemInfo[ItemT]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def renderItem(info: ListRenderItemInfo[ItemT]): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

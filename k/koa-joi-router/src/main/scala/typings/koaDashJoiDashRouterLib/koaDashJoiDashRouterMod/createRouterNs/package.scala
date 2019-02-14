@@ -18,4 +18,5 @@ package object createRouterNs {
     /* repeated */ Handler, 
     Router
   ]
+  type OutputValidation = koaDashJoiDashRouterLib.Anon_Body | koaDashJoiDashRouterLib.Anon_Headers
 }

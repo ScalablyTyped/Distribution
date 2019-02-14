@@ -14,7 +14,7 @@ trait MotionProps extends js.Object {
     * @param interpolatedStyle
     */
   var children: js.UndefOr[
-    js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.ReactNs.ReactElement[_]]
+    js.Function1[/* interpolatedStyle */ PlainStyle, reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
   /**
     * The default style. Being ignored on subsequent renders

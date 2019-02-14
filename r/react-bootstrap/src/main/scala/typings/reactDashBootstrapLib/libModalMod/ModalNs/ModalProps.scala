@@ -31,6 +31,6 @@ trait ModalProps
   var onHide: js.Function
   var onShow: js.UndefOr[js.Function1[/* node */ reactLib.HTMLElement, _]] = js.undefined
   var show: js.UndefOr[scala.Boolean] = js.undefined
-  var transition: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var transition: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
 }
 

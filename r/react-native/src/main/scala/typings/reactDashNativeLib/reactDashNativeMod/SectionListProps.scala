@@ -14,7 +14,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
     * Rendered in between each section.
     */
   var SectionSeparatorComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ] = js.undefined
   /**
     * `getItemLayout` is an optional optimization that lets us skip measurement of dynamic
@@ -48,7 +48,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
   var renderSectionFooter: js.UndefOr[
     js.Function1[
       /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | scala.Null
     ]
   ] = js.undefined
   /**
@@ -57,7 +57,7 @@ trait SectionListProps[ItemT] extends VirtualizedListWithoutRenderItemProps[Item
   var renderSectionHeader: js.UndefOr[
     js.Function1[
       /* info */ reactDashNativeLib.Anon_Section[ItemT], 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | scala.Null
     ]
   ] = js.undefined
   /**

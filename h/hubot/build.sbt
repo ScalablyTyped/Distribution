@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hubot"
-version := "2.19-dt-20180424Z-236271"
+version := "2.19-dt-20190212Z-236271"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

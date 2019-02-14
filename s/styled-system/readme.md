@@ -11,6 +11,7 @@
 //                 Joachim Schuler <https://github.com/jschuler>
 //                 Adam Misiorny <https://github.com/adam187>
 //                 Sara F-P <https://github.com/gretzky>
+//                 Chris LoPresto <https://github.com/chrislopresto>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

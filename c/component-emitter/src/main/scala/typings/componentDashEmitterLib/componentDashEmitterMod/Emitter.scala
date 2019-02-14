@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Emitter extends js.Object {
-  def emit(event: java.lang.String, args: js.Any*): scala.Boolean = js.native
+  def emit(event: java.lang.String, args: js.Any*): Emitter = js.native
   def hasListeners(event: java.lang.String): scala.Boolean = js.native
   def listeners(event: java.lang.String): js.Array[js.Function] = js.native
   def off(): Emitter = js.native

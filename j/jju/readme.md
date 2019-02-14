@@ -1,6 +1,6 @@
 ```
 // Type definitions for jju 1.4
-// Project: https://github.com/rlidwka/jju
+// Project: https://github.com/rlidwka/jju, http://rlidwka.github.io/jju
 // Definitions by: Elizabeth Craig <https://github.com/ecraig12345>
 //                 Alex Kocharin <https://github.com/rlidwka>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

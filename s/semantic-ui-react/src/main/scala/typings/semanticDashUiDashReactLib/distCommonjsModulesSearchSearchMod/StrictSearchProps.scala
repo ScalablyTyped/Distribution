@@ -27,7 +27,7 @@ trait StrictSearchProps extends js.Object {
   var categoryRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchCategoryMod.SearchCategoryProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /** Additional classes. */
@@ -147,7 +147,7 @@ trait StrictSearchProps extends js.Object {
   var resultRenderer: js.UndefOr[
     js.Function1[
       /* props */ semanticDashUiDashReactLib.distCommonjsModulesSearchSearchResultMod.SearchResultProps, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**

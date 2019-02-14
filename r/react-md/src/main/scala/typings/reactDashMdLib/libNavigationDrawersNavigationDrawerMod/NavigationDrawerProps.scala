@@ -45,7 +45,7 @@ trait NavigationDrawerProps
   var onVisibilityToggle: js.UndefOr[
     js.Function2[/* visible */ scala.Boolean, /* event */ reactLib.Event, scala.Unit]
   ] = js.undefined
-  var persistentIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var persistentIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -56,7 +56,7 @@ trait NavigationDrawerProps
   var persistentIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var tabletDrawerType: js.UndefOr[reactDashMdLib.libDrawersDrawerMod.DrawerType] = js.undefined
   var tabletMinWidth: js.UndefOr[scala.Double] = js.undefined
-  var temporaryIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var temporaryIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -66,7 +66,7 @@ trait NavigationDrawerProps
     */
   var temporaryIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var toolbarActions: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
+    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
   var toolbarChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var toolbarClassName: js.UndefOr[java.lang.String] = js.undefined
@@ -80,7 +80,7 @@ trait NavigationDrawerProps
   ] = js.undefined
   var toolbarTitle: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var toolbarTitleClassName: js.UndefOr[java.lang.String] = js.undefined
-  var toolbarTitleMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var toolbarTitleMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var toolbarTitleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var toolbarZDepth: js.UndefOr[scala.Double] = js.undefined
   var transitionEnterTimeout: js.UndefOr[scala.Double] = js.undefined

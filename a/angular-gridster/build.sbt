@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-gridster"
-version := "0.13-dt-20180214Z-d16cc0"
+version := "0.13-dt-20190212Z-d16cc0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

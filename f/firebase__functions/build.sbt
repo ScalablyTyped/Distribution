@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase__functions"
-version := "0.3.6-48fcda"
+version := "0.3.6-0735d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__functions-types" % "0.2.2-1c156e",
   "org.scalablytyped" %%% "firebase__messaging-types" % "0.2.4-a3aa3a",
   "org.scalablytyped" %%% "firebase__util" % "0.2.6-051cad",
-  "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20180214Z-292775",
+  "org.scalablytyped" %%% "isomorphic-fetch" % "0.0-dt-20190212Z-292775",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9")
 publishArtifact in packageDoc := false

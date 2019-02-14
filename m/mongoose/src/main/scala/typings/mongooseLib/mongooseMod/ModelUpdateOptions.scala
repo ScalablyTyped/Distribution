@@ -11,6 +11,11 @@ trait ModelUpdateOptions
 /* other */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   /** whether multiple documents should be updated (false) */
   var multi: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *  by default, mongoose only returns the first error that occurred in casting the query.
+    *  Turn on this option to aggregate all the cast errors.
+    */
+  var multipleCastError: js.UndefOr[scala.Boolean] = js.undefined
   /** disables update-only mode, allowing you to overwrite the doc (false) */
   var overwrite: js.UndefOr[scala.Boolean] = js.undefined
   /**

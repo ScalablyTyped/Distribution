@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "csprng"
-version := "0.1-dt-20180214Z-87d1dc"
+version := "0.1-dt-20190212Z-87d1dc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

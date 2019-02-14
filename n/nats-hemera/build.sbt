@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nats-hemera"
-version := "2.0-dt-20180214Z-fd3845"
+version := "2.0-dt-20190212Z-fd3845"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

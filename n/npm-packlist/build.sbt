@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "npm-packlist"
-version := "1.1-dt-20180214Z-a7a2ad"
+version := "1.1-dt-20190212Z-a7a2ad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

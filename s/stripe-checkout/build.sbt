@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stripe-checkout"
-version := "1.0-dt-20181019Z-588916"
+version := "1.0-dt-20190212Z-588916"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

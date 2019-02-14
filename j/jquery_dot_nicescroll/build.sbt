@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_nicescroll"
-version := "3.7-dt-20180602Z-a31656"
+version := "3.7-dt-20190212Z-a31656"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

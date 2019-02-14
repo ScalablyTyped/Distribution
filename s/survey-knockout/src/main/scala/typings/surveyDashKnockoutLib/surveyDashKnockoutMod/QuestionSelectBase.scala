@@ -26,7 +26,7 @@ class QuestionSelectBase protected () extends Question {
     */
   var choicesEnableIf: java.lang.String = js.native
   /**
-    * Use this property to render items in a specific order.
+    * Use this property to render items in a specific order: "asc", "desc", "random". Default value is "none".
     */
   var choicesOrder: java.lang.String = js.native
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feathersjs__rest-client"
-version := "1.3-dt-20190117Z-c2341f"
+version := "1.3-dt-20190213Z-c2341f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

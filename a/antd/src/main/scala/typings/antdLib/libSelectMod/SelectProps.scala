@@ -10,7 +10,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var clearIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultValue: js.UndefOr[T] = js.undefined
   var firstActiveValue: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var getInputElement: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
   var labelInValue: js.UndefOr[scala.Boolean] = js.undefined
   var maxTagCount: js.UndefOr[scala.Double] = js.undefined
   var maxTagPlaceholder: js.UndefOr[
@@ -24,7 +24,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   var onChange: js.UndefOr[
     js.Function2[
       /* value */ T, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
+      /* option */ reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement], 
       scala.Unit
     ]
   ] = js.undefined
@@ -50,7 +50,7 @@ trait SelectProps[T] extends AbstractSelectProps {
   ] = js.undefined
   var onPopupScroll: js.UndefOr[reactLib.reactMod.ReactNs.UIEventHandler[reactLib.HTMLDivElement]] = js.undefined
   var onSelect: js.UndefOr[
-    js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement[_], _]
+    js.Function2[/* value */ T, /* option */ reactLib.reactMod.ReactNs.ReactElement, _]
   ] = js.undefined
   var optionFilterProp: js.UndefOr[java.lang.String] = js.undefined
   var optionLabelProp: js.UndefOr[java.lang.String] = js.undefined

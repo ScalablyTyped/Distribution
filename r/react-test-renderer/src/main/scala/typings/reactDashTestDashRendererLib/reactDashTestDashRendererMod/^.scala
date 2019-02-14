@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def act(callback: js.Function0[js.UndefOr[scala.Unit]]): reactDashTestDashRendererLib.reactDashTestDashRendererMod.DebugPromiseLike | js.Object = js.native
-  def create(nextElement: reactLib.reactMod.ReactNs.ReactElement[_]): reactDashTestDashRendererLib.reactDashTestDashRendererMod.ReactTestRenderer = js.native
+  def create(nextElement: reactLib.reactMod.ReactNs.ReactElement): reactDashTestDashRendererLib.reactDashTestDashRendererMod.ReactTestRenderer = js.native
   def create(
-    nextElement: reactLib.reactMod.ReactNs.ReactElement[_],
+    nextElement: reactLib.reactMod.ReactNs.ReactElement,
     options: reactDashTestDashRendererLib.reactDashTestDashRendererMod.TestRendererOptions
   ): reactDashTestDashRendererLib.reactDashTestDashRendererMod.ReactTestRenderer = js.native
 }

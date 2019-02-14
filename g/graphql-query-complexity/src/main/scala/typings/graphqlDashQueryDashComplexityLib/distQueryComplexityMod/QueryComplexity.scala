@@ -20,10 +20,13 @@ trait QueryComplexity extends js.Object {
     typeDef: graphqlLib.graphqlMod.GraphQLInterfaceType,
     complexity: scala.Double
   ): scala.Double = js.native
-  def nodeComplexity(node: graphqlLib.languageAstMod.FieldNode, typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _]): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.FieldNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _],
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ): scala.Double = js.native
+  def nodeComplexity(
+    node: graphqlLib.languageAstMod.FieldNode,
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     complexity: scala.Double
   ): scala.Double = js.native
   def nodeComplexity(node: graphqlLib.languageAstMod.FieldNode, typeDef: graphqlLib.graphqlMod.GraphQLUnionType): scala.Double = js.native
@@ -43,11 +46,11 @@ trait QueryComplexity extends js.Object {
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.FragmentDefinitionNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _]
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.FragmentDefinitionNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _],
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     complexity: scala.Double
   ): scala.Double = js.native
   def nodeComplexity(
@@ -70,11 +73,11 @@ trait QueryComplexity extends js.Object {
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.InlineFragmentNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _]
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.InlineFragmentNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _],
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     complexity: scala.Double
   ): scala.Double = js.native
   def nodeComplexity(
@@ -97,11 +100,11 @@ trait QueryComplexity extends js.Object {
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.OperationDefinitionNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _]
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Double = js.native
   def nodeComplexity(
     node: graphqlLib.languageAstMod.OperationDefinitionNode,
-    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _],
+    typeDef: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     complexity: scala.Double
   ): scala.Double = js.native
   def nodeComplexity(

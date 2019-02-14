@@ -14,15 +14,17 @@ abstract class SchemaVisitor () extends js.Object {
   def visitEnumValue(value: graphqlLib.typeDefinitionMod.GraphQLEnumValue, details: graphqlDashToolsLib.Anon_EnumType): graphqlLib.typeDefinitionMod.GraphQLEnumValue | scala.Unit | scala.Null = js.native
   def visitFieldDefinition(
     field: graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]],
-    details: graphqlDashToolsLib.Anon_ObjectType
+    details: graphqlDashToolsLib.Anon_Key
   ): (graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Unit | scala.Null = js.native
   def visitInputFieldDefinition(
     field: graphqlLib.typeDefinitionMod.GraphQLInputField,
-    details: graphqlDashToolsLib.Anon_ObjectTypeGraphQLInputObjectType
+    details: graphqlDashToolsLib.Anon_ObjectType
   ): graphqlLib.typeDefinitionMod.GraphQLInputField | scala.Unit | scala.Null = js.native
   def visitInputObject(`object`: graphqlLib.graphqlMod.GraphQLInputObjectType): graphqlLib.graphqlMod.GraphQLInputObjectType | scala.Unit | scala.Null = js.native
   def visitInterface(iface: graphqlLib.graphqlMod.GraphQLInterfaceType): graphqlLib.graphqlMod.GraphQLInterfaceType | scala.Unit | scala.Null = js.native
-  def visitObject(`object`: graphqlLib.graphqlMod.GraphQLObjectType[_, _]): (graphqlLib.graphqlMod.GraphQLObjectType[_, _]) | scala.Unit | scala.Null = js.native
+  def visitObject(
+    `object`: graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ): (graphqlLib.graphqlMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]) | scala.Unit | scala.Null = js.native
   def visitScalar(scalar: graphqlLib.graphqlMod.GraphQLScalarType): graphqlLib.graphqlMod.GraphQLScalarType | scala.Unit | scala.Null = js.native
   def visitSchema(schema: graphqlLib.graphqlMod.GraphQLSchema): scala.Unit = js.native
   def visitUnion(union: graphqlLib.graphqlMod.GraphQLUnionType): graphqlLib.graphqlMod.GraphQLUnionType | scala.Unit | scala.Null = js.native

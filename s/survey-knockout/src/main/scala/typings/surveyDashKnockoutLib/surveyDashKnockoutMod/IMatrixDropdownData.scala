@@ -14,6 +14,7 @@ trait IMatrixDropdownData extends js.Object {
   def getRowIndex(row: MatrixDropdownRowModelBase): scala.Double
   def getSurvey(): ISurvey
   def onRowChanged(row: MatrixDropdownRowModelBase, columnName: java.lang.String, newRowValue: js.Any): scala.Unit
+  def onRowChanging(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): js.Any
   def validateCell(row: MatrixDropdownRowModelBase, columnName: java.lang.String, rowValue: js.Any): SurveyError
 }
 

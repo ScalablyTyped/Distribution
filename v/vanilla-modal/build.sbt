@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vanilla-modal"
-version := "1.6-dt-20180305Z-d7adc5"
+version := "1.6-dt-20190212Z-d7adc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

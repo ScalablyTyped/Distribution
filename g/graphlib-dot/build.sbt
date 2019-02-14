@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "graphlib-dot"
-version := "0.6-dt-20181018Z-21fb59"
+version := "0.6-dt-20190212Z-21fb59"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

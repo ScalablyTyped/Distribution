@@ -9,6 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class GraphQLInterfaceType protected ()
   extends graphqlLib.typeMod.GraphQLInterfaceType {
-  def this(config: graphqlLib.typeDefinitionMod.GraphQLInterfaceTypeConfig[_, _]) = this()
+  def this(config: graphqlLib.typeDefinitionMod.GraphQLInterfaceTypeConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]]) = this()
 }
 

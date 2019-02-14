@@ -28,7 +28,7 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def ThemeConsumer(props: reactLib.reactMod.ReactNs.ConsumerProps[T]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def ThemeConsumer(props: reactLib.reactMod.ReactNs.ConsumerProps[T]): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def createGlobalStyle[P /* <: js.Object */](first: stdLib.TemplateStringsArray, interpolations: (Interpolation[ThemedStyledProps[P, T]])*): GlobalStyleComponent[P, T] = js.native
   def createGlobalStyle[P /* <: js.Object */](first: CSSObject, interpolations: (Interpolation[ThemedStyledProps[P, T]])*): GlobalStyleComponent[P, T] = js.native
   def createGlobalStyle[P /* <: js.Object */](
@@ -116,10 +116,10 @@ trait ThemedStyledComponentsModule[T /* <: js.Object */, U /* <: js.Object */] e
     ThemedStyledProps[P, styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]]]
   ] = js.native
   def default[C /* <: AnyStyledComponent */](component: C): ThemedStyledFunction[
-    styledDashComponentsLib.StyledComponentInnerComponent[C], 
+    StyledComponentInnerComponent[C], 
     styledDashComponentsLib.AnyIfEmpty[styledDashComponentsLib.AnyIfEmpty[T]], 
-    styledDashComponentsLib.StyledComponentInnerOtherProps[C], 
-    styledDashComponentsLib.StyledComponentInnerAttrs[C]
+    StyledComponentInnerOtherProps[C], 
+    StyledComponentInnerAttrs[C]
   ] = js.native
   @JSName("default")
   def default_CString[C /* <: java.lang.String */](

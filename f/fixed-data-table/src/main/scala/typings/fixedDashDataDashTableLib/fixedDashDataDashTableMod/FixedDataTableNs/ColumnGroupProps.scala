@@ -39,9 +39,6 @@ trait ColumnGroupProps
     * If you pass in a function, you will receive the same props
     * object as the first argument.
     */
-  var header: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
-    /* props */ CellProps, 
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
-  ])
+  var header: java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactNs.ReactElement])
 }
 

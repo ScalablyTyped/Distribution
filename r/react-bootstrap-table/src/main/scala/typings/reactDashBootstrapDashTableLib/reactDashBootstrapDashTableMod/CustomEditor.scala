@@ -21,6 +21,6 @@ trait CustomEditor[TRow /* <: js.Object */, K /* <: java.lang.String */] extends
       scala.Unit
     ],
     props: CustomEditorProps[TRow, K]
-  ): reactLib.reactMod.ReactNs.ReactElement[_]
+  ): reactLib.reactMod.ReactNs.ReactElement
 }
 

@@ -16,17 +16,17 @@ trait GridComponent
   var Row_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.GridRowProps] = js.native
   def Column(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsGridGridColumnMod.GridColumnProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Column(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsGridGridColumnMod.GridColumnProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Row(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.GridRowProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Row(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsGridGridRowMod.GridRowProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "form-serialize"
-version := "0.7-dt-20180723Z-869a9b"
+version := "0.7-dt-20190212Z-869a9b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait GridTileProps extends js.Object {
-  var actionIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var actionIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var actionPosition: js.UndefOr[
     materialDashUiLib.materialDashUiLibStrings.left | materialDashUiLib.materialDashUiLibStrings.right
   ] = js.undefined
   var cols: js.UndefOr[scala.Double] = js.undefined
   var containerElement: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState])
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState])
   ] = js.undefined
   var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[js.Object]] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined

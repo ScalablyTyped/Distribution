@@ -27,6 +27,6 @@ trait CustomFilter[FParams /* <: js.Object */, FElement /* <: CustomFilterElemen
       scala.Unit
     ],
     customFilterParameters: CustomFilterParameters[FParams]
-  ): reactLib.reactMod.ReactNs.ReactElement[FElement]
+  ): reactLib.reactMod.ReactNs.ReactElement
 }
 

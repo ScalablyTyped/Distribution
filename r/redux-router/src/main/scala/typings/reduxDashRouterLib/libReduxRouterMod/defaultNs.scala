@@ -39,7 +39,7 @@ object defaultNs extends js.Object {
   def generatePath(pattern: java.lang.String): java.lang.String = js.native
   def generatePath(
     pattern: java.lang.String,
-    params: org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double | scala.Boolean]
+    params: org.scalablytyped.runtime.StringDictionary[js.UndefOr[java.lang.String | scala.Double | scala.Boolean]]
   ): java.lang.String = js.native
   def matchPath[Params /* <: /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}

@@ -57,6 +57,15 @@ trait ListProps extends CommonProps {
     */
   var onScroll: js.UndefOr[js.Function1[/* props */ ListOnScrollProps, _]] = js.undefined
   /**
+    * The number of items (rows or columns) to render outside of the visible area. This property can be important for two reasons:
+    *
+    * - Overscanning by one row or column allows the tab key to focus on the next (not yet visible) item.
+    * - Overscanning slightly can reduce or prevent a flash of empty space when a user first starts scrolling.
+    *
+    * Note that overscanning too much can negatively impact performance. By default, List overscans by one item.
+    */
+  var overscanCount: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Width of the list.
     *
     * For horizontal lists, this must be a number. It affects the number of columns that will be rendered (and displayed) at any given time.

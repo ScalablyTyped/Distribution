@@ -21,6 +21,6 @@ class LoadingManager ()
       /* loaded */ scala.Double, 
       /* total */ scala.Double, 
       scala.Unit
-    ], onError: js.Function0[scala.Unit]) = this()
+    ], onError: js.Function1[/* url */ java.lang.String, scala.Unit]) = this()
 }
 

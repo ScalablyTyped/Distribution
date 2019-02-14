@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "datatables_dot_net"
-version := "1.10-dt-20181220Z-c45ee6"
+version := "1.10-dt-20190212Z-c45ee6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

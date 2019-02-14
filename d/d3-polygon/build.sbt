@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-polygon"
-version := "1.0-dt-20180507Z-ac0eba"
+version := "1.0-dt-20190212Z-ac0eba"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

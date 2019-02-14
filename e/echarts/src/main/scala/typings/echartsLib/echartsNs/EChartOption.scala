@@ -332,7 +332,7 @@ trait EChartOption[TSeries] extends js.Object {
     *
     * @see https://ecomfe.github.io/echarts-doc/public/en/option.html#title
     */
-  var title: js.UndefOr[EChartTitleOption] = js.undefined
+  var title: js.UndefOr[EChartTitleOption | js.Array[EChartTitleOption]] = js.undefined
   /**
     * A group of utility tools, which includes `export`, `data view`,
     * `dynamic type switching`, `data area zooming`, and `reset`.

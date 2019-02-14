@@ -45,7 +45,7 @@ trait SelectRow[TRow /* <: js.Object */] extends js.Object {
   var customComponent: js.UndefOr[
     js.Function1[
       /* props */ CustomSelectProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**

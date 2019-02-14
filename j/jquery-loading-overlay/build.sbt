@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-loading-overlay"
-version := "1.0-dt-20180424Z-f46cac"
+version := "1.0-dt-20190212Z-f46cac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 ```
 // Type definitions for plotly.js 1.43
-// Project: https://plot.ly/javascript/
+// Project: https://plot.ly/javascript/, https://github.com/plotly/plotly.js
 // Definitions by: Chris Gervang <https://github.com/chrisgervang>
 //                 Martin Duparc <https://github.com/martinduparc>
 //                 Frederik Aalund <https://github.com/frederikaalund>

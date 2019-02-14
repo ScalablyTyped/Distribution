@@ -13,15 +13,23 @@ class GraphQLSchema protected () extends js.Object {
   var extensionASTNodes: graphqlLib.tsutilsMaybeMod.Maybe[js.Array[graphqlLib.languageAstMod.SchemaExtensionNode]] = js.native
   def getDirective(name: java.lang.String): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDirectivesMod.GraphQLDirective] = js.native
   def getDirectives(): js.Array[graphqlLib.typeDirectivesMod.GraphQLDirective] = js.native
-  def getMutationType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]] = js.native
-  def getPossibleTypes(abstractType: graphqlLib.typeDefinitionMod.GraphQLAbstractType): js.Array[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]] = js.native
-  def getQueryType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]] = js.native
-  def getSubscriptionType(): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]] = js.native
+  def getMutationType(): graphqlLib.tsutilsMaybeMod.Maybe[
+    graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.native
+  def getPossibleTypes(abstractType: graphqlLib.typeDefinitionMod.GraphQLAbstractType): js.Array[
+    graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.native
+  def getQueryType(): graphqlLib.tsutilsMaybeMod.Maybe[
+    graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.native
+  def getSubscriptionType(): graphqlLib.tsutilsMaybeMod.Maybe[
+    graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+  ] = js.native
   def getType(name: java.lang.String): graphqlLib.tsutilsMaybeMod.Maybe[graphqlLib.typeDefinitionMod.GraphQLNamedType] = js.native
   def getTypeMap(): TypeMap = js.native
   def isPossibleType(
     abstractType: graphqlLib.typeDefinitionMod.GraphQLAbstractType,
-    possibleType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _]
+    possibleType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   ): scala.Boolean = js.native
 }
 

@@ -13,6 +13,11 @@ trait QueryFindOneAndUpdateOptions extends QueryFindOneAndRemoveOptions {
   var context: js.UndefOr[java.lang.String] = js.undefined
   /** Field selection. Equivalent to .select(fields).findOneAndUpdate() */
   var fields: js.UndefOr[js.Any | java.lang.String] = js.undefined
+  /**
+    *  by default, mongoose only returns the first error that occurred in casting the query.
+    *  Turn on this option to aggregate all the cast errors.
+    */
+  var multipleCastError: js.UndefOr[scala.Boolean] = js.undefined
   /** if true, return the modified document rather than the original. defaults to false (changed in 4.0) */
   var `new`: js.UndefOr[scala.Boolean] = js.undefined
   /** if true, runs update validators on this command. Update validators validate the update operation against the model's schema. */

@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 trait DialogProps
   extends reactDashMdLib.libMod.Props {
   var actions: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
-      reactLib.reactMod.ReactNs.ReactElement[_] | reactDashMdLib.libButtonsButtonMod.ButtonProps
+    reactLib.reactMod.ReactNs.ReactElement | reactDashMdLib.libButtonsButtonMod.ButtonProps | (js.Array[
+      reactLib.reactMod.ReactNs.ReactElement | reactDashMdLib.libButtonsButtonMod.ButtonProps
     ])
   ] = js.undefined
   var additionalFocusKeys: js.UndefOr[js.Array[scala.Double]] = js.undefined

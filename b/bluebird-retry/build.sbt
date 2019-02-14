@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bluebird-retry"
-version := "0.11-dt-20180712Z-1b6ff1"
+version := "0.11-dt-20190212Z-1b6ff1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

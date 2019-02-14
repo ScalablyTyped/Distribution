@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "sprintf-js"
-version := "1.1-dt-20181019Z-00eaa7"
+version := "1.1-dt-20190212Z-00eaa7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

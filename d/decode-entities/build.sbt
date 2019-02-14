@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "decode-entities"
-version := "1.0-dt-20181221Z-546238"
+version := "1.0-dt-20190212Z-546238"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

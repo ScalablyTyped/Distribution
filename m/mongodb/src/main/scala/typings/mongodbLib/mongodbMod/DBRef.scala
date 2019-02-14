@@ -11,10 +11,10 @@ class DBRef protected ()
   extends bsonLib.bsonMod.DBRef {
   /**
     * @param namespace The collection name.
-    * @param oid The reference ObjectID.
+    * @param oid The reference ObjectId.
     * @param db Optional db name, if omitted the reference is local to the current db
     */
-  def this(namespace: java.lang.String, oid: bsonLib.bsonMod.ObjectID) = this()
-  def this(namespace: java.lang.String, oid: bsonLib.bsonMod.ObjectID, db: java.lang.String) = this()
+  def this(namespace: java.lang.String, oid: bsonLib.bsonMod.ObjectId) = this()
+  def this(namespace: java.lang.String, oid: bsonLib.bsonMod.ObjectId, db: java.lang.String) = this()
 }
 

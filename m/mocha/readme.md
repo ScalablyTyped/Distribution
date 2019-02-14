@@ -1,6 +1,6 @@
 ```
 // Type definitions for mocha 5.2
-// Project: http://mochajs.org/
+// Project: https://mochajs.org
 // Definitions by: Kazi Manzur Rashid <https://github.com/kazimanzurrashid>
 //                 otiai10 <https://github.com/otiai10>
 //                 jt000 <https://github.com/jt000>

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-queue"
-version := "3.0-dt-20180901Z-115c7c"
+version := "3.0-dt-20190212Z-115c7c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -40,6 +40,6 @@ trait DropdownProps extends js.Object {
     * argument should spread through to an element containing _both_ the
     * menu and toggle in order to handle keyboard events for focus management.
     */
-  def children(renderProps: DropdownRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(renderProps: DropdownRenderProps): reactLib.reactMod.ReactNs.ReactElement
 }
 

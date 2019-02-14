@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val defaultBreakpoints: js.Array[java.lang.String] = js.native
+  val styles: styledDashSystemLib.styledDashSystemMod.StylesProps = js.native
   def alignContent(args: js.Any*): js.Any = js.native
   def alignItems(args: js.Any*): js.Any = js.native
   def alignSelf(args: js.Any*): js.Any = js.native
@@ -78,6 +79,7 @@ object ^ extends js.Object {
   def position(args: js.Any*): js.Any = js.native
   def px(n: js.Any): java.lang.String = js.native
   def ratio(args: js.Any*): js.Any = js.native
+  def ratioPadding(args: js.Any*): js.Any = js.native
   def right(args: js.Any*): js.Any = js.native
   def size(args: js.Any*): js.Any = js.native
   def sizeHeight(args: js.Any*): js.Any = js.native

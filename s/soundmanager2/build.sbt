@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "soundmanager2"
-version := "2.97-dt-20180214Z-20fe0b"
+version := "2.97-dt-20190212Z-20fe0b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

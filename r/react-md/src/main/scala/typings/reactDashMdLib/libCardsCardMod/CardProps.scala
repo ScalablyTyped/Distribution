@@ -11,7 +11,7 @@ trait CardProps
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var defaultExpanded: js.UndefOr[scala.Boolean] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
-  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */

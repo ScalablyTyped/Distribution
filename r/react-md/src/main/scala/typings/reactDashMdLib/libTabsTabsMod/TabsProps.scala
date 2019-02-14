@@ -14,7 +14,7 @@ trait TabsProps
   var alignToKeyline: js.UndefOr[scala.Boolean] = js.undefined
   var centered: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabMod.TabProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabMod.TabProps]]
+    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
@@ -23,7 +23,7 @@ trait TabsProps
   var desktopMinWidth: js.UndefOr[scala.Double] = js.undefined
   var inactiveTabClassName: js.UndefOr[java.lang.String] = js.undefined
   var indicatorHeight: js.UndefOr[scala.Double] = js.undefined
-  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var nextIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -43,7 +43,7 @@ trait TabsProps
     ]
   ] = js.undefined
   var overflowMenu: js.UndefOr[scala.Boolean] = js.undefined
-  var overflowMenuIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var overflowMenuIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -53,7 +53,7 @@ trait TabsProps
     */
   var overflowMenuIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var overflowMenuLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var previousIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */

@@ -265,6 +265,19 @@ object ^ extends js.Object {
     dest: java.lang.String,
     options: /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify CopyFilter */ js.Any
   ): bluebirdLib.bluebirdMod.namespaced[scala.Unit] = js.native
+  def copyFile(src: java.lang.String, dest: java.lang.String): js.Promise[scala.Unit] = js.native
+  def copyFile(
+    src: java.lang.String,
+    dest: java.lang.String,
+    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+  ): scala.Unit = js.native
+  def copyFile(src: java.lang.String, dest: java.lang.String, flags: scala.Double): js.Promise[scala.Unit] = js.native
+  def copyFile(
+    src: java.lang.String,
+    dest: java.lang.String,
+    flags: scala.Double,
+    callback: js.Function1[/* err */ nodeLib.Error, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
     * No arguments other than a possible exception are given to the callback function.

@@ -21,7 +21,7 @@ trait List
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderItem(item: reactLib.reactMod.ReactNs.ReactElement[_], index: scala.Double): js.Any = js.native
+  def renderItem(item: reactLib.reactMod.ReactNs.ReactElement, index: scala.Double): js.Any = js.native
   def renderList(hasGetPrefixClsRenderEmpty: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
 }
 

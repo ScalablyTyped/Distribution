@@ -17,6 +17,6 @@ trait StickyProps extends js.Object {
   var stickyStyle: js.UndefOr[js.Any] = js.undefined
   var style: js.UndefOr[js.Any] = js.undefined
   var topOffset: js.UndefOr[scala.Double] = js.undefined
-  def children(args: StickyChildArgs): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(args: StickyChildArgs): reactLib.reactMod.ReactNs.ReactElement
 }
 

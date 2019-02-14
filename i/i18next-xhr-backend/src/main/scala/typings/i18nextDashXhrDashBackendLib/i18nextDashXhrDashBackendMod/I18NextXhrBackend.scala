@@ -23,7 +23,9 @@ trait I18NextXhrBackend extends js.Object {
     fallbackValue: java.lang.String
   ): scala.Unit = js.native
   def init(): scala.Unit = js.native
+  def init(services: js.Any): scala.Unit = js.native
   def init(
+    services: js.Any,
     options: i18nextDashXhrDashBackendLib.i18nextDashXhrDashBackendMod.I18NextXhrBackendNs.BackendOptions
   ): scala.Unit = js.native
   def loadUrl(

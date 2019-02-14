@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "draggabilly"
-version := "2.1-dt-20180214Z-cf9efa"
+version := "2.1-dt-20190212Z-cf9efa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

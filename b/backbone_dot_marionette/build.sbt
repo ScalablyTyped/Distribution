@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backbone_dot_marionette"
-version := "3.3-dt-20181121Z-4b7ce2"
+version := "3.3-dt-20190212Z-4b7ce2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

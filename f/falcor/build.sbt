@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "falcor"
-version := "0.1-dt-20180214Z-257ac2"
+version := "0.1-dt-20190212Z-257ac2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

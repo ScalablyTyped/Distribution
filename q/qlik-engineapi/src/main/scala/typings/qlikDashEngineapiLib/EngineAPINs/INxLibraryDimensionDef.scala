@@ -21,5 +21,9 @@ trait INxLibraryDimensionDef extends js.Object {
     * Information about the grouping.
     */
   var qGrouping: NxGrpType
+  /**
+    * no docu
+    */
+  var qLabelExpression: java.lang.String
 }
 

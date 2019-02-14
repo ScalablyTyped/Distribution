@@ -41,6 +41,7 @@ trait Device extends js.Object {
     * Opens a dialog box to select files from your computer (web client) or mobile device (mobile clients).
     * @returns On success, returns an array of files
     */
+  def pickFile(): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[xrmLib.XrmNs.DeviceNs.CaptureFileResponse]] = js.native
   def pickFile(pickFileOptions: xrmLib.XrmNs.DeviceNs.PickFileOptions): xrmLib.XrmNs.AsyncNs.PromiseLike[js.Array[xrmLib.XrmNs.DeviceNs.CaptureFileResponse]] = js.native
 }
 

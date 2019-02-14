@@ -22,24 +22,24 @@ trait StatisticComponent
   ] = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Label(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Label(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Value(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Value(
     props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

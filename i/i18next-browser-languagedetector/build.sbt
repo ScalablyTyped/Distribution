@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "i18next-browser-languagedetector"
-version := "2.0-dt-20181106Z-f4bf6c"
+version := "2.0-dt-20190212Z-f4bf6c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

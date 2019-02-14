@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material__auto-init"
-version := "0.35-dt-20180511Z-75fec6"
+version := "0.35-dt-20190213Z-75fec6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

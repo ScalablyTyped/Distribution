@@ -1964,13 +1964,22 @@ trait Static extends js.Object {
     */
   def repeat[T](a: T, n: scala.Double): js.Array[T] = js.native
   def replace(pattern: java.lang.String): js.Function1[
-    /* replacement */ java.lang.String, 
+    /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String]), 
     js.Function1[/* str */ java.lang.String, java.lang.String]
   ] = js.native
   def replace(pattern: java.lang.String, replacement: java.lang.String): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
   def replace(pattern: java.lang.String, replacement: java.lang.String, str: java.lang.String): java.lang.String = js.native
+  def replace(
+    pattern: java.lang.String,
+    replacement: js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
+  def replace(
+    pattern: java.lang.String,
+    replacement: js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String],
+    str: java.lang.String
+  ): java.lang.String = js.native
   def replace(pattern: stdLib.RegExp): js.Function1[
-    /* replacement */ java.lang.String, 
+    /* replacement */ java.lang.String | (js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String]), 
     js.Function1[/* str */ java.lang.String, java.lang.String]
   ] = js.native
   def replace(pattern: stdLib.RegExp, replacement: java.lang.String): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
@@ -1978,6 +1987,15 @@ trait Static extends js.Object {
     * Replace a substring or regex match in a string with a replacement.
     */
   def replace(pattern: stdLib.RegExp, replacement: java.lang.String, str: java.lang.String): java.lang.String = js.native
+  def replace(
+    pattern: stdLib.RegExp,
+    replacement: js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String]
+  ): js.Function1[/* str */ java.lang.String, java.lang.String] = js.native
+  def replace(
+    pattern: stdLib.RegExp,
+    replacement: js.Function2[/* match */ java.lang.String, /* repeated */ js.Any, java.lang.String],
+    str: java.lang.String
+  ): java.lang.String = js.native
   /**
     * Returns a new string with the characters in reverse order.
     */

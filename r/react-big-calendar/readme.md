@@ -7,6 +7,7 @@
 //                 Sebastian Silbermann <https://github.com/eps1lon>
 //                 Paul Potsides <https://github.com/strongpauly>
 //                 janb87 <https://github.com/janb87>
+//                 Daniel Thorne <https://github.com/ldthorne>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 ```

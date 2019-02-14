@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "alexa-voice-service"
-version := "0.0-dt-20180214Z-e1b6cd"
+version := "0.0-dt-20190212Z-e1b6cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

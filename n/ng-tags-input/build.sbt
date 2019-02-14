@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ng-tags-input"
-version := "3.2-dt-20181016Z-338210"
+version := "3.2-dt-20190212Z-338210"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

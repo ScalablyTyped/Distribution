@@ -12,6 +12,7 @@ trait Anon_A extends js.Object {
   /** @deprecated since v10.0.0 */
   val DEFAULT_ENCODING: java.lang.String = js.native
   var ECDH: Anon_Base64 = js.native
+  val constantsNs: Anon_ALPNENABLED = js.native
   /** @deprecated since v10.0.0 */
   val fips: scala.Boolean = js.native
   val generateKeyPairNs: Anon_Der = js.native

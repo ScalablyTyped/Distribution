@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ecma-proposal-math-extensions"
-version := "0.0-dt-20180712Z-98e71a"
+version := "0.0-dt-20190212Z-98e71a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

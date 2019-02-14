@@ -13,7 +13,7 @@ trait Anon_Assert extends js.Object {
   val clusterNs: Anon_AddListener = js.native
   var console: nodeLib.Console = js.native
   val consoleNs: js.Any = js.native
-  val constantsNs: Anon_ALPNENABLED = js.native
+  val constantsNs: Anon_ALPNENABLEDCOPYFILEEXCL = js.native
   val cryptoNs: Anon_A = js.native
   val dgramNs: Anon_CallbackCreateSocket = js.native
   val dnsNs: Anon_AAAAAADDRCONFIG = js.native

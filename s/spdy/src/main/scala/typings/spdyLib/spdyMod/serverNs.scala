@@ -16,7 +16,8 @@ object serverNs extends js.Object {
   }
   
   trait ServerOptions
-    extends nodeLib.tlsMod.TlsOptions {
+    extends nodeLib.tlsMod.TlsOptions
+       with nodeLib.httpMod.ServerOptions {
     var spdy: js.UndefOr[spdyLib.Anon_Connection] = js.undefined
   }
   

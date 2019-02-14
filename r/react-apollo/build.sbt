@@ -1,28 +1,28 @@
 organization := "org.scalablytyped"
 name := "react-apollo"
-version := "2.4.1-3f97e9"
+version := "2.4.1-82c686"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-cache" % "1.1.25-0f7929",
-  "org.scalablytyped" %%% "apollo-client" % "2.4.12-46abeb",
-  "org.scalablytyped" %%% "apollo-link" % "1.2.8-11755c",
-  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.15-dc96bd",
-  "org.scalablytyped" %%% "apollo-utilities" % "1.1.2-380657",
+  "org.scalablytyped" %%% "apollo-cache" % "1.1.26-976c7b",
+  "org.scalablytyped" %%% "apollo-client" % "2.4.13-874409",
+  "org.scalablytyped" %%% "apollo-link" % "1.2.8-9b747f",
+  "org.scalablytyped" %%% "apollo-link-dedup" % "1.0.15-55234c",
+  "org.scalablytyped" %%% "apollo-utilities" % "1.1.3-f99fa2",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-beaee2",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-8c061a",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-467272",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-b656b4",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-d5355c",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
-  "org.scalablytyped" %%% "lodash_dot_flowright" % "3.5-dt-20180723Z-ecdba1",
-  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20180723Z-838c38",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190206Z-7c7ba9",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
+  "org.scalablytyped" %%% "lodash_dot_flowright" % "3.5-dt-20190212Z-2d2bd5",
+  "org.scalablytyped" %%% "lodash_dot_isequal" % "4.5-dt-20190212Z-613e1b",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190212Z-a2fc7c",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-31ba1a",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",

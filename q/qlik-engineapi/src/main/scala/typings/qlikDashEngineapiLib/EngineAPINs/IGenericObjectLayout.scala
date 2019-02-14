@@ -29,5 +29,9 @@ trait IGenericObjectLayout extends IGenericBaseLayout {
     * Information about the selections.
     */
   var qSelectionInfo: INxSelectionInfo
+  /**
+    * 	Name of the alternate state. Default is current selections $ .
+    */
+  var qStateName: java.lang.String
 }
 

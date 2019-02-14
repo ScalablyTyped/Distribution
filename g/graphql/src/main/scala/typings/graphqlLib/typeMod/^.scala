@@ -23,13 +23,13 @@ object ^ extends js.Object {
   val TypeKind: graphqlLib.Anon_ENUM = js.native
   val TypeMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val TypeNameMetaFieldDef: graphqlLib.typeDefinitionMod.GraphQLField[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
-  val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
+  val __Directive: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __DirectiveLocation: graphqlLib.typeDefinitionMod.GraphQLEnumType = js.native
-  val __EnumValue: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
-  val __Field: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
-  val __InputValue: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
-  val __Schema: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
-  val __Type: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any] = js.native
+  val __EnumValue: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val __Field: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val __InputValue: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val __Schema: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
+  val __Type: graphqlLib.typeDefinitionMod.GraphQLObjectType[js.Any, js.Any, org.scalablytyped.runtime.StringDictionary[js.Any]] = js.native
   val __TypeKind: graphqlLib.typeDefinitionMod.GraphQLEnumType = js.native
   val introspectionTypes: js.Array[js.Any] = js.native
   val specifiedDirectives: js.Array[graphqlLib.typeDirectivesMod.GraphQLDirective] = js.native
@@ -45,7 +45,7 @@ object ^ extends js.Object {
   def assertNamedType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLNamedType = js.native
   def assertNonNullType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLNonNull[_] = js.native
   def assertNullableType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLNullableType = js.native
-  def assertObjectType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _] = js.native
+  def assertObjectType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def assertOutputType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLOutputType = js.native
   def assertScalarType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLScalarType = js.native
   def assertType(`type`: js.Any): graphqlLib.typeDefinitionMod.GraphQLType = js.native
@@ -70,7 +70,7 @@ object ^ extends js.Object {
   def isNamedType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNamedType */ scala.Boolean = js.native
   def isNonNullType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNonNull<any> */ scala.Boolean = js.native
   def isNullableType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLNullableType */ scala.Boolean = js.native
-  def isObjectType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLObjectType<any, any> */ scala.Boolean = js.native
+  def isObjectType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLObjectType<any, any, {[key: string] : any}> */ scala.Boolean = js.native
   def isOutputType(`type`: js.Any): /* is graphql.graphql/type/definition.GraphQLOutputType */ scala.Boolean = js.native
   def isRequiredArgument(arg: graphqlLib.typeDefinitionMod.GraphQLArgument): scala.Boolean = js.native
   def isRequiredInputField(field: graphqlLib.typeDefinitionMod.GraphQLInputField): scala.Boolean = js.native

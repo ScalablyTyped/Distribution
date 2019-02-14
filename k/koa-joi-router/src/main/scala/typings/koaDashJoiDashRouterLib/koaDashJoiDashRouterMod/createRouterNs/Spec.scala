@@ -11,6 +11,6 @@ trait Spec extends js.Object {
   var method: java.lang.String | js.Array[java.lang.String]
   var path: java.lang.String | stdLib.RegExp
   var pre: js.UndefOr[Handler] = js.undefined
-  var validate: js.UndefOr[koaDashJoiDashRouterLib.Anon_Body] = js.undefined
+  var validate: js.UndefOr[koaDashJoiDashRouterLib.Anon_BodyContinueOnError] = js.undefined
 }
 

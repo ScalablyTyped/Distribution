@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "babel-template"
-version := "6.25-dt-20180611Z-18b9db"
+version := "6.25-dt-20190212Z-42c2c0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20180613Z-619284",
-  "org.scalablytyped" %%% "babylon" % "6.16-dt-20181029Z-8c0e04",
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190212Z-619284",
+  "org.scalablytyped" %%% "babylon" % "6.16-dt-20190212Z-2d5b7a",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

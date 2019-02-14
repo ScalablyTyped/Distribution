@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "discontinuous-range"
-version := "1.0-dt-20180214Z-92da8b"
+version := "1.0-dt-20190212Z-92da8b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

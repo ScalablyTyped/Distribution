@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-slider"
-version := "9.9-dt-20181124Z-792ec3"
+version := "9.9-dt-20190212Z-792ec3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

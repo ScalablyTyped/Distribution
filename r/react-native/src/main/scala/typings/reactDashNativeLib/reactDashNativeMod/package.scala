@@ -69,7 +69,7 @@ package object reactDashNativeMod {
   type LinkingIOS = LinkingIOSStatic
   type ListRenderItem[ItemT] = js.Function1[
     /* info */ ListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ]
   type ListViewComponent = reactLib.reactMod.Component[ListViewProps, js.Object, js.Any]
   /**
@@ -169,7 +169,7 @@ package object reactDashNativeMod {
   type SectionList[ItemT] = SectionListStatic[ItemT]
   type SectionListRenderItem[ItemT] = js.Function1[
     /* info */ SectionListRenderItemInfo[ItemT], 
-    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
+    reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ]
   /**
     * Use `SegmentedControlIOS` to render a UISegmentedControl iOS.

@@ -11,10 +11,7 @@ object ^ extends js.Object {
   def setDefaults(newDefaults: atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.Options): atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.Options = js.native
   def withInfo(): js.Function1[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
-    js.Function1[
-      /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.WrapStoryProps]
-    ]
+    js.Function1[/* context */ js.UndefOr[js.Object], reactLib.reactMod.ReactNs.ReactElement]
   ] = js.native
   def withInfo(
     story: atStorybookReactLib.atStorybookReactMod.RenderFunction,
@@ -22,17 +19,11 @@ object ^ extends js.Object {
   ): stdLib.ReturnType[atStorybookReactLib.atStorybookReactMod.StoryDecorator] = js.native
   def withInfo(textOrOptions: atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.Options): js.Function1[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
-    js.Function1[
-      /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.WrapStoryProps]
-    ]
+    js.Function1[/* context */ js.UndefOr[js.Object], reactLib.reactMod.ReactNs.ReactElement]
   ] = js.native
   def withInfo(textOrOptions: java.lang.String): js.Function1[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
-    js.Function1[
-      /* context */ js.UndefOr[js.Object], 
-      reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashInfoLib.atStorybookAddonDashInfoMod.WrapStoryProps]
-    ]
+    js.Function1[/* context */ js.UndefOr[js.Object], reactLib.reactMod.ReactNs.ReactElement]
   ] = js.native
 }
 

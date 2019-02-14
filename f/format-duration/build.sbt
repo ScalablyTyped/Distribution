@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "format-duration"
-version := "1.0-dt-20180214Z-d44567"
+version := "1.0-dt-20190212Z-d44567"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

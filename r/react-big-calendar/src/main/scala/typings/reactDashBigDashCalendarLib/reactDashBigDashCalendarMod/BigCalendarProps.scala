@@ -29,13 +29,13 @@ trait BigCalendarProps[TEvent /* <: Event */, TResource /* <: js.Object */]
       scala.Unit
     ]) | scala.Null
   ] = js.undefined
+  var getNow: js.UndefOr[js.Function0[stdLib.Date]] = js.undefined
   var length: js.UndefOr[scala.Double] = js.undefined
   var localizer: DateLocalizer
   var longPressThreshold: js.UndefOr[scala.Double] = js.undefined
   var max: js.UndefOr[stringOrDate] = js.undefined
   var messages: js.UndefOr[Messages] = js.undefined
   var min: js.UndefOr[stringOrDate] = js.undefined
-  var now: js.UndefOr[stdLib.Date] = js.undefined
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[
       /* event */ TEvent, 

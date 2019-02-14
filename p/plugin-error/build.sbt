@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "plugin-error"
-version := "0.1-dt-20180214Z-0cfa58"
+version := "0.1-dt-20190212Z-0cfa58"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

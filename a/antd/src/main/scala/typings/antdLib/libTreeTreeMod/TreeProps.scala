@@ -107,6 +107,6 @@ trait TreeProps extends js.Object {
   var showIcon: js.UndefOr[scala.Boolean] = js.undefined
   var showLine: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var switcherIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
 }
 

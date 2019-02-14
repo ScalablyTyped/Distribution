@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "openstack-wrapper"
-version := "2.1-dt-20180214Z-0de1dd"
+version := "2.1-dt-20190212Z-0de1dd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

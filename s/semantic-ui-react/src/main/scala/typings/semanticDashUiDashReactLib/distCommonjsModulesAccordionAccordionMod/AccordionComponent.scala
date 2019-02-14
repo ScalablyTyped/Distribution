@@ -22,10 +22,10 @@ trait AccordionComponent
   ] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsModulesAccordionAccordionContentMod.AccordionContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

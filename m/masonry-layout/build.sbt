@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "masonry-layout"
-version := "4.2-dt-20180214Z-6f7ed8"
+version := "4.2-dt-20190212Z-6f7ed8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

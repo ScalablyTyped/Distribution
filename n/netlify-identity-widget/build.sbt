@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "netlify-identity-widget"
-version := "1.4-dt-20181120Z-55f2a1"
+version := "1.4-dt-20190212Z-55f2a1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -7,7 +7,37 @@ import scala.scalajs.js.annotation._
 
 object mongooseLibStrings {
   @js.native
+  sealed trait CastError extends js.Object
+  
+  @js.native
+  sealed trait DivergentArrayError extends js.Object
+  
+  @js.native
+  sealed trait DocumentNotFoundError extends js.Object
+  
+  @js.native
+  sealed trait MissingSchemaError extends js.Object
+  
+  @js.native
+  sealed trait MongooseError extends js.Object
+  
+  @js.native
+  sealed trait OverwriteModelError extends js.Object
+  
+  @js.native
+  sealed trait ParallelSaveError extends js.Object
+  
+  @js.native
   sealed trait Schema extends js.Object
+  
+  @js.native
+  sealed trait ValidationError extends js.Object
+  
+  @js.native
+  sealed trait ValidatorError extends js.Object
+  
+  @js.native
+  sealed trait VersionError extends js.Object
   
   @js.native
   sealed trait _id extends js.Object
@@ -133,7 +163,27 @@ object mongooseLibStrings {
   sealed trait writeConcern extends js.Object
   
   @scala.inline
+  def CastError: CastError = "CastError".asInstanceOf[CastError]
+  @scala.inline
+  def DivergentArrayError: DivergentArrayError = "DivergentArrayError".asInstanceOf[DivergentArrayError]
+  @scala.inline
+  def DocumentNotFoundError: DocumentNotFoundError = "DocumentNotFoundError".asInstanceOf[DocumentNotFoundError]
+  @scala.inline
+  def MissingSchemaError: MissingSchemaError = "MissingSchemaError".asInstanceOf[MissingSchemaError]
+  @scala.inline
+  def MongooseError: MongooseError = "MongooseError".asInstanceOf[MongooseError]
+  @scala.inline
+  def OverwriteModelError: OverwriteModelError = "OverwriteModelError".asInstanceOf[OverwriteModelError]
+  @scala.inline
+  def ParallelSaveError: ParallelSaveError = "ParallelSaveError".asInstanceOf[ParallelSaveError]
+  @scala.inline
   def Schema: Schema = "Schema".asInstanceOf[Schema]
+  @scala.inline
+  def ValidationError: ValidationError = "ValidationError".asInstanceOf[ValidationError]
+  @scala.inline
+  def ValidatorError: ValidatorError = "ValidatorError".asInstanceOf[ValidatorError]
+  @scala.inline
+  def VersionError: VersionError = "VersionError".asInstanceOf[VersionError]
   @scala.inline
   def _id: _id = "_id".asInstanceOf[_id]
   @scala.inline

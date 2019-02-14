@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mdast"
-version := "3.0-dt-20181201Z-5f9b5c"
+version := "3.0-dt-20190212Z-5f9b5c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -18,17 +18,17 @@ trait PopupComponent
   ] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

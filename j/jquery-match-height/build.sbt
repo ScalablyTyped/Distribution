@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-match-height"
-version := "0.7-dt-20180214Z-6ca106"
+version := "0.7-dt-20190212Z-6ca106"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

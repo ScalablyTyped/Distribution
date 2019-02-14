@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "smoothscroll-polyfill"
-version := "0.3-dt-20180214Z-549c93"
+version := "0.3-dt-20190212Z-549c93"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

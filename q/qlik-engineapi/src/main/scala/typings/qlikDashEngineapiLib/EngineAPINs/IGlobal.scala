@@ -192,7 +192,7 @@ trait IGlobal
     * Note: If no app is opened, an error message is returned:
     * For example code: 1007 and No active document and App invalid
     */
-  def getActiveDoc(): js.Promise[IApp | java.lang.String] = js.native
+  def getActiveDoc(): js.Promise[IApp] = js.native
    // ?Result
   /**
     * Retrieves the meta data of an app.
@@ -327,8 +327,8 @@ trait IGlobal
     * >> Default is all groups.
     * @returns A Promise <Function> or undefined
     */
-  def getFunctions(): js.Promise[js.UndefOr[IFunction]] = js.native
-  def getFunctions(qGroup: FunctionGroupType): js.Promise[js.UndefOr[IFunction]] = js.native
+  def getFunctions(): js.Promise[js.Array[IFunction]] = js.native
+  def getFunctions(qGroup: FunctionGroupType): js.Promise[js.Array[IFunction]] = js.native
   /**
     * Retrieves information on the user interaction that is requested by the engine.
     * Engine can request user interactions only during script reload and when the reload is performed in debug mode

@@ -9,8 +9,8 @@ import scala.scalajs.js.annotation._
   * List Modifier
   *
   * A list is a kind of type marker, a wrapping type which points to another
-  * type. Lists are often created within the context of defining the fields of
-  * an object type.
+  * type. Lists are often created within the context of defining the fields
+  * of an object type.
   *
   * Example:
   *

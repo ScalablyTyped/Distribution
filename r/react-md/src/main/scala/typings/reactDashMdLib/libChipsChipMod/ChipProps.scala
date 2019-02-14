@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ChipProps
   extends reactDashMdLib.libMod.Props {
-  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var avatar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   /**
     * @deprecated

@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
     reactLib.reactMod.ReactNs.ComponentType[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps]
   ] = js.undefined
   var TransitionProps: js.UndefOr[atMaterialDashUiCoreLib.transitionsTransitionMod.TransitionProps] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactNs.ReactElement
   var className: js.UndefOr[java.lang.String] = js.undefined
   var disableFocusListener: js.UndefOr[scala.Boolean] = js.undefined
   var disableHoverListener: js.UndefOr[scala.Boolean] = js.undefined

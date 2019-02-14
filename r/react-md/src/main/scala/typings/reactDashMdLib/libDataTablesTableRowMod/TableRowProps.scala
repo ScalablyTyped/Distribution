@@ -12,7 +12,7 @@ trait TableRowProps
     */
   var autoAdjust: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.ReactNode
+    js.Array[reactLib.reactMod.ReactNs.ReactElement] | reactLib.reactMod.ReactNs.ReactElement | reactLib.reactMod.ReactNs.ReactNode
   ] = js.undefined
   var onCheckboxClick: js.UndefOr[
     js.Function3[

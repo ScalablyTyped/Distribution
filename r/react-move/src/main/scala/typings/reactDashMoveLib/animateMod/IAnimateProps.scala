@@ -12,6 +12,6 @@ trait IAnimateProps extends js.Object {
   var show: js.UndefOr[scala.Boolean] = js.undefined
   var start: js.Any
   var update: js.UndefOr[js.Any] = js.undefined
-  def children(state: kapellmeisterLib.kapellmeisterMod.HashMap): reactLib.reactMod.ReactNs.ReactElement[_]
+  def children(state: kapellmeisterLib.kapellmeisterMod.HashMap): reactLib.reactMod.ReactNs.ReactElement
 }
 

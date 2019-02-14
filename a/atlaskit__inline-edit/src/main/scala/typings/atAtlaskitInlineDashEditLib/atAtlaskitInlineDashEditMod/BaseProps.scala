@@ -11,9 +11,9 @@ trait BaseProps extends js.Object {
   /** Set whether default stylings should be disabled when editing. */
   var disableEditViewFieldBase: js.UndefOr[scala.Boolean] = js.undefined
   /** Component to be shown when editing. Should be an @atlaskit/input. */
-  var editView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var editView: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /** Component to be shown in an @atlaskit/inline-dialog when edit view is open. */
-  var invalidMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var invalidMessage: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /** Sets whether the confirm function is called when the input loses focus. */
   var isConfirmOnBlurDisabled: js.UndefOr[scala.Boolean] = js.undefined
   /** Set whether the read view should fit width, most obvious when hovered. */
@@ -29,7 +29,7 @@ trait BaseProps extends js.Object {
   /** html to pass down to the label htmlFor prop. */
   var labelHtmlFor: js.UndefOr[java.lang.String] = js.undefined
   /** Component to be shown when reading only */
-  var readView: reactLib.reactMod.ReactNs.ReactElement[_]
+  var readView: reactLib.reactMod.ReactNs.ReactElement
   /** Set whether onConfirm is called on pressing enter. */
   var shouldConfirmOnEnter: js.UndefOr[scala.Boolean] = js.undefined
   /** Handler called when the cross is clicked on. */

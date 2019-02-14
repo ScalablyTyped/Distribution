@@ -26,45 +26,45 @@ trait ListComponent
   var List_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsListListListMod.ListListProps] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListContentMod.ListContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListContentMod.ListContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Description(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListDescriptionMod.ListDescriptionProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Description(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListDescriptionMod.ListDescriptionProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListHeaderMod.ListHeaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListHeaderMod.ListHeaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Icon(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListIconMod.ListIconProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Icon(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListIconMod.ListIconProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Item(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Item(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListItemMod.ListItemProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def List(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListListMod.ListListProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def List(
     props: semanticDashUiDashReactLib.distCommonjsElementsListListListMod.ListListProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

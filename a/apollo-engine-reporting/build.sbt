@@ -1,22 +1,22 @@
 organization := "org.scalablytyped"
 name := "apollo-engine-reporting"
-version := "1.0.0-e8d713"
+version := "1.0.0-209db2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-02e022",
-  "org.scalablytyped" %%% "apollo-graphql" % "0.1.0-95a8f6",
-  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-de8aae",
+  "org.scalablytyped" %%% "apollo-engine-reporting-protobuf" % "0.2.0-7756f9",
+  "org.scalablytyped" %%% "apollo-graphql" % "0.1.0-d151f6",
+  "org.scalablytyped" %%% "apollo-server-env" % "2.2.0-330e11",
   "org.scalablytyped" %%% "async-retry" % "1.2-dt-20180601Z-028562",
-  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190107Z-beaee2",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
-  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20180723Z-af8e71",
+  "org.scalablytyped" %%% "graphql" % "14.0-dt-20190212Z-467272",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
+  "org.scalablytyped" %%% "lodash_dot_sortby" % "4.7-dt-20190212Z-7840cb",
   "org.scalablytyped" %%% "long" % "4.0.0-dt-20180425Z-02eb4a",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
-  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-5b74a4",
-  "org.scalablytyped" %%% "protobufjs" % "6.8.8-49639d",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-a8e8b2",
+  "org.scalablytyped" %%% "protobufjs" % "6.8.8-95e675",
   "org.scalablytyped" %%% "protobufjs__aspromise" % "1.1.2-e26d13",
   "org.scalablytyped" %%% "protobufjs__base64" % "1.1.2-6367f2",
   "org.scalablytyped" %%% "protobufjs__codegen" % "2.0.4-8a9473",

@@ -32,17 +32,17 @@ trait XML2JS
   ] = js.undefined
   var captureSpacesBetweenElements: js.UndefOr[scala.Boolean] = js.undefined
   var cdataFn: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* parentElement */ java.lang.String, scala.Unit]
+    js.Function2[/* value */ java.lang.String, /* parentElement */ js.Object, scala.Unit]
   ] = js.undefined
   var commentFn: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* parentElement */ java.lang.String, scala.Unit]
+    js.Function2[/* value */ java.lang.String, /* parentElement */ js.Object, scala.Unit]
   ] = js.undefined
   var compact: js.UndefOr[scala.Boolean] = js.undefined
   var doctypeFn: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* parentElement */ java.lang.String, scala.Unit]
+    js.Function2[/* value */ java.lang.String, /* parentElement */ js.Object, scala.Unit]
   ] = js.undefined
   var elementNameFn: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* parentElement */ java.lang.String, scala.Unit]
+    js.Function2[/* value */ java.lang.String, /* parentElement */ js.Object, scala.Unit]
   ] = js.undefined
   var instructionFn: js.UndefOr[
     js.Function3[
@@ -64,7 +64,7 @@ trait XML2JS
   var nativeType: js.UndefOr[scala.Boolean] = js.undefined
   var sanitize: js.UndefOr[scala.Boolean] = js.undefined
   var textFn: js.UndefOr[
-    js.Function2[/* value */ java.lang.String, /* parentElement */ java.lang.String, scala.Unit]
+    js.Function2[/* value */ java.lang.String, /* parentElement */ js.Object, scala.Unit]
   ] = js.undefined
   var trim: js.UndefOr[scala.Boolean] = js.undefined
 }

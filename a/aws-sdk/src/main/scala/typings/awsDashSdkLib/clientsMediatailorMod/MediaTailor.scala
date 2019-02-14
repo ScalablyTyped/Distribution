@@ -11,7 +11,7 @@ trait MediaTailor
   @JSName("config")
   var config_MediaTailor: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ClientConfiguration = js.native
   /**
-    * Deletes the configuration for the specified name. 
+    * Deletes the playback configuration for the specified name. 
     */
   def deletePlaybackConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.DeletePlaybackConfigurationResponse, 
@@ -28,7 +28,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Deletes the configuration for the specified name. 
+    * Deletes the playback configuration for the specified name. 
     */
   def deletePlaybackConfiguration(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.DeletePlaybackConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.DeletePlaybackConfigurationResponse, 
@@ -46,7 +46,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the configuration for the specified name. 
+    * Returns the playback configuration for the specified name. 
     */
   def getPlaybackConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.GetPlaybackConfigurationResponse, 
@@ -63,7 +63,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns the configuration for the specified name. 
+    * Returns the playback configuration for the specified name. 
     */
   def getPlaybackConfiguration(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.GetPlaybackConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.GetPlaybackConfigurationResponse, 
@@ -81,7 +81,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of the configurations defined in AWS Elemental MediaTailor. You can specify a max number of configurations to return at a time. The default max is 50. Results are returned in pagefuls. If AWS Elemental MediaTailor has more configurations than the specified max, it provides parameters in the response that you can use to retrieve the next pageful. 
+    * Returns a list of the playback configurations defined in AWS Elemental MediaTailor. You can specify a maximum number of configurations to return at a time. The default maximum is 50. Results are returned in pagefuls. If MediaTailor has more configurations than the specified maximum, it provides parameters in the response that you can use to retrieve the next pageful. 
     */
   def listPlaybackConfigurations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListPlaybackConfigurationsResponse, 
@@ -98,7 +98,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a list of the configurations defined in AWS Elemental MediaTailor. You can specify a max number of configurations to return at a time. The default max is 50. Results are returned in pagefuls. If AWS Elemental MediaTailor has more configurations than the specified max, it provides parameters in the response that you can use to retrieve the next pageful. 
+    * Returns a list of the playback configurations defined in AWS Elemental MediaTailor. You can specify a maximum number of configurations to return at a time. The default maximum is 50. Results are returned in pagefuls. If MediaTailor has more configurations than the specified maximum, it provides parameters in the response that you can use to retrieve the next pageful. 
     */
   def listPlaybackConfigurations(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListPlaybackConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListPlaybackConfigurationsResponse, 
@@ -116,7 +116,42 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds a new configuration to AWS Elemental MediaTailor.
+    * Returns a list of the tags assigned to the specified playback configuration resource. 
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of the tags assigned to the specified playback configuration resource. 
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.ListTagsForResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds a new playback configuration to AWS Elemental MediaTailor. 
     */
   def putPlaybackConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.PutPlaybackConfigurationResponse, 
@@ -133,7 +168,7 @@ trait MediaTailor
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds a new configuration to AWS Elemental MediaTailor.
+    * Adds a new playback configuration to AWS Elemental MediaTailor. 
     */
   def putPlaybackConfiguration(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.PutPlaybackConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.PutPlaybackConfigurationResponse, 
@@ -150,5 +185,35 @@ trait MediaTailor
     awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.PutPlaybackConfigurationResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
+  /**
+    * Adds tags to the specified playback configuration resource. You can specify one or more tags to add. 
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Adds tags to the specified playback configuration resource. You can specify one or more tags to add. 
+    */
+  def tagResource(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.TagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from the specified playback configuration resource. You can specify one or more tags to remove. 
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  /**
+    * Removes tags from the specified playback configuration resource. You can specify one or more tags to remove. 
+    */
+  def untagResource(params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsMediatailorMod.MediaTailorNs.UntagResourceRequest,
+    callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+  ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
 }
 

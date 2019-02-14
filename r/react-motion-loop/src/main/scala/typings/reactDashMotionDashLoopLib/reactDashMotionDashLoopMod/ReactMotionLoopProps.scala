@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   var children: js.UndefOr[
     js.Function1[
       /* interpolatedStyle */ reactDashMotionLib.reactDashMotionMod.PlainStyle, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   var styleFrom: reactDashMotionLib.reactDashMotionMod.Style

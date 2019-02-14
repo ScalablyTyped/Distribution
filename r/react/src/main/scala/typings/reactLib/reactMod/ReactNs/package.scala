@@ -63,7 +63,7 @@ package object ReactNs {
   //
   // Factories
   // ----------------------------------------------------------------------
-  type Factory[P] = js.Function2[/* props */ js.UndefOr[Attributes with P], /* repeated */ ReactNode, ReactElement[P]]
+  type Factory[P] = js.Function2[/* props */ js.UndefOr[Attributes with P], /* repeated */ ReactNode, ReactElement]
   type FocusEventHandler[T] = EventHandler[FocusEvent[T]]
   // tslint:disable-next-line:no-empty-interface
   type FormEvent[T] = SyntheticEvent[T, reactLib.Event]
@@ -92,7 +92,7 @@ package object ReactNs {
   ]
   // tslint:disable-next-line:no-empty-interface
   type HTMLFactory[T /* <: reactLib.HTMLElement */] = DetailedHTMLFactory[AllHTMLAttributes[T], T]
-  type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement[js.Any] | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
+  type JSXElementConstructor[P] = (js.Function1[/* props */ P, ReactElement | scala.Null]) | (org.scalablytyped.runtime.Instantiable1[/* props */ P, Component[P, js.Any, js.Any]])
   type Key = java.lang.String | scala.Double
   type KeyboardEventHandler[T] = EventHandler[KeyboardEvent[T]]
   type LegacyRef[T] = java.lang.String | Ref[T]
@@ -106,8 +106,8 @@ package object ReactNs {
   // https://github.com/facebook/react-devtools/blob/e0b854e4c/backend/attachRendererFiber.js#L310-L325
   type Provider[T] = ProviderExoticComponent[ProviderProps[T]]
   type PureComponent[P, S, SS] = Component[P, S, SS]
-  type ReactChild = ReactElement[js.Any] | ReactText
-  type ReactComponentElement[T /* <: java.lang.String */, P] = ReactElement[P]
+  type ReactChild = ReactElement | ReactText
+  type ReactComponentElement[T /* <: java.lang.String */, P] = ReactElement
   type ReactEventHandler[T] = EventHandler[SyntheticEvent[T, reactLib.Event]]
   type ReactFragment = js.Object | ReactNodeArray
   // ReactHTML for ReactHTMLElement

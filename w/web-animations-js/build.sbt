@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "web-animations-js"
-version := "2.2-dt-20181214Z-378863"
+version := "2.2-dt-20190212Z-378863"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

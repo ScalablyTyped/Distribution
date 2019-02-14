@@ -22,38 +22,38 @@ trait CardComponent
   var Meta_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardContentMod.CardContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardContentMod.CardContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Description(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Description(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardDescriptionMod.CardDescriptionProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardGroupMod.CardGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardGroupMod.CardGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardHeaderMod.CardHeaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardHeaderMod.CardHeaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Meta(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Meta(
     props: semanticDashUiDashReactLib.distCommonjsViewsCardCardMetaMod.CardMetaProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

@@ -17,6 +17,6 @@ trait Anon_PageList extends js.Object {
   /**
   		 * Text/element to display when displaying the total number of rows.
   		 */
-  var totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+  var totalText: java.lang.String | reactLib.reactMod.ReactNs.ReactElement
 }
 

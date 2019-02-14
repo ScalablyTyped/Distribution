@@ -19,6 +19,6 @@ trait QueryRendererProps[T /* <: relayDashRuntimeLib.relayDashRuntimeMod.Operati
     readyState: ReadyState[
       /* import warning: ImportType.apply Failed type conversion: T['response'] */ js.Any
     ]
-  ): js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null]
+  ): js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | scala.Null]
 }
 

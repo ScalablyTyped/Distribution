@@ -18,7 +18,7 @@ trait Please extends js.Object {
     * @param {string} hex
     * @returns {RGB}
     */
-  def HEX_to_RGB(hex: java.lang.String): RGB = js.native
+  def HEX_to_RGB(hex: java.lang.String): RGB | scala.Null = js.native
   /***
     * convert HSV into HEX
     * @param {HSV} hsv
@@ -36,7 +36,7 @@ trait Please extends js.Object {
     * @param {string} name
     * @returns {string}
     */
-  def NAME_to_HEX(name: java.lang.String): java.lang.String = js.native
+  def NAME_to_HEX(name: java.lang.String): js.UndefOr[java.lang.String] = js.native
   /***
     * convert color name into RGB
     * @param {string} name
@@ -48,7 +48,7 @@ trait Please extends js.Object {
     * @param {string} name
     * @returns {RGB}
     */
-  def NAME_to_RGB(name: java.lang.String): RGB = js.native
+  def NAME_to_RGB(name: java.lang.String): RGB | scala.Null = js.native
   /***
     * convert RGB into HEX
     * @param {RGB} rgb
@@ -66,14 +66,14 @@ trait Please extends js.Object {
     * @param {MakeColorOption} options
     * @returns {Array}
     */
-  def make_color(): js.Array[java.lang.String] = js.native
-  def make_color(options: MakeColorOption): js.Array[java.lang.String] = js.native
+  def make_color(): js.Array[java.lang.String | RGB | HSV] = js.native
+  def make_color(options: MakeColorOption): js.Array[java.lang.String | RGB | HSV] = js.native
   /***
     * make a color scheme
     * @param {MakeSchemeOption} options
     * @returns {Array}
     */
-  def make_scheme(base_color: HSV): js.Array[java.lang.String] = js.native
-  def make_scheme(base_color: HSV, options: MakeSchemeOption): js.Array[java.lang.String] = js.native
+  def make_scheme(base_color: HSV): js.Array[java.lang.String | RGB | HSV] = js.native
+  def make_scheme(base_color: HSV, options: MakeSchemeOption): js.Array[java.lang.String | RGB | HSV] = js.native
 }
 

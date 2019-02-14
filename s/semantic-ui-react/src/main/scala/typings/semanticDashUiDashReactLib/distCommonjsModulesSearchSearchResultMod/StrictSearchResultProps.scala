@@ -42,7 +42,7 @@ trait StrictSearchResultProps extends js.Object {
     * @returns {*} - Renderable result contents.
     */
   var renderer: js.UndefOr[
-    js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]]
+    js.Function1[/* props */ SearchResultProps, js.Array[reactLib.reactMod.ReactNs.ReactElement]]
   ] = js.undefined
   /** Display title. */
   var title: java.lang.String

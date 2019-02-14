@@ -150,5 +150,12 @@ trait ModalProps extends js.Object {
     *
     */
   var swipeToClose: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Enables the hardware acceleration to animate the modal. Please note that enabling this can cause some flashes in a weird way when animating
+    *
+    * Default is true
+    *
+    */
+  var useNativeDriver: js.UndefOr[scala.Boolean] = js.undefined
 }
 

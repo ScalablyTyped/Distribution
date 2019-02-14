@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "deglob"
-version := "2.1-dt-20180425Z-ccb7aa"
+version := "2.1-dt-20190212Z-ccb7aa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

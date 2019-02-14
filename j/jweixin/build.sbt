@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jweixin"
-version := "1.0-dt-20180606Z-e041d0"
+version := "1.0-dt-20190212Z-e041d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

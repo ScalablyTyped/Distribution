@@ -10,7 +10,7 @@ trait MentionsInputProps extends js.Object {
     * If set to `true` spaces will not interrupt matching suggestions
     */
   var allowSpaceInQuery: js.UndefOr[scala.Boolean] = js.undefined
-  var children: reactLib.reactMod.ReactNs.ReactElement[MentionProps] | js.Array[reactLib.reactMod.ReactNs.ReactElement[MentionProps]]
+  var children: reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
   var className: js.UndefOr[java.lang.String] = js.undefined
   var displayTransform: js.UndefOr[DisplayTransformFunc] = js.undefined
   var inputRef: js.UndefOr[

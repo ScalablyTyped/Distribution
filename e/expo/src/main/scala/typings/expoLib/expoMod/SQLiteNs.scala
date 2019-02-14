@@ -26,8 +26,8 @@ object SQLiteNs extends js.Object {
   
   trait ResultSet extends js.Object {
     var insertId: scala.Double
-    var rowAffected: scala.Double
     var rows: expoLib.Anon_Array
+    var rowsAffected: scala.Double
   }
   
   @js.native

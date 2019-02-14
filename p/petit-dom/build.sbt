@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "petit-dom"
-version := "0.2-dt-20181123Z-0ea471"
+version := "0.2-dt-20190212Z-0ea471"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

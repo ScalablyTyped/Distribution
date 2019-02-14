@@ -26,31 +26,31 @@ trait MessageComponent
   ] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageContentMod.MessageContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageHeaderMod.MessageHeaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Item(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Item(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageItemMod.MessageItemProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def List(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageListMod.MessageListProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def List(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsMessageMessageListMod.MessageListProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
 }
 

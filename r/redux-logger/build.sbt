@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redux-logger"
-version := "3.0-dt-20180416Z-5953d7"
+version := "3.0-dt-20190212Z-5953d7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

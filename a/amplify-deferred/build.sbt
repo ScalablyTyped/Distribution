@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "amplify-deferred"
-version := "1.1-dt-20180214Z-77ab68"
+version := "1.1-dt-20190212Z-77ab68"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

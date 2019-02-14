@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "node-crate"
-version := "2.0-dt-20181015Z-c619ad"
+version := "2.0-dt-20190212Z-c619ad"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

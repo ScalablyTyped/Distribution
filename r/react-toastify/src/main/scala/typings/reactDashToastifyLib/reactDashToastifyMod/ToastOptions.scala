@@ -21,7 +21,7 @@ trait ToastOptions extends ToastAndToastContainerOptions {
   /**
     * String or React Element, only available when calling update.
     */
-  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var render: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * Kind of notification.
     * @default 'default'

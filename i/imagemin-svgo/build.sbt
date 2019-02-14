@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "imagemin-svgo"
-version := "7.0-dt-20180825Z-8ea51e"
+version := "7.0-dt-20180825Z-2618f8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-4c38dc",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
+  "org.scalablytyped" %%% "imagemin" % "6.0-dt-20180823Z-2466e8",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "svgo" % "1.0-dt-20180507Z-92bf78")
 publishArtifact in packageDoc := false

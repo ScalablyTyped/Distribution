@@ -11,7 +11,7 @@ class BottomNavigation ()
   extends reactLib.reactMod.Component[BottomNavigationProps, reactDashRouterDashNavigationLib.Anon_Key, js.Any] {
   def renderNavigationBar(sceneProps: TabSubViewProps, props: TabSubViewProps): reactLib.reactMod.ReactNs.ReactNode = js.native
   def renderPager(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactNode = js.native
-  def renderScene(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement[reactDashNativeLib.reactDashNativeMod.ViewProps] = js.native
+  def renderScene(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactElement = js.native
   def renderSceneView(sceneProps: TabSubViewProps): reactLib.reactMod.ReactNs.ReactNode = js.native
 }
 

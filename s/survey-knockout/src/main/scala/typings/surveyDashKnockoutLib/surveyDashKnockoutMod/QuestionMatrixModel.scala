@@ -22,6 +22,10 @@ class QuestionMatrixModel protected ()
     * Set this property to true, if you want a user to answer all rows.
     */
   var isAllRowRequired: scala.Boolean = js.native
+  /**
+    * Use this property to render items in a specific order: "random" or "initial". Default is "initial".
+    */
+  var rowsOrder: java.lang.String = js.native
   /* protected */ def createMatrixRow(item: ItemValue, fullName: java.lang.String, value: js.Any): MatrixRowModel = js.native
   def getCellDisplayLocText(row: js.Any, column: js.Any): LocalizableString = js.native
   def getCellDisplayText(row: js.Any, column: js.Any): java.lang.String = js.native
@@ -48,5 +52,6 @@ class QuestionMatrixModel protected ()
   override def onMatrixRowChanged(row: MatrixRowModel): scala.Unit = js.native
   def setCellText(row: js.Any, column: js.Any, `val`: java.lang.String): scala.Unit = js.native
   def setDefaultCellText(column: js.Any, `val`: java.lang.String): scala.Unit = js.native
+  /* protected */ def sortVisibleRows(array: js.Array[MatrixRowModel]): js.Array[MatrixRowModel] = js.native
 }
 

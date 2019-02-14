@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait TileLayerOptions extends GridLayerOptions {
-  var crossOrigin: js.UndefOr[scala.Boolean] = js.undefined
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   var detectRetina: js.UndefOr[scala.Boolean] = js.undefined
   var errorTileUrl: js.UndefOr[java.lang.String] = js.undefined
   var maxNativeZoom: js.UndefOr[scala.Double] = js.undefined

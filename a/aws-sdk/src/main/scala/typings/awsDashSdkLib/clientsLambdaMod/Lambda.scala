@@ -151,7 +151,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. A published version is a snapshot of your function code and configuration that can not be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or a AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
+    * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. The unpublished version changes when you update your function's code and configuration. A published version is a snapshot of your function code and configuration that can't be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function, and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or an AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
     */
   def createFunction(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -168,7 +168,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. A published version is a snapshot of your function code and configuration that can not be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or a AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
+    * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. The unpublished version changes when you update your function's code and configuration. A published version is a snapshot of your function code and configuration that can't be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function, and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or an AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
     */
   def createFunction(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.CreateFunctionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -281,7 +281,7 @@ trait Lambda
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Retrieves details about your account's limits and usage in a region.
+    * Retrieves details about your account's limits and usage in an AWS Region.
     */
   def getAccountSettings(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.GetAccountSettingsResponse, 
@@ -298,7 +298,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Retrieves details about your account's limits and usage in a region.
+    * Retrieves details about your account's limits and usage in an AWS Region.
     */
   def getAccountSettings(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetAccountSettingsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.GetAccountSettingsResponse, 
@@ -386,7 +386,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details specific to that version are returned.
+    * Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
     */
   def getFunction(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.GetFunctionResponse, 
@@ -403,7 +403,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details specific to that version are returned.
+    * Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
     */
   def getFunction(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetFunctionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.GetFunctionResponse, 
@@ -421,7 +421,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
+    * Returns the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
     */
   def getFunctionConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -438,7 +438,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns a the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
+    * Returns the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
     */
   def getFunctionConfiguration(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.GetFunctionConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -561,7 +561,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Invokes a Lambda function. You can invoke a function synchronously and wait for the response, or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response does not reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client may be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
+    * Invokes a Lambda function. You can invoke a function synchronously (and wait for the response), or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client might be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
     */
   def invoke(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.InvocationResponse, 
@@ -578,7 +578,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Invokes a Lambda function. You can invoke a function synchronously and wait for the response, or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response does not reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client may be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
+    * Invokes a Lambda function. You can invoke a function synchronously (and wait for the response), or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client might be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
     */
   def invoke(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.InvocationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.InvocationResponse, 
@@ -911,7 +911,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda does not publish a version if the function's configuration and code hasn't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function prior to publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
+    * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function before publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
     */
   def publishVersion(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -928,7 +928,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda does not publish a version if the function's configuration and code hasn't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function prior to publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
+    * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function before publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
     */
   def publishVersion(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.PublishVersionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -946,7 +946,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both guarantees that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
+    * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both ensures that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
     */
   def putFunctionConcurrency(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.Concurrency, 
@@ -963,7 +963,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both guarantees that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
+    * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both ensures that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
     */
   def putFunctionConcurrency(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.PutFunctionConcurrencyRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.Concurrency, 
@@ -996,14 +996,14 @@ trait Lambda
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Revokes function use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
+    * Revokes function-use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
     */
   def removePermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removePermission(
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
-    * Revokes function use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
+    * Revokes function-use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
     */
   def removePermission(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.RemovePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   def removePermission(
@@ -1111,7 +1111,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates a Lambda function's code. The function's code is locked when you publish a version. You cannot modify the code of a published version, only the unpublished version.
+    * Updates a Lambda function's code. The function's code is locked when you publish a version. You can't modify the code of a published version, only the unpublished version.
     */
   def updateFunctionCode(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -1128,7 +1128,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Updates a Lambda function's code. The function's code is locked when you publish a version. You cannot modify the code of a published version, only the unpublished version.
+    * Updates a Lambda function's code. The function's code is locked when you publish a version. You can't modify the code of a published version, only the unpublished version.
     */
   def updateFunctionCode(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.UpdateFunctionCodeRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -1146,7 +1146,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You cannot modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
+    * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You can't modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
     */
   def updateFunctionConfiguration(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 
@@ -1163,7 +1163,7 @@ trait Lambda
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You cannot modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
+    * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You can't modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
     */
   def updateFunctionConfiguration(params: awsDashSdkLib.clientsLambdaMod.LambdaNs.UpdateFunctionConfigurationRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsLambdaMod.LambdaNs.FunctionConfiguration, 

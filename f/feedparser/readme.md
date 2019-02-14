@@ -1,6 +1,6 @@
 ```
 // Type definitions for feedparser 2.2
-// Project: https://github.com/danmactough/node-feedparser
+// Project: http://github.com/danmactough/node-feedparser
 // Definitions by: Juan J. Jimenez-Anca <https://github.com/cortopy>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3

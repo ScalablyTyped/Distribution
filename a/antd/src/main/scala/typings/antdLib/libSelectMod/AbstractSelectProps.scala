@@ -27,7 +27,7 @@ trait AbstractSelectProps extends js.Object {
   var filterOption: js.UndefOr[
     scala.Boolean | (js.Function2[
       /* inputValue */ java.lang.String, 
-      /* option */ reactLib.reactMod.ReactNs.ReactElement[OptionProps], 
+      /* option */ reactLib.reactMod.ReactNs.ReactElement, 
       _
     ])
   ] = js.undefined

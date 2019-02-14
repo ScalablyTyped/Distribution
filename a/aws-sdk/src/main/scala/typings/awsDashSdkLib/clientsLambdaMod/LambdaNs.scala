@@ -10,11 +10,11 @@ import scala.scalajs.js.annotation._
 object LambdaNs extends js.Object {
   trait AccountLimit extends js.Object {
     /**
-      * The maximum size of your function's code and layers when extracted.
+      * The maximum size of your function's code and layers when they're extracted.
       */
     var CodeSizeUnzipped: js.UndefOr[Long] = js.undefined
     /**
-      * The maximum size of a deployment package when uploaded direcly to AWS Lambda. Use Amazon S3 for larger files.
+      * The maximum size of a deployment package when it's uploaded directly to AWS Lambda. Use Amazon S3 for larger files.
       */
     var CodeSizeZipped: js.UndefOr[Long] = js.undefined
     /**
@@ -26,7 +26,7 @@ object LambdaNs extends js.Object {
       */
     var TotalCodeSize: js.UndefOr[Long] = js.undefined
     /**
-      * The maximum number of simultaneous function executions, less the concurrency reserved for individual functions with PutFunctionConcurrency.
+      * The maximum number of simultaneous function executions, minus the capacity that's reserved for individual functions with PutFunctionConcurrency.
       */
     var UnreservedConcurrentExecutions: js.UndefOr[UnreservedConcurrentExecutions] = js.undefined
   }
@@ -37,7 +37,7 @@ object LambdaNs extends js.Object {
       */
     var FunctionCount: js.UndefOr[Long] = js.undefined
     /**
-      * The amount of storage space, in bytes, in use by deployment packages and layer archives.
+      * The amount of storage space, in bytes, that's being used by deployment packages and layer archives.
       */
     var TotalCodeSize: js.UndefOr[Long] = js.undefined
   }
@@ -106,11 +106,11 @@ object LambdaNs extends js.Object {
       */
     var Qualifier: js.UndefOr[Qualifier] = js.undefined
     /**
-      * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
+      * Only update the policy if the revision ID matches the ID that's specified. Use this option to avoid modifying a policy that has changed since you last read it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
-      * For AWS services, the ID of the account that owns the resource. Use instead of SourceArn to grant permission to resources owned by another account (e.g. all of an account's Amazon S3 buckets). Or use together with SourceArn to ensure that the resource is owned by the specified account. For example, an Amazon S3 bucket could be deleted by its owner and recreated by another account.
+      * For AWS services, the ID of the account that owns the resource. Use this instead of SourceArn to grant permission to resources that are owned by another account (for example, all of an account's Amazon S3 buckets). Or use it together with SourceArn to ensure that the resource is owned by the specified account. For example, an Amazon S3 bucket could be deleted by its owner and recreated by another account.
       */
     var SourceAccount: js.UndefOr[SourceOwner] = js.undefined
     /**
@@ -125,7 +125,7 @@ object LambdaNs extends js.Object {
   
   trait AddPermissionResponse extends js.Object {
     /**
-      * The permission statement added to the function policy.
+      * The permission statement that's added to the function policy.
       */
     var Statement: js.UndefOr[String] = js.undefined
   }
@@ -162,7 +162,7 @@ object LambdaNs extends js.Object {
   
   trait AliasRoutingConfiguration extends js.Object {
     /**
-      * The name of the second alias, and the percentage of traffic that is routed to it.
+      * The name of the second alias, and the percentage of traffic that's routed to it.
       */
     var AdditionalVersionWeights: js.UndefOr[AdditionalVersionWeights] = js.undefined
   }
@@ -176,7 +176,7 @@ object LambdaNs extends js.Object {
   
   trait Concurrency extends js.Object {
     /**
-      * The number of concurrent executions reserved for this function. For more information, see Managing Concurrency.
+      * The number of concurrent executions that are reserved for this function. For more information, see Managing Concurrency.
       */
     var ReservedConcurrentExecutions: js.UndefOr[ReservedConcurrentExecutions] = js.undefined
   }
@@ -187,7 +187,7 @@ object LambdaNs extends js.Object {
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
@@ -253,19 +253,19 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: FunctionName
     /**
-      * The name of the method within your code that Lambda calls to execute your function. The format includes the filename and can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
+      * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
       */
     var Handler: Handler
     /**
-      * The ARN of the AWS Key Management Service key used to encrypt your function's environment variables. If not provided, AWS Lambda uses a default service key.
+      * The ARN of the AWS Key Management Service (AWS KMS) key that's used to encrypt your function's environment variables. If it's not provided, AWS Lambda uses a default service key.
       */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
     /**
-      * A list of function layers to add to the function's execution environment. Specify each layer by ARN, including the version.
+      * A list of function layers to add to the function's execution environment. Specify each layer by its ARN, including the version.
       */
     var Layers: js.UndefOr[LayerList] = js.undefined
     /**
-      * The amount of memory that your function has access to. Increasing the function's memory also increases it's CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
+      * The amount of memory that your function has access to. Increasing the function's memory also increases its CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
       */
     var MemorySize: js.UndefOr[MemorySize] = js.undefined
     /**
@@ -285,7 +285,7 @@ object LambdaNs extends js.Object {
       */
     var Tags: js.UndefOr[Tags] = js.undefined
     /**
-      * The amount of time that Lambda allows a function to run before terminating it. The default is 3 seconds. The maximum allowed value is 900 seconds.
+      * The amount of time that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds.
       */
     var Timeout: js.UndefOr[Timeout] = js.undefined
     /**
@@ -307,7 +307,7 @@ object LambdaNs extends js.Object {
   
   trait DeleteAliasRequest extends js.Object {
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
@@ -336,7 +336,7 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: FunctionName
     /**
-      * Specify a version to delete. You cannot delete a version that is referenced by an alias.
+      * Specify a version to delete. You can't delete a version that's referenced by an alias.
       */
     var Qualifier: js.UndefOr[Qualifier] = js.undefined
   }
@@ -372,7 +372,7 @@ object LambdaNs extends js.Object {
   
   trait EnvironmentResponse extends js.Object {
     /**
-      * Error messages for environment variables that could not be applied.
+      * Error messages for environment variables that couldn't be applied.
       */
     var Error: js.UndefOr[EnvironmentError] = js.undefined
     /**
@@ -421,7 +421,7 @@ object LambdaNs extends js.Object {
   
   trait FunctionCode extends js.Object {
     /**
-      * An Amazon S3 bucket in the same region as your function. The bucket can be in a different AWS account.
+      * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
       */
     var S3Bucket: js.UndefOr[S3Bucket] = js.undefined
     /**
@@ -440,11 +440,11 @@ object LambdaNs extends js.Object {
   
   trait FunctionCodeLocation extends js.Object {
     /**
-      * A pre-signed URL that you can use to download the deployment package.
+      * A presigned URL that you can use to download the deployment package.
       */
     var Location: js.UndefOr[String] = js.undefined
     /**
-      * The service hosting the file.
+      * The service that's hosting the file.
       */
     var RepositoryType: js.UndefOr[String] = js.undefined
   }
@@ -455,7 +455,7 @@ object LambdaNs extends js.Object {
       */
     var CodeSha256: js.UndefOr[String] = js.undefined
     /**
-      * The size of the function's deployment package in bytes.
+      * The size of the function's deployment package, in bytes.
       */
     var CodeSize: js.UndefOr[Long] = js.undefined
     /**
@@ -479,11 +479,11 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: js.UndefOr[NamespacedFunctionName] = js.undefined
     /**
-      * The function Lambda calls to begin executing your function.
+      * The function that Lambda calls to begin executing your function.
       */
     var Handler: js.UndefOr[Handler] = js.undefined
     /**
-      * The KMS key used to encrypt the function's environment variables. Only returned if you've configured a customer managed CMK.
+      * The KMS key that's used to encrypt the function's environment variables. This key is only returned if you've configured a customer-managed CMK.
       */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
     /**
@@ -491,7 +491,7 @@ object LambdaNs extends js.Object {
       */
     var LastModified: js.UndefOr[Timestamp] = js.undefined
     /**
-      * The function's  layers 
+      * The function's  layers.
       */
     var Layers: js.UndefOr[LayersReferenceList] = js.undefined
     /**
@@ -499,11 +499,11 @@ object LambdaNs extends js.Object {
       */
     var MasterArn: js.UndefOr[FunctionArn] = js.undefined
     /**
-      * The memory allocated to the function
+      * The memory that's allocated to the function.
       */
     var MemorySize: js.UndefOr[MemorySize] = js.undefined
     /**
-      * Represents the latest updated revision of the function or alias.
+      * The latest updated revision of the function or alias.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
@@ -515,7 +515,7 @@ object LambdaNs extends js.Object {
       */
     var Runtime: js.UndefOr[Runtime] = js.undefined
     /**
-      * The amount of time that Lambda allows a function to run before terminating it.
+      * The amount of time that Lambda allows a function to run before stopping it.
       */
     var Timeout: js.UndefOr[Timeout] = js.undefined
     /**
@@ -536,7 +536,7 @@ object LambdaNs extends js.Object {
   
   trait GetAccountSettingsResponse extends js.Object {
     /**
-      * Limits related to concurrency and code storage.
+      * Limits that are related to concurrency and code storage.
       */
     var AccountLimit: js.UndefOr[AccountLimit] = js.undefined
     /**
@@ -547,7 +547,7 @@ object LambdaNs extends js.Object {
   
   trait GetAliasRequest extends js.Object {
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
@@ -704,7 +704,7 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: NamespacedFunctionName
     /**
-      * Choose from the following options.    RequestResponse (default) - Invoke the function synchronously. Keep the connection open until the function returns a response or times out. The API response includes the function response and additional data.    Event - Invoke the function asynchronously. Send events that fail multiple times to the function's dead-letter queue (if configured). The API response only includes a status code.    DryRun - Validate parameter values and verify that the user or role has permission to invoke the function.  
+      * Choose from the following options.    RequestResponse (default) - Invoke the function synchronously. Keep the connection open until the function returns a response or times out. The API response includes the function response and additional data.    Event - Invoke the function asynchronously. Send events that fail multiple times to the function's dead-letter queue (if it's configured). The API response only includes a status code.    DryRun - Validate parameter values and verify that the user or role has permission to invoke the function.  
       */
     var InvocationType: js.UndefOr[InvocationType] = js.undefined
     /**
@@ -712,7 +712,7 @@ object LambdaNs extends js.Object {
       */
     var LogType: js.UndefOr[LogType] = js.undefined
     /**
-      * JSON that you want to provide to your Lambda function as input.
+      * The JSON that you want to provide to your Lambda function as input.
       */
     var Payload: js.UndefOr[_Blob] = js.undefined
     /**
@@ -723,15 +723,15 @@ object LambdaNs extends js.Object {
   
   trait InvocationResponse extends js.Object {
     /**
-      * The version of the function that executed. When you invoke a function with an alias, indicates which version the alias resolved to.
+      * The version of the function that executed. When you invoke a function with an alias, this indicates which version the alias resolved to.
       */
     var ExecutedVersion: js.UndefOr[Version] = js.undefined
     /**
-      * If present, indicates that an error occured during function execution. Details about the error are included in the response payload.    Handled - The runtime caught an error thrown by the function and formatted it into a JSON document.    Unhandled - The runtime did not handle the error. For example, the function ran out of memory or timed out.  
+      * If present, indicates that an error occurred during function execution. Details about the error are included in the response payload.    Handled - The runtime caught an error thrown by the function and formatted it into a JSON document.    Unhandled - The runtime didn't handle the error. For example, the function ran out of memory or timed out.  
       */
     var FunctionError: js.UndefOr[String] = js.undefined
     /**
-      * The last 4 KB of the execution log, base64 encoded.
+      * The last 4 KB of the execution log, which is base64 encoded.
       */
     var LogResult: js.UndefOr[String] = js.undefined
     /**
@@ -739,7 +739,7 @@ object LambdaNs extends js.Object {
       */
     var Payload: js.UndefOr[_Blob] = js.undefined
     /**
-      * The HTTP status code will be in the 200 range for successful request. For the RequestResponse invocation type this status code will be 200. For the Event invocation type this status code will be 202. For the DryRun invocation type the status code will be 204.
+      * The HTTP status code is in the 200 range for a successful request. For the RequestResponse invocation type, this status code is 200. For the Event invocation type, this status code is 202. For the DryRun invocation type, the status code is 204.
       */
     var StatusCode: js.UndefOr[Integer] = js.undefined
   }
@@ -750,14 +750,14 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: NamespacedFunctionName
     /**
-      * JSON that you want to provide to your Lambda function as input.
+      * The JSON that you want to provide to your Lambda function as input.
       */
     var InvokeArgs: BlobStream
   }
   
   trait InvokeAsyncResponse extends js.Object {
     /**
-      * It will be 202 upon success.
+      * The status code.
       */
     var Status: js.UndefOr[HttpStatus] = js.undefined
   }
@@ -851,7 +851,7 @@ object LambdaNs extends js.Object {
   
   trait ListAliasesRequest extends js.Object {
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
@@ -859,7 +859,7 @@ object LambdaNs extends js.Object {
       */
     var FunctionVersion: js.UndefOr[Version] = js.undefined
     /**
-      * Specify the pagination token returned by a previous request to retrieve the next page of results.
+      * Specify the pagination token that's returned by a previous request to retrieve the next page of results.
       */
     var Marker: js.UndefOr[String] = js.undefined
     /**
@@ -874,7 +874,7 @@ object LambdaNs extends js.Object {
       */
     var Aliases: js.UndefOr[AliasList] = js.undefined
     /**
-      * Pagination token included if more results are available.
+      * The pagination token that's included if more results are available.
       */
     var NextMarker: js.UndefOr[String] = js.undefined
   }
@@ -915,11 +915,11 @@ object LambdaNs extends js.Object {
       */
     var FunctionVersion: js.UndefOr[FunctionVersion] = js.undefined
     /**
-      * Specify the pagination token returned by a previous request to retrieve the next page of results.
+      * Specify the pagination token that's returned by a previous request to retrieve the next page of results.
       */
     var Marker: js.UndefOr[String] = js.undefined
     /**
-      * For Lambda@Edge functions, the region of the master function. For example, us-east-2 or ALL. If specified, you must set FunctionVersion to ALL.
+      * For Lambda@Edge functions, the AWS Region of the master function. For example, us-east-2 or ALL. If specified, you must set FunctionVersion to ALL.
       */
     var MasterRegion: js.UndefOr[MasterRegion] = js.undefined
     /**
@@ -934,7 +934,7 @@ object LambdaNs extends js.Object {
       */
     var Functions: js.UndefOr[FunctionList] = js.undefined
     /**
-      * Pagination token included if more results are available.
+      * The pagination token that's included if more results are available.
       */
     var NextMarker: js.UndefOr[String] = js.undefined
   }
@@ -1011,22 +1011,22 @@ object LambdaNs extends js.Object {
   
   trait ListVersionsByFunctionRequest extends js.Object {
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: NamespacedFunctionName
     /**
-      * Specify the pagination token returned by a previous request to retrieve the next page of results.
+      * Specify the pagination token that's returned by a previous request to retrieve the next page of results.
       */
     var Marker: js.UndefOr[String] = js.undefined
     /**
-      * Limit the number of versions returned.
+      * Limit the number of versions that are returned.
       */
     var MaxItems: js.UndefOr[MaxListItems] = js.undefined
   }
   
   trait ListVersionsByFunctionResponse extends js.Object {
     /**
-      * Pagination token included if more results are available.
+      * The pagination token that's included if more results are available.
       */
     var NextMarker: js.UndefOr[String] = js.undefined
     /**
@@ -1095,19 +1095,19 @@ object LambdaNs extends js.Object {
   
   trait PublishVersionRequest extends js.Object {
     /**
-      * Only publish a version if the hash matches the value specified. Use this option to avoid publishing a version if the function code has changed since you last updated it. You can get the hash for the version you uploaded from the output of UpdateFunctionCode.
+      * Only publish a version if the hash value matches the value that's specified. Use this option to avoid publishing a version if the function code has changed since you last updated it. You can get the hash for the version that you uploaded from the output of UpdateFunctionCode.
       */
     var CodeSha256: js.UndefOr[String] = js.undefined
     /**
-      * Specify a description for the version to override the description in the function configuration.
+      * A description for the version to override the description in the function configuration.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
-      * Only update the function if the revision ID matches the ID specified. Use this option to avoid publishing a version if the function configuration has changed since you last updated it.
+      * Only update the function if the revision ID matches the ID that's specified. Use this option to avoid publishing a version if the function configuration has changed since you last updated it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
   }
@@ -1152,7 +1152,7 @@ object LambdaNs extends js.Object {
       */
     var Qualifier: js.UndefOr[Qualifier] = js.undefined
     /**
-      * Only update the policy if the revision ID matches the ID specified. Use this option to avoid modifying a policy that has changed since you last read it.
+      * Only update the policy if the revision ID matches the ID that's specified. Use this option to avoid modifying a policy that has changed since you last read it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
@@ -1287,7 +1287,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. A published version is a snapshot of your function code and configuration that can not be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or a AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
+      * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. The unpublished version changes when you update your function's code and configuration. A published version is a snapshot of your function code and configuration that can't be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function, and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or an AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
       */
     def createFunction(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createFunction(
@@ -1298,7 +1298,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. A published version is a snapshot of your function code and configuration that can not be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or a AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
+      * Creates a Lambda function. To create a function, you need a deployment package and an execution role. The deployment package contains your function code. The execution role grants the function permission to use AWS services, such as Amazon CloudWatch Logs for log streaming and AWS X-Ray for request tracing. A function has an unpublished version, and can have published versions and aliases. The unpublished version changes when you update your function's code and configuration. A published version is a snapshot of your function code and configuration that can't be changed. An alias is a named resource that maps to a version, and can be changed to map to a different version. Use the Publish parameter to create version 1 of your function from its initial configuration. The other parameters let you configure version-specific and function-level settings. You can modify version-specific settings later with UpdateFunctionConfiguration. Function-level settings apply to both the unpublished and published versions of the function, and include tags (TagResource) and per-function concurrency limits (PutFunctionConcurrency). If another account or an AWS service invokes your function, use AddPermission to grant permission by creating a resource-based IAM policy. You can grant permissions at the function level, on a version, or on an alias. To invoke your function directly, use Invoke. To invoke your function in response to events in other AWS services, create an event source mapping (CreateEventSourceMapping), or configure a function trigger in the other service. For more information, see Invoking Functions.
       */
     def createFunction(params: CreateFunctionRequest): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createFunction(
@@ -1393,7 +1393,7 @@ object LambdaNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves details about your account's limits and usage in a region.
+      * Retrieves details about your account's limits and usage in an AWS Region.
       */
     def getAccountSettings(): awsDashSdkLib.libRequestMod.Request[GetAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getAccountSettings(
@@ -1404,7 +1404,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Retrieves details about your account's limits and usage in a region.
+      * Retrieves details about your account's limits and usage in an AWS Region.
       */
     def getAccountSettings(params: GetAccountSettingsRequest): awsDashSdkLib.libRequestMod.Request[GetAccountSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getAccountSettings(
@@ -1462,7 +1462,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details specific to that version are returned.
+      * Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
       */
     def getFunction(): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getFunction(
@@ -1473,7 +1473,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details specific to that version are returned.
+      * Returns information about the function or function version, with a link to download the deployment package that's valid for 10 minutes. If you specify a function version, only details that are specific to that version are returned.
       */
     def getFunction(params: GetFunctionRequest): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getFunction(
@@ -1485,7 +1485,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
+      * Returns the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
       */
     def getFunctionConfiguration(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getFunctionConfiguration(
@@ -1496,7 +1496,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns a the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
+      * Returns the version-specific settings of a Lambda function or version. The output includes only options that can vary between versions of a function. To modify these settings, use UpdateFunctionConfiguration. To get all of a function's details, including function-level settings, use GetFunction.
       */
     def getFunctionConfiguration(params: GetFunctionConfigurationRequest): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getFunctionConfiguration(
@@ -1577,7 +1577,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Invokes a Lambda function. You can invoke a function synchronously and wait for the response, or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response does not reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client may be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
+      * Invokes a Lambda function. You can invoke a function synchronously (and wait for the response), or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client might be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
       */
     def invoke(): awsDashSdkLib.libRequestMod.Request[InvocationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def invoke(
@@ -1588,7 +1588,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[InvocationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Invokes a Lambda function. You can invoke a function synchronously and wait for the response, or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response does not reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client may be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
+      * Invokes a Lambda function. You can invoke a function synchronously (and wait for the response), or asynchronously. To invoke a function asynchronously, set InvocationType to Event. For synchronous invocation, details about the function response, including errors, are included in the response body and headers. For either invocation type, you can find more information in the execution log and trace. To record function errors for asynchronous invocations, configure your function with a dead letter queue. The status code in the API response doesn't reflect function errors. Error codes are reserved for errors that prevent your function from executing, such as permissions errors, limit errors, or issues with your function's code and configuration. For example, Lambda returns TooManyRequestsException if executing the function would cause you to exceed a concurrency limit at either the account level (ConcurrentInvocationLimitExceeded) or function level (ReservedFunctionConcurrentInvocationLimitExceeded). For functions with a long timeout, your client might be disconnected during synchronous invocation while it waits for a response. Configure your HTTP client, SDK, firewall, proxy, or operating system to allow for long connections with timeout or keep-alive settings. This operation requires permission for the lambda:InvokeFunction action.
       */
     def invoke(params: InvocationRequest): awsDashSdkLib.libRequestMod.Request[InvocationResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def invoke(
@@ -1807,7 +1807,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PublishLayerVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda does not publish a version if the function's configuration and code hasn't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function prior to publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
+      * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function before publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
       */
     def publishVersion(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def publishVersion(
@@ -1818,7 +1818,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda does not publish a version if the function's configuration and code hasn't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function prior to publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
+      * Creates a version from the current code and configuration of a function. Use versions to create a snapshot of your function code and configuration that doesn't change. AWS Lambda doesn't publish a version if the function's configuration and code haven't changed since the last version. Use UpdateFunctionCode or UpdateFunctionConfiguration to update the function before publishing a version. Clients can invoke versions directly or with an alias. To create an alias, use CreateAlias.
       */
     def publishVersion(params: PublishVersionRequest): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def publishVersion(
@@ -1830,14 +1830,14 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both guarantees that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
+      * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both ensures that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
       */
     def putFunctionConcurrency(): awsDashSdkLib.libRequestMod.Request[Concurrency, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putFunctionConcurrency(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ Concurrency, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[Concurrency, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both guarantees that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
+      * Sets the maximum number of simultaneous executions for a function, and reserves capacity for that concurrency level. Concurrency settings apply to the function as a whole, including all published versions and the unpublished version. Reserving concurrency both ensures that your function has capacity to process the specified number of events simultaneously, and prevents it from scaling beyond that level. Use GetFunction to see the current setting for a function. Use GetAccountSettings to see your regional concurrency limit. You can reserve concurrency for as many functions as you like, as long as you leave at least 100 simultaneous executions unreserved for functions that aren't configured with a per-function limit. For more information, see Managing Concurrency.
       */
     def putFunctionConcurrency(params: PutFunctionConcurrencyRequest): awsDashSdkLib.libRequestMod.Request[Concurrency, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putFunctionConcurrency(
@@ -1860,14 +1860,14 @@ object LambdaNs extends js.Object {
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Revokes function use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
+      * Revokes function-use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
       */
     def removePermission(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removePermission(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Revokes function use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
+      * Revokes function-use permission from an AWS service or another account. You can get the ID of the statement from the output of GetPolicy.
       */
     def removePermission(params: RemovePermissionRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def removePermission(
@@ -1951,7 +1951,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[EventSourceMappingConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates a Lambda function's code. The function's code is locked when you publish a version. You cannot modify the code of a published version, only the unpublished version.
+      * Updates a Lambda function's code. The function's code is locked when you publish a version. You can't modify the code of a published version, only the unpublished version.
       */
     def updateFunctionCode(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateFunctionCode(
@@ -1962,7 +1962,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Updates a Lambda function's code. The function's code is locked when you publish a version. You cannot modify the code of a published version, only the unpublished version.
+      * Updates a Lambda function's code. The function's code is locked when you publish a version. You can't modify the code of a published version, only the unpublished version.
       */
     def updateFunctionCode(params: UpdateFunctionCodeRequest): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateFunctionCode(
@@ -1974,7 +1974,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You cannot modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
+      * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You can't modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
       */
     def updateFunctionConfiguration(): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateFunctionConfiguration(
@@ -1985,7 +1985,7 @@ object LambdaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You cannot modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
+      * Modify the version-specifc settings of a Lambda function. These settings can vary between versions of a function and are locked when you publish a version. You can't modify the configuration of a published version, only the unpublished version. To configure function concurrency, use PutFunctionConcurrency. To grant invoke permissions to an account or AWS service, use AddPermission.
       */
     def updateFunctionConfiguration(params: UpdateFunctionConfigurationRequest): awsDashSdkLib.libRequestMod.Request[FunctionConfiguration, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def updateFunctionConfiguration(
@@ -2015,7 +2015,7 @@ object LambdaNs extends js.Object {
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The name of the lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
+      * The name of the Lambda function.  Name formats     Function name - MyFunction.    Function ARN - arn:aws:lambda:us-west-2:123456789012:function:MyFunction.    Partial ARN - 123456789012:function:MyFunction.   The length constraint applies only to the full ARN. If you specify only the function name, it is limited to 64 characters in length.
       */
     var FunctionName: FunctionName
     /**
@@ -2027,7 +2027,7 @@ object LambdaNs extends js.Object {
       */
     var Name: Alias
     /**
-      * Only update the alias if the revision ID matches the ID specified. Use this option to avoid modifying an alias that has changed since you last read it.
+      * Only update the alias if the revision ID matches the ID that's specified. Use this option to avoid modifying an alias that has changed since you last read it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
@@ -2069,11 +2069,11 @@ object LambdaNs extends js.Object {
       */
     var Publish: js.UndefOr[Boolean] = js.undefined
     /**
-      * Only update the function if the revision ID matches the ID specified. Use this option to avoid modifying a function that has changed since you last read it.
+      * Only update the function if the revision ID matches the ID that's specified. Use this option to avoid modifying a function that has changed since you last read it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
-      * An Amazon S3 bucket in the same region as your function. The bucket can be in a different AWS account.
+      * An Amazon S3 bucket in the same AWS Region as your function. The bucket can be in a different AWS account.
       */
     var S3Bucket: js.UndefOr[S3Bucket] = js.undefined
     /**
@@ -2096,11 +2096,11 @@ object LambdaNs extends js.Object {
       */
     var DeadLetterConfig: js.UndefOr[DeadLetterConfig] = js.undefined
     /**
-      * A short user-defined function description. AWS Lambda does not use this value. Assign a meaningful description as you see fit.
+      * A description of the function.
       */
     var Description: js.UndefOr[Description] = js.undefined
     /**
-      * The parent object that contains your environment's configuration settings.
+      * Environment variables that are accessible from function code during execution.
       */
     var Environment: js.UndefOr[Environment] = js.undefined
     /**
@@ -2108,35 +2108,35 @@ object LambdaNs extends js.Object {
       */
     var FunctionName: FunctionName
     /**
-      * The function that Lambda calls to begin executing your function. For Node.js, it is the module-name.export value in your function. 
+      * The name of the method within your code that Lambda calls to execute your function. The format includes the file name. It can also include namespaces and other qualifiers, depending on the runtime. For more information, see Programming Model.
       */
     var Handler: js.UndefOr[Handler] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the KMS key used to encrypt your function's environment variables. If you elect to use the AWS Lambda default service key, pass in an empty string ("") for this parameter.
+      * The ARN of the AWS Key Management Service (AWS KMS) key that's used to encrypt your function's environment variables. If it's not provided, AWS Lambda uses a default service key.
       */
     var KMSKeyArn: js.UndefOr[KMSKeyArn] = js.undefined
     /**
-      * A list of function layers to add to the function's execution environment.
+      * A list of function layers to add to the function's execution environment. Specify each layer by its ARN, including the version.
       */
     var Layers: js.UndefOr[LayerList] = js.undefined
     /**
-      * The amount of memory, in MB, your Lambda function is given. AWS Lambda uses this memory size to infer the amount of CPU allocated to your function. Your function use-case determines your CPU and memory requirements. For example, a database operation might need less memory compared to an image processing function. The default value is 128 MB. The value must be a multiple of 64 MB.
+      * The amount of memory that your function has access to. Increasing the function's memory also increases its CPU allocation. The default value is 128 MB. The value must be a multiple of 64 MB.
       */
     var MemorySize: js.UndefOr[MemorySize] = js.undefined
     /**
-      * Only update the function if the revision ID matches the ID specified. Use this option to avoid modifying a function that has changed since you last read it.
+      * Only update the function if the revision ID matches the ID that's specified. Use this option to avoid modifying a function that has changed since you last read it.
       */
     var RevisionId: js.UndefOr[String] = js.undefined
     /**
-      * The Amazon Resource Name (ARN) of the IAM role that Lambda will assume when it executes your function.
+      * The Amazon Resource Name (ARN) of the function's execution role.
       */
     var Role: js.UndefOr[RoleArn] = js.undefined
     /**
-      * The runtime version for the function.
+      * The identifier of the function's runtime.
       */
     var Runtime: js.UndefOr[Runtime] = js.undefined
     /**
-      * The amount of time that Lambda allows a function to run before terminating it. The default is 3 seconds. The maximum allowed value is 900 seconds.
+      * The amount of time that Lambda allows a function to run before stopping it. The default is 3 seconds. The maximum allowed value is 900 seconds.
       */
     var Timeout: js.UndefOr[Timeout] = js.undefined
     /**
@@ -2144,7 +2144,7 @@ object LambdaNs extends js.Object {
       */
     var TracingConfig: js.UndefOr[TracingConfig] = js.undefined
     /**
-      * Specify security groups and subnets in a VPC to which your Lambda function needs access.
+      * For network connectivity to AWS resources in a VPC, specify a list of security groups and subnets in the VPC. When you connect a function to a VPC, it can only access resources and the internet through that VPC. For more information, see VPC Settings.
       */
     var VpcConfig: js.UndefOr[VpcConfig] = js.undefined
   }

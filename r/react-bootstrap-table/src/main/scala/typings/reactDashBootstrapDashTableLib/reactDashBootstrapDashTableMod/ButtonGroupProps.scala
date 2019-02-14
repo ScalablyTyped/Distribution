@@ -9,18 +9,18 @@ trait ButtonGroupProps extends js.Object {
   /**
   	 * Delete button.
   	 */
-  var deleteBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var deleteBtn: reactLib.reactMod.ReactNs.ReactElement
   /**
   	 * Export to CSV button.
   	 */
-  var exportCSVBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var exportCSVBtn: reactLib.reactMod.ReactNs.ReactElement
   /**
   	 * Insert button (to add a row).
   	 */
-  var insertBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var insertBtn: reactLib.reactMod.ReactNs.ReactElement
   /**
   	 * Toggle button to switch between showing all rows and showing selected rows only.
   	 */
-  var showSelectedOnlyBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var showSelectedOnlyBtn: reactLib.reactMod.ReactNs.ReactElement
 }
 

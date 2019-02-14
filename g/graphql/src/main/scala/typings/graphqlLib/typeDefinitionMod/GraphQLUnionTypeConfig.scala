@@ -19,7 +19,11 @@ trait GraphQLUnionTypeConfig[TSource, TContext] extends js.Object {
     * the default implementation will call `isTypeOf` on each implementing
     * Object type.
     */
-  var resolveType: js.UndefOr[graphqlLib.tsutilsMaybeMod.Maybe[GraphQLTypeResolver[TSource, TContext]]] = js.undefined
-  var types: Thunk[js.Array[GraphQLObjectType[_, _]]]
+  var resolveType: js.UndefOr[
+    graphqlLib.tsutilsMaybeMod.Maybe[
+      GraphQLTypeResolver[TSource, TContext, org.scalablytyped.runtime.StringDictionary[_]]
+    ]
+  ] = js.undefined
+  var types: Thunk[js.Array[GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]]]
 }
 

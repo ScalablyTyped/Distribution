@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "modernizr"
-version := "3.5-dt-20180323Z-68d1d9"
+version := "3.5-dt-20190212Z-68d1d9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

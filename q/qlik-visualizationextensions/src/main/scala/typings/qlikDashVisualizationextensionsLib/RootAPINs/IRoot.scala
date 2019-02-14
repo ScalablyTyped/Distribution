@@ -7,6 +7,17 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait IRoot extends js.Object {
+  /**
+    * promise object
+    * Promise utility that can be used for asynchronous operations.
+    * Very useful for the paint method to indicate when the rendering is completed.
+    * executor
+    * Type: Function
+    * The executing function with two parameters:
+    * resolve
+    * reject
+    */
+  var Promise: stdLib.PromiseConstructor = js.native
   var navigation: qlikDashVisualizationextensionsLib.NavigationAPINs.INavigation = js.native
   /**
     * Calls the Qlik Sense repository.

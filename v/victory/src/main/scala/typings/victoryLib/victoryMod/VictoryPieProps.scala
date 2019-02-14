@@ -40,7 +40,7 @@ trait VictoryPieProps
     * the VictoryPie; and the d3 compatible slice object.
     * If a dataComponent is not provided, VictoryPie's Slice component will be used.
     */
-  var dataComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var dataComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * The overall end angle of the pie in degrees. This prop is used in conjunction with
     * startAngle to create a pie that spans only a segment of a circle.

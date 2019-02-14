@@ -6,6 +6,7 @@
 //                 Liveangela <https://github.com/liveangela>
 //                 Ovilia <https://github.com/Ovilia>
 //                 Roman <https://github.com/iRON5>
+//                 Bilal <https://github.com/bilalucar>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-hotkeys"
-version := "1.7-dt-20180214Z-196760"
+version := "1.7-dt-20190212Z-196760"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

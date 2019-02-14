@@ -811,6 +811,9 @@ object awsDashSdkLibStrings {
   sealed trait AFTER extends js.Object
   
   @js.native
+  sealed trait AFTER_30_DAYS extends js.Object
+  
+  @js.native
   sealed trait AFTER_CONTACT_WORK_TIME extends js.Object
   
   @js.native
@@ -15113,6 +15116,8 @@ object awsDashSdkLibStrings {
   def AFFILIATION_CHANGED: AFFILIATION_CHANGED = "AFFILIATION_CHANGED".asInstanceOf[AFFILIATION_CHANGED]
   @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
+  @scala.inline
+  def AFTER_30_DAYS: AFTER_30_DAYS = "AFTER_30_DAYS".asInstanceOf[AFTER_30_DAYS]
   @scala.inline
   def AFTER_CONTACT_WORK_TIME: AFTER_CONTACT_WORK_TIME = "AFTER_CONTACT_WORK_TIME".asInstanceOf[AFTER_CONTACT_WORK_TIME]
   @scala.inline

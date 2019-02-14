@@ -9,7 +9,7 @@ trait SearchPanelProps extends js.Object {
   /**
   	 * Default clear search field button component.
   	 */
-  var clearBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var clearBtn: reactLib.reactMod.ReactNs.ReactElement
   /**
   	 * The default search text.
   	 */
@@ -21,7 +21,7 @@ trait SearchPanelProps extends js.Object {
   /**
   	 * Default search field component.
   	 */
-  var searchField: reactLib.reactMod.ReactNs.ReactElement[_]
+  var searchField: reactLib.reactMod.ReactNs.ReactElement
   /**
   	 * A callback to trigger the clear search field event.
   	 */

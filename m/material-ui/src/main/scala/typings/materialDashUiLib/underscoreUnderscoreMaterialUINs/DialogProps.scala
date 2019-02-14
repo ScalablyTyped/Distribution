@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends reactLib.reactMod.ReactNs.DOMAttributes[js.Object] {
   /** @deprecated use a custom `actions` property instead */
   var actionFocus: js.UndefOr[java.lang.String] = js.undefined
-  var actions: js.UndefOr[js.Array[DialogAction | reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
+  var actions: js.UndefOr[js.Array[DialogAction | reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
   var actionsContainerClassName: js.UndefOr[java.lang.String] = js.undefined
   var actionsContainerStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var autoDetectWindowHeight: js.UndefOr[scala.Boolean] = js.undefined

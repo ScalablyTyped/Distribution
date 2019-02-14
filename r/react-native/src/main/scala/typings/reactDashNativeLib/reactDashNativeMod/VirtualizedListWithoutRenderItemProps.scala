@@ -11,21 +11,21 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * a rendered element.
     */
   var ListEmptyComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ] = js.undefined
   /**
     * Rendered at the bottom of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
   var ListFooterComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ] = js.undefined
   /**
     * Rendered at the top of all the items. Can be a React Component Class, a render function, or
     * a rendered element.
     */
   var ListHeaderComponent: js.UndefOr[
-    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+    reactLib.reactMod.ReactNs.ComponentType[_] | reactLib.reactMod.ReactNs.ReactElement | scala.Null
   ] = js.undefined
   /**
     * The default accessor functions assume this is an Array<{key: string}> but you can override
@@ -120,10 +120,7 @@ trait VirtualizedListWithoutRenderItemProps[ItemT] extends ScrollViewProps {
     * Render a custom scroll component, e.g. with a differently styled `RefreshControl`.
     */
   var renderScrollComponent: js.UndefOr[
-    js.Function1[
-      /* props */ ScrollViewProps, 
-      reactLib.reactMod.ReactNs.ReactElement[ScrollViewProps]
-    ]
+    js.Function1[/* props */ ScrollViewProps, reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
   /**
     * Amount of time between low-pri item render batches, e.g. for rendering items quite a ways off

@@ -46,6 +46,35 @@ trait GridProps extends CommonProps {
     */
   var onScroll: js.UndefOr[js.Function1[/* props */ GridOnScrollProps, _]] = js.undefined
   /**
+    * The number of columns to render outside of the visible area. This property can be important for two reasons:
+    *
+    * - Overscanning by one row or column allows the tab key to focus on the next (not yet visible) item.
+    * - Overscanning slightly can reduce or prevent a flash of empty space when a user first starts scrolling.
+    *
+    * Note that overscanning too much can negatively impact performance. By default, grid overscans by one item.
+    */
+  var overscanColumnsCount: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The number of items (rows or columns) to render outside of the visible area. This property can be important for two reasons:
+    *
+    * - Overscanning by one row or column allows the tab key to focus on the next (not yet visible) item.
+    * - Overscanning slightly can reduce or prevent a flash of empty space when a user first starts scrolling.
+    *
+    * Note that overscanning too much can negatively impact performance. By default, grid overscans by one item.
+    *
+    * @deprecated since version 1.4.0
+    */
+  var overscanCount: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The number of rows to render outside of the visible area. This property can be important for two reasons:
+    *
+    * - Overscanning by one row or column allows the tab key to focus on the next (not yet visible) item.
+    * - Overscanning slightly can reduce or prevent a flash of empty space when a user first starts scrolling.
+    *
+    * Note that overscanning too much can negatively impact performance. By default, grid overscans by one item.
+    */
+  var overscanRowsCount: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Number of rows in the grid. Note that only a few rows will be rendered and displayed at a time.
     */
   var rowCount: scala.Double

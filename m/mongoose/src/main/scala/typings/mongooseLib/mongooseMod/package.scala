@@ -6,12 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object mongooseMod {
-  type CastError = Error
-  /*
-    * section error.js
-    * http://mongoosejs.com/docs/api.html#error-js
-    */
-  type Error = nodeLib.ErrorConstructor
+  type CastError = mongooseLib.mongooseMod.ErrorNs.CastError
   type HookAsyncCallback[T] = js.ThisFunction3[
     /* this */ T, 
     /* next */ HookNextFunction, 

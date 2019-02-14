@@ -16,7 +16,7 @@
  * Capture is silently ignored in ie8
  */
 // Type definitions for dom-helpers 3.4
-// Project: https://github.com/react-bootstrap/dom-helpers
+// Project: https://github.com/react-bootstrap/dom-helpers, https://github.com/jquense/dom-helpers
 // Definitions by: Konstantin Vasiliev <https://github.com/mctep>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3

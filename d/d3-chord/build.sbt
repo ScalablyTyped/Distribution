@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-chord"
-version := "1.0-dt-20181115Z-aefb62"
+version := "1.0-dt-20190212Z-aefb62"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

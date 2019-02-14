@@ -19,6 +19,6 @@ trait VictoryLabableProps extends js.Object {
     * data point, they should be created by composing VictoryArea with VictoryScatter
     * @default <VictoryLabel/>
     */
-  var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var labelComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
 }
 

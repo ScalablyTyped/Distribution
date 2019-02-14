@@ -54,7 +54,7 @@ trait QueryParameters extends js.Object {
     * default: ""
     * https://www.algolia.com/doc/api-reference/api-parameters/aroundLatLngViaIP/
     */
-  var aroundLatLngViaIP: js.UndefOr[java.lang.String] = js.undefined
+  var aroundLatLngViaIP: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * Control the precision of a geo search
     * default: null

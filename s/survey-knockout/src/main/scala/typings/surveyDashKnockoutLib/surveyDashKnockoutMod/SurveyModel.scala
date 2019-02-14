@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.ISurvey because var conflicts: isLoadingFromJson. Inlined currentPage, pages, isPageStarted, pageVisibilityChanged, panelVisibilityChanged, questionVisibilityChanged, questionsOrder, questionAdded, panelAdded, questionRemoved, panelRemoved, questionRenamed, validateQuestion, validatePanel, hasVisibleQuestionByValueName, questionCountByValueName, processHtml, getSurveyMarkdownHtml, isDisplayMode, isDesignMode, areInvisibleElementsShowing, requiredText, getQuestionTitleTemplate, getUpdatedQuestionTitle, questionStartIndex, questionTitleLocation, questionErrorLocation, storeOthersAsComment, maxTextLength, maxOthersLength, clearValueOnDisableItems, uploadFiles, downloadFile, clearFiles, updateChoicesFromServer, updateQuestionCssClasses, updatePanelCssClasses, afterRenderQuestion, afterRenderPanel, afterRenderPage, matrixRowAdded, matrixBeforeRowAdded, matrixRowRemoved, matrixCellCreated, matrixAfterCellRender, matrixCellValueChanged, matrixCellValueChanging, matrixCellValidate, dynamicPanelAdded, dynamicPanelRemoved, dynamicPanelItemValueChanged, dragAndDropAllow */ @JSImport("survey-knockout", "SurveyModel")
 @js.native
 class SurveyModel ()
   extends Base
@@ -153,7 +153,7 @@ class SurveyModel ()
   /**
     * Returns true if navigation buttons: 'Prev', 'Next' or 'Complete' are shown.
     */
-  val isNavigationButtonsShowing: scala.Boolean = js.native
+  val isNavigationButtonsShowing: java.lang.String = js.native
   val isShowPrevButton: scala.Boolean = js.native
   val isShowProgressBarOnBottom: scala.Boolean = js.native
   val isShowProgressBarOnTop: scala.Boolean = js.native
@@ -462,12 +462,28 @@ class SurveyModel ()
     * <br/> options.value - a new value
     * <br/> options.row - the matrix row object
     * <br/> options.getCellQuestion(columnName) - the function that returns the cell question by column name.
+    * @see onMatrixCellValueChanging
     * @see onMatrixBeforeRowAdded
     * @see onMatrixRowAdded
     * @see QuestionMatrixDynamicModel
     * @see QuestionMatrixDropdownModel
     */
   var onMatrixCellValueChanged: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
+  /**
+    * The event is fired on changing cell value in Matrix Dymic and Matrix Dropdown questions. You may change the options.value property to change the value in the cell.
+    * <br/> options.question - the matrix question
+    * <br/> options.columName - the matrix column name
+    * <br/> options.value - a new value
+    * <br/> options.oldValue - the old value
+    * <br/> options.row - the matrix row object
+    * <br/> options.getCellQuestion(columnName) - the function that returns the cell question by column name.
+    * @see onMatrixCellValueChanged
+    * @see onMatrixBeforeRowAdded
+    * @see onMatrixRowAdded
+    * @see QuestionMatrixDynamicModel
+    * @see QuestionMatrixDropdownModel
+    */
+  var onMatrixCellValueChanging: Event[js.Function2[/* sender */ this.type, /* options */ _, _], _] = js.native
   /**
     * The event is fired on adding a new row in Matrix Dynamic question.
     * <br/> sender the survey object that fires the event
@@ -671,6 +687,7 @@ class SurveyModel ()
     * <br/> sender the survey object that fires the event
     * <br/> options.name the value name that has being changed
     * <br/> options.question a question which question.name equals to the value name. If there are several questions with the same name, the first question is taken. If there is no such questions, the options.question is null.
+    * <br/> options.oldValue old, previous value.
     * <br/> options.value a new value. You may change it
     * @see setValue
     * @see onValueChanged
@@ -779,11 +796,11 @@ class SurveyModel ()
     */
   var showInvisibleElements: scala.Boolean = js.native
   /**
-    * Set it to false to hide 'Prev', 'Next' and 'Complete' buttons. It makes sense if you are going to create a custom navigation or have just one page or on setting goNextPageAutomatic property.
+    * Possible values: 'bottom' (default), 'top', 'both' and 'none'. Set it to 'none' to hide 'Prev', 'Next' and 'Complete' buttons. It makes sense if you are going to create a custom navigation or have just one page or on setting goNextPageAutomatic property.
     * @see goNextPageAutomatic
     * @see showPrevButton
     */
-  var showNavigationButtons: scala.Boolean = js.native
+  var showNavigationButtons: java.lang.String | js.Any = js.native
   /**
     * Set this property to false to turn off the numbering on pages titles.
     */
@@ -1185,6 +1202,9 @@ class SurveyModel ()
   def matrixCellValueChanged(question: IQuestion, options: js.Any): scala.Unit = js.native
   @JSName("matrixCellValueChanged")
   def matrixCellValueChanged_Any(question: IQuestion, options: js.Any): js.Any = js.native
+  def matrixCellValueChanging(question: IQuestion, options: js.Any): scala.Unit = js.native
+  @JSName("matrixCellValueChanging")
+  def matrixCellValueChanging_Any(question: IQuestion, options: js.Any): js.Any = js.native
   def matrixRowAdded(question: IQuestion): scala.Unit = js.native
   @JSName("matrixRowAdded")
   def matrixRowAdded_Any(question: IQuestion): js.Any = js.native

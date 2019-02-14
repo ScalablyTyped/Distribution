@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "react-popper"
-version := "1.3.3-377c4e"
+version := "1.3.3-12808e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-7861df",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-f1101f",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-be5ab9",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20181212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190206Z-d66e8f",
+  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-6ba63e")
 publishArtifact in packageDoc := false

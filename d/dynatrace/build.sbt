@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dynatrace"
-version := "1.0-dt-20181207Z-0aa81c"
+version := "1.0-dt-20190212Z-0aa81c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

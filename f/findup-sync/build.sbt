@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "findup-sync"
-version := "2.0-dt-20181205Z-653fb9"
+version := "2.0-dt-20190212Z-653fb9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

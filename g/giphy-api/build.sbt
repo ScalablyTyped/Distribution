@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "giphy-api"
-version := "2.0-dt-20190211Z-99994f"
+version := "2.0-dt-20190212Z-5e6a3a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

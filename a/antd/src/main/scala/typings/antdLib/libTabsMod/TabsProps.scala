@@ -27,7 +27,7 @@ trait TabsProps extends js.Object {
     js.Function2[
       /* props */ TabsProps, 
       /* DefaultTabBar */ reactLib.reactMod.ReactNs.ReactNode, 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   var size: js.UndefOr[

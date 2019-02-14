@@ -51,6 +51,7 @@ trait ISurvey
   def matrixCellCreated(question: IQuestion, options: js.Any): js.Any
   def matrixCellValidate(question: IQuestion, options: js.Any): SurveyError
   def matrixCellValueChanged(question: IQuestion, options: js.Any): js.Any
+  def matrixCellValueChanging(question: IQuestion, options: js.Any): js.Any
   def matrixRowAdded(question: IQuestion): js.Any
   def matrixRowRemoved(question: IQuestion, rowIndex: scala.Double, row: js.Any): js.Any
   def pageVisibilityChanged(page: IPage, newValue: scala.Boolean): js.Any

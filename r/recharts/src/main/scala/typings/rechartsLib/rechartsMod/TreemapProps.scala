@@ -14,7 +14,7 @@ trait TreemapProps
     js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[_]] = js.undefined
   var data: js.UndefOr[js.Array[_]] = js.undefined
   var dataKey: js.UndefOr[DataKey] = js.undefined
   var fill: js.UndefOr[java.lang.String] = js.undefined

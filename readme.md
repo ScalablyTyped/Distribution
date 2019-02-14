@@ -2,7 +2,7 @@
 
 # ScalablyTyped - The Javascript ecosystem for Scala.js!
 
-This is the home of Scala.js typings for **6288** Javascript libraries,
+This is the home of Scala.js typings for **6295** Javascript libraries,
  which should span more or less the entire set of modern and popular libraries.
 
 This should make it one of the biggest Scala repos on the planet:
@@ -11,13 +11,13 @@ This should make it one of the biggest Scala repos on the planet:
 --------------------------------------------------------------------------------
  Language             Files        Lines        Blank      Comment         Code
 --------------------------------------------------------------------------------
- Scala               185478      7302557       697383      2211543      4393631
- Markdown              5945        60399         1149            0        59250
+ Scala               168612      7140315       652575      2214341      4273399
+ Markdown              5955        60491         1149            0        59342
  JSON                     5           29            0            0           29
  Makefile                 2           25            6            0           19
  HTML                     1            6            0            0            6
 --------------------------------------------------------------------------------
- Total               191431      7363016       698538      2211543      4452935
+ Total               174575      7200866       653730      2214341      4332795
 --------------------------------------------------------------------------------
 
 ```
@@ -83,7 +83,7 @@ These should be the main steps you would have to follow:
 ScalablyTyped is hosted at bintray, so make sure to include the resolver
 ```scala
   resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")
-  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201902130536")
+  addSbtPlugin("org.scalablytyped" % "sbt-scalablytyped" % "201902140907")
 ```
 
 ### `build.sbt`
@@ -115,9 +115,7 @@ As you can imagine with all this casting and other nonsense,
 a more scala-like facade will often be a better way.
 
 For now we just have the following contrib-libs:
-- [react](contrib/react)
 - [react-redux](contrib/react-redux)
-- [react-japgolly](contrib/react-japgolly)
 - [std](contrib/std)
 
 These libraries can depend both on typings and external libraries, and

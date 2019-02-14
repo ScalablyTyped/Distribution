@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait DayPickerProps extends js.Object {
   var canChangeMonth: js.UndefOr[scala.Boolean] = js.undefined
   var captionElement: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[CaptionElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[CaptionElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[CaptionElementProps]
+    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[CaptionElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[CaptionElementProps]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.ClassNames] = js.undefined
@@ -49,7 +49,7 @@ trait DayPickerProps extends js.Object {
     ]
   ] = js.undefined
   var navbarElement: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[NavbarElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[NavbarElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[NavbarElementProps]
+    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[NavbarElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[NavbarElementProps]
   ] = js.undefined
   var numberOfMonths: js.UndefOr[scala.Double] = js.undefined
   var onBlur: js.UndefOr[
@@ -178,7 +178,7 @@ trait DayPickerProps extends js.Object {
   var toMonth: js.UndefOr[stdLib.Date] = js.undefined
   var todayButton: js.UndefOr[java.lang.String] = js.undefined
   var weekdayElement: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[WeekdayElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[WeekdayElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[WeekdayElementProps]
+    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[WeekdayElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[WeekdayElementProps]
   ] = js.undefined
   var weekdaysLong: js.UndefOr[
     js.Tuple7[

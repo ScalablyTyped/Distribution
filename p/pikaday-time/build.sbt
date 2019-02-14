@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pikaday-time"
-version := "1.4-dt-20181116Z-ee0fc3"
+version := "1.4-dt-20190212Z-ee0fc3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

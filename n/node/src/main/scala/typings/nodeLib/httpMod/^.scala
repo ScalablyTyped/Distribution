@@ -19,13 +19,9 @@ object ^ extends js.Object {
   def createClient(port: scala.Double): js.Any = js.native
   def createClient(port: scala.Double, host: java.lang.String): js.Any = js.native
   def createServer(): nodeLib.httpMod.Server = js.native
-  def createServer(
-    requestListener: js.Function2[
-      /* request */ nodeLib.httpMod.IncomingMessage, 
-      /* response */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ]
-  ): nodeLib.httpMod.Server = js.native
+  def createServer(options: nodeLib.httpMod.ServerOptions): nodeLib.httpMod.Server = js.native
+  def createServer(options: nodeLib.httpMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpMod.Server = js.native
+  def createServer(requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpMod.Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

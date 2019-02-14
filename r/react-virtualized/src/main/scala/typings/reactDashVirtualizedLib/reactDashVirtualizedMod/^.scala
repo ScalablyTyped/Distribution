@@ -24,8 +24,6 @@ object ^ extends js.Object {
     sortCallback: js.Function1[/* params */ reactDashVirtualizedLib.Anon_SortBy, scala.Unit],
     options: reactDashVirtualizedLib.distEsTableMod.MultiSortOptions
   ): reactDashVirtualizedLib.distEsTableMod.MultiSortReturn = js.native
-  def defaultTableHeaderRenderer(): js.Array[
-    reactLib.reactMod.ReactNs.ReactElement[reactDashVirtualizedLib.distEsTableMod.TableHeaderProps]
-  ] = js.native
+  def defaultTableHeaderRenderer(): js.Array[reactLib.reactMod.ReactNs.ReactElement] = js.native
 }
 

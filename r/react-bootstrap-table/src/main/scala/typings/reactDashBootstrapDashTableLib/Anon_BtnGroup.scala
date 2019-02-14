@@ -9,20 +9,20 @@ trait Anon_BtnGroup extends js.Object {
   /**
   		 * Button group components.
   		 */
-  var btnGroup: reactLib.reactMod.ReactNs.ReactElement[_]
+  var btnGroup: reactLib.reactMod.ReactNs.ReactElement
    // search field JSX
   /**
   		 * The button to clear the search field.
   		 */
-  var clearBtn: reactLib.reactMod.ReactNs.ReactElement[_]
+  var clearBtn: reactLib.reactMod.ReactNs.ReactElement
    // button groups JSX
   /**
   		 * The individual search field.
   		 */
-  var searchField: reactLib.reactMod.ReactNs.ReactElement[_]
+  var searchField: reactLib.reactMod.ReactNs.ReactElement
   /**
   		 * Search panel component.
   		 */
-  var searchPanel: reactLib.reactMod.ReactNs.ReactElement[_]
+  var searchPanel: reactLib.reactMod.ReactNs.ReactElement
 }
 

@@ -188,10 +188,10 @@ trait MongooseDocument extends MongooseDocumentOptionals {
     * Executes registered validation rules (skipping asynchronous validators) for this document.
     * This method is useful if you need synchronous validation.
     * @param pathsToValidate only validate the given paths
-    * @returns MongooseError if there are errors during validation, or undefined if there is no error.
+    * @returns ValidationError if there are errors during validation, or undefined if there is no error.
     */
-  def validateSync(): Error = js.native
-  def validateSync(pathsToValidate: java.lang.String): Error = js.native
-  def validateSync(pathsToValidate: js.Array[java.lang.String]): Error = js.native
+  def validateSync(): mongooseLib.mongooseMod.ErrorNs.ValidationError = js.native
+  def validateSync(pathsToValidate: java.lang.String): mongooseLib.mongooseMod.ErrorNs.ValidationError = js.native
+  def validateSync(pathsToValidate: js.Array[java.lang.String]): mongooseLib.mongooseMod.ErrorNs.ValidationError = js.native
 }
 

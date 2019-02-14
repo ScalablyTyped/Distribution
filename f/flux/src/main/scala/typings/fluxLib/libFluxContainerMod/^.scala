@@ -14,7 +14,7 @@ object ^ extends js.Object {
     options: fluxLib.libFluxContainerMod.RealOptions
   ): fluxLib.libFluxContainerMod.Component[TProps, _, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 
@@ -28,7 +28,7 @@ object ^ extends js.Object {
     ]
   ): fluxLib.libFluxContainerMod.Component[TProps, TState, _] = js.native
   def createFunctional[TProps, TState](
-    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement[TState]],
+    viewFn: js.Function1[/* props */ TProps, reactLib.reactMod.ReactNs.ReactElement],
     getStores: js.Function2[
       /* maybeProps */ js.UndefOr[TProps], 
       /* maybeContext */ js.UndefOr[js.Any], 

@@ -11,8 +11,6 @@ trait PortalFunctionParams extends js.Object {
   def closePortal(): scala.Unit = js.native
   def openPortal(): scala.Unit = js.native
   def openPortal(event: js.Any): scala.Unit = js.native
-  def portal(children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement[
-    reactLib.reactMod.ReactNs.ComponentClass[PortalProps, reactLib.reactMod.ReactNs.ComponentState]
-  ] = js.native
+  def portal(children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement = js.native
 }
 

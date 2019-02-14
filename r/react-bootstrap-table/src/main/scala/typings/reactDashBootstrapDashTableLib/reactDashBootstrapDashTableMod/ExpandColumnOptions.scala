@@ -21,7 +21,7 @@ trait ExpandColumnOptions extends js.Object {
   var expandColumnComponent: js.UndefOr[
     js.Function1[
       /* props */ ExpandColumnComponentProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**
@@ -34,7 +34,7 @@ trait ExpandColumnOptions extends js.Object {
   var expandedColumnHeaderComponent: js.UndefOr[
     js.Function1[
       /* props */ ExpandedColumnHeaderProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
 }

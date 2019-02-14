@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fast64"
-version := "0.5-dt-20181211Z-ee0e5e"
+version := "0.5-dt-20190212Z-ee0e5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

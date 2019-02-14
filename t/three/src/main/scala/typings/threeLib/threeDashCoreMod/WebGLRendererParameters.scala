@@ -19,24 +19,23 @@ trait WebGLRendererParameters extends js.Object {
     */
   var canvas: js.UndefOr[stdLib.HTMLCanvasElement] = js.undefined
   /**
-    * default is 0.
-    */
-  var clearAlpha: js.UndefOr[scala.Double] = js.undefined
-  /**
-    * default is 0x000000.
-    */
-  var clearColor: js.UndefOr[scala.Double] = js.undefined
-  /**
     * A WebGL Rendering Context.
     * (https://developer.mozilla.org/en-US/docs/Web/API/WebGLRenderingContext)
     *  Default is null
     */
   var context: js.UndefOr[stdLib.WebGLRenderingContext] = js.undefined
-  var devicePixelRatio: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * default is true.
+    */
+  var depth: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * default is false.
     */
   var logarithmicDepthBuffer: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *  Can be "high-performance", "low-power" or "default"
+    */
+  var powerPreference: js.UndefOr[java.lang.String] = js.undefined
   /**
     *  shader precision. Can be "highp", "mediump" or "lowp".
     */

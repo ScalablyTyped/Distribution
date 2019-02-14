@@ -35,16 +35,16 @@ object ^ extends js.Object {
     reactLib.reactMod.ReactNs.ComponentType[_]
   ] = js.native
   def compose[TInner, TOutter](functions: js.Function*): recomposeLib.recomposeMod.ComponentEnhancer[TInner, TOutter] = js.native
-  def createEagerElement(`type`: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def createEagerElement(`type`: java.lang.String, props: js.Object): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def createEagerElement(`type`: java.lang.String, props: js.Object, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def createEagerElement(`type`: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
-  def createEagerElement(`type`: reactLib.reactMod.ReactNs.ComponentType[_], props: js.Object): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def createEagerElement(`type`: java.lang.String): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createEagerElement(`type`: java.lang.String, props: js.Object): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createEagerElement(`type`: java.lang.String, props: js.Object, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createEagerElement(`type`: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createEagerElement(`type`: reactLib.reactMod.ReactNs.ComponentType[_], props: js.Object): reactLib.reactMod.ReactNs.ReactElement = js.native
   def createEagerElement(
     `type`: reactLib.reactMod.ReactNs.ComponentType[_],
     props: js.Object,
     children: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement = js.native
   def createEagerFactory(`type`: java.lang.String): recomposeLib.recomposeMod.componentFactory = js.native
   def createEagerFactory(`type`: reactLib.reactMod.ReactNs.ComponentType[_]): recomposeLib.recomposeMod.componentFactory = js.native
   def createEventHandler[T, TSubs /* <: recomposeLib.recomposeMod.Subscribable[T] */](): recomposeLib.recomposeMod.EventHandlerOf[T, TSubs] = js.native

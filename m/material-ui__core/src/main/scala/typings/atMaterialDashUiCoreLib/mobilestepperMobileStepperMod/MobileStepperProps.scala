@@ -13,9 +13,9 @@ import scala.scalajs.js.annotation._
     stdLib.Partial[atMaterialDashUiCoreLib.linearprogressLinearProgressMod.LinearProgressProps]
   ] = js.undefined
   var activeStep: js.UndefOr[scala.Double] = js.undefined
-  var backButton: reactLib.reactMod.ReactNs.ReactElement[_]
+  var backButton: reactLib.reactMod.ReactNs.ReactElement
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var nextButton: reactLib.reactMod.ReactNs.ReactElement[_]
+  var nextButton: reactLib.reactMod.ReactNs.ReactElement
   var position: js.UndefOr[
     atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.bottom | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.top | atMaterialDashUiCoreLib.atMaterialDashUiCoreLibStrings.static
   ] = js.undefined

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait Props extends js.Object {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | reactDashVisibilityDashSensorLib.ChildFunction
+    reactLib.reactMod.ReactNs.ReactElement | reactDashVisibilityDashSensorLib.ChildFunction
   ] = js.undefined
   var containment: js.UndefOr[reactLib.HTMLElement] = js.undefined
   var delayedCall: js.UndefOr[scala.Boolean] = js.undefined

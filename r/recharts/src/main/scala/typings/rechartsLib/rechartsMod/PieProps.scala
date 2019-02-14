@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
   extends EventAttributes
      with Animatable {
   var activeIndex: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
-  var activeShape: js.UndefOr[js.Object | ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var activeShape: js.UndefOr[js.Object | ContentRenderer[_] | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var blendStroke: js.UndefOr[scala.Boolean] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var cornerRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
@@ -23,10 +23,10 @@ import scala.scalajs.js.annotation._
   var hide: js.UndefOr[scala.Boolean] = js.undefined
   var innerRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var label: js.UndefOr[
-    rechartsLib.Anon_OffsetRadius | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[PieLabelRenderProps] | scala.Boolean
+    rechartsLib.Anon_OffsetRadius | reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[PieLabelRenderProps] | scala.Boolean
   ] = js.undefined
   var labelLine: js.UndefOr[
-    js.Object | (ContentRenderer[LineProps with js.Any]) | reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
+    js.Object | (ContentRenderer[LineProps with js.Any]) | reactLib.reactMod.ReactNs.ReactElement | scala.Boolean
   ] = js.undefined
   var legendType: js.UndefOr[LegendType] = js.undefined
   var maxRadius: js.UndefOr[scala.Double] = js.undefined

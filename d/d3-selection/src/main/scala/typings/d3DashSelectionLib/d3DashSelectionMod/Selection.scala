@@ -7072,6 +7072,4261 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
   @JSName("insert")
   def insert_wbr(`type`: d3DashSelectionLib.d3DashSelectionLibStrings.wbr, before: java.lang.String): Selection[stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
   /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  def join[ChildElement /* <: BaseType */, OldDatum](enter: java.lang.String): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  def join[ChildElement /* <: BaseType */, OldDatum](
+    enter: java.lang.String,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  def join[ChildElement /* <: BaseType */, OldDatum](
+    enter: java.lang.String,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  def join[ChildElement /* <: BaseType */, OldDatum](
+    enter: js.Function1[
+      /* elem */ Selection[EnterElement, Datum, PElement, PDatum], 
+      Selection[ChildElement, Datum, PElement, PDatum]
+    ]
+  ): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  def join[ChildElement /* <: BaseType */, OldDatum](
+    enter: js.Function1[
+      /* elem */ Selection[EnterElement, Datum, PElement, PDatum], 
+      Selection[ChildElement, Datum, PElement, PDatum]
+    ],
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  def join[ChildElement /* <: BaseType */, OldDatum](
+    enter: js.Function1[
+      /* elem */ Selection[EnterElement, Datum, PElement, PDatum], 
+      Selection[ChildElement, Datum, PElement, PDatum]
+    ],
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[ChildElement | GElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_a[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.a): Selection[GElement | stdLib.HTMLAnchorElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_a[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.a,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLAnchorElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_a[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.a,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLAnchorElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_abbr[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.abbr): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_abbr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.abbr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_abbr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.abbr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_address[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.address): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_address[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.address,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_address[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.address,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_applet[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.applet): Selection[GElement | stdLib.HTMLAppletElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_applet[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.applet,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLAppletElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_applet[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.applet,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLAppletElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_area[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.area): Selection[GElement | stdLib.HTMLAreaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_area[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.area,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLAreaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_area[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.area,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLAreaElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_article[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.article): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_article[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.article,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_article[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.article,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_aside[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.aside): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_aside[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.aside,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_aside[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.aside,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_audio[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.audio): Selection[GElement | stdLib.HTMLAudioElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_audio[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.audio,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLAudioElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_audio[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.audio,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLAudioElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_b[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.b): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_b[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.b,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_b[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.b,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_base[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.base): Selection[GElement | stdLib.HTMLBaseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_base[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.base,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLBaseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_base[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.base,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLBaseElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_basefont[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.basefont): Selection[GElement | stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_basefont[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.basefont,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_basefont[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.basefont,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLBaseFontElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_bdo[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdo): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_bdo[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdo,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_bdo[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.bdo,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_blockquote[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.blockquote): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_blockquote[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.blockquote,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_blockquote[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.blockquote,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_body[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.body): Selection[GElement | stdLib.HTMLBodyElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_body[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.body,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLBodyElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_body[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.body,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLBodyElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_br[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.br): Selection[GElement | stdLib.HTMLBRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_br[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.br,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLBRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_br[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.br,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLBRElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_button[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.button): Selection[GElement | stdLib.HTMLButtonElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_button[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.button,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLButtonElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_button[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.button,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLButtonElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_canvas[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.canvas): Selection[GElement | stdLib.HTMLCanvasElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_canvas[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.canvas,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLCanvasElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_canvas[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.canvas,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLCanvasElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_caption[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.caption): Selection[GElement | stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_caption[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.caption,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_caption[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.caption,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableCaptionElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_circle[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_circle[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_circle[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.circle,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGCircleElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_cite[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.cite): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_cite[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.cite,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_cite[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.cite,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_clipPath[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_clipPath[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_clipPath[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.clipPath,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGClipPathElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_code[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.code): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_code[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.code,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_code[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.code,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_col[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.col): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_col[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.col,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_col[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.col,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_colgroup[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.colgroup): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_colgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.colgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_colgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.colgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableColElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_data[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.data): Selection[GElement | stdLib.HTMLDataElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_data[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.data,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDataElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_data[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.data,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDataElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_datalist[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.datalist): Selection[GElement | stdLib.HTMLDataListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_datalist[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.datalist,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDataListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_datalist[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.datalist,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDataListElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dd[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dd): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dd[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dd,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dd[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dd,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_defs[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_defs[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_defs[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.defs,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGDefsElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_del[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.del): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_del[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.del,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_del[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.del,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_desc[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_desc[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_desc[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.desc,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGDescElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_details[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.details): Selection[GElement | stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_details[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.details,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_details[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.details,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDetailsElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dfn[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dfn): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dfn[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dfn,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dfn[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dfn,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dialog[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dialog): Selection[GElement | stdLib.HTMLDialogElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dialog[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dialog,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDialogElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dialog[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dialog,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDialogElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dir[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dir): Selection[GElement | stdLib.HTMLDirectoryElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dir[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dir,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDirectoryElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dir[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dir,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDirectoryElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_div[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.div): Selection[GElement | stdLib.HTMLDivElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_div[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.div,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDivElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_div[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.div,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDivElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dl[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dl): Selection[GElement | stdLib.HTMLDListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dl[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dl,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLDListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dl[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dl,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLDListElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_dt[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.dt): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dt[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dt,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_dt[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.dt,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_ellipse[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ellipse[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ellipse[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ellipse,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGEllipseElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_em[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.em): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_em[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.em,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_em[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.em,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_embed[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.embed): Selection[GElement | stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_embed[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.embed,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_embed[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.embed,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLEmbedElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feBlend[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feBlend[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feBlend[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feBlend,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEBlendElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feColorMatrix[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feColorMatrix[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feColorMatrix[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feColorMatrix,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEColorMatrixElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feComponentTransfer[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feComponentTransfer[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feComponentTransfer[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComponentTransfer,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEComponentTransferElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feComposite[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feComposite[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feComposite[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feComposite,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFECompositeElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feConvolveMatrix[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feConvolveMatrix[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feConvolveMatrix[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feConvolveMatrix,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEConvolveMatrixElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feDiffuseLighting[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDiffuseLighting[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDiffuseLighting[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDiffuseLighting,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEDiffuseLightingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feDisplacementMap[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDisplacementMap[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDisplacementMap[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDisplacementMap,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEDisplacementMapElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feDistantLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDistantLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feDistantLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feDistantLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEDistantLightElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feFlood[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFlood[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFlood[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFlood,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEFloodElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feFuncA[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncA[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncA[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncA,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEFuncAElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feFuncB[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncB[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncB[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncB,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEFuncBElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feFuncG[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncG[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncG[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncG,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEFuncGElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feFuncR[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncR[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feFuncR[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feFuncR,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEFuncRElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feGaussianBlur[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feGaussianBlur[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feGaussianBlur[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feGaussianBlur,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEGaussianBlurElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feImage[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feImage[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feImage[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feImage,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEImageElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feMerge[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMerge[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMerge[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMerge,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEMergeElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feMergeNode[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMergeNode[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMergeNode[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMergeNode,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEMergeNodeElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feMorphology[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMorphology[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feMorphology[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feMorphology,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEMorphologyElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feOffset[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feOffset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feOffset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feOffset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEOffsetElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_fePointLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_fePointLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_fePointLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fePointLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFEPointLightElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feSpecularLighting[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feSpecularLighting[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feSpecularLighting[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpecularLighting,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFESpecularLightingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feSpotLight[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feSpotLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feSpotLight[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feSpotLight,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFESpotLightElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feTile[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feTile[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feTile[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTile,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFETileElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_feTurbulence[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feTurbulence[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_feTurbulence[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.feTurbulence,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFETurbulenceElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_fieldset[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset): Selection[GElement | stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_fieldset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_fieldset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.fieldset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLFieldSetElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_figcaption[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.figcaption): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_figcaption[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.figcaption,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_figcaption[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.figcaption,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_figure[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.figure): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_figure[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.figure,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_figure[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.figure,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_filter[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_filter[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_filter[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.filter,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGFilterElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_font[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.font): Selection[GElement | stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_font[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.font,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_font[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.font,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLFontElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_footer[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.footer): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_footer[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.footer,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_footer[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.footer,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_foreignObject[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_foreignObject[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_foreignObject[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.foreignObject,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGForeignObjectElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_form[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.form): Selection[GElement | stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_form[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.form,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_form[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.form,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLFormElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_frame[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.frame): Selection[GElement | stdLib.HTMLFrameElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_frame[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.frame,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLFrameElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_frame[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.frame,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLFrameElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_frameset[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.frameset): Selection[GElement | stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_frameset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.frameset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_frameset[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.frameset,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLFrameSetElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_g[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.g): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_g[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.g,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_g[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.g,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGGElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h1[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h1): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h1[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h1,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h1[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h1,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h2[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h2): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h2[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h2,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h2[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h2,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h3[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h3): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h3[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h3,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h3[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h3,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h4[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h4): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h4[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h4,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h4[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h4,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h5[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h5): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h5[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h5,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h5[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h5,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_h6[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.h6): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h6[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h6,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_h6[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.h6,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadingElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_head[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.head): Selection[GElement | stdLib.HTMLHeadElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_head[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.head,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHeadElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_head[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.head,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHeadElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_header[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.header): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_header[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.header,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_header[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.header,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_hgroup[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.hgroup): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_hgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.hgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_hgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.hgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_hr[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.hr): Selection[GElement | stdLib.HTMLHRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_hr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.hr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHRElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_hr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.hr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHRElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_html[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.html): Selection[GElement | stdLib.HTMLHtmlElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_html[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.html,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLHtmlElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_html[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.html,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLHtmlElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_i[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.i): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_i[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.i,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_i[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.i,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_iframe[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.iframe): Selection[GElement | stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_iframe[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.iframe,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_iframe[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.iframe,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLIFrameElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_image[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.image): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_image[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.image,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_image[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.image,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGImageElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_img[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.img): Selection[GElement | stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_img[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.img,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_img[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.img,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLImageElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_input[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.input): Selection[GElement | stdLib.HTMLInputElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_input[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.input,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLInputElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_input[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.input,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLInputElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_ins[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ins): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ins[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ins,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ins[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ins,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLModElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_kbd[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.kbd): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_kbd[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.kbd,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_kbd[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.kbd,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_label[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.label): Selection[GElement | stdLib.HTMLLabelElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_label[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.label,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLLabelElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_label[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.label,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLLabelElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_legend[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.legend): Selection[GElement | stdLib.HTMLLegendElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_legend[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.legend,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLLegendElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_legend[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.legend,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLLegendElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_li[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.li): Selection[GElement | stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_li[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.li,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_li[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.li,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLLIElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_line[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.line): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_line[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.line,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_line[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.line,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGLineElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_linearGradient[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_linearGradient[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_linearGradient[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.linearGradient,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGLinearGradientElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_link[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.link): Selection[GElement | stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_link[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.link,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_link[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.link,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLLinkElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_map[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.map): Selection[GElement | stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_map[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.map,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_map[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.map,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLMapElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_mark[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.mark): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_mark[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mark,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_mark[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mark,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_marker[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_marker[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_marker[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marker,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGMarkerElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_marquee[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.marquee): Selection[GElement | stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_marquee[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marquee,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_marquee[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.marquee,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLMarqueeElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_mask[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_mask[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_mask[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.mask,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGMaskElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_menu[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.menu): Selection[GElement | stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_menu[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.menu,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_menu[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.menu,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLMenuElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_meta[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.meta): Selection[GElement | stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_meta[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.meta,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_meta[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.meta,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLMetaElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_metadata[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_metadata[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_metadata[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.metadata,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGMetadataElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_meter[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.meter): Selection[GElement | stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_meter[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.meter,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_meter[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.meter,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLMeterElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_nav[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.nav): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_nav[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.nav,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_nav[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.nav,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_noscript[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.noscript): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_noscript[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.noscript,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_noscript[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.noscript,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_object[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.`object`): Selection[GElement | stdLib.HTMLObjectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_object[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.`object`,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLObjectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_object[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.`object`,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLObjectElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_ol[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ol): Selection[GElement | stdLib.HTMLOListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ol[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ol,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLOListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ol[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ol,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLOListElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_optgroup[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.optgroup): Selection[GElement | stdLib.HTMLOptGroupElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_optgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.optgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLOptGroupElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_optgroup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.optgroup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLOptGroupElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_option[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.option): Selection[GElement | stdLib.HTMLOptionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_option[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.option,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLOptionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_option[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.option,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLOptionElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_output[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.output): Selection[GElement | stdLib.HTMLOutputElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_output[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.output,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLOutputElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_output[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.output,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLOutputElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_p[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.p): Selection[GElement | stdLib.HTMLParagraphElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_p[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.p,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLParagraphElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_p[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.p,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLParagraphElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_param[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.param): Selection[GElement | stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_param[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.param,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_param[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.param,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLParamElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_path[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.path): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_path[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.path,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_path[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.path,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGPathElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_pattern[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_pattern[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_pattern[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pattern,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGPatternElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_picture[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.picture): Selection[GElement | stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_picture[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.picture,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_picture[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.picture,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLPictureElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_polygon[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_polygon[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_polygon[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polygon,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGPolygonElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_polyline[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_polyline[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_polyline[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.polyline,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGPolylineElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_pre[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.pre): Selection[GElement | stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_pre[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pre,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_pre[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.pre,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLPreElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_progress[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.progress): Selection[GElement | stdLib.HTMLProgressElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_progress[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.progress,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLProgressElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_progress[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.progress,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLProgressElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_q[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.q): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_q[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.q,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_q[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.q,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLQuoteElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_radialGradient[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_radialGradient[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_radialGradient[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.radialGradient,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGRadialGradientElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_rect[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rect[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rect[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rect,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGRectElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_rt[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.rt): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rt[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rt,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_rt[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.rt,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_ruby[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ruby): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ruby[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ruby,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ruby[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ruby,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_s[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.s): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_s[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.s,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_s[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.s,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_samp[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.samp): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_samp[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.samp,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_samp[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.samp,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_script[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.script): Selection[GElement | stdLib.HTMLScriptElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_script[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.script,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLScriptElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_script[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.script,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLScriptElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_section[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.section): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_section[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.section,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_section[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.section,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_select[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.select): Selection[GElement | stdLib.HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_select[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.select,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_select[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.select,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLSelectElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_slot[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.slot): Selection[GElement | stdLib.HTMLSlotElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_slot[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.slot,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLSlotElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_slot[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.slot,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLSlotElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_small[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.small): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_small[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.small,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_small[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.small,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_source[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.source): Selection[GElement | stdLib.HTMLSourceElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_source[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.source,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLSourceElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_source[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.source,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLSourceElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_span[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.span): Selection[GElement | stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_span[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.span,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_span[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.span,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLSpanElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_stop[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_stop[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_stop[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.stop,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGStopElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_strong[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.strong): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_strong[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.strong,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_strong[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.strong,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_style[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.style): Selection[GElement | stdLib.HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_style[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.style,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_style[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.style,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLStyleElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_sub[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.sub): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_sub[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.sub,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_sub[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.sub,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_sup[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.sup): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_sup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.sup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_sup[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.sup,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_svg[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_svg[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_svg[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.svg,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGSVGElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_switch[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_switch[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_switch[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.switch,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGSwitchElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_symbol[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_symbol[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_symbol[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.symbol,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGSymbolElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_table[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.table): Selection[GElement | stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_table[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.table,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_table[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.table,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_tbody[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.tbody): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tbody[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tbody,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tbody[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tbody,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_td[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.td): Selection[GElement | stdLib.HTMLTableDataCellElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_td[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.td,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableDataCellElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_td[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.td,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableDataCellElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_template[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.template): Selection[GElement | stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_template[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.template,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_template[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.template,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTemplateElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_text[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.text): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_text[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.text,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_text[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.text,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGTextElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_textPath[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_textPath[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_textPath[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textPath,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGTextPathElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_textarea[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.textarea): Selection[GElement | stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_textarea[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textarea,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_textarea[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.textarea,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTextAreaElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_tfoot[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.tfoot): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tfoot[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tfoot,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tfoot[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tfoot,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_th[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.th): Selection[GElement | stdLib.HTMLTableHeaderCellElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_th[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.th,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableHeaderCellElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_th[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.th,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableHeaderCellElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_thead[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.thead): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_thead[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.thead,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_thead[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.thead,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableSectionElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_time[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.time): Selection[GElement | stdLib.HTMLTimeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_time[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.time,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTimeElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_time[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.time,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTimeElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_title[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.title): Selection[GElement | stdLib.HTMLTitleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_title[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.title,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTitleElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_title[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.title,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTitleElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_tr[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.tr): Selection[GElement | stdLib.HTMLTableRowElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTableRowElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTableRowElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_track[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.track): Selection[GElement | stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_track[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.track,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_track[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.track,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLTrackElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_tspan[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tspan[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_tspan[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.tspan,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGTSpanElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_u[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.u): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_u[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.u,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_u[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.u,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_ul[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.ul): Selection[GElement | stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ul[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ul,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_ul[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.ul,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLUListElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_use[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.use): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_use[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.use,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_use[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.use,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGUseElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_var[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.`var`): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_var[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.`var`,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_var[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.`var`,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_video[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.video): Selection[GElement | stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_video[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.video,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_video[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.video,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLVideoElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_view[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.view): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_view[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.view,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_view[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.view,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.SVGViewElement, Datum, PElement, PDatum] = js.native
+  /**
+    * Appends, removes and reorders elements as necessary to match the data that was previously bound by `selection.data`, returning the merged enter and update selection.
+    * This method is a convenient alternative to the more explicit `selection.enter`, `selection.exit`, `selection.append` and `selection.remove`.
+    *
+    * The "matching" logic is determined by the key function passed to `selection.data`.
+    */
+  @JSName("join")
+  def join_wbr[OldDatum](enter: d3DashSelectionLib.d3DashSelectionLibStrings.wbr): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_wbr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.wbr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  @JSName("join")
+  def join_wbr[OldDatum](
+    enter: d3DashSelectionLib.d3DashSelectionLibStrings.wbr,
+    update: js.Function1[
+      /* elem */ Selection[GElement, Datum, PElement, PDatum], 
+      js.UndefOr[Selection[GElement, Datum, PElement, PDatum]]
+    ],
+    exit: js.Function1[/* elem */ Selection[GElement, OldDatum, PElement, PDatum], scala.Unit]
+  ): Selection[GElement | stdLib.HTMLElement, Datum, PElement, PDatum] = js.native
+  /**
     * Re-insert each selected element, in order, as the first child of its parent.
     */
   def lower(): this.type = js.native
@@ -7119,9 +11374,9 @@ trait Selection[GElement /* <: BaseType */, Datum, PElement /* <: BaseType */, P
     * When a specified event is dispatched on a selected node, the specified listener will be evaluated for each selected element.
     *
     * An optional capture flag may be specified which corresponds to the W3C useCapture flag:
-    * “After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being
+    * "After initiating capture, all events of the specified type will be dispatched to the registered EventListener before being
     * dispatched to any EventTargets beneath them in the tree. Events which are bubbling upward through the tree will not
-    * trigger an EventListener designated to use capture.”
+    * trigger an EventListener designated to use capture."
     *
     * @param typenames The typenames is a string event type, such as click, mouseover, or submit; any DOM event type supported by your browser may be used.
     * The type may be optionally followed by a period (.) and a name; the optional name allows multiple callbacks to be registered

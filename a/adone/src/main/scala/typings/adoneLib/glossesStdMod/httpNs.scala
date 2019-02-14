@@ -40,11 +40,9 @@ object httpNs extends js.Object {
   @js.native
   class Server ()
     extends nodeLib.httpMod.Server {
-    def this(requestListener: js.Function2[
-          /* req */ nodeLib.httpMod.IncomingMessage, 
-          /* res */ nodeLib.httpMod.ServerResponse, 
-          scala.Unit
-        ]) = this()
+    def this(options: nodeLib.httpMod.ServerOptions) = this()
+    def this(requestListener: nodeLib.httpMod.RequestListener) = this()
+    def this(options: nodeLib.httpMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener) = this()
   }
   
   // https://github.com/nodejs/node/blob/master/lib/_http_server.js#L108-L256
@@ -65,13 +63,9 @@ object httpNs extends js.Object {
   def createClient(port: scala.Double): js.Any = js.native
   def createClient(port: scala.Double, host: java.lang.String): js.Any = js.native
   def createServer(): nodeLib.httpMod.Server = js.native
-  def createServer(
-    requestListener: js.Function2[
-      /* request */ nodeLib.httpMod.IncomingMessage, 
-      /* response */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ]
-  ): nodeLib.httpMod.Server = js.native
+  def createServer(options: nodeLib.httpMod.ServerOptions): nodeLib.httpMod.Server = js.native
+  def createServer(options: nodeLib.httpMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpMod.Server = js.native
+  def createServer(requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpMod.Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

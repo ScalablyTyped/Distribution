@@ -7,5 +7,6 @@
 //                 Dan Chao <https://github.com/bioball>
 //                 Michal Lower <https://github.com/keton>
 //                 Rob Moran <https://github.com/thegecko>
+//                 Clayton Kucera <https://github.com/claytonkucera>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 ```

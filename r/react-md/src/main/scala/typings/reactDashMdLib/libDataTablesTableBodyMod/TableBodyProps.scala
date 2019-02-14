@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait TableBodyProps
   extends reactDashMdLib.libMod.Props {
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
+    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
 }
 

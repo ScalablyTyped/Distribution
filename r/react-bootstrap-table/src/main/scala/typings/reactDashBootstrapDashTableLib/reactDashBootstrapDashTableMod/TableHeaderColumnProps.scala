@@ -23,7 +23,7 @@ trait TableHeaderColumnProps
     js.Function2[
       /* direction */ SortOrder | scala.Null, 
       /* fieldName */ java.lang.String, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait TableHeaderColumnProps
       /* row */ js.Any, 
       /* formatExtraData */ js.Any, 
       /* rowIndex */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**

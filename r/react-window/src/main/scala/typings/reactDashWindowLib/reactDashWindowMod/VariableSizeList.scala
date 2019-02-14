@@ -12,11 +12,11 @@ class VariableSizeList ()
   /**
     * VariableSizeList caches offsets and measurements for each index for performance purposes.
     * This method clears that cached data for all items after (and including) the specified index.
-    * It should be called whenever a item's size changes. (Note that this is not a typical occurrance.)
+    * It should be called whenever a item's size changes. (Note that this is not a typical occurrence.)
     *
     * By default the list will automatically re-render after the index is reset.
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-    * specify a value offalsefor the second, optional parameter.
+    * specify a value of false for the second, optional parameter.
     */
   def resetAfterIndex(index: scala.Double, shouldForceUpdate: scala.Boolean): scala.Unit = js.native
   /**

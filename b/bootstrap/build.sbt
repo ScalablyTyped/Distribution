@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap"
-version := "4.2-dt-20190128Z-f97159"
+version := "4.2-dt-20190212Z-f97159"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

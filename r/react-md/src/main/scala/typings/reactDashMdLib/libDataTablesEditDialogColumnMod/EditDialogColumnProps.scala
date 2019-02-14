@@ -36,7 +36,7 @@ import scala.scalajs.js.annotation._
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var helpText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
-  var inlineIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var inlineIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -45,14 +45,14 @@ import scala.scalajs.js.annotation._
     * @deprecated
     */
   var inlineIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
   var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var large: js.UndefOr[scala.Boolean] = js.undefined
   var layoverClassName: js.UndefOr[java.lang.String] = js.undefined
   var layoverStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var lineDirection: js.UndefOr[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
@@ -97,7 +97,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
-  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * @deprecated
     */
@@ -111,7 +111,7 @@ import scala.scalajs.js.annotation._
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   /**

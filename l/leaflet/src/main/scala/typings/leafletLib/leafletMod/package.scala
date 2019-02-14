@@ -10,6 +10,7 @@ package object leafletMod {
   type BoundsLiteral = js.Tuple2[PointTuple, PointTuple]
   type Content = java.lang.String | stdLib.HTMLElement
   type ControlPosition = leafletLib.leafletLibStrings.topleft | leafletLib.leafletLibStrings.topright | leafletLib.leafletLibStrings.bottomleft | leafletLib.leafletLibStrings.bottomright
+  type CrossOrigin = scala.Boolean | java.lang.String
   type Direction = leafletLib.leafletLibStrings.right | leafletLib.leafletLibStrings.left | leafletLib.leafletLibStrings.top | leafletLib.leafletLibStrings.bottom | leafletLib.leafletLibStrings.center | leafletLib.leafletLibStrings.auto
   type DoneCallback = js.Function2[
     /* error */ js.UndefOr[stdLib.Error], 

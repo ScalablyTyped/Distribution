@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
     js.Array[reactLib.reactMod.ReactNs.ReactNode] | reactLib.reactMod.ReactNs.ReactNode
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[_]] = js.undefined
   var formatter: js.UndefOr[LabelFormatter] = js.undefined
   var offset: js.UndefOr[scala.Double] = js.undefined
   var position: js.UndefOr[PositionType] = js.undefined

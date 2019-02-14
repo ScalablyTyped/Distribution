@@ -19,7 +19,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var groupRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Group, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   var groups: js.Array[TimelineGroup]
@@ -31,7 +31,7 @@ trait ReactCalendarTimelineProps extends js.Object {
   var itemRenderer: js.UndefOr[
     js.Function1[
       /* props */ reactDashCalendarDashTimelineLib.Anon_Context, 
-      reactLib.reactMod.ReactNs.ReactElement[js.Object]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   var itemTouchSendsClick: js.UndefOr[scala.Boolean] = js.undefined

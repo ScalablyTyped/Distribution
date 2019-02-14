@@ -21,11 +21,11 @@ object default extends js.Object {
   var __ANT_BUTTON: scala.Boolean = js.native
   var defaultProps: antdLib.Anon_Block = js.native
   var propTypes: antdLib.Anon_ArgsBlock = js.native
-  def Group(props: antdLib.libButtonButtonDashGroupMod.ButtonGroupProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Group(props: antdLib.libButtonButtonDashGroupMod.ButtonGroupProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def Group(
     props: antdLib.libButtonButtonDashGroupMod.ButtonGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
   def getDerivedStateFromProps(
     nextProps: antdLib.libButtonButtonMod.ButtonProps,
     prevState: antdLib.libButtonButtonMod.ButtonState

@@ -25,8 +25,6 @@ class Survey () extends SurveyModel {
   var koCurrentPage: js.Any = js.native
   var koIsFirstPage: js.Any = js.native
   var koIsLastPage: js.Any = js.native
-  @JSName("koIsNavigationButtonsShowing")
-  var koIsNavigationButtonsShowing_Original: knockoutLib.KnockoutObservable[scala.Boolean] = js.native
   var koProgress: js.Any = js.native
   var koProgressText: js.Any = js.native
   var koState: js.Any = js.native
@@ -34,12 +32,9 @@ class Survey () extends SurveyModel {
   var onRendered: Event[js.Function1[/* sender */ SurveyModel, _], _] = js.native
   /* protected */ def getHtmlTemplate(): java.lang.String = js.native
   def koEventAfterRender(element: js.Any, survey: js.Any): scala.Unit = js.native
-  def koIsNavigationButtonsShowing(): scala.Boolean = js.native
-  def koIsNavigationButtonsShowing(value: scala.Boolean): scala.Unit = js.native
   def loadSurveyFromService(surveyId: java.lang.String, clientId: java.lang.String, renderedElement: js.Any): scala.Unit = js.native
   def nextPageMouseDown(): scala.Unit = js.native
   def nextPageUIClick(): scala.Unit = js.native
-  /* protected */ def onTimeSpentChanged(): scala.Unit = js.native
   def render(): scala.Unit = js.native
   def render(element: js.Any): scala.Unit = js.native
 }

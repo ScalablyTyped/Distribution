@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ObjectType extends js.Object {
-  var objectType: (graphqlLib.graphqlMod.GraphQLObjectType[_, _]) | graphqlLib.graphqlMod.GraphQLInterfaceType
+  var objectType: graphqlLib.graphqlMod.GraphQLInputObjectType
 }
 

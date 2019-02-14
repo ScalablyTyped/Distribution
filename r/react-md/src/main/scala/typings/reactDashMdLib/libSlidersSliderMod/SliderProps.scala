@@ -18,7 +18,7 @@ trait SliderProps
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var inputWidth: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
   var min: js.UndefOr[scala.Double] = js.undefined
   var onChange: js.UndefOr[js.Function2[/* value */ scala.Double, /* event */ reactLib.Event, scala.Unit]] = js.undefined
@@ -30,7 +30,7 @@ trait SliderProps
       scala.Unit
     ]
   ] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined
   var thumbClassName: js.UndefOr[java.lang.String] = js.undefined
   var thumbStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

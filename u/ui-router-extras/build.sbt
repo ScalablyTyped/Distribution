@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ui-router-extras"
-version := "0.1-dt-20180812Z-121e07"
+version := "0.1-dt-20190212Z-121e07"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "siema"
-version := "1.4-dt-20180214Z-95b463"
+version := "1.4-dt-20190212Z-95b463"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

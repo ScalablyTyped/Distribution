@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "saywhen"
-version := "1.1-dt-20181026Z-7ac89c"
+version := "1.1-dt-20181026Z-eb909e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190118Z-6c7283",
+  "org.scalablytyped" %%% "jasmine" % "3.3-dt-20190212Z-6c7283",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

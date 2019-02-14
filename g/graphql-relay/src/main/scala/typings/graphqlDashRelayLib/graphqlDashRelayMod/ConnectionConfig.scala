@@ -7,10 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait ConnectionConfig extends js.Object {
   var connectionFields: js.UndefOr[
-    (graphqlLib.typeDefinitionMod.Thunk[graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _]]) | scala.Null
+    (graphqlLib.typeDefinitionMod.Thunk[
+      graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+    ]) | scala.Null
   ] = js.undefined
   var edgeFields: js.UndefOr[
-    (graphqlLib.typeDefinitionMod.Thunk[graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _]]) | scala.Null
+    (graphqlLib.typeDefinitionMod.Thunk[
+      graphqlLib.typeDefinitionMod.GraphQLFieldConfigMap[_, _, org.scalablytyped.runtime.StringDictionary[_]]
+    ]) | scala.Null
   ] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var nodeType: ConnectionConfigNodeType

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "daterangepicker"
-version := "3.0-dt-20180508Z-40a0b4"
+version := "3.0-dt-20190212Z-40a0b4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

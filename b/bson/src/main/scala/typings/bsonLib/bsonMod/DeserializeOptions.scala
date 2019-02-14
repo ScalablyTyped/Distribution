@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DeserializeOptions extends js.Object {
+  /** {default:false}, allows the buffer to be larger than the parsed BSON object. */
+  var allowObjectSmallerThanBufferSize: js.UndefOr[scala.Boolean] = js.undefined
   /** {default:false}, return BSON regular expressions as BSONRegExp instances. */
   var bsonRegExp: js.UndefOr[scala.Boolean] = js.undefined
   /** {default:false}, cache evaluated functions for reuse. */

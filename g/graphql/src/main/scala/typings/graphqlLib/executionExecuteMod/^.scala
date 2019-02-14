@@ -33,12 +33,12 @@ object ^ extends js.Object {
     exeContext: graphqlLib.executionExecuteMod.ExecutionContext,
     fieldDef: graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     fieldNodes: js.Array[graphqlLib.languageAstMod.FieldNode],
-    parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _],
+    parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     path: graphqlLib.typeDefinitionMod.ResponsePath
   ): graphqlLib.typeDefinitionMod.GraphQLResolveInfo = js.native
   def collectFields(
     exeContext: graphqlLib.executionExecuteMod.ExecutionContext,
-    runtimeType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _],
+    runtimeType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     selectionSet: graphqlLib.languageAstMod.SelectionSetNode,
     fields: org.scalablytyped.runtime.StringDictionary[js.Array[graphqlLib.languageAstMod.FieldNode]],
     visitedFragmentNames: org.scalablytyped.runtime.StringDictionary[scala.Boolean]
@@ -84,7 +84,7 @@ object ^ extends js.Object {
   ): graphqlLib.jsutilsMaybePromiseMod.MaybePromise[graphqlLib.executionExecuteMod.ExecutionResult[TData]] = js.native
   def getFieldDef(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
-    parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _],
+    parentType: graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]],
     fieldName: java.lang.String
   ): graphqlLib.tsutilsMaybeMod.Maybe[
     graphqlLib.typeDefinitionMod.GraphQLField[_, _, org.scalablytyped.runtime.StringDictionary[_]]

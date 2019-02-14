@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait OptGroupProps extends js.Object {
   var key: js.UndefOr[java.lang.String] = js.undefined
-  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var label: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var value: js.UndefOr[java.lang.String] = js.undefined
 }
 

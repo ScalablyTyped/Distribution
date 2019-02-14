@@ -11,7 +11,7 @@ trait FunctionComponent[P] extends js.Object {
   var defaultProps: js.UndefOr[stdLib.Partial[P]] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   var propTypes: js.UndefOr[WeakValidationMap[P]] = js.native
-  def apply(props: P with reactLib.Anon_Children): ReactElement[_] | scala.Null = js.native
-  def apply(props: P with reactLib.Anon_Children, context: js.Any): ReactElement[_] | scala.Null = js.native
+  def apply(props: P with reactLib.Anon_Children): ReactElement | scala.Null = js.native
+  def apply(props: P with reactLib.Anon_Children, context: js.Any): ReactElement | scala.Null = js.native
 }
 

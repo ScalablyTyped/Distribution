@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "fetch-mock"
-version := "7.2-dt-20190112Z-fc36fa"
+version := "7.2-dt-20190212Z-fc36fa"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

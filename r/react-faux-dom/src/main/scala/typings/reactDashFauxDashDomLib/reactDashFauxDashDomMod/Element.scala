@@ -12,6 +12,6 @@ class Element protected ()
   def this(nodeName: java.lang.String) = this()
   def this(nodeName: java.lang.String, parentNode: Element) = this()
   var style: js.Any = js.native
-  def toReact(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
+  def toReact(): reactLib.reactMod.ReactNs.ReactElement = js.native
 }
 

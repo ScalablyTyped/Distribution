@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-validate"
-version := "21.0-dt-20180214Z-9bfa11"
+version := "21.0-dt-20190212Z-9bfa11"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

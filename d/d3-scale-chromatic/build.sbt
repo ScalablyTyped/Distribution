@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "d3-scale-chromatic"
-version := "1.3-dt-20180918Z-9087bc"
+version := "1.3-dt-20190212Z-9087bc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

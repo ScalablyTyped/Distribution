@@ -12,7 +12,7 @@ trait TransitionProps extends js.Object {
   var children: js.UndefOr[
     js.Function1[
       /* interpolatedStyles */ js.Array[TransitionPlainStyle], 
-      reactLib.reactMod.ReactNs.ReactElement[_]
+      reactLib.reactMod.ReactNs.ReactElement
     ]
   ] = js.undefined
   /**

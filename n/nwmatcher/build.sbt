@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nwmatcher"
-version := "1.4-dt-20181022Z-6334b9"
+version := "1.4-dt-20190212Z-6334b9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

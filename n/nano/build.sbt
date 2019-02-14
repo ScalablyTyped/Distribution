@@ -1,18 +1,18 @@
 organization := "org.scalablytyped"
 name := "nano"
-version := "8.0.0-649fca"
+version := "8.0.0-6a90cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
-  "org.scalablytyped" %%% "debug" % "4.1-dt-20190129Z-0b8ca6",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-6e3440",
-  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190116Z-cf3a73",
-  "org.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20180723Z-36077d",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190211Z-6a64f2",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-ddfbb6",
+  "org.scalablytyped" %%% "debug" % "4.1-dt-20190213Z-fec855",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-b95ac3",
+  "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
+  "org.scalablytyped" %%% "lodash_dot_isempty" % "4.4-dt-20190212Z-1d9a58",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-9236df",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261")
 publishArtifact in packageDoc := false

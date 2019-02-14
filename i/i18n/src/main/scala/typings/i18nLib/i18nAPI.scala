@@ -57,8 +57,6 @@ trait i18nAPI extends js.Object {
     * @returns The translated phrase
     */
   def __mf(phraseOrOptions: java.lang.String, replacements: i18nLib.i18nNs.Replacements): java.lang.String = js.native
-  //#endregion
-  //#region __n()
   /**
     * Translate with plural condition the given phrase and count using locale configuration
     * @param options - Options for plural translate
@@ -67,6 +65,15 @@ trait i18nAPI extends js.Object {
     */
   def __n(options: i18nLib.i18nNs.PluralOptions): java.lang.String = js.native
   def __n(options: i18nLib.i18nNs.PluralOptions, count: scala.Double): java.lang.String = js.native
+  //#endregion
+  //#region __n()
+  /**
+    * Translate with plural condition the given phrase and count using locale configuration
+    * @param phrase - Short phrase to be translated. All plural options ("one", "few", other", ...) have to be provided by your translation file
+    * @param count - The number which allow to select from plural to singular
+    * @returns The translated phrase
+    */
+  def __n(phrase: java.lang.String, count: scala.Double): java.lang.String = js.native
   def __n(singular: java.lang.String, plural: java.lang.String, count: java.lang.String): java.lang.String = js.native
   /**
     * Translate with plural condition the given phrase and count using locale configuration

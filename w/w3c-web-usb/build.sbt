@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-web-usb"
-version := "1.0-dt-20180611Z-708e01"
+version := "1.0-dt-20190213Z-708e01"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

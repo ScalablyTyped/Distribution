@@ -23,7 +23,7 @@ trait TableColumnProps
     reactDashMdLib.reactDashMdLibStrings.row | reactDashMdLib.reactDashMdLibStrings.col
   ] = js.undefined
   var selectColumnHeader: js.UndefOr[scala.Boolean] = js.undefined
-  var sortIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var sortIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   var sortIconBefore: js.UndefOr[scala.Boolean] = js.undefined
   /**
     * @deprecated

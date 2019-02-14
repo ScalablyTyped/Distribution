@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-docblock"
-version := "21.0-dt-20180214Z-fc4d98"
+version := "21.0-dt-20190212Z-fc4d98"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

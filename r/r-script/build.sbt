@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "r-script"
-version := "0.0-dt-20180214Z-f88c3d"
+version := "0.0-dt-20190212Z-f88c3d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -8,15 +8,15 @@ import scala.scalajs.js.annotation._
 // tslint:disable-next-line:strict-export-declare-modifiers
 trait NavigationTabScreenOptionsBase extends js.Object {
   var tabBarIcon: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    reactLib.reactMod.ReactNs.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_FocusedHorizontal, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | scala.Null
     ])
   ] = js.undefined
   var tabBarLabel: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | java.lang.String | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | java.lang.String | scala.Null
     ])
   ] = js.undefined
   var tabBarTestIDProps: js.UndefOr[reactDashNavigationLib.Anon_AccessibilityLabel] = js.undefined

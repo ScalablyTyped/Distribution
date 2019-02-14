@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "viewability-helper"
-version := "1.0-dt-20180214Z-d75381"
+version := "1.0-dt-20190212Z-d75381"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

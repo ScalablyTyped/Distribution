@@ -61,7 +61,7 @@ object ^ extends js.Object {
       /* info */ graphqlLib.typeDefinitionMod.GraphQLResolveInfo, 
       _
     ],
-    typeResolver: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext]
+    typeResolver: graphqlLib.typeDefinitionMod.GraphQLTypeResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]
   ): graphqlDashRelayLib.graphqlDashRelayMod.GraphQLNodeDefinitions = js.native
   def offsetToCursor(offset: scala.Double): graphqlDashRelayLib.graphqlDashRelayMod.ConnectionCursor = js.native
   def pluralIdentifyingRootField(config: graphqlDashRelayLib.graphqlDashRelayMod.PluralIdentifyingRootFieldConfig): graphqlLib.typeDefinitionMod.GraphQLFieldConfig[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native

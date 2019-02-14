@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Children extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactNs.ReactElement
   var className: java.lang.String
   var disabled: scala.Boolean
   var hasMoveDown: scala.Boolean

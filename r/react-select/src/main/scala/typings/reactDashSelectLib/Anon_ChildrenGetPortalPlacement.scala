@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ChildrenGetPortalPlacement extends js.Object {
   /** The children to be rendered. */
-  var children: reactLib.reactMod.ReactNs.ReactElement[_]
+  var children: reactLib.reactMod.ReactNs.ReactElement
   /** Props to be passed to the menu wrapper. */
   var innerProps: js.Object
   /** Set the maximum height of the menu. */

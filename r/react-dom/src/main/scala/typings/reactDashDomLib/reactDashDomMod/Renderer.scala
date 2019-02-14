@@ -83,15 +83,15 @@ trait Renderer extends js.Object {
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): T = js.native
-  def apply[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
-  def apply[P](element: reactLib.reactMod.ReactNs.ReactElement[P], container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def apply[P](element: reactLib.reactMod.ReactNs.ReactElement): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def apply[P](element: reactLib.reactMod.ReactNs.ReactElement, container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def apply[P](
-    element: reactLib.reactMod.ReactNs.ReactElement[P],
+    element: reactLib.reactMod.ReactNs.ReactElement,
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def apply[P](
-    element: reactLib.reactMod.ReactNs.ReactElement[P],
+    element: reactLib.reactMod.ReactNs.ReactElement,
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native

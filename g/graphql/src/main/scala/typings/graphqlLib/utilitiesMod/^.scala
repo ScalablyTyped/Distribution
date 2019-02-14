@@ -82,11 +82,11 @@ object ^ extends js.Object {
   def getOperationRootType(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     operation: graphqlLib.languageAstMod.OperationDefinitionNode
-  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def getOperationRootType(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,
     operation: graphqlLib.languageAstMod.OperationTypeDefinitionNode
-  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _] = js.native
+  ): graphqlLib.typeDefinitionMod.GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]] = js.native
   def introspectionFromSchema(schema: graphqlLib.typeSchemaMod.GraphQLSchema): graphqlLib.utilitiesIntrospectionQueryMod.IntrospectionQuery = js.native
   def introspectionFromSchema(
     schema: graphqlLib.typeSchemaMod.GraphQLSchema,

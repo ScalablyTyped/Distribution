@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "split_dot_js"
-version := "1.3-dt-20180214Z-5d8c7d"
+version := "1.3-dt-20190212Z-5d8c7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

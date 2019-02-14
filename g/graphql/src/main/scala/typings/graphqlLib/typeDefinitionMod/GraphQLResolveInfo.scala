@@ -10,7 +10,7 @@ trait GraphQLResolveInfo extends js.Object {
   val fieldNodes: js.Array[graphqlLib.languageAstMod.FieldNode]
   val fragments: org.scalablytyped.runtime.StringDictionary[graphqlLib.languageAstMod.FragmentDefinitionNode]
   val operation: graphqlLib.languageAstMod.OperationDefinitionNode
-  val parentType: GraphQLObjectType[_, _]
+  val parentType: GraphQLObjectType[_, _, org.scalablytyped.runtime.StringDictionary[_]]
   val path: ResponsePath
   val returnType: GraphQLOutputType
   val rootValue: js.Any

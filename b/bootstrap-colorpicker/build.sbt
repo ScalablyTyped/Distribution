@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap-colorpicker"
-version := "2.5-dt-20190131Z-5cb0a2"
+version := "2.5-dt-20190212Z-5cb0a2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

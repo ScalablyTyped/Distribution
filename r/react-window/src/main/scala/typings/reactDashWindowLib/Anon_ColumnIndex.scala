@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ColumnIndex extends js.Object {
   var columnIndex: scala.Double
+  var data: js.Any
   var rowIndex: scala.Double
 }
 

@@ -77,7 +77,7 @@ trait BootstrapTableProps
   	 * the expand row functionality on table.
   	 */
   var expandComponent: js.UndefOr[
-    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]]
+    js.Function1[/* row */ js.Any, java.lang.String | reactLib.reactMod.ReactNs.ReactElement]
   ] = js.undefined
   /**
   	 * Tell react-bootstrap-table which rows are able to expand. This prop accepts

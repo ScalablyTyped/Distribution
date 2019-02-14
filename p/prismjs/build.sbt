@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "prismjs"
-version := "1.9-dt-20180214Z-b31fed"
+version := "1.9-dt-20190212Z-b31fed"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-cache"
-version := "2.0-dt-20181119Z-95c838"
+version := "2.0-dt-20190212Z-95c838"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

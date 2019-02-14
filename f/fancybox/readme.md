@@ -1,7 +1,8 @@
 ```
-// Type definitions for fancyBox 2.1
+// Type definitions for fancyBox 3.5
 // Project: https://github.com/fancyapps/fancyBox
 // Definitions by: Boris Yankov <https://github.com/borisyankov>
+//                 SPWizard01 <https://github.com/SPWizard01>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.3
+// TypeScript Version: 3.1
 ```

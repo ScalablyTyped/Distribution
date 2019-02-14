@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "enquire_dot_js"
-version := "2.1-dt-20180328Z-206ec7"
+version := "2.1-dt-20190212Z-206ec7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

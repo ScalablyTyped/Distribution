@@ -8,17 +8,13 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_AgentCallback extends js.Object {
   var Agent: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.httpsNs.Agent] = js.native
-  var Server: org.scalablytyped.runtime.Instantiable0[adoneLib.glossesStdMod.httpsNs.Server] = js.native
+  var Server: org.scalablytyped.runtime.Instantiable1[
+    /* options */ nodeLib.httpsMod.ServerOptions, 
+    adoneLib.glossesStdMod.httpsNs.Server
+  ] = js.native
   var globalAgent: nodeLib.httpsMod.Agent = js.native
   def createServer(options: nodeLib.httpsMod.ServerOptions): nodeLib.httpsMod.Server = js.native
-  def createServer(
-    options: nodeLib.httpsMod.ServerOptions,
-    requestListener: js.Function2[
-      /* req */ nodeLib.httpMod.IncomingMessage, 
-      /* res */ nodeLib.httpMod.ServerResponse, 
-      scala.Unit
-    ]
-  ): nodeLib.httpsMod.Server = js.native
+  def createServer(options: nodeLib.httpsMod.ServerOptions, requestListener: nodeLib.httpMod.RequestListener): nodeLib.httpsMod.Server = js.native
   def get(options: java.lang.String): nodeLib.httpMod.ClientRequest = js.native
   def get(
     options: java.lang.String,

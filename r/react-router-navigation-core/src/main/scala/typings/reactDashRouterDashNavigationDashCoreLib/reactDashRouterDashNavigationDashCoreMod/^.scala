@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("react-router-navigation-core", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def build[Item](children: js.Array[reactLib.reactMod.ReactNs.ReactElement[Item]]): js.Array[Item] = js.native
-  def build[Item](children: js.Array[reactLib.reactMod.ReactNs.ReactElement[Item]], oldBuild: js.Array[Item]): js.Array[Item] = js.native
+  def build[Item](children: js.Array[reactLib.reactMod.ReactNs.ReactElement]): js.Array[Item] = js.native
+  def build[Item](children: js.Array[reactLib.reactMod.ReactNs.ReactElement], oldBuild: js.Array[Item]): js.Array[Item] = js.native
   def createKey(
     route: reactDashRouterDashNavigationDashCoreLib.reactDashRouterDashNavigationDashCoreMod.Route[js.Object]
   ): java.lang.String = js.native

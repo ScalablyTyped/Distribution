@@ -715,7 +715,7 @@ trait Anon_AAClockwise extends js.Object {
         scala.Unit
       ]
     ], 
-    /* onError */ js.UndefOr[/* onError */ js.Function0[scala.Unit]], 
+    /* onError */ js.UndefOr[/* onError */ js.Function1[/* url */ java.lang.String, scala.Unit]], 
     threeLib.threeMod.LoadingManager
   ] = js.native
   val LogLuvEncoding: threeLib.threeDashCoreMod.TextureEncoding = js.native

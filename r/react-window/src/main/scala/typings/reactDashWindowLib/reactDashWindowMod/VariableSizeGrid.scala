@@ -12,32 +12,32 @@ class VariableSizeGrid ()
   /**
     * VariableSizeGrid caches offsets and measurements for each column index for performance purposes.
     * This method clears that cached data for all columns after (and including) the specified index.
-    * It should be called whenever a column's width changes. (Note that this is not a typical occurrance.)
+    * It should be called whenever a column's width changes. (Note that this is not a typical occurrence.)
     *
     * By default the grid will automatically re-render after the index is reset.
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-    * specify a value offalse for the second, optional parameter.
+    * specify a value of false for the second, optional parameter.
     */
   def resetAfterColumnIndex(index: scala.Double): scala.Unit = js.native
   def resetAfterColumnIndex(index: scala.Double, shouldForceUpdate: scala.Boolean): scala.Unit = js.native
   /**
     * VariableSizeGrid caches offsets and measurements for each item for performance purposes.
     * This method clears that cached data for all items after (and including) the specified indices.
-    * It should be called whenever an items size changes. (Note that this is not a typical occurrance.)
+    * It should be called whenever an items size changes. (Note that this is not a typical occurrence.)
     *
     * By default the grid will automatically re-render after the index is reset.
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-    * specify a value offalse for the optional shouldForceUpdate parameter.
+    * specify a value of false for the optional shouldForceUpdate parameter.
     */
   def resetAfterIndices(params: reactDashWindowLib.Anon_ColumnIndexRowIndex): scala.Unit = js.native
   /**
     * VariableSizeGrid caches offsets and measurements for each row index for performance purposes.
     * This method clears that cached data for all rows after (and including) the specified index.
-    * It should be called whenever a row's height changes. (Note that this is not a typical occurrance.)
+    * It should be called whenever a row's height changes. (Note that this is not a typical occurrence.)
     *
     * By default the grid will automatically re-render after the index is reset.
     * If you would like to delay this re-render until e.g. a state update has completed in the parent component,
-    * specify a value offalse for the second, optional parameter.
+    * specify a value of false for the second, optional parameter.
     */
   def resetAfterRowIndex(index: scala.Double): scala.Unit = js.native
   def resetAfterRowIndex(index: scala.Double, shouldForceUpdate: scala.Boolean): scala.Unit = js.native

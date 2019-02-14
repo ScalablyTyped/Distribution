@@ -12,6 +12,6 @@ trait Anon_Attr extends js.Object {
     editorClass: java.lang.String,
     ignoreEditable: scala.Boolean,
     defaultValue: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
+  ): reactLib.reactMod.ReactNs.ReactElement | scala.Boolean
 }
 

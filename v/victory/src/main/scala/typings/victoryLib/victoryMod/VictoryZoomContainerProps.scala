@@ -31,7 +31,7 @@ trait VictoryZoomContainerProps extends VictoryContainerProps {
     * props on VictoryClipContainer, such as clipPadding.
     * @example clipContainerComponent={<VictoryClipContainer clipPadding={{top: 10, right: 10}}}/>}
     */
-  var clipContainerComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var clipContainerComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
   /**
     * The defaultBrushArea prop specifies how the container will behave when a
     * region outside the active brush is clicked without selecting a new area. When the

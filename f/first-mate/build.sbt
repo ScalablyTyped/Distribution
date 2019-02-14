@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "first-mate"
-version := "7.x-dt-20180214Z-efe6c1"
+version := "7.x-dt-20190212Z-efe6c1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

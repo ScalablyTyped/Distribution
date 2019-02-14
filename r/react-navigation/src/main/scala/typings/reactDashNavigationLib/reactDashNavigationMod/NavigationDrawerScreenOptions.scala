@@ -7,15 +7,15 @@ import scala.scalajs.js.annotation._
 
 trait NavigationDrawerScreenOptions extends js.Object {
   var drawerIcon: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    reactLib.reactMod.ReactNs.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | scala.Null
     ])
   ] = js.undefined
   var drawerLabel: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[
       /* options */ reactDashNavigationLib.Anon_Focused, 
-      reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
+      reactLib.reactMod.ReactNs.ReactElement | scala.Null
     ])
   ] = js.undefined
   var drawerLockMode: js.UndefOr[DrawerLockMode] = js.undefined

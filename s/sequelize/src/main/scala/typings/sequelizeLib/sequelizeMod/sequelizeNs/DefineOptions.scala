@@ -101,6 +101,10 @@ trait DefineOptions[TInstance] extends js.Object {
     */
   var rejectOnError: js.UndefOr[scala.Boolean | nodeLib.Error] = js.undefined
   /**
+    * Specify the ROW_FORMAT for use with the MySQL InnoDB engine.
+    */
+  var rowFormat: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Change the database schema. PG only feature, but also works with other dialects.
     */
   var schema: js.UndefOr[java.lang.String] = js.undefined
