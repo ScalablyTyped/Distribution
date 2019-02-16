@@ -5,7 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("terser", "AST_ConciseMethod")
 @js.native
-class AST_ConciseMethod () extends AST_Node
+trait AST_ConciseMethod extends AST_ObjectProperty {
+  var async: scala.Boolean = js.native
+  var is_generator: scala.Boolean = js.native
+  var quote: java.lang.String = js.native
+  var static: scala.Boolean = js.native
+}
 

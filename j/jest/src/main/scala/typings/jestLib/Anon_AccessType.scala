@@ -64,10 +64,12 @@ trait Anon_AccessType extends js.Object {
     * Creates a mock function. Optionally takes a mock implementation.
     */
   def fn(): jestLib.jestMod.jestNs.Mock[_, _] = js.native
+  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): jestLib.jestMod.jestNs.Mock[T, Y] = js.native
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
-  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): jestLib.jestMod.jestNs.Mock[T, Y] = js.native
+  @JSName("fn")
+  def fn_TYArray[T, Y /* <: js.Array[_] */](): jestLib.jestMod.jestNs.Mock[T, Y] = js.native
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */

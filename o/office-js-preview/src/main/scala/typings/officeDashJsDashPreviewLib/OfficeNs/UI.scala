@@ -33,9 +33,10 @@ trait UI extends js.Object {
     * Displays a dialog to show or collect information from the user or to facilitate Web navigation.
     *
     * @remarks
-    * <table><tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
-    *
-    * <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr></table>
+    * <table>
+    *   <tr><td>Hosts</td><td>Word, Excel, Outlook, PowerPoint</td></tr>
+    *   <tr><td>Requirement sets</td><td>DialogApi, Mailbox 1.4</td></tr>
+    * </table>
     * 
     * This method is available in the DialogApi requirement set for Word, Excel, or PowerPoint add-ins, and in the Mailbox requirement set 1.4 
     * for Outlook. For more on how to specify a requirement set in your manifest, see 

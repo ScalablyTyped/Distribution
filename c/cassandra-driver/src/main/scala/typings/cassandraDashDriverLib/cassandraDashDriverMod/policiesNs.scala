@@ -115,6 +115,7 @@ object policiesNs extends js.Object {
       var request: js.Any
     }
     
+    @js.native
     trait RetryPolicy extends js.Object {
       def onReadTimeout(
         requestInfo: RequestInfo,
@@ -122,22 +123,27 @@ object policiesNs extends js.Object {
         received: scala.Double,
         blockFor: scala.Double,
         isDataPresent: scala.Boolean
-      ): DecisionInfo
+      ): DecisionInfo = js.native
       def onUnavailable(
         requestInfo: RequestInfo,
         consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
         required: scala.Double,
         alive: scala.Double
-      ): DecisionInfo
+      ): DecisionInfo = js.native
       def onWriteTimeout(
         requestInfo: RequestInfo,
         consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
         received: scala.Double,
         blockFor: scala.Double,
         writeType: java.lang.String
-      ): DecisionInfo
-      def rethrowResult(): cassandraDashDriverLib.Anon_Decision
-      def retryResult(): cassandraDashDriverLib.Anon_Consistency
+      ): DecisionInfo = js.native
+      def rethrowResult(): cassandraDashDriverLib.Anon_Decision = js.native
+      def retryResult(): cassandraDashDriverLib.Anon_Consistency = js.native
+      def retryResult(consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies): cassandraDashDriverLib.Anon_Consistency = js.native
+      def retryResult(
+        consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
+        useCurrentHost: scala.Boolean
+      ): cassandraDashDriverLib.Anon_Consistency = js.native
     }
     
     @js.native

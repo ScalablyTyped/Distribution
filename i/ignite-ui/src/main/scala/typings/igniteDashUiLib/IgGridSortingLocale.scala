@@ -79,7 +79,7 @@ trait IgGridSortingLocale
   	 * Custom sorted column tooltip in [igTemplating](http://www.igniteui.com/help/igtemplating-overview) format.
   	 *
   	 */
-  var sortedColumnTooltipFormat: js.UndefOr[java.lang.String] = js.undefined
+  var sortedColumnTooltip: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Unsorted column tooltip.
   	 *

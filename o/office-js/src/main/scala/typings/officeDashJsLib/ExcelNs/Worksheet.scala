@@ -223,7 +223,7 @@ class Worksheet ()
   def copy_None(positionType: officeDashJsLib.officeDashJsLibStrings.None, relativeTo: Worksheet): Worksheet = js.native
   /**
     *
-    * Deletes the worksheet from the workbook.
+    * Deletes the worksheet from the workbook. Note that if the worksheet's visibility is set to "VeryHidden", the delete operation will fail with a GeneralException.
     *
     * [Api set: ExcelApi 1.1]
     */

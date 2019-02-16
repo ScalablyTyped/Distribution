@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ngwysiwyg"
-version := "0.6-dt-20180214Z-e77928"
+version := "0.6-dt-20190213Z-e77928"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

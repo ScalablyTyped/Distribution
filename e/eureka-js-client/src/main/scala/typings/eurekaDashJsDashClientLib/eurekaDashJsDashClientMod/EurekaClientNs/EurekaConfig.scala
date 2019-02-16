@@ -8,5 +8,6 @@ import scala.scalajs.js.annotation._
 trait EurekaConfig extends js.Object {
   var eureka: EurekaClientConfig
   var instance: EurekaInstanceConfig
+  var requestMiddleware: js.UndefOr[EurekaMiddlewareConfig] = js.undefined
 }
 

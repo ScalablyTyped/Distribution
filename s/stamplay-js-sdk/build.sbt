@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stamplay-js-sdk"
-version := "1.2-dt-20180214Z-091b88"
+version := "1.2-dt-20190213Z-091b88"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

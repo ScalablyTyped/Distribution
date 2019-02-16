@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inboxsdk"
-version := "2.0-dt-20190116Z-c02065"
+version := "2.0-dt-20190213Z-c02065"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

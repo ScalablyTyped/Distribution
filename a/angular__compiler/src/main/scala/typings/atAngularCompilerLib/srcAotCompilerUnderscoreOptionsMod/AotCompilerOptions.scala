@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait AotCompilerOptions extends js.Object {
   var allowEmptyCodegenFiles: js.UndefOr[scala.Boolean] = js.undefined
+  var createExternalSymbolFactoryReexports: js.UndefOr[scala.Boolean] = js.undefined
   var enableIvy: js.UndefOr[
     scala.Boolean | atAngularCompilerLib.atAngularCompilerLibStrings.ngtsc | atAngularCompilerLib.atAngularCompilerLibStrings.tsc
   ] = js.undefined

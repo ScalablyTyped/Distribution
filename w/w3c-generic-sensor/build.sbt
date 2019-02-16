@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-generic-sensor"
-version := "1.0-dt-20181214Z-bf485a"
+version := "1.0-dt-20190213Z-bf485a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -12,8 +12,13 @@ object RadioNs extends js.Object {
   - backboneDotRadioLib.backboneDotRadioMod.backboneMod.RadioNs.Requests because Inheritance from two classes */ @js.native
   class Channel ()
     extends Commands
+       with backboneLib.backboneMod.BackboneNs.EventsMixin
        with backboneLib.backboneMod.BackboneNs.Events {
     var channelName: java.lang.String = js.native
+    /**
+      * Faulty overgeneralization of Backbone.Events.on, for historical
+      * reasons.
+      */
     def on(eventName: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any): js.Any = js.native
     def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native

@@ -13,6 +13,10 @@ trait Pikaday extends js.Object {
     */
   def adjustPosition(): scala.Unit = js.native
   /**
+    * Clear and reset the date
+    */
+  def clear(): scala.Unit = js.native
+  /**
     * Extends the existing configuration options for Pikaday object with the options provided.
     * Can be used to change/extend the configurations on runtime.
     * @param options full/partial configuration options.
@@ -69,6 +73,7 @@ trait Pikaday extends js.Object {
     * Go to the previous month (this will change year if necessary).
     */
   def prevMonth(): scala.Unit = js.native
+  def setDate(): scala.Unit = js.native
   /**
     * Set the current selection. This will be restricted within the bounds
     * of minDate and maxDate options if they're specified. A boolean (true)
@@ -77,8 +82,10 @@ trait Pikaday extends js.Object {
     */
   def setDate(date: java.lang.String): scala.Unit = js.native
   def setDate(date: java.lang.String, preventOnSelect: scala.Boolean): scala.Unit = js.native
+  def setDate(date: scala.Null, preventOnSelect: scala.Boolean): scala.Unit = js.native
   def setDate(date: stdLib.Date): scala.Unit = js.native
   def setDate(date: stdLib.Date, preventOnSelect: scala.Boolean): scala.Unit = js.native
+  def setEndRange(): scala.Unit = js.native
   /**
     * Update the range end date. For using two Pikaday instances to select
     * a date range.
@@ -99,6 +106,7 @@ trait Pikaday extends js.Object {
     */
   def setMoment(moment: js.Any): scala.Unit = js.native
   def setMoment(moment: js.Any, preventOnSelect: scala.Boolean): scala.Unit = js.native
+  def setStartRange(): scala.Unit = js.native
   /**
     * Update the range start date. For using two Pikaday instances to
     * select a date range.

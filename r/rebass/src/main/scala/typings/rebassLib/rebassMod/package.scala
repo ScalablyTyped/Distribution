@@ -6,5 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object rebassMod {
-  type HeadingProps = TextProps
+  // tslint:disable-next-line no-empty-interface
+  type HeadingKnownProps = TextKnownProps
+  // tslint:disable-next-line no-empty-interface
+  type LinkKnownProps = BoxKnownProps
 }

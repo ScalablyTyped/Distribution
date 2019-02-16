@@ -26,7 +26,10 @@ class Layout[TModel /* <: backboneLib.backboneMod.Model */] ()
    // return view;
   def insertViews(views: js.Any): Layout[TModel] = js.native
   def promise(): jqueryLib.JQueryPromise[_] = js.native
+   // return this;
+  def remove(): Layout[TModel] = js.native
   def removeView(fn: js.Any): Layout[TModel] = js.native
+  def render(): Layout[TModel] = js.native
    // return this
   def renderViews(): Layout[TModel] = js.native
    // return this

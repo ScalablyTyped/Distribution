@@ -9,8 +9,13 @@ import scala.scalajs.js.annotation._
 trait SelfDecorator
   extends org.scalablytyped.runtime.Instantiable0[Self] {
   /**
-    * A constructor parameter decorator that tells the DI framework
-    * to retrieve a dependency only from the local injector.
+    * A parameter decorator to be used on constructor parameters,
+    * which tells the DI framework to start dependency resolution from the local injector.
+    *
+    * Resolution works upward through the injector hierarchy, so the children
+    * of this class must configure their own providers or be prepared for a null result.
+    *
+    * @usageNotes
     *
     * In the following example, the dependency can be resolved
     * by the local injector when instantiating the class itself, but not
@@ -18,8 +23,8 @@ trait SelfDecorator
     *
     * {@example core/di/ts/metadata_spec.ts region='Self'}
     *
-    * @see ["Dependency Injection Guide"](guide/dependency-injection).
-    *
+    * @see `SkipSelf`
+    * @see `Optional`
     *
     */
   def apply(): js.Any = js.native

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "googlepay"
-version := "0.2-dt-20181004Z-86dac0"
+version := "0.2-dt-20190213Z-86dac0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

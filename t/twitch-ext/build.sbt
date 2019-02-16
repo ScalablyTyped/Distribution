@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "twitch-ext"
-version := "1.15-dt-20180911Z-515d85"
+version := "1.15-dt-20190213Z-515d85"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

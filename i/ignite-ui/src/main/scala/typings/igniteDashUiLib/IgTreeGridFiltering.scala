@@ -110,12 +110,13 @@ trait IgTreeGridFiltering
   	 */
   var filterDialogAddButtonWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /**
-  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>".
+  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
+  	 * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
   	 *
   	 */
   var filterDialogAddConditionDropDownTemplate: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>".
+  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
   	 *
   	 */
   var filterDialogAddConditionTemplate: js.UndefOr[java.lang.String] = js.undefined
@@ -172,7 +173,8 @@ trait IgTreeGridFiltering
   	 */
   var filterDialogFilterAdding: js.UndefOr[FilterDialogFilterAddingEvent] = js.undefined
   /**
-  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>".
+  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
+  	 * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
   	 *
   	 */
   var filterDialogFilterConditionTemplate: js.UndefOr[java.lang.String] = js.undefined
@@ -190,7 +192,7 @@ trait IgTreeGridFiltering
   	 * Each DOM element which is used for selecting filter conditions/columns/filter expressions has "data-*" attribute.
   	 * E.g.: DOM element used for selecting column has attribute "data-af-col", for selecting filter condition - "data-af-cond", for filter expression- "data-af-expr".
   	 * NOTE: The template is supported only with <tr />.
-  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><select data-af-cond></select></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
+  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
   	 *
   	 */
   var filterDialogFilterTemplate: js.UndefOr[java.lang.String] = js.undefined
@@ -239,8 +241,8 @@ trait IgTreeGridFiltering
   	 *
   	 *
   	 * Valid values:
-  	 * "string" The dialog window width in pixels (370px).
-  	 * "number" The dialog window width in pixels as a number (370).
+  	 * "string" The dialog window width in pixels (500px).
+  	 * "number" The dialog window width in pixels as a number (500).
   	 */
   var filterDialogWidth: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   /**

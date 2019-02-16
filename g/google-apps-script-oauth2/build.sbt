@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-apps-script-oauth2"
-version := "24.0-dt-20180310Z-e7d8b2"
+version := "24.0-dt-20190213Z-e7d8b2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

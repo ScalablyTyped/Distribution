@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "leaflet-areaselect"
-version := "0.1-dt-20180214Z-d04dff"
+version := "0.1-dt-20190213Z-d04dff"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

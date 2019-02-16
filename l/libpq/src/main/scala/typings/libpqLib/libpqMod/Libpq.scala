@@ -149,8 +149,8 @@ trait Libpq
     *                          progress (only if you have called [[Libpq.setNonBlocking]](true));
     *                          -1 if the copy is completed; -2 if there was an error.
     */
-  def getCopyData(): bufferLib.bufferMod.Buffer | scala.Double = js.native
-  def getCopyData(async: scala.Boolean): bufferLib.bufferMod.Buffer | scala.Double = js.native
+  def getCopyData(): nodeLib.Buffer | scala.Double = js.native
+  def getCopyData(async: scala.Boolean): nodeLib.Buffer | scala.Double = js.native
   /**
     * Parses received data from the server into a PGresult struct and sets a pointer internally to
     * the connection object to this result.
@@ -229,7 +229,7 @@ trait Libpq
     *                   called [[Libpq.setNonBlocking]](true)); -1 if there was an error sending
     *                   the command.
     */
-  def putCopyData(buffer: bufferLib.bufferMod.Buffer): scala.Double = js.native
+  def putCopyData(buffer: nodeLib.Buffer): scala.Double = js.native
   /**
     * Signals the backed your copy procedure is complete. If you pass errorMessage it will be sent
     * to the backend and effectively cancel the copy operation.

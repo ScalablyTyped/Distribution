@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__runloop"
-version := "3.0-dt-20180926Z-2d76a7"
+version := "3.0-dt-20190213Z-2d76a7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

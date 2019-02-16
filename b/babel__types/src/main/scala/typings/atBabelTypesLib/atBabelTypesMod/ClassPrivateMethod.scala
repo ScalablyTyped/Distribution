@@ -17,7 +17,7 @@ trait ClassPrivateMethod extends BaseNode {
   var key: PrivateName
   var kind: atBabelTypesLib.atBabelTypesLibStrings.get | atBabelTypesLib.atBabelTypesLibStrings.set | atBabelTypesLib.atBabelTypesLibStrings.method | atBabelTypesLib.atBabelTypesLibStrings.constructor
   var optional: scala.Boolean | scala.Null
-  var params: js.Array[LVal]
+  var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: js.Any | scala.Null
   var static: scala.Boolean | scala.Null
   var typeParameters: js.Any | scala.Null

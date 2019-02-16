@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery_dot_validation"
-version := "1.16-dt-20180926Z-859cde"
+version := "1.16-dt-20190213Z-859cde"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

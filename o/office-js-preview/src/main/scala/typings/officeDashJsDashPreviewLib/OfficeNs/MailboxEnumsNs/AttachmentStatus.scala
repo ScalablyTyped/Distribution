@@ -14,9 +14,9 @@ sealed trait AttachmentStatus extends js.Object
   * [Api set: Mailbox Preview]
   * 
   * @remarks
-  * <table><tr><td>
-  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-  * </td><td>Compose or read</td></tr></table>
+  * <table>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+  * </table>
   * 
   * @beta
   */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qlik-visualizationextensions"
-version := "4.0-dt-20190210Z-111dd1"
+version := "4.0-dt-20190213Z-111dd1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

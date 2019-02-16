@@ -5,10 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait FlexProps extends BoxProps {
-  var alignItems: js.UndefOr[java.lang.String] = js.undefined
-  var flexDirection: js.UndefOr[java.lang.String] = js.undefined
-  var flexWrap: js.UndefOr[java.lang.String] = js.undefined
-  var justifyContent: js.UndefOr[java.lang.String] = js.undefined
-}
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<react.HTMLDivElement>, keyof rebass.rebass.FlexKnownProps> ]: react.react.HTMLProps<react.HTMLDivElement>[P]} */ trait FlexProps extends FlexKnownProps
 

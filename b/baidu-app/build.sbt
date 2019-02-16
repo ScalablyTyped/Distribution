@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "baidu-app"
-version := "2.2-dt-20181129Z-4c3146"
+version := "2.2-dt-20190213Z-4c3146"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

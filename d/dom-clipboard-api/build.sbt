@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dom-clipboard-api"
-version := "1.0-dt-20180815Z-0d3c31"
+version := "1.0-dt-20190213Z-0d3c31"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

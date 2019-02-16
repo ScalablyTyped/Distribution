@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Router
-  extends backboneLib.backboneMod.EventSignatures {
+trait Router extends js.Object {
   /**
     * Routes hash or a method returning the routes hash that maps URLs with parameters to methods on your Router.
     * For assigning routes as object hash, do it like this: this.routes = <any>{ "route": callback, ... };

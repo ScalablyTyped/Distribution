@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-css-typed-object-model-level-1"
-version := "20180410.0-dt-20181205Z-dc2f27"
+version := "20180410.0-dt-20190213Z-dc2f27"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qlik"
-version := "3.1-dt-20180214Z-3adfbf"
+version := "3.1-dt-20190213Z-3adfbf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1,5 +1,5 @@
 ```
-// Type definitions for Google Google Play Game Services Publishing API v1configuration 1.0
+// Type definitions for non-npm package Google Google Play Game Services Publishing API v1configuration 1.0
 // Project: https://developers.google.com/games/services
 // Definitions by: Bolisov Alexey <https://github.com/Bolisov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

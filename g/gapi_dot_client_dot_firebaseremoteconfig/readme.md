@@ -1,5 +1,5 @@
 ```
-// Type definitions for Google Firebase Remote Config API v1 1.0
+// Type definitions for non-npm package Google Firebase Remote Config API v1 1.0
 // Project: https://firebase.google.com/docs/remote-config/
 // Definitions by: Bolisov Alexey <https://github.com/Bolisov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

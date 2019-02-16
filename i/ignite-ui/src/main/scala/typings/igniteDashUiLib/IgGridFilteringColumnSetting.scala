@@ -58,6 +58,10 @@ trait IgGridFilteringColumnSetting
   	 * "thisYear"
   	 * "nextYear"
   	 * "lastYear"
+  	 * "at"
+  	 * "notAt"
+  	 * "atBefore"
+  	 * "atAfter"
   	 */
   var condition: js.UndefOr[java.lang.String | scala.Boolean] = js.undefined
   /**
@@ -80,5 +84,49 @@ trait IgGridFilteringColumnSetting
   	 *
   	 */
   var defaultExpressions: js.UndefOr[IgGridFilteringColumnSettingDefaultExpressions] = js.undefined
+  /**
+  	 * Specifies options to initialize the corresponding editor with.
+  	 *
+  	 */
+  var editorOptions: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Specifies а custom editor provider instance. More information about editor providers can be found [here](http://www.igniteui.com/help/implementing-custom-editor-provider) and [here](http://www.igniteui.com/help/working-with-combo-editor-provider).
+  	 * It should either extend $.ig.EditorProvider or have definitions for the following methods:
+  	 * $.ig.EditorProvider = $.ig.EditorProvider|| $.ig.EditorProvider.extend({
+  	 * createEditor: function (callbacks, key, editorOptions, tabIndex, format, element) {},
+  	 * attachErrorEvents: function (errorShowing, errorShown, errorHidden) {},
+  	 * getEditor: function () {},
+  	 * refreshValue: function () {},
+  	 * getValue: function () {},
+  	 * setValue: function (val) {},
+  	 * setSize: function (width, height) {},
+  	 * setFocus: function () {},
+  	 * removeFromParent: function () {},
+  	 * destroy: function () {},
+  	 * validator: function () {},
+  	 * validate: function (noLabel) {},
+  	 * isValid: function () {}
+  	 * });
+  	 *
+  	 */
+  var editorProvider: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Specifies the type of editor to use for the column.
+  	 *
+  	 *
+  	 * Valid values:
+  	 * "text" An igTextEditor will be created
+  	 * "mask" An igMaskEditor will be created
+  	 * "date" An igDateEditor will be created
+  	 * "datepicker" An igDatePicker will be created
+  	 * "timepicker" An igTimePikcer will be created
+  	 * "numeric" An igNumericEditor will be created
+  	 * "checkbox" An igCheckboxEditor will be created
+  	 * "currency" An igCurrencyEditor will be created
+  	 * "percent" An igPercentEditor will be created
+  	 * "combo" An igCombo editor is created. Both the JS and CSS files used by ui.igCombo should be available.
+  	 * "rating" An igRating editor is created. Both the JS and CSS files used by ui.igRating should be available.
+  	 */
+  var editorType: js.UndefOr[java.lang.String] = js.undefined
 }
 

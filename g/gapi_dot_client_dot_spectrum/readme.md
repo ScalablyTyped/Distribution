@@ -1,5 +1,5 @@
 ```
-// Type definitions for Google Google Spectrum Database API v1explorer 1.0
+// Type definitions for non-npm package Google Google Spectrum Database API v1explorer 1.0
 // Project: http://developers.google.com/spectrum
 // Definitions by: Bolisov Alexey <https://github.com/Bolisov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

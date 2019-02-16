@@ -5,10 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("terser", "AST_String")
 @js.native
-class AST_String () extends AST_Node {
-  @JSName("value")
-  var value_AST_String: java.lang.String = js.native
+trait AST_String extends AST_Node {
+  var quote: java.lang.String = js.native
+  var value: java.lang.String = js.native
 }
 

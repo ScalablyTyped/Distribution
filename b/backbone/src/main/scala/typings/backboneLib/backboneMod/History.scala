@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "History")
 @js.native
-class History ()
-  extends backboneLib.backboneMod.BackboneNs.History
+class History () extends js.Object
 
 /* static members */
 @JSImport("backbone", "History")

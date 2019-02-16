@@ -14,9 +14,9 @@ sealed trait RecurrenceTimeZone extends js.Object
   * [Api set: Mailbox 1.7]
   *
   * @remarks
-  * <table><tr><td>
-  * {@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}
-  * </td><td>Compose or read</td></tr></table>
+  * <table>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+  * </table>
   */
 @JSGlobal("Office.MailboxEnums.RecurrenceTimeZone")
 @js.native

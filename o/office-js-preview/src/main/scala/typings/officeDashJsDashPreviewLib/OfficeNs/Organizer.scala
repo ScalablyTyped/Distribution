@@ -12,9 +12,10 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.7]
   * 
   * @remarks
-  * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-  * 
-  * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+  * <table>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+  * </table>
   */
 @js.native
 trait Organizer extends js.Object {
@@ -24,9 +25,10 @@ trait Organizer extends js.Object {
     * [Api set: Mailbox 1.7]
     * 
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    * 
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    * </table>
     * 
     * @param options - An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -34,6 +36,7 @@ trait Organizer extends js.Object {
     *                  The `value` property of the result is message's organizer value, as an EmailAddressDetails object.
     */
   def getAsync(): scala.Unit = js.native
+  def getAsync(callback: js.Function1[/* result */ AsyncResult[EmailAddressDetails], scala.Unit]): scala.Unit = js.native
   def getAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
     options: AsyncContextOptions,

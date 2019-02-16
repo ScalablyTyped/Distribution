@@ -11,7 +11,7 @@ trait IgGridSummariesMethods extends js.Object {
   	 */
   def calculateSummaries(): scala.Unit
   /**
-  	 * Summary calculate the whole data for the specified column key, columnMethods and dataType (used when datasource is remote and dataType is date)
+  	 * Summary calculate the whole data for the specified column key, columnMethods and dataType (used when datasource is remote and dataType is date or time)
   	 *
   	 * @param ck ColumnKey
   	 * @param columnMethods Array of column methods objects

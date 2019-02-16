@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "dropbox-chooser"
-version := "1.0-dt-20181127Z-5c9249"
+version := "1.0-dt-20190213Z-5c9249"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

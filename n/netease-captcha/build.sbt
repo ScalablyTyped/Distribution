@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "netease-captcha"
-version := "2.1-dt-20181205Z-3abe29"
+version := "2.1-dt-20190213Z-3abe29"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -19,6 +19,9 @@ object chromeLibStrings {
   sealed trait block extends js.Object
   
   @js.native
+  sealed trait bottom extends js.Object
+  
+  @js.native
   sealed trait complete extends js.Object
   
   @js.native
@@ -43,6 +46,9 @@ object chromeLibStrings {
   sealed trait incognito_session_only extends js.Object
   
   @js.native
+  sealed trait left extends js.Object
+  
+  @js.native
   sealed trait loading extends js.Object
   
   @js.native
@@ -50,6 +56,9 @@ object chromeLibStrings {
   
   @js.native
   sealed trait media extends js.Object
+  
+  @js.native
+  sealed trait mixed extends js.Object
   
   @js.native
   sealed trait newBackgroundTab extends js.Object
@@ -62,6 +71,9 @@ object chromeLibStrings {
   
   @js.native
   sealed trait `object` extends js.Object
+  
+  @js.native
+  sealed trait off extends js.Object
   
   @js.native
   sealed trait other extends js.Object
@@ -79,6 +91,9 @@ object chromeLibStrings {
   sealed trait regular extends js.Object
   
   @js.native
+  sealed trait right extends js.Object
+  
+  @js.native
   sealed trait script extends js.Object
   
   @js.native
@@ -89,6 +104,9 @@ object chromeLibStrings {
   
   @js.native
   sealed trait sub_frame extends js.Object
+  
+  @js.native
+  sealed trait top extends js.Object
   
   @js.native
   sealed trait websocket extends js.Object
@@ -104,6 +122,8 @@ object chromeLibStrings {
   def ask: ask = "ask".asInstanceOf[ask]
   @scala.inline
   def block: block = "block".asInstanceOf[block]
+  @scala.inline
+  def bottom: bottom = "bottom".asInstanceOf[bottom]
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   @scala.inline
@@ -121,11 +141,15 @@ object chromeLibStrings {
   @scala.inline
   def incognito_session_only: incognito_session_only = "incognito_session_only".asInstanceOf[incognito_session_only]
   @scala.inline
+  def left: left = "left".asInstanceOf[left]
+  @scala.inline
   def loading: loading = "loading".asInstanceOf[loading]
   @scala.inline
   def main_frame: main_frame = "main_frame".asInstanceOf[main_frame]
   @scala.inline
   def media: media = "media".asInstanceOf[media]
+  @scala.inline
+  def mixed: mixed = "mixed".asInstanceOf[mixed]
   @scala.inline
   def newBackgroundTab: newBackgroundTab = "newBackgroundTab".asInstanceOf[newBackgroundTab]
   @scala.inline
@@ -134,6 +158,8 @@ object chromeLibStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
+  @scala.inline
+  def off: off = "off".asInstanceOf[off]
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   @scala.inline
@@ -145,6 +171,8 @@ object chromeLibStrings {
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   @scala.inline
+  def right: right = "right".asInstanceOf[right]
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
   def session_only: session_only = "session_only".asInstanceOf[session_only]
@@ -152,6 +180,8 @@ object chromeLibStrings {
   def stylesheet: stylesheet = "stylesheet".asInstanceOf[stylesheet]
   @scala.inline
   def sub_frame: sub_frame = "sub_frame".asInstanceOf[sub_frame]
+  @scala.inline
+  def top: top = "top".asInstanceOf[top]
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   @scala.inline

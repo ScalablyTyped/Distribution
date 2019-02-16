@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- officeDashJsLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -22,9 +22,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   var bcc: Recipients = js.native
   /**
@@ -38,9 +39,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   var cc: Recipients = js.native
   /**
@@ -55,9 +57,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   var from: From = js.native
   /**
@@ -69,9 +72,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     * 
     * @beta
     */
@@ -87,9 +91,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   var subject: Subject = js.native
   /**
@@ -102,9 +107,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   var to: Recipients = js.native
   /**
@@ -117,20 +123,14 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, options: AsyncContextOptions): void;`
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
-    *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -152,20 +152,14 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string): void;`
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `addFileAttachmentAsync(uri: string, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
-    *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -188,11 +182,13 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -211,11 +207,13 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     *
     * @param uri - The URI that provides the location of the file to attach to the message or appointment. The maximum length is 2048 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -246,11 +244,42 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox Preview]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
+    * 
+    * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
+    * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    *        isInline: If true, indicates that the attachment will be shown inline in the message body and should not be displayed in the attachment list.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
+    *                  On success, the attachment identifier will be provided in the asyncResult.value property. 
+    *                  If uploading the attachment fails, the asyncResult object will contain an Error object that provides a description of the error.
+    * 
+    * @beta
+    */
+  /**
+    * Adds a file to a message or appointment as an attachment.
     *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Appointment Organizer</td></tr>
+    * The addFileAttachmentFromBase64Async method uploads the file from the base64 encoding and attaches it to the item in the compose form. This method returns the attachment identifier in the asyncResult.value object.
     *
-    * <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr><tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr><tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * You can subsequently use the identifier with the removeAttachmentAsync method to remove the attachment in the same session.
+    *
+    * [Api set: Mailbox Preview]
+    *
+    * @remarks
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>AttachmentSizeExceeded - The attachment is larger than allowed.</td></tr>
+    *   <tr><td></td><td>FileTypeNotSupported - The attachment has an extension that is not allowed.</td></tr>
+    *   <tr><td></td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     * 
     * @param base64File - The base64 encoded content of an image or file to be added to an email or event.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -264,6 +293,11 @@ trait MessageCompose extends Message {
     * @beta
     */
   def addFileAttachmentFromBase64Async(base64File: java.lang.String, attachmentName: java.lang.String): scala.Unit = js.native
+  def addFileAttachmentFromBase64Async(
+    base64File: java.lang.String,
+    attachmentName: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+  ): scala.Unit = js.native
   def addFileAttachmentFromBase64Async(base64File: java.lang.String, attachmentName: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def addFileAttachmentFromBase64Async(
     base64File: java.lang.String,
@@ -287,20 +321,12 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
-    *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param options - An object literal that contains one or more of the following properties.
@@ -326,20 +352,12 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string): void;`
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `addItemAttachmentAsync(itemId: any, attachmentName: string, callback: (result: Office.AsyncResult<string>) => void): void;`
-    *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
     * @param options - An object literal that contains one or more of the following properties.
@@ -366,11 +384,11 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -395,11 +413,11 @@ trait MessageCompose extends Message {
     * [Api set: Mailbox 1.1]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>NumberOfAttachmentsExceeded - The message or appointment has too many attachments.</td></tr>
+    * </table>
     *
     * @param itemId - The Exchange identifier of the item to attach. The maximum length is 100 characters.
     * @param attachmentName - The name of the attachment that is shown while the attachment is uploading. The maximum length is 255 characters.
@@ -435,9 +453,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     */
   /**
     * Closes the current item that is being composed
@@ -454,9 +473,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    * </table>
     */
   def close(): scala.Unit = js.native
   /**
@@ -466,9 +486,30 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
+    * 
+    * @param options - Optional. An object literal that contains one or more of the following properties.
+    *        asyncContext: Developers can provide any object they wish to access in the callback method.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. If the call fails, the asyncResult.error property will contain and error code with the reason for 
+    *                 the failure.
+    * 
+    * @beta
+    */
+  /**
+    * Gets the item's attachments as an array.
+    * 
+    * [Api set: Mailbox Preview]
     *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+    * @remarks
+    *
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    * </table>
     * 
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -479,6 +520,7 @@ trait MessageCompose extends Message {
     * @beta
     */
   def getAttachmentsAsync(): scala.Unit = js.native
+  def getAttachmentsAsync(callback: js.Function1[/* result */ AsyncResult[js.Array[AttachmentDetails]], scala.Unit]): scala.Unit = js.native
   def getAttachmentsAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAttachmentsAsync(
     options: AsyncContextOptions,
@@ -500,9 +542,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -515,8 +558,8 @@ trait MessageCompose extends Message {
     * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
     * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
     *
-    * To access the selected data from the callback method, call asyncResult.value.data. To access the source property that the selection comes 
-    * from, call asyncResult.value.sourceProperty, which will be either body or subject.
+    * To access the selected data from the callback method, call asyncResult.value.data.
+    * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
     *
     * [Api set: Mailbox 1.2]
     *
@@ -525,9 +568,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    * </table>
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string , removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -551,9 +595,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    * </table>
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -568,7 +613,7 @@ trait MessageCompose extends Message {
     * If there is no selection but the cursor is in the body or subject, the method returns null for the selected data. 
     * If a field other than the body or subject is selected, the method returns the InvalidSelection error.
     *
-    * To access the selected data from the callback method, call asyncResult.value.data. 
+    * To access the selected data from the callback method, call asyncResult.value.data.
     * To access the source property that the selection comes from, call asyncResult.value.sourceProperty, which will be either body or subject.
     *
     * [Api set: Mailbox 1.2]
@@ -578,9 +623,10 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    * </table>
     *
     * @param coercionType - Requests a format for the data. If Text, the method returns the plain text as a string, removing any HTML tags present. 
     *                     If HTML, the method returns the selected text, whether it is plaintext or HTML.
@@ -607,20 +653,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `removeAttachmentAsync(attachmentId: string): void;`
-    * 
-    * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param attachmentId - The identifier of the attachment to remove.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -641,20 +679,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `removeAttachmentAsync(attachmentId: string): void;`
-    * 
-    * `removeAttachmentAsync(attachmentId: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `removeAttachmentAsync(attachmentId: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param attachmentId - The identifier of the attachment to remove.
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -676,11 +706,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param attachmentId - The identifier of the attachment to remove.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -700,11 +730,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param attachmentId - The identifier of the attachment to remove.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -746,20 +776,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `saveAsync(): void;`
-    * 
-    * `saveAsync(options: Office.AsyncContextOptions): void;`
-    * 
-    * `saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -790,20 +812,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `saveAsync(): void;`
-    * 
-    * `saveAsync(options: Office.AsyncContextOptions): void;`
-    * 
-    * `saveAsync(callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -836,11 +850,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
@@ -870,11 +884,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
@@ -897,20 +911,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `setSelectedDataAsync(data: string): void;`
-    * 
-    * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
-    * 
-    * `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -935,20 +941,12 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `setSelectedDataAsync(data: string): void;`
-    * 
-    * `setSelectedDataAsync(data: string, options: Office.AsyncContextOptions & CoercionTypeOptions): void;`
-    * 
-    * `setSelectedDataAsync(data: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
     * @param options - Optional. An object literal that contains one or more of the following properties.
@@ -975,11 +973,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
@@ -997,11 +995,11 @@ trait MessageCompose extends Message {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *
-    * <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
+    * </table>
     *
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.

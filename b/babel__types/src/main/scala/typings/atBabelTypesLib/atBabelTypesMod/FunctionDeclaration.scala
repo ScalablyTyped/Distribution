@@ -11,7 +11,7 @@ trait FunctionDeclaration extends BaseNode {
   var declare: scala.Boolean | scala.Null
   var generator: scala.Boolean
   var id: Identifier | scala.Null
-  var params: js.Array[LVal]
+  var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TypeAnnotation | TSTypeAnnotation | Noop | scala.Null
   var typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | scala.Null
   @JSName("type")

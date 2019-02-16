@@ -19,6 +19,7 @@ class EditorProviderBoolean () extends js.Object {
   def destroy(): scala.Unit = js.native
   def getValue(): scala.Unit = js.native
   def isValid(): scala.Unit = js.native
+  def keyDown(evt: js.Object, ui: js.Object): scala.Unit = js.native
   def refreshValue(): scala.Unit = js.native
   def removeFromParent(): scala.Unit = js.native
   def setFocus(): scala.Unit = js.native

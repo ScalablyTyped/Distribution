@@ -6,8 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait View[TModel /* <: Model */]
-  extends backboneLib.backboneMod.EventSignatures {
+trait View[TModel /* <: Model */] extends js.Object {
   @JSName("$el")
   var $el: jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   var attributes: js.Any = js.native

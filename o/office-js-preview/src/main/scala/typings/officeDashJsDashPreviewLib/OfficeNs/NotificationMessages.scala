@@ -11,9 +11,10 @@ import scala.scalajs.js.annotation._
   * [Api set: Mailbox 1.3]
   *
   * @remarks
-  * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-  *
-  * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+  * <table>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+  *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+  * </table>
   */
 @js.native
 trait NotificationMessages extends js.Object {
@@ -34,18 +35,10 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
-    * 
-    * In addition to this signature, the method also has the following signatures:
-    * 
-    * `addAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
-    * 
-    * `addAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
-    * 
-    * `addAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;`
-    * 
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     */
   def addAsync(key: java.lang.String, JSONmessage: NotificationMessageDetails): scala.Unit = js.native
   /**
@@ -63,9 +56,10 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     */
   def addAsync(
     key: java.lang.String,
@@ -85,14 +79,11 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     * 
-    * In addition to this signature, this method also has the following signature:
-    * 
-    * `getAllAsync(callback: (result: Office.AsyncResult<NotificationMessageDetails[]>) => void): void;`
-    *
     * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
@@ -105,9 +96,10 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     *
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult.
     *                 The `value` property of the result is an array of NotificationMessageDetails objects.
@@ -124,21 +116,12 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `removeAsync(key: string): void;`
-    * 
-    * `removeAsync(key: string, options: Office.AsyncContextOptions): void;`
-    * 
-    * `removeAsync(key: string, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param key - The key for the notification message to remove.
-    * @param options - Optional. An object literal that contains one or more of the following properties.
-    *        asyncContext: Developers can provide any object they wish to access in the callback method.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
@@ -149,9 +132,10 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     *
     * @param key - The key for the notification message to remove.
     * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
@@ -172,18 +156,11 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails): void;`
-    * 
-    * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, options: Office.AsyncContextOptions): void;`
-    * 
-    * `replaceAsync(key: string, JSONmessage: NotificationMessageDetails, callback: (result: Office.AsyncResult<void>) => void): void;`
-    *
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
     * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 
     *                    It contains a NotificationMessageDetails object.
@@ -201,9 +178,10 @@ trait NotificationMessages extends js.Object {
     * [Api set: Mailbox 1.3]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     *
     * @param key - The key for the notification message to replace. It can't be longer than 32 characters.
     * @param JSONmessage - A JSON object that contains the new notification message to replace the existing message. 

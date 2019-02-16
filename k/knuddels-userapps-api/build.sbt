@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knuddels-userapps-api"
-version := "1.00111486-dt-20181023Z-1ad48a"
+version := "1.00111486-dt-20190213Z-1ad48a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

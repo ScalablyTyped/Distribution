@@ -1,5 +1,6 @@
 ```
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -20,6 +21,7 @@
  * @param {!string} message The message to display if the check fails
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -38,6 +40,7 @@
  * @fileoverview Firebase constants.  Some of these (@defines) can be overridden at compile-time.
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -56,6 +59,7 @@
  * Do a deep-copy of basic JavaScript Objects or Arrays.
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -75,6 +79,7 @@
  * @return {string} user agent string
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -130,6 +135,7 @@
  *   }
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -157,6 +163,7 @@
  * @struct
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -188,6 +195,7 @@
  * @return {{header: *, claims: *, data: *, signature: string}}
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -211,6 +219,7 @@
  * @return {string}
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -226,6 +235,7 @@
  * limitations under the License.
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -245,6 +255,7 @@
  * @return {Array}
  */
 /**
+ * @license
  * Copyright 2017 Google Inc.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");

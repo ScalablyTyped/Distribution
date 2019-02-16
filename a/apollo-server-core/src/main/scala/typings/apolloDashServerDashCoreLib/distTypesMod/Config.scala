@@ -29,6 +29,7 @@ import scala.scalajs.js.annotation._
       atApollographqlApolloDashToolsLib.libBuildServiceDefinitionMod.GraphQLSchemaModule
     ]
   ] = js.undefined
+  var parseOptions: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[
     apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions | apolloDashServerDashCoreLib.apolloDashServerDashCoreLibNumbers.`false`
   ] = js.undefined

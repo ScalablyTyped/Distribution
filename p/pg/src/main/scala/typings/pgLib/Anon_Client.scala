@@ -20,7 +20,11 @@ trait Anon_Client extends js.Object {
   ]
   var Events: org.scalablytyped.runtime.Instantiable0[pgLib.pgMod.Events]
   var Pool: org.scalablytyped.runtime.Instantiable1[/* config */ js.UndefOr[/* config */ pgLib.pgMod.PoolConfig], pgLib.pgMod.Pool]
-  var Query: org.scalablytyped.runtime.Instantiable0[pgLib.pgMod.Query]
+  var Query: org.scalablytyped.runtime.Instantiable2[
+    /* queryTextOrConfig */ js.UndefOr[/* queryTextOrConfig */ java.lang.String | pgLib.pgMod.QueryConfig], 
+    /* values */ js.UndefOr[/* values */ js.Array[js.Any]], 
+    pgLib.pgMod.Query
+  ]
   val defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig
   val native: (/* import warning: ImportType.apply Failed type conversion: typeof Pg */ js.Any) | scala.Null
 }

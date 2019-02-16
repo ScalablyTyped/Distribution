@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("rebass", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Box: rebassLib.BoxClass = js.native
+  val Box: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.BoxProps] = js.native
   val Button: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.ButtonProps] = js.native
   val Card: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.CardProps] = js.native
   val Flex: reactLib.reactMod.ReactNs.FunctionComponent[rebassLib.rebassMod.FlexProps] = js.native

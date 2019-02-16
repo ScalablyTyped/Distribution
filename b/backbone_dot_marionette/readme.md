@@ -7,6 +7,7 @@
 //                 Volker Nauruhn <https://github.com/razorness>,
 //                 Ard Timmerman <https://github.com/confususs>,
 //                 J. Joe Koullas <https://github.com/jjoekoullas>
+//                 Julian Gonggrijp <https://github.com/jgonggrijp>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

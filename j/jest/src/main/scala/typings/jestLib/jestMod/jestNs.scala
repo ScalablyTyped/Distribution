@@ -1465,10 +1465,12 @@ object jestNs extends js.Object {
     * Creates a mock function. Optionally takes a mock implementation.
     */
   def fn(): Mock[_, _] = js.native
+  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
   /**
     * Creates a mock function. Optionally takes a mock implementation.
     */
-  def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock[T, Y] = js.native
+  @JSName("fn")
+  def fn_TYArray[T, Y /* <: js.Array[_] */](): Mock[T, Y] = js.native
   /**
     * Use the automatic mocking system to generate a mocked version of the given module.
     */

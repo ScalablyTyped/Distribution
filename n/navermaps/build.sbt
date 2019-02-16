@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "navermaps"
-version := "3.0-dt-20180618Z-fdc440"
+version := "3.0-dt-20190213Z-fdc440"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
   * Represents the data in a table or an {@link Office.TableBinding}.
   *
   * @remarks
-  * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
-  *
-  * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
+  * <table>
+  *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+  *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+  * </table>
   */
 @JSGlobal("Office.TableData")
 @js.native
@@ -21,10 +22,11 @@ class TableData () extends js.Object {
     * Gets or sets the headers of the table.
     * 
     * @remarks
-    * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+    * <table>
+    *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+    *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+    * </table>
     *
-    * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-    * 
     * To specify headers, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify headers 
     * for a two-column table you would set the header property to [['header1', 'header2']].
     *
@@ -41,10 +43,11 @@ class TableData () extends js.Object {
     * Returns an empty array if there are no rows.
     * 
     * @remarks
-    * <table><tr><td>Hosts</td><td>Excel, Word</td></tr>
+    * <table>
+    *   <tr><td>Hosts</td><td>Excel, Word</td></tr>
+    *   <tr><td>Requirement Sets</td><td>TableBindings</td></tr>
+    * </table>
     *
-    * <tr><td>Requirement Sets</td><td>TableBindings</td></tr></table>
-    * 
     * To specify rows, you must specify an array of arrays that corresponds to the structure of the table. For example, to specify two rows of 
     * string values in a two-column table you would set the rows property to [['a', 'b'], ['c', 'd']].
     *

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "View")
 @js.native
-class View[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] ()
-  extends backboneLib.backboneMod.BackboneNs.View[TModel] {
+class View[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] () extends js.Object {
   def this(options: backboneLib.backboneMod.BackboneNs.ViewOptions[TModel]) = this()
 }
 

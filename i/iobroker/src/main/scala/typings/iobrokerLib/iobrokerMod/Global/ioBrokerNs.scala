@@ -812,10 +812,10 @@ object ioBrokerNs extends js.Object {
       * @param parentDevice (optional) Name of the parent device to filter the channels by
       * @param options (optional) Some internal options.
       */
-    def getChannelsOfAsync(): js.Promise[js.Array[GetObjectsItem[ChannelObject]]] = js.native
+    def getChannelsOfAsync(): js.Promise[js.Array[ChannelObject]] = js.native
     // tslint:disable-next-line:unified-signatures
-    def getChannelsOfAsync(parentDevice: java.lang.String): js.Promise[js.Array[GetObjectsItem[ChannelObject]]] = js.native
-    def getChannelsOfAsync(parentDevice: java.lang.String, options: js.Any): js.Promise[js.Array[GetObjectsItem[ChannelObject]]] = js.native
+    def getChannelsOfAsync(parentDevice: java.lang.String): js.Promise[js.Array[ChannelObject]] = js.native
+    def getChannelsOfAsync(parentDevice: java.lang.String, options: js.Any): js.Promise[js.Array[ChannelObject]] = js.native
     // tslint:enable:unified-signatures
     /**
       * Returns a list of all devices in this adapter instance
@@ -829,8 +829,8 @@ object ioBrokerNs extends js.Object {
       * @param options (optional) Some internal options.
       * @param callback Is called when the operation has finished (successfully or not)
       */
-    def getDevicesAsync(): js.Promise[js.Array[GetObjectsItem[DeviceObject]]] = js.native
-    def getDevicesAsync(options: js.Any): js.Promise[js.Array[GetObjectsItem[DeviceObject]]] = js.native
+    def getDevicesAsync(): js.Promise[js.Array[DeviceObject]] = js.native
+    def getDevicesAsync(options: js.Any): js.Promise[js.Array[DeviceObject]] = js.native
     // ==============================
     // enums
     /** Returns the enum tree, filtered by the optional enum name */
@@ -952,10 +952,10 @@ object ioBrokerNs extends js.Object {
       * @param options (optional) Some internal options.
       */
     // tslint:disable:unified-signatures
-    def getStatesOfAsync(): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
-    def getStatesOfAsync(parentDevice: java.lang.String): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
-    def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
-    def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String, options: js.Any): js.Promise[js.Array[GetObjectsItem[StateObject]]] = js.native
+    def getStatesOfAsync(): js.Promise[js.Array[StateObject]] = js.native
+    def getStatesOfAsync(parentDevice: java.lang.String): js.Promise[js.Array[StateObject]] = js.native
+    def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String): js.Promise[js.Array[StateObject]] = js.native
+    def getStatesOfAsync(parentDevice: java.lang.String, parentChannel: java.lang.String, options: js.Any): js.Promise[js.Array[StateObject]] = js.native
     /** Convert ID to {device: D, channel: C, state: S} */
     def idToDCS(id: java.lang.String): iobrokerLib.Anon_Channel = js.native
     def mkDir(adapterName: java.lang.String, path: java.lang.String, callback: ErrorCallback): scala.Unit = js.native
@@ -2942,7 +2942,7 @@ object ioBrokerNs extends js.Object {
   // This is a version used by GetDevices/GetChannelsOf/GetStatesOf
   type GetObjectsCallback3[T /* <: BaseObject */] = js.Function2[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.UndefOr[js.Array[GetObjectsItem[T]]], 
+    /* result */ js.UndefOr[js.Array[T]], 
     scala.Unit
   ]
   type GetSessionCallback = js.Function1[/* session */ Session, scala.Unit]

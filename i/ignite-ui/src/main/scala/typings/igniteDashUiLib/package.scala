@@ -49,6 +49,7 @@ package object igniteDashUiLib {
   type BufferingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ BufferingEventUIParam, scala.Unit]
   type ButtonCancelClickEvent = js.Function2[/* event */ stdLib.Event, /* ui */ ButtonCancelClickEventUIParam, scala.Unit]
   type ButtonOKClickEvent = js.Function2[/* event */ stdLib.Event, /* ui */ ButtonOKClickEventUIParam, scala.Unit]
+  type CalloutStyleUpdatingEvent = js.Function2[/* event */ stdLib.Event, /* ui */ CalloutStyleUpdatingEventUIParam, scala.Unit]
   type CancelAllClickedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ CancelAllClickedEventUIParam, scala.Unit]
   type CancelEvent = js.Function2[/* event */ stdLib.Event, /* ui */ CancelEventUIParam, scala.Unit]
   type CaptionRenderedEvent = js.Function2[/* event */ stdLib.Event, /* ui */ CaptionRenderedEventUIParam, scala.Unit]

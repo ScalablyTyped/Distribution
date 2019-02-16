@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Inject extends js.Object {
   /**
-    * Injector token that maps to the dependency to be injected.
+    * A [DI token](guide/glossary#di-token) that maps to the dependency to be injected.
     */
   var token: js.Any
 }

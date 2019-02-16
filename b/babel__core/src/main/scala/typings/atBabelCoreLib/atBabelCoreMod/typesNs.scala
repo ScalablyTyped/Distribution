@@ -52,29 +52,39 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ArrayPattern = js.native
   def arrayTypeAnnotation(elementType: atBabelTypesLib.atBabelTypesMod.FlowType): atBabelTypesLib.atBabelTypesMod.ArrayTypeAnnotation = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -82,7 +92,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -91,7 +103,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -100,7 +114,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -109,7 +125,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -117,7 +135,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -126,7 +146,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -135,7 +157,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -144,7 +168,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -152,7 +178,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -161,7 +189,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -170,7 +200,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -179,29 +211,39 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -209,7 +251,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -218,7 +262,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -227,7 +273,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -236,7 +284,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -244,7 +294,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -253,7 +305,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -262,7 +316,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -271,7 +327,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -279,7 +337,9 @@ object typesNs extends js.Object {
     returnType: atBabelTypesLib.atBabelTypesMod.TypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -288,7 +348,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -297,7 +359,9 @@ object typesNs extends js.Object {
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration
   ): atBabelTypesLib.atBabelTypesMod.ArrowFunctionExpression = js.native
   def arrowFunctionExpression(
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.Expression,
     async: scala.Boolean,
     expression: scala.Boolean,
@@ -868,7 +932,9 @@ object typesNs extends js.Object {
       atBabelCoreLib.atBabelCoreLibStrings.get | atBabelCoreLib.atBabelCoreLibStrings.set | atBabelCoreLib.atBabelCoreLibStrings.method | atBabelCoreLib.atBabelCoreLibStrings.constructor
     ],
     key: atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.StringLiteral | atBabelTypesLib.atBabelTypesMod.NumericLiteral | atBabelTypesLib.atBabelTypesMod.Expression,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     computed: js.UndefOr[scala.Boolean],
     _static: js.UndefOr[scala.Boolean | scala.Null],
@@ -895,7 +961,9 @@ object typesNs extends js.Object {
       atBabelCoreLib.atBabelCoreLibStrings.get | atBabelCoreLib.atBabelCoreLibStrings.set | atBabelCoreLib.atBabelCoreLibStrings.method | atBabelCoreLib.atBabelCoreLibStrings.constructor
     ],
     key: atBabelTypesLib.atBabelTypesMod.PrivateName,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     _static: js.UndefOr[scala.Boolean | scala.Null],
     `abstract`: js.UndefOr[scala.Boolean | scala.Null],
@@ -947,20 +1015,20 @@ object typesNs extends js.Object {
   def debuggerStatement(): atBabelTypesLib.atBabelTypesMod.DebuggerStatement = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.Array[atBabelTypesLib.atBabelTypesMod.InterfaceExtends],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.Array[atBabelTypesLib.atBabelTypesMod.InterfaceExtends],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements]
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.Array[atBabelTypesLib.atBabelTypesMod.InterfaceExtends],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements],
@@ -968,20 +1036,20 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.UndefOr[scala.Nothing],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.UndefOr[scala.Nothing],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements]
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: js.UndefOr[scala.Nothing],
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements],
@@ -989,20 +1057,20 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: scala.Null,
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: scala.Null,
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements]
   ): atBabelTypesLib.atBabelTypesMod.DeclareClass = js.native
   def declareClass(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterInstantiation,
+    typeParameters: atBabelTypesLib.atBabelTypesMod.TypeParameterDeclaration,
     _extends: scala.Null,
     body: atBabelTypesLib.atBabelTypesMod.ObjectTypeAnnotation,
     _implements: js.Array[atBabelTypesLib.atBabelTypesMod.ClassImplements],
@@ -1579,25 +1647,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.ForStatement = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1605,7 +1681,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1614,7 +1692,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1623,7 +1703,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1632,25 +1714,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1658,7 +1748,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[atBabelTypesLib.atBabelTypesMod.Identifier | scala.Null],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1668,7 +1760,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1677,7 +1771,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1686,7 +1782,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1695,25 +1793,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1721,7 +1827,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1730,7 +1838,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1739,7 +1849,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionDeclaration(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1748,25 +1860,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionDeclaration = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1774,7 +1894,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1782,7 +1904,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1790,25 +1914,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[atBabelTypesLib.atBabelTypesMod.Identifier | scala.Null],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1817,7 +1949,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1825,7 +1959,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1833,7 +1969,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1841,25 +1979,33 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1867,7 +2013,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -1875,7 +2023,9 @@ object typesNs extends js.Object {
   ): atBabelTypesLib.atBabelTypesMod.FunctionExpression = js.native
   def functionExpression(
     id: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     generator: scala.Boolean,
     async: scala.Boolean,
@@ -2060,6 +2210,30 @@ object typesNs extends js.Object {
       atBabelTypesLib.atBabelTypesMod.ImportSpecifier | atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier
     ],
     source: atBabelTypesLib.atBabelTypesMod.StringLiteral
+  ): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  @JSName("importDeclaration")
+  def importDeclaration_type(
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ImportSpecifier | atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier
+    ],
+    source: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    importKind: atBabelCoreLib.atBabelCoreLibStrings.`type`
+  ): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  @JSName("importDeclaration")
+  def importDeclaration_typeof(
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ImportSpecifier | atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier
+    ],
+    source: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    importKind: atBabelCoreLib.atBabelCoreLibStrings.typeof
+  ): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
+  @JSName("importDeclaration")
+  def importDeclaration_value(
+    specifiers: js.Array[
+      atBabelTypesLib.atBabelTypesMod.ImportSpecifier | atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier | atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier
+    ],
+    source: atBabelTypesLib.atBabelTypesMod.StringLiteral,
+    importKind: atBabelCoreLib.atBabelCoreLibStrings.value
   ): atBabelTypesLib.atBabelTypesMod.ImportDeclaration = js.native
   def importDefaultSpecifier(local: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.ImportDefaultSpecifier = js.native
   def importNamespaceSpecifier(local: atBabelTypesLib.atBabelTypesMod.Identifier): atBabelTypesLib.atBabelTypesMod.ImportNamespaceSpecifier = js.native
@@ -3120,7 +3294,9 @@ object typesNs extends js.Object {
       atBabelCoreLib.atBabelCoreLibStrings.method | atBabelCoreLib.atBabelCoreLibStrings.get | atBabelCoreLib.atBabelCoreLibStrings.set
     ],
     key: js.Any,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     body: atBabelTypesLib.atBabelTypesMod.BlockStatement,
     computed: js.UndefOr[scala.Boolean],
     async: js.UndefOr[scala.Boolean],
@@ -4112,44 +4288,60 @@ object typesNs extends js.Object {
   def tsDeclareFunction(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: atBabelTypesLib.atBabelTypesMod.Identifier,
     typeParameters: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: js.UndefOr[scala.Nothing],
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: js.UndefOr[scala.Nothing],
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: js.UndefOr[scala.Nothing],
     typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: js.UndefOr[atBabelTypesLib.atBabelTypesMod.Identifier | scala.Null],
     typeParameters: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation | atBabelTypesLib.atBabelTypesMod.Noop
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
@@ -4157,7 +4349,9 @@ object typesNs extends js.Object {
     typeParameters: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation | atBabelTypesLib.atBabelTypesMod.Noop,
     async: scala.Boolean
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
@@ -4166,7 +4360,9 @@ object typesNs extends js.Object {
     typeParameters: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation | atBabelTypesLib.atBabelTypesMod.Noop,
     async: scala.Boolean,
     declare: scala.Boolean
@@ -4176,7 +4372,9 @@ object typesNs extends js.Object {
     typeParameters: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     returnType: atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation | atBabelTypesLib.atBabelTypesMod.Noop,
     async: scala.Boolean,
     declare: scala.Boolean,
@@ -4185,31 +4383,47 @@ object typesNs extends js.Object {
   def tsDeclareFunction(
     id: js.UndefOr[scala.Nothing],
     typeParameters: scala.Null,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: scala.Null,
     typeParameters: atBabelTypesLib.atBabelTypesMod.Noop,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: scala.Null,
     typeParameters: atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration,
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareFunction(
     id: scala.Null,
     typeParameters: js.UndefOr[scala.Nothing],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
   ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
-  def tsDeclareFunction(id: scala.Null, typeParameters: scala.Null, params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal]): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
+  def tsDeclareFunction(
+    id: scala.Null,
+    typeParameters: scala.Null,
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ]
+  ): atBabelTypesLib.atBabelTypesMod.TSDeclareFunction = js.native
   def tsDeclareMethod(
     decorators: js.UndefOr[js.Array[atBabelTypesLib.atBabelTypesMod.Decorator] | scala.Null],
     key: atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.StringLiteral | atBabelTypesLib.atBabelTypesMod.NumericLiteral | atBabelTypesLib.atBabelTypesMod.Expression,
     typeParameters: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeParameterDeclaration | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],
-    params: js.Array[atBabelTypesLib.atBabelTypesMod.LVal],
+    params: js.Array[
+      atBabelTypesLib.atBabelTypesMod.Identifier | atBabelTypesLib.atBabelTypesMod.Pattern | atBabelTypesLib.atBabelTypesMod.RestElement | atBabelTypesLib.atBabelTypesMod.TSParameterProperty
+    ],
     returnType: js.UndefOr[
       atBabelTypesLib.atBabelTypesMod.TSTypeAnnotation | atBabelTypesLib.atBabelTypesMod.Noop | scala.Null
     ],

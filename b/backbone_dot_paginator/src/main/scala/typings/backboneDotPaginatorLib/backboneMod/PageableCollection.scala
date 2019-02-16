@@ -15,6 +15,8 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
   var mode: java.lang.String = js.native
   var queryParams: PageableQueryParams = js.native
   var state: PageableState = js.native
+  def fetch(): jqueryLib.JQueryXHR = js.native
+  def fetch(options: backboneLib.backboneMod.BackboneNs.CollectionFetchOptions): jqueryLib.JQueryXHR = js.native
   def getFirstPage(): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def getFirstPage(options: PageableGetPageOptions): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def getLastPage(): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
@@ -31,6 +33,8 @@ class PageableCollection[TModel /* <: backboneLib.backboneMod.Model */] ()
   def getPreviousPage(options: PageableGetPageOptions): jqueryLib.JQueryXHR | PageableCollection[TModel] = js.native
   def hasNextPage(): scala.Boolean = js.native
   def hasPreviousPage(): scala.Boolean = js.native
+  def parse(resp: js.Any): js.Array[_] = js.native
+  def parse(resp: js.Any, options: js.Any): js.Array[_] = js.native
   def parseLinks(resp: js.Any): js.Any = js.native
   def parseLinks(resp: js.Any, options: PageableParseLinksOptions): js.Any = js.native
   def parseRecords(resp: js.Any): js.Array[_] = js.native

@@ -11,6 +11,17 @@ trait `Anon_` extends js.Object {
   var $_Original: jqueryLib.JQueryStatic = js.native
   var Collection: Anon_ClassProperties = js.native
   val Events: backboneLib.backboneMod.BackboneNs.Events = js.native
+  /**
+    * Helper to avoid code repetition in type declarations.
+    * Backbone.Events cannot be extended, hence a separate abstract
+    * class with a different name. Both classes and interfaces can
+    * extend from this helper class to reuse the signatures.
+    *
+    * For class type declarations that already extend another base
+    * class, and for actual class definitions, please see the
+    * Events_* interfaces above.
+    */
+  var EventsMixin: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.EventsMixin] = js.native
   var History: Anon_Started = js.native
   var Model: Anon_Attributes = js.native
   var ModelBase: org.scalablytyped.runtime.Instantiable0[backboneLib.backboneMod.BackboneNs.ModelBase] = js.native

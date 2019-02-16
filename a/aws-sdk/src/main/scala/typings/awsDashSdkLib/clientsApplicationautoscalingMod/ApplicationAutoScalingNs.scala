@@ -28,7 +28,7 @@ object ApplicationAutoScalingNs extends js.Object {
   
   trait CustomizedMetricSpecification extends js.Object {
     /**
-      * The dimensions of the metric. 
+      * The dimensions of the metric.  Conditional: If you published your metric with dimensions, you must specify the same dimensions in your scaling policy.
       */
     var Dimensions: js.UndefOr[MetricDimensions] = js.undefined
     /**
@@ -78,7 +78,7 @@ object ApplicationAutoScalingNs extends js.Object {
     /**
       * The scalable dimension. This string consists of the service namespace, resource type, and scaling property.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot fleet request.    elasticmapreduce:instancegroup:InstanceCount - The instance count of an EMR Instance Group.    appstream:fleet:DesiredCapacity - The desired capacity of an AppStream 2.0 fleet.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.    sagemaker:variant:DesiredInstanceCount - The number of EC2 instances for an Amazon SageMaker model endpoint variant.    custom-resource:ResourceType:Property - The scalable dimension for a custom resource provided by your own application or service.  
       */
-    var ScalableDimension: js.UndefOr[ScalableDimension] = js.undefined
+    var ScalableDimension: ScalableDimension
     /**
       * The name of the scheduled action.
       */
@@ -300,14 +300,14 @@ object ApplicationAutoScalingNs extends js.Object {
       */
     var StepScalingPolicyConfiguration: js.UndefOr[StepScalingPolicyConfiguration] = js.undefined
     /**
-      * A target tracking policy. This parameter is required if you are creating a policy and the policy type is TargetTrackingScaling.
+      * A target tracking scaling policy. Includes support for predefined or customized metrics. This parameter is required if you are creating a policy and the policy type is TargetTrackingScaling.
       */
     var TargetTrackingScalingPolicyConfiguration: js.UndefOr[TargetTrackingScalingPolicyConfiguration] = js.undefined
   }
   
   trait PutScalingPolicyResponse extends js.Object {
     /**
-      * The CloudWatch alarms created for the target tracking policy.
+      * The CloudWatch alarms created for the target tracking scaling policy.
       */
     var Alarms: js.UndefOr[Alarms] = js.undefined
     /**
@@ -326,9 +326,9 @@ object ApplicationAutoScalingNs extends js.Object {
       */
     var ResourceId: ResourceIdMaxLen1600
     /**
-      * The scalable dimension. This parameter is required if you are creating a scheduled action. This string consists of the service namespace, resource type, and scaling property.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot fleet request.    elasticmapreduce:instancegroup:InstanceCount - The instance count of an EMR Instance Group.    appstream:fleet:DesiredCapacity - The desired capacity of an AppStream 2.0 fleet.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.    sagemaker:variant:DesiredInstanceCount - The number of EC2 instances for an Amazon SageMaker model endpoint variant.    custom-resource:ResourceType:Property - The scalable dimension for a custom resource provided by your own application or service.  
+      * The scalable dimension. This string consists of the service namespace, resource type, and scaling property.    ecs:service:DesiredCount - The desired task count of an ECS service.    ec2:spot-fleet-request:TargetCapacity - The target capacity of a Spot fleet request.    elasticmapreduce:instancegroup:InstanceCount - The instance count of an EMR Instance Group.    appstream:fleet:DesiredCapacity - The desired capacity of an AppStream 2.0 fleet.    dynamodb:table:ReadCapacityUnits - The provisioned read capacity for a DynamoDB table.    dynamodb:table:WriteCapacityUnits - The provisioned write capacity for a DynamoDB table.    dynamodb:index:ReadCapacityUnits - The provisioned read capacity for a DynamoDB global secondary index.    dynamodb:index:WriteCapacityUnits - The provisioned write capacity for a DynamoDB global secondary index.    rds:cluster:ReadReplicaCount - The count of Aurora Replicas in an Aurora DB cluster. Available for Aurora MySQL-compatible edition and Aurora PostgreSQL-compatible edition.    sagemaker:variant:DesiredInstanceCount - The number of EC2 instances for an Amazon SageMaker model endpoint variant.    custom-resource:ResourceType:Property - The scalable dimension for a custom resource provided by your own application or service.  
       */
-    var ScalableDimension: js.UndefOr[ScalableDimension] = js.undefined
+    var ScalableDimension: ScalableDimension
     /**
       * The new minimum and maximum capacity. You can set both values or just one. During the scheduled time, if the current capacity is below the minimum capacity, Application Auto Scaling scales out to the minimum capacity. If the current capacity is above the maximum capacity, Application Auto Scaling scales in to the maximum capacity.
       */
@@ -355,11 +355,11 @@ object ApplicationAutoScalingNs extends js.Object {
   
   trait RegisterScalableTargetRequest extends js.Object {
     /**
-      * The maximum value to scale to in response to a scale out event. This parameter is required to register a scalable target.
+      * The maximum value to scale to in response to a scale-out event. This parameter is required to register a scalable target.
       */
     var MaxCapacity: js.UndefOr[ResourceCapacity] = js.undefined
     /**
-      * The minimum value to scale to in response to a scale in event. This parameter is required to register a scalable target.
+      * The minimum value to scale to in response to a scale-in event. This parameter is required to register a scalable target.
       */
     var MinCapacity: js.UndefOr[ResourceCapacity] = js.undefined
     /**
@@ -388,11 +388,11 @@ object ApplicationAutoScalingNs extends js.Object {
       */
     var CreationTime: TimestampType
     /**
-      * The maximum value to scale to in response to a scale out event.
+      * The maximum value to scale to in response to a scale-out event.
       */
     var MaxCapacity: ResourceCapacity
     /**
-      * The minimum value to scale to in response to a scale in event.
+      * The minimum value to scale to in response to a scale-in event.
       */
     var MinCapacity: ResourceCapacity
     /**
@@ -509,7 +509,7 @@ object ApplicationAutoScalingNs extends js.Object {
       */
     var StepScalingPolicyConfiguration: js.UndefOr[StepScalingPolicyConfiguration] = js.undefined
     /**
-      * A target tracking policy.
+      * A target tracking scaling policy.
       */
     var TargetTrackingScalingPolicyConfiguration: js.UndefOr[TargetTrackingScalingPolicyConfiguration] = js.undefined
   }
@@ -578,15 +578,15 @@ object ApplicationAutoScalingNs extends js.Object {
       */
     var AdjustmentType: js.UndefOr[AdjustmentType] = js.undefined
     /**
-      * The amount of time, in seconds, after a scaling activity completes where previous trigger-related scaling activities can influence future scaling events. For scale out policies, while the cooldown period is in effect, the capacity that has been added by the previous scale out event that initiated the cooldown is calculated as part of the desired capacity for the next scale out. The intention is to continuously (but not excessively) scale out. For example, an alarm triggers a step scaling policy to scale out an Amazon ECS service by 2 tasks, the scaling activity completes successfully, and a cooldown period of 5 minutes starts. During the Cooldown period, if the alarm triggers the same policy again but at a more aggressive step adjustment to scale out the service by 3 tasks, the 2 tasks that were added in the previous scale out event are considered part of that capacity and only 1 additional task is added to the desired count. For scale in policies, the cooldown period is used to block subsequent scale in requests until it has expired. The intention is to scale in conservatively to protect your application's availability. However, if another alarm triggers a scale out policy during the cooldown period after a scale-in, Application Auto Scaling scales out your scalable target immediately.
+      * The amount of time, in seconds, after a scaling activity completes where previous trigger-related scaling activities can influence future scaling events. For scale-out policies, while the cooldown period is in effect, the capacity that has been added by the previous scale-out event that initiated the cooldown is calculated as part of the desired capacity for the next scale out. The intention is to continuously (but not excessively) scale out. For example, an alarm triggers a step scaling policy to scale out an Amazon ECS service by 2 tasks, the scaling activity completes successfully, and a cooldown period of 5 minutes starts. During the cooldown period, if the alarm triggers the same policy again but at a more aggressive step adjustment to scale out the service by 3 tasks, the 2 tasks that were added in the previous scale-out event are considered part of that capacity and only 1 additional task is added to the desired count. For scale-in policies, the cooldown period is used to block subsequent scale-in requests until it has expired. The intention is to scale in conservatively to protect your application's availability. However, if another alarm triggers a scale-out policy during the cooldown period after a scale-in, Application Auto Scaling scales out your scalable target immediately.
       */
     var Cooldown: js.UndefOr[Cooldown] = js.undefined
     /**
-      * The aggregation type for the CloudWatch metrics. Valid values are Minimum, Maximum, and Average.
+      * The aggregation type for the CloudWatch metrics. Valid values are Minimum, Maximum, and Average. If the aggregation type is null, the value is treated as Average.
       */
     var MetricAggregationType: js.UndefOr[MetricAggregationType] = js.undefined
     /**
-      * The minimum number to adjust your scalable dimension as a result of a scaling activity. If the adjustment type is PercentChangeInCapacity, the scaling policy changes the scalable dimension of the scalable target by this amount.
+      * The minimum number to adjust your scalable dimension as a result of a scaling activity. If the adjustment type is PercentChangeInCapacity, the scaling policy changes the scalable dimension of the scalable target by this amount. For example, suppose that you create a step scaling policy to scale out an Amazon ECS service by 25 percent and you specify a MinAdjustmentMagnitude of 2. If the service has 4 tasks and the scaling policy is performed, 25 percent of 4 is 1. However, because you specified a MinAdjustmentMagnitude of 2, Application Auto Scaling scales out the service by 2 tasks.
       */
     var MinAdjustmentMagnitude: js.UndefOr[MinAdjustmentMagnitude] = js.undefined
     /**
@@ -597,23 +597,23 @@ object ApplicationAutoScalingNs extends js.Object {
   
   trait TargetTrackingScalingPolicyConfiguration extends js.Object {
     /**
-      * A customized metric.
+      * A customized metric. You can specify either a predefined metric or a customized metric.
       */
     var CustomizedMetricSpecification: js.UndefOr[CustomizedMetricSpecification] = js.undefined
     /**
-      * Indicates whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won't remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is false.
+      * Indicates whether scale in by the target tracking scaling policy is disabled. If the value is true, scale in is disabled and the target tracking scaling policy won't remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking scaling policy can remove capacity from the scalable resource. The default value is false.
       */
     var DisableScaleIn: js.UndefOr[DisableScaleIn] = js.undefined
     /**
-      * A predefined metric.
+      * A predefined metric. You can specify either a predefined metric or a customized metric.
       */
     var PredefinedMetricSpecification: js.UndefOr[PredefinedMetricSpecification] = js.undefined
     /**
-      * The amount of time, in seconds, after a scale in activity completes before another scale in activity can start. The cooldown period is used to block subsequent scale in requests until it has expired. The intention is to scale in conservatively to protect your application's availability. However, if another alarm triggers a scale out policy during the cooldown period after a scale-in, Application Auto Scaling scales out your scalable target immediately.
+      * The amount of time, in seconds, after a scale-in activity completes before another scale in activity can start. The cooldown period is used to block subsequent scale-in requests until it has expired. The intention is to scale in conservatively to protect your application's availability. However, if another alarm triggers a scale-out policy during the cooldown period after a scale-in, Application Auto Scaling scales out your scalable target immediately.
       */
     var ScaleInCooldown: js.UndefOr[Cooldown] = js.undefined
     /**
-      * The amount of time, in seconds, after a scale out activity completes before another scale out activity can start. While the cooldown period is in effect, the capacity that has been added by the previous scale out event that initiated the cooldown is calculated as part of the desired capacity for the next scale out. The intention is to continuously (but not excessively) scale out.
+      * The amount of time, in seconds, after a scale-out activity completes before another scale-out activity can start. While the cooldown period is in effect, the capacity that has been added by the previous scale-out event that initiated the cooldown is calculated as part of the desired capacity for the next scale out. The intention is to continuously (but not excessively) scale out.
       */
     var ScaleOutCooldown: js.UndefOr[Cooldown] = js.undefined
     /**
@@ -789,7 +789,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeScheduledActionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+      * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy. Multiple scaling policies can be in force at the same time for the same scalable target. You can have one or more target tracking scaling policies, one or more step scaling policies, or both. However, there is a chance that multiple policies could conflict, instructing the scalable target to scale out or in at the same time. Application Auto Scaling gives precedence to the policy that provides the largest capacity for both scale in and scale out. For example, if one policy increases capacity by 3, another policy increases capacity by 200 percent, and the current capacity is 10, Application Auto Scaling uses the policy with the highest calculated capacity (200% of 10 = 20) and scales out to 30.  Learn more about how to work with scaling policies in the Application Auto Scaling User Guide.
       */
     def putScalingPolicy(): awsDashSdkLib.libRequestMod.Request[PutScalingPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putScalingPolicy(
@@ -800,7 +800,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutScalingPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy.
+      * Creates or updates a policy for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scaling policy applies to the scalable target identified by those three attributes. You cannot create a scaling policy until you have registered the resource as a scalable target using RegisterScalableTarget. To update a policy, specify its policy name and the parameters that you want to change. Any parameters that you don't specify are not changed by this update request. You can view the scaling policies for a service namespace using DescribeScalingPolicies. If you are no longer using a scaling policy, you can delete it using DeleteScalingPolicy. Multiple scaling policies can be in force at the same time for the same scalable target. You can have one or more target tracking scaling policies, one or more step scaling policies, or both. However, there is a chance that multiple policies could conflict, instructing the scalable target to scale out or in at the same time. Application Auto Scaling gives precedence to the policy that provides the largest capacity for both scale in and scale out. For example, if one policy increases capacity by 3, another policy increases capacity by 200 percent, and the current capacity is 10, Application Auto Scaling uses the policy with the highest calculated capacity (200% of 10 = 20) and scales out to 30.  Learn more about how to work with scaling policies in the Application Auto Scaling User Guide.
       */
     def putScalingPolicy(params: PutScalingPolicyRequest): awsDashSdkLib.libRequestMod.Request[PutScalingPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putScalingPolicy(
@@ -812,7 +812,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutScalingPolicyResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+      * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction. Learn more about how to work with scheduled actions in the Application Auto Scaling User Guide.
       */
     def putScheduledAction(): awsDashSdkLib.libRequestMod.Request[PutScheduledActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putScheduledAction(
@@ -823,7 +823,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutScheduledActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction.
+      * Creates or updates a scheduled action for an Application Auto Scaling scalable target. Each scalable target is identified by a service namespace, resource ID, and scalable dimension. A scheduled action applies to the scalable target identified by those three attributes. You cannot create a scheduled action until you have registered the resource as a scalable target using RegisterScalableTarget.  To update an action, specify its name and the parameters that you want to change. If you don't specify start and end times, the old values are deleted. Any other parameters that you don't specify are not changed by this update request. You can view the scheduled actions using DescribeScheduledActions. If you are no longer using a scheduled action, you can delete it using DeleteScheduledAction. Learn more about how to work with scheduled actions in the Application Auto Scaling User Guide.
       */
     def putScheduledAction(params: PutScheduledActionRequest): awsDashSdkLib.libRequestMod.Request[PutScheduledActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putScheduledAction(
@@ -835,7 +835,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutScheduledActionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale in and scale out. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+      * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
       */
     def registerScalableTarget(): awsDashSdkLib.libRequestMod.Request[RegisterScalableTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def registerScalableTarget(
@@ -846,7 +846,7 @@ object ApplicationAutoScalingNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[RegisterScalableTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale in and scale out. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
+      * Registers or updates a scalable target. A scalable target is a resource that Application Auto Scaling can scale out and scale in. Each scalable target has a resource ID, scalable dimension, and namespace, as well as values for minimum and maximum capacity.  After you register a scalable target, you do not need to register it again to use other Application Auto Scaling operations. To see which resources have been registered, use DescribeScalableTargets. You can also view the scaling policies for a service namespace using DescribeScalableTargets.  If you no longer need a scalable target, you can deregister it using DeregisterScalableTarget.
       */
     def registerScalableTarget(params: RegisterScalableTargetRequest): awsDashSdkLib.libRequestMod.Request[RegisterScalableTargetResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def registerScalableTarget(

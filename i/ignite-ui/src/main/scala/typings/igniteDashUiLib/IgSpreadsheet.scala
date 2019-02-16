@@ -65,6 +65,11 @@ trait IgSpreadsheet
   	 */
   var areHeadersVisible: js.UndefOr[scala.Boolean] = js.undefined
   /**
+  	 * Returns or sets an object with brushes for areas of the spreadsheet. The property name should be an item in the [SpreadsheetResourceId enumeration](ig.spreadsheet.SpreadsheetResourceId) and the property value a string representing a brush. These brushes override any css styling for the associated object.
+  	 *
+  	 */
+  var brushes: js.UndefOr[IgSpreadsheetBrushes] = js.undefined
+  /**
   	 * Invoked when the Spreadsheet has started in-place editing of the activeCell.
   	 */
   var editModeEntered: js.UndefOr[EditModeEnteredEvent] = js.undefined

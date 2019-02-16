@@ -32,6 +32,8 @@ class ApplicationRef () extends js.Object {
   val components: js.Array[atAngularCoreLib.srcLinkerComponentUnderscoreFactoryMod.ComponentRef[_]] = js.native
   /**
     * Returns an Observable that indicates when the application is stable or unstable.
+    *
+    * @see  [Usage notes](#is-stable-examples) for examples and caveats when using this API.
     */
   val isStable: rxjsLib.rxjsMod.Observable[scala.Boolean] = js.native
   /**

@@ -217,6 +217,7 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     */
   @JSName("emptyRegions")
   def emptyRegions_MView(): js.Any = js.native
+  def events(): EventsHash = js.native
   /**
     * Lookup the selector string within the DOM node for context. The
     * optional context argument will come in as a DOM Node reference to run
@@ -382,6 +383,12 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
   @JSName("removeRegions")
   def removeRegions_MView(): js.Any = js.native
   /**
+    * Renders the view. Given a template this method will build your HTML
+    * from that template, mixing in model information and any extra
+    * template context.
+    */
+  def render(): View[TModel] = js.native
+  /**
     * Remove oldEl from the DOM and put newEl in its place.
     */
   @JSName("replaceEl")
@@ -402,6 +409,12 @@ class View[TModel /* <: backboneLib.backboneMod.Model */] ()
     * data.
     */
   def serializeModel(): js.Any = js.native
+  /**
+    * Rebind this View to a new element. Overriding Backbone.View’s
+    * setElement to handle if an element was previously defined.
+    * (undocumented)
+    */
+  def setElement(element: js.Any): View[TModel] = js.native
   /**
     * Replace the contents of el with the HTML string of html. Unlike other
     * DOM functions, this takes a literal string for its second argument.

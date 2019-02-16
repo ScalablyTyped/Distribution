@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "bootstrap_dot_v3_dot_datetimepicker"
-version := "4.17-dt-20180214Z-d852c8"
+version := "4.17-dt-20190213Z-d852c8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -43,7 +43,12 @@ object rawNs extends js.Object {
   
   @js.native
   class Query ()
-    extends pgLib.pgMod.Query
+    extends pgLib.pgMod.Query {
+    def this(queryTextOrConfig: java.lang.String) = this()
+    def this(queryTextOrConfig: pgLib.pgMod.QueryConfig) = this()
+    def this(queryTextOrConfig: java.lang.String, values: js.Array[_]) = this()
+    def this(queryTextOrConfig: pgLib.pgMod.QueryConfig, values: js.Array[_]) = this()
+  }
   
   val defaults: pgLib.pgMod.Defaults with pgLib.pgMod.ClientConfig = js.native
   val native: pgLib.Anon_Client | scala.Null = js.native

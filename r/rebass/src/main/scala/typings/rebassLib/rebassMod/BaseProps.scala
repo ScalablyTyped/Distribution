@@ -5,9 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseProps[C]
-  extends reactLib.reactMod.ReactNs.ClassAttributes[C] {
-  var as: js.UndefOr[js.Any] = js.undefined
-  var className: js.UndefOr[java.lang.String] = js.undefined
+trait BaseProps
+  extends reactLib.reactMod.ReactNs.Props[js.Any] {
+  var as: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
+  var css: js.UndefOr[styledDashComponentsLib.styledDashComponentsMod.CSSObject] = js.undefined
 }
 

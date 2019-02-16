@@ -9,13 +9,16 @@ import scala.scalajs.js.annotation._
 trait HostDecorator
   extends org.scalablytyped.runtime.Instantiable0[Host] {
   /**
-    * A constructor parameter decorator that tells the DI framework
-    * to retrieve a dependency from any injector until
-    * reaching the host element of the current component.
+    * A parameter decorator on a view-provider parameter of a class constructor
+    * that tells the DI framework to resolve the view by checking injectors of child
+    * elements, and stop when reaching the host element of the current component.
     *
-    * @see ["Dependency Injection Guide"](guide/dependency-injection).
+    * For an extended example, see
+    * ["Dependency Injection Guide"](guide/dependency-injection-in-action#optional).
     *
     * @usageNotes
+    *
+    * The following shows use with the `@Optional` decorator, and allows for a null result.
     *
     * {@example core/di/ts/metadata_spec.ts region='Host'}
     */

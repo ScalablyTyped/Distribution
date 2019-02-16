@@ -524,11 +524,11 @@ object IotNs extends js.Object {
   
   trait BehaviorCriteria extends js.Object {
     /**
-      * The operator that relates the thing measured (metric) to the criteria (value).
+      * The operator that relates the thing measured (metric) to the criteria (containing a value.
       */
     var comparisonOperator: js.UndefOr[ComparisonOperator] = js.undefined
     /**
-      * Use this to specify the period of time over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT).
+      * Use this to specify the time duration over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT). 
       */
     var durationSeconds: js.UndefOr[DurationSeconds] = js.undefined
     /**
@@ -1269,6 +1269,10 @@ object IotNs extends js.Object {
       * The name you want to give to the scheduled audit. (Max. 128 chars)
       */
     var scheduledAuditName: ScheduledAuditName
+    /**
+      * Metadata which can be used to manage the scheduled audit.
+      */
+    var tags: js.UndefOr[TagList] = js.undefined
     /**
       * Which checks are performed during the scheduled audit. Checks must be enabled for your account. (Use DescribeAccountAuditConfiguration to see the list of all checks including those that are enabled or UpdateAccountAuditConfiguration to select which checks are enabled.)
       */
@@ -2741,11 +2745,11 @@ object IotNs extends js.Object {
       */
     var comment: js.UndefOr[Comment] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job was completed.
+      * The time, in seconds since the epoch, when the job was completed.
       */
     var completedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job was created.
+      * The time, in seconds since the epoch, when the job was created.
       */
     var createdAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -2773,7 +2777,7 @@ object IotNs extends js.Object {
       */
     var jobProcessDetails: js.UndefOr[JobProcessDetails] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job was last updated.
+      * The time, in seconds since the epoch, when the job was last updated.
       */
     var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -2820,15 +2824,15 @@ object IotNs extends js.Object {
       */
     var jobId: js.UndefOr[JobId] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution was last updated.
+      * The time, in seconds since the epoch, when the job execution was last updated.
       */
     var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution was queued.
+      * The time, in seconds since the epoch, when the job execution was queued.
       */
     var queuedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution started.
+      * The time, in seconds since the epoch, when the job execution started.
       */
     var startedAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -2862,15 +2866,15 @@ object IotNs extends js.Object {
       */
     var executionNumber: js.UndefOr[ExecutionNumber] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution was last updated.
+      * The time, in seconds since the epoch, when the job execution was last updated.
       */
     var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution was queued.
+      * The time, in seconds since the epoch, when the job execution was queued.
       */
     var queuedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job execution started.
+      * The time, in seconds since the epoch, when the job execution started.
       */
     var startedAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -2953,11 +2957,11 @@ object IotNs extends js.Object {
   
   trait JobSummary extends js.Object {
     /**
-      * The time, in milliseconds since the epoch, when the job completed.
+      * The time, in seconds since the epoch, when the job completed.
       */
     var completedAt: js.UndefOr[DateType] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job was created.
+      * The time, in seconds since the epoch, when the job was created.
       */
     var createdAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -2969,7 +2973,7 @@ object IotNs extends js.Object {
       */
     var jobId: js.UndefOr[JobId] = js.undefined
     /**
-      * The time, in milliseconds since the epoch, when the job was last updated.
+      * The time, in seconds since the epoch, when the job was last updated.
       */
     var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
     /**
@@ -4871,7 +4875,7 @@ object IotNs extends js.Object {
   
   trait SnsAction extends js.Object {
     /**
-      * (Optional) The message format of the message to publish. Accepted values are "JSON" and "RAW". The default value of the attribute is "RAW". SNS uses this setting to determine if the payload should be parsed and relevant platform-specific bits of the payload should be extracted. To read more about SNS message formats, see http://docs.aws.amazon.com/sns/latest/dg/json-formats.html refer to their official documentation.
+      * (Optional) The message format of the message to publish. Accepted values are "JSON" and "RAW". The default value of the attribute is "RAW". SNS uses this setting to determine if the payload should be parsed and relevant platform-specific bits of the payload should be extracted. To read more about SNS message formats, see https://docs.aws.amazon.com/sns/latest/dg/json-formats.html refer to their official documentation.
       */
     var messageFormat: js.UndefOr[MessageFormat] = js.undefined
     /**

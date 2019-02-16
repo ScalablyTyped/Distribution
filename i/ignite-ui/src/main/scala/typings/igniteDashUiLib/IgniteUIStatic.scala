@@ -127,6 +127,42 @@ trait IgniteUIStatic extends js.Object {
   var igTemplating: org.scalablytyped.runtime.Instantiable1[/* regExp */ IgTemplatingRegExp, igniteDashUiLib.InfragisticsNs.igTemplating] = js.native
   var regional: js.UndefOr[js.Any] = js.native
   var util: js.UndefOr[js.Any] = js.native
+  def formatter(
+    `val`: java.lang.String,
+    `type`: java.lang.String,
+    format: java.lang.String,
+    notTemplate: js.UndefOr[scala.Boolean],
+    enableUTCDates: js.UndefOr[scala.Boolean],
+    dateOffset: js.UndefOr[js.Any],
+    displayStyle: js.UndefOr[java.lang.String],
+    labelText: js.UndefOr[java.lang.String],
+    tabIndex: js.UndefOr[scala.Double | java.lang.String],
+    reg: js.UndefOr[js.Any]
+  ): java.lang.String = js.native
+  def formatter(
+    `val`: scala.Double,
+    `type`: java.lang.String,
+    format: java.lang.String,
+    notTemplate: js.UndefOr[scala.Boolean],
+    enableUTCDates: js.UndefOr[scala.Boolean],
+    dateOffset: js.UndefOr[js.Any],
+    displayStyle: js.UndefOr[java.lang.String],
+    labelText: js.UndefOr[java.lang.String],
+    tabIndex: js.UndefOr[scala.Double | java.lang.String],
+    reg: js.UndefOr[js.Any]
+  ): java.lang.String = js.native
+  def formatter(
+    `val`: stdLib.Date,
+    `type`: java.lang.String,
+    format: java.lang.String,
+    notTemplate: js.UndefOr[scala.Boolean],
+    enableUTCDates: js.UndefOr[scala.Boolean],
+    dateOffset: js.UndefOr[js.Any],
+    displayStyle: js.UndefOr[java.lang.String],
+    labelText: js.UndefOr[java.lang.String],
+    tabIndex: js.UndefOr[scala.Double | java.lang.String],
+    reg: js.UndefOr[js.Any]
+  ): java.lang.String = js.native
   def loader(): IgLoader = js.native
   def loader(callback: js.Function): IgLoader = js.native
   def loader(options: IgLoaderSettings): IgLoader = js.native

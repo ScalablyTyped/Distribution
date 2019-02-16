@@ -13,7 +13,7 @@ trait ObjectMethod extends BaseNode {
   var generator: scala.Boolean
   var key: js.Any
   var kind: atBabelTypesLib.atBabelTypesLibStrings.method | atBabelTypesLib.atBabelTypesLibStrings.get | atBabelTypesLib.atBabelTypesLibStrings.set
-  var params: js.Array[LVal]
+  var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TypeAnnotation | TSTypeAnnotation | Noop | scala.Null
   var typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | scala.Null
   @JSName("type")

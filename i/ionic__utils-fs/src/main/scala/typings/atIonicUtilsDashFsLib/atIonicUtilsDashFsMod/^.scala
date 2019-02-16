@@ -574,6 +574,15 @@ object ^ extends js.Object {
   def futimesSync(fd: scala.Double, atime: stdLib.Date, mtime: stdLib.Date): scala.Unit = js.native
   def getFileChecksum(filePath: java.lang.String): js.Promise[java.lang.String] = js.native
   def getFileChecksums(p: java.lang.String): js.Promise[js.Tuple2[java.lang.String, js.UndefOr[java.lang.String]]] = js.native
+  def getFileTree[RE, DE](dir: java.lang.String): js.Promise[
+    atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.RegularFileNode with (RE | atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.DirectoryNode) with DE
+  ] = js.native
+  def getFileTree[RE, DE](
+    dir: java.lang.String,
+    hasOnErrorOnFileNodeOnDirectoryNodeWalkerOptions: atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.GetFileTreeOptions[RE, DE]
+  ): js.Promise[
+    atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.RegularFileNode with (RE | atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.DirectoryNode) with DE
+  ] = js.native
   /**
     * Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1558,7 +1567,7 @@ object ^ extends js.Object {
   def readdirp(dir: java.lang.String): js.Promise[js.Array[java.lang.String]] = js.native
   def readdirp(
     dir: java.lang.String,
-    hasFilterWalkerOptions: atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.ReaddirPOptions
+    hasFilterOnErrorWalkerOptions: atIonicUtilsDashFsLib.atIonicUtilsDashFsMod.ReaddirPOptions
   ): js.Promise[js.Array[java.lang.String]] = js.native
   def readlink(path: java.lang.String): js.Promise[java.lang.String] = js.native
   def readlink(

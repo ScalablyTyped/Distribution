@@ -1,5 +1,5 @@
 ```
-// Type definitions for Google Google People API v1 1.0
+// Type definitions for non-npm package Google Google People API v1 1.0
 // Project: https://developers.google.com/people/
 // Definitions by: Bolisov Alexey <https://github.com/Bolisov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "backbone"
-version := "1.3.3-dt-20181124Z-bab0eb"
+version := "1.3.3-dt-20190215Z-303a1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

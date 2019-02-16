@@ -51,6 +51,11 @@ trait IgZoomSlider
   var minZoomWidth: js.UndefOr[scala.Double] = js.undefined
   var orientation: js.UndefOr[java.lang.String] = js.undefined
   var panTransitionDuration: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the scaling value used to affect the pixel density of the control.
+  	 * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
+  	 * to appear blurry.
+  	 */
   var pixelScalingRatio: js.UndefOr[scala.Double] = js.undefined
   var propertyChanged: js.UndefOr[PropertyChangedEvent] = js.undefined
   var rangeThumbBrush: js.UndefOr[js.Any] = js.undefined
@@ -67,6 +72,9 @@ trait IgZoomSlider
   	 */
   var width: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var windowRect: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Occurs just after the current ZoomSlider's window rectangle is changed.
+  	 */
   var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "knex-postgis"
-version := "0.2-dt-20180712Z-01f6f0"
+version := "0.2-dt-20180712Z-39d0f7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,8 +8,8 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-f01776",
   "org.scalablytyped" %%% "geojson" % "7946.0-dt-20190212Z-038c51",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-a37e52",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-7b0792",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

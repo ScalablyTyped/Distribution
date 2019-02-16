@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "facebook-instant-games"
-version := "6.2-dt-20180523Z-991b67"
+version := "6.2-dt-20190213Z-991b67"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

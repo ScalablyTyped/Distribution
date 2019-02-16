@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20180712Z-aeff1b"
+version := "4.0-dt-20180712Z-7ad7c9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,18 +12,18 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190126Z-804551",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2cff45",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-89a6f2",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-6d048a",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-5ad5cc",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-455260",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190131Z-6a437a",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-a37e52",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-7b0792",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-b2cae6",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20180214Z-086af5",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
-  "org.scalablytyped" %%% "objection" % "1.5.3-45f938",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
+  "org.scalablytyped" %%% "objection" % "1.5.3-89379a",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20180214Z-7174cc",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-0009b8",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-34d89b",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-fee092",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-194416")
 publishArtifact in packageDoc := false

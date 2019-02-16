@@ -204,7 +204,10 @@ object MeteorNs extends js.Object {
   ): scala.Unit = js.native
   def onConnection(callback: js.Function): scala.Unit = js.native
   /** Connection **/
-  def publish(name: java.lang.String, func: js.Function): scala.Unit = js.native
+  def publish(
+    name: java.lang.String,
+    func: js.ThisFunction1[/* this */ meteorLib.meteorMod.Subscription, /* repeated */ js.Any, scala.Unit]
+  ): scala.Unit = js.native
   /** Event **/
   /** Connection **/
   def reconnect(): scala.Unit = js.native

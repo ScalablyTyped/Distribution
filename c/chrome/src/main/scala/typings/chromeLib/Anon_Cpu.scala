@@ -16,6 +16,15 @@ trait Anon_Cpu extends js.Object {
     */
   val cpuNs: Anon_CallbackGetInfo
   ////////////////////
+  // System Display //
+  ////////////////////
+  /**
+    * Use the system.display API to query display metadata.
+    * Permissions: 'system.display'
+    * @since Chrome 30.
+    */
+  val displayNs: Anon_Bounds
+  ////////////////////
   // System Memory
   ////////////////////
   /**

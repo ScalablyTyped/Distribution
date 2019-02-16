@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "arcgis-rest-api"
-version := "10.4-dt-20180214Z-a8014b"
+version := "10.4-dt-20190213Z-a8014b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

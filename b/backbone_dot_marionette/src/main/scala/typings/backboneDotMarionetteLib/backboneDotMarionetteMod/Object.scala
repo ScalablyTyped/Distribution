@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 - backboneDotMarionetteLib.backboneDotMarionetteMod.RadioMixin because var conflicts: bindEvents, unbindEvents. Inlined getChannel, bindRequests, unbindRequests */ @JSImport("backbone.marionette", "Object")
 @js.native
 class Object ()
-  extends CommonMixin
+  extends backboneLib.backboneMod.EventsMixin
+     with CommonMixin
      with backboneLib.backboneMod.BackboneNs.Events {
   def this(options: ObjectOptions) = this()
   /* CompleteClass */
@@ -92,6 +93,10 @@ class Object ()
     */
   @JSName("normalizeMethods")
   def normalizeMethods_MObject[T](hash: js.Any): T = js.native
+  /**
+    * Faulty overgeneralization of Backbone.Events.on, for historical
+    * reasons.
+    */
   def on(eventName: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any): js.Any = js.native
   def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native

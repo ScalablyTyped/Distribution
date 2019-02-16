@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "htmlbars-inline-precompile"
-version := "1.0-dt-20180214Z-b3e653"
+version := "1.0-dt-20190213Z-b3e653"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

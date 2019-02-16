@@ -20,9 +20,10 @@ trait ItemRead extends Item {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     *
     * **Note**: Certain types of files are blocked by Outlook due to potential security issues and are therefore not returned. 
     * For more information, see 
@@ -41,9 +42,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     * 
     * The itemClass property specifies the message class of the selected item. The following are the default message classes for the message or 
     * appointment item.
@@ -83,9 +85,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   var itemId: java.lang.String = js.native
   /**
@@ -98,9 +101,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   var normalizedSubject: java.lang.String = js.native
   /**
@@ -114,9 +118,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   var subject: java.lang.String = js.native
   /**
@@ -136,16 +141,23 @@ trait ItemRead extends Item {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     *
     * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
-    *  OR
-    * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function
+    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     */
   def displayReplyAllForm(formData: java.lang.String): scala.Unit = js.native
+  def displayReplyAllForm(
+    formData: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def displayReplyAllForm(formData: ReplyFormData): scala.Unit = js.native
+  def displayReplyAllForm(formData: ReplyFormData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
@@ -163,16 +175,23 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read/td></tr>
+    * </table>
     *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
-    *
-    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB.
-    * OR
-    * An {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param formData - A string that contains text and HTML and that represents the body of the reply form. The string is limited to 32 KB
+    *                   OR an {@link Office.ReplyFormData} object that contains body or attachment data and a callback function.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter, 
+    *                asyncResult, which is an Office.AsyncResult object.
     */
   def displayReplyForm(formData: java.lang.String): scala.Unit = js.native
+  def displayReplyForm(
+    formData: java.lang.String,
+    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def displayReplyForm(formData: ReplyFormData): scala.Unit = js.native
+  def displayReplyForm(formData: ReplyFormData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   /**
     * Gets the entities found in the selected item's body.
     *
@@ -182,9 +201,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   def getEntities(): Entities = js.native
   /**
@@ -202,9 +222,10 @@ trait ItemRead extends Item {
     * Otherwise, the type of the objects in the returned array depends on the type of entity requested in the entityType parameter.
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    </table>
     * 
     * While the minimum permission level to use this method is Restricted, some entity types require ReadItem to access, as specified in the 
     * following table.
@@ -213,7 +234,7 @@ trait ItemRead extends Item {
     *   <tr>
     *     <th>Value of entityType</th>
     *     <th>Type of objects in returned array</th>
-    *     <th>Required Permission Leve</th>
+    *     <th>Required Permission Level</th>
     *   </tr>
     *   <tr>
     *     <td>Address</td>
@@ -265,9 +286,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     *
     * @param name - The name of the ItemHasKnownEntity rule element that defines the filter to match.
     * @returns If there is no ItemHasKnownEntity element in the manifest with a FilterName element value that matches the name parameter, 
@@ -276,7 +298,6 @@ trait ItemRead extends Item {
     * the method return an empty array.
     */
   def getFilteredEntitiesByName(name: java.lang.String): js.Array[java.lang.String | Contact | MeetingSuggestion | PhoneNumber | TaskSuggestion] = js.native
-  def getInitializationContextAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   /**
     * Returns string values in the selected item that match the regular expressions defined in the manifest XML file.
     *
@@ -301,9 +322,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   def getRegExMatches(): js.Any = js.native
   /**
@@ -325,9 +347,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     *
     * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
@@ -341,9 +364,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     *
     * @param name - The name of the ItemHasRegularExpressionMatch rule element that defines the filter to match.
     */
@@ -371,9 +395,10 @@ trait ItemRead extends Item {
     *
     * @remarks
     *
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Read</td></tr>
+    * </table>
     */
   def getSelectedRegExMatches(): js.Any = js.native
 }

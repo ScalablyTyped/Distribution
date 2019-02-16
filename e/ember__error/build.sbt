@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ember__error"
-version := "3.0-dt-20181002Z-08b8e1"
+version := "3.0-dt-20190213Z-08b8e1"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

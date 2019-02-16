@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-permissions"
-version := "1.0-dt-20180313Z-e8e19f"
+version := "1.0-dt-20190213Z-e8e19f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -1510,7 +1510,7 @@ object EC2Ns extends js.Object {
       */
     var CreationTime: js.UndefOr[String] = js.undefined
     /**
-      * The date and time the Client VPN endpoint was deleted, if applicable. Information about deleted Client VPN endpoints is retained for 24 hours, unless a new Client VPN is created with the same name.
+      * The date and time the Client VPN endpoint was deleted, if applicable.
       */
     var DeletionTime: js.UndefOr[String] = js.undefined
     /**
@@ -1518,21 +1518,29 @@ object EC2Ns extends js.Object {
       */
     var Description: js.UndefOr[String] = js.undefined
     /**
-      * The DNS name to be used by clients when establishing a connection.
+      * The DNS name to be used by clients when connecting to the Client VPN endpoint.
       */
     var DnsName: js.UndefOr[String] = js.undefined
+    /**
+      * Information about the DNS servers to be used for DNS resolution. 
+      */
+    var DnsServers: js.UndefOr[ValueStringList] = js.undefined
     /**
       * The ARN of the server certificate.
       */
     var ServerCertificateArn: js.UndefOr[String] = js.undefined
     /**
-      *  Indicates whether VPN split tunneling is supported. 
+      * Indicates whether VPN split tunneling is supported.
       */
     var SplitTunnel: js.UndefOr[Boolean] = js.undefined
     /**
       * The current state of the Client VPN endpoint.
       */
     var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
+    /**
+      * Any tags assigned to the Client VPN endpoint.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
     /**
       *  The transport protocol used by the Client VPN endpoint. 
       */
@@ -1949,6 +1957,10 @@ object EC2Ns extends js.Object {
       * The ARN of the server certificate. For more information, see the AWS Certificate Manager User Guide .
       */
     var ServerCertificateArn: String
+    /**
+      * The tags to apply to the Client VPN endpoint during creation.
+      */
+    var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
     /**
       * The transport protocol to be used by the VPN session. Default value: udp 
       */
@@ -2393,7 +2405,7 @@ object EC2Ns extends js.Object {
   
   trait CreateLaunchTemplateRequest extends js.Object {
     /**
-      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
+      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
       */
     var ClientToken: js.UndefOr[String] = js.undefined
     /**
@@ -2423,7 +2435,7 @@ object EC2Ns extends js.Object {
   
   trait CreateLaunchTemplateVersionRequest extends js.Object {
     /**
-      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
+      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
       */
     var ClientToken: js.UndefOr[String] = js.undefined
     /**
@@ -4994,7 +5006,7 @@ object EC2Ns extends js.Object {
       */
     var ExecutableUsers: js.UndefOr[ExecutableByStringList] = js.undefined
     /**
-      * One or more filters.    architecture - The image architecture (i386 | x86_64).    block-device-mapping.delete-on-termination - A Boolean value that indicates whether the Amazon EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.snapshot-id - The ID of the snapshot used for the EBS volume.    block-device-mapping.volume-size - The volume size of the EBS volume, in GiB.    block-device-mapping.volume-type - The volume type of the EBS volume (gp2 | io1 | st1 | sc1 | standard).    description - The description of the image (provided during image creation).    ena-support - A Boolean that indicates whether enhanced networking with ENA is enabled.    hypervisor - The hypervisor type (ovm | xen).    image-id - The ID of the image.    image-type - The image type (machine | kernel | ramdisk).    is-public - A Boolean that indicates whether the image is public.    kernel-id - The kernel ID.    manifest-location - The location of the image manifest.    name - The name of the AMI (provided during image creation).    owner-alias - String value from an Amazon-maintained list (amazon | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console.    owner-id - The AWS account ID of the image owner.    platform - The platform. To only list Windows-based AMIs, use windows.    product-code - The product code.    product-code.type - The type of the product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    state - The state of the image (available | pending | failed).    state-reason-code - The reason code for the state change.    state-reason-message - The message for the state change.    sriov-net-support - A value of simple indicates that enhanced networking with the Intel 82599 VF interface is enabled.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    virtualization-type - The virtualization type (paravirtual | hvm).  
+      * One or more filters.    architecture - The image architecture (i386 | x86_64).    block-device-mapping.delete-on-termination - A Boolean value that indicates whether the Amazon EBS volume is deleted on instance termination.    block-device-mapping.device-name - The device name specified in the block device mapping (for example, /dev/sdh or xvdh).    block-device-mapping.snapshot-id - The ID of the snapshot used for the EBS volume.    block-device-mapping.volume-size - The volume size of the EBS volume, in GiB.    block-device-mapping.volume-type - The volume type of the EBS volume (gp2 | io1 | st1 | sc1 | standard).    block-device-mapping.encrypted - A Boolean that indicates whether the EBS volume is encrypted.    description - The description of the image (provided during image creation).    ena-support - A Boolean that indicates whether enhanced networking with ENA is enabled.    hypervisor - The hypervisor type (ovm | xen).    image-id - The ID of the image.    image-type - The image type (machine | kernel | ramdisk).    is-public - A Boolean that indicates whether the image is public.    kernel-id - The kernel ID.    manifest-location - The location of the image manifest.    name - The name of the AMI (provided during image creation).    owner-alias - String value from an Amazon-maintained list (amazon | aws-marketplace | microsoft) of snapshot owners. Not to be confused with the user-configured AWS account alias, which is set from the IAM console.    owner-id - The AWS account ID of the image owner.    platform - The platform. To only list Windows-based AMIs, use windows.    product-code - The product code.    product-code.type - The type of the product code (devpay | marketplace).    ramdisk-id - The RAM disk ID.    root-device-name - The device name of the root device volume (for example, /dev/sda1).    root-device-type - The type of the root device volume (ebs | instance-store).    state - The state of the image (available | pending | failed).    state-reason-code - The reason code for the state change.    state-reason-message - The message for the state change.    sriov-net-support - A value of simple indicates that enhanced networking with the Intel 82599 VF interface is enabled.    tag:&lt;key&gt; - The key/value combination of a tag assigned to the resource. Use the tag key in the filter name and the tag value as the filter value. For example, to find all resources that have a tag with the key Owner and the value TeamA, specify tag:Owner for the filter name and TeamA for the filter value.    tag-key - The key of a tag assigned to the resource. Use this filter to find all resources assigned a tag with a specific key, regardless of the tag value.    virtualization-type - The virtualization type (paravirtual | hvm).  
       */
     var Filters: js.UndefOr[FilterList] = js.undefined
     /**
@@ -8943,7 +8955,7 @@ object EC2Ns extends js.Object {
       */
     var KmsKeyId: js.UndefOr[String] = js.undefined
     /**
-      * The license type to be used for the Amazon Machine Image (AMI) after importing.  Note: You may only use BYOL if you have existing licenses with rights to use these licenses in a third party cloud like AWS. For more information, see Prerequisites in the VM Import/Export User Guide. Valid values: AWS | BYOL 
+      * The license type to be used for the Amazon Machine Image (AMI) after importing.  Note: You may only use BYOL if you have existing licenses with rights to use these licenses in a third party cloud like AWS. For more information, see Prerequisites in the VM Import/Export User Guide. Valid values include:    Auto - Detects the source-system operating system (OS) and applies the appropriate license.    AWS - Replaces the source-system license with an AWS license, if appropriate.    BYOL - Retains the source-system license, if appropriate.   Default value: Auto 
       */
     var LicenseType: js.UndefOr[String] = js.undefined
     /**
@@ -11213,7 +11225,7 @@ object EC2Ns extends js.Object {
   
   trait ModifyLaunchTemplateRequest extends js.Object {
     /**
-      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency.
+      * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
       */
     var ClientToken: js.UndefOr[String] = js.undefined
     /**
@@ -14044,11 +14056,11 @@ object EC2Ns extends js.Object {
       */
     var InstanceType: js.UndefOr[InstanceType] = js.undefined
     /**
-      * [EC2-VPC] A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch.
+      * [EC2-VPC] A number of IPv6 addresses to associate with the primary network interface. Amazon EC2 chooses the IPv6 addresses from the range of your subnet. You cannot specify this option and the option to assign specific IPv6 addresses in the same request. You can specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
       */
     var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
     /**
-      * [EC2-VPC] Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch.
+      * [EC2-VPC] Specify one or more IPv6 addresses from the range of the subnet to associate with the primary network interface. You cannot specify this option and the option to assign a number of IPv6 addresses in the same request. You cannot specify this option if you've specified a minimum number of instances to launch. You cannot specify this option and the network interfaces option in the same request.
       */
     var Ipv6Addresses: js.UndefOr[InstanceIpv6AddressList] = js.undefined
     /**
@@ -14080,7 +14092,7 @@ object EC2Ns extends js.Object {
       */
     var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
     /**
-      * One or more network interfaces.
+      * One or more network interfaces. You cannot specify this option and the network interfaces option in the same request.
       */
     var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
     /**
@@ -14088,7 +14100,7 @@ object EC2Ns extends js.Object {
       */
     var Placement: js.UndefOr[Placement] = js.undefined
     /**
-      * [EC2-VPC] The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet. Only one private IP address can be designated as primary. You can't specify this option if you've specified the option to designate a private IP address as the primary IP address in a network interface specification. You cannot specify this option if you're launching more than one instance in the request.
+      * [EC2-VPC] The primary IPv4 address. You must specify a value from the IPv4 address range of the subnet. Only one private IP address can be designated as primary. You can't specify this option if you've specified the option to designate a private IP address as the primary IP address in a network interface specification. You cannot specify this option if you're launching more than one instance in the request. You cannot specify this option and the network interfaces option in the same request.
       */
     var PrivateIpAddress: js.UndefOr[String] = js.undefined
     /**
@@ -14096,15 +14108,15 @@ object EC2Ns extends js.Object {
       */
     var RamdiskId: js.UndefOr[String] = js.undefined
     /**
-      * One or more security group IDs. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group.
+      * One or more security group IDs. You can create a security group using CreateSecurityGroup. Default: Amazon EC2 uses the default security group. You cannot specify this option and the network interfaces option in the same request.
       */
     var SecurityGroupIds: js.UndefOr[SecurityGroupIdStringList] = js.undefined
     /**
-      * [EC2-Classic, default VPC] One or more security group names. For a nondefault VPC, you must use security group IDs instead. Default: Amazon EC2 uses the default security group.
+      * [EC2-Classic, default VPC] One or more security group names. For a nondefault VPC, you must use security group IDs instead. You cannot specify this option and the network interfaces option in the same request. Default: Amazon EC2 uses the default security group.
       */
     var SecurityGroups: js.UndefOr[SecurityGroupStringList] = js.undefined
     /**
-      * [EC2-VPC] The ID of the subnet to launch the instance into.
+      * [EC2-VPC] The ID of the subnet to launch the instance into. You cannot specify this option and the network interfaces option in the same request.
       */
     var SubnetId: js.UndefOr[String] = js.undefined
     /**
@@ -25343,7 +25355,7 @@ object EC2Ns extends js.Object {
   type InstanceStatusDetailsList = js.Array[InstanceStatusDetails]
   type InstanceStatusEventList = js.Array[InstanceStatusEvent]
   type InstanceStatusList = js.Array[InstanceStatus]
-  type InstanceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 175 */ js.Any
+  type InstanceType = /* import warning: LimitUnionLength.enterTypeRef Was union type with length 178 */ js.Any
   type InstanceTypeList = js.Array[InstanceType]
   type Integer = scala.Double
   type InterfacePermissionType = awsDashSdkLib.awsDashSdkLibStrings.`INSTANCE-ATTACH` | awsDashSdkLib.awsDashSdkLibStrings.`EIP-ASSOCIATE` | java.lang.String
@@ -25475,7 +25487,7 @@ object EC2Ns extends js.Object {
   type ResetImageAttributeName = awsDashSdkLib.awsDashSdkLibStrings.launchPermission | java.lang.String
   type ResourceIdList = js.Array[String]
   type ResourceList = js.Array[String]
-  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.`elastic-ip` | awsDashSdkLib.awsDashSdkLibStrings.fleet | awsDashSdkLib.awsDashSdkLibStrings.`fpga-image` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`launch-template` | awsDashSdkLib.awsDashSdkLibStrings.natgateway | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpc-peering-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
+  type ResourceType = awsDashSdkLib.awsDashSdkLibStrings.`client-vpn-endpoint` | awsDashSdkLib.awsDashSdkLibStrings.`customer-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`dedicated-host` | awsDashSdkLib.awsDashSdkLibStrings.`dhcp-options` | awsDashSdkLib.awsDashSdkLibStrings.`elastic-ip` | awsDashSdkLib.awsDashSdkLibStrings.fleet | awsDashSdkLib.awsDashSdkLibStrings.`fpga-image` | awsDashSdkLib.awsDashSdkLibStrings.image | awsDashSdkLib.awsDashSdkLibStrings.instance | awsDashSdkLib.awsDashSdkLibStrings.`internet-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`launch-template` | awsDashSdkLib.awsDashSdkLibStrings.natgateway | awsDashSdkLib.awsDashSdkLibStrings.`network-acl` | awsDashSdkLib.awsDashSdkLibStrings.`network-interface` | awsDashSdkLib.awsDashSdkLibStrings.`reserved-instances` | awsDashSdkLib.awsDashSdkLibStrings.`route-table` | awsDashSdkLib.awsDashSdkLibStrings.`security-group` | awsDashSdkLib.awsDashSdkLibStrings.snapshot | awsDashSdkLib.awsDashSdkLibStrings.`spot-instances-request` | awsDashSdkLib.awsDashSdkLibStrings.subnet | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-attachment` | awsDashSdkLib.awsDashSdkLibStrings.`transit-gateway-route-table` | awsDashSdkLib.awsDashSdkLibStrings.volume | awsDashSdkLib.awsDashSdkLibStrings.vpc | awsDashSdkLib.awsDashSdkLibStrings.`vpc-peering-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-connection` | awsDashSdkLib.awsDashSdkLibStrings.`vpn-gateway` | java.lang.String
   type ResponseHostIdList = js.Array[String]
   type ResponseHostIdSet = js.Array[String]
   type RestorableByStringList = js.Array[String]

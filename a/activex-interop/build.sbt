@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "activex-interop"
-version := "0.0-dt-20180721Z-b41a75"
+version := "0.0-dt-20190213Z-b41a75"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

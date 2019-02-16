@@ -1,17 +1,17 @@
 organization := "org.scalablytyped"
 name := "react-native-goby"
-version := "0.0.5-13ce66"
+version := "0.0.5-6f1529"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-77c3f4",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-110d8c",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e20e66",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-ab63b7",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-029f0e",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
-  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-7fb769",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
+  "org.scalablytyped" %%% "plist" % "3.0-dt-20181029Z-50fd74",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
   "org.scalablytyped" %%% "react-native" % "0.57-dt-20190212Z-f15103",
@@ -29,7 +29,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "rx-lite-time" % "4.0-dt-20180214Z-b8b22f",
   "org.scalablytyped" %%% "rx-lite-virtualtime" % "4.0-dt-20180214Z-c96529",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-069b8e",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-37e02e",
   "org.scalablytyped" %%% "xmlbuilder" % "0.0-unknown-dt-20180925Z-b7a701")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

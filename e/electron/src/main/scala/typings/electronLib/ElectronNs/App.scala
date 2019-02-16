@@ -121,12 +121,42 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("addListener")
+  def `addListener_remote-get-builtin`(
+    event: electronLib.electronLibStrings.`remote-get-builtin`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_remote-get-current-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_remote-get-current-window`(
+    event: electronLib.electronLibStrings.`remote-get-current-window`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("addListener")
   def `addListener_remote-get-global`(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
       /* webContents */ WebContents, 
       /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("addListener")
+  def `addListener_remote-get-guest-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* guestWebContents */ WebContents, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -535,6 +565,41 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   /**
+    * Emitted when remote.getBuiltin() is called in the renderer process of
+    * webContents. Calling event.preventDefault() will prevent the module from being
+    * returned. Custom value can be returned by setting event.returnValue.
+    */
+  @JSName("on")
+  def `on_remote-get-builtin`(
+    event: electronLib.electronLibStrings.`remote-get-builtin`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when remote.getCurrentWebContents() is called in the renderer process of
+    * webContents. Calling event.preventDefault() will prevent the object from being
+    * returned. Custom value can be returned by setting event.returnValue.
+    */
+  @JSName("on")
+  def `on_remote-get-current-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  /**
+    * Emitted when remote.getCurrentWindow() is called in the renderer process of
+    * webContents. Calling event.preventDefault() will prevent the object from being
+    * returned. Custom value can be returned by setting event.returnValue.
+    */
+  @JSName("on")
+  def `on_remote-get-current-window`(
+    event: electronLib.electronLibStrings.`remote-get-current-window`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  /**
     * Emitted when remote.getGlobal() is called in the renderer process of
     * webContents. Calling event.preventDefault() will prevent the global from being
     * returned. Custom value can be returned by setting event.returnValue.
@@ -546,6 +611,21 @@ trait App extends EventEmitter {
       /* event */ Event, 
       /* webContents */ WebContents, 
       /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  /**
+    * Emitted when <webview>.getWebContents() is called in the renderer process of
+    * webContents. Calling event.preventDefault() will prevent the object from being
+    * returned. Custom value can be returned by setting event.returnValue.
+    */
+  @JSName("on")
+  def `on_remote-get-guest-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* guestWebContents */ WebContents, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -777,12 +857,42 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("once")
+  def `once_remote-get-builtin`(
+    event: electronLib.electronLibStrings.`remote-get-builtin`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_remote-get-current-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_remote-get-current-window`(
+    event: electronLib.electronLibStrings.`remote-get-current-window`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("once")
   def `once_remote-get-global`(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
       /* webContents */ WebContents, 
       /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("once")
+  def `once_remote-get-guest-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* guestWebContents */ WebContents, 
       scala.Unit
     ]
   ): this.type = js.native
@@ -988,12 +1098,42 @@ trait App extends EventEmitter {
     listener: js.Function1[/* launchInfo */ js.Any, scala.Unit]
   ): this.type = js.native
   @JSName("removeListener")
+  def `removeListener_remote-get-builtin`(
+    event: electronLib.electronLibStrings.`remote-get-builtin`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* moduleName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_remote-get-current-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-current-web-contents`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_remote-get-current-window`(
+    event: electronLib.electronLibStrings.`remote-get-current-window`,
+    listener: js.Function2[/* event */ Event, /* webContents */ WebContents, scala.Unit]
+  ): this.type = js.native
+  @JSName("removeListener")
   def `removeListener_remote-get-global`(
     event: electronLib.electronLibStrings.`remote-get-global`,
     listener: js.Function3[
       /* event */ Event, 
       /* webContents */ WebContents, 
       /* globalName */ java.lang.String, 
+      scala.Unit
+    ]
+  ): this.type = js.native
+  @JSName("removeListener")
+  def `removeListener_remote-get-guest-web-contents`(
+    event: electronLib.electronLibStrings.`remote-get-guest-web-contents`,
+    listener: js.Function3[
+      /* event */ Event, 
+      /* webContents */ WebContents, 
+      /* guestWebContents */ WebContents, 
       scala.Unit
     ]
   ): this.type = js.native

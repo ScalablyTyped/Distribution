@@ -22,28 +22,9 @@ trait AttributeDecorator
     * <input type="text">
     * ```
     *
-    * A decorator can inject string literal `text` like so:
+    * A decorator can inject string literal `text` as in the following example.
     *
     * {@example core/ts/metadata/metadata.ts region='attributeMetadata'}
-    *
-    * ### Example as TypeScript Decorator
-    *
-    * {@example core/ts/metadata/metadata.ts region='attributeFactory'}
-    *
-    * ### Example as ES5 annotation
-    *
-    * ```
-    * var MyComponent = function(title) {
-    *   ...
-    * };
-    *
-    * MyComponent.annotations = [
-    *   new ng.Component({...})
-    * ]
-    * MyComponent.parameters = [
-    *   [new ng.Attribute('title')]
-    * ]
-    * ```
     *
     * @publicApi
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-modal"
-version := "3.8-dt-20190104Z-5cde73"
+version := "3.8-dt-20190213Z-91df5e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

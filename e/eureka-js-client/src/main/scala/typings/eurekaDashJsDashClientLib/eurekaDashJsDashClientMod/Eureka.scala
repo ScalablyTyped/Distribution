@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Eureka protected () extends js.Object {
   def this(config: eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.EurekaConfig) = this()
+  def this(config: eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.EurekaMiddlewareConfig) = this()
   def this(config: eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.EurekaYmlConfig) = this()
   def getInstancesByAppId(appId: java.lang.String): js.Array[
     eurekaDashJsDashClientLib.eurekaDashJsDashClientMod.EurekaClientNs.EurekaInstanceConfig

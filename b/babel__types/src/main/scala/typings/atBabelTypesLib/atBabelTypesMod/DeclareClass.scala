@@ -11,7 +11,7 @@ trait DeclareClass extends BaseNode {
   var id: Identifier
   var implements: js.Array[ClassImplements] | scala.Null
   var mixins: js.Array[InterfaceExtends] | scala.Null
-  var typeParameters: TypeParameterInstantiation | scala.Null
+  var typeParameters: TypeParameterDeclaration | scala.Null
   @JSName("type")
   var type_DeclareClass: atBabelTypesLib.atBabelTypesLibStrings.DeclareClass
 }

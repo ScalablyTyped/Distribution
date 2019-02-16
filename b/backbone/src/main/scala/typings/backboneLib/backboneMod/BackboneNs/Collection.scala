@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Collection[TModel /* <: Model */] extends ModelBase {
+trait Collection[TModel /* <: Model */] extends js.Object {
   /**
     * Specify a model attribute name (string) or function that will be used to sort the collection.
     */

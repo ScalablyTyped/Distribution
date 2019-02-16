@@ -1,20 +1,20 @@
 organization := "org.scalablytyped"
 name := "express-oauth-server"
-version := "2.0-dt-20190212Z-a2aa7d"
+version := "2.0-dt-20190212Z-376aa5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-b8fac3",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-da964c",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-bce0b9",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-759423",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-18f5bb",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-9d0391",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-ac6847",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-5bd5ac",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
-  "org.scalablytyped" %%% "oauth2-server" % "3.0-dt-20181123Z-398863",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
+  "org.scalablytyped" %%% "oauth2-server" % "3.0-dt-20181123Z-823d11",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-e720f7",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-ffe082",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

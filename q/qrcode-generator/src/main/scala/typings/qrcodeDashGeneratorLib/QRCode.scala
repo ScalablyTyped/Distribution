@@ -21,6 +21,7 @@ trait QRCode extends js.Object {
   def createSvgTag(): java.lang.String = js.native
   def createSvgTag(cellSize: scala.Double): java.lang.String = js.native
   def createSvgTag(cellSize: scala.Double, margin: scala.Double): java.lang.String = js.native
+  def createSvgTag(opts: Anon_CellSize): java.lang.String = js.native
   def createTableTag(): java.lang.String = js.native
   def createTableTag(cellSize: scala.Double): java.lang.String = js.native
   def createTableTag(cellSize: scala.Double, margin: scala.Double): java.lang.String = js.native

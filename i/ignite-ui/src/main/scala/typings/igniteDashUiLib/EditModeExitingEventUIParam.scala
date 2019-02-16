@@ -19,6 +19,10 @@ trait EditModeExitingEventUIParam extends js.Object {
   	 */
   var cell: js.UndefOr[java.lang.String] = js.undefined
   /**
+  	 * Gets the edit text that will be used to update the cell(s).
+  	 */
+  var editText: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets a reference to the spreadsheet widget.
   	 */
   var owner: js.UndefOr[js.Any] = js.undefined

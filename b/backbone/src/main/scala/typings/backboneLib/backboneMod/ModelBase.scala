@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "ModelBase")
 @js.native
-class ModelBase ()
-  extends backboneLib.backboneMod.BackboneNs.ModelBase
+class ModelBase () extends js.Object
 

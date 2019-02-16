@@ -9,9 +9,10 @@ import scala.scalajs.js.annotation._
   * Represents custom settings for a task pane or content add-in that are stored in the host document as name/value pairs.
   *
   * @remarks
-  * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
-  *
-  * <tr><td>Requirement Sets</td><td>Settings</td></tr></table>
+  * <table>
+  *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Word</td></tr>
+  *   <tr><td>Requirement Sets</td><td>Settings</td></tr>
+  * </table>
   * 
   * The settings created by using the methods of the Settings object are saved per add-in and per document. 
   * That is, they are available only to the add-in that created them, and only from the document in which they are saved.

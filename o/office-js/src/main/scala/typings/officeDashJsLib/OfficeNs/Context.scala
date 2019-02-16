@@ -82,7 +82,7 @@ trait Context extends js.Object {
     * 
     * In content add-ins for Access web apps, the `displayLanguage property` gets the add-in language (e.g., "en-US").
     * 
-    * When using in Outlook, the applicable modes are Compose or read.
+    * When using in Outlook, the applicable modes are Compose or Read.
     * 
     * **Support details**
     * 
@@ -150,9 +150,10 @@ trait Context extends js.Object {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     */
   var mailbox: Mailbox
   /**
@@ -176,9 +177,10 @@ trait Context extends js.Object {
     * [Api set: Mailbox 1.0]
     *
     * @remarks
-    * <table><tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
-    *
-    * <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or read</td></tr></table>
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>Restricted</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
     */
   var roamingSettings: RoamingSettings
   /**

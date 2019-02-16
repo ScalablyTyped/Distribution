@@ -26,6 +26,21 @@ trait IgGridFilteringLocale
   	 */
   var afterNullText: js.UndefOr[java.lang.String] = js.undefined
   /**
+  	 * 'At or after' label that is used for the predefined filtering conditions in the filter dropdowns.
+  	 *
+  	 */
+  var atAfterLabel: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * 'At or before' label that is used for the predefined filtering conditions in the filter dropdowns.
+  	 *
+  	 */
+  var atBeforeLabel: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * 'At' label that is used for the predefined filtering conditions in the filter dropdowns.
+  	 *
+  	 */
+  var atLabel: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * 'Before' label that is used for the predefined filtering conditions in the filter dropdowns.
   	 *
   	 */
@@ -250,6 +265,11 @@ trait IgGridFilteringLocale
   	 *
   	 */
   var noFilterLabel: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * 'Not at' label that is used for the predefined filtering conditions in the filter dropdowns.
+  	 *
+  	 */
+  var notAtLabel: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Not empty null text that will be used for the filter editors.
   	 *

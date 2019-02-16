@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jquery-notifier"
-version := "1.0-dt-20180214Z-f34fdf"
+version := "1.0-dt-20190213Z-f34fdf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

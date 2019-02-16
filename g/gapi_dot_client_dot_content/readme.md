@@ -1,5 +1,5 @@
 ```
-// Type definitions for Google Content API for Shopping v2 2.0
+// Type definitions for non-npm package Google Content API for Shopping v2 2.0
 // Project: https://developers.google.com/shopping-content
 // Definitions by: Bolisov Alexey <https://github.com/Bolisov>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

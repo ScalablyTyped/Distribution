@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-screen-orientation"
-version := "1.0-dt-20181214Z-8d9e09"
+version := "1.0-dt-20190213Z-8d9e09"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

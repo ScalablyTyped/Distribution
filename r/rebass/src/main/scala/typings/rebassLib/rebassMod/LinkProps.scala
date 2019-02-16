@@ -5,7 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LinkProps extends BoxProps {
-  var href: js.UndefOr[java.lang.String] = js.undefined
-}
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<react.HTMLAnchorElement>, keyof rebass.rebass.LinkKnownProps> ]: react.react.HTMLProps<react.HTMLAnchorElement>[P]} */ trait LinkProps extends BoxKnownProps
 

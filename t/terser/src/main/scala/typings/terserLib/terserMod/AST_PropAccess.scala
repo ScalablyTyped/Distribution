@@ -5,7 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@JSImport("terser", "AST_PropAccess")
 @js.native
-class AST_PropAccess () extends AST_Node
+trait AST_PropAccess extends AST_Node {
+  var expression: AST_Node = js.native
+  var property: AST_Node | java.lang.String = js.native
+}
 

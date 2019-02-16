@@ -16,7 +16,7 @@ trait Anon_DeviceAttributes extends js.Object {
     * Important: This API works only on Chrome OS.
     * Note: This API is only for extensions pre-installed by policy.
     */
-  val deviceAttributesNs: Anon_CallbackDeviceId
+  val deviceAttributesNs: Anon_AnnotatedLocation
   ////////////////////
   // Enterprise Platform Keys
   ////////////////////

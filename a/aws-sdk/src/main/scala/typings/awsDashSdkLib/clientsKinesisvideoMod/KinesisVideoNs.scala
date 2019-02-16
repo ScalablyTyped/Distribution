@@ -29,13 +29,17 @@ object KinesisVideoNs extends js.Object {
       */
     var KmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
     /**
-      * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines. To play video on the console, the media must be H.264 encoded, and you need to specify this video type in this parameter as video/h264.  This parameter is optional; the default value is null (or empty in JSON).
+      * The media type of the stream. Consumers of the stream can use this information when processing the stream. For more information about media types, see Media Types. If you choose to specify the MediaType, see Naming Requirements for guidelines. Example valid values include "video/h264" and "video/h264,audio/aac". This parameter is optional; the default value is null (or empty in JSON).
       */
     var MediaType: js.UndefOr[MediaType] = js.undefined
     /**
       * A name for the stream that you are creating. The stream name is an identifier for the stream, and must be unique for each account and region.
       */
     var StreamName: StreamName
+    /**
+      * A list of tags to associate with the specified stream. Each tag is a key-value pair (the value is optional).
+      */
+    var Tags: js.UndefOr[ResourceTags] = js.undefined
   }
   
   trait CreateStreamOutput extends js.Object {
@@ -472,7 +476,7 @@ object KinesisVideoNs extends js.Object {
       */
     var CurrentVersion: Version
     /**
-      * The retention period, in hours. The value you specify replaces the current value.
+      * The retention period, in hours. The value you specify replaces the current value. The maximum value for this parameter is 87600 (ten years).
       */
     var DataRetentionChangeInHours: DataRetentionChangeInHours
     /**

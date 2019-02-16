@@ -472,9 +472,10 @@ trait TableBinding extends Binding {
     * Updates table formatting options on the bound table.
     *
     * @remarks
-    * <table><tr><td>Hosts</td><td>Excel</td></tr>
-    *
-    * <tr><td>Requirement Sets</td><td>Not in a set</td></tr></table>
+    * <table>
+    *   <tr><td>Hosts</td><td>Excel</td></tr>
+    *   <tr><td>Requirement Sets</td><td>Not in a set</td></tr>
+    * </table>
     * 
     * In the callback function passed to the goToByIdAsync method, you can use the properties of the AsyncResult object to return the following information.
     * 

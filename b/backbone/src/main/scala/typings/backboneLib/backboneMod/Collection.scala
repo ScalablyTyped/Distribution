@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "Collection")
 @js.native
-class Collection[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] ()
-  extends backboneLib.backboneMod.BackboneNs.Collection[TModel] {
+class Collection[TModel /* <: backboneLib.backboneMod.BackboneNs.Model */] () extends js.Object {
   def this(models: js.Array[js.Object | TModel]) = this()
   def this(models: js.Array[js.Object | TModel], options: js.Any) = this()
 }

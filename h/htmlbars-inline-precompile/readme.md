@@ -1,5 +1,5 @@
 ```
-// Type definitions for htmlbars-inline-precompile 1.0
+// Type definitions for non-npm package htmlbars-inline-precompile 1.0
 // Project: https://github.com/ember-cli/ember-cli-htmlbars-inline-precompile
 // Definitions by: Chris Krycho <https://github.com/chriskrycho>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

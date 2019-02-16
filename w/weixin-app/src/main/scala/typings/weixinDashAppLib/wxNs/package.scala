@@ -77,11 +77,11 @@ package object wxNs {
   type TouchStartEvent = TouchEvent[weixinDashAppLib.weixinDashAppLibStrings.touchstart]
   type TransitionEventType = weixinDashAppLib.weixinDashAppLibStrings.transitionend | weixinDashAppLib.weixinDashAppLibStrings.animationstart | weixinDashAppLib.weixinDashAppLibStrings.animationiteration | weixinDashAppLib.weixinDashAppLibStrings.animationend
   type UnboxBehaviorData[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_DATA'] */ js.Any)
-  type UnboxBehaviorMethod[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
+  type UnboxBehaviorMethods[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_METHODS'] */ js.Any)
   type UnboxBehaviorProps[T] = js.Object | (/* import warning: ImportType.apply Failed type conversion: T['__DO_NOT_USE_INTERNAL_FIELD_PROPS'] */ js.Any)
-  type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorData[ArrayType[Behaviors]]]
-  type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorMethod[ArrayType[Behaviors]]]
-  type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnionToIntersection[UnboxBehaviorProps[ArrayType[Behaviors]]]
+  type UnboxBehaviorsData[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnboxBehaviorData[UnionToIntersection[ArrayType[Behaviors]]]
+  type UnboxBehaviorsMethods[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnboxBehaviorMethods[UnionToIntersection[ArrayType[Behaviors]]]
+  type UnboxBehaviorsProps[Behaviors /* <: js.Array[(Behavior[js.Object, js.Object, js.Object]) | java.lang.String] */] = UnboxBehaviorProps[UnionToIntersection[ArrayType[Behaviors]]]
   type UnionToIntersection[U] = js.Any
   type VideoSourceType = weixinDashAppLib.weixinDashAppLibStrings.album | weixinDashAppLib.weixinDashAppLibStrings.camera
   // 设备-----网络状态

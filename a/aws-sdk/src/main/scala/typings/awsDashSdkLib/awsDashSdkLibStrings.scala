@@ -11803,6 +11803,9 @@ object awsDashSdkLibStrings {
   sealed trait click extends js.Object
   
   @js.native
+  sealed trait `client-vpn-endpoint` extends js.Object
+  
+  @js.native
   sealed trait client_credentials extends js.Object
   
   @js.native
@@ -22444,6 +22447,8 @@ object awsDashSdkLibStrings {
   def citrix: citrix = "citrix".asInstanceOf[citrix]
   @scala.inline
   def click: click = "click".asInstanceOf[click]
+  @scala.inline
+  def `client-vpn-endpoint`: `client-vpn-endpoint` = "client-vpn-endpoint".asInstanceOf[`client-vpn-endpoint`]
   @scala.inline
   def client_credentials: client_credentials = "client_credentials".asInstanceOf[client_credentials]
   @scala.inline

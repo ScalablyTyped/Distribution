@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ignite-ui"
-version := "18.1-dt-20180821Z-8bc48b"
+version := "18.2-dt-20190206Z-43ed00"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

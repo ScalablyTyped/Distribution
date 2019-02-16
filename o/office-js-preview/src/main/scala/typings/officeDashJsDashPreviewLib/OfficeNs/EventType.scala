@@ -14,7 +14,7 @@ sealed trait EventType extends js.Object
   * Add-ins for Project support the `Office.EventType.ResourceSelectionChanged`, `Office.EventType.TaskSelectionChanged`, and 
   * `Office.EventType.ViewSelectionChanged` event types.
   * 
-  * <table>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
+  * <table><tr><td>BindingDataChanged and BindingSelectionChanged hosts</td><td>Access, Excel, Word</td></tr></table>
   *
   * @remarks
   * 

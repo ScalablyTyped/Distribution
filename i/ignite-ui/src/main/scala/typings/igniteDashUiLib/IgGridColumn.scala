@@ -26,7 +26,7 @@ trait IgGridColumn
   	 */
   var columnIndex: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * Data type of the column cell values: string, number, bool, date, object.
+  	 * Data type of the column cell values: string, number, bool, date, time, object.
   	 *
   	 *
   	 * Valid values:
@@ -34,6 +34,7 @@ trait IgGridColumn
   	 * "number" Used when the data for the column is of type number
   	 * "boolean" Used when the data for the column is of type boolean
   	 * "date" Used when the data for the column is of type date
+  	 * "time" Used when the data for the column is of type date and but only the time portion is important
   	 * "object" Used when the data for the column is of type object
   	 */
   var dataType: js.UndefOr[java.lang.String] = js.undefined
@@ -50,6 +51,7 @@ trait IgGridColumn
   	 * Gets/Sets the type of formatting for cells of the column. Default value is null. Checkout [Formatting Dates, Numbers and Strings](http://www.igniteui.com/help/formatting-dates-numbers-and-strings) for details on the valid formatting specifiers.
   	 *
   	 * If dataType is "date", then supported formats are following: "date", "dateLong", "dateTime", "time", "timeLong", "MM/dd/yyyy", "MMM-d, yy, h:mm:ss tt", "dddd d MMM", etc.
+  	 * If dataType is "time", then supported formats are following: "date", "dateLong", "dateTime", "time", "timeLong", "MMM-d, yy, h:mm:ss tt", etc.
   	 * If dataType is "number", then supported numeric formats are following: "number", "currency", "percent", "int", "double", "0.00", "#.0####", "0", "#.#######", etc.
   	 * The value of "double" will be similar to "number", but with unlimited maximum number of decimal places.
   	 * The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object.
@@ -91,7 +93,7 @@ trait IgGridColumn
   	 */
   var headerCssClass: js.UndefOr[java.lang.String] = js.undefined
   /**
-  	 * Header text for the specified column.
+  	 * Header text for the specified column. HTML and special characters should not be included as part of the header text content, because the browsers can interpret it and break the grid UI.
   	 *
   	 */
   var headerText: js.UndefOr[java.lang.String] = js.undefined

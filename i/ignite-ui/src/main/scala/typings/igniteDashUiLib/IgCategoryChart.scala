@@ -29,6 +29,38 @@ trait IgCategoryChart
   	 */
   var brushes: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Occurs when the style of a callout is updated.
+  	 */
+  var calloutStyleUpdating: js.UndefOr[CalloutStyleUpdatingEvent] = js.undefined
+  /**
+  	 * Gets or sets if event annotations should be displayed.
+  	 */
+  var calloutStyleUpdatingEventEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the member path of the content data for the callouts.
+  	 */
+  var calloutsContentMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the collection of callout data to be annotated.
+  	 */
+  var calloutsItemsSource: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the member path of the label data for the callouts.
+  	 */
+  var calloutsLabelMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets if callouts should be displayed.
+  	 */
+  var calloutsVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the member path of the X data for the callouts.
+  	 */
+  var calloutsXMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the member path of the Y data for the callouts.
+  	 */
+  var calloutsYMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets the type of chart series to generate from the data.
   	 *
   	 * Valid values:
@@ -48,6 +80,25 @@ trait IgCategoryChart
   	 * Gets or sets a function for creating wrapped tooltip
   	 */
   var createWrappedTooltip: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets whether annotations are shown along the axis for crosshair values
+  	 */
+  var crosshairsAnnotationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the crosshairs to be displayed.
+  	 *
+  	 * Valid values:
+  	 * "default" Display default number of crosshair lines in the chart.
+  	 * "none" Display no crosshair lines in the chart.
+  	 * "horizontal" Display horizontal line of crosshairs in the chart.
+  	 * "vertical" Display vertical line of crosshairs in the chart.
+  	 * "both" Display both horizontal and vertical lines of crosshairs in the chart.
+  	 */
+  var crosshairsDisplayMode: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets whether crosshairs will snap to the nearest data point.
+  	 */
+  var crosshairsSnapToData: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Event which is raised before data binding.
   	 * Return false in order to cancel data binding.
@@ -83,6 +134,10 @@ trait IgCategoryChart
   	 */
   var excludedProperties: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Gets or sets whether annotations for the final value of each series is displayed on the axis.
+  	 */
+  var finalValueAnnotationsVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   	 * The height of the chart.
   	 */
   var height: js.UndefOr[scala.Double] = js.undefined
@@ -100,9 +155,22 @@ trait IgCategoryChart
   	 */
   var includedProperties: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Gets or sets whether the category should be highlighted when hovered
+  	 */
+  var isCategoryHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
   	 * Gets or sets whether the chart can be horizontally zoomed through user interactions.
   	 */
   var isHorizontalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets whether the item should be highlighted when hovered
+  	 */
+  var isItemHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 */
+  var isSeriesHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Gets or sets whether animation of series plots is enabled when the chart is loading into view
   	 */
@@ -313,6 +381,16 @@ trait IgCategoryChart
   	 * Gets or sets the top margin of chart title
   	 */
   var titleTopMargin: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the style of tooltip to be displayed.
+  	 *
+  	 * Valid values:
+  	 * "default" Display default tooltip for each series in the chart.
+  	 * "item" Display individual tooltips for all series in the chart.
+  	 * "category" Display combined tooltip for all series in the chart.
+  	 * "none" Display no tooltips in the chart.
+  	 */
+  var toolTipType: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Gets or sets the id of a template element to use for tooltips, or markup representing the tooltip template.
   	 */
@@ -652,7 +730,7 @@ trait IgCategoryChart
   	 */
   var yAxisIsLogarithmic: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  	 * Gets or sets the format for labels along the Y-axis.
+  	 * Gets or sets the property or string from which the labels are derived.
   	 */
   var yAxisLabel: js.UndefOr[js.Any] = js.undefined
   /**

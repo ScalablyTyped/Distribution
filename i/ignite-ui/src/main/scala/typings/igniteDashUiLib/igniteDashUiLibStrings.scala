@@ -499,6 +499,30 @@ object igniteDashUiLibStrings {
   sealed trait callee extends js.Object
   
   @js.native
+  sealed trait calloutStyleUpdating extends js.Object
+  
+  @js.native
+  sealed trait calloutStyleUpdatingEventEnabled extends js.Object
+  
+  @js.native
+  sealed trait calloutsContentMemberPath extends js.Object
+  
+  @js.native
+  sealed trait calloutsItemsSource extends js.Object
+  
+  @js.native
+  sealed trait calloutsLabelMemberPath extends js.Object
+  
+  @js.native
+  sealed trait calloutsVisible extends js.Object
+  
+  @js.native
+  sealed trait calloutsXMemberPath extends js.Object
+  
+  @js.native
+  sealed trait calloutsYMemberPath extends js.Object
+  
+  @js.native
   sealed trait cancel extends js.Object
   
   @js.native
@@ -1079,6 +1103,15 @@ object igniteDashUiLibStrings {
   
   @js.native
   sealed trait crosshairVisibility extends js.Object
+  
+  @js.native
+  sealed trait crosshairsAnnotationEnabled extends js.Object
+  
+  @js.native
+  sealed trait crosshairsDisplayMode extends js.Object
+  
+  @js.native
+  sealed trait crosshairsSnapToData extends js.Object
   
   @js.native
   sealed trait css extends js.Object
@@ -2072,6 +2105,12 @@ object igniteDashUiLibStrings {
   
   @js.native
   sealed trait filteringType extends js.Object
+  
+  @js.native
+  sealed trait finalValueAnnotationsVisible extends js.Object
+  
+  @js.native
+  sealed trait financialChartLegend extends js.Object
   
   @js.native
   sealed trait findImmediateNodesByText extends js.Object
@@ -3106,6 +3145,9 @@ object igniteDashUiLibStrings {
   sealed trait indicatorLongPeriod extends js.Object
   
   @js.native
+  sealed trait indicatorMenuTemplate extends js.Object
+  
+  @js.native
   sealed trait indicatorMultiplier extends js.Object
   
   @js.native
@@ -3113,9 +3155,6 @@ object igniteDashUiLibStrings {
   
   @js.native
   sealed trait indicatorPeriod extends js.Object
-  
-  @js.native
-  sealed trait indicatorPickerTemplate extends js.Object
   
   @js.native
   sealed trait indicatorShortPeriod extends js.Object
@@ -3196,6 +3235,9 @@ object igniteDashUiLibStrings {
   sealed trait interval extends js.Object
   
   @js.native
+  sealed trait isCategoryHighlightingEnabled extends js.Object
+  
+  @js.native
   sealed trait isChecked extends js.Object
   
   @js.native
@@ -3241,6 +3283,12 @@ object igniteDashUiLibStrings {
   sealed trait isInverted extends js.Object
   
   @js.native
+  sealed trait isItemHighlightingEnabled extends js.Object
+  
+  @js.native
+  sealed trait isLegendVisible extends js.Object
+  
+  @js.native
   sealed trait isLimitedToListValues extends js.Object
   
   @js.native
@@ -3275,6 +3323,9 @@ object igniteDashUiLibStrings {
   
   @js.native
   sealed trait isSelected extends js.Object
+  
+  @js.native
+  sealed trait isSeriesHighlightingEnabled extends js.Object
   
   @js.native
   sealed trait isShown extends js.Object
@@ -5587,6 +5638,12 @@ object igniteDashUiLibStrings {
   sealed trait showTooltip extends js.Object
   
   @js.native
+  sealed trait showTopOrBottomDialogForTable extends js.Object
+  
+  @js.native
+  sealed trait showTopOrBottomDialogForWorksheet extends js.Object
+  
+  @js.native
   sealed trait showing extends js.Object
   
   @js.native
@@ -6095,6 +6152,9 @@ object igniteDashUiLibStrings {
   
   @js.native
   sealed trait toggleSummariesRows extends js.Object
+  
+  @js.native
+  sealed trait toolTipType extends js.Object
   
   @js.native
   sealed trait toolbarButtonClick extends js.Object
@@ -7233,6 +7293,22 @@ object igniteDashUiLibStrings {
   @scala.inline
   def callee: callee = "callee".asInstanceOf[callee]
   @scala.inline
+  def calloutStyleUpdating: calloutStyleUpdating = "calloutStyleUpdating".asInstanceOf[calloutStyleUpdating]
+  @scala.inline
+  def calloutStyleUpdatingEventEnabled: calloutStyleUpdatingEventEnabled = "calloutStyleUpdatingEventEnabled".asInstanceOf[calloutStyleUpdatingEventEnabled]
+  @scala.inline
+  def calloutsContentMemberPath: calloutsContentMemberPath = "calloutsContentMemberPath".asInstanceOf[calloutsContentMemberPath]
+  @scala.inline
+  def calloutsItemsSource: calloutsItemsSource = "calloutsItemsSource".asInstanceOf[calloutsItemsSource]
+  @scala.inline
+  def calloutsLabelMemberPath: calloutsLabelMemberPath = "calloutsLabelMemberPath".asInstanceOf[calloutsLabelMemberPath]
+  @scala.inline
+  def calloutsVisible: calloutsVisible = "calloutsVisible".asInstanceOf[calloutsVisible]
+  @scala.inline
+  def calloutsXMemberPath: calloutsXMemberPath = "calloutsXMemberPath".asInstanceOf[calloutsXMemberPath]
+  @scala.inline
+  def calloutsYMemberPath: calloutsYMemberPath = "calloutsYMemberPath".asInstanceOf[calloutsYMemberPath]
+  @scala.inline
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   @scala.inline
   def cancelAll: cancelAll = "cancelAll".asInstanceOf[cancelAll]
@@ -7618,6 +7694,12 @@ object igniteDashUiLibStrings {
   def crosshairPoint: crosshairPoint = "crosshairPoint".asInstanceOf[crosshairPoint]
   @scala.inline
   def crosshairVisibility: crosshairVisibility = "crosshairVisibility".asInstanceOf[crosshairVisibility]
+  @scala.inline
+  def crosshairsAnnotationEnabled: crosshairsAnnotationEnabled = "crosshairsAnnotationEnabled".asInstanceOf[crosshairsAnnotationEnabled]
+  @scala.inline
+  def crosshairsDisplayMode: crosshairsDisplayMode = "crosshairsDisplayMode".asInstanceOf[crosshairsDisplayMode]
+  @scala.inline
+  def crosshairsSnapToData: crosshairsSnapToData = "crosshairsSnapToData".asInstanceOf[crosshairsSnapToData]
   @scala.inline
   def css: css = "css".asInstanceOf[css]
   @scala.inline
@@ -8280,6 +8362,10 @@ object igniteDashUiLibStrings {
   def filteringLogic: filteringLogic = "filteringLogic".asInstanceOf[filteringLogic]
   @scala.inline
   def filteringType: filteringType = "filteringType".asInstanceOf[filteringType]
+  @scala.inline
+  def finalValueAnnotationsVisible: finalValueAnnotationsVisible = "finalValueAnnotationsVisible".asInstanceOf[finalValueAnnotationsVisible]
+  @scala.inline
+  def financialChartLegend: financialChartLegend = "financialChartLegend".asInstanceOf[financialChartLegend]
   @scala.inline
   def findImmediateNodesByText: findImmediateNodesByText = "findImmediateNodesByText".asInstanceOf[findImmediateNodesByText]
   @scala.inline
@@ -8969,13 +9055,13 @@ object igniteDashUiLibStrings {
   @scala.inline
   def indicatorLongPeriod: indicatorLongPeriod = "indicatorLongPeriod".asInstanceOf[indicatorLongPeriod]
   @scala.inline
+  def indicatorMenuTemplate: indicatorMenuTemplate = "indicatorMenuTemplate".asInstanceOf[indicatorMenuTemplate]
+  @scala.inline
   def indicatorMultiplier: indicatorMultiplier = "indicatorMultiplier".asInstanceOf[indicatorMultiplier]
   @scala.inline
   def indicatorNegativeBrushes: indicatorNegativeBrushes = "indicatorNegativeBrushes".asInstanceOf[indicatorNegativeBrushes]
   @scala.inline
   def indicatorPeriod: indicatorPeriod = "indicatorPeriod".asInstanceOf[indicatorPeriod]
-  @scala.inline
-  def indicatorPickerTemplate: indicatorPickerTemplate = "indicatorPickerTemplate".asInstanceOf[indicatorPickerTemplate]
   @scala.inline
   def indicatorShortPeriod: indicatorShortPeriod = "indicatorShortPeriod".asInstanceOf[indicatorShortPeriod]
   @scala.inline
@@ -9029,6 +9115,8 @@ object igniteDashUiLibStrings {
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
   @scala.inline
+  def isCategoryHighlightingEnabled: isCategoryHighlightingEnabled = "isCategoryHighlightingEnabled".asInstanceOf[isCategoryHighlightingEnabled]
+  @scala.inline
   def isChecked: isChecked = "isChecked".asInstanceOf[isChecked]
   @scala.inline
   def isColumnSorted: isColumnSorted = "isColumnSorted".asInstanceOf[isColumnSorted]
@@ -9059,6 +9147,10 @@ object igniteDashUiLibStrings {
   @scala.inline
   def isInverted: isInverted = "isInverted".asInstanceOf[isInverted]
   @scala.inline
+  def isItemHighlightingEnabled: isItemHighlightingEnabled = "isItemHighlightingEnabled".asInstanceOf[isItemHighlightingEnabled]
+  @scala.inline
+  def isLegendVisible: isLegendVisible = "isLegendVisible".asInstanceOf[isLegendVisible]
+  @scala.inline
   def isLimitedToListValues: isLimitedToListValues = "isLimitedToListValues".asInstanceOf[isLimitedToListValues]
   @scala.inline
   def isMerged: isMerged = "isMerged".asInstanceOf[isMerged]
@@ -9082,6 +9174,8 @@ object igniteDashUiLibStrings {
   def isScrollLocked: isScrollLocked = "isScrollLocked".asInstanceOf[isScrollLocked]
   @scala.inline
   def isSelected: isSelected = "isSelected".asInstanceOf[isSelected]
+  @scala.inline
+  def isSeriesHighlightingEnabled: isSeriesHighlightingEnabled = "isSeriesHighlightingEnabled".asInstanceOf[isSeriesHighlightingEnabled]
   @scala.inline
   def isShown: isShown = "isShown".asInstanceOf[isShown]
   @scala.inline
@@ -10621,6 +10715,10 @@ object igniteDashUiLibStrings {
   @scala.inline
   def showTooltip: showTooltip = "showTooltip".asInstanceOf[showTooltip]
   @scala.inline
+  def showTopOrBottomDialogForTable: showTopOrBottomDialogForTable = "showTopOrBottomDialogForTable".asInstanceOf[showTopOrBottomDialogForTable]
+  @scala.inline
+  def showTopOrBottomDialogForWorksheet: showTopOrBottomDialogForWorksheet = "showTopOrBottomDialogForWorksheet".asInstanceOf[showTopOrBottomDialogForWorksheet]
+  @scala.inline
   def showing: showing = "showing".asInstanceOf[showing]
   @scala.inline
   def shown: shown = "shown".asInstanceOf[shown]
@@ -10960,6 +11058,8 @@ object igniteDashUiLibStrings {
   def toggleSelection: toggleSelection = "toggleSelection".asInstanceOf[toggleSelection]
   @scala.inline
   def toggleSummariesRows: toggleSummariesRows = "toggleSummariesRows".asInstanceOf[toggleSummariesRows]
+  @scala.inline
+  def toolTipType: toolTipType = "toolTipType".asInstanceOf[toolTipType]
   @scala.inline
   def toolbarButtonClick: toolbarButtonClick = "toolbarButtonClick".asInstanceOf[toolbarButtonClick]
   @scala.inline

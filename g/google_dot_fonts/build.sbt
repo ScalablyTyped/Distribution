@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_fonts"
-version := "1.0-dt-20180214Z-cae076"
+version := "1.0-dt-20190213Z-cae076"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Model extends ModelBase {
+trait Model extends js.Object {
   var _changing: scala.Boolean = js.native
   var _pending: scala.Boolean = js.native
   var _previousAttributes: js.Any = js.native

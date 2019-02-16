@@ -18,6 +18,7 @@ class Relation ()
   var relatedModel: js.Any = js.native
   var reverseRelation: js.Any = js.native
   def checkPreconditions(): scala.Boolean = js.native
+  def destroy(): scala.Unit = js.native
   def getReverseRelations(model: Model): Relation = js.native
   def setRelated(related: backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model]): scala.Unit = js.native
   def setRelated(related: backboneLib.backboneMod.Model): scala.Unit = js.native

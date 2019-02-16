@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google_dot_script_dot_client-side"
-version := "0.0-dt-20190101Z-a95137"
+version := "0.0-dt-20190213Z-a95137"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

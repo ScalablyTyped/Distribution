@@ -8,7 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("backbone-relational", "Store")
 @js.native
 class Store ()
-  extends backboneLib.backboneMod.BackboneNs.Events {
+  extends backboneLib.backboneMod.EventsMixin
+     with backboneLib.backboneMod.BackboneNs.Events {
   def addModelScope(scope: js.Any): scala.Unit = js.native
   def addOrphanRelation(relation: js.Any): scala.Unit = js.native
   def addReverseRelation(relation: js.Any): scala.Unit = js.native
@@ -17,9 +18,6 @@ class Store ()
   def getCollection(`type`: Model, create: scala.Boolean): backboneLib.backboneMod.Collection[backboneLib.backboneMod.Model] = js.native
   def getObjectByName(name: java.lang.String): js.Any = js.native
   def initializeRelation(model: js.Any, relation: js.Any, options: js.Any): js.Any = js.native
-  def on(eventName: js.Any): js.Any = js.native
-  def on(eventName: js.Any, callback: js.Any): js.Any = js.native
-  def on(eventName: js.Any, callback: js.Any, context: js.Any): js.Any = js.native
   def processOrphanRelations(): scala.Unit = js.native
   def register(model: Model): scala.Unit = js.native
   def removeModelScope(scope: js.Any): scala.Unit = js.native

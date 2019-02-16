@@ -55,6 +55,7 @@ trait IgGridUpdatingColumnSetting
   	 * "mask" An igMaskEditor will be created
   	 * "date" An igDateEditor will be created
   	 * "datepicker" An igDatePicker will be created
+  	 * "timepicker" An igTimePikcer will be created
   	 * "numeric" An igNumericEditor will be created
   	 * "checkbox" An igCheckboxEditor will be created
   	 * "currency" An igCurrencyEditor will be created

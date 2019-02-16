@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "flowdoc"
-version := "1.1-dt-20181109Z-36d243"
+version := "1.1-dt-20190213Z-36d243"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

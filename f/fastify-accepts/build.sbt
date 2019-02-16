@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "fastify-accepts"
-version := "0.5-dt-20181119Z-bdffba"
+version := "0.5-dt-20181119Z-fbffe2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-66b47c",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "accepts" % "1.3-dt-20180214Z-4ae034",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

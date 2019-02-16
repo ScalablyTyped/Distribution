@@ -5,11 +5,6 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ButtonProps extends BoxProps {
-  var border: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var borderColor: js.UndefOr[java.lang.String] = js.undefined
-  var borderRadius: js.UndefOr[scala.Double | java.lang.String] = js.undefined
-  var fontWeight: js.UndefOr[java.lang.String] = js.undefined
-  var variant: js.UndefOr[java.lang.String] = js.undefined
-}
+/* import warning: RemoveDifficultInheritance.summarizeChanges 
+- Dropped {[ P in std.Exclude<keyof react.react.HTMLProps<react.HTMLButtonElement>, keyof rebass.rebass.ButtonKnownProps> ]: react.react.HTMLProps<react.HTMLButtonElement>[P]} */ trait ButtonProps extends ButtonKnownProps
 

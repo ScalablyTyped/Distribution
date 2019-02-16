@@ -14,23 +14,10 @@ trait EnhancedLocation extends js.Object {
     * 
     * @remarks
     * <table>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
-    *     <td>ReadWriteItem</td>
-    *   </tr>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
-    *     <td>Compose</td>
-    *   </tr>
-    *   <tr>
-    *     <td>Errors</td>
-    *     <td>InvalidFormatError - The format of the specified data object is not valid.</td>
-    *   </tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
+    *   <tr><td>Errors</td><td>InvalidFormatError - The format of the specified data object is not valid.</td></tr>
     * </table>
-    * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `addAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;`
     * 
     * @param locationIdentifiers The locations to be added to the current list of locations.
     * @param options Optional. An object literal that contains one or more of the following properties.
@@ -58,19 +45,9 @@ trait EnhancedLocation extends js.Object {
     * 
     * @remarks
     * <table>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
-    *     <td>ReadItem</td>
-    *   </tr>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
-    *     <td>Compose or read</td>
-    *   </tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
     * </table>
-    * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `getAsync(callback?: (result: Office.AsyncResult<LocationDetails[]>) => void): void;`
     * 
     * @param options Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
@@ -95,19 +72,9 @@ trait EnhancedLocation extends js.Object {
     * 
     * @remarks
     * <table>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td>
-    *     <td>ReadWriteItem</td>
-    *   </tr>
-    *   <tr>
-    *     <td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td>
-    *     <td>Compose</td>
-    *   </tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
     * </table>
-    * 
-    * In addition to this signature, this method also has the following signatures:
-    * 
-    * `removeAsync(locationIdentifiers: LocationIdentifier[], callback?: (result: Office.AsyncResultStatus) => void): void;`
     * 
     * @param locationIdentifiers The locations to be removed from the current list of locations.
     * @param options Optional. An object literal that contains one or more of the following properties.

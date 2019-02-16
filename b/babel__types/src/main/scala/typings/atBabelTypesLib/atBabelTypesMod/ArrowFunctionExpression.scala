@@ -10,7 +10,7 @@ trait ArrowFunctionExpression extends BaseNode {
   var body: BlockStatement | Expression
   var expression: scala.Boolean | scala.Null
   var generator: scala.Boolean
-  var params: js.Array[LVal]
+  var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TypeAnnotation | TSTypeAnnotation | Noop | scala.Null
   var typeParameters: TypeParameterDeclaration | TSTypeParameterDeclaration | Noop | scala.Null
   @JSName("type")

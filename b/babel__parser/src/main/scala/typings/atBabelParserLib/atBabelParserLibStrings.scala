@@ -61,6 +61,9 @@ object atBabelParserLibStrings {
   sealed trait jsx extends js.Object
   
   @js.native
+  sealed trait minimal extends js.Object
+  
+  @js.native
   sealed trait module extends js.Object
   
   @js.native
@@ -83,6 +86,9 @@ object atBabelParserLibStrings {
   
   @js.native
   sealed trait script extends js.Object
+  
+  @js.native
+  sealed trait smart extends js.Object
   
   @js.native
   sealed trait throwExpressions extends js.Object
@@ -130,6 +136,8 @@ object atBabelParserLibStrings {
   @scala.inline
   def jsx: jsx = "jsx".asInstanceOf[jsx]
   @scala.inline
+  def minimal: minimal = "minimal".asInstanceOf[minimal]
+  @scala.inline
   def module: module = "module".asInstanceOf[module]
   @scala.inline
   def nullishCoalescingOperator: nullishCoalescingOperator = "nullishCoalescingOperator".asInstanceOf[nullishCoalescingOperator]
@@ -145,6 +153,8 @@ object atBabelParserLibStrings {
   def pipelineOperator: pipelineOperator = "pipelineOperator".asInstanceOf[pipelineOperator]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
+  @scala.inline
+  def smart: smart = "smart".asInstanceOf[smart]
   @scala.inline
   def throwExpressions: throwExpressions = "throwExpressions".asInstanceOf[throwExpressions]
   @scala.inline

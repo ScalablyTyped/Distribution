@@ -143,9 +143,10 @@ trait CustomXmlNode extends js.Object {
     * Asynchronously sets the text of an XML node in a custom XML part.
     *
     * @remarks
-    * <table><tr><td>Hosts</td><td>Word</td></tr>
-    *
-    * <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr></table>
+    * <table>
+    *   <tr><td>Hosts</td><td>Word</td></tr>
+    *   <tr><td>Requirement Sets</td><td>CustomXmlParts</td></tr>
+    * </table>
     *
     * @param text Required. The text value of the XML node.
     * @param options Provides an option for preserving context data of any type, unchanged, for use in a callback.

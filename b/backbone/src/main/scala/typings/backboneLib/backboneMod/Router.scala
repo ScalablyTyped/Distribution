@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation._
 
 @JSImport("backbone", "Router")
 @js.native
-class Router ()
-  extends backboneLib.backboneMod.BackboneNs.Router {
+class Router () extends js.Object {
   def this(options: backboneLib.backboneMod.BackboneNs.RouterOptions) = this()
 }
 

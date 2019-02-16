@@ -112,6 +112,9 @@ object electronLibStrings {
   sealed trait `background-tab` extends js.Object
   
   @js.native
+  sealed trait backgroundPage extends js.Object
+  
+  @js.native
   sealed trait `balloon-click` extends js.Object
   
   @js.native
@@ -149,6 +152,9 @@ object electronLibStrings {
   
   @js.native
   sealed trait `browser-window-focus` extends js.Object
+  
+  @js.native
+  sealed trait browserView extends js.Object
   
   @js.native
   sealed trait buffer extends js.Object
@@ -760,6 +766,9 @@ object electronLibStrings {
   sealed trait ntlm extends js.Object
   
   @js.native
+  sealed trait offscreen extends js.Object
+  
+  @js.native
   sealed trait `on-ac` extends js.Object
   
   @js.native
@@ -904,7 +913,22 @@ object electronLibStrings {
   sealed trait redirect extends js.Object
   
   @js.native
+  sealed trait remote extends js.Object
+  
+  @js.native
+  sealed trait `remote-get-builtin` extends js.Object
+  
+  @js.native
+  sealed trait `remote-get-current-web-contents` extends js.Object
+  
+  @js.native
+  sealed trait `remote-get-current-window` extends js.Object
+  
+  @js.native
   sealed trait `remote-get-global` extends js.Object
+  
+  @js.native
+  sealed trait `remote-get-guest-web-contents` extends js.Object
   
   @js.native
   sealed trait `remote-require` extends js.Object
@@ -1307,6 +1331,8 @@ object electronLibStrings {
   @scala.inline
   def `background-tab`: `background-tab` = "background-tab".asInstanceOf[`background-tab`]
   @scala.inline
+  def backgroundPage: backgroundPage = "backgroundPage".asInstanceOf[backgroundPage]
+  @scala.inline
   def `balloon-click`: `balloon-click` = "balloon-click".asInstanceOf[`balloon-click`]
   @scala.inline
   def `balloon-closed`: `balloon-closed` = "balloon-closed".asInstanceOf[`balloon-closed`]
@@ -1332,6 +1358,8 @@ object electronLibStrings {
   def `browser-window-created`: `browser-window-created` = "browser-window-created".asInstanceOf[`browser-window-created`]
   @scala.inline
   def `browser-window-focus`: `browser-window-focus` = "browser-window-focus".asInstanceOf[`browser-window-focus`]
+  @scala.inline
+  def browserView: browserView = "browserView".asInstanceOf[browserView]
   @scala.inline
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   @scala.inline
@@ -1739,6 +1767,8 @@ object electronLibStrings {
   @scala.inline
   def ntlm: ntlm = "ntlm".asInstanceOf[ntlm]
   @scala.inline
+  def offscreen: offscreen = "offscreen".asInstanceOf[offscreen]
+  @scala.inline
   def `on-ac`: `on-ac` = "on-ac".asInstanceOf[`on-ac`]
   @scala.inline
   def `on-battery`: `on-battery` = "on-battery".asInstanceOf[`on-battery`]
@@ -1835,7 +1865,17 @@ object electronLibStrings {
   @scala.inline
   def redirect: redirect = "redirect".asInstanceOf[redirect]
   @scala.inline
+  def remote: remote = "remote".asInstanceOf[remote]
+  @scala.inline
+  def `remote-get-builtin`: `remote-get-builtin` = "remote-get-builtin".asInstanceOf[`remote-get-builtin`]
+  @scala.inline
+  def `remote-get-current-web-contents`: `remote-get-current-web-contents` = "remote-get-current-web-contents".asInstanceOf[`remote-get-current-web-contents`]
+  @scala.inline
+  def `remote-get-current-window`: `remote-get-current-window` = "remote-get-current-window".asInstanceOf[`remote-get-current-window`]
+  @scala.inline
   def `remote-get-global`: `remote-get-global` = "remote-get-global".asInstanceOf[`remote-get-global`]
+  @scala.inline
+  def `remote-get-guest-web-contents`: `remote-get-guest-web-contents` = "remote-get-guest-web-contents".asInstanceOf[`remote-get-guest-web-contents`]
   @scala.inline
   def `remote-require`: `remote-require` = "remote-require".asInstanceOf[`remote-require`]
   @scala.inline

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "w3c-image-capture"
-version := "1.0-dt-20181121Z-ce1863"
+version := "1.0-dt-20190213Z-ce1863"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

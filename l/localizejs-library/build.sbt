@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "localizejs-library"
-version := "1.0-dt-20180214Z-65e5e9"
+version := "1.0-dt-20190213Z-65e5e9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

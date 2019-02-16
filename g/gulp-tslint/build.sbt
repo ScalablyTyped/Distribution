@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-tslint"
-version := "8.1.3-74a9c7"
+version := "8.1.3-1545bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,22 +11,22 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-64d288",
   "org.scalablytyped" %%% "chalk" % "2.4.2-413387",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
-  "org.scalablytyped" %%% "commander" % "2.19.0-3dcbd0",
+  "org.scalablytyped" %%% "commander" % "2.19.0-c41a23",
   "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-a792d3",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",
   "org.scalablytyped" %%% "fancy-log" % "1.3-dt-20190212Z-897bb6",
-  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-77c3f4",
+  "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-e20e66",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-9bda5b",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-029f0e",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190212Z-0d969a",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
   "org.scalablytyped" %%% "plugin-error" % "0.1-dt-20190212Z-0cfa58",
-  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-879b9a",
+  "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-e13e72",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-c9e889",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-20da60",
-  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-069b8e",
+  "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-37e02e",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "tslint" % "5.12.1-52f545",
+  "org.scalablytyped" %%% "tslint" % "5.12.1-db3e79",
   "org.scalablytyped" %%% "tsutils" % "2.29.0-e258d9",
   "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4")
 publishArtifact in packageDoc := false

@@ -39,6 +39,38 @@ trait IgFinancialChart
   	 */
   var brushes: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Occurs when the style of a callout is updated.
+  	 */
+  var calloutStyleUpdating: js.UndefOr[CalloutStyleUpdatingEvent] = js.undefined
+  /**
+  	 * Gets or sets if event annotations should be displayed.
+  	 */
+  var calloutStyleUpdatingEventEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the member path of the content data for the callouts.
+  	 */
+  var calloutsContentMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the collection of callout data to be annotated.
+  	 */
+  var calloutsItemsSource: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the member path of the label data for the callouts.
+  	 */
+  var calloutsLabelMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets if callouts should be displayed.
+  	 */
+  var calloutsVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the member path of the X data for the callouts.
+  	 */
+  var calloutsXMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the member path of the Y data for the callouts.
+  	 */
+  var calloutsYMemberPath: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * The type of price series to display in the main chart.
   	 *
   	 * Valid values:
@@ -54,6 +86,25 @@ trait IgFinancialChart
   	 * Gets or sets a function for creating wrapped tooltip
   	 */
   var createWrappedTooltip: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets whether annotations are shown along the axis for crosshair values
+  	 */
+  var crosshairsAnnotationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the crosshairs to be displayed.
+  	 *
+  	 * Valid values:
+  	 * "default" Display default number of crosshair lines in the chart.
+  	 * "none" Display no crosshair lines in the chart.
+  	 * "horizontal" Display horizontal line of crosshairs in the chart.
+  	 * "vertical" Display vertical line of crosshairs in the chart.
+  	 * "both" Display both horizontal and vertical lines of crosshairs in the chart.
+  	 */
+  var crosshairsDisplayMode: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets whether crosshairs will snap to the nearest data point.
+  	 */
+  var crosshairsSnapToData: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * The names of custom indicators to add to the chart.
   	 * When CustomIndicatorNames is set, the ApplyCustomIndicators event will be raised for each custom indicator name.
@@ -94,6 +145,14 @@ trait IgFinancialChart
   	 */
   var excludedProperties: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Gets or sets whether annotations for the final value of each series is displayed on the axis.
+  	 */
+  var finalValueAnnotationsVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets a legend displayed between toolbar and chart's plot area
+  	 */
+  var financialChartLegend: js.UndefOr[js.Any] = js.undefined
+  /**
   	 * The height of the chart.
   	 */
   var height: js.UndefOr[scala.Double] = js.undefined
@@ -123,6 +182,7 @@ trait IgFinancialChart
   	 * The long period of financial indicators, where applicable.
   	 */
   var indicatorLongPeriod: js.UndefOr[scala.Double] = js.undefined
+  var indicatorMenuTemplate: js.UndefOr[js.Any] = js.undefined
   /**
   	 * The multiplier of financial indicators, where applicable.
   	 */
@@ -136,7 +196,6 @@ trait IgFinancialChart
   	 * The period of financial indicators, where applicable.
   	 */
   var indicatorPeriod: js.UndefOr[scala.Double] = js.undefined
-  var indicatorPickerTemplate: js.UndefOr[js.Any] = js.undefined
   /**
   	 * The short period of financial indicators, where applicable.
   	 */
@@ -161,6 +220,15 @@ trait IgFinancialChart
   	 * Gets or sets whether the chart can be horizontally zoomed through user interactions.
   	 */
   var isHorizontalZoomEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets weather or not a legend is visible between toolbar and chart's plot area
+  	 */
+  var isLegendVisible: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 */
+  var isSeriesHighlightingEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * A boolean property controlling the visibility of the toolbar.
   	 */
@@ -392,6 +460,16 @@ trait IgFinancialChart
   	 * Gets or sets the top margin of chart title
   	 */
   var titleTopMargin: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the style of tooltip to be displayed.
+  	 *
+  	 * Valid values:
+  	 * "default" Display default tooltip for each series in the chart.
+  	 * "item" Display individual tooltips for all series in the chart.
+  	 * "category" Display combined tooltip for all series in the chart.
+  	 * "none" Display no tooltips in the chart.
+  	 */
+  var toolTipType: js.UndefOr[java.lang.String] = js.undefined
   var toolbarHeight: js.UndefOr[scala.Double] = js.undefined
   var toolbarTemplate: js.UndefOr[js.Any] = js.undefined
   /**
@@ -590,6 +668,14 @@ trait IgFinancialChart
   	 */
   var xAxisMajorStrokeThickness: js.UndefOr[scala.Double] = js.undefined
   /**
+  	 * Gets or sets maximum value on x-axis
+  	 */
+  var xAxisMaximumValue: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets minimum value on x-axis
+  	 */
+  var xAxisMinimumValue: js.UndefOr[js.Any] = js.undefined
+  /**
   	 * Gets or sets the color to apply to minor gridlines along the X-axis.
   	 */
   var xAxisMinorStroke: js.UndefOr[java.lang.String] = js.undefined
@@ -701,7 +787,7 @@ trait IgFinancialChart
   	 */
   var yAxisIsLogarithmic: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  	 * Gets or sets the format for labels along the Y-axis.
+  	 * Gets or sets the property or string from which the labels are derived.
   	 */
   var yAxisLabel: js.UndefOr[js.Any] = js.undefined
   /**
@@ -886,11 +972,11 @@ trait IgFinancialChart
   	 */
   var yAxisTitleTopMargin: js.UndefOr[scala.Double] = js.undefined
   /**
-  	 * The type of series to display in the zoom slider pane.
+  	 * Gets or sets type of series to display in the zoom slider pane.
   	 *
   	 * Valid values:
   	 * "none" Do not display the zoom slider pane.
-  	 * "auto"
+  	 * "auto" In the zoom slider pane, match the series type in the price pane.
   	 * "bar" Display financial bar series in the zoom slider pane.
   	 * "candle" Display candle series in the zoom slider pane.
   	 * "column" Display column series in the zoom slider pane.
@@ -898,7 +984,13 @@ trait IgFinancialChart
   	 * "area" Display an area series in the zoom slider pane.
   	 */
   var zoomSliderType: js.UndefOr[java.lang.String] = js.undefined
-  var zoomSliderXAxisMajorStroke: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets stroke brush of major gridlines on x-axis of the zoom slider pane
+  	 */
+  var zoomSliderXAxisMajorStroke: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets thickness of major gridlines on x-axis of the zoom slider pane
+  	 */
   var zoomSliderXAxisMajorStrokeThickness: js.UndefOr[scala.Double] = js.undefined
 }
 

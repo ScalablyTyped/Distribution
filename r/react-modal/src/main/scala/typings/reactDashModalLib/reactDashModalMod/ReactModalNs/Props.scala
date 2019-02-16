@@ -56,5 +56,7 @@ trait Props extends js.Object {
   var shouldReturnFocusAfterClose: js.UndefOr[scala.Boolean] = js.undefined
   /* Object indicating styles to be used for the modal, divided into overlay and content styles. */
   var style: js.UndefOr[Styles] = js.undefined
+  /* String value of data-test-id attibute to be applied to to the modal content. */
+  var testId: js.UndefOr[java.lang.String] = js.undefined
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "qrcode-generator"
-version := "1.4.2-133fa7"
+version := "1.4.3-9547c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait WalkerItem extends js.Object {
-  val path: java.lang.String
-  val stats: fsDashExtraLib.fsDashExtraMod.Stats
+  var path: java.lang.String
+  var stats: fsDashExtraLib.fsDashExtraMod.Stats
 }
 

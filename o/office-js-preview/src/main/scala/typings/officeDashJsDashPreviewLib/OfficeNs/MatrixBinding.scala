@@ -34,18 +34,20 @@ trait MatrixBinding extends Binding {
     * Gets the number of columns in the matrix data structure, as an integer value.
     *
     * @remarks
-    * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-    *
-    * <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
+    * <table>
+    *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+    *   <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr>
+    * </table>
     */
   var columnCount: scala.Double = js.native
   /**
     * Gets the number of rows in the matrix data structure, as an integer value.
     *
     * @remarks
-    * <table><tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
-    *
-    * <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr></table>
+    * <table>
+    *   <tr><td>Hosts</td><td>Access, Excel, PowerPoint, Project, Word</td></tr>
+    *   <tr><td>Requirement Sets</td><td>MatrixBindings</td></tr>
+    * </table>
     */
   var rowCount: scala.Double = js.native
 }

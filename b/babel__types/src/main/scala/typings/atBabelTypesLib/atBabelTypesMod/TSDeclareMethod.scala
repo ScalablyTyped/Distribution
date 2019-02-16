@@ -16,7 +16,7 @@ trait TSDeclareMethod extends BaseNode {
   var key: Identifier | StringLiteral | NumericLiteral | Expression
   var kind: atBabelTypesLib.atBabelTypesLibStrings.get | atBabelTypesLib.atBabelTypesLibStrings.set | atBabelTypesLib.atBabelTypesLibStrings.method | atBabelTypesLib.atBabelTypesLibStrings.constructor
   var optional: scala.Boolean | scala.Null
-  var params: js.Array[LVal]
+  var params: js.Array[Identifier | Pattern | RestElement | TSParameterProperty]
   var returnType: TSTypeAnnotation | Noop | scala.Null
   var static: scala.Boolean | scala.Null
   var typeParameters: TSTypeParameterDeclaration | Noop | scala.Null

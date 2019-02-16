@@ -17,6 +17,7 @@ class ApolloServerBase protected () extends js.Object {
   var extensions: js.Any = js.native
   var graphqlPath: java.lang.String = js.native
   var initializeDocumentStore: js.Any = js.native
+  var parseOptions: js.Any = js.native
   var playgroundOptions: js.UndefOr[
     atApollographqlGraphqlDashPlaygroundDashHtmlLib.distRenderDashPlaygroundDashPageMod.RenderPageOptions
   ] = js.native

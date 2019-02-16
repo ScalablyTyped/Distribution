@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-move"
-version := "5.1.0-3e6cc5"
+version := "5.2.0-3e6cc5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

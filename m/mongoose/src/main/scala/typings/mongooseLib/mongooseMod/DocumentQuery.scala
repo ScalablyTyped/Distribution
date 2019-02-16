@@ -7,6 +7,20 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
+  /** Executes this query and returns a promise */
+  var `then`: js.Function0[js.Promise[_]] | (js.Function1[/* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], js.Promise[_]]) | (js.Function2[
+    /* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) | (js.Function2[
+    /* onfulfilled */ js.UndefOr[scala.Nothing], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) | (js.Function2[
+    /* onfulfilled */ scala.Null, 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) = js.native
   /**
     * Specifies a javascript function or expression to pass to MongoDBs query system.
     * Only use $where when you have a condition that cannot be met using other MongoDB
@@ -521,13 +535,6 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def tailable(): this.type = js.native
   def tailable(bool: scala.Boolean): this.type = js.native
   def tailable(bool: scala.Boolean, opts: mongooseLib.Anon_NumberOfRetries): this.type = js.native
-  /** Executes this query and returns a promise */
-  def `then`[TRes](): js.Promise[TRes] = js.native
-  def `then`[TRes](resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native
-  def `then`[TRes](
-    resolve: js.Function1[/* res */ T, scala.Unit | TRes | js.Thenable[TRes]],
-    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]
-  ): js.Promise[TRes] = js.native
   /**
     * Converts this query to a customized, reusable query
     * constructor with all arguments and options retained.

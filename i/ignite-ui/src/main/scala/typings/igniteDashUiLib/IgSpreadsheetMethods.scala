@@ -26,6 +26,10 @@ trait IgSpreadsheetMethods extends js.Object {
   	 */
   def executeAction(action: js.Object): scala.Boolean
   /**
+  	 * Exports visual data from the spreadsheet to aid in unit testing
+  	 */
+  def exportVisualData(): scala.Unit
+  /**
   	 * Forces any pending deferred work to render on the spreadsheet before continuing
   	 */
   def flush(): scala.Unit
@@ -81,6 +85,18 @@ trait IgSpreadsheetMethods extends js.Object {
   	 * @param spreadsheetFilterDialogOption Optional enumeration that specifies the initial display of the filter dialog.
   	 */
   def showFilterDialogForWorksheet(relativeColumnIndex: scala.Double, spreadsheetFilterDialogOption: js.Object): scala.Unit
+  /**
+  	 * Shows the top or bottom dialog for the specified relative column of the [filterSettings](ig.excel.Worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
+  	 *
+  	 * @param worksheetTableColumn A [region](ig.excel.WorksheetTableColumn) whose filter is to be viewed or changed.
+  	 */
+  def showTopOrBottomDialogForTable(worksheetTableColumn: js.Object): scala.Unit
+  /**
+  	 * Shows the top or bottom dialog for the specified relative column of the [filterSettings](ig.excel.worksheet#methods:filterSettings) of the [activeWorksheet](ui.igspreadsheet#options:activeWorksheet).
+  	 *
+  	 * @param relativeColumnIndex A zero based column index relative to the [region](ig.excel.worksheetFilterSettings#methods:region) of the active worksheet.
+  	 */
+  def showTopOrBottomDialogForWorksheet(relativeColumnIndex: scala.Double): scala.Unit
   /**
   	 * Notify the spreadsheet that style information used for rendering the spreadsheet may have been updated.
   	 */

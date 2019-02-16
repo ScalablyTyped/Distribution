@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("redux-form/lib/Field", "Field")
 @js.native
-class Field[P] ()
-  extends reactLib.reactMod.Component[BaseFieldProps[P] with P, js.Object, js.Any] {
+class Field[P /* <: GenericFieldHTMLAttributes | BaseFieldProps[js.Object] */] ()
+  extends reactLib.reactMod.Component[P, js.Object, js.Any] {
   var dirty: scala.Boolean = js.native
   var name: java.lang.String = js.native
   var pristine: scala.Boolean = js.native

@@ -23,6 +23,46 @@ trait IgDataChartSeries
   	 */
   var areaFillOpacity: js.UndefOr[scala.Double] = js.undefined
   /**
+  	 * Sets or gets a function which takes an object that produces a formatted label for displaying in the axis annotation.
+  	 */
+  var axisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var axisAnnotationBackground: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the precision to use displaying values for interpolated crosshair positions.
+  	 */
+  var axisAnnotationInterpolatedValuePrecision: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the axis annotation outline. Leave unset for an automatic value.
+  	 */
+  var axisAnnotationOutline: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the bottom padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var axisAnnotationPaddingBottom: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the left padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var axisAnnotationPaddingLeft: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the right padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var axisAnnotationPaddingRight: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the top padding to use withing the axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var axisAnnotationPaddingTop: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the stroke thickness for the axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var axisAnnotationStrokeThickness: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the axis annotation text. Leave unset for an automatic value.
+  	 */
+  var axisAnnotationTextColor: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets the width to use for the highlight region if highlighting items in a grid aligned series (line, spline, etc), with a banded shape.
   	 */
   var bandHighlightWidth: js.UndefOr[scala.Double] = js.undefined
@@ -30,6 +70,68 @@ trait IgDataChartSeries
   	 * Gets or sets the brush to use for the series.
   	 */
   var brush: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the brush that specifies how the backgrounds for the callouts of the layer are painted.
+  	 */
+  var calloutBackground: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the strategy to use for avoiding collisions between the callouts in this layer. Leave unset for an automatic value.
+  	 *
+  	 * Valid values:
+  	 * "auto" automatically decide the collision strategy.
+  	 * "simulatedAnnealing" use a simulated annealing based collision strategy. This is higher quality, but takes longer, and is performed time-sliced in the background until an acceptable quality is reached.
+  	 * "greedy" use a greedy algorithm to avoid collisions. This is cheap and predictable, but of comparatively low quality.
+  	 * "greedyCenterOfMass" use a greedy algorithm with localized center of mass hints to avoid collisions. This is relatively cheap to perform, compared to the simulated annealing approach, but is of comparatively lower quality.
+  	 */
+  var calloutCollisionMode: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Sets or gets a function which allows you to decide upon the content that gets used for an automatically created callout.
+  	 */
+  var calloutContentUpdating: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Sets or gets a function which allows you to decide upon the label that gets used for an automatically created callout.
+  	 */
+  var calloutLabelUpdating: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the brush that specifies how the leader lines for the callouts of the layer are painted.
+  	 */
+  var calloutLeaderBrush: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the brush that specifies how the outlines for the callouts of the layer are painted.
+  	 */
+  var calloutOutline: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the bottom padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var calloutPaddingBottom: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the left padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var calloutPaddingLeft: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the right padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var calloutPaddingRight: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the top padding to use withing the callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var calloutPaddingTop: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the padding to add to the callout positioning. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var calloutPositionPadding: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Sets or gets a function which allows you to decide upon the series that gets used for a data bound callout.
+  	 */
+  var calloutSeriesSelecting: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the stroke thickness for the callout backing. Leave unset for an automatic value.
+  	 */
+  var calloutStrokeThickness: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the callout text. Leave unset for an automatic value.
+  	 */
+  var calloutTextColor: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Gets or sets whether to clip the series to the bounds.
   	 * Setting this to true can effect performance.
@@ -51,11 +153,15 @@ trait IgDataChartSeries
   	 * Valid values:
   	 * "maximum" Consolidated items will be positioned using their maximum value.
   	 * "minimum" Consolidated items will be positioned using their minimum value.
-  	 * "median" Consolidated items will be positioned using their median value.
+  	 * "median" Consolidated items will be positioned at the midpoint of the range.
   	 * "relativeMinimum" Consolidated items will be positioned using the value nearest to the reference value of the corresponding axis.
   	 * "relativeMaximum" Consolidated items will be positioned using the value farthest from the reference value of the corresponding axis.
   	 */
   var consolidatedColumnVerticalPosition: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the content mapping property for the callouts.
+  	 */
+  var contentMemberPath: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Sets the position a cursor position to use instead of the current mouse cursor position for displaying the annotations in this layer.
   	 * Should be an object with an x and a y property in world coordinates (ranging from 0 to 1)
@@ -101,6 +207,16 @@ trait IgDataChartSeries
   	 */
   var fillScale: js.UndefOr[js.Any] = js.undefined
   /**
+  	 * Gets or sets the stroke thickness for the y axis annotation backing. Leave unset for an automatic value.
+  	 *
+  	 * Valid values:
+  	 * "auto" a mode is selected automatically
+  	 * "finalVisible" displays the last value visible.
+  	 * "finalVisibleInterpolated" displays an interploated last value for when the series leaves view.
+  	 * "final" displays the last value in the series, whether visible or not.
+  	 */
+  var finalValueSelectionMode: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets the value that maps to the maximum heat color.
   	 */
   var heatMaximum: js.UndefOr[scala.Double] = js.undefined
@@ -139,6 +255,10 @@ trait IgDataChartSeries
   	 */
   var hitTestMode: js.UndefOr[java.lang.String] = js.undefined
   /**
+  	 * Gets or sets the color to use for the horizontal line. Leave null for an automatic value.
+  	 */
+  var horizontalLineStroke: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets whether the horizontal crosshair portion of the layer should be visible.
   	 *
   	 * Valid values:
@@ -150,6 +270,14 @@ trait IgDataChartSeries
   	 * Gets or sets the number of values to hide at the beginning of the indicator.
   	 */
   var ignoreFirst: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets whether to draw annotations over the axes where the crosshair meets with them.
+  	 */
+  var isAxisAnnotationEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets whether to allow the callouts to be variable distances from the target points, for suppporting collision modes.
+  	 */
+  var isCalloutOffsettingEnabled: js.UndefOr[scala.Boolean] = js.undefined
   /**
   	 * Gets or sets whether a custom category marker style is allowed. Setting this to true will case the assigningCategoryMarkerStyle event to get fired, if provided.
   	 */
@@ -174,6 +302,10 @@ trait IgDataChartSeries
   	 * Gets or sets if the series should play a transition in animation when the data source is assigned. Note: Transitions are not currently supported for stacked series.
   	 */
   var isTransitionInEnabled: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+  	 * Gets or sets the key mapping property for the callouts.
+  	 */
+  var keyMemberPath: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Gets or sets the Label mapping property for the current series object.
   	 */
@@ -650,6 +782,10 @@ trait IgDataChartSeries
   	 */
   var valueMemberPath: js.UndefOr[java.lang.String] = js.undefined
   /**
+  	 * Gets or sets the color to use for the vertical line. Leave null for an automatic value.
+  	 */
+  var verticalLineStroke: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets whether the vertical crosshair portion of the layer should be visible.
   	 *
   	 * Valid values:
@@ -666,6 +802,46 @@ trait IgDataChartSeries
   	 */
   var xAxis: js.UndefOr[java.lang.String] = js.undefined
   /**
+  	 * Sets or gets a function which takes an object that produces a formatted label for displaying in the x axis annotation.
+  	 */
+  var xAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the x axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var xAxisAnnotationBackground: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the precision to use displaying values for interpolated crosshair positions.
+  	 */
+  var xAxisAnnotationInterpolatedValuePrecision: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the x axis annotation outline. Leave unset for an automatic value.
+  	 */
+  var xAxisAnnotationOutline: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the bottom padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var xAxisAnnotationPaddingBottom: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the left padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var xAxisAnnotationPaddingLeft: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the right padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var xAxisAnnotationPaddingRight: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the top padding to use withing the x axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var xAxisAnnotationPaddingTop: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the stroke thickness for the x axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var xAxisAnnotationStrokeThickness: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the x axis annotation text. Leave unset for an automatic value.
+  	 */
+  var xAxisAnnotationTextColor: js.UndefOr[java.lang.String] = js.undefined
+  /**
   	 * Gets or sets the value mapping property for the current series object.
   	 */
   var xMemberPath: js.UndefOr[java.lang.String] = js.undefined
@@ -673,6 +849,46 @@ trait IgDataChartSeries
   	 * Gets or sets the effective y-axis for the current object.
   	 */
   var yAxis: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Sets or gets a function which takes an object that produces a formatted label for displaying in the y axis annotation.
+  	 */
+  var yAxisAnnoationFormatLabel: js.UndefOr[js.Any] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the y axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var yAxisAnnotationBackground: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the precision to use displaying values for interpolated crosshair positions.
+  	 */
+  var yAxisAnnotationInterpolatedValuePrecision: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the y axis annotation outline. Leave unset for an automatic value.
+  	 */
+  var yAxisAnnotationOutline: js.UndefOr[java.lang.String] = js.undefined
+  /**
+  	 * Gets or sets the bottom padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var yAxisAnnotationPaddingBottom: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the left padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var yAxisAnnotationPaddingLeft: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the right padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var yAxisAnnotationPaddingRight: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the top padding to use withing the y axis annotation callout. Leaving this NaN will use an automatic value related to the axis label margins.
+  	 */
+  var yAxisAnnotationPaddingTop: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the stroke thickness for the y axis annotation backing. Leave unset for an automatic value.
+  	 */
+  var yAxisAnnotationStrokeThickness: js.UndefOr[scala.Double] = js.undefined
+  /**
+  	 * Gets or sets the color to use for the y axis annotation text. Leave unset for an automatic value.
+  	 */
+  var yAxisAnnotationTextColor: js.UndefOr[java.lang.String] = js.undefined
   /**
   	 * Gets or sets the value mapping property for the current series object.
   	 */

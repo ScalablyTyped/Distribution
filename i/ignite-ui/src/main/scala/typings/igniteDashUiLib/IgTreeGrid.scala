@@ -40,11 +40,12 @@ trait IgTreeGrid
   	 */
   var autoCommit: js.UndefOr[scala.Boolean] = js.undefined
   /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
+  	 * Sets gets ability to automatically format text in cells for numeric, date and time columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 *
   	 * Valid values:
   	 * "date" formats only Date columns
+  	 * "time" formats only Time columns
   	 * "number" formats only number columns
   	 * "dateandnumber" formats both Date and number columns
   	 * "true" formats Date and number columns

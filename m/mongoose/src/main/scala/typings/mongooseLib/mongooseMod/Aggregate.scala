@@ -11,6 +11,20 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait Aggregate[T] extends js.Object {
+  /** Provides promise for aggregate. */
+  var `then`: js.Function0[js.Promise[_]] | (js.Function1[/* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], js.Promise[_]]) | (js.Function2[
+    /* onfulfilled */ js.Function1[/* value */ T, _ | js.Thenable[_]], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) | (js.Function2[
+    /* onfulfilled */ js.UndefOr[scala.Nothing], 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) | (js.Function2[
+    /* onfulfilled */ scala.Null, 
+    /* onrejected */ js.Function1[/* reason */ js.Any, _ | js.Thenable[_]], 
+    js.Promise[_]
+  ]) = js.native
   /** Adds a cursor flag */
   def addCursorFlag(flag: java.lang.String, value: scala.Boolean): this.type = js.native
   /**
@@ -141,13 +155,6 @@ trait Aggregate[T] extends js.Object {
     */
   def sort(arg: java.lang.String): this.type = js.native
   def sort(arg: js.Any): this.type = js.native
-  /** Provides promise for aggregate. */
-  def `then`[TRes](): js.Promise[TRes] = js.native
-  def `then`[TRes](resolve: js.Function1[/* val */ T, scala.Unit | TRes | js.Thenable[TRes]]): js.Promise[TRes] = js.native
-  def `then`[TRes](
-    resolve: js.Function1[/* val */ T, scala.Unit | TRes | js.Thenable[TRes]],
-    reject: js.Function1[/* err */ js.Any, scala.Unit | TRes | js.Thenable[TRes]]
-  ): js.Promise[TRes] = js.native
   /**
     * Appends new custom $unwind operator(s) to this aggregate pipeline.
     * Note that the $unwind operator requires the path name to start with '$'.

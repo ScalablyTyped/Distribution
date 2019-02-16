@@ -2580,6 +2580,142 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Occurs when the style of a callout is updated.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating
+  ): CalloutStyleUpdatingEvent = js.native
+  /**
+  	 * Gets  if event annotations should be displayed.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if event annotations should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Occurs when the style of a callout is updated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating,
+    optionValue: CalloutStyleUpdatingEvent
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the content data for the callouts.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the content data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the collection of callout data to be annotated.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource
+  ): js.Any = js.native
+  /**
+  	 * Sets the collection of callout data to be annotated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the label data for the callouts.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the label data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  if callouts should be displayed.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if callouts should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the X data for the callouts.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the X data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the Y data for the callouts.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the Y data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
   	 * Gets  the type of chart series to generate from the data.
   	 */
   def igCategoryChart(
@@ -2612,6 +2748,57 @@ trait JQuery extends js.Object {
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.createWrappedTooltip,
     optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether annotations are shown along the axis for crosshair values
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations are shown along the axis for crosshair values
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the crosshairs to be displayed.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the crosshairs to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether crosshairs will snap to the nearest data point.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether crosshairs will snap to the nearest data point.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData,
+    optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
   	 * Event which is raised before data binding.
@@ -2736,6 +2923,23 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Gets  whether annotations for the final value of each series is displayed on the axis.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations for the final value of each series is displayed on the axis.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
   	 * The height of the chart.
   	 */
   def igCategoryChart(
@@ -2797,6 +3001,23 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Gets  whether the category should be highlighted when hovered
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isCategoryHighlightingEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether the category should be highlighted when hovered
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isCategoryHighlightingEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
   	 * Gets  whether the chart can be horizontally zoomed through user interactions.
   	 */
   def igCategoryChart(
@@ -2811,6 +3032,42 @@ trait JQuery extends js.Object {
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.isHorizontalZoomEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether the item should be highlighted when hovered
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isItemHighlightingEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether the item should be highlighted when hovered
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isItemHighlightingEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled,
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -3595,6 +3852,23 @@ trait JQuery extends js.Object {
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.title,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the style of tooltip to be displayed.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the style of tooltip to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igCategoryChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType,
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
@@ -4688,7 +4962,7 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
-  	 * Gets  the format for labels along the Y-axis.
+  	 * Gets  the property or string from which the labels are derived.
   	 */
   def igCategoryChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
@@ -4882,7 +5156,7 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * Sets the format for labels along the Y-axis.
+  	 * Sets the property or string from which the labels are derived.
   	 *
   	 * @optionValue New value to be set.
   	 */
@@ -16377,6 +16651,142 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Occurs when the style of a callout is updated.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating
+  ): CalloutStyleUpdatingEvent = js.native
+  /**
+  	 * Gets  if event annotations should be displayed.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if event annotations should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Occurs when the style of a callout is updated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating,
+    optionValue: CalloutStyleUpdatingEvent
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the content data for the callouts.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the content data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the collection of callout data to be annotated.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource
+  ): js.Any = js.native
+  /**
+  	 * Sets the collection of callout data to be annotated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the label data for the callouts.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the label data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  if callouts should be displayed.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if callouts should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the X data for the callouts.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the X data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the Y data for the callouts.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the Y data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
   	 * The type of price series to display in the main chart.
   	 */
   def igFinancialChart(
@@ -16418,6 +16828,57 @@ trait JQuery extends js.Object {
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.createWrappedTooltip,
     optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether annotations are shown along the axis for crosshair values
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations are shown along the axis for crosshair values
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the crosshairs to be displayed.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the crosshairs to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether crosshairs will snap to the nearest data point.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether crosshairs will snap to the nearest data point.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData,
+    optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
   	 * The names of custom indicators to add to the chart.
@@ -16561,6 +17022,40 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Gets  whether annotations for the final value of each series is displayed on the axis.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations for the final value of each series is displayed on the axis.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  a legend displayed between toolbar and chart's plot area
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.financialChartLegend
+  ): js.Any = js.native
+  /**
+  	 * Sets a legend displayed between toolbar and chart's plot area
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.financialChartLegend,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
   	 * The height of the chart.
   	 */
   def igFinancialChart(
@@ -16674,6 +17169,15 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorLongPeriod,
     optionValue: scala.Double
   ): scala.Unit = js.native
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorMenuTemplate
+  ): js.Any = js.native
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorMenuTemplate,
+    optionValue: js.Any
+  ): scala.Unit = js.native
   /**
   	 * The multiplier of financial indicators, where applicable.
   	 */
@@ -16726,15 +17230,6 @@ trait JQuery extends js.Object {
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorPeriod,
     optionValue: scala.Double
-  ): scala.Unit = js.native
-  def igFinancialChart(
-    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
-    optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorPickerTemplate
-  ): js.Any = js.native
-  def igFinancialChart(
-    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
-    optionName: igniteDashUiLib.igniteDashUiLibStrings.indicatorPickerTemplate,
-    optionValue: js.Any
   ): scala.Unit = js.native
   /**
   	 * The short period of financial indicators, where applicable.
@@ -16836,6 +17331,42 @@ trait JQuery extends js.Object {
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.isHorizontalZoomEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  weather or not a legend is visible between toolbar and chart's plot area
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isLegendVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets weather or not a legend is visible between toolbar and chart's plot area
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isLegendVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled,
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -17731,6 +18262,23 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.title,
     optionValue: java.lang.String
   ): scala.Unit = js.native
+  /**
+  	 * Gets  the style of tooltip to be displayed.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the style of tooltip to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.toolbarHeight
@@ -18374,6 +18922,40 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
+  	 * Gets  maximum value on x-axis
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMaximumValue
+  ): js.Any = js.native
+  /**
+  	 * Sets maximum value on x-axis
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMaximumValue,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  minimum value on x-axis
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMinimumValue
+  ): js.Any = js.native
+  /**
+  	 * Sets minimum value on x-axis
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igFinancialChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.xAxisMinimumValue,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
   	 * Gets  the color to apply to minor gridlines along the X-axis.
   	 */
   def igFinancialChart(
@@ -18801,7 +19383,7 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
-  	 * Gets  the format for labels along the Y-axis.
+  	 * Gets  the property or string from which the labels are derived.
   	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
@@ -18995,7 +19577,7 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * Sets the format for labels along the Y-axis.
+  	 * Sets the property or string from which the labels are derived.
   	 *
   	 * @optionValue New value to be set.
   	 */
@@ -19432,14 +20014,14 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * The type of series to display in the zoom slider pane.
+  	 * Gets  type of series to display in the zoom slider pane.
   	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderType
   ): java.lang.String = js.native
   /**
-  	 * The type of series to display in the zoom slider pane.
+  	 * Sets type of series to display in the zoom slider pane.
   	 *
   	 * @optionValue New value to be set.
   	 */
@@ -19448,23 +20030,39 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderType,
     optionValue: java.lang.String
   ): scala.Unit = js.native
+  /**
+  	 * Gets  stroke brush of major gridlines on x-axis of the zoom slider pane
+  	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderXAxisMajorStroke
-  ): js.Any = js.native
+  ): java.lang.String = js.native
+  /**
+  	 * Gets  thickness of major gridlines on x-axis of the zoom slider pane
+  	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderXAxisMajorStrokeThickness
   ): scala.Double = js.native
+  /**
+  	 * Sets thickness of major gridlines on x-axis of the zoom slider pane
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderXAxisMajorStrokeThickness,
     optionValue: scala.Double
   ): scala.Unit = js.native
+  /**
+  	 * Sets stroke brush of major gridlines on x-axis of the zoom slider pane
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
   def igFinancialChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.zoomSliderXAxisMajorStroke,
-    optionValue: js.Any
+    optionValue: java.lang.String
   ): scala.Unit = js.native
   def igFinancialChart(options: IgFinancialChart): JQuery = js.native
   @JSName("igFinancialChart")
@@ -20581,7 +21179,7 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
+  	 * Sets gets ability to automatically format text in cells for numeric, date and time columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 */
   def igGrid(
@@ -20589,7 +21187,7 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat
   ): java.lang.String | scala.Boolean = js.native
   /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
+  	 * Sets gets ability to automatically format text in cells for numeric, date and time columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -24760,7 +25358,8 @@ trait JQuery extends js.Object {
     optionValue: scala.Double
   ): scala.Unit = js.native
   /**
-  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>".
+  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
+  	 * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
   	 *
   	 */
   def igGridFiltering(
@@ -24768,7 +25367,8 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddConditionDropDownTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>".
+  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
+  	 * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -24779,7 +25379,7 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>".
+  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
   	 *
   	 */
   def igGridFiltering(
@@ -24787,7 +25387,7 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddConditionTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>".
+  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -24977,7 +25577,8 @@ trait JQuery extends js.Object {
     optionValue: FilterDialogFilterAddingEvent
   ): scala.Unit = js.native
   /**
-  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>".
+  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
+  	 * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
   	 *
   	 */
   def igGridFiltering(
@@ -24985,7 +25586,8 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterConditionTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>".
+  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
+  	 * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -25024,7 +25626,7 @@ trait JQuery extends js.Object {
   	 * Each DOM element which is used for selecting filter conditions/columns/filter expressions has "data-*" attribute.
   	 * E.g.: DOM element used for selecting column has attribute "data-af-col", for selecting filter condition - "data-af-cond", for filter expression- "data-af-expr".
   	 * NOTE: The template is supported only with <tr />.
-  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><select data-af-cond></select></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
+  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
   	 *
   	 */
   def igGridFiltering(
@@ -25036,7 +25638,7 @@ trait JQuery extends js.Object {
   	 * Each DOM element which is used for selecting filter conditions/columns/filter expressions has "data-*" attribute.
   	 * E.g.: DOM element used for selecting column has attribute "data-af-col", for selecting filter condition - "data-af-cond", for filter expression- "data-af-expr".
   	 * NOTE: The template is supported only with <tr />.
-  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><select data-af-cond></select></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
+  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -51935,6 +52537,142 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Occurs when the style of a callout is updated.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating
+  ): CalloutStyleUpdatingEvent = js.native
+  /**
+  	 * Gets  if event annotations should be displayed.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if event annotations should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdatingEventEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Occurs when the style of a callout is updated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutStyleUpdating,
+    optionValue: CalloutStyleUpdatingEvent
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the content data for the callouts.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the content data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsContentMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the collection of callout data to be annotated.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource
+  ): js.Any = js.native
+  /**
+  	 * Sets the collection of callout data to be annotated.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsItemsSource,
+    optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the label data for the callouts.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the label data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsLabelMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  if callouts should be displayed.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets if callouts should be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the X data for the callouts.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the X data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsXMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the member path of the Y data for the callouts.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the member path of the Y data for the callouts.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.calloutsYMemberPath,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
   	 * Gets  the type of chart series to generate from the data.
   	 */
   def igShapeChart(
@@ -51967,6 +52705,57 @@ trait JQuery extends js.Object {
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.createWrappedTooltip,
     optionValue: js.Any
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether annotations are shown along the axis for crosshair values
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations are shown along the axis for crosshair values
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsAnnotationEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the crosshairs to be displayed.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the crosshairs to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsDisplayMode,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether crosshairs will snap to the nearest data point.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether crosshairs will snap to the nearest data point.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.crosshairsSnapToData,
+    optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
   	 * Event which is raised before data binding.
@@ -52108,6 +52897,23 @@ trait JQuery extends js.Object {
     optionValue: js.Any
   ): scala.Unit = js.native
   /**
+  	 * Gets  whether annotations for the final value of each series is displayed on the axis.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether annotations for the final value of each series is displayed on the axis.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.finalValueAnnotationsVisible,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
   	 * The height of the chart.
   	 */
   def igShapeChart(
@@ -52183,6 +52989,25 @@ trait JQuery extends js.Object {
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.isHorizontalZoomEnabled,
+    optionValue: scala.Boolean
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled
+  ): scala.Boolean = js.native
+  /**
+  	 * Sets whether the chart can highlight series through user interactions.
+  	 * This property applies to Category Chart and Financial Chart controls.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.isSeriesHighlightingEnabled,
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
@@ -52929,6 +53754,23 @@ trait JQuery extends js.Object {
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.title,
+    optionValue: java.lang.String
+  ): scala.Unit = js.native
+  /**
+  	 * Gets  the style of tooltip to be displayed.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType
+  ): java.lang.String = js.native
+  /**
+  	 * Sets the style of tooltip to be displayed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igShapeChart(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.toolTipType,
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
@@ -54020,7 +54862,7 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
-  	 * Gets  the format for labels along the Y-axis.
+  	 * Gets  the property or string from which the labels are derived.
   	 */
   def igShapeChart(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
@@ -54214,7 +55056,7 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * Sets the format for labels along the Y-axis.
+  	 * Sets the property or string from which the labels are derived.
   	 *
   	 * @optionValue New value to be set.
   	 */
@@ -56839,6 +57681,25 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
+  	 * Returns  an object with brushes for areas of the spreadsheet. The property name should be an item in the [SpreadsheetResourceId enumeration](ig.spreadsheet.SpreadsheetResourceId) and the property value a string representing a brush. These brushes override any css styling for the associated object.
+  	 *
+  	 */
+  def igSpreadsheet(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.brushes
+  ): IgSpreadsheetBrushes = js.native
+  /**
+  	 * Returns or sets an object with brushes for areas of the spreadsheet. The property name should be an item in the [SpreadsheetResourceId enumeration](ig.spreadsheet.SpreadsheetResourceId) and the property value a string representing a brush. These brushes override any css styling for the associated object.
+  	 *
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
+  def igSpreadsheet(
+    optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
+    optionName: igniteDashUiLib.igniteDashUiLibStrings.brushes,
+    optionValue: IgSpreadsheetBrushes
+  ): scala.Unit = js.native
+  /**
   	 * Invoked when the Spreadsheet has started in-place editing of the activeCell.
   	 */
   def igSpreadsheet(
@@ -57432,6 +58293,8 @@ trait JQuery extends js.Object {
   @JSName("igSpreadsheet")
   def igSpreadsheet_executeAction(methodName: igniteDashUiLib.igniteDashUiLibStrings.executeAction, action: js.Object): scala.Boolean = js.native
   @JSName("igSpreadsheet")
+  def igSpreadsheet_exportVisualData(methodName: igniteDashUiLib.igniteDashUiLibStrings.exportVisualData): scala.Unit = js.native
+  @JSName("igSpreadsheet")
   def igSpreadsheet_flush(methodName: igniteDashUiLib.igniteDashUiLibStrings.flush): scala.Unit = js.native
   @JSName("igSpreadsheet")
   def igSpreadsheet_getActivePane(methodName: igniteDashUiLib.igniteDashUiLibStrings.getActivePane): js.Object = js.native
@@ -57470,6 +58333,16 @@ trait JQuery extends js.Object {
     methodName: igniteDashUiLib.igniteDashUiLibStrings.showFilterDialogForWorksheet,
     relativeColumnIndex: scala.Double,
     spreadsheetFilterDialogOption: js.Object
+  ): scala.Unit = js.native
+  @JSName("igSpreadsheet")
+  def igSpreadsheet_showTopOrBottomDialogForTable(
+    methodName: igniteDashUiLib.igniteDashUiLibStrings.showTopOrBottomDialogForTable,
+    worksheetTableColumn: js.Object
+  ): scala.Unit = js.native
+  @JSName("igSpreadsheet")
+  def igSpreadsheet_showTopOrBottomDialogForWorksheet(
+    methodName: igniteDashUiLib.igniteDashUiLibStrings.showTopOrBottomDialogForWorksheet,
+    relativeColumnIndex: scala.Double
   ): scala.Unit = js.native
   @JSName("igSpreadsheet")
   def igSpreadsheet_styleUpdated(methodName: igniteDashUiLib.igniteDashUiLibStrings.styleUpdated): scala.Unit = js.native
@@ -62826,7 +63699,7 @@ trait JQuery extends js.Object {
     optionValue: scala.Boolean
   ): scala.Unit = js.native
   /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
+  	 * Sets gets ability to automatically format text in cells for numeric, date and time columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 */
   def igTreeGrid(
@@ -62834,7 +63707,7 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.autoFormat
   ): java.lang.String | scala.Boolean = js.native
   /**
-  	 * Sets gets ability to automatically format text in cells for numeric and date columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
+  	 * Sets gets ability to automatically format text in cells for numeric, date and time columns. The format patterns and rules for numbers and dates are defined in $.ig.regional.defaults object. [Here column formatting is explained in details](http://www.igniteui.com/help/iggrid-columns-and-layout#column-formatting)
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -66100,7 +66973,8 @@ trait JQuery extends js.Object {
     optionValue: scala.Double
   ): scala.Unit = js.native
   /**
-  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>".
+  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
+  	 * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
   	 *
   	 */
   def igTreeGridFiltering(
@@ -66108,7 +66982,8 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddConditionDropDownTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>".
+  	 * Custom template for options in dropdown in add condition area in the filter dialog. The default template is "<option value='${value}'>${text}</option>"
+  	 * and it is used when [filterDialogAddConditionTemplate](ui.iggridfiltering#options:filterDialogAddConditionTemplate) is applied
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -66119,7 +66994,7 @@ trait JQuery extends js.Object {
     optionValue: java.lang.String
   ): scala.Unit = js.native
   /**
-  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>".
+  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
   	 *
   	 */
   def igTreeGridFiltering(
@@ -66127,7 +67002,7 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogAddConditionTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><select></select></div><span>${label2}</span></div>".
+  	 * Custom template for add condition area in the filter dialog. The default template is "<div><span>${label1}</span><div><input></input></div><span>${label2}</span></div>".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -66317,7 +67192,8 @@ trait JQuery extends js.Object {
     optionValue: FilterDialogFilterAddingEvent
   ): scala.Unit = js.native
   /**
-  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>".
+  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
+  	 * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
   	 *
   	 */
   def igTreeGridFiltering(
@@ -66325,7 +67201,8 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.filterDialogFilterConditionTemplate
   ): java.lang.String = js.native
   /**
-  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>".
+  	 * Custom template for options in condition list in filter dialog. The default template is "<option value='${condition}'>${text}</option>"
+  	 * and it is used for custimizing DOM elemenent with attribute "data-af-cond".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -66364,7 +67241,7 @@ trait JQuery extends js.Object {
   	 * Each DOM element which is used for selecting filter conditions/columns/filter expressions has "data-*" attribute.
   	 * E.g.: DOM element used for selecting column has attribute "data-af-col", for selecting filter condition - "data-af-cond", for filter expression- "data-af-expr".
   	 * NOTE: The template is supported only with <tr />.
-  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><select data-af-cond></select></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
+  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
   	 *
   	 */
   def igTreeGridFiltering(
@@ -66376,7 +67253,7 @@ trait JQuery extends js.Object {
   	 * Each DOM element which is used for selecting filter conditions/columns/filter expressions has "data-*" attribute.
   	 * E.g.: DOM element used for selecting column has attribute "data-af-col", for selecting filter condition - "data-af-cond", for filter expression- "data-af-expr".
   	 * NOTE: The template is supported only with <tr />.
-  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><select data-af-cond></select></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
+  	 * The default template is "<tr data-af-row><td><input data-af-col/></td><td><input data-af-cond/></td><td><input data-af-expr /> </td><td><span data-af-rmv></span></td></tr>".
   	 *
   	 *
   	 * @optionValue New value to be set.
@@ -75817,10 +76694,22 @@ trait JQuery extends js.Object {
     optionName: igniteDashUiLib.igniteDashUiLibStrings.panTransitionDuration,
     optionValue: scala.Double
   ): scala.Unit = js.native
+  /**
+  	 * Gets  the scaling value used to affect the pixel density of the control.
+  	 * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
+  	 * to appear blurry.
+  	 */
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pixelScalingRatio
   ): scala.Double = js.native
+  /**
+  	 * Sets the scaling value used to affect the pixel density of the control.
+  	 * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
+  	 * to appear blurry.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.pixelScalingRatio,
@@ -75942,10 +76831,18 @@ trait JQuery extends js.Object {
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowRect
   ): js.Any = js.native
+  /**
+  	 * Occurs just after the current ZoomSlider's window rectangle is changed.
+  	 */
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowRectChanged
   ): WindowRectChangedEvent = js.native
+  /**
+  	 * Occurs just after the current ZoomSlider's window rectangle is changed.
+  	 *
+  	 * @optionValue New value to be set.
+  	 */
   def igZoomSlider(
     optionLiteral: igniteDashUiLib.igniteDashUiLibStrings.option,
     optionName: igniteDashUiLib.igniteDashUiLibStrings.windowRectChanged,
