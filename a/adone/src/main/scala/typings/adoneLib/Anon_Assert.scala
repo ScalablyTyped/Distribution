@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait Anon_Assert extends js.Object {
   val assertNs: Anon_Actual = js.native
-  val bufferNs: Anon_BufferINSPECTMAXBYTES = js.native
+  val bufferNs: Anon_BufferAnonAlloc = js.native
   val childUnderscoreProcessNs: Anon_ArgsCallback = js.native
   val clusterNs: Anon_AddListener = js.native
   var console: nodeLib.Console = js.native

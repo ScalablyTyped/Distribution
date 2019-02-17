@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__core"
-version := "3.13.0-c339ab"
+version := "3.13.0-a74a0b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-be5ab9",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190212Z-a1ee9b",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-9609fd",
   "org.scalablytyped" %%% "react-popper" % "1.3.3-12808e",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-0136a6",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-d5f303",

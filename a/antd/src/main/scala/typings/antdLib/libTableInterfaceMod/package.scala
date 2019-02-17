@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object libTableInterfaceMod {
   type CompareFn[T] = js.Function3[/* a */ T, /* b */ T, /* sortOrder */ js.UndefOr[SortOrder], scala.Double]
+  type GetPopupContainer = js.Function1[/* triggerNode */ js.UndefOr[reactLib.Element], reactLib.HTMLElement]
   type PrepareParamsArgumentsReturn[T] = js.Tuple4[js.Any, js.Array[java.lang.String], js.Object, antdLib.Anon_CurrentDataSource[T]]
   type RowSelectionType = antdLib.antdLibStrings.checkbox | antdLib.antdLibStrings.radio
   type SelectionItemSelectFn = js.Function1[/* key */ js.Array[java.lang.String], js.Any]

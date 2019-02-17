@@ -469,6 +469,7 @@ trait ThreeLib extends js.Object {
     threeLib.threeMod.LineCurve3
   ] = js.native
   var LineDashedMaterial: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineDashedMaterial] = js.native
+  var LineLoop: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineLoop] = js.native
   val LinePieces: scala.Double = js.native
   var LineSegments: org.scalablytyped.runtime.Instantiable0[threeLib.threeMod.LineSegments] = js.native
   val LineStrip: scala.Double = js.native

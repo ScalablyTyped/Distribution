@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-md"
-version := "1.9.2-59b71d"
+version := "1.9.2-540dbf"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190212Z-a1ee9b",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-9609fd",
   "org.scalablytyped" %%% "react-motion" % "0.0-unknown-dt-20190212Z-c92578",
   "org.scalablytyped" %%% "react-swipeable-views" % "0.12-dt-20180806Z-9449c8",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-0136a6",

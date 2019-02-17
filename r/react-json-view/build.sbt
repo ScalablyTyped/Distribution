@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-json-view"
-version := "1.19.1-9d3731"
+version := "1.19.1-08a98e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -12,7 +12,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190212Z-a1ee9b",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-9609fd",
   "org.scalablytyped" %%% "react-lifecycles-compat" % "3.0-dt-20190116Z-4978a8",
   "org.scalablytyped" %%% "react-textarea-autosize" % "4.3.0-dt-20180806Z-90c85e",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")

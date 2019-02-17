@@ -31,6 +31,12 @@ object threeLibStrings {
   sealed trait Line extends js.Object
   
   @js.native
+  sealed trait LineLoop extends js.Object
+  
+  @js.native
+  sealed trait LineSegments extends js.Object
+  
+  @js.native
   sealed trait OrthographicCamera extends js.Object
   
   @js.native
@@ -73,6 +79,10 @@ object threeLibStrings {
   def LensFlare: LensFlare = "LensFlare".asInstanceOf[LensFlare]
   @scala.inline
   def Line: Line = "Line".asInstanceOf[Line]
+  @scala.inline
+  def LineLoop: LineLoop = "LineLoop".asInstanceOf[LineLoop]
+  @scala.inline
+  def LineSegments: LineSegments = "LineSegments".asInstanceOf[LineSegments]
   @scala.inline
   def OrthographicCamera: OrthographicCamera = "OrthographicCamera".asInstanceOf[OrthographicCamera]
   @scala.inline

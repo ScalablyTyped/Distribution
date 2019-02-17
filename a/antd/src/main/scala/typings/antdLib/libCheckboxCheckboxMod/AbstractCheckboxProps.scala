@@ -13,6 +13,7 @@ trait AbstractCheckboxProps[T] extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var name: js.UndefOr[java.lang.String] = js.undefined
   var onChange: js.UndefOr[js.Function1[/* e */ T, scala.Unit]] = js.undefined
+  var onClick: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined
   var onKeyDown: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[_]] = js.undefined
   var onKeyPress: js.UndefOr[reactLib.reactMod.ReactNs.KeyboardEventHandler[_]] = js.undefined
   var onMouseEnter: js.UndefOr[reactLib.reactMod.ReactNs.MouseEventHandler[_]] = js.undefined

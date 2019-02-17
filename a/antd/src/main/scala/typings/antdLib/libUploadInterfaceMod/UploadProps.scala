@@ -19,6 +19,7 @@ trait UploadProps extends js.Object {
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var fileList: js.UndefOr[js.Array[UploadFile]] = js.undefined
   var headers: js.UndefOr[HttpRequestHeader] = js.undefined
+  var id: js.UndefOr[java.lang.String] = js.undefined
   var listType: js.UndefOr[UploadListType] = js.undefined
   var locale: js.UndefOr[UploadLocale] = js.undefined
   var multiple: js.UndefOr[scala.Boolean] = js.undefined

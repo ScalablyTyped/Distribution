@@ -22,7 +22,7 @@ class Line () extends Object3D {
   var isLine: threeLib.threeLibNumbers.`true` = js.native
   var material: Material | js.Array[Material] = js.native
   @JSName("type")
-  var type_Line: threeLib.threeLibStrings.Line = js.native
+  var type_Line: threeLib.threeLibStrings.Line | threeLib.threeLibStrings.LineLoop | threeLib.threeLibStrings.LineSegments = js.native
   def computeLineDistances(): this.type = js.native
 }
 

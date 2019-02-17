@@ -26,6 +26,7 @@
 //                 Zhang Hao <https://github.com/devilsparta>
 //                 Konstantin Lukaschenko <https://github.com/KonstantinLukaschenko>
 //                 Daniel Yim <https://github.com/danyim>
+//                 Philippe Suter <https://github.com/psuter>
 // Definitions: https://github.com//DefinitelyTyped
 // TypeScript Version: 2.8
 // https://github.com/mrdoob/three.js/blob/master/examples/js/loaders/DDSLoader.js

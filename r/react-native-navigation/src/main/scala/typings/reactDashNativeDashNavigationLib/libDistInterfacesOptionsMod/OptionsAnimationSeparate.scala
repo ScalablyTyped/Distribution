@@ -28,6 +28,10 @@ trait OptionsAnimationSeparate extends js.Object {
     },
     showModal: {
     waitForRender: true
+    },
+    setRoot: {
+    waitForRender: true
+    }
     }
     }
     ```

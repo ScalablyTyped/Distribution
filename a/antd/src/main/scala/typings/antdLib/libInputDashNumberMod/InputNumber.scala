@@ -12,5 +12,6 @@ trait InputNumber
   def blur(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def renderInputNumber(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def saveInputNumber(inputNumberRef: js.Any): scala.Unit = js.native
 }
 

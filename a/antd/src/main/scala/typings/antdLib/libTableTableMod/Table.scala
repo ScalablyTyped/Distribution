@@ -27,6 +27,7 @@ trait Table[T]
   ): scala.Unit = js.native
   def findColumn(myKey: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def findColumn(myKey: scala.Double): js.UndefOr[scala.Nothing] = js.native
+  def generatePopupContainerFunc(): js.UndefOr[js.Function0[reactLib.HTMLElement]] = js.native
   def getCheckboxPropsByItem(item: T, index: scala.Double): js.Any = js.native
   def getColumnKey(column: antdLib.libTableInterfaceMod.ColumnProps[T]): js.UndefOr[java.lang.String | scala.Double] = js.native
   def getColumnKey(column: antdLib.libTableInterfaceMod.ColumnProps[T], index: scala.Double): js.UndefOr[java.lang.String | scala.Double] = js.native

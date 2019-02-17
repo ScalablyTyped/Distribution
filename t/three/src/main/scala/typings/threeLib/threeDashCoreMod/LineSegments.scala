@@ -18,5 +18,8 @@ class LineSegments () extends Line {
   def this(geometry: BufferGeometry, material: Material, mode: scala.Double) = this()
   def this(geometry: Geometry, material: js.Array[Material], mode: scala.Double) = this()
   def this(geometry: Geometry, material: Material, mode: scala.Double) = this()
+  var isLineSegments: threeLib.threeLibNumbers.`true` = js.native
+  @JSName("type")
+  var type_LineSegments: threeLib.threeLibStrings.LineSegments = js.native
 }
 

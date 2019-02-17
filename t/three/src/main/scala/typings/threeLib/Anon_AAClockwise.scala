@@ -679,6 +679,15 @@ trait Anon_AAClockwise extends js.Object {
     /* parameters */ js.UndefOr[/* parameters */ threeLib.threeDashCoreMod.LineDashedMaterialParameters], 
     threeLib.threeMod.LineDashedMaterial
   ] = js.native
+  var LineLoop: org.scalablytyped.runtime.Instantiable2[
+    /* geometry */ js.UndefOr[
+      /* geometry */ threeLib.threeDashCoreMod.Geometry | threeLib.threeDashCoreMod.BufferGeometry
+    ], 
+    /* material */ js.UndefOr[
+      /* material */ threeLib.threeDashCoreMod.Material | js.Array[threeLib.threeDashCoreMod.Material]
+    ], 
+    threeLib.threeMod.LineLoop
+  ] = js.native
   val LinePieces: scala.Double = js.native
   var LineSegments: org.scalablytyped.runtime.Instantiable3[
     /* geometry */ js.UndefOr[

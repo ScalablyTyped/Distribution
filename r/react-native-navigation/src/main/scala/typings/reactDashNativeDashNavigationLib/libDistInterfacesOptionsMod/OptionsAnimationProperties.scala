@@ -31,6 +31,10 @@ trait OptionsAnimationProperties extends js.Object {
     */
   var scaleY: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
   /**
+    * Wait for the root view to render before start animation
+    */
+  var waitForRender: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Animate the element over translateX
     */
   var x: js.UndefOr[OptionsAnimationPropertyConfig] = js.undefined
