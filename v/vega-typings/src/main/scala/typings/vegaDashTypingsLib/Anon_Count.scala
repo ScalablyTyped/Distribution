@@ -10,6 +10,6 @@ trait Anon_Count extends js.Object {
   var extent: js.UndefOr[
     (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ] = js.undefined
-  var scheme: java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.typesSpecSchemeMod.ColorScheme
+  var scheme: java.lang.String | js.Array[java.lang.String] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.typesSpecSchemeMod.ColorScheme
 }
 

@@ -10,21 +10,21 @@ trait ToolbarProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var actions: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
+    reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var fixed: js.UndefOr[scala.Boolean] = js.undefined
   var inset: js.UndefOr[scala.Boolean] = js.undefined
-  var nav: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var nav: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var prominent: js.UndefOr[scala.Boolean] = js.undefined
   var prominentTitle: js.UndefOr[scala.Boolean] = js.undefined
   var singleColor: js.UndefOr[scala.Boolean] = js.undefined
   var themed: js.UndefOr[scala.Boolean] = js.undefined
   var title: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var titleClassName: js.UndefOr[java.lang.String] = js.undefined
-  var titleMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var titleMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var titleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var zDepth: js.UndefOr[scala.Double] = js.undefined
 }

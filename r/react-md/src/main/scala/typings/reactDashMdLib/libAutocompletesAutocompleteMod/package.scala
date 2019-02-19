@@ -7,6 +7,6 @@ import scala.scalajs.js.annotation._
 
 package object libAutocompletesAutocompleteMod {
   type DataType = js.Array[
-    reactLib.reactMod.ReactNs.ReactElement | java.lang.String | scala.Double | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
+    reactLib.reactMod.ReactNs.ReactElement[js.Any] | java.lang.String | scala.Double | (org.scalablytyped.runtime.StringDictionary[java.lang.String | scala.Double])
   ]
 }

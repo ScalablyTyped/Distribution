@@ -32,12 +32,12 @@ object ^ extends js.Object {
   ): T = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element,
     callback: js.Function1[
       /* component */ js.UndefOr[

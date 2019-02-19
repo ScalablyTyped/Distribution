@@ -32,45 +32,45 @@ trait TableComponent
   var Row_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps] = js.native
   def Body(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableBodyMod.TableBodyProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Body(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableBodyMod.TableBodyProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Cell(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Cell(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableCellMod.TableCellProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Footer(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableFooterMod.TableFooterProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Footer(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableFooterMod.TableFooterProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderMod.TableHeaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderMod.TableHeaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def HeaderCell(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderCellMod.TableHeaderCellProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def HeaderCell(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableHeaderCellMod.TableHeaderCellProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Row(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Row(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsTableTableRowMod.TableRowProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

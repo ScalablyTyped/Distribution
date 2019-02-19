@@ -106,9 +106,6 @@ object vegaDashTypingsLibStrings {
   sealed trait bin extends js.Object
   
   @js.native
-  sealed trait `bin-linear` extends js.Object
-  
-  @js.native
   sealed trait `bin-ordinal` extends js.Object
   
   @js.native
@@ -793,6 +790,9 @@ object vegaDashTypingsLibStrings {
   sealed trait symbol extends js.Object
   
   @js.native
+  sealed trait symlog extends js.Object
+  
+  @js.native
   sealed trait tableau10 extends js.Object
   
   @js.native
@@ -806,6 +806,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait time extends js.Object
+  
+  @js.native
+  sealed trait timer extends js.Object
   
   @js.native
   sealed trait top extends js.Object
@@ -990,8 +993,6 @@ object vegaDashTypingsLibStrings {
   def `basis-open`: `basis-open` = "basis-open".asInstanceOf[`basis-open`]
   @scala.inline
   def bin: bin = "bin".asInstanceOf[bin]
-  @scala.inline
-  def `bin-linear`: `bin-linear` = "bin-linear".asInstanceOf[`bin-linear`]
   @scala.inline
   def `bin-ordinal`: `bin-ordinal` = "bin-ordinal".asInstanceOf[`bin-ordinal`]
   @scala.inline
@@ -1449,6 +1450,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   @scala.inline
+  def symlog: symlog = "symlog".asInstanceOf[symlog]
+  @scala.inline
   def tableau10: tableau10 = "tableau10".asInstanceOf[tableau10]
   @scala.inline
   def tableau20: tableau20 = "tableau20".asInstanceOf[tableau20]
@@ -1458,6 +1461,8 @@ object vegaDashTypingsLibStrings {
   def threshold: threshold = "threshold".asInstanceOf[threshold]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def timer: timer = "timer".asInstanceOf[timer]
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   @scala.inline

@@ -46,66 +46,66 @@ trait FormComponent
   ] = js.native
   def Button(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormButtonMod.FormButtonProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Button(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormButtonMod.FormButtonProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Checkbox(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormCheckboxMod.FormCheckboxProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Checkbox(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormCheckboxMod.FormCheckboxProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Dropdown(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormDropdownMod.FormDropdownProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Dropdown(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormDropdownMod.FormDropdownProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Field(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.FormFieldProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Field(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormFieldMod.FormFieldProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormGroupMod.FormGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormGroupMod.FormGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Input(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormInputMod.FormInputProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Input(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormInputMod.FormInputProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Radio(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormRadioMod.FormRadioProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Radio(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormRadioMod.FormRadioProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Select(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormSelectMod.FormSelectProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Select(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormSelectMod.FormSelectProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def TextArea(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def TextArea(
     props: semanticDashUiDashReactLib.distCommonjsCollectionsFormFormTextAreaMod.FormTextAreaProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

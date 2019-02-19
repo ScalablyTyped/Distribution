@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 - Lifted 2 members from Set(@material-ui/core.@material-ui/core.StandardProps<@material-ui/core.@material-ui/core/ButtonBase.ButtonBaseProps, @material-ui/core.@material-ui/core/BottomNavigationAction/BottomNavigationAction.BottomNavigationActionClassKey, 'onChange'>) */ trait BottomNavigationActionProps
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[BottomNavigationActionClassKey] {
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var icon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var onChange: js.UndefOr[
     js.Function2[

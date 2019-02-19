@@ -16,11 +16,11 @@ trait SharedTextFieldProps extends js.Object {
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var helpText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
   var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var lineDirection: js.UndefOr[TextFieldLineDirections] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
@@ -29,7 +29,7 @@ trait SharedTextFieldProps extends js.Object {
   var min: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[scala.Double | java.lang.String] = js.undefined
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
-  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -43,7 +43,7 @@ trait SharedTextFieldProps extends js.Object {
   var placeholder: js.UndefOr[java.lang.String] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var step: js.UndefOr[scala.Double] = js.undefined

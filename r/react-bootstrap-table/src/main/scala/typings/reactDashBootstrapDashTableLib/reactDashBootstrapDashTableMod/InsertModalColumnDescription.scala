@@ -64,7 +64,7 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Header text/element for the column.
   	 * Comes from TableHeader.headerText or TableHeader.children.
   	 */
-  var name: java.lang.String | reactLib.reactMod.ReactNs.ReactElement
+  var name: java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
   /**
   	 * Custom element to use for the Insert field element.
   	 * Comes from TableHeader.customInsertEditor.
@@ -75,6 +75,6 @@ trait InsertModalColumnDescription[TRow /* <: js.Object */] extends js.Object {
     editorClass: java.lang.String,
     ignoreEditable: scala.Boolean,
     defaultValue: /* import warning: ImportType.apply Failed type conversion: TRow[keyof TRow] */ js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Boolean
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Boolean
 }
 

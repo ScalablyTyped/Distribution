@@ -32,6 +32,7 @@ class Question protected ()
     * @see SurveyModel.updateQuestionCssClasses
     */
   val cssClasses: js.Any = js.native
+  val cssMainRoot: js.Any = js.native
   /**
     * Returns the validation errors count.
     */
@@ -94,6 +95,7 @@ class Question protected ()
     * Returns true if the question may have a title located on the left
     */
   val isAllowTitleLeft: scala.Boolean = js.native
+  val isFlowLayout: scala.Boolean = js.native
   /**
     * Always returns false.
     */
@@ -265,6 +267,7 @@ class Question protected ()
   def getErrorCustomText(text: java.lang.String, error: SurveyError): java.lang.String = js.native
   /* protected */ def getFirstErrorInputElementId(): java.lang.String = js.native
   /* protected */ def getFirstInputElementId(): java.lang.String = js.native
+  def getLayoutType(): java.lang.String = js.native
   /**
     * Returns the current survey locale
     * @see SurveyModel.locale
@@ -309,12 +312,14 @@ class Question protected ()
     * Returns true if the question value is empty
     */
   def isEmpty(): scala.Boolean = js.native
+  def isLayoutTypeSupported(layoutType: java.lang.String): scala.Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native
   def onAnyValueChanged(name: java.lang.String): scala.Unit = js.native
   /* protected */ def onCheckForErrors(errors: js.Array[SurveyError]): scala.Unit = js.native
   /* protected */ def onCreating(): scala.Unit = js.native
   /* protected */ def onNameValueChanged(oldValue: java.lang.String, newValue: java.lang.String): scala.Unit = js.native
+  /* protected */ def onParentChanged(): scala.Unit = js.native
   def onSurveyValueChanged(newValue: js.Any): scala.Unit = js.native
   @JSName("onSurveyValueChanged")
   def onSurveyValueChanged_Any(newValue: js.Any): js.Any = js.native
@@ -323,6 +328,11 @@ class Question protected ()
   /* protected */ def onVisibleChanged(): scala.Unit = js.native
   def questionTitleTemplateCallback(): java.lang.String = js.native
   def removeElement(element: IElement): scala.Boolean = js.native
+  /**
+    * Remove a particular error from the question error list.
+    * @param error
+    */
+  def removeError(error: SurveyError): scala.Unit = js.native
   /**
     * Run visibleIf and enableIf expressions. If visibleIf or/and enabledIf are not empty, then the results of performing the expression (true or false) set to the visible/readOnly properties.
     * @param values Typically survey results

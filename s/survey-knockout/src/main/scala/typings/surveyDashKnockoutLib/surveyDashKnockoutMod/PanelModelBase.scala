@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isVisible, name. Inlined getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
   extends SurveyElement
@@ -103,33 +103,33 @@ class PanelModelBase ()
     */
   var visibleIf: java.lang.String = js.native
   /**
-    * Add an elememnt into Panel or Page.
+    * Add an element into Panel or Page. Returns true if the element added successfully. Otherwise returns false.
     * @param element
     * @param index element index in the elements array
     */
-  def addElement(element: IElement): scala.Unit = js.native
-  def addElement(element: IElement, index: scala.Double): scala.Unit = js.native
+  def addElement(element: IElement): scala.Boolean = js.native
+  def addElement(element: IElement, index: scala.Double): scala.Boolean = js.native
   def addElementCallback(element: IElement): scala.Unit = js.native
   /**
-    * Creates a new panel and adds it into the end of the elements list.
+    * Creates a new panel and adds it into the end of the elements list. Returns null, if the panel could not be created or could not be added into page or panel.
     * @param name a panel name
     */
   def addNewPanel(): PanelModel = js.native
   def addNewPanel(name: java.lang.String): PanelModel = js.native
   /**
-    * Creates a new question and adds it into the end of the elements list.
+    * Creates a new question and adds it into the end of the elements list. Returns null, if the question could not be created or could not be added into page or panel.
     * @param questionType the possible values are: "text", "checkbox", "dropdown", "matrix", "html", "matrixdynamic", "matrixdropdown" and so on.
     * @param name a question name
     */
   def addNewQuestion(questionType: java.lang.String): Question = js.native
   def addNewQuestion(questionType: java.lang.String, name: java.lang.String): Question = js.native
   /**
-    * Add a panel into Panel or Page.
+    * Add a panel into Panel or Page.  Returns true if the panel added successfully. Otherwise returns false.
     * @param panel
     * @param index element index in the elements array
     */
-  def addPanel(panel: PanelModel): scala.Unit = js.native
-  def addPanel(panel: PanelModel, index: scala.Double): scala.Unit = js.native
+  def addPanel(panel: PanelModel): scala.Boolean = js.native
+  def addPanel(panel: PanelModel, index: scala.Double): scala.Boolean = js.native
   /**
     * Fill list array with the panels.
     * @param list
@@ -138,12 +138,12 @@ class PanelModelBase ()
   def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: scala.Boolean): scala.Unit = js.native
   def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: scala.Boolean, includingDesignTime: scala.Boolean): scala.Unit = js.native
   /**
-    * Add a question into Panel or Page.
+    * Add a question into Panel or Page. Returns true if the question added successfully. Otherwise returns false.
     * @param question
     * @param index element index in the elements array
     */
-  def addQuestion(question: Question): scala.Unit = js.native
-  def addQuestion(question: Question, index: scala.Double): scala.Unit = js.native
+  def addQuestion(question: Question): scala.Boolean = js.native
+  def addQuestion(question: Question, index: scala.Double): scala.Boolean = js.native
   /**
     * Fill list array with the questions.
     * @param list
@@ -152,6 +152,7 @@ class PanelModelBase ()
   def addQuestionsToList(list: js.Array[IQuestion]): scala.Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: scala.Boolean): scala.Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: scala.Boolean, includingDesignTime: scala.Boolean): scala.Unit = js.native
+  /* protected */ def canAddElement(element: IElement): scala.Boolean = js.native
   /* protected */ def childVisibilityChanged(): scala.Unit = js.native
   /**
     * Call this function to remove all question values from the current page/panel, that end-user will not be able to enter.
@@ -170,9 +171,11 @@ class PanelModelBase ()
   /* protected */ def createRow(): QuestionRowModel = js.native
   /* protected */ def dragDropAddTarget(dragDropInfo: DragDropInfo): scala.Unit = js.native
   /* protected */ def dragDropFindRow(findElement: ISurveyElement): QuestionRowModel = js.native
+  def dragDropMoveElement(src: IElement, target: IElement, targetIndex: scala.Double): scala.Unit = js.native
   def elementWidthChanged(el: IElement): scala.Unit = js.native
   @JSName("elementWidthChanged")
   def elementWidthChanged_Any(el: IElement): js.Any = js.native
+  def getChildrenLayoutType(): java.lang.String = js.native
   /**
     * Returns question comments on the current page
     */
@@ -187,6 +190,7 @@ class PanelModelBase ()
   def getFirstQuestionToFocus(): Question = js.native
   def getFirstQuestionToFocus(withError: scala.Boolean): Question = js.native
   def getIsPageVisible(exceptionQuestion: IQuestion): scala.Boolean = js.native
+  def getLayoutType(): java.lang.String = js.native
   /* CompleteClass */
   override def getLocale(): java.lang.String = js.native
   /* CompleteClass */
@@ -220,10 +224,13 @@ class PanelModelBase ()
   def hasErrors(fireCallback: scala.Boolean): scala.Boolean = js.native
   def hasErrors(fireCallback: scala.Boolean, focuseOnFirstError: scala.Boolean): scala.Boolean = js.native
   /* protected */ def hasErrorsCore(rec: js.Any): scala.Unit = js.native
+  def isLayoutTypeSupported(layoutType: java.lang.String): scala.Boolean = js.native
   /* InferMemberOverrides */
   override def locStrsChanged(): scala.Unit with js.Any = js.native
+  /* protected */ def onAddElement(element: IElement, index: scala.Double): scala.Unit = js.native
   def onAnyValueChanged(name: java.lang.String): scala.Unit = js.native
   def onGetQuestionTitleLocation(): java.lang.String = js.native
+  /* protected */ def onRemoveElement(element: IElement): scala.Unit = js.native
   /* protected */ def onRowsChanged(): scala.Unit = js.native
   /* protected */ def onVisibleChanged(): scala.Unit = js.native
   /**

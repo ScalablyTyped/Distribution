@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-elements"
-version := "1.0.0-1002fd"
+version := "1.0.0-493c53"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,15 +10,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "color-convert" % "1.9-dt-20180214Z-fb103b",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-b656b4",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-9c5e2c",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190212Z-649a6d",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
-  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190212Z-f15103",
-  "org.scalablytyped" %%% "react-native-ratings" % "6.3.0-a81417",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-6f64c6",
+  "org.scalablytyped" %%% "react-native" % "0.57-dt-20190218Z-8c2f09",
+  "org.scalablytyped" %%% "react-native-ratings" % "6.3.0-2c7251",
   "org.scalablytyped" %%% "react-native-status-bar-height" % "2.1-dt-20181024Z-5a8d41",
-  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181108Z-ce9012",
+  "org.scalablytyped" %%% "react-native-vector-icons" % "4.6-dt-20181108Z-65513e",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

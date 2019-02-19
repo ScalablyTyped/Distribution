@@ -37,7 +37,7 @@ trait InfiniteScrollProps
   /**
     * Loader component for indicating "loading more".
     */
-  var loader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var loader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * The number of the first page to load, with the default of 0, the first page is 1.
     * Defaults to 0.

@@ -51,6 +51,7 @@ class QuestionCheckboxModel protected () extends QuestionCheckboxBase {
     * Select all items, except other and none.
     */
   def selectAll(): scala.Unit = js.native
+  /* protected */ def setDefaultValueWithOthers(): scala.Unit = js.native
   /**
     * It will select all items, except other and none. If all items have been already selected then it will clear the value
     * @see isAllSelected

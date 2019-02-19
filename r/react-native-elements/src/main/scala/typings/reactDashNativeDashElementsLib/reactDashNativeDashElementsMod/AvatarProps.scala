@@ -88,7 +88,7 @@ trait AvatarProps extends js.Object {
   /**
     * Render a content inside placeholder
     */
-  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var renderPlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Determines the shape of avatar
     *

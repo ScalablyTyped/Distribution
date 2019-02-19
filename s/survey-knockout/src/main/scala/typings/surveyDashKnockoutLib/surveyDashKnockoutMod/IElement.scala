@@ -16,7 +16,9 @@ trait IElement
   var visible: scala.Boolean
   var width: java.lang.String
   def clearIncorrectValues(): js.Any
+  def getLayoutType(): java.lang.String
   def getPanel(): IPanel
+  def isLayoutTypeSupported(layoutType: java.lang.String): scala.Boolean
   def onAnyValueChanged(name: java.lang.String): js.Any
   def removeElement(el: IElement): scala.Boolean
   def updateCustomWidgets(): js.Any

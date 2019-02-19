@@ -36,6 +36,6 @@ trait DropdownMenuProps extends js.Object {
     * A render prop that returns a Menu element. The `props`
     * argument should spread through to **a component that can accept a ref**.
     */
-  def children(renderProps: DropdownMenuRenderProps): reactLib.reactMod.ReactNs.ReactElement
+  def children(renderProps: DropdownMenuRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 

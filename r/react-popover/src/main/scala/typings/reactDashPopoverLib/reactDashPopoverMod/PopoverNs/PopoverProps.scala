@@ -16,7 +16,7 @@ trait PopoverProps extends js.Object {
   var preferPlace: js.UndefOr[PopoverPlace] = js.undefined
   var refreshIntervalMs: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var target: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var target: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var tipSize: js.UndefOr[scala.Double] = js.undefined
 }
 

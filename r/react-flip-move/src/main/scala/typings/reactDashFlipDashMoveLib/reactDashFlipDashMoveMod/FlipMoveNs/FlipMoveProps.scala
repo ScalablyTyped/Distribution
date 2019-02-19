@@ -108,7 +108,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onFinish: js.UndefOr[
     js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement, 
+      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
       /* domNode */ reactLib.HTMLElement, 
       scala.Unit
     ]
@@ -128,7 +128,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onFinishAll: js.UndefOr[
     js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement], 
+      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
       /* domNodes */ js.Array[reactLib.HTMLElement], 
       scala.Unit
     ]
@@ -144,7 +144,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onStart: js.UndefOr[
     js.Function2[
-      /* childElement */ reactLib.reactMod.ReactNs.ReactElement, 
+      /* childElement */ reactLib.reactMod.ReactNs.ReactElement[_], 
       /* domNode */ reactLib.HTMLElement, 
       scala.Unit
     ]
@@ -165,7 +165,7 @@ trait FlipMoveProps extends js.Object {
     */
   var onStartAll: js.UndefOr[
     js.Function2[
-      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement], 
+      /* childElements */ js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], 
       /* domNodes */ js.Array[reactLib.HTMLElement], 
       scala.Unit
     ]

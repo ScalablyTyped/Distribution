@@ -102,8 +102,8 @@ trait UIManagerStatic extends js.Object {
     * @platform ios
     */
   def takeSnapshot(): js.Promise[java.lang.String] = js.native
-  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement): js.Promise[java.lang.String] = js.native
-  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement, options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_]): js.Promise[java.lang.String] = js.native
+  def takeSnapshot(view: reactLib.reactMod.ReactNs.ReactElement[_], options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
   def takeSnapshot(view: scala.Double): js.Promise[java.lang.String] = js.native
   def takeSnapshot(view: scala.Double, options: reactDashNativeLib.Anon_Format): js.Promise[java.lang.String] = js.native
   @JSName("takeSnapshot")

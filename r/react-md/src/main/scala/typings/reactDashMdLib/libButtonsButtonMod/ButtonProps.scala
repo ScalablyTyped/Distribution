@@ -24,7 +24,7 @@ import scala.scalajs.js.annotation._
   var iconBefore: js.UndefOr[scala.Boolean] = js.undefined
   var iconChildren: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var iconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var iconEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var iconEl: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */

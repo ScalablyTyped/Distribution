@@ -14,10 +14,10 @@ trait ImageComponent
   ] = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsElementsImageImageGroupMod.ImageGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsElementsImageImageGroupMod.ImageGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

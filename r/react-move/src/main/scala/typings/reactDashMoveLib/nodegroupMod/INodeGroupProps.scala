@@ -29,7 +29,7 @@ trait INodeGroupProps extends js.Object {
       kapellmeisterLib.kapellmeisterMod.HashMap | js.Array[kapellmeisterLib.kapellmeisterMod.HashMap]
     ]
   ] = js.undefined
-  def children(nodes: js.Array[_]): reactLib.reactMod.ReactNs.ReactElement
+  def children(nodes: js.Array[_]): reactLib.reactMod.ReactNs.ReactElement[_]
   def keyAccessor(data: js.Any, index: scala.Double): java.lang.String | scala.Double
   def start(data: js.Any, index: scala.Double): kapellmeisterLib.kapellmeisterMod.HashMap
 }

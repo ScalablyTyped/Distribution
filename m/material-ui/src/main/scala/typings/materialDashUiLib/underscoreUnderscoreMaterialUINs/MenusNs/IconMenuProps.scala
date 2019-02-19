@@ -21,7 +21,7 @@ trait IconMenuProps extends js.Object {
   var clickCloseDelay: js.UndefOr[scala.Double] = js.undefined
   var desktop: js.UndefOr[scala.Boolean] = js.undefined
   var disableAutoFocus: js.UndefOr[scala.Boolean] = js.undefined
-  var iconButtonElement: reactLib.reactMod.ReactNs.ReactElement
+  var iconButtonElement: reactLib.reactMod.ReactNs.ReactElement[materialDashUiLib.underscoreUnderscoreMaterialUINs.IconButton]
   var iconStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var initiallyKeyboardFocused: js.UndefOr[scala.Boolean] = js.undefined
   var listStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

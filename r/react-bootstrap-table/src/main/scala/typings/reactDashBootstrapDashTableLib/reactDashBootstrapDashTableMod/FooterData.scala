@@ -24,7 +24,7 @@ trait FooterData extends js.Object {
   var formatter: js.UndefOr[
     js.Function1[
       /* tableData */ js.Array[_], 
-      java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement
+      java.lang.String | scala.Double | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**

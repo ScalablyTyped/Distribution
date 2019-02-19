@@ -28,66 +28,66 @@ trait FeedComponent
   var User_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsViewsFeedFeedUserMod.FeedUserProps] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedContentMod.FeedContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedContentMod.FeedContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Date(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedDateMod.FeedDateProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Date(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedDateMod.FeedDateProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Event(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedEventMod.FeedEventProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Event(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedEventMod.FeedEventProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Extra(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Extra(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedExtraMod.FeedExtraProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Label(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Label(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLabelMod.FeedLabelProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Like(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLikeMod.FeedLikeProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Like(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedLikeMod.FeedLikeProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Meta(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedMetaMod.FeedMetaProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Meta(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedMetaMod.FeedMetaProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Summary(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedSummaryMod.FeedSummaryProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Summary(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedSummaryMod.FeedSummaryProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def User(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedUserMod.FeedUserProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def User(
     props: semanticDashUiDashReactLib.distCommonjsViewsFeedFeedUserMod.FeedUserProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

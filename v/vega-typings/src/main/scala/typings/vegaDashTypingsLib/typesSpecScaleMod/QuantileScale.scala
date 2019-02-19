@@ -6,6 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait QuantileScale extends BaseScale {
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   var nice: js.UndefOr[scala.Boolean | scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
   var range: js.UndefOr[RangeScheme] = js.undefined
   @JSName("type")

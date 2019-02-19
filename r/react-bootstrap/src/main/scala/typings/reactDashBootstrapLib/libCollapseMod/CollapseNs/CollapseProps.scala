@@ -14,7 +14,7 @@ trait CollapseProps
   var getDimensionValue: js.UndefOr[
     js.Function2[
       /* dimension */ scala.Double, 
-      /* element */ reactLib.reactMod.ReactNs.ReactElement, 
+      /* element */ reactLib.reactMod.ReactNs.ReactElement[_], 
       scala.Double
     ]
   ] = js.undefined

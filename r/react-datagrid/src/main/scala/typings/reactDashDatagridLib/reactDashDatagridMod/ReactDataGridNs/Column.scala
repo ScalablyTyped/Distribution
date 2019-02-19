@@ -52,7 +52,7 @@ trait Column extends js.Object {
     * or anything that React can render, so you can customize it as you
     * please.
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * Boolean - controlled (which means you have to manually set column
     * visibility when it changes, by using onColumnVisibilityChange).

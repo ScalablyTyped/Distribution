@@ -35,7 +35,7 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'check-square-o'
     */
-  var checkedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var checkedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Specify a custom checked message
     */
@@ -100,7 +100,7 @@ trait CheckBoxProps extends js.Object {
   /**
     * Title of checkbox
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Default unchecked color
     * @default '#bfbfbf'
@@ -111,7 +111,7 @@ trait CheckBoxProps extends js.Object {
     *
     * @default 'square-o'
     */
-  var uncheckedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var uncheckedIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Style of container that wraps the check box and text
     */

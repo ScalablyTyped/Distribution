@@ -22,7 +22,6 @@ class GlideDateTime () extends js.Object {
   def addYearsLocalTime(amount: scala.Double): scala.Unit = js.native
   def addYearsUTC(amount: scala.Double): scala.Unit = js.native
   def compareTo(o: js.Object): scala.Double = js.native
-  def equals(o: js.Object): scala.Boolean = js.native
   def getDSTOffset(): scala.Double = js.native
   def getDate(): GlideTime = js.native
   def getDayOfMonthLocalTime(): scala.Double = js.native

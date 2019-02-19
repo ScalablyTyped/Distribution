@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-947dda"
+version := "3.6.0-2e0f7e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-9d0391",
   "org.scalablytyped" %%% "create-emotion" % "10.0.7-940780",
-  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-680b18",
+  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-f55526",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20190212Z-a46f6d",
   "org.scalablytyped" %%% "detect-port" % "1.1-dt-20180214Z-1d1adb",
@@ -53,13 +53,13 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-b31fed",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-159450",
-  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190212Z-5861ce",
+  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190212Z-837f8d",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-8c7663",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-6f64c6",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-0742fa",
-  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-403d54",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-9609fd",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-7a2d75",
+  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-77a36e",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-c41725",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-c34bde",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-07f5e7",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-ffe082",
   "org.scalablytyped" %%% "source-map" % "0.7.3-cdf339",

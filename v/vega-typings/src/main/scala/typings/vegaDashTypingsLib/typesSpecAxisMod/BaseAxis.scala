@@ -136,6 +136,10 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
     * __Default value:__ `2`
     */
   var labelPadding: js.UndefOr[N] = js.undefined
+  /**
+    * TODO: add docs.
+    */
+  var labelSeparation: js.UndefOr[NS] = js.undefined
   // ---------- Labels ----------
   /**
     * A boolean flag indicating if labels should be included as part of the axis.

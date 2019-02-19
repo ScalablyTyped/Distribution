@@ -33,6 +33,7 @@ class QuestionMultipleTextModel protected () extends Question {
   def colCountChangedCallback(): scala.Unit = js.native
   /* protected */ def createTextItem(name: java.lang.String, title: java.lang.String): MultipleTextItemModel = js.native
   def elementWidthChanged(el: IElement): scala.Unit = js.native
+  def getChildrenLayoutType(): java.lang.String = js.native
   def getIsRequiredText(): java.lang.String = js.native
   def getItemByName(name: java.lang.String): MultipleTextItemModel = js.native
   def getMultipleTextValue(name: java.lang.String): js.Any = js.native

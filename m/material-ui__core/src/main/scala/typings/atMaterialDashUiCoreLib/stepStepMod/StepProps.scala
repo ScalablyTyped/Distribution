@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation._
   var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var completed: js.UndefOr[scala.Boolean] = js.undefined
-  var connector: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var connector: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var index: js.UndefOr[scala.Double] = js.undefined
   var last: js.UndefOr[scala.Boolean] = js.undefined

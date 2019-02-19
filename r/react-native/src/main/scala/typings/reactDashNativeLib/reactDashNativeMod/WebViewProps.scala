@@ -75,11 +75,11 @@ trait WebViewProps
   /**
     * Function that returns a view to show if there's an error.
     */
-  var renderError: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
+  var renderError: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[ViewProps]]] = js.undefined
   /**
     * Function that returns a loading indicator.
     */
-  var renderLoading: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
+  var renderLoading: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[ViewProps]]] = js.undefined
   /**
     * sets whether the webpage scales to fit the view and the user can change the scale
     */

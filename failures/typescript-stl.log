@@ -49,14 +49,14 @@
 [warn ] Phase2ToScalaJs.scala:40 Processing typescript-stl [id => typescript-stl, phase => scala.js] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(typescriptDashStlLib), Name(stdNs), Name(Iterator))) at Name(typescriptDashStlLib) / Name(stdNs) / Name(VectorIterator) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typescriptDashStlLib), Name(stdNs), Name(Iterator))),List(),NoComments)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(VectorIterator)] 
 [info ] RemoveDuplicateInheritance.scala:62 Dropped parents QualifiedName(List(Name(typescriptDashStlLib), Name(stdNs), Name(Iterator))) at Name(typescriptDashStlLib) / Name(stdNs) / Name(DequeIterator) because allParentRefs = Set(TypeRef(QualifiedName(List(Name(typescriptDashStlLib), Name(stdNs), Name(Iterator))),List(),NoComments)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(DequeIterator)] 
-[info ] RemoveMultipleInheritance.scala:47 Dropped parents 
+[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typescriptDashStlLib.stdNs.baseNs.IArrayIterator because var conflicts: `source_`, value. Inlined index, prev, next [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(VectorReverseIterator)] 
-[info ] RemoveMultipleInheritance.scala:47 Dropped parents 
+[info ] RemoveMultipleInheritance.scala:43 Dropped parents 
 - typescriptDashStlLib.stdNs.baseNs.IArrayIterator because var conflicts: `source_`, value. Inlined index, prev, next [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(DequeReverseIterator)] 
 [info ] InferMemberOverrides.scala:84 added override methods List(Name(push)) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Vector)] 
-[info ] CompleteClass.scala:58 Completed implementations Vector(message, name) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Exception)] 
-[info ] CompleteClass.scala:58 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(MapIterator)] 
-[info ] CompleteClass.scala:58 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(SetIterator)] 
+[info ] CompleteClass.scala:62 Completed implementations Vector(message, name) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(Exception)] 
+[info ] CompleteClass.scala:62 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(MapIterator)] 
+[info ] CompleteClass.scala:62 Completed implementations Vector(hash, equal_to, less, constructor, hasOwnProperty, propertyIsEnumerable) [id => typescript-stl, phase => scala.js, this => Name(typescriptDashStlLib) / Name(stdNs) / Name(SetIterator)] 
 [debug] PhaseRunner.scala:82 Success [id => typescript-stl, phase => scala.js] 
 [error] Vector.scala:354 name clash between defined and inherited member:
 def push(items: T*): Double in trait Array and

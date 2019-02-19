@@ -66,7 +66,7 @@ trait CardProps extends js.Object {
   /**
     * Card title
     */
-  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Additional title styling (if title provided)
     */

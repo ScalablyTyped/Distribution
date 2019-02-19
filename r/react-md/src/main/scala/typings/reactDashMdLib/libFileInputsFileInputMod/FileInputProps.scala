@@ -15,7 +15,7 @@ trait FileInputProps
   ] = js.native
   var disabled: js.UndefOr[scala.Boolean] = js.native
   var flat: js.UndefOr[scala.Boolean] = js.native
-  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.native
+  var icon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   var iconBefore: js.UndefOr[scala.Boolean] = js.native
   /**
     * @deprecated

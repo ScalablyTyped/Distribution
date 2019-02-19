@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IElement because var conflicts: isPage, isPanel, isVisible, name, parent, visible. Inlined renderWidth, width, rightIndent, startWithNewLine, getPanel, removeElement, onAnyValueChanged, updateCustomWidgets, clearIncorrectValues */ @JSImport("survey-knockout", "PanelModel")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IElement because var conflicts: isPage, isPanel, isVisible, name, parent, visible. Inlined renderWidth, width, rightIndent, startWithNewLine, getPanel, getLayoutType, isLayoutTypeSupported, removeElement, onAnyValueChanged, updateCustomWidgets, clearIncorrectValues */ @JSImport("survey-knockout", "PanelModel")
 @js.native
 class PanelModel () extends PanelModelBase {
   def this(name: java.lang.String) = this()

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "focus-trap"
-version := "3.0.0-0372f4"
+version := "4.0.2-0372f4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

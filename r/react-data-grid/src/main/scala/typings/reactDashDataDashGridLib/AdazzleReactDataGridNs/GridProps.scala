@@ -24,7 +24,7 @@ trait GridProps[T] extends js.Object {
     * A context menu to disiplay when the user right-clicks a cell.
     * Consider using "react-contextmenu", included in "react-data-grid/addons".
     */
-  var contextMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var contextMenu: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * A component to display when there are no rows to render.
     */
@@ -198,7 +198,7 @@ trait GridProps[T] extends js.Object {
     * If you want to define your own, consider extending ReactDataGrid.Row.
     */
   var rowRenderer: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
   ] = js.undefined
   /**
     * How long to wait before rendering a new row while scrolling in milliseconds.
@@ -234,6 +234,6 @@ trait GridProps[T] extends js.Object {
     * A toolbar to display above the grid.
     * Consider using the toolbar included in "react-data-grid/addons".
     */
-  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

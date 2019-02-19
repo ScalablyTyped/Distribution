@@ -26,24 +26,24 @@ object default extends js.Object {
   var Or_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Or(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Or(
     props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

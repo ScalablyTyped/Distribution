@@ -104,17 +104,21 @@ object AthenaNs extends js.Object {
       */
     var Database: DatabaseString
     /**
-      * A brief explanation of the query.
+      * The query description.
       */
     var Description: js.UndefOr[DescriptionString] = js.undefined
     /**
-      * The plain language name for the query.
+      * The query name.
       */
     var Name: NameString
     /**
-      * The text of the query itself. In other words, all query statements.
+      * The contents of the query with all query statements.
       */
     var QueryString: QueryString
+    /**
+      * The name of the workgroup in which the named query is being created.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait CreateNamedQueryOutput extends js.Object {
@@ -123,6 +127,23 @@ object AthenaNs extends js.Object {
       */
     var NamedQueryId: js.UndefOr[NamedQueryId] = js.undefined
   }
+  
+  trait CreateWorkGroupInput extends js.Object {
+    /**
+      * The configuration for the workgroup, which includes the location in Amazon S3 where query results are stored, the encryption configuration, if any, used for encrypting query results, whether the Amazon CloudWatch Metrics are enabled for the workgroup, the limit for the amount of bytes scanned (cutoff) per query, if it is specified, and whether workgroup's settings (specified with EnforceWorkGroupConfiguration) in the WorkGroupConfiguration override client-side settings. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
+      */
+    var Configuration: js.UndefOr[WorkGroupConfiguration] = js.undefined
+    /**
+      * The workgroup description.
+      */
+    var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
+    /**
+      * The workgroup name.
+      */
+    var Name: WorkGroupName
+  }
+  
+  trait CreateWorkGroupOutput extends js.Object
   
   trait Datum extends js.Object {
     /**
@@ -140,9 +161,22 @@ object AthenaNs extends js.Object {
   
   trait DeleteNamedQueryOutput extends js.Object
   
+  trait DeleteWorkGroupInput extends js.Object {
+    /**
+      * The option to delete the workgroup and its contents even if the workgroup contains any named queries.
+      */
+    var RecursiveDeleteOption: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * The unique name of the workgroup to delete.
+      */
+    var WorkGroup: WorkGroupName
+  }
+  
+  trait DeleteWorkGroupOutput extends js.Object
+  
   trait EncryptionConfiguration extends js.Object {
     /**
-      * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3), server-side encryption with KMS-managed keys (SSE-KMS), or client-side encryption with KMS-managed keys (CSE-KMS) is used.
+      * Indicates whether Amazon S3 server-side encryption with Amazon S3-managed keys (SSE-S3), server-side encryption with KMS-managed keys (SSE-KMS), or client-side encryption with KMS-managed keys (CSE-KMS) is used. If a query runs in a workgroup and the workgroup overrides client-side settings, then the workgroup's setting for encryption is used. It specifies whether query results must be encrypted, for all queries that run in this workgroup. 
       */
     var EncryptionOption: EncryptionOption
     /**
@@ -209,6 +243,20 @@ object AthenaNs extends js.Object {
     var UpdateCount: js.UndefOr[Long] = js.undefined
   }
   
+  trait GetWorkGroupInput extends js.Object {
+    /**
+      * The name of the workgroup.
+      */
+    var WorkGroup: WorkGroupName
+  }
+  
+  trait GetWorkGroupOutput extends js.Object {
+    /**
+      * Information about the workgroup.
+      */
+    var WorkGroup: js.UndefOr[WorkGroup] = js.undefined
+  }
+  
   trait ListNamedQueriesInput extends js.Object {
     /**
       * The maximum number of queries to return in this request.
@@ -218,6 +266,10 @@ object AthenaNs extends js.Object {
       * The token that specifies where to start pagination if a previous request was truncated.
       */
     var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * The name of the workgroup from which the named queries are being returned.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait ListNamedQueriesOutput extends js.Object {
@@ -240,6 +292,10 @@ object AthenaNs extends js.Object {
       * The token that specifies where to start pagination if a previous request was truncated.
       */
     var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * The name of the workgroup from which queries are being returned.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait ListQueryExecutionsOutput extends js.Object {
@@ -253,17 +309,39 @@ object AthenaNs extends js.Object {
     var QueryExecutionIds: js.UndefOr[QueryExecutionIdList] = js.undefined
   }
   
+  trait ListWorkGroupsInput extends js.Object {
+    /**
+      * The maximum number of workgroups to return in this request.
+      */
+    var MaxResults: js.UndefOr[MaxWorkGroupsCount] = js.undefined
+    /**
+      * A token to be used by the next request if this request is truncated.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+  }
+  
+  trait ListWorkGroupsOutput extends js.Object {
+    /**
+      * A token to be used by the next request if this request is truncated.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * The list of workgroups, including their names, descriptions, creation times, and states.
+      */
+    var WorkGroups: js.UndefOr[WorkGroupsList] = js.undefined
+  }
+  
   trait NamedQuery extends js.Object {
     /**
       * The database to which the query belongs.
       */
     var Database: DatabaseString
     /**
-      * A brief description of the query.
+      * The query description.
       */
     var Description: js.UndefOr[DescriptionString] = js.undefined
     /**
-      * The plain-language name of the query.
+      * The query name.
       */
     var Name: NameString
     /**
@@ -274,6 +352,10 @@ object AthenaNs extends js.Object {
       * The SQL query statements that comprise the query.
       */
     var QueryString: QueryString
+    /**
+      * The name of the workgroup that contains the named query.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait QueryExecution extends js.Object {
@@ -290,7 +372,7 @@ object AthenaNs extends js.Object {
       */
     var QueryExecutionId: js.UndefOr[QueryExecutionId] = js.undefined
     /**
-      * The location in Amazon S3 where query results were stored and the encryption option, if any, used for query results.
+      * The location in Amazon S3 where query results were stored and the encryption option, if any, used for query results. These are known as "client-side settings". If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup.
       */
     var ResultConfiguration: js.UndefOr[ResultConfiguration] = js.undefined
     /**
@@ -305,6 +387,10 @@ object AthenaNs extends js.Object {
       * The completion date, current state, submission time, and state change reason (if applicable) for the query execution.
       */
     var Status: js.UndefOr[QueryExecutionStatus] = js.undefined
+    /**
+      * The name of the workgroup in which the query ran.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait QueryExecutionContext extends js.Object {
@@ -331,7 +417,7 @@ object AthenaNs extends js.Object {
       */
     var CompletionDateTime: js.UndefOr[_Date] = js.undefined
     /**
-      * The state of query execution. QUEUED state is listed but is not used by Athena and is reserved for future use. RUNNING indicates that the query has been submitted to the service, and Athena will execute the query as soon as resources are available. SUCCEEDED indicates that the query completed without error. FAILED indicates that the query experienced an error and did not complete processing.CANCELLED indicates that user input interrupted query execution. 
+      * The state of query execution. QUEUED state is listed but is not used by Athena and is reserved for future use. RUNNING indicates that the query has been submitted to the service, and Athena will execute the query as soon as resources are available. SUCCEEDED indicates that the query completed without errors. FAILED indicates that the query experienced an error and did not complete processing. CANCELLED indicates that a user input interrupted query execution. 
       */
     var State: js.UndefOr[QueryExecutionState] = js.undefined
     /**
@@ -346,13 +432,32 @@ object AthenaNs extends js.Object {
   
   trait ResultConfiguration extends js.Object {
     /**
-      * If query results are encrypted in Amazon S3, indicates the encryption option used (for example, SSE-KMS or CSE-KMS) and key information.
+      * If query results are encrypted in Amazon S3, indicates the encryption option used (for example, SSE-KMS or CSE-KMS) and key information. This is a client-side setting. If workgroup settings override client-side settings, then the query uses the encryption configuration that is specified for the workgroup, and also uses the location for storing query results specified in the workgroup. See WorkGroupConfiguration$EnforceWorkGroupConfiguration and Workgroup Settings Override Client-Side Settings.
       */
     var EncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
     /**
-      * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. For more information, see Queries and Query Result Files.  
+      * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. For more information, see Queries and Query Result Files. If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup. The "workgroup settings override" is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
       */
-    var OutputLocation: String
+    var OutputLocation: js.UndefOr[String] = js.undefined
+  }
+  
+  trait ResultConfigurationUpdates extends js.Object {
+    /**
+      * The encryption configuration for the query results.
+      */
+    var EncryptionConfiguration: js.UndefOr[EncryptionConfiguration] = js.undefined
+    /**
+      * The location in Amazon S3 where your query results are stored, such as s3://path/to/query/bucket/. For more information, see Queries and Query Result Files. If workgroup settings override client-side settings, then the query uses the location for the query results and the encryption configuration that are specified for the workgroup. The "workgroup settings override" is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
+      */
+    var OutputLocation: js.UndefOr[String] = js.undefined
+    /**
+      * If set to "true", indicates that the previously-specified encryption configuration (also known as the client-side setting) for queries in this workgroup should be ignored and set to null. If set to "false" or not set, and a value is present in the EncryptionConfiguration in ResultConfigurationUpdates (the client-side setting), the EncryptionConfiguration in the workgroup's ResultConfiguration will be updated with the new value. For more information, see Workgroup Settings Override Client-Side Settings.
+      */
+    var RemoveEncryptionConfiguration: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * If set to "true", indicates that the previously-specified query results location (also known as a client-side setting) for queries in this workgroup should be ignored and set to null. If set to "false" or not set, and a value is present in the OutputLocation in ResultConfigurationUpdates (the client-side setting), the OutputLocation in the workgroup's ResultConfiguration will be updated with the new value. For more information, see Workgroup Settings Override Client-Side Settings.
+      */
+    var RemoveOutputLocation: js.UndefOr[BoxedBoolean] = js.undefined
   }
   
   trait ResultSet extends js.Object {
@@ -394,9 +499,13 @@ object AthenaNs extends js.Object {
       */
     var QueryString: QueryString
     /**
-      * Specifies information about where and how to save the results of the query execution.
+      * Specifies information about where and how to save the results of the query execution. If the query runs in a workgroup, then workgroup's settings may override query settings. This affects the query results location. The workgroup settings override is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
       */
-    var ResultConfiguration: ResultConfiguration
+    var ResultConfiguration: js.UndefOr[ResultConfiguration] = js.undefined
+    /**
+      * The name of the workgroup in which the query is being started.
+      */
+    var WorkGroup: js.UndefOr[WorkGroupName] = js.undefined
   }
   
   trait StartQueryExecutionOutput extends js.Object {
@@ -421,7 +530,7 @@ object AthenaNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Returns the details of a single named query or a list of up to 50 queries, which you provide as an array of query ID strings. Use ListNamedQueries to get the list of named query IDs. If information could not be retrieved for a submitted query ID, information about the query ID submitted is listed under UnprocessedNamedQueryId. Named queries are different from executed queries. Use BatchGetQueryExecution to get details about each unique query execution, and ListQueryExecutions to get a list of query execution IDs.
+      * Returns the details of a single named query or a list of up to 50 queries, which you provide as an array of query ID strings. Requires you to have access to the workgroup in which the queries were saved. Use ListNamedQueriesInput to get the list of named query IDs in the specified workgroup. If information could not be retrieved for a submitted query ID, information about the query ID submitted is listed under UnprocessedNamedQueryId. Named queries differ from executed queries. Use BatchGetQueryExecutionInput to get details about each unique query execution, and ListQueryExecutionsInput to get a list of query execution IDs.
       */
     def batchGetNamedQuery(): awsDashSdkLib.libRequestMod.Request[BatchGetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetNamedQuery(
@@ -432,7 +541,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the details of a single named query or a list of up to 50 queries, which you provide as an array of query ID strings. Use ListNamedQueries to get the list of named query IDs. If information could not be retrieved for a submitted query ID, information about the query ID submitted is listed under UnprocessedNamedQueryId. Named queries are different from executed queries. Use BatchGetQueryExecution to get details about each unique query execution, and ListQueryExecutions to get a list of query execution IDs.
+      * Returns the details of a single named query or a list of up to 50 queries, which you provide as an array of query ID strings. Requires you to have access to the workgroup in which the queries were saved. Use ListNamedQueriesInput to get the list of named query IDs in the specified workgroup. If information could not be retrieved for a submitted query ID, information about the query ID submitted is listed under UnprocessedNamedQueryId. Named queries differ from executed queries. Use BatchGetQueryExecutionInput to get details about each unique query execution, and ListQueryExecutionsInput to get a list of query execution IDs.
       */
     def batchGetNamedQuery(params: BatchGetNamedQueryInput): awsDashSdkLib.libRequestMod.Request[BatchGetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetNamedQuery(
@@ -444,7 +553,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. To get a list of query execution IDs, use ListQueryExecutions. Query executions are different from named (saved) queries. Use BatchGetNamedQuery to get details about named queries.
+      * Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. Requires you to have access to the workgroup in which the queries ran. To get a list of query execution IDs, use ListQueryExecutionsInput$WorkGroup. Query executions differ from named (saved) queries. Use BatchGetNamedQueryInput to get details about named queries.
       */
     def batchGetQueryExecution(): awsDashSdkLib.libRequestMod.Request[BatchGetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetQueryExecution(
@@ -455,7 +564,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. To get a list of query execution IDs, use ListQueryExecutions. Query executions are different from named (saved) queries. Use BatchGetNamedQuery to get details about named queries.
+      * Returns the details of a single query execution or a list of up to 50 query executions, which you provide as an array of query execution ID strings. Requires you to have access to the workgroup in which the queries ran. To get a list of query execution IDs, use ListQueryExecutionsInput$WorkGroup. Query executions differ from named (saved) queries. Use BatchGetNamedQueryInput to get details about named queries.
       */
     def batchGetQueryExecution(params: BatchGetQueryExecutionInput): awsDashSdkLib.libRequestMod.Request[BatchGetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def batchGetQueryExecution(
@@ -467,7 +576,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def createNamedQuery(): awsDashSdkLib.libRequestMod.Request[CreateNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createNamedQuery(
@@ -478,7 +587,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Creates a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def createNamedQuery(params: CreateNamedQueryInput): awsDashSdkLib.libRequestMod.Request[CreateNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def createNamedQuery(
@@ -490,7 +599,30 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[CreateNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Creates a workgroup with the specified name.
+      */
+    def createWorkGroup(): awsDashSdkLib.libRequestMod.Request[CreateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createWorkGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates a workgroup with the specified name.
+      */
+    def createWorkGroup(params: CreateWorkGroupInput): awsDashSdkLib.libRequestMod.Request[CreateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createWorkGroup(
+      params: CreateWorkGroupInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def deleteNamedQuery(): awsDashSdkLib.libRequestMod.Request[DeleteNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteNamedQuery(
@@ -501,7 +633,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Deletes a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def deleteNamedQuery(params: DeleteNamedQueryInput): awsDashSdkLib.libRequestMod.Request[DeleteNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteNamedQuery(
@@ -513,7 +645,30 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about a single query.
+      * Deletes the workgroup with the specified name. The primary workgroup cannot be deleted.
+      */
+    def deleteWorkGroup(): awsDashSdkLib.libRequestMod.Request[DeleteWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteWorkGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Deletes the workgroup with the specified name. The primary workgroup cannot be deleted.
+      */
+    def deleteWorkGroup(params: DeleteWorkGroupInput): awsDashSdkLib.libRequestMod.Request[DeleteWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def deleteWorkGroup(
+      params: DeleteWorkGroupInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ DeleteWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[DeleteWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns information about a single query. Requires that you have access to the workgroup in which the query was saved.
       */
     def getNamedQuery(): awsDashSdkLib.libRequestMod.Request[GetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getNamedQuery(
@@ -524,7 +679,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about a single query.
+      * Returns information about a single query. Requires that you have access to the workgroup in which the query was saved.
       */
     def getNamedQuery(params: GetNamedQueryInput): awsDashSdkLib.libRequestMod.Request[GetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getNamedQuery(
@@ -536,7 +691,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetNamedQueryOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about a single execution of a query. Each time a query executes, information about the query execution is saved with a unique ID.
+      * Returns information about a single execution of a query if you have access to the workgroup in which the query ran. Each time a query executes, information about the query execution is saved with a unique ID.
       */
     def getQueryExecution(): awsDashSdkLib.libRequestMod.Request[GetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getQueryExecution(
@@ -547,7 +702,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about a single execution of a query. Each time a query executes, information about the query execution is saved with a unique ID.
+      * Returns information about a single execution of a query if you have access to the workgroup in which the query ran. Each time a query executes, information about the query execution is saved with a unique ID.
       */
     def getQueryExecution(params: GetQueryExecutionInput): awsDashSdkLib.libRequestMod.Request[GetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getQueryExecution(
@@ -559,7 +714,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the results of a single query execution specified by QueryExecutionId. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
+      * Returns the results of a single query execution specified by QueryExecutionId if you have access to the workgroup in which the query ran. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
       */
     def getQueryResults(): awsDashSdkLib.libRequestMod.Request[GetQueryResultsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getQueryResults(
@@ -570,7 +725,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetQueryResultsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns the results of a single query execution specified by QueryExecutionId. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
+      * Returns the results of a single query execution specified by QueryExecutionId if you have access to the workgroup in which the query ran. This request does not execute the query but returns results. Use StartQueryExecution to run a query.
       */
     def getQueryResults(params: GetQueryResultsInput): awsDashSdkLib.libRequestMod.Request[GetQueryResultsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getQueryResults(
@@ -582,7 +737,30 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetQueryResultsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a list of all available query IDs. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Returns information about the workgroup with the speficied name.
+      */
+    def getWorkGroup(): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getWorkGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns information about the workgroup with the speficied name.
+      */
+    def getWorkGroup(params: GetWorkGroupInput): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getWorkGroup(
+      params: GetWorkGroupInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ GetWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def listNamedQueries(): awsDashSdkLib.libRequestMod.Request[ListNamedQueriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listNamedQueries(
@@ -593,7 +771,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListNamedQueriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a list of all available query IDs. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Provides a list of available query IDs only for queries saved in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def listNamedQueries(params: ListNamedQueriesInput): awsDashSdkLib.libRequestMod.Request[ListNamedQueriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listNamedQueries(
@@ -605,7 +783,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListNamedQueriesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a list of all available query execution IDs. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Provides a list of available query execution IDs for the queries in the specified workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def listQueryExecutions(): awsDashSdkLib.libRequestMod.Request[ListQueryExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listQueryExecutions(
@@ -616,7 +794,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListQueryExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Provides a list of all available query execution IDs. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Provides a list of available query execution IDs for the queries in the specified workgroup. Requires you to have access to the workgroup in which the queries ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def listQueryExecutions(params: ListQueryExecutionsInput): awsDashSdkLib.libRequestMod.Request[ListQueryExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listQueryExecutions(
@@ -628,7 +806,30 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListQueryExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Runs (executes) the SQL query statements contained in the Query string. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Lists available workgroups for the account.
+      */
+    def listWorkGroups(): awsDashSdkLib.libRequestMod.Request[ListWorkGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listWorkGroups(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListWorkGroupsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListWorkGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists available workgroups for the account.
+      */
+    def listWorkGroups(params: ListWorkGroupsInput): awsDashSdkLib.libRequestMod.Request[ListWorkGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listWorkGroups(
+      params: ListWorkGroupsInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListWorkGroupsOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListWorkGroupsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def startQueryExecution(): awsDashSdkLib.libRequestMod.Request[StartQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startQueryExecution(
@@ -639,7 +840,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Runs (executes) the SQL query statements contained in the Query string. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def startQueryExecution(params: StartQueryExecutionInput): awsDashSdkLib.libRequestMod.Request[StartQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def startQueryExecution(
@@ -651,7 +852,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StartQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a query execution. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def stopQueryExecution(): awsDashSdkLib.libRequestMod.Request[StopQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopQueryExecution(
@@ -662,7 +863,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Stops a query execution. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
+      * Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.
       */
     def stopQueryExecution(params: StopQueryExecutionInput): awsDashSdkLib.libRequestMod.Request[StopQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def stopQueryExecution(
@@ -673,6 +874,29 @@ object AthenaNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates the workgroup with the specified name. The workgroup's name cannot be changed.
+      */
+    def updateWorkGroup(): awsDashSdkLib.libRequestMod.Request[UpdateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateWorkGroup(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Updates the workgroup with the specified name. The workgroup's name cannot be changed.
+      */
+    def updateWorkGroup(params: UpdateWorkGroupInput): awsDashSdkLib.libRequestMod.Request[UpdateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def updateWorkGroup(
+      params: UpdateWorkGroupInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UpdateWorkGroupOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UpdateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
   trait UnprocessedNamedQueryId extends js.Object {
@@ -705,8 +929,115 @@ object AthenaNs extends js.Object {
     var QueryExecutionId: js.UndefOr[QueryExecutionId] = js.undefined
   }
   
+  trait UpdateWorkGroupInput extends js.Object {
+    /**
+      * The workgroup configuration that will be updated for the given workgroup.
+      */
+    var ConfigurationUpdates: js.UndefOr[WorkGroupConfigurationUpdates] = js.undefined
+    /**
+      * The workgroup description.
+      */
+    var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
+    /**
+      * The workgroup state that will be updated for the given workgroup.
+      */
+    var State: js.UndefOr[WorkGroupState] = js.undefined
+    /**
+      * The specified workgroup that will be updated.
+      */
+    var WorkGroup: WorkGroupName
+  }
+  
+  trait UpdateWorkGroupOutput extends js.Object
+  
+  trait WorkGroup extends js.Object {
+    /**
+      * The configuration of the workgroup, which includes the location in Amazon S3 where query results are stored, the encryption configuration, if any, used for query results; whether the Amazon CloudWatch Metrics are enabled for the workgroup; whether workgroup settings override client-side settings; and the data usage limit for the amount of data scanned per query, if it is specified. The workgroup settings override is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
+      */
+    var Configuration: js.UndefOr[WorkGroupConfiguration] = js.undefined
+    /**
+      * The date and time the workgroup was created.
+      */
+    var CreationTime: js.UndefOr[_Date] = js.undefined
+    /**
+      * The workgroup description.
+      */
+    var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
+    /**
+      * The workgroup name.
+      */
+    var Name: WorkGroupName
+    /**
+      * The state of the workgroup: ENABLED or DISABLED.
+      */
+    var State: js.UndefOr[WorkGroupState] = js.undefined
+  }
+  
+  trait WorkGroupConfiguration extends js.Object {
+    /**
+      * The upper data usage limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
+      */
+    var BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined
+    /**
+      * If set to "true", the settings for the workgroup override client-side settings. If set to "false", client-side settings are used. For more information, see Workgroup Settings Override Client-Side Settings.
+      */
+    var EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * Indicates that the Amazon CloudWatch metrics are enabled for the workgroup.
+      */
+    var PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * The configuration for the workgroup, which includes the location in Amazon S3 where query results are stored and the encryption option, if any, used for query results.
+      */
+    var ResultConfiguration: js.UndefOr[ResultConfiguration] = js.undefined
+  }
+  
+  trait WorkGroupConfigurationUpdates extends js.Object {
+    /**
+      * The upper limit (cutoff) for the amount of bytes a single query in a workgroup is allowed to scan.
+      */
+    var BytesScannedCutoffPerQuery: js.UndefOr[BytesScannedCutoffValue] = js.undefined
+    /**
+      * If set to "true", the settings for the workgroup override client-side settings. If set to "false" client-side settings are used. For more information, see Workgroup Settings Override Client-Side Settings.
+      */
+    var EnforceWorkGroupConfiguration: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * Indicates whether this workgroup enables publishing metrics to Amazon CloudWatch.
+      */
+    var PublishCloudWatchMetricsEnabled: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * Indicates that the data usage control limit per query is removed. WorkGroupConfiguration$BytesScannedCutoffPerQuery 
+      */
+    var RemoveBytesScannedCutoffPerQuery: js.UndefOr[BoxedBoolean] = js.undefined
+    /**
+      * The result configuration information about the queries in this workgroup that will be updated. Includes the updated results location and an updated option for encrypting query results.
+      */
+    var ResultConfigurationUpdates: js.UndefOr[ResultConfigurationUpdates] = js.undefined
+  }
+  
+  trait WorkGroupSummary extends js.Object {
+    /**
+      * The workgroup creation date and time.
+      */
+    var CreationTime: js.UndefOr[_Date] = js.undefined
+    /**
+      * The workgroup description.
+      */
+    var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
+    /**
+      * The name of the workgroup.
+      */
+    var Name: js.UndefOr[WorkGroupName] = js.undefined
+    /**
+      * The state of the workgroup.
+      */
+    var State: js.UndefOr[WorkGroupState] = js.undefined
+  }
+  
   val TypesNs: this.type = js.native
   type Boolean = scala.Boolean
+  type BoxedBoolean = scala.Boolean
+  type BytesScannedCutoffValue = scala.Double
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ColumnInfoList = js.Array[ColumnInfo]
   type ColumnNullable = awsDashSdkLib.awsDashSdkLibStrings.NOT_NULL | awsDashSdkLib.awsDashSdkLibStrings.NULLABLE | awsDashSdkLib.awsDashSdkLibStrings.UNKNOWN | java.lang.String
@@ -721,6 +1052,7 @@ object AthenaNs extends js.Object {
   type MaxNamedQueriesCount = scala.Double
   type MaxQueryExecutionsCount = scala.Double
   type MaxQueryResults = scala.Double
+  type MaxWorkGroupsCount = scala.Double
   type NameString = java.lang.String
   type NamedQueryId = java.lang.String
   type NamedQueryIdList = js.Array[NamedQueryId]
@@ -736,6 +1068,10 @@ object AthenaNs extends js.Object {
   type Token = java.lang.String
   type UnprocessedNamedQueryIdList = js.Array[UnprocessedNamedQueryId]
   type UnprocessedQueryExecutionIdList = js.Array[UnprocessedQueryExecutionId]
+  type WorkGroupDescriptionString = java.lang.String
+  type WorkGroupName = java.lang.String
+  type WorkGroupState = awsDashSdkLib.awsDashSdkLibStrings.ENABLED | awsDashSdkLib.awsDashSdkLibStrings.DISABLED | java.lang.String
+  type WorkGroupsList = js.Array[WorkGroupSummary]
   type _Date = stdLib.Date
   type apiVersion = awsDashSdkLib.awsDashSdkLibStrings.`2017-05-18` | awsDashSdkLib.awsDashSdkLibStrings.latest | java.lang.String
   type datumList = js.Array[Datum]

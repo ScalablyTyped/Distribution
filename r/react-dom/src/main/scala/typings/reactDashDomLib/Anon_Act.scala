@@ -27,19 +27,19 @@ trait Anon_Act extends js.Object {
   ): scala.Boolean = js.native
   def isDOMComponent(instance: reactLib.reactMod.ReactNs.ReactInstance): /* is react.Element */ scala.Boolean = js.native
   def isElement(element: js.Any): scala.Boolean = js.native
-  def isElementOfType[T /* <: reactLib.HTMLElement */](element: reactLib.reactMod.ReactNs.ReactElement, `type`: java.lang.String): /* is react.react.React.ReactHTMLElement<T> */ scala.Boolean = js.native
-  def isElementOfType[P](element: reactLib.reactMod.ReactNs.ReactElement, `type`: reactLib.reactMod.ReactNs.SFC[P]): /* is react.react.React.SFCElement<P> */ scala.Boolean = js.native
+  def isElementOfType[T /* <: reactLib.HTMLElement */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.ReactHTMLElement<T> */ scala.Boolean = js.native
+  def isElementOfType[P](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: reactLib.reactMod.ReactNs.SFC[P]): /* is react.react.React.SFCElement<P> */ scala.Boolean = js.native
   def isElementOfType[P, T /* <: reactLib.reactMod.Component[P, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[_],
     `type`: reactLib.reactMod.ReactNs.ClassType[P, T, C]
   ): /* is react.react.React.CElement<P, T> */ scala.Boolean = js.native
   @JSName("isElementOfType")
-  def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement, `type`: java.lang.String): /* is react.react.React.DOMElement<P, T> */ scala.Boolean = js.native
+  def isElementOfType_PDOMAttributesTElement[P /* <: reactLib.reactMod.ReactNs.DOMAttributes[js.Object] */, T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.ReactElement[_], `type`: java.lang.String): /* is react.react.React.DOMElement<P, T> */ scala.Boolean = js.native
   def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass): /* import warning: ImportType.apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
   def mockComponent(mocked: reactDashDomLib.testDashUtilsMod.MockedComponentClass, mockTagName: java.lang.String): /* import warning: ImportType.apply Failed type conversion: typeof ReactTestUtils */ js.Any = js.native
   def renderIntoDocument(element: reactLib.reactMod.ReactNs.SFCElement[_]): scala.Unit = js.native
   def renderIntoDocument[T /* <: reactLib.Element */](element: reactLib.reactMod.ReactNs.DOMElement[_, T]): T = js.native
-  def renderIntoDocument[P](element: reactLib.reactMod.ReactNs.ReactElement): (reactLib.reactMod.Component[P, js.Object, _]) | reactLib.Element | scala.Unit = js.native
+  def renderIntoDocument[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, js.Object, _]) | reactLib.Element | scala.Unit = js.native
   def renderIntoDocument[P, T /* <: reactLib.reactMod.Component[P, js.Object, _] */](element: reactLib.reactMod.ReactNs.CElement[P, T]): T = js.native
   def scryRenderedComponentsWithType[T /* <: reactLib.reactMod.Component[_, js.Object, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] */](
     root: reactLib.reactMod.Component[_, js.Object, _],

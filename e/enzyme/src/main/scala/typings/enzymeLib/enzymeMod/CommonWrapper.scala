@@ -13,17 +13,17 @@ trait CommonWrapper[P, S, C] extends js.Object {
     */
   def at(index: scala.Double): this.type = js.native
   def contains(node: java.lang.String): scala.Boolean = js.native
-  def contains(node: js.Array[reactLib.reactMod.ReactNs.ReactElement]): scala.Boolean = js.native
+  def contains(node: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]): scala.Boolean = js.native
   /**
     * Returns whether or not the current wrapper has a node anywhere in it's render tree that looks like the one passed in.
     */
-  def contains(node: reactLib.reactMod.ReactNs.ReactElement): scala.Boolean = js.native
+  def contains(node: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Boolean = js.native
   /**
     * Returns whether or not all the given react elements exists in the shallow render tree
     */
   def containsAllMatchingElements(
     nodes: js.Array[
-      js.Array[reactLib.reactMod.ReactNs.ReactElement] | reactLib.reactMod.ReactNs.ReactElement
+      js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ): scala.Boolean = js.native
   /**
@@ -31,14 +31,14 @@ trait CommonWrapper[P, S, C] extends js.Object {
     */
   def containsAnyMatchingElements(
     nodes: js.Array[
-      js.Array[reactLib.reactMod.ReactNs.ReactElement] | reactLib.reactMod.ReactNs.ReactElement
+      js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ): scala.Boolean = js.native
-  def containsMatchingElement(node: js.Array[reactLib.reactMod.ReactNs.ReactElement]): scala.Boolean = js.native
+  def containsMatchingElement(node: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]): scala.Boolean = js.native
   /**
     * Returns whether or not a given react element exists in the shallow render tree.
     */
-  def containsMatchingElement(node: reactLib.reactMod.ReactNs.ReactElement): scala.Boolean = js.native
+  def containsMatchingElement(node: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Boolean = js.native
   /**
     * Returns the context hash for the root node of the wrapper. Optionally pass in a prop name and it will return just that value.
     */
@@ -52,7 +52,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Returns whether or not the current render tree is equal to the given node, based on the expected value.
     */
-  def equals(node: reactLib.reactMod.ReactNs.ReactElement): scala.Boolean = js.native
+  def equals(node: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Boolean = js.native
   /**
     * Returns whether or not all of the nodes in the wrapper match the provided selector.
     */
@@ -86,7 +86,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Returns the node at a given index of the current wrapper.
     */
-  def get(index: scala.Double): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def get(index: scala.Double): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   /**
     * Returns the outer most DOMComponent of the current wrapper.
     */
@@ -94,19 +94,19 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Returns the wrapper's underlying node.
     */
-  def getElement(): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def getElement(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   /**
     * Returns the wrapper's underlying node.
     */
-  def getElements(): js.Array[reactLib.reactMod.ReactNs.ReactElement] = js.native
+  def getElements(): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   /**
     * Returns the wrapper's underlying node.
     */
-  def getNode(): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def getNode(): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   /**
     * Returns the wrapper's underlying nodes.
     */
-  def getNodes(): js.Array[reactLib.reactMod.ReactNs.ReactElement] = js.native
+  def getNodes(): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   /**
     * Returns whether or not the current node has a className prop including the passed in class name.
     */
@@ -157,7 +157,7 @@ trait CommonWrapper[P, S, C] extends js.Object {
   /**
     * Returns whether or not a given react element matches the shallow render tree.
     */
-  def matchesElement(node: reactLib.reactMod.ReactNs.ReactElement): scala.Boolean = js.native
+  def matchesElement(node: reactLib.reactMod.ReactNs.ReactElement[_]): scala.Boolean = js.native
   /**
     * Returns the name of the current node of the wrapper.
     */

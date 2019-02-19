@@ -1014,7 +1014,7 @@ object jestNs extends js.Object {
     /**
       * List of results of calls to the mock function.
       */
-    var results: js.Array[MockResult]
+    var results: js.Array[MockResult[T]]
   }
   
   @js.native
@@ -1181,17 +1181,26 @@ object jestNs extends js.Object {
   }
   
   /**
-    * Represents the result of a single call to a mock function.
+    * Represents the result of a single incomplete call to a mock function.
     */
-  trait MockResult extends js.Object {
-    /**
-      * True if the function threw.
-      * False if the function returned.
-      */
-    var isThrow: scala.Boolean
-    /**
-      * The value that was either thrown or returned by the function.
-      */
+  trait MockResultIncomplete extends js.Object {
+    var `type`: jestLib.jestLibStrings.incomplete
+    var value: js.UndefOr[scala.Nothing]
+  }
+  
+  /**
+    * Represents the result of a single call to a mock function with a return value.
+    */
+  trait MockResultReturn[T] extends js.Object {
+    var `type`: jestLib.jestLibStrings.`return`
+    var value: T
+  }
+  
+  /**
+    * Represents the result of a single call to a mock function with a thrown error.
+    */
+  trait MockResultThrow extends js.Object {
+    var `type`: jestLib.jestLibStrings.`throw`
     var value: js.Any
   }
   
@@ -1642,6 +1651,7 @@ object jestNs extends js.Object {
   // flow's Maybe type https://flow.org/en/docs/types/primitives/#toc-maybe-types
   type Maybe[T] = js.UndefOr[scala.Unit | scala.Null | T]
   type Milliseconds = scala.Double
+  type MockResult[T] = MockResultReturn[T] | MockResultThrow | MockResultIncomplete
   /**
     * Wrap module with mock definitions
     *

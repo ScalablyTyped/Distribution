@@ -10,9 +10,10 @@ import scala.scalajs.js.annotation._
 // appium types
 // jsonwp types
 // mjsonwp types
+// chromium types
 // saucelabs types
 @js.native
-trait Client[T] extends js.Object {
+trait Client extends js.Object {
   var capabilities: DesiredCapabilities = js.native
   var isAndroid: scala.Boolean = js.native
   var isIOS: scala.Boolean = js.native
@@ -39,12 +40,14 @@ trait Client[T] extends js.Object {
   def deleteAllCookies(): js.UndefOr[scala.Nothing] = js.native
   def deleteCookie(name: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def deleteLocalStorageItem(key: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def deleteNetworkConditions(): js.UndefOr[scala.Nothing] = js.native
   def deleteSession(): js.UndefOr[scala.Nothing] = js.native
   def deleteSessionStorageItem(key: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def dismissAlert(): js.UndefOr[scala.Nothing] = js.native
   def elementClear(): js.UndefOr[scala.Nothing] = js.native
   def elementClick(): js.UndefOr[scala.Nothing] = js.native
   def elementEquals(otherElementId: java.lang.String): scala.Boolean = js.native
+  def elementHover(): js.UndefOr[scala.Nothing] = js.native
   def elementSendKeys(text: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def elementSendKeys(text: java.lang.String, value: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
   def elementSendKeys(value: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
@@ -74,7 +77,9 @@ trait Client[T] extends js.Object {
   def findElementsFromElement(using: java.lang.String, value: java.lang.String): js.Array[java.lang.String] = js.native
   def fingerPrint(fingerprintId: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def forward(): js.UndefOr[scala.Nothing] = js.native
+  def freeze(): js.UndefOr[scala.Nothing] = js.native
   def fullscreenWindow(): js.Object = js.native
+  def generateTestReport(message: java.lang.String, group: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def getActiveElement(): java.lang.String = js.native
   def getActiveEngine(): js.UndefOr[scala.Nothing] = js.native
   def getAlertText(): js.UndefOr[scala.Nothing] = js.native
@@ -102,6 +107,7 @@ trait Client[T] extends js.Object {
   def getElementSize(): js.Object = js.native
   def getElementTagName(): java.lang.String = js.native
   def getElementText(): java.lang.String = js.native
+  def getElementValue(): java.lang.String | scala.Null = js.native
   def getGeoLocation(): js.Object = js.native
   def getLocalStorage(): js.Array[java.lang.String] = js.native
   def getLocalStorageItem(key: java.lang.String): java.lang.String = js.native
@@ -109,6 +115,7 @@ trait Client[T] extends js.Object {
   def getLogTypes(): js.Array[java.lang.String] = js.native
   def getLogs(`type`: java.lang.String): js.Array[js.Object] = js.native
   def getNamedCookie(name: java.lang.String): js.Object = js.native
+  def getNetworkConditions(): js.UndefOr[scala.Nothing] = js.native
   def getNetworkConnection(): scala.Double = js.native
   def getOrientation(): js.UndefOr[scala.Nothing] = js.native
   def getPageIndex(): js.UndefOr[scala.Nothing] = js.native
@@ -145,14 +152,18 @@ trait Client[T] extends js.Object {
   ): js.UndefOr[scala.Nothing] = js.native
   def installApp(appPath: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def interceptRequest(rule: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def isAlertOpen(): scala.Boolean = js.native
   def isAppInstalled(bundleId: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def isAutoReporting(): scala.Boolean = js.native
   def isElementDisplayed(): scala.Boolean = js.native
   def isElementEnabled(): scala.Boolean = js.native
   def isElementSelected(): scala.Boolean = js.native
   def isIMEActivated(): js.UndefOr[scala.Nothing] = js.native
   def isKeyboardShown(): js.UndefOr[scala.Nothing] = js.native
+  def isLoading(): scala.Boolean = js.native
   def isLocked(): js.UndefOr[scala.Nothing] = js.native
   def launchApp(): js.UndefOr[scala.Nothing] = js.native
+  def launchApp(id: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def lock(seconds: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def longPressKeyCode(keycode: java.lang.String, metastate: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def maximizeWindow(): js.UndefOr[scala.Nothing] = js.native
@@ -188,6 +199,7 @@ trait Client[T] extends js.Object {
   def removeApp(appId: js.Array[java.lang.String], bundleId: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
   def replaceValue(value: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def reset(): js.UndefOr[scala.Nothing] = js.native
+  def resume(): js.UndefOr[scala.Nothing] = js.native
   def rotateDevice(
     x: scala.Double,
     y: scala.Double,
@@ -198,14 +210,20 @@ trait Client[T] extends js.Object {
     element: java.lang.String
   ): js.UndefOr[scala.Nothing] = js.native
   def sendAlertText(text: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def sendCommand(cmd: java.lang.String, params: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def sendCommandAndGetResult(cmd: java.lang.String, params: js.Object): js.Any = js.native
   def sendKeyEvent(keycode: java.lang.String, metastate: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def sendKeys(value: js.Array[java.lang.String]): js.UndefOr[scala.Nothing] = js.native
   def sendSms(phoneNumber: java.lang.String, message: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def setAsyncTimeout(ms: scala.Double): js.UndefOr[scala.Nothing] = js.native
+  def setAutoReporting(enabled: scala.Boolean): js.Object | scala.Null = js.native
   def setGeoLocation(location: js.Object): js.UndefOr[scala.Nothing] = js.native
   def setImplicitTimeout(ms: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def setLocalStorage(key: java.lang.String, value: java.lang.String): js.UndefOr[scala.Nothing] = js.native
+  def setNetworkConditions(network_conditions: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def setNetworkConditions(network_conditions: js.Object, network_name: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def setNetworkConnection(connectionType: scala.Double): js.UndefOr[scala.Nothing] = js.native
+  def setNetworkConnection(parameters: js.Object): scala.Double = js.native
   def setOrientation(engine: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def setSessionStorage(key: java.lang.String, value: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def setTimeouts(): js.UndefOr[scala.Nothing] = js.native
@@ -233,6 +251,7 @@ trait Client[T] extends js.Object {
   def setWindowRect(x: scala.Null, y: scala.Null, width: scala.Null, height: scala.Double): js.Object = js.native
   def setWindowSize(width: scala.Double, height: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def shake(): js.UndefOr[scala.Nothing] = js.native
+  def shutdown(): js.UndefOr[scala.Nothing] = js.native
   def startActivity(
     appPackage: java.lang.String,
     appActivity: java.lang.String,
@@ -261,6 +280,7 @@ trait Client[T] extends js.Object {
   def switchToWindow(handle: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def takeElementScreenshot(): java.lang.String = js.native
   def takeElementScreenshot(scroll: scala.Boolean): java.lang.String = js.native
+  def takeHeapSnapshot(): js.Object = js.native
   def takeScreenshot(): java.lang.String = js.native
   def throttleNetwork(condition: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def throttleNetwork(condition: js.Object): js.UndefOr[scala.Nothing] = js.native
@@ -283,6 +303,7 @@ trait Client[T] extends js.Object {
   def touchMove(x: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def touchMove(x: scala.Double, y: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def touchPerform(actions: js.Array[js.Object]): js.UndefOr[scala.Nothing] = js.native
+  def touchPinch(x: scala.Double, y: scala.Double, scale: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def touchScroll(xoffset: scala.Double, yoffset: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def touchScroll(xoffset: scala.Double, yoffset: scala.Double, element: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def touchUp(): js.UndefOr[scala.Nothing] = js.native
@@ -290,5 +311,6 @@ trait Client[T] extends js.Object {
   def touchUp(x: scala.Double, y: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def unlock(): js.UndefOr[scala.Nothing] = js.native
   def updateSettings(settings: js.Object): js.UndefOr[scala.Nothing] = js.native
+  def uploadFile(file: java.lang.String): java.lang.String = js.native
 }
 

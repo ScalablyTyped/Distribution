@@ -102,7 +102,7 @@ trait TableProps[D, ResolvedData] extends js.Object {
   /** Control callback for functional rendering */
   def children(
     state: FinalState[ResolvedData],
-    makeTable: js.Function0[reactLib.reactMod.ReactNs.ReactElement],
+    makeTable: js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]],
     instance: Instance[ResolvedData]
   ): reactLib.reactMod.ReactNs.ReactNode = js.native
   /** Default: ... */

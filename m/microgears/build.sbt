@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "microgears"
-version := "4.0.12-1a357e"
+version := "4.0.12-eccf67"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-f01776",
-  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190212Z-5861ce",
+  "org.scalablytyped" %%% "ramda" % "0.25-dt-20190212Z-837f8d",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

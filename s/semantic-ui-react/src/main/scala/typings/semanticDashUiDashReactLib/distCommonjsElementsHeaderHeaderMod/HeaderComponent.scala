@@ -18,17 +18,17 @@ trait HeaderComponent
   ] = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderContentMod.HeaderContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderContentMod.HeaderContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Subheader(
     props: semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderSubheaderMod.HeaderSubheaderProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Subheader(
     props: semanticDashUiDashReactLib.distCommonjsElementsHeaderHeaderSubheaderMod.HeaderSubheaderProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

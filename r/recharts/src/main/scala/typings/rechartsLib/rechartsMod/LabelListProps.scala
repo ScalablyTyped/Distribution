@@ -12,7 +12,7 @@ trait LabelListProps extends js.Object {
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var clockWise: js.UndefOr[scala.Boolean] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[LabelProps]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[LabelProps]] = js.undefined
   var data: js.UndefOr[scala.Double] = js.undefined
   var dataKey: java.lang.String | scala.Double | RechartsFunction
   var formatter: js.UndefOr[LabelFormatter] = js.undefined

@@ -29,6 +29,6 @@ trait DraggableFlatListProps[Item]
   /**
     * Function that calls move when the row should become active (in an onPress, onLongPress, etc). Calls moveEnd when the gesture is complete (in onPressOut).
     */
-  def renderItem(info: RenderItemInfo[Item]): reactLib.reactMod.ReactNs.ReactElement | scala.Null
+  def renderItem(info: RenderItemInfo[Item]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
 }
 

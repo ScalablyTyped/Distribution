@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @js.native
 trait DialogWrap
   extends reactLib.reactMod.Component[rcDashDialogLib.libIDialogPropTypesMod.IDialogPropTypes, js.Any, js.Any] {
-  var _component: reactLib.reactMod.ReactNs.ReactElement = js.native
+  var _component: reactLib.reactMod.ReactNs.ReactElement[_] = js.native
   @JSName("componentWillUnmount")
   def componentWillUnmount_MDialogWrap(): scala.Unit = js.native
   def getComponent(): reactLib.reactMod.Global.JSXNs.Element = js.native

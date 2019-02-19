@@ -18,7 +18,7 @@ trait ScrollNumber
       reactLib.reactMod.ReactNs.DetailedReactHTMLElement[antdLib.Anon_ClassName, reactLib.HTMLElement]
     ]) | scala.Null
   ] = js.native
-  def renderNumberList(position: scala.Double): js.Array[reactLib.reactMod.ReactNs.ReactElement] = js.native
-  def renderScrollNumber(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def renderNumberList(position: scala.Double): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
+  def renderScrollNumber(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.ReactNs.ReactElement[_] = js.native
 }
 

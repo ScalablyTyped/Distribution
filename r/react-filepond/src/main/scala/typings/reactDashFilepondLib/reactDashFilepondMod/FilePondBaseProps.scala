@@ -25,7 +25,7 @@ trait FilePondBaseProps extends js.Object {
   /** Sets the given value to the capture attribute */
   var captureMethod: js.UndefOr[js.Any] = js.undefined
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
+    reactLib.reactMod.ReactNs.ReactElement[File] | js.Array[reactLib.reactMod.ReactNs.ReactElement[File]]
   ] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
   var id: js.UndefOr[java.lang.String] = js.undefined

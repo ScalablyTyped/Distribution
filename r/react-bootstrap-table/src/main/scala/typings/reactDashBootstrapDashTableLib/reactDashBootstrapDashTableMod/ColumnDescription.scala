@@ -122,7 +122,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Custom header value/component/children to use for this column.
   	 * Comes from TableHeader.headerText || TableHeader.children properties.
   	 */
-  var text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement
+  var text: java.lang.String | scala.Double | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_]
   /**
   	 * Width setting for this column.
   	 * Comes from TableHeader.width property.
@@ -137,7 +137,7 @@ trait ColumnDescription[TRow /* <: js.Object */] extends js.Object {
   	 * Column data format function.
   	 * Comes from TableHeader.dataFormat property.
   	 */
-  def format(cell: js.Any, row: TRow, formatExtraData: js.Any, rowIndex: scala.Double): java.lang.String | reactLib.reactMod.ReactNs.ReactElement
+  def format(cell: js.Any, row: TRow, formatExtraData: js.Any, rowIndex: scala.Double): java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
   /**
   	 * Custom sort function to use for this column.
   	 * Comes from TableHeader.sortFunc property.

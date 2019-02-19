@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 package object reactDashSortableDashHocMod {
   type Axis = reactDashSortableDashHocLib.reactDashSortableDashHocLibStrings.x | reactDashSortableDashHocLib.reactDashSortableDashHocLibStrings.y | reactDashSortableDashHocLib.reactDashSortableDashHocLibStrings.xy
-  type ContainerGetter = js.Function1[/* element */ reactLib.reactMod.ReactNs.ReactElement, reactLib.HTMLElement]
+  type ContainerGetter = js.Function1[/* element */ reactLib.reactMod.ReactNs.ReactElement[js.Any], reactLib.HTMLElement]
   type Offset = scala.Double | java.lang.String
   type SortEndHandler = js.Function2[/* sort */ SortEnd, /* event */ SortEvent, scala.Unit]
   type SortEvent = (reactLib.reactMod.ReactNs.MouseEvent[js.Any, reactLib.NativeMouseEvent]) | reactLib.reactMod.ReactNs.TouchEvent[js.Any]

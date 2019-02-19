@@ -90,7 +90,7 @@ trait LightboxProps extends js.Object {
   /**
     * Spinner component.
     */
-  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
+  var spinner: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactElement[_]]] = js.undefined
   /**
     *  Color of spinner. Default value: 'white'
     */

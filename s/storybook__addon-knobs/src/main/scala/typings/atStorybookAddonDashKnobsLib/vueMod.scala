@@ -120,11 +120,11 @@ object vueMod extends js.Object {
   def withKnobs(
     storyFn: atStorybookReactLib.atStorybookReactMod.RenderFunction,
     context: atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.StoryContext
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.WrapStoryProps] = js.native
   def withKnobsOptions(options: atStorybookAddonDashKnobsLib.Anon_Debounce): js.Function2[
     /* storyFn */ atStorybookReactLib.atStorybookReactMod.RenderFunction, 
     /* context */ atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.StoryContext, 
-    reactLib.reactMod.ReactNs.ReactElement
+    reactLib.reactMod.ReactNs.ReactElement[atStorybookAddonDashKnobsLib.atStorybookAddonDashKnobsMod.WrapStoryProps]
   ] = js.native
 }
 

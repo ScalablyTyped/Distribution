@@ -53,7 +53,10 @@ trait ColumnProps
     * props object as the first argument.
     */
   var cell: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactNs.ReactElement])
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ])
   ] = js.undefined
   /**
     * This is used to uniquely identify the column, and is not
@@ -98,7 +101,10 @@ trait ColumnProps
     * props object as the first argument.
     */
   var footer: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactNs.ReactElement])
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ])
   ] = js.undefined
   /**
     * The header cell for this column. This can either be a
@@ -120,7 +126,10 @@ trait ColumnProps
     * If you pass in a function, you will receive the same props object as the first argument.
     */
   var header: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[/* props */ CellProps, java.lang.String | reactLib.reactMod.ReactNs.ReactElement])
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
+      /* props */ CellProps, 
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
+    ])
   ] = js.undefined
   /**
     * Whether the column can be resized with the

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait SVGIconProps
   extends reactDashMdLib.libMod.Props {
   var children: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | js.Array[reactLib.reactMod.ReactNs.ReactElement]
+    reactLib.reactMod.ReactNs.ReactElement[_] | js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   var desc: js.UndefOr[java.lang.String] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined

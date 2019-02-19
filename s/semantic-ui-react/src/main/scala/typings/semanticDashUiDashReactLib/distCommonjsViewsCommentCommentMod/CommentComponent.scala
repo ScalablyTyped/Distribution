@@ -42,52 +42,52 @@ trait CommentComponent
   ] = js.native
   def Actions(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Actions(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Author(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Author(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Avatar(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Avatar(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Metadata(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Metadata(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Text(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Text(
     props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

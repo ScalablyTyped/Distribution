@@ -33,7 +33,7 @@ trait ExpansionPanelProps
   var expandIconClassName: js.UndefOr[java.lang.String] = js.undefined
   var expanded: js.UndefOr[scala.Boolean] = js.undefined
   var expandedSecondaryLabel: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var focused: js.UndefOr[scala.Boolean] = js.undefined
   var footer: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var footerClassName: js.UndefOr[java.lang.String] = js.undefined

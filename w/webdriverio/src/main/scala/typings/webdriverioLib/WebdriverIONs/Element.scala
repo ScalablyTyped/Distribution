@@ -6,22 +6,22 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Element[T] extends js.Object {
+trait Element extends js.Object {
   @JSName("$")
-  def $(selector: java.lang.String): Element[scala.Unit] = js.native
+  def $(selector: java.lang.String): Element = js.native
   @JSName("$")
-  def $(selector: js.Function): Element[scala.Unit] = js.native
+  def $(selector: js.Function): Element = js.native
   @JSName("$$")
-  def $$(selector: java.lang.String): js.Array[Element[scala.Unit]] = js.native
+  def $$(selector: java.lang.String): js.Array[Element] = js.native
   @JSName("$$")
-  def $$(selector: js.Function): js.Array[Element[scala.Unit]] = js.native
+  def $$(selector: js.Function): js.Array[Element] = js.native
   def addCommand(name: java.lang.String, func: js.Function): js.UndefOr[scala.Nothing] = js.native
   def addValue(value: js.Any): js.UndefOr[scala.Nothing] = js.native
   def clearValue(): js.UndefOr[scala.Nothing] = js.native
   def click(): js.UndefOr[scala.Nothing] = js.native
   def doubleClick(): js.UndefOr[scala.Nothing] = js.native
-  def dragAndDrop(target: Element[scala.Unit]): js.UndefOr[scala.Nothing] = js.native
-  def dragAndDrop(target: Element[scala.Unit], duration: scala.Double): js.UndefOr[scala.Nothing] = js.native
+  def dragAndDrop(target: Element): js.UndefOr[scala.Nothing] = js.native
+  def dragAndDrop(target: Element, duration: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def getAttribute(attributeName: java.lang.String): java.lang.String = js.native
   def getCSSProperty(cssProperty: java.lang.String): CSSProperty = js.native
   def getHTML(): java.lang.String = js.native

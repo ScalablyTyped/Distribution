@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-json-schema"
-version := "1.2-dt-20181205Z-12e7c9"
+version := "1.2-dt-20181205Z-021040"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "ajv" % "6.9.1-17ddd9",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2cff45",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
-  "org.scalablytyped" %%% "jest" % "24.0-dt-20190213Z-d9af71",
+  "org.scalablytyped" %%% "jest" % "24.0-dt-20190216Z-3ab3ce",
   "org.scalablytyped" %%% "jest-diff" % "20.0-dt-20190212Z-2c6446",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-0009b8",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",

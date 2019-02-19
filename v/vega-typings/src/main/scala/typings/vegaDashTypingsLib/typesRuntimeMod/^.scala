@@ -13,51 +13,69 @@ object ^ extends js.Object {
   val None: scala.Double = js.native
   val Warn: scala.Double = js.native
   val version: java.lang.String = js.native
-  def accessor(fn: vegaDashUtilLib.AccessorFn): vegaDashUtilLib.AccessorFn = js.native
-  def accessor(fn: vegaDashUtilLib.AccessorFn, fields: js.Array[java.lang.String]): vegaDashUtilLib.AccessorFn = js.native
-  def accessor(fn: vegaDashUtilLib.AccessorFn, fields: js.Array[java.lang.String], name: java.lang.String): vegaDashUtilLib.AccessorFn = js.native
-  def accessorFields(fn: js.Function): js.Array[java.lang.String] = js.native
-  def accessorName(fn: js.Function): java.lang.String = js.native
+  def accessor[R](fn: vegaDashUtilLib.Fn[R]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String]): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessor[R](fn: vegaDashUtilLib.Fn[R], fields: js.Array[java.lang.String], name: java.lang.String): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[R] = js.native
+  def accessorFields(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Array[java.lang.String] = js.native
+  def accessorName(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): java.lang.String = js.native
   def array[T](v: T): js.Array[T] = js.native
   @JSName("array")
   def array_TArrayT[T /* <: js.Array[_] */](v: T): T = js.native
   def changeset(): vegaDashTypingsLib.typesRuntimeMod.Changeset = js.native
+  def clampRange(range: js.Array[scala.Double], min: scala.Double, max: scala.Double): js.Array[scala.Double] = js.native
   def compare(fields: java.lang.String): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def compare(fields: java.lang.String, orders: js.Array[vegaDashUtilLib.vegaDashUtilMod.Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def compare(fields: java.lang.String, orders: vegaDashUtilLib.vegaDashUtilMod.Order): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
-  def compare(fields: js.Array[vegaDashUtilLib.AccessorFn | java.lang.String]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
+  def compare(fields: js.Array[vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_] | java.lang.String]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def compare(
-    fields: js.Array[vegaDashUtilLib.AccessorFn | java.lang.String],
+    fields: js.Array[vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_] | java.lang.String],
     orders: js.Array[vegaDashUtilLib.vegaDashUtilMod.Order]
   ): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def compare(
-    fields: js.Array[vegaDashUtilLib.AccessorFn | java.lang.String],
+    fields: js.Array[vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_] | java.lang.String],
     orders: vegaDashUtilLib.vegaDashUtilMod.Order
   ): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
-  def compare(fields: vegaDashUtilLib.AccessorFn): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
-  def compare(fields: vegaDashUtilLib.AccessorFn, orders: js.Array[vegaDashUtilLib.vegaDashUtilMod.Order]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
-  def compare(fields: vegaDashUtilLib.AccessorFn, orders: vegaDashUtilLib.vegaDashUtilMod.Order): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
+  def compare(fields: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
+  def compare(
+    fields: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_],
+    orders: js.Array[vegaDashUtilLib.vegaDashUtilMod.Order]
+  ): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
+  def compare(
+    fields: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_],
+    orders: vegaDashUtilLib.vegaDashUtilMod.Order
+  ): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
   def constant[V](v: V): js.Function0[V] = js.native
   def debounce[F /* <: js.Function */](delay: scala.Double, func: F): F = js.native
   def error(msg: java.lang.String): stdLib.Error = js.native
   def expressionFunction(name: java.lang.String): js.Any = js.native
   def expressionFunction(name: java.lang.String, fn: js.Any): js.Any = js.native
   def expressionFunction(name: java.lang.String, fn: js.Any, visitor: js.Any): js.Any = js.native
-  def extend(target: js.Object, source: js.Object*): js.Object = js.native
+  def extend[T](target: T, source: stdLib.Partial[T]*): T = js.native
+  def extent(array: js.Array[scala.Double]): js.Array[scala.Double] = js.native
+  def extent(array: js.Array[scala.Double], accessor: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Array[scala.Double] = js.native
   def extentIndex(array: js.Array[scala.Double]): js.Array[scala.Double] = js.native
-  def extentIndex(array: js.Array[scala.Double], accessor: vegaDashUtilLib.AccessorFn): js.Array[scala.Double] = js.native
+  def extentIndex(array: js.Array[scala.Double], accessor: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Array[scala.Double] = js.native
   def falsy(): vegaDashTypingsLib.vegaDashTypingsLibNumbers.`false` = js.native
   def fastmap(): vegaDashUtilLib.vegaDashUtilMod.FastMap = js.native
   def fastmap(`_`: js.Object): vegaDashUtilLib.vegaDashUtilMod.FastMap = js.native
-  def field(field: java.lang.String): vegaDashUtilLib.AccessorFn = js.native
-  def field(field: java.lang.String, name: java.lang.String): vegaDashUtilLib.AccessorFn = js.native
+  def field(field: java.lang.String): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_] = js.native
+  def field(field: java.lang.String, name: java.lang.String): vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_] = js.native
+  def flush[T /* <: js.Any */](
+    range: js.Array[scala.Double],
+    value: scala.Double,
+    threshold: scala.Double,
+    left: T,
+    right: T,
+    center: T
+  ): T = js.native
   def formatLocale(definition: js.Object): scala.Unit = js.native
   def id(`_`: js.Object): js.Symbol = js.native
   def identity[V](v: V): V = js.native
   def inferType(values: js.Array[_]): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
   def inferType(values: js.Array[_], field: java.lang.String): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
   def inferTypes(values: js.Array[_], fields: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[vegaDashTypingsLib.typesRuntimeMod.TypeInference] = js.native
-  def inherits(child: js.Object, parent: js.Object): js.Object = js.native
+  def inherits(child: stdLib.ObjectConstructor, parent: stdLib.ObjectConstructor): js.Object = js.native
+  def inrange(value: scala.Double, range: js.Array[scala.Double], left: scala.Boolean, right: scala.Boolean): scala.Boolean = js.native
   def isArray[T](a: js.Any): /* is std.Array<T> */ scala.Boolean = js.native
   def isArray[T](a: js.Array[T]): /* is std.Array<T> */ scala.Boolean = js.native
   def isBoolean(a: js.Any): /* is boolean */ scala.Boolean = js.native
@@ -118,10 +136,13 @@ object ^ extends js.Object {
   def panLinear(domain: js.Array[scala.Double], delta: scala.Double): js.Array[scala.Double] = js.native
   def panLog(domain: js.Array[scala.Double], delta: scala.Double): js.Array[scala.Double] = js.native
   def panPow(domain: js.Array[scala.Double], delta: scala.Double, exponent: scala.Double): js.Array[scala.Double] = js.native
+  def panSymlog(domain: js.Array[scala.Double], delta: scala.Double, constant: scala.Double): js.Array[scala.Double] = js.native
   def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec): vegaDashTypingsLib.typesRuntimeMod.Runtime = js.native
   def parse(spec: vegaDashTypingsLib.typesSpecMod.Spec, opt: js.Any): vegaDashTypingsLib.typesRuntimeMod.Runtime = js.native
   def peek(array: js.Array[_]): js.Any = js.native
   def projection(`type`: java.lang.String, projection: js.Any): vegaDashTypingsLib.typesRuntimeMod.View = js.native
+  def quarter(date: scala.Double): scala.Double = js.native
+  def quarter(date: stdLib.Date): scala.Double = js.native
   def read(data: java.lang.String, schema: vegaDashTypingsLib.typesSpecDataMod.Format): js.Array[js.Object] = js.native
   def read(
     data: java.lang.String,
@@ -154,6 +175,7 @@ object ^ extends js.Object {
   def schemeDiscretized(name: java.lang.String): js.Any = js.native
   def schemeDiscretized(name: java.lang.String, scheme: js.Any): js.Any = js.native
   def schemeDiscretized(name: java.lang.String, scheme: js.Any, interpolator: js.Any): js.Any = js.native
+  def span(array: js.Array[scala.Double]): scala.Double = js.native
   def splitAccessPath(path: java.lang.String): js.Array[java.lang.String] = js.native
   def stringValue(a: js.Any): java.lang.String = js.native
   def timeFormatLocale(definition: js.Object): scala.Unit = js.native
@@ -204,6 +226,8 @@ object ^ extends js.Object {
     ellipsis: java.lang.String
   ): java.lang.String = js.native
   def truthy(): vegaDashTypingsLib.vegaDashTypingsLibNumbers.`true` = js.native
+  def utcquarter(date: scala.Double): scala.Double = js.native
+  def utcquarter(date: stdLib.Date): scala.Double = js.native
   def visitArray(
     array: js.Array[_],
     filter: js.Function1[/* any */ js.Any, js.UndefOr[scala.Boolean]],
@@ -221,5 +245,7 @@ object ^ extends js.Object {
   def zoomLog(domain: js.Array[scala.Double], anchor: scala.Null, scale: scala.Double): js.Array[scala.Double] = js.native
   def zoomPow(domain: js.Array[scala.Double], anchor: scala.Double, scale: scala.Double, exponent: scala.Double): js.Array[scala.Double] = js.native
   def zoomPow(domain: js.Array[scala.Double], anchor: scala.Null, scale: scala.Double, exponent: scala.Double): js.Array[scala.Double] = js.native
+  def zoomSymlog(domain: js.Array[scala.Double], anchor: scala.Double, scale: scala.Double, constant: scala.Double): js.Array[scala.Double] = js.native
+  def zoomSymlog(domain: js.Array[scala.Double], anchor: scala.Null, scale: scala.Double, constant: scala.Double): js.Array[scala.Double] = js.native
 }
 

@@ -14,6 +14,6 @@ trait Context[T] extends js.Object {
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def Consumer(props: ConsumerProps[T]): ReactElement | scala.Null = js.native
+  def Consumer(props: ConsumerProps[T]): ReactElement[_] | scala.Null = js.native
 }
 

@@ -26,7 +26,7 @@ package object reactDashNavigationMod {
   type NavigationNavigator[State, Options, Props] = (reactLib.reactMod.ReactNs.ComponentType[(NavigationNavigatorProps[Options, State]) with Props]) with (reactDashNavigationLib.Anon_NavigationOptionsRouter[State, Options])
   type NavigationRoute[Params] = NavigationLeafRoute[Params] | NavigationStateRoute[Params]
   type NavigationRouteConfig = NavigationComponent | (reactDashNavigationLib.Anon_NavigationOptionsPath with NavigationScreenRouteConfig)
-  type NavigationSceneRenderer = js.Function0[reactLib.reactMod.ReactNs.ReactElement | scala.Null]
+  type NavigationSceneRenderer = js.Function0[reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null]
   type NavigationSceneRendererProps = NavigationTransitionProps
   type NavigationScreenComponent[Params, Options, Props] = (reactLib.reactMod.ReactNs.ComponentType[(NavigationScreenProps[Params, Options]) with Props]) with reactDashNavigationLib.Anon_NavigationOptionsNavigationScreenConfig[Options]
   type NavigationScreenConfig[Options] = Options | (js.Function1[

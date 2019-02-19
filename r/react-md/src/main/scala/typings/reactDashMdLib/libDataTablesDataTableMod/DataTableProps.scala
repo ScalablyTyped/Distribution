@@ -10,7 +10,7 @@ trait DataTableProps
   var baseId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var checkboxHeaderLabel: js.UndefOr[java.lang.String] = js.undefined
   var checkboxLabelTemplate: js.UndefOr[java.lang.String | template] = js.undefined
-  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var checkedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -34,7 +34,7 @@ trait DataTableProps
   var fullWidth: js.UndefOr[scala.Boolean] = js.undefined
   var headerHeight: js.UndefOr[scala.Double] = js.undefined
   var indeterminate: js.UndefOr[scala.Boolean] = js.undefined
-  var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var indeterminateIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -57,7 +57,7 @@ trait DataTableProps
   var selectableRows: js.UndefOr[scala.Boolean] = js.undefined
   var tableClassName: js.UndefOr[java.lang.String] = js.undefined
   var tableStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var uncheckedIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */

@@ -14,14 +14,14 @@ import scala.scalajs.js.annotation._
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
   var deleteKeys: js.UndefOr[scala.Double | java.lang.String | (js.Array[scala.Double | java.lang.String])] = js.undefined
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
-  var dropdownIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var dropdownIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var error: js.UndefOr[scala.Boolean] = js.undefined
   var errorText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var floating: js.UndefOr[scala.Boolean] = js.undefined
   var getItemProps: js.UndefOr[js.Function1[/* data */ js.Object, js.Object]] = js.undefined
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var helpText: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var inputClassName: js.UndefOr[java.lang.String] = js.undefined
   var inputStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var itemLabel: js.UndefOr[java.lang.String] = js.undefined
@@ -29,7 +29,7 @@ import scala.scalajs.js.annotation._
   var itemValue: js.UndefOr[java.lang.String] = js.undefined
   var keyboardMatchingTimeout: js.UndefOr[scala.Double] = js.undefined
   var label: js.UndefOr[reactLib.reactMod.ReactNs.ReactNode] = js.undefined
-  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var leftIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var lineDirection: js.UndefOr[reactDashMdLib.libTextFieldsTextFieldMod.TextFieldLineDirections] = js.undefined
   var max: js.UndefOr[scala.Double] = js.undefined
@@ -38,7 +38,7 @@ import scala.scalajs.js.annotation._
   var menuId: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
   var menuItems: js.UndefOr[
     js.Array[
-      scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactNs.ReactElement
+      scala.Double | java.lang.String | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   var menuTransitionEnterTimeout: js.UndefOr[scala.Double] = js.undefined
@@ -63,7 +63,7 @@ import scala.scalajs.js.annotation._
     ]
   ] = js.undefined
   var paddedBlock: js.UndefOr[scala.Boolean] = js.undefined
-  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var passwordIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -78,7 +78,7 @@ import scala.scalajs.js.annotation._
   var position: js.UndefOr[reactDashMdLib.libHelpersLayoverMod.LayoverPositions] = js.undefined
   var required: js.UndefOr[scala.Boolean] = js.undefined
   var resize: js.UndefOr[reactDashMdLib.Anon_DisableShrink] = js.undefined
-  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var rightIconStateful: js.UndefOr[scala.Boolean] = js.undefined
   var rows: js.UndefOr[scala.Double] = js.undefined
   var simplifiedMenu: js.UndefOr[scala.Boolean] = js.undefined

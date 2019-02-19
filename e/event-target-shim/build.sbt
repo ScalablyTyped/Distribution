@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "event-target-shim"
-version := "5.0.0-188cac"
+version := "5.0.1-188cac"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

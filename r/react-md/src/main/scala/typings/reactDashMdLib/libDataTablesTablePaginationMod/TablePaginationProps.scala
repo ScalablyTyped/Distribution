@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TablePaginationProps
   extends reactDashMdLib.libMod.Props {
-  var decrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var decrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -20,7 +20,7 @@ trait TablePaginationProps
   var defaultPage: js.UndefOr[scala.Double] = js.undefined
   var defaultRowsPerPage: js.UndefOr[scala.Double] = js.undefined
   var id: js.UndefOr[reactDashMdLib.libMod.IdPropType] = js.undefined
-  var incrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var incrementIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */

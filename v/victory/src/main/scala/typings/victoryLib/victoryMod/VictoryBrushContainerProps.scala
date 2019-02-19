@@ -26,7 +26,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * width, height, and style. When this prop is not specified, a <rect/> will be rendered.
     * @default brushComponent={<rect/>}
     */
-  var brushComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var brushComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * When the brushDimension prop is set, brushing will only be specific to the to
     * the given dimension (either "x" or "y"), and the entire domain of the other
@@ -71,7 +71,7 @@ trait VictoryBrushContainerProps extends VictoryContainerProps {
     * specified, a <rect/> will be rendered.
     * @default handleComponent={<rect/>}
     */
-  var handleComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var handleComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * The handleStyle adds custom styles to the handleComponents. This prop should be given as an object of SVG style attributes.
     *

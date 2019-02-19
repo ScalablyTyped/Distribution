@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 trait TooltipProps extends Animatable {
   var active: js.UndefOr[scala.Boolean] = js.undefined
   var content: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | reactLib.reactMod.ReactNs.StatelessComponent[_] | ContentRenderer[TooltipProps]
+    reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.StatelessComponent[_] | ContentRenderer[TooltipProps]
   ] = js.undefined
   var coordinate: js.UndefOr[Coordinate] = js.undefined
   var cursor: js.UndefOr[
-    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.StatelessComponent[_]
   ] = js.undefined
   var filterNull: js.UndefOr[scala.Boolean] = js.undefined
   var formatter: js.UndefOr[TooltipFormatter] = js.undefined

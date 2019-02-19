@@ -10,6 +10,7 @@ trait IPanel
      with IParentElement {
   var parent: IPanel
   def elementWidthChanged(el: IElement): js.Any
+  def getChildrenLayoutType(): java.lang.String
   def getQuestionTitleLocation(): java.lang.String
 }
 

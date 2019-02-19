@@ -14,6 +14,6 @@ import scala.scalajs.js.annotation._
   var dense: js.UndefOr[scala.Boolean] = js.undefined
   var disablePadding: js.UndefOr[scala.Boolean] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var subheader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var subheader: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

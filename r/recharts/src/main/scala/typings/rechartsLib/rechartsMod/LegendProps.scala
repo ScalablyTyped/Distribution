@@ -11,7 +11,7 @@ trait LegendProps extends js.Object {
   ] = js.undefined
   var chartHeight: js.UndefOr[scala.Double] = js.undefined
   var chartWidth: js.UndefOr[scala.Double] = js.undefined
-  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[LegendProps]] = js.undefined
+  var content: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[LegendProps]] = js.undefined
   var formatter: js.UndefOr[LegendValueFormatter] = js.undefined
   var height: js.UndefOr[scala.Double] = js.undefined
   var iconSize: js.UndefOr[scala.Double] = js.undefined

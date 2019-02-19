@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait TransitionProps extends js.Object {
   var appear: js.UndefOr[reactDashMotionLib.reactDashMotionMod.Style] = js.undefined
-  var component: js.UndefOr[java.lang.String | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var component: js.UndefOr[java.lang.String | scala.Boolean | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var enter: js.UndefOr[reactDashMotionLib.reactDashMotionMod.Style] = js.undefined
   var leave: js.UndefOr[reactDashMotionLib.reactDashMotionMod.Style] = js.undefined
   var onEnter: js.UndefOr[

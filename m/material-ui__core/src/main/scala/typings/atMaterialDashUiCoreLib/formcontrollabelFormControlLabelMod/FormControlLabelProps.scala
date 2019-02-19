@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation._
   extends atMaterialDashUiCoreLib.stylesWithStylesMod.StyledComponentProps[FormControlLabelClassKey] {
   var checked: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var control: reactLib.reactMod.ReactNs.ReactElement
+  var control: reactLib.reactMod.ReactNs.ReactElement[_]
   var disabled: js.UndefOr[scala.Boolean] = js.undefined
   var inputRef: js.UndefOr[reactLib.reactMod.ReactNs.Ref[_]] = js.undefined
   var label: reactLib.reactMod.ReactNs.ReactNode

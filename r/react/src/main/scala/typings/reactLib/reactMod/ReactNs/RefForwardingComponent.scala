@@ -11,6 +11,6 @@ trait RefForwardingComponent[T, P] extends js.Object {
   var defaultProps: js.UndefOr[stdLib.Partial[P]] = js.native
   var displayName: js.UndefOr[java.lang.String] = js.native
   var propTypes: js.UndefOr[WeakValidationMap[P]] = js.native
-  def apply(props: P with reactLib.Anon_Children, ref: Ref[T]): ReactElement | scala.Null = js.native
+  def apply(props: P with reactLib.Anon_Children, ref: Ref[T]): ReactElement[_] | scala.Null = js.native
 }
 

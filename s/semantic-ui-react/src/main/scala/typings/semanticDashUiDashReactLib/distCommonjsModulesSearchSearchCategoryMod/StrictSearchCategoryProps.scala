@@ -25,7 +25,7 @@ trait StrictSearchCategoryProps extends js.Object {
     * @returns {*} - Renderable category contents.
     */
   var renderer: js.UndefOr[
-    js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[/* props */ SearchCategoryProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   /** Array of Search.Result props. */
   var results: js.UndefOr[

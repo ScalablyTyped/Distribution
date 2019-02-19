@@ -9,7 +9,6 @@ import scala.scalajs.js.annotation._
 @js.native
 class QuestionSelectBase protected () extends Question {
   def this(name: java.lang.String) = this()
-  var cachedValue: scala.Boolean = js.native
   /**
     * The list of items. Every item has value and text. If text is empty, the value is rendered. The item text supports markdown.
     * @see choicesByUrl
@@ -47,6 +46,8 @@ class QuestionSelectBase protected () extends Question {
     * Returns true if a user select the 'other' item.
     */
   val isOtherSelected: scala.Boolean = js.native
+  var isRenderedValueSetting: scala.Boolean = js.native
+  var isSettingDefaultValue: scala.Boolean = js.native
   val locOtherErrorText: LocalizableString = js.native
   val locOtherText: LocalizableString = js.native
   /**
@@ -62,6 +63,7 @@ class QuestionSelectBase protected () extends Question {
     * Use this property to set the different text for other item.
     */
   var otherText: java.lang.String = js.native
+  var renderedValue: js.Any = js.native
   /**
     * By default the entered text in the others input in the checkbox/radiogroup/dropdown are stored as "question name " + "-Comment". The value itself is "question name": "others". Set this property to false, to store the entered text directly in the "question name" key.
     * @see SurveyModel.storeOthersAsComment
@@ -87,11 +89,12 @@ class QuestionSelectBase protected () extends Question {
   /* protected */ def hasUnknownValue(`val`: js.Any, includeOther: scala.Boolean): scala.Boolean = js.native
   /* protected */ def isValueDisabled(`val`: js.Any): scala.Boolean = js.native
   /* protected */ def onVisibleChoicesChanged(): scala.Unit = js.native
+  /* protected */ def rendredValueFromData(`val`: js.Any): js.Any = js.native
+  /* protected */ def rendredValueFromDataCore(`val`: js.Any): js.Any = js.native
+  /* protected */ def rendredValueToData(`val`: js.Any): js.Any = js.native
+  /* protected */ def rendredValueToDataCore(`val`: js.Any): js.Any = js.native
   /* protected */ def runItemsCondition(values: HashTable[_], properties: HashTable[_]): scala.Boolean = js.native
   /* protected */ def runItemsEnableCondition(values: HashTable[_], properties: HashTable[_]): js.Any = js.native
-  /* protected */ def setDefaultValueWithOthers(): scala.Unit = js.native
   /* protected */ def updateVisibleChoices(): scala.Unit = js.native
-  /* protected */ def valueFromDataCore(`val`: js.Any): js.Any = js.native
-  /* protected */ def valueToDataCore(`val`: js.Any): js.Any = js.native
 }
 

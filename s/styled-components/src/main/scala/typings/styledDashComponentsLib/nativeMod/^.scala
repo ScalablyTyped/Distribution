@@ -12,7 +12,7 @@ object ^ extends js.Object {
     /* props */ reactLib.reactMod.ReactNs.ConsumerProps[
       styledDashComponentsLib.nativeMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
     ], 
-    reactLib.reactMod.ReactNs.ReactElement | scala.Null
+    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
   ]) | (reactLib.reactMod.ReactNs.Consumer[
     styledDashComponentsLib.nativeMod.AnyIfEmpty[styledDashComponentsLib.styledDashComponentsMod.DefaultTheme]
   ]) = js.native

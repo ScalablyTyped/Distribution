@@ -14,7 +14,7 @@ trait MenuTabProps
   var tabClassName: js.UndefOr[java.lang.String] = js.undefined
   var tabStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var tabs: js.Array[
-    reactLib.reactMod.ReactNs.ReactElement | java.lang.String | reactDashMdLib.Anon_Divider
+    reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabMod.TabProps] | java.lang.String | reactDashMdLib.Anon_Divider
   ]
 }
 

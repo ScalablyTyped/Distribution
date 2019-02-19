@@ -34,6 +34,8 @@ trait Values[T] extends js.Object {
   def equal(value: T, options: js.Any): AssertionChain[T] = js.native
   def equal(value: js.Array[T]): AssertionChain[T] = js.native
   def equal(value: js.Array[T], options: js.Any): AssertionChain[T] = js.native
+  /** Asserts that the reference value equals the provided value. */
+  def equals(value: T): AssertionChain[T] = js.native
   def equals(value: T, options: js.Any): AssertionChain[T] = js.native
   def equals(value: js.Array[T]): AssertionChain[T] = js.native
   def equals(value: js.Array[T], options: js.Any): AssertionChain[T] = js.native

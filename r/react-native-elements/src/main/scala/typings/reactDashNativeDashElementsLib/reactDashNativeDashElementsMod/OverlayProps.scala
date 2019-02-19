@@ -18,7 +18,7 @@ trait OverlayProps
   /**
     * Content of the overlay
     */
-  var children: reactLib.reactMod.ReactNs.ReactElement
+  var children: reactLib.reactMod.ReactNs.ReactElement[_]
   /**
     * Style for the overlay container
     */

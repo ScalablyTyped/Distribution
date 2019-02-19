@@ -22,7 +22,7 @@ package object distCommonjsGenericMod {
     /* component */ reactLib.reactMod.ReactNs.ReactType[TProps], 
     /* props */ TProps, 
     /* children */ js.UndefOr[reactLib.reactMod.ReactNs.ReactNode | reactLib.reactMod.ReactNs.ReactNodeArray], 
-    reactLib.reactMod.ReactNs.ReactElement | scala.Null
+    reactLib.reactMod.ReactNs.ReactElement[js.Any] | scala.Null
   ]
   type SemanticTEXTALIGNMENTS = semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.left | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.center | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.right | semanticDashUiDashReactLib.semanticDashUiDashReactLibStrings.justified
   type SemanticTRANSITIONS = SemanticDIRECTIONALTRANSITIONS | SemanticSTATICTRANSITIONS

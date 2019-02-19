@@ -12,10 +12,10 @@ trait TabComponent
   var Pane_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps] = js.native
   def Pane(
     props: semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps with reactLib.Anon_Children
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Pane(
     props: semanticDashUiDashReactLib.distCommonjsModulesTabTabPaneMod.TabPaneProps with reactLib.Anon_Children,
     context: js.Any
-  ): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

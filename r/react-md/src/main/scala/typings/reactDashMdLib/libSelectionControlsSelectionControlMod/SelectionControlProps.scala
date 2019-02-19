@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SelectionControlProps extends BaseSelectionControlProps {
-  var checkedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var checkedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -15,7 +15,7 @@ trait SelectionControlProps extends BaseSelectionControlProps {
     * @deprecated
     */
   var checkedCheckboxIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var checkedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var checkedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -32,7 +32,7 @@ trait SelectionControlProps extends BaseSelectionControlProps {
     ]
   ] = js.undefined
   var `type`: Types
-  var uncheckedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var uncheckedCheckboxIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */
@@ -41,7 +41,7 @@ trait SelectionControlProps extends BaseSelectionControlProps {
     * @deprecated
     */
   var uncheckedCheckboxIconClassName: js.UndefOr[java.lang.String] = js.undefined
-  var uncheckedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var uncheckedRadioIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */

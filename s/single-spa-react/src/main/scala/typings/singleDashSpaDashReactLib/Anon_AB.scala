@@ -88,15 +88,15 @@ trait Anon_AB extends js.Object {
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): T = js.native
-  def hydrate[P](element: reactLib.reactMod.ReactNs.ReactElement): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
-  def hydrate[P](element: reactLib.reactMod.ReactNs.ReactElement, container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def hydrate[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def hydrate[P](element: reactLib.reactMod.ReactNs.ReactElement[P], container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def hydrate[P](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def hydrate[P](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
@@ -113,18 +113,18 @@ trait Anon_AB extends js.Object {
     callback: js.Function0[scala.Unit]
   ): T = js.native
   @JSName("hydrate")
-  def `hydrate_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement]): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def `hydrate_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("hydrate")
-  def `hydrate_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement], container: reactLib.Element): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def `hydrate_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], container: reactLib.Element): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("hydrate")
   def `hydrate_<union>`(
-    element: js.Array[reactLib.reactMod.ReactNs.ReactElement],
+    element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]],
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("hydrate")
   def `hydrate_<union>`(
-    element: js.Array[reactLib.reactMod.ReactNs.ReactElement],
+    element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]],
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
@@ -249,15 +249,15 @@ trait Anon_AB extends js.Object {
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): T = js.native
-  def render[P](element: reactLib.reactMod.ReactNs.ReactElement): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
-  def render[P](element: reactLib.reactMod.ReactNs.ReactElement, container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def render[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def render[P](element: reactLib.reactMod.ReactNs.ReactElement[P], container: reactLib.Element): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def render[P](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def render[P](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
@@ -274,18 +274,18 @@ trait Anon_AB extends js.Object {
     callback: js.Function0[scala.Unit]
   ): T = js.native
   @JSName("render")
-  def `render_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement]): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def `render_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]]): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("render")
-  def `render_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement], container: reactLib.Element): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
+  def `render_<union>`(element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]], container: reactLib.Element): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("render")
   def `render_<union>`(
-    element: js.Array[reactLib.reactMod.ReactNs.ReactElement],
+    element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]],
     container: reactLib.Element,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   @JSName("render")
   def `render_<union>`(
-    element: js.Array[reactLib.reactMod.ReactNs.ReactElement],
+    element: js.Array[reactLib.reactMod.ReactNs.ReactElement[_]],
     container: scala.Null,
     callback: js.Function0[scala.Unit]
   ): (reactLib.reactMod.Component[_, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
@@ -351,12 +351,12 @@ trait Anon_AB extends js.Object {
   ): T = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element
   ): (reactLib.reactMod.Component[P, reactLib.reactMod.ReactNs.ComponentState, _]) | reactLib.Element | scala.Unit = js.native
   def unstable_renderSubtreeIntoContainer[P](
     parentComponent: reactLib.reactMod.Component[_, js.Object, _],
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     container: reactLib.Element,
     callback: js.Function1[
       /* component */ js.UndefOr[

@@ -14,5 +14,6 @@ trait LogScale extends BaseScale {
   var range: js.UndefOr[RangeScheme] = js.undefined
   @JSName("type")
   var type_LogScale: vegaDashTypingsLib.vegaDashTypingsLibStrings.log
+  var zero: js.UndefOr[vegaDashTypingsLib.vegaDashTypingsLibNumbers.`false`] = js.undefined
 }
 

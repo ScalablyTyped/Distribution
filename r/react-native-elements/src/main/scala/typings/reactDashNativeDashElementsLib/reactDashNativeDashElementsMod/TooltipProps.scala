@@ -40,7 +40,7 @@ trait TooltipProps extends js.Object {
   /**
     * Component to be rendered as the display container.
     */
-  var popover: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var popover: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
     * Flag to determine to toggle or not the tooltip on press.
     */

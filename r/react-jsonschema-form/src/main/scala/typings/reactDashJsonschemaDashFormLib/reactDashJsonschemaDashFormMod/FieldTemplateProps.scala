@@ -6,15 +6,15 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait FieldTemplateProps extends js.Object {
-  var children: reactLib.reactMod.ReactNs.ReactElement
+  var children: reactLib.reactMod.ReactNs.ReactElement[_]
   var classNames: java.lang.String
-  var description: reactLib.reactMod.ReactNs.ReactElement
+  var description: reactLib.reactMod.ReactNs.ReactElement[_]
   var disabled: scala.Boolean
   var displayLabel: scala.Boolean
-  var errors: reactLib.reactMod.ReactNs.ReactElement
+  var errors: reactLib.reactMod.ReactNs.ReactElement[_]
   var fields: js.Array[Field]
   var formContext: js.Any
-  var help: reactLib.reactMod.ReactNs.ReactElement
+  var help: reactLib.reactMod.ReactNs.ReactElement[_]
   var hidden: scala.Boolean
   var id: java.lang.String
   var label: java.lang.String

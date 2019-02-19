@@ -22,6 +22,6 @@ trait ExoticComponent[P] extends js.Object {
   /**
     * **NOTE**: Exotic components are not callable.
     */
-  def apply(props: P): ReactElement | scala.Null = js.native
+  def apply(props: P): ReactElement[_] | scala.Null = js.native
 }
 

@@ -63,6 +63,6 @@ trait OverlayProps
     * A render prop that returns an element to overlay and position. See
     * the [react-popper documentation](https://github.com/FezVrasta/react-popper#children) for more info.
     */
-  def children(renderProps: OverlayRenderProps): reactLib.reactMod.ReactNs.ReactElement
+  def children(renderProps: OverlayRenderProps): reactLib.reactMod.ReactNs.ReactElement[_]
 }
 

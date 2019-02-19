@@ -359,31 +359,6 @@ class Geometry () extends js.Object {
     */
   def equal(a: Coordinate, b: Coordinate, tolerance: scala.Double): scala.Boolean = js.native
   /**
-    * Tests whether this geometry is structurally and numerically equal to a given
-    * <tt>Object</tt>. If the argument <tt>Object</tt> is not a
-    * <tt>Geometry</tt>, the result is <tt>false</tt>. Otherwise, the result
-    * is computed using {@link #equalsExact(Geometry)}.
-    * <p>
-    * This method is provided to fulfill the Java contract for value-based object
-    * equality. In conjunction with {@link #hashCode()} it provides semantics which
-    * are most useful for using <tt>Geometry</tt>s as keys and values in Java
-    * collections.
-    * <p>
-    * Note that to produce the expected result the input geometries should be in
-    * normal form. It is the caller's responsibility to perform this where required
-    * (using {@link Geometry#norm() or {@link #normalize()} as appropriate).
-    *
-    * @param {Object}
-    *          o the Object to compare.
-    * @return {boolean} true if this geometry is exactly equal to the argument.
-    *
-    * @see #equalsExact(Geometry)
-    * @see #hashCode()
-    * @see #norm()
-    * @see #normalize()
-    */
-  def equals(o: js.Object): scala.Boolean = js.native
-  /**
     * Returns true if the two <code>Geometry</code>s are exactly equal, up to a
     * specified distance tolerance. Two Geometries are exactly equal within a
     * distance tolerance if and only if:

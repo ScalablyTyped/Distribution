@@ -12,7 +12,7 @@ import scala.scalajs.js.annotation._
   var ifOverflow: js.UndefOr[IfOverflowType] = js.undefined
   var isFront: js.UndefOr[scala.Boolean] = js.undefined
   var shape: js.UndefOr[
-    (ContentRenderer[ReferenceAreaProps with RectangleProps]) | reactLib.reactMod.ReactNs.ReactElement
+    (ContentRenderer[ReferenceAreaProps with RectangleProps]) | reactLib.reactMod.ReactNs.ReactElement[_]
   ] = js.undefined
   var viewBox: js.UndefOr[ViewBox] = js.undefined
   var x1: js.UndefOr[scala.Double | java.lang.String] = js.undefined

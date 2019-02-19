@@ -20,7 +20,7 @@ trait StyledComponentBase[C /* <: java.lang.String */, T /* <: js.Object */, O /
   //   props: StyledComponentPropsWithAs<AsC, T, O, A>
   // ): React.ReactElement<StyledComponentPropsWithAs<AsC, T, O, A>>
   // TODO (TypeScript 3.2): delete this overload
-  def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_AsAny): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def apply(props: (StyledComponentProps[C, T, O, A]) with styledDashComponentsLib.Anon_AsAny): reactLib.reactMod.ReactNs.ReactElement[StyledComponentProps[C, T, O, A]] = js.native
   def withComponent[WithC /* <: java.lang.String */](component: WithC): StyledComponent[WithC, T, O, A] = js.native
   @JSName("withComponent")
   def withComponent_WithCAnyStyledComponent[WithC /* <: AnyStyledComponent */](component: WithC): StyledComponent[

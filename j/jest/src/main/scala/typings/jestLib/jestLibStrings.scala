@@ -28,6 +28,9 @@ object jestLibStrings {
   sealed trait get extends js.Object
   
   @js.native
+  sealed trait incomplete extends js.Object
+  
+  @js.native
   sealed trait info extends js.Object
   
   @js.native
@@ -49,10 +52,16 @@ object jestLibStrings {
   sealed trait real extends js.Object
   
   @js.native
+  sealed trait `return` extends js.Object
+  
+  @js.native
   sealed trait set extends js.Object
   
   @js.native
   sealed trait skipped extends js.Object
+  
+  @js.native
+  sealed trait `throw` extends js.Object
   
   @js.native
   sealed trait warn extends js.Object
@@ -72,6 +81,8 @@ object jestLibStrings {
   @scala.inline
   def get: get = "get".asInstanceOf[get]
   @scala.inline
+  def incomplete: incomplete = "incomplete".asInstanceOf[incomplete]
+  @scala.inline
   def info: info = "info".asInstanceOf[info]
   @scala.inline
   def log: log = "log".asInstanceOf[log]
@@ -86,9 +97,13 @@ object jestLibStrings {
   @scala.inline
   def real: real = "real".asInstanceOf[real]
   @scala.inline
+  def `return`: `return` = "return".asInstanceOf[`return`]
+  @scala.inline
   def set: set = "set".asInstanceOf[set]
   @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
+  @scala.inline
+  def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
 }

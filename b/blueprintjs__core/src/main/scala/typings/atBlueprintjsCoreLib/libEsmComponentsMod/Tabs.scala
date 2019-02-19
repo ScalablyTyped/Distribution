@@ -23,8 +23,8 @@ object Tabs extends js.Object {
   var defaultProps: stdLib.Partial[atBlueprintjsCoreLib.libEsmComponentsTabsTabsMod.ITabsProps] = js.native
   var displayName: java.lang.String = js.native
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
-  def Expander(props: js.Object with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  def Expander(props: js.Object with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   /** Insert a `Tabs.Expander` between any two children to right-align all subsequent children. */
-  def Expander(props: js.Object with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  def Expander(props: js.Object with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

@@ -75,7 +75,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * This lets you customize just the left-hand-side of the toolbar if desired.
   	 */
   var btnGroup: js.UndefOr[
-    js.Function1[/* props */ ButtonGroupProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[/* props */ ButtonGroupProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   /**
   	 * Only work on enable search. If true, there will be a button beside the search input field
@@ -95,7 +95,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
         /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
         scala.Unit
       ], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -129,7 +129,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
         /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
         scala.Unit
       ], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -192,7 +192,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
         /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
         scala.Unit
       ], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -252,7 +252,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
         /* e */ reactLib.reactMod.ReactNs.MouseEvent[_, reactLib.NativeMouseEvent], 
         scala.Unit
       ], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -272,7 +272,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
       /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -288,7 +288,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* columns */ js.Array[InsertModalColumnDescription[TRow]], 
       /* validateState */ org.scalablytyped.runtime.StringDictionary[java.lang.String], 
       /* ignoreEditable */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with ModalBodyInterface[TRow]]
     ]
   ] = js.undefined
   /**
@@ -304,7 +304,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function2[
       /* closeModal */ js.Function0[scala.Unit], 
       /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -320,7 +320,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
     js.Function2[
       /* closeModal */ js.Function0[scala.Unit], 
       /* save */ js.Function0[scala.Unit], 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -368,7 +368,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   /**
   	 * Change the text displayed on the table if data is empty.
   	 */
-  var noDataText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var noDataText: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
   	 * Assign a callback function which will be called when a row is added. This function
   	 * takes three arguments:
@@ -567,7 +567,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * pagination list.
   	 */
   var paginationPanel: js.UndefOr[
-    js.Function1[/* props */ PaginationPanelProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[/* props */ PaginationPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   /**
   	 * Location for the pagination panel to be displayed. Options are 'top' (above the table), 'bottom'
@@ -587,7 +587,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
       /* start */ scala.Double, 
       /* to */ scala.Double, 
       /* total */ scala.Double, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
     ])
   ] = js.undefined
   /**
@@ -625,7 +625,10 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * your custom component.
   	 */
   var searchField: js.UndefOr[
-    js.Function1[/* props */ SearchFieldProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[
+      /* props */ SearchFieldProps, 
+      reactLib.reactMod.ReactNs.ReactElement[(reactLib.reactMod.Component[_, js.Object, _]) with SearchFieldInterface]
+    ]
   ] = js.undefined
   /**
   	 * You can custom the whole search panel(right side) by searchPanel in options props. searchPanel only accept
@@ -638,7 +641,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 *   `search`: the callback function for triggering the search, which takes the search text as an input.
   	 */
   var searchPanel: js.UndefOr[
-    js.Function1[/* props */ SearchPanelProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[/* props */ SearchPanelProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   /**
   	 * It's available to custom select only toggle button by configuring showSelectedOnlyBtn in options props.
@@ -655,7 +658,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
         scala.Unit
       ], 
       /* showSelected */ scala.Boolean, 
-      reactLib.reactMod.ReactNs.ReactElement
+      reactLib.reactMod.ReactNs.ReactElement[_]
     ]
   ] = js.undefined
   /**
@@ -666,7 +669,7 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * Function to customize the sizePerPage dropdown.
   	 */
   var sizePerPageDropDown: js.UndefOr[
-    js.Function1[/* props */ SizePerPageFunctionProps, reactLib.reactMod.ReactNs.ReactElement]
+    js.Function1[/* props */ SizePerPageFunctionProps, reactLib.reactMod.ReactNs.ReactElement[_]]
   ] = js.undefined
   /**
   	 * You can change the dropdown list for size per page if you enable pagination.
@@ -694,7 +697,9 @@ trait Options[TRow /* <: js.Object */] extends js.Object {
   	 * After v3.0.0, you can custom all the components in the ToolBar also itself too.
   	 * Give a toolBar in options props and toolBar only accept a function and a JSX returned value is necessary.
   	 */
-  var toolBar: js.UndefOr[js.Function1[/* props */ ToolBarProps, reactLib.reactMod.ReactNs.ReactElement]] = js.undefined
+  var toolBar: js.UndefOr[
+    js.Function1[/* props */ ToolBarProps, reactLib.reactMod.ReactNs.ReactElement[_]]
+  ] = js.undefined
   /**
   	 * Flag to indicate whether there should be buttons for First and Last page.
   	 */

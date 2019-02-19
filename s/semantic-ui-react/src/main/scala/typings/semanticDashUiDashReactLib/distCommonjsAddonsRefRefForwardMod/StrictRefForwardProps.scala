@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait StrictRefForwardProps extends js.Object {
   /** Primary content. */
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * Called when a child component will be mounted or updated.
     *

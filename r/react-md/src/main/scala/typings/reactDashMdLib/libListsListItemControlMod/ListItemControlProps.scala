@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait ListItemControlProps
   extends reactDashMdLib.libMod.Props
      with reactDashMdLib.libListsListItemMod.BaseListItemProps {
-  var primaryAction: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
-  var secondaryAction: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var primaryAction: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
+  var secondaryAction: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

@@ -38,7 +38,7 @@ trait AutocompleteProps
   var helpOnFocus: js.UndefOr[scala.Boolean] = js.undefined
   var helpText: js.UndefOr[java.lang.String] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
-  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var inlineIndicator: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   var inlineSuggestionClassName: js.UndefOr[java.lang.String] = js.undefined
   var inlineSuggestionPadding: js.UndefOr[scala.Double] = js.undefined
   var inlineSuggestionStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

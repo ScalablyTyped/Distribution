@@ -24,7 +24,7 @@ trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch] {
   ] = js.undefined
   var rippleColor: js.UndefOr[java.lang.String] = js.undefined
   var rippleStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var switchElement: reactLib.reactMod.ReactNs.ReactElement
+  var switchElement: reactLib.reactMod.ReactNs.ReactElement[_]
   var switched: scala.Boolean
   var thumbStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
   var trackStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

@@ -12,6 +12,7 @@ class QuestionImplementor protected () extends ImplementorBase {
   var koElementType: js.Any = js.native
   var koTemplateName: js.Any = js.native
   var question: Question = js.native
+  /* protected */ def getKoValue(): js.Any = js.native
   /* protected */ def getNo(): java.lang.String = js.native
   /* protected */ def getQuestionTemplate(): java.lang.String = js.native
   /* protected */ def koQuestionAfterRender(elements: js.Any, con: js.Any): scala.Unit = js.native

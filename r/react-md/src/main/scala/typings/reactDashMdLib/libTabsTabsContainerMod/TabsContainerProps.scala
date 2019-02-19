@@ -10,7 +10,7 @@ trait TabsContainerProps
      with // for the `component` prop until refactored out
 /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var activeTabIndex: js.UndefOr[scala.Double] = js.undefined
-  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var children: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[reactDashMdLib.libTabsTabsMod.TabsProps]] = js.undefined
   var colored: js.UndefOr[scala.Boolean] = js.undefined
   var component: js.UndefOr[reactLib.reactMod.ReactNs.ReactType[_]] = js.undefined
   var defaultTabIndex: js.UndefOr[scala.Double] = js.undefined
@@ -38,6 +38,6 @@ trait TabsContainerProps
   var swipeableViewsClassName: js.UndefOr[java.lang.String] = js.undefined
   var swipeableViewsProps: js.UndefOr[js.Object] = js.undefined
   var swipeableViewsStyle: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined
-  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var toolbar: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
 }
 

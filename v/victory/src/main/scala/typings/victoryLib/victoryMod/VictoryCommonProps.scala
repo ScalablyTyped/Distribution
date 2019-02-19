@@ -32,14 +32,14 @@ trait VictoryCommonProps extends js.Object {
     * @example <VictoryContainer title="Chart of Dog Breeds" desc="This chart shows how popular each dog breed is by percentage in Seattle." />
     * @default <VictoryContainer/>
     */
-  var containerComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var containerComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * The groupComponent prop takes an entire component which will be used to
     * create group elements for use within container elements. This prop defaults
     * to a <g> tag on web, and a react-native-svg <G> tag on mobile
     * @default <g/>
     */
-  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var groupComponent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * The height props specifies the height the svg viewBox of the chart container.
     * This value should be given as a number of pixels

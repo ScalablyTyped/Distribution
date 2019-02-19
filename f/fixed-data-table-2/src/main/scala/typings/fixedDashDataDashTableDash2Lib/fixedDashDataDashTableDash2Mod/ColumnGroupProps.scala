@@ -39,9 +39,9 @@ trait ColumnGroupProps
     * props object above passed in as the first parameter.
     */
   var header: js.UndefOr[
-    java.lang.String | reactLib.reactMod.ReactNs.ReactElement | (js.Function1[
+    java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_] | (js.Function1[
       /* props */ ColumnGroupHeaderProps, 
-      java.lang.String | reactLib.reactMod.ReactNs.ReactElement
+      java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]
     ])
   ] = js.undefined
 }

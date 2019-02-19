@@ -10,7 +10,7 @@ trait ListItemLayoutProps
   /**
     * A string URL to specify an avatar in the left side of the item.
     */
-  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var avatar: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * Main text of the item.
     */
@@ -35,7 +35,7 @@ trait ListItemLayoutProps
   /**
     * A string key of a font icon or element to display an icon in the left side of the item.
     */
-  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var leftIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * Secondary text to display under the caption.
     */
@@ -47,7 +47,7 @@ trait ListItemLayoutProps
   /**
     * The same as the leftIcon but in this case the icon is displayed in the right side.
     */
-  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var rightIcon: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * If true, the elements in the list will display a hover effect and a pointer cursor. Inherited from the parent.
     * @default false

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Browser[T] extends js.Object {
+trait Browser extends js.Object {
   @JSName("call")
   var call_Original: Call = js.native
   @JSName("executeAsync")
@@ -15,13 +15,13 @@ trait Browser[T] extends js.Object {
   var execute_Original: Execute = js.native
   var options: Options = js.native
   @JSName("$")
-  def $(selector: java.lang.String): Element[scala.Unit] = js.native
+  def $(selector: java.lang.String): Element = js.native
   @JSName("$")
-  def $(selector: js.Function): Element[scala.Unit] = js.native
+  def $(selector: js.Function): Element = js.native
   @JSName("$$")
-  def $$(selector: java.lang.String): js.Array[Element[scala.Unit]] = js.native
+  def $$(selector: java.lang.String): js.Array[Element] = js.native
   @JSName("$$")
-  def $$(selector: js.Function): js.Array[Element[scala.Unit]] = js.native
+  def $$(selector: js.Function): js.Array[Element] = js.native
   def addCommand(name: java.lang.String, func: js.Function): js.UndefOr[scala.Nothing] = js.native
   def addCommand(name: java.lang.String, func: js.Function, attachToElement: scala.Boolean): js.UndefOr[scala.Nothing] = js.native
   def call[T](callback: js.Function): T = js.native

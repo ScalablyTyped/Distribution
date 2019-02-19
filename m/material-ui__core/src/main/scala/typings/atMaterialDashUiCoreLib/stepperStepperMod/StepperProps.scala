@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   var alternativeLabel: js.UndefOr[scala.Boolean] = js.undefined
   var children: reactLib.reactMod.ReactNs.ReactNode
   var className: js.UndefOr[java.lang.String] = js.undefined
-  var connector: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
+  var connector: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | reactLib.reactMod.ReactNs.ReactNode] = js.undefined
   var nonLinear: js.UndefOr[scala.Boolean] = js.undefined
   var orientation: js.UndefOr[Orientation] = js.undefined
   var style: js.UndefOr[reactLib.reactMod.ReactNs.CSSProperties] = js.undefined

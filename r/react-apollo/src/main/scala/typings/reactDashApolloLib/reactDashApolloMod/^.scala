@@ -27,7 +27,7 @@ object ^ extends js.Object {
     /* WrappedComponent */ reactLib.reactMod.ReactNs.ComponentType[TChildProps with TProps], 
     reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
   ] = js.native
-  def renderToStringWithData(component: reactLib.reactMod.ReactNs.ReactElement): js.Promise[java.lang.String] = js.native
+  def renderToStringWithData(component: reactLib.reactMod.ReactNs.ReactElement[_]): js.Promise[java.lang.String] = js.native
   def walkTree(
     element: reactLib.reactMod.ReactNs.ReactNode,
     context: reactDashApolloLib.walkTreeMod.Context,

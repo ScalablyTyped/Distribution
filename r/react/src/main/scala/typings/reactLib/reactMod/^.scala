@@ -24,12 +24,12 @@ object ^ extends js.Object {
     props: stdLib.Partial[P] with reactLib.reactMod.ReactNs.Attributes,
     children: reactLib.reactMod.ReactNs.ReactNode*
   ): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
-  def cloneElement[P](element: reactLib.reactMod.ReactNs.ReactElement): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def cloneElement[P](element: reactLib.reactMod.ReactNs.ReactElement[P]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def cloneElement[P](
-    element: reactLib.reactMod.ReactNs.ReactElement,
+    element: reactLib.reactMod.ReactNs.ReactElement[P],
     props: stdLib.Partial[P] with reactLib.reactMod.ReactNs.Attributes,
     children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def cloneElement[P, T /* <: reactLib.reactMod.ReactNs.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */](element: reactLib.reactMod.ReactNs.CElement[P, T]): reactLib.reactMod.ReactNs.CElement[P, T] = js.native
   def cloneElement[P, T /* <: reactLib.reactMod.ReactNs.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */](
     element: reactLib.reactMod.ReactNs.CElement[P, T],
@@ -69,12 +69,12 @@ object ^ extends js.Object {
   ): reactLib.reactMod.ReactNs.ReactHTMLElement[T] = js.native
   def createContext[T](defaultValue: T): reactLib.reactMod.ReactNs.Context[T] = js.native
   def createContext[T](defaultValue: T, calculateChangedBits: js.Function2[/* prev */ T, /* next */ T, scala.Double]): reactLib.reactMod.ReactNs.Context[T] = js.native
-  def createElement[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: java.lang.String): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def createElement[P /* <: js.Object */](
     `type`: java.lang.String,
     props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def createElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.ReactNs.ClassType[
       P, 
@@ -99,12 +99,12 @@ object ^ extends js.Object {
     P, 
     reactLib.reactMod.ReactNs.ClassicComponent[P, reactLib.reactMod.ReactNs.ComponentState]
   ] = js.native
-  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def createElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState],
     props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   // Custom components
   def createElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.FunctionComponentElement[P] = js.native
   def createElement[P /* <: js.Object */](
@@ -130,13 +130,13 @@ object ^ extends js.Object {
     `type`: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 114 */ java.lang.String
   ): reactLib.reactMod.ReactNs.DetailedReactHTMLElement[P, T] = js.native
   @JSName("createElement")
-  def createElement_PObjectReactElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createElement_PObjectReactElement[P /* <: js.Object */](`type`: reactLib.reactMod.ReactNs.FunctionComponent[P]): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   @JSName("createElement")
   def createElement_PObjectReactElement[P /* <: js.Object */](
     `type`: reactLib.reactMod.ReactNs.FunctionComponent[P],
     props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
     children: reactLib.reactMod.ReactNs.ReactNode*
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   @JSName("createElement")
   def createElement_PObjectTComponentCComponentClass[P /* <: js.Object */, T /* <: reactLib.reactMod.ReactNs.Component[P, reactLib.reactMod.ReactNs.ComponentState, _] */, C /* <: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] */](`type`: reactLib.reactMod.ReactNs.ClassType[P, T, C]): reactLib.reactMod.ReactNs.CElement[P, T] = js.native
   @JSName("createElement")
@@ -203,8 +203,8 @@ object ^ extends js.Object {
   def forwardRef[T, P](Component: reactLib.reactMod.ReactNs.RefForwardingComponent[T, P]): reactLib.reactMod.ReactNs.ForwardRefExoticComponent[
     reactLib.reactMod.ReactNs.PropsWithoutRef[P] with reactLib.reactMod.ReactNs.RefAttributes[T]
   ] = js.native
-  def isValidElement[P](): /* is react.react.React.ReactElement */ scala.Boolean = js.native
-  def isValidElement[P](`object`: js.Object): /* is react.react.React.ReactElement */ scala.Boolean = js.native
+  def isValidElement[P](): /* is react.react.React.ReactElement<P> */ scala.Boolean = js.native
+  def isValidElement[P](`object`: js.Object): /* is react.react.React.ReactElement<P> */ scala.Boolean = js.native
   def `lazy`[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](factory: js.Function0[js.Promise[reactLib.Anon_Default[T]]]): reactLib.reactMod.ReactNs.LazyExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](Component: T): reactLib.reactMod.ReactNs.MemoExoticComponent[T] = js.native
   def memo[T /* <: reactLib.reactMod.ReactNs.ComponentType[_] */](

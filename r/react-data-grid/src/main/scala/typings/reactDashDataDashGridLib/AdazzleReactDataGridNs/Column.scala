@@ -28,7 +28,7 @@ trait Column[T] extends js.Object {
     * @default A simple text editor
     */
   var editor: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[EditorBaseProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[EditorBaseProps]
+    reactLib.reactMod.ReactNs.ReactElement[EditorBaseProps] | (reactLib.reactMod.ReactNs.ComponentClass[EditorBaseProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[EditorBaseProps]
   ] = js.undefined
   /**
     * Events to be bound to the cells in this specific column.
@@ -41,7 +41,7 @@ trait Column[T] extends js.Object {
     * A custom formatter for this column's filter.
     */
   var filterRenderer: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
   ] = js.undefined
   /**
     * Whether the rows in the grid can be filtered by this column.
@@ -52,7 +52,7 @@ trait Column[T] extends js.Object {
     * A custom read-only formatter for this column. An image formatter is available in "react-data-grid/addons".
     */
   var formatter: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
   ] = js.undefined
   /**
     * Retrieve meta data about the row, optionally provide column as a second argument
@@ -62,7 +62,7 @@ trait Column[T] extends js.Object {
     * A custom formatter for this column's header.
     */
   var headerRenderer: js.UndefOr[
-    reactLib.reactMod.ReactNs.ReactElement | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
+    reactLib.reactMod.ReactNs.ReactElement[_] | (reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.StatelessComponent[_]
   ] = js.undefined
   /**
     * A unique key for this column. Required.

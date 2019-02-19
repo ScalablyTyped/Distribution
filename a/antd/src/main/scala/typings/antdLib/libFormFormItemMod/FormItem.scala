@@ -14,12 +14,12 @@ trait FormItem
   @JSName("componentDidMount")
   def componentDidMount_MFormItem(): scala.Unit = js.native
   def getChildProp(prop: java.lang.String): js.Any = js.native
-  def getControls(children: reactLib.reactMod.ReactNs.ReactNode, recursively: scala.Boolean): js.Array[reactLib.reactMod.ReactNs.ReactElement] = js.native
+  def getControls(children: reactLib.reactMod.ReactNs.ReactNode, recursively: scala.Boolean): js.Array[reactLib.reactMod.ReactNs.ReactElement[_]] = js.native
   def getField(): js.Any = js.native
   def getHelpMessage(): js.UndefOr[js.Object | scala.Null] = js.native
   def getId(): js.Any = js.native
   def getMeta(): js.Any = js.native
-  def getOnlyControl(): reactLib.reactMod.ReactNs.ReactElement | scala.Null = js.native
+  def getOnlyControl(): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def getValidateStatus(): antdLib.antdLibStrings.error | antdLib.antdLibStrings.Empty | antdLib.antdLibStrings.success | antdLib.antdLibStrings.validating = js.native
   def isRequired(): js.Any = js.native
   def onHelpAnimEnd(_key: java.lang.String, helpShow: scala.Boolean): scala.Unit = js.native
@@ -28,12 +28,14 @@ trait FormItem
   def renderExtra(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderFormItem(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderHelp(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
+  def renderHelpHolder(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderLabel(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderValidateWrapper(
     prefixCls: java.lang.String,
     c1: reactLib.reactMod.ReactNs.ReactNode,
     c2: reactLib.reactMod.ReactNs.ReactNode,
-    c3: reactLib.reactMod.ReactNs.ReactNode
+    c3: reactLib.reactMod.ReactNs.ReactNode,
+    helperHolder: reactLib.reactMod.ReactNs.ReactNode
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderWrapper(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.Global.JSXNs.Element = js.native
 }

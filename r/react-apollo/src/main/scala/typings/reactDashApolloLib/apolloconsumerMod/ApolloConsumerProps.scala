@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ApolloConsumerProps extends js.Object {
-  def children(client: apolloDashClientLib.apolloDashClientMod.default[_]): reactLib.reactMod.ReactNs.ReactElement | scala.Null
+  def children(client: apolloDashClientLib.apolloDashClientMod.default[_]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null
 }
 

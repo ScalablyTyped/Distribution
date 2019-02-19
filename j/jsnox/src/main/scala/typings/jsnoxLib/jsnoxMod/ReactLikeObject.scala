@@ -11,11 +11,11 @@ import scala.scalajs.js.annotation._
   */
 @js.native
 trait ReactLikeObject extends js.Object {
-  def createElement[P](`type`: java.lang.String, props: P, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def createElement[P](`type`: java.lang.String, props: P, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
   def createElement[P](
     `type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState],
     props: P,
     children: reactLib.reactMod.ReactNs.ReactNode
-  ): reactLib.reactMod.ReactNs.ReactElement = js.native
+  ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
 }
 

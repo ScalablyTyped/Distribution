@@ -14,7 +14,7 @@ trait FormInstance[FormData, P, ErrorType]
   var registeredFields: js.Array[reduxDashFormLib.libReducerMod.RegisteredFieldState] = js.native
   var valid: scala.Boolean = js.native
   var values: stdLib.Partial[FormData] = js.native
-  var wrappedInstance: reactLib.reactMod.ReactNs.ReactElement = js.native
+  var wrappedInstance: reactLib.reactMod.ReactNs.ReactElement[P with (InjectedFormProps[FormData, P, ErrorType])] = js.native
   def reset(): scala.Unit = js.native
   def resetSection(sections: java.lang.String*): scala.Unit = js.native
   def submit(): js.Promise[_] = js.native

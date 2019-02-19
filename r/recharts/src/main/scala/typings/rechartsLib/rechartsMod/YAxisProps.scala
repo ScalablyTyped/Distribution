@@ -29,7 +29,7 @@ trait YAxisProps extends EventAttributes {
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var tick: js.UndefOr[
-    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement
+    scala.Boolean | ContentRenderer[_] | js.Object | reactLib.reactMod.ReactNs.ReactElement[_]
   ] = js.undefined
   // The count of ticks
   var tickCount: js.UndefOr[scala.Double] = js.undefined

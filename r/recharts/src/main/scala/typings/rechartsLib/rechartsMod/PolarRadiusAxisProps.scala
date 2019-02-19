@@ -21,7 +21,7 @@ import scala.scalajs.js.annotation._
   var scale: js.UndefOr[ScaleType | RechartsFunction] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var tick: js.UndefOr[
-    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement | ContentRenderer[_]
+    scala.Boolean | js.Object | reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[_]
   ] = js.undefined
   var tickCount: js.UndefOr[scala.Double] = js.undefined
   var tickFormatter: js.UndefOr[TickFormatterFunction] = js.undefined

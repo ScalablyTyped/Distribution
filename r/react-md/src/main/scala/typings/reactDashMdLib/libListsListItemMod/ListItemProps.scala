@@ -34,7 +34,7 @@ import scala.scalajs.js.annotation._
     */
   var defaultOpen: js.UndefOr[scala.Boolean] = js.undefined
   var defaultVisible: js.UndefOr[scala.Boolean] = js.undefined
-  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement] = js.undefined
+  var expanderIcon: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * @deprecated
     */

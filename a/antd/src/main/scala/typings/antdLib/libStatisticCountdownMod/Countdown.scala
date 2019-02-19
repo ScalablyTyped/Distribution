@@ -20,6 +20,6 @@ trait Countdown
   def startTimer(): scala.Unit = js.native
   def stopTimer(): scala.Unit = js.native
   def syncTimer(): scala.Unit = js.native
-  def valueRender(node: reactLib.reactMod.ReactNs.ReactElement): reactLib.reactMod.ReactNs.ReactElement = js.native
+  def valueRender(node: reactLib.reactMod.ReactNs.ReactElement[reactLib.HTMLDivElement]): reactLib.reactMod.ReactNs.ReactElement[reactLib.HTMLDivElement] = js.native
 }
 
