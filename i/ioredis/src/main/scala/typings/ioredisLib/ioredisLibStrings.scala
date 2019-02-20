@@ -45,6 +45,9 @@ object ioredisLibStrings {
   @js.native
   sealed trait maxlen extends js.Object
   
+  @js.native
+  sealed trait `~` extends js.Object
+  
   @scala.inline
   def AFTER: AFTER = "AFTER".asInstanceOf[AFTER]
   @scala.inline
@@ -71,5 +74,7 @@ object ioredisLibStrings {
   def `match`: `match` = "match".asInstanceOf[`match`]
   @scala.inline
   def maxlen: maxlen = "maxlen".asInstanceOf[maxlen]
+  @scala.inline
+  def `~`: `~` = "~".asInstanceOf[`~`]
 }
 

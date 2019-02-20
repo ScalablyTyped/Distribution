@@ -14,6 +14,7 @@ trait Options
   var pathSorter: js.UndefOr[
     js.Function2[/* pathA */ java.lang.String, /* pathB */ java.lang.String, scala.Double]
   ] = js.undefined
+  var preserveSymlinks: js.UndefOr[scala.Boolean] = js.undefined
   var queueMethod: js.UndefOr[QueueMethod] = js.undefined
 }
 

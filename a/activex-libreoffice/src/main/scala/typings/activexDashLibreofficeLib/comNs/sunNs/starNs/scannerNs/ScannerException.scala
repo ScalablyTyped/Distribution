@@ -1,0 +1,14 @@
+package typings
+package activexDashLibreofficeLib.comNs.sunNs.starNs.scannerNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/** A {@link ScannerException} gets thrown if an object of type {@link XScannerManager} could not complete a specific action. */
+trait ScannerException
+  extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.Exception {
+  /** Error: contains the specific reason for failure */
+  var Error: ScanError
+}
+

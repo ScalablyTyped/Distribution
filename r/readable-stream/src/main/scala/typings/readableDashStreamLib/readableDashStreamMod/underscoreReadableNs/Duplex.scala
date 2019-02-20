@@ -20,6 +20,7 @@ trait Duplex extends Writable {
   def _read(size: scala.Double): scala.Unit = js.native
   def isPaused(): scala.Boolean = js.native
   def pause(): this.type = js.native
+  def pipe[S /* <: nodeLib.NodeJSNs.WritableStream */](dest: S, pipeOpts: readableDashStreamLib.Anon_End): S = js.native
   def push(chunk: js.Any): scala.Boolean = js.native
   def push(chunk: js.Any, encoding: java.lang.String): scala.Boolean = js.native
   def read(): js.Any = js.native

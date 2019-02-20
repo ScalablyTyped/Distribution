@@ -27,6 +27,22 @@ object editorNs extends js.Object {
     def destroy(): js.Promise[scala.Unit] = js.native
     def execute(commandName: java.lang.String, commandParams: js.Any*): scala.Unit = js.native
     def initPlugins(): js.Promise[scala.Unit] = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
     def t(str: java.lang.String): java.lang.String = js.native
     def t(str: java.lang.String, values: js.Array[java.lang.String]): java.lang.String = js.native
   }
@@ -64,6 +80,22 @@ object editorNs extends js.Object {
     val focusTracker: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.FocusTracker = js.native
     val view: atCkeditorCkeditor5DashCoreLib.atCkeditorCkeditor5DashCoreMod.EditorUIView = js.native
     def destroy(): scala.Unit = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
     def update(): scala.Unit = js.native
   }
   

@@ -19,6 +19,9 @@ object algoliasearchLibStrings {
   sealed trait allOptional extends js.Object
   
   @js.native
+  sealed trait alpha extends js.Object
+  
+  @js.native
   sealed trait attribute extends js.Object
   
   @js.native
@@ -32,6 +35,9 @@ object algoliasearchLibStrings {
   
   @js.native
   sealed trait contains extends js.Object
+  
+  @js.native
+  sealed trait count extends js.Object
   
   @js.native
   sealed trait delete extends js.Object
@@ -147,6 +153,8 @@ object algoliasearchLibStrings {
   @scala.inline
   def allOptional: allOptional = "allOptional".asInstanceOf[allOptional]
   @scala.inline
+  def alpha: alpha = "alpha".asInstanceOf[alpha]
+  @scala.inline
   def attribute: attribute = "attribute".asInstanceOf[attribute]
   @scala.inline
   def attributesToHighlight: attributesToHighlight = "attributesToHighlight".asInstanceOf[attributesToHighlight]
@@ -156,6 +164,8 @@ object algoliasearchLibStrings {
   def clear: clear = "clear".asInstanceOf[clear]
   @scala.inline
   def contains: contains = "contains".asInstanceOf[contains]
+  @scala.inline
+  def count: count = "count".asInstanceOf[count]
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   @scala.inline

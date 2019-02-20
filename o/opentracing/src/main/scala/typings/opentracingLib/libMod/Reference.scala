@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Reference protected ()
   extends opentracingLib.libReferenceMod.default {
+  def this(`type`: java.lang.String, referencedContext: opentracingLib.libSpanMod.default) = this()
   /**
     * Initialize a new Reference instance.
     *
@@ -18,6 +19,6 @@ class Reference protected ()
     *        to. As a convenience, a Span instance may be passed in instead
     *        (in which case its .context() is used here).
     */
-  def this(`type`: java.lang.String, referencedContext: opentracingLib.libSpanUnderscoreContextMod.default | opentracingLib.libSpanMod.default) = this()
+  def this(`type`: java.lang.String, referencedContext: opentracingLib.libSpanUnderscoreContextMod.default) = this()
 }
 

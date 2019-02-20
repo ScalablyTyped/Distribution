@@ -196,7 +196,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Attaches the specified principal to the specified thing.
+    * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
   def attachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
@@ -213,7 +213,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Attaches the specified principal to the specified thing.
+    * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
   def attachThingPrincipal(params: awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.AttachThingPrincipalResponse, 
@@ -2336,7 +2336,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
+    * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
   def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
@@ -2353,7 +2353,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
+    * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
     */
   def detachThingPrincipal(params: awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.DetachThingPrincipalResponse, 
@@ -3416,7 +3416,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the things associated with the specified principal.
+    * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
     */
   def listPrincipalThings(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
@@ -3433,7 +3433,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the things associated with the specified principal.
+    * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
     */
   def listPrincipalThings(params: awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.ListPrincipalThingsResponse, 
@@ -3801,7 +3801,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the principals associated with the specified thing.
+    * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
   def listThingPrincipals(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 
@@ -3818,7 +3818,7 @@ trait Iot
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Lists the principals associated with the specified thing.
+    * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
     */
   def listThingPrincipals(params: awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsIotMod.IotNs.ListThingPrincipalsResponse, 

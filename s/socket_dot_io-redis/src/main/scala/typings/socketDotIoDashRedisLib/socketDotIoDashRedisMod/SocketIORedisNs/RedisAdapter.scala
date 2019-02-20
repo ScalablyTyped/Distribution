@@ -47,6 +47,16 @@ trait RedisAdapter
   		 * @param {(err: any, rooms: string[]) => void} callback
   		 */
   def allRooms(callback: js.Function2[/* err */ js.Any, /* rooms */ js.Array[java.lang.String], scala.Unit]): scala.Unit = js.native
+  /**
+  		 * Broadcasts a packet
+  		 * @param packet The packet to broadcast
+  		 * @param opts Any options to send along:
+  		 *    - rooms: An optional list of rooms to broadcast to. If empty, the packet is broadcast to all sockets
+  		 *    - except: A list of Socket IDs to exclude
+  		 *    - flags: Any flags that we want to send along ('json', 'volatile', 'broadcast')
+  		 * @param remote The optional flag, whether the packet came from another node
+  		 */
+  def broadcast(packet: js.Any, opts: socketDotIoDashRedisLib.Anon_Except): scala.Unit = js.native
   def broadcast(packet: js.Any, opts: socketDotIoDashRedisLib.Anon_Except, remote: scala.Boolean): scala.Unit = js.native
   /**
   		 * clientRooms returns the list of rooms the client with the given ID has joined

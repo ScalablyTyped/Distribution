@@ -26,8 +26,7 @@ class MultiRoute protected ()
   def getViaPoints(): yandexDashMapsLib.ymapsNs.GeoObjectCollection = js.native
   def getWayPoints(): yandexDashMapsLib.ymapsNs.GeoObjectCollection = js.native
   def setActiveRoute(): scala.Unit = js.native
-  def setActiveRoute(
-    route: yandexDashMapsLib.ymapsNs.multiRouterNs.drivingNs.Route | yandexDashMapsLib.ymapsNs.multiRouterNs.masstransitNs.Route
-  ): scala.Unit = js.native
+  def setActiveRoute(route: yandexDashMapsLib.ymapsNs.multiRouterNs.drivingNs.Route): scala.Unit = js.native
+  def setActiveRoute(route: yandexDashMapsLib.ymapsNs.multiRouterNs.masstransitNs.Route): scala.Unit = js.native
 }
 

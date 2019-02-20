@@ -12,6 +12,6 @@ trait Debugger extends js.Object {
   def apply(formatter: js.Any, args: js.Any*): scala.Unit = js.native
   def extend(namespace: java.lang.String): Debugger = js.native
   def extend(namespace: java.lang.String, delimiter: java.lang.String): Debugger = js.native
-  def log(v: js.Any): java.lang.String = js.native
+  def log(args: js.Any*): js.Any = js.native
 }
 

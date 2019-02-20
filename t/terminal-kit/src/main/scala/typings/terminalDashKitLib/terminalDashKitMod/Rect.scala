@@ -9,11 +9,12 @@ import scala.scalajs.js.annotation._
 @js.native
 class Rect protected ()
   extends terminalDashKitLib.rectMod.namespaced {
-  def this(options: terminalDashKitLib.screenbufferMod.namespaced | terminalDashKitLib.textbufferMod.namespaced) = this()
   def this(options: terminalDashKitLib.rectMod.Rect) = this()
   def this(options: terminalDashKitLib.rectMod.RectNs.AbsoluteOptions) = this()
   def this(options: terminalDashKitLib.rectMod.RectNs.Region) = this()
+  def this(options: terminalDashKitLib.screenbufferMod.namespaced) = this()
   def this(options: terminalDashKitLib.terminalMod.Terminal) = this()
+  def this(options: terminalDashKitLib.textbufferMod.namespaced) = this()
   def this(xmin: scala.Double, xmax: scala.Double, ymin: scala.Double, ymax: scala.Double) = this()
 }
 

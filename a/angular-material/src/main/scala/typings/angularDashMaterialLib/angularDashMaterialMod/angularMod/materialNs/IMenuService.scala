@@ -12,6 +12,7 @@ trait IMenuService extends js.Object {
   def hide(response: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def hide(response: js.Any, options: js.Any): angularLib.angularMod.angularNs.IPromise[_] = js.native
   def open(): scala.Unit = js.native
+  def open(event: angularLib.JQueryEventObject): scala.Unit = js.native
   def open(event: stdLib.MouseEvent): scala.Unit = js.native
 }
 

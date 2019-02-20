@@ -2969,12 +2969,16 @@ object ioBrokerNs extends js.Object {
   // end interface Objects
   type LogLevel = iobrokerLib.iobrokerLibStrings.silly | iobrokerLib.iobrokerLibStrings.debug | iobrokerLib.iobrokerLibStrings.info | iobrokerLib.iobrokerLibStrings.warn | iobrokerLib.iobrokerLibStrings.error
   type MessageCallback = js.Function1[/* response */ js.UndefOr[Message], scala.Unit]
-  type MessageHandler = js.Function1[/* obj */ Message, scala.Unit]
+  type MessageHandler = js.Function1[/* obj */ Message, scala.Unit | js.Promise[scala.Unit]]
   type MessagePayload = java.lang.String | (stdLib.Record[java.lang.String, js.Any])
   /** Infers the return type from a callback-style API and strips out null and undefined */
   type NonNullCallbackReturnTypeOf[T /* <: js.Function1[/* repeated */ js.Any, _] */] = stdLib.Exclude[SecondParameterOf[T], js.UndefOr[scala.Null]]
   type Object = StateObject | ChannelObject | DeviceObject | OtherObject
-  type ObjectChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[Object | scala.Null], scala.Unit]
+  type ObjectChangeHandler = js.Function2[
+    /* id */ java.lang.String, 
+    /* obj */ js.UndefOr[Object | scala.Null], 
+    scala.Unit | js.Promise[scala.Unit]
+  ]
   type ObjectType = iobrokerLib.iobrokerLibStrings.state | iobrokerLib.iobrokerLibStrings.channel | iobrokerLib.iobrokerLibStrings.device
   type PartialObject = PartialStateObject | PartialChannelObject | PartialDeviceObject | PartialOtherObject
   type ReadDirCallback = js.Function2[
@@ -2989,7 +2993,7 @@ object ioBrokerNs extends js.Object {
     scala.Unit
   ]
   // end interface Adapter
-  type ReadyHandler = js.Function0[scala.Unit]
+  type ReadyHandler = js.Function0[scala.Unit | js.Promise[scala.Unit]]
   type RmCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* entries */ js.UndefOr[js.Array[RmResult]], 
@@ -3023,8 +3027,12 @@ object ioBrokerNs extends js.Object {
       iobrokerLib.iobrokerLibStrings._id | iobrokerLib.iobrokerLibStrings.acl
     ]
   ]) with iobrokerLib.Anon_Acl[T]
-  type StateChangeHandler = js.Function2[/* id */ java.lang.String, /* obj */ js.UndefOr[State | scala.Null], scala.Unit]
-  type UnloadHandler = js.Function1[/* callback */ EmptyCallback, scala.Unit]
+  type StateChangeHandler = js.Function2[
+    /* id */ java.lang.String, 
+    /* obj */ js.UndefOr[State | scala.Null], 
+    scala.Unit | js.Promise[scala.Unit]
+  ]
+  type UnloadHandler = js.Function1[/* callback */ EmptyCallback, scala.Unit | js.Promise[scala.Unit]]
   type UserGroup = js.Any
 }
 

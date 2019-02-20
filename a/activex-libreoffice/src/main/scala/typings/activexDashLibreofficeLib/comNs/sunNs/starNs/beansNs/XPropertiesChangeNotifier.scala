@@ -1,0 +1,25 @@
+package typings
+package activexDashLibreofficeLib.comNs.sunNs.starNs.beansNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * specifies a notifier for changed property values
+  * @see XPropertiesChangeListener
+  */
+trait XPropertiesChangeNotifier
+  extends activexDashLibreofficeLib.comNs.sunNs.starNs.unoNs.XInterface {
+  /** adds an {@link XPropertiesChangeListener} to the specified properties with the specified names. */
+  def addPropertiesChangeListener(
+    PropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
+    Listener: XPropertiesChangeListener
+  ): scala.Unit
+  /** removes an {@link XPropertiesChangeListener} from the listener list. */
+  def removePropertiesChangeListener(
+    PropertyNames: activexDashLibreofficeLib.LibreOfficeNs.SeqEquiv[java.lang.String],
+    Listener: XPropertiesChangeListener
+  ): scala.Unit
+}
+

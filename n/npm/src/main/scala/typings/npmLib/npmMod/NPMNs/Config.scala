@@ -20,7 +20,7 @@ trait Config extends js.Object {
   def addEnv(env: Dictionary[java.lang.String]): js.Any = js.native
   def addFile(file: java.lang.String, name: java.lang.String): Config = js.native
   def findPrefix(prefix: java.lang.String, cb: SimpleCallback[java.lang.String]): scala.Unit = js.native
-  def get(setting: java.lang.String): java.lang.String = js.native
+  def get(setting: java.lang.String): js.Any = js.native
   def getCredentialsByURI(uri: java.lang.String): Credentials = js.native
   def loadCAFile(caFilePath: java.lang.String, cb: ErrorCallback): scala.Unit = js.native
   def loadExtras(cb: ErrorCallback): scala.Unit = js.native
@@ -28,7 +28,7 @@ trait Config extends js.Object {
   def loadUid(cb: SimpleCallback[java.lang.String]): scala.Unit = js.native
   def parse(content: java.lang.String, file: java.lang.String): js.Any = js.native
   def save(where: java.lang.String, cb: ErrorCallback): Config = js.native
-  def set(setting: java.lang.String, value: java.lang.String): scala.Unit = js.native
+  def set(setting: java.lang.String, value: js.Any): scala.Unit = js.native
   def setCredentialsByURI(uri: java.lang.String, cred: Credentials): scala.Unit = js.native
   def setUser(cb: ErrorCallback): scala.Unit = js.native
 }

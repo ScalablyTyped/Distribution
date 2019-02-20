@@ -14,6 +14,22 @@ abstract class Plugin[T] protected ()
   var destroy: js.UndefOr[js.Function0[scala.Null | js.Promise[T]]] = js.native
   val editor: atCkeditorCkeditor5DashCoreLib.atCkeditorCkeditor5DashCoreMod.editorNs.Editor = js.native
   var init: js.UndefOr[js.Function0[scala.Null | js.Promise[T]]] = js.native
+  def listenTo(
+    emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+  ): scala.Unit = js.native
+  def on(
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+  ): scala.Unit = js.native
+  def once(
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+  ): scala.Unit = js.native
 }
 
 /* static members */

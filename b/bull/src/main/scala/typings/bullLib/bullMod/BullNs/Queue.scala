@@ -6,7 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 @js.native
-trait Queue[T] extends js.Object {
+trait Queue[T]
+  extends nodeLib.eventsMod.EventEmitter {
   /**
     * The name of the queue
     */
@@ -148,10 +149,6 @@ trait Queue[T] extends js.Object {
     * ???
     */
   def nextRepeatableJob(name: java.lang.String, data: js.Any, opts: JobOptions): js.Promise[Job[T]] = js.native
-  /**
-    * Listens to queue events
-    */
-  def on(event: java.lang.String, callback: js.Function1[/* repeated */ js.Any, scala.Unit]): this.type = js.native
   /**
     * A job has started. You can use `jobPromise.cancel()` to abort it
     */

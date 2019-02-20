@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val postgres6: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+  val postgres7: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
   def enable(): scala.Unit = js.native
 }
 

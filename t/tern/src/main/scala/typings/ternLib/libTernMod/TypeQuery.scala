@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait TypeQuery extends BaseQuery {
+trait TypeQuery extends BaseQueryWithFile {
   /**
     * Determines how deep the type string must be expanded.
     * Nested objects will only display property types up to this depth,
@@ -15,8 +15,6 @@ trait TypeQuery extends BaseQuery {
   var depth: js.UndefOr[scala.Double] = js.undefined
   /** Specify the location of the expression. */
   var end: scala.Double | Position
-  /** may hold either a filename, or a string in the form "#N", where N should be an integer referring to one of the files included in the request */
-  var file: java.lang.String
   /**
     * Set to `true` when you are interested in a function type.
     * This will cause function types to win when something has multiple types.

@@ -26,7 +26,7 @@ object diagnosticDashChannelDashPublishersMod extends js.Object {
   @JSName("mongodbCore")
   @js.native
   object mongodbCoreNs extends js.Object {
-    val mongoCore2: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+    val mongoCore: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
     def enable(): scala.Unit = js.native
   }
   
@@ -34,6 +34,7 @@ object diagnosticDashChannelDashPublishersMod extends js.Object {
   @js.native
   object mongodbNs extends js.Object {
     val mongo2: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+    val mongo3: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
     def enable(): scala.Unit = js.native
   }
   
@@ -48,6 +49,7 @@ object diagnosticDashChannelDashPublishersMod extends js.Object {
   @js.native
   object pgNs extends js.Object {
     val postgres6: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+    val postgres7: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
     def enable(): scala.Unit = js.native
   }
   
@@ -68,7 +70,8 @@ object diagnosticDashChannelDashPublishersMod extends js.Object {
   @JSName("winston")
   @js.native
   object winstonNs extends js.Object {
-    val winston: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+    val winston2: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+    val winston3: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
     def enable(): scala.Unit = js.native
   }
   

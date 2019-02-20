@@ -32,6 +32,7 @@
 //                 Fellipe Chagas <https://github.com/chagasaway>
 //                 Deniss Borisovs <https://github.com/denissb>
 //                 Kenneth Skovhus <https://github.com/skovhus>
+//                 Aaron Rosen <https://github.com/azrosen92>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /**

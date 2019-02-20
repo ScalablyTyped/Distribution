@@ -46,12 +46,11 @@ object ^ extends js.Object {
     terminal: scala.Boolean
   ): nodeLib.readlineMod.Interface = js.native
   def createInterface(options: mzLib.readlineMod.ReadLineOptions): mzLib.readlineMod.ReadLine = js.native
+  def createInterface(options: nodeLib.readlineMod.ReadLineOptions): nodeLib.readlineMod.Interface = js.native
   @JSName("createInterface")
   def createInterface_Interface(input: nodeLib.NodeJSNs.ReadableStream): nodeLib.readlineMod.Interface = js.native
   @JSName("createInterface")
   def createInterface_Interface(input: nodeLib.NodeJSNs.ReadableStream, output: nodeLib.NodeJSNs.WritableStream): nodeLib.readlineMod.Interface = js.native
-  @JSName("createInterface")
-  def createInterface_Interface(options: nodeLib.readlineMod.ReadLineOptions): nodeLib.readlineMod.Interface = js.native
   def cursorTo(stream: nodeLib.NodeJSNs.WritableStream, x: scala.Double): scala.Unit = js.native
   def cursorTo(stream: nodeLib.NodeJSNs.WritableStream, x: scala.Double, y: scala.Double): scala.Unit = js.native
   def emitKeypressEvents(stream: nodeLib.NodeJSNs.ReadableStream): scala.Unit = js.native

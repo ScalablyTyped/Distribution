@@ -1185,6 +1185,11 @@ object fsNs extends js.Object {
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def readFile(file: scala.Double, options: mzLib.Anon_EncodingFlag): js.Promise[java.lang.String] = js.native
+  def readFile(
+    file: scala.Double,
+    options: mzLib.Anon_EncodingFlag,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Asynchronously reads the entire contents of a file.
     * @param path A path to a file. If a URL is provided, it must use the `file:` protocol.
@@ -1269,19 +1274,19 @@ object fsNs extends js.Object {
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: mzLib.Anon_EncodingFlag | nodeLib.Anon_EncodingFlag | js.UndefOr[scala.Nothing],
+    options: java.lang.String,
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      (/* data */ nodeLib.Buffer) | java.lang.String, 
+      nodeLib.Buffer | (/* data */ java.lang.String), 
       scala.Unit
     ]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,
-    options: java.lang.String,
+    options: js.UndefOr[scala.Nothing],
     callback: js.Function2[
       /* err */ nodeLib.NodeJSNs.ErrnoException, 
-      nodeLib.Buffer | (/* data */ java.lang.String), 
+      (/* data */ nodeLib.Buffer) | java.lang.String, 
       scala.Unit
     ]
   ): scala.Unit = js.native
@@ -1298,6 +1303,11 @@ object fsNs extends js.Object {
     path: scala.Double,
     options: nodeLib.Anon_EncodingFlagString,
     callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  def readFile(
+    path: scala.Double,
+    options: nodeLib.Anon_EncodingFlag,
+    callback: js.Function2[/* err */ nodeLib.NodeJSNs.ErrnoException, /* data */ nodeLib.Buffer, scala.Unit]
   ): scala.Unit = js.native
   def readFile(
     path: scala.Double,

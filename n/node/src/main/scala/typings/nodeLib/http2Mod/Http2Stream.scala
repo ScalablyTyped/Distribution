@@ -56,11 +56,15 @@ trait Http2Stream
   @JSName("emit")
   def emit_frameError(event: nodeLib.nodeLibStrings.frameError, frameType: scala.Double, errorCode: scala.Double): scala.Boolean = js.native
   @JSName("emit")
+  def emit_pipe(event: nodeLib.nodeLibStrings.pipe, src: nodeLib.streamMod.Readable): scala.Boolean = js.native
+  @JSName("emit")
   def emit_streamClosed(event: nodeLib.nodeLibStrings.streamClosed, code: scala.Double): scala.Boolean = js.native
   @JSName("emit")
   def emit_timeout(event: nodeLib.nodeLibStrings.timeout): scala.Boolean = js.native
   @JSName("emit")
   def emit_trailers(event: nodeLib.nodeLibStrings.trailers, trailers: IncomingHttpHeaders, flags: scala.Double): scala.Boolean = js.native
+  @JSName("emit")
+  def emit_unpipe(event: nodeLib.nodeLibStrings.unpipe, src: nodeLib.streamMod.Readable): scala.Boolean = js.native
   @JSName("emit")
   def emit_wantTrailers(event: nodeLib.nodeLibStrings.wantTrailers): scala.Boolean = js.native
   @JSName("on")

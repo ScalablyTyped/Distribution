@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("diagnostic-channel-publishers/dist/src/mongodb-core.pub", JSImport.Namespace)
 @js.native
 object distSrcMongodbDashCoreDotPubMod extends js.Object {
-  val mongoCore2: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
+  val mongoCore: diagnosticDashChannelLib.distSrcPatchRequireMod.IModulePatcher = js.native
   def enable(): scala.Unit = js.native
 }
 

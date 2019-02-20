@@ -1,0 +1,25 @@
+package typings
+package activexDashLibreofficeLib.comNs.sunNs.starNs.ucbNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * provides read access to a fragment of the hierarchy data.
+  *
+  * A hierarchy data source provides access to a tree of hierarchy data nodes. Each hierarchy data node, except the root node, has a parent that is a
+  * hierarchy data node too. A hierarchy data node has a name.
+  *
+  * Each hierarchy data node has three data members:
+  *
+  * "Title", which is of type `string` . It contains a title for the node. This value must not be empty."TargetURL", which is of type `string` It may
+  * contain any URL, which will be treated as the target of a hierarchy link."Children", which is of type {@link HierarchyDataReadAccess} or of type
+  * {@link HierarchyDataReadWriteAccess} , depending on the type of the node. This member provides access to the children of a node.
+  */
+trait HierarchyDataReadAccess
+  extends activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XNameAccess
+     with activexDashLibreofficeLib.comNs.sunNs.starNs.containerNs.XHierarchicalNameAccess
+     with activexDashLibreofficeLib.comNs.sunNs.starNs.utilNs.XChangesNotifier
+     with activexDashLibreofficeLib.comNs.sunNs.starNs.langNs.XComponent
+

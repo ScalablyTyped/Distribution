@@ -15,6 +15,22 @@ class Command[T] protected ()
   val value: js.UndefOr[T] = js.native
   def destroy(): scala.Unit = js.native
   def execute(): scala.Unit = js.native
+  def listenTo(
+    emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_Priority
+  ): scala.Unit = js.native
+  def on(
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+  ): scala.Unit = js.native
+  def once(
+    event: java.lang.String,
+    callback: js.Function,
+    options: atCkeditorCkeditor5DashCoreLib.Anon_PriorityNumber
+  ): scala.Unit = js.native
   def refresh(): scala.Unit = js.native
 }
 

@@ -24,7 +24,7 @@ class Interval () extends js.Object {
   def engulfs(other: Interval): scala.Boolean = js.native
   def equals(other: Interval): scala.Boolean = js.native
   def hasSame(unit: DurationUnit): scala.Boolean = js.native
-  def intersection(other: Interval): Interval = js.native
+  def intersection(other: Interval): Interval | scala.Null = js.native
   def isAfter(dateTime: DateTime): scala.Boolean = js.native
   def isBefore(dateTime: DateTime): scala.Boolean = js.native
   def isEmpty(): scala.Boolean = js.native

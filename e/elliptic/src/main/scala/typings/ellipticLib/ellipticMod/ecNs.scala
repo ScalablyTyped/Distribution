@@ -11,7 +11,7 @@ object ecNs extends js.Object {
   trait GenKeyPairOptions extends js.Object {
     var entropy: js.Any
     var entropyEnc: js.UndefOr[java.lang.String] = js.undefined
-    var pers: js.Any
+    var pers: js.UndefOr[js.Any] = js.undefined
     var persEnc: js.UndefOr[java.lang.String] = js.undefined
   }
   

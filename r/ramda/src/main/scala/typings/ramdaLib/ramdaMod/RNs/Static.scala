@@ -615,7 +615,6 @@ trait Static extends js.Object {
     * Reports whether two functions have the same value for the specified property.
     */
   def eqProps[T, U](prop: java.lang.String, obj1: T, obj2: U): scala.Boolean = js.native
-  def equals[T](a: T): js.Function1[/* b */ T, scala.Boolean] = js.native
   /**
     * Returns true if its arguments are equivalent, false otherwise. Dispatches to an equals method if present.
     * Handles cyclical data structures.

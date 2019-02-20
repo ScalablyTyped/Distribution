@@ -11,7 +11,7 @@ package object runtimeNs {
     js.Function3[
       /* message */ js.Any, 
       /* sender */ MessageSender, 
-      /* sendResponse */ js.Function1[/* response */ js.Any, scala.Unit], 
+      /* sendResponse */ js.Function1[/* response */ js.UndefOr[js.Any], scala.Unit], 
       scala.Unit
     ]
   ]

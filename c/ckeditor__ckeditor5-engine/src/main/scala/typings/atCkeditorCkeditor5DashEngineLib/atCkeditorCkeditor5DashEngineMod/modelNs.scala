@@ -155,10 +155,26 @@ object modelNs extends js.Object {
     def insertContent(content: Item, selectable: Range): scala.Unit = js.native
     def insertContent(content: Item, selectable: Selection): scala.Unit = js.native
     def insertContent(content: Item, selectable: stdLib.Iterable[Range]): scala.Unit = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
     def modifySelection(selection: DocumentSelection): scala.Unit = js.native
     def modifySelection(selection: DocumentSelection, options: atCkeditorCkeditor5DashEngineLib.Anon_Backward): scala.Unit = js.native
     def modifySelection(selection: Selection): scala.Unit = js.native
     def modifySelection(selection: Selection, options: atCkeditorCkeditor5DashEngineLib.Anon_Backward): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
   }
   
   // engine/model/node
@@ -334,7 +350,24 @@ object modelNs extends js.Object {
   // engine/model/selection
   @js.native
   class Selection ()
-    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter {
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+  }
   
   // engine/model/text
   @js.native

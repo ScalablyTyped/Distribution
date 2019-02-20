@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("terminal-kit/Rect", JSImport.Namespace)
 @js.native
 class namespaced protected () extends Rect {
-  def this(options: terminalDashKitLib.screenbufferMod.namespaced | terminalDashKitLib.textbufferMod.namespaced) = this()
   def this(options: Rect) = this()
   def this(options: terminalDashKitLib.rectMod.RectNs.AbsoluteOptions) = this()
   def this(options: terminalDashKitLib.rectMod.RectNs.Region) = this()
+  def this(options: terminalDashKitLib.screenbufferMod.namespaced) = this()
   def this(options: terminalDashKitLib.terminalMod.Terminal) = this()
+  def this(options: terminalDashKitLib.textbufferMod.namespaced) = this()
   def this(xmin: scala.Double, xmax: scala.Double, ymin: scala.Double, ymax: scala.Double) = this()
   /* CompleteClass */
   override val height: scala.Double = js.native

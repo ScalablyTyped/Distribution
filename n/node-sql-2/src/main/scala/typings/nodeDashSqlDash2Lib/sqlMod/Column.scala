@@ -18,7 +18,6 @@ trait Column[Name, T] extends js.Object {
   def count(): Column[_, scala.Double] = js.native
   def count(name: java.lang.String): Column[_, scala.Double] = js.native
   def distinct(): Column[Name, T] = js.native
-  def equals(node: T): BinaryNode = js.native
   def equals(node: Column[_, T]): BinaryNode = js.native
   def gt(node: T): BinaryNode = js.native
   def gt(node: Column[_, T]): BinaryNode = js.native

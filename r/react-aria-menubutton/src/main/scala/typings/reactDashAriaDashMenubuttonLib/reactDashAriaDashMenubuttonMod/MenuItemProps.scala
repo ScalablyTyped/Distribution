@@ -22,6 +22,6 @@ trait MenuItemProps[T /* <: reactLib.HTMLElement */]
   	 * If value has a value, it will be passed to the onSelection handler
   	 * when the `MenuItem` is selected
   	 */
-  var value: js.UndefOr[java.lang.String | scala.Boolean | scala.Double] = js.undefined
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 

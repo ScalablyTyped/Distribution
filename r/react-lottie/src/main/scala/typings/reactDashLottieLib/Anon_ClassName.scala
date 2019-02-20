@@ -17,7 +17,7 @@ trait Anon_ClassName extends js.Object {
     * @default true
     */
   var hideOnTransparent: js.UndefOr[scala.Boolean] = js.undefined
-  var preserveAspectRatio: js.UndefOr[scala.Boolean] = js.undefined
+  var preserveAspectRatio: js.UndefOr[java.lang.String] = js.undefined
   /**
     * Loads DOM elements when needed. Might speed up initialization for large number of elements. Only with SVG renderer.
     */

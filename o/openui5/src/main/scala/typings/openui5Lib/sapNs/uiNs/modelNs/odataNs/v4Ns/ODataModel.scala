@@ -16,6 +16,25 @@ class ODataModel protected ()
   def this(mParameters: js.Any) = this()
   def bindContext(sPath: java.lang.String, oContext: Context): ODataContextBinding = js.native
   def bindContext(sPath: java.lang.String, oContext: Context, mParameters: js.Any): ODataContextBinding = js.native
+  def bindList(sPath: java.lang.String, oContext: Context): ODataListBinding = js.native
+  def bindList(
+    sPath: java.lang.String,
+    oContext: Context,
+    vSorters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Sorter]
+  ): ODataListBinding = js.native
+  def bindList(
+    sPath: java.lang.String,
+    oContext: Context,
+    vSorters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Sorter],
+    vFilters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter]
+  ): ODataListBinding = js.native
+  def bindList(
+    sPath: java.lang.String,
+    oContext: Context,
+    vSorters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Sorter],
+    vFilters: js.Array[openui5Lib.sapNs.uiNs.modelNs.Filter],
+    mParameters: js.Any
+  ): ODataListBinding = js.native
   def bindList(
     sPath: java.lang.String,
     oContext: Context,

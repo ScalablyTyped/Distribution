@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-lottie"
-version := "1.2-dt-20181128Z-c8e408"
+version := "1.2-dt-20190215Z-8119f2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

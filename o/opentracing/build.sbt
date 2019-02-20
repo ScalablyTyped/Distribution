@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "opentracing"
-version := "0.14.3-e7bad2"
+version := "0.14.3-b3130f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

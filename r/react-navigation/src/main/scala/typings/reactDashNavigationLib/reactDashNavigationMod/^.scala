@@ -13,6 +13,12 @@ object ^ extends js.Object {
     reactDashNavigationLib.reactDashNavigationMod.HeaderBackButtonProps, 
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
+  val NavigationContext: reactLib.reactMod.ReactNs.Context[
+    reactDashNavigationLib.reactDashNavigationMod.NavigationScreenProp[
+      reactDashNavigationLib.reactDashNavigationMod.NavigationRoute[reactDashNavigationLib.reactDashNavigationMod.NavigationParams], 
+      reactDashNavigationLib.reactDashNavigationMod.NavigationParams
+    ]
+  ] = js.native
   val NavigationEvents: reactLib.reactMod.ReactNs.ComponentType[reactDashNavigationLib.reactDashNavigationMod.NavigationEventsProps] = js.native
   val SafeAreaView: reactLib.reactMod.ReactNs.ComponentClass[
     reactDashNavigationLib.reactDashNavigationMod.SafeAreaViewProps, 

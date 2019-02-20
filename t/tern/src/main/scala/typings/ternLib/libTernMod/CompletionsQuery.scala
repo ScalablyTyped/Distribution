@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait CompletionsQuery extends BaseQuery {
+trait CompletionsQuery extends BaseQueryWithFile {
   /** Whether to use a case-insensitive compare between the current word and potential completions. Default `false` */
   var caseInsensitive: js.UndefOr[scala.Boolean] = js.undefined
   /** Whether to include the distance (in scopes for variables, in prototypes for properties) between the completions and the origin position in the result data. Default `false` */
@@ -19,8 +19,6 @@ trait CompletionsQuery extends BaseQuery {
     * the whole variable name that the cursor is on will be included. Default `true`
     */
   var expandWordForward: js.UndefOr[scala.Boolean] = js.undefined
-  /** may hold either a filename, or a string in the form "#N", where N should be an integer referring to one of the files included in the request */
-  var file: java.lang.String
   /** When on, only completions that match the current word at the given point will be returned. Turn this off to get all results, so that you can filter on the client side. Default `true` */
   var filter: js.UndefOr[scala.Boolean] = js.undefined
   /** When completing a property and no completions are found, Tern will use some heuristics to try and return some properties anyway. Set this to `false` to turn that off. Default `true` */

@@ -524,13 +524,25 @@ object IotNs extends js.Object {
   
   trait BehaviorCriteria extends js.Object {
     /**
-      * The operator that relates the thing measured (metric) to the criteria (containing a value.
+      * The operator that relates the thing measured (metric) to the criteria (containing a value or statisticalThreshold).
       */
     var comparisonOperator: js.UndefOr[ComparisonOperator] = js.undefined
     /**
-      * Use this to specify the time duration over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT). 
+      * If a device is in violation of the behavior for the specified number of consecutive datapoints, an alarm occurs. If not specified, the default is 1.
+      */
+    var consecutiveDatapointsToAlarm: js.UndefOr[ConsecutiveDatapointsToAlarm] = js.undefined
+    /**
+      * If an alarm has occurred and the offending device is no longer in violation of the behavior for the specified number of consecutive datapoints, the alarm is cleared. If not specified, the default is 1.
+      */
+    var consecutiveDatapointsToClear: js.UndefOr[ConsecutiveDatapointsToClear] = js.undefined
+    /**
+      * Use this to specify the time duration over which the behavior is evaluated, for those criteria which have a time dimension (for example, NUM_MESSAGES_SENT). For a statisticalThreshhold metric comparison, measurements from all devices are accumulated over this time duration before being used to calculate percentiles, and later, measurements from an individual device are also accumulated over this time duration before being given a percentile rank.
       */
     var durationSeconds: js.UndefOr[DurationSeconds] = js.undefined
+    /**
+      * A statistical ranking (percentile) which indicates a threshold value by which a behavior is determined to be in compliance or in violation of the behavior.
+      */
+    var statisticalThreshold: js.UndefOr[StatisticalThreshold] = js.undefined
     /**
       * The value to be compared with the metric.
       */
@@ -1288,13 +1300,17 @@ object IotNs extends js.Object {
   
   trait CreateSecurityProfileRequest extends js.Object {
     /**
+      * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors but it is also retained for any metric specified here.
+      */
+    var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
+    /**
       * Specifies the destinations to which alerts are sent. (Alerts are always sent to the console.) Alerts are generated when a device (thing) violates a behavior.
       */
     var alertTargets: js.UndefOr[AlertTargets] = js.undefined
     /**
       * Specifies the behaviors that, when violated by a device (thing), cause an alert.
       */
-    var behaviors: Behaviors
+    var behaviors: js.UndefOr[Behaviors] = js.undefined
     /**
       * A description of the security profile.
       */
@@ -2029,6 +2045,10 @@ object IotNs extends js.Object {
   }
   
   trait DescribeSecurityProfileResponse extends js.Object {
+    /**
+      * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors but it is also retained for any metric specified here.
+      */
+    var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
     /**
       * Where the alerts are sent. (Alerts are always sent to the console.)
       */
@@ -4958,6 +4978,13 @@ object IotNs extends js.Object {
     var taskId: js.UndefOr[TaskId] = js.undefined
   }
   
+  trait StatisticalThreshold extends js.Object {
+    /**
+      * The percentile which resolves to a threshold value by which compliance with a behavior is determined. Metrics are collected over the specified period (durationSeconds) from all reporting devices in your account and statistical ranks are calculated. Then, the measurements from a device are collected over the same period. If the accumulated measurements from the device fall above or below (comparisonOperator) the value associated with the percentile specified, then the device is considered to be in compliance with the behavior, otherwise a violation occurs.
+      */
+    var statistic: js.UndefOr[EvaluationStatistic] = js.undefined
+  }
+  
   trait StepFunctionsAction extends js.Object {
     /**
       * (Optional) A name will be given to the state machine execution consisting of this prefix followed by a UUID. Step Functions automatically creates a unique name for each state machine execution if one is not provided.
@@ -5645,7 +5672,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Attaches the specified principal to the specified thing.
+      * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
       */
     def attachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def attachThingPrincipal(
@@ -5656,7 +5683,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Attaches the specified principal to the specified thing.
+      * Attaches the specified principal to the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
       */
     def attachThingPrincipal(params: AttachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[AttachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def attachThingPrincipal(
@@ -7113,7 +7140,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachSecurityProfileResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
+      * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
       */
     def detachThingPrincipal(): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def detachThingPrincipal(
@@ -7124,7 +7151,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Detaches the specified principal from the specified thing.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
+      * Detaches the specified principal from the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.  This call is asynchronous. It might take several seconds for the detachment to propagate. 
       */
     def detachThingPrincipal(params: DetachThingPrincipalRequest): awsDashSdkLib.libRequestMod.Request[DetachThingPrincipalResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def detachThingPrincipal(
@@ -7833,7 +7860,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListPrincipalPoliciesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the things associated with the specified principal.
+      * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
       */
     def listPrincipalThings(): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listPrincipalThings(
@@ -7844,7 +7871,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the things associated with the specified principal.
+      * Lists the things associated with the specified principal. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities. 
       */
     def listPrincipalThings(params: ListPrincipalThingsRequest): awsDashSdkLib.libRequestMod.Request[ListPrincipalThingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listPrincipalThings(
@@ -8086,7 +8113,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListThingGroupsForThingResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the principals associated with the specified thing.
+      * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
       */
     def listThingPrincipals(): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listThingPrincipals(
@@ -8097,7 +8124,7 @@ object IotNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Lists the principals associated with the specified thing.
+      * Lists the principals associated with the specified thing. A principal can be X.509 certificates, IAM users, groups, and roles, Amazon Cognito identities or federated identities.
       */
     def listThingPrincipals(params: ListThingPrincipalsRequest): awsDashSdkLib.libRequestMod.Request[ListThingPrincipalsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def listThingPrincipals(
@@ -9380,6 +9407,10 @@ object IotNs extends js.Object {
   
   trait UpdateSecurityProfileRequest extends js.Object {
     /**
+      * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the profile's behaviors but it is also retained for any metric specified here.
+      */
+    var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
+    /**
       * Where the alerts are sent. (Alerts are always sent to the console.)
       */
     var alertTargets: js.UndefOr[AlertTargets] = js.undefined
@@ -9387,6 +9418,18 @@ object IotNs extends js.Object {
       * Specifies the behaviors that, when violated by a device (thing), cause an alert.
       */
     var behaviors: js.UndefOr[Behaviors] = js.undefined
+    /**
+      * If true, delete all additionalMetricsToRetain defined for this security profile. If any additionalMetricsToRetain are defined in the current invocation an exception occurs.
+      */
+    var deleteAdditionalMetricsToRetain: js.UndefOr[DeleteAdditionalMetricsToRetain] = js.undefined
+    /**
+      * If true, delete all alertTargets defined for this security profile. If any alertTargets are defined in the current invocation an exception occurs.
+      */
+    var deleteAlertTargets: js.UndefOr[DeleteAlertTargets] = js.undefined
+    /**
+      * If true, delete all behaviors defined for this security profile. If any behaviors are defined in the current invocation an exception occurs.
+      */
+    var deleteBehaviors: js.UndefOr[DeleteBehaviors] = js.undefined
     /**
       * The expected version of the security profile. A new version is generated whenever the security profile is updated. If you specify a value that is different than the actual version, a VersionConflictException is thrown.
       */
@@ -9402,6 +9445,10 @@ object IotNs extends js.Object {
   }
   
   trait UpdateSecurityProfileResponse extends js.Object {
+    /**
+      * A list of metrics whose data is retained (stored). By default, data is retained for any metric used in the security profile's behaviors but it is also retained for any metric specified here.
+      */
+    var additionalMetricsToRetain: js.UndefOr[AdditionalMetricsToRetainList] = js.undefined
     /**
       * Where the alerts are sent. (Alerts are always sent to the console.)
       */
@@ -9605,6 +9652,7 @@ object IotNs extends js.Object {
   type ActionList = js.Array[Action]
   type ActionType = awsDashSdkLib.awsDashSdkLibStrings.PUBLISH | awsDashSdkLib.awsDashSdkLibStrings.SUBSCRIBE | awsDashSdkLib.awsDashSdkLibStrings.RECEIVE | awsDashSdkLib.awsDashSdkLibStrings.CONNECT | java.lang.String
   type ActiveViolations = js.Array[ActiveViolation]
+  type AdditionalMetricsToRetainList = js.Array[BehaviorMetric]
   type AlarmName = java.lang.String
   type AlertTargetArn = java.lang.String
   type AlertTargetType = awsDashSdkLib.awsDashSdkLibStrings.SNS | java.lang.String
@@ -9673,6 +9721,8 @@ object IotNs extends js.Object {
   type ComparisonOperator = awsDashSdkLib.awsDashSdkLibStrings.`less-than` | awsDashSdkLib.awsDashSdkLibStrings.`less-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than` | awsDashSdkLib.awsDashSdkLibStrings.`greater-than-equals` | awsDashSdkLib.awsDashSdkLibStrings.`in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-cidr-set` | awsDashSdkLib.awsDashSdkLibStrings.`in-port-set` | awsDashSdkLib.awsDashSdkLibStrings.`not-in-port-set` | java.lang.String
   type CompliantChecksCount = scala.Double
   type ConnectivityTimestamp = scala.Double
+  type ConsecutiveDatapointsToAlarm = scala.Double
+  type ConsecutiveDatapointsToClear = scala.Double
   type Count = scala.Double
   type CreatedAtDate = stdLib.Date
   type CreationDate = stdLib.Date
@@ -9681,6 +9731,9 @@ object IotNs extends js.Object {
   type DateType = stdLib.Date
   type DayOfMonth = java.lang.String
   type DayOfWeek = awsDashSdkLib.awsDashSdkLibStrings.SUN | awsDashSdkLib.awsDashSdkLibStrings.MON | awsDashSdkLib.awsDashSdkLibStrings.TUE | awsDashSdkLib.awsDashSdkLibStrings.WED | awsDashSdkLib.awsDashSdkLibStrings.THU | awsDashSdkLib.awsDashSdkLibStrings.FRI | awsDashSdkLib.awsDashSdkLibStrings.SAT | java.lang.String
+  type DeleteAdditionalMetricsToRetain = scala.Boolean
+  type DeleteAlertTargets = scala.Boolean
+  type DeleteBehaviors = scala.Boolean
   type DeleteScheduledAudits = scala.Boolean
   type DeleteStream = scala.Boolean
   type DeliveryStreamName = java.lang.String
@@ -9703,6 +9756,7 @@ object IotNs extends js.Object {
   type EndpointType = java.lang.String
   type ErrorCode = java.lang.String
   type ErrorMessage = java.lang.String
+  type EvaluationStatistic = java.lang.String
   type EventType = awsDashSdkLib.awsDashSdkLibStrings.THING | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP | awsDashSdkLib.awsDashSdkLibStrings.THING_TYPE | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP_MEMBERSHIP | awsDashSdkLib.awsDashSdkLibStrings.THING_GROUP_HIERARCHY | awsDashSdkLib.awsDashSdkLibStrings.THING_TYPE_ASSOCIATION | awsDashSdkLib.awsDashSdkLibStrings.JOB | awsDashSdkLib.awsDashSdkLibStrings.JOB_EXECUTION | awsDashSdkLib.awsDashSdkLibStrings.POLICY | awsDashSdkLib.awsDashSdkLibStrings.CERTIFICATE | awsDashSdkLib.awsDashSdkLibStrings.CA_CERTIFICATE | java.lang.String
   type ExecutionNamePrefix = java.lang.String
   type ExecutionNumber = scala.Double

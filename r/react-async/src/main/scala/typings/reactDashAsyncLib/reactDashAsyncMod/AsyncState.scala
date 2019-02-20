@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait AsyncState[T] extends js.Object {
+  var counter: scala.Double = js.native
   var data: js.UndefOr[T] = js.native
   var error: js.UndefOr[stdLib.Error] = js.native
   var finishedAt: js.UndefOr[stdLib.Date] = js.native

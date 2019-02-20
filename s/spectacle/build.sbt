@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "spectacle"
-version := "5.4.0-2cd067"
+version := "5.4.0-941ba6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "buble" % "0.19-dt-20190127Z-f2eef3",
-  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-f6af59",
+  "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-94697d",
   "org.scalablytyped" %%% "create-emotion" % "10.0.7-940780",
   "org.scalablytyped" %%% "create-react-context" % "0.2.2-e9908e",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
@@ -20,12 +20,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "history" % "4.7.2-dt-20181017Z-bd3077",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "magic-string" % "0.25.2-88f1b8",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-0d969a",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
   "org.scalablytyped" %%% "prismjs" % "1.9-dt-20190212Z-b31fed",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-6f64c6",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-c41725",
-  "org.scalablytyped" %%% "react-live" % "1.12.0-a62aee",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-ad7175",
+  "org.scalablytyped" %%% "react-live" % "1.12.0-a6170b",
   "org.scalablytyped" %%% "react-redux" % "7.0-dt-20190124Z-a69a37",
   "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-e9ba75",
   "org.scalablytyped" %%% "redux" % "4.0.1-8c6a2a",

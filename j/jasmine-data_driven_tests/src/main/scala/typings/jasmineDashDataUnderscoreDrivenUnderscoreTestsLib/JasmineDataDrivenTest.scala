@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 trait JasmineDataDrivenTest extends js.Object {
   def apply[T](
     description: java.lang.String,
-    dataset: js.Array[T],
+    dataset: js.Array[js.Array[T] | T],
     assertion: js.Function2[/* value */ T, /* done */ js.Function0[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def apply[T, U](

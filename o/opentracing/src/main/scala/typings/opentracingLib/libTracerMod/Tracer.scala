@@ -38,6 +38,7 @@ class Tracer () extends js.Object {
     *         be found in `carrier`
     */
   def extract(format: java.lang.String, carrier: js.Any): opentracingLib.libSpanUnderscoreContextMod.default | scala.Null = js.native
+  def inject(spanContext: opentracingLib.libSpanMod.default, format: java.lang.String, carrier: js.Any): scala.Unit = js.native
   /**
     * Injects the given SpanContext instance for cross-process propagation
     * within `carrier`. The expected type of `carrier` depends on the value of
@@ -68,7 +69,7 @@ class Tracer () extends js.Object {
     *         for a description of the carrier object.
     */
   def inject(
-    spanContext: opentracingLib.libSpanUnderscoreContextMod.default | opentracingLib.libSpanMod.default,
+    spanContext: opentracingLib.libSpanUnderscoreContextMod.default,
     format: java.lang.String,
     carrier: js.Any
   ): scala.Unit = js.native

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class HttpLogger protected ()
   extends zipkinLib.zipkinMod.zipkinNs.Logger {
   def this(options: Options) = this()
+  def logSpan(span: zipkinLib.zipkinMod.modelNs.Span): scala.Unit = js.native
   /* CompleteClass */
   override def logSpan(span: zipkinLib.zipkinMod.zipkinNs.modelNs.Span): scala.Unit = js.native
 }

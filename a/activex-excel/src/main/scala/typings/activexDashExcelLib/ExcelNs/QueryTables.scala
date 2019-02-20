@@ -13,10 +13,8 @@ trait QueryTables extends js.Object {
   val Parent: js.Any = js.native
   def apply(Index: java.lang.String): QueryTable = js.native
   def apply(Index: scala.Double): QueryTable = js.native
-  def Add(
-    Connection: activexDashAdodbLib.ADODBNs.Recordset | activexDashDaoLib.DAONs.Recordset,
-    Destination: Range
-  ): QueryTable = js.native
+  def Add(Connection: activexDashAdodbLib.ADODBNs.Recordset, Destination: Range): QueryTable = js.native
+  def Add(Connection: activexDashDaoLib.DAONs.Recordset, Destination: Range): QueryTable = js.native
   def Add(Connection: QueryTable, Destination: Range): QueryTable = js.native
   def Add(Connection: java.lang.String, Destination: Range): QueryTable = js.native
   def Add(Connection: java.lang.String, Destination: Range, Sql: java.lang.String): QueryTable = js.native

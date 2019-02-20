@@ -9,8 +9,14 @@ import scala.scalajs.js.annotation._
 @js.native
 class BrowserGetTestability ()
   extends atAngularCoreLib.srcTestabilityTestabilityMod.GetTestability {
+  def addToWindow(registry: atAngularCoreLib.atAngularCoreMod.TestabilityRegistry): scala.Unit = js.native
   /* CompleteClass */
   override def addToWindow(registry: atAngularCoreLib.srcTestabilityTestabilityMod.TestabilityRegistry): scala.Unit = js.native
+  def findTestabilityInTree(
+    registry: atAngularCoreLib.atAngularCoreMod.TestabilityRegistry,
+    elem: js.Any,
+    findInAncestors: scala.Boolean
+  ): atAngularCoreLib.atAngularCoreMod.Testability | scala.Null = js.native
   /* CompleteClass */
   override def findTestabilityInTree(
     registry: atAngularCoreLib.srcTestabilityTestabilityMod.TestabilityRegistry,

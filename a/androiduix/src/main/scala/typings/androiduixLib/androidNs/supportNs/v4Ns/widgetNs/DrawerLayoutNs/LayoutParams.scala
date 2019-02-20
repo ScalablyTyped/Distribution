@@ -9,7 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class LayoutParams protected ()
   extends androiduixLib.androidNs.viewNs.ViewGroupNs.MarginLayoutParams {
-  def this(source: LayoutParams | androiduixLib.androidNs.viewNs.ViewGroupNs.LayoutParams) = this()
+  def this(source: LayoutParams) = this()
+  def this(source: androiduixLib.androidNs.viewNs.ViewGroupNs.LayoutParams) = this()
   def this(source: androiduixLib.androidNs.viewNs.ViewGroupNs.MarginLayoutParams) = this()
   def this(context: androiduixLib.androidNs.contentNs.Context, attrs: stdLib.HTMLElement) = this()
   def this(width: scala.Double, height: scala.Double) = this()

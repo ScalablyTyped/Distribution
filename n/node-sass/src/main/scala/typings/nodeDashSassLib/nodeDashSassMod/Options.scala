@@ -5,10 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Options extends js.Object {
+trait Options
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var data: js.UndefOr[java.lang.String] = js.undefined
   var file: js.UndefOr[java.lang.String] = js.undefined
-  var functions: js.UndefOr[org.scalablytyped.runtime.StringDictionary[js.Function]] = js.undefined
+  var functions: js.UndefOr[FunctionDeclarations[SassFunction]] = js.undefined
   var importer: js.UndefOr[Importer | js.Array[Importer]] = js.undefined
   var includePaths: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var indentType: js.UndefOr[java.lang.String] = js.undefined

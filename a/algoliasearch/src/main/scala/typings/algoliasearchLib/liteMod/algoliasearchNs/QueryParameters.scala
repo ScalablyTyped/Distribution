@@ -310,6 +310,12 @@ trait QueryParameters extends js.Object {
     */
   var snippetEllipsisText: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * https://www.algolia.com/doc/api-reference/api-parameters/sortFacetValuesBy/
+    */
+  var sortFacetValuesBy: js.UndefOr[
+    algoliasearchLib.algoliasearchLibStrings.count | algoliasearchLib.algoliasearchLibStrings.alpha
+  ] = js.undefined
+  /**
     * If set to false, the search will not use the synonyms defined for the targeted index.
     * default: true
     * https://www.algolia.com/doc/api-reference/api-parameters/synonyms/

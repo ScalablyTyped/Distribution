@@ -266,6 +266,9 @@ trait IndexSettings extends js.Object {
     * https://github.com/algolia/algoliasearch-client-js#snippetellipsistext
     */
   var snippetEllipsisText: js.UndefOr[java.lang.String] = js.undefined
+  var sortFacetValuesBy: js.UndefOr[
+    algoliasearchLib.algoliasearchLibStrings.count | algoliasearchLib.algoliasearchLibStrings.alpha
+  ] = js.undefined
   /**
     * This option allows you to control the number of typos allowed in the result set
     * default: true

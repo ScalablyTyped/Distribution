@@ -7,10 +7,16 @@ import scala.scalajs.js.annotation._
 
 object jsoneditorLibStrings {
   @js.native
+  sealed trait array extends js.Object
+  
+  @js.native
   sealed trait code extends js.Object
   
   @js.native
   sealed trait form extends js.Object
+  
+  @js.native
+  sealed trait `object` extends js.Object
   
   @js.native
   sealed trait text extends js.Object
@@ -22,9 +28,13 @@ object jsoneditorLibStrings {
   sealed trait view extends js.Object
   
   @scala.inline
+  def array: array = "array".asInstanceOf[array]
+  @scala.inline
   def code: code = "code".asInstanceOf[code]
   @scala.inline
   def form: form = "form".asInstanceOf[form]
+  @scala.inline
+  def `object`: `object` = "object".asInstanceOf[`object`]
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   @scala.inline

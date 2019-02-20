@@ -12,6 +12,8 @@ class DefaultTheme protected ()
   def this(renderer: typedocLib.distLibOutputRendererMod.Renderer, basePath: java.lang.String) = this()
   var onRendererBegin: js.Any = js.native
   def getEntryPoint(project: typedocLib.distLibModelsReflectionsMod.ProjectReflection): typedocLib.distLibModelsReflectionsMod.ContainerReflection = js.native
+  def getNavigation(project: typedocLib.distLibModelsReflectionsMod.ProjectReflection): typedocLib.distLibOutputModelsNavigationItemMod.NavigationItem = js.native
+  def getUrls(project: typedocLib.distLibModelsReflectionsMod.ProjectReflection): js.Array[typedocLib.distLibOutputModelsUrlMappingMod.UrlMapping] = js.native
 }
 
 /* static members */

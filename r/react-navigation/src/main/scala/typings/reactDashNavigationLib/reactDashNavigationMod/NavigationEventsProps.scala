@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait NavigationEventsProps
   extends reactDashNativeLib.reactDashNativeMod.ViewProps {
-  var navigation: js.UndefOr[NavigationNavigator[NavigationState, js.Object, js.Object]] = js.undefined
+  var navigation: js.UndefOr[NavigationScreenProp[NavigationRoute[NavigationParams], NavigationParams]] = js.undefined
   var onDidBlur: js.UndefOr[NavigationEventCallback] = js.undefined
   var onDidFocus: js.UndefOr[NavigationEventCallback] = js.undefined
   var onWillBlur: js.UndefOr[NavigationEventCallback] = js.undefined

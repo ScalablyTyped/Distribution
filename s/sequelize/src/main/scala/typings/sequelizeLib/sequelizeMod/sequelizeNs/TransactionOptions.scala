@@ -13,6 +13,12 @@ import scala.scalajs.js.annotation._
 trait TransactionOptions extends js.Object {
   var autocommit: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Sets the constraints to be deferred or immediately checked.
+    */
+  var deferrable: js.UndefOr[
+    DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate
+  ] = js.undefined
+  /**
     *  See `Sequelize.Transaction.ISOLATION_LEVELS` for possible options
     */
   var isolationLevel: js.UndefOr[TransactionIsolationLevel] = js.undefined
@@ -20,6 +26,10 @@ trait TransactionOptions extends js.Object {
     * A function that gets executed while running the query to log the sql.
     */
   var logging: js.UndefOr[js.Function] = js.undefined
+  /**
+    * Specify the parent transaction so that this transaction is nested or a save point within the parent
+    */
+  var transaction: js.UndefOr[Transaction] = js.undefined
   /**
     *  See `Sequelize.Transaction.TYPES` for possible options
     */

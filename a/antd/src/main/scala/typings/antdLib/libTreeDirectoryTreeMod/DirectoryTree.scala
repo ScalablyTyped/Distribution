@@ -13,8 +13,6 @@ trait DirectoryTree
   @JSName("state")
   var state_DirectoryTree: DirectoryTreeState = js.native
   var tree: antdLib.libTreeTreeMod.default = js.native
-  @JSName("componentWillReceiveProps")
-  def componentWillReceiveProps_MDirectoryTree(nextProps: DirectoryTreeProps): scala.Unit = js.native
   def expandFolderNode(
     event: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent],
     node: antdLib.libTreeTreeMod.AntTreeNode

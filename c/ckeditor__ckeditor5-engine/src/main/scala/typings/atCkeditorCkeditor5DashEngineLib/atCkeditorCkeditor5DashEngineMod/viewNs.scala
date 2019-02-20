@@ -56,6 +56,22 @@ object viewNs extends js.Object {
     /* protected */ def _callPostFixers(writer: DowncastWriter): scala.Unit = js.native
     def getRoot(): RootEditableElement | scala.Null = js.native
     def getRoot(name: java.lang.String): RootEditableElement | scala.Null = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
     def registerPostFixer(postFixer: js.Function1[/* downcastWriter */ DowncastWriter, scala.Boolean]): scala.Unit = js.native
   }
   
@@ -321,7 +337,24 @@ object viewNs extends js.Object {
   // engine/view/view
   @js.native
   class View ()
-    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Observable
+    extends atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Observable {
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+  }
   
   val INLINE_FILLER: java.lang.String = js.native
   // engine/view/filler

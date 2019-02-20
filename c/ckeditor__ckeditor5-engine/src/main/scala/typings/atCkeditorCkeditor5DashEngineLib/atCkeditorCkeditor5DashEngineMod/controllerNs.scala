@@ -24,6 +24,22 @@ object controllerNs extends js.Object {
     def get(rootName: java.lang.String): java.lang.String = js.native
     def init(data: java.lang.String): js.Promise[_] = js.native
     def init(data: java.lang.String, rootName: java.lang.String): js.Promise[_] = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
     def parse(data: java.lang.String): atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.DocumentFragment = js.native
     def parse(
       data: java.lang.String,
@@ -61,6 +77,22 @@ object controllerNs extends js.Object {
     val model: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.modelNs.Model = js.native
     val view: atCkeditorCkeditor5DashEngineLib.atCkeditorCkeditor5DashEngineMod.viewNs.View = js.native
     def destroy(): scala.Unit = js.native
+    def listenTo(
+      emitter: atCkeditorCkeditor5DashUtilsLib.atCkeditorCkeditor5DashUtilsMod.Emitter,
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_Priority
+    ): scala.Unit = js.native
+    def on(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
+    def once(
+      event: java.lang.String,
+      callback: js.Function,
+      options: atCkeditorCkeditor5DashEngineLib.Anon_PriorityNumber
+    ): scala.Unit = js.native
   }
   
 }

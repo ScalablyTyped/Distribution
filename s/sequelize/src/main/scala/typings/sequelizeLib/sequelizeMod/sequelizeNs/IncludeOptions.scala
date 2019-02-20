@@ -47,6 +47,10 @@ trait IncludeOptions extends js.Object {
     */
   var required: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * If true, runs a separate query to fetch the associated instances, only supported for hasMany associations
+    */
+  var separate: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * Through Options
     */
   var through: js.UndefOr[IncludeThroughOptions] = js.undefined

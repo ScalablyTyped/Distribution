@@ -138,6 +138,10 @@ object DirectoryServiceNs extends js.Object {
       * The size of the directory.
       */
     var Size: DirectorySize
+    /**
+      * The tags to be assigned to AD Connector.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
   }
   
   trait ConnectDirectoryResult extends js.Object {
@@ -238,6 +242,10 @@ object DirectoryServiceNs extends js.Object {
       */
     var Size: DirectorySize
     /**
+      * The tags to be assigned to the Simple AD directory.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
+    /**
       * A DirectoryVpcSettings object that contains additional information for the operation.
       */
     var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.undefined
@@ -284,6 +292,10 @@ object DirectoryServiceNs extends js.Object {
       * The NetBIOS name for your domain. A short identifier for your domain, such as CORP. If you don't specify a NetBIOS name, it will default to the first part of your directory DNS. For example, CORP for the directory DNS corp.example.com. 
       */
     var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
+    /**
+      * The tags to be assigned to the AWS Managed Microsoft AD directory.
+      */
+    var Tags: js.UndefOr[Tags] = js.undefined
     /**
       * Contains VPC information for the CreateDirectory or CreateMicrosoftAD operation.
       */

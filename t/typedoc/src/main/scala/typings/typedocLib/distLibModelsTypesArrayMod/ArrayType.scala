@@ -11,5 +11,6 @@ class ArrayType protected ()
   extends typedocLib.distLibModelsTypesMod.Type {
   def this(elementType: typedocLib.distLibModelsTypesMod.Type) = this()
   var elementType: typedocLib.distLibModelsTypesMod.Type = js.native
+  def equals(`type`: typedocLib.distLibModelsTypesMod.Type): scala.Boolean = js.native
 }
 

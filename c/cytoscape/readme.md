@@ -1,5 +1,5 @@
 ```
-// Type definitions for Cytoscape.js 3.2
+// Type definitions for Cytoscape.js 3.3
 // Project: http://js.cytoscape.org/
 // Definitions by:  Fabian Schmidt and Fred Eisele <https://github.com/phreed>
 //                  Shenghan Gao <https://github.com/wy193777>

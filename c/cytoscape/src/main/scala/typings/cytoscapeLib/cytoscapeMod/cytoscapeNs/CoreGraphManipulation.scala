@@ -84,6 +84,17 @@ trait CoreGraphManipulation extends js.Object {
     */
   def getElementById(id: java.lang.String): CollectionReturnValue = js.native
   /**
+    * Attaches the instance to the specified container for visualisation.
+    * http://js.cytoscape.org/#cy.mount
+    *
+    * If the core instance is headless prior to calling cy.mount(), then
+    * the instance will no longer be headless and the visualisation will
+    * be shown in the specified container. If the core instance is
+    * non-headless prior to calling cy.mount(), then the visualisation
+    * is swapped from the prior container to the specified container.
+    */
+  def mount(element: stdLib.Element): scala.Unit = js.native
+  /**
     * Get nodes in the graph matching the specified selector.
     */
   def nodes(): NodeCollection = js.native
@@ -100,5 +111,13 @@ trait CoreGraphManipulation extends js.Object {
     * Starts batching manually (useful for asynchronous cases).
     */
   def startBatch(): scala.Unit = js.native
+  /**
+    * Remove the instance from its current container.
+    * http://js.cytoscape.org/#cy.unmount
+    *
+    * This function sets the instance to be headless after unmounting from
+    * the current container.
+    */
+  def unmount(): scala.Unit = js.native
 }
 

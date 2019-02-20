@@ -14,16 +14,12 @@ class default () extends Card
 @js.native
 object default extends js.Object {
   @JSName("Grid")
-  var Grid_Original: js.Function1[
-    /* props */ antdLib.libCardGridMod.CardGridProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
+  var Grid_Original: reactLib.reactMod.ReactNs.SFC[antdLib.libCardGridMod.CardGridProps] = js.native
   @JSName("Meta")
-  var Meta_Original: js.Function1[
-    /* props */ antdLib.libCardMetaMod.CardMetaProps, 
-    reactLib.reactMod.Global.JSXNs.Element
-  ] = js.native
-  def Grid(props: antdLib.libCardGridMod.CardGridProps): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def Meta(props: antdLib.libCardMetaMod.CardMetaProps): reactLib.reactMod.Global.JSXNs.Element = js.native
+  var Meta_Original: reactLib.reactMod.ReactNs.SFC[antdLib.libCardMetaMod.CardMetaProps] = js.native
+  def Grid(props: antdLib.libCardGridMod.CardGridProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Grid(props: antdLib.libCardGridMod.CardGridProps with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Meta(props: antdLib.libCardMetaMod.CardMetaProps with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Meta(props: antdLib.libCardMetaMod.CardMetaProps with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

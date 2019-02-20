@@ -96,7 +96,7 @@ trait ConnectionOptionsBase extends js.Object {
   /** SSL Certificate pass phrase */
   var sslPass: js.UndefOr[nodeLib.Buffer | java.lang.String] = js.undefined
   /** Validate mongod server certificate against ca (needs to have a mongod server with ssl support, 2.4 or higher) */
-  var sslValidate: js.UndefOr[js.Object] = js.undefined
+  var sslValidate: js.UndefOr[scala.Boolean] = js.undefined
   /** If true, this connection will use createIndex() instead of ensureIndex() for automatic index builds via Model.init(). */
   var useCreateIndex: js.UndefOr[scala.Boolean] = js.undefined
   /** Set to false to make findOneAndUpdate() and findOneAndRemove() use native findOneAndUpdate() rather than findAndModify(). */

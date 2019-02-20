@@ -576,7 +576,8 @@ object interactionNs extends js.Object {
       * @return Layer.
       * @api
       */
-    def getLayer(feature: openlayersLib.openlayersMod.Feature | openlayersLib.openlayersMod.renderNs.Feature): openlayersLib.openlayersMod.layerNs.Vector = js.native
+    def getLayer(feature: openlayersLib.openlayersMod.Feature): openlayersLib.openlayersMod.layerNs.Vector = js.native
+    def getLayer(feature: openlayersLib.openlayersMod.renderNs.Feature): openlayersLib.openlayersMod.layerNs.Vector = js.native
     /**
       * Remove the interaction from its current map, if any,  and attach it to a new
       * map, if any. Pass `null` to just remove the interaction from the current map.

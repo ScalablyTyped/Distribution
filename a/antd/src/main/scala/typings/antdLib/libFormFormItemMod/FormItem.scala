@@ -28,14 +28,12 @@ trait FormItem
   def renderExtra(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderFormItem(hasGetPrefixCls: antdLib.libConfigDashProviderMod.ConfigConsumerProps): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderHelp(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element = js.native
-  def renderHelpHolder(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderLabel(prefixCls: java.lang.String): reactLib.reactMod.Global.JSXNs.Element | scala.Null = js.native
   def renderValidateWrapper(
     prefixCls: java.lang.String,
     c1: reactLib.reactMod.ReactNs.ReactNode,
     c2: reactLib.reactMod.ReactNs.ReactNode,
-    c3: reactLib.reactMod.ReactNs.ReactNode,
-    helperHolder: reactLib.reactMod.ReactNs.ReactNode
+    c3: reactLib.reactMod.ReactNs.ReactNode
   ): reactLib.reactMod.Global.JSXNs.Element = js.native
   def renderWrapper(prefixCls: java.lang.String, children: reactLib.reactMod.ReactNs.ReactNode): reactLib.reactMod.Global.JSXNs.Element = js.native
 }

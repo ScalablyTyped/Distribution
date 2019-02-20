@@ -37,6 +37,8 @@ trait Configuration extends js.Object {
   var orientation: faviconsLib.faviconsLibStrings.any | faviconsLib.faviconsLibStrings.natural | faviconsLib.faviconsLibStrings.portrait | faviconsLib.faviconsLibStrings.landscape
   /** Path for overriding default icons path @default "/" */
   var path: java.lang.String
+  /** Use nearest neighbor resampling to preserve hard edges on pixel art @default false */
+  var pixel_art: scala.Boolean
   /** Start URL when launching the application from a device @default "/?homescreen=1" */
   var start_url: java.lang.String
   /** Theme color user for example in Android's task switcher @default "#fff" */

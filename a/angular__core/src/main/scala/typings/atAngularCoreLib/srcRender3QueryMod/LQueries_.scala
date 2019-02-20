@@ -20,5 +20,35 @@ class `LQueries_` ()
   @JSName("parent")
   var `parent_LQueries_`: `LQueries_` | scala.Null = js.native
   var shallow: js.Any = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: atAngularCoreLib.srcTypeMod.Type[T]
+  ): scala.Unit = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: atAngularCoreLib.srcTypeMod.Type[T],
+    descend: scala.Boolean
+  ): scala.Unit = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: atAngularCoreLib.srcTypeMod.Type[T],
+    descend: scala.Boolean,
+    read: atAngularCoreLib.srcTypeMod.Type[T]
+  ): scala.Unit = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: js.Array[java.lang.String]
+  ): scala.Unit = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: js.Array[java.lang.String],
+    descend: scala.Boolean
+  ): scala.Unit = js.native
+  def track[T](
+    queryList: atAngularCoreLib.srcLinkerQueryUnderscoreListMod.QueryList[T],
+    predicate: js.Array[java.lang.String],
+    descend: scala.Boolean,
+    read: atAngularCoreLib.srcTypeMod.Type[T]
+  ): scala.Unit = js.native
 }
 

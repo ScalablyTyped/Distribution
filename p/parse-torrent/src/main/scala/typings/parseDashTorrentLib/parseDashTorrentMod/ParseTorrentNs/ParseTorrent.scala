@@ -17,26 +17,34 @@ trait ParseTorrent extends js.Object {
     /* parsed */ parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance, 
     nodeLib.Buffer
   ] = js.native
-  def apply(
-    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance
-  ): Instance = js.native
   def apply(torrent: java.lang.String): magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance = js.native
+  def apply(torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance): Instance = js.native
   def apply(torrent: nodeLib.Buffer): magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance = js.native
-  def remote(
-    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance
-  ): scala.Unit = js.native
-  def remote(
-    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance | magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance | Instance,
-    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
-  ): scala.Unit = js.native
+  def apply(torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance): Instance = js.native
+  def apply(torrent: Instance): Instance = js.native
   def remote(torrent: java.lang.String): scala.Unit = js.native
   def remote(
     torrent: java.lang.String,
     cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
+  def remote(torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance): scala.Unit = js.native
+  def remote(
+    torrent: magnetDashUriLib.magnetDashUriMod.MagnetUriNs.Instance,
+    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+  ): scala.Unit = js.native
   def remote(torrent: nodeLib.Buffer): scala.Unit = js.native
   def remote(
     torrent: nodeLib.Buffer,
+    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+  ): scala.Unit = js.native
+  def remote(torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance): scala.Unit = js.native
+  def remote(
+    torrent: parseDashTorrentDashFileLib.parseDashTorrentDashFileMod.ParseTorrentFileNs.Instance,
+    cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
+  ): scala.Unit = js.native
+  def remote(torrent: Instance): scala.Unit = js.native
+  def remote(
+    torrent: Instance,
     cb: js.Function2[/* err */ nodeLib.Error, /* torrent */ js.UndefOr[Instance], scala.Unit]
   ): scala.Unit = js.native
   def remote(torrent: stdLib.Blob): scala.Unit = js.native

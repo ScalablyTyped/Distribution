@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 @js.native
 trait Desc[T /* <: js.Any */] extends js.Object {
-  var takesfile: js.UndefOr[scala.Boolean] = js.native
+  var takesFile: js.UndefOr[scala.Boolean] = js.native
   @JSName("run")
   def run_query(
     Server: Server,

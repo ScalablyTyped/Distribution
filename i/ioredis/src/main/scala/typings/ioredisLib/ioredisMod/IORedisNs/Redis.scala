@@ -877,6 +877,34 @@ trait Redis
   def watch(keys: KeyType*): js.Any = js.native
   def xack(key: KeyType, group: java.lang.String, ids: java.lang.String*): js.Any = js.native
   def xadd(key: KeyType, id: java.lang.String, args: java.lang.String*): js.Any = js.native
+  def xadd(
+    key: KeyType,
+    maxLenOption: ioredisLib.ioredisLibStrings.MAXLEN,
+    approximate: ioredisLib.ioredisLibStrings.`~`,
+    count: scala.Double,
+    args: java.lang.String*
+  ): js.Any = js.native
+  def xadd(
+    key: KeyType,
+    maxLenOption: ioredisLib.ioredisLibStrings.maxlen,
+    approximate: ioredisLib.ioredisLibStrings.`~`,
+    count: scala.Double,
+    args: java.lang.String*
+  ): js.Any = js.native
+  @JSName("xadd")
+  def xadd_MAXLEN(
+    key: KeyType,
+    maxLenOption: ioredisLib.ioredisLibStrings.MAXLEN,
+    count: scala.Double,
+    args: java.lang.String*
+  ): js.Any = js.native
+  @JSName("xadd")
+  def xadd_maxlen(
+    key: KeyType,
+    maxLenOption: ioredisLib.ioredisLibStrings.maxlen,
+    count: scala.Double,
+    args: java.lang.String*
+  ): js.Any = js.native
   def xclaim(
     key: KeyType,
     group: java.lang.String,

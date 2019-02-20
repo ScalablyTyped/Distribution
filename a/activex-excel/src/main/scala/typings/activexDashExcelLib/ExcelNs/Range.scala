@@ -295,16 +295,12 @@ trait Range extends js.Object {
   ): js.Any = js.native
   def Copy(): js.Any = js.native
   def Copy(Destination: Range): js.Any = js.native
-  def CopyFromRecordset(Data: activexDashAdodbLib.ADODBNs.Recordset | activexDashDaoLib.DAONs.Recordset): scala.Double = js.native
-  def CopyFromRecordset(
-    Data: activexDashAdodbLib.ADODBNs.Recordset | activexDashDaoLib.DAONs.Recordset,
-    MaxRows: scala.Double
-  ): scala.Double = js.native
-  def CopyFromRecordset(
-    Data: activexDashAdodbLib.ADODBNs.Recordset | activexDashDaoLib.DAONs.Recordset,
-    MaxRows: scala.Double,
-    MaxColumns: scala.Double
-  ): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashAdodbLib.ADODBNs.Recordset): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashAdodbLib.ADODBNs.Recordset, MaxRows: scala.Double): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashAdodbLib.ADODBNs.Recordset, MaxRows: scala.Double, MaxColumns: scala.Double): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashDaoLib.DAONs.Recordset): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashDaoLib.DAONs.Recordset, MaxRows: scala.Double): scala.Double = js.native
+  def CopyFromRecordset(Data: activexDashDaoLib.DAONs.Recordset, MaxRows: scala.Double, MaxColumns: scala.Double): scala.Double = js.native
   /**
     * @param Appearance [Appearance=1]
     * @param Format [Format=-4147]

@@ -14,9 +14,7 @@ trait Components extends js.Object {
   var dayWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined
-  var event: js.UndefOr[
-    reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
-  ] = js.undefined
+  var event: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[EventProps[Event]]] = js.undefined
   var eventContainerWrapper: js.UndefOr[
     reactLib.reactMod.ReactNs.SFC[js.Object] | (reactLib.reactMod.Component[js.Object, js.Object, _]) | (reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.Global.JSXNs.Element
   ] = js.undefined

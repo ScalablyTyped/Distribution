@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catbox"
-version := "10.0-dt-20190126Z-804551"
+version := "10.0-dt-20190219Z-804551"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

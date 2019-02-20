@@ -2479,7 +2479,7 @@
 [info ] CompleteClass.scala:62 Completed implementations Vector(selectionStart, value, selectionEnd, select, setSelectionStart, focus, setSelectionEnd, setSelectionRange, blur) [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsTextFieldTextFieldDotBaseMod) / Name(TextFieldBase)] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(focus) [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsToggleToggleDotBaseMod) / Name(ToggleBase)] 
 [info ] CompleteClass.scala:62 Completed implementations Vector(dismiss, show) [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libComponentsTooltipTooltipHostDotBaseMod) / Name(TooltipHostBase)] 
-[info ] CompleteClass.scala:62 Completed implementations Vector(dispose, subscribe, unsubscribe) [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libUtilitiesDragdropDragDropHelperMod) / Name(DragDropHelper)] 
+[info ] CompleteClass.scala:62 Completed implementations Vector(unsubscribe, dispose, subscribe) [id => office-ui-fabric-react, phase => scala.js, this => Name(officeDashUiDashFabricDashReactLib) / Name(libUtilitiesDragdropDragDropHelperMod) / Name(DragDropHelper)] 
 [debug] PhaseRunner.scala:82 Success [id => office-ui-fabric-react, phase => scala.js] 
 [warn ] PhaseRunner.scala:68 Failed because of, [@uifabric/foundation => Compilation failed] [id => office-ui-fabric-react, phase => build] 
 [error] PhaseRunner.scala:86 Failure, [@uifabric/foundation => Compilation failed] [id => office-ui-fabric-react, phase => build] 
