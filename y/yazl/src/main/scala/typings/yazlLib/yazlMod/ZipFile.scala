@@ -9,12 +9,8 @@ import scala.scalajs.js.annotation._
 @js.native
 class ZipFile () extends js.Object {
   var outputStream: nodeLib.streamMod.Readable = js.native
-  def addBuffer(buffer: bufferLib.bufferMod.Buffer, metadataPath: java.lang.String): scala.Unit = js.native
-  def addBuffer(
-    buffer: bufferLib.bufferMod.Buffer,
-    metadataPath: java.lang.String,
-    options: stdLib.Partial[Options]
-  ): scala.Unit = js.native
+  def addBuffer(buffer: nodeLib.Buffer, metadataPath: java.lang.String): scala.Unit = js.native
+  def addBuffer(buffer: nodeLib.Buffer, metadataPath: java.lang.String, options: stdLib.Partial[Options]): scala.Unit = js.native
   def addEmptyDirectory(metadataPath: java.lang.String): scala.Unit = js.native
   def addEmptyDirectory(metadataPath: java.lang.String, options: stdLib.Partial[DirectoryOptions]): scala.Unit = js.native
   def addFile(realPath: java.lang.String, metadataPath: java.lang.String): scala.Unit = js.native

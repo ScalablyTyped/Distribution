@@ -112,14 +112,14 @@ trait Item extends js.Object {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
-  def addHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
+  def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): scala.Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    options: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    options: AsyncContextOptions,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets an attachment from a message or appointment and returns it as an **AttachmentContent** object.
@@ -152,13 +152,13 @@ trait Item extends js.Object {
   def getAttachmentContentAsync(attachmentId: java.lang.String): scala.Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: java.lang.String,
-    callback: js.Function1[/* result */ AsyncResult[AttachmentContent], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], scala.Unit]
   ): scala.Unit = js.native
   def getAttachmentContentAsync(attachmentId: java.lang.String, options: AsyncContextOptions): scala.Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: java.lang.String,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[AttachmentContent], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets initialization data passed when the add-in is {@link https://docs.microsoft.com/outlook/actionable-messages/invoke-add-in-from-actionable-message | activated by an actionable message}.
@@ -186,11 +186,11 @@ trait Item extends js.Object {
     * @beta
     */
   def getInitializationContextAsync(): scala.Unit = js.native
-  def getInitializationContextAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
+  def getInitializationContextAsync(callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getInitializationContextAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
@@ -209,7 +209,7 @@ trait Item extends js.Object {
     * 
     * @beta
     */
-  def getSharedPropertiesAsync(callback: js.Function1[/* result */ AsyncResult[SharedProperties], scala.Unit]): scala.Unit = js.native
+  def getSharedPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], scala.Unit]): scala.Unit = js.native
   /**
     * Gets the properties of an appointment or message in a shared folder, calendar, or mailbox.
     *
@@ -231,7 +231,7 @@ trait Item extends js.Object {
     */
   def getSharedPropertiesAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[SharedProperties], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[SharedProperties], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Asynchronously loads custom properties for this add-in on the selected item.
@@ -258,9 +258,9 @@ trait Item extends js.Object {
     * @param userContext - Optional. Developers can provide any object they wish to access in the callback function. 
     *                    This object can be accessed by the asyncResult.asyncContext property in the callback function.
     */
-  def loadCustomPropertiesAsync(callback: js.Function1[/* result */ AsyncResult[CustomProperties], scala.Unit]): scala.Unit = js.native
+  def loadCustomPropertiesAsync(callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], scala.Unit]): scala.Unit = js.native
   def loadCustomPropertiesAsync(
-    callback: js.Function1[/* result */ AsyncResult[CustomProperties], scala.Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[CustomProperties], scala.Unit],
     userContext: js.Any
   ): scala.Unit = js.native
   /**
@@ -285,12 +285,15 @@ trait Item extends js.Object {
     *                asyncResult, which is an Office.AsyncResult object.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
-  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: js.Any): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     options: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
 }
 

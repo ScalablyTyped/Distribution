@@ -4432,6 +4432,9 @@ object awsDashSdkLibStrings {
   sealed trait FQDN extends js.Object
   
   @js.native
+  sealed trait FRAGMENTED_MP4 extends js.Object
+  
+  @js.native
   sealed trait FRAGMENT_NUMBER extends js.Object
   
   @js.native
@@ -6094,6 +6097,15 @@ object awsDashSdkLibStrings {
   sealed trait LOCAL extends js.Object
   
   @js.native
+  sealed trait LOCAL_CUSTOM_CACHE extends js.Object
+  
+  @js.native
+  sealed trait LOCAL_DOCKER_LAYER_CACHE extends js.Object
+  
+  @js.native
+  sealed trait LOCAL_SOURCE_CACHE extends js.Object
+  
+  @js.native
   sealed trait LOCAL_USE extends js.Object
   
   @js.native
@@ -6590,6 +6602,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait MPEG4 extends js.Object
+  
+  @js.native
+  sealed trait MPEG_TS extends js.Object
   
   @js.native
   sealed trait `MS-CHAPv1` extends js.Object
@@ -17534,6 +17549,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def FQDN: FQDN = "FQDN".asInstanceOf[FQDN]
   @scala.inline
+  def FRAGMENTED_MP4: FRAGMENTED_MP4 = "FRAGMENTED_MP4".asInstanceOf[FRAGMENTED_MP4]
+  @scala.inline
   def FRAGMENT_NUMBER: FRAGMENT_NUMBER = "FRAGMENT_NUMBER".asInstanceOf[FRAGMENT_NUMBER]
   @scala.inline
   def FRAMERATE_23_97: FRAMERATE_23_97 = "FRAMERATE_23_97".asInstanceOf[FRAMERATE_23_97]
@@ -18642,6 +18659,12 @@ object awsDashSdkLibStrings {
   @scala.inline
   def LOCAL: LOCAL = "LOCAL".asInstanceOf[LOCAL]
   @scala.inline
+  def LOCAL_CUSTOM_CACHE: LOCAL_CUSTOM_CACHE = "LOCAL_CUSTOM_CACHE".asInstanceOf[LOCAL_CUSTOM_CACHE]
+  @scala.inline
+  def LOCAL_DOCKER_LAYER_CACHE: LOCAL_DOCKER_LAYER_CACHE = "LOCAL_DOCKER_LAYER_CACHE".asInstanceOf[LOCAL_DOCKER_LAYER_CACHE]
+  @scala.inline
+  def LOCAL_SOURCE_CACHE: LOCAL_SOURCE_CACHE = "LOCAL_SOURCE_CACHE".asInstanceOf[LOCAL_SOURCE_CACHE]
+  @scala.inline
   def LOCAL_USE: LOCAL_USE = "LOCAL_USE".asInstanceOf[LOCAL_USE]
   @scala.inline
   def LOCATION: LOCATION = "LOCATION".asInstanceOf[LOCATION]
@@ -18973,6 +18996,8 @@ object awsDashSdkLibStrings {
   def MPEG2: MPEG2 = "MPEG2".asInstanceOf[MPEG2]
   @scala.inline
   def MPEG4: MPEG4 = "MPEG4".asInstanceOf[MPEG4]
+  @scala.inline
+  def MPEG_TS: MPEG_TS = "MPEG_TS".asInstanceOf[MPEG_TS]
   @scala.inline
   def `MS-CHAPv1`: `MS-CHAPv1` = "MS-CHAPv1".asInstanceOf[`MS-CHAPv1`]
   @scala.inline

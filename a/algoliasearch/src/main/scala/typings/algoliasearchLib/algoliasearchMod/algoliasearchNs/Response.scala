@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Response extends js.Object {
+trait Response[T] extends js.Object {
   /**
     * The cursor is only set when browsing the index.
     * https://www.algolia.com/doc/api-reference/api-methods/browse/
@@ -19,7 +19,7 @@ trait Response extends js.Object {
     * Contains all the hits matching the query
     * https://www.algolia.com/doc/api-reference/api-methods/search/?language=javascript#response
     */
-  var hits: js.Array[_]
+  var hits: js.Array[T]
   /**
     * Number of hits per pages
     * https://www.algolia.com/doc/api-reference/api-methods/search/?language=javascript#response

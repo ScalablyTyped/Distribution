@@ -280,6 +280,13 @@ trait MessageRead extends Message {
     * </table>
     */
   var to: js.Array[EmailAddressDetails] = js.native
+  def addHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.Any,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Displays a reply form that includes the sender and all recipients of the selected message or the organizer and all attendees of the 
     * selected appointment.
@@ -337,10 +344,13 @@ trait MessageRead extends Message {
   def displayReplyAllForm(formData: java.lang.String): scala.Unit = js.native
   def displayReplyAllForm(
     formData: java.lang.String,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def displayReplyAllForm(formData: ReplyFormData): scala.Unit = js.native
-  def displayReplyAllForm(formData: ReplyFormData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def displayReplyAllForm(
+    formData: ReplyFormData,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Displays a reply form that includes only the sender of the selected message or the organizer of the selected appointment.
     *
@@ -398,10 +408,13 @@ trait MessageRead extends Message {
   def displayReplyForm(formData: java.lang.String): scala.Unit = js.native
   def displayReplyForm(
     formData: java.lang.String,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def displayReplyForm(formData: ReplyFormData): scala.Unit = js.native
-  def displayReplyForm(formData: ReplyFormData, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def displayReplyForm(
+    formData: ReplyFormData,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Gets the entities found in the selected item's body.
     *

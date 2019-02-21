@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "nanoid"
-version := "1.2-dt-20180828Z-622691"
+version := "1.2-dt-20190220Z-200706"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

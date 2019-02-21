@@ -19,6 +19,7 @@ trait ReactHammerProps extends js.Object {
   var onPinchCancel: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onPinchEnd: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onPinchIn: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
+  var onPinchOut: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onPinchStart: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onPress: js.UndefOr[hammerjsLib.HammerListener] = js.undefined
   var onPressUp: js.UndefOr[hammerjsLib.HammerListener] = js.undefined

@@ -1,11 +1,12 @@
 organization := "org.scalablytyped"
 name := "gulp-tslint"
-version := "8.1.3-d2b028"
+version := "8.1.4-aed41b"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
+  "org.scalablytyped" %%% "ansi-colors" % "3.2-dt-20181231Z-9d8abf",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-a737ef",
   "org.scalablytyped" %%% "babel-code-frame" % "6.20-dt-20190212Z-e8f31e",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-64d288",

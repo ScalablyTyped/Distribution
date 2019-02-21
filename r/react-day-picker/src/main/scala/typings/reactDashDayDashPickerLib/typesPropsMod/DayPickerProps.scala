@@ -18,6 +18,7 @@ trait DayPickerProps extends js.Object {
       reactLib.HTMLDivElement
     ]
   ] = js.undefined
+  var dir: js.UndefOr[java.lang.String] = js.undefined
   var disabledDays: js.UndefOr[
     reactDashDayDashPickerLib.typesCommonMod.Modifier | js.Array[reactDashDayDashPickerLib.typesCommonMod.Modifier]
   ] = js.undefined
@@ -32,22 +33,7 @@ trait DayPickerProps extends js.Object {
   var modifiers: js.UndefOr[stdLib.Partial[reactDashDayDashPickerLib.typesCommonMod.Modifiers]] = js.undefined
   var modifiersStyles: js.UndefOr[js.Object] = js.undefined
   var month: js.UndefOr[stdLib.Date] = js.undefined
-  var months: js.UndefOr[
-    js.Tuple12[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String
-    ]
-  ] = js.undefined
+  var months: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var navbarElement: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[NavbarElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[NavbarElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[NavbarElementProps]
   ] = js.undefined
@@ -156,7 +142,7 @@ trait DayPickerProps extends js.Object {
   var renderDay: js.UndefOr[
     js.Function2[
       /* date */ stdLib.Date, 
-      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.Modifiers, 
+      /* modifiers */ reactDashDayDashPickerLib.typesCommonMod.DayModifiers, 
       reactLib.reactMod.ReactNs.ReactNode
     ]
   ] = js.undefined
@@ -180,27 +166,7 @@ trait DayPickerProps extends js.Object {
   var weekdayElement: js.UndefOr[
     reactLib.reactMod.ReactNs.ReactElement[stdLib.Partial[WeekdayElementProps]] | (reactLib.reactMod.ReactNs.ComponentClass[WeekdayElementProps, reactLib.reactMod.ReactNs.ComponentState]) | reactLib.reactMod.ReactNs.SFC[WeekdayElementProps]
   ] = js.undefined
-  var weekdaysLong: js.UndefOr[
-    js.Tuple7[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String
-    ]
-  ] = js.undefined
-  var weekdaysShort: js.UndefOr[
-    js.Tuple7[
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String, 
-      java.lang.String
-    ]
-  ] = js.undefined
+  var weekdaysLong: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var weekdaysShort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

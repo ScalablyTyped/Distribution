@@ -430,12 +430,15 @@ trait Index extends js.Object {
     * Search in an index
     * https://github.com/algolia/algoliasearch-client-js#search-in-an-index---search
     */
-  def search(params: QueryParameters): js.Promise[Response] = js.native
+  def search[T](params: QueryParameters): js.Promise[Response[T]] = js.native
   /**
     * Search in an index
     * https://github.com/algolia/algoliasearch-client-js#search-in-an-index---search
     */
-  def search(params: QueryParameters, cb: js.Function2[/* err */ stdLib.Error, /* res */ Response, scala.Unit]): scala.Unit = js.native
+  def search[T](
+    params: QueryParameters,
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ Response[T], scala.Unit]
+  ): scala.Unit = js.native
   /**
     * Search in an index
     * https://www.algolia.com/doc/api-reference/api-methods/search-for-facet-values/

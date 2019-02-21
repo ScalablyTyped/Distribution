@@ -8,6 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("fp-ts/lib/Foldable2v", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
+  def elem[F, A](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v[F]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.HKT[F, A], scala.Boolean] = js.native
+  def elem[F /* <: fpDashTsLib.libHKTMod.URIS */, A](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v1[F]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.Type[F, A], scala.Boolean] = js.native
+  def elem[F /* <: fpDashTsLib.libHKTMod.URIS2 */, A](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v2[F]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.Type2[F, _, A], scala.Boolean] = js.native
+  def elem[F /* <: fpDashTsLib.libHKTMod.URIS3 */, A](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v3[F]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.Type3[F, _, _, A], scala.Boolean] = js.native
+  def elem[F /* <: fpDashTsLib.libHKTMod.URIS2 */, A, L](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v2C[F, L]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.Type2[F, L, A], scala.Boolean] = js.native
+  def elem[F /* <: fpDashTsLib.libHKTMod.URIS3 */, A, U, L](S: fpDashTsLib.libSetoidMod.Setoid[A], F: fpDashTsLib.libFoldable2vMod.Foldable2v3C[F, U, L]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libHKTMod.Type3[F, U, L, A], scala.Boolean] = js.native
   def findFirst[F](F: fpDashTsLib.libFoldable2vMod.Foldable2v[F]): js.Function2[
     /* fa */ fpDashTsLib.libHKTMod.HKT[F, _], 
     /* p */ fpDashTsLib.libFunctionMod.Predicate[_], 

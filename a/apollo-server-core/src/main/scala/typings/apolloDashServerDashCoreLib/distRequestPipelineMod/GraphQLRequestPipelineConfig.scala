@@ -23,7 +23,12 @@ trait GraphQLRequestPipelineConfig[TContext] extends js.Object {
   var fieldResolver: js.UndefOr[
     graphqlLib.typeDefinitionMod.GraphQLFieldResolver[_, TContext, org.scalablytyped.runtime.StringDictionary[_]]
   ] = js.undefined
-  var formatError: js.UndefOr[coreDashJsLib.Function] = js.undefined
+  var formatError: js.UndefOr[
+    js.Function1[
+      /* error */ graphqlLib.graphqlMod.GraphQLError, 
+      graphqlLib.errorFormatErrorMod.GraphQLFormattedError
+    ]
+  ] = js.undefined
   var formatResponse: js.UndefOr[coreDashJsLib.Function] = js.undefined
   var parseOptions: js.UndefOr[graphqlDashToolsLib.distInterfacesMod.GraphQLParseOptions] = js.undefined
   var persistedQueries: js.UndefOr[apolloDashServerDashCoreLib.distGraphqlOptionsMod.PersistedQueryOptions] = js.undefined

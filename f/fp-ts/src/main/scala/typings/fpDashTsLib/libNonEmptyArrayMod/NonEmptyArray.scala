@@ -19,7 +19,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     *
     * const x = new NonEmptyArray(1, [2])
     * const double = (n: number): number => n * 2
-    * assert.deepEqual(x.ap(new NonEmptyArray(double, [double])).toArray(), [2, 4, 2, 4])
+    * assert.deepStrictEqual(x.ap(new NonEmptyArray(double, [double])).toArray(), [2, 4, 2, 4])
     */
   def ap[B](fab: NonEmptyArray[js.Function1[/* a */ A, B]]): NonEmptyArray[B] = js.native
   /**
@@ -30,7 +30,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     *
     * const x = new NonEmptyArray(1, [2])
     * const double = (n: number) => n * 2
-    * assert.deepEqual(new NonEmptyArray(double, [double]).ap_(x).toArray(), [2, 4, 2, 4])
+    * assert.deepStrictEqual(new NonEmptyArray(double, [double]).ap_(x).toArray(), [2, 4, 2, 4])
     */
   def `ap_`[B, C](`this`: NonEmptyArray[js.Function1[/* b */ B, C]], fb: NonEmptyArray[B]): NonEmptyArray[C] = js.native
   /**
@@ -39,7 +39,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     *
     * const x = new NonEmptyArray(1, [2])
     * const f = (a: number) => new NonEmptyArray(a, [4])
-    * assert.deepEqual(x.chain(f).toArray(), [1, 4, 2, 4])
+    * assert.deepStrictEqual(x.chain(f).toArray(), [1, 4, 2, 4])
     */
   def chain[B](f: js.Function1[/* a */ A, NonEmptyArray[B]]): NonEmptyArray[B] = js.native
   /**
@@ -48,7 +48,7 @@ class NonEmptyArray[A] protected () extends js.Object {
     *
     * const x = new NonEmptyArray(1, [2])
     * const y = new NonEmptyArray(3, [4])
-    * assert.deepEqual(x.concat(y).toArray(), [1, 2, 3, 4])
+    * assert.deepStrictEqual(x.concat(y).toArray(), [1, 2, 3, 4])
     */
   def concat(y: NonEmptyArray[A]): NonEmptyArray[A] = js.native
   /**
@@ -57,16 +57,20 @@ class NonEmptyArray[A] protected () extends js.Object {
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     *
-    * assert.deepEqual(new NonEmptyArray<number>(1, []).concatArray([2]), new NonEmptyArray(1, [2]))
+    * assert.deepStrictEqual(new NonEmptyArray<number>(1, []).concatArray([2]), new NonEmptyArray(1, [2]))
     */
   def concatArray(as: fpDashTsLib.libArrayMod.Global.Array[A]): NonEmptyArray[A] = js.native
+  /**
+    * @since 1.14.0
+    */
+  def every(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): scala.Boolean = js.native
   /**
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { fold, monoidSum } from 'fp-ts/lib/Monoid'
     *
     * const sum = (as: NonEmptyArray<number>) => fold(monoidSum)(as.toArray())
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3, 4]).extend(sum), new NonEmptyArray(10, [9, 7, 4]))
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3, 4]).extend(sum), new NonEmptyArray(10, [9, 7, 4]))
     */
   def extend[B](f: js.Function1[/* fa */ NonEmptyArray[A], B]): NonEmptyArray[B] = js.native
   /**
@@ -78,13 +82,12 @@ class NonEmptyArray[A] protected () extends js.Object {
   def extract(): A = js.native
   def filter(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   /**
-    * @function
     * @since 1.12.0
     */
   def filterWithIndex(predicate: js.Function2[/* i */ scala.Double, /* a */ A, scala.Boolean]): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
   /**
     * Filter an NonEmptyArray, keeping the elements which satisfy a predicate function, creating a new NonEmptyArray or returning `None` in case the resulting NonEmptyArray would have no remaining elements.
-    * @function
+    *
     * @since 1.11.0
     */
   @JSName("filter")
@@ -97,9 +100,8 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { some } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(new NonEmptyArray({ a: 1, b: 1 }, [{ a: 1, b: 2 }]).findFirst(x => x.a === 1), some({ a: 1, b: 1 }))
+    * assert.deepStrictEqual(new NonEmptyArray({ a: 1, b: 1 }, [{ a: 1, b: 2 }]).findFirst(x => x.a === 1), some({ a: 1, b: 1 }))
     *
-    * @function
     * @since 1.11.0
     */
   @JSName("findFirst")
@@ -111,10 +113,9 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { some, none } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).findIndex(x => x === 2), some(1))
-    * assert.deepEqual(new NonEmptyArray<number>(1, []).findIndex(x => x === 2), none)
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).findIndex(x => x === 2), some(1))
+    * assert.deepStrictEqual(new NonEmptyArray<number>(1, []).findIndex(x => x === 2), none)
     *
-    * @function
     * @since 1.11.0
     */
   def findIndex(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[scala.Double] = js.native
@@ -131,10 +132,9 @@ class NonEmptyArray[A] protected () extends js.Object {
     *   b: number
     * }
     * const xs: NonEmptyArray<X> = new NonEmptyArray({ a: 1, b: 0 }, [{ a: 1, b: 1 }])
-    * assert.deepEqual(xs.findLastIndex(x => x.a === 1), some(1))
-    * assert.deepEqual(xs.findLastIndex(x => x.a === 4), none)
+    * assert.deepStrictEqual(xs.findLastIndex(x => x.a === 1), some(1))
+    * assert.deepStrictEqual(xs.findLastIndex(x => x.a === 4), none)
     *
-    * @function
     * @since 1.11.0
     */
   def findLastIndex(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libOptionMod.Option[scala.Double] = js.native
@@ -145,9 +145,8 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { some } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(new NonEmptyArray({ a: 1, b: 1 }, [{ a: 1, b: 2 }]).findLast(x => x.a === 1), some({ a: 1, b: 2 }))
+    * assert.deepStrictEqual(new NonEmptyArray({ a: 1, b: 1 }, [{ a: 1, b: 2 }]).findLast(x => x.a === 1), some({ a: 1, b: 2 }))
     *
-    * @function
     * @since 1.11.0
     */
   @JSName("findLast")
@@ -161,17 +160,8 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def foldrWithIndex[B](b: B, f: js.Function3[/* i */ scala.Double, /* a */ A, /* b */ B, B]): B = js.native
   /**
-    * This function provides a safe way to read a value at a particular index from an NonEmptyArray
-    *
-    * @example
-    * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
-    * import { some, none } from 'fp-ts/lib/Option'
-    *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).index(1), some(2))
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).index(3), none)
-    *
-    * @function
     * @since 1.11.0
+    * @deprecated
     */
   def index(i: scala.Double): fpDashTsLib.libOptionMod.Option[A] = js.native
   /**
@@ -181,9 +171,8 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { some } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3, 4]).insertAt(2, 5), some(new NonEmptyArray(1, [2, 5, 3, 4])))
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3, 4]).insertAt(2, 5), some(new NonEmptyArray(1, [2, 5, 3, 4])))
     *
-    * @function
     * @since 1.11.0
     */
   def insertAt(i: scala.Double, a: A): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native
@@ -208,11 +197,24 @@ class NonEmptyArray[A] protected () extends js.Object {
     */
   def length(): scala.Double = js.native
   /**
+    * This function provides a safe way to read a value at a particular index from an NonEmptyArray
+    *
+    * @example
+    * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
+    * import { some, none } from 'fp-ts/lib/Option'
+    *
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).lookup(1), some(2))
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).lookup(3), none)
+    *
+    * @since 1.14.0
+    */
+  def lookup(i: scala.Double): fpDashTsLib.libOptionMod.Option[A] = js.native
+  /**
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     *
     * const double = (n: number): number => n * 2
-    * assert.deepEqual(new NonEmptyArray(1, [2]).map(double), new NonEmptyArray(2, [4]))
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2]).map(double), new NonEmptyArray(2, [4]))
     */
   def map[B](f: js.Function1[/* a */ A, B]): NonEmptyArray[B] = js.native
   def mapWithIndex[B](f: js.Function2[/* i */ scala.Double, /* a */ A, B]): NonEmptyArray[B] = js.native
@@ -258,11 +260,15 @@ class NonEmptyArray[A] protected () extends js.Object {
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).reverse(), new NonEmptyArray(3, [2, 1]))
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).reverse(), new NonEmptyArray(3, [2, 1]))
     *
     * @since 1.6.0
     */
   def reverse(): NonEmptyArray[A] = js.native
+  /**
+    * @since 1.14.0
+    */
+  def some(predicate: fpDashTsLib.libFunctionMod.Predicate[A]): scala.Boolean = js.native
   /**
     * Sorts this {@link NonEmptyArray} using specified {@link Ord} instance
     *
@@ -270,20 +276,31 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { ordNumber } from 'fp-ts/lib/Ord'
     *
-    * assert.deepEqual(new NonEmptyArray(3, [2, 1]).sort(ordNumber), new NonEmptyArray(1, [2, 3]))
+    * assert.deepStrictEqual(new NonEmptyArray(3, [2, 1]).sort(ordNumber), new NonEmptyArray(1, [2, 3]))
     *
     * @since 1.6.0
     */
   def sort(ord: fpDashTsLib.libOrdMod.Ord[A]): NonEmptyArray[A] = js.native
   /**
-    * Converts this {@link NonEmptyArray} to plain {@link Array}
+    * Converts this {@link NonEmptyArray} to a plain {@link Array}
     *
     * @example
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).toArray(), [1, 2, 3])
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).toArray(), [1, 2, 3])
     */
   def toArray(): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  /**
+    * Converts this {@link NonEmptyArray} to a plain {@link Array} using the given map function
+    *
+    * @example
+    * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
+    *
+    * assert.deepStrictEqual(new NonEmptyArray('a', ['bb', 'ccc']).toArrayMap(s => s.length), [1, 2, 3])
+    *
+    * @since 1.14.0
+    */
+  def toArrayMap[B](f: js.Function1[/* a */ A, B]): fpDashTsLib.libArrayMod.Global.Array[B] = js.native
   /**
     * Change the element at the specified index, creating a new NonEmptyArray, or returning `None` if the index is out of bounds
     *
@@ -291,10 +308,9 @@ class NonEmptyArray[A] protected () extends js.Object {
     * import { NonEmptyArray } from 'fp-ts/lib/NonEmptyArray'
     * import { some, none } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(new NonEmptyArray(1, [2, 3]).updateAt(1, 1), some(new NonEmptyArray(1, [1, 3])))
-    * assert.deepEqual(new NonEmptyArray(1, []).updateAt(1, 1), none)
+    * assert.deepStrictEqual(new NonEmptyArray(1, [2, 3]).updateAt(1, 1), some(new NonEmptyArray(1, [1, 3])))
+    * assert.deepStrictEqual(new NonEmptyArray(1, []).updateAt(1, 1), none)
     *
-    * @function
     * @since 1.11.0
     */
   def updateAt(i: scala.Double, a: A): fpDashTsLib.libOptionMod.Option[NonEmptyArray[A]] = js.native

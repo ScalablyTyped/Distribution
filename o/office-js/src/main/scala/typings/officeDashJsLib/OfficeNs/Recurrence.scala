@@ -136,11 +136,11 @@ trait Recurrence extends js.Object {
     *                 The `value` property of the result is a Recurrence object.
     */
   def getAsync(): scala.Unit = js.native
-  def getAsync(callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]): scala.Unit = js.native
+  def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]): scala.Unit = js.native
   def getAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Sets the recurrence pattern of an appointment series.
@@ -166,13 +166,13 @@ trait Recurrence extends js.Object {
   def setAsync(recurrencePattern: Recurrence): scala.Unit = js.native
   def setAsync(
     recurrencePattern: Recurrence,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def setAsync(recurrencePattern: Recurrence, options: AsyncContextOptions): scala.Unit = js.native
   def setAsync(
     recurrencePattern: Recurrence,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
 }
 

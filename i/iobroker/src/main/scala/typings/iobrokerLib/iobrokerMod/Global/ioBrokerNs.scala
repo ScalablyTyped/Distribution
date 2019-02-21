@@ -1915,7 +1915,7 @@ object ioBrokerNs extends js.Object {
     var count: js.UndefOr[scala.Double] = js.undefined
     var end: js.UndefOr[scala.Double] = js.undefined
     var from: js.UndefOr[scala.Boolean] = js.undefined
-    var ignoreNull: scala.Boolean
+    var ignoreNull: js.UndefOr[scala.Boolean] = js.undefined
     var instance: js.UndefOr[java.lang.String] = js.undefined
     var limit: js.UndefOr[scala.Double] = js.undefined
     var q: js.UndefOr[scala.Boolean] = js.undefined
@@ -2908,11 +2908,12 @@ object ioBrokerNs extends js.Object {
   ]
   type GetHistoryCallback = js.Function4[
     /* err */ java.lang.String | scala.Null, 
-    /* result */ js.Array[State with iobrokerLib.Anon_IdStringOptional], 
+    /* result */ GetHistoryResult, 
     /* step */ scala.Double, 
     /* sessionId */ js.UndefOr[java.lang.String], 
     scala.Unit
   ]
+  type GetHistoryResult = js.Array[State with iobrokerLib.Anon_IdStringOptional]
   type GetObjectCallback = js.Function2[
     /* err */ java.lang.String | scala.Null, 
     /* obj */ js.UndefOr[Object | scala.Null], 

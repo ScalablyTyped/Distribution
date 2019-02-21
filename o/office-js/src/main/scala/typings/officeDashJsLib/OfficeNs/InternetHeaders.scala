@@ -46,13 +46,13 @@ trait InternetHeaders extends js.Object {
   def getAsync(names: js.Array[java.lang.String]): scala.Unit = js.native
   def getAsync(
     names: js.Array[java.lang.String],
-    callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]
   ): scala.Unit = js.native
   def getAsync(names: js.Array[java.lang.String], options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
     names: js.Array[java.lang.String],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Given an array of internet header names, this method removes the specified headers from the internet header collection.
@@ -76,13 +76,13 @@ trait InternetHeaders extends js.Object {
   def removeAsync(names: js.Array[java.lang.String]): scala.Unit = js.native
   def removeAsync(
     names: js.Array[java.lang.String],
-    callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]
   ): scala.Unit = js.native
   def removeAsync(names: js.Array[java.lang.String], options: AsyncContextOptions): scala.Unit = js.native
   def removeAsync(
     names: js.Array[java.lang.String],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[this.type], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Sets the specified internet headers to the specified values.
@@ -108,12 +108,12 @@ trait InternetHeaders extends js.Object {
     * @beta
     */
   def setAsync(headers: js.Object): scala.Unit = js.native
-  def setAsync(headers: js.Object, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def setAsync(headers: js.Object, callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   def setAsync(headers: js.Object, options: AsyncContextOptions): scala.Unit = js.native
   def setAsync(
     headers: js.Object,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
 }
 

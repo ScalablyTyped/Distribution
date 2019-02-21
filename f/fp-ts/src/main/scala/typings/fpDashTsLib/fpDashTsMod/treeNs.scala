@@ -18,6 +18,7 @@ object treeNs extends js.Object {
   val tree: fpDashTsLib.libMonadMod.Monad1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libFoldable2vMod.Foldable2v1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libTraversable2vMod.Traversable2v1[fpDashTsLib.libTreeMod.URI] with fpDashTsLib.libComonadMod.Comonad1[fpDashTsLib.libTreeMod.URI] = js.native
   def drawForest(forest: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libTreeMod.Tree[java.lang.String]]): java.lang.String = js.native
   def drawTree(tree: fpDashTsLib.libTreeMod.Tree[java.lang.String]): java.lang.String = js.native
+  def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* fa */ fpDashTsLib.libTreeMod.Tree[A], scala.Boolean] = js.native
   def getSetoid[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): fpDashTsLib.libSetoidMod.Setoid[fpDashTsLib.libTreeMod.Tree[A]] = js.native
   def unfoldForest[A, B](
     bs: fpDashTsLib.libArrayMod.Global.Array[B],

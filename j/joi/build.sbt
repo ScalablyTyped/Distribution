@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "joi"
-version := "14.3-dt-20190131Z-6a437a"
+version := "14.3-dt-20190212Z-f16652"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

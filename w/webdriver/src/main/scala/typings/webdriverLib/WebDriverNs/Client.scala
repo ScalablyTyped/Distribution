@@ -14,16 +14,11 @@ import scala.scalajs.js.annotation._
 // saucelabs types
 @js.native
 trait Client extends js.Object {
-  var capabilities: DesiredCapabilities = js.native
-  var isAndroid: scala.Boolean = js.native
-  var isIOS: scala.Boolean = js.native
-  var isMobile: scala.Boolean = js.native
-  var isW3C: scala.Boolean = js.native
-  var sessionId: java.lang.String = js.native
   def acceptAlert(): js.UndefOr[scala.Nothing] = js.native
   def activateIME(engine: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def addCookie(cookie: js.Object): js.UndefOr[scala.Nothing] = js.native
-  def assertPerformance(assertOptions: js.Object): scala.Boolean = js.native
+  def assertPerformance(name: java.lang.String): scala.Boolean = js.native
+  def assertPerformance(name: java.lang.String, metrics: js.Array[java.lang.String]): scala.Boolean = js.native
   def back(): js.UndefOr[scala.Nothing] = js.native
   def background(): js.UndefOr[scala.Nothing] = js.native
   def background(duration: scala.Double): js.UndefOr[scala.Nothing] = js.native

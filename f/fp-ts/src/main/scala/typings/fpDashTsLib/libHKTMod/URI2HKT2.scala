@@ -10,6 +10,7 @@ trait URI2HKT2[L, A] extends js.Object {
   var Either: fpDashTsLib.libEitherMod.Either[L, A]
   var Free: fpDashTsLib.libFreeMod.Free[L, A]
   var IOEither: fpDashTsLib.libIOEitherMod.IOEither[L, A]
+  var Map: stdLib.Map[L, A]
   var Reader: fpDashTsLib.libReaderMod.Reader[L, A]
   var State: fpDashTsLib.libStateMod.State[L, A]
   var Store: fpDashTsLib.libStoreMod.Store[L, A]

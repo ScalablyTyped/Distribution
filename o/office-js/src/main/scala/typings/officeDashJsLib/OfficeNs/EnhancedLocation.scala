@@ -30,13 +30,13 @@ trait EnhancedLocation extends js.Object {
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier]): scala.Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    callback: js.Function1[/* result */ AsyncResultStatus, scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResultStatus, scala.Unit]
   ): scala.Unit = js.native
   def addAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): scala.Unit = js.native
   def addAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResultStatus, scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResultStatus, scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets the set of locations associated with the appointment.
@@ -57,11 +57,11 @@ trait EnhancedLocation extends js.Object {
     * @beta
     */
   def getAsync(): scala.Unit = js.native
-  def getAsync(callback: js.Function1[/* result */ AsyncResult[js.Array[LocationDetails]], scala.Unit]): scala.Unit = js.native
+  def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], scala.Unit]): scala.Unit = js.native
   def getAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[js.Array[LocationDetails]], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[LocationDetails]], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Removes the set of locations associated with the appointment.
@@ -87,13 +87,13 @@ trait EnhancedLocation extends js.Object {
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier]): scala.Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
-    callback: js.Function1[/* result */ AsyncResultStatus, scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResultStatus, scala.Unit]
   ): scala.Unit = js.native
   def removeAsync(locationIdentifiers: js.Array[LocationIdentifier], options: AsyncContextOptions): scala.Unit = js.native
   def removeAsync(
     locationIdentifiers: js.Array[LocationIdentifier],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResultStatus, scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResultStatus, scala.Unit]
   ): scala.Unit = js.native
 }
 

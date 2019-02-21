@@ -15,6 +15,7 @@ object ^ extends js.Object {
   def empty[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable3[F]): fpDashTsLib.libHKTMod.Type3[F, U, L, A] = js.native
   def empty[F /* <: fpDashTsLib.libHKTMod.URIS3 */, U, L, A](U: fpDashTsLib.libUnfoldableMod.Unfoldable3C[F, U, L]): fpDashTsLib.libHKTMod.Type3[F, U, L, A] = js.native
   def replicate[F](U: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.HKT[F, _]] = js.native
+  def replicate[F /* <: fpDashTsLib.libHKTMod.URIS */](U: fpDashTsLib.libUnfoldableMod.Unfoldable1[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.Type[F, _]] = js.native
   def replicate[F /* <: fpDashTsLib.libHKTMod.URIS2 */](U: fpDashTsLib.libUnfoldableMod.Unfoldable2[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.Type2[F, _, _]] = js.native
   def replicate[F /* <: fpDashTsLib.libHKTMod.URIS3 */](U: fpDashTsLib.libUnfoldableMod.Unfoldable3[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.Type3[F, _, _, _]] = js.native
   def replicate[F /* <: fpDashTsLib.libHKTMod.URIS2 */, L](U: fpDashTsLib.libUnfoldableMod.Unfoldable2C[F, L]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.Type2[F, L, _]] = js.native
@@ -59,8 +60,6 @@ object ^ extends js.Object {
     /* ma */ fpDashTsLib.libHKTMod.Type3[F, U, L, _], 
     fpDashTsLib.libHKTMod.Type3[F, U, L, fpDashTsLib.libHKTMod.Type[T, _]]
   ] = js.native
-  @JSName("replicate")
-  def replicate_FURIS[F /* <: fpDashTsLib.libHKTMod.URIS */](U: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function2[/* a */ js.Any, /* n */ scala.Double, fpDashTsLib.libHKTMod.Type[F, _]] = js.native
   def singleton[F](U: fpDashTsLib.libUnfoldableMod.Unfoldable[F]): js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.HKT[F, _]] = js.native
   def singleton[F /* <: fpDashTsLib.libHKTMod.URIS */](U: fpDashTsLib.libUnfoldableMod.Unfoldable1[F]): js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type[F, _]] = js.native
   def singleton[F /* <: fpDashTsLib.libHKTMod.URIS2 */](U: fpDashTsLib.libUnfoldableMod.Unfoldable2[F]): js.Function1[/* a */ js.Any, fpDashTsLib.libHKTMod.Type2[F, _, _]] = js.native

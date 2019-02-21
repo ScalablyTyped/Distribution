@@ -28,24 +28,7 @@ trait Anon_Callback extends js.Object {
     callback: js.Function2[/* err */ nodeLib.Error, /* data */ js.Any, scala.Unit]
   ): scala.Unit = js.native
   def logStream(name: java.lang.String, n: scala.Double): nodeLib.NodeJSNs.ReadableStream = js.native
-  @JSName("logStream")
-  def logStream_html(name: java.lang.String, n: scala.Double, `type`: jenkinsLib.jenkinsLibStrings.html): nodeLib.NodeJSNs.ReadableStream = js.native
-  @JSName("logStream")
-  def logStream_html(
-    name: java.lang.String,
-    n: scala.Double,
-    `type`: jenkinsLib.jenkinsLibStrings.html,
-    delay: scala.Double
-  ): nodeLib.NodeJSNs.ReadableStream = js.native
-  @JSName("logStream")
-  def logStream_text(name: java.lang.String, n: scala.Double, `type`: jenkinsLib.jenkinsLibStrings.text): nodeLib.NodeJSNs.ReadableStream = js.native
-  @JSName("logStream")
-  def logStream_text(
-    name: java.lang.String,
-    n: scala.Double,
-    `type`: jenkinsLib.jenkinsLibStrings.text,
-    delay: scala.Double
-  ): nodeLib.NodeJSNs.ReadableStream = js.native
+  def logStream(name: java.lang.String, n: scala.Double, options: Anon_Delay): nodeLib.NodeJSNs.ReadableStream = js.native
   @JSName("log")
   def log_html(
     name: java.lang.String,

@@ -206,6 +206,72 @@ object CodeCommitNs extends js.Object {
     var repositoryName: RepositoryName
   }
   
+  trait CreateCommitInput extends js.Object {
+    /**
+      * The name of the author who created the commit. This information will be used as both the author and committer for the commit.
+      */
+    var authorName: js.UndefOr[Name] = js.undefined
+    /**
+      * The name of the branch where you will create the commit.
+      */
+    var branchName: BranchName
+    /**
+      * The commit message you want to include as part of creating the commit. Commit messages are limited to 256 KB. If no message is specified, a default message will be used.
+      */
+    var commitMessage: js.UndefOr[Message] = js.undefined
+    /**
+      * The files to delete in this commit. These files will still exist in prior commits.
+      */
+    var deleteFiles: js.UndefOr[DeleteFileEntries] = js.undefined
+    /**
+      * The email address of the person who created the commit.
+      */
+    var email: js.UndefOr[Email] = js.undefined
+    /**
+      * If the commit contains deletions, whether to keep a folder or folder structure if the changes leave the folders empty. If this is specified as true, a .gitkeep file will be created for empty folders.
+      */
+    var keepEmptyFolders: js.UndefOr[KeepEmptyFolders] = js.undefined
+    /**
+      * The ID of the commit that is the parent of the commit you will create. If this is an empty repository, this is not required.
+      */
+    var parentCommitId: js.UndefOr[CommitId] = js.undefined
+    /**
+      * The files to add or update in this commit.
+      */
+    var putFiles: js.UndefOr[PutFileEntries] = js.undefined
+    /**
+      * The name of the repository where you will create the commit.
+      */
+    var repositoryName: RepositoryName
+    /**
+      * The file modes to update for files in this commit.
+      */
+    var setFileModes: js.UndefOr[SetFileModeEntries] = js.undefined
+  }
+  
+  trait CreateCommitOutput extends js.Object {
+    /**
+      * The full commit ID of the commit that contains your committed file changes.
+      */
+    var commitId: js.UndefOr[ObjectId] = js.undefined
+    /**
+      * The files added as part of the committed file changes.
+      */
+    var filesAdded: js.UndefOr[FilesMetadata] = js.undefined
+    /**
+      * The files deleted as part of the committed file changes.
+      */
+    var filesDeleted: js.UndefOr[FilesMetadata] = js.undefined
+    /**
+      * The files updated as part of the commited file changes.
+      */
+    var filesUpdated: js.UndefOr[FilesMetadata] = js.undefined
+    /**
+      * The full SHA-1 pointer of the tree information for the commit that contains the commited file changes.
+      */
+    var treeId: js.UndefOr[ObjectId] = js.undefined
+  }
+  
   trait CreatePullRequestInput extends js.Object {
     /**
       * A unique, client-generated idempotency token that when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request will return information about the initial request that used that token.  The AWS SDKs prepopulate client request tokens. If using an AWS SDK, you do not have to generate an idempotency token, as this will be done for you. 
@@ -280,6 +346,13 @@ object CodeCommitNs extends js.Object {
       * Information about the comment you just deleted.
       */
     var comment: js.UndefOr[Comment] = js.undefined
+  }
+  
+  trait DeleteFileEntry extends js.Object {
+    /**
+      * The full path of the file that will be deleted, including the name of the file.
+      */
+    var filePath: Path
   }
   
   trait DeleteFileInput extends js.Object {
@@ -416,6 +489,21 @@ object CodeCommitNs extends js.Object {
       * The relative path of the file from the folder where the query originated.
       */
     var relativePath: js.UndefOr[Path] = js.undefined
+  }
+  
+  trait FileMetadata extends js.Object {
+    /**
+      * The full path to the file that will be added or updated, including the name of the file.
+      */
+    var absolutePath: js.UndefOr[Path] = js.undefined
+    /**
+      * The blob ID that contains the file information.
+      */
+    var blobId: js.UndefOr[ObjectId] = js.undefined
+    /**
+      * The extrapolated file mode permissions for the file. Valid values include EXECUTABLE and NORMAL.
+      */
+    var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
   }
   
   trait Folder extends js.Object {
@@ -1224,6 +1312,25 @@ object CodeCommitNs extends js.Object {
     var sourceReference: js.UndefOr[ReferenceName] = js.undefined
   }
   
+  trait PutFileEntry extends js.Object {
+    /**
+      * The content of the file, if a source file is not specified.
+      */
+    var fileContent: js.UndefOr[FileContent] = js.undefined
+    /**
+      * The extrapolated file mode permissions for the file. Valid values include EXECUTABLE and NORMAL.
+      */
+    var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
+    /**
+      * The full path to the file in the repository, including the name of the file.
+      */
+    var filePath: Path
+    /**
+      * The name and full path of the file that contains the changes you want to make as part of the commit, if you are not providing the file content directly.
+      */
+    var sourceFile: js.UndefOr[SourceFileSpecifier] = js.undefined
+  }
+  
   trait PutFileInput extends js.Object {
     /**
       * The name of the branch where you want to add or update the file. If this is an empty repository, this branch will be created.
@@ -1384,6 +1491,28 @@ object CodeCommitNs extends js.Object {
     var trigger: js.UndefOr[RepositoryTriggerName] = js.undefined
   }
   
+  trait SetFileModeEntry extends js.Object {
+    /**
+      * The file mode for the file.
+      */
+    var fileMode: FileModeTypeEnum
+    /**
+      * The full path to the file, including the name of the file.
+      */
+    var filePath: Path
+  }
+  
+  trait SourceFileSpecifier extends js.Object {
+    /**
+      * The full path to the file, including the name of the file.
+      */
+    var filePath: Path
+    /**
+      * Whether to remove the source file from the parent commit.
+      */
+    var isMove: js.UndefOr[IsMove] = js.undefined
+  }
+  
   trait SubModule extends js.Object {
     /**
       * The fully qualified path to the folder that contains the reference to the submodule.
@@ -1498,6 +1627,29 @@ object CodeCommitNs extends js.Object {
       params: CreateBranchInput,
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates a commit for a repository on the tip of a specified branch.
+      */
+    def createCommit(): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createCommit(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCommitOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Creates a commit for a repository on the tip of a specified branch.
+      */
+    def createCommit(params: CreateCommitInput): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def createCommit(
+      params: CreateCommitInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ CreateCommitOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[CreateCommitOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Creates a pull request in the specified repository.
       */
@@ -2418,6 +2570,7 @@ object CodeCommitNs extends js.Object {
   type CommitName = java.lang.String
   type Content = java.lang.String
   type CreationDate = stdLib.Date
+  type DeleteFileEntries = js.Array[DeleteFileEntry]
   type Description = java.lang.String
   type DifferenceList = js.Array[Difference]
   type Email = java.lang.String
@@ -2425,10 +2578,12 @@ object CodeCommitNs extends js.Object {
   type FileContent = nodeLib.Buffer | stdLib.Uint8Array | awsDashSdkLib.clientsCodecommitMod.Blob | java.lang.String
   type FileList = js.Array[File]
   type FileModeTypeEnum = awsDashSdkLib.awsDashSdkLibStrings.EXECUTABLE | awsDashSdkLib.awsDashSdkLibStrings.NORMAL | awsDashSdkLib.awsDashSdkLibStrings.SYMLINK | java.lang.String
+  type FilesMetadata = js.Array[FileMetadata]
   type FolderList = js.Array[Folder]
   type IsCommentDeleted = scala.Boolean
   type IsMergeable = scala.Boolean
   type IsMerged = scala.Boolean
+  type IsMove = scala.Boolean
   type KeepEmptyFolders = scala.Boolean
   type LastModifiedDate = stdLib.Date
   type Limit = scala.Double
@@ -2450,6 +2605,7 @@ object CodeCommitNs extends js.Object {
   type PullRequestIdList = js.Array[PullRequestId]
   type PullRequestStatusEnum = awsDashSdkLib.awsDashSdkLibStrings.OPEN | awsDashSdkLib.awsDashSdkLibStrings.CLOSED | java.lang.String
   type PullRequestTargetList = js.Array[PullRequestTarget]
+  type PutFileEntries = js.Array[PutFileEntry]
   type ReferenceName = java.lang.String
   type RelativeFileVersionEnum = awsDashSdkLib.awsDashSdkLibStrings.BEFORE | awsDashSdkLib.awsDashSdkLibStrings.AFTER | java.lang.String
   type RepositoryDescription = java.lang.String
@@ -2468,6 +2624,7 @@ object CodeCommitNs extends js.Object {
   type RepositoryTriggerNameList = js.Array[RepositoryTriggerName]
   type RepositoryTriggersConfigurationId = java.lang.String
   type RepositoryTriggersList = js.Array[RepositoryTrigger]
+  type SetFileModeEntries = js.Array[SetFileModeEntry]
   type SortByEnum = awsDashSdkLib.awsDashSdkLibStrings.repositoryName | awsDashSdkLib.awsDashSdkLibStrings.lastModifiedDate | java.lang.String
   type SubModuleList = js.Array[SubModule]
   type SymbolicLinkList = js.Array[SymbolicLink]

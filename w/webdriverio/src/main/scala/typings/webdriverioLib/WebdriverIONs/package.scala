@@ -19,7 +19,6 @@ package object WebdriverIONs {
     js.Any
   ]
   type LocationParam = webdriverioLib.webdriverioLibStrings.x | webdriverioLib.webdriverioLibStrings.y
-  type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   type SizeParam = webdriverioLib.webdriverioLibStrings.width | webdriverioLib.webdriverioLibStrings.height
   type TouchActions = java.lang.String | TouchAction | js.Array[TouchAction]
 }

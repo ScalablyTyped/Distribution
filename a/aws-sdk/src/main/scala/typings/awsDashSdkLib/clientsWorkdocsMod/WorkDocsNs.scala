@@ -279,7 +279,7 @@ object WorkDocsNs extends js.Object {
   
   trait CreateNotificationSubscriptionRequest extends js.Object {
     /**
-      * The endpoint to receive the notifications. If the protocol is HTTPS, the endpoint is a URL that begins with "https://".
+      * The endpoint to receive the notifications. If the protocol is HTTPS, the endpoint is a URL that begins with https.
       */
     var Endpoint: SubscriptionEndPointType
     /**

@@ -31,7 +31,7 @@ class Identity[A] protected () extends js.Object {
     * import { Identity } from 'fp-ts/lib/Identity'
     *
     * const a = new Identity(1)
-    * assert.deepEqual(a.orElse(() => new Identity(2)), a)
+    * assert.deepStrictEqual(a.orElse(() => new Identity(2)), a)
     *
     * @since 1.6.0
     */

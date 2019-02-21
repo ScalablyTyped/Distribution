@@ -60,6 +60,7 @@ object ^ extends js.Object {
   def drop[A](n: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def dropEnd[A](n: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def dropWhile[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
+  def elem[A](S: fpDashTsLib.libSetoidMod.Setoid[A]): js.Function2[/* a */ A, /* as */ fpDashTsLib.libArrayMod.Global.Array[A], scala.Boolean] = js.native
   def filter[A](as: fpDashTsLib.libArrayMod.Global.Array[A], predicate: fpDashTsLib.libFunctionMod.Predicate[A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   @JSName("filter")
   def filter_ABA[A, B /* <: A */](
@@ -117,6 +118,7 @@ object ^ extends js.Object {
   def isOutOfBound[A](i: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): scala.Boolean = js.native
   def last[A](as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def lefts[L, A](as: fpDashTsLib.libArrayMod.Global.Array[fpDashTsLib.libEitherMod.Either[L, A]]): fpDashTsLib.libArrayMod.Global.Array[L] = js.native
+  def lookup[A](i: scala.Double, as: fpDashTsLib.libArrayMod.Global.Array[A]): fpDashTsLib.libOptionMod.Option[A] = js.native
   def makeBy[A](n: scala.Double, f: js.Function1[/* i */ scala.Double, A]): fpDashTsLib.libArrayMod.Global.Array[A] = js.native
   def mapOption[A, B](
     as: fpDashTsLib.libArrayMod.Global.Array[A],

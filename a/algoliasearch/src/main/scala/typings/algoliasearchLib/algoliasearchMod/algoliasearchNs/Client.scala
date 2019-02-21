@@ -181,14 +181,14 @@ trait Client extends js.Object {
     * Query on multiple index
     * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
     */
-  def search(queries: js.Array[algoliasearchLib.Anon_IndexName]): js.Promise[MultiResponse] = js.native
+  def search[T](queries: js.Array[algoliasearchLib.Anon_IndexName]): js.Promise[MultiResponse[T]] = js.native
   /**
     * Query on multiple index
     * https://github.com/algolia/algoliasearch-client-js#multiple-queries---multiplequeries
     */
-  def search(
+  def search[T](
     queries: js.Array[algoliasearchLib.Anon_IndexName],
-    cb: js.Function2[/* err */ stdLib.Error, /* res */ MultiResponse, scala.Unit]
+    cb: js.Function2[/* err */ stdLib.Error, /* res */ MultiResponse[T], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Query for facet values of a specific facet

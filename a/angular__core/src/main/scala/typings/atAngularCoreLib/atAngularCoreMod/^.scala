@@ -97,9 +97,9 @@ object ^ extends js.Object {
     /* import warning: ImportType.apply Failed type conversion: typeof ViewEngine_ElementRef */ /* ElementRefToken */ js.Any, 
     atAngularCoreLib.srcLinkerViewUnderscoreContainerUnderscoreRefMod.ViewContainerRef
   ] = js.native
-  val ɵangular_packages_core_core_bi: java.lang.String = js.native
-  val ɵangular_packages_core_core_s: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
-  val ɵangular_packages_core_core_t: scala.Boolean = js.native
+  val ɵangular_packages_core_core_bj: java.lang.String = js.native
+  val ɵangular_packages_core_core_t: js.Array[atAngularCoreLib.srcDiProviderMod.StaticProvider] = js.native
+  val ɵangular_packages_core_core_u: scala.Boolean = js.native
   val ɵdefaultIterableDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersIterableUnderscoreDiffersMod.IterableDiffers = js.native
   val ɵdefaultKeyValueDiffers: atAngularCoreLib.srcChangeUnderscoreDetectionDiffersKeyvalueUnderscoreDiffersMod.KeyValueDiffers = js.native
   val ɵdefaultStyleSanitizer: atAngularCoreLib.srcSanitizationStyleUnderscoreSanitizerMod.StyleSanitizeFn = js.native
@@ -365,31 +365,97 @@ object ^ extends js.Object {
     parentClass: js.Any,
     additionalProcessing: js.Function3[/* target */ js.Any, /* name */ java.lang.String, /* repeated */ js.Any, scala.Unit]
   ): js.Any = js.native
-  def ɵangular_packages_core_core_bb(tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode, attrNameToInject: java.lang.String): java.lang.String | scala.Null = js.native
-  def ɵangular_packages_core_core_bc(): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
-  def ɵangular_packages_core_core_bd(): atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = js.native
-  def ɵangular_packages_core_core_be[T](): T = js.native
-  def ɵangular_packages_core_core_be[T](level: scala.Double): T = js.native
-  def ɵangular_packages_core_core_bj[T](objWithPropertyToExtract: T): java.lang.String = js.native
-  def ɵangular_packages_core_core_bl[T](view: atAngularCoreLib.srcRender3InterfacesViewMod.LView, index: scala.Double): T = js.native
-  def ɵangular_packages_core_core_bl[T](view: atAngularCoreLib.srcRender3InterfacesViewMod.TData, index: scala.Double): T = js.native
-  def ɵangular_packages_core_core_c[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T | scala.Null = js.native
-  def ɵangular_packages_core_core_c[T](
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: js.Array[
+      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+    ],
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: js.Array[
+      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+    ],
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: js.Array[
+      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
+    ],
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef],
+    outputs: js.Array[atAngularCoreLib.srcViewTypesMod.OutputDef]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: scala.Null,
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: scala.Null,
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_ba(
+    checkIndex: scala.Double,
+    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
+    matchedQueriesDsl: scala.Null,
+    childCount: scala.Double,
+    token: js.Any,
+    value: js.Any,
+    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
+    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef],
+    outputs: js.Array[atAngularCoreLib.srcViewTypesMod.OutputDef]
+  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_bc(tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode, attrNameToInject: java.lang.String): java.lang.String | scala.Null = js.native
+  def ɵangular_packages_core_core_bd(): atAngularCoreLib.srcRender3InterfacesViewMod.LView = js.native
+  def ɵangular_packages_core_core_be(): atAngularCoreLib.srcRender3InterfacesNodeMod.TNode = js.native
+  def ɵangular_packages_core_core_bf[T](): T = js.native
+  def ɵangular_packages_core_core_bf[T](level: scala.Double): T = js.native
+  def ɵangular_packages_core_core_bk[T](objWithPropertyToExtract: T): java.lang.String = js.native
+  def ɵangular_packages_core_core_bm[T](view: atAngularCoreLib.srcRender3InterfacesViewMod.LView, index: scala.Double): T = js.native
+  def ɵangular_packages_core_core_bm[T](view: atAngularCoreLib.srcRender3InterfacesViewMod.TData, index: scala.Double): T = js.native
+  def ɵangular_packages_core_core_d[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T | scala.Null = js.native
+  def ɵangular_packages_core_core_d[T](
     token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T],
     flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T | scala.Null = js.native
-  def ɵangular_packages_core_core_c[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T | scala.Null = js.native
-  def ɵangular_packages_core_core_c[T](
+  def ɵangular_packages_core_core_d[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T | scala.Null = js.native
+  def ɵangular_packages_core_core_d[T](
     token: atAngularCoreLib.srcTypeMod.Type[T],
     flags: atAngularCoreLib.srcDiInjectorUnderscoreCompatibilityMod.InjectFlags
   ): T | scala.Null = js.native
-  @JSName("ɵangular_packages_core_core_c")
-  def ɵangular_packages_core_core_c_TT[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
-  @JSName("ɵangular_packages_core_core_c")
-  def ɵangular_packages_core_core_c_TT[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
-  def ɵangular_packages_core_core_f(providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]): js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider] = js.native
-  def ɵangular_packages_core_core_g(): java.lang.String = js.native
-  def ɵangular_packages_core_core_h(
+  @JSName("ɵangular_packages_core_core_d")
+  def ɵangular_packages_core_core_d_TT[T](token: atAngularCoreLib.srcDiInjectionUnderscoreTokenMod.InjectionToken[T]): T = js.native
+  @JSName("ɵangular_packages_core_core_d")
+  def ɵangular_packages_core_core_d_TT[T](token: atAngularCoreLib.srcTypeMod.Type[T]): T = js.native
+  def ɵangular_packages_core_core_g(providers: js.Array[atAngularCoreLib.srcDiProviderMod.Provider]): js.Array[atAngularCoreLib.srcDiReflectiveUnderscoreProviderMod.ResolvedReflectiveProvider] = js.native
+  def ɵangular_packages_core_core_h(): java.lang.String = js.native
+  def ɵangular_packages_core_core_i(
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
       atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[js.Object]
@@ -397,7 +463,7 @@ object ^ extends js.Object {
     tNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     view: atAngularCoreLib.srcRender3InterfacesViewMod.LView
   ): atAngularCoreLib.srcLinkerElementUnderscoreRefMod.ElementRef[_] = js.native
-  def ɵangular_packages_core_core_i[T](
+  def ɵangular_packages_core_core_j[T](
     TemplateRefToken: org.scalablytyped.runtime.Instantiable0[atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[js.Object]],
     ElementRefToken: org.scalablytyped.runtime.Instantiable1[
       /* import warning: RewrittenClass.unapply cls $anonfun was tparam T */ /* nativeElement */ js.Any, 
@@ -406,91 +472,25 @@ object ^ extends js.Object {
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LView
   ): atAngularCoreLib.srcLinkerTemplateUnderscoreRefMod.TemplateRef[T] | scala.Null = js.native
-  def ɵangular_packages_core_core_j(
+  def ɵangular_packages_core_core_k(
     hostTNode: atAngularCoreLib.srcRender3InterfacesNodeMod.TNode,
     hostView: atAngularCoreLib.srcRender3InterfacesViewMod.LView,
     context: js.Any
   ): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectorUnderscoreRefMod.ChangeDetectorRef = js.native
-  def ɵangular_packages_core_core_k(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
-  def ɵangular_packages_core_core_p(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionMod.IterableDiffers = js.native
-  def ɵangular_packages_core_core_q(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionMod.KeyValueDiffers = js.native
-  def ɵangular_packages_core_core_r(): java.lang.String = js.native
-  def ɵangular_packages_core_core_r(locale: java.lang.String): java.lang.String = js.native
-  def ɵangular_packages_core_core_u(): scala.Boolean = js.native
-  def ɵangular_packages_core_core_v(signature: java.lang.String): js.Any = js.native
-  def ɵangular_packages_core_core_v(signature: java.lang.String, flags: js.Any): js.Any = js.native
-  def ɵangular_packages_core_core_w[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope): T = js.native
-  def ɵangular_packages_core_core_w[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope, returnValue: T): T = js.native
-  @JSName("ɵangular_packages_core_core_w")
-  def ɵangular_packages_core_core_w_TUnit[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope): scala.Unit = js.native
-  def ɵangular_packages_core_core_x(rangeType: java.lang.String, action: java.lang.String): atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Range = js.native
-  def ɵangular_packages_core_core_y(range: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Range): scala.Unit = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
-    ],
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
-    ],
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: js.Array[
-      js.Tuple2[java.lang.String | scala.Double, atAngularCoreLib.srcViewTypesMod.QueryValueType]
-    ],
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef],
-    outputs: js.Array[atAngularCoreLib.srcViewTypesMod.OutputDef]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: scala.Null,
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: scala.Null,
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
-  def ɵangular_packages_core_core_z(
-    checkIndex: scala.Double,
-    flags: atAngularCoreLib.srcViewTypesMod.NodeFlags,
-    matchedQueriesDsl: scala.Null,
-    childCount: scala.Double,
-    token: js.Any,
-    value: js.Any,
-    deps: js.Array[(js.Tuple2[atAngularCoreLib.srcViewTypesMod.DepFlags, _]) | _],
-    bindings: js.Array[atAngularCoreLib.srcViewTypesMod.BindingDef],
-    outputs: js.Array[atAngularCoreLib.srcViewTypesMod.OutputDef]
-  ): atAngularCoreLib.srcViewTypesMod.NodeDef = js.native
+  def ɵangular_packages_core_core_l(id: java.lang.String): atAngularCoreLib.srcLinkerNgUnderscoreModuleUnderscoreFactoryMod.NgModuleFactory[_] = js.native
+  def ɵangular_packages_core_core_q(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionMod.IterableDiffers = js.native
+  def ɵangular_packages_core_core_r(): atAngularCoreLib.srcChangeUnderscoreDetectionChangeUnderscoreDetectionMod.KeyValueDiffers = js.native
+  def ɵangular_packages_core_core_s(): java.lang.String = js.native
+  def ɵangular_packages_core_core_s(locale: java.lang.String): java.lang.String = js.native
+  def ɵangular_packages_core_core_v(): scala.Boolean = js.native
+  def ɵangular_packages_core_core_w(signature: java.lang.String): js.Any = js.native
+  def ɵangular_packages_core_core_w(signature: java.lang.String, flags: js.Any): js.Any = js.native
+  def ɵangular_packages_core_core_x[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope): T = js.native
+  def ɵangular_packages_core_core_x[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope, returnValue: T): T = js.native
+  @JSName("ɵangular_packages_core_core_x")
+  def ɵangular_packages_core_core_x_TUnit[T](scope: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Scope): scala.Unit = js.native
+  def ɵangular_packages_core_core_y(rangeType: java.lang.String, action: java.lang.String): atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Range = js.native
+  def ɵangular_packages_core_core_z(range: atAngularCoreLib.srcProfileWtfUnderscoreImplMod.Range): scala.Unit = js.native
   def ɵbind[T](value: T): T | atAngularCoreLib.srcRender3TokensMod.NO_CHANGE = js.native
   def ɵbindPlayerFactory[T](factoryFn: atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactoryBuildFn, value: T): atAngularCoreLib.srcRender3InterfacesPlayerMod.PlayerFactory = js.native
   def ɵbypassSanitizationTrustHtml(trustedHtml: java.lang.String): atAngularCoreLib.srcSanitizationBypassMod.TrustedHtmlString = js.native

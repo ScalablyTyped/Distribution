@@ -61,6 +61,41 @@ trait CodeCommit
     callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
   ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
   /**
+    * Creates a commit for a repository on the tip of a specified branch.
+    */
+  def createCommit(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createCommit(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Creates a commit for a repository on the tip of a specified branch.
+    */
+  def createCommit(params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def createCommit(
+    params: awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsCodecommitMod.CodeCommitNs.CreateCommitOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Creates a pull request in the specified repository.
     */
   def createPullRequest(): awsDashSdkLib.libRequestMod.Request[

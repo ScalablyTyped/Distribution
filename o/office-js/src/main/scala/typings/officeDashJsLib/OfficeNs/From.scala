@@ -34,11 +34,12 @@ trait From extends js.Object {
     *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
     * </table>
     * 
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object.
-    *                  The `value` property of the result is message's from value, as an EmailAddressDetails object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
+    *                             asyncResult, which is an Office.AsyncResult object.
+    *                  The `value` property of the result is the item's from value, as an EmailAddressDetails object.
     */
   def getAsync(): scala.Unit = js.native
-  def getAsync(callback: js.Function1[/* result */ AsyncResult[EmailAddressDetails], scala.Unit]): scala.Unit = js.native
+  def getAsync(callback: js.Function1[/* asyncResult */ AsyncResult[EmailAddressDetails], scala.Unit]): scala.Unit = js.native
   /**
     * Gets the from value of a message.
     * 
@@ -54,14 +55,16 @@ trait From extends js.Object {
     *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
     * </table>
     * 
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter, asyncResult, which is an Office.AsyncResult object.
-    *                  The `value` property of the result is message's from value, as an EmailAddressDetails object.
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter,
+    *                             asyncResult, which is an Office.AsyncResult object.
+    *                  The `value` property of the result is the item's from value, as an EmailAddressDetails object.
     */
+  def getAsync(options: AsyncContextOptions): scala.Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[EmailAddressDetails], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[EmailAddressDetails], scala.Unit]
   ): scala.Unit = js.native
 }
 

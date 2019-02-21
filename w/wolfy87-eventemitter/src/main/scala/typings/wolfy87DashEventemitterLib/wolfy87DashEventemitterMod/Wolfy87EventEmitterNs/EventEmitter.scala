@@ -141,26 +141,24 @@ trait EventEmitter extends js.Object {
     * If you pass the optional argument array then those arguments will be passed to every listener upon execution.
     * Because it uses `apply`, your array of arguments will be passed as if you wrote them out separately.
     * So they will not arrive within the array on the other side, they will be separate.
-    * You can also pass a regular expression to emit to all events that match it.
     *
     * @param {String|RegExp} event Name of the event to emit and execute listeners for.
     * @param {Array} [args] Optional array of arguments to be passed to each listener.
     * @return {EventEmitter} Current instance of EventEmitter for chaining.
     */
-  def emitEvent(event: java.lang.String, args: js.Any*): EventEmitter = js.native
+  def emitEvent(event: java.lang.String, args: js.Array[_]): EventEmitter = js.native
   /**
-    * Emits an event of your choice.
-    * When emitted, every listener attached to that event will be executed.
+    * Emits to all events that match the regular expression passed
+    * When emitted, every listener attached to the event(s) will be executed.
     * If you pass the optional argument array then those arguments will be passed to every listener upon execution.
     * Because it uses `apply`, your array of arguments will be passed as if you wrote them out separately.
     * So they will not arrive within the array on the other side, they will be separate.
-    * You can also pass a regular expression to emit to all events that match it.
     *
     * @param {String|RegExp} event Name of the event to emit and execute listeners for.
     * @param {Array} [args] Optional array of arguments to be passed to each listener.
     * @return {EventEmitter} Current instance of EventEmitter for chaining.
     */
-  def emitEvent(event: stdLib.RegExp, args: js.Any*): EventEmitter = js.native
+  def emitEvent(event: stdLib.RegExp, args: js.Array[_]): EventEmitter = js.native
   /**
     * Takes a list of listener objects and flattens it into a list of listener functions.
     *
@@ -411,25 +409,23 @@ trait EventEmitter extends js.Object {
     * If you pass the optional argument array then those arguments will be passed to every listener upon execution.
     * Because it uses `apply`, your array of arguments will be passed as if you wrote them out separately.
     * So they will not arrive within the array on the other side, they will be separate.
-    * You can also pass a regular expression to emit to all events that match it.
     *
     * @param {String|RegExp} event Name of the event to emit and execute listeners for.
     * @param {Array} [args] Optional array of arguments to be passed to each listener.
     * @return {EventEmitter} Current instance of EventEmitter for chaining.
     */
-  def trigger(event: java.lang.String, args: js.Any*): EventEmitter = js.native
+  def trigger(event: java.lang.String, args: js.Array[_]): EventEmitter = js.native
   /**
-    * Emits an event of your choice.
-    * When emitted, every listener attached to that event will be executed.
+    * Emits to all events that match the regular expression passed
+    * When emitted, every listener attached to the event(s) will be executed.
     * If you pass the optional argument array then those arguments will be passed to every listener upon execution.
     * Because it uses `apply`, your array of arguments will be passed as if you wrote them out separately.
     * So they will not arrive within the array on the other side, they will be separate.
-    * You can also pass a regular expression to emit to all events that match it.
     *
     * @param {String|RegExp} event Name of the event to emit and execute listeners for.
     * @param {Array} [args] Optional array of arguments to be passed to each listener.
     * @return {EventEmitter} Current instance of EventEmitter for chaining.
     */
-  def trigger(event: stdLib.RegExp, args: js.Any*): EventEmitter = js.native
+  def trigger(event: stdLib.RegExp, args: js.Array[_]): EventEmitter = js.native
 }
 

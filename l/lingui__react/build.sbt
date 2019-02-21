@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "lingui__react"
-version := "2.5-dt-20190213Z-a76739"
+version := "2.5-dt-20190213Z-46c9cb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "lingui__core" % "2.2-dt-20190213Z-a6f115",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-6f64c6",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

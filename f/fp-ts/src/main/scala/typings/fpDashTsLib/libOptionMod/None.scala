@@ -18,9 +18,9 @@ class None[A] protected () extends js.Object {
     * @example
     * import { Option, some, none } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(some(2).alt(some(4)), some(2))
+    * assert.deepStrictEqual(some(2).alt(some(4)), some(2))
     * const fa: Option<number> = none
-    * assert.deepEqual(fa.alt(some(4)), some(4))
+    * assert.deepStrictEqual(fa.alt(some(4)), some(4))
     */
   def alt(fa: Option[A]): Option[A] = js.native
   /**
@@ -30,8 +30,8 @@ class None[A] protected () extends js.Object {
     * @example
     * import { some, none } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(some(2).ap(some((x: number) => x + 1)), some(3))
-    * assert.deepEqual(none.ap(some((x: number) => x + 1)), none)
+    * assert.deepStrictEqual(some(2).ap(some((x: number) => x + 1)), some(3))
+    * assert.deepStrictEqual(none.ap(some((x: number) => x + 1)), none)
     */
   def ap[B](fab: Option[js.Function1[/* a */ A, B]]): Option[B] = js.native
   /**
@@ -40,8 +40,8 @@ class None[A] protected () extends js.Object {
     * @example
     * import { some, none } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(some((x: number) => x + 1).ap_(some(2)), some(3))
-    * assert.deepEqual(none.ap_(some(2)), none)
+    * assert.deepStrictEqual(some((x: number) => x + 1).ap_(some(2)), some(3))
+    * assert.deepStrictEqual(none.ap_(some(2)), none)
     */
   def `ap_`[B, C](`this`: Option[js.Function1[/* b */ B, C]], fb: Option[B]): Option[C] = js.native
   /**
@@ -101,7 +101,7 @@ class None[A] protected () extends js.Object {
     * @example
     * import { some } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(some(1).map(n => n * 2), some(2))
+    * assert.deepStrictEqual(some(1).map(n => n * 2), some(2))
     */
   def map[B](f: js.Function1[/* a */ A, B]): Option[B] = js.native
   /**
@@ -116,19 +116,19 @@ class None[A] protected () extends js.Object {
     *   }
     * }
     *
-    * assert.deepEqual(
+    * assert.deepStrictEqual(
     *   some<Foo>({ bar: { baz: 'quux' } })
     *     .mapNullable(foo => foo.bar)
     *     .mapNullable(bar => bar.baz),
     *   some('quux')
     * )
-    * assert.deepEqual(
+    * assert.deepStrictEqual(
     *   some<Foo>({ bar: {} })
     *     .mapNullable(foo => foo.bar)
     *     .mapNullable(bar => bar.baz),
     *   none
     * )
-    * assert.deepEqual(
+    * assert.deepStrictEqual(
     *   some<Foo>({})
     *     .mapNullable(foo => foo.bar)
     *     .mapNullable(bar => bar.baz),
@@ -142,7 +142,7 @@ class None[A] protected () extends js.Object {
     * @example
     * import { some } from 'fp-ts/lib/Option'
     *
-    * assert.deepEqual(some(1).orElse(() => some(2)), some(1))
+    * assert.deepStrictEqual(some(1).orElse(() => some(2)), some(1))
     *
     * @since 1.6.0
     */

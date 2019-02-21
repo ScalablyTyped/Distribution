@@ -10,6 +10,9 @@ object webdriverLibStrings {
   sealed trait ALL extends js.Object
   
   @js.native
+  sealed trait AsyncClient extends js.Object
+  
+  @js.native
   sealed trait CONFIG extends js.Object
   
   @js.native
@@ -89,6 +92,8 @@ object webdriverLibStrings {
   
   @scala.inline
   def ALL: ALL = "ALL".asInstanceOf[ALL]
+  @scala.inline
+  def AsyncClient: AsyncClient = "AsyncClient".asInstanceOf[AsyncClient]
   @scala.inline
   def CONFIG: CONFIG = "CONFIG".asInstanceOf[CONFIG]
   @scala.inline

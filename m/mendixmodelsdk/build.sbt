@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mendixmodelsdk"
-version := "4.19.0-9e0345"
+version := "4.19.0-02621f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,7 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261",
   "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-dd6701",
-  "org.scalablytyped" %%% "wolfy87-eventemitter" % "5.2.5-32e240")
+  "org.scalablytyped" %%% "wolfy87-eventemitter" % "5.2.6-8ec43e")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

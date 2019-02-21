@@ -120,6 +120,18 @@ trait AppointmentForm extends js.Object {
     * </table>
     */
   var requiredAttendees: js.Array[java.lang.String] | js.Array[EmailAddressDetails]
+  /**
+    * Provides access to the resources of an event. Returns an array of strings containing the resources required for the appointment.
+    *
+    * [Api set: Mailbox 1.0]
+    *
+    * @remarks
+    *
+    * <table>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadItem</td></tr>
+    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
+    * </table>
+    */
   var resources: js.Array[java.lang.String]
   /**
     * Gets or sets the date and time that the appointment is to begin.

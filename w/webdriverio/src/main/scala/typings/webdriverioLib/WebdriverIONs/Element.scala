@@ -49,6 +49,10 @@ trait Element extends js.Object {
   def selectByIndex(index: scala.Double): js.UndefOr[scala.Nothing] = js.native
   def selectByVisibleText(text: java.lang.String): js.UndefOr[scala.Nothing] = js.native
   def setValue(value: js.Any): js.UndefOr[scala.Nothing] = js.native
+  @JSName("shadow$")
+  def shadow$(): js.UndefOr[scala.Nothing] = js.native
+  @JSName("shadow$$")
+  def shadow$$(): js.UndefOr[scala.Nothing] = js.native
   def touchAction(action: TouchActions): js.UndefOr[scala.Nothing] = js.native
   def waitForDisplayed(): js.UndefOr[scala.Nothing] = js.native
   def waitForDisplayed(ms: scala.Double): js.UndefOr[scala.Nothing] = js.native

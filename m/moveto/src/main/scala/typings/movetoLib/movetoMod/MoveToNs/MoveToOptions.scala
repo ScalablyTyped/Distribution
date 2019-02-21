@@ -11,6 +11,10 @@ trait MoveToOptions extends js.Object {
     */
   var callback: js.UndefOr[callbackType] = js.undefined
   /**
+    * The container been computed and scrolled
+    */
+  var container: js.UndefOr[stdLib.Window | stdLib.HTMLElement] = js.undefined
+  /**
     * Duration of scrolling, in milliseconds
     */
   var duration: js.UndefOr[scala.Double] = js.undefined

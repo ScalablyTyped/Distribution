@@ -176,5 +176,12 @@ trait AppointmentRead extends ItemRead {
     * </table>
     */
   var start: stdLib.Date = js.native
+  def addHandlerAsync(eventType: EventType, handler: js.Any, options: js.Any): scala.Unit = js.native
+  def addHandlerAsync(
+    eventType: EventType,
+    handler: js.Any,
+    options: js.Any,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
 }
 

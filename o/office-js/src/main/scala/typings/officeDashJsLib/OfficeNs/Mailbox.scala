@@ -134,7 +134,7 @@ trait Mailbox extends js.Object {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* type */ EventType, scala.Unit],
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   def addHandlerAsync(
     eventType: EventType,
@@ -145,7 +145,7 @@ trait Mailbox extends js.Object {
     eventType: EventType,
     handler: js.Function1[/* type */ EventType, scala.Unit],
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Converts an item ID formatted for REST into EWS format.
@@ -382,7 +382,7 @@ trait Mailbox extends js.Object {
     * In compose mode you must call the saveAsync method to get an item identifier to pass to the getCallbackTokenAsync method. 
     * Your app must have ReadWriteItem permissions to call the saveAsync method.
     *
-    * [Api set: Mailbox 1.5]
+    * [Api set: Mailbox 1.3]
     *
     * @remarks
     *
@@ -391,13 +391,14 @@ trait Mailbox extends js.Object {
     *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose or Read</td></tr>
     * </table>
     *
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of type Office.AsyncResult. 
-    *                 The token is provided as a string in the `asyncResult.value` property.
+    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    *                 type Office.AsyncResult. The token is provided as a string in the `asyncResult.value` property.
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
+    * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
-  def getCallbackTokenAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
+  def getCallbackTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getCallbackTokenAsync(
-    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit],
     userContext: js.Any
   ): scala.Unit = js.native
   /**
@@ -443,7 +444,7 @@ trait Mailbox extends js.Object {
     */
   def getCallbackTokenAsync(
     options: AsyncContextOptions with officeDashJsLib.Anon_IsRest,
-    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]
   ): scala.Unit = js.native
   /**
     * Gets a token identifying the user and the Office Add-in.
@@ -468,9 +469,9 @@ trait Mailbox extends js.Object {
     *                 If there was an error, then the `asyncResult.error` and `asyncResult.diagnostics` properties may provide additional information.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.|
     */
-  def getUserIdentityTokenAsync(callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
+  def getUserIdentityTokenAsync(callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def getUserIdentityTokenAsync(
-    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit],
     userContext: js.Any
   ): scala.Unit = js.native
   /**
@@ -526,10 +527,10 @@ trait Mailbox extends js.Object {
     *                 If the result exceeds 1 MB in size, an error message is returned instead.
     * @param userContext - Optional. Any state data that is passed to the asynchronous method.
     */
-  def makeEwsRequestAsync(data: js.Any, callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
+  def makeEwsRequestAsync(data: js.Any, callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit]): scala.Unit = js.native
   def makeEwsRequestAsync(
     data: js.Any,
-    callback: js.Function1[/* result */ AsyncResult[java.lang.String], scala.Unit],
+    callback: js.Function1[/* asyncResult */ AsyncResult[java.lang.String], scala.Unit],
     userContext: js.Any
   ): scala.Unit = js.native
   /**
@@ -552,12 +553,15 @@ trait Mailbox extends js.Object {
     *                 type Office.AsyncResult.
     */
   def removeHandlerAsync(eventType: EventType): scala.Unit = js.native
-  def removeHandlerAsync(eventType: EventType, callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): scala.Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
     options: AsyncContextOptions,
-    callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
   ): scala.Unit = js.native
 }
 

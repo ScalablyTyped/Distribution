@@ -322,6 +322,7 @@ trait Anon_A extends js.Object {
     */
   def useLayoutEffect(effect: reactLib.reactMod.ReactNs.EffectCallback): scala.Unit = js.native
   def useLayoutEffect(effect: reactLib.reactMod.ReactNs.EffectCallback, deps: reactLib.reactMod.ReactNs.DependencyList): scala.Unit = js.native
+  def useMemo[T](factory: js.Function0[T]): T = js.native
   /**
     * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
     *
@@ -340,6 +341,7 @@ trait Anon_A extends js.Object {
     * @version 16.8.0
     * @see https://reactjs.org/docs/hooks-reference.html#usememo
     */
+  // allow undefined, but don't make it optional as that is very likely a mistake
   def useMemo[T](factory: js.Function0[T], deps: reactLib.reactMod.ReactNs.DependencyList): T = js.native
   /**
     * An alternative to `useState`.
@@ -404,6 +406,21 @@ trait Anon_A extends js.Object {
     */
   // TODO (TypeScript 3.0): <T extends unknown>
   def useRef[T](initialValue: T): reactLib.reactMod.ReactNs.RefObject[T] = js.native
+  // convenience overload for potentially undefined initialValue / call with 0 arguments
+  // has a default to stop it from defaulting to {} instead
+  /**
+    * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
+    * (`initialValue`). The returned object will persist for the full lifetime of the component.
+    *
+    * Note that `useRef()` is useful for more than the `ref` attribute. It’s handy for keeping any mutable
+    * value around similar to how you’d use instance fields in classes.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#useref
+    */
+  // TODO (TypeScript 3.0): <T extends unknown>
+  @JSName("useRef")
+  def useRef_TMutableRefObject[T](): reactLib.reactMod.ReactNs.MutableRefObject[js.UndefOr[T]] = js.native
   /**
     * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
     * (`initialValue`). The returned object will persist for the full lifetime of the component.
@@ -417,6 +434,17 @@ trait Anon_A extends js.Object {
   // TODO (TypeScript 3.0): <T extends unknown>
   @JSName("useRef")
   def useRef_TMutableRefObject[T](initialValue: T): reactLib.reactMod.ReactNs.MutableRefObject[T] = js.native
+  // convenience overload when first argument is ommitted
+  /**
+    * Returns a stateful value, and a function to update it.
+    *
+    * @version 16.8.0
+    * @see https://reactjs.org/docs/hooks-reference.html#usestate
+    */
+  def useState[S](): js.Tuple2[
+    js.UndefOr[S], 
+    reactLib.reactMod.ReactNs.Dispatch[reactLib.reactMod.ReactNs.SetStateAction[js.UndefOr[S]]]
+  ] = js.native
   /**
     * Returns a stateful value, and a function to update it.
     *

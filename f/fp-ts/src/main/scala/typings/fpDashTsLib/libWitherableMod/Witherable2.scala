@@ -23,7 +23,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
     ], 
     fpDashTsLib.libHKTMod.HKT[
       F, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS */](F: fpDashTsLib.libApplicativeMod.Applicative1[F]): js.Function2[
@@ -34,7 +34,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
     ], 
     fpDashTsLib.libHKTMod.Type[
       F, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS2 */](F: fpDashTsLib.libApplicativeMod.Applicative2[F]): js.Function2[
@@ -46,7 +46,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
     fpDashTsLib.libHKTMod.Type2[
       F, 
       _, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS3 */](F: fpDashTsLib.libApplicativeMod.Applicative3[F]): js.Function2[
@@ -59,7 +59,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
       F, 
       _, 
       _, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS2 */, FL](F: fpDashTsLib.libApplicativeMod.Applicative2C[F, FL]): js.Function2[
@@ -71,7 +71,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
     fpDashTsLib.libHKTMod.Type2[
       F, 
       FL, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wilt[F /* <: fpDashTsLib.libHKTMod.URIS3 */, FU, FL](F: fpDashTsLib.libApplicativeMod.Applicative3C[F, FU, FL]): js.Function2[
@@ -84,7 +84,7 @@ trait Witherable2[T /* <: fpDashTsLib.libHKTMod.URIS2 */]
       F, 
       FU, 
       FL, 
-      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.HKT[T, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
+      fpDashTsLib.libCompactableMod.Separated[fpDashTsLib.libHKTMod.Type2[T, _, _], fpDashTsLib.libHKTMod.Type2[T, _, _]]
     ]
   ] = js.native
   def wither[F](F: fpDashTsLib.libApplicativeMod.Applicative[F]): js.Function2[

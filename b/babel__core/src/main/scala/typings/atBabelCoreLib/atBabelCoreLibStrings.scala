@@ -151,6 +151,9 @@ object atBabelCoreLibStrings {
   sealed trait public extends js.Object
   
   @js.native
+  sealed trait root extends js.Object
+  
+  @js.native
   sealed trait script extends js.Object
   
   @js.native
@@ -167,6 +170,12 @@ object atBabelCoreLibStrings {
   
   @js.native
   sealed trait unambiguous extends js.Object
+  
+  @js.native
+  sealed trait upward extends js.Object
+  
+  @js.native
+  sealed trait `upward-optional` extends js.Object
   
   @js.native
   sealed trait value extends js.Object
@@ -283,6 +292,8 @@ object atBabelCoreLibStrings {
   @scala.inline
   def public: public = "public".asInstanceOf[public]
   @scala.inline
+  def root: root = "root".asInstanceOf[root]
+  @scala.inline
   def script: script = "script".asInstanceOf[script]
   @scala.inline
   def set: set = "set".asInstanceOf[set]
@@ -294,6 +305,10 @@ object atBabelCoreLibStrings {
   def typeof: typeof = "typeof".asInstanceOf[typeof]
   @scala.inline
   def unambiguous: unambiguous = "unambiguous".asInstanceOf[unambiguous]
+  @scala.inline
+  def upward: upward = "upward".asInstanceOf[upward]
+  @scala.inline
+  def `upward-optional`: `upward-optional` = "upward-optional".asInstanceOf[`upward-optional`]
   @scala.inline
   def value: value = "value".asInstanceOf[value]
   @scala.inline

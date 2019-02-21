@@ -7,6 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("apollo-server-express", "ApolloServer")
 @js.native
-class ApolloServer ()
-  extends apolloDashServerDashExpressLib.distApolloServerMod.ApolloServer
+class ApolloServer protected ()
+  extends apolloDashServerDashExpressLib.distApolloServerMod.ApolloServer {
+  def this(config: apolloDashServerDashExpressLib.distApolloServerMod.ApolloServerExpressConfig) = this()
+}
 

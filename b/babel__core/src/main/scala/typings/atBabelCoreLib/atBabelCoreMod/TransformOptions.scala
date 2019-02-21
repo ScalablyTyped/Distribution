@@ -41,6 +41,13 @@ trait TransformOptions extends js.Object {
     atBabelCoreLib.atBabelCoreLibNumbers.`true` | java.lang.String | js.Array[java.lang.String] | scala.Null
   ] = js.undefined
   /**
+    * Utilities may pass a caller object to identify themselves to Babel and
+    * pass capability-related flags for use by configs, presets and plugins.
+    *
+    * @see https://babeljs.io/docs/en/next/options#caller
+    */
+  var caller: js.UndefOr[TransformCaller] = js.undefined
+  /**
     * Enable code generation
     *
     * Default: `true`
@@ -84,7 +91,7 @@ trait TransformOptions extends js.Object {
     *
     * Default: env vars
     */
-  var envName: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  var envName: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A path to a `.babelrc` file to extend
     *
@@ -198,6 +205,16 @@ trait TransformOptions extends js.Object {
     * Default: `"."`
     */
   var root: js.UndefOr[java.lang.String | scala.Null] = js.undefined
+  /**
+    * This option, combined with the "root" value, defines how Babel chooses its project root.
+    * The different modes define different ways that Babel can process the "root" value to get
+    * the final project root.
+    *
+    * @see https://babeljs.io/docs/en/next/options#rootmode
+    */
+  var rootMode: js.UndefOr[
+    atBabelCoreLib.atBabelCoreLibStrings.root | atBabelCoreLib.atBabelCoreLibStrings.upward | atBabelCoreLib.atBabelCoreLibStrings.`upward-optional`
+  ] = js.undefined
   /**
     * An optional callback that controls whether a comment should be output or not. Called as `shouldPrintComment(commentContents)`. **NOTE**: This overrides the `comment` option when used
     *

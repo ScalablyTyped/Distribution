@@ -13,6 +13,9 @@ object i18nextDashBrowserDashLanguagedetectorLibStrings {
   sealed trait htmlTag extends js.Object
   
   @js.native
+  sealed trait languageDetector extends js.Object
+  
+  @js.native
   sealed trait localStorage extends js.Object
   
   @js.native
@@ -25,6 +28,8 @@ object i18nextDashBrowserDashLanguagedetectorLibStrings {
   def cookie: cookie = "cookie".asInstanceOf[cookie]
   @scala.inline
   def htmlTag: htmlTag = "htmlTag".asInstanceOf[htmlTag]
+  @scala.inline
+  def languageDetector: languageDetector = "languageDetector".asInstanceOf[languageDetector]
   @scala.inline
   def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   @scala.inline

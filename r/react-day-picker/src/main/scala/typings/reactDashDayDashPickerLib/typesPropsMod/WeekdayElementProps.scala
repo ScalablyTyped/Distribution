@@ -10,5 +10,7 @@ trait WeekdayElementProps extends js.Object {
   var locale: java.lang.String
   var localeUtils: reactDashDayDashPickerLib.typesUtilsMod.LocaleUtils
   var weekday: scala.Double
+  var weekdaysLong: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  var weekdaysShort: js.UndefOr[js.Array[java.lang.String]] = js.undefined
 }
 

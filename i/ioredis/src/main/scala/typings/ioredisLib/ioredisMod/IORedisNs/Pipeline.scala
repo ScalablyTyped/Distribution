@@ -175,6 +175,7 @@ trait Pipeline extends js.Object {
   def hlen(key: KeyType): Pipeline = js.native
   def hlen(key: KeyType, callback: js.Function2[/* err */ nodeLib.Error, /* res */ scala.Double, scala.Unit]): Pipeline = js.native
   def hmget(key: KeyType, fields: java.lang.String*): Pipeline = js.native
+  def hmset(key: KeyType, args: js.Any*): Pipeline = js.native
   def hmset(key: KeyType, data: js.Any): Pipeline = js.native
   def hmset(
     key: KeyType,
@@ -185,7 +186,6 @@ trait Pipeline extends js.Object {
       scala.Unit
     ]
   ): Pipeline = js.native
-  def hmset(key: KeyType, field: java.lang.String, value: js.Any, args: java.lang.String*): Pipeline = js.native
   def hscan(key: KeyType, cursor: scala.Double, args: js.Any*): Pipeline = js.native
   def hset(key: KeyType, field: java.lang.String, value: js.Any): Pipeline = js.native
   def hset(
@@ -340,8 +340,22 @@ trait Pipeline extends js.Object {
       scala.Unit
     ]
   ): Pipeline = js.native
-  def mset(key: KeyType, value: js.Any, args: java.lang.String*): Pipeline = js.native
-  def msetnx(key: KeyType, value: js.Any, args: java.lang.String*): Pipeline = js.native
+  def mset(args: js.Any*): Pipeline = js.native
+  def mset(data: js.Any): Pipeline = js.native
+  def mset(
+    data: js.Any,
+    callback: js.Function2[/* err */ nodeLib.Error, /* res */ java.lang.String, scala.Unit]
+  ): Pipeline = js.native
+  def msetnx(args: js.Any*): Pipeline = js.native
+  def msetnx(data: js.Any): Pipeline = js.native
+  def msetnx(
+    data: js.Any,
+    callback: js.Function2[
+      /* err */ nodeLib.Error, 
+      /* res */ ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`, 
+      scala.Unit
+    ]
+  ): Pipeline = js.native
   def multi(): Pipeline = js.native
   def multi(callback: js.Function2[/* err */ nodeLib.Error, /* res */ java.lang.String, scala.Unit]): Pipeline = js.native
   def `object`(subcommand: java.lang.String, args: js.Any*): Pipeline = js.native

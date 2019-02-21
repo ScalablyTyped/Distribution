@@ -1,6 +1,7 @@
 ```
 // Type definitions for camljs
-// Project: http://camljs.codeplex.com
-// Definitions by: Andrey Markeev <http://markeev.com>
+// Project: https://github.com/andrei-markeev/camljs
+// Definitions by: Andrey Markeev <https://github.com/andrei-markeev>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
+// TypeScript Version: 2.7
 ```

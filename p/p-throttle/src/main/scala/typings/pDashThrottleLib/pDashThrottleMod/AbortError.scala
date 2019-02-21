@@ -7,14 +7,16 @@ import scala.scalajs.js.annotation._
 
 @JSImport("p-throttle", "AbortError")
 @js.native
+/**
+	 * Abort pending execution. All unresolved promised are rejected with a `AbortError` error.
+	 */
 class AbortError ()
-  extends pDashThrottleLib.pDashThrottleMod.pThrottleNs.AbortError {
+  extends stdLib.Error {
   /* CompleteClass */
   override var message: java.lang.String = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
-  /* CompleteClass */
   @JSName("name")
-  override val name_AbortError: pDashThrottleLib.pDashThrottleLibStrings.AbortError = js.native
+  val name_AbortError: pDashThrottleLib.pDashThrottleLibStrings.AbortError = js.native
 }
 

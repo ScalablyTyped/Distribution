@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jenkins"
-version := "0.23-dt-20181119Z-e977e1"
+version := "0.23-dt-20190217Z-70292f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

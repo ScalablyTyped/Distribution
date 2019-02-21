@@ -40,9 +40,9 @@ class Left[L, A] protected () extends js.Object {
     * @example
     * import { right, left } from 'fp-ts/lib/Either'
     *
-    * assert.deepEqual(right(12).filterOrElse(n => n > 10, -1), right(12))
-    * assert.deepEqual(right(7).filterOrElse(n => n > 10, -1), left(-1))
-    * assert.deepEqual(left(12).filterOrElse(n => n > 10, -1), left(12))
+    * assert.deepStrictEqual(right(12).filterOrElse(n => n > 10, -1), right(12))
+    * assert.deepStrictEqual(right(7).filterOrElse(n => n > 10, -1), left(-1))
+    * assert.deepStrictEqual(left(12).filterOrElse(n => n > 10, -1), left(12))
     *
     * @since 1.3.0
     */
@@ -69,7 +69,7 @@ class Left[L, A] protected () extends js.Object {
     * @example
     * import { right } from 'fp-ts/lib/Either'
     *
-    * assert.deepEqual(right(1).orElse(() => right(2)), right(1))
+    * assert.deepStrictEqual(right(1).orElse(() => right(2)), right(1))
     *
     * @since 1.6.0
     */

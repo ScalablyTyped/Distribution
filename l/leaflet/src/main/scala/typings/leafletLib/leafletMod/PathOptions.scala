@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait PathOptions extends InteractiveLayerOptions {
   var className: js.UndefOr[java.lang.String] = js.undefined
   var color: js.UndefOr[java.lang.String] = js.undefined
-  var dashArray: js.UndefOr[java.lang.String] = js.undefined
+  var dashArray: js.UndefOr[java.lang.String | js.Array[scala.Double]] = js.undefined
   var dashOffset: js.UndefOr[java.lang.String] = js.undefined
   var fill: js.UndefOr[scala.Boolean] = js.undefined
   var fillColor: js.UndefOr[java.lang.String] = js.undefined

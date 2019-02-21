@@ -72,6 +72,7 @@ object functionNs extends js.Object {
   def constNull(): scala.Null = js.native
   def constTrue(): scala.Boolean = js.native
   def constUndefined(): js.UndefOr[scala.Nothing] = js.native
+  def constVoid(): scala.Unit = js.native
   def constant[A](a: A): fpDashTsLib.libFunctionMod.Lazy[A] = js.native
   def curried(f: js.Function, n: scala.Double, acc: fpDashTsLib.libArrayMod.Global.Array[_]): js.ThisFunction1[/* this */ js.Any, /* x */ js.Any, _] = js.native
   def curry[A, B, C](f: fpDashTsLib.libFunctionMod.Function2[A, B, C]): fpDashTsLib.libFunctionMod.Curried2[A, B, C] = js.native

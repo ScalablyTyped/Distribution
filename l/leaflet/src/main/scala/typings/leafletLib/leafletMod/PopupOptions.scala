@@ -13,6 +13,7 @@ trait PopupOptions extends DivOverlayOptions {
   var autoPanPaddingTopLeft: js.UndefOr[PointExpression] = js.undefined
   var closeButton: js.UndefOr[scala.Boolean] = js.undefined
   var closeOnClick: js.UndefOr[scala.Boolean] = js.undefined
+  var closeOnEscapeKey: js.UndefOr[scala.Boolean] = js.undefined
   var keepInView: js.UndefOr[scala.Boolean] = js.undefined
   var maxHeight: js.UndefOr[scala.Double] = js.undefined
   var maxWidth: js.UndefOr[scala.Double] = js.undefined

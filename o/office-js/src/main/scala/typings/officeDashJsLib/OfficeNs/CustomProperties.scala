@@ -77,8 +77,11 @@ trait CustomProperties extends js.Object {
     * </table>
     */
   def saveAsync(): scala.Unit = js.native
-  def saveAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
-  def saveAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit], asyncContext: js.Any): scala.Unit = js.native
+  def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def saveAsync(
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit],
+    asyncContext: js.Any
+  ): scala.Unit = js.native
   /**
     * Sets the specified property to the specified value.
     *

@@ -7,6 +7,15 @@ import scala.scalajs.js.annotation._
 
 object webdriverioLibStrings {
   @js.native
+  sealed trait BrowserAsync extends js.Object
+  
+  @js.native
+  sealed trait ElementAsync extends js.Object
+  
+  @js.native
+  sealed trait addCommand extends js.Object
+  
+  @js.native
   sealed trait height extends js.Object
   
   @js.native
@@ -14,6 +23,9 @@ object webdriverioLibStrings {
   
   @js.native
   sealed trait moveTo extends js.Object
+  
+  @js.native
+  sealed trait options extends js.Object
   
   @js.native
   sealed trait press extends js.Object
@@ -37,11 +49,19 @@ object webdriverioLibStrings {
   sealed trait y extends js.Object
   
   @scala.inline
+  def BrowserAsync: BrowserAsync = "BrowserAsync".asInstanceOf[BrowserAsync]
+  @scala.inline
+  def ElementAsync: ElementAsync = "ElementAsync".asInstanceOf[ElementAsync]
+  @scala.inline
+  def addCommand: addCommand = "addCommand".asInstanceOf[addCommand]
+  @scala.inline
   def height: height = "height".asInstanceOf[height]
   @scala.inline
   def longPress: longPress = "longPress".asInstanceOf[longPress]
   @scala.inline
   def moveTo: moveTo = "moveTo".asInstanceOf[moveTo]
+  @scala.inline
+  def options: options = "options".asInstanceOf[options]
   @scala.inline
   def press: press = "press".asInstanceOf[press]
   @scala.inline

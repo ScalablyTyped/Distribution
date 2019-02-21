@@ -178,6 +178,7 @@ trait Redis
   def hlen(key: KeyType): js.Promise[scala.Double] = js.native
   def hlen(key: KeyType, callback: js.Function2[/* err */ nodeLib.Error, /* res */ scala.Double, scala.Unit]): scala.Unit = js.native
   def hmget(key: KeyType, fields: java.lang.String*): js.Any = js.native
+  def hmset(key: KeyType, args: js.Any*): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
   def hmset(key: KeyType, data: js.Any): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
   def hmset(
     key: KeyType,
@@ -188,7 +189,6 @@ trait Redis
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def hmset(key: KeyType, field: java.lang.String, value: js.Any, args: java.lang.String*): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
   def hscan(key: KeyType, cursor: scala.Double, args: js.Any*): js.Any = js.native
   def hscanStream(key: KeyType): nodeLib.NodeJSNs.EventEmitter = js.native
   def hscanStream(key: KeyType, options: ScanStreamOption): nodeLib.NodeJSNs.EventEmitter = js.native
@@ -349,8 +349,22 @@ trait Redis
       scala.Unit
     ]
   ): scala.Unit = js.native
-  def mset(key: KeyType, value: js.Any, args: java.lang.String*): js.Any = js.native
-  def msetnx(key: KeyType, value: js.Any, args: java.lang.String*): js.Any = js.native
+  def mset(args: js.Any*): js.Any = js.native
+  def mset(data: js.Any): js.Promise[java.lang.String] = js.native
+  def mset(
+    data: js.Any,
+    callback: js.Function2[/* err */ nodeLib.Error, /* res */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
+  def msetnx(args: js.Any*): js.Any = js.native
+  def msetnx(data: js.Any): js.Promise[ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`] = js.native
+  def msetnx(
+    data: js.Any,
+    callback: js.Function2[
+      /* err */ nodeLib.Error, 
+      /* res */ ioredisLib.ioredisLibNumbers.`0` | ioredisLib.ioredisLibNumbers.`1`, 
+      scala.Unit
+    ]
+  ): scala.Unit = js.native
   def multi(): Pipeline = js.native
   def multi(commands: js.Array[js.Array[java.lang.String]]): Pipeline = js.native
   def multi(commands: js.Array[js.Array[java.lang.String]], options: MultiOptions): Pipeline = js.native

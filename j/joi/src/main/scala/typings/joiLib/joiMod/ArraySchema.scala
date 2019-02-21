@@ -12,7 +12,7 @@ trait ArraySchema extends AnySchema {
     * `schema` - the validation rules required to satisfy the assertion. If the `schema` includes references, they are resolved against
     * the array item being tested, not the value of the `ref` target.
     */
-  def assertItem(schema: SchemaLike): this.type = js.native
+  def has(schema: SchemaLike): this.type = js.native
   /**
     * List the types allowed for the array values.
     * type can be an array of values, or multiple values can be passed as individual arguments.

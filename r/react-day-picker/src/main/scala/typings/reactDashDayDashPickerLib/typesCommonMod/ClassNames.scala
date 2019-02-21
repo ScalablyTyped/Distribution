@@ -11,6 +11,7 @@ trait ClassNames extends js.Object {
   var container: java.lang.String
   var day: java.lang.String
   var disabled: java.lang.String
+  var footer: java.lang.String
   var interactionDisabled: java.lang.String
   var month: java.lang.String
   var months: java.lang.String
@@ -21,7 +22,9 @@ trait ClassNames extends js.Object {
   var outside: java.lang.String
   var selected: java.lang.String
   var today: java.lang.String
+  var todayButton: java.lang.String
   var week: java.lang.String
+  var weekNumber: java.lang.String
   var weekday: java.lang.String
   var weekdays: java.lang.String
   var weekdaysRow: java.lang.String

@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DayPickerInputProps extends js.Object {
-  var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.ClassNames] = js.undefined
+  var classNames: js.UndefOr[reactDashDayDashPickerLib.typesCommonMod.InputClassNames] = js.undefined
   var clickUnselectsDay: js.UndefOr[scala.Boolean] = js.undefined
   // Not sure React.ComponentClass<any> is the right type for _propTypes2.default.any
   var component: js.UndefOr[js.Any] = js.undefined
@@ -41,6 +41,7 @@ trait DayPickerInputProps extends js.Object {
     ]
   ] = js.undefined
   var onDayPickerHide: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onDayPickerShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onFocus: js.UndefOr[
     js.Function1[/* e */ reactLib.reactMod.ReactNs.FocusEvent[reactLib.HTMLDivElement], scala.Unit]
   ] = js.undefined

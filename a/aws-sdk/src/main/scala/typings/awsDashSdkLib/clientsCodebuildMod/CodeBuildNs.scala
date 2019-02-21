@@ -88,7 +88,7 @@ object CodeBuildNs extends js.Object {
       */
     var currentPhase: js.UndefOr[String] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -274,7 +274,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -649,7 +649,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. This is expressed either as the Amazon Resource Name (ARN) of the CMK or, if specified, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -758,11 +758,15 @@ object CodeBuildNs extends js.Object {
   
   trait ProjectCache extends js.Object {
     /**
-      * Information about the cache location:     NO_CACHE: This value is ignored.    S3: This is the S3 bucket name/prefix.  
+      * Information about the cache location:     NO_CACHE or LOCAL: This value is ignored.    S3: This is the S3 bucket name/prefix.  
       */
     var location: js.UndefOr[String] = js.undefined
     /**
-      * The type of cache used by the build project. Valid values include:    NO_CACHE: The build project does not use any cache.    S3: The build project reads and writes from and to S3.  
+      *  If you use a LOCAL cache, the local cache mode. You can use one or more local cache modes at the same time.     LOCAL_SOURCE_CACHE mode caches Git metadata for primary and secondary sources. After the cache is created, subsequent builds pull only the change between commits. This mode is a good choice for projects with a clean working directory and a source that is a large Git repository. If your project does not use a Git repository (GitHub, GitHub Enterprise, or Bitbucket) and you choose this option, then it is ignored.     LOCAL_DOCKER_LAYER_CACHE mode caches existing Docker layers. This mode is a good choice for projects that build or pull large Docker images. It can prevent the performance hit that would be caused by pulling large Docker images down from the network.      You can only use a Docker layer cache in the Linux enviornment.     The privileged flag must be set so that your project has the necessary Docker privileges.     You should consider the security implications before using a Docker layer cache.          LOCAL_CUSTOM_CACHE mode caches directories you specify in the buildspec file. This mode is a good choice if your build scenario does not match one that works well with one of the other three local cache modes. If you use a custom cache:     Only directories can be specified for caching. You cannot specify individual files.     Symlinks are used to reference cached directories.     Cached directories are linked to your build before it downloads its project sources. Cached items are overriden if a source item has the same name. Directories are specified using cache paths in the buildspec file.     
+      */
+    var modes: js.UndefOr[ProjectCacheModes] = js.undefined
+    /**
+      * The type of cache used by the build project. Valid values include:    NO_CACHE: The build project does not use any cache.    S3: The build project reads and writes from and to S3.    LOCAL: The build project stores a cache locally on a build host that is only available to that build host.  
       */
     var `type`: CacheType
   }
@@ -1493,7 +1497,7 @@ object CodeBuildNs extends js.Object {
       */
     var description: js.UndefOr[ProjectDescription] = js.undefined
     /**
-      * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts.   You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
+      * The replacement AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build output artifacts. You can specify either the Amazon Resource Name (ARN)of the CMK or, if available, the CMK's alias (using the format alias/alias-name ).
       */
     var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
     /**
@@ -1644,7 +1648,8 @@ object CodeBuildNs extends js.Object {
   type BuildPhases = js.Array[BuildPhase]
   type Builds = js.Array[Build]
   type BuildsNotDeleted = js.Array[BuildNotDeleted]
-  type CacheType = awsDashSdkLib.awsDashSdkLibStrings.NO_CACHE | awsDashSdkLib.awsDashSdkLibStrings.S3 | java.lang.String
+  type CacheMode = awsDashSdkLib.awsDashSdkLibStrings.LOCAL_DOCKER_LAYER_CACHE | awsDashSdkLib.awsDashSdkLibStrings.LOCAL_SOURCE_CACHE | awsDashSdkLib.awsDashSdkLibStrings.LOCAL_CUSTOM_CACHE | java.lang.String
+  type CacheType = awsDashSdkLib.awsDashSdkLibStrings.NO_CACHE | awsDashSdkLib.awsDashSdkLibStrings.S3 | awsDashSdkLib.awsDashSdkLibStrings.LOCAL | java.lang.String
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
   type ComputeType = awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_SMALL | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_MEDIUM | awsDashSdkLib.awsDashSdkLibStrings.BUILD_GENERAL1_LARGE | java.lang.String
   type CredentialProviderType = awsDashSdkLib.awsDashSdkLibStrings.SECRETS_MANAGER | java.lang.String
@@ -1666,6 +1671,7 @@ object CodeBuildNs extends js.Object {
   type PhaseContexts = js.Array[PhaseContext]
   type PlatformType = awsDashSdkLib.awsDashSdkLibStrings.DEBIAN | awsDashSdkLib.awsDashSdkLibStrings.AMAZON_LINUX | awsDashSdkLib.awsDashSdkLibStrings.UBUNTU | awsDashSdkLib.awsDashSdkLibStrings.WINDOWS_SERVER | java.lang.String
   type ProjectArtifactsList = js.Array[ProjectArtifacts]
+  type ProjectCacheModes = js.Array[CacheMode]
   type ProjectDescription = java.lang.String
   type ProjectName = java.lang.String
   type ProjectNames = js.Array[NonEmptyString]

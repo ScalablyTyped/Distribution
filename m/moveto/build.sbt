@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "moveto"
-version := "1.7-dt-20181002Z-53578b"
+version := "1.8-dt-20190213Z-5ea8cd"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

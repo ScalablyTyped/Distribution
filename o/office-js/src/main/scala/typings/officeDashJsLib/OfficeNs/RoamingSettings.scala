@@ -80,7 +80,7 @@ trait RoamingSettings extends js.Object {
     *                 type Office.AsyncResult.
     */
   def saveAsync(): scala.Unit = js.native
-  def saveAsync(callback: js.Function1[/* result */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
+  def saveAsync(callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]): scala.Unit = js.native
   /**
     * Sets or creates the specified setting.
     *

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "material-ui__lab"
-version := "3.0.0-alpha.30-4c912e"
+version := "3.0.0-alpha.30-1a9899"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,22 +11,22 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "debounce" % "1.2-dt-20181201Z-59a979",
   "org.scalablytyped" %%% "deepmerge" % "3.2.0-30afb2",
   "org.scalablytyped" %%% "dom-helpers" % "3.4-dt-20190212Z-6f3255",
-  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-9c5e2c",
+  "org.scalablytyped" %%% "hoist-non-react-statics" % "3.0-dt-20180806Z-b4051a",
   "org.scalablytyped" %%% "indefinite-observable" % "2.0.1-69abe5",
   "org.scalablytyped" %%% "is-plain-object" % "2.0.4-bf5a16",
   "org.scalablytyped" %%% "isobject" % "3.0.1-6cae53",
   "org.scalablytyped" %%% "jss" % "9.5-dt-20181017Z-e944bb",
   "org.scalablytyped" %%% "keycode" % "2.2.0-5d89d6",
-  "org.scalablytyped" %%% "material-ui__core" % "3.9.2-e21d12",
+  "org.scalablytyped" %%% "material-ui__core" % "3.9.2-45812c",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
   "org.scalablytyped" %%% "normalize-scroll-left" % "0.1.2-1fc312",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-be5ab9",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190212Z-6f64c6",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-ad7175",
-  "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20190206Z-c0e219",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-e9ba75",
-  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190212Z-4bf8bf",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-112de0",
+  "org.scalablytyped" %%% "react-event-listener" % "0.4-dt-20190206Z-e43721",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-fd7bac",
+  "org.scalablytyped" %%% "recompose" % "0.30-dt-20190212Z-6ce60e",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "symbol-observable" % "1.2.0-31ba1a",
   "org.scalablytyped" %%% "warning" % "3.0.0-dt-20180214Z-6ba63e")

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "frisby"
-version := "2.0-dt-20190212Z-c09f85"
+version := "2.0-dt-20190212Z-113444"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "jest" % "24.0-dt-20190216Z-3ab3ce",
   "org.scalablytyped" %%% "jest-diff" % "20.0-dt-20190212Z-2c6446",
-  "org.scalablytyped" %%% "joi" % "14.3-dt-20190131Z-6a437a",
+  "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-f16652",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-ae8c41",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")

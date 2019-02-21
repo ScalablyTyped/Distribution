@@ -46,6 +46,9 @@ object fpDashTsLibStrings {
   sealed trait Left extends js.Object
   
   @js.native
+  sealed trait Map extends js.Object
+  
+  @js.native
   sealed trait NonEmptyArray extends js.Object
   
   @js.native
@@ -123,6 +126,12 @@ object fpDashTsLibStrings {
   @js.native
   sealed trait getRecordSetoid extends js.Object
   
+  @js.native
+  sealed trait getStructMonoid extends js.Object
+  
+  @js.native
+  sealed trait getStructSemigroup extends js.Object
+  
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
@@ -149,6 +158,8 @@ object fpDashTsLibStrings {
   def IxIO: IxIO = "IxIO".asInstanceOf[IxIO]
   @scala.inline
   def Left: Left = "Left".asInstanceOf[Left]
+  @scala.inline
+  def Map: Map = "Map".asInstanceOf[Map]
   @scala.inline
   def NonEmptyArray: NonEmptyArray = "NonEmptyArray".asInstanceOf[NonEmptyArray]
   @scala.inline
@@ -201,5 +212,9 @@ object fpDashTsLibStrings {
   def getRecordSemigroup: getRecordSemigroup = "getRecordSemigroup".asInstanceOf[getRecordSemigroup]
   @scala.inline
   def getRecordSetoid: getRecordSetoid = "getRecordSetoid".asInstanceOf[getRecordSetoid]
+  @scala.inline
+  def getStructMonoid: getStructMonoid = "getStructMonoid".asInstanceOf[getStructMonoid]
+  @scala.inline
+  def getStructSemigroup: getStructSemigroup = "getStructSemigroup".asInstanceOf[getStructSemigroup]
 }
 
