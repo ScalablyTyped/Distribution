@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "hexo"
-version := "3.8-dt-20190202Z-00046c"
+version := "3.8-dt-20190221Z-00046c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

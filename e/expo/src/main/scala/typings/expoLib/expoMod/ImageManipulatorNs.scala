@@ -9,14 +9,11 @@ import scala.scalajs.js.annotation._
 @js.native
 object ImageManipulatorNs extends js.Object {
   trait Crop extends js.Object {
-    var height: scala.Double
-    var originX: scala.Double
-    var originY: scala.Double
-    var width: scala.Double
+    var crop: expoLib.Anon_HeightOriginX
   }
   
   trait Flip extends js.Object {
-    var flip: js.UndefOr[expoLib.Anon_Horizontal] = js.undefined
+    var flip: expoLib.Anon_Horizontal
   }
   
   trait ImageResult extends js.Object {

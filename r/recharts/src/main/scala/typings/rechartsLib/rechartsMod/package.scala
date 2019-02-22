@@ -17,7 +17,7 @@ package object rechartsMod {
   type CoordinatesGenerator = js.Function1[/* arg */ rechartsLib.Anon_Height, js.Array[scala.Double]]
   type DataKey = java.lang.String | scala.Double | (js.Function1[
     /* dataObject */ js.Any, 
-    scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null
+    java.lang.String | scala.Double | (js.Tuple2[scala.Double, scala.Double]) | scala.Null
   ])
   type DataPointFormatter = js.Function2[/* entry */ js.Any, /* dataKey */ DataKey, rechartsLib.Anon_ErrorVal]
   type IconType = rechartsLib.rechartsLibStrings.plainline | rechartsLib.rechartsLibStrings.line | rechartsLib.rechartsLibStrings.square | rechartsLib.rechartsLibStrings.rect | rechartsLib.rechartsLibStrings.circle | rechartsLib.rechartsLibStrings.cross | rechartsLib.rechartsLibStrings.diamond | rechartsLib.rechartsLibStrings.star | rechartsLib.rechartsLibStrings.triangle | rechartsLib.rechartsLibStrings.wye

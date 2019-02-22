@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "yeoman-generator"
-version := "3.0-dt-20190212Z-dd9ace"
+version := "3.1-dt-20190220Z-9ed0c3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

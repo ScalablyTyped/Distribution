@@ -39,6 +39,9 @@ package object mongooseMod {
     * If later in the query chain a method returns Query<T>, we will need to know type T.
     * So we save this type as the second type parameter in DocumentQuery. Since people have
     * been using Query<T>, we set it as an alias of DocumentQuery.
+    *
+    * Furthermore, Query<T> is used for function that has an option { rawResult: true }.
+    * for instance findOneAndUpdate.
     */
   type Query[T] = DocumentQuery[T, js.Any, js.Object]
 }

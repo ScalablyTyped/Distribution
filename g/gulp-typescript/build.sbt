@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-typescript"
-version := "5.0.0-4a2b50"
+version := "5.0.0-f92bf5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "source-map" % "0.7.3-cdf339",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "through2" % "2.0-dt-20180906Z-67b0d9",
-  "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4",
+  "org.scalablytyped" %%% "typescript" % "3.3.3333-7959f4",
   "org.scalablytyped" %%% "vinyl" % "2.0-dt-20181121Z-a58d53",
   "org.scalablytyped" %%% "vinyl-fs" % "2.4-dt-20190212Z-65237c")
 publishArtifact in packageDoc := false

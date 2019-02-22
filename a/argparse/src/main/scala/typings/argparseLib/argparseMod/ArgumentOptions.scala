@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait ArgumentOptions extends js.Object {
-  var action: js.UndefOr[java.lang.String] = js.undefined
+  var action: js.UndefOr[java.lang.String | argparseLib.Anon_Options] = js.undefined
    // tslint:disable-line:ban-types
   var choices: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var constant: js.UndefOr[js.Any] = js.undefined

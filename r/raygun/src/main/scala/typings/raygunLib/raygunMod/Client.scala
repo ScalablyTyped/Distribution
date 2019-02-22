@@ -5,8 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+@JSImport("raygun", "Client")
 @js.native
-trait Client extends js.Object {
+class Client () extends js.Object {
   def expressHandler(
     error: stdLib.Error,
     request: raygunLib.raygunMod.raygunNs.RaygunRequest,

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "pulumi__pulumi"
-version := "0.16.14-5ba3d8"
+version := "0.16.14-85448c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -35,8 +35,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-e7503c",
   "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20190212Z-b3c520",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "ts-node" % "7.0.1-17da5a",
-  "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4",
+  "org.scalablytyped" %%% "ts-node" % "7.0.1-5b24d8",
+  "org.scalablytyped" %%% "typescript" % "3.3.3333-7959f4",
   "org.scalablytyped" %%% "upath" % "1.1.0-95d721",
   "org.scalablytyped" %%% "yn" % "3.0-dt-20190117Z-ce47fc")
 publishArtifact in packageDoc := false

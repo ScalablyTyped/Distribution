@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cordova-sqlite-storage"
-version := "1.5-dt-20180214Z-783f0e"
+version := "1.5-dt-20190221Z-783f0e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

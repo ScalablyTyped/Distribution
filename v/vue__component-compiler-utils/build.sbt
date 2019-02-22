@@ -1,16 +1,16 @@
 organization := "org.scalablytyped"
 name := "vue__component-compiler-utils"
-version := "2.5.2-00d431"
+version := "2.6.0-d60a84"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-a737ef",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20181213Z-f01776",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190221Z-f01776",
   "org.scalablytyped" %%% "chalk" % "2.4.2-413387",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
-  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-3eced2",
+  "org.scalablytyped" %%% "consolidate" % "0.0-unknown-dt-20180712Z-bc244d",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",
   "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-0cb154",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-0003cc",

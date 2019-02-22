@@ -61,7 +61,7 @@ package object swanNs {
   type Scope = baiduDashAppLib.baiduDashAppLibStrings.scopeDOTuserInfo | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTuserLocation | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTaddress | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTinvoiceTitle | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTwerun | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTrecord | baiduDashAppLib.baiduDashAppLibStrings.scopeDOTwritePhotosAlbum
   type ScrollEvent = BuiltInEvent[baiduDashAppLib.baiduDashAppLibStrings.scroll, js.Object]
   type TapEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.tap]
-  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data | (js.ThisFunction0[/* this */ V, Data]), Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
+  type ThisTypedComponentOptionsWithRecordProps[V /* <: Component[Data, Props] */, Data, Methods, Props] = js.Object with (ComponentOptions[V, Data, Methods, Props]) with (stdLib.ThisType[CombinedInstance[V, Data, Methods, stdLib.Readonly[Props]]])
   // 界面-----动画
   type TimingFunction = baiduDashAppLib.baiduDashAppLibStrings.linear | baiduDashAppLib.baiduDashAppLibStrings.ease | baiduDashAppLib.baiduDashAppLibStrings.`ease-in` | baiduDashAppLib.baiduDashAppLibStrings.`ease-in-out` | baiduDashAppLib.baiduDashAppLibStrings.`ease-out` | baiduDashAppLib.baiduDashAppLibStrings.`step-start` | baiduDashAppLib.baiduDashAppLibStrings.`step-end`
   type TouchCancelEvent = TouchEvent[baiduDashAppLib.baiduDashAppLibStrings.touchcancel]

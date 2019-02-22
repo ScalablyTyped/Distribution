@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "firebase"
-version := "5.8.3-3035ca"
+version := "5.8.4-3c8ff4"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,7 +13,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "firebase__auth-types" % "0.5.2-63b267",
   "org.scalablytyped" %%% "firebase__database" % "0.3.12-169fe2",
   "org.scalablytyped" %%% "firebase__database-types" % "0.3.5-c71257",
-  "org.scalablytyped" %%% "firebase__firestore" % "1.0.3-a501dc",
+  "org.scalablytyped" %%% "firebase__firestore" % "1.0.4-a501dc",
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.2-45df06",
   "org.scalablytyped" %%% "firebase__functions" % "0.3.7-e3761c",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.2.3-1c156e",

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "rc-time-picker"
-version := "3.4-dt-20181102Z-745263"
+version := "3.4-dt-20190221Z-745263"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

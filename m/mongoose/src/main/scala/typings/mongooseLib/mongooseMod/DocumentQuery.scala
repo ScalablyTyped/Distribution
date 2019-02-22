@@ -172,7 +172,7 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
   def estimatedDocumentCount(options: js.Any, callback: js.Function2[/* err */ js.Any, /* count */ scala.Double, scala.Unit]): Query[scala.Double] with QueryHelpers = js.native
   /** Executes the query */
   def exec(): js.Promise[T] = js.native
-  def exec(callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): js.Promise[T] = js.native
+  def exec(callback: js.Function2[/* err */ NativeError, /* res */ T, scala.Unit]): js.Promise[T] = js.native
   def exec(operation: java.lang.String): js.Promise[T] = js.native
   def exec(operation: java.lang.String, callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]): js.Promise[T] = js.native
   def exec(operation: js.Function): js.Promise[T] = js.native
@@ -212,6 +212,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * Issues a mongodb findAndModify remove command.
     * Finds a matching document, removes it, passing the found document (if any) to the
     * callback. Executes immediately if callback is passed.
+    *
+    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than deprecated findAndModify().
+    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
     */
   def findOneAndRemove(): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(
@@ -222,6 +225,17 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     conditions: js.Any,
     callback: js.Function3[/* error */ js.Any, /* doc */ DocType | scala.Null, /* result */ js.Any, scala.Unit]
   ): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: js.Any, options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndRemove(
+    conditions: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions,
+    callback: js.Function3[
+      /* error */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null], 
+      /* result */ js.Any, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null]]) with QueryHelpers = js.native
   def findOneAndRemove(conditions: js.Any, options: QueryFindOneAndRemoveOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(
     conditions: js.Any,
@@ -232,6 +246,9 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     * Issues a mongodb findAndModify update command.
     * Finds a matching document, updates it according to the update arg, passing any options, and returns
     * the found document (if any) to the callback. The query executes immediately if callback is passed.
+    *
+    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than deprecated findAndModify().
+    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
     */
   def findOneAndUpdate(): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(callback: js.Function2[/* err */ js.Any, /* doc */ DocType | scala.Null, scala.Unit]): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
@@ -241,13 +258,41 @@ trait DocumentQuery[T, DocType /* <: Document */, QueryHelpers] extends mquery {
     update: js.Any,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType | scala.Null, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(query: js.Any, update: js.Any, options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(query: js.Any, update: js.Any, options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
+  def findOneAndUpdate(query: js.Any, update: js.Any, options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions): (DocumentQuery[DocType, DocType, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(
+    query: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null]]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: js.Any,
     update: js.Any,
     options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType]] with QueryHelpers = js.native
+  def findOneAndUpdate(
+    query: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[DocType | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(
+    query: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ DocType, /* res */ js.Any, scala.Unit]
-  ): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
+  ): (DocumentQuery[DocType, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(query: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[DocType | scala.Null, DocType, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     query: js.Any,

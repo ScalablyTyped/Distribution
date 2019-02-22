@@ -6,6 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options extends js.Object {
+  var TableComponent: js.UndefOr[
+    reactLib.reactMod.ReactNs.ComponentType[atStorybookAddonDashInfoLib.Anon_PropDefinitions]
+  ] = js.undefined
+  var components: js.UndefOr[
+    org.scalablytyped.runtime.StringDictionary[reactLib.reactMod.ReactNs.ComponentType[js.Object]]
+  ] = js.undefined
+  var excludedPropTypes: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var header: js.UndefOr[scala.Boolean] = js.undefined
   var `inline`: js.UndefOr[scala.Boolean] = js.undefined
   var marksyConf: js.UndefOr[js.Object] = js.undefined

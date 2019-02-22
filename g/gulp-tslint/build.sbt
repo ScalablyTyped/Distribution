@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gulp-tslint"
-version := "8.1.4-aed41b"
+version := "8.1.4-0f0cd7"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -27,9 +27,9 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-20da60",
   "org.scalablytyped" %%% "through" % "0.0-unknown-dt-20180214Z-5ced21",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",
-  "org.scalablytyped" %%% "tslint" % "5.12.1-603d46",
-  "org.scalablytyped" %%% "tsutils" % "2.29.0-e258d9",
-  "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4")
+  "org.scalablytyped" %%% "tslint" % "5.12.1-106cc7",
+  "org.scalablytyped" %%% "tsutils" % "2.29.0-ac1e3c",
+  "org.scalablytyped" %%% "typescript" % "3.3.3333-7959f4")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

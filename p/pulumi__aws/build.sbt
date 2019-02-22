@@ -1,13 +1,15 @@
 organization := "org.scalablytyped"
 name := "pulumi__aws"
-version := "v0.16.8-c3e571"
+version := "v0.16.8-fa9ed5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "arrify" % "1.0-dt-20180509Z-b54dd4",
-  "org.scalablytyped" %%% "aws-sdk" % "2.408.0-bcfb5f",
+  "org.scalablytyped" %%% "aws-sdk" % "2.408.0-e5e953",
+  "org.scalablytyped" %%% "base64-js" % "1.2-dt-20180214Z-2d42fd",
+  "org.scalablytyped" %%% "buffer" % "5.2.1-a2d1ed",
   "org.scalablytyped" %%% "buffer-from" % "1.1-dt-20180616Z-09dd60",
   "org.scalablytyped" %%% "builtin-modules" % "2.0-dt-20180214Z-64d288",
   "org.scalablytyped" %%% "diff" % "4.0-dt-20190129Z-a792d3",
@@ -36,15 +38,15 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "protobufjs__path" % "1.1.2-7cc4d0",
   "org.scalablytyped" %%% "protobufjs__pool" % "1.1.0-22c235",
   "org.scalablytyped" %%% "protobufjs__utf8" % "1.1.0-9c4942",
-  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.14-5ba3d8",
+  "org.scalablytyped" %%% "pulumi__pulumi" % "0.16.14-85448c",
   "org.scalablytyped" %%% "read-package-tree" % "5.2-dt-20180512Z-540b54",
   "org.scalablytyped" %%% "require-from-string" % "1.2-dt-20180214Z-e7503c",
   "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-2e96fd",
   "org.scalablytyped" %%% "sax" % "1.x-dt-20180616Z-d39187",
   "org.scalablytyped" %%% "source-map-support" % "0.4-dt-20190212Z-b3c520",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
-  "org.scalablytyped" %%% "ts-node" % "7.0.1-17da5a",
-  "org.scalablytyped" %%% "typescript" % "3.3.3-7959f4",
+  "org.scalablytyped" %%% "ts-node" % "7.0.1-5b24d8",
+  "org.scalablytyped" %%% "typescript" % "3.3.3333-7959f4",
   "org.scalablytyped" %%% "upath" % "1.1.0-95d721",
   "org.scalablytyped" %%% "uuid" % "3.4-dt-20180828Z-dd6701",
   "org.scalablytyped" %%% "xml2js" % "0.4-dt-20180606Z-a99964",

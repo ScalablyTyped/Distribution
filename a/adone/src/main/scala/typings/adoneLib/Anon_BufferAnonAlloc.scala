@@ -1,12 +1,11 @@
 package typings
-package toastrLib
+package adoneLib
 
 import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-@js.native
-trait Anon_Void extends js.Object {
-  def apply(): scala.Unit = js.native
+trait Anon_BufferAnonAlloc extends js.Object {
+  var Buffer: Anon_Alloc
 }
 

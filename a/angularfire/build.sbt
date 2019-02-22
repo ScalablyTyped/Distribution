@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angularfire"
-version := "0.8.2-dt-20181124Z-0df82f"
+version := "0.8.2-dt-20181124Z-95c079"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,14 +8,14 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "angular" % "1.6-dt-20190206Z-f970f0",
   "org.scalablytyped" %%% "core-js" % "2.5-dt-20180921Z-94697d",
-  "org.scalablytyped" %%% "firebase" % "5.8.3-3035ca",
+  "org.scalablytyped" %%% "firebase" % "5.8.4-3c8ff4",
   "org.scalablytyped" %%% "firebase__app" % "0.3.9-549c81",
   "org.scalablytyped" %%% "firebase__app-types" % "0.3.4-7c079d",
   "org.scalablytyped" %%% "firebase__auth" % "0.9.3-51726d",
   "org.scalablytyped" %%% "firebase__auth-types" % "0.5.2-63b267",
   "org.scalablytyped" %%% "firebase__database" % "0.3.12-169fe2",
   "org.scalablytyped" %%% "firebase__database-types" % "0.3.5-c71257",
-  "org.scalablytyped" %%% "firebase__firestore" % "1.0.3-a501dc",
+  "org.scalablytyped" %%% "firebase__firestore" % "1.0.4-a501dc",
   "org.scalablytyped" %%% "firebase__firestore-types" % "1.0.2-45df06",
   "org.scalablytyped" %%% "firebase__functions" % "0.3.7-e3761c",
   "org.scalablytyped" %%% "firebase__functions-types" % "0.2.3-1c156e",

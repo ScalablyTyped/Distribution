@@ -33,10 +33,10 @@ trait Toastr
   	 */
   var options: ToastrOptions = js.native
   /**
-  	 * Removes all toasts (without animation)
+  	 * Removes toasts (without animation)
   	 */
   @JSName("remove")
-  var remove_Original: Anon_Void = js.native
+  var remove_Original: Anon_Toast = js.native
   /**
   	 * Create a success toast
   	 */
@@ -159,9 +159,21 @@ trait Toastr
   	 */
   def info(message: java.lang.String, title: java.lang.String, overrides: ToastrOptions): jqueryLib.JQuery[stdLib.HTMLElement] = js.native
   /**
-  	 * Removes all toasts (without animation)
+  		 * Removes all toasts (without animation)
+  	 	 */
+  /**
+  	 * Removes toasts (without animation)
   	 */
   def remove(): scala.Unit = js.native
+  /**
+  		 * Removes specific toast (without animation)
+  		 *
+  		 * @param toast Toast to remove
+  	 	 */
+  /**
+  	 * Removes toasts (without animation)
+  	 */
+  def remove(toast: jqueryLib.JQuery[stdLib.HTMLElement]): scala.Unit = js.native
   /**
   	 * Register a callback to be called when a toast gets created or hidden.
   	 *

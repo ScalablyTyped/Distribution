@@ -14,6 +14,8 @@ import scala.scalajs.js.annotation._
   var exclusiveMaximum: js.UndefOr[scala.Boolean] = js.undefined
   var exclusiveMinimum: js.UndefOr[scala.Boolean] = js.undefined
   var format: js.UndefOr[java.lang.String] = js.undefined
+  @JSName("in")
+  var in_FormDataParameter: swaggerDashSchemaDashOfficialLib.swaggerDashSchemaDashOfficialLibStrings.formData
   var items: js.UndefOr[Schema | js.Array[Schema]] = js.undefined
   var maxItems: js.UndefOr[scala.Double] = js.undefined
   var maxLength: js.UndefOr[scala.Double] = js.undefined

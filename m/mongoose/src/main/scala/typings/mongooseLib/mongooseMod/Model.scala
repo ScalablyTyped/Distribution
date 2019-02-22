@@ -249,41 +249,62 @@ org.scalablytyped.runtime.Instantiable0[T]
     * findByIdAndDelete(id, ...) is equivalent to findByIdAndDelete({ _id: id }, ...).
     * Finds a matching document, removes it, passing the found document (if any) to the callback.
     * Executes immediately if callback is passed, else a Query object is returned.
+    *
+    * Note: same signatures as findByIdAndRemove
+    *
     * @param id value of _id to query by
     */
-  def findByIdAndDelete(): DocumentQuery[T | scala.Null, T, js.Object] = js.native
+  def findByIdAndDelete(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: java.lang.String): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: java.lang.String, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: java.lang.String, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: java.lang.String,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(id: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: js.Any, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: js.Any, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: js.Any,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(id: scala.Double): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndDelete(id: scala.Double, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndDelete(id: scala.Double, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndDelete(id: scala.Double, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndDelete(
     id: scala.Double,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   /**
     * Issue a mongodb findAndModify remove command by a document's _id field.
     * findByIdAndRemove(id, ...) is equivalent to findOneAndRemove({ _id: id }, ...).
     * Finds a matching document, removes it, passing the found document (if any) to the callback.
     * Executes immediately if callback is passed, else a Query object is returned.
+    *
+    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than deprecated findAndModify().
+    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
+    *
+    * Note: same signatures as findByIdAndDelete
+    *
     * @param id value of _id to query by
     */
   def findByIdAndRemove(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -292,31 +313,47 @@ org.scalablytyped.runtime.Instantiable0[T]
     id: java.lang.String,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: java.lang.String, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: java.lang.String, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: java.lang.String,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(id: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: js.Any, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: js.Any, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: js.Any,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(id: scala.Double): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndRemove(id: scala.Double, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndRemove(id: scala.Double, options: mongooseLib.Anon_Select): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndRemove(id: scala.Double, options: QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findByIdAndRemove(
     id: scala.Double,
-    options: mongooseLib.Anon_Select,
-    callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
-  ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+    options: QueryFindOneAndRemoveOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      (/* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]) | scala.Null | T, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   /**
     * Issues a mongodb findAndModify update command by a document's _id field. findByIdAndUpdate(id, ...)
     * is equivalent to findOneAndUpdate({ _id: id }, ...).
+    *
+    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than deprecated findAndModify().
+    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
+    *
     * @param id value of _id to query by
     */
   def findByIdAndUpdate(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -329,19 +366,49 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findByIdAndUpdate(
     id: java.lang.String,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: java.lang.String,
+    update: js.Any,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: java.lang.String,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: java.lang.String,
+    update: js.Any,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T], 
+      scala.Unit
+    ]
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: java.lang.String,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: java.lang.String,
+    update: js.Any,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: java.lang.String, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: java.lang.String, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: java.lang.String,
     update: js.Any,
-    options: ModelFindByIdAndUpdateOptions,
+    options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: js.Any, update: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -350,18 +417,40 @@ org.scalablytyped.runtime.Instantiable0[T]
     update: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: js.Any, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: js.Any,
     update: js.Any,
-    options: ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T], 
+      scala.Unit
+    ]
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: js.Any,
+    update: js.Any,
+    options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(id: scala.Double, update: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -370,18 +459,48 @@ org.scalablytyped.runtime.Instantiable0[T]
     update: js.Any,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: scala.Double, update: js.Any, options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: scala.Double,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindByIdAndUpdateOptions,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(id: scala.Double, update: js.Any, options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: scala.Double,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: scala.Double,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: scala.Double,
+    update: js.Any,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions,
+    callback: js.Function2[
+      /* err */ js.Any, 
+      /* res */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T], 
+      scala.Unit
+    ]
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findByIdAndUpdate(
+    id: scala.Double,
+    update: js.Any,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findByIdAndUpdate(id: scala.Double, update: js.Any, options: ModelFindByIdAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findByIdAndUpdate(id: scala.Double, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findByIdAndUpdate(
     id: scala.Double,
     update: js.Any,
-    options: ModelFindByIdAndUpdateOptions,
+    options: QueryFindOneAndUpdateOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -409,28 +528,59 @@ org.scalablytyped.runtime.Instantiable0[T]
     * Issues a mongodb findOneAndDelete command.
     * Finds a matching document, removes it, passing the found document (if any) to the
     * callback. Executes immediately if callback is passed.
+    *
+    * Note: same signatures as findOneAndRemove
+    *
     */
   def findOneAndDelete(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndDelete(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_MaxTimeMSProjection): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: js.Any, options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findOneAndDelete(
     conditions: js.Any,
-    options: mongooseLib.Anon_MaxTimeMSProjection,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndDelete(conditions: js.Any, options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndDelete(
+    conditions: js.Any,
+    options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
     * Issue a mongodb findAndModify remove command.
     * Finds a matching document, removes it, passing the found document (if any) to the callback.
     * Executes immediately if callback is passed else a Query object is returned.
+    *
+    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than deprecated findAndModify().
+    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
+    *
+    * Note: same signatures as findOneAndDelete
+    *
     */
   def findOneAndRemove(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(conditions: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndRemove(conditions: js.Any, callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndRemove(conditions: js.Any, options: mongooseLib.Anon_MaxTimeMS): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: js.Any, options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
   def findOneAndRemove(
     conditions: js.Any,
-    options: mongooseLib.Anon_MaxTimeMS,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndRemoveOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndRemove(conditions: js.Any, options: QueryFindOneAndRemoveOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndRemove(
+    conditions: js.Any,
+    options: QueryFindOneAndRemoveOptions,
     callback: js.Function2[/* err */ js.Any, /* res */ T | scala.Null, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**
@@ -438,6 +588,9 @@ org.scalablytyped.runtime.Instantiable0[T]
     * Finds a matching document, updates it according to the update arg, passing any options,
     * and returns the found document (if any) to the callback. The query executes immediately
     * if callback is passed else a Query object is returned.
+    *
+  +    * If mongoose option 'useFindAndModify': set to false it uses native findOneAndUpdate() rather than the deprecated findAndModify().
+  +    * https://mongoosejs.com/docs/api.html#mongoose_Mongoose-set
     */
   def findOneAndUpdate(): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(conditions: js.Any, update: js.Any): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
@@ -449,19 +602,51 @@ org.scalablytyped.runtime.Instantiable0[T]
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindOneAndUpdateOptions
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findOneAndUpdate(
+    conditions: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
-    options: mongooseLib.Anon_New with ModelFindOneAndUpdateOptions,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(
+    conditions: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_New with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T]] with QueryHelpers = js.native
+  def findOneAndUpdate(
+    conditions: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_RawResult with QueryFindOneAndUpdateOptions,
+    callback: js.Function3[
+      /* err */ js.Any, 
+      /* doc */ mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null], 
+      /* res */ js.Any, 
+      scala.Unit
+    ]
+  ): (Query[mongodbLib.mongodbMod.FindAndModifyWriteOpResultObject[T | scala.Null]]) with QueryHelpers = js.native
+  def findOneAndUpdate(
+    conditions: js.Any,
+    update: js.Any,
+    options: mongooseLib.Anon_NewTrue with QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[T, T, js.Object]) with QueryHelpers = js.native
-  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: ModelFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
+  def findOneAndUpdate(conditions: js.Any, update: js.Any, options: QueryFindOneAndUpdateOptions): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   def findOneAndUpdate(
     conditions: js.Any,
     update: js.Any,
-    options: ModelFindOneAndUpdateOptions,
+    options: QueryFindOneAndUpdateOptions,
     callback: js.Function3[/* err */ js.Any, /* doc */ T | scala.Null, /* res */ js.Any, scala.Unit]
   ): (DocumentQuery[T | scala.Null, T, js.Object]) with QueryHelpers = js.native
   /**

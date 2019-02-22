@@ -4,6 +4,7 @@
 // Definitions by: Andrew Schurman <https://github.com/arcticwaters>
 //                 Tomasz Łaziuk <https://github.com/tlaziuk>
 //                 Sebastian Silbermann <https://github.com/eps1lon>
+//                 Kannan Goundan <https://github.com/cakoose>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```
