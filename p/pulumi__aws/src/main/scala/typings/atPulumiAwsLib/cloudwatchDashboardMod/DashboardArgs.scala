@@ -9,10 +9,10 @@ trait DashboardArgs extends js.Object {
   /**
     * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
     */
-  val dashboardBody: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dashboardBody: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The name of the dashboard.
     */
-  val dashboardName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dashboardName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

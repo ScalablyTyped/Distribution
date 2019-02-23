@@ -165,10 +165,10 @@ object eventsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.Event = js.native
     }
@@ -188,10 +188,10 @@ object eventsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.eventsNs.v1beta1Ns.EventList = js.native
     }

@@ -47,15 +47,15 @@ object ec2clientvpnNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2clientvpnEndpointMod.Endpoint = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2clientvpnEndpointMod.Endpoint = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2clientvpnEndpointMod.EndpointState
     ): atPulumiAwsLib.ec2clientvpnEndpointMod.Endpoint = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2clientvpnEndpointMod.EndpointState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2clientvpnEndpointMod.Endpoint = js.native
@@ -72,15 +72,15 @@ object ec2clientvpnNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociation = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociationState
     ): atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2clientvpnNetworkAssociationMod.NetworkAssociation = js.native

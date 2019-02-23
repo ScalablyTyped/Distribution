@@ -9,10 +9,10 @@ trait SpotDatafeedSubscriptionArgs extends js.Object {
   /**
     * The Amazon S3 bucket in which to store the Spot instance data feed.
     */
-  val bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Path of folder inside bucket to place spot pricing data.
     */
-  val prefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val prefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

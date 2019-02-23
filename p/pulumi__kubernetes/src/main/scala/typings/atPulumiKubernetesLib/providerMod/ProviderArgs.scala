@@ -9,18 +9,18 @@ trait ProviderArgs extends js.Object {
   /**
     * If present, the name of the kubeconfig cluster to use.
     */
-  val cluster: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val cluster: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * If present, the name of the kubeconfig context to use.
     */
-  val context: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val context: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The contents of a kubeconfig file. If this is set, this config will be used instead of $KUBECONFIG.
     */
-  val kubeconfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val kubeconfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * If present, the namespace scope to use.
     */
-  val namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

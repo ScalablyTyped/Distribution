@@ -79,15 +79,15 @@ object ebsNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsSnapshotMod.SnapshotState
     ): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsSnapshotMod.SnapshotState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsSnapshotMod.Snapshot = js.native
@@ -104,15 +104,15 @@ object ebsNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopyState
     ): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopyState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsSnapshotCopyMod.SnapshotCopy = js.native
@@ -129,15 +129,15 @@ object ebsNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsVolumeMod.Volume = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ebsVolumeMod.Volume = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsVolumeMod.VolumeState
     ): atPulumiAwsLib.ebsVolumeMod.Volume = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ebsVolumeMod.VolumeState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ebsVolumeMod.Volume = js.native

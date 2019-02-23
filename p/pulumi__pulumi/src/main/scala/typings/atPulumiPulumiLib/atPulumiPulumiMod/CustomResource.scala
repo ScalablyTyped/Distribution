@@ -23,8 +23,8 @@ abstract class CustomResource protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(t: java.lang.String, name: java.lang.String) = this()
-  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs) = this()
-  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 
 /* static members */

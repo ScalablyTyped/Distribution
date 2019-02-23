@@ -7,9 +7,9 @@ import scala.scalajs.js.annotation._
 
 trait Anon_ArgsName extends js.Object {
   var args: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
-  var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

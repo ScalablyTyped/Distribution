@@ -12,7 +12,7 @@ object v2Ns extends js.Object {
     /**
       * The optional namespace to install chart resources into.
       */
-    var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     /**
       * Optional array of transformations to apply to resources that will be created by this chart prior to
       * creation. Allows customization of the chart behaviour without directly modifying the chart itself.
@@ -21,7 +21,7 @@ object v2Ns extends js.Object {
     /**
       * Overrides for chart values.
       */
-    var values: js.UndefOr[atPulumiPulumiLib.resourceMod.Inputs] = js.undefined
+    var values: js.UndefOr[atPulumiPulumiLib.outputMod.Inputs] = js.undefined
   }
   
   /**
@@ -78,20 +78,20 @@ object v2Ns extends js.Object {
       * The chart to deploy.  If [repo] is provided, this chart name is looked up in the given repository.  Else
       * this chart name must be a fully qualified chart URL or `repo/chartname`.
       */
-    var chart: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    var chart: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     /**
       * Additional options to customize the fetching of the Helm chart.
       */
-    var fetchOpts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.helmMod.FetchOpts]] = js.undefined
+    var fetchOpts: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.helmMod.FetchOpts]] = js.undefined
     /**
       * The repository containing the desired chart.  If not provided, [chart] must be a fully qualified chart URL
       * or repo/chartname.
       */
-    var repo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    var repo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     /**
       * The version of the chart to deploy. If not provided, the latest version will be deployed.
       */
-    var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+    var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   }
   
   trait LocalChartOpts extends BaseChartOpts {

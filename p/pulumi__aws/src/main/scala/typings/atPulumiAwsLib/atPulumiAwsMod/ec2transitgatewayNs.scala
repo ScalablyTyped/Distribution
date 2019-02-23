@@ -122,15 +122,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteMod.RouteState
     ): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteMod.RouteState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteMod.Route = js.native
@@ -147,15 +147,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTableState
     ): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTableState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTableMod.RouteTable = js.native
@@ -172,15 +172,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociationState
     ): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTableAssociationMod.RouteTableAssociation = js.native
@@ -197,15 +197,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagationState
     ): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayRouteTablePropagationMod.RouteTablePropagation = js.native
@@ -222,15 +222,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGatewayState
     ): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGatewayState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayTransitGatewayMod.TransitGateway = js.native
@@ -247,15 +247,15 @@ object ec2transitgatewayNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentState
     ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.ec2transitgatewayVpcAttachmentMod.VpcAttachment = js.native

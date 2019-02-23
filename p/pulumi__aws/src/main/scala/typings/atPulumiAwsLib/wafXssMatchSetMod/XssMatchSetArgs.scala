@@ -9,14 +9,14 @@ trait XssMatchSetArgs extends js.Object {
   /**
     * The name or description of the SizeConstraintSet.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The parts of web requests that you want to inspect for cross-site scripting attacks.
     */
   val xssMatchTuples: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchTextTransformationAnonDataTypeInput]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldToMatchTextTransformationAnonDataTypeInput]
       ]
     ]
   ] = js.undefined

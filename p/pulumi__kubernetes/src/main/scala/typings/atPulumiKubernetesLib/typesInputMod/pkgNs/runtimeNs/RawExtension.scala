@@ -47,6 +47,6 @@ trait RawExtension extends js.Object {
   /**
     * Raw is the underlying serialization of this object.
     */
-  var Raw: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var Raw: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

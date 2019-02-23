@@ -33,15 +33,15 @@ object Eip extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2EipMod.Eip = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ec2EipMod.Eip = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.ec2EipMod.EipState
   ): atPulumiAwsLib.ec2EipMod.Eip = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.ec2EipMod.EipState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ec2EipMod.Eip = js.native

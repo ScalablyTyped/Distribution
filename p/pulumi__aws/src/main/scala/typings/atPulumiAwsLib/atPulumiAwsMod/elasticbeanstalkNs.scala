@@ -92,15 +92,15 @@ object elasticbeanstalkNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkApplicationMod.ApplicationState
     ): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkApplicationMod.ApplicationState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkApplicationMod.Application = js.native
@@ -117,15 +117,15 @@ object elasticbeanstalkNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersionState
     ): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersionState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkApplicationVersionMod.ApplicationVersion = js.native
@@ -142,15 +142,15 @@ object elasticbeanstalkNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplateState
     ): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplateState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkConfigurationTemplateMod.ConfigurationTemplate = js.native
@@ -167,15 +167,15 @@ object elasticbeanstalkNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkEnvironmentMod.Environment = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.elasticbeanstalkEnvironmentMod.Environment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkEnvironmentMod.EnvironmentState
     ): atPulumiAwsLib.elasticbeanstalkEnvironmentMod.Environment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.elasticbeanstalkEnvironmentMod.EnvironmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.elasticbeanstalkEnvironmentMod.Environment = js.native

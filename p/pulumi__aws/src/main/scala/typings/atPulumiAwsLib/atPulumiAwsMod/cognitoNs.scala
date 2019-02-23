@@ -137,15 +137,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPoolState
     ): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPoolState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityPoolMod.IdentityPool = js.native
@@ -162,15 +162,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachmentState
     ): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachmentState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityPoolRoleAttachmentMod.IdentityPoolRoleAttachment = js.native
@@ -187,15 +187,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProviderState
     ): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProviderState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoIdentityProviderMod.IdentityProvider = js.native
@@ -212,15 +212,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoResourceServerMod.ResourceServerState
     ): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoResourceServerMod.ResourceServerState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoResourceServerMod.ResourceServer = js.native
@@ -237,15 +237,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserGroupMod.UserGroupState
     ): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserGroupMod.UserGroupState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserGroupMod.UserGroup = js.native
@@ -262,15 +262,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolMod.UserPoolState
     ): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolMod.UserPoolState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolMod.UserPool = js.native
@@ -287,15 +287,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClientState
     ): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClientState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolClientMod.UserPoolClient = js.native
@@ -312,15 +312,15 @@ object cognitoNs extends js.Object {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param state Any extra arguments used during the lookup.
       */
-    def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomain = js.native
+    def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomain = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomainState
     ): atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomain = js.native
     def get(
       name: java.lang.String,
-      id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+      id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
       state: atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomainState,
       opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
     ): atPulumiAwsLib.cognitoUserPoolDomainMod.UserPoolDomain = js.native

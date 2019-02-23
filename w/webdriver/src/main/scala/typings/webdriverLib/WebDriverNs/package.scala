@@ -12,5 +12,5 @@ package object WebDriverNs {
   type PageLoadingStrategy = webdriverLib.webdriverLibStrings.none | webdriverLib.webdriverLibStrings.eager | webdriverLib.webdriverLibStrings.normal
   type ProxyTypes = webdriverLib.webdriverLibStrings.pac | webdriverLib.webdriverLibStrings.noproxy | webdriverLib.webdriverLibStrings.autodetect | webdriverLib.webdriverLibStrings.system | webdriverLib.webdriverLibStrings.manual
   type Timeouts = webdriverLib.webdriverLibStrings.script | webdriverLib.webdriverLibStrings.pageLoad | webdriverLib.webdriverLibStrings.`implicit`
-  type WebDriverLogTypes = webdriverLib.webdriverLibStrings.trace | webdriverLib.webdriverLibStrings.debug | webdriverLib.webdriverLibStrings.info | webdriverLib.webdriverLibStrings.warn | webdriverLib.webdriverLibStrings.error
+  type WebDriverLogTypes = webdriverLib.webdriverLibStrings.trace | webdriverLib.webdriverLibStrings.debug | webdriverLib.webdriverLibStrings.info | webdriverLib.webdriverLibStrings.warn | webdriverLib.webdriverLibStrings.error | webdriverLib.webdriverLibStrings.silent
 }

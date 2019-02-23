@@ -9,10 +9,10 @@ trait ThingPrincipalAttachmentArgs extends js.Object {
   /**
     * The AWS IoT Certificate ARN or Amazon Cognito Identity ID.
     */
-  val principal: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
+  val principal: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
   /**
     * The name of the thing.
     */
-  val thing: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val thing: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

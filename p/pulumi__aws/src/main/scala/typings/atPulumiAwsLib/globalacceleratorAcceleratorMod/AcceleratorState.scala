@@ -10,27 +10,27 @@ trait AcceleratorState extends js.Object {
     * The attributes of the accelerator. Fields documented below.
     */
   val attributes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FlowLogsEnabledFlowLogsS3Bucket]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FlowLogsEnabledFlowLogsS3Bucket]
   ] = js.undefined
   /**
     * Indicates whether the accelerator is enabled. The value is true or false. The default value is true.
     */
-  val enabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val enabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * The value for the address type must be `IPV4`.
     */
-  val ipAddressType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val ipAddressType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * IP address set associated with the accelerator.
     */
   val ipSets: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_IpAddressesIpFamily]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_IpAddressesIpFamily]]
     ]
   ] = js.undefined
   /**
     * The name of the accelerator.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

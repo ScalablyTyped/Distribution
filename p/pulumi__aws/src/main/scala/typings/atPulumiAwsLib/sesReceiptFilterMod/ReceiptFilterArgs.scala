@@ -9,14 +9,14 @@ trait ReceiptFilterArgs extends js.Object {
   /**
     * The IP address or address range to filter, in CIDR notation
     */
-  val cidr: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val cidr: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The name of the filter
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Block or Allow
     */
-  val policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

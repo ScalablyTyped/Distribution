@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "seamless-immutable"
-version := "7.1-dt-20190115Z-0c7c7d"
+version := "7.1-dt-20190222Z-0c7c7d"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

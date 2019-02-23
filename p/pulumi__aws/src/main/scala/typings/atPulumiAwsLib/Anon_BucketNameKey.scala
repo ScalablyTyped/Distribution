@@ -6,8 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_BucketNameKey extends js.Object {
-  var bucketName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var roleArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var bucketName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var roleArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

@@ -19,7 +19,7 @@ object eventsNs extends js.Object {
       /**
         * What action was taken/failed regarding to the regarding object.
         */
-      var action: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var action: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -27,30 +27,30 @@ object eventsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      var deprecatedCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var deprecatedCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      var deprecatedFirstTimestamp: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var deprecatedFirstTimestamp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
-      var deprecatedLastTimestamp: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var deprecatedLastTimestamp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Deprecated field assuring backward compatibility with core.v1 Event type
         */
       var deprecatedSource: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EventSource]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.EventSource]
           ] = js.undefined
       /**
         * Required. Time when this Event was first observed.
         */
-      var eventTime: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var eventTime: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -58,51 +58,51 @@ object eventsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Optional. A human-readable description of the status of this operation. Maximal length of
         * the note is 1kB, but libraries should be prepared to handle values up to 64kB.
         */
-      var note: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var note: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Why the action was taken.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The object this Event is about. In most cases it's an Object reporting controller
         * implements. E.g. ReplicaSetController implements ReplicaSets and this event is emitted
         * because it acts on some changes in a ReplicaSet object.
         */
       var regarding: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
           ] = js.undefined
       /**
         * Optional secondary object for more complex actions. E.g. when regarding object triggers a
         * creation or deletion of related object.
         */
       var related: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.ObjectReference]
           ] = js.undefined
       /**
         * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
         */
-      var reportingController: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reportingController: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ID of the controller instance, e.g. `kubelet-xyzf`.
         */
-      var reportingInstance: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reportingInstance: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Data about the Event series this event represents or nil if it's a singleton Event.
         */
-      var series: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[EventSeries]] = js.undefined
+      var series: js.UndefOr[atPulumiPulumiLib.outputMod.Input[EventSeries]] = js.undefined
       /**
         * Type of this event (Normal, Warning), new types could be added in the future.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -116,12 +116,12 @@ object eventsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`eventsDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Event]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Event]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -129,14 +129,14 @@ object eventsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -148,15 +148,15 @@ object eventsNs extends js.Object {
       /**
         * Number of occurrences in this series up to the last heartbeat time
         */
-      var count: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var count: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * Time when last Event from the series was seen before last heartbeat.
         */
-      var lastObservedTime: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var lastObservedTime: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Information whether this series is ongoing or finished.
         */
-      var state: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var state: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     def isEvent(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.events.v1beta1.Event */ scala.Boolean = js.native

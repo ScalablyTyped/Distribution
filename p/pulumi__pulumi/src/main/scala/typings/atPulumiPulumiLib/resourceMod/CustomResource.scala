@@ -22,13 +22,13 @@ abstract class CustomResource protected () extends Resource {
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(t: java.lang.String, name: java.lang.String) = this()
-  def this(t: java.lang.String, name: java.lang.String, props: Inputs) = this()
-  def this(t: java.lang.String, name: java.lang.String, props: Inputs, opts: CustomResourceOptions) = this()
+  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(t: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: CustomResourceOptions) = this()
   /**
     * id is the provider-assigned unique ID for this managed resource.  It is set during
     * deployments and may be missing (undefined) during planning phases.
     */
-  val id: Output[ID] = js.native
+  val id: atPulumiPulumiLib.outputMod.Output[ID] = js.native
 }
 
 /* static members */

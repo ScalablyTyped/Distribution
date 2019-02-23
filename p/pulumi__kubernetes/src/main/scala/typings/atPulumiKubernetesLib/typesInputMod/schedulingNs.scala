@@ -23,7 +23,7 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
@@ -31,7 +31,7 @@ object schedulingNs extends js.Object {
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
         */
-      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * globalDefault specifies whether this PriorityClass should be considered as the default
         * priority for pods that do not have any priority class. Only one PriorityClass can be marked
@@ -39,7 +39,7 @@ object schedulingNs extends js.Object {
         * `globalDefault` field set to true, the smallest value of such global default
         * PriorityClasses will be used as the default priority.
         */
-      var globalDefault: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var globalDefault: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -47,20 +47,20 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
         */
-      var value: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var value: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -74,14 +74,14 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
       /**
         * items is the list of PriorityClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PriorityClass]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PriorityClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -89,14 +89,14 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -119,7 +119,7 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -127,7 +127,7 @@ object schedulingNs extends js.Object {
         * description is an arbitrary string that usually provides guidelines on when this priority
         * class should be used.
         */
-      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * globalDefault specifies whether this PriorityClass should be considered as the default
         * priority for pods that do not have any priority class. Only one PriorityClass can be marked
@@ -135,7 +135,7 @@ object schedulingNs extends js.Object {
         * `globalDefault` field set to true, the smallest value of such global default
         * PriorityClasses will be used as the default priority.
         */
-      var globalDefault: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var globalDefault: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -143,20 +143,20 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClass]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The value of this priority class. This is the actual priority that pods receive when they
         * have the name of this class in their pod spec.
         */
-      var value: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var value: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -170,14 +170,14 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`schedulingDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
       /**
         * items is the list of PriorityClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PriorityClass]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PriorityClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -185,14 +185,14 @@ object schedulingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PriorityClassList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     

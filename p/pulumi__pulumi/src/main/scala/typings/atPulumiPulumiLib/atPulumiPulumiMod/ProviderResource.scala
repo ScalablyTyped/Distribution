@@ -18,7 +18,7 @@ abstract class ProviderResource protected ()
     * @param opts A bag of options that control this provider's behavior.
     */
   def this(pkg: java.lang.String, name: java.lang.String) = this()
-  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs) = this()
-  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
+  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
 }
 

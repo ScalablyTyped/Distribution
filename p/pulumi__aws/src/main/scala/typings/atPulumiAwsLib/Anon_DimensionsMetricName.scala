@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 trait Anon_DimensionsMetricName extends js.Object {
   var dimensions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_NameValue]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameValue]]]
   ] = js.undefined
-  var metricName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var statistic: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var unit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  var metricName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var statistic: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var unit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

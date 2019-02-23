@@ -31,7 +31,7 @@ class Table protected ()
     */
   val billingMode: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[java.lang.String]] = js.native
   /**
-    * Describe a GSO for the table;
+    * Describe a GSI for the table;
     * subject to the normal limits on the number of GSIs, projected
     * attributes, etc.
     */
@@ -64,7 +64,7 @@ class Table protected ()
     */
   val readCapacity: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Double]] = js.native
   /**
-    * Encrypt at rest options.
+    * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
     */
   val serverSideEncryption: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_EnabledBoolean_204597847] = js.native
   /**
@@ -127,15 +127,15 @@ object Table extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.dynamodbTableMod.Table = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.dynamodbTableMod.Table = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.dynamodbTableMod.TableState
   ): atPulumiAwsLib.dynamodbTableMod.Table = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.dynamodbTableMod.TableState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.dynamodbTableMod.Table = js.native

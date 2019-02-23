@@ -9,14 +9,14 @@ trait BucketNotificationState extends js.Object {
   /**
     * The name of the bucket to put notification configuration.
     */
-  val bucket: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val bucket: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Used to configure notifications to a Lambda Function (documented below).
     */
   val lambdaFunctions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdLambdaFunctionArn]
       ]
     ]
   ] = js.undefined
@@ -24,9 +24,9 @@ trait BucketNotificationState extends js.Object {
     * The notification configuration to SQS Queue (documented below).
     */
   val queues: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdQueueArn]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdQueueArn]
       ]
     ]
   ] = js.undefined
@@ -34,9 +34,9 @@ trait BucketNotificationState extends js.Object {
     * The notification configuration to SNS Topic (documented below).
     */
   val topics: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdTopicArn]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EventsFilterPrefixFilterSuffixIdTopicArn]
       ]
     ]
   ] = js.undefined

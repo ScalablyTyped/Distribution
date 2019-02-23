@@ -11,7 +11,7 @@ trait StepFunctions
   @JSName("config")
   var config_StepFunctions: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.ClientConfiguration = js.native
   /**
-    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
   def createActivity(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
@@ -28,7 +28,7 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.
+    * Creates an activity. An activity is a task that you write in any programming language and host on any machine that has access to AWS Step Functions. Activities must poll Step Functions using the GetActivityTask API action and respond using SendTask* API actions. This function lets Step Functions know the existence of your activity and returns an identifier for use in a state machine and when polling from the activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
   def createActivity(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateActivityOutput, 
@@ -46,7 +46,7 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
   def createStateMachine(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 
@@ -63,7 +63,7 @@ trait StepFunctions
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.
+    * Creates a state machine. A state machine consists of a collection of states that can do work (Task states), determine to which states to transition next (Choice states), stop an execution with an error (Fail states), and so on. State machines are specified using a JSON-based, structured language.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. 
     */
   def createStateMachine(params: awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsStepfunctionsMod.StepFunctionsNs.CreateStateMachineOutput, 

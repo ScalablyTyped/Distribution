@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait Anon_AuthsBuildspecGitCloneDepth extends js.Object {
   var auths: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_ResourceType]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_ResourceType]]]
   ] = js.undefined
-  var buildspec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  var gitCloneDepth: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-  var insecureSsl: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-  var location: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  var reportBuildStatus: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-  var sourceIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var buildspec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var gitCloneDepth: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+  var insecureSsl: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  var location: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var reportBuildStatus: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  var sourceIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

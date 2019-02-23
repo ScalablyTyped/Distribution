@@ -9,10 +9,10 @@ trait VpnConnectionRouteState extends js.Object {
   /**
     * The CIDR block associated with the local subnet of the customer network.
     */
-  val destinationCidrBlock: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val destinationCidrBlock: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The ID of the VPN connection.
     */
-  val vpnConnectionId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val vpnConnectionId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

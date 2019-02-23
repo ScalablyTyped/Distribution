@@ -10,35 +10,35 @@ trait EventDestinationArgs extends js.Object {
     * CloudWatch destination for the events
     */
   val cloudwatchDestinations: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_DefaultValueDimensionNameValueSource]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_DefaultValueDimensionNameValueSource]
       ]
     ]
   ] = js.undefined
   /**
     * The name of the configuration set
     */
-  val configurationSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val configurationSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * If true, the event destination will be enabled
     */
-  val enabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val enabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Send the events to a kinesis firehose destination
     */
-  val kinesisDestination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_RoleArnStreamArnInput]] = js.undefined
+  val kinesisDestination: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_RoleArnStreamArnInput]] = js.undefined
   /**
     * A list of matching types. May be any of `"send"`, `"reject"`, `"bounce"`, `"complaint"`, `"delivery"`, `"open"`, `"click"`, or `"renderingFailure"`.
     */
-  val matchingTypes: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  val matchingTypes: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   /**
     * The name of the event destination
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Send the events to an SNS Topic destination
     */
-  val snsDestination: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TopicArnInput]] = js.undefined
+  val snsDestination: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TopicArnInput]] = js.undefined
 }
 

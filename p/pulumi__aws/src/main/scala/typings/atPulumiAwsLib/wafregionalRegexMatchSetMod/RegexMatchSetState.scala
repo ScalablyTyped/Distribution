@@ -9,15 +9,15 @@ trait RegexMatchSetState extends js.Object {
   /**
     * The name or description of the Regex Match Set.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The regular expression pattern that you want AWS WAF to search for in web requests,
     * the location in requests that you want AWS WAF to search, and other settings. See below.
     */
   val regexMatchTuples: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetIdTextTransformation]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldToMatchRegexPatternSetIdTextTransformation]
       ]
     ]
   ] = js.undefined

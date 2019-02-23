@@ -9,10 +9,10 @@ trait RolePolicyAttachmentState extends js.Object {
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
+  val policyArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
   /**
     * The role the policy should be applied to
     */
-  val role: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamRoleMod.Role]] = js.undefined
+  val role: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamRoleMod.Role]] = js.undefined
 }
 

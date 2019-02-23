@@ -22,7 +22,7 @@ object certificatesNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -33,38 +33,38 @@ object certificatesNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequest]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequest]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The certificate request itself and any additional information.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequestSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CertificateSigningRequestSpec]] = js.undefined
       /**
         * Derived information about the request.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequestStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CertificateSigningRequestStatus]] = js.undefined
     }
     
     trait CertificateSigningRequestCondition extends js.Object {
       /**
         * timestamp for the last update to this condition
         */
-      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * human readable message with details about the request state
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * brief reason for the request state
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * request approval state, currently Approved or Denied.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     trait CertificateSigningRequestList extends js.Object {
@@ -75,11 +75,11 @@ object certificatesNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`certificatesDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequest]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CertificateSigningRequest]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -87,10 +87,10 @@ object certificatesNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CertificateSigningRequestList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -103,47 +103,45 @@ object certificatesNs extends js.Object {
       /**
         * Extra information about the requesting user. See user.Info interface for details.
         */
-      var extra: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var extra: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Group information about the requesting user. See user.Info interface for details.
         */
       var groups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Base64-encoded PKCS#10 CSR data
         */
-      var request: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var request: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * UID information about the requesting user. See user.Info interface for details.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * allowedUsages specifies a set of usage contexts the key will be valid for. See:
         * https://tools.ietf.org/html/rfc5280#section-4.2.1.3
         *      https://tools.ietf.org/html/rfc5280#section-4.2.1.12
         */
       var usages: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Information about the requesting user. See user.Info interface for details.
         */
-      var username: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     trait CertificateSigningRequestStatus extends js.Object {
       /**
         * If request was approved, the controller will place the issued certificate here.
         */
-      var certificate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var certificate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Conditions applied to the request, such as approval or denial.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              js.Array[atPulumiPulumiLib.resourceMod.Input[CertificateSigningRequestCondition]]
-            ]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CertificateSigningRequestCondition]]]
           ] = js.undefined
     }
     

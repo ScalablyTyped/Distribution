@@ -9,20 +9,18 @@ trait ClusterArgs extends js.Object {
   /**
     * The type of HSM module in the cluster. Currently, only hsm1.medium is supported.
     */
-  val hsmType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val hsmType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The id of Cloud HSM v2 cluster backup to be restored.
     */
-  val sourceBackupIdentifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val sourceBackupIdentifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The IDs of subnets in which cluster will operate.
     */
-  val subnetIds: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  val subnetIds: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
-  ] = js.undefined
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 

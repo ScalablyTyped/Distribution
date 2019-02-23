@@ -62,10 +62,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.Job = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.Job = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.Job = js.native
     }
@@ -85,10 +85,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.JobList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.JobList = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v1Ns.JobList = js.native
     }
@@ -149,10 +149,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJob = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJob = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJob = js.native
     }
@@ -172,10 +172,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJobList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJobList = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v1beta1Ns.CronJobList = js.native
     }
@@ -236,10 +236,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJob = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJob = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJob = js.native
     }
@@ -259,10 +259,10 @@ object batchNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJobList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJobList = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.batchNs.v2alpha1Ns.CronJobList = js.native
     }

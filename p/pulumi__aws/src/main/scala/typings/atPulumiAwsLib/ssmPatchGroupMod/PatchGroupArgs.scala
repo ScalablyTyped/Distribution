@@ -9,10 +9,10 @@ trait PatchGroupArgs extends js.Object {
   /**
     * The ID of the patch baseline to register the patch group with.
     */
-  val baselineId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val baselineId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The name of the patch group that should be registered with the patch baseline.
     */
-  val patchGroup: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val patchGroup: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

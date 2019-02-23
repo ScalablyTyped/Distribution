@@ -9,10 +9,10 @@ trait QueryLogState extends js.Object {
   /**
     * CloudWatch log group ARN to send query logs.
     */
-  val cloudwatchLogGroupArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val cloudwatchLogGroupArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Route53 hosted zone ID to enable query logs.
     */
-  val zoneId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val zoneId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

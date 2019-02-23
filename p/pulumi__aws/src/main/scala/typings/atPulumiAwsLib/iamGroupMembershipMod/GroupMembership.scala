@@ -44,15 +44,15 @@ object GroupMembership extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.iamGroupMembershipMod.GroupMembershipState
   ): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.iamGroupMembershipMod.GroupMembershipState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.iamGroupMembershipMod.GroupMembership = js.native

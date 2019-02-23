@@ -9,22 +9,20 @@ trait LoadBalancerPolicyState extends js.Object {
   /**
     * The load balancer on which the policy is defined.
     */
-  val loadBalancerName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val loadBalancerName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Policy attribute to apply to the policy.
     */
   val policyAttributes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValueInput]]
-    ]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValueInput]]]
   ] = js.undefined
   /**
     * The name of the load balancer policy.
     */
-  val policyName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val policyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The policy type.
     */
-  val policyTypeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val policyTypeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

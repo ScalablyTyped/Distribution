@@ -9,10 +9,10 @@ trait SecurityConfigurationArgs extends js.Object {
   /**
     * Configuration block containing encryption configuration. Detailed below.
     */
-  val encryptionConfiguration: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CloudwatchEncryptionJobBookmarksEncryption]
+  val encryptionConfiguration: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CloudwatchEncryptionJobBookmarksEncryption]
   /**
     * Name of the security configuration.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

@@ -14,6 +14,7 @@ trait IPostgresInterval extends js.Object {
   var seconds: js.UndefOr[scala.Double] = js.undefined
   var years: js.UndefOr[scala.Double] = js.undefined
   def toISO(): java.lang.String
+  def toISOString(): java.lang.String
   def toPostgres(): java.lang.String
 }
 

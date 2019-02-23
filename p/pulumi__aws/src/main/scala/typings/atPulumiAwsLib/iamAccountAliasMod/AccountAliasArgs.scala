@@ -9,6 +9,6 @@ trait AccountAliasArgs extends js.Object {
   /**
     * The account alias
     */
-  val accountAlias: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val accountAlias: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

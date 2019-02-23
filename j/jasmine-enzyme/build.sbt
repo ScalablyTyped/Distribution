@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jasmine-enzyme"
-version := "3.6-dt-20190212Z-7dd33c"
+version := "3.6-dt-20190219Z-7dd33c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

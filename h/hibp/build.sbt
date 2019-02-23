@@ -1,15 +1,15 @@
 organization := "org.scalablytyped"
 name := "hibp"
-version := "7.5.0-d94e3a"
+version := "7.5.0-416e73"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "axios" % "0.18.0-77813d",
-  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-6b1c92",
+  "org.scalablytyped" %%% "axios" % "0.18.0-40b744",
+  "org.scalablytyped" %%% "is-buffer" % "2.0-dt-20181210Z-aaf367",
   "org.scalablytyped" %%% "jssha" % "2.0-dt-20181217Z-f4cc1f",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

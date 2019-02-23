@@ -24,7 +24,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -33,20 +33,20 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
         * the namespace you made the request against.  If empty, it is defaulted.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -57,11 +57,11 @@ object authorizationNs extends js.Object {
       /**
         * Path is the URL path of the request
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Verb is the standard HTTP verb
         */
-      var verb: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var verb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -73,13 +73,13 @@ object authorizationNs extends js.Object {
         * allowed, but only as the full, final step in the path.  "*" means all.
         */
       var nonResourceURLs: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch,
         * head, options.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var verbs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -90,36 +90,36 @@ object authorizationNs extends js.Object {
       /**
         * Group is the API Group of the Resource.  "*" means all.
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Name is the name of the resource being requested for a "get" or deleted for a "delete". ""
         * (empty) means all.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace is the namespace of the action being requested.  Currently, there is no
         * distinction between no namespace and all namespaces "" (empty) is defaulted for
         * LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means
         * "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Resource is one of the existing resource types.  "*" means all.
         */
-      var resource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var resource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Subresource is one of the existing resource types.  "" means none.
         */
-      var subresource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var subresource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete,
         * proxy.  "*" means all.
         */
-      var verb: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var verb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Version is the API Version of the Resource.  "*" means all.
         */
-      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -133,14 +133,14 @@ object authorizationNs extends js.Object {
         * group will be allowed.  "*" means all.
         */
       var apiGroups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.  "*" means all.
         */
       var resourceNames: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  "*" means all in the specified
@@ -149,13 +149,13 @@ object authorizationNs extends js.Object {
         * apiGroups.
         */
       var resources: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update,
         * delete, proxy.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var verbs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -171,7 +171,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -180,19 +180,19 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SelfSubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SelfSubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -203,11 +203,11 @@ object authorizationNs extends js.Object {
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NonResourceAttributes]] = js.undefined
+      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NonResourceAttributes]] = js.undefined
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceAttributes]] = js.undefined
+      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceAttributes]] = js.undefined
     }
     
     /**
@@ -228,7 +228,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -237,26 +237,26 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SelfSubjectRulesReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SelfSubjectRulesReviewSpec]
       /**
         * Status is filled in by the server and indicates the set of actions a user can perform.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectRulesReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectRulesReviewStatus]] = js.undefined
     }
     
     trait SelfSubjectRulesReviewSpec extends js.Object {
       /**
         * Namespace to evaluate rules for. Required.
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -270,7 +270,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -279,19 +279,19 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -303,30 +303,30 @@ object authorizationNs extends js.Object {
         * Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is
         * input to the authorizer it needs a reflection here.
         */
-      var extra: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var extra: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Groups is the groups you're testing for.
         */
       var groups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NonResourceAttributes]] = js.undefined
+      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NonResourceAttributes]] = js.undefined
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceAttributes]] = js.undefined
+      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceAttributes]] = js.undefined
       /**
         * UID information about the requesting user.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User is the user you're testing for. If you specify "User" but not "Groups", then is it
         * interpreted as "What if User were not a member of any groups
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -336,24 +336,24 @@ object authorizationNs extends js.Object {
       /**
         * Allowed is required. True if the action would be allowed, false otherwise.
         */
-      var allowed: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var allowed: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Denied is optional. True if the action would be denied, otherwise false. If both allowed is
         * false and denied is false, then the authorizer has no opinion on whether to authorize the
         * action. Denied may not be true if Allowed is true.
         */
-      var denied: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var denied: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * EvaluationError is an indication that some error occurred during the authorization check.
         * It is entirely possible to get an error and be able to continue determine authorization
         * status in spite of it. For instance, RBAC can be missing a role, but enough roles are still
         * present and bound to reason about the request.
         */
-      var evaluationError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var evaluationError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Reason is optional.  It indicates why a request was allowed or denied.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -368,23 +368,23 @@ object authorizationNs extends js.Object {
         * rule evaluation, such as an authorizer that doesn't support rule evaluation, and that
         * ResourceRules and/or NonResourceRules may be incomplete.
         */
-      var evaluationError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var evaluationError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Incomplete is true when the rules returned by this call are incomplete. This is most
         * commonly encountered when an authorizer, such as an external authorizer, doesn't support
         * rules evaluation.
         */
-      var incomplete: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var incomplete: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * NonResourceRules is the list of actions the subject is allowed to perform on non-resources.
         * The list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NonResourceRule]]]
+      var nonResourceRules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NonResourceRule]]]
       /**
         * ResourceRules is the list of actions the subject is allowed to perform on resources. The
         * list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceRule]]]
+      var resourceRules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ResourceRule]]]
     }
     
     def isLocalSubjectAccessReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authorization.v1.LocalSubjectAccessReview */ scala.Boolean = js.native
@@ -409,7 +409,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -420,20 +420,20 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LocalSubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.  spec.namespace must be equal to
         * the namespace you made the request against.  If empty, it is defaulted.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -444,11 +444,11 @@ object authorizationNs extends js.Object {
       /**
         * Path is the URL path of the request
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Verb is the standard HTTP verb
         */
-      var verb: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var verb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -460,13 +460,13 @@ object authorizationNs extends js.Object {
         * allowed, but only as the full, final step in the path.  "*" means all.
         */
       var nonResourceURLs: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Verb is a list of kubernetes non-resource API verbs, like: get, post, put, delete, patch,
         * head, options.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var verbs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -477,36 +477,36 @@ object authorizationNs extends js.Object {
       /**
         * Group is the API Group of the Resource.  "*" means all.
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Name is the name of the resource being requested for a "get" or deleted for a "delete". ""
         * (empty) means all.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace is the namespace of the action being requested.  Currently, there is no
         * distinction between no namespace and all namespaces "" (empty) is defaulted for
         * LocalSubjectAccessReviews "" (empty) is empty for cluster-scoped resources "" (empty) means
         * "all" for namespace scoped resources from a SubjectAccessReview or SelfSubjectAccessReview
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Resource is one of the existing resource types.  "*" means all.
         */
-      var resource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var resource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Subresource is one of the existing resource types.  "" means none.
         */
-      var subresource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var subresource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Verb is a kubernetes resource API verb, like: get, list, watch, create, update, delete,
         * proxy.  "*" means all.
         */
-      var verb: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var verb: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Version is the API Version of the Resource.  "*" means all.
         */
-      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -520,14 +520,14 @@ object authorizationNs extends js.Object {
         * group will be allowed.  "*" means all.
         */
       var apiGroups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * ResourceNames is an optional white list of names that the rule applies to.  An empty set
         * means that everything is allowed.  "*" means all.
         */
       var resourceNames: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.  "*" means all in the specified
@@ -536,13 +536,13 @@ object authorizationNs extends js.Object {
         * apiGroups.
         */
       var resources: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Verb is a list of kubernetes resource API verbs, like: get, list, watch, create, update,
         * delete, proxy.  "*" means all.
         */
-      var verbs: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var verbs: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -558,7 +558,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -569,19 +569,19 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.  user and groups must be empty
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SelfSubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SelfSubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -592,11 +592,11 @@ object authorizationNs extends js.Object {
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NonResourceAttributes]] = js.undefined
+      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NonResourceAttributes]] = js.undefined
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceAttributes]] = js.undefined
+      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceAttributes]] = js.undefined
     }
     
     /**
@@ -617,7 +617,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -628,26 +628,26 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SelfSubjectRulesReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SelfSubjectRulesReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SelfSubjectRulesReviewSpec]
       /**
         * Status is filled in by the server and indicates the set of actions a user can perform.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectRulesReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectRulesReviewStatus]] = js.undefined
     }
     
     trait SelfSubjectRulesReviewSpec extends js.Object {
       /**
         * Namespace to evaluate rules for. Required.
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -661,7 +661,7 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authorizationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -672,19 +672,19 @@ object authorizationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SubjectAccessReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request is allowed or not
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SubjectAccessReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SubjectAccessReviewStatus]] = js.undefined
     }
     
     /**
@@ -696,30 +696,30 @@ object authorizationNs extends js.Object {
         * Extra corresponds to the user.Info.GetExtra() method from the authenticator.  Since that is
         * input to the authorizer it needs a reflection here.
         */
-      var extra: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var extra: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Groups is the groups you're testing for.
         */
       var group: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * NonResourceAttributes describes information for a non-resource access request
         */
-      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NonResourceAttributes]] = js.undefined
+      var nonResourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NonResourceAttributes]] = js.undefined
       /**
         * ResourceAuthorizationAttributes describes information for a resource access request
         */
-      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceAttributes]] = js.undefined
+      var resourceAttributes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceAttributes]] = js.undefined
       /**
         * UID information about the requesting user.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User is the user you're testing for. If you specify "User" but not "Group", then is it
         * interpreted as "What if User were not a member of any groups
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -729,24 +729,24 @@ object authorizationNs extends js.Object {
       /**
         * Allowed is required. True if the action would be allowed, false otherwise.
         */
-      var allowed: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var allowed: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Denied is optional. True if the action would be denied, otherwise false. If both allowed is
         * false and denied is false, then the authorizer has no opinion on whether to authorize the
         * action. Denied may not be true if Allowed is true.
         */
-      var denied: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var denied: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * EvaluationError is an indication that some error occurred during the authorization check.
         * It is entirely possible to get an error and be able to continue determine authorization
         * status in spite of it. For instance, RBAC can be missing a role, but enough roles are still
         * present and bound to reason about the request.
         */
-      var evaluationError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var evaluationError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Reason is optional.  It indicates why a request was allowed or denied.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -761,23 +761,23 @@ object authorizationNs extends js.Object {
         * rule evaluation, such as an authorizer that doesn't support rule evaluation, and that
         * ResourceRules and/or NonResourceRules may be incomplete.
         */
-      var evaluationError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var evaluationError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Incomplete is true when the rules returned by this call are incomplete. This is most
         * commonly encountered when an authorizer, such as an external authorizer, doesn't support
         * rules evaluation.
         */
-      var incomplete: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var incomplete: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * NonResourceRules is the list of actions the subject is allowed to perform on non-resources.
         * The list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var nonResourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NonResourceRule]]]
+      var nonResourceRules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NonResourceRule]]]
       /**
         * ResourceRules is the list of actions the subject is allowed to perform on resources. The
         * list ordering isn't significant, may contain duplicates, and possibly be incomplete.
         */
-      var resourceRules: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceRule]]]
+      var resourceRules: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ResourceRule]]]
     }
     
     def isLocalSubjectAccessReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authorization.v1beta1.LocalSubjectAccessReview */ scala.Boolean = js.native

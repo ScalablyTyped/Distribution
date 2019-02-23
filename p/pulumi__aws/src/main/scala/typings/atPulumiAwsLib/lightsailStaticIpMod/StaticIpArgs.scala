@@ -9,6 +9,6 @@ trait StaticIpArgs extends js.Object {
   /**
     * The name for the allocated static IP
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

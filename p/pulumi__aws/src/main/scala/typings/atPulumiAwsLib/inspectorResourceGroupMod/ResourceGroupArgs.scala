@@ -9,6 +9,6 @@ trait ResourceGroupArgs extends js.Object {
   /**
     * The tags on your EC2 Instance.
     */
-  val tags: atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
+  val tags: atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
 }
 

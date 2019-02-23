@@ -9,10 +9,10 @@ trait UploadBufferArgs extends js.Object {
   /**
     * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
     */
-  val diskId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val diskId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The Amazon Resource Name (ARN) of the gateway.
     */
-  val gatewayArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val gatewayArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

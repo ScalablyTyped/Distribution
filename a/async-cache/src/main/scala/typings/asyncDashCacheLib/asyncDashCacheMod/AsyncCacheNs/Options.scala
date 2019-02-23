@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Options[T]
-  extends lruDashCacheLib.lruDashCacheMod.LRUNs.Options[java.lang.String, T] {
+  extends lruDashCacheLib.lruDashCacheMod.LRUCacheNs.Options[java.lang.String, T] {
   def load(
     key: java.lang.String,
     callback: js.Function3[

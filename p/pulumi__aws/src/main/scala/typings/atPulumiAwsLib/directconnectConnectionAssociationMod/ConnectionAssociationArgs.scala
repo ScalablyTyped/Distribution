@@ -9,10 +9,10 @@ trait ConnectionAssociationArgs extends js.Object {
   /**
     * The ID of the connection.
     */
-  val connectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val connectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The ID of the LAG with which to associate the connection.
     */
-  val lagId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val lagId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

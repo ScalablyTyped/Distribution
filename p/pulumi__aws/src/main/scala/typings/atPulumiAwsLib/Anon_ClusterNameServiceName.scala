@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_ClusterNameServiceName extends js.Object {
-  var clusterName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var serviceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var clusterName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

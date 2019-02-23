@@ -11,28 +11,26 @@ trait ConfigurationArgs extends js.Object {
     * See [official docs](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-broker-configuration-parameters.html)
     * for supported parameters and format of the XML.
     */
-  val data: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val data: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The description of the configuration.
     */
-  val description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The type of broker engine.
     */
-  val engineType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val engineType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The version of the broker engine.
     */
-  val engineVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val engineVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The name of the configuration
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
-  ] = js.undefined
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 

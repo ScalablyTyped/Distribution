@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jest-specific-snapshot"
-version := "0.5-dt-20181205Z-7b1b15"
+version := "0.5-dt-20190219Z-7b1b15"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

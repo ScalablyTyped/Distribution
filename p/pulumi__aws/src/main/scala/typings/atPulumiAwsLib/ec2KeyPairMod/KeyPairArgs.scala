@@ -9,14 +9,14 @@ trait KeyPairArgs extends js.Object {
   /**
     * The name for the key pair.
     */
-  val keyName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val keyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Creates a unique name beginning with the specified prefix. Conflicts with `key_name`.
     */
-  val keyNamePrefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val keyNamePrefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The public key material.
     */
-  val publicKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val publicKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

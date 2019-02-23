@@ -9,10 +9,10 @@ trait DomainPolicyArgs extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val accessPolicies: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Name of the domain.
     */
-  val domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

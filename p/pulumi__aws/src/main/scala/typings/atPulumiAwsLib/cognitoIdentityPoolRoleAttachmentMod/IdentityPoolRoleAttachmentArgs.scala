@@ -9,20 +9,20 @@ trait IdentityPoolRoleAttachmentArgs extends js.Object {
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  val identityPoolId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val identityPoolId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A List of Role Mapping.
     */
   val roleMappings: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AmbiguousRoleResolutionIdentityProvider]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AmbiguousRoleResolutionIdentityProvider]
       ]
     ]
   ] = js.undefined
   /**
     * The map of roles associated with this pool. For a given role, the key will be either "authenticated" or "unauthenticated" and the value will be the Role ARN.
     */
-  val roles: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AuthenticatedUnauthenticated]
+  val roles: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AuthenticatedUnauthenticated]
 }
 

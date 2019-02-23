@@ -6,13 +6,13 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CertificateComputeType extends js.Object {
-  var certificate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-  var computeType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var certificate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+  var computeType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   var environmentVariables: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Anon_NameTypeValue]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Anon_NameTypeValue]]]
   ] = js.undefined
-  var image: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  var privilegedMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-  var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var image: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  var privilegedMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+  var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

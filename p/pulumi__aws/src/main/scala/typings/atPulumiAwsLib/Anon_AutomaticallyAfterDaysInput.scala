@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_AutomaticallyAfterDaysInput extends js.Object {
-  var automaticallyAfterDays: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+  var automaticallyAfterDays: atPulumiPulumiLib.outputMod.Input[scala.Double]
 }
 

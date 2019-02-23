@@ -18,11 +18,11 @@ object apiextensionsNs extends js.Object {
       /**
         * JSONPath is a simple JSON path, i.e. with array notation.
         */
-      var JSONPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var JSONPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * description is a human readable description of this column.
         */
-      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * format is an optional OpenAPI type definition for this column. The 'name' format is applied
         * to the primary identifier column to assist in clients identifying column is the resource
@@ -30,23 +30,23 @@ object apiextensionsNs extends js.Object {
         * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for
         * more.
         */
-      var format: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var format: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * name is a human readable name for the column.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * priority is an integer defining the relative importance of this column compared to others.
         * Lower numbers are considered higher priority. Columns that may be omitted in limited space
         * scenarios should be given a higher priority.
         */
-      var priority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * type is an OpenAPI type definition for this column. See
         * https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#data-types for
         * more.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -59,13 +59,13 @@ object apiextensionsNs extends js.Object {
         * Server will call to an external webhook to do the conversion. Additional information is
         * needed for this option.
         */
-      var strategy: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var strategy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `webhookClientConfig` is the instructions for how to call the webhook if strategy is
         * `Webhook`. This field is alpha-level and is only honored by servers that enable the
         * CustomResourceWebhookConversion feature.
         */
-      var webhookClientConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[WebhookClientConfig]] = js.undefined
+      var webhookClientConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[WebhookClientConfig]] = js.undefined
     }
     
     /**
@@ -80,7 +80,7 @@ object apiextensionsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -91,19 +91,19 @@ object apiextensionsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinition]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinition]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec describes how the user wants the resources to appear
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionSpec]
       /**
         * Status indicates the actual state of the CustomResourceDefinition
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionStatus]] = js.undefined
     }
     
     /**
@@ -113,23 +113,23 @@ object apiextensionsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human-readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Unique, one-word, CamelCase reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status is the status of the condition. Can be True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type is the type of the condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -143,14 +143,14 @@ object apiextensionsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiextensionsDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
       /**
         * Items individual CustomResourceDefinitions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinition]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CustomResourceDefinition]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -158,10 +158,10 @@ object apiextensionsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinitionList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.CustomResourceDefinitionList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -173,32 +173,32 @@ object apiextensionsNs extends js.Object {
         * Categories is a list of grouped resources custom resources belong to (e.g. 'all')
         */
       var categories: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Kind is the serialized kind of the resource.  It is normally CamelCase and singular.
         */
-      var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kind: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ListKind is the serialized kind of the list for this resource.  Defaults to <kind>List.
         */
-      var listKind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var listKind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Plural is the plural name of the resource to serve.  It must match the name of the
         * CustomResourceDefinition-registration too: plural.group and it must be all lowercase.
         */
-      var plural: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var plural: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ShortNames are short names for the resource.  It must be all lowercase.
         */
       var shortNames: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Singular is the singular name of the resource.  It must be all lowercase  Defaults to
         * lowercased <kind>
         */
-      var singular: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var singular: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -211,43 +211,43 @@ object apiextensionsNs extends js.Object {
         * and per-version columns are mutually exclusive.
         */
       var additionalPrinterColumns: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceColumnDefinition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CustomResourceColumnDefinition]]]
           ] = js.undefined
       /**
         * `conversion` defines conversion settings for the CRD.
         */
-      var conversion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceConversion]] = js.undefined
+      var conversion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceConversion]] = js.undefined
       /**
         * Group is the group this resource belongs in
         */
-      var group: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var group: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Names are the names used to describe this custom resource
         */
-      var names: atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionNames]
+      var names: atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionNames]
       /**
         * Scope indicates whether this resource is cluster or namespace scoped.  Default is
         * namespaced
         */
-      var scope: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var scope: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Subresources describes the subresources for CustomResource Optional, the global
         * subresources for all versions. Top-level and per-version subresources are mutually
         * exclusive.
         */
-      var subresources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresources]] = js.undefined
+      var subresources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceSubresources]] = js.undefined
       /**
         * Validation describes the validation methods for CustomResources Optional, the global
         * validation schema for all versions. Top-level and per-version schemas are mutually
         * exclusive.
         */
-      var validation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceValidation]] = js.undefined
+      var validation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceValidation]] = js.undefined
       /**
         * Version is the version this resource belongs in Should be always first item in Versions
         * field if provided. Optional, but at least one of Version or Versions must be set.
         * Deprecated: Please use `Versions`.
         */
-      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Versions is the list of all supported versions for this resource. If Version field is
         * provided, this field is optional. Validation: All versions must use the same validation
@@ -262,7 +262,7 @@ object apiextensionsNs extends js.Object {
         * v11alpha2, foo1, foo10.
         */
       var versions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionVersion]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionVersion]]]
           ] = js.undefined
     }
     
@@ -274,11 +274,11 @@ object apiextensionsNs extends js.Object {
         * AcceptedNames are the names that are actually being used to serve discovery They may be
         * different than the names in spec.
         */
-      var acceptedNames: atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionNames]
+      var acceptedNames: atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionNames]
       /**
         * Conditions indicate state for particular aspects of a CustomResourceDefinition
         */
-      var conditions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceDefinitionCondition]]]
+      var conditions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CustomResourceDefinitionCondition]]]
       /**
         * StoredVersions are all versions of CustomResources that were ever persisted. Tracking these
         * versions allows a migration path for stored versions in etcd. The field is mutable so the
@@ -286,7 +286,7 @@ object apiextensionsNs extends js.Object {
         * objects are left in the storage), and then remove the rest of the versions from this list.
         * None of the versions in this list can be removed from the spec.Versions field.
         */
-      var storedVersions: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var storedVersions: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -304,12 +304,12 @@ object apiextensionsNs extends js.Object {
         * explicitly set to null
         */
       var additionalPrinterColumns: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[CustomResourceColumnDefinition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[CustomResourceColumnDefinition]]]
           ] = js.undefined
       /**
         * Name is the version name, e.g. “v1”, “v2beta1”, etc.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Schema describes the schema for CustomResource used in validation, pruning, and defaulting.
         * Top-level and per-version schemas are mutually exclusive. Per-version schemas must not all
@@ -317,23 +317,23 @@ object apiextensionsNs extends js.Object {
         * is alpha-level and is only honored by servers that enable the
         * CustomResourceWebhookConversion feature.
         */
-      var schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceValidation]] = js.undefined
+      var schema: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceValidation]] = js.undefined
       /**
         * Served is a flag enabling/disabling this version from being served via REST APIs
         */
-      var served: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var served: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Storage flags the version as storage version. There must be exactly one flagged as storage
         * version.
         */
-      var storage: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var storage: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Subresources describes the subresources for CustomResource Top-level and per-version
         * subresources are mutually exclusive. Per-version subresources must not all be set to
         * identical values (top-level subresources should be used instead) This field is alpha-level
         * and is only honored by servers that enable the CustomResourceWebhookConversion feature.
         */
-      var subresources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresources]] = js.undefined
+      var subresources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceSubresources]] = js.undefined
     }
     
     /**
@@ -348,21 +348,21 @@ object apiextensionsNs extends js.Object {
         * path in the CustomResource, the status label selector value in the /scale subresource will
         * default to the empty string.
         */
-      var labelSelectorPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var labelSelectorPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * SpecReplicasPath defines the JSON path inside of a CustomResource that corresponds to
         * Scale.Spec.Replicas. Only JSON paths without the array notation are allowed. Must be a JSON
         * Path under .spec. If there is no value under the given path in the CustomResource, the
         * /scale subresource will return an error on GET.
         */
-      var specReplicasPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var specReplicasPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * StatusReplicasPath defines the JSON path inside of a CustomResource that corresponds to
         * Scale.Status.Replicas. Only JSON paths without the array notation are allowed. Must be a
         * JSON Path under .status. If there is no value under the given path in the CustomResource,
         * the status replica value in the /scale subresource will default to 0.
         */
-      var statusReplicasPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var statusReplicasPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -372,11 +372,11 @@ object apiextensionsNs extends js.Object {
       /**
         * Scale denotes the scale subresource for CustomResources
         */
-      var scale: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CustomResourceSubresourceScale]] = js.undefined
+      var scale: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CustomResourceSubresourceScale]] = js.undefined
       /**
         * Status denotes the status subresource for CustomResources
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[_]] = js.undefined
     }
     
     /**
@@ -386,15 +386,15 @@ object apiextensionsNs extends js.Object {
       /**
         * OpenAPIV3Schema is the OpenAPI v3 schema to be validated against.
         */
-      var openAPIV3Schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]] = js.undefined
+      var openAPIV3Schema: js.UndefOr[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]] = js.undefined
     }
     
     /**
       * ExternalDocumentation allows referencing an external resource for extended documentation.
       */
     trait ExternalDocumentation extends js.Object {
-      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var url: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -402,53 +402,53 @@ object apiextensionsNs extends js.Object {
       */
     trait JSONSchemaProps extends js.Object {
       @JSName("$ref")
-      var $ref: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var $ref: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       @JSName("$schema")
-      var $schema: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var additionalItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
-      var additionalProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
+      var $schema: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var additionalItems: js.UndefOr[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
+      var additionalProperties: js.UndefOr[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps | scala.Boolean]] = js.undefined
       var allOf: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]]]
           ] = js.undefined
       var anyOf: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]]]
           ] = js.undefined
-      var default: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
-      var definitions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
-      var dependencies: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
-      var description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var default: js.UndefOr[atPulumiPulumiLib.outputMod.Input[_]] = js.undefined
+      var definitions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
+      var dependencies: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
+      var description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       var enum: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[_]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[_]]]
           ] = js.undefined
-      var example: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[_]] = js.undefined
-      var exclusiveMaximum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-      var exclusiveMinimum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
-      var externalDocs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ExternalDocumentation]] = js.undefined
-      var format: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var id: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var items: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps | js.Array[_]]] = js.undefined
-      var maxItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var maxLength: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var maxProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var maximum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var minItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var minLength: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var minProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var minimum: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var multipleOf: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
-      var not: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]] = js.undefined
+      var example: js.UndefOr[atPulumiPulumiLib.outputMod.Input[_]] = js.undefined
+      var exclusiveMaximum: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      var exclusiveMinimum: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
+      var externalDocs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ExternalDocumentation]] = js.undefined
+      var format: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var id: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var items: js.UndefOr[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps | js.Array[_]]] = js.undefined
+      var maxItems: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var maxLength: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var maxProperties: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var maximum: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var minItems: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var minLength: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var minProperties: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var minimum: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var multipleOf: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
+      var not: js.UndefOr[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]] = js.undefined
       var oneOf: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[JSONSchemaProps]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[JSONSchemaProps]]]
           ] = js.undefined
-      var pattern: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var patternProperties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
-      var properties: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var pattern: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var patternProperties: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
+      var properties: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       var required: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
-      var title: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var uniqueItems: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var title: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var uniqueItems: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -458,15 +458,15 @@ object apiextensionsNs extends js.Object {
       /**
         * `name` is the name of the service. Required
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `namespace` is the namespace of the service. Required
         */
-      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `path` is an optional URL path which will be sent in any request to this service.
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -478,7 +478,7 @@ object apiextensionsNs extends js.Object {
         * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
         * certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var caBundle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * `service` is a reference to the service for this webhook. Either `service` or `url` must be
         * specified.
@@ -487,7 +487,7 @@ object apiextensionsNs extends js.Object {
         *
         * Port 443 will be used if it is open, otherwise it is an error.
         */
-      var service: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceReference]] = js.undefined
+      var service: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceReference]] = js.undefined
       /**
         * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
         * Exactly one of `url` or `service` must be specified.
@@ -510,7 +510,7 @@ object apiextensionsNs extends js.Object {
         * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments
         * ("#...") and query parameters ("?...") are not allowed, either.
         */
-      var url: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isCustomResourceDefinition(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiextensions.v1beta1.CustomResourceDefinition */ scala.Boolean = js.native

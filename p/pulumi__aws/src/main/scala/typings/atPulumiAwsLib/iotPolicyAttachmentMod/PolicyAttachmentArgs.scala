@@ -9,10 +9,10 @@ trait PolicyAttachmentArgs extends js.Object {
   /**
     * The name of the policy to attach.
     */
-  val policy: atPulumiPulumiLib.resourceMod.Input[java.lang.String | atPulumiAwsLib.iotMod.Policy]
+  val policy: atPulumiPulumiLib.outputMod.Input[java.lang.String | atPulumiAwsLib.iotMod.Policy]
   /**
     * The identity to which the policy is attached.
     */
-  val target: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
+  val target: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
 }
 

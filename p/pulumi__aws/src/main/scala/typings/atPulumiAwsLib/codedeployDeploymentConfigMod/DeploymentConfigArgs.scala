@@ -9,20 +9,20 @@ trait DeploymentConfigArgs extends js.Object {
   /**
     * The compute platform can be `Server`, `Lambda`, or `ECS`. Default is `Server`.
     */
-  val computePlatform: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val computePlatform: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The name of the deployment config.
     */
-  val deploymentConfigName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val deploymentConfigName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A minimum_healthy_hosts block. Minimum Healthy Hosts are documented below.
     */
-  val minimumHealthyHosts: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TypeValueInput]] = js.undefined
+  val minimumHealthyHosts: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TypeValueInput]] = js.undefined
   /**
     * A traffic_routing_config block. Traffic Routing Config is documented below.
     */
   val trafficRoutingConfig: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_TimeBasedCanaryTimeBasedLinear]
   ] = js.undefined
 }
 

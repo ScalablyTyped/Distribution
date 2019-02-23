@@ -16,7 +16,7 @@ object ^ extends js.Object {
     * <code> if (__DEV__) console.log('Running in dev mode')</code>
     */
   val `__DEV__`: scala.Boolean = js.native
-  val console: reactDashNativeLib.reactDashNativeMod.Global.Console = js.native
+  var console: reactDashNativeLib.reactDashNativeMod.Global.Console = js.native
   val navigator: reactDashNativeLib.reactDashNativeMod.Global.Navigator = js.native
   /**
     * This contains the non-native `XMLHttpRequest` object, which you can use if you want to route network requests
@@ -27,6 +27,6 @@ object ^ extends js.Object {
     * @see https://github.com/facebook/react-native/issues/934
     */
   val originalXMLHttpRequest: js.Any = js.native
-  def require(name: java.lang.String): js.Any = js.native
+  var require: reactDashNativeLib.reactDashNativeMod.Global.ReactNativeRequireFunction = js.native
 }
 

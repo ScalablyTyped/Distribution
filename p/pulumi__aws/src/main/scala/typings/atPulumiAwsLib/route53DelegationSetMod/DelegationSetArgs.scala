@@ -10,6 +10,6 @@ trait DelegationSetArgs extends js.Object {
     * This is a reference name used in Caller Reference
     * (helpful for identifying single delegation set amongst others)
     */
-  val referenceName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val referenceName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

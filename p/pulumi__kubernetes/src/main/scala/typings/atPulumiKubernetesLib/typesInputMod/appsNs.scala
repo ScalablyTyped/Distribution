@@ -29,13 +29,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
       var data: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -44,19 +44,19 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Revision indicates the revision of the state represented by Data.
         */
-      var revision: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var revision: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -70,12 +70,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -83,13 +83,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
           ] = js.undefined
       /**
         * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -104,7 +104,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -113,26 +113,26 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The desired behavior of this daemon set. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetSpec]] = js.undefined
       /**
         * The current status of this daemon set. This data may be out of date by some window of time.
         * Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetStatus]] = js.undefined
     }
     
     /**
@@ -142,23 +142,23 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of DaemonSet condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -172,12 +172,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * A list of daemon sets.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DaemonSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -185,14 +185,14 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -205,29 +205,29 @@ object appsNs extends js.Object {
         * without any of its container crashing, for it to be considered available. Defaults to 0
         * (pod will be considered available as soon as it is ready).
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of old history to retain to allow rollback. This is a pointer to distinguish
         * between explicit zero and not specified. Defaults to 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * A label query over pods that are managed by the daemon set. Must match in order to be
         * controlled. It must match the pod template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * An object that describes the pod that will be created. The DaemonSet will create exactly
         * one copy of this pod on every node that matches the template's node selector (or on every
         * node if no node selector is specified). More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
       /**
         * An update strategy to replace existing DaemonSet pods with new pods.
         */
-      var updateStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetUpdateStrategy]] = js.undefined
+      var updateStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetUpdateStrategy]] = js.undefined
     }
     
     /**
@@ -239,52 +239,52 @@ object appsNs extends js.Object {
         * collision avoidance mechanism when it needs to create the name for the newest
         * ControllerRevision.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a DaemonSet's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DaemonSetCondition]]]
           ] = js.undefined
       /**
         * The number of nodes that are running at least 1 daemon pod and are supposed to run the
         * daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var currentNumberScheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var currentNumberScheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The total number of nodes that should be running the daemon pod (including nodes correctly
         * running the daemon pod). More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var desiredNumberScheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var desiredNumberScheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have one or more of the
         * daemon pod running and available (ready for at least spec.minReadySeconds)
         */
-      var numberAvailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var numberAvailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of nodes that are running the daemon pod, but are not supposed to run the daemon
         * pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var numberMisscheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var numberMisscheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have one or more of the
         * daemon pod running and ready.
         */
-      var numberReady: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var numberReady: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have none of the daemon pod
         * running and available (ready for at least spec.minReadySeconds)
         */
-      var numberUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var numberUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The most recent generation observed by the daemon set controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The total number of nodes that are running updated daemon pod
         */
-      var updatedNumberScheduled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedNumberScheduled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -294,11 +294,11 @@ object appsNs extends js.Object {
       /**
         * Rolling update config params. Present only if type = "RollingUpdate".
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateDaemonSet]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateDaemonSet]] = js.undefined
       /**
         * Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -312,7 +312,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -321,22 +321,22 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
           ] = js.undefined
       /**
         * Standard object metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior of the Deployment.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentSpec]] = js.undefined
       /**
         * Most recently observed status of the Deployment.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStatus]] = js.undefined
     }
     
     /**
@@ -346,27 +346,27 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The last time this condition was updated.
         */
-      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of deployment condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -380,12 +380,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -393,13 +393,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
           ] = js.undefined
       /**
         * Standard list metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -412,11 +412,11 @@ object appsNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Indicates that the deployment is paused.
         */
-      var paused: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var paused: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The maximum time in seconds for a deployment to make progress before it is considered to be
         * failed. The deployment controller will continue to process failed deployments and a
@@ -424,30 +424,30 @@ object appsNs extends js.Object {
         * Note that progress will not be estimated during the time a deployment is paused. Defaults
         * to 600s.
         */
-      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Number of desired pods. This is a pointer to distinguish between explicit zero and not
         * specified. Defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish
         * between explicit zero and not specified. Defaults to 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Label selector for pods. Existing ReplicaSets whose pods are selected by this will be the
         * ones affected by this deployment. It must match the pod template's labels.
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * The deployment strategy to use to replace existing pods with new ones.
         */
-      var strategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStrategy]] = js.undefined
+      var strategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStrategy]] = js.undefined
       /**
         * Template describes the pods that will be created.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
     }
     
     /**
@@ -458,43 +458,43 @@ object appsNs extends js.Object {
         * Total number of available pods (ready for at least minReadySeconds) targeted by this
         * deployment.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Count of hash collisions for the Deployment. The Deployment controller uses this field as a
         * collision avoidance mechanism when it needs to create the name for the newest ReplicaSet.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a deployment's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DeploymentCondition]]]
           ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of ready pods targeted by this deployment.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment (their labels match the
         * selector).
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of unavailable pods targeted by this deployment. This is the total number of
         * pods that are still required for the deployment to have 100% available capacity. They may
         * either be pods that are running but not yet available or pods that still have not been
         * created.
         */
-      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment that have the desired
         * template spec.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -504,11 +504,11 @@ object appsNs extends js.Object {
       /**
         * Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateDeployment]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateDeployment]] = js.undefined
       /**
         * Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -522,7 +522,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -531,7 +531,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet]
           ] = js.undefined
       /**
         * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
@@ -539,19 +539,19 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicaSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetSpec]] = js.undefined
       /**
         * Status is the most recently observed status of the ReplicaSet. This data may be out of date
         * by some window of time. Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicaSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetStatus]] = js.undefined
     }
     
     /**
@@ -561,23 +561,23 @@ object appsNs extends js.Object {
       /**
         * The last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of replica set condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -591,13 +591,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * List of ReplicaSets. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicaSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -605,14 +605,14 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -625,27 +625,27 @@ object appsNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the number of desired replicas. This is a pointer to distinguish between
         * explicit zero and unspecified. Defaults to 1. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Selector is a label query over pods that should match the replica count. Label keys and
         * values that must match in order to be controlled by this replica set. It must match the pod
         * template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * Template is the object that describes the pod that will be created if insufficient replicas
         * are detected. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
         */
       var template: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
           ] = js.undefined
     }
     
@@ -656,31 +656,31 @@ object appsNs extends js.Object {
       /**
         * The number of available replicas (ready for at least minReadySeconds) for this replica set.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a replica set's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicaSetCondition]]]
           ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replicaset.
         */
-      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * ObservedGeneration reflects the generation of the most recently observed ReplicaSet.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of ready replicas for this replica set.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the most recently oberved number of replicas. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -699,7 +699,7 @@ object appsNs extends js.Object {
         * DaemonSet pods, thus ensuring that at least 70% of original number of DaemonSet pods are
         * available at all times during the update.
         */
-      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -716,7 +716,7 @@ object appsNs extends js.Object {
         * scaled up further, ensuring that total number of pods running at any time during the update
         * is at most 130% of desired pods.
         */
-      var maxSurge: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
         * The maximum number of pods that can be unavailable during the update. Value can be an
         * absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is
@@ -727,7 +727,7 @@ object appsNs extends js.Object {
         * that the total number of pods available at all times during the update is at least 70% of
         * desired pods.
         */
-      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -739,7 +739,7 @@ object appsNs extends js.Object {
         * Partition indicates the ordinal at which the StatefulSet should be partitioned. Default
         * value is 0.
         */
-      var partition: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var partition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -757,7 +757,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -766,20 +766,20 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the desired identities of pods in this set.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetSpec]] = js.undefined
       /**
         * Status is the current status of Pods in this StatefulSet. This data may be out of date by
         * some window of time.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetStatus]] = js.undefined
     }
     
     /**
@@ -789,23 +789,23 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of statefulset condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -819,9 +819,9 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -829,10 +829,10 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -848,25 +848,25 @@ object appsNs extends js.Object {
         * opposite order. The alternative policy is `Parallel` which will create pods in parallel to
         * match the desired scale without waiting, and on scale down will delete all pods at once.
         */
-      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * replicas is the desired number of replicas of the given Template. These are replicas in the
         * sense that they are instantiations of the same Template, but individual replicas also have
         * a consistent identity. If unspecified, defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * revisionHistoryLimit is the maximum number of revisions that will be maintained in the
         * StatefulSet's revision history. The revision history consists of all revisions not
         * represented by a currently applied StatefulSetSpec version. The default value is 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * selector is a label query over pods that should match the replica count. It must match the
         * pod template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * serviceName is the name of the service that governs this StatefulSet. This service must
         * exist before the StatefulSet, and is responsible for the network identity of the set. Pods
@@ -874,18 +874,18 @@ object appsNs extends js.Object {
         * pod-specific-string.serviceName.default.svc.cluster.local where "pod-specific-string" is
         * managed by the StatefulSet controller.
         */
-      var serviceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * template is the object that describes the pod that will be created if insufficient replicas
         * are detected. Each pod stamped out by the StatefulSet will fulfill this Template, but have
         * a unique identity from the rest of the StatefulSet.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
       /**
         * updateStrategy indicates the StatefulSetUpdateStrategy that will be employed to update Pods
         * in the StatefulSet when a revision is made to Template.
         */
-      var updateStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetUpdateStrategy]] = js.undefined
+      var updateStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetUpdateStrategy]] = js.undefined
       /**
         * volumeClaimTemplates is a list of claims that pods are allowed to reference. The
         * StatefulSet controller is responsible for mapping network identities to claims in a way
@@ -894,9 +894,9 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               js.Array[
-                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+                atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
               ]
             ]
           ] = js.undefined
@@ -911,48 +911,48 @@ object appsNs extends js.Object {
         * controller uses this field as a collision avoidance mechanism when it needs to create the
         * name for the newest ControllerRevision.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSetCondition]]]
           ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.
         */
-      var currentReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var currentReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * currentRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [0,currentReplicas).
         */
-      var currentRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var currentRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * observedGeneration is the most recent generation observed for this StatefulSet. It
         * corresponds to the StatefulSet's generation, which is updated on mutation by the API
         * Server.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready
         * Condition.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * replicas is the number of Pods created by the StatefulSet controller.
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * updateRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [replicas-updatedReplicas,replicas)
         */
-      var updateRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var updateRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * updatedReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by updateRevision.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -965,11 +965,11 @@ object appsNs extends js.Object {
         * RollingUpdate is used to communicate parameters when Type is
         * RollingUpdateStatefulSetStrategyType.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
       /**
         * Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isControllerRevision(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apps.v1.ControllerRevision */ scala.Boolean = js.native
@@ -1007,13 +1007,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
       var data: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1022,19 +1022,19 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Revision indicates the revision of the state represented by Data.
         */
-      var revision: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var revision: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -1048,12 +1048,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1061,13 +1061,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
           ] = js.undefined
       /**
         * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1084,7 +1084,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1093,22 +1093,22 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
           ] = js.undefined
       /**
         * Standard object metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior of the Deployment.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentSpec]] = js.undefined
       /**
         * Most recently observed status of the Deployment.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStatus]] = js.undefined
     }
     
     /**
@@ -1118,27 +1118,27 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The last time this condition was updated.
         */
-      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of deployment condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1152,12 +1152,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1165,13 +1165,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
           ] = js.undefined
       /**
         * Standard list metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1185,28 +1185,28 @@ object appsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Required: This must match the Name of a deployment.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The config of this deployment rollback.
         */
-      var rollbackTo: atPulumiPulumiLib.resourceMod.Input[RollbackConfig]
+      var rollbackTo: atPulumiPulumiLib.outputMod.Input[RollbackConfig]
       /**
         * The annotations to be updated to a deployment
         */
       var updatedAnnotations: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
     }
@@ -1220,11 +1220,11 @@ object appsNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Indicates that the deployment is paused.
         */
-      var paused: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var paused: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The maximum time in seconds for a deployment to make progress before it is considered to be
         * failed. The deployment controller will continue to process failed deployments and a
@@ -1232,37 +1232,37 @@ object appsNs extends js.Object {
         * Note that progress will not be estimated during the time a deployment is paused. Defaults
         * to 600s.
         */
-      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Number of desired pods. This is a pointer to distinguish between explicit zero and not
         * specified. Defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish
         * between explicit zero and not specified. Defaults to 2.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * DEPRECATED. The config this deployment is rolling back to. Will be cleared after rollback
         * is done.
         */
-      var rollbackTo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollbackConfig]] = js.undefined
+      var rollbackTo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollbackConfig]] = js.undefined
       /**
         * Label selector for pods. Existing ReplicaSets whose pods are selected by this will be the
         * ones affected by this deployment.
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * The deployment strategy to use to replace existing pods with new ones.
         */
-      var strategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStrategy]] = js.undefined
+      var strategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStrategy]] = js.undefined
       /**
         * Template describes the pods that will be created.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
     }
     
     /**
@@ -1273,43 +1273,43 @@ object appsNs extends js.Object {
         * Total number of available pods (ready for at least minReadySeconds) targeted by this
         * deployment.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Count of hash collisions for the Deployment. The Deployment controller uses this field as a
         * collision avoidance mechanism when it needs to create the name for the newest ReplicaSet.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a deployment's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DeploymentCondition]]]
           ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of ready pods targeted by this deployment.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment (their labels match the
         * selector).
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of unavailable pods targeted by this deployment. This is the total number of
         * pods that are still required for the deployment to have 100% available capacity. They may
         * either be pods that are running but not yet available or pods that still have not been
         * created.
         */
-      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment that have the desired
         * template spec.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1319,11 +1319,11 @@ object appsNs extends js.Object {
       /**
         * Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateDeployment]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateDeployment]] = js.undefined
       /**
         * Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1333,7 +1333,7 @@ object appsNs extends js.Object {
       /**
         * The revision to rollback to. If set to 0, rollback to the last revision.
         */
-      var revision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1350,7 +1350,7 @@ object appsNs extends js.Object {
         * scaled up further, ensuring that total number of pods running at any time during the update
         * is atmost 130% of desired pods.
         */
-      var maxSurge: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
         * The maximum number of pods that can be unavailable during the update. Value can be an
         * absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is
@@ -1361,7 +1361,7 @@ object appsNs extends js.Object {
         * that the total number of pods available at all times during the update is at least 70% of
         * desired pods.
         */
-      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -1372,7 +1372,7 @@ object appsNs extends js.Object {
       /**
         * Partition indicates the ordinal at which the StatefulSet should be partitioned.
         */
-      var partition: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var partition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1385,32 +1385,32 @@ object appsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * defines the behavior of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleSpec]] = js.undefined
       /**
         * current status of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         * Read-only.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleStatus]] = js.undefined
     }
     
     /**
@@ -1420,7 +1420,7 @@ object appsNs extends js.Object {
       /**
         * desired number of instances for the scaled object.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1430,14 +1430,14 @@ object appsNs extends js.Object {
       /**
         * actual number of observed instances of the scaled object.
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * label query over pods that should match the replicas count. More info:
         * http://kubernetes.io/docs/user-guide/labels#label-selectors
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -1448,7 +1448,7 @@ object appsNs extends js.Object {
         * selector field are populated. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var targetSelector: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var targetSelector: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1468,7 +1468,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1477,20 +1477,20 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the desired identities of pods in this set.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetSpec]] = js.undefined
       /**
         * Status is the current status of Pods in this StatefulSet. This data may be out of date by
         * some window of time.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetStatus]] = js.undefined
     }
     
     /**
@@ -1500,23 +1500,23 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of statefulset condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1530,9 +1530,9 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta1`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1540,10 +1540,10 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1559,26 +1559,26 @@ object appsNs extends js.Object {
         * opposite order. The alternative policy is `Parallel` which will create pods in parallel to
         * match the desired scale without waiting, and on scale down will delete all pods at once.
         */
-      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * replicas is the desired number of replicas of the given Template. These are replicas in the
         * sense that they are instantiations of the same Template, but individual replicas also have
         * a consistent identity. If unspecified, defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * revisionHistoryLimit is the maximum number of revisions that will be maintained in the
         * StatefulSet's revision history. The revision history consists of all revisions not
         * represented by a currently applied StatefulSetSpec version. The default value is 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * selector is a label query over pods that should match the replica count. If empty,
         * defaulted to labels on the pod template. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * serviceName is the name of the service that governs this StatefulSet. This service must
@@ -1587,18 +1587,18 @@ object appsNs extends js.Object {
         * pod-specific-string.serviceName.default.svc.cluster.local where "pod-specific-string" is
         * managed by the StatefulSet controller.
         */
-      var serviceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * template is the object that describes the pod that will be created if insufficient replicas
         * are detected. Each pod stamped out by the StatefulSet will fulfill this Template, but have
         * a unique identity from the rest of the StatefulSet.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
       /**
         * updateStrategy indicates the StatefulSetUpdateStrategy that will be employed to update Pods
         * in the StatefulSet when a revision is made to Template.
         */
-      var updateStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetUpdateStrategy]] = js.undefined
+      var updateStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetUpdateStrategy]] = js.undefined
       /**
         * volumeClaimTemplates is a list of claims that pods are allowed to reference. The
         * StatefulSet controller is responsible for mapping network identities to claims in a way
@@ -1607,9 +1607,9 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               js.Array[
-                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+                atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
               ]
             ]
           ] = js.undefined
@@ -1624,48 +1624,48 @@ object appsNs extends js.Object {
         * controller uses this field as a collision avoidance mechanism when it needs to create the
         * name for the newest ControllerRevision.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSetCondition]]]
           ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.
         */
-      var currentReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var currentReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * currentRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [0,currentReplicas).
         */
-      var currentRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var currentRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * observedGeneration is the most recent generation observed for this StatefulSet. It
         * corresponds to the StatefulSet's generation, which is updated on mutation by the API
         * Server.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready
         * Condition.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * replicas is the number of Pods created by the StatefulSet controller.
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * updateRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [replicas-updatedReplicas,replicas)
         */
-      var updateRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var updateRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * updatedReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by updateRevision.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1678,11 +1678,11 @@ object appsNs extends js.Object {
         * RollingUpdate is used to communicate parameters when Type is
         * RollingUpdateStatefulSetStrategyType.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
       /**
         * Type indicates the type of the StatefulSetUpdateStrategy.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isControllerRevision(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apps.v1beta1.ControllerRevision */ scala.Boolean = js.native
@@ -1718,13 +1718,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Data is the serialized representation of the state.
         */
       var data: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.pkgNs.runtimeNs.RawExtension]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1733,19 +1733,19 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevision]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Revision indicates the revision of the state represented by Data.
         */
-      var revision: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var revision: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -1759,12 +1759,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Items is the list of ControllerRevisions
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ControllerRevision]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ControllerRevision]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1772,13 +1772,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ControllerRevisionList]
           ] = js.undefined
       /**
         * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1794,7 +1794,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1803,26 +1803,26 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSet]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The desired behavior of this daemon set. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetSpec]] = js.undefined
       /**
         * The current status of this daemon set. This data may be out of date by some window of time.
         * Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetStatus]] = js.undefined
     }
     
     /**
@@ -1832,23 +1832,23 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of DaemonSet condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1862,12 +1862,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * A list of daemon sets.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DaemonSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1875,14 +1875,14 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DaemonSetList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1895,29 +1895,29 @@ object appsNs extends js.Object {
         * without any of its container crashing, for it to be considered available. Defaults to 0
         * (pod will be considered available as soon as it is ready).
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of old history to retain to allow rollback. This is a pointer to distinguish
         * between explicit zero and not specified. Defaults to 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * A label query over pods that are managed by the daemon set. Must match in order to be
         * controlled. It must match the pod template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * An object that describes the pod that will be created. The DaemonSet will create exactly
         * one copy of this pod on every node that matches the template's node selector (or on every
         * node if no node selector is specified). More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
       /**
         * An update strategy to replace existing DaemonSet pods with new pods.
         */
-      var updateStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonSetUpdateStrategy]] = js.undefined
+      var updateStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonSetUpdateStrategy]] = js.undefined
     }
     
     /**
@@ -1929,52 +1929,52 @@ object appsNs extends js.Object {
         * collision avoidance mechanism when it needs to create the name for the newest
         * ControllerRevision.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a DaemonSet's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DaemonSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DaemonSetCondition]]]
           ] = js.undefined
       /**
         * The number of nodes that are running at least 1 daemon pod and are supposed to run the
         * daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var currentNumberScheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var currentNumberScheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The total number of nodes that should be running the daemon pod (including nodes correctly
         * running the daemon pod). More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var desiredNumberScheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var desiredNumberScheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have one or more of the
         * daemon pod running and available (ready for at least spec.minReadySeconds)
         */
-      var numberAvailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var numberAvailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of nodes that are running the daemon pod, but are not supposed to run the daemon
         * pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/
         */
-      var numberMisscheduled: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var numberMisscheduled: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have one or more of the
         * daemon pod running and ready.
         */
-      var numberReady: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var numberReady: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The number of nodes that should be running the daemon pod and have none of the daemon pod
         * running and available (ready for at least spec.minReadySeconds)
         */
-      var numberUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var numberUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The most recent generation observed by the daemon set controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The total number of nodes that are running updated daemon pod
         */
-      var updatedNumberScheduled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedNumberScheduled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -1984,11 +1984,11 @@ object appsNs extends js.Object {
       /**
         * Rolling update config params. Present only if type = "RollingUpdate".
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateDaemonSet]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateDaemonSet]] = js.undefined
       /**
         * Type of daemon set update. Can be "RollingUpdate" or "OnDelete". Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2004,7 +2004,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2013,22 +2013,22 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Deployment]
           ] = js.undefined
       /**
         * Standard object metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior of the Deployment.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentSpec]] = js.undefined
       /**
         * Most recently observed status of the Deployment.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStatus]] = js.undefined
     }
     
     /**
@@ -2038,27 +2038,27 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The last time this condition was updated.
         */
-      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastUpdateTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of deployment condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2072,12 +2072,12 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Items is the list of Deployments.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Deployment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Deployment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2085,13 +2085,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.DeploymentList]
           ] = js.undefined
       /**
         * Standard list metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2104,11 +2104,11 @@ object appsNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Indicates that the deployment is paused.
         */
-      var paused: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var paused: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The maximum time in seconds for a deployment to make progress before it is considered to be
         * failed. The deployment controller will continue to process failed deployments and a
@@ -2116,30 +2116,30 @@ object appsNs extends js.Object {
         * Note that progress will not be estimated during the time a deployment is paused. Defaults
         * to 600s.
         */
-      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var progressDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Number of desired pods. This is a pointer to distinguish between explicit zero and not
         * specified. Defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of old ReplicaSets to retain to allow rollback. This is a pointer to distinguish
         * between explicit zero and not specified. Defaults to 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Label selector for pods. Existing ReplicaSets whose pods are selected by this will be the
         * ones affected by this deployment. It must match the pod template's labels.
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * The deployment strategy to use to replace existing pods with new ones.
         */
-      var strategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DeploymentStrategy]] = js.undefined
+      var strategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DeploymentStrategy]] = js.undefined
       /**
         * Template describes the pods that will be created.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
     }
     
     /**
@@ -2150,43 +2150,43 @@ object appsNs extends js.Object {
         * Total number of available pods (ready for at least minReadySeconds) targeted by this
         * deployment.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Count of hash collisions for the Deployment. The Deployment controller uses this field as a
         * collision avoidance mechanism when it needs to create the name for the newest ReplicaSet.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a deployment's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DeploymentCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DeploymentCondition]]]
           ] = js.undefined
       /**
         * The generation observed by the deployment controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of ready pods targeted by this deployment.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment (their labels match the
         * selector).
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of unavailable pods targeted by this deployment. This is the total number of
         * pods that are still required for the deployment to have 100% available capacity. They may
         * either be pods that are running but not yet available or pods that still have not been
         * created.
         */
-      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var unavailableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Total number of non-terminated pods targeted by this deployment that have the desired
         * template spec.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -2196,11 +2196,11 @@ object appsNs extends js.Object {
       /**
         * Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateDeployment]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateDeployment]] = js.undefined
       /**
         * Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2216,7 +2216,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2225,7 +2225,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSet]
           ] = js.undefined
       /**
         * If the Labels of a ReplicaSet are empty, they are defaulted to be the same as the Pod(s)
@@ -2233,19 +2233,19 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the ReplicaSet. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicaSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetSpec]] = js.undefined
       /**
         * Status is the most recently observed status of the ReplicaSet. This data may be out of date
         * by some window of time. Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicaSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicaSetStatus]] = js.undefined
     }
     
     /**
@@ -2255,23 +2255,23 @@ object appsNs extends js.Object {
       /**
         * The last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of replica set condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2285,13 +2285,13 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * List of ReplicaSets. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicaSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2299,14 +2299,14 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicaSetList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2319,27 +2319,27 @@ object appsNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the number of desired replicas. This is a pointer to distinguish between
         * explicit zero and unspecified. Defaults to 1. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Selector is a label query over pods that should match the replica count. Label keys and
         * values that must match in order to be controlled by this replica set. It must match the pod
         * template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * Template is the object that describes the pod that will be created if insufficient replicas
         * are detected. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
         */
       var template: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
           ] = js.undefined
     }
     
@@ -2350,31 +2350,31 @@ object appsNs extends js.Object {
       /**
         * The number of available replicas (ready for at least minReadySeconds) for this replica set.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a replica set's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicaSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicaSetCondition]]]
           ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replicaset.
         */
-      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * ObservedGeneration reflects the generation of the most recently observed ReplicaSet.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of ready replicas for this replica set.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the most recently oberved number of replicas. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller/#what-is-a-replicationcontroller
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -2393,7 +2393,7 @@ object appsNs extends js.Object {
         * DaemonSet pods, thus ensuring that at least 70% of original number of DaemonSet pods are
         * available at all times during the update.
         */
-      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -2410,7 +2410,7 @@ object appsNs extends js.Object {
         * scaled up further, ensuring that total number of pods running at any time during the update
         * is atmost 130% of desired pods.
         */
-      var maxSurge: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxSurge: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
         * The maximum number of pods that can be unavailable during the update. Value can be an
         * absolute number (ex: 5) or a percentage of desired pods (ex: 10%). Absolute number is
@@ -2421,7 +2421,7 @@ object appsNs extends js.Object {
         * that the total number of pods available at all times during the update is at least 70% of
         * desired pods.
         */
-      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var maxUnavailable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -2433,7 +2433,7 @@ object appsNs extends js.Object {
         * Partition indicates the ordinal at which the StatefulSet should be partitioned. Default
         * value is 0.
         */
-      var partition: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var partition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -2446,32 +2446,32 @@ object appsNs extends js.Object {
         * values. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
         * CamelCase. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * defines the behavior of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleSpec]] = js.undefined
       /**
         * current status of the scale. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status.
         * Read-only.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleStatus]] = js.undefined
     }
     
     /**
@@ -2481,7 +2481,7 @@ object appsNs extends js.Object {
       /**
         * desired number of instances for the scaled object.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -2491,14 +2491,14 @@ object appsNs extends js.Object {
       /**
         * actual number of observed instances of the scaled object.
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * label query over pods that should match the replicas count. More info:
         * http://kubernetes.io/docs/user-guide/labels#label-selectors
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -2509,7 +2509,7 @@ object appsNs extends js.Object {
         * selector field are populated. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var targetSelector: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var targetSelector: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2529,7 +2529,7 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2538,20 +2538,20 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSet]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the desired identities of pods in this set.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetSpec]] = js.undefined
       /**
         * Status is the current status of Pods in this StatefulSet. This data may be out of date by
         * some window of time.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetStatus]] = js.undefined
     }
     
     /**
@@ -2561,23 +2561,23 @@ object appsNs extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of statefulset condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2591,9 +2591,9 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apps/v1beta2`]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSet]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSet]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2601,10 +2601,10 @@ object appsNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StatefulSetList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2620,25 +2620,25 @@ object appsNs extends js.Object {
         * opposite order. The alternative policy is `Parallel` which will create pods in parallel to
         * match the desired scale without waiting, and on scale down will delete all pods at once.
         */
-      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var podManagementPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * replicas is the desired number of replicas of the given Template. These are replicas in the
         * sense that they are instantiations of the same Template, but individual replicas also have
         * a consistent identity. If unspecified, defaults to 1.
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * revisionHistoryLimit is the maximum number of revisions that will be maintained in the
         * StatefulSet's revision history. The revision history consists of all revisions not
         * represented by a currently applied StatefulSetSpec version. The default value is 10.
         */
-      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var revisionHistoryLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * selector is a label query over pods that should match the replica count. It must match the
         * pod template's labels. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
-      var selector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var selector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * serviceName is the name of the service that governs this StatefulSet. This service must
         * exist before the StatefulSet, and is responsible for the network identity of the set. Pods
@@ -2646,18 +2646,18 @@ object appsNs extends js.Object {
         * pod-specific-string.serviceName.default.svc.cluster.local where "pod-specific-string" is
         * managed by the StatefulSet controller.
         */
-      var serviceName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var serviceName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * template is the object that describes the pod that will be created if insufficient replicas
         * are detected. Each pod stamped out by the StatefulSet will fulfill this Template, but have
         * a unique identity from the rest of the StatefulSet.
         */
-      var template: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
+      var template: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PodTemplateSpec]
       /**
         * updateStrategy indicates the StatefulSetUpdateStrategy that will be employed to update Pods
         * in the StatefulSet when a revision is made to Template.
         */
-      var updateStrategy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StatefulSetUpdateStrategy]] = js.undefined
+      var updateStrategy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StatefulSetUpdateStrategy]] = js.undefined
       /**
         * volumeClaimTemplates is a list of claims that pods are allowed to reference. The
         * StatefulSet controller is responsible for mapping network identities to claims in a way
@@ -2666,9 +2666,9 @@ object appsNs extends js.Object {
         * precedence over any volumes in the template, with the same name.
         */
       var volumeClaimTemplates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               js.Array[
-                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
+                atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.PersistentVolumeClaim]
               ]
             ]
           ] = js.undefined
@@ -2683,48 +2683,48 @@ object appsNs extends js.Object {
         * controller uses this field as a collision avoidance mechanism when it needs to create the
         * name for the newest ControllerRevision.
         */
-      var collisionCount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var collisionCount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a statefulset's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StatefulSetCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StatefulSetCondition]]]
           ] = js.undefined
       /**
         * currentReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by currentRevision.
         */
-      var currentReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var currentReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * currentRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [0,currentReplicas).
         */
-      var currentRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var currentRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * observedGeneration is the most recent generation observed for this StatefulSet. It
         * corresponds to the StatefulSet's generation, which is updated on mutation by the API
         * Server.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready
         * Condition.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * replicas is the number of Pods created by the StatefulSet controller.
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * updateRevision, if not empty, indicates the version of the StatefulSet used to generate
         * Pods in the sequence [replicas-updatedReplicas,replicas)
         */
-      var updateRevision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var updateRevision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * updatedReplicas is the number of Pods created by the StatefulSet controller from the
         * StatefulSet version indicated by updateRevision.
         */
-      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var updatedReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -2737,11 +2737,11 @@ object appsNs extends js.Object {
         * RollingUpdate is used to communicate parameters when Type is
         * RollingUpdateStatefulSetStrategyType.
         */
-      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
+      var rollingUpdate: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RollingUpdateStatefulSetStrategy]] = js.undefined
       /**
         * Type indicates the type of the StatefulSetUpdateStrategy. Default is RollingUpdate.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isControllerRevision(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apps.v1beta2.ControllerRevision */ scala.Boolean = js.native

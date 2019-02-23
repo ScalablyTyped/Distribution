@@ -9,14 +9,14 @@ trait RouteState extends js.Object {
   /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  val destinationCidrBlock: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val destinationCidrBlock: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val transitGatewayAttachmentId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val transitGatewayRouteTableId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

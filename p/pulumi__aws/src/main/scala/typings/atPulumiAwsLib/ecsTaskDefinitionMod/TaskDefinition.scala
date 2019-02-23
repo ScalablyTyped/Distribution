@@ -62,7 +62,7 @@ class TaskDefinition protected ()
   /**
     * A set of placement constraints rules that are taken into consideration during task placement. Maximum number of `placement_constraints` is `10`.
     */
-  val placementConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_Expression]]] = js.native
+  val placementConstraints: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ExpressionType]]] = js.native
   /**
     * A set of launch types required by the task. The valid values are `EC2` and `FARGATE`.
     */
@@ -97,15 +97,15 @@ object TaskDefinition extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinition = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinition = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinitionState
   ): atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinition = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinitionState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.ecsTaskDefinitionMod.TaskDefinition = js.native

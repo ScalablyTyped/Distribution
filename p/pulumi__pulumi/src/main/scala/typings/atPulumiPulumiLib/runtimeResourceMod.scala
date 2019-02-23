@@ -12,7 +12,7 @@ object runtimeResourceMod extends js.Object {
     res: atPulumiPulumiLib.resourceMod.Resource,
     t: java.lang.String,
     name: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
+    props: atPulumiPulumiLib.outputMod.Inputs,
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): scala.Unit = js.native
   def registerResource(
@@ -20,17 +20,17 @@ object runtimeResourceMod extends js.Object {
     t: java.lang.String,
     name: java.lang.String,
     custom: scala.Boolean,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
+    props: atPulumiPulumiLib.outputMod.Inputs,
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): scala.Unit = js.native
-  def registerResourceOutputs(res: atPulumiPulumiLib.resourceMod.Resource, outputs: atPulumiPulumiLib.resourceMod.Inputs): scala.Unit = js.native
+  def registerResourceOutputs(res: atPulumiPulumiLib.resourceMod.Resource, outputs: atPulumiPulumiLib.outputMod.Inputs): scala.Unit = js.native
   def registerResourceOutputs(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    outputs: atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Inputs]
+    outputs: atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Inputs]
   ): scala.Unit = js.native
   def registerResourceOutputs(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    outputs: js.Promise[atPulumiPulumiLib.resourceMod.Inputs]
+    outputs: js.Promise[atPulumiPulumiLib.outputMod.Inputs]
   ): scala.Unit = js.native
 }
 

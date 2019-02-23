@@ -141,6 +141,10 @@ object AthenaNs extends js.Object {
       * The workgroup name.
       */
     var Name: WorkGroupName
+    /**
+      * One or more tags, separated by commas, that you want to attach to the workgroup as you create it.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait CreateWorkGroupOutput extends js.Object
@@ -307,6 +311,32 @@ object AthenaNs extends js.Object {
       * The unique IDs of each query execution as an array of strings.
       */
     var QueryExecutionIds: js.UndefOr[QueryExecutionIdList] = js.undefined
+  }
+  
+  trait ListTagsForResourceInput extends js.Object {
+    /**
+      * The maximum number of results to be returned per request that lists the tags for the workgroup resource.
+      */
+    var MaxResults: js.UndefOr[MaxTagsCount] = js.undefined
+    /**
+      * The token for the next set of results, or null if there are no additional results for this request, where the request lists the tags for the workgroup resource with the specified ARN.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * Lists the tags for the workgroup resource with the specified ARN.
+      */
+    var ResourceARN: AmazonResourceName
+  }
+  
+  trait ListTagsForResourceOutput extends js.Object {
+    /**
+      * A token to be used by the next request if this request is truncated.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * The list of tags associated with this workgroup.
+      */
+    var Tags: js.UndefOr[TagList] = js.undefined
   }
   
   trait ListWorkGroupsInput extends js.Object {
@@ -524,6 +554,30 @@ object AthenaNs extends js.Object {
   
   trait StopQueryExecutionOutput extends js.Object
   
+  trait Tag extends js.Object {
+    /**
+      * A tag key. The tag key length is from 1 to 128 Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys are case-sensitive and must be unique per resource. 
+      */
+    var Key: js.UndefOr[TagKey] = js.undefined
+    /**
+      * A tag value. The tag value length is from 0 to 256 Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag values are case-sensitive. 
+      */
+    var Value: js.UndefOr[TagValue] = js.undefined
+  }
+  
+  trait TagResourceInput extends js.Object {
+    /**
+      * Requests that one or more tags are added to the resource (such as a workgroup) for the specified ARN.
+      */
+    var ResourceARN: AmazonResourceName
+    /**
+      * One or more tags, separated by commas, to be added to the resource, such as a workgroup.
+      */
+    var Tags: TagList
+  }
+  
+  trait TagResourceOutput extends js.Object
+  
   @js.native
   trait Types
     extends awsDashSdkLib.libServiceMod.Service {
@@ -737,7 +791,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetQueryResultsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about the workgroup with the speficied name.
+      * Returns information about the workgroup with the specified name.
       */
     def getWorkGroup(): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getWorkGroup(
@@ -748,7 +802,7 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Returns information about the workgroup with the speficied name.
+      * Returns information about the workgroup with the specified name.
       */
     def getWorkGroup(params: GetWorkGroupInput): awsDashSdkLib.libRequestMod.Request[GetWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def getWorkGroup(
@@ -805,6 +859,29 @@ object AthenaNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[ListQueryExecutionsOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the tags associated with this workgroup.
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Lists the tags associated with this workgroup.
+      */
+    def listTagsForResource(params: ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Lists available workgroups for the account.
       */
@@ -875,6 +952,52 @@ object AthenaNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopQueryExecutionOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+      */
+    def tagResource(params: TagResourceInput): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+      */
+    def untagResource(params: UntagResourceInput): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceInput,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceOutput, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Updates the workgroup with the specified name. The workgroup's name cannot be changed.
       */
     def updateWorkGroup(): awsDashSdkLib.libRequestMod.Request[UpdateWorkGroupOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -928,6 +1051,19 @@ object AthenaNs extends js.Object {
       */
     var QueryExecutionId: js.UndefOr[QueryExecutionId] = js.undefined
   }
+  
+  trait UntagResourceInput extends js.Object {
+    /**
+      * Removes one or more tags from the workgroup resource for the specified ARN.
+      */
+    var ResourceARN: AmazonResourceName
+    /**
+      * Removes the tags associated with one or more tag keys from the workgroup resource.
+      */
+    var TagKeys: TagKeyList
+  }
+  
+  trait UntagResourceOutput extends js.Object
   
   trait UpdateWorkGroupInput extends js.Object {
     /**
@@ -1035,6 +1171,7 @@ object AthenaNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
+  type AmazonResourceName = java.lang.String
   type Boolean = scala.Boolean
   type BoxedBoolean = scala.Boolean
   type BytesScannedCutoffValue = scala.Double
@@ -1052,6 +1189,7 @@ object AthenaNs extends js.Object {
   type MaxNamedQueriesCount = scala.Double
   type MaxQueryExecutionsCount = scala.Double
   type MaxQueryResults = scala.Double
+  type MaxTagsCount = scala.Double
   type MaxWorkGroupsCount = scala.Double
   type NameString = java.lang.String
   type NamedQueryId = java.lang.String
@@ -1065,6 +1203,10 @@ object AthenaNs extends js.Object {
   type RowList = js.Array[Row]
   type StatementType = awsDashSdkLib.awsDashSdkLibStrings.DDL | awsDashSdkLib.awsDashSdkLibStrings.DML | awsDashSdkLib.awsDashSdkLibStrings.UTILITY | java.lang.String
   type String = java.lang.String
+  type TagKey = java.lang.String
+  type TagKeyList = js.Array[TagKey]
+  type TagList = js.Array[Tag]
+  type TagValue = java.lang.String
   type Token = java.lang.String
   type UnprocessedNamedQueryIdList = js.Array[UnprocessedNamedQueryId]
   type UnprocessedQueryExecutionIdList = js.Array[UnprocessedQueryExecutionId]

@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_OriginAccessIdentityInput extends js.Object {
-  var originAccessIdentity: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  var originAccessIdentity: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

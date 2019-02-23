@@ -9,10 +9,10 @@ trait UserPolicyAttachmentArgs extends js.Object {
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
+  val policyArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
   /**
     * The user the policy should be applied to
     */
-  val user: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamUserMod.User]
+  val user: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamUserMod.User]
 }
 

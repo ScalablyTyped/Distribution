@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 trait GetTableResult extends js.Object {
   val arn: java.lang.String
   val attributes: js.Array[atPulumiAwsLib.Anon_NameTypeString]
+  val billingMode: java.lang.String
   val globalSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_HashKey]
   val hashKey: java.lang.String
   /**
@@ -15,6 +16,7 @@ trait GetTableResult extends js.Object {
     */
   val id: java.lang.String
   val localSecondaryIndexes: js.Array[atPulumiAwsLib.Anon_NameNonKeyAttributes]
+  val pointInTimeRecovery: atPulumiAwsLib.Anon_EnabledBoolean_204597847
   val rangeKey: java.lang.String
   val readCapacity: scala.Double
   val serverSideEncryption: atPulumiAwsLib.Anon_EnabledBoolean_204597847

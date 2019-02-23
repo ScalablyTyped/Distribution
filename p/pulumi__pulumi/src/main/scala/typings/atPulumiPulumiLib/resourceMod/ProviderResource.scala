@@ -17,7 +17,7 @@ abstract class ProviderResource protected () extends CustomResource {
     * @param opts A bag of options that control this provider's behavior.
     */
   def this(pkg: java.lang.String, name: java.lang.String) = this()
-  def this(pkg: java.lang.String, name: java.lang.String, props: Inputs) = this()
-  def this(pkg: java.lang.String, name: java.lang.String, props: Inputs, opts: ResourceOptions) = this()
+  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(pkg: java.lang.String, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: ResourceOptions) = this()
 }
 

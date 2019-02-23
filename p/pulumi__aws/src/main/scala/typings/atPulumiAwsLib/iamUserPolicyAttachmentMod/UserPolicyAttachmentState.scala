@@ -9,10 +9,10 @@ trait UserPolicyAttachmentState extends js.Object {
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
+  val policyArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
   /**
     * The user the policy should be applied to
     */
-  val user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamUserMod.User]] = js.undefined
+  val user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamUserMod.User]] = js.undefined
 }
 

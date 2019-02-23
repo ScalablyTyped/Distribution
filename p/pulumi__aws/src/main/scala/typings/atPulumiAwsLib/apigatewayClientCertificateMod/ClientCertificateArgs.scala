@@ -9,6 +9,6 @@ trait ClientCertificateArgs extends js.Object {
   /**
     * The description of the client certificate.
     */
-  val description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

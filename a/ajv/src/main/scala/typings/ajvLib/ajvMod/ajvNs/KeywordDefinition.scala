@@ -17,6 +17,7 @@ trait KeywordDefinition extends js.Object {
       ValidateFunction
     ]
   ] = js.undefined
+  var dependencies: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   var errors: js.UndefOr[scala.Boolean | java.lang.String] = js.undefined
   var `inline`: js.UndefOr[
     js.Function4[
@@ -39,6 +40,7 @@ trait KeywordDefinition extends js.Object {
   var modifying: js.UndefOr[scala.Boolean] = js.undefined
   // schema: false makes validate not to expect schema (ValidateFunction)
   var schema: js.UndefOr[scala.Boolean] = js.undefined
+  var statements: js.UndefOr[scala.Boolean] = js.undefined
   var `type`: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
   var valid: js.UndefOr[scala.Boolean] = js.undefined
   // one and only one of the following properties should be present

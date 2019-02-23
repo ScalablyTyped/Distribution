@@ -23,7 +23,7 @@ class ComponentResource protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(`type`: java.lang.String, name: java.lang.String) = this()
-  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.resourceMod.Inputs) = this()
-  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
+  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ComponentResourceOptions) = this()
 }
 

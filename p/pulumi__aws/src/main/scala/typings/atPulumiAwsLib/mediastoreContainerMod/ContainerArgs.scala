@@ -9,6 +9,6 @@ trait ContainerArgs extends js.Object {
   /**
     * The name of the container. Must contain alphanumeric characters or underscores.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

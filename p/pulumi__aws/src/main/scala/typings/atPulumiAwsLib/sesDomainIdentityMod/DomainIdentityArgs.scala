@@ -9,6 +9,6 @@ trait DomainIdentityArgs extends js.Object {
   /**
     * The domain name to assign to SES
     */
-  val domain: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val domain: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

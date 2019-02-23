@@ -9,10 +9,10 @@ trait AttachmentArgs extends js.Object {
   /**
     * The name of the ELB.
     */
-  val elb: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val elb: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Instance ID to place in the ELB pool.
     */
-  val instance: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val instance: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

@@ -9,10 +9,10 @@ trait RouteTablePropagationArgs extends js.Object {
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

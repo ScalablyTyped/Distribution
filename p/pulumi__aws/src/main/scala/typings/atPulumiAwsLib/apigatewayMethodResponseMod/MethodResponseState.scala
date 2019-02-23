@@ -9,17 +9,17 @@ trait MethodResponseState extends js.Object {
   /**
     * The HTTP Method (`GET`, `POST`, `PUT`, `DELETE`, `HEAD`, `OPTIONS`, `ANY`)
     */
-  val httpMethod: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val httpMethod: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The API resource ID
     */
-  val resourceId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val resourceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A map of the API models used for the response's content type
     */
   val responseModels: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ]
   ] = js.undefined
   /**
@@ -28,21 +28,21 @@ trait MethodResponseState extends js.Object {
     * would define that the header `X-Some-Header` can be provided on the response.
     */
   val responseParameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]]
+    atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[scala.Boolean]]
     ]
   ] = js.undefined
   /**
     * **Deprecated**, use `response_parameters` instead.
     */
-  val responseParametersInJson: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val responseParametersInJson: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The ID of the associated REST API
     */
-  val restApi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]] = js.undefined
+  val restApi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.apigatewayRestApiMod.RestApi]] = js.undefined
   /**
     * The HTTP status code
     */
-  val statusCode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val statusCode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

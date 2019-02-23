@@ -1,0 +1,17 @@
+package typings
+package atPulumiAwsLib.curGetReportDefinitionMod
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+@JSImport("@pulumi/aws/cur/getReportDefinition", JSImport.Namespace)
+@js.native
+object ^ extends js.Object {
+  def getReportDefinition(args: atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionArgs): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] = js.native
+  def getReportDefinition(
+    args: atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionArgs,
+    opts: atPulumiPulumiLib.invokeMod.InvokeOptions
+  ): js.Promise[atPulumiAwsLib.curGetReportDefinitionMod.GetReportDefinitionResult] = js.native
+}
+

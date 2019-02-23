@@ -12,15 +12,15 @@ trait ByteMatchSetState extends js.Object {
     * the location in requests that you want to search, and other settings.
     */
   val byteMatchTuples: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FieldToMatchPositionalConstraint]
       ]
     ]
   ] = js.undefined
   /**
     * The name or description of the Byte Match Set.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

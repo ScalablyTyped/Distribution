@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webdriver"
-version := "5.6.0-5296a4"
+version := "5.6.2-9ddb71"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,11 +8,11 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
   "org.scalablytyped" %%% "deepmerge" % "3.2.0-30afb2",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7ab4be",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-28155d",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "lodash_dot_merge" % "4.6-dt-20190212Z-649a6d",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-9b7291",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c8dda0",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261")
 publishArtifact in packageDoc := false

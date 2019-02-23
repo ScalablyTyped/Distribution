@@ -9,10 +9,10 @@ trait VpcEndpointServiceAllowedPrincipleState extends js.Object {
   /**
     * The ARN of the principal to allow permissions.
     */
-  val principalArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val principalArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The ID of the VPC endpoint service to allow permission.
     */
-  val vpcEndpointServiceId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val vpcEndpointServiceId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

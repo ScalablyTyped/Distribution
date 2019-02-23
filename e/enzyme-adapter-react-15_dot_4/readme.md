@@ -3,5 +3,5 @@
 // Project: http://airbnb.io/enzyme/
 // Definitions by: Nabeelah Ali <https://github.com/nali>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 2.8
+// TypeScript Version: 3.1
 ```

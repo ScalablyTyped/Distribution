@@ -12,19 +12,19 @@ trait JobQueueArgs extends js.Object {
     * in the list will dictate the order. You can associate up to 3 compute environments
     * with a job queue.
     */
-  val computeEnvironments: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+  val computeEnvironments: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   /**
     * Specifies the name of the job queue.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The priority of the job queue. Job queues with a higher priority
     * are evaluated first when associated with the same compute environment.
     */
-  val priority: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+  val priority: atPulumiPulumiLib.outputMod.Input[scala.Double]
   /**
     * The state of the job queue. Must be one of: `ENABLED` or `DISABLED`
     */
-  val state: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val state: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

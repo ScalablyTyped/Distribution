@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atPollyjsCoreMod {
+  type ErrorEventListener = js.Function2[/* req */ Request, /* error */ js.Any, EventListenerResponse]
+  type ErrorRouteEvent = atPollyjsCoreLib.atPollyjsCoreLibStrings.error
   type EventListenerResponse = js.Any
   type InterceptHandler = js.Function3[
     /* req */ Request, 

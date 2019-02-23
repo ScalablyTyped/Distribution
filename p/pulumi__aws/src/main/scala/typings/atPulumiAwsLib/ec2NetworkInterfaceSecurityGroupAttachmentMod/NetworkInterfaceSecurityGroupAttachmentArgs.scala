@@ -9,10 +9,10 @@ trait NetworkInterfaceSecurityGroupAttachmentArgs extends js.Object {
   /**
     * The ID of the network interface to attach to.
     */
-  val networkInterfaceId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val networkInterfaceId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The ID of the security group.
     */
-  val securityGroupId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val securityGroupId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

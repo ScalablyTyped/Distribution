@@ -9,10 +9,10 @@ trait LogDestinationPolicyState extends js.Object {
   /**
     * The policy document. This is a JSON formatted string.
     */
-  val accessPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val accessPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A name for the subscription filter
     */
-  val destinationName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val destinationName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

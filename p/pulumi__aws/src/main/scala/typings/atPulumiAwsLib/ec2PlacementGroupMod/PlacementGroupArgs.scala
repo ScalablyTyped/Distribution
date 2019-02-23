@@ -9,10 +9,10 @@ trait PlacementGroupArgs extends js.Object {
   /**
     * The name of the placement group.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The placement strategy.
     */
-  val strategy: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy]
+  val strategy: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.ec2PlacementStrategyMod.PlacementStrategy]
 }
 

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 trait LDOptionsBase extends js.Object {
   /**
     * Whether all user attributes (except the user key) should be marked as private, and
-    * not sent to LaunchDarkly.
+    * not sent to LaunchDarkly in analytics events.
     *
     * By default, this is false.
     */
@@ -68,7 +68,8 @@ trait LDOptionsBase extends js.Object {
   var logger: js.UndefOr[LDLogger] = js.undefined
   /**
     * The names of user attributes that should be marked as private, and not sent
-    * to LaunchDarkly.
+    * to LaunchDarkly in analytics events. You can also specify this on a per-user basis
+    * with [[LDUser.privateAttributeNames]].
     */
   var privateAttributeNames: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**

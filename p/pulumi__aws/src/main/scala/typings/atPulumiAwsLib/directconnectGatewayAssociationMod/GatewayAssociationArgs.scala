@@ -9,10 +9,10 @@ trait GatewayAssociationArgs extends js.Object {
   /**
     * The ID of the Direct Connect Gateway.
     */
-  val dxGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dxGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The ID of the VGW with which to associate the gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

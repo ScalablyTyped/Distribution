@@ -9,10 +9,10 @@ trait QueryLogArgs extends js.Object {
   /**
     * CloudWatch log group ARN to send query logs.
     */
-  val cloudwatchLogGroupArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val cloudwatchLogGroupArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Route53 hosted zone ID to enable query logs.
     */
-  val zoneId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val zoneId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

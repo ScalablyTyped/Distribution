@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_CountInput extends js.Object {
-  var count: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+  var count: atPulumiPulumiLib.outputMod.Input[scala.Double]
 }
 

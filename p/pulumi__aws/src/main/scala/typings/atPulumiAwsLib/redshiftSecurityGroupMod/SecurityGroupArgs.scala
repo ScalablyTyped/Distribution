@@ -9,18 +9,18 @@ trait SecurityGroupArgs extends js.Object {
   /**
     * The description of the Redshift security group. Defaults to "Managed by Terraform".
     */
-  val description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of ingress rules.
     */
-  val ingress: atPulumiPulumiLib.resourceMod.Input[
+  val ingress: atPulumiPulumiLib.outputMod.Input[
     js.Array[
-      atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupNameSecurityGroupOwnerId]
+      atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_CidrSecurityGroupNameSecurityGroupOwnerId]
     ]
   ]
   /**
     * The name of the Redshift security group.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

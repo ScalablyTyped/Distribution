@@ -24,16 +24,16 @@ class StackReference protected ()
   /**
     * The name of the referenced stack.
     */
-  val name: atPulumiPulumiLib.resourceMod.Output[java.lang.String] = js.native
+  val name: atPulumiPulumiLib.outputMod.Output[java.lang.String] = js.native
   /**
     * The outputs of the referenced stack.
     */
-  val outputs: atPulumiPulumiLib.resourceMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
+  val outputs: atPulumiPulumiLib.outputMod.Output[org.scalablytyped.runtime.StringDictionary[_]] = js.native
   /**
     * Fetches the value of the named stack output.
     *
     * @param name The name of the stack output to fetch.
     */
-  def getOutput(name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]): atPulumiPulumiLib.resourceMod.Output[_] = js.native
+  def getOutput(name: atPulumiPulumiLib.outputMod.Input[java.lang.String]): atPulumiPulumiLib.outputMod.Output[_] = js.native
 }
 

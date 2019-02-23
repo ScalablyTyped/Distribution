@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation._
 object GlueNs extends js.Object {
   trait Action extends js.Object {
     /**
-      * Arguments to be passed to the job run. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
+      * The job arguments used when this trigger fires. For this job run, they replace the default arguments set in the job definition itself. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
       */
     var Arguments: js.UndefOr[GenericMap] = js.undefined
     /**
@@ -59,7 +59,7 @@ object GlueNs extends js.Object {
   
   trait BatchDeleteConnectionRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which the connections reside. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which the connections reside. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -153,6 +153,60 @@ object GlueNs extends js.Object {
     var Errors: js.UndefOr[TableVersionErrors] = js.undefined
   }
   
+  trait BatchGetCrawlersRequest extends js.Object {
+    /**
+      * A list of crawler names, which may be the names returned from the ListCrawlers operation.
+      */
+    var CrawlerNames: CrawlerNameList
+  }
+  
+  trait BatchGetCrawlersResponse extends js.Object {
+    /**
+      * A list of crawler definitions.
+      */
+    var Crawlers: js.UndefOr[CrawlerList] = js.undefined
+    /**
+      * A list of crawlers not found.
+      */
+    var CrawlersNotFound: js.UndefOr[CrawlerNameList] = js.undefined
+  }
+  
+  trait BatchGetDevEndpointsRequest extends js.Object {
+    /**
+      * The list of DevEndpoint names, which may be the names returned from the ListDevEndpoint operation.
+      */
+    var DevEndpointNames: DevEndpointNames
+  }
+  
+  trait BatchGetDevEndpointsResponse extends js.Object {
+    /**
+      * A list of DevEndpoint definitions.
+      */
+    var DevEndpoints: js.UndefOr[DevEndpointList] = js.undefined
+    /**
+      * A list of DevEndpoints not found.
+      */
+    var DevEndpointsNotFound: js.UndefOr[DevEndpointNames] = js.undefined
+  }
+  
+  trait BatchGetJobsRequest extends js.Object {
+    /**
+      * A list of job names, which may be the names returned from the ListJobs operation.
+      */
+    var JobNames: JobNameList
+  }
+  
+  trait BatchGetJobsResponse extends js.Object {
+    /**
+      * A list of job definitions.
+      */
+    var Jobs: js.UndefOr[JobList] = js.undefined
+    /**
+      * A list of names of jobs not found.
+      */
+    var JobsNotFound: js.UndefOr[JobNameList] = js.undefined
+  }
+  
   trait BatchGetPartitionRequest extends js.Object {
     /**
       * The ID of the Data Catalog where the partitions in question reside. If none is supplied, the AWS account ID is used by default.
@@ -181,6 +235,24 @@ object GlueNs extends js.Object {
       * A list of the partition values in the request for which partions were not returned.
       */
     var UnprocessedKeys: js.UndefOr[BatchGetPartitionValueList] = js.undefined
+  }
+  
+  trait BatchGetTriggersRequest extends js.Object {
+    /**
+      * A list of trigger names, which may be the names returned from the ListTriggers operation.
+      */
+    var TriggerNames: TriggerNameList
+  }
+  
+  trait BatchGetTriggersResponse extends js.Object {
+    /**
+      * A list of trigger definitions.
+      */
+    var Triggers: js.UndefOr[TriggerList] = js.undefined
+    /**
+      * A list of names of triggers not found.
+      */
+    var TriggersNotFound: js.UndefOr[TriggerNameList] = js.undefined
   }
   
   trait BatchStopJobRunError extends js.Object {
@@ -371,7 +443,7 @@ object GlueNs extends js.Object {
   
   trait Connection extends js.Object {
     /**
-      * These key-value pairs define parameters for the connection:    HOST - The host URI: either the fully qualified domain name (FQDN) or the IPv4 address of the database host.    PORT - The port number, between 1024 and 65535, of the port on which the database host is listening for database connections.    USER_NAME - The name under which to log in to the database. The value string for USER_NAME is "USERNAME".    PASSWORD - A password, if one is used, for the user name.    ENCRYPTED_PASSWORD - When you enable connection password protection by setting ConnectionPasswordEncryption in the Data Catalog encryption settings, this field stores the key you designate to encrypt the password.    JDBC_DRIVER_JAR_URI - The S3 path of the a jar file that contains the JDBC driver to use.    JDBC_DRIVER_CLASS_NAME - The class name of the JDBC driver to use.    JDBC_ENGINE - The name of the JDBC engine to use.    JDBC_ENGINE_VERSION - The version of the JDBC engine to use.    CONFIG_FILES - (Reserved for future use).    INSTANCE_ID - The instance ID to use.    JDBC_CONNECTION_URL - The URL for the JDBC connection.    JDBC_ENFORCE_SSL - A Boolean string (true, false) specifying whether SSL with hostname matching will be enforced for the JDBC connection on the client. The default is false.  
+      * These key-value pairs define parameters for the connection:    HOST - The host URI: either the fully qualified domain name (FQDN) or the IPv4 address of the database host.    PORT - The port number, between 1024 and 65535, of the port on which the database host is listening for database connections.    USER_NAME - The name under which to log in to the database. The value string for USER_NAME is "USERNAME".    PASSWORD - A password, if one is used, for the user name.    ENCRYPTED_PASSWORD - When you enable connection password protection by setting ConnectionPasswordEncryption in the Data Catalog encryption settings, this field stores the encrypted password.    JDBC_DRIVER_JAR_URI - The Amazon S3 path of the JAR file that contains the JDBC driver to use.    JDBC_DRIVER_CLASS_NAME - The class name of the JDBC driver to use.    JDBC_ENGINE - The name of the JDBC engine to use.    JDBC_ENGINE_VERSION - The version of the JDBC engine to use.    CONFIG_FILES - (Reserved for future use).    INSTANCE_ID - The instance ID to use.    JDBC_CONNECTION_URL - The URL for the JDBC connection.    JDBC_ENFORCE_SSL - A Boolean string (true, false) specifying whether Secure Sockets Layer (SSL) with hostname matching will be enforced for the JDBC connection on the client. The default is false.  
       */
     var ConnectionProperties: js.UndefOr[ConnectionProperties] = js.undefined
     /**
@@ -379,19 +451,19 @@ object GlueNs extends js.Object {
       */
     var ConnectionType: js.UndefOr[ConnectionType] = js.undefined
     /**
-      * The time this connection definition was created.
+      * The time that this connection definition was created.
       */
     var CreationTime: js.UndefOr[Timestamp] = js.undefined
     /**
-      * Description of the connection.
+      * The description of the connection.
       */
     var Description: js.UndefOr[DescriptionString] = js.undefined
     /**
-      * The user, group or role that last updated this connection definition.
+      * The user, group, or role that last updated this connection definition.
       */
     var LastUpdatedBy: js.UndefOr[NameString] = js.undefined
     /**
-      * The last time this connection definition was updated.
+      * The last time that this connection definition was updated.
       */
     var LastUpdatedTime: js.UndefOr[Timestamp] = js.undefined
     /**
@@ -403,7 +475,7 @@ object GlueNs extends js.Object {
       */
     var Name: js.UndefOr[NameString] = js.undefined
     /**
-      * A map of physical connection requirements, such as VPC and SecurityGroup, needed for making this connection successfully.
+      * A map of physical connection requirements, such as virtual private cloud (VPC) and SecurityGroup, that are needed to make this connection successfully.
       */
     var PhysicalConnectionRequirements: js.UndefOr[PhysicalConnectionRequirements] = js.undefined
   }
@@ -418,7 +490,7 @@ object GlueNs extends js.Object {
       */
     var ConnectionType: ConnectionType
     /**
-      * Description of the connection.
+      * The description of the connection.
       */
     var Description: js.UndefOr[DescriptionString] = js.undefined
     /**
@@ -430,14 +502,14 @@ object GlueNs extends js.Object {
       */
     var Name: NameString
     /**
-      * A map of physical connection requirements, such as VPC and SecurityGroup, needed for making this connection successfully.
+      * A map of physical connection requirements, such as virtual private cloud (VPC) and SecurityGroup, that are needed to successfully make this connection.
       */
     var PhysicalConnectionRequirements: js.UndefOr[PhysicalConnectionRequirements] = js.undefined
   }
   
   trait ConnectionPasswordEncryption extends js.Object {
     /**
-      * A KMS key used to protect access to the JDBC source.  All users in your account should be granted the kms:encrypt permission to encrypt passwords before storing them in the Data Catalog (through the AWS Glue CreateConnection operation). The decrypt permission should be granted only to KMS key admins and IAM roles designated for AWS Glue crawlers.
+      * An AWS KMS key that is used to encrypt the connection password.  If connection password protection is enabled, the caller of CreateConnection and UpdateConnection needs at least kms:Encrypt permission on the specified AWS KMS key, to encrypt passwords before storing them in the Data Catalog.  You can set the decrypt permission to enable or restrict access on the password key according to your security requirements.
       */
     var AwsKmsKeyId: js.UndefOr[NameString] = js.undefined
     /**
@@ -596,7 +668,7 @@ object GlueNs extends js.Object {
   
   trait CreateConnectionRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which to create the connection. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -648,6 +720,10 @@ object GlueNs extends js.Object {
       * The table prefix used for catalog tables that are created.
       */
     var TablePrefix: js.UndefOr[TablePrefix] = js.undefined
+    /**
+      * The tags to use with this crawler request. You may use tags to limit access to the crawler. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
     /**
       * A list of collection of targets to crawl.
       */
@@ -710,6 +786,10 @@ object GlueNs extends js.Object {
       * The subnet ID for the new DevEndpoint to use.
       */
     var SubnetId: js.UndefOr[GenericString] = js.undefined
+    /**
+      * The tags to use with this DevEndpoint. You may use tags to limit access to the DevEndpoint. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
   }
   
   trait CreateDevEndpointResponse extends js.Object {
@@ -824,7 +904,7 @@ object GlueNs extends js.Object {
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
     /**
-      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. The value that can be allocated for MaxCapacity depends on whether you are running a python shell job, or an Apache Spark ETL job:   When you specify a python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
       */
     var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
@@ -847,6 +927,10 @@ object GlueNs extends js.Object {
       * The name of the SecurityConfiguration structure to be used with this job.
       */
     var SecurityConfiguration: js.UndefOr[NameString] = js.undefined
+    /**
+      * The tags to use with this job. You may use tags to limit access to the job. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
     /**
       * The job timeout in minutes. This is the maximum time that a job run can consume resources before it is terminated and enters TIMEOUT status. The default is 2,880 minutes (48 hours).
       */
@@ -983,6 +1067,10 @@ object GlueNs extends js.Object {
       */
     var StartOnCreation: js.UndefOr[BooleanValue] = js.undefined
     /**
+      * The tags to use with this trigger. You may use tags to limit access to the trigger. For more information about tags in AWS Glue, see AWS Tags in AWS Glue in the developer guide. 
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+    /**
       * The type of the new trigger.
       */
     var Type: TriggerType
@@ -1029,11 +1117,11 @@ object GlueNs extends js.Object {
   
   trait DataCatalogEncryptionSettings extends js.Object {
     /**
-      * When password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption.
+      * When connection password protection is enabled, the Data Catalog uses a customer-provided key to encrypt the password as part of CreateConnection or UpdateConnection and store it in the ENCRYPTED_PASSWORD field in the connection properties. You can enable catalog encryption or only password encryption.
       */
     var ConnectionPasswordEncryption: js.UndefOr[ConnectionPasswordEncryption] = js.undefined
     /**
-      * Specifies encryption-at-rest configuration for the Data Catalog.
+      * Specifies the encryption-at-rest configuration for the Data Catalog.
       */
     var EncryptionAtRest: js.UndefOr[EncryptionAtRest] = js.undefined
   }
@@ -1091,7 +1179,7 @@ object GlueNs extends js.Object {
   
   trait DeleteConnectionRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which the connection resides. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which the connection resides. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -1462,11 +1550,11 @@ object GlueNs extends js.Object {
   
   trait GetConnectionRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which the connection resides. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which the connection resides. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
-      * Allow you to retrieve the connection metadata without displaying the password. For instance, the AWS Glue console uses this flag to retrieve connections, since the console does not display passwords. Set this parameter where the caller may not have permission to use the KMS key to decrypt the password, but does have permission to access the rest of the connection metadata (that is, the other connection properties).
+      * Allows you to retrieve the connection metadata without returning the password. For instance, the AWS Glue console uses this flag to retrieve the connection, and does not display the password. Set this parameter when the caller might not have permission to use the AWS KMS key to decrypt the password, but does have permission to access the rest of the connection properties.
       */
     var HidePassword: js.UndefOr[Boolean] = js.undefined
     /**
@@ -1495,7 +1583,7 @@ object GlueNs extends js.Object {
   
   trait GetConnectionsRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which the connections reside. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which the connections reside. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -1503,7 +1591,7 @@ object GlueNs extends js.Object {
       */
     var Filter: js.UndefOr[GetConnectionsFilter] = js.undefined
     /**
-      * Allow you to retrieve the connection metadata without displaying the password. For instance, the AWS Glue console uses this flag to retrieve connections, since the console does not display passwords. Set this parameter where the caller may not have permission to use the KMS key to decrypt the password, but does have permission to access the rest of the connection metadata (that is, the other connection properties).
+      * Allows you to retrieve the connection metadata without returning the password. For instance, the AWS Glue console uses this flag to retrieve the connection, and does not display the password. Set this parameter when the caller might not have permission to use the AWS KMS key to decrypt the password, but does have permission to access the rest of the connection properties.
       */
     var HidePassword: js.UndefOr[Boolean] = js.undefined
     /**
@@ -1591,7 +1679,7 @@ object GlueNs extends js.Object {
   
   trait GetDataCatalogEncryptionSettingsRequest extends js.Object {
     /**
-      * The ID of the Data Catalog for which to retrieve the security configuration. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog for which to retrieve the security configuration. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   }
@@ -2082,6 +2170,20 @@ object GlueNs extends js.Object {
     var TableList: js.UndefOr[TableList] = js.undefined
   }
   
+  trait GetTagsRequest extends js.Object {
+    /**
+      * The Amazon ARN of the resource for which to retrieve tags.
+      */
+    var ResourceArn: GlueResourceArn
+  }
+  
+  trait GetTagsResponse extends js.Object {
+    /**
+      * The requested tags.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+  }
+  
   trait GetTriggerRequest extends js.Object {
     /**
       * The name of the trigger to retrieve.
@@ -2271,7 +2373,7 @@ object GlueNs extends js.Object {
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
     /**
-      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. The value that can be allocated for MaxCapacity depends on whether you are running a python shell job, or an Apache Spark ETL job:   When you specify a python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
       */
     var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
@@ -2351,7 +2453,7 @@ object GlueNs extends js.Object {
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
-      * The job arguments associated with this run. These override equivalent default arguments set for the job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
+      * The job arguments associated with this run. For this job run, they replace the default arguments set in the job definition itself. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
       */
     var Arguments: js.UndefOr[GenericMap] = js.undefined
     /**
@@ -2391,7 +2493,7 @@ object GlueNs extends js.Object {
       */
     var LogGroupName: js.UndefOr[GenericString] = js.undefined
     /**
-      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. The value that can be allocated for MaxCapacity depends on whether you are running a python shell job, or an Apache Spark ETL job:   When you specify a python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
       */
     var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
@@ -2454,7 +2556,7 @@ object GlueNs extends js.Object {
       */
     var LogUri: js.UndefOr[UriString] = js.undefined
     /**
-      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. The value that can be allocated for MaxCapacity depends on whether you are running a python shell job, or an Apache Spark ETL job:   When you specify a python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
       */
     var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
@@ -2527,6 +2629,114 @@ object GlueNs extends js.Object {
       * Status of the last crawl.
       */
     var Status: js.UndefOr[LastCrawlStatus] = js.undefined
+  }
+  
+  trait ListCrawlersRequest extends js.Object {
+    /**
+      * The maximum size of a list to return.
+      */
+    var MaxResults: js.UndefOr[PageSize] = js.undefined
+    /**
+      * A continuation token, if this is a continuation request.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+    /**
+      * Specifies to return only these tagged resources.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+  }
+  
+  trait ListCrawlersResponse extends js.Object {
+    /**
+      * The names of all crawlers in the account, or the crawlers with the specified tags.
+      */
+    var CrawlerNames: js.UndefOr[CrawlerNameList] = js.undefined
+    /**
+      * A continuation token, if the returned list does not contain the last metric available.
+      */
+    var NextToken: js.UndefOr[Token] = js.undefined
+  }
+  
+  trait ListDevEndpointsRequest extends js.Object {
+    /**
+      * The maximum size of a list to return.
+      */
+    var MaxResults: js.UndefOr[PageSize] = js.undefined
+    /**
+      * A continuation token, if this is a continuation request.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+    /**
+      * Specifies to return only these tagged resources.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+  }
+  
+  trait ListDevEndpointsResponse extends js.Object {
+    /**
+      * The names of all DevEndpoints in the account, or the DevEndpoints with the specified tags.
+      */
+    var DevEndpointNames: js.UndefOr[DevEndpointNameList] = js.undefined
+    /**
+      * A continuation token, if the returned list does not contain the last metric available.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+  }
+  
+  trait ListJobsRequest extends js.Object {
+    /**
+      * The maximum size of a list to return.
+      */
+    var MaxResults: js.UndefOr[PageSize] = js.undefined
+    /**
+      * A continuation token, if this is a continuation request.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+    /**
+      * Specifies to return only these tagged resources.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+  }
+  
+  trait ListJobsResponse extends js.Object {
+    /**
+      * The names of all jobs in the account, or the jobs with the specified tags.
+      */
+    var JobNames: js.UndefOr[JobNameList] = js.undefined
+    /**
+      * A continuation token, if the returned list does not contain the last metric available.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+  }
+  
+  trait ListTriggersRequest extends js.Object {
+    /**
+      *  The name of the job for which to retrieve triggers. The trigger that can start this job will be returned, and if there is no such trigger, all triggers will be returned.
+      */
+    var DependentJobName: js.UndefOr[NameString] = js.undefined
+    /**
+      * The maximum size of a list to return.
+      */
+    var MaxResults: js.UndefOr[PageSize] = js.undefined
+    /**
+      * A continuation token, if this is a continuation request.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+    /**
+      * Specifies to return only these tagged resources.
+      */
+    var Tags: js.UndefOr[TagsMap] = js.undefined
+  }
+  
+  trait ListTriggersResponse extends js.Object {
+    /**
+      * A continuation token, if the returned list does not contain the last metric available.
+      */
+    var NextToken: js.UndefOr[GenericString] = js.undefined
+    /**
+      * The names of all triggers in the account, or the triggers with the specified tags.
+      */
+    var TriggerNames: js.UndefOr[TriggerNameList] = js.undefined
   }
   
   trait Location extends js.Object {
@@ -2659,7 +2869,7 @@ object GlueNs extends js.Object {
       */
     var StorageDescriptor: js.UndefOr[StorageDescriptor] = js.undefined
     /**
-      * The values of the partition.
+      * The values of the partition. Although this parameter is not required by the SDK, you must specify this parameter for a valid input.
       */
     var Values: js.UndefOr[ValueStringList] = js.undefined
   }
@@ -2673,7 +2883,7 @@ object GlueNs extends js.Object {
   
   trait PhysicalConnectionRequirements extends js.Object {
     /**
-      * The connection's availability zone. This field is redundant, since the specified subnet implies the availability zone to be used. The field must be populated now, but will be deprecated in the future.
+      * The connection's Availability Zone. This field is redundant because the specified subnet implies the Availability Zone to be used. Currently the field must be populated, but it will be deprecated in the future.
       */
     var AvailabilityZone: js.UndefOr[NameString] = js.undefined
     /**
@@ -2710,7 +2920,7 @@ object GlueNs extends js.Object {
   
   trait PutDataCatalogEncryptionSettingsRequest extends js.Object {
     /**
-      * The ID of the Data Catalog for which to set the security configuration. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog for which to set the security configuration. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -2727,7 +2937,7 @@ object GlueNs extends js.Object {
       */
     var PolicyExistsCondition: js.UndefOr[ExistCondition] = js.undefined
     /**
-      * This is the hash value returned when the previous policy was set using PutResourcePolicy. Its purpose is to prevent concurrent modifications of a policy. Do not use this parameter if no previous policy has been set.
+      * The hash value returned when the previous policy was set using PutResourcePolicy. Its purpose is to prevent concurrent modifications of a policy. Do not use this parameter if no previous policy has been set.
       */
     var PolicyHashCondition: js.UndefOr[HashString] = js.undefined
     /**
@@ -2892,7 +3102,7 @@ object GlueNs extends js.Object {
       */
     var AllocatedCapacity: js.UndefOr[IntegerValue] = js.undefined
     /**
-      * The job arguments specifically for this run. They override the equivalent default arguments set for in the job definition itself. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
+      * The job arguments specifically for this run. For this job run, they replace the default arguments set in the job definition itself. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the Calling AWS Glue APIs in Python topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the Special Parameters Used by AWS Glue topic in the developer guide.
       */
     var Arguments: js.UndefOr[GenericMap] = js.undefined
     /**
@@ -2904,7 +3114,7 @@ object GlueNs extends js.Object {
       */
     var JobRunId: js.UndefOr[IdString] = js.undefined
     /**
-      * AWS Glue supports running jobs on a JobCommand.Name="pythonshell" with allocated processing as low as 0.0625 DPU, which can be specified using MaxCapacity. Glue ETL jobs running in any other way cannot have fractional DPU allocations.
+      * The number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. A DPU is a relative measure of processing power that consists of 4 vCPUs of compute capacity and 16 GB of memory. For more information, see the AWS Glue pricing page. The value that can be allocated for MaxCapacity depends on whether you are running a python shell job, or an Apache Spark ETL job:   When you specify a python shell job (JobCommand.Name="pythonshell"), you can allocate either 0.0625 or 1 DPU. The default is 0.0625 DPU.   When you specify an Apache Spark ETL job (JobCommand.Name="glueetl"), you can allocate from 2 to 100 DPUs. The default is 10 DPUs. This job type cannot have a fractional DPU allocation.  
       */
     var MaxCapacity: js.UndefOr[NullableDouble] = js.undefined
     /**
@@ -3180,6 +3390,22 @@ object GlueNs extends js.Object {
     var VersionId: js.UndefOr[VersionString] = js.undefined
   }
   
+  trait TagResourceRequest extends js.Object {
+    /**
+      * The ARN of the AWS Glue resource to which to add the tags. For more information about AWS Glue resource ARNs, see the AWS Glue ARN string pattern.
+      */
+    var ResourceArn: GlueResourceArn
+    /**
+      * Tags to add to this resource.
+      */
+    var TagsToAdd: TagsMap
+  }
+  
+  trait TagResourceResponse extends js.Object
+  
+  trait TagsMap
+    extends /* key */ org.scalablytyped.runtime.StringDictionary[TagValue]
+  
   trait Trigger extends js.Object {
     /**
       * The actions initiated by this trigger.
@@ -3359,6 +3585,75 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchDeleteTableVersionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+      */
+    def batchGetCrawlers(): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetCrawlers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetCrawlersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+      */
+    def batchGetCrawlers(params: BatchGetCrawlersRequest): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetCrawlers(
+      params: BatchGetCrawlersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetCrawlersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+      */
+    def batchGetDevEndpoints(): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetDevEndpoints(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetDevEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+      */
+    def batchGetDevEndpoints(params: BatchGetDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetDevEndpoints(
+      params: BatchGetDevEndpointsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetDevEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of job names. After calling the ListJobs operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags. 
+      */
+    def batchGetJobs(): awsDashSdkLib.libRequestMod.Request[BatchGetJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetJobs(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of job names. After calling the ListJobs operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags. 
+      */
+    def batchGetJobs(params: BatchGetJobsRequest): awsDashSdkLib.libRequestMod.Request[BatchGetJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetJobs(
+      params: BatchGetJobsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Retrieves partitions in a batch request.
       */
     def batchGetPartition(): awsDashSdkLib.libRequestMod.Request[BatchGetPartitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -3381,6 +3676,29 @@ object GlueNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[BatchGetPartitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of trigger names. After calling the ListTriggers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+      */
+    def batchGetTriggers(): awsDashSdkLib.libRequestMod.Request[BatchGetTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetTriggers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetTriggersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Returns a list of resource metadata for a given list of trigger names. After calling the ListTriggers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+      */
+    def batchGetTriggers(params: BatchGetTriggersRequest): awsDashSdkLib.libRequestMod.Request[BatchGetTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def batchGetTriggers(
+      params: BatchGetTriggersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ BatchGetTriggersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[BatchGetTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Stops one or more job runs for a specified job definition.
       */
@@ -4623,6 +4941,21 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetTablesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * Retrieves a list of tags associated with a resource.
+      */
+    def getTags(): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getTags(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsResponse, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves a list of tags associated with a resource.
+      */
+    def getTags(params: GetTagsRequest): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def getTags(
+      params: GetTagsRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ GetTagsResponse, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[GetTagsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Retrieves the definition of a trigger.
       */
     def getTrigger(): awsDashSdkLib.libRequestMod.Request[GetTriggerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -4738,7 +5071,99 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[ImportCatalogToGlueResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the security configuration for a specified catalog. Once the configuration has been set, the specified encryption is applied to every catalog write thereafter.
+      * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listCrawlers(): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listCrawlers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListCrawlersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listCrawlers(params: ListCrawlersRequest): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listCrawlers(
+      params: ListCrawlersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListCrawlersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListCrawlersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listDevEndpoints(): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listDevEndpoints(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDevEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listDevEndpoints(params: ListDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listDevEndpoints(
+      params: ListDevEndpointsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListDevEndpointsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListDevEndpointsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listJobs(): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listJobs(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listJobs(params: ListJobsRequest): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listJobs(
+      params: ListJobsRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListJobsResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListJobsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listTriggers(): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTriggers(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTriggersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+      */
+    def listTriggers(params: ListTriggersRequest): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTriggers(
+      params: ListTriggersRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTriggersResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTriggersResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
       */
     def putDataCatalogEncryptionSettings(): awsDashSdkLib.libRequestMod.Request[PutDataCatalogEncryptionSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putDataCatalogEncryptionSettings(
@@ -4749,7 +5174,7 @@ object GlueNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutDataCatalogEncryptionSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Sets the security configuration for a specified catalog. Once the configuration has been set, the specified encryption is applied to every catalog write thereafter.
+      * Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
       */
     def putDataCatalogEncryptionSettings(params: PutDataCatalogEncryptionSettingsRequest): awsDashSdkLib.libRequestMod.Request[PutDataCatalogEncryptionSettingsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putDataCatalogEncryptionSettings(
@@ -4967,6 +5392,52 @@ object GlueNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[StopTriggerResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ TagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[TagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes tags from a resource.
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * Removes tags from a resource.
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ UntagResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[UntagResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).
       */
@@ -5222,6 +5693,19 @@ object GlueNs extends js.Object {
     ): awsDashSdkLib.libRequestMod.Request[UpdateUserDefinedFunctionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
   }
   
+  trait UntagResourceRequest extends js.Object {
+    /**
+      * The ARN of the resource from which to remove the tags.
+      */
+    var ResourceArn: GlueResourceArn
+    /**
+      * Tags to remove from this resource.
+      */
+    var TagsToRemove: TagKeysList
+  }
+  
+  trait UntagResourceResponse extends js.Object
+  
   trait UpdateClassifierRequest extends js.Object {
     /**
       * A GrokClassifier object with updated fields.
@@ -5241,7 +5725,7 @@ object GlueNs extends js.Object {
   
   trait UpdateConnectionRequest extends js.Object {
     /**
-      * The ID of the Data Catalog in which the connection resides. If none is supplied, the AWS account ID is used by default.
+      * The ID of the Data Catalog in which the connection resides. If none is provided, the AWS account ID is used by default.
       */
     var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
     /**
@@ -5643,6 +6127,8 @@ object GlueNs extends js.Object {
   type DescriptionString = java.lang.String
   type DescriptionStringRemovable = java.lang.String
   type DevEndpointList = js.Array[DevEndpoint]
+  type DevEndpointNameList = js.Array[NameString]
+  type DevEndpointNames = js.Array[GenericString]
   type DynamoDBTargetList = js.Array[DynamoDBTarget]
   type ErrorString = java.lang.String
   type ExecutionTime = scala.Double
@@ -5652,6 +6138,7 @@ object GlueNs extends js.Object {
   type FormatString = java.lang.String
   type GenericString = java.lang.String
   type GetTableVersionsList = js.Array[TableVersion]
+  type GlueResourceArn = java.lang.String
   type GrokPattern = java.lang.String
   type HashString = java.lang.String
   type IdString = java.lang.String
@@ -5662,6 +6149,7 @@ object GlueNs extends js.Object {
   type JobBookmarksEncryptionMode = awsDashSdkLib.awsDashSdkLibStrings.DISABLED | awsDashSdkLib.awsDashSdkLibStrings.`CSE-KMS` | java.lang.String
   type JobList = js.Array[Job]
   type JobName = java.lang.String
+  type JobNameList = js.Array[NameString]
   type JobRunList = js.Array[JobRun]
   type JobRunState = awsDashSdkLib.awsDashSdkLibStrings.STARTING | awsDashSdkLib.awsDashSdkLibStrings.RUNNING | awsDashSdkLib.awsDashSdkLibStrings.STOPPING | awsDashSdkLib.awsDashSdkLibStrings.STOPPED | awsDashSdkLib.awsDashSdkLibStrings.SUCCEEDED | awsDashSdkLib.awsDashSdkLibStrings.FAILED | awsDashSdkLib.awsDashSdkLibStrings.TIMEOUT | java.lang.String
   type JsonPath = java.lang.String
@@ -5723,12 +6211,16 @@ object GlueNs extends js.Object {
   type TablePrefix = java.lang.String
   type TableTypeString = java.lang.String
   type TableVersionErrors = js.Array[TableVersionError]
+  type TagKey = java.lang.String
+  type TagKeysList = js.Array[TagKey]
+  type TagValue = java.lang.String
   type Timeout = scala.Double
   type Timestamp = stdLib.Date
   type TimestampValue = stdLib.Date
   type Token = java.lang.String
   type TotalSegmentsInteger = scala.Double
   type TriggerList = js.Array[Trigger]
+  type TriggerNameList = js.Array[NameString]
   type TriggerState = awsDashSdkLib.awsDashSdkLibStrings.CREATING | awsDashSdkLib.awsDashSdkLibStrings.CREATED | awsDashSdkLib.awsDashSdkLibStrings.ACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.ACTIVATED | awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATING | awsDashSdkLib.awsDashSdkLibStrings.DEACTIVATED | awsDashSdkLib.awsDashSdkLibStrings.DELETING | awsDashSdkLib.awsDashSdkLibStrings.UPDATING | java.lang.String
   type TriggerType = awsDashSdkLib.awsDashSdkLibStrings.SCHEDULED | awsDashSdkLib.awsDashSdkLibStrings.CONDITIONAL | awsDashSdkLib.awsDashSdkLibStrings.ON_DEMAND | java.lang.String
   type URI = java.lang.String

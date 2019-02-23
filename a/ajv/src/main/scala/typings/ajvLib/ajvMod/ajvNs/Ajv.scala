@@ -126,6 +126,14 @@ trait Ajv extends js.Object {
   def validate(schemaKeyRef: js.Object, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   def validate(schemaKeyRef: scala.Boolean, data: js.Any): scala.Boolean | js.Thenable[_] = js.native
   /**
+    * Validate keyword
+    * @this  Ajv
+    * @param {object} definition keyword definition object
+    * @param {boolean} throwError true to throw exception if definition is invalid
+    * @return {boolean} validation result
+    */
+  def validateKeyword(definition: KeywordDefinition, throwError: scala.Boolean): scala.Boolean = js.native
+  /**
     * Validate schema
     * @param {object|Boolean} schema schema to validate
     * @return {Boolean} true if schema is valid

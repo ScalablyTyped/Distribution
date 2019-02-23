@@ -10,9 +10,9 @@ trait Anon_HashKeyField extends js.Object {
   var hashKeyType: js.UndefOr[java.lang.String] = js.undefined
   var hashKeyValue: java.lang.String
   var payloadField: js.UndefOr[java.lang.String] = js.undefined
-  var rangeKeyField: java.lang.String
+  var rangeKeyField: js.UndefOr[java.lang.String] = js.undefined
   var rangeKeyType: js.UndefOr[java.lang.String] = js.undefined
-  var rangeKeyValue: java.lang.String
+  var rangeKeyValue: js.UndefOr[java.lang.String] = js.undefined
   var roleArn: java.lang.String
   var tableName: java.lang.String
 }

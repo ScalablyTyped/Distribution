@@ -10,17 +10,17 @@ trait RuleGroupState extends js.Object {
     * A list of activated rules, see below
     */
   val activatedRules: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ActionPriorityRuleId]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ActionPriorityRuleId]]
     ]
   ] = js.undefined
   /**
     * A friendly name for the metrics from the rule group
     */
-  val metricName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val metricName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A friendly name of the rule group
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

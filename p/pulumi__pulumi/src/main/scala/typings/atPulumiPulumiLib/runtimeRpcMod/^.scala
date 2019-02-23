@@ -22,25 +22,22 @@ object ^ extends js.Object {
     name: java.lang.String,
     allProps: js.Any
   ): scala.Unit = js.native
-  def serializeProperties(
-    label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
-    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
-  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  def serializeProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperty(
     ctx: java.lang.String,
-    prop: atPulumiPulumiLib.resourceMod.Input[_],
-    dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
+    prop: atPulumiPulumiLib.outputMod.Input[_],
+    dependentResources: nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]
   ): js.Promise[_] = js.native
-  def serializeResourceProperties(
-    label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
-    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
-  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[
+    js.Tuple2[
+      stdLib.Record[java.lang.String, _], 
+      lodashLib.lodashMod.Global.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
+    ]
+  ] = js.native
   def transferProperties(
     onto: atPulumiPulumiLib.resourceMod.Resource,
     label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs
+    props: atPulumiPulumiLib.outputMod.Inputs
   ): atPulumiPulumiLib.runtimeRpcMod.OutputResolvers = js.native
 }
 

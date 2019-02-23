@@ -18,7 +18,7 @@ abstract class Resource protected ()
     *              property "__provider".
     * @param opts A bag of options that control this resource's behavior.
     */
-  def this(provider: ResourceProvider, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs) = this()
-  def this(provider: ResourceProvider, name: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
+  def this(provider: ResourceProvider, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(provider: ResourceProvider, name: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
 }
 

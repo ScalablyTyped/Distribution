@@ -9,14 +9,14 @@ trait RouteArgs extends js.Object {
   /**
     * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
     */
-  val destinationCidrBlock: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val destinationCidrBlock: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Identifier of EC2 Transit Gateway Attachment.
     */
-  val transitGatewayAttachmentId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val transitGatewayAttachmentId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Identifier of EC2 Transit Gateway Route Table.
     */
-  val transitGatewayRouteTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val transitGatewayRouteTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

@@ -22,7 +22,7 @@ object auditregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
@@ -33,15 +33,15 @@ object auditregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSink]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the audit configuration spec
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AuditSinkSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AuditSinkSpec]] = js.undefined
     }
     
     /**
@@ -55,14 +55,14 @@ object auditregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`auditregistrationDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
       /**
         * List of audit configurations.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AuditSink]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[AuditSink]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -70,10 +70,10 @@ object auditregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSinkList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.AuditSinkList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -84,11 +84,11 @@ object auditregistrationNs extends js.Object {
       /**
         * Policy defines the policy for selecting which events should be sent to the webhook required
         */
-      var policy: atPulumiPulumiLib.resourceMod.Input[Policy]
+      var policy: atPulumiPulumiLib.outputMod.Input[Policy]
       /**
         * Webhook to send events required
         */
-      var webhook: atPulumiPulumiLib.resourceMod.Input[Webhook]
+      var webhook: atPulumiPulumiLib.outputMod.Input[Webhook]
     }
     
     /**
@@ -99,12 +99,12 @@ object auditregistrationNs extends js.Object {
         * The Level that all requests are recorded at. available options: None, Metadata, Request,
         * RequestResponse required
         */
-      var level: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var level: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Stages is a list of stages for which events are created.
         */
       var stages: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -115,15 +115,15 @@ object auditregistrationNs extends js.Object {
       /**
         * `name` is the name of the service. Required
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `namespace` is the namespace of the service. Required
         */
-      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `path` is an optional URL path which will be sent in any request to this service.
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -133,11 +133,11 @@ object auditregistrationNs extends js.Object {
       /**
         * ClientConfig holds the connection parameters for the webhook required
         */
-      var clientConfig: atPulumiPulumiLib.resourceMod.Input[WebhookClientConfig]
+      var clientConfig: atPulumiPulumiLib.outputMod.Input[WebhookClientConfig]
       /**
         * Throttle holds the options for throttling the webhook
         */
-      var throttle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[WebhookThrottleConfig]] = js.undefined
+      var throttle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[WebhookThrottleConfig]] = js.undefined
     }
     
     /**
@@ -148,7 +148,7 @@ object auditregistrationNs extends js.Object {
         * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
         * certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var caBundle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * `service` is a reference to the service for this webhook. Either `service` or `url` must be
         * specified.
@@ -157,7 +157,7 @@ object auditregistrationNs extends js.Object {
         *
         * Port 443 will be used if it is open, otherwise it is an error.
         */
-      var service: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceReference]] = js.undefined
+      var service: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceReference]] = js.undefined
       /**
         * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
         * Exactly one of `url` or `service` must be specified.
@@ -180,7 +180,7 @@ object auditregistrationNs extends js.Object {
         * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments
         * ("#...") and query parameters ("?...") are not allowed, either.
         */
-      var url: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -190,11 +190,11 @@ object auditregistrationNs extends js.Object {
       /**
         * ThrottleBurst is the maximum number of events sent at the same moment default 15 QPS
         */
-      var burst: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var burst: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * ThrottleQPS maximum number of batches per second default 10 QPS
         */
-      var qps: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var qps: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     def isAuditSink(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.auditregistration.v1alpha1.AuditSink */ scala.Boolean = js.native

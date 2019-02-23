@@ -82,6 +82,9 @@ object webdriverLibStrings {
   sealed trait script extends js.Object
   
   @js.native
+  sealed trait silent extends js.Object
+  
+  @js.native
   sealed trait system extends js.Object
   
   @js.native
@@ -140,6 +143,8 @@ object webdriverLibStrings {
   def pageLoad: pageLoad = "pageLoad".asInstanceOf[pageLoad]
   @scala.inline
   def script: script = "script".asInstanceOf[script]
+  @scala.inline
+  def silent: silent = "silent".asInstanceOf[silent]
   @scala.inline
   def system: system = "system".asInstanceOf[system]
   @scala.inline

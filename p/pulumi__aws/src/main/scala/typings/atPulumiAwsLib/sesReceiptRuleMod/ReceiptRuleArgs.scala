@@ -10,90 +10,88 @@ trait ReceiptRuleArgs extends js.Object {
     * A list of Add Header Action blocks. Documented below.
     */
   val addHeaderActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_HeaderNameHeaderValue]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_HeaderNameHeaderValue]]
     ]
   ] = js.undefined
   /**
     * The name of the rule to place this rule after
     */
-  val after: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val after: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of Bounce Action blocks. Documented below.
     */
   val bounceActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_MessagePosition]]
-    ]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_MessagePosition]]]
   ] = js.undefined
   /**
     * If true, the rule will be enabled
     */
-  val enabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val enabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A list of Lambda Action blocks. Documented below.
     */
   val lambdaActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_FunctionArnInvocationTypePosition]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_FunctionArnInvocationTypePosition]
       ]
     ]
   ] = js.undefined
   /**
     * The name of the rule
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of email addresses
     */
   val recipients: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A list of S3 Action blocks. Documented below.
     */
   val s3Actions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
+    atPulumiPulumiLib.outputMod.Input[
       js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnObjectKeyPrefix]
+        atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnObjectKeyPrefix]
       ]
     ]
   ] = js.undefined
   /**
     * If true, incoming emails will be scanned for spam and viruses
     */
-  val scanEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val scanEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A list of SNS Action blocks. Documented below.
     */
   val snsActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PositionTopicArn]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PositionTopicArn]]
     ]
   ] = js.undefined
   /**
     * A list of Stop Action blocks. Documented below.
     */
   val stopActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_PositionScopeTopicArn]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_PositionScopeTopicArn]]
     ]
   ] = js.undefined
   /**
     * Require or Optional
     */
-  val tlsPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val tlsPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of WorkMail Action blocks. Documented below.
     */
   val workmailActions: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_OrganizationArnPosition]]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_OrganizationArnPosition]]
     ]
   ] = js.undefined
 }

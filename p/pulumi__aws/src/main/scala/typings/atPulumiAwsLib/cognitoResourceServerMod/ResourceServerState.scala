@@ -9,27 +9,25 @@ trait ResourceServerState extends js.Object {
   /**
     * An identifier for the resource server.
     */
-  val identifier: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val identifier: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A name for the resource server.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of all scopes configured for this resource server in the format identifier/scope_name.
     */
   val scopeIdentifiers: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
     * A list of Authorization Scope.
     */
   val scopes: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      js.Array[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_ScopeDescriptionScopeName]
-      ]
+    atPulumiPulumiLib.outputMod.Input[
+      js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_ScopeDescriptionScopeName]]
     ]
   ] = js.undefined
-  val userPoolId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val userPoolId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

@@ -9,6 +9,6 @@ trait MemberAccountAssociationState extends js.Object {
   /**
     * The ID of the AWS account that you want to associate with Amazon Macie as a member account.
     */
-  val memberAccountId: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val memberAccountId: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

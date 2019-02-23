@@ -61,10 +61,10 @@ object runtimeMod extends js.Object {
   def getRootResource(): js.Promise[js.UndefOr[atPulumiPulumiLib.resourceMod.URN]] = js.native
   def getStack(): js.UndefOr[java.lang.String] = js.native
   def hasMonitor(): scala.Boolean = js.native
-  def invoke(tok: java.lang.String, props: atPulumiPulumiLib.resourceMod.Inputs): js.Promise[_] = js.native
+  def invoke(tok: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[_] = js.native
   def invoke(
     tok: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
+    props: atPulumiPulumiLib.outputMod.Inputs,
     opts: atPulumiPulumiLib.invokeMod.InvokeOptions
   ): js.Promise[_] = js.native
   def isDryRun(): scala.Boolean = js.native
@@ -72,7 +72,7 @@ object runtimeMod extends js.Object {
     res: atPulumiPulumiLib.resourceMod.Resource,
     t: java.lang.String,
     name: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
+    props: atPulumiPulumiLib.outputMod.Inputs,
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): scala.Unit = js.native
   def registerResource(
@@ -80,17 +80,17 @@ object runtimeMod extends js.Object {
     t: java.lang.String,
     name: java.lang.String,
     custom: scala.Boolean,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
+    props: atPulumiPulumiLib.outputMod.Inputs,
     opts: atPulumiPulumiLib.resourceMod.ResourceOptions
   ): scala.Unit = js.native
-  def registerResourceOutputs(res: atPulumiPulumiLib.resourceMod.Resource, outputs: atPulumiPulumiLib.resourceMod.Inputs): scala.Unit = js.native
+  def registerResourceOutputs(res: atPulumiPulumiLib.resourceMod.Resource, outputs: atPulumiPulumiLib.outputMod.Inputs): scala.Unit = js.native
   def registerResourceOutputs(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    outputs: atPulumiPulumiLib.resourceMod.Output[atPulumiPulumiLib.resourceMod.Inputs]
+    outputs: atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Inputs]
   ): scala.Unit = js.native
   def registerResourceOutputs(
     res: atPulumiPulumiLib.resourceMod.Resource,
-    outputs: js.Promise[atPulumiPulumiLib.resourceMod.Inputs]
+    outputs: js.Promise[atPulumiPulumiLib.outputMod.Inputs]
   ): scala.Unit = js.native
   def resolveProperties(
     res: atPulumiPulumiLib.resourceMod.Resource,
@@ -100,33 +100,30 @@ object runtimeMod extends js.Object {
     allProps: js.Any
   ): scala.Unit = js.native
   def rpcKeepAlive(): js.Function0[scala.Unit] = js.native
-  def runInPulumiStack(init: js.Function0[_]): js.Promise[js.UndefOr[atPulumiPulumiLib.resourceMod.Inputs]] = js.native
+  def runInPulumiStack(init: js.Function0[_]): js.Promise[js.UndefOr[atPulumiPulumiLib.outputMod.Inputs]] = js.native
   def serialize(): scala.Boolean = js.native
   def serializeFunction(func: js.Function): js.Promise[atPulumiPulumiLib.runtimeClosureSerializeClosureMod.SerializedFunction] = js.native
   def serializeFunction(func: js.Function, args: atPulumiPulumiLib.runtimeClosureSerializeClosureMod.SerializeFunctionArgs): js.Promise[atPulumiPulumiLib.runtimeClosureSerializeClosureMod.SerializedFunction] = js.native
   def serializeFunctionAsync(func: js.Function): js.Promise[java.lang.String] = js.native
   def serializeFunctionAsync(func: js.Function, serialize: js.Function1[/* o */ js.Any, scala.Boolean]): js.Promise[java.lang.String] = js.native
-  def serializeProperties(
-    label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
-    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
-  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  def serializeProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
   def serializeProperty(
     ctx: java.lang.String,
-    prop: atPulumiPulumiLib.resourceMod.Input[_],
-    dependentResources: js.Array[atPulumiPulumiLib.resourceMod.Resource]
+    prop: atPulumiPulumiLib.outputMod.Input[_],
+    dependentResources: nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]
   ): js.Promise[_] = js.native
-  def serializeResourceProperties(
-    label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs,
-    propertyDependencies: stdLib.Record[java.lang.String, js.Array[atPulumiPulumiLib.resourceMod.Resource]]
-  ): js.Promise[stdLib.Record[java.lang.String, _]] = js.native
+  def serializeResourceProperties(label: java.lang.String, props: atPulumiPulumiLib.outputMod.Inputs): js.Promise[
+    js.Tuple2[
+      stdLib.Record[java.lang.String, _], 
+      lodashLib.lodashMod.Global.Map[java.lang.String, nodeLib.Set[atPulumiPulumiLib.resourceMod.Resource]]
+    ]
+  ] = js.native
   def setConfig(k: java.lang.String, v: java.lang.String): scala.Unit = js.native
   def setRootResource(res: atPulumiPulumiLib.resourceMod.ComponentResource): js.Promise[scala.Unit] = js.native
   def transferProperties(
     onto: atPulumiPulumiLib.resourceMod.Resource,
     label: java.lang.String,
-    props: atPulumiPulumiLib.resourceMod.Inputs
+    props: atPulumiPulumiLib.outputMod.Inputs
   ): atPulumiPulumiLib.runtimeRpcMod.OutputResolvers = js.native
 }
 

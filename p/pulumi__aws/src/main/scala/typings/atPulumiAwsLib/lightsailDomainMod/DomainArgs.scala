@@ -9,6 +9,6 @@ trait DomainArgs extends js.Object {
   /**
     * The name of the Lightsail domain to manage
     */
-  val domainName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val domainName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

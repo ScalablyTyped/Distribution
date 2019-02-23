@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object libInjectSheetMod {
-  type ClassNameMap[C /* <: java.lang.String */] = stdLib.Record[C, java.lang.String]
+  type ClassNameMap[C /* <: java.lang.String | scala.Double | js.Symbol */] = stdLib.Record[C, java.lang.String]
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: DecorationTargetProps[P] | InjectedProps[P]}
     */ reactDashJssLib.reactDashJssLibStrings.ConsistentWith with js.Any
@@ -23,7 +23,7 @@ package object libInjectSheetMod {
     ]
   ]
   type PropsOf[C] = js.Any
-  type StyleCreator[C /* <: java.lang.String */, T /* <: js.Object */, Props] = js.Function1[/* theme */ T, Styles[C, Props]]
-  type Styles[ClassKey /* <: java.lang.String */, Props] = stdLib.Record[ClassKey, CSSProperties[Props]]
+  type StyleCreator[C /* <: java.lang.String | scala.Double | js.Symbol */, T /* <: js.Object */, Props] = js.Function1[/* theme */ T, Styles[C, Props]]
+  type Styles[ClassKey /* <: java.lang.String | scala.Double | js.Symbol */, Props] = stdLib.Record[ClassKey, CSSProperties[Props]]
   type WithSheet[S /* <: java.lang.String | (Styles[java.lang.String, js.Object]) | (StyleCreator[java.lang.String, _, js.Object]) */, GivenTheme, Props] = reactDashJssLib.Anon_Classes[S] with WithTheme[GivenTheme]
 }

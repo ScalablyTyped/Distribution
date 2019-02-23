@@ -5,10 +5,21 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BrowserInfo extends js.Object {
-  var bot: js.UndefOr[detectDashBrowserLib.detectDashBrowserLibNumbers.`true`] = js.undefined
-  var name: js.UndefOr[java.lang.String] = js.undefined
-  var os: js.UndefOr[java.lang.String | scala.Null] = js.undefined
-  var version: js.UndefOr[java.lang.String] = js.undefined
+@JSImport("detect-browser", "BrowserInfo")
+@js.native
+class BrowserInfo protected ()
+  extends DetectedInfo[
+      detectDashBrowserLib.Browser, 
+      detectDashBrowserLib.OperatingSystem | scala.Null, 
+      java.lang.String
+    ] {
+  def this(name: detectDashBrowserLib.Browser, version: java.lang.String) = this()
+  def this(name: detectDashBrowserLib.Browser, version: java.lang.String, os: detectDashBrowserLib.OperatingSystem) = this()
+  /* CompleteClass */
+  override val name: detectDashBrowserLib.Browser = js.native
+  /* CompleteClass */
+  override val os: detectDashBrowserLib.OperatingSystem | scala.Null = js.native
+  /* CompleteClass */
+  override val version: java.lang.String = js.native
 }
 

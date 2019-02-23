@@ -19,6 +19,9 @@ object atPollyjsCoreLibStrings {
   sealed trait create extends js.Object
   
   @js.native
+  sealed trait error extends js.Object
+  
+  @js.native
   sealed trait register extends js.Object
   
   @js.native
@@ -38,6 +41,8 @@ object atPollyjsCoreLibStrings {
   def beforeResponse: beforeResponse = "beforeResponse".asInstanceOf[beforeResponse]
   @scala.inline
   def create: create = "create".asInstanceOf[create]
+  @scala.inline
+  def error: error = "error".asInstanceOf[error]
   @scala.inline
   def register: register = "register".asInstanceOf[register]
   @scala.inline

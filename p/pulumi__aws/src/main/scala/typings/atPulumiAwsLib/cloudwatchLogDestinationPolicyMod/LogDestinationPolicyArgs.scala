@@ -9,10 +9,10 @@ trait LogDestinationPolicyArgs extends js.Object {
   /**
     * The policy document. This is a JSON formatted string.
     */
-  val accessPolicy: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val accessPolicy: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A name for the subscription filter
     */
-  val destinationName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val destinationName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

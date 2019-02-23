@@ -1,29 +1,29 @@
 organization := "org.scalablytyped"
 name := "schwifty"
-version := "4.0-dt-20180712Z-8cb30e"
+version := "4.0-dt-20180712Z-a699ec"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "ajv" % "6.9.1-17ddd9",
+  "org.scalablytyped" %%% "ajv" % "6.9.2-4c4ed3",
   "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190221Z-f01776",
   "org.scalablytyped" %%% "boom" % "7.2-dt-20181116Z-344433",
   "org.scalablytyped" %%% "catbox" % "10.0-dt-20190219Z-804551",
   "org.scalablytyped" %%% "fast-deep-equal" % "2.0.1-2cff45",
   "org.scalablytyped" %%% "fast-json-stable-stringify" % "2.0-dt-20181224Z-f8efaa",
-  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-12b835",
-  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-608e2a",
+  "org.scalablytyped" %%% "hapi" % "18.0-dt-20190212Z-139704",
+  "org.scalablytyped" %%% "iron" % "5.0-dt-20180214Z-32d544",
   "org.scalablytyped" %%% "joi" % "14.3-dt-20190212Z-f16652",
-  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-d88fef",
+  "org.scalablytyped" %%% "knex" % "0.15-dt-20190212Z-8482d4",
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "mime-db" % "1.27-dt-20180214Z-b2cae6",
   "org.scalablytyped" %%% "mimos" % "3.0-dt-20180214Z-086af5",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
-  "org.scalablytyped" %%% "objection" % "1.6.2-19e876",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
+  "org.scalablytyped" %%% "objection" % "1.6.2-552a94",
   "org.scalablytyped" %%% "podium" % "1.0-dt-20180214Z-7174cc",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-0009b8",
-  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-0b7fe0",
+  "org.scalablytyped" %%% "shot" % "4.0-dt-20181002Z-812b09",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-194416")
 publishArtifact in packageDoc := false

@@ -9,18 +9,18 @@ trait DatabaseArgs extends js.Object {
   /**
     * Name of s3 bucket to save the results of the query execution.
     */
-  val bucket: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val bucket: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The encryption key block AWS Athena uses to decrypt the data in S3, such as an AWS Key Management Service (AWS KMS) key. An `encryption_configuration` block is documented below.
     */
-  val encryptionConfiguration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_EncryptionOptionKmsKey]] = js.undefined
+  val encryptionConfiguration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_EncryptionOptionKmsKey]] = js.undefined
   /**
     * A boolean that indicates all tables should be deleted from the database so that the database can be destroyed without error. The tables are *not* recoverable.
     */
-  val forceDestroy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val forceDestroy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * Name of the database to create.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

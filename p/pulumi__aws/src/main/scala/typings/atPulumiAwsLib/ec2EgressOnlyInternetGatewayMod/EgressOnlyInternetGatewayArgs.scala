@@ -9,6 +9,6 @@ trait EgressOnlyInternetGatewayArgs extends js.Object {
   /**
     * The VPC ID to create in.
     */
-  val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

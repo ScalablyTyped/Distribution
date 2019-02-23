@@ -9,6 +9,6 @@ trait DomainDkimArgs extends js.Object {
   /**
     * Verified domain name to generate DKIM tokens for.
     */
-  val domain: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val domain: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

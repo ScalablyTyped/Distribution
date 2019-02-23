@@ -21,16 +21,19 @@ class RouteHandler () extends js.Object {
     event: RecordingRouteEvent | ResponseRouteEvent,
     listener: RecordingEventListener | ResponseEventListener
   ): RouteHandler = js.native
+  def off(event: ErrorRouteEvent, listener: ErrorEventListener): RouteHandler = js.native
   def off(event: RequestRouteEvent, listener: RequestEventListener): RouteHandler = js.native
   def on(
     event: RecordingRouteEvent | ResponseRouteEvent,
     listener: RecordingEventListener | ResponseEventListener
   ): RouteHandler = js.native
+  def on(event: ErrorRouteEvent, listener: ErrorEventListener): RouteHandler = js.native
   def on(event: RequestRouteEvent, listener: RequestEventListener): RouteHandler = js.native
   def once(
     event: RecordingRouteEvent | ResponseRouteEvent,
     listener: RecordingEventListener | ResponseEventListener
   ): RouteHandler = js.native
+  def once(event: ErrorRouteEvent, listener: ErrorEventListener): RouteHandler = js.native
   def once(event: RequestRouteEvent, listener: RequestEventListener): RouteHandler = js.native
   def passthrough(): RouteHandler = js.native
   def passthrough(value: scala.Boolean): RouteHandler = js.native

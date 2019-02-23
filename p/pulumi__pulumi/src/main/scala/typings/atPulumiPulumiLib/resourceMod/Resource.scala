@@ -21,13 +21,13 @@ abstract class Resource protected () extends js.Object {
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean) = this()
-  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: Inputs) = this()
-  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: Inputs, opts: ResourceOptions) = this()
+  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.outputMod.Inputs, opts: ResourceOptions) = this()
   /**
     * urn is the stable logical URN used to distinctly address a resource, both before and after
     * deployments.
     */
-  val urn: Output[URN] = js.native
+  val urn: atPulumiPulumiLib.outputMod.Output[URN] = js.native
   def getProvider(moduleMember: java.lang.String): js.UndefOr[ProviderResource] = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "ink-spinner"
-version := "2.0-dt-20190219Z-fdefdf"
+version := "2.0-dt-20190219Z-d933d0"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "cli-spinners" % "1.3-dt-20190118Z-298a6f",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",
-  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-163a9e",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
+  "org.scalablytyped" %%% "ink" % "0.5-dt-20190126Z-227136",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "supports-color" % "5.3-dt-20180409Z-20da60")

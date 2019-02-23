@@ -22,11 +22,11 @@ class ComponentResource protected () extends Resource {
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(`type`: java.lang.String, name: java.lang.String) = this()
-  def this(`type`: java.lang.String, name: java.lang.String, unused: Inputs) = this()
-  def this(`type`: java.lang.String, name: java.lang.String, unused: Inputs, opts: ComponentResourceOptions) = this()
+  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(`type`: java.lang.String, name: java.lang.String, unused: atPulumiPulumiLib.outputMod.Inputs, opts: ComponentResourceOptions) = this()
   /* protected */ def registerOutputs(): scala.Unit = js.native
-  /* protected */ def registerOutputs(outputs: Inputs): scala.Unit = js.native
-  /* protected */ def registerOutputs(outputs: Output[Inputs]): scala.Unit = js.native
-  /* protected */ def registerOutputs(outputs: js.Promise[Inputs]): scala.Unit = js.native
+  /* protected */ def registerOutputs(outputs: atPulumiPulumiLib.outputMod.Inputs): scala.Unit = js.native
+  /* protected */ def registerOutputs(outputs: atPulumiPulumiLib.outputMod.Output[atPulumiPulumiLib.outputMod.Inputs]): scala.Unit = js.native
+  /* protected */ def registerOutputs(outputs: js.Promise[atPulumiPulumiLib.outputMod.Inputs]): scala.Unit = js.native
 }
 

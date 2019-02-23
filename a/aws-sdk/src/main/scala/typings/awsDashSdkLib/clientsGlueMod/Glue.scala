@@ -186,6 +186,111 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+    */
+  def batchGetCrawlers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetCrawlers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of crawler names. After calling the ListCrawlers operation, you can call this operation to access the data to which you have been granted permissions to based on tags.
+    */
+  def batchGetCrawlers(params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetCrawlers(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetDevEndpoints(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetDevEndpoints(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of DevEndpoint names. After calling the ListDevEndpoints operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetDevEndpoints(params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetDevEndpoints(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of job names. After calling the ListJobs operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags. 
+    */
+  def batchGetJobs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetJobs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of job names. After calling the ListJobs operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags. 
+    */
+  def batchGetJobs(params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetJobs(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Retrieves partitions in a batch request.
     */
   def batchGetPartition(): awsDashSdkLib.libRequestMod.Request[
@@ -218,6 +323,41 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetPartitionResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of trigger names. After calling the ListTriggers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetTriggers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetTriggers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Returns a list of resource metadata for a given list of trigger names. After calling the ListTriggers operation, you can call this operation to access the data to which you have been granted permissions. This operation supports all IAM permissions, including permission conditions that uses tags.
+    */
+  def batchGetTriggers(params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def batchGetTriggers(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.BatchGetTriggersResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -2146,6 +2286,41 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
+    * Retrieves a list of tags associated with a resource.
+    */
+  def getTags(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getTags(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves a list of tags associated with a resource.
+    */
+  def getTags(params: awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def getTags(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.GetTagsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
     * Retrieves the definition of a trigger.
     */
   def getTrigger(): awsDashSdkLib.libRequestMod.Request[
@@ -2321,7 +2496,147 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the security configuration for a specified catalog. Once the configuration has been set, the specified encryption is applied to every catalog write thereafter.
+    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listCrawlers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listCrawlers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all crawler resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listCrawlers(params: awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listCrawlers(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListCrawlersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listDevEndpoints(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listDevEndpoints(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all DevEndpoint resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listDevEndpoints(params: awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listDevEndpoints(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListDevEndpointsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listJobs(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listJobs(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all job resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listJobs(params: awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listJobs(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListJobsResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listTriggers(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTriggers(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Retrieves the names of all trigger resources in this AWS account, or the resources with the specified tag. This operation allows you to see which resources are available in your account, and their names. This operation takes the optional Tags field which you can use as a filter on the response so that tagged resources can be retrieved as a group. If you choose to use tags filtering, only resources with the tag will be retrieved.
+    */
+  def listTriggers(params: awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTriggers(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.ListTriggersResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
     */
   def putDataCatalogEncryptionSettings(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.PutDataCatalogEncryptionSettingsResponse, 
@@ -2338,7 +2653,7 @@ trait Glue
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the security configuration for a specified catalog. Once the configuration has been set, the specified encryption is applied to every catalog write thereafter.
+    * Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.
     */
   def putDataCatalogEncryptionSettings(params: awsDashSdkLib.clientsGlueMod.GlueNs.PutDataCatalogEncryptionSettingsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.PutDataCatalogEncryptionSettingsResponse, 
@@ -2668,6 +2983,76 @@ trait Glue
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsGlueMod.GlueNs.StopTriggerResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds tags to a resource. A tag is a label you can assign to an AWS resource. In AWS Glue, you can tag only certain resources. For information about what resources you can tag, see AWS Tags in AWS Glue.
+    */
+  def tagResource(params: awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.TagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes tags from a resource.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes tags from a resource.
+    */
+  def untagResource(params: awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceRequest,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsGlueMod.GlueNs.UntagResourceResponse, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

@@ -9,10 +9,10 @@ trait RecorderStatusArgs extends js.Object {
   /**
     * Whether the configuration recorder should be enabled or disabled.
     */
-  val isEnabled: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+  val isEnabled: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
   /**
     * The name of the recorder
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

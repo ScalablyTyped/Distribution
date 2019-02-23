@@ -23,7 +23,7 @@ object authenticationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1`
             ]
           ] = js.undefined
@@ -34,19 +34,19 @@ object authenticationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[TokenReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[TokenReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request can be authenticated.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TokenReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[TokenReviewStatus]] = js.undefined
     }
     
     /**
@@ -60,12 +60,12 @@ object authenticationNs extends js.Object {
         * will default to the audience of the Kubernetes apiserver.
         */
       var audiences: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Token is the opaque bearer token.
         */
-      var token: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var token: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -82,20 +82,20 @@ object authenticationNs extends js.Object {
         * is "true", the token is valid against the audience of the Kubernetes API server.
         */
       var audiences: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
-      var authenticated: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var authenticated: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Error indicates that the token couldn't be checked
         */
-      var error: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var error: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User is the UserInfo associated with the provided token.
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[UserInfo]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[UserInfo]] = js.undefined
     }
     
     /**
@@ -105,22 +105,22 @@ object authenticationNs extends js.Object {
       /**
         * Any additional information provided by the authenticator.
         */
-      var extra: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var extra: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * The names of groups this user is a part of.
         */
       var groups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * A unique value that identifies this user across time. If this user is deleted and another
         * user by the same name is added, they will have different UIDs.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The name that uniquely identifies this user among all active users.
         */
-      var username: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isTokenReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1.TokenReview */ scala.Boolean = js.native
@@ -141,7 +141,7 @@ object authenticationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`authenticationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -152,19 +152,19 @@ object authenticationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.TokenReview]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec holds information about the request being evaluated
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[TokenReviewSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[TokenReviewSpec]
       /**
         * Status is filled in by the server and indicates whether the request can be authenticated.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TokenReviewStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[TokenReviewStatus]] = js.undefined
     }
     
     /**
@@ -178,12 +178,12 @@ object authenticationNs extends js.Object {
         * will default to the audience of the Kubernetes apiserver.
         */
       var audiences: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Token is the opaque bearer token.
         */
-      var token: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var token: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -200,20 +200,20 @@ object authenticationNs extends js.Object {
         * is "true", the token is valid against the audience of the Kubernetes API server.
         */
       var audiences: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Authenticated indicates that the token was associated with a known user.
         */
-      var authenticated: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var authenticated: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Error indicates that the token couldn't be checked
         */
-      var error: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var error: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User is the UserInfo associated with the provided token.
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[UserInfo]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[UserInfo]] = js.undefined
     }
     
     /**
@@ -223,22 +223,22 @@ object authenticationNs extends js.Object {
       /**
         * Any additional information provided by the authenticator.
         */
-      var extra: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var extra: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * The names of groups this user is a part of.
         */
       var groups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * A unique value that identifies this user across time. If this user is deleted and another
         * user by the same name is added, they will have different UIDs.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The name that uniquely identifies this user among all active users.
         */
-      var username: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var username: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isTokenReview(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.authentication.v1beta1.TokenReview */ scala.Boolean = js.native

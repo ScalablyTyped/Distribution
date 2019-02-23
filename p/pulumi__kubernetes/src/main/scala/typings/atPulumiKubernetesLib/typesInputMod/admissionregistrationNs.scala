@@ -22,14 +22,14 @@ object admissionregistrationNs extends js.Object {
         * "alwayspullimages" is the name of the webhook, and kubernetes.io is the name of the
         * organization. Required
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Rules describes what resources/subresources the initializer cares about. The initializer
         * cares about an operation if it matches _any_ Rule. Rule.Resources must not include
         * subresources.
         */
       var rules: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Rule]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Rule]]]
           ] = js.undefined
     }
     
@@ -44,7 +44,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
@@ -55,7 +55,7 @@ object admissionregistrationNs extends js.Object {
         * initializers from the same InitializerConfiguration is preserved.
         */
       var initializers: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Initializer]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Initializer]]]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -64,14 +64,14 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfiguration]
           ] = js.undefined
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
     }
     
@@ -86,14 +86,14 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1alpha1`
             ]
           ] = js.undefined
       /**
         * List of InitializerConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[InitializerConfiguration]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[InitializerConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -101,14 +101,14 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.InitializerConfigurationList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -122,14 +122,14 @@ object admissionregistrationNs extends js.Object {
         * the length of the slice must be one. Required.
         */
       var apiGroups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is
         * present, the length of the slice must be one. Required.
         */
       var apiVersions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.
@@ -144,7 +144,7 @@ object admissionregistrationNs extends js.Object {
         * Depending on the enclosing object, subresources might not be allowed. Required.
         */
       var resources: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -167,7 +167,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -178,20 +178,20 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfiguration]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfiguration]
           ] = js.undefined
       /**
         * Standard object metadata; More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
       var webhooks: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Webhook]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Webhook]]]
           ] = js.undefined
     }
     
@@ -206,14 +206,14 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
       /**
         * List of MutatingWebhookConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[MutatingWebhookConfiguration]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[MutatingWebhookConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -221,7 +221,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.MutatingWebhookConfigurationList
             ]
           ] = js.undefined
@@ -230,7 +230,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -244,21 +244,21 @@ object admissionregistrationNs extends js.Object {
         * the length of the slice must be one. Required.
         */
       var apiGroups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * APIVersions is the API versions the resources belong to. '*' is all versions. If '*' is
         * present, the length of the slice must be one. Required.
         */
       var apiVersions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Operations is the operations the admission hook cares about - CREATE, UPDATE, or * for all
         * operations. If '*' is present, the length of the slice must be one. Required.
         */
       var operations: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Resources is a list of resources this rule applies to.
@@ -273,7 +273,7 @@ object admissionregistrationNs extends js.Object {
         * Depending on the enclosing object, subresources might not be allowed. Required.
         */
       var resources: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -284,15 +284,15 @@ object admissionregistrationNs extends js.Object {
       /**
         * `name` is the name of the service. Required
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `namespace` is the namespace of the service. Required
         */
-      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * `path` is an optional URL path which will be sent in any request to this service.
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -307,7 +307,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -318,7 +318,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfiguration
             ]
           ] = js.undefined
@@ -327,13 +327,13 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Webhooks is a list of webhooks and the affected resources and operations.
         */
       var webhooks: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Webhook]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Webhook]]]
           ] = js.undefined
     }
     
@@ -348,14 +348,14 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`admissionregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
       /**
         * List of ValidatingWebhookConfiguration.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ValidatingWebhookConfiguration]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ValidatingWebhookConfiguration]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -363,7 +363,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ValidatingWebhookConfigurationList
             ]
           ] = js.undefined
@@ -372,7 +372,7 @@ object admissionregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -383,18 +383,18 @@ object admissionregistrationNs extends js.Object {
       /**
         * ClientConfig defines how to communicate with the hook. Required
         */
-      var clientConfig: atPulumiPulumiLib.resourceMod.Input[WebhookClientConfig]
+      var clientConfig: atPulumiPulumiLib.outputMod.Input[WebhookClientConfig]
       /**
         * FailurePolicy defines how unrecognized errors from the admission endpoint are handled -
         * allowed values are Ignore or Fail. Defaults to Ignore.
         */
-      var failurePolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var failurePolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The name of the admission webhook. Name should be fully qualified, e.g.,
         * imagepolicy.kubernetes.io, where "imagepolicy" is the name of the webhook, and
         * kubernetes.io is the name of the organization. Required.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * NamespaceSelector decides whether to run the webhook on an object based on whether the
         * namespace for that object matches the selector. If the object itself is a namespace, the
@@ -436,7 +436,7 @@ object admissionregistrationNs extends js.Object {
         * Default to the empty LabelSelector, which matches everything.
         */
       var namespaceSelector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * Rules describes what operations on what resources/subresources the webhook cares about. The
@@ -447,7 +447,7 @@ object admissionregistrationNs extends js.Object {
         * requests for ValidatingWebhookConfiguration and MutatingWebhookConfiguration objects.
         */
       var rules: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[RuleWithOperations]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[RuleWithOperations]]]
           ] = js.undefined
       /**
         * SideEffects states whether this webhookk has side effects. Acceptable values are: Unknown,
@@ -457,7 +457,7 @@ object admissionregistrationNs extends js.Object {
         * auto-rejected if they match a webhook with sideEffects == Unknown or Some. Defaults to
         * Unknown.
         */
-      var sideEffects: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var sideEffects: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -468,7 +468,7 @@ object admissionregistrationNs extends js.Object {
         * `caBundle` is a PEM encoded CA bundle which will be used to validate the webhook's server
         * certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var caBundle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * `service` is a reference to the service for this webhook. Either `service` or `url` must be
         * specified.
@@ -477,7 +477,7 @@ object admissionregistrationNs extends js.Object {
         *
         * Port 443 will be used if it is open, otherwise it is an error.
         */
-      var service: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceReference]] = js.undefined
+      var service: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceReference]] = js.undefined
       /**
         * `url` gives the location of the webhook, in standard URL form (`scheme://host:port/path`).
         * Exactly one of `url` or `service` must be specified.
@@ -500,7 +500,7 @@ object admissionregistrationNs extends js.Object {
         * Attempting to use a user or basic auth e.g. "user:password@" is not allowed. Fragments
         * ("#...") and query parameters ("?...") are not allowed, either.
         */
-      var url: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var url: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isMutatingWebhookConfiguration(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.admissionregistration.v1beta1.MutatingWebhookConfiguration */ scala.Boolean = js.native

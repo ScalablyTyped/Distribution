@@ -9,10 +9,10 @@ trait GroupPolicyAttachmentState extends js.Object {
   /**
     * The group the policy should be applied to
     */
-  val group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.iamGroupMod.Group]] = js.undefined
+  val group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.iamGroupMod.Group]] = js.undefined
   /**
     * The ARN of the policy you want to apply
     */
-  val policyArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
+  val policyArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]] = js.undefined
 }
 

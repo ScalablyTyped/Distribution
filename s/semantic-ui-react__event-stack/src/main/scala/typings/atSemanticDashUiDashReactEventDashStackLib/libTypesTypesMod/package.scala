@@ -10,6 +10,6 @@ package object libTypesTypesMod {
   type EventListeners = js.Array[CallableEventListener]
   type GenericMap[T] = stdLib.Map[nodeLib.String, T]
   type InputEventListener = stdLib.EventListener | js.Array[stdLib.EventListener]
-  type InputTargetElement = scala.Boolean | java.lang.String | TargetElement
+  type InputTargetElement = scala.Boolean | java.lang.String | TargetElement | reactLib.reactMod.ReactNs.RefObject[TargetElement]
   type TargetElement = reactLib.Document | reactLib.HTMLElement | stdLib.Window
 }

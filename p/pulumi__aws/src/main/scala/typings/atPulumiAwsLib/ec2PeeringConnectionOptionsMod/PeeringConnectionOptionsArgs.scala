@@ -12,7 +12,7 @@ trait PeeringConnectionOptionsArgs extends js.Object {
     * the peering connection (a maximum of one).
     */
   val accepter: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * A optional configuration block that allows for [VPC Peering Connection]
@@ -20,11 +20,11 @@ trait PeeringConnectionOptionsArgs extends js.Object {
     * the peering connection (a maximum of one).
     */
   val requester: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
+    atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_AllowClassicLinkToRemoteVpcAllowRemoteVpcDnsResolution]
   ] = js.undefined
   /**
     * The ID of the requester VPC peering connection.
     */
-  val vpcPeeringConnectionId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpcPeeringConnectionId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

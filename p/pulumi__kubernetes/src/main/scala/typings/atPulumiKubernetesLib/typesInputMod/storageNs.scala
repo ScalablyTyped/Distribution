@@ -22,7 +22,7 @@ object storageNs extends js.Object {
       /**
         * AllowVolumeExpansion shows whether the storage class allow volume expand
         */
-      var allowVolumeExpansion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var allowVolumeExpansion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Restrict the node topologies where volumes can be dynamically provisioned. Each volume
         * plugin defines its own supported topology specifications. An empty TopologySelectorTerm
@@ -30,9 +30,9 @@ object storageNs extends js.Object {
         * enable the VolumeScheduling feature.
         */
       var allowedTopologies: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               js.Array[
-                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
+                atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
               ]
             ]
           ] = js.undefined
@@ -43,7 +43,7 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -52,14 +52,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Dynamically provisioned PersistentVolumes of this storage class are created with these
@@ -67,32 +67,32 @@ object storageNs extends js.Object {
         * is invalid.
         */
       var mountOptions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Parameters holds the parameters for the provisioner that should create volumes of this
         * storage class.
         */
       var parameters: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * Provisioner indicates the type of the provisioner.
         */
-      var provisioner: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var provisioner: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Dynamically provisioned PersistentVolumes of this storage class are created with this
         * reclaimPolicy. Defaults to Delete.
         */
-      var reclaimPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reclaimPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VolumeBindingMode indicates how PersistentVolumeClaims should be provisioned and bound.
         * When unset, VolumeBindingImmediate is used. This field is only honored by servers that
         * enable the VolumeScheduling feature.
         */
-      var volumeBindingMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeBindingMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -106,12 +106,12 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Items is the list of StorageClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StorageClass]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StorageClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -119,14 +119,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -144,7 +144,7 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -153,25 +153,25 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
           ] = js.undefined
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes
         * system.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSpec]
       /**
         * Status of the VolumeAttachment request. Populated by the entity completing the attach or
         * detach operation, i.e. the external-attacher.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeAttachmentStatus]] = js.undefined
     }
     
     /**
@@ -185,12 +185,12 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -198,14 +198,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -218,7 +218,7 @@ object storageNs extends js.Object {
       /**
         * Name of the persistent volume to attach.
         */
-      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -229,15 +229,15 @@ object storageNs extends js.Object {
         * Attacher indicates the name of the volume driver that MUST handle this request. This is the
         * name returned by GetPluginName().
         */
-      var attacher: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var attacher: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The node that the volume should be attached to.
         */
-      var nodeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var nodeName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Source represents the volume that should be attached.
         */
-      var source: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSource]
+      var source: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSource]
     }
     
     /**
@@ -248,27 +248,27 @@ object storageNs extends js.Object {
         * The last error encountered during attach operation, if any. This field must only be set by
         * the entity completing the attach operation, i.e. the external-attacher.
         */
-      var attachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var attachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
       /**
         * Indicates the volume is successfully attached. This field must only be set by the entity
         * completing the attach operation, i.e. the external-attacher.
         */
-      var attached: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var attached: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Upon successful attach, this field is populated with any information returned by the attach
         * operation that must be passed into subsequent WaitForAttach or Mount calls. This field must
         * only be set by the entity completing the attach operation, i.e. the external-attacher.
         */
       var attachmentMetadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * The last error encountered during detach operation, if any. This field must only be set by
         * the entity completing the detach operation, i.e. the external-attacher.
         */
-      var detachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var detachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
     }
     
     /**
@@ -279,11 +279,11 @@ object storageNs extends js.Object {
         * String detailing the error encountered during Attach or Detach operation. This string maybe
         * logged, so it should not contain sensitive information.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Time the error was encountered.
         */
-      var time: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var time: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isStorageClass(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1.StorageClass */ scala.Boolean = js.native
@@ -309,7 +309,7 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -318,25 +318,25 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
           ] = js.undefined
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes
         * system.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSpec]
       /**
         * Status of the VolumeAttachment request. Populated by the entity completing the attach or
         * detach operation, i.e. the external-attacher.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeAttachmentStatus]] = js.undefined
     }
     
     /**
@@ -350,12 +350,12 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1alpha1`]
           ] = js.undefined
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -363,14 +363,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -383,7 +383,7 @@ object storageNs extends js.Object {
       /**
         * Name of the persistent volume to attach.
         */
-      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -394,15 +394,15 @@ object storageNs extends js.Object {
         * Attacher indicates the name of the volume driver that MUST handle this request. This is the
         * name returned by GetPluginName().
         */
-      var attacher: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var attacher: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The node that the volume should be attached to.
         */
-      var nodeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var nodeName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Source represents the volume that should be attached.
         */
-      var source: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSource]
+      var source: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSource]
     }
     
     /**
@@ -413,27 +413,27 @@ object storageNs extends js.Object {
         * The last error encountered during attach operation, if any. This field must only be set by
         * the entity completing the attach operation, i.e. the external-attacher.
         */
-      var attachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var attachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
       /**
         * Indicates the volume is successfully attached. This field must only be set by the entity
         * completing the attach operation, i.e. the external-attacher.
         */
-      var attached: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var attached: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Upon successful attach, this field is populated with any information returned by the attach
         * operation that must be passed into subsequent WaitForAttach or Mount calls. This field must
         * only be set by the entity completing the attach operation, i.e. the external-attacher.
         */
       var attachmentMetadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * The last error encountered during detach operation, if any. This field must only be set by
         * the entity completing the detach operation, i.e. the external-attacher.
         */
-      var detachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var detachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
     }
     
     /**
@@ -444,11 +444,11 @@ object storageNs extends js.Object {
         * String detailing the error encountered during Attach or Detach operation. This string maybe
         * logged, so it should not contain sensitive information.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Time the error was encountered.
         */
-      var time: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var time: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isVolumeAttachment(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1alpha1.VolumeAttachment */ scala.Boolean = js.native
@@ -469,7 +469,7 @@ object storageNs extends js.Object {
       /**
         * AllowVolumeExpansion shows whether the storage class allow volume expand
         */
-      var allowVolumeExpansion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var allowVolumeExpansion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Restrict the node topologies where volumes can be dynamically provisioned. Each volume
         * plugin defines its own supported topology specifications. An empty TopologySelectorTerm
@@ -477,9 +477,9 @@ object storageNs extends js.Object {
         * enable the VolumeScheduling feature.
         */
       var allowedTopologies: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               js.Array[
-                atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
+                atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.coreNs.v1Ns.TopologySelectorTerm]
               ]
             ]
           ] = js.undefined
@@ -490,7 +490,7 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -499,14 +499,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClass]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Dynamically provisioned PersistentVolumes of this storage class are created with these
@@ -514,32 +514,32 @@ object storageNs extends js.Object {
         * is invalid.
         */
       var mountOptions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Parameters holds the parameters for the provisioner that should create volumes of this
         * storage class.
         */
       var parameters: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * Provisioner indicates the type of the provisioner.
         */
-      var provisioner: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var provisioner: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Dynamically provisioned PersistentVolumes of this storage class are created with this
         * reclaimPolicy. Defaults to Delete.
         */
-      var reclaimPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reclaimPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VolumeBindingMode indicates how PersistentVolumeClaims should be provisioned and bound.
         * When unset, VolumeBindingImmediate is used. This field is only honored by servers that
         * enable the VolumeScheduling feature.
         */
-      var volumeBindingMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeBindingMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -553,12 +553,12 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Items is the list of StorageClasses
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[StorageClass]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[StorageClass]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -566,14 +566,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.StorageClassList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -591,7 +591,7 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -600,25 +600,25 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachment]
           ] = js.undefined
       /**
         * Standard object metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes
         * system.
         */
-      var spec: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSpec]
+      var spec: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSpec]
       /**
         * Status of the VolumeAttachment request. Populated by the entity completing the attach or
         * detach operation, i.e. the external-attacher.
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeAttachmentStatus]] = js.undefined
     }
     
     /**
@@ -632,12 +632,12 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`storageDOTk8sDOTio/v1beta1`]
           ] = js.undefined
       /**
         * Items is the list of VolumeAttachments
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeAttachment]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeAttachment]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -645,14 +645,14 @@ object storageNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.VolumeAttachmentList]
           ] = js.undefined
       /**
         * Standard list metadata More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -665,7 +665,7 @@ object storageNs extends js.Object {
       /**
         * Name of the persistent volume to attach.
         */
-      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var persistentVolumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -676,15 +676,15 @@ object storageNs extends js.Object {
         * Attacher indicates the name of the volume driver that MUST handle this request. This is the
         * name returned by GetPluginName().
         */
-      var attacher: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var attacher: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The node that the volume should be attached to.
         */
-      var nodeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var nodeName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Source represents the volume that should be attached.
         */
-      var source: atPulumiPulumiLib.resourceMod.Input[VolumeAttachmentSource]
+      var source: atPulumiPulumiLib.outputMod.Input[VolumeAttachmentSource]
     }
     
     /**
@@ -695,27 +695,27 @@ object storageNs extends js.Object {
         * The last error encountered during attach operation, if any. This field must only be set by
         * the entity completing the attach operation, i.e. the external-attacher.
         */
-      var attachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var attachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
       /**
         * Indicates the volume is successfully attached. This field must only be set by the entity
         * completing the attach operation, i.e. the external-attacher.
         */
-      var attached: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var attached: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * Upon successful attach, this field is populated with any information returned by the attach
         * operation that must be passed into subsequent WaitForAttach or Mount calls. This field must
         * only be set by the entity completing the attach operation, i.e. the external-attacher.
         */
       var attachmentMetadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * The last error encountered during detach operation, if any. This field must only be set by
         * the entity completing the detach operation, i.e. the external-attacher.
         */
-      var detachError: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeError]] = js.undefined
+      var detachError: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeError]] = js.undefined
     }
     
     /**
@@ -726,11 +726,11 @@ object storageNs extends js.Object {
         * String detailing the error encountered during Attach or Detach operation. This string maybe
         * logged, so it should not contain sensitive information.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Time the error was encountered.
         */
-      var time: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var time: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isStorageClass(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.storage.v1beta1.StorageClass */ scala.Boolean = js.native

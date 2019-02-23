@@ -9,10 +9,10 @@ trait VpnGatewayAttachmentArgs extends js.Object {
   /**
     * The ID of the VPC.
     */
-  val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The ID of the Virtual Private Gateway.
     */
-  val vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

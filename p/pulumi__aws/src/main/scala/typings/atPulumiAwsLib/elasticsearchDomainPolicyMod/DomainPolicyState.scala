@@ -9,10 +9,10 @@ trait DomainPolicyState extends js.Object {
   /**
     * IAM policy document specifying the access policies for the domain
     */
-  val accessPolicies: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val accessPolicies: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Name of the domain.
     */
-  val domainName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val domainName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

@@ -9,6 +9,6 @@ trait AccountAliasState extends js.Object {
   /**
     * The account alias
     */
-  val accountAlias: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val accountAlias: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

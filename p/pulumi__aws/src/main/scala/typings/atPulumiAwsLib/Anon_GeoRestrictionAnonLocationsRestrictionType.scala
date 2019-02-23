@@ -6,6 +6,6 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_GeoRestrictionAnonLocationsRestrictionType extends js.Object {
-  var geoRestriction: atPulumiPulumiLib.resourceMod.Input[Anon_LocationsRestrictionType]
+  var geoRestriction: atPulumiPulumiLib.outputMod.Input[Anon_LocationsRestrictionType]
 }
 

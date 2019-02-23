@@ -9,10 +9,10 @@ trait AmiLaunchPermissionArgs extends js.Object {
   /**
     * An AWS Account ID to add launch permissions.
     */
-  val accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A region-unique name for the AMI.
     */
-  val imageId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val imageId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

@@ -21,6 +21,12 @@ object setoidNs extends js.Object {
   {[ K in keyof O ]: fp-ts.fp-ts/lib/Setoid.Setoid<O[K]>}
     */ fpDashTsLib.fpDashTsLibStrings.getRecordSetoid with O
   ): fpDashTsLib.libSetoidMod.Setoid[O] = js.native
+  def getStructSetoid[O /* <: org.scalablytyped.runtime.StringDictionary[js.Any] */](
+    setoids: /* import warning: ImportType.apply c Unsupported type mapping: 
+  {[ K in keyof O ]: fp-ts.fp-ts/lib/Setoid.Setoid<O[K]>}
+    */ fpDashTsLib.fpDashTsLibStrings.getStructSetoid with O
+  ): fpDashTsLib.libSetoidMod.Setoid[O] = js.native
+  def getTupleSetoid[A, B](SA: fpDashTsLib.libSetoidMod.Setoid[A], SB: fpDashTsLib.libSetoidMod.Setoid[B]): fpDashTsLib.libSetoidMod.Setoid[js.Tuple2[A, B]] = js.native
   def strictEqual[A](a: A, b: A): scala.Boolean = js.native
 }
 

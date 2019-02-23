@@ -6,18 +6,16 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait DefaultSubnetArgs extends js.Object {
-  val availabilityZone: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val availabilityZone: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Specify true to indicate
     * that instances launched into the subnet should be assigned
     * a public IP address.
     */
-  val mapPublicIpOnLaunch: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+  val mapPublicIpOnLaunch: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
-  ] = js.undefined
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 

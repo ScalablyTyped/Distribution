@@ -22,7 +22,7 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
             ]
           ] = js.undefined
@@ -33,42 +33,42 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec contains information for locating and communicating with a server
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[APIServiceSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceSpec]] = js.undefined
       /**
         * Status contains derived information about an API server
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[APIServiceStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceStatus]] = js.undefined
     }
     
     trait APIServiceCondition extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human-readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Unique, one-word, CamelCase reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status is the status of the condition. Can be True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type is the type of the condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -82,11 +82,11 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIService]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[APIService]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -94,10 +94,10 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -110,11 +110,11 @@ object apiregistrationNs extends js.Object {
         * CABundle is a PEM encoded CA bundle which will be used to validate an API server's serving
         * certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var caBundle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Group is the API group name this server hosts
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * GroupPriorityMininum is the priority this group should have at least. Higher priority means
         * that the group is preferred by clients over lower priority ones. Note that other versions
@@ -125,22 +125,22 @@ object apiregistrationNs extends js.Object {
         * like: *.k8s.io (except extensions) at 18000 and PaaSes (OpenShift, Deis) are recommended to
         * be in the 2000s
         */
-      var groupPriorityMinimum: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var groupPriorityMinimum: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * InsecureSkipTLSVerify disables TLS certificate verification when communicating with this
         * server. This is strongly discouraged.  You should use the CABundle instead.
         */
-      var insecureSkipTLSVerify: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var insecureSkipTLSVerify: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Service is a reference to the service for this API server.  It must communicate on port 443
         * If the Service is nil, that means the handling for the API groupversion is handled locally
         * on this server. The call will simply delegate to the normal handler chain to be fulfilled.
         */
-      var service: atPulumiPulumiLib.resourceMod.Input[ServiceReference]
+      var service: atPulumiPulumiLib.outputMod.Input[ServiceReference]
       /**
         * Version is the API version this server hosts.  For example, "v1"
         */
-      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VersionPriority controls the ordering of this API version inside of its group.  Must be
         * greater than zero. The primary sort is based on VersionPriority, ordered highest to lowest
@@ -154,7 +154,7 @@ object apiregistrationNs extends js.Object {
         * major version, then minor version. An example sorted list of versions: v10, v2, v1,
         * v11beta2, v10beta3, v3beta1, v12alpha1, v11alpha2, foo1, foo10.
         */
-      var versionPriority: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var versionPriority: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -165,7 +165,7 @@ object apiregistrationNs extends js.Object {
         * Current service state of apiService.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIServiceCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[APIServiceCondition]]]
           ] = js.undefined
     }
     
@@ -176,11 +176,11 @@ object apiregistrationNs extends js.Object {
       /**
         * Name is the name of the service
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace is the namespace of the service
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isAPIService(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiregistration.v1.APIService */ scala.Boolean = js.native
@@ -201,7 +201,7 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
@@ -212,42 +212,42 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIService]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec contains information for locating and communicating with a server
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[APIServiceSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceSpec]] = js.undefined
       /**
         * Status contains derived information about an API server
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[APIServiceStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[APIServiceStatus]] = js.undefined
     }
     
     trait APIServiceCondition extends js.Object {
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human-readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Unique, one-word, CamelCase reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status is the status of the condition. Can be True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type is the type of the condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -261,11 +261,11 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
+            atPulumiPulumiLib.outputMod.Input[
               atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`apiregistrationDOTk8sDOTio/v1beta1`
             ]
           ] = js.undefined
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIService]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[APIService]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -273,10 +273,10 @@ object apiregistrationNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.APIServiceList]
           ] = js.undefined
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -289,11 +289,11 @@ object apiregistrationNs extends js.Object {
         * CABundle is a PEM encoded CA bundle which will be used to validate an API server's serving
         * certificate. If unspecified, system trust roots on the apiserver are used.
         */
-      var caBundle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var caBundle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Group is the API group name this server hosts
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * GroupPriorityMininum is the priority this group should have at least. Higher priority means
         * that the group is preferred by clients over lower priority ones. Note that other versions
@@ -304,22 +304,22 @@ object apiregistrationNs extends js.Object {
         * like: *.k8s.io (except extensions) at 18000 and PaaSes (OpenShift, Deis) are recommended to
         * be in the 2000s
         */
-      var groupPriorityMinimum: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var groupPriorityMinimum: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * InsecureSkipTLSVerify disables TLS certificate verification when communicating with this
         * server. This is strongly discouraged.  You should use the CABundle instead.
         */
-      var insecureSkipTLSVerify: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var insecureSkipTLSVerify: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Service is a reference to the service for this API server.  It must communicate on port 443
         * If the Service is nil, that means the handling for the API groupversion is handled locally
         * on this server. The call will simply delegate to the normal handler chain to be fulfilled.
         */
-      var service: atPulumiPulumiLib.resourceMod.Input[ServiceReference]
+      var service: atPulumiPulumiLib.outputMod.Input[ServiceReference]
       /**
         * Version is the API version this server hosts.  For example, "v1"
         */
-      var version: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var version: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VersionPriority controls the ordering of this API version inside of its group.  Must be
         * greater than zero. The primary sort is based on VersionPriority, ordered highest to lowest
@@ -333,7 +333,7 @@ object apiregistrationNs extends js.Object {
         * major version, then minor version. An example sorted list of versions: v10, v2, v1,
         * v11beta2, v10beta3, v3beta1, v12alpha1, v11alpha2, foo1, foo10.
         */
-      var versionPriority: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var versionPriority: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -344,7 +344,7 @@ object apiregistrationNs extends js.Object {
         * Current service state of apiService.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[APIServiceCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[APIServiceCondition]]]
           ] = js.undefined
     }
     
@@ -355,11 +355,11 @@ object apiregistrationNs extends js.Object {
       /**
         * Name is the name of the service
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace is the namespace of the service
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     def isAPIService(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.apiregistration.v1beta1.APIService */ scala.Boolean = js.native

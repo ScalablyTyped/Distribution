@@ -9,10 +9,10 @@ trait AggregateAuthorizationArgs extends js.Object {
   /**
     * Account ID
     */
-  val accountId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val accountId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Region
     */
-  val region: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val region: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

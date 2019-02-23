@@ -9,6 +9,6 @@ trait OriginAccessIdentityArgs extends js.Object {
   /**
     * An optional comment for the origin access identity.
     */
-  val comment: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val comment: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

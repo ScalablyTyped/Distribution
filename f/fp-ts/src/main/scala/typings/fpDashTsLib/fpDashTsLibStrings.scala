@@ -132,6 +132,9 @@ object fpDashTsLibStrings {
   @js.native
   sealed trait getStructSemigroup extends js.Object
   
+  @js.native
+  sealed trait getStructSetoid extends js.Object
+  
   @scala.inline
   def Array: Array = "Array".asInstanceOf[Array]
   @scala.inline
@@ -216,5 +219,7 @@ object fpDashTsLibStrings {
   def getStructMonoid: getStructMonoid = "getStructMonoid".asInstanceOf[getStructMonoid]
   @scala.inline
   def getStructSemigroup: getStructSemigroup = "getStructSemigroup".asInstanceOf[getStructSemigroup]
+  @scala.inline
+  def getStructSetoid: getStructSetoid = "getStructSetoid".asInstanceOf[getStructSetoid]
 }
 

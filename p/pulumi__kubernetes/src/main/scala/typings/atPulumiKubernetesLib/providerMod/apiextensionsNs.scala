@@ -60,27 +60,27 @@ object apiextensionsNs extends js.Object {
     * fields required across all CRDs.
     */
   trait CustomResourceArgs
-    extends /* othersFields */ org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[_]] {
+    extends /* othersFields */ org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[_]] {
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should
       * convert recognized schemas to the latest internal value, and may reject unrecognized
       * values. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
       */
-    var apiVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    var apiVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may
       * infer this from the endpoint the client submits requests to. Cannot be updated. In
       * CamelCase. More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
       */
-    var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    var kind: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     /**
       * Standard object metadata; More info:
       * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata.
       */
     var metadata: js.UndefOr[
-        atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+        atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
       ] = js.undefined
   }
   
@@ -94,18 +94,18 @@ object apiextensionsNs extends js.Object {
       * apiVersion is the API version of the apiExtensions.CustomResource we wish to select,
       * as specified by the CustomResourceDefinition that defines it on the API server.
       */
-    var apiVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    var apiVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     /**
       * An ID for the Kubernetes resource to retrive. Takes the form <namespace>/<name> or
       * <name>.
       */
     @JSName("id")
-    var id_CustomResourceGetOptions: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]
+    var id_CustomResourceGetOptions: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]
     /**
       * kind is the kind of the apiextensions.CustomResource we wish to select, as specified by
       * the CustomResourceDefinition that defines it on the API server.
       */
-    var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+    var kind: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   }
   
   /* static members */
@@ -240,10 +240,10 @@ object apiextensionsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinition = js.native
     }
@@ -263,10 +263,10 @@ object apiextensionsNs extends js.Object {
         *  <namespace>/<name> or <name>.
         * @param opts Uniquely specifies a CustomResource to select.
         */
-      def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
+      def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
       def get(
         name: java.lang.String,
-        id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+        id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
         opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
       ): atPulumiKubernetesLib.providerMod.apiextensionsNs.v1beta1Ns.CustomResourceDefinitionList = js.native
     }

@@ -9,21 +9,21 @@ trait S3LocationArgs extends js.Object {
   /**
     * Amazon Resource Name (ARN) of the S3 Bucket.
     */
-  val s3BucketArn: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.arnMod.ARN]
+  val s3BucketArn: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.arnMod.ARN]
   /**
     * Configuration block containing information for connecting to S3.
     */
-  val s3Config: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArnInput]
+  val s3Config: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketAccessRoleArnInput]
   /**
     * Prefix to perform actions as source or destination.
     */
-  val subdirectory: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val subdirectory: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * Key-value pairs of resource tags to assign to the DataSync Location.
     */
   val tags: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[
-      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+    atPulumiPulumiLib.outputMod.Input[
+      org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
     ]
   ] = js.undefined
 }

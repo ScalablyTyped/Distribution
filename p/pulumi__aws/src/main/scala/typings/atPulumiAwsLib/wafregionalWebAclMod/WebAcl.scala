@@ -19,9 +19,17 @@ class WebAcl protected ()
   def this(name: java.lang.String, args: WebAclArgs) = this()
   def this(name: java.lang.String, args: WebAclArgs, opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions) = this()
   /**
+    * Amazon Resource Name (ARN) of the WAF Regional WebACL.
+    */
+  val arn: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
+  /**
     * The action that you want AWS WAF Regional to take when a request doesn't match the criteria in any of the rules that are associated with the web ACL.
     */
   val defaultAction: atPulumiPulumiLib.atPulumiPulumiMod.Output[atPulumiAwsLib.Anon_TypeString] = js.native
+  /**
+    * Configuration block to enable WAF logging. Detailed below.
+    */
+  val loggingConfiguration: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[atPulumiAwsLib.Anon_LogDestination]] = js.native
   /**
     * The name or description for the Amazon CloudWatch metric of this web ACL.
     */
@@ -31,7 +39,7 @@ class WebAcl protected ()
     */
   val name: atPulumiPulumiLib.atPulumiPulumiMod.Output[java.lang.String] = js.native
   /**
-    * The rules to associate with the web ACL and the settings for each rule.
+    * Set of configuration blocks containing rules for the web ACL. Detailed below.
     */
   val rules: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[atPulumiAwsLib.Anon_ActionOverrideAction]]] = js.native
 }
@@ -48,15 +56,15 @@ object WebAcl extends js.Object {
     * @param id The _unique_ provider ID of the resource to lookup.
     * @param state Any extra arguments used during the lookup.
     */
-  def get(name: java.lang.String, id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.wafregionalWebAclMod.WebAcl = js.native
+  def get(name: java.lang.String, id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID]): atPulumiAwsLib.wafregionalWebAclMod.WebAcl = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.wafregionalWebAclMod.WebAclState
   ): atPulumiAwsLib.wafregionalWebAclMod.WebAcl = js.native
   def get(
     name: java.lang.String,
-    id: atPulumiPulumiLib.resourceMod.Input[atPulumiPulumiLib.resourceMod.ID],
+    id: atPulumiPulumiLib.outputMod.Input[atPulumiPulumiLib.resourceMod.ID],
     state: atPulumiAwsLib.wafregionalWebAclMod.WebAclState,
     opts: atPulumiPulumiLib.resourceMod.CustomResourceOptions
   ): atPulumiAwsLib.wafregionalWebAclMod.WebAcl = js.native

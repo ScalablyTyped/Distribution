@@ -9,10 +9,10 @@ trait ResourceDataSyncArgs extends js.Object {
   /**
     * Name for the configuration.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * Amazon S3 configuration details for the sync.
     */
-  val s3Destination: atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion]
+  val s3Destination: atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BucketNameKmsKeyArnPrefixRegion]
 }
 

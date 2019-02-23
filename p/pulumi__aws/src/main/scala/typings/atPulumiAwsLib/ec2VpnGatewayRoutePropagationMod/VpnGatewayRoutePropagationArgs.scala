@@ -9,10 +9,10 @@ trait VpnGatewayRoutePropagationArgs extends js.Object {
   /**
     * The id of the `aws_route_table` to propagate routes into.
     */
-  val routeTableId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val routeTableId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The id of the `aws_vpn_gateway` to propagate routes from.
     */
-  val vpnGatewayId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpnGatewayId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

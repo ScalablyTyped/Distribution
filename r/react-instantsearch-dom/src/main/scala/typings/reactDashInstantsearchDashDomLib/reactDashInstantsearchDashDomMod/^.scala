@@ -125,11 +125,9 @@ object ^ extends js.Object {
       reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.BasicDoc]
     ]
   ): reactLib.reactMod.ReactNs.ComponentClass[js.Object, reactLib.reactMod.ReactNs.ComponentState] = js.native
-  def connectStateResults[TProps /* <: stdLib.Partial[
-    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[TDoc]
-  ] */, TDoc](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
+  def connectStateResults[TProps](ctor: reactLib.reactMod.ReactNs.ComponentType[TProps]): reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.ConnectedComponentClass[
     TProps, 
-    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[TDoc], 
+    reactDashInstantsearchDashCoreLib.reactDashInstantsearchDashCoreMod.StateResultsProvided[js.Object], 
     js.Object
   ] = js.native
   def connectStats(Composed: reactLib.reactMod.ReactNs.ComponentType[_]): reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] = js.native

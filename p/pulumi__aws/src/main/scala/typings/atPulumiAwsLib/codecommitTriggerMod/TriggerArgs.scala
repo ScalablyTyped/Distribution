@@ -9,9 +9,9 @@ trait TriggerArgs extends js.Object {
   /**
     * The name for the repository. This needs to be less than 100 characters.
     */
-  val repositoryName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-  val triggers: atPulumiPulumiLib.resourceMod.Input[
-    js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
+  val repositoryName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+  val triggers: atPulumiPulumiLib.outputMod.Input[
+    js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_BranchesCustomData]]
   ]
 }
 

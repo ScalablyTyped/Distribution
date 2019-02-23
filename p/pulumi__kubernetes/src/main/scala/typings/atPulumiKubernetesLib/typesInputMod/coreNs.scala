@@ -25,24 +25,24 @@ object coreNs extends js.Object {
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The partition in the volume that you want to mount. If omitted, the default is to mount by
         * volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly,
         * the volume partition for /dev/sda is "0" (or you can leave the property empty).
         */
-      var partition: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var partition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Specify "true" to force and set the ReadOnly property in VolumeMounts to "true". If
         * omitted, the default is "false". More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Unique ID of the persistent disk resource in AWS (Amazon EBS volume). More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
         */
-      var volumeID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumeID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -52,17 +52,17 @@ object coreNs extends js.Object {
       /**
         * Describes node affinity scheduling rules for the pod.
         */
-      var nodeAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeAffinity]] = js.undefined
+      var nodeAffinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeAffinity]] = js.undefined
       /**
         * Describes pod affinity scheduling rules (e.g. co-locate this pod in the same node, zone,
         * etc. as some other pod(s)).
         */
-      var podAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodAffinity]] = js.undefined
+      var podAffinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodAffinity]] = js.undefined
       /**
         * Describes pod anti-affinity scheduling rules (e.g. avoid putting this pod in the same node,
         * zone, etc. as some other pod(s)).
         */
-      var podAntiAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodAntiAffinity]] = js.undefined
+      var podAntiAffinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodAntiAffinity]] = js.undefined
     }
     
     /**
@@ -72,11 +72,11 @@ object coreNs extends js.Object {
       /**
         * DevicePath represents the device path where the volume should be available
         */
-      var devicePath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var devicePath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Name of the attached volume
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -86,31 +86,31 @@ object coreNs extends js.Object {
       /**
         * Host Caching mode: None, Read Only, Read Write.
         */
-      var cachingMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var cachingMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The Name of the data disk in the blob storage
         */
-      var diskName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var diskName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The URI the data disk in the blob storage
         */
-      var diskURI: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var diskURI: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Expected values Shared: multiple blob disks per storage account  Dedicated: single blob
         * disk per storage account  Managed: azure managed data disk (only in managed availability
         * set). defaults to shared
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -121,20 +121,20 @@ object coreNs extends js.Object {
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * the name of secret that contains Azure Storage Account Name and Key
         */
-      var secretName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var secretName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * the namespace of the secret that contains Azure Storage Account Name and Key default is the
         * same as the Pod
         */
-      var secretNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var secretNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Share Name
         */
-      var shareName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var shareName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -145,15 +145,15 @@ object coreNs extends js.Object {
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * the name of secret that contains Azure Storage Account Name and Key
         */
-      var secretName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var secretName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Share Name
         */
-      var shareName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var shareName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -168,7 +168,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -177,19 +177,19 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Binding]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Binding]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The target object that you want to bind to the standard object.
         */
-      var target: atPulumiPulumiLib.resourceMod.Input[ObjectReference]
+      var target: atPulumiPulumiLib.outputMod.Input[ObjectReference]
     }
     
     /**
@@ -202,48 +202,48 @@ object coreNs extends js.Object {
         * ControllerUnpublishVolume calls. This field is optional, and may be empty if no secret is
         * required. If the secret object contains more than one secret, all secrets are passed.
         */
-      var controllerPublishSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var controllerPublishSecretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * Driver is the name of the driver to use for this volume. Required.
         */
-      var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var driver: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs".
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * NodePublishSecretRef is a reference to the secret object containing sensitive information
         * to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume
         * calls. This field is optional, and may be empty if no secret is required. If the secret
         * object contains more than one secret, all secrets are passed.
         */
-      var nodePublishSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var nodePublishSecretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * NodeStageSecretRef is a reference to the secret object containing sensitive information to
         * pass to the CSI driver to complete the CSI NodeStageVolume and NodeStageVolume and
         * NodeUnstageVolume calls. This field is optional, and may be empty if no secret is required.
         * If the secret object contains more than one secret, all secrets are passed.
         */
-      var nodeStageSecretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var nodeStageSecretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false
         * (read/write).
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Attributes of the volume to publish.
         */
       var volumeAttributes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume
         * to refer to the volume on all subsequent calls. Required.
         */
-      var volumeHandle: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumeHandle: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -254,13 +254,13 @@ object coreNs extends js.Object {
         * Added capabilities
         */
       var add: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Removed capabilities
         */
       var drop: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -273,32 +273,32 @@ object coreNs extends js.Object {
         * Required: Monitors is a collection of Ceph monitors More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var monitors: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
       /**
         * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
         * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var secretFile: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var secretFile: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: SecretRef is reference to the authentication secret for User, default is empty.
         * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * Optional: User is the rados user name, default is admin More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -310,32 +310,32 @@ object coreNs extends js.Object {
         * Required: Monitors is a collection of Ceph monitors More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var monitors: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
       /**
         * Optional: Used as the mounted root, rather than the full Ceph tree, default is /
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: SecretFile is the path to key ring for User, default is /etc/ceph/user.secret
         * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var secretFile: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var secretFile: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: SecretRef is reference to the authentication secret for User, default is empty.
         * More info: https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
       /**
         * Optional: User is the rados user name, default is admin More info:
         * https://releases.k8s.io/HEAD/examples/volumes/cephfs/README.md#how-to-use-it
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -349,21 +349,21 @@ object coreNs extends js.Object {
         * Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More
         * info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: points to a secret object containing parameters used to connect to OpenStack.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * volume id used to identify the volume in cinder More info:
         * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var volumeID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumeID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -377,21 +377,21 @@ object coreNs extends js.Object {
         * Examples: "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified. More
         * info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts. More info: https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: points to a secret object containing parameters used to connect to OpenStack.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
       /**
         * volume id used to identify the volume in cinder More info:
         * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var volumeID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumeID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -403,7 +403,7 @@ object coreNs extends js.Object {
         * be >0 && <=86400(for 1 day) if ServiceAffinity == "ClientIP". Default value is 10800(for 3
         * hours).
         */
-      var timeoutSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var timeoutSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -413,20 +413,20 @@ object coreNs extends js.Object {
       /**
         * Condition error code for a component. For example, a health check error code.
         */
-      var error: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var error: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Message about the condition for a component. For example, information about a health check.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition for a component. Valid values for "Healthy": "True", "False", or
         * "Unknown".
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of condition for a component. Valid value: "Healthy"
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -440,13 +440,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of component conditions observed
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ComponentCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ComponentCondition]]]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -455,14 +455,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatus]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
     }
     
@@ -477,12 +477,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of ComponentStatus objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ComponentStatus]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ComponentStatus]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -490,14 +490,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatusList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ComponentStatusList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -512,7 +512,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * BinaryData contains the binary data. Each key must consist of alphanumeric characters, '-',
@@ -520,7 +520,7 @@ object coreNs extends js.Object {
         * stored in BinaryData must not overlap with the ones in the Data field, this is enforced
         * during validation process. Using this field will require 1.10+ apiserver and kubelet.
         */
-      var binaryData: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var binaryData: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Data contains the configuration data. Each key must consist of alphanumeric characters,
         * '-', '_' or '.'. Values with non-UTF-8 byte sequences must use the BinaryData field. The
@@ -528,8 +528,8 @@ object coreNs extends js.Object {
         * enforced during validation process.
         */
       var data: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -539,14 +539,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMap]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
     }
     
@@ -561,11 +561,11 @@ object coreNs extends js.Object {
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the ConfigMap must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -575,16 +575,16 @@ object coreNs extends js.Object {
       /**
         * The key to select.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the ConfigMap or it's key must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -598,12 +598,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Items is the list of ConfigMaps.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ConfigMap]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ConfigMap]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -611,13 +611,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMapList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ConfigMapList]
           ] = js.undefined
       /**
         * More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -630,26 +630,26 @@ object coreNs extends js.Object {
         * KubeletConfigKey declares which key of the referenced ConfigMap corresponds to the
         * KubeletConfiguration structure This field is required in all cases.
         */
-      var kubeletConfigKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kubeletConfigKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Name is the metadata.name of the referenced ConfigMap. This field is required in all cases.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Namespace is the metadata.namespace of the referenced ConfigMap. This field is required in
         * all cases.
         */
-      var namespace: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var namespace: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ResourceVersion is the metadata.ResourceVersion of the referenced ConfigMap. This field is
         * forbidden in Node.Spec, and required in Node.Status.
         */
-      var resourceVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var resourceVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * UID is the metadata.UID of the referenced ConfigMap. This field is forbidden in Node.Spec,
         * and required in Node.Status.
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -670,17 +670,17 @@ object coreNs extends js.Object {
         * contain the '..' path or start with '..'.
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[KeyToPath]]]
           ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the ConfigMap or it's keys must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -698,7 +698,7 @@ object coreNs extends js.Object {
         * be in conflict with other options that affect the file mode, like fsGroup, and the result
         * can be other mode bits set.
         */
-      var defaultMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var defaultMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If unspecified, each key-value pair in the Data field of the referenced ConfigMap will be
         * projected into the volume as a file whose name is the key and content is the value. If
@@ -708,17 +708,17 @@ object coreNs extends js.Object {
         * contain the '..' path or start with '..'.
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[KeyToPath]]]
           ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the ConfigMap or it's keys must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -735,7 +735,7 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
         */
       var args: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Entrypoint array. Not executed within a shell. The docker image's ENTRYPOINT is used if
@@ -747,13 +747,13 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/tasks/inject-data-application/define-command-argument-container/#running-a-command-in-a-shell
         */
       var command: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * List of environment variables to set in the container. Cannot be updated.
         */
       var env: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EnvVar]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EnvVar]]]
           ] = js.undefined
       /**
         * List of sources to populate environment variables in the container. The keys defined within
@@ -763,36 +763,36 @@ object coreNs extends js.Object {
         * precedence. Cannot be updated.
         */
       var envFrom: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EnvFromSource]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EnvFromSource]]]
           ] = js.undefined
       /**
         * Docker image name. More info: https://kubernetes.io/docs/concepts/containers/images This
         * field is optional to allow higher level config management to default or override container
         * images in workload controllers like Deployments and StatefulSets.
         */
-      var image: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var image: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Image pull policy. One of Always, Never, IfNotPresent. Defaults to Always if :latest tag is
         * specified, or IfNotPresent otherwise. Cannot be updated. More info:
         * https://kubernetes.io/docs/concepts/containers/images#updating-images
         */
-      var imagePullPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var imagePullPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Actions that the management system should take in response to container lifecycle events.
         * Cannot be updated.
         */
-      var lifecycle: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Lifecycle]] = js.undefined
+      var lifecycle: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Lifecycle]] = js.undefined
       /**
         * Periodic probe of container liveness. Container will be restarted if the probe fails.
         * Cannot be updated. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
         */
-      var livenessProbe: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Probe]] = js.undefined
+      var livenessProbe: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Probe]] = js.undefined
       /**
         * Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique
         * name (DNS_LABEL). Cannot be updated.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * List of ports to expose from the container. Exposing a port here gives the system
         * additional information about the network connections a container uses, but is primarily
@@ -801,30 +801,30 @@ object coreNs extends js.Object {
         * accessible from the network. Cannot be updated.
         */
       var ports: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerPort]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ContainerPort]]]
           ] = js.undefined
       /**
         * Periodic probe of container service readiness. Container will be removed from service
         * endpoints if the probe fails. Cannot be updated. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
         */
-      var readinessProbe: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Probe]] = js.undefined
+      var readinessProbe: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Probe]] = js.undefined
       /**
         * Compute Resources required by this container. Cannot be updated. More info:
         * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceRequirements]] = js.undefined
+      var resources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceRequirements]] = js.undefined
       /**
         * Security options the pod should run with. More info:
         * https://kubernetes.io/docs/concepts/policy/security-context/ More info:
         * https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
         */
-      var securityContext: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecurityContext]] = js.undefined
+      var securityContext: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecurityContext]] = js.undefined
       /**
         * Whether this container should allocate a buffer for stdin in the container runtime. If this
         * is not set, reads from stdin in the container will always result in EOF. Default is false.
         */
-      var stdin: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var stdin: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Whether the container runtime should close the stdin channel after it has been opened by a
         * single attach. When stdin is true the stdin stream will remain open across multiple attach
@@ -834,7 +834,7 @@ object coreNs extends js.Object {
         * restarted. If this flag is false, a container processes that reads from stdin will never
         * receive an EOF. Default is false
         */
-      var stdinOnce: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var stdinOnce: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: Path at which the file to which the container's termination message will be
         * written is mounted into the container's filesystem. Message written is intended to be brief
@@ -842,7 +842,7 @@ object coreNs extends js.Object {
         * greater than 4096 bytes. The total message length across all containers will be limited to
         * 12kb. Defaults to /dev/termination-log. Cannot be updated.
         */
-      var terminationMessagePath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var terminationMessagePath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Indicate how the termination message should be populated. File will use the contents of
         * terminationMessagePath to populate the container status message on both success and
@@ -851,30 +851,30 @@ object coreNs extends js.Object {
         * limited to 2048 bytes or 80 lines, whichever is smaller. Defaults to File. Cannot be
         * updated.
         */
-      var terminationMessagePolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var terminationMessagePolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Whether this container should allocate a TTY for itself, also requires 'stdin' to be true.
         * Default is false.
         */
-      var tty: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var tty: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * volumeDevices is the list of block devices to be used by the container. This is a beta
         * feature.
         */
       var volumeDevices: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeDevice]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeDevice]]]
           ] = js.undefined
       /**
         * Pod volumes to mount into the container's filesystem. Cannot be updated.
         */
       var volumeMounts: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeMount]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeMount]]]
           ] = js.undefined
       /**
         * Container's working directory. If not specified, the container runtime's default will be
         * used, which might be configured in the container image. Cannot be updated.
         */
-      var workingDir: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var workingDir: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -885,11 +885,11 @@ object coreNs extends js.Object {
         * Names by which this image is known. e.g. ["k8s.gcr.io/hyperkube:v1.0.7",
         * "dockerhub.io/google_containers/hyperkube:v1.0.7"]
         */
-      var names: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var names: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
       /**
         * The size of the image in bytes.
         */
-      var sizeBytes: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var sizeBytes: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -900,26 +900,26 @@ object coreNs extends js.Object {
         * Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x <
         * 65536.
         */
-      var containerPort: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var containerPort: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * What host IP to bind the external port to.
         */
-      var hostIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var hostIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Number of port to expose on the host. If specified, this must be a valid port number, 0 < x
         * < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not
         * need this.
         */
-      var hostPort: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var hostPort: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a
         * pod must have a unique name. Name for the port that can be referred to by services.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
         */
-      var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protocol: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -930,15 +930,15 @@ object coreNs extends js.Object {
       /**
         * Details about a running container
         */
-      var running: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ContainerStateRunning]] = js.undefined
+      var running: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ContainerStateRunning]] = js.undefined
       /**
         * Details about a terminated container
         */
-      var terminated: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ContainerStateTerminated]] = js.undefined
+      var terminated: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ContainerStateTerminated]] = js.undefined
       /**
         * Details about a waiting container
         */
-      var waiting: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ContainerStateWaiting]] = js.undefined
+      var waiting: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ContainerStateWaiting]] = js.undefined
     }
     
     /**
@@ -948,7 +948,7 @@ object coreNs extends js.Object {
       /**
         * Time at which the container was last (re-)started
         */
-      var startedAt: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var startedAt: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -958,31 +958,31 @@ object coreNs extends js.Object {
       /**
         * Container's ID in the format 'docker://<container_id>'
         */
-      var containerID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var containerID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Exit status from the last termination of the container
         */
-      var exitCode: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var exitCode: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * Time at which the container last terminated
         */
-      var finishedAt: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var finishedAt: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Message regarding the last termination of the container
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * (brief) reason from the last termination of the container
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Signal from the last termination of the container
         */
-      var signal: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var signal: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Time at which previous execution of the container started
         */
-      var startedAt: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var startedAt: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -992,11 +992,11 @@ object coreNs extends js.Object {
       /**
         * Message regarding why the container is not yet running.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * (brief) reason the container is not yet running.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1006,40 +1006,40 @@ object coreNs extends js.Object {
       /**
         * Container's ID in the format 'docker://<container_id>'.
         */
-      var containerID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var containerID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The image the container is running. More info:
         * https://kubernetes.io/docs/concepts/containers/images
         */
-      var image: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var image: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ImageID of the container's image.
         */
-      var imageID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var imageID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Details about the container's last termination condition.
         */
-      var lastState: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ContainerState]] = js.undefined
+      var lastState: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ContainerState]] = js.undefined
       /**
         * This must be a DNS_LABEL. Each container in a pod must have a unique name. Cannot be
         * updated.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Specifies whether the container has passed its readiness probe.
         */
-      var ready: atPulumiPulumiLib.resourceMod.Input[scala.Boolean]
+      var ready: atPulumiPulumiLib.outputMod.Input[scala.Boolean]
       /**
         * The number of times the container has been restarted, currently based on the number of dead
         * containers that have not yet been removed. Note that this is calculated from dead
         * containers. But those containers are subject to garbage collection. This value will get
         * capped at 5 by GC.
         */
-      var restartCount: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var restartCount: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * Details about the container's current condition.
         */
-      var state: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ContainerState]] = js.undefined
+      var state: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ContainerState]] = js.undefined
     }
     
     /**
@@ -1049,7 +1049,7 @@ object coreNs extends js.Object {
       /**
         * Port number of the given endpoint.
         */
-      var Port: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var Port: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -1061,7 +1061,7 @@ object coreNs extends js.Object {
         * Items is a list of DownwardAPIVolume file
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DownwardAPIVolumeFile]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DownwardAPIVolumeFile]]]
           ] = js.undefined
     }
     
@@ -1073,24 +1073,24 @@ object coreNs extends js.Object {
         * Required: Selects a field of the pod: only annotations, labels, name and namespace are
         * supported.
         */
-      var fieldRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectFieldSelector]] = js.undefined
+      var fieldRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectFieldSelector]] = js.undefined
       /**
         * Optional: mode bits to use on this file, must be a value between 0 and 0777. If not
         * specified, the volume defaultMode will be used. This might be in conflict with other
         * options that affect the file mode, like fsGroup, and the result can be other mode bits set.
         */
-      var mode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var mode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Required: Path is  the relative path name of the file to be created. Must not be absolute
         * or contain the '..' path. Must be utf-8 encoded. The first item of the relative path must
         * not start with '..'
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Selects a resource of the container: only resources limits and requests (limits.cpu,
         * limits.memory, requests.cpu and requests.memory) are currently supported.
         */
-      var resourceFieldRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceFieldSelector]] = js.undefined
+      var resourceFieldRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceFieldSelector]] = js.undefined
     }
     
     /**
@@ -1104,12 +1104,12 @@ object coreNs extends js.Object {
         * be in conflict with other options that affect the file mode, like fsGroup, and the result
         * can be other mode bits set.
         */
-      var defaultMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var defaultMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Items is a list of downward API volume file
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[DownwardAPIVolumeFile]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[DownwardAPIVolumeFile]]]
           ] = js.undefined
     }
     
@@ -1123,7 +1123,7 @@ object coreNs extends js.Object {
         * use the node's default medium. Must be an empty string (default) or Memory. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#emptydir
         */
-      var medium: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var medium: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Total amount of local storage required for this EmptyDir volume. The size limit is also
         * applicable for memory medium. The maximum usage on memory medium EmptyDir would be the
@@ -1131,7 +1131,7 @@ object coreNs extends js.Object {
         * containers in a pod. The default is nil which means that the limit is undefined. More info:
         * http://kubernetes.io/docs/user-guide/volumes#emptydir
         */
-      var sizeLimit: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var sizeLimit: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1141,22 +1141,22 @@ object coreNs extends js.Object {
       /**
         * The Hostname of this endpoint
         */
-      var hostname: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var hostname: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.0.0/16), or
         * link-local multicast ((224.0.0.0/24). IPv6 is also accepted but not fully supported on all
         * platforms. Also, certain kubernetes components, like kube-proxy, are not IPv6 ready.
         */
-      var ip: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var ip: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Optional: Node hosting this endpoint. This can be used to determine endpoints local to a
         * node.
         */
-      var nodeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var nodeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Reference to object providing the endpoint.
         */
-      var targetRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
+      var targetRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectReference]] = js.undefined
     }
     
     /**
@@ -1167,15 +1167,15 @@ object coreNs extends js.Object {
         * The name of this port (corresponds to ServicePort.Name). Must be a DNS_LABEL. Optional only
         * if one port is defined.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The port number of the endpoint.
         */
-      var port: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var port: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The IP protocol for this port. Must be UDP, TCP, or SCTP. Default is TCP.
         */
-      var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protocol: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1195,7 +1195,7 @@ object coreNs extends js.Object {
         * be considered safe for load balancers and clients to utilize.
         */
       var addresses: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointAddress]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EndpointAddress]]]
           ] = js.undefined
       /**
         * IP addresses which offer the related ports but are not currently marked as ready because
@@ -1203,13 +1203,13 @@ object coreNs extends js.Object {
         * recently failed a liveness check.
         */
       var notReadyAddresses: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointAddress]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EndpointAddress]]]
           ] = js.undefined
       /**
         * Port numbers available on the related IP addresses.
         */
       var ports: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointPort]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EndpointPort]]]
           ] = js.undefined
     }
     
@@ -1235,7 +1235,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -1244,14 +1244,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Endpoints]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Endpoints]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * The set of all endpoints is the union of all subsets. Addresses are placed into subsets
@@ -1262,7 +1262,7 @@ object coreNs extends js.Object {
         * and ports that comprise a service.
         */
       var subsets: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[EndpointSubset]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[EndpointSubset]]]
           ] = js.undefined
     }
     
@@ -1277,12 +1277,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of endpoints.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Endpoints]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Endpoints]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1290,14 +1290,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EndpointsList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EndpointsList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1308,15 +1308,15 @@ object coreNs extends js.Object {
       /**
         * The ConfigMap to select from
         */
-      var configMapRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapEnvSource]] = js.undefined
+      var configMapRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapEnvSource]] = js.undefined
       /**
         * An optional identifier to prepend to each key in the ConfigMap. Must be a C_IDENTIFIER.
         */
-      var prefix: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var prefix: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The Secret to select from
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretEnvSource]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretEnvSource]] = js.undefined
     }
     
     /**
@@ -1326,7 +1326,7 @@ object coreNs extends js.Object {
       /**
         * Name of the environment variable. Must be a C_IDENTIFIER.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Variable references $(VAR_NAME) are expanded using the previous defined environment
         * variables in the container and any service environment variables. If a variable cannot be
@@ -1334,11 +1334,11 @@ object coreNs extends js.Object {
         * be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded,
         * regardless of whether the variable exists or not. Defaults to "".
         */
-      var value: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Source for the environment variable's value. Cannot be used if value is not empty.
         */
-      var valueFrom: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[EnvVarSource]] = js.undefined
+      var valueFrom: js.UndefOr[atPulumiPulumiLib.outputMod.Input[EnvVarSource]] = js.undefined
     }
     
     /**
@@ -1348,22 +1348,22 @@ object coreNs extends js.Object {
       /**
         * Selects a key of a ConfigMap.
         */
-      var configMapKeyRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapKeySelector]] = js.undefined
+      var configMapKeyRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapKeySelector]] = js.undefined
       /**
         * Selects a field of the pod: supports metadata.name, metadata.namespace, metadata.labels,
         * metadata.annotations, spec.nodeName, spec.serviceAccountName, status.hostIP, status.podIP.
         */
-      var fieldRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectFieldSelector]] = js.undefined
+      var fieldRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectFieldSelector]] = js.undefined
       /**
         * Selects a resource of the container: only resources limits and requests (limits.cpu,
         * limits.memory, limits.ephemeral-storage, requests.cpu, requests.memory and
         * requests.ephemeral-storage) are currently supported.
         */
-      var resourceFieldRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceFieldSelector]] = js.undefined
+      var resourceFieldRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceFieldSelector]] = js.undefined
       /**
         * Selects a key of a secret in the pod's namespace
         */
-      var secretKeyRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretKeySelector]] = js.undefined
+      var secretKeyRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretKeySelector]] = js.undefined
     }
     
     /**
@@ -1373,7 +1373,7 @@ object coreNs extends js.Object {
       /**
         * What action was taken/failed regarding to the Regarding object.
         */
-      var action: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var action: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should
         * convert recognized schemas to the latest internal value, and may reject unrecognized
@@ -1381,24 +1381,24 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * The number of times this event has occurred.
         */
-      var count: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var count: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Time when this Event was first observed.
         */
-      var eventTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var eventTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The time at which the event was first recorded. (Time of server receipt is in TypeMeta.)
         */
-      var firstTimestamp: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var firstTimestamp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The object that this event is about.
         */
-      var involvedObject: atPulumiPulumiLib.resourceMod.Input[ObjectReference]
+      var involvedObject: atPulumiPulumiLib.outputMod.Input[ObjectReference]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1406,50 +1406,50 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Event]
           ] = js.undefined
       /**
         * The time at which the most recent occurrence of this event was recorded.
         */
-      var lastTimestamp: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTimestamp: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human-readable description of the status of this operation.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
-      var metadata: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+      var metadata: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
       /**
         * This should be a short, machine understandable string that gives the reason for the
         * transition into the object's current status.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional secondary object for more complex actions.
         */
-      var related: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
+      var related: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectReference]] = js.undefined
       /**
         * Name of the controller that emitted this Event, e.g. `kubernetes.io/kubelet`.
         */
-      var reportingComponent: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reportingComponent: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ID of the controller instance, e.g. `kubelet-xyzf`.
         */
-      var reportingInstance: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reportingInstance: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Data about the Event series this event represents or nil if it's a singleton Event.
         */
-      var series: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[EventSeries]] = js.undefined
+      var series: js.UndefOr[atPulumiPulumiLib.outputMod.Input[EventSeries]] = js.undefined
       /**
         * The component reporting this event. Should be a short machine understandable string.
         */
-      var source: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[EventSource]] = js.undefined
+      var source: js.UndefOr[atPulumiPulumiLib.outputMod.Input[EventSource]] = js.undefined
       /**
         * Type of this event (Normal, Warning), new types could be added in the future
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1463,12 +1463,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of events
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Event]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Event]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -1476,14 +1476,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.EventList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -1495,15 +1495,15 @@ object coreNs extends js.Object {
       /**
         * Number of occurrences in this series up to the last heartbeat time
         */
-      var count: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var count: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Time of the last occurrence observed
         */
-      var lastObservedTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastObservedTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * State of this Series: Ongoing or Finished
         */
-      var state: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var state: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1513,11 +1513,11 @@ object coreNs extends js.Object {
       /**
         * Component from which the event is generated.
         */
-      var component: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var component: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Node name on which the event is generated.
         */
-      var host: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var host: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1532,7 +1532,7 @@ object coreNs extends js.Object {
         * live/healthy and non-zero is unhealthy.
         */
       var command: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -1545,28 +1545,28 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: FC target lun number
         */
-      var lun: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var lun: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: FC target worldwide names (WWNs)
         */
       var targetWWNs: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Optional: FC volume world wide identifiers (wwids) Either wwids or combination of
         * targetWWNs and lun must be set, but not both simultaneously.
         */
       var wwids: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -1578,31 +1578,31 @@ object coreNs extends js.Object {
       /**
         * Driver is the name of the driver to use for this volume.
         */
-      var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var driver: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Extra command options if any.
         */
       var options: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: SecretRef is reference to the secret object containing sensitive information to
         * pass to the plugin scripts. This may be empty if no secret object is specified. If the
         * secret object contains more than one secret, all secrets are passed to the plugin scripts.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
     }
     
     /**
@@ -1613,31 +1613,31 @@ object coreNs extends js.Object {
       /**
         * Driver is the name of the driver to use for this volume.
         */
-      var driver: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var driver: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional: Extra command options if any.
         */
       var options: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Optional: SecretRef is reference to the secret object containing sensitive information to
         * pass to the plugin scripts. This may be empty if no secret object is specified. If the
         * secret object contains more than one secret, all secrets are passed to the plugin scripts.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
     }
     
     /**
@@ -1650,11 +1650,11 @@ object coreNs extends js.Object {
         * Name of the dataset stored as metadata -> name on the dataset for Flocker should be
         * considered as deprecated
         */
-      var datasetName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var datasetName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * UUID of the dataset. This is unique identifier of a Flocker dataset
         */
-      var datasetUUID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var datasetUUID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1671,24 +1671,24 @@ object coreNs extends js.Object {
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The partition in the volume that you want to mount. If omitted, the default is to mount by
         * volume name. Examples: For volume /dev/sda1, you specify the partition as "1". Similarly,
         * the volume partition for /dev/sda is "0" (or you can leave the property empty). More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var partition: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var partition: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Unique name of the PD resource in GCE. Used to identify the disk in GCE. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var pdName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var pdName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
         * info: https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -1705,15 +1705,15 @@ object coreNs extends js.Object {
         * directory will be the git repository.  Otherwise, if specified, the volume will contain the
         * git repository in the subdirectory with the given name.
         */
-      var directory: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var directory: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Repository URL
         */
-      var repository: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var repository: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Commit hash for the specified revision.
         */
-      var revision: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var revision: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1725,24 +1725,24 @@ object coreNs extends js.Object {
         * EndpointsName is the endpoint name that details Glusterfs topology. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var endpoints: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var endpoints: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * EndpointsNamespace is the namespace that contains Glusterfs endpoint. If this field is
         * empty, the EndpointNamespace defaults to the same namespace as the bound PVC. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var endpointsNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var endpointsNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Path is the Glusterfs volume path. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
         * Defaults to false. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -1754,18 +1754,18 @@ object coreNs extends js.Object {
         * EndpointsName is the endpoint name that details Glusterfs topology. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var endpoints: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var endpoints: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Path is the Glusterfs volume path. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ReadOnly here will force the Glusterfs volume to be mounted with read-only permissions.
         * Defaults to false. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md#create-a-pod
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -1776,26 +1776,26 @@ object coreNs extends js.Object {
         * Host name to connect to, defaults to the pod IP. You probably want to set "Host" in
         * httpHeaders instead.
         */
-      var host: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var host: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Custom headers to set in the request. HTTP allows repeated headers.
         */
       var httpHeaders: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HTTPHeader]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[HTTPHeader]]]
           ] = js.undefined
       /**
         * Path to access on the HTTP server.
         */
-      var path: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var path: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Name or number of the port to access on the container. Number must be in the range 1 to
         * 65535. Name must be an IANA_SVC_NAME.
         */
-      var port: atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]
+      var port: atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]
       /**
         * Scheme to use for connecting to the host. Defaults to HTTP.
         */
-      var scheme: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var scheme: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1805,11 +1805,11 @@ object coreNs extends js.Object {
       /**
         * The header field name
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The header field value
         */
-      var value: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1819,15 +1819,15 @@ object coreNs extends js.Object {
       /**
         * One and only one of the following should be specified. Exec specifies the action to take.
         */
-      var exec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ExecAction]] = js.undefined
+      var exec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ExecAction]] = js.undefined
       /**
         * HTTPGet specifies the http request to perform.
         */
-      var httpGet: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[HTTPGetAction]] = js.undefined
+      var httpGet: js.UndefOr[atPulumiPulumiLib.outputMod.Input[HTTPGetAction]] = js.undefined
       /**
         * TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
         */
-      var tcpSocket: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TCPSocketAction]] = js.undefined
+      var tcpSocket: js.UndefOr[atPulumiPulumiLib.outputMod.Input[TCPSocketAction]] = js.undefined
     }
     
     /**
@@ -1839,12 +1839,12 @@ object coreNs extends js.Object {
         * Hostnames for the above IP address.
         */
       var hostnames: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * IP address of the host file entry.
         */
-      var ip: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var ip: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1856,12 +1856,12 @@ object coreNs extends js.Object {
         * Path of the directory on the host. If the path is a symlink, it will follow the link to the
         * real path. More info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type for HostPath Volume Defaults to "" More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#hostpath
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -1872,56 +1872,56 @@ object coreNs extends js.Object {
       /**
         * whether support iSCSI Discovery CHAP authentication
         */
-      var chapAuthDiscovery: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var chapAuthDiscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * whether support iSCSI Session CHAP authentication
         */
-      var chapAuthSession: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var chapAuthSession: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type
         * is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#iscsi
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface
         * simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the
         * connection.
         */
-      var initiatorName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var initiatorName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Target iSCSI Qualified Name.
         */
-      var iqn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var iqn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
         */
-      var iscsiInterface: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var iscsiInterface: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * iSCSI Target Lun number.
         */
-      var lun: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var lun: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * iSCSI Target Portal List. The Portal is either an IP or ip_addr:port if the port is other
         * than default (typically TCP ports 860 and 3260).
         */
       var portals: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * CHAP Secret for iSCSI target and initiator authentication
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than
         * default (typically TCP ports 860 and 3260).
         */
-      var targetPortal: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var targetPortal: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1932,56 +1932,56 @@ object coreNs extends js.Object {
       /**
         * whether support iSCSI Discovery CHAP authentication
         */
-      var chapAuthDiscovery: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var chapAuthDiscovery: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * whether support iSCSI Session CHAP authentication
         */
-      var chapAuthSession: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var chapAuthSession: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Filesystem type of the volume that you want to mount. Tip: Ensure that the filesystem type
         * is supported by the host operating system. Examples: "ext4", "xfs", "ntfs". Implicitly
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#iscsi
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Custom iSCSI Initiator Name. If initiatorName is specified with iscsiInterface
         * simultaneously, new iSCSI interface <target portal>:<volume name> will be created for the
         * connection.
         */
-      var initiatorName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var initiatorName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Target iSCSI Qualified Name.
         */
-      var iqn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var iqn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * iSCSI Interface Name that uses an iSCSI transport. Defaults to 'default' (tcp).
         */
-      var iscsiInterface: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var iscsiInterface: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * iSCSI Target Lun number.
         */
-      var lun: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var lun: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * iSCSI Target Portal List. The portal is either an IP or ip_addr:port if the port is other
         * than default (typically TCP ports 860 and 3260).
         */
       var portals: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * CHAP Secret for iSCSI target and initiator authentication
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
       /**
         * iSCSI Target Portal. The Portal is either an IP or ip_addr:port if the port is other than
         * default (typically TCP ports 860 and 3260).
         */
-      var targetPortal: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var targetPortal: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -1991,18 +1991,18 @@ object coreNs extends js.Object {
       /**
         * The key to project.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Optional: mode bits to use on this file, must be a value between 0 and 0777. If not
         * specified, the volume defaultMode will be used. This might be in conflict with other
         * options that affect the file mode, like fsGroup, and the result can be other mode bits set.
         */
-      var mode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var mode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The relative path of the file to map the key to. May not be an absolute path. May not
         * contain the path element '..'. May not start with the string '..'.
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2018,7 +2018,7 @@ object coreNs extends js.Object {
         * the container blocks until the hook completes. More info:
         * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
         */
-      var postStart: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Handler]] = js.undefined
+      var postStart: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Handler]] = js.undefined
       /**
         * PreStop is called immediately before a container is terminated. The container is terminated
         * after the handler completes. The reason for termination is passed to the handler.
@@ -2026,7 +2026,7 @@ object coreNs extends js.Object {
         * management of the container blocks until the hook completes. More info:
         * https://kubernetes.io/docs/concepts/containers/container-lifecycle-hooks/#container-hooks
         */
-      var preStop: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Handler]] = js.undefined
+      var preStop: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Handler]] = js.undefined
     }
     
     /**
@@ -2040,7 +2040,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2049,20 +2049,20 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRange]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRange]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the limits enforced. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LimitRangeSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LimitRangeSpec]] = js.undefined
     }
     
     /**
@@ -2072,30 +2072,30 @@ object coreNs extends js.Object {
       /**
         * Default resource requirement limit value by resource name if resource limit is omitted.
         */
-      var default: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var default: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * DefaultRequest is the default resource requirement request value by resource name if
         * resource request is omitted.
         */
-      var defaultRequest: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var defaultRequest: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Max usage constraints on this kind by resource name.
         */
-      var max: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var max: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * MaxLimitRequestRatio if specified, the named resource must have a request and limit that
         * are both non-zero where limit divided by request is less than or equal to the enumerated
         * value; this represents the max burst for the named resource.
         */
-      var maxLimitRequestRatio: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var maxLimitRequestRatio: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Min usage constraints on this kind by resource name.
         */
-      var min: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var min: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Type of resource that this limit applies to.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2109,13 +2109,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Items is a list of LimitRange objects. More info:
         * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LimitRange]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[LimitRange]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2123,14 +2123,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRangeList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.LimitRangeList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2141,7 +2141,7 @@ object coreNs extends js.Object {
       /**
         * Limits is the list of LimitRangeItem objects that are enforced.
         */
-      var limits: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LimitRangeItem]]]
+      var limits: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[LimitRangeItem]]]
     }
     
     /**
@@ -2153,12 +2153,12 @@ object coreNs extends js.Object {
         * Hostname is set for load-balancer ingress points that are DNS based (typically AWS
         * load-balancers)
         */
-      var hostname: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var hostname: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * IP is set for load-balancer ingress points that are IP based (typically GCE or OpenStack
         * load-balancers)
         */
-      var ip: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var ip: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2170,7 +2170,7 @@ object coreNs extends js.Object {
         * service should be sent to these ingress points.
         */
       var ingress: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LoadBalancerIngress]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[LoadBalancerIngress]]]
           ] = js.undefined
     }
     
@@ -2183,7 +2183,7 @@ object coreNs extends js.Object {
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2195,12 +2195,12 @@ object coreNs extends js.Object {
         * filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The
         * default value is to auto-select a fileystem if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The full path to the volume on the node. It can be either a directory or block device
         * (disk, partition, ...).
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2212,17 +2212,17 @@ object coreNs extends js.Object {
         * Path that is exported by the NFS server. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#nfs
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ReadOnly here will force the NFS export to be mounted with read-only permissions. Defaults
         * to false. More info: https://kubernetes.io/docs/concepts/storage/volumes#nfs
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Server is the hostname or IP address of the NFS server. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#nfs
         */
-      var server: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var server: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2236,7 +2236,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2245,25 +2245,25 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Namespace]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Namespace]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the behavior of the Namespace. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NamespaceSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NamespaceSpec]] = js.undefined
       /**
         * Status describes the current status of a Namespace. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NamespaceStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NamespaceStatus]] = js.undefined
     }
     
     /**
@@ -2277,13 +2277,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Items is the list of Namespace objects in the list. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Namespace]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Namespace]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2291,14 +2291,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NamespaceList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NamespaceList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2311,7 +2311,7 @@ object coreNs extends js.Object {
         * storage. More info: https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
         */
       var finalizers: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -2323,7 +2323,7 @@ object coreNs extends js.Object {
         * Phase is the current lifecycle phase of the namespace. More info:
         * https://kubernetes.io/docs/tasks/administer-cluster/namespaces/
         */
-      var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var phase: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2338,7 +2338,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2347,25 +2347,25 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Node]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Node]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the behavior of a node.
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeSpec]] = js.undefined
       /**
         * Most recently observed status of the node. Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeStatus]] = js.undefined
     }
     
     /**
@@ -2375,11 +2375,11 @@ object coreNs extends js.Object {
       /**
         * The node address.
         */
-      var address: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var address: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Node address type, one of Hostname, ExternalIP or InternalIP.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2396,7 +2396,7 @@ object coreNs extends js.Object {
         * corresponding matchExpressions; the node(s) with the highest sum are the most preferred.
         */
       var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PreferredSchedulingTerm]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PreferredSchedulingTerm]]]
           ] = js.undefined
       /**
         * If the affinity requirements specified by this field are not met at scheduling time, the
@@ -2404,7 +2404,7 @@ object coreNs extends js.Object {
         * field cease to be met at some point during pod execution (e.g. due to an update), the
         * system may or may not try to eventually evict the pod from its node.
         */
-      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeSelector]] = js.undefined
+      var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeSelector]] = js.undefined
     }
     
     /**
@@ -2414,27 +2414,27 @@ object coreNs extends js.Object {
       /**
         * Last time we got an update on a given condition.
         */
-      var lastHeartbeatTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastHeartbeatTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Last time the condition transit from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * (brief) reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of node condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2445,7 +2445,7 @@ object coreNs extends js.Object {
       /**
         * ConfigMap is a reference to a Node's ConfigMap
         */
-      var configMap: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapNodeConfigSource]] = js.undefined
+      var configMap: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapNodeConfigSource]] = js.undefined
     }
     
     /**
@@ -2457,7 +2457,7 @@ object coreNs extends js.Object {
         * either the current version of the Assigned config, or the current LastKnownGood config,
         * depending on whether attempting to use the Assigned config results in an error.
         */
-      var active: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      var active: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeConfigSource]] = js.undefined
       /**
         * Assigned reports the checkpointed config the node will try to use. When
         * Node.Spec.ConfigSource is updated, the node checkpoints the associated config payload to
@@ -2467,7 +2467,7 @@ object coreNs extends js.Object {
         * restarted, it tries to make the Assigned config the Active config by loading and validating
         * the checkpointed payload identified by Assigned.
         */
-      var assigned: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      var assigned: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeConfigSource]] = js.undefined
       /**
         * Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors
         * may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned
@@ -2482,7 +2482,7 @@ object coreNs extends js.Object {
         * machines can check whether or not Error is empty, but should not rely on the stability of
         * the Error text across Kubelet versions.
         */
-      var error: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var error: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * LastKnownGood reports the checkpointed config the node will fall back to when it encounters
         * an error attempting to use the Assigned config. The Assigned config becomes the
@@ -2495,7 +2495,7 @@ object coreNs extends js.Object {
         * method of determining config stability and correctness, as this may change or become
         * configurable in the future.
         */
-      var lastKnownGood: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      var lastKnownGood: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeConfigSource]] = js.undefined
     }
     
     /**
@@ -2505,7 +2505,7 @@ object coreNs extends js.Object {
       /**
         * Endpoint on which Kubelet is listening.
         */
-      var kubeletEndpoint: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DaemonEndpoint]] = js.undefined
+      var kubeletEndpoint: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DaemonEndpoint]] = js.undefined
     }
     
     /**
@@ -2519,12 +2519,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of nodes
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Node]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Node]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2532,14 +2532,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NodeList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NodeList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2552,7 +2552,7 @@ object coreNs extends js.Object {
       /**
         * Required. A list of node selector terms. The terms are ORed.
         */
-      var nodeSelectorTerms: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorTerm]]]
+      var nodeSelectorTerms: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NodeSelectorTerm]]]
     }
     
     /**
@@ -2563,12 +2563,12 @@ object coreNs extends js.Object {
       /**
         * The label key that the selector applies to.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Represents a key's relationship to a set of values. Valid operators are In, NotIn, Exists,
         * DoesNotExist. Gt, and Lt.
         */
-      var operator: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var operator: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * An array of string values. If the operator is In or NotIn, the values array must be
         * non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. If
@@ -2576,7 +2576,7 @@ object coreNs extends js.Object {
         * interpreted as an integer. This array is replaced during a strategic merge patch.
         */
       var values: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -2589,13 +2589,13 @@ object coreNs extends js.Object {
         * A list of node selector requirements by node's labels.
         */
       var matchExpressions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorRequirement]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NodeSelectorRequirement]]]
           ] = js.undefined
       /**
         * A list of node selector requirements by node's fields.
         */
       var matchFields: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeSelectorRequirement]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NodeSelectorRequirement]]]
           ] = js.undefined
     }
     
@@ -2607,32 +2607,32 @@ object coreNs extends js.Object {
         * If specified, the source to get node configuration from The DynamicKubeletConfig feature
         * gate must be enabled for the Kubelet to use this field
         */
-      var configSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigSource]] = js.undefined
+      var configSource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeConfigSource]] = js.undefined
       /**
         * Deprecated. Not all kubelets will set this field. Remove field after 1.13. see:
         * https://issues.k8s.io/61966
         */
-      var externalID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var externalID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * PodCIDR represents the pod IP range assigned to the node.
         */
-      var podCIDR: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var podCIDR: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ID of the node assigned by the cloud provider in the format:
         * <ProviderName>://<ProviderSpecificNodeID>
         */
-      var providerID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var providerID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * If specified, the node's taints.
         */
       var taints: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Taint]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Taint]]]
           ] = js.undefined
       /**
         * Unschedulable controls node schedulability of new pods. By default, node is schedulable.
         * More info: https://kubernetes.io/docs/concepts/nodes/node/#manual-node-administration
         */
-      var unschedulable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var unschedulable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -2644,61 +2644,61 @@ object coreNs extends js.Object {
         * info: https://kubernetes.io/docs/concepts/nodes/node/#addresses
         */
       var addresses: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeAddress]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NodeAddress]]]
           ] = js.undefined
       /**
         * Allocatable represents the resources of a node that are available for scheduling. Defaults
         * to Capacity.
         */
-      var allocatable: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var allocatable: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Capacity represents the total resources of a node. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
         */
-      var capacity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var capacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Conditions is an array of current observed node conditions. More info:
         * https://kubernetes.io/docs/concepts/nodes/node/#condition
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NodeCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NodeCondition]]]
           ] = js.undefined
       /**
         * Status of the config assigned to the node via the dynamic Kubelet config feature.
         */
-      var config: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeConfigStatus]] = js.undefined
+      var config: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeConfigStatus]] = js.undefined
       /**
         * Endpoints of daemons running on the Node.
         */
-      var daemonEndpoints: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeDaemonEndpoints]] = js.undefined
+      var daemonEndpoints: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeDaemonEndpoints]] = js.undefined
       /**
         * List of container images on this node
         */
       var images: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerImage]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ContainerImage]]]
           ] = js.undefined
       /**
         * Set of ids/uuids to uniquely identify the node. More info:
         * https://kubernetes.io/docs/concepts/nodes/node/#info
         */
-      var nodeInfo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeSystemInfo]] = js.undefined
+      var nodeInfo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeSystemInfo]] = js.undefined
       /**
         * NodePhase is the recently observed lifecycle phase of the node. More info:
         * https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now
         * is deprecated.
         */
-      var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var phase: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * List of volumes that are attached to the node.
         */
       var volumesAttached: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[AttachedVolume]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[AttachedVolume]]]
           ] = js.undefined
       /**
         * List of attachable volumes in use (mounted) by the node.
         */
       var volumesInUse: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -2709,48 +2709,48 @@ object coreNs extends js.Object {
       /**
         * The Architecture reported by the node
         */
-      var architecture: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var architecture: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Boot ID reported by the node.
         */
-      var bootID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var bootID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * ContainerRuntime Version reported by the node through runtime remote API (e.g.
         * docker://1.5.0).
         */
-      var containerRuntimeVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var containerRuntimeVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
         */
-      var kernelVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kernelVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * KubeProxy Version reported by the node.
         */
-      var kubeProxyVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kubeProxyVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Kubelet Version reported by the node.
         */
-      var kubeletVersion: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kubeletVersion: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * MachineID reported by the node. For unique machine identification in the cluster this field
         * is preferred. Learn more from man(5) machine-id:
         * http://man7.org/linux/man-pages/man5/machine-id.5.html
         */
-      var machineID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var machineID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The Operating System reported by the node
         */
-      var operatingSystem: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var operatingSystem: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
         */
-      var osImage: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var osImage: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * SystemUUID reported by the node. For unique machine identification MachineID is preferred.
         * This field is specific to Red Hat hosts
         * https://access.redhat.com/documentation/en-US/Red_Hat_Subscription_Management/1/html/RHSM/getting-system-uuid.html
         */
-      var systemUUID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var systemUUID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2760,11 +2760,11 @@ object coreNs extends js.Object {
       /**
         * Version of the schema the FieldPath is written in terms of, defaults to "v1".
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Path of the field to select in the specified API version.
         */
-      var fieldPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var fieldPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2774,7 +2774,7 @@ object coreNs extends js.Object {
       /**
         * API version of the referent.
         */
-      var apiVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * If referring to a piece of an object instead of an entire object, this string should
         * contain a valid JSON/Go field access statement, such as
@@ -2784,32 +2784,32 @@ object coreNs extends js.Object {
         * "spec.containers[2]" (container with index 2 in this pod). This syntax is chosen only to
         * have some well-defined way of referencing a part of an object.
         */
-      var fieldPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fieldPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Kind of the referent. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
-      var kind: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var kind: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specific resourceVersion to which this reference is made, if any. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#concurrency-control-and-consistency
         */
-      var resourceVersion: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var resourceVersion: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * UID of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#uids
         */
-      var uid: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var uid: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -2824,7 +2824,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2833,27 +2833,27 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolume]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolume]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines a specification of a persistent volume owned by the cluster. Provisioned by an
         * administrator. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PersistentVolumeSpec]] = js.undefined
       /**
         * Status represents the current information/status for the persistent volume. Populated by
         * the system. Read-only. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistent-volumes
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PersistentVolumeStatus]] = js.undefined
     }
     
     /**
@@ -2867,7 +2867,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -2876,26 +2876,26 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaim]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaim]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the desired characteristics of a volume requested by a pod author. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaimSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PersistentVolumeClaimSpec]] = js.undefined
       /**
         * Status represents the current information/status of a persistent volume claim. Read-only.
         * More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaimStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PersistentVolumeClaimStatus]] = js.undefined
     }
     
     /**
@@ -2905,23 +2905,23 @@ object coreNs extends js.Object {
       /**
         * Last time we probed the condition.
         */
-      var lastProbeTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastProbeTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human-readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Unique, this should be a short, machine understandable string that gives the reason for
         * condition's last transition. If it reports "ResizeStarted" that means the underlying
         * persistent volume is being resized.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -2935,13 +2935,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * A list of persistent volume claims. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaim]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PersistentVolumeClaim]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -2949,14 +2949,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaimList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeClaimList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -2970,7 +2970,7 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
         */
       var accessModes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * This field requires the VolumeSnapshotDataSource alpha feature gate to be enabled and
@@ -2980,32 +2980,32 @@ object coreNs extends js.Object {
         * volume will not be created and the failure will be reported as an event. In the future, we
         * plan to support more data source types and the behavior of the provisioner may change.
         */
-      var dataSource: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TypedLocalObjectReference]] = js.undefined
+      var dataSource: js.UndefOr[atPulumiPulumiLib.outputMod.Input[TypedLocalObjectReference]] = js.undefined
       /**
         * Resources represents the minimum resources the volume should have. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#resources
         */
-      var resources: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceRequirements]] = js.undefined
+      var resources: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceRequirements]] = js.undefined
       /**
         * A label query over volumes to consider for binding.
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * Name of the StorageClass required by the claim. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#class-1
         */
-      var storageClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storageClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * volumeMode defines what type of volume is required by the claim. Value of Filesystem is
         * implied when not included in claim spec. This is a beta feature.
         */
-      var volumeMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VolumeName is the binding reference to the PersistentVolume backing this claim.
         */
-      var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -3017,23 +3017,23 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes-1
         */
       var accessModes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * Represents the actual resources of the underlying volume.
         */
-      var capacity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var capacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Current Condition of persistent volume claim. If underlying persistent volume is being
         * resized then the Condition will be set to 'ResizeStarted'.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaimCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PersistentVolumeClaimCondition]]]
           ] = js.undefined
       /**
         * Phase represents the current phase of PersistentVolumeClaim.
         */
-      var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var phase: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -3048,11 +3048,11 @@ object coreNs extends js.Object {
         * this volume. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var claimName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var claimName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Will force the ReadOnly setting in VolumeMounts. Default false.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -3066,13 +3066,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of persistent volumes. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PersistentVolume]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PersistentVolume]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3080,14 +3080,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PersistentVolumeList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -3100,108 +3100,108 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#access-modes
         */
       var accessModes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * AWSElasticBlockStore represents an AWS Disk resource that is attached to a kubelet's host
         * machine and then exposed to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
         */
-      var awsElasticBlockStore: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AWSElasticBlockStoreVolumeSource]] = js.undefined
+      var awsElasticBlockStore: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AWSElasticBlockStoreVolumeSource]] = js.undefined
       /**
         * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
         */
-      var azureDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AzureDiskVolumeSource]] = js.undefined
+      var azureDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AzureDiskVolumeSource]] = js.undefined
       /**
         * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
         */
-      var azureFile: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AzureFilePersistentVolumeSource]] = js.undefined
+      var azureFile: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AzureFilePersistentVolumeSource]] = js.undefined
       /**
         * A description of the persistent volume's resources and capacity. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#capacity
         */
-      var capacity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var capacity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
         */
-      var cephfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CephFSPersistentVolumeSource]] = js.undefined
+      var cephfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CephFSPersistentVolumeSource]] = js.undefined
       /**
         * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
         * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var cinder: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CinderPersistentVolumeSource]] = js.undefined
+      var cinder: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CinderPersistentVolumeSource]] = js.undefined
       /**
         * ClaimRef is part of a bi-directional binding between PersistentVolume and
         * PersistentVolumeClaim. Expected to be non-nil when bound. claim.VolumeName is the
         * authoritative bind between PV and PVC. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#binding
         */
-      var claimRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
+      var claimRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectReference]] = js.undefined
       /**
         * CSI represents storage that handled by an external CSI driver (Beta feature).
         */
-      var csi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CSIPersistentVolumeSource]] = js.undefined
+      var csi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CSIPersistentVolumeSource]] = js.undefined
       /**
         * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and
         * then exposed to the pod.
         */
-      var fc: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FCVolumeSource]] = js.undefined
+      var fc: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FCVolumeSource]] = js.undefined
       /**
         * FlexVolume represents a generic volume resource that is provisioned/attached using an exec
         * based plugin.
         */
-      var flexVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlexPersistentVolumeSource]] = js.undefined
+      var flexVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FlexPersistentVolumeSource]] = js.undefined
       /**
         * Flocker represents a Flocker volume attached to a kubelet's host machine and exposed to the
         * pod for its usage. This depends on the Flocker control service being running
         */
-      var flocker: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlockerVolumeSource]] = js.undefined
+      var flocker: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FlockerVolumeSource]] = js.undefined
       /**
         * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host
         * machine and then exposed to the pod. Provisioned by an admin. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var gcePersistentDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GCEPersistentDiskVolumeSource]] = js.undefined
+      var gcePersistentDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[GCEPersistentDiskVolumeSource]] = js.undefined
       /**
         * Glusterfs represents a Glusterfs volume that is attached to a host and exposed to the pod.
         * Provisioned by an admin. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
         */
-      var glusterfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GlusterfsPersistentVolumeSource]] = js.undefined
+      var glusterfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[GlusterfsPersistentVolumeSource]] = js.undefined
       /**
         * HostPath represents a directory on the host. Provisioned by a developer or tester. This is
         * useful for single-node development and testing only! On-host storage is not supported in
         * any way and WILL NOT WORK in a multi-node cluster. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#hostpath
         */
-      var hostPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[HostPathVolumeSource]] = js.undefined
+      var hostPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[HostPathVolumeSource]] = js.undefined
       /**
         * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and
         * then exposed to the pod. Provisioned by an admin.
         */
-      var iscsi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ISCSIPersistentVolumeSource]] = js.undefined
+      var iscsi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ISCSIPersistentVolumeSource]] = js.undefined
       /**
         * Local represents directly-attached storage with node affinity
         */
-      var local: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalVolumeSource]] = js.undefined
+      var local: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalVolumeSource]] = js.undefined
       /**
         * A list of mount options, e.g. ["ro", "soft"]. Not validated - mount will simply fail if one
         * is invalid. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes/#mount-options
         */
       var mountOptions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * NFS represents an NFS mount on the host. Provisioned by an admin. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#nfs
         */
-      var nfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NFSVolumeSource]] = js.undefined
+      var nfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NFSVolumeSource]] = js.undefined
       /**
         * NodeAffinity defines constraints that limit what nodes this volume can be accessed from.
         * This field influences the scheduling of pods that use this volume.
         */
-      var nodeAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VolumeNodeAffinity]] = js.undefined
+      var nodeAffinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VolumeNodeAffinity]] = js.undefined
       /**
         * What happens to a persistent volume when released from its claim. Valid options are Retain
         * (default for manually created PersistentVolumes), Delete (default for dynamically
@@ -3209,50 +3209,50 @@ object coreNs extends js.Object {
         * volume plugin underlying this PersistentVolume. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#reclaiming
         */
-      var persistentVolumeReclaimPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var persistentVolumeReclaimPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on
         * kubelets host machine
         */
-      var photonPersistentDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PhotonPersistentDiskVolumeSource]] = js.undefined
+      var photonPersistentDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PhotonPersistentDiskVolumeSource]] = js.undefined
       /**
         * PortworxVolume represents a portworx volume attached and mounted on kubelets host machine
         */
-      var portworxVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PortworxVolumeSource]] = js.undefined
+      var portworxVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PortworxVolumeSource]] = js.undefined
       /**
         * Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
         */
-      var quobyte: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[QuobyteVolumeSource]] = js.undefined
+      var quobyte: js.UndefOr[atPulumiPulumiLib.outputMod.Input[QuobyteVolumeSource]] = js.undefined
       /**
         * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
         * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
         */
-      var rbd: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RBDPersistentVolumeSource]] = js.undefined
+      var rbd: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RBDPersistentVolumeSource]] = js.undefined
       /**
         * ScaleIO represents a ScaleIO persistent volume attached and mounted on Kubernetes nodes.
         */
-      var scaleIO: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleIOPersistentVolumeSource]] = js.undefined
+      var scaleIO: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleIOPersistentVolumeSource]] = js.undefined
       /**
         * Name of StorageClass to which this persistent volume belongs. Empty value means that this
         * volume does not belong to any StorageClass.
         */
-      var storageClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storageClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * StorageOS represents a StorageOS volume that is attached to the kubelet's host machine and
         * mounted into the pod More info:
         * https://releases.k8s.io/HEAD/examples/volumes/storageos/README.md
         */
-      var storageos: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StorageOSPersistentVolumeSource]] = js.undefined
+      var storageos: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StorageOSPersistentVolumeSource]] = js.undefined
       /**
         * volumeMode defines if a volume is intended to be used with a formatted filesystem or to
         * remain in raw block state. Value of Filesystem is implied when not included in spec. This
         * is a beta feature.
         */
-      var volumeMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
         */
-      var vsphereVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VsphereVirtualDiskVolumeSource]] = js.undefined
+      var vsphereVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VsphereVirtualDiskVolumeSource]] = js.undefined
     }
     
     /**
@@ -3262,17 +3262,17 @@ object coreNs extends js.Object {
       /**
         * A human-readable message indicating details about why the volume is in this state.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Phase indicates if a volume is available, bound to a claim, or released by a claim. More
         * info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#phase
         */
-      var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var phase: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Reason is a brief CamelCase string that describes any failure and is meant for machine
         * parsing and tidy display in the CLI.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -3283,11 +3283,11 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ID that identifies Photon Controller persistent disk
         */
-      var pdID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var pdID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -3302,7 +3302,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -3311,26 +3311,26 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Pod]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Pod]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior of the pod. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodSpec]] = js.undefined
       /**
         * Most recently observed status of the pod. This data may not be up to date. Populated by the
         * system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodStatus]] = js.undefined
     }
     
     /**
@@ -3348,7 +3348,7 @@ object coreNs extends js.Object {
         * preferred.
         */
       var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[WeightedPodAffinityTerm]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[WeightedPodAffinityTerm]]]
           ] = js.undefined
       /**
         * If the affinity requirements specified by this field are not met at scheduling time, the
@@ -3359,7 +3359,7 @@ object coreNs extends js.Object {
         * intersected, i.e. all terms must be satisfied.
         */
       var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodAffinityTerm]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodAffinityTerm]]]
           ] = js.undefined
     }
     
@@ -3374,14 +3374,14 @@ object coreNs extends js.Object {
         * A label query over a set of resources, in this case pods.
         */
       var labelSelector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * namespaces specifies which namespaces the labelSelector applies to (matches against); null
         * or empty list means "this pod's namespace"
         */
       var namespaces: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods
@@ -3389,7 +3389,7 @@ object coreNs extends js.Object {
         * running on a node whose value of the label with key topologyKey matches that of any node on
         * which any of the selected pods is running. Empty topologyKey is not allowed.
         */
-      var topologyKey: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var topologyKey: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -3407,7 +3407,7 @@ object coreNs extends js.Object {
         * the most preferred.
         */
       var preferredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[WeightedPodAffinityTerm]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[WeightedPodAffinityTerm]]]
           ] = js.undefined
       /**
         * If the anti-affinity requirements specified by this field are not met at scheduling time,
@@ -3418,7 +3418,7 @@ object coreNs extends js.Object {
         * intersected, i.e. all terms must be satisfied.
         */
       var requiredDuringSchedulingIgnoredDuringExecution: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodAffinityTerm]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodAffinityTerm]]]
           ] = js.undefined
     }
     
@@ -3429,29 +3429,29 @@ object coreNs extends js.Object {
       /**
         * Last time we probed the condition.
         */
-      var lastProbeTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastProbeTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Human-readable message indicating details about last transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Unique, one-word, CamelCase reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status is the status of the condition. Can be True, False, Unknown. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type is the type of the condition. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -3464,7 +3464,7 @@ object coreNs extends js.Object {
         * generated from DNSPolicy. Duplicated nameservers will be removed.
         */
       var nameservers: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * A list of DNS resolver options. This will be merged with the base options generated from
@@ -3472,14 +3472,14 @@ object coreNs extends js.Object {
         * override those that appear in the base DNSPolicy.
         */
       var options: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodDNSConfigOption]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodDNSConfigOption]]]
           ] = js.undefined
       /**
         * A list of DNS search domains for host-name lookup. This will be appended to the base search
         * paths generated from DNSPolicy. Duplicated search paths will be removed.
         */
       var searches: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -3490,8 +3490,8 @@ object coreNs extends js.Object {
       /**
         * Required.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
-      var value: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
+      var value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -3505,12 +3505,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of pods. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Pod]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Pod]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3518,14 +3518,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -3536,7 +3536,7 @@ object coreNs extends js.Object {
       /**
         * ConditionType refers to a condition in the pod's condition list with matching type.
         */
-      var conditionType: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var conditionType: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -3554,13 +3554,13 @@ object coreNs extends js.Object {
         *
         * If unset, the Kubelet will not modify the ownership and permissions of any volume.
         */
-      var fsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var fsGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
         * also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext, the
         * value specified in SecurityContext takes precedence for that container.
         */
-      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Indicates that the container must run as a non-root user. If true, the Kubelet will
         * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to
@@ -3568,34 +3568,34 @@ object coreNs extends js.Object {
         * May also be set in SecurityContext.  If set in both SecurityContext and PodSecurityContext,
         * the value specified in SecurityContext takes precedence.
         */
-      var runAsNonRoot: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var runAsNonRoot: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The UID to run the entrypoint of the container process. Defaults to user specified in image
         * metadata if unspecified. May also be set in SecurityContext.  If set in both
         * SecurityContext and PodSecurityContext, the value specified in SecurityContext takes
         * precedence for that container.
         */
-      var runAsUser: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var runAsUser: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The SELinux context to be applied to all containers. If unspecified, the container runtime
         * will allocate a random SELinux context for each container.  May also be set in
         * SecurityContext.  If set in both SecurityContext and PodSecurityContext, the value
         * specified in SecurityContext takes precedence for that container.
         */
-      var seLinuxOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SELinuxOptions]] = js.undefined
+      var seLinuxOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SELinuxOptions]] = js.undefined
       /**
         * A list of groups applied to the first process run in each container, in addition to the
         * container's primary GID.  If unspecified, no groups will be added to any container.
         */
       var supplementalGroups: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[scala.Double]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[scala.Double]]]
           ] = js.undefined
       /**
         * Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls
         * (by the container runtime) might fail to launch.
         */
       var sysctls: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Sysctl]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Sysctl]]]
           ] = js.undefined
     }
     
@@ -3608,26 +3608,26 @@ object coreNs extends js.Object {
         * the system will actively try to mark it failed and kill associated containers. Value must
         * be a positive integer.
         */
-      var activeDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var activeDeadlineSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If specified, the pod's scheduling constraints
         */
-      var affinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Affinity]] = js.undefined
+      var affinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Affinity]] = js.undefined
       /**
         * AutomountServiceAccountToken indicates whether a service account token should be
         * automatically mounted.
         */
-      var automountServiceAccountToken: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var automountServiceAccountToken: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * List of containers belonging to the pod. Containers cannot currently be added or removed.
         * There must be at least one container in a Pod. Cannot be updated.
         */
-      var containers: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Container]]]
+      var containers: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Container]]]
       /**
         * Specifies the DNS parameters of a pod. Parameters specified here will be merged to the
         * generated DNS configuration based on DNSPolicy.
         */
-      var dnsConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodDNSConfig]] = js.undefined
+      var dnsConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodDNSConfig]] = js.undefined
       /**
         * Set DNS policy for the pod. Defaults to "ClusterFirst". Valid values are
         * 'ClusterFirstWithHostNet', 'ClusterFirst', 'Default' or 'None'. DNS parameters given in
@@ -3635,37 +3635,37 @@ object coreNs extends js.Object {
         * along with hostNetwork, you have to specify DNS policy explicitly to
         * 'ClusterFirstWithHostNet'.
         */
-      var dnsPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var dnsPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * EnableServiceLinks indicates whether information about services should be injected into
         * pod's environment variables, matching the syntax of Docker links.
         */
-      var enableServiceLinks: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var enableServiceLinks: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * HostAliases is an optional list of hosts and IPs that will be injected into the pod's hosts
         * file if specified. This is only valid for non-hostNetwork pods.
         */
       var hostAliases: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[HostAlias]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[HostAlias]]]
           ] = js.undefined
       /**
         * Use the host's ipc namespace. Optional: Default to false.
         */
-      var hostIPC: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var hostIPC: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Host networking requested for this pod. Use the host's network namespace. If this option is
         * set, the ports that will be used must be specified. Default to false.
         */
-      var hostNetwork: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var hostNetwork: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Use the host's pid namespace. Optional: Default to false.
         */
-      var hostPID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var hostPID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Specifies the hostname of the Pod If not specified, the pod's hostname will be set to a
         * system-defined value.
         */
-      var hostname: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var hostname: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ImagePullSecrets is an optional list of references to secrets in the same namespace to use
         * for pulling any of the images used by this PodSpec. If specified, these secrets will be
@@ -3674,7 +3674,7 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/containers/images#specifying-imagepullsecrets-on-a-pod
         */
       var imagePullSecrets: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]]]
           ] = js.undefined
       /**
         * List of initialization containers belonging to the pod. Init containers are executed in
@@ -3689,22 +3689,22 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/workloads/pods/init-containers/
         */
       var initContainers: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Container]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Container]]]
           ] = js.undefined
       /**
         * NodeName is a request to schedule this pod onto a specific node. If it is non-empty, the
         * scheduler simply schedules this pod onto that node, assuming that it fits resource
         * requirements.
         */
-      var nodeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var nodeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * NodeSelector is a selector which must be true for the pod to fit on a node. Selector which
         * must match a node's labels for the pod to be scheduled on that node. More info:
         * https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
         */
       var nodeSelector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -3713,7 +3713,7 @@ object coreNs extends js.Object {
         * field. The admission controller populates this field from PriorityClassName. The higher the
         * value, the higher the priority.
         */
-      var priority: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var priority: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If specified, indicates the pod's priority. "system-node-critical" and
         * "system-cluster-critical" are two special keywords which indicate the highest priorities
@@ -3721,7 +3721,7 @@ object coreNs extends js.Object {
         * PriorityClass object with that name. If not specified, the pod priority will be default or
         * zero if there is no default.
         */
-      var priorityClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var priorityClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * If specified, all readiness gates will be evaluated for pod readiness. A pod is ready when
         * all its containers are ready AND all conditions specified in the readiness gates have
@@ -3729,14 +3729,14 @@ object coreNs extends js.Object {
         * https://github.com/kubernetes/community/blob/master/keps/sig-network/0007-pod-ready%2B%2B.md
         */
       var readinessGates: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodReadinessGate]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodReadinessGate]]]
           ] = js.undefined
       /**
         * Restart policy for all containers within the pod. One of Always, OnFailure, Never. Default
         * to Always. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle/#restart-policy
         */
-      var restartPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var restartPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * RuntimeClassName refers to a RuntimeClass object in the node.k8s.io group, which should be
         * used to run this pod.  If no RuntimeClass resource matches the named class, the pod will
@@ -3745,27 +3745,27 @@ object coreNs extends js.Object {
         * https://github.com/kubernetes/community/blob/master/keps/sig-node/0014-runtime-class.md
         * This is an alpha feature and may change in the future.
         */
-      var runtimeClassName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var runtimeClassName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * If specified, the pod will be dispatched by specified scheduler. If not specified, the pod
         * will be dispatched by default scheduler.
         */
-      var schedulerName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var schedulerName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * SecurityContext holds pod-level security attributes and common container settings.
         * Optional: Defaults to empty.  See type description for default values of each field.
         */
-      var securityContext: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodSecurityContext]] = js.undefined
+      var securityContext: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodSecurityContext]] = js.undefined
       /**
         * DeprecatedServiceAccount is a depreciated alias for ServiceAccountName. Deprecated: Use
         * serviceAccountName instead.
         */
-      var serviceAccount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var serviceAccount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ServiceAccountName is the name of the ServiceAccount to use to run this pod. More info:
         * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
         */
-      var serviceAccountName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var serviceAccountName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Share a single process namespace between all of the containers in a pod. When this is set
         * containers will be able to view and signal processes from other containers in the same pod,
@@ -3773,13 +3773,13 @@ object coreNs extends js.Object {
         * ShareProcessNamespace cannot both be set. Optional: Default to false. This field is
         * beta-level and may be disabled with the PodShareProcessNamespace feature.
         */
-      var shareProcessNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var shareProcessNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * If specified, the fully qualified Pod hostname will be "<hostname>.<subdomain>.<pod
         * namespace>.svc.<cluster domain>". If not specified, the pod will not have a domainname at
         * all.
         */
-      var subdomain: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var subdomain: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Optional duration in seconds the pod needs to terminate gracefully. May be decreased in
         * delete request. Value must be non-negative integer. The value zero indicates delete
@@ -3789,19 +3789,19 @@ object coreNs extends js.Object {
         * Set this value longer than the expected cleanup time for your process. Defaults to 30
         * seconds.
         */
-      var terminationGracePeriodSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var terminationGracePeriodSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If specified, the pod's tolerations.
         */
       var tolerations: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Toleration]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Toleration]]]
           ] = js.undefined
       /**
         * List of volumes that can be mounted by containers belonging to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes
         */
       var volumes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Volume]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Volume]]]
           ] = js.undefined
     }
     
@@ -3815,7 +3815,7 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodCondition]]]
           ] = js.undefined
       /**
         * The list has one entry per container in the manifest. Each entry is currently the output of
@@ -3823,12 +3823,12 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-and-container-status
         */
       var containerStatuses: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerStatus]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ContainerStatus]]]
           ] = js.undefined
       /**
         * IP address of the host to which the pod is assigned. Empty if not yet scheduled.
         */
-      var hostIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var hostIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The list has one entry per init container in the manifest. The most recent successful init
         * container will have ready = true, the most recently started container will have startTime
@@ -3836,12 +3836,12 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-and-container-status
         */
       var initContainerStatuses: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ContainerStatus]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ContainerStatus]]]
           ] = js.undefined
       /**
         * A human readable message indicating details about why the pod is in this condition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * nominatedNodeName is set only when this pod preempts other pods on the node, but it cannot
         * be scheduled right away as preemption victims receive their graceful termination periods.
@@ -3851,7 +3851,7 @@ object coreNs extends js.Object {
         * after preemption. As a result, this field may be different than PodSpec.nodeName when the
         * pod is scheduled.
         */
-      var nominatedNodeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var nominatedNodeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle.
         * The conditions array, the reason and message fields, and the individual container status
@@ -3870,28 +3870,28 @@ object coreNs extends js.Object {
         *
         * More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase
         */
-      var phase: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var phase: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * IP address allocated to the pod. Routable at least within the cluster. Empty if not yet
         * allocated.
         */
-      var podIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var podIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The Quality of Service (QOS) classification assigned to the pod based on resource
         * requirements See PodQOSClass type for available QOS classes More info:
         * https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md
         */
-      var qosClass: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var qosClass: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A brief CamelCase message indicating details about why the pod is in this state. e.g.
         * 'Evicted'
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before
         * the Kubelet pulled the container image(s) for the pod.
         */
-      var startTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var startTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -3905,7 +3905,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -3914,20 +3914,20 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplate]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplate]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Template defines the pods that will be created from this pod template.
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var template: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodTemplateSpec]] = js.undefined
+      var template: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodTemplateSpec]] = js.undefined
     }
     
     /**
@@ -3941,12 +3941,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of pod templates
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[PodTemplate]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[PodTemplate]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -3954,14 +3954,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplateList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.PodTemplateList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -3974,13 +3974,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior of the pod. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodSpec]] = js.undefined
     }
     
     /**
@@ -3991,16 +3991,16 @@ object coreNs extends js.Object {
         * FSType represents the filesystem type to mount Must be a filesystem type supported by the
         * host operating system. Ex. "ext4", "xfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * VolumeID uniquely identifies a Portworx volume
         */
-      var volumeID: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumeID: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -4011,11 +4011,11 @@ object coreNs extends js.Object {
       /**
         * A node selector term, associated with the corresponding weight.
         */
-      var preference: atPulumiPulumiLib.resourceMod.Input[NodeSelectorTerm]
+      var preference: atPulumiPulumiLib.outputMod.Input[NodeSelectorTerm]
       /**
         * Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.
         */
-      var weight: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -4026,41 +4026,41 @@ object coreNs extends js.Object {
       /**
         * One and only one of the following should be specified. Exec specifies the action to take.
         */
-      var exec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ExecAction]] = js.undefined
+      var exec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ExecAction]] = js.undefined
       /**
         * Minimum consecutive failures for the probe to be considered failed after having succeeded.
         * Defaults to 3. Minimum value is 1.
         */
-      var failureThreshold: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var failureThreshold: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * HTTPGet specifies the http request to perform.
         */
-      var httpGet: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[HTTPGetAction]] = js.undefined
+      var httpGet: js.UndefOr[atPulumiPulumiLib.outputMod.Input[HTTPGetAction]] = js.undefined
       /**
         * Number of seconds after the container has started before liveness probes are initiated.
         * More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
         */
-      var initialDelaySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var initialDelaySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * How often (in seconds) to perform the probe. Default to 10 seconds. Minimum value is 1.
         */
-      var periodSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var periodSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Minimum consecutive successes for the probe to be considered successful after having
         * failed. Defaults to 1. Must be 1 for liveness. Minimum value is 1.
         */
-      var successThreshold: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var successThreshold: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * TCPSocket specifies an action involving a TCP port. TCP hooks not yet supported
         */
-      var tcpSocket: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[TCPSocketAction]] = js.undefined
+      var tcpSocket: js.UndefOr[atPulumiPulumiLib.outputMod.Input[TCPSocketAction]] = js.undefined
       /**
         * Number of seconds after which the probe times out. Defaults to 1 second. Minimum value is
         * 1. More info:
         * https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#container-probes
         */
-      var timeoutSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var timeoutSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
     }
     
     /**
@@ -4073,11 +4073,11 @@ object coreNs extends js.Object {
         * with other options that affect the file mode, like fsGroup, and the result can be other
         * mode bits set.
         */
-      var defaultMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var defaultMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * list of volume projections
         */
-      var sources: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[VolumeProjection]]]
+      var sources: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[VolumeProjection]]]
     }
     
     /**
@@ -4088,26 +4088,26 @@ object coreNs extends js.Object {
       /**
         * Group to map volume access to Default is no group
         */
-      var group: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var group: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ReadOnly here will force the Quobyte volume to be mounted with read-only permissions.
         * Defaults to false.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Registry represents a single or multiple Quobyte Registry services specified as a string as
         * host:port pair (multiple entries are separated with commas) which acts as the central
         * registry for volumes
         */
-      var registry: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var registry: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * User to map volume access to Defaults to serivceaccount user
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Volume is a string that references an already created Quobyte volume by name.
         */
-      var volume: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volume: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -4121,43 +4121,43 @@ object coreNs extends js.Object {
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#rbd
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The rados image name. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var image: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var image: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var keyring: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var keyring: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A collection of Ceph monitors. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var monitors: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
       /**
         * The rados pool name. Default is rbd. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var pool: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var pool: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
         * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring.
         * Default is nil. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretReference]] = js.undefined
       /**
         * The rados user name. Default is admin. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4171,43 +4171,43 @@ object coreNs extends js.Object {
         * inferred to be "ext4" if unspecified. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#rbd
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The rados image name. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var image: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var image: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Keyring is the path to key ring for RBDUser. Default is /etc/ceph/keyring. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var keyring: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var keyring: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A collection of Ceph monitors. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var monitors: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var monitors: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
       /**
         * The rados pool name. Default is rbd. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var pool: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var pool: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ReadOnly here will force the ReadOnly setting in VolumeMounts. Defaults to false. More
         * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef is name of the authentication secret for RBDUser. If provided overrides keyring.
         * Default is nil. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
       /**
         * The rados user name. Default is admin. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md#how-to-use-it
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4221,7 +4221,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -4230,7 +4230,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationController]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationController]
           ] = js.undefined
       /**
         * If the Labels of a ReplicationController are empty, they are defaulted to be the same as
@@ -4238,19 +4238,19 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the specification of the desired behavior of the replication controller. More
         * info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicationControllerSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicationControllerSpec]] = js.undefined
       /**
         * Status is the most recently observed status of the replication controller. This data may be
         * out of date by some window of time. Populated by the system. Read-only. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ReplicationControllerStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ReplicationControllerStatus]] = js.undefined
     }
     
     /**
@@ -4261,23 +4261,23 @@ object coreNs extends js.Object {
       /**
         * The last time the condition transitioned from one status to another.
         */
-      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var lastTransitionTime: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * A human readable message indicating details about the transition.
         */
-      var message: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var message: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The reason for the condition's last transition.
         */
-      var reason: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var reason: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Status of the condition, one of True, False, Unknown.
         */
-      var status: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var status: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Type of replication controller condition.
         */
-      var `type`: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var `type`: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -4291,13 +4291,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of replication controllers. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicationController]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicationController]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4305,14 +4305,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationControllerList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ReplicationControllerList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -4325,13 +4325,13 @@ object coreNs extends js.Object {
         * container crashing, for it to be considered available. Defaults to 0 (pod will be
         * considered available as soon as it is ready)
         */
-      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var minReadySeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the number of desired replicas. This is a pointer to distinguish between
         * explicit zero and unspecified. Defaults to 1. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller
         */
-      var replicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var replicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Selector is a label query over pods that should match the Replicas count. If Selector is
         * empty, it is defaulted to the labels present on the Pod template. Label keys and values
@@ -4340,8 +4340,8 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/#label-selectors
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -4349,7 +4349,7 @@ object coreNs extends js.Object {
         * are detected. This takes precedence over a TemplateRef. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#pod-template
         */
-      var template: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PodTemplateSpec]] = js.undefined
+      var template: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PodTemplateSpec]] = js.undefined
     }
     
     /**
@@ -4360,32 +4360,32 @@ object coreNs extends js.Object {
         * The number of available replicas (ready for at least minReadySeconds) for this replication
         * controller.
         */
-      var availableReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var availableReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Represents the latest available observations of a replication controller's current state.
         */
       var conditions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ReplicationControllerCondition]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ReplicationControllerCondition]]]
           ] = js.undefined
       /**
         * The number of pods that have labels matching the labels of the pod template of the
         * replication controller.
         */
-      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var fullyLabeledReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * ObservedGeneration reflects the generation of the most recently observed replication
         * controller.
         */
-      var observedGeneration: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var observedGeneration: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The number of ready replicas for this replication controller.
         */
-      var readyReplicas: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var readyReplicas: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Replicas is the most recently oberved number of replicas. More info:
         * https://kubernetes.io/docs/concepts/workloads/controllers/replicationcontroller#what-is-a-replicationcontroller
         */
-      var replicas: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var replicas: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     /**
@@ -4395,15 +4395,15 @@ object coreNs extends js.Object {
       /**
         * Container name: required for volumes, optional for env vars
         */
-      var containerName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var containerName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specifies the output format of the exposed resources, defaults to "1"
         */
-      var divisor: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var divisor: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Required: resource to select
         */
-      var resource: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var resource: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -4417,7 +4417,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -4426,25 +4426,25 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuota]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuota]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the desired quota.
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceQuotaSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceQuotaSpec]] = js.undefined
       /**
         * Status defines the actual enforced quota and its current usage.
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ResourceQuotaStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ResourceQuotaStatus]] = js.undefined
     }
     
     /**
@@ -4458,13 +4458,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Items is a list of ResourceQuota objects. More info:
         * https://kubernetes.io/docs/concepts/policy/resource-quotas/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ResourceQuota]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ResourceQuota]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4472,14 +4472,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuotaList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ResourceQuotaList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -4491,20 +4491,20 @@ object coreNs extends js.Object {
         * hard is the set of desired hard limits for each named resource. More info:
         * https://kubernetes.io/docs/concepts/policy/resource-quotas/
         */
-      var hard: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var hard: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * scopeSelector is also a collection of filters like scopes that must match each object
         * tracked by a quota but expressed using ScopeSelectorOperator in combination with possible
         * values. For a resource to match, both scopes AND scopeSelector (if specified in spec), must
         * be matched.
         */
-      var scopeSelector: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScopeSelector]] = js.undefined
+      var scopeSelector: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScopeSelector]] = js.undefined
       /**
         * A collection of filters that must match each object tracked by a quota. If not specified,
         * the quota matches all objects.
         */
       var scopes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -4516,11 +4516,11 @@ object coreNs extends js.Object {
         * Hard is the set of enforced hard limits for each named resource. More info:
         * https://kubernetes.io/docs/concepts/policy/resource-quotas/
         */
-      var hard: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var hard: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Used is the current observed total usage of the resource in the namespace.
         */
-      var used: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var used: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
     }
     
     /**
@@ -4531,14 +4531,14 @@ object coreNs extends js.Object {
         * Limits describes the maximum amount of compute resources allowed. More info:
         * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         */
-      var limits: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var limits: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Requests describes the minimum amount of compute resources required. If Requests is omitted
         * for a container, it defaults to Limits if that is explicitly specified, otherwise to an
         * implementation-defined value. More info:
         * https://kubernetes.io/docs/concepts/configuration/manage-compute-resources-container/
         */
-      var requests: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var requests: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
     }
     
     /**
@@ -4548,19 +4548,19 @@ object coreNs extends js.Object {
       /**
         * Level is SELinux level label that applies to the container.
         */
-      var level: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var level: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Role is a SELinux role label that applies to the container.
         */
-      var role: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var role: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Type is a SELinux type label that applies to the container.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * User is a SELinux user label that applies to the container.
         */
-      var user: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var user: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4571,47 +4571,47 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Default is "xfs"
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The host address of the ScaleIO API Gateway.
         */
-      var gateway: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var gateway: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The name of the ScaleIO Protection Domain for the configured storage.
         */
-      var protectionDomain: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protectionDomain: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef references to the secret for ScaleIO user and other sensitive information. If
         * this is not provided, Login operation will fail.
         */
-      var secretRef: atPulumiPulumiLib.resourceMod.Input[SecretReference]
+      var secretRef: atPulumiPulumiLib.outputMod.Input[SecretReference]
       /**
         * Flag to enable/disable SSL communication with Gateway, default false
         */
-      var sslEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var sslEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
         * Default is ThinProvisioned.
         */
-      var storageMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storageMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The ScaleIO Storage Pool associated with the protection domain.
         */
-      var storagePool: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storagePool: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The name of the storage system as configured in ScaleIO.
         */
-      var system: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var system: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The name of a volume already created in the ScaleIO system that is associated with this
         * volume source.
         */
-      var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4622,47 +4622,47 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Default is "xfs".
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The host address of the ScaleIO API Gateway.
         */
-      var gateway: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var gateway: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The name of the ScaleIO Protection Domain for the configured storage.
         */
-      var protectionDomain: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protectionDomain: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef references to the secret for ScaleIO user and other sensitive information. If
         * this is not provided, Login operation will fail.
         */
-      var secretRef: atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]
+      var secretRef: atPulumiPulumiLib.outputMod.Input[LocalObjectReference]
       /**
         * Flag to enable/disable SSL communication with Gateway, default false
         */
-      var sslEnabled: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var sslEnabled: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Indicates whether the storage for a volume should be ThickProvisioned or ThinProvisioned.
         * Default is ThinProvisioned.
         */
-      var storageMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storageMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The ScaleIO Storage Pool associated with the protection domain.
         */
-      var storagePool: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storagePool: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The name of the storage system as configured in ScaleIO.
         */
-      var system: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var system: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The name of a volume already created in the ScaleIO system that is associated with this
         * volume source.
         */
-      var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4674,7 +4674,7 @@ object coreNs extends js.Object {
         * A list of scope selector requirements by scope of the resources.
         */
       var matchExpressions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ScopedResourceSelectorRequirement]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ScopedResourceSelectorRequirement]]]
           ] = js.undefined
     }
     
@@ -4687,18 +4687,18 @@ object coreNs extends js.Object {
         * Represents a scope's relationship to a set of values. Valid operators are In, NotIn,
         * Exists, DoesNotExist.
         */
-      var operator: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var operator: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * The name of the scope that the selector applies to.
         */
-      var scopeName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var scopeName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * An array of string values. If the operator is In or NotIn, the values array must be
         * non-empty. If the operator is Exists or DoesNotExist, the values array must be empty. This
         * array is replaced during a strategic merge patch.
         */
       var values: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -4714,7 +4714,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Data contains the secret data. Each key must consist of alphanumeric characters, '-', '_'
@@ -4722,7 +4722,7 @@ object coreNs extends js.Object {
         * arbitrary (possibly non-string) data value here. Described in
         * https://tools.ietf.org/html/rfc4648#section-4
         */
-      var data: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[js.Object]] = js.undefined
+      var data: js.UndefOr[atPulumiPulumiLib.outputMod.Input[js.Object]] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4730,14 +4730,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Secret]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Secret]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * stringData allows specifying non-binary secret data in string form. It is provided as a
@@ -4745,14 +4745,14 @@ object coreNs extends js.Object {
         * overwriting any existing values. It is never output when reading from the API.
         */
       var stringData: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
         * Used to facilitate programmatic handling of secret data.
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4766,11 +4766,11 @@ object coreNs extends js.Object {
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the Secret must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -4780,16 +4780,16 @@ object coreNs extends js.Object {
       /**
         * The key of the secret to select from.  Must be a valid secret key.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the Secret or it's key must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -4803,13 +4803,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Items is a list of secret objects. More info:
         * https://kubernetes.io/docs/concepts/configuration/secret
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Secret]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Secret]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -4817,14 +4817,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SecretList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.SecretList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -4845,17 +4845,17 @@ object coreNs extends js.Object {
         * the '..' path or start with '..'.
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[KeyToPath]]]
           ] = js.undefined
       /**
         * Name of the referent. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Specify whether the Secret or its key must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
     }
     
     /**
@@ -4866,11 +4866,11 @@ object coreNs extends js.Object {
       /**
         * Name is unique within a namespace to reference a secret resource.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Namespace defines the space within which the secret name must be unique.
         */
-      var namespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var namespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4887,7 +4887,7 @@ object coreNs extends js.Object {
         * be in conflict with other options that affect the file mode, like fsGroup, and the result
         * can be other mode bits set.
         */
-      var defaultMode: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var defaultMode: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * If unspecified, each key-value pair in the Data field of the referenced Secret will be
         * projected into the volume as a file whose name is the key and content is the value. If
@@ -4897,17 +4897,17 @@ object coreNs extends js.Object {
         * the '..' path or start with '..'.
         */
       var items: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[KeyToPath]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[KeyToPath]]]
           ] = js.undefined
       /**
         * Specify whether the Secret or it's keys must be defined
         */
-      var optional: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var optional: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Name of the secret in the pod's namespace to use. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#secret
         */
-      var secretName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var secretName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -4922,33 +4922,33 @@ object coreNs extends js.Object {
         * container process. AllowPrivilegeEscalation is true always when the container is: 1) run as
         * Privileged 2) has CAP_SYS_ADMIN
         */
-      var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var allowPrivilegeEscalation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The capabilities to add/drop when running containers. Defaults to the default set of
         * capabilities granted by the container runtime.
         */
-      var capabilities: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[Capabilities]] = js.undefined
+      var capabilities: js.UndefOr[atPulumiPulumiLib.outputMod.Input[Capabilities]] = js.undefined
       /**
         * Run container in privileged mode. Processes in privileged containers are essentially
         * equivalent to root on the host. Defaults to false.
         */
-      var privileged: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var privileged: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * procMount denotes the type of proc mount to use for the containers. The default is
         * DefaultProcMount which uses the container runtime defaults for readonly paths and masked
         * paths. This requires the ProcMountType feature flag to be enabled.
         */
-      var procMount: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var procMount: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Whether this container has a read-only root filesystem. Default is false.
         */
-      var readOnlyRootFilesystem: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnlyRootFilesystem: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The GID to run the entrypoint of the container process. Uses runtime default if unset. May
         * also be set in PodSecurityContext.  If set in both SecurityContext and PodSecurityContext,
         * the value specified in SecurityContext takes precedence.
         */
-      var runAsGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var runAsGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Indicates that the container must run as a non-root user. If true, the Kubelet will
         * validate the image at runtime to ensure that it does not run as UID 0 (root) and fail to
@@ -4956,21 +4956,21 @@ object coreNs extends js.Object {
         * May also be set in PodSecurityContext.  If set in both SecurityContext and
         * PodSecurityContext, the value specified in SecurityContext takes precedence.
         */
-      var runAsNonRoot: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var runAsNonRoot: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * The UID to run the entrypoint of the container process. Defaults to user specified in image
         * metadata if unspecified. May also be set in PodSecurityContext.  If set in both
         * SecurityContext and PodSecurityContext, the value specified in SecurityContext takes
         * precedence.
         */
-      var runAsUser: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var runAsUser: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The SELinux context to be applied to the container. If unspecified, the container runtime
         * will allocate a random SELinux context for each container.  May also be set in
         * PodSecurityContext.  If set in both SecurityContext and PodSecurityContext, the value
         * specified in SecurityContext takes precedence.
         */
-      var seLinuxOptions: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SELinuxOptions]] = js.undefined
+      var seLinuxOptions: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SELinuxOptions]] = js.undefined
     }
     
     /**
@@ -4986,7 +4986,7 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -4995,25 +4995,25 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Service]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.Service]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Spec defines the behavior of a service.
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceSpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceSpec]] = js.undefined
       /**
         * Most recently observed status of the service. Populated by the system. Read-only. More
         * info: https://git.k8s.io/community/contributors/devel/api-conventions.md#spec-and-status
         */
-      var status: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceStatus]] = js.undefined
+      var status: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceStatus]] = js.undefined
     }
     
     /**
@@ -5029,13 +5029,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * AutomountServiceAccountToken indicates whether pods running as this service account should
         * have an API token automatically mounted. Can be overridden at the pod level.
         */
-      var automountServiceAccountToken: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var automountServiceAccountToken: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * ImagePullSecrets is a list of references to secrets in the same namespace to use for
         * pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are
@@ -5044,7 +5044,7 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod
         */
       var imagePullSecrets: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]]]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -5053,21 +5053,21 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccount]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccount]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Secrets is the list of secrets allowed to be used by pods running using this
         * ServiceAccount. More info: https://kubernetes.io/docs/concepts/configuration/secret
         */
       var secrets: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ObjectReference]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ObjectReference]]]
           ] = js.undefined
     }
     
@@ -5082,13 +5082,13 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of ServiceAccounts. More info:
         * https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServiceAccount]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ServiceAccount]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -5096,14 +5096,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccountList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceAccountList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -5118,7 +5118,7 @@ object coreNs extends js.Object {
         * with an identifier specified in the audience of the token, and otherwise should reject the
         * token. The audience defaults to the identifier of the apiserver.
         */
-      var audience: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var audience: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * ExpirationSeconds is the requested duration of validity of the service account token. As
         * the token approaches expiration, the kubelet volume plugin will proactively rotate the
@@ -5126,11 +5126,11 @@ object coreNs extends js.Object {
         * older than 80 percent of its time to live or if the token is older than 24 hours.Defaults
         * to 1 hour and must be at least 10 minutes.
         */
-      var expirationSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var expirationSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Path is the path relative to the mount point of the file to project the token into.
         */
-      var path: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var path: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -5144,12 +5144,12 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.v1]
           ] = js.undefined
       /**
         * List of services
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[Service]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Service]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -5157,14 +5157,14 @@ object coreNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.ServiceList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -5177,7 +5177,7 @@ object coreNs extends js.Object {
         * ServiceSpec must have unique names. This maps to the 'Name' field in EndpointPort objects.
         * Optional if only one ServicePort is defined on this service.
         */
-      var name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * The port on each node on which this service is exposed when type=NodePort or LoadBalancer.
         * Usually assigned by the system. If specified, it will be allocated to the service if unused
@@ -5185,15 +5185,15 @@ object coreNs extends js.Object {
         * ServiceType of this Service requires one. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport
         */
-      var nodePort: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var nodePort: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * The port that will be exposed by this service.
         */
-      var port: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var port: atPulumiPulumiLib.outputMod.Input[scala.Double]
       /**
         * The IP protocol for this port. Supports "TCP", "UDP", and "SCTP". Default is TCP.
         */
-      var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protocol: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Number or name of the port to access on the pods targeted by the service. Number must be in
         * the range 1 to 65535. Name must be an IANA_SVC_NAME. If this is a string, it will be looked
@@ -5202,7 +5202,7 @@ object coreNs extends js.Object {
         * clusterIP=None, and should be omitted or set equal to the 'port' field. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#defining-a-service
         */
-      var targetPort: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var targetPort: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
     }
     
     /**
@@ -5218,7 +5218,7 @@ object coreNs extends js.Object {
         * ClusterIP, NodePort, and LoadBalancer. Ignored if type is ExternalName. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
         */
-      var clusterIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var clusterIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * externalIPs is a list of IP addresses for which nodes in the cluster will also accept
         * traffic for this service.  These IPs are not managed by Kubernetes.  The user is
@@ -5226,14 +5226,14 @@ object coreNs extends js.Object {
         * external load-balancers that are not part of the Kubernetes system.
         */
       var externalIPs: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * externalName is the external reference that kubedns or equivalent will return as a CNAME
         * record for this service. No proxying will be involved. Must be a valid RFC-1123 hostname
         * (https://tools.ietf.org/html/rfc1123) and requires Type to be ExternalName.
         */
-      var externalName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var externalName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * externalTrafficPolicy denotes if this Service desires to route external traffic to
         * node-local or cluster-wide endpoints. "Local" preserves the client source IP and avoids a
@@ -5241,21 +5241,21 @@ object coreNs extends js.Object {
         * traffic spreading. "Cluster" obscures the client source IP and may cause a second hop to
         * another node, but should have good overall load-spreading.
         */
-      var externalTrafficPolicy: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var externalTrafficPolicy: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * healthCheckNodePort specifies the healthcheck nodePort for the service. If not specified,
         * HealthCheckNodePort is created by the service api backend with the allocated nodePort. Will
         * use user-specified nodePort value if specified by the client. Only effects when Type is set
         * to LoadBalancer and ExternalTrafficPolicy is set to Local.
         */
-      var healthCheckNodePort: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var healthCheckNodePort: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Only applies to Service Type: LoadBalancer LoadBalancer will get created with the IP
         * specified in this field. This feature depends on whether the underlying cloud-provider
         * supports specifying the loadBalancerIP when a load balancer is created. This field will be
         * ignored if the cloud-provider does not support the feature.
         */
-      var loadBalancerIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var loadBalancerIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * If specified and supported by the platform, this will restrict traffic through the
         * cloud-provider load-balancer will be restricted to the specified client IPs. This field
@@ -5263,14 +5263,14 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/tasks/access-application-cluster/configure-cloud-provider-firewall/
         */
       var loadBalancerSourceRanges: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
       /**
         * The list of ports that are exposed by this service. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
         */
       var ports: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[ServicePort]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[ServicePort]]]
           ] = js.undefined
       /**
         * publishNotReadyAddresses, when set to true, indicates that DNS implementations must publish
@@ -5279,7 +5279,7 @@ object coreNs extends js.Object {
         * Headless Service to propagate SRV records for its Pods without respect to their readiness
         * for purpose of peer discovery.
         */
-      var publishNotReadyAddresses: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var publishNotReadyAddresses: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Route service traffic to pods with label keys and values matching this selector. If empty
         * or not present, the service is assumed to have an external process managing its endpoints,
@@ -5288,8 +5288,8 @@ object coreNs extends js.Object {
         * https://kubernetes.io/docs/concepts/services-networking/service/
         */
       var selector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[
-              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]
+            atPulumiPulumiLib.outputMod.Input[
+              org.scalablytyped.runtime.StringDictionary[atPulumiPulumiLib.outputMod.Input[java.lang.String]]
             ]
           ] = js.undefined
       /**
@@ -5297,11 +5297,11 @@ object coreNs extends js.Object {
         * session affinity. Must be ClientIP or None. Defaults to None. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#virtual-ips-and-service-proxies
         */
-      var sessionAffinity: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var sessionAffinity: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * sessionAffinityConfig contains the configurations of session affinity.
         */
-      var sessionAffinityConfig: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SessionAffinityConfig]] = js.undefined
+      var sessionAffinityConfig: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SessionAffinityConfig]] = js.undefined
       /**
         * type determines how the Service is exposed. Defaults to ClusterIP. Valid options are
         * ExternalName, ClusterIP, NodePort, and LoadBalancer. "ExternalName" maps to the specified
@@ -5314,7 +5314,7 @@ object coreNs extends js.Object {
         * the current cloud) which routes to the clusterIP. More info:
         * https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services---service-types
         */
-      var `type`: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var `type`: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5324,7 +5324,7 @@ object coreNs extends js.Object {
       /**
         * LoadBalancer contains the current status of the load-balancer, if one is present.
         */
-      var loadBalancer: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LoadBalancerStatus]] = js.undefined
+      var loadBalancer: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LoadBalancerStatus]] = js.undefined
     }
     
     /**
@@ -5334,7 +5334,7 @@ object coreNs extends js.Object {
       /**
         * clientIP contains the configurations of Client IP based session affinity.
         */
-      var clientIP: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ClientIPConfig]] = js.undefined
+      var clientIP: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ClientIPConfig]] = js.undefined
     }
     
     /**
@@ -5345,22 +5345,22 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef specifies the secret to use for obtaining the StorageOS API credentials.  If not
         * specified, default values will be attempted.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ObjectReference]] = js.undefined
       /**
         * VolumeName is the human-readable name of the StorageOS volume.  Volume names are only
         * unique within a namespace.
         */
-      var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is
         * specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping
@@ -5368,7 +5368,7 @@ object coreNs extends js.Object {
         * override the default behaviour. Set to "default" if you are not using namespaces within
         * StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
         */
-      var volumeNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5379,22 +5379,22 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in
         * VolumeMounts.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * SecretRef specifies the secret to use for obtaining the StorageOS API credentials.  If not
         * specified, default values will be attempted.
         */
-      var secretRef: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[LocalObjectReference]] = js.undefined
+      var secretRef: js.UndefOr[atPulumiPulumiLib.outputMod.Input[LocalObjectReference]] = js.undefined
       /**
         * VolumeName is the human-readable name of the StorageOS volume.  Volume names are only
         * unique within a namespace.
         */
-      var volumeName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is
         * specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping
@@ -5402,7 +5402,7 @@ object coreNs extends js.Object {
         * override the default behaviour. Set to "default" if you are not using namespaces within
         * StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
         */
-      var volumeNamespace: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var volumeNamespace: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5412,11 +5412,11 @@ object coreNs extends js.Object {
       /**
         * Name of a property to set
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Value of a property to set
         */
-      var value: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var value: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -5426,12 +5426,12 @@ object coreNs extends js.Object {
       /**
         * Optional: Host name to connect to, defaults to the pod IP.
         */
-      var host: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var host: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Number or name of the port to access on the container. Number must be in the range 1 to
         * 65535. Name must be an IANA_SVC_NAME.
         */
-      var port: atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]
+      var port: atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]
     }
     
     /**
@@ -5443,20 +5443,20 @@ object coreNs extends js.Object {
         * Required. The effect of the taint on pods that do not tolerate the taint. Valid effects are
         * NoSchedule, PreferNoSchedule and NoExecute.
         */
-      var effect: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var effect: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Required. The taint key to be applied to a node.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * TimeAdded represents the time at which the taint was added. It is only written for
         * NoExecute taints.
         */
-      var timeAdded: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var timeAdded: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Required. The taint value corresponding to the taint key.
         */
-      var value: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5468,31 +5468,31 @@ object coreNs extends js.Object {
         * Effect indicates the taint effect to match. Empty means match all taint effects. When
         * specified, allowed values are NoSchedule, PreferNoSchedule and NoExecute.
         */
-      var effect: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var effect: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Key is the taint key that the toleration applies to. Empty means match all taint keys. If
         * the key is empty, operator must be Exists; this combination means to match all values and
         * all keys.
         */
-      var key: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var key: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Operator represents a key's relationship to the value. Valid operators are Exists and
         * Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can
         * tolerate all taints of a particular category.
         */
-      var operator: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var operator: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * TolerationSeconds represents the period of time the toleration (which must be of effect
         * NoExecute, otherwise this field is ignored) tolerates the taint. By default, it is not set,
         * which means tolerate the taint forever (do not evict). Zero and negative values will be
         * treated as 0 (evict immediately) by the system.
         */
-      var tolerationSeconds: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double]] = js.undefined
+      var tolerationSeconds: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double]] = js.undefined
       /**
         * Value is the taint value the toleration matches to. If the operator is Exists, the value
         * should be empty, otherwise just a regular string.
         */
-      var value: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var value: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5503,12 +5503,12 @@ object coreNs extends js.Object {
       /**
         * The label key that the selector applies to.
         */
-      var key: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var key: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * An array of string values. One value must match the label to be selected. Each entry in
         * Values is ORed.
         */
-      var values: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+      var values: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
     }
     
     /**
@@ -5521,7 +5521,7 @@ object coreNs extends js.Object {
         * A list of topology selector requirements by labels.
         */
       var matchLabelExpressions: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[TopologySelectorLabelRequirement]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[TopologySelectorLabelRequirement]]]
           ] = js.undefined
     }
     
@@ -5535,15 +5535,15 @@ object coreNs extends js.Object {
         * specified Kind must be in the core API group. For any other third-party types, APIGroup is
         * required.
         */
-      var apiGroup: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var apiGroup: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Kind is the type of resource being referenced
         */
-      var kind: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var kind: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Name is the name of resource being referenced
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -5555,138 +5555,138 @@ object coreNs extends js.Object {
         * machine and then exposed to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#awselasticblockstore
         */
-      var awsElasticBlockStore: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AWSElasticBlockStoreVolumeSource]] = js.undefined
+      var awsElasticBlockStore: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AWSElasticBlockStoreVolumeSource]] = js.undefined
       /**
         * AzureDisk represents an Azure Data Disk mount on the host and bind mount to the pod.
         */
-      var azureDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AzureDiskVolumeSource]] = js.undefined
+      var azureDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AzureDiskVolumeSource]] = js.undefined
       /**
         * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
         */
-      var azureFile: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[AzureFileVolumeSource]] = js.undefined
+      var azureFile: js.UndefOr[atPulumiPulumiLib.outputMod.Input[AzureFileVolumeSource]] = js.undefined
       /**
         * CephFS represents a Ceph FS mount on the host that shares a pod's lifetime
         */
-      var cephfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CephFSVolumeSource]] = js.undefined
+      var cephfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CephFSVolumeSource]] = js.undefined
       /**
         * Cinder represents a cinder volume attached and mounted on kubelets host machine More info:
         * https://releases.k8s.io/HEAD/examples/mysql-cinder-pd/README.md
         */
-      var cinder: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[CinderVolumeSource]] = js.undefined
+      var cinder: js.UndefOr[atPulumiPulumiLib.outputMod.Input[CinderVolumeSource]] = js.undefined
       /**
         * ConfigMap represents a configMap that should populate this volume
         */
-      var configMap: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapVolumeSource]] = js.undefined
+      var configMap: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapVolumeSource]] = js.undefined
       /**
         * DownwardAPI represents downward API about the pod that should populate this volume
         */
-      var downwardAPI: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DownwardAPIVolumeSource]] = js.undefined
+      var downwardAPI: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DownwardAPIVolumeSource]] = js.undefined
       /**
         * EmptyDir represents a temporary directory that shares a pod's lifetime. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#emptydir
         */
-      var emptyDir: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[EmptyDirVolumeSource]] = js.undefined
+      var emptyDir: js.UndefOr[atPulumiPulumiLib.outputMod.Input[EmptyDirVolumeSource]] = js.undefined
       /**
         * FC represents a Fibre Channel resource that is attached to a kubelet's host machine and
         * then exposed to the pod.
         */
-      var fc: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FCVolumeSource]] = js.undefined
+      var fc: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FCVolumeSource]] = js.undefined
       /**
         * FlexVolume represents a generic volume resource that is provisioned/attached using an exec
         * based plugin.
         */
-      var flexVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlexVolumeSource]] = js.undefined
+      var flexVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FlexVolumeSource]] = js.undefined
       /**
         * Flocker represents a Flocker volume attached to a kubelet's host machine. This depends on
         * the Flocker control service being running
         */
-      var flocker: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[FlockerVolumeSource]] = js.undefined
+      var flocker: js.UndefOr[atPulumiPulumiLib.outputMod.Input[FlockerVolumeSource]] = js.undefined
       /**
         * GCEPersistentDisk represents a GCE Disk resource that is attached to a kubelet's host
         * machine and then exposed to the pod. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#gcepersistentdisk
         */
-      var gcePersistentDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GCEPersistentDiskVolumeSource]] = js.undefined
+      var gcePersistentDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[GCEPersistentDiskVolumeSource]] = js.undefined
       /**
         * GitRepo represents a git repository at a particular revision. DEPRECATED: GitRepo is
         * deprecated. To provision a container with a git repo, mount an EmptyDir into an
         * InitContainer that clones the repo using git, then mount the EmptyDir into the Pod's
         * container.
         */
-      var gitRepo: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GitRepoVolumeSource]] = js.undefined
+      var gitRepo: js.UndefOr[atPulumiPulumiLib.outputMod.Input[GitRepoVolumeSource]] = js.undefined
       /**
         * Glusterfs represents a Glusterfs mount on the host that shares a pod's lifetime. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/glusterfs/README.md
         */
-      var glusterfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[GlusterfsVolumeSource]] = js.undefined
+      var glusterfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[GlusterfsVolumeSource]] = js.undefined
       /**
         * HostPath represents a pre-existing file or directory on the host machine that is directly
         * exposed to the container. This is generally used for system agents or other privileged
         * things that are allowed to see the host machine. Most containers will NOT need this. More
         * info: https://kubernetes.io/docs/concepts/storage/volumes#hostpath
         */
-      var hostPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[HostPathVolumeSource]] = js.undefined
+      var hostPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[HostPathVolumeSource]] = js.undefined
       /**
         * ISCSI represents an ISCSI Disk resource that is attached to a kubelet's host machine and
         * then exposed to the pod. More info:
         * https://releases.k8s.io/HEAD/examples/volumes/iscsi/README.md
         */
-      var iscsi: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ISCSIVolumeSource]] = js.undefined
+      var iscsi: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ISCSIVolumeSource]] = js.undefined
       /**
         * Volume's name. Must be a DNS_LABEL and unique within the pod. More info:
         * https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * NFS represents an NFS mount on the host that shares a pod's lifetime More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#nfs
         */
-      var nfs: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NFSVolumeSource]] = js.undefined
+      var nfs: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NFSVolumeSource]] = js.undefined
       /**
         * PersistentVolumeClaimVolumeSource represents a reference to a PersistentVolumeClaim in the
         * same namespace. More info:
         * https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
         */
-      var persistentVolumeClaim: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PersistentVolumeClaimVolumeSource]] = js.undefined
+      var persistentVolumeClaim: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PersistentVolumeClaimVolumeSource]] = js.undefined
       /**
         * PhotonPersistentDisk represents a PhotonController persistent disk attached and mounted on
         * kubelets host machine
         */
-      var photonPersistentDisk: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PhotonPersistentDiskVolumeSource]] = js.undefined
+      var photonPersistentDisk: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PhotonPersistentDiskVolumeSource]] = js.undefined
       /**
         * PortworxVolume represents a portworx volume attached and mounted on kubelets host machine
         */
-      var portworxVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[PortworxVolumeSource]] = js.undefined
+      var portworxVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[PortworxVolumeSource]] = js.undefined
       /**
         * Items for all in one resources secrets, configmaps, and downward API
         */
-      var projected: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ProjectedVolumeSource]] = js.undefined
+      var projected: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ProjectedVolumeSource]] = js.undefined
       /**
         * Quobyte represents a Quobyte mount on the host that shares a pod's lifetime
         */
-      var quobyte: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[QuobyteVolumeSource]] = js.undefined
+      var quobyte: js.UndefOr[atPulumiPulumiLib.outputMod.Input[QuobyteVolumeSource]] = js.undefined
       /**
         * RBD represents a Rados Block Device mount on the host that shares a pod's lifetime. More
         * info: https://releases.k8s.io/HEAD/examples/volumes/rbd/README.md
         */
-      var rbd: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[RBDVolumeSource]] = js.undefined
+      var rbd: js.UndefOr[atPulumiPulumiLib.outputMod.Input[RBDVolumeSource]] = js.undefined
       /**
         * ScaleIO represents a ScaleIO persistent volume attached and mounted on Kubernetes nodes.
         */
-      var scaleIO: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ScaleIOVolumeSource]] = js.undefined
+      var scaleIO: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ScaleIOVolumeSource]] = js.undefined
       /**
         * Secret represents a secret that should populate this volume. More info:
         * https://kubernetes.io/docs/concepts/storage/volumes#secret
         */
-      var secret: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretVolumeSource]] = js.undefined
+      var secret: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretVolumeSource]] = js.undefined
       /**
         * StorageOS represents a StorageOS volume attached and mounted on Kubernetes nodes.
         */
-      var storageos: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[StorageOSVolumeSource]] = js.undefined
+      var storageos: js.UndefOr[atPulumiPulumiLib.outputMod.Input[StorageOSVolumeSource]] = js.undefined
       /**
         * VsphereVolume represents a vSphere volume attached and mounted on kubelets host machine
         */
-      var vsphereVolume: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[VsphereVirtualDiskVolumeSource]] = js.undefined
+      var vsphereVolume: js.UndefOr[atPulumiPulumiLib.outputMod.Input[VsphereVirtualDiskVolumeSource]] = js.undefined
     }
     
     /**
@@ -5696,11 +5696,11 @@ object coreNs extends js.Object {
       /**
         * devicePath is the path inside of the container that the device will be mapped to.
         */
-      var devicePath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var devicePath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * name must match the name of a persistentVolumeClaim in the pod
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -5710,25 +5710,25 @@ object coreNs extends js.Object {
       /**
         * Path within the container at which the volume should be mounted.  Must not contain ':'.
         */
-      var mountPath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var mountPath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * mountPropagation determines how mounts are propagated from the host to container and the
         * other way around. When not set, MountPropagationNone is used. This field is beta in 1.10.
         */
-      var mountPropagation: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var mountPropagation: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * This must match the Name of a Volume.
         */
-      var name: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var name: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Mounted read-only if true, read-write otherwise (false or unspecified). Defaults to false.
         */
-      var readOnly: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Boolean]] = js.undefined
+      var readOnly: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
       /**
         * Path within the volume from which the container's volume should be mounted. Defaults to ""
         * (volume's root).
         */
-      var subPath: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var subPath: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -5739,7 +5739,7 @@ object coreNs extends js.Object {
       /**
         * Required specifies hard node constraints that must be met.
         */
-      var required: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NodeSelector]] = js.undefined
+      var required: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NodeSelector]] = js.undefined
     }
     
     /**
@@ -5749,19 +5749,19 @@ object coreNs extends js.Object {
       /**
         * information about the configMap data to project
         */
-      var configMap: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ConfigMapProjection]] = js.undefined
+      var configMap: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ConfigMapProjection]] = js.undefined
       /**
         * information about the downwardAPI data to project
         */
-      var downwardAPI: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[DownwardAPIProjection]] = js.undefined
+      var downwardAPI: js.UndefOr[atPulumiPulumiLib.outputMod.Input[DownwardAPIProjection]] = js.undefined
       /**
         * information about the secret data to project
         */
-      var secret: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[SecretProjection]] = js.undefined
+      var secret: js.UndefOr[atPulumiPulumiLib.outputMod.Input[SecretProjection]] = js.undefined
       /**
         * information about the serviceAccountToken data to project
         */
-      var serviceAccountToken: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[ServiceAccountTokenProjection]] = js.undefined
+      var serviceAccountToken: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ServiceAccountTokenProjection]] = js.undefined
     }
     
     /**
@@ -5772,19 +5772,19 @@ object coreNs extends js.Object {
         * Filesystem type to mount. Must be a filesystem type supported by the host operating system.
         * Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
         */
-      var fsType: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var fsType: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Storage Policy Based Management (SPBM) profile ID associated with the StoragePolicyName.
         */
-      var storagePolicyID: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storagePolicyID: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Storage Policy Based Management (SPBM) profile name.
         */
-      var storagePolicyName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var storagePolicyName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
       /**
         * Path that identifies vSphere volume vmdk
         */
-      var volumePath: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var volumePath: atPulumiPulumiLib.outputMod.Input[java.lang.String]
     }
     
     /**
@@ -5795,11 +5795,11 @@ object coreNs extends js.Object {
       /**
         * Required. A pod affinity term, associated with the corresponding weight.
         */
-      var podAffinityTerm: atPulumiPulumiLib.resourceMod.Input[PodAffinityTerm]
+      var podAffinityTerm: atPulumiPulumiLib.outputMod.Input[PodAffinityTerm]
       /**
         * weight associated with matching the corresponding podAffinityTerm, in the range 1-100.
         */
-      var weight: atPulumiPulumiLib.resourceMod.Input[scala.Double]
+      var weight: atPulumiPulumiLib.outputMod.Input[scala.Double]
     }
     
     def isBinding(o: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/types/input.core.v1.Binding */ scala.Boolean = js.native

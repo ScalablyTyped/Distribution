@@ -92,6 +92,15 @@ class ShallowWrapper[P, S, C] protected () extends CommonWrapper[P, S, C] {
     * Note: can only be called on a wrapper of a single node.
     */
   def parents[P2](statelessComponent: StatelessComponent[P2]): ShallowWrapper[P2, scala.Nothing, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
+  /**
+    * Returns a wrapper of the node rendered by the provided render prop.
+    */
+  def renderProp[PropName /* <: java.lang.String */](prop: PropName): js.Function1[
+    /* params */ Parameters[
+      /* import warning: ImportType.apply Failed type conversion: P[PropName] */ js.Any
+    ], 
+    ShallowWrapper[_, scala.Nothing, reactLib.reactMod.Component[js.Object, js.Object, _]]
+  ] = js.native
   def shallow(): ShallowWrapper[P, S, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   def shallow(options: ShallowRendererProps): ShallowWrapper[P, S, reactLib.reactMod.Component[js.Object, js.Object, _]] = js.native
   def unmount(): this.type = js.native

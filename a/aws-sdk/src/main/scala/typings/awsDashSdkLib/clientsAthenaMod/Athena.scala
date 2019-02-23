@@ -326,7 +326,7 @@ trait Athena
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about the workgroup with the speficied name.
+    * Returns information about the workgroup with the specified name.
     */
   def getWorkGroup(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAthenaMod.AthenaNs.GetWorkGroupOutput, 
@@ -343,7 +343,7 @@ trait Athena
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Returns information about the workgroup with the speficied name.
+    * Returns information about the workgroup with the specified name.
     */
   def getWorkGroup(params: awsDashSdkLib.clientsAthenaMod.AthenaNs.GetWorkGroupInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAthenaMod.AthenaNs.GetWorkGroupOutput, 
@@ -428,6 +428,41 @@ trait Athena
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAthenaMod.AthenaNs.ListQueryExecutionsOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the tags associated with this workgroup.
+    */
+  def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Lists the tags associated with this workgroup.
+    */
+  def listTagsForResource(params: awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def listTagsForResource(
+    params: awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.ListTagsForResourceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
@@ -533,6 +568,76 @@ trait Athena
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsAthenaMod.AthenaNs.StopQueryExecutionOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+    */
+  def tagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Adds one or more tags to the resource, such as a workgroup. A tag is a label that you assign to an AWS Athena resource (a workgroup). Each tag consists of a key and an optional value, both of which you define. Tags enable you to categorize resources (workgroups) in Athena, for example, by purpose, owner, or environment. Use a consistent set of tag keys to make it easier to search and filter workgroups in your account. For best practices, see AWS Tagging Strategies. The key length is from 1 (minimum) to 128 (maximum) Unicode characters in UTF-8. The tag value length is from 0 (minimum) to 256 (maximum) Unicode characters in UTF-8. You can use letters and numbers representable in UTF-8, and the following characters: + - = . _ : / @. Tag keys and values are case-sensitive. Tag keys must be unique per resource. If you specify more than one, separate them by commas.
+    */
+  def tagResource(params: awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def tagResource(
+    params: awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.TagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+    */
+  def untagResource(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Removes one or more tags from the workgroup resource. Takes as an input a list of TagKey Strings separated by commas, and removes their tags at the same time.
+    */
+  def untagResource(params: awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def untagResource(
+    params: awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsAthenaMod.AthenaNs.UntagResourceOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**

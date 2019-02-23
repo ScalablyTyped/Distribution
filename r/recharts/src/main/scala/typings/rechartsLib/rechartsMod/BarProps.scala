@@ -28,6 +28,7 @@ import scala.scalajs.js.annotation._
   var maxBarSize: js.UndefOr[scala.Double] = js.undefined
   var minPointSize: js.UndefOr[scala.Double] = js.undefined
   var name: js.UndefOr[java.lang.String | scala.Double] = js.undefined
+  var radius: js.UndefOr[scala.Double | js.Array[scala.Double]] = js.undefined
   var shape: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_] | ContentRenderer[RectangleProps]] = js.undefined
   var stackId: js.UndefOr[java.lang.String | scala.Double] = js.undefined
   var unit: js.UndefOr[java.lang.String | scala.Double] = js.undefined

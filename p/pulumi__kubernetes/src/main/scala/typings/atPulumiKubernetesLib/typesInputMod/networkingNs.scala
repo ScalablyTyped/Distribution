@@ -20,13 +20,13 @@ object networkingNs extends js.Object {
       /**
         * CIDR is a string representing the IP Block Valid examples are "192.168.1.1/24"
         */
-      var cidr: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+      var cidr: atPulumiPulumiLib.outputMod.Input[java.lang.String]
       /**
         * Except is a slice of CIDRs that should not be included within an IP Block Valid examples
         * are "192.168.1.1/24" Except values will be rejected if they are outside the CIDR range
         */
       var except: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     
@@ -41,7 +41,7 @@ object networkingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
@@ -50,19 +50,19 @@ object networkingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicy]
           ] = js.undefined
       /**
         * Standard object's metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ObjectMeta]
           ] = js.undefined
       /**
         * Specification of the desired behavior for this NetworkPolicy.
         */
-      var spec: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[NetworkPolicySpec]] = js.undefined
+      var spec: js.UndefOr[atPulumiPulumiLib.outputMod.Input[NetworkPolicySpec]] = js.undefined
     }
     
     /**
@@ -78,7 +78,7 @@ object networkingNs extends js.Object {
         * rule allows traffic only if the traffic matches at least one port in the list.
         */
       var ports: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyPort]]]
           ] = js.undefined
       /**
         * List of destinations for outgoing traffic of pods selected for this rule. Items in this
@@ -88,7 +88,7 @@ object networkingNs extends js.Object {
         * matches at least one item in the to list.
         */
       var to: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyPeer]]]
           ] = js.undefined
     }
     
@@ -105,7 +105,7 @@ object networkingNs extends js.Object {
         * least one item in the from list.
         */
       var from: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPeer]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyPeer]]]
           ] = js.undefined
       /**
         * List of ports which should be made accessible on the pods selected for this rule. Each item
@@ -115,7 +115,7 @@ object networkingNs extends js.Object {
         * port in the list.
         */
       var ports: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyPort]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyPort]]]
           ] = js.undefined
     }
     
@@ -130,12 +130,12 @@ object networkingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#resources
         */
       var apiVersion: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.`networkingDOTk8sDOTio/v1`]
           ] = js.undefined
       /**
         * Items is a list of schema objects.
         */
-      var items: atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicy]]]
+      var items: atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicy]]]
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may
         * infer this from the endpoint the client submits requests to. Cannot be updated. In
@@ -143,14 +143,14 @@ object networkingNs extends js.Object {
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
         */
       var kind: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.atPulumiKubernetesLibStrings.NetworkPolicyList]
           ] = js.undefined
       /**
         * Standard list metadata. More info:
         * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
         */
       var metadata: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.ListMeta]
           ] = js.undefined
     }
     
@@ -163,7 +163,7 @@ object networkingNs extends js.Object {
         * IPBlock defines policy on a particular IPBlock. If this field is set then neither of the
         * other fields can be.
         */
-      var ipBlock: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[IPBlock]] = js.undefined
+      var ipBlock: js.UndefOr[atPulumiPulumiLib.outputMod.Input[IPBlock]] = js.undefined
       /**
         * Selects Namespaces using cluster-scoped labels. This field follows standard label selector
         * semantics; if present but empty, it selects all namespaces.
@@ -173,7 +173,7 @@ object networkingNs extends js.Object {
         * in the Namespaces selected by NamespaceSelector.
         */
       var namespaceSelector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
       /**
         * This is a label selector which selects Pods. This field follows standard label selector
@@ -184,7 +184,7 @@ object networkingNs extends js.Object {
         * the Pods matching PodSelector in the policy's own Namespace.
         */
       var podSelector: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+            atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
           ] = js.undefined
     }
     
@@ -196,12 +196,12 @@ object networkingNs extends js.Object {
         * The port on the given protocol. This can either be a numerical or named port on a pod. If
         * this field is not provided, this matches all port names and numbers.
         */
-      var port: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[scala.Double | java.lang.String]] = js.undefined
+      var port: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Double | java.lang.String]] = js.undefined
       /**
         * The protocol (TCP, UDP, or SCTP) which traffic must match. If not specified, this field
         * defaults to TCP.
         */
-      var protocol: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+      var protocol: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
     }
     
     /**
@@ -217,7 +217,7 @@ object networkingNs extends js.Object {
         * selects are isolated by default). This field is beta-level in 1.8
         */
       var egress: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyEgressRule]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyEgressRule]]]
           ] = js.undefined
       /**
         * List of ingress rules to be applied to the selected pods. Traffic is allowed to a pod if
@@ -228,7 +228,7 @@ object networkingNs extends js.Object {
         * serves solely to ensure that the pods it selects are isolated by default)
         */
       var ingress: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[NetworkPolicyIngressRule]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[NetworkPolicyIngressRule]]]
           ] = js.undefined
       /**
         * Selects the pods to which this NetworkPolicy object applies. The array of ingress rules is
@@ -237,7 +237,7 @@ object networkingNs extends js.Object {
         * is NOT optional and follows standard label selector semantics. An empty podSelector matches
         * all pods in this namespace.
         */
-      var podSelector: atPulumiPulumiLib.resourceMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
+      var podSelector: atPulumiPulumiLib.outputMod.Input[atPulumiKubernetesLib.typesInputMod.metaNs.v1Ns.LabelSelector]
       /**
         * List of rule types that the NetworkPolicy relates to. Valid options are Ingress, Egress, or
         * Ingress,Egress. If this field is not specified, it will default based on the existence of
@@ -250,7 +250,7 @@ object networkingNs extends js.Object {
         * ]). This field is beta-level in 1.8
         */
       var policyTypes: js.UndefOr[
-            atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[java.lang.String]]]
+            atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
           ] = js.undefined
     }
     

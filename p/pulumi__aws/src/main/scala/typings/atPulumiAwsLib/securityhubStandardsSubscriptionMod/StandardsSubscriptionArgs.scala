@@ -9,6 +9,6 @@ trait StandardsSubscriptionArgs extends js.Object {
   /**
     * The ARN of a standard - see below.
     */
-  val standardsArn: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val standardsArn: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

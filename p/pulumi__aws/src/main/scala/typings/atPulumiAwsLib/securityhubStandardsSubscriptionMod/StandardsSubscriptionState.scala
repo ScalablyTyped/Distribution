@@ -9,6 +9,6 @@ trait StandardsSubscriptionState extends js.Object {
   /**
     * The ARN of a standard - see below.
     */
-  val standardsArn: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val standardsArn: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

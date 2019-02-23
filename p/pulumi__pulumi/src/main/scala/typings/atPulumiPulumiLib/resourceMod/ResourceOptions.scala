@@ -9,11 +9,13 @@ trait ResourceOptions extends js.Object {
   /**
     * An optional additional explicit dependencies on other resources.
     */
-  var dependsOn: js.UndefOr[Input[js.Array[Input[Resource]]] | Input[Resource]] = js.undefined
+  var dependsOn: js.UndefOr[
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[Resource]]] | atPulumiPulumiLib.outputMod.Input[Resource]
+  ] = js.undefined
   /**
     * An optional existing ID to load, rather than create.
     */
-  var id: js.UndefOr[Input[ID]] = js.undefined
+  var id: js.UndefOr[atPulumiPulumiLib.outputMod.Input[ID]] = js.undefined
   /**
     * An optional parent resource to which this resource belongs.
     */

@@ -9,16 +9,14 @@ trait NatGatewayArgs extends js.Object {
   /**
     * The Allocation ID of the Elastic IP address for the gateway.
     */
-  val allocationId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val allocationId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The Subnet ID of the subnet in which to place the gateway.
     */
-  val subnetId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val subnetId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * A mapping of tags to assign to the resource.
     */
-  val tags: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[org.scalablytyped.runtime.StringDictionary[_]]
-  ] = js.undefined
+  val tags: js.UndefOr[atPulumiPulumiLib.outputMod.Input[org.scalablytyped.runtime.StringDictionary[_]]] = js.undefined
 }
 

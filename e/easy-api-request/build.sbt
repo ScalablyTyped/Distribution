@@ -1,24 +1,24 @@
 organization := "org.scalablytyped"
 name := "easy-api-request"
-version := "0.0-unknown-dt-20181121Z-e7dfa9"
+version := "0.0-unknown-dt-20181121Z-c6c875"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-40b8d3",
-  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-dd7f46",
+  "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2b9c7c",
+  "org.scalablytyped" %%% "bunyan" % "1.8-dt-20181009Z-563a8a",
   "org.scalablytyped" %%% "caseless" % "0.12-dt-20180214Z-bde245",
-  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-50c57a",
-  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-42d72c",
-  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-ab47ea",
-  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-7ab4be",
+  "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-71aaa7",
+  "org.scalablytyped" %%% "express" % "4.16-dt-20190122Z-51e0b9",
+  "org.scalablytyped" %%% "express-serve-static-core" % "4.16-dt-20190122Z-d5c072",
+  "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-28155d",
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
-  "org.scalablytyped" %%% "node" % "11.9-dt-20190213Z-604ea6",
+  "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "q" % "1.5-dt-20181124Z-306676",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-9b7291",
-  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-fa6869",
+  "org.scalablytyped" %%% "request" % "2.48-dt-20190117Z-c8dda0",
+  "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-1b6eaf",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tough-cookie" % "2.3-dt-20190117Z-9af261")
 publishArtifact in packageDoc := false

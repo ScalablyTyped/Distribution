@@ -22,8 +22,8 @@ abstract class Resource protected ()
     * @param opts A bag of options that control this resource's behavior.
     */
   def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean) = this()
-  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.resourceMod.Inputs) = this()
-  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.resourceMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
+  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.outputMod.Inputs) = this()
+  def this(t: java.lang.String, name: java.lang.String, custom: scala.Boolean, props: atPulumiPulumiLib.outputMod.Inputs, opts: atPulumiPulumiLib.resourceMod.ResourceOptions) = this()
 }
 
 /* static members */

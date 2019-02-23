@@ -18,19 +18,19 @@ trait TableConstructor
 org.scalablytyped.runtime.Instantiable1[/* name */ java.lang.String, Table]
      with org.scalablytyped.runtime.Instantiable2[
       /* name */ java.lang.String, 
-      /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
+      /* primaryKey */ atPulumiPulumiLib.outputMod.Input[java.lang.String], 
       Table
     ]
      with org.scalablytyped.runtime.Instantiable3[
       /* name */ java.lang.String, 
-      /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
-      /* primaryKeyType */ atPulumiPulumiLib.resourceMod.Input[PrimaryKeyType], 
+      /* primaryKey */ atPulumiPulumiLib.outputMod.Input[java.lang.String], 
+      /* primaryKeyType */ atPulumiPulumiLib.outputMod.Input[PrimaryKeyType], 
       Table
     ]
      with org.scalablytyped.runtime.Instantiable4[
       /* name */ java.lang.String, 
-      /* primaryKey */ atPulumiPulumiLib.resourceMod.Input[java.lang.String], 
-      /* primaryKeyType */ atPulumiPulumiLib.resourceMod.Input[PrimaryKeyType], 
+      /* primaryKey */ atPulumiPulumiLib.outputMod.Input[java.lang.String], 
+      /* primaryKeyType */ atPulumiPulumiLib.outputMod.Input[PrimaryKeyType], 
       /* opts */ atPulumiPulumiLib.resourceMod.ResourceOptions, 
       Table
     ]

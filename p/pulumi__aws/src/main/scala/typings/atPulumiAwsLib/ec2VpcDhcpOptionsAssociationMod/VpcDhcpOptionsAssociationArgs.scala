@@ -9,10 +9,10 @@ trait VpcDhcpOptionsAssociationArgs extends js.Object {
   /**
     * The ID of the DHCP Options Set to associate to the VPC.
     */
-  val dhcpOptionsId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dhcpOptionsId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The ID of the VPC to which we would like to associate a DHCP Options Set.
     */
-  val vpcId: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val vpcId: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

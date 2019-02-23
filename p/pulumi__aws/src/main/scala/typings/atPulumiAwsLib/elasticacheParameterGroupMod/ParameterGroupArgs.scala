@@ -9,20 +9,20 @@ trait ParameterGroupArgs extends js.Object {
   /**
     * The description of the ElastiCache parameter group. Defaults to "Managed by Terraform".
     */
-  val description: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val description: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * The family of the ElastiCache parameter group.
     */
-  val family: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val family: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The name of the ElastiCache parameter.
     */
-  val name: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  val name: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A list of ElastiCache parameters to apply.
     */
   val parameters: js.UndefOr[
-    atPulumiPulumiLib.resourceMod.Input[js.Array[atPulumiPulumiLib.resourceMod.Input[atPulumiAwsLib.Anon_NameValue]]]
+    atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[atPulumiAwsLib.Anon_NameValue]]]
   ] = js.undefined
 }
 

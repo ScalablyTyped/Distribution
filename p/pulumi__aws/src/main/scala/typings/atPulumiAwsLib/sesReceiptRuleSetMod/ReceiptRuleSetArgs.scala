@@ -9,6 +9,6 @@ trait ReceiptRuleSetArgs extends js.Object {
   /**
     * The name of the rule set
     */
-  val ruleSetName: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val ruleSetName: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 

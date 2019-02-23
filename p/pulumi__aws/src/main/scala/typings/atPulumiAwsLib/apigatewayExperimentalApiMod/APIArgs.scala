@@ -12,7 +12,7 @@ trait APIArgs extends js.Object {
     * Either [swaggerString] or [routes] must be specified.
     */
   var routes: js.UndefOr[js.Array[Route]] = js.undefined
-  var stageName: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  var stageName: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
   /**
     * A Swagger specification already in string form to use to initialize the APIGateway.  Note
     * that you must manually provide permission for any route targets to be invoked by API Gateway
@@ -20,6 +20,6 @@ trait APIArgs extends js.Object {
     *
     * Either [swaggerString] or [routes] must be specified.
     */
-  var swaggerString: js.UndefOr[atPulumiPulumiLib.resourceMod.Input[java.lang.String]] = js.undefined
+  var swaggerString: js.UndefOr[atPulumiPulumiLib.outputMod.Input[java.lang.String]] = js.undefined
 }
 

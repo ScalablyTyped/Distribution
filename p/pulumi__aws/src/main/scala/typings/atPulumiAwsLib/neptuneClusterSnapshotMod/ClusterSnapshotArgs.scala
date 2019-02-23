@@ -9,10 +9,10 @@ trait ClusterSnapshotArgs extends js.Object {
   /**
     * The DB Cluster Identifier from which to take the snapshot.
     */
-  val dbClusterIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dbClusterIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String]
   /**
     * The Identifier for the snapshot.
     */
-  val dbClusterSnapshotIdentifier: atPulumiPulumiLib.resourceMod.Input[java.lang.String]
+  val dbClusterSnapshotIdentifier: atPulumiPulumiLib.outputMod.Input[java.lang.String]
 }
 
