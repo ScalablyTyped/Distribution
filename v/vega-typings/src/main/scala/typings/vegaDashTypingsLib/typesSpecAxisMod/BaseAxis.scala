@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
+trait BaseAxis[N, NS, B, BNS, S, C, FW, FS, A, TB, LA, LO, DA] extends js.Object {
   /**
     * An interpolation fraction indicating where, for `band` scales, axis ticks should be positioned. A value of `0` places ticks at the left edge of their bands. A value of `0.5` places ticks in the middle of their bands.
     *
@@ -113,6 +113,10 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
     */
   var labelFontSize: js.UndefOr[N] = js.undefined
   /**
+    * Font style of the title.
+    */
+  var labelFontStyle: js.UndefOr[FS] = js.undefined
+  /**
     * Font weight of axis tick labels.
     */
   var labelFontWeight: js.UndefOr[FW] = js.undefined
@@ -137,7 +141,7 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
     */
   var labelPadding: js.UndefOr[N] = js.undefined
   /**
-    * TODO: add docs.
+    * The minimum separation that must be between label bounding boxes for them to be considered non-overlapping (default `0`). This property is ignored if *labelOverlap* resolution is not enabled.
     */
   var labelSeparation: js.UndefOr[NS] = js.undefined
   // ---------- Labels ----------
@@ -230,6 +234,10 @@ trait BaseAxis[N, NS, B, BNS, S, C, FW, A, TB, LA, LO, DA] extends js.Object {
     * @minimum 0
     */
   var titleFontSize: js.UndefOr[N] = js.undefined
+  /**
+    * Font style of the title.
+    */
+  var titleFontStyle: js.UndefOr[FS] = js.undefined
   /**
     * Font weight of the title.
     * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).

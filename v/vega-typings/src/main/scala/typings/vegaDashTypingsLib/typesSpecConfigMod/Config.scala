@@ -21,6 +21,7 @@ import scala.scalajs.js.annotation._
       vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
       vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
       vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
       vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 

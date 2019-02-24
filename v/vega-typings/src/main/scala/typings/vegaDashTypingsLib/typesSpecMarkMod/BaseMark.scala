@@ -16,7 +16,7 @@ trait BaseMark extends js.Object {
   var role: js.UndefOr[java.lang.String] = js.undefined
   var sort: js.UndefOr[Compare] = js.undefined
   var style: js.UndefOr[java.lang.String | js.Array[java.lang.String]] = js.undefined
-  var transform: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transform]] = js.undefined
+  var transform: js.UndefOr[js.Array[vegaDashTypingsLib.typesSpecTransformMod.Transforms]] = js.undefined
   var zindex: js.UndefOr[scala.Double] = js.undefined
 }
 

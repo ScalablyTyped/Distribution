@@ -14,6 +14,7 @@ trait Axis
       vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
       vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
       vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
       vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
@@ -59,9 +60,11 @@ trait Axis
     *
     * @minimum 0
     */
-  var tickCount: js.UndefOr[
-    scala.Double | vegaDashTypingsLib.typesSpecScaleMod.TimeInterval | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
-  ] = js.undefined
+  var tickCount: js.UndefOr[TickCount] = js.undefined
+  /**
+    * The minimum desired step between axis ticks, in terms of scale domain values. For example, a value of `1` indicates that ticks should not be less than 1 unit apart. If `tickMinStep` is specified, the `tickCount` value will be adjusted, if necessary, to enforce the minimum step value.
+    */
+  var tickMinStep: js.UndefOr[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
   /**
     * A title for the axis (none by default).
     */

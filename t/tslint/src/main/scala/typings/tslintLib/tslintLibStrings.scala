@@ -16,6 +16,9 @@ object tslintLibStrings {
   sealed trait error extends js.Object
   
   @js.native
+  sealed trait formatting extends js.Object
+  
+  @js.native
   sealed trait functionality extends js.Object
   
   @js.native
@@ -63,6 +66,8 @@ object tslintLibStrings {
   def default: default = "default".asInstanceOf[default]
   @scala.inline
   def error: error = "error".asInstanceOf[error]
+  @scala.inline
+  def formatting: formatting = "formatting".asInstanceOf[formatting]
   @scala.inline
   def functionality: functionality = "functionality".asInstanceOf[functionality]
   @scala.inline

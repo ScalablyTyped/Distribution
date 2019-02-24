@@ -49,6 +49,8 @@ trait BaseBin extends js.Object {
     * An array of allowable step sizes to choose from.
     * @minItems 1
     */
-  var steps: js.UndefOr[js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]] = js.undefined
+  var steps: js.UndefOr[
+    (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+  ] = js.undefined
 }
 

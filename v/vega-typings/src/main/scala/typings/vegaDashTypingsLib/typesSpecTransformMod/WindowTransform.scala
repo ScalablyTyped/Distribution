@@ -18,8 +18,13 @@ trait WindowTransform extends js.Object {
   var groupby: js.UndefOr[
     (js.Array[java.lang.String | TransformField]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ] = js.undefined
-  var ignorePeers: js.UndefOr[scala.Boolean] = js.undefined
-  var ops: js.UndefOr[js.Array[java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]] = js.undefined
+  var ignorePeers: js.UndefOr[scala.Boolean | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
+  var ops: js.UndefOr[
+    js.Array[AggregateOp | WindowOnlyOp | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]
+  ] = js.undefined
+  var params: js.UndefOr[
+    (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | scala.Null]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
+  ] = js.undefined
   var sort: js.UndefOr[vegaDashTypingsLib.typesSpecMarkMod.Compare] = js.undefined
   var `type`: vegaDashTypingsLib.vegaDashTypingsLibStrings.window
 }

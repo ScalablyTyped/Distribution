@@ -12,6 +12,6 @@ trait Anon_DefaultPropsGetDerivedStateFromProps
       antdLib.libTreeDirectoryTreeMod.default
     ] {
   var defaultProps: Anon_ExpandAction = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps): Anon_ExpandedKeys | Anon_ExpandedKeysSelectedKeys | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps): antdLib.libTreeDirectoryTreeMod.DirectoryTreeState = js.native
 }
 

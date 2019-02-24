@@ -16,7 +16,8 @@ package object typesSpecScaleMod {
     scala.Null | scala.Boolean | java.lang.String | scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ]
   type RangeScheme = RangeEnum | RangeRaw | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Count
-  type Scale = OrdinalScale | BandScale | PointScale | SequentialScale | TimeScale | IdentityScale | DiscretizingScale | LinearScale | LogScale | SymLogScale | PowScale | SqrtScale | QuantileScale | QuantizeScale | ThresholdScale | BinOrdinalScale
+  type Scale = OrdinalScale | BandScale | PointScale | SequentialScale | TimeScale | IdentityScale | LinearScale | LogScale | SymLogScale | PowScale | SqrtScale | QuantileScale | QuantizeScale | ThresholdScale | BinOrdinalScale
+  type ScaleBins = (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Start
   type ScaleData = (DataRef with vegaDashTypingsLib.Anon_Sort) | (MultiDataRef with vegaDashTypingsLib.Anon_SortUnionSortField)
   type ScaleField = java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   type ScaleInterpolate = vegaDashTypingsLib.vegaDashTypingsLibStrings.rgb | vegaDashTypingsLib.vegaDashTypingsLibStrings.lab | vegaDashTypingsLib.vegaDashTypingsLibStrings.hcl | vegaDashTypingsLib.vegaDashTypingsLibStrings.hsl | vegaDashTypingsLib.vegaDashTypingsLibStrings.`hsl-long` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`hcl-long` | vegaDashTypingsLib.vegaDashTypingsLibStrings.cubehelix | vegaDashTypingsLib.vegaDashTypingsLibStrings.`cubehelix-long` | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Cubehelix

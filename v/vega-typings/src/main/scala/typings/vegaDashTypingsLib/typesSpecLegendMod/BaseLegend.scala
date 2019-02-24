@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] extends js.Object {
+trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] extends js.Object {
   // ---------- Symbol Layout ----------
   /**
     * The height in pixels to clip symbol legend entries and limit their size.
@@ -96,6 +96,10 @@ trait BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] extends js.Object {
     */
   var labelFontSize: js.UndefOr[N] = js.undefined
   /**
+    * The font style of legend label.
+    */
+  var labelFontStyle: js.UndefOr[FS] = js.undefined
+  /**
     * The font weight of legend label.
     */
   var labelFontWeight: js.UndefOr[FW] = js.undefined
@@ -127,6 +131,10 @@ trait BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] extends js.Object {
     */
   var labelPadding: js.UndefOr[N] = js.undefined
   /**
+    * The minimum separation that must be between label bounding boxes for them to be considered non-overlapping (default `0`). This property is ignored if *labelOverlap* resolution is not enabled.
+    */
+  var labelSeparation: js.UndefOr[NS] = js.undefined
+  /**
     * The offset in pixels by which to displace the legend from the data rectangle and axes.
     *
     * __Default value:__ `18`.
@@ -154,10 +162,6 @@ trait BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] extends js.Object {
     * Border stroke color for the full legend.
     */
   var strokeColor: js.UndefOr[C] = js.undefined
-  /**
-    * Border stroke width for the full legend.
-    */
-  var strokeWidth: js.UndefOr[N] = js.undefined
   // ---------- Symbols ----------
   /**
     * The color of the legend symbol,
@@ -224,6 +228,10 @@ trait BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] extends js.Object {
     * The font size of the legend title.
     */
   var titleFontSize: js.UndefOr[N] = js.undefined
+  /**
+    * The font style of the legend title.
+    */
+  var titleFontStyle: js.UndefOr[FS] = js.undefined
   /**
     * The font weight of the legend title.
     * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).

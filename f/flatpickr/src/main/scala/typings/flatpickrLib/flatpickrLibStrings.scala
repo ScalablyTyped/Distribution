@@ -130,6 +130,9 @@ object flatpickrLibStrings {
   sealed trait time extends js.Object
   
   @js.native
+  sealed trait u extends js.Object
+  
+  @js.native
   sealed trait w extends js.Object
   
   @js.native
@@ -217,6 +220,8 @@ object flatpickrLibStrings {
   def single: single = "single".asInstanceOf[single]
   @scala.inline
   def time: time = "time".asInstanceOf[time]
+  @scala.inline
+  def u: u = "u".asInstanceOf[u]
   @scala.inline
   def w: w = "w".asInstanceOf[w]
   @scala.inline

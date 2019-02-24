@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseTitle[N, S, C, FW, A, TB, F, AN] extends js.Object {
+trait BaseTitle[N, S, C, FW, FS, A, TB, F, AN] extends js.Object {
   var align: js.UndefOr[A] = js.undefined
   /**
     * The anchor position for placing the title. One of `"start"`, `"middle"`, or `"end"`. For example, with an orientation of top these anchor positions map to a left-, center-, or right-aligned title.
@@ -35,6 +35,10 @@ trait BaseTitle[N, S, C, FW, A, TB, F, AN] extends js.Object {
     * @minimum 0
     */
   var fontSize: js.UndefOr[N] = js.undefined
+  /**
+    * Font style for title text.
+    */
+  var fontStyle: js.UndefOr[FS] = js.undefined
   /**
     * Font weight for title text.
     * This can be either a string (e.g `"bold"`, `"normal"`) or a number (`100`, `200`, `300`, ..., `900` where `"normal"` = `400` and `"bold"` = `700`).

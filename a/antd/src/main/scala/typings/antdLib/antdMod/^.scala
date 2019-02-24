@@ -17,6 +17,6 @@ object ^ extends js.Object {
   val Statistic: reactLib.reactMod.ReactNs.FunctionComponent[antdLib.libStatisticStatisticMod.StatisticProps] with antdLib.libStatisticStatisticMod.StatisticComponent = js.native
   val message: antdLib.libMessageMod.MessageApi = js.native
   val notification: antdLib.libNotificationMod.NotificationApi = js.native
-  var version: antdLib.antdLibStrings.`3DOT13DOT5` = js.native
+  var version: antdLib.antdLibStrings.`3DOT13DOT6` = js.native
 }
 

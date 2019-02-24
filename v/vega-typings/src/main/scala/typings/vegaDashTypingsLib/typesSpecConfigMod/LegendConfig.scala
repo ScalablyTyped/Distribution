@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LegendConfig[N, NS, S, C, FW, A, TB, LA, LO, SY]
-  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, A, TB, LA, LO, SY] {
+trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY]
+  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] {
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for gradient legends.
     *
@@ -27,6 +27,10 @@ trait LegendConfig[N, NS, S, C, FW, A, TB, LA, LO, SY]
     * Border stroke dash pattern for the full legend.
     */
   var strokeDash: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  /**
+    * Border stroke width for the full legend.
+    */
+  var strokeWidth: js.UndefOr[N] = js.undefined
   /**
     * Default fill color for legend symbols. Only applied if there is no `"fill"` scale color encoding for the legend.
     *

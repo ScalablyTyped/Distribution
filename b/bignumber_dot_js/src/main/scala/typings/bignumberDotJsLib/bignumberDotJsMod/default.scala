@@ -94,6 +94,13 @@ class default protected () extends BigNumber {
     * new BigNumber(9, 2)
     * ```
     *
+    * A BigNumber can also be created from an object literal.
+    * Use `isBigNumber` to check that it is well-formed.
+    *
+    * ```ts
+    * new BigNumber({ s: 1, e: 2, c: [ 777, 12300000000000 ], _isBigNumber: true })    // '777.123'
+    * ```
+    *
     * @param n A numeric value.
     * @param base The base of `n`, integer, 2 to 36 (or `ALPHABET.length`, see `ALPHABET`).
     */
@@ -111,7 +118,8 @@ object default extends js.Object {
   val BigNumber: js.UndefOr[bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Constructor] = js.native
   /**
     * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
-    * on an invalid `BigNumber.Value`.
+    * if the BigNumber constructor receives an invalid `BigNumber.Value`, or if `BigNumber.isBigNumber`
+    * receives a BigNumber instance that is malformed.
     *
     * ```ts
     * // No error, and BigNumber NaN is returned.
@@ -135,6 +143,20 @@ object default extends js.Object {
     * // '[BigNumber Error] Number primitive has more than 15 significant digits'
     * ```
     *
+    * Check that a BigNumber instance is well-formed:
+    *
+    * ```ts
+    * x = new BigNumber(10)
+    *
+    * BigNumber.DEBUG = false
+    * // Change x.c to an illegitimate value.
+    * x.c = NaN
+    * // No error, as BigNumber.DEBUG is false.
+    * BigNumber.isBigNumber(x)    // true
+    *
+    * BigNumber.DEBUG = true
+    * BigNumber.isBigNumber(x)    // '[BigNumber Error] Invalid BigNumber'
+    * ```
     */
   var DEBUG: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -218,6 +240,8 @@ object default extends js.Object {
   def config(`object`: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Config): bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Config = js.native
   /**
     * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
+    *
+    * If `BigNumber.DEBUG` is `true`, throws if a BigNumber instance is not well-formed.
     *
     * ```ts
     * x = 42

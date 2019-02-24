@@ -10,8 +10,12 @@ trait Input
   extends reactLib.reactMod.Component[InputProps, js.Any, js.Any] {
   var input: reactLib.HTMLInputElement = js.native
   def blur(): scala.Unit = js.native
+  @JSName("componentDidUpdate")
+  def componentDidUpdate_MInput(): scala.Unit = js.native
   def focus(): scala.Unit = js.native
   def getInputClassName(prefixCls: java.lang.String): java.lang.String = js.native
+  @JSName("getSnapshotBeforeUpdate")
+  def getSnapshotBeforeUpdate_MInput(prevProps: InputProps): scala.Null = js.native
   def handleChange(e: reactLib.reactMod.ReactNs.ChangeEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handleKeyDown(e: reactLib.reactMod.ReactNs.KeyboardEvent[reactLib.HTMLInputElement]): scala.Unit = js.native
   def handleReset(e: reactLib.reactMod.ReactNs.MouseEvent[reactLib.HTMLElement, reactLib.MouseEvent]): scala.Unit = js.native

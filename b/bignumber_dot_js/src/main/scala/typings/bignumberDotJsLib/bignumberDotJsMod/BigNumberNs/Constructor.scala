@@ -21,7 +21,8 @@ trait Constructor
   ] = js.native
   /**
     * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
-    * on an invalid `BigNumber.Value`.
+    * if the BigNumber constructor receives an invalid `BigNumber.Value`, or if `BigNumber.isBigNumber`
+    * receives a BigNumber instance that is malformed.
     *
     * ```ts
     * // No error, and BigNumber NaN is returned.
@@ -45,6 +46,20 @@ trait Constructor
     * // '[BigNumber Error] Number primitive has more than 15 significant digits'
     * ```
     *
+    * Check that a BigNumber instance is well-formed:
+    *
+    * ```ts
+    * x = new BigNumber(10)
+    *
+    * BigNumber.DEBUG = false
+    * // Change x.c to an illegitimate value.
+    * x.c = NaN
+    * // No error, as BigNumber.DEBUG is false.
+    * BigNumber.isBigNumber(x)    // true
+    *
+    * BigNumber.DEBUG = true
+    * BigNumber.isBigNumber(x)    // '[BigNumber Error] Invalid BigNumber'
+    * ```
     */
   var DEBUG: js.UndefOr[scala.Boolean] = js.native
   /**
@@ -130,6 +145,8 @@ trait Constructor
   def config(`object`: Config): Config = js.native
   /**
     * Returns `true` if `value` is a BigNumber instance, otherwise returns `false`.
+    *
+    * If `BigNumber.DEBUG` is `true`, throws if a BigNumber instance is not well-formed.
     *
     * ```ts
     * x = 42

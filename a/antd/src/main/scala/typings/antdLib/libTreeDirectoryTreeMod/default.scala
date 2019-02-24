@@ -16,6 +16,6 @@ class default protected () extends DirectoryTree {
 @js.native
 object default extends js.Object {
   var defaultProps: antdLib.Anon_ExpandAction = js.native
-  def getDerivedStateFromProps(nextProps: antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps): antdLib.Anon_ExpandedKeys | antdLib.Anon_ExpandedKeysSelectedKeys | scala.Null = js.native
+  def getDerivedStateFromProps(nextProps: antdLib.libTreeDirectoryTreeMod.DirectoryTreeProps): antdLib.libTreeDirectoryTreeMod.DirectoryTreeState = js.native
 }
 

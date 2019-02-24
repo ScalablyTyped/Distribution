@@ -11,10 +11,10 @@ trait FlatpickrFn extends js.Object {
   var l10ns: flatpickrLib.flatpickrLibStrings.FlatpickrFn with js.Any with flatpickrLib.Anon_Default = js.native
   def apply(selector: java.lang.String): Instance | js.Array[Instance] = js.native
   def apply(selector: java.lang.String, config: flatpickrLib.distTypesOptionsMod.Options): Instance | js.Array[Instance] = js.native
-  def apply(selector: stdLib.HTMLElement): Instance | js.Array[Instance] = js.native
-  def apply(selector: stdLib.HTMLElement, config: flatpickrLib.distTypesOptionsMod.Options): Instance | js.Array[Instance] = js.native
-  def apply(selector: stdLib.NodeList): Instance | js.Array[Instance] = js.native
-  def apply(selector: stdLib.NodeList, config: flatpickrLib.distTypesOptionsMod.Options): Instance | js.Array[Instance] = js.native
+  def apply(selector: stdLib.ArrayLike[stdLib.Node]): js.Array[Instance] = js.native
+  def apply(selector: stdLib.ArrayLike[stdLib.Node], config: flatpickrLib.distTypesOptionsMod.Options): js.Array[Instance] = js.native
+  def apply(selector: stdLib.Node): Instance = js.native
+  def apply(selector: stdLib.Node, config: flatpickrLib.distTypesOptionsMod.Options): Instance = js.native
   def compareDates(date1: stdLib.Date, date2: stdLib.Date): scala.Double = js.native
   def compareDates(date1: stdLib.Date, date2: stdLib.Date, timeless: scala.Boolean): scala.Double = js.native
   def formatDate(date: stdLib.Date, format: java.lang.String): java.lang.String = js.native

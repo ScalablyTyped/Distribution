@@ -26,6 +26,10 @@ object UtilsNs extends js.Object {
     inputs: js.Array[T],
     getOutputs: js.Function2[/* input */ T, /* index */ scala.Double, js.Array[U]]
   ): js.Array[U] = js.native
+  def getIndentation(
+    node: typescriptLib.typescriptMod.tsNs.Node,
+    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
+  ): java.lang.String = js.native
   def hasOwnProperty(arg: js.Object, key: java.lang.String): scala.Boolean = js.native
   def isCamelCased(name: java.lang.String): scala.Boolean = js.native
   def isFunctionScopeBoundary(node: typescriptLib.typescriptMod.tsNs.Node): scala.Boolean = js.native
@@ -35,6 +39,15 @@ object UtilsNs extends js.Object {
   def isSnakeCased(name: java.lang.String): scala.Boolean = js.native
   def isUpperCase(str: java.lang.String): scala.Boolean = js.native
   def mapDefined[T, U](inputs: js.Array[T], getOutput: js.Function1[/* input */ T, js.UndefOr[U]]): js.Array[U] = js.native
+  def newLineWithIndentation(
+    node: typescriptLib.typescriptMod.tsNs.Node,
+    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile
+  ): java.lang.String = js.native
+  def newLineWithIndentation(
+    node: typescriptLib.typescriptMod.tsNs.Node,
+    sourceFile: typescriptLib.typescriptMod.tsNs.SourceFile,
+    linesCount: scala.Double
+  ): java.lang.String = js.native
   def objectify(arg: js.Any): js.Any = js.native
   def readBufferWithDetectedEncoding(buffer: nodeLib.Buffer): java.lang.String = js.native
   def stripComments(content: java.lang.String): java.lang.String = js.native

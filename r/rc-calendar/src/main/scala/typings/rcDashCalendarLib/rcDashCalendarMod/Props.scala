@@ -25,12 +25,18 @@ trait Props extends js.Object {
   var format: js.UndefOr[java.lang.String] = js.undefined
   var locale: js.UndefOr[js.Object] = js.undefined
   var mode: js.UndefOr[Mode] = js.undefined
-  var onChange: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
+  var onChange: js.UndefOr[
+    js.Function1[/* date */ momentLib.momentMod.momentNs.Moment | scala.Null, scala.Unit]
+  ] = js.undefined
   var onClear: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onKeyDown: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onOk: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var onPanelChange: js.UndefOr[
-    js.Function2[/* date */ momentLib.momentMod.momentNs.Moment, /* mode */ Mode, scala.Unit]
+    js.Function2[
+      /* date */ momentLib.momentMod.momentNs.Moment | scala.Null, 
+      /* mode */ Mode, 
+      scala.Unit
+    ]
   ] = js.undefined
   var onSelect: js.UndefOr[js.Function1[/* date */ momentLib.momentMod.momentNs.Moment, scala.Unit]] = js.undefined
   var prefixCls: js.UndefOr[java.lang.String] = js.undefined

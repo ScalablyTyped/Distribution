@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tslint"
-version := "5.12.1-2f3dbd"
+version := "5.13.0-91b151"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -17,6 +17,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "glob" % "7.1-dt-20180920Z-48cb89",
   "org.scalablytyped" %%% "js-yaml" % "3.12-dt-20190118Z-9bda5b",
   "org.scalablytyped" %%% "minimatch" % "3.0-dt-20180214Z-029f0e",
+  "org.scalablytyped" %%% "mkdirp" % "0.5-dt-20180214Z-47f2e9",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "resolve" % "0.0-unknown-dt-20180507Z-9cfefd",
   "org.scalablytyped" %%% "semver" % "5.5-dt-20180214Z-c9e889",

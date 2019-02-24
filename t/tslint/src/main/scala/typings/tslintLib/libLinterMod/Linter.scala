@@ -13,6 +13,7 @@ class Linter protected () extends js.Object {
   var applyAllFixes: js.Any = js.native
   var applyRule: js.Any = js.native
   var failures: js.Any = js.native
+  val fileNames: js.Any = js.native
   var fixes: js.Any = js.native
   var getAllFailures: js.Any = js.native
   var getEnabledRules: js.Any = js.native

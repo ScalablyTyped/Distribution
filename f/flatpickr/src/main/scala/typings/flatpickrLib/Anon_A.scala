@@ -10,6 +10,7 @@ trait Anon_A extends js.Object {
   var __hideNextMonthArrow: scala.Boolean = js.native
   var __hidePrevMonthArrow: scala.Boolean = js.native
   var _handlers: js.Array[Anon_E] = js.native
+  var _initialDate: stdLib.Date = js.native
   var _selectedDateObj: js.UndefOr[stdLib.Date] = js.native
   var _showTimeInput: scala.Boolean = js.native
   var config: flatpickrLib.distTypesOptionsMod.ParsedOptions = js.native

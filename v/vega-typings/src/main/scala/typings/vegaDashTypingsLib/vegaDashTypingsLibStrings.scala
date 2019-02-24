@@ -49,6 +49,9 @@ object vegaDashTypingsLibStrings {
   sealed trait argmin extends js.Object
   
   @js.native
+  sealed trait arrow extends js.Object
+  
+  @js.native
   sealed trait ascending extends js.Object
   
   @js.native
@@ -238,6 +241,9 @@ object vegaDashTypingsLibStrings {
   sealed trait `cubehelix-long` extends js.Object
   
   @js.native
+  sealed trait cume_dist extends js.Object
+  
+  @js.native
   sealed trait dark2 extends js.Object
   
   @js.native
@@ -251,6 +257,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait default extends js.Object
+  
+  @js.native
+  sealed trait dense_rank extends js.Object
   
   @js.native
   sealed trait density extends js.Object
@@ -305,6 +314,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait filter extends js.Object
+  
+  @js.native
+  sealed trait first_value extends js.Object
   
   @js.native
   sealed trait fit extends js.Object
@@ -445,6 +457,15 @@ object vegaDashTypingsLibStrings {
   sealed trait lab extends js.Object
   
   @js.native
+  sealed trait lag extends js.Object
+  
+  @js.native
+  sealed trait last_value extends js.Object
+  
+  @js.native
+  sealed trait lead extends js.Object
+  
+  @js.native
   sealed trait leave extends js.Object
   
   @js.native
@@ -571,6 +592,12 @@ object vegaDashTypingsLibStrings {
   sealed trait `ns-resize` extends js.Object
   
   @js.native
+  sealed trait nth_value extends js.Object
+  
+  @js.native
+  sealed trait ntile extends js.Object
+  
+  @js.native
   sealed trait number extends js.Object
   
   @js.native
@@ -578,6 +605,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait `nwse-resize` extends js.Object
+  
+  @js.native
+  sealed trait oblique extends js.Object
   
   @js.native
   sealed trait oranges extends js.Object
@@ -620,6 +650,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait path extends js.Object
+  
+  @js.native
+  sealed trait percent_rank extends js.Object
   
   @js.native
   sealed trait pie extends js.Object
@@ -670,6 +703,9 @@ object vegaDashTypingsLibStrings {
   sealed trait range extends js.Object
   
   @js.native
+  sealed trait rank extends js.Object
+  
+  @js.native
   sealed trait rect extends js.Object
   
   @js.native
@@ -692,6 +728,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait `row-resize` extends js.Object
+  
+  @js.native
+  sealed trait row_number extends js.Object
   
   @js.native
   sealed trait rtl extends js.Object
@@ -778,6 +817,9 @@ object vegaDashTypingsLibStrings {
   sealed trait string extends js.Object
   
   @js.native
+  sealed trait stroke extends js.Object
+  
+  @js.native
   sealed trait sum extends js.Object
   
   @js.native
@@ -847,6 +889,9 @@ object vegaDashTypingsLibStrings {
   sealed trait treemap extends js.Object
   
   @js.native
+  sealed trait triangle extends js.Object
+  
+  @js.native
   sealed trait `triangle-down` extends js.Object
   
   @js.native
@@ -899,6 +944,9 @@ object vegaDashTypingsLibStrings {
   
   @js.native
   sealed trait wait extends js.Object
+  
+  @js.native
+  sealed trait wedge extends js.Object
   
   @js.native
   sealed trait week extends js.Object
@@ -955,6 +1003,8 @@ object vegaDashTypingsLibStrings {
   def argmax: argmax = "argmax".asInstanceOf[argmax]
   @scala.inline
   def argmin: argmin = "argmin".asInstanceOf[argmin]
+  @scala.inline
+  def arrow: arrow = "arrow".asInstanceOf[arrow]
   @scala.inline
   def ascending: ascending = "ascending".asInstanceOf[ascending]
   @scala.inline
@@ -1082,6 +1132,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def `cubehelix-long`: `cubehelix-long` = "cubehelix-long".asInstanceOf[`cubehelix-long`]
   @scala.inline
+  def cume_dist: cume_dist = "cume_dist".asInstanceOf[cume_dist]
+  @scala.inline
   def dark2: dark2 = "dark2".asInstanceOf[dark2]
   @scala.inline
   def date: date = "date".asInstanceOf[date]
@@ -1091,6 +1143,8 @@ object vegaDashTypingsLibStrings {
   def dblclick: dblclick = "dblclick".asInstanceOf[dblclick]
   @scala.inline
   def default: default = "default".asInstanceOf[default]
+  @scala.inline
+  def dense_rank: dense_rank = "dense_rank".asInstanceOf[dense_rank]
   @scala.inline
   def density: density = "density".asInstanceOf[density]
   @scala.inline
@@ -1127,6 +1181,8 @@ object vegaDashTypingsLibStrings {
   def file: file = "file".asInstanceOf[file]
   @scala.inline
   def filter: filter = "filter".asInstanceOf[filter]
+  @scala.inline
+  def first_value: first_value = "first_value".asInstanceOf[first_value]
   @scala.inline
   def fit: fit = "fit".asInstanceOf[fit]
   @scala.inline
@@ -1220,6 +1276,12 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def lab: lab = "lab".asInstanceOf[lab]
   @scala.inline
+  def lag: lag = "lag".asInstanceOf[lag]
+  @scala.inline
+  def last_value: last_value = "last_value".asInstanceOf[last_value]
+  @scala.inline
+  def lead: lead = "lead".asInstanceOf[lead]
+  @scala.inline
   def leave: leave = "leave".asInstanceOf[leave]
   @scala.inline
   def left: left = "left".asInstanceOf[left]
@@ -1304,11 +1366,17 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def `ns-resize`: `ns-resize` = "ns-resize".asInstanceOf[`ns-resize`]
   @scala.inline
+  def nth_value: nth_value = "nth_value".asInstanceOf[nth_value]
+  @scala.inline
+  def ntile: ntile = "ntile".asInstanceOf[ntile]
+  @scala.inline
   def number: number = "number".asInstanceOf[number]
   @scala.inline
   def `nw-resize`: `nw-resize` = "nw-resize".asInstanceOf[`nw-resize`]
   @scala.inline
   def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
+  @scala.inline
+  def oblique: oblique = "oblique".asInstanceOf[oblique]
   @scala.inline
   def oranges: oranges = "oranges".asInstanceOf[oranges]
   @scala.inline
@@ -1337,6 +1405,8 @@ object vegaDashTypingsLibStrings {
   def pastel2: pastel2 = "pastel2".asInstanceOf[pastel2]
   @scala.inline
   def path: path = "path".asInstanceOf[path]
+  @scala.inline
+  def percent_rank: percent_rank = "percent_rank".asInstanceOf[percent_rank]
   @scala.inline
   def pie: pie = "pie".asInstanceOf[pie]
   @scala.inline
@@ -1370,6 +1440,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def range: range = "range".asInstanceOf[range]
   @scala.inline
+  def rank: rank = "rank".asInstanceOf[rank]
+  @scala.inline
   def rect: rect = "rect".asInstanceOf[rect]
   @scala.inline
   def rectangular: rectangular = "rectangular".asInstanceOf[rectangular]
@@ -1385,6 +1457,8 @@ object vegaDashTypingsLibStrings {
   def right: right = "right".asInstanceOf[right]
   @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
+  @scala.inline
+  def row_number: row_number = "row_number".asInstanceOf[row_number]
   @scala.inline
   def rtl: rtl = "rtl".asInstanceOf[rtl]
   @scala.inline
@@ -1442,6 +1516,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   @scala.inline
+  def stroke: stroke = "stroke".asInstanceOf[stroke]
+  @scala.inline
   def sum: sum = "sum".asInstanceOf[sum]
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
@@ -1488,6 +1564,8 @@ object vegaDashTypingsLibStrings {
   @scala.inline
   def treemap: treemap = "treemap".asInstanceOf[treemap]
   @scala.inline
+  def triangle: triangle = "triangle".asInstanceOf[triangle]
+  @scala.inline
   def `triangle-down`: `triangle-down` = "triangle-down".asInstanceOf[`triangle-down`]
   @scala.inline
   def `triangle-left`: `triangle-left` = "triangle-left".asInstanceOf[`triangle-left`]
@@ -1521,6 +1599,8 @@ object vegaDashTypingsLibStrings {
   def voronoi: voronoi = "voronoi".asInstanceOf[voronoi]
   @scala.inline
   def `w-resize`: `w-resize` = "w-resize".asInstanceOf[`w-resize`]
+  @scala.inline
+  def wedge: wedge = "wedge".asInstanceOf[wedge]
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   @scala.inline

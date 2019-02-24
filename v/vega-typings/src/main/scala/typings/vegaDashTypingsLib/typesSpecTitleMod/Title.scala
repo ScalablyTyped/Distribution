@@ -12,6 +12,7 @@ trait Title
       vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
       vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
       vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
       vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       TitleFrame | vegaDashTypingsLib.typesSpecValuesMod.StringValue, 

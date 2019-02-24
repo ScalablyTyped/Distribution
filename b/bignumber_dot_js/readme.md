@@ -1,5 +1,5 @@
 ```
-// Type definitions for bignumber.js >=8.0.0
+// Type definitions for bignumber.js >=8.1.0
 // Project: https://github.com/MikeMcl/bignumber.js
 // Definitions by: Michael Mclaughlin <https://github.com/MikeMcl>
 // Definitions: https://github.com/MikeMcl/bignumber.js
@@ -9,14 +9,14 @@
 //
 //   class     BigNumber (default export)
 //   type      BigNumber.Constructor
-//   type      BigNumber.Instance
 //   type      BigNumber.ModuloMode
 //   type      BigNumber.RoundingMOde
 //   type      BigNumber.Value
 //   interface BigNumber.Config
 //   interface BigNumber.Format
+//   interface BigNumber.Instance
 //
-// Example (alternative syntax commented-out):
+// Example:
 //
 //   import {BigNumber} from "bignumber.js"
 //   //import BigNumber from "bignumber.js"
@@ -28,7 +28,6 @@
 //
 //   let v: BigNumber.Value = '12345.6789';
 //   let b: BigNumber = new BigNumber(v);
-//   //let b: BigNumber.Instance = new BigNumber(v);
 //
 // The use of compiler option `--strictNullChecks` is recommended.
 ```

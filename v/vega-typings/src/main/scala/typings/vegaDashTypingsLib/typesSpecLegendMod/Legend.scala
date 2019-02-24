@@ -12,6 +12,7 @@ trait Legend
       vegaDashTypingsLib.typesSpecValuesMod.StringValue, 
       vegaDashTypingsLib.typesSpecValuesMod.ColorValue, 
       vegaDashTypingsLib.typesSpecValuesMod.FontWeightValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.FontStyleValue, 
       vegaDashTypingsLib.typesSpecValuesMod.AlignValue, 
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
@@ -38,10 +39,15 @@ trait Legend
   var size: js.UndefOr[java.lang.String] = js.undefined
   var stroke: js.UndefOr[java.lang.String] = js.undefined
   var strokeDash: js.UndefOr[java.lang.String] = js.undefined
+  var strokeWidth: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The desired number of tick values for quantitative legends.
     */
-  var tickCount: js.UndefOr[scala.Double | vegaDashTypingsLib.typesSpecScaleMod.TimeInterval] = js.undefined
+  var tickCount: js.UndefOr[vegaDashTypingsLib.typesSpecAxisMod.TickCount] = js.undefined
+  /**
+    * The minimum desired step between tick values for quantitative legends, in terms of scale domain values. For example, a value of `1` indicates that ticks should not be less than 1 unit apart. If `tickMinStep` is specified, the `tickCount` value will be adjusted, if necessary, to enforce the minimum step value.
+    */
+  var tickMinStep: js.UndefOr[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
   /**
     * The title for the legend.
     */
