@@ -14,10 +14,14 @@ trait SegmentComponent
   ] = js.native
   var Inline: semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentInlineMod.SegmentInlineComponent = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsSegmentSegmentGroupMod.SegmentGroupProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

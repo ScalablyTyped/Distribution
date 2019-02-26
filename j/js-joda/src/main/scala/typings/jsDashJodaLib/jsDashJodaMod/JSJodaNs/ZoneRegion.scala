@@ -5,7 +5,5 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait ZoneRegion extends ZoneId {
-  def id(): java.lang.String
-}
+trait ZoneRegion extends ZoneId
 

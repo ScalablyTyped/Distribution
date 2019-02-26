@@ -8,6 +8,7 @@
 //                  Wes Grimes <https://github.com/wesleygrimes>
 //                  Otherwise SAS <https://github.com/owsas>
 //                  Andrew Goldis <https://github.com/agoldis>
+//                  Alexandre Hétu Rivard <https://github.com/AlexandreHetu>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.4
 ```

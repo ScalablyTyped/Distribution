@@ -33,6 +33,7 @@
 //                 Deniss Borisovs <https://github.com/denissb>
 //                 Kenneth Skovhus <https://github.com/skovhus>
 //                 Aaron Rosen <https://github.com/azrosen92>
+//                 Haseeb Majid <https://github.com/hmajid2301>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.8
 /**

@@ -7,9 +7,6 @@ import scala.scalajs.js.annotation._
 
 object ddDashTraceLibStrings {
   @js.native
-  sealed trait PluginConfiguration extends js.Object
-  
-  @js.native
   sealed trait amqp10 extends js.Object
   
   @js.native
@@ -19,10 +16,19 @@ object ddDashTraceLibStrings {
   sealed trait bluebird extends js.Object
   
   @js.native
+  sealed trait bunyan extends js.Object
+  
+  @js.native
+  sealed trait dns extends js.Object
+  
+  @js.native
   sealed trait elasticsearch extends js.Object
   
   @js.native
   sealed trait express extends js.Object
+  
+  @js.native
+  sealed trait `generic-pool` extends js.Object
   
   @js.native
   sealed trait graphql extends js.Object
@@ -52,7 +58,13 @@ object ddDashTraceLibStrings {
   sealed trait mysql2 extends js.Object
   
   @js.native
+  sealed trait net extends js.Object
+  
+  @js.native
   sealed trait pg extends js.Object
+  
+  @js.native
+  sealed trait pino extends js.Object
   
   @js.native
   sealed trait q extends js.Object
@@ -64,10 +76,14 @@ object ddDashTraceLibStrings {
   sealed trait restify extends js.Object
   
   @js.native
+  sealed trait router extends js.Object
+  
+  @js.native
   sealed trait when extends js.Object
   
-  @scala.inline
-  def PluginConfiguration: PluginConfiguration = "PluginConfiguration".asInstanceOf[PluginConfiguration]
+  @js.native
+  sealed trait winston extends js.Object
+  
   @scala.inline
   def amqp10: amqp10 = "amqp10".asInstanceOf[amqp10]
   @scala.inline
@@ -75,9 +91,15 @@ object ddDashTraceLibStrings {
   @scala.inline
   def bluebird: bluebird = "bluebird".asInstanceOf[bluebird]
   @scala.inline
+  def bunyan: bunyan = "bunyan".asInstanceOf[bunyan]
+  @scala.inline
+  def dns: dns = "dns".asInstanceOf[dns]
+  @scala.inline
   def elasticsearch: elasticsearch = "elasticsearch".asInstanceOf[elasticsearch]
   @scala.inline
   def express: express = "express".asInstanceOf[express]
+  @scala.inline
+  def `generic-pool`: `generic-pool` = "generic-pool".asInstanceOf[`generic-pool`]
   @scala.inline
   def graphql: graphql = "graphql".asInstanceOf[graphql]
   @scala.inline
@@ -97,7 +119,11 @@ object ddDashTraceLibStrings {
   @scala.inline
   def mysql2: mysql2 = "mysql2".asInstanceOf[mysql2]
   @scala.inline
+  def net: net = "net".asInstanceOf[net]
+  @scala.inline
   def pg: pg = "pg".asInstanceOf[pg]
+  @scala.inline
+  def pino: pino = "pino".asInstanceOf[pino]
   @scala.inline
   def q: q = "q".asInstanceOf[q]
   @scala.inline
@@ -105,6 +131,10 @@ object ddDashTraceLibStrings {
   @scala.inline
   def restify: restify = "restify".asInstanceOf[restify]
   @scala.inline
+  def router: router = "router".asInstanceOf[router]
+  @scala.inline
   def when: when = "when".asInstanceOf[when]
+  @scala.inline
+  def winston: winston = "winston".asInstanceOf[winston]
 }
 

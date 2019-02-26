@@ -21,24 +21,36 @@ trait StatisticComponent
     semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps
   ] = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticGroupMod.StatisticGroupProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Label(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Label(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticLabelMod.StatisticLabelProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Value(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Value(
-    props: semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsStatisticStatisticValueMod.StatisticValueProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

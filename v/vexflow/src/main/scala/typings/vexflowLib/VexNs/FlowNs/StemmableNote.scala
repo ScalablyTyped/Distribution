@@ -9,8 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class StemmableNote protected () extends Note {
   def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
+  var flag: Glyph = js.native
   def buildStem(): StemmableNote = js.native
   def drawStem(stem_struct: vexflowLib.Anon_Stemdirection): scala.Unit = js.native
+  def getAttribute(attr: java.lang.String): js.Any = js.native
   def getBeamCount(): scala.Double = js.native
   def getCenterGlyphX(): scala.Double = js.native
   def getStem(): Stem = js.native
@@ -23,6 +25,7 @@ class StemmableNote protected () extends Note {
   def getStemX(): scala.Double = js.native
   def getYForBottomText(text_line: scala.Double): scala.Double = js.native
   def setBeam(beam: Beam): StemmableNote = js.native
+  def setFlagStyle(style_struct: vexflowLib.Anon_FillStyle): scala.Unit = js.native
   def setStem(stem: Stem): StemmableNote = js.native
   def setStemDirection(direction: scala.Double): StemmableNote = js.native
   def setStemLength(): scala.Double = js.native

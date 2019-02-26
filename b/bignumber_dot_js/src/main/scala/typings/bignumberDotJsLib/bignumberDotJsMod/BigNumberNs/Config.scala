@@ -5,6 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
+/** See `BigNumber.config` (alias `BigNumber.set`) and `BigNumber.clone`. */
 trait Config extends js.Object {
   /**
     * The alphabet used for base conversion. The length of the alphabet corresponds to the maximum

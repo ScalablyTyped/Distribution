@@ -125,9 +125,9 @@ object ELBv2Ns extends js.Object {
       */
     var ClientId: AuthenticateOidcActionClientId
     /**
-      * The OAuth 2.0 client secret.
+      * The OAuth 2.0 client secret. This parameter is required if you are creating a rule. If you are modifying a rule, you can omit this parameter if you set UseExistingClientSecret to true.
       */
-    var ClientSecret: AuthenticateOidcActionClientSecret
+    var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.undefined
     /**
       * The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
@@ -152,6 +152,10 @@ object ELBv2Ns extends js.Object {
       * The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
     var TokenEndpoint: AuthenticateOidcActionTokenEndpoint
+    /**
+      * Indicates whether to use the existing client secret when modifying a rule. If you are creating a rule, you can omit this parameter or set it to false.
+      */
+    var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
     /**
       * The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
       */
@@ -798,7 +802,7 @@ object ELBv2Ns extends js.Object {
   
   trait LoadBalancerAttribute extends js.Object {
     /**
-      * The name of the attribute. The following attributes are supported by both Application Load Balancers and Network Load Balancers:    deletion_protection.enabled - Indicates whether deletion protection is enabled. The value is true or false. The default is false.   The following attributes are supported by only Application Load Balancers:    access_logs.s3.enabled - Indicates whether access logs are enabled. The value is true or false. The default is false.    access_logs.s3.bucket - The name of the S3 bucket for the access logs. This attribute is required if access logs are enabled. The bucket must exist in the same region as the load balancer and have a bucket policy that grants Elastic Load Balancing permissions to write to the bucket.    access_logs.s3.prefix - The prefix for the location in the S3 bucket for the access logs.    idle_timeout.timeout_seconds - The idle timeout value, in seconds. The valid range is 1-4000 seconds. The default is 60 seconds.    routing.http2.enabled - Indicates whether HTTP/2 is enabled. The value is true or false. The default is true.   The following attributes are supported by only Network Load Balancers:    load_balancing.cross_zone.enabled - Indicates whether cross-zone load balancing is enabled. The value is true or false. The default is false.  
+      * The name of the attribute. The following attributes are supported by both Application Load Balancers and Network Load Balancers:    access_logs.s3.enabled - Indicates whether access logs are enabled. The value is true or false. The default is false.    access_logs.s3.bucket - The name of the S3 bucket for the access logs. This attribute is required if access logs are enabled. The bucket must exist in the same region as the load balancer and have a bucket policy that grants Elastic Load Balancing permissions to write to the bucket.    access_logs.s3.prefix - The prefix for the location in the S3 bucket for the access logs.    deletion_protection.enabled - Indicates whether deletion protection is enabled. The value is true or false. The default is false.   The following attributes are supported by only Application Load Balancers:    idle_timeout.timeout_seconds - The idle timeout value, in seconds. The valid range is 1-4000 seconds. The default is 60 seconds.    routing.http2.enabled - Indicates whether HTTP/2 is enabled. The value is true or false. The default is true.   The following attributes are supported by only Network Load Balancers:    load_balancing.cross_zone.enabled - Indicates whether cross-zone load balancing is enabled. The value is true or false. The default is false.  
       */
     var Key: js.UndefOr[LoadBalancerAttributeKey] = js.undefined
     /**
@@ -2287,6 +2291,7 @@ object ELBv2Ns extends js.Object {
   type AuthenticateOidcActionSessionCookieName = java.lang.String
   type AuthenticateOidcActionSessionTimeout = scala.Double
   type AuthenticateOidcActionTokenEndpoint = java.lang.String
+  type AuthenticateOidcActionUseExistingClientSecret = scala.Boolean
   type AuthenticateOidcActionUserInfoEndpoint = java.lang.String
   type AvailabilityZones = js.Array[AvailabilityZone]
   type CanonicalHostedZoneId = java.lang.String

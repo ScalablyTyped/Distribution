@@ -8,6 +8,7 @@ import scala.scalajs.js.annotation._
 @JSGlobal("Vex.Flow")
 @js.native
 object ^ extends js.Object {
+  val DEFAULT_NOTATION_FONT_SCALE: scala.Double = js.native
   // from vexflow_font.js / gonville_original.js / gonville_all.js
   var Font: vexflowLib.Anon_Ascender = js.native
   val RESOLUTION: scala.Double = js.native

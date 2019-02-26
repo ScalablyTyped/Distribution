@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zipkin-transport-http"
-version := "0.11-dt-20181114Z-e1094c"
+version := "0.11-dt-20190225Z-e1094c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

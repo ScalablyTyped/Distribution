@@ -21,31 +21,39 @@ trait StepComponent
   @JSName("Title")
   var Title_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps] = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsStepStepContentMod.StepContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsStepStepDescriptionMod.StepDescriptionProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsStepStepGroupMod.StepGroupProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Title(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Title(
-    props: semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsStepStepTitleMod.StepTitleProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

@@ -10,6 +10,7 @@ import scala.scalajs.js.annotation._
 class Stave protected () extends js.Object {
   def this(x: scala.Double, y: scala.Double, width: scala.Double) = this()
   def this(x: scala.Double, y: scala.Double, width: scala.Double, options: vexflowLib.Anon_Fillstyle) = this()
+  var options: vexflowLib.Anon_FillstyleGlyphspacingpx = js.native
   def addClef(clef: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String): Stave = js.native
   def addClef(clef: java.lang.String, size: java.lang.String, annotation: java.lang.String): Stave = js.native
@@ -44,6 +45,9 @@ class Stave protected () extends js.Object {
   def getContext(): vexflowLib.VexNs.IRenderContext = js.native
   def getHeight(): scala.Double = js.native
   def getModifierXShift(index: scala.Double): scala.Double = js.native
+  def getModifiers(): js.Array[StaveModifier] = js.native
+  def getModifiers(position: scala.Double): js.Array[StaveModifier] = js.native
+  def getModifiers(position: scala.Double, category: java.lang.String): js.Array[StaveModifier] = js.native
   def getNoteEndX(): scala.Double = js.native
   def getNoteStartX(): scala.Double = js.native
   def getNumLines(): scala.Double = js.native

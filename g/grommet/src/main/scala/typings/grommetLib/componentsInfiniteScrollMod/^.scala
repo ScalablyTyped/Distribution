@@ -8,6 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/InfiniteScroll", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val InfiniteScroll: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps] = js.native
+  val InfiniteScroll: reactLib.reactMod.ReactNs.ComponentClass[
+    grommetLib.componentsInfiniteScrollMod.InfiniteScrollProps, 
+    reactLib.reactMod.ReactNs.ComponentState
+  ] = js.native
 }
 

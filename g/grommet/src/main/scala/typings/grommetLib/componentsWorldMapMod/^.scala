@@ -8,8 +8,9 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/WorldMap", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val WorldMap: reactLib.reactMod.ReactNs.ComponentType[
-    grommetLib.componentsWorldMapMod.WorldMapProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement]
+  val WorldMap: reactLib.reactMod.ReactNs.ComponentClass[
+    grommetLib.componentsWorldMapMod.WorldMapProps with reactLib.reactMod.ReactNs.SVGProps[reactLib.SVGSVGElement], 
+    reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }
 

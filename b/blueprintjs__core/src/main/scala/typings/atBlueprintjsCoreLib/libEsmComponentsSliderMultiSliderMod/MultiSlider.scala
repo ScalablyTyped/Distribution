@@ -54,10 +54,10 @@ object MultiSlider extends js.Object {
   var defaultSliderProps: atBlueprintjsCoreLib.libEsmComponentsSliderMultiSliderMod.ISliderBaseProps = js.native
   var displayName: java.lang.String = js.native
   def Handle(
-    props: atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Handle(
-    props: atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[atBlueprintjsCoreLib.libEsmComponentsSliderHandlePropsMod.IHandleProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

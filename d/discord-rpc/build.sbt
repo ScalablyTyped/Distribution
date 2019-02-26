@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "discord-rpc"
-version := "3.0-dt-20181117Z-5f671d"
+version := "3.0-dt-20190222Z-e266bb"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

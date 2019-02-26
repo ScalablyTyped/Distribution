@@ -25,24 +25,36 @@ trait ModalComponent
     semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps
   ] = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalContentMod.ModalContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalContentMod.ModalContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalContentMod.ModalContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalContentMod.ModalContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalDescriptionMod.ModalDescriptionProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesModalModalHeaderMod.ModalHeaderProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

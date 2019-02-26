@@ -19,6 +19,7 @@
 //                 Emmanuel Gautier <https://github.com/emmanuelgautier>
 //                 Frontend Monster <https://github.com/frontendmonster>
 //                 Ming Chen <https://github.com/mingchen>
+//                 Olga Isakova <https://github.com/penumbra1>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.3
 ```

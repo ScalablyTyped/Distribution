@@ -18,7 +18,7 @@ import scala.scalajs.js.annotation._
   /**
     * Content to render when image is loading
     */
-  var PlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ComponentType[_]] = js.undefined
+  var PlaceholderContent: js.UndefOr[reactLib.reactMod.ReactNs.ReactElement[_]] = js.undefined
   /**
     * Additional styling for the container
     */

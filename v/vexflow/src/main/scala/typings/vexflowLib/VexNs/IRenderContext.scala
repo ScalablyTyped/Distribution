@@ -19,7 +19,7 @@ trait IRenderContext extends js.Object {
     antiClockwise: scala.Boolean
   ): IRenderContext = js.native
   def beginPath(): IRenderContext = js.native
-  def bezierCurveToTo(
+  def bezierCurveTo(
     x1: scala.Double,
     y1: scala.Double,
     x2: scala.Double,
@@ -40,7 +40,7 @@ trait IRenderContext extends js.Object {
     */
   def measureText(text: java.lang.String): vexflowLib.Anon_Width = js.native
   def moveTo(x: scala.Double, y: scala.Double): IRenderContext = js.native
-  def quadraticCurveToTo(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): IRenderContext = js.native
+  def quadraticCurveTo(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): IRenderContext = js.native
   def resize(width: scala.Double, height: scala.Double): IRenderContext = js.native
   def restore(): IRenderContext = js.native
   def save(): IRenderContext = js.native

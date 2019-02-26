@@ -219,8 +219,8 @@ object ^ extends js.Object {
   def memo[P /* <: js.Object */](
     Component: reactLib.reactMod.ReactNs.SFC[P],
     propsAreEqual: js.Function2[
-      /* prevProps */ stdLib.Readonly[P with reactLib.Anon_Children], 
-      /* nextProps */ stdLib.Readonly[P with reactLib.Anon_Children], 
+      /* prevProps */ stdLib.Readonly[reactLib.reactMod.ReactNs.PropsWithChildren[P]], 
+      /* nextProps */ stdLib.Readonly[reactLib.reactMod.ReactNs.PropsWithChildren[P]], 
       scala.Boolean
     ]
   ): reactLib.reactMod.ReactNs.NamedExoticComponent[P] = js.native

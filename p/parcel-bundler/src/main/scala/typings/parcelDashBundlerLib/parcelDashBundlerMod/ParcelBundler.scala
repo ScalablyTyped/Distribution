@@ -9,5 +9,11 @@ trait ParcelBundler extends js.Object {
   def addAssetType(extension: java.lang.String, path: java.lang.String): scala.Unit
   def addPackager(`type`: java.lang.String, packager: java.lang.String): scala.Unit
   def bundle(): js.Promise[parcelDashBundlerLib.parcelDashBundlerMod.ParcelBundlerNs.ParcelBundle]
+  def middleware(): js.Function3[
+    /* req */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Request, 
+    /* res */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.Response, 
+    /* next */ expressDashServeDashStaticDashCoreLib.expressDashServeDashStaticDashCoreMod.NextFunction, 
+    _
+  ]
 }
 

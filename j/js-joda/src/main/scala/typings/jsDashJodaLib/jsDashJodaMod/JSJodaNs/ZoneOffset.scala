@@ -10,7 +10,6 @@ trait ZoneOffset extends ZoneId {
   def compareTo(other: ZoneOffset): scala.Double
   def get(field: TemporalField): scala.Double
   def getLong(field: TemporalField): scala.Double
-  def id(): java.lang.String
   def query(query: TemporalQuery): js.Any
   def totalSeconds(): scala.Double
 }

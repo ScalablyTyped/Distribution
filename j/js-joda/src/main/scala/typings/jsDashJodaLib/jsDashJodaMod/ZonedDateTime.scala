@@ -75,6 +75,10 @@ object ZonedDateTime extends js.Object {
   ): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime = js.native
   def ofLocal(
     localDateTime: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDateTime,
+    zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId
+  ): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime = js.native
+  def ofLocal(
+    localDateTime: jsDashJodaLib.jsDashJodaMod.JSJodaNs.LocalDateTime,
     zone: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneId,
     preferredOffset: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZoneOffset
   ): jsDashJodaLib.jsDashJodaMod.JSJodaNs.ZonedDateTime = js.native

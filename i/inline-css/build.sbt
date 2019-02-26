@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "inline-css"
-version := "0.0-unknown-dt-20180712Z-faeb0d"
+version := "0.0-unknown-dt-20180712Z-b85287"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190221Z-f01776",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-04358d",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

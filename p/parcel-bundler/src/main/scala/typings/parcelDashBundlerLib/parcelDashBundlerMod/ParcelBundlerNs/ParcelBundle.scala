@@ -9,7 +9,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Set of all assets inside the bundle
     */
-  var assets: stdLib.Set[_]
+  var assets: nodeLib.Set[_]
   /**
     * The entryPoint of the bundle, used for generating the name and gathering assets.
     */
@@ -29,7 +29,7 @@ trait ParcelBundle extends js.Object {
   /**
     * A Set of all sibling bundles
     */
-  var siblingBundles: stdLib.Set[_]
+  var siblingBundles: nodeLib.Set[_]
   /**
     * A Map<String(Type: js, css, map, ...), Bundle> of all sibling bundles
     */

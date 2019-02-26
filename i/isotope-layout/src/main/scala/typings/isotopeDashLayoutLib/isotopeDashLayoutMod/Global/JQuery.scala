@@ -13,6 +13,10 @@ trait JQuery extends js.Object {
   @JSName("data")
   def data_isotope(methodName: isotopeDashLayoutLib.isotopeDashLayoutLibStrings.isotope): isotopeDashLayoutLib.isotopeDashLayoutMod.Isotope = js.native
   /**
+    * Filters, sorts, and lays out items.
+    */
+  def isotope(): JQuery = js.native
+  /**
     * Filters, sorts, and lays out items. Pass in options to apply filtering and sorting.
     * @param options All options are optional, but itemSelector is recommended. Layout modes have their own separate options.
     */

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "redbox-react"
-version := "1.6.0-046c72"
+version := "1.6.0-4cb52c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,8 +11,8 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "object-assign" % "4.0.1-dt-20180214Z-af576a",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-4334cf",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-bd2972",
   "org.scalablytyped" %%% "stackframe" % "1.0.4-bb0ef2",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false

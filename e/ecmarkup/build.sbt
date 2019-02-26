@@ -1,13 +1,13 @@
 organization := "org.scalablytyped"
 name := "ecmarkup"
-version := "3.16.0-da2936"
+version := "3.16.0-496e1e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "ansi-styles" % "3.2.1-dt-20181017Z-a737ef",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190221Z-f01776",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-04358d",
   "org.scalablytyped" %%% "chalk" % "2.4.2-413387",
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",

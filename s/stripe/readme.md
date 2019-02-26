@@ -17,6 +17,7 @@
 //                 Simon Schick <https://github.com/SimonSchick>
 //                 Slava Yultyyev <https://github.com/yultyyev>
 //                 Corey Psoinos <https://github.com/cpsoinos>
+//                 Saransh Kataria <https://github.com/saranshkataria>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

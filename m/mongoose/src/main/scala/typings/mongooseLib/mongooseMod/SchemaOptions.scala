@@ -30,6 +30,12 @@ trait SchemaOptions extends js.Object {
   var read: js.UndefOr[java.lang.String] = js.undefined
   /** defaults to true. */
   var safe: js.UndefOr[scala.Boolean | mongooseLib.Anon_J] = js.undefined
+  /**
+    * By default, Mongoose will automatically 
+    * select() any populated paths. 
+    * To opt out, set selectPopulatedPaths to false.
+    */
+  var selectPopulatedPaths: js.UndefOr[scala.Boolean] = js.undefined
   /** defaults to null */
   var shardKey: js.UndefOr[scala.Boolean] = js.undefined
   /**
@@ -38,6 +44,13 @@ trait SchemaOptions extends js.Object {
     * incremented even if these paths are updated).
     */
   var skipVersioning: js.UndefOr[js.Any] = js.undefined
+  /**
+    * Validation errors in a single nested schema are reported
+    * both on the child and on the parent schema.
+    * Set storeSubdocValidationError to false on the child schema 
+    * to make Mongoose only report the parent error.
+    */
+  var storeSubdocValidationError: js.UndefOr[scala.Boolean] = js.undefined
   /** defaults to true */
   var strict: js.UndefOr[scala.Boolean | mongooseLib.mongooseLibStrings.`throw`] = js.undefined
   /**

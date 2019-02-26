@@ -1,0 +1,3 @@
+```
+// event-lite.d.ts
+```

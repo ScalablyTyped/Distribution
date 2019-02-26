@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "storm-react-diagrams"
-version := "5.2.1-af4028"
+version := "5.2.1-438d35"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "lodash" % "4.14-dt-20190212Z-cf3a73",
   "org.scalablytyped" %%% "pathfinding" % "0.0-unknown-dt-20180214Z-6cee0c",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

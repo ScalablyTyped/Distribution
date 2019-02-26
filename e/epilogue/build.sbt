@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "epilogue"
-version := "0.7-dt-20180712Z-c9e6f7"
+version := "0.7-dt-20180712Z-14fea8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190221Z-f01776",
+  "org.scalablytyped" %%% "bluebird" % "3.5-dt-20190225Z-04358d",
   "org.scalablytyped" %%% "body-parser" % "1.17-dt-20180425Z-2b9c7c",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-71aaa7",
   "org.scalablytyped" %%% "continuation-local-storage" % "3.2-dt-20181219Z-863f0d",
@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "mime" % "2.0-dt-20190205Z-54d3f4",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190218Z-ae44f5",
+  "org.scalablytyped" %%% "sequelize" % "4.27.11-dt-20190221Z-a57d21",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-1b6eaf",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "validator" % "v10.9.0-dt-20181214Z-93e6e9")

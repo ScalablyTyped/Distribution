@@ -391,6 +391,9 @@ object CostExplorerNs extends js.Object {
       * You can group the data by the following attributes:   AZ   CACHE_ENGINE   DATABASE_ENGINE   DEPLOYMENT_OPTION   INSTANCE_TYPE   LINKED_ACCOUNT   OPERATING_SYSTEM   PLATFORM   REGION   TENANCY  
       */
     var GroupBy: js.UndefOr[GroupDefinitions] = js.undefined
+    /**
+      * The measurement that you want your reservation coverage reported in. Valid values are Hour, Unit, and Cost. You can use multiple values in a request.
+      */
     var Metrics: js.UndefOr[MetricNames] = js.undefined
     /**
       * The token to retrieve the next set of results. AWS provides the token when the response from a previous call has more results than the maximum page size.
@@ -770,6 +773,9 @@ object CostExplorerNs extends js.Object {
   }
   
   trait ReservationPurchaseRecommendationDetail extends js.Object {
+    /**
+      * The account that this RI recommendation is for.
+      */
     var AccountId: js.UndefOr[GenericString] = js.undefined
     /**
       * The average number of normalized units that you used in an hour during the historical period. AWS uses this to calculate your recommended reservation purchases.

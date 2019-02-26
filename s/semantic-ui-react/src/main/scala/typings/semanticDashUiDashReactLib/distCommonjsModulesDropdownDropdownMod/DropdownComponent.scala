@@ -29,10 +29,14 @@ trait DropdownComponent
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   def Menu(
-    props: semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Menu(
-    props: semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesDropdownDropdownMenuMod.DropdownMenuProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

@@ -32,6 +32,7 @@ trait DrawerItemsProps extends js.Object {
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.TextStyle]
   ] = js.undefined
   var navigation: NavigationScreenProp[DrawerNavigationState, NavigationParams]
+  var screenProps: js.UndefOr[js.Any] = js.undefined
   def getLabel(scene: DrawerScene): reactLib.reactMod.ReactNs.ReactNode | java.lang.String
   def onItemPress(info: DrawerItem): scala.Unit
   def renderIcon(scene: DrawerScene): reactLib.reactMod.ReactNs.ReactNode

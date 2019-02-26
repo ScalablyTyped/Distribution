@@ -109,6 +109,7 @@ object FlowNs extends js.Object {
   @js.native
   class FretHandFinger protected ()
     extends vexflowLib.VexNs.FlowNs.FretHandFinger {
+    def this(number: java.lang.String) = this()
     def this(number: scala.Double) = this()
   }
   
@@ -261,7 +262,7 @@ object FlowNs extends js.Object {
   @js.native
   class StaveTempo protected ()
     extends vexflowLib.VexNs.FlowNs.StaveTempo {
-    def this(tempo: vexflowLib.Anon_Bpm, x: scala.Double, shift_y: scala.Double) = this()
+    def this(tempo: vexflowLib.Anon_BpmDots, x: scala.Double, shift_y: scala.Double) = this()
   }
   
   @js.native
@@ -308,12 +309,16 @@ object FlowNs extends js.Object {
   @js.native
   class StringNumber protected ()
     extends vexflowLib.VexNs.FlowNs.StringNumber {
+    def this(number: java.lang.String) = this()
+    // actually this is not really consistent in the vexflow code "ctx.measureText(this.string_number).width" looks
+    // like it is a string. But from the use of it it might be a number ?!
     def this(number: scala.Double) = this()
   }
   
   @js.native
   class Stroke protected ()
     extends vexflowLib.VexNs.FlowNs.Stroke {
+    def this(`type`: vexflowLib.VexNs.FlowNs.StrokeNs.Type) = this()
     def this(`type`: vexflowLib.VexNs.FlowNs.StrokeNs.Type, options: vexflowLib.Anon_Allvoices) = this()
   }
   
@@ -396,7 +401,7 @@ object FlowNs extends js.Object {
   class Tuplet protected ()
     extends vexflowLib.VexNs.FlowNs.Tuplet {
     def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote]) = this()
-    def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], options: vexflowLib.Anon_Beatsoccupied) = this()
+    def this(notes: js.Array[vexflowLib.VexNs.FlowNs.StaveNote], options: vexflowLib.Anon_Bracketed) = this()
   }
   
   @js.native
@@ -419,6 +424,7 @@ object FlowNs extends js.Object {
     def this(`type`: vexflowLib.VexNs.FlowNs.VoltaNs.`type`, number: scala.Double, x: scala.Double, y_shift: scala.Double) = this()
   }
   
+  val DEFAULT_NOTATION_FONT_SCALE: scala.Double = js.native
   // from vexflow_font.js / gonville_original.js / gonville_all.js
   var Font: vexflowLib.Anon_Ascender = js.native
   val RESOLUTION: scala.Double = js.native
@@ -721,6 +727,12 @@ object FlowNs extends js.Object {
   
   /* static members */
   @js.native
+  object GraceNote extends js.Object {
+    var LEDGER_LINE_OFFSET: scala.Double = js.native
+  }
+  
+  /* static members */
+  @js.native
   object GraceNoteGroup extends js.Object {
      //inconsistent name: 'show_slur' is called 'config', suggesting object (is boolean)
     var DEBUG: scala.Boolean = js.native
@@ -734,6 +746,12 @@ object FlowNs extends js.Object {
   @js.native
   object GraceNoteGroupNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
+  }
+  
+  @JSName("GraceNote")
+  @js.native
+  object GraceNoteNs extends js.Object {
+    val SCALE: scala.Double = js.native
   }
   
   /* static members */
@@ -1134,6 +1152,7 @@ object FlowNs extends js.Object {
     val CATEGORY: java.lang.String = js.native
     @js.native
     object Type extends js.Object {
+      val ARPEGGIO_DIRECTIONLESS: vexflowLib.VexNs.FlowNs.StrokeNs.Type.ARPEGGIO_DIRECTIONLESS with scala.Double = js.native
       /* 1 */ val BRUSH_DOWN: vexflowLib.VexNs.FlowNs.StrokeNs.Type.BRUSH_DOWN with scala.Double = js.native
       val BRUSH_UP: vexflowLib.VexNs.FlowNs.StrokeNs.Type.BRUSH_UP with scala.Double = js.native
       val RASQUEDO_DOWN: vexflowLib.VexNs.FlowNs.StrokeNs.Type.RASQUEDO_DOWN with scala.Double = js.native

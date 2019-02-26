@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "connect-datadog"
-version := "0.0-dt-20181004Z-d2eca6"
+version := "0.0-dt-20190225Z-d2eca6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

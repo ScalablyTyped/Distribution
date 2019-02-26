@@ -1,0 +1,23 @@
+package typings
+package ddDashTraceLib
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+trait Anon_Req extends js.Object {
+  /**
+    * Hook to execute just before the request span finishes.
+    */
+  var request: js.UndefOr[
+    js.Function3[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ /* span */ js.UndefOr[
+        /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify opentracing.Span */ js.Any
+      ], 
+      /* req */ js.UndefOr[nodeLib.httpMod.IncomingMessage], 
+      /* res */ js.UndefOr[nodeLib.httpMod.ServerResponse], 
+      _
+    ]
+  ] = js.undefined
+}
+

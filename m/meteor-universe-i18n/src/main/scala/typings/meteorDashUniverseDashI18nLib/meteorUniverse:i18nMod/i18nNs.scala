@@ -127,6 +127,7 @@ object i18nNs extends js.Object {
     locale: java.lang.String,
     params: meteorDashUniverseDashI18nLib.`meteorUniverse:i18nMod`.LoadLocaleParams
   ): scala.Unit = js.native
+  def offChangeLocale(callback: js.Function1[/* locale */ java.lang.String, scala.Unit]): scala.Unit = js.native
   // events
   def onChangeLocale(callback: js.Function1[/* locale */ java.lang.String, scala.Unit]): scala.Unit = js.native
   // number operations

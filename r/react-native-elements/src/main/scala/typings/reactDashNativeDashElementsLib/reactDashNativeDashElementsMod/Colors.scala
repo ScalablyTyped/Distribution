@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait Colors extends js.Object {
   val disabled: java.lang.String
+  val divider: java.lang.String
   val error: java.lang.String
   val grey0: java.lang.String
   val grey1: java.lang.String

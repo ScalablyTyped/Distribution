@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class Note protected () extends Tickable {
   def this(note_struct: vexflowLib.Anon_DotsDurationType) = this()
+  var preFormatted: scala.Boolean = js.native
   def addModifier(modifier: Modifier, index: scala.Double): Note = js.native
   /* CompleteClass */
   override def addModifier(mod: Modifier): Tickable = js.native

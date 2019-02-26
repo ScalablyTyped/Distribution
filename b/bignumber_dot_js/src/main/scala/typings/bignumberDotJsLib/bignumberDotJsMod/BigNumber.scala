@@ -7,7 +7,8 @@ import scala.scalajs.js.annotation._
 
 @JSImport("bignumber.js", "BigNumber")
 @js.native
-class BigNumber protected () extends js.Object {
+class BigNumber protected ()
+  extends bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Instance {
   /**
     * Returns a new instance of a BigNumber object with value `n`, where `n` is a numeric value in
     * the specified `base`, or base 10 if `base` is omitted or is `null` or `undefined`.
@@ -106,22 +107,17 @@ class BigNumber protected () extends js.Object {
     */
   def this(n: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Value) = this()
   def this(n: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Value, base: scala.Double) = this()
-  /**
-    * Used internally to identify a BigNumber instance.
-    */
+  /** Used internally to identify a BigNumber instance. */
   val _isBigNumber: bignumberDotJsLib.bignumberDotJsLibNumbers.`true` = js.native
-  /**
-    * The coefficient of the value of this BigNumber, an array of base 1e14 integer numbers, or null.
-    */
-  val c: js.Array[scala.Double] | scala.Null = js.native
-  /**
-    * The exponent of the value of this BigNumber, an integer number, -1000000000 to 1000000000, or null.
-    */
-  val e: scala.Double | scala.Null = js.native
-  /**
-    * The sign of the value of this BigNumber, -1, 1, or null.
-    */
-  val s: scala.Double | scala.Null = js.native
+  /** The coefficient of the value of this BigNumber, an array of base 1e14 integer numbers, or null. */
+  /* CompleteClass */
+  override val c: js.Array[scala.Double] | scala.Null = js.native
+  /** The exponent of the value of this BigNumber, an integer number, -1000000000 to 1000000000, or null. */
+  /* CompleteClass */
+  override val e: scala.Double | scala.Null = js.native
+  /** The sign of the value of this BigNumber, -1, 1, or null. */
+  /* CompleteClass */
+  override val s: scala.Double | scala.Null = js.native
   /**
     * Returns a BigNumber whose value is the absolute value, i.e. the magnitude, of the value of this
     * BigNumber.
@@ -1104,9 +1100,7 @@ class BigNumber protected () extends js.Object {
     */
   def toFraction(): js.Tuple2[BigNumber, BigNumber] = js.native
   def toFraction(max_denominator: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Value): js.Tuple2[BigNumber, BigNumber] = js.native
-  /**
-    * As `valueOf`.
-    */
+  /** As `valueOf`. */
   def toJSON(): java.lang.String = js.native
   /**
     * Returns the value of this BigNumber as a JavaScript primitive number.
@@ -1170,9 +1164,7 @@ class BigNumber protected () extends js.Object {
 @JSImport("bignumber.js", "BigNumber")
 @js.native
 object BigNumber extends js.Object {
-  /**
-    * Helps ES6 import.
-    */
+  /** Helps ES6 import. */
   val BigNumber: js.UndefOr[bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Constructor] = js.native
   /**
     * To aid in debugging, if a `BigNumber.DEBUG` property is `true` then an error will be thrown
@@ -1217,49 +1209,27 @@ object BigNumber extends js.Object {
     * ```
     */
   var DEBUG: js.UndefOr[scala.Boolean] = js.native
-  /**
-    * See `MODULO_MODE`.
-    */
+  /** See `MODULO_MODE`. */
   val EUCLID: bignumberDotJsLib.bignumberDotJsLibNumbers.`9` = js.native
-  /**
-    * Rounds towards Infinity.
-    */
+  /** Rounds towards Infinity. */
   val ROUND_CEIL: bignumberDotJsLib.bignumberDotJsLibNumbers.`2` = js.native
-  /**
-    * Rounds towards zero.
-    */
+  /** Rounds towards zero. */
   val ROUND_DOWN: bignumberDotJsLib.bignumberDotJsLibNumbers.`1` = js.native
-  /**
-    * Rounds towards -Infinity.
-    */
+  /** Rounds towards -Infinity. */
   val ROUND_FLOOR: bignumberDotJsLib.bignumberDotJsLibNumbers.`3` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards Infinity.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards Infinity. */
   val ROUND_HALF_CEIL: bignumberDotJsLib.bignumberDotJsLibNumbers.`7` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards zero.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards zero. */
   val ROUND_HALF_DOWN: bignumberDotJsLib.bignumberDotJsLibNumbers.`5` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards even neighbour.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards even neighbour. */
   val ROUND_HALF_EVEN: bignumberDotJsLib.bignumberDotJsLibNumbers.`6` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards -Infinity.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards -Infinity. */
   val ROUND_HALF_FLOOR: bignumberDotJsLib.bignumberDotJsLibNumbers.`8` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds away from zero .
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds away from zero . */
   val ROUND_HALF_UP: bignumberDotJsLib.bignumberDotJsLibNumbers.`4` = js.native
-  /**
-    * Rounds away from zero.
-    */
+  /** Rounds away from zero. */
   val ROUND_UP: bignumberDotJsLib.bignumberDotJsLibNumbers.`0` = js.native
-  /**
-    * Helps ES6 import.
-    */
+  /** Helps ES6 import. */
   val default: js.UndefOr[bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Constructor] = js.native
   def clone(`object`: bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Config): bignumberDotJsLib.bignumberDotJsMod.BigNumberNs.Constructor = js.native
   /**

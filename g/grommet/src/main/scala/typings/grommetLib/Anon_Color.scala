@@ -14,5 +14,11 @@ trait Anon_Color extends js.Object {
     grommetLib.grommetLibStrings.weak | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.strong | scala.Boolean
   ] = js.undefined
   var position: js.UndefOr[java.lang.String] = js.undefined
+  var repeat: js.UndefOr[
+    grommetLib.grommetLibStrings.`no-repeat` | grommetLib.grommetLibStrings.repeat | java.lang.String
+  ] = js.undefined
+  var size: js.UndefOr[
+    grommetLib.grommetLibStrings.cover | grommetLib.grommetLibStrings.contain | java.lang.String
+  ] = js.undefined
 }
 

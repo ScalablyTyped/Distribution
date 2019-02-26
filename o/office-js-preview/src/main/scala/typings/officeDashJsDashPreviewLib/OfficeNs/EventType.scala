@@ -170,6 +170,15 @@ object EventType extends js.Object {
     extends officeDashJsDashPreviewLib.OfficeNs.EventType
   
   /**
+    * Triggers when the appointment location is changed in Outlook.
+    * 
+    * [Api set: Mailbox Preview]
+    */
+  @js.native
+  sealed trait EnhancedLocationsChanged
+    extends officeDashJsDashPreviewLib.OfficeNs.EventType
+  
+  /**
     * Triggers when a different Outlook item is selected for viewing while the task pane is pinned.
     * 
     * [Api set: Mailbox 1.5]
@@ -281,6 +290,7 @@ object EventType extends js.Object {
   val DialogEventReceived: DialogEventReceived with java.lang.String = js.native
   val DialogMessageReceived: DialogMessageReceived with java.lang.String = js.native
   val DocumentSelectionChanged: DocumentSelectionChanged with java.lang.String = js.native
+  val EnhancedLocationsChanged: EnhancedLocationsChanged with java.lang.String = js.native
   val ItemChanged: ItemChanged with java.lang.String = js.native
   val NodeDeleted: NodeDeleted with java.lang.String = js.native
   val NodeInserted: NodeInserted with java.lang.String = js.native

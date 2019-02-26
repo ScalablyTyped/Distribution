@@ -1,0 +1,66 @@
+package typings
+package ddDashTraceLib.ddDashTraceMod.pluginsNs
+
+import scala.scalajs.js
+import scala.scalajs.js.`|`
+import scala.scalajs.js.annotation._
+
+/**
+  * This plugin automatically instruments the
+  * [graphql](https://github.com/graphql/graphql-js) module.
+  *
+  * The `graphql` integration uses the operation name as the span resource name.
+  * If no operation name is set, the resource name will always be just `query`,
+  * `mutation` or `subscription`.
+  *
+  * For example:
+  *
+  * ```graphql
+  * # good, the resource name will be `query HelloWorld`
+  * query HelloWorld {
+  *   hello
+  *   world
+  * }
+  *
+  * # bad, the resource name will be `query`
+  * {
+  *   hello
+  *   world
+  * }
+  * ```
+  */
+trait graphql extends Integration {
+  /**
+    * Whether to collapse list items into a single element. (i.e. single
+    * `users.*.name` span instead of `users.0.name`, `users.1.name`, etc)
+    *
+    * @default true
+    */
+  var collapse: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * The maximum depth of fields/resolvers to instrument. Set to `0` to only
+    * instrument the operation or to `-1` to instrument all fields/resolvers.
+    *
+    * @default -1
+    */
+  var depth: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * Whether to enable signature calculation for the resource name. This can
+    * be disabled if your GraphQL operations always have a name.
+    *
+    * @default true
+    */
+  var signature: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * A callback to enable recording of variables. By default, no variables are
+    * recorded. For example, using `variables => variables` would record all
+    * variables.
+    */
+  var variables: js.UndefOr[
+    js.Function1[
+      /* variables */ org.scalablytyped.runtime.StringDictionary[js.Any], 
+      org.scalablytyped.runtime.StringDictionary[_]
+    ]
+  ] = js.undefined
+}
+

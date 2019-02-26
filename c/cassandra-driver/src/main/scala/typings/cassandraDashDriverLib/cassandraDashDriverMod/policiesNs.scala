@@ -106,8 +106,9 @@ object policiesNs extends js.Object {
   @js.native
   object retryNs extends js.Object {
     trait DecisionInfo extends js.Object {
-      var consistency: scala.Double
+      var consistency: js.UndefOr[scala.Double] = js.undefined
       var decision: scala.Double
+      var useCurrentHost: js.UndefOr[scala.Boolean] = js.undefined
     }
     
     trait RequestInfo extends js.Object {
@@ -137,13 +138,13 @@ object policiesNs extends js.Object {
         blockFor: scala.Double,
         writeType: java.lang.String
       ): DecisionInfo = js.native
-      def rethrowResult(): cassandraDashDriverLib.Anon_Decision = js.native
-      def retryResult(): cassandraDashDriverLib.Anon_Consistency = js.native
-      def retryResult(consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies): cassandraDashDriverLib.Anon_Consistency = js.native
+      def rethrowResult(): DecisionInfo = js.native
+      def retryResult(): DecisionInfo = js.native
+      def retryResult(consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies): DecisionInfo = js.native
       def retryResult(
         consistency: cassandraDashDriverLib.cassandraDashDriverMod.typesNs.consistencies,
         useCurrentHost: scala.Boolean
-      ): cassandraDashDriverLib.Anon_Consistency = js.native
+      ): DecisionInfo = js.native
     }
     
     @js.native

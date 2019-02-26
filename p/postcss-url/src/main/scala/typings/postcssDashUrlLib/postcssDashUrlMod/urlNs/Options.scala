@@ -48,6 +48,12 @@ trait Options extends js.Object {
     */
   var maxSize: js.UndefOr[scala.Double] = js.undefined
   /**
+    * Reduce size of inlined svg (IE9+, Android 3+)
+    *
+    * @default false
+    */
+  var optimizeSvgEncode: js.UndefOr[scala.Boolean] = js.undefined
+  /**
     * URL rewriting mechanism.
     *
     * @default 'rebase'

@@ -11,3 +11,10 @@ class GraceNote protected () extends StaveNote {
   def this(note_struct: vexflowLib.Anon_Autostem) = this()
 }
 
+/* static members */
+@JSGlobal("Vex.Flow.GraceNote")
+@js.native
+object GraceNote extends js.Object {
+  var LEDGER_LINE_OFFSET: scala.Double = js.native
+}
+

@@ -8,8 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("react-click-outside", JSImport.Namespace)
 @js.native
 object reactDashClickDashOutsideMod extends js.Object {
-  def apply[P](
-    wrappedComponent: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState]
-  ): reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState] = js.native
+  def apply[C /* <: reactLib.reactMod.ReactNs.ComponentClass[_, reactLib.reactMod.ReactNs.ComponentState] */](wrappedComponent: C): C = js.native
 }
 

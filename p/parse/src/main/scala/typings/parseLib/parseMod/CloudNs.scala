@@ -24,62 +24,60 @@ object CloudNs extends js.Object {
   def afterDelete(arg1: js.Any): scala.Unit = js.native
   def afterDelete(
     arg1: js.Any,
-    func: js.Function1[/* request */ parseLib.ParseNs.CloudNs.AfterDeleteRequest, scala.Unit]
+    func: js.Function1[
+      /* request */ parseLib.ParseNs.CloudNs.AfterDeleteRequest, 
+      js.Promise[scala.Unit] | scala.Unit
+    ]
   ): scala.Unit = js.native
   def afterFind(arg1: js.Any): scala.Unit = js.native
   def afterFind(
     arg1: js.Any,
-    func: js.Function2[
-      /* request */ parseLib.ParseNs.CloudNs.AfterFindRequest, 
-      /* response */ parseLib.ParseNs.CloudNs.AfterFindResponse, 
-      scala.Unit
-    ]
+    func: js.Function1[/* request */ parseLib.ParseNs.CloudNs.AfterFindRequest, js.Promise[_] | _]
   ): scala.Unit = js.native
   def afterSave(arg1: js.Any): scala.Unit = js.native
   def afterSave(
     arg1: js.Any,
-    func: js.Function1[/* request */ parseLib.ParseNs.CloudNs.AfterSaveRequest, scala.Unit]
+    func: js.Function1[
+      /* request */ parseLib.ParseNs.CloudNs.AfterSaveRequest, 
+      js.Promise[scala.Unit] | scala.Unit
+    ]
   ): scala.Unit = js.native
   def beforeDelete(arg1: js.Any): scala.Unit = js.native
   def beforeDelete(
     arg1: js.Any,
-    func: js.Function2[
+    func: js.Function1[
       /* request */ parseLib.ParseNs.CloudNs.BeforeDeleteRequest, 
-      /* response */ parseLib.ParseNs.CloudNs.BeforeDeleteResponse, 
-      scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ): scala.Unit = js.native
   def beforeFind(arg1: js.Any): scala.Unit = js.native
   def beforeFind(
     arg1: js.Any,
-    func: js.Function1[/* request */ parseLib.ParseNs.CloudNs.BeforeFindRequest, scala.Unit]
+    func: js.Function1[
+      /* request */ parseLib.ParseNs.CloudNs.BeforeFindRequest, 
+      js.Promise[scala.Unit] | js.Promise[parseLib.ParseNs.Query[parseLib.ParseNs.Object]] | parseLib.ParseNs.Query[parseLib.ParseNs.Object] | scala.Unit
+    ]
   ): scala.Unit = js.native
   def beforeSave(arg1: js.Any): scala.Unit = js.native
   def beforeSave(
     arg1: js.Any,
-    func: js.Function2[
+    func: js.Function1[
       /* request */ parseLib.ParseNs.CloudNs.BeforeSaveRequest, 
-      /* response */ parseLib.ParseNs.CloudNs.BeforeSaveResponse, 
-      scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ): scala.Unit = js.native
   def define(name: java.lang.String): scala.Unit = js.native
   def define(
     name: java.lang.String,
-    func: js.Function2[
-      /* request */ parseLib.ParseNs.CloudNs.FunctionRequest, 
-      /* response */ parseLib.ParseNs.CloudNs.FunctionResponse, 
-      scala.Unit
-    ]
+    func: js.Function1[/* request */ parseLib.ParseNs.CloudNs.FunctionRequest, js.Promise[_] | _]
   ): scala.Unit = js.native
   def httpRequest(options: parseLib.ParseNs.CloudNs.HTTPOptions): js.Promise[parseLib.ParseNs.CloudNs.HttpResponse] = js.native
   def job(name: java.lang.String): parseLib.ParseNs.CloudNs.HttpResponse = js.native
   def job(
     name: java.lang.String,
-    func: js.Function2[
+    func: js.Function1[
       /* request */ parseLib.ParseNs.CloudNs.JobRequest, 
-      /* status */ parseLib.ParseNs.CloudNs.JobStatus, 
-      scala.Unit
+      js.Promise[scala.Unit] | scala.Unit
     ]
   ): parseLib.ParseNs.CloudNs.HttpResponse = js.native
   def run(name: java.lang.String): js.Promise[_] = js.native

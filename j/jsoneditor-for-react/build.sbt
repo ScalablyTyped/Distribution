@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "jsoneditor-for-react"
-version := "0.0-dt-20180803Z-2741fa"
+version := "0.0-dt-20180803Z-1c59f9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -14,7 +14,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jsoneditor" % "v5.28.2-dt-20190215Z-d9b35f",
   "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
   "org.scalablytyped" %%% "punycode" % "2.1-dt-20181205Z-0009b8",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "uri-js" % "4.2.2-194416")
 publishArtifact in packageDoc := false

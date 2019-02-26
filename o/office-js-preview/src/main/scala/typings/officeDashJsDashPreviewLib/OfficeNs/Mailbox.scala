@@ -112,7 +112,8 @@ trait Mailbox extends js.Object {
   /**
     * Adds an event handler for a supported event.
     *
-    * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
+    * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+    * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
     *
     * [Api set: Mailbox 1.5]
     *
@@ -542,7 +543,8 @@ trait Mailbox extends js.Object {
   /**
     * Removes the event handlers for a supported event type.
     *
-    * Currently, the only supported event type is `Office.EventType.ItemChanged`. In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
+    * Currently, the only supported event type is `Office.EventType.ItemChanged`.
+    * In Preview, `Office.EventType.OfficeThemeChanged` is also supported.
     *
     * [Api set: Mailbox 1.5]
     *

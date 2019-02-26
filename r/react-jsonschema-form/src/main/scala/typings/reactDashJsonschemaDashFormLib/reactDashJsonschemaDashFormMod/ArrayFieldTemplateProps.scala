@@ -23,13 +23,18 @@ trait ArrayFieldTemplateProps extends js.Object {
   var schema: jsonDashSchemaLib.jsonDashSchemaMod.JSONSchema6 = js.native
   var title: java.lang.String = js.native
   var uiSchema: UiSchema = js.native
-  def DescriptionField(props: reactDashJsonschemaDashFormLib.Anon_Description with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def DescriptionField(
-    props: reactDashJsonschemaDashFormLib.Anon_Description with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[reactDashJsonschemaDashFormLib.Anon_Description]
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def DescriptionField(
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[reactDashJsonschemaDashFormLib.Anon_Description],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def TitleField(props: reactDashJsonschemaDashFormLib.Anon_Id with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def TitleField(props: reactDashJsonschemaDashFormLib.Anon_Id with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def TitleField(props: reactLib.reactMod.ReactNs.PropsWithChildren[reactDashJsonschemaDashFormLib.Anon_Id]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def TitleField(
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[reactDashJsonschemaDashFormLib.Anon_Id],
+    context: js.Any
+  ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def onAddClick(event: js.Any): js.Function1[/* event */ js.Any, scala.Unit] = js.native
 }
 

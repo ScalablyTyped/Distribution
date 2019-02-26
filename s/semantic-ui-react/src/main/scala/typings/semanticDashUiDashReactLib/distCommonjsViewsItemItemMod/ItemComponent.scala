@@ -27,45 +27,49 @@ trait ItemComponent
   @JSName("Meta")
   var Meta_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps] = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Description(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsItemItemDescriptionMod.ItemDescriptionProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Extra(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemExtraMod.ItemExtraProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemExtraMod.ItemExtraProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Extra(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemExtraMod.ItemExtraProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemExtraMod.ItemExtraProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemGroupMod.ItemGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemGroupMod.ItemGroupProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemGroupMod.ItemGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemGroupMod.ItemGroupProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemHeaderMod.ItemHeaderProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemHeaderMod.ItemHeaderProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemHeaderMod.ItemHeaderProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemHeaderMod.ItemHeaderProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Image(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemImageMod.ItemImageProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemImageMod.ItemImageProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Image(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemImageMod.ItemImageProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemImageMod.ItemImageProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Meta(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Meta(
-    props: semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsViewsItemItemMetaMod.ItemMetaProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

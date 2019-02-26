@@ -500,6 +500,15 @@ trait Schema[T]
     * @param value if not passed, the current option value is returned
     */
   @JSName("set")
+  def set_selectPopulatedPaths(key: mongooseLib.mongooseLibStrings.selectPopulatedPaths): scala.Boolean = js.native
+  @JSName("set")
+  def set_selectPopulatedPaths(key: mongooseLib.mongooseLibStrings.selectPopulatedPaths, value: scala.Boolean): this.type = js.native
+  /**
+    * Sets/gets a schema option.
+    * @param key option name
+    * @param value if not passed, the current option value is returned
+    */
+  @JSName("set")
   def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey): scala.Boolean = js.native
   @JSName("set")
   def set_shardKey(key: mongooseLib.mongooseLibStrings.shardKey, value: scala.Boolean): this.type = js.native
@@ -512,6 +521,15 @@ trait Schema[T]
   def set_skipVersioning(key: mongooseLib.mongooseLibStrings.skipVersioning): js.Any = js.native
   @JSName("set")
   def set_skipVersioning(key: mongooseLib.mongooseLibStrings.skipVersioning, value: js.Any): this.type = js.native
+  /**
+    * Sets/gets a schema option.
+    * @param key option name
+    * @param value if not passed, the current option value is returned
+    */
+  @JSName("set")
+  def set_storeSubdocValidationError(key: mongooseLib.mongooseLibStrings.storeSubdocValidationError): scala.Boolean = js.native
+  @JSName("set")
+  def set_storeSubdocValidationError(key: mongooseLib.mongooseLibStrings.storeSubdocValidationError, value: scala.Boolean): this.type = js.native
   /**
     * Sets/gets a schema option.
     * @param key option name

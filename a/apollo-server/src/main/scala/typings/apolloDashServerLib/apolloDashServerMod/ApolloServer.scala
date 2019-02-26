@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 class ApolloServer protected ()
   extends apolloDashServerDashExpressLib.apolloDashServerDashExpressMod.ApolloServer {
-  def this(config: apolloDashServerDashExpressLib.distApolloServerMod.ApolloServerExpressConfig) = this()
+  def this(config: apolloDashServerDashExpressLib.distApolloServerMod.ApolloServerExpressConfig with apolloDashServerLib.Anon_Cors) = this()
   var cors: js.UndefOr[js.Any] = js.native
   var createServerInfo: js.Any = js.native
   var httpServer: js.UndefOr[js.Any] = js.native

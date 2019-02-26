@@ -24,24 +24,32 @@ object default extends js.Object {
   @JSName("Or")
   var Or_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps] = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsButtonButtonContentMod.ButtonContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsButtonButtonGroupMod.ButtonGroupProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Or(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Or(
-    props: semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsElementsButtonButtonOrMod.ButtonOrProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

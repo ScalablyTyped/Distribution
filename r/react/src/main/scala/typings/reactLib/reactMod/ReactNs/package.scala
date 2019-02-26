@@ -98,6 +98,7 @@ package object ReactNs {
   type LegacyRef[T] = java.lang.String | Ref[T]
   type MouseEventHandler[T] = EventHandler[MouseEvent[T, reactLib.NativeMouseEvent]]
   type PointerEventHandler[T] = EventHandler[PointerEvent[T]]
+  type PropsWithChildren[P] = P with reactLib.Anon_Children
   /** Ensures that the props do not include string ref, which cannot be forwarded */
   type PropsWithRef[P] = P | (PropsWithoutRef[P] with reactLib.Anon_Ref)
   /** Ensures that the props do not include ref at all */

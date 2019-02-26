@@ -13,10 +13,14 @@ trait RevealComponent
     semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
   ] = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsRevealRevealContentMod.RevealContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

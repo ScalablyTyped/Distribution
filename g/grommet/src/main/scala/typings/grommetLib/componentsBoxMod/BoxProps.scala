@@ -24,7 +24,7 @@ trait BoxProps extends js.Object {
   var as: js.UndefOr[java.lang.String] = js.undefined
   var background: js.UndefOr[java.lang.String | grommetLib.Anon_Color] = js.undefined
   var basis: js.UndefOr[
-    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.auto | java.lang.String
+    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | grommetLib.grommetLibStrings.full | grommetLib.grommetLibStrings.`1/2` | grommetLib.grommetLibStrings.`1/3` | grommetLib.grommetLibStrings.`2/3` | grommetLib.grommetLibStrings.`1/4` | grommetLib.grommetLibStrings.`2/4` | grommetLib.grommetLibStrings.`3/4` | grommetLib.grommetLibStrings.auto | java.lang.String
   ] = js.undefined
   var border: js.UndefOr[
     scala.Boolean | grommetLib.grommetLibStrings.top | grommetLib.grommetLibStrings.left | grommetLib.grommetLibStrings.bottom | grommetLib.grommetLibStrings.right | grommetLib.grommetLibStrings.horizontal | grommetLib.grommetLibStrings.vertical | grommetLib.grommetLibStrings.all | grommetLib.Anon_All
@@ -42,11 +42,11 @@ trait BoxProps extends js.Object {
     grommetLib.grommetLibStrings.grow | grommetLib.grommetLibStrings.shrink | scala.Boolean | grommetLib.Anon_Grow
   ] = js.undefined
   var gap: js.UndefOr[
-    grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
+    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
   ] = js.undefined
   var gridArea: js.UndefOr[java.lang.String] = js.undefined
   var height: js.UndefOr[
-    grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
+    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String
   ] = js.undefined
   var justify: js.UndefOr[
     grommetLib.grommetLibStrings.start | grommetLib.grommetLibStrings.center | grommetLib.grommetLibStrings.between | grommetLib.grommetLibStrings.around | grommetLib.grommetLibStrings.evenly | grommetLib.grommetLibStrings.end
@@ -66,7 +66,7 @@ trait BoxProps extends js.Object {
   ] = js.undefined
   var tag: js.UndefOr[java.lang.String] = js.undefined
   var width: js.UndefOr[
-    grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | java.lang.String
+    grommetLib.grommetLibStrings.xxsmall | grommetLib.grommetLibStrings.xsmall | grommetLib.grommetLibStrings.small | grommetLib.grommetLibStrings.medium | grommetLib.grommetLibStrings.large | grommetLib.grommetLibStrings.xlarge | grommetLib.grommetLibStrings.xxlarge | java.lang.String
   ] = js.undefined
   var wrap: js.UndefOr[scala.Boolean] = js.undefined
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "catalog"
-version := "3.6.0-2d1e4d"
+version := "3.6.0-b14ccc"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -22,7 +22,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "color-name" % "1.1-dt-20190212Z-048d4d",
   "org.scalablytyped" %%% "connect" % "v3.4.0-dt-20180417Z-71aaa7",
   "org.scalablytyped" %%% "create-emotion" % "10.0.7-940780",
-  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-b849b2",
+  "org.scalablytyped" %%% "create-react-class" % "15.6-dt-20180806Z-77ae3a",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "d3-color" % "1.2-dt-20190212Z-a46f6d",
   "org.scalablytyped" %%% "detect-port" % "1.1-dt-20180214Z-1d1adb",
@@ -55,11 +55,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "raf" % "3.4-dt-20190103Z-159450",
   "org.scalablytyped" %%% "ramda" % "0.25-dt-20190212Z-5861ce",
   "org.scalablytyped" %%% "range-parser" % "1.2-dt-20181016Z-c7c39d",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190220Z-16f783",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
   "org.scalablytyped" %%% "react-dev-utils" % "7.0-dt-20190128Z-95f913",
-  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-1c6ea4",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-4334cf",
-  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-f52bb1",
+  "org.scalablytyped" %%% "react-document-title" % "2.0-dt-20180803Z-ad131b",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-bd2972",
+  "org.scalablytyped" %%% "react-router" % "4.4-dt-20190212Z-a0ef37",
   "org.scalablytyped" %%% "relateurl" % "v0.2.6-dt-20180214Z-07f5e7",
   "org.scalablytyped" %%% "serve-static" % "1.13-dt-20180428Z-1b6eaf",
   "org.scalablytyped" %%% "source-map" % "0.7.3-cdf339",

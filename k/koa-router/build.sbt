@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "koa-router"
-version := "v7.x-dt-20190122Z-4233f1"
+version := "v7.x-dt-20190223Z-fe6b1a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

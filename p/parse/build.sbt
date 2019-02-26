@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse"
-version := "2.1.0-dt-20181114Z-37f3b9"
+version := "2.1.0-dt-20190123Z-064398"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

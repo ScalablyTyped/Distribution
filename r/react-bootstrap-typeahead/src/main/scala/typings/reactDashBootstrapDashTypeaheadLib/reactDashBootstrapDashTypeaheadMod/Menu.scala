@@ -20,13 +20,17 @@ object Menu extends js.Object {
   var Header_Original: reactLib.reactMod.ReactNs.FunctionComponent[
     reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
   ] = js.native
-  def Divider(props: js.Object with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
-  def Divider(props: js.Object with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Divider(props: reactLib.reactMod.ReactNs.PropsWithChildren[js.Object]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def Divider(props: reactLib.reactMod.ReactNs.PropsWithChildren[js.Object], context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      reactDashBootstrapDashTypeaheadLib.reactDashBootstrapDashTypeaheadMod.MenuHeaderProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

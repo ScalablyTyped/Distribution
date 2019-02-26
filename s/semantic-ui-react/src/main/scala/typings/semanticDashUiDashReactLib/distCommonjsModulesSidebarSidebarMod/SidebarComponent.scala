@@ -17,17 +17,25 @@ trait SidebarComponent
     semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps
   ] = js.native
   def Pushable(
-    props: semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Pushable(
-    props: semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPushableMod.SidebarPushableProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Pusher(
-    props: semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Pusher(
-    props: semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesSidebarSidebarPusherMod.SidebarPusherProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

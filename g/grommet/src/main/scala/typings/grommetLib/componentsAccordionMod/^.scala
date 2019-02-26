@@ -8,11 +8,12 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Accordion", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Accordion: reactLib.reactMod.ReactNs.ComponentType[
+  val Accordion: reactLib.reactMod.ReactNs.ComponentClass[
     grommetLib.componentsAccordionMod.AccordionProps with (reactLib.reactMod.ReactNs.DetailedHTMLProps[
       reactLib.reactMod.ReactNs.HTMLAttributes[reactLib.HTMLDivElement], 
       reactLib.HTMLDivElement
-    ])
+    ]), 
+    reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
 }
 

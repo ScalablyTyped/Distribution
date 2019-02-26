@@ -17,17 +17,25 @@ trait PopupComponent
     semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
   ] = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupContentMod.PopupContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Header(
-    props: semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsModulesPopupPopupHeaderMod.PopupHeaderProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

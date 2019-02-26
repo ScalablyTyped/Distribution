@@ -39,7 +39,7 @@ trait UserPoolClientArgs extends js.Object {
     atPulumiPulumiLib.outputMod.Input[js.Array[atPulumiPulumiLib.outputMod.Input[java.lang.String]]]
   ] = js.undefined
   /**
-    * Should an application secret be generated. AWS JavaScript SDK requires this to be false.
+    * Should an application secret be generated.
     */
   val generateSecret: js.UndefOr[atPulumiPulumiLib.outputMod.Input[scala.Boolean]] = js.undefined
   /**

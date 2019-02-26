@@ -89,7 +89,8 @@ trait Item extends js.Object {
     * Adds an event handler for a supported event.
     * 
     * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
+    * `Office.EventType.RecurrenceChanged`.
+    * In Preview, `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
     * 
     * [Api set: Mailbox 1.7]
     *
@@ -267,7 +268,8 @@ trait Item extends js.Object {
     * Removes the event handlers for a supported event type.
     * 
     * Currently the supported event types are `Office.EventType.AppointmentTimeChanged`, `Office.EventType.RecipientsChanged`, and 
-    * `Office.EventType.RecurrenceChanged`. In Preview, `Office.EventType.AttachmentsChanged` is also supported.
+    * `Office.EventType.RecurrenceChanged`.
+    * In Preview, `Office.EventType.AttachmentsChanged` and `Office.EventType.EnhancedLocationsChanged` are also supported.
     * 
     * [Api set: Mailbox 1.7]
     *

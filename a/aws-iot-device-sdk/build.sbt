@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-iot-device-sdk"
-version := "2.1.0-dt-20180214Z-2e43e5"
+version := "2.2.0-dt-20190223Z-405ac9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -19,10 +19,10 @@ trait MenuComponent
   @JSName("Menu")
   var Menu_Original: reactLib.reactMod.ReactNs.StatelessComponent[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps] = js.native
   def Menu(
-    props: semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Menu(
-    props: semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[semanticDashUiDashReactLib.distCommonjsCollectionsMenuMenuMenuMod.MenuMenuProps],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

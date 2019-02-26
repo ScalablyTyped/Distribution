@@ -41,52 +41,80 @@ trait CommentComponent
     semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps
   ] = js.native
   def Actions(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Actions(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentActionsMod.CommentActionsProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Author(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Author(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAuthorMod.CommentAuthorProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Avatar(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Avatar(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentAvatarMod.CommentAvatarProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Content(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentContentMod.CommentContentProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentGroupMod.CommentGroupProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Metadata(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Metadata(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentMetadataMod.CommentMetadataProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Text(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Text(
-    props: semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsViewsCommentCommentTextMod.CommentTextProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

@@ -12,8 +12,12 @@ trait ListItemProps extends js.Object {
   var bottomDivider: js.UndefOr[scala.Boolean] = js.undefined
   var buttonGroup: js.UndefOr[ButtonGroupProps] = js.undefined
   var checkBox: js.UndefOr[CheckBoxProps] = js.undefined
-  var checkmark: js.UndefOr[scala.Boolean | stdLib.Partial[IconProps]] = js.undefined
-  var chevron: js.UndefOr[scala.Boolean | stdLib.Partial[IconProps]] = js.undefined
+  var checkmark: js.UndefOr[
+    scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object]
+  ] = js.undefined
+  var chevron: js.UndefOr[
+    scala.Boolean | stdLib.Partial[IconProps] | reactLib.reactMod.ReactNs.ReactElement[js.Object]
+  ] = js.undefined
   var containerStyle: js.UndefOr[
     reactDashNativeLib.reactDashNativeMod.StyleProp[reactDashNativeLib.reactDashNativeMod.ViewStyle]
   ] = js.undefined

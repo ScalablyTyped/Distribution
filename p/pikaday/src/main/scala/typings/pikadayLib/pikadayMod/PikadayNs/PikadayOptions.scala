@@ -23,7 +23,7 @@ trait PikadayOptions extends js.Object {
     * DOM node to render calendar into, see container example.
     * Default: undefined.
     */
-  var container: js.UndefOr[stdLib.HTMLElement] = js.undefined
+  var container: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
   /**
     * The initial date to view when first opened.
     */
@@ -48,7 +48,7 @@ trait PikadayOptions extends js.Object {
   /**
     * Bind the datepicker to a form field.
     */
-  var field: js.UndefOr[stdLib.HTMLElement] = js.undefined
+  var field: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
   /**
     * First day of the week (0: Sunday, 1: Monday, etc).
     */
@@ -109,13 +109,15 @@ trait PikadayOptions extends js.Object {
   /**
     * Callback function for when a date is selected.
     */
-  var onSelect: js.UndefOr[js.Function1[/* date */ stdLib.Date, scala.Unit]] = js.undefined
+  var onSelect: js.UndefOr[
+    js.ThisFunction1[/* this */ pikadayLib.pikadayMod.Pikaday, /* date */ stdLib.Date, scala.Unit]
+  ] = js.undefined
   /**
     * Function which will be used for parsing input string and getting a date object from it.
     * This function will take precedence over moment.
     */
   var parse: js.UndefOr[
-    js.Function2[/* date */ java.lang.String, /* format */ java.lang.String, stdLib.Date]
+    js.Function2[/* date */ java.lang.String, /* format */ java.lang.String, stdLib.Date | scala.Null]
   ] = js.undefined
   /**
     * Select a whole week instead of a day (default false)
@@ -165,7 +167,7 @@ trait PikadayOptions extends js.Object {
     * Use a different element to trigger opening the datepicker.
     * Default: field element.
     */
-  var trigger: js.UndefOr[stdLib.HTMLElement] = js.undefined
+  var trigger: js.UndefOr[stdLib.HTMLElement | scala.Null] = js.undefined
   /**
     * Number of years either side (e.g. 10) or array of upper/lower range
     * (e.g. [1900, 2015]).

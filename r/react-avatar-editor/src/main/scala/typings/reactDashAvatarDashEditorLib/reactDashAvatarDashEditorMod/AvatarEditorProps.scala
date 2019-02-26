@@ -21,8 +21,8 @@ trait AvatarEditorProps extends js.Object {
   var onLoadSuccess: js.UndefOr[js.Function1[/* imgInfo */ ImageState, scala.Unit]] = js.undefined
   var onMouseMove: js.UndefOr[js.Function1[/* event */ reactLib.Event, scala.Unit]] = js.undefined
   var onMouseUp: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onPositionChange: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var position: js.UndefOr[js.Object] = js.undefined
+  var onPositionChange: js.UndefOr[js.Function1[/* position */ Position, scala.Unit]] = js.undefined
+  var position: js.UndefOr[Position] = js.undefined
   var rotate: js.UndefOr[scala.Double] = js.undefined
   var scale: js.UndefOr[scala.Double] = js.undefined
   var style: js.UndefOr[js.Object] = js.undefined

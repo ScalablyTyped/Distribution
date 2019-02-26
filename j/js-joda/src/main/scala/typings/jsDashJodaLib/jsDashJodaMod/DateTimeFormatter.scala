@@ -28,7 +28,7 @@ class DateTimeFormatter ()
   /* CompleteClass */
   override def withChronology(chrono: js.Any): js.Any = js.native
   /* CompleteClass */
-  override def withLocale(): jsDashJodaLib.jsDashJodaMod.JSJodaNs.DateTimeFormatter = js.native
+  override def withLocale(locale: jsDashJodaLib.jsDashJodaMod.JSJodaNs.Locale): jsDashJodaLib.jsDashJodaMod.JSJodaNs.DateTimeFormatter = js.native
   /* CompleteClass */
   override def withResolverStyle(resolverStyle: jsDashJodaLib.jsDashJodaMod.JSJodaNs.ResolverStyle): jsDashJodaLib.jsDashJodaMod.JSJodaNs.DateTimeFormatter = js.native
 }

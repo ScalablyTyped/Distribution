@@ -11,7 +11,7 @@ trait GetListenerArgs extends js.Object {
     */
   val arn: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * The arn of the load balander. Required if `arn` is not set.
+    * The arn of the load balancer. Required if `arn` is not set.
     */
   val loadBalancerArn: js.UndefOr[java.lang.String] = js.undefined
   /**

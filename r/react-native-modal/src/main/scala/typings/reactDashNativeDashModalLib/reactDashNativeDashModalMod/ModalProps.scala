@@ -33,10 +33,14 @@ trait ModalProps extends js.Object {
     ]
   ] = js.undefined
   var onShow: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
-  var onSwipe: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onSwipeCancel: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onSwipeComplete: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
+  var onSwipeMove: js.UndefOr[js.Function1[/* percentageShown */ scala.Double, scala.Unit]] = js.undefined
+  var onSwipeStart: js.UndefOr[js.Function0[scala.Unit]] = js.undefined
   var presentationStyle: js.UndefOr[
     reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.fullScreen | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.pageSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.formSheet | reactDashNativeDashModalLib.reactDashNativeDashModalLibStrings.overFullScreen
   ] = js.undefined
+  var propagateSwipe: js.UndefOr[scala.Boolean] = js.undefined
   var scrollOffset: js.UndefOr[scala.Double] = js.undefined
   var scrollOffsetMax: js.UndefOr[scala.Double] = js.undefined
   var scrollTo: js.UndefOr[js.Function1[/* e */ js.Any, scala.Unit]] = js.undefined

@@ -12,6 +12,10 @@ sealed trait Type extends js.Object
 @js.native
 object Type extends js.Object {
   @js.native
+  sealed trait ARPEGGIO_DIRECTIONLESS
+    extends vexflowLib.VexNs.FlowNs.StrokeNs.Type
+  
+  @js.native
   sealed trait BRUSH_DOWN
     extends vexflowLib.VexNs.FlowNs.StrokeNs.Type
   
@@ -35,6 +39,7 @@ object Type extends js.Object {
   sealed trait ROLL_UP
     extends vexflowLib.VexNs.FlowNs.StrokeNs.Type
   
+  val ARPEGGIO_DIRECTIONLESS: ARPEGGIO_DIRECTIONLESS with scala.Double = js.native
   /* 1 */ val BRUSH_DOWN: BRUSH_DOWN with scala.Double = js.native
   val BRUSH_UP: BRUSH_UP with scala.Double = js.native
   val RASQUEDO_DOWN: RASQUEDO_DOWN with scala.Double = js.native

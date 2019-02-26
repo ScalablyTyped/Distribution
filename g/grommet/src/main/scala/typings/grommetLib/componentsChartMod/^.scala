@@ -8,6 +8,6 @@ import scala.scalajs.js.annotation._
 @JSImport("grommet/components/Chart", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val Chart: reactLib.reactMod.ReactNs.ComponentType[grommetLib.componentsChartMod.ChartProps] = js.native
+  val Chart: reactLib.reactMod.ReactNs.ComponentClass[grommetLib.componentsChartMod.ChartProps, reactLib.reactMod.ReactNs.ComponentState] = js.native
 }
 

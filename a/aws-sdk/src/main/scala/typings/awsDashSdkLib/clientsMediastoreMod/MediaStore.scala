@@ -151,7 +151,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Removes an object lifecycle policy from a container.
+    * Removes an object lifecycle policy from a container. It takes up to 20 minutes for the change to take effect.
     */
   def deleteLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
@@ -168,7 +168,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Removes an object lifecycle policy from a container.
+    * Removes an object lifecycle policy from a container. It takes up to 20 minutes for the change to take effect.
     */
   def deleteLifecyclePolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.DeleteLifecyclePolicyOutput, 
@@ -396,7 +396,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the cross-origin resource sharing (CORS) configuration on a container so that the container can service cross-origin requests. For example, you might want to enable a request whose origin is http://www.example.com to access your AWS Elemental MediaStore container at my.example.container.com by using the browser's XMLHttpRequest capability. To enable CORS on a container, you attach a CORS policy to the container. In the CORS policy, you configure rules that identify origins and the HTTP methods that can be executed on your container. The policy can contain up to 398,000 characters. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed.
+    * Sets the cross-origin resource sharing (CORS) configuration on a container so that the container can service cross-origin requests. For example, you might want to enable a request whose origin is http://www.example.com to access your AWS Elemental MediaStore container at my.example.container.com by using the browser's XMLHttpRequest capability. To enable CORS on a container, you attach a CORS policy to the container. In the CORS policy, you configure rules that identify origins and the HTTP methods that can be executed on your container. The policy can contain up to 398,000 characters. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed. To learn more about CORS, see Cross-Origin Resource Sharing (CORS) in AWS Elemental MediaStore.
     */
   def putCorsPolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutCorsPolicyOutput, 
@@ -413,7 +413,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Sets the cross-origin resource sharing (CORS) configuration on a container so that the container can service cross-origin requests. For example, you might want to enable a request whose origin is http://www.example.com to access your AWS Elemental MediaStore container at my.example.container.com by using the browser's XMLHttpRequest capability. To enable CORS on a container, you attach a CORS policy to the container. In the CORS policy, you configure rules that identify origins and the HTTP methods that can be executed on your container. The policy can contain up to 398,000 characters. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed.
+    * Sets the cross-origin resource sharing (CORS) configuration on a container so that the container can service cross-origin requests. For example, you might want to enable a request whose origin is http://www.example.com to access your AWS Elemental MediaStore container at my.example.container.com by using the browser's XMLHttpRequest capability. To enable CORS on a container, you attach a CORS policy to the container. In the CORS policy, you configure rules that identify origins and the HTTP methods that can be executed on your container. The policy can contain up to 398,000 characters. You can add up to 100 rules to a CORS policy. If more than one rule applies, the service uses the first applicable rule listed. To learn more about CORS, see Cross-Origin Resource Sharing (CORS) in AWS Elemental MediaStore.
     */
   def putCorsPolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutCorsPolicyInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutCorsPolicyOutput, 
@@ -431,7 +431,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+    * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. It takes up to 20 minutes for the change to take effect. For information about how to construct an object lifecycle policy, see Components of an Object Lifecycle Policy.
     */
   def putLifecyclePolicy(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
@@ -448,7 +448,7 @@ trait MediaStore
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. 
+    * Writes an object lifecycle policy to a container. If the container already has an object lifecycle policy, the service replaces the existing policy with the new policy. It takes up to 20 minutes for the change to take effect. For information about how to construct an object lifecycle policy, see Components of an Object Lifecycle Policy.
     */
   def putLifecyclePolicy(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
@@ -463,6 +463,76 @@ trait MediaStore
     ]
   ): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.PutLifecyclePolicyOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Starts access logging on the specified container. When you enable access logging on a container, MediaStore delivers access logs for objects stored in that container to Amazon CloudWatch Logs.
+    */
+  def startAccessLogging(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def startAccessLogging(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Starts access logging on the specified container. When you enable access logging on a container, MediaStore delivers access logs for objects stored in that container to Amazon CloudWatch Logs.
+    */
+  def startAccessLogging(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def startAccessLogging(
+    params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StartAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Stops access logging on the specified container. When you stop access logging on a container, MediaStore stops sending access logs to Amazon CloudWatch Logs. These access logs are not saved and are not retrievable.
+    */
+  def stopAccessLogging(): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def stopAccessLogging(
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  /**
+    * Stops access logging on the specified container. When you stop access logging on a container, MediaStore stops sending access logs to Amazon CloudWatch Logs. These access logs are not saved and are not retrievable.
+    */
+  def stopAccessLogging(params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingInput): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
+    awsDashSdkLib.libErrorMod.AWSError
+  ] = js.native
+  def stopAccessLogging(
+    params: awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingInput,
+    callback: js.Function2[
+      /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+      /* data */ awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
+      scala.Unit
+    ]
+  ): awsDashSdkLib.libRequestMod.Request[
+    awsDashSdkLib.clientsMediastoreMod.MediaStoreNs.StopAccessLoggingOutput, 
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
 }

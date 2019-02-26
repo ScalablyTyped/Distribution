@@ -22,7 +22,10 @@ package object recomposeMod {
   type InferableComponentEnhancer[TInjectedProps] = InferableComponentEnhancerWithProps[TInjectedProps, js.Object]
   type InferableComponentEnhancerWithProps[TInjectedProps, TNeedsProps] = js.Function1[
     /* component */ reactLib.reactMod.ReactNs.ComponentType[TInjectedProps], 
-    reactLib.reactMod.ReactNs.ComponentType[(Omit[TInjectedProps, java.lang.String]) with TNeedsProps]
+    reactLib.reactMod.ReactNs.ComponentClass[
+      (Omit[TInjectedProps, java.lang.String]) with TNeedsProps, 
+      reactLib.reactMod.ReactNs.ComponentState
+    ]
   ]
   // Diff / Omit taken from https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-8.html
   type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]

@@ -15,7 +15,7 @@ trait DateTimeFormatter extends js.Object {
   def parse2(text: js.Any, `type`: js.Any): js.Any
   def parseUnresolved(text: js.Any, position: js.Any): js.Any
   def withChronology(chrono: js.Any): js.Any
-  def withLocale(): DateTimeFormatter
+  def withLocale(locale: Locale): DateTimeFormatter
   def withResolverStyle(resolverStyle: ResolverStyle): DateTimeFormatter
 }
 

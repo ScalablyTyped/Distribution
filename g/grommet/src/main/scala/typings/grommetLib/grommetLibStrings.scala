@@ -250,6 +250,9 @@ object grommetLibStrings {
   sealed trait minutes extends js.Object
   
   @js.native
+  sealed trait `no-repeat` extends js.Object
+  
+  @js.native
   sealed trait none extends js.Object
   
   @js.native
@@ -280,6 +283,9 @@ object grommetLibStrings {
   sealed trait rectilinear extends js.Object
   
   @js.native
+  sealed trait repeat extends js.Object
+  
+  @js.native
   sealed trait replace extends js.Object
   
   @js.native
@@ -305,6 +311,9 @@ object grommetLibStrings {
   
   @js.native
   sealed trait shrink extends js.Object
+  
+  @js.native
+  sealed trait size extends js.Object
   
   @js.native
   sealed trait slideDown extends js.Object
@@ -541,6 +550,8 @@ object grommetLibStrings {
   @scala.inline
   def minutes: minutes = "minutes".asInstanceOf[minutes]
   @scala.inline
+  def `no-repeat`: `no-repeat` = "no-repeat".asInstanceOf[`no-repeat`]
+  @scala.inline
   def none: none = "none".asInstanceOf[none]
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
@@ -561,6 +572,8 @@ object grommetLibStrings {
   @scala.inline
   def rectilinear: rectilinear = "rectilinear".asInstanceOf[rectilinear]
   @scala.inline
+  def repeat: repeat = "repeat".asInstanceOf[repeat]
+  @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
@@ -578,6 +591,8 @@ object grommetLibStrings {
   def seconds: seconds = "seconds".asInstanceOf[seconds]
   @scala.inline
   def shrink: shrink = "shrink".asInstanceOf[shrink]
+  @scala.inline
+  def size: size = "size".asInstanceOf[size]
   @scala.inline
   def slideDown: slideDown = "slideDown".asInstanceOf[slideDown]
   @scala.inline

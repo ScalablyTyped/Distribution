@@ -9,6 +9,10 @@ import scala.scalajs.js.annotation._
 @js.native
 class StaveConnector protected () extends js.Object {
   def this(top_stave: Stave, bottom_stave: Stave) = this()
+  var bottom_stave: Stave = js.native
+  var thickness: scala.Double = js.native
+  var top_stave: Stave = js.native
+  var x_shift: scala.Double = js.native
   def draw(): scala.Unit = js.native
   def drawBoldDoubleLine(
     ctx: js.Object,

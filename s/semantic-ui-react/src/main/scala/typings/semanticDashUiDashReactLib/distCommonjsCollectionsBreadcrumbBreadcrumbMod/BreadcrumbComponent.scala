@@ -17,10 +17,14 @@ trait BreadcrumbComponent
     reactLib.reactMod.ReactNs.ComponentState
   ] = js.native
   def Divider(
-    props: semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Divider(
-    props: semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsCollectionsBreadcrumbBreadcrumbDividerMod.BreadcrumbDividerProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

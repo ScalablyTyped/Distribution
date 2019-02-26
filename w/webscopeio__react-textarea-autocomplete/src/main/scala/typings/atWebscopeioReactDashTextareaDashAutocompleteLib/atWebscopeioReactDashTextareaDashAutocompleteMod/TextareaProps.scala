@@ -102,10 +102,10 @@ trait TextareaProps[TItem] extends js.Object {
   /**
     * Gets data props which is already fetched (and displayed) suggestion.
     */
-  def loadingComponent(props: js.Object with reactLib.Anon_Children): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def loadingComponent(props: reactLib.reactMod.ReactNs.PropsWithChildren[js.Object]): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   /**
     * Gets data props which is already fetched (and displayed) suggestion.
     */
-  def loadingComponent(props: js.Object with reactLib.Anon_Children, context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
+  def loadingComponent(props: reactLib.reactMod.ReactNs.PropsWithChildren[js.Object], context: js.Any): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }
 

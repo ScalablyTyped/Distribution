@@ -9,6 +9,9 @@ import scala.scalajs.js.annotation._
 @js.native
 class TextBracket protected () extends js.Object {
   def this(bracket_data: vexflowLib.Anon_Position) = this()
+  var position: vexflowLib.VexNs.FlowNs.TextBracketNs.Positions = js.native
+  var start: Note = js.native
+  var stop: Note = js.native
   def applyStyle(context: vexflowLib.VexNs.IRenderContext): TextBracket = js.native
   def draw(): scala.Unit = js.native
   def setContext(context: vexflowLib.VexNs.IRenderContext): TextBracket = js.native

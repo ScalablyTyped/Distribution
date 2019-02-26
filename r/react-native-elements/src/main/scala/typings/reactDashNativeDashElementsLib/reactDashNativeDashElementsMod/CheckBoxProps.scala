@@ -102,6 +102,14 @@ trait CheckBoxProps extends js.Object {
     */
   var title: js.UndefOr[java.lang.String | reactLib.reactMod.ReactNs.ReactElement[js.Object]] = js.undefined
   /**
+    * Additional props for the title
+    */
+  var titleProps: js.UndefOr[
+    stdLib.Partial[
+      /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify TextProperties */ _
+    ]
+  ] = js.undefined
+  /**
     * Default unchecked color
     * @default '#bfbfbf'
     */

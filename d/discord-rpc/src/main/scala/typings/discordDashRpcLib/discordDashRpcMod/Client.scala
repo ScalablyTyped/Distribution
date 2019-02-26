@@ -43,6 +43,18 @@ class Client protected ()
   def getVoiceSettings(): js.Promise[VoiceSettings] = js.native
   def login(): js.Promise[this.type] = js.native
   def login(options: RPCLoginOptions): js.Promise[this.type] = js.native
+  @JSName("off")
+  def off_connected(event: discordDashRpcLib.discordDashRpcLibStrings.connected, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("off")
+  def off_ready(event: discordDashRpcLib.discordDashRpcLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_connected(event: discordDashRpcLib.discordDashRpcLibStrings.connected, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("on")
+  def on_ready(event: discordDashRpcLib.discordDashRpcLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_connected(event: discordDashRpcLib.discordDashRpcLibStrings.connected, listener: js.Function0[scala.Unit]): this.type = js.native
+  @JSName("once")
+  def once_ready(event: discordDashRpcLib.discordDashRpcLibStrings.ready, listener: js.Function0[scala.Unit]): this.type = js.native
   def selectTextChannel(id: java.lang.String): js.Promise[Channel] = js.native
   def selectTextChannel(id: java.lang.String, options: discordDashRpcLib.Anon_ForceTimeout): js.Promise[Channel] = js.native
   def selectVoiceChannel(id: java.lang.String): js.Promise[Channel] = js.native

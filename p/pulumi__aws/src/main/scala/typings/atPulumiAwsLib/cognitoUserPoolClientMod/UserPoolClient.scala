@@ -47,7 +47,7 @@ class UserPoolClient protected ()
     */
   val explicitAuthFlows: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[js.Array[java.lang.String]]] = js.native
   /**
-    * Should an application secret be generated. AWS JavaScript SDK requires this to be false.
+    * Should an application secret be generated.
     */
   val generateSecret: atPulumiPulumiLib.atPulumiPulumiMod.Output[js.UndefOr[scala.Boolean]] = js.native
   /**

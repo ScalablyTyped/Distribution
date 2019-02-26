@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 /**
   * Represents a LiveQuery Subscription.
-  * 
+  *
   * @see https://docs.parseplatform.org/js/guide/#live-queries
   * @see NodeJS.EventEmitter
   *
@@ -76,7 +76,7 @@ class LiveQuerySubscription protected ()
   extends parseLib.ParseNs.LiveQuerySubscription {
   /**
     * Creates an instance of LiveQuerySubscription.
-    * 
+    *
     * @param {string} id
     * @param {string} query
     * @param {string} [sessionToken]

@@ -9,6 +9,5 @@ package object CloudNs {
   type AfterDeleteRequest = TriggerRequest
   type AfterSaveRequest = TriggerRequest
   type BeforeDeleteRequest = TriggerRequest
-  type BeforeDeleteResponse = FunctionResponse
   type BeforeSaveRequest = TriggerRequest
 }

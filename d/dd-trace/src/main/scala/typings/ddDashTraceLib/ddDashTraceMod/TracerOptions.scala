@@ -24,12 +24,7 @@ trait TracerOptions extends js.Object {
     * Experimental features can be enabled all at once by using true or individually using key / value pairs.
     * @default {}
     */
-  var experimental: js.UndefOr[ExperimentalOptions | scala.Boolean] = js.undefined
-  /**
-    * Interval in milliseconds at which the tracer will submit traces to the agent.
-    * @default 2000
-    */
-  var flushInterval: js.UndefOr[scala.Double] = js.undefined
+  var experimental: js.UndefOr[js.Object | scala.Boolean] = js.undefined
   /**
     * The address of the trace agent that the tracer will submit to.
     * @default 'localhost'
@@ -38,7 +33,7 @@ trait TracerOptions extends js.Object {
   /**
     * Custom logger to be used by the tracer (if debug = true),
     * should support debug() and error() methods
-    * see https://datadog.github.io/dd-trace-js/#custom-logging__anchor
+    * see https://datadog.github.io/dd-trace-js/#custom-logging
     */
   var logger: js.UndefOr[ddDashTraceLib.Anon_Debug] = js.undefined
   /**
@@ -57,7 +52,8 @@ trait TracerOptions extends js.Object {
     */
   var sampleRate: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The service name to be used for this program.
+    * The service name to be used for this program. If not set, the service name
+    * will attempted to be inferred from package.json
     */
   var service: js.UndefOr[java.lang.String] = js.undefined
   /**

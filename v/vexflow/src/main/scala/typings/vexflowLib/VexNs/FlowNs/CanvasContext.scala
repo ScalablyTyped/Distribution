@@ -21,15 +21,14 @@ class CanvasContext protected ()
   ): CanvasContext = js.native
   @JSName("beginPath")
   def beginPath_CanvasContext(): CanvasContext = js.native
-  @JSName("bezierCurveToTo")
-  def bezierCurveToTo_CanvasContext(
+  def bezierCurveToTo(
     x1: scala.Double,
     y1: scala.Double,
     x2: scala.Double,
     y2: scala.Double,
     x: scala.Double,
     y: scala.Double
-  ): CanvasContext = js.native
+  ): scala.Unit = js.native
   @JSName("clearRect")
   def clearRect_CanvasContext(x: scala.Double, y: scala.Double, width: scala.Double, height: scala.Double): CanvasContext = js.native
   @JSName("closePath")
@@ -46,8 +45,7 @@ class CanvasContext protected ()
   def lineTo_CanvasContext(x: scala.Double, y: scala.Double): CanvasContext = js.native
   @JSName("moveTo")
   def moveTo_CanvasContext(x: scala.Double, y: scala.Double): CanvasContext = js.native
-  @JSName("quadraticCurveToTo")
-  def quadraticCurveToTo_CanvasContext(x1: scala.Double, y1: scala.Double, x2: scala.Double, y2: scala.Double): CanvasContext = js.native
+  def quadraticCurveToTo(x1: scala.Double, y1: scala.Double, x: scala.Double, y: scala.Double): scala.Unit = js.native
   @JSName("resize")
   def resize_CanvasContext(width: scala.Double, height: scala.Double): CanvasContext = js.native
   @JSName("restore")

@@ -9,12 +9,16 @@ import scala.scalajs.js.annotation._
 @js.native
 class StaveNote protected () extends StemmableNote {
   def this(note_struct: vexflowLib.Anon_AutostemClef) = this()
+  var x_shift: scala.Double = js.native
   def addAccidental(index: scala.Double, accidental: Accidental): StaveNote = js.native
   def addAnnotation(index: scala.Double, annotation: Annotation): StaveNote = js.native
   def addArticulation(index: scala.Double, articulation: Articulation): StaveNote = js.native
   def addDot(index: scala.Double): StaveNote = js.native
   def addDotToAll(): StaveNote = js.native
-  def addModifier(index: scala.Double, modifier: Modifier): StaveNote = js.native
+  //TODO: vexflow actualy managed to have Note use modifier, index and stavenote index,modifier. To use the function in
+  // Typescript we need to allow both. The name is the correct type :(
+  def addModifier(index: js.Any): Note = js.native
+  def addModifier(index: js.Any, modifier: js.Any): Note = js.native
   def autoStem(): scala.Unit = js.native
    //inconsistent type: void -> StaveNote
   def buildNoteHeads(): scala.Unit = js.native
@@ -43,11 +47,12 @@ class StaveNote protected () extends StemmableNote {
   def isChord(): scala.Boolean = js.native
   def isDisplaced(): scala.Boolean = js.native
   def setKeyLine(index: scala.Double, line: scala.Double): StaveNote = js.native
-   // inconsistent type: void -> StaveNote
   def setKeyStyle(index: scala.Double, style: vexflowLib.Anon_FillStyle): StaveNote = js.native
   def setNoteDisplaced(displaced: scala.Boolean): StaveNote = js.native
   @JSName("setStave")
   def setStave_StaveNote(stave: Stave): StaveNote = js.native
+   // inconsistent type: void -> StaveNote
+  def setStemStyle(style: vexflowLib.Anon_FillStyle): scala.Unit = js.native
   def setStyle(style: vexflowLib.Anon_FillStyle): scala.Unit = js.native
 }
 

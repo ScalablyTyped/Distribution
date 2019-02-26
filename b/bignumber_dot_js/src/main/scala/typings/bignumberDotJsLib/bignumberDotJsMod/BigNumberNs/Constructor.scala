@@ -13,9 +13,7 @@ trait Constructor
       /* base */ scala.Double, 
       bignumberDotJsLib.bignumberDotJsMod.BigNumber
     ] {
-  /**
-    * Helps ES6 import.
-    */
+  /** Helps ES6 import. */
   val BigNumber: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.UndefOr[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.Object
   ] = js.native
@@ -62,49 +60,27 @@ trait Constructor
     * ```
     */
   var DEBUG: js.UndefOr[scala.Boolean] = js.native
-  /**
-    * See `MODULO_MODE`.
-    */
+  /** See `MODULO_MODE`. */
   val EUCLID: bignumberDotJsLib.bignumberDotJsLibNumbers.`9` = js.native
-  /**
-    * Rounds towards Infinity.
-    */
+  /** Rounds towards Infinity. */
   val ROUND_CEIL: bignumberDotJsLib.bignumberDotJsLibNumbers.`2` = js.native
-  /**
-    * Rounds towards zero.
-    */
+  /** Rounds towards zero. */
   val ROUND_DOWN: bignumberDotJsLib.bignumberDotJsLibNumbers.`1` = js.native
-  /**
-    * Rounds towards -Infinity.
-    */
+  /** Rounds towards -Infinity. */
   val ROUND_FLOOR: bignumberDotJsLib.bignumberDotJsLibNumbers.`3` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards Infinity.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards Infinity. */
   val ROUND_HALF_CEIL: bignumberDotJsLib.bignumberDotJsLibNumbers.`7` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards zero.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards zero. */
   val ROUND_HALF_DOWN: bignumberDotJsLib.bignumberDotJsLibNumbers.`5` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards even neighbour.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards even neighbour. */
   val ROUND_HALF_EVEN: bignumberDotJsLib.bignumberDotJsLibNumbers.`6` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds towards -Infinity.
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds towards -Infinity. */
   val ROUND_HALF_FLOOR: bignumberDotJsLib.bignumberDotJsLibNumbers.`8` = js.native
-  /**
-    * Rounds towards nearest neighbour. If equidistant, rounds away from zero .
-    */
+  /** Rounds towards nearest neighbour. If equidistant, rounds away from zero . */
   val ROUND_HALF_UP: bignumberDotJsLib.bignumberDotJsLibNumbers.`4` = js.native
-  /**
-    * Rounds away from zero.
-    */
+  /** Rounds away from zero. */
   val ROUND_UP: bignumberDotJsLib.bignumberDotJsLibNumbers.`0` = js.native
-  /**
-    * Helps ES6 import.
-    */
+  /** Helps ES6 import. */
   val default: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.UndefOr[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt $anonfun#applyOrElse Simplified recursive type alias bignumber.js.bignumber.js.BigNumber.Constructor */ js.Object
   ] = js.native

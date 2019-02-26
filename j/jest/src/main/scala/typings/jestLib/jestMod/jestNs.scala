@@ -26,6 +26,7 @@ object jestNs extends js.Object {
     var numPendingTestSuites: scala.Double
     var numPendingTests: scala.Double
     var numRuntimeErrorTestSuites: scala.Double
+    var numTodoTests: scala.Double
     var numTotalTestSuites: scala.Double
     var numTotalTests: scala.Double
     var snapshot: SnapshotSummary
@@ -159,12 +160,18 @@ object jestNs extends js.Object {
     def apply(name: js.Function, fn: EmptyFunction): scala.Unit = js.native
     // tslint:disable-next-line ban-types
     def apply(name: scala.Double, fn: EmptyFunction): scala.Unit = js.native
-    def each(cases: js.Array[_]): js.Function2[
+    def each(cases: js.Array[_]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
         scala.Unit
       ] = js.native
-    def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function2[/* name */ java.lang.String, /* fn */ js.Function1[/* arg */ js.Any, _], scala.Unit] = js.native
+    def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* arg */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
     def only(name: java.lang.String, fn: EmptyFunction): scala.Unit = js.native
     def only(name: FunctionLike, fn: EmptyFunction): scala.Unit = js.native
     def only(name: js.Function, fn: EmptyFunction): scala.Unit = js.native
@@ -189,12 +196,18 @@ object jestNs extends js.Object {
   
   @js.native
   trait Each extends js.Object {
-    def apply(cases: js.Array[_]): js.Function2[
+    def apply(cases: js.Array[_]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
         scala.Unit
       ] = js.native
-    def apply(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function2[/* name */ java.lang.String, /* fn */ js.Function1[/* arg */ js.Any, _], scala.Unit] = js.native
+    def apply(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* arg */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
   }
   
   /**
@@ -617,9 +630,10 @@ object jestNs extends js.Object {
       * });
       *
       */
-    def each(cases: js.Array[_]): js.Function2[
+    def each(cases: js.Array[_]): js.Function3[
         /* name */ java.lang.String, 
         /* fn */ js.Function1[/* repeated */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
         scala.Unit
       ] = js.native
     /**
@@ -662,7 +676,12 @@ object jestNs extends js.Object {
       * });
       *
       */
-    def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function2[/* name */ java.lang.String, /* fn */ js.Function1[/* arg */ js.Any, _], scala.Unit] = js.native
+    def each(strings: stdLib.TemplateStringsArray, placeholders: js.Any*): js.Function3[
+        /* name */ java.lang.String, 
+        /* fn */ js.Function1[/* arg */ js.Any, _], 
+        /* timeout */ js.UndefOr[scala.Double], 
+        scala.Unit
+      ] = js.native
     /**
       * Creates a test closure.
       *
@@ -1566,9 +1585,13 @@ object jestNs extends js.Object {
     * Note: The default timeout interval is 5 seconds if this method is not called.
     */
   def setTimeout(timeout: scala.Double): jestLib.Anon_AccessType = js.native
-  def spyOn[T /* <: js.Object */, M /* <: FunctionPropertyNames[T] */](`object`: T, method: M): SpyInstance[
-    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any], 
-    ArgsType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+  def spyOn[T /* <: js.Object */, M /* <: FunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M): SpyInstance[
+    stdLib.ReturnType[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ], 
+    ArgsType[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ]
   ] = js.native
   /**
     * Creates a mock function similar to jest.fn but also tracks calls to `object[methodName]`
@@ -1592,14 +1615,16 @@ object jestNs extends js.Object {
     * });
     */
   @JSName("spyOn")
-  def spyOn_get[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[T] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): SpyInstance[
-    /* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any, 
+  def spyOn_get[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): SpyInstance[
+    /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any, 
     js.Array[js.Any]
   ] = js.native
   @JSName("spyOn")
-  def spyOn_set[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[T] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): SpyInstance[
+  def spyOn_set[T /* <: js.Object */, M /* <: NonFunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): SpyInstance[
     scala.Unit, 
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+    js.Array[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ]
   ] = js.native
   /**
     * Indicates that the module system should never return a mocked version of

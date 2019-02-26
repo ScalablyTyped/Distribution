@@ -10,8 +10,8 @@ import scala.scalajs.js.annotation._
 @js.native
 object setDisplayNameMod extends js.Object {
   def default(displayName: java.lang.String): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[js.Object], 
-    reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    /* component */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactLib.reactMod.ReactNs.ComponentType[_]
   ] = js.native
 }
 

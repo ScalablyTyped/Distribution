@@ -112,10 +112,16 @@ object mongooseLibStrings {
   sealed trait save extends js.Object
   
   @js.native
+  sealed trait selectPopulatedPaths extends js.Object
+  
+  @js.native
   sealed trait shardKey extends js.Object
   
   @js.native
   sealed trait skipVersioning extends js.Object
+  
+  @js.native
+  sealed trait storeSubdocValidationError extends js.Object
   
   @js.native
   sealed trait strict extends js.Object
@@ -233,9 +239,13 @@ object mongooseLibStrings {
   @scala.inline
   def save: save = "save".asInstanceOf[save]
   @scala.inline
+  def selectPopulatedPaths: selectPopulatedPaths = "selectPopulatedPaths".asInstanceOf[selectPopulatedPaths]
+  @scala.inline
   def shardKey: shardKey = "shardKey".asInstanceOf[shardKey]
   @scala.inline
   def skipVersioning: skipVersioning = "skipVersioning".asInstanceOf[skipVersioning]
+  @scala.inline
+  def storeSubdocValidationError: storeSubdocValidationError = "storeSubdocValidationError".asInstanceOf[storeSubdocValidationError]
   @scala.inline
   def strict: strict = "strict".asInstanceOf[strict]
   @scala.inline

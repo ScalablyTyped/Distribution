@@ -17,17 +17,25 @@ trait LabelComponent
     semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps
   ] = js.native
   def Detail(
-    props: semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Detail(
-    props: semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsLabelLabelDetailMod.LabelDetailProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps with reactLib.Anon_Children
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps
+    ]
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
   def Group(
-    props: semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps with reactLib.Anon_Children,
+    props: reactLib.reactMod.ReactNs.PropsWithChildren[
+      semanticDashUiDashReactLib.distCommonjsElementsLabelLabelGroupMod.LabelGroupProps
+    ],
     context: js.Any
   ): reactLib.reactMod.ReactNs.ReactElement[_] | scala.Null = js.native
 }

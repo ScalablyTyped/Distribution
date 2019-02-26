@@ -98,8 +98,8 @@ object ^ extends js.Object {
   def renderComponent[TProps](component: java.lang.String): recomposeLib.recomposeMod.ComponentEnhancer[_, _] = js.native
   def renderComponent[TProps](component: reactLib.reactMod.ReactNs.ComponentType[TProps]): recomposeLib.recomposeMod.ComponentEnhancer[_, _] = js.native
   def setDisplayName(displayName: java.lang.String): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[js.Object], 
-    reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    /* component */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactLib.reactMod.ReactNs.ComponentType[_]
   ] = js.native
   def setObservableConfig(config: recomposeLib.recomposeMod.ObservableConfig): scala.Unit = js.native
   def setPropTypes[P](propTypes: reactLib.reactMod.ReactNs.ValidationMap[P]): js.Function1[
@@ -107,8 +107,8 @@ object ^ extends js.Object {
     reactLib.reactMod.ReactNs.ComponentType[P]
   ] = js.native
   def setStatic(key: java.lang.String, value: js.Any): js.Function1[
-    /* component */ reactLib.reactMod.ReactNs.ComponentType[js.Object], 
-    reactLib.reactMod.ReactNs.ComponentType[js.Object]
+    /* component */ reactLib.reactMod.ReactNs.ComponentType[_], 
+    reactLib.reactMod.ReactNs.ComponentType[_]
   ] = js.native
   def shallowEqual(a: js.Object, b: js.Object): scala.Boolean = js.native
   def shouldUpdate[TProps](test: recomposeLib.recomposeMod.predicateDiff[TProps]): recomposeLib.recomposeMod.InferableComponentEnhancer[js.Object] = js.native

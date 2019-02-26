@@ -34,5 +34,9 @@ trait AssociationOptionsBelongsToMany extends AssociationOptionsManyToMany {
     * Should the join model have timestamps
     */
   var timestamps: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    * Belongs-To-Many creates a unique key when primary key is not present on through model. This unique key name can be overridden using uniqueKey option.
+    */
+  var uniqueKey: js.UndefOr[java.lang.String] = js.undefined
 }
 

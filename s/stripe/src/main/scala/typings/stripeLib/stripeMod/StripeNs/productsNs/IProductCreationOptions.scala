@@ -65,6 +65,11 @@ trait IProductCreationOptions
     */
   var `type`: ProductType
   /**
+    * A label that represents units of this product, such as seat(s), in Stripe and on customers’ receipts and invoices.
+    * Only available on products of type=service.
+    */
+  var unit_label: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * A URL of a publicly-accessible webpage for this product. May only be set if type=good.
     */
   var url: js.UndefOr[java.lang.String] = js.undefined

@@ -24,6 +24,7 @@ class Beam protected () extends js.Object {
   def postFormat(): Beam = js.native
   def preFormat(): Beam = js.native
   def setContext(context: vexflowLib.VexNs.IRenderContext): Beam = js.native
+  def setStyle(style: vexflowLib.Anon_FillStyle): Beam = js.native
 }
 
 /* static members */

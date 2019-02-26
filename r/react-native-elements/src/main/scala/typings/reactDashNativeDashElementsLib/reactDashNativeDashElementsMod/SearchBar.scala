@@ -10,6 +10,12 @@ import scala.scalajs.js.annotation._
 class SearchBar ()
   extends reactLib.reactMod.Component[reactDashNativeDashElementsLib.SearchBarProps, js.Any, js.Any] {
   /**
+    * Only available for Android and IOS
+    * call blur on the TextInput
+    * call cancel passed from Props
+    */
+  var cancel: js.UndefOr[js.Function0[scala.Unit]] = js.native
+  /**
     * Holds reference to the stored input.
     */
   var input: reactDashNativeLib.reactDashNativeMod.TextInput = js.native

@@ -35,12 +35,12 @@ trait Pikaday extends js.Object {
     * Returns a JavaScript Date object for the selected day, or null if
     * no date is selected.
     */
-  def getDate(): stdLib.Date = js.native
+  def getDate(): stdLib.Date | scala.Null = js.native
   /**
     * Returns a Moment.js object for the selected date (Moment must be
     * loaded before Pikaday).
     */
-  def getMoment(): momentLib.momentMod.momentNs.Moment = js.native
+  def getMoment(): momentLib.momentMod.momentNs.Moment | scala.Null = js.native
   /**
     * Change the current view to see a specific date.
     */

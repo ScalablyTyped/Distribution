@@ -84,11 +84,19 @@ trait Bluebird[R]
   /**
     * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def all(): Bluebird[bluebirdLib.IterableOrNever[R]] = js.native
+  def all(): Bluebird[scala.Nothing] = js.native
+  /**
+    * Same as calling `Promise.all(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    */
+  def all(`this`: Bluebird[stdLib.Iterable[js.Object]]): Bluebird[R] = js.native
   /**
     * Same as calling `Promise.any(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def any(): Bluebird[bluebirdLib.IterableItem[R]] = js.native
+  def any(): Bluebird[scala.Nothing] = js.native
+  /**
+    * Same as calling `Promise.any(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    */
+  def any[Q](`this`: Bluebird[R with stdLib.Iterable[Q]]): Bluebird[Q] = js.native
   def asCallback(callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit]): this.type = js.native
   def asCallback(
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[R], scala.Unit],
@@ -111,8 +119,8 @@ trait Bluebird[R]
     * });
     * </code>
     */
-  def call[U /* <: java.lang.String */](propertyName: U, args: js.Any*): Bluebird[
-    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: R[U] */ js.Any]
+  def call[U /* <: java.lang.String */, Q](`this`: Bluebird[Q], propertyName: U, args: js.Any*): Bluebird[
+    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: Q[U] */ js.Any]
   ] = js.native
   /**
     * Cancel this `promise`. Will not do anything if this promise is already settled or if the cancellation feature has not been enabled
@@ -803,7 +811,7 @@ trait Bluebird[R]
   /**
     * Same as calling ``Bluebird.each(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def each(iterator: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], _]): Bluebird[bluebirdLib.IterableOrNever[R]] = js.native
+  def each[Q](`this`: Bluebird[R with stdLib.Iterable[Q]], iterator: bluebirdLib.IterateFunction[Q, _]): Bluebird[R] = js.native
   /**
     * Like `.catch` but instead of catching all types of exceptions,
     * it only catches those that don't originate from thrown errors but rather from explicit rejections.
@@ -812,11 +820,15 @@ trait Bluebird[R]
   /**
     * Same as calling ``Promise.filter(thisPromise, filterer)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def filter(filterer: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], scala.Boolean]): Bluebird[bluebirdLib.IterableOrNever[R]] = js.native
-  def filter(
-    filterer: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], scala.Boolean],
+  def filter[Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
+    filterer: bluebirdLib.IterateFunction[Q, scala.Boolean]
+  ): Bluebird[R] = js.native
+  def filter[Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
+    filterer: bluebirdLib.IterateFunction[Q, scala.Boolean],
     options: bluebirdLib.bluebirdMod.BluebirdNs.ConcurrencyOption
-  ): Bluebird[bluebirdLib.IterableOrNever[R]] = js.native
+  ): Bluebird[R] = js.native
   /**
     * Pass a handler that will be called regardless of this promise's fate. Returns a new promise chained from this promise.
     *
@@ -842,15 +854,16 @@ trait Bluebird[R]
   /**
     * Same as calling `Bluebird.map(thisPromise, mapper)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def map[U](mapper: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], U]): Bluebird[js.Array[U]] = js.native
-  def map[U](
-    mapper: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], U],
+  def map[U, Q](`this`: Bluebird[R with stdLib.Iterable[Q]], mapper: bluebirdLib.IterateFunction[Q, U]): Bluebird[js.Array[U]] = js.native
+  def map[U, Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
+    mapper: bluebirdLib.IterateFunction[Q, U],
     options: bluebirdLib.bluebirdMod.BluebirdNs.ConcurrencyOption
   ): Bluebird[js.Array[U]] = js.native
   /**
     * Same as calling ``Bluebird.mapSeries(thisPromise, iterator)``. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def mapSeries[U](iterator: bluebirdLib.IterateFunction[bluebirdLib.IterableItem[R], U]): Bluebird[js.Array[U]] = js.native
+  def mapSeries[U, Q](`this`: Bluebird[R with stdLib.Iterable[Q]], iterator: bluebirdLib.IterateFunction[Q, U]): Bluebird[js.Array[U]] = js.native
   /**
     * Register a node-style callback on this promise.
     *
@@ -876,23 +889,29 @@ trait Bluebird[R]
   /**
     * Same as calling `Promise.race(thisPromise, count)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def race(): Bluebird[bluebirdLib.IterableItem[R]] = js.native
+  def race(): Bluebird[scala.Nothing] = js.native
+  /**
+    * Same as calling `Promise.race(thisPromise, count)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    */
+  def race[Q](`this`: Bluebird[R with stdLib.Iterable[Q]]): Bluebird[Q] = js.native
   /**
     * Same as calling `Promise.reduce(thisPromise, Function reducer, initialValue)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def reduce[U](
+  def reduce[U, Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
     reducer: js.Function4[
       /* memo */ U, 
-      /* item */ bluebirdLib.IterableItem[R], 
+      /* item */ Q, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
       bluebirdLib.Resolvable[U]
     ]
   ): Bluebird[U] = js.native
-  def reduce[U](
+  def reduce[U, Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
     reducer: js.Function4[
       /* memo */ U, 
-      /* item */ bluebirdLib.IterableItem[R], 
+      /* item */ Q, 
       /* index */ scala.Double, 
       /* arrayLength */ scala.Double, 
       bluebirdLib.Resolvable[U]
@@ -921,13 +940,20 @@ trait Bluebird[R]
   def `return`[U](value: U): Bluebird[U] = js.native
   /**
     * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
     */
-  def some(count: scala.Double): Bluebird[bluebirdLib.IterableOrNever[R]] = js.native
+  def some(count: scala.Double): Bluebird[scala.Nothing] = js.native
+  /**
+    * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    * Same as calling `Promise.some(thisPromise)`. With the exception that if this promise is bound to a value, the returned promise is bound to that value too.
+    */
+  def some(`this`: Bluebird[stdLib.Iterable[js.Object]], count: scala.Double): Bluebird[R] = js.native
   /**
     * Like calling `.then`, but the fulfillment value or rejection reason is assumed to be an array, which is flattened to the formal parameters of the handlers.
     */
-  def spread[U](
-    fulfilledHandler: js.Function1[/* repeated */ bluebirdLib.IterableItem[R], bluebirdLib.Resolvable[U]]
+  def spread[U, Q](
+    `this`: Bluebird[R with stdLib.Iterable[Q]],
+    fulfilledHandler: js.Function1[/* repeated */ Q, bluebirdLib.Resolvable[U]]
   ): Bluebird[U] = js.native
   /**
     * Basically sugar for doing: somePromise.catch(function(){});

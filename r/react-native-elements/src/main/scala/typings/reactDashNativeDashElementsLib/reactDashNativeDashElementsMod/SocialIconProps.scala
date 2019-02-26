@@ -100,5 +100,11 @@ trait SocialIconProps extends js.Object {
     * Social media type
     */
   var `type`: SocialMediaType
+  /**
+    * Specify underlayColor for TouchableHighlight
+    *
+    * @default 'white' if `light` prop is true, otherwise defaults to icon color.
+    */
+  var underlayColor: js.UndefOr[java.lang.String] = js.undefined
 }
 

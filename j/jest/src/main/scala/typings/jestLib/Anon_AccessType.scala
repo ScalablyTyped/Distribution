@@ -156,9 +156,13 @@ trait Anon_AccessType extends js.Object {
     * Note: The default timeout interval is 5 seconds if this method is not called.
     */
   def setTimeout(timeout: scala.Double): /* import warning: ImportType.apply Failed type conversion: typeof jest */ js.Any = js.native
-  def spyOn[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.FunctionPropertyNames[T] */](`object`: T, method: M): jestLib.jestMod.jestNs.SpyInstance[
-    stdLib.ReturnType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any], 
-    jestLib.jestMod.jestNs.ArgsType[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+  def spyOn[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.FunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M): jestLib.jestMod.jestNs.SpyInstance[
+    stdLib.ReturnType[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ], 
+    jestLib.jestMod.jestNs.ArgsType[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ]
   ] = js.native
   /**
     * Creates a mock function similar to jest.fn but also tracks calls to `object[methodName]`
@@ -182,14 +186,16 @@ trait Anon_AccessType extends js.Object {
     * });
     */
   @JSName("spyOn")
-  def spyOn_get[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.NonFunctionPropertyNames[T] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): jestLib.jestMod.jestNs.SpyInstance[
-    /* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any, 
+  def spyOn_get[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.NonFunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.get): jestLib.jestMod.jestNs.SpyInstance[
+    /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any, 
     js.Array[js.Any]
   ] = js.native
   @JSName("spyOn")
-  def spyOn_set[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.NonFunctionPropertyNames[T] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): jestLib.jestMod.jestNs.SpyInstance[
+  def spyOn_set[T /* <: js.Object */, M /* <: jestLib.jestMod.jestNs.NonFunctionPropertyNames[stdLib.Required[T]] */](`object`: T, method: M, accessType: jestLib.jestLibStrings.set): jestLib.jestMod.jestNs.SpyInstance[
     scala.Unit, 
-    js.Array[/* import warning: ImportType.apply Failed type conversion: T[M] */ js.Any]
+    js.Array[
+      /* import warning: ImportType.apply Failed type conversion: std.Required<T>[M] */ js.Any
+    ]
   ] = js.native
   /**
     * Indicates that the module system should never return a mocked version of

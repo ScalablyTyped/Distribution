@@ -1,4 +1,5 @@
 [info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-mosaic-component) [id => react-mosaic-component, phase => typescript, file => ../react-mosaic-component/lib/Mosaic.d.ts] 
+[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-mosaic-component) [id => react-mosaic-component, phase => typescript, file => ../react-mosaic-component/lib/contextTypes.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
@@ -19,7 +20,6 @@
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
 [info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-mosaic-component) [id => react-mosaic-component, phase => typescript, file => ../lib/buttons/SplitButton.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
-[info ] InferredDependency.scala:20 Inferred dependencies Set(TsIdentLibrarySimple(react)) for TsIdentLibrarySimple(react-mosaic-component) [id => react-mosaic-component, phase => typescript, file => ../lib/buttons/defaultToolbarControls.d.ts] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
 [debug] PhaseRunner.scala:82 Success [id => react-mosaic-component, phase => typescript] 
