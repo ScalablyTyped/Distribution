@@ -13,7 +13,7 @@ import scala.scalajs.js.annotation._
   * {@link https://docs.microsoft.com/office/dev/add-ins/reference/objectmodel/preview-requirement-set/office.context.mailbox.item | Object Model} page for more information.
   */
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
+- officeDashJsDashPreviewLib.OfficeNs.ItemCompose because var conflicts: body, itemType, notificationMessages, seriesId. Inlined subject, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentAsync, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addFileAttachmentFromBase64Async, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, addItemAttachmentAsync, close, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getAttachmentsAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getInitializationContextAsync, getSelectedDataAsync, getSelectedDataAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, removeAttachmentAsync, saveAsync, saveAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync, setSelectedDataAsync */ @js.native
 trait MessageCompose extends Message {
   /**
     * Gets an object that provides methods to get or update the recipients on the Bcc (blind carbon copy) line of a message.
@@ -773,58 +773,10 @@ trait MessageCompose extends Message {
     *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
     *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
     * </table>
-    *
-    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
-    *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type Office.AsyncResult.
-    */
-  /**
-    * Asynchronously inserts data into the body or subject of a message.
-    *
-    * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
-    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-    * After insertion, the cursor is placed at the end of the inserted content.
-    *
-    * [Api set: Mailbox 1.2]
-    *
-    * @remarks
-    *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
-    *
-    * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
-    *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
-    *                 type Office.AsyncResult. 
-    */
-  def setSelectedDataAsync(
-    data: java.lang.String,
-    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
-  ): scala.Unit = js.native
-  /**
-    * Asynchronously inserts data into the body or subject of a message.
-    *
-    * The setSelectedDataAsync method inserts the specified string at the cursor location in the subject or body of the item, or, if text is 
-    * selected in the editor, it replaces the selected text. If the cursor is not in the body or subject field, an error is returned. 
-    * After insertion, the cursor is placed at the end of the inserted content.
-    *
-    * [Api set: Mailbox 1.2]
-    *
-    * @remarks
-    *
-    * <table>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/understanding-outlook-add-in-permissions | Minimum permission level}</td><td>ReadWriteItem</td></tr>
-    *   <tr><td>{@link https://docs.microsoft.com/outlook/add-ins/#extension-points | Applicable Outlook mode}</td><td>Message Compose</td></tr>
-    *   <tr><td>Errors</td><td>InvalidAttachmentId - The attachment identifier does not exist.</td></tr>
-    * </table>
     * 
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: If text, the current style is applied in Outlook Web App and Outlook. 
     *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
@@ -832,7 +784,7 @@ trait MessageCompose extends Message {
     *        applied in Outlook. If the field is a text field, an InvalidDataFormat error is returned. 
     *        If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; 
     *        if the field is text, then plain text is used.
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult.
     */
   /**
@@ -854,7 +806,7 @@ trait MessageCompose extends Message {
     * 
     * @param data - The data to be inserted. Data is not to exceed 1,000,000 characters. 
     *             If more than 1,000,000 characters are passed in, an ArgumentOutOfRange exception is thrown.
-    * @param options - An object literal that contains one or more of the following properties.
+    * @param options - Optional. An object literal that contains one or more of the following properties.
     *        asyncContext: Developers can provide any object they wish to access in the callback method.
     *        coercionType: If text, the current style is applied in Outlook Web App and Outlook. 
     *        If the field is an HTML editor, only the text data is inserted, even if the data is HTML. 
@@ -863,9 +815,15 @@ trait MessageCompose extends Message {
     *        If the field is a text field, an InvalidDataFormat error is returned. 
     *        If coercionType is not set, the result depends on the field: if the field is HTML then HTML is used; 
     *        if the field is text, then plain text is used.
-    * @param callback - When the method completes, the function passed in the callback parameter is called with a single parameter of 
+    * @param callback - Optional. When the method completes, the function passed in the callback parameter is called with a single parameter of 
     *                 type Office.AsyncResult. 
     */
+  def setSelectedDataAsync(data: java.lang.String): scala.Unit = js.native
+  def setSelectedDataAsync(
+    data: java.lang.String,
+    callback: js.Function1[/* asyncResult */ AsyncResult[scala.Unit], scala.Unit]
+  ): scala.Unit = js.native
+  def setSelectedDataAsync(data: java.lang.String, options: AsyncContextOptions with CoercionTypeOptions): scala.Unit = js.native
   def setSelectedDataAsync(
     data: java.lang.String,
     options: AsyncContextOptions with CoercionTypeOptions,

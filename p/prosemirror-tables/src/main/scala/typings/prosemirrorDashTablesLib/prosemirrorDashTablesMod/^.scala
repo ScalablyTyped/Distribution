@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-tables", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  val columnResizingPluginKey: prosemirrorDashStateLib.prosemirrorDashStateMod.PluginKey[js.Any] = js.native
+  val columnResizingPluginKey: prosemirrorDashStateLib.prosemirrorDashStateMod.PluginKey[js.Any, js.Any] = js.native
   def addColumnAfter[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def addColumnAfter[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],
@@ -43,7 +43,7 @@ object ^ extends js.Object {
   ): scala.Boolean = js.native
   def cellAround[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S]): prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[S] | scala.Null = js.native
   def colCount(pos: prosemirrorDashModelLib.prosemirrorDashModelMod.ResolvedPos[_]): scala.Double = js.native
-  def columnResizing[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](props: prosemirrorDashTablesLib.Anon_CellMinWidth[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
+  def columnResizing[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](props: prosemirrorDashTablesLib.Anon_CellMinWidth[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S, _] = js.native
   def deleteColumn[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def deleteColumn[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],
@@ -117,7 +117,7 @@ object ^ extends js.Object {
       scala.Unit
     ]
   ): scala.Boolean = js.native
-  def tableEditing(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
+  def tableEditing(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
   def tableNodes(options: prosemirrorDashTablesLib.prosemirrorDashTablesMod.TableNodesOptions): prosemirrorDashTablesLib.prosemirrorDashTablesMod.TableNodes = js.native
   def toggleHeaderCell[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S]): scala.Boolean = js.native
   def toggleHeaderCell[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](

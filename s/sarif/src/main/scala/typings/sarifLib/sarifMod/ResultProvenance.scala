@@ -7,13 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait ResultProvenance extends js.Object {
   /**
-    * An array of physicalLocation objects which specify the portions of an analysis tool's output that a
-    * converter transformed into the result.
+    * An array of physicalLocation objects which specify the portions of an analysis tool's output that a converter
+    * transformed into the result.
     */
   var conversionSources: js.UndefOr[js.Array[PhysicalLocation]] = js.undefined
   /**
-    * A GUID-valued string equal to the id.instanceGuid property of the run in which the result was first
-    * detected.
+    * A GUID-valued string equal to the id.instanceGuid property of the run in which the result was first detected.
     */
   var firstDetectionRunInstanceGuid: js.UndefOr[java.lang.String] = js.undefined
   /**

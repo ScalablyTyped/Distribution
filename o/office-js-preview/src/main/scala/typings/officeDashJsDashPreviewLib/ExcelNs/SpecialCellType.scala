@@ -26,15 +26,6 @@ object SpecialCellType extends js.Object {
   
   /**
     *
-    * Cells containing comments.
-    *
-    */
-  @js.native
-  sealed trait comments
-    extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellType
-  
-  /**
-    *
     * All cells with conditional formats
     *
     */
@@ -97,7 +88,6 @@ object SpecialCellType extends js.Object {
     extends officeDashJsDashPreviewLib.ExcelNs.SpecialCellType
   
   /* "Blanks" */ val blanks: blanks with java.lang.String = js.native
-  /* "Comments" */ val comments: comments with java.lang.String = js.native
   /* "ConditionalFormats" */ val conditionalFormats: conditionalFormats with java.lang.String = js.native
   /* "Constants" */ val constants: constants with java.lang.String = js.native
   /* "DataValidations" */ val dataValidations: dataValidations with java.lang.String = js.native

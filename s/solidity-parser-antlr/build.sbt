@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "solidity-parser-antlr"
-version := "0.2-dt-20190211Z-54d022"
+version := "0.2-dt-20190223Z-ff2393"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

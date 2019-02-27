@@ -49,6 +49,9 @@ object ipaddrDotJsLibStrings {
   sealed trait teredo extends js.Object
   
   @js.native
+  sealed trait unicast extends js.Object
+  
+  @js.native
   sealed trait uniqueLocal extends js.Object
   
   @js.native
@@ -82,6 +85,8 @@ object ipaddrDotJsLibStrings {
   def rfc6145: rfc6145 = "rfc6145".asInstanceOf[rfc6145]
   @scala.inline
   def teredo: teredo = "teredo".asInstanceOf[teredo]
+  @scala.inline
+  def unicast: unicast = "unicast".asInstanceOf[unicast]
   @scala.inline
   def uniqueLocal: uniqueLocal = "uniqueLocal".asInstanceOf[uniqueLocal]
   @scala.inline

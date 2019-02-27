@@ -12,9 +12,17 @@ trait Ora extends js.Object {
     */
   var color: Color = js.native
   /**
+    * Change the spinner indent.
+    */
+  var indent: scala.Double = js.native
+  /**
     * A boolean of whether the instance is currently spinning.
     */
   val isSpinning: scala.Boolean = js.native
+  /**
+    * Change the spinner.
+    */
+  var spinner: SpinnerName | Spinner = js.native
   /**
     * Change the text.
     */

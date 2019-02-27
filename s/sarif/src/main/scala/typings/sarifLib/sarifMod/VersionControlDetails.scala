@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait VersionControlDetails extends js.Object {
   /**
-    * A Coordinated Universal Time (UTC) date and time that can be used to synchronize an enlistment to the state
-    * of the repository at that time.
+    * A Coordinated Universal Time (UTC) date and time that can be used to synchronize an enlistment to the state of
+    * the repository at that time.
     */
   var asOfTimeUtc: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait VersionControlDetails extends js.Object {
     * The location in the local file system to which the root of the repository was mapped at the time of the
     * analysis.
     */
-  var mappedTo: js.UndefOr[FileLocation] = js.undefined
+  var mappedTo: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * Key/value pairs that provide additional information about the version control details.
     */

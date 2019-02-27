@@ -239,6 +239,17 @@ class Range ()
     autoFillType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDefault | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillCopy | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillSeries | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillFormats | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillValues | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillDays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillWeekdays | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillMonths | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FillYears | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LinearTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.GrowthTrend | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.FlashFill
   ): scala.Unit = js.native
   def autoFill(destinationRange: java.lang.String, autoFillType: AutoFillType): scala.Unit = js.native
+  /**
+    *
+    * Fills range from the current range to the destination range.
+    The destination range must extend the source either horizontally or vertically. Discontiguous ranges are not supported.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param destinationRange The destination range to autofill.
+    * @param autoFillType The type of autofill. Specifies how the destination range is to be filled, based on the contents of the current range. Default is "FillDefault".
+    */
   def autoFill(destinationRange: Range): scala.Unit = js.native
   def autoFill(
     destinationRange: Range,
@@ -583,6 +594,14 @@ class Range ()
   def findOrNullObject(text: java.lang.String, criteria: SearchCriteria): Range = js.native
   /**
     *
+    * Does FlashFill to current range. Flash Fill will automatically fills data when it senses a pattern, so the range must be single column range and have data around in order to find pattern.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def flashFill(): scala.Unit = js.native
+  /**
+    *
     * Gets a Range object with the same top-left cell as the current Range object, but with the specified numbers of rows and columns.
     *
     * [Api set: ExcelApi 1.7]
@@ -793,10 +812,6 @@ class Range ()
     cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
   ): RangeAreas = js.native
   def getSpecialCells(
-    cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Comments,
-    cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
-  ): RangeAreas = js.native
-  def getSpecialCells(
     cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ConditionalFormats,
     cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
   ): RangeAreas = js.native
@@ -842,10 +857,6 @@ class Range ()
     cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
   ): RangeAreas = js.native
   def getSpecialCellsOrNullObject(
-    cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Comments,
-    cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
-  ): RangeAreas = js.native
-  def getSpecialCellsOrNullObject(
     cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ConditionalFormats,
     cellValueType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.All | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Errors | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalNumber | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsLogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ErrorsNumberText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Logical | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.LogicalNumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Numbers | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.NumbersText | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Text
   ): RangeAreas = js.native
@@ -875,8 +886,6 @@ class Range ()
   ): RangeAreas = js.native
   @JSName("getSpecialCellsOrNullObject")
   def getSpecialCellsOrNullObject_Blanks(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Blanks): RangeAreas = js.native
-  @JSName("getSpecialCellsOrNullObject")
-  def getSpecialCellsOrNullObject_Comments(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Comments): RangeAreas = js.native
   /**
     *
     * Gets the RangeAreas object, comprising one or more ranges, that represents all the cells that match the specified type and value.
@@ -903,8 +912,6 @@ class Range ()
   def getSpecialCellsOrNullObject_Visible(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Visible): RangeAreas = js.native
   @JSName("getSpecialCells")
   def getSpecialCells_Blanks(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Blanks): RangeAreas = js.native
-  @JSName("getSpecialCells")
-  def getSpecialCells_Comments(cellType: officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Comments): RangeAreas = js.native
   /**
     *
     * Gets the RangeAreas object, comprising one or more rectangular ranges, that represents all the cells that match the specified type and value.

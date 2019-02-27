@@ -313,9 +313,6 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait CommandBar extends js.Object
   
   @js.native
-  sealed trait Comments extends js.Object
-  
-  @js.native
   sealed trait Compact extends js.Object
   
   @js.native
@@ -1102,6 +1099,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait LogicalText extends js.Object
   
   @js.native
+  sealed trait Long extends js.Object
+  
+  @js.native
   sealed trait LongDash extends js.Object
   
   @js.native
@@ -1219,6 +1219,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait MovingAverage extends js.Object
   
   @js.native
+  sealed trait Narrow extends js.Object
+  
+  @js.native
   sealed trait Next extends js.Object
   
   @js.native
@@ -1300,6 +1303,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait OneStdDevBelowAverage extends js.Object
   
   @js.native
+  sealed trait Open extends js.Object
+  
+  @js.native
   sealed trait Or extends js.Object
   
   @js.native
@@ -1319,6 +1325,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait OutsideEnd extends js.Object
+  
+  @js.native
+  sealed trait Oval extends js.Object
   
   @js.native
   sealed trait OverThenDown extends js.Object
@@ -1504,6 +1513,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait RichTextTableRow extends js.Object
   
   @js.native
+  sealed trait RichValue extends js.Object
+  
+  @js.native
   sealed trait Right extends js.Object
   
   @js.native
@@ -1609,6 +1621,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait ShapeTextVerticalAlignType_MaxEnumIDs extends js.Object
   
   @js.native
+  sealed trait Short extends js.Object
+  
+  @js.native
   sealed trait ShowAll extends js.Object
   
   @js.native
@@ -1670,6 +1685,9 @@ object officeDashJsDashPreviewLibStrings {
   
   @js.native
   sealed trait StatusBar extends js.Object
+  
+  @js.native
+  sealed trait Stealth extends js.Object
   
   @js.native
   sealed trait Stop extends js.Object
@@ -2008,6 +2026,9 @@ object officeDashJsDashPreviewLibStrings {
   sealed trait WholeNumber extends js.Object
   
   @js.native
+  sealed trait Wide extends js.Object
+  
+  @js.native
   sealed trait Wmf extends js.Object
   
   @js.native
@@ -2286,8 +2307,6 @@ object officeDashJsDashPreviewLibStrings {
   def ComboBox: ComboBox = "ComboBox".asInstanceOf[ComboBox]
   @scala.inline
   def CommandBar: CommandBar = "CommandBar".asInstanceOf[CommandBar]
-  @scala.inline
-  def Comments: Comments = "Comments".asInstanceOf[Comments]
   @scala.inline
   def Compact: Compact = "Compact".asInstanceOf[Compact]
   @scala.inline
@@ -2813,6 +2832,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def LogicalText: LogicalText = "LogicalText".asInstanceOf[LogicalText]
   @scala.inline
+  def Long: Long = "Long".asInstanceOf[Long]
+  @scala.inline
   def LongDash: LongDash = "LongDash".asInstanceOf[LongDash]
   @scala.inline
   def LongDashDot: LongDashDot = "LongDashDot".asInstanceOf[LongDashDot]
@@ -2891,6 +2912,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def MovingAverage: MovingAverage = "MovingAverage".asInstanceOf[MovingAverage]
   @scala.inline
+  def Narrow: Narrow = "Narrow".asInstanceOf[Narrow]
+  @scala.inline
   def Next: Next = "Next".asInstanceOf[Next]
   @scala.inline
   def NextMonth: NextMonth = "NextMonth".asInstanceOf[NextMonth]
@@ -2945,6 +2968,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def OneStdDevBelowAverage: OneStdDevBelowAverage = "OneStdDevBelowAverage".asInstanceOf[OneStdDevBelowAverage]
   @scala.inline
+  def Open: Open = "Open".asInstanceOf[Open]
+  @scala.inline
   def Or: Or = "Or".asInstanceOf[Or]
   @scala.inline
   def OriginalSize: OriginalSize = "OriginalSize".asInstanceOf[OriginalSize]
@@ -2958,6 +2983,8 @@ object officeDashJsDashPreviewLibStrings {
   def Outside: Outside = "Outside".asInstanceOf[Outside]
   @scala.inline
   def OutsideEnd: OutsideEnd = "OutsideEnd".asInstanceOf[OutsideEnd]
+  @scala.inline
+  def Oval: Oval = "Oval".asInstanceOf[Oval]
   @scala.inline
   def OverThenDown: OverThenDown = "OverThenDown".asInstanceOf[OverThenDown]
   @scala.inline
@@ -3081,6 +3108,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def RichTextTableRow: RichTextTableRow = "RichTextTableRow".asInstanceOf[RichTextTableRow]
   @scala.inline
+  def RichValue: RichValue = "RichValue".asInstanceOf[RichValue]
+  @scala.inline
   def Right: Right = "Right".asInstanceOf[Right]
   @scala.inline
   def RightToLeft: RightToLeft = "RightToLeft".asInstanceOf[RightToLeft]
@@ -3151,6 +3180,8 @@ object officeDashJsDashPreviewLibStrings {
   @scala.inline
   def ShapeTextVerticalAlignType_MaxEnumIDs: ShapeTextVerticalAlignType_MaxEnumIDs = "ShapeTextVerticalAlignType_MaxEnumIDs".asInstanceOf[ShapeTextVerticalAlignType_MaxEnumIDs]
   @scala.inline
+  def Short: Short = "Short".asInstanceOf[Short]
+  @scala.inline
   def ShowAll: ShowAll = "ShowAll".asInstanceOf[ShowAll]
   @scala.inline
   def Single: Single = "Single".asInstanceOf[Single]
@@ -3192,6 +3223,8 @@ object officeDashJsDashPreviewLibStrings {
   def Statement: Statement = "Statement".asInstanceOf[Statement]
   @scala.inline
   def StatusBar: StatusBar = "StatusBar".asInstanceOf[StatusBar]
+  @scala.inline
+  def Stealth: Stealth = "Stealth".asInstanceOf[Stealth]
   @scala.inline
   def Stop: Stop = "Stop".asInstanceOf[Stop]
   @scala.inline
@@ -3416,6 +3449,8 @@ object officeDashJsDashPreviewLibStrings {
   def Whole: Whole = "Whole".asInstanceOf[Whole]
   @scala.inline
   def WholeNumber: WholeNumber = "WholeNumber".asInstanceOf[WholeNumber]
+  @scala.inline
+  def Wide: Wide = "Wide".asInstanceOf[Wide]
   @scala.inline
   def Wmf: Wmf = "Wmf".asInstanceOf[Wmf]
   @scala.inline

@@ -25,6 +25,14 @@ trait ShapeData extends js.Object {
   var altTextTitle: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
+    * Returns the number of connection sites on the specified shape. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var connectionSiteCount: js.UndefOr[scala.Double] = js.undefined
+  /**
+    *
     * Returns the fill formatting of the shape object. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

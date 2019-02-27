@@ -32,7 +32,7 @@ trait Layout extends js.Object {
   var showlegend: scala.Boolean
    // TODO
   var sliders: js.Array[stdLib.Partial[Slider]]
-  var title: java.lang.String
+  var title: java.lang.String | stdLib.Partial[plotlyDotJsLib.Anon_Auto]
   var titlefont: stdLib.Partial[Font]
   var width: scala.Double
   var xaxis: stdLib.Partial[LayoutAxis]

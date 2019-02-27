@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] extends js.Object {
+trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] extends js.Object {
   // ---------- Symbol Layout ----------
   /**
     * The height in pixels to clip symbol legend entries and limit their size.
@@ -164,6 +164,14 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] extends js.Object {
   var strokeColor: js.UndefOr[C] = js.undefined
   // ---------- Symbols ----------
   /**
+    * An array of alternating [stroke, space] lengths for dashed symbol strokes.
+    */
+  var symbolDash: js.UndefOr[DA] = js.undefined
+  /**
+    * The pixel offset at which to start drawing with the symbol stroke dash array.
+    */
+  var symbolDashOffset: js.UndefOr[N] = js.undefined
+  /**
     * The color of the legend symbol,
     */
   var symbolFillColor: js.UndefOr[C] = js.undefined
@@ -211,6 +219,10 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] extends js.Object {
     */
   var titleAlign: js.UndefOr[A] = js.undefined
   /**
+    * Text anchor position for placing legend titles.
+    */
+  var titleAnchor: js.UndefOr[AN] = js.undefined
+  /**
     * Vertical text baseline for legend titles.
     *
     * __Default value:__ `"top"`.
@@ -248,6 +260,10 @@ trait BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] extends js.Object {
     * Opacity of the legend title.
     */
   var titleOpacity: js.UndefOr[N] = js.undefined
+  /**
+    * Orientation of the legend title.
+    */
+  var titleOrient: js.UndefOr[O] = js.undefined
   /**
     * The padding, in pixels, between title and legend.
     *

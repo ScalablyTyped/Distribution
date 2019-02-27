@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "imap-simple"
-version := "v4.2.0-dt-20181203Z-3a84cb"
+version := "v4.2.0-dt-20190220Z-d3af8c"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

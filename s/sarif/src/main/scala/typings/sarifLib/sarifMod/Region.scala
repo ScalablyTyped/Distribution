@@ -11,7 +11,7 @@ trait Region extends js.Object {
     */
   var byteLength: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The zero-based offset from the beginning of the file of the first byte in the region.
+    * The zero-based offset from the beginning of the artifact of the first byte in the region.
     */
   var byteOffset: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -19,7 +19,7 @@ trait Region extends js.Object {
     */
   var charLength: js.UndefOr[scala.Double] = js.undefined
   /**
-    * The zero-based offset from the beginning of the file of the first character in the region.
+    * The zero-based offset from the beginning of the artifact of the first character in the region.
     */
   var charOffset: js.UndefOr[scala.Double] = js.undefined
   /**
@@ -39,11 +39,11 @@ trait Region extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * The portion of the file contents within the specified region.
+    * The portion of the artifact contents within the specified region.
     */
-  var snippet: js.UndefOr[FileContent] = js.undefined
+  var snippet: js.UndefOr[ArtifactContent] = js.undefined
   /**
-    * Specifies the source language, if any, of the portion of the file specified by the region object.
+    * Specifies the source language, if any, of the portion of the artifact specified by the region object.
     */
   var sourceLanguage: js.UndefOr[java.lang.String] = js.undefined
   /**

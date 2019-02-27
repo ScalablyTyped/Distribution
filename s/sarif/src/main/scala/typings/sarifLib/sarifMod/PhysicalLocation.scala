@@ -7,14 +7,14 @@ import scala.scalajs.js.annotation._
 
 trait PhysicalLocation extends js.Object {
   /**
-    * Specifies a portion of the file that encloses the region. Allows a viewer to display additional context
+    * The location of the artifact.
+    */
+  var artifactLocation: ArtifactLocation
+  /**
+    * Specifies a portion of the artifact that encloses the region. Allows a viewer to display additional context
     * around the region.
     */
   var contextRegion: js.UndefOr[Region] = js.undefined
-  /**
-    * The location of the file.
-    */
-  var fileLocation: FileLocation
   /**
     * Value that distinguishes this physical location from all other physical locations in this run object.
     */
@@ -24,7 +24,7 @@ trait PhysicalLocation extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * Specifies a portion of the file.
+    * Specifies a portion of the artifact.
     */
   var region: js.UndefOr[Region] = js.undefined
 }

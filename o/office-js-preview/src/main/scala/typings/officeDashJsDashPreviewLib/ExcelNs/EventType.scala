@@ -61,6 +61,15 @@ object EventType extends js.Object {
   
   /**
     *
+    * RibbonCommandExecuted represents the type of event registered on ribbon, and occurs when user click on ribbon
+    *
+    */
+  @js.native
+  sealed trait ribbonCommandExecuted
+    extends officeDashJsDashPreviewLib.ExcelNs.EventType
+  
+  /**
+    *
     * ShapeActivated represents the type of event that is registered on Shape, and occurs when shape activates.
     *
     */
@@ -239,6 +248,7 @@ object EventType extends js.Object {
   /* "ChartAdded" */ val chartAdded: chartAdded with java.lang.String = js.native
   /* "ChartDeactivated" */ val chartDeactivated: chartDeactivated with java.lang.String = js.native
   /* "ChartDeleted" */ val chartDeleted: chartDeleted with java.lang.String = js.native
+  /* "RibbonCommandExecuted" */ val ribbonCommandExecuted: ribbonCommandExecuted with java.lang.String = js.native
   /* "ShapeActivated" */ val shapeActivated: shapeActivated with java.lang.String = js.native
   /* "ShapeDeactivated" */ val shapeDeactivated: shapeDeactivated with java.lang.String = js.native
   /* "TableAdded" */ val tableAdded: tableAdded with java.lang.String = js.native

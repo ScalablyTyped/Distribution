@@ -7,13 +7,17 @@ import scala.scalajs.js.annotation._
 
 trait ExternalPropertyFiles extends js.Object {
   /**
+    * An array of external property files containing run.artifacts arrays to be merged with the root log file.
+    */
+  var artifacts: js.UndefOr[js.Array[ExternalPropertyFile]] = js.undefined
+  /**
     * An external property file containing a run.conversion object to be merged with the root log file.
     */
   var conversion: js.UndefOr[ExternalPropertyFile] = js.undefined
   /**
-    * An array of external property files containing run.files arrays to be merged with the root log file.
+    * An external property file containing a run.properties object to be merged with the root log file.
     */
-  var files: js.UndefOr[js.Array[ExternalPropertyFile]] = js.undefined
+  var externalizedProperties: js.UndefOr[ExternalPropertyFile] = js.undefined
   /**
     * An external property file containing a run.graphs object to be merged with the root log file.
     */
@@ -27,16 +31,12 @@ trait ExternalPropertyFiles extends js.Object {
     */
   var logicalLocations: js.UndefOr[js.Array[ExternalPropertyFile]] = js.undefined
   /**
-    * An external property file containing a run.properties object to be merged with the root log file.
-    */
-  var properties: js.UndefOr[ExternalPropertyFile] = js.undefined
-  /**
-    * An external property file containing a run.resources object to be merged with the root log file.
-    */
-  var resources: js.UndefOr[ExternalPropertyFile] = js.undefined
-  /**
     * An array of external property files containing run.results arrays to be merged with the root log file.
     */
   var results: js.UndefOr[js.Array[ExternalPropertyFile]] = js.undefined
+  /**
+    * An external property file containing a run.tool object to be merged with the root log file.
+    */
+  var tool: js.UndefOr[ExternalPropertyFile] = js.undefined
 }
 

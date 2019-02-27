@@ -16,6 +16,7 @@ object apolloDashUtilitiesMod extends js.Object {
   def assign[A, B, C](a: A, b: B, c: C): A with B with C = js.native
   def assign[A, B, C, D](a: A, b: B, c: C, d: D): A with B with C with D = js.native
   def assign[A, B, C, D, E](a: A, b: B, c: C, d: D, e: E): A with B with C with D with E = js.native
+  def buildQueryFromSelectionSet(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def checkDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def cloneDeep[T](value: T): T = js.native
   def createFragmentMap(): apolloDashUtilitiesLib.libGetFromASTMod.FragmentMap = js.native
@@ -49,6 +50,7 @@ object apolloDashUtilitiesMod extends js.Object {
   def graphQLResultHasError(
     result: graphqlLib.executionExecuteMod.ExecutionResult[graphqlLib.executionExecuteMod.ExecutionResultDataDefault]
   ): scala.Double = js.native
+  def hasClientExports(document: graphqlLib.languageAstMod.DocumentNode): scala.Boolean = js.native
   def hasDirectives(names: js.Array[java.lang.String], doc: graphqlLib.languageAstMod.DocumentNode): scala.Boolean = js.native
   def isDevelopment(): scala.Boolean = js.native
   def isEnv(env: java.lang.String): scala.Boolean = js.native
@@ -62,10 +64,15 @@ object apolloDashUtilitiesMod extends js.Object {
   def isScalarValue(value: graphqlLib.languageAstMod.ValueNode): /* is apollo-utilities.apollo-utilities/lib/storeUtils.ScalarValue */ scala.Boolean = js.native
   def isTest(): scala.Boolean = js.native
   def maybeDeepFreeze(obj: js.Any): js.Any = js.native
+  def mergeDeep[T /* <: js.Array[_] */](
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param sources because its type T is not an array type */ sources: T
+  ): apolloDashUtilitiesLib.libUtilMergeDeepMod.TupleToIntersection[T] = js.native
+  def mergeDeepArray[T](sources: js.Array[T]): T = js.native
   def removeArgumentsFromDocument(
     config: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveArgumentsConfig],
     doc: graphqlLib.languageAstMod.DocumentNode
   ): graphqlLib.languageAstMod.DocumentNode = js.native
+  def removeClientSetsFromDocument(document: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode | scala.Null = js.native
   def removeConnectionDirectiveFromDocument(doc: graphqlLib.languageAstMod.DocumentNode): graphqlLib.languageAstMod.DocumentNode = js.native
   def removeDirectivesFromDocument(
     directives: js.Array[apolloDashUtilitiesLib.libTransformMod.RemoveDirectiveConfig],

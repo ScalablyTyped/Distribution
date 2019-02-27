@@ -10,5 +10,4 @@ package object pDashEventLib {
     /* listener */ js.Function2[/* arg1 */ T, /* repeated */ TRest, scala.Unit], 
     scala.Unit
   ]
-  type FilterFn[T] = js.Function1[/* el */ T, scala.Boolean]
 }

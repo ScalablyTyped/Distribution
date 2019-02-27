@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "proper-lockfile"
-version := "3.0-dt-20180507Z-3d644a"
+version := "3.0-dt-20190221Z-01e8d3"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

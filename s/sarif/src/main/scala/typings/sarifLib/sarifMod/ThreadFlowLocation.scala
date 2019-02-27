@@ -15,14 +15,16 @@ trait ThreadFlowLocation extends js.Object {
     */
   var executionTimeUtc: js.UndefOr[java.lang.String] = js.undefined
   /**
-    * Specifies the importance of this location in understanding the code flow in which it occurs. The order from
-    * most to least important is "essential", "important", "unimportant". Default: "important".
+    * Specifies the importance of this location in understanding the code flow in which it occurs. The order from most
+    * to least important is "essential", "important", "unimportant". Default: "important".
     */
   var importance: js.UndefOr[sarifLib.sarifMod.ThreadFlowLocationNs.importance] = js.undefined
   /**
-    * A string describing the type of this location.
+    * A set of distinct strings that categorize the thread flow location. Well-known kinds include acquire, release,
+    * enter, exit, call, return, branch, implicit, false, true, caution, danger, unknown, unreachable, taint,
+    * function, handler, lock, memory, resource, and scope.
     */
-  var kind: js.UndefOr[java.lang.String] = js.undefined
+  var kinds: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
     * The code location.
     */
@@ -45,8 +47,8 @@ trait ThreadFlowLocation extends js.Object {
   var stack: js.UndefOr[Stack] = js.undefined
   /**
     * A dictionary, each of whose keys specifies a variable or expression, the associated value of which represents
-    * the variable or expression value. For an annotation of kind 'continuation', for example, this dictionary
-    * might hold the current assumed values of a set of global variables.
+    * the variable or expression value. For an annotation of kind 'continuation', for example, this dictionary might
+    * hold the current assumed values of a set of global variables.
     */
   var state: js.UndefOr[org.scalablytyped.runtime.StringDictionary[java.lang.String]] = js.undefined
 }

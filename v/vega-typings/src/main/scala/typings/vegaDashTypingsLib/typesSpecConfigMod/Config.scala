@@ -26,7 +26,10 @@ import scala.scalajs.js.annotation._
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
       vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
-      vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue
+      vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
     ]
   ] = js.undefined
   var range: js.UndefOr[vegaDashTypingsLib.Anon_Category] = js.undefined

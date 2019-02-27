@@ -25,9 +25,27 @@ trait KnockoutBindingContext extends js.Object {
   var $rawData: js.Any | KnockoutObservable[_] = js.native
   @JSName("$root")
   var $root: js.Any = js.native
+  /**
+    * This returns a new binding context whose viewmodel is the first parameter and whose $parentContext is the current bindingContext. 
+    * @param dataItemOrAccessor The binding context of the children.
+    * @param dataItemAlias An alias for the data item in descendant contexts.
+    * @param extendCallback Function to be called.
+    * @param options Further options.
+    */
   def createChildContext(dataItemOrAccessor: js.Any): js.Any = js.native
-  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any): js.Any = js.native
-  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: js.Any, extendCallback: js.Function): js.Any = js.native
-  def extend(properties: js.Any): js.Any = js.native
+  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: java.lang.String): js.Any = js.native
+  def createChildContext(dataItemOrAccessor: js.Any, dataItemAlias: java.lang.String, extendCallback: js.Function): js.Any = js.native
+  def createChildContext(
+    dataItemOrAccessor: js.Any,
+    dataItemAlias: java.lang.String,
+    extendCallback: js.Function,
+    options: Anon_ExportDependencies
+  ): js.Any = js.native
+  def extend(properties: js.Function0[org.scalablytyped.runtime.StringDictionary[_]]): KnockoutBindingContext = js.native
+  /**
+    * Clones the current Binding Context, adding extra properties to it.
+    * @param properties object with properties to be added in the binding context.
+    */
+  def extend(properties: org.scalablytyped.runtime.StringDictionary[js.Any]): KnockoutBindingContext = js.native
 }
 

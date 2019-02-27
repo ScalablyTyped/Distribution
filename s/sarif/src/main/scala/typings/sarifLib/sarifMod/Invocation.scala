@@ -16,7 +16,7 @@ trait Invocation extends js.Object {
     */
   var arguments: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   /**
-    * A set of files relevant to the invocation of the tool.
+    * A set of artifacts relevant to the invocation of the tool.
     */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
   /**
@@ -39,7 +39,7 @@ trait Invocation extends js.Object {
   /**
     * An absolute URI specifying the location of the analysis tool's executable.
     */
-  var executableLocation: js.UndefOr[FileLocation] = js.undefined
+  var executableLocation: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * The process exit code.
     */
@@ -73,31 +73,34 @@ trait Invocation extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
+    * An array of reportingConfigurationOverride objects that describe runtime reporting behavior.
+    */
+  var reportingConfigurationOverrides: js.UndefOr[js.Array[ReportingConfigurationOverride]] = js.undefined
+  /**
     * The locations of any response files specified on the tool's command line.
     */
-  var responseFiles: js.UndefOr[js.Array[FileLocation]] = js.undefined
+  var responseFiles: js.UndefOr[js.Array[ArtifactLocation]] = js.undefined
   /**
-    * The Coordinated Universal Time (UTC) date and time at which the run started. See "Date/time properties" in
-    * the SARIF spec for the required format.
+    * The Coordinated Universal Time (UTC) date and time at which the run started. See "Date/time properties" in the
+    * SARIF spec for the required format.
     */
   var startTimeUtc: js.UndefOr[java.lang.String] = js.undefined
   /**
     * A file containing the standard error stream from the process that was invoked.
     */
-  var stderr: js.UndefOr[FileLocation] = js.undefined
+  var stderr: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * A file containing the standard input stream to the process that was invoked.
     */
-  var stdin: js.UndefOr[FileLocation] = js.undefined
+  var stdin: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * A file containing the standard output stream from the process that was invoked.
     */
-  var stdout: js.UndefOr[FileLocation] = js.undefined
+  var stdout: js.UndefOr[ArtifactLocation] = js.undefined
   /**
-    * A file containing the interleaved standard output and standard error stream from the process that was
-    * invoked.
+    * A file containing the interleaved standard output and standard error stream from the process that was invoked.
     */
-  var stdoutStderr: js.UndefOr[FileLocation] = js.undefined
+  var stdoutStderr: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * A value indicating whether the tool's execution completed successfully.
     */
@@ -109,6 +112,6 @@ trait Invocation extends js.Object {
   /**
     * The working directory for the analysis tool run.
     */
-  var workingDirectory: js.UndefOr[FileLocation] = js.undefined
+  var workingDirectory: js.UndefOr[ArtifactLocation] = js.undefined
 }
 

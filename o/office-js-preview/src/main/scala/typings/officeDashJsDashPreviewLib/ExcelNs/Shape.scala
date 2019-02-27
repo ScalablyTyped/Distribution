@@ -32,6 +32,14 @@ class Shape ()
     * @beta
     */
   var altTextTitle: java.lang.String = js.native
+  /**
+    *
+    * Returns the number of connection sites on the specified shape. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val connectionSiteCount: scala.Double = js.native
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
   var context_Shape: RequestContext = js.native

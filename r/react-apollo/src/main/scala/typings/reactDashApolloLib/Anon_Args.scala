@@ -17,7 +17,7 @@ trait Anon_Args extends js.Object {
   var onError: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   var optimisticResponse: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native
   var refetchQueries: propDashTypesLib.propDashTypesMod.Requireable[
-    (js.Function1[/* repeated */ _, _]) | (js.Array[java.lang.String | js.Object | scala.Null])
+    (js.Array[java.lang.String | js.Object | scala.Null]) | (js.Function1[/* repeated */ _, _])
   ] = js.native
   var update: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ _, _]] = js.native
   var variables: propDashTypesLib.propDashTypesMod.Requireable[js.Object] = js.native

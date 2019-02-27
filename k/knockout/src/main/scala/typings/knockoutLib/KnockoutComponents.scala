@@ -15,7 +15,7 @@ trait KnockoutComponents extends js.Object {
     */
   def clearCachedDefinition(componentName: java.lang.String): scala.Unit = js.native
   /**
-    * Searchs each registered component loader by component name, and returns the viewmodel/template declaration via callback parameter
+    * Searchs each registered component loader by component name, and returns the viewmodel/template declaration via callback parameter.
     * @param componentName Component name.
     * @param callback Function to be called with the viewmodel/template declaration parameter.
     */
@@ -23,6 +23,10 @@ trait KnockoutComponents extends js.Object {
     componentName: java.lang.String,
     callback: js.Function1[/* definition */ knockoutLib.KnockoutComponentTypesNs.Definition, scala.Unit]
   ): scala.Unit = js.native
+  /**
+    * Returns the registered component name for a HTML element. Can be overwriten to to control dynamically which HTML element map to which component name.
+    * @param node html element that corresponds to a custom component.
+    */
   def getComponentNameForNode(node: stdLib.Node): java.lang.String = js.native
   /**
     * Determine if a component with the specified name is already registered in the default component loader.
@@ -31,7 +35,7 @@ trait KnockoutComponents extends js.Object {
   def isRegistered(componentName: java.lang.String): scala.Boolean = js.native
   /**
     * Registers a component, in the default component loader, to be used by name in the component binding.
-    * @param componentName Component name.
+    * @param componentName Component name. Will be used for your custom HTML tag name.
     * @param config Component configuration.
     */
   def register(componentName: java.lang.String, config: knockoutLib.KnockoutComponentTypesNs.Config): scala.Unit = js.native

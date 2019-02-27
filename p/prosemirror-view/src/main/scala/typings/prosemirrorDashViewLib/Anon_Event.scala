@@ -5,7 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait Anon_Event extends js.Object {
+trait Anon_Event
+  extends /* key */ org.scalablytyped.runtime.StringDictionary[js.Any] {
   var key: js.UndefOr[java.lang.String | scala.Null] = js.undefined
   var marks: js.UndefOr[js.Array[prosemirrorDashModelLib.prosemirrorDashModelMod.Mark[_]] | scala.Null] = js.undefined
   var side: js.UndefOr[scala.Double | scala.Null] = js.undefined

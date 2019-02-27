@@ -12,5 +12,6 @@ trait ApolloCurrentQueryResult[T] extends js.Object {
   var loading: scala.Boolean
   var networkStatus: apolloDashClientLib.coreNetworkStatusMod.NetworkStatus
   var partial: js.UndefOr[scala.Boolean] = js.undefined
+  var stale: js.UndefOr[scala.Boolean] = js.undefined
 }
 

@@ -11,7 +11,7 @@ trait CUR
   @JSName("config")
   var config_CUR: awsDashSdkLib.libConfigMod.ConfigBase with awsDashSdkLib.clientsCurMod.CURNs.ClientConfiguration = js.native
   /**
-    * Delete a specified report definition
+    * Deletes the specified report.
     */
   def deleteReportDefinition(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.DeleteReportDefinitionResponse, 
@@ -28,7 +28,7 @@ trait CUR
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Delete a specified report definition
+    * Deletes the specified report.
     */
   def deleteReportDefinition(params: awsDashSdkLib.clientsCurMod.CURNs.DeleteReportDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.DeleteReportDefinitionResponse, 
@@ -46,7 +46,7 @@ trait CUR
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describe a list of report definitions owned by the account
+    * Lists the AWS Cost and Usage reports available to this account.
     */
   def describeReportDefinitions(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.DescribeReportDefinitionsResponse, 
@@ -63,7 +63,7 @@ trait CUR
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Describe a list of report definitions owned by the account
+    * Lists the AWS Cost and Usage reports available to this account.
     */
   def describeReportDefinitions(params: awsDashSdkLib.clientsCurMod.CURNs.DescribeReportDefinitionsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.DescribeReportDefinitionsResponse, 
@@ -81,7 +81,7 @@ trait CUR
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Create a new report definition
+    * Creates a new report using the description that you provide.
     */
   def putReportDefinition(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.PutReportDefinitionResponse, 
@@ -98,7 +98,7 @@ trait CUR
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Create a new report definition
+    * Creates a new report using the description that you provide.
     */
   def putReportDefinition(params: awsDashSdkLib.clientsCurMod.CURNs.PutReportDefinitionRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsCurMod.CURNs.PutReportDefinitionResponse, 

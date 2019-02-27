@@ -87,6 +87,13 @@ trait TextFrameLoadOptions extends js.Object {
     * @beta
     */
   var rightMargin: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
+    * Represents the text range in the text frame.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   var textRange: js.UndefOr[TextRangeLoadOptions] = js.undefined
   /**
     *

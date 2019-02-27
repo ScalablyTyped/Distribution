@@ -15,7 +15,7 @@ object ^ extends js.Object {
   var openDoubleQuote: prosemirrorDashInputrulesLib.prosemirrorDashInputrulesMod.InputRule[js.Any] = js.native
   var openSingleQuote: prosemirrorDashInputrulesLib.prosemirrorDashInputrulesMod.InputRule[js.Any] = js.native
   var smartQuotes: js.Array[prosemirrorDashInputrulesLib.prosemirrorDashInputrulesMod.InputRule[js.Any]] = js.native
-  def inputRules[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](config: prosemirrorDashInputrulesLib.Anon_Rules[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
+  def inputRules[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](config: prosemirrorDashInputrulesLib.Anon_Rules[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S, _] = js.native
   def textblockTypeInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](regexp: stdLib.RegExp, nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S]): prosemirrorDashInputrulesLib.prosemirrorDashInputrulesMod.InputRule[S] = js.native
   def textblockTypeInputRule[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     regexp: stdLib.RegExp,

@@ -1,5 +1,5 @@
 ```
-// Type definitions for ora 3.0
+// Type definitions for ora 3.1
 // Project: https://github.com/sindresorhus/ora
 // Definitions by: Basarat Ali Syed <https://github.com/basarat>
 //                 Christian Rackerseder <https://github.com/screendriver>

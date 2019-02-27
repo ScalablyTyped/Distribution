@@ -11,9 +11,9 @@ trait Location extends js.Object {
     */
   var annotations: js.UndefOr[js.Array[Region]] = js.undefined
   /**
-    * The human-readable fully qualified name of the logical location. If run.logicalLocations is present, this
-    * value matches a property name within that object, from which further information about the logical location
-    * can be obtained.
+    * The human-readable fully qualified name of the logical location. If run.logicalLocations is present, this value
+    * matches a property name within that object, from which further information about the logical location can be
+    * obtained.
     */
   var fullyQualifiedLogicalName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -25,7 +25,7 @@ trait Location extends js.Object {
     */
   var message: js.UndefOr[Message] = js.undefined
   /**
-    * Identifies the file and region.
+    * Identifies the artifact and region.
     */
   var physicalLocation: js.UndefOr[PhysicalLocation] = js.undefined
   /**

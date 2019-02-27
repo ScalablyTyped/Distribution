@@ -32,7 +32,7 @@ trait KnockoutComputedOptions[T] extends js.Object {
   /**
     * Makes the computed observable writable. This is a function that receives values that other code is trying to write to your computed observable.
     * It’s up to you to supply custom logic to handle the incoming values, typically by writing the values to some underlying observable(s).
-    * @param value
+    * @param value Value being written to the computer observable.
     */
   var write: js.UndefOr[js.Function1[/* value */ T, scala.Unit]] = js.undefined
 }

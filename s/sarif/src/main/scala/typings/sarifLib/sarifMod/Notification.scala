@@ -23,7 +23,7 @@ trait Notification extends js.Object {
     */
   var message: Message
   /**
-    * The file and region relevant to this notification.
+    * The artifact and region relevant to this notification.
     */
   var physicalLocation: js.UndefOr[PhysicalLocation] = js.undefined
   /**

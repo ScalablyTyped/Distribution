@@ -30,21 +30,41 @@ object CURNs extends js.Object {
   
   trait DescribeReportDefinitionsResponse extends js.Object {
     var NextToken: js.UndefOr[GenericString] = js.undefined
+    /**
+      * A list of AWS Cost and Usage reports owned by the account.
+      */
     var ReportDefinitions: js.UndefOr[ReportDefinitionList] = js.undefined
   }
   
   trait PutReportDefinitionRequest extends js.Object {
+    /**
+      * Represents the output of the PutReportDefinition operation. The content consists of the detailed metadata and data file information. 
+      */
     var ReportDefinition: ReportDefinition
   }
   
   trait PutReportDefinitionResponse extends js.Object
   
   trait ReportDefinition extends js.Object {
+    /**
+      * A list of manifests that you want Amazon Web Services to create for this report.
+      */
     var AdditionalArtifacts: js.UndefOr[AdditionalArtifactList] = js.undefined
+    /**
+      * A list of strings that indicate additional content that Amazon Web Services includes in the report, such as individual resource IDs. 
+      */
     var AdditionalSchemaElements: SchemaElementList
     var Compression: CompressionFormat
     var Format: ReportFormat
+    /**
+      * Whether you want Amazon Web Services to update your reports after they have been finalized if Amazon Web Services detects charges related to previous months. These charges can include refunds, credits, or support fees.
+      */
+    var RefreshClosedReports: js.UndefOr[RefreshClosedReports] = js.undefined
     var ReportName: ReportName
+    /**
+      * Whether you want Amazon Web Services to overwrite the previous version of each report or to deliver the report in addition to the previous versions.
+      */
+    var ReportVersioning: js.UndefOr[ReportVersioning] = js.undefined
     var S3Bucket: S3Bucket
     var S3Prefix: S3Prefix
     var S3Region: AWSRegion
@@ -57,7 +77,7 @@ object CURNs extends js.Object {
     @JSName("config")
     var config_Types: awsDashSdkLib.libConfigMod.ConfigBase with ClientConfiguration = js.native
     /**
-      * Delete a specified report definition
+      * Deletes the specified report.
       */
     def deleteReportDefinition(): awsDashSdkLib.libRequestMod.Request[DeleteReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteReportDefinition(
@@ -68,7 +88,7 @@ object CURNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Delete a specified report definition
+      * Deletes the specified report.
       */
     def deleteReportDefinition(params: DeleteReportDefinitionRequest): awsDashSdkLib.libRequestMod.Request[DeleteReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def deleteReportDefinition(
@@ -80,7 +100,7 @@ object CURNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DeleteReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describe a list of report definitions owned by the account
+      * Lists the AWS Cost and Usage reports available to this account.
       */
     def describeReportDefinitions(): awsDashSdkLib.libRequestMod.Request[DescribeReportDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeReportDefinitions(
@@ -91,7 +111,7 @@ object CURNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeReportDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Describe a list of report definitions owned by the account
+      * Lists the AWS Cost and Usage reports available to this account.
       */
     def describeReportDefinitions(params: DescribeReportDefinitionsRequest): awsDashSdkLib.libRequestMod.Request[DescribeReportDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeReportDefinitions(
@@ -103,7 +123,7 @@ object CURNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeReportDefinitionsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Create a new report definition
+      * Creates a new report using the description that you provide.
       */
     def putReportDefinition(): awsDashSdkLib.libRequestMod.Request[PutReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putReportDefinition(
@@ -114,7 +134,7 @@ object CURNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[PutReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Create a new report definition
+      * Creates a new report using the description that you provide.
       */
     def putReportDefinition(params: PutReportDefinitionRequest): awsDashSdkLib.libRequestMod.Request[PutReportDefinitionResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def putReportDefinition(
@@ -128,17 +148,19 @@ object CURNs extends js.Object {
   }
   
   val TypesNs: this.type = js.native
-  type AWSRegion = awsDashSdkLib.awsDashSdkLibStrings.`us-east-1` | awsDashSdkLib.awsDashSdkLibStrings.`us-west-1` | awsDashSdkLib.awsDashSdkLibStrings.`us-west-2` | awsDashSdkLib.awsDashSdkLibStrings.`eu-central-1` | awsDashSdkLib.awsDashSdkLibStrings.`eu-west-1` | awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-1` | awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-2` | awsDashSdkLib.awsDashSdkLibStrings.`ap-northeast-1` | java.lang.String
-  type AdditionalArtifact = awsDashSdkLib.awsDashSdkLibStrings.REDSHIFT | awsDashSdkLib.awsDashSdkLibStrings.QUICKSIGHT | java.lang.String
+  type AWSRegion = awsDashSdkLib.awsDashSdkLibStrings.`us-east-1` | awsDashSdkLib.awsDashSdkLibStrings.`us-west-1` | awsDashSdkLib.awsDashSdkLibStrings.`us-west-2` | awsDashSdkLib.awsDashSdkLibStrings.`eu-central-1` | awsDashSdkLib.awsDashSdkLibStrings.`eu-west-1` | awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-1` | awsDashSdkLib.awsDashSdkLibStrings.`ap-southeast-2` | awsDashSdkLib.awsDashSdkLibStrings.`ap-northeast-1` | awsDashSdkLib.awsDashSdkLibStrings.`eu-north-1` | awsDashSdkLib.awsDashSdkLibStrings.`ap-northeast-3` | java.lang.String
+  type AdditionalArtifact = awsDashSdkLib.awsDashSdkLibStrings.REDSHIFT | awsDashSdkLib.awsDashSdkLibStrings.QUICKSIGHT | awsDashSdkLib.awsDashSdkLibStrings.ATHENA | java.lang.String
   type AdditionalArtifactList = js.Array[AdditionalArtifact]
   type ClientConfiguration = awsDashSdkLib.libServiceMod.ServiceConfigurationOptions with ClientApiVersions
-  type CompressionFormat = awsDashSdkLib.awsDashSdkLibStrings.ZIP | awsDashSdkLib.awsDashSdkLibStrings.GZIP | java.lang.String
+  type CompressionFormat = awsDashSdkLib.awsDashSdkLibStrings.ZIP | awsDashSdkLib.awsDashSdkLibStrings.GZIP | awsDashSdkLib.awsDashSdkLibStrings.Parquet | java.lang.String
   type DeleteResponseMessage = java.lang.String
   type GenericString = java.lang.String
   type MaxResults = scala.Double
+  type RefreshClosedReports = scala.Boolean
   type ReportDefinitionList = js.Array[ReportDefinition]
-  type ReportFormat = awsDashSdkLib.awsDashSdkLibStrings.textORcsv | java.lang.String
+  type ReportFormat = awsDashSdkLib.awsDashSdkLibStrings.textORcsv | awsDashSdkLib.awsDashSdkLibStrings.Parquet | java.lang.String
   type ReportName = java.lang.String
+  type ReportVersioning = awsDashSdkLib.awsDashSdkLibStrings.CREATE_NEW_REPORT | awsDashSdkLib.awsDashSdkLibStrings.OVERWRITE_REPORT | java.lang.String
   type S3Bucket = java.lang.String
   type S3Prefix = java.lang.String
   type SchemaElement = awsDashSdkLib.awsDashSdkLibStrings.RESOURCES | java.lang.String

@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 package object atReduxDashSagaTypesMod {
+  type ActionMatchingPattern[P /* <: ActionPattern[reduxLib.reduxMod.Action[_]] */] = (ActionMatchingSubPattern[/* import warning: ImportType.apply Failed type conversion: P[number] */ js.Any]) | ActionMatchingSubPattern[P]
+  type ActionMatchingSubPattern[P /* <: ActionSubPattern[reduxLib.reduxMod.Action[_]] */] = reduxLib.reduxMod.Action[js.Any]
   type ActionPattern[Guard /* <: reduxLib.reduxMod.Action[_] */] = ActionSubPattern[Guard] | js.Array[ActionSubPattern[Guard]]
   type ActionSubPattern[Guard /* <: reduxLib.reduxMod.Action[_] */] = (GuardPredicate[Guard, reduxLib.reduxMod.Action[js.Any]]) | StringableActionCreator[Guard] | Predicate[reduxLib.reduxMod.Action[js.Any]] | ActionType
   type ActionType = java.lang.String | scala.Double | js.Symbol

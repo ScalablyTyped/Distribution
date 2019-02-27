@@ -88,6 +88,14 @@ object ^ extends js.Object {
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: js.Function1[/* item */ T, _]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def debounce[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */](
+    ms: scala.Double,
+    pattern: P,
+    worker: js.Function1[
+      /* action */ atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], 
+      _
+    ]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def debounce[A /* <: reduxLib.reduxMod.Action[_] */](
     ms: scala.Double,
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
@@ -98,6 +106,12 @@ object ^ extends js.Object {
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[T, Fn]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def debounce[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    ms: scala.Double,
+    pattern: P,
+    worker: Fn,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def debounce[A /* <: reduxLib.reduxMod.Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     ms: scala.Double,
@@ -182,16 +196,25 @@ object ^ extends js.Object {
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: stdLib.Parameters[/* import warning: ImportType.apply Failed type conversion: Ctx[Name] */ js.Any]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
-  def take[A /* <: reduxLib.reduxMod.Action[_] */](): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  def take(): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  def take(
+    pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]]
+  ): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
   def take[T](channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T]): atReduxDashSagaCoreLib.effectsMod.ChannelTakeEffect[T] = js.native
   def take[T](
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     multicastPattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Pattern[T]
   ): atReduxDashSagaCoreLib.effectsMod.ChannelTakeEffect[T] = js.native
-  def take[A /* <: reduxLib.reduxMod.Action[_] */](pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A]): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
   def takeEvery[T](
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: js.Function1[/* item */ T, _]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeEvery[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */](
+    pattern: P,
+    worker: js.Function1[
+      /* action */ atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], 
+      _
+    ]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeEvery[A /* <: reduxLib.reduxMod.Action[_] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
@@ -202,14 +225,26 @@ object ^ extends js.Object {
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[T, Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeEvery[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    pattern: P,
+    worker: Fn,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], Fn]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeEvery[A /* <: reduxLib.reduxMod.Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
     worker: Fn,
-    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type AllButLast<Parameters<Fn>> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.AllButLast[stdLib.Parameters[Fn]]
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[A, Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeLatest[T](
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: js.Function1[/* item */ T, _]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeLatest[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */](
+    pattern: P,
+    worker: js.Function1[
+      /* action */ atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], 
+      _
+    ]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeLatest[A /* <: reduxLib.reduxMod.Action[_] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
@@ -220,6 +255,11 @@ object ^ extends js.Object {
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[T, Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeLatest[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    pattern: P,
+    worker: Fn,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], Fn]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeLatest[A /* <: reduxLib.reduxMod.Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
     worker: Fn,
@@ -228,6 +268,13 @@ object ^ extends js.Object {
   def takeLeading[T](
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: js.Function1[/* item */ T, _]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeLeading[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */](
+    pattern: P,
+    worker: js.Function1[
+      /* action */ atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], 
+      _
+    ]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeLeading[A /* <: reduxLib.reduxMod.Action[_] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
@@ -238,22 +285,45 @@ object ^ extends js.Object {
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[T, Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def takeLeading[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    pattern: P,
+    worker: Fn,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], Fn]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def takeLeading[A /* <: reduxLib.reduxMod.Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[A, Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
-  def takeMaybe[A /* <: reduxLib.reduxMod.Action[_] */](): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  def takeMaybe(): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  def takeMaybe(
+    pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]]
+  ): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
   def takeMaybe[T](channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T]): atReduxDashSagaCoreLib.effectsMod.ChannelTakeEffect[T] = js.native
   def takeMaybe[T](
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     multicastPattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.Pattern[T]
   ): atReduxDashSagaCoreLib.effectsMod.ChannelTakeEffect[T] = js.native
-  def takeMaybe[A /* <: reduxLib.reduxMod.Action[_] */](pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A]): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  @JSName("takeMaybe")
+  def takeMaybe_AAction[A /* <: reduxLib.reduxMod.Action[_] */](): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  @JSName("takeMaybe")
+  def takeMaybe_AAction[A /* <: reduxLib.reduxMod.Action[_] */](pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A]): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  @JSName("take")
+  def take_AAction[A /* <: reduxLib.reduxMod.Action[_] */](): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
+  @JSName("take")
+  def take_AAction[A /* <: reduxLib.reduxMod.Action[_] */](pattern: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[A]): atReduxDashSagaCoreLib.effectsMod.TakeEffect = js.native
   def throttle[T](
     ms: scala.Double,
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: js.Function1[/* item */ T, _]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def throttle[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */](
+    ms: scala.Double,
+    pattern: P,
+    worker: js.Function1[
+      /* action */ atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], 
+      _
+    ]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def throttle[A /* <: reduxLib.reduxMod.Action[_] */](
     ms: scala.Double,
@@ -265,6 +335,12 @@ object ^ extends js.Object {
     channel: atReduxDashSagaCoreLib.atReduxDashSagaCoreMod.TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[T, Fn]
+  ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
+  def throttle[P /* <: atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionPattern[reduxLib.reduxMod.Action[_]] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    ms: scala.Double,
+    pattern: P,
+    worker: Fn,
+    /* import warning: parser.TsParser#functionParam $anonfun Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: atReduxDashSagaCoreLib.effectsMod.HelperWorkerParameters[atReduxDashSagaTypesLib.atReduxDashSagaTypesMod.ActionMatchingPattern[P], Fn]
   ): atReduxDashSagaCoreLib.effectsMod.ForkEffect = js.native
   def throttle[A /* <: reduxLib.reduxMod.Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
     ms: scala.Double,

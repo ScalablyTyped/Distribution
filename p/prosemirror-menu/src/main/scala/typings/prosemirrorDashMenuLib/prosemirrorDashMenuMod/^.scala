@@ -15,7 +15,7 @@ object ^ extends js.Object {
     nodeType: prosemirrorDashModelLib.prosemirrorDashModelMod.NodeType[S],
     options: org.scalablytyped.runtime.StringDictionary[js.Any]
   ): prosemirrorDashMenuLib.prosemirrorDashMenuMod.MenuItem[S] = js.native
-  def menuBar[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](options: prosemirrorDashMenuLib.Anon_Content[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S] = js.native
+  def menuBar[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](options: prosemirrorDashMenuLib.Anon_Content[S]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S, _] = js.native
   def redoItem(p: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashMenuLib.prosemirrorDashMenuMod.MenuItem[_] = js.native
   def renderGrouped[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     view: prosemirrorDashViewLib.prosemirrorDashViewMod.EditorView[S],

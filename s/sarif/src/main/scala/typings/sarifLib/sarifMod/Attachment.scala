@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Attachment extends js.Object {
   /**
+    * The location of the attachment.
+    */
+  var artifactLocation: ArtifactLocation
+  /**
     * A message describing the role played by the attachment.
     */
   var description: js.UndefOr[Message] = js.undefined
-  /**
-    * The location of the attachment.
-    */
-  var fileLocation: FileLocation
   /**
     * Key/value pairs that provide additional information about the attachment.
     */

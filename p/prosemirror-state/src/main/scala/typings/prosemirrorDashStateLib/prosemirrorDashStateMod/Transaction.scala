@@ -56,8 +56,8 @@ class Transaction[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * Retrieve a metadata property for a given name or plugin.
     */
   def getMeta(key: java.lang.String): js.Any = js.native
-  def getMeta(key: Plugin[_]): js.Any = js.native
-  def getMeta(key: PluginKey[_]): js.Any = js.native
+  def getMeta(key: Plugin[_, S]): js.Any = js.native
+  def getMeta(key: PluginKey[_, S]): js.Any = js.native
   /**
     * Replace the given range, or the selection if no range is given,
     * with a text node containing the given string.
@@ -91,8 +91,8 @@ class Transaction[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     * name or by plugin.
     */
   def setMeta(key: java.lang.String, value: js.Any): Transaction[_] = js.native
-  def setMeta(key: PluginKey[_], value: js.Any): Transaction[_] = js.native
-  def setMeta(key: Plugin[_], value: js.Any): Transaction[_] = js.native
+  def setMeta(key: PluginKey[_, S], value: js.Any): Transaction[_] = js.native
+  def setMeta(key: Plugin[_, S], value: js.Any): Transaction[_] = js.native
   /**
     * Update the transaction's current selection. Will determine the
     * selection that the editor gets when the transaction is applied.

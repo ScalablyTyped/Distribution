@@ -7,12 +7,12 @@ import scala.scalajs.js.annotation._
 
 trait Result extends js.Object {
   /**
-    * Identifies the file that the analysis tool was instructed to scan. This need not be the same as the file
+    * Identifies the artifact that the analysis tool was instructed to scan. This need not be the same as the artifact
     * where the result actually occurred.
     */
-  var analysisTarget: js.UndefOr[FileLocation] = js.undefined
+  var analysisTarget: js.UndefOr[ArtifactLocation] = js.undefined
   /**
-    * A set of files relevant to the result.
+    * A set of artifacts relevant to the result.
     */
   var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
   /**
@@ -41,8 +41,7 @@ trait Result extends js.Object {
     */
   var graphTraversals: js.UndefOr[js.Array[GraphTraversal]] = js.undefined
   /**
-    * A dictionary, each of whose keys is the id of a graph and each of whose values is a 'graph' object with that
-    * id.
+    * A dictionary, each of whose keys is the id of a graph and each of whose values is a 'graph' object with that id.
     */
   var graphs: js.UndefOr[org.scalablytyped.runtime.StringDictionary[Graph]] = js.undefined
   /**
@@ -54,6 +53,10 @@ trait Result extends js.Object {
     */
   var instanceGuid: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * A value that categorizes results by evaluation state.
+    */
+  var kind: js.UndefOr[sarifLib.sarifMod.ResultNs.kind] = js.undefined
+  /**
     * A value specifying the severity level of the result.
     */
   var level: js.UndefOr[sarifLib.sarifMod.ResultNs.level] = js.undefined
@@ -63,8 +66,8 @@ trait Result extends js.Object {
     */
   var locations: js.UndefOr[js.Array[Location]] = js.undefined
   /**
-    * A message that describes the result. The first sentence of the message only will be displayed when visible
-    * space is limited.
+    * A message that describes the result. The first sentence of the message only will be displayed when visible space
+    * is limited.
     */
   var message: Message
   /**
@@ -91,6 +94,11 @@ trait Result extends js.Object {
     * A set of locations relevant to this result.
     */
   var relatedLocations: js.UndefOr[js.Array[Location]] = js.undefined
+  /**
+    * The index within the run.tool.extensions array of the tool component object which describes the plug-in or tool
+    * extension that produced the result.
+    */
+  var ruleExtensionIndex: js.UndefOr[scala.Double] = js.undefined
   /**
     * The stable, unique identifier of the rule, if any, to which this notification is relevant. This member can be
     * used to retrieve rule metadata from the rules dictionary, if it exists.

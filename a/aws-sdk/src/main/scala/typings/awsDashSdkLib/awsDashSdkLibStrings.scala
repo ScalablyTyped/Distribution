@@ -1219,6 +1219,9 @@ object awsDashSdkLibStrings {
   sealed trait ASSUME_ROLE_FAILED extends js.Object
   
   @js.native
+  sealed trait ATHENA extends js.Object
+  
+  @js.native
   sealed trait ATSC extends js.Object
   
   @js.native
@@ -2530,6 +2533,9 @@ object awsDashSdkLibStrings {
   sealed trait CREATE_NAMESPACE extends js.Object
   
   @js.native
+  sealed trait CREATE_NEW_REPORT extends js.Object
+  
+  @js.native
   sealed trait CREATE_OR_UPDATE extends js.Object
   
   @js.native
@@ -2984,6 +2990,18 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait DEGRADED extends js.Object
+  
+  @js.native
+  sealed trait DEGREES_180 extends js.Object
+  
+  @js.native
+  sealed trait DEGREES_270 extends js.Object
+  
+  @js.native
+  sealed trait DEGREES_90 extends js.Object
+  
+  @js.native
+  sealed trait DEGREE_0 extends js.Object
   
   @js.native
   sealed trait DEINTERLACE extends js.Object
@@ -7373,6 +7391,9 @@ object awsDashSdkLibStrings {
   
   @js.native
   sealed trait OVERWRITE_LATEST extends js.Object
+  
+  @js.native
+  sealed trait OVERWRITE_REPORT extends js.Object
   
   @js.native
   sealed trait OVER_MAX_INSTANCES extends js.Object
@@ -15407,6 +15428,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def ASSUME_ROLE_FAILED: ASSUME_ROLE_FAILED = "ASSUME_ROLE_FAILED".asInstanceOf[ASSUME_ROLE_FAILED]
   @scala.inline
+  def ATHENA: ATHENA = "ATHENA".asInstanceOf[ATHENA]
+  @scala.inline
   def ATSC: ATSC = "ATSC".asInstanceOf[ATSC]
   @scala.inline
   def ATTACHED: ATTACHED = "ATTACHED".asInstanceOf[ATTACHED]
@@ -16281,6 +16304,8 @@ object awsDashSdkLibStrings {
   @scala.inline
   def CREATE_NAMESPACE: CREATE_NAMESPACE = "CREATE_NAMESPACE".asInstanceOf[CREATE_NAMESPACE]
   @scala.inline
+  def CREATE_NEW_REPORT: CREATE_NEW_REPORT = "CREATE_NEW_REPORT".asInstanceOf[CREATE_NEW_REPORT]
+  @scala.inline
   def CREATE_OR_UPDATE: CREATE_OR_UPDATE = "CREATE_OR_UPDATE".asInstanceOf[CREATE_OR_UPDATE]
   @scala.inline
   def CREATE_PENDING: CREATE_PENDING = "CREATE_PENDING".asInstanceOf[CREATE_PENDING]
@@ -16584,6 +16609,14 @@ object awsDashSdkLibStrings {
   def DEFERRED: DEFERRED = "DEFERRED".asInstanceOf[DEFERRED]
   @scala.inline
   def DEGRADED: DEGRADED = "DEGRADED".asInstanceOf[DEGRADED]
+  @scala.inline
+  def DEGREES_180: DEGREES_180 = "DEGREES_180".asInstanceOf[DEGREES_180]
+  @scala.inline
+  def DEGREES_270: DEGREES_270 = "DEGREES_270".asInstanceOf[DEGREES_270]
+  @scala.inline
+  def DEGREES_90: DEGREES_90 = "DEGREES_90".asInstanceOf[DEGREES_90]
+  @scala.inline
+  def DEGREE_0: DEGREE_0 = "DEGREE_0".asInstanceOf[DEGREE_0]
   @scala.inline
   def DEINTERLACE: DEINTERLACE = "DEINTERLACE".asInstanceOf[DEINTERLACE]
   @scala.inline
@@ -19510,6 +19543,8 @@ object awsDashSdkLibStrings {
   def OVERWRITE: OVERWRITE = "OVERWRITE".asInstanceOf[OVERWRITE]
   @scala.inline
   def OVERWRITE_LATEST: OVERWRITE_LATEST = "OVERWRITE_LATEST".asInstanceOf[OVERWRITE_LATEST]
+  @scala.inline
+  def OVERWRITE_REPORT: OVERWRITE_REPORT = "OVERWRITE_REPORT".asInstanceOf[OVERWRITE_REPORT]
   @scala.inline
   def OVER_MAX_INSTANCES: OVER_MAX_INSTANCES = "OVER_MAX_INSTANCES".asInstanceOf[OVER_MAX_INSTANCES]
   @scala.inline

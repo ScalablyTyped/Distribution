@@ -7,13 +7,13 @@ import scala.scalajs.js.annotation._
 
 trait Replacement extends js.Object {
   /**
-    * The region of the file to delete.
+    * The region of the artifact to delete.
     */
   var deletedRegion: Region
   /**
     * The content to insert at the location specified by the 'deletedRegion' property.
     */
-  var insertedContent: js.UndefOr[FileContent] = js.undefined
+  var insertedContent: js.UndefOr[ArtifactContent] = js.undefined
   /**
     * Key/value pairs that provide additional information about the replacement.
     */

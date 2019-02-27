@@ -96,8 +96,8 @@ trait ExtraOptions extends js.Object {
     *
     * `<a [routerLink]="['../a']">Link to A</a>`
     *
-    * In other words, you're required to use `../` rather than `./`. The current default in v6
-    * is `legacy`, and this option will be removed in v7 to default to the corrected behavior.
+    * In other words, you're required to use `../` rather than `./`. This is currently the default
+    * behavior. Setting this option to `corrected` enables the fix.
     */
   var relativeLinkResolution: js.UndefOr[
     atAngularRouterLib.atAngularRouterLibStrings.legacy | atAngularRouterLib.atAngularRouterLibStrings.corrected

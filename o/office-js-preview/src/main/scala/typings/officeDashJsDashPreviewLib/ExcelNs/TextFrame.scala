@@ -91,6 +91,13 @@ class TextFrame ()
     * @beta
     */
   var rightMargin: scala.Double = js.native
+  /**
+    *
+    * Represents the text range in the text frame.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
   val textRange: TextRange = js.native
   /**
     *

@@ -25,7 +25,9 @@ trait SlicerItemLoadOptions extends js.Object {
   var hasData: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
-    * True if the slicer item is selected. Setting this value will not clear other SlicerItems' selected state.
+    * True if the slicer item is selected.
+    Setting this value will not clear other SlicerItems' selected state.
+    By default, if the slicer item is the only one selected, when it is deselected, all items will be selected.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

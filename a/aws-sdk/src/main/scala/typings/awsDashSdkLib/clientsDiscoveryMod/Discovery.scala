@@ -328,7 +328,7 @@ trait Discovery
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  DescribeExportConfigurations is deprecated. Use instead  DescribeExportTasks .
+    *  DescribeExportConfigurations is deprecated. Use DescribeImportTasks, instead.
     */
   def describeExportConfigurations(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeExportConfigurationsResponse, 
@@ -345,7 +345,7 @@ trait Discovery
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    *  DescribeExportConfigurations is deprecated. Use instead  DescribeExportTasks .
+    *  DescribeExportConfigurations is deprecated. Use DescribeImportTasks, instead.
     */
   def describeExportConfigurations(params: awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeExportConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsDiscoveryMod.DiscoveryNs.DescribeExportConfigurationsResponse, 

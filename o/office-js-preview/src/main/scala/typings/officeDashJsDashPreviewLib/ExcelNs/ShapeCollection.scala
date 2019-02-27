@@ -29,17 +29,9 @@ class ShapeCollection ()
     * @beta
     *
     * @param geometricShapeType Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
-    * @param left The distance, in points, from the left side of the shape to the left side of the worksheet.
-    * @param top The distance, in points, from the top edge of the shape to the top of the worksheet.
-    * @param width The width, in points, of the shape.
-    * @param height The height, in points, of the shape.
     */
   def addGeometricShape(
-    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ java.lang.String,
-    left: scala.Double,
-    top: scala.Double,
-    width: scala.Double,
-    height: scala.Double
+    geometricShapeType: /* import warning: LimitUnionLength.enterTypeRef Was union type with length 177 */ java.lang.String
   ): Shape = js.native
   /**
     *
@@ -49,18 +41,8 @@ class ShapeCollection ()
     * @beta
     *
     * @param geometricShapeType Represents the geometric type of the shape. See Excel.GeometricShapeType for details.
-    * @param left The distance, in points, from the left side of the shape to the left side of the worksheet.
-    * @param top The distance, in points, from the top edge of the shape to the top of the worksheet.
-    * @param width The width, in points, of the shape.
-    * @param height The height, in points, of the shape.
     */
-  def addGeometricShape(
-    geometricShapeType: GeometricShapeType,
-    left: scala.Double,
-    top: scala.Double,
-    width: scala.Double,
-    height: scala.Double
-  ): Shape = js.native
+  def addGeometricShape(geometricShapeType: GeometricShapeType): Shape = js.native
   /**
     *
     * Group a subset of shapes in a worksheet. Returns a Shape object that represents the new group of shapes.

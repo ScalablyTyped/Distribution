@@ -142,7 +142,7 @@ class ImapSimple protected ()
     callback: js.Function2[/* err */ nodeLib.Error, /* boxName */ java.lang.String, scala.Unit]
   ): scala.Unit = js.native
   def search(searchCriteria: js.Array[_], fetchOptions: imapLib.imapMod.ConnectionNs.FetchOptions): js.Promise[js.Array[Message]] = js.native
-  /** Search for and retrieve mail in the previously opened mailbox. */
+  /** Search for and retrieve mail in the currently open mailbox. */
   def search(
     searchCriteria: js.Array[_],
     fetchOptions: imapLib.imapMod.ConnectionNs.FetchOptions,

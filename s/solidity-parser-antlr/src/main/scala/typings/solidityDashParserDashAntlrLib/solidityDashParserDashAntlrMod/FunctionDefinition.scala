@@ -9,5 +9,7 @@ trait FunctionDefinition extends BaseASTNode {
   var body: Block | scala.Null
   var name: java.lang.String
   var parameters: ParameterList
+  @JSName("type")
+  var type_FunctionDefinition: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.FunctionDefinition
 }
 

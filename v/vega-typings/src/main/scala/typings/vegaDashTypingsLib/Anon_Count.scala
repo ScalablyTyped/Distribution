@@ -6,10 +6,9 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait Anon_Count extends js.Object {
-  var count: js.UndefOr[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef] = js.undefined
-  var extent: js.UndefOr[
-    (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
-  ] = js.undefined
-  var scheme: java.lang.String | js.Array[java.lang.String] | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.typesSpecSchemeMod.ColorScheme
+  var count: js.UndefOr[scala.Double] = js.undefined
+  var gradient: vegaDashTypingsLib.typesSpecEncodeMod.Field
+  var start: js.UndefOr[js.Array[scala.Double]] = js.undefined
+  var stop: js.UndefOr[js.Array[scala.Double]] = js.undefined
 }
 

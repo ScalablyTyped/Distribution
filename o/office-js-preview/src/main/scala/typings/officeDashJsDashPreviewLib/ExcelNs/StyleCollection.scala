@@ -53,7 +53,7 @@ class StyleCollection ()
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     *
-    * @param index Index value of the object to be retrieved. Zero-indexed.
+    * @param index Index value of the style object to be retrieved. Zero-indexed.
     */
   def getItemAt(index: scala.Double): Style = js.native
   /**

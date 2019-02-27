@@ -13,6 +13,6 @@ object prosemirrorDashKeymapMod extends js.Object {
     /* event */ stdLib.Event, 
     scala.Boolean
   ] = js.native
-  def keymap(bindings: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
+  def keymap(bindings: org.scalablytyped.runtime.StringDictionary[js.Any]): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
 }
 

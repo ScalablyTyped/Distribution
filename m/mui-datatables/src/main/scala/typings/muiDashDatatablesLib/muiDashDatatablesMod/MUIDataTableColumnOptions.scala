@@ -34,7 +34,7 @@ trait MUIDataTableColumnOptions extends js.Object {
       /* cellValue */ java.lang.String, 
       /* rowIndex */ scala.Double, 
       /* columnIndex */ scala.Double, 
-      java.lang.String
+      js.Object
     ]
   ] = js.undefined
   var sort: js.UndefOr[scala.Boolean] = js.undefined

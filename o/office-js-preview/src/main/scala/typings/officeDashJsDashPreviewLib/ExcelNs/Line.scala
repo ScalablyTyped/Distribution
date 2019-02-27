@@ -18,6 +18,46 @@ class Line ()
   extends officeDashJsDashPreviewLib.OfficeExtensionNs.ClientObject {
   /**
     *
+    * Represents the length of the arrowhead at the beginning of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var beginArrowHeadLength: ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = js.native
+  /**
+    *
+    * Represents the style of the arrowhead at the beginning of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var beginArrowHeadStyle: ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = js.native
+  /**
+    *
+    * Represents the width of the arrowhead at the beginning of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var beginArrowHeadWidth: ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = js.native
+  /**
+    *
+    * Represents the shape object that the beginning of the specified line is attached to. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val beginConnectedShape: Shape = js.native
+  /**
+    *
+    * Represents an integer that specifies the connection site that the beginning of a connector is connected to. Read-only. Returns null when the beginning of the line is not attached to any shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val beginConnectedSite: scala.Double = js.native
+  /**
+    *
     * Represents the connector type for the line.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -29,6 +69,46 @@ class Line ()
   var context_Line: RequestContext = js.native
   /**
     *
+    * Represents the length of the arrowhead at the end of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var endArrowHeadLength: ArrowHeadLength | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Short | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Long = js.native
+  /**
+    *
+    * Represents the style of the arrowhead at the end of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var endArrowHeadStyle: ArrowHeadStyle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.None | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Triangle | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Stealth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Diamond | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Oval | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Open = js.native
+  /**
+    *
+    * Represents the width of the arrowhead at the end of the specified line.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var endArrowHeadWidth: ArrowHeadWidth | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Narrow | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Medium | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Wide = js.native
+  /**
+    *
+    * Represents the shape object that the end of the specified line is attached to. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val endConnectedShape: Shape = js.native
+  /**
+    *
+    * Represents an integer that specifies the connection site that the end of a connector is connected to. Read-only. Returns null when the end of the line is not attached to any shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val endConnectedSite: scala.Double = js.native
+  /**
+    *
     * Represents the shape identifier. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -37,12 +117,66 @@ class Line ()
   val id: java.lang.String = js.native
   /**
     *
+    * Represents whether the beginning of the specified line is connected to a shape. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val isBeginConnected: scala.Boolean = js.native
+  /**
+    *
+    * Represents whether the end of the specified line is connected to a shape. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  val isEndConnected: scala.Boolean = js.native
+  /**
+    *
     * Returns the shape object for the line. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
   val shape: Shape = js.native
+  /**
+    *
+    * Attaches the beginning of the specified connector to a specified shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param shape The shape to attach the beginning of the connector to.
+    * @param connectionSite The connection site on the shape which the beginning of the connector attach to. Must be an integer between 0 and the connection site count(not included) of the specified shape.
+    */
+  def beginConnect(shape: Shape, connectionSite: scala.Double): scala.Unit = js.native
+  /**
+    *
+    * Detaches the beginning of the specified connector from the shape it's attached to.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def beginDisconnect(): scala.Unit = js.native
+  /**
+    *
+    * Attaches the end of the specified connector to a specified shape.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    *
+    * @param shape The shape to attach the end of the connector to.
+    * @param connectionSite The connection site on the shape which the end of the connector attach to. Must be an integer between 0 and the connection site count(not included) of the specified shape.
+    */
+  def endConnect(shape: Shape, connectionSite: scala.Double): scala.Unit = js.native
+  /**
+    *
+    * Detaches the end of the specified connector from the shape it's attached to.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  def endDisconnect(): scala.Unit = js.native
   /**
     * Queues up a command to load the specified properties of the object. You must call "context.sync()" before reading the properties.
     *

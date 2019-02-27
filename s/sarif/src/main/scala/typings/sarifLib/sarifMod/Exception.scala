@@ -11,8 +11,8 @@ trait Exception extends js.Object {
     */
   var innerExceptions: js.UndefOr[js.Array[Exception]] = js.undefined
   /**
-    * A string that identifies the kind of exception, for example, the fully qualified type name of an object that
-    * was thrown, or the symbolic name of a signal.
+    * A string that identifies the kind of exception, for example, the fully qualified type name of an object that was
+    * thrown, or the symbolic name of a signal.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mongoose-paginate-v2"
-version := "1.0-dt-20190107Z-003cd2"
+version := "1.0-dt-20190227Z-003cd2"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

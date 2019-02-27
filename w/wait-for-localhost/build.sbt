@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "wait-for-localhost"
-version := "2.0-dt-20181208Z-ae8211"
+version := "3.0-dt-20190225Z-f26c3f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

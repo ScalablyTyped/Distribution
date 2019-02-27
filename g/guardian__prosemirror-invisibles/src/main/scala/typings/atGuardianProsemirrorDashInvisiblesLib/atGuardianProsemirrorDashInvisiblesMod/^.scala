@@ -17,7 +17,7 @@ object ^ extends js.Object {
     builders: js.Array[
       atGuardianProsemirrorDashInvisiblesLib.atGuardianProsemirrorDashInvisiblesMod.Builder
     ]
-  ): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
+  ): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
   def hardBreak(): atGuardianProsemirrorDashInvisiblesLib.atGuardianProsemirrorDashInvisiblesMod.Builder = js.native
   def hardBreak(
     predicate: js.Function1[/* node */ prosemirrorDashModelLib.prosemirrorDashModelMod.Node[_], scala.Boolean]

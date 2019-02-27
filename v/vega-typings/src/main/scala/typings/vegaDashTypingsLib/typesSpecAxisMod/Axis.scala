@@ -19,7 +19,8 @@ trait Axis
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
       LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
-      vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue
+      vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
     ] {
   /**
     * Mark definitions for custom axis encoding.

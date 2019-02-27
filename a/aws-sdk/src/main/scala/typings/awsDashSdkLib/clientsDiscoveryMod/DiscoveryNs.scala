@@ -611,7 +611,7 @@ object DiscoveryNs extends js.Object {
       */
     var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
     /**
-      * A link to a compressed archive folder (in the ZIP format) that contains an error log and a file of failed records. You can use these two files to quickly identify records that failed, why they failed, and correct those records. Afterward, you can upload the corrected file to your Amazon S3 bucket and create another import task request. This field also includes authorization information so you can confirm the authenticity of the compressed archive before you download it. If some records failed to be imported we recommend that you correct the records in the failed entries file and then imports that failed entries file. This prevents you frmo having to correct and update the larger original file and attempt importing it again.
+      * A link to a compressed archive folder (in the ZIP format) that contains an error log and a file of failed records. You can use these two files to quickly identify records that failed, why they failed, and correct those records. Afterward, you can upload the corrected file to your Amazon S3 bucket and create another import task request. This field also includes authorization information so you can confirm the authenticity of the compressed archive before you download it. If some records failed to be imported we recommend that you correct the records in the failed entries file and then imports that failed entries file. This prevents you from having to correct and update the larger original file and attempt importing it again.
       */
     var errorsAndFailedEntriesZip: js.UndefOr[S3PresignedUrl] = js.undefined
     /**
@@ -1138,7 +1138,7 @@ object DiscoveryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeContinuousExportsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  DescribeExportConfigurations is deprecated. Use instead  DescribeExportTasks .
+      *  DescribeExportConfigurations is deprecated. Use DescribeImportTasks, instead.
       */
     def describeExportConfigurations(): awsDashSdkLib.libRequestMod.Request[DescribeExportConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeExportConfigurations(
@@ -1149,7 +1149,7 @@ object DiscoveryNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[DescribeExportConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      *  DescribeExportConfigurations is deprecated. Use instead  DescribeExportTasks .
+      *  DescribeExportConfigurations is deprecated. Use DescribeImportTasks, instead.
       */
     def describeExportConfigurations(params: DescribeExportConfigurationsRequest): awsDashSdkLib.libRequestMod.Request[DescribeExportConfigurationsResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def describeExportConfigurations(

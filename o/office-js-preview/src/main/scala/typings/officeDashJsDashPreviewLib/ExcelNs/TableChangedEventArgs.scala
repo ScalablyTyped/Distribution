@@ -28,6 +28,13 @@ trait TableChangedEventArgs extends js.Object {
   var changeType: DataChangeType | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.Unknown | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RangeEdited | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.RowDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.ColumnDeleted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellInserted | officeDashJsDashPreviewLib.officeDashJsDashPreviewLibStrings.CellDeleted
   /**
     *
+    * Represents the information about the change detail
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    */
+  var details: ChangedEventDetail
+  /**
+    *
     * Gets the source of the event. See Excel.EventSource for details.
     *
     * [Api set: ExcelApi 1.7]

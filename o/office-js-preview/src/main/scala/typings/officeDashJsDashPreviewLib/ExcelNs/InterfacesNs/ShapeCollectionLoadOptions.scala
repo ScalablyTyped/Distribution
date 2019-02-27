@@ -33,6 +33,14 @@ trait ShapeCollectionLoadOptions extends js.Object {
   var altTextTitle: js.UndefOr[scala.Boolean] = js.undefined
   /**
     *
+    * For EACH ITEM in the collection: Returns the number of connection sites on the specified shape. Read-only.
+    *
+    * [Api set: ExcelApi BETA (PREVIEW ONLY)]
+    * @beta
+    */
+  var connectionSiteCount: js.UndefOr[scala.Boolean] = js.undefined
+  /**
+    *
     * For EACH ITEM in the collection: Returns the fill formatting of the shape object.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

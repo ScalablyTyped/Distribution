@@ -8,8 +8,8 @@ import scala.scalajs.js.annotation._
 @JSImport("prosemirror-collab", JSImport.Namespace)
 @js.native
 object prosemirrorDashCollabMod extends js.Object {
-  def collab(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
-  def collab(config: prosemirrorDashCollabLib.Anon_ClientID): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_] = js.native
+  def collab(): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
+  def collab(config: prosemirrorDashCollabLib.Anon_ClientID): prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, _] = js.native
   def getVersion(state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[_]): scala.Double = js.native
   def receiveTransaction[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     state: prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S],

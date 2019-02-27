@@ -9,5 +9,7 @@ trait BinaryOperation extends BaseASTNode {
   var left: ASTNode
   var operator: BinOp
   var right: ASTNode
+  @JSName("type")
+  var type_BinaryOperation: solidityDashParserDashAntlrLib.solidityDashParserDashAntlrLibStrings.BinaryOperation
 }
 

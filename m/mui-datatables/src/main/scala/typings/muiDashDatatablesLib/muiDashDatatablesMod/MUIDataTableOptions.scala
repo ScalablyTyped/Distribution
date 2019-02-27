@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait MUIDataTableOptions extends js.Object {
-  var IsRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ js.Any, scala.Boolean]] = js.undefined
+  var IsRowSelectable: js.UndefOr[js.Function1[/* dataIndex */ scala.Double, scala.Boolean]] = js.undefined
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   var count: js.UndefOr[scala.Double] = js.undefined
   var customFooter: js.UndefOr[js.Function0[reactLib.reactMod.ReactNs.ReactNode]] = js.undefined
@@ -30,7 +30,7 @@ trait MUIDataTableOptions extends js.Object {
   ] = js.undefined
   var fixedHeader: js.UndefOr[scala.Boolean] = js.undefined
   var onCellClick: js.UndefOr[
-    js.Function2[/* colIndex */ scala.Double, /* rowIndex */ scala.Double, scala.Unit]
+    js.Function2[/* colData */ js.Any, /* cellMeta */ muiDashDatatablesLib.Anon_ColIndex, scala.Unit]
   ] = js.undefined
   var onChangePage: js.UndefOr[js.Function1[/* currentPage */ scala.Double, scala.Unit]] = js.undefined
   var onChangeRowsPerPage: js.UndefOr[js.Function1[/* numberOfRows */ scala.Double, scala.Unit]] = js.undefined
@@ -79,7 +79,7 @@ trait MUIDataTableOptions extends js.Object {
   var search: js.UndefOr[scala.Boolean] = js.undefined
   var selectableRows: js.UndefOr[scala.Boolean] = js.undefined
   var serverSide: js.UndefOr[scala.Boolean] = js.undefined
-  var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ scala.Double, _]] = js.undefined
+  var setRowProps: js.UndefOr[js.Function2[/* row */ js.Array[_], /* rowIndex */ scala.Double, js.Object]] = js.undefined
   var sort: js.UndefOr[scala.Boolean] = js.undefined
   var sortFilterList: js.UndefOr[scala.Boolean] = js.undefined
   var textLabels: js.UndefOr[MUIDataTableTextLabels] = js.undefined

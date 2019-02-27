@@ -34,17 +34,17 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
   def pop(): T = js.native
   /**
     * Adds a new item to the end of array.
-    * @param items Items  to be added
+    * @param items Items  to be added.
     */
   def push(items: T*): scala.Unit = js.native
   /**
     * Removes all values that equal item and returns them as an array.
-    * @param item The item to be removed
+    * @param item The item to be removed.
     */
   def remove(item: T): js.Array[T] = js.native
   /**
     * Removes all values and returns them as an array.
-    * @param removeFunction A function used to determine true if item should be removed and fasle otherwise
+    * @param removeFunction A function used to determine true if item should be removed and fasle otherwise.
     */
   def remove(removeFunction: js.Function1[/* item */ T, scala.Boolean]): js.Array[T] = js.native
   /**
@@ -52,15 +52,15 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
     */
   def removeAll(): js.Array[T] = js.native
   /**
-    * Removes all values that equal any of the supplied items
-    * @param items Items to be removed
+    * Removes all values that equal any of the supplied items.
+    * @param items Items to be removed.
     */
   def removeAll(items: js.Array[T]): js.Array[T] = js.native
   // Ko specific
   /**
-    * Replaces the first value that equals oldItem with newItem
-    * @param oldItem Item to be replaced
-    * @param newItem Replacing item
+    * Replaces the first value that equals oldItem with newItem.
+    * @param oldItem Item to be replaced.
+    * @param newItem Replacing item.
     */
   def replace(oldItem: T, newItem: T): scala.Unit = js.native
   /**
@@ -94,7 +94,7 @@ trait KnockoutObservableArrayFunctions[T] extends KnockoutReadonlyObservableArra
   def splice(start: scala.Double, deleteCount: scala.Double, items: T*): js.Array[T] = js.native
   /**
     * Inserts a new item at the beginning of the array.
-    * @param items Items to be added
+    * @param items Items to be added.
     */
   def unshift(items: T*): scala.Double = js.native
 }

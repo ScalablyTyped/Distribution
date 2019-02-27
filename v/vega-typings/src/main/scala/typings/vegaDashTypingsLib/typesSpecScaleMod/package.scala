@@ -15,7 +15,7 @@ package object typesSpecScaleMod {
   type RangeRaw = js.Array[
     scala.Null | scala.Boolean | java.lang.String | scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef
   ]
-  type RangeScheme = RangeEnum | RangeRaw | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Count
+  type RangeScheme = RangeEnum | RangeRaw | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_CountExtent
   type Scale = OrdinalScale | BandScale | PointScale | SequentialScale | TimeScale | IdentityScale | LinearScale | LogScale | SymLogScale | PowScale | SqrtScale | QuantileScale | QuantizeScale | ThresholdScale | BinOrdinalScale
   type ScaleBins = (js.Array[scala.Double | vegaDashTypingsLib.typesSpecSignalMod.SignalRef]) | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Start
   type ScaleData = (DataRef with vegaDashTypingsLib.Anon_Sort) | (MultiDataRef with vegaDashTypingsLib.Anon_SortUnionSortField)

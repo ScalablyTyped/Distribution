@@ -494,14 +494,14 @@ object ResourceGroupsNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[SearchResourcesOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+      * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
       */
     def tag(): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tag(
       callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ TagOutput, scala.Unit]
     ): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
-      * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+      * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
       */
     def tag(params: TagInput): awsDashSdkLib.libRequestMod.Request[TagOutput, awsDashSdkLib.libErrorMod.AWSError] = js.native
     def tag(

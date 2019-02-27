@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation._
 
 @JSImport("prosemirror-state", "Plugin")
 @js.native
-class Plugin[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] protected () extends js.Object {
+class Plugin[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] protected () extends js.Object {
   /**
     * Create a plugin.
     */
-  def this(spec: PluginSpec[S]) = this()
+  def this(spec: PluginSpec[T, S]) = this()
   /**
     * The [props](#view.EditorProps) exported by this plugin.
     */
@@ -19,10 +19,10 @@ class Plugin[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _
   /**
     * The plugin's [spec object](#state.PluginSpec).
     */
-  var spec: org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  var spec: PluginSpec[T, S] = js.native
   /**
     * Extract the plugin's state field from an editor state.
     */
-  def getState(state: EditorState[S]): js.Any = js.native
+  def getState(state: EditorState[S]): T = js.native
 }
 

@@ -220,6 +220,9 @@ object plotlyDotJsLibStrings {
   sealed trait contain extends js.Object
   
   @js.native
+  sealed trait container extends js.Object
+  
+  @js.native
   sealed trait contour extends js.Object
   
   @js.native
@@ -1591,6 +1594,8 @@ object plotlyDotJsLibStrings {
   def constant: constant = "constant".asInstanceOf[constant]
   @scala.inline
   def contain: contain = "contain".asInstanceOf[contain]
+  @scala.inline
+  def container: container = "container".asInstanceOf[container]
   @scala.inline
   def contour: contour = "contour".asInstanceOf[contour]
   @scala.inline

@@ -8,11 +8,11 @@ import scala.scalajs.js.annotation._
 @JSImport("p-map", JSImport.Namespace)
 @js.native
 object ^ extends js.Object {
-  def apply[T, M](input: stdLib.Iterable[pDashMapLib.Input[T]], mapper: pDashMapLib.Mapper[T, M]): js.Promise[js.Array[M]] = js.native
-  def apply[T, M](
-    input: stdLib.Iterable[pDashMapLib.Input[T]],
-    mapper: pDashMapLib.Mapper[T, M],
-    options: pDashMapLib.pDashMapMod.pMapNs.Options
-  ): js.Promise[js.Array[M]] = js.native
+  def default[Element, NewElement](input: stdLib.Iterable[Element], mapper: pDashMapLib.pDashMapMod.Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = js.native
+  def default[Element, NewElement](
+    input: stdLib.Iterable[Element],
+    mapper: pDashMapLib.pDashMapMod.Mapper[Element, NewElement],
+    options: pDashMapLib.pDashMapMod.Options
+  ): js.Promise[js.Array[NewElement]] = js.native
 }
 

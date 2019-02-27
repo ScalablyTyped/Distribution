@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("apollo-client/core/QueryManager", "QueryManager")
 @js.native
 class QueryManager[TStore] protected () extends js.Object {
-  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwareness: apolloDashClientLib.Anon_ClientAwareness[TStore]) = this()
+  def this(hasLinkQueryDeduplicationStoreOnBroadcastSsrModeClientAwarenessLocalState: apolloDashClientLib.Anon_ClientAwareness[TStore]) = this()
   var buildOperationForLink: js.Any = js.native
   var clientAwareness: js.Any = js.native
   var dataStore: apolloDashClientLib.dataStoreMod.DataStore[TStore] = js.native
@@ -21,21 +21,30 @@ class QueryManager[TStore] protected () extends js.Object {
   var idCounter: js.Any = js.native
   var invalidate: js.Any = js.native
   var link: apolloDashLinkLib.apolloDashLinkMod.ApolloLink = js.native
+  var localState: js.Any = js.native
   var mutationStore: apolloDashClientLib.dataMutationsMod.MutationStore = js.native
+  var nextPoll: js.Any = js.native
   var onBroadcast: js.Any = js.native
+  var pollingInfoByQueryId: js.Any = js.native
+  var prepareContext: js.Any = js.native
   var queries: js.Any = js.native
   var queryDeduplication: js.Any = js.native
   var queryIdsByName: js.Any = js.native
   var queryStore: apolloDashClientLib.dataQueriesMod.QueryStore = js.native
   var refetchQueryByName: js.Any = js.native
-  var scheduler: apolloDashClientLib.schedulerSchedulerMod.QueryScheduler[TStore] = js.native
+  var schedulePoll: js.Any = js.native
   var setQuery: js.Any = js.native
+  var ssrMode: js.Any = js.native
+  var stopQueryInStoreNoBroadcast: js.Any = js.native
+  var stopQueryNoBroadcast: js.Any = js.native
   def addObservableQuery[T](
     queryId: java.lang.String,
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
   ): scala.Unit = js.native
   def addQueryListener(queryId: java.lang.String, listener: apolloDashClientLib.coreTypesMod.QueryListener): scala.Unit = js.native
   def broadcastQueries(): scala.Unit = js.native
+  def broadcastQueries(forceResolvers: scala.Boolean): scala.Unit = js.native
+  def checkInFlight(queryId: java.lang.String): scala.Boolean = js.native
   def clearStore(): js.Promise[scala.Unit] = js.native
   def fetchQuery[T](
     queryId: java.lang.String,
@@ -66,6 +75,7 @@ class QueryManager[TStore] protected () extends js.Object {
     observableQuery: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables],
     optimistic: scala.Boolean
   ): apolloDashClientLib.Anon_Data[T] = js.native
+  def getLocalState(): apolloDashClientLib.coreLocalStateMod.LocalState[TStore] = js.native
   def getQueryWithPreviousResult[T](
     queryIdOrObservable: apolloDashClientLib.coreObservableQueryMod.ObservableQuery[T, apolloDashClientLib.coreTypesMod.OperationVariables]
   ): apolloDashClientLib.Anon_Document = js.native
@@ -91,15 +101,25 @@ class QueryManager[TStore] protected () extends js.Object {
   def removeObservableQuery(queryId: java.lang.String): scala.Unit = js.native
   def removeQuery(queryId: java.lang.String): scala.Unit = js.native
   def resetStore(): js.Promise[js.Array[apolloDashClientLib.coreTypesMod.ApolloQueryResult[_]]] = js.native
-  def startGraphQLSubscription(
+  def startGraphQLSubscription[T](
     options: apolloDashClientLib.coreWatchQueryOptionsMod.SubscriptionOptions[apolloDashClientLib.coreTypesMod.OperationVariables]
-  ): apolloDashClientLib.utilObservableMod.Observable[_] = js.native
+  ): apolloDashClientLib.utilObservableMod.Observable[T] = js.native
+  def startPollingQuery(
+    options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
+    queryId: java.lang.String
+  ): java.lang.String = js.native
+  def startPollingQuery(
+    options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
+    queryId: java.lang.String,
+    listener: apolloDashClientLib.coreTypesMod.QueryListener
+  ): java.lang.String = js.native
   def startQuery[T](
     queryId: java.lang.String,
     options: apolloDashClientLib.coreWatchQueryOptionsMod.WatchQueryOptions[apolloDashClientLib.coreTypesMod.OperationVariables],
     listener: apolloDashClientLib.coreTypesMod.QueryListener
   ): java.lang.String = js.native
   def stop(): scala.Unit = js.native
+  def stopPollingQuery(queryId: java.lang.String): scala.Unit = js.native
   def stopQuery(queryId: java.lang.String): scala.Unit = js.native
   def stopQueryInStore(queryId: java.lang.String): scala.Unit = js.native
   def updateQueryWatch(

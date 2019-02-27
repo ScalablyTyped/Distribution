@@ -19,7 +19,8 @@ package object typesSpecConfigMod {
     vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
     vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
     vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
-    vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue
+    vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
+    vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
   ]
   type AxisConfigKeys = vegaDashTypingsLib.vegaDashTypingsLibStrings.axis | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisX | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisY | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisTop | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisRight | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBottom | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisLeft | vegaDashTypingsLib.vegaDashTypingsLibStrings.axisBand
   type DefaultsConfig = stdLib.Record[

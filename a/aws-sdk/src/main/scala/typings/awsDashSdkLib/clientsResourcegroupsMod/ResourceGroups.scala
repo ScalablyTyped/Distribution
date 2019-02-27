@@ -291,7 +291,7 @@ trait ResourceGroups
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+    * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
     */
   def tag(): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.TagOutput, 
@@ -308,7 +308,7 @@ trait ResourceGroups
     awsDashSdkLib.libErrorMod.AWSError
   ] = js.native
   /**
-    * Adds specified tags to a resource with the specified ARN. Existing tags on a resource are not changed if they are not specified in the request parameters.
+    * Adds tags to a resource group with the specified ARN. Existing tags on a resource group are not changed if they are not specified in the request parameters.
     */
   def tag(params: awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.TagInput): awsDashSdkLib.libRequestMod.Request[
     awsDashSdkLib.clientsResourcegroupsMod.ResourceGroupsNs.TagOutput, 

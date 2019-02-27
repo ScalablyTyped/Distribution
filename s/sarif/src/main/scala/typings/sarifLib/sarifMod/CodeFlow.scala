@@ -15,8 +15,8 @@ trait CodeFlow extends js.Object {
     */
   var properties: js.UndefOr[PropertyBag] = js.undefined
   /**
-    * An array of one or more unique threadFlow objects, each of which describes the progress of a program through
-    * a thread of execution.
+    * An array of one or more unique threadFlow objects, each of which describes the progress of a program through a
+    * thread of execution.
     */
   var threadFlows: js.Array[ThreadFlow]
 }

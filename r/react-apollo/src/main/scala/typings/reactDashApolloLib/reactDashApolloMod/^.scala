@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   val ApolloConsumer: reactLib.reactMod.ReactNs.StatelessComponent[reactDashApolloLib.apolloconsumerMod.ApolloConsumerProps] = js.native
-  val compose: js.Any = js.native
+  def compose(funcs: js.Function*): js.Function1[/* repeated */ js.Any, _] = js.native
   def getDataFromTree(tree: reactLib.reactMod.ReactNs.ReactNode): js.Promise[java.lang.String] = js.native
   def getDataFromTree(
     tree: reactLib.reactMod.ReactNs.ReactNode,
@@ -28,31 +28,6 @@ object ^ extends js.Object {
     reactLib.reactMod.ReactNs.ComponentClass[TProps, _]
   ] = js.native
   def renderToStringWithData(component: reactLib.reactMod.ReactNs.ReactElement[_]): js.Promise[java.lang.String] = js.native
-  def walkTree(
-    element: reactLib.reactMod.ReactNs.ReactNode,
-    context: reactDashApolloLib.walkTreeMod.Context,
-    visitor: js.Function5[
-      /* element */ reactLib.reactMod.ReactNs.ReactNode, 
-      /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
-      /* context */ reactDashApolloLib.walkTreeMod.Context, 
-      /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
-      scala.Boolean | scala.Unit
-    ]
-  ): scala.Unit = js.native
-  def walkTree(
-    element: reactLib.reactMod.ReactNs.ReactNode,
-    context: reactDashApolloLib.walkTreeMod.Context,
-    visitor: js.Function5[
-      /* element */ reactLib.reactMod.ReactNs.ReactNode, 
-      /* instance */ (reactLib.reactMod.Component[_, js.Object, _]) | scala.Null, 
-      /* newContextMap */ lodashLib.lodashMod.Global.Map[_, _], 
-      /* context */ reactDashApolloLib.walkTreeMod.Context, 
-      /* childContext */ js.UndefOr[reactDashApolloLib.walkTreeMod.Context], 
-      scala.Boolean | scala.Unit
-    ],
-    newContext: lodashLib.lodashMod.Global.Map[_, _]
-  ): scala.Unit = js.native
   def withApollo[TProps, TResult](
     WrappedComponent: reactLib.reactMod.ReactNs.ComponentType[reactDashApolloLib.withApolloMod.WithApolloClient[TProps]]
   ): reactLib.reactMod.ReactNs.ComponentClass[TProps, reactLib.reactMod.ReactNs.ComponentState] = js.native

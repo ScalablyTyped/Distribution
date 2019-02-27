@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aurelia-knockout"
-version := "2.3.0-c2588a"
+version := "2.3.0-35d056"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "aurelia-path" % "1.1.2-acabaf",
   "org.scalablytyped" %%% "aurelia-task-queue" % "1.3.2-b73df8",
   "org.scalablytyped" %%% "aurelia-templating" % "1.10.1-451b4e",
-  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190102Z-ee7cdc",
+  "org.scalablytyped" %%% "knockout" % "v3.4.0-dt-20190218Z-45e11c",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

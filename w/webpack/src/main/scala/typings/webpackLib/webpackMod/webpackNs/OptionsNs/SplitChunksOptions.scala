@@ -6,6 +6,8 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 trait SplitChunksOptions extends js.Object {
+  /** Override the default name separator (~) when generating names automatically (name: true)  */
+  var automaticNameDelimiter: js.UndefOr[java.lang.String] = js.undefined
   /** Assign modules to a cache group (modules from different cache groups are tried to keep in separate chunks) */
   var cacheGroups: js.UndefOr[
     webpackLib.webpackLibNumbers.`false` | java.lang.String | (js.Function1[/* repeated */ js.Any, _]) | stdLib.RegExp | (org.scalablytyped.runtime.StringDictionary[CacheGroupsOptions | webpackLib.webpackLibNumbers.`false`])

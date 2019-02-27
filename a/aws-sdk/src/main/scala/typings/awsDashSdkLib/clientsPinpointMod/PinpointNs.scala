@@ -651,6 +651,10 @@ object PinpointNs extends js.Object {
   
   trait ApplicationResponse extends js.Object {
     /**
+      * The arn for the application.
+      */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
       * The unique application ID.
       */
     var Id: js.UndefOr[__string] = js.undefined
@@ -658,6 +662,10 @@ object PinpointNs extends js.Object {
       * The display name of the application.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The Tags for the application.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait ApplicationSettingsResource extends js.Object {
@@ -925,6 +933,10 @@ object PinpointNs extends js.Object {
       */
     var ApplicationId: js.UndefOr[__string] = js.undefined
     /**
+      * The arn for the campaign.
+      */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
       * The date the campaign was created in ISO 8601 format.
       */
     var CreationDate: js.UndefOr[__string] = js.undefined
@@ -997,6 +1009,10 @@ object PinpointNs extends js.Object {
       * The campaign version number.
       */
     var Version: js.UndefOr[__integer] = js.undefined
+    /**
+      * The Tags for the campaign.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait CampaignSmsMessage extends js.Object {
@@ -1099,6 +1115,10 @@ object PinpointNs extends js.Object {
       * The display name of the application. Used in the Amazon Pinpoint console.
       */
     var Name: js.UndefOr[__string] = js.undefined
+    /**
+      * The Tags for the app.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait CreateCampaignRequest extends js.Object {
@@ -2904,6 +2924,14 @@ object PinpointNs extends js.Object {
     var EventsItemResponse: js.UndefOr[MapOfEventItemResponse] = js.undefined
   }
   
+  trait ListTagsForResourceRequest extends js.Object {
+    var ResourceArn: __string
+  }
+  
+  trait ListTagsForResourceResponse extends js.Object {
+    var TagsModel: TagsModel
+  }
+  
   trait MapOfAddressConfiguration
     extends /* key */ org.scalablytyped.runtime.StringDictionary[AddressConfiguration]
   
@@ -3661,6 +3689,10 @@ object PinpointNs extends js.Object {
       */
     var ApplicationId: js.UndefOr[__string] = js.undefined
     /**
+      * The arn for the segment.
+      */
+    var Arn: js.UndefOr[__string] = js.undefined
+    /**
       * The date and time when the segment was created.
       */
     var CreationDate: js.UndefOr[__string] = js.undefined
@@ -3698,6 +3730,10 @@ object PinpointNs extends js.Object {
       * The segment version number.
       */
     var Version: js.UndefOr[__integer] = js.undefined
+    /**
+      * The Tags for the segment.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait SegmentsResponse extends js.Object {
@@ -3825,6 +3861,15 @@ object PinpointNs extends js.Object {
       * The textual data of the content.
       */
     var Data: js.UndefOr[__string] = js.undefined
+  }
+  
+  trait TagResourceRequest extends js.Object {
+    var ResourceArn: __string
+    var TagsModel: TagsModel
+  }
+  
+  trait TagsModel extends js.Object {
+    var tags: MapOf__string
   }
   
   trait TreatmentResource extends js.Object {
@@ -5067,6 +5112,29 @@ object PinpointNs extends js.Object {
         ]
     ): awsDashSdkLib.libRequestMod.Request[GetVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
+      * 
+      */
+    def listTagsForResource(): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def listTagsForResource(params: ListTagsForResourceRequest): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def listTagsForResource(
+      params: ListTagsForResourceRequest,
+      callback: js.Function2[
+          /* err */ awsDashSdkLib.libErrorMod.AWSError, 
+          /* data */ ListTagsForResourceResponse, 
+          scala.Unit
+        ]
+    ): awsDashSdkLib.libRequestMod.Request[ListTagsForResourceResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
       * Returns information about the specified phone number.
       */
     def phoneNumberValidate(): awsDashSdkLib.libRequestMod.Request[PhoneNumberValidateResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
@@ -5204,6 +5272,36 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[SendUsersMessagesResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def tagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def tagResource(params: TagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def tagResource(
+      params: TagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def untagResource(): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    /**
+      * 
+      */
+    def untagResource(params: UntagResourceRequest): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
+    def untagResource(
+      params: UntagResourceRequest,
+      callback: js.Function2[/* err */ awsDashSdkLib.libErrorMod.AWSError, /* data */ js.Object, scala.Unit]
+    ): awsDashSdkLib.libRequestMod.Request[js.Object, awsDashSdkLib.libErrorMod.AWSError] = js.native
     /**
       * Update an ADM channel.
       */
@@ -5549,6 +5647,14 @@ object PinpointNs extends js.Object {
           scala.Unit
         ]
     ): awsDashSdkLib.libRequestMod.Request[UpdateVoiceChannelResponse, awsDashSdkLib.libErrorMod.AWSError] = js.native
+  }
+  
+  trait UntagResourceRequest extends js.Object {
+    var ResourceArn: __string
+    /**
+      * The key(s) of tag to be deleted
+      */
+    var TagKeys: ListOf__string
   }
   
   trait UpdateAdmChannelRequest extends js.Object {
@@ -5898,6 +6004,10 @@ object PinpointNs extends js.Object {
       * The custom name of a variation of the campaign used for A/B testing.
       */
     var TreatmentName: js.UndefOr[__string] = js.undefined
+    /**
+      * The Tags for the campaign.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait WriteEventStream extends js.Object {
@@ -5926,6 +6036,10 @@ object PinpointNs extends js.Object {
       * A segment group, which consists of zero or more source segments, plus dimensions that are applied to those source segments. Your request can only include one segment group. Your request can include either a SegmentGroups object or a Dimensions object, but not both.
       */
     var SegmentGroups: js.UndefOr[SegmentGroupList] = js.undefined
+    /**
+      * The Tags for the segments.
+      */
+    var tags: js.UndefOr[MapOf__string] = js.undefined
   }
   
   trait WriteTreatmentResource extends js.Object {

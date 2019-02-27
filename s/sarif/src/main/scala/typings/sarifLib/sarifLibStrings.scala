@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation._
 
 object sarifLibStrings {
   @js.native
-  sealed trait `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-09` extends js.Object
+  sealed trait `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` extends js.Object
   
   @js.native
   sealed trait absent extends js.Object
@@ -31,7 +31,7 @@ object sarifLibStrings {
   sealed trait essential extends js.Object
   
   @js.native
-  sealed trait existing extends js.Object
+  sealed trait fail extends js.Object
   
   @js.native
   sealed trait important extends js.Object
@@ -41,6 +41,9 @@ object sarifLibStrings {
   
   @js.native
   sealed trait `new` extends js.Object
+  
+  @js.native
+  sealed trait none extends js.Object
   
   @js.native
   sealed trait notApplicable extends js.Object
@@ -64,6 +67,9 @@ object sarifLibStrings {
   sealed trait resultFile extends js.Object
   
   @js.native
+  sealed trait review extends js.Object
+  
+  @js.native
   sealed trait standardStream extends js.Object
   
   @js.native
@@ -73,7 +79,13 @@ object sarifLibStrings {
   sealed trait suppressedInSource extends js.Object
   
   @js.native
+  sealed trait toolComponent extends js.Object
+  
+  @js.native
   sealed trait traceFile extends js.Object
+  
+  @js.native
+  sealed trait unchanged extends js.Object
   
   @js.native
   sealed trait uncontrolledFile extends js.Object
@@ -88,13 +100,16 @@ object sarifLibStrings {
   sealed trait unmodifiedFile extends js.Object
   
   @js.native
+  sealed trait updated extends js.Object
+  
+  @js.native
   sealed trait utf16CodeUnits extends js.Object
   
   @js.native
   sealed trait warning extends js.Object
   
   @scala.inline
-  def `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-09`: `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-09` = "2.0.0-csd.2.beta.2019-01-09".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-09`]
+  def `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`: `2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24` = "2.0.0-csd.2.beta.2019-01-24".asInstanceOf[`2DOT0DOT0-csdDOT2DOTbetaDOT2019-01-24`]
   @scala.inline
   def absent: absent = "absent".asInstanceOf[absent]
   @scala.inline
@@ -110,13 +125,15 @@ object sarifLibStrings {
   @scala.inline
   def essential: essential = "essential".asInstanceOf[essential]
   @scala.inline
-  def existing: existing = "existing".asInstanceOf[existing]
+  def fail: fail = "fail".asInstanceOf[fail]
   @scala.inline
   def important: important = "important".asInstanceOf[important]
   @scala.inline
   def modifiedFile: modifiedFile = "modifiedFile".asInstanceOf[modifiedFile]
   @scala.inline
   def `new`: `new` = "new".asInstanceOf[`new`]
+  @scala.inline
+  def none: none = "none".asInstanceOf[none]
   @scala.inline
   def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
   @scala.inline
@@ -132,13 +149,19 @@ object sarifLibStrings {
   @scala.inline
   def resultFile: resultFile = "resultFile".asInstanceOf[resultFile]
   @scala.inline
+  def review: review = "review".asInstanceOf[review]
+  @scala.inline
   def standardStream: standardStream = "standardStream".asInstanceOf[standardStream]
   @scala.inline
   def suppressedExternally: suppressedExternally = "suppressedExternally".asInstanceOf[suppressedExternally]
   @scala.inline
   def suppressedInSource: suppressedInSource = "suppressedInSource".asInstanceOf[suppressedInSource]
   @scala.inline
+  def toolComponent: toolComponent = "toolComponent".asInstanceOf[toolComponent]
+  @scala.inline
   def traceFile: traceFile = "traceFile".asInstanceOf[traceFile]
+  @scala.inline
+  def unchanged: unchanged = "unchanged".asInstanceOf[unchanged]
   @scala.inline
   def uncontrolledFile: uncontrolledFile = "uncontrolledFile".asInstanceOf[uncontrolledFile]
   @scala.inline
@@ -147,6 +170,8 @@ object sarifLibStrings {
   def unimportant: unimportant = "unimportant".asInstanceOf[unimportant]
   @scala.inline
   def unmodifiedFile: unmodifiedFile = "unmodifiedFile".asInstanceOf[unmodifiedFile]
+  @scala.inline
+  def updated: updated = "updated".asInstanceOf[updated]
   @scala.inline
   def utf16CodeUnits: utf16CodeUnits = "utf16CodeUnits".asInstanceOf[utf16CodeUnits]
   @scala.inline

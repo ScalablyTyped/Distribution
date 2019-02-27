@@ -40,6 +40,11 @@ import scala.scalajs.js.annotation._
   		 */
   var methods: js.UndefOr[Methods] = js.undefined
   /**
+  		 * 数据监听器可以用于监听和响应任何属性和数据字段的变化。从小程序基础库版本 2.6.1 开始支持
+  		 * @since 2.6.1
+  		 */
+  var observers: js.UndefOr[ObserversDefs[Instance]] = js.undefined
+  /**
   		 * 一些组件选项，请参见文档其他部分的说明
   		 */
   var options: js.UndefOr[stdLib.Partial[weixinDashAppLib.Anon_AddGlobalClass]] = js.undefined

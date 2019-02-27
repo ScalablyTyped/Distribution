@@ -70,12 +70,12 @@ trait Static extends js.Object {
     js.Array[T], 
     js.Array[U]
   ] = js.native
-  def adjust[T](fn: js.Function1[/* a */ T, T], index: scala.Double): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
+  def adjust[T](index: scala.Double, fn: js.Function1[/* a */ T, T]): js.Function1[/* list */ js.Array[T], js.Array[T]] = js.native
   /**
     * Applies a function to the value at the given index of an array, returning a new copy of the array with the
     * element at the given index replaced with the result of the function application.
     */
-  def adjust[T](fn: js.Function1[/* a */ T, T], index: scala.Double, list: js.Array[T]): js.Array[T] = js.native
+  def adjust[T](index: scala.Double, fn: js.Function1[/* a */ T, T], list: js.Array[T]): js.Array[T] = js.native
   def all[T](fn: js.Function1[/* a */ T, scala.Boolean]): js.Function1[/* list */ js.Array[T], scala.Boolean] = js.native
   /**
     * Returns true if all elements of the list match the predicate, false if there are any that don't.

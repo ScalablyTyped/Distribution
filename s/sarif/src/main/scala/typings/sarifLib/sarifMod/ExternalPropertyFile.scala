@@ -9,7 +9,7 @@ trait ExternalPropertyFile extends js.Object {
   /**
     * The location of the external property file.
     */
-  var fileLocation: js.UndefOr[FileLocation] = js.undefined
+  var artifactLocation: js.UndefOr[ArtifactLocation] = js.undefined
   /**
     * A stable, unique identifer for the external property file in the form of a GUID.
     */

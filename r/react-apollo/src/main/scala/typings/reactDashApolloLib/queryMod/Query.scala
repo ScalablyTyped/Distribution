@@ -15,6 +15,7 @@ trait Query[TData, TVariables]
   var getQueryResult: js.Any = js.native
   var hasMounted: js.Any = js.native
   var initializeQueryObservable: js.Any = js.native
+  var lastResult: js.Any = js.native
   var operation: js.UndefOr[js.Any] = js.native
   var previousData: js.Any = js.native
   var queryObservable: js.UndefOr[js.Any] = js.native

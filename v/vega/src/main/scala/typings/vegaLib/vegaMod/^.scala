@@ -19,8 +19,7 @@ object ^ extends js.Object {
   def accessorFields(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): js.Array[java.lang.String] = js.native
   def accessorName(fn: vegaDashUtilLib.vegaDashUtilMod.AccessorFn[_]): java.lang.String = js.native
   def array[T](v: T): js.Array[T] = js.native
-  @JSName("array")
-  def array_TArrayT[T /* <: js.Array[_] */](v: T): T = js.native
+  def array[T](v: js.Array[T]): js.Array[T] = js.native
   def changeset(): vegaDashTypingsLib.typesRuntimeMod.Changeset = js.native
   def clampRange(range: js.Array[scala.Double], min: scala.Double, max: scala.Double): js.Array[scala.Double] = js.native
   def compare(fields: java.lang.String): js.Function2[/* a */ js.Any, /* b */ js.Any, scala.Double] = js.native
@@ -74,7 +73,7 @@ object ^ extends js.Object {
   def inferType(values: js.Array[_]): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
   def inferType(values: js.Array[_], field: java.lang.String): vegaDashTypingsLib.typesRuntimeMod.TypeInference = js.native
   def inferTypes(values: js.Array[_], fields: js.Array[java.lang.String]): org.scalablytyped.runtime.StringDictionary[vegaDashTypingsLib.typesRuntimeMod.TypeInference] = js.native
-  def inherits(child: stdLib.ObjectConstructor, parent: stdLib.ObjectConstructor): js.Object = js.native
+  def inherits[C /* <: js.Object */, P /* <: js.Object */](child: C, parent: P): C with P = js.native
   def inrange(value: scala.Double, range: js.Array[scala.Double], left: scala.Boolean, right: scala.Boolean): scala.Boolean = js.native
   def isArray[T](a: js.Any): /* is std.Array<T> */ scala.Boolean = js.native
   def isArray[T](a: js.Array[T]): /* is std.Array<T> */ scala.Boolean = js.native
@@ -87,6 +86,7 @@ object ^ extends js.Object {
   def isString(a: js.Any): /* is string */ scala.Boolean = js.native
   def key(fields: js.Array[java.lang.String]): js.Function1[/* _ */ js.Object, java.lang.String] = js.native
   def key(fields: js.Array[java.lang.String], flat: scala.Boolean): js.Function1[/* _ */ js.Object, java.lang.String] = js.native
+  def lerp(array: js.Array[scala.Double], fraction: scala.Double): scala.Double = js.native
   def loader(): vegaDashTypingsLib.typesRuntimeMod.Loader = js.native
   def loader(opt: vegaDashTypingsLib.typesRuntimeMod.LoaderOptions): vegaDashTypingsLib.typesRuntimeMod.Loader = js.native
   def log(args: js.Any*): scala.Unit = js.native

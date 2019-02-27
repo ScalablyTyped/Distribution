@@ -5,8 +5,8 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY]
-  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY] {
+trait LegendConfig[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN]
+  extends vegaDashTypingsLib.typesSpecLegendMod.BaseLegend[N, NS, S, C, FW, FS, A, TB, LA, LO, SY, DA, O, AN] {
   /**
     * The default direction (`"horizontal"` or `"vertical"`) for gradient legends.
     *

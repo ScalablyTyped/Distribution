@@ -87,7 +87,7 @@ class Slicer ()
   val slicerItems: SlicerItemCollection = js.native
   /**
     *
-    * Represents the sort order of the items in the slicer.
+    * Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -103,7 +103,7 @@ class Slicer ()
   var style: java.lang.String = js.native
   /**
     *
-    * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+    * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
     Throws an invalid argument exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
@@ -145,7 +145,7 @@ class Slicer ()
   def delete(): scala.Unit = js.native
   /**
     *
-    * Returns an array of selected items' names. Read-only.
+    * Returns an array of selected items' keys. Read-only.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -173,8 +173,8 @@ class Slicer ()
   def load(option: officeDashJsDashPreviewLib.ExcelNs.InterfacesNs.SlicerLoadOptions): Slicer = js.native
   /**
     *
-    * Select slicer items based on their names. Previous selection will be cleared.
-    All items will be deselected if the array is empty.
+    * Select slicer items based on their keys. Previous selection will be cleared.
+    All items will be selected by default if the array is empty.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta

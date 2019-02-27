@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 
 trait LogicalLocation extends js.Object {
   /**
-    * The machine-readable name for the logical location, such as a mangled function name provided by a C++
-    * compiler that encodes calling convention, return type and other details along with the function name.
+    * The machine-readable name for the logical location, such as a mangled function name provided by a C++ compiler
+    * that encodes calling convention, return type and other details along with the function name.
     */
   var decoratedName: js.UndefOr[java.lang.String] = js.undefined
   /**
@@ -17,8 +17,8 @@ trait LogicalLocation extends js.Object {
   var fullyQualifiedName: js.UndefOr[java.lang.String] = js.undefined
   /**
     * The type of construct this logical location component refers to. Should be one of 'function', 'member',
-    * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', or 'variable', if any of those
-    * accurately describe the construct.
+    * 'module', 'namespace', 'parameter', 'resource', 'returnType', 'type', or 'variable', if any of those accurately
+    * describe the construct.
     */
   var kind: js.UndefOr[java.lang.String] = js.undefined
   /**

@@ -24,6 +24,7 @@ trait Schema[T] extends js.Object {
   def notOneOf(arrayOfValues: js.Array[_]): this.type = js.native
   def notOneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native
   def notRequired(): this.type = js.native
+  def nullable(): this.type = js.native
   def nullable(isNullable: scala.Boolean): this.type = js.native
   def oneOf(arrayOfValues: js.Array[_]): this.type = js.native
   def oneOf(arrayOfValues: js.Array[_], message: TestOptionsMessage): this.type = js.native

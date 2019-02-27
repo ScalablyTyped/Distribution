@@ -17,6 +17,11 @@ trait Options extends js.Object {
     */
   var hideCursor: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Indent the spinner with the given number of spaces.
+    * @default 0
+    */
+  var indent: js.UndefOr[scala.Double] = js.undefined
+  /**
     * Interval between each frame.
     *
     * Spinners provide their own recommended interval, so you don't really need to specify this.

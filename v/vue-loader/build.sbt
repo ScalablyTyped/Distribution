@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vue-loader"
-version := "15.6.4-d586b4"
+version := "15.6.4-9b7034"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -15,7 +15,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "escape-string-regexp" % "1.0-dt-20180721Z-964066",
   "org.scalablytyped" %%% "hash-sum" % "1.0-dt-20180822Z-0cb154",
   "org.scalablytyped" %%% "js-base64" % "2.3-dt-20180214Z-0003cc",
-  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-a2aa92",
+  "org.scalablytyped" %%% "loader-utils" % "1.1-dt-20180306Z-75a986",
   "org.scalablytyped" %%% "lru-cache" % "5.1-dt-20190222Z-47a544",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "postcss" % "5.2.18-c422cf",
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-2fd0f1",
   "org.scalablytyped" %%% "uglify-js" % "3.0-dt-20181015Z-876284",
   "org.scalablytyped" %%% "vue__component-compiler-utils" % "2.6.0-516148",
-  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190116Z-6c85ea")
+  "org.scalablytyped" %%% "webpack" % "4.4-dt-20190222Z-7472f2")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))

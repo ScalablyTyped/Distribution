@@ -19,7 +19,7 @@ trait KnockoutComputed[T]
     */
   def dispose(): scala.Unit = js.native
   /**
-    * Customizes observables basic functionality
+    * Customizes observables basic functionality.
     * @param requestedExtenders Name of the extender feature and it's value, e.g. { notify: 'always' }, { rateLimit: 50 }
     */
   @JSName("extend")

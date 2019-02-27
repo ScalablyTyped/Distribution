@@ -8,6 +8,8 @@ import scala.scalajs.js.annotation._
 trait LockOptions extends js.Object {
    // default: true
   var fs: js.UndefOr[js.Any] = js.undefined
+   // default: (err) => throw err
+  var lockfilePath: js.UndefOr[java.lang.String] = js.undefined
    // default: graceful-fs
   var onCompromised: js.UndefOr[js.Function1[/* err */ stdLib.Error, _]] = js.undefined
    // default: 0

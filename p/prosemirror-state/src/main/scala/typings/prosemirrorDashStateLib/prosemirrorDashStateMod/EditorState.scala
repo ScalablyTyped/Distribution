@@ -15,7 +15,7 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
   /**
     * The plugins that are active in this state.
     */
-  var plugins: js.Array[Plugin[S]] = js.native
+  var plugins: js.Array[Plugin[_, S]] = js.native
   /**
     * The schema of the state's document.
     */
@@ -62,7 +62,7 @@ class EditorState[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema
     */
   def toJSON(): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def toJSON(pluginFields: java.lang.String): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
-  def toJSON(pluginFields: org.scalablytyped.runtime.StringDictionary[Plugin[S]]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
+  def toJSON(pluginFields: org.scalablytyped.runtime.StringDictionary[Plugin[_, S]]): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
   def toJSON(pluginFields: scala.Double): org.scalablytyped.runtime.StringDictionary[js.Any] = js.native
 }
 
@@ -88,7 +88,7 @@ object EditorState extends js.Object {
   def fromJSON[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */](
     config: prosemirrorDashStateLib.Anon_PluginsSchema[S],
     json: org.scalablytyped.runtime.StringDictionary[js.Any],
-    pluginFields: org.scalablytyped.runtime.StringDictionary[prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[S]]
+    pluginFields: org.scalablytyped.runtime.StringDictionary[prosemirrorDashStateLib.prosemirrorDashStateMod.Plugin[_, S]]
   ): prosemirrorDashStateLib.prosemirrorDashStateMod.EditorState[S] = js.native
 }
 

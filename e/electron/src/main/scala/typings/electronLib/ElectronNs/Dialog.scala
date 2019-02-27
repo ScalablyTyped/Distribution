@@ -68,7 +68,7 @@ trait Dialog extends EventEmitter {
     * file selector and a directory selector, so if you set properties to ['openFile',
     * 'openDirectory'] on these platforms, a directory selector will be shown.
     */
-  def showOpenDialog(browserWindow: BrowserWindow, options: OpenDialogOptions): js.Array[java.lang.String] = js.native
+  def showOpenDialog(browserWindow: BrowserWindow, options: OpenDialogOptions): js.UndefOr[js.Array[java.lang.String]] = js.native
   def showOpenDialog(
     browserWindow: BrowserWindow,
     options: OpenDialogOptions,
@@ -77,7 +77,7 @@ trait Dialog extends EventEmitter {
       /* bookmarks */ js.Array[java.lang.String], 
       scala.Unit
     ]
-  ): js.Array[java.lang.String] = js.native
+  ): js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
     * The browserWindow argument allows the dialog to attach itself to a parent
     * window, making it modal. The filters specifies an array of file types that can
@@ -90,7 +90,7 @@ trait Dialog extends EventEmitter {
     * file selector and a directory selector, so if you set properties to ['openFile',
     * 'openDirectory'] on these platforms, a directory selector will be shown.
     */
-  def showOpenDialog(options: OpenDialogOptions): js.Array[java.lang.String] = js.native
+  def showOpenDialog(options: OpenDialogOptions): js.UndefOr[js.Array[java.lang.String]] = js.native
   def showOpenDialog(
     options: OpenDialogOptions,
     callback: js.Function2[
@@ -98,7 +98,7 @@ trait Dialog extends EventEmitter {
       /* bookmarks */ js.Array[java.lang.String], 
       scala.Unit
     ]
-  ): js.Array[java.lang.String] = js.native
+  ): js.UndefOr[js.Array[java.lang.String]] = js.native
   /**
     * The browserWindow argument allows the dialog to attach itself to a parent
     * window, making it modal. The filters specifies an array of file types that can
@@ -106,12 +106,12 @@ trait Dialog extends EventEmitter {
     * the API call will be asynchronous and the result will be passed via
     * callback(filename).
     */
-  def showSaveDialog(browserWindow: BrowserWindow, options: SaveDialogOptions): java.lang.String = js.native
+  def showSaveDialog(browserWindow: BrowserWindow, options: SaveDialogOptions): js.UndefOr[java.lang.String] = js.native
   def showSaveDialog(
     browserWindow: BrowserWindow,
     options: SaveDialogOptions,
     callback: js.Function2[/* filename */ java.lang.String, /* bookmark */ java.lang.String, scala.Unit]
-  ): java.lang.String = js.native
+  ): js.UndefOr[java.lang.String] = js.native
   /**
     * The browserWindow argument allows the dialog to attach itself to a parent
     * window, making it modal. The filters specifies an array of file types that can
@@ -119,10 +119,10 @@ trait Dialog extends EventEmitter {
     * the API call will be asynchronous and the result will be passed via
     * callback(filename).
     */
-  def showSaveDialog(options: SaveDialogOptions): java.lang.String = js.native
+  def showSaveDialog(options: SaveDialogOptions): js.UndefOr[java.lang.String] = js.native
   def showSaveDialog(
     options: SaveDialogOptions,
     callback: js.Function2[/* filename */ java.lang.String, /* bookmark */ java.lang.String, scala.Unit]
-  ): java.lang.String = js.native
+  ): js.UndefOr[java.lang.String] = js.native
 }
 

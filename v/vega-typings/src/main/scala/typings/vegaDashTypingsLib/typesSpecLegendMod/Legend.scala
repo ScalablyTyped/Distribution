@@ -17,7 +17,10 @@ trait Legend
       vegaDashTypingsLib.typesSpecValuesMod.TextBaselineValue, 
       vegaDashTypingsLib.typesSpecLayoutMod.LayoutAlign | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
       vegaDashTypingsLib.typesSpecAxisMod.LabelOverlap | vegaDashTypingsLib.typesSpecSignalMod.SignalRef, 
-      vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue
+      vegaDashTypingsLib.typesSpecValuesMod.SymbolShapeValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.DashArrayValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.OrientValue, 
+      vegaDashTypingsLib.typesSpecValuesMod.AnchorValue
     ] {
   /**
     * The direction of the legend, one of `"vertical"` (default) or `"horizontal"`.

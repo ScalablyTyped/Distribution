@@ -51,7 +51,7 @@ trait SlicerUpdateData extends js.Object {
   var nameInFormula: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the sort order of the items in the slicer.
+    * Represents the sort order of the items in the slicer. Possible values are: DataSourceOrder, Ascending, Descending.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
@@ -69,7 +69,7 @@ trait SlicerUpdateData extends js.Object {
   var style: js.UndefOr[java.lang.String] = js.undefined
   /**
     *
-    * Represents the distance, in points, from the top edge of the slicer to the right of the worksheet.
+    * Represents the distance, in points, from the top edge of the slicer to the top of the worksheet.
     Throws an invalid argument exception when set with negative value as input.
     *
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]

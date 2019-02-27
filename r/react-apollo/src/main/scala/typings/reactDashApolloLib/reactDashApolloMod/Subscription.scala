@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation._
 @JSImport("react-apollo", "Subscription")
 @js.native
 class Subscription[TData, TVariables] protected ()
-  extends reactDashApolloLib.subscriptionsMod.Subscription[TData, TVariables] {
+  extends reactDashApolloLib.subscriptionsMod.default[TData, TVariables] {
   def this(props: reactDashApolloLib.subscriptionsMod.SubscriptionProps[TData, TVariables], context: reactDashApolloLib.subscriptionsMod.SubscriptionContext) = this()
 }
 

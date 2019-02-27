@@ -5,7 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
-trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] extends js.Object {
+trait PluginSpec[T, S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[_, _] */] extends js.Object {
   /**
     * Allows the plugin to append another transaction to be applied
     * after the given array of transactions. When another plugin
@@ -36,7 +36,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * access the plugin's configuration and state through the key,
     * without having access to the plugin instance object.
     */
-  var key: js.UndefOr[PluginKey[S] | scala.Null] = js.undefined
+  var key: js.UndefOr[(PluginKey[T, S]) | scala.Null] = js.undefined
   /**
     * The [view props](#view.EditorProps) added by this plugin. Props
     * that are functions will be bound to have the plugin instance as
@@ -47,7 +47,7 @@ trait PluginSpec[S /* <: prosemirrorDashModelLib.prosemirrorDashModelMod.Schema[
     * Allows a plugin to define a [state field](#state.StateField), an
     * extra slot in the state object in which it can keep its own data.
     */
-  var state: js.UndefOr[(StateField[_, S]) | scala.Null] = js.undefined
+  var state: js.UndefOr[(StateField[T, S]) | scala.Null] = js.undefined
   /**
     * When the plugin needs to interact with the editor view, or
     * set something up in the DOM, use this field. The function

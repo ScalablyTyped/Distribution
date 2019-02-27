@@ -14,7 +14,7 @@ package object typesSpecEncodeMod {
   type BaseValueRef[T] = vegaDashTypingsLib.typesSpecSignalMod.SignalRef | vegaDashTypingsLib.Anon_Value[T] | vegaDashTypingsLib.Anon_Field | vegaDashTypingsLib.Anon_Range
   type Baseline = vegaDashTypingsLib.vegaDashTypingsLibStrings.top | vegaDashTypingsLib.vegaDashTypingsLibStrings.middle | vegaDashTypingsLib.vegaDashTypingsLibStrings.bottom
   type BooleanValueRef = ScaledValueRef[scala.Boolean]
-  type ColorValueRef = ScaledValueRef[java.lang.String] | vegaDashTypingsLib.Anon_Gradient | vegaDashTypingsLib.Anon_Color
+  type ColorValueRef = ScaledValueRef[java.lang.String] | vegaDashTypingsLib.Anon_Count | vegaDashTypingsLib.Anon_Color
   type Encode[T] = stdLib.Partial[stdLib.Record[EncodeEntryName, T]]
   type EncodeEntryName = vegaDashTypingsLib.vegaDashTypingsLibStrings.enter | vegaDashTypingsLib.vegaDashTypingsLibStrings.update | vegaDashTypingsLib.vegaDashTypingsLibStrings.exit | vegaDashTypingsLib.vegaDashTypingsLibStrings.hover | vegaDashTypingsLib.vegaDashTypingsLibStrings.leave | vegaDashTypingsLib.vegaDashTypingsLibStrings.select | vegaDashTypingsLib.vegaDashTypingsLibStrings.release
   type Field = java.lang.String | vegaDashTypingsLib.typesSpecSignalMod.SignalRef | DatumFieldRef | GroupFieldRef | ParentFieldRef
@@ -24,6 +24,8 @@ package object typesSpecEncodeMod {
   type FontWeightValueRef = ScaledValueRef[FontWeight]
   type Interpolate = vegaDashTypingsLib.vegaDashTypingsLibStrings.basis | vegaDashTypingsLib.vegaDashTypingsLibStrings.`basis-open` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`basis-closed` | vegaDashTypingsLib.vegaDashTypingsLibStrings.bundle | vegaDashTypingsLib.vegaDashTypingsLibStrings.cardinal | vegaDashTypingsLib.vegaDashTypingsLibStrings.`cardinal-open` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`cardinal-closed` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`catmull-rom` | vegaDashTypingsLib.vegaDashTypingsLibStrings.linear | vegaDashTypingsLib.vegaDashTypingsLibStrings.`linear-closed` | vegaDashTypingsLib.vegaDashTypingsLibStrings.monotone | vegaDashTypingsLib.vegaDashTypingsLibStrings.natural | vegaDashTypingsLib.vegaDashTypingsLibStrings.step | vegaDashTypingsLib.vegaDashTypingsLibStrings.`step-before` | vegaDashTypingsLib.vegaDashTypingsLibStrings.`step-after`
   type NumericValueRef = (ScaledValueRef[scala.Double] | js.Object) with vegaDashTypingsLib.Anon_Exponent
+  type Orient = vegaDashTypingsLib.vegaDashTypingsLibStrings.left | vegaDashTypingsLib.vegaDashTypingsLibStrings.right | vegaDashTypingsLib.vegaDashTypingsLibStrings.top | vegaDashTypingsLib.vegaDashTypingsLibStrings.bottom
+  type OrientValueRef = ScaledValueRef[Orient]
   type Orientation = vegaDashTypingsLib.vegaDashTypingsLibStrings.horizontal | vegaDashTypingsLib.vegaDashTypingsLibStrings.vertical
   type ProductionRule[T] = T | (js.Array[vegaDashTypingsLib.Anon_Test with T])
   type RuleEncodeEntry = EncodeEntry
