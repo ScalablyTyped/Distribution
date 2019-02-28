@@ -177,6 +177,14 @@ trait IObjectOptions extends js.Object {
   	 */
   var name: js.UndefOr[java.lang.String] = js.undefined
   /**
+    * Describe object's corner position in canvas element coordinates. properties are tl,mt,tr,ml,mr,bl,mb,br,mtr for
+    * the main controls. each property is an object with x, y and corner. The `corner` property contains in a similar
+    * manner the 4 points of the interactive area of the corner. The coordinates depends from this properties: width,
+    * height, scaleX, scaleY skewX, skewY, angle, strokeWidth, viewportTransform, top, left, padding. The coordinates
+    * get updated with @method setCoords. You can calculate them without updating with @method calcCoords;
+    */
+  var oCoords: js.UndefOr[fabricLib.Anon_BlBrMb] = js.undefined
+  /**
   	 * When `true`, object is cached on an additional canvas.
   	 */
   var objectCaching: js.UndefOr[scala.Boolean] = js.undefined

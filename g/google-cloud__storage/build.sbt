@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "google-cloud__storage"
-version := "2.4.2-8655b5"
+version := "2.4.2-de6b5a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -19,16 +19,16 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "event-target-shim" % "5.0.1-188cac",
   "org.scalablytyped" %%% "extend" % "3.0-dt-20190212Z-a9baf4",
   "org.scalablytyped" %%% "form-data" % "2.2-dt-20181119Z-28155d",
-  "org.scalablytyped" %%% "gaxios" % "1.7.0-002f8f",
-  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-5cd169",
-  "org.scalablytyped" %%% "gcs-resumable-upload" % "0.14.1-338eba",
-  "org.scalablytyped" %%% "google-auth-library" % "3.1.0-62a1fd",
-  "org.scalablytyped" %%% "google-cloud__common" % "0.31.0-a262ea",
+  "org.scalablytyped" %%% "gaxios" % "1.8.0-cd398a",
+  "org.scalablytyped" %%% "gcp-metadata" % "0.9.3-220d2a",
+  "org.scalablytyped" %%% "gcs-resumable-upload" % "0.14.1-bf510d",
+  "org.scalablytyped" %%% "google-auth-library" % "3.1.0-1a2d6d",
+  "org.scalablytyped" %%% "google-cloud__common" % "0.31.0-4f7ac5",
   "org.scalablytyped" %%% "google-cloud__paginator" % "0.1.2-8ae8df",
   "org.scalablytyped" %%% "google-cloud__projectify" % "0.3.2-1fa8db",
   "org.scalablytyped" %%% "google-cloud__promisify" % "0.3.1-86aab6",
   "org.scalablytyped" %%% "google-p12-pem" % "1.0.3-828148",
-  "org.scalablytyped" %%% "gtoken" % "2.3.2-b46426",
+  "org.scalablytyped" %%% "gtoken" % "2.3.2-fb7279",
   "org.scalablytyped" %%% "is" % "0.0-unknown-dt-20181106Z-2af66c",
   "org.scalablytyped" %%% "is-stream-ended" % "0.1.4-4f5363",
   "org.scalablytyped" %%% "jws" % "3.2-dt-20190131Z-724728",

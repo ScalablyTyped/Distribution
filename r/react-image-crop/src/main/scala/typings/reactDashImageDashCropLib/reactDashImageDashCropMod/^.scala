@@ -9,6 +9,7 @@ import scala.scalajs.js.annotation._
 @js.native
 object ^ extends js.Object {
   def containCrop(
+    previousCrop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop,
     crop: reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop,
     imageAspect: scala.Double
   ): reactDashImageDashCropLib.reactDashImageDashCropMod.ReactCropNs.Crop = js.native

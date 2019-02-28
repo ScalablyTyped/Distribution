@@ -26,6 +26,7 @@ class CronJob protected () extends js.Object {
     * @param unrefTimeout If you have code that keeps the event loop running and want to stop the node process when that finishes regardless of the state of your cronjob, you can do so making use of this parameter. This is off by default and cron will run as if it needs to control the event loop. For more information take a look at [timers#timers_timeout_unref](https://nodejs.org/api/timers.html#timers_timeout_unref) from the NodeJS docs.
     */
   def this(cronTime: java.lang.String, onTick: js.Function0[scala.Unit], onComplete: js.UndefOr[js.Function0[scala.Unit]], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
+  def this(cronTime: momentLib.momentMod.momentNs.Moment, onTick: js.Function0[scala.Unit], onComplete: js.UndefOr[js.Function0[scala.Unit]], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
   def this(cronTime: stdLib.Date, onTick: js.Function0[scala.Unit], onComplete: js.UndefOr[js.Function0[scala.Unit]], start: js.UndefOr[scala.Boolean], timeZone: js.UndefOr[java.lang.String], context: js.UndefOr[js.Any], runOnInit: js.UndefOr[scala.Boolean], utcOffset: js.UndefOr[scala.Double | java.lang.String], unrefTimeout: js.UndefOr[scala.Boolean]) = this()
   /**
     * Function using to fire ```onTick```, default set to an inner private function. Overwrite this only if you have a really good reason to do so.
@@ -44,12 +45,14 @@ class CronJob protected () extends js.Object {
     * Tells you the last execution date.
     */
   def lastDate(): stdLib.Date = js.native
+  def nextDates(): js.Array[momentLib.momentMod.momentNs.Moment] = js.native
+  def nextDates(i: scala.Double): js.Array[momentLib.momentMod.momentNs.Moment] = js.native
   /**
     * Tells you when a ```CronTime``` will be run.
     * @param i Indicate which turn of run after now. If not given return next run time.
     */
-  def nextDates(): stdLib.Date = js.native
-  def nextDates(i: scala.Double): stdLib.Date = js.native
+  @JSName("nextDates")
+  def nextDates_Moment(): momentLib.momentMod.momentNs.Moment = js.native
   /**
     * Change the time for the ```CronJob```.
     * @param time Target time.

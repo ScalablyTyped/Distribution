@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "blueprintjs__core"
-version := "3.13.0-0ffdd3"
+version := "3.13.0-98acd8"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,16 +8,16 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "blueprintjs__icons" % "3.6.0-6a864c",
   "org.scalablytyped" %%% "classnames" % "2.2-dt-20181230Z-df7a56",
-  "org.scalablytyped" %%% "create-react-context" % "0.2.2-d31076",
+  "org.scalablytyped" %%% "create-react-context" % "0.2.2-d29593",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "dom4" % "v2.0-dt-20180806Z-48a94a",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "popper_dot_js" % "1.14.7-be5ab9",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
-  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-bd2972",
-  "org.scalablytyped" %%% "react-popper" % "1.3.3-0bd5d9",
-  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-38644e",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
+  "org.scalablytyped" %%% "react-dom" % "16.8-dt-20190213Z-2359a8",
+  "org.scalablytyped" %%% "react-popper" % "1.3.3-8ff65f",
+  "org.scalablytyped" %%% "react-transition-group" % "2.0-dt-20190212Z-b59ab5",
   "org.scalablytyped" %%% "resize-observer-polyfill" % "1.5.1-d5f303",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tslib" % "1.9.3-2d26d9",

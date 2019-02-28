@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cote"
-version := "0.17-dt-20181002Z-688e1c"
+version := "0.19-dt-20190227Z-9a2017"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

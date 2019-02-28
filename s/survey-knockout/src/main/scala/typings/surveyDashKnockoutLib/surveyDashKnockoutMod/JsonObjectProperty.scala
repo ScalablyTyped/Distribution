@@ -28,6 +28,7 @@ class JsonObjectProperty protected () extends IObject {
   var isLocalizable: scala.Boolean = js.native
   var isRequired: scala.Boolean = js.native
   var isSerializable: scala.Boolean = js.native
+  var layout: java.lang.String = js.native
   var name: java.lang.String = js.native
   var readOnly: scala.Boolean = js.native
   var serializationProperty: java.lang.String = js.native
@@ -39,6 +40,7 @@ class JsonObjectProperty protected () extends IObject {
   def getPropertyValue(obj: js.Any): js.Any = js.native
   def getValue(obj: js.Any): js.Any = js.native
   def isDefaultValue(value: js.Any): scala.Boolean = js.native
+  def isVisible(layout: java.lang.String): scala.Boolean = js.native
   def mergeWith(prop: JsonObjectProperty): scala.Unit = js.native
   def onGetValue(obj: js.Any): js.Any = js.native
   def onSetValue(obj: js.Any, value: js.Any, jsonConv: JsonObject): js.Any = js.native

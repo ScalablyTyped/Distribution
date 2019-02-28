@@ -26,7 +26,7 @@ object ^ extends js.Object {
   var surveyCss: js.Any = js.native
   var surveyLocalization: surveyDashKnockoutLib.Anon_CurrentLocale = js.native
   var surveyStrings: surveyDashKnockoutLib.Anon_AddColumn = js.native
-  var surveyTimerFunctions: surveyDashKnockoutLib.Anon_ClearInterval = js.native
+  var surveyTimerFunctions: surveyDashKnockoutLib.Anon_ClearTimeout = js.native
   def __extends(thisClass: js.Any, baseClass: js.Any): scala.Unit = js.native
 }
 

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-fns"
-version := "1.4.0-897bda"
+version := "1.4.0-8a0027"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -9,10 +9,10 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
   "org.scalablytyped" %%% "invariant" % "2.2.0-dt-20180214Z-d5355c",
   "org.scalablytyped" %%% "json2mq" % "0.2-dt-20190212Z-6e041d",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
   "org.scalablytyped" %%% "qs" % "6.5.0-dt-20180214Z-e68ee6",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
-  "org.scalablytyped" %%% "react-media" % "1.9.2-52942a",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
+  "org.scalablytyped" %%% "react-media" % "1.9.2-c0d909",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

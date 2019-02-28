@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "inquirer"
-version := "0.0-unknown-dt-20180808Z-75839c"
+version := "0.0-unknown-dt-20190221Z-1e8387"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

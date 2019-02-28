@@ -1,7 +1,15 @@
 ```
-// Type definitions for p-pipe 1.2
-// Project: https://github.com/sindresorhus/p-pipe#readme
-// Definitions by: BendingBender <https://github.com/BendingBender>
-// Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
-// TypeScript Version: 3.0
+/**
+ * Note about the naming of generics:
+ *
+ * - `T`: Use when there is only one generic input parameter.
+ * - `R`: End result of the function / pipe.
+ * - `R<number>`: Result of the nth function inside the pipe that is passed to the (n+1)-th function.
+ */
+
+/**
+ * Function which accepts one parameter. Expected to return a `Promise` or value.
+ *
+ * @param value - First parameter.
+ */
 ```

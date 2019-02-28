@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IQuestion because var conflicts: isPage, isReadOnly, isVisible, name. Inlined hasTitle, isEmpty, onSurveyValueChanged, updateValueFromSurvey, updateCommentFromSurvey, supportGoNextPageAutomatic, clearUnusedValues, getDisplayValue, getValueName, clearValue, clearValueIfInvisible, isAnswerCorrect, updateValueWithDefaults, value */ @JSImport("survey-knockout", "Question")
 @js.native
 class Question protected ()
   extends SurveyElement
@@ -101,12 +101,6 @@ class Question protected ()
     */
   val isPanel: scala.Boolean = js.native
   /**
-    * Retuns true if readOnly property is true or survey is in display mode or parent panel/page is readOnly.
-    * @see SurveyModel.model
-    * @see readOnly
-    */
-  val isReadOnly: scala.Boolean = js.native
-  /**
     * Set this property to true, to make the question a required. If a user doesn't answer the question then a validation error will be generated.
     */
   var isRequired: scala.Boolean = js.native
@@ -130,12 +124,6 @@ class Question protected ()
     * Returns the rendred question title.
     */
   val processedTitle: java.lang.String = js.native
-  /**
-    * Set it to true to make a question readonly.
-    * @see enableIf
-    * @see isReadOnly
-    */
-  var readOnly: scala.Boolean = js.native
   /**
     * The rendered width of the question.
     */

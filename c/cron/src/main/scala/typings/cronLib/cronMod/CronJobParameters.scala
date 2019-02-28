@@ -13,7 +13,7 @@ trait CronJobParameters extends js.Object {
   /**
     * The time to fire off your job. This can be in the form of cron syntax or a JS ```Date``` object.
     */
-  var cronTime: java.lang.String | stdLib.Date
+  var cronTime: java.lang.String | stdLib.Date | momentLib.momentMod.momentNs.Moment
   /**
     * A function that will fire when the job is stopped with ```job.stop()```, and may also be called by ```onTick``` at the end of each run.
     */

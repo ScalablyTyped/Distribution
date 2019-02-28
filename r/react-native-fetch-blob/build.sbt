@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "react-native-fetch-blob"
-version := "0.10-dt-20180214Z-d0e50e"
+version := "0.10-dt-20190227Z-d0e50e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

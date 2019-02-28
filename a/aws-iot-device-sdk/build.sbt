@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "aws-iot-device-sdk"
-version := "2.2.0-dt-20190223Z-405ac9"
+version := "2.2.0-dt-20190223Z-a62c5f"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -11,11 +11,11 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "end-of-stream" % "1.4-dt-20180214Z-1f2390",
   "org.scalablytyped" %%% "inherits" % "0.0-unknown-dt-20180214Z-ad316e",
   "org.scalablytyped" %%% "minimist" % "1.2.0-dt-20180214Z-9fc7e9",
-  "org.scalablytyped" %%% "mqtt" % "2.18.8-5aef5a",
+  "org.scalablytyped" %%% "mqtt" % "2.18.8-86deb3",
   "org.scalablytyped" %%% "mqtt-packet" % "5.6.0-686ff4",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "pump" % "1.0-dt-20180214Z-d24306",
-  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20181231Z-4b5ba6",
+  "org.scalablytyped" %%% "readable-stream" % "2.3-dt-20190227Z-4b5ba6",
   "org.scalablytyped" %%% "safe-buffer" % "5.1.2-dbae89",
   "org.scalablytyped" %%% "split2" % "2.1.0-dt-20180214Z-4624cc",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",

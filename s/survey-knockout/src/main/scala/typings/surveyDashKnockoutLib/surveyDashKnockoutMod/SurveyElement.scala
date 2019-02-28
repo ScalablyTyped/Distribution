@@ -25,9 +25,17 @@ class SurveyElement protected ()
   /* CompleteClass */
   override var isPage: scala.Boolean = js.native
   /* CompleteClass */
+  override var isReadOnly: scala.Boolean = js.native
+  /* CompleteClass */
   override var isVisible: scala.Boolean = js.native
   /* CompleteClass */
   override var name: java.lang.String = js.native
+  /**
+    * Set it to true to make an element question/panel/page readonly.
+    * @see enableIf
+    * @see isReadOnly
+    */
+  var readOnly: scala.Boolean = js.native
   var selectedElementInDesign: SurveyElement = js.native
   /**
     * Returns the survey object.
@@ -50,6 +58,7 @@ class SurveyElement protected ()
   /* CompleteClass */
   override def onFirstRendering(): js.Any = js.native
   /* protected */ def onNameChanged(oldValue: java.lang.String): scala.Unit = js.native
+  /* protected */ def onReadOnlyChanged(): scala.Unit = js.native
   /* protected */ def onSetData(): scala.Unit = js.native
   /* CompleteClass */
   override def onSurveyLoad(): js.Any = js.native

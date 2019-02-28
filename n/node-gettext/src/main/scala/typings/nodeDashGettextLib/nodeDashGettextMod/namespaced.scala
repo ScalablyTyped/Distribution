@@ -46,9 +46,17 @@ class namespaced () extends GetText {
     count: scala.Double
   ): java.lang.String = js.native
   /* CompleteClass */
-  override def off(eventName: java.lang.String, callback: js.Function1[/* params */ js.Any, scala.Unit]): java.lang.String = js.native
+  @JSName("off")
+  override def off_error(
+    eventName: nodeDashGettextLib.nodeDashGettextLibStrings.error,
+    callback: js.Function1[/* error */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
   /* CompleteClass */
-  override def on(eventName: java.lang.String, callback: js.Function1[/* params */ js.Any, scala.Unit]): scala.Unit = js.native
+  @JSName("on")
+  override def on_error(
+    eventName: nodeDashGettextLib.nodeDashGettextLibStrings.error,
+    callback: js.Function1[/* error */ java.lang.String, scala.Unit]
+  ): scala.Unit = js.native
   /* CompleteClass */
   override def pgettext(msgctxt: java.lang.String, msgid: java.lang.String): java.lang.String = js.native
   /* CompleteClass */

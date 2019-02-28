@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "babylon-walk"
-version := "3.10-dt-20180611Z-28a481"
+version := "3.10-dt-20180611Z-5ea050"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190212Z-619284",
+  "org.scalablytyped" %%% "babel-types" % "7.0-dt-20190218Z-912813",
   "org.scalablytyped" %%% "std" % "3.3-0ec965")
 publishArtifact in packageDoc := false
 scalacOptions += "-P:scalajs:sjsDefinedByDefault"

@@ -16,11 +16,16 @@ trait GaxiosOptions extends js.Object {
   var baseUrl: js.UndefOr[java.lang.String] = js.undefined
   var body: js.UndefOr[js.Any] = js.undefined
   var data: js.UndefOr[js.Any] = js.undefined
+  var follow: js.UndefOr[scala.Double] = js.undefined
   var headers: js.UndefOr[Headers] = js.undefined
   /**
     * The maximum size of the http response content in bytes allowed.
     */
   var maxContentLength: js.UndefOr[scala.Double] = js.undefined
+  /**
+    * The maximum number of redirects to follow. Defaults to 20.
+    */
+  var maxRedirects: js.UndefOr[scala.Double] = js.undefined
   var method: js.UndefOr[
     gaxiosLib.gaxiosLibStrings.GET | gaxiosLib.gaxiosLibStrings.HEAD | gaxiosLib.gaxiosLibStrings.POST | gaxiosLib.gaxiosLibStrings.DELETE | gaxiosLib.gaxiosLibStrings.PUT | gaxiosLib.gaxiosLibStrings.CONNECT | gaxiosLib.gaxiosLibStrings.OPTIONS | gaxiosLib.gaxiosLibStrings.TRACE | gaxiosLib.gaxiosLibStrings.PATCH
   ] = js.undefined

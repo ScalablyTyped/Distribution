@@ -14,14 +14,14 @@ package object styledDashComponentsLib {
   // Undeclared default props are augmented into the resulting allowable attributes
   // If declared props have indexed properties, ignore default props entirely as keyof gets widened
   // Wrap in an outer-level conditional type to allow distribution over props that are unions
-  type Defaultize[P, D] = ((stdLib.Pick[P, stdLib.Exclude[java.lang.String, java.lang.String]]) with (stdLib.Partial[stdLib.Pick[P, stdLib.Extract[java.lang.String, java.lang.String]]]) with (stdLib.Partial[stdLib.Pick[D, stdLib.Exclude[java.lang.String, java.lang.String]]])) | P
+  type Defaultize[P, D] = ((/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickU<P, Exclude<keyof P, keyof D>> */ js.Any) with (stdLib.Partial[
+    /* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify PickU<P, Extract<keyof P, keyof D>> */ _
+  ])) | P
   type DeprecatedAttrs[P, A /* <: stdLib.Partial[P] */, T] = /* import warning: ImportType.apply c Unsupported type mapping: 
   {[ K in keyof A ]: (props : any): A[K] | A[K]}
     */ styledDashComponentsLib.styledDashComponentsLibStrings.DeprecatedAttrs with js.Any
   // abuse Pick to strip the call signature from ForwardRefExoticComponent
   type ForwardRefExoticBase[P] = stdLib.Pick[reactLib.reactMod.ReactNs.ForwardRefExoticComponent[P], java.lang.String]
-  // Helper type operators
-  type Omit[T, K /* <: java.lang.String */] = stdLib.Pick[T, stdLib.Exclude[java.lang.String, K]]
   // extracts React defaultProps
   type ReactDefaultProps[C] = js.Any
   type ReactDefaultizedProps[C, P] = P | (Defaultize[P, js.Any])
@@ -40,5 +40,5 @@ package object styledDashComponentsLib {
   // See https://github.com/DefinitelyTyped/DefinitelyTyped/pull/31945
   // and https://github.com/DefinitelyTyped/DefinitelyTyped/pull/32843
   type WithChildrenIfReactComponentClass[C /* <: java.lang.String */] = js.Object | Anon_Children
-  type WithOptionalTheme[P /* <: Anon_Theme[T] */, T] = P with Anon_Theme[T]
+  type WithOptionalTheme[P /* <: Anon_Theme[T] */, T] = (/* import warning: QualifyReferences.resolveTypeRef many Couldn't qualify OmitU<P, 'theme'> */ js.Any) with Anon_Theme[T]
 }

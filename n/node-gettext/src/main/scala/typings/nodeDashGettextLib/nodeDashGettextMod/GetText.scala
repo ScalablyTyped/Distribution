@@ -32,8 +32,16 @@ trait GetText extends js.Object {
     msgidPlural: java.lang.String,
     count: scala.Double
   ): java.lang.String
-  def off(eventName: java.lang.String, callback: js.Function1[/* params */ js.Any, scala.Unit]): java.lang.String
-  def on(eventName: java.lang.String, callback: js.Function1[/* params */ js.Any, scala.Unit]): scala.Unit
+  @JSName("off")
+  def off_error(
+    eventName: nodeDashGettextLib.nodeDashGettextLibStrings.error,
+    callback: js.Function1[/* error */ java.lang.String, scala.Unit]
+  ): scala.Unit
+  @JSName("on")
+  def on_error(
+    eventName: nodeDashGettextLib.nodeDashGettextLibStrings.error,
+    callback: js.Function1[/* error */ java.lang.String, scala.Unit]
+  ): scala.Unit
   def pgettext(msgctxt: java.lang.String, msgid: java.lang.String): java.lang.String
   def setLocale(locale: java.lang.String): scala.Unit
   def setTextDomain(domain: java.lang.String): scala.Unit

@@ -79,6 +79,7 @@ class SpotifyPlayer protected () extends js.Object {
   ): scala.Unit = js.native
   def resume(): js.Promise[scala.Unit] = js.native
   def seek(pos_ms: scala.Double): js.Promise[scala.Unit] = js.native
+  def setName(name: java.lang.String): js.Promise[scala.Unit] = js.native
   def setVolume(volume: scala.Double): js.Promise[scala.Unit] = js.native
   def togglePlay(): js.Promise[scala.Unit] = js.native
 }

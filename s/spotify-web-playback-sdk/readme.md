@@ -4,6 +4,7 @@
 // Definitions by: Festify Dev Team <https://github.com/Festify>
 //                 Marcus Weiner <https://github.com/mraerino>
 //                 Moritz Gunz <https://github.com/NeoLegends>
+//                 Daniel Almaguer <https://github.com/deini>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 ```

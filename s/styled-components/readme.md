@@ -6,6 +6,7 @@
 //                 Adam Lavin <https://github.com/lavoaster>
 //                 Jessica Franco <https://github.com/Jessidhia>
 //                 Jason Killian <https://github.com/jkillian>
+//                 Sebastian Silbermann <https://github.com/eps1lon>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.9
 // forward declarations

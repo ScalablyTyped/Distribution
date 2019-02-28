@@ -25,6 +25,10 @@ trait DropdownListProps
     */
   var caseSensitive: js.UndefOr[scala.Boolean] = js.undefined
   /**
+    * Adds a css class to the input container element.
+    */
+  var containerClassName: js.UndefOr[java.lang.String] = js.undefined
+  /**
     * Provide an array of possible values for the DropdownList. If an array of objects is
     * provided you should use the valueField and textField props, to specify which object
     * properties comprise the value field (such as an id) and the field used to label the item.

@@ -1,12 +1,12 @@
 organization := "org.scalablytyped"
 name := "console-ui"
-version := "2.2-dt-20181002Z-eb69a1"
+version := "2.2-dt-20181002Z-0464f5"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
   "com.olvind" %%% "scalablytyped-runtime" % "1.0.0",
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
-  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20180808Z-75839c",
+  "org.scalablytyped" %%% "inquirer" % "0.0-unknown-dt-20190221Z-1e8387",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "rx" % "4.1-dt-20180214Z-df5b71",
   "org.scalablytyped" %%% "rx-core" % "4.0-dt-20180214Z-604f43",

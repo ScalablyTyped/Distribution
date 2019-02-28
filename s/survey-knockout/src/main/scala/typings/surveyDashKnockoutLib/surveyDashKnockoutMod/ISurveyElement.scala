@@ -7,6 +7,7 @@ import scala.scalajs.js.annotation._
 
 trait ISurveyElement extends js.Object {
   var isPage: scala.Boolean
+  var isReadOnly: scala.Boolean
   var isVisible: scala.Boolean
   var name: java.lang.String
   def getType(): java.lang.String

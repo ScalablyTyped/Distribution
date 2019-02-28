@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- coteLib.coteMod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo- coteLib.coteMod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts- coteLib.coteMod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo */ trait StatusAdvertisement extends RequesterAdvertisement {
+- coteLib.coteMod.SubscriberAdvertisement because var conflicts: key, name, namespace. Inlined subscribesTo- coteLib.coteMod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts- coteLib.coteMod.ResponderAdvertisement because var conflicts: key, name, namespace. Inlined respondsTo, subset */ trait StatusAdvertisement extends RequesterAdvertisement {
   /**
     * Event types that a Publisher can publish.
     */
@@ -19,5 +19,9 @@ import scala.scalajs.js.annotation._
     * Event types that a Subscriber can listen to.
     */
   var subscribesTo: js.UndefOr[js.Array[java.lang.String]] = js.undefined
+  /**
+    * Advertisement attribute that lets you target a subgroup of responders using the __subset property of a request.
+    */
+  var subset: js.UndefOr[java.lang.String] = js.undefined
 }
 

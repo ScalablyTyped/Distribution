@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "canvas-confetti"
-version := "0.0-dt-20180225Z-2e1d50"
+version := "0.1-dt-20190227Z-677fb9"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

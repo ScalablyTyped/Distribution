@@ -13,6 +13,9 @@ object styledDashComponentsLibStrings {
   sealed trait DeprecatedAttrs extends js.Object
   
   @js.native
+  sealed trait PickU extends js.Object
+  
+  @js.native
   sealed trait ThemedStyledComponentFactories extends js.Object
   
   @js.native
@@ -25,6 +28,8 @@ object styledDashComponentsLibStrings {
   def CSSObject: CSSObject = "CSSObject".asInstanceOf[CSSObject]
   @scala.inline
   def DeprecatedAttrs: DeprecatedAttrs = "DeprecatedAttrs".asInstanceOf[DeprecatedAttrs]
+  @scala.inline
+  def PickU: PickU = "PickU".asInstanceOf[PickU]
   @scala.inline
   def ThemedStyledComponentFactories: ThemedStyledComponentFactories = "ThemedStyledComponentFactories".asInstanceOf[ThemedStyledComponentFactories]
   @scala.inline

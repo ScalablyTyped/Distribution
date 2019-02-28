@@ -8,9 +8,9 @@ import scala.scalajs.js.annotation._
 trait AsyncOptions[T] extends js.Object {
   var deferFn: js.UndefOr[
     js.Function3[
+      /* args */ js.Array[_], 
       /* props */ js.Object, 
       /* controller */ stdLib.AbortController, 
-      /* args */ js.Array[_], 
       js.Promise[T]
     ]
   ] = js.undefined

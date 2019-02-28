@@ -7,8 +7,8 @@ import scala.scalajs.js.annotation._
 package object webdriverioLib {
   // Browser commands wrapper with Promise
   type BrowserAsync = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof webdriverio.BrowserPromise ]: webdriver.WrapWithPromise<webdriverio.WebdriverIO.Browser[K]>}
-    */ webdriverioLib.webdriverioLibStrings.BrowserAsync with webdriverioLib.WebdriverIONs.Browser
+  {[ K in keyof webdriverio.BrowserPromise ]: webdriver.WrapWithPromise<webdriverio.BrowserPromise[K], std.ReturnType<webdriverio.BrowserPromise[K]>>}
+    */ webdriverioLib.webdriverioLibStrings.BrowserAsync with js.Any
   type BrowserObject = webdriverLib.WebDriverNs.ClientOptions with webdriverLib.WebDriverNs.ClientAsync with webdriverioLib.WebdriverIOAsyncNs.Browser
   // Browser commands that should be wrapper with Promise
   type BrowserPromise = webdriverLib.Omit[
@@ -22,8 +22,8 @@ package object webdriverioLib {
   ]
   // Element commands wrapper with Promise
   type ElementAsync = /* import warning: ImportType.apply c Unsupported type mapping: 
-  {[ K in keyof webdriverio.ElementPromise ]: webdriver.WrapWithPromise<webdriverio.WebdriverIO.Element[K]>}
-    */ webdriverioLib.webdriverioLibStrings.ElementAsync with webdriverioLib.WebdriverIONs.Element
+  {[ K in keyof webdriverio.ElementPromise ]: webdriver.WrapWithPromise<webdriverio.ElementPromise[K], std.ReturnType<webdriverio.ElementPromise[K]>>}
+    */ webdriverioLib.webdriverioLibStrings.ElementAsync with js.Any
   // Element commands that should be wrapper with Promise
   type ElementPromise = webdriverLib.Omit[
     webdriverioLib.WebdriverIONs.Element, 

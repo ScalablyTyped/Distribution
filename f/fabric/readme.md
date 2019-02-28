@@ -10,6 +10,7 @@
 //                 Brian Martinson <https://github.com/bmartinson>
 //                 Rogerio Teixeira <https://github.com/RogerioTeixeira>
 //                 Bradley Hill <https://github.com/BradleyHill>
+//                 Glenn Gartner <https://github.com/glenngartner>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 ```

@@ -1,5 +1,5 @@
 ```
-// Type definitions for canvas-confetti 0.0
+// Type definitions for canvas-confetti 0.1
 // Project: https://github.com/catdad/canvas-confetti#readme
 // Definitions by: Martin Tracey <https://github.com/matracey>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped

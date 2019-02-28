@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "zeit__next-typescript"
-version := "0.1-dt-20190213Z-d57a01"
+version := "0.1-dt-20190213Z-1eb95e"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -8,13 +8,13 @@ libraryDependencies ++= Seq(
   "org.scala-js" %%% "scalajs-dom" % "0.9.6",
   "org.scalablytyped" %%% "anymatch" % "1.3-dt-20190212Z-a09216",
   "org.scalablytyped" %%% "csstype" % "2.6.2-522be0",
-  "org.scalablytyped" %%% "next" % "8.0-dt-20190220Z-aeb08d",
-  "org.scalablytyped" %%% "next-server" % "7.0-dt-20190220Z-3e24e0",
+  "org.scalablytyped" %%% "next" % "8.0-dt-20190220Z-03672c",
+  "org.scalablytyped" %%% "next-server" % "7.0-dt-20190220Z-947540",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190215Z-604ea6",
   "org.scalablytyped" %%% "node-fetch" % "2.1-dt-20190205Z-4a070f",
-  "org.scalablytyped" %%% "prop-types" % "15.5-dt-20190212Z-8cdf18",
-  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-abf012",
-  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-a7523d",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20190226Z-3f7dd7",
+  "org.scalablytyped" %%% "react" % "16.8-dt-20190225Z-3dd766",
+  "org.scalablytyped" %%% "react-loadable" % "5.5-dt-20190131Z-299f37",
   "org.scalablytyped" %%% "source-map" % "0.7.3-cdf339",
   "org.scalablytyped" %%% "std" % "3.3-0ec965",
   "org.scalablytyped" %%% "tapable" % "v1.0.0-dt-20180713Z-2fd0f1",

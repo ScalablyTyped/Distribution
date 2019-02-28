@@ -14,5 +14,16 @@ object ^ extends js.Object {
   var Promise: js.Any = js.native
   def apply(): js.Promise[scala.Null] | scala.Null = js.native
   def apply(options: canvasDashConfettiLib.canvasDashConfettiMod.confettiNs.Options): js.Promise[scala.Null] | scala.Null = js.native
+  def create(canvas: stdLib.HTMLCanvasElement): js.Function1[
+    /* options */ js.UndefOr[canvasDashConfettiLib.canvasDashConfettiMod.confettiNs.Options], 
+    js.Promise[scala.Null] | scala.Null
+  ] = js.native
+  def create(
+    canvas: stdLib.HTMLCanvasElement,
+    options: canvasDashConfettiLib.canvasDashConfettiMod.confettiNs.GlobalOptions
+  ): js.Function1[
+    /* options */ js.UndefOr[canvasDashConfettiLib.canvasDashConfettiMod.confettiNs.Options], 
+    js.Promise[scala.Null] | scala.Null
+  ] = js.native
 }
 

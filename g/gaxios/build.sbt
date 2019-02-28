@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gaxios"
-version := "1.7.0-002f8f"
+version := "1.8.0-cd398a"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

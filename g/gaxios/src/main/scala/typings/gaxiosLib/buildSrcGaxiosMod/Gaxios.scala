@@ -27,7 +27,7 @@ class Gaxios () extends js.Object {
   var paramsSerializer: js.Any = js.native
   var translateResponse: js.Any = js.native
   /**
-    * Validate the options, and massage them to match the fetch format.
+    * Validates the options, and merges them with defaults.
     * @param opts The original options passed from the client.
     */
   var validateOpts: js.Any = js.native

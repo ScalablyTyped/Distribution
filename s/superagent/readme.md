@@ -8,6 +8,7 @@
 //                 Alec Zopf <https://github.com/zopf>
 //                 Adam Haglund <https://github.com/beeequeue>
 //                 Lukas Elmer <https://github.com/lukaselmer>
+//                 Jesse Rogers <https://github.com/theQuazz>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.2
 ```

@@ -24,6 +24,7 @@ trait Response
   var notFound: scala.Boolean = js.native
   var ok: scala.Boolean = js.native
   var redirect: scala.Boolean = js.native
+  var redirects: js.Array[java.lang.String] = js.native
   var serverError: scala.Boolean = js.native
   var status: scala.Double = js.native
   var statusType: scala.Double = js.native

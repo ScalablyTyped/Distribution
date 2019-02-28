@@ -13,6 +13,7 @@ trait Anon_Comment extends js.Object {
   var hasError: java.lang.String
   var indent: scala.Double
   var mainRoot: java.lang.String
+  var number: java.lang.String
   var required: java.lang.String
   var title: java.lang.String
   var titleLeftRoot: java.lang.String

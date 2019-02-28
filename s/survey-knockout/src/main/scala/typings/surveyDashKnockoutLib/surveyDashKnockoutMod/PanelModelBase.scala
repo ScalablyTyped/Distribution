@@ -6,7 +6,7 @@ import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation._
 
 /* import warning: RemoveMultipleInheritance.findNewParents newComments Dropped parents 
-- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
+- surveyDashKnockoutLib.surveyDashKnockoutMod.IPanel because var conflicts: isPage, isReadOnly, isVisible, name. Inlined getChildrenLayoutType, getQuestionTitleLocation, parent, elementWidthChanged */ @JSImport("survey-knockout", "PanelModelBase")
 @js.native
 class PanelModelBase ()
   extends SurveyElement
@@ -44,12 +44,6 @@ class PanelModelBase ()
     */
   val isPanel: scala.Boolean = js.native
   /**
-    * Retuns true if readOnly property is true or survey is in display mode or parent panel/page is readOnly.
-    * @see SurveyModel.model
-    * @see readOnly
-    */
-  val isReadOnly: scala.Boolean = js.native
-  /**
     * Set this property to true, to require the answer at least in one question in the panel.
     */
   var isRequired: scala.Boolean = js.native
@@ -75,12 +69,6 @@ class PanelModelBase ()
     * @see elements
     */
   val questions: js.Array[Question] = js.native
-  /**
-    * Set it to true to make a panel/page readonly.
-    * @see enableIf
-    * @see isReadOnly
-    */
-  var readOnly: scala.Boolean = js.native
   /**
     * The custom text that will be shown on required error. Use this property, if you do not want to show the default text.
     */

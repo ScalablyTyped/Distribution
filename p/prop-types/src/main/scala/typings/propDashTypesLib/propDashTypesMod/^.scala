@@ -12,6 +12,7 @@ object ^ extends js.Object {
   val array: propDashTypesLib.propDashTypesMod.Requireable[js.Array[js.Any]] = js.native
   val bool: propDashTypesLib.propDashTypesMod.Requireable[scala.Boolean] = js.native
   val element: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactElementLike] = js.native
+  val elementType: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactComponentLike] = js.native
   val func: propDashTypesLib.propDashTypesMod.Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   val node: propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.ReactNodeLike] = js.native
   val nominalTypeHack: js.Symbol = js.native
@@ -37,6 +38,7 @@ object ^ extends js.Object {
   ] = js.native
   def oneOf[T](types: js.Array[T]): propDashTypesLib.propDashTypesMod.Requireable[T] = js.native
   def oneOfType[T /* <: propDashTypesLib.propDashTypesMod.Validator[_] */](types: js.Array[T]): propDashTypesLib.propDashTypesMod.Requireable[stdLib.NonNullable[propDashTypesLib.propDashTypesMod.InferType[T]]] = js.native
+  def resetWarningCache(): scala.Unit = js.native
   def shape[P /* <: propDashTypesLib.propDashTypesMod.ValidationMap[_] */](`type`: P): propDashTypesLib.propDashTypesMod.Requireable[propDashTypesLib.propDashTypesMod.InferProps[P]] = js.native
 }
 
