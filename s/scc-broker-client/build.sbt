@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "scc-broker-client"
-version := "6.1-dt-20181218Z-decc68"
+version := "6.1-dt-20181218Z-3418c6"
 scalaVersion := "2.12.8"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
@@ -13,11 +13,12 @@ libraryDependencies ++= Seq(
   "org.scalablytyped" %%% "jsonwebtoken" % "8.3-dt-20181101Z-a349a5",
   "org.scalablytyped" %%% "node" % "11.9-dt-20190222Z-99335f",
   "org.scalablytyped" %%% "sc-auth" % "5.0-dt-20181130Z-b46f0e",
-  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-e0471a",
-  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20181218Z-f71601",
-  "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-c096f7",
-  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190212Z-2b2b3e",
-  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190205Z-3880bc",
+  "org.scalablytyped" %%% "sc-broker" % "5.1-dt-20181218Z-e5cb5b",
+  "org.scalablytyped" %%% "sc-broker-cluster" % "6.1-dt-20181218Z-ea8c63",
+  "org.scalablytyped" %%% "sc-channel" % "1.2-dt-20181130Z-b7fe6a",
+  "org.scalablytyped" %%% "socketcluster" % "14.0-dt-20190212Z-f2d910",
+  "org.scalablytyped" %%% "socketcluster-client" % "13.0-dt-20190212Z-5ead32",
+  "org.scalablytyped" %%% "socketcluster-server" % "14.2-dt-20190205Z-0a3157",
   "org.scalablytyped" %%% "std" % "3.3-6e4388",
   "org.scalablytyped" %%% "ws" % "6.0-dt-20180830Z-cace4b")
 publishArtifact in packageDoc := false
