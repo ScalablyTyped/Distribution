@@ -264,6 +264,17 @@ object dsl {
       new BuildComponent[P](ctor.asInstanceOf[ComponentClass[P, ComponentState]])
   }
 
+  /* we're having some instability with createElement and overloads, so just inline it for now*/
+  @js.native
+  sealed trait Hack extends js.Object {
+    def createElement[P /* <: js.Object */ ](
+                                              `type`: reactLib.reactMod.ReactNs.ComponentClass[P, reactLib.reactMod.ReactNs.ComponentState],
+                                              props: reactLib.reactMod.ReactNs.Attributes with (P | scala.Null),
+                                              children: reactLib.reactMod.ReactNs.ReactNode*
+                                            ): reactLib.reactMod.ReactNs.ReactElement[P] = js.native
+
+  }
+
   @inline final class BuildComponent[P] private[dsl](ctor: ComponentClass[P, ComponentState],
                                                      _key: js.UndefOr[Key] = js.undefined,
                                                      _ref: js.UndefOr[Ref[Component[P, ComponentState, _]]] = js.undefined) {
@@ -291,14 +302,15 @@ object dsl {
           _ref.asInstanceOf[js.Any],
           children)
 
-      ^.createElement(ctor, fullProps(props), children: _*)
+      ^.asInstanceOf[Hack].createElement(ctor, fullProps(props), children: _*)
     }
 
     @inline def noprops(children: ReactNode*): ReactElement[P] = {
       if (LinkingInfo.developmentMode && js.isUndefined(ctor))
         console.warn("Component was undefined", _key.asInstanceOf[js.Any], _ref.asInstanceOf[js.Any], children)
 
-      ^.createElement(ctor, fullProps(null), children: _*)
+      ^.asInstanceOf[Hack].createElement(ctor, fullProps(null), children: _*)
     }
   }
+
 }
